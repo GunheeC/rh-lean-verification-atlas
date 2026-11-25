@@ -66,7 +66,7 @@ def verify(root):
                 if reading["path"] in editions:
                     import hashlib
                     published=editions[reading["path"]]
-                    check(1 <= reading["pages"][0] <= reading["pages"][1] <= published["pages"], f"{key} pillar print folios")
+                    check(1 <= reading["print_edition_pages"][0] <= reading["print_edition_pages"][1] <= published["pages"], f"{key} pillar print folios")
                     check(hashlib.sha256((root/reading["path"]).read_bytes()).hexdigest()==published["sha256"],f"{key} pillar edition")
     check(sum(levels.values()) == anchors["total"] == total, "core total")
     check({status_key[k]: v for k,v in positions["status"].items()} == dict(levels), "local status replay")

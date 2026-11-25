@@ -1,0 +1,711 @@
+\subsection{Coverage map}\label{v7:q1}
+
+Reachable core at the literature frontier of the pinned allChi graph; the complete pinned source has 17,374,215 physical lines.
+
+Start with each complete residual row of the existing nearest-indexed-head partition. Assign the row to its nearest indicated subtree root. Outside those subtrees assign only residuals owned directly by the listed outer heads to assembly. All remaining head regions go to other. A large residual at a top-level head includes internal dependencies and is not a measure of the length of its wrapper.
+
+\begingroup\scriptsize\setlength{\tabcolsep}{2pt}\setlength{\emergencystretch}{2em}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{.14\linewidth}>{\raggedright\arraybackslash}p{.15\linewidth}>{\raggedright\arraybackslash}p{.18\linewidth}>{\raggedright\arraybackslash}p{.10\linewidth}>{\raggedright\arraybackslash}p{.34\linewidth}@{}}
+\caption{Scope of the indexed blocks}\label{tab:v7-coverage}\\
+\toprule Block / role & Lean entries & Exposition level & Core lines & Written locations / AI review / human check \\ \midrule\endfirsthead
+\toprule Block / role & Lean entries & Exposition level & Core lines & Written locations / AI review / human check \\ \midrule\endhead
+\textbf{Landau window criterion}\par Exclude zeros using a one-sided bound on long intervals. & \nolinkurl{Deduction.landau_window}\par \nolinkurl{UpperTheory.Comparison₂.formB}\par \nolinkurl{Formalism.HC.zeroFreeOn_of_tiedWin_cyc} & Full under stated inputs\par Full at nearest head 2,115 & 2,115 & Full under the stated window hypothesis. · Paper \S\ref{sec:E-landau}, \ifnum\getpagerefnumber{sec:E-landau}=\getpagerefnumber{rem:E-landau-compare}\relax p.\ \pageref{sec:E-landau} (1 p.)\else pp.\ \pageref{sec:E-landau}--\pageref{rem:E-landau-compare} (\number\numexpr\getpagerefnumber{rem:E-landau-compare}-\getpagerefnumber{sec:E-landau}+1\relax pp.)\fi{}\par AI review: P022: R20 v0, full local derivation accepted.\par Human checks: 0 \\ \midrule
+\textbf{Window inequality and list A}\par Use ten local implications to bound a weighted prime sum. & \nolinkurl{UpperTheory.Comparison₂.level_gm_le_on_family_scales}\par \nolinkurl{UpperTheory.Comparison₂.core_gm} & P017 has a Full argument under list A and the stated lattice inputs. List A has mixed grades: A8 and A10 (D561) are outlines.\par Full at nearest head 1,924\par Outline at head 1,431\par Statement only at head 10 & 3,365 & Window inequality and local analytic arguments. · Paper \S\ref{r23:p017}, \ifnum\getpagerefnumber{r23:family}=\getpagerefnumber{r23:budget}\relax p.\ \pageref{r23:family} (1 p.)\else pp.\ \pageref{r23:family}--\pageref{r23:budget} (\number\numexpr\getpagerefnumber{r23:budget}-\getpagerefnumber{r23:family}+1\relax pp.)\fi{}\par AI review: P017: R20 v0, statement exact; no review of the whole A block.\par Human checks: 0 \\ \midrule
+\textbf{Host construction and list B}\par Choose auxiliary primes and fields on which the estimates can be compared. & \nolinkurl{UpperTheory.Top.supplyChi}\par \nolinkurl{UpperTheory.Top.zero_free_all_of_green_v_win} & Outline\par Full at nearest head 11,065\par Outline at head 323\par Statement only at head 20,234 & 31,622 & Outline of the host supply; individual local deductions are given. · Paper \ifnum\getpagerefnumber{r24:host-supply}=\getpagerefnumber{r24:host-design}\relax p.\ \pageref{r24:host-supply} (1 p.)\else pp.\ \pageref{r24:host-supply}--\pageref{r24:host-design} (\number\numexpr\getpagerefnumber{r24:host-design}-\getpagerefnumber{r24:host-supply}+1\relax pp.)\fi{}\par AI review: B07: R21 v1, exact statement comparison.\par Human checks: 0 \\ \midrule
+\textbf{Geometric comparison and list C}\par Place geometric and arithmetic estimates on one compatible family. & \nolinkurl{UpperTheory.Top.shape_closed_link_n_of_green}\par \nolinkurl{GlobalTheory.Top.closed_family_admissible_twist_link_alt} & Outline\par Full at nearest head 72\par Outline at head 129,507\par Statement only at head 16,635 & 146,214 & Outline of the joined comparison under list C. · Paper \ifnum\getpagerefnumber{r24:host-topg}=\getpagerefnumber{r24:host-design}\relax p.\ \pageref{r24:host-topg} (1 p.)\else pp.\ \pageref{r24:host-topg}--\pageref{r24:host-design} (\number\numexpr\getpagerefnumber{r24:host-design}-\getpagerefnumber{r24:host-topg}+1\relax pp.)\fi{}\par AI review: B05: no whole-block verdict.\par Human checks: 0 \\ \midrule
+\textbf{Selmer supplier V and its first two levels}\par Supply a common interval controlling weighted lengths of local kernels. & \nolinkurl{UpperTheory.One.vwin_of_row}\par \nolinkurl{UpperTheory.One.Join.automorphic_window_of_inputs} & Top-level map only\par Full at nearest head 2,065\par Outline at head 653,247\par Statement only at head 230,889 & 886,201 & Map of two supplier levels; full derivation not written. · Paper \S\ref{sec:r23-selmer}, \ifnum\getpagerefnumber{sec:r23-selmer}=\getpagerefnumber{sec:r23-p012}\relax p.\ \pageref{sec:r23-selmer} (1 p.)\else pp.\ \pageref{sec:r23-selmer}--\pageref{sec:r23-p012} (\number\numexpr\getpagerefnumber{sec:r23-p012}-\getpagerefnumber{sec:r23-selmer}+1\relax pp.)\fi{} · \href{https://github.com/GunheeC/rh-lean-verification-atlas/blob/v0.1.0/pillars/V.md}{Two-level supplier map (\nolinkurl{pillars/V.md})}\par AI review: P013: R20 v0, exact statement comparison; no full V verdict.\par Human checks: 0 \\ \midrule
+\textbf{Definite-side supplier F and its first two levels}\par Supply a compatible family class and selection on the definite side. & \nolinkurl{UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound}\par \nolinkurl{GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt} & Top-level map only\par Full at nearest head 13,564\par Outline at head 3,460,914\par Statement only at head 205,214 & 3,679,692 & Map of two supplier levels; full derivation not written. · Paper \S\ref{sec:r23-p012}, \ifnum\getpagerefnumber{sec:r23-p012}=\getpagerefnumber{r24:synthesis}\relax p.\ \pageref{sec:r23-p012} (1 p.)\else pp.\ \pageref{sec:r23-p012}--\pageref{r24:synthesis} (\number\numexpr\getpagerefnumber{r24:synthesis}-\getpagerefnumber{sec:r23-p012}+1\relax pp.)\fi{} · \href{https://github.com/GunheeC/rh-lean-verification-atlas/blob/v0.1.0/pillars/F.md}{Two-level supplier map (\nolinkurl{pillars/F.md})}\par AI review: T02: R21 v1, exact statement comparison; no full F verdict.\par Human checks: 0 \\ \midrule
+\textbf{Top-level assembly and the public conclusions}\par Reach all characters and zeta. Most of this row is the internal dependency residual of P010 and P012. & \nolinkurl{allChi}\par \nolinkurl{UpperTheory.FinalTheorems.everyCharacter_of_row}\par \nolinkurl{LFunction_ne_zero_of_half_lt_re} & Outline\par Full at nearest head 126\par Outline at head 2,586,855 & 2,586,981 & Conditional assembly and goal comparisons; the dependencies still need their own checks. · Paper \ifnum\getpagerefnumber{r24:synthesis}=\getpagerefnumber{v5:conclusion-end}\relax p.\ \pageref{r24:synthesis} (1 p.)\else pp.\ \pageref{r24:synthesis}--\pageref{v5:conclusion-end} (\number\numexpr\getpagerefnumber{v5:conclusion-end}-\getpagerefnumber{r24:synthesis}+1\relax pp.)\fi{} · Paper \ifnum\getpagerefnumber{pn:P001}=\getpagerefnumber{pn:P005}\relax p.\ \pageref{pn:P001} (1 p.)\else pp.\ \pageref{pn:P001}--\pageref{pn:P005} (\number\numexpr\getpagerefnumber{pn:P005}-\getpagerefnumber{pn:P001}+1\relax pp.)\fi{}\par AI review: P011 and P003: R20 v0, statement comparisons only.\par Human checks: 0 \\ \midrule
+\textbf{Other index positions}\par Collect all remaining local and shared work, including representation and comparison inputs. & \nolinkurl{UpperTheory.Gal.Int.Geo.geoOne_holds}\par \nolinkurl{SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt} & Mixed local levels\par Full at nearest head 633\par Outline at head 1,492,618\par Statement only at head 737,604 & 2,230,855 & Mixed local records. No block-wide derivation is written. · Paper \ifnum\getpagerefnumber{sub:B02}=\getpagerefnumber{v8:source-B02}\relax p.\ \pageref{sub:B02} (1 p.)\else pp.\ \pageref{sub:B02}--\pageref{v8:source-B02} (\number\numexpr\getpagerefnumber{v8:source-B02}-\getpagerefnumber{sub:B02}+1\relax pp.)\fi{} · Paper \ifnum\getpagerefnumber{sub:T13}=\getpagerefnumber{sub:T13}\relax p.\ \pageref{sub:T13} (1 p.)\else pp.\ \pageref{sub:T13} (\number\numexpr\getpagerefnumber{sub:T13}-\getpagerefnumber{sub:T13}+1\relax pp.)\fi{}\par AI review: No verdict for this remainder as a whole.\par Human checks: 0 \\ \midrule
+\textbf{Total} & & & 9,567,045 & \\
+\bottomrule\end{longtable}\endgroup
+
+Each core line is assigned to the nearest indexed statement above it. For 0.3299\% of lines, that statement has a Full local argument. For 87.0164\% it has an outline, and for 12.6537\% it has only a statement. These percentages describe the indexed statements. They do not measure written proofs of the lines beneath them. The largest Full contribution, 11,065 lines in the host row, belongs to N415; its two-page argument applies a cited estimate. V and F have top-level maps as block descriptions. Neither has a separate top-level-map grade at an indexed head. The largest named inputs without full written derivations are F (3,679,692 core lines) and V (886,201).
+
+\begin{figure}[htbp]\centering\footnotesize
+\begin{tabular}{@{}l l r@{}}
+Full at nearest head & \textcolor{black!90}{\rule{0.001056\linewidth}{1.1ex}} & 31,564 (0.3299\%) \\
+Outline at head & \textcolor{black!78}{\rule{0.278452\linewidth}{1.1ex}} & 8,324,895 (87.0164\%) \\
+Map as head grade & \textcolor{black!66}{\rule{0.000000\linewidth}{1.1ex}} & 0 (0.0000\%) \\
+Statement only at head & \textcolor{black!54}{\rule{0.040492\linewidth}{1.1ex}} & 1,210,586 (12.6537\%) \\
+No indexed head & \textcolor{black!42}{\rule{0.000000\linewidth}{1.1ex}} & 0 (0.0000\%) \\
+\end{tabular}\caption{Index positions by exposition of their nearest indexed statement.}\label{fig:v7-coverage}\end{figure}
+
+\begin{center}\small\begin{tabular}{@{}lrr@{}}\toprule
+Active step citations & Core lines & Share \\ \midrule
+Cited by a Full step & 5,853 & 0.0612\% \\
+Additional lines cited only by Outline steps & 6,731 & 0.0704\% \\
+No active step cites this line & 9,554,461 & 99.8685\% \\
+\bottomrule\end{tabular}\end{center}
+
+Of 9,567,045 weighted core lines, 5,853 (0.0612\%) are cited in Full notes, 6,731 more (0.0704\%) only in outlines, and 9,554,461 (99.8685\%) have no citation in an active step. A citation locates an assertion; an uncited line may have exposition elsewhere. The physical citation union over the entire source is 13,015, including 12,584 in the core.
+
+Direct citations do not establish a line-by-line proof. The share of the interior with a complete written derivation has not been measured. Of 55 locally Full units, 0 have a recursively closed set of Full prerequisites.
+
+\subsection{What a reader can check}\label{v7:q2}
+
+Numbers refer to active steps in the current atlas checklist. Statement-only comparisons select zero proof steps. A paper passage and its related checklist can have different editions. To sign, read the identified checklist edition itself. Record a mismatch, missing premise or inconclusive result as readily as a positive check.
+
+\paragraph{Task 1. Mathlib’s zeta formulation}\label{v7:task-1}
+
+\textbf{Check.} Compare the zero, the excluded negative even integers and the exception at one with the Lean predicate.
+
+\textbf{Inputs.} Use Mathlib’s definition of RiemannHypothesis.
+
+\textbf{Background.} Complex numbers and reading quantifiers.
+
+\textbf{A positive check establishes.} The printed P001 states Mathlib’s predicate.
+
+\textbf{Outside this check.} A statement match supplies no proof of the exported theorem.
+
+Paper \S\ref{sec:upper-goals}, \ifnum\getpagerefnumber{pn:P001}=\getpagerefnumber{pn:P001}\relax p.\ \pageref{pn:P001} (1 p.)\else pp.\ \pageref{pn:P001} (\number\numexpr\getpagerefnumber{pn:P001}-\getpagerefnumber{pn:P001}+1\relax pp.)\fi{} · 0 of 5 numbered checklist steps · \href{https://github.com/GunheeC/rh-lean-verification-atlas/blob/v0.1.0/units/P001.check.md}{P001 checklist}.
+
+\nolinkurl{riemannHypothesis} · \nolinkurl{Main.lean:4–4}.
+
+\nolinkurl{RiemannHypothesis} · \nolinkurl{Mathlib/NumberTheory/LSeries/RiemannZeta.lean:185–186}.
+
+\paragraph{Task 2. The explicit zeta goal}\label{v7:task-2}
+
+\textbf{Check.} Check the universal complex input, the zeta zero, both exclusions and the real-part conclusion.
+
+\textbf{Inputs.} Use the project definition of RiemannZetaZerosOnLine.
+
+\textbf{Background.} Complex numbers and reading quantifiers.
+
+\textbf{A positive check establishes.} The exclusions and conclusion of P002 match the export.
+
+\textbf{Outside this check.} A statement match supplies no proof of the exported theorem.
+
+Paper \S\ref{sec:upper-goals}, \ifnum\getpagerefnumber{pn:P002}=\getpagerefnumber{pn:P002}\relax p.\ \pageref{pn:P002} (1 p.)\else pp.\ \pageref{pn:P002} (\number\numexpr\getpagerefnumber{pn:P002}-\getpagerefnumber{pn:P002}+1\relax pp.)\fi{} · 0 of 3 numbered checklist steps · \href{https://github.com/GunheeC/rh-lean-verification-atlas/blob/v0.1.0/units/P002.check.md}{P002 checklist}.
+
+\nolinkurl{riemannZeta_eq_zero_re} · \nolinkurl{Main.lean:6–6}.
+
+\nolinkurl{RiemannZetaZerosOnLine} · \nolinkurl{Statements.lean:3–4}.
+
+\paragraph{Task 3. Right-half-plane nonvanishing}\label{v7:task-3}
+
+\textbf{Check.} Check the strict half-plane and the disjunction allowing all cases except the principal character at one.
+
+\textbf{Inputs.} Allow every nonzero modulus and every Dirichlet character.
+
+\textbf{Background.} Complex numbers and reading quantifiers.
+
+\textbf{A positive check establishes.} P003 preserves the exception and the full range of characters.
+
+\textbf{Outside this check.} A statement match supplies no proof of the exported theorem.
+
+Paper \S\ref{sec:upper-goals}, \ifnum\getpagerefnumber{pn:P003}=\getpagerefnumber{pn:P003}\relax p.\ \pageref{pn:P003} (1 p.)\else pp.\ \pageref{pn:P003} (\number\numexpr\getpagerefnumber{pn:P003}-\getpagerefnumber{pn:P003}+1\relax pp.)\fi{} · 0 of 4 numbered checklist steps · \href{https://github.com/GunheeC/rh-lean-verification-atlas/blob/v0.1.0/units/P003.check.md}{P003 checklist}.
+
+\nolinkurl{LFunction_ne_zero_of_half_lt_re} · \nolinkurl{Main.lean:8–8}.
+
+\nolinkurl{DirichletLNonvanishingRightOfHalf} · \nolinkurl{Statements.lean:6–8}.
+
+\paragraph{Task 4. Zeros in the open strip}\label{v7:task-4}
+
+\textbf{Check.} Compare the two strict endpoint inequalities and the implication from a zero to real part one half.
+
+\textbf{Inputs.} Use the open-strip predicate for arbitrary Dirichlet characters.
+
+\textbf{Background.} Complex numbers and reading quantifiers.
+
+\textbf{A positive check establishes.} P004 agrees on the domain, quantifiers and conclusion.
+
+\textbf{Outside this check.} A statement match supplies no proof of the exported theorem.
+
+Paper \S\ref{sec:upper-goals}, \ifnum\getpagerefnumber{pn:P004}=\getpagerefnumber{pn:P004}\relax p.\ \pageref{pn:P004} (1 p.)\else pp.\ \pageref{pn:P004} (\number\numexpr\getpagerefnumber{pn:P004}-\getpagerefnumber{pn:P004}+1\relax pp.)\fi{} · 0 of 3 numbered checklist steps · \href{https://github.com/GunheeC/rh-lean-verification-atlas/blob/v0.1.0/units/P004.check.md}{P004 checklist}.
+
+\nolinkurl{LFunction_eq_zero_re} · \nolinkurl{Main.lean:10–10}.
+
+\nolinkurl{DirichletLZerosOnLine} · \nolinkurl{Statements.lean:10–12}.
+
+\paragraph{Task 5. The primitive-character restriction}\label{v7:task-5}
+
+\textbf{Check.} Check that primitivity is a premise on the character before quantifying over points in the strip.
+
+\textbf{Inputs.} Use the project primitive-character predicate.
+
+\textbf{Background.} Complex numbers and reading quantifiers.
+
+\textbf{A positive check establishes.} P005 agrees with its public statement on primitive characters.
+
+\textbf{Outside this check.} A statement match supplies no proof of the exported theorem.
+
+Paper \S\ref{sec:upper-goals}, \ifnum\getpagerefnumber{pn:P005}=\getpagerefnumber{pn:P005}\relax p.\ \pageref{pn:P005} (1 p.)\else pp.\ \pageref{pn:P005} (\number\numexpr\getpagerefnumber{pn:P005}-\getpagerefnumber{pn:P005}+1\relax pp.)\fi{} · 0 of 3 numbered checklist steps · \href{https://github.com/GunheeC/rh-lean-verification-atlas/blob/v0.1.0/units/P005.check.md}{P005 checklist}.
+
+\nolinkurl{LFunction_eq_zero_re_of_isPrimitive} · \nolinkurl{Main.lean:12–12}.
+
+\nolinkurl{PrimitiveDirichletLZerosOnLine} · \nolinkurl{Statements.lean:14–16}.
+
+\paragraph{Task 6 (A7). One threshold for all fixed constants}\label{v7:task-6}
+
+\textbf{Check.} Use the exponential series to bound log x by a positive power of x. Enlarge the threshold to absorb the fixed multiplier as well.
+
+\textbf{Inputs.} Fix positive epsilon and the constant multiplier in the statement.
+
+\textbf{Background.} Real limits and finite maxima.
+
+\textbf{A positive check establishes.} One threshold suffices after the constants have been fixed.
+
+\textbf{Outside this check.} Uniformity over varying families or varying epsilon needs separate bounds.
+
+Paper \S\ref{r23:p017}, \ifnum\getpagerefnumber{r24:d550}=\getpagerefnumber{v5:d550-end}\relax p.\ \pageref{r24:d550} (1 p.)\else pp.\ \pageref{r24:d550}--\pageref{v5:d550-end} (\number\numexpr\getpagerefnumber{v5:d550-end}-\getpagerefnumber{r24:d550}+1\relax pp.)\fi{} · 2 of 2 numbered checklist steps (S1, S2) · \href{https://github.com/GunheeC/rh-lean-verification-atlas/blob/v0.1.0/units/D550.check.md}{D550 checklist}.
+
+\nolinkurl{Formalism.LFunctionChainParameters.LErr.large_x_eventually} · \nolinkurl{Formalism/SizeWindowBrackets/ChainSlopeWindows/SubThreeMulLogTwoLe.lean:319–329}.
+
+\paragraph{Task 7 (A10). Reindex the thick places}\label{v7:task-7}
+
+\textbf{Check.} Match each index of a thick place with its unique subset element and check its coefficient is unchanged.
+
+\textbf{Inputs.} Fix the width, selected subset and the map assigning its place indices.
+
+\textbf{Background.} Finite sums, indexing and bijections.
+
+\textbf{A positive check establishes.} The frozen-width sum is the same after this reindexing.
+
+\textbf{Outside this check.} Widths that vary with the index require A9 and further estimates. D561 is an outline. Its statement has yet to be compared with the Lean declaration.
+
+Paper \S\ref{r23:p017}, \ifnum\getpagerefnumber{r24:thick}=\getpagerefnumber{v5:thick-end}\relax p.\ \pageref{r24:thick} (1 p.)\else pp.\ \pageref{r24:thick}--\pageref{v5:thick-end} (\number\numexpr\getpagerefnumber{v5:thick-end}-\getpagerefnumber{r24:thick}+1\relax pp.)\fi{} · 1 of 4 numbered checklist steps (S4) · \href{https://github.com/GunheeC/rh-lean-verification-atlas/blob/v0.1.0/units/D561.check.md}{D561 checklist}.
+
+\nolinkurl{Deduction.CharacterBalanceMoves.th_le} · \nolinkurl{Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean:75–152}.
+
+\paragraph{Task 8 (A9). Vary the smoothing width}\label{v7:task-8}
+
+\textbf{Check.} Bound the sum of prime-power weights, then check the change of width separately for the principal and nonprincipal characters.
+
+\textbf{Inputs.} Fix a finite character family with the stated normalization and positive scale.
+
+\textbf{Background.} Binomial coefficients, prime-power weights and triangle inequalities.
+
+\textbf{A positive check establishes.} The claimed uniform change-of-width estimate follows.
+
+\textbf{Outside this check.} A change in the evaluation point is the separate task A4.
+
+Paper \S\ref{r23:p017}, \ifnum\getpagerefnumber{r24:regular}=\getpagerefnumber{v5:regular-end}\relax p.\ \pageref{r24:regular} (1 p.)\else pp.\ \pageref{r24:regular}--\pageref{v5:regular-end} (\number\numexpr\getpagerefnumber{v5:regular-end}-\getpagerefnumber{r24:regular}+1\relax pp.)\fi{} · 3 of 4 numbered checklist steps (S1, S2, S3) · \href{https://github.com/GunheeC/rh-lean-verification-atlas/blob/v0.1.0/units/D562.check.md}{D562 checklist}.
+
+\nolinkurl{Formalism.LFunctionChainParameters.ThickSetMeanBounds.lipschitz_weight_all} · \nolinkurl{Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean:957–964}.
+
+\paragraph{Task 9 (A4). Move the evaluation point}\label{v7:task-9}
+
+\textbf{Check.} Use the factorial identity for the log-weighted prime-power sum; compare the logarithmic increment bound for an ordinary character with the absolute bound for the principal term.
+
+\textbf{Inputs.} Fix the character data and two evaluation points at least one.
+
+\textbf{Background.} Partial sums and logarithms of factorials.
+
+\textbf{A positive check establishes.} The increment inequalities hold at the specified two points.
+
+\textbf{Outside this check.} This comparison does not give the separate estimate for changing the smoothing width.
+
+Paper \S\ref{r23:p017}, \ifnum\getpagerefnumber{r24:regular}=\getpagerefnumber{v5:regular-end}\relax p.\ \pageref{r24:regular} (1 p.)\else pp.\ \pageref{r24:regular}--\pageref{v5:regular-end} (\number\numexpr\getpagerefnumber{v5:regular-end}-\getpagerefnumber{r24:regular}+1\relax pp.)\fi{} · 1 of 4 numbered checklist steps (S4) · \href{https://github.com/GunheeC/rh-lean-verification-atlas/blob/v0.1.0/units/D562.check.md}{D562 checklist}.
+
+\nolinkurl{Formalism.LFunctionChainParameters.ThickSetMeanBounds.derivative_integral_all} · \nolinkurl{Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean:966–981}.
+
+\paragraph{Task 10 (A1). Identify the two prime sums}\label{v7:task-10}
+
+\textbf{Check.} Match the retained characters with the primitive ones, check the ramified-prime average and compare the special and ordinary weights.
+
+\textbf{Inputs.} Use a host satisfying the explicit-formula record and a compatible additive-character functional.
+
+\textbf{Background.} Dirichlet characters, inertia and finite character sums.
+
+\textbf{A positive check establishes.} The host-model sum equals the level sum at every indicated argument.
+
+\textbf{Outside this check.} Existence of the host remains an input.
+
+Paper \S\ref{r23:p017}, \ifnum\getpagerefnumber{v5:chars-start}=\getpagerefnumber{v5:d547-end}\relax p.\ \pageref{v5:chars-start} (1 p.)\else pp.\ \pageref{v5:chars-start}--\pageref{v5:d547-end} (\number\numexpr\getpagerefnumber{v5:d547-end}-\getpagerefnumber{v5:chars-start}+1\relax pp.)\fi{} · 3 of 3 numbered checklist steps (S1, S2, S3) · \href{https://github.com/GunheeC/rh-lean-verification-atlas/blob/v0.1.0/units/D547.check.md}{D547 checklist}.
+
+\nolinkurl{UpperTheory.Comparison₂.gmA_eq} · \nolinkurl{Development/AutomorphicArithmetic/PrimitiveCosets/GmAEq.lean:61–149}.
+
+\paragraph{Task 11 (A2). Count the retained character shares}\label{v7:task-11}
+
+\textbf{Check.} Check membership of the principal frequency, the band cardinality and the cancellation in the sum of coset-share errors.
+
+\textbf{Inputs.} Fix a positive scale and the host explicit-formula and character data.
+
+\textbf{Background.} Finite abelian groups, character orthogonality and cosets.
+
+\textbf{A positive check establishes.} The listed membership, share and size conditions follow for these characters.
+
+\textbf{Outside this check.} No count of the omitted correction is settled by this task.
+
+Paper \S\ref{r23:p017}, \ifnum\getpagerefnumber{v5:d547-end}=\getpagerefnumber{v5:d548-end}\relax p.\ \pageref{v5:d547-end} (1 p.)\else pp.\ \pageref{v5:d547-end}--\pageref{v5:d548-end} (\number\numexpr\getpagerefnumber{v5:d548-end}-\getpagerefnumber{v5:d547-end}+1\relax pp.)\fi{} · 3 of 3 numbered checklist steps (S1, S2, S3) · \href{https://github.com/GunheeC/rh-lean-verification-atlas/blob/v0.1.0/units/D548.check.md}{D548 checklist}.
+
+\nolinkurl{UpperTheory.Comparison₂.charsA} · \nolinkurl{Development/AutomorphicArithmetic/PrimitiveCosets/charsA.lean:80–125}.
+
+\paragraph{Task 12 (A3). Bound the omitted frequencies}\label{v7:task-12}
+
+\textbf{Check.} Separate retained and omitted frequencies and apply the pointwise bound to every term in the omitted set before summing.
+
+\textbf{Inputs.} Use positive scale, the explicit-formula record and compatible character functional.
+
+\textbf{Background.} Character averages and finite-sum inequalities.
+
+\textbf{A positive check establishes.} The omitted correction has the claimed factor four times the level order parameter, multiplied by the scale to the power one half plus epsilon.
+
+\textbf{Outside this check.} The pointwise input and the availability of such a host remain assumptions.
+
+Paper \S\ref{r23:p017}, \ifnum\getpagerefnumber{v5:d548-end}=\getpagerefnumber{v5:chars-end}\relax p.\ \pageref{v5:d548-end} (1 p.)\else pp.\ \pageref{v5:d548-end}--\pageref{v5:chars-end} (\number\numexpr\getpagerefnumber{v5:chars-end}-\getpagerefnumber{v5:d548-end}+1\relax pp.)\fi{} · 2 of 2 numbered checklist steps (S1, S2) · \href{https://github.com/GunheeC/rh-lean-verification-atlas/blob/v0.1.0/units/D549.check.md}{D549 checklist}.
+
+\nolinkurl{UpperTheory.Comparison₂.sigA_le} · \nolinkurl{Development/AutomorphicArithmetic/PrimitiveCosets/SigALe.lean:38–60}.
+
+\paragraph{Task 13 (A5). Fit the per-unit error into the bracket}\label{v7:task-13}
+
+\textbf{Check.} Factor the error expression, apply each window bound and verify the exponent after factoring out the common error bracket.
+
+\textbf{Inputs.} Assume the listed error-window inequalities and that the scale dominates the fixed constants and log x.
+
+\textbf{Background.} Real inequalities and power estimates.
+
+\textbf{A positive check establishes.} The per-unit cost fits the specified error bracket with the stated power loss.
+
+\textbf{Outside this check.} Producing the assumed windows or a prime-sum bound still requires other tasks.
+
+Paper \S\ref{r23:p017}, \ifnum\getpagerefnumber{r24:d567}=\getpagerefnumber{v5:d567-end}\relax p.\ \pageref{r24:d567} (1 p.)\else pp.\ \pageref{r24:d567}--\pageref{v5:d567-end} (\number\numexpr\getpagerefnumber{v5:d567-end}-\getpagerefnumber{r24:d567}+1\relax pp.)\fi{} · 5 of 5 numbered checklist steps (S1, S2, S3, S4, S5) · \href{https://github.com/GunheeC/rh-lean-verification-atlas/blob/v0.1.0/units/D567.check.md}{D567 checklist}.
+
+\nolinkurl{Formalism.LFunctionChainParameters.LChain.errX5at_le} · \nolinkurl{Formalism/SizeWindowBrackets/ChainSlopeWindows/PChain.lean:613–672}.
+
+\paragraph{Task 14 (A6). Check inertia at exceptional primes}\label{v7:task-14}
+
+\textbf{Check.} Separate primes outside the conductor, those in the exceptional set and the distinguished prime d; use the Chinese remainder theorem to obtain the required nonidentity inertia element.
+
+\textbf{Inputs.} Assume the specified cyclotomic host, its frame, the distinguished primes and the prescribed small primes.
+
+\textbf{Background.} Cyclotomic fields, inertia, Frobenius and congruences.
+
+\textbf{A positive check establishes.} These host data satisfy the particular inertia and Frobenius conditions used in the balance argument.
+
+\textbf{Outside this check.} Constructing a suitable host and proving V are separate problems.
+
+Paper \S\ref{r23:p017}, \ifnum\getpagerefnumber{r24:hostfacts}=\getpagerefnumber{v5:hostfacts-end}\relax p.\ \pageref{r24:hostfacts} (1 p.)\else pp.\ \pageref{r24:hostfacts}--\pageref{v5:hostfacts-end} (\number\numexpr\getpagerefnumber{v5:hostfacts-end}-\getpagerefnumber{r24:hostfacts}+1\relax pp.)\fi{} · 3 of 7 numbered checklist steps (S5, S6, S7) · \href{https://github.com/GunheeC/rh-lean-verification-atlas/blob/v0.1.0/units/D014.check.md}{D014 checklist}.
+
+\nolinkurl{UpperTheory.Comparison₂.hostFactsS} · \nolinkurl{Development/AutomorphicArithmetic/PrimitiveCosets/hostFactsS.lean:127–136}.
+
+\paragraph{Task 15 (A8). Check the written steps of the prime–character balance}\label{v7:task-15}
+
+\textbf{Check.} Compute the average separately at ordinary and exceptional primes; check the factor two divided by inertia order two at d, then sum by characters.
+
+\textbf{Inputs.} Fix the host, its index-two subgroup, the prescribed inertia data and column weights.
+
+\textbf{Background.} Finite Fourier inversion and prime-power weights.
+
+\textbf{A positive check establishes.} The prime count minus its main term equals the stated character correction.
+
+\textbf{Outside this check.} The identity alone gives no size estimate for that correction. D561 is an outline. Its statement has yet to be compared with the Lean declaration.
+
+Paper \S\ref{r23:p017}, \ifnum\getpagerefnumber{r24:balance}=\getpagerefnumber{v5:balance-end}\relax p.\ \pageref{r24:balance} (1 p.)\else pp.\ \pageref{r24:balance}--\pageref{v5:balance-end} (\number\numexpr\getpagerefnumber{v5:balance-end}-\getpagerefnumber{r24:balance}+1\relax pp.)\fi{} · 3 of 4 numbered checklist steps (S1, S2, S3) · \href{https://github.com/GunheeC/rh-lean-verification-atlas/blob/v0.1.0/units/D561.check.md}{D561 checklist}.
+
+\nolinkurl{Deduction.ch_balance} · \nolinkurl{Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChBalance.lean:200–260}.
+
+\paragraph{Task 16. Compare the Selmer window V}\label{v7:task-16}
+
+\textbf{Check.} Track the choice of J and threshold before the prime pair, and of a single interval before the universally quantified scales, fields and finite sets of primes. Check cutoff exponent 401 and the weighted length bound.
+
+\textbf{Inputs.} Fix a primitive character, an admissible positive epsilon and any dyadic-exponent function satisfying PageN.
+
+\textbf{Background.} Selmer localization kernels and lengths, cyclotomic fields, nested quantifiers.
+
+\textbf{A positive check establishes.} The stated V has the source quantifiers and the same budget for each admissible field.
+
+\textbf{Outside this check.} This compares a statement only; the row assumed by the supplier and the derivation of V remain open for hand checking.
+
+Paper \S\ref{sec:r23-selmer}, \ifnum\getpagerefnumber{sec:r23-selmer}=\getpagerefnumber{sec:r23-p012}\relax p.\ \pageref{sec:r23-selmer} (1 p.)\else pp.\ \pageref{sec:r23-selmer}--\pageref{sec:r23-p012} (\number\numexpr\getpagerefnumber{sec:r23-p012}-\getpagerefnumber{sec:r23-selmer}+1\relax pp.)\fi{} · 0 of 7 numbered checklist steps · \href{https://github.com/GunheeC/rh-lean-verification-atlas/blob/v0.1.0/units/P013.check.md}{P013 checklist}.
+
+\nolinkurl{UpperTheory.One.vwin_of_row} · \nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/VwinOfRow.lean:4–5}.
+
+\nolinkurl{UpperTheory.Top.VWinAt} · \nolinkurl{Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean:44–47}.
+
+\nolinkurl{UpperTheory.Top.VWin} · \nolinkurl{Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean:49–49}.
+
+\nolinkurl{UpperTheory.Top.VVle} · \nolinkurl{Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean:12–17}.
+
+\paragraph{Task 17. Compare the common definite-side witness F}\label{v7:task-17}
+
+\textbf{Check.} Compare one class of families and one selection carrying both the closed link and the definite-side condition. In T02 distinguish a proof that local maps exist from choosing a system of such maps.
+
+\textbf{Inputs.} Read the existential F input in the conditional theorem and the separately hypothesized supplier T02.
+
+\textbf{Background.} Theta correspondences, lattice norms and dependent quantification.
+
+\textbf{A positive check establishes.} The statement asks for one compatible witness, with the same quantifier order as Lean.
+
+\textbf{Outside this check.} Agreement does not construct this witness or resolve the theta and covolume inputs.
+
+Paper \S\ref{sec:r23-p012}, \ifnum\getpagerefnumber{sec:r23-p012}=\getpagerefnumber{r24:synthesis}\relax p.\ \pageref{sec:r23-p012} (1 p.)\else pp.\ \pageref{sec:r23-p012}--\pageref{r24:synthesis} (\number\numexpr\getpagerefnumber{r24:synthesis}-\getpagerefnumber{sec:r23-p012}+1\relax pp.)\fi{} · 0 of 2 numbered checklist steps · \href{https://github.com/GunheeC/rh-lean-verification-atlas/blob/v0.1.0/units/T02.check.md}{T02 checklist}.
+
+\nolinkurl{UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound} · \nolinkurl{Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean:44–68}.
+
+\nolinkurl{UpperTheory.Top.zero_free_all_of_green_v_win} · \nolinkurl{Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:12–15}.
+
+\paragraph{Task 18. Derive the family-window estimate}\label{v7:task-18}
+
+\textbf{Check.} Keep constants fixed on the family, take the reference member at each eligible scale, and combine its one-scale bound and explicit formula to obtain the exponent one half plus (eD+eL+7) epsilon.
+
+\textbf{Inputs.} Fix a level and one family with the explicit formula, chain-tied lattice data, and fixed division and loss exponents.
+
+\textbf{Background.} Finite character averages, lattices, uniform asymptotic estimates.
+
+\textbf{A positive check establishes.} The window bound follows on the tail of the given family with the named exponents.
+
+\textbf{Outside this check.} It does not identify a suitable family or prove the two exponents have the required values.
+
+Paper \S\ref{r23:p017}, \ifnum\getpagerefnumber{r23:family}=\getpagerefnumber{r23:budget}\relax p.\ \pageref{r23:family} (1 p.)\else pp.\ \pageref{r23:family}--\pageref{r23:budget} (\number\numexpr\getpagerefnumber{r23:budget}-\getpagerefnumber{r23:family}+1\relax pp.)\fi{} · 3 of 3 numbered checklist steps (S1, S2, S3) · \href{https://github.com/GunheeC/rh-lean-verification-atlas/blob/v0.1.0/units/P017.check.md}{P017 checklist}.
+
+\nolinkurl{UpperTheory.Comparison₂.level_gm_le_on_family_scales} · \nolinkurl{Development/AutomorphicArithmetic/PrimitiveCosets/LevelGmLeOnFamilyScales.lean:28–30}.
+
+\paragraph{Task 19. Exclude a pole from a one-sided window}\label{v7:task-19}
+
+\textbf{Check.} Check the six-step analytic packet against the manuscript: localize the kernel, bound each tail, and obtain contradictions from Taylor coefficients for the separated and the real pole cases. Steps S1–S6 form one complete account. S7–S10 present a parallel account and are outside this check.
+
+\textbf{Inputs.} Assume the pole-data record, including growth, transform continuation and residue sign, with 0 < theta < 1 and arbitrarily distant full logarithmic windows of the prescribed length.
+
+\textbf{Background.} Complex analysis, Laplace transforms, meromorphic functions and residues.
+
+\textbf{A positive check establishes.} No pole in the stated pole set lies to the right of theta under this window bound.
+
+\textbf{Outside this check.} Supplying the window for the arithmetic family and transferring this abstract result to every character are separate deductions.
+
+Paper \S\ref{sec:E-landau}, \ifnum\getpagerefnumber{sec:E-landau}=\getpagerefnumber{rem:E-landau-compare}\relax p.\ \pageref{sec:E-landau} (1 p.)\else pp.\ \pageref{sec:E-landau}--\pageref{rem:E-landau-compare} (\number\numexpr\getpagerefnumber{rem:E-landau-compare}-\getpagerefnumber{sec:E-landau}+1\relax pp.)\fi{} · 6 of 10 numbered checklist steps (S1, S2, S3, S4, S5, S6) · \href{https://github.com/GunheeC/rh-lean-verification-atlas/blob/v0.1.0/units/P022.check.md}{P022 checklist}.
+
+\nolinkurl{Deduction.landau_window} · \nolinkurl{Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindow.lean:83–166}.
+
+\paragraph{Task 20. Assemble the conditional theorem}\label{v7:task-20}
+
+\textbf{Check.} Follow one common family through rank truncation, the two comparisons and the square-root window estimate. Put the whole interval beyond the threshold, exclude a primitive zero, then check change of conductor, reflection and the pole at one.
+
+\textbf{Inputs.} Assume V, F, Green, all 31 implications in lists A–C and the supplementary inputs S1–S6 including the specified Mathlib facts.
+
+\textbf{Background.} Selmer data, lattice estimates, prime sums and Dirichlet L-functions.
+
+\textbf{A positive check establishes.} Each of the seven recorded transitions is correct from the inputs it names.
+
+\textbf{Outside this check.} The check does not supply V or F, prove the input lists, or re-run the Lean kernel. This unit is an outline. A positive check cannot certify that its premise list is complete or that the five conclusions follow.
+
+Paper \S\ref{r24:synthesis}, \ifnum\getpagerefnumber{r24:synthesis}=\getpagerefnumber{v5:conclusion-end}\relax p.\ \pageref{r24:synthesis} (1 p.)\else pp.\ \pageref{r24:synthesis}--\pageref{v5:conclusion-end} (\number\numexpr\getpagerefnumber{v5:conclusion-end}-\getpagerefnumber{r24:synthesis}+1\relax pp.)\fi{} · 7 of 7 numbered checklist steps (S1, S2, S3, S4, S5, S6, S7) · \href{https://github.com/GunheeC/rh-lean-verification-atlas/blob/v0.1.0/units/V4-COND.check.md}{V4-COND checklist}.
+
+\nolinkurl{UpperTheory.Top.zero_free_all_of_green_v_win} · \nolinkurl{Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:12–15}.
+
+Record the edition, step IDs, assumptions and verdict. Report a failed inference or limitation through the same form. \href{https://github.com/GunheeC/rh-lean-verification-atlas/blob/v0.1.0/signoffs/README.md}{Reader sign-off instructions}.
+
+\subsection{What the written documents leave open}\label{v7:q3}
+
+Each project figure counts weighted core lines lost from allChi when that declaration is removed. The cones overlap. A zero can mark a literature boundary. Mathlib declarations lie outside this graph; their inclusive source intervals give their physical length. The named-library entries identify the mathematical facts explicitly called out in the manuscript.
+
+\paragraph{V · the window bound}
+
+The map follows the row to the bound for each primitive character. Its two levels do not derive the underlying uniform estimates.
+
+Field: Galois representations and Iwasawa theory. Further document needed: Give a full derivation with the same exponent, uniform constants and quantifier order, including the Selmer, finite-level and descent inputs.
+
+\nolinkurl{UpperTheory.One.vwin_of_row} · \nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/VwinOfRow.lean:4–5} · 886,201 dominated core lines.
+
+\paragraph{F · one compatible definite-side witness}
+
+The map identifies one selection carrying both the norm bound and the row certificates. Its two levels leave the construction of the input records open to hand verification.
+
+Field: Theta correspondence and Arakelov geometry. Further document needed: Derive the definite-side records and show that the norm, local maps and every row certificate belong to the very same selection.
+
+\nolinkurl{UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound} · \nolinkurl{Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean:44–68} · 3,679,692 dominated core lines.
+
+\paragraph{Green character bridge}
+
+The local deduction starts from regular-character data. Its use as a literature input requires an identification of the finite group, torus, character and normalization.
+
+Field: Finite groups of Lie type. Further document needed: Give the full comparison between the published character formula, its repository predicate and the bridge on each local datum.
+
+\nolinkurl{GlobalTheory.GreenBridge.green_of_regular} · \nolinkurl{Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/SumRangeEqRoots.lean:225–304} · 280 dominated core lines.
+
+\paragraph{B1–B5 · primes and the field frame}
+
+The prime-pair choice, field of the twist, complementary-frequency bound, field identification and Jacobi-symbol tests enter the host on a common pair.
+
+Field: Analytic and algebraic number theory. Further document needed: Derive the simultaneous selection and trace the uniform character bounds and symbol conditions through the field identification for that pair.
+
+\nolinkurl{QH.pairEx} · \nolinkurl{Development/AutomorphicArithmetic/MeanSquareBounds/pairEx.lean:112–169} · 17,613 dominated core lines.
+
+\nolinkurl{UpperTheory.Top.fieldChi} · \nolinkurl{Development/AutomorphicArithmetic/CharacterBoxes/FieldChi.lean:20–59} · 3,104 dominated core lines.
+
+\nolinkurl{UpperTheory.Top.boundedTw} · \nolinkurl{Development/AutomorphicArithmetic/CharacterBoxes/BoundedTw.lean:45–56} · 51 dominated core lines.
+
+\nolinkurl{UpperTheory.Top.isChiField} · \nolinkurl{Development/AutomorphicArithmetic/CharacterBoxes/IsChiField.lean:5–51} · 47 dominated core lines.
+
+\nolinkurl{UpperTheory.Top.pairHyp} · \nolinkurl{Development/AutomorphicArithmetic/CharacterBoxes/PairHyp.lean:24–35} · 29 dominated core lines.
+
+\paragraph{B6–B8 · host, ranks and admission}
+
+The assembly extends the chosen field, realizes the ranks on a frame and imposes admissibility of its twists. Each supplier still needs a derivation through its dependencies.
+
+Field: Arithmetic of characters and ranks. Further document needed: Construct a host extending that field and prove both rank realization and admissibility for the same twists and frame.
+
+\nolinkurl{UpperTheory.Top.hostOfField} · \nolinkurl{Development/AutomorphicArithmetic/CharacterBoxes/HostOfField.lean:8–15} · 10,024 dominated core lines.
+
+\nolinkurl{GlobalTheory.EX.exists_ranks_rankVal_frame} · \nolinkurl{Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsRanksRankValFrame.lean:45–99} · 81 dominated core lines.
+
+\nolinkurl{UpperTheory.Top.admissibleClassesTwistedChar} · \nolinkurl{Development/AutomorphicArithmetic/CoprimeRanks/AdmChi.lean:13–20} · 112 dominated core lines.
+
+\paragraph{C1–C3 · design and divisor estimates}
+
+The closed-link assembly uses existence of a design, the global link and passage from a closed bridge kernel to divisor estimates.
+
+Field: Arithmetic geometry. Further document needed: Prove the design exists for every requested largeness parameter, then derive the global and divisor estimates on its selected rows.
+
+\nolinkurl{GlobalTheory.Top.designExists_of_tuSize_aux4n_litThin} · \nolinkurl{Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkEx.lean:15–37} · 1,749 dominated core lines.
+
+\nolinkurl{GlobalTheory.Top.link_gl} · \nolinkurl{Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/LinkGl.lean:14–31} · 11,198 dominated core lines.
+
+\nolinkurl{Formalism.L2.DIV.closed_linkDIVt_of_closed_bridge_kernel} · \nolinkurl{Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/DIVRecBridgeSel.lean:197–205} · 5,437 dominated core lines.
+
+\paragraph{C4–C7 · selected rows and admissible families}
+
+Row selection, the remaining link data, admissibility of the twisted family and the alternative link feed subsequent bounds.
+
+Field: Arithmetic geometry. Further document needed: Derive the four suppliers for a common family. Track the served selections and the point, period and column bounds through each restriction.
+
+\nolinkurl{GlobalTheory.Top.wire_sel_alt} · \nolinkurl{Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/WireSel.lean:20–50} · 5,644 dominated core lines.
+
+\nolinkurl{GlobalTheory.Top.link_brest_alt} · \nolinkurl{Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkBrest.lean:18–36} · 2,204 dominated core lines.
+
+\nolinkurl{GlobalTheory.Top.closed_family_admissible_twist_link_alt} · \nolinkurl{Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ClosedFamilyAdmissibleTwistLink.lean:12–31} · 21,017 dominated core lines.
+
+\nolinkurl{GlobalTheory.Top.link_alt_alt_bis} · \nolinkurl{Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkAltAltBis.lean:16–48} · 1,314 dominated core lines.
+
+\paragraph{C8–C10 · closed estimates}
+
+The eta, irreducibility and G estimates require their respective duty or join-count premises before the common closed intersection is taken.
+
+Field: Arithmetic geometry. Further document needed: Derive the duty and join-count inputs and retain the uniform thresholds needed when all three estimates are restricted to one design.
+
+\nolinkurl{GlobalTheory.Top.closed_linkEta_of_duty} · \nolinkurl{Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkEta.lean:13–22} · 1,143 dominated core lines.
+
+\nolinkurl{GlobalTheory.Top.Irr.closed_linkIRR_of_join_count} · \nolinkurl{Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkIrr.lean:22–43} · 773 dominated core lines.
+
+\nolinkurl{GlobalTheory.Top.closed_linkG_of_duty} · \nolinkurl{Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkG.lean:13–24} · 13 dominated core lines.
+
+\paragraph{C11–C13 · ranks, decay and shape}
+
+The retained-lift ranks, Wu decay and final shape implication operate on a selected witness and a compatible hypothesis record.
+
+Field: Geometry of lattices and arithmetic families. Further document needed: Give the rank and decay arguments on the same lifts, then identify the exact selection and record in the shape implication.
+
+\nolinkurl{GlobalTheory.Top.link_alt_alt_alt} · \nolinkurl{Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/Link.lean:20–54} · 122 dominated core lines.
+
+\nolinkurl{GlobalTheory.Top.selection_closed_of_wu_decay_alt} · \nolinkurl{Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SelectionClosedOfWuDecay.lean:20–52} · 347 dominated core lines.
+
+\nolinkurl{GlobalTheory.Fc.goal_of_shape_of_hyps} · \nolinkurl{Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ShapeOf.lean:24–30} · 9 dominated core lines.
+
+\paragraph{S1 · power windows at the level}
+
+The criterion itself has full local written arguments in P018, P022 and P023. The conditional deduction still assumes that the required power windows are available at the specified level.
+
+Field: Analytic number theory. Further document needed: Derive the level family and check all its hypotheses against the zero-free criterion for the same exponent and character.
+
+\nolinkurl{UpperTheory.Comparison₂.formB} · \nolinkurl{Development/AutomorphicArithmetic/PrimitiveCosets/Imports.lean:8–19} · 2,057 dominated core lines.
+
+\nolinkurl{UpperTheory.Comparison₂.level_family} · \nolinkurl{Development/AutomorphicArithmetic/PrimitiveCosets/LevelFamily.lean:41–52} · 70 dominated core lines.
+
+\nolinkurl{Deduction.zeroFree_of_rpow_window} · \nolinkurl{Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ZeroFreeOfRpowWindow.lean:11–14} · 1,958 dominated core lines.
+
+\paragraph{S2 · pointwise lattice gap}
+
+The per-unit bound supplies the lattice gap used at the top of the window argument. A reduction to a weighted-slope premise leaves the source of that premise to be checked.
+
+Field: Lattice estimates and analytic number theory. Further document needed: Derive the pointwise congruence and slope estimates with constants uniform over the units summed at the top.
+
+\nolinkurl{Formalism.LFunctionChainParameters.WeightedSlopeBounds.each_unit_bound_statement} · \nolinkurl{Formalism/SizeWindowBrackets/ChainSlopeWindows/LevelOfCongruence.lean:175–197} · 301 dominated core lines.
+
+\paragraph{S3 · Selmer budget}
+
+The window bound, LinkN and small-level rank equalities transport a Selmer bound to the chosen family.
+
+Field: Galois representations and Iwasawa theory. Further document needed: Identify the same family through all three inputs and prove the transport with the original uniform constants.
+
+\nolinkurl{UpperTheory.Top.divinN_of_hypV} · \nolinkurl{Development/AutomorphicArithmetic/CharacterBoxes/DivinNOfHypV.lean:117–130} · 111 dominated core lines.
+
+\paragraph{S4 · slopes after division}
+
+The comparison uses divisor bounds, an intermediate mu bound and the size of the chosen design.
+
+Field: Lattices and arithmetic height estimates. Further document needed: Trace the division, mu and size estimates on the same join, including losses in each change of bound.
+
+\nolinkurl{Formalism.MainNotions.J.linkMu_of_linkDIV} · \nolinkurl{Formalism/SharpRestriction/AdmissibleParameterJoins/SumLogPrimeFactorsLe.lean:775–783} · 16 dominated core lines.
+
+\nolinkurl{Formalism.MainNotions.J.linkMu} · \nolinkurl{Formalism/SharpRestriction/AdmissibleParameterJoins/SumLogPrimeFactorsLe.lean:728–749} · 221 dominated core lines.
+
+\nolinkurl{Formalism.MainNotions.J.muDGam_of_fact} · \nolinkurl{Formalism/SharpRestriction/AdmissibleParameterJoins/SumLogPrimeFactorsLe.lean:756–765} · 104 dominated core lines.
+
+\nolinkurl{Formalism.MainNotions.muTu_of_tuSize} · \nolinkurl{Formalism/SharpRestriction/MuTuOfTuSize.lean:27–40} · 39 dominated core lines.
+
+\paragraph{S5 · actual-rank cutoff}
+
+For epsilon strictly between zero and 1/52 the actual rank must eventually be at most the 400th power of x.
+
+Field: Asymptotic estimates for arithmetic ranks. Further document needed: Unpack RankVal and prove that a common threshold works at the places where the host construction uses it.
+
+\nolinkurl{UpperTheory.Top.eventually_rank_le_rpow_of_lt_one_div_fiftytwo} · \nolinkurl{Development/AutomorphicArithmetic/CharacterBoxes/EventuallyRankLeRpowOfLtOneDivFiftytwo.lean:5–126} · 122 dominated core lines.
+
+\paragraph{S6a · nonvanishing on the closed half-plane}
+
+Mathlib supplies nonvanishing for zeta and Dirichlet L-functions on real part at least one, with the character-and-point exception in the Dirichlet statement.
+
+Field: Analytic number theory. Further document needed: Give the library proof and compare the handling of the principal character, the pole and the library value at one.
+
+\nolinkurl{DirichletCharacter.LFunction_ne_zero_of_one_le_re} · \nolinkurl{Mathlib/NumberTheory/LSeries/Nonvanishing.lean:398–401} · separate size not registered.
+
+\nolinkurl{riemannZeta_ne_zero_of_one_le_re} · \nolinkurl{Mathlib/NumberTheory/LSeries/Nonvanishing.lean:411–415} · separate size not registered.
+
+\paragraph{S6b · levels and the completed L-function}
+
+The reduction uses Mathlib for modulus one, change of level, the gamma factor and the primitive functional equation.
+
+Field: Analytic number theory. Further document needed: Supply a derivation with the same Euler factors, character inverse, exceptional points and root-number normalization.
+
+\nolinkurl{DirichletCharacter.LFunction_modOne_eq} · \nolinkurl{Mathlib/NumberTheory/LSeries/DirichletContinuation.lean:67–69} · separate size not registered.
+
+\nolinkurl{DirichletCharacter.LFunction_changeLevel} · \nolinkurl{Mathlib/NumberTheory/LSeries/DirichletContinuation.lean:150–162} · separate size not registered.
+
+\nolinkurl{DirichletCharacter.LFunction_eq_completed_div_gammaFactor} · \nolinkurl{Mathlib/NumberTheory/LSeries/DirichletContinuation.lean:259–264} · separate size not registered.
+
+\nolinkurl{DirichletCharacter.IsPrimitive.completedLFunction_one_sub} · \nolinkurl{Mathlib/NumberTheory/LSeries/DirichletContinuation.lean:284–313} · separate size not registered.
+
+\paragraph{S6c · completed zeta and real gamma factors}
+
+The zeta functional equation, the value at zero, the formula away from zero, and the zeros of the real gamma factor are imported.
+
+Field: Analytic number theory. Further document needed: Give the continuation and gamma-factor arguments including the exceptional values and the zero convention for poles.
+
+\nolinkurl{completedRiemannZeta_one_sub} · \nolinkurl{Mathlib/NumberTheory/LSeries/RiemannZeta.lean:106–108} · separate size not registered.
+
+\nolinkurl{riemannZeta_zero} · \nolinkurl{Mathlib/NumberTheory/LSeries/RiemannZeta.lean:151–152} · separate size not registered.
+
+\nolinkurl{riemannZeta_def_of_ne_zero} · \nolinkurl{Mathlib/NumberTheory/LSeries/RiemannZeta.lean:154–156} · separate size not registered.
+
+\nolinkurl{Complex.Gammaℝ_ne_zero_of_re_pos} · \nolinkurl{Mathlib/Analysis/SpecialFunctions/Gamma/Deligne.lean:66–71} · separate size not registered.
+
+\nolinkurl{Complex.Gammaℝ_eq_zero_iff} · \nolinkurl{Mathlib/Analysis/SpecialFunctions/Gamma/Deligne.lean:73–74} · separate size not registered.
+
+\paragraph{Ferrero–Washington · bounded ranks}
+
+The repository bounds ranks in a cyclotomic tower using an integral group-ring containment and a class-group index. It records a bounded-rank variant.
+
+Field: Galois representations and Iwasawa theory. Further document needed: Compare fields, primes, tower, quantified constants and the precise implication from the published mu-invariant theorem.
+
+\nolinkurl{UpperTheory.V.FW.ferreroWashington} · \nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/FerreroWashingtonIndex/FerreroWashington.lean:104–119} · 4,838 dominated core lines.
+
+\nolinkurl{UpperTheory.V.Published.FerreroWashington} · \nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/PublishedTheorems/FerreroWashington.lean:7–11} · 0 dominated core lines.
+
+\paragraph{Green · cuspidal characters of a finite general linear group}
+
+The project packages regular characters, Frobenius orbits and a cuspidal-character formula into two predicates and a supplier from a record.
+
+Field: Finite group character theory. Further document needed: Match every normalization and orbit convention with the corresponding published character formula, including its sign.
+
+\nolinkurl{GlobalTheory.GLq.Green} · \nolinkurl{Development/AbelianVarietyTheory/Definitions/NonGaloisDescent/LabelDatum.lean:108–112} · 5 dominated core lines.
+
+\nolinkurl{GlobalTheory.Published.GreenRegularCharacters} · \nolinkurl{Development/AbelianVarietyTheory/PublishedTheorems/GaloisCohomology₂/GreenRegularCharacters.lean:13–20} · 0 dominated core lines.
+
+\nolinkurl{UpperTheory.LiteratureTheorems.green_regular_characters_of_literature} · \nolinkurl{Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:399–400} · 0 dominated core lines.
+
+\paragraph{Local Langlands · the selected local correspondence}
+
+The repository supplies a local correspondence for its parameter and type data. The exact match to a published normalization is open.
+
+Field: Local and global representation theory. Further document needed: Compare the admissible representations, reciprocity convention and local parameter on every datum quantified at this head.
+
+\nolinkurl{UpperTheory.Zero.LLC.recTExists} · \nolinkurl{Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/RecTExists.lean:20–66} · 4,837 dominated core lines.
+
+\paragraph{Galois local–global compatibility}
+
+The attached representation has the restricted local parameter comparisons requested by the project’s row.
+
+Field: Local and global representation theory. Further document needed: Compare the field, places, representation and local restrictions with the published compatibility theorem under matching normalizations.
+
+\nolinkurl{UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter} · \nolinkurl{Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/RowSrc.lean:6–6} · 761,322 dominated core lines.
+
+\paragraph{Moriwaki · arithmetic bigness}
+
+The in-repository supplier uses resolution, intersection data and bounded-height density to establish its specific bigness predicate.
+
+Field: Arakelov geometry. Further document needed: Compare the chart lattice, intersection system and quantifiers with a precise published bigness theorem.
+
+\nolinkurl{PositivityTheory.Pf1.HilbertSamuelMoriwaki.moriwakiBig_outright} · \nolinkurl{Development/WeilBound/CoreStatements/AutomorphicKernels/MoriwakiBigness/MoriwakiBigTheorem/Outright.lean:9–11} · 13 dominated core lines.
+
+\paragraph{Siegel–Weil · the normalized identity}
+
+The project’s standard identity specializes theta coefficients and constant terms for fixed models and measures.
+
+Field: Theta correspondence. Further document needed: Compare the convergence regimes, measures, normalizations and treatment of lower rank in a published Siegel–Weil formula.
+
+\nolinkurl{PositivityTheory.SiegelWeilFormula.Fin.siegelWeilStd} · \nolinkurl{Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilStandard/SiegelWeilStd.lean:8–8} · 20,986 dominated core lines.
+
+\paragraph{Soulé · the uniform cohomology bound}
+
+The project asks for a uniform H² bound over primes and fields containing the required roots of unity. The prime range in the cited product bound misses the requested primes.
+
+Field: Arithmetic K-theory and Galois cohomology. Further document needed: Prove the missing prime range and discriminant dependence or give a precise additional theorem covering both.
+
+\nolinkurl{UpperTheory.V.ZK.lemmaK_litN_alt} · \nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/KFinal.lean:11–11} · 38,725 dominated core lines.
+
+\paragraph{Labesse · weak base change}
+
+The formal base-change head uses a specific unitary frame and local conclusions. The manuscript compares the field-degree restriction; the packet hypothesis and local normalizations remain to be matched.
+
+Field: Local and global representation theory. Further document needed: Write a statement-by-statement comparison with Corollary 5.3, including the discrete-series condition, packet hypothesis and split and inert places.
+
+\nolinkurl{UpperTheory.BaseChangeIdentities.baseChangeN} · \nolinkurl{Development/AutomorphicArithmetic/Foundations/BaseChangeIdentities/DefiniteNHolds.lean:5–6} · 1,699 dominated core lines.
+
+\paragraph{Kato, Poitou–Tate and Fargues · further comparisons}
+
+The smoothed-class unit law is a repository term, the duality predicate is an input at its application, and the Hodge–Tate implication uses the project’s exactness premise. The register records no literature comparison for these roles.
+
+Field: Galois cohomology and p-adic Hodge theory. Further document needed: Give separate comparisons of the chosen classes, Selmer local conditions and the exact sequence of period data, with their hypotheses.
+
+\nolinkurl{UpperTheory.V.Z.Kato.Joint.kato_global_unit_law_of_smoothed_classes} · \nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/FrobeniusHodgeTateLaws/KatoGlobalUnitLawOfSmoothedClasses.lean:8–10} · 39,884 dominated core lines.
+
+\nolinkurl{GlobalTheory.Published.PoitouTateDuality} · \nolinkurl{Development/AbelianVarietyTheory/PublishedTheorems/GaloisCohomology₂/ExistsPrimitiveRootPow.lean:13–27} · 0 dominated core lines.
+
+\nolinkurl{GlobalTheory.CompanionTheory.Relay.hodge_tate_of_fargues_exact} · \nolinkurl{Development/AutomorphicSpectrum/Proofs/AlgebraProofs/HodgeTateOfFarguesExact.lean:36–37} · 517 dominated core lines.
+
+\paragraph{Howe duality · unramified and real inputs}
+
+The unramified assertion has a local supplier. Real Howe duality is a field of the theta-local record. Their literature comparisons remain open.
+
+Field: Local and global representation theory. Further document needed: Identify the local models, compact-fixed vectors and the real representation class in the respective published statements.
+
+\nolinkurl{GlobalTheory.Hk3.howeUnram_holds} · \nolinkurl{Development/AbelianVarietyTheory/Proofs/SatakeParameters/RhoMemOfMkEq.lean:250–256} · 6,499 dominated core lines.
+
+\nolinkurl{GlobalTheory.FunPr.ThetaLocalInputs.howeDualityReal} · \nolinkurl{Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/BernsteinUnitaryProductIrreducible.lean:57–57} · 0 dominated core lines.
+
+\paragraph{Mathlib · the Chebyshev estimate}
+
+The paper gives an elementary bound for the Chebyshev function. The corresponding Lean proof invokes a separately proved library estimate.
+
+Field: Analytic number theory. Further document needed: Check the library proof and the comparison of its explicit constant with the bound used for the window.
+
+\nolinkurl{Chebyshev.psi_le} · \nolinkurl{Mathlib/NumberTheory/Chebyshev.lean:445–453} · separate size not registered.
+
+\paragraph{Mathlib · the real logarithm convention}
+
+The formulas for the window use Mathlib’s real logarithm at zero and at negative arguments.
+
+Field: Real analysis. Further document needed: Check the defining extension and both evaluation lemmas before using the formulas outside positive arguments.
+
+\nolinkurl{Real.log_zero} · \nolinkurl{Mathlib/Analysis/SpecialFunctions/Log/Basic.lean:103–104} · separate size not registered.
+
+\nolinkurl{Real.log_neg_eq_log} · \nolinkurl{Mathlib/Analysis/SpecialFunctions/Log/Basic.lean:121–121} · separate size not registered.
+
+\paragraph{Mathlib · ramification over the rationals}
+
+In the base-change comparison the imaginary quadratic boundary case is excluded by a Mathlib theorem on the existence of a ramified prime.
+
+Field: Algebraic number theory. Further document needed: Trace the discriminant argument for number fields of degree different from one and its use at the designated base field.
+
+\nolinkurl{NumberField.exists_not_isUnramifiedAt_int} · \nolinkurl{Mathlib/NumberTheory/NumberField/ExistsRamified.lean:41–48} · separate size not registered.
+
+\paragraph{Mathlib · the goal predicate}
+
+The first exported head uses the Mathlib definition of the Riemann hypothesis, including its exceptional points.
+
+Field: Analytic number theory. Further document needed: Compare the written goal, the exported declaration and the definition after unfolding. This is a statement comparison.
+
+\nolinkurl{RiemannHypothesis} · \nolinkurl{Mathlib/NumberTheory/LSeries/RiemannZeta.lean:185–186} · separate size not registered.
+
+\noindent\textattachfile[color=0.15 0.15 0.15,mimetype=text/plain,description={Coverage tables and reading tasks}]{v8_coverage_data.tex}{\textcolor{inkblue}{Source for the coverage tables and reading tasks (TeX).}}

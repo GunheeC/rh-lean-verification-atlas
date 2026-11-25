@@ -1,0 +1,359 @@
+{
+  "source_pdf_sha256": "3f920d59446741c0ce2a81252525336e5831c95a315879d4b410b86234726bd1",
+  "latex_aux_sha256": "d0e3c94f7242585cc116fee66ae22c5e46c7e428ade4422114395c30a66e4750",
+  "printed_pages": {
+    "fig:v7-coverage": 10,
+    "pn:P001": 90,
+    "pn:P002": 90,
+    "pn:P003": 91,
+    "pn:P004": 91,
+    "pn:P005": 91,
+    "r23:budget": 35,
+    "r23:family": 25,
+    "r23:host": 40,
+    "r23:p017": 25,
+    "r24:balance": 25,
+    "r24:d550": 27,
+    "r24:d567": 27,
+    "r24:host-design": 44,
+    "r24:host-supply": 40,
+    "r24:host-topg": 43,
+    "r24:hostfacts": 30,
+    "r24:regular": 29,
+    "r24:synthesis": 50,
+    "r24:thick": 31,
+    "rem:E-landau-compare": 100,
+    "sec:E-landau": 96,
+    "sec:mechanism": 23,
+    "sec:proof-glance": 5,
+    "sec:r23-p012": 49,
+    "sec:r23-selmer": 45,
+    "sec:upper-goals": 90,
+    "sec:v7-scope": 9,
+    "sub:B02": 72,
+    "sub:T13": 80,
+    "tab:v7-coverage": 9,
+    "v5:balance-end": 27,
+    "v5:chars-end": 34,
+    "v5:chars-start": 32,
+    "v5:conclusion-end": 53,
+    "v5:d547-end": 33,
+    "v5:d548-end": 34,
+    "v5:d550-end": 27,
+    "v5:d567-end": 28,
+    "v5:hostfacts-end": 30,
+    "v5:regular-end": 30,
+    "v5:thick-end": 32,
+    "v7:q1": 9,
+    "v7:q2": 11,
+    "v7:q3": 16,
+    "v7:q4": 22,
+    "v7:scope-end": 22,
+    "v7:task-1": 11,
+    "v7:task-10": 12,
+    "v7:task-11": 13,
+    "v7:task-12": 13,
+    "v7:task-13": 13,
+    "v7:task-14": 13,
+    "v7:task-15": 14,
+    "v7:task-16": 14,
+    "v7:task-17": 14,
+    "v7:task-18": 15,
+    "v7:task-19": 15,
+    "v7:task-2": 11,
+    "v7:task-20": 15,
+    "v7:task-3": 11,
+    "v7:task-4": 11,
+    "v7:task-5": 11,
+    "v7:task-6": 12,
+    "v7:task-7": 12,
+    "v7:task-8": 12,
+    "v7:task-9": 12,
+    "v8:source-B02": 73
+  },
+  "named_destinations": {
+    "fig:v7-coverage": {
+      "name": "figure.2",
+      "pdf_page": 10
+    },
+    "pn:P001": {
+      "name": "theorem.C.1",
+      "pdf_page": 90
+    },
+    "pn:P002": {
+      "name": "theorem.C.2",
+      "pdf_page": 90
+    },
+    "pn:P003": {
+      "name": "theorem.C.3",
+      "pdf_page": 91
+    },
+    "pn:P004": {
+      "name": "theorem.C.4",
+      "pdf_page": 91
+    },
+    "pn:P005": {
+      "name": "theorem.C.5",
+      "pdf_page": 91
+    },
+    "r23:budget": {
+      "name": "theorem.5.10",
+      "pdf_page": 35
+    },
+    "r23:family": {
+      "name": "theorem.5.1",
+      "pdf_page": 25
+    },
+    "r23:host": {
+      "name": "subsection.5.3",
+      "pdf_page": 40
+    },
+    "r23:p017": {
+      "name": "subsection.5.1",
+      "pdf_page": 25
+    },
+    "r24:balance": {
+      "name": "theorem.5.2",
+      "pdf_page": 25
+    },
+    "r24:d550": {
+      "name": "theorem.5.4",
+      "pdf_page": 27
+    },
+    "r24:d567": {
+      "name": "theorem.5.5",
+      "pdf_page": 27
+    },
+    "r24:host-design": {
+      "name": "theorem.5.32",
+      "pdf_page": 44
+    },
+    "r24:host-supply": {
+      "name": "theorem.5.19",
+      "pdf_page": 40
+    },
+    "r24:host-topg": {
+      "name": "theorem.5.28",
+      "pdf_page": 43
+    },
+    "r24:hostfacts": {
+      "name": "theorem.5.7",
+      "pdf_page": 30
+    },
+    "r24:regular": {
+      "name": "theorem.5.6",
+      "pdf_page": 29
+    },
+    "r24:synthesis": {
+      "name": "subsection.5.6",
+      "pdf_page": 50
+    },
+    "r24:thick": {
+      "name": "theorem.5.9",
+      "pdf_page": 31
+    },
+    "rem:E-landau-compare": {
+      "name": "theorem.C.29",
+      "pdf_page": 100
+    },
+    "sec:E-landau": {
+      "name": "subsection.C.4",
+      "pdf_page": 96
+    },
+    "sec:mechanism": {
+      "name": "section.4",
+      "pdf_page": 23
+    },
+    "sec:proof-glance": {
+      "name": "section.2",
+      "pdf_page": 5
+    },
+    "sec:r23-p012": {
+      "name": "subsection.5.5",
+      "pdf_page": 49
+    },
+    "sec:r23-selmer": {
+      "name": "subsection.5.4",
+      "pdf_page": 45
+    },
+    "sec:upper-goals": {
+      "name": "appendix.C",
+      "pdf_page": 90
+    },
+    "sec:v7-scope": {
+      "name": "section.3",
+      "pdf_page": 9
+    },
+    "sub:B02": {
+      "name": "theorem.B.2",
+      "pdf_page": 72
+    },
+    "sub:T13": {
+      "name": "theorem.B.23",
+      "pdf_page": 80
+    },
+    "tab:v7-coverage": {
+      "name": "table.2",
+      "pdf_page": 9
+    },
+    "v5:balance-end": {
+      "name": "section*.67",
+      "pdf_page": 27
+    },
+    "v5:chars-end": {
+      "name": "section*.81",
+      "pdf_page": 34
+    },
+    "v5:chars-start": {
+      "name": "section*.78",
+      "pdf_page": 32
+    },
+    "v5:conclusion-end": {
+      "name": "section*.88",
+      "pdf_page": 53
+    },
+    "v5:d547-end": {
+      "name": "section*.79",
+      "pdf_page": 33
+    },
+    "v5:d548-end": {
+      "name": "section*.80",
+      "pdf_page": 34
+    },
+    "v5:d550-end": {
+      "name": "section*.70",
+      "pdf_page": 27
+    },
+    "v5:d567-end": {
+      "name": "section*.71",
+      "pdf_page": 28
+    },
+    "v5:hostfacts-end": {
+      "name": "section*.74",
+      "pdf_page": 30
+    },
+    "v5:regular-end": {
+      "name": "section*.73",
+      "pdf_page": 30
+    },
+    "v5:thick-end": {
+      "name": "section*.76",
+      "pdf_page": 32
+    },
+    "v7:q1": {
+      "name": "subsection.3.1",
+      "pdf_page": 9
+    },
+    "v7:q2": {
+      "name": "subsection.3.2",
+      "pdf_page": 11
+    },
+    "v7:q3": {
+      "name": "subsection.3.3",
+      "pdf_page": 16
+    },
+    "v7:q4": {
+      "name": "subsection.3.4",
+      "pdf_page": 22
+    },
+    "v7:scope-end": {
+      "name": "section*.58",
+      "pdf_page": 22
+    },
+    "v7:task-1": {
+      "name": "section*.7",
+      "pdf_page": 11
+    },
+    "v7:task-10": {
+      "name": "section*.16",
+      "pdf_page": 12
+    },
+    "v7:task-11": {
+      "name": "section*.17",
+      "pdf_page": 13
+    },
+    "v7:task-12": {
+      "name": "section*.18",
+      "pdf_page": 13
+    },
+    "v7:task-13": {
+      "name": "section*.19",
+      "pdf_page": 13
+    },
+    "v7:task-14": {
+      "name": "section*.20",
+      "pdf_page": 13
+    },
+    "v7:task-15": {
+      "name": "section*.21",
+      "pdf_page": 14
+    },
+    "v7:task-16": {
+      "name": "section*.22",
+      "pdf_page": 14
+    },
+    "v7:task-17": {
+      "name": "section*.23",
+      "pdf_page": 14
+    },
+    "v7:task-18": {
+      "name": "section*.24",
+      "pdf_page": 15
+    },
+    "v7:task-19": {
+      "name": "section*.25",
+      "pdf_page": 15
+    },
+    "v7:task-2": {
+      "name": "section*.8",
+      "pdf_page": 11
+    },
+    "v7:task-20": {
+      "name": "section*.26",
+      "pdf_page": 15
+    },
+    "v7:task-3": {
+      "name": "section*.9",
+      "pdf_page": 11
+    },
+    "v7:task-4": {
+      "name": "section*.10",
+      "pdf_page": 11
+    },
+    "v7:task-5": {
+      "name": "section*.11",
+      "pdf_page": 11
+    },
+    "v7:task-6": {
+      "name": "section*.12",
+      "pdf_page": 12
+    },
+    "v7:task-7": {
+      "name": "section*.13",
+      "pdf_page": 12
+    },
+    "v7:task-8": {
+      "name": "section*.14",
+      "pdf_page": 12
+    },
+    "v7:task-9": {
+      "name": "section*.15",
+      "pdf_page": 12
+    },
+    "v8:source-B02": {
+      "name": "section*.109",
+      "pdf_page": 73
+    }
+  },
+  "section_numbers": {
+    "r23:host": "5.3",
+    "r23:p017": "5.1",
+    "r24:synthesis": "5.6",
+    "sec:E-landau": "C.4",
+    "sec:mechanism": "4",
+    "sec:proof-glance": "2",
+    "sec:r23-p012": "5.5",
+    "sec:r23-selmer": "5.4",
+    "sec:upper-goals": "C"
+  }
+}

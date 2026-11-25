@@ -160,7 +160,7 @@ def check(root, units, registry, pins, banner):
             elif fragment and loc.suffix.lower() == ".md" and unquote(fragment) not in anchors(loc):
                 errors.append(f"{rel}: broken local anchor {target}")
 
-    for script in ("coverage.py", "proof_steps.py", "front_counts.py", "signoff_authors.py", "roadmap.py", "build_navigation.py", "enrich_units.py", "unit_pages.py", "dashboard.py", "build_site.py"):
+    for script in ("glance_guide.py", "coverage.py", "proof_steps.py", "front_counts.py", "signoff_authors.py", "roadmap.py", "build_navigation.py", "enrich_units.py", "unit_pages.py", "dashboard.py", "build_site.py"):
         result = subprocess.run([sys.executable, str(root / "scripts" / script), "--check"], cwd=root,
                                 capture_output=True, text=True)
         if result.returncode:

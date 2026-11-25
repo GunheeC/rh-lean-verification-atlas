@@ -1,0 +1,411 @@
+{
+  "section": {
+    "en": "The proof at a glance",
+    "ko": "논증의 전체 흐름"
+  },
+  "opening_title": {
+    "en": "The argument in one paragraph",
+    "ko": "한 문단으로 읽는 논증"
+  },
+  "opening": {
+    "en": [
+      "The Riemann hypothesis places every nontrivial zeta zero on the line $\\Re(s)=1/2$.",
+      "Count primes and their powers with suitable weights.",
+      "Under our analytic assumptions, a zero to the right forces that count far above its main term.",
+      "A near-square-root upper bound on this excess throughout arbitrarily distant long intervals excludes such a zero.",
+      "The arithmetic and geometric assumptions supply those intervals."
+    ],
+    "ko": [
+      "리만 가설은 제타 함수의 자명하지 않은 모든 영점이 직선 $\\Re(s)=1/2$ 위에 있다는 명제다.",
+      "소수와 그 거듭제곱에 가중치를 주어 세면 영점의 위치를 알아볼 수 있다.",
+      "아래의 해석적 가정 아래에서는 그 직선 오른쪽에 영점이 있으면 이 합이 예상되는 주항을 크게 웃돈다.",
+      "아무리 멀리 가도 어떤 긴 구간 전체에서 그 초과분이 제곱근에 가까운 상계 아래에 머물면 그런 영점을 배제할 수 있다.",
+      "조건부 논증의 목표는 산술과 기하를 이용해 그런 구간을 만드는 것이다."
+    ]
+  },
+  "background": {
+    "en": "A zero is a point where a function vanishes. Here the trivial zeta zeros are the negative even integers. For background on zeros, residues and analytic continuation, see",
+    "ko": "영점은 함숫값이 0인 점이다. 제타 함수의 자명한 영점은 음의 짝수들이다. 영점, 유수, 해석적 연속의 배경은 다음 교재에서 읽을 수 있다."
+  },
+  "reference": {
+    "key": "cho-complex",
+    "author": "G. Cho",
+    "title": "Complex Analysis and Riemann Surfaces: A Graduate Path to Algebraic Geometry",
+    "arxiv": "2601.06868"
+  },
+  "orientation": {
+    "en": "A Dirichlet character assigns periodic, multiplicative weights to integers. A primitive character does not come from a smaller modulus. Step 1 already uses V from step 2. V sets a threshold. The construction next chooses the prime pair, obtains V’s interval and builds the host there.",
+    "ko": "디리클레 지표는 정수에 주는 주기적인 가중치로, 곱을 보존한다. 원시 지표는 더 작은 법의 지표에서 유도되지 않는다. 1단계에는 이미 2단계의 V가 쓰인다. V가 기준값을 정하면 보조 소수 쌍을 고른다. 그 쌍에 대해 V가 주는 구간에서 호스트를 구성한다."
+  },
+  "steps": [
+    {
+      "id": "H",
+      "status": "outlined",
+      "heading": {
+        "en": "Choose where to count.",
+        "ko": "소수를 셀 무대를 고른다."
+      },
+      "node": {
+        "en": "Build a host",
+        "ko": "호스트 구성"
+      },
+      "sentences": {
+        "en": [
+          "For a primitive character, choose a pair of auxiliary primes and build a host at each eligible scale.",
+          "The prime count and the arithmetic estimates at that scale must use compatible data.",
+          "A host records a finite extension of the rational numbers, the chosen primes and further data, and may change with the scale."
+        ],
+        "ko": [
+          "원시 지표를 고정하고 조건을 만족하는 각 척도에서 보조 소수 한 쌍을 골라 호스트를 구성한다.",
+          "그 척도에서 소수를 셀 때와 산술량을 추정할 때 서로 맞는 자료를 써야 한다.",
+          "호스트는 유리수체의 유한 확장인 수체와 선택한 소수 등 필요한 정보를 담으며, 척도가 달라지면 바뀔 수 있다."
+        ]
+      },
+      "section": "r23:host",
+      "units": [
+        "B07",
+        "P015"
+      ]
+    },
+    {
+      "id": "V",
+      "status": "lean",
+      "heading": {
+        "en": "Bound what prime-by-prime tests miss.",
+        "ko": "소수별 검사에 보이지 않는 부분을 제한한다."
+      },
+      "node": {
+        "en": "Bound the local kernels (V)",
+        "ko": "국소 검사의 핵에 상계 부여 (V)"
+      },
+      "sentences": {
+        "en": [
+          "For each admissible prime pair, V bounds a weighted sum of kernel lengths throughout one interval $[Y,Y^2]$.",
+          "The same interval must work for every allowed field and finite set of primes.",
+          "These lengths measure classes missed by local tests, and V’s bound alone gives no square-root estimate for the prime sum."
+        ],
+        "ko": [
+          "V는 허용되는 소수 쌍마다 구간 $[Y,Y^2]$를 주고 그 구간 전체에서 핵의 길이들을 가중해 더한 합을 제한한다.",
+          "어떤 허용 수체와 어떤 유한 소수 집합을 택해도 같은 구간에서 이 상계가 성립해야 한다.",
+          "각 길이는 해당 소수의 국소 검사에 보이지 않는 부분의 크기이며, V의 상계만으로는 소수합의 제곱근 추정을 얻을 수 없다."
+        ]
+      },
+      "section": "sec:r23-selmer",
+      "units": [
+        "P013"
+      ]
+    },
+    {
+      "id": "F",
+      "status": "lean",
+      "heading": {
+        "en": "Make one geometric choice.",
+        "ko": "기하 자료를 한꺼번에 고른다."
+      },
+      "node": {
+        "en": "Choose compatible geometric data (F)",
+        "ko": "양립하는 기하 자료 선택 (F)"
+      },
+      "sentences": {
+        "en": [
+          "Input F supplies one record containing a class of families and one selection on that class.",
+          "The bounds on sizes and the conditions on selected data can then be used together."
+        ],
+        "ko": [
+          "입력 F는 하나의 자료를 준다.",
+          "그 안에는 족들의 모음 하나와 그 모음 위의 선택 하나가 함께 들어 있다.",
+          "그래야 기하적 크기의 상계와 선택한 자료에 관한 조건을 함께 쓸 수 있다."
+        ]
+      },
+      "section": "sec:r23-p012",
+      "units": [
+        "T02"
+      ]
+    },
+    {
+      "id": "J",
+      "status": "outlined",
+      "heading": {
+        "en": "Use the inputs on the same family.",
+        "ko": "같은 족에 가정을 적용한다."
+      },
+      "node": {
+        "en": "Join the inputs on one family",
+        "ko": "같은 족에 가정 적용"
+      },
+      "sentences": {
+        "en": [
+          "Join the host carrying V’s estimate and the geometric choice F using Green’s assertion, 31 local implications and six supplementary inputs.",
+          "The later bounds now concern the same lattice, field and scale.",
+          "The Lean assertion about matrix groups over finite fields still needs comparison with Green’s published character formula."
+        ],
+        "ko": [
+          "V의 상계를 담은 호스트와 기하 자료 F를 그린 명제, 국소 함의 31개, 보충 입력 6개를 써서 결합한다.",
+          "이제 추정들이 모두 같은 격자와 수체, 같은 척도에 적용된다.",
+          "그린 명제는 유한체 위의 행렬군의 지표에 관한 것이며, Lean의 진술이 문헌의 공식과 일치하는지는 아직 확인하지 않았다."
+        ]
+      },
+      "section": "r24:synthesis",
+      "units": [
+        "V4-COND",
+        "P015"
+      ]
+    },
+    {
+      "id": "B",
+      "status": "written",
+      "heading": {
+        "en": "Turn a lattice bound into a prime-counting bound.",
+        "ko": "격자에서 얻은 상계를 소수합으로 옮긴다."
+      },
+      "node": {
+        "en": "From lattices to a prime sum",
+        "ko": "격자에서 소수합으로"
+      },
+      "sentences": {
+        "en": [
+          "An exact identity relates the weighted prime-power count, after subtracting its main term, to a sum with character weights.",
+          "This lets a separate bound for each lattice datum control the error after averaging."
+        ],
+        "ko": [
+          "가중치를 주어 센 소수 거듭제곱의 합에서 주항을 빼면 지표를 가중치로 쓴 합과 정확히 일치한다.",
+          "이 등식 덕분에 각 격자 자료에서 따로 얻은 상계로 평균을 낸 뒤의 오차를 제한할 수 있다."
+        ]
+      },
+      "section": "r23:p017",
+      "units": [
+        "P021",
+        "B10",
+        "B09",
+        "D561"
+      ]
+    },
+    {
+      "id": "W",
+      "status": "written",
+      "heading": {
+        "en": "Find the square-root exponent.",
+        "ko": "제곱근 지수가 나오는 까닭을 본다."
+      },
+      "node": {
+        "en": "Get a near-square-root bound",
+        "ko": "제곱근에 가까운 상계"
+      },
+      "sentences": {
+        "en": [
+          "Choosing about $\\sqrt{x}$ columns balances the two main errors near $x/m$ and $m$, where $m$ counts columns.",
+          "Rescaling V’s intervals gives arbitrarily distant intervals $[Y,Y^{3/2}]$ with upper bound $x^{1/2+9\\varepsilon}$ for the primitive-character case.",
+          "Taking the positive number $\\varepsilon$ small brings the exponent as close to one half as needed."
+        ],
+        "ko": [
+          "척도 $x$에서 열의 수 $m$을 $\\sqrt{x}$에 가깝게 고르면 대략 $x/m$과 $m$ 크기인 두 주요 오차항이 균형을 이룬다.",
+          "V의 구간을 재조정하면 원시 지표에 대해 아무리 먼 곳에서도 어떤 구간 $[Y,Y^{3/2}]$ 전체에서 $x^{1/2+9\\varepsilon}$이라는 상계를 얻는다.",
+          "양수 $\\varepsilon$을 작게 고르면 지수를 필요한 만큼 $1/2$에 가깝게 할 수 있다."
+        ]
+      },
+      "section": "r23:p017",
+      "units": [
+        "B08",
+        "P017"
+      ]
+    },
+    {
+      "id": "L",
+      "status": "written",
+      "heading": {
+        "en": "Rule out a zero to the right.",
+        "ko": "직선 오른쪽의 영점을 배제한다."
+      },
+      "node": {
+        "en": "Exclude a zero to the right",
+        "ko": "오른쪽 영점 배제"
+      },
+      "sentences": {
+        "en": [
+          "For a zero in the open strip with real part above one half, choose a bound exponent strictly between those two numbers.",
+          "A theorem of Landau type says the resulting upper bounds on long intervals exclude such a zero.",
+          "The prime sum combines several characters with positive weights, so contributions from a shared zero cannot cancel."
+        ],
+        "ko": [
+          "열린 띠 안에 실수부가 $1/2$보다 큰 영점이 있다고 가정하고, 상계의 지수를 그 사이에 잡는다.",
+          "란다우형 정리에 따르면 긴 구간마다 이 상계가 성립하면 그런 영점이 있을 수 없다.",
+          "소수합에는 여러 지표가 양의 가중치로 들어가므로 서로 같은 영점에서 나온 기여가 상쇄되지 않는다."
+        ]
+      },
+      "section": "sec:E-landau",
+      "units": [
+        "P022",
+        "P023",
+        "P018"
+      ]
+    },
+    {
+      "id": "A",
+      "status": "outlined",
+      "heading": {
+        "en": "Pass to every character and to zeta.",
+        "ko": "모든 지표와 제타 함수로 옮긴다."
+      },
+      "node": {
+        "en": "All characters and zeta",
+        "ko": "모든 지표와 제타 함수"
+      },
+      "sentences": {
+        "en": [
+          "Pass from primitive characters to induced characters, then use the functional equation to reflect zeros across the line.",
+          "This gives the five stated conclusions, including zeta through the character of modulus one.",
+          "The right-hand nonvanishing statement excepts the principal character at $s=1$."
+        ],
+        "ko": [
+          "원시 지표에서 유도된 지표로 옮기고, 함수방정식으로 임계선 맞은편의 영점까지 다룬다.",
+          "이렇게 얻는 다섯 결론 가운데 제타 함수에 대한 결론은 법이 1인 지표에서 나온다.",
+          "직선 오른쪽에서 함수가 0이 되지 않는다는 명제에서는 주지표의 $s=1$이 예외다."
+        ]
+      },
+      "section": "sec:upper-goals",
+      "units": [
+        "P003",
+        "P004",
+        "P005",
+        "P007",
+        "P001",
+        "P002"
+      ]
+    }
+  ],
+  "analytic_note": {
+    "en": "In the open strip, the real part lies strictly between zero and one. The classical nonvanishing results cover its right boundary and the region beyond it, with the principal exception in step 8.",
+    "ko": "열린 띠에서는 실수부가 0과 1 사이에 있다. 오른쪽 경계와 그 오른편은 고전적 비소멸 정리가 다룬다. 주지표에 대한 예외는 마지막 단계에 나온다."
+  },
+  "edges": [
+    [
+      "H",
+      "J"
+    ],
+    [
+      "V",
+      "H"
+    ],
+    [
+      "F",
+      "J"
+    ],
+    [
+      "J",
+      "B"
+    ],
+    [
+      "B",
+      "W"
+    ],
+    [
+      "W",
+      "L"
+    ],
+    [
+      "L",
+      "A"
+    ]
+  ],
+  "legend": {
+    "en": "Each arrow points to the step that uses the preceding input. White boxes show written deductions under stated assumptions (5–7). Light boxes show outlines (1, 4, 8). Dark boxes mark inputs whose full derivations are available only in Lean (2, 3). In step 5 the bound is written in full. The balance identity itself has an outline (D561).",
+    "ko": "화살표는 한 단계가 어느 단계에 쓰이는지 나타낸다. 흰 칸은 명시한 가정 아래 유도를 써 둔 단계(5–7), 연한 칸은 개요가 있는 단계(1, 4, 8)다. 짙은 칸은 전체 유도가 현재 Lean에만 있는 입력(2, 3)이다. 5단계에서는 상계의 유도를 써 두었고, 균형 항등식 자체에는 개요가 있다(D561)."
+  },
+  "weight_title": {
+    "en": "Where the weight lies",
+    "ko": "어디에 일이 집중되어 있나"
+  },
+  "weight": {
+    "en": "V and F together account for {both} of {total} measured Lean lines ({percent}%, about 48%). Neither input has a complete written derivation here. The conditional deduction using them is short. Four blocks along that chain account for 1.92% of the measured lines. Two other rows account for 50.36%.",
+    "ko": "V와 F가 차지하는 부분은 집계한 Lean 소스 {total}줄 가운데 {both}줄({percent}%, 약 48%)이다. 두 입력 모두 처음부터 끝까지 손으로 따라갈 유도는 아직 없다. 두 입력에서 결론으로 가는 조건부 논증은 짧다. 그 논증을 따라 나눈 네 블록에는 집계한 줄 수의 1.92%가 들어 있고, 나머지 두 행이 50.36%를 차지한다."
+  },
+  "total_lines": 9567045,
+  "sizes": [
+    [
+      "B07",
+      31622,
+      "r24:host-supply",
+      "r24:host-design",
+      {
+        "en": "Choosing the host field",
+        "ko": "수체 선택"
+      }
+    ],
+    [
+      "P013",
+      886201,
+      "sec:r23-selmer",
+      "sec:r23-p012",
+      {
+        "en": "The Selmer bound V",
+        "ko": "셀머 상계 V"
+      }
+    ],
+    [
+      "T02",
+      3679692,
+      "sec:r23-p012",
+      "r24:synthesis",
+      {
+        "en": "The compatible choice F",
+        "ko": "기하 자료의 공통 선택 F"
+      }
+    ],
+    [
+      "B05",
+      146214,
+      "r24:host-topg",
+      "r24:host-design",
+      {
+        "en": "Joining the geometric estimates",
+        "ko": "기하적 추정의 결합"
+      }
+    ],
+    [
+      "P017",
+      3365,
+      "r23:p017",
+      "r23:budget",
+      {
+        "en": "From lattice errors to prime sums",
+        "ko": "격자 오차에서 소수합으로"
+      }
+    ],
+    [
+      "P022",
+      863,
+      "sec:E-landau",
+      "rem:E-landau-compare",
+      {
+        "en": "Landau’s criterion on windows",
+        "ko": "긴 구간에서의 란다우형 판정"
+      }
+    ],
+    [
+      "P003",
+      null,
+      "pn:P001",
+      "pn:P005",
+      {
+        "en": "The five conclusions, with P003 shown",
+        "ko": "다섯 결론 가운데 P003"
+      }
+    ]
+  ],
+  "table_title": {
+    "en": "How big is each part?",
+    "ko": "각 부분의 규모"
+  },
+  "count_explanation": {
+    "en": "The middle column counts Lean lines reached only through the listed declaration from the common all-characters starting point. Different rows can overlap. P003 lies outside this graph. The right column gives selected printed pages in this edition (v8), counting both endpoints. The short readings on V and F describe the inputs. P022 alone accounts for 863 lines. Table 2 groups it with P018, P019 and P023, giving 2,115 lines.",
+    "ko": "가운데 열은 모든 지표에 관한 공통 선언에서 출발할 때 반드시 해당 선언을 거쳐야 도달하는 Lean 줄 수다. 행끼리 겹칠 수 있다. P003은 이 그래프 밖에 있다. 오른쪽 열은 이번 판본(v8)에서 고른 읽기 구간으로 양 끝 쪽을 모두 센다. V와 F의 짧은 구간에서는 두 입력의 내용을 설명한다. P022 한 선언이 지배하는 줄 수는 863이다. 표 2에서는 P018, P019, P023을 합친 블록을 세므로 2,115줄이다."
+  },
+  "closing_title": {
+    "en": "What has been checked?",
+    "ko": "어디까지 확인했나?"
+  },
+  "closing": {
+    "en": "Alpöge’s Lean development states the five conclusions. A third-party record reports that Lean’s kernel accepted the compiled development. This project did not rerun that check. The paper outlines a conditional deduction. The atlas records no human checks of individual proof steps.",
+    "ko": "Alpöge의 Lean 개발은 다섯 결론을 선언한다. 제3자의 기록에 따르면 Lean 커널은 컴파일된 개발을 받아들였다. 이 프로젝트는 그 검사를 다시 실행하지 않았다. 논문은 조건부 논증의 개요를 제시한다. 아틀라스에는 개별 증명 단계를 사람이 확인했다는 기록이 아직 없다."
+  }
+}

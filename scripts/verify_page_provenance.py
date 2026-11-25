@@ -16,7 +16,7 @@ def sha(path):
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--root',type=Path,default=Path(__file__).resolve().parents[1])
-    parser.add_argument('--pdf',type=Path,help='Optional local PDF for blueprint v13, v13a or v13b. Re-rendering uses macOS PDFKit, Swift and Pillow.')
+    parser.add_argument('--pdf',type=Path,help='Optional local PDF for blueprint v13, v13a, v13b or v13c. Re-rendering uses macOS PDFKit, Swift and Pillow.')
     args=parser.parse_args(); root=args.root
     records=json.loads((root/'data/notes_starters.json').read_text())['starters']
     editions=json.loads((root/'data/editions.json').read_text())['editions']
@@ -38,7 +38,7 @@ def main():
         return
     from PIL import Image,ImageChops
     digest = sha(args.pdf)
-    revised = next((editions[k] for k in ('blueprint_v13a', 'blueprint_v13b')
+    revised = next((editions[k] for k in ('blueprint_v13a', 'blueprint_v13b', 'blueprint_v13c')
                     if digest == editions[k]['sha256']), None)
     if revised:
         from edition_links import blueprint_page

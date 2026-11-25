@@ -8,7 +8,7 @@ Levent Alpöge의 Lean 개발은 제타 함수의 리만 가설과 제타 함수
 
 ## 두 문서
 
-Gunhee Cho의 논문 *Toward a human verification of Alpöge's Lean proof of the Riemann hypothesis, I: the conditional chain from Selmer windows to zero-free regions*은 Lean 명제 775개를 정리하고 셀머 창에서 영점 없는 영역까지의 조건부 논증을 따라간다. 블루프린트는 원래의 입력 20개를 각각의 정의와 보조정리에서부터 설명한다. 아틀라스는 독자가 손으로 한 단계씩 검산할 수 있도록 판본마다 두 문서의 논증을 Lean 선언 및 검토 기록과 연결한다. Gunhee Cho의 지도로 AI가 초고를 쓰고 Lean 원문과 교차 대조했다. 아직 사람이 확인한 단계는 없다. [논문 v7](../../editions/v0.1.0/paper_v7.pdf) · [The Alpöge formalization of RH and GRH: an informal blueprint (블루프린트 v13b)](../../editions/v0.1.0/blueprint_v13b.pdf) · [판본과 지문](../../data/editions.json)
+Gunhee Cho의 논문 *Toward a human verification of Alpöge's Lean proof of the Riemann hypothesis, I: the conditional chain from Selmer windows to zero-free regions*은 Lean 명제 775개를 정리하고 셀머 창에서 영점 없는 영역까지의 조건부 연역을 개괄한다. 일부 단계는 가정에서 결론까지 자세히 풀어 썼다. 블루프린트는 원래의 입력 20개를 각각의 정의와 보조정리에서부터 설명한다. 아틀라스는 독자가 손으로 한 단계씩 검산할 수 있도록 판본마다 두 문서의 논증을 Lean 선언 및 검토 기록과 연결한다. Gunhee Cho의 지도로 AI가 초고를 쓰고 Lean 원문과 교차 대조했다. 저자를 포함해 아직 이 논증을 확인한 사람은 없다. [논문 v8](../../editions/v0.1.0/paper_v8.pdf) · [The Alpöge formalization of RH and GRH: an informal blueprint (블루프린트 v13c)](../../editions/v0.1.0/blueprint_v13c.pdf) · [판본과 지문](../../data/editions.json)
 
 Levent Alpöge의 Lean 개발에서 관심 있는 명제를 하나 고를 수 있다. 한 명제나 밀접한 명제들을 모은 읽기 항목을 ‘단위’라고 한다. 각 단위에서 가정과 Lean 선언을 확인한다. 서면 논증이 있는 경우 해당 판본도 연결된다. 검토 기록은 어느 글의 어느 주장까지 살폈는지 명시한다. 외부 커널 검사는 컴파일한 Lean 개발에 관한 기록이다. [진척](../../PROGRESS.md) · [읽기 대기열](../../ROADMAP.md) · [기여자](../../AUTHORS.md)
 
@@ -57,6 +57,13 @@ Levent Alpöge의 Lean 개발에서 관심 있는 명제를 하나 고를 수 �
 | L4 | Full 단위에서 입력 호출 외의 실제 추론이 있고 모든 단계와 별도 명제 대조가 실명 확인됨 | 0 |
 
 Full은 명시된 가정에서 논증을 끝까지 썼다는 뜻이다. Outlined는 중간 추론을 보충해야 하는 개요이며, Statement only는 명제와 출처만 있는 경우다. 검토 등급은 해당 단위를 뒷받침하는 근거를 나타낸다. AI 검토, 독립 자료 대조, 실명 검토는 따로 센다. 등급은 누적 요건이 아니다. L4는 해당 판본의 국소 논증과 명시된 가정만 대상으로 하며 V·F 또는 리만 가설 전체를 확인하지 않는다. 각 L4에는 독자 수, 유지관리자 참여 여부와 신고한 AI 도움 수준을 함께 표시한다. 상당한 AI 도움을 받은 검토는 독립적인 사람의 검토로 세지 않는다. 이의는 유지관리자가 아닌 두 번째 독자의 검토 또는 해당 대상을 대체한 본문 개정으로 해소할 수 있다. 이름은 본인 기재이며 신원을 검증하지 않는다. [검토 근거](../../reviews/README.md) · [실명 확인 규칙](signoffs/README.md)
+
+## 아틀라스 관리자
+
+Gunhee Cho가 아틀라스를 관리합니다. 소속은 Texas State University 수학과(`wvx17@txstate.edu`)와 TranscendQ(`geonhee@transcendq.com`)입니다.
+견해와 오류에 대한 책임은 저자에게 있습니다. [저자와 배경 문헌](../../AUTHORS.md)
+
+저자는 [EnjoyingMath](https://www.youtube.com/@enjoyingmath9346) 채널 커뮤니티에서 이어지는 토론을 바탕으로, 수학 전공 학생과 수학자들과 함께 Alpöge의 Lean 증명을 한 단계씩 손으로 확인하고자 합니다. 얼마나 오래 걸리더라도 이 작업을 이어 가는 것이 목표입니다. 검증이 어디까지 진행됐는지는 아틀라스의 각 판본과 진행 현황 페이지, 채널을 통해 영어와 한국어로 공개할 계획입니다. 현재 아틀라스에 기록된 사람의 확인은 0건입니다. [진행 현황](../../PROGRESS.md)
 
 ## 인용
 

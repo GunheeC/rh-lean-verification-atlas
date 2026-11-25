@@ -10,17 +10,17 @@ Start with each complete residual row of the existing nearest-indexed-head parti
 
 | Block | Role | Lean entries | Core lines | Written locations | Exposition levels | AI review | Human checks |
 |---|---|---|---|---|---|---|---|
-| Landau window criterion | Exclude zeros using a one-sided bound on long intervals. | `Deduction.landau_window` · `UpperTheory.Comparison₂.formB` · `Formalism.HC.zeroFreeOn_of_tiedWin_cyc` | 2,115 | Full under the stated window hypothesis. · [Paper pp. 97–100 (4 pp.)](../editions/v0.1.0/paper_v7.pdf#page=97) | Full under stated inputs · Full at nearest head 2,115 | P022: R20 v0, full local derivation accepted. | 0 |
-| Window inequality and list A | Use ten local implications to bound a weighted prime sum. | `UpperTheory.Comparison₂.level_gm_le_on_family_scales` · `UpperTheory.Comparison₂.core_gm` | 3,365 | Full local deduction under list A and the stated lattice inputs. · [Paper pp. 25–34 (10 pp.)](../editions/v0.1.0/paper_v7.pdf#page=25) | Full under stated inputs · Full at nearest head 1,924 · Outline at head 1,431 · Statement only at head 10 | P017: R20 v0, statement exact; no review of the whole A block. | 0 |
-| Host construction and list B | Choose auxiliary primes and fields on which the estimates can be compared. | `UpperTheory.Top.supplyChi` · `UpperTheory.Top.zero_free_all_of_green_v_win` | 31,622 | Outline of the host supply; individual local deductions are given. · [Paper pp. 40–44 (5 pp.)](../editions/v0.1.0/paper_v7.pdf#page=40) | Outline · Full at nearest head 11,065 · Outline at head 323 · Statement only at head 20,234 | B07: R21 v1, exact statement comparison. | 0 |
-| Geometric comparison and list C | Place geometric and arithmetic estimates on one compatible family. | `UpperTheory.Top.shape_closed_link_n_of_green` · `GlobalTheory.Top.closed_family_admissible_twist_link_alt` | 146,214 | Outline of the joined comparison under list C. · [Paper pp. 43–44 (2 pp.)](../editions/v0.1.0/paper_v7.pdf#page=43) | Outline · Full at nearest head 72 · Outline at head 129,507 · Statement only at head 16,635 | B05: no whole-block verdict. | 0 |
-| Selmer supplier V and its first two levels | Supply a common interval controlling weighted lengths of local kernels. | `UpperTheory.One.vwin_of_row` · `UpperTheory.One.Join.automorphic_window_of_inputs` | 886,201 | Map of two supplier levels; full derivation not written. · [Paper pp. 45 (1 pp.)](../editions/v0.1.0/paper_v7.pdf#page=45) · [Two-level supplier map, pp. 1–9](../pillars/V.md) | Top-level map only · Full at nearest head 2,065 · Outline at head 653,247 · Statement only at head 230,889 | P013: R20 v0, exact statement comparison; no full V verdict. | 0 |
-| Definite-side supplier F and its first two levels | Supply a compatible family class and selection on the definite side. | `UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound` · `GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt` | 3,679,692 | Map of two supplier levels; full derivation not written. · [Paper pp. 49 (1 pp.)](../editions/v0.1.0/paper_v7.pdf#page=49) · [Two-level supplier map, pp. 1–11](../pillars/F.md) | Top-level map only · Full at nearest head 13,564 · Outline at head 3,460,914 · Statement only at head 205,214 | T02: R21 v1, exact statement comparison; no full F verdict. | 0 |
-| Top-level assembly and the public conclusions | Use the top-level implications to reach all characters and zeta. | `allChi` · `UpperTheory.FinalTheorems.everyCharacter_of_row` · `LFunction_ne_zero_of_half_lt_re` | 2,586,981 | Conditional assembly and goal comparisons; the dependencies still need their own checks. · [Paper pp. 50–53 (4 pp.)](../editions/v0.1.0/paper_v7.pdf#page=50) · [Paper pp. 90–91 (2 pp.)](../editions/v0.1.0/paper_v7.pdf#page=90) | Outline · Full at nearest head 126 · Outline at head 2,586,855 | P011 and P003: R20 v0, statement comparisons only. | 0 |
-| Other index positions | Collect all remaining local and shared work, including representation and comparison inputs. | `UpperTheory.Gal.Int.Geo.geoOne_holds` · `SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt` | 2,230,855 | Mixed local records. No block-wide derivation is written. · [Paper pp. 72 (1 pp.)](../editions/v0.1.0/paper_v7.pdf#page=72) · [Paper pp. 80 (1 pp.)](../editions/v0.1.0/paper_v7.pdf#page=80) | Mixed local levels · Full at nearest head 633 · Outline at head 1,492,618 · Statement only at head 737,604 | No verdict for this remainder as a whole. | 0 |
+| Landau window criterion | Exclude zeros using a one-sided bound on long intervals. | `Deduction.landau_window` · `UpperTheory.Comparison₂.formB` · `Formalism.HC.zeroFreeOn_of_tiedWin_cyc` | 2,115 | Full under the stated window hypothesis. · [Paper §C.4, pp. 96–100 (5 pp.)](../editions/v0.1.0/paper_v8.pdf#page=96) | Full under stated inputs · Full at nearest head 2,115 | P022: R20 v0, full local derivation accepted. | 0 |
+| Window inequality and list A | Use ten local implications to bound a weighted prime sum. | `UpperTheory.Comparison₂.level_gm_le_on_family_scales` · `UpperTheory.Comparison₂.core_gm` | 3,365 | Window inequality and local analytic arguments. · [Paper §5.1, pp. 25–35 (11 pp.)](../editions/v0.1.0/paper_v8.pdf#page=25) | P017 has a Full argument under list A and the stated lattice inputs. List A has mixed grades: A8 and A10 (D561) are outlines. · Full at nearest head 1,924 · Outline at head 1,431 · Statement only at head 10 | P017: R20 v0, statement exact; no review of the whole A block. | 0 |
+| Host construction and list B | Choose auxiliary primes and fields on which the estimates can be compared. | `UpperTheory.Top.supplyChi` · `UpperTheory.Top.zero_free_all_of_green_v_win` | 31,622 | Outline of the host supply; individual local deductions are given. · [Paper pp. 40–44 (5 pp.)](../editions/v0.1.0/paper_v8.pdf#page=40) | Outline · Full at nearest head 11,065 · Outline at head 323 · Statement only at head 20,234 | B07: R21 v1, exact statement comparison. | 0 |
+| Geometric comparison and list C | Place geometric and arithmetic estimates on one compatible family. | `UpperTheory.Top.shape_closed_link_n_of_green` · `GlobalTheory.Top.closed_family_admissible_twist_link_alt` | 146,214 | Outline of the joined comparison under list C. · [Paper pp. 43–44 (2 pp.)](../editions/v0.1.0/paper_v8.pdf#page=43) | Outline · Full at nearest head 72 · Outline at head 129,507 · Statement only at head 16,635 | B05: no whole-block verdict. | 0 |
+| Selmer supplier V and its first two levels | Supply a common interval controlling weighted lengths of local kernels. | `UpperTheory.One.vwin_of_row` · `UpperTheory.One.Join.automorphic_window_of_inputs` | 886,201 | Map of two supplier levels; full derivation not written. · [Paper §5.4, pp. 45–49 (5 pp.)](../editions/v0.1.0/paper_v8.pdf#page=45) · [Two-level supplier map (`pillars/V.md`)](../pillars/V.md) | Top-level map only · Full at nearest head 2,065 · Outline at head 653,247 · Statement only at head 230,889 | P013: R20 v0, exact statement comparison; no full V verdict. | 0 |
+| Definite-side supplier F and its first two levels | Supply a compatible family class and selection on the definite side. | `UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound` · `GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt` | 3,679,692 | Map of two supplier levels; full derivation not written. · [Paper §5.5, pp. 49–50 (2 pp.)](../editions/v0.1.0/paper_v8.pdf#page=49) · [Two-level supplier map (`pillars/F.md`)](../pillars/F.md) | Top-level map only · Full at nearest head 13,564 · Outline at head 3,460,914 · Statement only at head 205,214 | T02: R21 v1, exact statement comparison; no full F verdict. | 0 |
+| Top-level assembly and the public conclusions | Reach all characters and zeta. Most of this row is the internal dependency residual of P010 and P012. | `allChi` · `UpperTheory.FinalTheorems.everyCharacter_of_row` · `LFunction_ne_zero_of_half_lt_re` | 2,586,981 | Conditional assembly and goal comparisons; the dependencies still need their own checks. · [Paper pp. 50–53 (4 pp.)](../editions/v0.1.0/paper_v8.pdf#page=50) · [Paper pp. 90–91 (2 pp.)](../editions/v0.1.0/paper_v8.pdf#page=90) | Outline · Full at nearest head 126 · Outline at head 2,586,855 | P011 and P003: R20 v0, statement comparisons only. | 0 |
+| Other index positions | Collect all remaining local and shared work, including representation and comparison inputs. | `UpperTheory.Gal.Int.Geo.geoOne_holds` · `SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt` | 2,230,855 | Mixed local records. No block-wide derivation is written. · [Paper pp. 72–73 (2 pp.)](../editions/v0.1.0/paper_v8.pdf#page=72) · [Paper p. 80 (1 p.)](../editions/v0.1.0/paper_v8.pdf#page=80) | Mixed local levels · Full at nearest head 633 · Outline at head 1,492,618 · Statement only at head 737,604 | No verdict for this remainder as a whole. | 0 |
 | **Total** | | | **9,567,045** | | | | |
 
-At the nearest indexed head, 0.3299% of core positions have a Full local argument, 87.0164% have an outline and 12.6537% have a statement only. Every position has a head, so none is unassigned. Top-level maps for V and F describe suppliers without deriving them. These percentages cannot determine what fraction of the interior has a written proof. The largest named inputs still lacking a written derivation are F (3,679,692) and V (886,201).
+Each core line is assigned to the nearest indexed statement above it. For 0.3299% of lines, that statement has a Full local argument. For 87.0164% it has an outline, and for 12.6537% it has only a statement. These percentages describe the indexed statements. They do not measure written proofs of the lines beneath them. The largest Full contribution, 11,065 lines in the host row, belongs to N415; its two-page argument applies a cited estimate. V and F have top-level maps as block descriptions. Neither has a separate top-level-map grade at an indexed head. The largest named inputs without full written derivations are F (3,679,692 core lines) and V (886,201).
 
 ![Index positions by exposition level](../data/coverage_levels_en.svg)
 
@@ -50,7 +50,7 @@ Numbers refer to active steps in the current atlas checklist. Statement-only com
 
 **Outside this check.** A statement match supplies no proof of the exported theorem.
 
-[Paper §C, pp. 90 (1 pp.)](../editions/v0.1.0/paper_v7.pdf#page=90) · 0 of 5 numbered checklist steps · [P001 checklist](../units/P001.check.md).
+[Paper §C, p. 90 (1 p.)](../editions/v0.1.0/paper_v8.pdf#page=90) · 0 of 5 numbered checklist steps · [P001 checklist](../units/P001.check.md).
 
 `riemannHypothesis` · `Main.lean:4–4`
 
@@ -68,7 +68,7 @@ Numbers refer to active steps in the current atlas checklist. Statement-only com
 
 **Outside this check.** A statement match supplies no proof of the exported theorem.
 
-[Paper §C, pp. 90 (1 pp.)](../editions/v0.1.0/paper_v7.pdf#page=90) · 0 of 3 numbered checklist steps · [P002 checklist](../units/P002.check.md).
+[Paper §C, p. 90 (1 p.)](../editions/v0.1.0/paper_v8.pdf#page=90) · 0 of 3 numbered checklist steps · [P002 checklist](../units/P002.check.md).
 
 `riemannZeta_eq_zero_re` · `Main.lean:6–6`
 
@@ -86,7 +86,7 @@ Numbers refer to active steps in the current atlas checklist. Statement-only com
 
 **Outside this check.** A statement match supplies no proof of the exported theorem.
 
-[Paper §C, pp. 91 (1 pp.)](../editions/v0.1.0/paper_v7.pdf#page=91) · 0 of 4 numbered checklist steps · [P003 checklist](../units/P003.check.md).
+[Paper §C, p. 91 (1 p.)](../editions/v0.1.0/paper_v8.pdf#page=91) · 0 of 4 numbered checklist steps · [P003 checklist](../units/P003.check.md).
 
 `LFunction_ne_zero_of_half_lt_re` · `Main.lean:8–8`
 
@@ -104,7 +104,7 @@ Numbers refer to active steps in the current atlas checklist. Statement-only com
 
 **Outside this check.** A statement match supplies no proof of the exported theorem.
 
-[Paper §C, pp. 91 (1 pp.)](../editions/v0.1.0/paper_v7.pdf#page=91) · 0 of 3 numbered checklist steps · [P004 checklist](../units/P004.check.md).
+[Paper §C, p. 91 (1 p.)](../editions/v0.1.0/paper_v8.pdf#page=91) · 0 of 3 numbered checklist steps · [P004 checklist](../units/P004.check.md).
 
 `LFunction_eq_zero_re` · `Main.lean:10–10`
 
@@ -122,7 +122,7 @@ Numbers refer to active steps in the current atlas checklist. Statement-only com
 
 **Outside this check.** A statement match supplies no proof of the exported theorem.
 
-[Paper §C, pp. 91 (1 pp.)](../editions/v0.1.0/paper_v7.pdf#page=91) · 0 of 3 numbered checklist steps · [P005 checklist](../units/P005.check.md).
+[Paper §C, p. 91 (1 p.)](../editions/v0.1.0/paper_v8.pdf#page=91) · 0 of 3 numbered checklist steps · [P005 checklist](../units/P005.check.md).
 
 `LFunction_eq_zero_re_of_isPrimitive` · `Main.lean:12–12`
 
@@ -140,7 +140,7 @@ Numbers refer to active steps in the current atlas checklist. Statement-only com
 
 **Outside this check.** Uniformity over varying families or varying epsilon needs separate bounds.
 
-[Paper §5.1, pp. 27 (1 pp.)](../editions/v0.1.0/paper_v7.pdf#page=27) · 2 of 2 numbered checklist steps (S1, S2) · [D550 checklist](../units/D550.check.md).
+[Paper §5.1, p. 27 (1 p.)](../editions/v0.1.0/paper_v8.pdf#page=27) · 2 of 2 numbered checklist steps (S1, S2) · [D550 checklist](../units/D550.check.md).
 
 `Formalism.LFunctionChainParameters.LErr.large_x_eventually` · `Formalism/SizeWindowBrackets/ChainSlopeWindows/SubThreeMulLogTwoLe.lean:319–329`
 
@@ -154,9 +154,9 @@ Numbers refer to active steps in the current atlas checklist. Statement-only com
 
 **A positive check establishes.** The frozen-width sum is the same after this reindexing.
 
-**Outside this check.** Widths that vary with the index require A9 and further estimates.
+**Outside this check.** Widths that vary with the index require A9 and further estimates. D561 is an outline. Its statement has yet to be compared with the Lean declaration.
 
-[Paper §5.1, pp. 31–32 (2 pp.)](../editions/v0.1.0/paper_v7.pdf#page=31) · 1 of 4 numbered checklist steps (S4) · [D561 checklist](../units/D561.check.md).
+[Paper §5.1, pp. 31–32 (2 pp.)](../editions/v0.1.0/paper_v8.pdf#page=31) · 1 of 4 numbered checklist steps (S4) · [D561 checklist](../units/D561.check.md).
 
 `Deduction.CharacterBalanceMoves.th_le` · `Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean:75–152`
 
@@ -172,7 +172,7 @@ Numbers refer to active steps in the current atlas checklist. Statement-only com
 
 **Outside this check.** A change in the evaluation point is the separate task A4.
 
-[Paper §5.1, pp. 29–30 (2 pp.)](../editions/v0.1.0/paper_v7.pdf#page=29) · 3 of 4 numbered checklist steps (S1, S2, S3) · [D562 checklist](../units/D562.check.md).
+[Paper §5.1, pp. 29–30 (2 pp.)](../editions/v0.1.0/paper_v8.pdf#page=29) · 3 of 4 numbered checklist steps (S1, S2, S3) · [D562 checklist](../units/D562.check.md).
 
 `Formalism.LFunctionChainParameters.ThickSetMeanBounds.lipschitz_weight_all` · `Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean:957–964`
 
@@ -188,7 +188,7 @@ Numbers refer to active steps in the current atlas checklist. Statement-only com
 
 **Outside this check.** This comparison does not give the separate estimate for changing the smoothing width.
 
-[Paper §5.1, pp. 29–30 (2 pp.)](../editions/v0.1.0/paper_v7.pdf#page=29) · 1 of 4 numbered checklist steps (S4) · [D562 checklist](../units/D562.check.md).
+[Paper §5.1, pp. 29–30 (2 pp.)](../editions/v0.1.0/paper_v8.pdf#page=29) · 1 of 4 numbered checklist steps (S4) · [D562 checklist](../units/D562.check.md).
 
 `Formalism.LFunctionChainParameters.ThickSetMeanBounds.derivative_integral_all` · `Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean:966–981`
 
@@ -204,7 +204,7 @@ Numbers refer to active steps in the current atlas checklist. Statement-only com
 
 **Outside this check.** Existence of the host remains an input.
 
-[Paper §5.1, pp. 32–33 (2 pp.)](../editions/v0.1.0/paper_v7.pdf#page=32) · 3 of 3 numbered checklist steps (S1, S2, S3) · [D547 checklist](../units/D547.check.md).
+[Paper §5.1, pp. 32–33 (2 pp.)](../editions/v0.1.0/paper_v8.pdf#page=32) · 3 of 3 numbered checklist steps (S1, S2, S3) · [D547 checklist](../units/D547.check.md).
 
 `UpperTheory.Comparison₂.gmA_eq` · `Development/AutomorphicArithmetic/PrimitiveCosets/GmAEq.lean:61–149`
 
@@ -220,7 +220,7 @@ Numbers refer to active steps in the current atlas checklist. Statement-only com
 
 **Outside this check.** No count of the omitted correction is settled by this task.
 
-[Paper §5.1, pp. 33–34 (2 pp.)](../editions/v0.1.0/paper_v7.pdf#page=33) · 3 of 3 numbered checklist steps (S1, S2, S3) · [D548 checklist](../units/D548.check.md).
+[Paper §5.1, pp. 33–34 (2 pp.)](../editions/v0.1.0/paper_v8.pdf#page=33) · 3 of 3 numbered checklist steps (S1, S2, S3) · [D548 checklist](../units/D548.check.md).
 
 `UpperTheory.Comparison₂.charsA` · `Development/AutomorphicArithmetic/PrimitiveCosets/charsA.lean:80–125`
 
@@ -236,7 +236,7 @@ Numbers refer to active steps in the current atlas checklist. Statement-only com
 
 **Outside this check.** The pointwise input and the availability of such a host remain assumptions.
 
-[Paper §5.1, pp. 34 (1 pp.)](../editions/v0.1.0/paper_v7.pdf#page=34) · 2 of 2 numbered checklist steps (S1, S2) · [D549 checklist](../units/D549.check.md).
+[Paper §5.1, p. 34 (1 p.)](../editions/v0.1.0/paper_v8.pdf#page=34) · 2 of 2 numbered checklist steps (S1, S2) · [D549 checklist](../units/D549.check.md).
 
 `UpperTheory.Comparison₂.sigA_le` · `Development/AutomorphicArithmetic/PrimitiveCosets/SigALe.lean:38–60`
 
@@ -252,7 +252,7 @@ Numbers refer to active steps in the current atlas checklist. Statement-only com
 
 **Outside this check.** Producing the assumed windows or a prime-sum bound still requires other tasks.
 
-[Paper §5.1, pp. 27–28 (2 pp.)](../editions/v0.1.0/paper_v7.pdf#page=27) · 5 of 5 numbered checklist steps (S1, S2, S3, S4, S5) · [D567 checklist](../units/D567.check.md).
+[Paper §5.1, pp. 27–28 (2 pp.)](../editions/v0.1.0/paper_v8.pdf#page=27) · 5 of 5 numbered checklist steps (S1, S2, S3, S4, S5) · [D567 checklist](../units/D567.check.md).
 
 `Formalism.LFunctionChainParameters.LChain.errX5at_le` · `Formalism/SizeWindowBrackets/ChainSlopeWindows/PChain.lean:613–672`
 
@@ -268,11 +268,11 @@ Numbers refer to active steps in the current atlas checklist. Statement-only com
 
 **Outside this check.** Constructing a suitable host and proving V are separate problems.
 
-[Paper §5.1, pp. 30 (1 pp.)](../editions/v0.1.0/paper_v7.pdf#page=30) · 3 of 7 numbered checklist steps (S5, S6, S7) · [D014 checklist](../units/D014.check.md).
+[Paper §5.1, p. 30 (1 p.)](../editions/v0.1.0/paper_v8.pdf#page=30) · 3 of 7 numbered checklist steps (S5, S6, S7) · [D014 checklist](../units/D014.check.md).
 
 `UpperTheory.Comparison₂.hostFactsS` · `Development/AutomorphicArithmetic/PrimitiveCosets/hostFactsS.lean:127–136`
 
-### 15 (A8). Prove the prime–character balance
+### 15 (A8). Check the written steps of the prime–character balance
 
 **Check.** Compute the average separately at ordinary and exceptional primes; check the factor two divided by inertia order two at d, then sum by characters.
 
@@ -282,9 +282,9 @@ Numbers refer to active steps in the current atlas checklist. Statement-only com
 
 **A positive check establishes.** The prime count minus its main term equals the stated character correction.
 
-**Outside this check.** The identity alone gives no size estimate for that correction.
+**Outside this check.** The identity alone gives no size estimate for that correction. D561 is an outline. Its statement has yet to be compared with the Lean declaration.
 
-[Paper §5.1, pp. 25–27 (3 pp.)](../editions/v0.1.0/paper_v7.pdf#page=25) · 3 of 4 numbered checklist steps (S1, S2, S3) · [D561 checklist](../units/D561.check.md).
+[Paper §5.1, pp. 25–27 (3 pp.)](../editions/v0.1.0/paper_v8.pdf#page=25) · 3 of 4 numbered checklist steps (S1, S2, S3) · [D561 checklist](../units/D561.check.md).
 
 `Deduction.ch_balance` · `Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChBalance.lean:200–260`
 
@@ -300,7 +300,7 @@ Numbers refer to active steps in the current atlas checklist. Statement-only com
 
 **Outside this check.** This compares a statement only; the row assumed by the supplier and the derivation of V remain open for hand checking.
 
-[Paper §5.4, pp. 45–49 (5 pp.)](../editions/v0.1.0/paper_v7.pdf#page=45) · 0 of 7 numbered checklist steps · [P013 checklist](../units/P013.check.md).
+[Paper §5.4, pp. 45–49 (5 pp.)](../editions/v0.1.0/paper_v8.pdf#page=45) · 0 of 7 numbered checklist steps · [P013 checklist](../units/P013.check.md).
 
 `UpperTheory.One.vwin_of_row` · `Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/VwinOfRow.lean:4–5`
 
@@ -322,7 +322,7 @@ Numbers refer to active steps in the current atlas checklist. Statement-only com
 
 **Outside this check.** Agreement does not construct this witness or resolve the theta and covolume inputs.
 
-[Paper §5.5, pp. 49–50 (2 pp.)](../editions/v0.1.0/paper_v7.pdf#page=49) · 0 of 2 numbered checklist steps · [T02 checklist](../units/T02.check.md).
+[Paper §5.5, pp. 49–50 (2 pp.)](../editions/v0.1.0/paper_v8.pdf#page=49) · 0 of 2 numbered checklist steps · [T02 checklist](../units/T02.check.md).
 
 `UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound` · `Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean:44–68`
 
@@ -340,13 +340,13 @@ Numbers refer to active steps in the current atlas checklist. Statement-only com
 
 **Outside this check.** It does not identify a suitable family or prove the two exponents have the required values.
 
-[Paper §5.1, pp. 25–35 (11 pp.)](../editions/v0.1.0/paper_v7.pdf#page=25) · 3 of 3 numbered checklist steps (S1, S2, S3) · [P017 checklist](../units/P017.check.md).
+[Paper §5.1, pp. 25–35 (11 pp.)](../editions/v0.1.0/paper_v8.pdf#page=25) · 3 of 3 numbered checklist steps (S1, S2, S3) · [P017 checklist](../units/P017.check.md).
 
 `UpperTheory.Comparison₂.level_gm_le_on_family_scales` · `Development/AutomorphicArithmetic/PrimitiveCosets/LevelGmLeOnFamilyScales.lean:28–30`
 
 ### 19. Exclude a pole from a one-sided window
 
-**Check.** Check the six-step analytic packet against the manuscript: localize the kernel, bound each tail, and obtain contradictions from Taylor coefficients for the separated and the real pole cases.
+**Check.** Check the six-step analytic packet against the manuscript: localize the kernel, bound each tail, and obtain contradictions from Taylor coefficients for the separated and the real pole cases. Steps S1–S6 form one complete account. S7–S10 present a parallel account and are outside this check.
 
 **Inputs.** Assume the pole-data record, including growth, transform continuation and residue sign, with 0 < theta < 1 and arbitrarily distant full logarithmic windows of the prescribed length.
 
@@ -356,7 +356,7 @@ Numbers refer to active steps in the current atlas checklist. Statement-only com
 
 **Outside this check.** Supplying the window for the arithmetic family and transferring this abstract result to every character are separate deductions.
 
-[Paper §C.4, pp. 96–100 (5 pp.)](../editions/v0.1.0/paper_v7.pdf#page=96) · 6 of 10 numbered checklist steps (S1, S2, S3, S4, S5, S6) · [P022 checklist](../units/P022.check.md).
+[Paper §C.4, pp. 96–100 (5 pp.)](../editions/v0.1.0/paper_v8.pdf#page=96) · 6 of 10 numbered checklist steps (S1, S2, S3, S4, S5, S6) · [P022 checklist](../units/P022.check.md).
 
 `Deduction.landau_window` · `Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindow.lean:83–166`
 
@@ -368,11 +368,11 @@ Numbers refer to active steps in the current atlas checklist. Statement-only com
 
 **Background.** Selmer data, lattice estimates, prime sums and Dirichlet L-functions.
 
-**A positive check establishes.** The seven recorded transitions give the five conclusions if every listed premise holds.
+**A positive check establishes.** Each of the seven recorded transitions is correct from the inputs it names.
 
-**Outside this check.** The check does not supply V or F, prove the input lists, or re-run the Lean kernel.
+**Outside this check.** The check does not supply V or F, prove the input lists, or re-run the Lean kernel. This unit is an outline. A positive check cannot certify that its premise list is complete or that the five conclusions follow.
 
-[Paper §5.6, pp. 50–53 (4 pp.)](../editions/v0.1.0/paper_v7.pdf#page=50) · 7 of 7 numbered checklist steps (S1, S2, S3, S4, S5, S6, S7) · [V4-COND checklist](../units/V4-COND.check.md).
+[Paper §5.6, pp. 50–53 (4 pp.)](../editions/v0.1.0/paper_v8.pdf#page=50) · 7 of 7 numbered checklist steps (S1, S2, S3, S4, S5, S6, S7) · [V4-COND checklist](../units/V4-COND.check.md).
 
 `UpperTheory.Top.zero_free_all_of_green_v_win` · `Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:12–15`
 
@@ -486,7 +486,7 @@ Field: Geometry of lattices and arithmetic families. Further document needed: Gi
 
 ### S1 · power windows at the level
 
-The window-to-zero-free criterion has a local reading. The conditional argument also assumes that the required power windows are available at the specified level.
+The criterion itself has full local written arguments in P018, P022 and P023. The conditional deduction still assumes that the required power windows are available at the specified level.
 
 Field: Analytic number theory. Further document needed: Derive the level family and check all its hypotheses against the zero-free criterion for the same exponent and character.
 
@@ -701,5 +701,9 @@ Field: Analytic number theory. Further document needed: Compare the written goal
 `RiemannHypothesis` · `Mathlib/NumberTheory/LSeries/RiemannZeta.lean:185–186` · separate size not registered.
 
 ## How further work is recorded
+
+Discussions in the EnjoyingMath channel community motivate the author’s plan to work with mathematics students and mathematicians. His aim is to check Alpöge’s Lean proof by hand, one step at a time, for as long as the work takes. He plans to report progress in English and Korean through atlas editions, the progress dashboard and the channel.
+
+Human-checked steps so far: 0. [Dashboard](../dashboard/README.md) · [EnjoyingMath](https://www.youtube.com/@enjoyingmath9346)
 
 Each written step has a source and edition. Human checks identify both. A revised edition requires a fresh check. Part II on V and Part III on F are tentative plans. [Programme](../ROADMAP.md) · [Edition register](../data/editions.json) · [Review register](../reviews/index.json)

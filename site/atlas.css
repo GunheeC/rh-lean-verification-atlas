@@ -10,6 +10,7 @@ header a{color:#f1f7f6;text-decoration:none}header a:hover,header a:focus{text-d
 main{width:90%;max-width:69rem;margin:2.8rem auto 5rem;min-height:55vh}
 h1,h2,h3{line-height:1.18;letter-spacing:-.02em;text-wrap:balance}
 h1{font-size:2.8rem;margin:.6em 0 .45em}h2{font-size:1.6rem;margin:1.9em 0 .5em}h3{font-size:1.2rem;margin:1.4em 0 .4em}
+blockquote{margin:1.2em 0;padding:.65em 1em;border:1px solid var(--line);border-left:3px solid #678483}
 p,ol,ul,blockquote{max-width:78ch}p{margin:.7em 0 1em}li{margin:.34em 0}li p{margin:0}
 a{color:var(--link);text-underline-offset:.16em;overflow-wrap:anywhere}a:hover{color:#873f16}a:focus-visible,input:focus-visible{outline:3px solid #b76a22;outline-offset:2px}
 .notice{color:var(--muted);padding:.55em .9em;border-left:3px solid #b48e57;background:#f0f2ed;font-size:.89rem}

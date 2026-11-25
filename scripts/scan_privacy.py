@@ -24,20 +24,62 @@ def count_tokens(data):
         hits[kind] += 1
     for m in EMAIL.finditer(data):
         host = m[1].lower()
-        if m[0] == OWNER_NOREPLY:
-            category = "authorized_owner_noreply"
+        if m[0] in PUBLIC_EMAILS and whole_contact(data, m):
+            category = PUBLIC_EMAILS[m[0]]
         elif host.endswith((b".invalid", b".localhost", b".test", b".example", b".local")) or host == b"localhost":
             category = "reserved_machine_email"
         else:
             category = "email_candidate"
         hits[category] += 1
+    # An address with an internationalized letter or domain separator can
+    # disappear entirely from the ASCII scan. Classify the full UTF-8 token.
+    if b"@" in data and not data.isascii():
+        try:
+            text = data.decode("utf-8")
+        except UnicodeDecodeError:
+            text = ""
+        for match in INTERNATIONAL_EMAIL.finditer(text):
+            token = match[0]
+            if token.isascii():
+                continue
+            raw = token.encode()
+            partial = EMAIL.search(raw)
+            if partial is not None:
+                permitted = PUBLIC_EMAILS.get(partial[0])
+                if not permitted or not whole_contact(raw, partial):
+                    continue  # Already counted as an unlisted ASCII candidate.
+                hits[permitted] -= 1
+            hits["email_candidate"] += 1
     return +hits
 
 
 HOME = re.compile(rb"(?:[/](?:Users|home)[/]|[A-Za-z]:[\\/]+Users[\\/]+)([A-Za-z0-9_.-]+)", re.I)
 SERVICE_ACCOUNTS = {b"agent", b"oai", b"claude", b"runner", b"ubuntu"}
 OWNER_NOREPLY = b"GunheeC" + b"@users.noreply.github.com"
-EMAIL = re.compile(rb"(?<![A-Za-z0-9_.+-])[A-Za-z0-9_.%+-]+@([A-Za-z0-9.-]+\.[A-Za-z]{2,}|localhost)(?![A-Za-z0-9_.-])")
+PUBLIC_EMAILS = {
+    OWNER_NOREPLY: "authorized_owner_noreply",
+    b"wvx17" + b"@txstate.edu": "authorized_academic_email",
+    b"geonhee" + b"@transcendq.com": "authorized_company_email",
+}
+PUBLIC_EMAIL_CATEGORIES = frozenset(PUBLIC_EMAILS.values())
+# A period ending a sentence is a delimiter. A further domain label belongs
+# to the candidate, so a domain suffix cannot turn a lookalike into a match.
+EMAIL = re.compile(rb"(?<![A-Za-z0-9_.+-])[A-Za-z0-9_.%+-]+@([A-Za-z0-9.-]+\.[A-Za-z]{2,}|localhost)(?![A-Za-z0-9_-]|\.[A-Za-z0-9_-])")
+INTERNATIONAL_EMAIL = re.compile(r"(?<![\w.%+-])[\w.%+-]+@[\w-]+(?:[.。．｡][\w-]+)+")
+def whole_contact(data, match):
+    """A known address embedded in another mailbox is not an approved contact."""
+    before = data[max(0, match.start()-4):match.start()].decode("utf-8", errors="ignore")
+    after = data[match.end():match.end()+4].decode("utf-8", errors="ignore")
+    # An internationalized letter immediately adjoining a recognized ASCII
+    # mailbox extends that mailbox. Quotation marks and prose delimiters do not.
+    if (before and not before[-1].isascii() and before[-1].isalnum()) or (
+            after and not after[0].isascii() and after[0].isalnum()):
+        return False
+    # Common RFC local-part separators may connect another word to the left.
+    # Quoted standalone addresses in prose retain their exact identity.
+    return not re.search(rb"[A-Za-z0-9][!#$&'*=?^|`~]+$", data[max(0, match.start()-16):match.start()])
+
+
 TOKEN_PATTERNS = {
     "private_key": re.compile(rb"-{5}BEGIN (?:[A-Z0-9 ]+ )?PRIVATE KEY-{5}|PuTTY-User-Key-File-[23]:"),
     "provider_token": re.compile(rb"(?<![A-Za-z0-9])(?:gh[pousr]_[A-Za-z0-9]{25,}|github_pat_[A-Za-z0-9_]{40,}|glpat-[A-Za-z0-9_-]{20,}|xox[baprs]-[A-Za-z0-9-]{15,}|sk-(?:proj-|live_|test_)?[A-Za-z0-9_-]{22,}|(?:AKIA|ASIA)[A-Z0-9]{16}|AIza[A-Za-z0-9_-]{35}|npm_[A-Za-z0-9]{32,}|pypi-[A-Za-z0-9_-]{36,})"),
@@ -170,7 +212,7 @@ def object_scan(root):
             tree_names.update(flags)
             flags.update(findings.get(oid, {}))
             by_path.update(flags)
-            flagged += bool(flags)
+            flagged += bool(flags.keys() - PUBLIC_EMAIL_CATEGORIES)
         histories.append(dict(commit=commit,reachable_from_ref=commit in ref_set,reachable_from_HEAD=commit in head_set,paths=len(entries),
                               flagged_paths=flagged,path_occurrence_counts=dict(by_path),
                               commit_metadata_counts=dict(findings.get(commit, {}))))
@@ -224,7 +266,8 @@ def main():
                        "scope":"This tracked preparation record measures the worktree, object store and local reflogs at the time shown. The final commit and restored bundle are inspected afterward. Their results belong in the enclosing project's out/LOG.md and are not observations in this snapshot." if args.phase=="pre-final-commit" else "A live scan of the checkout in which the command ran."},
             "method":"Local Git object database, every stored tree entry, commit snapshot, ref name and local reflog, and actual working tree including ignored files. Match values are withheld. No credential store or remote is read.",
             "scope":"Counts per commit expand paths. Unique-blob totals count shared objects once. HEAD history, other refs only, and objects outside the current refs are disjoint sets. Remote-tracking push actors are a subset of the local reflog counts. Reflogs and unreferenced objects are local and their counts can differ in a fresh clone or restoration. Reader notes and page-image origins are independently recorded in NOTICE.md.",
-            "categories_checked":list(TOKEN_PATTERNS)+["authorized_owner_noreply","email_candidate","reserved_machine_email","review_service_home","personal_or_unclassified_home","credential_or_transcript_filename","outside_tree_path","external_gitlink","symlink_to_review","special_file_to_review"],
+            "categories_checked":list(TOKEN_PATTERNS)+sorted(PUBLIC_EMAIL_CATEGORIES)+["email_candidate","reserved_machine_email","review_service_home","personal_or_unclassified_home","credential_or_transcript_filename","outside_tree_path","external_gitlink","symlink_to_review","special_file_to_review"],
+            "public_contacts":"Three exact, case-sensitive addresses are reported separately: the owner's GitHub no-reply identity and the academic and company contact addresses supplied for publication.",
             "limitations":"Pattern detection covers recognizable secret formats and transcript markers. Linked files and gitlinks are reported without dereferencing them. No Git history is rewritten.",
             "round3_disposition":{
                 "previous_commits":"The two original DB1/DB2 trees contain 24 and 48 occurrences of absolute paths for shared review-service accounts. The owner authorized rewriting Git identities with those first two tree snapshots preserved. These machine paths therefore persist wherever those snapshots are included. The owner decides public visibility.",

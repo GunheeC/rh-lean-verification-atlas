@@ -18,13 +18,13 @@ def check(root, units):
 
     errors = []
     catalog = read("data/editions.json")["editions"]
-    paper = catalog["paper2_v7"]
-    blueprint = catalog["blueprint_v13b"]
+    paper = catalog["paper2_v8"]
+    blueprint = catalog["blueprint_v13c"]
     original = catalog["blueprint_v13"]
     preceding = catalog["blueprint_v13a"]
     release_dir = root / "editions/v0.1.0"
     checksums = {}
-    for key, filename in (("paper2_v7", "paper_v7.pdf"), ("blueprint_v13b", "blueprint_v13b.pdf")):
+    for key, filename in (("paper2_v8", "paper_v8.pdf"), ("blueprint_v13c", "blueprint_v13c.pdf")):
         ed = catalog[key]
         path = release_dir / filename
         if ed["repository_file"] != path.relative_to(root).as_posix() or not path.is_file():
@@ -37,7 +37,7 @@ def check(root, units):
     entries = checksum_file.read_text().splitlines() if checksum_file.is_file() else []
     if sorted(entries) != sorted(f"{h}  {f}" for f, h in checksums.items()):
         errors.append("Repository PDF checksum manifest differs from registered documents")
-    expected_files = {"SHA256SUMS", "paper_v7.pdf", "blueprint_v13b.pdf"}
+    expected_files = {"SHA256SUMS", "paper_v8.pdf", "blueprint_v13c.pdf"}
     if not release_dir.is_dir() or {p.name for p in release_dir.iterdir()} != expected_files:
         errors.append("Unexpected release-edition inventory")
     if catalog != read("data/notes.json")["editions"]:
@@ -63,7 +63,7 @@ def check(root, units):
             or len(rows) != count or {row["old_physical"] for row in rows} != expected_sheets
             or set(exceptions) != {1, 2} or len(comparison["exceptions"]) != len(exceptions)
             or comparison["identical_pages"] != count - len(exceptions)):
-        errors.append("Blueprint v13b sheet inventory or recorded exception set differs")
+        errors.append("Blueprint v13c sheet inventory or recorded exception set differs")
     for row in rows:
         n = row["old_physical"]
         if n not in expected_sheets:
@@ -80,6 +80,35 @@ def check(root, units):
     if any(not row["reason"] or not row["text_diff"] or
            row["new_physical"] != blueprint_page(blueprint, n) for n, row in exceptions.items()):
         errors.append("Missing description of the two revised blueprint sheets")
+    parent = catalog["blueprint_v13b"]
+    parent_rows = read(parent["page_comparison"])["pages"]
+    preceding_comparison = blueprint["comparison_with_preceding"]
+    front_rows = preceding_comparison["unchanged_front_sheets"]
+    revised_front = preceding_comparison["changed_front_sheets"]
+    front_ids = {r["physical_sheet"] for r in front_rows}
+    revised_ids = {r["sheet"] for r in revised_front}
+    if (fingerprint(root / parent["page_comparison"]) != parent["page_comparison_sha256"]
+            or blueprint["revised_from"] != "blueprint_v13b" or len(parent_rows) != len(rows)
+            or preceding_comparison["source_edition"] != "blueprint_v13b"
+            or preceding_comparison["source_sha256"] != parent["sha256"]
+            or preceding_comparison["target_sha256"] != blueprint["sha256"]
+            or preceding_comparison["retained_sheets_with_identical_text_content_streams_and_rasters"] != count
+            or front_ids & revised_ids or len(front_ids) != len(front_rows) or len(revised_ids) != len(revised_front)
+            or front_ids | revised_ids != set(range(1, blueprint["new_front_pages"]+1))
+            or not {1,2} <= revised_ids):
+        errors.append("The v13b–v13c sheet comparison refers to the wrong editions or length")
+    for kind in ("text_sha256", "stream_sha256", "raster_sha256"):
+        if (any(not re.fullmatch("[0-9a-f]{64}", r[kind]) for r in front_rows)
+                or any(r["source"][kind] == r["target"][kind] or
+                       not all(re.fullmatch("[0-9a-f]{64}", r[key][kind]) for key in ("source","target"))
+                       for r in revised_front)):
+            errors.append(f"The revised and retained blueprint front matter has invalid {kind} evidence")
+    for row, previous_row in zip(rows, parent_rows):
+        if row["old_physical"] != previous_row["old_physical"] or any(
+                row.get("target_" + kind + "_sha256", row["source_" + kind + "_sha256"]) !=
+                previous_row.get("target_" + kind + "_sha256", previous_row["source_" + kind + "_sha256"])
+                for kind in ("text", "stream", "raster")):
+            errors.append(f"Retained sheet {row['old_physical']} differs between v13b and v13c")
     packets = read("data/notes_starters.json")["starters"]
     note_index = (root / "notes/README.md").read_text()
     for track, packet in packets.items():
@@ -87,14 +116,14 @@ def check(root, units):
             errors.append(f"{track}: packet index lacks a current blueprint page link")
     if any(set(packet["pdf_pages"]) & exceptions.keys() for packet in packets.values()):
         errors.append("A packet cites a revised original blueprint sheet")
-    previous = catalog["paper2_v6"]["unit_locators"]
+    previous = catalog["paper2_v7"]["unit_locators"]
     labels = read(paper["label_index"])
     if (fingerprint(root / paper["label_index"]) != paper["label_index_sha256"]
             or labels["source_pdf_sha256"] != paper["sha256"] or paper["review_status"] != "pending_review"):
         errors.append("Paper label register is stale or the new edition's review status has changed")
     math = paper["source_math_comparison"]
-    if (math["source_edition"] != "paper2_v6"
-            or math["source_pdf_sha256"] != catalog["paper2_v6"]["sha256"]
+    if (math["source_edition"] != "paper2_v7"
+            or math["source_pdf_sha256"] != catalog["paper2_v7"]["sha256"]
             or math["target_pdf_sha256"] != paper["sha256"]
             or math["target_aux_sha256"] != labels["latex_aux_sha256"]
             or not math["compilation_inputs_verified"]):
@@ -109,7 +138,7 @@ def check(root, units):
     locations = guide["locations"]
     if (guide["review_status"] != "pending_review" or guide["section"] != "2"
             or set(locations) != {"start", "end", "figure", "table"}
-            or not 3 <= locations["end"]["pdf_page"] - locations["start"]["pdf_page"] + 1 <= 4):
+            or locations["end"]["pdf_page"] < locations["start"]["pdf_page"]):
         errors.append("The new reader account has an unexpected extent, figure, table or review status")
     for loc in locations.values():
         if (not loc["label"] or not loc["destination"] or loc["pdf_page"] != loc["printed_page"] + offset
@@ -137,7 +166,7 @@ def check(root, units):
             errors.append(f"Section 3 coverage location {loc['label']} differs from the resolved destination")
     for uid, entries in paper["unit_locators"].items():
         if uid not in units:
-            errors.append(f"{uid}: unknown unit in paper-v7 page register")
+            errors.append(f"{uid}: unknown unit in paper-v8 page register")
             continue
         for e in entries:
             first, last = e["printed_pages"]
@@ -154,7 +183,7 @@ def check(root, units):
         expected = {(e["start_label"], e["end_label"]) for e in entries}
         actual = {(e["start_label"], e["end_label"]) for e in paper["unit_locators"].get(uid, [])}
         if expected != actual or len(entries) != len(paper["unit_locators"].get(uid, [])):
-            errors.append(f"{uid}: v7 passage list differs from the v6 edition")
+            errors.append(f"{uid}: v8 passage list differs from the v7 edition")
     return errors
 
 

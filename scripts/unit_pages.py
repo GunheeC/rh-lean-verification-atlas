@@ -173,17 +173,17 @@ class Atlas:
         if uid in self.starters:
             s=self.starters[uid]
             lines.append(f"- {link('Graduate reading packet · '+s['title'],'../'+s['path'])}")
-        paper = self.editions["paper2_v7"]
-        blueprint = self.editions["blueprint_v13b"]
+        paper = self.editions["paper2_v8"]
+        blueprint = self.editions["blueprint_v13c"]
         for entry in paper["unit_locators"].get(uid, []):
             physical = entry["pdf_pages"][0]
             ref = link(entry["section"], "../" + paper["repository_file"] + f"#page={physical}")
-            lines.append("- Paper v7 · " + ref + ", printed " + pageref(entry["printed_pages"]))
+            lines.append("- Paper v8 · " + ref + ", printed " + pageref(entry["printed_pages"]))
         for e in u["expositions"]:
             doc=e["document"]
             if doc == "blueprint_v13":
                 physical = blueprint_page(blueprint, e["pages"][0])
-                ref = link("Blueprint v13b", "../" + blueprint["repository_file"] + f"#page={physical}")
+                ref = link("Blueprint v13c", "../" + blueprint["repository_file"] + f"#page={physical}")
                 lines.append(f"- {ref}, printed p. {e['printed_page']}, section label `{e['section']}`.")
             if doc in self.editions:
                 loc=e["section"]
@@ -331,7 +331,7 @@ class Atlas:
         if u.get("review_status") == "pending_review" and u["grade"] != "L4":
             out += ["", "**New exposition · pending_review.** This edition has no independent review of the new argument. Earlier verdicts below retain their stated scopes."]
         out += ["", "## Where to read", "",
-                "Gunhee Cho is the paper’s author and the blueprint’s editor. Both were drafted with AI assistance. No independent human referee has checked the arguments. Levent Alpöge is the author of the Lean development. [Blueprint v13b](../editions/v0.1.0/blueprint_v13b.pdf) · [Conditional paper v7](../editions/v0.1.0/paper_v7.pdf) · [Edition register](../data/editions.json)", "",
+                "Gunhee Cho is the paper’s author and the blueprint’s editor. Both were drafted with AI assistance. No human, the author included, has yet checked the arguments. Levent Alpöge is the author of the Lean development. [Blueprint v13c](../editions/v0.1.0/blueprint_v13c.pdf) · [Conditional paper v8](../editions/v0.1.0/paper_v8.pdf) · [Edition register](../data/editions.json)", "",
                 *self.readings(u)]
         if self.external[uid]:
             out+=["","### Other expositions and comparisons",""]

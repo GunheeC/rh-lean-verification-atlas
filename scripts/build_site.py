@@ -32,6 +32,7 @@ header a{color:#f1f7f6;text-decoration:none}header a:hover,header a:focus{text-d
 main{width:90%;max-width:69rem;margin:2.8rem auto 5rem;min-height:55vh}
 h1,h2,h3{line-height:1.18;letter-spacing:-.02em;text-wrap:balance}
 h1{font-size:2.8rem;margin:.6em 0 .45em}h2{font-size:1.6rem;margin:1.9em 0 .5em}h3{font-size:1.2rem;margin:1.4em 0 .4em}
+blockquote{margin:1.2em 0;padding:.65em 1em;border:1px solid var(--line);border-left:3px solid #678483}
 p,ol,ul,blockquote{max-width:78ch}p{margin:.7em 0 1em}li{margin:.34em 0}li p{margin:0}
 a{color:var(--link);text-underline-offset:.16em;overflow-wrap:anywhere}a:hover{color:#873f16}a:focus-visible,input:focus-visible{outline:3px solid #b76a22;outline-offset:2px}
 .notice{color:var(--muted);padding:.55em .9em;border-left:3px solid #b48e57;background:#f0f2ed;font-size:.89rem}
@@ -116,9 +117,15 @@ def diagram(lines, lang="en"):
     token = r'(\w+)(?:\["([^"]+)"\])?'
     for raw in lines[1:]:
         line = raw.strip().rstrip(";")
-        style = re.fullmatch(r"classDef\s+(\w+)\s+fill:" + color + r",\s*stroke:" + color, line)
+        style = re.fullmatch(r"classDef\s+(\w+)\s+fill:" + color + r",\s*stroke:" + color
+                             + r"(?:,\s*stroke-dasharray:(\d+ \d+))?(?:,\s*stroke-width:(\d+px))?", line)
         if style:
-            styles[style[1]] = f"fill:{style[2]};stroke:{style[3]}"
+            properties = [f"fill:{style[2]}", f"stroke:{style[3]}"]
+            if style[4]:
+                properties.append(f"stroke-dasharray:{style[4]}")
+            if style[5]:
+                properties.append(f"stroke-width:{style[5]}")
+            styles[style[1]] = ";".join(properties)
             continue
         group = re.fullmatch(r"class\s+(\w+(?:,\s*\w+)*)\s+(\w+)", line)
         if group:
@@ -145,7 +152,8 @@ def diagram(lines, lang="en"):
             raise ValueError("Cycle in atlas map")
         ranks.update(step)
     layers = [[n for n in names if ranks[n] == i] for i in range(max(ranks.values())+1)]
-    width = max(map(len,layers))*176 + 12
+    has_long_edge = any(ranks[b] > ranks[a] + 1 for a,b in edges)
+    width = max(map(len,layers))*176 + (100 if has_long_edge else 12)
     pos = {n:(width/2+(j-(len(layer)-1)/2)*176, 40+i*104)
            for i, layer in enumerate(layers) for j,n in enumerate(layer)}
     height = 80+(len(layers)-1)*104
@@ -158,7 +166,15 @@ def diagram(lines, lang="en"):
         x, y = pos[a]
         xx, yy = pos[b]
         mid = (y + yy) / 2
-        out.append(f'<path d="M{x},{y+29} C{x},{mid} {xx},{mid} {xx},{yy-30}" fill="none" stroke="#526e72" stroke-width="1.5" marker-end="url(#arrow-{key})"/>')
+        if ranks[b] > ranks[a] + 1:
+            side = 1 if x >= width/2 else -1
+            gutter = width - 12 if side == 1 else 12
+            inset = xx + 46*side
+            path = (f"M{x},{y+29} Q{x},{y+46} {gutter},{y+46} "
+                    f"V{yy-60} Q{gutter},{yy-48} {inset},{yy-48} Q{inset},{yy-48} {inset},{yy-30}")
+        else:
+            path = f"M{x},{y+29} C{x},{mid} {xx},{mid} {xx},{yy-30}"
+        out.append(f'<path d="{path}" fill="none" stroke="#526e72" stroke-width="1.5" marker-end="url(#arrow-{key})"/>')
     for n,(x,y) in pos.items():
         label=textwrap.wrap(names[n], 11 if lang == "ko" else 21, break_long_words=False)
         style = f' style="{styles[classes[n]]}"' if n in classes else ""
@@ -204,7 +220,7 @@ class Edition:
         # keeps its own PDFs so it can be moved as a unit.
         self.in_checkout = (output or self.root / "site").resolve() == self.root / "site"
         editions = json.loads((self.root / "data/editions.json").read_bytes())["editions"]
-        blueprint = editions["blueprint_v13b"]
+        blueprint = editions["blueprint_v13c"]
         starters = json.loads((self.root / "data/notes_starters.json").read_bytes())["starters"]
         self.packet_pages = {}
         for packet in starters.values():
@@ -213,7 +229,7 @@ class Edition:
                 page = blueprint_page(blueprint, physical)
                 self.packet_pages[src, f"pages/{folio}.webp"] = (
                     f"../../{blueprint['repository_file']}#page={page}",
-                    f"Open printed page {folio} in blueprint v13b",
+                    f"Open printed page {folio} in blueprint v13c",
                 )
         self.pages = {}
         self.assets = {}

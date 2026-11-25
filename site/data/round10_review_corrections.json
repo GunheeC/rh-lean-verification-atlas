@@ -1,0 +1,1315 @@
+{
+  "round": 10,
+  "review": "F",
+  "reviewed_edition": "paper2_v7",
+  "review_status": "applied_and_checked",
+  "report_sha256": "15cddc826303414445ab7ba96fe950f681bb9caaeb0369d25a93e2a8aaf6d35b",
+  "scope": {
+    "reviewer": "independent AI reviewer",
+    "reviewed_atlas_commit": "7529d25",
+    "reviewed_paper": "v7",
+    "reviewed_blueprint": "v13b",
+    "reviewed_surfaces": [
+      "English at-a-glance and coverage documents with their published data and checklists",
+      "paper pages 1–24 with selective later passages on pages 25, 50–54, 429 and 432",
+      "blueprint editorial front through physical sheet 11",
+      "atlas status, progress and overview"
+    ],
+    "limits": [
+      "The reviewer did not check Korean editions, later blueprint sheets, or the paper appendices.",
+      "The reviewer inspected declaration statements and task boundaries. No mathematical proof was checked step by step or compiled.",
+      "The reviewer checked published arithmetic, not the complete dependency graph, all gap sizes, previous-edition pagination, external sources, premise completeness or page typography beyond Figure 1."
+    ],
+    "human_checks_added": 0
+  },
+  "original_verdict_counts": {
+    "wrong": 0,
+    "misleading_simplification": 5,
+    "imprecise_but_acceptable": 6,
+    "proposed_rewrites": 10,
+    "coverage_items": 8,
+    "framing_items": 14,
+    "consistency_items": 6
+  },
+  "source_commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "pin_convention": "All paths in lean_evidence are relative to the upstream src directory. SHA-256 hashes use the inclusive range, UTF-8 source lines joined by LF, without a trailing LF. Non-mathematical editorial findings use their appropriate documentation or dataset evidence.",
+  "lean_evidence": {
+    "P001": {
+      "declaration": "riemannHypothesis",
+      "file": "Main.lean",
+      "start": 4,
+      "end": 4,
+      "sha256": "71b3d50605ddda7c0c74fbbf5cca47165a4cfa2ad72f50f36b907ecac7ff505a"
+    },
+    "P002": {
+      "declaration": "riemannZeta_eq_zero_re",
+      "file": "Main.lean",
+      "start": 6,
+      "end": 6,
+      "sha256": "b76ddf651dfdaa35aa759391bf660be25e1a3d4299cf9b6fd89926313aac2ae7"
+    },
+    "P003": {
+      "declaration": "LFunction_ne_zero_of_half_lt_re",
+      "file": "Main.lean",
+      "start": 8,
+      "end": 8,
+      "sha256": "5b0ee88593377690a537bd3111264f9a9652eaad5475b129ce9e15b263830d64"
+    },
+    "P004": {
+      "declaration": "LFunction_eq_zero_re",
+      "file": "Main.lean",
+      "start": 10,
+      "end": 10,
+      "sha256": "16e8622c29d633b78f0009d3ed16ed8cd13ece9122362aed0a4fb12646635409"
+    },
+    "P005": {
+      "declaration": "LFunction_eq_zero_re_of_isPrimitive",
+      "file": "Main.lean",
+      "start": 12,
+      "end": 12,
+      "sha256": "0401b524ca2966a15b42b17c6d82be74188720e1452c23c1c994ee9ed8fc53e6"
+    },
+    "P007": {
+      "declaration": "critAll",
+      "file": "Supplements/Kernels/MainTheorems.lean",
+      "start": 11,
+      "end": 13,
+      "sha256": "0d978db013e5eba6fa1d430c3cbd57ba979648c7e28481d8ee74be0150b7b823"
+    },
+    "P010": {
+      "declaration": "UpperTheory.FinalTheorems.everyCharacter",
+      "file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+      "start": 10,
+      "end": 11,
+      "sha256": "cb6e29e571bc60a80fe7adced18bc00414f6ec80fb9521724b707e6e6e3244a4"
+    },
+    "P012": {
+      "declaration": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+      "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+      "start": 810,
+      "end": 813,
+      "sha256": "830dcc21c3e6cbb1aa36c0fb5396d2ed4099f5f72b2c18644ad323b75924fac3"
+    },
+    "P013": {
+      "declaration": "UpperTheory.One.vwin_of_row",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/VwinOfRow.lean",
+      "start": 4,
+      "end": 5,
+      "sha256": "c6737c388a60710399cbefa7c22fa10c35609465302265d87f51a8f680299764"
+    },
+    "P015": {
+      "declaration": "UpperTheory.Top.zero_free_all_of_green_v_win",
+      "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean",
+      "start": 12,
+      "end": 15,
+      "sha256": "5e975b2462270fb38d695e966d3ce6bb6f409b715ddc3302ba807422a5925e41"
+    },
+    "P017": {
+      "declaration": "UpperTheory.Comparison₂.level_gm_le_on_family_scales",
+      "file": "Development/AutomorphicArithmetic/PrimitiveCosets/LevelGmLeOnFamilyScales.lean",
+      "start": 28,
+      "end": 30,
+      "sha256": "3ccafb3b79c94bca951834869fa86b0f798622473f991b8215748e8a3087b2d1"
+    },
+    "P018": {
+      "declaration": "UpperTheory.Comparison₂.formB",
+      "file": "Development/AutomorphicArithmetic/PrimitiveCosets/Imports.lean",
+      "start": 8,
+      "end": 19,
+      "sha256": "7e428d22efce0efd80b227098601dbf9c2bc6e24039be5c07475f955713a5d5c"
+    },
+    "P019": {
+      "declaration": "Formalism.HC.zeroFreeOn_of_tiedWin_cyc",
+      "file": "Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/TopWin.lean",
+      "start": 90,
+      "end": 93,
+      "sha256": "36d8faaaa8fcf358a1250ed36e10632ee8b47b989ceb420a88bee1f0a36fc443"
+    },
+    "P021": {
+      "declaration": "Formalism.LFunctionChainParameters.WeightedSlopeBounds.each_unit_bound_statement",
+      "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LevelOfCongruence.lean",
+      "start": 175,
+      "end": 197,
+      "sha256": "efab74dec4a4927817a21e5bf9d65a49006c760fb4191db5373926aeed2c5d78"
+    },
+    "P022": {
+      "declaration": "Deduction.landau_window",
+      "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindow.lean",
+      "start": 83,
+      "end": 166,
+      "sha256": "104676d2ea110702c4c1586024ad2de75dc99d166c78548b85da61ba7d36c00d"
+    },
+    "P023": {
+      "declaration": "Deduction.zeroFree_of_rpow_window",
+      "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ZeroFreeOfRpowWindow.lean",
+      "start": 11,
+      "end": 14,
+      "sha256": "3b6b55af7f0e73ce4bec45738805bc20ab3e4dde5c2f5b9e57843a3f2f0d5d1d"
+    },
+    "B02": {
+      "declaration": "UpperTheory.Gal.Int.Geo.geoOne_holds",
+      "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/GeometricFlagBases/WeightOneGeometricRealization.lean",
+      "start": 11,
+      "end": 11,
+      "sha256": "6eeab17acb7aed46a009daee7b235d382d38d39b57d52888f09be39fd5878ea3"
+    },
+    "B05": {
+      "declaration": "UpperTheory.Top.shape_closed_link_n_of_green",
+      "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopShape.lean",
+      "start": 33,
+      "end": 55,
+      "sha256": "67cd6a960ebf7fb51c4d08387215973751664c95458069aadd7cd6cfb7d065c1"
+    },
+    "B07": {
+      "declaration": "UpperTheory.Top.supplyChi",
+      "file": "Development/AutomorphicArithmetic/CharacterBoxes/SupplyChi.lean",
+      "start": 8,
+      "end": 16,
+      "sha256": "3802f3f332e6c3e3325ad9b7016e8d050001a204984bd21c05f59b93b9de2e22"
+    },
+    "B08": {
+      "declaration": "UpperTheory.Comparison₂.core_gm",
+      "file": "Development/AutomorphicArithmetic/PrimitiveCosets/CoreGm.lean",
+      "start": 12,
+      "end": 74,
+      "sha256": "b73760a18d5253b23d291914c3579cfc2125b0864ba945c9fffe6f1260fb8394"
+    },
+    "B09": {
+      "declaration": "Deduction.ch_core",
+      "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean",
+      "start": 343,
+      "end": 442,
+      "sha256": "1c0b4be1f96d1fb59d5b7e4901b2036613b4f74c11d405016ffa5cf7b975ea56"
+    },
+    "B10": {
+      "declaration": "Deduction.ch_top",
+      "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChTop.lean",
+      "start": 37,
+      "end": 72,
+      "sha256": "4d71f0cccac3ac250ed97d70beb0d18c902b9639ccde0f4c5b31c38a26f724fd"
+    },
+    "T02": {
+      "declaration": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+      "start": 44,
+      "end": 68,
+      "sha256": "7c64a85613593761729e25e8e59316e93e4566b0495623843333ac8a5102d27e"
+    },
+    "D561": {
+      "declaration": "Deduction.CharacterBalanceMoves.core",
+      "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean",
+      "start": 283,
+      "end": 338,
+      "sha256": "a2527ea0437b7e8bd11ed4cc2589fa3ff9c61fb3430254faa376637873cb8453"
+    },
+    "D575": {
+      "declaration": "GlobalTheory.GreenBridge.green_of_regular",
+      "file": "Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/SumRangeEqRoots.lean",
+      "start": 225,
+      "end": 304,
+      "sha256": "bf88f05c856ea17023e795b5f4927ca92a35971bd50f00ca4ed56ad8505d16f7"
+    },
+    "N415": {
+      "declaration": "Formalism.HermitianLattices.Ext.PrimesInProgressions.pnt_progressions_relative_weak_holds",
+      "file": "Formalism/GL3MeanSquares/GenusMeanAsymptotics/JacobiCharacterSums/PNTFinal.lean",
+      "start": 22,
+      "end": 24,
+      "sha256": "c1b14461fcc557f7621c3ebefec70f3ad9783f5a12554be3a5584000c308462b"
+    },
+    "V4-COND": {
+      "declaration": "UpperTheory.Top.zero_free_all_of_green_v_win",
+      "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean",
+      "start": 12,
+      "end": 15,
+      "sha256": "5e975b2462270fb38d695e966d3ce6bb6f409b715ddc3302ba807422a5925e41"
+    },
+    "V": {
+      "declaration": "UpperTheory.Top.VVle, VAt, VWinAt and VWin",
+      "file": "Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean",
+      "start": 12,
+      "end": 49,
+      "sha256": "b5a098ce305cd2cdc5f5c94da0337f463f90381f099994d3f6e97fca2a01d961"
+    },
+    "HOST": {
+      "declaration": "HostExW",
+      "file": "Development/AbelianVarietyTheory/Definitions/GlobalTwisting/ThinScalesIffHostBound.lean",
+      "start": 118,
+      "end": 125,
+      "sha256": "44708d0b440b30a7afb1e8a0261619a37619393d93b8501e62cc4cb229e78b37"
+    },
+    "FRAME": {
+      "declaration": "Host",
+      "file": "Formalism/LocalRingCardinality/DataHost.lean",
+      "start": 39,
+      "end": 98,
+      "sha256": "c26ea186b368ff043e71df0fadc13c232e6af55d250dac0c67adbc1c9a608e7c"
+    },
+    "REQ": {
+      "declaration": "UpperTheory.Top.FReq.req and GChi",
+      "file": "Development/AutomorphicArithmetic/CharacterBoxes/Supply.lean",
+      "start": 16,
+      "end": 45,
+      "sha256": "da12a407c5f522608938922524ee779800c7876a5e595eac5770eac4d211433b"
+    },
+    "PAIRS": {
+      "declaration": "UpperTheory.Top.winPairs",
+      "file": "Development/AutomorphicArithmetic/CharacterBoxes/WinPairs.lean",
+      "start": 5,
+      "end": 37,
+      "sha256": "e84adf02cd6697d0e0db64b0e2336816bf0f08a7d6e1fa74b7153e9a007d7c0e"
+    },
+    "WINS": {
+      "declaration": "UpperTheory.Top.winPairs (rescaling)",
+      "file": "Development/AutomorphicArithmetic/CharacterBoxes/WinPairs.lean",
+      "start": 34,
+      "end": 73,
+      "sha256": "ffb2bbf1cfa717f7b178f3bd69b32c4d69cb6c56ee7045166b79bbd099d371b9"
+    },
+    "F": {
+      "declaration": "GlobalTheory.Fc.HypsAlt",
+      "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/Hyps.lean",
+      "start": 22,
+      "end": 90,
+      "sha256": "a06d22400ea580ca4c23cce1498fc880d05096b95425bb66ca0507d7c014026a"
+    },
+    "GREEN": {
+      "declaration": "GLq.Green",
+      "file": "Development/AbelianVarietyTheory/Definitions/NonGaloisDescent/LabelDatum.lean",
+      "start": 108,
+      "end": 112,
+      "sha256": "670f190056b6b713ca5a389cba41de0beb7a1f8f2d2323f196a5b1a9f16e40ca"
+    },
+    "EXP": {
+      "declaration": "UpperTheory.Comparison₂.core_gm",
+      "file": "Development/AutomorphicArithmetic/PrimitiveCosets/CoreGm.lean",
+      "start": 12,
+      "end": 25,
+      "sha256": "2843c2a6becd4b5be98368893c3313150ca10b4747198aa1baa6bc73765e2e94"
+    },
+    "LINK": {
+      "declaration": "LinkGLOBAL specialization to indices 2, 0",
+      "file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/LinkGl.lean",
+      "start": 15,
+      "end": 29,
+      "sha256": "bb0035b92399ae8001814192126e2c17063bf50fa609999ff07b93a3b4187dba"
+    },
+    "FAMILY": {
+      "declaration": "UpperTheory.Comparison₂.level_family",
+      "file": "Development/AutomorphicArithmetic/PrimitiveCosets/LevelFamily.lean",
+      "start": 41,
+      "end": 52,
+      "sha256": "a8c61bf86dabe55ae3618016d6f8cc5bf77f5a2c65b4d018e2e166d2df66e99d"
+    },
+    "WEIGHTS": {
+      "declaration": "Deduction.CharFamily",
+      "file": "Development/AutomorphicArithmetic/DedekindLFunctions/CharFamily.lean",
+      "start": 24,
+      "end": 36,
+      "sha256": "68e4280a9d43540143d844988055837be8751fd5e529a02c23403d3cc7d61588"
+    },
+    "POLE": {
+      "declaration": "Deduction.PoleData",
+      "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauZeroFreeCriterion.lean",
+      "start": 15,
+      "end": 25,
+      "sha256": "2be55ea592e24a5f02422e699a48c53bc688a52e6f08d4c1261cfc9466ccb943"
+    },
+    "BOUNDARY": {
+      "declaration": "Deduction.lemmaL",
+      "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/lemmaL.lean",
+      "start": 13,
+      "end": 22,
+      "sha256": "2caf90513ea86ccb9c5e06c53b84ccd4d07217b8c76bd4049247b7da2995bc72"
+    },
+    "BALANCE": {
+      "declaration": "Deduction.ch_balance",
+      "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChBalance.lean",
+      "start": 200,
+      "end": 202,
+      "sha256": "2cf6c1d082bce4e50692c39c67456e0b12e629fde5756d650aad9b10e1e92dd0"
+    },
+    "GOALS": {
+      "declaration": "five theorem exports",
+      "file": "Main.lean",
+      "start": 4,
+      "end": 12,
+      "sha256": "68fc9bfd30faeb6cad8fac94bb68cd1d6f5bc715a0fd8dd21500cc119e66ac22"
+    },
+    "DEFS": {
+      "declaration": "RiemannZetaZerosOnLine and the three Dirichlet predicates",
+      "file": "Statements.lean",
+      "start": 3,
+      "end": 16,
+      "sha256": "241dc462a6863878767c392dfa018fb7a2c93eeb939aa49a9b708ba559ab15bb"
+    },
+    "ROW-CALL": {
+      "declaration": "UpperTheory.FinalTheorems.everyCharacter_of_row and everyCharacter",
+      "file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+      "start": 6,
+      "end": 11,
+      "sha256": "c86619faef1c195c6d5e36e94fc798f9ce59c04df2b5c16945d91690c61ad3d9"
+    }
+  },
+  "items": [
+    {
+      "id": "A1",
+      "report_lines": [
+        40,
+        42
+      ],
+      "finding": "misleading simplification",
+      "disposition": "applied and checked in the revised edition",
+      "resolution": "The V bound supplies the host request. The diagram and orientation show V preceding the host and reaching the common family through that request.",
+      "lean": [
+        "B07",
+        "HOST",
+        "REQ",
+        "V",
+        "PAIRS",
+        "P015"
+      ],
+      "locations": [
+        "docs/proof-at-a-glance.md",
+        "docs/ko/proof-at-a-glance.md",
+        "data/glance_guide.json"
+      ]
+    },
+    {
+      "id": "A2",
+      "report_lines": [
+        44,
+        45
+      ],
+      "finding": "misleading simplification",
+      "disposition": "applied and checked in the revised edition",
+      "resolution": "The abstract identifies Dirichlet L-functions as built from periodic arithmetic weights. It locates fluctuations in the excess of a separate weighted prime-power count.",
+      "lean": [
+        "DEFS",
+        "WEIGHTS",
+        "BALANCE"
+      ],
+      "locations": [
+        "editions/v0.1.0/paper_v8.pdf §1"
+      ]
+    },
+    {
+      "id": "A3",
+      "report_lines": [
+        47,
+        48
+      ],
+      "finding": "misleading simplification",
+      "disposition": "applied and checked in the revised edition",
+      "resolution": "The guide calls the input Green’s assertion and explains the open comparison with the published formula. The typed Green predicate is an explicit premise at P015.",
+      "lean": [
+        "GREEN",
+        "P015",
+        "D575"
+      ],
+      "locations": [
+        "docs/proof-at-a-glance.md",
+        "docs/ko/proof-at-a-glance.md",
+        "data/glance_guide.json"
+      ]
+    },
+    {
+      "id": "A4",
+      "report_lines": [
+        50,
+        51
+      ],
+      "finding": "misleading simplification",
+      "disposition": "applied and checked in the revised edition",
+      "resolution": "Choosing the number of columns near the square root balances the normalized error terms. The normalization does not choose the width.",
+      "lean": [
+        "B09",
+        "B10",
+        "EXP"
+      ],
+      "locations": [
+        "docs/proof-at-a-glance.md",
+        "docs/ko/proof-at-a-glance.md",
+        "data/glance_guide.json"
+      ]
+    },
+    {
+      "id": "A5",
+      "report_lines": [
+        53,
+        54
+      ],
+      "finding": "misleading simplification",
+      "disposition": "applied and checked in the revised edition",
+      "resolution": "The four named chain blocks total 183,316 weighted lines (1.92%). V and F account for 4,565,893 (47.73%). The two residual blocks together hold 4,817,836 (50.36%). Only the printed role of the chain blocks is attributed to them. P013 itself takes the upstream Galois-row premise; the final wrapper supplies it separately.",
+      "lean": [
+        "P013",
+        "T02",
+        "ROW-CALL"
+      ],
+      "locations": [
+        "editions/v0.1.0/paper_v8.pdf §1",
+        "data/coverage_blocks.json"
+      ]
+    },
+    {
+      "id": "A6",
+      "report_lines": [
+        58,
+        58
+      ],
+      "finding": "imprecise but acceptable",
+      "disposition": "applied and checked in the revised edition",
+      "resolution": "The host is a record carrying a number field, additional arithmetic data and a frame. Its witness may depend on the scale.",
+      "lean": [
+        "HOST",
+        "FRAME",
+        "B07"
+      ],
+      "locations": [
+        "docs/proof-at-a-glance.md",
+        "docs/ko/proof-at-a-glance.md",
+        "data/glance_guide.json"
+      ]
+    },
+    {
+      "id": "A7",
+      "report_lines": [
+        60,
+        60
+      ],
+      "finding": "imprecise but acceptable",
+      "disposition": "applied and checked in the revised edition",
+      "resolution": "The construction chooses an auxiliary prime pair. The host may include other level primes.",
+      "lean": [
+        "FRAME",
+        "V",
+        "PAIRS"
+      ],
+      "locations": [
+        "docs/proof-at-a-glance.md",
+        "docs/ko/proof-at-a-glance.md",
+        "data/glance_guide.json"
+      ]
+    },
+    {
+      "id": "A8",
+      "report_lines": [
+        62,
+        62
+      ],
+      "finding": "imprecise but acceptable",
+      "disposition": "applied and checked in the revised edition",
+      "resolution": "A single F record contains a family class and a selection. The conditions on selected data apply to this same choice. The record also contains fields independent of that selection; no universal dependence on it is claimed.",
+      "lean": [
+        "F",
+        "T02",
+        "P015"
+      ],
+      "locations": [
+        "docs/proof-at-a-glance.md",
+        "docs/ko/proof-at-a-glance.md",
+        "data/glance_guide.json"
+      ]
+    },
+    {
+      "id": "A9",
+      "report_lines": [
+        64,
+        64
+      ],
+      "finding": "imprecise but acceptable",
+      "disposition": "applied and checked in the revised edition",
+      "resolution": "V bounds a weighted sum of finite local kernel lengths with an exponential budget. The later near-square-root bound concerns a different, analytic quantity.",
+      "lean": [
+        "V",
+        "B07",
+        "P017"
+      ],
+      "locations": [
+        "docs/proof-at-a-glance.md",
+        "docs/ko/proof-at-a-glance.md",
+        "data/glance_guide.json"
+      ]
+    },
+    {
+      "id": "A10",
+      "report_lines": [
+        66,
+        66
+      ],
+      "finding": "imprecise but acceptable",
+      "disposition": "applied and checked in the revised edition",
+      "resolution": "Distinguish V’s square window from the power-3/2 windows used in the prime bound. The intervening construction rescales.",
+      "lean": [
+        "V",
+        "PAIRS",
+        "WINS",
+        "P018"
+      ],
+      "locations": [
+        "docs/proof-at-a-glance.md",
+        "docs/ko/proof-at-a-glance.md",
+        "data/glance_guide.json"
+      ]
+    },
+    {
+      "id": "A11",
+      "report_lines": [
+        68,
+        68
+      ],
+      "finding": "imprecise but acceptable",
+      "disposition": "applied and checked in the revised edition",
+      "resolution": "A family contains several characters with positive weights. The pole argument uses this positivity when contributions coincide.",
+      "lean": [
+        "FAMILY",
+        "WEIGHTS",
+        "POLE",
+        "BOUNDARY"
+      ],
+      "locations": [
+        "docs/proof-at-a-glance.md",
+        "docs/ko/proof-at-a-glance.md",
+        "data/glance_guide.json"
+      ]
+    },
+    {
+      "id": "B1",
+      "report_lines": [
+        80,
+        83
+      ],
+      "finding": "proposed rewrite",
+      "disposition": "adapted and checked in the revised edition",
+      "resolution": "Introduce the scale-dependent host, auxiliary pair, and compatibility with later estimates.",
+      "lean": [
+        "B07",
+        "HOST",
+        "FRAME"
+      ],
+      "locations": [
+        "docs/proof-at-a-glance.md",
+        "docs/ko/proof-at-a-glance.md",
+        "data/glance_guide.json",
+        "editions/v0.1.0/paper_v8.pdf §2"
+      ]
+    },
+    {
+      "id": "B2",
+      "report_lines": [
+        85,
+        88
+      ],
+      "finding": "proposed rewrite",
+      "disposition": "adapted and checked in the revised edition",
+      "resolution": "State V’s interval and quantifier order and the bounds on weighted kernel lengths.",
+      "lean": [
+        "V",
+        "B07"
+      ],
+      "locations": [
+        "docs/proof-at-a-glance.md",
+        "docs/ko/proof-at-a-glance.md",
+        "data/glance_guide.json",
+        "editions/v0.1.0/paper_v8.pdf §2"
+      ]
+    },
+    {
+      "id": "B3",
+      "report_lines": [
+        90,
+        93
+      ],
+      "finding": "proposed rewrite",
+      "disposition": "adapted and checked in the revised edition",
+      "resolution": "Describe a single record whose geometric requirements refer to one selection.",
+      "lean": [
+        "F",
+        "T02"
+      ],
+      "locations": [
+        "docs/proof-at-a-glance.md",
+        "docs/ko/proof-at-a-glance.md",
+        "data/glance_guide.json",
+        "editions/v0.1.0/paper_v8.pdf §2"
+      ]
+    },
+    {
+      "id": "B4",
+      "report_lines": [
+        95,
+        98
+      ],
+      "finding": "proposed rewrite",
+      "disposition": "adapted and checked in the revised edition",
+      "resolution": "Identify the common family, the three formal inputs, and the additional decomposition in the paper.",
+      "lean": [
+        "P015",
+        "GREEN",
+        "F"
+      ],
+      "locations": [
+        "docs/proof-at-a-glance.md",
+        "docs/ko/proof-at-a-glance.md",
+        "data/glance_guide.json",
+        "editions/v0.1.0/paper_v8.pdf §2"
+      ]
+    },
+    {
+      "id": "B5",
+      "report_lines": [
+        100,
+        103
+      ],
+      "finding": "proposed rewrite",
+      "disposition": "adapted and checked in the revised edition",
+      "resolution": "Distinguish the exact prime–character identity from the separate lattice estimate.",
+      "lean": [
+        "BALANCE",
+        "D561",
+        "B09",
+        "B10"
+      ],
+      "locations": [
+        "docs/proof-at-a-glance.md",
+        "docs/ko/proof-at-a-glance.md",
+        "data/glance_guide.json",
+        "editions/v0.1.0/paper_v8.pdf §2"
+      ]
+    },
+    {
+      "id": "B6",
+      "report_lines": [
+        105,
+        108
+      ],
+      "finding": "proposed rewrite",
+      "disposition": "adapted and checked in the revised edition",
+      "resolution": "Explain the square-root choice, the specialized exponent and the arbitrarily distant rescaled intervals.",
+      "lean": [
+        "EXP",
+        "LINK",
+        "B08",
+        "P017",
+        "WINS"
+      ],
+      "locations": [
+        "docs/proof-at-a-glance.md",
+        "docs/ko/proof-at-a-glance.md",
+        "data/glance_guide.json",
+        "editions/v0.1.0/paper_v8.pdf §2"
+      ]
+    },
+    {
+      "id": "B7",
+      "report_lines": [
+        110,
+        113
+      ],
+      "finding": "proposed rewrite",
+      "disposition": "adapted and checked in the revised edition",
+      "resolution": "Separate the open-strip contradiction using an upper bound throughout entire intervals from classical boundary nonvanishing.",
+      "lean": [
+        "P018",
+        "P022",
+        "P023",
+        "BOUNDARY",
+        "POLE",
+        "WEIGHTS"
+      ],
+      "locations": [
+        "docs/proof-at-a-glance.md",
+        "docs/ko/proof-at-a-glance.md",
+        "data/glance_guide.json",
+        "editions/v0.1.0/paper_v8.pdf §2"
+      ]
+    },
+    {
+      "id": "B8",
+      "report_lines": [
+        115,
+        118
+      ],
+      "finding": "proposed rewrite",
+      "disposition": "adapted and checked in the revised edition",
+      "resolution": "Distinguish primitive and induced characters, reflection, zeta at modulus one and the principal exception.",
+      "lean": [
+        "P003",
+        "P004",
+        "P005",
+        "P007",
+        "GOALS",
+        "DEFS"
+      ],
+      "locations": [
+        "docs/proof-at-a-glance.md",
+        "docs/ko/proof-at-a-glance.md",
+        "data/glance_guide.json",
+        "editions/v0.1.0/paper_v8.pdf §2"
+      ]
+    },
+    {
+      "id": "B-abstract",
+      "report_lines": [
+        120,
+        122
+      ],
+      "finding": "proposed rewrite",
+      "disposition": "adapted and checked in the revised edition",
+      "resolution": "Use plain wording and a precise conditional statement. Identify Alpöge, the type of deduction, AI drafting and the absence of any human check.",
+      "lean": [
+        "GOALS",
+        "DEFS",
+        "P015"
+      ],
+      "locations": [
+        "editions/v0.1.0/paper_v8.pdf abstract"
+      ]
+    },
+    {
+      "id": "B-introduction",
+      "report_lines": [
+        124,
+        128
+      ],
+      "finding": "proposed rewrite",
+      "disposition": "adapted and checked in the revised edition",
+      "resolution": "Describe fluctuations in the weighted count above its main term, separate classical boundary results, and explain the project’s present scope.",
+      "lean": [
+        "BALANCE",
+        "P022",
+        "P023",
+        "BOUNDARY"
+      ],
+      "locations": [
+        "editions/v0.1.0/paper_v8.pdf §1"
+      ]
+    },
+    {
+      "id": "C1",
+      "report_lines": [
+        162,
+        164
+      ],
+      "finding": "required coverage correction",
+      "disposition": "applied and checked in the revised edition",
+      "resolution": "P017 is locally Full under its assumptions. Two list-A arguments, A8 and A10, are graded Outlined in D561. The row has 1,431 outline-at-head lines, of which 1,161 are assigned to D561.",
+      "lean": [
+        "P017",
+        "D561",
+        "BALANCE"
+      ],
+      "locations": [
+        "data/coverage_blocks.json",
+        "docs/coverage.md",
+        "docs/ko/coverage.md",
+        "units/D561.yaml",
+        "editions/v0.1.0/paper_v8.pdf §1"
+      ]
+    },
+    {
+      "id": "C2",
+      "report_lines": [
+        166,
+        168
+      ],
+      "finding": "required coverage correction",
+      "disposition": "applied and checked in the revised edition",
+      "resolution": "Step 8 is an outline. Its six cited atlas units are graded Outlined. In step 5 the inequality is written, whereas the balance identity is recorded in the D561 outline.",
+      "lean": [
+        "P001",
+        "P002",
+        "P003",
+        "P004",
+        "P005",
+        "P007",
+        "D561",
+        "B09",
+        "B10"
+      ],
+      "locations": [
+        "docs/proof-at-a-glance.md",
+        "docs/ko/proof-at-a-glance.md",
+        "data/glance_guide.json",
+        "data/coverage_blocks.json"
+      ]
+    },
+    {
+      "id": "C3",
+      "report_lines": [
+        170,
+        173
+      ],
+      "finding": "required coverage correction",
+      "disposition": "applied and checked in the revised edition",
+      "resolution": "The three proportions refer to the grade of the nearest indexed head. The host’s 11,065 Full-at-head lines fall under N415. The residual at P010 (1,412,535) and P012 (1,118,051) forms most of the assembly row.",
+      "lean": [
+        "N415",
+        "P010",
+        "P012"
+      ],
+      "locations": [
+        "data/coverage_blocks.json",
+        "docs/coverage.md",
+        "docs/ko/coverage.md",
+        "units/N415.yaml"
+      ]
+    },
+    {
+      "id": "C4",
+      "report_lines": [
+        175,
+        176
+      ],
+      "finding": "required coverage correction",
+      "disposition": "applied and checked in the revised edition",
+      "resolution": "Task 20 tests the seven identified transitions and their stated inputs. V4-COND is Outlined; this check does not establish completeness of the assumptions or the composite implication.",
+      "lean": [
+        "V4-COND"
+      ],
+      "locations": [
+        "data/coverage_tasks.json",
+        "docs/coverage.md",
+        "docs/ko/coverage.md",
+        "units/V4-COND.steps.yaml"
+      ]
+    },
+    {
+      "id": "C5",
+      "report_lines": [
+        178,
+        180
+      ],
+      "finding": "required coverage correction",
+      "disposition": "applied and checked in the revised edition",
+      "resolution": "Tasks 7 and 15 examine D561 steps. Their title/scope disclose the Outline grade and absence of a statement comparison.",
+      "lean": [
+        "D561",
+        "BALANCE"
+      ],
+      "locations": [
+        "data/coverage_tasks.json",
+        "docs/coverage.md",
+        "docs/ko/coverage.md",
+        "units/D561.steps.yaml"
+      ]
+    },
+    {
+      "id": "C6",
+      "report_lines": [
+        182,
+        183
+      ],
+      "finding": "required coverage correction",
+      "disposition": "applied and checked in the revised edition",
+      "resolution": "Task 19 selects S1–S6 of P022. S7–S10 give parallel passages from another note. Checks of selected steps concern the same conditional local argument.",
+      "lean": [
+        "P022"
+      ],
+      "locations": [
+        "data/coverage_tasks.json",
+        "docs/coverage.md",
+        "docs/ko/coverage.md",
+        "units/P022.steps.yaml"
+      ]
+    },
+    {
+      "id": "C7",
+      "report_lines": [
+        185,
+        186
+      ],
+      "finding": "required coverage correction",
+      "disposition": "applied and checked in the revised edition",
+      "resolution": "The Full local criterion and its formal translation take matching window bounds as input. S1 separately identifies the argument still needed at the relevant level, exponent and character.",
+      "lean": [
+        "FAMILY",
+        "P018",
+        "P022",
+        "P023"
+      ],
+      "locations": [
+        "data/coverage_gaps.json",
+        "docs/coverage.md",
+        "docs/ko/coverage.md"
+      ]
+    },
+    {
+      "id": "C8",
+      "report_lines": [
+        188,
+        188
+      ],
+      "finding": "required coverage correction",
+      "disposition": "applied and checked in the revised edition",
+      "resolution": "Cite the two browsable pillar maps by filename and use singular page notation when both endpoints coincide.",
+      "lean": [
+        "P013",
+        "T02"
+      ],
+      "locations": [
+        "data/coverage_blocks.json",
+        "docs/coverage.md",
+        "docs/ko/coverage.md",
+        "pillars/V.md",
+        "pillars/F.md"
+      ]
+    },
+    {
+      "id": "D1",
+      "report_lines": [
+        203,
+        204
+      ],
+      "finding": "required framing correction",
+      "disposition": "applied and checked in the revised edition",
+      "resolution": "The first page identifies the AI drafting/comparison and explicitly states that the arguments have not received a human check.",
+      "lean": [],
+      "locations": [
+        "editions/v0.1.0/paper_v8.pdf p.1"
+      ]
+    },
+    {
+      "id": "D2",
+      "report_lines": [
+        206,
+        207
+      ],
+      "finding": "required framing correction",
+      "disposition": "applied and checked in the revised edition",
+      "resolution": "Current front matter and generated unit guidance include the author in the absence of a human mathematical check. Historical reviewed originals retain the wording of their edition.",
+      "lean": [],
+      "locations": [
+        "editions/v0.1.0/paper_v8.pdf §§1 and AI statement",
+        "editions/v0.1.0/blueprint_v13c.pdf sheet ii",
+        "units/P001.md"
+      ]
+    },
+    {
+      "id": "D3",
+      "report_lines": [
+        209,
+        210
+      ],
+      "finding": "required framing correction",
+      "disposition": "applied and checked in the revised edition",
+      "resolution": "The abstract states that this paper presents a conditional theorem and outlines its deduction; it attributes the formal proof to Alpöge.",
+      "lean": [
+        "P015",
+        "GOALS",
+        "DEFS"
+      ],
+      "locations": [
+        "editions/v0.1.0/paper_v8.pdf abstract"
+      ]
+    },
+    {
+      "id": "D4",
+      "report_lines": [
+        212,
+        213
+      ],
+      "finding": "required framing correction",
+      "disposition": "applied and checked in the revised edition",
+      "resolution": "The paper attributes source comparison to AI and distinguishes it from the externally reported kernel runs.",
+      "lean": [],
+      "locations": [
+        "editions/v0.1.0/paper_v8.pdf §1.3",
+        "sources/kernel-audit.md",
+        "sources/freshness.md",
+        "sources/registry.json"
+      ]
+    },
+    {
+      "id": "D5",
+      "report_lines": [
+        215,
+        216
+      ],
+      "finding": "required framing correction",
+      "disposition": "applied and checked in the revised edition",
+      "resolution": "The introduction explicitly reports zero human checks in describing the atlas.",
+      "lean": [],
+      "locations": [
+        "editions/v0.1.0/paper_v8.pdf §1",
+        "PROGRESS.md"
+      ]
+    },
+    {
+      "id": "D6",
+      "report_lines": [
+        218,
+        219
+      ],
+      "finding": "required framing correction",
+      "disposition": "applied and checked in the revised edition",
+      "resolution": "The status glossary identifies AI as the agent that compared published locators.",
+      "lean": [],
+      "locations": [
+        "editions/v0.1.0/paper_v8.pdf §1"
+      ]
+    },
+    {
+      "id": "D7",
+      "report_lines": [
+        221,
+        221
+      ],
+      "finding": "required framing correction",
+      "disposition": "applied and checked in the revised edition",
+      "resolution": "The glossary defines the Full historical label as local written exposition under stated assumptions and identifies the absence of human checking.",
+      "lean": [],
+      "locations": [
+        "editions/v0.1.0/paper_v8.pdf §1"
+      ]
+    },
+    {
+      "id": "D8",
+      "report_lines": [
+        223,
+        224
+      ],
+      "finding": "required framing correction",
+      "disposition": "applied and checked in the revised edition",
+      "resolution": "The two later passages identify the R23 reviewer as AI, preserving the historical edition and scope of its judgment.",
+      "lean": [],
+      "locations": [
+        "editions/v0.1.0/paper_v8.pdf conditional chain and architecture"
+      ]
+    },
+    {
+      "id": "D9",
+      "report_lines": [
+        226,
+        226
+      ],
+      "finding": "required framing correction",
+      "disposition": "applied and checked in the revised edition",
+      "resolution": "The closing of the guide calls these the five conclusions.",
+      "lean": [
+        "GOALS",
+        "DEFS"
+      ],
+      "locations": [
+        "docs/proof-at-a-glance.md",
+        "docs/ko/proof-at-a-glance.md",
+        "data/glance_guide.json",
+        "editions/v0.1.0/paper_v8.pdf §2"
+      ]
+    },
+    {
+      "id": "D10",
+      "report_lines": [
+        232,
+        237
+      ],
+      "finding": "required framing correction",
+      "disposition": "applied and checked in the revised edition",
+      "resolution": "The blueprint labels specialist reading units as AI-drafted and AI-graded, identifies the 22 C, 8 CC, and 25 partial units, and distinguishes the historical count of 29.",
+      "lean": [],
+      "locations": [
+        "editions/v0.1.0/blueprint_v13c.pdf editorial front"
+      ]
+    },
+    {
+      "id": "D11",
+      "report_lines": [
+        239,
+        239
+      ],
+      "finding": "required framing correction",
+      "disposition": "applied and checked in the revised edition",
+      "resolution": "The historical fourteen of twenty are described as graded complete under their assumptions by AI. Parent grades are explicitly attributed.",
+      "lean": [],
+      "locations": [
+        "editions/v0.1.0/blueprint_v13c.pdf editorial front"
+      ]
+    },
+    {
+      "id": "D12",
+      "report_lines": [
+        241,
+        241
+      ],
+      "finding": "required framing correction",
+      "disposition": "applied and checked in the revised edition",
+      "resolution": "The blueprint uses reader-facing checkpoint wording for its list of passages.",
+      "lean": [],
+      "locations": [
+        "editions/v0.1.0/blueprint_v13c.pdf editorial front"
+      ]
+    },
+    {
+      "id": "D13",
+      "report_lines": [
+        243,
+        243
+      ],
+      "finding": "required framing correction",
+      "disposition": "applied and checked in the revised edition",
+      "resolution": "The cover addresses AI authorship, human-check status and the scope of the project in prose. The cover uses ordinary editorial prose instead of reinstating the former banner.",
+      "lean": [],
+      "locations": [
+        "editions/v0.1.0/blueprint_v13c.pdf cover"
+      ]
+    },
+    {
+      "id": "D14",
+      "report_lines": [
+        245,
+        245
+      ],
+      "finding": "required framing correction",
+      "disposition": "applied and checked in the revised edition",
+      "resolution": "The second front sheet explicitly includes the editor/author in the absence of human checking.",
+      "lean": [],
+      "locations": [
+        "editions/v0.1.0/blueprint_v13c.pdf sheet ii"
+      ]
+    },
+    {
+      "id": "E1",
+      "report_lines": [
+        253,
+        253
+      ],
+      "finding": "consistency correction",
+      "disposition": "applied and checked in the revised edition",
+      "resolution": "The manuscript’s earlier archived page reports a 23 November 2026 23:45 UTC update. The later atlas snapshot was captured on 24 November at 05:25 UTC. These are distinct archived byte records.",
+      "lean": [],
+      "locations": [
+        "editions/v0.1.0/paper_v8.pdf §1.3",
+        "sources/kernel-audit.md",
+        "sources/freshness.md",
+        "sources/registry.json"
+      ]
+    },
+    {
+      "id": "E2",
+      "report_lines": [
+        255,
+        255
+      ],
+      "finding": "consistency correction",
+      "disposition": "applied and checked in the revised edition",
+      "resolution": "Use named destinations of the distributed current edition for all seven scale-table readings. Each displayed interval is inclusive.",
+      "lean": [
+        "P013",
+        "T02",
+        "B07",
+        "B05",
+        "P017",
+        "P022",
+        "P003"
+      ],
+      "locations": [
+        "docs/proof-at-a-glance.md",
+        "docs/ko/proof-at-a-glance.md",
+        "data/glance_guide.json",
+        "data/paper_v8_coverage_labels.json"
+      ]
+    },
+    {
+      "id": "E3",
+      "report_lines": [
+        257,
+        257
+      ],
+      "finding": "consistency correction",
+      "disposition": "applied with a verified distinction",
+      "resolution": "Align readings for Landau, P017, V and F with the assigned task intervals. B02’s mathematical heading begins on the earlier sheet and its Lean pointer/grade continues on the next sheet. The locator must cover the displayed reading. Both endpoints were confirmed at physical pages 72–73 in v8.",
+      "lean": [
+        "P022",
+        "P017",
+        "P013",
+        "T02",
+        "B02"
+      ],
+      "locations": [
+        "data/coverage_blocks.json",
+        "docs/coverage.md",
+        "docs/ko/coverage.md",
+        "data/coverage_tasks.json",
+        "data/paper_v8_coverage_labels.json"
+      ]
+    },
+    {
+      "id": "E4",
+      "report_lines": [
+        259,
+        259
+      ],
+      "finding": "consistency correction",
+      "disposition": "applied and checked in the revised edition",
+      "resolution": "P022’s 863 dominated lines are a single declaration measure. The disjoint Landau block groups P018, P019, P022 and P023 and weighs 2,115.",
+      "lean": [
+        "P018",
+        "P019",
+        "P022",
+        "P023"
+      ],
+      "locations": [
+        "docs/proof-at-a-glance.md",
+        "docs/ko/proof-at-a-glance.md",
+        "data/glance_guide.json",
+        "data/coverage_blocks.json"
+      ]
+    },
+    {
+      "id": "E5",
+      "report_lines": [
+        261,
+        261
+      ],
+      "finding": "consistency correction",
+      "disposition": "applied and checked in the revised edition",
+      "resolution": "Distinguish description of a block or its supply map, the grade of the indexed head and local written deductions. Make future parts conditional proposals in both documents.",
+      "lean": [
+        "P015",
+        "P012",
+        "P013",
+        "T02"
+      ],
+      "locations": [
+        "data/coverage_blocks.json",
+        "docs/coverage.md",
+        "docs/ko/coverage.md",
+        "editions/v0.1.0/blueprint_v13c.pdf programme",
+        "editions/v0.1.0/paper_v8.pdf architecture"
+      ]
+    },
+    {
+      "id": "E6",
+      "report_lines": [
+        263,
+        263
+      ],
+      "finding": "consistency correction",
+      "disposition": "applied and checked in the revised edition",
+      "resolution": "Use a single name for the blueprint’s 55 specialist reading units and distinguish that inventory from the 55 atlas units with Full local writing.",
+      "lean": [],
+      "locations": [
+        "editions/v0.1.0/paper_v8.pdf §1.3",
+        "editions/v0.1.0/blueprint_v13c.pdf editorial front",
+        "PROGRESS.md"
+      ]
+    }
+  ],
+  "current_edition_evidence": {
+    "paper_sha256": "3f920d59446741c0ce2a81252525336e5831c95a315879d4b410b86234726bd1",
+    "blueprint_sha256": "834038cc53f42f9254c075238d3a154592d356c34ba5afe78e7a1da2ccf70b82",
+    "paper_pages": 432,
+    "blueprint_pages": 955,
+    "guide_pages": [
+      5,
+      8
+    ],
+    "paper_reading_labels_checked": 68,
+    "unit_reading_labels_checked": 193,
+    "tasks_checked": 20,
+    "selected_step_ids_checked": 42,
+    "named_lean_spans": 45,
+    "atlas_unit_cards_checked": 217,
+    "new_human_checks": 0
+  }
+}

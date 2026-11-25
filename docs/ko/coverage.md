@@ -10,17 +10,17 @@ AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
 
 | 부분 | 역할 | Lean 선언 | 코어 줄 | 서술 위치 | 서술 수준 | AI 검토 | 사람 확인 |
 |---|---|---|---|---|---|---|---|
-| 란다우 창 판정 | 긴 구간의 한쪽 상계로 영점을 배제한다. | `Deduction.landau_window` · `UpperTheory.Comparison₂.formB` · `Formalism.HC.zeroFreeOn_of_tiedWin_cyc` | 2,115 | 창 가정 아래 완전한 국소 유도. · [논문 97–100쪽 (4쪽)](../../editions/v0.1.0/paper_v7.pdf#page=97) | 명시한 전제 아래 전체 논증 · 가장 가까운 선언에 전체 논증 2,115 | P022: R20 v0, 국소 완전 유도 승인. | 0 |
-| 창 부등식과 목록 A | 열 가지 국소 함의를 써 가중 소수합을 제한한다. | `UpperTheory.Comparison₂.level_gm_le_on_family_scales` · `UpperTheory.Comparison₂.core_gm` | 3,365 | 목록 A 및 명시된 격자 입력을 전제로 한 완전한 국소 유도. · [논문 25–34쪽 (10쪽)](../../editions/v0.1.0/paper_v7.pdf#page=25) | 명시한 전제 아래 전체 논증 · 가장 가까운 선언에 전체 논증 1,924 · 색인 선언에 개요 1,431 · 색인 선언에 진술만 10 | P017: R20 v0, 진술 일치. A 블록 전체 검토 없음. | 0 |
-| 호스트 구성과 목록 B | 추정식을 비교할 보조 소수와 수체를 선택한다. | `UpperTheory.Top.supplyChi` · `UpperTheory.Top.zero_free_all_of_green_v_win` | 31,622 | 호스트 공급의 개요와 개별 국소 유도. · [논문 40–44쪽 (5쪽)](../../editions/v0.1.0/paper_v7.pdf#page=40) | 개요 · 가장 가까운 선언에 전체 논증 11,065 · 색인 선언에 개요 323 · 색인 선언에 진술만 20,234 | B07: R21 v1, 진술 일치. | 0 |
-| 기하 비교와 목록 C | 같은 호환 가능한 족에 기하·산술 추정식을 놓는다. | `UpperTheory.Top.shape_closed_link_n_of_green` · `GlobalTheory.Top.closed_family_admissible_twist_link_alt` | 146,214 | 목록 C 아래 결합 비교의 개요. · [논문 43–44쪽 (2쪽)](../../editions/v0.1.0/paper_v7.pdf#page=43) | 개요 · 가장 가까운 선언에 전체 논증 72 · 색인 선언에 개요 129,507 · 색인 선언에 진술만 16,635 | B05: 블록 전체 판정 없음. | 0 |
-| 셀머 공급자 V와 처음 두 단계 | 국소 핵의 가중 길이를 제어하는 공통 구간을 공급한다. | `UpperTheory.One.vwin_of_row` · `UpperTheory.One.Join.automorphic_window_of_inputs` | 886,201 | 공급자의 두 단계 지도. 전체 유도는 서술되지 않았다. · [논문 45쪽 (1쪽)](../../editions/v0.1.0/paper_v7.pdf#page=45) · [두 단계 공급자 지도, 1–9쪽](../../pillars/V.md) | 최상위 지도만 · 가장 가까운 선언에 전체 논증 2,065 · 색인 선언에 개요 653,247 · 색인 선언에 진술만 230,889 | P013: R20 v0, 진술 일치. V 전체 판정 없음. | 0 |
-| 정부호 측 공급자 F와 처음 두 단계 | 정부호 측의 호환 가능한 족 부류와 선택을 공급한다. | `UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound` · `GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt` | 3,679,692 | 공급자의 두 단계 지도. 전체 유도는 서술되지 않았다. · [논문 49쪽 (1쪽)](../../editions/v0.1.0/paper_v7.pdf#page=49) · [두 단계 공급자 지도, 1–11쪽](../../pillars/F.md) | 최상위 지도만 · 가장 가까운 선언에 전체 논증 13,564 · 색인 선언에 개요 3,460,914 · 색인 선언에 진술만 205,214 | T02: R21 v1, 진술 일치. F 전체 판정 없음. | 0 |
-| 최상위 조립과 공개 결론 | 최상위 함의로 모든 지표와 제타 함수에 대한 결론에 이른다. | `allChi` · `UpperTheory.FinalTheorems.everyCharacter_of_row` · `LFunction_ne_zero_of_half_lt_re` | 2,586,981 | 조건부 조립과 결론 비교. 의존 입력은 개별 검토가 필요하다. · [논문 50–53쪽 (4쪽)](../../editions/v0.1.0/paper_v7.pdf#page=50) · [논문 90–91쪽 (2쪽)](../../editions/v0.1.0/paper_v7.pdf#page=90) | 개요 · 가장 가까운 선언에 전체 논증 126 · 색인 선언에 개요 2,586,855 | P011과 P003: R20 v0, 진술 대조만. | 0 |
-| 나머지 색인 위치 | 표현과 비교의 입력을 포함해 다른 모든 국소·공유 작업을 모은다. | `UpperTheory.Gal.Int.Geo.geoOne_holds` · `SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt` | 2,230,855 | 수준이 서로 다른 국소 기록. 블록 전체의 유도는 서술되지 않았다. · [논문 72쪽 (1쪽)](../../editions/v0.1.0/paper_v7.pdf#page=72) · [논문 80쪽 (1쪽)](../../editions/v0.1.0/paper_v7.pdf#page=80) | 국소 서술 수준이 섞임 · 가장 가까운 선언에 전체 논증 633 · 색인 선언에 개요 1,492,618 · 색인 선언에 진술만 737,604 | 나머지 전체에 대한 판정 없음. | 0 |
+| 란다우 창 판정 | 긴 구간의 한쪽 상계로 영점을 배제한다. | `Deduction.landau_window` · `UpperTheory.Comparison₂.formB` · `Formalism.HC.zeroFreeOn_of_tiedWin_cyc` | 2,115 | 창 가정 아래 완전한 국소 유도. · [논문 §C.4, 96–100쪽 (5쪽)](../../editions/v0.1.0/paper_v8.pdf#page=96) | 명시한 전제 아래 전체 논증 · 가장 가까운 선언에 전체 논증 2,115 | P022: R20 v0, 국소 완전 유도 승인. | 0 |
+| 창 부등식과 목록 A | 열 가지 국소 함의를 써 가중 소수합을 제한한다. | `UpperTheory.Comparison₂.level_gm_le_on_family_scales` · `UpperTheory.Comparison₂.core_gm` | 3,365 | 창 부등식과 국소 해석 논증. · [논문 §5.1, 25–35쪽 (11쪽)](../../editions/v0.1.0/paper_v8.pdf#page=25) | P017에는 목록 A와 명시된 격자 입력을 전제로 전체 논증이 있다. 목록 A의 서술 수준은 항목마다 다르며, A8과 A10(D561)은 개요다. · 가장 가까운 선언에 전체 논증 1,924 · 색인 선언에 개요 1,431 · 색인 선언에 진술만 10 | P017: R20 v0, 진술 일치. A 블록 전체 검토 없음. | 0 |
+| 호스트 구성과 목록 B | 추정식을 비교할 보조 소수와 수체를 선택한다. | `UpperTheory.Top.supplyChi` · `UpperTheory.Top.zero_free_all_of_green_v_win` | 31,622 | 호스트 공급의 개요와 개별 국소 유도. · [논문 40–44쪽 (5쪽)](../../editions/v0.1.0/paper_v8.pdf#page=40) | 개요 · 가장 가까운 선언에 전체 논증 11,065 · 색인 선언에 개요 323 · 색인 선언에 진술만 20,234 | B07: R21 v1, 진술 일치. | 0 |
+| 기하 비교와 목록 C | 같은 호환 가능한 족에 기하·산술 추정식을 놓는다. | `UpperTheory.Top.shape_closed_link_n_of_green` · `GlobalTheory.Top.closed_family_admissible_twist_link_alt` | 146,214 | 목록 C 아래 결합 비교의 개요. · [논문 43–44쪽 (2쪽)](../../editions/v0.1.0/paper_v8.pdf#page=43) | 개요 · 가장 가까운 선언에 전체 논증 72 · 색인 선언에 개요 129,507 · 색인 선언에 진술만 16,635 | B05: 블록 전체 판정 없음. | 0 |
+| 셀머 공급자 V와 처음 두 단계 | 국소 핵의 가중 길이를 제어하는 공통 구간을 공급한다. | `UpperTheory.One.vwin_of_row` · `UpperTheory.One.Join.automorphic_window_of_inputs` | 886,201 | 공급자의 두 단계 지도. 전체 유도는 서술되지 않았다. · [논문 §5.4, 45–49쪽 (5쪽)](../../editions/v0.1.0/paper_v8.pdf#page=45) · [두 단계 공급자 지도 (`pillars/V.md`)](../../pillars/V.md) | 최상위 지도만 · 가장 가까운 선언에 전체 논증 2,065 · 색인 선언에 개요 653,247 · 색인 선언에 진술만 230,889 | P013: R20 v0, 진술 일치. V 전체 판정 없음. | 0 |
+| 정부호 측 공급자 F와 처음 두 단계 | 정부호 측의 호환 가능한 족 부류와 선택을 공급한다. | `UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound` · `GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt` | 3,679,692 | 공급자의 두 단계 지도. 전체 유도는 서술되지 않았다. · [논문 §5.5, 49–50쪽 (2쪽)](../../editions/v0.1.0/paper_v8.pdf#page=49) · [두 단계 공급자 지도 (`pillars/F.md`)](../../pillars/F.md) | 최상위 지도만 · 가장 가까운 선언에 전체 논증 13,564 · 색인 선언에 개요 3,460,914 · 색인 선언에 진술만 205,214 | T02: R21 v1, 진술 일치. F 전체 판정 없음. | 0 |
+| 최상위 조립과 공개 결론 | 모든 지표와 제타 함수로 옮긴다. 이 행의 대부분은 P010과 P012의 내부 의존성에 배정된 잔여 구역이다. | `allChi` · `UpperTheory.FinalTheorems.everyCharacter_of_row` · `LFunction_ne_zero_of_half_lt_re` | 2,586,981 | 조건부 조립과 결론 비교. 의존 입력은 개별 검토가 필요하다. · [논문 50–53쪽 (4쪽)](../../editions/v0.1.0/paper_v8.pdf#page=50) · [논문 90–91쪽 (2쪽)](../../editions/v0.1.0/paper_v8.pdf#page=90) | 개요 · 가장 가까운 선언에 전체 논증 126 · 색인 선언에 개요 2,586,855 | P011과 P003: R20 v0, 진술 대조만. | 0 |
+| 나머지 색인 위치 | 표현과 비교의 입력을 포함해 다른 모든 국소·공유 작업을 모은다. | `UpperTheory.Gal.Int.Geo.geoOne_holds` · `SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt` | 2,230,855 | 수준이 서로 다른 국소 기록. 블록 전체의 유도는 서술되지 않았다. · [논문 72–73쪽 (2쪽)](../../editions/v0.1.0/paper_v8.pdf#page=72) · [논문 80쪽 (1쪽)](../../editions/v0.1.0/paper_v8.pdf#page=80) | 국소 서술 수준이 섞임 · 가장 가까운 선언에 전체 논증 633 · 색인 선언에 개요 1,492,618 · 색인 선언에 진술만 737,604 | 나머지 전체에 대한 판정 없음. | 0 |
 | **합계** | | | **9,567,045** | | | | |
 
-가장 가까운 색인 선언을 기준으로 코어 위치의 0.3299%에는 전제 아래 완전한 국소 논증, 87.0164%에는 개요, 12.6537%에는 진술만 있다. 모든 위치에 색인 선언이 있어 미배정 위치는 없다. V·F의 최상위 지도는 공급자를 설명하며 전체 유도를 주지 않는다. 이 비율로 내부 증명 전체에서 서술된 몫을 알 수 없다. 전체 서면 유도가 없는 주요 입력 중 가장 큰 것은 F(3,679,692)와 V(886,201)다.
+각 코어 줄을 그 위에서 가장 가까운 색인 선언에 배정한다. 전체 줄의 0.3299%가 연결된 선언에는 국소 전체 논증이 있다. 87.0164%가 연결된 선언에는 개요가, 12.6537%가 연결된 선언에는 진술만 있다. 이 수치는 색인 선언의 서술 수준을 나타내며 그 아래 각 줄에 대한 서면 증명의 비율은 측정하지 않는다. 전체 논증 등급에 배정된 가장 큰 구역은 호스트 행의 N415 아래 11,065줄이다. N415 자체의 두 쪽 논증은 인용한 추정을 적용한다. V와 F의 최상위 지도는 블록의 설명이고 색인 선언 자체의 별도 등급은 아니다. 전체 서면 유도가 없는 주요 입력 중 가장 큰 것은 F(3,679,692 코어 줄)와 V(886,201 코어 줄)다.
 
 ![가장 가까운 색인 명제의 서술 수준별 위치](../../data/coverage_levels_ko.svg)
 
@@ -50,7 +50,7 @@ AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
 
 **남는 부분.** 진술의 일치는 공개 정리의 증명을 제공하지 않는다.
 
-[논문 §C, 90쪽 (1쪽)](../../editions/v0.1.0/paper_v7.pdf#page=90) · 확인표의 전체 5단계 중 0단계 · [P001 확인표](../../units/P001.check.md).
+[논문 §C, 90쪽 (1쪽)](../../editions/v0.1.0/paper_v8.pdf#page=90) · 확인표의 전체 5단계 중 0단계 · [P001 확인표](../../units/P001.check.md).
 
 `riemannHypothesis` · `Main.lean:4–4`
 
@@ -68,7 +68,7 @@ AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
 
 **남는 부분.** 진술의 일치는 공개 정리의 증명을 제공하지 않는다.
 
-[논문 §C, 90쪽 (1쪽)](../../editions/v0.1.0/paper_v7.pdf#page=90) · 확인표의 전체 3단계 중 0단계 · [P002 확인표](../../units/P002.check.md).
+[논문 §C, 90쪽 (1쪽)](../../editions/v0.1.0/paper_v8.pdf#page=90) · 확인표의 전체 3단계 중 0단계 · [P002 확인표](../../units/P002.check.md).
 
 `riemannZeta_eq_zero_re` · `Main.lean:6–6`
 
@@ -86,7 +86,7 @@ AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
 
 **남는 부분.** 진술의 일치는 공개 정리의 증명을 제공하지 않는다.
 
-[논문 §C, 91쪽 (1쪽)](../../editions/v0.1.0/paper_v7.pdf#page=91) · 확인표의 전체 4단계 중 0단계 · [P003 확인표](../../units/P003.check.md).
+[논문 §C, 91쪽 (1쪽)](../../editions/v0.1.0/paper_v8.pdf#page=91) · 확인표의 전체 4단계 중 0단계 · [P003 확인표](../../units/P003.check.md).
 
 `LFunction_ne_zero_of_half_lt_re` · `Main.lean:8–8`
 
@@ -104,7 +104,7 @@ AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
 
 **남는 부분.** 진술의 일치는 공개 정리의 증명을 제공하지 않는다.
 
-[논문 §C, 91쪽 (1쪽)](../../editions/v0.1.0/paper_v7.pdf#page=91) · 확인표의 전체 3단계 중 0단계 · [P004 확인표](../../units/P004.check.md).
+[논문 §C, 91쪽 (1쪽)](../../editions/v0.1.0/paper_v8.pdf#page=91) · 확인표의 전체 3단계 중 0단계 · [P004 확인표](../../units/P004.check.md).
 
 `LFunction_eq_zero_re` · `Main.lean:10–10`
 
@@ -122,7 +122,7 @@ AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
 
 **남는 부분.** 진술의 일치는 공개 정리의 증명을 제공하지 않는다.
 
-[논문 §C, 91쪽 (1쪽)](../../editions/v0.1.0/paper_v7.pdf#page=91) · 확인표의 전체 3단계 중 0단계 · [P005 확인표](../../units/P005.check.md).
+[논문 §C, 91쪽 (1쪽)](../../editions/v0.1.0/paper_v8.pdf#page=91) · 확인표의 전체 3단계 중 0단계 · [P005 확인표](../../units/P005.check.md).
 
 `LFunction_eq_zero_re_of_isPrimitive` · `Main.lean:12–12`
 
@@ -140,7 +140,7 @@ AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
 
 **남는 부분.** 족이나 엡실론을 바꾸며 같은 하한을 쓰려면 별도의 상계가 필요하다.
 
-[논문 §5.1, 27쪽 (1쪽)](../../editions/v0.1.0/paper_v7.pdf#page=27) · 확인표의 전체 2단계 중 2단계 (S1, S2) · [D550 확인표](../../units/D550.check.md).
+[논문 §5.1, 27쪽 (1쪽)](../../editions/v0.1.0/paper_v8.pdf#page=27) · 확인표의 전체 2단계 중 2단계 (S1, S2) · [D550 확인표](../../units/D550.check.md).
 
 `Formalism.LFunctionChainParameters.LErr.large_x_eventually` · `Formalism/SizeWindowBrackets/ChainSlopeWindows/SubThreeMulLogTwoLe.lean:319–329`
 
@@ -154,9 +154,9 @@ AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
 
 **확인되는 범위.** 폭을 고정하면 재색인 전후의 합이 같다.
 
-**남는 부분.** 지표에 따라 폭이 달라지면 A9와 추가 추정이 필요하다.
+**남는 부분.** 지표에 따라 폭이 달라지면 A9와 추가 추정이 필요하다. D561은 개요이며 진술을 Lean 선언과 대조한 기록은 아직 없다.
 
-[논문 §5.1, 31–32쪽 (2쪽)](../../editions/v0.1.0/paper_v7.pdf#page=31) · 확인표의 전체 4단계 중 1단계 (S4) · [D561 확인표](../../units/D561.check.md).
+[논문 §5.1, 31–32쪽 (2쪽)](../../editions/v0.1.0/paper_v8.pdf#page=31) · 확인표의 전체 4단계 중 1단계 (S4) · [D561 확인표](../../units/D561.check.md).
 
 `Deduction.CharacterBalanceMoves.th_le` · `Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean:75–152`
 
@@ -172,7 +172,7 @@ AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
 
 **남는 부분.** 평가점의 변화는 별도 과제 A4의 범위다.
 
-[논문 §5.1, 29–30쪽 (2쪽)](../../editions/v0.1.0/paper_v7.pdf#page=29) · 확인표의 전체 4단계 중 3단계 (S1, S2, S3) · [D562 확인표](../../units/D562.check.md).
+[논문 §5.1, 29–30쪽 (2쪽)](../../editions/v0.1.0/paper_v8.pdf#page=29) · 확인표의 전체 4단계 중 3단계 (S1, S2, S3) · [D562 확인표](../../units/D562.check.md).
 
 `Formalism.LFunctionChainParameters.ThickSetMeanBounds.lipschitz_weight_all` · `Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean:957–964`
 
@@ -188,7 +188,7 @@ AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
 
 **남는 부분.** 평활화 폭의 변화는 이 비교와 별도로 확인해야 한다.
 
-[논문 §5.1, 29–30쪽 (2쪽)](../../editions/v0.1.0/paper_v7.pdf#page=29) · 확인표의 전체 4단계 중 1단계 (S4) · [D562 확인표](../../units/D562.check.md).
+[논문 §5.1, 29–30쪽 (2쪽)](../../editions/v0.1.0/paper_v8.pdf#page=29) · 확인표의 전체 4단계 중 1단계 (S4) · [D562 확인표](../../units/D562.check.md).
 
 `Formalism.LFunctionChainParameters.ThickSetMeanBounds.derivative_integral_all` · `Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean:966–981`
 
@@ -204,7 +204,7 @@ AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
 
 **남는 부분.** 호스트의 존재는 여전히 입력이다.
 
-[논문 §5.1, 32–33쪽 (2쪽)](../../editions/v0.1.0/paper_v7.pdf#page=32) · 확인표의 전체 3단계 중 3단계 (S1, S2, S3) · [D547 확인표](../../units/D547.check.md).
+[논문 §5.1, 32–33쪽 (2쪽)](../../editions/v0.1.0/paper_v8.pdf#page=32) · 확인표의 전체 3단계 중 3단계 (S1, S2, S3) · [D547 확인표](../../units/D547.check.md).
 
 `UpperTheory.Comparison₂.gmA_eq` · `Development/AutomorphicArithmetic/PrimitiveCosets/GmAEq.lean:61–149`
 
@@ -220,7 +220,7 @@ AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
 
 **남는 부분.** 제외한 주파수의 보정량은 다음 비교에서 다룬다.
 
-[논문 §5.1, 33–34쪽 (2쪽)](../../editions/v0.1.0/paper_v7.pdf#page=33) · 확인표의 전체 3단계 중 3단계 (S1, S2, S3) · [D548 확인표](../../units/D548.check.md).
+[논문 §5.1, 33–34쪽 (2쪽)](../../editions/v0.1.0/paper_v8.pdf#page=33) · 확인표의 전체 3단계 중 3단계 (S1, S2, S3) · [D548 확인표](../../units/D548.check.md).
 
 `UpperTheory.Comparison₂.charsA` · `Development/AutomorphicArithmetic/PrimitiveCosets/charsA.lean:80–125`
 
@@ -236,7 +236,7 @@ AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
 
 **남는 부분.** 점별 입력과 그러한 호스트의 존재는 가정으로 남는다.
 
-[논문 §5.1, 34쪽 (1쪽)](../../editions/v0.1.0/paper_v7.pdf#page=34) · 확인표의 전체 2단계 중 2단계 (S1, S2) · [D549 확인표](../../units/D549.check.md).
+[논문 §5.1, 34쪽 (1쪽)](../../editions/v0.1.0/paper_v8.pdf#page=34) · 확인표의 전체 2단계 중 2단계 (S1, S2) · [D549 확인표](../../units/D549.check.md).
 
 `UpperTheory.Comparison₂.sigA_le` · `Development/AutomorphicArithmetic/PrimitiveCosets/SigALe.lean:38–60`
 
@@ -252,7 +252,7 @@ AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
 
 **남는 부분.** 가정한 창의 존재와 전체 소수합 상계는 다른 과제가 필요하다.
 
-[논문 §5.1, 27–28쪽 (2쪽)](../../editions/v0.1.0/paper_v7.pdf#page=27) · 확인표의 전체 5단계 중 5단계 (S1, S2, S3, S4, S5) · [D567 확인표](../../units/D567.check.md).
+[논문 §5.1, 27–28쪽 (2쪽)](../../editions/v0.1.0/paper_v8.pdf#page=27) · 확인표의 전체 5단계 중 5단계 (S1, S2, S3, S4, S5) · [D567 확인표](../../units/D567.check.md).
 
 `Formalism.LFunctionChainParameters.LChain.errX5at_le` · `Formalism/SizeWindowBrackets/ChainSlopeWindows/PChain.lean:613–672`
 
@@ -268,11 +268,11 @@ AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
 
 **남는 부분.** 적합한 호스트의 구성과 V의 증명은 별개다.
 
-[논문 §5.1, 30쪽 (1쪽)](../../editions/v0.1.0/paper_v7.pdf#page=30) · 확인표의 전체 7단계 중 3단계 (S5, S6, S7) · [D014 확인표](../../units/D014.check.md).
+[논문 §5.1, 30쪽 (1쪽)](../../editions/v0.1.0/paper_v8.pdf#page=30) · 확인표의 전체 7단계 중 3단계 (S5, S6, S7) · [D014 확인표](../../units/D014.check.md).
 
 `UpperTheory.Comparison₂.hostFactsS` · `Development/AutomorphicArithmetic/PrimitiveCosets/hostFactsS.lean:127–136`
 
-### 15 (A8). 소수와 지표 사이의 항등식
+### 15 (A8). 소수 합과 지표 합의 균형 등식에서 서술된 단계 확인
 
 **확인할 내용.** 일반 소수와 예외 소수의 평균을 따로 계산하고 d에서 계수 2를 관성군 크기 2로 나눈 뒤 지표별로 합한다.
 
@@ -282,9 +282,9 @@ AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
 
 **확인되는 범위.** 소수 계수에서 주항을 뺀 값이 지표 보정량과 같다.
 
-**남는 부분.** 이 보정량의 크기는 별도의 추정이 필요하다.
+**남는 부분.** 이 보정량의 크기는 별도의 추정이 필요하다. D561은 개요이며 진술을 Lean 선언과 대조한 기록은 아직 없다.
 
-[논문 §5.1, 25–27쪽 (3쪽)](../../editions/v0.1.0/paper_v7.pdf#page=25) · 확인표의 전체 4단계 중 3단계 (S1, S2, S3) · [D561 확인표](../../units/D561.check.md).
+[논문 §5.1, 25–27쪽 (3쪽)](../../editions/v0.1.0/paper_v8.pdf#page=25) · 확인표의 전체 4단계 중 3단계 (S1, S2, S3) · [D561 확인표](../../units/D561.check.md).
 
 `Deduction.ch_balance` · `Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChBalance.lean:200–260`
 
@@ -300,7 +300,7 @@ AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
 
 **남는 부분.** 명제만 대조한다. 공급자가 가정하는 갈루아 행과 V의 전체 유도는 별도의 독해 대상이다.
 
-[논문 §5.4, 45–49쪽 (5쪽)](../../editions/v0.1.0/paper_v7.pdf#page=45) · 확인표의 전체 7단계 중 0단계 · [P013 확인표](../../units/P013.check.md).
+[논문 §5.4, 45–49쪽 (5쪽)](../../editions/v0.1.0/paper_v8.pdf#page=45) · 확인표의 전체 7단계 중 0단계 · [P013 확인표](../../units/P013.check.md).
 
 `UpperTheory.One.vwin_of_row` · `Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/VwinOfRow.lean:4–5`
 
@@ -322,7 +322,7 @@ AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
 
 **남는 부분.** 진술이 일치해도 증인의 구성과 세타·공체적 입력의 유도는 남는다.
 
-[논문 §5.5, 49–50쪽 (2쪽)](../../editions/v0.1.0/paper_v7.pdf#page=49) · 확인표의 전체 2단계 중 0단계 · [T02 확인표](../../units/T02.check.md).
+[논문 §5.5, 49–50쪽 (2쪽)](../../editions/v0.1.0/paper_v8.pdf#page=49) · 확인표의 전체 2단계 중 0단계 · [T02 확인표](../../units/T02.check.md).
 
 `UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound` · `Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean:44–68`
 
@@ -340,13 +340,13 @@ AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
 
 **남는 부분.** 적합한 족의 존재와 두 지수의 구체적 값은 별도로 보여야 한다.
 
-[논문 §5.1, 25–35쪽 (11쪽)](../../editions/v0.1.0/paper_v7.pdf#page=25) · 확인표의 전체 3단계 중 3단계 (S1, S2, S3) · [P017 확인표](../../units/P017.check.md).
+[논문 §5.1, 25–35쪽 (11쪽)](../../editions/v0.1.0/paper_v8.pdf#page=25) · 확인표의 전체 3단계 중 3단계 (S1, S2, S3) · [P017 확인표](../../units/P017.check.md).
 
 `UpperTheory.Comparison₂.level_gm_le_on_family_scales` · `Development/AutomorphicArithmetic/PrimitiveCosets/LevelGmLeOnFamilyScales.lean:28–30`
 
 ### 19. 한쪽 창 조건에서 극 배제
 
-**확인할 내용.** 논문의 전개와 6단계 해석 패킷을 대조한다. 핵을 국소화하고 양쪽 꼬리를 제한한 뒤 분리된 극과 실수 극의 경우를 나누어 테일러 계수의 모순을 얻는다.
+**확인할 내용.** 논문의 전개와 6단계 해석 패킷을 대조한다. 핵을 국소화하고 양쪽 꼬리를 제한한 뒤 분리된 극과 실수 극의 경우를 나누어 테일러 계수의 모순을 얻는다. S1–S6은 하나의 완결된 설명을 이룬다. S7–S10은 같은 논증의 병행 설명이며 이번 확인 범위에서 제외한다.
 
 **가정.** 성장·변환의 연장·유수의 부호를 담은 극 자료, 0과 1 사이의 지수, 임의로 먼 곳에서 지정한 길이 전체에 성립하는 로그 창 조건을 가정한다.
 
@@ -356,7 +356,7 @@ AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
 
 **남는 부분.** 산술적 족에서 창을 구성하고 모든 지표로 옮기는 유도는 별도다.
 
-[논문 §C.4, 96–100쪽 (5쪽)](../../editions/v0.1.0/paper_v7.pdf#page=96) · 확인표의 전체 10단계 중 6단계 (S1, S2, S3, S4, S5, S6) · [P022 확인표](../../units/P022.check.md).
+[논문 §C.4, 96–100쪽 (5쪽)](../../editions/v0.1.0/paper_v8.pdf#page=96) · 확인표의 전체 10단계 중 6단계 (S1, S2, S3, S4, S5, S6) · [P022 확인표](../../units/P022.check.md).
 
 `Deduction.landau_window` · `Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindow.lean:83–166`
 
@@ -368,11 +368,11 @@ AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
 
 **선수 지식.** 셀머 자료, 격자 추정, 소수합과 디리클레 L함수.
 
-**확인되는 범위.** 열거한 전제가 모두 성립할 때 기록한 일곱 연결을 거쳐 다섯 결론이 나온다.
+**확인되는 범위.** 기록된 일곱 단계 각각이 그 단계에 명시된 입력으로부터 성립한다.
 
-**남는 부분.** V·F의 공급, 입력 목록의 증명, Lean 커널 재실행은 범위 밖이다.
+**남는 부분.** V·F의 공급, 입력 목록의 증명, Lean 커널 재실행은 범위 밖이다. 이 단위는 개요다. 긍정 판정으로 가정 목록의 완전성이나 다섯 결론 전체의 도출을 확인할 수는 없다.
 
-[논문 §5.6, 50–53쪽 (4쪽)](../../editions/v0.1.0/paper_v7.pdf#page=50) · 확인표의 전체 7단계 중 7단계 (S1, S2, S3, S4, S5, S6, S7) · [V4-COND 확인표](../../units/V4-COND.check.md).
+[논문 §5.6, 50–53쪽 (4쪽)](../../editions/v0.1.0/paper_v8.pdf#page=50) · 확인표의 전체 7단계 중 7단계 (S1, S2, S3, S4, S5, S6, S7) · [V4-COND 확인표](../../units/V4-COND.check.md).
 
 `UpperTheory.Top.zero_free_all_of_green_v_win` · `Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:12–15`
 
@@ -486,7 +486,7 @@ AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
 
 ### S1 · 해당 수준의 거듭제곱 창
 
-창에서 영점 배제까지의 기준은 국소적으로 읽을 수 있다. 조건부 논증에는 지정한 수준에서 필요한 거듭제곱 창이 공급된다는 사실도 들어간다.
+기준 자체에는 P018·P022·P023의 국소 전체 논증이 있다. 조건부 논증에서는 지정한 준위에서 필요한 거듭제곱 창을 얻을 수 있다고 여전히 가정한다.
 
 전문 분야: 해석적 정수론. 필요한 자료: 해당 수준의 족을 유도하고 같은 지수와 지표에 대해 영점 배제 기준의 모든 가정을 대조한다.
 
@@ -701,5 +701,9 @@ Mathlib이 실수부가 1 이상인 곳의 제타 함수와 디리클레 L함수
 `RiemannHypothesis` · `Mathlib/NumberTheory/LSeries/RiemannZeta.lean:185–186` · 별도 크기 미등록.
 
 ## 후속 작업의 기록 방법
+
+출발점은 EnjoyingMath 시청자들의 토론이다. Gunhee Cho의 장기 목표는 시간이 얼마나 걸리든 수학을 공부하는 학생들과 수학자들이 함께 Alpöge의 Lean 증명을 한 단계씩 손으로 검토하는 것이다. 아틀라스의 새 판본과 대시보드, 채널을 통해 진행 상황을 영어와 한국어로 전할 계획이다.
+
+지금까지 사람이 확인한 단계는 0개다. [대시보드](../../dashboard/README.md) · [EnjoyingMath](https://www.youtube.com/@enjoyingmath9346)
 
 서면 단계마다 소스와 판본이 있다. 사람 검토는 두 항목을 지정하고, 판본이 바뀌면 새로 확인한다. V를 다룰 제2부와 F를 다룰 제3부는 잠정 계획이다. [작업 계획](../../ROADMAP.md) · [판본 기록](../../data/editions.json) · [검토 기록](../../reviews/index.json)

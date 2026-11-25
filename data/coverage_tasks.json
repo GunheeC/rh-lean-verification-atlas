@@ -36,7 +36,7 @@
         "ko": "진술의 일치는 공개 정리의 증명을 제공하지 않는다."
       },
       "paper": {
-        "edition": "paper_v7",
+        "edition": "paper_v8",
         "section_label": "sec:upper-goals",
         "start_label": "pn:P001",
         "end_label": "pn:P001"
@@ -95,7 +95,7 @@
         "ko": "진술의 일치는 공개 정리의 증명을 제공하지 않는다."
       },
       "paper": {
-        "edition": "paper_v7",
+        "edition": "paper_v8",
         "section_label": "sec:upper-goals",
         "start_label": "pn:P002",
         "end_label": "pn:P002"
@@ -153,7 +153,7 @@
         "ko": "진술의 일치는 공개 정리의 증명을 제공하지 않는다."
       },
       "paper": {
-        "edition": "paper_v7",
+        "edition": "paper_v8",
         "section_label": "sec:upper-goals",
         "start_label": "pn:P003",
         "end_label": "pn:P003"
@@ -211,7 +211,7 @@
         "ko": "진술의 일치는 공개 정리의 증명을 제공하지 않는다."
       },
       "paper": {
-        "edition": "paper_v7",
+        "edition": "paper_v8",
         "section_label": "sec:upper-goals",
         "start_label": "pn:P004",
         "end_label": "pn:P004"
@@ -269,7 +269,7 @@
         "ko": "진술의 일치는 공개 정리의 증명을 제공하지 않는다."
       },
       "paper": {
-        "edition": "paper_v7",
+        "edition": "paper_v8",
         "section_label": "sec:upper-goals",
         "start_label": "pn:P005",
         "end_label": "pn:P005"
@@ -327,7 +327,7 @@
         "ko": "족이나 엡실론을 바꾸며 같은 하한을 쓰려면 별도의 상계가 필요하다."
       },
       "paper": {
-        "edition": "paper_v7",
+        "edition": "paper_v8",
         "section_label": "r23:p017",
         "start_label": "r24:d550",
         "end_label": "v5:d550-end"
@@ -377,11 +377,11 @@
         "ko": "폭을 고정하면 재색인 전후의 합이 같다."
       },
       "limit": {
-        "en": "Widths that vary with the index require A9 and further estimates.",
-        "ko": "지표에 따라 폭이 달라지면 A9와 추가 추정이 필요하다."
+        "en": "Widths that vary with the index require A9 and further estimates. D561 is an outline. Its statement has yet to be compared with the Lean declaration.",
+        "ko": "지표에 따라 폭이 달라지면 A9와 추가 추정이 필요하다. D561은 개요이며 진술을 Lean 선언과 대조한 기록은 아직 없다."
       },
       "paper": {
-        "edition": "paper_v7",
+        "edition": "paper_v8",
         "section_label": "r23:p017",
         "start_label": "r24:thick",
         "end_label": "v5:thick-end"
@@ -434,7 +434,7 @@
         "ko": "평가점의 변화는 별도 과제 A4의 범위다."
       },
       "paper": {
-        "edition": "paper_v7",
+        "edition": "paper_v8",
         "section_label": "r23:p017",
         "start_label": "r24:regular",
         "end_label": "v5:regular-end"
@@ -489,7 +489,7 @@
         "ko": "평활화 폭의 변화는 이 비교와 별도로 확인해야 한다."
       },
       "paper": {
-        "edition": "paper_v7",
+        "edition": "paper_v8",
         "section_label": "r23:p017",
         "start_label": "r24:regular",
         "end_label": "v5:regular-end"
@@ -542,7 +542,7 @@
         "ko": "호스트의 존재는 여전히 입력이다."
       },
       "paper": {
-        "edition": "paper_v7",
+        "edition": "paper_v8",
         "section_label": "r23:p017",
         "start_label": "v5:chars-start",
         "end_label": "v5:d547-end"
@@ -597,7 +597,7 @@
         "ko": "제외한 주파수의 보정량은 다음 비교에서 다룬다."
       },
       "paper": {
-        "edition": "paper_v7",
+        "edition": "paper_v8",
         "section_label": "r23:p017",
         "start_label": "v5:d547-end",
         "end_label": "v5:d548-end"
@@ -652,7 +652,7 @@
         "ko": "점별 입력과 그러한 호스트의 존재는 가정으로 남는다."
       },
       "paper": {
-        "edition": "paper_v7",
+        "edition": "paper_v8",
         "section_label": "r23:p017",
         "start_label": "v5:d548-end",
         "end_label": "v5:chars-end"
@@ -706,7 +706,7 @@
         "ko": "가정한 창의 존재와 전체 소수합 상계는 다른 과제가 필요하다."
       },
       "paper": {
-        "edition": "paper_v7",
+        "edition": "paper_v8",
         "section_label": "r23:p017",
         "start_label": "r24:d567",
         "end_label": "v5:d567-end"
@@ -763,7 +763,7 @@
         "ko": "적합한 호스트의 구성과 V의 증명은 별개다."
       },
       "paper": {
-        "edition": "paper_v7",
+        "edition": "paper_v8",
         "section_label": "r23:p017",
         "start_label": "r24:hostfacts",
         "end_label": "v5:hostfacts-end"
@@ -794,8 +794,8 @@
       "difficulty": 3,
       "unit": "D561",
       "title": {
-        "en": "Prove the prime–character balance",
-        "ko": "소수와 지표 사이의 항등식"
+        "en": "Check the written steps of the prime–character balance",
+        "ko": "소수 합과 지표 합의 균형 등식에서 서술된 단계 확인"
       },
       "assume": {
         "en": "Fix the host, its index-two subgroup, the prescribed inertia data and column weights.",
@@ -814,11 +814,11 @@
         "ko": "소수 계수에서 주항을 뺀 값이 지표 보정량과 같다."
       },
       "limit": {
-        "en": "The identity alone gives no size estimate for that correction.",
-        "ko": "이 보정량의 크기는 별도의 추정이 필요하다."
+        "en": "The identity alone gives no size estimate for that correction. D561 is an outline. Its statement has yet to be compared with the Lean declaration.",
+        "ko": "이 보정량의 크기는 별도의 추정이 필요하다. D561은 개요이며 진술을 Lean 선언과 대조한 기록은 아직 없다."
       },
       "paper": {
-        "edition": "paper_v7",
+        "edition": "paper_v8",
         "section_label": "r23:p017",
         "start_label": "r24:balance",
         "end_label": "v5:balance-end"
@@ -873,7 +873,7 @@
         "ko": "명제만 대조한다. 공급자가 가정하는 갈루아 행과 V의 전체 유도는 별도의 독해 대상이다."
       },
       "paper": {
-        "edition": "paper_v7",
+        "edition": "paper_v8",
         "section_label": "sec:r23-selmer",
         "start_label": "sec:r23-selmer",
         "end_label": "sec:r23-p012"
@@ -945,7 +945,7 @@
         "ko": "진술이 일치해도 증인의 구성과 세타·공체적 입력의 유도는 남는다."
       },
       "paper": {
-        "edition": "paper_v7",
+        "edition": "paper_v8",
         "section_label": "sec:r23-p012",
         "start_label": "sec:r23-p012",
         "end_label": "r24:synthesis"
@@ -1003,7 +1003,7 @@
         "ko": "적합한 족의 존재와 두 지수의 구체적 값은 별도로 보여야 한다."
       },
       "paper": {
-        "edition": "paper_v7",
+        "edition": "paper_v8",
         "section_label": "r23:p017",
         "start_label": "r23:family",
         "end_label": "r23:budget"
@@ -1042,8 +1042,8 @@
         "ko": "성장·변환의 연장·유수의 부호를 담은 극 자료, 0과 1 사이의 지수, 임의로 먼 곳에서 지정한 길이 전체에 성립하는 로그 창 조건을 가정한다."
       },
       "check": {
-        "en": "Check the six-step analytic packet against the manuscript: localize the kernel, bound each tail, and obtain contradictions from Taylor coefficients for the separated and the real pole cases.",
-        "ko": "논문의 전개와 6단계 해석 패킷을 대조한다. 핵을 국소화하고 양쪽 꼬리를 제한한 뒤 분리된 극과 실수 극의 경우를 나누어 테일러 계수의 모순을 얻는다."
+        "en": "Check the six-step analytic packet against the manuscript: localize the kernel, bound each tail, and obtain contradictions from Taylor coefficients for the separated and the real pole cases. Steps S1–S6 form one complete account. S7–S10 present a parallel account and are outside this check.",
+        "ko": "논문의 전개와 6단계 해석 패킷을 대조한다. 핵을 국소화하고 양쪽 꼬리를 제한한 뒤 분리된 극과 실수 극의 경우를 나누어 테일러 계수의 모순을 얻는다. S1–S6은 하나의 완결된 설명을 이룬다. S7–S10은 같은 논증의 병행 설명이며 이번 확인 범위에서 제외한다."
       },
       "background": {
         "en": "Complex analysis, Laplace transforms, meromorphic functions and residues.",
@@ -1058,7 +1058,7 @@
         "ko": "산술적 족에서 창을 구성하고 모든 지표로 옮기는 유도는 별도다."
       },
       "paper": {
-        "edition": "paper_v7",
+        "edition": "paper_v8",
         "section_label": "sec:E-landau",
         "start_label": "sec:E-landau",
         "end_label": "rem:E-landau-compare"
@@ -1108,15 +1108,15 @@
         "ko": "셀머 자료, 격자 추정, 소수합과 디리클레 L함수."
       },
       "positive": {
-        "en": "The seven recorded transitions give the five conclusions if every listed premise holds.",
-        "ko": "열거한 전제가 모두 성립할 때 기록한 일곱 연결을 거쳐 다섯 결론이 나온다."
+        "en": "Each of the seven recorded transitions is correct from the inputs it names.",
+        "ko": "기록된 일곱 단계 각각이 그 단계에 명시된 입력으로부터 성립한다."
       },
       "limit": {
-        "en": "The check does not supply V or F, prove the input lists, or re-run the Lean kernel.",
-        "ko": "V·F의 공급, 입력 목록의 증명, Lean 커널 재실행은 범위 밖이다."
+        "en": "The check does not supply V or F, prove the input lists, or re-run the Lean kernel. This unit is an outline. A positive check cannot certify that its premise list is complete or that the five conclusions follow.",
+        "ko": "V·F의 공급, 입력 목록의 증명, Lean 커널 재실행은 범위 밖이다. 이 단위는 개요다. 긍정 판정으로 가정 목록의 완전성이나 다섯 결론 전체의 도출을 확인할 수는 없다."
       },
       "paper": {
-        "edition": "paper_v7",
+        "edition": "paper_v8",
         "section_label": "r24:synthesis",
         "start_label": "r24:synthesis",
         "end_label": "v5:conclusion-end"

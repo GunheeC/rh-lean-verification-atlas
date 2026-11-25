@@ -398,8 +398,8 @@
         "ko": "해석적 정수론"
       },
       "gap": {
-        "en": "The window-to-zero-free criterion has a local reading. The conditional argument also assumes that the required power windows are available at the specified level.",
-        "ko": "창에서 영점 배제까지의 기준은 국소적으로 읽을 수 있다. 조건부 논증에는 지정한 수준에서 필요한 거듭제곱 창이 공급된다는 사실도 들어간다."
+        "en": "The criterion itself has full local written arguments in P018, P022 and P023. The conditional deduction still assumes that the required power windows are available at the specified level.",
+        "ko": "기준 자체에는 P018·P022·P023의 국소 전체 논증이 있다. 조건부 논증에서는 지정한 준위에서 필요한 거듭제곱 창을 얻을 수 있다고 여전히 가정한다."
       },
       "next": {
         "en": "Derive the level family and check all its hypotheses against the zero-free criterion for the same exponent and character.",

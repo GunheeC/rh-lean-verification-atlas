@@ -57,12 +57,13 @@
       "readings": [
         {
           "document": "paper",
-          "start_label": "pn:P022",
+          "start_label": "sec:E-landau",
           "end_label": "rem:E-landau-compare",
           "title": {
             "en": "Landau theorem and proof",
             "ko": "란다우 정리와 증명"
-          }
+          },
+          "section_label": "sec:E-landau"
         }
       ],
       "review": {
@@ -208,20 +209,21 @@
         "statement_only": 10,
         "not_covered": 0
       },
-      "level": "full",
+      "level": "mixed",
       "writing": {
-        "en": "Full local deduction under list A and the stated lattice inputs.",
-        "ko": "목록 A 및 명시된 격자 입력을 전제로 한 완전한 국소 유도."
+        "en": "Window inequality and local analytic arguments.",
+        "ko": "창 부등식과 국소 해석 논증."
       },
       "readings": [
         {
           "document": "paper",
-          "start_label": "r23:p017",
-          "end_label": "v5:chars-end",
+          "start_label": "r23:family",
+          "end_label": "r23:budget",
           "title": {
             "en": "Window inequality and its local analytic deductions",
             "ko": "창 부등식과 국소 해석 유도"
-          }
+          },
+          "section_label": "r23:p017"
         }
       ],
       "review": {
@@ -400,7 +402,11 @@
           "lines": 51,
           "level": "full"
         }
-      ]
+      ],
+      "exposition_detail": {
+        "en": "P017 has a Full argument under list A and the stated lattice inputs. List A has mixed grades: A8 and A10 (D561) are outlines.",
+        "ko": "P017에는 목록 A와 명시된 격자 입력을 전제로 전체 논증이 있다. 목록 A의 서술 수준은 항목마다 다르며, A8과 A10(D561)은 개요다."
+      }
     },
     {
       "id": "host",
@@ -682,23 +688,24 @@
         {
           "document": "paper",
           "start_label": "sec:r23-selmer",
-          "end_label": "sec:r23-selmer",
+          "end_label": "sec:r23-p012",
           "title": {
             "en": "Statement and start of the Selmer route",
             "ko": "셀머 경로 진술과 시작"
-          }
+          },
+          "section_label": "sec:r23-selmer"
         },
         {
           "document": "atlas",
           "path": "pillars/V.md",
-          "pages": [
-            1,
-            9
-          ],
           "title": {
             "en": "Two-level supplier map",
             "ko": "두 단계 공급자 지도"
-          }
+          },
+          "print_edition_pages": [
+            1,
+            9
+          ]
         }
       ],
       "review": {
@@ -1168,23 +1175,24 @@
         {
           "document": "paper",
           "start_label": "sec:r23-p012",
-          "end_label": "sec:r23-p012",
+          "end_label": "r24:synthesis",
           "title": {
             "en": "Statement and start of the definite-side route",
             "ko": "정부호 측 경로 진술과 시작"
-          }
+          },
+          "section_label": "sec:r23-p012"
         },
         {
           "document": "atlas",
           "path": "pillars/F.md",
-          "pages": [
-            1,
-            11
-          ],
           "title": {
             "en": "Two-level supplier map",
             "ko": "두 단계 공급자 지도"
-          }
+          },
+          "print_edition_pages": [
+            1,
+            11
+          ]
         }
       ],
       "review": {
@@ -1474,8 +1482,8 @@
         "ko": "최상위 조립과 공개 결론"
       },
       "role": {
-        "en": "Use the top-level implications to reach all characters and zeta.",
-        "ko": "최상위 함의로 모든 지표와 제타 함수에 대한 결론에 이른다."
+        "en": "Reach all characters and zeta. Most of this row is the internal dependency residual of P010 and P012.",
+        "ko": "모든 지표와 제타 함수로 옮긴다. 이 행의 대부분은 P010과 P012의 내부 의존성에 배정된 잔여 구역이다."
       },
       "entries": [
         {
@@ -1658,7 +1666,7 @@
         {
           "document": "paper",
           "start_label": "sub:B02",
-          "end_label": "sub:B02",
+          "end_label": "v8:source-B02",
           "title": {
             "en": "One representation input only",
             "ko": "표현 입력 한 가지"
@@ -2054,8 +2062,8 @@
     }
   ],
   "summary": {
-    "en": "At the nearest indexed head, 0.3299% of core positions have a Full local argument, 87.0164% have an outline and 12.6537% have a statement only. Every position has a head, so none is unassigned. Top-level maps for V and F describe suppliers without deriving them. These percentages cannot determine what fraction of the interior has a written proof. The largest named inputs still lacking a written derivation are F (3,679,692) and V (886,201).",
-    "ko": "가장 가까운 색인 선언을 기준으로 코어 위치의 0.3299%에는 전제 아래 완전한 국소 논증, 87.0164%에는 개요, 12.6537%에는 진술만 있다. 모든 위치에 색인 선언이 있어 미배정 위치는 없다. V·F의 최상위 지도는 공급자를 설명하며 전체 유도를 주지 않는다. 이 비율로 내부 증명 전체에서 서술된 몫을 알 수 없다. 전체 서면 유도가 없는 주요 입력 중 가장 큰 것은 F(3,679,692)와 V(886,201)다."
+    "en": "Each core line is assigned to the nearest indexed statement above it. For 0.3299% of lines, that statement has a Full local argument. For 87.0164% it has an outline, and for 12.6537% it has only a statement. These percentages describe the indexed statements. They do not measure written proofs of the lines beneath them. The largest Full contribution, 11,065 lines in the host row, belongs to N415; its two-page argument applies a cited estimate. V and F have top-level maps as block descriptions. Neither has a separate top-level-map grade at an indexed head. The largest named inputs without full written derivations are F (3,679,692 core lines) and V (886,201).",
+    "ko": "각 코어 줄을 그 위에서 가장 가까운 색인 선언에 배정한다. 전체 줄의 0.3299%가 연결된 선언에는 국소 전체 논증이 있다. 87.0164%가 연결된 선언에는 개요가, 12.6537%가 연결된 선언에는 진술만 있다. 이 수치는 색인 선언의 서술 수준을 나타내며 그 아래 각 줄에 대한 서면 증명의 비율은 측정하지 않는다. 전체 논증 등급에 배정된 가장 큰 구역은 호스트 행의 N415 아래 11,065줄이다. N415 자체의 두 쪽 논증은 인용한 추정을 적용한다. V와 F의 최상위 지도는 블록의 설명이고 색인 선언 자체의 별도 등급은 아니다. 전체 서면 유도가 없는 주요 입력 중 가장 큰 것은 F(3,679,692 코어 줄)와 V(886,201 코어 줄)다."
   },
   "citations": {
     "distinct_physical": 13015,

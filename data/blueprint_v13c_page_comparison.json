@@ -7,7 +7,7 @@
     "missing_target_fields": "Omitted target hashes equal the corresponding source hashes. All source fields were additionally checked against the v13a comparison."
   },
   "source_sha256": "d9dcb73f10a5829865f9246409d886c16cb1d2087717adf7758f154257a28af4",
-  "target_sha256": "6108e2468ad4284ca3012dd7f91cfd983b7d791809c0f6b523eb8b53f5bb211e",
+  "target_sha256": "834038cc53f42f9254c075238d3a154592d356c34ba5afe78e7a1da2ccf70b82",
   "front_pages": 11,
   "old_physical_pages": 944,
   "identical_pages": 942,

@@ -8,7 +8,7 @@ Levent Alpöge’s Lean development states the Riemann hypothesis for zeta and f
 
 ## The documents
 
-Gunhee Cho’s paper, *Toward a human verification of Alpöge's Lean proof of the Riemann hypothesis, I: the conditional chain from Selmer windows to zero-free regions*, maps 775 Lean statements and follows the conditional deduction from the Selmer window to zero-free regions. The companion blueprint builds up the 20 original inputs from definitions and lemmas. With each edition, the atlas links steps in both documents to Lean declarations and review records so readers can check them by hand. AI systems drafted the texts under Gunhee Cho’s direction and cross-checked passages against the Lean source. No step has a human check. [Paper v7](editions/v0.1.0/paper_v7.pdf) · [The Alpöge formalization of RH and GRH: an informal blueprint (Blueprint v13b)](editions/v0.1.0/blueprint_v13b.pdf) · [Editions and fingerprints](data/editions.json)
+Gunhee Cho’s paper, *Toward a human verification of Alpöge's Lean proof of the Riemann hypothesis, I: the conditional chain from Selmer windows to zero-free regions*, maps 775 Lean statements and outlines the conditional deduction from Selmer windows to zero-free regions. It writes out selected steps in full. The companion blueprint builds up the 20 original inputs from definitions and lemmas. With each edition, the atlas links steps in both documents to Lean declarations and review records so readers can check them by hand. AI systems drafted the texts under Gunhee Cho’s direction and cross-checked passages against the Lean source. No human, the author included, has yet checked the arguments. [Paper v8](editions/v0.1.0/paper_v8.pdf) · [The Alpöge formalization of RH and GRH: an informal blueprint (Blueprint v13c)](editions/v0.1.0/blueprint_v13c.pdf) · [Editions and fingerprints](data/editions.json)
 
 Pick a statement from Levent Alpöge’s Lean development. A reading unit covers one claim or several related claims. It lists their hypotheses and Lean declarations. It links to a written argument when one is available. A recorded review identifies the text and the claim it examined. The external kernel audit concerns the compiled Lean development. [Reading progress](PROGRESS.md) · [Next units and human reading queue](ROADMAP.md) · [Contributors](AUTHORS.md)
 
@@ -76,6 +76,13 @@ Sorted by steps, note length and prerequisites. [Full volunteer queue and writin
 | L4 | Full argument with a derivation beyond an appeal to an input. Named current checks cover all steps and the statement comparison | 0 |
 
 “Full” means the argument is written under the assumptions shown on its page. An outline still has intermediate reasoning to supply. A statement-only unit gives the claim and its source. Each grade records the evidence for that unit. The dashboard keeps AI review, independent corroboration and human checks in separate columns. These evidence levels are not cumulative prerequisites. L4 concerns the local written argument under its stated inputs. It gives no conclusion about V, F or RH. For each L4, read the number of readers, whether one is the maintainer and their declared AI assistance. Substantial assistance does not qualify as independent human reading. A second reader other than the maintainer or a text revision that supersedes the target can close a dispute. Reader names are self-declared and the repository does not verify identity. [Grade evidence](reviews/README.md) · [Named-check rules](signoffs/README.md)
+
+## Who maintains this
+
+Gunhee Cho maintains the atlas. His affiliations are the Department of Mathematics, Texas State University (`wvx17@txstate.edu`), and TranscendQ (`geonhee@transcendq.com`).
+The views and any errors are the author's. [Author and background reading](AUTHORS.md)
+
+Building on continuing discussions in the [EnjoyingMath](https://www.youtube.com/@enjoyingmath9346) channel community, Cho aims to work with mathematics students and mathematicians to check Alpöge’s Lean proof by hand, one step at a time. He intends to pursue that work for as long as it takes. He plans to publish progress updates in English and Korean through atlas editions, the progress dashboard and the channel. The atlas currently records zero human checks. [Progress](PROGRESS.md)
 
 ## How to cite
 

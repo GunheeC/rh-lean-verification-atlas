@@ -8,7 +8,7 @@ from pathlib import Path
 import re
 import subprocess
 
-from scan_privacy import count_tokens, git, name_hits, tree_listing, TOKEN_PATTERNS
+from scan_privacy import PUBLIC_EMAIL_CATEGORIES, count_tokens, git, name_hits, tree_listing, TOKEN_PATTERNS
 
 LOCAL_PATH = re.compile(rb"[/](?:Users|home|sessions|mnt|tmp|private/(?:tmp|var)|var/folders|Volumes|workspace|root)[/]", re.I)
 HOST = re.compile(rb"(?i)(?<![a-z0-9_.-])(?:[a-z0-9-]+[.](?:lan|internal|home[.]arpa)(?![.a-z0-9_-])|[a-z0-9-]*(?:macbook|imac|workstation|desktop-)[a-z0-9-]+(?:[.]local)?|ip-\d+-\d+-\d+-\d+|[a-z0-9-]+[.]local(?=[:/\s]|$)(?<![.]lean))")
@@ -58,12 +58,12 @@ def scan(root, ref):
                 path_hits.update(matches(name.encode()) - count_tokens(name.encode()))
                 flags = blobs[oid] + path_hits
                 totals.update(flags)
-                unsafe = {k:v for k,v in flags.items() if k != "authorized_owner_noreply"}
+                unsafe = {k:v for k,v in flags.items() if k not in PUBLIC_EMAIL_CATEGORIES}
                 if unsafe:
                     candidates[name] = unsafe
             rows.append(dict(commit=commit, paths=len(files), occurrences=totals, metadata=meta))
         proc.stdin.close()
-    categories = [*TOKEN_PATTERNS, 'personal_or_unclassified_home', 'review_service_home',
+    categories = [*TOKEN_PATTERNS, *sorted(PUBLIC_EMAIL_CATEGORIES), 'personal_or_unclassified_home', 'review_service_home',
                   'email_candidate','reserved_machine_email','absolute_local_path','host_candidate',
                   'transcript_marker','private_network_address','local_host_identity','unexpected_git_identity','credential_or_transcript_filename',
                   'outside_tree_path','symlink_to_review','external_gitlink']
@@ -76,4 +76,4 @@ if __name__ == "__main__":
     args=ap.parse_args()
     record=scan(args.root, args.ref)
     print(json.dumps(record, indent=2))
-    raise SystemExit(bool(record['flagged_files']) or any(set(c['metadata']) - {'authorized_owner_noreply'} for c in record['commits']))
+    raise SystemExit(bool(record['flagged_files']) or any(set(c['metadata']) - PUBLIC_EMAIL_CATEGORIES for c in record['commits']))

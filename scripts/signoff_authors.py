@@ -19,7 +19,8 @@ def render(root):
             entries.append(f"[{label}](signoffs/records/{filename})")
         credit = "Self-declared reader names and submitted scopes: " + " · ".join(entries) + "."
     else:
-        credit = "The human-check register currently contains no submissions."
+        credit = ("No human, the author included, has yet checked the arguments. "
+                  "The human-check register contains no submissions.")
     row = ("| Named human checks | " + credit
            + " The progress table and checklists derive their counts from the register. "
            + "[Human check records and intake](signoffs/README.md) · [Progress](PROGRESS.md) |")

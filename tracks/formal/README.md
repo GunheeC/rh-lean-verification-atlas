@@ -2,11 +2,11 @@
 
 AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
 
-The written deduction assumes [V](../../pillars/V.md), [F](../../pillars/F.md), Green’s finite-field character input, 31 local implications and the intermediate results listed in paper v7. No complete human-readable proof of V or F exists in this atlas. The Lean source supplies both with in-repository terms. No human has checked this material.
+The written deduction assumes [V](../../pillars/V.md), [F](../../pillars/F.md), Green’s finite-field character input, 31 local implications and the intermediate results listed in paper v8. No complete human-readable proof of V or F exists in this atlas. The Lean source supplies both with in-repository terms. No human has checked this material.
 
 Standard background includes proof terms, axioms and directed graph dominators. On this route “core line”, “literature node” and “reading unit” denote Lean identifiers or terminology introduced by these drafts. Read them with the linked project definitions. [Glossary](../../lookup/glossary.md)
 
-Gunhee Cho is the paper’s author and the blueprint’s editor. Both were drafted with AI assistance. No independent human referee has checked the arguments. Levent Alpöge is the author of the Lean development. The repository includes both PDFs. The edition register preserves the earlier sources used in reviews. [Blueprint v13b · printed pp. 1–7](../../editions/v0.1.0/blueprint_v13b.pdf#page=37) · [Conditional paper v7](../../editions/v0.1.0/paper_v7.pdf) · [Edition register](../../data/editions.json)
+Gunhee Cho is the paper’s author and the blueprint’s editor. Both were drafted with AI assistance. No human, the author included, has yet checked the arguments. Levent Alpöge is the author of the Lean development. The repository includes both PDFs. The edition register preserves the earlier sources used in reviews. [Blueprint v13c · printed pp. 1–7](../../editions/v0.1.0/blueprint_v13c.pdf#page=37) · [Conditional paper v8](../../editions/v0.1.0/paper_v8.pdf) · [Edition register](../../data/editions.json)
 
 [Starter packet](../../notes/formal/README.md) · [Open questions](../../questions/formal.md) · [Unit inventory](units.md) · [Korean](../../docs/ko/formal.md)
 

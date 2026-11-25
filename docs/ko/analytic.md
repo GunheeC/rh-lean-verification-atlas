@@ -6,7 +6,7 @@ AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
 
 디리클레 지표·영점·멜린 변환은 이 분야의 통상 용어다. 호스트·준위·창은 이 경로에서 고정된 Lean 식별자나 이 프로젝트 초고의 표현을 가리킨다. 그 뜻은 연결한 정의에서 확인한다. [용어집](../../lookup/glossary.md)
 
-조건부 논문의 저자이자 블루프린트의 편집자는 Gunhee Cho다. 두 문서는 AI의 도움으로 작성했으며 독립적인 인간 심사자가 논증을 검토한 기록은 없다. Lean 개발의 저자는 Levent Alpöge다. 두 PDF는 저장소에 수록했다. 판본 장부에는 과거 검토에서 읽은 판본도 남아 있다. [블루프린트 v13b · 7–14쪽](../../editions/v0.1.0/blueprint_v13b.pdf#page=43) · [조건부 논문 v7](../../editions/v0.1.0/paper_v7.pdf) · [판본 장부](../../data/editions.json)
+조건부 논문의 저자이자 블루프린트의 편집자는 Gunhee Cho다. 두 문서는 AI의 도움으로 작성했으며 저자를 포함해 아직 사람이 이 논증을 확인한 적은 없다. Lean 개발의 저자는 Levent Alpöge다. 두 PDF는 저장소에 수록했다. 판본 장부에는 과거 검토에서 읽은 판본도 남아 있다. [블루프린트 v13c · 7–14쪽](../../editions/v0.1.0/blueprint_v13c.pdf#page=43) · [조건부 논문 v8](../../editions/v0.1.0/paper_v8.pdf) · [판본 장부](../../data/editions.json)
 
 [영문 안내](../../tracks/analytic/README.md) · [한국어 첫 화면](README.md) · [시작 읽기 자료](../../notes/analytic/README.md) · [열린 질문](../../questions/analytic.md)
 

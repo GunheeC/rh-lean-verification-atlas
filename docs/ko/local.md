@@ -6,7 +6,7 @@ AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
 
 결정질 표현·관성군·국소 상호법칙은 이 분야의 통상 용어다. 좋은 클래스·행·국소 결손은 이 경로에서 고정된 Lean 식별자나 이 프로젝트 초고의 표현을 가리킨다. 그 뜻은 연결한 정의에서 확인한다. [용어집](../../lookup/glossary.md)
 
-조건부 논문의 저자이자 블루프린트의 편집자는 Gunhee Cho다. 두 문서는 AI의 도움으로 작성했으며 독립적인 인간 심사자가 논증을 검토한 기록은 없다. Lean 개발의 저자는 Levent Alpöge다. 두 PDF는 저장소에 수록했다. 판본 장부에는 과거 검토에서 읽은 판본도 남아 있다. [블루프린트 v13b · 58–64쪽](../../editions/v0.1.0/blueprint_v13b.pdf#page=94) · [조건부 논문 v7](../../editions/v0.1.0/paper_v7.pdf) · [판본 장부](../../data/editions.json)
+조건부 논문의 저자이자 블루프린트의 편집자는 Gunhee Cho다. 두 문서는 AI의 도움으로 작성했으며 저자를 포함해 아직 사람이 이 논증을 확인한 적은 없다. Lean 개발의 저자는 Levent Alpöge다. 두 PDF는 저장소에 수록했다. 판본 장부에는 과거 검토에서 읽은 판본도 남아 있다. [블루프린트 v13c · 58–64쪽](../../editions/v0.1.0/blueprint_v13c.pdf#page=94) · [조건부 논문 v8](../../editions/v0.1.0/paper_v8.pdf) · [판본 장부](../../data/editions.json)
 
 [영문 안내](../../tracks/local/README.md) · [한국어 첫 화면](README.md) · [시작 읽기 자료](../../notes/local/README.md) · [열린 질문](../../questions/local.md)
 

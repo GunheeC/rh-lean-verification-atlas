@@ -1,10 +1,11 @@
 {
   "title": "RH Lean Verification Atlas",
   "upload_type": "dataset",
-  "description": "This atlas records statements, proof steps and AI reviews so that readers can check Alpöge’s pinned Lean development step by step across successive editions. Paper v7, “Toward a human verification of Alpöge's Lean proof of the Riemann hypothesis, I: the conditional chain from Selmer windows to zero-free regions”, maps 775 statements and presents the conditional deduction. Blueprint v13b, “The Alpöge formalization of RH and GRH: an informal blueprint”, builds up the 20 original inputs. AI-written draft; AI cross-reviewed; no human review; not a claim that RH is proved.",
+  "description": "This atlas records statements, proof steps and AI reviews so that readers can check Alpöge’s pinned Lean development step by step across successive editions. Paper v8, “Toward a human verification of Alpöge's Lean proof of the Riemann hypothesis, I: the conditional chain from Selmer windows to zero-free regions”, maps 775 statements and outlines the conditional deduction, with selected steps written in full. Blueprint v13c, “The Alpöge formalization of RH and GRH: an informal blueprint”, builds up the 20 original inputs. AI-written draft; AI cross-reviewed; no human review; not a claim that RH is proved.",
   "creators": [
     {
-      "name": "Cho, Gunhee"
+      "name": "Cho, Gunhee",
+      "affiliation": "Texas State University; TranscendQ"
     }
   ],
   "license": "cc-by-4.0",

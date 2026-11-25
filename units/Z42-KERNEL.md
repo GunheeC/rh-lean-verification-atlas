@@ -28,24 +28,24 @@ Sources for the assumptions · [RH verification blueprint, release v13](../data/
 
 ## Where to read
 
-Gunhee Cho is the paper’s author and the blueprint’s editor. Both were drafted with AI assistance. No independent human referee has checked the arguments. Levent Alpöge is the author of the Lean development. [Blueprint v13b](../editions/v0.1.0/blueprint_v13b.pdf) · [Conditional paper v7](../editions/v0.1.0/paper_v7.pdf) · [Edition register](../data/editions.json)
+Gunhee Cho is the paper’s author and the blueprint’s editor. Both were drafted with AI assistance. No human, the author included, has yet checked the arguments. Levent Alpöge is the author of the Lean development. [Blueprint v13c](../editions/v0.1.0/blueprint_v13c.pdf) · [Conditional paper v8](../editions/v0.1.0/paper_v8.pdf) · [Edition register](../data/editions.json)
 
 - [Blueprint source excerpt](../notes/blueprint/Z42-KERNEL.tex)
-- [Blueprint v13b](../editions/v0.1.0/blueprint_v13b.pdf#page=395), printed p. 359, section label `r6:Z4.2.09`.
+- [Blueprint v13c](../editions/v0.1.0/blueprint_v13c.pdf#page=395), printed p. 359, section label `r6:Z4.2.09`.
 - [RH verification blueprint, release v13](../data/editions.json), section label `r6:Z4.2.09`, PDF p. 384 (printed p. 359)
-- [Blueprint v13b](../editions/v0.1.0/blueprint_v13b.pdf#page=460), printed p. 424, section label `r8:Z4.2.09`.
+- [Blueprint v13c](../editions/v0.1.0/blueprint_v13c.pdf#page=460), printed p. 424, section label `r8:Z4.2.09`.
 - [RH verification blueprint, release v13](../data/editions.json), section label `r8:Z4.2.09`, PDF p. 449 (printed p. 424)
-- [Blueprint v13b](../editions/v0.1.0/blueprint_v13b.pdf#page=397), printed p. 361, section label `r6:Z4.2.10`.
+- [Blueprint v13c](../editions/v0.1.0/blueprint_v13c.pdf#page=397), printed p. 361, section label `r6:Z4.2.10`.
 - [RH verification blueprint, release v13](../data/editions.json), section label `r6:Z4.2.10`, PDF p. 386 (printed p. 361)
-- [Blueprint v13b](../editions/v0.1.0/blueprint_v13b.pdf#page=469), printed p. 433, section label `r8:Z4.2.10`.
+- [Blueprint v13c](../editions/v0.1.0/blueprint_v13c.pdf#page=469), printed p. 433, section label `r8:Z4.2.10`.
 - [RH verification blueprint, release v13](../data/editions.json), section label `r8:Z4.2.10`, PDF p. 458 (printed p. 433)
-- [Blueprint v13b](../editions/v0.1.0/blueprint_v13b.pdf#page=396), printed p. 360, section label `r6:Z4.2.11`.
+- [Blueprint v13c](../editions/v0.1.0/blueprint_v13c.pdf#page=396), printed p. 360, section label `r6:Z4.2.11`.
 - [RH verification blueprint, release v13](../data/editions.json), section label `r6:Z4.2.11`, PDF p. 385 (printed p. 360)
-- [Blueprint v13b](../editions/v0.1.0/blueprint_v13b.pdf#page=469), printed p. 433, section label `r8:Z4.2.11`.
+- [Blueprint v13c](../editions/v0.1.0/blueprint_v13c.pdf#page=469), printed p. 433, section label `r8:Z4.2.11`.
 - [RH verification blueprint, release v13](../data/editions.json), section label `r8:Z4.2.11`, PDF p. 458 (printed p. 433)
-- [Blueprint v13b](../editions/v0.1.0/blueprint_v13b.pdf#page=397), printed p. 361, section label `r6:Z4.2.12`.
+- [Blueprint v13c](../editions/v0.1.0/blueprint_v13c.pdf#page=397), printed p. 361, section label `r6:Z4.2.12`.
 - [RH verification blueprint, release v13](../data/editions.json), section label `r6:Z4.2.12`, PDF p. 386 (printed p. 361)
-- [Blueprint v13b](../editions/v0.1.0/blueprint_v13b.pdf#page=464), printed p. 428, section label `r8:Z4.2.12`.
+- [Blueprint v13c](../editions/v0.1.0/blueprint_v13c.pdf#page=464), printed p. 428, section label `r8:Z4.2.12`.
 - [RH verification blueprint, release v13](../data/editions.json), section label `r8:Z4.2.12`, PDF p. 453 (printed p. 428)
 
 ## Evidence

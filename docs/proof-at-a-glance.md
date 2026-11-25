@@ -2,58 +2,71 @@
 
 AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
 
-For $\Re(s)>1$, the Riemann zeta function is a product with one factor for each prime. Its zeros are complex numbers where the function vanishes. The Riemann hypothesis says that every zero apart from the familiar negative even integers lies on the vertical line $\Re(s)=1/2$. Why count primes to locate a zero? Under the analytic hypotheses below, a zero to the right would force an upward fluctuation in a suitably weighted prime sum. An upper bound of square-root size with a small loss, holding all the way across arbitrarily distant long intervals, rules this out. The strategy is therefore to construct those intervals. Paper v7 traces this deduction from the goal back to its inputs. The companion blueprint starts from the 20 original inputs and develops the pieces a reader can check by hand. [Paper v7, §2](../editions/v0.1.0/paper_v7.pdf#page=5) · [Five precise statements](../sources/lean-goals.md) · [한국어](ko/proof-at-a-glance.md)
+**The argument in one paragraph.** The Riemann hypothesis places every nontrivial zeta zero on the line $\Re(s)=1/2$. Count primes and their powers with suitable weights. Under our analytic assumptions, a zero to the right forces that count far above its main term. A near-square-root upper bound on this excess throughout arbitrarily distant long intervals excludes such a zero. The arithmetic and geometric assumptions supply those intervals.
+
+A zero is a point where a function vanishes. Here the trivial zeta zeros are the negative even integers. For background on zeros, residues and analytic continuation, see [G. Cho, *Complex Analysis and Riemann Surfaces: A Graduate Path to Algebraic Geometry*, arXiv:2601.06868](https://arxiv.org/abs/2601.06868).
+
+[§2](../editions/v0.1.0/paper_v8.pdf#page=5) · [Five precise statements](../sources/lean-goals.md) · [한국어](ko/proof-at-a-glance.md)
 
 ## Eight steps
 
-Here a *window* is an interval of scales. The first three steps describe ingredients. In the construction, V fixes the size threshold before the auxiliary primes are chosen.
+A Dirichlet character assigns periodic, multiplicative weights to integers. A primitive character does not come from a smaller modulus. Step 1 already uses V from step 2. V sets a threshold. The construction next chooses the prime pair, obtains V’s interval and builds the host there.
 
-1. **Choose a setting for counting primes.** Start with a primitive Dirichlet character, a periodic multiplicative weight on integers that does not come from a smaller modulus, and choose auxiliary primes and a number field, a finite extension of the rationals, called the *host* in this project. At each eligible scale, the arithmetic estimates and prime count must use compatible data. The host can vary with the scale. [Host construction B07](../units/B07.md) · [Assembly P015](../units/P015.md)
-2. **Bound the arithmetic ambiguity on a window.** A Selmer group records global arithmetic classes subject to local conditions, which test the classes one prime at a time. The input called V bounds a weighted sum of the lengths of kernels, measuring classes that local tests fail to distinguish, on a common interval for each admissible prime pair. The bound must apply to whichever admissible host is chosen at each scale in the interval. [V, unit P013](../units/P013.md) · [Quantifiers and proof boundary](../pillars/V.md)
-3. **Find geometric data that work together.** The input called F requires one choice across a class of families where the lattice data and the theta data, which relate sums over lattices to functions with prescribed symmetries, satisfy the needed conditions together. Separate choices for each condition would leave the geometric estimate with no reason to apply to the arithmetic data in step 2. [F, unit T02](../units/T02.md) · [What the common choice supplies](../pillars/F.md)
-4. **Bring the estimates onto the same family.** V and F enter a comparison along with Green’s character formula for finite groups of matrices over finite fields, 31 local implications and supplementary inputs S1–S6. Together these assumptions connect the prime-counting data to the selected lattices and control the errors on that same family. S6 names the classical facts about L-functions used in the deduction. [Full hypothesis list V4-COND](../units/V4-COND.md) · [Assembly P015](../units/P015.md)
-5. **Turn a lattice estimate into a prime-counting estimate.** A lattice consists of the integer combinations of a set of linearly independent vectors. Here an exact balance identity identifies the difference between a weighted prime-power count and its expected main term with a quantity computed from character sums. This equality lets a separate bound on the lattice data at each scale control the error after averaging the characters. [Lattice estimate P021](../units/P021.md) · [Error B10](../units/B10.md) · [Character average B09](../units/B09.md)
-6. **See where one half comes from.** At scale $x$ the construction uses about $\sqrt{x}$ columns: dividing by their number balances terms of size roughly $x/m$ and $m$, where $m$ is the column count. After the stated comparisons, the weighted prime sum is at most $x^{1/2+9\varepsilon}$ throughout arbitrarily distant intervals $[Y,Y^{3/2}]$. Choosing a small positive $\varepsilon$ brings the exponent as close to one half as the argument needs. [One-scale bound B08](../units/B08.md) · [Window inequality P017](../units/P017.md)
-7. **Use a long interval to exclude a zero.** Suppose a zero has real part $\beta>1/2$. Choose $\theta$ strictly between $1/2$ and $\min(1,\beta)$, and then $\varepsilon$ so small that $1/2+9\varepsilon<\theta$. For zeros in the open strip $0<\Re(s)<1$, the Landau-type criterion says that a zero beyond $\theta$ is incompatible with the one-sided upper bound throughout arbitrarily distant intervals. Positive weights keep the contributions of coincident zeros from cancelling. Classical nonvanishing treats the boundary and the region to its right. [Window criterion P022](../units/P022.md) · [Positive weights P023](../units/P023.md) · [Application P018](../units/P018.md)
-8. **Pass from one character to all characters and to zeta.** Every Dirichlet character is induced by a primitive character. The principal character of modulus one gives the zeta function. Changing modulus and applying the functional equation, the symmetry relating the two sides of the critical line, gives the five stated forms of the conclusion, with the principal-character pole at $s=1$ excepted. [All characters P003](../units/P003.md) · [All characters in the strip P004](../units/P004.md) · [Primitive characters P005](../units/P005.md) · [Primitive reflection P007](../units/P007.md) · [Zeta P001](../units/P001.md) · [Zeta zeros P002](../units/P002.md)
+1. **Choose where to count.** For a primitive character, choose a pair of auxiliary primes and build a host at each eligible scale. The prime count and the arithmetic estimates at that scale must use compatible data. A host records a finite extension of the rational numbers, the chosen primes and further data, and may change with the scale. (Details: [§5.3](../editions/v0.1.0/paper_v8.pdf#page=40) · [B07](../units/B07.md) · [P015](../units/P015.md))
+
+2. **Bound what prime-by-prime tests miss.** For each admissible prime pair, V bounds a weighted sum of kernel lengths throughout one interval $[Y,Y^2]$. The same interval must work for every allowed field and finite set of primes. These lengths measure classes missed by local tests, and V’s bound alone gives no square-root estimate for the prime sum. (Details: [§5.4](../editions/v0.1.0/paper_v8.pdf#page=45) · [P013](../units/P013.md) · [V reading map](../pillars/V.md))
+
+3. **Make one geometric choice.** Input F supplies one record containing a class of families and one selection on that class. The bounds on sizes and the conditions on selected data can then be used together. (Details: [§5.5](../editions/v0.1.0/paper_v8.pdf#page=49) · [T02](../units/T02.md) · [F reading map](../pillars/F.md))
+
+4. **Use the inputs on the same family.** Join the host carrying V’s estimate and the geometric choice F using Green’s assertion, 31 local implications and six supplementary inputs. The later bounds now concern the same lattice, field and scale. The Lean assertion about matrix groups over finite fields still needs comparison with Green’s published character formula. (Details: [§5.6](../editions/v0.1.0/paper_v8.pdf#page=50) · [V4-COND](../units/V4-COND.md) · [P015](../units/P015.md))
+
+5. **Turn a lattice bound into a prime-counting bound.** An exact identity relates the weighted prime-power count, after subtracting its main term, to a sum with character weights. This lets a separate bound for each lattice datum control the error after averaging. (Details: [§5.1](../editions/v0.1.0/paper_v8.pdf#page=25) · [P021](../units/P021.md) · [B10](../units/B10.md) · [B09](../units/B09.md) · [D561](../units/D561.md))
+
+6. **Find the square-root exponent.** Choosing about $\sqrt{x}$ columns balances the two main errors near $x/m$ and $m$, where $m$ counts columns. Rescaling V’s intervals gives arbitrarily distant intervals $[Y,Y^{3/2}]$ with upper bound $x^{1/2+9\varepsilon}$ for the primitive-character case. Taking the positive number $\varepsilon$ small brings the exponent as close to one half as needed. (Details: [§5.1](../editions/v0.1.0/paper_v8.pdf#page=25) · [B08](../units/B08.md) · [P017](../units/P017.md))
+
+7. **Rule out a zero to the right.** For a zero in the open strip with real part above one half, choose a bound exponent strictly between those two numbers. A theorem of Landau type says the resulting upper bounds on long intervals exclude such a zero. The prime sum combines several characters with positive weights, so contributions from a shared zero cannot cancel. (Details: [§C.4](../editions/v0.1.0/paper_v8.pdf#page=96) · [P022](../units/P022.md) · [P023](../units/P023.md) · [P018](../units/P018.md))
+
+8. **Pass to every character and to zeta.** Pass from primitive characters to induced characters, then use the functional equation to reflect zeros across the line. This gives the five stated conclusions, including zeta through the character of modulus one. The right-hand nonvanishing statement excepts the principal character at $s=1$. (Details: [§C](../editions/v0.1.0/paper_v8.pdf#page=90) · [P003](../units/P003.md) · [P004](../units/P004.md) · [P005](../units/P005.md) · [P007](../units/P007.md) · [P001](../units/P001.md) · [P002](../units/P002.md))
+
+In the open strip, the real part lies strictly between zero and one. The classical nonvanishing results cover its right boundary and the region beyond it, with the principal exception in step 8.
 
 ## Which steps use which inputs?
 
-Each arrow means “is used in”. White boxes show a written deduction under its assumptions (5–8), light gray an outline (1, 4), and dark gray an input whose full derivation is available only in Lean (2, 3). These labels describe the written material available at each step. An outline can include fully written local calculations. [Detailed map](../MAP.md)
+Each arrow points to the step that uses the preceding input. White boxes show written deductions under stated assumptions (5–7). Light boxes show outlines (1, 4, 8). Dark boxes mark inputs whose full derivations are available only in Lean (2, 3). In step 5 the bound is written in full. The balance identity itself has an outline (D561).
 
 ```mermaid
 flowchart TD
-    H["1 Choose a host"] --> J["4 Join on one family"]
-    V["2 Selmer window V"] --> J
-    F["3 Common witness F"] --> J
-    J --> B["5 Balance identity"]
-    B --> W["6 Square-root window"]
-    W --> L["7 Exclude a zero"]
+    H["1 Build a host"] --> J["4 Join the inputs on one family"]
+    V["2 Bound the local kernels (V)"] --> H
+    F["3 Choose compatible geometric data (F)"] --> J
+    J --> B["5 From lattices to a prime sum"]
+    B --> W["6 Get a near-square-root bound"]
+    W --> L["7 Exclude a zero to the right"]
     L --> A["8 All characters and zeta"]
     classDef written fill:#fff,stroke:#222
-    classDef outlined fill:#ddd,stroke:#222
-    classDef lean fill:#aaa,stroke:#222
-    class H,J outlined
+    classDef outlined fill:#ddd,stroke:#222,stroke-dasharray:5 3
+    classDef lean fill:#aaa,stroke:#222,stroke-width:2px
+    class H,J,A outlined
     class V,F lean
-    class B,W,L,A written
+    class B,W,L written
 ```
+
+> **Where the weight lies.** V and F together account for 4,565,893 of 9,567,045 measured Lean lines (47.73%, about 48%). Neither input has a complete written derivation here. The conditional deduction using them is short. Four blocks along that chain account for 1.92% of the measured lines. Two other rows account for 50.36%.
 
 ## How big is each part?
 
-The second column counts Lean source lines *dominated* by one declaration: the paths from the shared “all characters” starting point to those lines all pass through that declaration. The last column gives selected passages in **paper v6, by printed page**. These are reading lengths, including explanations of hypotheses. The two short passages on V and F do not derive those inputs. Blocks can overlap and the counts must not be added. [Source graph and counting method](../sources/coverage.md) · [Edition register](../data/editions.json)
-
-| Block and declaration | Dominated Lean lines | Selected paper v6 passage |
+| Block and declaration | Dominated Lean lines | Selected paper v8 passage |
 |---|---:|---|
-| Host choice · [B07](../units/B07.md) | 31,622 | pp. 21–26 (6 pages) |
-| Selmer window V · [P013](../units/P013.md) | 886,201 | pp. 27–30 (4 pages) |
-| Geometric witness F · [T02](../units/T02.md) | 3,679,692 | pp. 31–32 (2 pages) |
-| Joining geometric and arithmetic estimates · [B05](../units/B05.md) | 146,214 | pp. 25–26 (2 pages) |
-| Lattice error to prime-sum window · [P017](../units/P017.md) | 3,365 | pp. 5–15 (11 pages) |
-| Landau criterion · [P022](../units/P022.md) | 863 | pp. 79–83 (5 pages) |
-| Public conclusion for all characters · [P003](../units/P003.md) | — | pp. 72–73 (2 pages on the five targets) |
+| Choosing the host field · [B07](../units/B07.md) | 31,622 | pp. [40](../editions/v0.1.0/paper_v8.pdf#page=40)–[44](../editions/v0.1.0/paper_v8.pdf#page=44) (5 pages) |
+| The Selmer bound V · [P013](../units/P013.md) | 886,201 | pp. [45](../editions/v0.1.0/paper_v8.pdf#page=45)–[49](../editions/v0.1.0/paper_v8.pdf#page=49) (5 pages) |
+| The compatible choice F · [T02](../units/T02.md) | 3,679,692 | pp. [49](../editions/v0.1.0/paper_v8.pdf#page=49)–[50](../editions/v0.1.0/paper_v8.pdf#page=50) (2 pages) |
+| Joining the geometric estimates · [B05](../units/B05.md) | 146,214 | pp. [43](../editions/v0.1.0/paper_v8.pdf#page=43)–[44](../editions/v0.1.0/paper_v8.pdf#page=44) (2 pages) |
+| From lattice errors to prime sums · [P017](../units/P017.md) | 3,365 | pp. [25](../editions/v0.1.0/paper_v8.pdf#page=25)–[35](../editions/v0.1.0/paper_v8.pdf#page=35) (11 pages) |
+| Landau’s criterion on windows · [P022](../units/P022.md) | 863 | pp. [96](../editions/v0.1.0/paper_v8.pdf#page=96)–[100](../editions/v0.1.0/paper_v8.pdf#page=100) (5 pages) |
+| The five conclusions, with P003 shown · [P003](../units/P003.md) | — | pp. [90](../editions/v0.1.0/paper_v8.pdf#page=90)–[91](../editions/v0.1.0/paper_v8.pdf#page=91) (2 pages) |
 
-The separate regions dominated by V and F account for 4,565,893 of 9,567,045 core lines (47.73%). The short passages in the table are reading maps into those regions. P003 is an exported conclusion outside the graph rooted at the shared all-characters declaration. That graph supplies no dominated count for P003. [Disjoint regions and source counts](../progress/README.md)
+The middle column counts Lean lines reached only through the listed declaration from the common all-characters starting point. Different rows can overlap. P003 lies outside this graph. The right column gives selected printed pages in this edition (v8), counting both endpoints. The short readings on V and F describe the inputs. P022 alone accounts for 863 lines. Table 2 groups it with P018, P019 and P023, giving 2,115 lines. [Counting method](../sources/coverage.md) · [Disjoint regions](../progress/README.md)
 
-## What is established here?
+## What has been checked?
 
-Alpöge’s Lean development states the five conclusions. A third-party record reports kernel acceptance of the compiled development. This project did not rerun those checks. The paper explains the conditional deduction and spells out its analytic steps. A complete hand derivation of V or F is still missing. The atlas records each edition and each reviewed passage so that future readers can check individual steps. No step currently has a recorded human check. [External audit](../sources/kernel-audit.md) · [Status of the written argument](../STATUS.md) · [Editions](../data/editions.json)
+Alpöge’s Lean development states the five conclusions. A third-party record reports that Lean’s kernel accepted the compiled development. This project did not rerun that check. The paper outlines a conditional deduction. The atlas records no human checks of individual proof steps. [External audit](../sources/kernel-audit.md) · [Status](../STATUS.md) · [Edition register](../data/editions.json)

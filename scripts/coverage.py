@@ -70,16 +70,23 @@ def paper_ref(locator, lang, latex, catalog, page_index):
         section = r"\S\ref{" + sec + "}, " if sec else ""
         pages = tex_pages(a, b)
         n = r"\number\numexpr\getpagerefnumber{" + b + r"}-\getpagerefnumber{" + a + r"}+1\relax"
-        return r"Paper " + section + r"pp.\ " + pages + " (" + n + " pp.)"
+        first = r"\getpagerefnumber{" + a + "}"
+        last = r"\getpagerefnumber{" + b + "}"
+        singular = r"p.\ \pageref{" + a + r"} (1 p.)"
+        plural = r"pp.\ " + pages + " (" + n + " pp.)"
+        return r"Paper " + section + r"\ifnum" + first + "=" + last + r"\relax " + singular + r"\else " + plural + r"\fi{}"
     pages = page_index["printed_pages"]
     first, last = pages[a], pages[b]
     extent = page_range(first, last)
     physical = page_index["named_destinations"][a]["pdf_page"]
     section = page_index.get("section_numbers", {}).get(sec)
     label = ("Paper " if lang == "en" else "논문 ") + ("§" + section + ", " if section else "")
-    label += f"pp. {extent} ({last - first + 1} pp.)" if lang == "en" else f"{extent}쪽 ({last - first + 1}쪽)"
+    if lang == "en":
+        label += f"p. {first} (1 p.)" if first == last else f"pp. {extent} ({last-first+1} pp.)"
+    else:
+        label += f"{extent}쪽 ({last-first+1}쪽)"
     prefix = "../" if lang == "en" else "../../"
-    return link(label, prefix + catalog["paper2_v7"]["repository_file"] + f"#page={physical}", False)
+    return link(label, prefix + catalog["paper2_v8"]["repository_file"] + f"#page={physical}", False)
 
 
 def reading_ref(row, lang, latex, catalog, page_index):
@@ -87,12 +94,15 @@ def reading_ref(row, lang, latex, catalog, page_index):
     if kind == "paper":
         return paper_ref(row, lang, latex, catalog, page_index)
     title = words(row["title"], lang, latex)
+    if kind == "atlas":
+        prefix = URL if latex else ("../" if lang == "en" else "../../")
+        return link(title + " (" + code(row["path"], latex) + ")", prefix + row["path"], latex)
     a, b = row["pages"]
     extent = page_range(a, b)
     label = title + (f", pp. {extent}" if lang == "en" else f", {extent}쪽")
     prefix = URL if latex else ("../" if lang == "en" else "../../")
     if kind == "blueprint":
-        bp = catalog.get("blueprint_v13b")
+        bp = catalog.get("blueprint_v13c")
         if latex:
             return label
         physical = bp["first_original_arabic_folio_pdf_page"] + a - 1
@@ -132,7 +142,7 @@ def rendered(root, tex_only=False):
     tasks = read(d / "coverage_tasks.json")
     gaps = read(d / "coverage_gaps.json")
     catalog = read(d / "editions.json")["editions"]
-    page_index = {} if tex_only else read(root / catalog["paper2_v7"]["coverage_label_index"])
+    page_index = {} if tex_only else read(root / catalog["paper2_v8"]["coverage_label_index"])
     total = blocks["total"]
     levels = {k: sum(b["by_exposition"][k] for b in blocks["blocks"]) for k in LEVELS}
     if sum(b["lines"] for b in blocks["blocks"]) != total or total != 9567045 or sum(levels.values()) != total:
@@ -143,6 +153,8 @@ def rendered(root, tex_only=False):
         raise ValueError("Verification task order is not consecutive")
     for task in tasks["tasks"]:
         uid = task["unit"]
+        if task["paper"].get("edition") != "paper_v8":
+            raise ValueError(f"{uid}: verification task is attached to a different paper edition")
         if task["checklist"] != f"units/{uid}.check.md" or not (root / task["checklist"]).is_file():
             raise ValueError(f"{uid}: invalid reader checklist")
         manifest = read(root / f"units/{uid}.steps.yaml")
@@ -178,7 +190,8 @@ def rendered(root, tex_only=False):
             names = [code(x["name"], latex) for x in row["entries"]]
             review = w(row["review"])
             expo = [(NAMES[lang][i],row["by_exposition"][k]) for i,k in enumerate(LEVELS) if row["by_exposition"][k]]
-            breakdown = LOCAL_LEVEL[lang][row["level"]] + (r"\par " if latex else " · ") + (r"\par " if latex else " · ").join(f"{a} {n:,}" for a,n in expo)
+            headline = w(row["exposition_detail"]) if "exposition_detail" in row else LOCAL_LEVEL[lang][row["level"]]
+            breakdown = headline + (r"\par " if latex else " · ") + (r"\par " if latex else " · ").join(f"{a} {n:,}" for a,n in expo)
             if latex:
                 cells = [r"\textbf{" + w(row["title"]) + r"}\par " + w(row["role"]), r"\par ".join(names) or "—", breakdown, f'{row["lines"]:,}', reading + r"\par AI review: " + review + r"\par Human checks: " + str(row["human_checks"])]
                 body.append(" & ".join(cells) + r" \\ \midrule")
@@ -253,10 +266,14 @@ def rendered(root, tex_only=False):
                 count=(f"{size:,} dominated core lines" if en else f"지배하는 코어 줄 {size:,}개") if size is not None else ("separate size not registered" if en else "별도 크기 미등록")
                 body += [source_line(pin,latex)+" · "+count+".",""]
         if latex:
-            body += [r"\noindent\textattachfile[color=0.15 0.15 0.15,mimetype=text/plain,description={Coverage tables and reading tasks}]{v7_coverage_data.tex}{\textcolor{inkblue}{Source for the coverage tables and reading tasks (TeX).}}",""]
-            out["data/v7_coverage_data.tex"] = "\n".join(body)
+            body += [r"\noindent\textattachfile[color=0.15 0.15 0.15,mimetype=text/plain,description={Coverage tables and reading tasks}]{v8_coverage_data.tex}{\textcolor{inkblue}{Source for the coverage tables and reading tasks (TeX).}}",""]
+            out["data/v8_coverage_data.tex"] = "\n".join(body)
         else:
             body += ["## How further work is recorded" if en else "## 후속 작업의 기록 방법", "",
+                     ("Discussions in the EnjoyingMath channel community motivate the author’s plan to work with mathematics students and mathematicians. His aim is to check Alpöge’s Lean proof by hand, one step at a time, for as long as the work takes. He plans to report progress in English and Korean through atlas editions, the progress dashboard and the channel."
+                      if en else "출발점은 EnjoyingMath 시청자들의 토론이다. Gunhee Cho의 장기 목표는 시간이 얼마나 걸리든 수학을 공부하는 학생들과 수학자들이 함께 Alpöge의 Lean 증명을 한 단계씩 손으로 검토하는 것이다. 아틀라스의 새 판본과 대시보드, 채널을 통해 진행 상황을 영어와 한국어로 전할 계획이다."), "",
+                     (f"Human-checked steps so far: {citation['human_checked_steps']}. [Dashboard]({prefix}dashboard/README.md) · [EnjoyingMath](https://www.youtube.com/@enjoyingmath9346)"
+                      if en else f"지금까지 사람이 확인한 단계는 {citation['human_checked_steps']}개다. [대시보드]({prefix}dashboard/README.md) · [EnjoyingMath](https://www.youtube.com/@enjoyingmath9346)"), "",
                      (f"Each written step has a source and edition. Human checks identify both. A revised edition requires a fresh check. Part II on V and Part III on F are tentative plans. [Programme]({prefix}ROADMAP.md) · [Edition register]({prefix}data/editions.json) · [Review register]({prefix}reviews/index.json)"
                       if en else f"서면 단계마다 소스와 판본이 있다. 사람 검토는 두 항목을 지정하고, 판본이 바뀌면 새로 확인한다. V를 다룰 제2부와 F를 다룰 제3부는 잠정 계획이다. [작업 계획]({prefix}ROADMAP.md) · [판본 기록]({prefix}data/editions.json) · [검토 기록]({prefix}reviews/index.json)"), ""]
             out["docs/coverage.md" if en else "docs/ko/coverage.md"] = "\n".join(body)
@@ -290,7 +307,7 @@ def main():
     ap.add_argument("--tex-output", type=Path, help="Write the manuscript fragment before running LaTeX")
     a = ap.parse_args()
     out = rendered(a.root, tex_only=a.tex_output is not None)
-    fragment = out["data/v7_coverage_data.tex"]
+    fragment = out["data/v8_coverage_data.tex"]
     if a.tex_output:
         a.tex_output.write_text(fragment, encoding="utf-8")
         return
@@ -302,9 +319,9 @@ def main():
         else:
             p.write_text(content, encoding="utf-8")
     if a.check:
-        paper = read(a.root / "data/editions.json")["editions"]["paper2_v7"]
+        paper = read(a.root / "data/editions.json")["editions"]["paper2_v8"]
         if not embedded_source((a.root / paper["repository_file"]).read_bytes(), fragment.encode()):
-            raise SystemExit("Paper v7 does not contain the exact coverage-table source generated by this checkout.")
+            raise SystemExit("Paper v8 does not contain the exact coverage-table source generated by this checkout.")
         citations = read(a.root / "data/coverage_blocks.json")["citations"]
         from check_coverage_blocks import verify
         verify(a.root)

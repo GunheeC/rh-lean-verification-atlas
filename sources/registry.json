@@ -397,6 +397,16 @@
       "url": "https://opensource.org/license/mit",
       "title": "The MIT License",
       "scope": "Open Source Initiative license text."
+    },
+    {
+      "url": "https://www.youtube.com/@enjoyingmath9346",
+      "title": "EnjoyingMath",
+      "scope": "Owner-supplied YouTube channel for project discussions and progress updates."
+    },
+    {
+      "url": "https://arxiv.org/abs/2601.06868",
+      "title": "Complex Analysis and Riemann Surfaces: A Graduate Path to Algebraic Geometry",
+      "scope": "Graduate text by G. Cho (math.CV). Background for the channel’s discussions of complex analysis."
     }
   ],
   "presentation_assets": [
