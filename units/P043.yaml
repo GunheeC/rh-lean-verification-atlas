@@ -1,0 +1,80 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "P043",
+  "title": "Local comparison and continuity on a normalized Galois family",
+  "track": {
+    "primary": "local",
+    "secondary": []
+  },
+  "statement": "Work on the normalized family \\(r_N\\) with its ring record and evaluation, topology, scalar and rank identifications. Assume G2 (local gain bound and crystalline twist), G4 (unramified away from the specified sets), G5 (inertia polynomial relations), tame generators, semisimple decomposition, Fontaine conditions above \\(\\ell\\), local Tate \\(H^1\\) finiteness, and local coefficient compatibility. Assume goodness of the self coefficient extension, the specified auxiliary character powers, and \\(TB(c_B)\\) for \\(r_N\\). On these same data the following hold.\n\\begin{enumerate}\n\\item Block zero satisfies the fixed \\(\\rho\\)-block conditions for the determinant presentation.\n\\item For \\(c\\ge1\\), each admissible projected row cocycle is finite after multiplication by \\(\\ell^{c_B}\\); the colength of the finite condition in its locally constant \\(\\ell^{c_B}\\)-division part is at most \\(ac_B([E_w:\\mathbf Q_\\ell]+1)\\).\n\\item All higher character blocks \\(c\\ge2\\) satisfy their character local conditions.\n\\item The first character block obeys its specified inertia and auxiliary-prime local conditions.\n\\item The row subquotient, orbit, matrix-lattice and target orbit continuity conditions hold simultaneously.\n\\end{enumerate}",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Use the normalized family with its ring, scalar, topology, rank and evaluation identifications.",
+    "Assume G2, G4, G5, tame generators, semisimple decomposition, Fontaine conditions, local Tate finiteness and compatible coefficients.",
+    "Use the good coefficient extension, the specified auxiliary-character powers and the TB bound on this family."
+  ],
+  "lean": [
+    {
+      "name": "Formalism.MainNotions.N.K.Closed.open_inputs_at_normalized",
+      "file": "Formalism/AdmissibleDesigns/StatementOneBFromUnramified.lean",
+      "line0": 74,
+      "line1": 93,
+      "sha256": "4464e956d645cd088f44048abf5b74ecdf5baf68abf22310a5b46ccdf3d6099e",
+      "dominated": 4883,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "7.20 (pn:P043)",
+      "pages": [
+        85,
+        85
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/P043.tex",
+      "section": "pn:P043",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [],
+  "paper_id": "P043",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "local-comparison-and-continuity-on-a-normalized-galois-family",
+  "aliases": [
+    "Five local conclusions on one normalized representation",
+    "P043 Local comparison and continuity on a normalized Galois family"
+  ],
+  "background": [
+    "Local Galois representations",
+    "Fontaine conditions",
+    "Tame inertia"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "7.20 (pn:P043)",
+    "pages": [
+      85,
+      85
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "summary": "On one normalized Galois family the stated cohomological and local assumptions give the block conditions, row colength bound and continuity required in the determinant argument. The same data must support the finite local condition and the matrix and orbit topologies."
+}

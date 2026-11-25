@@ -1,0 +1,179 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "P046",
+  "edition_sha256": "00f9feea08fa1ab9dd31bd82dd7c2be446acb41d6a19540a29b59c8f9fca511b",
+  "note_sha256": "8f4cbc652392d8d3c28698c542d097a168a76f01cec4c4f879b4b57890310ece",
+  "statement_sha256": "bb751338c1d30dc06f8f3f6249cc700878ca1216dcd87f1b16fb760c3a130748",
+  "sources": [
+    {
+      "path": "notes/units/P046_round4.md",
+      "sha256": "8f4cbc652392d8d3c28698c542d097a168a76f01cec4c4f879b4b57890310ece"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The specified chain directly supplies the five light-comparison fields.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: Joint, CmpJHyp and comparison chain"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.TwV.site_cmpLite_siteAdm",
+          "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/JointSiteChainComparedCarriesAdmittedSystem.lean",
+          "line0": 77,
+          "line1": 82
+        }
+      ],
+      "source": "notes/units/P046_round4.md",
+      "anchor": "Begin with entry admission as a rule and",
+      "source_lines": [
+        19,
+        19
+      ],
+      "claim_sha256": "ba08ca5d5864eef847cdf6bc75da84b6c50a7cc1a2d15e01224fb9bfb70a88ee",
+      "passage_sha256": "1fdaee84c0d3f15a95d91079315c951c8b641733f2a8cb6a656de8b4803905a5",
+      "sha256": "b776475e15ce22349f57a49f2981c6de5e305651b2025164c6b500ef54df598e",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The joint dictionary, curve and site laws instantiate the entry-admission rule on the chosen chain.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S1",
+        "input: AdmAtEnt2, CurveEx and the site's joint dictionary"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.TwV.admissible_at_each_site",
+          "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/JointSiteChainComparedCarriesAdmittedSystem.lean",
+          "line0": 29,
+          "line1": 49
+        }
+      ],
+      "source": "notes/units/P046_round4.md",
+      "anchor": "Build the joint lattice-tuple dictionary, admissible pairs and",
+      "source_lines": [
+        23,
+        23
+      ],
+      "claim_sha256": "3b83bfe339488a9b6549713cc1cf4e985e0a96de139a79bcf2f36dce174f5c33",
+      "passage_sha256": "9fe25031eb8930a376d95a1eeaa7179ce71e833525efc761ae946201ebc76f84",
+      "sha256": "b83daac2dbabf31fff8419fedc2c3b43f732e62141b8c9c1d0d1e620817b9fe9",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Both zero- and positive-step frame readings yield a nonzero scalar with norm and inverse norm at most one.",
+      "kind": "case-split",
+      "uses": [
+        "S2",
+        "input: zero- and positive-step frame evaluations"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.TwV.admissible_at_each_site",
+          "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/JointSiteChainComparedCarriesAdmittedSystem.lean",
+          "line0": 49,
+          "line1": 74
+        }
+      ],
+      "source": "notes/units/P046_round4.md",
+      "anchor": "In the stage test first obtain the stabilizer",
+      "source_lines": [
+        27,
+        27
+      ],
+      "claim_sha256": "fdd93603538cfc91f76622954d095a54937bc7a6282d65baef91d7ad11e323d8",
+      "passage_sha256": "4c1412bd759d6a7c0bf928927e163a8a288f8f983dc8c22af34c8c2ad93bdf14",
+      "sha256": "1223b04b18e67de4d28be472365acefb5a51353b73ee5d6fd525884ee897a5e1",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The admitted system has the stated normalization and level bounds on the original comparison chain.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "S2",
+        "S3",
+        "input: prescribed uniformizer and site level function"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.TwV.site_cmpLite_siteAdm",
+          "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/JointSiteChainComparedCarriesAdmittedSystem.lean",
+          "line0": 80,
+          "line1": 89
+        }
+      ],
+      "source": "notes/units/P046_round4.md",
+      "anchor": "Return the standard coordinates, the chosen uniformizer with",
+      "source_lines": [
+        31,
+        31
+      ],
+      "claim_sha256": "ac33dc966ad4ab099bcd9a7ff395310b1b7a2503ed1f8b4e6877a948a89db084",
+      "passage_sha256": "4c7ba71dcf7136d93a0de1001a389fe3e1ca38db91fd531a13cc943e217c618a",
+      "sha256": "254796845a082c74cdb08357bb1d4d70d44aaf0bf61774d0425242fc20d94a98",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "aed27d3ca5185a19ebb0611afbc3cdc98430b96208bbba6b4b1593d9172136ac",
+      "sources": [
+        {
+          "path": "notes/units/P046_round4.md",
+          "sha256": "0d89c3145ba217f734ac3dfaa5bfe6f8c68d51edf2bd1979f6a90ee46d9f5d87"
+        }
+      ],
+      "steps": {
+        "S1": "bae0ae8e8389c89581ed96ed7eb4cd862dfd503f2b9a845dc4551248736abfad",
+        "S2": "24b60f9b34549b0f6f52ece74f15636d88527e3e99946b640ba5469debb84616",
+        "S3": "acc4256897a9a5214857367b4ab959f8991a3b12a12edda36bae977fa6b94542",
+        "S4": "0746229815f270dbbe161d31ce731f8446eae8db7bba0ec98b68005f7bc399ff"
+      },
+      "step_texts": {
+        "S1": "The specified chain directly supplies the five light-comparison fields.",
+        "S2": "The joint dictionary, curve and site laws instantiate the entry-admission rule on the chosen chain.",
+        "S3": "Both zero- and positive-step frame readings yield a nonzero scalar with norm and inverse norm at most one.",
+        "S4": "The admitted system has the stated normalization and level bounds on the original comparison chain."
+      }
+    },
+    {
+      "edition_sha256": "50318e748a996f2ba016ef7e3a629ed64d66e29cfe98a088eab47dacb68be6fe",
+      "sources": [
+        {
+          "path": "notes/units/P046_round4.md",
+          "sha256": "0d89c3145ba217f734ac3dfaa5bfe6f8c68d51edf2bd1979f6a90ee46d9f5d87"
+        }
+      ],
+      "statement_sha256": "bb751338c1d30dc06f8f3f6249cc700878ca1216dcd87f1b16fb760c3a130748",
+      "steps": {
+        "S1": "b776475e15ce22349f57a49f2981c6de5e305651b2025164c6b500ef54df598e",
+        "S2": "b83daac2dbabf31fff8419fedc2c3b43f732e62141b8c9c1d0d1e620817b9fe9",
+        "S3": "1223b04b18e67de4d28be472365acefb5a51353b73ee5d6fd525884ee897a5e1",
+        "S4": "254796845a082c74cdb08357bb1d4d70d44aaf0bf61774d0425242fc20d94a98"
+      },
+      "step_texts": {
+        "S1": "The specified chain directly supplies the five light-comparison fields.",
+        "S2": "The joint dictionary, curve and site laws instantiate the entry-admission rule on the chosen chain.",
+        "S3": "Both zero- and positive-step frame readings yield a nonzero scalar with norm and inverse norm at most one.",
+        "S4": "The admitted system has the stated normalization and level bounds on the original comparison chain."
+      },
+      "step_passages": {
+        "S1": "1fdaee84c0d3f15a95d91079315c951c8b641733f2a8cb6a656de8b4803905a5",
+        "S2": "9fe25031eb8930a376d95a1eeaa7179ce71e833525efc761ae946201ebc76f84",
+        "S3": "4c1412bd759d6a7c0bf928927e163a8a288f8f983dc8c22af34c8c2ad93bdf14",
+        "S4": "4c7ba71dcf7136d93a0de1001a389fe3e1ca38db91fd531a13cc943e217c618a"
+      }
+    }
+  ]
+}

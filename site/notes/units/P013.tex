@@ -1,0 +1,20 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit P013. Local manuscript v3, item 6.13, heading on printed PDF p. 57.
+% UpperTheory.One.vwin_of_row
+% paper2/upper.tex:99–105. Verbatim excerpt; SHA-256 2f97ba9839dcdf3c2d19d5458b372ed730b2e2ef29ea1f9a8602c765e1eb7cf9.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+\noindent\nolinkurl{UpperTheory.V.Z.J.count_i_of_printed_bound_k_kato_automorphy} --- in-repo constant (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/LinkedUnlE.lean:49--54}); not compared.\par
+\noindent\nolinkurl{UpperTheory.V.Z.Kato.WeilSphericalRecords.katoTwoW_of_printsH} --- in-repo constant (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/KatoTwoWOfPublishedH.lean:48--49}); not compared.\par
+% End of atlas edition annotation.
+
+\begin{formalstatement}[The Selmer window from the polarised row]\label{pn:P013}
+Assume $\mathcal R$. Then $V$ holds with the window $[Y,Y^2]$, the indicated quantifier order and the specified exponent $401$.
+\end{formalstatement}
+\nodestatus{P013} \noindent\emph{Round 23 candidate.} See Section~\ref{sec:r23-status} for the written argument and its review status.\par
+The source inserts $\mathcal R$ in the one-field open-image record, supplies a base-change identity, and passes the row to the automorphic window construction. Blueprint catalogue N623~\bploc{node:N623} points to N624 and its arithmetic inputs. Mazur and Wiles~\cite{r21-mw} treat cyclotomic class groups in \emph{Class fields of abelian extensions of $\mathbb Q$}, Introduction. Rubin's \emph{Euler Systems}, Chapter~II, bounds Selmer groups using Euler systems. Soulé's \emph{A bound for the torsion in the $K$-theory of algebraic integers} bounds torsion up to small primes. These comparisons leave the simultaneous bound over all finite prime sets, twists below $\lfloor x^{401}\rfloor$, and moving fields on the selected window to be justified.
+
+\paragraph{Three inputs for primitive characters.} Write $\mathcal B$ for the project's finite-field Green classification of cuspidal characters by polynomial labels, $V$ for the Selmer window, and $\mathcal F$ for nonemptiness of \code{HypsAlt} with first argument the closedness of \code{LinkN} in each designated family class and second argument \code{DefiniteSideCondition}. The latter specifies the definite-row restriction (\nolinkurl{LabelDatum.lean:91--112}, \nolinkurl{ThirdPlaceSeries/Hyps.lean:22}). Green's \emph{The characters of the finite general linear groups} treats the finite-group representation input.

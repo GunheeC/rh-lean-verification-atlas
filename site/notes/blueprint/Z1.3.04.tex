@@ -1,0 +1,50 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% RH Notes blueprint source excerpts for Z1.3.04
+% Verbatim excerpts in the notation of the parent blueprint. The labelled editions and source ranges appear below.
+% See the unit YAML for the current proof status. Earlier-round passages retain their original wording.
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+\noindent\nolinkurl{UpperTheory.V.Z.Kato.Joint.kato_global_unit_law_of_smoothed_classes} --- in-repo constant (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/FrobeniusHodgeTateLaws/KatoGlobalUnitLawOfSmoothedClasses.lean:8--10}); not compared.\par
+% End of atlas edition annotation.
+
+\section*{Z1.3.04. One global system with local constraints}
+
+% Parent source SHA-256: 1af64922b98ed2310744411b1f18b25cc426c97220646321471836e1a3a409d6
+% blueprint/ch_P.tex lines 13247 through 13255; r6:Z1.3.04
+\subsection{Z1.3.04. Simultaneous smoothing of the global and local data}\label{r6:Z1.3.04}
+Given the class theorem, the smoothed law and the admissible projection statement, start with the \emph{same} ordinary source throughout. The eigenfunctional construction chooses $N,\chi,\theta,\alpha$ and the two smoothing integers $c,d$. Put $c_w(x)=\iota^{-1}(\widehat\theta(x)/2)$. The Fourier input gives a nonzero coefficient and the integrality bound. Adjoin the finitely many $c_w(x)$ to a coefficient ring already containing the entries of $W$; apply admissibility there, choosing $\mathrm{pr},c_f,\lambda,\kappa_A$ together. The marked matrices supply the required bottom rows. The class theorem gives one family $Y$, its specialization $y$ and one power $\ell^m$ for both. The modified diamond character agrees on every residue unit, so the same functional and projection satisfy the required period identity. Apply the local law to this $Y$ at $d_0=\ell+1$; it gives $\kappa_5\ne0$ and the compatible periods $v_m$.
+\par{\footnotesize \nolinkurl{UpperTheory.V.Z.Kato.Joint.kato_global_unit_law_of_smoothed_classes} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/FrobeniusHodgeTateLaws/KatoGlobalUnitLawOfSmoothedClasses.lean}\allowbreak:8--10). \nolinkurl{UpperTheory.V.Z.Kato.Joint.glue2} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/FrobeniusHodgeTateLaws/AdmissibleHeckeAlgebraOfGenerated.lean}\allowbreak:17--86).\par}
+
+Let $b_i,t_i$ be the original four smoothing coefficients and frequencies. Append the four pairs $(-d_0b_i,d_0t_i)$. All eight frequencies remain prime to $\ell$. In the twisted moment at exponent $e$ their sum is $(1-d_0^{e+1})S_4$: the character of $d_0$ is one since $d_0\equiv1\bmod\ell$. The original four-term estimate gives $S_4\ne0$, and $d_0>1$ gives the other factor. The tame averaging identity contributes $\varphi(N)$, so the nonzero comparison scalar before multiplication by $\ell^m$ is $\kappa_5\kappa_A\varphi(N)$. Rescaling uses the same exponent on the global cocycle and on the smoothed second coordinate. The source inertia identity and determinant formula give $\nu_D|_I=1$; the Frobenius input supplies a lift with unit value. These are the data used to obtain the pin over an enlarged integral coefficient ring. In parallel, linearity of the smoothing and $d_0\equiv1\pmod\ell$ preserve the three system and specialization identities. Extending coefficients sends these identities to that same ring. This yields one tuple supporting all four assertions.
+\par{\footnotesize \nolinkurl{UpperTheory.V.Z.Kato.Joint.glue2} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/FrobeniusHodgeTateLaws/AdmissibleHeckeAlgebraOfGenerated.lean}\allowbreak:87--134). \nolinkurl{UpperTheory.V.Z.Kato.Joint.glue2} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/FrobeniusHodgeTateLaws/AdmissibleHeckeAlgebraOfGenerated.lean}\allowbreak:153--186). \nolinkurl{UpperTheory.V.Z.Kato.Joint.glue2} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/FrobeniusHodgeTateLaws/AdmissibleHeckeAlgebraOfGenerated.lean}\allowbreak:187--230).\par}
+
+\emph{Partial. [Proved in Lean, not reproduced:]} the ordinary eigenfunctional giving the initial $\theta,\alpha,c,d$ with its measure and smoothing clauses, and the construction converting the measured character moments, the explicit law, and the nonzero eight-term moment into a pin for this smoothed family. Those two inputs are supplied internally to the theorem, in addition to its three stated hypotheses.
+\par{\footnotesize \nolinkurl{UpperTheory.V.Z.Kato.Joint.kato_global_unit_law_of_smoothed_classes} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/FrobeniusHodgeTateLaws/KatoGlobalUnitLawOfSmoothedClasses.lean}\allowbreak:8--10). \nolinkurl{UpperTheory.V.Z.Kato.Joint.glue2} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/FrobeniusHodgeTateLaws/AdmissibleHeckeAlgebraOfGenerated.lean}\allowbreak:21--43). \nolinkurl{UpperTheory.V.Z.Kato.Joint.glue2} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/FrobeniusHodgeTateLaws/AdmissibleHeckeAlgebraOfGenerated.lean}\allowbreak:197--230).\par}
+
+% Parent source SHA-256: 1fdc6ea9aac6cf10316f85b3253b33ae98289a76ff5aa2e79daaaf11e057ce18
+% blueprint/ch_P_r7.tex lines 752 through 774; r7:Z1.3.04
+\subsection{Z1.3.04. One eigenfunctional and one measured tuple}\label{r7:Z1.3.04}
+\textbf{B06.} Construct the initial ordinary eigenfunctional at one
+auxiliary level with its smoothers, character and ordinary root.
+There is a residue obstruction to Kato 12.6(2) at that level: at
+\(e=1\) the prescribed pair \(n_1=1,n_2=0\) requires
+\(d^2\ne d^2(\theta\chi)(d)\), hence \(d\not\equiv1\pmod N\).
+The form's original level may divide \(N\); the calculation concerns the
+auxiliary level. Section~\ref{r6:kato-lit} records the differently
+indexed symbols in 12.6(1).
+\nolinkurl{GlobalTheory.EisM.CuspidalUnitaryTwistsClaim},
+\path{Statements/CuspidalUnitaryTwists/CuspidalUnitaryTwistsClaim.lean:13--25};
+\nolinkurl{GlobalTheory.T.ordinaryEisensteinEigenfunctional_exists},
+\path{FoundationProofs/OrdinaryEisensteinEigenfunctionalExistsStatement.lean:11--12}.
+
+\textbf{B07.} Obtain \(\mathrm{Pin7}\) for the measured tuple, with one
+nonzero scalar \(\kappa_0/\kappa\), an integral series, the two signed
+character formulas and the stipulated lower bound. The source takes the
+series and \(\kappa\) from the measure input, embeds both coefficient
+rings in one, and increases the common starting level for both signs.
+Kato 12.5(1)'s character values do not identify this measure or furnish
+its uniform lower bound on this tuple. See Section~\ref{r6:Z1.3.04},
+\nolinkurl{UpperTheory.V.Z.Kato.Joint.pinOf},
+\path{FrobeniusHodgeTateLaws/LawMono.lean:72--97}.
+

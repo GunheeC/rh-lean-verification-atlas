@@ -1,0 +1,156 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "D562",
+  "edition_sha256": "d71ac15457bd5671ea4c6d5f8f27645fc27d6163ef7b01311b545bd70aa03303",
+  "note_sha256": "1233ad411cf370899bdaedbf2311729df20f781c3cd238210a61ac35ba9d4d34",
+  "statement_sha256": "92d685789477bb137e5c749305f1447bc99c88ffdf19ca1ebac2b2293fac76a1",
+  "sources": [
+    {
+      "path": "notes/units/D562_v4.md",
+      "sha256": "1233ad411cf370899bdaedbf2311729df20f781c3cd238210a61ac35ba9d4d34"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The middle binomial coefficient bounds the increase of the von Mangoldt sum over the upper half of the range; induction gives the bound three times the endpoint.",
+      "kind": "inequality",
+      "uses": [
+        "standard: factorial divisor identity and induction"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.LFunctionChainParameters.ThickSetMeanBounds.lipschitz_weight_all",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean",
+          "line0": 957,
+          "line1": 964
+        }
+      ],
+      "source": "notes/units/D562_v4.md",
+      "anchor": "We first prove the numerical bound",
+      "source_lines": [
+        39,
+        39
+      ],
+      "claim_sha256": "6c742b08cf1cd60451e2320a960f7c3ff978ff09190ca0b08f8c67cb7333504c",
+      "passage_sha256": "950dabbeb91c6aaeb47665e29971cd69320270bc96aa50dcc0b98a7fa777592b",
+      "sha256": "b86b188519322cd069cbdb7b7f7e216e72157b7bd6dd0430be333c5cd779a4a7",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "For a nonprincipal character the linear term cancels when the width changes, leaving a positive-part difference controlled by the von Mangoldt sum.",
+      "kind": "inequality",
+      "uses": [
+        "S1",
+        "standard: positive part is one-Lipschitz"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.LFunctionChainParameters.ThickSetMeanBounds.lipschitz_weight_all",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean",
+          "line0": 957,
+          "line1": 964
+        }
+      ],
+      "source": "notes/units/D562_v4.md",
+      "anchor": "Multiplying the first equality",
+      "source_lines": [
+        50,
+        50
+      ],
+      "claim_sha256": "a05d900284fb429e490073a40109e9ad897132518480ebd221d2fc13a374e595",
+      "passage_sha256": "d311ee11c2f6c5b8f85ab176645d24064b9e6c19fae940b3d42e1058479186de",
+      "sha256": "bc6203914692ff4665615ae8aed477b091ff7d7e6b08e8833f26e60ab854d4f7",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "For the principal character two nonnegative terms are subtracted. Bounding their maximum preserves the constant three in the width estimate.",
+      "kind": "inequality",
+      "uses": [
+        "S1",
+        "standard: logarithmic upper bound"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.LFunctionChainParameters.ThickSetMeanBounds.lipschitz_weight_all",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean",
+          "line0": 957,
+          "line1": 964
+        }
+      ],
+      "source": "notes/units/D562_v4.md",
+      "anchor": "Both have the same sign",
+      "source_lines": [
+        61,
+        61
+      ],
+      "claim_sha256": "8f9b18d58ba37be864a8d1f37ea84ebdb02af32bfffe8047ae19eea07d2092a1",
+      "passage_sha256": "0a69da2e9aacf055fc49355ffdbd03c016d1b34d574f181cfd8c4d51848d7c16",
+      "sha256": "c36f982a0dec1041242aba75f2e46bde3e0485e428e4b55156d0e157f5e164bf",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The factorial identity bounds the log-weighted prime-power sum divided by n, yielding the logarithmic increment bound for nonprincipal characters and a uniform bound for the principal one.",
+      "kind": "inequality",
+      "uses": [
+        "S1",
+        "standard: factorial integral comparison"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.LFunctionChainParameters.ThickSetMeanBounds.derivative_integral_all",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean",
+          "line0": 966,
+          "line1": 981
+        }
+      ],
+      "source": "notes/units/D562_v4.md",
+      "anchor": "For the increments",
+      "source_lines": [
+        63,
+        63
+      ],
+      "claim_sha256": "303556c800a7a79b744289eef6cdbd461afdb7504c31349e05aa28d9dc7b0123",
+      "passage_sha256": "de87db46d2b4d2c22bdbb593726b8ee3325f333ec4c9c766a969532b56925090",
+      "sha256": "5292c6251c3061c744540d2a83d3ebd300caa3f54521ab126b5cda7c1c5d496e",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "7e7034a50ce1661fd1c4386699ab9490e8bdb80086764746c78af96fe7e69696",
+      "sources": [
+        {
+          "path": "notes/units/D562_v4.md",
+          "sha256": "21c995f68900e7dba384453f7500729f20ca826e024df14da326c4ea12f1d9e6"
+        }
+      ],
+      "statement_sha256": "92d685789477bb137e5c749305f1447bc99c88ffdf19ca1ebac2b2293fac76a1",
+      "steps": {
+        "S1": "b86b188519322cd069cbdb7b7f7e216e72157b7bd6dd0430be333c5cd779a4a7",
+        "S2": "bc6203914692ff4665615ae8aed477b091ff7d7e6b08e8833f26e60ab854d4f7",
+        "S3": "c36f982a0dec1041242aba75f2e46bde3e0485e428e4b55156d0e157f5e164bf",
+        "S4": "5292c6251c3061c744540d2a83d3ebd300caa3f54521ab126b5cda7c1c5d496e"
+      },
+      "step_texts": {
+        "S1": "The middle binomial coefficient bounds the increase of the von Mangoldt sum over the upper half of the range; induction gives the bound three times the endpoint.",
+        "S2": "For a nonprincipal character the linear term cancels when the width changes, leaving a positive-part difference controlled by the von Mangoldt sum.",
+        "S3": "For the principal character two nonnegative terms are subtracted. Bounding their maximum preserves the constant three in the width estimate.",
+        "S4": "The factorial identity bounds the log-weighted prime-power sum divided by n, yielding the logarithmic increment bound for nonprincipal characters and a uniform bound for the principal one."
+      },
+      "step_passages": {
+        "S1": "950dabbeb91c6aaeb47665e29971cd69320270bc96aa50dcc0b98a7fa777592b",
+        "S2": "d311ee11c2f6c5b8f85ab176645d24064b9e6c19fae940b3d42e1058479186de",
+        "S3": "0a69da2e9aacf055fc49355ffdbd03c016d1b34d574f181cfd8c4d51848d7c16",
+        "S4": "de87db46d2b4d2c22bdbb593726b8ee3325f333ec4c9c766a969532b56925090"
+      }
+    }
+  ]
+}

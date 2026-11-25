@@ -1,0 +1,99 @@
+{
+  "id": "Z3.1",
+  "title": "Normalized matrix algebra",
+  "track": {
+    "primary": "galois",
+    "secondary": []
+  },
+  "statement": "At a normalized point assume the characteristic coefficients belong to the Hecke algebra, the residual matrix span is full, and the idempotent and distinct-eigenvalue corner hypotheses hold. There are normalized ring data, lifting the point, whose congruence valuation equals the quotient length; their block modules and finite display satisfy the specified relations.",
+  "assumptions": [
+    "source:blueprint_v13"
+  ],
+  "hypothesis_details": [
+    "Take a normalized point with characteristic coefficients in the Hecke algebra and full residual matrix span.",
+    "Assume the stated idempotent and distinct-eigenvalue corner conditions."
+  ],
+  "lean": [
+    {
+      "name": "Formalism.MainNotions.N.K.normalized_ring_data",
+      "file": "Formalism/AdmissibleDesigns/NormalizedRingData.lean",
+      "line0": 20,
+      "line1": 60,
+      "sha256": "57cb9c9eeeffe8a084ec9f4c3a619935127f90bba099d789d09d8da0b99431e8",
+      "dominated": 8205,
+      "graph": "allChi",
+      "role": "statement"
+    },
+    {
+      "name": "Formalism.RepresentationBoundsCohomology.ringDataObjects.moduleBc",
+      "file": "Formalism/WachLatticeTwists/RamifiedBlockRings/RamifiedBlockProofs/SpanSingle.lean",
+      "line0": 62,
+      "line1": 148,
+      "sha256": "e1ec8c2f947c785c2838f96316b13fa86d9a525c2275dafa3e84147a488514f9",
+      "dominated": 363,
+      "graph": "allChi",
+      "role": "statement"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/blueprint/Z3.1.tex",
+      "section": "r6:normalized-ring",
+      "pages": []
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r6:normalized-ring",
+      "pages": [
+        287,
+        287
+      ],
+      "printed_page": 262,
+      "scope": "First page of this named destination."
+    }
+  ],
+  "status": "Full",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [
+    "P042"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "blueprint_members": [
+    "Z3.1"
+  ],
+  "representative": "Formalism.MainNotions.N.K.normalized_ring_data",
+  "statement_declarations": [
+    "Formalism.MainNotions.N.K.normalized_ring_data",
+    "Formalism.RepresentationBoundsCohomology.ringDataObjects.moduleBc"
+  ],
+  "grade_scope": "Named statement declarations with the hypotheses above. Chart supplier records have their own review scopes.",
+  "confirmation_basis": "Minimum across the statement declarations, using registry rows for the blueprint assignments listed here. Reviews of other expositions of a shared declaration are included as context.",
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "slug": "normalized-matrix-algebra",
+  "aliases": [
+    "Z3.1 Normalized matrix algebra"
+  ],
+  "background": [
+    "Matrix algebras over local rings",
+    "Residual representations"
+  ],
+  "hypothesis_source": {
+    "document": "blueprint_v13",
+    "section": "r6:normalized-ring",
+    "pages": [
+      287,
+      287
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "P042": "graph"
+  },
+  "summary": "At a normalized point satisfying the coefficient, residual-span and corner assumptions, lifted ring and block data identify a congruence valuation with a quotient length. This puts the valuation into a module calculation for the specified finite presentation."
+}

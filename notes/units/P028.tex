@@ -1,0 +1,34 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit P028. Local manuscript v3, item 7.5, heading on printed PDF p. 75.
+% UpperTheory.V.Alg.M.mprime_holds
+% paper2/inputs_one.tex:205–232. Verbatim excerpt; SHA-256 b8096ee29246c6a0f69dc6321800cec955d642f4928cc81e51b4b08e3c2fbf0f.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+\begin{theorem}[The lower bound from integral derivations]\label{pn:P028}
+Let \(O\) be a discrete valuation ring with finite residue field, \(A\)
+an algebra graded by an abelian group, \(x:A\to O\) a point vanishing on
+\(A_j\), and \(F_i\in A_j\). Fix \(0\ne c\in O\). Suppose an
+additive injection \(D:M\to\operatorname{Hom}_O(A,O/(c))\) kills all
+\(F_i\) at every value. Suppose each \(D(\mu)\) is the reduction of an
+\(O\)-valued point derivation of weight \(j\) at \(x\). With the
+saturated lattice as above,
+\[
+ \operatorname{length}_O M \le
+ \operatorname{length}_O(L_j/\langle\overline F_i\rangle).
+\]
+\end{theorem}\nodestatus{P028}
+\begin{proof}
+A point derivation kills \((\ker x)^2\); its integral lift kills the
+saturation because \(O\) is torsion-free. Every \(D(\mu)\) therefore
+gives a functional on the displayed quotient \(Q\). The map to
+\(\operatorname{Hom}_O(Q,O/(c))\) is injective: its values determine
+\(D(\mu)\) in degree \(j\), and all other homogeneous pieces vanish
+by the weight condition. If \(Q\) has infinite length the inequality
+is immediate. Otherwise induction on a composition series bounds
+the length of the dual by \(\operatorname{length}Q\), since the
+submodule of \(O/(c)\) killed by the maximal ideal has length at most
+one. Every finite-length module has cardinality equal to the residue
+cardinality raised to its length. Comparing cardinalities under the
+additive injection proves the result without assuming \(O\)-linearity
+of \(D\). This is the second deduction of Blueprint Z1.4~\bploc{sec:P-z14-full}.
+\end{proof}

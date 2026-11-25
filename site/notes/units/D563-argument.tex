@@ -1,0 +1,56 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Manuscript v3, heading p. 13; original out/r23_budget.tex, SHA-256 85dbea55991176a134df2edeadb31e86bc846586dec36f6144300b459eacc72a.
+\paragraph{The four terms after division by the number of columns.}
+Here is the numerical implication used in B09. Write $n=|H|$, $t=|TT|$,
+$r=|T_2|$, $\delta=r/n$, $Q=tmb$, and $G=G_m^A-\Sigma_A$. Put
+$X=x^{1/2+\varepsilon}$, $Y=x^{1/2+13\varepsilon/8}$ and $P=x^{C\varepsilon}$.
+The size record in \decid{D566} gives, with $x\ge3$, $\varepsilon>0$, $C\ge0$, $b>0$ and $n>0$,
+\[
+\begin{gathered}
+0\le a_E\le2xb,\qquad n/t\le 2x^{\varepsilon/8},\qquad
+x^{-\varepsilon}\le\delta\le1,\\
+x^{1/2-\varepsilon}\le m\le x^{1/2+\varepsilon/2},\qquad
+xm\le k\le n^2 x^{1/2-\varepsilon}.
+\end{gathered}
+\]
+In particular $t,m,k,Q$ are positive. More precisely the original inequality
+$t\ge n x^{-\varepsilon/8}/2$ gives positivity of $t$ before taking
+reciprocals. Assume $26\le x^{3\varepsilon/8}$, as is possible for
+every fixed $\varepsilon>0$.
+See \nolinkurl{SizeWindows}, \path{GrowthBoundGivesRiemannHypothesis.lean:109--123},
+and \nolinkurl{size_windows_split}, \path{ChainSlopeWindows/PChain.lean:23--26}.
+
+\begin{lemma}[Size bound, \decid{D563}]\label{r23:budget}
+If $\mathrm{Err}\le P\,\mathrm{Br}$ for the source bracket and the
+character average gives
+\[
+Q\,\frac{\delta}{2}(G-4X)\le\mathrm{Err}+2Q/x,
+\]
+then $G\le x^{1/2+(C+3)\varepsilon}$.
+\end{lemma}
+\begin{proof}
+Expand $\mathrm{Br}$ and divide its four summands by $Q$.
+For the first, the lower rank bound gives $x/m\le X$; for the
+third the upper rank bound controls the extra factor of $m$:
+\[
+\begin{aligned}
+\frac{a_E}{mb}&\le2x/m\le2Y,\\
+\frac{a_E m}{bk}&\le2xm/k\le2Y,\\
+2(n/t)m x^\varepsilon
+ &\le4x^{\varepsilon/8+1/2+\varepsilon/2+\varepsilon}=4Y,\\
+\frac{r k}{n^2t}x^{2\varepsilon}
+ &\le(n/t)x^{1/2+\varepsilon}\le2x^{1/2+9\varepsilon/8}\le2Y .
+\end{aligned}
+\]
+These are precisely the terms of \nolinkurl{errorBracketSizeWindows}
+(\path{ErrorFormsWeakWindowsFalse.lean:133--136});
+the four estimates occur as \nolinkurl{SZ.T1}--\nolinkurl{SZ.T4}
+in \path{LipschitzWeightAndMinimum.lean:31--113}.
+Consequently $\mathrm{Err}/Q\le 10PY$. Since $2/x\le1\le PY$, division by
+$Q$ gives $\delta(G-4X)\le22PY$. Divide by $\delta>0$ and use
+$\delta^{-1}\le x^\varepsilon$. Both $X$ and $PYx^\varepsilon$ are at
+most $Z=x^{1/2+(C+21/8)\varepsilon}$ (the second equals $Z$), so
+$G\le4X+22PYx^\varepsilon\le26Z$. Finally $26Z\le x^{3\varepsilon/8}Z$
+is the asserted bound. See \nolinkurl{proposition_size_bound},
+\path{LipschitzWeightAndMinimum.lean:507--592}.
+\end{proof}

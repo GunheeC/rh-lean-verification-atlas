@@ -1,0 +1,94 @@
+{
+  "id": "Z2.K6",
+  "title": "Uniform layer count and the global kernel",
+  "track": {
+    "primary": "galois",
+    "secondary": [
+      "ktheory"
+    ]
+  },
+  "statement": "Let $L$ be totally complex with maximal $\\ell$-power root exponent $c$ satisfying TopRoot, and $E\\ge1$. If the specified equivariant character groups are finite of order at most $B$ for every allowed layer, there is a finite integer $s=\\mathrm{shaInv}(L,\\ell,E)$ with $\\ell^s\\le B$.",
+  "assumptions": [
+    "source:blueprint_v13"
+  ],
+  "hypothesis_details": [
+    "Use totally complex $L$, $E\\ge1$ and TopRoot at the maximal root exponent.",
+    "On every allowed layer the designated equivariant character group is finite with the same order bound $B$."
+  ],
+  "lean": [
+    {
+      "name": "PositivityTheory.QuaternionShaBounds.sSha",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/RingEquivalences/OrderOfOneAddPrimePowZmodPrimePow.lean",
+      "line0": 490,
+      "line1": 490,
+      "sha256": "91adde882fb79c61f3afcb614c18823e3ccb4ffa4bebc8891456b8fca3a507c4",
+      "dominated": 622,
+      "graph": "allChi",
+      "role": "statement"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/blueprint/Z2.K6.tex",
+      "section": "lem:P-r3-k6",
+      "pages": []
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "lem:P-r3-k6",
+      "pages": [
+        184,
+        184
+      ],
+      "printed_page": 159,
+      "scope": "First page of this named destination."
+    }
+  ],
+  "status": "Full",
+  "grade": "L0",
+  "reviews": [
+    "reviews/R20_review.md"
+  ],
+  "prerequisites": [
+    "Z2.K1",
+    "Z2.K5"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "blueprint_members": [
+    "Z2.K6"
+  ],
+  "representative": "PositivityTheory.QuaternionShaBounds.sSha",
+  "statement_declarations": [
+    "PositivityTheory.QuaternionShaBounds.sSha"
+  ],
+  "grade_scope": "Named statement declarations with the hypotheses above. Chart supplier records have their own review scopes.",
+  "confirmation_basis": "Minimum across the statement declarations, using registry rows for the blueprint assignments listed here. Reviews of other expositions of a shared declaration are included as context.",
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "slug": "uniform-layer-count-and-the-global-kernel",
+  "aliases": [
+    "Z2.K6 Uniform layer count and the global kernel"
+  ],
+  "background": [
+    "Cyclotomic extensions",
+    "Galois localization"
+  ],
+  "hypothesis_source": {
+    "document": "blueprint_v13",
+    "section": "lem:P-r3-k6",
+    "pages": [
+      184,
+      184
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "Z2.K1": "statement-reading",
+    "Z2.K5": "statement-reading"
+  },
+  "summary": "If the equivariant character groups in all allowed layers have order at most one common bound, the base localization-kernel invariant is finite and the corresponding prime power is at most that bound. This passes from counts in the tower to a length at its base."
+}

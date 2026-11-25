@@ -1,0 +1,90 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D123",
+  "title": "Arakelov degree of the normalized flat generator",
+  "track": {
+    "primary": "arakelov",
+    "secondary": [
+      "theta"
+    ]
+  },
+  "statement": "Give an adelic norm to the flat generator. Its degree is (p\\ensuremath{-}q)/2 times the real CM period logarithm plus q times twice the logarithm of the square root of d minus the logarithm of the root discriminant.\n\\[\nN\\ \\text{adelic},\\qquad \\deg N=\\tfrac{p-q}{2}\\operatorname{Re}\\log\\Omega(E,\\chi)+q\\bigl(2\\log\\sqrt d-\\log\\operatorname{rd}(E)\\bigr).\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Use a CM host, the stated Kronecker character, CM type and prescribed embedding of the host square root.",
+    "The section is the specified flat generator and its assigned norms satisfy the norm-comparison condition."
+  ],
+  "lean": [
+    {
+      "name": "GlobalTheory.T.FlatDegree_holds",
+      "file": "Development/AutomorphicSpectrum/Proofs/GeometryProofs/FlatDegreeHoldsStatement.lean",
+      "line0": 5,
+      "line1": 6,
+      "sha256": "36e7f9f5f3b9929174bd08ee5b701ced3cd89aac268241f25bb42f0c9e7fa6df",
+      "dominated": 9501,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/D123_round4.md",
+      "section": "D123 · Arakelov degree of the normalized flat generator",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "G.133 (decomp:D123)",
+      "pages": [
+        190,
+        190
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D123.tex",
+      "section": "decomp:D123",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": 2,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "D123",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "arakelov-degree-of-the-normalized-flat-generator",
+  "aliases": [
+    "FlatDegree_holds",
+    "D123 Arakelov degree of the normalized flat generator"
+  ],
+  "background": [
+    "CM periods",
+    "Adelic metrics and Arakelov degree"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.133 (decomp:D123)",
+    "pages": [
+      190,
+      190
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "review_status": "pending_review",
+  "summary": "A flat generator in a particular CM frame carries prescribed norms at the infinite and finite places. The unit computes their normalized degree from a CM period and the root discriminant. This supplies an exact input to the tower calculation, including the finite contribution that an archimedean period alone would miss."
+}

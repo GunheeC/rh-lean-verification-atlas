@@ -1,0 +1,99 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "P018",
+  "edition_sha256": "0a1d7ed4600b44dc4bf8afa659c3474af9aea89fc04160511d537f16509c34b6",
+  "note_sha256": "2df85acbf169fcabf4dae00513cd48cbc6f48649befcf83bc06076ce7f747447",
+  "statement_sha256": "c4b7dda2814c8e7da338bc71a178728f53261be386cce6744aa279f036437742",
+  "sources": [
+    {
+      "path": "notes/units/P018.tex",
+      "sha256": "2df85acbf169fcabf4dae00513cd48cbc6f48649befcf83bc06076ce7f747447"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Index a character family by the level characters, giving the principal character weight one and the others their prescribed positive weights.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: weights of the chosen level"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Comparison₂.formB",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/Imports.lean",
+          "line0": 8,
+          "line1": 19
+        }
+      ],
+      "source": "notes/units/P018.tex",
+      "anchor": "Let $F$ be",
+      "source_lines": [
+        9,
+        20
+      ],
+      "claim_sha256": "4678ac8d05a6319c42e7e21f6aaf1d176b21ddbd9bcdfb5d47c7a87d7ca6b25b",
+      "passage_sha256": "7e422744994b7abd52f78afc5a00e77e3becd3b680f07a082fbef93416aada1c",
+      "sha256": "8482016affcb9da52c52c4e58e431d443cadd598403d58f738a4ecbb10ce8c19",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Taking real parts in the family prime sum recovers exactly the real level sum.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "standard: real principal sum"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Comparison₂.formB",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/Imports.lean",
+          "line0": 8,
+          "line1": 19
+        }
+      ],
+      "source": "notes/units/P018.tex",
+      "anchor": "Since $G_",
+      "source_lines": [
+        9,
+        20
+      ],
+      "claim_sha256": "24aa3c4d3ff6ac0f878f28e09d542e435173719186975000ec58c080bc7a75c4",
+      "passage_sha256": "7e422744994b7abd52f78afc5a00e77e3becd3b680f07a082fbef93416aada1c",
+      "sha256": "6c89cd32e48f8125e2c9c6a2c869a5a2c1e4953674e905103b3fdb2312bbc523",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Take the window excess to be lambda minus one and the multiplicative constant one to obtain the required zero-free level.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S2",
+        "P023"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Comparison₂.formB",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/Imports.lean",
+          "line0": 8,
+          "line1": 19
+        }
+      ],
+      "source": "notes/units/P018.tex",
+      "anchor": "Apply \\nodeid{P023}",
+      "source_lines": [
+        9,
+        20
+      ],
+      "claim_sha256": "41b0c14d3775d871de2bf11af113ae2a123429f05c0a04af0bbe311a264e12a7",
+      "passage_sha256": "7e422744994b7abd52f78afc5a00e77e3becd3b680f07a082fbef93416aada1c",
+      "sha256": "cd27dd3833ceaf3a991f3203448207ca974c65788fd6824661896efff73b277d",
+      "ai_review": []
+    }
+  ],
+  "history": []
+}

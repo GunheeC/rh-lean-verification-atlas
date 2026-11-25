@@ -1,0 +1,375 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Sections of blueprint v13 with local source-root references normalized. Selected-source hashes identify the original fragments.
+
+% blueprint/ch_O.tex:1-133
+\chapter{Overview of the formalization}\label{ch:O}
+
+\section*{Scope and verification}
+This blueprint follows five declarations in \path{Main.lean:4--12}, beginning with
+\texttt{riemannHypothesis} and ending with \texttt{LFunction\_eq\_zero\_re\_of\_isPrimitive}.
+Chapter~\ref{ch:E} gives their precise statements and traces the reductions between them.
+The statements, the audit of their dependencies, and the adequacy of the mathematical explanations
+in this document are three separate questions. For the first two, Sutherland publishes the
+five axiom lists and the results of comparison against a challenge importing Mathlib. The
+dated results and the scope of the comparison are given with Theorem~\ref{thm:E-main}
+\cite{E-Sutherland}. This is an informal, AI-written draft for human review.
+No chapter has been signed off by a human mathematician. The trust ledger on page~\pageref{ch:trust} lists the inputs still awaiting a hand reconstruction.
+
+A proof marked \emph{complete} supplies the argument from its displayed hypotheses and cited
+inputs. \emph{Reconstructed} identifies a proof whose main steps were followed but which
+delegates intermediate arguments. \emph{Statement only} records a result whose proof is left
+to its source. In Chapter~\ref{ch:N}, \emph{unread} identifies predicates left folded in the
+758-node catalogue. Named declarations and source locations in the chapters give a starting
+point for checking a statement or a delegated step.
+
+\section*{Five layers of the argument}
+
+Alp\"oge describes the number of iterated theta lifts as playing the role of multiplicity in
+Stepanov's method. This is the author's interpretation of the construction \cite{O-remark}.
+In the formalization, $m$ counts the columns. The chain of $m$ operators, the conditions on
+its input, and the inequalities summed over its columns are distinct objects. Following them
+from the conclusion back to the hypotheses gives the following route.
+
+\begin{description}[leftmargin=0pt,style=nextline]
+\item[E. From windows to a zero-free half-plane.]
+The level sum combines a centered principal term with weighted real parts of the nonprincipal
+character sums (Definition~\ref{def:E-level}). The orthogonality identity compares a prime sum
+with an explicit main term. Given the lattice inequality and the size and character hypotheses,
+the choice of $m$ near $\sqrt{x}$ gives the one-scale bound
+(Lemma~\ref{lem:E-size}, Proposition~\ref{prop:E-ch-core}). For a family satisfying the window and lattice-chain hypotheses, Proposition~\ref{prop:E-windows-ineq} applies this estimate at every sufficiently large window point.
+The analytic step uses windows to control a subsequence of Taylor coefficients. A hypothetical
+pole to the right of $\theta$ would force a lower bound at \emph{every sufficiently large order}:
+isolate a nearest pole, or use the positive residue in the real-pole case. The two estimates
+then conflict on that subsequence. See Theorem~\ref{thm:E-landau-window} and
+\texttt{Deduction.landau\_window} (\path{LandauTheorems/landauWindow.lean:83--166}).
+
+\item[L. What is uniform in the end-slope estimates?]
+For each estimate on a fixed family one chooses a single constant and threshold before varying the scale and the
+member of the family. The mean-slope lower bound still contains $1+m/k$, and the maximal-slope
+upper bound for $N_u$ still contains $CmB_0$. In the division estimate,
+\texttt{L3main} is one upper bound after summing over all columns.
+\texttt{weight\_height\_sum\_le} is an upper bound for each column and place.
+Of these three inputs, \texttt{weight\_sum\_eq} is the identity.
+For $\log T(u)$ one has a precise lower bound and a separate upper bound $CmL$.
+The lower bound enters with a negative coefficient in the assembly. See
+Propositions~\ref{prop:L-slopesM} and~\ref{prop:L-slopesN}.
+\footnote{\texttt{SlopesMF}, \texttt{SlopesNF}, \texttt{Count\_at}, \texttt{SlopesM\_at},
+\texttt{SlopesN\_at}: \path{GlobalSchurBounds/QuadraticLogDerivCongr.lean:167--183,252--254}.
+\texttt{DivInputs0R.L3main}: \path{Divisibility/ConstantGeTwentyEight.lean:87}.
+\texttt{RecNums.weight\_height\_sum\_le}, \texttt{weight\_sum\_eq}:
+\path{Divisibility/Inputs.lean:90--92}.}
+
+\item[G. Where does the stronger local gain occur?]
+For an integral input the bare column $K_j$ gives a lower bound involving $g^A$.
+At a selected place $v$ the stronger $g^B$ bound applies after the Hecke operator,
+to $Z_{v,j+1}K_j$. The correction in both gains can depend on earlier weights through
+$w_j-w_{j'}$. The final sum gives a divisibility lower bound on the specified submodule
+$\mathrm{Iprod}(S,VV)$. When $VV$ is nonempty, the cost $\tau_P$ contains one
+$\mathrm{ep}(p)$ and a separate $m$-fold cost for each selected place. When it is empty,
+$\tau_P=0$. See Remark~\ref{rem:G-key}.
+\footnote{\texttt{FormalGroupSystem.nu}, \texttt{de}, \texttt{Conclusion2},
+\texttt{Conclusion4}, \texttt{LowTermBound}: \path{GrowthBounds/FormalGroupSystem.lean:28--49,649--650,671--679,708--716}.
+\texttt{G.tauP}: \path{GrowthBounds/IsResidueClassZero.lean:341--344}.}
+
+\item[S. How do deformation points bound a Selmer length?]
+At the Eisenstein point the argument relates a Selmer length to a cotangent length. Given
+the model, rigidity and trace hypotheses, a finite set $X$ of admissible representations
+supplies the bound
+\[
+  V_n \ \le\ 2\sum_{\rho\in X}v_\ell\bigl(\operatorname{tr}\rho(\sigma)-t\bigr).
+\]
+Here $t$ is the specified Eisenstein trace and the representations in $X$ are pairwise
+nonisomorphic. The subsequent integer bound makes it possible to sum over primes. The
+one-character step uses this finite set and a one-sided inequality; the conjectural picture
+of Hecke congruences is only an interpretation. See Proposition~\ref{prop:S-onechar}.
+\footnote{\texttt{UpperTheory.V.U3.model\_upper}: \path{UnitaryThreeGroups/ModelUpper.lean:103--111}.
+\texttt{UpperTheory.V.Z.J.OneCharU\_s} and \texttt{NumberU3U\_s}:
+\path{DenseThresholdCases/NumberU3US.lean:30--59}.}
+
+\item[D. How do the inputs reach the lattice chain?]
+The assembly first combines the thresholds on families and then chooses one family satisfying
+them. At the Selmer interface the local hypothesis is
+$h_{0d}(w)\leq\operatorname{length} H^0_{\rm twist}(w)$. Finiteness of the right side
+gives finiteness of the left side, and division by the positive ramification index preserves
+the upper bound. Once \texttt{LinkN}, the small-level rank identity and the Selmer sum bound
+are available, the pointwise estimate gives \texttt{DIVinN} with constant $|C|+1$.
+The construction of the local index estimate is a separate input. See
+Lemma~\ref{lem:D-selmer-units} and Propositions~\ref{prop:D-divinn} and~\ref{prop:D-topdeswin}.
+\footnote{\texttt{LeTwistInvariantsAtColumns}, \texttt{selmer\_length\_inequality}:
+\path{AdmissibleDesigns/HigherColumnInvariantsBound.lean:135,371--405,461--465}.
+\texttt{UpperTheory.Top.divinN\_at}, \texttt{divinN\_of\_hypV}:
+\path{CharacterBoxes/DivinNOfHypV.lean:76--130}.}
+\end{description}
+
+\section*{What the reader can check here}
+Chapter~\ref{ch:P} follows the five inputs listed in Chapter~\ref{ch:Z}.
+The final column gives the point at which to resume a specialist review.
+
+{\small
+\begin{longtable}{@{}p{0.06\linewidth}p{0.43\linewidth}p{0.44\linewidth}@{}}
+\toprule
+Layer & Argument supplied here & Remaining inputs for review \\\midrule
+\endfirsthead
+\toprule
+Layer & Argument supplied here & Remaining inputs for review \\\midrule
+\endhead
+E & The pole contradiction and the choice of scale under the lattice
+hypothesis (Theorem~\ref{thm:E-landau-window}, Proposition~\ref{prop:E-windows-ineq}). &
+Construction of the windows uses the arithmetic and lattice inputs in the
+four layers below.\\[4pt]
+L & The signed local index, the change of type in the Gram determinant
+and the sum giving the dual slope and clause~7 (Z5,
+Section~\ref{sec:P-z5}). &
+The local budgets, the sum of column costs and the comparison between levels for the specified family. The two height realizations are proved in Section~\ref{sec:P-z5}.\\[4pt]
+G & The three jet estimates, the normal form for the biadditive kernel and the integral normalized Hecke action under admission (Sections~\ref{sec:P-r4-z41} and~\ref{sec:P-r4-z41-kernel}). The conditional four-way split and the local estimates with constants $(11,1)$ appear at \ref{par:r4-z43-deep}. &
+Admission on one served chain requires the inputs listed on p.~\pageref{r8:Z4.2.12}. The common columns and integral period comparison remain open (p.~\pageref{r6:review:Z4.4}). Z4.3 derives its inert CM coordinate. The normalized theta transformation and selected finite expansion remain open (p.~\pageref{r9:z43-open}).\\[4pt]
+S & The graded model and both cotangent length bounds under the shared arithmetic inputs (Section~\ref{sec:P-z14-full}); cycles with coefficients modulo $q$ on integral matrices and the quantified torsion bound (Section~\ref{sec:P-r4-K2}, Proposition~\ref{prop:P-r4-k7}). &
+The stable odd-rank evaluations and ordinary tangent argument appear in Sections~\ref{sec:P-r5-k4} and~\ref{sec:P-r5-z12}. The status of ordinary rigidity is partial (p.~\pageref{r6:review:Z1.2}). Dense automorphy and the global Kato class still have open components. The cohomological count is on page~\pageref{r6:Z1.5.02}.\\[4pt]
+D & Construction of the normalized integral presentation, the arithmetic row comparison, both public lifts and the off-set dimension count give the eight-term bound from the public hypotheses (Section~\ref{sec:P-r4-Z32}). &
+When applying the bound, verify the local arithmetic, coefficient, topology and tame hypotheses at that particular family. Chapter~\ref{ch:Z} identifies the ranges to inspect.\\
+\bottomrule
+\end{longtable}}
+
+Of the twenty original recursive inputs, \TrustOriginalComplete{} have hand deductions from their stated hypotheses. Across the \TrustUnits{} expert assignments, \TrustComplete{} are complete, \TrustPartial{} are partial and \TrustStructure{} have a structure-only map. The marking and Euler-system hypotheses are compared in Section~\ref{r6:publications}. The nine questions in Section~\ref{r8:kato-questions} specify the remaining Kato comparisons; Section~\ref{r7:z42-common-operator} gives the contraction for the two adjacent site frames. Section~\ref{sec:T-r5-five} gives the five largest project-specific theta arguments and their open steps. The expert tables in Chapter~\ref{ch:Z} list
+individual reading assignments. Section~\ref{sec:T-pools} describes the
+440 separately assessed declarations belonging to the eleven largest
+eligible infrastructure pools in the theta branch.
+
+
+% blueprint/ch_E.tex:1-236
+% Chapter E of the blueprint of L. Alpoge's Lean 4 development (Nov 2026).
+% Revision checked against the original pinned Lean source tree and the pinned Mathlib sources.
+\chapter{From a Chebyshev-type inequality to GRH and RH}\label{ch:E}
+
+This chapter translates the top of the Lean development of L.~Alp\"oge: the five theorems of
+\texttt{Main.lean} and the chain of deductions that leads from them down to the place where one
+real inequality between two explicit quantities, written
+$\mathrm{ASK}\le \mathrm{MAIN}+\mathrm{error}$, is used. That inequality is a statement about
+slopes of Hermitian lattices; it is \emph{not} proved here (it is the subject of Chapter~L, with
+inputs from Chapters~S and~D). What is proved here is ordinary analytic number theory:
+\begin{enumerate}
+\item elementary reductions (functional equation, Euler factors) from one statement about
+primitive characters to the five theorems (Section~\ref{sec:E-main});
+\item a one-sided theorem of Landau type on \emph{windows}: an upper bound
+$\mathcal G(y)\le y^{\theta}$ for a positive combination $\mathcal G$ of smoothed prime sums,
+valid only on intervals $[Y,Y^{\lambda}]$ for a sequence $Y\to\infty$, forces all the
+$L$-functions involved to be zero-free in $\operatorname{Re}s>\theta$ (Section~\ref{sec:E-landau});
+\item an exact orthogonality identity which rewrites $\mathrm{ASK}-\mathrm{MAIN}$ as a character
+average of the same smoothed prime sums (Section~\ref{sec:E-balance});
+\item a bookkeeping argument (``Chebyshev-type bound'') that converts the inequality
+$\mathrm{ASK}\le\mathrm{MAIN}+\mathrm{error}$, summed over $m\approx\sqrt x$ copies, into
+$\mathcal G(x)\le x^{1/2+O(\varepsilon)}$ (Sections~\ref{sec:E-core}--\ref{sec:E-coregm});
+\item the composition of these steps (Section~\ref{sec:E-top}).
+\end{enumerate}
+In the author's own outline the last step is described as an explicit formula with a variance test
+function. The Lean text at this level does not contain an explicit formula: the passage to zeros
+is made by item~(2), and the ``$m\approx\sqrt X$ iterated lifts'' of the outline appear in this
+chapter only as an integer $m$ with $x^{1/2-\varepsilon}\le m\le x^{1/2+\varepsilon/2}$ that counts
+the copies of the inequality. Nothing in this chapter is claimed beyond what the Lean statements
+say; the results are due to Alp\"oge and the proofs below are translations of his Lean proofs,
+written out so that they can be checked by hand.
+
+\medskip\noindent\textbf{Conventions.} $\Lambda$ is the von Mangoldt function, $\gamma$ is Euler's
+constant, $p$ always denotes a prime. For a Dirichlet character $\chi$ modulo $N$ we write
+$L(s,\chi)$ for the meromorphic continuation of its $L$-function; $\chi^{*}$ is the primitive
+character inducing $\chi$ and $\operatorname{cond}\chi$ its conductor. The trivial character modulo
+$1$ is written $\mathbf 1$, so $L(s,\mathbf 1)=\zeta(s)$. Mathlib's assigned value at $\zeta(1)$ is nonzero
+(\texttt{riemannZeta\_ne\_zero\_of\_one\_le\_re}, \nolinkurl{Mathlib/NumberTheory/LSeries/Nonvanishing.lean:411}).
+For a general principal character the half-plane statement explicitly excludes $s=1$
+(\texttt{DirichletLNonvanishingRightOfHalf}, \nolinkurl{Statements.lean:6}). Levels (finite sets of characters) are written
+$\mathcal L$ to avoid a clash with $\Lambda$. At each numbered definition or result the
+source footnote gives the files and starting lines in the order of the Lean declarations in the
+margin. Paths begin at \texttt{LEAN\_SRC}, or at the Mathlib checkout for
+\nolinkurl{Mathlib/} paths.
+
+%======================================================================
+\section{The main theorems and the reduction to primitive characters}\label{sec:E-main}
+
+The five theorems of \texttt{Main.lean} are all consequences of one statement, called
+\texttt{EveryCharacter} in Lean: no Dirichlet $L$-function vanishes in the open half-plane
+$\operatorname{Re}s>\tfrac12$, subject to the principal-character exception at $s=1$. This section states the five theorems and proves the reductions.
+They use only the functional equation, the non-vanishing on $\operatorname{Re}s\ge1$, and the
+comparison of $L(s,\chi)$ with $L(s,\chi^{*})$; all three are in Mathlib \cite{E-mathlib-dircont,E-mathlib-nonvanishing}.
+
+\begin{definition}[The four target statements]\label{def:E-statements}
+\lean{DirichletLNonvanishingRightOfHalf, RiemannZetaZerosOnLine, DirichletLZerosOnLine, PrimitiveDirichletLZerosOnLine, Claim.HalfPlane, Claim.Strip, Claim.Zeta, UpperTheory.EveryCharacter}
+\footnote{\nolinkurl{Statements.lean:6,3,10,14}, \nolinkurl{Development/AutomorphicArithmetic/CharacterBoxes/HalfPlane.lean:3,6,9}, \nolinkurl{Development/AutomorphicArithmetic/CharacterBoxes/EveryCharacter.lean:13}.}%
+\begin{enumerate}
+\item[(HP)] \emph{Half-plane statement.} For every $N\ge1$, every Dirichlet character $\chi$ modulo
+$N$ and every $s\in\mathbb C$ with $\operatorname{Re}s>\tfrac12$ and ($\chi\neq\chi_0$ or $s\neq1$),
+one has $L(s,\chi)\neq0$. (Here $\chi_0$ is the principal character modulo $N$.) In Lean this is
+\texttt{DirichletLNonvanishingRightOfHalf}; \texttt{Claim.HalfPlane} and
+\texttt{UpperTheory.EveryCharacter} are the same proposition.
+\item[(ST)] \emph{Strip statement.} For every $N\ge1$, $\chi$ modulo $N$ and $s$ with
+$0<\operatorname{Re}s<1$: $L(s,\chi)=0$ implies $\operatorname{Re}s=\tfrac12$
+(\texttt{DirichletLZerosOnLine}, \texttt{Claim.Strip}).
+\item[(PR)] The same as (ST) restricted to primitive $\chi$
+(\texttt{PrimitiveDirichletLZerosOnLine}).
+\item[(Z)] For every $s\in\mathbb C$: if $\zeta(s)=0$, $s\notin\{-2,-4,-6,\dots\}$ and $s\neq1$, then
+$\operatorname{Re}s=\tfrac12$ (\texttt{RiemannZetaZerosOnLine}, \texttt{Claim.Zeta}; this is
+literally Mathlib's \texttt{RiemannHypothesis}).
+\end{enumerate}
+\end{definition}
+
+\begin{lemma}[Euler factors do not vanish]\label{lem:E-euler-factor}
+\lean{Claim.factor_ne_zero}
+\footnote{\nolinkurl{Development/AutomorphicArithmetic/CharacterBoxes/ClaimStrip.lean:7}.}%
+Let $\psi$ be a Dirichlet character, $p$ a prime and $\operatorname{Re}s>0$. Then
+$1-\psi(p)p^{-s}\neq0$.
+\end{lemma}
+\begin{proof}
+$|\psi(p)p^{-s}|\le p^{-\operatorname{Re}s}<1$.
+\textit{[Status: complete]}
+\end{proof}
+
+\begin{proposition}[(HP) implies (ST)]\label{prop:E-strip}
+\lean{Claim.strip}\uses{def:E-statements,lem:E-euler-factor}
+\footnote{\nolinkurl{Development/AutomorphicArithmetic/CharacterBoxes/ClaimStrip.lean:59}.}%
+Statement \textup{(HP)} implies statement \textup{(ST)}; hence also \textup{(PR)}.
+\end{proposition}
+\begin{proof}
+Let $\chi$ be a character modulo $N$ and $L(s,\chi)=0$ with $0<\operatorname{Re}s<1$; in particular
+$s\neq0,1$.
+
+If $\operatorname{Re}s>\tfrac12$ this contradicts (HP) (the side condition holds because $s\neq1$).
+
+Suppose $\operatorname{Re}s<\tfrac12$. Let $\chi^{*}$ be the primitive character modulo
+$f=\operatorname{cond}\chi$ inducing $\chi$. For $s\neq1$,
+\begin{equation}\label{eq:E-changelevel}
+L(s,\chi)=L(s,\chi^{*})\prod_{p\mid N}\bigl(1-\chi^{*}(p)p^{-s}\bigr)
+\end{equation}
+(\texttt{DirichletCharacter.LFunction\_changeLevel} in \cite{E-mathlib-dircont}). By
+Lemma~\ref{lem:E-euler-factor} the product is non-zero, so $L(s,\chi^{*})=0$
+(\texttt{Claim.prim\_zero}). Let $\Lambda(s,\psi)=L(s,\psi)\,\gamma_\psi(s)$ be the completed
+$L$-function of a primitive $\psi$, where $\gamma_\psi(s)=\pi^{-s/2}\Gamma(s/2)$ for even $\psi$ and
+$\pi^{-(s+1)/2}\Gamma((s+1)/2)$ for odd $\psi$. The factor $\gamma_\psi$ is finite and non-zero for
+$\operatorname{Re}s>0$, hence $\Lambda(s,\chi^{*})=0$. The functional equation
+\[
+\Lambda(1-s,\psi^{-1})=f^{\,s-1/2}\,\varepsilon(\psi^{-1})\,\Lambda(s,\psi)\qquad(\psi\text{ primitive modulo }f)
+\]
+(\texttt{DirichletCharacter.IsPrimitive.completedLFunction\_one\_sub} in \cite{E-mathlib-dircont},
+applied to $\psi^{-1}$) gives $\Lambda(1-s,(\chi^{*})^{-1})=0$, and since
+$\operatorname{Re}(1-s)>0$ the gamma factor is again finite and non-zero, so
+$L(1-s,(\chi^{*})^{-1})=0$ (\texttt{Claim.prim\_reflect}). But
+$\operatorname{Re}(1-s)>\tfrac12$ and $1-s\neq1$, which contradicts (HP) for the character
+$(\chi^{*})^{-1}$ modulo $f$. Hence $\operatorname{Re}s=\tfrac12$.
+\textit{[Status: complete]}
+\end{proof}
+
+\begin{proposition}[(HP) implies the Riemann Hypothesis]\label{prop:E-zeta}
+\lean{Claim.zeta}\uses{prop:E-strip}
+\footnote{\nolinkurl{Development/AutomorphicArithmetic/CharacterBoxes/ClaimStrip.lean:75}.}%
+Statement \textup{(HP)} implies statement \textup{(Z)}.
+\end{proposition}
+\begin{proof}
+Let $\zeta(s)=0$ with $s\neq1$ and $s$ not a negative even integer. Since $\zeta(0)=-\tfrac12$,
+$s\neq0$.
+
+\emph{Case $0<\operatorname{Re}s<1$.} As $\zeta(s)=L(s,\mathbf 1)$, Proposition~\ref{prop:E-strip}
+with $N=1$ gives $\operatorname{Re}s=\tfrac12$.
+
+\emph{Case $\operatorname{Re}s\ge1$.} Impossible, because $\zeta$ has no zero there
+(\texttt{riemannZeta\_ne\_zero\_of\_one\_le\_re}, \cite{E-mathlib-nonvanishing}).
+
+\emph{Case $\operatorname{Re}s\le0$.} Put $\xi(s)=\pi^{-s/2}\Gamma(s/2)\zeta(s)$. The factor
+$\pi^{-s/2}\Gamma(s/2)$ is finite and non-zero unless $s/2\in\{0,-1,-2,\dots\}$, which is excluded;
+hence $\xi(s)=0$. By the functional equation $\xi(1-s)=\xi(s)$ we get $\xi(1-s)=0$, and
+$\operatorname{Re}(1-s)\ge1$, where $\pi^{-(1-s)/2}\Gamma((1-s)/2)$ is finite and non-zero and
+$1-s\neq1$. Hence $\zeta(1-s)=0$ with $\operatorname{Re}(1-s)\ge1$, which is impossible as in the
+previous case.
+\textit{[Status: complete]}
+\end{proof}
+
+The Lean development does not prove (HP) directly; it proves the following statement about
+primitive characters and deduces (HP) from it.
+
+\begin{definition}[Primitive characters, zero-freeness]\label{def:E-pchar}
+\lean{Formalism.HC.PChar, Formalism.HC.PChar.of, Formalism.HC.PChar.ZeroFreeAbove, Formalism.HC.ZeroFreeAll}
+\footnote{\nolinkurl{Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/PrimePairSizeCondition.lean:7,32}, \nolinkurl{Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/ExplicitFormulaErrorOfHostConditions.lean:11,18}.}%
+A \emph{primitive character} (\texttt{PChar}) is a pair $\psi=(N,\chi)$ of an integer $N\ge1$ and a
+primitive Dirichlet character $\chi$ modulo $N$; we simply write $\psi$ for $\chi$. The set of all
+primitive characters is denoted $\mathcal P$; it contains $\mathbf 1=(1,1)$. For an arbitrary
+character $\chi$ modulo $N$ we write $\chi^{*}\in\mathcal P$ for the primitive character inducing it
+(\texttt{PChar.of}). For $\theta\in\mathbb R$, $\psi$ is \emph{zero-free above $\theta$} if
+$L(s,\psi)\neq0$ for all $s$ with $\operatorname{Re}s>\theta$ (for $\psi=\mathbf 1$ the point $s=1$
+is not a zero, see the conventions). The statement \texttt{ZeroFreeAll} is: every
+$\psi\in\mathcal P$ is zero-free above $\tfrac12$.
+\end{definition}
+
+\begin{proposition}[From primitive to arbitrary characters]\label{prop:E-imprimitive}
+\lean{UpperTheory.Top.imprimitive}\uses{def:E-pchar,def:E-statements,lem:E-euler-factor}
+\footnote{\nolinkurl{Development/AutomorphicArithmetic/CharacterBoxes/Imprimitive.lean:5}.}%
+\texttt{ZeroFreeAll} implies \textup{(HP)}.
+\end{proposition}
+\begin{proof}
+Let $\chi$ be a character modulo $N$, $\operatorname{Re}s>\tfrac12$, and $\chi\neq\chi_0$ or
+$s\neq1$. If $\chi\neq\chi_0$ then $\chi^{*}\neq\mathbf 1$ (a character induced by $\mathbf 1$ is
+principal). So $\chi^{*}\neq\mathbf1$ or $s\neq1$, and \eqref{eq:E-changelevel} holds at $s$. The
+factor $L(s,\chi^{*})$ is non-zero by hypothesis and the finite product is non-zero by
+Lemma~\ref{lem:E-euler-factor}.
+\textit{[Status: complete]}
+\end{proof}
+
+\begin{theorem}[\texttt{everyCharacter}; Alp\"oge, formalised]\label{thm:E-every-character}
+\lean{UpperTheory.FinalTheorems.everyCharacter}\uses{prop:E-imprimitive,thm:E-zero-free-all}
+\footnote{\nolinkurl{Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:10}.}%
+Statement \textup{(HP)} holds.
+\end{theorem}
+\begin{proof}
+The published wrapper \texttt{UpperTheory.FinalTheorems.everyCharacter} invokes
+\texttt{everyCharacter\_of\_row}, which calls
+\texttt{every\_character\_of\_literature\_of\_vWin}
+(\nolinkurl{Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:7--11}).
+The analytic part of this assembly uses
+\texttt{UpperTheory.Top.every\_character\_of\_green\_v\_win}, which is
+Proposition~\ref{prop:E-imprimitive} applied to
+\texttt{UpperTheory.Top.zero\_free\_all\_of\_green\_v\_win}. The latter is
+Theorem~\ref{thm:E-zero-free-all} below with $\lambda=\tfrac32$, applied to the two inputs
+\textup{(I1)} and \textup{(I2)} of Section~\ref{sec:E-top}: the statement \texttt{TopG}
+(Definition~\ref{def:E-topG}) and, for every $\psi\in\mathcal P$, the statement
+$\texttt{HostExW}(\tfrac32,\texttt{GChi}(\psi))$ (Definition~\ref{def:E-hostexw}). These two inputs
+are theorems of the Lean development proved outside this chapter (lattice chain: Chapter~L; Selmer
+groups: Chapter~S; design and interface: Chapter~D); see Remark~\ref{rem:E-inputs} for the Lean
+declarations that supply them.
+\textit{[Status: complete relative to the inputs \textup{(I1)}, \textup{(I2)}, which are proved in
+Chapters L, S and D]}
+\end{proof}
+
+\begin{theorem}[The five theorems of \texttt{Main.lean}]\label{thm:E-main}
+\lean{LFunction_ne_zero_of_half_lt_re, riemannHypothesis, riemannZeta_eq_zero_re, LFunction_eq_zero_re, LFunction_eq_zero_re_of_isPrimitive}
+\uses{thm:E-every-character,prop:E-strip,prop:E-zeta}
+\footnote{\nolinkurl{Main.lean:8,4,6,10,12}.}%
+The five declarations in \texttt{Main.lean} have the following conclusions.
+\begin{enumerate}
+\item \texttt{LFunction\_ne\_zero\_of\_half\_lt\_re}: statement \textup{(HP)};
+\item \texttt{riemannHypothesis}: Mathlib's \texttt{RiemannHypothesis}, i.e.\ \textup{(Z)};
+\item \texttt{riemannZeta\_eq\_zero\_re}: \textup{(Z)} in the unfolded form of
+Definition~\ref{def:E-statements};
+\item \texttt{LFunction\_eq\_zero\_re}: statement \textup{(ST)};
+\item \texttt{LFunction\_eq\_zero\_re\_of\_isPrimitive}: statement \textup{(PR)}.
+\end{enumerate}
+\end{theorem}
+\begin{proof}
+For (1), \texttt{allChi} supplies Theorem~\ref{thm:E-every-character}. For (2) and (3),
+\texttt{rhOfAll} applies (HP) to the character of modulus one and invokes the zeta reduction.
+For (4), the second component of \texttt{claimAll} supplies \texttt{Claim.strip}. For (5),
+\texttt{critAll} uses primitivity to reflect a zero on the left via the functional equation for the
+inverse character, and applies (HP) on the right.
+\phantomsection\label{r10:main-wrappers}The wrappers are \texttt{allChi}, \texttt{rhOfAll}, \texttt{critAll}, \texttt{claimAll}
+(\nolinkurl{Supplements/Kernels/MainTheorems.lean:7,9,11,15}). The two direct reductions are
+\texttt{Formalism.VW.rh\_of\_every} and \texttt{Formalism.VW.critLine}
+(\nolinkurl{Formalism/GammaFactorNonvanishing/CritLine.lean:29,11}).
+\textit{[Status: complete relative to Theorem~\ref{thm:E-every-character}]}
+\end{proof}
+
+\paragraph{External axiom and statement checks.}
+\input{r10_audit}
+Sutherland's axiom log lists \texttt{propext}, \texttt{Classical.choice} and \texttt{Quot.sound}
+for each of the five declarations. The \texttt{con-leche --compare} log gives the
+individual matches to the challenge. The standalone Comparator v4.33.0 entry uses
+the original build and a local compilation of \texttt{Challenge.lean}
+\cite{E-Sutherland,E-audit,E-compare}.
+The local transcript \nolinkurl{out/S1_main_axioms.txt:1} stops at a missing object file before the
+axiom lists are printed.
+
+%======================================================================

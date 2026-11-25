@@ -1,0 +1,213 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "D033",
+  "edition_sha256": "928794ee38a802ac7911f6bfe63a3f22b2a243e8b6afc052985cd947ebbd5e29",
+  "note_sha256": "900ebf9a35b1eab56e5e718a309722b5d18bd42836c73216e06fce1882096fb9",
+  "statement_sha256": "576327610d1dcc80e82d721f29b18dc9e348509996d5d36b7f60cfc719ca0a4d",
+  "sources": [
+    {
+      "path": "notes/units/D033_round4.md",
+      "sha256": "900ebf9a35b1eab56e5e718a309722b5d18bd42836c73216e06fce1882096fb9"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The normalized inner-product sum uses pairs of nonzero nongeneric terms in the same row with $s_0=1$.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: Terms.ngSet, Terms.one and Terms.pairSum"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.FourierDecayAlt.PB.Terms.ngSet",
+          "file": "Formalism/HermitianCurvature/StatementPB.lean",
+          "line0": 49,
+          "line1": 49
+        },
+        {
+          "name": "Formalism.FourierDecayAlt.PB.Terms.allPairs",
+          "file": "Formalism/HermitianCurvature/StatementPB.lean",
+          "line0": 65,
+          "line1": 65
+        },
+        {
+          "name": "Formalism.FourierDecayAlt.PB.Terms.one",
+          "file": "Formalism/HermitianCurvature/StatementPB.lean",
+          "line0": 69,
+          "line1": 69
+        },
+        {
+          "name": "Formalism.FourierDecayAlt.PB.Terms.pairSum",
+          "file": "Formalism/HermitianCurvature/StatementPB.lean",
+          "line0": 75,
+          "line1": 76
+        },
+        {
+          "name": "Formalism.FourierDecayAlt.PB.Terms.RowNG",
+          "file": "Formalism/HermitianCurvature/StatementPB.lean",
+          "line0": 109,
+          "line1": 109
+        }
+      ],
+      "source": "notes/units/D033_round4.md",
+      "anchor": "Let $Q$ consist of pairs $(t,t')$ with nonzero",
+      "source_lines": [
+        25,
+        25
+      ],
+      "claim_sha256": "51552661e335e59a79b98dd5482fb6582983daa27d6ff1115432ca936aed2c75",
+      "passage_sha256": "d84115b5eb8e53c62e768a2d9e0937f597d2bbba6cee9fe2c2fc8c74ada10e9b",
+      "sha256": "e31013d61319cb8e0ca02e6e4d1b2fd8ca90a984bd0a050ebafc0c7714795cde",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The error constant and the two thresholds precede the later size data and the two row words.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: RowNGP and the positivity hypotheses on cb and cT"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.rowNGP_of_siegelWeil",
+          "file": "Development/AbelianVarietyTheory/Proofs/FlagMeasures/RowPositivityOfSiegelWeil.lean",
+          "line0": 10,
+          "line1": 15
+        },
+        {
+          "name": "Formalism.L2.SG.RowsPos.RowNGP",
+          "file": "Formalism/LocalToGlobal/SiegelLatticeTheory/FlagStabilizerTensors/RowsPos.lean",
+          "line0": 37,
+          "line1": 41
+        }
+      ],
+      "source": "notes/units/D033_round4.md",
+      "anchor": "Fix the external row parameters subject to the",
+      "source_lines": [
+        29,
+        29
+      ],
+      "claim_sha256": "96a1dc929bed8f7645a6d9b9728def7b24d920c89b7ee911d8714d0a553828f7",
+      "passage_sha256": "d7c8d848238c8c5fc2d0de979645936e57eba34771f1dbd24f98736e0a6d1336",
+      "sha256": "297d76f8daedf31c6387820cbe61ef729cd184f1c46b39d6bee6a52f6e5dea83",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The mass data and archimedean assertion at scale one supply the uniform step-choice input.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: convergent Siegel–Weil and real-object estimate at one"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.rowNGP_of_siegelWeil",
+          "file": "Development/AbelianVarietyTheory/Proofs/FlagMeasures/RowPositivityOfSiegelWeil.lean",
+          "line0": 10,
+          "line1": 15
+        },
+        {
+          "name": "GlobalTheory.St.stepChoiceDataC_of_siegelWeil_inInfinity",
+          "file": "Development/AbelianVarietyTheory/Proofs/FlagMeasures/StepChoiceConstantsCOfSiegelWeilAtInfinity.lean",
+          "line0": 9,
+          "line1": 15
+        }
+      ],
+      "source": "notes/units/D033_round4.md",
+      "anchor": "Siegel–Weil provides a choice of mass data. To",
+      "source_lines": [
+        33,
+        33
+      ],
+      "claim_sha256": "1fae6262233b8edd7d7e5367524c8a2a9a8e10b1d31d80a3e241af52010cd623",
+      "passage_sha256": "162b6c75e0703bf9d8d632a71f75948a6602b9975d3c128f1e60a720aa44d167",
+      "sha256": "d64d7691c095f0d387a2d4e3697e76a86ff65ca911fae14093ddeaaf08220f91",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "Specializing the pinned analytic bound returns the nongeneric row inequality with those same uniform constants.",
+      "kind": "inequality",
+      "uses": [
+        "S1",
+        "S2",
+        "S3",
+        "input: analytic_pinnedTheoremB_uniform"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.rowNGP_of_siegelWeil_of_stepChoice",
+          "file": "Development/AbelianVarietyTheory/Proofs/FlagMeasures/RowPositivityOfSiegelWeilConstants.lean",
+          "line0": 11,
+          "line1": 18
+        }
+      ],
+      "source": "notes/units/D033_round4.md",
+      "anchor": "Apply the closed corank-one nongeneric row bound to",
+      "source_lines": [
+        37,
+        37
+      ],
+      "claim_sha256": "6277b8f788e200f3f99b6dbc1fb533838d1f6b620dd92df4636e85e53f29cb1a",
+      "passage_sha256": "1177df1a6bd72f5c41e3f66dfff9539af4145d7dabc92f9386302725aac278c0",
+      "sha256": "b0df284695c54177ff69ee09591efd87922e54e3197b7a565dc79434a248fbf1",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "215a9fe5aa754d04890b05b2e3f0cdb16a82a179d4fed9a0f580b812f7baf638",
+      "sources": [
+        {
+          "path": "notes/units/D033_round4.md",
+          "sha256": "a6d43e03c8a79dad7b100df54186385cfe86efc0312e8b2cfa0d3d0e4b85bc4e"
+        }
+      ],
+      "steps": {
+        "S1": "2fd261032acf3473818796958b487d645f89834ace2e97375d12fefae525eeee",
+        "S2": "216cd62dd0b1494d116dd5b911ad096fca6126d79717df83853096f8d9e6462a",
+        "S3": "c9dc3ff51926a1f3ec33007438e24d3785540078dac013902c2183d0f5d284d2",
+        "S4": "ffc2b8dc62ad3060e850128a4c3c2bb9f700c50c59ac93655ea6b306a000b77c"
+      },
+      "step_texts": {
+        "S1": "The normalized inner-product sum uses pairs of nonzero nongeneric terms in the same row with $s_0=1$.",
+        "S2": "The error constant and the two thresholds precede the later size data and the two row words.",
+        "S3": "The mass data and archimedean assertion at scale one supply the uniform step-choice input.",
+        "S4": "Specializing the pinned analytic bound returns the nongeneric row inequality with those same uniform constants."
+      }
+    },
+    {
+      "edition_sha256": "1c5c0daa98c4f9f826ed6fb4ff613620a3a86d9e4ef4acce663b94a50d4f07d8",
+      "sources": [
+        {
+          "path": "notes/units/D033_round4.md",
+          "sha256": "a6d43e03c8a79dad7b100df54186385cfe86efc0312e8b2cfa0d3d0e4b85bc4e"
+        }
+      ],
+      "statement_sha256": "576327610d1dcc80e82d721f29b18dc9e348509996d5d36b7f60cfc719ca0a4d",
+      "steps": {
+        "S1": "e31013d61319cb8e0ca02e6e4d1b2fd8ca90a984bd0a050ebafc0c7714795cde",
+        "S2": "297d76f8daedf31c6387820cbe61ef729cd184f1c46b39d6bee6a52f6e5dea83",
+        "S3": "d64d7691c095f0d387a2d4e3697e76a86ff65ca911fae14093ddeaaf08220f91",
+        "S4": "b0df284695c54177ff69ee09591efd87922e54e3197b7a565dc79434a248fbf1"
+      },
+      "step_texts": {
+        "S1": "The normalized inner-product sum uses pairs of nonzero nongeneric terms in the same row with $s_0=1$.",
+        "S2": "The error constant and the two thresholds precede the later size data and the two row words.",
+        "S3": "The mass data and archimedean assertion at scale one supply the uniform step-choice input.",
+        "S4": "Specializing the pinned analytic bound returns the nongeneric row inequality with those same uniform constants."
+      },
+      "step_passages": {
+        "S1": "d84115b5eb8e53c62e768a2d9e0937f597d2bbba6cee9fe2c2fc8c74ada10e9b",
+        "S2": "d7c8d848238c8c5fc2d0de979645936e57eba34771f1dbd24f98736e0a6d1336",
+        "S3": "162b6c75e0703bf9d8d632a71f75948a6602b9975d3c128f1e60a720aa44d167",
+        "S4": "1177df1a6bd72f5c41e3f66dfff9539af4145d7dabc92f9386302725aac278c0"
+      }
+    }
+  ]
+}

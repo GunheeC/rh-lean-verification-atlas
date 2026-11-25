@@ -1,0 +1,40 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit B04. Local manuscript v3, item 5.4, heading on printed PDF p. 36.
+% UpperTheory.Zero.LLC.recTExists
+% paper2/split_bridges.tex:87–114. Verbatim excerpt; SHA-256 232ef7542757879c15d9d03e5008761b1c2c2fe48b6f95dca1e8967208f77f4f.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+\noindent\nolinkurl{UpperTheory.Zero.LLC.recTExists} --- in-repo constant (\path{Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/RecTExists.lean:20--66}); variant.\par
+% End of atlas edition annotation.
+
+\begin{formalstatement}[A local parameter with the tame type law]\label{sub:B04}
+For any number field $E$, algebraic closure $\Omega$, valuation subring
+of $\Omega$ over a finite place $w$, and resulting local field $E_w$,
+there exist an Artin map and a parameter map from irreducible smooth
+$\mathrm{GL}_n(E_w)$-classes of all ranks to Weil--Deligne parameters.
+The map preserves dimension, agrees with reciprocity in rank one,
+takes Langlands quotients of multisegments to the corresponding segment
+sums, takes cuspidals to irreducible parameters and commutes with real
+norm twists. The absolute value of its determinant recovers that of the
+central character. For classes with good cuspidal support it respects
+character twists, the full central character and duality, is injective
+against arbitrary classes, and yields a tame parameter in the presence
+of principal-congruence fixed vectors. Here each good cuspidal constituent
+has rank one or, over a field isomorphic to $\mathbb Q_p$, is a twist of
+a representation with such fixed vectors.
+
+The last law prescribes a tame type. Over the indicated unramified residue
+extension of degree $n$, let $\vartheta$ be a regular residue-field character
+and let the inflated cuspidal type have the prescribed elliptic character
+values. The parameter has zero monodromy. At an inertia element whose Artin
+image reduces to $z$, its inertial characteristic polynomial is
+$\prod_{j=0}^{n-1}(X-\vartheta(z^{p^j}))$, with restriction to the given
+base as in the local law.
+\end{formalstatement}\subnode{B04}
+P011 calls B04 alongside the global row. Scholze's Theorem~1.2(a)--(d) characterizes the Weil representation by traces, describes its behavior under parabolic induction, gives the supercuspidal bijection and lists its compatibilities, including twists, central characters and duals. The extension to the chosen monodromy and the explicit
+residue-type interpolation in this statement requires an additional
+identification. \path{LocalLanglands/IsRecTOfIsRec.lean:30--80};
+\href{https://people.mpim-bonn.mpg.de/scholze/LocalLanglands.pdf}{P.~Scholze, \emph{The local Langlands correspondence for $\mathrm{GL}_n$ over $p$-adic fields}, Theorem~1.2(a)--(d)}~\cite{r21-scholze}.

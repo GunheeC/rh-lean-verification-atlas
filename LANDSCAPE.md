@@ -1,0 +1,19 @@
+# Public resources for reading the Lean submission
+
+AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+
+Nine public resources are indexed as of 25 November 2026 UTC. The full commit or SHA-256 identifies the edition behind each row. [Source register](sources/registry.json) · [Atlas status](STATUS.md).
+
+| Resource | What it contains | Edition and terms | Atlas correspondence |
+|---|---|---|---|
+| [Lean source mirror](https://github.com/leanprover-community/riemann-hypothesis/tree/40e56bab026552e089d7afcfeff08d2defb9c005) | The five public declarations, their types and the source files to which the atlas pins its units. | Git commit `40e56bab0265`. No licence file found at the pinned commit. | [Reference source for every unit.](data/pins.json) |
+| [Original Lean distribution](https://alpo.ge/lean.tar.gz.part01) | The submitted source and build configuration. Joining the original parts yields the archive whose extracted root tree matches the Git mirror. | SHA-256 `9631b4f02019`. No licence file found at the pinned commit. | [The archive checksum and root tree identify the baseline for every source span.](data/pins.json) |
+| [MIT verification record](https://math.mit.edu/~drew/grh/) | Build and kernel replay results, export comparisons and checker logs for the submission. | SHA-256 `51d1d86aa983`. Redistribution terms unverified. | [The status page cites the dated checker outcomes.](sources/kernel-audit.md) |
+| [Adriazola’s reconstruction](https://github.com/jimjamzola/RH-Alpoge-Reconstruction/tree/aa9c86bf2a7d29b08575641fecea19a2a603e87c) | Numbered manuscript sections on analytic reductions, arithmetic inputs and their assembly. | Git commit `aa9c86bf2a7d`. [CC-BY-4.0](https://github.com/jimjamzola/RH-Alpoge-Reconstruction/blob/aa9c86bf2a7d29b08575641fecea19a2a603e87c/LICENSE) | [Manuscript numbers, Lean declarations and atlas units.](crosswalk/adriazola.md) |
+| [Naskręcki’s reading project](https://github.com/nasqret/riemann-rev/tree/6ccea03b21e96b70356c07afb85a88d581b61e86) | A guided map of components and named declarations, with a record of checks and links back to Lean source. | Git commit `6ccea03b21e9`. [0BSD](https://github.com/nasqret/riemann-rev/blob/6ccea03b21e96b70356c07afb85a88d581b61e86/LICENSE) | [Index of exact Lean declaration names.](crosswalk/naskrecki.md) |
+| [JoseBrox/GRH_distillation](https://github.com/JoseBrox/GRH_distillation/tree/a6e7aa8f8694c2cbc330671ea34512f024927d28) | Separate RH and Dirichlet GRH expositions, with mathematical sections, proof maps and a concordance to Lean. | Git commit `a6e7aa8f8694`. Redistribution terms unverified. | [Index of exact Lean declaration names.](crosswalk/josebrox.md) |
+| [jae-63/rh-alpoge-blueprint](https://github.com/jae-63/rh-alpoge-blueprint/tree/0434143d80c94d491e2228e234507d38dfcb57d7) | A reading order from the public theorems to the analytic argument, with plain-language descriptions and named Lean declarations. | Git commit `0434143d80c9`. [Apache-2.0](https://github.com/jae-63/rh-alpoge-blueprint/blob/0434143d80c94d491e2228e234507d38dfcb57d7/LICENSE) | [Index of exact Lean declaration names.](crosswalk/jae-63.md) |
+| [Waterloo zeta draft](https://www.math.uwaterloo.ca/~mrubinst/alpoge_claude_grh/zeta-paper_v2.pdf) | Version 2 organizes the zeta-function argument around prime-power sums and a mean inequality. | SHA-256 `b49de5037af5`. Redistribution terms unverified. | Not yet mapped. |
+| [Alpöge’s announcement](https://alpo.ge/remark.pdf) | Four-page announcement dated 20 November 2026, with a description of the announced result and a dated list of steps. | SHA-256 `3fc97784b71d`. Redistribution terms unverified. | Announcement and date identified here. There is no declaration-level index for this document. |
+
+The [crosswalks](crosswalk/README.md) distinguish manuscript statements from occurrences of declaration names.

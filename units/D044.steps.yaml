@@ -1,0 +1,146 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "D044",
+  "edition_sha256": "81b013ef7953d7fd7266921f03a0b06bf370c5b8e7b502d62ab0143eaca0733f",
+  "note_sha256": "ef3b3cfca12d489feada31470cac291f23effe3301e5ec09c5c10e7ca1d682ec",
+  "statement_sha256": "0e39ff3e70801127846999ee2001ebfdaabb6ae619fdb3b93ee24924c63682af",
+  "sources": [
+    {
+      "path": "notes/units/D044_round4.md",
+      "sha256": "ef3b3cfca12d489feada31470cac291f23effe3301e5ec09c5c10e7ca1d682ec"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The placewise seesaw construction supplies matching maps to which the original integral agreement applies.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "T11",
+        "input: local matching and ordinary agreement"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.SquareAgree.twisted_theta_integrals_agree",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/TwistedSquareThetaIntegralsEq.lean",
+          "line0": 17,
+          "line1": 27
+        }
+      ],
+      "source": "notes/units/D044_round4.md",
+      "anchor": "Fix the matched Hermitian spaces, characters, measures, Weil",
+      "source_lines": [
+        25,
+        25
+      ],
+      "claim_sha256": "04401125c15de09d02534d7dbd2c0ab5b9b0191782225484a0ded0dae86d6a2d",
+      "passage_sha256": "3fc6bf6796af50b812e0d9961baada35739ad03d38d5065495d48b7f854f7bef",
+      "sha256": "ccf874cd6d52dc2da464dc69e4db9042f59bbf6391920173ea76ff5404007fa0",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The product of the ordinary comparison scalar and the square-kernel scalar is nonzero and independent of the later test vector.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "input: square-kernel comparison under real Howe"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.SquareAgree.twisted_theta_integrals_agree",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/TwistedSquareThetaIntegralsEq.lean",
+          "line0": 23,
+          "line1": 30
+        }
+      ],
+      "source": "notes/units/D044_round4.md",
+      "anchor": "The transferred square kernels agree up to a",
+      "source_lines": [
+        29,
+        29
+      ],
+      "claim_sha256": "9349b3a76ee0353b9809c3e835ea2bb279d3e9bc49cefd28fc8408be02c96b6a",
+      "passage_sha256": "6528a9e8d3dc60e03b9bfd5f1813d8e19fdb64ee6fc56827280a5ee0f5015c5c",
+      "sha256": "c9f6aa03d35551829b8cb32862bde613dac453d561daa25232e2b77abf193fff",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The integrable coinvariant representative gives the square integral equality with the previously chosen product scalar.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "S2",
+        "input: coinvariant passage and bounded-kernel convergence"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.SquareAgree.twisted_theta_integrals_agree",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/TwistedSquareThetaIntegralsEq.lean",
+          "line0": 28,
+          "line1": 41
+        }
+      ],
+      "source": "notes/units/D044_round4.md",
+      "anchor": "Apply the decay and convergence assertion to the",
+      "source_lines": [
+        33,
+        33
+      ],
+      "claim_sha256": "9a75cf7bbf5fe23542f567587a11a724a5fc65baf1e7f97afb8cb94b914e530c",
+      "passage_sha256": "27b6e1164c1eae66dada252497623b5ef533446941a0295e2df44b99f3fe23ca",
+      "sha256": "0959ae96cb8b385dc32a1b355d9b15b1717ccfea254bfc848b931ca23f17b7dc",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "ef8329935ceb2ad2eb94f13f9263962fb255b5f767ff92006e48c2657539c1b7",
+      "sources": [
+        {
+          "path": "notes/units/D044_round4.md",
+          "sha256": "be0b4c46ba7ff606b99e842f897a2e7c5e72d0f56c401e4eb0464a63bc5ceb50"
+        }
+      ],
+      "steps": {
+        "S1": "9a297af75a235f7238c9878aa5f0bee5e8c9ed6713cbc08775ac8cb1cefdc45a",
+        "S2": "8939a9c962f3830c26ac2769eb6c3b3996f43203dcdaab0b918c9ac095f8ed92",
+        "S3": "c99d2e0b096a2be6b43da38692678bc07143f446b930728d0fca265999b20f7d"
+      },
+      "step_texts": {
+        "S1": "The placewise seesaw construction supplies matching maps to which the original integral agreement applies.",
+        "S2": "The product of the ordinary comparison scalar and the square-kernel scalar is nonzero and independent of the later test vector.",
+        "S3": "The integrable coinvariant representative gives the square integral equality with the previously chosen product scalar."
+      }
+    },
+    {
+      "edition_sha256": "12541fa1398b2c318f0996af68a5e78d7a253919ff3594ca2f96e88b591274d3",
+      "sources": [
+        {
+          "path": "notes/units/D044_round4.md",
+          "sha256": "be0b4c46ba7ff606b99e842f897a2e7c5e72d0f56c401e4eb0464a63bc5ceb50"
+        }
+      ],
+      "statement_sha256": "0e39ff3e70801127846999ee2001ebfdaabb6ae619fdb3b93ee24924c63682af",
+      "steps": {
+        "S1": "ccf874cd6d52dc2da464dc69e4db9042f59bbf6391920173ea76ff5404007fa0",
+        "S2": "c9f6aa03d35551829b8cb32862bde613dac453d561daa25232e2b77abf193fff",
+        "S3": "0959ae96cb8b385dc32a1b355d9b15b1717ccfea254bfc848b931ca23f17b7dc"
+      },
+      "step_texts": {
+        "S1": "The placewise seesaw construction supplies matching maps to which the original integral agreement applies.",
+        "S2": "The product of the ordinary comparison scalar and the square-kernel scalar is nonzero and independent of the later test vector.",
+        "S3": "The integrable coinvariant representative gives the square integral equality with the previously chosen product scalar."
+      },
+      "step_passages": {
+        "S1": "3fc6bf6796af50b812e0d9961baada35739ad03d38d5065495d48b7f854f7bef",
+        "S2": "6528a9e8d3dc60e03b9bfd5f1813d8e19fdb64ee6fc56827280a5ee0f5015c5c",
+        "S3": "27b6e1164c1eae66dada252497623b5ef533446941a0295e2df44b99f3fe23ca"
+      }
+    }
+  ]
+}

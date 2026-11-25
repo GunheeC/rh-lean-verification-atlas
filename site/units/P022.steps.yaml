@@ -1,0 +1,479 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "P022",
+  "edition_sha256": "83fa44eeb149ca2d24847fb84980a1473773dbb9df71e9ade7764d29eb104740",
+  "note_sha256": "5a0e60c35d524a79e4cde917ac7a616da54e1215cead36f0d4b3086f095bab65",
+  "statement_sha256": "1a95664380e7a969314d5ea7b119f947ffbbb3d7b41a13c166ae247710745f67",
+  "sources": [
+    {
+      "path": "notes/analytic/excerpt.tex",
+      "sha256": "633322f3f724c6f9e8c6afb87883bec7fb4d6ca84820272d8576cb6a22c5eed6"
+    },
+    {
+      "path": "notes/units/P022.tex",
+      "sha256": "f8abeffc943e2c6292c6aca983f38a0be3a39cf83ae09ee208f5ab78b4477037"
+    },
+    {
+      "path": "notes/analytic/README.md",
+      "sha256": "984917fe68f8dde7feaf2ed4dc161a17a9769b0ed7dc197bd264814bb690bdd8"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The factorial-normalized exponential kernel has an explicit full integral and upper bound for its value at each point.",
+      "kind": "computation",
+      "uses": [
+        "standard: exponential kernel integral and elementary maximization"
+      ],
+      "lean": [
+        {
+          "name": "Deduction.landau_kernel_max",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauKernelMax.lean",
+          "line0": 9,
+          "line1": 19
+        },
+        {
+          "name": "Deduction.kernel_integral",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/kernelIntegral.lean",
+          "line0": 9,
+          "line1": 20
+        }
+      ],
+      "source": "notes/analytic/excerpt.tex",
+      "anchor": "\\begin{lemma}[Kernel bounds]\\label{lem:E-kernel}\n\\lean{Deduc",
+      "source_lines": [
+        145,
+        164
+      ],
+      "claim_sha256": "c84ade0f414984b3d01099b8935bdac45f015b1d2c3e9a94ed243b7733b4048b",
+      "passage_sha256": "3e06e5c9b4e5bdeb5ace2fad78aed9a190fe6db4565bf086bb1eea8a737f7d56",
+      "sha256": "5dd8f51748206292414809f05bd6b34e70f88558bc8fed4f1cbd04d209842e59",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Choosing a Taylor order proportional to the left endpoint makes the lower and upper tails outside the logarithmic window exponentially small.",
+      "kind": "inequality",
+      "uses": [
+        "S1",
+        "input: chosen Taylor order"
+      ],
+      "lean": [
+        {
+          "name": "Deduction.landau_tails",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauTails.lean",
+          "line0": 80,
+          "line1": 131
+        }
+      ],
+      "source": "notes/analytic/excerpt.tex",
+      "anchor": "\\begin{lemma}[Tails are negligible for a suitable $k$]\\label",
+      "source_lines": [
+        166,
+        179
+      ],
+      "claim_sha256": "809d1280745356ec2c3db6204a587906cd8fc89f3bd9242188fae3a138c9f4dd",
+      "passage_sha256": "4e10accc4fd69ffde559cf1985fcd64946204d444730c867943801ce403caa30",
+      "sha256": "3e4eeede9a281abc15e0b9af2795fd74a7816590cc0553a83c3d3692fe4d6afa",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "On the window the positive part of the real integrand is bounded by its majorant, and off the window the growth assumption and the tail estimate control the remaining contribution.",
+      "kind": "inequality",
+      "uses": [
+        "S1",
+        "S2",
+        "input: one-sided window majorant"
+      ],
+      "lean": [
+        {
+          "name": "Deduction.landau_window_ineq",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindowIneq.lean",
+          "line0": 27,
+          "line1": 111
+        }
+      ],
+      "source": "notes/analytic/excerpt.tex",
+      "anchor": "\\emph{On $I$.} Since $g\\le R$ and $R\\ge0$ we have $|g|+g\\le2",
+      "source_lines": [
+        231,
+        238
+      ],
+      "claim_sha256": "ce1ec8a0f2e9c01bf30163d2062266cd54b8281c96a07cc93e1b7a069ae5ef91",
+      "passage_sha256": "32d2abcf7aed2e67d2be16fe94fcdaf4588b700677e1b67283c1b08790421157",
+      "sha256": "fe6ef19111cc09d011c4d896da7e9cd7974a52207e6c714b3f899b49c140df5d",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "A pole beyond theta gives either a pole-free disc about sigma with a pole horizontally closer than its radius, or a disc containing a unique real pole above theta.",
+      "kind": "case-split",
+      "uses": [
+        "standard: discreteness of the pole set"
+      ],
+      "lean": [
+        {
+          "name": "Deduction.landau_dichotomy",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauDichotomy.lean",
+          "line0": 24,
+          "line1": 87
+        }
+      ],
+      "source": "notes/analytic/excerpt.tex",
+      "anchor": "\\begin{lemma}[Dichotomy for the pole nearest to $\\sigma$]\\la",
+      "source_lines": [
+        248,
+        264
+      ],
+      "claim_sha256": "06398b7b22e7b3d70d68cb61458dc356cf9810a1d78defa9ca3d75252a07b2e1",
+      "passage_sha256": "51f890da568e04b95caab6e0af383df53619f7db332d7d9cd3b74d17a3809f7d",
+      "sha256": "cd6ee5b4b9f7534fb4ccb48958b090af4793a337ab41fe37a99197de7a2aacd9",
+      "ai_review": []
+    },
+    {
+      "id": "S5",
+      "status": "active",
+      "claim": "In the separated-centre case the coefficient forced by the unique nearest pole exceeds the allowed Taylor-coefficient upper bound for sufficiently large order.",
+      "kind": "inequality",
+      "uses": [
+        "S3",
+        "S4",
+        "standard: Cauchy estimates and simple-pole coefficients"
+      ],
+      "lean": [
+        {
+          "name": "Deduction.landau_nearest",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauNearest.lean",
+          "line0": 36,
+          "line1": 109
+        },
+        {
+          "name": "Deduction.landau_window",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindow.lean",
+          "line0": 91,
+          "line1": 132
+        }
+      ],
+      "source": "notes/analytic/excerpt.tex",
+      "anchor": "\\emph{Case (A).} We have $D\\le\\sigma-\\theta<\\sigma$. Lemma~\\",
+      "source_lines": [
+        333,
+        352
+      ],
+      "claim_sha256": "92971de99761c04454c79ae94e96a940aa76c5ba05286464d7ee93af2140b4c0",
+      "passage_sha256": "1af94357626cd436ce8bc6a2ef5e3ede7153e531ce611fbd4dcc9b817ddb690a",
+      "sha256": "2d2aa3b58bc99e2ab1d339d1574cd10c1561d323cfe4be41a7dbbd4fa96a1dc5",
+      "ai_review": []
+    },
+    {
+      "id": "S6",
+      "status": "active",
+      "claim": "In the real nearest-pole case positivity of the residue gives the incompatible sign and size in the coefficient bound.",
+      "kind": "inequality",
+      "uses": [
+        "S3",
+        "S4",
+        "standard: Cauchy estimates at a real pole"
+      ],
+      "lean": [
+        {
+          "name": "Deduction.landau_pole_asym",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauPoleAsym.lean",
+          "line0": 19,
+          "line1": 79
+        },
+        {
+          "name": "Deduction.landau_window",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindow.lean",
+          "line0": 132,
+          "line1": 166
+        }
+      ],
+      "source": "notes/analytic/excerpt.tex",
+      "anchor": "\\emph{Case (B).} Let $d=\\sigma-\\beta>0$ and $r'=(d+r)/2$, so",
+      "source_lines": [
+        354,
+        362
+      ],
+      "claim_sha256": "537916615c63e4ce94722fd5a73a9504451eeb88dd3bb109452546bd0e58e4fd",
+      "passage_sha256": "d8b48dab33b43b89316d9f9785106e7814497c286ecb8438f91681472a2cdfcb",
+      "sha256": "5f665c611a1bc86a2f036d8389bde18f551e4fd58f9fb5431db262b530ff9dcd",
+      "ai_review": []
+    },
+    {
+      "id": "S7",
+      "status": "active",
+      "claim": "For real g the quantity |g|+g is at most twice the nonnegative majorant on the selected window.",
+      "kind": "inequality",
+      "uses": [
+        "input: pole data and logarithmic window bound"
+      ],
+      "lean": [
+        {
+          "name": "Deduction.landau_window_ineq",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindowIneq.lean",
+          "line0": 27,
+          "line1": 111
+        }
+      ],
+      "source": "notes/units/P022.tex",
+      "anchor": "\\emph{On $I$.} Since $g\\le R$ and $R\\ge0$ we have $|g|+g\\le2",
+      "source_lines": [
+        144,
+        151
+      ],
+      "claim_sha256": "e5867d844f8eb6980f42c8f2d3e0373dee126139f2a591d85f28c413b4d38d46",
+      "passage_sha256": "32d2abcf7aed2e67d2be16fe94fcdaf4588b700677e1b67283c1b08790421157",
+      "sha256": "ddf57e6a0baca9436b18d82b0f0089cb613de4c6f6f2f72a912a3fbd67945b74",
+      "ai_review": []
+    },
+    {
+      "id": "S8",
+      "status": "active",
+      "claim": "The exponential growth condition controls the integral on the two complementary tails at the selected Taylor order.",
+      "kind": "inequality",
+      "uses": [
+        "S7",
+        "standard: normalized exponential-kernel tail estimate"
+      ],
+      "lean": [
+        {
+          "name": "Deduction.landau_tails",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauTails.lean",
+          "line0": 80,
+          "line1": 131
+        },
+        {
+          "name": "Deduction.landau_window_ineq",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindowIneq.lean",
+          "line0": 27,
+          "line1": 111
+        }
+      ],
+      "source": "notes/units/P022.tex",
+      "anchor": "\\emph{Off $I$.} By (P1), $(|g|+g)w_k\\le2C_0\\,u^{k}e^{-(\\sigm",
+      "source_lines": [
+        153,
+        155
+      ],
+      "claim_sha256": "9fa456ab014b5111a20732ea1e2e367124eef61f09c139e9e5589a2febf03ae2",
+      "passage_sha256": "05c08a724d1d9176592bc475562cb27c6646c6694e40602b5df7e2dcad5daade",
+      "sha256": "efe24a6fbca81287c88c470e24dfce964e4408e0fd378e71a3c71c9b4ecad59f",
+      "ai_review": []
+    },
+    {
+      "id": "S9",
+      "status": "active",
+      "claim": "After moving the centre to isolate a nearest pole, the two coefficient estimates are incompatible for large order.",
+      "kind": "case-split",
+      "uses": [
+        "S7",
+        "S8",
+        "standard: meromorphic Taylor coefficient comparison"
+      ],
+      "lean": [
+        {
+          "name": "Deduction.landau_nearest",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauNearest.lean",
+          "line0": 36,
+          "line1": 109
+        },
+        {
+          "name": "Deduction.landau_window",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindow.lean",
+          "line0": 91,
+          "line1": 132
+        }
+      ],
+      "source": "notes/units/P022.tex",
+      "anchor": "\\emph{Case (A).} We have $D\\le\\sigma-\\theta<\\sigma$. Lemma~\\",
+      "source_lines": [
+        246,
+        265
+      ],
+      "claim_sha256": "2a2a7b1c2f7a23f21f2365eebd8f8a64ef6b5c58f4862a5328e442bb36b0a930",
+      "passage_sha256": "1af94357626cd436ce8bc6a2ef5e3ede7153e531ce611fbd4dcc9b817ddb690a",
+      "sha256": "da8411d2e77fe75102eef22c3bb20b3d76d0ce448a879aa665888c4f93a0226d",
+      "ai_review": []
+    },
+    {
+      "id": "S10",
+      "status": "active",
+      "claim": "If the nearest pole is real, its signed principal part and the analytic remainder also contradict the same upper estimate.",
+      "kind": "case-split",
+      "uses": [
+        "S7",
+        "S8",
+        "standard: positive real residue"
+      ],
+      "lean": [
+        {
+          "name": "Deduction.landau_pole_asym",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauPoleAsym.lean",
+          "line0": 19,
+          "line1": 79
+        },
+        {
+          "name": "Deduction.landau_window",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindow.lean",
+          "line0": 132,
+          "line1": 166
+        }
+      ],
+      "source": "notes/units/P022.tex",
+      "anchor": "\\emph{Case (B).} Let $d=\\sigma-\\beta>0$ and $r'=(d+r)/2$, so",
+      "source_lines": [
+        267,
+        275
+      ],
+      "claim_sha256": "ec01a5c0c71d8c9f967f66ee869a6898d152f5c7d5a13b265c92efa3623452c2",
+      "passage_sha256": "d8b48dab33b43b89316d9f9785106e7814497c286ecb8438f91681472a2cdfcb",
+      "sha256": "0b13a5a6e0c5e772f48dc3c1380bd1057c5af1fe37b4ef1ebda58116c466527c",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "97d45f8945fe8bc8156f68396f41473d6f8ebaa971b45a01570c85fbe2056379",
+      "sources": [
+        {
+          "path": "notes/analytic/excerpt.tex",
+          "sha256": "4222281e1c6512dcaf306f9be7895da3f8aec6d5601eb6b678e476fb3d3744ab"
+        },
+        {
+          "path": "notes/units/P022.tex",
+          "sha256": "f8abeffc943e2c6292c6aca983f38a0be3a39cf83ae09ee208f5ab78b4477037"
+        },
+        {
+          "path": "notes/analytic/README.md",
+          "sha256": "c7fa83eb7c04fdd358edf85f6d8459c39cf3b94c26d7ee14c45438b2a90c2442"
+        }
+      ],
+      "steps": {
+        "S1": "b50602599e8407920a1f53e061391391489d3854f7e94d5255f04fe26543c5f5",
+        "S2": "a3b0b497f229ae154938ccb7a0f8a9f82d4ae811dfe49568a002a19dd7a05812",
+        "S3": "3c16398061da2b115f46bcd96eb6163e76dffc1b01832d24b8f2098764b62cc9",
+        "S4": "c1ab947aceba7124af02c521c578591c6c8ebd2f45c3629f296e8a6d5c4fea59",
+        "S5": "d4afcf9bf0740ace6830b1e3aee120997fca1212db3697293ecdcbe15fe063b0",
+        "S6": "6a2c43743b7c0db77e47f1105ce8e02a04cb254df4923413f6c6e72a346af64c",
+        "S7": "4a0b921dc3cf13adfddd2fb8ef53755be2cb25fcc52eef5faf9fee95773a358b",
+        "S8": "2f645ae9d05781367868b288e8d47802a052e158e46478e4453d2d11be3265a8",
+        "S9": "5668d4790a50818518ff9e9266e12343c0a832e2906f34eae1a4ecb8e6bfe330",
+        "S10": "af0a227e14aee6a603aea2d73445d263f6a0c3b2b348212951d05790fafb7a6b"
+      },
+      "step_texts": {
+        "S1": "The factorial-normalized exponential kernel has an explicit full integral and upper bound for its value at each point.",
+        "S2": "Choosing a Taylor order proportional to the left endpoint makes the lower and upper tails outside the logarithmic window exponentially small.",
+        "S3": "On the window the positive part of the real integrand is bounded by its majorant, and off the window the growth assumption and the tail estimate control the remaining contribution.",
+        "S4": "A nearest-pole dichotomy gives either a centre with room to isolate a nonreal obstruction or a positive-residue real pole as the nearest obstruction.",
+        "S5": "In the separated-centre case the coefficient forced by the unique nearest pole exceeds the allowed Taylor-coefficient upper bound for sufficiently large order.",
+        "S6": "In the real nearest-pole case positivity of the residue gives the incompatible sign and size in the coefficient bound.",
+        "S7": "For real g the quantity |g|+g is at most twice the nonnegative majorant on the selected window.",
+        "S8": "The exponential growth condition controls the integral on the two complementary tails at the selected Taylor order.",
+        "S9": "After moving the centre to isolate a nearest pole, the two coefficient estimates are incompatible for large order.",
+        "S10": "If the nearest pole is real, its signed principal part and the analytic remainder also contradict the same upper estimate."
+      }
+    },
+    {
+      "edition_sha256": "bb19771857652cf520e2ecce66509fcb02d31ecfe4a181e479fe5e9c2c8594b0",
+      "sources": [
+        {
+          "path": "notes/analytic/excerpt.tex",
+          "sha256": "4222281e1c6512dcaf306f9be7895da3f8aec6d5601eb6b678e476fb3d3744ab"
+        },
+        {
+          "path": "notes/units/P022.tex",
+          "sha256": "f8abeffc943e2c6292c6aca983f38a0be3a39cf83ae09ee208f5ab78b4477037"
+        },
+        {
+          "path": "notes/analytic/README.md",
+          "sha256": "c7fa83eb7c04fdd358edf85f6d8459c39cf3b94c26d7ee14c45438b2a90c2442"
+        }
+      ],
+      "steps": {
+        "S1": "5dd8f51748206292414809f05bd6b34e70f88558bc8fed4f1cbd04d209842e59",
+        "S2": "3e4eeede9a281abc15e0b9af2795fd74a7816590cc0553a83c3d3692fe4d6afa",
+        "S3": "fe6ef19111cc09d011c4d896da7e9cd7974a52207e6c714b3f899b49c140df5d",
+        "S4": "d9da9348ffb08ad10b69a7852f53663fecc6a9ddce2c196a5db1c9ab035b9154",
+        "S5": "2d2aa3b58bc99e2ab1d339d1574cd10c1561d323cfe4be41a7dbbd4fa96a1dc5",
+        "S6": "5f665c611a1bc86a2f036d8389bde18f551e4fd58f9fb5431db262b530ff9dcd",
+        "S7": "ddf57e6a0baca9436b18d82b0f0089cb613de4c6f6f2f72a912a3fbd67945b74",
+        "S8": "efe24a6fbca81287c88c470e24dfce964e4408e0fd378e71a3c71c9b4ecad59f",
+        "S9": "da8411d2e77fe75102eef22c3bb20b3d76d0ce448a879aa665888c4f93a0226d",
+        "S10": "0b13a5a6e0c5e772f48dc3c1380bd1057c5af1fe37b4ef1ebda58116c466527c"
+      },
+      "step_texts": {
+        "S1": "The factorial-normalized exponential kernel has an explicit full integral and upper bound for its value at each point.",
+        "S2": "Choosing a Taylor order proportional to the left endpoint makes the lower and upper tails outside the logarithmic window exponentially small.",
+        "S3": "On the window the positive part of the real integrand is bounded by its majorant, and off the window the growth assumption and the tail estimate control the remaining contribution.",
+        "S4": "A nearest-pole dichotomy gives either a centre with room to isolate a nonreal obstruction or a positive-residue real pole as the nearest obstruction.",
+        "S5": "In the separated-centre case the coefficient forced by the unique nearest pole exceeds the allowed Taylor-coefficient upper bound for sufficiently large order.",
+        "S6": "In the real nearest-pole case positivity of the residue gives the incompatible sign and size in the coefficient bound.",
+        "S7": "For real g the quantity |g|+g is at most twice the nonnegative majorant on the selected window.",
+        "S8": "The exponential growth condition controls the integral on the two complementary tails at the selected Taylor order.",
+        "S9": "After moving the centre to isolate a nearest pole, the two coefficient estimates are incompatible for large order.",
+        "S10": "If the nearest pole is real, its signed principal part and the analytic remainder also contradict the same upper estimate."
+      }
+    },
+    {
+      "edition_sha256": "bc3a92b430ba87f96700529d5f4076d6fe9dad0add7bab17ada3c579eb5e524c",
+      "sources": [
+        {
+          "path": "notes/analytic/excerpt.tex",
+          "sha256": "4222281e1c6512dcaf306f9be7895da3f8aec6d5601eb6b678e476fb3d3744ab"
+        },
+        {
+          "path": "notes/units/P022.tex",
+          "sha256": "f8abeffc943e2c6292c6aca983f38a0be3a39cf83ae09ee208f5ab78b4477037"
+        },
+        {
+          "path": "notes/analytic/README.md",
+          "sha256": "c7fa83eb7c04fdd358edf85f6d8459c39cf3b94c26d7ee14c45438b2a90c2442"
+        }
+      ],
+      "statement_sha256": "1a95664380e7a969314d5ea7b119f947ffbbb3d7b41a13c166ae247710745f67",
+      "steps": {
+        "S1": "5dd8f51748206292414809f05bd6b34e70f88558bc8fed4f1cbd04d209842e59",
+        "S2": "3e4eeede9a281abc15e0b9af2795fd74a7816590cc0553a83c3d3692fe4d6afa",
+        "S3": "fe6ef19111cc09d011c4d896da7e9cd7974a52207e6c714b3f899b49c140df5d",
+        "S4": "cd6ee5b4b9f7534fb4ccb48958b090af4793a337ab41fe37a99197de7a2aacd9",
+        "S5": "2d2aa3b58bc99e2ab1d339d1574cd10c1561d323cfe4be41a7dbbd4fa96a1dc5",
+        "S6": "5f665c611a1bc86a2f036d8389bde18f551e4fd58f9fb5431db262b530ff9dcd",
+        "S7": "ddf57e6a0baca9436b18d82b0f0089cb613de4c6f6f2f72a912a3fbd67945b74",
+        "S8": "efe24a6fbca81287c88c470e24dfce964e4408e0fd378e71a3c71c9b4ecad59f",
+        "S9": "da8411d2e77fe75102eef22c3bb20b3d76d0ce448a879aa665888c4f93a0226d",
+        "S10": "0b13a5a6e0c5e772f48dc3c1380bd1057c5af1fe37b4ef1ebda58116c466527c"
+      },
+      "step_texts": {
+        "S1": "The factorial-normalized exponential kernel has an explicit full integral and upper bound for its value at each point.",
+        "S2": "Choosing a Taylor order proportional to the left endpoint makes the lower and upper tails outside the logarithmic window exponentially small.",
+        "S3": "On the window the positive part of the real integrand is bounded by its majorant, and off the window the growth assumption and the tail estimate control the remaining contribution.",
+        "S4": "A pole beyond theta gives either a pole-free disc about sigma with a pole horizontally closer than its radius, or a disc containing a unique real pole above theta.",
+        "S5": "In the separated-centre case the coefficient forced by the unique nearest pole exceeds the allowed Taylor-coefficient upper bound for sufficiently large order.",
+        "S6": "In the real nearest-pole case positivity of the residue gives the incompatible sign and size in the coefficient bound.",
+        "S7": "For real g the quantity |g|+g is at most twice the nonnegative majorant on the selected window.",
+        "S8": "The exponential growth condition controls the integral on the two complementary tails at the selected Taylor order.",
+        "S9": "After moving the centre to isolate a nearest pole, the two coefficient estimates are incompatible for large order.",
+        "S10": "If the nearest pole is real, its signed principal part and the analytic remainder also contradict the same upper estimate."
+      },
+      "step_passages": {
+        "S1": "3e06e5c9b4e5bdeb5ace2fad78aed9a190fe6db4565bf086bb1eea8a737f7d56",
+        "S2": "4e10accc4fd69ffde559cf1985fcd64946204d444730c867943801ce403caa30",
+        "S3": "32d2abcf7aed2e67d2be16fe94fcdaf4588b700677e1b67283c1b08790421157",
+        "S4": "51f890da568e04b95caab6e0af383df53619f7db332d7d9cd3b74d17a3809f7d",
+        "S5": "1af94357626cd436ce8bc6a2ef5e3ede7153e531ce611fbd4dcc9b817ddb690a",
+        "S6": "d8b48dab33b43b89316d9f9785106e7814497c286ecb8438f91681472a2cdfcb",
+        "S7": "32d2abcf7aed2e67d2be16fe94fcdaf4588b700677e1b67283c1b08790421157",
+        "S8": "05c08a724d1d9176592bc475562cb27c6646c6694e40602b5df7e2dcad5daade",
+        "S9": "1af94357626cd436ce8bc6a2ef5e3ede7153e531ce611fbd4dcc9b817ddb690a",
+        "S10": "d8b48dab33b43b89316d9f9785106e7814497c286ecb8438f91681472a2cdfcb"
+      }
+    }
+  ]
+}

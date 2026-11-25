@@ -1,0 +1,24 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit T19. Local manuscript v3, item 5.29, heading on printed PDF p. 46.
+% UpperTheory.LiteratureTheorems.resolution_char_zero_of_literature
+% paper2/split_p012.tex:337–348. Verbatim excerpt; SHA-256 3b47d11a7accf3d44677ee217d781f8f4ddad5e05450bb0024436a9037ae4ca0.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+\noindent\nolinkurl{PositivityTheory.Resplug.ResolutionBlowup.resolutionCharZero} --- in-repo constant (\path{Development/WeilBound/CoreStatements/ResolutionCharZero/ResolutionCharZero.lean:6--7}); not compared.\par
+% End of atlas edition annotation.
+
+\begin{formalstatement}[Resolution over a characteristic-zero field]\label{sub:T19}
+
+Given the open-literature record, for every characteristic-zero field $k$
+and reduced separated finite-type $k$-scheme $X$, there is a sequence of
+blowups $f:X'\to X$ with $X'$ smooth. Its restriction over the smooth
+locus is an isomorphism. The reduced inverse image of the complement
+is a simple normal crossings divisor. The formal wrapper uses a closed
+resolution term independently of its record argument.
+
+\end{formalstatement}\subnode{T19}
+
+\noindent Kollár's Theorem 36(1)--(3) gives the three geometric conclusions. In Lean, \nolinkurl{IsBlowupSeq} starts with the identity and composes blowups characterized by the invertibility of the pulled-back ideal and its universal factorization. The predicate \nolinkurl{FinalTheorems.Snc} asks locally for an equation given by the product of distinct members of a regular system of parameters. These are the local equations of the reduced inverse image in Kollár's Definition 24. See \path{Geometry₂/ConclusionOfSmooth.lean:17--22} and \path{RegularLocalRings/FinalTheorems.lean:6--21}. \href{https://arxiv.org/pdf/math/0508332}{J. Kollár, Resolution of Singularities — Seattle Lecture, Theorem 36(1–3)}~\cite{r21-kollar}.

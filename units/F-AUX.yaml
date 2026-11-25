@@ -1,0 +1,99 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "F-AUX",
+  "kind": "reading_composite",
+  "title": "Three theta inputs for the definite-side grid and row test",
+  "slug": "three-theta-inputs-for-the-definite-side-grid",
+  "aliases": [
+    "unramified fixed-vector comparison",
+    "square-model local matching",
+    "row rationality transition"
+  ],
+  "track": {
+    "primary": "theta",
+    "secondary": [
+      "local"
+    ]
+  },
+  "summary": "Three inputs connect theta theory to the tests used to choose the definite-side witness. They supply the unramified fixed-vector comparison for separation, transfer local matching to the square model for the evaluation grid, and turn tests at individual data into the required rationality of the rows. Each has its own hypotheses.",
+  "statement": "The unramified dual-pair assertion HoweUnram holds. Real Howe duality, the theta-local inputs, tensor-model integral agreement and tensor-model local matching imply local matching in the twisted square model. A row test at every datum implies RowRatW. These are three separate implications used in the definite-side supplier.",
+  "assumptions": [
+    "source:lean-repository"
+  ],
+  "hypothesis_details": [
+    "For the unramified assertion use the valued field, involution, local pair and nonzero invariant generating test vector of HoweUnram.",
+    "For the local transfer supply real Howe duality and the full theta-local record, theta-integral agreement and local matching in the original model.",
+    "For row rationality supply AtDat of the row test on the complex realization at each datum."
+  ],
+  "lean": [
+    {
+      "name": "GlobalTheory.Hk3.howeUnram_holds",
+      "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/RhoMemOfMkEq.lean",
+      "line0": 250,
+      "line1": 256,
+      "sha256": "0c79aadc511363b94cd5f6f9032c8929ae0df989721ed6128bc5c91d754dc08c",
+      "dominated": 6499,
+      "graph": "allChi",
+      "role": "component"
+    },
+    {
+      "name": "GlobalTheory.T.twisted_local_factors_match",
+      "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/TwistedSquareLocalMatching.lean",
+      "line0": 88,
+      "line1": 89,
+      "sha256": "dfa1b9c7621555dd47ca6350a73609886c02615b083bc2af68ed6ab0b783e23f",
+      "dominated": 2,
+      "graph": "allChi",
+      "role": "component"
+    },
+    {
+      "name": "GlobalTheory.Mem.LiteralAutomorphy.rowRatW_of_rowTest",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/RowRatWOfRowTest.lean",
+      "line0": 9,
+      "line1": 12,
+      "sha256": "cab25bc2ec91fb686787b4f8cdf4e9cb92b2cb8b39c8581d4d0f647d14cebc45",
+      "dominated": 4,
+      "graph": "allChi",
+      "role": "component"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/F-AUX_round4.md",
+      "section": "F-AUX · Three inputs to the definite-side evaluation grid and row test",
+      "pages": [
+        1,
+        3
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "grade_scope": "L0 records the three pinned head declarations; the atlas groups their uses at T02.",
+  "reviews": [],
+  "grade_evidence": [],
+  "review_status": "pending_review",
+  "prerequisites": [],
+  "prerequisite_sources": {},
+  "size_pages": 3,
+  "open_questions": [
+    "Track the same quotient and both spanning conditions through the finite Fock subspaces and the product-form argument."
+  ],
+  "last_checked": "2026-11-25",
+  "scope": "An outline of the three named calls under their own hypotheses; no combined Lean assertion is attributed to the project.",
+  "background": [
+    "Unramified dual pairs",
+    "Finite Fock subspaces and local matching",
+    "Dependent row predicates"
+  ],
+  "hypothesis_source": {
+    "document": "notes/units/F-AUX_round4.md",
+    "section": "The three separate interfaces",
+    "pages": []
+  },
+  "question_sources": [
+    "notes/units/F-AUX_round4.md"
+  ],
+  "pillar_map": "pillars/F.md"
+}

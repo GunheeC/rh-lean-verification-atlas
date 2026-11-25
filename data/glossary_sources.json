@@ -1,0 +1,419 @@
+{
+  "source_commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "rule": "Definition and statement locators in the pinned source. Only independently listed unit statements are called primary. Other unit IDs identify where the term is constructed or used. Auxiliary definition links are separate from the 1,006-declaration theorem and support census.",
+  "terms": [
+    {
+      "term": "AdmT",
+      "meaning": "Twisted-place admissibility packages seventeen conditions on one table, parameter choice and constant. These control signatures, length bounds in different prime ranges, exceptional primes, generator terms and growth of the parameters.",
+      "definition": {
+        "name": "Formalism.MainNotions.TwistedPlaces.AdmT",
+        "file": "Development/AutomorphicArithmetic/ResidueCharacters/TwistedPlaces.lean",
+        "line0": 238,
+        "line1": 241,
+        "sha256": "44646e3227201002efdf595cc4f11f62944995229470221c765ec597d517e5d9"
+      },
+      "additional_definitions": [],
+      "unit_ids": [
+        "D427"
+      ]
+    },
+    {
+      "term": "ChainTied",
+      "meaning": "At a fixed scale one member, its translates, one chain datum and its constants must realize all the geometric and arithmetic identifications. Divisor, loss and height exponents are bounded on these same choices.",
+      "definition": {
+        "name": "Formalism.MainNotions.ChainTied",
+        "file": "Formalism/SharpRestriction/GlobalSchurBounds/TieGlobal.lean",
+        "line0": 97,
+        "line1": 114,
+        "sha256": "ee75ebdaefc4c477d6a861c449117734998c23db306600b5d46646ae33d5eee7"
+      },
+      "additional_definitions": [],
+      "unit_ids": [
+        "P017"
+      ]
+    },
+    {
+      "term": "Chebyshev window",
+      "meaning": "For every explicitly controlled family whose chain is tied at all sufficiently large scales in its window, the level’s weighted prime sum satisfies the specified one-sided power bound at every sufficiently large window scale. The exponent depends on the divisor and loss bounds and epsilon.",
+      "definition": {
+        "name": "Formalism.HC.ChebyshevInequalityOnWindows",
+        "file": "Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/TopWin.lean",
+        "line0": 26,
+        "line1": 28,
+        "sha256": "8a7b526bfd36de3c18365dab66ff256e325459fb5ae3426b72b875351e99f340"
+      },
+      "additional_definitions": [],
+      "unit_ids": [
+        "P017",
+        "P018"
+      ]
+    },
+    {
+      "term": "CoreAtH",
+      "meaning": "At one host and one scale a choice of finite units, word fibres, translates and one chain datum identifies the local gains, lattice indices and character coefficients. The size, thinness, cost and error inequalities hold for those choices.",
+      "definition": {
+        "name": "UpperTheory.Comparison₂.CoreAtH",
+        "file": "Development/AutomorphicArithmetic/PrimitiveCosets/CoreAtH.lean",
+        "line0": 29,
+        "line1": 41,
+        "sha256": "29d52decf84e5bdecd990b537763fd54d09d9f3297ad13d29f76016b5e00f6db"
+      },
+      "additional_definitions": [],
+      "unit_ids": [
+        "B08"
+      ]
+    },
+    {
+      "term": "DefiniteSideCondition",
+      "meaning": "For the selected column bundle, thresholds and indefinite rows, compatible tied division and normalization data must give definite rows for each word. This is one of the two parameters of the HypsAlt record.",
+      "definition": {
+        "name": "GlobalTheory.Fc.DefiniteSideCondition",
+        "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/DefiniteSideCondition.lean",
+        "line0": 25,
+        "line1": 35,
+        "sha256": "7d95f1de02ab8ffe367930e2ede3f3244837314d50316e5eabb4298177b1d37a"
+      },
+      "additional_definitions": [],
+      "unit_ids": [
+        "T02"
+      ]
+    },
+    {
+      "term": "EFamC",
+      "meaning": "All members of a family beyond one scale threshold satisfy the one-host explicit-formula condition for the given level. The error constant is uniform over the family indices.",
+      "definition": {
+        "name": "Formalism.HC.EFamC",
+        "file": "Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/TopDefs.lean",
+        "line0": 15,
+        "line1": 16,
+        "sha256": "695c5843601cab184a89a7a0f0f9bc180e843d226271553e4c5c0c2877e29055"
+      },
+      "additional_definitions": [],
+      "unit_ids": [
+        "P017"
+      ]
+    },
+    {
+      "term": "FamilyClassConnected",
+      "meaning": "A class has common divisor and loss exponents and a positive epsilon threshold. For each sufficiently small positive epsilon a family in the class admits a chain tied throughout its eventual window.",
+      "definition": {
+        "name": "UpperTheory.Top.FamilyClassConnected",
+        "file": "Development/AutomorphicArithmetic/CharacterBoxes/DivinNOfHypV.lean",
+        "line0": 13,
+        "line1": 15,
+        "sha256": "3b6bbd1855b0fe073244364561c1dc8b7a867cd96e5ac9a3bce1d56351c69742"
+      },
+      "additional_definitions": [],
+      "unit_ids": [
+        "B05",
+        "P016"
+      ]
+    },
+    {
+      "term": "Frame",
+      "meaning": "The host frame fixes a finite abelian group on a numbered set, a surjection to the cyclotomic quotient and a chosen element whose multiples satisfy the projection-kernel condition. This entry uses the character-host sense of frame.",
+      "definition": {
+        "name": "Formalism.HC.Frame",
+        "file": "Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/ZsmulGeneratorEqZeroOfProjection.lean",
+        "line0": 15,
+        "line1": 23,
+        "sha256": "ec42c7afbfd4c5c7e05101639e59a4b92357e8451795a88bcc4d416ca64ac4c2"
+      },
+      "additional_definitions": [],
+      "unit_ids": [
+        "D513"
+      ]
+    },
+    {
+      "term": "Host",
+      "meaning": "The host fixes the Galois field, its identification with the frame group, a cyclotomic embedding and compatible Artin data. The full structure adds the CM embedding, level and ideal data, and the test sets used for the comparison.",
+      "definition": {
+        "name": "Formalism.BasicNotions.Host",
+        "file": "Formalism/LocalRingCardinality/DataHost.lean",
+        "line0": 39,
+        "line1": 109,
+        "sha256": "e698bcb0193cfa4b709b7a85c36553ccef29e595ee9e25813534e2a3e7d3f108"
+      },
+      "additional_definitions": [
+        {
+          "name": "Formalism.HC.HostRaw",
+          "file": "Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/ConjEMemHostFIff.lean",
+          "line0": 12,
+          "line1": 46,
+          "sha256": "eb8332b7d000bf55f3dc1f387598eb4f41f8c69921f547f4a4c220983634d152"
+        }
+      ],
+      "unit_ids": [
+        "D511"
+      ]
+    },
+    {
+      "term": "HostExW",
+      "meaning": "For each allowed epsilon there are uniform constants, a threshold and a window system of the chosen exponent. Above the threshold each appropriate scale has ranks and a host satisfying both the common bounds and the given requirement.",
+      "definition": {
+        "name": "GlobalTheory.EX.HostExW",
+        "file": "Development/AbelianVarietyTheory/Definitions/GlobalTwisting/ThinScalesIffHostBound.lean",
+        "line0": 120,
+        "line1": 123,
+        "sha256": "103c1da695348039363b1f584ec8eaddcaa5bd7ba24eb13653a56a322375e593"
+      },
+      "additional_definitions": [],
+      "unit_ids": [
+        "B07",
+        "P016"
+      ]
+    },
+    {
+      "term": "HypsAlt",
+      "meaning": "The data type chooses one family class, raw selection and threshold function, with the linked host, row, divisibility, period and projection data. F asks for one inhabitant of the whole record for closed LinkN and the definite-side condition.",
+      "definition": {
+        "name": "GlobalTheory.Fc.HypsAlt",
+        "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/Hyps.lean",
+        "line0": 22,
+        "line1": 90,
+        "sha256": "a06d22400ea580ca4c23cce1498fc880d05096b95425bb66ca0507d7c014026a"
+      },
+      "additional_definitions": [],
+      "unit_ids": [
+        "T02",
+        "B05"
+      ]
+    },
+    {
+      "term": "HypV",
+      "meaning": "Eventually every family index satisfies the Selmer length budget VVle on its own field and up to its own rank. The budget is the square root of the size parameter at that index.",
+      "definition": {
+        "name": "UpperTheory.Top.HypV",
+        "file": "Development/AutomorphicArithmetic/CharacterBoxes/DivinNOfHypV.lean",
+        "line0": 10,
+        "line1": 11,
+        "sha256": "6065e9f2233a5fc95141a1ee98c481948c3d10eb26231516575f0bed68bc8f24"
+      },
+      "additional_definitions": [],
+      "unit_ids": [
+        "P016"
+      ]
+    },
+    {
+      "term": "kThetaVector",
+      "meaning": "This theorem supplies the fourth-root theta-vector conclusion for standard data. The resulting theta section has its prescribed fourfold tensor, spans the line and is unique up to a fourth root of unity.",
+      "definition": {
+        "name": "Formalism.L2.Ker.kThetaVector",
+        "file": "Formalism/LocalToGlobal/KernelLattices/KernelLocalFactors/IsAdmissibleFlagPairOfUnitriangularLeftAutomorph.lean",
+        "line0": 27,
+        "line1": 29,
+        "sha256": "82a55bd90997324f4aa6de3089491761f8e96c43efc8bca2ff09851b4668ca00"
+      },
+      "additional_definitions": [
+        {
+          "name": "Formalism.L2.Th1.H.ThetaVector",
+          "file": "Formalism/LocalToGlobal/TorsionIntegrality/QuadraticSemicharacters/ProductThetaMem.lean",
+          "line0": 71,
+          "line1": 78,
+          "sha256": "bdc4195b122b258dd0d05d9636d028bc7e50f92e806fa58fd09a1df9c1ec6f73"
+        }
+      ],
+      "unit_ids": [
+        "Z4.2.04"
+      ]
+    },
+    {
+      "term": "Level.Gm",
+      "meaning": "This is the weighted real Chebyshev sum for a cyclic or general level. It combines the principal term with the real parts of nonprincipal character sums, using the level’s weights.",
+      "definition": {
+        "name": "Formalism.HC.Level.Gm",
+        "file": "Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/ExplicitFormulaErrorOfHostConditions.lean",
+        "line0": 38,
+        "line1": 38,
+        "sha256": "a7c0d29766bf965ec1c2c26b81f363cb5a65e247cddb93c4d5beae3ce1b37e50"
+      },
+      "additional_definitions": [],
+      "unit_ids": [
+        "P017"
+      ]
+    },
+    {
+      "term": "LinkN",
+      "meaning": "A single constant and threshold work for every sufficiently large scale and every family index with finite Selmer lengths. The pointwise bound LinkN_at must hold at each selected lift.",
+      "definition": {
+        "name": "Formalism.MainNotions.LinkN",
+        "file": "Formalism/SharpRestriction/GlobalTheoremInputs.lean",
+        "line0": 45,
+        "line1": 47,
+        "sha256": "61670c58d9fc4e2c1e8b43f71f0855d6be3df97c9e789ef1b37dc88685a85eaa"
+      },
+      "additional_definitions": [],
+      "unit_ids": [
+        "D427",
+        "B05"
+      ]
+    },
+    {
+      "term": "LinkN_at",
+      "meaning": "At one lift, summability of the logarithmically weighted Selmer lengths implies an upper bound for the local error sum. Its right-hand side multiplies the reference dimension by the geometric allowance plus the sum of those lengths.",
+      "definition": {
+        "name": "Formalism.MainNotions.LinkN_at",
+        "file": "Formalism/SharpRestriction/GlobalTheoremInputs.lean",
+        "line0": 40,
+        "line1": 43,
+        "sha256": "077fe3e4e4d548f3095518c7bdabb571133980eb358626baa808f391f06ed557"
+      },
+      "additional_definitions": [],
+      "unit_ids": [
+        "D427"
+      ]
+    },
+    {
+      "term": "Scale",
+      "meaning": "A scale specifies a real size greater than one, an epsilon strictly between zero and 1/52, and an index J at least one. These are shared inputs to the exponential budget and the choice of windows.",
+      "definition": {
+        "name": "Formalism.BasicNotions.Scale",
+        "file": "Formalism/LocalRingCardinality/DataParams₂.lean",
+        "line0": 9,
+        "line1": 17,
+        "sha256": "29c6634287578bcf81417df1318cacd2f200f04f6c8b618a02f92fad0500cd61"
+      },
+      "additional_definitions": [],
+      "unit_ids": [
+        "B07",
+        "P017"
+      ]
+    },
+    {
+      "term": "StdOK",
+      "meaning": "A base satisfies the prescribed standard period, Hermitian lattice, semicharacter, isometry, duality and index conditions. The blueprint chart records separate constructions by FourthRootStd and SO.",
+      "definition": {
+        "name": "Formalism.L2.Ker.Base.StdOK",
+        "file": "Formalism/LocalToGlobal/KernelLattices/LateralTheory.lean",
+        "line0": 151,
+        "line1": 151,
+        "sha256": "0fe012154eba8284d4a403e686d94ea0292d96b0f5bc0e9bf211645b3bbbbb24"
+      },
+      "additional_definitions": [
+        {
+          "name": "Formalism.L2.Ker.StdOK",
+          "file": "Formalism/LocalToGlobal/KernelLattices/LateralTheory.lean",
+          "line0": 31,
+          "line1": 32,
+          "sha256": "4994a6f57ab7efc81451e39ee8c8f6a416129b29c960589784c50fe9b1b055f0"
+        }
+      ],
+      "unit_ids": [
+        "Z4.2.04"
+      ]
+    },
+    {
+      "term": "supplyChi",
+      "meaning": "For a fixed primitive character, its Selmer-window assumption at exponent 401 yields hosts satisfying that character’s requirements on arbitrarily distant windows of power 3/2. The host and Selmer estimates refer to the same chosen data.",
+      "definition": {
+        "name": "UpperTheory.Top.supplyChi",
+        "file": "Development/AutomorphicArithmetic/CharacterBoxes/SupplyChi.lean",
+        "line0": 8,
+        "line1": 16,
+        "sha256": "3802f3f332e6c3e3325ad9b7016e8d050001a204984bd21c05f59b93b9de2e22"
+      },
+      "additional_definitions": [],
+      "unit_ids": [
+        "B07"
+      ]
+    },
+    {
+      "term": "TopG",
+      "meaning": "For any window exponent greater than one and any family requirement, host existence together with HypV for each member of the class implies FamilyClassConnected. The consumer specializes the implication to a primitive character.",
+      "definition": {
+        "name": "UpperTheory.Top.TopG",
+        "file": "Development/AutomorphicArithmetic/CharacterBoxes/ZeroFreeAllOfTopG.lean",
+        "line0": 12,
+        "line1": 14,
+        "sha256": "eb4352569de4ac8db392c6679585a0109b3a4a376f44cb78fd447e13d065227a"
+      },
+      "additional_definitions": [],
+      "unit_ids": [
+        "B05",
+        "P016"
+      ]
+    },
+    {
+      "term": "VVle",
+      "meaning": "For a field, twist cutoff and budget, all the indicated local Selmer-kernel lengths are finite. Every finite prime sum of these lengths weighted by the logarithms of the primes is at most the budget.",
+      "definition": {
+        "name": "UpperTheory.Top.VVle",
+        "file": "Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean",
+        "line0": 12,
+        "line1": 17,
+        "sha256": "40401271208e3cb9536b359c87cf6a4f28cab860edb7e750e1294a7c45913a4f"
+      },
+      "additional_definitions": [],
+      "unit_ids": [
+        "P020",
+        "P013"
+      ]
+    },
+    {
+      "term": "VWin",
+      "meaning": "For each primitive character, admissible epsilon, page function and prime pair, the construction finds an interval [Y,Y²] inside the large-scale bounds. Throughout it, every selected character field satisfies VVle up to the integer part of x to the power 401.",
+      "definition": {
+        "name": "UpperTheory.Top.VWin",
+        "file": "Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean",
+        "line0": 49,
+        "line1": 49,
+        "sha256": "84c157849fbf30a25382ffcc055f63d04544cc5c2e38936e0b220d9e7c661bb8"
+      },
+      "additional_definitions": [
+        {
+          "name": "UpperTheory.Top.VWinAt",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean",
+          "line0": 44,
+          "line1": 47,
+          "sha256": "5ae8705f36350477e336b73960001e8aa1b0aa0720106a6a8c993601774892de"
+        }
+      ],
+      "unit_ids": [
+        "P013",
+        "B07"
+      ]
+    },
+    {
+      "term": "Window",
+      "meaning": "A family window is unbounded and each of its scales has an inhabited index set. A host scale system of exponent λ also contains [Y,Y^λ] for arbitrarily large Y; B07 uses λ = 3/2.",
+      "definition": {
+        "name": "Formalism.MainNotions.FamCore",
+        "file": "Formalism/SharpRestriction/FamCore.lean",
+        "line0": 71,
+        "line1": 136,
+        "sha256": "b4bb57cb55a43e0cd44b3f7b062e6b1d73c91a79570d2d822bc25ab8c895d8f2"
+      },
+      "additional_definitions": [
+        {
+          "name": "GlobalTheory.EX.Scales",
+          "file": "Development/AutomorphicArithmetic/PrimeDiscriminants/Scales.lean",
+          "line0": 9,
+          "line1": 13,
+          "sha256": "aef98efa69d6017326a33477a09e79244f6a17fae40390364d97d7dce0a9fa94"
+        }
+      ],
+      "unit_ids": [
+        "P017",
+        "B07"
+      ]
+    },
+    {
+      "term": "WinPair",
+      "meaning": "The two primes obey prescribed congruences and logarithmic size bands at one scale. The first prime and every odd prime up to the designated size divide one plus the second prime.",
+      "definition": {
+        "name": "UpperTheory.Top.WinPair",
+        "file": "Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean",
+        "line0": 27,
+        "line1": 37,
+        "sha256": "775fd31669f295cd7b939b57d58e7efcaa417318c4d862ed03833c401a045bc8"
+      },
+      "additional_definitions": [],
+      "unit_ids": [
+        "D510",
+        "B07"
+      ]
+    }
+  ],
+  "archive_sha256": "9631b4f020199e580ba86178cb56c6e9b09f690c2369a80dc4334aa93f49c7fc",
+  "archive_files_compared": 23
+}

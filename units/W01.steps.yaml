@@ -1,0 +1,189 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "W01",
+  "edition_sha256": "84bb639b7241489b01f7ccbeccfe3d9eac8bd754f87c590273547c168a7016ba",
+  "note_sha256": "d1feb83968c2f9256e091ee729941e0a39966d3c05fff4b165753f7bd5460d42",
+  "statement_sha256": "a0c39a5aeeec15ee2a8137556ad788f103b6661b18bb3835f9ef8f776c98de7a",
+  "sources": [
+    {
+      "path": "notes/units/W01_round4.md",
+      "sha256": "d1feb83968c2f9256e091ee729941e0a39966d3c05fff4b165753f7bd5460d42"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The eleven CM conditions fill one CM/abelian input package.",
+      "kind": "assembly",
+      "uses": [
+        "input: open-image record"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.One.Join.cm_abelian_inputs_from_literature",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TopMainZj.lean",
+          "line0": 59,
+          "line1": 70
+        }
+      ],
+      "source": "notes/units/W01_round4.md",
+      "anchor": "1. **Supply the CM field of the record.** Starting with $O$, form the eleven components required by the CM hypothesis. In particular the dual-cry",
+      "source_lines": [
+        13,
+        15
+      ],
+      "claim_sha256": "03761b77e58f3166bb835f1894ea1a3ce89c1e565a96097626236125ff2d355d",
+      "passage_sha256": "b66f1453be502288fa6b26adc6193b82ba8a1e0478edd280e50085f4fd3e2a6f",
+      "sha256": "5a1039733706261ccb849eef0b1d4642c0f14e1e5807da69206820fb2134fe76",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The local and automorphic packages retain the same specified row and base-change witness.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "input: polarized row and base change"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.One.Join.automorphic_inputs_from_literature",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TopMainZj.lean",
+          "line0": 38,
+          "line1": 54
+        },
+        {
+          "name": "UpperTheory.One.Join.v_window_of_depth_zero_residual_bc_cm",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TopMainZj.lean",
+          "line0": 55,
+          "line1": 58
+        }
+      ],
+      "source": "notes/units/W01_round4.md",
+      "anchor": "2. **Keep the automorphic row and base change in their designated slots.** The local package uses eighteen assignments from $O$. The automorphic ",
+      "source_lines": [
+        13,
+        15
+      ],
+      "claim_sha256": "2e685dd99d46e47f9539514026bdb622f35d3052e272ea76418c18f5a03fcc94",
+      "passage_sha256": "b66f1453be502288fa6b26adc6193b82ba8a1e0478edd280e50085f4fd3e2a6f",
+      "sha256": "482df06bab1b4e7d7064d774f9a5e9d2cbad6589734a1e9acb6409e6008961ed",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The patched rank record supplies the common cohomology witness used by the count reduction.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S2",
+        "input: patching and cohomology suppliers"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/WindowBoundOfLiteratureLevel.lean",
+          "line0": 25,
+          "line1": 29
+        }
+      ],
+      "source": "notes/units/W01_round4.md",
+      "anchor": "3. **Follow the same record through the arithmetic reduction.** The rank record is augmented by the patching supplier with its fixed descent argu",
+      "source_lines": [
+        13,
+        15
+      ],
+      "claim_sha256": "2806025bfde2b65fac78a411cb00efa70a9276856779b131027376b9a29eece1",
+      "passage_sha256": "b66f1453be502288fa6b26adc6193b82ba8a1e0478edd280e50085f4fd3e2a6f",
+      "sha256": "2b7d86ec61b6b300ea54912766ef4329f8a818da3930a3719ae611f5e2db04e6",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The count reduction yields one interval that works for each allowed inner scale and field.",
+      "kind": "assembly",
+      "uses": [
+        "S3",
+        "W13"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Top.VWinAt",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean",
+          "line0": 44,
+          "line1": 47
+        },
+        {
+          "name": "UpperTheory.V.HV.Core.of_four_alt",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/HVCore.lean",
+          "line0": 18,
+          "line1": 22
+        }
+      ],
+      "source": "notes/units/W01_round4.md",
+      "anchor": "Consider a single test of the output: fix a primitive character, an allowed exponent and a page function before choosing an outer scale and its p",
+      "source_lines": [
+        19,
+        19
+      ],
+      "claim_sha256": "5578ca2f5eb9bbc537139e02ef364846e90c721b356cb6813f6d684a6222f98a",
+      "passage_sha256": "26154a4601134a1ca40dbdcc1037453e6b0512e7c6705420b17d3e6740c799d0",
+      "sha256": "128a6d337cdce1964ac7c2068172cc09eff8f0e14f6b37f8ea3606fcc27e4345",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "0124578559b425ac6ba73d371136bac5716ed805741320182a189b656c305efb",
+      "sources": [
+        {
+          "path": "notes/units/W01_round4.md",
+          "sha256": "44200656377d89412e7b83b93499aa31ae62db95810da2f3b61d08b611be563e"
+        }
+      ],
+      "steps": {
+        "S1": "5a1039733706261ccb849eef0b1d4642c0f14e1e5807da69206820fb2134fe76",
+        "S2": "90d8e5390ff9c01af32ad6503776f00e78b0fe653da09717758c60a24857dd3f",
+        "S3": "15f5fa7e8d94788e044649169dec3f7e3a2e8b888aef3206f86c91b9ae189514",
+        "S4": "fd6ebeede57793574b4269eb35a940c4f86af1141004ae02a13399be659cfce0"
+      },
+      "step_texts": {
+        "S1": "The eleven CM conditions fill one CM/abelian input package.",
+        "S2": "The local and automorphic packages retain the same specified row and base-change witness.",
+        "S3": "The patched rank record supplies the common cohomology witness used by the count reduction.",
+        "S4": "The count reduction yields one interval that works for each allowed inner scale and field."
+      }
+    },
+    {
+      "edition_sha256": "6a1dbc250b4b653422371a0131d1dbf2b6972ef5c6c1d463c69b4feace0d6e9b",
+      "sources": [
+        {
+          "path": "notes/units/W01_round4.md",
+          "sha256": "44200656377d89412e7b83b93499aa31ae62db95810da2f3b61d08b611be563e"
+        }
+      ],
+      "statement_sha256": "a0c39a5aeeec15ee2a8137556ad788f103b6661b18bb3835f9ef8f776c98de7a",
+      "steps": {
+        "S1": "5a1039733706261ccb849eef0b1d4642c0f14e1e5807da69206820fb2134fe76",
+        "S2": "482df06bab1b4e7d7064d774f9a5e9d2cbad6589734a1e9acb6409e6008961ed",
+        "S3": "2b7d86ec61b6b300ea54912766ef4329f8a818da3930a3719ae611f5e2db04e6",
+        "S4": "128a6d337cdce1964ac7c2068172cc09eff8f0e14f6b37f8ea3606fcc27e4345"
+      },
+      "step_texts": {
+        "S1": "The eleven CM conditions fill one CM/abelian input package.",
+        "S2": "The local and automorphic packages retain the same specified row and base-change witness.",
+        "S3": "The patched rank record supplies the common cohomology witness used by the count reduction.",
+        "S4": "The count reduction yields one interval that works for each allowed inner scale and field."
+      },
+      "step_passages": {
+        "S1": "b66f1453be502288fa6b26adc6193b82ba8a1e0478edd280e50085f4fd3e2a6f",
+        "S2": "b66f1453be502288fa6b26adc6193b82ba8a1e0478edd280e50085f4fd3e2a6f",
+        "S3": "b66f1453be502288fa6b26adc6193b82ba8a1e0478edd280e50085f4fd3e2a6f",
+        "S4": "26154a4601134a1ca40dbdcc1037453e6b0512e7c6705420b17d3e6740c799d0"
+      }
+    }
+  ]
+}

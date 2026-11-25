@@ -1,0 +1,17 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit P049. Local manuscript v3, item 7.26, heading on printed PDF p. 90.
+% Formalism.HN.height_gram_determinant
+% paper2/inputs_two.tex:143–153. Verbatim excerpt; SHA-256 f66e57e3cf6a7bb15e87749f5fedc81316e87921aaf1917f287fe3f0ec3c46f5.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+\begin{theorem}[Gram determinant in the span of the lattice]\label{pn:P049}
+Let \(K\) be a totally complex number field with its given star structure, \(V\) a finite-dimensional \(K\)-space with the compatible \(\mathcal O_K\)-action, \(b\) a basis and \(X_v\) invertible complex frames. For a \(K\)-independent family \(e_1,\ldots,e_j\), set \(B=\sum_i\mathcal O_K e_i\). Then
+\[
+ \operatorname{ht}_{b,X}(B)=\prod_{v\mid\infty}\operatorname{Re}\det\operatorname{Gram}_{v,b,X}(e).
+\]
+For every finitely generated \(\mathcal O_K\)-module \(L\supset B\) of \(K\)-rank \(j\), one has \(\operatorname{ht}_{b,X}(L)[L:B]=\operatorname{ht}_{b,X}(B)\).
+\end{theorem}
+\nodestatus{P049}
+\begin{proof}
+Let \(n=2f=[K:\mathbf Q]\), \(\Delta=|\operatorname{disc}K|\), and choose an integral basis of \(\mathcal O_K\). Take real and imaginary parts in one embedding from each conjugate pair. Replacing one pair of real rows \((u,v)\) by \((u+iv,u-iv)\) multiplies the absolute determinant by \(2\). The square of the determinant of the full embedding matrix is the discriminant, since its transpose times itself is the trace matrix. Thus the original real covolume is \(2^{-f}\sqrt\Delta\). In the complex span at \(v\), write the coordinate matrix of \(e_1,\ldots,e_j\) in an orthonormal basis of that span. Its real determinant is the squared absolute complex determinant, equal to \(\det\operatorname{Gram}_v(e)\). Taking \(j\) copies of the field lattice and applying these changes of coordinates yields its Gram product times \((2^{-f}\sqrt\Delta)^j\). The normalization in the height cancels precisely the latter factor. Clearing the denominators of generators gives \(B\subseteq L\subseteq c^{-1}B\). Smith form for the inclusion then gives the index as the ratio of covolumes. The rank-zero calculation uses the empty determinant. See blueprint \bploc{lem:P5-gram-realize}, with the Gram determinant computed in the span as in the indicated Lean declaration.
+\end{proof}

@@ -1,0 +1,461 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "reviews": {
+    "A": {
+      "path": "reviews/DB3_review_A.md",
+      "original_sha256": "4706de34e6492a2925757dcf48c7b3fa3ff2655c6e79f788b00aa4ab0c2283ab",
+      "published_sha256": "8dfade6464dc7a48025446f77f7093759f4afc3cb9b731df680e26abb56d0245"
+    },
+    "B": {
+      "path": "reviews/DB3_review_B.md",
+      "original_sha256": "0a30dbfeddb92bb47e21c9df456a9f50c632dd67bf9a85f379c1ef9d61fce543",
+      "published_sha256": "ff29c3d22bf9415dcd049a87bd256c76dcb864108e9ce3b9f2733d47a4d6228b"
+    }
+  },
+  "original_verdicts": "data/grade_evidence.json",
+  "A": [
+    {
+      "item": 1,
+      "unit": "V4-COND",
+      "action": "Downgraded the conditional argument to Outlined in the live inventory. The round-3 ledger is a historical edition.",
+      "source": "TopPlug.lean:12–19"
+    },
+    {
+      "item": 2,
+      "unit": "V4-COND",
+      "action": "Listed and separated the six additional sets of intermediate inputs used by the outline.",
+      "source": "Imports.lean:8–19, LevelOfCongruence.lean:175–197, DivinNOfHypV.lean:117–131, SumLogPrimeFactorsLe.lean:775–784, supplyOfAdmOf.lean:36–39 and 129–135, ClaimStrip.lean:59–102"
+    },
+    {
+      "item": 3,
+      "unit": "V4-COND",
+      "action": "Restored threshold order and the extra lower bounds at B2.",
+      "source": "WinPairs.lean:23–37, supplyOfAdmOf.lean:39–93"
+    },
+    {
+      "item": 4,
+      "unit": "V4-COND",
+      "action": "Identified the rank bound on the chosen frame.",
+      "source": "supplyOfAdmOf.lean:38 and 129–135"
+    },
+    {
+      "item": 5,
+      "unit": "V4-COND",
+      "action": "Outlined how the single selection supplies the kernel premise of C3.",
+      "source": "TopShape.lean:33–55"
+    },
+    {
+      "item": 6,
+      "unit": "V4-COND",
+      "action": "Identified the Mellin paragraph as a sketch using the level criterion.",
+      "source": "Imports.lean:8–19"
+    },
+    {
+      "item": 7,
+      "unit": "V4-COND",
+      "action": "Identified the pointwise lattice bound required by B10.",
+      "source": "ChTop.lean:47–55"
+    },
+    {
+      "item": 8,
+      "unit": "B09",
+      "action": "Added the weighted width-Lipschitz bound and the sign conditions.",
+      "source": "LipschitzWeightAndMinimum.lean:957–964, ChCore.lean:117–123 and 307–309"
+    },
+    {
+      "item": 9,
+      "unit": "B09",
+      "action": "Separated the abstract character and size assumptions from the host specialization in B08.",
+      "source": "ChCore.lean:343–442, CoreGm.lean:12–74"
+    },
+    {
+      "item": 10,
+      "unit": "B09",
+      "action": "Derived positivity before applying the balance identity.",
+      "source": "ChCore.lean:292–295"
+    },
+    {
+      "item": 11,
+      "unit": "B08",
+      "action": "Identified the ErrWindows0 inequalities for the host parameters.",
+      "source": "CoreGm.lean:42–45 and 55–56"
+    },
+    {
+      "item": 12,
+      "unit": "D561",
+      "action": "Extended the note from the two inner identities to the enclosing core inequality.",
+      "source": "ChCore.lean:283–338"
+    },
+    {
+      "item": 13,
+      "unit": "D561",
+      "action": "Added the exclusion of inert primes among the specified exceptional primes.",
+      "source": "ChBalance.lean:163–167"
+    },
+    {
+      "item": 14,
+      "unit": "D562",
+      "action": "Separated the written elementary argument from the library bound, and extended the increment estimate to its actual callee.",
+      "source": "LipschitzWeightAndMinimum.lean:668–694 and 966–970, GzLipschitz.lean:185–225"
+    },
+    {
+      "item": 15,
+      "unit": "D547",
+      "action": "Dropped the unnecessary positive scale premise.",
+      "source": "GmAEq.lean:61–64"
+    }
+  ],
+  "B_required_items": {
+    "1": "P010",
+    "2": "P010",
+    "3": "P010",
+    "4": "P011",
+    "5": "P011",
+    "6": "P026",
+    "7": "P026",
+    "8": "B04",
+    "9": "W11",
+    "10": "W08",
+    "11": "T12",
+    "12": "T15",
+    "13": "T17",
+    "14": "T09",
+    "15": "T11",
+    "16": "P003",
+    "17": "P009",
+    "18": "OVERVIEW",
+    "19": "OVERVIEW",
+    "20": "OVERVIEW",
+    "21": "local guide",
+    "22": "tracks/theta",
+    "23": "galois guide",
+    "24": "track guides",
+    "25": "procedures",
+    "26": "literature scope"
+  },
+  "B_dispositions": {
+    "P010": {
+      "action": "The Lean head has no premises. The development supplies the row using the geometric realization `geoOne_holds` and theta lift `tLift_holds_k`. The proof calls `wtLacEx_holds` for the weight input and uses `congPhi_holds`, `descOffT` and `limFinOdd_of` to construct the common core. These are in-repository declarations. The restricted local comparison above is the project's variant; equivalence with a published local–global compatibility theorem has not been established here.",
+      "source_evidence": [
+        {
+          "decl": "UpperTheory.FinalTheorems.everyCharacter",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+          "start": 10,
+          "end": 11
+        },
+        {
+          "decl": "UpperTheory.GalStar.AwayB",
+          "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConjBis.lean",
+          "start": 26,
+          "end": 31
+        },
+        {
+          "decl": "UpperTheory.GalStar.IsQpBig",
+          "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConjBis.lean",
+          "start": 15,
+          "end": 16
+        },
+        {
+          "decl": "UpperTheory.GalStar.Props.big",
+          "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConjBis.lean",
+          "start": 75,
+          "end": 82
+        },
+        {
+          "decl": "UpperTheory.Gal.Int.Geo.geoOne_holds",
+          "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/GeometricFlagBases/WeightOneGeometricRealization.lean",
+          "start": 11,
+          "end": 11
+        },
+        {
+          "decl": "UpperTheory.TP.K.tLiftK",
+          "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/TLiftK.lean",
+          "start": 4,
+          "end": 5
+        },
+        {
+          "decl": "UpperTheory.Gal.Int.coreAll_of",
+          "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/Development.lean",
+          "start": 20,
+          "end": 22
+        },
+        {
+          "decl": "UpperTheory.Gal.Int.galoisLocalGlobal_of_geometry_lift",
+          "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/Development.lean",
+          "start": 27,
+          "end": 28
+        }
+      ]
+    },
+    "P011": {
+      "action": "The record and the window enter `every_character_of_theta_integrals_local_matching`. It passes `green_of_regular P.greenRegularCharacters` to the final implication and supplies the common definite-side witness from the closed bound. The source block at lines 219–809 contains 194 theorem declarations, including 176 with names ending in `_of_literature`. A direct inspection finds record projections at **284, 286, 460 and 618**. Other constructions can pass the record onward. These suppliers are repository proofs or explicit inputs at their own heads; a literature-derived name does not certify a published identification.\n\nThe window call supplies the repository's `baseChangeN`, the given row and the open-image record. It assembles local, automorphic, Galois-cohomology and CM/abelian records. Their fields include local representation theory, purity, global reciprocity, de Rham and CM arithmetic. For $R=X^{1/J}$ and $s=R^{\\varepsilon/5}$, the pair consists of primes with $q\\equiv3\\pmod8$, $d\\equiv7\\pmod{16}$, $s/2<\\log q\\le s$, and $s(\\log R)^2/2<\\log d\\le s(\\log R)^2$. Both $q$ and every odd prime up to $s$ divide $d+1$. For such a pair the common interval carries budget $\\sqrt{\\exp(x^\\varepsilon)}$. Existence of good pairs is a separate input at application, listed in [V4-COND](../../units/V4-COND.md).",
+      "source_evidence": [
+        {
+          "decl": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+          "start": 69,
+          "end": 74
+        },
+        {
+          "decl": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+          "start": 810,
+          "end": 813
+        },
+        {
+          "decl": "UpperTheory.One.Join.v_window_of_depth_zero_residual_bc_cm",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TopMainZj.lean",
+          "start": 55,
+          "end": 58
+        },
+        {
+          "decl": "UpperTheory.One.Join.cm_abelian_inputs_from_literature",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TopMainZj.lean",
+          "start": 59,
+          "end": 70
+        },
+        {
+          "decl": "UpperTheory.BaseChangeIdentities.baseChangeN",
+          "file": "Development/AutomorphicArithmetic/Foundations/BaseChangeIdentities/DefiniteNHolds.lean",
+          "start": 5,
+          "end": 6
+        },
+        {
+          "decl": "UpperTheory.Top.WinPair",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean",
+          "start": 27,
+          "end": 37
+        },
+        {
+          "decl": "UpperTheory.Top.VAt",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean",
+          "start": 41,
+          "end": 42
+        }
+      ]
+    },
+    "P026": {
+      "action": "After its first three inputs, `glue2` takes `towerEx`, `ordinaryEisensteinEigenfunctional_exists`, `meas3`, `jEx`, `coefUb`, `mono`, `psiEx`, `frobU`, `detIne`, `hatW`, `pinOf`, `smNz`, `gmEx`, `explSmul`, `avgEq`, `avgMF`, `rhsEq`, `smSys` and `chiFix`. In particular the pin construction calls on the smoothed nonvanishing input `smNz`; the Pin7 condition does not follow merely from compatible Iwasawa layers. The universal local half uses `pFrobEx` in the Frobenius comparison and `pCore` for the power series. Its named comparison inputs are `nonvanishing_transfer_characterSums_powerSeries` and `quotient_char_trivial_inertia_cyclotomic_tower`. The Kato-named predicates and their suppliers are formulated and constructed in this development. This outline does not identify the complete package with an external theorem.",
+      "source_evidence": [
+        {
+          "decl": "GlobalTheory.Ord2.Nf",
+          "file": "Development/AbelianVarietyTheory/Definitions/Foundations/FinalTheorems.lean",
+          "start": 53,
+          "end": 66
+        },
+        {
+          "decl": "GlobalTheory.Ord2.SrcUr",
+          "file": "Development/AbelianVarietyTheory/Statements/CuspidalUnitaryTwists/ZetaUr.lean",
+          "start": 13,
+          "end": 16
+        },
+        {
+          "decl": "UpperTheory.V.Z.Kato.Joint.kato_global_unit_law_of_smoothed_classes",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/FrobeniusHodgeTateLaws/KatoGlobalUnitLawOfSmoothedClasses.lean",
+          "start": 8,
+          "end": 10
+        },
+        {
+          "decl": "UpperTheory.Kd.C7.LocalUnitsRoots.main",
+          "file": "Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/NormFactorLeOne.lean",
+          "start": 99,
+          "end": 158
+        },
+        {
+          "decl": "UpperTheory.Kd.C7.pLocu",
+          "file": "Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/NormFactorLeOne.lean",
+          "start": 162,
+          "end": 164
+        }
+      ]
+    },
+    "W08": {
+      "action": "The head assumes `HypothesesH′`, one witness of ∃ CK, LemmaK CK, `KatoTwoW` and `AutomorphyUnramifiedCoefficientsAlt`. In particular the Kato vanishing package is a premise here. In the endpoint generated from the first premise, the call to the projected forms system has fourteen top-level arguments: global Artin reciprocity, local class field theory, `modU_of_printsH`, `modularity_n_of_printed_mult_comp`, `levEx`, `lamEx`, `b0Ex`, `unitary_three_automorphy_dense_of_prints`, `seed2_alt`, `twist_of_printed_results`, `alg_cyclotomic_of_printed_results`, `alg_restriction_of_printed_results`, `tanA` and `core_alt_bis`. These constructions reuse fields and intermediate results of the supplied record. The numerical count in the review omitted one argument. The names of the source inputs identify repository interfaces; equivalence with a published package is unchecked.",
+      "source_evidence": [
+        {
+          "decl": "UpperTheory.V.Z.J.linkedUnlE_alt",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/LinkedUnlE.lean",
+          "start": 43,
+          "end": 48
+        },
+        {
+          "decl": "UpperTheory.V.Z.J.count_i_of_printed_bound_k_kato_automorphy",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/LinkedUnlE.lean",
+          "start": 49,
+          "end": 54
+        }
+      ]
+    },
+    "W09": {
+      "action": "The symplectic argument called through `main_big` remains an input to this outline. The review followed the passage to a larger coefficient ring and the descent but left that inner construction open. The cohomological and automorphy bundles used at the head are explicit premises; source names alone do not establish equivalence with published formulations.",
+      "source_evidence": [
+        {
+          "decl": "countII_and_countIII_of_printsH_of_sp4In",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/AdjointLiftingOfCohomology.lean",
+          "start": 33,
+          "end": 39
+        }
+      ]
+    },
+    "W11": {
+      "action": "The containment in the integral group ring is `memZ`: a single power of $\\gamma-1$ lies in the ideal generated by the theta element, $1+[-1]$ and $\\ell$, throughout the indicated tail. This carries the μ=0-type content of this construction. The distinct input `ambCyc` bounds a class-group index. Both are proved by terms in the repository. At the root the primitive-root hypothesis in the published predicate is introduced anonymously and unused. The result indexed here bounds the rank of the class-group quotient in a tower. The note has not established equivalence with the published Ferrero–Washington theorem.",
+      "source_evidence": [
+        {
+          "decl": "UpperTheory.V.FW.memZ",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/FerreroWashingtonIndex/ToKOf.lean",
+          "start": 13,
+          "end": 14
+        },
+        {
+          "decl": "UpperTheory.V.FW.ambCyc",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/FerreroWashingtonIndex/AmbCyc.lean",
+          "start": 9,
+          "end": 10
+        },
+        {
+          "decl": "UpperTheory.V.FW.ferreroWashington",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/FerreroWashingtonIndex/FerreroWashington.lean",
+          "start": 104,
+          "end": 119
+        }
+      ]
+    },
+    "W13": {
+      "action": "The inner sum uses the supplied or derived Case IV term `countIV` and the Case V term `countVs`. The latter receives the Poitou–Tate, local finiteness and local Tate duality hypotheses and the common cohomology bound. The numerical absorptions belong to `vwinAt_of_joint`; the independent referee did not reproduce their supporting bounds. Equivalence of these project-specific duality interfaces with published versions is outside this comparison.",
+      "source_evidence": [
+        {
+          "decl": "UpperTheory.V.HV.pointHV_of_counts",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/JointWinOfCounts.lean",
+          "start": 16,
+          "end": 18
+        },
+        {
+          "decl": "UpperTheory.V.HV.vwin_of_counts",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/JointWinOfCounts.lean",
+          "start": 30,
+          "end": 33
+        }
+      ]
+    },
+    "T15": {
+      "action": "In the first cover comparison the size and anchor suppliers are the closed constants `cov_size_bound` and `anchor_bound`. The flat degree in the following step is `flatDeg_of_scholzeWeinstein_of_prints hP`. For the uniform component estimate the head calls `uniform_lower_bound_of_sums'`, the wrapper of `u_low_of_cover_hyps`. The seven records and propositions are hypotheses at this head; the enclosing source route supplies them by repository terms. The flat-degree supplier's name identifies its local interface, without establishing equivalence to a published theorem.",
+      "source_evidence": [
+        {
+          "decl": "SelfIntersectionVolumeEstimates.topCovolG_alt_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopCovolG.lean",
+          "start": 39,
+          "end": 58
+        },
+        {
+          "decl": "GlobalTheory.T.uniform_lower_bound_of_sums'",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ULowOfStatement.lean",
+          "start": 11,
+          "end": 12
+        }
+      ]
+    },
+    "T17": {
+      "action": "The hypothesis-free supplier `moriwakiBig_outright` proves the project's specific `MoriwakiBigStatement` from repository terms: resolution `resK`, the intersection-system theorem applied to `poincareLelong` and that resolution, and bounded-height density `DenseCurves.main`. The external formulation and proof have not been shown equivalent to the full statement with the source's chart lattice and intersection-system quantifiers.",
+      "source_evidence": [
+        {
+          "decl": "PositivityTheory.Pf1.HilbertSamuelMoriwaki.moriwakiBig_outright",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/MoriwakiBigness/MoriwakiBigTheorem/Outright.lean",
+          "start": 9,
+          "end": 11
+        },
+        {
+          "decl": "ReciprocityTheory.ChartRestriction.G.ArakelovGeometry.MoriwakiBigStatement",
+          "file": "ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/ArakelovGeometry/MoriwakiSt.lean",
+          "start": 29,
+          "end": 36
+        }
+      ]
+    },
+    "T09": {
+      "action": "The caller of this head assumes the local record and its fields. The nonvanishing and surjectivity steps read **harishChandraModules**, **casselmanWallach**, **cuspRapidDecay**, **harishChandraFinite**, **discreteSeriesCover**, **weilRepresentationUnitaryPair**, **weilSiegelFormulaUnitary**, **doublingMethod** and **unramifiedDoublingGL** from that record. The calls at the head are **GlobalTheory.T.convergence_of_separating_family** and **GlobalTheory.T.twist_core_surjective**. Their wrappers invoke the two inner proofs described above. See **real_functionals_separate_of_hypothesis**, `RealFunctionalsSeparateOfHypothesis.lean:20-30`; the wrapper definitions are at `ConvergenceOfSeparatingFamily.lean:38-39` and `TwistCoreSurjectiveOfLocalComponents.lean:32-33`. The two other head hypotheses have explicit suppliers higher on this route. The definite-side builder uses **GlobalTheory.Hk3.howeUnram_holds** and the field **P.siegelWeilUnitaryConvergent** (`SiegelEisensteinSecondTermHypotheses.lean:44-48`). The field is set by **siegel_weil_unitary_convergent_of_literature**, whose body is **UpperTheory.Lit.Sw47.convergent** (`EveryCharacterOfLiteratureOfVWin.lean:481-482`, `EveryCharacterOfLiteratureOfVWin.lean:677`). These source identifications specify which constants discharge the local assumptions. A comparison of their proofs with published statements remains open here.",
+      "evidence_in": "notes/units/T09_round3.md"
+    },
+    "T11": {
+      "action": "The local ingredients to **theoremK_head2_of_mod** are in-repository constants. They include **howeInert**, **localLift_holds**, **siegelCore_holds**, **locRepEx**, **weilEx**, and the five **BernsteinRamification.Close** constants **kCoinv**, **soCoinv**, **ramifiedMultiplicityOne**, **finRam**, **finSplit** (`TheoremKOfMod.lean:14-20`). The two antecedents of **theoremK_head2** remain assumptions when reading this implication by itself. In the enclosing route **eis_bl_of_literature** supplies **PositivityTheory.RgEis.Hd.eisBL** and **siegel_weil_std_of_literature** supplies **PositivityTheory.SiegelWeilFormula.Fin.siegelWeilStd** to that call (`EveryCharacterOfLiteratureOfVWin.lean:561-566`). These are source implementations. The correspondence of their full hypotheses and conclusions with the published literature would require a separate comparison.",
+      "evidence_in": "notes/units/T11_round3.md"
+    },
+    "T12": {
+      "action": "The continuation with growth bounds is **PositivityTheory.RgEis.Hd.eisBL**, read in **Atop.siegelWeilStd_of** (`SiegelWeilStdLeaves.lean:40-54`; type **EisBL**, `Hypotheses2.lean:55-60`). The intermediate step supplies **HSt.holLeadB** for the holomorphic leading term (`SiegelWeilStdMid.lean:16-20`). **tAll_of** and **thetaCoef** use **GlobalTheory.T.siegel_set_unitary**. In the strict and equal branches the local density suppliers are **PositivityTheory.PfSWUS.HMass.siegelDensitiesLowA** and **PositivityTheory.Rg.Base1.densEq** (`SiegelWeilStdOf.lean:39-47`). The Whittaker and rank-change calculations use **kunf.unfold**, **Aeis.eisWk**, **Krd.rdEx**, **kfour.lamBd** and **kfour.fourierZero**. The assembly appeals to both **AbsSt.absThm** and **AbsSt.vacuum_generates_polynomials** (`SiegelWeilStdOf.lean:59-67`). These substantial inputs are supplied by Lean constants in this development. The exported **siegelWeilStd** has no additional theorem premise (`SiegelWeilStd.lean:8`). Its anisotropic statement specifies the doubling model, splitting and probability-normalized theta average. This outline establishes no comparison of all these conditions, or of their full rank range, with a published Siegel–Weil theorem.",
+      "evidence_in": "notes/units/T12_round3.md"
+    },
+    "tracks/theta": {
+      "action": "Named T12 the Siegel–Weil formula on the doubled group. Special value at (m−n)/2 with multiplier 1 or 2, GlobalTheory.ThK.Dbl.SiegelWeilStd at HypothesesS.lean:11–21. N076 weighted upper bound distinguished from D025 nonvanishing.",
+      "evidence_in": "tracks/theta/README.md"
+    },
+    "B04": {
+      "action": "Defined GoodCusp and Good, stated limits off good support, identified in-repository suppliers. Updated local guides.",
+      "source_evidence": [
+        "Development/AbelianVarietyTheory/Definitions/NonGaloisDescent/RecTExists.lean:19–23",
+        "Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/RecTExists.lean:20–66",
+        "Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/CuspEx.lean:161–193",
+        "Development/AutomorphicArithmetic/Foundations/LocalLanglands/Multi.lean:11–12"
+      ]
+    },
+    "P001": {
+      "action": "Compared the four nonvanishing factors and the integer case split. No correction required.",
+      "source_evidence": [
+        "Main.lean:4",
+        "Formalism/GammaFactorNonvanishing/RhOfRight.lean:5–62"
+      ]
+    },
+    "P003": {
+      "action": "Added the full primitive predicate, lack of pole disjunction, and the totalized value at modulus one.",
+      "source_evidence": [
+        "Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/ExplicitFormulaErrorOfHostConditions.lean:11–18",
+        "Development/AutomorphicArithmetic/CharacterBoxes/Imprimitive.lean:5–19"
+      ]
+    },
+    "P005": {
+      "action": "Compared primitive inverse, completed functional equation and right-hand branch. No correction required.",
+      "source_evidence": [
+        "Main.lean:12",
+        "Formalism/GammaFactorNonvanishing/CritLine.lean:6–27"
+      ]
+    },
+    "P009": {
+      "action": "Corrected alias and window criterion. Located the Green and geometric witness suppliers.",
+      "source_evidence": [
+        "Supplements/Kernels/MainTheorems.lean:7",
+        "Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/Window.lean:30–33",
+        "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean:44–73"
+      ]
+    },
+    "procedures": {
+      "action": "Exposed configurable variables and defined the graph stopping rule. Formal guides added nested domination sizes.",
+      "source_evidence": [
+        "scripts/round3_dominated.py:10–28",
+        "scripts/round3_print_axioms.py:13–25"
+      ]
+    },
+    "OVERVIEW": {
+      "action": "Made the 31 implications and the separate V and F premises explicit, explained the scope of the exports and conditioned the host and final deduction. P017 now has an accepted current edition. P022 retains its earlier scoped review. The corrected synthesis remains pending.",
+      "evidence_in": "OVERVIEW.md"
+    },
+    "local guide": {
+      "action": "Specified the good cuspidal support range for the local parameter assignment.",
+      "evidence_in": "tracks/local/README.md"
+    },
+    "galois guide": {
+      "action": "Included P011 and identified the exact bounded-rank formulation and its source.",
+      "evidence_in": "tracks/galois/README.md"
+    },
+    "track guides": {
+      "action": "All seven guides identify V, F, Green and 31 local premises, the scope of the written argument and the current human-check status.",
+      "evidence_in": "STATUS.md"
+    },
+    "literature scope": {
+      "action": "The per-note corrections separate hypotheses and record fields from the constants supplied in the repository. They leave the comparison with a published formulation open wherever it has not been made. Unchanged P001/P005 use no such classical theorem.",
+      "evidence_in": "reviews/DB3_review_B.md"
+    }
+  },
+  "review_qualifications": [
+    "P011: the indicated span has 194 top-level theorems, 176 with the literature suffix. Four terms access the record. The note lists the exact lines.",
+    "W08: the call at LinkedUnlE.lean:43–48 has fourteen top-level arguments.",
+    "D014: an independent source comparison found eight host clauses even though the older prose had been accepted. Only the unchanged v4 exposition retains whole-note acceptance."
+  ]
+}

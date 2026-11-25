@@ -1,0 +1,339 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Verbatim sections of local blueprint v13. See README.md for macros, edition and source spans.
+
+% blueprint/ch_G.tex:25-359
+\section{Standing notation and sizes}\label{sec:G-notation}
+
+Throughout, $D$ is a datum of type \texttt{D7} and $L$ a \texttt{SizeData}$_2$ over it (see the chapters on the
+global set-up). We only use the following parts.
+
+\paragraph{Scales (\texttt{Formalism.BasicNotions.Scale}).} A real $x>1$ and $0<\varepsilon<1/52$; then
+\[
+  \mathsf L=x^{\varepsilon},\quad b=e^{\mathsf L},\quad a=x\,b,\quad X'=\exp(x^{\varepsilon/3}),\quad
+  b'=a/X',\quad w''=\frac{b'}{x\,n},\quad X''=\frac{a}{w''}=x\,n\,X',
+\]
+\[
+  p_0=k^{2}x^{26},\qquad \delta_1=x^{-\varepsilon/8}.
+\]
+\paragraph{Ranks.} Integers $m\ge 2$ (number of columns, \texttt{D.R.m}), $k\ge m+3$ (rank of the base
+unitary group), $t\ge 1$, $f$, $n$, and $N(j)=k+j(t+1)$; $\mathrm{Nm}=N(m)$. The set of lifts is
+$\texttt{lifts}=\{1,\dots,m\}$.
+
+\paragraph{Places at infinity and the group $A$.} $A$ (\texttt{HH D} $=$ \texttt{D.R.A}) is a finite abelian
+group; the Galois group of the host field $E/\mathbb Q$ is identified with $E_0\times A$,
+$E_0=(\mathbb Z/2)^2$, and the CM type is $\Phi=\{g: g_{1,1}=0\}$ (\texttt{InPhi}), i.e.\ the elements fixing
+$K=\mathbb Q(\sqrt{-d})$. Archimedean ``places'' are pairs $z=(\beta,s)\in\{\mathrm{false},\mathrm{true}\}\times A$.
+$TT\subset A$ is the set of \emph{top places}; $z$ is \emph{top} if $z=(\mathrm{false},s)$ with $s\in TT$.
+For $t\in TT$ there are integers $a_t$ (\texttt{aT}) and $b_t$ (\texttt{bT}) with
+\begin{equation}\label{eq:G-windows}
+  a\le a_t\le a+\frac{a}{k\,x^{13}},\qquad b'\le b_t .
+\end{equation}
+For $j\in\texttt{lifts}$ and a place $z$, $w_j(z)\ge 1$ denotes the $j$-th coordinate of the Harish-Chandra
+parameter at $z$ (\texttt{wj}, written \texttt{fill X b j z} on the local side); it satisfies
+$w_j(z)\in[b_t+b'/x,\ b_t+b'/x+\eta]$ at a top place, $[b,\ b+\eta+1]$ at a thick place and
+$[w'',\ w''+\eta]$ at a thin place ($\eta=$\texttt{etaSz}; fields \texttt{win\_top}, \texttt{win\_thick},
+\texttt{win\_thin}). We also use $\kappa_j=\tfrac12\bigl(k+(2j-1)(t+1)\bigr)$ (\texttt{kaJ}),
+$c_G=4\,\mathrm{Sc}$ with $\mathrm{Sc}=4k\,\mathrm{Del}$ (\texttt{cG}), and the shifted weight
+$w^{G}_j(z)=w_j(z)-\kappa_j$ (\texttt{fillG}). See \texttt{Scale}, \texttt{SizeData₂},
+\texttt{lifts} (\path{Formalism/LocalRingCardinality/DataParams₂.lean:9,27,76,148,153,208}),
+\texttt{Ranks}, \texttt{Ranks.N} (\path{Formalism/LocalRingCardinality/Params.lean:6,36}),
+\texttt{cG}, \texttt{kaJ}, \texttt{fillG} (\path{IsResidueClassZero.lean:47,157,159}).
+
+\begin{definition}[Prime classes; inert primes]\label{def:G-inert}
+\lean{Formalism.BasicNotions.primeClass, Formalism.MainNotions.InertK}
+A prime $p$ not dividing the conductor $\mathrm{condN}$ of the host and with $\bigl(\tfrac{-d}{p}\bigr)=-1$ is
+of class \emph{signal} if $\mathrm{psAt}(p)=1$ and of class \emph{inertClass} if $\mathrm{psAt}(p)=-1$, where
+$\mathrm{psAt}$ is the second quadratic symbol of the host. $p$ is \emph{inert} (\texttt{InertK}) if it is of
+one of these two classes. On the arithmetic side the corresponding notion is \texttt{IsInert}: $p\ne 2,q_1,d$ and
+$\mathrm{Frob}_p\notin\Phi$. The prime-wise comparison is \texttt{Br.isInert\_iff}
+(\path{Formalism/SharpRestriction/GlobalSchurBounds/RamificationTwoAndConjugationAtQAndD.lean:371}).
+The arithmetic sum uses it in Proposition~\ref{prop:G-loss}.
+\par{\small \path{Formalism/LocalRingCardinality/DataHost.lean:33}; \path{Formalism/SharpRestriction/GlobalTheoremInputs.lean:97}.}\par
+\end{definition}
+
+\begin{definition}[Frobenius step, partner, orbits]\label{def:G-partner}
+\lean{Formalism.MainNotions.G.hP, Formalism.MainNotions.G.partner, Formalism.MainNotions.G.stepP, Formalism.MainNotions.G.reps, Formalism.MainNotions.G.topsOn}
+Let $h_p\in A$ be the $A$-component of a Frobenius element at $p$ (\texttt{hP}). For $t\in A$ and $e\ge 0$,
+\[
+  \mathrm{partner}_p(t,e)=\bigl(\,[\,p\text{ signal and } e\text{ odd}\,],\ t+e\,h_p\bigr).
+\]
+The \emph{step} is $\mathrm{step}_p=2h_p$ for signal $p$ and $h_p$ otherwise; $n_p=2\,\mathrm{ord}(2h_p)$,
+resp.\ $\mathrm{ord}(h_p)$ (\texttt{nP}). A function $\mathrm{bs}$ chooses a base point in every coset of
+$\langle \mathrm{step}_p\rangle$; $\mathrm{reps}_p$ is the set of base points, and for $t_0\in\mathrm{reps}_p$,
+$\mathrm{tops}_p(t_0)=\{t\in TT:\mathrm{bs}(t)=t_0\}$, $N_v(t_0)=|\mathrm{tops}_p(t_0)|$. A point $t$ is
+\emph{even} (\texttt{IsV}) if $t=\mathrm{bs}(t)+i\,h_p$ for some even $i<n_p$.
+\par{\small \path{IsResidueClassZero.lean:97,131,161,166,168}.}\par
+\end{definition}
+
+\begin{definition}[The local arithmetic sum]\label{def:G-ask}
+\lean{Formalism.BasicNotions.SizeData₂.vonMangoldtClassSum, Formalism.MainNotions.G.askP, Formalism.MainNotions.G.askG, Formalism.MainNotions.LocalQuadraticParts.ASK}
+For $j\in\texttt{lifts}$, $t\in TT$ and a prime $p$,
+\[
+  \mathrm{ask}_j(t,p)=\sum_{\substack{0\le i<\lfloor\log_p a_t\rfloor+2\\ i\ \mathrm{odd}}}
+  \max\Bigl(0,\ \frac{a_t}{p^{i}}-w_j\bigl(\mathrm{partner}_p(t,i)\bigr)\Bigr)
+\]
+(\texttt{vonMangoldtClassSum}; the weight is the field \texttt{wPart}, identified with $w_j(\mathrm{partner})$
+by \texttt{ParametersFill}). The untruncated sums over all odd $e\in\mathbb N$ with $w_j$, resp.\ $w_j^G$, are
+\texttt{askP}, resp.\ \texttt{askG}. Finally
+\[
+  \mathrm{ASK}(L)=\sum_{j=1}^{m}\sum_{t\in TT}\Bigl(\sum_{\substack{p\le a_t\\ p\ \mathrm{inert}}}
+  2\log p\cdot \mathrm{ask}_j(t,p)\;+\;\log d\cdot\mathrm{askD}_j(t)\Bigr).
+\]
+\par{\small \path{Formalism/LocalRingCardinality/DataParams₂.lean:240}; \path{IsResidueClassZero.lean:373,368}; \path{Formalism/SharpRestriction/Divisibility/LocalQuadraticParts.lean:470}.}\par
+\end{definition}
+
+\begin{lemma}[Truncation and shift are harmless]\label{lem:G-ask-compare}
+\lean{Formalism.MainNotions.G.ask_eq_askP, Formalism.MainNotions.AuxBlock8.Conclusion0}
+\uses{def:G-ask}
+(i) Assume the identification of \texttt{wPart} with the weight at the partner in Definition~\ref{def:G-ask}. Then $\mathrm{ask}_j(t,p)=\texttt{askP}_j(t,p)$.
+(ii) Suppose $\mathrm{Nm}+1\le w''$, $a_s\le 2a$ and $b_s\ge0$ for every $s\in TT$. For every inert prime $p$, $j\in\texttt{lifts}$ and $s\in TT$,
+\[
+ \texttt{askP}_j(s,p)\le\texttt{askG}_j(s,p)\le\texttt{askP}_j(s,p)+\mathrm{Nm}\log_p(2a).
+\]
+\par{\small \path{PlaneCountTheoremWithConstants.lean:223}; \path{SmallOrderPrimes.lean:50}.}\par
+\end{lemma}
+\begin{proof}
+(i) Beyond the truncation, $p^i>(a_t)_+$ and $\texttt{wPart}\ge1$, so each omitted summand vanishes.
+The identification gives equality term by term inside the truncation.
+(ii) The lower bound for \texttt{fill} is $w''$ when $b_s\ge0$. Since $0\le\kappa_j\le\mathrm{Nm}$, the shifted weight is at least one. For $a_s<0$ both sums vanish. Otherwise a positive shifted summand requires $p^e\le a_s\le 2a$. There are at most $\log_p(2a)$ positive integer exponents in that range, and lowering the weight by $\kappa_j$ increases each positive part by at most $\mathrm{Nm}$. In an admissible family the size condition $\mathrm{Nm}+1\le w''$ holds eventually, which gives \texttt{Conclusion0}. See \texttt{As.shift\_le}, \texttt{As.kaJ\_bounds}, \texttt{As.asksAll\_of}
+(\path{LogarithmicSums/GainBoundAllAddOneOfGainBoundAllRequired.lean:37,176,191})
+and \texttt{Pf.rest0} (\path{LogarithmicSums.lean:36}).
+\textit{[Status: complete under the displayed size condition.]}
+\end{proof}
+
+\section{The shape $p/(p^{2}-1)$ and the linear programme \texttt{lpF}}\label{sec:G-lpF}
+
+The geometric sum $\gamma(p)=p/(p^{2}-1)=\sum_{i\ \mathrm{odd}}p^{-i}$ is the
+coefficient of the top weights in $g^B$ (Definition~\ref{def:G-local-gains}).
+The same coefficient occurs in the linear programme defining the forced content $F_j$.
+
+\begin{definition}[\texttt{lpF}]\label{def:G-lpF}
+\lean{Formalism.BasicNotions.lpF}
+Let $l,d$ be natural numbers with $d\ne0$ and $\mathrm{Ds}:\mathbb Z/d\to\mathbb R$. The feasible set
+$\texttt{lpFeasible}(l,d,\mathrm{Ds})$ consists of the numbers $y=\sum_{s}\sum_{i<d}x_{s,i}$ where
+$x:\mathbb Z/d\times\mathbb N\to\mathbb R_{\ge 0}$ satisfies $x_{s,i}=0$ unless $i$ is odd and $i<d$, and for every $s$
+\[
+  \sum_{i<d} l^{\,i}\,x_{s,i}\;+\;\sum_{i<d}x_{s-i,\,i}\ \le\ \mathrm{Ds}(s).
+\]
+Then $\ \texttt{lpF}(l,d,\mathrm{Ds})=\dfrac{l}{l^{2}-1}\sum_s \mathrm{Ds}(s)-\sup \texttt{lpFeasible}(l,d,\mathrm{Ds})$.
+Here division and $\sup=\texttt{sSup}$ use Lean's total real operations. At $l=1$ the fraction is zero, and a negative entry of $\mathrm{Ds}$ makes the feasible set empty. In the application $l=p\ge2$ with $\mathrm{Ds}\ge0$, the zero family is feasible and the next lemma supplies an upper bound. See \texttt{lpFeasible}, \texttt{lpF} (\path{Formalism/LocalRingCardinality/DataParams₂.lean:51,58}).
+The forced content of column $j$ on the orbit of the place $z$ is
+$F^{\mathrm{orb}}_j(p,z)=\texttt{lpF}\bigl(p,n_p,\ s\mapsto (k-1)\,w_j(\mathrm{pos}_p(z,s))\bigr)$ (\texttt{FOrb}),
+where $\mathrm{pos}_p(z,s)$ is the $s$-th Frobenius translate of $z$.
+\par{\small \path{Formalism/LocalRingCardinality/DataParams₂.lean:58}.}\par
+\end{definition}
+
+\begin{lemma}[\texttt{FactLpF}]\label{lem:G-lpF-bounds}
+\lean{Formalism.BasicNotions.factLpF}
+\uses{def:G-lpF}
+If $l\ge 2$ and $\mathrm{Ds}\ge 0$, then
+$0\le \texttt{lpF}(l,d,\mathrm{Ds})\le \dfrac{l}{l^{2}-1}\sum_s\mathrm{Ds}(s)$. More precisely
+$\sup\texttt{lpFeasible}\le \frac{1}{l+1}\sum_s\mathrm{Ds}(s)$.
+\par{\small \path{Formalism/LocalRingCardinality/RankBoundMonotoneInDimension.lean:817}.}\par
+\end{lemma}
+\begin{proof}
+$x=0$ is feasible, so the supremum is $\ge 0$; this gives the upper bound for \texttt{lpF}. Let $x$ be feasible
+and $Y=\sum_{s,i}x_{s,i}$. Summing the constraints over $s$, and using that $s\mapsto s-i$ is a bijection of
+$\mathbb Z/d$, gives $\sum_{s,i}l^{i}x_{s,i}+Y\le\sum_s\mathrm{Ds}(s)$. Since $x_{s,i}\ne 0$ only for odd
+$i\ge 1$, $l^{i}x_{s,i}\ge l\,x_{s,i}$, hence $(l+1)Y\le \sum_s\mathrm{Ds}(s)$. As
+$\frac1{l+1}\le\frac{l}{l^{2}-1}$, the feasible set is bounded above by $\frac{l}{l^2-1}\sum_s \mathrm{Ds}(s)$ and
+$\texttt{lpF}\ge 0$. \textit{[Status: complete]}
+\end{proof}
+
+\begin{remark}[Role of $F$]\label{rem:G-F}
+$F_j(w)$ (field \texttt{F}) enters the exponent $\mathrm{sg}(u,w)=\sum_j(\mathrm{gainD}_j+F_j-E_j)$ of
+Proposition~\ref{prop:G-adm2} with a plus sign, and the same quantity $\mathrm{Fo}=\sum_j\sum_w \mathrm{sz}_w(F_j(w))$ is
+subtracted again on the target side (clause 7 of \texttt{LinkDIV\_at}, chapter on the height of $B_u$). Thus
+The orbit estimate following directly from Lemma~\ref{lem:G-lpF-bounds} is
+$F^{\rm orb}_j(p,z)\le\gamma(p)(k-1)\sum_s w_j(\mathrm{pos}_p(z,s))$.
+At a top position this sum involves $b_t$ and the width $\eta$. See \texttt{FOrb}
+(\path{Formalism/LocalRingCardinality/DataForced.lean:99}) and \texttt{SizeData₂.win\_top}
+(\path{Formalism/LocalRingCardinality/DataParams₂.lean:153}).
+\end{remark}
+
+\section{The local model at an inert prime}\label{sec:G-model}
+
+The local data specify the integral forms on which the column and Hecke estimates are evaluated.
+
+\begin{definition}[Unramified quadratic setting]\label{def:G-setting}
+\lean{Formalism.MainNotions.G.UnramifiedQuadraticSetting}
+Fix a prime $p\ge 5$ and an even $n'\ge 2$. The setting consists of: a complete discrete valuation ring $W$ with
+uniformiser $p$ and residue field of $p^{n'}$ elements, its fraction field $Q$, an automorphism $\sigma$ of $Q$
+lifting the $p$-power Frobenius with $\sigma^{n'}=1$; a complete discrete valuation ring $O\supset W$, finite
+over $W$, with fraction field $K_f$ and an element $\varpi\in O$ (\texttt{w}) with $\varpi^{2}=p$, $\varpi$
+irreducible, $|O/\varpi|=p^{2n'}$, in which every integer is a square.
+\par{\small \path{UnramifiedQuadraticSetting.lean:31}.}\par
+\end{definition}
+
+The abstract setting specifies local rings. Their relation to a global Frobenius orbit is additional data.
+In the global definitions an inertClass prime with $h_p=0$ has $\mathrm{gain}_P=0$ by definition.
+The odd-order predicate \texttt{IsCs} includes $h_p\ne0$ (\texttt{IsCs}, \texttt{gainP}, \path{IsResidueClassZero.lean:106,355}).
+
+\begin{definition}[Local automorphic lattices, Hecke operators, columns]\label{def:G-local-forms}
+\lean{Formalism.MainNotions.G.GAtP, Formalism.MainNotions.G.GAtP.M, Formalism.MainNotions.G.GAtP.yv, Formalism.MainNotions.G.Chain.chainK, Formalism.MainNotions.G.Levels.Int}
+\uses{def:G-setting}
+A local datum $G$ at $p$ (\texttt{GAtP}) has finitely many ``places'' $v$, each with a \texttt{HidaSetting}
+$(W_v,Q_v,\sigma_v)$ of degree $n'_v$ inside a common $(O,K_f,\varpi)$, a rank $k$, an index $r\in\mathbb N$, and for each
+$v$ and $s\in\mathbb Z/n'_v$ a dominant weight $\lambda_{v,s}\in\mathbb Z^{k}$. A \emph{lattice tuple} is a family
+$\Lambda=(\Lambda_v)_v$ of $W_v$-lattices $\Lambda_v\subset Q_v^{k}$. To $\Lambda$ is attached an $O$-lattice
+$H(\Lambda)$ (\texttt{HtupW}) in the $K_f$-space $V=\bigotimes_{v,s}V_{\lambda_{v,s}}$: the tensor product of the
+integral (Weyl) forms of the representations of highest weight $\lambda_{v,s}$ (dualised for odd $s$,
+\texttt{lamAt}) defined by the lattices $\Lambda_v\otimes_{W_v,\sigma_v^{s}}O$.
+The module $M$ (\texttt{GAtP.M}) is the $O$-module of functions $F$ on lattice tuples with $F(\Lambda)\in H(\Lambda)$,
+equivariant for finitely many discrete groups $\Gamma$ acting through $\prod_v GL_k(Q_v)$ with a unit character;
+it is the product of the component modules, with value zero off the actual lattice tuples, and its $O$-rank is $d$. For a place $v$ the operator
+\[
+  (y_vF)(\Lambda)=p^{\,\mathrm{Ar}_v}\sum_{\Lambda''}F(\Lambda\text{ with }\Lambda_v\text{ replaced by }\Lambda''),
+  \qquad \mathrm{Ar}_v=\sum_{s}\sum_{i<r}\lambda^{\pm}_{v,s,i},
+\]
+sums over the neighbours $p\Lambda_v\subset\Lambda''\subset\Lambda_v$ with $|\Lambda_v/\Lambda''|=p^{n'_vr}$
+(\texttt{IsEdge}). A \emph{fill} (\texttt{Fills}) prescribes $t$, $m$ and weights $w_{v}(j,s)$, non-decreasing in
+$j$; level $j$ has rank $N(j)=k+j(t+1)$ and weights $(\lambda_{v,s},-w_v(1,s)^{t+1},\dots,-w_v(j,s)^{t+1})$
+(\texttt{liftWt}), with its own module $\mathrm{Int}(j)$ of integral forms. A \emph{chain} is a family of
+$K_f$-linear maps $K_j:\mathrm{Fm}(j)\to\mathrm{Fm}(j+1)$ on the ambient function spaces, with
+$\texttt{chainK}(j)=K_{j-1}\circ\dots\circ K_0$. The additional condition \texttt{adm3b}
+sends the $K_f$-span of $\mathrm{Int}(j)$ into the corresponding span at $j+1$. The \texttt{Std}
+hypothesis supplies $1\le r$ and $2r\le k$ for local estimates.
+See \texttt{Places}, \texttt{Level.funMod}, \texttt{GAtP.M} (\path{DataG.lean:33,132,190}),
+\texttt{Levels.Int}, \texttt{Chain} (\path{DataGChain.lean:72,78}) and
+\texttt{Std}, \texttt{adm3b} (\path{FormalGroupSystem.lean:89,563}).
+\par{\small \path{DataG.lean:163,190,196}; \path{DataGChain.lean:85,72}.}\par
+\end{definition}
+
+In the global application \texttt{LatTied} (\path{IsResidueClassZero.lean:430}) maps
+the representatives $t_0\in\mathrm{reps}_p$ injectively to places $v(t_0)$. At each such place, $n'_v=\mathrm{ord}(h_p)$, the top set $TT_v$ is $\mathrm{tops}_p(t_0)$,
+$\lambda_{v,s}=(a_s,\ \text{entries of size}\le c_G,\ -b_s)$ at $s\in TT_v$ (\texttt{IsBaseWeight}), and
+$w_v(j,s)=w^G_j(\mathrm{false},t_0+s\,h_p)$; $r=1$ for $p\ge p_0$ and $r=r_G=\lceil 8(4+8\varepsilon)/\varepsilon\rceil+1$
+for $p<p_0$.
+
+\begin{definition}[Local gain numbers]\label{def:G-local-gains}
+\lean{Formalism.MainNotions.FormalGroupSystem.gB, Formalism.MainNotions.FormalGroupSystem.gA, Formalism.MainNotions.FormalGroupSystem.Pr, Formalism.MainNotions.G.gU, Formalism.MainNotions.G.g0, Formalism.MainNotions.G.Pr, Formalism.MainNotions.G.dl}
+\uses{def:G-local-forms}
+For a place $v$ with top set $TT\subset\mathbb Z/n'$ put, for $s\in TT$, $\alpha_s=\lambda_{s,1}-\lambda_{s,2}$
+(\texttt{al}; globally $\alpha_s\ge a_s-2c_G$), and let $\mathrm{cap}_j(s)$ be $\lambda_{s,2}+w(j,s)$ for $s\in TT$ and
+$\lambda_{s,1}+w(j,s)$ otherwise (\texttt{cap}; globally $\le w_j^G+c_G$). With $\gamma(p)=p/(p^{2}-1)$ and an
+error $\mathrm{de}_j$ specified below, the definitions give
+\begin{align*}
+  g^{A}_j &=\sum_{s\in TT}\ \sum_{\substack{e\ \mathrm{odd}\\ e\notin \mathrm{dSet}(s)}}
+      \max\Bigl(0,\ \frac{\alpha_s}{p^{e}}-\mathrm{cap}_j(s+e)\Bigr)\;-\;\mathrm{de}_j,\\
+  g^{B}_j &=\gamma(p)\sum_{s\in TT}\alpha_s\;-\;\sum_{\substack{s\in TT\\ s\ \mathrm{odd}}}\ \sum_{e\ \mathrm{odd}}
+      \min\Bigl(\frac{\alpha_s}{p^{e}},\ \mathrm{cap}_j(s+e)\Bigr)\;-\;\mathrm{de}_j,\\
+  \mathrm{Pr}_j &=\sum_{s\ \mathrm{odd}}\Bigl(r\,w(j,s)+\sum_{i>k-r}\lambda_{s,i}\Bigr)+\tfrac12 n'\,r\,j\,(t+1),
+\end{align*}
+where $\mathrm{dSet}(s)$ consists of the least nonnegative representatives $<n'$ of the distances to opposite-parity tops. Membership is tested on $e$ itself: $d+n'$ is retained even when $d$ is excluded.
+Set $\ell_p(z)=0$ for $z\le0$ and $\ell_p(z)=1+\lfloor\log_p z\rfloor$ otherwise, and extend $\alpha_s$ by zero off $TT$.
+With $L_{j,s}=\sum_{i=1}^{N(j)}\nu_j(s,i)-\alpha_s$ the exact error for $j\ge1$ is
+\[
+ \mathrm{de}_j=\sum_s \bigl[N(j)\ell_p(\alpha_s)+N(j-1)N(j)\ell_p(L_{j,s})\bigr]
+          +\sum_{s\in TT}\ell_p(\alpha_s)^2 .
+\]
+For original rows $\nu_j(s,i)=\lambda_{s,i}+w(j,s)$. The $t+1$ rows added at stage $j'\le j$ have
+$\nu_j(s,i)=w(j,s)-w(j',s)$. Thus the correction uses earlier weights. See
+\texttt{nu}, \texttt{lsz}, \texttt{lgp}, \texttt{de}, \texttt{dSet}, \texttt{Pr}
+(\path{FormalGroupSystem.lean:28,40,44,46,63,81}).
+The global counterparts, indexed by $(p,j,t_0)$, are $g_0\le g^A$, $g_U\le g^B$, $\mathrm{Pr}^{G}\ge\mathrm{Pr}$
+under \texttt{NumCmp}. Its restricted version requires \texttt{GatTies}, \texttt{LatTied},
+\texttt{GIdx} and $1\le\log_p(2a)$; \texttt{NumericalComparisonAt} also specifies the lower bounds on constants and the size conditions (\path{FormalGroupSystem.lean:727,741,759}). The global expressions have
+$\mathrm{dl}(t_0)=K_{\mathrm{dl}1}\,n_p\,\mathrm{Nm}^{2}\log_p(2a)+K_{\mathrm{dl}2}\,N_v(t_0)\log_p^{2}(2a)$ in place of
+$\mathrm{de}_j$:
+\[
+\begin{aligned}
+ g_0(p,j,t_0)&=\sum_{s\in\mathrm{tops}_p(t_0)}\ \sum_{\substack{e\ \mathrm{odd}\\ \neg\mathrm{Excl}(s,e)}}
+   \max\Bigl(0,\frac{a_s-2c_G}{p^{e}}-w_j^{G}(\mathrm{partner}_p(s,e))-c_G\Bigr)-\mathrm{dl}(t_0),\\
+ g_U(p,j,t_0)&=\gamma(p)\!\!\sum_{s\in\mathrm{tops}_p(t_0)}\!\!(a_s-2c_G)
+   -\!\!\sum_{\substack{s\in\mathrm{tops}_p(t_0)\\ s\ \text{not even}}}\ \sum_{e\ \mathrm{odd}}
+   \min\Bigl(\frac{a_s-2c_G}{p^{e}},\,w_j^{G}(\mathrm{partner}_p(s,e))+c_G\Bigr)-\mathrm{dl}(t_0),
+\end{aligned}
+\]
+and $\mathrm{Excl}(s,e)$: $e$ is odd and is the first positive $e$ with $\mathrm{partner}_p(s,e)=(\mathrm{false},s')$
+for a specified top $s'\ne s$, with the first distance taken separately for each such $s'$ (\texttt{IsDist}, \texttt{Excl}, \path{IsResidueClassZero.lean:235,238}).
+\par{\small \path{FormalGroupSystem.lean:57,66,81}; \path{IsResidueClassZero.lean:254,247,262,241}.}\par
+\end{definition}
+
+For standard weights, since $\gamma(p)\alpha=\sum_{e\ \mathrm{odd}}\alpha/p^{e}$, the number $g^{B}_j+\mathrm{de}_j$ equals
+$\sum_{s\ \mathrm{even}}\gamma(p)\alpha_s+\sum_{s\ \mathrm{odd}}\sum_{e\ \mathrm{odd}}\max(0,\alpha_s/p^{e}-\mathrm{cap}_j(s+e))$:
+the even top positions retain the full geometric sum. A signal prime has no top partner at an odd distance.
+For $p\ge X'$ the window gives $a_s/p\le b'(1+1/(kx^{13}))\le b'+b'/x$, covered by
+the unshifted weight at a top partner. This is the comparison with \texttt{askP} in Proposition~\ref{prop:G-conclusion1}.
+
+\begin{proposition}[Divisibility along the chain; local theorem]\label{prop:G-local-divisibility}
+\lean{Formalism.MainNotions.FormalGroupSystem.Stmt, Formalism.MainNotions.FormalGroupSystem.LowTermBound, Formalism.MainNotions.FormalGroupSystem.Conclusion4}
+\uses{def:G-local-forms,def:G-local-gains}
+Let $X$ be a local system (\texttt{Sys}: a datum $G$, a fill, levels, a chain, a uniformiser $v_p$ of $O$ with
+$p\sim v_p^{e_O}$, and bounds $d_G(j)$ for the $p$-adic valuation of the orders of the stabilisers at level $j$)
+with auxiliary data $Y$ (\texttt{Pend}) satisfying \texttt{FormalGroupSystem.admitted}. Write
+$\mathrm{v}(F)\ge g$ for $F\in v_p^{\lceil g\,e_O\rceil}\mathrm{Int}(j)$. Then:
+\begin{enumerate}
+\item (\texttt{Conclusion2}) for $j<m$ and $G\in\mathrm{Int}(j)$:
+ $\ \mathrm v(K_jG)\ge \sum_v g^{A}_{j+1}(v)-d_G(j)$;
+\item (\texttt{Conclusion4}) for every $v$ there are operators $Z_{v,j}$ on level $j$ (explicit combinations of
+ the Hecke operators $T_{v,i}$, $i\le r$, at level $j$). All levels at a fixed $v$ use the same sequences $u_\ell,m_\ell$ with valuations $0$ and $\mathrm{vm}(v,\ell)$ on $1\le\ell\le m$. When $j<m$ the coefficients $\mathrm{cl}_{v,j+1,\ell}$ have valuation at least zero for $\ell\le r$ and at least $\sum_{s\in TT_v,\ s\ {\rm even}}\alpha_s$ for $\ell=r$. For $j<m$,
+ \begin{enumerate}
+ \item $Z_{v,j+1}\bigl(\texttt{chainK}(j+1)F\bigr)=p^{\mathrm{PrZ}_{j+1}(v)}\,\texttt{chainK}(j+1)(y_vF)$ for all $F$ in the
+  $K_f$-span of $\mathrm{Int}(0)$. The integer exponent $\mathrm{PrZ}$ equals $\mathrm{Pr}$ in $\mathbb R$ because $n'_v$ is even;
+ \item $\mathrm v\bigl(Z_{v,j+1}(K_jG)\bigr)\ge g^{B}_{j+1}(v)+\sum_{v'\ne v}g^{A}_{j+1}(v')-d_G(j)$ for $G\in\mathrm{Int}(j)$;
+ \end{enumerate}
+\item (\texttt{LowTermBound}, special case $G_n=g^B$, $G_{0n}=g^A$, $PR_n=\mathrm{Pr}$) for a set $VV$ of places and numbers $S_v\ge\sum_{j=1}^m\max(g^B_j(v)-\mathrm{Pr}_j(v)-g^{A}_j(v),0)$:
+ every $F$ in the $O$-span of the vectors
+ $\ \prod_{v\in BB}y_v^{\,m}F_0$, $BB\subset VV$,
+ $F_0\in v_p^{\sum_{v\in VV\setminus BB}\lceil S_ve_O\rceil}\mathrm{Int}(0)$
+ with the product composed in every list order enumerating $BB$ without repetitions (\texttt{Iprod}), satisfies
+ \[
+   \mathrm v\bigl(\texttt{chainK}(m)F\bigr)\ \ge\ \sum_{j=1}^{m}\Bigl(\sum_{v\in VV}\max\bigl(g^B_j(v)-\mathrm{Pr}_j(v),\,g^A_j(v)\bigr)
+   +\sum_{v\notin VV}g^A_j(v)\Bigr)-\sum_{j<m}d_G(j).
+ \]
+\end{enumerate}
+\par{\small \path{FormalGroupSystem.lean:779,708,671}.}\par
+\end{proposition}
+\begin{proof}
+The hypothesis \texttt{admitted} is the full conjunction in \path{FormalGroupSystem.lean:771}.
+Its \texttt{adm1} supplies, for $p\ne2$, the multivariable Frobenius integrality criterion \texttt{DworkLemma} for exponentials of series with zero constant term
+over the fraction field of the Witt ring (\path{FormalGroupSystem.lean:225,546}).
+The expansion hypotheses distinguish the last column, where an expansion decomposition is required.
+They include preservation of the rational spans (\texttt{adm3b}), kernel and Hecke identities,
+integrality and commutation of $y_v$ (\texttt{adm8}), and the zero bound $\mathrm{LowAt}(j,v,0)$ (\texttt{adm11}).
+The source first derives the one-column estimates and the Hecke relation. For the composite the $e_O=0$
+case uses the basic form bound. For $e_O>0$ it uses the Hecke relation and preservation of the input
+lattice by $y_v$. The specialization in (3) needs $\mathrm{LowAt}(j,v,g^A_{j+1}(v))$ for every $v,j<m$,
+supplied by \texttt{VolumeRatio₂}. The stronger \texttt{KernelCommutationUpToUnits} is a separate
+conclusion of \texttt{Pf.prv\_and\_kernel\_commutation\_up\_to\_units\_of\_rests}.
+See also \texttt{Pf.packet\_statements\_hold}, \texttt{Pf.stmt\_proved}
+(\path{MultisetValuation/PrvAndKernelCommutationUpToUnitsOfRests.lean:80,104,107}) and
+\texttt{Conclusion2}, \texttt{VolumeRatio₂}, \texttt{Conclusion4}, \texttt{LowTermBound}
+(\path{FormalGroupSystem.lean:649,658,671,708}).
+\textit{[Status: statement only. The derivation of the kernel and Hecke estimates remains unread.]}
+\end{proof}
+
+\begin{lemma}[One Hecke operator per column]\label{lem:G-one-y-per-column}
+\uses{prop:G-local-divisibility}
+Assume items 2(a), 2(b) of Proposition~\ref{prop:G-local-divisibility} and $y_v\mathrm{Int}(0)\subset\mathrm{Int}(0)$
+(\texttt{adm8}). Then for $F\in\mathrm{Int}(0)$ and $0\le j\le m$,
+\[
+  \mathrm v\bigl(\texttt{chainK}(j)(y_v^{\,j}F)\bigr)\ \ge\ \sum_{i=1}^{j}\Bigl(g^B_i(v)-\mathrm{Pr}_i(v)+\sum_{v'\ne v}g^A_i(v')-d_G(i-1)\Bigr).
+\]
+\end{lemma}
+\begin{proof}
+Induction on $j$; $j=0$ is trivial. Let $G=\texttt{chainK}(j)(y_v^{\,j}F)$, so
+$G=v_p^nG_0$ for $G_0\in\mathrm{Int}(j)$ with $n=\lceil g\,e_O\rceil$, $g$ the bound for $j$. Apply 2(a) to $y_v^{\,j}F$
+(which lies in $\mathrm{Int}(0)$):
+$\texttt{chainK}(j+1)(y_v^{\,j+1}F)=p^{-\mathrm{Pr}_{j+1}}Z_{v,j+1}\bigl(K_j G\bigr)$. Apply 2(b) to $G_0$. Linearity of $K_j$ and scalar homogeneity of $Z_{v,j+1}$
+(\texttt{Pf.Zop\_smul}, \path{MultisetValuation/AofUpdate.lean:31}) give $Z_{v,j+1}(K_jG)\in v_p^{\,n+\lceil g'e_O\rceil}\mathrm{Int}(j+1)$ with
+$g'=g^B_{j+1}(v)+\sum_{v'\ne v}g^A_{j+1}(v')-d_G(j)$. Since $\mathrm{Pr}_{j+1}\in\mathbb Z$ (as $n'$ is even) and
+$p\sim v_p^{e_O}$, and $\lceil x\rceil+\lceil y\rceil\ge\lceil x+y\rceil$, the claim for $j+1$ follows.
+This induction selects the $g^B_i-\mathrm{Pr}_i$ term at every step for the generator $y_v^jF$.
+Item~3 also covers omitted places and takes a maximum in each column. See \texttt{Sys.Iprod},
+\texttt{Conclusion4}, \texttt{LowTermBound} (\path{FormalGroupSystem.lean:361,671,708}).
+\textit{[Status: complete for the displayed single-place inequality, given Proposition~\ref{prop:G-local-divisibility}.]}
+\end{proof}
+
+\begin{remark}[Interpretation: supersingular origin of the odd-$i$ sum]\label{rem:G-supersingular}
+In the author's picture the odd-exponent sum records divisibility of derivatives at an inert prime.
+The formal input singles out the powers $p^{2j}$ in
+$\texttt{logF}(X)=\sum_{j\ge0}X^{p^{2j}}/p^j$. The pairing \texttt{applyD} sums over the
+monomials of its polynomial argument, multiplying the matching series coefficient by its multi-index
+factorial and polynomial coefficient. The predicate \texttt{SConcl} prescribes a coefficient
+expansion after adjoining $v$ with $v^{p^2-1}=p$.
+See \texttt{logF}, \texttt{SConcl}, \texttt{applyD} (\path{FormalGroupSystem.lean:126,216,256}).
+\textbf{[unverified: identification of these coordinates and column kernels with those of a specific CM elliptic curve.]}
+\end{remark}
+

@@ -1,0 +1,3332 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "units": 213,
+  "source_graph": "data/unit_graph.json",
+  "graph_sha256": "cdd89b5e314f61d94b4278ff9f63510bd52ecc45991f966dc577cd65793485cf",
+  "reading_inputs": "data/round2_reading_inputs.json",
+  "policy": "A new reading prerequisite needs a witnessed path between named unit statements. Component/owner links remain in Uses and Used by. Empty means no eligible distinct atlas prerequisite was selected in the captured graph; the statement may still depend on other Lean or literature inputs.",
+  "counts": {
+    "changed_titles": 41,
+    "empty_open_questions_before": 26,
+    "empty_prerequisites_after": 102,
+    "empty_prerequisites_before": 144,
+    "explicit_questions_after": 50,
+    "full_statement_in_hypotheses_before": 165,
+    "new_reading_links": 280,
+    "none_recorded_questions_after": 163,
+    "previously_empty_prerequisites_populated": 42,
+    "units_with_background": 213,
+    "units_with_itemized_hypotheses_after": 213,
+    "unspecified_open_questions_after": 0
+  },
+  "scope_counts": {
+    "no distinct indexed supplier found": 93,
+    "related indexed branches only": 9,
+    "selected prerequisite": 111
+  },
+  "cycle_exclusions": [],
+  "units_by_id": {
+    "B01": {
+      "baseline_sha256": "1115309ea6adc36cd9e26f6d5a2d5560cec2ad96a58a0b7635eea118caccb362",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {
+        "B02": [
+          "compiled_value_1_hop"
+        ],
+        "B03": [
+          "compiled_value_1_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "B02": {
+      "baseline_sha256": "89932800cca2c7935fa1842c31b0570663f66a9a35258b275ef4c1472ca13361",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {
+        "D174": [
+          "compiled_value_10_hop"
+        ],
+        "D193": [
+          "compiled_value_5_hop"
+        ],
+        "D203": [
+          "compiled_value_11_hop"
+        ],
+        "D230": [
+          "compiled_value_13_hop"
+        ],
+        "D245": [
+          "compiled_value_13_hop"
+        ],
+        "D302": [
+          "compiled_value_13_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "B03": {
+      "baseline_sha256": "b9bd0ba1170569dd244456e0a4cb8e30ab9a87fc600ce541d6277425b7459f11",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {
+        "B04": [
+          "compiled_value_4_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "B04": {
+      "baseline_sha256": "d26b8d2111a6a160bc6420a6a5d465be0059db1fe7241315b48c0c00c316d4cd",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "B05": {
+      "baseline_sha256": "b1eb6a93013f72b68112a1cc2b6805cee1b81c526a2d9b35c9f1a2e9f5426608",
+      "prior_prerequisites": [
+        "B06",
+        "D479",
+        "D481",
+        "D484",
+        "D486"
+      ],
+      "reading_prerequisite_evidence": {
+        "B06": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ],
+        "D479": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ],
+        "D481": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ],
+        "D484": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ],
+        "D486": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ],
+        "P049": [
+          "compiled_value_11_hop"
+        ],
+        "P050": [
+          "compiled_value_8_hop"
+        ],
+        "Z5.1": [
+          "compiled_value_11_hop",
+          "compiled_value_8_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "B06": {
+      "baseline_sha256": "5ff42b43b1802cb2f3748095a8b3702de8636642633a71232e0ce56271b4ac80",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {
+        "P045": [
+          "compiled_value_6_hop"
+        ],
+        "P047": [
+          "compiled_value_6_hop"
+        ],
+        "Z4.1": [
+          "compiled_value_6_hop"
+        ],
+        "Z4.3": [
+          "compiled_value_6_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "B07": {
+      "baseline_sha256": "2eb5fcb4e3b204f979a6df107f366572968ceb1152022c728bbb640dec47e288",
+      "prior_prerequisites": [
+        "D510",
+        "D511",
+        "D513"
+      ],
+      "reading_prerequisite_evidence": {
+        "D510": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ],
+        "D511": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ],
+        "D513": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "recorded"
+    },
+    "B08": {
+      "baseline_sha256": "354d76fbb31f9dc2114e699435a69e80c1c77231ee5b4cdd7e48af5e523303e1",
+      "prior_prerequisites": [
+        "B09",
+        "B10",
+        "D014",
+        "D547",
+        "D548",
+        "D549",
+        "D550"
+      ],
+      "reading_prerequisite_evidence": {
+        "B09": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ],
+        "B10": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ],
+        "D014": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ],
+        "D547": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ],
+        "D548": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ],
+        "D549": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ],
+        "D550": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "recorded"
+    },
+    "B09": {
+      "baseline_sha256": "53979c74c877b44b61908d95baebd4cfe4b36477c8ee80ea3ead27b981134575",
+      "prior_prerequisites": [
+        "D561",
+        "D562",
+        "D563",
+        "D564",
+        "D566"
+      ],
+      "reading_prerequisite_evidence": {
+        "D561": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ],
+        "D562": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ],
+        "D563": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ],
+        "D564": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ],
+        "D566": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "recorded"
+    },
+    "B10": {
+      "baseline_sha256": "9bbffda526c75f66213be8a961647b4e88b881eaa8f58bb6d1db7d36a76713bd",
+      "prior_prerequisites": [
+        "D567",
+        "D568",
+        "D569",
+        "D570",
+        "P021"
+      ],
+      "reading_prerequisite_evidence": {
+        "D567": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ],
+        "D568": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ],
+        "D569": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ],
+        "D570": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ],
+        "P021": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "recorded"
+    },
+    "D002": {
+      "baseline_sha256": "4e07dfa9a4004a24d9135e21a13519b5f89d0076e1f60aa24e60d447ad13c8e0",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {
+        "P044": [
+          "compiled_value_2_hop"
+        ],
+        "Z3.2": [
+          "compiled_value_2_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "D004": {
+      "baseline_sha256": "23c4283d26b860ddcc28aac45a16788dcb0e2efa502275aaa2146d3cd9f6401e",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "D006": {
+      "baseline_sha256": "1a733617f35c3b3d048732a9e05144ea1c9b0e2bc3e115605366f594514d5e4c",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "D014": {
+      "baseline_sha256": "cfe977d458871aa92a38ff92249896274a6bdbefd05d9e65fc16ba4995286fd2",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "recorded"
+    },
+    "D024": {
+      "baseline_sha256": "e76eb1c5c66150254018dc33944daedff3b61a3c7f368ee7eff8202726341ac0",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "D025": {
+      "baseline_sha256": "ad38d993b58914d3779e948fd960e158a3c1b32b04722643c9fd3aa067fc2da8",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "D033": {
+      "baseline_sha256": "3fe8bbfb67beb686dad3462c97aa823e202915294a3aa661a01dba2c7f2b1f09",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {
+        "D025": [
+          "compiled_value_7_hop"
+        ],
+        "N076": [
+          "compiled_value_6_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "D044": {
+      "baseline_sha256": "2d00e5cdaaab3dfa2573da8e9a764550ee47cdca019fa552c9db839c3616b0ff",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "D077": {
+      "baseline_sha256": "afcd45cc0fce1e61200d47fde5f61272bea4ee21b2c53b03487574b14c814074",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "D082": {
+      "baseline_sha256": "71f5f129aa084b7cff72cd9c5c84abfdc61966eada51af62cff63368b9e6ba80",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "D097": {
+      "baseline_sha256": "99d177fedd46603594774e176cac1f98df01e796f787dffedc37ede3d67578e7",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "D108": {
+      "baseline_sha256": "ebeffe70abcc217014aee58a685a9ecda71fae3c15b0b6e08d379ccb3037d657",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "D123": {
+      "baseline_sha256": "d9374be398e891416ff14b5b0fd8fd33087e3bf13b7d5c5cddb74fe6a7152c3c",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "D128": {
+      "baseline_sha256": "c5a169ccd6f3e2629fe593d267ff24db98f35cbdf70ad909b93b453d9c8278cd",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "D154": {
+      "baseline_sha256": "d9633bcd94ee92a4057027be301e9d07b16411089721085a82ede605a6be3c27",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "D155": {
+      "baseline_sha256": "0e626b3f3bfd8c80127b1126294c5f93447b4c5d8affe111971415059c18debe",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "D174": {
+      "baseline_sha256": "aca757fe7f62449d011c0070adc43d077825103a56d68dfc63aef2ec529a5dbd",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "D193": {
+      "baseline_sha256": "f75d8d3cc300c615373778f650fed78b76769ede96a380e285c92e7d5da38c7c",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "D203": {
+      "baseline_sha256": "f4f7242680e7e2231ee3265c63986fd20cbe131a31fa69f700bba8fe1e98e57e",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "D230": {
+      "baseline_sha256": "bf32ca0a8e445cb533c0d3fb7e3549bcaae999c2961be2b45a1bae3baab1d807",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {
+        "D203": [
+          "compiled_value_3_hop"
+        ],
+        "D245": [
+          "compiled_value_4_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "D245": {
+      "baseline_sha256": "d974114aeb23dc3ab86d2aa59f4c4605592d17f2b58c1d844717e8853fd12896",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "related indexed branches only",
+      "question_state": "none-recorded"
+    },
+    "D302": {
+      "baseline_sha256": "3e482138ca97b27d14d739b013c8097926b45d2374949314f17e6da707111ab2",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "D309": {
+      "baseline_sha256": "71323ea96945fb31732de0426976e4fccf97392b4e1777db24c6b0c091bf420e",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "D317": {
+      "baseline_sha256": "a9b73fe6023b59236f91578e2caa87dae513abd8be884628f4eacc3ac4dc6e9a",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {
+        "D340": [
+          "compiled_value_10_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "D331": {
+      "baseline_sha256": "12299b901c6287d7cf2955fd4d30065aee92b8b7b88d7f0120ce7a9630523fc2",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "related indexed branches only",
+      "question_state": "none-recorded"
+    },
+    "D340": {
+      "baseline_sha256": "05da0c52c6d2f02c5e0d497ae01c4720b1d464d5f40ac83c1a7fcf508f97994d",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "D351": {
+      "baseline_sha256": "442f89f94e1a1327c609db474585efeeaffa7ecea1bcf8a9d7e01e84785a281e",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "D379": {
+      "baseline_sha256": "d0b7379d649132a0fe7ffc0f8eb1d969dd9e458cc065c8de5d2ceadd600065d4",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {
+        "P049": [
+          "compiled_value_10_hop"
+        ],
+        "P050": [
+          "compiled_value_7_hop"
+        ],
+        "Z5.1": [
+          "compiled_value_10_hop",
+          "compiled_value_7_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "D394": {
+      "baseline_sha256": "e8e08910b1b0f496c7f239931d36de07dce371060784a4934117d95a819ec3d1",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {
+        "P048": [
+          "compiled_value_5_hop"
+        ],
+        "P096": [
+          "compiled_value_13_hop"
+        ],
+        "Z4.4": [
+          "compiled_value_5_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "D415": {
+      "baseline_sha256": "48ed2904be6ae94c742948a66fba62b42015ad2b71dc2b4775dde7d733375f8e",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "D421": {
+      "baseline_sha256": "e7fb7b1694b447a7f32709279c1ce45bc089d2a20322fb409c0abbfc8d2d3bc2",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {
+        "D002": [
+          "compiled_value_5_hop"
+        ],
+        "D004": [
+          "compiled_value_5_hop"
+        ],
+        "D006": [
+          "compiled_value_5_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "D427": {
+      "baseline_sha256": "1f9ca589e3b89cff7591b329dd839ed0ee889432ed1e56cc2be8aca01e84b0c2",
+      "prior_prerequisites": [
+        "D421"
+      ],
+      "reading_prerequisite_evidence": {
+        "D002": [
+          "compiled_value_7_hop"
+        ],
+        "D004": [
+          "compiled_value_9_hop"
+        ],
+        "D006": [
+          "compiled_value_6_hop"
+        ],
+        "D421": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "D443": {
+      "baseline_sha256": "38c89fdc515b9dc04d6e857c16371567eaa0bed51cf9a506cd58e7a75466a799",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {
+        "D123": [
+          "compiled_value_9_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "D479": {
+      "baseline_sha256": "d414be0b3e08d546031a784f020c51ab7cce0dbd01a08456f2cb6d4e80874bdd",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {
+        "D014": [
+          "compiled_value_11_hop"
+        ],
+        "P049": [
+          "compiled_value_8_hop"
+        ],
+        "P050": [
+          "compiled_value_8_hop"
+        ],
+        "Z5.1": [
+          "compiled_value_8_hop"
+        ],
+        "Z5.2": [
+          "compiled_value_10_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "D481": {
+      "baseline_sha256": "ec769751ef05d4d54608f8bdb003617f22750ea7d78ebaa0b600028ff6830161",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {
+        "P049": [
+          "compiled_value_10_hop"
+        ],
+        "P050": [
+          "compiled_value_10_hop"
+        ],
+        "Z5.1": [
+          "compiled_value_10_hop"
+        ],
+        "Z5.2": [
+          "compiled_value_9_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "D484": {
+      "baseline_sha256": "bb1fbba86c0c272879cdcbc3630f4c6ed4e61b71a82e1bbc1202f21e66daa252",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "related indexed branches only",
+      "question_state": "none-recorded"
+    },
+    "D486": {
+      "baseline_sha256": "ad7bdcaae621e6706d932ee63c5a8cf95d13b75ef7646a952e934af2edb4efbc",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "related indexed branches only",
+      "question_state": "none-recorded"
+    },
+    "D506": {
+      "baseline_sha256": "818e34f2a12d9b8b1e147e4865ee59e512117a10f1f7404074ddf255fedc6e4f",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "D510": {
+      "baseline_sha256": "173341b9dd3f53472406db3f2d1762e7e7864a39d12eede995c4691b047373b8",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {
+        "N415": [
+          "compiled_value_6_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "D511": {
+      "baseline_sha256": "715db47048a65ad2f31a889a281dd98f8bd66cbdbc311924d3e781c5573b40d2",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "related indexed branches only",
+      "question_state": "none-recorded"
+    },
+    "D513": {
+      "baseline_sha256": "b0cd8b8f3810aec17ce3ea1ca256364ab50ba517747f973f8ada7ad8d8741ade",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "D528": {
+      "baseline_sha256": "9fd9c8f45b3ecd6d161b36faad9d3a5bc59d2bc9ac9670f3649c7fc3450d2f20",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "D532": {
+      "baseline_sha256": "75963acf7cc5f9c4f89204f99d6276a69637a5d33ab0d6f8b6198c2f40f9363e",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "D536": {
+      "baseline_sha256": "43460bb42f2f18f057cc1e370bed921a9457b1093cc09aff90cbf3677880aa37",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "D547": {
+      "baseline_sha256": "01801cbc75cffc94c7b30049128d033416e245f6789a624a1738317f7c737665",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "recorded"
+    },
+    "D548": {
+      "baseline_sha256": "966e530cd28a408450acbe0495daadd56aee3e9ef02dba0a58e808c7f8bba5f6",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "recorded"
+    },
+    "D549": {
+      "baseline_sha256": "526502a09519c6d5b8920c865b71ae5962a2b9bac7c1163ea31ca382869535cb",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "recorded"
+    },
+    "D550": {
+      "baseline_sha256": "23b37c16532b29829461eb9a59b9665b1544189554539c30082c8180878e08f9",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "D551": {
+      "baseline_sha256": "5de4e514659de61a5d9031d3142eeb3247179be4bab613b2b18f953761fa700d",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "related indexed branches only",
+      "question_state": "none-recorded"
+    },
+    "D558": {
+      "baseline_sha256": "c1680aa50301305a5454011a9aba59e41fcf3a4cef35bae8742d54740a99975a",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "related indexed branches only",
+      "question_state": "none-recorded"
+    },
+    "D561": {
+      "baseline_sha256": "ad8081b9b49db8d9e3adbc705ff554cc733d3dbe47f00deff42f06152e389be9",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "recorded"
+    },
+    "D562": {
+      "baseline_sha256": "ce50ef71e35fd6f4aa0a54afb468482a9c850f9223f2ae4b270fba553cb500f5",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "recorded"
+    },
+    "D563": {
+      "baseline_sha256": "3b4053bbbb276fbecc2c8f9198cf5988d98ba275ba54a5a1cc7c50a2740215e6",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "D564": {
+      "baseline_sha256": "49d811e081a98a54c09f47b221a576ea3f85c8c8d4a72d15bc3540d241b99f0b",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "D566": {
+      "baseline_sha256": "d4fea78e824ee25c070a734a4fef87b52188dfe4fb99da6d37fecd86e7185c1a",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "D567": {
+      "baseline_sha256": "8c38a4909ef9f8c7d60e614cc4cbee7110883b228b939ab365d1ffd2f59797db",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "recorded"
+    },
+    "D568": {
+      "baseline_sha256": "194a3d7e2d37f512131cbe9e53bdc5de02740b9949632a8123ab605eb239f0e6",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "D569": {
+      "baseline_sha256": "a95c0fa65cf67ab80b3a0cc5d3625486048caca4ca2591596f5eb521d2bf0ec4",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "D570": {
+      "baseline_sha256": "dd1b5efafd24a1e5228256824250baa5e961e8bf46895ac401daf765119cc3fe",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "D575": {
+      "baseline_sha256": "6371b1d8263d61e67e2ba517e2827c1973ec8855347fc76b85ac8a3b9ad5adf2",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "N076": {
+      "baseline_sha256": "21deb7e65f83e099cf375cdd06b0eedfa40966d3791f74b2e5c252e5065b7290",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "recorded"
+    },
+    "N188": {
+      "baseline_sha256": "5e7e8163781123dee74b9e375697152e216296fc1b6f7f49a6dd9911d4d00569",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "N318": {
+      "baseline_sha256": "68744746128fa1fd9dfc77a34e630b1375df9ede5df6dc7c53098877cce962f6",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {
+        "D044": [
+          "compiled_value_5_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "recorded"
+    },
+    "N415": {
+      "baseline_sha256": "66f70a3da539e2c55208147261404abf026874fe3a27021425d055c9ac1d0231",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "P001": {
+      "baseline_sha256": "c88bbe9752264b16fe171744b5de5677ed6142fb5d7124b67f87203efbf3ed54",
+      "prior_prerequisites": [
+        "P008"
+      ],
+      "reading_prerequisite_evidence": {
+        "P008": [
+          "DB1 reading prerequisite",
+          "compiled_value_1_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "recorded"
+    },
+    "P002": {
+      "baseline_sha256": "0c985e1f4345fdec450f50ebf6eea1e52142e6661e65b3571022bac0c9a72c91",
+      "prior_prerequisites": [
+        "P008"
+      ],
+      "reading_prerequisite_evidence": {
+        "P008": [
+          "DB1 reading prerequisite",
+          "compiled_value_1_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "P003": {
+      "baseline_sha256": "508592c8f0a1089b3b6257c910e1fcf486e6636f811fd890704cd1a3116e23c7",
+      "prior_prerequisites": [
+        "P009"
+      ],
+      "reading_prerequisite_evidence": {
+        "P009": [
+          "DB1 reading prerequisite",
+          "compiled_value_1_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "P004": {
+      "baseline_sha256": "4635dc1f3e69681ff49154a01269edc9e7c7d6750a75432147baeae50087a4c0",
+      "prior_prerequisites": [
+        "P006"
+      ],
+      "reading_prerequisite_evidence": {
+        "P006": [
+          "DB1 reading prerequisite",
+          "compiled_value_1_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "P005": {
+      "baseline_sha256": "d8ef1202a8cb7a747255e606d9dc5b17b635d97d6bb7accb968e93ba912597a7",
+      "prior_prerequisites": [
+        "P007"
+      ],
+      "reading_prerequisite_evidence": {
+        "P007": [
+          "DB1 reading prerequisite",
+          "compiled_value_1_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "P006": {
+      "baseline_sha256": "0c60e940937f859f2186028ebf366c19a8198d583ff925348bb273bca61136c1",
+      "prior_prerequisites": [
+        "P009"
+      ],
+      "reading_prerequisite_evidence": {
+        "P009": [
+          "DB1 reading prerequisite",
+          "compiled_value_1_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "P007": {
+      "baseline_sha256": "8c829789a4480c43b56462553eab880cdcae7ce28bd8359dff244216d312ce81",
+      "prior_prerequisites": [
+        "P009"
+      ],
+      "reading_prerequisite_evidence": {
+        "P009": [
+          "DB1 reading prerequisite",
+          "compiled_value_1_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "P008": {
+      "baseline_sha256": "723dd4ad2103bda39cecd37ab90f6d7c28f30fd0f756fddf3e4eddf860eab7f5",
+      "prior_prerequisites": [
+        "P009"
+      ],
+      "reading_prerequisite_evidence": {
+        "P009": [
+          "DB1 reading prerequisite",
+          "compiled_value_1_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "P009": {
+      "baseline_sha256": "82025d8beeb3b84f25604ec9b3cb4e819cd4cabc269a6c32f489f6b9c3743c91",
+      "prior_prerequisites": [
+        "P010"
+      ],
+      "reading_prerequisite_evidence": {
+        "P010": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "P010": {
+      "baseline_sha256": "536ae2f24a07e299216961d2742e9c86078517a8610308cdc2bd5e81c89c0c29",
+      "prior_prerequisites": [
+        "P011"
+      ],
+      "reading_prerequisite_evidence": {
+        "B01": [
+          "compiled_value_2_hop"
+        ],
+        "P011": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "recorded"
+    },
+    "P011": {
+      "baseline_sha256": "44d3c817ae4da6fe56f431366bc771b5f29898be79e69c8bc728c6dcec609354",
+      "prior_prerequisites": [
+        "P012",
+        "P013"
+      ],
+      "reading_prerequisite_evidence": {
+        "B04": [
+          "compiled_value_1_hop"
+        ],
+        "P012": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ],
+        "P013": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "P012": {
+      "baseline_sha256": "274dc18420347a860a5c04bc4b0c1a9f1a3c1f34d6c3f1496adb9412fa6e67b0",
+      "prior_prerequisites": [
+        "P014",
+        "P041",
+        "P042",
+        "P043",
+        "P044",
+        "P046",
+        "P048",
+        "P049",
+        "P050"
+      ],
+      "reading_prerequisite_evidence": {
+        "P014": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ],
+        "P041": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ],
+        "P042": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ],
+        "P043": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ],
+        "P044": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ],
+        "P046": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ],
+        "P048": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ],
+        "P049": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ],
+        "P050": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ],
+        "T01": [
+          "compiled_value_1_hop"
+        ],
+        "T11": [
+          "compiled_value_2_hop"
+        ],
+        "T12": [
+          "compiled_value_3_hop"
+        ],
+        "T13": [
+          "compiled_value_1_hop"
+        ],
+        "T17": [
+          "compiled_value_1_hop"
+        ],
+        "T18": [
+          "compiled_value_1_hop"
+        ],
+        "T19": [
+          "compiled_value_1_hop"
+        ],
+        "T20": [
+          "compiled_value_1_hop"
+        ],
+        "T21": [
+          "compiled_value_1_hop"
+        ],
+        "T22": [
+          "compiled_value_1_hop"
+        ],
+        "T23": [
+          "compiled_value_1_hop"
+        ],
+        "T24": [
+          "compiled_value_1_hop"
+        ],
+        "Z3.1": [
+          "compiled_proof_route"
+        ],
+        "Z3.2": [
+          "compiled_proof_route"
+        ],
+        "Z4.4": [
+          "compiled_proof_route"
+        ],
+        "Z42-KERNEL": [
+          "compiled_proof_route"
+        ],
+        "Z5.1": [
+          "compiled_proof_route"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "recorded"
+    },
+    "P013": {
+      "baseline_sha256": "b7bb6f6b6353235286d5d3a95c49b864dbebba2db4652551d75693b30c9d1a46",
+      "prior_prerequisites": [
+        "P020",
+        "P024",
+        "P025",
+        "P026",
+        "P027",
+        "P028",
+        "P029",
+        "P030",
+        "P031",
+        "P032",
+        "P033",
+        "P034",
+        "P035",
+        "P036",
+        "P037",
+        "P038",
+        "P039",
+        "P040"
+      ],
+      "reading_prerequisite_evidence": {
+        "P020": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ],
+        "P024": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ],
+        "P025": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ],
+        "P026": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ],
+        "P027": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ],
+        "P028": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ],
+        "P029": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ],
+        "P030": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ],
+        "P031": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ],
+        "P032": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ],
+        "P033": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ],
+        "P034": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ],
+        "P035": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ],
+        "P036": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ],
+        "P037": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ],
+        "P038": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ],
+        "P039": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ],
+        "P040": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ],
+        "W01": [
+          "compiled_value_1_hop"
+        ],
+        "W02": [
+          "compiled_value_1_hop"
+        ],
+        "Z1.1.07": [
+          "compiled_proof_route"
+        ],
+        "Z1.2": [
+          "compiled_proof_route"
+        ],
+        "Z1.3.08": [
+          "compiled_proof_route"
+        ],
+        "Z1.4": [
+          "compiled_proof_route"
+        ],
+        "Z1.5.03": [
+          "compiled_proof_route"
+        ],
+        "Z1.5.05": [
+          "compiled_proof_route"
+        ],
+        "Z2.K1": [
+          "compiled_proof_route"
+        ],
+        "Z2.K2": [
+          "compiled_proof_route"
+        ],
+        "Z2.K4": [
+          "compiled_proof_route"
+        ],
+        "Z2.K5": [
+          "compiled_proof_route"
+        ],
+        "Z2.K6": [
+          "compiled_proof_route"
+        ],
+        "Z2.K7": [
+          "compiled_proof_route"
+        ],
+        "Z2.K8": [
+          "compiled_proof_route"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "recorded"
+    },
+    "P014": {
+      "baseline_sha256": "fb0457ec9a758ef1f2d0239f6f7340763652c16a731c0c66eb9aceee4cf0e887",
+      "prior_prerequisites": [
+        "P015"
+      ],
+      "reading_prerequisite_evidence": {
+        "P015": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "P015": {
+      "baseline_sha256": "dcfb9a973a0ebd55109d51f18e2eef40e499d436650bf8dc7e5687f876ba2791",
+      "prior_prerequisites": [
+        "P016",
+        "P045",
+        "P047"
+      ],
+      "reading_prerequisite_evidence": {
+        "B05": [
+          "compiled_value_1_hop"
+        ],
+        "B07": [
+          "compiled_value_1_hop"
+        ],
+        "P016": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ],
+        "P045": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ],
+        "P047": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ],
+        "Z4.1": [
+          "compiled_proof_route"
+        ],
+        "Z4.3": [
+          "compiled_proof_route"
+        ],
+        "Z5.2": [
+          "compiled_proof_route"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "recorded"
+    },
+    "P016": {
+      "baseline_sha256": "b0f277bffed40d90b7cb34ecc0065c25db33094c2241749fb01548be6163dd39",
+      "prior_prerequisites": [
+        "P017",
+        "P018",
+        "P019"
+      ],
+      "reading_prerequisite_evidence": {
+        "P017": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ],
+        "P018": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ],
+        "P019": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "P017": {
+      "baseline_sha256": "a543dced9ea9eaf37a3bba508f022f2f07ddde3b54ed8ae133244145d9465ffc",
+      "prior_prerequisites": [
+        "P021"
+      ],
+      "reading_prerequisite_evidence": {
+        "B08": [
+          "compiled_value_2_hop"
+        ],
+        "P021": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "recorded"
+    },
+    "P018": {
+      "baseline_sha256": "33fa21815654618947ce00b12328fbf358d2da6df937e8c7c08f24295bce862e",
+      "prior_prerequisites": [
+        "P023"
+      ],
+      "reading_prerequisite_evidence": {
+        "P023": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "P019": {
+      "baseline_sha256": "2a0c95966393a7639984af05ba981d20bbd8fb19649beab1ecf7a8beea9cbb2e",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "P020": {
+      "baseline_sha256": "dad8fdeac52d4171fc6b1a9e6b35f1b80c996b241869a2949ce5184fb3685286",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {
+        "W11": [
+          "compiled_value_1_hop"
+        ],
+        "W12": [
+          "compiled_value_1_hop"
+        ],
+        "W13": [
+          "compiled_value_1_hop"
+        ],
+        "W14": [
+          "compiled_value_1_hop"
+        ],
+        "W15": [
+          "compiled_value_1_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "P021": {
+      "baseline_sha256": "66e93e2cd0fd9dd09991e361afb57bc10c6ce96ac835aba49fffa1e2a8b2d9c9",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {
+        "D568": [
+          "compiled_value_1_hop"
+        ],
+        "D570": [
+          "compiled_value_1_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "P022": {
+      "baseline_sha256": "6df64a04f6cf73ea03094d6bfab8dfbd4ecb38bbe8c3437bbadaf204b8c088ef",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "recorded"
+    },
+    "P023": {
+      "baseline_sha256": "3720e0772bd9d75831c7bbb7c87e3a721127a5e60c645e76c88408305b248d14",
+      "prior_prerequisites": [
+        "P022"
+      ],
+      "reading_prerequisite_evidence": {
+        "P022": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "P024": {
+      "baseline_sha256": "79f05f12b51e3c81d6a099a330ee586e7a33258ab1b238bc349730e3cf041a54",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {
+        "B04": [
+          "compiled_value_6_hop"
+        ],
+        "D077": [
+          "compiled_value_3_hop"
+        ],
+        "Z1.1.01": [
+          "compiled_value_3_hop"
+        ],
+        "Z1.1.02": [
+          "compiled_value_3_hop"
+        ],
+        "Z1.1.03": [
+          "compiled_value_3_hop"
+        ],
+        "Z1.1.04": [
+          "compiled_value_3_hop"
+        ],
+        "Z1.1.05": [
+          "compiled_value_2_hop"
+        ],
+        "Z1.1.06": [
+          "compiled_value_2_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "P025": {
+      "baseline_sha256": "3c3487ab6860d6f4a89b8c4bb23c787b35e676a0973ce3b4c47be831ec294d22",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "P026": {
+      "baseline_sha256": "6b8fade345f2f4146baed28b768b65d59e6929f4c2c79b4b6b406075cafbe65e",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {
+        "Z1.3.01": [
+          "compiled_value_1_hop"
+        ],
+        "Z1.3.02": [
+          "compiled_value_1_hop"
+        ],
+        "Z1.3.03": [
+          "compiled_value_1_hop"
+        ],
+        "Z1.3.04": [
+          "compiled_value_1_hop"
+        ],
+        "Z1.3.05": [
+          "compiled_value_1_hop"
+        ],
+        "Z1.3.07": [
+          "compiled_value_1_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "recorded"
+    },
+    "P027": {
+      "baseline_sha256": "e534df3f85730e0d7b741e1c4b099581f113e193e6b1d65c99ea916b50b3e321",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "P028": {
+      "baseline_sha256": "c20ce52277412ff5e3234e5b19153b581b5b83429b7bef215fec631a746de261",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "P029": {
+      "baseline_sha256": "10e6b4d94caac463b38b2788b7e522790b57371c02dcb12888c80056cc5829d1",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {
+        "Z1.5.02": [
+          "compiled_value_1_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "P030": {
+      "baseline_sha256": "ecfac37ceaea611020fd33bc14debff8e3806e66d133fdaccf97fe0d9b3657dc",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {
+        "Z1.5.04": [
+          "compiled_value_1_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "P031": {
+      "baseline_sha256": "e9f545c41804fd037135a36fc5619d1cbe52ca642501c636401f05e0a10ea21b",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "P032": {
+      "baseline_sha256": "895b93d5aff3c428ac2d7f3650e97cfeae2cee6e6987fbcf9d0ced2e8eb4d11d",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "P033": {
+      "baseline_sha256": "41a6809ff89456fc5631f433358d2317e4f854a39840dbb31daaaa1bc8efbcbf",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "P034": {
+      "baseline_sha256": "ccc7bd1d9d4368c236b4dad394f66a501c79e306e9e628b9704da7478c446c04",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "recorded"
+    },
+    "P035": {
+      "baseline_sha256": "a17b95f7a195f32fc9b6873630ee8ad36548ffd78c8b01f504f78f05586caf35",
+      "prior_prerequisites": [
+        "P038"
+      ],
+      "reading_prerequisite_evidence": {
+        "P038": [
+          "DB1 reading prerequisite",
+          "compiled_value_1_hop"
+        ],
+        "Z2.K7": [
+          "compiled_value_1_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "recorded"
+    },
+    "P036": {
+      "baseline_sha256": "6a59528296783901e04f2371890dd7b42bf7320fa5ef3918d452c3b19fe17e8e",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "P037": {
+      "baseline_sha256": "af65313a47fa8f332b2a96775ea557f2a9f8f2c3d87a2e6d044ce4c150d501d8",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "P038": {
+      "baseline_sha256": "05882ce5c96a9417c2d7eddd2b83895aab108dfb19580c41e08d38a03592b1d1",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "P039": {
+      "baseline_sha256": "f8dc4c0880ad9674e3c0bcaf9fc97cd894b48e88ccc9cec61c120e62b7910fd3",
+      "prior_prerequisites": [
+        "P038"
+      ],
+      "reading_prerequisite_evidence": {
+        "P038": [
+          "DB1 reading prerequisite",
+          "compiled_value_1_hop"
+        ],
+        "Z2.K7": [
+          "compiled_value_1_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "P040": {
+      "baseline_sha256": "9df08d0cdcdfaf63c6fad98a441687c0c59bce878e3cf8ae7921ec11a12356c9",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "P041": {
+      "baseline_sha256": "ecf2ee81e4933bae2c09d8491aaa7c208ff48679516e9b8ecd0dc0b6085d7537",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {
+        "P042": [
+          "compiled_value_3_hop"
+        ],
+        "Z3.1": [
+          "compiled_value_3_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "P042": {
+      "baseline_sha256": "cc7e37c70522a71c49a9de392f3159071c01684c26f4a427eb52855ce0d59724",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "P043": {
+      "baseline_sha256": "dd9e6c37a2abae9b53bf3d7f73a7ce0428391e5210e04ae0587eec3acc74da37",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "P044": {
+      "baseline_sha256": "d1fa5467a509fb8a81900446787518a579c065e05133ea7253c8323e253ab28e",
+      "prior_prerequisites": [
+        "P043"
+      ],
+      "reading_prerequisite_evidence": {
+        "P041": [
+          "compiled_value_3_hop"
+        ],
+        "P043": [
+          "DB1 reading prerequisite",
+          "compiled_value_1_hop"
+        ],
+        "Z3.1": [
+          "compiled_value_3_hop"
+        ],
+        "Z3.2": [
+          "compiled_value_1_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "P045": {
+      "baseline_sha256": "7b1ac8f10cb6439bec88901be6432484c87fca115c86e34d057d7a19427db778",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "P046": {
+      "baseline_sha256": "3e426e2ca93cc56a4bd18f19b33348d8ad845ffc36c82e981e3f235bb04859a5",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {
+        "Z4.2.02": [
+          "compiled_value_2_hop"
+        ],
+        "Z42-SITES": [
+          "compiled_value_1_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "P047": {
+      "baseline_sha256": "8a16027e98bda7c878d2cf386cc0ac5ca50b0c6aac399461081669253a289c11",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "P048": {
+      "baseline_sha256": "9ab438f860240b587607af8165c7d3acccf60268f8c3556fdfb6b9be8539d9eb",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {
+        "P096": [
+          "compiled_value_8_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "P049": {
+      "baseline_sha256": "d1269aff78188ef2b9d9ecf938b5344b26df88a09c6e77e8fd18603d540c93f0",
+      "prior_prerequisites": [
+        "P050"
+      ],
+      "reading_prerequisite_evidence": {
+        "P050": [
+          "DB1 reading prerequisite",
+          "compiled_value_1_hop"
+        ],
+        "Z5.1": [
+          "compiled_value_1_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "P050": {
+      "baseline_sha256": "1838e973503ad0c42457c45c4c2ee7a42a46d8dcf6c97096609ae1f06165c0bb",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "P090": {
+      "baseline_sha256": "31433b67dba2d121eea7f97147ecf0c5887aeed853a9f8413a001f5521c1ca3a",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {
+        "P134": [
+          "compiled_value_6_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "P096": {
+      "baseline_sha256": "5e14670cbcc123620a20381c21f51d4d8ffe5fbbdf1aca6704a78f17167c0cb8",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "P134": {
+      "baseline_sha256": "41dcfd64a96131eb433a167538bcce121d3c3fc6e1bd53eacdbfe9284787850f",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "T01": {
+      "baseline_sha256": "2e4a6b1a766192d05ee922395cd1798909726ab313eb1050641f27a5081d7a82",
+      "prior_prerequisites": [
+        "D002",
+        "D004",
+        "D006",
+        "D575",
+        "P014",
+        "P015",
+        "T02",
+        "T25"
+      ],
+      "reading_prerequisite_evidence": {
+        "D002": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ],
+        "D004": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ],
+        "D006": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ],
+        "D575": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ],
+        "P014": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ],
+        "P015": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ],
+        "T02": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ],
+        "T25": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "T02": {
+      "baseline_sha256": "224c9f118d710851a06c0c1097fb757d88450badd6dbaa080d71585d015c493b",
+      "prior_prerequisites": [
+        "D025",
+        "D044",
+        "T03",
+        "T05",
+        "T08",
+        "T09",
+        "T10"
+      ],
+      "reading_prerequisite_evidence": {
+        "D024": [
+          "compiled_value_4_hop"
+        ],
+        "D025": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ],
+        "D044": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ],
+        "T03": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ],
+        "T05": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ],
+        "T08": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ],
+        "T09": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ],
+        "T10": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "recorded"
+    },
+    "T03": {
+      "baseline_sha256": "28f442aa5f29486394f74fa1f9195f97c48bda4253dd6a5ee4866f2789f7c505",
+      "prior_prerequisites": [
+        "D033",
+        "T04",
+        "T05",
+        "T06",
+        "T07",
+        "T08"
+      ],
+      "reading_prerequisite_evidence": {
+        "D025": [
+          "compiled_value_7_hop"
+        ],
+        "D033": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ],
+        "D575": [
+          "compiled_value_4_hop"
+        ],
+        "N076": [
+          "compiled_value_7_hop"
+        ],
+        "N188": [
+          "compiled_value_17_hop"
+        ],
+        "T04": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ],
+        "T05": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ],
+        "T06": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ],
+        "T07": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ],
+        "T08": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "T04": {
+      "baseline_sha256": "10479899e95ff4d3d972634c05c17de7f496cc20ff88d730ad6e8742a73f98c1",
+      "prior_prerequisites": [
+        "D394"
+      ],
+      "reading_prerequisite_evidence": {
+        "D025": [
+          "compiled_value_6_hop"
+        ],
+        "D033": [
+          "compiled_value_4_hop"
+        ],
+        "D379": [
+          "compiled_value_3_hop"
+        ],
+        "D394": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ],
+        "P046": [
+          "compiled_value_16_hop"
+        ],
+        "P050": [
+          "compiled_value_16_hop"
+        ],
+        "Z42-KERNEL": [
+          "compiled_value_16_hop"
+        ],
+        "Z5.1": [
+          "compiled_value_16_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "T05": {
+      "baseline_sha256": "629014469a37e28101c70836fa0083eec8a13a14c75e8d6db458609efd6748c3",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "T06": {
+      "baseline_sha256": "ea6da4eb456d2a74069cfa9889955a80b68875a207c064cb323eb3508d406ebc",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {
+        "D025": [
+          "compiled_value_13_hop"
+        ],
+        "D415": [
+          "compiled_value_12_hop"
+        ],
+        "D575": [
+          "compiled_value_5_hop"
+        ],
+        "N188": [
+          "compiled_value_18_hop"
+        ],
+        "P050": [
+          "compiled_value_24_hop"
+        ],
+        "P096": [
+          "compiled_value_17_hop"
+        ],
+        "Z5.1": [
+          "compiled_value_24_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "T07": {
+      "baseline_sha256": "2d6947a3c5a23a6cd2554aa814132f2208c42c9432ea2413a129318cdd0cb9ed",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {
+        "D427": [
+          "compiled_value_4_hop"
+        ],
+        "N188": [
+          "compiled_value_14_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "T08": {
+      "baseline_sha256": "6147d9286cdca2e719c687836290abd550b10c8f43318d8bdb4cd0056486d0fd",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {
+        "D025": [
+          "compiled_value_12_hop"
+        ],
+        "D033": [
+          "compiled_value_8_hop"
+        ],
+        "N076": [
+          "compiled_value_13_hop"
+        ],
+        "P049": [
+          "compiled_value_21_hop"
+        ],
+        "P050": [
+          "compiled_value_12_hop"
+        ],
+        "P096": [
+          "compiled_value_16_hop"
+        ],
+        "Z5.1": [
+          "compiled_value_12_hop",
+          "compiled_value_21_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "T09": {
+      "baseline_sha256": "110bd6b60156de5ccf8cf2c05632815b56d2b3c4afa80c9e2e477dfc7f9fcc56",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {
+        "P049": [
+          "compiled_value_9_hop"
+        ],
+        "P050": [
+          "compiled_value_11_hop"
+        ],
+        "Z5.1": [
+          "compiled_value_11_hop",
+          "compiled_value_9_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "T10": {
+      "baseline_sha256": "b3c3367adb07323e86a5a7465a65e881fd07b8f3ca0189487ec801c2c5f364f2",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {
+        "D024": [
+          "compiled_value_6_hop"
+        ],
+        "D044": [
+          "compiled_value_4_hop"
+        ],
+        "N318": [
+          "compiled_value_3_hop"
+        ],
+        "P049": [
+          "compiled_value_13_hop"
+        ],
+        "P050": [
+          "compiled_value_9_hop"
+        ],
+        "Z5.1": [
+          "compiled_value_13_hop",
+          "compiled_value_9_hop"
+        ],
+        "Z5.2": [
+          "compiled_value_10_hop",
+          "compiled_value_11_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "T11": {
+      "baseline_sha256": "1e6af8721b94712336497f3702cc27d45ff297440682e179a97994a97ebfebcc",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "T12": {
+      "baseline_sha256": "91a812828639ab5cb0fecc5e636673b4520de27eb156ca2d7384b3a47c276465",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "recorded"
+    },
+    "T13": {
+      "baseline_sha256": "8112c4be5651dc8c43f62fa1fc0b00f33e1c82279eaa38a5c4de6f4a04f04cee",
+      "prior_prerequisites": [
+        "D123",
+        "D128",
+        "D154",
+        "D155",
+        "D575",
+        "T14",
+        "T15",
+        "T16"
+      ],
+      "reading_prerequisite_evidence": {
+        "D123": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ],
+        "D128": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ],
+        "D154": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ],
+        "D155": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ],
+        "D575": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ],
+        "T14": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ],
+        "T15": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ],
+        "T16": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "T14": {
+      "baseline_sha256": "e66efc8afbfdf9a2b4f049a251674eb631a40f0681f09290601bddbb048b9c40",
+      "prior_prerequisites": [
+        "D309",
+        "T26"
+      ],
+      "reading_prerequisite_evidence": {
+        "D309": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ],
+        "T26": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "recorded"
+    },
+    "T15": {
+      "baseline_sha256": "23529cfbb07b5ccf60fdef3ea8be03c85065b41c3cc966442b5950ff31836b79",
+      "prior_prerequisites": [
+        "D443"
+      ],
+      "reading_prerequisite_evidence": {
+        "D128": [
+          "compiled_value_10_hop"
+        ],
+        "D443": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ],
+        "P049": [
+          "compiled_value_7_hop"
+        ],
+        "P050": [
+          "compiled_value_7_hop"
+        ],
+        "Z5.1": [
+          "compiled_value_7_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "T16": {
+      "baseline_sha256": "a833ced1c99f52903d39c44ffd5e371f29e890269b22fb45cc3566520bb2a805",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "T17": {
+      "baseline_sha256": "c3b4c09679d4ed888bb0340b018ec6d66a592387df2e634ec4496eeb2cf14270",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "T18": {
+      "baseline_sha256": "a45539ca6129087e9453ca7b3e66ed2a7ed1b25f36d01c8f0d196432b18ee2ad",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "T19": {
+      "baseline_sha256": "3a488691a307f3f760202c21b3cbc67000f5b9c023a0232c4f76971476d6880e",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "T20": {
+      "baseline_sha256": "ff247e01abb7fd0127071df859e2beb20918db6741dd38ecb23d26b526003f77",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "T21": {
+      "baseline_sha256": "1abb181b8ac14ff5c8d55d8317c04e5193bfcaf57215621ce63e8e771263bda0",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "T22": {
+      "baseline_sha256": "5e3f964c50e0f67277714cc6c472f1760b2f2951ea52444a62cbd0d7f58472b0",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "T23": {
+      "baseline_sha256": "8844dccae8b0200745e603af4e96e95e930107b5435b3373afdec5b3880c075f",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "T24": {
+      "baseline_sha256": "efe1797d4a3205992abd504dbf0ffdb1bbe8e4048fb16ad81701aa7b59e57cc3",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "recorded"
+    },
+    "T25": {
+      "baseline_sha256": "2419e7ffc5c4d6c1b52dd17880332408d57e30ba131220c160af90e93f37de2e",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {
+        "D002": [
+          "compiled_value_7_hop"
+        ],
+        "D004": [
+          "compiled_value_9_hop"
+        ],
+        "D006": [
+          "compiled_value_6_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "T26": {
+      "baseline_sha256": "4fc839ffa37b817da6b081a9122a8d05e0714743db853b5e54f2e151e6a84e51",
+      "prior_prerequisites": [
+        "D351"
+      ],
+      "reading_prerequisite_evidence": {
+        "D123": [
+          "compiled_value_6_hop"
+        ],
+        "D128": [
+          "compiled_value_12_hop"
+        ],
+        "D317": [
+          "compiled_value_8_hop"
+        ],
+        "D331": [
+          "compiled_value_10_hop"
+        ],
+        "D340": [
+          "compiled_value_14_hop"
+        ],
+        "D351": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "W01": {
+      "baseline_sha256": "d25c1e82ffd79b3941e61c0c9c516531673068398f65694264f2e2c3060b841f",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {
+        "D097": [
+          "compiled_value_14_hop"
+        ],
+        "P020": [
+          "compiled_value_5_hop"
+        ],
+        "P024": [
+          "compiled_value_5_hop"
+        ],
+        "W03": [
+          "compiled_value_4_hop"
+        ],
+        "W04": [
+          "compiled_value_4_hop"
+        ],
+        "W05": [
+          "compiled_value_5_hop"
+        ],
+        "W06": [
+          "compiled_value_5_hop"
+        ],
+        "W07": [
+          "compiled_value_5_hop"
+        ],
+        "W08": [
+          "compiled_value_5_hop"
+        ],
+        "W09": [
+          "compiled_value_5_hop"
+        ],
+        "W10": [
+          "compiled_value_5_hop"
+        ],
+        "Z1.1.07": [
+          "compiled_value_5_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "W02": {
+      "baseline_sha256": "93d0006d652cc9c798555b4d9224580c96992645fa252216516c6bb01601f7f8",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {
+        "W16": [
+          "compiled_value_1_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "W03": {
+      "baseline_sha256": "088fd5e6e509843238590f154022155c3c8fc2ebc31335dc8a1af093e6ef750d",
+      "prior_prerequisites": [
+        "D506"
+      ],
+      "reading_prerequisite_evidence": {
+        "B04": [
+          "compiled_value_3_hop"
+        ],
+        "D506": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "W04": {
+      "baseline_sha256": "f8ff5f12fa7e37ea4cc2b4e6bde1604565d86f9cf7d102e75cb305dc1603eb9a",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "W05": {
+      "baseline_sha256": "e1a58b149173c283f23730e71638df9322dc59fcc617bd05951a8ff97add98c1",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {
+        "P031": [
+          "compiled_value_7_hop"
+        ],
+        "P032": [
+          "compiled_value_3_hop"
+        ],
+        "P033": [
+          "compiled_value_3_hop"
+        ],
+        "P034": [
+          "compiled_value_2_hop"
+        ],
+        "P035": [
+          "compiled_value_4_hop"
+        ],
+        "P036": [
+          "compiled_value_3_hop"
+        ],
+        "P037": [
+          "compiled_value_3_hop"
+        ],
+        "P039": [
+          "compiled_value_4_hop"
+        ],
+        "P040": [
+          "compiled_value_5_hop"
+        ],
+        "Z2.K1": [
+          "compiled_value_7_hop"
+        ],
+        "Z2.K2": [
+          "compiled_value_3_hop"
+        ],
+        "Z2.K4": [
+          "compiled_value_2_hop",
+          "compiled_value_4_hop"
+        ],
+        "Z2.K5": [
+          "compiled_value_3_hop"
+        ],
+        "Z2.K6": [
+          "compiled_value_3_hop"
+        ],
+        "Z2.K7": [
+          "compiled_value_4_hop"
+        ],
+        "Z2.K8": [
+          "compiled_value_5_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "recorded"
+    },
+    "W06": {
+      "baseline_sha256": "c2d1039b6dd29deded77872f9fa62aff71df1fecee57d17ee1d89bbeef4be670",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {
+        "B04": [
+          "compiled_value_3_hop"
+        ],
+        "D082": [
+          "compiled_value_6_hop"
+        ],
+        "P025": [
+          "compiled_value_4_hop"
+        ],
+        "W11": [
+          "compiled_value_1_hop"
+        ],
+        "Z1.2": [
+          "compiled_value_4_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "W07": {
+      "baseline_sha256": "c8f8b10d5bcfa781331a743727f2bbd9676ef41949922aac448d251b7f63158a",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {
+        "B04": [
+          "compiled_value_3_hop"
+        ],
+        "P026": [
+          "compiled_value_3_hop"
+        ],
+        "Z1.3.08": [
+          "compiled_value_3_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "W08": {
+      "baseline_sha256": "3a56f83edb10755d8becfbc283bbce2d3074b6618c1ea81c9792f5c575957402",
+      "prior_prerequisites": [
+        "D528",
+        "D532"
+      ],
+      "reading_prerequisite_evidence": {
+        "B04": [
+          "compiled_value_5_hop"
+        ],
+        "D077": [
+          "compiled_value_4_hop"
+        ],
+        "D097": [
+          "compiled_value_8_hop"
+        ],
+        "D528": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ],
+        "D532": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ],
+        "P025": [
+          "compiled_value_3_hop"
+        ],
+        "P027": [
+          "compiled_value_1_hop"
+        ],
+        "P028": [
+          "compiled_value_1_hop"
+        ],
+        "P029": [
+          "compiled_value_3_hop"
+        ],
+        "P030": [
+          "compiled_value_3_hop"
+        ],
+        "Z1.1.01": [
+          "compiled_value_4_hop"
+        ],
+        "Z1.1.02": [
+          "compiled_value_4_hop"
+        ],
+        "Z1.1.03": [
+          "compiled_value_4_hop"
+        ],
+        "Z1.1.04": [
+          "compiled_value_4_hop"
+        ],
+        "Z1.2": [
+          "compiled_value_3_hop"
+        ],
+        "Z1.4": [
+          "compiled_value_1_hop"
+        ],
+        "Z1.5.03": [
+          "compiled_value_3_hop"
+        ],
+        "Z1.5.05": [
+          "compiled_value_3_hop"
+        ],
+        "Z1.5.06": [
+          "compiled_value_3_hop"
+        ],
+        "Z1.5.07": [
+          "compiled_value_3_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "W09": {
+      "baseline_sha256": "89351553800b3ef339fcdbdc31c3d70d25e2952ef6196b5529691ccdcea1b02e",
+      "prior_prerequisites": [
+        "D108"
+      ],
+      "reading_prerequisite_evidence": {
+        "B04": [
+          "compiled_value_5_hop"
+        ],
+        "D082": [
+          "compiled_value_3_hop"
+        ],
+        "D108": [
+          "DB1 reading prerequisite",
+          "compiled_direct"
+        ],
+        "P025": [
+          "compiled_value_3_hop"
+        ],
+        "P027": [
+          "compiled_value_1_hop"
+        ],
+        "P028": [
+          "compiled_value_1_hop"
+        ],
+        "P030": [
+          "compiled_value_3_hop"
+        ],
+        "Z1.2": [
+          "compiled_value_3_hop"
+        ],
+        "Z1.4": [
+          "compiled_value_1_hop"
+        ],
+        "Z1.5.05": [
+          "compiled_value_3_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "W10": {
+      "baseline_sha256": "a9835b5799ece773877b98d218419e00b4f69626dc3935b50f5c8eb463da8f1f",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {
+        "B04": [
+          "compiled_value_5_hop"
+        ],
+        "D077": [
+          "compiled_value_4_hop"
+        ],
+        "D108": [
+          "compiled_value_1_hop"
+        ],
+        "P025": [
+          "compiled_value_3_hop"
+        ],
+        "P027": [
+          "compiled_value_1_hop"
+        ],
+        "P028": [
+          "compiled_value_1_hop"
+        ],
+        "P029": [
+          "compiled_value_3_hop"
+        ],
+        "P030": [
+          "compiled_value_3_hop"
+        ],
+        "Z1.1.01": [
+          "compiled_value_4_hop"
+        ],
+        "Z1.1.02": [
+          "compiled_value_4_hop"
+        ],
+        "Z1.1.03": [
+          "compiled_value_4_hop"
+        ],
+        "Z1.1.04": [
+          "compiled_value_4_hop"
+        ],
+        "Z1.2": [
+          "compiled_value_3_hop"
+        ],
+        "Z1.4": [
+          "compiled_value_1_hop"
+        ],
+        "Z1.5.03": [
+          "compiled_value_3_hop"
+        ],
+        "Z1.5.05": [
+          "compiled_value_3_hop"
+        ],
+        "Z1.5.06": [
+          "compiled_value_3_hop"
+        ],
+        "Z1.5.07": [
+          "compiled_value_3_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "W11": {
+      "baseline_sha256": "0091e712421bf6b1d9d63f0e5a0f4157bc84d03b9960c2312a23b2a0cce3e39f",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "W12": {
+      "baseline_sha256": "1cc8005436f8315ffc7e9fc6d2be1a97a9b1d44c4ad1d8820b837e44f0052f54",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "W13": {
+      "baseline_sha256": "c296a1e5c79011eb9d4946fb4142ef9c87e69d97f9b179ce61615f2305251d94",
+      "prior_prerequisites": [
+        "D536"
+      ],
+      "reading_prerequisite_evidence": {
+        "D536": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "recorded"
+    },
+    "W14": {
+      "baseline_sha256": "d27ade4d8dc5f0193bc6d044abb92f5efbdc59fd31ba2960ec0ece08fcf18e81",
+      "prior_prerequisites": [
+        "D551"
+      ],
+      "reading_prerequisite_evidence": {
+        "D551": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "W15": {
+      "baseline_sha256": "79f72b28ac4ad0fd7e73ab99648771ee4cadc34d1e1df10959920e3520ec2968",
+      "prior_prerequisites": [
+        "D558"
+      ],
+      "reading_prerequisite_evidence": {
+        "D558": [
+          "DB1 reading prerequisite",
+          "compiled_proof_route"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "W16": {
+      "baseline_sha256": "6e342b5b238ebd3cd311e60e82485988fe2b5624435718e0578f9c40645a8af0",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "Z1.1.01": {
+      "baseline_sha256": "b89e5e4252639033c3f68d540182e09da19057bba66ee83106ab94aeda90a0d1",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "recorded"
+    },
+    "Z1.1.02": {
+      "baseline_sha256": "4736c46332a5e9a363633aeb59fd9566df28617a5f202f3918d224be0811ff2a",
+      "prior_prerequisites": [
+        "Z1.1.01"
+      ],
+      "reading_prerequisite_evidence": {
+        "Z1.1.01": [
+          "DB1 reading prerequisite"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "recorded"
+    },
+    "Z1.1.03": {
+      "baseline_sha256": "454805caf1f0dff6959141163646511183aa78ed6cce24dc516118641334df0c",
+      "prior_prerequisites": [
+        "Z1.1.02"
+      ],
+      "reading_prerequisite_evidence": {
+        "B04": [
+          "compiled_value_3_hop"
+        ],
+        "Z1.1.02": [
+          "DB1 reading prerequisite"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "recorded"
+    },
+    "Z1.1.04": {
+      "baseline_sha256": "d266e87c1dba93661719e2145da0c6cb04b4f214dffff039fb84d7da08bf76bd",
+      "prior_prerequisites": [
+        "Z1.1.01",
+        "Z1.1.02",
+        "Z1.1.03"
+      ],
+      "reading_prerequisite_evidence": {
+        "Z1.1.01": [
+          "DB1 reading prerequisite"
+        ],
+        "Z1.1.02": [
+          "DB1 reading prerequisite"
+        ],
+        "Z1.1.03": [
+          "DB1 reading prerequisite"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "Z1.1.05": {
+      "baseline_sha256": "4bebe76adf7b6427874d6860b6e834f4c52876a63263ebf76556f128042583f1",
+      "prior_prerequisites": [
+        "Z1.1.04"
+      ],
+      "reading_prerequisite_evidence": {
+        "B04": [
+          "compiled_value_5_hop"
+        ],
+        "Z1.1.04": [
+          "DB1 reading prerequisite"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "recorded"
+    },
+    "Z1.1.06": {
+      "baseline_sha256": "533654d0060e0cfdb8926af6b9dc001bbc354eb3fa013026d2b7233598f9eb24",
+      "prior_prerequisites": [
+        "Z1.1.05"
+      ],
+      "reading_prerequisite_evidence": {
+        "B04": [
+          "compiled_value_4_hop"
+        ],
+        "Z1.1.05": [
+          "DB1 reading prerequisite"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "recorded"
+    },
+    "Z1.1.07": {
+      "baseline_sha256": "b115702b0025d9e896c62431b8f36f4cfd206d33666e3fa4984105770ecdb375",
+      "prior_prerequisites": [
+        "Z1.1.05",
+        "Z1.1.06"
+      ],
+      "reading_prerequisite_evidence": {
+        "B04": [
+          "compiled_value_6_hop"
+        ],
+        "D077": [
+          "compiled_value_3_hop"
+        ],
+        "Z1.1.01": [
+          "compiled_value_3_hop"
+        ],
+        "Z1.1.02": [
+          "compiled_value_3_hop"
+        ],
+        "Z1.1.03": [
+          "compiled_value_3_hop"
+        ],
+        "Z1.1.04": [
+          "compiled_value_3_hop"
+        ],
+        "Z1.1.05": [
+          "DB1 reading prerequisite",
+          "compiled_value_2_hop"
+        ],
+        "Z1.1.06": [
+          "DB1 reading prerequisite",
+          "compiled_value_2_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "recorded"
+    },
+    "Z1.2": {
+      "baseline_sha256": "1f4ac35f3bc4615a3df20ac3aa2908ec4a01ab01431357df5b34077b5e7d6876",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "recorded"
+    },
+    "Z1.3.01": {
+      "baseline_sha256": "868dbff0d0bc87bc15fce73dbfc58fddb81f6b26d23ab2801cae2b5deefad3f8",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "related indexed branches only",
+      "question_state": "recorded"
+    },
+    "Z1.3.02": {
+      "baseline_sha256": "fd44bfbc702d1e32880ad51a4c9e47f32d0ca5e0c2ba461a3b41a6ba9e7e449b",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "related indexed branches only",
+      "question_state": "recorded"
+    },
+    "Z1.3.03": {
+      "baseline_sha256": "4d38fd98ad0fe886033617ecfe05d921cbc89e2b9ff8e093cd926bf0813265f3",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "recorded"
+    },
+    "Z1.3.04": {
+      "baseline_sha256": "c24a1f3bd317d588dfe47b1c8c379a3af8aced85647d5f34d4aeb16ff5bae559",
+      "prior_prerequisites": [
+        "Z1.3.01",
+        "Z1.3.02",
+        "Z1.3.03"
+      ],
+      "reading_prerequisite_evidence": {
+        "Z1.3.01": [
+          "DB1 reading prerequisite"
+        ],
+        "Z1.3.02": [
+          "DB1 reading prerequisite"
+        ],
+        "Z1.3.03": [
+          "DB1 reading prerequisite"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "recorded"
+    },
+    "Z1.3.05": {
+      "baseline_sha256": "1d131f8ba3fb78c7b6e995820d2f866ca3addd5b22b9ba2d64b0f0ae25ea6d70",
+      "prior_prerequisites": [
+        "Z1.3.04"
+      ],
+      "reading_prerequisite_evidence": {
+        "Z1.3.04": [
+          "DB1 reading prerequisite"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "recorded"
+    },
+    "Z1.3.06": {
+      "baseline_sha256": "6e539bd692b4eebcd8a605a526cba019af3de97bba25b1be04a7ec9a1b9eefb1",
+      "prior_prerequisites": [
+        "Z1.3.04",
+        "Z1.3.05"
+      ],
+      "reading_prerequisite_evidence": {
+        "Z1.3.04": [
+          "DB1 reading prerequisite"
+        ],
+        "Z1.3.05": [
+          "DB1 reading prerequisite"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "Z1.3.07": {
+      "baseline_sha256": "cf1ca97af2a4a9d772234c8867120cddc011e181d40e703d4657c8bbdbe3d7ad",
+      "prior_prerequisites": [
+        "Z1.3.06",
+        "Z1.3.04",
+        "Z1.3.05"
+      ],
+      "reading_prerequisite_evidence": {
+        "Z1.3.04": [
+          "DB1 reading prerequisite"
+        ],
+        "Z1.3.05": [
+          "DB1 reading prerequisite"
+        ],
+        "Z1.3.06": [
+          "DB1 reading prerequisite",
+          "compiled_value_1_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "Z1.3.08": {
+      "baseline_sha256": "cb6ca4d2c1dffed77c941da538f03e8b3405a062c0109fa1155cb34ea8768bfa",
+      "prior_prerequisites": [
+        "Z1.3.04",
+        "Z1.3.05",
+        "Z1.3.07"
+      ],
+      "reading_prerequisite_evidence": {
+        "Z1.3.01": [
+          "compiled_value_1_hop"
+        ],
+        "Z1.3.02": [
+          "compiled_value_1_hop"
+        ],
+        "Z1.3.03": [
+          "compiled_value_1_hop"
+        ],
+        "Z1.3.04": [
+          "DB1 reading prerequisite",
+          "compiled_value_1_hop"
+        ],
+        "Z1.3.05": [
+          "DB1 reading prerequisite",
+          "compiled_value_1_hop"
+        ],
+        "Z1.3.07": [
+          "DB1 reading prerequisite",
+          "compiled_value_1_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "recorded"
+    },
+    "Z1.4": {
+      "baseline_sha256": "c242ac76994392ef97c958f6f051eaf5ff0dff111272988757f6f6c41b18789f",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "Z1.5.01": {
+      "baseline_sha256": "e59d2c7b40e10a86e0d05bcca0330026934bc59c53c1fb0c4cb128751dad6ed4",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "Z1.5.02": {
+      "baseline_sha256": "19ed694c18304f5d7751b61da90092b3f9451bf62c80fe89e565d214b238b8ba",
+      "prior_prerequisites": [
+        "Z1.5.01"
+      ],
+      "reading_prerequisite_evidence": {
+        "Z1.5.01": [
+          "DB1 reading prerequisite",
+          "compiled_value_1_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "Z1.5.03": {
+      "baseline_sha256": "dccb39cdad78f17edf7eb5e4da4396b878dbe9083e675af1a9203a16cc86513c",
+      "prior_prerequisites": [
+        "Z1.5.02"
+      ],
+      "reading_prerequisite_evidence": {
+        "Z1.5.02": [
+          "DB1 reading prerequisite",
+          "compiled_value_1_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "recorded"
+    },
+    "Z1.5.04": {
+      "baseline_sha256": "9b0b7a4fab063986c3ee2a902fb5af74e3db42db9db09c8ada058e8a71ff5a67",
+      "prior_prerequisites": [
+        "Z1.5.02"
+      ],
+      "reading_prerequisite_evidence": {
+        "Z1.5.01": [
+          "compiled_value_2_hop"
+        ],
+        "Z1.5.02": [
+          "DB1 reading prerequisite"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "recorded"
+    },
+    "Z1.5.05": {
+      "baseline_sha256": "6b3d316d22e1f8a4fa90ddb4d391ad4df42d44250825afccc90c6a206425caf7",
+      "prior_prerequisites": [
+        "Z1.5.04"
+      ],
+      "reading_prerequisite_evidence": {
+        "Z1.5.04": [
+          "DB1 reading prerequisite",
+          "compiled_value_1_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "recorded"
+    },
+    "Z1.5.06": {
+      "baseline_sha256": "abf798e462d8535eb74f1d14b2f5118674ecc094559ec004d4d237989023d246",
+      "prior_prerequisites": [
+        "Z1.5.05"
+      ],
+      "reading_prerequisite_evidence": {
+        "Z1.5.05": [
+          "DB1 reading prerequisite"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "Z1.5.07": {
+      "baseline_sha256": "4c982284f0cd77583d7e000f7fce4e750b9f2145947d279158a1c1a5a52b03d2",
+      "prior_prerequisites": [
+        "Z1.5.03"
+      ],
+      "reading_prerequisite_evidence": {
+        "Z1.5.03": [
+          "DB1 reading prerequisite"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "Z2.K1": {
+      "baseline_sha256": "e86273355c785130f13c2716f15e720cc783836a6bd2612fddb2acb246ed8b31",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "Z2.K2": {
+      "baseline_sha256": "c982b2c205c0fffbace3224012fd91decd3958ee46bcbdb011556258a41ff7d0",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "Z2.K4": {
+      "baseline_sha256": "4ce116edfcdf7302fef415400479616c9d387fe594032a34f66ee566371a3127",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {
+        "P038": [
+          "compiled_value_1_hop"
+        ],
+        "Z2.K7": [
+          "compiled_value_1_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "Z2.K5": {
+      "baseline_sha256": "94e21407c274e7d29ad5950805dcfc20b700d43d74cebe9f305d6a741dfd81d4",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "Z2.K6": {
+      "baseline_sha256": "c793ee924846abe677c0a8a636940c0dda9c0519dcdbb23bbceed6b97f4eecd5",
+      "prior_prerequisites": [
+        "Z2.K1",
+        "Z2.K5"
+      ],
+      "reading_prerequisite_evidence": {
+        "Z2.K1": [
+          "DB1 reading prerequisite"
+        ],
+        "Z2.K5": [
+          "DB1 reading prerequisite"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "Z2.K7": {
+      "baseline_sha256": "9c1cf2e6298091eabb31f70883877fce239ff515e755d6199a01c7b54d7f956d",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {
+        "P038": [
+          "compiled_value_1_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "Z2.K8": {
+      "baseline_sha256": "b99d840ab9e9e2f69b192448c901fdb86dbcc6eac3864ba26ce9d603aaac4328",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "Z3.1": {
+      "baseline_sha256": "7d70f29d9b2b57269a3aad8d4a4691fd53528ca54dff58d86ffdee0cf53ed27d",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {
+        "P042": [
+          "compiled_value_3_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "Z3.2": {
+      "baseline_sha256": "2a907c6c319aa11c757bae905aab0be2fc9df2c021605f10bc0b7ddf98dea195",
+      "prior_prerequisites": [
+        "Z3.1"
+      ],
+      "reading_prerequisite_evidence": {
+        "P041": [
+          "compiled_value_3_hop"
+        ],
+        "P043": [
+          "compiled_value_1_hop"
+        ],
+        "Z3.1": [
+          "DB1 reading prerequisite",
+          "compiled_value_3_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "Z4.1": {
+      "baseline_sha256": "aa5d9e29e1f13097ff84d996ceabb3302afb0565fadc5791319a845856837748",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "Z4.2.02": {
+      "baseline_sha256": "2b53c03af69cafc0c7a3dff92b1b22b86a4dcedca12fe21fb64fb931398cbc14",
+      "prior_prerequisites": [
+        "Z42-SITES"
+      ],
+      "reading_prerequisite_evidence": {
+        "P090": [
+          "compiled_value_4_hop"
+        ],
+        "Z42-SITES": [
+          "DB1 reading prerequisite"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "recorded"
+    },
+    "Z4.2.04": {
+      "baseline_sha256": "b64ec3c2bd3bb71460b34665c57e8a22e281fc1df46627e9ed5319ab3b124c53",
+      "prior_prerequisites": [
+        "Z42-SITES"
+      ],
+      "reading_prerequisite_evidence": {
+        "Z42-SITES": [
+          "DB1 reading prerequisite"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "Z4.2.13": {
+      "baseline_sha256": "6d6282045d3f80477ae9fbd29fcc82fe78c0d75673018ad9298d4cdce69a6b72",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "recorded"
+    },
+    "Z4.3": {
+      "baseline_sha256": "c7986b856aaafee88cff7572819a63bffa1f136a71fcdfe43d301742155b0bd1",
+      "prior_prerequisites": [
+        "Z4.1",
+        "Z42-KERNEL"
+      ],
+      "reading_prerequisite_evidence": {
+        "Z4.1": [
+          "DB1 reading prerequisite"
+        ],
+        "Z42-KERNEL": [
+          "DB1 reading prerequisite"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "recorded"
+    },
+    "Z4.4": {
+      "baseline_sha256": "025001b198ac2f7cd1de18419719e3e4bb4c8215adffeb34f9dd0e5714956d65",
+      "prior_prerequisites": [
+        "Z42-SITES"
+      ],
+      "reading_prerequisite_evidence": {
+        "P096": [
+          "compiled_value_8_hop"
+        ],
+        "Z42-SITES": [
+          "DB1 reading prerequisite"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "Z42-FRAMES": {
+      "baseline_sha256": "c5430dfe9c7a9af8b2b8ba3ff647f6021bed7a23d716d7cc58cb33922a3ff8c9",
+      "prior_prerequisites": [
+        "Z4.2.02",
+        "Z4.2.04"
+      ],
+      "reading_prerequisite_evidence": {
+        "Z4.2.02": [
+          "DB1 reading prerequisite"
+        ],
+        "Z4.2.04": [
+          "DB1 reading prerequisite",
+          "compiled_value_2_hop"
+        ],
+        "Z42-SITES": [
+          "compiled_value_1_hop",
+          "compiled_value_2_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    },
+    "Z42-KERNEL": {
+      "baseline_sha256": "9cc3d2cf0b3230eeeac9e159189a93eb2aada23bdbe5fa7ad966d3fe9504ae26",
+      "prior_prerequisites": [
+        "Z4.2.02",
+        "Z4.2.04",
+        "Z4.2.13",
+        "Z42-FRAMES"
+      ],
+      "reading_prerequisite_evidence": {
+        "Z4.2.02": [
+          "DB1 reading prerequisite",
+          "compiled_value_2_hop"
+        ],
+        "Z4.2.04": [
+          "DB1 reading prerequisite"
+        ],
+        "Z4.2.13": [
+          "DB1 reading prerequisite",
+          "compiled_value_12_hop",
+          "compiled_value_1_hop"
+        ],
+        "Z42-FRAMES": [
+          "DB1 reading prerequisite"
+        ],
+        "Z42-SITES": [
+          "compiled_value_1_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "recorded"
+    },
+    "Z42-SITES": {
+      "baseline_sha256": "386c234606793a1e0d82cc00875cc8b757ec963f4675f5439aa5621330ef3e75",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {},
+      "reading_scope": "no distinct indexed supplier found",
+      "question_state": "none-recorded"
+    },
+    "Z5.1": {
+      "baseline_sha256": "89885723f61aa96789696ed0833a99a7510de2c61c77548b421fdd6c835985aa",
+      "prior_prerequisites": [],
+      "reading_prerequisite_evidence": {
+        "P050": [
+          "compiled_value_1_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "recorded"
+    },
+    "Z5.2": {
+      "baseline_sha256": "5d03bf3ca67b1de110e1b4c497ed014eb12e93e7f197ea3e360528efc0a04c66",
+      "prior_prerequisites": [
+        "Z5.1"
+      ],
+      "reading_prerequisite_evidence": {
+        "P050": [
+          "compiled_value_1_hop"
+        ],
+        "Z5.1": [
+          "DB1 reading prerequisite",
+          "compiled_value_1_hop"
+        ]
+      },
+      "reading_scope": "selected prerequisite",
+      "question_state": "none-recorded"
+    }
+  }
+}

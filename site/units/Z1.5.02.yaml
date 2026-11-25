@@ -1,0 +1,113 @@
+{
+  "id": "Z1.5.02",
+  "title": "Counting automorphic eigensystems",
+  "track": {
+    "primary": "analytic",
+    "secondary": [
+      "galois"
+    ]
+  },
+  "statement": "Fix a CM field $K$ and $n\\ge2$. Under the cohomological contribution and injection assumptions $\\mathrm{cohC}$ and $\\mathrm{borelC}$ in the supplied record, every finite pairwise nonisomorphic family of the prescribed weight and principal level has size at most $c[M(H+1)]^A$, with $c,A$ fixed before $m,H,M$.",
+  "assumptions": [
+    "source:blueprint_v13"
+  ],
+  "hypothesis_details": [
+    "Fix the CM field and a rank at least two.",
+    "The automorphic input record supplies cohC and borelC for these data."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.Af.card_k_of_printed_results",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TCardK.lean",
+      "line0": 18,
+      "line1": 36,
+      "sha256": "0421efbf0f64950e19e5d50018065ad21ebdc171fe98df0eefcd21fde97a78e3",
+      "dominated": 32,
+      "graph": "allChi",
+      "role": "statement"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/blueprint/Z1.5.02.tex",
+      "section": "r5:small:Z1.5.02, r6:Z1.5.02, r7:review:Z1.5.02",
+      "pages": []
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r5:small:Z1.5.02",
+      "pages": [
+        358,
+        358
+      ],
+      "printed_page": 333,
+      "scope": "First page of this named destination."
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r6:Z1.5.02",
+      "pages": [
+        367,
+        367
+      ],
+      "printed_page": 342,
+      "scope": "First page of this named destination."
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r7:review:Z1.5.02",
+      "pages": [
+        388,
+        388
+      ],
+      "printed_page": 363,
+      "scope": "First page of this named destination."
+    }
+  ],
+  "status": "Full",
+  "grade": "L1",
+  "reviews": [
+    "reviews/R6_review.md"
+  ],
+  "prerequisites": [
+    "Z1.5.01"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "blueprint_members": [
+    "Z1.5.02"
+  ],
+  "representative": "UpperTheory.V.Af.card_k_of_printed_results",
+  "statement_declarations": [
+    "UpperTheory.V.Af.card_k_of_printed_results"
+  ],
+  "grade_scope": "Named statement declarations with the hypotheses above. Chart supplier records have their own review scopes.",
+  "confirmation_basis": "Minimum across the statement declarations, using registry rows for the blueprint assignments listed here. Reviews of other expositions of a shared declaration are included as context.",
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "slug": "counting-automorphic-eigensystems",
+  "aliases": [
+    "card_k_of_printed_results",
+    "Z1.5.02 Counting automorphic eigensystems"
+  ],
+  "background": [
+    "Cohomological automorphic representations",
+    "Borel's injection"
+  ],
+  "hypothesis_source": {
+    "document": "blueprint_v13",
+    "section": "r5:small:Z1.5.02",
+    "pages": [
+      358,
+      358
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "Z1.5.01": "graph"
+  },
+  "summary": "With the cohomological contribution and injection assumptions, the size of any family of inequivalent automorphic representations at the prescribed level and weight is polynomially bounded. Its constants depend on the CM field and rank before level and weight are chosen."
+}

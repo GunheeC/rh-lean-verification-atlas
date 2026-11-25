@@ -1,0 +1,208 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "T17",
+  "edition_sha256": "fdebc671c3ef22fc215f51d0724e4b2b609551aca5605e840550572b9dd6c14a",
+  "note_sha256": "764fe025ac91cd9c3e74bb9148aa7cee9b0f5ae2e0cd0fa3495dc9381d7f3040",
+  "statement_sha256": "8b13511ec6b016ff112e1157e3546d46267a5c282c5af54c52b8a5d9745de116",
+  "sources": [
+    {
+      "path": "notes/units/T17_round3.md",
+      "sha256": "764fe025ac91cd9c3e74bb9148aa7cee9b0f5ae2e0cd0fa3495dc9381d7f3040"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Positive generic degree in positive relative dimension supplies the nef-and-big bound.",
+      "kind": "case-split",
+      "uses": [
+        "input: bigness comparison"
+      ],
+      "lean": [
+        {
+          "name": "GroundTheory.Heights₂.Heights.HilbertSamuel.ArithmeticVolumeBig.proof",
+          "file": "GroundTheory/HeightsAndTheta/Heights/HilbertSamuel/CharZeroOfIsHorizontal.lean",
+          "line0": 23,
+          "line1": 28
+        }
+      ],
+      "source": "notes/units/T17_round3.md",
+      "anchor": "For $D\\ge1$, split according to the sign of the generic degree of the multidegree of $A$. If it is positive, the data form the nef-and-big tuple ",
+      "source_lines": [
+        19,
+        19
+      ],
+      "claim_sha256": "c01bd1f342277d34d956f13c30e0b8717874914efda3128ccffad27e6786fa83",
+      "passage_sha256": "25f04018d3c4753778f91f12734c55a5d51c508712f50bd768f5f6a9f1d330c1",
+      "sha256": "81c5c88efe0408a0d436f1cae21ca6238a28eea073ba252780c0500cf6aca4a6",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The nonpositive branch uses separated sections on a shifted line to recover the original chart-lattice inequality.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: nonpositive-degree comparison"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.Pf1.HilbertSamuelMoriwaki.hsChain",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/MoriwakiBigness/MoriwakiBigTheorem/HSChain.lean",
+          "line0": 258,
+          "line1": 274
+        }
+      ],
+      "source": "notes/units/T17_round3.md",
+      "anchor": "If the degree fails to be positive, the remaining comparison accepts the weak inequality “generic degree at most zero.” This alternative matters:",
+      "source_lines": [
+        21,
+        21
+      ],
+      "claim_sha256": "0313a1c3d41d32f39e13aab1635e4a307545b62263a4d0209514a2fbc2ced338",
+      "passage_sha256": "26e947898abf8331069ce298e33c5cc537a15c4730fc502e7ad5bfbe1de92d14",
+      "sha256": "29f40d9e0ba72c7babc5c8d9066922a0bec4616b9a1bf824fb27162c0298d734",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "In relative dimension zero the lower count is at least k times the top intersection minus a constant.",
+      "kind": "inequality",
+      "uses": [
+        "input: curve count"
+      ],
+      "lean": [
+        {
+          "name": "GroundTheory.Heights₂.Heights.Targets.CurveCountLower.Statement",
+          "file": "GroundTheory/HeightsAndTheta/Heights/OrbitLimits/StatementsCurveCountLower.lean",
+          "line0": 9,
+          "line1": 16
+        }
+      ],
+      "source": "notes/units/T17_round3.md",
+      "anchor": "For $D=0$ set $c_k$ equal to the logarithmic small-section count in $L_k$. The curve counting result gives a constant $C$ with $kT-C\\le c_k$ for ",
+      "source_lines": [
+        25,
+        25
+      ],
+      "claim_sha256": "eaee6c702741622d159b0e824f5c99c85d92ffadd1239e5506d265b47a216e39",
+      "passage_sha256": "558fba6565b83b41abff493f82ce02eba20e1d246ab3e7a58ab6d482a32b025e",
+      "sha256": "6cd9ad22e592c9af3984a1c099bf9ae26a8cfffeefc0a0ea0dd9c9cd9d0630ab",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "Dividing the curve estimate by k and taking the limsup eliminates the additive constant.",
+      "kind": "computation",
+      "uses": [
+        "S3"
+      ],
+      "lean": [
+        {
+          "name": "GroundTheory.Heights₂.Heights.Targets.MoriwakiBigCurve.proof",
+          "file": "GroundTheory/HeightsAndTheta/Heights/OrbitLimits/PMoriwakiBigCurve.lean",
+          "line0": 24,
+          "line1": 47
+        }
+      ],
+      "source": "notes/units/T17_round3.md",
+      "anchor": "The normalization in dimension zero is $k^{0+1}/(0+1)!=k$. For $k\\ge1$, $c_k/k\\le2C'$, so the sequence is bounded above on the tail in the ordina",
+      "source_lines": [
+        27,
+        27
+      ],
+      "claim_sha256": "53f8c67d72e18838e876001251b8d783bd71059e61aeba7bc5de6438e1fa6b47",
+      "passage_sha256": "e1d5f976582064b05952f32c37352e0920e559be8c18622d215d5b0dd23711f5",
+      "sha256": "3dac2af45c7678e2d9d2ef1f18bcdf14856a4e240a7640da1297a850b743d8af",
+      "ai_review": []
+    },
+    {
+      "id": "S5",
+      "status": "active",
+      "claim": "The two dimension cases supply the same top-intersection upper bound.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "S2",
+        "S4"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.Pf1.HilbertSamuelMoriwaki.moriwakiBig_outright",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/MoriwakiBigness/MoriwakiBigTheorem/Outright.lean",
+          "line0": 9,
+          "line1": 11
+        }
+      ],
+      "source": "notes/units/T17_round3.md",
+      "anchor": "The dimension split now exhausts the natural numbers. The positive-dimensional comparison in this application does not consume the separately sup",
+      "source_lines": [
+        31,
+        31
+      ],
+      "claim_sha256": "57ee27a0b3ea04c9ef73fdc858b441d56a472580270f4917565f6fc3e64a0cf3",
+      "passage_sha256": "e1c8f6a03bce5435f6a16121ae70a5f1325341c30953af0a66f1056c11e1e061",
+      "sha256": "0bd4c05df168855c73478d9a4d584d63cb43695b4f7f676adc4fceb8eea810a1",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "6991f1db119fcecb31d67a3d42812fe4e6031fce7ffe5ed3ad99f497660aa20e",
+      "sources": [
+        {
+          "path": "notes/units/T17_round3.md",
+          "sha256": "047b90c085a39c50d8307e457d82d79be71663ad914ba0cb2094154f7bb5ccff"
+        }
+      ],
+      "steps": {
+        "S1": "8ea279cc95f186b3a350810a0b661c87c187829d7ae7de7bfba633e5e7c28ee5",
+        "S2": "29f40d9e0ba72c7babc5c8d9066922a0bec4616b9a1bf824fb27162c0298d734",
+        "S3": "6cd9ad22e592c9af3984a1c099bf9ae26a8cfffeefc0a0ea0dd9c9cd9d0630ab",
+        "S4": "3ad2c841e23dd284fea8de83dae23501252371ba15eb4edf46bc6342a0c03b29",
+        "S5": "0bd4c05df168855c73478d9a4d584d63cb43695b4f7f676adc4fceb8eea810a1"
+      },
+      "step_texts": {
+        "S1": "Positive generic degree in positive relative dimension supplies the nef-and-big bound.",
+        "S2": "The nonpositive branch uses separated sections on a shifted line to recover the original chart-lattice inequality.",
+        "S3": "In relative dimension zero the lower count is at least k times the top intersection minus a constant.",
+        "S4": "Dividing the curve estimate by k and taking the limsup eliminates the additive constant.",
+        "S5": "The two dimension cases supply the same top-intersection upper bound."
+      }
+    },
+    {
+      "edition_sha256": "36248b42056bd3843ee18165b25684c97b4274974e880e8d92dc4455c8fcff5f",
+      "sources": [
+        {
+          "path": "notes/units/T17_round3.md",
+          "sha256": "047b90c085a39c50d8307e457d82d79be71663ad914ba0cb2094154f7bb5ccff"
+        }
+      ],
+      "statement_sha256": "8b13511ec6b016ff112e1157e3546d46267a5c282c5af54c52b8a5d9745de116",
+      "steps": {
+        "S1": "81c5c88efe0408a0d436f1cae21ca6238a28eea073ba252780c0500cf6aca4a6",
+        "S2": "29f40d9e0ba72c7babc5c8d9066922a0bec4616b9a1bf824fb27162c0298d734",
+        "S3": "6cd9ad22e592c9af3984a1c099bf9ae26a8cfffeefc0a0ea0dd9c9cd9d0630ab",
+        "S4": "3dac2af45c7678e2d9d2ef1f18bcdf14856a4e240a7640da1297a850b743d8af",
+        "S5": "0bd4c05df168855c73478d9a4d584d63cb43695b4f7f676adc4fceb8eea810a1"
+      },
+      "step_texts": {
+        "S1": "Positive generic degree in positive relative dimension supplies the nef-and-big bound.",
+        "S2": "The nonpositive branch uses separated sections on a shifted line to recover the original chart-lattice inequality.",
+        "S3": "In relative dimension zero the lower count is at least k times the top intersection minus a constant.",
+        "S4": "Dividing the curve estimate by k and taking the limsup eliminates the additive constant.",
+        "S5": "The two dimension cases supply the same top-intersection upper bound."
+      },
+      "step_passages": {
+        "S1": "25f04018d3c4753778f91f12734c55a5d51c508712f50bd768f5f6a9f1d330c1",
+        "S2": "26e947898abf8331069ce298e33c5cc537a15c4730fc502e7ad5bfbe1de92d14",
+        "S3": "558fba6565b83b41abff493f82ce02eba20e1d246ab3e7a58ab6d482a32b025e",
+        "S4": "e1d5f976582064b05952f32c37352e0920e559be8c18622d215d5b0dd23711f5",
+        "S5": "e1c8f6a03bce5435f6a16121ae70a5f1325341c30953af0a66f1056c11e1e061"
+      }
+    }
+  ]
+}

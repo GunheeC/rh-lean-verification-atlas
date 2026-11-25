@@ -1,0 +1,513 @@
+{
+  "source_commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "source_files_sha256": {
+    "blueprint/status.json": "1793c863105d7b5f2c3d380e8606e5efc1eaa3e2fc2a6b3e9beb03a476506e71",
+    "paper2/input_roots.tex": "7d6dbb8469d2134041de73b64f38690eb121e15a2f144757161bd646e6601d53",
+    "blueprint/ch_trust.tex": "87d3d8cce5530eae36fc35ae32fe062185182ebafd7d192b73eec05e18c6ce1e"
+  },
+  "rule": "The exact 20 old blueprint recursive_inputs, in ledger order. The 29 statement names match all sets of roots in the ledger and every P-station/hop count matches an explicit compiled value sequence in data/graph.json. The historical local completion flag requires all constituent expert entries complete at stated hypotheses.",
+  "inputs": [
+    {
+      "id": "Z1.1",
+      "title": "Markings and propagation of automorphy",
+      "root_ids": [
+        "P024"
+      ],
+      "roots": [
+        "UpperTheory.V.Z.Win.Dn.ends0_alt"
+      ],
+      "via": "P013",
+      "proof_hops": [
+        6
+      ],
+      "components": [
+        "Z1.1.01",
+        "Z1.1.02",
+        "Z1.1.03",
+        "Z1.1.04",
+        "Z1.1.05",
+        "Z1.1.06",
+        "Z1.1.07"
+      ],
+      "unit_ids": [
+        "Z1.1.01",
+        "Z1.1.02",
+        "Z1.1.03",
+        "Z1.1.04",
+        "Z1.1.05",
+        "Z1.1.06",
+        "Z1.1.07"
+      ],
+      "historical_status": "partial"
+    },
+    {
+      "id": "Z1.2",
+      "title": "Adjoint rigidity under ordinary hypotheses",
+      "root_ids": [
+        "P025"
+      ],
+      "roots": [
+        "UpperTheory.V.Th.adjointLiftingTheorem_of_locPrints_of_core"
+      ],
+      "via": "P013",
+      "proof_hops": [
+        9
+      ],
+      "components": [
+        "Z1.2"
+      ],
+      "unit_ids": [
+        "Z1.2"
+      ],
+      "historical_status": "partial"
+    },
+    {
+      "id": "Z1.3",
+      "title": "Euler systems and the local condition",
+      "root_ids": [
+        "P026"
+      ],
+      "roots": [
+        "UpperTheory.V.Z.Kato.Final.zetaUr"
+      ],
+      "via": "P013",
+      "proof_hops": [
+        9
+      ],
+      "components": [
+        "Z1.3.01",
+        "Z1.3.02",
+        "Z1.3.03",
+        "Z1.3.04",
+        "Z1.3.05",
+        "Z1.3.06",
+        "Z1.3.07",
+        "Z1.3.08"
+      ],
+      "unit_ids": [
+        "Z1.3.01",
+        "Z1.3.02",
+        "Z1.3.03",
+        "Z1.3.04",
+        "Z1.3.05",
+        "Z1.3.06",
+        "Z1.3.07",
+        "Z1.3.08"
+      ],
+      "historical_status": "partial"
+    },
+    {
+      "id": "Z1.4",
+      "title": "Graded cotangent length",
+      "root_ids": [
+        "P027",
+        "P028"
+      ],
+      "roots": [
+        "UpperTheory.V.Alg.M.main_holds",
+        "UpperTheory.V.Alg.M.mprime_holds"
+      ],
+      "via": "P013",
+      "proof_hops": [
+        7,
+        7
+      ],
+      "components": [
+        "Z1.4"
+      ],
+      "unit_ids": [
+        "Z1.4"
+      ],
+      "historical_status": "complete"
+    },
+    {
+      "id": "Z1.5",
+      "title": "Counting systems of eigenvalues",
+      "root_ids": [
+        "P029",
+        "P030"
+      ],
+      "roots": [
+        "UpperTheory.GalN.V.Win.N.countK_alt",
+        "UpperTheory.GalN.V.Win.N.countQ_alt"
+      ],
+      "via": "P013",
+      "proof_hops": [
+        9,
+        9
+      ],
+      "components": [
+        "Z1.5.01",
+        "Z1.5.02",
+        "Z1.5.03",
+        "Z1.5.04",
+        "Z1.5.05",
+        "Z1.5.06",
+        "Z1.5.07"
+      ],
+      "unit_ids": [
+        "Z1.5.01",
+        "Z1.5.02",
+        "Z1.5.03",
+        "Z1.5.04",
+        "Z1.5.05",
+        "Z1.5.06",
+        "Z1.5.07"
+      ],
+      "historical_status": "partial"
+    },
+    {
+      "id": "Z2.K1",
+      "title": "Descent of the localization kernel",
+      "root_ids": [
+        "P031"
+      ],
+      "roots": [
+        "UpperTheory.V.Tower.exists_descends"
+      ],
+      "via": "P013",
+      "proof_hops": [
+        13
+      ],
+      "components": [
+        "Z2.K1"
+      ],
+      "unit_ids": [
+        "Z2.K1"
+      ],
+      "historical_status": "complete"
+    },
+    {
+      "id": "Z2.K2",
+      "title": "Integral cycles and residue-field evaluation",
+      "root_ids": [
+        "P032",
+        "P033"
+      ],
+      "roots": [
+        "UpperTheory.V.ZK.sClassOf",
+        "UpperTheory.V.ZK.sThetaOf"
+      ],
+      "via": "P013",
+      "proof_hops": [
+        9,
+        9
+      ],
+      "components": [
+        "Z2.K2"
+      ],
+      "unit_ids": [
+        "Z2.K2"
+      ],
+      "historical_status": "complete"
+    },
+    {
+      "id": "Z2.K4",
+      "title": "Stable odd homology and torsion",
+      "root_ids": [
+        "P034",
+        "P035"
+      ],
+      "roots": [
+        "PositivityTheory.KB.bOdd_zk",
+        "UpperTheory.V.ZK.Up.torsStab"
+      ],
+      "via": "P013",
+      "proof_hops": [
+        8,
+        10
+      ],
+      "components": [
+        "Z2.K4"
+      ],
+      "unit_ids": [
+        "Z2.K4"
+      ],
+      "historical_status": "complete"
+    },
+    {
+      "id": "Z2.K5",
+      "title": "Counting equivariant characters",
+      "root_ids": [
+        "P036"
+      ],
+      "roots": [
+        "UpperTheory.V.ZK.sCount"
+      ],
+      "via": "P013",
+      "proof_hops": [
+        9
+      ],
+      "components": [
+        "Z2.K5"
+      ],
+      "unit_ids": [
+        "Z2.K5"
+      ],
+      "historical_status": "complete"
+    },
+    {
+      "id": "Z2.K6",
+      "title": "Uniform layer bounds and global kernel",
+      "root_ids": [
+        "P037"
+      ],
+      "roots": [
+        "PositivityTheory.QuaternionShaBounds.sSha"
+      ],
+      "via": "P013",
+      "proof_hops": [
+        9
+      ],
+      "components": [
+        "Z2.K6"
+      ],
+      "unit_ids": [
+        "Z2.K6"
+      ],
+      "historical_status": "complete"
+    },
+    {
+      "id": "Z2.K7",
+      "title": "Torsion in integral homology",
+      "root_ids": [
+        "P038",
+        "P039"
+      ],
+      "roots": [
+        "UpperTheory.V.KT.tors_le",
+        "UpperTheory.V.ZK.torsAll"
+      ],
+      "via": "P013",
+      "proof_hops": [
+        11,
+        10
+      ],
+      "components": [
+        "Z2.K7"
+      ],
+      "unit_ids": [
+        "Z2.K7"
+      ],
+      "historical_status": "complete"
+    },
+    {
+      "id": "Z2.K8",
+      "title": "Finite duality and lengths",
+      "root_ids": [
+        "P040"
+      ],
+      "roots": [
+        "UpperTheory.V.LDataCardLeFinrank.vFormula_of_classicalTheorems"
+      ],
+      "via": "P013",
+      "proof_hops": [
+        11
+      ],
+      "components": [
+        "Z2.K8"
+      ],
+      "unit_ids": [
+        "Z2.K8"
+      ],
+      "historical_status": "complete"
+    },
+    {
+      "id": "Z3.1",
+      "title": "Normalized matrix algebra",
+      "root_ids": [
+        "P041",
+        "P042"
+      ],
+      "roots": [
+        "Formalism.MainNotions.N.K.normalized_ring_data",
+        "Formalism.RepresentationBoundsCohomology.ringDataObjects.moduleBc"
+      ],
+      "via": "P012",
+      "proof_hops": [
+        14,
+        17
+      ],
+      "components": [
+        "Z3.1"
+      ],
+      "unit_ids": [
+        "Z3.1"
+      ],
+      "historical_status": "complete"
+    },
+    {
+      "id": "Z3.2",
+      "title": "Local conditions and a lattice index",
+      "root_ids": [
+        "P043",
+        "P044"
+      ],
+      "roots": [
+        "Formalism.MainNotions.N.K.Closed.open_inputs_at_normalized",
+        "Formalism.MainNotions.N.K.Closed.theorem_n5_from_inputs"
+      ],
+      "via": "P012",
+      "proof_hops": [
+        12,
+        11
+      ],
+      "components": [
+        "Z3.2"
+      ],
+      "unit_ids": [
+        "Z3.2"
+      ],
+      "historical_status": "complete"
+    },
+    {
+      "id": "Z4.1",
+      "title": "Normalized Hecke action on jets",
+      "root_ids": [
+        "P045"
+      ],
+      "roots": [
+        "Formalism.MainNotions.FormalGroupSystem.Pf.hecke_place_bound"
+      ],
+      "via": "P015",
+      "proof_hops": [
+        8
+      ],
+      "components": [
+        "Z4.1"
+      ],
+      "unit_ids": [
+        "Z4.1"
+      ],
+      "historical_status": "complete"
+    },
+    {
+      "id": "Z4.2",
+      "title": "Comparison and admissibility at a site",
+      "root_ids": [
+        "P046"
+      ],
+      "roots": [
+        "GlobalTheory.TwV.site_cmpLite_siteAdm"
+      ],
+      "via": "P012",
+      "proof_hops": [
+        20
+      ],
+      "components": [
+        "Z4.2.01",
+        "Z4.2.02",
+        "Z4.2.03",
+        "Z4.2.04",
+        "Z4.2.05",
+        "Z4.2.06",
+        "Z4.2.07",
+        "Z4.2.08",
+        "Z4.2.09",
+        "Z4.2.10",
+        "Z4.2.11",
+        "Z4.2.12",
+        "Z4.2.13"
+      ],
+      "unit_ids": [
+        "Z42-SITES",
+        "Z4.2.02",
+        "Z4.2.04",
+        "Z42-FRAMES",
+        "Z42-KERNEL",
+        "Z4.2.13"
+      ],
+      "historical_status": "partial"
+    },
+    {
+      "id": "Z4.3",
+      "title": "Off-level kernel valuations",
+      "root_ids": [
+        "P047"
+      ],
+      "roots": [
+        "Formalism.MainNotions.WeilJacquetShalikaLaw.Proof.first_clause_cases"
+      ],
+      "via": "P015",
+      "proof_hops": [
+        8
+      ],
+      "components": [
+        "Z4.3"
+      ],
+      "unit_ids": [
+        "Z4.3"
+      ],
+      "historical_status": "partial"
+    },
+    {
+      "id": "Z4.4",
+      "title": "Twisted periods on a chosen chain",
+      "root_ids": [
+        "P048"
+      ],
+      "roots": [
+        "GlobalTheory.PerTwClose.twistedPeriodAdmissible_of_rowInt"
+      ],
+      "via": "P012",
+      "proof_hops": [
+        10
+      ],
+      "components": [
+        "Z4.4"
+      ],
+      "unit_ids": [
+        "Z4.4"
+      ],
+      "historical_status": "complete"
+    },
+    {
+      "id": "Z5.1",
+      "title": "Gram determinants and lattice index",
+      "root_ids": [
+        "P049",
+        "P050"
+      ],
+      "roots": [
+        "Formalism.HN.height_gram_determinant",
+        "Formalism.HN.place_lattice_structure"
+      ],
+      "via": "P012",
+      "proof_hops": [
+        9,
+        9
+      ],
+      "components": [
+        "Z5.1"
+      ],
+      "unit_ids": [
+        "Z5.1"
+      ],
+      "historical_status": "complete"
+    },
+    {
+      "id": "Z5.2",
+      "title": "Height of the evaluation-dual lattice",
+      "root_ids": [
+        "P051",
+        "P052"
+      ],
+      "roots": [
+        "Formalism.DivisionValues.dual_lattice_measure",
+        "Formalism.HN.DualPolygon.ht_dual"
+      ],
+      "via": "P015",
+      "proof_hops": [
+        11,
+        12
+      ],
+      "components": [
+        "Z5.2"
+      ],
+      "unit_ids": [
+        "Z5.2"
+      ],
+      "historical_status": "complete"
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "B01",
+  "edition_sha256": "a0604fe7cf7d1efba82972ce9572f2a0c25b4ebb81c273d9ba1c07e9ee32f010",
+  "note_sha256": "20e5902ec279db6a8741673edb3bacc5b7771f1095786d794c66bfd8adfde9e8",
+  "statement_sha256": "2c24a5631e789770cedb4c09e38e4547fad7e11c20e5bd6bfb0ad1b7c5cfdf0c",
+  "sources": [
+    {
+      "path": "notes/units/B01_round4.md",
+      "sha256": "20e5902ec279db6a8741673edb3bacc5b7771f1095786d794c66bfd8adfde9e8"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The finite étale fixed-point formula supplies the geometric input for weight one.",
+      "kind": "assembly",
+      "uses": [
+        "B02"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Cb.lefschetz_fixedPoint_finite_etale_correspondence",
+          "file": "Development/AutomorphicArithmetic/Foundations/EtaleClopenDescent/LefschetzFixedPointFiniteEtaleCorrespondence.lean",
+          "line0": 255,
+          "line1": 260
+        },
+        {
+          "name": "UpperTheory.Gal.Int.galoisRepresentations_of_thetaLift",
+          "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/GaloisRepresentationsOfThetaLift.lean",
+          "line0": 6,
+          "line1": 6
+        },
+        {
+          "name": "UpperTheory.Gal.Int.Geo.weight_one_geometric_realization",
+          "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/GeometricFlagBases/WeightOneGeometricRealization.lean",
+          "line0": 7,
+          "line1": 9
+        },
+        {
+          "name": "UpperTheory.Gal.Int.Geo.geoOne_holds",
+          "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/GeometricFlagBases/WeightOneGeometricRealization.lean",
+          "line0": 11,
+          "line1": 11
+        }
+      ],
+      "source": "notes/units/B01_round4.md",
+      "anchor": "The top statement takes stable-range lifting as an",
+      "source_lines": [
+        46,
+        46
+      ],
+      "claim_sha256": "599cb709d5c7c144dfb7c4ddaaf5e03a0eff17736786c63380a2c86731c6c607",
+      "passage_sha256": "6f322a8fa0e270bb80dba1f237d342bda5f489f3d8ed5bd9552a43fccfde1ade",
+      "sha256": "5bdb0593be7f7cd5f712ae1041662ab9f35be8d1415875284104fd877fb351f6",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The finite odd-level seed, congruences and assumed stable-range lift give the global core.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S1",
+        "input: stable-range lift and finite odd congruences"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Gal.Int.recT",
+          "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/Development.lean",
+          "line0": 18,
+          "line1": 22
+        },
+        {
+          "name": "UpperTheory.Gal.Int.galoisLocalGlobal_of_geometry_lift",
+          "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/Development.lean",
+          "line0": 27,
+          "line1": 28
+        }
+      ],
+      "source": "notes/units/B01_round4.md",
+      "anchor": "From the geometric realization obtain a seed at",
+      "source_lines": [
+        50,
+        50
+      ],
+      "claim_sha256": "8160c6e6cf976e2078e79ff3404cab3e0b77f093a249c1b3a15286940b77eae4",
+      "passage_sha256": "70fc5c2b1b5b87607053dcfd18b6a0446f163f6d9b3abf67000397c42f90d5dd",
+      "sha256": "45d3128ce52fd8e41a3b3fd93afc6badb304f209b1c6a4cebe5d5d51c8db6ef3",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Spherical compatibility and the unlinked-to-Iwahori comparison produce the row, which implies the weaker Row0b comparison.",
+      "kind": "assembly",
+      "uses": [
+        "S2",
+        "B04",
+        "input: spherical compatibility and unlinked support"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Gal.Int.rest",
+          "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/Development.lean",
+          "line0": 24,
+          "line1": 25
+        },
+        {
+          "name": "UpperTheory.Gal.Int.galoisLocalGlobalStrong_of_geometry_lift",
+          "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/Development.lean",
+          "line0": 30,
+          "line1": 31
+        }
+      ],
+      "source": "notes/units/B01_round4.md",
+      "anchor": "Given the core, obtain compatibility on the unlinked",
+      "source_lines": [
+        54,
+        54
+      ],
+      "claim_sha256": "88b7f0b57ec478f42aac54b158a5737b8a06c19ec93cd40f144f555912a22d02",
+      "passage_sha256": "f25806d90415736c26d7dec1e7f6eee8dd97adf85da2c5a881212710a1abfbb0",
+      "sha256": "cf23434225126657a59edb76b9ac690b17628dbcb101dcf3d790c133045990c9",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "a26c32a626d1844bb807310efe7c094f5bb005485d96c9830facd22905fbc5b5",
+      "sources": [
+        {
+          "path": "notes/units/B01_round4.md",
+          "sha256": "c44c7baf4c44997bb6b3a266568e73885b31cfa3156bbf1eec9370aa25cb1402"
+        }
+      ],
+      "steps": {
+        "S1": "d660d7bf5d2cb5b61f6748c7dacc3a1703edcdd6cb477b084839b52b4089c980",
+        "S2": "a3ddafeb3832d754fbf7cb71873050588a7a236038274197b3acdfb59d294ab7",
+        "S3": "f7a56be6e5bf5380f5bbb113797e56eb4be072e7c8d15837fa1fff2874f4eeb5"
+      },
+      "step_texts": {
+        "S1": "The finite étale fixed-point formula supplies the geometric input for weight one.",
+        "S2": "The finite odd-level seed, congruences and assumed stable-range lift give the global core.",
+        "S3": "Spherical compatibility and the unlinked-to-Iwahori comparison yield the local/global row used in the strong row conversion."
+      }
+    },
+    {
+      "edition_sha256": "08794f593125ec7fb9eaabf0d6b89a9f3f4736ae028854100d89e1198cb73d8b",
+      "sources": [
+        {
+          "path": "notes/units/B01_round4.md",
+          "sha256": "c44c7baf4c44997bb6b3a266568e73885b31cfa3156bbf1eec9370aa25cb1402"
+        }
+      ],
+      "statement_sha256": "a4c40f4adc5d0bb45d2277186a520f893abc28e75f04910a83c0c9c1bac2ed9b",
+      "steps": {
+        "S1": "67afef9af0026d88a6cc63d79ad560c48a0f4c575628b340882eeea2d4663832",
+        "S2": "45d3128ce52fd8e41a3b3fd93afc6badb304f209b1c6a4cebe5d5d51c8db6ef3",
+        "S3": "6702db1e377c1e048dcabaa9ea52f90acff0707578ebce91a9f71c140a3ead18"
+      },
+      "step_texts": {
+        "S1": "The finite étale fixed-point formula supplies the geometric input for weight one.",
+        "S2": "The finite odd-level seed, congruences and assumed stable-range lift give the global core.",
+        "S3": "Spherical compatibility and the unlinked-to-Iwahori comparison yield the local/global row used in the strong row conversion."
+      },
+      "step_passages": {
+        "S1": "6f322a8fa0e270bb80dba1f237d342bda5f489f3d8ed5bd9552a43fccfde1ade",
+        "S2": "70fc5c2b1b5b87607053dcfd18b6a0446f163f6d9b3abf67000397c42f90d5dd",
+        "S3": "a2437fe5419f0ec79f3a001f049c940b317d12b58683cd3b0eba484cf7ad0bda"
+      }
+    }
+  ]
+}

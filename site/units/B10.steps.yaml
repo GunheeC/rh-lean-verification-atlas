@@ -1,0 +1,150 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "B10",
+  "edition_sha256": "1c73b5597664b0ded8852864a2585d900aabcf5eaae888719059435cf767ad2d",
+  "note_sha256": "5507c49b8f56a85ce34d64c65b59f9ea0b5af1db4cd9d8ec1eec37c4fda33f89",
+  "statement_sha256": "9d9cbf2ba5e378b54ea39467fbe42b80ff9a9ff525886e15ec9779bbb3641525",
+  "sources": [
+    {
+      "path": "notes/units/B10_v4.md",
+      "sha256": "5507c49b8f56a85ce34d64c65b59f9ea0b5af1db4cd9d8ec1eec37c4fda33f89"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The two finite bijections turn the lattice main term into the arithmetic main sum.",
+      "kind": "computation",
+      "uses": [
+        "D569"
+      ],
+      "lean": [
+        {
+          "name": "Deduction.ch_top_main_eq",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChTop.lean",
+          "line0": 11,
+          "line1": 35
+        }
+      ],
+      "source": "notes/units/B10_v4.md",
+      "anchor": "For $v$ mapping to $u$, replace the top and place indices by the given",
+      "source_lines": [
+        37,
+        55
+      ],
+      "claim_sha256": "155aab91dc536429e3fa74d0d726b500c194d77463525caab862f7b3c4b3eef9",
+      "passage_sha256": "43bba0eb91f6d95575806f9b6400474a4c05bdf15db2c1f379fb62951f1fbbc0",
+      "sha256": "c253fab872c925f33f33240f68f577babfb9537ec5ab42636f271e0fa06873cc",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Subtracting the transported request and main sum gives the gap on the image unit.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "input: request identity"
+      ],
+      "lean": [
+        {
+          "name": "Deduction.ch_top",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChTop.lean",
+          "line0": 45,
+          "line1": 52
+        }
+      ],
+      "source": "notes/units/B10_v4.md",
+      "anchor": "The identification of the ask term",
+      "source_lines": [
+        37,
+        55
+      ],
+      "claim_sha256": "61161a2a37eb33d760c7b945d4adf1cd628f27b697b2c0fb5d724596a8f0beb6",
+      "passage_sha256": "43bba0eb91f6d95575806f9b6400474a4c05bdf15db2c1f379fb62951f1fbbc0",
+      "sha256": "55c0d0ac4c2bfe1d54d288057c5fd74afb30e3b2bdfd6e4c8a2e4372aac51780",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The size inequalities bound the transported lattice bracket by its arithmetic counterpart.",
+      "kind": "inequality",
+      "uses": [
+        "S2",
+        "P021",
+        "D567"
+      ],
+      "lean": [
+        {
+          "name": "Deduction.ch_top",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChTop.lean",
+          "line0": 53,
+          "line1": 70
+        }
+      ],
+      "source": "notes/units/B10_v4.md",
+      "anchor": "All multipliers are nonnegative",
+      "source_lines": [
+        37,
+        55
+      ],
+      "claim_sha256": "757c3122b5ed997b4f5e3f429708e9f628d1f8ee1398775f5f5b0c0d01a4efdb",
+      "passage_sha256": "43bba0eb91f6d95575806f9b6400474a4c05bdf15db2c1f379fb62951f1fbbc0",
+      "sha256": "09c37701a94e874822cdf50cefa405e0a5b9855b534c683e3cd3103c61488a65",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "Taking a preimage of each translate gives the same bound there.",
+      "kind": "assembly",
+      "uses": [
+        "S3",
+        "input: coverage"
+      ],
+      "lean": [
+        {
+          "name": "Deduction.ch_top",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChTop.lean",
+          "line0": 69,
+          "line1": 72
+        }
+      ],
+      "source": "notes/units/B10_v4.md",
+      "anchor": "Every $u\\in A_0$",
+      "source_lines": [
+        37,
+        55
+      ],
+      "claim_sha256": "87ee500b2040373f87a75d7712ebe792fa4dcd5093a0508fa778c2b2d9df4fe2",
+      "passage_sha256": "43bba0eb91f6d95575806f9b6400474a4c05bdf15db2c1f379fb62951f1fbbc0",
+      "sha256": "db8f72e69e4efbc6b2cb2d96ccc79deb44444c22861a2f4b26e42bbb03279515",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "8f5b56988e26d441251118886a2c5069b332fc9cd153bb19940851c938ee34d8",
+      "sources": [
+        {
+          "path": "notes/units/B10_v4.md",
+          "sha256": "5507c49b8f56a85ce34d64c65b59f9ea0b5af1db4cd9d8ec1eec37c4fda33f89"
+        }
+      ],
+      "steps": {
+        "S1": "c253fab872c925f33f33240f68f577babfb9537ec5ab42636f271e0fa06873cc",
+        "S2": "55c0d0ac4c2bfe1d54d288057c5fd74afb30e3b2bdfd6e4c8a2e4372aac51780",
+        "S3": "09c37701a94e874822cdf50cefa405e0a5b9855b534c683e3cd3103c61488a65",
+        "S4": "637a00b063021e987ab6ff5dd629ece9daef6d75f49d351e663d369f1ccd892c"
+      },
+      "step_texts": {
+        "S1": "The two finite bijections turn the lattice main term into the arithmetic main sum.",
+        "S2": "Subtracting the transported request and main sum gives the gap on the image unit.",
+        "S3": "The size inequalities bound the transported lattice bracket by its arithmetic counterpart.",
+        "S4": "Taking a preimage of each translate gives the same bound there."
+      }
+    }
+  ]
+}

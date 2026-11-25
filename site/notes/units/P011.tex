@@ -1,0 +1,31 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit P011. Local manuscript v3, item 6.11, heading on printed PDF p. 56.
+% UpperTheory.FinalTheorems.everyCharacter_of_row
+% paper2/upper.tex:74–91. Verbatim excerpt; SHA-256 8831e593a9899fdf35889be5e5f3aad3a92edf941a8a82596a80393210e20537.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+\noindent\nolinkurl{GlobalTheory.Fc.S0.UnitaryGroupThirdPlaceHypotheses.greenRegularCharacters} --- record field (\path{Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/BernsteinUnitaryProductIrreducible.lean:50}); not compared.\par
+\noindent\nolinkurl{GlobalTheory.GreenBridge.green_of_regular} --- in-repo constant (\path{Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/SumRangeEqRoots.lean:225--304}); not compared.\par
+% End of atlas edition annotation.
+
+\begin{formalstatement}[Nonvanishing conditional on the polarised row]\label{pn:P011}
+Assume $\mathcal R$. Then $H$ holds for every character of every positive modulus, with its exception at the principal pole.
+\end{formalstatement}
+\nodestatus{P011}
+The assembly supplies P012 with the row twice, a local parameter existence theorem and the window from P013. Blueprint catalogue N001~\bploc{node:N001} locates these dependencies.
+
+\paragraph{The window predicate.} Fix a primitive datum $\psi$, $0<\varepsilon<1/52$, and $e:\mathbb R\to\mathbb N$ with $x^{2+8\varepsilon}\le2^{e(x)}\le2x^{2+8\varepsilon}$ for $x\ge1$. A pair $(q,d)$ is admissible at $B>0$ if both entries are primes, $q\equiv3\pmod8$, $d\equiv7\pmod{16}$,
+\[
+ \tfrac12B^{\varepsilon/5}<\log q\le B^{\varepsilon/5},\qquad
+ \tfrac12B^{\varepsilon/5}\log^2 B<\log d\le B^{\varepsilon/5}\log^2 B,
+\]
+$q\mid d+1$, and every odd prime $p\le B^{\varepsilon/5}$ divides $d+1$. A field of type $(\psi,j,q,d)$ admits an embedding into $\mathbb Q(\zeta_M)$ for some $M$ divisible by $2^{j+2},\operatorname{cond}\psi,q,d$ whose image is the field fixed by the units $a$ satisfying $a\equiv\pm1\pmod {2^{j+2}}$, $\psi(a)=1$ and $(\tfrac aq)=(\tfrac ad)=1$.
+
+Write $V$ for the following assertion for all $\psi,\varepsilon,e$ above. There are real $J\ge1$ and $X_0$ such that for every $X\ge X_0$ and every admissible pair at $X^{1/J}$ one can choose $Y\ge X^{1/J}$ with $Y^2\le X$. For every $x\in[Y,Y^2]$, every field $E$ of type $(\psi,e(x),q,d)$, every algebraic closure and every allowed system of local data at the rational primes, put $t=\lfloor x^{401}\rfloor$. For $1\le k<t$, the length $h_\ell(E,k)$ of the localisation kernel is finite at every prime. Here \code{shaLen} takes the integer $k$ as its argument, and the coefficient module in its $H^1$ carries the character $\chi_\ell^{-k}$ by the definition of \code{qzTw} (\nolinkurl{Formalism/GaloisCohomology/Statement.lean:67--78}). Every finite set $T$ of primes satisfies
+\[
+ \sum_{\ell\in T}\log\ell\sum_{1\le k<t}h_\ell(E,k)\le \exp(\tfrac12 x^\varepsilon).
+\]
+These are the quantifiers of \code{VWin}, \code{VWinAt}, \code{VVle}, \code{VAt}, \code{WinPair} and \code{IsChiField} (\nolinkurl{CharacterBoxes/ExistsPageN.lean:12--49}).

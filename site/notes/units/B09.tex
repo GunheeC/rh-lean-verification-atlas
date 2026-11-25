@@ -1,0 +1,53 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit B09. Local manuscript v3, item 5.9, heading on printed PDF p. 38.
+% Deduction.ch_core
+% paper2/split_bridges.tex:223–269. Verbatim excerpt; SHA-256 de615aac4dfd5340c68d23bd00458ffeb23fc0dcd95e45a48fc70019ee5c1dea.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+\begin{proposition}[Finite character conversion of a gap bound]\label{sub:B09}
+Fix $C\ge0$, $\varepsilon>0$, $|c|\le1$ and $C_E,K_o,M\in\mathbb R$.
+There is $x_1$ such that the implication below holds for every $x\ge x_1$.
+Take a finite abelian group $H$, its prescribed arithmetic host facts
+at the finite excluded set $S$, character constants $\ell(\xi)$, and
+$T_2\subset A_0\le H$, $TT\subset H$. Write $n=|H|$, $n_2=|T_2|$,
+$n_T=|TT|$, $\delta_2=n_2/n$, and $f=|\Gamma_\Phi|$.
+For $b,k>0$, $a_E\ge0$ and integers $m,N\ge0$ assume
+$m\le x^{1/2+\varepsilon/2}$, $xm\le k$, and the following conditions.
+\begin{itemize}
+\item The width parameters satisfy $\eta,\theta\ge0$, $b',X'>0$,
+$b'X'\le xb$ and $|a_t/b-x|\le1$ on $TT$.
+Each positive column weight $w_{u,j}(\rho)$ ($u\in A_0$,
+$\rho\in\Gamma_\Phi$) is in $[b,b+\eta+1]$ on the thick places
+indexed by $T_2+u$ and at most $2b'$ elsewhere. The cutoff obeys
+$a_t/w_{u,j}(\rho)\le N$.
+\item Every frequency satisfies $|G_\xi(y)|\le y\theta$ for $y\ge X'/3$;
+$2f(x+1)\theta\le1/x$, $6f(x+1)(\eta+1)\le b/x$.
+Also $a_E\le2xb$, $n_T\ge nx^{-\varepsilon/8}/2$,
+$\delta_2\ge x^{-\varepsilon}$, $m\ge x^{1/2-\varepsilon}$,
+and $k\le n^2x^{1/2-\varepsilon}$.
+\item Write $A_0^\perp$ for the frequencies trivial on the embedded $A_0$.
+The kept set $K'$ contains the trivial character, lies in $A_0^\perp$,
+and its characters take value one at the distinguished element $s_0$;
+$|A_0^\perp|\le M$. For kept characters nontrivial on the embedded $H$,
+$|\sum_{t\in TT}\xi(t)-cn_T|\le M x^{-1+\varepsilon}n_T$.
+The bounds on $|\ell(\xi)|$ are $K_o$ for kept nontrivial characters
+and $C_E\log x$ for discarded members of $A_0^\perp$.
+\end{itemize}
+Set
+\[
+ \mathrm{Br}=n_Ta_E(1+m^2/k)+
+ m\left(2nmbx^\varepsilon+
+          \frac{n_2kbx^\varepsilon}{n^2x^{-\varepsilon}}\right).
+\]
+If for every $u\in A_0$ the gap (the sum of $\mathrm{ASK}-\Re\mathrm{MAIN}$
+over $TT$ and the $m$ columns) is at most $x^{C\varepsilon}\mathrm{Br}$,
+then
+\[
+ \sum_{\xi\in K'}\mathrm{wt}_c(\xi)\Re G_\xi(x)
+ \le x^{1/2+(C+3)\varepsilon}+\sum_{\xi\in A_0^\perp\setminus K'}|G_\xi(x)|,
+\]
+where $\mathrm{wt}_c$ is $1$ on characters trivial on the embedded $H$
+and $c$ otherwise.
+\end{proposition}\subnode{B09}
+\path{DedekindLFunctions/SplitInertia.lean:26--65};
+\path{SizeWindowBrackets/SChain.lean:50--57}.

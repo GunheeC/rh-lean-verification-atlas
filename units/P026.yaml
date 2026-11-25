@@ -1,0 +1,120 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "P026",
+  "title": "An integral ordinary zeta cocycle",
+  "track": {
+    "primary": "galois",
+    "secondary": [
+      "local"
+    ]
+  },
+  "statement": "Let \\(\\ell\\) be odd, \\(e\\ge1\\), \\(A\\) a place above \\(\\ell\\), and \\(W\\)\na continuous integral two-dimensional representation of \\(G_{\\mathbb Q}\\).\nAssume the specified normal form: \\(W\\) is unramified outside \\(S\\)\ncontaining the primes over \\(\\ell\\), its determinant \\(\\delta\\) has\nsquare one and takes value \\(-1\\) on complex conjugations, and its\nrestriction to \\(\\ker\\chi\\cap\\ker\\delta\\) is irreducible. At \\(A\\),\n\\(W\\) is upper triangular,\na positive power of its first diagonal character on inertia equals the\nsame power of \\(\\chi^e\\), and that character differs from \\(\\chi\\)\nsomewhere on the decomposition group. Let \\(g\\) be a newform of weight\n\\(2e+1\\), of level prime to \\(\\ell\\), with unit \\(a_\\ell(g)\\).\nSuppose there is a character \\(\\eta\\) trivial on the subgroup fixing\n\\(\\mu_\\ell\\) pointwise such that \\(g\\) is attached (via \\(\\iota\\))\nto \\(W\\otimes\\chi^{-e}\\delta^{-1}\\eta\\), and\n\\(W(s)_{22}\\chi(s)^e\\delta(s)^{-1}\\eta(s)=1\\) on inertia at \\(A\\).\nThere exist a common coefficient ring \\(O\\) for \\(W\\), an \\(O\\)-integral\ncontinuous cocycle \\(y\\), and a finite set \\(S'\\) with the following properties.\nOn inertia away from \\(\\ell\\), \\(y\\) is locally a coboundary.\nThere is no scalar \\(x\\) with \\(y(s)_2=(W(s)_{22}-1)x\\) throughout\nthe decomposition group of \\(A\\).\nFor every \\(n\\ge1,\\ w\\notin S',\\ \\ell^n\\mid Nw-1\\), and every admitted\nsurjective character to \\(\\mathbb Z/\\ell^n\\) trivial on the subgroup\nfixing \\(\\mu_{Nw}\\) pointwise, the same \\(y\\) satisfies the tame norm relation.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Take odd $\\ell$, $e\\ge1$ and an integral rank-two representation in the specified ordinary normal form at a place over $\\ell$.",
+    "Use its ramification, determinant, kernel irreducibility and two local character conditions.",
+    "A weight-$2e+1$ newform of level prime to $\\ell$ has unit $a_\\ell$. It realizes the indicated twist by $\\eta$, with $\\eta$ trivial on the subgroup fixing $\\mu_\\ell$ and with the second diagonal character satisfying the specified inertia identity."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.Z.Kato.Final.zetaUr",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/UnramifiedZeta/ZetaUr.lean",
+      "line0": 9,
+      "line1": 12,
+      "sha256": "bde81d34b87e1ead6f724aa1fda87fc35be45b0c72261d2d54b8efc39b45c132",
+      "dominated": 126205,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/P026_round3.md",
+      "section": "P026 · One integral Euler-system cocycle with a local obstruction",
+      "pages": [
+        1,
+        3
+      ],
+      "coverage": "Round-3 written exposition, pending independent review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "7.3 (pn:P026)",
+      "pages": [
+        73,
+        73
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/P026.tex",
+      "section": "pn:P026",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [
+    "reviews/DB3_review_B.md"
+  ],
+  "prerequisites": [
+    "Z1.3.01",
+    "Z1.3.02",
+    "Z1.3.03",
+    "Z1.3.04",
+    "Z1.3.05",
+    "Z1.3.07"
+  ],
+  "size_pages": 3,
+  "open_questions": [
+    "Where is a denominator chosen that works for the integral Hecke projector at every layer?"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "P026",
+  "indexed_members": [
+    "P053",
+    "P058",
+    "P062",
+    "P063",
+    "P065",
+    "P066",
+    "P067",
+    "P068",
+    "P075",
+    "P076"
+  ],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "an-integral-ordinary-zeta-cocycle",
+  "aliases": [
+    "P026 An integral ordinary zeta cocycle"
+  ],
+  "background": [
+    "Euler systems for modular forms",
+    "Ordinary local representations",
+    "Galois cocycles"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "7.3 (pn:P026)",
+    "pages": [
+      73,
+      73
+    ]
+  },
+  "question_sources": [
+    "questions/galois.md"
+  ],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "Z1.3.01": "graph",
+    "Z1.3.02": "graph",
+    "Z1.3.03": "graph",
+    "Z1.3.04": "graph",
+    "Z1.3.05": "graph",
+    "Z1.3.07": "graph"
+  },
+  "review_status": "pending_review",
+  "summary": "For an integral ordinary representation attached to the specified newform, there is one integral cocycle with local triviality on inertia away from the prime, a nontrivial second coordinate at the chosen place, and the tame norm relations. The same cocycle must satisfy all three demands."
+}

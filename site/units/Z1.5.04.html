@@ -1,0 +1,36 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Z1.5.04 · Classifiers over an imaginary quadratic field · RH verification atlas</title><link rel="stylesheet" href="../atlas.css"><script>window.MathJax={tex:{inlineMath:[["$","$"]],displayMath:[["$$","$$"]],processEscapes:true},options:{ignoreHtmlClass:"no-math"}};</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script></head><body><header><div class="bar"><a class="brand" href="../index.html">RH verification atlas</a><nav aria-label="Atlas navigation"><a href="../index.html">Home</a> <a href="../STATUS.html">Status</a> <a href="../MAP.html">Map</a> <a href="../dashboard/index.html">Tracks</a> <a href="../lookup/search.html">Search declarations</a></nav></div></header><main><h1 id="z1504--classifiers-over-an-imaginary-quadratic-field">Z1.5.04 · Classifiers over an imaginary quadratic field</h1>
+<p class="notice">AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved</p>
+<p>Over a fixed imaginary quadratic field, the classifier allows a variable symmetric purity weight. The same polynomially bounded list at the selected good place serves the allowed systems for every odd coefficient prime different from the residue characteristic.</p>
+<p><code>classifiers-over-an-imaginary-quadratic-field</code> · <a href="../tracks/analytic/index.html">Analytic number theory</a> · <a href="../tracks/galois/index.html">Galois representations, automorphy lifting, Iwasawa theory and Euler systems</a></p>
+<p><strong>Outlined</strong> · <strong>L0</strong> Declaration pinned; no review of this unit · Record generated 2026-11-25 (no human check).</p>
+<div class="scroll"><table>
+<thead><tr><th>1 · Lean pinned</th><th>2 · Statement compared</th><th>3 · Prose</th><th>4 · Steps</th><th>5 · AI review</th><th>6 · Human</th></tr></thead>
+<tbody><tr><td>✓</td><td>–</td><td>Outlined</td><td>3</td><td>–</td><td>0 of 3 steps</td></tr>
+</tbody></table></div>
+<p><a href="Z1.5.04.check.html">Numbered proof and check records</a> · <a href="../PROGRESS.html">Progress and counting rules</a></p>
+<h2 id="statement">Statement</h2>
+<p>Assume the automorphic hypotheses and <span class="math">$\mathrm{LevelPNAlt}$</span>. For each imaginary quadratic field <span class="math">$K$</span> and <span class="math">$n\ge2$</span> there are <span class="math">$c,A$</span> such that for all strictly decreasing weights <span class="math">$m$</span> with <span class="math">$|m_i|\le H$</span> and <span class="math">$m_i+m_{\mathrm{rev}(i)}=\mathrm{wt}$</span>, levels <span class="math">$M\ge1$</span> and places <span class="math">$w\mid p$</span> with <span class="math">$p\nmid M\,\mathrm{disc}(K)$</span>, there is a single Frobenius classifier <span class="math">$D$</span> over <span class="math">$w$</span> of size at most <span class="math">$c[M(H+1)]^A$</span> for every allowed <span class="math">$\mathrm{AdmPNAlt}$</span> system at every odd coefficient prime <span class="math">$\ell\ne p$</span>.</p>
+<h2 id="assumptions">Assumptions</h2>
+<ul><li>Use the automorphic hypotheses and LevelPNAlt over the imaginary quadratic field.</li><li>The weight is symmetric and the prime avoids the level and field discriminant.</li></ul>
+<p>Sources for the assumptions · <a href="../data/editions.json">RH verification blueprint, release v13</a></p>
+<h2 id="where-to-read">Where to read</h2>
+<p>Blueprint v13 and papers v3–v5 are this atlas project’s own AI-written, unpublished drafts. They have no human review and were not written by the author of the Lean development. Blueprint v13, its separate cover, and paper v5 are distributed as assets of release v0.1.0. For v3 and v4 the atlas supplies selected excerpts and notes. <a href="../data/editions.json">Edition register</a></p>
+<ul><li><a href="../notes/blueprint/Z1.5.04.tex">Blueprint source excerpt</a> · section <code>r8:small:Z1.5.04</code></li><li><a href="../data/editions.json">RH verification blueprint, release v13</a>, section label <code>r8:small:Z1.5.04</code>, PDF p. 469 (printed p. 444)</li></ul>
+<h2 id="evidence">Evidence</h2>
+<p>The pinned declaration is recorded in the formal source. No higher-level verdict is assigned to this unit.</p>
+<h2 id="lean-declarations">Lean declarations</h2>
+<ul><li><code>UpperTheory.GalN.V.Win.N.countP_alt</code>  <br><a href="https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/FrobeniusTraceCountBoundOfCmEigensystemCount.lean#L129-L191"><code>FrobeniusTraceCountBoundOfCmEigensystemCount.lean</code></a>, lines 129–191 · 313 dominated lines · SHA-256 <code>67560dad272c</code>.</li></ul>
+<p><a href="Z1.5.04.yaml">Machine record and full declaration hashes</a> · <a href="../lookup/declarations.html">Declaration lookup</a></p>
+<h2 id="reading-prerequisites">Reading prerequisites</h2>
+<p>Background · Automorphic base change · Satake parameters.</p>
+<ul><li><a href="Z1.5.01.html">Z1.5.01 · Coefficient representations and the Weyl bound</a> · graph</li><li><a href="Z1.5.02.html">Z1.5.02 · Counting automorphic eigensystems</a> · statement-reading</li></ul>
+<p><a href="../data/round3_prerequisites.json">Evidence and definitions of reading links</a></p>
+<h2 id="open-questions">Open questions</h2>
+<ul><li>Prove the simultaneous conjugation, duality and integrality comparisons for the imaginary-quadratic classifier at the prescribed weight.</li></ul>
+<h2 id="graph-connections">Graph connections</h2>
+<p>Arrows may connect either a unit’s main declaration or an indexed member.</p>
+<p><strong>Uses</strong> · <a href="P029.html">P029</a> · <a href="W01.html">W01</a> · <a href="Z1.5.01.html">Z1.5.01</a></p>
+<p><strong>Used by</strong> · <a href="P030.html">P030</a> · <a href="Z1.5.05.html">Z1.5.05</a></p>
+<p><a href="../data/unit_graph.json">Declaration witnesses and graph scope</a></p>
+<p>Lookup aliases · <code>countP_alt</code>, <code>Z1.5.04 Classifiers over an imaginary quadratic field</code></p>
+<p>&lt;!-- Unit metadata SHA-256 b8c642661e5a1c0bb5a5651fb639d0f28bc3139ad3c3305eb476cd6ea0a6bffa --&gt;</p></main><footer><a href="../help.html">Using the local edition</a></footer></body></html>

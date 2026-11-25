@@ -1,0 +1,95 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "T22",
+  "title": "Splitting off an abelian scheme",
+  "track": {
+    "primary": "arakelov",
+    "secondary": []
+  },
+  "statement": "Let $C$ be algebraically closed with a\nnonnegative-real-valued valuation and let $R\\to C$ identify $R$ as its\nvaluation ring. Every abelian scheme $A/R$ with a relatively ample\ninvertible sheaf admits group homomorphisms $i:A\\to P$, $r:P\\to A$\nwith $r i=1_A$. The scheme $P/R$ is abelian, smooth of a specified\nrelative dimension and carries a rigidified symmetric relatively ample\ninvertible sheaf with trivial polarization kernel.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "The Lean head passes the open-literature record to `dual_abelian_scheme_of_literature`, whose body ignores it. `UpperTheory.LiteratureTheorems.zarhin_statement` (`Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:547–548`). `UpperTheory.LiteratureTheorems.dual_abelian_scheme_of_literature` (`Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:545–546`).",
+    "Use the valuation ring of an algebraically closed valued field and an abelian scheme admitting a relatively ample invertible sheaf over that ring."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.LiteratureTheorems.zarhin_statement",
+      "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+      "line0": 547,
+      "line1": 548,
+      "sha256": "45ea4fc3d1183cb8cdd7c3607892e3d8cdce98379050e1c83a16cd7b96a83bad",
+      "dominated": 3757,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/T22_round4.md",
+      "section": "T22 · Splitting off an abelian scheme",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "5.32 (sub:T22)",
+      "pages": [
+        47,
+        47
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/T22.tex",
+      "section": "sub:T22",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": 2,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "T22",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "splitting-off-an-abelian-scheme",
+  "aliases": [
+    "zarhin_statement",
+    "T22 Splitting off an abelian scheme"
+  ],
+  "background": [
+    "Abelian schemes",
+    "Valuation rings",
+    "Zarhin's trick"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "5.32 (sub:T22)",
+    "pages": [
+      47,
+      47
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "review_status": "pending_review",
+  "summary": "A polarized abelian scheme can be recovered as a direct factor of an abelian scheme equipped with stronger polarization data. The construction has to produce both the desired line bundle and explicit inclusion and retraction maps over the original valuation ring.",
+  "reader_overrides": {
+    "hypothesis_details": [
+      "The Lean head passes the open-literature record to `dual_abelian_scheme_of_literature`, whose body ignores it. `UpperTheory.LiteratureTheorems.zarhin_statement` (`Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:547–548`). `UpperTheory.LiteratureTheorems.dual_abelian_scheme_of_literature` (`Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:545–546`).",
+      "Use the valuation ring of an algebraically closed valued field and an abelian scheme admitting a relatively ample invertible sheaf over that ring."
+    ]
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "id": "Z1.3.03",
+  "title": "Equivariant Hecke projection",
+  "track": {
+    "primary": "galois",
+    "secondary": []
+  },
+  "statement": "For ordinary rank-two data at odd $\\ell$ prime to $N\\ge5$, a compatible Hecke splitting and admissible projector polynomial, construct an integral Galois- and prime-to-level Hecke-equivariant projection and scale the given finitely supported functional by an $\\ell$-power to satisfy IsLamFR2.",
+  "assumptions": [
+    "source:blueprint_v13"
+  ],
+  "hypothesis_details": [
+    "Fix rank-two ordinary data at an odd prime away from $N\\ge5$.",
+    "Use the compatible Hecke splitting and an admissible projector polynomial."
+  ],
+  "lean": [
+    {
+      "name": "GlobalTheory.T.exists_admissible_hecke_projection_nonvanishing",
+      "file": "Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsAdmissibleHeckeProjectionNonvanishingStatement.lean",
+      "line0": 13,
+      "line1": 49,
+      "sha256": "ce1101d45c868810346b0cf166875ae3e6fb2bb3182a726a0fe441d2a0760658",
+      "dominated": 1816,
+      "graph": "allChi",
+      "role": "statement"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/blueprint/Z1.3.03.tex",
+      "section": "r5:small:Z1.3.03, r6:Z1.3.03, r7:Z1.3.03",
+      "pages": []
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r5:small:Z1.3.03",
+      "pages": [
+        354,
+        354
+      ],
+      "printed_page": 329,
+      "scope": "First page of this named destination."
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r6:Z1.3.03",
+      "pages": [
+        374,
+        374
+      ],
+      "printed_page": 349,
+      "scope": "First page of this named destination."
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r7:Z1.3.03",
+      "pages": [
+        405,
+        405
+      ],
+      "printed_page": 380,
+      "scope": "First page of this named destination."
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": null,
+  "open_questions": [
+    "Construct the odd-weight cusp representative and compare its coefficients at successive precisions."
+  ],
+  "last_checked": "2026-11-24",
+  "blueprint_members": [
+    "Z1.3.03"
+  ],
+  "representative": "GlobalTheory.T.exists_admissible_hecke_projection_nonvanishing",
+  "statement_declarations": [
+    "GlobalTheory.T.exists_admissible_hecke_projection_nonvanishing"
+  ],
+  "grade_scope": "Named statement declarations with the hypotheses above. Chart supplier records have their own review scopes.",
+  "confirmation_basis": "Minimum across the statement declarations, using registry rows for the blueprint assignments listed here. Reviews of other expositions of a shared declaration are included as context.",
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "slug": "equivariant-hecke-projection",
+  "aliases": [
+    "exists_admissible_hecke_projection_nonvanishing",
+    "Z1.3.03 Equivariant Hecke projection"
+  ],
+  "background": [
+    "Hecke projectors",
+    "Integral representations",
+    "Ordinary modular forms"
+  ],
+  "hypothesis_source": {
+    "document": "blueprint_v13",
+    "section": "r5:small:Z1.3.03",
+    "pages": [
+      354,
+      354
+    ]
+  },
+  "question_sources": [
+    "data/status_ledger.json"
+  ],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "summary": "At an allowed odd prime, a compatible Hecke splitting and projector give an integral equivariant projection. Scaling the finite functional by a prime power supplies its required normalization, allowing it to be used on the chosen rank-two component."
+}

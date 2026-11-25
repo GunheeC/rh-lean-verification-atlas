@@ -1,0 +1,70 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit P034. Local manuscript v3, item 7.11, heading on printed PDF p. 79.
+% PositivityTheory.KB.bOdd_zk
+% paper2/inputs_one.tex:476–533. Verbatim excerpt; SHA-256 09a233150c7acb8f8e798d9658f9cf31965028ba23d9c66d6007467b358056c0.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+\noindent\nolinkurl{PositivityTheory.KB.bStarOdd} --- in-repo constant (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/FinalOdd.lean:8--11}); not compared.\par
+% End of atlas edition annotation.
+
+\begin{formalstatement}[Odd homology after successive block operations]\label{pn:P034}
+Let \(L\) be totally complex, \(k\ge0\) even, \(q=k+1<r_2(L)\), and
+\(n\ge2q+4\). Fix any integer \(t>0\). Starting with \(z_0(x)=x\)
+in \(H_q(G_n,\mathbb Z)\), define
+\[
+ z_{j+1}(x)=(\operatorname{diag}_t)_*z_j(x)
+                 -t^{j+2}\operatorname{stab}_*z_j(x),
+\]
+where block repetition and stabilization both land in rank \(t^{j+1}n\).
+The integral span of all \(z_k(x)\) has rank at most \(r_2(L)\).
+\end{formalstatement}\nodestatus{P034}
+\begin{outline}
+Use the comparison in Blueprint Z2.K4~\bploc{r7:review:Z2.K4}. Choose a rank \(N\) above
+\(t^kn\) at which Borel's stable real comparison represents classes
+through degree \(q\) on \(\operatorname{Res}_{L/\mathbb Q}\mathrm{SL}_N\)
+by invariant forms. The central directions are supplied by
+\(d\log\det\) at infinity: scalar units modulo torsion span the
+sum-zero real hyperplane by Dirichlet's theorem. The determinant-one
+subgroup together with a torsion-free subgroup of scalar units has
+finite index. Künneth gives the mixed products on this subgroup,
+and transfer is injective on restriction with real coefficients.
+Integration over straight simplices in the positive Hermitian cone
+computes their pairing with real group homology.
+
+An invariant alternating tensor is a combination of products of
+alternating trace words, with a place attached to each trace.
+One sees this by complexifying at the identity and contracting tensor
+indices along the cycles of permutations. A product with \(j\)
+trace factors scales by \(t^j\) under block repetition, and
+stabilization preserves its evaluation. When \(2\le j\le k+1\) its
+evaluation on \(z_k\) therefore vanishes: the step indexed \(j-2\)
+subtracts exactly the same multiple. In odd degree the one-trace
+evaluations have at most one real generator at each place. Indeed
+reversing the word conjugates its trace on Hermitian matrices; after
+alternation the real or imaginary part vanishes according to the
+sign of reversal. All one-cycle permutations give the same remaining
+trace up to sign.
+
+Stabilization from \(t^kn\) to \(N\) is an integral homology isomorphism
+in degree \(q\). The \(r_2(L)\) remaining evaluations separate the real
+span of \(z_k(x)\): a vector in their common kernel pairs trivially
+with every class by the preceding decomposition. Finally,
+extension to \(\mathbb R\) commutes with the bar differential, block
+repetition and stabilization. The rank of the original image is its
+dimension after this extension.
+\end{outline}
+
+Borel's comparison is used at an auxiliary rank. His Proposition~12.2
+computes the real ranks of the stable \(K_i\) of an order for \(i\ge2\);
+for a totally complex field these ranks are \(r_2(L)\) in odd degrees
+\(i\ge3\). The project's restriction \(k+1<r_2(L)\) belongs to its
+stable-realization assertion. Borel's rank formula has no such
+restriction and does not cover \(k=0\) (\(i=1\)); the central-unit
+calculation above handles that degree. Transfer to the specified rank
+and projection by the block recurrence are additional comparisons.
+See A.~Borel, \emph{Stable real cohomology of arithmetic groups},
+Theorems~7.5 and 11.1, \S\S9.5, 11.2--11.4, and Proposition~12.2.
+\cite{r21-borel}

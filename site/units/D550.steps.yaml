@@ -1,0 +1,95 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "D550",
+  "edition_sha256": "fbba4aee256c5c940878f6450d52c6835c66f22f775d7831c30dc38abca0cc04",
+  "note_sha256": "51d63005ae67a121eec1c6ac16dfc37ce50cfc5b767629747c6c9fc319021906",
+  "statement_sha256": "a7c7724ad18300436155e7863bacbcb4c4ca0b3b788786d5efa708dccb96748c",
+  "sources": [
+    {
+      "path": "notes/units/D550_v4.md",
+      "sha256": "51d63005ae67a121eec1c6ac16dfc37ce50cfc5b767629747c6c9fc319021906"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "When log x is at least two divided by epsilon squared, the quadratic exponential-series term makes the epsilon power of x at least log x.",
+      "kind": "inequality",
+      "uses": [
+        "standard: quadratic lower bound for the exponential series"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.LFunctionChainParameters.LErr.large_x_eventually",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/SubThreeMulLogTwoLe.lean",
+          "line0": 319,
+          "line1": 329
+        }
+      ],
+      "source": "notes/units/D550_v4.md",
+      "anchor": "Take $x_0",
+      "source_lines": [
+        28,
+        28
+      ],
+      "claim_sha256": "ed5834d814f7a9f0e8d19f0975caf804ce2fe9bd160219767d0b12fbc0f2de68",
+      "passage_sha256": "0d1f1cabf276e7881ea879fe8d4fdb26dfe4da9de4660159ba96d3f3eef9b60a",
+      "sha256": "5f2fe095ddd2b0ce38d25aed43418a04c47f186c188c92179a537549eb2ad168",
+      "ai_review": [
+        {
+          "verdict": "CONFIRMED (light check)",
+          "scope": "When log x is at least two divided by epsilon squared, the quadratic exponential-series term makes the epsilon power of x at least log x.",
+          "file": "reviews/DB3_review_A.md",
+          "lines": [
+            122,
+            122
+          ],
+          "edition_sha256": "fbba4aee256c5c940878f6450d52c6835c66f22f775d7831c30dc38abca0cc04",
+          "step_sha256": "5f2fe095ddd2b0ce38d25aed43418a04c47f186c188c92179a537549eb2ad168"
+        }
+      ]
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Including the logarithm of the maximum of one and the fixed multiplier in the threshold controls that multiplier even when it is below one.",
+      "kind": "inequality",
+      "uses": [
+        "S1",
+        "standard: monotonicity of the exponential"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.LFunctionChainParameters.LErr.large_x_eventually",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/SubThreeMulLogTwoLe.lean",
+          "line0": 319,
+          "line1": 329
+        }
+      ],
+      "source": "notes/units/D550_v4.md",
+      "anchor": "The same threshold",
+      "source_lines": [
+        32,
+        33
+      ],
+      "claim_sha256": "2fa30fc6dbb5a7a64451eb0f00bbf3a8bdee6e3598abeef7d3017b6c26f46f99",
+      "passage_sha256": "dc939a61cb1e31aa008f62b44f5ce3caefb651629864619415df429c34d9ea13",
+      "sha256": "91950d3f8f90f8e088b6cc394fe7a6e3722b6bdf3beb6c652f9a3ed403362f77",
+      "ai_review": [
+        {
+          "verdict": "CONFIRMED (light check)",
+          "scope": "Including the logarithm of the maximum of one and the fixed multiplier in the threshold controls that multiplier even when it is below one.",
+          "file": "reviews/DB3_review_A.md",
+          "lines": [
+            122,
+            122
+          ],
+          "edition_sha256": "fbba4aee256c5c940878f6450d52c6835c66f22f775d7831c30dc38abca0cc04",
+          "step_sha256": "91950d3f8f90f8e088b6cc394fe7a6e3722b6bdf3beb6c652f9a3ed403362f77"
+        }
+      ]
+    }
+  ],
+  "history": []
+}

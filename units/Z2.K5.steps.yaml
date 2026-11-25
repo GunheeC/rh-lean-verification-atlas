@@ -1,0 +1,128 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "Z2.K5",
+  "edition_sha256": "05415549aa9716b1707ab8ea5bc1dd95501ba78c288c0a35257042f9387b20f5",
+  "note_sha256": "67c79b1fb66ba5ffd68d0f7fb48d784c34d803b577f02d396b1a0471bf3cd431",
+  "statement_sha256": "2d50fe71e4d8e6e77b544a439aeac024e204b10c9be00ba57af3402dd41a9e07",
+  "sources": [
+    {
+      "path": "notes/blueprint/Z2.K5.tex",
+      "sha256": "67c79b1fb66ba5ffd68d0f7fb48d784c34d803b577f02d396b1a0471bf3cd431"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The divisor map commutes with the twisted difference, so one can form the class and unit quotients controlling the equivariant character count.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: divisor difference condition"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.ZK.sCount",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/SelmerOrderCounts.lean",
+          "line0": 16,
+          "line1": 111
+        }
+      ],
+      "source": "notes/blueprint/Z2.K5.tex",
+      "anchor": "Let $U=",
+      "source_lines": [
+        7,
+        50
+      ],
+      "claim_sha256": "e9c0e38adbaed51face811aff147294ce65bcc0ba9ff63fc21f16afe59ced7e7",
+      "passage_sha256": "ae808b3cd15dc306b5eead9177e7f2903b7bae9776b4fa19f9e0118763d4d4fd",
+      "sha256": "dffd4199edfac5b9d17e379f82f4ba3f4c6d8603b0fcbd25ee5cdc8470e5e362",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The unit factor supplies the fixed rank contribution to the order estimate through the logarithmic unit lattice.",
+      "kind": "inequality",
+      "uses": [
+        "S1",
+        "standard: logarithmic unit lattice"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.ZK.sCount",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/SelmerOrderCounts.lean",
+          "line0": 16,
+          "line1": 111
+        }
+      ],
+      "source": "notes/blueprint/Z2.K5.tex",
+      "anchor": "The unit factor supplies",
+      "source_lines": [
+        52,
+        82
+      ],
+      "claim_sha256": "ddc8f4a0c7a04f62a417faf473242c604cfc552f39e4baac56041dd3be94f02c",
+      "passage_sha256": "eb2558309c49377b3c079668339211d1416476ac7a9bf82869c7b0588cda26cb",
+      "sha256": "6c6fff9c2a18681a28d2dca00b999431f4f7a8c8d9fb8accb0df488ed2c2f802",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The prime-to-prime factor acts invertibly on the primary kernel, so its exponent and the torsion-generator bound control the loss in the finite count.",
+      "kind": "inequality",
+      "uses": [
+        "S1",
+        "input: bound on the kernel exponent and its prime torsion"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.ZK.sCount",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/SelmerOrderCounts.lean",
+          "line0": 16,
+          "line1": 111
+        }
+      ],
+      "source": "notes/blueprint/Z2.K5.tex",
+      "anchor": "On its $\\ell$-primary",
+      "source_lines": [
+        84,
+        108
+      ],
+      "claim_sha256": "075d0e086b7664ea2abf78eff6c9ac7c518020db368f0e849df3f5442b14da74",
+      "passage_sha256": "24752516fbd1ff734309b7894e3529f120ff33428cdc8830863a78ee2e90bda0",
+      "sha256": "a7c5f7faf939388863db3b8b69ceff7cb267f88c6949feecea0027ecbaa686ee",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "Taking a common threshold for each finite subset gives the equivariant character bound needed in the passage back to a localization-kernel length.",
+      "kind": "assembly",
+      "uses": [
+        "S2",
+        "S3",
+        "input: bound for each separated finite subset"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.ZK.sCount",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/SelmerOrderCounts.lean",
+          "line0": 16,
+          "line1": 111
+        }
+      ],
+      "source": "notes/blueprint/Z2.K5.tex",
+      "anchor": "Take a finite subset",
+      "source_lines": [
+        127,
+        140
+      ],
+      "claim_sha256": "e838998c1e5bc9054a0854be516678235d9aac421f156f8d8b13a91af483936f",
+      "passage_sha256": "bb3fa1e734d0fcac18b59adc2f28551aadd726bff1d932ead011ea6549638a52",
+      "sha256": "3c22e7917401d1075042e86daacd8174ed7b401cfd9d40bd3e1329601871dcb4",
+      "ai_review": []
+    }
+  ],
+  "history": []
+}

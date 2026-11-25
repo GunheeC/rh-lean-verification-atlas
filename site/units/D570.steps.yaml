@@ -1,0 +1,186 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "D570",
+  "edition_sha256": "5709424a45c3f9871faa971d74a92634f841e8e5235a107479070daa6b3a70b7",
+  "note_sha256": "23b5ad055270a8e613b4cd61cb101321ea35e5c8f3480f6755b3a480de0deb45",
+  "statement_sha256": "9297bdef95c303ca427b0b13bbb6835c2c6c097822b05e9b3d77e37b2b350162",
+  "sources": [
+    {
+      "path": "notes/units/D570_round4.md",
+      "sha256": "23b5ad055270a8e613b4cd61cb101321ea35e5c8f3480f6755b3a480de0deb45"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Only the logarithmic count varies across the inner fibre in the lower-slope correction.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: lower-slope correction"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.LFunctionChainParameters.WeightedSlopeBounds.Lo5",
+          "file": "Formalism/SizeWindowBrackets/QuotientSlopeBoundsWith.lean",
+          "line0": 15,
+          "line1": 17
+        },
+        {
+          "name": "Formalism.LFunctionChainParameters.WeightedSlopeBounds.weighted_mean_lower_bound_le",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LevelOfCongruence.lean",
+          "line0": 162,
+          "line1": 171
+        }
+      ],
+      "source": "notes/units/D570_round4.md",
+      "anchor": "Fix $u_0$ and an index $u$ in its nonempty finite set $W(u_0)$",
+      "source_lines": [
+        22,
+        22
+      ],
+      "claim_sha256": "bfe340d87eba3bf4bc86bf74808bddeedd5cd9c7fe8c2f8b30c60326e5e3d53a",
+      "passage_sha256": "53fa2bb0eb95a305167f8eaff9e051a6de889a23dc2b8f1e3b8d8e97d855e533",
+      "sha256": "798154b84f42d418e9a8bd9ce680fae5ee541a14a1955b8a64da3bf6b6a9a2a3",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Nonnegativity of the coefficient of log T gives the pointwise upper bound with the common term K7.",
+      "kind": "inequality",
+      "uses": [
+        "S1",
+        "input: absolute count upper bound"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.LFunctionChainParameters.WeightedSlopeBounds.Count5",
+          "file": "Formalism/SizeWindowBrackets/QuotientSlopeBoundsWith.lean",
+          "line0": 27,
+          "line1": 32
+        },
+        {
+          "name": "Formalism.LFunctionChainParameters.WeightedSlopeBounds.K7v5",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LevelOfCongruence.lean",
+          "line0": 29,
+          "line1": 30
+        },
+        {
+          "name": "Formalism.LFunctionChainParameters.WeightedSlopeBounds.weighted_mean_lower_bound_le",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LevelOfCongruence.lean",
+          "line0": 164,
+          "line1": 171
+        }
+      ],
+      "source": "notes/units/D570_round4.md",
+      "anchor": "The count hypothesis has a lower bound for the log count, an upper bound, and a bound on i",
+      "source_lines": [
+        26,
+        26
+      ],
+      "claim_sha256": "1011cc6b654b7f0131c57e0c1d93630b3d017e5424f7bb0d97f5edff543ed86c",
+      "passage_sha256": "e3996ded95fb0a694415a9f9a3a08b246c41f8d451125fe49fb5e4f511d9f6cb",
+      "sha256": "bb5239ee97393c07c5a3bfcb378c2794314b8401197d7e5ee4b6f64073610306",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The weighted mean of the corrections is at most the same upper bound because the weights have positive total mass.",
+      "kind": "inequality",
+      "uses": [
+        "S2",
+        "standard: positive weighted means"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.RankGapBounds.WeightedMeanData.wmean_mono",
+          "file": "Formalism/RankGapBounds/RankGapProofs/WeightedMeanData.lean",
+          "line0": 16,
+          "line1": 22
+        },
+        {
+          "name": "Formalism.RankGapBounds.WeightedMeanData.wmean_const",
+          "file": "Formalism/RankGapBounds/RankGapProofs/WeightedMeanData.lean",
+          "line0": 27,
+          "line1": 32
+        },
+        {
+          "name": "Formalism.RankGapBounds.WeightedMeanData.wmean_le_const",
+          "file": "Formalism/RankGapBounds/RankGapProofs/WeightedMeanData.lean",
+          "line0": 34,
+          "line1": 38
+        }
+      ],
+      "source": "notes/units/D570_round4.md",
+      "anchor": "At this unit each $u$ has a strictly positive weight",
+      "source_lines": [
+        30,
+        30
+      ],
+      "claim_sha256": "365a1dbd35c68a1d26443d23167aa30e7fe9bbe05c4c5e5805caa7d7175eddab",
+      "passage_sha256": "eeb192983793db91d7ca6a99bde6fdbf6b68272c7b45174baed59c515630617f",
+      "sha256": "f19072e599619fd4ed7902c60d9775df5e33bd6981b99bb2b606690e67648877",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "withdrawn",
+      "claim": "The remaining unit-dependent IO contribution needs a separate loss inequality to yield the uniform downstream bound.",
+      "kind": "assembly",
+      "uses": [
+        "S3",
+        "input: loss comparison"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.LFunctionChainParameters.WeightedSlopeBounds.each_unit_bound_statement",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LevelOfCongruence.lean",
+          "line0": 175,
+          "line1": 192
+        }
+      ],
+      "source": "notes/units/D570_round4.md",
+      "anchor": "The result still contains the unit-dependent $\\mathrm{IO}(u_0)$",
+      "source_lines": [
+        30,
+        30
+      ],
+      "claim_sha256": "963461000e75b53c9452e188d3bb4d54c2c07050eade95fc9960aa2624410705",
+      "passage_sha256": "62047a7e6208e75a1e73696f7b7cc99c673b961cfe012292273ddab611544bec",
+      "sha256": "219c260816a44049a1e6893d73ae2ac2eec4eba07cf0d0c5e8c64a67519a287d",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "d2538ce5643f4c6db45daa234b573730b2b4566195306e66d7aafe45f17d0308",
+      "sources": [
+        {
+          "path": "notes/units/D570_round4.md",
+          "sha256": "9b6fdb8ecefb8f0caa8bd18f9b95bbb1f43625096922afe384687a25cec9e31b"
+        }
+      ],
+      "statement_sha256": "9297bdef95c303ca427b0b13bbb6835c2c6c097822b05e9b3d77e37b2b350162",
+      "steps": {
+        "S1": "798154b84f42d418e9a8bd9ce680fae5ee541a14a1955b8a64da3bf6b6a9a2a3",
+        "S2": "bb5239ee97393c07c5a3bfcb378c2794314b8401197d7e5ee4b6f64073610306",
+        "S3": "f19072e599619fd4ed7902c60d9775df5e33bd6981b99bb2b606690e67648877",
+        "S4": "219c260816a44049a1e6893d73ae2ac2eec4eba07cf0d0c5e8c64a67519a287d"
+      },
+      "step_texts": {
+        "S1": "Only the logarithmic count varies across the inner fibre in the lower-slope correction.",
+        "S2": "Nonnegativity of the coefficient of log T gives the pointwise upper bound with the common term K7.",
+        "S3": "The weighted mean of the corrections is at most the same upper bound because the weights have positive total mass.",
+        "S4": "The remaining unit-dependent IO contribution needs a separate loss inequality to yield the uniform downstream bound."
+      },
+      "step_passages": {
+        "S1": "53fa2bb0eb95a305167f8eaff9e051a6de889a23dc2b8f1e3b8d8e97d855e533",
+        "S2": "e3996ded95fb0a694415a9f9a3a08b246c41f8d451125fe49fb5e4f511d9f6cb",
+        "S3": "eeb192983793db91d7ca6a99bde6fdbf6b68272c7b45174baed59c515630617f",
+        "S4": "62047a7e6208e75a1e73696f7b7cc99c673b961cfe012292273ddab611544bec"
+      }
+    }
+  ]
+}

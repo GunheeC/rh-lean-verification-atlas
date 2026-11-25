@@ -1,0 +1,91 @@
+{
+  "id": "Z2.K1",
+  "title": "Cyclotomic tower and localization kernel",
+  "track": {
+    "primary": "galois",
+    "secondary": [
+      "ktheory"
+    ]
+  },
+  "statement": "For a number field with the required roots of unity and $\\ell$ prime, a single cyclotomic generator $\\gamma$ has exact level $c$ and the base contains a primitive $\\ell^c$-th root. For every $E\\ge1$ and every layer $L_m$, its localization-kernel invariant is the cokernel length of $x_{\\rm Tw}(E,\\gamma)^{\\ell^m}-1$.",
+  "assumptions": [
+    "source:blueprint_v13"
+  ],
+  "hypothesis_details": [
+    "Fix a coefficient prime and a base number field containing the required roots of unity."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.Tower.exists_descends",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/NumberFieldTowers/ExistsDescends.lean",
+      "line0": 50,
+      "line1": 57,
+      "sha256": "b612f89d62d4eef6732fbc955e0646ad7d28151ed86ab43afce184d9040f1ab0",
+      "dominated": 53,
+      "graph": "allChi",
+      "role": "statement"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/blueprint/Z2.K1.tex",
+      "section": "lem:P-r3-k1",
+      "pages": []
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "lem:P-r3-k1",
+      "pages": [
+        182,
+        182
+      ],
+      "printed_page": 157,
+      "scope": "First page of this named destination."
+    }
+  ],
+  "status": "Full",
+  "grade": "L0",
+  "reviews": [
+    "reviews/R20_review.md"
+  ],
+  "prerequisites": [
+    "D558"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "blueprint_members": [
+    "Z2.K1"
+  ],
+  "representative": "UpperTheory.V.Tower.exists_descends",
+  "statement_declarations": [
+    "UpperTheory.V.Tower.exists_descends"
+  ],
+  "grade_scope": "Named statement declarations with the hypotheses above. Chart supplier records have their own review scopes.",
+  "confirmation_basis": "Minimum across the statement declarations, using registry rows for the blueprint assignments listed here. Reviews of other expositions of a shared declaration are included as context.",
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "slug": "cyclotomic-tower-and-localization-kernel",
+  "aliases": [
+    "Z2.K1 Cyclotomic tower and localization kernel"
+  ],
+  "background": [
+    "Cyclotomic extensions",
+    "Localization in Galois cohomology"
+  ],
+  "hypothesis_source": {
+    "document": "blueprint_v13",
+    "section": "lem:P-r3-k1",
+    "pages": [
+      182,
+      182
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "D558": "statement-reading"
+  },
+  "summary": "One cyclotomic generator of exact level describes the localization-kernel invariant as a cokernel length in every allowed layer and positive twist. The formula permits studying the varying invariants through powers of a single action."
+}

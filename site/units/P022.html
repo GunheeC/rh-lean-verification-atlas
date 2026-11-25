@@ -1,0 +1,40 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>P022 · Landau’s criterion on logarithmic windows · RH verification atlas</title><link rel="stylesheet" href="../atlas.css"><script>window.MathJax={tex:{inlineMath:[["$","$"]],displayMath:[["$$","$$"]],processEscapes:true},options:{ignoreHtmlClass:"no-math"}};</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script></head><body><header><div class="bar"><a class="brand" href="../index.html">RH verification atlas</a><nav aria-label="Atlas navigation"><a href="../index.html">Home</a> <a href="../STATUS.html">Status</a> <a href="../MAP.html">Map</a> <a href="../dashboard/index.html">Tracks</a> <a href="../lookup/search.html">Search declarations</a></nav></div></header><main><h1 id="p022--landaus-criterion-on-logarithmic-windows">P022 · Landau’s criterion on logarithmic windows</h1>
+<p class="notice">AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved</p>
+<p>A one-sided window bound for a function with the stipulated pole data forces every listed pole to lie on or to the left of the specified vertical line. This analytic implication explains why bounds on distant intervals can restrict the zeros represented by those poles.</p>
+<p><code>landau-window-criterion</code> · <a href="../tracks/analytic/index.html">Analytic number theory</a></p>
+<p><strong>Full</strong> · <strong>L2</strong> Written proof accepted in AI cross-review · Record generated 2026-11-25 (no human check).</p>
+<div class="scroll"><table>
+<thead><tr><th>1 · Lean pinned</th><th>2 · Statement compared</th><th>3 · Prose</th><th>4 · Steps</th><th>5 · AI review</th><th>6 · Human</th></tr></thead>
+<tbody><tr><td>✓</td><td>✓</td><td>Full</td><td>10</td><td>Current argument (AI)</td><td>0 of 10 steps</td></tr>
+</tbody></table></div>
+<p><a href="P022.check.html">Numbered proof and check records</a> · <a href="../PROGRESS.html">Progress and counting rules</a></p>
+<h2 id="statement">Statement</h2>
+<p>Let <span class="math">$(g,\Phi,Z)$</span> be pole data, <span class="math">$0&lt;\theta&lt;1$</span> and <span class="math">$\delta&gt;0$</span>, and assume <span class="math">$\mathrm{W}(g,\theta,\delta)$</span>. Then <span class="math">$\operatorname{Re}\rho\le\theta$</span> for every <span class="math">$\rho\in Z$</span>.</p>
+<h2 id="assumptions">Assumptions</h2>
+<ul><li>The triple <span class="math">$(g,\Phi,Z)$</span> satisfies the pole-data record, including its growth, transform, isolated-singularity and residue conditions.</li><li>Take <span class="math">$0&lt;\theta&lt;1$</span> and <span class="math">$\delta&gt;0$</span>. The logarithmic window condition <span class="math">$W(g,\theta,\delta)$</span> holds.</li></ul>
+<p>Sources for the assumptions · <a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a></p>
+<h2 id="where-to-read">Where to read</h2>
+<p>Blueprint v13 and papers v3–v5 are this atlas project’s own AI-written, unpublished drafts. They have no human review and were not written by the author of the Lean development. Blueprint v13, its separate cover, and paper v5 are distributed as assets of release v0.1.0. For v3 and v4 the atlas supplies selected excerpts and notes. <a href="../data/editions.json">Edition register</a></p>
+<ul><li><a href="../notes/analytic/index.html">Graduate reading packet · One-sided power windows and simple poles</a></li><li><a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a>, 6.23, p. 61. Statement starts on the cited page.</li><li><a href="../notes/units/P022.tex">Manuscript source excerpt</a> · section <code>pn:P022</code></li><li><a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a>, Theorem 6.23 and its proof after Lemma 6.28, pp. 61–65. Statement, analytic lemmas and conclusion in the abstract-statement subsection.</li></ul>
+<h3 id="other-expositions-and-comparisons">Other expositions and comparisons</h3>
+<ul><li><a href="https://github.com/jimjamzola/RH-Alpoge-Reconstruction/blob/aa9c86bf2a7d29b08575641fecea19a2a603e87c/manuscript/main.pdf">Adriazola, Theorem 2.4; Lemmas 2.1–2.3</a> · partial. <a href="../crosswalk/adriazola.html">Correspondence table</a>.</li></ul>
+<h3 id="declaration-name-matches">Declaration-name matches</h3>
+<ul><li><a href="../crosswalk/naskrecki.html">Naskręcki’s reading project</a> · 1 matching declaration · indices <code>oscillation</code>.</li></ul>
+<h2 id="evidence">Evidence</h2>
+<ul><li><a href="../reviews/R20_review.html">R20 review</a>, original line 54 — F: full derivation; yes. R20 local implication under its stated premises, not its prerequisite cones.</li></ul>
+<p>Review records · <a href="../reviews/R20_review.html">R20 review</a></p>
+<h2 id="lean-declarations">Lean declarations</h2>
+<ul><li><code>Deduction.landau_window</code>  <br><a href="https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindow.lean#L83-L166"><code>landauWindow.lean</code></a>, lines 83–166 · 863 dominated lines · SHA-256 <code>104676d2ea11</code>.</li></ul>
+<p><a href="P022.yaml">Machine record and full declaration hashes</a> · <a href="../lookup/declarations.html">Declaration lookup</a></p>
+<h2 id="reading-prerequisites">Reading prerequisites</h2>
+<p>Background · Laplace transforms · Isolated poles and residues · Cauchy estimates.</p>
+<p>The statement takes abstract PoleData and WindowHypU. P023 specializes its conclusion and already lists P022 as a prerequisite. Earlier atlas objects do not construct general pole data or the moving upper windows for this abstract theorem. <a href="../data/round3_prerequisites.json">Statement evidence</a></p>
+<h2 id="open-questions">Open questions</h2>
+<ul><li>Where does the contradiction use positivity of the residue at a real pole? Identify the corresponding datum in P023.</li></ul>
+<h2 id="graph-connections">Graph connections</h2>
+<p>Arrows may connect either a unit’s main declaration or an indexed member.</p>
+<p><strong>Uses</strong> · No recorded edge.</p>
+<p><strong>Used by</strong> · <a href="P023.html">P023</a></p>
+<p><a href="../data/unit_graph.json">Declaration witnesses and graph scope</a></p>
+<p>Lookup aliases · <code>Landau window theorem</code>, <code>one-sided Landau criterion</code>, <code>A one-sided theorem on logarithmic windows</code>, <code>landau_window</code>, <code>P022 Landau’s criterion on logarithmic windows</code></p>
+<p>&lt;!-- Unit metadata SHA-256 fe6256be4d968b9f0867382b6e57a86505b711656320ec0cbbc60963d43c2dea --&gt;</p></main><footer><a href="../help.html">Using the local edition</a></footer></body></html>

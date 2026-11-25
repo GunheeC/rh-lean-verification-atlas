@@ -1,0 +1,108 @@
+{
+  "id": "Z1.3.04",
+  "title": "One global system with local constraints",
+  "track": {
+    "primary": "galois",
+    "secondary": []
+  },
+  "statement": "For each ordinary normal form and its unramified modular source, the integral class theorem, the Hodge–Tate law and admissible projection yield one tuple (coefficient ring, $y$, exceptional primes, twist, test characters, layers) satisfying Sys, IwSys2, SpLink and Pin7 simultaneously.",
+  "assumptions": [
+    "Z1.3.01",
+    "Z1.3.02",
+    "Z1.3.03",
+    "source:blueprint_v13"
+  ],
+  "hypothesis_details": [
+    "Use an ordinary normal form and its unramified modular source.",
+    "Assume the integral class theorem, the Hodge–Tate law and Hecke projection for this source."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.Z.Kato.Joint.kato_global_unit_law_of_smoothed_classes",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/FrobeniusHodgeTateLaws/KatoGlobalUnitLawOfSmoothedClasses.lean",
+      "line0": 8,
+      "line1": 10,
+      "sha256": "915b0a4f68ca30e02e2beae7d1a2d2cd53aef31b6aee3d6fe7a87f275bc9acd2",
+      "dominated": 39884,
+      "graph": "allChi",
+      "role": "statement"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/blueprint/Z1.3.04.tex",
+      "section": "r6:Z1.3.04, r7:Z1.3.04",
+      "pages": []
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r6:Z1.3.04",
+      "pages": [
+        384,
+        384
+      ],
+      "printed_page": 359,
+      "scope": "First page of this named destination."
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r7:Z1.3.04",
+      "pages": [
+        406,
+        406
+      ],
+      "printed_page": 381,
+      "scope": "First page of this named destination."
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [
+    "Z1.3.01",
+    "Z1.3.02",
+    "Z1.3.03"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "Construct the initial ordinary eigenfunctional and prove Pin7 for the same tuple with common scale and lower bound."
+  ],
+  "last_checked": "2026-11-24",
+  "blueprint_members": [
+    "Z1.3.04"
+  ],
+  "representative": "UpperTheory.V.Z.Kato.Joint.kato_global_unit_law_of_smoothed_classes",
+  "statement_declarations": [
+    "UpperTheory.V.Z.Kato.Joint.kato_global_unit_law_of_smoothed_classes"
+  ],
+  "grade_scope": "Named statement declarations with the hypotheses above. Chart supplier records have their own review scopes.",
+  "confirmation_basis": "Minimum across the statement declarations, using registry rows for the blueprint assignments listed here. Reviews of other expositions of a shared declaration are included as context.",
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "slug": "one-global-system-with-local-constraints",
+  "aliases": [
+    "kato_global_unit_law_of_smoothed_classes",
+    "Z1.3.04 One global system with local constraints"
+  ],
+  "background": [
+    "Integral Galois cocycles",
+    "Hecke operators"
+  ],
+  "hypothesis_source": {
+    "document": "blueprint_v13",
+    "section": "r6:Z1.3.04",
+    "pages": [
+      384,
+      384
+    ]
+  },
+  "question_sources": [
+    "data/status_ledger.json"
+  ],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "Z1.3.01": "statement-reading",
+    "Z1.3.02": "statement-reading",
+    "Z1.3.03": "statement-reading"
+  },
+  "summary": "The class theorem, Hodge–Tate law and projection yield one integral global tuple meeting all four system and local requirements. The use of a single tuple lets the local test apply to the cocycle already constructed globally."
+}

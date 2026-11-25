@@ -1,0 +1,189 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "P037",
+  "edition_sha256": "d64d36cc557c5905a54de25fd9bbfe9068279f114d65f9042a72ea24c66d2b09",
+  "note_sha256": "6fdb2b52ca4edc9244034235b62e2096190e7513a5ec82aaba7eead66807ae83",
+  "statement_sha256": "3af0d7c8ce1437df69cca04b449c624576da9aa4ba772f3e808f0195752136f1",
+  "sources": [
+    {
+      "path": "notes/units/P037.tex",
+      "sha256": "6fdb2b52ca4edc9244034235b62e2096190e7513a5ec82aaba7eead66807ae83"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The infinite-layer restriction comparison is injective on the localization kernel.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: infinite-layer restriction comparison"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.QuaternionShaBounds.ClInj_holds",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/RingEquivalences/OrderOfOneAddPrimePowZmodPrimePow.lean",
+          "line0": 265,
+          "line1": 330
+        }
+      ],
+      "source": "notes/units/P037.tex",
+      "anchor": "Restriction to the infinite layer",
+      "source_lines": [
+        13,
+        37
+      ],
+      "claim_sha256": "551790b491001f1b5d9366f833fffb4d929a56540fcee1fa2516131abaaa32fb",
+      "passage_sha256": "51aeb710c40f50ce348d5675e2dca7fc54055a67241b72cec2ffbdcf5e0a7dd2",
+      "sha256": "5675270dfd2992ef7168b850ed035e5242a22c610fd8e200b5119a1f42f74bd3",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "One finite layer kills the cocycle image and chosen local primitives for a fixed class.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "standard: continuity into a discrete torsion module"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.QuaternionShaBounds.LayEx_holds",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/RingEquivalences/OrderOfOneAddPrimePowZmodPrimePow.lean",
+          "line0": 108,
+          "line1": 200
+        }
+      ],
+      "source": "notes/units/P037.tex",
+      "anchor": "giving its local coboundary",
+      "source_lines": [
+        13,
+        37
+      ],
+      "claim_sha256": "c22be505dc8b6472ca38cccd8f8eb8fb0ecbe12df46cbe2f5ad8eb62a19629bc",
+      "passage_sha256": "51aeb710c40f50ce348d5675e2dca7fc54055a67241b72cec2ffbdcf5e0a7dd2",
+      "sha256": "b2ab4565ca3e0a994f28c6be1b35d01b2d6ec8ed4eede8b68ec09efca03ecd0c",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The class defines a finite-level divisor character with the specified cyclotomic eigenvalue and zero values over the coefficient prime.",
+      "kind": "literature",
+      "uses": [
+        "S2",
+        "standard: unramified Artin reciprocity"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.QuaternionShaBounds.ClInj_holds",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/RingEquivalences/OrderOfOneAddPrimePowZmodPrimePow.lean",
+          "line0": 265,
+          "line1": 330
+        }
+      ],
+      "source": "notes/units/P037.tex",
+      "anchor": "By unramified Artin reciprocity",
+      "source_lines": [
+        13,
+        37
+      ],
+      "claim_sha256": "cf78469f375477a4a8078c0f5d5e05bfb1c3219eb87bee2949a078c9916946cd",
+      "passage_sha256": "51aeb710c40f50ce348d5675e2dca7fc54055a67241b72cec2ffbdcf5e0a7dd2",
+      "sha256": "a58bf4d00ea910f5b8b83569fba0e59540455c61695b7bd625ee54d201fe98c8",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "Finitely many distinct classes stay distinct at a common finite level, so every finite subset has at most the uniform cap.",
+      "kind": "inequality",
+      "uses": [
+        "S1",
+        "S2",
+        "S3",
+        "input: uniform finite-level cap"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.QuaternionShaBounds.ShaAsm_holds",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/RingEquivalences/OrderOfOneAddPrimePowZmodPrimePow.lean",
+          "line0": 454,
+          "line1": 486
+        }
+      ],
+      "source": "notes/units/P037.tex",
+      "anchor": "taking the maximum of their thresholds",
+      "source_lines": [
+        39,
+        49
+      ],
+      "claim_sha256": "30cb6a77ce535ff3c7d8f158b4c1e5afaa83b4733713734973001014a3366378",
+      "passage_sha256": "d75445c9b37bcbf98c9559cb7bb1e2bc927db67460c6915ae4833ce6c6c56034",
+      "sha256": "40e29f23963ff18148f3d4cc621c6186a799e4007abfa481d1e6922bcb059032",
+      "ai_review": []
+    },
+    {
+      "id": "S5",
+      "status": "active",
+      "claim": "For the resulting finite module the prime-power cardinality is the prime raised to its length.",
+      "kind": "computation",
+      "uses": [
+        "S4",
+        "standard: finite module length over a DVR"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.QuaternionShaBounds.sSha",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/RingEquivalences/OrderOfOneAddPrimePowZmodPrimePow.lean",
+          "line0": 490,
+          "line1": 490
+        }
+      ],
+      "source": "notes/units/P037.tex",
+      "anchor": "has order",
+      "source_lines": [
+        39,
+        49
+      ],
+      "claim_sha256": "4c144964f82e63045532855a3d0f4c4f635e685bc384b7c4df78947ed850e5db",
+      "passage_sha256": "d75445c9b37bcbf98c9559cb7bb1e2bc927db67460c6915ae4833ce6c6c56034",
+      "sha256": "d82f242e7624e97ae904085ed30bd5929446c86172483211d19f43a36d2c4c17",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "d0289a23a1987c1d197ded97bdbcf5c6d28c9d7a123e4baafbdd137d0ce783fe",
+      "sources": [
+        {
+          "path": "notes/units/P037.tex",
+          "sha256": "ec4cf61b89dabfa8d0f450e85b7523121944f6834e9adb5b08a26d657adb97b8"
+        }
+      ],
+      "statement_sha256": "3af0d7c8ce1437df69cca04b449c624576da9aa4ba772f3e808f0195752136f1",
+      "steps": {
+        "S1": "5675270dfd2992ef7168b850ed035e5242a22c610fd8e200b5119a1f42f74bd3",
+        "S2": "b2ab4565ca3e0a994f28c6be1b35d01b2d6ec8ed4eede8b68ec09efca03ecd0c",
+        "S3": "a58bf4d00ea910f5b8b83569fba0e59540455c61695b7bd625ee54d201fe98c8",
+        "S4": "40e29f23963ff18148f3d4cc621c6186a799e4007abfa481d1e6922bcb059032",
+        "S5": "d82f242e7624e97ae904085ed30bd5929446c86172483211d19f43a36d2c4c17"
+      },
+      "step_texts": {
+        "S1": "The infinite-layer restriction comparison is injective on the localization kernel.",
+        "S2": "One finite layer kills the cocycle image and chosen local primitives for a fixed class.",
+        "S3": "The class defines a finite-level divisor character with the specified cyclotomic eigenvalue and zero values over the coefficient prime.",
+        "S4": "Finitely many distinct classes stay distinct at a common finite level, so every finite subset has at most the uniform cap.",
+        "S5": "For the resulting finite module the prime-power cardinality is the prime raised to its length."
+      },
+      "step_passages": {
+        "S1": "51aeb710c40f50ce348d5675e2dca7fc54055a67241b72cec2ffbdcf5e0a7dd2",
+        "S2": "51aeb710c40f50ce348d5675e2dca7fc54055a67241b72cec2ffbdcf5e0a7dd2",
+        "S3": "51aeb710c40f50ce348d5675e2dca7fc54055a67241b72cec2ffbdcf5e0a7dd2",
+        "S4": "d75445c9b37bcbf98c9559cb7bb1e2bc927db67460c6915ae4833ce6c6c56034",
+        "S5": "d75445c9b37bcbf98c9559cb7bb1e2bc927db67460c6915ae4833ce6c6c56034"
+      }
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "D484",
+  "edition_sha256": "478b8e8d67a07d43fe8bc3df391ed2b74e1ab5e7204817ba26574519e3ee33c7",
+  "note_sha256": "60aaf566ce9fdfdbfcd90dd6cd93fc53b623ba6aa7fe050989b58c7edc3f16d4",
+  "statement_sha256": "344752c607bb508f1ecdd239450980e997a1ebb7465ac5eca186854e9ec6d63b",
+  "sources": [
+    {
+      "path": "notes/units/D484_round4.md",
+      "sha256": "60aaf566ce9fdfdbfcd90dd6cd93fc53b623ba6aa7fe050989b58c7edc3f16d4"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The spectral, counting and frame assumptions are all evaluated on the prescribed enriched family class.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: restriction of twist selection to D3 and selected spectral record"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.Top.link_alt_alt_bis",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkAltAltBis.lean",
+          "line0": 16,
+          "line1": 34
+        }
+      ],
+      "source": "notes/units/D484_round4.md",
+      "anchor": "Start with a twist selection on the family",
+      "source_lines": [
+        25,
+        25
+      ],
+      "claim_sha256": "76f97ffc0be2a29fd318bbf1fbbb89385bb26ca35740fbb75c82579c5a7aabdb",
+      "passage_sha256": "4a45dcf929e3ce4832512478c69fece96789b317d3e3957c48e41dc3d74b8c7e",
+      "sha256": "4a2ab8beb6120331d4f0653836b975d2a6ff8a7b7dea8e792fc048bd8fc3e506",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The selected spectral instance and the real-volume and class records give an instance tie for that same row.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "input: real-volume tie, class items and frame condition"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.Top.link_alt_alt_bis",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkAltAltBis.lean",
+          "line0": 35,
+          "line1": 47
+        }
+      ],
+      "source": "notes/units/D484_round4.md",
+      "anchor": "Specialize the spectral constant to three and take",
+      "source_lines": [
+        29,
+        29
+      ],
+      "claim_sha256": "a0dbcc66e9926fd2170e90ec794d53abd7b9361477ca6e8b869a34fdef7aacec",
+      "passage_sha256": "d69f5ce2832d46d09d797011d7e6b905241b87a08f96b2f159dbdb55d1fc4cdf",
+      "sha256": "e2f9532a741f96e3c6026e891dfaf44fddf14811e570b042b53700b102251338",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Beyond the selection threshold one can construct a tied automorphic row at every index.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S2",
+        "input: decay and finite-dimensional rows"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.L2.SG.ThmSOwn.theoremS_transport_link_zero",
+          "file": "Formalism/LocalToGlobal/SiegelLatticeTheory/FlagStabilizerTensors/LinkSPos.lean",
+          "line0": 131,
+          "line1": 157
+        }
+      ],
+      "source": "notes/units/D484_round4.md",
+      "anchor": "Finite dimensionality and decay supply finite row data.",
+      "source_lines": [
+        33,
+        33
+      ],
+      "claim_sha256": "011b4b4b50c2864130de3504e67792d28e15c4503def9e3c528d2958efe43827",
+      "passage_sha256": "649bae0831c79e39e3ef481be07bc6c66ab7abdc165443d25ffc464aa9b90d6c",
+      "sha256": "f5888675f05f52a964e167aa91bc2d830a3e616d73534ff23ba5cfaacab6bef5",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The concrete row bounds and count yield the spectral link at constant three under the tuple-size bound.",
+      "kind": "assembly",
+      "uses": [
+        "S3",
+        "D033",
+        "D379",
+        "input: diagonal main term and tuple-size estimate"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.L2.SG.ThmSOwn.theoremS_transport_link_zero",
+          "file": "Formalism/LocalToGlobal/SiegelLatticeTheory/FlagStabilizerTensors/LinkSPos.lean",
+          "line0": 158,
+          "line1": 161
+        },
+        {
+          "name": "GlobalTheory.Top.link_alt_alt_bis",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkAltAltBis.lean",
+          "line0": 41,
+          "line1": 48
+        }
+      ],
+      "source": "notes/units/D484_round4.md",
+      "anchor": "The concrete spectral-link theorem combines evaluation and selected",
+      "source_lines": [
+        37,
+        37
+      ],
+      "claim_sha256": "edf34cb67edd7570aabe0716b94c9b3731e666c354dfbc3c20dbf0d2254c0bc1",
+      "passage_sha256": "a08dafd25d5b7c0158e720a9d157c9d94a28276ec55dd65f0f3f4fcac07f1698",
+      "sha256": "a0d2dffec1bb6839f8f16baadcf5b27eb4743fc4eeea9b9cdd1f2249c7200a89",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "495a5dd962025763221fefe7efda013d8dc76357ec2b2d3e97fa7b7d713ebf08",
+      "sources": [
+        {
+          "path": "notes/units/D484_round4.md",
+          "sha256": "12cfc804c1aef86a948588ea670890510133ea2dd61277f30ec20d652cb2b8d0"
+        }
+      ],
+      "steps": {
+        "S1": "f31fd50fd4b8f18e184ed4dac7c8850fae48d5c4b5112a023b666b11683f7380",
+        "S2": "adc8da1dca0d54d7afba10966824afc15236fd2b9355c48e7657508da94cfaaa",
+        "S3": "82136a63a1eb87db948b7e2bc8339a6f2b4ea502a93952b836d25aec84a94669",
+        "S4": "fcf02965f1cf54f34549441eaf4cab7ef5cfd0ba366923bcb34cc905670a3621"
+      },
+      "step_texts": {
+        "S1": "The spectral, counting and frame assumptions are all evaluated on the prescribed enriched family class.",
+        "S2": "The selected spectral instance and the real-volume and class records give an instance tie for that same row.",
+        "S3": "Beyond the selection threshold one can construct a tied automorphic row at every index.",
+        "S4": "The concrete row bounds and count yield the spectral link at constant three under the tuple-size bound."
+      }
+    },
+    {
+      "edition_sha256": "9e7baee987adfccbc5564503a5342bb7a4814408578709c725e042f36b37e61b",
+      "sources": [
+        {
+          "path": "notes/units/D484_round4.md",
+          "sha256": "12cfc804c1aef86a948588ea670890510133ea2dd61277f30ec20d652cb2b8d0"
+        }
+      ],
+      "statement_sha256": "344752c607bb508f1ecdd239450980e997a1ebb7465ac5eca186854e9ec6d63b",
+      "steps": {
+        "S1": "4a2ab8beb6120331d4f0653836b975d2a6ff8a7b7dea8e792fc048bd8fc3e506",
+        "S2": "e2f9532a741f96e3c6026e891dfaf44fddf14811e570b042b53700b102251338",
+        "S3": "f5888675f05f52a964e167aa91bc2d830a3e616d73534ff23ba5cfaacab6bef5",
+        "S4": "a0d2dffec1bb6839f8f16baadcf5b27eb4743fc4eeea9b9cdd1f2249c7200a89"
+      },
+      "step_texts": {
+        "S1": "The spectral, counting and frame assumptions are all evaluated on the prescribed enriched family class.",
+        "S2": "The selected spectral instance and the real-volume and class records give an instance tie for that same row.",
+        "S3": "Beyond the selection threshold one can construct a tied automorphic row at every index.",
+        "S4": "The concrete row bounds and count yield the spectral link at constant three under the tuple-size bound."
+      },
+      "step_passages": {
+        "S1": "4a45dcf929e3ce4832512478c69fece96789b317d3e3957c48e41dc3d74b8c7e",
+        "S2": "d69f5ce2832d46d09d797011d7e6b905241b87a08f96b2f159dbdb55d1fc4cdf",
+        "S3": "649bae0831c79e39e3ef481be07bc6c66ab7abdc165443d25ffc464aa9b90d6c",
+        "S4": "a08dafd25d5b7c0158e720a9d157c9d94a28276ec55dd65f0f3f4fcac07f1698"
+      }
+    }
+  ]
+}

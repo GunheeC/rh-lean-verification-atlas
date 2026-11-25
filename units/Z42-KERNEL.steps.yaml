@@ -1,0 +1,127 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "Z42-KERNEL",
+  "edition_sha256": "b2d698fb25d56e15fcea09076895229e0a37b4e204c10df3f193ec3bd36a99f2",
+  "note_sha256": "45d3eb80504f2943b01ddabf4abff2ad4fc39e78e9e4ea408868af0fc6796a64",
+  "statement_sha256": "b987037a54bb19667c3c7e8cf12c6db045fa7fb651d27117e21e27e864814a0c",
+  "sources": [
+    {
+      "path": "notes/blueprint/Z42-KERNEL.tex",
+      "sha256": "45d3eb80504f2943b01ddabf4abff2ad4fc39e78e9e4ea408868af0fc6796a64"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The common indicator relations give the stabilizer law for the selected kernel.",
+      "kind": "assembly",
+      "uses": [
+        "input: simultaneous indicator relations and fixed-coordinate stabilizer"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.TwV.site_law_xiIn",
+          "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/KernelSiteLawAndFixedCoordinateStabiliserLaw.lean",
+          "line0": 20,
+          "line1": 48
+        }
+      ],
+      "source": "notes/blueprint/Z42-KERNEL.tex",
+      "anchor": "\\subsection{Z4.2.09. The stabilizer and the indicator relations (v8)}\\label{r6:Z4.2.09}",
+      "source_lines": [
+        7,
+        11
+      ],
+      "claim_sha256": "d908e87c45febd393ad85223c9aa7987be93ad33fcf3730659e109b2b55507ce",
+      "passage_sha256": "2c105103dc8761debb177999e6bc53bebc815733e9ae8f7e9804e42892998fe7",
+      "sha256": "72dc77232c31e4fd9b0fe1fd51434fed894bc4164586ec89b7bdc7d27b1d7435",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "One polynomial and one determinant constant give the positive-step frame differences.",
+      "kind": "computation",
+      "uses": [
+        "input: positive-step frame comparison"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.TwV.StepDel.del_of_pos",
+          "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/KernelSiteFrameValuesPositiveSteps.lean",
+          "line0": 10,
+          "line1": 12
+        }
+      ],
+      "source": "notes/blueprint/Z42-KERNEL.tex",
+      "anchor": "\\subsection{Z4.2.11. One determinant constant and one polynomial at a positive step (v8)}\\label{r6:Z",
+      "source_lines": [
+        17,
+        20
+      ],
+      "claim_sha256": "8bc49e3ee39c33c7862391a189b2d905bf6f8ff0c5ab609546fd98b192ef5c69",
+      "passage_sha256": "a588ab61ba404c21b2039ea9598f7d6b24c80b91423ad6c1e7689d7c4051159e",
+      "sha256": "ad6b69249e9a9ae4710178feaf9cd8523e7cdffb0a07b9f9693c8efa88a36286",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The zero-step difference is obtained from its own contraction identity.",
+      "kind": "case-split",
+      "uses": [
+        "input: initial-level frame comparison"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.TwV.StepZero.del_zero",
+          "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/KernelSiteFrameValuesStepZero.lean",
+          "line0": 10,
+          "line1": 13
+        }
+      ],
+      "source": "notes/blueprint/Z42-KERNEL.tex",
+      "anchor": "\\subsection{Z4.2.10. The initial-level difference (v8)}\\label{r6:Z4.2.10}",
+      "source_lines": [
+        32,
+        35
+      ],
+      "claim_sha256": "728f1b2bd5fddca515c7e5d82eaf1fecbd05e9eaec1be93f3d2ea64d261a60ae",
+      "passage_sha256": "7e53ca1bd4ea453e969d00f489543a961a19843b9fb7577c5288250b92efcd82",
+      "sha256": "8c0a8f4d96cb6623ff7106619806297812a8f22cd120f3ac8778561e323bd9e9",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The chain carrying the comparisons also carries the admitted site system under the entry and curve inputs.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "S2",
+        "S3",
+        "P046"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.TwV.site_cmpLite_siteAdm",
+          "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/JointSiteChainComparedCarriesAdmittedSystem.lean",
+          "line0": 77,
+          "line1": 89
+        }
+      ],
+      "source": "notes/blueprint/Z42-KERNEL.tex",
+      "anchor": "\\subsection{Z4.2.12. Admission on the chosen chain (v8)}\\label{r6:Z4.2.12}",
+      "source_lines": [
+        39,
+        42
+      ],
+      "claim_sha256": "e304641e1833005e6928934b4b71de54aa6730cad41af9ff4901d26bb35903d5",
+      "passage_sha256": "ce0377c6448a403326d7ee38c35b0e841605c67e1abc51f566821f2afd980a48",
+      "sha256": "2778f5656c27aa4b96ea6338bb89d7fe7d1c4ff705c269a9736803b4de01cf40",
+      "ai_review": []
+    }
+  ],
+  "history": []
+}

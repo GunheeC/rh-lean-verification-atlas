@@ -1,0 +1,86 @@
+{
+  "id": "N415",
+  "title": "Relative prime count in progressions",
+  "track": {
+    "primary": "analytic",
+    "secondary": []
+  },
+  "statement": "For $M>0$, $8\\mid M$, reduced $a\\bmod M$, $X\\ge2$ and $\\log X\\ge C_0\\log M\\log(\\log M+2)$, the prime count has main term $\\bigl(\\mathrm{li}_2(X)-\\chi(a)\\mathrm{li}_2(X^\\beta)\\bigr)/\\varphi(M)$ with relative error $\\ll e^{-c\\log X/\\log M}+e^{-\\sqrt{c\\log X}}$. The character term is omitted if the exceptional window is empty. Chapter T derives the relative error and exceptional-window adjustment from Thorner--Zaman.",
+  "assumptions": [
+    "source:blueprint_v13"
+  ],
+  "hypothesis_details": [
+    "Use a reduced residue class modulo a positive multiple of eight.",
+    "The endpoint satisfies $X\\ge2$ and $\\log X\\ge C_0\\log M\\log(\\log M+2)$."
+  ],
+  "lean": [
+    {
+      "name": "Formalism.HermitianLattices.Ext.PrimesInProgressions.pnt_progressions_relative_weak_holds",
+      "file": "Formalism/GL3MeanSquares/GenusMeanAsymptotics/JacobiCharacterSums/PNTFinal.lean",
+      "line0": 22,
+      "line1": 24,
+      "sha256": "c1b14461fcc557f7621c3ebefec70f3ad9783f5a12554be3a5584000c308462b",
+      "dominated": 11065,
+      "graph": "allChi",
+      "role": "statement"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/blueprint/N415.tex",
+      "section": "r5:lit:N415",
+      "pages": []
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r5:lit:N415",
+      "pages": [
+        571,
+        571
+      ],
+      "printed_page": 546,
+      "scope": "First page of this named destination."
+    }
+  ],
+  "status": "Full",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "blueprint_members": [
+    "N415"
+  ],
+  "representative": "Formalism.HermitianLattices.Ext.PrimesInProgressions.pnt_progressions_relative_weak_holds",
+  "statement_declarations": [
+    "Formalism.HermitianLattices.Ext.PrimesInProgressions.pnt_progressions_relative_weak_holds"
+  ],
+  "grade_scope": "Named statement declarations with the hypotheses above. Chart supplier records have their own review scopes.",
+  "confirmation_basis": "Minimum across the statement declarations, using registry rows for the blueprint assignments listed here. Reviews of other expositions of a shared declaration are included as context.",
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "slug": "relative-prime-count-in-progressions",
+  "aliases": [
+    "relative prime count",
+    "pnt_progressions_relative_weak_holds",
+    "N415 Relative prime count in progressions"
+  ],
+  "background": [
+    "Primes in progressions",
+    "Dirichlet characters"
+  ],
+  "hypothesis_source": {
+    "document": "blueprint_v13",
+    "section": "r5:lit:N415",
+    "pages": [
+      571,
+      571
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "summary": "For a reduced progression whose modulus is divisible by eight, sufficiently large scales admit a relative prime-count estimate with an explicit error. A possible exceptional real zero contributes its own main-term correction. The estimate retains the dependence on the modulus when the progression varies."
+}

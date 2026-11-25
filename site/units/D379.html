@@ -1,0 +1,39 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>D379 · Counting constants from Siegel–Weil · RH verification atlas</title><link rel="stylesheet" href="../atlas.css"><script>window.MathJax={tex:{inlineMath:[["$","$"]],displayMath:[["$$","$$"]],processEscapes:true},options:{ignoreHtmlClass:"no-math"}};</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script></head><body><header><div class="bar"><a class="brand" href="../index.html">RH verification atlas</a><nav aria-label="Atlas navigation"><a href="../index.html">Home</a> <a href="../STATUS.html">Status</a> <a href="../MAP.html">Map</a> <a href="../dashboard/index.html">Tracks</a> <a href="../lookup/search.html">Search declarations</a></nav></div></header><main><h1 id="d379--counting-constants-from-siegelweil">D379 · Counting constants from Siegel–Weil</h1>
+<p class="notice">AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved</p>
+<p>The convergent unitary Siegel–Weil formula gives counting constants that depend on the family&#x27;s output list. Their exponent and positive lower bound are fixed before a later test predicate is chosen. The same constants can therefore be used when counting on all points of a family.</p>
+<p><code>counting-constants-from-siegelweil</code> · <a href="../tracks/theta/index.html">Theta correspondence and automorphic representations of unitary groups</a></p>
+<p><strong>Outlined</strong> · <strong>L0</strong> Declaration pinned; no review of this unit · Record generated 2026-11-25 (no human check).</p>
+<p><strong>First-pass outline of the head proof term</strong> · 40,441 dominated core lines. In scope, this note describes what the top-level term calls; it does not explain the dependency cone beneath it.</p>
+<div class="scroll"><table>
+<thead><tr><th>1 · Lean pinned</th><th>2 · Statement compared</th><th>3 · Prose</th><th>4 · Steps</th><th>5 · AI review</th><th>6 · Human</th></tr></thead>
+<tbody><tr><td>✓</td><td>–</td><td>Outlined</td><td>4</td><td>–</td><td>0 of 4 steps</td></tr>
+</tbody></table></div>
+<p><a href="D379.check.html">Numbered proof and check records</a> · <a href="../PROGRESS.html">Progress and counting rules</a></p>
+<h2 id="statement">Statement</h2>
+<p>Under the convergent unitary Siegel-Weil formula, one can choose counting constants as a function of the output list and a positive constant bounded by its c-component, with nonnegative C-component and exponent at least 2(CYL+1). The same choices give the counting estimate for every family and test predicate.</p>
+<div class="math display">$$\exists c_{30},\ \exists c_{\rm Ic}&gt;0:\ \forall F,P,\quad C_F\ge0,\quad A_F\ge2(\mathrm{CYL}_F+1),\quad c_F\ge c_{\rm Ic},\quad\operatorname{CountAllPointsClass}(P,F,n_{0,F},A_F,C_F,c_F,cb_F).$$</div>
+<h2 id="assumptions">Assumptions</h2>
+<ul><li>Assume the convergent unitary Siegel–Weil assertion.</li><li>For the counting clause take an eligible family and a test predicate on its automorphic data.</li></ul>
+<p>Sources for the assumptions · <a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a></p>
+<p><strong>New exposition · pending_review.</strong> This edition has no independent review of the new argument. Earlier verdicts below retain their stated scopes.</p>
+<h2 id="where-to-read">Where to read</h2>
+<p>Blueprint v13 and papers v3–v5 are this atlas project’s own AI-written, unpublished drafts. They have no human review and were not written by the author of the Lean development. Blueprint v13, its separate cover, and paper v5 are distributed as assets of release v0.1.0. For v3 and v4 the atlas supplies selected excerpts and notes. <a href="../data/editions.json">Edition register</a></p>
+<ul><li><a href="../notes/units/D379_round4.html">D379 · Counting constants from Siegel–Weil</a>, pp. 1–2 in the atlas print layout. Round-4 outline under the named inputs; pending_review.</li><li><a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a>, G.392 (decomp:D379), p. 254. Statement starts on the cited page.</li><li><a href="../notes/units/D379.tex">Manuscript source excerpt</a> · section <code>decomp:D379</code></li></ul>
+<h2 id="evidence">Evidence</h2>
+<p>The pinned declaration is recorded in the formal source. No higher-level verdict is assigned to this unit.</p>
+<h2 id="lean-declarations">Lean declarations</h2>
+<ul><li><code>GlobalTheory.CountConstants.count_constants_of_siegelWeil</code>  <br><a href="https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/CountConstantsOfSiegelWeil.lean#L11-L24"><code>CountConstantsOfSiegelWeil.lean</code></a>, lines 11–24 · 40,441 dominated lines · SHA-256 <code>ac5d21c73c3f</code>.</li></ul>
+<p><a href="D379.yaml">Machine record and full declaration hashes</a> · <a href="../lookup/declarations.html">Declaration lookup</a></p>
+<h2 id="reading-prerequisites">Reading prerequisites</h2>
+<p>Background · Convergent Siegel–Weil formula · Uniform counting for automorphic forms.</p>
+<ul><li><a href="P049.html">P049 · Gram determinant in the span of the lattice</a> · graph</li><li><a href="P050.html">P050 · Lattice realization over a number field</a> · graph</li><li><a href="Z5.1.html">Z5.1 · Gram determinant and additive index</a> · graph</li></ul>
+<p><a href="../data/round3_prerequisites.json">Evidence and definitions of reading links</a></p>
+<h2 id="open-questions">Open questions</h2>
+<p>None recorded.</p>
+<h2 id="graph-connections">Graph connections</h2>
+<p>Arrows may connect either a unit’s main declaration or an indexed member.</p>
+<p><strong>Uses</strong> · <a href="P049.html">P049</a> · <a href="P050.html">P050</a> · <a href="Z5.1.html">Z5.1</a></p>
+<p><strong>Used by</strong> · <a href="T04.html">T04</a></p>
+<p><a href="../data/unit_graph.json">Declaration witnesses and graph scope</a></p>
+<p>Lookup aliases · <code>count_constants_of_siegelWeil</code>, <code>D379 Counting constants from Siegel–Weil</code></p>
+<p>&lt;!-- Unit metadata SHA-256 6f3d8a953cb29797587656a45f53eb6ee0f006675ae3acb5d5bacf3eb03579d7 --&gt;</p></main><footer><a href="../help.html">Using the local edition</a></footer></body></html>

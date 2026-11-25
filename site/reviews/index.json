@@ -1,0 +1,749 @@
+{
+  "source_project": "Atlas project archive",
+  "records": [
+    {
+      "file": "reviews/R11_review.md",
+      "source_project": "Atlas project archive",
+      "source_path": "out/R11_review.md",
+      "sha256": "c2566a64ed8165e09bd775e866534a1ff0c6d0c1823e8de78186161e39aeb3ac",
+      "round": 11,
+      "kind": "AI referee report",
+      "scope": "Round-11 independent review: `rankTwo` (Z1.2 queue) and Z4.4 suppliers 2, 3, 5, 6",
+      "public_file": "reviews/R11_review.md",
+      "public_sha256": "eae00187e2bf8f750043f0ca947e4113e01b0fe100a295489f6694ff50bf7f00",
+      "prior_public_sha256": [
+        "ed296e0c9257d5f5f612509c470ab69682f9b64edcc6417f72aa11510253bc3d"
+      ],
+      "previous_export_sha256": "ed296e0c9257d5f5f612509c470ab69682f9b64edcc6417f72aa11510253bc3d"
+    },
+    {
+      "file": "reviews/R12_review_A.md",
+      "source_project": "Atlas project archive",
+      "source_path": "out/R12_review_A.md",
+      "sha256": "ce0beaa9b665080b6f21da3c25242bccbaff64b46044daa790ab5268fc58e4df",
+      "round": 12,
+      "kind": "AI referee report",
+      "scope": "Round-12 independent review, part A: `ch_P_r12.tex` lines 1-1772",
+      "public_file": "reviews/R12_review_A.md",
+      "public_sha256": "0f0c0fd9d2136ddeeec79943454d194305d579e83faf4defaa662fa65fcccfbc",
+      "prior_public_sha256": [
+        "a9fcd579afec4ff6653212cc1b230d9da97d461a4224fc246660143ceaf2810d"
+      ],
+      "previous_export_sha256": "a9fcd579afec4ff6653212cc1b230d9da97d461a4224fc246660143ceaf2810d"
+    },
+    {
+      "file": "reviews/R12_review_B.md",
+      "source_project": "Atlas project archive",
+      "source_path": "out/R12_review_B.md",
+      "sha256": "4f2f73d8ab62283127c95358bf89d17a3e19be0345b6a6f9ce57632178f7137b",
+      "round": 12,
+      "kind": "AI referee report",
+      "scope": "Round-12 independent review B: Z4.4 suppliers 1 and 7, the assembly, and the Z4.4 closure question",
+      "public_sha256": "63a2b3ab43731c61a7a3b8910d509f2fc24085040a52da60d34161fe3c97b59b",
+      "previous_export_sha256": "5f99958c26fe177fdde5f0ab5aa5e3cce14d0b42113ce8b0f78cd7d207eb4249",
+      "edition_note": "Superseded graph percentages redacted with source line numbering preserved.",
+      "public_file": "reviews/R12_review_B.md",
+      "prior_public_sha256": [
+        "f93fe232e7dc6bde7b1b24b633e46a33fda57705f9b7a6c9152d174e5aff3762",
+        "5f99958c26fe177fdde5f0ab5aa5e3cce14d0b42113ce8b0f78cd7d207eb4249"
+      ]
+    },
+    {
+      "file": "reviews/R13_recheck.md",
+      "source_project": "Atlas project archive",
+      "source_path": "out/R13_recheck.md",
+      "sha256": "e1823ce0f3a387cc55ba7182ab50068e020ef90da3203f8d5a667da42be3f9b9",
+      "round": 13,
+      "kind": "Focused AI recheck",
+      "scope": "Round-13 recheck of Z4.4 (`twistedPeriodAdmissible_of_rowInt`): fixes A1-A7",
+      "public_file": "reviews/R13_recheck.md",
+      "public_sha256": "2293aca51cba0cdd5bbbc5b7d6d91af2240cf118ff6bbca87a1d2d4abc635aed",
+      "prior_public_sha256": [
+        "0c9600ebb56d3ba8ec16743819a3b9ad5eeb67934090349d2d4298aaf905e473"
+      ],
+      "previous_export_sha256": "0c9600ebb56d3ba8ec16743819a3b9ad5eeb67934090349d2d4298aaf905e473"
+    },
+    {
+      "file": "reviews/R14_review_A.md",
+      "source_project": "Atlas project archive",
+      "source_path": "out/R14_review_A.md",
+      "sha256": "de9371122d85257a3871435c76082b2dd702e905ad9c64d430fa005eae7d31be",
+      "round": 14,
+      "kind": "AI referee report",
+      "scope": "R14 review A — Z4.2.13 `GlobalTheory.TieBase.base_data` and Z4.3 step (i)",
+      "public_file": "reviews/R14_review_A.md",
+      "public_sha256": "8b0dd827f8a712f6f45e6f484e10dca676b1ac32adce9300c404cdc948b61cbd",
+      "prior_public_sha256": [
+        "99e295f7d583204c0ee2ccf3a39902a91a4709af8c1a9cfa01fb0593792eefca"
+      ],
+      "previous_export_sha256": "99e295f7d583204c0ee2ccf3a39902a91a4709af8c1a9cfa01fb0593792eefca"
+    },
+    {
+      "file": "reviews/R14_review_B.md",
+      "source_project": "Atlas project archive",
+      "source_path": "out/R14_review_B.md",
+      "sha256": "60856cf048b48ffbb71f7c7faca762efe865e425a6b66db34e144f23468f5713",
+      "round": 14,
+      "kind": "AI referee report",
+      "scope": "Round-14 review B: Z4.2.04 kernel coefficients, Z4.3(ii) `comb_of_tied`, and the nine round-13 proof checks",
+      "public_file": "reviews/R14_review_B.md",
+      "public_sha256": "bb1ae0255fca17d0a3779093c12873c8d30fdc8f3b0958b79d1866fdeb4a8491",
+      "previous_export_sha256": "375381dfc87ab875971573ce559b4b21e1cfa3f862ae5fe3e720fd281fc048f6",
+      "edition_note": "Clarified the scope of the section 3 reference; source line numbering preserved.",
+      "prior_public_sha256": [
+        "eb503ceb0358823d70664abb1be7efde8209ee477bc063171403d40145c12ba3",
+        "375381dfc87ab875971573ce559b4b21e1cfa3f862ae5fe3e720fd281fc048f6"
+      ]
+    },
+    {
+      "file": "reviews/R15_review_A.md",
+      "source_project": "Atlas project archive",
+      "source_path": "out/R15_review_A.md",
+      "sha256": "5b787a5d05d1e8388d5a01f8a2d426eec614cd95e91b37523d9006cac6b16d6f",
+      "round": 15,
+      "kind": "AI referee report",
+      "scope": "R15 review A — Z4.2.04 completion candidate (`GlobalTheory.pairOK_allSites`)",
+      "public_file": "reviews/R15_review_A.md",
+      "public_sha256": "cb2fd430569292c9069ac64ca09d49a8536cf815639f314fa8cb6f9dd45da479",
+      "prior_public_sha256": [
+        "ec8d4c8e0bceba50b7555030ff995c0f565c01d816efeaf15f70b478dbfe80e1"
+      ],
+      "previous_export_sha256": "ec8d4c8e0bceba50b7555030ff995c0f565c01d816efeaf15f70b478dbfe80e1"
+    },
+    {
+      "file": "reviews/R15_review_B.md",
+      "source_project": "Atlas project archive",
+      "source_path": "out/R15_review_B.md",
+      "sha256": "4fa6720c78f5bdc8654139141afe86ff3b43b59e71ee10d44d49376109240e0b",
+      "round": 15,
+      "kind": "AI referee report",
+      "scope": "R15 review B — L/R/N triage of the Z4.2.13 suppliers, four N hand proofs, Z4.3(i) vacuum-free route, Z4.3 premise table",
+      "public_file": "archive/reviews/R15_review_B.md",
+      "public_sha256": "2695d113087b275abf8dca38ec7a6e0796ea994019330ad0f4d22ec9bb7fab7e",
+      "previous_export_sha256": "42fb68af925bc4d439e0182da2f0bd888a59573fc1aee69da481ccf3ba2e7e72",
+      "edition_note": "Superseded graph percentages redacted with source line numbering preserved.",
+      "prior_public_sha256": [
+        "e3e6a1b249cee63a1a0eddc118193ce52162e4972f163ffb33bb2e125a890135",
+        "42fb68af925bc4d439e0182da2f0bd888a59573fc1aee69da481ccf3ba2e7e72"
+      ],
+      "public_summary_sha256": "7a3b6b4e65c21760836c162406516ef7efe638b1d67f7f6ce291639f8cc86fde",
+      "archive_file": "archive/reviews/R15_review_B.md",
+      "archive_sha256": "2695d113087b275abf8dca38ec7a6e0796ea994019330ad0f4d22ec9bb7fab7e"
+    },
+    {
+      "file": "reviews/R16_review_A.md",
+      "source_project": "Atlas project archive",
+      "source_path": "out/R16_review_A.md",
+      "sha256": "1d6e6c9289cd0a15c13415ecd1313e42935a9088654cc9928529c1c364f13d1a",
+      "round": 16,
+      "kind": "AI referee report",
+      "scope": "R16 review A — the two theta inputs (`kThetaVector`, `StdOK`) and the Z4.2.04 unconditional candidate",
+      "public_file": "reviews/R16_review_A.md",
+      "public_sha256": "d7f30a3f72a9a6af3bacff6028ee7795e1764fd6eca058a70745f01aadaa5fd0",
+      "prior_public_sha256": [
+        "9c1dfe7a2e85a6dbad64a7fe7bb70be0c13a69e70bba783bd466dc0cc50fcf91"
+      ],
+      "previous_export_sha256": "9c1dfe7a2e85a6dbad64a7fe7bb70be0c13a69e70bba783bd466dc0cc50fcf91"
+    },
+    {
+      "file": "reviews/R16_review_B.md",
+      "source_project": "Atlas project archive",
+      "source_path": "out/R16_review_B.md",
+      "sha256": "ac60e0255aabdadb178405bc52036c13ac4e75229e959941ea347559be340080",
+      "round": 16,
+      "kind": "AI referee report",
+      "scope": "R16 review B — audit of the L/S/R/N triage pilot on Z1.5",
+      "public_sha256": "86db75a7fed9e43273ac86099bddbc537540c149737e99f71df557c964a5ab72",
+      "previous_export_sha256": "1b6e965335198ec1887fecd238fd240f7c8511b4073259394db4286e9cd4078a",
+      "edition_note": "Superseded graph percentages redacted with source line numbering preserved.",
+      "public_file": "reviews/R16_review_B.md",
+      "prior_public_sha256": [
+        "fb09ddec78a7c518178fbc407268625732f7166c59e0f4a11bbe08f2a4fe1ff2",
+        "1b6e965335198ec1887fecd238fd240f7c8511b4073259394db4286e9cd4078a"
+      ]
+    },
+    {
+      "file": "reviews/R17_review.md",
+      "source_project": "Atlas project archive",
+      "source_path": "out/R17_review.md",
+      "sha256": "288b9592687eb74b507031c5d8740bc11b9f8487be45d09c113a754d6546a6bc",
+      "round": 17,
+      "kind": "AI referee report",
+      "scope": "R17 independent review: E1–E7 recheck, tier audit, and the unclassified material",
+      "public_sha256": "506ed783f6df67bb2f390d49680a9b08de8f261028c9f562917f4ddc024ce393",
+      "previous_export_sha256": "5cc33c27fa3519ed2af9cb37da8ccb06d102a6f522dd477375c5956577efac9a",
+      "edition_note": "Superseded graph percentages redacted with source line numbering preserved.",
+      "public_file": "reviews/R17_review.md",
+      "prior_public_sha256": [
+        "fb0cff4e84fe1e9e66650f5bc2664fa5417c43890ccab446f79fa01205d5c920",
+        "5cc33c27fa3519ed2af9cb37da8ccb06d102a6f522dd477375c5956577efac9a"
+      ]
+    },
+    {
+      "file": "reviews/R18_review.md",
+      "source_project": "Atlas project archive",
+      "source_path": "out/R18_review.md",
+      "sha256": "0e60c972a3860dd5590fc4574819c0b8cfeb03072fd94667a2804033f52e1862",
+      "round": 18,
+      "kind": "Local integration note for the R17 report",
+      "scope": "R18에서 반영한 R17 독립 검토",
+      "public_file": "reviews/R18_review.md",
+      "public_sha256": "5074d60061fa50bd4215322a97de47122c3ec4deba4904e1b296e41f2f1a5b60",
+      "prior_public_sha256": [
+        "94ca73629f042584c9454194be0c71b23df518fb8ad530eccfb8a788716ccbc9"
+      ],
+      "previous_export_sha256": "94ca73629f042584c9454194be0c71b23df518fb8ad530eccfb8a788716ccbc9",
+      "archive_file": "archive/reviews/R18_review.md",
+      "archive_sha256": "5baa898ec085aebd871b7ad4dde90af8bc60e558960ae47f17be300db270bee4"
+    },
+    {
+      "file": "reviews/R19_review.md",
+      "source_project": "Atlas project archive",
+      "source_path": "out/R19_review.md",
+      "sha256": "aa51dd3702189be9696cf747ee1de47d3e4c15330dfe2a1834797c9fd8fa3ea7",
+      "round": 19,
+      "kind": "AI referee report",
+      "scope": "R19 skeleton — independent review",
+      "public_sha256": "54d8df32b8fa8e6478b1b6f47d5f638c59cab8d364f7c6ac8a8bf6fc3e9da9c2",
+      "previous_export_sha256": "5a8d31814b7e148f8bbc9bcae83a321eef50a00a0ca10317ba532c2a6807792c",
+      "edition_note": "Superseded graph percentages redacted with source line numbering preserved.",
+      "public_file": "reviews/R19_review.md",
+      "prior_public_sha256": [
+        "6ace420198c59d695d76320d52a4c0e4c1484fd9a5d869ba822788bcb77d12af",
+        "5a8d31814b7e148f8bbc9bcae83a321eef50a00a0ca10317ba532c2a6807792c"
+      ]
+    },
+    {
+      "file": "reviews/R20_review.md",
+      "source_project": "Atlas project archive",
+      "source_path": "out/R20_review.md",
+      "sha256": "944006e694afcc9d99ca8f0174fa3d08d7fe3f3bb80eeac91f3c58fed2523bff",
+      "round": 20,
+      "kind": "AI referee report",
+      "scope": "R20 manuscript v0 — independent review",
+      "public_file": "archive/reviews/R20_review.md",
+      "public_sha256": "b6163c1f74128789458a4c729d6d6458ed71f15e0585754f860d4b0987f8199d",
+      "previous_export_sha256": "266cc06c2ce66f51d481656f35b9d8e1de988ed35f05b4804321cdb04d3f3863",
+      "edition_note": "Superseded graph percentages redacted with source line numbering preserved.",
+      "prior_public_sha256": [
+        "2d0696f248e4639ad5327c7d00bef7184f3904fd1b17d3f67f8b62de8feb75a2",
+        "266cc06c2ce66f51d481656f35b9d8e1de988ed35f05b4804321cdb04d3f3863"
+      ],
+      "public_summary_sha256": "ce4e7d9e72c985579f5135738874e614b9556998539118c32276e1eede8aeef5",
+      "archive_file": "archive/reviews/R20_review.md",
+      "archive_sha256": "b6163c1f74128789458a4c729d6d6458ed71f15e0585754f860d4b0987f8199d"
+    },
+    {
+      "file": "reviews/R21_review.md",
+      "source_project": "Atlas project archive",
+      "source_path": "out/R21_review.md",
+      "sha256": "9e241d4b6e07b744eaa2c025e6c6ef9e8567170923b4f9a928dc4a1d5b08b7fc",
+      "round": 21,
+      "kind": "AI referee report",
+      "scope": "R21 manuscript v1 — independent review",
+      "public_sha256": "c0d4f6d43d96fc011187015ba26c461a53d14e4052bc38025fa6e3e4f3d2a4d5",
+      "previous_export_sha256": "6e53d7894f6e3e97a24a180483218a95f9a627cbf958708457783c019eaf3f47",
+      "edition_note": "Superseded graph percentages redacted with source line numbering preserved.",
+      "public_file": "reviews/R21_review.md",
+      "prior_public_sha256": [
+        "0efa9df97540fb4217e827da3172f5cdf3d116d8ce9af34cf5a04396f9034a4c",
+        "6e53d7894f6e3e97a24a180483218a95f9a627cbf958708457783c019eaf3f47"
+      ]
+    },
+    {
+      "file": "reviews/R22_candidate_review.md",
+      "source_project": "Atlas project archive",
+      "source_path": "out/R22_candidate_review.json",
+      "sha256": "cb03136ac5829e89c7c7c9afe9aaa999859d062a55873a84562e57331bf87e34",
+      "round": 22,
+      "kind": "Local integration report or data",
+      "scope": "Candidate disposition ledger from the R21 review integration",
+      "public_file": "reviews/R22_candidate_review.md",
+      "public_sha256": "6ce965572c830fd409a7cbff4bc540a91dde5a32081d253306c9136ce6c48ee7",
+      "prior_public_sha256": [
+        "3bde32ebe2771621c859c3360b5de2e97e65882e03e9e100fe101cc99d9635cb"
+      ],
+      "previous_export_sha256": "3bde32ebe2771621c859c3360b5de2e97e65882e03e9e100fe101cc99d9635cb"
+    },
+    {
+      "file": "reviews/R22_reference_review.md",
+      "source_project": "Atlas project archive",
+      "source_path": "out/R22_reference_review.json",
+      "sha256": "daf2733e3eddc46f9f6b10fb518f3fd6cfcc1501cfd7801ba190c36133185e07",
+      "round": 22,
+      "kind": "Local integration report or data",
+      "scope": "External reference status ledger from the R21 review integration",
+      "public_file": "reviews/R22_reference_review.md",
+      "public_sha256": "7a002496cae8cc4fa30283fbf79e7ef4632f9c3a45375389522349b266c38c94",
+      "prior_public_sha256": [
+        "4c0e70d449349f1db290b45fd24de93d0a0f62584af106f6e483fad3f0f34954"
+      ],
+      "previous_export_sha256": "4c0e70d449349f1db290b45fd24de93d0a0f62584af106f6e483fad3f0f34954"
+    },
+    {
+      "file": "reviews/R22_report.md",
+      "source_project": "Atlas project archive",
+      "source_path": "out/R22_report.md",
+      "sha256": "a7339fb4da23c10a011673bc9cb67ad574c319d59be8c201b242118774962090",
+      "round": 22,
+      "kind": "Local integration report or data",
+      "scope": "22라운드 · 본 논문 v2",
+      "public_file": "reviews/R22_report.md",
+      "public_sha256": "662405b9954137165892a4fdc7e5f229e3c13adceb75539822b9f97ef40ea1c0",
+      "prior_public_sha256": [
+        "8f47aeee64dd900bb2f1022850313eca9fd1e34ce89316fd17b6b52b3ee3c51a"
+      ],
+      "previous_export_sha256": "8f47aeee64dd900bb2f1022850313eca9fd1e34ce89316fd17b6b52b3ee3c51a",
+      "archive_file": "archive/reviews/R22_report.md",
+      "archive_sha256": "4a216065c96c54123f86eb8f05961f6c1e68dcf895ec925642a5862faefef7b1"
+    },
+    {
+      "file": "reviews/R22_review_crosswalk.md",
+      "source_project": "Atlas project archive",
+      "source_path": "out/R22_review_crosswalk.json",
+      "sha256": "db87baaed581e8d4cc082b79657a6167218dc6d9ade5d4e43f6b3151467315c6",
+      "round": 22,
+      "kind": "Local integration report or data",
+      "scope": "R21 review-to-revision crosswalk",
+      "public_file": "reviews/R22_review_crosswalk.md",
+      "public_sha256": "2cfde7f88a04405c08c3dfdc4a8c734d169d7b959964f576a0bd43532d8221e2",
+      "prior_public_sha256": [
+        "caf3d1019b223f46e2fadfcc45f84cf13ccb849e7dced064010cac266348e3ba"
+      ],
+      "previous_export_sha256": "caf3d1019b223f46e2fadfcc45f84cf13ccb849e7dced064010cac266348e3ba"
+    },
+    {
+      "file": "reviews/R22_review_graph.md",
+      "source_project": "Atlas project archive",
+      "source_path": "out/R22_review_graph.json",
+      "sha256": "7cedc22b78f70a4379b9ff76b3df844a1295bb7424f41ad2efc53dc5a1ddd4bc",
+      "round": 22,
+      "kind": "Local integration report or data",
+      "scope": "Graph and scope measurements for R21 integration",
+      "public_file": "reviews/R22_review_graph.md",
+      "public_sha256": "3980b3846e1737efdbec68f4b04d3d420925f2bc60e8750666d6243ea24c86a2",
+      "prior_public_sha256": [
+        "c11fb07386c9ae4114688abaa8a034f0672b3330f2740585fded27c22388d335"
+      ],
+      "previous_export_sha256": "c11fb07386c9ae4114688abaa8a034f0672b3330f2740585fded27c22388d335"
+    },
+    {
+      "file": "reviews/R23_review.md",
+      "source_project": "Atlas project archive",
+      "source_path": "out/R23_review.md",
+      "sha256": "b4255492226a35974a296a52c921ecd647e89d563e56363af91a4239b7c2b82c",
+      "round": 23,
+      "kind": "AI referee report",
+      "scope": "R23 manuscript v3, §3 \"The chain in detail\" — independent referee report",
+      "public_sha256": "8b0a4cb3323bd09743ca286ae73c7f7746c81cbda3dc6ac6abb866f6fd814f58",
+      "previous_export_sha256": "f9c5276a02c8b603cd63471352244c9e7df641ccb37dedbca4e0955f844e3591",
+      "edition_note": "Superseded graph percentages redacted with source line numbering preserved.",
+      "public_file": "reviews/R23_review.md",
+      "prior_public_sha256": [
+        "659c8aab56ae27a6441240b0219d44d84e65bdeca94b2a093c3a1e381ad123ab",
+        "f9c5276a02c8b603cd63471352244c9e7df641ccb37dedbca4e0955f844e3591"
+      ]
+    },
+    {
+      "file": "reviews/R4_review_Z1Z3.md",
+      "source_project": "Atlas project archive",
+      "source_path": "out/R4_review_Z1Z3.md",
+      "sha256": "df0e87d509f8162576a007f109e7d292a226540a1366649c8fd9fc7fed15c804",
+      "round": 4,
+      "kind": "AI referee report",
+      "scope": "Round-4 independent review: Z1.4 and Z3.2",
+      "public_file": "reviews/R4_review_Z1Z3.md",
+      "public_sha256": "550d670a361dceac85378b2a6f8d0fd8ffad67ed6b05bc62479b491ebbeb5c49",
+      "prior_public_sha256": [
+        "67c22649db1ce3884f21b4d8b23b26645328d31f546ff3cb036e8ea4ecf0cec6"
+      ],
+      "previous_export_sha256": "67c22649db1ce3884f21b4d8b23b26645328d31f546ff3cb036e8ea4ecf0cec6"
+    },
+    {
+      "file": "reviews/R4_review_Z2.md",
+      "source_project": "Atlas project archive",
+      "source_path": "out/R4_review_Z2.md",
+      "sha256": "286e910f2743565d62dab15bf7f254eeeaeb16b481c1daf480526250d8cb7221",
+      "round": 4,
+      "kind": "AI referee report",
+      "scope": "Round-4 review: Z2.K2 and Z2.K7 (Chapter P, blueprint v6)",
+      "public_file": "reviews/R4_review_Z2.md",
+      "public_sha256": "7d83254d00073b1a6d76cb38af5d1a07f2b387dc8ebb3389dd63665aebfd1517",
+      "prior_public_sha256": [
+        "ffc164d8b019d21ee3291bdafda7a73f501302909a3e8d9d4e2068cdbd99d544"
+      ],
+      "previous_export_sha256": "ffc164d8b019d21ee3291bdafda7a73f501302909a3e8d9d4e2068cdbd99d544"
+    },
+    {
+      "file": "reviews/R4_review_Z4.md",
+      "source_project": "Atlas project archive",
+      "source_path": "out/R4_review_Z4.md",
+      "sha256": "e3e5f72145063e2f4e3021703997dcdfa83db51095279b592b6717e9d6dd7806",
+      "round": 4,
+      "kind": "AI referee report",
+      "scope": "Round-4 independent review: Z4.3 and Z4.1 (Chapter P, blueprint v6)",
+      "public_file": "reviews/R4_review_Z4.md",
+      "public_sha256": "1dc191536b3955cc732027aeee0e1addc4040e651b385b02647067a1dd74a6b2",
+      "prior_public_sha256": [
+        "101af7dc3220d1b26c6a1cf446719e756db3f38b6e382137772bcf5587cb37bc"
+      ],
+      "previous_export_sha256": "101af7dc3220d1b26c6a1cf446719e756db3f38b6e382137772bcf5587cb37bc",
+      "archive_file": "archive/reviews/R4_review_Z4.md",
+      "archive_sha256": "4d16d0a1025c40d175711f974d0c2a51d8312d282f153d1c7c1058650c66b507"
+    },
+    {
+      "file": "reviews/R5_review_A.md",
+      "source_project": "Atlas project archive",
+      "source_path": "out/R5_review_A.md",
+      "sha256": "7d564bd168c4bc30caaff4fb8fc1f75797ffb5eed672fcb9f2ae46b8d19e23df",
+      "round": 5,
+      "kind": "AI referee report",
+      "scope": "Round-5 independent review A — Z1.5.01, Z1.5.06, Z1.5.07, Z2.K4",
+      "public_file": "reviews/R5_review_A.md",
+      "public_sha256": "b27e332619dfe61745bfa4e412b2189ffffbf4bab1f4a904663537f9570fc794",
+      "prior_public_sha256": [
+        "0fe7dbd7d236e1fb2e9746e9e80fc1eec2095ddb6766145a056acf43befcaab4"
+      ],
+      "previous_export_sha256": "0fe7dbd7d236e1fb2e9746e9e80fc1eec2095ddb6766145a056acf43befcaab4"
+    },
+    {
+      "file": "reviews/R5_review_B.md",
+      "source_project": "Atlas project archive",
+      "source_path": "out/R5_review_B.md",
+      "sha256": "05c90c433f3b62c8976a82e7d18a6bc7204db9c0ed522890fc74383cffebf6e9",
+      "round": 5,
+      "kind": "AI referee report",
+      "scope": "Round-5 independent review B: Z4.2.01, Z4.2.03, Z4.2.05, Z4.4",
+      "public_file": "reviews/R5_review_B.md",
+      "public_sha256": "0ee0d06cdbaec96dc2ae62ca4bb56d1c34e52129ec00f7fffcc6c28e307d2707",
+      "prior_public_sha256": [
+        "4212c18038998f9675505512badb3f4030f6bb93e0b71a1f385cb4954a0c5c9b"
+      ],
+      "previous_export_sha256": "4212c18038998f9675505512badb3f4030f6bb93e0b71a1f385cb4954a0c5c9b"
+    },
+    {
+      "file": "reviews/R5_review_C.md",
+      "source_project": "Atlas project archive",
+      "source_path": "out/R5_review_C.md",
+      "sha256": "db28c39baf686e374f8f28cd6d16d59a4da59d2d7c7456ed0a8b7323e3de9789",
+      "round": 5,
+      "kind": "AI referee report",
+      "scope": "Round-5 independent review C: Z1.1.04, Z1.2, Z1.3.06, Z1.3.07",
+      "public_file": "reviews/R5_review_C.md",
+      "public_sha256": "aa18ae9ca62864f146a11f6b4e858c829358c7190b0cf191be11b5ed39974f3f",
+      "prior_public_sha256": [
+        "259a27b8950aa37edb41cb75dcfd38ada21a94708526076f7ed998b114f8e6ca"
+      ],
+      "previous_export_sha256": "259a27b8950aa37edb41cb75dcfd38ada21a94708526076f7ed998b114f8e6ca"
+    },
+    {
+      "file": "reviews/R6_review.md",
+      "source_project": "Atlas project archive",
+      "source_path": "out/R6_review.md",
+      "sha256": "120684e5a02afcba6c4942f8a82606125930c6a833a3705c226f395dc4273841",
+      "round": 6,
+      "kind": "AI referee report",
+      "scope": "Round-6 independent review — Z1.5.02, Z4.2.08, re-check of Z1.5.07 and Z2.K4, status audit",
+      "public_file": "reviews/R6_review.md",
+      "public_sha256": "75be8e976ca3664ee35f482ce2abc741782d08a54a0ae901d89401d732661f2d",
+      "prior_public_sha256": [
+        "c31826acaeb548dd904646f87f473f8f97b83faf64750fc6bbde5aacfeed9b15"
+      ],
+      "previous_export_sha256": "c31826acaeb548dd904646f87f473f8f97b83faf64750fc6bbde5aacfeed9b15",
+      "archive_file": "archive/reviews/R6_review.md",
+      "archive_sha256": "8f0796d619a534792bfa479ab488d2f430e702403c405f23705ab2a25f753018"
+    },
+    {
+      "file": "reviews/R7_review.md",
+      "source_project": "Atlas project archive",
+      "source_path": "out/R7_review.md",
+      "sha256": "2d65c55fd3ed203cf7c1a96dd5301f607647293c45a1cf956e1c503f109090d0",
+      "round": 7,
+      "kind": "AI referee report",
+      "scope": "Round-7 independent review — Z4.2.06, Z4.2.07, Z4.2.10, Z4.2.11; Z1.3 publication comparison; four Z4.2 partials; trust ledger",
+      "public_file": "archive/reviews/R7_review.md",
+      "public_sha256": "a8f83a391e16aade823115d66cd740adeb4b1b77aca65a8a1c33a2e6fdedec4b",
+      "previous_export_sha256": "422867f92951ae4861752b489f0b19b489222634df6f3483a62e913addcb17d8",
+      "edition_note": "Superseded graph percentages redacted with source line numbering preserved.",
+      "prior_public_sha256": [
+        "fbe6ecadb4bd623e23193b00d531c0bb9add0d5d958c5b122f9bf81c8b456f7d",
+        "422867f92951ae4861752b489f0b19b489222634df6f3483a62e913addcb17d8"
+      ],
+      "public_summary_sha256": "cb0d363272e7fe249b9cc705553ad1665059c41ae6290f3f836eddc700977955",
+      "archive_file": "archive/reviews/R7_review.md",
+      "archive_sha256": "a8f83a391e16aade823115d66cd740adeb4b1b77aca65a8a1c33a2e6fdedec4b"
+    },
+    {
+      "file": "reviews/R8_review.md",
+      "source_project": "Atlas project archive",
+      "source_path": "out/R8_review.md",
+      "sha256": "6f2fe9757efaf77cb523bc756595405c38a3b270dad9f6515744b96cb463ae0c",
+      "round": 8,
+      "kind": "AI referee report",
+      "scope": "Round-8 independent review — depth-2 sub-theorems, Z4.2.06/.07, Z4.2.10/.11/.13, Kato questions B01–B09, Korean summary, build stamp",
+      "public_file": "reviews/R8_review.md",
+      "public_sha256": "da53517e228fa9db350aff0acbd68f3b5fd8047092c90bae9e01d1fadac1644c",
+      "prior_public_sha256": [
+        "bcc72904108eb2f6bc28e0b77df64b24b82436b01e19b14b5617eaf065dfcbe1"
+      ],
+      "previous_export_sha256": "bcc72904108eb2f6bc28e0b77df64b24b82436b01e19b14b5617eaf065dfcbe1",
+      "archive_file": "archive/reviews/R8_review.md",
+      "archive_sha256": "8d87d056a292fd7ce9695a68f58695f36ca3d8e766520777b7a1d96aa2625268"
+    },
+    {
+      "file": "reviews/R9_release_review.md",
+      "source_project": "Atlas project archive",
+      "source_path": "out/R9_release_review.md",
+      "sha256": "55964cdfe04a9ed0fa4f1d67c2dc09ae2097aa46d629f0eaa5392ce806b9bfb6",
+      "round": 9,
+      "kind": "AI referee report",
+      "scope": "R9 release review: blueprint v11 release candidate",
+      "edition_note": "Public scope summary. The earlier operational report is retained in the project archive.",
+      "public_file": "reviews/R9_release_review.md",
+      "public_sha256": "7b61cf171fad7fd778025941710acfc16122d1ac7024b6297930e76f4fd7e464",
+      "prior_public_sha256": [
+        "24957e5724b160977cb13137b36290c13f16c64110561f121bec43b082b8d4eb"
+      ],
+      "previous_export_sha256": "24957e5724b160977cb13137b36290c13f16c64110561f121bec43b082b8d4eb"
+    },
+    {
+      "file": "reviews/R10_followup_brief.md",
+      "source_project": "Atlas project archive",
+      "source_path": "tasks/BP_round10b.md",
+      "source_lines": [
+        3,
+        15
+      ],
+      "sha256": "cd148a81c352c80f9f75dc5f115afa0bf4378bfd4d3095a5dbe919cdc860a16c",
+      "round": 10,
+      "kind": "Scoped check embedded in a subsequent task brief",
+      "scope": "R10 focused editorial recheck",
+      "public_file": "reviews/R10_followup_brief.md",
+      "public_sha256": "c4791780c5d2441fca320fade2c4f673ebd22bb3a5bbfda8dc8b4be87945e693",
+      "prior_public_sha256": [
+        "3554a411acf3b23162d819c7c2070cee6b0cb2d7d52d98bdfa72f845e05825ae"
+      ],
+      "previous_export_sha256": "3554a411acf3b23162d819c7c2070cee6b0cb2d7d52d98bdfa72f845e05825ae"
+    },
+    {
+      "file": "reviews/R18_followup_brief.md",
+      "source_project": "Atlas project archive",
+      "source_path": "tasks/BP_round19.md",
+      "source_lines": [
+        3,
+        11
+      ],
+      "sha256": "64f74c88d0b6c98d0522e1b924b787d30ab29bd8428979cc429d5bd4f3397b39",
+      "round": 18,
+      "kind": "Scoped check embedded in a subsequent task brief",
+      "scope": "R18 classification-method recheck",
+      "public_file": "reviews/R18_followup_brief.md",
+      "public_sha256": "5d599b65f7caeac6436249e1629fb759d32d98f44ec124cae82e7ee1fd29908b",
+      "prior_public_sha256": [
+        "8dc4eba3f4a1b2e0d99ec9968e5c3c53a3b79ca3cf83115672c0ef8c575bc56b"
+      ],
+      "previous_export_sha256": "8dc4eba3f4a1b2e0d99ec9968e5c3c53a3b79ca3cf83115672c0ef8c575bc56b"
+    },
+    {
+      "file": "reviews/R22_followup_brief.md",
+      "source_project": "Atlas project archive",
+      "source_path": "tasks/BP_round23.md",
+      "source_lines": [
+        3,
+        7
+      ],
+      "sha256": "2c6a3aa629d34c4d980b3eae9939708a9054d867216b73038a72ca3bee3adf26",
+      "round": 22,
+      "kind": "Scoped check embedded in a subsequent task brief",
+      "scope": "R22 manuscript inventory check",
+      "public_file": "reviews/R22_followup_brief.md",
+      "public_sha256": "56c667f2ee524f36a433585d006ad9d86a6b1684dfc05037fe803df5a437b653",
+      "prior_public_sha256": [
+        "243f1084ee9b092ac98476c442e2620f576aa27d9bbcd05815793ed08efc5710"
+      ],
+      "previous_export_sha256": "243f1084ee9b092ac98476c442e2620f576aa27d9bbcd05815793ed08efc5710"
+    },
+    {
+      "file": "reviews/DB3_review_A.md",
+      "source_project": "Atlas project archive",
+      "source_path": "out/DB3_review_A.md",
+      "sha256": "4706de34e6492a2925757dcf48c7b3fa3ff2655c6e79f788b00aa4ab0c2283ab",
+      "published_sha256": "8dfade6464dc7a48025446f77f7093759f4afc3cb9b731df680e26abb56d0245",
+      "round": null,
+      "kind": "AI referee report",
+      "scope": "Database round 3 analytic notes and composite. The public version redacts local machine identifiers and inserts the notice on the blank second line."
+    },
+    {
+      "file": "reviews/DB3_review_B.md",
+      "source_project": "Atlas project archive",
+      "source_path": "out/DB3_review_B.md",
+      "sha256": "0a30dbfeddb92bb47e21c9df456a9f50c632dd67bf9a85f379c1ef9d61fce543",
+      "published_sha256": "ff29c3d22bf9415dcd049a87bd256c76dcb864108e9ce3b9f2733d47a4d6228b",
+      "round": null,
+      "kind": "AI referee report",
+      "scope": "Database round 3 specialist, public-statement and reading-path outlines. The public version redacts local machine identifiers and inserts the notice on the blank second line.",
+      "public_file": "reviews/DB3_review_B.md",
+      "public_sha256": "ff29c3d22bf9415dcd049a87bd256c76dcb864108e9ce3b9f2733d47a4d6228b",
+      "prior_public_sha256": [
+        "df621f6434dec8d37905b4945647a3631baab528a73ceb1b59dc192e6ca4b393"
+      ],
+      "previous_export_sha256": "df621f6434dec8d37905b4945647a3631baab528a73ceb1b59dc192e6ca4b393"
+    }
+  ],
+  "rounds": [
+    {
+      "round": 4,
+      "records": [
+        "reviews/R4_review_Z1Z3.md",
+        "reviews/R4_review_Z2.md",
+        "reviews/R4_review_Z4.md"
+      ],
+      "availability": "Reports available for the listed scope."
+    },
+    {
+      "round": 5,
+      "records": [
+        "reviews/R5_review_A.md",
+        "reviews/R5_review_B.md",
+        "reviews/R5_review_C.md"
+      ],
+      "availability": "Reports available for the listed scope."
+    },
+    {
+      "round": 6,
+      "records": [
+        "reviews/R6_review.md"
+      ],
+      "availability": "Reports available for the listed scope."
+    },
+    {
+      "round": 7,
+      "records": [
+        "reviews/R7_review.md"
+      ],
+      "availability": "Reports available for the listed scope."
+    },
+    {
+      "round": 8,
+      "records": [
+        "reviews/R8_review.md"
+      ],
+      "availability": "Reports available for the listed scope."
+    },
+    {
+      "round": 9,
+      "records": [
+        "reviews/R9_release_review.md"
+      ],
+      "availability": "Reports available for the listed scope."
+    },
+    {
+      "round": 10,
+      "records": [
+        "reviews/R10_followup_brief.md"
+      ],
+      "availability": "No separately titled R10 referee report was found. A focused follow-up in BP_round10b assesses the eight package corrections."
+    },
+    {
+      "round": 11,
+      "records": [
+        "reviews/R11_review.md"
+      ],
+      "availability": "Reports available for the listed scope."
+    },
+    {
+      "round": 12,
+      "records": [
+        "reviews/R12_review_A.md",
+        "reviews/R12_review_B.md"
+      ],
+      "availability": "Reports available for the listed scope."
+    },
+    {
+      "round": 13,
+      "records": [
+        "reviews/R13_recheck.md"
+      ],
+      "availability": "Reports available for the listed scope."
+    },
+    {
+      "round": 14,
+      "records": [
+        "reviews/R14_review_A.md",
+        "reviews/R14_review_B.md"
+      ],
+      "availability": "Reports available for the listed scope."
+    },
+    {
+      "round": 15,
+      "records": [
+        "reviews/R15_review_A.md",
+        "reviews/R15_review_B.md"
+      ],
+      "availability": "Reports available for the listed scope."
+    },
+    {
+      "round": 16,
+      "records": [
+        "reviews/R16_review_A.md",
+        "reviews/R16_review_B.md"
+      ],
+      "availability": "Reports available for the listed scope."
+    },
+    {
+      "round": 17,
+      "records": [
+        "reviews/R17_review.md"
+      ],
+      "availability": "Reports available for the listed scope."
+    },
+    {
+      "round": 18,
+      "records": [
+        "reviews/R18_review.md",
+        "reviews/R18_followup_brief.md"
+      ],
+      "availability": "The round record integrates R17. BP_round19 separately assesses the R18 classification method."
+    },
+    {
+      "round": 19,
+      "records": [
+        "reviews/R19_review.md"
+      ],
+      "availability": "Reports available for the listed scope."
+    },
+    {
+      "round": 20,
+      "records": [
+        "reviews/R20_review.md"
+      ],
+      "availability": "Reports available for the listed scope."
+    },
+    {
+      "round": 21,
+      "records": [
+        "reviews/R21_review.md"
+      ],
+      "availability": "Reports available for the listed scope."
+    },
+    {
+      "round": 22,
+      "records": [
+        "reviews/R22_candidate_review.md",
+        "reviews/R22_reference_review.md",
+        "reviews/R22_report.md",
+        "reviews/R22_review_crosswalk.md",
+        "reviews/R22_review_graph.md",
+        "reviews/R22_followup_brief.md"
+      ],
+      "availability": "Four JSON ledgers and the local report document R21 integration. BP_round23 confirms the inventory and build. No standalone R22 theorem referee report was found."
+    },
+    {
+      "round": 23,
+      "records": [
+        "reviews/R23_review.md"
+      ],
+      "availability": "Reports available for the listed scope."
+    }
+  ]
+}

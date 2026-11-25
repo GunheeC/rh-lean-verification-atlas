@@ -1,0 +1,87 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D481",
+  "title": "Divisibility of the closed bridge kernel",
+  "track": {
+    "primary": "arakelov",
+    "secondary": []
+  },
+  "statement": "Suppose a family class has a tail of division-kernel data and a closed uniform bound for those kernels whenever the tuple and discriminant-size estimates hold. Under these size estimates the covered-twist and eta-sum bounds imply the division height, frame and slope bounds on a common tail.\n\\[\n\\mathrm{TuSize}(F)\\wedge\\mathrm{DGamSize}(F)\\ \\Longrightarrow\\ \\mathrm{LinkDIVt}(F,C_{\\rm abs},C_H).\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assign division-kernel data on a tail of each family, with the stated closed uniform bound.",
+    "Impose the tuple and discriminant size conditions. For the expanded division-height clause use the covered-twist and eta-sum bounds."
+  ],
+  "lean": [
+    {
+      "name": "Formalism.L2.DIV.closed_linkDIVt_of_closed_bridge_kernel",
+      "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/DIVRecBridgeSel.lean",
+      "line0": 197,
+      "line1": 205,
+      "sha256": "ba4779fe82b80ed4d297ed2593dcebc96ca4e68ce674e24e37713d6f6cb3a4e9",
+      "dominated": 5437,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "G.501 (decomp:D481)",
+      "pages": [
+        282,
+        282
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D481.tex",
+      "section": "decomp:D481",
+      "pages": []
+    }
+  ],
+  "status": "Statement only",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [
+    "P049",
+    "P050",
+    "Z5.1",
+    "Z5.2"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [],
+  "paper_id": "D481",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "divisibility-of-the-closed-bridge-kernel",
+  "aliases": [
+    "closed_linkDIVt_of_closed_bridge_kernel",
+    "D481 Divisibility of the closed bridge kernel"
+  ],
+  "background": [
+    "Division kernels",
+    "Uniform bounds over families"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.501 (decomp:D481)",
+    "pages": [
+      282,
+      282
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "P049": "graph",
+    "P050": "graph",
+    "Z5.1": "graph",
+    "Z5.2": "graph"
+  }
+}

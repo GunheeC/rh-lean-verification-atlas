@@ -1,0 +1,91 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "T18",
+  "title": "Three arithmetic Hilbert–Samuel consequences",
+  "track": {
+    "primary": "arakelov",
+    "secondary": []
+  },
+  "statement": "For each intersection system and finite multihomogeneous presentation as\nabove the following three statements hold.\n(i) On an arithmetic variety of dimension $D+1$, relative semipositivity,\nfibre nefness, conjugation invariance and nonnegative degree on every\narithmetic curve imply $I_P(A^{D+1})\\ge0$.\n(ii) For a birational characteristic-zero presentation with $D\\ge1$,\nsmall-generation data and conjugation invariance, the limsup of the\nsmall-section count for \\nolinkurl{chartLat}, divided in degree $n$ by\n$n^{D+1}/(D+1)!$, is at most $I_P(A^{D+1})$.\n(iii) For a birational presentation over a field with $D\\ge1$, nonnegative\nmultidegree, relative semipositivity at $P_0\\subseteq P$, bounded monomials\nand conjugation invariance, the same limsup bound holds for\n\\nolinkurl{chartLatNm}.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Fix the stated intersection system and finite multihomogeneous presentation. The positivity clause assumes semipositivity, fibre nefness, conjugation invariance and nonnegative curve degrees.",
+    "The chart-lattice clause assumes a birational characteristic-zero presentation, $D\\ge1$, small generation and conjugation invariance.",
+    "For the normed-chart clause use the stated relative semipositivity, nonnegative multidegree, bounded monomials, dimension and invariance conditions."
+  ],
+  "lean": [
+    {
+      "name": "PositivityTheory.Pf1.HilbertSamuelMoriwaki.hsUse_outright",
+      "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/MoriwakiBigness/MoriwakiBigTheorem/Outright.lean",
+      "line0": 13,
+      "line1": 15,
+      "sha256": "b0951c9cdd3b121b5e5f694e20a0fb914b84173a494bf93ac6088970331e779d",
+      "dominated": 9,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/T18_round4.md",
+      "section": "T18 · Three arithmetic Hilbert–Samuel consequences",
+      "pages": [
+        1,
+        3
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "5.28 (sub:T18)",
+      "pages": [
+        45,
+        45
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/T18.tex",
+      "section": "sub:T18",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": 3,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "T18",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "three-arithmetic-hilbertsamuel-consequences",
+  "aliases": [
+    "Three arithmetic Hilbert--Samuel consequences",
+    "hsUse_outright",
+    "T18 Three arithmetic Hilbert–Samuel consequences"
+  ],
+  "background": [
+    "Arithmetic Hilbert–Samuel theory",
+    "Small sections",
+    "Nefness"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "5.28 (sub:T18)",
+    "pages": [
+      45,
+      45
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "review_status": "pending_review",
+  "summary": "Three consequences of arithmetic Hilbert–Samuel theory enter the deep estimate. The first gives the sign of a top intersection. The other two bound small-section growth from above on two specified chart lattices. Their hypotheses and their lattices must be kept separate in applications."
+}

@@ -1,0 +1,419 @@
+{
+  "editions": {
+    "blueprint_v13": {
+      "title": "RH verification blueprint, release v13",
+      "origin": "Atlas project manuscript archive",
+      "sha256": "d9dcb73f10a5829865f9246409d886c16cb1d2087717adf7758f154257a28af4",
+      "pages": 944,
+      "provenance": "AI-drafted, unpublished project manuscript, maintained by Gunhee Cho. No human review. The Lean development has separate authorship.",
+      "distribution": "Distributed as an asset of release v0.1.0."
+    },
+    "paper2_v3": {
+      "title": "From the Selmer window to Dirichlet zero-free statements, v3",
+      "origin": "Atlas project manuscript archive",
+      "sha256": "83af020c6a19b7ddba22d72bd6b27145cf957b0cb4eadc0e643ebff476b25898",
+      "pages": 341,
+      "provenance": "AI-drafted, unpublished project manuscript, maintained by Gunhee Cho. No human review. The Lean development has separate authorship.",
+      "distribution": "Earlier edition retained for citation. The atlas supplies selected excerpts and notes for this edition."
+    },
+    "paper2_v4": {
+      "title": "From the Selmer window to Dirichlet zero-free statements, v4",
+      "origin": "Atlas project manuscript archive",
+      "sha256": "a72979e4b067c41df977183b0a761f47b1e12ba8137a79d1136c06dc3ff1dab7",
+      "pages": 358,
+      "review_status": "pending_review",
+      "conditional_theorem": {
+        "opening": {
+          "label": "r24:intro",
+          "number": "1.1",
+          "page": 6
+        },
+        "hypotheses": {
+          "label": "tab:r24-hypotheses",
+          "number": "1",
+          "pages": [
+            37,
+            39
+          ]
+        },
+        "closing": {
+          "label": "r24:conclusion",
+          "number": "3.43",
+          "page": 40
+        }
+      },
+      "provenance": "AI-drafted, unpublished project manuscript, maintained by Gunhee Cho. No human review. The Lean development has separate authorship.",
+      "distribution": "Earlier edition retained for citation. The atlas supplies selected excerpts and notes for this edition."
+    },
+    "blueprint_v13_cover": {
+      "title": "Companion notice for the unchanged blueprint v13",
+      "pages": 1,
+      "sha256": "15e424d5007746cdd8daaa138a65b21242b7e2789915cf65c94e09d1213ba105",
+      "build_date": "2026-11-25",
+      "companion_to": "blueprint_v13",
+      "origin": "Atlas project manuscript archive",
+      "provenance": "AI-drafted, unpublished project manuscript, maintained by Gunhee Cho. No human review. The Lean development has separate authorship.",
+      "distribution": "Distributed as an asset of release v0.1.0."
+    },
+    "paper2_v5": {
+      "title": "From the Selmer window to Dirichlet zero-free statements, v5",
+      "origin": "Atlas project manuscript archive",
+      "pages": 363,
+      "sha256": "7cb09de1598663c16df743f32dc35839bc480f5672f4bb8af819b1c1f71e180d",
+      "build_date": "2026-11-25",
+      "lean_commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+      "review_status": "pending_review",
+      "release_asset": "https://github.com/GunheeC/rh-lean-verification-atlas/releases/download/v0.1.0/paper_v5.pdf",
+      "conditional_theorem": {
+        "opening": {
+          "section": "Theorem 1.1 · conditional statement",
+          "pages": [
+            6,
+            6
+          ],
+          "start_label": "r24:intro",
+          "end_label": "r24:intro"
+        },
+        "hypotheses": {
+          "section": "Table 1 · global, local and supplementary inputs",
+          "pages": [
+            38,
+            41
+          ],
+          "start_label": "tab:r24-hypotheses",
+          "end_label": "v5:table-end"
+        },
+        "closing": {
+          "section": "Theorem 3.43 · conditional deduction",
+          "pages": [
+            41,
+            42
+          ],
+          "start_label": "r24:conclusion",
+          "end_label": "v5:conclusion-end"
+        }
+      },
+      "list_a": [
+        {
+          "row": "A1",
+          "unit": "D547",
+          "source": {
+            "name": "UpperTheory.Comparison₂.gmA_eq",
+            "file": "Development/AutomorphicArithmetic/PrimitiveCosets/GmAEq.lean",
+            "line0": 61,
+            "line1": 149,
+            "sha256": "9a030e980281ef02d4c0e1b0803352edc89c15c88c56163027de3672e703c068"
+          },
+          "section": "A1 · Equality of the kept-character sum",
+          "pages": [
+            19,
+            19
+          ],
+          "start_label": "v5:chars-start",
+          "end_label": "v5:d547-end"
+        },
+        {
+          "row": "A2",
+          "unit": "D548",
+          "source": {
+            "name": "UpperTheory.Comparison₂.charsA",
+            "file": "Development/AutomorphicArithmetic/PrimitiveCosets/charsA.lean",
+            "line0": 80,
+            "line1": 125,
+            "sha256": "2e3825540c0f207d1382c9bb8f7d4a9c0dd8c08b01dbe9ec6c2758ad44ac77c4"
+          },
+          "section": "A2 · Character-share conditions",
+          "pages": [
+            19,
+            20
+          ],
+          "start_label": "v5:d547-end",
+          "end_label": "v5:d548-end"
+        },
+        {
+          "row": "A3",
+          "unit": "D549",
+          "source": {
+            "name": "UpperTheory.Comparison₂.sigA_le",
+            "file": "Development/AutomorphicArithmetic/PrimitiveCosets/SigALe.lean",
+            "line0": 38,
+            "line1": 60,
+            "sha256": "76af9a0c15d1430c03efad24324cc1e1fc880da1c469944dac5ab35525f9a4e1"
+          },
+          "section": "A3 · Omitted-frequency bound",
+          "pages": [
+            20,
+            20
+          ],
+          "start_label": "v5:d548-end",
+          "end_label": "v5:chars-end"
+        },
+        {
+          "row": "A4",
+          "unit": "D562",
+          "source": {
+            "name": "Formalism.LFunctionChainParameters.ThickSetMeanBounds.derivative_integral_all",
+            "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean",
+            "line0": 966,
+            "line1": 981,
+            "sha256": "2199aa1029611946a5ad7a243a47df41a56417d05aa0ea592a91d4064256cb3c"
+          },
+          "section": "A4 · Increments of the character sum",
+          "pages": [
+            14,
+            15
+          ],
+          "start_label": "r24:regular",
+          "end_label": "v5:regular-end"
+        },
+        {
+          "row": "A5",
+          "unit": "D567",
+          "source": {
+            "name": "Formalism.LFunctionChainParameters.LChain.errX5at_le",
+            "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/PChain.lean",
+            "line0": 613,
+            "line1": 672,
+            "sha256": "a72dea7a7c24282008d1fea77748cb076f221dc8265c60e47a62b11f42887ebf"
+          },
+          "section": "A5 · Per-unit error bound",
+          "pages": [
+            13,
+            14
+          ],
+          "start_label": "r24:d567",
+          "end_label": "v5:d567-end"
+        },
+        {
+          "row": "A6",
+          "unit": "D014",
+          "source": {
+            "name": "UpperTheory.Comparison₂.hostFactsS",
+            "file": "Development/AutomorphicArithmetic/PrimitiveCosets/hostFactsS.lean",
+            "line0": 127,
+            "line1": 136,
+            "sha256": "ef97916068b30a9b83bc32d6b22fb03bdc3882660a3447f087cb63045e087583"
+          },
+          "section": "A6 · Inertia at exceptional host primes",
+          "pages": [
+            15,
+            16
+          ],
+          "start_label": "r24:hostfacts",
+          "end_label": "v5:hostfacts-end"
+        },
+        {
+          "row": "A7",
+          "unit": "D550",
+          "source": {
+            "name": "Formalism.LFunctionChainParameters.LErr.large_x_eventually",
+            "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/SubThreeMulLogTwoLe.lean",
+            "line0": 319,
+            "line1": 329,
+            "sha256": "90f46cef73a8bbf9409ddb93252d5d50dd1093899eda3623171ad8cb61b9a738"
+          },
+          "section": "A7 · A common large-scale threshold",
+          "pages": [
+            13,
+            13
+          ],
+          "start_label": "r24:d550",
+          "end_label": "v5:d550-end"
+        },
+        {
+          "row": "A8",
+          "unit": "D561",
+          "source": {
+            "name": "Deduction.ch_balance",
+            "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChBalance.lean",
+            "line0": 200,
+            "line1": 260,
+            "sha256": "ed29418b71866546dcaaad4dce557ca4bbc1315ad1e70930c6c990b8a58ad229"
+          },
+          "section": "A8 · Prime and character balance",
+          "pages": [
+            11,
+            12
+          ],
+          "start_label": "r24:balance",
+          "end_label": "v5:balance-end"
+        },
+        {
+          "row": "A9",
+          "unit": "D562",
+          "source": {
+            "name": "Formalism.LFunctionChainParameters.ThickSetMeanBounds.lipschitz_weight_all",
+            "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean",
+            "line0": 957,
+            "line1": 964,
+            "sha256": "0bb1c563c4e47fac46b11361efcbfe3cd1c0afe8cb0e32560a9c6585f5786c84"
+          },
+          "section": "A9 · Change of the weight width",
+          "pages": [
+            14,
+            15
+          ],
+          "start_label": "r24:regular",
+          "end_label": "v5:regular-end"
+        },
+        {
+          "row": "A10",
+          "unit": "D561",
+          "source": {
+            "name": "Deduction.CharacterBalanceMoves.th_le",
+            "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean",
+            "line0": 75,
+            "line1": 152,
+            "sha256": "2cd1af6bbeb207dc0b2f12cd38f4601a4293c2fc59903b4b040f5d8405737b4c"
+          },
+          "section": "A10 · Thick sum at fixed width",
+          "pages": [
+            17,
+            18
+          ],
+          "start_label": "r24:thick",
+          "end_label": "v5:thick-end"
+        }
+      ],
+      "unit_locators": {
+        "V4-COND": [
+          {
+            "section": "Theorem 1.1 · conditional statement",
+            "pages": [
+              6,
+              6
+            ],
+            "start_label": "r24:intro",
+            "end_label": "r24:intro"
+          },
+          {
+            "section": "Table 1 · global, local and supplementary inputs",
+            "pages": [
+              38,
+              41
+            ],
+            "start_label": "tab:r24-hypotheses",
+            "end_label": "v5:table-end"
+          },
+          {
+            "section": "Theorem 3.43 · conditional deduction",
+            "pages": [
+              41,
+              42
+            ],
+            "start_label": "r24:conclusion",
+            "end_label": "v5:conclusion-end"
+          }
+        ],
+        "D547": [
+          {
+            "section": "A1 · Equality of the kept-character sum",
+            "pages": [
+              19,
+              19
+            ],
+            "start_label": "v5:chars-start",
+            "end_label": "v5:d547-end"
+          }
+        ],
+        "D548": [
+          {
+            "section": "A2 · Character-share conditions",
+            "pages": [
+              19,
+              20
+            ],
+            "start_label": "v5:d547-end",
+            "end_label": "v5:d548-end"
+          }
+        ],
+        "D549": [
+          {
+            "section": "A3 · Omitted-frequency bound",
+            "pages": [
+              20,
+              20
+            ],
+            "start_label": "v5:d548-end",
+            "end_label": "v5:chars-end"
+          }
+        ],
+        "D562": [
+          {
+            "section": "A4 · Increments of the character sum",
+            "pages": [
+              14,
+              15
+            ],
+            "start_label": "r24:regular",
+            "end_label": "v5:regular-end"
+          },
+          {
+            "section": "A9 · Change of the weight width",
+            "pages": [
+              14,
+              15
+            ],
+            "start_label": "r24:regular",
+            "end_label": "v5:regular-end"
+          }
+        ],
+        "D567": [
+          {
+            "section": "A5 · Per-unit error bound",
+            "pages": [
+              13,
+              14
+            ],
+            "start_label": "r24:d567",
+            "end_label": "v5:d567-end"
+          }
+        ],
+        "D014": [
+          {
+            "section": "A6 · Inertia at exceptional host primes",
+            "pages": [
+              15,
+              16
+            ],
+            "start_label": "r24:hostfacts",
+            "end_label": "v5:hostfacts-end"
+          }
+        ],
+        "D550": [
+          {
+            "section": "A7 · A common large-scale threshold",
+            "pages": [
+              13,
+              13
+            ],
+            "start_label": "r24:d550",
+            "end_label": "v5:d550-end"
+          }
+        ],
+        "D561": [
+          {
+            "section": "A8 · Prime and character balance",
+            "pages": [
+              11,
+              12
+            ],
+            "start_label": "r24:balance",
+            "end_label": "v5:balance-end"
+          },
+          {
+            "section": "A10 · Thick sum at fixed width",
+            "pages": [
+              17,
+              18
+            ],
+            "start_label": "r24:thick",
+            "end_label": "v5:thick-end"
+          }
+        ]
+      },
+      "provenance": "AI-drafted, unpublished project manuscript, maintained by Gunhee Cho. No human review. The Lean development has separate authorship.",
+      "distribution": "Distributed as an asset of release v0.1.0."
+    }
+  }
+}

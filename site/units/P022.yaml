@@ -1,0 +1,116 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "P022",
+  "title": "Landau’s criterion on logarithmic windows",
+  "track": {
+    "primary": "analytic",
+    "secondary": []
+  },
+  "statement": "\\par\\noindent{\\footnotesize \\nolinkurl{landauWindow.lean:83}.}\\par\nLet $(g,\\Phi,Z)$ be pole data, $0<\\theta<1$ and $\\delta>0$, and assume\n$\\mathrm{W}(g,\\theta,\\delta)$. Then $\\operatorname{Re}\\rho\\le\\theta$ for every $\\rho\\in Z$.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "The triple $(g,\\Phi,Z)$ satisfies the pole-data record, including its growth, transform, isolated-singularity and residue conditions.",
+    "Take $0<\\theta<1$ and $\\delta>0$. The logarithmic window condition $W(g,\\theta,\\delta)$ holds."
+  ],
+  "lean": [
+    {
+      "name": "Deduction.landau_window",
+      "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindow.lean",
+      "line0": 83,
+      "line1": 166,
+      "sha256": "104676d2ea110702c4c1586024ad2de75dc99d166c78548b85da61ba7d36c00d",
+      "dominated": 863,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "6.23 (pn:P022)",
+      "pages": [
+        61,
+        61
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/P022.tex",
+      "section": "pn:P022",
+      "pages": []
+    },
+    {
+      "document": "paper2_v3",
+      "section": "Theorem 6.23 and its proof after Lemma 6.28",
+      "pages": [
+        61,
+        65
+      ],
+      "coverage": "Statement, analytic lemmas and conclusion in the abstract-statement subsection."
+    }
+  ],
+  "status": "Full",
+  "grade": "L2",
+  "reviews": [
+    "reviews/R20_review.md"
+  ],
+  "prerequisites": [],
+  "size_pages": 5,
+  "open_questions": [
+    "Where does the contradiction use positivity of the residue at a real pole? Identify the corresponding datum in P023."
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [
+    {
+      "grade": "L2",
+      "review": "reviews/R20_review.md",
+      "lines": [
+        54,
+        54
+      ],
+      "scope": "R20 local implication under its stated premises, not its prerequisite cones.",
+      "verdict": "F: full derivation; yes"
+    },
+    {
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "lines": [
+        106,
+        106
+      ],
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript.",
+      "verdict": "Exact statement comparison"
+    }
+  ],
+  "paper_id": "P022",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "landau-window-criterion",
+  "aliases": [
+    "Landau window theorem",
+    "one-sided Landau criterion",
+    "A one-sided theorem on logarithmic windows",
+    "landau_window",
+    "P022 Landau’s criterion on logarithmic windows"
+  ],
+  "background": [
+    "Laplace transforms",
+    "Isolated poles and residues",
+    "Cauchy estimates"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "6.23 (pn:P022)",
+    "pages": [
+      61,
+      61
+    ]
+  },
+  "question_sources": [
+    "questions/analytic.md"
+  ],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "summary": "A one-sided window bound for a function with the stipulated pole data forces every listed pole to lie on or to the left of the specified vertical line. This analytic implication explains why bounds on distant intervals can restrict the zeros represented by those poles."
+}

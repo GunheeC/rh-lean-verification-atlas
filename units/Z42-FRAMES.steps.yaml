@@ -1,0 +1,128 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "Z42-FRAMES",
+  "edition_sha256": "072f3ce4aa89510ebd31b4f85778d90ca861da4853fd17700e704e8b1850c0cc",
+  "note_sha256": "b391a2ae29a13bfe23f5bc1bd96fd686f1692c712f140dd1cb0ceaabf6189811",
+  "statement_sha256": "4a94eb333951952c8394bfbab95a54756545f242bba62941f87202ea0ee84e57",
+  "sources": [
+    {
+      "path": "notes/blueprint/Z42-FRAMES.tex",
+      "sha256": "b391a2ae29a13bfe23f5bc1bd96fd686f1692c712f140dd1cb0ceaabf6189811"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Rational action and the level factor carry the chosen lattice tuple to the translated tuple in the same site.",
+      "kind": "computation",
+      "uses": [
+        "Z42-SITES",
+        "input: admissible lattice pair"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.TwV.move_at_site",
+          "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/KernelSiteArithmeticGroupMovesFrames.lean",
+          "line0": 13,
+          "line1": 15
+        }
+      ],
+      "source": "notes/blueprint/Z42-FRAMES.tex",
+      "anchor": "Fix a valid source",
+      "source_lines": [
+        7,
+        11
+      ],
+      "claim_sha256": "2cd425430e5b0c584c40d4bec43af733e59809a4cf30218d72afd3037cf39358",
+      "passage_sha256": "f838af74c7188a6e80b8c881ea5c1aab1555ae8c113348941b4c8f8f8abaa7a2",
+      "sha256": "75a110608df08ec59a86ab9544829a6d2da0e5f3f60482c15a02a3d3ec5a2605",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The ratio of arithmetic scalars is computed from the moved exterior lattice and its character factor.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "input: determinant law at the site"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.TwV.move_at_site",
+          "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/KernelSiteArithmeticGroupMovesFrames.lean",
+          "line0": 13,
+          "line1": 15
+        }
+      ],
+      "source": "notes/blueprint/Z42-FRAMES.tex",
+      "anchor": "Moving the source by",
+      "source_lines": [
+        159,
+        173
+      ],
+      "claim_sha256": "44e001f9f046660d953b092c61ac23b6d32a758c2f218c32c2fb7ec2c1531d24",
+      "passage_sha256": "d6604ed4c41c4cb05713fe45fb72d970f834e0dfb5818ec3b4ca689a2050d63a",
+      "sha256": "63e79605fb562ac0de2f8a09f9259cc535976587c14732db3771448218f5ad91",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The cleared local lattice comparison yields the away identity at the prescribed place under the supplied dictionary.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "Z42-SITES",
+        "input: positive pair and comparison hypotheses"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.TwV.away_of_dict",
+          "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/KernelSiteSeriesIndependentAwayFromPlaceOverP.lean",
+          "line0": 13,
+          "line1": 16
+        }
+      ],
+      "source": "notes/blueprint/Z42-FRAMES.tex",
+      "anchor": "Clear one common integer denominator",
+      "source_lines": [
+        237,
+        256
+      ],
+      "claim_sha256": "80b07b6ad819f90e85ee1388c10d4b6d9a2d696483d92913fc4e6908ac646eea",
+      "passage_sha256": "45e306c6499a690e61584acbf71b3169205529d0b67b50b36e2d7b5a7fb2909f",
+      "sha256": "60c832c9b51b57828c611e5a1c67fe2f6c4416d5dfa04c25e4ba6c4e1f48b4e2",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The class number clears the ideal class in the norm-one determinant comparison, giving the supplied bound on the normalized scalar.",
+      "kind": "inequality",
+      "uses": [
+        "Z42-SITES",
+        "input: norm-one character and bounded scalar data"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.TwV.scal_at_site",
+          "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/KernelSiteSeriesScalarPowIntegral.lean",
+          "line0": 14,
+          "line1": 16
+        }
+      ],
+      "source": "notes/blueprint/Z42-FRAMES.tex",
+      "anchor": "For a norm-one idele",
+      "source_lines": [
+        29,
+        34
+      ],
+      "claim_sha256": "4f4572cc272aac18581b352af42a6ef62fc915b4705a698a27584fca26cfdb13",
+      "passage_sha256": "6ecd8ac8e4fcf08ebdbf53e904d79410f94f4bf281d3592295caba425a0ba502",
+      "sha256": "11c2a452bf6bc21ee9102ba5a9516a0829aaba9937b8fd91bc74ca593af2e100",
+      "ai_review": []
+    }
+  ],
+  "history": []
+}

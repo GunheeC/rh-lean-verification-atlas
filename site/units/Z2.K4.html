@@ -1,0 +1,38 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Z2.K4 · Odd stable homology and torsion · RH verification atlas</title><link rel="stylesheet" href="../atlas.css"><script>window.MathJax={tex:{inlineMath:[["$","$"]],displayMath:[["$$","$$"]],processEscapes:true},options:{ignoreHtmlClass:"no-math"}};</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script></head><body><header><div class="bar"><a class="brand" href="../index.html">RH verification atlas</a><nav aria-label="Atlas navigation"><a href="../index.html">Home</a> <a href="../STATUS.html">Status</a> <a href="../MAP.html">Map</a> <a href="../dashboard/index.html">Tracks</a> <a href="../lookup/search.html">Search declarations</a></nav></div></header><main><h1 id="z2k4--odd-stable-homology-and-torsion">Z2.K4 · Odd stable homology and torsion</h1>
+<p class="notice">AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved</p>
+<p>Successive block operations bound the rank of the surviving odd homology by the number of complex places in the stated range. Separately, torsion orders stabilize above the given rank threshold. These estimates control the free and torsion contributions needed for finite counting.</p>
+<p><code>odd-stable-homology-and-torsion</code> · <a href="../tracks/ktheory/index.html">Algebraic K-theory and cohomology of arithmetic groups</a></p>
+<p><strong>Full</strong> · <strong>L1</strong> Statement matched to Lean · Record generated 2026-11-25 (no human check).</p>
+<div class="scroll"><table>
+<thead><tr><th>1 · Lean pinned</th><th>2 · Statement compared</th><th>3 · Prose</th><th>4 · Steps</th><th>5 · AI review</th><th>6 · Human</th></tr></thead>
+<tbody><tr><td>✓</td><td>✓</td><td>Full</td><td>6</td><td>–</td><td>0 of 6 steps</td></tr>
+</tbody></table></div>
+<p><a href="Z2.K4.check.html">Numbered proof and check records</a> · <a href="../PROGRESS.html">Progress and counting rules</a></p>
+<h2 id="statement">Statement</h2>
+<p>For totally complex <span class="math">$L$</span>, even <span class="math">$k$</span>, <span class="math">$k+1&lt;r_2(L)$</span>, <span class="math">$\ell&gt;0$</span> and <span class="math">$n\ge2(k+1)+4$</span>, the span of the <span class="math">$z$</span>-sequence in degree <span class="math">$k+1$</span> has integral rank at most <span class="math">$r_2(L)$</span>. For <span class="math">$n&#x27;\ge n\ge2m+4$</span>, torsion in degree <span class="math">$m$</span> of <span class="math">$\mathrm{GL}_{n&#x27;}(\mathcal O_L)$</span> is finite and has the same order as at rank <span class="math">$n$</span>.</p>
+<h2 id="assumptions">Assumptions</h2>
+<ul><li>The field is totally complex. For the odd-rank statement use even <span class="math">$k$</span>, <span class="math">$k+1&lt;r_2(L)$</span>, positive block multiplicity and <span class="math">$n\ge2(k+1)+4$</span>.</li><li>For stable torsion use <span class="math">$n&#x27;\ge n\ge2m+4$</span>.</li></ul>
+<p>Sources for the assumptions · <a href="../data/editions.json">RH verification blueprint, release v13</a></p>
+<h2 id="where-to-read">Where to read</h2>
+<p>Blueprint v13 and papers v3–v5 are this atlas project’s own AI-written, unpublished drafts. They have no human review and were not written by the author of the Lean development. Blueprint v13, its separate cover, and paper v5 are distributed as assets of release v0.1.0. For v3 and v4 the atlas supplies selected excerpts and notes. <a href="../data/editions.json">Edition register</a></p>
+<ul><li><a href="../notes/blueprint/Z2.K4.tex">Blueprint source excerpt</a></li><li><a href="../data/editions.json">RH verification blueprint, release v13</a>, section label <code>r6:review:Z2.K4</code>, PDF p. 362 (printed p. 337)</li><li><a href="../data/editions.json">RH verification blueprint, release v13</a>, section label <code>sec:P-r5-k4</code>, PDF p. 333 (printed p. 308)</li><li><a href="../data/editions.json">RH verification blueprint, release v13</a>, section label <code>r7:review:Z2.K4</code>, PDF p. 390 (printed p. 365)</li></ul>
+<h2 id="evidence">Evidence</h2>
+<ul><li><a href="../reviews/R5_review_A.html">R5 review A</a>, original lines 10–12 — No statement mismatch reported. Statement comparison; the proof has qualifications.</li></ul>
+<p>Named statement declarations with the hypotheses above. Chart supplier records have their own review scopes.</p>
+<p>Review records · <a href="../reviews/R5_review_A.html">R5 review A</a> · <a href="../reviews/R6_review.html">R6 review</a> · <a href="../reviews/R20_review.html">R20 review</a></p>
+<h2 id="lean-declarations">Lean declarations</h2>
+<ul><li><code>PositivityTheory.KB.bOdd_zk</code>  <br><a href="https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/TorsionIntegers/Bridge.lean#L34-L35"><code>Bridge.lean</code></a>, lines 34–35 · 23,135 dominated lines · SHA-256 <code>e774804fcff5</code>.</li><li><code>UpperTheory.V.ZK.Up.torsStab</code>  <br><a href="https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/TorsionRankCounts/TorsStab.lean#L16-L39"><code>TorsStab.lean</code></a>, lines 16–39 · 31 dominated lines · SHA-256 <code>9da559b30cfe</code>.</li></ul>
+<p><a href="Z2.K4.yaml">Machine record and full declaration hashes</a> · <a href="../lookup/declarations.html">Declaration lookup</a></p>
+<h2 id="reading-prerequisites">Reading prerequisites</h2>
+<p>Background · Homological stability · Odd homology of general linear groups.</p>
+<ul><li><a href="P038.html">P038 · All-prime torsion from faces and stabilizers</a> · graph</li><li><a href="Z2.K7.html">Z2.K7 · Full integral homology torsion</a> · graph</li></ul>
+<p><a href="../data/round3_prerequisites.json">Evidence and definitions of reading links</a></p>
+<h2 id="open-questions">Open questions</h2>
+<p>None recorded.</p>
+<h2 id="graph-connections">Graph connections</h2>
+<p>Arrows may connect either a unit’s main declaration or an indexed member.</p>
+<p><strong>Uses</strong> · <a href="P038.html">P038</a> · <a href="Z2.K7.html">Z2.K7</a></p>
+<p><strong>Used by</strong> · <a href="P013.html">P013</a> · <a href="W05.html">W05</a></p>
+<p><a href="../data/unit_graph.json">Declaration witnesses and graph scope</a></p>
+<p>Lookup aliases · <code>Z2.K4 Odd stable homology and torsion</code></p>
+<p>&lt;!-- Unit metadata SHA-256 c0684175bf68d3d4948006f05759c1220061234b2ed31f3eb66088edc45d8ace --&gt;</p></main><footer><a href="../help.html">Using the local edition</a></footer></body></html>

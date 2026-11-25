@@ -1,0 +1,43 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>T14 · An averaged slope bound over deep components · RH verification atlas</title><link rel="stylesheet" href="../atlas.css"><script>window.MathJax={tex:{inlineMath:[["$","$"]],displayMath:[["$$","$$"]],processEscapes:true},options:{ignoreHtmlClass:"no-math"}};</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script></head><body><header><div class="bar"><a class="brand" href="../index.html">RH verification atlas</a><nav aria-label="Atlas navigation"><a href="../index.html">Home</a> <a href="../STATUS.html">Status</a> <a href="../MAP.html">Map</a> <a href="../dashboard/index.html">Tracks</a> <a href="../lookup/search.html">Search declarations</a></nav></div></header><main><h1 id="t14--an-averaged-slope-bound-over-deep-components">T14 · An averaged slope bound over deep components</h1>
+<p class="notice">AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved</p>
+<p>On a good deep component datum meeting the rank, weight-gap and prime-factor restrictions, one can bound component slopes from below on average with an explicit error. A single constant works across those data, furnishing the averaged estimate used in the covolume comparison.</p>
+<p><code>an-averaged-slope-bound-over-deep-components</code> · <a href="../tracks/arakelov/index.html">Arakelov geometry and geometry of numbers</a> · <a href="../tracks/theta/index.html">Theta correspondence and automorphic representations of unitary groups</a></p>
+<p><strong>Outlined</strong> · <strong>L1</strong> Statement matched to Lean · Record generated 2026-11-25 (no human check).</p>
+<div class="scroll"><table>
+<thead><tr><th>1 · Lean pinned</th><th>2 · Statement compared</th><th>3 · Prose</th><th>4 · Steps</th><th>5 · AI review</th><th>6 · Human</th></tr></thead>
+<tbody><tr><td>✓</td><td>✓</td><td>Outlined</td><td>2</td><td>–</td><td>0 of 2 steps</td></tr>
+</tbody></table></div>
+<p><a href="T14.check.html">Numbered proof and check records</a> · <a href="../PROGRESS.html">Progress and counting rules</a></p>
+<h2 id="statement">Statement</h2>
+<p>Assume the eight statements T17–T24. There is a real <span class="math">$C\ge0$</span> uniform in the following data. Let a core <span class="math">$T$</span> on <span class="math">$D$</span> satisfy the core laws and <span class="math">$m^2\le k$</span>. Take <span class="math">$1\le j&lt;m$</span>, a deep datum <span class="math">$Y$</span> of index <span class="math">$j$</span>, an integer <span class="math">$e\ge0$</span> and a real <span class="math">$o$</span> with <span class="math">$Y$</span> good at <span class="math">$(e,o)$</span>. Suppose its integer <span class="math">$M&#x27;$</span> has at most fifteen distinct prime factors. For each admissible weight <span class="math">$u$</span> with gap <span class="math">$g&gt;0$</span>, there are real numbers <span class="math">$s_Z$</span>, indexed by components, such that</p>
+<div class="math display">$$s_Z\le\mathrm{compVolSlope}_{Y,\xi_R,8,\mathrm{mixVals}(B),Z}(u), \qquad \frac{\sum_Z^{\mathrm{fin}}s_Z}{\#\mathrm{Comp}} \ge -C\,\mathrm{errX}(\ell(D),u,g),\qquad B=\mathrm{bndB}(u,g).$$</div>
+<p>Here the weight decreases strictly at each embedding, and differences from each index on the <span class="math">$q$</span>-side to any other index there or on the <span class="math">$p$</span>-side have absolute value at least <span class="math">$g$</span>.</p>
+<h2 id="assumptions">Assumptions</h2>
+<ul><li>Assume the eight inputs T17–T24.</li><li>Use core data satisfying the core laws and <span class="math">$m^2\le k$</span>, <span class="math">$1\le j&lt;m$</span>, a good deep datum at <span class="math">$(e,o)$</span>, and the stated bound on the number of prime factors.</li></ul>
+<p>Sources for the assumptions · <a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a></p>
+<h2 id="where-to-read">Where to read</h2>
+<p>Blueprint v13 and papers v3–v5 are this atlas project’s own AI-written, unpublished drafts. They have no human review and were not written by the author of the Lean development. Blueprint v13, its separate cover, and paper v5 are distributed as assets of release v0.1.0. For v3 and v4 the atlas supplies selected excerpts and notes. <a href="../data/editions.json">Edition register</a></p>
+<ul><li><a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a>, 5.24 (sub:T14), p. 44. Statement starts on the cited page.</li><li><a href="../notes/units/T14.tex">Manuscript source excerpt</a> · section <code>sub:T14</code></li><li><a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a>, The chain in detail: P012, pp. 22–23. Shared subsection for this station, including subordinate inputs.</li><li><a href="../crosswalk/index.html">Adriazola comparison</a> · H15.69 · Hypothesis 15.69 (target DeepStR only). Target predicate only. The local implication has additional hypotheses.</li></ul>
+<h3 id="other-expositions-and-comparisons">Other expositions and comparisons</h3>
+<ul><li><a href="https://github.com/jimjamzola/RH-Alpoge-Reconstruction/blob/aa9c86bf2a7d29b08575641fecea19a2a603e87c/manuscript/main.pdf">Adriazola, Hypothesis 15.69, p. 239</a> · exact. <a href="../crosswalk/adriazola.html">Correspondence table</a>.</li><li><a href="https://github.com/jimjamzola/RH-Alpoge-Reconstruction/blob/aa9c86bf2a7d29b08575641fecea19a2a603e87c/manuscript/main.pdf">Adriazola, §15, cov:main and inputs (I1)–(I17), (G1)–(G4)</a> · none. <a href="../crosswalk/adriazola.html">Correspondence table</a>.</li></ul>
+<h3 id="declaration-name-matches">Declaration-name matches</h3>
+<ul><li><a href="../crosswalk/jae-63.html">jae-63/rh-alpoge-blueprint</a> · 1 matching declaration.</li></ul>
+<h2 id="evidence">Evidence</h2>
+<ul><li><a href="../reviews/R21_review.html">R21 review</a>, original line 131 — Exact statement comparison. Lean interface as specified in the review row; no equivalence with a published result inferred.</li></ul>
+<p>Review records · <a href="../reviews/R21_review.html">R21 review</a></p>
+<h2 id="lean-declarations">Lean declarations</h2>
+<ul><li><code>PositivityTheory.HtPt.Ah.deep_slim_use</code>  <br><a href="https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/WeilBound/CoreStatements/AutomorphicKernels/MoriwakiBigness/HilbertSamuelApplications/AhSlimU.lean#L9-L14"><code>AhSlimU.lean</code></a>, lines 9–14 · 486,193 dominated lines · SHA-256 <code>cdaf281cbb61</code>.</li></ul>
+<p><a href="T14.yaml">Machine record and full declaration hashes</a> · <a href="../lookup/declarations.html">Declaration lookup</a></p>
+<h2 id="reading-prerequisites">Reading prerequisites</h2>
+<p>Background · Arakelov slopes · Heights of deep components.</p>
+<ul><li><a href="D309.html">D309 · The Hodge–Tate sequence from the Fargues exact sequence</a> · graph</li><li><a href="T26.html">T26 · The arithmetic inputs behind the deep estimate</a> · graph</li></ul>
+<p><a href="../data/round3_prerequisites.json">Evidence and definitions of reading links</a></p>
+<h2 id="open-questions">Open questions</h2>
+<ul><li>Which supplier fixes the small-section error uniformly over the components that vary in the family?</li></ul>
+<h2 id="graph-connections">Graph connections</h2>
+<p>Arrows may connect either a unit’s main declaration or an indexed member.</p>
+<p><strong>Uses</strong> · <a href="D309.html">D309</a> · <a href="T26.html">T26</a></p>
+<p><strong>Used by</strong> · <a href="T13.html">T13</a></p>
+<p><a href="../data/unit_graph.json">Declaration witnesses and graph scope</a></p>
+<p>Lookup aliases · <code>DeepStR target</code>, <code>An averaged bound over deep components</code>, <code>deep_slim_use</code>, <code>T14 An averaged slope bound over deep components</code></p>
+<p>&lt;!-- Unit metadata SHA-256 dd5fef29a97507a509e295e919583abc5c228cda67633462e3f321a3f21be889 --&gt;</p></main><footer><a href="../help.html">Using the local edition</a></footer></body></html>

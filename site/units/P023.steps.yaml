@@ -1,0 +1,100 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "P023",
+  "edition_sha256": "97d20dd685eb59146b4653b32d605d20f516c4c75fc70dcdae625e88b38489b6",
+  "note_sha256": "6f56e2fd71664aa135fdbe669b0e734f0c339bddfb039d0418d661254fdebae9",
+  "statement_sha256": "572c8257b651357db46d1ee649b28a8e3a53a512b54801eecd89a0420ffd4675",
+  "sources": [
+    {
+      "path": "notes/units/P023.tex",
+      "sha256": "6f56e2fd71664aa135fdbe669b0e734f0c339bddfb039d0418d661254fdebae9"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "On putting U equal to log Y, the power window becomes a logarithmic window, and the integral of its explicit majorant obeys the required bound.",
+      "kind": "computation",
+      "uses": [
+        "input: cofinal power windows"
+      ],
+      "lean": [
+        {
+          "name": "Deduction.zeroFree_of_rpow_window",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ZeroFreeOfRpowWindow.lean",
+          "line0": 11,
+          "line1": 14
+        }
+      ],
+      "source": "notes/units/P023.tex",
+      "anchor": "choose $Y",
+      "source_lines": [
+        9,
+        28
+      ],
+      "claim_sha256": "b2470660262b60a086050213408460436d1b71e1277fbfebbce8d5327d4e5afa",
+      "passage_sha256": "ff22ee99696fe98ef2d48ba57ba248e49deaaa3376cffefd9b5676a8b57e132c",
+      "sha256": "4aa4f516b5ec2e17360ea0f584c89dde0bd0e694832e4f90239de4e78321519c",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The pole criterion puts every pole in the family pole set on or to the left of the chosen exponent.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S1",
+        "P022",
+        "input: positive-weight family pole data"
+      ],
+      "lean": [
+        {
+          "name": "Deduction.zeroFree_of_rpow_window",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ZeroFreeOfRpowWindow.lean",
+          "line0": 11,
+          "line1": 14
+        }
+      ],
+      "source": "notes/units/P023.tex",
+      "anchor": "prop:E-poledata-family}",
+      "source_lines": [
+        9,
+        28
+      ],
+      "claim_sha256": "9494425fcfb40530fcf77648ddf643bfe27003f3394b318ab81bad11bc5c7639",
+      "passage_sha256": "ff22ee99696fe98ef2d48ba57ba248e49deaaa3376cffefd9b5676a8b57e132c",
+      "sha256": "ddb08a1da738280b036cf3341f8217e81e2d8c8fdebaf874b6be88199e1ca4fb",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "A zero in the strip would be represented in the pole set, while the boundary and right-hand region use the separate classical nonvanishing assertion.",
+      "kind": "case-split",
+      "uses": [
+        "S2",
+        "standard: nonvanishing on the boundary and beyond"
+      ],
+      "lean": [
+        {
+          "name": "Deduction.zeroFree_of_rpow_window",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ZeroFreeOfRpowWindow.lean",
+          "line0": 11,
+          "line1": 14
+        }
+      ],
+      "source": "notes/units/P023.tex",
+      "anchor": "If $\\operatorname{Re}s\\ge1$",
+      "source_lines": [
+        9,
+        28
+      ],
+      "claim_sha256": "cc35ff7203080809b1302a4db5987b3772c50a499c256a9d8ee6aced7d4cd1f2",
+      "passage_sha256": "ff22ee99696fe98ef2d48ba57ba248e49deaaa3376cffefd9b5676a8b57e132c",
+      "sha256": "4a061364e0705a7d6acce98aa011c8c0e831f4065ca5c0bb3b52c1140d088f50",
+      "ai_review": []
+    }
+  ],
+  "history": []
+}

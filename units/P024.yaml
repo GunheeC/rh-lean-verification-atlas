@@ -1,0 +1,95 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "P024",
+  "title": "A common mark for the two automorphy conclusions",
+  "track": {
+    "primary": "galois",
+    "secondary": []
+  },
+  "statement": "Assume the automorphic hypotheses \\(H'\\) together with weak descent,\ncyclic base change and quadratic descent, the specified quaternion\nexistence theorem, and real semisimplicity of the cusp data.\n\\begin{enumerate}\n\\item For every admitted CM field \\(K\\), coefficient ring, nonzero level,\nweight parameter, character and marked datum \\(D\\), every\n\\(\\iota:\\overline{\\mathbb Q}_\\ell\\simeq\\mathbb C\\), and every valuation\nabove \\(\\ell\\), there is a single \\(g_1\\) satisfying the marking equations\nfor \\(D\\), the finiteness condition \\(\\mathrm{FinEnd}\\), and both automorphic\nend conditions, of ranks three and two respectively.\n\\item Suppose also that \\([K:\\mathbb Q]=2\\) and \\(K\\) contains a root\nof \\(X^2+1\\). For every admitted host datum and host frame \\(F\\) there\nis a marked \\(g_1\\) such that for each universal representation \\(u\\)\nat that mark, its weight-zero part is finite as a module over the\ncoefficient ring. At every Type~I specialization \\(r\\) of \\(u\\), the\nindicated matrix representation satisfies the prescribed\nautomorphy condition over \\(K\\) with twist \\(-1\\).\n\\end{enumerate}",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume $H'$, weak descent, cyclic base change, quadratic descent, the quaternion existence input and real semisimplicity.",
+    "Use the prescribed admissible marked CM datum; the reduced host conclusion additionally assumes a quadratic $K$ containing a root of $X^2+1$."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.Z.Win.Dn.ends0_alt",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/DnEndsTop.lean",
+      "line0": 15,
+      "line1": 16,
+      "sha256": "91245dc3b77b7e51d2eb1adb168b385f64c1c9c1f2cd51aaa1a4e37dacc3b8e3",
+      "dominated": 4505,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "7.1 (pn:P024)",
+      "pages": [
+        72,
+        72
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/P024.tex",
+      "section": "pn:P024",
+      "pages": []
+    }
+  ],
+  "status": "Statement only",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [
+    "B04",
+    "D077",
+    "Z1.1.01",
+    "Z1.1.02",
+    "Z1.1.03",
+    "Z1.1.04",
+    "Z1.1.05",
+    "Z1.1.06"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [],
+  "paper_id": "P024",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "a-common-mark-for-the-two-automorphy-conclusions",
+  "aliases": [
+    "Two conclusions with a common mark",
+    "P024 A common mark for the two automorphy conclusions"
+  ],
+  "background": [
+    "Automorphy lifting",
+    "Ordinary deformation rings"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "7.1 (pn:P024)",
+    "pages": [
+      72,
+      72
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "B04": "graph",
+    "D077": "graph",
+    "Z1.1.01": "graph",
+    "Z1.1.02": "graph",
+    "Z1.1.03": "graph",
+    "Z1.1.04": "graph",
+    "Z1.1.05": "graph",
+    "Z1.1.06": "graph"
+  }
+}

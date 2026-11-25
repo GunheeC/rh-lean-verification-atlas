@@ -1,0 +1,101 @@
+{
+  "id": "Z1.3.02",
+  "title": "Hodge–Tate law for smoothed classes",
+  "track": {
+    "primary": "galois",
+    "secondary": [
+      "local"
+    ]
+  },
+  "statement": "For admissible Hodge–Tate parameters and every compatible embedding, integral class family, eigendistribution and $d_0\\ge2$ prime to $\\ell$, the smoothed second coordinate satisfies the explicit HT law with one nonzero scalar and precision-compatible units at every level.",
+  "assumptions": [
+    "source:blueprint_v13"
+  ],
+  "hypothesis_details": [
+    "Fix compatible Hodge–Tate data, embedding, integral class family and eigendistribution.",
+    "The smoothing integer is at least two and prime to the coefficient prime."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.Z.Kato.K5.smoothedZetaClass_hodgeTateLaw",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/SmoothedZetaClasses/SmoothedZetaClassHodgeTateLaw.lean",
+      "line0": 4,
+      "line1": 4,
+      "sha256": "191a6d6655c365ba1155e2c1072d477e84cf4875b2962014a94d40889294a27c",
+      "dominated": 28779,
+      "graph": "allChi",
+      "role": "statement"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/blueprint/Z1.3.02.tex",
+      "section": "r6:Z1.3.02, r7:Z1.3.02",
+      "pages": []
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r6:Z1.3.02",
+      "pages": [
+        378,
+        378
+      ],
+      "printed_page": 353,
+      "scope": "First page of this named destination."
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r7:Z1.3.02",
+      "pages": [
+        404,
+        404
+      ],
+      "printed_page": 379,
+      "scope": "First page of this named destination."
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": null,
+  "open_questions": [
+    "Prove the cusp coefficient formula for this Hecke functional, with its common loss and norm-one factors."
+  ],
+  "last_checked": "2026-11-24",
+  "blueprint_members": [
+    "Z1.3.02"
+  ],
+  "representative": "UpperTheory.V.Z.Kato.K5.smoothedZetaClass_hodgeTateLaw",
+  "statement_declarations": [
+    "UpperTheory.V.Z.Kato.K5.smoothedZetaClass_hodgeTateLaw"
+  ],
+  "grade_scope": "Named statement declarations with the hypotheses above. Chart supplier records have their own review scopes.",
+  "confirmation_basis": "Minimum across the statement declarations, using registry rows for the blueprint assignments listed here. Reviews of other expositions of a shared declaration are included as context.",
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "slug": "hodgetate-law-for-smoothed-classes",
+  "aliases": [
+    "Hodge--Tate law for smoothed classes",
+    "smoothedZetaClass_hodgeTateLaw",
+    "Z1.3.02 Hodge–Tate law for smoothed classes"
+  ],
+  "background": [
+    "Hodge–Tate weights",
+    "Euler systems",
+    "Distributions"
+  ],
+  "hypothesis_source": {
+    "document": "blueprint_v13",
+    "section": "r6:Z1.3.02",
+    "pages": [
+      378,
+      378
+    ]
+  },
+  "question_sources": [
+    "data/status_ledger.json"
+  ],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "summary": "For the stated integral class and smoothing data, the second coordinate obeys an explicit Hodge–Tate law with one nonzero scalar and compatible units at every precision. This keeps comparisons at different levels tied to the same scalar."
+}

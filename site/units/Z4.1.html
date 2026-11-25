@@ -1,0 +1,38 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Z4.1 · Normalized Hecke action on jets · RH verification atlas</title><link rel="stylesheet" href="../atlas.css"><script>window.MathJax={tex:{inlineMath:[["$","$"]],displayMath:[["$$","$$"]],processEscapes:true},options:{ignoreHtmlClass:"no-math"}};</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script></head><body><header><div class="bar"><a class="brand" href="../index.html">RH verification atlas</a><nav aria-label="Atlas navigation"><a href="../index.html">Home</a> <a href="../STATUS.html">Status</a> <a href="../MAP.html">Map</a> <a href="../dashboard/index.html">Tracks</a> <a href="../lookup/search.html">Search declarations</a></nav></div></header><main><h1 id="z41--normalized-hecke-action-on-jets">Z4.1 · Normalized Hecke action on jets</h1>
+<p class="notice">AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved</p>
+<p>For an admitted local model the differentiated entries meet the designated valuation bounds at each lift stage. The weighted claim covers all allowed integral parameters, selected columns and output monomials, providing the coefficient control used for jets.</p>
+<p><code>normalized-hecke-action-on-jets</code> · <a href="../tracks/local/index.html">Local p-adic theory</a> · <a href="../tracks/theta/index.html">Theta correspondence and automorphic representations of unitary groups</a></p>
+<p><strong>Full</strong> · <strong>L1</strong> Statement matched to Lean · Record generated 2026-11-25 (no human check).</p>
+<div class="scroll"><table>
+<thead><tr><th>1 · Lean pinned</th><th>2 · Statement compared</th><th>3 · Prose</th><th>4 · Steps</th><th>5 · AI review</th><th>6 · Human</th></tr></thead>
+<tbody><tr><td>✓</td><td>✓</td><td>Full</td><td>6</td><td>–</td><td>0 of 6 steps</td></tr>
+</tbody></table></div>
+<p><a href="Z4.1.check.html">Numbered proof and check records</a> · <a href="../PROGRESS.html">Progress and counting rules</a></p>
+<h2 id="statement">Statement</h2>
+<p>For an admitted place and each lift stage <span class="math">$j&lt;m$</span>, the index-zero local differentiated entries satisfy the bounds <span class="math">$g_A$</span> and <span class="math">$g_B-\mathrm{alEven}$</span>. For <span class="math">$1\le i\le r$</span> the <span class="math">$p$</span>-weighted column differential satisfies the bound <span class="math">$g_B$</span> for all allowed integral parameters, selected columns and output monomials. Chapter P also treats preservation of the lattice by the normalized Hecke operator.</p>
+<h2 id="assumptions">Assumptions</h2>
+<ul><li>Use an admitted local place and a lift at stage <span class="math">$j&lt;m$</span>.</li><li>The column, parameter and output monomial lie in the stipulated ranges.</li></ul>
+<p>Sources for the assumptions · <a href="../data/editions.json">RH verification blueprint, release v13</a></p>
+<h2 id="where-to-read">Where to read</h2>
+<p>Blueprint v13 and papers v3–v5 are this atlas project’s own AI-written, unpublished drafts. They have no human review and were not written by the author of the Lean development. Blueprint v13, its separate cover, and paper v5 are distributed as assets of release v0.1.0. For v3 and v4 the atlas supplies selected excerpts and notes. <a href="../data/editions.json">Edition register</a></p>
+<ul><li><a href="../notes/blueprint/Z4.1.tex">Blueprint source excerpt</a></li><li><a href="../data/editions.json">RH verification blueprint, release v13</a>, section label <code>sec:P-r4-z41-kernel</code>, PDF p. 230 (printed p. 205)</li><li><a href="../data/editions.json">RH verification blueprint, release v13</a>, section label <code>sec:P-r4-z41</code>, PDF p. 224 (printed p. 199)</li></ul>
+<h3 id="other-expositions-and-comparisons">Other expositions and comparisons</h3>
+<ul><li><a href="https://github.com/jimjamzola/RH-Alpoge-Reconstruction/blob/aa9c86bf2a7d29b08575641fecea19a2a603e87c/manuscript/main.pdf">Adriazola, Hypothesis 12.12, p. 113</a> · partial. <a href="../crosswalk/adriazola.html">Correspondence table</a>.</li></ul>
+<h2 id="evidence">Evidence</h2>
+<ul><li><a href="../reviews/R4_review_Z4.html">R4 review Z4</a>, original lines 149–159 — No statement mismatch reported. Statement comparison; the proof has qualifications.</li></ul>
+<p>Review records · <a href="../reviews/R4_review_Z4.html">R4 review Z4</a></p>
+<h2 id="lean-declarations">Lean declarations</h2>
+<ul><li><code>Formalism.MainNotions.FormalGroupSystem.Pf.hecke_place_bound</code>  <br><a href="https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SharpRestriction/GrowthBounds/MultisetValuation/FirstTheoremPlaceBound.lean#L28-L30"><code>FirstTheoremPlaceBound.lean</code></a>, lines 28–30 · 150 dominated lines · SHA-256 <code>50d3609e3318</code>.</li></ul>
+<p><a href="Z4.1.yaml">Machine record and full declaration hashes</a> · <a href="../lookup/declarations.html">Declaration lookup</a></p>
+<h2 id="reading-prerequisites">Reading prerequisites</h2>
+<p>Background · Hecke correspondences · Formal-group jets · Valuations.</p>
+<p>No prior atlas unit is specified.</p>
+<h2 id="open-questions">Open questions</h2>
+<p>None recorded.</p>
+<h2 id="graph-connections">Graph connections</h2>
+<p>Arrows may connect either a unit’s main declaration or an indexed member.</p>
+<p><strong>Uses</strong> · No recorded edge.</p>
+<p><strong>Used by</strong> · <a href="B06.html">B06</a> · <a href="P015.html">P015</a></p>
+<p><a href="../data/unit_graph.json">Declaration witnesses and graph scope</a></p>
+<p>Lookup aliases · <code>Z4.1 Normalized Hecke action on jets</code></p>
+<p>&lt;!-- Unit metadata SHA-256 faaab0d0566ba36777cf47f1a76fec590c9f8cb8d02e97d1829a40e3d64eb021 --&gt;</p></main><footer><a href="../help.html">Using the local edition</a></footer></body></html>

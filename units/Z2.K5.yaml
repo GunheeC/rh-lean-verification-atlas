@@ -1,0 +1,94 @@
+{
+  "id": "Z2.K5",
+  "title": "Equivariant character count",
+  "track": {
+    "primary": "analytic",
+    "secondary": [
+      "ktheory",
+      "galois"
+    ]
+  },
+  "statement": "For totally complex $L$, a layer $(F,\\zeta,\\gamma)$ and $E\\ge1$, the hypothesis $\\mathrm{Few}$ with bound $B$ implies finiteness of the prescribed equivariant character group $H$ and $|H|(\\ell^\\nu)^{r_2(L)}\\le B\\ell^{(b+v_\\ell(E))g+c+v_\\ell(E)}$, where $g=2[L:\\mathbf Q]+\\lfloor\\log_2 h_L\\rfloor+2$.",
+  "assumptions": [
+    "source:blueprint_v13"
+  ],
+  "hypothesis_details": [
+    "Fix totally complex $L$, the cyclotomic layer, its root and generator, and $E\\ge1$.",
+    "The Few assertion on the designated norm classes holds with bound $B$."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.ZK.sCount",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/SelmerOrderCounts.lean",
+      "line0": 16,
+      "line1": 111,
+      "sha256": "b609ec60bcf992dfad3e6ecbfad1c5f1094e3a1a07756adf589676b08e0d22c2",
+      "dominated": 2223,
+      "graph": "allChi",
+      "role": "statement"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/blueprint/Z2.K5.tex",
+      "section": "prop:P-k-count",
+      "pages": []
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "prop:P-k-count",
+      "pages": [
+        178,
+        178
+      ],
+      "printed_page": 153,
+      "scope": "First page of this named destination."
+    }
+  ],
+  "status": "Full",
+  "grade": "L0",
+  "reviews": [
+    "reviews/R20_review.md"
+  ],
+  "prerequisites": [
+    "Z2.K2"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "blueprint_members": [
+    "Z2.K5"
+  ],
+  "representative": "UpperTheory.V.ZK.sCount",
+  "statement_declarations": [
+    "UpperTheory.V.ZK.sCount"
+  ],
+  "grade_scope": "Named statement declarations with the hypotheses above. Chart supplier records have their own review scopes.",
+  "confirmation_basis": "Minimum across the statement declarations, using registry rows for the blueprint assignments listed here. Reviews of other expositions of a shared declaration are included as context.",
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "slug": "equivariant-character-count",
+  "aliases": [
+    "Z2.K5 Equivariant character count"
+  ],
+  "background": [
+    "Kummer theory",
+    "Equivariant characters",
+    "Finite groups"
+  ],
+  "hypothesis_source": {
+    "document": "blueprint_v13",
+    "section": "prop:P-k-count",
+    "pages": [
+      178,
+      178
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "Z2.K2": "statement-reading"
+  },
+  "summary": "If the separated finite families satisfy the prescribed cap, the equivariant character group of a cyclotomic layer is finite with an explicit order bound. The formula keeps the losses from twist valuation, field degree and class number, which matter when comparing different layers."
+}

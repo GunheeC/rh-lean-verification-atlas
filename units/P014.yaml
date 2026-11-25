@@ -1,0 +1,109 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "P014",
+  "title": "Nonvanishing for arbitrary characters from Green, the Selmer window and the family witness",
+  "track": {
+    "primary": "analytic",
+    "secondary": [
+      "galois"
+    ]
+  },
+  "statement": "Assume $\\mathcal B,V,\\mathcal F$. Then $H$ holds, with the principal-character exception in P003.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume Green's finite-group character statement $\\mathcal B$.",
+    "Assume the Selmer window $V$ and nonemptiness of the single definite-side family record $\\mathcal F$."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.Top.every_character_of_green_v_win",
+      "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean",
+      "line0": 16,
+      "line1": 18,
+      "sha256": "2a16d81a39b3886cfb84a9c50bb541d385037c4cd8e02941f0d57943b9d96da1",
+      "dominated": 194391,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "6.14 (pn:P014)",
+      "pages": [
+        58,
+        58
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/P014.tex",
+      "section": "pn:P014",
+      "pages": []
+    }
+  ],
+  "status": "Full",
+  "grade": "L2",
+  "reviews": [
+    "reviews/R20_review.md"
+  ],
+  "prerequisites": [
+    "P015"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [
+    {
+      "grade": "L2",
+      "review": "reviews/R20_review.md",
+      "lines": [
+        46,
+        46
+      ],
+      "scope": "R20 local implication under its stated premises, not its prerequisite cones.",
+      "verdict": "F: full derivation; yes"
+    },
+    {
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "lines": [
+        103,
+        103
+      ],
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript.",
+      "verdict": "Exact statement comparison"
+    }
+  ],
+  "paper_id": "P014",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "nonvanishing-for-arbitrary-characters-from-green-the-selmer-window-and-the-family-witness",
+  "aliases": [
+    "Arbitrary characters from the three inputs",
+    "every_character_of_green_v_win",
+    "P014 Nonvanishing for arbitrary characters from Green, the Selmer window and the family witness"
+  ],
+  "background": [
+    "Green's characters for finite general linear groups",
+    "Selmer windows",
+    "Dirichlet L-functions"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "6.14 (pn:P014)",
+    "pages": [
+      58,
+      58
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "P015": "graph"
+  },
+  "summary": "Given Green’s character assertion, the Selmer window and a compatible family witness, the half-plane claim extends to arbitrary Dirichlet characters with its principal-pole exception. This unit states the step at which the conditional conclusion covers imprimitive characters too."
+}

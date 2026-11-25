@@ -1,0 +1,25 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit P042. Local manuscript v3, item 7.19, heading on printed PDF p. 84.
+% Formalism.RepresentationBoundsCohomology.ringDataObjects.moduleBc
+% paper2/inputs_two.tex:29–41. Verbatim excerpt; SHA-256 15b4cbaddb7afd3e263dc3caae7fab88326b3461ac392796ae2ae34ad0301b10.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+\noindent\nolinkurl{Formalism.RepresentationBoundsCohomology.ringDataObjects.moduleBc} --- in-repo constant (\path{Formalism/WachLatticeTwists/RamifiedBlockRings/RamifiedBlockProofs/SpanSingle.lean:62--148}); not compared.\par
+% End of atlas edition annotation.
+
+\begin{formalstatement}[Transport of the presented module across DVRs]\label{pn:P042}
+Let \(O\to O'\) be a finite free extension of coefficient DVRs with \(v_{O'}(x)=e v_O(x)\). Use two evaluated splitting algebras attached to compatible matrix data satisfying the distinct-eigenvalue corner hypothesis, their defining identities, Noetherianity and the prescribed scalar actions. If \(M\) over the first matrix algebra \(R\) has \(g\) specified generators, there is an \(R'\)-module \(M'\) on \(g\) generators such that for every \(Z\subseteq X\), nonzero evaluation Hom at every point above \(X\setminus Z\) downstairs implies the corresponding nonvanishing upstairs. For every distinguished block \(k\),
+\[
+ \operatorname{length}_{O'}\operatorname{Hom}_{R'}(M',V'_k)
+   = e\,\operatorname{length}_{O}\operatorname{Hom}_{R}(M,V_k).
+\]
+Lengths are extended natural numbers, and the \(V_k\) are the specialized torsion coefficient blocks.
+\end{formalstatement}
+\nodestatus{P042}
+The coefficient rings and block-evaluation Hom spaces here arise from the generalized matrix algebra setting of P041. The flat length formula is Stacks, Lemma 10.52.13; its fibre factor is the ramification index for this extension.
+\begin{outline}
+In an \(O\)-basis of \(O'\) a scalar function vanishes outside \(Z\) precisely when each coordinate function does. Match the ordered roots above a point by inclusion and permutation to the new ordering. On the matched fibres, the ring map preserves characters, matrices and block evaluations. Choose a finite matrix of relations for \(M\) and apply the map entrywise to present \(M'\). On an off-\(Z\) fibre a nonzero solution stays nonzero after extending the fraction field. At a distinguished fibre take Smith form of the evaluated relation matrix. An invariant factor \(s\ne0\) contributes \(v_O(s)\) to the solution length in \(K/O\); a free variable contributes infinite length. The same elementary operations over \(O'\) give \(e v_O(s)\) and infinity, respectively. The matching of ordered evaluations and the support assertion are the additional comparisons beyond flat length scaling (Stacks Project, Tag 02M1). See the blueprint, \bploc{r6:normalized-ring}, on transport of presentations.
+\end{outline}

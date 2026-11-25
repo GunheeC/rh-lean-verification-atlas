@@ -1,0 +1,150 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "T07",
+  "edition_sha256": "556cc23b1286411b8abc2f30d8a7db0bea63a27bc256e2363c8e4ab73d353658",
+  "note_sha256": "1befb53ebbae19b271f2af5949ec96275ff54f102fb09849fa2e90e4c7af1a18",
+  "statement_sha256": "545f39f14218e74d72677eb5143be0c18ab3278b3f00dca18ddc057d5040d143",
+  "sources": [
+    {
+      "path": "notes/units/T07_round4.md",
+      "sha256": "1befb53ebbae19b271f2af5949ec96275ff54f102fb09849fa2e90e4c7af1a18"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The good-cut supplier and the memberwise Galois precondition apply at the fixed reciprocity data.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: third-layer data, depth-zero support, local duality and Euler characteristic"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.GalC.final_alt_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/CFinal.lean",
+          "line0": 19,
+          "line1": 22
+        },
+        {
+          "name": "UpperTheory.GalC.final_of_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkNFam.lean",
+          "line0": 75,
+          "line1": 86
+        },
+        {
+          "name": "UpperTheory.GalC.exists_good_cut_facts_tie4",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/CFacts.lean",
+          "line0": 58,
+          "line1": 62
+        }
+      ],
+      "source": "notes/units/T07_round4.md",
+      "anchor": "Identify the common parameter and the two suppliers",
+      "source_lines": [
+        13,
+        13
+      ],
+      "claim_sha256": "13ef554bb51ce1d186651afe74863c93e2a127c2845dedf4fdf98faff3e2506b",
+      "passage_sha256": "6b1e1c03a61665aeaf2250d065b7c0777ca113609412bd367779d04d5583b689",
+      "sha256": "7a62fbb358a22ee1acdd59584c28a81d23012a405f5df6c6748e0b5c105bb74b",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The Galois and tie conditions transport together on the selected witness.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "input: member-to-witness transport"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.GalS.galois_preconditions_at_mem",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/PreAtMem.lean",
+          "line0": 86,
+          "line1": 103
+        },
+        {
+          "name": "UpperTheory.GalC.final_of_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkNFam.lean",
+          "line0": 75,
+          "line1": 86
+        }
+      ],
+      "source": "notes/units/T07_round4.md",
+      "anchor": "Transport memberwise facts to the selected witness",
+      "source_lines": [
+        17,
+        17
+      ],
+      "claim_sha256": "6cfdb77f63b1cfbb2f92f95e499f2b745e075544126a26f2eccc64d41bf24659",
+      "passage_sha256": "6abe44c5c845c10ad833835f6c84232a300cbf247a2a68a4a424b34cc49d1db6",
+      "sha256": "7c4afddc3f8c49f76fca4a6440ddb3782da6b276448c970c7991202056522226",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Intersecting the linked rows retains both premises at the same parameter and yields the linked Selmer norm condition.",
+      "kind": "assembly",
+      "uses": [
+        "S2",
+        "T25",
+        "input: linked row strengthening"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.GalC.linkedAt_linkN_of_boundAtTwoThree",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkNFam.lean",
+          "line0": 64,
+          "line1": 73
+        },
+        {
+          "name": "UpperTheory.GalC.final_of_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkNFam.lean",
+          "line0": 75,
+          "line1": 86
+        }
+      ],
+      "source": "notes/units/T07_round4.md",
+      "anchor": "Intersect the two linked rows",
+      "source_lines": [
+        21,
+        21
+      ],
+      "claim_sha256": "21f9cb24ccc1971776b93dbb1c3748b02e78eea0da17c2cba3f61b50b60a2bdc",
+      "passage_sha256": "2341ec13088f9cbe3b262592ac592a56ee8b61cd58e093fe868df44098d695ac",
+      "sha256": "39261dd9947cad7386d5b7c003552aa5c36f81b354de062350a6badc2e5450bc",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "74c82e0fa0e7a4ade06c3d1e87326c716a8e93748b01ed2a3eab9c306fef72df",
+      "sources": [
+        {
+          "path": "notes/units/T07_round4.md",
+          "sha256": "b97bc1697990b50e62e3ec35bb3b48cc3e727a11bc9289a7a247676ae9588350"
+        }
+      ],
+      "statement_sha256": "545f39f14218e74d72677eb5143be0c18ab3278b3f00dca18ddc057d5040d143",
+      "steps": {
+        "S1": "7a62fbb358a22ee1acdd59584c28a81d23012a405f5df6c6748e0b5c105bb74b",
+        "S2": "7c4afddc3f8c49f76fca4a6440ddb3782da6b276448c970c7991202056522226",
+        "S3": "39261dd9947cad7386d5b7c003552aa5c36f81b354de062350a6badc2e5450bc"
+      },
+      "step_texts": {
+        "S1": "The good-cut supplier and the memberwise Galois precondition apply at the fixed reciprocity data.",
+        "S2": "The Galois and tie conditions transport together on the selected witness.",
+        "S3": "Intersecting the linked rows retains both premises at the same parameter and yields the linked Selmer norm condition."
+      },
+      "step_passages": {
+        "S1": "6b1e1c03a61665aeaf2250d065b7c0777ca113609412bd367779d04d5583b689",
+        "S2": "6abe44c5c845c10ad833835f6c84232a300cbf247a2a68a4a424b34cc49d1db6",
+        "S3": "2341ec13088f9cbe3b262592ac592a56ee8b61cd58e093fe868df44098d695ac"
+      }
+    }
+  ]
+}

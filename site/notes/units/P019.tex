@@ -1,0 +1,19 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit P019. Local manuscript v3, item 6.35, heading on printed PDF p. 67.
+% Formalism.HC.zeroFreeOn_of_tiedWin_cyc
+% paper2/upper.tex:658–670. Verbatim excerpt; SHA-256 88faceba9e9e4d2eb006febcaf6910be12cba260f0e485dc5048c0ad69dd6e3c.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+\begin{theorem}[Zero-freeness for a selected class of primitive characters]\label{pn:P019}
+Fix a predicate $Q$ on $\mathcal P$, $\lambda>1$, and a system of families with core and tied predicates as in \nolinkurl{TopWin.lean:19--33}. For each $\psi$ satisfying $Q$, write $\mathcal L=\operatorname{cyc}(\psi)$ and suppose the following.
+\begin{enumerate}
+\item For every $e_D,e_L\in\mathbb R$, every $\varepsilon>0$ and every family $F$ at $\varepsilon$, the conjunction of \code{EFamC}$(\mathcal L,F)$ and eventual tiedness on its window set with $e_D,e_L$ implies $\mathcal G_{\mathcal L}(x)\le x^{1/2+(e_D+e_L+7)\varepsilon}$ at every sufficiently large point of that set.
+\item The level-window implication of P018 holds for $\mathcal L$.
+\item There exist $e_D,e_L\in\mathbb R$ and $\varepsilon_1>0$, common to all subsequent $\varepsilon$. For every $0<\varepsilon<\varepsilon_1$ there is a family $F$ at $\varepsilon$ satisfying \code{EFamC}$(\mathcal L,F)$ with exponent-$\lambda$ windows and eventual tiedness on that set with these same $e_D,e_L$. In both clauses eventual tiedness uses fixed $K,c_{HH},e_K,C_L,x_0$ for the selected family, as in P017.
+\end{enumerate}
+Then $L(s,\psi)\ne0$ for every $\psi$ satisfying $Q$ and every $s$ with $\Re s>1/2$.
+\end{theorem}
+\nodestatus{P019}
+\begin{proof}
+Fix such a $\psi$ and a putative zero at $s$. In blueprint Chapter~E, \emph{From windows to zero-freeness of a level}~\bploc{prop:E-level-of-tied}, set $\Delta=\min(\Re s-1/2,1/2)>0$ and $\theta=1/2+\Delta/2$. Thus $0<\theta<1$ and $\theta<\Re s$. The constants $e_D,e_L$ are fixed before choosing $\varepsilon$. Choose $0<\varepsilon<\varepsilon_1$ with $(e_D+e_L+7)\varepsilon\le\Delta/2$. The family supplied by (iii) and the bound in (i) give $\mathcal G_{\mathcal L}(x)\le x^\theta$ at all sufficiently large window points $x\ge1$. Removing a bounded initial segment retains windows of exponent $\lambda$. By (ii) the cyclic level is zero-free above $\theta$, and $\psi$ belongs to that level. This contradicts the assumed zero.
+\end{proof}

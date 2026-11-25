@@ -1,0 +1,110 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "P001",
+  "title": "The Riemann hypothesis in Mathlib's formulation",
+  "track": {
+    "primary": "formal",
+    "secondary": [
+      "analytic"
+    ]
+  },
+  "statement": "For every $s\\in\\mathbb C$, if $\\zeta(s)=0$, $s\\ne1$, and $s\\ne-2(n+1)$ for every $n\\in\\{0,1,\\ldots\\}$, then $\\Re s=1/2$.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Take a zero $s$ of the Riemann zeta function with $s\\ne1$.",
+    "Exclude all negative even integers $s=-2(n+1)$ for $n\\ge0$."
+  ],
+  "lean": [
+    {
+      "name": "riemannHypothesis",
+      "file": "Main.lean",
+      "line0": 4,
+      "line1": 4,
+      "sha256": "71b3d50605ddda7c0c74fbbf5cca47165a4cfa2ad72f50f36b907ecac7ff505a",
+      "dominated": 1,
+      "graph": "five_public_heads"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/P001_round3.md",
+      "section": "P001 · From a right-half-plane bound to the zeta zero line",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-3 written exposition, pending independent review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "6.1 (pn:P001)",
+      "pages": [
+        54,
+        54
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/P001.tex",
+      "section": "pn:P001",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L1",
+  "reviews": [
+    "reviews/R20_review.md",
+    "reviews/DB3_review_B.md"
+  ],
+  "prerequisites": [
+    "P008"
+  ],
+  "size_pages": 2,
+  "open_questions": [
+    "What bytes are hashed for a declaration, the full archive and the compiled object? Reproduce one digest with its stated convention."
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [
+    {
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "lines": [
+        96,
+        96
+      ],
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript.",
+      "verdict": "Exact statement comparison"
+    }
+  ],
+  "paper_id": "P001",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "mathlib-riemann-hypothesis",
+  "aliases": [
+    "riemannHypothesis",
+    "P001 The Riemann hypothesis in Mathlib's formulation"
+  ],
+  "background": [
+    "The Riemann zeta function",
+    "Trivial zeros and analytic continuation"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "6.1 (pn:P001)",
+    "pages": [
+      54,
+      54
+    ]
+  },
+  "question_sources": [
+    "questions/formal.md"
+  ],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "P008": "graph"
+  },
+  "review_status": "ai_reviewed",
+  "summary": "This public goal uses Mathlib's formulation of the Riemann hypothesis. It asks that every zeta zero other than the excluded negative even integers, with the pole at one excluded too, have real part one half. The card pins the precise statement targeted by the conditional deduction."
+}

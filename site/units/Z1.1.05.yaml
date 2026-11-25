@@ -1,0 +1,93 @@
+{
+  "id": "Z1.1.05",
+  "title": "Automorphy of linked endpoints",
+  "track": {
+    "primary": "galois",
+    "secondary": []
+  },
+  "statement": "From $\\mathrm{HypothesesH}'$ and the rank-two and dense rank-three seeds, for every sufficiently large admissible linked frame with a place above $\\ell$, obtain rank-three finite points and cyclotomic-inverse automorphy, and one algebraic character giving rank-two automorphy.",
+  "assumptions": [
+    "source:blueprint_v13"
+  ],
+  "hypothesis_details": [
+    "Assume $H'$ and the rank-two and dense rank-three seed assertions.",
+    "The linked frame is admissible and has the indicated place above $\\ell$."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.Z.Sym.Top.linkedEnd_alt",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/SymTop.lean",
+      "line0": 23,
+      "line1": 27,
+      "sha256": "7a3fa16d761733509f87cecab2c90497edf5a255a8fe177c29a664f012845152",
+      "dominated": 791,
+      "graph": "allChi",
+      "role": "statement"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/blueprint/Z1.1.05.tex",
+      "section": "r8:small:Z1.1.05",
+      "pages": []
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r8:small:Z1.1.05",
+      "pages": [
+        468,
+        468
+      ],
+      "printed_page": 443,
+      "scope": "First page of this named destination."
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [
+    "B04",
+    "Z1.1.04"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "Construct the linked frame, its finite rank-three points and a common twist giving the required automorphy at its endpoints."
+  ],
+  "last_checked": "2026-11-24",
+  "blueprint_members": [
+    "Z1.1.05"
+  ],
+  "representative": "UpperTheory.V.Z.Sym.Top.linkedEnd_alt",
+  "statement_declarations": [
+    "UpperTheory.V.Z.Sym.Top.linkedEnd_alt"
+  ],
+  "grade_scope": "Named statement declarations with the hypotheses above. Chart supplier records have their own review scopes.",
+  "confirmation_basis": "Minimum across the statement declarations, using registry rows for the blueprint assignments listed here. Reviews of other expositions of a shared declaration are included as context.",
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "slug": "automorphy-of-linked-endpoints",
+  "aliases": [
+    "linkedEnd_alt",
+    "Z1.1.05 Automorphy of linked endpoints"
+  ],
+  "background": [
+    "Ordinary deformation rings",
+    "Automorphic Galois representations"
+  ],
+  "hypothesis_source": {
+    "document": "blueprint_v13",
+    "section": "r8:small:Z1.1.05",
+    "pages": [
+      468,
+      468
+    ]
+  },
+  "question_sources": [
+    "data/status_ledger.json"
+  ],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "B04": "graph",
+    "Z1.1.04": "statement-reading"
+  },
+  "summary": "Given the automorphic hypotheses and the requisite dense seeds, sufficiently large linked frames support both rank-three and rank-two endpoint conclusions. The rank-three endpoint includes finiteness and automorphy of the inverse twist; one algebraic character realizes the rank-two comparison."
+}

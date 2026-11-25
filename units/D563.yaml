@@ -1,0 +1,117 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D563",
+  "title": "Absorbing the four size-window errors",
+  "track": {
+    "primary": "analytic",
+    "secondary": [
+      "arakelov"
+    ]
+  },
+  "statement": "Let $n,n_T,n_{T,2},m$ be natural numbers and $C,\\varepsilon,x,b,k,a_E,\\mathrm{Err},G_x$ real. Assume the size-window inequalities, including $x\\geq3$, $n,b,\\varepsilon>0$ and the bounds on $m,k,a_E$ and $\\mathrm{Err}$ in the linked definition. If\n        \\[ n_T mb\\,\\frac{n_{T,2}}{2n}\\bigl(G_x-4x^{1/2+\\varepsilon}\\bigr)\n        \\leq \\mathrm{Err}+2n_T mb/x,\\]\n        then $G_x\\leq x^{1/2+(C+3)\\varepsilon}$.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume SizeWindows on the counts and real parameters, including positive $b,\\varepsilon,n$, nonnegative $C$, and the size, count and bracket bounds in D566.",
+    "With $Q=n_Tmb$, $r=n_{T,2}/n$ and $X=x^{1/2+\\varepsilon}$, assume $Qr(G_x-4X)/2\\le\\mathrm{Err}+2Q/x$."
+  ],
+  "lean": [
+    {
+      "name": "Formalism.LFunctionChainParameters.ThickSetMeanBounds.proposition_size_bound",
+      "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean",
+      "line0": 507,
+      "line1": 592,
+      "sha256": "e573a01b923620c758779f91a8f4686e88c5bc4e08d203caaea4e3ece27e6f6f",
+      "dominated": 180,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "G.596 (decomp:D563)",
+      "pages": [
+        306,
+        306
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D563.tex",
+      "section": "decomp:D563",
+      "pages": []
+    },
+    {
+      "document": "paper2_v3",
+      "section": "The chain in detail: P017",
+      "pages": [
+        9,
+        13
+      ],
+      "coverage": "Shared subsection for this station, including subordinate inputs."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "Lemma 3.4 (r23:budget)",
+      "pages": [
+        13,
+        13
+      ],
+      "coverage": "Complete four-term division and absorption argument."
+    },
+    {
+      "document": "notes/units/D563-argument.tex",
+      "section": "r23:budget",
+      "pages": []
+    }
+  ],
+  "status": "Full",
+  "grade": "L2",
+  "reviews": [
+    "reviews/R23_review.md"
+  ],
+  "prerequisites": [],
+  "size_pages": 1,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [
+    {
+      "grade": "L2",
+      "review": "reviews/R23_review.md",
+      "lines": [
+        61,
+        67
+      ],
+      "scope": "Only the numerical size bound of v3 Lemma 3.4, at its stated inequalities; use with its hand exposition and not as approval of P017.",
+      "verdict": "Seven steps rederived, each marked correct"
+    }
+  ],
+  "paper_id": "D563",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "absorbing-the-four-size-window-errors",
+  "aliases": [
+    "size-window bracket absorption",
+    "proposition_size_bound",
+    "D563 Absorbing the four size-window errors"
+  ],
+  "background": [
+    "Power inequalities",
+    "Optimization of error terms"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.596 (decomp:D563)",
+    "pages": [
+      306,
+      306
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "summary": "Under the size-window inequalities, a normalized inequality with four half-power error terms implies the stated bound on the scalar prime-sum quantity. This numerical step explains how the density and column factors can be divided out while retaining a half-power estimate with an explicit epsilon loss."
+}

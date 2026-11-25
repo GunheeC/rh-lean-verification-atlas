@@ -1,0 +1,92 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D421",
+  "title": "Uniform hub estimates for twist-good families",
+  "track": {
+    "primary": "galois",
+    "secondary": [
+      "local"
+    ]
+  },
+  "statement": "For each twist-good family satisfying the common normalization facts with nonnegative bound and the special bounds at two and three, there are uniform constants such that every eligible member with finite odd Selmer data admits a hub satisfying the required estimates.\n\\[\nC\\ge0\\ \\wedge\\ \\mathrm{TwGood}(F)\\ \\wedge\\ \\mathrm{FactsFAlt}(F,C,C_T)\\ \\wedge\\ \\mathrm{BoundAtTwoThreeFamilyFonAlt}(F)\\ \\Longrightarrow\\ \\mathrm{ConclF}(F)\\quad(\\mathrm{Hypotheses}_2).\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume the second-layer hypothesis record, a twist-good family and its normalization facts for $C\\ge0$ and the specified $C_T$.",
+    "The family has the bounds at two and three; the memberwise clause uses its specified odd Selmer finiteness condition."
+  ],
+  "lean": [
+    {
+      "name": "GlobalTheory.NLinkClose.main_alt_alt",
+      "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ImportsFurtherTail.lean",
+      "line0": 22,
+      "line1": 109,
+      "sha256": "9b205687d46be77ecbd76fff9ab166363a6e640cdc73eeab83d9729177e82503",
+      "dominated": 150531,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "G.437 (decomp:D421)",
+      "pages": [
+        266,
+        266
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D421.tex",
+      "section": "decomp:D421",
+      "pages": []
+    }
+  ],
+  "status": "Statement only",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [
+    "D002",
+    "D004",
+    "D006"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [],
+  "paper_id": "D421",
+  "indexed_members": [
+    "D422",
+    "D424",
+    "D425",
+    "D426"
+  ],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "uniform-hub-estimates-for-twist-good-families",
+  "aliases": [
+    "main_alt_alt",
+    "D421 Uniform hub estimates for twist-good families"
+  ],
+  "background": [
+    "Twists of Galois families",
+    "Finite Selmer groups"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.437 (decomp:D421)",
+    "pages": [
+      266,
+      266
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "D002": "graph",
+    "D004": "graph",
+    "D006": "graph"
+  }
+}

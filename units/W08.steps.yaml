@@ -1,0 +1,155 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "W08",
+  "edition_sha256": "47eb5988b5e54b168a1645b6f5abcdf0bee0dbf44ecc2b956b2a83730f79b040",
+  "note_sha256": "4973eb5de3cd0fc49c44fdf7377c76a1a56f06b25a08de3a4f11ace4059a5cb8",
+  "statement_sha256": "3a6fb420f22fe98141038b1797577bccdae13c386049e1a73f5ba2d836d1f663",
+  "sources": [
+    {
+      "path": "notes/units/W08_round3.md",
+      "sha256": "4973eb5de3cd0fc49c44fdf7377c76a1a56f06b25a08de3a4f11ace4059a5cb8"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The single-character estimate controls the normalized length using an integral trace comparison.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "W05",
+        "input: Kato and automorphy premises"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Z.J.oneCharU_of_katoTwoW_rig_admI_automorphy",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/FOneCharU.lean",
+          "line0": 75,
+          "line1": 95
+        }
+      ],
+      "source": "notes/units/W08_round3.md",
+      "anchor": "For one eligible character the finite-length and trace-difference bound is first proved in an unramified coefficient model. The prime-to-$\\ell$ o",
+      "source_lines": [
+        15,
+        15
+      ],
+      "claim_sha256": "6be721ada56c268d92ca06db1c866c44c1e77106726d7de2a555a61f124b1f5e",
+      "passage_sha256": "e54ebb58c123d1c8ae5024f5c76945e9d14a4eabd0fcd09d31c346b7adff2057",
+      "sha256": "a52ab3e50fbaabd4eabedbadeaaa63829c4552fec2574e411f899697b19855b1",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Characters with the chosen kernel are grouped into the orbit used in the simultaneous trace estimate.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "input: fixed kernel"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Z.J.propGK_of_numberU3U_of_oneCharU",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/FPropGKU.lean",
+          "line0": 118,
+          "line1": 145
+        }
+      ],
+      "source": "notes/units/W08_round3.md",
+      "anchor": "Fix the imaginary quadratic field chosen from $\\chi$, a kernel $H\\subset(\\mathbb Z/N)^\\times$, and a good test prime $p$. The rank-three automorp",
+      "source_lines": [
+        19,
+        19
+      ],
+      "claim_sha256": "a2bc24df48a9e5fa028dfb81ca034b78f6b6c78c919153e3985e96f89566ed15",
+      "passage_sha256": "0f32c26f626ac92acb23818e7b000bf13828cb65fc728f5e477ebad361c73354",
+      "sha256": "1e1473e98b0b34d99d94cd06ee4b1821e38203ecc34d42e9391bb0456a1e845b",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Two test primes suffice to avoid the forbidden equality between test prime and coefficient prime.",
+      "kind": "case-split",
+      "uses": [
+        "S2"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.U3.corGK",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/CorGSumLog.lean",
+          "line0": 37,
+          "line1": 73
+        }
+      ],
+      "source": "notes/units/W08_round3.md",
+      "anchor": "There are two test primes because the comparison at $p$ excludes $\\ell=p$. Apply it at $r_1$ and $r_2$ to obtain nonzero integers $n_1,n_2$. For ",
+      "source_lines": [
+        21,
+        26
+      ],
+      "claim_sha256": "2aa72150e3dee296c010fb9514f20defc0329afcb3d6c93d2d3a969e1ca8c36e",
+      "passage_sha256": "eaeab2044b0f687f49e493dc2dc2ccc6af8e9732a0e698294f571fc420ca6cd2",
+      "sha256": "db79459cd2bc44a6b9228949fa7c5286b51977efe32275765cea6091430e051c",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The fixed prime-dependent prefactor is absorbed into a uniform power using the lower bound on the host modulus.",
+      "kind": "inequality",
+      "uses": [
+        "S3"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.U3.countI",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/CountI.lean",
+          "line0": 103,
+          "line1": 136
+        }
+      ],
+      "source": "notes/units/W08_round3.md",
+      "anchor": "Set $A_0=2c_5(\\log r_1+\\log r_2)$ and choose $k$ with $A_0\\le16^k$. The host gives $N\\ge16$ and $e+1\\le t$. The resulting bound $A_0N[N(e+1)]^A$ ",
+      "source_lines": [
+        32,
+        32
+      ],
+      "claim_sha256": "6a23131082c0a0ee2b0bc4dbd387c4469284c92235703a9bf5242db0cfd0202b",
+      "passage_sha256": "3a2f7946721b79e2548c253f58e28928360958fdea00186a3221f6ad12c48339",
+      "sha256": "add549a0fcfd5bc9531874f334b45489d7e31e25317fc6ac89e3849fadff5c6b",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "d5edc6aa6154bfaca42ae7e28822766b33f890b9d7e1382c48978af45279dc27",
+      "sources": [
+        {
+          "path": "notes/units/W08_round3.md",
+          "sha256": "817c497d9df29c88d36429b5b35f2c53e56d1d562bfadaca30e44b5a0a44d5ed"
+        }
+      ],
+      "statement_sha256": "3a6fb420f22fe98141038b1797577bccdae13c386049e1a73f5ba2d836d1f663",
+      "steps": {
+        "S1": "a52ab3e50fbaabd4eabedbadeaaa63829c4552fec2574e411f899697b19855b1",
+        "S2": "1e1473e98b0b34d99d94cd06ee4b1821e38203ecc34d42e9391bb0456a1e845b",
+        "S3": "db79459cd2bc44a6b9228949fa7c5286b51977efe32275765cea6091430e051c",
+        "S4": "add549a0fcfd5bc9531874f334b45489d7e31e25317fc6ac89e3849fadff5c6b"
+      },
+      "step_texts": {
+        "S1": "The single-character estimate controls the normalized length using an integral trace comparison.",
+        "S2": "Characters with the chosen kernel are grouped into the orbit used in the simultaneous trace estimate.",
+        "S3": "Two test primes suffice to avoid the forbidden equality between test prime and coefficient prime.",
+        "S4": "The fixed prime-dependent prefactor is absorbed into a uniform power using the lower bound on the host modulus."
+      },
+      "step_passages": {
+        "S1": "e54ebb58c123d1c8ae5024f5c76945e9d14a4eabd0fcd09d31c346b7adff2057",
+        "S2": "0f32c26f626ac92acb23818e7b000bf13828cb65fc728f5e477ebad361c73354",
+        "S3": "eaeab2044b0f687f49e493dc2dc2ccc6af8e9732a0e698294f571fc420ca6cd2",
+        "S4": "3a2f7946721b79e2548c253f58e28928360958fdea00186a3221f6ad12c48339"
+      }
+    }
+  ]
+}

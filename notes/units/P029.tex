@@ -1,0 +1,40 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit P029. Local manuscript v3, item 7.6, heading on printed PDF p. 75.
+% UpperTheory.GalN.V.Win.N.countK_alt
+% paper2/inputs_one.tex:242–269. Verbatim excerpt; SHA-256 85ffc664734e43e3a1243ca745c6409fe505eb2b0c8cc5b9aaf0d7ea5a6c9562.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+\noindent\nolinkurl{UpperTheory.GalN.V.Win.N.countK_alt} --- in-repo constant (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/FrobeniusTraceCountBoundOfCmEigensystemCount.lean:63--125}); not compared.\par
+% End of atlas edition annotation.
+
+\begin{formalstatement}[A CM classifier of fixed purity]\label{pn:P029}
+Assume the automorphic hypotheses \(H'\) and the CM level and
+Satake--Frobenius correspondence \(\mathrm{LevelKNAlt}\).
+For each CM field \(K\) and \(n\ge2\) there exist \(c,A\in\mathbb N\).
+Let \(m_1>\cdots>m_n\) satisfy \(m_i+m_{n+1-i}=1-n\)
+and \(|m_i|\le H\). Given \(M\ge1\) and \(w\mid p\) with \(p\) prime,
+\(p\nmid M\operatorname{disc}(K)\), there are eigenvalue data \(D\)
+at \(Nw\) of weight \(m\) and purity \(1-n\), with
+\[
+ |D.S|\le c[M(H+1)]^A .
+\]
+For every odd prime \(\ell\ne p\), closure and coefficient comparison
+\(\iota\), these same data classify the admitted
+\(\mathrm{AdmKNAlt}(\iota,M,m)\) representations of \(G_K\) at \(w\).
+\end{formalstatement}\nodestatus{P029}
+
+The written argument defines the tuple \(v\mapsto (Nv)^{(n-1)/2}B_v\)
+of normalized Satake multisets at the places \(v\nmid M\) on isomorphism
+classes. Barnet-Lamb, Gee, Geraghty and Taylor, \emph{Potential automorphy
+and change of weight}, Theorem~2.1.1 and the end of \S5.1, give
+compatible Frobenius data for each regular algebraic polarized cuspidal
+representation. To obtain one finite classifier the source uses the
+cohomological bound on the number of cusp representations, conjugation
+of their full Satake tuples, integrality in the prescribed normalization,
+and separation of semisimple representations by almost-everywhere
+Frobenius data. The simultaneous integral comparison with the polynomial
+level and weight bound is an adaptation; its full proof is in Lean only
+(Blueprint Z1.5.03~\bploc{r8:small:Z1.5.03}). \cite{r21-blggt}

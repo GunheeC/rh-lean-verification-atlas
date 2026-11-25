@@ -1,0 +1,104 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "W13",
+  "title": "Assembling the Selmer window from five counting cases",
+  "track": {
+    "primary": "galois",
+    "secondary": []
+  },
+  "statement": "Assume Poitou--Tate duality, local finiteness and local Tate duality.\nFix a $C_K$ satisfying W05's cohomological bound and constants as\nin W12 giving its simultaneous bound at $C_t=401$. Assume W14's\nminus-part bound, the collective estimate of W08, both individual\nestimates of W09, the restricted Case~V estimate of W10 and the\nindividual estimate of W09's shape for Case~Z (odd\n$\\ell\\notin B_\\chi$, $\\ell-1\\mid2e$, $\\psi=1$).\nThen the Selmer window $V$ of \\nodeid{P013} holds.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume Poitou–Tate, local finiteness and local Tate duality. Take a uniform W05 constant and W12 constants at the same cutoff 401.",
+    "Use the minus-part estimate, the collective Case I, individual Cases II and III, restricted Case V, and the indicated exceptional trivial-character Case Z bound."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.HV.vwin_of_counts",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/JointWinOfCounts.lean",
+      "line0": 30,
+      "line1": 33,
+      "sha256": "6550cb3fa71638641308abae05eac3983e56c2d0962731973d806ec5cff6a46f",
+      "dominated": 4677,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/W13_round3.md",
+      "section": "W13 · Putting the five counting estimates on one Selmer window",
+      "pages": [
+        1,
+        3
+      ],
+      "coverage": "Round-3 written exposition, pending independent review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "5.49 (sub:W13)",
+      "pages": [
+        53,
+        53
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/W13.tex",
+      "section": "sub:W13",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [
+    "reviews/DB3_review_B.md"
+  ],
+  "prerequisites": [
+    "D536"
+  ],
+  "size_pages": 3,
+  "open_questions": [
+    "Which cases supply a sum over characters and which supply individual bounds? Track the logarithmic weight and the exceptional primes in each sum."
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "W13",
+  "indexed_members": [
+    "D535",
+    "D537",
+    "D538",
+    "D539",
+    "D540"
+  ],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "assembling-the-selmer-window-from-five-counting-cases",
+  "aliases": [
+    "Assembly of the five counting bounds",
+    "vwin_of_counts",
+    "W13 Assembling the Selmer window from five counting cases"
+  ],
+  "background": [
+    "Selmer localization",
+    "Prime-weighted estimates",
+    "Character decomposition"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "5.49 (sub:W13)",
+    "pages": [
+      53,
+      53
+    ]
+  },
+  "question_sources": [
+    "questions/galois.md"
+  ],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "D536": "graph"
+  },
+  "review_status": "pending_review",
+  "summary": "With the uniform second-cohomology estimate, common exceptional-layer window and odd-minus bound, the five stated counting cases give the Selmer window at cutoff exponent 401. Checking the assembly requires knowing which collective or individual estimate covers each character and prime."
+}

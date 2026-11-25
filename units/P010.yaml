@@ -1,0 +1,101 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "P010",
+  "title": "The every-character nonvanishing theorem",
+  "track": {
+    "primary": "formal",
+    "secondary": [
+      "analytic"
+    ]
+  },
+  "statement": "For every $N\\ge1$, Dirichlet character $\\chi$ modulo $N$ and $s\\in\\mathbb C$, $\\Re s>1/2$ and $(\\chi\\ne\\chi_0\\ \\text{or}\\ s\\ne1)$ imply $L(s,\\chi)\\ne0$.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Fix a Dirichlet character of positive modulus and $s$ with $\\Re s>1/2$.",
+    "The character is nonprincipal or $s\\ne1$."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.FinalTheorems.everyCharacter",
+      "file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+      "line0": 10,
+      "line1": 11,
+      "sha256": "cb6e29e571bc60a80fe7adced18bc00414f6ec80fb9521724b707e6e6e3244a4",
+      "dominated": 9567042,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/P010_round3.md",
+      "section": "P010 · Supplying the polarized row to the every-character theorem",
+      "pages": [
+        1,
+        3
+      ],
+      "coverage": "Round-3 written exposition, pending independent review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "6.10 (pn:P010)",
+      "pages": [
+        56,
+        56
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/P010.tex",
+      "section": "pn:P010",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [
+    "reviews/DB3_review_B.md"
+  ],
+  "prerequisites": [
+    "B01",
+    "P011"
+  ],
+  "size_pages": 3,
+  "open_questions": [
+    "Which two routes in the 775-node map reach a shared declaration? Compare inclusive and dominated counts."
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "P010",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "the-every-character-nonvanishing-theorem",
+  "aliases": [
+    "The final every-character assertion",
+    "everyCharacter",
+    "P010 The every-character nonvanishing theorem"
+  ],
+  "background": [
+    "Dirichlet L-functions",
+    "Half-plane nonvanishing"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "6.10 (pn:P010)",
+    "pages": [
+      56,
+      56
+    ]
+  },
+  "question_sources": [
+    "questions/formal.md"
+  ],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "B01": "graph",
+    "P011": "graph"
+  },
+  "review_status": "pending_review",
+  "summary": "At this point the required nonvanishing assertion covers every character of every positive modulus, with its principal-pole exception. The card identifies the arithmetic entry carrying the every-character formulation on the route to the public declaration."
+}

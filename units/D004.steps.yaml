@@ -1,0 +1,138 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "D004",
+  "edition_sha256": "a965c3383da0b2f10009b78d0a37446acaac7ca3ba69c3ec9644d8ea538d9501",
+  "note_sha256": "d152991f17b03dc378ac453f4cd7de92303ae38a9928dee7f28762afc1e27053",
+  "statement_sha256": "1fd0950364c8e13c06fc87ea55c710c57c532f0ff2820161ea2fe062eae1126b",
+  "sources": [
+    {
+      "path": "notes/units/D004_round4.md",
+      "sha256": "d152991f17b03dc378ac453f4cd7de92303ae38a9928dee7f28762afc1e27053"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Unfolding the norm-bound predicate gives seventeen clauses on one compatible choice of Wach, Fontaine and comparison data.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: fixed local data D, HW, F, Cm"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.T.wachLattice_laterClauses_hold",
+          "file": "Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/WachLatticeLaterClausesHoldStatement.lean",
+          "line0": 8,
+          "line1": 9
+        },
+        {
+          "name": "Formalism.MainNotions.DeltaInvariantLattices.DeltaInvariantNormBound",
+          "file": "Formalism/SharpRestriction/LevelLetterCocycles/UsedLocalConclusion.lean",
+          "line0": 9,
+          "line1": 13
+        }
+      ],
+      "source": "notes/units/D004_round4.md",
+      "anchor": "Write the dependent inputs in order",
+      "source_lines": [
+        13,
+        13
+      ],
+      "claim_sha256": "9ed59fbb2953fbfd8f1c58c32fcb652fe68e2693881908314a28434cd5dd2a03",
+      "passage_sha256": "894767d337354d2c9d7938de6a1a591b55077cabcd73a9b65580c9f8c370f969",
+      "sha256": "5e2ceba3fd87de8c178e3e0276fb599fd33d183b0b89eadc263cb29e0f928965",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Each required Wach predicate is supplied on the same fixed data, including P8 obtained using the comparison datum.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S1",
+        "input: the listed Wach comparison theorems"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.NL.wach_used_clauses",
+          "file": "Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/WachLatticeLaterClausesHold.lean",
+          "line0": 28,
+          "line1": 38
+        },
+        {
+          "name": "Formalism.MainNotions.DeltaInvariantLattices.DeltaInvariantNormBound",
+          "file": "Formalism/SharpRestriction/LevelLetterCocycles/UsedLocalConclusion.lean",
+          "line0": 9,
+          "line1": 13
+        }
+      ],
+      "source": "notes/units/D004_round4.md",
+      "anchor": "Trace the Wach block",
+      "source_lines": [
+        17,
+        17
+      ],
+      "claim_sha256": "dd02b6b92bc79ccd9f453bccb4b18312b2cb3dfd473a5f7d1e88e23e8912d2c1",
+      "passage_sha256": "3382e5e694ac156af54b110ef16b67dd81c2dc665b0d0b1dd11dddc0a3075049",
+      "sha256": "6ff02a3c55438a123cbbf8542d809b51c1a4e3824d7c7a87bdf3f1a5f8a59a35",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Appending the cohomological clauses and the Nygaard and comparison pair completes the conjunction.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "S2",
+        "input: the named Herr, torsion and cokernel results"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.NL.wach_used_clauses",
+          "file": "Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/WachLatticeLaterClausesHold.lean",
+          "line0": 28,
+          "line1": 38
+        }
+      ],
+      "source": "notes/units/D004_round4.md",
+      "anchor": "Trace the cohomology block and the last pair",
+      "source_lines": [
+        21,
+        21
+      ],
+      "claim_sha256": "c1097b5d26446fa41e9bfa79521bd86b2fdd4c7e5cb1550c92a6f1d6182d471a",
+      "passage_sha256": "10d8f2eef828fa1d12b59dcb536d056493e62a0fc89617c2c7a7e6e4f3d2a570",
+      "sha256": "2d77b9f6a19743ed3da8a0bf8d9a3a77ec70070d4eb1cd883cdefe54bb3deada",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "0e4ecd092a3f45a715be68797653b1345118c0ef76709efaa02a0a699fb39ed7",
+      "sources": [
+        {
+          "path": "notes/units/D004_round4.md",
+          "sha256": "0d1c79a27cccbf8bb13395ee3b043cb838de31d85ba1a4c9d52e78205ef746c3"
+        }
+      ],
+      "statement_sha256": "1fd0950364c8e13c06fc87ea55c710c57c532f0ff2820161ea2fe062eae1126b",
+      "steps": {
+        "S1": "5e2ceba3fd87de8c178e3e0276fb599fd33d183b0b89eadc263cb29e0f928965",
+        "S2": "6ff02a3c55438a123cbbf8542d809b51c1a4e3824d7c7a87bdf3f1a5f8a59a35",
+        "S3": "2d77b9f6a19743ed3da8a0bf8d9a3a77ec70070d4eb1cd883cdefe54bb3deada"
+      },
+      "step_texts": {
+        "S1": "Unfolding the norm-bound predicate gives seventeen clauses on one compatible choice of Wach, Fontaine and comparison data.",
+        "S2": "Each required Wach predicate is supplied on the same fixed data, including P8 obtained using the comparison datum.",
+        "S3": "Appending the cohomological clauses and the Nygaard and comparison pair completes the conjunction."
+      },
+      "step_passages": {
+        "S1": "894767d337354d2c9d7938de6a1a591b55077cabcd73a9b65580c9f8c370f969",
+        "S2": "3382e5e694ac156af54b110ef16b67dd81c2dc665b0d0b1dd11dddc0a3075049",
+        "S3": "10d8f2eef828fa1d12b59dcb536d056493e62a0fc89617c2c7a7e6e4f3d2a570"
+      }
+    }
+  ]
+}

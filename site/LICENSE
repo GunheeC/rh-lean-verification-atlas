@@ -1,0 +1,14 @@
+RH Lean Verification Atlas (AI-drafted; maintained by Gunhee Cho)
+
+Copyright © 2026 Gunhee Cho, to the extent copyright subsists in AI-generated text.
+Gunhee Cho grants CC BY 4.0 for original atlas writing, editorial arrangement
+and original data to the extent of rights held. Credit the title, maintainer,
+release or commit, and identify changes. The grant does not cover material
+derived from the Lean source. No licence file found at the pinned commit.
+Other third-party material remains subject to its own terms.
+Creative Commons Attribution 4.0 International (SPDX: CC-BY-4.0)
+https://creativecommons.org/licenses/by/4.0/legalcode.en
+
+Original scripts and workflow code are licensed under the MIT License
+(SPDX: MIT). See LICENSE-MIT for the full terms. See NOTICE.md and
+sources/README.md for attribution, the source edition and its licence record.

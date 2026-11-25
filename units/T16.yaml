@@ -1,0 +1,101 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "T16",
+  "title": "The Chow height of an image model",
+  "track": {
+    "primary": "arakelov",
+    "secondary": []
+  },
+  "statement": "Assume the Hodge-bundle record. Let $K$ be a number field with no real\nembeddings, $V$ a $K$-module compatibly acted on by $\\mathcal O_K$, and\n$\\Omega/K$ a field. Let $N_\\sigma$ on $V$ have Gram data and be invariant\nunder conjugating $\\sigma$. Let $W\\subset V$ be a finitely generated\n$\\mathcal O_K$-module spanning $V$ over $K$, and\n$\\mathrm{ev}:V\\to\\Omega$ linear with generating ratios. For degree index\n$D\\ge0$ suppose $d=\\mathrm{imageDeg}(\\mathrm{ev},D)>0$.\nLet $(X,L)$ be its integral image model over $\\mathcal O_K$ with the\nspecified embedding $\\Omega\\to K(X)$ and sections indexed by $W$ for\n$N_\\sigma,W,\\mathrm{ev},D$. If the constant metric shift $L(t)$ has\nself-intersection $a$, then\n\\[\n a\\le [K:\\mathbb Q](D+1)d\\,\n       \\bigl(\\mathrm{imageHeight}(N,W,\\mathrm{ev},D)+t\\bigr).\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Use the Hodge-bundle record, a number field with no real embeddings, a compatible module, extension field and conjugation-invariant Gram data.",
+    "The section lattice is finitely generated and spanning; assume the ratio, positive image-degree, image-model and self-intersection conditions."
+  ],
+  "lean": [
+    {
+      "name": "ChowFormHeightComparison₂.chow_form_height_comparison",
+      "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/HodgeBundleWeights/ChowFormHeightComparison.lean",
+      "line0": 11,
+      "line1": 12,
+      "sha256": "98c04a155550fd6dd4a8a0b97a4303625475b92a0890e1378baa6a25eaf389e9",
+      "dominated": 30511,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/T16_round4.md",
+      "section": "T16 · The Chow height of an image model",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "5.26 (sub:T16)",
+      "pages": [
+        44,
+        44
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/T16.tex",
+      "section": "sub:T16",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L1",
+  "reviews": [
+    "reviews/R21_review.md"
+  ],
+  "prerequisites": [],
+  "size_pages": 2,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [
+    {
+      "grade": "L1",
+      "review": "reviews/R21_review.md",
+      "lines": [
+        109,
+        109
+      ],
+      "scope": "Lean interface as specified in the review row; no equivalence with a published result inferred.",
+      "verdict": "Exact statement comparison"
+    }
+  ],
+  "paper_id": "T16",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "the-chow-height-of-an-image-model",
+  "aliases": [
+    "chow_form_height_comparison",
+    "T16 The Chow height of an image model"
+  ],
+  "background": [
+    "Heights of Chow forms",
+    "Arithmetic projective varieties"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "5.26 (sub:T16)",
+    "pages": [
+      44,
+      44
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "review_status": "pending_review",
+  "summary": "For an integral image model with its specified sections and conjugation-compatible metrics, one controls a shifted self-intersection by the image degree and image height. This turns arithmetic information on the model into a bound expressed in the coordinates of the image."
+}

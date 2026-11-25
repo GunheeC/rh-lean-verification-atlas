@@ -1,0 +1,174 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "W02",
+  "edition_sha256": "81cd171dec5c989532fdf9df4982fec0ef2be30f7e37aab6993d7f3bac19f20d",
+  "note_sha256": "091bac2d558863bdfe40237743b074bde3c231075f402ef76bdc51ed8cd01c51",
+  "statement_sha256": "f50e60029ba0cde8cfb90c959edd3d08a8feda95db8b3ca87c54d6859d3fea91",
+  "sources": [
+    {
+      "path": "notes/units/W02_round4.md",
+      "sha256": "091bac2d558863bdfe40237743b074bde3c231075f402ef76bdc51ed8cd01c51"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The fixed comparison frame admits finite candidate families for the allowed pairs of block sizes.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "W16"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.HeckeLevelFrameExistence.CF.cls_fin",
+          "file": "Development/AutomorphicArithmetic/Foundations/BaseChangeIdentities/FrameMatching/HeckeEigenvalueFiniteness/ClsFin.lean",
+          "line0": 31,
+          "line1": 45
+        },
+        {
+          "name": "UpperTheory.HeckeLevelFrameExistence.CF.all_parts",
+          "file": "Development/AutomorphicArithmetic/Foundations/BaseChangeIdentities/FrameMatching/HeckeEigenvalueFiniteness/CandOf.lean",
+          "line0": 22,
+          "line1": 34
+        },
+        {
+          "name": "UpperTheory.HeckeLevelFrameExistence.CF.candFin_of",
+          "file": "Development/AutomorphicArithmetic/Foundations/BaseChangeIdentities/FrameMatching/HeckeEigenvalueFiniteness/CandOf.lean",
+          "line0": 36,
+          "line1": 40
+        },
+        {
+          "name": "UpperTheory.HeckeLevelFrameExistence.candFin",
+          "file": "Development/AutomorphicArithmetic/Foundations/BaseChangeIdentities/FrameMatching/HeckeEigenvalueFiniteness/FrameEx.lean",
+          "line0": 15,
+          "line1": 17
+        }
+      ],
+      "source": "notes/units/W02_round4.md",
+      "anchor": "Fix a reading rule and a comparison frame. For each permitted pair of block sizes, strict equivalenc",
+      "source_lines": [
+        13,
+        13
+      ],
+      "claim_sha256": "34b99d05af536b5f4e737c70b858caf89c84c1607bbb4640bf1eafe2255d4d73",
+      "passage_sha256": "b9d72a4eb680426f461425f8811aafd93659ac617d019a0959759b897b70ebc6",
+      "sha256": "3ac032c233e14c9eeade99654579b98799d493a2fd8198b9ea26168d69e9e224",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Finite candidate data supply the frame hypothesis of the conditional comparison.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S1",
+        "input: conditional base-change construction"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.BaseChangeIdentities.baseChangeN_of",
+          "file": "Development/AutomorphicArithmetic/Foundations/BaseChangeIdentities/FillPre.lean",
+          "line0": 7,
+          "line1": 9
+        }
+      ],
+      "source": "notes/units/W02_round4.md",
+      "anchor": "The conditional base-change supplier takes exactly that candidate finiteness as its argument. With t",
+      "source_lines": [
+        17,
+        17
+      ],
+      "claim_sha256": "af4ea80014bbb5671f2ba3f046178835c4c62e250729a33ec410939359fd964f",
+      "passage_sha256": "28c42b1ff35cfef795272e8234c195c10fe0c582bcd317e22fcba5411ecadc95",
+      "sha256": "1fb13460ea014071e1304310bf05d8e26eac832c92a93d57c9293ae49121519f",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "One global isobaric datum can meet the compatible split and inert requirements.",
+      "kind": "assembly",
+      "uses": [
+        "S2",
+        "input: simultaneous finite-run argument"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.Rg.BcB.One.full_of",
+          "file": "Development/WeilBound/RepresentationTheoryGL/ArchimedeanBaseChange/ArchimedeanBaseChangeProof/FieldNOf.lean",
+          "line0": 37,
+          "line1": 49
+        }
+      ],
+      "source": "notes/units/W02_round4.md",
+      "anchor": "A single global datum handles",
+      "source_lines": [
+        21,
+        21
+      ],
+      "claim_sha256": "c4d8221125e300a35ae0fc21fdd8c322f125b3ea232660d6c0c4e59b898e23ca",
+      "passage_sha256": "3bd8d8b54e8277eb6bf48c6019c0413040c7fa074b1446f9f6c2d2445bfaae44",
+      "sha256": "2042649ab7e8028a27bcb3ee2b09c254c6fa2dc4a0c4153b006670cfa5cbd0fb",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The local case comparisons provide the fields required of that same global datum.",
+      "kind": "case-split",
+      "uses": [
+        "S3",
+        "input: split, inert and archimedean comparison"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.Rg.BcB.One.fieldN_of",
+          "file": "Development/WeilBound/RepresentationTheoryGL/ArchimedeanBaseChange/ArchimedeanBaseChangeProof/FieldNOf.lean",
+          "line0": 52,
+          "line1": 81
+        }
+      ],
+      "source": "notes/units/W02_round4.md",
+      "anchor": "There are three final local cases. At a split place, choose the subquotient given by split compatibi",
+      "source_lines": [
+        23,
+        23
+      ],
+      "claim_sha256": "71f269037ab13d33a1654b1c341b8416bdbe3d97f2370132ffab41ed7997a63f",
+      "passage_sha256": "9b4e4ad5d6d895126d921eae0c2b2a17caaae6d9c84f8fb41f1d227b49f178b9",
+      "sha256": "efba9a00978c99abe6cd0f2483b8d4810a41e954192555742b167534a4a8eaa9",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "c95e81ec646c4d9e4a85692ad7c28d5e236908138a095aa984ffc2a3e0f7d020",
+      "sources": [
+        {
+          "path": "notes/units/W02_round4.md",
+          "sha256": "c0f2dd240e698f85006f8c31aa4d4a16e3fb28ed05960e26a99b77001e44f233"
+        }
+      ],
+      "statement_sha256": "f50e60029ba0cde8cfb90c959edd3d08a8feda95db8b3ca87c54d6859d3fea91",
+      "steps": {
+        "S1": "21788a5763eed95f6e002933b57f58f7129497bfffc699b39039a53effb8fbde",
+        "S2": "1fb13460ea014071e1304310bf05d8e26eac832c92a93d57c9293ae49121519f",
+        "S3": "8c7907f676bad565ad480661462adfb72f4e0f0b141890588f729c5f7ebc34c4",
+        "S4": "efba9a00978c99abe6cd0f2483b8d4810a41e954192555742b167534a4a8eaa9"
+      },
+      "step_texts": {
+        "S1": "The fixed comparison frame admits finite candidate families for the allowed pairs of block sizes.",
+        "S2": "Finite candidate data supply the frame hypothesis of the conditional comparison.",
+        "S3": "One global isobaric datum can meet the compatible split and inert requirements.",
+        "S4": "The local case comparisons provide the fields required of that same global datum."
+      },
+      "step_passages": {
+        "S1": "b9d72a4eb680426f461425f8811aafd93659ac617d019a0959759b897b70ebc6",
+        "S2": "28c42b1ff35cfef795272e8234c195c10fe0c582bcd317e22fcba5411ecadc95",
+        "S3": "e6a1eefd00444669283faf41eb0b0667cfa568c069e611d88dc939dbe036bba9",
+        "S4": "9b4e4ad5d6d895126d921eae0c2b2a17caaae6d9c84f8fb41f1d227b49f178b9"
+      }
+    }
+  ]
+}

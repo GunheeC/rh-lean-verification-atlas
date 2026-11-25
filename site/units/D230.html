@@ -1,0 +1,39 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>D230 · Crystalline invariants over the maximal unramified extension · RH verification atlas</title><link rel="stylesheet" href="../atlas.css"><script>window.MathJax={tex:{inlineMath:[["$","$"]],displayMath:[["$$","$$"]],processEscapes:true},options:{ignoreHtmlClass:"no-math"}};</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script></head><body><header><div class="bar"><a class="brand" href="../index.html">RH verification atlas</a><nav aria-label="Atlas navigation"><a href="../index.html">Home</a> <a href="../STATUS.html">Status</a> <a href="../MAP.html">Map</a> <a href="../dashboard/index.html">Tracks</a> <a href="../lookup/search.html">Search declarations</a></nav></div></header><main><h1 id="d230--crystalline-invariants-over-the-maximal-unramified-extension">D230 · Crystalline invariants over the maximal unramified extension</h1>
+<p class="notice">AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved</p>
+<p>A fixed crystalline period maps into the de Rham field as a scalar in the maximal unramified part of the chosen local field. The reduction first replaces the element by a fixed representative in the positive crystalline ring.</p>
+<p><code>crystalline-invariants-over-the-maximal-unramified-extension</code> · <a href="../tracks/local/index.html">Local p-adic theory</a></p>
+<p><strong>Outlined</strong> · <strong>L0</strong> Declaration pinned; no review of this unit · Record generated 2026-11-25 (no human check).</p>
+<p><strong>First-pass outline of the head proof term</strong> · 520 dominated core lines. In scope, this note describes what the top-level term calls; it does not explain the dependency cone beneath it.</p>
+<div class="scroll"><table>
+<thead><tr><th>1 · Lean pinned</th><th>2 · Statement compared</th><th>3 · Prose</th><th>4 · Steps</th><th>5 · AI review</th><th>6 · Human</th></tr></thead>
+<tbody><tr><td>✓</td><td>–</td><td>Outlined</td><td>3</td><td>–</td><td>0 of 3 steps</td></tr>
+</tbody></table></div>
+<p><a href="D230.check.html">Numbered proof and check records</a> · <a href="../PROGRESS.html">Progress and counting rules</a></p>
+<h2 id="statement">Statement</h2>
+<p>For an element of the chosen crystalline period ring fixed by <span class="math">$\operatorname{Gal}(\overline{\mathbb Q}_\ell/K)$</span> (with <span class="math">$\ell$</span> the local prime), its image in the de Rham period ring is the image of an element of the maximal unramified subfield of K.</p>
+<div class="math display">$$x\in B_{\rm cris}^{G_K}\ \Longrightarrow\ \exists k\in K_{\rm ur},\ \iota_{\rm cris,dR}(x)=\iota_K(k).$$</div>
+<h2 id="assumptions">Assumptions</h2>
+<ul><li>Use the chosen crystalline period ring and its comparison map into the de Rham ring.</li><li>The given element is fixed by every automorphism of the algebraic closure over <span class="math">$K$</span>.</li></ul>
+<p>Sources for the assumptions · <a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a></p>
+<p><strong>New exposition · pending_review.</strong> This edition has no independent review of the new argument. Earlier verdicts below retain their stated scopes.</p>
+<h2 id="where-to-read">Where to read</h2>
+<p>Blueprint v13 and papers v3–v5 are this atlas project’s own AI-written, unpublished drafts. They have no human review and were not written by the author of the Lean development. Blueprint v13, its separate cover, and paper v5 are distributed as assets of release v0.1.0. For v3 and v4 the atlas supplies selected excerpts and notes. <a href="../data/editions.json">Edition register</a></p>
+<ul><li><a href="../notes/units/D230_round4.html">D230 · Removing crystalline denominators before identifying an unramified scalar</a>, pp. 1–2 in the atlas print layout. Round-4 outline under the named inputs; pending_review.</li><li><a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a>, G.241 (decomp:D230), p. 217. Statement starts on the cited page.</li><li><a href="../notes/units/D230.tex">Manuscript source excerpt</a> · section <code>decomp:D230</code></li></ul>
+<h2 id="evidence">Evidence</h2>
+<p>The pinned declaration is recorded in the formal source. No higher-level verdict is assigned to this unit.</p>
+<h2 id="lean-declarations">Lean declarations</h2>
+<ul><li><code>GroundTheory.PAdicHodge.ACris.bCris_fixed_mem_maxUnramified</code>  <br><a href="https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/GroundTheory/PAdicHodge/FontaineLemmaInvariants.lean#L420-L426"><code>FontaineLemmaInvariants.lean</code></a>, lines 420–426 · 520 dominated lines · SHA-256 <code>048839146df4</code>.</li></ul>
+<p><a href="D230.yaml">Machine record and full declaration hashes</a> · <a href="../lookup/declarations.html">Declaration lookup</a></p>
+<h2 id="reading-prerequisites">Reading prerequisites</h2>
+<p>Background · Crystalline period rings · Unramified extensions of local fields.</p>
+<ul><li><a href="D203.html">D203 · Fixed vectors over the de Rham period ring</a> · graph</li><li><a href="D245.html">D245 · The period span of the positive Frobenius vector</a> · graph</li></ul>
+<p><a href="../data/round3_prerequisites.json">Evidence and definitions of reading links</a></p>
+<h2 id="open-questions">Open questions</h2>
+<p>None recorded.</p>
+<h2 id="graph-connections">Graph connections</h2>
+<p>Arrows may connect either a unit’s main declaration or an indexed member.</p>
+<p><strong>Uses</strong> · <a href="D203.html">D203</a> · <a href="D245.html">D245</a></p>
+<p><strong>Used by</strong> · <a href="B02.html">B02</a></p>
+<p><a href="../data/unit_graph.json">Declaration witnesses and graph scope</a></p>
+<p>Lookup aliases · <code>bCris_fixed_mem_maxUnramified</code>, <code>D230 Crystalline invariants over the maximal unramified extension</code></p>
+<p>&lt;!-- Unit metadata SHA-256 e0cb2b2d774f92b98935b95c493da9e7a936485bb84f22dc6e3c45930da4beb4 --&gt;</p></main><footer><a href="../help.html">Using the local edition</a></footer></body></html>

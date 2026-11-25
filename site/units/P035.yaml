@@ -1,0 +1,111 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "P035",
+  "title": "Stability of integral homological torsion orders",
+  "track": {
+    "primary": "ktheory",
+    "secondary": []
+  },
+  "statement": "For a totally complex field \\(L\\) and \\(n'\\ge n\\ge 2m+4\\), the torsion\nin \\(H_m(G_{n'},\\mathbb Z)\\) is finite, of order\n\\(\\lvert H_m(G_n,\\mathbb Z)_{\\rm tors}\\rvert\\).",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Use a totally complex number field $L$ and nonnegative homological degree $m$.",
+    "The matrix ranks satisfy $n'\\ge n\\ge 2m+4$."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.ZK.Up.torsStab",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/TorsionRankCounts/TorsStab.lean",
+      "line0": 16,
+      "line1": 39,
+      "sha256": "9da559b30cfe4802dcb9e87afc5353d0f097847dfa1bbbce5ffad3390d62b443",
+      "dominated": 31,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "7.12 (pn:P035)",
+      "pages": [
+        79,
+        79
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/P035.tex",
+      "section": "pn:P035",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L1",
+  "reviews": [
+    "reviews/R20_review.md",
+    "reviews/R5_review_A.md"
+  ],
+  "prerequisites": [
+    "P038",
+    "Z2.K7"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "Does stabilization bound the full integral torsion or its component at one prime? Track the remaining factors on the way to Z2.K7."
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [
+    {
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "lines": [
+        111,
+        111
+      ],
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript.",
+      "verdict": "Exact statement comparison"
+    },
+    {
+      "grade": "L1",
+      "review": "reviews/R5_review_A.md",
+      "lines": [
+        10,
+        12
+      ],
+      "scope": "Statement comparison; the proof has qualifications.",
+      "verdict": "No statement mismatch reported"
+    }
+  ],
+  "paper_id": "P035",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "stability-of-integral-homological-torsion-orders",
+  "aliases": [
+    "Stable torsion orders",
+    "torsStab",
+    "P035 Stability of integral homological torsion orders"
+  ],
+  "background": [
+    "Group homology",
+    "Stable range for arithmetic groups"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "7.12 (pn:P035)",
+    "pages": [
+      79,
+      79
+    ]
+  },
+  "question_sources": [
+    "questions/ktheory.md"
+  ],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "P038": "graph",
+    "Z2.K7": "graph"
+  },
+  "summary": "Beyond the stated rank threshold, the torsion in integral homology is finite and its order stays fixed as the matrix rank increases. This permits the counting argument to use a stable-rank torsion order."
+}

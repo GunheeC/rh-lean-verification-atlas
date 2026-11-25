@@ -1,0 +1,39 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit W12. Local manuscript v3, item 5.48, heading on printed PDF p. 52.
+% UpperTheory.V.Win.thmBab_of_lemmaK
+% paper2/split_p013.tex:244–270. Verbatim excerpt; SHA-256 ed7f7ca5c4364b8947823403a14232ad5f0947d1cd6073e6dbbe51c541646b66.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+\noindent\nolinkurl{GlobalTheory.Published.PoitouTateDuality} --- hypothesis at this head (\path{Development/AbelianVarietyTheory/PublishedTheorems/GaloisCohomology₂/ExistsPrimitiveRootPow.lean:13--27}); not compared.\par
+% End of atlas edition annotation.
+
+\begin{formalstatement}[One interval for the prime two and exceptional layers]\label{sub:W12}
+Assume Poitou--Tate duality, local finiteness and local Tate duality
+in the coefficient models for W05, the class-rank bound W11 and W05.
+There are functions $R_0(M),R_\ell(L)$ with values in $\mathbb N$
+and a real $c>0$ such that the following works for every $C_t\ge1$.
+Take an abelian field datum $M$ of modulus $m$, a finite set $B'$ of
+odd primes with abelian data $L_\ell$ containing $\mu_\ell$, a real
+$A_1$ and $0<\varepsilon<1/52$. Set
+\[
+ R=R_0(M)+\sum_{\ell\in B'}R_\ell(L_\ell),\qquad
+ J=2^{R+2}(2cC_t/\varepsilon)^R .
+\]
+There is $X_0$ uniform in the integer functions $e,t$ satisfying,
+for $x\ge2$, $2\le e(x)$, $2^{e(x)}\le x^{A_1}$ and
+$2\le t(x)\le x^{C_t}$. For $X\ge X_0$ and primes $q\equiv3\pmod8$,
+$d\equiv7\pmod{16}$ with $(qd,m)=1$ and
+$\log(qd)\le X^{\varepsilon/(4J)}$, there exists $Y$ with
+$X^{1/J}\le Y$ and $Y^2\le X$. At every $x\in[Y,Y^2]$ the sum over
+$1\le k<t(x)$ of the localization-kernel lengths is finite term by term
+and at most $\exp(x^{4\varepsilon/5})$ in each of two settings:
+at $2$ in every field of type $(M,e(x),q,d)$, and at each
+$\ell\in B'$ in every cyclotomic layer over a model of $L_\ell$
+of degree $\ell^{\operatorname{Nat.log}_\ell(R_\ell(L_\ell))+3}$.
+The integer logarithm at zero is zero. The field type uses the fixed
+group in \nodeid{P013} with the defining kernel of $M$ in place
+of $\ker\chi$.
+\end{formalstatement}\subnode{W12}

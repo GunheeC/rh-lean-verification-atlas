@@ -1,0 +1,142 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D561",
+  "title": "Orthogonality under the translate average",
+  "track": {
+    "primary": "analytic",
+    "secondary": [
+      "arakelov"
+    ]
+  },
+  "statement": "For the fixed host, character data, positive b, and x at least 3, impose the size, thinness and cost windows, T2 inside the subgroup, and the per-unit gap bound Err. If |TT|Y is bounded by the TT sum of the subgroup-band character terms, then |TT| m b (delta2(T2)/2) Y is at most Err + 2|TT| m b/x.\n\\[\n|TT|\\,m b\\,\\frac{\\delta_2(T_2)}{2}Y\\le\\mathrm{Err}+\\frac{2|TT|mb}{x}.\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume the host prime facts, $x\\ge3$, $b>0$, the size and thinness conditions, cost windows, and $T_2\\subseteq A_0$.",
+    "Bound the gap by the same error for every $u\\in A_0$ and give the subgroup-band sum a lower bound of $|TT|Y$."
+  ],
+  "lean": [
+    {
+      "name": "Deduction.CharacterBalanceMoves.core",
+      "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean",
+      "line0": 283,
+      "line1": 338,
+      "sha256": "a2527ea0437b7e8bd11ed4cc2589fa3ff9c61fb3430254faa376637873cb8453",
+      "dominated": 1161,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v5",
+      "section": "A8 · Prime and character balance",
+      "pages": [
+        11,
+        12
+      ],
+      "review_status": "pending_review",
+      "coverage": "Revised paper v5 exposition, pending independent review. The PDF link opens the release attachment after publication."
+    },
+    {
+      "document": "paper2_v5",
+      "section": "A10 · Thick sum at fixed width",
+      "pages": [
+        17,
+        18
+      ],
+      "review_status": "pending_review",
+      "coverage": "Revised paper v5 exposition, pending independent review. The PDF link opens the release attachment after publication."
+    },
+    {
+      "document": "notes/units/D561_v4.md",
+      "section": "D561 · Prime-power balance and the fixed-width thick sum",
+      "pages": [
+        1,
+        4
+      ],
+      "coverage": "Round-3 written exposition, pending independent review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "G.594 (decomp:D561)",
+      "pages": [
+        305,
+        305
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D561.tex",
+      "section": "decomp:D561",
+      "pages": []
+    },
+    {
+      "document": "paper2_v3",
+      "section": "The chain in detail: P017",
+      "pages": [
+        9,
+        13
+      ],
+      "coverage": "Shared subsection for this station, including subordinate inputs."
+    },
+    {
+      "document": "paper2_v4",
+      "section": "Mechanism, §3",
+      "pages": [
+        10,
+        12
+      ],
+      "coverage": "Paper v4, pending independent review."
+    },
+    {
+      "document": "paper2_v4",
+      "section": "Mechanism, §3",
+      "pages": [
+        18,
+        18
+      ],
+      "coverage": "Paper v4, pending independent review."
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [
+    "reviews/DB3_review_A.md"
+  ],
+  "prerequisites": [],
+  "size_pages": 4,
+  "open_questions": [
+    "Which map indexes the thick places by the translated set, and where is its injectivity used in the average?"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "D561",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "orthogonality-under-the-translate-average",
+  "aliases": [
+    "translate average",
+    "core",
+    "D561 Orthogonality under the translate average"
+  ],
+  "background": [
+    "Finite Fourier orthogonality",
+    "Averaging character sums"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.594 (decomp:D561)",
+    "pages": [
+      305,
+      305
+    ]
+  },
+  "question_sources": [
+    "reviews/R23_review.md"
+  ],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "review_status": "pending_review",
+  "summary": "Averaging the per-unit gap bound over subgroup translates bounds a normalized character-band contribution by the given error and an explicit width correction. The density factor in front of the contribution is needed when removing the normalization to obtain a prime-sum estimate."
+}

@@ -1,0 +1,189 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "F-AUX",
+  "edition_sha256": "ec642113bd2c5560ade193a7d295422245913ed890493d0a74dc1d5a5ea3a977",
+  "note_sha256": "2016c71155261499864c38f0e646dbf74e06f48a330728a9d3da1835d4d58b0d",
+  "statement_sha256": "a896c09481112dcd6a5dee2447f69dd43321c2a59dcbdddfe1110a26d509a45e",
+  "sources": [
+    {
+      "path": "notes/units/F-AUX_round4.md",
+      "sha256": "2016c71155261499864c38f0e646dbf74e06f48a330728a9d3da1835d4d58b0d"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "For the unramified pair, invariance of the span and separation of orbit heights put a vector fixed by the second integral subgroup in the span of the first group’s vacuum translates.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "standard: orbit-height induction"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.Hk3.HoweDuality.fixed_mem_span",
+          "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/RhoMemOfMkEq.lean",
+          "line0": 145,
+          "line1": 240
+        }
+      ],
+      "source": "notes/units/F-AUX_round4.md",
+      "anchor": "The one-sided calculation constructs an invariant span",
+      "source_lines": [
+        15,
+        16
+      ],
+      "claim_sha256": "a071e8b34d170a192de6e29f455a35f237162289ccb3de5c4247e70c35111cc0",
+      "passage_sha256": "91a01018b74dd2613063503c4f9b694c5d9319c160ef354e4ff04504d086e614",
+      "sha256": "424ff2dd297b355d9c829c72bab561e8570dccc7374fdbb8ccc796cef733ef23",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Applying the fixed-span result to the Hermitian-adjoint swap gives the other compact-fixed inclusion.",
+      "kind": "assembly",
+      "uses": [
+        "S1"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.Hk3.howeUnram_holds",
+          "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/RhoMemOfMkEq.lean",
+          "line0": 250,
+          "line1": 256
+        }
+      ],
+      "source": "notes/units/F-AUX_round4.md",
+      "anchor": "One component of the final pair is this lemma applied directly.",
+      "source_lines": [
+        15,
+        16
+      ],
+      "claim_sha256": "b9293806a2b32cd82ea692cedf8b47151f5f9500b5cca235b05883b65bc18f9c",
+      "passage_sha256": "91a01018b74dd2613063503c4f9b694c5d9319c160ef354e4ff04504d086e614",
+      "sha256": "17f26900eb837bcc6195a7c1ab6966a0cb07d10929b4ad5a1a677f0f9c6e6ae5",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The matching hypotheses give a common quotient. Evaluation on the two spaces of finite Fock functions spans the target on each side.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "standard: irreducibility and scalar commutant"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.SquareLM.twisted_square_local_matching",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/TwistedSquareLocalMatching.lean",
+          "line0": 18,
+          "line1": 81
+        }
+      ],
+      "source": "notes/units/F-AUX_round4.md",
+      "anchor": "For the chosen characters, spaces, frames and indices,",
+      "source_lines": [
+        22,
+        23
+      ],
+      "claim_sha256": "ff019f6f5f6f42531729371cb5fbf7900977481fbeff7c483a9f9d8e40aeea20",
+      "passage_sha256": "453a5254fdeb13d689104ab6850ed2e48fd3eec981d217da9d8dc87dd3e8958a",
+      "sha256": "0f9b5015abd6e592e489440aa451b05aea033636e27dcc7f0c4a618d3539b366",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The product form on those subspaces extends to the ambient function spaces with its values on finite functions unchanged, which gives square-model local matching.",
+      "kind": "assembly",
+      "uses": [
+        "S3"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.SquareLM.twisted_square_local_matching",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/TwistedSquareLocalMatching.lean",
+          "line0": 18,
+          "line1": 81
+        },
+        {
+          "name": "GlobalTheory.T.twisted_local_factors_match",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/TwistedSquareLocalMatching.lean",
+          "line0": 88,
+          "line1": 89
+        }
+      ],
+      "source": "notes/units/F-AUX_round4.md",
+      "anchor": "The product-form theorem on these two subspaces returns",
+      "source_lines": [
+        22,
+        23
+      ],
+      "claim_sha256": "f9da8329b702df4a2aa754f2a608f1c91280b756cad413a5fe8e4ce96d0b74c5",
+      "passage_sha256": "453a5254fdeb13d689104ab6850ed2e48fd3eec981d217da9d8dc87dd3e8958a",
+      "sha256": "2fe145b691349f8d91fd519fcd10bd19a00f7f53ab97383a777b497af44daf48",
+      "ai_review": []
+    },
+    {
+      "id": "S5",
+      "status": "active",
+      "claim": "The step from Start to Pinned, the at-datum row test and universal specialization compose to yield RowRatW.",
+      "kind": "assembly",
+      "uses": [
+        "standard: composition of implications"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.Mem.LiteralAutomorphy.rowRatW_of_rowTest",
+          "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/RowRatWOfRowTest.lean",
+          "line0": 9,
+          "line1": 12
+        }
+      ],
+      "source": "notes/units/F-AUX_round4.md",
+      "anchor": "The input to this last implication is, at every datum, the test",
+      "source_lines": [
+        27,
+        27
+      ],
+      "claim_sha256": "1b24e5b6b5a5bca52946b51ef3368b9299eabb27d4eb413f9a9165c2e28f4b5e",
+      "passage_sha256": "cfba824817373f642377c2a0053c8ae6793487765770260bad9bc8cc2ef89e44",
+      "sha256": "54b5ab901aa2a13033558b20878e5768aa26a18cbec571ceeab142b1bdb037e6",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "9a262e5300649249363c43678bfd836a482cfa67ccf88d9da1a57ac271a9018d",
+      "sources": [
+        {
+          "path": "notes/units/F-AUX_round4.md",
+          "sha256": "49e95d9a298420b7e80988761b6be98961a6ea2f12d5ab27331c9d547d6942eb"
+        }
+      ],
+      "statement_sha256": "a896c09481112dcd6a5dee2447f69dd43321c2a59dcbdddfe1110a26d509a45e",
+      "steps": {
+        "S1": "424ff2dd297b355d9c829c72bab561e8570dccc7374fdbb8ccc796cef733ef23",
+        "S2": "17f26900eb837bcc6195a7c1ab6966a0cb07d10929b4ad5a1a677f0f9c6e6ae5",
+        "S3": "0f9b5015abd6e592e489440aa451b05aea033636e27dcc7f0c4a618d3539b366",
+        "S4": "2fe145b691349f8d91fd519fcd10bd19a00f7f53ab97383a777b497af44daf48",
+        "S5": "734e02237699b6c2be69859155a3e757820b43a6b3a0c24fbd523c9f4729f8c2"
+      },
+      "step_texts": {
+        "S1": "For the unramified pair, invariance of the span and separation of orbit heights put a vector fixed by the second integral subgroup in the span of the first group’s vacuum translates.",
+        "S2": "Applying the fixed-span result to the Hermitian-adjoint swap gives the other compact-fixed inclusion.",
+        "S3": "The matching hypotheses give a common quotient. Evaluation on the two spaces of finite Fock functions spans the target on each side.",
+        "S4": "The product form on those subspaces extends to the ambient function spaces with its values on finite functions unchanged, which gives square-model local matching.",
+        "S5": "The step from Start to Pinned, the at-datum row test and universal specialization compose to yield RowRatW."
+      },
+      "step_passages": {
+        "S1": "91a01018b74dd2613063503c4f9b694c5d9319c160ef354e4ff04504d086e614",
+        "S2": "91a01018b74dd2613063503c4f9b694c5d9319c160ef354e4ff04504d086e614",
+        "S3": "453a5254fdeb13d689104ab6850ed2e48fd3eec981d217da9d8dc87dd3e8958a",
+        "S4": "453a5254fdeb13d689104ab6850ed2e48fd3eec981d217da9d8dc87dd3e8958a",
+        "S5": "cfba824817373f642377c2a0053c8ae6793487765770260bad9bc8cc2ef89e44"
+      }
+    }
+  ]
+}

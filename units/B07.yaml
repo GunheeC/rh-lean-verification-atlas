@@ -1,0 +1,117 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "B07",
+  "title": "Character hosts on power windows",
+  "track": {
+    "primary": "analytic",
+    "secondary": [
+      "galois"
+    ]
+  },
+  "statement": "For each primitive character $\\psi$, assume the bound of\nSection~\\ref{sec:mechanism} at $t=\\lfloor x^{401}\\rfloor$ with the\nquantifiers of $V$ for this $\\psi$. For every $0<\\varepsilon<1/52$\nthere are $C_{T2},C_8,C_5,c_6,C_b,x_0$ with $C_8\\ge1$ and\n$C_5,c_6,C_b>0$, and a system of scales with exponent-$3/2$ windows.\nAt each eligible scale $s$ with $s.\\varepsilon=\\varepsilon$ and\n$s.x\\ge x_0$ there exist the specified ranks, a host with invariant\n$C_{T2}$, and an auxiliary prime parameter satisfying the rank and\nhost-size conditions. The character request at these data enforces the\nkept-character and share conditions for $\\operatorname{cyc}(\\psi)$,\nthe pointwise bounds on the other characters (logarithmic-derivative\nconstant $4$), and the finite-length Selmer bound with budget $\\sqrt b$.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Fix a primitive character.",
+    "Assume its pointwise Selmer-window assertion with cutoff exponent 401, including the stated window and page-function quantifiers."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.Top.supplyChi",
+      "file": "Development/AutomorphicArithmetic/CharacterBoxes/SupplyChi.lean",
+      "line0": 8,
+      "line1": 16,
+      "sha256": "3802f3f332e6c3e3325ad9b7016e8d050001a204984bd21c05f59b93b9de2e22",
+      "dominated": 31622,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "5.7 (sub:B07)",
+      "pages": [
+        37,
+        37
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/B07.tex",
+      "section": "sub:B07",
+      "pages": []
+    },
+    {
+      "document": "paper2_v3",
+      "section": "The chain in detail: P015",
+      "pages": [
+        17,
+        19
+      ],
+      "coverage": "Shared subsection for this station, including subordinate inputs."
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L1",
+  "reviews": [
+    "reviews/R21_review.md"
+  ],
+  "prerequisites": [
+    "D510",
+    "D511",
+    "D513"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "Which constants are fixed before choosing a prime pair on which all the required twisted-character bounds hold?"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [
+    {
+      "grade": "L1",
+      "review": "reviews/R21_review.md",
+      "lines": [
+        135,
+        135
+      ],
+      "scope": "Lean interface as specified in the review row; no equivalence with a published result inferred.",
+      "verdict": "Exact statement comparison"
+    }
+  ],
+  "paper_id": "B07",
+  "indexed_members": [
+    "D512",
+    "D514",
+    "D515"
+  ],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "character-hosts-on-power-windows",
+  "aliases": [
+    "supplyChi",
+    "B07 Character hosts on power windows"
+  ],
+  "background": [
+    "Selmer groups",
+    "Auxiliary primes",
+    "Character sums"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "5.7 (sub:B07)",
+    "pages": [
+      37,
+      37
+    ]
+  },
+  "question_sources": [
+    "questions/analytic.md"
+  ],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "D510": "graph",
+    "D511": "graph",
+    "D513": "graph"
+  },
+  "summary": "A Selmer bound uniform on the requested windows supplies hosts for a primitive character on windows of exponent three halves. At each eligible scale the host carries the required ranks, kept characters, estimates for the other characters and a finite localization budget together. Later estimates can therefore use one choice of host."
+}

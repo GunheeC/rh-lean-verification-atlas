@@ -1,0 +1,239 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Manuscript v3, heading p. 17; original out/r23_host.tex, SHA-256 a416cbdc1776136bfb4e4aff18286f0a1e80ddfd07386b3043525371b2073f69.
+\subsection{P015. Selecting a host and joining the estimates on one family}
+\label{r23:host}
+
+\begin{proposition}[The host for a primitive character]
+Fix a primitive character $\psi$ of conductor $M$ and put $\Lambda=\operatorname{cyc}(\psi)$.
+Assume $V\mathrm{WinAt}(\psi,401)$ as in \hyperref[sub:B07]{B07}.
+Given $0<\varepsilon<1/52$, there are constants $C_{T2},C_8,c_6,C_b,x_0$
+with $C_8\ge1$ and $c_6,C_b>0$, and a system of windows of exponent
+$3/2$. At every member scale $s$ with $s.\varepsilon=\varepsilon$ and
+$x=s.x\ge x_0$ there are ranks $R$, a host $H$ and a prime $q_0$ with
+$\mathrm{RankVal}(s,R)$, $H.C_{T2}=C_{T2}$ and
+$\mathrm{HostGood}(s,C_8,4,c_6,C_b,H,q_0)$. On this very host,
+\[
+  \mathrm{EAtH}(\Lambda,H,TT,x,\varepsilon,4)
+  \quad\text{and}\quad
+  \mathrm{VVle}(H.E,R.t,\sqrt{\exp(x^\varepsilon)})
+\]
+hold. The first predicate controls the kept characters, their coset shares
+and the other frequencies. The second bounds all finite prime sums for
+the indicated rank and every allowed choice of local data.
+\end{proposition}
+\noindent\nolinkurl{UpperTheory.Top.supplyChi}, \path{CharacterBoxes/SupplyChi.lean:8--16};
+\nolinkurl{GChi}, \path{CharacterBoxes/Supply.lean:38--43};
+\nolinkurl{HostGood}, \nolinkurl{HostExW},
+\path{GlobalTwisting/ThinScalesIffHostBound.lean:101--123};
+\nolinkurl{EAtH}, \path{ExplicitFormulaErrorOfHostConditions.lean:144--151};
+\nolinkurl{VVle}, \path{CharacterBoxes/ExistsPageN.lean:12--18}.
+
+\begin{formalstatement}[Inputs to the host selection]
+Inside \decid{D510}, the prime-pair estimate gives two successive
+positive proportions of good primes, at sufficiently large $Y$:
+put $z=Y^{\varepsilon/5}$, $z'=z(\log Y)^2$, $X=Y^J$ with $J\ge1$.
+Write $P_1=\mathrm{primePairSetFirst}(z)$ and
+$P_2(q)=\mathrm{primeSetTwoBounds}(z,z',q)$.
+For modulus $8M$, tolerance $\varepsilon/2$ and exceptional fraction
+$1/2$, there is $G_1\subset P_1$ and, for each $q\in G_1$,
+there is $G_2(q)\subset P_2(q)$ with the prescribed
+$\mathrm{GoodQ}$ and $\mathrm{GoodD}$ character boxes and
+\[
+ |G_1|\ge |P_1|/2>0,\qquad |G_2(q)|\ge |P_2(q)|/2>0 .
+\]
+The first pool consists of primes $q\equiv3\pmod8$ in $(e^{z/2},e^z]$. The second pool consists of primes $d\equiv7\pmod {16}$ between
+$e^{z'/2}$ (strict) and $e^{z'}$, with
+$q\prod_{3\le p\le z,\,p\ {\rm prime}}p\mid d+1$. The row and box conversion
+on these pools yields $\mathrm{PairGood}(M,\varepsilon,Y,Y^J,q,d)$
+for selected good primes, including the primitive inducing characters'
+bounds and the real-character zero boxes. See
+\nolinkurl{QH.pair_share}, \path{MeanSquareBounds/PairShare.lean:26--32};
+\nolinkurl{PPset}, \nolinkurl{oddM}, \path{GL3MeanSquares/SecondEstimateOfIntervalHypothesis.lean:50--53};
+\nolinkurl{primeSetTwoBounds}, \path{MeanSquareBounds/PrimeSetTwoBounds.lean:41--53};
+\nolinkurl{QH.pair_exists}, \path{MeanSquareBounds/PairExists.lean:9--49};
+\nolinkurl{QH.pairEx}, \path{MeanSquareBounds/pairEx.lean:112--169}.
+
+For the same $\psi$, \nolinkurl{fieldChi} supplies $c\ge1,e_0$
+so that $e\ge e_0$ and primes $q,d$
+with $q\ne3$, $(M,qd)=1$, $q\equiv3\pmod 8$, $d\equiv7\pmod {16}$,
+$(-d/q)=1$, and $(-d/p)=1$ for all odd primes $p$ up to a cutoff $b_0\ge4M$
+(\nolinkurl{HostHyp}, \path{FrobeniusOrbits/Statement.lean:13--14};
+\nolinkurl{fieldChi}, \path{CharacterBoxes/FieldChi.lean:20--26})
+give a field frame $H_0$ of order $c2^e$, field rows up to the specified
+cutoff, conductor factor $Q_S\mid\operatorname{lcm}(2^{e+2},M)$ with
+$Q_S\le4Mc2^e$, kept-character data, the Artin kernel law and a twist
+description. Each frame in the order range admits ranks and the host
+choices of \decid{D513}--\decid{D515}
+(\nolinkurl{admissibleClassesTwistedChar}, \path{CoprimeRanks/AdmChi.lean:11--20}).
+Given these choices, the field rows, a good pair and a window at $Y$,
+\decid{D511} extends $H_0$ to a good host with coset shares, uniformly
+for $s.J,R.o,M\le C_0$ and $Q_S\le C_0R.n$.
+The precise divisibility and positivity conditions are those of
+\nolinkurl{hostOfField}, \path{CharacterBoxes/HostOfField.lean:8--15}.
+\end{formalstatement}
+
+\begin{proof}
+Write $a=2+8\varepsilon$, $k=c^{1/a}\ge1$. Choose $e(u)$ with
+$u^a\le2^{e(u)}\le2u^a$ for $u\ge1$ by rounding up to a dyadic power.
+The window hypothesis supplies $J\ge1$ and a threshold for this
+particular $e$. For arbitrarily large $X$ put $Y=X^{1/J}$.
+The first cardinality inequality gives a $q\in G_1$; with this $q$
+fixed, the second gives $d\in G_2(q)$. The good-pair conclusion
+gives the admissible row at $Y$. Applying the window hypothesis to
+these primes gives $W\ge Y$, $W^2\le X$ and the asserted Selmer
+bound at every $u\in[W,W^2]$. Enlarge the starting $X$ so that
+$W\ge\max(1,k^3,k^{400})$. Put $Z=kW$. For $Z\le x\le Z^{3/2}$
+we have $x\le W^2$ since $k^3\le W$, and $u=x/k\in[W,W^2]$.
+Consequently
+\[
+ x^a\le c2^{e(u)}\le2x^a,\qquad
+ x^{400}=k^{400}u^{400}\le u^{401},\qquad
+ \exp(u^\varepsilon)\le\exp(x^\varepsilon).
+\]
+The good-pair bounds restrict from $X$ to $x$.
+The two last inequalities and nonnegativity of each Selmer summand
+restrict the bound to rank $\lfloor x^{400}\rfloor$ and budget
+$\sqrt{\exp(x^\varepsilon)}$ for every field of type
+$(\psi,e(u),q,d)$. Thus $x^{1/J}\le Y\le x$ and
+the selected datum exists throughout arbitrarily far $3/2$-windows.
+Use all scales admitting such data for this $J$.
+See \nolinkurl{exists_pageN}, \nolinkurl{VVle.mono},
+\path{CharacterBoxes/ExistsPageN.lean:51--77};
+\nolinkurl{winPairs}, \path{CharacterBoxes/WinPairs.lean:5--81};
+\nolinkurl{WinDatum}, \path{CharacterBoxes/TwistForm.lean:19--26}.
+
+Fix $C_0\ge\max(1,J,\Lambda.o,8M)$ before selecting a scale. Use the
+common thresholds from the field extension, admissible ranks and
+$R.t\le x^{400}$. Enlarge $x_0$ so that $x>c2^{e_0}$ and
+$Y^{\varepsilon/5}\ge\max(5,4M)$ whenever $x\ge x_0$
+(which follows from $Y\ge x^{1/J}$). Now take a member scale
+and its witnesses $Y,q,d,e$. The order lower bound gives
+$c2^e\ge x^a\ge x>c2^{e_0}$. The pair supplies the required prime
+congruences and $(-d/p)=1$ for odd primes $p\le\lfloor
+Y^{\varepsilon/5}\rfloor$, with $q\ne3$ by its lower bound (\nolinkurl{pairHyp}, \path{CharacterBoxes/PairHyp.lean:24--31}).
+Apply the field input at this cutoff and choose the ranks on its exact
+frame. Since $R.n\ge x^a$,
+\[
+ Q_S\le4Mc2^e\le8Mx^a\le C_0R.n .
+\]
+All the hypotheses of the field extension now hold. In particular the
+two sets selected in that construction have different jobs: its
+relation-free second set $T_2$ has
+$x^{-\varepsilon}R.n\le |T_2|$ and $4L_w|T_2|\le R.n_0$.
+The set $TT$ of translates is then chosen with
+$\delta_1R.n/2\le |TT|\le2\delta_1R.n$, the weighted bad-prime bound,
+and, for every coset $\gamma+A_0$,
+\[
+  \big|\,|TT\cap(\gamma+A_0)|-\lambda_\gamma |TT|\,\big|
+   \le x^{-1+\varepsilon}|TT|.
+\]
+Here $\lambda_\gamma$ is $4/(3o+1)$ on $A_0$ and $3/(3o+1)$ elsewhere.
+Inserting $TT$ preserves $H_0$ and the selected field. These are the
+count estimates used inside \decid{D511}
+(\nolinkurl{hof_thick}, \nolinkurl{UpperTheory.T3.hostOfFieldOf},
+\path{ShortNorms/hostOfFieldOf.lean:71--95}, \path{ShortNorms/hostOfFieldOf.lean:194--227};
+\nolinkurl{topsChoiceH}, \path{ThickFrames/topsChoiceH.lean:30--34};
+\nolinkurl{Frame.Shares}, \path{ExplicitFormulaErrorOfHostConditions.lean:135--140}).
+
+Every prime divisor of $Q_S$ divides $2M$ by the displayed lcm divisibility.
+The twist description and good pair now give
+$|G_\chi(x)|\le x^{1/2+\varepsilon}$ and logarithmic-derivative norm
+$\le4\log x$ for every bounded character. Together with the kept and
+exceptional-character data and the coset shares these are precisely
+$\mathrm{EAtH}$. The Artin kernel identifies $H.E$ as one of the fields
+quantified over on the selected window. Since $R.t\le\lfloor
+x^{400}\rfloor$, monotonicity gives the second assertion on $H.E$.
+These constructions have fixed $C_5=4$ and all other constants before
+the choice of $s$. See \nolinkurl{boundedTw}, \path{CharacterBoxes/BoundedTw.lean:45--56};
+\nolinkurl{isChiField}, \path{CharacterBoxes/IsChiField.lean:5--22};
+\nolinkurl{eventually_rank_le_rpow_of_lt_one_div_fiftytwo},
+\path{CharacterBoxes/EventuallyRankLeRpowOfLtOneDivFiftytwo.lean:5--9};
+\decid{D510}--\decid{D512}, \nolinkurl{supplyOfAdmOf},
+\path{ShortNorms/supplyOfAdmOf.lean:28--57}, \path{ShortNorms/supplyOfAdmOf.lean:68--135}.
+\end{proof}
+
+\begin{proposition}[Common family for the request]
+Under Green and a witness of the closed-link and definite-side
+$\mathrm{HypsAlt}$ in \nodeid{P015}, $\mathrm{TopG}$ holds. Thus if
+$\lambda>1$, hosts meet a request $G$ on $\lambda$-windows and membership
+in $G.\mathrm{cls}(\lambda)$ implies $\mathrm{HypV}$, then there are real
+$e_D,e_L$ and $\varepsilon_1>0$
+such that each $0<\varepsilon<\varepsilon_1$ has one family in that class
+with tied data on all its sufficiently large window scales.
+\end{proposition}
+\noindent\nolinkurl{TopG}, \path{CharacterBoxes/ZeroFreeAllOfTopG.lean:12--14};
+\nolinkurl{FamilyClassConnected}, \path{CharacterBoxes/DivinNOfHypV.lean:13--15}.
+
+\begin{formalstatement}[Design and closed estimates used below]
+On intersecting the arithmetic family class with $G.\mathrm{cls}(\lambda)$,
+host existence and the design hypotheses give a design for each prescribed
+largeness parameter, including $\mathrm{ChosenE}$, $\mathrm{TuSize}$ and
+$\mathrm{DGamSize}$ (\decid{D483}, \nolinkurl{designExists_of_tuSize_aux4n_litThin},
+\path{ThirdPlaceSeries/LinkEx.lean:15--37}; \nolinkurl{DesignExists},
+\path{ParamsHeightRankConstant.lean:187--190}).
+For designs in the underlying class, the following nine properties are
+closed in precisely the conditional forms of \decid{D488}:
+$N$, division given its local inputs, $\eta$, irreducibility, the
+small-level rank equality, the two chosen-design rank statements,
+$G$, $S$, and the global assembly implication. Here the symbols denote
+the respective hypotheses $hN,hDIV,hEta,hIRR,hZ,hRk,hG,hS,hGL$ of
+\nolinkurl{topDesWin}, \path{CharacterBoxes/DesWin.lean:11--22}.
+The $N$ property is supplied in the hypotheses. In \hyperref[sub:B05]{B05}
+the division input uses the selected rows (\decid{D480}--\decid{D482})
+and local admissibility \hyperref[sub:B06]{B06}. The latter takes point,
+period and column bounds and served selections, uses design size to get
+served families and projects admissibility from the inclusion result
+(\decid{D516}--\decid{D518},
+\nolinkurl{closed_family_admissible_twist_link_alt},
+\path{ThirdPlaceSeries/ClosedFamilyAdmissibleTwistLink.lean:12--31}).
+The other closed inputs and the restriction of size estimates to the
+intersection are those assembled by \nolinkurl{shape_closed_link_n_of_green},
+\path{ThirdPlaceSeries/TopShape.lean:33--55}, especially
+\decid{D479}, \decid{D484}--\decid{D486}, \decid{D489}.
+\end{formalstatement}
+
+\begin{proof}
+Fix the request and the host witnesses. Feed the raw selections of the
+given witness into the shape, passing the scalar premises
+$\mathrm{True},\mathrm{True}$, the projected definite rows, and the
+served-twist condition (\nolinkurl{goal_of_shape_of_hyps},
+\path{ThirdPlaceSeries/ShapeOf.lean:24--32}). Use the constants
+$(C_{\rm abs},C_0,e_D,e_L)=(2,3,2,0)$ of
+\path{ThirdPlaceSeries/TopShape.lean:50--55}.
+Intersect the nine closed conditions: take the minimum of their
+positive $\varepsilon$ thresholds and, at each admissible $\varepsilon$,
+the componentwise supremum of their largeness parameters
+(\nolinkurl{Closed.and}, \path{ParamsHeightRankConstant.lean:159--171}).
+Take the minimum with the design's positive threshold. At any smaller
+positive $\varepsilon$, ask for a design at this common largeness
+parameter. Its family $F$ projects both to the original class and to
+the request. All nine estimates therefore apply at the same $F,C_H$.
+
+The request supplies $\mathrm{HypV}(F)$, which with $N$, the rank
+equality and $\varepsilon>0$ yields $\mathrm{DIVinN}(F)$.
+Insert this and $\mathrm{LinkEta}$ into $\mathrm{LinkDIVt}$ to get
+$\mathrm{LinkDIV}$. The two rank statements at the chosen design,
+together with the size bounds and division, give $\mathrm{LinkMu}$.
+The global implication receives the chosen design and the five entries
+$(\mathrm{LinkG},\mathrm{LinkS},\mathrm{LinkIRR},\mathrm{LinkDIV},\mathrm{LinkMu})$.
+Its conclusion gives $K,c_{HH},e_K,C_L,x_0$ and the tied estimate
+for every $x\in F.\mathrm{Win}$ above $x_0$. This is precisely
+the connected-family assertion. See \nolinkurl{divinN_of_hypV},
+\path{CharacterBoxes/DivinNOfHypV.lean:117--131};
+\nolinkurl{LinkDIVt}, \nolinkurl{LinkGLOBAL},
+\path{GlobalTheoremInputs.lean:91--95}, \path{GlobalTheoremInputs.lean:158--164};
+\nolinkurl{topDesWin}, \path{CharacterBoxes/DesWin.lean:23--31}.
+
+For the application take $\lambda=3/2$, $G=G_\psi$.
+On a family in the request class the second component of $G_\psi$ gives
+$\mathrm{HypV}$ after $F.x_1+1$; the first gives the character bounds
+with constant $4$ at the same indices. Window membership is itself
+the first clause of the class. The preceding two propositions thus give
+one family carrying the windows, bounds and ties required by the
+cyclic-level analytic implication for each $\psi$. Applying that
+implication with the level estimate and its $\mathrm{formB}$ input
+gives the conditional conclusion of P015. See \nolinkurl{FReq.cls},
+\path{CharacterBoxes/Supply.lean:16--23}; \nolinkurl{zeroFreeAll_of_topG},
+\path{CharacterBoxes/ZeroFreeAllOfTopG.lean:16--34};
+\nolinkurl{zero_free_all_of_green_v_win}, \path{ThirdPlaceSeries/TopPlug.lean:12--15}.
+\end{proof}

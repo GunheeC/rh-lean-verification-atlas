@@ -1,0 +1,99 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "P019",
+  "edition_sha256": "5e06df968b8d57a556c37a6f35206705da64d4462d0b8d6bdf7263afcf5ab045",
+  "note_sha256": "f39fb0094bea366a7b72683a3870cab7be1b95b46a3ec7ccb2174291ef2b0230",
+  "statement_sha256": "f680176b8d445b376f20329824a81dace2c659b97bb49135b7b188359308c8a6",
+  "sources": [
+    {
+      "path": "notes/units/P019.tex",
+      "sha256": "f39fb0094bea366a7b72683a3870cab7be1b95b46a3ec7ccb2174291ef2b0230"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The half-gap between the putative zero and the central line yields an intermediate exponent strictly below the real part and strictly below one.",
+      "kind": "computation",
+      "uses": [
+        "input: putative zero strictly to the right of one half"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.HC.zeroFreeOn_of_tiedWin_cyc",
+          "file": "Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/TopWin.lean",
+          "line0": 90,
+          "line1": 93
+        }
+      ],
+      "source": "notes/units/P019.tex",
+      "anchor": "set $\\Delta",
+      "source_lines": [
+        7,
+        20
+      ],
+      "claim_sha256": "9e0a84a3a94339d721277ef7cc9c4b85e64fd86e516321194ac9a70d10558fb4",
+      "passage_sha256": "88faceba9e9e4d2eb006febcaf6910be12cba260f0e485dc5048c0ad69dd6e3c",
+      "sha256": "af6a07aad1342ae2ab0f1be658b7a2e63b9d055124d34723207370a109857553",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "With exponents fixed in advance, epsilon can be chosen so that the family prime-sum exponent lies below the intermediate line.",
+      "kind": "inequality",
+      "uses": [
+        "S1",
+        "P017"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.HC.zeroFreeOn_of_tiedWin_cyc",
+          "file": "Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/TopWin.lean",
+          "line0": 90,
+          "line1": 93
+        }
+      ],
+      "source": "notes/units/P019.tex",
+      "anchor": "The constants $e_D",
+      "source_lines": [
+        7,
+        20
+      ],
+      "claim_sha256": "498c7094f29d9950229c30b644e4d7588af8998e5d56b9b4eb4feb4d288d8a14",
+      "passage_sha256": "88faceba9e9e4d2eb006febcaf6910be12cba260f0e485dc5048c0ad69dd6e3c",
+      "sha256": "85d76398c33ca6381b4abe475b665f000c8fd44777d80e16521af9813ee919e8",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Discarding a bounded initial segment still leaves arbitrarily distant power windows; the level criterion then excludes the chosen zero.",
+      "kind": "assembly",
+      "uses": [
+        "S2",
+        "P018"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.HC.zeroFreeOn_of_tiedWin_cyc",
+          "file": "Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/TopWin.lean",
+          "line0": 90,
+          "line1": 93
+        }
+      ],
+      "source": "notes/units/P019.tex",
+      "anchor": "Removing a bounded initial segment",
+      "source_lines": [
+        7,
+        20
+      ],
+      "claim_sha256": "01fd37c7e5a366a72d6063fc2c20ec545a6051f923d2f704f8d0682f1623e8eb",
+      "passage_sha256": "88faceba9e9e4d2eb006febcaf6910be12cba260f0e485dc5048c0ad69dd6e3c",
+      "sha256": "658cb35de68f086903472733faf2c4777ea60461949a942ea6c631919562a81c",
+      "ai_review": []
+    }
+  ],
+  "history": []
+}

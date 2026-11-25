@@ -1,0 +1,88 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D511",
+  "title": "Host data from the chosen field",
+  "track": {
+    "primary": "analytic",
+    "secondary": [
+      "galois"
+    ]
+  },
+  "statement": "For each allowed epsilon and C0 at least 1, fix uniform host constants and a lower threshold. An admitted initial host of an admissible rank tuple, with the prescribed conductor and lcm divisibility, good prime pair in its window and field rows up to floor(Y\\textasciicircum{}(epsilon/5)), extends to a host at that scale and an auxiliary prime. It has the chosen constants, the four-parameter host bound, and character shares with tolerance x\\textasciicircum{}(\\ensuremath{-}1+epsilon).\n\\[\n\\exists H,q_0,\\quad H^{\\rm ax}=H_0,\\quad C_{T,2}(H)=C_{T,2},\\quad\\mathrm{HostGood}(s,C_8,4,c_6,C_b,H,q_0),\\quad\\mathrm{Shares}_{R}(TT_H,x^{-1+\\varepsilon}).\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Fix $0<\\varepsilon<1/52$ and $C_0\\ge1$. Use an eligible large scale, valid ranks and an admitted initial host.",
+    "Use its size and conductor bounds, the positive lcm divisor, good prime pair in the window and all field rows through $\\lfloor Y^{\\varepsilon/5}\\rfloor$."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.Top.hostOfField",
+      "file": "Development/AutomorphicArithmetic/CharacterBoxes/HostOfField.lean",
+      "line0": 8,
+      "line1": 15,
+      "sha256": "8855c0cb1dda7f740a7192d02c9ee56053f49b8c0fa7ceb3b3e99b6ea82eec7c",
+      "dominated": 10024,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "G.534 (decomp:D511)",
+      "pages": [
+        290,
+        290
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D511.tex",
+      "section": "decomp:D511",
+      "pages": []
+    },
+    {
+      "document": "paper2_v3",
+      "section": "The chain in detail: P015",
+      "pages": [
+        17,
+        19
+      ],
+      "coverage": "Shared subsection for this station, including subordinate inputs."
+    }
+  ],
+  "status": "Statement only",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [],
+  "paper_id": "D511",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "host-data-from-the-chosen-field",
+  "aliases": [
+    "hostOfField",
+    "D511 Host data from the chosen field"
+  ],
+  "background": [
+    "Orders of characters",
+    "Conductor divisibility and prime windows"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.534 (decomp:D511)",
+    "pages": [
+      290,
+      290
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {}
+}

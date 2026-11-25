@@ -1,0 +1,137 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "T15",
+  "title": "From heights to a uniform covolume bound",
+  "track": {
+    "primary": "arakelov",
+    "secondary": []
+  },
+  "statement": "Assume the self-intersection bound and injectivity on small sections.\nTake (i) the toroidal KS, seminegative Lie, Green cuspidal, point\nseparation and Fubini--Study Chow inputs, (ii) the Hodge-bundle record,\n(iii) integral Siegel toroidal models, charts for fans, toroidal charts\nand arithmetic degree, (iv) Grothendieck deformation, (v) the eight\nstatements on Kawamata--Viehweg, log-canonical $L^2$ extension, holomorphic\nsections, nef numerics, Chow forms, their integrality and hyperplane\nsections, and proper-intersection length, and (vi) the deep estimate T14.\nThen T13's uniform inequality for all the covolumes holds.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume the self-intersection estimate, injectivity on small sections and the toroidal, Lie, Green, point-separation, Chow, Hodge-bundle and arithmetic-degree inputs.",
+    "Use Grothendieck deformation, the listed extension, nefness, proper-intersection and section inputs, and the deep component bound T14."
+  ],
+  "lean": [
+    {
+      "name": "SelfIntersectionVolumeEstimates.topCovolG_alt_alt",
+      "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopCovolG.lean",
+      "line0": 39,
+      "line1": 58,
+      "sha256": "fd8ede73b86afd6106f2bca330f81b16015ef2f4083de6cb6ee80701b2227999",
+      "dominated": 205928,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/T15_round3.md",
+      "section": "T15 · Turning a height lower bound into a common covolume estimate",
+      "pages": [
+        1,
+        3
+      ],
+      "coverage": "Round-3 written exposition, pending independent review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "5.25 (sub:T15)",
+      "pages": [
+        44,
+        44
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/T15.tex",
+      "section": "sub:T15",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [
+    "reviews/DB3_review_B.md"
+  ],
+  "prerequisites": [
+    "D128",
+    "D443",
+    "P049",
+    "P050",
+    "Z5.1"
+  ],
+  "size_pages": 3,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "T15",
+  "indexed_members": [
+    "D433",
+    "D434",
+    "D435",
+    "D436",
+    "D437",
+    "D438",
+    "D439",
+    "D440",
+    "D441",
+    "D442",
+    "D444",
+    "D445",
+    "D446",
+    "D447",
+    "D448",
+    "D449",
+    "D450",
+    "D451",
+    "D452",
+    "D453",
+    "D454",
+    "D455",
+    "D456",
+    "D457",
+    "D458",
+    "D459",
+    "D460",
+    "D461",
+    "D462",
+    "D463",
+    "D464",
+    "D465",
+    "D466"
+  ],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "from-heights-to-a-uniform-covolume-bound",
+  "aliases": [
+    "topCovolG_alt_alt",
+    "T15 From heights to a uniform covolume bound"
+  ],
+  "background": [
+    "Chow heights",
+    "Toroidal compactifications",
+    "Arakelov volumes"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "5.25 (sub:T15)",
+    "pages": [
+      44,
+      44
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "D128": "graph",
+    "D443": "graph",
+    "P049": "graph",
+    "P050": "graph",
+    "Z5.1": "graph"
+  },
+  "review_status": "pending_review",
+  "summary": "The self-intersection bound, injectivity on small sections, the deep slope estimate and the listed geometric inputs yield the family-wide covolume estimate. This shows where heights, section counts and component slopes must use compatible geometric data."
+}

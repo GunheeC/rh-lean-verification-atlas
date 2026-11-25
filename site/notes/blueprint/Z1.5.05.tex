@@ -1,0 +1,29 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% RH Notes blueprint source excerpts for Z1.5.05
+% Verbatim excerpts in the notation of the parent blueprint. The labelled editions and source ranges appear below.
+% See the unit YAML for the current proof status. Earlier-round passages retain their original wording.
+\section*{Z1.5.05. Descent of classifiers to the rational case}
+
+% Parent source SHA-256: 9559fca8cc392b75d71f1c158fe0c635cfcab567e2f489b52db4c5bb29d98029
+% blueprint/ch_P_r8_small.tex lines 533 through 552; r8:small:Z1.5.05
+\paragraph{Z1.5.05. A uniform numerical bound after restriction.}
+\phantomsection\label{r8:small:Z1.5.05}
+The lower quadratic classifier uses S20 twice, for \(M\) and \(\ell\):
+intersecting the two cofinite sets still leaves a cofinite set on which
+both representations to be compared have the same candidate Frobenius
+multiset. Assume the lower classifiers and the root-multiset aggregation
+bound. The rational construction starts from \(n^2+2\) fixed quadratic
+fields with constants \(c_j,A_j\) chosen before the auxiliary prime.
+It retains \(n^2+1\) distinct indices \(u(i)\). Set \(X=M(H+1)\ge1\).
+Each lower size is at most \(c_{u(i)}X^{A_{u(i)}}\), hence at most
+\((\sum_j c_j)X^{\sum_j A_j}\). The aggregation estimate multiplies the
+sum of these \(n^2+1\) sizes by at most \(2^{n+1}\).
+The resulting constant and exponent are therefore independent of the
+prime and the retained indices. To obtain the rational classifier it
+remains to construct the compatible root choices and bound the rational
+representation fibres by the restriction/self-twist argument
+(\nolinkurl{UpperTheory.GalN.V.Win.N.countP_alt},
+\path{DenseThresholdCases/FrobeniusTraceCountBoundOfCmEigensystemCount.lean:175--191};
+\nolinkurl{UpperTheory.GalN.V.Win.N.countQ_alt},
+\path{DenseThresholdCases/FrobeniusTraceCountBoundOfCmEigensystemCount.lean:255--276,300--335}).
+

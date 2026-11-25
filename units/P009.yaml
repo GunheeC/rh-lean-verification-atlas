@@ -1,0 +1,97 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "P009",
+  "title": "Half-plane nonvanishing for all Dirichlet characters",
+  "track": {
+    "primary": "formal",
+    "secondary": [
+      "analytic"
+    ]
+  },
+  "statement": "For every $N\\ge1$, Dirichlet character $\\chi$ modulo $N$ and $s\\in\\mathbb C$, $\\Re s>1/2$ and $(\\chi\\ne\\chi_0\\ \\text{or}\\ s\\ne1)$ imply $L(s,\\chi)\\ne0$.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Fix a Dirichlet character of positive modulus and $s$ with $\\Re s>1/2$.",
+    "Exclude the pole by requiring a nonprincipal character or $s\\ne1$."
+  ],
+  "lean": [
+    {
+      "name": "allChi",
+      "file": "Supplements/Kernels/MainTheorems.lean",
+      "line0": 7,
+      "line1": 7,
+      "sha256": "11a64a2901f9f1dfe7c998d12b57e1edacc087d6740857bb890f079d82026b5d",
+      "dominated": 9567045,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/P009_round3.md",
+      "section": "P009 · The common half-plane input and the three ways it is used",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-3 written exposition, pending independent review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "6.9 (pn:P009)",
+      "pages": [
+        56,
+        56
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/P009.tex",
+      "section": "pn:P009",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [
+    "reviews/DB3_review_B.md"
+  ],
+  "prerequisites": [
+    "P010"
+  ],
+  "size_pages": 2,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "P009",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "half-plane-nonvanishing-for-all-dirichlet-characters",
+  "aliases": [
+    "All Dirichlet characters",
+    "allChi",
+    "P009 Half-plane nonvanishing for all Dirichlet characters"
+  ],
+  "background": [
+    "Dirichlet L-functions",
+    "The principal-character pole"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "6.9 (pn:P009)",
+    "pages": [
+      56,
+      56
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "P010": "graph"
+  },
+  "review_status": "pending_review",
+  "summary": "The half-plane assertion here ranges over all characters, including imprimitive ones. For real part greater than one half it requires nonvanishing except at one for the principal character. This is the statement passed to the public export."
+}

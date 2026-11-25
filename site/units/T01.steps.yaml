@@ -1,0 +1,188 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "T01",
+  "edition_sha256": "523cd1bb34ed57dc1a51552e598ce466b368b2b9e955528b567b77b5c59cfc12",
+  "note_sha256": "53aa3d72deffd0159bbc93abdfb1710962ac43ccc9faf2f223a4a35c11b5338e",
+  "statement_sha256": "e599422bf10d1365067b90edd282b252af6e75e031c973a3bd5eafca2271e68c",
+  "sources": [
+    {
+      "path": "notes/units/T01_round4.md",
+      "sha256": "53aa3d72deffd0159bbc93abdfb1710962ac43ccc9faf2f223a4a35c11b5338e"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The specified separation and comparison inputs furnish rationality for the tested row.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "T09",
+        "T11",
+        "input: test-vector assembly"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+          "line0": 44,
+          "line1": 54
+        }
+      ],
+      "source": "notes/units/T01_round4.md",
+      "anchor": "Fix the third-place input $P$, the local theta",
+      "source_lines": [
+        27,
+        27
+      ],
+      "claim_sha256": "de2be66465bbc8d44ac8f5e48229034dcea9e8a6e7a381dd3201d7233d7f911c",
+      "passage_sha256": "722b726999e14e7cb54fc3e7f676d237b4fe93abb0f53ec8518b9828bb4d3591",
+      "sha256": "16475ef196317ed1c8c22d3e9dd60fa92dd76fcdc75789fb3434a0cdddffa8d6",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The maximum of the evaluation and functional thresholds makes the same grid available to both constructions.",
+      "kind": "inequality",
+      "uses": [
+        "T10",
+        "input: evaluation-grid and row-functional thresholds"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+          "line0": 52,
+          "line1": 64
+        }
+      ],
+      "source": "notes/units/T01_round4.md",
+      "anchor": "Grid existence uses convergence of the twisted Weil",
+      "source_lines": [
+        31,
+        31
+      ],
+      "claim_sha256": "f2ea18c9f9bf3d532e9fb683241c60721361dc6d98924529ce45016d451103be",
+      "passage_sha256": "69bbdfe14462bd28f8eb459e8e673ea1622b3ba43839d773f22f17650a1a877e",
+      "sha256": "31a9fcf29832fee2270c2f7d98fa12348640d2636ee3f3c2eec898e84cb49efa",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The linked small-prime, functional and covolume rows give definite-side nonemptiness at the common threshold.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "S2",
+        "T03",
+        "T13",
+        "input: linked small-prime bound"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+          "line0": 69,
+          "line1": 73
+        },
+        {
+          "name": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+          "line0": 63,
+          "line1": 68
+        }
+      ],
+      "source": "notes/units/T01_round4.md",
+      "anchor": "Use the closed covolume bound, the harmonic-analysis and",
+      "source_lines": [
+        35,
+        35
+      ],
+      "claim_sha256": "bfc6c990d162981aee428962d6f0d6ba79abaca6782abbdfaefb0b120072be4d",
+      "passage_sha256": "d95b4dcbd13531d902c6482aefced3e2e71ccac4a86e60b6c0f1f1bdf0b81053",
+      "sha256": "8595591d766ffb8c280d565d6799cd0f751eef8150abefaba89d1309799fa649",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "Green's input, the primitive-character window and the definite-side witness imply the stated conditional nonvanishing.",
+      "kind": "assembly",
+      "uses": [
+        "S3",
+        "input: Green and VWin"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+          "line0": 69,
+          "line1": 73
+        }
+      ],
+      "source": "notes/units/T01_round4.md",
+      "anchor": "Finally extract Green's finite-group input from the regular-character",
+      "source_lines": [
+        39,
+        39
+      ],
+      "claim_sha256": "805b6f71bcb18381c070e5545aa1c1056924e8d3edd0b0a18d4daa352af6adc1",
+      "passage_sha256": "5963927b8432dc8a1a41567d131474482cf43cabf8dbc5be9d0e3874bbf77db5",
+      "sha256": "91851962567251d8482f4eb0b3c97bc6806cb5871e9f3c0c71436201c2a7a932",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "9c2a529f8bb9c05b7611699a92418b2a8c2f41c6ea840330e4d24677b23f5b36",
+      "sources": [
+        {
+          "path": "notes/units/T01_round4.md",
+          "sha256": "bde5fc9001f8ed1762ffce8af27b7802e7984b581f4bea25e5720179c0e65df7"
+        }
+      ],
+      "steps": {
+        "S1": "9b1c21e6a3433b24ea8a5e0b67e44716622e6467f562652afd498c936602215e",
+        "S2": "2edf04740291204164ed6680a97d4930c039bd157824b501bcecb0c9ad66c7df",
+        "S3": "d8b73baffb465fdae8bb46378f38fd274cbc8f37f0758481bd4384251a804988",
+        "S4": "e8f59c7e5a410ebad0816eebd54a7baa4ebf9518d4b4302a8e91d21cbc75e421"
+      },
+      "step_texts": {
+        "S1": "The specified separation and comparison inputs furnish rationality for the tested row.",
+        "S2": "The maximum of the evaluation and functional thresholds makes the same grid available to both constructions.",
+        "S3": "The linked small-prime, functional and covolume rows give definite-side nonemptiness at the common threshold.",
+        "S4": "Green's input, the primitive-character window and the definite-side witness imply the stated conditional nonvanishing."
+      }
+    },
+    {
+      "edition_sha256": "b29417977269773d0f7510112e832410cd0e7648583252d9eecf9fc61638db91",
+      "sources": [
+        {
+          "path": "notes/units/T01_round4.md",
+          "sha256": "bde5fc9001f8ed1762ffce8af27b7802e7984b581f4bea25e5720179c0e65df7"
+        }
+      ],
+      "statement_sha256": "3e561949fb3263874f4c3af1da919ce0f6f2749c54179776dad04390f32704e2",
+      "steps": {
+        "S1": "e11b52ec2b956bd4220b241df28c4af4498b988683f17b7b3b8e8ea040ef93ad",
+        "S2": "31a9fcf29832fee2270c2f7d98fa12348640d2636ee3f3c2eec898e84cb49efa",
+        "S3": "8595591d766ffb8c280d565d6799cd0f751eef8150abefaba89d1309799fa649",
+        "S4": "91851962567251d8482f4eb0b3c97bc6806cb5871e9f3c0c71436201c2a7a932"
+      },
+      "step_texts": {
+        "S1": "The specified separation and comparison inputs furnish rationality for the tested row.",
+        "S2": "The maximum of the evaluation and functional thresholds makes the same grid available to both constructions.",
+        "S3": "The linked small-prime, functional and covolume rows give definite-side nonemptiness at the common threshold.",
+        "S4": "Green's input, the primitive-character window and the definite-side witness imply the stated conditional nonvanishing."
+      },
+      "step_passages": {
+        "S1": "d51a0e2b4ac086b24e642390627fd716d615249b91141027933afbed033f8a47",
+        "S2": "69bbdfe14462bd28f8eb459e8e673ea1622b3ba43839d773f22f17650a1a877e",
+        "S3": "d95b4dcbd13531d902c6482aefced3e2e71ccac4a86e60b6c0f1f1bdf0b81053",
+        "S4": "5963927b8432dc8a1a41567d131474482cf43cabf8dbc5be9d0e3874bbf77db5"
+      }
+    }
+  ]
+}

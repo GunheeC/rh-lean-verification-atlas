@@ -1,0 +1,169 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "D568",
+  "edition_sha256": "4fd9b98ca43a774d2faed9d6a4232c82c8903cf4e330d15b3700ecca0176f662",
+  "note_sha256": "435c9acdfd3e38a4d05ae443bd9fbcdd0177d2f616809da9f1a22b3806aaea65",
+  "statement_sha256": "e88093b83c66684db59f779741d9d56513227a578490586d6c6b461ea00ece89",
+  "sources": [
+    {
+      "path": "notes/units/D568_round4.md",
+      "sha256": "435c9acdfd3e38a4d05ae443bd9fbcdd0177d2f616809da9f1a22b3806aaea65"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "At the fixed unit the maximal-slope correction is at most K3 plus the weighted mean of the lower corrections.",
+      "kind": "inequality",
+      "uses": [
+        "input: division and quotient-slope estimates"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.LFunctionChainParameters.WeightedSlopeBounds.s_lower5",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LevelOfCongruence.lean",
+          "line0": 50,
+          "line1": 66
+        },
+        {
+          "name": "Formalism.LFunctionChainParameters.WeightedSlopeBounds.u_function_le_mean",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LevelOfCongruence.lean",
+          "line0": 81,
+          "line1": 103
+        }
+      ],
+      "source": "notes/units/D568_round4.md",
+      "anchor": "Fix the unit $u_0$ and put $M=\\operatorname{wmean}(d(u_0),\\mathrm{Lo5}(u_0,-))$",
+      "source_lines": [
+        22,
+        22
+      ],
+      "claim_sha256": "c16de360f4a0420970d76a8a760d063baff0262b27529c90d7f72ddde0f8b4a7",
+      "passage_sha256": "bb6b91b2fc574398fd8318067fbd545a112fca1469ffb619c14d31bc2768d48b",
+      "sha256": "17fd6ab23b85993b9e41429cd4a7e5b6b6d101bfcef0516e20497aebf15a4c04",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Nonnegativity permits replacing the local height loss by the product of the two uniform upper bounds.",
+      "kind": "inequality",
+      "uses": [
+        "S1",
+        "input: height and finite-parameter bounds"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.LFunctionChainParameters.WeightedSlopeBounds.key_identity5",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LevelOfCongruence.lean",
+          "line0": 105,
+          "line1": 111
+        },
+        {
+          "name": "Formalism.LFunctionChainParameters.WeightedSlopeBounds.Ga_bound5",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LevelOfCongruence.lean",
+          "line0": 121,
+          "line1": 145
+        }
+      ],
+      "source": "notes/units/D568_round4.md",
+      "anchor": "The exact identity rewrites the relevant division expression as the main term plus an expl",
+      "source_lines": [
+        26,
+        26
+      ],
+      "claim_sha256": "19dde194906b812aa871b6def36a4c25ff90e87fd2d9d743fb2619d78f51a233",
+      "passage_sha256": "2d9bd72faf781e7ca775994eb072bb50eef72768072618c6d856070a090de1ea",
+      "sha256": "94d94ec893a51515a475024623ede0617d28eef7ab6e29b6f91662c3af9811ff",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The positive reciprocal of the uniform denominator bounds the local reciprocal and may multiply the sum of nonnegative losses.",
+      "kind": "inequality",
+      "uses": [
+        "S2",
+        "input: positive denominator"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.LFunctionChainParameters.WeightedSlopeBounds.Ga_bound5",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LevelOfCongruence.lean",
+          "line0": 130,
+          "line1": 160
+        }
+      ],
+      "source": "notes/units/D568_round4.md",
+      "anchor": "The hypotheses give positive denominators $1-\\delta(u_0)$ and $1-\\bar\\delta$, with the lat",
+      "source_lines": [
+        30,
+        30
+      ],
+      "claim_sha256": "5bcc4ca2816b0b300a9adffce710adf80d5e4ec2f8534ed212141a1001b56295",
+      "passage_sha256": "5ebfde38b45daacc6ad64a077dfb4ab0f33c0569a5dfd1e259abfec525cebb94",
+      "sha256": "31cd7931935b5959f9c8574fcf29f545e35fb3c379f5c971f9a700206c726809",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "Collecting the terms leaves the same weighted mean outside and inside the logarithmic error bracket.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.LFunctionChainParameters.WeightedSlopeBounds.Ga_bound5",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LevelOfCongruence.lean",
+          "line0": 158,
+          "line1": 160
+        }
+      ],
+      "source": "notes/units/D568_round4.md",
+      "anchor": "The final three lines place",
+      "source_lines": [
+        42,
+        43
+      ],
+      "claim_sha256": "c889c3c2b0b59bb4afa047f06e0256719ba2eb9c819bb9e6a97aeadb19d2227f",
+      "passage_sha256": "63a31dd654a7f40cf67b700996bee5d2fcbf9a3fe62913669d85c012a0286d97",
+      "sha256": "d97f2db17920d8d963d6984c1618626c2ab7ca2708d258f90996dba5b3a3cb9e",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "9edb87cf4892188075005be4c0ea6b1d2dfcc02bcb3aa83c17134e68d89166e8",
+      "sources": [
+        {
+          "path": "notes/units/D568_round4.md",
+          "sha256": "eb7ccc0903787e0f1cb37274d2e42e90695cfdf89fd97e526ebbc22dd3af07c4"
+        }
+      ],
+      "statement_sha256": "e88093b83c66684db59f779741d9d56513227a578490586d6c6b461ea00ece89",
+      "steps": {
+        "S1": "17fd6ab23b85993b9e41429cd4a7e5b6b6d101bfcef0516e20497aebf15a4c04",
+        "S2": "94d94ec893a51515a475024623ede0617d28eef7ab6e29b6f91662c3af9811ff",
+        "S3": "31cd7931935b5959f9c8574fcf29f545e35fb3c379f5c971f9a700206c726809",
+        "S4": "26213d175ad6ec1d37180c70a282ef4a6aa00c9525dbb8dc7b26d2fa20bba10e"
+      },
+      "step_texts": {
+        "S1": "At the fixed unit the maximal-slope correction is at most K3 plus the weighted mean of the lower corrections.",
+        "S2": "Nonnegativity permits replacing the local height loss by the product of the two uniform upper bounds.",
+        "S3": "The positive reciprocal of the uniform denominator bounds the local reciprocal and may multiply the sum of nonnegative losses.",
+        "S4": "Collecting the terms leaves the same weighted mean outside and inside the logarithmic error bracket."
+      },
+      "step_passages": {
+        "S1": "bb6b91b2fc574398fd8318067fbd545a112fca1469ffb619c14d31bc2768d48b",
+        "S2": "2d9bd72faf781e7ca775994eb072bb50eef72768072618c6d856070a090de1ea",
+        "S3": "5ebfde38b45daacc6ad64a077dfb4ab0f33c0569a5dfd1e259abfec525cebb94",
+        "S4": "0e45ce9eeb7d325018633b50447372748817fe9f2065a252df77786c0e63c4ec"
+      }
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D558",
+  "title": "Cyclotomic restriction on locally trivial Selmer classes",
+  "track": {
+    "primary": "galois",
+    "secondary": []
+  },
+  "statement": "For an open normal subgroup in the character kernel with the stated two-primary restriction and a nonzero twist, cyclotomic restriction on the indicated locally trivial Selmer group is injective, with its image equal to the prescribed character eigenspace.\n\\[\n\\ker(\\mathrm{selRes})=0,\\qquad \\operatorname{im}(\\mathrm{selRes})=\\mathrm{shaEig}\\bigl(\\mathrm{twist}_2(\\ell,\\psi\\chi_O^n),\\ell,\\mathrm{cyc}_U,U,1\\bigr).\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Take an open normal subgroup in the kernel of the given character and a nonzero integral twist.",
+    "At the prime two the subgroup satisfies the stated cyclotomic containment condition."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.Base.control",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/SelmerTransport/Control.lean",
+      "line0": 82,
+      "line1": 162,
+      "sha256": "5f875fda8656141dbbf18637080b2fd0e07f3fb802711f693e57e8c60222304d",
+      "dominated": 1535,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "G.590 (decomp:D558)",
+      "pages": [
+        304,
+        304
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D558.tex",
+      "section": "decomp:D558",
+      "pages": []
+    }
+  ],
+  "status": "Statement only",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [],
+  "paper_id": "D558",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "cyclotomic-restriction-on-locally-trivial-selmer-classes",
+  "aliases": [
+    "control",
+    "D558 Cyclotomic restriction on locally trivial Selmer classes"
+  ],
+  "background": [
+    "Inflation–restriction",
+    "Character eigenspaces in Galois cohomology"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.590 (decomp:D558)",
+    "pages": [
+      304,
+      304
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {}
+}

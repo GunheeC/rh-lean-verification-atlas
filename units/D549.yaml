@@ -1,0 +1,122 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D549",
+  "title": "The omitted-frequency correction",
+  "track": {
+    "primary": "analytic",
+    "secondary": []
+  },
+  "statement": "With x>0, explicit-formula data and compatible character functional, the omitted-character correction SigA on the host subgroup and kept set is at most 4o x\\textasciicircum{}(1/2+epsilon).\n\\[\n\\Sigma_A(D,\\ell,A_0,K_{\\rm kept},x)\\le4o\\,x^{1/2+\\varepsilon}.\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Take $x>0$ and an axial host at the stated level and test set.",
+    "Assume its explicit-formula record and compatibility of the character functional."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.Comparison₂.sigA_le",
+      "file": "Development/AutomorphicArithmetic/PrimitiveCosets/SigALe.lean",
+      "line0": 38,
+      "line1": 60,
+      "sha256": "76af9a0c15d1430c03efad24324cc1e1fc880da1c469944dac5ab35525f9a4e1",
+      "dominated": 51,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v5",
+      "section": "A3 · Omitted-frequency bound",
+      "pages": [
+        20,
+        20
+      ],
+      "review_status": "pending_review",
+      "coverage": "Revised paper v5 exposition, pending independent review. The PDF link opens the release attachment after publication."
+    },
+    {
+      "document": "notes/units/D549_v4.md",
+      "section": "D549 · Bounding the discarded character sum",
+      "pages": [
+        1,
+        1
+      ],
+      "coverage": "Round-3 written exposition, pending independent review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "G.580 (decomp:D549)",
+      "pages": [
+        302,
+        302
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D549.tex",
+      "section": "decomp:D549",
+      "pages": []
+    },
+    {
+      "document": "paper2_v4",
+      "section": "Mechanism, §3",
+      "pages": [
+        16,
+        17
+      ],
+      "coverage": "Paper v4, pending independent review."
+    }
+  ],
+  "status": "Full",
+  "grade": "L1",
+  "reviews": [
+    "reviews/DB3_review_A.md"
+  ],
+  "prerequisites": [],
+  "size_pages": 1,
+  "open_questions": [
+    "Which discarded frequencies contribute to the coefficient $4o$ in the correction term?"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [
+    {
+      "review": "reviews/DB3_review_A.md",
+      "lines": [
+        120,
+        120
+      ],
+      "grade": "L1",
+      "verdict": "CONFIRMED (light check)",
+      "scope": "With positive scale, EAtH and compatibility, the omitted-character correction is at most 4o times the scale to the power 1/2 + epsilon. Statement comparison only."
+    }
+  ],
+  "paper_id": "D549",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "the-omitted-frequency-correction",
+  "aliases": [
+    "sigA_le",
+    "D549 The omitted-frequency correction"
+  ],
+  "background": [
+    "Fourier expansions",
+    "Smoothed character sums"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.580 (decomp:D549)",
+    "pages": [
+      302,
+      302
+    ]
+  },
+  "question_sources": [
+    "reviews/R23_review.md"
+  ],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "review_status": "pending_review",
+  "summary": "Only a controlled set of frequencies is omitted by the host character sum. Under the explicit-formula and compatibility assumptions, their total correction is at most four times the host order parameter times the scale to the half-plus-epsilon power."
+}

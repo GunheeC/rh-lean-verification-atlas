@@ -1,0 +1,117 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "T02",
+  "edition_sha256": "2c96ce54ade3042b63393961580521d4523123f884b437c4a6240859c58f18d1",
+  "note_sha256": "53ddf110d7111943708cc47472e0e297ef9f9ff00b70e804434467058c73dc4b",
+  "statement_sha256": "2c601de525f445a9464445abeb81aaf787f2c630e03a78655f0ff9839250e24a",
+  "sources": [
+    {
+      "path": "notes/units/T02.tex",
+      "sha256": "53ddf110d7111943708cc47472e0e297ef9f9ff00b70e804434467058c73dc4b"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "One threshold can serve the evaluation grid and the Fourier-fit construction.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: evaluation and Fourier fit thresholds"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+          "line0": 44,
+          "line1": 68
+        }
+      ],
+      "source": "notes/units/T02.tex",
+      "anchor": "same selection. The proof takes the maximum of the evaluation-grid and",
+      "source_lines": [
+        25,
+        36
+      ],
+      "claim_sha256": "7d9502215e32afa1b1021a44adf98ff3db31234fa06834840208e5293fb42abd",
+      "passage_sha256": "c4d51146824ea2e0dd84ac65db36659a68a355c3028edbf0553beb3dc271305e",
+      "sha256": "c5cfb27329772ccf8eda45eec9c06561b9b06766061c2a31875b9cb8597c4f9c",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The common selection carries the definite-side certificates and norm link together.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "T13",
+        "input: theta agreements and closed bound"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+          "line0": 44,
+          "line1": 68
+        }
+      ],
+      "source": "notes/units/T02.tex",
+      "anchor": "The certificates include the existence and duty bounds, twists, row",
+      "source_lines": [
+        25,
+        36
+      ],
+      "claim_sha256": "c21d230e5e645cfe5ee6be6478c16a488706789faf8ed8086b2ec166972b6c96",
+      "passage_sha256": "c4d51146824ea2e0dd84ac65db36659a68a355c3028edbf0553beb3dc271305e",
+      "sha256": "1b045572a61f977cc60f5546dafe3cbc8b77390052b303943e74c3a629b35387",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "05a9220cc17be478f922dc08071969ba2e201dcc433ed294572036dac9b2b7e4",
+      "sources": [
+        {
+          "path": "notes/units/T02.tex",
+          "sha256": "becf25ae8547a7a8af081cc1bfce1e9f0cf547f3ae897714af75302ab7cf1a0a"
+        }
+      ],
+      "statement_sha256": "9e4b184edae15c12930a6333ba97d375f9f6cb99d7bddf39203353d4349d7e51",
+      "steps": {
+        "S1": "c5cfb27329772ccf8eda45eec9c06561b9b06766061c2a31875b9cb8597c4f9c",
+        "S2": "1b045572a61f977cc60f5546dafe3cbc8b77390052b303943e74c3a629b35387"
+      },
+      "step_texts": {
+        "S1": "One threshold can serve the evaluation grid and the Fourier-fit construction.",
+        "S2": "The common selection carries the definite-side certificates and norm link together."
+      },
+      "step_passages": {
+        "S1": "c4d51146824ea2e0dd84ac65db36659a68a355c3028edbf0553beb3dc271305e",
+        "S2": "c4d51146824ea2e0dd84ac65db36659a68a355c3028edbf0553beb3dc271305e"
+      }
+    },
+    {
+      "edition_sha256": "1eea6dfcf1b59ef96c7176c0186dab7005f180e7c411ca1ecb2a925276cd16fa",
+      "sources": [
+        {
+          "path": "notes/units/T02.tex",
+          "sha256": "becf25ae8547a7a8af081cc1bfce1e9f0cf547f3ae897714af75302ab7cf1a0a"
+        }
+      ],
+      "statement_sha256": "2c601de525f445a9464445abeb81aaf787f2c630e03a78655f0ff9839250e24a",
+      "steps": {
+        "S1": "c5cfb27329772ccf8eda45eec9c06561b9b06766061c2a31875b9cb8597c4f9c",
+        "S2": "1b045572a61f977cc60f5546dafe3cbc8b77390052b303943e74c3a629b35387"
+      },
+      "step_texts": {
+        "S1": "One threshold can serve the evaluation grid and the Fourier-fit construction.",
+        "S2": "The common selection carries the definite-side certificates and norm link together."
+      },
+      "step_passages": {
+        "S1": "c4d51146824ea2e0dd84ac65db36659a68a355c3028edbf0553beb3dc271305e",
+        "S2": "c4d51146824ea2e0dd84ac65db36659a68a355c3028edbf0553beb3dc271305e"
+      }
+    }
+  ]
+}

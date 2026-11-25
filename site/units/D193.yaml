@@ -1,0 +1,88 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D193",
+  "title": "The normalized flat model and universal isogeny",
+  "track": {
+    "primary": "local",
+    "secondary": []
+  },
+  "statement": "The normalization furnishes the flat model and universal isogeny of type Tj with the specified local rings and identifications.\n\\[\n\\mathrm{EsNorm}.\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Fix the datum at a prime $p$ over a characteristic-zero discrete valuation ring with $p$ in its maximal ideal. Use a model of level $N\\ge3$ coprime to $p$.",
+    "Take a maximal ideal containing the ideal at $r$, $j\\le n$, and $c=p^e$ with $e>0$ if $j>0$. The multiplicity parameter is one."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.Gal.crystallineComparison.Mod.esNorm_link",
+      "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/AnnihilatorModels/QuotObjLink.lean",
+      "line0": 10,
+      "line1": 10,
+      "sha256": "f7ca38f31a72da29b6d85e368fb29e15a7425f67edef5566016368cc456f2a2d",
+      "dominated": 3185,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/D193_round4.md",
+      "section": "D193 · Extending the generic isogeny to a normal flat model",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "G.203 (decomp:D193)",
+      "pages": [
+        207,
+        207
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D193.tex",
+      "section": "decomp:D193",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": 2,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "D193",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "the-normalized-flat-model-and-universal-isogeny",
+  "aliases": [
+    "esNorm_link",
+    "D193 The normalized flat model and universal isogeny"
+  ],
+  "background": [
+    "Normalization of integral models",
+    "Isogenies of abelian varieties"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.203 (decomp:D193)",
+    "pages": [
+      207,
+      207
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "review_status": "pending_review",
+  "summary": "The generic Hecke correspondence supplies two maps and a universal isogeny. Its normalization has to carry extensions of both maps and of that same isogeny, retain the required type, and preserve the universal property on the given open."
+}

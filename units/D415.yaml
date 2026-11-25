@@ -1,0 +1,89 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D415",
+  "title": "Injectivity of the adjoint theta scalar formula",
+  "track": {
+    "primary": "theta",
+    "secondary": []
+  },
+  "statement": "For the given real datum and face, assume the comparison hypotheses, unit conductor ideal, agreement of the indicated place sets and the fixed-point condition at conjugation-invariant good places. Every admitted scalar form then satisfies the bilinear formula, and each theta operator has injective adjoint.\n\\[\n\\forall S_F,\\ \\mathrm{IsSF}(R,S_F)\\ \\Longrightarrow\\ \\mathrm{BForm}(R,S_F)\\wedge\\mathrm{UpInj}(R).\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Use the harmonic-analysis, Siegel–Weil, Hecke-form and doubling input records specified at the pin.",
+    "For the given real datum and face assume the comparison hypotheses, unit conductor ideal, agreement of place sets and the fixed-point condition at conjugation-invariant good places.",
+    "Take a scalar form satisfying the stated admissibility condition."
+  ],
+  "lean": [
+    {
+      "name": "GlobalTheory.T.thetaLift_adjoint_scalarFormula_injective",
+      "file": "Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/ThetaLiftAdjointScalarFormulaInjectiveStatement.lean",
+      "line0": 26,
+      "line1": 27,
+      "sha256": "21b33a14b183ebd63c8f11b286f947b74fc47d1786e3be8492866201a85a9cb5",
+      "dominated": 17210,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/D415_round4.md",
+      "section": "D415 · Injectivity of the adjoint theta scalar formula",
+      "pages": [
+        1,
+        3
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "G.430 (decomp:D415)",
+      "pages": [
+        264,
+        264
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D415.tex",
+      "section": "decomp:D415",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": 3,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "D415",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "injectivity-of-the-adjoint-theta-scalar-formula",
+  "aliases": [
+    "thetaLift_adjoint_scalarFormula_injective",
+    "D415 Injectivity of the adjoint theta scalar formula"
+  ],
+  "background": [
+    "Howe duality and doubling integrals",
+    "Adjoints of theta operators"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.430 (decomp:D415)",
+    "pages": [
+      264,
+      264
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "review_status": "pending_review",
+  "summary": "For a specified real datum and admissible system of scalar forms, the theta map and its adjoint satisfy a scalar formula on the parts of the row. Positivity on the nonzero parts makes the adjoint injective. This supplies the injectivity input for the construction of automorphic rows."
+}

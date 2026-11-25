@@ -1,0 +1,77 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D536",
+  "title": "The pointwise window from a joint count",
+  "track": {
+    "primary": "galois",
+    "secondary": []
+  },
+  "statement": "For a primitive character, combine the joint window and odd-minus bound at the stipulated cutoff to get an interval from Y to Y squared inside the admitted scale range, with the Selmer bound at each point for every prescribed page function.\n\\[\nC_t\\ge1\\ \\wedge\\ \\mathrm{JointWin}(C_t)\\ \\wedge\\ \\mathrm{ThmBc}(C_t)\\ \\Longrightarrow\\ \\forall\\psi,\\ \\mathrm{VWinAt}(\\psi,C_t).\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Fix $C_t\\ge1$ and a primitive character.",
+    "Assume the joint window and odd-minus bound with this same cutoff $C_t$."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.vwinAt_of_joint",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/CMFieldExponentialBounds/AdmissibleOfPageN.lean",
+      "line0": 41,
+      "line1": 129,
+      "sha256": "a8f166364c1e091462d225cf89615b74f14d11807fd32b7fa44874bdbeeaa33f",
+      "dominated": 775,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "G.564 (decomp:D536)",
+      "pages": [
+        298,
+        298
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D536.tex",
+      "section": "decomp:D536",
+      "pages": []
+    }
+  ],
+  "status": "Statement only",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [],
+  "paper_id": "D536",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "the-pointwise-window-from-a-joint-count",
+  "aliases": [
+    "vwinAt_of_joint",
+    "D536 The pointwise window from a joint count"
+  ],
+  "background": [
+    "Selmer windows",
+    "Odd-minus localization bounds"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.564 (decomp:D536)",
+    "pages": [
+      298,
+      298
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {}
+}

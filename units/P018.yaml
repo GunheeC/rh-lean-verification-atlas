@@ -1,0 +1,106 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "P018",
+  "title": "The level window criterion",
+  "track": {
+    "primary": "analytic",
+    "secondary": []
+  },
+  "statement": "\\par\\noindent{\\footnotesize \\nolinkurl{Imports.lean:8}.}\\par\nLet $\\mathcal L$ be a level, $\\lambda>1$ and $0<\\theta<1$. If the set\n$\\{x:\\mathcal G_{\\mathcal L}(x)\\le x^{\\theta}\\}$ has windows of exponent $\\lambda$, then\n$\\mathcal L$ is zero-free above $\\theta$.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Fix a level, $\\lambda>1$ and $0<\\theta<1$.",
+    "The set of $x$ on which the level prime sum is at most $x^\\theta$ contains power windows of exponent $\\lambda$."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.Comparison₂.formB",
+      "file": "Development/AutomorphicArithmetic/PrimitiveCosets/Imports.lean",
+      "line0": 8,
+      "line1": 19,
+      "sha256": "7e428d22efce0efd80b227098601dbf9c2bc6e24039be5c07475f955713a5d5c",
+      "dominated": 2057,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "6.34 (pn:P018)",
+      "pages": [
+        67,
+        67
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/P018.tex",
+      "section": "pn:P018",
+      "pages": []
+    }
+  ],
+  "status": "Full",
+  "grade": "L2",
+  "reviews": [
+    "reviews/R20_review.md"
+  ],
+  "prerequisites": [
+    "P023"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [
+    {
+      "grade": "L2",
+      "review": "reviews/R20_review.md",
+      "lines": [
+        50,
+        50
+      ],
+      "scope": "R20 local implication under its stated premises, not its prerequisite cones.",
+      "verdict": "F: full derivation; yes"
+    },
+    {
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "lines": [
+        106,
+        106
+      ],
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript.",
+      "verdict": "Exact statement comparison"
+    }
+  ],
+  "paper_id": "P018",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "the-level-window-criterion",
+  "aliases": [
+    "level window criterion",
+    "formB",
+    "P018 The level window criterion"
+  ],
+  "background": [
+    "Zero-free regions",
+    "Growth of smoothed prime sums"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "6.34 (pn:P018)",
+    "pages": [
+      67,
+      67
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "P023": "graph"
+  },
+  "summary": "A one-sided bound on the level prime sum over arbitrarily distant power windows excludes level zeros whose real part exceeds the chosen exponent. An entire interval at a time must satisfy the bound; this is the analytic criterion that the family estimate must feed."
+}

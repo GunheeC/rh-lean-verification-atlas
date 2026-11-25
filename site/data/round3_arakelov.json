@@ -1,0 +1,198 @@
+{
+  "changes": [
+    {
+      "id": "T15",
+      "old_status": "Statement only",
+      "status": "Outlined",
+      "review_status": "pending_review",
+      "note": "notes/units/T15_round3.md",
+      "weakest_step": "Compatibility of the chosen deep cover and quotient, carrying section and height normalization in the two bounds that feed the uniform lower estimate.",
+      "lean_ranges": [
+        {
+          "name": "SelfIntersectionVolumeEstimates.topCovolG_alt_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopCovolG.lean",
+          "line0": 39,
+          "line1": 58,
+          "sha256": "fd8ede73b86afd6106f2bca330f81b16015ef2f4083de6cb6ee80701b2227999"
+        },
+        {
+          "name": "SelfIntersectionVolumeEstimates.VolumeEstimateHypotheses",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/HodgeBundleWeights/VolumeEstimateHypotheses.lean",
+          "line0": 11,
+          "line1": 11,
+          "sha256": "a0f4835032c8862e15648d82e5c3d9094325927372902bbc19e2f98e73dacd99"
+        },
+        {
+          "name": "GlobalTheory.CovTop.HypothesesX",
+          "file": "Development/AbelianVarietyTheory/Definitions/Divisors/HypothesesX.lean",
+          "line0": 10,
+          "line1": 20,
+          "sha256": "51a8fb2630b24f1e0fe9f1bf908b299b5f045a7aa80cd5acb440238551cbcbb3"
+        },
+        {
+          "name": "GlobalTheory.CovTop.PublishedHodgeBundleTheorems",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/HodgeBundleWeights/ToKnownTheoremsOf.lean",
+          "line0": 7,
+          "line1": 35,
+          "sha256": "4cc91d518df82d30471d805f8bd3d1de4bfc0d0e52c58cc63558d812265cfe70"
+        },
+        {
+          "name": "GlobalTheory.CovHt.HypothesesH",
+          "file": "Development/AbelianVarietyTheory/Definitions/Divisors/SemiposAtOfPositive.lean",
+          "line0": 216,
+          "line1": 220,
+          "sha256": "eb01705e81c1a5113da81ae6ed5d118bc6c3a5822459ed45a36342837a503ee5"
+        },
+        {
+          "name": "GlobalTheory.Published.GrothendieckDeformation",
+          "file": "Development/AbelianVarietyTheory/PublishedTheorems/Divisors₂/GrothendieckDeformation.lean",
+          "line0": 12,
+          "line1": 15,
+          "sha256": "81e56b309c220c85234619ff75aa48ad5080c311f607638a701f9121a324c2c7"
+        },
+        {
+          "name": "GlobalTheory.HSCore.Quoted",
+          "file": "Development/AbelianVarietyTheory/Definitions/Divisors/WellChosen.lean",
+          "line0": 22,
+          "line1": 30,
+          "sha256": "6a9cdabe338bf8110d4d0cfdac4154f1096c5708d307c04d18b30df97bf4c320"
+        },
+        {
+          "name": "GlobalTheory.CompanionTheory.Ar.Plug.DeepStR",
+          "file": "Development/AutomorphicSpectrum/Definitions/GlobalGeometry/ModelSmall.lean",
+          "line0": 63,
+          "line1": 66,
+          "sha256": "076c0ab2437dc7cb00b22d4bfa15d2447cc39c2494b4de3c4b36d9300d41eb59"
+        },
+        {
+          "name": "Formalism.MainNotions.Closed",
+          "file": "Formalism/SharpRestriction/ParamsHeightRankConstant.lean",
+          "line0": 159,
+          "line1": 161,
+          "sha256": "695339d9d7e45e6ef9e8d225b3445fc9b303ae73beda40cc5200441d65b4ae76"
+        },
+        {
+          "name": "GlobalTheory.CovTop.RowsTAlt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LiftLambdaBound.lean",
+          "line0": 17,
+          "line1": 17,
+          "sha256": "b071d03c79605e61363e73d2ba19d906621c26e4b8b65f9bb5c84505300b6741"
+        },
+        {
+          "name": "GlobalTheory.CovTop.EventuallyAtAllPoints",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LiftLambdaBound.lean",
+          "line0": 18,
+          "line1": 19,
+          "sha256": "58e05fcf44ace7832d25a2ec82a3242ec1a63ac917d833422cc90e7b68096bac"
+        },
+        {
+          "name": "GlobalTheory.CovTop.EventuallyAtAllPoints.and",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LiftLambdaBound.lean",
+          "line0": 20,
+          "line1": 25,
+          "sha256": "26f816cde19881b02b94e0543ca9d8726ca699e2bb63cd23ae7e7294de6411e3"
+        },
+        {
+          "name": "GlobalTheory.CovTop.LiftsCondition",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LiftLambdaBound.lean",
+          "line0": 26,
+          "line1": 28,
+          "sha256": "e51e25ad4bc60030730a968999b6f0613da318ef5bd0760fc21327eaf3cde507"
+        },
+        {
+          "name": "GlobalTheory.CovTop.CoversCondition",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LiftLambdaBound.lean",
+          "line0": 29,
+          "line1": 32,
+          "sha256": "7fe2b11c59f0c2040288e1fcc6d410bea135ad840360507131c8ba607b601239"
+        },
+        {
+          "name": "GlobalTheory.CovTop.CovolumeBoundOfX",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LiftLambdaBound.lean",
+          "line0": 60,
+          "line1": 61,
+          "sha256": "7a4740db4f779a2810e867a5eebe7004c25751696b97717c86282a0b56c09ec0"
+        },
+        {
+          "name": "Formalism.L2.Indef.IndefData.L3",
+          "file": "Formalism/LocalToGlobal/IndefiniteForms/IndefSide.lean",
+          "line0": 315,
+          "line1": 316,
+          "sha256": "24fbcd453ce2710bb6cbd6325c433a52afd6d3dfa8667d77f2f3133fc34c6bdc"
+        },
+        {
+          "name": "GlobalTheory.CovTop.CoverDegree",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LiftLambdaBound.lean",
+          "line0": 56,
+          "line1": 56,
+          "sha256": "986b89709a792d2b9ad94213b649a5bd230137a9400f422690bad76ad4b29d89"
+        },
+        {
+          "name": "GlobalTheory.CovTop.ShareCondition",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LiftLambdaBound.lean",
+          "line0": 57,
+          "line1": 57,
+          "sha256": "72b3c289223135532fec7da7a8dbcaa0c0339c2a8aa8f351b784839f3a22cf70"
+        },
+        {
+          "name": "GlobalTheory.CovTop.HeightCondition",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LiftLambdaBound.lean",
+          "line0": 58,
+          "line1": 58,
+          "sha256": "a46351305553310d05682111acff5017b77263bf92b6644510b119558978f31a"
+        },
+        {
+          "name": "GlobalTheory.CovTop.CoverHeightSum",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LiftLambdaBound.lean",
+          "line0": 59,
+          "line1": 59,
+          "sha256": "0a8153a4041ab9e304bb5999556cd55de3729aa9aaf16fed0e7ef9b2a1b4a105"
+        },
+        {
+          "name": "SelfIntersectionVolumeEstimates.height_lower_bound_general_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/HeightLowerBoundGeneral.lean",
+          "line0": 21,
+          "line1": 22,
+          "sha256": "1db0da646376a3c1bd1e52e9785a02de7a24d87f8a81fbbca1e68273ea684b12"
+        },
+        {
+          "name": "GlobalTheory.T.coverHeightSum_of_flatDeg_coverDegree_share",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/HilbertSamuelLowerBoundOfComponents.lean",
+          "line0": 128,
+          "line1": 129,
+          "sha256": "c560f2214cfd620b1faf84af36c8f38cf6b667e616f98f606f328994a2cbe3b8"
+        },
+        {
+          "name": "GlobalTheory.CovTop.FromComp.u_low_of_cover_hyps",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ULowOf.lean",
+          "line0": 16,
+          "line1": 24,
+          "sha256": "3fb21ab78cbb36a67cd0a5bda143851bb167fae4b18a288ba50775a1b360852f"
+        },
+        {
+          "name": "GlobalTheory.T.liftLowBound_of_cover_estimates",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LowOfCoverHypothesesStatement.lean",
+          "line0": 11,
+          "line1": 12,
+          "sha256": "097d3b1e249edf88faf3a69cdde4ea4dd420be0b769837374e2e5645c8dd9611"
+        },
+        {
+          "name": "GlobalTheory.T.covolX_of_truncation_badSet_lambda_lowBound",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/CovolXOfStepsStatement.lean",
+          "line0": 11,
+          "line1": 12,
+          "sha256": "e68818be7e3aa007a96b4c780365ea24c1138af879d3b50df64d57d3a5353301"
+        },
+        {
+          "name": "GlobalTheory.CovTop.Assembly.covolX_of_lift_bounds_and_coreLe",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/CovolXOfSteps.lean",
+          "line0": 16,
+          "line1": 40,
+          "sha256": "4f2ecfbf77ce0566c098a31dbd46c411246f33a7adab25dcddc10ad32ba1c0a3"
+        }
+      ],
+      "pages_written": 3
+    }
+  ],
+  "pagination": "The 11 pt A4 reader layout with 20 mm margins renders three pages and 16 mathematical expressions in this note."
+}

@@ -1,0 +1,115 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Manuscript v3, heading p. 148; original paper2/pending_proof.tex, SHA-256 f080c15d3cb18fd56ac15e23b3bc092ea515925739b4aee4e5561c8df4058a40.
+\subsection{Candidate proof of depth zero in the base frame (P134)}
+\label{sec:pending-p134}
+\noindent\textsf{P134. The Round 21 AI reviewer found the statement and argument correct and referred the candidate for separate cross-review.}
+The issue is to identify the lattice stabilized in the \emph{chosen}
+base frame. An arbitrary rational frame need not have the property.
+
+\paragraph{The local test.}
+Work in the chart's coefficient field $E$, and let $Q=s(P)$ be the
+transport of one marked prime. Write $\widehat O_Q$ for the valuation ring
+in $E_Q$ and $V_Q=\widehat O_Q^n$, where $n$ is the stage rank.
+In the source, an adelic scalar $z$ is integral at $Q$ if some
+$s\in\mathcal O_E\setminus Q$ makes $sz$ integral at all finite places.
+This is equivalent to $z_Q\in\widehat O_Q$. Indeed, such an $s$ is a
+unit at $Q$. Conversely, an adele has denominators at only finitely many
+other primes $w$. Choose $s\equiv1\pmod Q$ and
+$s\equiv0\pmod{w^{e_w}}$ at those primes, taking $e_w$ large enough to
+clear the corresponding denominators. The Chinese remainder theorem
+gives one such $s$. Here the tensor adelic model gives the same integral
+lattice: at a place $v$ of the base field $F$, completing the finite
+$\mathcal O_F$-module $\mathcal O_E$ gives
+$\prod_{w\mid v}\widehat O_w$, by factorization of $v\mathcal O_E$ and
+the Chinese remainder theorem on its powers. A fixed finite family of
+$\mathcal O_F$-module generators suffices at all $v$, so the integral
+tensors generate precisely the product of these rings.
+Consequently depth zero for $k$ tests the entries of $k_Q-I$ for
+integrality. At depth $d$ it tests the entries of
+$\mathrm N(Q)^{-d}(k_Q-I)$.
+
+\paragraph{Identification of the base frame.}
+Let $L$ be the chart level's base lattice, $J$ its Hermitian matrix and
+$a$ the scalar in the tied data. Of the two hypotheses in \nolinkurl{UnderTie},
+the base-frame calculation uses the first, \nolinkurl{AdPins}. Its
+\nolinkurl{crd_orth} identity gives $J=H^*H$ for the invertible coordinate
+matrix $H=A.\mathrm{crd}_i$, so $\det J$ is a unit. Write
+$C=L+aL^{\sharp}$, where the dual is taken with respect to $J$.
+This is a full lattice, also when $a=0$. Indeed $L$ is full and finite,
+and the dual is obtained by testing a finite spanning family against the
+nonsingular pairing. In a local basis these tests define a lattice by
+an invertible matrix. Denote the completion of $C$ by $C_Q$.
+For a unitary adele $x$, adelic transport sends the completed lattice at
+each place to $x_wL_w$. To see that these local conditions recover the
+transported global lattice, choose a common nonzero integer $h$ with
+$hL_w\subset x_wL_w\subset h^{-1}L_w$ for all $w$. Such an $h$ exists
+because $x$ and its inverse are integral away from finitely many places,
+as is a basis change for $L$. The finite quotient $h^{-1}L/hL$ is the
+direct sum of its primary parts. Specifying the submodule in each part
+and taking its inverse image gives exactly the global rational vectors
+satisfying the local conditions, with the prescribed completions.
+
+Duality commutes with this transport. The defining test for the
+Hermitian dual is integrality of all pairings with lattice vectors.
+After completion one may test on local generators, since the global
+ones span there. At a split place the paired component is at the
+conjugate prime. For the full tuple of components the identity
+$\langle xu,xv\rangle_J=\langle u,v\rangle_J$ carries the test in both
+directions. Thus the completion of the companion of the transported
+lattice at $Q$ is $x_Q C_Q$.
+
+Put $b=A.\mathrm{fb}_{i,\beta,P}$ and let
+$R$ denote the decorated point's rational frame transported to $E$.
+Under the field identification a denominator outside $P$ remains outside
+$Q$, so localization, and then completion, carries the decorated frame
+test to $Q$. In the generator-prime case this test is part of the
+point's lifted decoration. At the other marked primes it is the frame
+condition of the point itself. In both cases $R$ takes the standard
+lattice onto the transported decorated lattice. The lattice clause
+of the represented point identifies this last lattice with the image
+under $H$ of the companion of the lattice transported by $x$. Hence
+\[
+                  R V_Q=H x_Q C_Q .
+\]
+The frame clause is independent of that lattice clause. It says that
+$K=(H x_Q b)^{-1}R$ is congruent to $I$ at depth $d=(t.\mathrm{cst}\,\mu).D(P)$. The index condition
+\nolinkurl{(t.idx_ok μ).cst_ok.D_pos P} gives $d\ge1$.
+Since the rational integer $\mathrm N(Q)$ belongs to $Q$, we have
+$K\equiv I$ modulo the maximal ideal of $\widehat O_Q$.
+Its determinant is a unit and the adjugate formula makes $K^{-1}$
+integral. Therefore $K V_Q=V_Q$, which gives
+$R V_Q=H x_Q b V_Q$. Cancelling $H x_Q$ from the two equalities yields
+\[
+                              b V_Q=C_Q .
+\]
+
+\paragraph{Stabilization and inverse.}
+For an element $\kappa$ of the level subgroup, each local component
+lies in the stabilizer of the completed base lattice, by the local
+level inclusion. The same holds for $\kappa^{-1}$ because the level is a
+group. The unitary-pairing test just used for $x$ shows that $\kappa$
+also preserves the dual lattice, taking account of both primes in a
+split pair. It therefore preserves $L+aL^\sharp$ in both directions.
+At $Q$, conjugating by $b$ now gives
+\[
+ (b^{-1}\kappa_Q b)V_Q=V_Q,
+ \qquad (b^{-1}\kappa_Q^{-1} b)V_Q=V_Q .
+\]
+Applying these matrices to the coordinate vectors gives integral
+columns. Subtracting the corresponding columns of $I$ preserves
+integrality. The local test proves the two depth-zero congruences of
+\nodeid{P134}. In rank zero the entrywise assertions are vacuous.
+
+\smallskip
+\noindent\textit{Lean comparison.}
+The point's lattice and frame fields are in
+\nolinkurl{UnderTie.lean:24--27}. The two cases for its decorated frame
+are in \nolinkurl{IntegralGLSuccEmbeddingMemParahoricTimesPrincipa.lean:275--280}.
+The base-frame calculation is in
+\nolinkurl{ChartBaseFrameBadPrimeEqCompanionLattice.lean:55--83}.
+The stabilizer and the entrywise denominator argument are in
+\nolinkurl{GlobLatCompanOfLev.lean}, under
+\nolinkurl{globLat_compan_of_lev}, \nolinkurl{int_conj} and
+\nolinkurl{lev_stab_cong}. The parent statement links to the full
+source location. The source pins for this candidate are in
+\path{out/R21_pending.json}. The review and the revised source comparisons for both candidates are recorded in \path{out/R22_candidate_review.json}.

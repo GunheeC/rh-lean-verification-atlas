@@ -1,0 +1,41 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>P045 · A weighted valuation bound for a formal-group jet · RH verification atlas</title><link rel="stylesheet" href="../atlas.css"><script>window.MathJax={tex:{inlineMath:[["$","$"]],displayMath:[["$$","$$"]],processEscapes:true},options:{ignoreHtmlClass:"no-math"}};</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script></head><body><header><div class="bar"><a class="brand" href="../index.html">RH verification atlas</a><nav aria-label="Atlas navigation"><a href="../index.html">Home</a> <a href="../STATUS.html">Status</a> <a href="../MAP.html">Map</a> <a href="../dashboard/index.html">Tracks</a> <a href="../lookup/search.html">Search declarations</a></nav></div></header><main><h1 id="p045--a-weighted-valuation-bound-for-a-formal-group-jet">P045 · A weighted valuation bound for a formal-group jet</h1>
+<p class="notice">AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved</p>
+<p>Given the integral formal-group exponential factorization and the match to frame jets, each designated weighted differential coefficient satisfies the lower valuation bound at the next stage. This controls a row of the local comparison using the integral coordinates specified in the hypotheses.</p>
+<p><code>a-weighted-valuation-bound-for-a-formal-group-jet</code> · <a href="../tracks/local/index.html">Local p-adic theory</a></p>
+<p><strong>Outlined</strong> · <strong>L1</strong> Statement matched to Lean · Record generated 2026-11-25 (no human check).</p>
+<div class="scroll"><table>
+<thead><tr><th>1 · Lean pinned</th><th>2 · Statement compared</th><th>3 · Prose</th><th>4 · Steps</th><th>5 · AI review</th><th>6 · Human</th></tr></thead>
+<tbody><tr><td>✓</td><td>✓</td><td>Outlined</td><td>8</td><td>–</td><td>0 of 8 steps</td></tr>
+</tbody></table></div>
+<p><a href="P045.check.html">Numbered proof and check records</a> · <a href="../PROGRESS.html">Progress and counting rules</a></p>
+<h2 id="statement">Statement</h2>
+<p>Fix a prime <span class="math">$p$</span> and project systems <span class="math">$X,Y,D$</span>. Assume the integral exponential factorization for the formal group (<span class="math">$\mathrm{RestGc}$</span>): in the indicated even cyclic coordinates, after adjoining a <span class="math">$(p^2-1)$</span>-st root of <span class="math">$p$</span> and using the inverse Lubin–Tate parameter, the transformed exponential factors as the prescribed exponential times an integral series, with integral parameters. Assume each unweighted differential coefficient is zero or agrees with the corresponding coefficient of a local frame jet. If <span class="math">$D$</span> admits <span class="math">$X,Y$</span>, then for any place <span class="math">$v$</span>, stage <span class="math">$j&lt;m$</span>, <span class="math">$1\le i\le r$</span>, allowed integral parameter series <span class="math">$U$</span>, selected columns <span class="math">$I$</span> and output monomial <span class="math">$n$</span>, the coefficient at <span class="math">$n$</span> of the <span class="math">$i$</span>-weighted differential of</p>
+<div class="math display">$$\Theta_j\!\left(\exp(-\Phi_{j,v})\,U\right)$$</div>
+<p>satisfies the lower valuation bound <span class="math">$g_v(j+1)$</span> in the comparison field <span class="math">$Y$</span>. Integrality of <span class="math">$U$</span> here is in the chosen parameter coordinates.</p>
+<h2 id="assumptions">Assumptions</h2>
+<ul><li>Fix a prime and compatible formal systems <span class="math">$X,Y,D$</span> with the stated integral exponential factorization RestGc.</li><li>Each unweighted coefficient vanishes or is a local-frame jet coefficient. Require admission and the indicated stage, differential and coordinate ranges.</li></ul>
+<p>Sources for the assumptions · <a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a></p>
+<h2 id="where-to-read">Where to read</h2>
+<p>Blueprint v13 and papers v3–v5 are this atlas project’s own AI-written, unpublished drafts. They have no human review and were not written by the author of the Lean development. Blueprint v13, its separate cover, and paper v5 are distributed as assets of release v0.1.0. For v3 and v4 the atlas supplies selected excerpts and notes. <a href="../data/editions.json">Edition register</a></p>
+<ul><li><a href="../notes/local/index.html">Graduate reading packet · An elementary bound inside the inert-prime gain</a></li><li><a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a>, 7.22, p. 87. Statement starts on the cited page.</li><li><a href="../notes/units/P045.tex">Manuscript source excerpt</a> · section <code>pn:P045</code></li></ul>
+<h3 id="other-expositions-and-comparisons">Other expositions and comparisons</h3>
+<ul><li><a href="https://github.com/jimjamzola/RH-Alpoge-Reconstruction/blob/aa9c86bf2a7d29b08575641fecea19a2a603e87c/manuscript/main.pdf">Adriazola, Hypothesis 12.12, p. 113</a> · partial. <a href="../crosswalk/adriazola.html">Correspondence table</a>.</li></ul>
+<h2 id="evidence">Evidence</h2>
+<ul><li><a href="../reviews/R4_review_Z4.html">R4 review Z4</a>, original lines 149–159 — No statement mismatch reported. Statement comparison; the proof has qualifications.</li></ul>
+<p>Review records · <a href="../reviews/R4_review_Z4.html">R4 review Z4</a></p>
+<h2 id="lean-declarations">Lean declarations</h2>
+<ul><li><code>Formalism.MainNotions.FormalGroupSystem.Pf.hecke_place_bound</code>  <br><a href="https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SharpRestriction/GrowthBounds/MultisetValuation/FirstTheoremPlaceBound.lean#L28-L30"><code>FirstTheoremPlaceBound.lean</code></a>, lines 28–30 · 150 dominated lines · SHA-256 <code>50d3609e3318</code>.</li></ul>
+<p><a href="P045.yaml">Machine record and full declaration hashes</a> · <a href="../lookup/declarations.html">Declaration lookup</a></p>
+<h2 id="reading-prerequisites">Reading prerequisites</h2>
+<p>Background · Lubin–Tate formal groups · Jets of formal power series · Nonarchimedean valuations.</p>
+<ul><li><a href="Z42-SITES.html">Z42-SITES · Served-site parameters and the lattice dictionary</a> · statement-reading</li></ul>
+<p><a href="../data/round3_prerequisites.json">Evidence and definitions of reading links</a></p>
+<h2 id="open-questions">Open questions</h2>
+<p>None recorded.</p>
+<h2 id="graph-connections">Graph connections</h2>
+<p>Arrows may connect either a unit’s main declaration or an indexed member.</p>
+<p><strong>Uses</strong> · No recorded edge.</p>
+<p><strong>Used by</strong> · <a href="B06.html">B06</a> · <a href="P015.html">P015</a></p>
+<p><a href="../data/unit_graph.json">Declaration witnesses and graph scope</a></p>
+<p>Lookup aliases · <code>Weighted jet at a place</code>, <code>P045 A weighted valuation bound for a formal-group jet</code></p>
+<p>&lt;!-- Unit metadata SHA-256 154feb4129f7d2595128e0eb2b62382b6503b93db096b85e33f48fe3b74068b7 --&gt;</p></main><footer><a href="../help.html">Using the local edition</a></footer></body></html>

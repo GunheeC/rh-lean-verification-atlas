@@ -1,0 +1,126 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "D547",
+  "edition_sha256": "e56429e58790a646c1c71e65191944ebbb847a5f82db269073a549ff7bf84427",
+  "note_sha256": "80525170d78e0c73491bfca04fe7cd46e732c6bc39c9e90a33d851b70ff9b3af",
+  "statement_sha256": "692674988979caf38dd734c9d6dc33037cf4fca2ab0cb1ffc19276f092a224ac",
+  "sources": [
+    {
+      "path": "notes/units/D547_v4.md",
+      "sha256": "80525170d78e0c73491bfca04fe7cd46e732c6bc39c9e90a33d851b70ff9b3af"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Restricting the primitive character correspondence to kept frequencies gives a bijection with the kept level characters.",
+      "kind": "computation",
+      "uses": [
+        "input: Artin surjectivity and kept-character clause"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Comparison₂.gmA_eq",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/GmAEq.lean",
+          "line0": 61,
+          "line1": 149
+        }
+      ],
+      "source": "notes/units/D547_v4.md",
+      "anchor": "Let $P$ be the host",
+      "source_lines": [
+        15,
+        15
+      ],
+      "claim_sha256": "8d400df6492714f8198a134e05f177cb2bc6c902a400d6713c594ca478c26644",
+      "passage_sha256": "c54e531ca260b97ce7789e6c1187ce71ae30812f791d38aea2e2f66686ca7bc0",
+      "sha256": "b993b01defbbda0a1ac6e4148adc1192ece600f727e1d45af819a4c889e7c628",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "At a ramified prime the inertia average vanishes for a character nontrivial on inertia and otherwise gives the matching primitive Frobenius value.",
+      "kind": "case-split",
+      "uses": [
+        "S1",
+        "standard: character orthogonality on inertia"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Comparison₂.gmA_eq",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/GmAEq.lean",
+          "line0": 61,
+          "line1": 149
+        }
+      ],
+      "source": "notes/units/D547_v4.md",
+      "anchor": "We check that",
+      "source_lines": [
+        17,
+        17
+      ],
+      "claim_sha256": "34cbf4009650bef3db604296ddb2dd734ddc39ceaa697ab1ef000746eefb6892",
+      "passage_sha256": "c3c620f1f2aa605b11aafe2d3323f6584bbacd5f41fdc87584259ea20c41be00",
+      "sha256": "6146d826b2712effb83a20bf98524f7c23edbae486ac61080e238bd0de832e9e",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The principal and eligible sign characters have weight one, and the remaining kept characters have the common smaller weight, so reindexing gives the level sum.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "S2",
+        "input: exceptional-character clause"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Comparison₂.gmA_eq",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/GmAEq.lean",
+          "line0": 61,
+          "line1": 149
+        }
+      ],
+      "source": "notes/units/D547_v4.md",
+      "anchor": "For a kept",
+      "source_lines": [
+        19,
+        19
+      ],
+      "claim_sha256": "a9161b65736049c4b71d3775e008c6417cc405553daf2bf4de54ec7cc92f2514",
+      "passage_sha256": "73a37072a6688aed8d6643214c95bdcd8902966aa2cbe884f2417fe227dcbfe6",
+      "sha256": "cc3bb6cdb1b7a7e9831c7f13d5f83f90ea7ad1e2a5ff10e75d518ee1b1c67a69",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "c34c962de1c1abd8e3ecd251dbc9617aa611131fbd3a05ea9c91a890867efd7f",
+      "sources": [
+        {
+          "path": "notes/units/D547_v4.md",
+          "sha256": "b815e0ee9c050098472e6acf05d17cc00dc8ce65256f6a8b7f4f5cb3eea90585"
+        }
+      ],
+      "statement_sha256": "692674988979caf38dd734c9d6dc33037cf4fca2ab0cb1ffc19276f092a224ac",
+      "steps": {
+        "S1": "b993b01defbbda0a1ac6e4148adc1192ece600f727e1d45af819a4c889e7c628",
+        "S2": "6146d826b2712effb83a20bf98524f7c23edbae486ac61080e238bd0de832e9e",
+        "S3": "cc3bb6cdb1b7a7e9831c7f13d5f83f90ea7ad1e2a5ff10e75d518ee1b1c67a69"
+      },
+      "step_texts": {
+        "S1": "Restricting the primitive character correspondence to kept frequencies gives a bijection with the kept level characters.",
+        "S2": "At a ramified prime the inertia average vanishes for a character nontrivial on inertia and otherwise gives the matching primitive Frobenius value.",
+        "S3": "The principal and eligible sign characters have weight one, and the remaining kept characters have the common smaller weight, so reindexing gives the level sum."
+      },
+      "step_passages": {
+        "S1": "c54e531ca260b97ce7789e6c1187ce71ae30812f791d38aea2e2f66686ca7bc0",
+        "S2": "c3c620f1f2aa605b11aafe2d3323f6584bbacd5f41fdc87584259ea20c41be00",
+        "S3": "73a37072a6688aed8d6643214c95bdcd8902966aa2cbe884f2417fe227dcbfe6"
+      }
+    }
+  ]
+}

@@ -1,0 +1,2049 @@
+{
+  "method": "Statements and positive proof-review records matched to the named statement declarations, cited reviews and archived prose in the three round bundles. Each referenced exposition listed in a proof version must still have its archived digest. Component reviews alone do not certify a unit.",
+  "units": {
+    "B03": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            104,
+            104
+          ],
+          "review": "reviews/R21_review.md",
+          "targets": [
+            "UpperTheory.Gal.Int.galoisLocalGlobalStrong_of_geometry_lift"
+          ],
+          "verdict": "Exact statement comparison"
+        }
+      ],
+      "statement_sha256": [
+        "9e786a52fefd44bb2fea0f7dad480236f0adc8f1b7cb7c2606bc85383edb5956"
+      ]
+    },
+    "B07": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            135,
+            135
+          ],
+          "review": "reviews/R21_review.md",
+          "targets": [
+            "UpperTheory.Top.supplyChi"
+          ],
+          "verdict": "Exact statement comparison"
+        }
+      ],
+      "statement_sha256": [
+        "ef34cc7dc696bb9a97123c0b8f1a73a5c873cc634309d50fd1bcb308d5636f30"
+      ]
+    },
+    "B08": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            136,
+            136
+          ],
+          "review": "reviews/R21_review.md",
+          "targets": [
+            "UpperTheory.Comparison₂.core_gm"
+          ],
+          "verdict": "Exact statement comparison"
+        }
+      ],
+      "statement_sha256": [
+        "9d427a406e596de038997e823c9628a328e9809c532abe2974abcdfc52a32076"
+      ]
+    },
+    "B09": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            137,
+            137
+          ],
+          "review": "reviews/R21_review.md",
+          "targets": [
+            "Deduction.ch_core"
+          ],
+          "verdict": "Exact statement comparison"
+        }
+      ],
+      "statement_sha256": [
+        "d7840c742138c90ce19c7fbf37f46db9d56da1de2e83e099cc5ef164216b1eca"
+      ]
+    },
+    "D563": {
+      "proof_versions": [
+        {
+          "evidence": [
+            {
+              "lines": [
+                61,
+                67
+              ],
+              "review": "reviews/R23_review.md",
+              "targets": [
+                "Formalism.LFunctionChainParameters.ThickSetMeanBounds.proposition_size_bound"
+              ],
+              "verdict": "Seven steps rederived, each marked correct"
+            }
+          ],
+          "sources": {
+            "notes/units/D563-argument.tex": "0775a60e4ae81cd57b5359956d2cda14bef194df910e8b202982e133789e1a19",
+            "notes/units/D563.tex": "a790ea3384a703b9b344912d300d013527c8e6d767276964fd5ed804d9eee5a4"
+          }
+        }
+      ],
+      "statement_evidence": [
+        {
+          "lines": [
+            61,
+            67
+          ],
+          "review": "reviews/R23_review.md",
+          "targets": [
+            "Formalism.LFunctionChainParameters.ThickSetMeanBounds.proposition_size_bound"
+          ],
+          "verdict": "Seven steps rederived, each marked correct"
+        }
+      ],
+      "statement_sha256": [
+        "06561ab25d444558040ab1a381a16dd1c133f2050f28ebc7f9e0b040757681e9"
+      ]
+    },
+    "P001": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            96,
+            96
+          ],
+          "review": "reviews/R20_review.md",
+          "targets": [
+            "riemannHypothesis"
+          ],
+          "verdict": "Exact statement comparison"
+        }
+      ],
+      "statement_sha256": [
+        "18c7ff49a5b5a8192066e92b99582ac348ddc10145898dbd38e762a4093df451"
+      ]
+    },
+    "P002": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            96,
+            96
+          ],
+          "review": "reviews/R20_review.md",
+          "targets": [
+            "riemannZeta_eq_zero_re"
+          ],
+          "verdict": "Exact statement comparison"
+        }
+      ],
+      "statement_sha256": [
+        "18c7ff49a5b5a8192066e92b99582ac348ddc10145898dbd38e762a4093df451"
+      ]
+    },
+    "P003": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            97,
+            97
+          ],
+          "review": "reviews/R20_review.md",
+          "targets": [
+            "LFunction_ne_zero_of_half_lt_re"
+          ],
+          "verdict": "Exact statement comparison"
+        }
+      ],
+      "statement_sha256": [
+        "dab62d1b3f7314e85ff29a52127e2b4697d9a2455d9aae1efa3ffb9c8b896957"
+      ]
+    },
+    "P004": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            98,
+            98
+          ],
+          "review": "reviews/R20_review.md",
+          "targets": [
+            "LFunction_eq_zero_re"
+          ],
+          "verdict": "Exact statement comparison"
+        }
+      ],
+      "statement_sha256": [
+        "b46d311c5f9f397cb3050763a8649a66eb1978c94b6a2c13cd706dfbc85f8b8e"
+      ]
+    },
+    "P005": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            98,
+            98
+          ],
+          "review": "reviews/R20_review.md",
+          "targets": [
+            "LFunction_eq_zero_re_of_isPrimitive"
+          ],
+          "verdict": "Exact statement comparison"
+        }
+      ],
+      "statement_sha256": [
+        "35979134f0549f6e3ec2d4dd3a06ad925c46b86da6dd8abcfaf3792d98f2f4eb"
+      ]
+    },
+    "P011": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            99,
+            99
+          ],
+          "review": "reviews/R20_review.md",
+          "targets": [
+            "UpperTheory.FinalTheorems.everyCharacter_of_row"
+          ],
+          "verdict": "Exact statement comparison"
+        }
+      ],
+      "statement_sha256": [
+        "ad4948482bf77c24c2a4b60a2a65c508095a99fd4b9638dfb665d494c0a23ef9"
+      ]
+    },
+    "P012": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            101,
+            101
+          ],
+          "review": "reviews/R20_review.md",
+          "targets": [
+            "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin"
+          ],
+          "verdict": "Exact statement comparison"
+        }
+      ],
+      "statement_sha256": [
+        "5c5cd540736713b9c6ad9200053bc29d34311a6679748d740d104829db624666"
+      ]
+    },
+    "P013": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            102,
+            102
+          ],
+          "review": "reviews/R20_review.md",
+          "targets": [
+            "UpperTheory.One.vwin_of_row"
+          ],
+          "verdict": "Exact statement comparison"
+        }
+      ],
+      "statement_sha256": [
+        "e2e81720f2c963c9ed9ca8b7c1da8af4a78266cc5e89c577f0de2bba7bc94da3"
+      ]
+    },
+    "P014": {
+      "proof_versions": [
+        {
+          "evidence": [
+            {
+              "lines": [
+                46,
+                46
+              ],
+              "review": "reviews/R20_review.md",
+              "targets": [
+                "UpperTheory.Top.every_character_of_green_v_win"
+              ],
+              "verdict": "F: full derivation; yes"
+            }
+          ],
+          "sources": {
+            "notes/units/P014.tex": "e22ff7866d6634725361e13c96a844906daa0afd9300a9b54b5fbdac4f61ee90"
+          }
+        }
+      ],
+      "statement_evidence": [
+        {
+          "lines": [
+            46,
+            46
+          ],
+          "review": "reviews/R20_review.md",
+          "targets": [
+            "UpperTheory.Top.every_character_of_green_v_win"
+          ],
+          "verdict": "F: full derivation; yes"
+        },
+        {
+          "lines": [
+            103,
+            103
+          ],
+          "review": "reviews/R20_review.md",
+          "targets": [
+            "UpperTheory.Top.every_character_of_green_v_win"
+          ],
+          "verdict": "Exact statement comparison"
+        }
+      ],
+      "statement_sha256": [
+        "398c4d5144786810563bf64f278152be9a47dadbd336ec2ac007b078fe197994"
+      ]
+    },
+    "P015": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            47,
+            47
+          ],
+          "review": "reviews/R20_review.md",
+          "targets": [
+            "UpperTheory.Top.zero_free_all_of_green_v_win"
+          ],
+          "verdict": "Statement exact"
+        },
+        {
+          "lines": [
+            103,
+            103
+          ],
+          "review": "reviews/R20_review.md",
+          "targets": [
+            "UpperTheory.Top.zero_free_all_of_green_v_win"
+          ],
+          "verdict": "Exact statement comparison"
+        }
+      ],
+      "statement_sha256": [
+        "ac582442809ebd2a752ffde72a9e078640d0e7728c9ae9288b025312e6882620"
+      ]
+    },
+    "P016": {
+      "proof_versions": [
+        {
+          "evidence": [
+            {
+              "lines": [
+                48,
+                48
+              ],
+              "review": "reviews/R20_review.md",
+              "targets": [
+                "UpperTheory.Top.zeroFreeAll_of_topG"
+              ],
+              "verdict": "F: full derivation; yes"
+            }
+          ],
+          "sources": {
+            "notes/units/P016.tex": "6b7a1b48444d892d812c2b7764b50486b73f3ec52639126401393e73d29f475d"
+          }
+        }
+      ],
+      "statement_evidence": [
+        {
+          "lines": [
+            48,
+            48
+          ],
+          "review": "reviews/R20_review.md",
+          "targets": [
+            "UpperTheory.Top.zeroFreeAll_of_topG"
+          ],
+          "verdict": "F: full derivation; yes"
+        },
+        {
+          "lines": [
+            103,
+            103
+          ],
+          "review": "reviews/R20_review.md",
+          "targets": [
+            "UpperTheory.Top.zeroFreeAll_of_topG"
+          ],
+          "verdict": "Exact statement comparison"
+        }
+      ],
+      "statement_sha256": [
+        "db35b85687b52642f0ded7badd7d57b2233cfbe0dbeb446eb390abad63bc3650"
+      ]
+    },
+    "P017": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            49,
+            49
+          ],
+          "review": "reviews/R20_review.md",
+          "targets": [
+            "UpperTheory.Comparison₂.level_gm_le_on_family_scales"
+          ],
+          "verdict": "Statement exact"
+        },
+        {
+          "lines": [
+            104,
+            104
+          ],
+          "review": "reviews/R20_review.md",
+          "targets": [
+            "UpperTheory.Comparison₂.level_gm_le_on_family_scales"
+          ],
+          "verdict": "Exact statement comparison"
+        },
+        {
+          "lines": [
+            27,
+            88
+          ],
+          "review": "reviews/R23_review.md",
+          "targets": [
+            "UpperTheory.Comparison₂.level_gm_le_on_family_scales"
+          ],
+          "verdict": "CORRECT WITH GAPS"
+        }
+      ],
+      "statement_sha256": [
+        "2f3c649b6314ffd7036c024b2138a9ead6249ad91035cd4400d31ff6b767d15f"
+      ]
+    },
+    "P018": {
+      "proof_versions": [
+        {
+          "evidence": [
+            {
+              "lines": [
+                50,
+                50
+              ],
+              "review": "reviews/R20_review.md",
+              "targets": [
+                "UpperTheory.Comparison₂.formB"
+              ],
+              "verdict": "F: full derivation; yes"
+            }
+          ],
+          "sources": {
+            "notes/units/P018.tex": "2df85acbf169fcabf4dae00513cd48cbc6f48649befcf83bc06076ce7f747447"
+          }
+        }
+      ],
+      "statement_evidence": [
+        {
+          "lines": [
+            50,
+            50
+          ],
+          "review": "reviews/R20_review.md",
+          "targets": [
+            "UpperTheory.Comparison₂.formB"
+          ],
+          "verdict": "F: full derivation; yes"
+        },
+        {
+          "lines": [
+            106,
+            106
+          ],
+          "review": "reviews/R20_review.md",
+          "targets": [
+            "UpperTheory.Comparison₂.formB"
+          ],
+          "verdict": "Exact statement comparison"
+        }
+      ],
+      "statement_sha256": [
+        "b580b7b40dce4271fd4dbc946e4d839c75e294fb58e7a7dbe964721ffc04b65b"
+      ]
+    },
+    "P019": {
+      "proof_versions": [
+        {
+          "evidence": [
+            {
+              "lines": [
+                51,
+                51
+              ],
+              "review": "reviews/R20_review.md",
+              "targets": [
+                "Formalism.HC.zeroFreeOn_of_tiedWin_cyc"
+              ],
+              "verdict": "F: full derivation; yes"
+            }
+          ],
+          "sources": {
+            "notes/units/P019.tex": "f39fb0094bea366a7b72683a3870cab7be1b95b46a3ec7ccb2174291ef2b0230"
+          }
+        }
+      ],
+      "statement_evidence": [
+        {
+          "lines": [
+            51,
+            51
+          ],
+          "review": "reviews/R20_review.md",
+          "targets": [
+            "Formalism.HC.zeroFreeOn_of_tiedWin_cyc"
+          ],
+          "verdict": "F: full derivation; yes"
+        },
+        {
+          "lines": [
+            106,
+            106
+          ],
+          "review": "reviews/R20_review.md",
+          "targets": [
+            "Formalism.HC.zeroFreeOn_of_tiedWin_cyc"
+          ],
+          "verdict": "Exact statement comparison"
+        }
+      ],
+      "statement_sha256": [
+        "dbd032a38bbbce691c2590da0bc9794724ecdf9eb2fbe22ef75b32fad9cf06b1"
+      ]
+    },
+    "P020": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            52,
+            52
+          ],
+          "review": "reviews/R20_review.md",
+          "targets": [
+            "UpperTheory.V.HV.Core.of_four_alt"
+          ],
+          "verdict": "Statement exact"
+        }
+      ],
+      "statement_sha256": [
+        "d4ae7383422d44fc099cc7be078bda6ad31bc25f99e64c2d1ae5a6686f3160e5"
+      ]
+    },
+    "P021": {
+      "proof_versions": [
+        {
+          "evidence": [
+            {
+              "lines": [
+                53,
+                53
+              ],
+              "review": "reviews/R20_review.md",
+              "targets": [
+                "Formalism.LFunctionChainParameters.WeightedSlopeBounds.each_unit_bound_statement"
+              ],
+              "verdict": "F: full derivation; yes"
+            },
+            {
+              "lines": [
+                120,
+                136
+              ],
+              "review": "reviews/R23_review.md",
+              "targets": [
+                "Formalism.LFunctionChainParameters.WeightedSlopeBounds.each_unit_bound_statement"
+              ],
+              "verdict": "CORRECT AND COMPLETE under displayed hypotheses"
+            }
+          ],
+          "sources": {
+            "notes/units/P021-argument.tex": "34011069faec80ce809ab1de1d54b129c2b26409ec531c3697c752b99f2b5535",
+            "notes/units/P021.tex": "f225cd69ff42d6f2312657144310a0c165507387e44d681c4bcd91339bec37c0"
+          }
+        }
+      ],
+      "statement_evidence": [
+        {
+          "lines": [
+            53,
+            53
+          ],
+          "review": "reviews/R20_review.md",
+          "targets": [
+            "Formalism.LFunctionChainParameters.WeightedSlopeBounds.each_unit_bound_statement"
+          ],
+          "verdict": "F: full derivation; yes"
+        },
+        {
+          "lines": [
+            108,
+            108
+          ],
+          "review": "reviews/R20_review.md",
+          "targets": [
+            "Formalism.LFunctionChainParameters.WeightedSlopeBounds.each_unit_bound_statement"
+          ],
+          "verdict": "Exact statement comparison"
+        },
+        {
+          "lines": [
+            120,
+            136
+          ],
+          "review": "reviews/R23_review.md",
+          "targets": [
+            "Formalism.LFunctionChainParameters.WeightedSlopeBounds.each_unit_bound_statement"
+          ],
+          "verdict": "CORRECT AND COMPLETE under displayed hypotheses"
+        }
+      ],
+      "statement_sha256": [
+        "ab31ad6063cc0785c65fbd526c9cbcec9d45a1bc01184bc3e32500ef6cc72bf0"
+      ]
+    },
+    "P022": {
+      "proof_versions": [
+        {
+          "evidence": [
+            {
+              "lines": [
+                54,
+                54
+              ],
+              "review": "reviews/R20_review.md",
+              "targets": [
+                "Deduction.landau_window"
+              ],
+              "verdict": "F: full derivation; yes"
+            }
+          ],
+          "sources": {
+            "notes/units/P022.tex": "f8abeffc943e2c6292c6aca983f38a0be3a39cf83ae09ee208f5ab78b4477037"
+          }
+        }
+      ],
+      "statement_evidence": [
+        {
+          "lines": [
+            54,
+            54
+          ],
+          "review": "reviews/R20_review.md",
+          "targets": [
+            "Deduction.landau_window"
+          ],
+          "verdict": "F: full derivation; yes"
+        },
+        {
+          "lines": [
+            106,
+            106
+          ],
+          "review": "reviews/R20_review.md",
+          "targets": [
+            "Deduction.landau_window"
+          ],
+          "verdict": "Exact statement comparison"
+        }
+      ],
+      "statement_sha256": [
+        "700d1004f4b7f3febe73428aa9a56550acbda817f98ced260e97bfe0f3fb80e7"
+      ]
+    },
+    "P023": {
+      "proof_versions": [
+        {
+          "evidence": [
+            {
+              "lines": [
+                55,
+                55
+              ],
+              "review": "reviews/R20_review.md",
+              "targets": [
+                "Deduction.zeroFree_of_rpow_window"
+              ],
+              "verdict": "F: full derivation; yes"
+            }
+          ],
+          "sources": {
+            "notes/units/P023.tex": "6f56e2fd71664aa135fdbe669b0e734f0c339bddfb039d0418d661254fdebae9"
+          }
+        }
+      ],
+      "statement_evidence": [
+        {
+          "lines": [
+            55,
+            55
+          ],
+          "review": "reviews/R20_review.md",
+          "targets": [
+            "Deduction.zeroFree_of_rpow_window"
+          ],
+          "verdict": "F: full derivation; yes"
+        },
+        {
+          "lines": [
+            106,
+            106
+          ],
+          "review": "reviews/R20_review.md",
+          "targets": [
+            "Deduction.zeroFree_of_rpow_window"
+          ],
+          "verdict": "Exact statement comparison"
+        }
+      ],
+      "statement_sha256": [
+        "5df48e497a11ce39b156f1ab05467c4144e7a2cae1076fba62aae1dae42d357c"
+      ]
+    },
+    "P027": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            43,
+            50
+          ],
+          "review": "reviews/R4_review_Z1Z3.md",
+          "targets": [
+            "UpperTheory.V.Alg.M.main_holds"
+          ],
+          "verdict": "No statement mismatch reported"
+        }
+      ],
+      "statement_sha256": [
+        "a1b85c5ae9191334a75a17c05ddaef092325da1f4c108c085806436d1e38d897"
+      ]
+    },
+    "P028": {
+      "proof_versions": [
+        {
+          "evidence": [
+            {
+              "lines": [
+                57,
+                57
+              ],
+              "review": "reviews/R20_review.md",
+              "targets": [
+                "UpperTheory.V.Alg.M.mprime_holds"
+              ],
+              "verdict": "F: full derivation; yes"
+            }
+          ],
+          "sources": {
+            "notes/units/P028.tex": "840c9c8f19a6ab1b511b6d26b516d4cd7d7885dcc5ad40800000c8eb6531d3aa"
+          }
+        }
+      ],
+      "statement_evidence": [
+        {
+          "lines": [
+            57,
+            57
+          ],
+          "review": "reviews/R20_review.md",
+          "targets": [
+            "UpperTheory.V.Alg.M.mprime_holds"
+          ],
+          "verdict": "F: full derivation; yes"
+        },
+        {
+          "lines": [
+            43,
+            50
+          ],
+          "review": "reviews/R4_review_Z1Z3.md",
+          "targets": [
+            "UpperTheory.V.Alg.M.mprime_holds"
+          ],
+          "verdict": "No statement mismatch reported"
+        }
+      ],
+      "statement_sha256": [
+        "bcb00fc96f89e64dc594cd70fd019162c2aa5fa9a28659474923c3f810a6a2e0"
+      ]
+    },
+    "P031": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            109,
+            109
+          ],
+          "review": "reviews/R20_review.md",
+          "targets": [
+            "UpperTheory.V.Tower.exists_descends"
+          ],
+          "verdict": "Exact statement comparison"
+        }
+      ],
+      "statement_sha256": [
+        "88059945e9d3e62ac2528dcfa500d766b7f6221efe8eb8d9d8b1232eff63349a"
+      ]
+    },
+    "P032": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            58,
+            58
+          ],
+          "review": "reviews/R20_review.md",
+          "targets": [
+            "UpperTheory.V.ZK.sClassOf"
+          ],
+          "verdict": "Statement exact"
+        },
+        {
+          "lines": [
+            110,
+            110
+          ],
+          "review": "reviews/R20_review.md",
+          "targets": [
+            "UpperTheory.V.ZK.sClassOf"
+          ],
+          "verdict": "Exact statement comparison"
+        },
+        {
+          "lines": [
+            12,
+            16
+          ],
+          "review": "reviews/R4_review_Z2.md",
+          "targets": [
+            "UpperTheory.V.ZK.sClassOf"
+          ],
+          "verdict": "No statement mismatch reported"
+        }
+      ],
+      "statement_sha256": [
+        "32d6c19786e536f1021cdb8505e4a6f2527ac2899ba3e77ef9915ee06aa7763d"
+      ]
+    },
+    "P033": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            59,
+            59
+          ],
+          "review": "reviews/R20_review.md",
+          "targets": [
+            "UpperTheory.V.ZK.sThetaOf"
+          ],
+          "verdict": "Statement exact"
+        },
+        {
+          "lines": [
+            110,
+            110
+          ],
+          "review": "reviews/R20_review.md",
+          "targets": [
+            "UpperTheory.V.ZK.sThetaOf"
+          ],
+          "verdict": "Exact statement comparison"
+        },
+        {
+          "lines": [
+            12,
+            16
+          ],
+          "review": "reviews/R4_review_Z2.md",
+          "targets": [
+            "UpperTheory.V.ZK.sThetaOf"
+          ],
+          "verdict": "No statement mismatch reported"
+        }
+      ],
+      "statement_sha256": [
+        "9b9b080294fafad4bb8539698cd9a4defc037cbf54bdefdb37848cec0e4f4dcb"
+      ]
+    },
+    "P034": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            10,
+            12
+          ],
+          "review": "reviews/R5_review_A.md",
+          "targets": [
+            "PositivityTheory.KB.bOdd_zk"
+          ],
+          "verdict": "No statement mismatch reported"
+        }
+      ],
+      "statement_sha256": [
+        "c74469456764fe75c26bd85c0ad60f45f85dfe1bf173eaebab322ec1604d8045"
+      ]
+    },
+    "P035": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            111,
+            111
+          ],
+          "review": "reviews/R20_review.md",
+          "targets": [
+            "UpperTheory.V.ZK.Up.torsStab"
+          ],
+          "verdict": "Exact statement comparison"
+        },
+        {
+          "lines": [
+            10,
+            12
+          ],
+          "review": "reviews/R5_review_A.md",
+          "targets": [
+            "UpperTheory.V.ZK.Up.torsStab"
+          ],
+          "verdict": "No statement mismatch reported"
+        }
+      ],
+      "statement_sha256": [
+        "2e19a5d439e61c4d7a46cd96c96515207266cbd4f4a8517ea02440b795a53cdc"
+      ]
+    },
+    "P036": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            112,
+            112
+          ],
+          "review": "reviews/R20_review.md",
+          "targets": [
+            "UpperTheory.V.ZK.sCount"
+          ],
+          "verdict": "Exact statement comparison"
+        }
+      ],
+      "statement_sha256": [
+        "f46b8fc6c6c5ac8cd147ddd7e1f042b806bcca11da0c44e48b2e69578269f966"
+      ]
+    },
+    "P037": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            113,
+            113
+          ],
+          "review": "reviews/R20_review.md",
+          "targets": [
+            "PositivityTheory.QuaternionShaBounds.sSha"
+          ],
+          "verdict": "Exact statement comparison"
+        }
+      ],
+      "statement_sha256": [
+        "b528d01db258c660c57888ef6ac9da3e5c9c7292ef2a5f789cf43d46bb9e4576"
+      ]
+    },
+    "P038": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            91,
+            123
+          ],
+          "review": "reviews/R4_review_Z2.md",
+          "targets": [
+            "UpperTheory.V.KT.tors_le"
+          ],
+          "verdict": "COMPLETE CONFIRMED"
+        },
+        {
+          "lines": [
+            114,
+            114
+          ],
+          "review": "reviews/R20_review.md",
+          "targets": [
+            "UpperTheory.V.KT.tors_le"
+          ],
+          "verdict": "Exact statement comparison"
+        }
+      ],
+      "statement_sha256": [
+        "959f01139cac5dfabc57eb1d90645d2e8fbdaf2be3666557746d43e5bcc900db"
+      ]
+    },
+    "P039": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            91,
+            123
+          ],
+          "review": "reviews/R4_review_Z2.md",
+          "targets": [
+            "UpperTheory.V.ZK.torsAll"
+          ],
+          "verdict": "COMPLETE CONFIRMED"
+        }
+      ],
+      "statement_sha256": [
+        "35b6f32693acb6e3f2333460b8869661804102f1b3b62b1a45623cf9b20ed035"
+      ]
+    },
+    "P040": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            60,
+            60
+          ],
+          "review": "reviews/R20_review.md",
+          "targets": [
+            "UpperTheory.V.LDataCardLeFinrank.vFormula_of_classicalTheorems"
+          ],
+          "verdict": "Statement exact"
+        },
+        {
+          "lines": [
+            115,
+            115
+          ],
+          "review": "reviews/R20_review.md",
+          "targets": [
+            "UpperTheory.V.LDataCardLeFinrank.vFormula_of_classicalTheorems"
+          ],
+          "verdict": "Exact statement comparison"
+        }
+      ],
+      "statement_sha256": [
+        "744ad377fce2ce15b8175cbb7cc5f6586d7e06c558c876b84ebd68207ef5acc6"
+      ]
+    },
+    "P045": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            149,
+            159
+          ],
+          "review": "reviews/R4_review_Z4.md",
+          "targets": [
+            "Formalism.MainNotions.FormalGroupSystem.Pf.hecke_place_bound"
+          ],
+          "verdict": "No statement mismatch reported"
+        }
+      ],
+      "statement_sha256": [
+        "7a75157d5abfe82b334c0603d78b9c245ed49244fc7d526d658aa7ebaddedfa8"
+      ]
+    },
+    "P048": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            348,
+            353
+          ],
+          "review": "reviews/R14_review_B.md",
+          "targets": [
+            "GlobalTheory.PerTwClose.twistedPeriodAdmissible_of_rowInt"
+          ],
+          "verdict": "R13 conditional approval followed by applied edits and R14 independent acceptance of the recorded grade"
+        }
+      ],
+      "statement_sha256": [
+        "4a36d2a9846a0f94068277a42c6039f503230b93f5d44bd2f8452bb9852a2b3d"
+      ]
+    },
+    "P049": {
+      "proof_versions": [
+        {
+          "evidence": [
+            {
+              "lines": [
+                62,
+                62
+              ],
+              "review": "reviews/R20_review.md",
+              "targets": [
+                "Formalism.HN.height_gram_determinant"
+              ],
+              "verdict": "F: full derivation; yes"
+            }
+          ],
+          "sources": {
+            "notes/units/P049.tex": "c8b291443fea2da2eed0d3b1d13f61c7ca158a62067807e2a60baf15ae7f30a0"
+          }
+        }
+      ],
+      "statement_evidence": [
+        {
+          "lines": [
+            62,
+            62
+          ],
+          "review": "reviews/R20_review.md",
+          "targets": [
+            "Formalism.HN.height_gram_determinant"
+          ],
+          "verdict": "F: full derivation; yes"
+        },
+        {
+          "lines": [
+            116,
+            116
+          ],
+          "review": "reviews/R20_review.md",
+          "targets": [
+            "Formalism.HN.height_gram_determinant"
+          ],
+          "verdict": "Exact statement comparison"
+        }
+      ],
+      "statement_sha256": [
+        "aebb966e7a927df8077ba1f03c96a11f6899ea1cd948a69b31bb24cb47bac8d8"
+      ]
+    },
+    "P096": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            417,
+            432
+          ],
+          "review": "reviews/R21_review.md",
+          "targets": [
+            "GlobalTheory.Mem.Col2.SameOff.use₆"
+          ],
+          "verdict": "Statement compared; later candidate recheck reserved"
+        }
+      ],
+      "statement_sha256": [
+        "8595b358abe2edd4b0e240b2c26c55a25681c6106897d4bfb6d71bf0cc0c21d4"
+      ]
+    },
+    "P134": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            433,
+            448
+          ],
+          "review": "reviews/R21_review.md",
+          "targets": [
+            "GlobalTheory.TwV.congAt_fb_lev"
+          ],
+          "verdict": "Statement compared; later candidate recheck reserved"
+        }
+      ],
+      "statement_sha256": [
+        "57e1f91076189a1424167159c92ce778fa562d5621a3fa2478d214434e8f177a"
+      ]
+    },
+    "T01": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            127,
+            127
+          ],
+          "review": "reviews/R21_review.md",
+          "targets": [
+            "UpperTheory.Lit.every_character_of_theta_integrals_local_matching"
+          ],
+          "verdict": "Exact statement comparison"
+        }
+      ],
+      "statement_sha256": [
+        "574ddc5ecae0fe758ece88f8205a2d1973fbde13266d4604472ecd3b2a3bf55b"
+      ]
+    },
+    "T02": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            128,
+            128
+          ],
+          "review": "reviews/R21_review.md",
+          "targets": [
+            "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound"
+          ],
+          "verdict": "Exact statement comparison"
+        }
+      ],
+      "statement_sha256": [
+        "c4d51146824ea2e0dd84ac65db36659a68a355c3028edbf0553beb3dc271305e"
+      ]
+    },
+    "T03": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            129,
+            129
+          ],
+          "review": "reviews/R21_review.md",
+          "targets": [
+            "GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt"
+          ],
+          "verdict": "Exact statement comparison"
+        }
+      ],
+      "statement_sha256": [
+        "b9ddc8f585313df4a467f5f17447087fd8a05d841c2a9d58029d408cee48e72a"
+      ]
+    },
+    "T12": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            108,
+            108
+          ],
+          "review": "reviews/R21_review.md",
+          "targets": [
+            "PositivityTheory.SiegelWeilFormula.Fin.siegelWeilStd"
+          ],
+          "verdict": "Exact statement comparison"
+        }
+      ],
+      "statement_sha256": [
+        "9e62f3b240a52ec26c0c70b8cfa8d595cfabe146263eb527ca52458d420b1213"
+      ]
+    },
+    "T13": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            130,
+            130
+          ],
+          "review": "reviews/R21_review.md",
+          "targets": [
+            "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt"
+          ],
+          "verdict": "Exact statement comparison"
+        }
+      ],
+      "statement_sha256": [
+        "e126ecb4a0f840bc55902a3a5a26b661f64cfdc4329d16d3eaf2dc945b93c9d7"
+      ]
+    },
+    "T14": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            131,
+            131
+          ],
+          "review": "reviews/R21_review.md",
+          "targets": [
+            "PositivityTheory.HtPt.Ah.deep_slim_use"
+          ],
+          "verdict": "Exact statement comparison"
+        }
+      ],
+      "statement_sha256": [
+        "8869d6e266afd003ab2bd9a7ce968ab1024df7e7b413d95f5e8c510883b30a30"
+      ]
+    },
+    "T16": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            109,
+            109
+          ],
+          "review": "reviews/R21_review.md",
+          "targets": [
+            "ChowFormHeightComparison₂.chow_form_height_comparison"
+          ],
+          "verdict": "Exact statement comparison"
+        }
+      ],
+      "statement_sha256": [
+        "c9fc73ac308aa354583f607f9a4aab4fcedfdf5ab7302fc4679c4ed8a89da9c3"
+      ]
+    },
+    "T19": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            91,
+            91
+          ],
+          "review": "reviews/R21_review.md",
+          "targets": [
+            "UpperTheory.LiteratureTheorems.resolution_char_zero_of_literature"
+          ],
+          "verdict": "Exact statement comparison"
+        }
+      ],
+      "statement_sha256": [
+        "c60a0f11059d777a4bf218cfe635094ec750345e59f6f3dbea2e8b7feb6df77e"
+      ]
+    },
+    "T20": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            92,
+            92
+          ],
+          "review": "reviews/R21_review.md",
+          "targets": [
+            "UpperTheory.LiteratureTheorems.principalisation_char_zero_of_literature"
+          ],
+          "verdict": "Exact statement comparison"
+        }
+      ],
+      "statement_sha256": [
+        "8a437a265e5cdbac9850fa7b0dac43f785bf3f2f9ad7235166acf0001a58f3ce"
+      ]
+    },
+    "T26": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            132,
+            132
+          ],
+          "review": "reviews/R21_review.md",
+          "targets": [
+            "GlobalTheory.CompanionTheory.Ar.Plug.deepStR_of_use"
+          ],
+          "verdict": "Exact statement comparison"
+        }
+      ],
+      "statement_sha256": [
+        "47e13edb2d4ab4ed0ad37aa2667d8304b050adf2e89c553bc13fef56a1f01666"
+      ]
+    },
+    "W01": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            133,
+            133
+          ],
+          "review": "reviews/R21_review.md",
+          "targets": [
+            "UpperTheory.One.Join.automorphic_window_of_inputs"
+          ],
+          "verdict": "Exact statement comparison"
+        }
+      ],
+      "statement_sha256": [
+        "522d169f868114a22c36ae68cc9315edbc92e01c6df5a08199da83fa2a9675a8"
+      ]
+    },
+    "W02": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            116,
+            116
+          ],
+          "review": "reviews/R21_review.md",
+          "targets": [
+            "UpperTheory.BaseChangeIdentities.baseChangeN"
+          ],
+          "verdict": "Exact statement comparison"
+        }
+      ],
+      "statement_sha256": [
+        "763a17f34fcf052245abd48413f8484b31c4a122fc5379032dee25bd4410e9a4"
+      ]
+    },
+    "W04": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            117,
+            117
+          ],
+          "review": "reviews/R21_review.md",
+          "targets": [
+            "UpperTheory.V.Z.Tf.SR.descWeak"
+          ],
+          "verdict": "Exact statement comparison"
+        }
+      ],
+      "statement_sha256": [
+        "fd8c7e6a958e81d84e2bd25dba0570abca3fff91315a532e71d6c6cf408ea3c1"
+      ]
+    },
+    "W05": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            118,
+            118
+          ],
+          "review": "reviews/R21_review.md",
+          "targets": [
+            "UpperTheory.V.ZK.lemmaK_litN_alt"
+          ],
+          "verdict": "Exact statement comparison"
+        }
+      ],
+      "statement_sha256": [
+        "3ed3de788e0516b256aa95528e3bbc36c8496c6189edcca7a82cb649d700d51d"
+      ]
+    },
+    "W11": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            93,
+            93
+          ],
+          "review": "reviews/R21_review.md",
+          "targets": [
+            "UpperTheory.V.FW.ferreroWashington"
+          ],
+          "verdict": "Exact statement comparison"
+        }
+      ],
+      "statement_sha256": [
+        "a181f57be4b052fc65302fca8faec07e653f7d49cee28e6180bd126952164ec9"
+      ]
+    },
+    "Z1.1.04": {
+      "proof_versions": [
+        {
+          "evidence": [
+            {
+              "lines": [
+                9,
+                9
+              ],
+              "review": "reviews/R5_review_C.md",
+              "targets": [
+                "UpperTheory.V.Z.Sym.W.adjoint_lift_from_eisenstein_of_propagation"
+              ],
+              "verdict": "COMPLETE CONFIRMED"
+            }
+          ],
+          "sources": {
+            "notes/blueprint/Z1.1.04.tex": "982789055bc820bb3689d5f22989ea69165aad71b04072281e47f719ef4ccd57"
+          }
+        }
+      ],
+      "statement_evidence": [
+        {
+          "lines": [
+            9,
+            9
+          ],
+          "review": "reviews/R5_review_C.md",
+          "targets": [
+            "UpperTheory.V.Z.Sym.W.adjoint_lift_from_eisenstein_of_propagation"
+          ],
+          "verdict": "COMPLETE CONFIRMED"
+        }
+      ],
+      "statement_sha256": [
+        "6210e6d4ed3d3909eb74ec6894dbffac16eece7b339ac8eaca78923bb77a2dc6"
+      ]
+    },
+    "Z1.3.06": {
+      "proof_versions": [
+        {
+          "evidence": [
+            {
+              "lines": [
+                7,
+                7
+              ],
+              "review": "reviews/R5_review_C.md",
+              "targets": [
+                "GlobalTheory.KZ.zetaSysU_of_halves2"
+              ],
+              "verdict": "COMPLETE CONFIRMED"
+            }
+          ],
+          "sources": {
+            "notes/blueprint/Z1.3.06.tex": "36f8a63635ab5307cdf6b90a8eab14b0b47fd16077c831fb939c20cce09a89b9"
+          }
+        }
+      ],
+      "statement_evidence": [
+        {
+          "lines": [
+            7,
+            7
+          ],
+          "review": "reviews/R5_review_C.md",
+          "targets": [
+            "GlobalTheory.KZ.zetaSysU_of_halves2"
+          ],
+          "verdict": "COMPLETE CONFIRMED"
+        }
+      ],
+      "statement_sha256": [
+        "08529903625f82f90f9cfbbd4331f35b081262baadf0e26f85ed92d74c2be700"
+      ]
+    },
+    "Z1.3.07": {
+      "proof_versions": [
+        {
+          "evidence": [
+            {
+              "lines": [
+                8,
+                8
+              ],
+              "review": "reviews/R5_review_C.md",
+              "targets": [
+                "GlobalTheory.KZ.zetaUr_of_halves2"
+              ],
+              "verdict": "COMPLETE CONFIRMED"
+            }
+          ],
+          "sources": {
+            "notes/blueprint/Z1.3.07.tex": "9da1102479d51cceb67437cfb21082c375dfb93ceecbc81cb91c59804b6d11d1"
+          }
+        }
+      ],
+      "statement_evidence": [
+        {
+          "lines": [
+            8,
+            8
+          ],
+          "review": "reviews/R5_review_C.md",
+          "targets": [
+            "GlobalTheory.KZ.zetaUr_of_halves2"
+          ],
+          "verdict": "COMPLETE CONFIRMED"
+        }
+      ],
+      "statement_sha256": [
+        "b45c56bb39034fb18df1c6e879c9ddd9b25fd98e950cebb1a319d91194cedbc4"
+      ]
+    },
+    "Z1.4": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            43,
+            50
+          ],
+          "review": "reviews/R4_review_Z1Z3.md",
+          "targets": [
+            "UpperTheory.V.Alg.M.main_holds",
+            "UpperTheory.V.Alg.M.mprime_holds"
+          ],
+          "verdict": "No statement mismatch reported"
+        }
+      ],
+      "statement_sha256": [
+        "801bc44a146d39f6846cebf49038faad0147c002ca0a1904267154d801da2651"
+      ]
+    },
+    "Z1.5.01": {
+      "proof_versions": [
+        {
+          "evidence": [
+            {
+              "lines": [
+                7,
+                7
+              ],
+              "review": "reviews/R5_review_A.md",
+              "targets": [
+                "UpperTheory.V.Af.weyl_complex_of_printed_results"
+              ],
+              "verdict": "COMPLETE CONFIRMED"
+            }
+          ],
+          "sources": {
+            "notes/blueprint/Z1.5.01.tex": "7f7ed2afda645700f5fd0e4e16992cbfd68b4e38a1a0e0e3e5f8bca6d0eb42ec"
+          }
+        }
+      ],
+      "statement_evidence": [
+        {
+          "lines": [
+            7,
+            7
+          ],
+          "review": "reviews/R5_review_A.md",
+          "targets": [
+            "UpperTheory.V.Af.weyl_complex_of_printed_results"
+          ],
+          "verdict": "COMPLETE CONFIRMED"
+        }
+      ],
+      "statement_sha256": [
+        "3fea92ee638b821101b4f1be076b11cc35c8579c1276ea0b625b0405543e6733"
+      ]
+    },
+    "Z1.5.02": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            13,
+            13
+          ],
+          "review": "reviews/R6_review.md",
+          "targets": [
+            "UpperTheory.V.Af.card_k_of_printed_results"
+          ],
+          "verdict": "Statement faithful; gaps in proof"
+        }
+      ],
+      "statement_sha256": [
+        "5720f0d5798963d78ef044c7a5543cbe4ffc484b2c74aa5ef1b0f7d56e14dbf9"
+      ]
+    },
+    "Z1.5.06": {
+      "proof_versions": [
+        {
+          "evidence": [
+            {
+              "lines": [
+                8,
+                8
+              ],
+              "review": "reviews/R5_review_A.md",
+              "targets": [
+                "UpperTheory.GalN.V.Win.N.frobenius_trace_count_bound_of_rat_eigensystem_count_alt"
+              ],
+              "verdict": "COMPLETE CONFIRMED"
+            }
+          ],
+          "sources": {
+            "notes/blueprint/Z1.5.06.tex": "95acee2291bfaac110a2fa1b846c9bdb5d5ea4fcc297cac72218443c4842d490"
+          }
+        }
+      ],
+      "statement_evidence": [
+        {
+          "lines": [
+            8,
+            8
+          ],
+          "review": "reviews/R5_review_A.md",
+          "targets": [
+            "UpperTheory.GalN.V.Win.N.frobenius_trace_count_bound_of_rat_eigensystem_count_alt"
+          ],
+          "verdict": "COMPLETE CONFIRMED"
+        }
+      ],
+      "statement_sha256": [
+        "4c24571aa97bb813ba288cc302206ca0375905e2fb130bc4c1959e9e99f349a8"
+      ]
+    },
+    "Z1.5.07": {
+      "proof_versions": [
+        {
+          "evidence": [
+            {
+              "lines": [
+                218,
+                218
+              ],
+              "review": "reviews/R6_review.md",
+              "targets": [
+                "UpperTheory.GalN.V.Win.N.frobenius_trace_count_bound_of_cm_eigensystem_count_alt"
+              ],
+              "verdict": "Only R5 gap explicitly fixed and independently rechecked"
+            }
+          ],
+          "sources": {
+            "notes/blueprint/Z1.5.07.tex": "4875024b5a3ab09a8d194ebf1557c04cd681b6d8bc6b93f60742fc8fa5a7bbec"
+          }
+        }
+      ],
+      "statement_evidence": [
+        {
+          "lines": [
+            218,
+            218
+          ],
+          "review": "reviews/R6_review.md",
+          "targets": [
+            "UpperTheory.GalN.V.Win.N.frobenius_trace_count_bound_of_cm_eigensystem_count_alt"
+          ],
+          "verdict": "Only R5 gap explicitly fixed and independently rechecked"
+        }
+      ],
+      "statement_sha256": [
+        "8745fcdb9606aa9dd8377803fe0df00dfeeef4e1f56cc7850ea332354a78099a"
+      ]
+    },
+    "Z2.K2": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            12,
+            16
+          ],
+          "review": "reviews/R4_review_Z2.md",
+          "targets": [
+            "UpperTheory.V.ZK.sClassOf",
+            "UpperTheory.V.ZK.sThetaOf"
+          ],
+          "verdict": "No statement mismatch reported"
+        }
+      ],
+      "statement_sha256": [
+        "90335e1f1b9f02233dec78c28f998aaab0ce3f9e167873fa5d47e3e3d8b3832f"
+      ]
+    },
+    "Z2.K4": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            10,
+            12
+          ],
+          "review": "reviews/R5_review_A.md",
+          "targets": [
+            "PositivityTheory.KB.bOdd_zk",
+            "UpperTheory.V.ZK.Up.torsStab"
+          ],
+          "verdict": "No statement mismatch reported"
+        }
+      ],
+      "statement_sha256": [
+        "6c1365ca16cbd4df02f2df21f1fc8c679b54e58d9eab45d4fe02e4625b0e4d92"
+      ]
+    },
+    "Z2.K7": {
+      "proof_versions": [
+        {
+          "evidence": [
+            {
+              "lines": [
+                91,
+                123
+              ],
+              "review": "reviews/R4_review_Z2.md",
+              "targets": [
+                "UpperTheory.V.KT.tors_le",
+                "UpperTheory.V.ZK.torsAll"
+              ],
+              "verdict": "COMPLETE CONFIRMED"
+            }
+          ],
+          "sources": {
+            "notes/blueprint/Z2.K7.tex": "cbcbdc9ef29468e121c93e192946554aba96c6f14cd5e5633825a05907c19567"
+          }
+        }
+      ],
+      "statement_evidence": [
+        {
+          "lines": [
+            91,
+            123
+          ],
+          "review": "reviews/R4_review_Z2.md",
+          "targets": [
+            "UpperTheory.V.KT.tors_le",
+            "UpperTheory.V.ZK.torsAll"
+          ],
+          "verdict": "COMPLETE CONFIRMED"
+        }
+      ],
+      "statement_sha256": [
+        "1980e91c659685b373831a057553bb96fb67a22ecb2f6ae48f6e8fc9bba6fbee"
+      ]
+    },
+    "Z4.1": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            149,
+            159
+          ],
+          "review": "reviews/R4_review_Z4.md",
+          "targets": [
+            "Formalism.MainNotions.FormalGroupSystem.Pf.hecke_place_bound"
+          ],
+          "verdict": "No statement mismatch reported"
+        }
+      ],
+      "statement_sha256": [
+        "d96a5b63c2db693a2dec15499d8f944df317901432f3199e663b073b1f5ef153"
+      ]
+    },
+    "Z4.2.04": {
+      "proof_versions": [
+        {
+          "evidence": [
+            {
+              "lines": [
+                34,
+                38
+              ],
+              "review": "reviews/R17_review.md",
+              "targets": [
+                "GlobalTheory.pairOK_allSites"
+              ],
+              "verdict": "An AI review reports: unconditional completion confirmed"
+            }
+          ],
+          "sources": {
+            "notes/blueprint/Z4.2.04.tex": "775f1f0238a601807ce283a2a42ba9fe6ececf177be58af3d0967239a60470a2"
+          }
+        }
+      ],
+      "statement_evidence": [
+        {
+          "lines": [
+            34,
+            38
+          ],
+          "review": "reviews/R17_review.md",
+          "targets": [
+            "GlobalTheory.pairOK_allSites"
+          ],
+          "verdict": "An AI review reports: unconditional completion confirmed"
+        },
+        {
+          "lines": [
+            32,
+            32
+          ],
+          "review": "reviews/R14_review_B.md",
+          "targets": [
+            "GlobalTheory.pairOK_allSites"
+          ],
+          "verdict": "CONFIRMED WITH GAPS"
+        }
+      ],
+      "statement_sha256": [
+        "b40e9ee58b41875e066c40436112cc9832b4742403040253e4fee32d033ba35d"
+      ]
+    },
+    "Z4.4": {
+      "proof_versions": [
+        {
+          "evidence": [
+            {
+              "lines": [
+                348,
+                353
+              ],
+              "review": "reviews/R14_review_B.md",
+              "targets": [
+                "GlobalTheory.PerTwClose.twistedPeriodAdmissible_of_rowInt"
+              ],
+              "verdict": "R13 conditional approval followed by applied edits and R14 independent acceptance of the recorded grade"
+            }
+          ],
+          "sources": {
+            "notes/blueprint/Z4.4.tex": "7888778a430014fa40d08b5b5cf716b12c386a46d5d6c0334f4736a89f303cc5"
+          }
+        }
+      ],
+      "statement_evidence": [
+        {
+          "lines": [
+            348,
+            353
+          ],
+          "review": "reviews/R14_review_B.md",
+          "targets": [
+            "GlobalTheory.PerTwClose.twistedPeriodAdmissible_of_rowInt"
+          ],
+          "verdict": "R13 conditional approval followed by applied edits and R14 independent acceptance of the recorded grade"
+        }
+      ],
+      "statement_sha256": [
+        "7d9a7f3eb9891e345a2f5f55e83dcff1f7b7caeeae436abe0c9c2a1ff5b3df7c"
+      ]
+    },
+    "Z42-FRAMES": {
+      "proof_versions": [],
+      "statement_evidence": [
+        {
+          "lines": [
+            14,
+            14
+          ],
+          "review": "reviews/R6_review.md",
+          "targets": [
+            "GlobalTheory.TwV.scal_at_site"
+          ],
+          "verdict": "Statement faithful; gaps in proof"
+        },
+        {
+          "lines": [
+            17,
+            17
+          ],
+          "review": "reviews/R7_review.md",
+          "targets": [
+            "GlobalTheory.TwV.move_at_site"
+          ],
+          "verdict": "Statement faithful; gaps in proof"
+        },
+        {
+          "lines": [
+            18,
+            18
+          ],
+          "review": "reviews/R7_review.md",
+          "targets": [
+            "GlobalTheory.TwV.away_of_dict"
+          ],
+          "verdict": "Statement faithful; gaps in proof"
+        }
+      ],
+      "statement_sha256": [
+        "06df5eceb657dcdb3887de58d7b3ebb67a81995672cfbb83b3539ffa7bd47292"
+      ]
+    },
+    "Z42-SITES": {
+      "proof_versions": [
+        {
+          "evidence": [
+            {
+              "lines": [
+                7,
+                7
+              ],
+              "review": "reviews/R5_review_B.md",
+              "targets": [
+                "GlobalTheory.TwU.std_at_served"
+              ],
+              "verdict": "COMPLETE CONFIRMED"
+            },
+            {
+              "lines": [
+                8,
+                8
+              ],
+              "review": "reviews/R5_review_B.md",
+              "targets": [
+                "GlobalTheory.TwV.joint_dict"
+              ],
+              "verdict": "COMPLETE CONFIRMED"
+            },
+            {
+              "lines": [
+                9,
+                9
+              ],
+              "review": "reviews/R5_review_B.md",
+              "targets": [
+                "GlobalTheory.TwV.pos_at_site"
+              ],
+              "verdict": "COMPLETE CONFIRMED"
+            }
+          ],
+          "sources": {
+            "notes/blueprint/Z42-SITES.tex": "e26ce9b04d40cf3c3528953874dc9dd3516b0ae8a385da5f6a41a7d0b293c02f"
+          }
+        }
+      ],
+      "statement_evidence": [
+        {
+          "lines": [
+            7,
+            7
+          ],
+          "review": "reviews/R5_review_B.md",
+          "targets": [
+            "GlobalTheory.TwU.std_at_served"
+          ],
+          "verdict": "COMPLETE CONFIRMED"
+        },
+        {
+          "lines": [
+            8,
+            8
+          ],
+          "review": "reviews/R5_review_B.md",
+          "targets": [
+            "GlobalTheory.TwV.joint_dict"
+          ],
+          "verdict": "COMPLETE CONFIRMED"
+        },
+        {
+          "lines": [
+            9,
+            9
+          ],
+          "review": "reviews/R5_review_B.md",
+          "targets": [
+            "GlobalTheory.TwV.pos_at_site"
+          ],
+          "verdict": "COMPLETE CONFIRMED"
+        }
+      ],
+      "statement_sha256": [
+        "dbc3e4682cccd17320d5592eaff020ddb0c5935168e75630d524ef9447d91e44"
+      ]
+    }
+  }
+}

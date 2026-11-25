@@ -1,0 +1,470 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "Z4.4",
+  "edition_sha256": "a0812e4c62f00cb1ac00891601003f4012c20290754bfc0f12f3f31c84a4a2ed",
+  "note_sha256": "0945aac2f709660035aaef001575d05403b72dcdc4fec3c9ce608945222d57c2",
+  "statement_sha256": "1b3febf6df2fb63e9b43825c67ba92e1fc36008691dcebc8876ad7c9072fadd2",
+  "sources": [
+    {
+      "path": "notes/theta/excerpt.tex",
+      "sha256": "aecc746af356882ab57e404055bf9f00f4375a4e9849a877026c8757efb0f46d"
+    },
+    {
+      "path": "notes/blueprint/Z4.4.tex",
+      "sha256": "7888778a430014fa40d08b5b5cf716b12c386a46d5d6c0334f4736a89f303cc5"
+    },
+    {
+      "path": "notes/theta/README.md",
+      "sha256": "cb5d32ca39edfd22b29917ea9521991344209449ee3402ec75e5dcc7f8d7b2be"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Pairing against the corresponding Weyl word extracts the selected polynomial coefficient.",
+      "kind": "computation",
+      "uses": [
+        "input: normalized Fock pairing and vector in Weyl space"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.WeylDuality.nablaEqDualWeylOf",
+          "file": "Development/AbelianVarietyTheory/Proofs/FoundationProofs/ApplyWordMemDualWeyl.lean",
+          "line0": 110,
+          "line1": 180
+        }
+      ],
+      "source": "notes/theta/excerpt.tex",
+      "anchor": "\\paragraph{Recovering a polynomial coefficient by testing a Weyl word.}",
+      "source_lines": [
+        25,
+        37
+      ],
+      "claim_sha256": "2f223a1500e771f0ef63224254b8e890b7af5a3c68128a46f262f83745c841c1",
+      "passage_sha256": "7feee0ca771267beeb20eff7f1fedaf7daba3d16ee98934d2cc58a3c64352e73",
+      "sha256": "8cab5aed54e7d62ae76c1a365b486cc5378dc078231ab4ad630f77fba884027e",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The leading exponent satisfies the interlacing inequalities needed for straightening.",
+      "kind": "inequality",
+      "uses": [
+        "input: highest-weight two-column relations"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.GradedWeylDivisibility.leadInterlaced_of",
+          "file": "Formalism/GradedWeylDivisibility/FockSpaceTableaux/LeadInterlaced.lean",
+          "line0": 30,
+          "line1": 62
+        }
+      ],
+      "source": "notes/theta/excerpt.tex",
+      "anchor": "The leading exponent $m$ of a nonzero $F\\in V_\\nu$ satisfies, at",
+      "source_lines": [
+        78,
+        90
+      ],
+      "claim_sha256": "d4c147c5971013a46efa984dc1b9e90a6d3302ddf82b83b9f6e7d2dcfc9923a1",
+      "passage_sha256": "36475de790e3d8997181adbf155450ae07a9c9dba6ec20354bd9ac9aecce03ff",
+      "sha256": "d7b9a15f3e6e7996a673fa0268d8a1c0c4ef98188fbc735c3c6a0ef4152c3483",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Coefficient extraction and straightening identify the two standard Weyl lattices as exact duals.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "S2",
+        "standard: integral coefficient straightening"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.StdDual.exists_dual_bases",
+          "file": "Development/AbelianVarietyTheory/Proofs/FoundationProofs/StandardWeylLatticesFockDual.lean",
+          "line0": 145,
+          "line1": 235
+        }
+      ],
+      "source": "notes/theta/excerpt.tex",
+      "anchor": "\\paragraph{The other dual and the number-field coefficients.}",
+      "source_lines": [
+        149,
+        167
+      ],
+      "claim_sha256": "ca4a329a167185adb3605dade0601bce9251d85766a2b05f36759b12febe12ff",
+      "passage_sha256": "5faeb21cf77d739697822eb38a19acf288594d5c37df1f5449229ac4132a9d84",
+      "sha256": "cb7ca5a590f67cf0d7e35844d0b86736feb74e14a99e519ad885ef70c0867ea8",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The integral membership test for the transported lattice is independent of its local frame.",
+      "kind": "computation",
+      "uses": [
+        "S3",
+        "input: invertible local frame change"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.TransLoc.mem_transLat",
+          "file": "Development/AbelianVarietyTheory/Proofs/FoundationProofs/TransportedLatticeLocalizationFreeLeCoefficientS.lean",
+          "line0": 139,
+          "line1": 234
+        }
+      ],
+      "source": "notes/theta/excerpt.tex",
+      "anchor": "\\paragraph{Localization of the transported lattices.}",
+      "source_lines": [
+        194,
+        219
+      ],
+      "claim_sha256": "43e7da1f72e4a9c86ce10cea4cb5fca29db7d1ed00dea899894c1207c8ac09a2",
+      "passage_sha256": "c0c0aae4705c262d58eca9a08367592da8d3886c8e661b29711a16ebe244e8de",
+      "sha256": "21a63f1282d09942e9f7d8eaa35812f5d6b61558554a7e8c861a4021ea1436cb",
+      "ai_review": []
+    },
+    {
+      "id": "S5",
+      "status": "active",
+      "claim": "After Hermitian transport the pairing tests the corresponding transported dual lattices.",
+      "kind": "assembly",
+      "uses": [
+        "S3",
+        "S4",
+        "input: Hermitian change of variables"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.TransDual.nabDelDual",
+          "file": "Development/AbelianVarietyTheory/Proofs/FoundationProofs/TransportedWeylLatticeHermitianDuality.lean",
+          "line0": 278,
+          "line1": 309
+        }
+      ],
+      "source": "notes/theta/excerpt.tex",
+      "anchor": "Let $R=\\mathcal O_K$ for a number field $K$ with involution. Fix a",
+      "source_lines": [
+        253,
+        269
+      ],
+      "claim_sha256": "5caaa101cd1c4f678b728001951d009d828da5b5e5db93217df31c9e008a5b80",
+      "passage_sha256": "b2b185194e0e3bd8e0d4f58160878535a2dc805c3e58432e912139a1e7f34d06",
+      "sha256": "bb3f359bb760fd40976e17337b224aed817203f7127b1bf59147de11dee470dc",
+      "ai_review": []
+    },
+    {
+      "id": "S6",
+      "status": "active",
+      "claim": "The Hermitian column choices can be read from the supplied standard forms and levels.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: prescribed standard forms, levels and classes"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.T.hermitianColumnChoices_of_formsLevelsClasses",
+          "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/HermitianColumnChoicesOfFormsLevelsClassesStatement.lean",
+          "line0": 8,
+          "line1": 9
+        },
+        {
+          "name": "GlobalTheory.T.hermitianColumns_generators_baseLattices_functionals",
+          "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/HermitianColumnsGeneratorsBaseLatticesFunctionalStatement.lean",
+          "line0": 8,
+          "line1": 9
+        }
+      ],
+      "source": "notes/blueprint/Z4.4.tex",
+      "anchor": "\\paragraph{Supplier 2. Recovering Hermitian columns from a supplied family of forms.}",
+      "source_lines": [
+        266,
+        275
+      ],
+      "claim_sha256": "a53f792ee687cf1d325413b628bd893973df851349e4f810dc05696f6f85bc20",
+      "passage_sha256": "97f9d951412656a2a39b799bdc44b22d82430e5f458437a163ac075789d22f75",
+      "sha256": "4381149b6b258c8928dc2dbdb20a058ca3565f7ce147d828d52fd6c51d68b945",
+      "ai_review": []
+    },
+    {
+      "id": "S7",
+      "status": "active",
+      "claim": "The given standard data provide a compatible Hermitian datum at the level prime.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: standard chart and chosen level prime"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.T.exists_hermitian_data_carT_of_std",
+          "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/HermitianDataAtLevelPrimeStatement.lean",
+          "line0": 8,
+          "line1": 9
+        }
+      ],
+      "source": "notes/blueprint/Z4.4.tex",
+      "anchor": "\\subsection{Supplier 4. A single Hermitian datum at the level prime}",
+      "source_lines": [
+        1352,
+        1365
+      ],
+      "claim_sha256": "b480b34c996fd27d5d1c4ca9fef443de5143c7d08bfeef012676bd8af240aa68",
+      "passage_sha256": "e218dca74df8c33c278340db6bec592a7def9188e9db784602424b2c9d78340c",
+      "sha256": "a8c5fd44830d2c213031d7a77e9eb3d3e29c30beb8b9601087e92f9182b6ef83",
+      "ai_review": []
+    },
+    {
+      "id": "S8",
+      "status": "active",
+      "claim": "The fixed level admits the point and evaluation comparisons required at the chosen twists.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S7",
+        "input: prescribed decorated lattice points"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.L2.Col.decoPtSurj_of",
+          "file": "Formalism/LocalToGlobal/Columns/AdelicLemmas.lean",
+          "line0": 1245,
+          "line1": 1401
+        },
+        {
+          "name": "GlobalTheory.T.exists_adelicPoint_decoratedLattice_allTwists",
+          "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsAdelicPointDecoratedLatticeAllTwistsStatement.lean",
+          "line0": 7,
+          "line1": 8
+        }
+      ],
+      "source": "notes/blueprint/Z4.4.tex",
+      "anchor": "\\subsection{Supplier 9. Points and evaluations over the fixed level}",
+      "source_lines": [
+        1596,
+        1614
+      ],
+      "claim_sha256": "d33457d5bc0d236052ac0a2e6890759d9828cb3291fdd87969c75341cd8ce14a",
+      "passage_sha256": "7865e6466e377214fcb8e48679e2b1d0c5f5fe1e2958e7c499ac3237ffefca28",
+      "sha256": "6133727ff762df25390f49f487a3fba9f0071db2bbbccbc86eef1205f1a8d770",
+      "ai_review": []
+    },
+    {
+      "id": "S9",
+      "status": "active",
+      "claim": "The reduction maps identify the level structures required by the tuple moves.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S7",
+        "input: level-prime reduction data"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.DnMove.dnNatTieG_cols",
+          "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ChartTiedLevelChainHost.lean",
+          "line0": 48,
+          "line1": 58
+        },
+        {
+          "name": "GlobalTheory.T.tupleChains_levelStructure_compatible_at_levelPrime",
+          "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TupleChainsLevelStructureCompatibleAtLevelPrimeStatement.lean",
+          "line0": 8,
+          "line1": 9
+        }
+      ],
+      "source": "notes/blueprint/Z4.4.tex",
+      "anchor": "\\subsection{Supplier 8. Reduction maps and moves at a level prime}",
+      "source_lines": [
+        2138,
+        2152
+      ],
+      "claim_sha256": "b5c58a3752b5627f88c09cef7fdaee8e5d5c1d0669275f33e3d4d25593c54f6d",
+      "passage_sha256": "19d49786c9caec92d84351c60d126e332977ce8649c0bde1cc610d1b9efd5a70",
+      "sha256": "7f20569a70bf08431d0946bb0cdc45dc1453b74b72f3bc8507fdff80c4cb8692",
+      "ai_review": []
+    },
+    {
+      "id": "S10",
+      "status": "active",
+      "claim": "The reference chart selection supplies compatible standard forms for the word family.",
+      "kind": "assembly",
+      "uses": [
+        "S6",
+        "S8",
+        "S9",
+        "input: compatibility across reference words"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.Mem.Col2.MemChart.exists_charts",
+          "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsMemberStepCharts.lean",
+          "line0": 521,
+          "line1": 566
+        },
+        {
+          "name": "GlobalTheory.T.exists_standardFormComparison_symmetricLevel_members",
+          "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsStandardFormComparisonSymmetricLevelMemberStatement.lean",
+          "line0": 8,
+          "line1": 9
+        }
+      ],
+      "source": "notes/blueprint/Z4.4.tex",
+      "anchor": "\\subsection{Supplier 1. Compatible standard forms across all words}\\label{r12:s1}",
+      "source_lines": [
+        2783,
+        2792
+      ],
+      "claim_sha256": "e7766b9b7627a2a978cd68c5b7270e3cfc401a8393ebf004327196fb2bcfdaf5",
+      "passage_sha256": "8cb5639844d53409a24cdc53f226b977a5745a8b74f20754a616dc2909938aa8",
+      "sha256": "f763bab937662586a3d7d8a800f50ef1ff1e2c2cd5c0fed647d7d280db7baa19",
+      "ai_review": []
+    },
+    {
+      "id": "S11",
+      "status": "active",
+      "claim": "The twisted chain is realized over the chosen columns with the prescribed base points.",
+      "kind": "assembly",
+      "uses": [
+        "S10",
+        "input: type-prime reductions and matching coupling coset"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.Mem.Col2.TC.tw_ties_with_points",
+          "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TrueColumnChoiceExistsChainDataWithBasePoints.lean",
+          "line0": 13,
+          "line1": 23
+        }
+      ],
+      "source": "notes/blueprint/Z4.4.tex",
+      "anchor": "\\subsection{Supplier 7. The twisted chain over the chosen columns}",
+      "source_lines": [
+        3731,
+        3772
+      ],
+      "claim_sha256": "21250071223964b28eb1e5b07fe08b0bbd7adda063756b205317b0fe91aeaeae",
+      "passage_sha256": "1692bdf5b0b589e401fb8b7a996d33b49da0f9e0a4cc9c21789ca6966a08387b",
+      "sha256": "452a992f82a8304af86bfe2e89687f7e808a1ed42c309c8946a4d3762e21130c",
+      "ai_review": []
+    },
+    {
+      "id": "S12",
+      "status": "active",
+      "claim": "A single coefficient-field sum realizes the period and satisfies the valuation alternative at every permitted place.",
+      "kind": "inequality",
+      "uses": [
+        "S3",
+        "S6",
+        "S10",
+        "S11",
+        "input: integral period rows and class denominators"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.PerTwClose.twistedPeriodAdmissible_of_rowInt",
+          "file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/AdmissiblePeriodTwistOfIntegralRows.lean",
+          "line0": 14,
+          "line1": 21
+        }
+      ],
+      "source": "notes/blueprint/Z4.4.tex",
+      "anchor": "\\paragraph{One field element for all allowed places.}",
+      "source_lines": [
+        4883,
+        4934
+      ],
+      "claim_sha256": "107b71f5cfe8f5b81cea777a0c3c4c7fcc4f5b67fdca95c2484abacd23e40f30",
+      "passage_sha256": "4075b31a9c3fc27042a2d224bf79515065f3beddd7d3455347c02792fc08564c",
+      "sha256": "bed0ba773811451a2a8686fd82b952e2304221542268590ffae4dc97e3119c7a",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "3102faecffbbc1a182bf6bfffc5791542e7413c61879e30e307529631d5a1372",
+      "sources": [
+        {
+          "path": "notes/theta/excerpt.tex",
+          "sha256": "aecc746af356882ab57e404055bf9f00f4375a4e9849a877026c8757efb0f46d"
+        },
+        {
+          "path": "notes/blueprint/Z4.4.tex",
+          "sha256": "7888778a430014fa40d08b5b5cf716b12c386a46d5d6c0334f4736a89f303cc5"
+        }
+      ],
+      "steps": {
+        "S1": "8cab5aed54e7d62ae76c1a365b486cc5378dc078231ab4ad630f77fba884027e",
+        "S2": "d7b9a15f3e6e7996a673fa0268d8a1c0c4ef98188fbc735c3c6a0ef4152c3483",
+        "S3": "cb7ca5a590f67cf0d7e35844d0b86736feb74e14a99e519ad885ef70c0867ea8",
+        "S4": "21a63f1282d09942e9f7d8eaa35812f5d6b61558554a7e8c861a4021ea1436cb",
+        "S5": "1f9bc0b8c51fea962b6cca1d5ef94562fb8189e969fcb5afb195da01600bbf94",
+        "S6": "4381149b6b258c8928dc2dbdb20a058ca3565f7ce147d828d52fd6c51d68b945",
+        "S7": "a8c5fd44830d2c213031d7a77e9eb3d3e29c30beb8b9601087e92f9182b6ef83",
+        "S8": "6133727ff762df25390f49f487a3fba9f0071db2bbbccbc86eef1205f1a8d770",
+        "S9": "7f20569a70bf08431d0946bb0cdc45dc1453b74b72f3bc8507fdff80c4cb8692",
+        "S10": "f763bab937662586a3d7d8a800f50ef1ff1e2c2cd5c0fed647d7d280db7baa19",
+        "S11": "79eb5d9c6385ae4379adbe1ff17dfe6c0477d6e8925e357ee059716fe2c59082",
+        "S12": "bed0ba773811451a2a8686fd82b952e2304221542268590ffae4dc97e3119c7a"
+      },
+      "step_texts": {
+        "S1": "Pairing against the corresponding Weyl word extracts the selected polynomial coefficient.",
+        "S2": "The leading exponent satisfies the interlacing inequalities needed for straightening.",
+        "S3": "Coefficient extraction and straightening identify the two standard Weyl lattices as exact duals.",
+        "S4": "The integral membership test for the transported lattice is independent of its local frame.",
+        "S5": "After Hermitian transport the pairing tests the corresponding transported dual lattices.",
+        "S6": "The Hermitian column choices can be read from the supplied standard forms and levels.",
+        "S7": "The given standard data provide a compatible Hermitian datum at the level prime.",
+        "S8": "The fixed level admits the point and evaluation comparisons required at the chosen twists.",
+        "S9": "The reduction maps identify the level structures required by the tuple moves.",
+        "S10": "The reference chart selection supplies compatible standard forms for the word family.",
+        "S11": "The twisted chain is realized over the chosen columns with the prescribed base points.",
+        "S12": "A single coefficient-field sum realizes the period and satisfies the valuation alternative at every permitted place."
+      }
+    },
+    {
+      "edition_sha256": "5cec6e149ccbdf37a7b8bcbb2e86955ab82753b299be4adaf034a28f00e113b7",
+      "sources": [
+        {
+          "path": "notes/theta/excerpt.tex",
+          "sha256": "aecc746af356882ab57e404055bf9f00f4375a4e9849a877026c8757efb0f46d"
+        },
+        {
+          "path": "notes/blueprint/Z4.4.tex",
+          "sha256": "7888778a430014fa40d08b5b5cf716b12c386a46d5d6c0334f4736a89f303cc5"
+        }
+      ],
+      "steps": {
+        "S1": "8cab5aed54e7d62ae76c1a365b486cc5378dc078231ab4ad630f77fba884027e",
+        "S2": "d7b9a15f3e6e7996a673fa0268d8a1c0c4ef98188fbc735c3c6a0ef4152c3483",
+        "S3": "cb7ca5a590f67cf0d7e35844d0b86736feb74e14a99e519ad885ef70c0867ea8",
+        "S4": "21a63f1282d09942e9f7d8eaa35812f5d6b61558554a7e8c861a4021ea1436cb",
+        "S5": "bb3f359bb760fd40976e17337b224aed817203f7127b1bf59147de11dee470dc",
+        "S6": "4381149b6b258c8928dc2dbdb20a058ca3565f7ce147d828d52fd6c51d68b945",
+        "S7": "a8c5fd44830d2c213031d7a77e9eb3d3e29c30beb8b9601087e92f9182b6ef83",
+        "S8": "6133727ff762df25390f49f487a3fba9f0071db2bbbccbc86eef1205f1a8d770",
+        "S9": "7f20569a70bf08431d0946bb0cdc45dc1453b74b72f3bc8507fdff80c4cb8692",
+        "S10": "f763bab937662586a3d7d8a800f50ef1ff1e2c2cd5c0fed647d7d280db7baa19",
+        "S11": "452a992f82a8304af86bfe2e89687f7e808a1ed42c309c8946a4d3762e21130c",
+        "S12": "bed0ba773811451a2a8686fd82b952e2304221542268590ffae4dc97e3119c7a"
+      },
+      "step_texts": {
+        "S1": "Pairing against the corresponding Weyl word extracts the selected polynomial coefficient.",
+        "S2": "The leading exponent satisfies the interlacing inequalities needed for straightening.",
+        "S3": "Coefficient extraction and straightening identify the two standard Weyl lattices as exact duals.",
+        "S4": "The integral membership test for the transported lattice is independent of its local frame.",
+        "S5": "After Hermitian transport the pairing tests the corresponding transported dual lattices.",
+        "S6": "The Hermitian column choices can be read from the supplied standard forms and levels.",
+        "S7": "The given standard data provide a compatible Hermitian datum at the level prime.",
+        "S8": "The fixed level admits the point and evaluation comparisons required at the chosen twists.",
+        "S9": "The reduction maps identify the level structures required by the tuple moves.",
+        "S10": "The reference chart selection supplies compatible standard forms for the word family.",
+        "S11": "The twisted chain is realized over the chosen columns with the prescribed base points.",
+        "S12": "A single coefficient-field sum realizes the period and satisfies the valuation alternative at every permitted place."
+      }
+    }
+  ]
+}

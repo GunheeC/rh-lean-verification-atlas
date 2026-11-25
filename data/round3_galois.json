@@ -1,0 +1,439 @@
+{
+  "changes": [
+    {
+      "id": "P026",
+      "old_status": "Statement only",
+      "status": "Outlined",
+      "note": "notes/units/P026_round3.md",
+      "weakest_step": "Inspect the specialization and the Hecke projection that connect the global integral tuple to Pin7. Matching the twist, lattice and second coordinate is necessary to use the local contradiction on the cocycle actually supplied.",
+      "lean_ranges": [
+        {
+          "name": "GlobalTheory.Ord2.ZetaUr",
+          "file": "Development/AbelianVarietyTheory/Statements/CuspidalUnitaryTwists/ZetaUr.lean",
+          "line0": 18,
+          "line1": 20
+        },
+        {
+          "name": "GlobalTheory.Ord2.SrcUr",
+          "file": "Development/AbelianVarietyTheory/Statements/CuspidalUnitaryTwists/ZetaUr.lean",
+          "line0": 13,
+          "line1": 16
+        },
+        {
+          "name": "UpperTheory.V.Z.Kato.Final.zetaUr",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/UnramifiedZeta/ZetaUr.lean",
+          "line0": 9,
+          "line1": 12
+        },
+        {
+          "name": "GlobalTheory.KZ.Sys",
+          "file": "Development/AbelianVarietyTheory/Definitions/Foundations/IsLocallyConstantCycMod.lean",
+          "line0": 13,
+          "line1": 19
+        },
+        {
+          "name": "GlobalTheory.KZ.SpLink",
+          "file": "Development/AbelianVarietyTheory/Definitions/Foundations/IsLocallyConstantCycMod.lean",
+          "line0": 35,
+          "line1": 38
+        },
+        {
+          "name": "GlobalTheory.KZ.ExistsZetaEulerSystemIwasawaData",
+          "file": "Development/AbelianVarietyTheory/Definitions/Foundations/ZetaElementsUnramifiedOrdinaryOfEulerSystemInert.lean",
+          "line0": 20,
+          "line1": 26
+        },
+        {
+          "name": "UpperTheory.V.Z.Kato.Joint.kato_global_unit_law_of_smoothed_classes",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/FrobeniusHodgeTateLaws/KatoGlobalUnitLawOfSmoothedClasses.lean",
+          "line0": 8,
+          "line1": 10
+        },
+        {
+          "name": "UpperTheory.V.Z.Kato.Final.zetaUr",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/UnramifiedZeta/ZetaUr.lean",
+          "line0": 9,
+          "line1": 12
+        },
+        {
+          "name": "GlobalTheory.KZ.ZetaEulerSystemNonvanishing",
+          "file": "Development/AbelianVarietyTheory/Definitions/Foundations/ZetaElementsUnramifiedOrdinaryOfEulerSystemInert.lean",
+          "line0": 28,
+          "line1": 34
+        },
+        {
+          "name": "UpperTheory.Kd.C7.LocalUnitsRoots.main",
+          "file": "Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/NormFactorLeOne.lean",
+          "line0": 99,
+          "line1": 126
+        },
+        {
+          "name": "UpperTheory.Kd.C7.LocalUnitsRoots.main",
+          "file": "Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/NormFactorLeOne.lean",
+          "line0": 127,
+          "line1": 157
+        },
+        {
+          "name": "UpperTheory.Kd.C7.pLocu",
+          "file": "Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/NormFactorLeOne.lean",
+          "line0": 162,
+          "line1": 164
+        },
+        {
+          "name": "GlobalTheory.KZ.zetaSysU_of_halves2",
+          "file": "Development/AbelianVarietyTheory/Definitions/Foundations/ZetaElementsUnramifiedOrdinaryOfEulerSystemInert.lean",
+          "line0": 36,
+          "line1": 41
+        },
+        {
+          "name": "GlobalTheory.KZ.es_of_sys",
+          "file": "Development/AbelianVarietyTheory/Definitions/Foundations/IsLocallyConstantCycMod.lean",
+          "line0": 46,
+          "line1": 55
+        },
+        {
+          "name": "GlobalTheory.KZ.zetaUr_of_halves2",
+          "file": "Development/AbelianVarietyTheory/Definitions/Foundations/ZetaElementsUnramifiedOrdinaryOfEulerSystemInert.lean",
+          "line0": 43,
+          "line1": 46
+        }
+      ]
+    },
+    {
+      "id": "W08",
+      "old_status": "Statement only",
+      "status": "Outlined",
+      "note": "notes/units/W08_round3.md",
+      "weakest_step": "Follow the fixed-kernel bijection into the simultaneous trace estimate. Choosing a new test integer for each coefficient prime or each character would lose the collective bound.",
+      "lean_ranges": [
+        {
+          "name": "UpperTheory.V.HV.CountI",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/Counts.lean",
+          "line0": 53,
+          "line1": 58
+        },
+        {
+          "name": "UpperTheory.V.Z.J.count_i_of_printed_bound_k_kato_automorphy",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/LinkedUnlE.lean",
+          "line0": 49,
+          "line1": 54
+        },
+        {
+          "name": "UpperTheory.V.Z.J.oneCharU_of_katoTwoW_rig_admI_automorphy",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/FOneCharU.lean",
+          "line0": 75,
+          "line1": 95
+        },
+        {
+          "name": "UpperTheory.V.Z.J.propGK_of_numberU3U_of_oneCharU",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/FPropGKU.lean",
+          "line0": 118,
+          "line1": 145
+        },
+        {
+          "name": "UpperTheory.V.Z.J.propGK_of_numberU3U_of_oneCharU",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/FPropGKU.lean",
+          "line0": 146,
+          "line1": 172
+        },
+        {
+          "name": "UpperTheory.V.U3.corGK",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/CorGSumLog.lean",
+          "line0": 37,
+          "line1": 73
+        },
+        {
+          "name": "UpperTheory.V.U3.countI",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/CountI.lean",
+          "line0": 61,
+          "line1": 75
+        },
+        {
+          "name": "UpperTheory.V.U3.countI",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/CountI.lean",
+          "line0": 22,
+          "line1": 62
+        },
+        {
+          "name": "UpperTheory.V.U3.countI",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/CountI.lean",
+          "line0": 76,
+          "line1": 102
+        },
+        {
+          "name": "UpperTheory.V.U3.countI",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/CountI.lean",
+          "line0": 103,
+          "line1": 136
+        },
+        {
+          "name": "absorb",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/CountI.lean",
+          "line0": 12,
+          "line1": 20
+        }
+      ]
+    },
+    {
+      "id": "W09",
+      "old_status": "Statement only",
+      "status": "Outlined",
+      "note": "notes/units/W09_round3.md",
+      "weakest_step": "Verify that the coefficient change preserves the conductor and the order of the prime-to-$\\ell$ part and that the length comparison refers to the same normalized invariant on both sides. All three are needed to descend the estimate.",
+      "lean_ranges": [
+        {
+          "name": "UpperTheory.V.HV.chiP",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/DirichletPrimeToLPartMulLPowerPart.lean",
+          "line0": 86,
+          "line1": 86
+        },
+        {
+          "name": "UpperTheory.V.HV.CountShape",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/Counts.lean",
+          "line0": 60,
+          "line1": 63
+        },
+        {
+          "name": "UpperTheory.V.HV.Host.CaseII",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/DirichletPrimeToLPartMulLPowerPart.lean",
+          "line0": 212,
+          "line1": 212
+        },
+        {
+          "name": "UpperTheory.V.HV.Host.CaseIII",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/DirichletPrimeToLPartMulLPowerPart.lean",
+          "line0": 214,
+          "line1": 215
+        },
+        {
+          "name": "UpperTheory.V.HV.VLe",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/DirichletPrimeToLPartMulLPowerPart.lean",
+          "line0": 120,
+          "line1": 120
+        },
+        {
+          "name": "UpperTheory.V.HV.DescentVanishingReductions.countII_and_countIII_of_printsH_of_sp4In",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/AdjointLiftingOfCohomology.lean",
+          "line0": 33,
+          "line1": 39
+        },
+        {
+          "name": "UpperTheory.V.X.soBar",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/LevelCohomology/FdAdjoinRange.lean",
+          "line0": 78,
+          "line1": 96
+        },
+        {
+          "name": "UpperTheory.V.X.soFin",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/LevelCohomology/ExistsAb.lean",
+          "line0": 43,
+          "line1": 99
+        },
+        {
+          "name": "main_big",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/ConductorAtMapInjectiveCoeff.lean",
+          "line0": 68,
+          "line1": 102
+        },
+        {
+          "name": "main_big",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/ConductorAtMapInjectiveCoeff.lean",
+          "line0": 102,
+          "line1": 130
+        },
+        {
+          "name": "UpperTheory.V.Th.sp4Main_alt",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/ConductorAtMapInjectiveCoeff.lean",
+          "line0": 131,
+          "line1": 164
+        },
+        {
+          "name": "UpperTheory.V.Th.sp4Main_alt",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/ConductorAtMapInjectiveCoeff.lean",
+          "line0": 162,
+          "line1": 171
+        }
+      ]
+    },
+    {
+      "id": "W11",
+      "old_status": "Statement only",
+      "status": "Outlined",
+      "note": "notes/units/W11_round3.md",
+      "weakest_step": "In the two-primary branch, trace the sign bound through conjugation and the square in the final index estimate. A layer-dependent sign bound here would invalidate the subsequent choice of one $r$.",
+      "lean_ranges": [
+        {
+          "name": "UpperTheory.V.Published.FerreroWashington",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/PublishedTheorems/FerreroWashington.lean",
+          "line0": 7,
+          "line1": 11
+        },
+        {
+          "name": "UpperTheory.V.FW.embed",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/FerreroWashingtonIndex/EmbedDeg.lean",
+          "line0": 16,
+          "line1": 53
+        },
+        {
+          "name": "UpperTheory.V.FW.embed",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/FerreroWashingtonIndex/EmbedDeg.lean",
+          "line0": 54,
+          "line1": 78
+        },
+        {
+          "name": "UpperTheory.V.FW.cyc",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/FerreroWashingtonIndex/FerreroWashington.lean",
+          "line0": 18,
+          "line1": 33
+        },
+        {
+          "name": "UpperTheory.V.FW.cyc",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/FerreroWashingtonIndex/FerreroWashington.lean",
+          "line0": 42,
+          "line1": 55
+        },
+        {
+          "name": "UpperTheory.V.FW.cyc",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/FerreroWashingtonIndex/FerreroWashington.lean",
+          "line0": 77,
+          "line1": 90
+        },
+        {
+          "name": "UpperTheory.V.FW.cyc",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/FerreroWashingtonIndex/FerreroWashington.lean",
+          "line0": 54,
+          "line1": 66
+        },
+        {
+          "name": "UpperTheory.V.FW.cyc",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/FerreroWashingtonIndex/FerreroWashington.lean",
+          "line0": 89,
+          "line1": 102
+        },
+        {
+          "name": "UpperTheory.V.FW.desc",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/FerreroWashingtonIndex/CardClDualOne.lean",
+          "line0": 10,
+          "line1": 39
+        },
+        {
+          "name": "UpperTheory.V.FW.desc",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/FerreroWashingtonIndex/CardClDualOne.lean",
+          "line0": 40,
+          "line1": 94
+        },
+        {
+          "name": "UpperTheory.V.FW.ferreroWashington",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/FerreroWashingtonIndex/FerreroWashington.lean",
+          "line0": 104,
+          "line1": 119
+        }
+      ]
+    },
+    {
+      "id": "W13",
+      "old_status": "Statement only",
+      "status": "Outlined",
+      "note": "notes/units/W13_round3.md",
+      "weakest_step": "Track the exceptional-layer estimate and the two auxiliary primes through the choice of $Y$. The plus-part theorem must apply to the particular interval W12 returns for the prescribed page function.",
+      "lean_ranges": [
+        {
+          "name": "UpperTheory.V.HV.vwin_of_counts",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/JointWinOfCounts.lean",
+          "line0": 30,
+          "line1": 33
+        },
+        {
+          "name": "UpperTheory.V.HV.sumOut",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/SumOut.lean",
+          "line0": 50,
+          "line1": 72
+        },
+        {
+          "name": "UpperTheory.V.HV.sumOut",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/SumOut.lean",
+          "line0": 171,
+          "line1": 204
+        },
+        {
+          "name": "UpperTheory.V.HV.pointHV_of_counts",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/JointWinOfCounts.lean",
+          "line0": 16,
+          "line1": 18
+        },
+        {
+          "name": "UpperTheory.V.HV.sumIn",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/FinalLe.lean",
+          "line0": 86,
+          "line1": 104
+        },
+        {
+          "name": "UpperTheory.V.HV.point",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/PointArith.lean",
+          "line0": 36,
+          "line1": 92
+        },
+        {
+          "name": "UpperTheory.V.HV.thmHV",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/ThmHV.lean",
+          "line0": 6,
+          "line1": 40
+        },
+        {
+          "name": "UpperTheory.V.HV.thmHV_of_counts",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/JointWinOfCounts.lean",
+          "line0": 20,
+          "line1": 23
+        },
+        {
+          "name": "UpperTheory.V.vwinAt_of_joint",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/CMFieldExponentialBounds/AdmissibleOfPageN.lean",
+          "line0": 41,
+          "line1": 49
+        },
+        {
+          "name": "UpperTheory.V.HV.jointWin_of_counts",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/JointWinOfCounts.lean",
+          "line0": 25,
+          "line1": 28
+        },
+        {
+          "name": "UpperTheory.V.jointWin_of",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/PrimeSetBoundDataOfPrimitiveChar.lean",
+          "line0": 145,
+          "line1": 156
+        },
+        {
+          "name": "UpperTheory.V.vwinAt_of_joint",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/CMFieldExponentialBounds/AdmissibleOfPageN.lean",
+          "line0": 50,
+          "line1": 103
+        },
+        {
+          "name": "UpperTheory.V.thmBc_iff",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/PrimeSetBoundDataOfPrimitiveChar.lean",
+          "line0": 112,
+          "line1": 134
+        },
+        {
+          "name": "UpperTheory.V.vvle_of_parts",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/LengthEqAddEigen.lean",
+          "line0": 127,
+          "line1": 189
+        },
+        {
+          "name": "UpperTheory.V.vwinAt_of_joint",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/CMFieldExponentialBounds/AdmissibleOfPageN.lean",
+          "line0": 104,
+          "line1": 129
+        },
+        {
+          "name": "UpperTheory.V.vwin_of_joint",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/CMFieldExponentialBounds/AdmissibleOfPageN.lean",
+          "line0": 131,
+          "line1": 133
+        }
+      ]
+    }
+  ]
+}

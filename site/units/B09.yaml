@@ -1,0 +1,140 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "B09",
+  "title": "Finite character conversion of a gap bound",
+  "track": {
+    "primary": "analytic",
+    "secondary": [
+      "arakelov"
+    ]
+  },
+  "statement": "Fix $C\\ge0$, $\\varepsilon>0$, $|c|\\le1$ and $C_E,K_o,M\\in\\mathbb R$.\nThere is $x_1$ such that the implication below holds for every $x\\ge x_1$.\nTake a finite abelian group $H$, its prescribed arithmetic host facts\nat the finite excluded set $S$, character constants $\\ell(\\xi)$, and\n$T_2\\subset A_0\\le H$, $TT\\subset H$. Write $n=|H|$, $n_2=|T_2|$,\n$n_T=|TT|$, $\\delta_2=n_2/n$, and $f=|\\Gamma_\\Phi|$.\nFor $b,k>0$, $a_E\\ge0$ and integers $m,N\\ge0$ assume\n$m\\le x^{1/2+\\varepsilon/2}$, $xm\\le k$, and the following conditions.\n\\begin{itemize}\n\\item The width parameters satisfy $\\eta,\\theta\\ge0$, $b',X'>0$,\n$b'X'\\le xb$ and $|a_t/b-x|\\le1$ on $TT$.\nEach positive column weight $w_{u,j}(\\rho)$ ($u\\in A_0$,\n$\\rho\\in\\Gamma_\\Phi$) is in $[b,b+\\eta+1]$ on the thick places\nindexed by $T_2+u$ and at most $2b'$ elsewhere. The cutoff obeys\n$a_t/w_{u,j}(\\rho)\\le N$.\n\\item Every frequency satisfies $|G_\\xi(y)|\\le y\\theta$ for $y\\ge X'/3$;\n$2f(x+1)\\theta\\le1/x$, $6f(x+1)(\\eta+1)\\le b/x$.\nAlso $a_E\\le2xb$, $n_T\\ge nx^{-\\varepsilon/8}/2$,\n$\\delta_2\\ge x^{-\\varepsilon}$, $m\\ge x^{1/2-\\varepsilon}$,\nand $k\\le n^2x^{1/2-\\varepsilon}$.\n\\item Write $A_0^\\perp$ for the frequencies trivial on the embedded $A_0$.\nThe kept set $K'$ contains the trivial character, lies in $A_0^\\perp$,\nand its characters take value one at the distinguished element $s_0$;\n$|A_0^\\perp|\\le M$. For kept characters nontrivial on the embedded $H$,\n$|\\sum_{t\\in TT}\\xi(t)-cn_T|\\le M x^{-1+\\varepsilon}n_T$.\nThe bounds on $|\\ell(\\xi)|$ are $K_o$ for kept nontrivial characters\nand $C_E\\log x$ for discarded members of $A_0^\\perp$.\n\\end{itemize}\nSet\n\\[\n \\mathrm{Br}=n_Ta_E(1+m^2/k)+\n m\\left(2nmbx^\\varepsilon+\n          \\frac{n_2kbx^\\varepsilon}{n^2x^{-\\varepsilon}}\\right).\n\\]\nIf for every $u\\in A_0$ the gap (the sum of $\\mathrm{ASK}-\\Re\\mathrm{MAIN}$\nover $TT$ and the $m$ columns) is at most $x^{C\\varepsilon}\\mathrm{Br}$,\nthen\n\\[\n \\sum_{\\xi\\in K'}\\mathrm{wt}_c(\\xi)\\Re G_\\xi(x)\n \\le x^{1/2+(C+3)\\varepsilon}+\\sum_{\\xi\\in A_0^\\perp\\setminus K'}|G_\\xi(x)|,\n\\]\nwhere $\\mathrm{wt}_c$ is $1$ on characters trivial on the embedded $H$\nand $c$ otherwise.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Fix $C\\ge0$, $\\varepsilon>0$, $|c|\\le1$ and the recorded character constants. Use the finite host, $T_2\\subseteq A_0$, positive $b,k$ and nonnegative $a_E$.",
+    "Impose the width, cutoff, frequency, cost and remaining-size conditions, including the upper rank and $xm\\le k$ inequalities.",
+    "The kept characters satisfy normalization and share bounds. For every subgroup translate the gap is at most $x^{C\\varepsilon}$ times the same size bracket."
+  ],
+  "lean": [
+    {
+      "name": "Deduction.ch_core",
+      "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean",
+      "line0": 343,
+      "line1": 442,
+      "sha256": "1c0b4be1f96d1fb59d5b7e4901b2036613b4f74c11d405016ffa5cf7b975ea56",
+      "dominated": 1886,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/B09_v4.md",
+      "section": "The finite character average and its four size terms",
+      "pages": [
+        1,
+        4
+      ],
+      "coverage": "Round-3 written exposition, pending independent review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "5.9 (sub:B09)",
+      "pages": [
+        38,
+        38
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/B09.tex",
+      "section": "sub:B09",
+      "pages": []
+    },
+    {
+      "document": "paper2_v3",
+      "section": "The chain in detail: P017",
+      "pages": [
+        9,
+        13
+      ],
+      "coverage": "Shared subsection for this station, including subordinate inputs."
+    },
+    {
+      "document": "paper2_v4",
+      "section": "Mechanism, §3",
+      "pages": [
+        16,
+        21
+      ],
+      "coverage": "Paper v4, pending independent review."
+    }
+  ],
+  "status": "Full",
+  "grade": "L1",
+  "reviews": [
+    "reviews/R21_review.md",
+    "reviews/DB3_review_A.md"
+  ],
+  "prerequisites": [
+    "D561",
+    "D562",
+    "D563",
+    "D564",
+    "D566"
+  ],
+  "size_pages": 4,
+  "open_questions": [
+    "When widths are frozen, how do the cost estimates differ for the principal character and for the discarded characters?"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [
+    {
+      "grade": "L1",
+      "review": "reviews/R21_review.md",
+      "lines": [
+        137,
+        137
+      ],
+      "scope": "Lean interface as specified in the review row; no equivalence with a published result inferred.",
+      "verdict": "Exact statement comparison"
+    }
+  ],
+  "paper_id": "B09",
+  "indexed_members": [
+    "D565"
+  ],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "finite-character-conversion-of-a-gap-bound",
+  "aliases": [
+    "ch_core",
+    "B09 Finite character conversion of a gap bound"
+  ],
+  "background": [
+    "Finite Fourier analysis",
+    "Smoothed character sums",
+    "Asymptotic error estimates"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "5.9 (sub:B09)",
+    "pages": [
+      38,
+      38
+    ]
+  },
+  "question_sources": [
+    "questions/analytic.md"
+  ],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "D561": "graph",
+    "D562": "graph",
+    "D563": "graph",
+    "D564": "graph",
+    "D566": "graph"
+  },
+  "review_status": "pending_review",
+  "summary": "A bound on the gap at every translate of a finite subgroup gives an upper bound on a weighted sum over the kept characters. The stated width, density and imbalance bounds control the conversion. Discarded characters still contribute an explicit error, which the next estimate must bound."
+}

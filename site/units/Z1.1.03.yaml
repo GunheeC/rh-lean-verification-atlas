@@ -1,0 +1,93 @@
+{
+  "id": "Z1.1.03",
+  "title": "Automorphy in the adjoint window",
+  "track": {
+    "primary": "galois",
+    "secondary": []
+  },
+  "statement": "Over the linked CM field with odd coefficient prime, nonzero $M$ divisible by twice that prime and unramified splitting, an AdInW representation has a cyclotomic inverse twist of its trace-free adjoint that is conjugate-self-dual automorphic and satisfies AllW.",
+  "assumptions": [
+    "source:blueprint_v13"
+  ],
+  "hypothesis_details": [
+    "Use the linked CM field, an odd coefficient prime and a nonzero level divisible by twice that prime.",
+    "Assume unramified splitting and membership of the representation in the adjoint window."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.Z.Sym.W.adjoint_automorphy_w_of_printed_hida_window",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/UnitaryThreeInputsOfLiterature.lean",
+      "line0": 28,
+      "line1": 28,
+      "sha256": "c53af7bd02424792806dc059068a1facf9e2b6850a505c6fc867323ed9eed9d2",
+      "dominated": 52398,
+      "graph": "allChi",
+      "role": "statement"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/blueprint/Z1.1.03.tex",
+      "section": "r8:small:Z1.1.03",
+      "pages": []
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r8:small:Z1.1.03",
+      "pages": [
+        467,
+        467
+      ],
+      "printed_page": 442,
+      "scope": "First page of this named destination."
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [
+    "B04",
+    "Z1.1.02"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "Derive the weight-compatible descent and pure-weight adjoint lift used by the core at each ramified place."
+  ],
+  "last_checked": "2026-11-24",
+  "blueprint_members": [
+    "Z1.1.03"
+  ],
+  "representative": "UpperTheory.V.Z.Sym.W.adjoint_automorphy_w_of_printed_hida_window",
+  "statement_declarations": [
+    "UpperTheory.V.Z.Sym.W.adjoint_automorphy_w_of_printed_hida_window"
+  ],
+  "grade_scope": "Named statement declarations with the hypotheses above. Chart supplier records have their own review scopes.",
+  "confirmation_basis": "Minimum across the statement declarations, using registry rows for the blueprint assignments listed here. Reviews of other expositions of a shared declaration are included as context.",
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "slug": "automorphy-in-the-adjoint-window",
+  "aliases": [
+    "adjoint_automorphy_w_of_printed_hida_window",
+    "Z1.1.03 Automorphy in the adjoint window"
+  ],
+  "background": [
+    "Hida theory",
+    "Automorphy lifting"
+  ],
+  "hypothesis_source": {
+    "document": "blueprint_v13",
+    "section": "r8:small:Z1.1.03",
+    "pages": [
+      467,
+      467
+    ]
+  },
+  "question_sources": [
+    "data/status_ledger.json"
+  ],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "B04": "graph",
+    "Z1.1.02": "statement-reading"
+  },
+  "summary": "Under the linked-field and level hypotheses, the inverse cyclotomic twist of the trace-free adjoint of a representation in the specified window is conjugate-self-dual automorphic and satisfies the required local conditions. This supplies the automorphic comparison for the twisted seed."
+}

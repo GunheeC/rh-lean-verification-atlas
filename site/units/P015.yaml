@@ -1,0 +1,142 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "P015",
+  "title": "Primitive-character nonvanishing from Green, the Selmer window and the family witness",
+  "track": {
+    "primary": "analytic",
+    "secondary": [
+      "galois"
+    ]
+  },
+  "statement": "Assume $\\mathcal B,V,\\mathcal F$. For every $\\psi\\in\\mathcal P$ and every $s$ with $\\Re s>1/2$, one has $L(s,\\psi)\\ne0$.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume Green's character statement, the Selmer window and a common definite-side family witness.",
+    "The character is in the prescribed primitive character class and $\\Re s>1/2$."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.Top.zero_free_all_of_green_v_win",
+      "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean",
+      "line0": 12,
+      "line1": 15,
+      "sha256": "5e975b2462270fb38d695e966d3ce6bb6f409b715ddc3302ba807422a5925e41",
+      "dominated": 194351,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "6.15 (pn:P015)",
+      "pages": [
+        58,
+        58
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/P015.tex",
+      "section": "pn:P015",
+      "pages": []
+    },
+    {
+      "document": "paper2_v3",
+      "section": "The chain in detail: P015",
+      "pages": [
+        17,
+        19
+      ],
+      "coverage": "Shared subsection for this station, including subordinate inputs."
+    },
+    {
+      "document": "notes/units/P015-argument.tex",
+      "section": "r23:host",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L1",
+  "reviews": [
+    "reviews/R20_review.md"
+  ],
+  "prerequisites": [
+    "B05",
+    "B07",
+    "P016",
+    "P045",
+    "P047",
+    "Z4.1",
+    "Z4.3",
+    "Z5.2"
+  ],
+  "size_pages": 3,
+  "open_questions": [
+    "Where is the Selmer bound established for the very cyclic level and family used in the host and connectedness steps?"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [
+    {
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "lines": [
+        47,
+        47
+      ],
+      "scope": "R20 local implication under its stated premises, not its prerequisite cones.",
+      "verdict": "Statement exact"
+    },
+    {
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "lines": [
+        103,
+        103
+      ],
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript.",
+      "verdict": "Exact statement comparison"
+    }
+  ],
+  "paper_id": "P015",
+  "indexed_members": [
+    "P051",
+    "P052"
+  ],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "primitive-character-nonvanishing-from-green-the-selmer-window-and-the-family-witness",
+  "aliases": [
+    "Primitive characters from the three inputs",
+    "zero_free_all_of_green_v_win",
+    "P015 Primitive-character nonvanishing from Green, the Selmer window and the family witness"
+  ],
+  "background": [
+    "Primitive characters",
+    "Theta lifts",
+    "Selmer windows"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "6.15 (pn:P015)",
+    "pages": [
+      58,
+      58
+    ]
+  },
+  "question_sources": [
+    "reviews/R23_review.md"
+  ],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "B05": "graph",
+    "B07": "graph",
+    "P016": "graph",
+    "P045": "graph",
+    "P047": "graph",
+    "Z4.1": "graph",
+    "Z4.3": "graph",
+    "Z5.2": "graph"
+  },
+  "summary": "Assuming Green’s character assertion, the Selmer window and the definite-side family witness gives half-plane nonvanishing for the designated primitive characters. It isolates the primitive-character part of the conditional deduction before changing conductor."
+}

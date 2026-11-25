@@ -1,0 +1,107 @@
+{
+  "id": "Z3.2",
+  "title": "Local comparisons and global lattice index",
+  "track": {
+    "primary": "galois",
+    "secondary": [
+      "local"
+    ]
+  },
+  "statement": "Under G1--G6, the tame-generator, Bloch--Kato and annihilator, continuity, semisimple decomposition, Fontaine, integral Tate finiteness, local compatibility, 5.1 and unramified conditions, the normalized row, lifting-exponent and TB hypotheses yield the global lattice-index inequality with the specified row lengths, lifting exponents and TB constants.",
+  "assumptions": [
+    "source:blueprint_v13"
+  ],
+  "hypothesis_details": [
+    "Use G1–G6, tame generators, Bloch–Kato and annihilator conditions, family continuity and semisimple decomposition.",
+    "Use Fontaine and Tate local conditions, coefficient compatibility, the unramified hypothesis and the designated row, exponent and TB data."
+  ],
+  "lean": [
+    {
+      "name": "Formalism.MainNotions.N.K.Closed.open_inputs_at_normalized",
+      "file": "Formalism/AdmissibleDesigns/StatementOneBFromUnramified.lean",
+      "line0": 74,
+      "line1": 93,
+      "sha256": "4464e956d645cd088f44048abf5b74ecdf5baf68abf22310a5b46ccdf3d6099e",
+      "dominated": 4883,
+      "graph": "allChi",
+      "role": "statement"
+    },
+    {
+      "name": "Formalism.MainNotions.N.K.Closed.theorem_n5_from_inputs",
+      "file": "Formalism/AdmissibleDesigns/StatementOneBFromUnramified.lean",
+      "line0": 142,
+      "line1": 175,
+      "sha256": "c8d1745b519bab4d0d2498bceaea110e4c7371acd45b2f8db13bf0821c1502c0",
+      "dominated": 21932,
+      "graph": "allChi",
+      "role": "statement"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/blueprint/Z3.2.tex",
+      "section": "sec:P-r4-Z32",
+      "pages": []
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "sec:P-r4-Z32",
+      "pages": [
+        290,
+        290
+      ],
+      "printed_page": 265,
+      "scope": "First page of this named destination."
+    }
+  ],
+  "status": "Full",
+  "grade": "L0",
+  "reviews": [
+    "reviews/R4_review_Z1Z3.md"
+  ],
+  "prerequisites": [
+    "P041",
+    "P043",
+    "Z3.1"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "blueprint_members": [
+    "Z3.2"
+  ],
+  "representative": "Formalism.MainNotions.N.K.Closed.open_inputs_at_normalized",
+  "statement_declarations": [
+    "Formalism.MainNotions.N.K.Closed.open_inputs_at_normalized",
+    "Formalism.MainNotions.N.K.Closed.theorem_n5_from_inputs"
+  ],
+  "grade_scope": "Named statement declarations with the hypotheses above. Chart supplier records have their own review scopes.",
+  "confirmation_basis": "Minimum across the statement declarations, using registry rows for the blueprint assignments listed here. Reviews of other expositions of a shared declaration are included as context.",
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "slug": "local-comparisons-and-global-lattice-index",
+  "aliases": [
+    "Z3.2 Local comparisons and global lattice index"
+  ],
+  "background": [
+    "Lattice indices",
+    "Local Galois cohomology"
+  ],
+  "hypothesis_source": {
+    "document": "blueprint_v13",
+    "section": "sec:P-r4-Z32",
+    "pages": [
+      290,
+      290
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "P041": "graph",
+    "P043": "graph",
+    "Z3.1": "graph"
+  },
+  "summary": "The six Galois hypotheses and the listed local, continuity and lifting conditions give a global lattice-index estimate using the prescribed row lengths and lifting exponents. They explain which local comparisons are required to turn those inputs into one global bound."
+}

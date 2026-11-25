@@ -1,0 +1,206 @@
+{
+  "id": "Z4.3",
+  "title": "Off-level kernel valuations",
+  "track": {
+    "primary": "theta",
+    "secondary": [
+      "local"
+    ]
+  },
+  "statement": "For a used tuple $\\mu$, at an off-level $p\\ne T_u$, $p\\notin\\{g_0,g_1\\}\\cup Q(\\mu)$, the size and error identities and four prime-case coefficient laws imply $\\mathrm{ColGe}(T,u,\\mu,w,x,\\mathrm{lowS}(u,w))$ for every $x\\in S_{\\rm ram}(u,w)$. The registered root measures this numerical implication. The selected-row application also uses the shared covariance law, the adjacent kernel expansion and the grouped inputs at the column, inert-series and prime-sum callers.",
+  "assumptions": [
+    "source:blueprint_v13"
+  ],
+  "hypothesis_details": [
+    "Use a tuple off level, with the prime outside its prescribed excluded set.",
+    "The size and error identities and all four prime-case coefficient laws hold."
+  ],
+  "lean": [
+    {
+      "name": "Formalism.MainNotions.WeilJacquetShalikaLaw.Proof.first_clause_cases",
+      "file": "Formalism/SharpRestriction/GrowthBounds/AdmissibleIntegers/StatementsOfRemainingBound.lean",
+      "line0": 25,
+      "line1": 95,
+      "sha256": "d3f2d79f70c8d850bd1fbe3c601d8337e7aed02151b9b50f70731a93e0edbb81",
+      "dominated": 72,
+      "graph": "allChi",
+      "role": "statement"
+    },
+    {
+      "name": "Formalism.L2.Ker.push_opU",
+      "file": "Formalism/LocalToGlobal/KernelLattices/KernelLocalFactors/PeriodLatticeFinitelyGenerated.lean",
+      "line0": 309,
+      "line1": 318,
+      "sha256": "34cc53ba7b47471d14e76d28fcaa304cbef0c2d5d6264972ab2bb15d9d8c7905",
+      "dominated": 10,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "Formalism.L2.Ker.reading_is_kernel",
+      "file": "Formalism/LocalToGlobal/KernelLattices/KernelLocalFactors/PeriodLatticeFinitelyGenerated.lean",
+      "line0": 320,
+      "line1": 333,
+      "sha256": "6dd40119f2bab738ff02293ce72befc1b240a6152e31550ddf2e17d27f7e63af",
+      "dominated": 41,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "Formalism.L2.Ker.taylor_sum",
+      "file": "Formalism/LocalToGlobal/KernelLattices/KernelLocalFactors/PeriodLatticeFinitelyGenerated.lean",
+      "line0": 1457,
+      "line1": 1464,
+      "sha256": "50be2ca9485b0ee907b3393b2c7c741902d2fb6609d0abd0bb9fd178866e7e91",
+      "dominated": 8,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "Formalism.L2.Ker.transcendence_algebraic_eigen",
+      "file": "Formalism/LocalToGlobal/KernelLattices/KernelLocalFactors/PeriodLatticeFinitelyGenerated.lean",
+      "line0": 1826,
+      "line1": 1831,
+      "sha256": "68da2456781028bd5f580e7cac2a403c8920b307c4d0f04cce465c549e0ffcd3",
+      "dominated": 9,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "Formalism.L2.Ker.kernel_combination_form",
+      "file": "Formalism/LocalToGlobal/KernelLattices/KernelLocalFactors/PeriodLatticeFinitelyGenerated.lean",
+      "line0": 1476,
+      "line1": 1498,
+      "sha256": "656c6bce7828a7e34b116e88d086ed175e2a82a9179066307e725b3572179d71",
+      "dominated": 47,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "Formalism.L2.Ker.first_kernel_law_reading",
+      "file": "Formalism/LocalToGlobal/KernelLattices/KernelLocalFactors/PeriodLatticeFinitelyGenerated.lean",
+      "line0": 1520,
+      "line1": 1522,
+      "sha256": "fb453e82469e96a9e4c07a0102675406d0a16a83087fc78f9d0120cef45fde08",
+      "dominated": 50,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.Ggeo.KerComb.comb_of_tied",
+      "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/CombOfTied.lean",
+      "line0": 14,
+      "line1": 33,
+      "sha256": "a13c66dc29105d9669f5e00eea47a70528d174d8ccffb65343a5e6afae7738f3",
+      "dominated": 70,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.RatEqui.isPull_row",
+      "file": "Development/AbelianVarietyTheory/Proofs/FoundationProofs/OddEqOfEven.lean",
+      "line0": 126,
+      "line1": 149,
+      "sha256": "04bc58cd3b9c2ef9b7e1832597844c8c8ed6af02b307ceb557c0a7c8cca515c3",
+      "dominated": 165,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.RatEqui.isPull_col",
+      "file": "Development/AbelianVarietyTheory/Proofs/FoundationProofs/OddEqOfEven.lean",
+      "line0": 151,
+      "line1": 174,
+      "sha256": "2e95df7fce0f7371ae25475154321b22400dcdeea4aa3d3cbbb1ad5097367af0",
+      "dominated": 217,
+      "graph": "allChi",
+      "role": "chart supplier"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/blueprint/Z4.3.tex",
+      "section": "r6:Z4.3, r14:comb-seam, r14:comb-pseries, r14:comb-tied, r15:rational-weights, r9:Z4.3",
+      "pages": []
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r6:Z4.3",
+      "pages": [
+        370,
+        370
+      ],
+      "printed_page": 345,
+      "scope": "First page of this named destination."
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r9:Z4.3",
+      "pages": [
+        475,
+        475
+      ],
+      "printed_page": 450,
+      "scope": "First page of this named destination."
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [
+    "reviews/R4_review_Z4.md",
+    "reviews/R14_review_B.md",
+    "reviews/R15_review_B.md"
+  ],
+  "prerequisites": [
+    "Z4.1",
+    "Z42-KERNEL"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "Rational covariance and the selected-row suppliers remain open. CM2 and the three suppliers of the local host have a union of 114,570 core lines. The selected-reader finite expansion is confirmed under its stated hypotheses.",
+    "Which off-level inertia rows does the lattice comparison use? Which thresholds and separation hypotheses enter the independent moment estimate in N076?"
+  ],
+  "last_checked": "2026-11-24",
+  "blueprint_members": [
+    "Z4.3"
+  ],
+  "representative": "Formalism.MainNotions.WeilJacquetShalikaLaw.Proof.first_clause_cases",
+  "statement_declarations": [
+    "Formalism.MainNotions.WeilJacquetShalikaLaw.Proof.first_clause_cases"
+  ],
+  "grade_scope": "Named statement declarations with the hypotheses above. Chart supplier records have their own review scopes.",
+  "confirmation_basis": "Minimum across the statement declarations, using registry rows for the blueprint assignments listed here. Reviews of other expositions of a shared declaration are included as context.",
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "slug": "off-level-kernel-valuations",
+  "aliases": [
+    "Z4.3 Off-level kernel valuations"
+  ],
+  "background": [
+    "Local valuations",
+    "Theta columns"
+  ],
+  "hypothesis_source": {
+    "document": "blueprint_v13",
+    "section": "r6:Z4.3",
+    "pages": [
+      370,
+      370
+    ]
+  },
+  "question_sources": [
+    "data/status_ledger.json",
+    "questions/theta.md"
+  ],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "Z4.1": "statement-reading",
+    "Z42-KERNEL": "statement-reading"
+  },
+  "reader_overrides": {
+    "open_questions": [
+      "Rational covariance and the selected-row suppliers remain open. CM2 and the three suppliers of the local host have a union of 114,570 core lines. The selected-reader finite expansion is confirmed under its stated hypotheses.",
+      "Which off-level inertia rows does the lattice comparison use? Which thresholds and separation hypotheses enter the independent moment estimate in N076?"
+    ]
+  },
+  "summary": "The four prime-case estimates and the size identities give the desired lower column valuation outside the specified exceptions. Applying this numerical implication to selected rows also requires the matching covariance and adjacent-kernel data at the calling sites."
+}

@@ -1,0 +1,96 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "T13",
+  "edition_sha256": "637cfa5ef41abcea61840adcff3949460d96f84c9be7f16d3c536af723296f7b",
+  "note_sha256": "998205cfb4f4a1be53a247c380698c1264363452f38338bad1d2537abe7455ea",
+  "statement_sha256": "410ddfb5fc627540a0f98d93da256c383e15d8eecbdaa4e336c415896b38d695",
+  "sources": [
+    {
+      "path": "notes/units/T13.tex",
+      "sha256": "998205cfb4f4a1be53a247c380698c1264363452f38338bad1d2537abe7455ea"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The family largeness parameter may depend on epsilon and is chosen before the family.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "T14",
+        "T15",
+        "input: auxiliary geometric and arithmetic statements"
+      ],
+      "lean": [
+        {
+          "name": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopCovolSlim2Use.lean",
+          "line0": 16,
+          "line1": 22
+        }
+      ],
+      "source": "notes/units/T13.tex",
+      "anchor": "deformation. There exists $\\varepsilon_1>0$ such that for each",
+      "source_lines": [
+        24,
+        40
+      ],
+      "claim_sha256": "e9e4da7565e1de652ebb91598673934581d2517c8552630226a9b78307837ac4",
+      "passage_sha256": "e126ecb4a0f840bc55902a3a5a26b661f64cfdc4329d16d3eaf2dc945b93c9d7",
+      "sha256": "6d6fcedbf5f5f25a46f95b559ee344776a14091680b7abc3b28d24ba2f4f79eb",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Once a family and size parameter have been fixed, common tail and column thresholds give the false-side covolume inequality.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "input: point conditions and reciprocity tie"
+      ],
+      "lean": [
+        {
+          "name": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopCovolSlim2Use.lean",
+          "line0": 16,
+          "line1": 22
+        }
+      ],
+      "source": "notes/units/T13.tex",
+      "anchor": "$C_0\\ge0$ and $x_0$ such that, for $x>x_1$ with $x\\ge x_0$, every family",
+      "source_lines": [
+        24,
+        40
+      ],
+      "claim_sha256": "8f5315b0c93e89f11e29c9659cb69c6ee825ff808ba63fdb9d299574e01dafb6",
+      "passage_sha256": "e126ecb4a0f840bc55902a3a5a26b661f64cfdc4329d16d3eaf2dc945b93c9d7",
+      "sha256": "f96d050ec568ef984c4df26fe87f11a47fa48e6d4ac15b2d212a8bd021d93646",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "351083b55d1f345d3e21fe906c1d70420e2f6da645a4729e356aab55ebdeb73d",
+      "sources": [
+        {
+          "path": "notes/units/T13.tex",
+          "sha256": "81c7b389a19aa409c12bd8f715f1ac2d9f43fa8fd06b3057cc252a7f0d28b661"
+        }
+      ],
+      "statement_sha256": "410ddfb5fc627540a0f98d93da256c383e15d8eecbdaa4e336c415896b38d695",
+      "steps": {
+        "S1": "6d6fcedbf5f5f25a46f95b559ee344776a14091680b7abc3b28d24ba2f4f79eb",
+        "S2": "f96d050ec568ef984c4df26fe87f11a47fa48e6d4ac15b2d212a8bd021d93646"
+      },
+      "step_texts": {
+        "S1": "The family largeness parameter may depend on epsilon and is chosen before the family.",
+        "S2": "Once a family and size parameter have been fixed, common tail and column thresholds give the false-side covolume inequality."
+      },
+      "step_passages": {
+        "S1": "e126ecb4a0f840bc55902a3a5a26b661f64cfdc4329d16d3eaf2dc945b93c9d7",
+        "S2": "e126ecb4a0f840bc55902a3a5a26b661f64cfdc4329d16d3eaf2dc945b93c9d7"
+      }
+    }
+  ]
+}

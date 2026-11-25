@@ -1,0 +1,97 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% RH Notes blueprint source excerpts for Z1.3.02
+% Verbatim excerpts in the notation of the parent blueprint. The labelled editions and source ranges appear below.
+% See the unit YAML for the current proof status. Earlier-round passages retain their original wording.
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+\noindent\nolinkurl{UpperTheory.V.Z.Kato.K5.hco} --- in-repo constant (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/SmoothedZetaClasses/Hco.lean:34--320}); not compared.\par
+\noindent\nolinkurl{UpperTheory.V.Z.Kato.K5.smoothedZetaClass_hodgeTateLaw} --- in-repo constant (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/SmoothedZetaClasses/SmoothedZetaClassHodgeTateLaw.lean:4}); not compared.\par
+% End of atlas edition annotation.
+
+\section*{Z1.3.02. Hodge--Tate law for smoothed classes}
+
+% Parent source SHA-256: 1af64922b98ed2310744411b1f18b25cc426c97220646321471836e1a3a409d6
+% blueprint/ch_P.tex lines 13163 through 13178; r6:Z1.3.02
+\subsection{Z1.3.02. The translated character sum and the local period}\label{r6:Z1.3.02}
+Keep the data of entry~\ref{r5:map:Z1.3.02} and write $u_m=d_0\bmod\ell^m$, a unit. The layer coordinate to be tested is $Y_{m,1}(s,y)-d_0Y_{m,1}(s,yu_m)$. Because $(N,\ell)=1$, choose $\gamma_m\equiv d_0\pmod{\ell^m}$, $\gamma_m\equiv1\pmod N$. A representative $\beta$ of $y$ equal to $1\bmod N$ can then be replaced by $\beta\gamma_m$ without changing its tame residue. In the character sum substitute $y'=yu_m$; its weight becomes $\psi(y')\psi(u_m)^{-1}$. Thus the difference multiplies the unsmoothed sum by $1-d_0\psi^{-1}(d_0)$. On the tame units, multiplicativity, periodicity and the unit hypothesis give $\chi_d(\delta)^{-1}=\chi_d(\delta^{-1})$. These two reindexings act in different residue rings.
+\par{\footnotesize \nolinkurl{GlobalTheory.HTLawZeta.sum_translate} (\nolinkurl{Development/AbelianVarietyTheory/Proofs/FoundationProofs/SumTranslate.lean}\allowbreak:74--89). \nolinkurl{GlobalTheory.HTLawZeta.law_of_inputs} (\nolinkurl{Development/AbelianVarietyTheory/Proofs/FoundationProofs/SumTranslate.lean}\allowbreak:213--255).\par}
+
+For a single $x$ on the support of $c_w$, the local coefficient statement uses a finite support for $\lambda$, a common power clearing its denominators, and a diamond average over $(\mathbb Z/N)^\times$. If the average is written with denominator $M=\varphi(N)$, the proof chooses $v$ with $|\ell^v/M|\le1$; this also covers $\ell\mid M$. For the value $E$ of the unnormalized average take $k_E$ with $|\ell^{k_E}E|\le1$, and work first at precision $n=m+k_E+c_L$, where $c_L$ is the loss in the functional. The fixed coefficients are integral after these scalings. The difference between the period at $n$ and at $m$ is bounded by $|\ell|^m$, and so is the error incurred by replacing the projected lattice element by the layer coordinate. The ultrametric inequality preserves this bound in finite sums. Inverting the period preserves its norm and the successive congruences. After summing the $c_w(x)$ and applying $\lambda$ linearly, the character value has factors
+\[
+(1-d_0\psi^{-1}(d_0))\,v_m\kappa\,
+  \Big(\sum_{a\bmod\ell^m}\psi(a)z^{a.\mathrm{val}}\Big)\,
+  \psi^{-1}(N)\,\lambda\!\left(\operatorname{up}_{\ell^m}
+     \sum_{x\bmod N}c_w(x)\operatorname{chiProj}_x\right).
+\]
+Here $z$ is the root argument and $\operatorname{chiProj}_x$ retains $N,\ell,m,2e+1,\psi,\chi_d,c,d,x$ from the statement. The common $\kappa$ is nonzero. The character value itself may vanish. If $c_w$ vanishes identically, the weighted family vanishes and the coefficient comparison in the proof uses periods equal to one.
+\par{\footnotesize \nolinkurl{UpperTheory.V.Z.Kato.K5.hco} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/SmoothedZetaClasses/Hco.lean}\allowbreak:50--105). \nolinkurl{UpperTheory.V.Z.Kato.K5.hco} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/SmoothedZetaClasses/Hco.lean}\allowbreak:115--150). \nolinkurl{UpperTheory.V.Z.Kato.K5.hco} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/SmoothedZetaClasses/Hco.lean}\allowbreak:225--321). \nolinkurl{GlobalTheory.HTLawZeta.law_of_inputs} (\nolinkurl{Development/AbelianVarietyTheory/Proofs/FoundationProofs/SumTranslate.lean}\allowbreak:181--212). \nolinkurl{GlobalTheory.HTLawZeta.law_of_inputs} (\nolinkurl{Development/AbelianVarietyTheory/Proofs/FoundationProofs/SumTranslate.lean}\allowbreak:234--276). \nolinkurl{UpperTheory.V.Z.Kato.Joint.SmoothedZetaClassHodgeTateLawStatement} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/FrobeniusHodgeTateLaws/SmoothedZetaClassHodgeTateLawStatement.lean}\allowbreak:31--51).\par}
+
+\emph{Partial. [Proved in Lean, not reproduced:]} at all sufficiently high layers and for every primitive $\ell^m$-th root, the smoothed cocycle has a finite polynomial presentation with the required inertia comparison. One must also identify the individual unsmoothed cusp coefficients with the projected trace forms at the chosen lifts. These are the inputs to the character-sum and local-gluing steps above.
+\par{\footnotesize \nolinkurl{GlobalTheory.LambdaValuationPowers.Smooth.exists_pres_smoothed} (\nolinkurl{Development/AbelianVarietyTheory/Proofs/FoundationProofs/SmoothedPresOfShCoc.lean}\allowbreak:197--224). \nolinkurl{UpperTheory.V.Z.Kato.K5.hco} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/SmoothedZetaClasses/Hco.lean}\allowbreak:93--105). \nolinkurl{GlobalTheory.HTLawZeta.law_of_inputs} (\nolinkurl{Development/AbelianVarietyTheory/Proofs/FoundationProofs/SumTranslate.lean}\allowbreak:246--265).\par}
+
+% Parent source SHA-256: 1fdc6ea9aac6cf10316f85b3253b33ae98289a76ff5aa2e79daaaf11e057ce18
+% blueprint/ch_P_r7.tex lines 603 through 664; r7:Z1.3.02
+\subsection{Z1.3.02. Integral presentations before the cusp formula}\label{r7:Z1.3.02}
+\textbf{C01, hand proof.} Fix a smoother \(d_0\ge2\) prime to \(\ell\), a level \(m\ge0\), and a primitive
+\(\zeta\) of order \(M=\ell^m\). Put \(H=I_A\cap\ker\chi_M\), the closed subgroup of inertia fixing \(\zeta\).
+The lower coordinate \(z\) of the cocycle is integral and continuous.
+On inertia its diagonal multiplier is one, and on \(H\) the translation
+is trivial. Thus the coordinates \(a_i(s)\) of \(z(s,1)\) in an
+integral \(\mathbb Z_\ell\)-basis \(o_i\) of the coefficient ring, reduced
+modulo \(M\), are continuous homomorphisms \(H\to\mathbb Z/M\).
+The coefficient ring is a finite torsion-free \(\mathbf Z_\ell\)-module. Its mod-\(M\) coordinates factor through the finite discrete quotient by \(M\mathcal O\), so their kernels are open in \(H\). Reduction gives
+\(z(s,1)\equiv\sum_i o_i a_i(s)\pmod M\).
+For each \(i\) the finite Galois extension of \(\Omega^H\) corresponding
+to \(\ker a_i\) has group \(D_i=H/\ker a_i\). The weighted sum
+\(\sum_{t\in D_i}\zeta^{-a_i(t)}t(y)\) is nonzero for some \(y\) by
+independence of embeddings (proved in C02). Its value \(v_i\) satisfies
+\(s v_i=\zeta^{a_i(s)}v_i\); hence \(u_i=v_i^M\) is nonzero and fixed by \(H\).
+\par Choose \(\rho\in I_A\) taking \(\zeta\) to \(\zeta^{d_0}\).
+Indeed, after embedding at \(A\), the local cyclotomic extension
+has its full unit group as inertia, by Eisenstein for \(\Phi_M(1+T)\)
+for \(m>0\); restrict local inertia to \(\Omega\).
+The case \(m=0\) has trivial character.
+The lower-coordinate cocycle identity at \(\rho^{-1}s\rho\) gives
+\(z(s,d_0)=z(\rho^{-1}s\rho,1)\). Consequently \(w_i=u_i/\rho u_i\)
+has valuation zero, is fixed by \(H\), and the \(M\)-th root
+\(v_i/\rho v_i\) has Kummer exponent
+\(a_i(s)-d_0a_i(\rho^{-1}s\rho)\). Multiplying by \(o_i\) and summing
+gives the coordinate of \(z-d_0T_{d_0}z\) at \(1\) modulo \(M\).
+\par Write \(K=\Omega^{I_A}\). The stabilizer of \(\zeta\) inside
+inertia is \(H\), hence \(\Omega^H=K(\zeta)\).
+Every element of \(K^\times\) has integral valuation normalized at
+\(\ell\): its local image is fixed by local inertia and thus lies in a
+finite unramified extension of \(\mathbb Q_\ell\). For \(m>0\) put
+\(h=\varphi(M)\). Eisenstein gives \(v(\zeta-1)=1/h\).
+The first \(h\) powers of \(\zeta-1\) form a basis over \(K\):
+their valuation classes modulo integers are distinct and \(\Phi_M\)
+gives the degree bound. In the expansion of the unit \(w_i\) in that
+basis the minimum valuation is zero. Each coefficient has nonnegative
+integral valuation, since \(0\le i/h<1\) for all the basis indices.
+Replacing \(T\) by \(T-1\) yields \(w_i=P_i(\zeta)\) with coefficients
+in \(A\cap K\). At \(m=0\) use constants. These polynomials and the
+\(o_i\) give \(m_0=c'_0=0\) simultaneously for all levels and primitive roots. The polynomials and their finite index set may depend on \(m,\zeta\).
+If all symbol weights vanish, the weighted cocycle is zero and the empty presentation suffices. Otherwise choose \(x\) with \(c_x\ne0\).
+Its \(\mathrm{AdmWn}\) clause gives a character factoring through \(\mu_\ell\) with the specified inertia identity. Together with \(\mathrm{Nf}\) and \(\mathrm{SrcUr}\), \nolinkurl{GlobalTheory.RhoAdm.rho_ordinary_shape} gives \(\rho_{21}=0\) on decomposition and \(\rho_{22}=1\) on inertia (one-based indices).
+Taking the lower coordinate of the vector cocycle law now gives the scalar law used above. See \path{FoundationProofs/UntwistedRepresentationOrdinaryTriangularShape.lean:305--316} and \path{FoundationProofs/SmoothedPresOfShCoc.lean:214--223}.
+\nolinkurl{GlobalTheory.LambdaValuationPowers.Smooth.smoothed_pres},
+\nolinkurl{GlobalTheory.LambdaValuationPowers.Smooth.exists_pres_smoothed},
+\path{FoundationProofs/SmoothedPresOfShCoc.lean:35--224};
+\nolinkurl{GlobalTheory.CoefCoord.coord_mod_pow},
+\path{FoundationProofs/NormLeOneOfIsIntegral.lean:105--128};
+\nolinkurl{GlobalTheory.KumFix.exists_kumVal},
+\path{FoundationProofs/ExistsKummerElementFixedFieldClosedSubgroup.lean:108--115};
+\nolinkurl{GlobalTheory.CycIne.exists_poly_of_fixed},
+\path{FoundationProofs/ExistsPolynomialPrimitiveRootOfCyclotomicInertia.lean:13--40}.
+
+\textbf{B03.} The remaining assertion compares the cusp coefficients
+with the chosen Hecke functional, with common losses and norm-one
+factors across characters. Kato's Theorem 12.5(1), p.~221, evaluates
+a dual exponential using its signed period. Its range contains \(r=e\).
+The input lacks a comparison between that dual exponential, period and
+modular vector and the functional on this tower. Section~\ref{r6:Z1.3.02}
+already treats the finite reindexing factor \(1-d_0\psi^{-1}(d_0)\).
+\nolinkurl{UpperTheory.V.Z.Kato.K5.hco}, \path{SmoothedZetaClasses/Hco.lean:34--105};
+\nolinkurl{GlobalTheory.HTLawZeta.law_of_inputs}, \path{FoundationProofs/SumTranslate.lean:121--276}.
+

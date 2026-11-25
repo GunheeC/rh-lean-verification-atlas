@@ -1,0 +1,63 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% RH Notes blueprint source excerpts for Z1.3.08
+% Verbatim excerpts in the notation of the parent blueprint. The labelled editions and source ranges appear below.
+% See the unit YAML for the current proof status. Earlier-round passages retain their original wording.
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+\noindent\nolinkurl{UpperTheory.V.Z.Kato.Joint.kato_global_unit_law_of_smoothed_classes} --- in-repo constant (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/FrobeniusHodgeTateLaws/KatoGlobalUnitLawOfSmoothedClasses.lean:8--10}); not compared.\par
+\noindent\nolinkurl{UpperTheory.Kd.K4.kato_eulerSystem_integrality} --- in-repo constant (\path{Development/AutomorphicArithmetic/Foundations/IwahoriReduction/NormProducts/AdmissibleWeightedDataMonoCoef.lean:208}); not compared.\par
+\noindent\nolinkurl{UpperTheory.V.Z.Kato.K5.smoothedZetaClass_hodgeTateLaw} --- in-repo constant (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/SmoothedZetaClasses/SmoothedZetaClassHodgeTateLaw.lean:4}); not compared.\par
+% End of atlas edition annotation.
+
+\section*{Z1.3.08. Unramified classes in the ordinary normal form}
+
+% Parent source SHA-256: 1af64922b98ed2310744411b1f18b25cc426c97220646321471836e1a3a409d6
+% blueprint/ch_P.tex lines 13297 through 13327; r6:Z1.3.08
+\subsection{Z1.3.08. Assembling the unconditional unramified-source statement}\label{r6:Z1.3.08}
+Fix the closure, embeddings, coefficient prime, ordinary normal form and unramified
+modular source in \nolinkurl{ZetaUr}. The pin used at this call is
+\nolinkurl{Pin7}. Z1.3.04 takes three inputs: the integral Euler-system
+statement (.01), the smoothed Hodge--Tate law (.02), and existence of the
+admissible nonvanishing projection (.03). Specializing the third to the
+\emph{same} closure gives a single tuple $(c,y,S',\nu,\chi,Z)$ satisfying the
+global system, inertia, specialization-link and pin assertions. Apply the
+universal local test (.05) to these witnesses. Its inertia element has a
+nonzero quotient coordinate of $y$, while the corresponding diagonal matrix
+entry is $1$. Every Greenberg coboundary has quotient coordinate $(1-1)x=0$
+at that element. Retaining $c,y,S'$ and the original exceptional and tame
+conditions gives the asserted system. This is exactly the order of the two
+implications .06 and .07. Choosing a second projection or a new inertia
+system after obtaining $y$ would lose the link to this cocycle.
+
+\emph{Partial for the unconditional declaration.} The assembly just given
+uses the two already reconstructed universal implications. To remove its
+antecedents one must produce the global pinned tuple and pass the local
+specialization test under the public normal form and modular-source hypotheses.
+The remaining assertions for each supplier are in Sections~\ref{r6:Z1.3.01}--\ref{r6:Z1.3.05}.
+See also the external coefficient and local-condition tests on
+page~\pageref{r6:kato-lit}.
+{\footnotesize\nolinkurl{UpperTheory.V.Z.Kato.Final.zetaUr},
+\path{KatoQuadraticCharacters/UnramifiedZeta/ZetaUr.lean:9--12};
+\nolinkurl{UpperTheory.V.Z.Kato.Joint.kato_global_unit_law_of_smoothed_classes},
+\path{KatoQuadraticCharacters/FrobeniusHodgeTateLaws/KatoGlobalUnitLawOfSmoothedClasses.lean:8--10};
+\nolinkurl{UpperTheory.Kd.C7.pLocu}, \path{LangPolynomials/NormFactorLeOne.lean:162--164};
+\nolinkurl{GlobalTheory.KZ.zetaSysU_of_halves2}, \nolinkurl{zetaUr_of_halves2},
+\path{Definitions/Foundations/ZetaElementsUnramifiedOrdinaryOfEulerSystemInert.lean:36--46};
+\nolinkurl{GlobalTheory.KZ.not_gr_of_nzAt}, \path{IsLocallyConstantCycMod.lean:40--48}.}
+
+% Parent source SHA-256: 1fdc6ea9aac6cf10316f85b3253b33ae98289a76ff5aa2e79daaaf11e057ce18
+% blueprint/ch_P_r7.tex lines 858 through 869; r7:Z1.3.08
+\subsection{Z1.3.08. Assembly and its inherited gaps}\label{r7:Z1.3.08}
+The root supplies both producers to the already checked implication
+from the two halves; B01--B09 remain at those producers. There is no
+additional independent gap here. The alternative Kato 14.2(1) requires
+a specified finite-place lattice, twist and local conditions, and gives
+Selmer finiteness. Even after the numerical specialization \(r=e,\ K=\mathbb Q\),
+it gives no particular integral cocycle failing the project's Greenberg
+condition. See Section~\ref{r6:kato-lit},
+\nolinkurl{UpperTheory.V.Z.Kato.Final.zetaUr}, \path{UnramifiedZeta/ZetaUr.lean:9--12}.
+The Kato citations refer to K.~Kato, \emph{\(p\)-adic Hodge theory and
+values of zeta functions of modular forms}, Astérisque 295 (2004), pp.~117--290.
+\cite{S-Kato}. Theorem~12.5(1) is on p.~221, Theorem~12.6(2) on p.~222, Theorem~13.5(1)--(2) on pp.~226--227 and Theorem~14.2(1) on p.~235. \href{https://www.numdam.org/article/AST_2004__295__117_0.pdf}{Kato, original text.}
+

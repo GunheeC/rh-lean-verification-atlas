@@ -1,0 +1,102 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "P046",
+  "title": "Simultaneous local comparison and admission on the lattice chain",
+  "track": {
+    "primary": "theta",
+    "secondary": [
+      "arakelov"
+    ]
+  },
+  "statement": "Assume admission for the specified tied entries when the curve, series, character, local-law and comparison data at each stage are supplied, and existence of the indicated Lubin--Tate curve realization for each eligible inert prime. Fix a tied host, lattice system and kernel, comparison input \\(I\\), comparison hypotheses \\(H\\), labels and joint datum. At a place \\(w\\) of inert residue characteristic \\(p\\ge5\\) outside the level primes, assume the host nonvanishing condition and \\(p\\nmid T_u\\). Suppose \\(\\mu\\) is used, the level-zero stabilizer condition holds, and \\(2r_G\\le k\\). On the chain \\(\\operatorname{chainAt}(H,h_T)\\) the semilinear comparisons satisfy the level-zero identification, kernel, rationality and terminal valuation conditions. The same chain admits a system at the specified place and levels, with its standard coordinates, uniformizer and ramification normalization, and \\(d_G(0)=0,\\ d_G(j)\\le v_p(D_{\\Gamma,u})\\).",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume the entry-admission rule and curve realization at eligible inert primes, with the specified tied host, kernel, comparison, labels and joint.",
+    "Use a nonvanishing inert place of residue characteristic $p\\ge5$ outside the level with $p\\nmid T_u$, a used tuple, trivial level-zero stabilizer as specified and $2r_G\\le k$."
+  ],
+  "lean": [
+    {
+      "name": "GlobalTheory.TwV.site_cmpLite_siteAdm",
+      "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/JointSiteChainComparedCarriesAdmittedSystem.lean",
+      "line0": 77,
+      "line1": 89,
+      "sha256": "08d9eab7a3e5044cdc81a12b03b7cac299f9d7db9a9da3c03229557db2e42dcd",
+      "dominated": 30579,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/P046_round4.md",
+      "section": "P046 · Simultaneous local comparison and admission on the lattice chain",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "7.23 (pn:P046)",
+      "pages": [
+        88,
+        88
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/P046.tex",
+      "section": "pn:P046",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [
+    "Z4.2.02",
+    "Z42-SITES"
+  ],
+  "size_pages": 2,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "P046",
+  "indexed_members": [
+    "P059",
+    "P060",
+    "P080"
+  ],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "simultaneous-local-comparison-and-admission-on-the-lattice-chain",
+  "aliases": [
+    "Comparison and admission on the same chain",
+    "site_cmpLite_siteAdm",
+    "P046 Simultaneous local comparison and admission on the lattice chain"
+  ],
+  "background": [
+    "Lubin–Tate theory",
+    "Theta kernels",
+    "Lattice stabilizers"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "7.23 (pn:P046)",
+    "pages": [
+      88,
+      88
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "Z4.2.02": "graph",
+    "Z42-SITES": "graph"
+  },
+  "review_status": "pending_review",
+  "summary": "One chain carries both the stated semilinear comparisons and an admitted local system. The inert prime, tuple, labels and comparison data are fixed in advance, so later valuation calculations can use both conclusions on that same chain."
+}

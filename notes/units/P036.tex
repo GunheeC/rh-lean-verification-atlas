@@ -1,0 +1,78 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit P036. Local manuscript v3, item 7.13, heading on printed PDF p. 80.
+% UpperTheory.V.ZK.sCount
+% paper2/inputs_one.tex:556–621. Verbatim excerpt; SHA-256 2215db3a6e073d7ecfacfd3e404c10d7cc6ec97ff3e0e88c5e34a08c539418d2.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+\noindent\nolinkurl{UpperTheory.V.ZK.sCount} --- in-repo constant (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/SelmerOrderCounts.lean:16--111}); not compared.\par
+% End of atlas edition annotation.
+
+\begin{formalstatement}[The finite count and the loss in the exponent]\label{pn:P036}
+Take a layer \(F/L\) with \(L\) totally complex, \(E\ge1\),
+\(a=\kappa^E\), and \(b,B\in\mathbb N\). Suppose every finite family
+of elements of \(F^\times\) satisfying the divisor difference condition,
+with pairwise distinct classes of \(N_a(\alpha)^{\ell^b}\) modulo
+\(q\)-th powers, has size at most \(B\). Let \(\mathcal H_q\) consist
+of the functions on the prime ideals of \(F\) with values in
+\(\mathbb Z/q\) that kill principal divisors and satisfy
+\(\phi(\gamma^{-1}P)=a\phi(P)\). Writing \(v=v_\ell(E)\) and
+\(g=2[L:\mathbb Q]+\lfloor\log_2 h_L\rfloor+2\), we have
+\[
+ \mathcal H_q\text{ finite},\qquad
+ |\mathcal H_q|q^{r_2(L)}
+       \le B\,\ell^{(b+v)g+c+v}.
+\]
+\end{formalstatement}\nodestatus{P036}
+\begin{outline}
+Use the finite quotient calculation of Blueprint Z2.K5~\bploc{lem:P-r3-k5}. Write \(Y=F^\times\)
+additively, \(I\) for its divisor group, \(\mu\) for its roots of unity,
+\(\partial:Y\to I\) for the divisor, and \(\delta=\gamma^{-1}-a\).
+Form
+\[
+ W=\partial^{-1}(\delta I)/(\delta Y+\mu),\quad
+ Q_{\rm u}=\ker\partial/(\delta\ker\partial+\mu),\quad
+ Q_{\rm cl}=\operatorname{Cl}(F)/\delta\operatorname{Cl}(F).
+\]
+Since \(\delta\) is injective on the free divisor group (\(a^h>1\)),
+\(\partial y=\delta d\) determines \(d\) uniquely. Taking its ideal
+class maps \(W\) onto the \(\delta\)-kernel of the finite class group,
+with kernel \(Q_{\rm u}\). Thus \(|W|=|Q_{\rm u}||Q_{\rm cl}|\).
+Divisor characters factor through \(Q_{\rm cl}\), with at most its
+\(\ell\)-part many characters. The unit index is calculated on the
+logarithmic unit lattice. On all archimedean coordinates the
+permutation has \(r_2(L)\) cycles of length \(h\); removing the
+constant direction divides the determinant by \(a-1\). Hence
+\[
+ |Q_{\rm u}|(a-1)=(a^h-1)^{r_2(L)},\qquad
+ v_\ell(a-1)=c+v,\quad v_\ell(a^h-1)=\nu+v.
+\]
+
+The powered twisted norm induces \(f:W\to Y/(qY+\mu)\).
+Writing \(a^h-1=q\,m_0\ell^v\) with \(\ell\nmid m_0\), telescoping
+the norm times \(\delta\) shows that the kernel of \(f\) is killed
+by \(m_0\ell^{b+v}\). A representative for each image class gives
+a family counted by \(B\). The initial torsion satisfies
+\(\lvert W[\ell]\rvert\le\ell^g\): the divisor calculation sends it
+injectively into invariant classes modulo \(\ell Y+\mu\) with
+\(\ell\)-divisible valuations. Cyclic Hilbert 90 reduces these to
+at most \(\ell^2\) families of base-field classes with valuations
+divisible away from \(\ell\). The primes above \(\ell\), the units
+modulo powers and the class group of \(L\) give the other
+\(2[L:\mathbb Q]+\lfloor\log_2h_L\rfloor\) powers of \(\ell\).
+Multiplication by \(\ell\) on successive torsion layers of \(W\)
+therefore bounds the \(\ell\)-part of \(\lvert\ker f\rvert\) by
+\(\ell^{(b+v)g}\). Multiplying the class-character bound by
+\(q^{r_2(L)}\), the unit identity gives at most the \(\ell\)-part of
+\(|W|\) times \(\ell^{c+v}\), proving the assertion.
+\end{outline}
+
+The classical inputs in this adaptation are cyclic Hilbert 90 and
+the unit and class-number theorems. The argument above identifies the
+twisted unit determinant, bounds the kernel of the powered norm, and
+combines their exponents. See J.~S.~Milne, \emph{Class Field Theory},
+II, Corollary~1.23, and \emph{Algebraic Number Theory}, Theorems~4.4
+and 5.1. \cite{r21-cft}\quad
+\cite{r21-ant}

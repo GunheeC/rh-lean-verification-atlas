@@ -1,0 +1,180 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "T19",
+  "edition_sha256": "3e1f4d9bdfeb61a7711d83b8284868afa9d622fc5324102af24c290b7a99d005",
+  "note_sha256": "9e643c82826e5dffa45c24d896c6b87def3c9e842c37359ff8dea0a8969c707f",
+  "statement_sha256": "f519a56b592e4337988e2781c9b25f25cc3a88818b851f5da173fe32fba8fc74",
+  "sources": [
+    {
+      "path": "notes/units/T19_round4.md",
+      "sha256": "9e643c82826e5dffa45c24d896c6b87def3c9e842c37359ff8dea0a8969c707f"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The resolution wrapper obtains its tower from the repository's functorial characteristic-zero supplier.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: functorial resolution rule"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.LiteratureTheorems.resolution_char_zero_of_literature",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+          "line0": 557,
+          "line1": 558
+        },
+        {
+          "name": "PositivityTheory.Resplug.ResolutionBlowup.resolutionCharZero",
+          "file": "Development/WeilBound/CoreStatements/ResolutionCharZero/ResolutionCharZero.lean",
+          "line0": 6,
+          "line1": 7
+        },
+        {
+          "name": "PositivityTheory.Resplug.ResolutionBlowup.resolutionCharZero_of_top",
+          "file": "Development/WeilBound/CoreStatements/ResolutionCharZero/ResolutionCharZeroOfTop.lean",
+          "line0": 40,
+          "line1": 46
+        }
+      ],
+      "source": "notes/units/T19_round4.md",
+      "anchor": "The outer declaration accepts an open-literature record",
+      "source_lines": [
+        24,
+        24
+      ],
+      "claim_sha256": "08d757b5ede42086ecd3b2667bc2a96fa1ebbcecc523c52fd1eced809ff08cd1",
+      "passage_sha256": "4f6928223534dbcff20cf827201f1f088c23b69181e8e5e33d2f227056909620",
+      "sha256": "8239e378eaa242bf608785f09aee37fc06ca426e25dba1ce7e4450b5515e5b9c",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The map at stage zero, an isomorphism, represents a blowup of the unit ideal.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "standard: universal property of blowup"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.Resplug.ResolutionBlowup.blowup_top_of_iso",
+          "file": "Development/WeilBound/CoreStatements/ResolutionCharZero/ResolutionCharZeroOfTop.lean",
+          "line0": 13,
+          "line1": 19
+        },
+        {
+          "name": "PositivityTheory.Resplug.ResolutionBlowup.structMap_zero",
+          "file": "Development/WeilBound/CoreStatements/ResolutionCharZero/ResolutionCharZeroOfTop.lean",
+          "line0": 21,
+          "line1": 23
+        }
+      ],
+      "source": "notes/units/T19_round4.md",
+      "anchor": "The initial object of the tower is isomorphic to the original scheme",
+      "source_lines": [
+        28,
+        28
+      ],
+      "claim_sha256": "f5e7819c4fae8147ff9dd977fd318766f35634b3c22d0859b2205b43d77b7831",
+      "passage_sha256": "ef8a71f0be88b5629f72b601c63476510d482366b287cfab5231da279605005e",
+      "sha256": "f9cad7e36c4238a3bb7652203c2956c279fa26f2dc912f26aba8c015fbd110fc",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Factoring the structural map at a successor stage extends the composite blowup witness by that stage's center.",
+      "kind": "assembly",
+      "uses": [
+        "S2",
+        "input: recorded blowup centers"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.Resplug.ResolutionBlowup.isBlowupSeq_structMap",
+          "file": "Development/WeilBound/CoreStatements/ResolutionCharZero/ResolutionCharZeroOfTop.lean",
+          "line0": 25,
+          "line1": 34
+        },
+        {
+          "name": "PositivityTheory.Resplug.ResolutionBlowup.isBlowupSeq_topMap",
+          "file": "Development/WeilBound/CoreStatements/ResolutionCharZero/ResolutionCharZeroOfTop.lean",
+          "line0": 36,
+          "line1": 38
+        }
+      ],
+      "source": "notes/units/T19_round4.md",
+      "anchor": "At stage $i+1$, the bound $i+1\\leq\\text{length}$ puts $i$ strictly below the terminal inde",
+      "source_lines": [
+        32,
+        32
+      ],
+      "claim_sha256": "97f503269de9cc00276643c6aab5d266e33444da9088f700860f5b068c08bce4",
+      "passage_sha256": "51110f41ff61f1fd937d22a7232bf86728bebf327010962f86ccff20e14427b5",
+      "sha256": "fa1d6c0255ba5b8aec54539be53a705f195f318fda24884d610ebb8b13e8a513",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The top map of the selected tower satisfies smoothness, the isomorphism on the smooth locus and the prescribed crossing condition simultaneously.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "S3"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.Resplug.ResolutionBlowup.resolutionCharZero_of_top",
+          "file": "Development/WeilBound/CoreStatements/ResolutionCharZero/ResolutionCharZeroOfTop.lean",
+          "line0": 40,
+          "line1": 46
+        }
+      ],
+      "source": "notes/units/T19_round4.md",
+      "anchor": "Specialize $R$ to the given $k$-scheme and structural morphism",
+      "source_lines": [
+        36,
+        36
+      ],
+      "claim_sha256": "f13239daf69ffd36e1693c9f50a07aa67bfc96d74627f398ca7a5e3a3eea3c46",
+      "passage_sha256": "1ad606e607cc3d2bbb7fed10d397bfdda0ff3fa2aafd93d1a86cff6ed56fc612",
+      "sha256": "a0e0e23202e65b53105bb3e0aa89c5892c0c08bba3934a60012772c102b1ba0a",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "265cf12500f02c07e44f9dfebbaa23c01e1e50e19932ff3e676d210cbddb4a77",
+      "sources": [
+        {
+          "path": "notes/units/T19_round4.md",
+          "sha256": "86a35d8444c788a8a89c1952163259bd8073ff95e5618bc7182d7cbf448c5c51"
+        }
+      ],
+      "statement_sha256": "0040c1fac5bf2eae4be4dbe952d29270db9bb80d774ea02dd6be973824dac5b8",
+      "steps": {
+        "S1": "8239e378eaa242bf608785f09aee37fc06ca426e25dba1ce7e4450b5515e5b9c",
+        "S2": "f9cad7e36c4238a3bb7652203c2956c279fa26f2dc912f26aba8c015fbd110fc",
+        "S3": "fa1d6c0255ba5b8aec54539be53a705f195f318fda24884d610ebb8b13e8a513",
+        "S4": "a0e0e23202e65b53105bb3e0aa89c5892c0c08bba3934a60012772c102b1ba0a"
+      },
+      "step_texts": {
+        "S1": "The resolution wrapper obtains its tower from the repository's functorial characteristic-zero supplier.",
+        "S2": "The map at stage zero, an isomorphism, represents a blowup of the unit ideal.",
+        "S3": "Factoring the structural map at a successor stage extends the composite blowup witness by that stage's center.",
+        "S4": "The top map of the selected tower satisfies smoothness, the isomorphism on the smooth locus and the prescribed crossing condition simultaneously."
+      },
+      "step_passages": {
+        "S1": "4f6928223534dbcff20cf827201f1f088c23b69181e8e5e33d2f227056909620",
+        "S2": "ef8a71f0be88b5629f72b601c63476510d482366b287cfab5231da279605005e",
+        "S3": "51110f41ff61f1fd937d22a7232bf86728bebf327010962f86ccff20e14427b5",
+        "S4": "1ad606e607cc3d2bbb7fed10d397bfdda0ff3fa2aafd93d1a86cff6ed56fc612"
+      }
+    }
+  ]
+}

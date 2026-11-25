@@ -1,0 +1,243 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "Z1.4",
+  "edition_sha256": "8a05991a13598def377acb26f854593dbd2b9efc030920499c6b460d3fc020c0",
+  "note_sha256": "1d61a322ac165f4b718e8b155099a25171d37b53056340759a181237720e6ab2",
+  "statement_sha256": "0090464c3e0dd3339e6f461d80c12109e684e1680410936099768badb3e79354",
+  "sources": [
+    {
+      "path": "notes/blueprint/Z1.4.tex",
+      "sha256": "1d61a322ac165f4b718e8b155099a25171d37b53056340759a181237720e6ab2"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "After inverting the uniformizer the linear terms in the degree minus one chart identify the cotangent space and determine its rank.",
+      "kind": "assembly",
+      "uses": [
+        "input: graded chart hypotheses"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Alg.M.sm_holds",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/SmHolds.lean",
+          "line0": 55,
+          "line1": 112
+        }
+      ],
+      "source": "notes/blueprint/Z1.4.tex",
+      "anchor": "$B=A_0$ and $K$ the algebraically closed valuation field. Passing to",
+      "source_lines": [
+        263,
+        290
+      ],
+      "claim_sha256": "a7e99182003b17feca651fafee200a865e7f539d62023ff2f2336378dba5b490",
+      "passage_sha256": "91443bafdcb7b802b63fc75b7720c3629a7349545bfb45236f85821a65a40604",
+      "sha256": "e459ede75e014e606f7ced3da96d6333e74d7f2f82a72e3e011186b690734bbf",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Independent weight-zero linear terms allow the weight-zero parameters to be eliminated over the fraction field.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "standard: invertible linear change of variables"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Alg.M.cut_holds",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/CutHolds.lean",
+          "line0": 101,
+          "line1": 121
+        }
+      ],
+      "source": "notes/blueprint/Z1.4.tex",
+      "anchor": "Neither their span nor their ideal changes. The independent linear",
+      "source_lines": [
+        263,
+        290
+      ],
+      "claim_sha256": "5e88b8d77c2f44b1edea6f48fdcc6fd64967aab59db9e07f191576decb2906ee",
+      "passage_sha256": "91443bafdcb7b802b63fc75b7720c3629a7349545bfb45236f85821a65a40604",
+      "sha256": "824ee2ff8c5ad6fd2abe43ad99fbf030b38841271a3d1b8b3c7f54f594d0e3cf",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The intersection construction uses three graded pieces, including the square of the distinguished generator, for the given orbit cover.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: finite cover by two-sided orbit representatives"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Alg.M.mN",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/ToDegInjective.lean",
+          "line0": 187,
+          "line1": 188
+        }
+      ],
+      "source": "notes/blueprint/Z1.4.tex",
+      "anchor": "The following computation applies to \\emph{any} finite orbit cover $T$.",
+      "source_lines": [
+        309,
+        324
+      ],
+      "claim_sha256": "4617c76703d294c8594da41d1f4f814a8084f1cfbd580382255dc05e93cca9cd",
+      "passage_sha256": "5d313522c83e0335ae8f1b4dac9c17625a345f98d13c25486e0e4ae92750ef17",
+      "sha256": "37b0cd1ad5a749e9b070ba00c6d8fb9e7a4959a53b2264c268459e2c10268594",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "Additivity of section-kernel and quotient Euler differences permits the intersection count to be reduced along exact sequences.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "standard: exact sequences of finite modules"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.MainNotions.V.Pf.V2.Calc.euler_additivity_of_rules",
+          "file": "Formalism/SharpRestriction/ValuationFrobeniusEpsilon/LeastPrimeTwists/QuotientShiftIrreducible/NoetherianQuotientCalc/EulerAdditivityExactSequence.lean",
+          "line0": 386,
+          "line1": 425
+        }
+      ],
+      "source": "notes/blueprint/Z1.4.tex",
+      "anchor": "\\emph{Finiteness and exact sequences.} The finite axis pieces generate $R$ as a $B$-algebra, so $R$ is Noetherian. Choose finite homogeneous gene",
+      "source_lines": [
+        543,
+        543
+      ],
+      "claim_sha256": "e452376315a7e51c55c87cbf2cf330b6d3c4d84f6c55e75b731573600a375079",
+      "passage_sha256": "9d3fac557c701fd1dfb1a67bfb261aca1f43a76a0c2c3b22ecff2138708971dd",
+      "sha256": "9d957784f125df14dd891634b165f5822cf181ad0d85aea7a7b155e902e1a19c",
+      "ai_review": []
+    },
+    {
+      "id": "S5",
+      "status": "active",
+      "claim": "For multiplication by the horizontal element the difference between cokernel and kernel lengths adds along the filtration.",
+      "kind": "computation",
+      "uses": [
+        "standard: snake lemma"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Alg.M.th_holds",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/HerbrandFinLen.lean",
+          "line0": 226,
+          "line1": 245
+        }
+      ],
+      "source": "notes/blueprint/Z1.4.tex",
+      "anchor": "The snake sequence for multiplication by $a$ on a short exact sequence bounds the middle kernel and cokernel lengths by the sums of the correspon",
+      "source_lines": [
+        583,
+        589
+      ],
+      "claim_sha256": "e0584cd5a72f91b497a722108abf3fead527bc1a0366a1e4eeea74c3442b3813",
+      "passage_sha256": "fc80670d9bf0524d932290e045929eb7555809e517a017f87db4deb6bbd1d6bb",
+      "sha256": "f94e5dca5ecbfcfc0a7d2f0cb1655e421186c5884d153abb5cb773d41730d148",
+      "ai_review": []
+    },
+    {
+      "id": "S6",
+      "status": "active",
+      "claim": "For every finite two-sided orbit cover the cotangent length is bounded by twice the sum of valuations of the horizontal element.",
+      "kind": "inequality",
+      "uses": [
+        "S1",
+        "S3",
+        "S4",
+        "S5",
+        "input: graded hypotheses M1 through M5"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Alg.M.main_holds",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/MainCotSpan.lean",
+          "line0": 32,
+          "line1": 70
+        }
+      ],
+      "source": "notes/blueprint/Z1.4.tex",
+      "anchor": "There is a finite set $T$ of two-sided points of $A/I$ meeting every",
+      "source_lines": [
+        724,
+        775
+      ],
+      "claim_sha256": "516c2d644af515d7b8d5ff06baae7008065616e9dea7a44a6942822fa0a4b3d4",
+      "passage_sha256": "f96e4b8251d166f71495c0323343c120f730ace8811fcae22aa85710fd6487ed",
+      "sha256": "22db56436878e9a9a17a3e610006d695b9cfcc9616a74f09dd0d265348ad4164",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "179111d93aa0360cd19e1719d83077f05a455ec04430cacd323cc8f2a13daa4b",
+      "sources": [
+        {
+          "path": "notes/blueprint/Z1.4.tex",
+          "sha256": "d5255b83dd8eb79ff7d8d37354e41126215ed40fccc244b85b3e2a290c4ed349"
+        }
+      ],
+      "steps": {
+        "S1": "8258358a9a1704ffda976052efe0bd87aa8c2d3820e77b30f1627fc2593fe5fa",
+        "S2": "9c1b28c204b14ed925ee91df60d5cc1e4f327df4beed278a190618bc802dda17",
+        "S3": "37b0cd1ad5a749e9b070ba00c6d8fb9e7a4959a53b2264c268459e2c10268594",
+        "S4": "2db267c221ea66d9853c374576353df104a3d8282a5aa28e49260eaeae03e848",
+        "S5": "a833e45c582d72c347433f1ab707ae0e0c9d4f5f1e88f00dff85c474b6177d8e",
+        "S6": "22db56436878e9a9a17a3e610006d695b9cfcc9616a74f09dd0d265348ad4164"
+      },
+      "step_texts": {
+        "S1": "After inverting the uniformizer the linear terms in the degree minus one chart identify the cotangent space and determine its rank.",
+        "S2": "Independent weight-zero linear terms allow the weight-zero parameters to be eliminated over the fraction field.",
+        "S3": "The intersection construction uses three graded pieces, including the square of the distinguished generator, for the given orbit cover.",
+        "S4": "Additivity of section-kernel and quotient Euler differences permits the intersection count to be reduced along exact sequences.",
+        "S5": "For multiplication by the horizontal element the difference between cokernel and kernel lengths adds along the filtration.",
+        "S6": "For every finite two-sided orbit cover the cotangent length is bounded by twice the sum of valuations of the horizontal element."
+      }
+    },
+    {
+      "edition_sha256": "0909dfde0b6975ecb08447b81843c1cceab58e7ba06a6b617017303aebb5fda5",
+      "sources": [
+        {
+          "path": "notes/blueprint/Z1.4.tex",
+          "sha256": "d5255b83dd8eb79ff7d8d37354e41126215ed40fccc244b85b3e2a290c4ed349"
+        }
+      ],
+      "statement_sha256": "0090464c3e0dd3339e6f461d80c12109e684e1680410936099768badb3e79354",
+      "steps": {
+        "S1": "e459ede75e014e606f7ced3da96d6333e74d7f2f82a72e3e011186b690734bbf",
+        "S2": "824ee2ff8c5ad6fd2abe43ad99fbf030b38841271a3d1b8b3c7f54f594d0e3cf",
+        "S3": "37b0cd1ad5a749e9b070ba00c6d8fb9e7a4959a53b2264c268459e2c10268594",
+        "S4": "9d957784f125df14dd891634b165f5822cf181ad0d85aea7a7b155e902e1a19c",
+        "S5": "f94e5dca5ecbfcfc0a7d2f0cb1655e421186c5884d153abb5cb773d41730d148",
+        "S6": "22db56436878e9a9a17a3e610006d695b9cfcc9616a74f09dd0d265348ad4164"
+      },
+      "step_texts": {
+        "S1": "After inverting the uniformizer the linear terms in the degree minus one chart identify the cotangent space and determine its rank.",
+        "S2": "Independent weight-zero linear terms allow the weight-zero parameters to be eliminated over the fraction field.",
+        "S3": "The intersection construction uses three graded pieces, including the square of the distinguished generator, for the given orbit cover.",
+        "S4": "Additivity of section-kernel and quotient Euler differences permits the intersection count to be reduced along exact sequences.",
+        "S5": "For multiplication by the horizontal element the difference between cokernel and kernel lengths adds along the filtration.",
+        "S6": "For every finite two-sided orbit cover the cotangent length is bounded by twice the sum of valuations of the horizontal element."
+      },
+      "step_passages": {
+        "S1": "91443bafdcb7b802b63fc75b7720c3629a7349545bfb45236f85821a65a40604",
+        "S2": "91443bafdcb7b802b63fc75b7720c3629a7349545bfb45236f85821a65a40604",
+        "S3": "5d313522c83e0335ae8f1b4dac9c17625a345f98d13c25486e0e4ae92750ef17",
+        "S4": "9d3fac557c701fd1dfb1a67bfb261aca1f43a76a0c2c3b22ecff2138708971dd",
+        "S5": "fc80670d9bf0524d932290e045929eb7555809e517a017f87db4deb6bbd1d6bb",
+        "S6": "f96e4b8251d166f71495c0323343c120f730ace8811fcae22aa85710fd6487ed"
+      }
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D484",
+  "title": "The spectral link from the tuple-size bound",
+  "track": {
+    "primary": "theta",
+    "secondary": []
+  },
+  "statement": "For the supplied spectral and real-family selections, decay and transport data, type and volume records, uniform constant c30 and large-scale hypotheses, the tuple-size bound implies the spectral link with C0=3 on D3(3,A). This controls off-diagonal Hilbert–Schmidt norms, diagonal deviation and total dimension under the prescribed dimension-ratio window.\n\\[\n\\mathrm{TuSize}(F)\\ \\Longrightarrow\\ \\mathrm{LinkS}(F,3).\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Use the spectral and real selections, decay, transport, type, volume and counting data in the pinned assertion.",
+    "On the indicated enriched family class assume the tuple-size bound."
+  ],
+  "lean": [
+    {
+      "name": "GlobalTheory.Top.link_alt_alt_bis",
+      "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkAltAltBis.lean",
+      "line0": 16,
+      "line1": 48,
+      "sha256": "18ce175af24874aac2c4acd94a976c31658fd278b5f3fa172250f3c230021bf2",
+      "dominated": 1314,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/D484_round4.md",
+      "section": "D484 · The spectral link from the tuple-size bound",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "G.504 (decomp:D484)",
+      "pages": [
+        282,
+        282
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D484.tex",
+      "section": "decomp:D484",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": 2,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "D484",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "the-spectral-link-from-the-tuple-size-bound",
+  "aliases": [
+    "link_alt_alt_bis",
+    "D484 The spectral link from the tuple-size bound"
+  ],
+  "background": [
+    "Hilbert–Schmidt norms",
+    "Spectral counting for automorphic forms"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.504 (decomp:D484)",
+    "pages": [
+      282,
+      282
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "review_status": "pending_review",
+  "summary": "A tuple-size estimate implies the spectral-link inequalities with constant three on the specified family class. The implication also needs the chosen spectral rows, their local ties, counting, volume and main-term estimates."
+}

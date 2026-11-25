@@ -1,0 +1,4021 @@
+{
+  "anchors": {
+    "ChowFormCompatibility.chow_form_hyperplane_section": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+      "weight": 0
+    },
+    "ChowFormHeightComparison₂.chow_form_height_comparison": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+      "weight": 30511
+    },
+    "CompanionTheory.WaveGrid.wave_bessel_period_threshold": {
+      "parent": "CompanionTheory.WaveGrid.weighted_bound_rotated_uniform",
+      "weight": 16122
+    },
+    "CompanionTheory.WaveGrid.weighted_bound_rotated_uniform": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 20584
+    },
+    "CrystallineSemistableComparison.B.P.zar": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 467
+    },
+    "CrystallineSemistableComparison.B.compat": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 211
+    },
+    "CrystallineSemistableComparison.B.global_of": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 735
+    },
+    "CrystallineSemistableComparison.B.local_of": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 7308
+    },
+    "CrystallineSemistableComparison.D.out": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 4462
+    },
+    "CrystallineSemistableComparison.E.Main.etSpec": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 211
+    },
+    "CrystallineSemistableComparison.E.Main.etale_chern_class_eq_kummer_class": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 301
+    },
+    "CrystallineSemistableComparison.E.Main.fCup": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 307
+    },
+    "CrystallineSemistableComparison.E.Main.fKum": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 699
+    },
+    "CrystallineSemistableComparison.E.Main.resGood": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 214
+    },
+    "CrystallineSemistableComparison.GlueB'.atlas_of": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 205
+    },
+    "CrystallineSemistableComparison.HT.levSys_ex": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 2668
+    },
+    "CrystallineSemistableComparison.P.dc_map_col": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 401
+    },
+    "CrystallineSemistableComparison.P.prism": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 267
+    },
+    "CrystallineSemistableComparison.P.rel": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 206
+    },
+    "CrystallineSemistableComparison.Pb.LsG.ls_seq": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 2935
+    },
+    "CrystallineSemistableComparison.Pb.afgA": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 458
+    },
+    "CrystallineSemistableComparison.Pb.bcOn_false": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 746
+    },
+    "CrystallineSemistableComparison.Pb.fac_ex": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 1819
+    },
+    "CrystallineSemistableComparison.Pb.finO'": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 255
+    },
+    "CrystallineSemistableComparison.Pb.gr_aff_pf": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 791
+    },
+    "CrystallineSemistableComparison.Pb.isFirstChernDeRham_exists": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 260
+    },
+    "CrystallineSemistableComparison.Pb.isO1_exists": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 322
+    },
+    "CrystallineSemistableComparison.Pb.k_iso_pf": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 337
+    },
+    "CrystallineSemistableComparison.Pb.loc_gr": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 511
+    },
+    "CrystallineSemistableComparison.Pb.pSeam": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 4111
+    },
+    "CrystallineSemistableComparison.Pb.powK_ne_zero": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 10194
+    },
+    "CrystallineSemistableComparison.Pb.smooth_model_finite_length_link": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 1162
+    },
+    "CrystallineSemistableComparison.RL.step_comp": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 318
+    },
+    "CrystallineSemistableComparison.comp": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 801
+    },
+    "CrystallineSemistableComparison.cstSmooth_of_side": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 7011
+    },
+    "CrystallineSemistableComparison.geo": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 344
+    },
+    "Deduction.CharacterBalanceMoves.core": {
+      "parent": "Deduction.ch_core",
+      "weight": 1161
+    },
+    "Deduction.CharacterBalanceMoves.one_char": {
+      "parent": "Deduction.ch_core",
+      "weight": 105
+    },
+    "Deduction.CharacterBalanceMoves.sum_vv": {
+      "parent": "Deduction.ch_core",
+      "weight": 14
+    },
+    "Deduction.ch_balance": {
+      "parent": "Deduction.CharacterBalanceMoves.core",
+      "weight": 582
+    },
+    "Deduction.ch_core": {
+      "parent": "UpperTheory.Comparison₂.core_gm",
+      "weight": 1886
+    },
+    "Deduction.ch_top": {
+      "parent": "UpperTheory.Comparison₂.core_gm",
+      "weight": 675
+    },
+    "Deduction.ch_top_main_eq": {
+      "parent": "Deduction.ch_top",
+      "weight": 25
+    },
+    "Deduction.landau_window": {
+      "parent": "Deduction.zeroFree_of_rpow_window",
+      "weight": 863
+    },
+    "Deduction.zeroFree_of_rpow_window": {
+      "parent": "UpperTheory.Comparison₂.formB",
+      "weight": 1958
+    },
+    "Formalism.BasicNotions.factLpF": {
+      "parent": "GlobalTheory.Fc.ClassTwoEntries.divisionSecondComplement_constructedPoints",
+      "weight": 45
+    },
+    "Formalism.DivisionValues.dual_lattice_measure": {
+      "parent": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+      "weight": 41
+    },
+    "Formalism.FourierDecayAlt.P.CutSE.actual_compact_theorem": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 16589
+    },
+    "Formalism.HC.ChebyshevInequalityOnWindows": {
+      "parent": "UpperTheory.Top.zeroFreeAll_of_topG",
+      "weight": 3
+    },
+    "Formalism.HC.zeroFreeOn_of_tiedWin_cyc": {
+      "parent": "UpperTheory.Top.zeroFreeAll_of_topG",
+      "weight": 58
+    },
+    "Formalism.HN.DualPolygon.ht_dual": {
+      "parent": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+      "weight": 9
+    },
+    "Formalism.HN.FrameLA1": {
+      "parent": "Formalism.HN.frame_theorem_sharp",
+      "weight": 14
+    },
+    "Formalism.HN.TheoremFSharp": {
+      "parent": "GlobalTheory.Top.link_gl",
+      "weight": 36
+    },
+    "Formalism.HN.frame_theorem_sharp": {
+      "parent": "GlobalTheory.Top.link_gl",
+      "weight": 999
+    },
+    "Formalism.HN.height_gram_determinant": {
+      "parent": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+      "weight": 265
+    },
+    "Formalism.HN.htGram_of": {
+      "parent": "Formalism.HN.height_gram_determinant",
+      "weight": 264
+    },
+    "Formalism.HN.place_lattice_structure": {
+      "parent": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+      "weight": 188
+    },
+    "Formalism.HermitianLattices.Ext.L3.liStat": {
+      "parent": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+      "weight": 8576
+    },
+    "Formalism.HermitianLattices.Ext.L3.massConst_succ": {
+      "parent": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+      "weight": 5609
+    },
+    "Formalism.HermitianLattices.Ext.PrimesInProgressions.pnt_progressions_relative_weak_holds": {
+      "parent": "QH.pairEx",
+      "weight": 11065
+    },
+    "Formalism.IndefR.CxPass.NearConstantMultiplicities": {
+      "parent": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+      "weight": 2
+    },
+    "Formalism.InvariantFactorPaths.G7.BetaIsG": {
+      "parent": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+      "weight": 6
+    },
+    "Formalism.InvariantFactorPaths.G7.Top.betaIsG": {
+      "parent": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+      "weight": 2090
+    },
+    "Formalism.InvariantFactorPaths.G7.Top.twoSums": {
+      "parent": "GlobalTheory.KerGaussA.kvalGe_gainA",
+      "weight": 195
+    },
+    "Formalism.InvariantFactorPaths.G7.TwoSums": {
+      "parent": "GlobalTheory.KerGaussA.kvalGe_gainA",
+      "weight": 8
+    },
+    "Formalism.L2.Col.Br.xiBr": {
+      "parent": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+      "weight": 3
+    },
+    "Formalism.L2.Col.decoPtSurj_of": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 246
+    },
+    "Formalism.L2.DIV.closed_linkDIVt_of_closed_bridge_kernel": {
+      "parent": "UpperTheory.Top.shape_closed_link_n_of_green",
+      "weight": 5437
+    },
+    "Formalism.L2.G.Adm2InU.admissible_family_of_inclusion": {
+      "parent": "GlobalTheory.Top.closed_family_admissible_twist_link_alt",
+      "weight": 658
+    },
+    "Formalism.L2.G.Pend.LTIso": {
+      "parent": "GlobalTheory.Svd.servH_row_of_artin",
+      "weight": 4
+    },
+    "Formalism.L2.G.ServT.closed_servF_of_servT_of_dGamSize": {
+      "parent": "GlobalTheory.Top.closed_family_admissible_twist_link_alt",
+      "weight": 20172
+    },
+    "Formalism.L2.G.linkG_concrete5": {
+      "parent": "UpperTheory.Top.shape_closed_link_n_of_green",
+      "weight": 76612
+    },
+    "Formalism.L2.G.linkG_concrete_noKer": {
+      "parent": "Formalism.L2.G.linkG_concrete5",
+      "weight": 30867
+    },
+    "Formalism.L2.G.link_of_local_closed": {
+      "parent": "Formalism.L2.G.linkG_concrete_noKer",
+      "weight": 30383
+    },
+    "Formalism.L2.G.loc_proved": {
+      "parent": "Formalism.L2.G.linkG_concrete5",
+      "weight": 28356
+    },
+    "Formalism.L2.GlobalTheoryTheory.Comp.glob_companion": {
+      "parent": "GlobalTheory.TwV.site_cmpLite_siteAdm",
+      "weight": 26
+    },
+    "Formalism.L2.GlobalTheoryTheory.Comp.glob_dl": {
+      "parent": "GlobalTheory.Fc.AllAtMemberStage0.allRows_of_open0_alt",
+      "weight": 9
+    },
+    "Formalism.L2.GlobalTheoryTheory.Comp.glob_one": {
+      "parent": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+      "weight": 2
+    },
+    "Formalism.L2.GlobalTheoryTheory.Comp.mem_hat_glob": {
+      "parent": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+      "weight": 3
+    },
+    "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.AR.div_okc": {
+      "parent": "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.arithmetic_hermitian_form",
+      "weight": 218
+    },
+    "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.La_index_finite": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 52
+    },
+    "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.La_index_ne_zero": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 7
+    },
+    "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.semiChar_of_HfInt": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 34
+    },
+    "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.SC.char_eq": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 158
+    },
+    "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.SD.alg_step": {
+      "parent": "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.SelfDualRec_of_curve",
+      "weight": 145
+    },
+    "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.SD.coord": {
+      "parent": "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.SelfDualRec_of_curve",
+      "weight": 78
+    },
+    "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.SO.down": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 23
+    },
+    "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.SO.stdOK": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 77
+    },
+    "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.SO.up": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 72
+    },
+    "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.SelfDualRec_of_curve": {
+      "parent": "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.self_dual_lattice",
+      "weight": 336
+    },
+    "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.arithmetic_hermitian_form": {
+      "parent": "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.hermitian_form_integral_values",
+      "weight": 633
+    },
+    "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.base_linkage_nonempty": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 14
+    },
+    "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.curve_lattice_self_dual": {
+      "parent": "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.self_dual_lattice",
+      "weight": 195
+    },
+    "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.hermitian_form_integral_values": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 702
+    },
+    "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.hermitian_pairing_integral": {
+      "parent": "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.arithmetic_hermitian_form",
+      "weight": 224
+    },
+    "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.self_dual_lattice": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 536
+    },
+    "Formalism.L2.Ker.Base.isomOK": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 84
+    },
+    "Formalism.L2.Ker.Base.lat0OK": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 2
+    },
+    "Formalism.L2.Ker.Base.latAll": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 35
+    },
+    "Formalism.L2.Ker.Base.thMoved_ne_zero": {
+      "parent": "Formalism.L2.Ker.Base.vec_mem_ne",
+      "weight": 25
+    },
+    "Formalism.L2.Ker.Base.vec_mem_ne": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 52
+    },
+    "Formalism.L2.Ker.finite_index_of_fg": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 51
+    },
+    "Formalism.L2.Ker.first_kernel_law_reading": {
+      "parent": "GlobalTheory.Ggeo.KerComb.comb_of_tied",
+      "weight": 50
+    },
+    "Formalism.L2.Ker.kThetaVector": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 4
+    },
+    "Formalism.L2.Ker.kernel_combination_form": {
+      "parent": "GlobalTheory.Svd.servH_row_of_artin",
+      "weight": 47
+    },
+    "Formalism.L2.Ker.lattice_integral_of_facts": {
+      "parent": "GlobalTheory.Svd.servH_row_of_artin",
+      "weight": 10
+    },
+    "Formalism.L2.Ker.push_opU": {
+      "parent": "Formalism.L2.Ker.reading_is_kernel",
+      "weight": 10
+    },
+    "Formalism.L2.Ker.reading_is_kernel": {
+      "parent": "Formalism.L2.Ker.first_kernel_law_reading",
+      "weight": 41
+    },
+    "Formalism.L2.Ker.taylor_sum": {
+      "parent": "Formalism.L2.Ker.kernel_combination_form",
+      "weight": 8
+    },
+    "Formalism.L2.Ker.theta_coset_kernel": {
+      "parent": "GlobalTheory.Svd.servH_row_of_artin",
+      "weight": 135
+    },
+    "Formalism.L2.Ker.transcendence_algebraic_eigen": {
+      "parent": "GlobalTheory.Svd.servH_row_of_artin",
+      "weight": 9
+    },
+    "Formalism.L2.Ker.twist_lattice_kernel": {
+      "parent": "Formalism.L2.Ker.theta_coset_kernel",
+      "weight": 94
+    },
+    "Formalism.L2.KerInert.Rep.OrthInt": {
+      "parent": "GlobalTheory.TwV.Lt.inert_theta_admissibility_of_complex_multiplication",
+      "weight": 6
+    },
+    "Formalism.L2.KerInert.RepComb.laFacts_of_adm": {
+      "parent": "GlobalTheory.Svd.servH_row_of_artin",
+      "weight": 22
+    },
+    "Formalism.L2.KerInert.RepComb.lamK_eq": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 72
+    },
+    "Formalism.L2.SG.Closed.FoldOKC_holds": {
+      "parent": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+      "weight": 5518
+    },
+    "Formalism.L2.SG.Pf.Coef.cutAt_of_deep": {
+      "parent": "GlobalTheory.CarrierGap.theoremS_leaves_of_carrierG",
+      "weight": 32753
+    },
+    "Formalism.L2.SG.Pf.NcAllC.ncTieC_of_closed": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 44532
+    },
+    "Formalism.L2.Th1.H.FourthRoot_of": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 109
+    },
+    "Formalism.L2.Th1.H.InterInv_of": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 49
+    },
+    "Formalism.L2.Th1.H.ThStd_proof": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 191
+    },
+    "Formalism.L2.Th1.H.ThetaVector_of": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 53
+    },
+    "Formalism.L2.Th1.H.product_theta_mem": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 14
+    },
+    "Formalism.L2.Th1.H.quadMultiplierSemicharacter": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 72
+    },
+    "Formalism.L2.Th1.Top.HypShape_of": {
+      "parent": "GlobalTheory.Svd.servH_row_of_artin",
+      "weight": 194
+    },
+    "Formalism.LFunctionChainParameters.LChain.errX5at_le": {
+      "parent": "Deduction.ch_top",
+      "weight": 289
+    },
+    "Formalism.LFunctionChainParameters.LChain.size_windows_split": {
+      "parent": "Deduction.ch_core",
+      "weight": 10
+    },
+    "Formalism.LFunctionChainParameters.LErr.large_x_eventually": {
+      "parent": "UpperTheory.Comparison₂.core_gm",
+      "weight": 13
+    },
+    "Formalism.LFunctionChainParameters.ThickSetMeanBounds.derivative_integral_all": {
+      "parent": "Deduction.ch_core",
+      "weight": 270
+    },
+    "Formalism.LFunctionChainParameters.ThickSetMeanBounds.lipschitz_weight_all": {
+      "parent": "Deduction.CharacterBalanceMoves.core",
+      "weight": 177
+    },
+    "Formalism.LFunctionChainParameters.ThickSetMeanBounds.proposition_size_bound": {
+      "parent": "Deduction.ch_core",
+      "weight": 180
+    },
+    "Formalism.LFunctionChainParameters.WeightedSlopeBounds.Ga_bound5": {
+      "parent": "Formalism.LFunctionChainParameters.WeightedSlopeBounds.each_unit_bound_statement",
+      "weight": 233
+    },
+    "Formalism.LFunctionChainParameters.WeightedSlopeBounds.each_unit_bound_statement": {
+      "parent": "Deduction.ch_top",
+      "weight": 301
+    },
+    "Formalism.LFunctionChainParameters.WeightedSlopeBounds.weighted_mean_lower_bound_le": {
+      "parent": "Formalism.LFunctionChainParameters.WeightedSlopeBounds.each_unit_bound_statement",
+      "weight": 12
+    },
+    "Formalism.MainNotions.BesselId": {
+      "parent": "UpperTheory.Top.shape_closed_link_n_of_green",
+      "weight": 3
+    },
+    "Formalism.MainNotions.ChainTied": {
+      "parent": "UpperTheory.Top.zero_free_all_of_green_v_win",
+      "weight": 18
+    },
+    "Formalism.MainNotions.Closed.imp": {
+      "parent": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+      "weight": 6
+    },
+    "Formalism.MainNotions.FormalGroupSystem.Pf.Cii": {
+      "parent": "Formalism.L2.G.ServT.closed_servF_of_servT_of_dGamSize",
+      "weight": 186
+    },
+    "Formalism.MainNotions.FormalGroupSystem.Pf.hecke_place_bound": {
+      "parent": "Formalism.L2.G.ServT.closed_servF_of_servT_of_dGamSize",
+      "weight": 150
+    },
+    "Formalism.MainNotions.FormalGroupSystem.Pf.hk_point": {
+      "parent": "Formalism.L2.G.ServT.closed_servF_of_servT_of_dGamSize",
+      "weight": 309
+    },
+    "Formalism.MainNotions.G.GramWindowAlt.theorem_A_closed_form_holds": {
+      "parent": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+      "weight": 38502
+    },
+    "Formalism.MainNotions.G.LPprime": {
+      "parent": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+      "weight": 5
+    },
+    "Formalism.MainNotions.G.criterion_restricted_of_closed": {
+      "parent": "Formalism.L2.G.loc_proved",
+      "weight": 2
+    },
+    "Formalism.MainNotions.G.tool_statements_hold": {
+      "parent": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+      "weight": 7369
+    },
+    "Formalism.MainNotions.LinkDIV": {
+      "parent": "UpperTheory.Top.shape_closed_link_n_of_green",
+      "weight": 2
+    },
+    "Formalism.MainNotions.LinkDIV_at": {
+      "parent": "UpperTheory.Top.shape_closed_link_n_of_green",
+      "weight": 13
+    },
+    "Formalism.MainNotions.LinkN": {
+      "parent": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+      "weight": 3
+    },
+    "Formalism.MainNotions.LinkN_at": {
+      "parent": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+      "weight": 4
+    },
+    "Formalism.MainNotions.N.K.Closed.open_inputs_at_normalized": {
+      "parent": "Formalism.MainNotions.N.K.Closed.theorem_n5_from_inputs",
+      "weight": 4883
+    },
+    "Formalism.MainNotions.N.K.Closed.theorem_n5_from_inputs": {
+      "parent": "GlobalTheory.T.globalLatticeIndexTheorem_of_lengthBoundAtPlaces",
+      "weight": 21932
+    },
+    "Formalism.MainNotions.N.K.normalized_ring_data": {
+      "parent": "Formalism.MainNotions.N.K.Closed.theorem_n5_from_inputs",
+      "weight": 8205
+    },
+    "Formalism.MainNotions.N.Ln03.local_theorem_of_inputs": {
+      "parent": "GlobalTheory.NLinkClose.main_alt_alt",
+      "weight": 21595
+    },
+    "Formalism.MainNotions.Pk.Closed.of_class": {
+      "parent": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+      "weight": 3
+    },
+    "Formalism.MainNotions.TraceSpectra.stmtE": {
+      "parent": "Formalism.L2.G.loc_proved",
+      "weight": 28350
+    },
+    "Formalism.MainNotions.WeilJacquetShalikaLaw.Proof.first_clause_cases": {
+      "parent": "Formalism.L2.G.ServT.closed_servF_of_servT_of_dGamSize",
+      "weight": 72
+    },
+    "Formalism.MainNotions.closed_eventually_levelPrimeCoprimeStabiliser": {
+      "parent": "GlobalTheory.Top.closed_family_admissible_twist_link_alt",
+      "weight": 96
+    },
+    "Formalism.MainNotions.flipOneThree.Pf.theorem_I_closed_form_holds": {
+      "parent": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+      "weight": 18351
+    },
+    "Formalism.RepresentationBoundsCohomology.ringDataObjects.moduleBc": {
+      "parent": "Formalism.MainNotions.N.K.normalized_ring_data",
+      "weight": 363
+    },
+    "FubiniStudyChowHeightFormula₂.Adr.exists_std": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 664
+    },
+    "FubiniStudyChowHeightFormula₂.fubiniStudy_chowHeight_formula": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+      "weight": 0
+    },
+    "GlobalTheory.AdLevCpl.levAt_coupled": {
+      "parent": "GlobalTheory.TwV.adLawAt_xiAd",
+      "weight": 952
+    },
+    "GlobalTheory.AdSpan.range_thF": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 13028
+    },
+    "GlobalTheory.AwayMat.ptAway_mat": {
+      "parent": "GlobalTheory.TwV.adLawAt_xiAd",
+      "weight": 903
+    },
+    "GlobalTheory.BigOn.compareOffOwn_atRuns_alt": {
+      "parent": "GlobalTheory.BigOn.ontoX_of_hypotheses_alt_alt",
+      "weight": 6795
+    },
+    "GlobalTheory.BigOn.exponent_bound_of_unitaryThetaStandardTheorems_alt": {
+      "parent": "GlobalTheory.T.expSt_of_base_change_and_crystalline_lattices",
+      "weight": 45114
+    },
+    "GlobalTheory.BigOn.geoSt_of_pageSt_alt": {
+      "parent": "GlobalTheory.BigOn.ontoX_of_hypotheses_alt_alt",
+      "weight": 69009
+    },
+    "GlobalTheory.BigOn.ontoX_of_hypotheses_alt_alt": {
+      "parent": "GlobalTheory.Fc.S0.ontoX_and_lamLow_of_unitaryGroupHypotheses'",
+      "weight": 298263
+    },
+    "GlobalTheory.BigOn.ontoX_of_twist_shares_exp_alt": {
+      "parent": "GlobalTheory.BigOn.ontoX_of_hypotheses_alt_alt",
+      "weight": 9254
+    },
+    "GlobalTheory.BigSeesaw.seesaw_big": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 121
+    },
+    "GlobalTheory.BigTop.Fun.Close.fittedFunction_at_zero_close_alt": {
+      "parent": "GlobalTheory.BigTop.Fun.Close.fourier_coefficient_fit_of_join_alt",
+      "weight": 62317
+    },
+    "GlobalTheory.BigTop.Fun.Close.fourier_coefficient_fit_of_join_alt": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 62323
+    },
+    "GlobalTheory.BigTop.Fun.fun0Fit_of_leaves_alt": {
+      "parent": "GlobalTheory.BigTop.Fun.Close.fittedFunction_at_zero_close_alt",
+      "weight": 2192
+    },
+    "GlobalTheory.BigTop.lamLow_of_hypotheses_alt_alt": {
+      "parent": "GlobalTheory.Fc.S0.ontoX_and_lamLow_of_unitaryGroupHypotheses'",
+      "weight": 4772
+    },
+    "GlobalTheory.CarrierGap.carrierP": {
+      "parent": "GlobalTheory.CarrierGap.offDiag",
+      "weight": 62141
+    },
+    "GlobalTheory.CarrierGap.offDiag": {
+      "parent": "GlobalTheory.LocalRows.lg1_sLp_sO_hTF",
+      "weight": 183266
+    },
+    "GlobalTheory.CarrierGap.theoremS_leaves_of_carrierG": {
+      "parent": "GlobalTheory.CarrierGap.offDiag",
+      "weight": 76966
+    },
+    "GlobalTheory.ColFilt.bijective_of_columns": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 191
+    },
+    "GlobalTheory.ColNorms.familyVectors": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 36
+    },
+    "GlobalTheory.CompHS.canId_nonempty": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolG_alt_alt",
+      "weight": 2993
+    },
+    "GlobalTheory.CompanionTheory.AltForm.form_alternating": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 742
+    },
+    "GlobalTheory.CompanionTheory.Ar.ChgField.exists_field": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Top.goodTower_and_volume",
+      "weight": 1878
+    },
+    "GlobalTheory.CompanionTheory.Ar.Conj.Fam.locSplit": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+      "weight": 547
+    },
+    "GlobalTheory.CompanionTheory.Ar.Cusp.BoundaryLimit.limit_of_data": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Top.goodTower_and_volume",
+      "weight": 771
+    },
+    "GlobalTheory.CompanionTheory.Ar.Cusp.volumeTheoremX_of_inputs": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Top.goodTower_and_volume",
+      "weight": 140077
+    },
+    "GlobalTheory.CompanionTheory.Ar.Flat.anUnit": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+      "weight": 1409
+    },
+    "GlobalTheory.CompanionTheory.Ar.Flat.flat_eq_const_mul_unitAn": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+      "weight": 789
+    },
+    "GlobalTheory.CompanionTheory.Ar.Giv.ProjF.pfStep": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Plug.deepStR_of_use",
+      "weight": 933
+    },
+    "GlobalTheory.CompanionTheory.Ar.Giv.lineOfLargeDegree_of_use": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Plug.deepStR_of_use",
+      "weight": 15650
+    },
+    "GlobalTheory.CompanionTheory.Ar.HT.trivFlagMod_rootLines_model": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Top.goodTower_and_volume",
+      "weight": 1764
+    },
+    "GlobalTheory.CompanionTheory.Ar.Link.given_of_use": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Plug.deepStR_of_use",
+      "weight": 13412
+    },
+    "GlobalTheory.CompanionTheory.Ar.Link.good_tower_volume_theorem_bis": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Plug.deepStR_of_use",
+      "weight": 350312
+    },
+    "GlobalTheory.CompanionTheory.Ar.PB.FA.central_regular": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Top.goodTower_and_volume",
+      "weight": 1058
+    },
+    "GlobalTheory.CompanionTheory.Ar.Plug.DeepStR": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+      "weight": 4
+    },
+    "GlobalTheory.CompanionTheory.Ar.Plug.deepStR_of_use": {
+      "parent": "PositivityTheory.HtPt.Ah.deep_slim_use",
+      "weight": 481067
+    },
+    "GlobalTheory.CompanionTheory.Ar.Plug.deepStR_of_volume": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Plug.deepStR_of_use",
+      "weight": 20583
+    },
+    "GlobalTheory.CompanionTheory.Ar.Rec.exists_nonvanishing_of_toroidal": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+      "weight": 165
+    },
+    "GlobalTheory.CompanionTheory.Ar.Top.goodTower_and_volume": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Top.goodTower_volume_of_reduced",
+      "weight": 294784
+    },
+    "GlobalTheory.CompanionTheory.Ar.Top.goodTower_volume_of_reduced": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Link.good_tower_volume_theorem_bis",
+      "weight": 350288
+    },
+    "GlobalTheory.CompanionTheory.ChartAlg.chart_exists": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 334
+    },
+    "GlobalTheory.CompanionTheory.CosieveBC.base_change_of_cover": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 483
+    },
+    "GlobalTheory.CompanionTheory.EtaleLift.nonempty_lift": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 316
+    },
+    "GlobalTheory.CompanionTheory.Gaga.gagaSections": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+      "weight": 915
+    },
+    "GlobalTheory.CompanionTheory.GlobSt.glob_st": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 599
+    },
+    "GlobalTheory.CompanionTheory.JLiftDP.dpFlat": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 564
+    },
+    "GlobalTheory.CompanionTheory.LiftLat.bounds": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 294
+    },
+    "GlobalTheory.CompanionTheory.LocBC.local_base_change": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 624
+    },
+    "GlobalTheory.CompanionTheory.LocGrStep.loc_gr": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 430
+    },
+    "GlobalTheory.CompanionTheory.NlZar.zariski_descent": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 354
+    },
+    "GlobalTheory.CompanionTheory.PDTrunc.pull_incl_bijective": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 223
+    },
+    "GlobalTheory.CompanionTheory.PolySes.ses": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 207
+    },
+    "GlobalTheory.CompanionTheory.Relay.hodge_tate_of_fargues_exact": {
+      "parent": "PositivityTheory.HtPt.Ah.deep_slim_use",
+      "weight": 517
+    },
+    "GlobalTheory.CompanionTheory.SAH.semiAbelianHomExtension": {
+      "parent": "PositivityTheory.HtPt.Ah.deep_slim_use",
+      "weight": 0
+    },
+    "GlobalTheory.CompanionTheory.SiegelND.Coef.coefN_eq_theta": {
+      "parent": "PositivityTheory.Rg.Rsw.L.fibEx",
+      "weight": 8593
+    },
+    "GlobalTheory.CompanionTheory.VBGlue.finite_H_cx": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 409
+    },
+    "GlobalTheory.CompanionTheory.ZarCosieve.main": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 564
+    },
+    "GlobalTheory.CongOne.mem_glint_prinCong_of_cols": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 57
+    },
+    "GlobalTheory.ConstNZ.constK_alt": {
+      "parent": "GlobalTheory.RowClaim.Join.thetaLift_row_properties_conj",
+      "weight": 158
+    },
+    "GlobalTheory.CountConstants.count_constants_of_siegelWeil": {
+      "parent": "GlobalTheory.CountRow.row_counts_of_ties_alt",
+      "weight": 40441
+    },
+    "GlobalTheory.CountRow.row_counts_of_ties_alt": {
+      "parent": "GlobalTheory.CountRowByName.row_counts_of_labels_alt",
+      "weight": 46263
+    },
+    "GlobalTheory.CountRowByName.row_counts_of_labels_alt": {
+      "parent": "GlobalTheory.Fc.AllAtMemberStage0.allRows_of_open0_alt",
+      "weight": 46265
+    },
+    "GlobalTheory.CovTop.CovSz.size_rows_alt": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolG_alt_alt",
+      "weight": 1492
+    },
+    "GlobalTheory.CovTop.GoodDom.covering_regular_at_domain": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolG_alt_alt",
+      "weight": 5638
+    },
+    "GlobalTheory.CovTop.HSAt": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolG_alt_alt",
+      "weight": 4
+    },
+    "GlobalTheory.CplCoset.sameCoset_kappa": {
+      "parent": "GlobalTheory.CplTarget.levAt_target",
+      "weight": 97
+    },
+    "GlobalTheory.CplLev.levAt_cpl": {
+      "parent": "GlobalTheory.CplTarget.levAt_target",
+      "weight": 323
+    },
+    "GlobalTheory.CplMuDet.muOf_det_cpl": {
+      "parent": "GlobalTheory.CplTarget.levAt_target",
+      "weight": 137
+    },
+    "GlobalTheory.CplTarget.levAt_target": {
+      "parent": "GlobalTheory.AdLevCpl.levAt_coupled",
+      "weight": 692
+    },
+    "GlobalTheory.DetLine.detLineTrivial_of_toroidal": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolG_alt_alt",
+      "weight": 6440
+    },
+    "GlobalTheory.DnMove.dnNatTieG_cols": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 714
+    },
+    "GlobalTheory.DownLift.GenFinite.genFin": {
+      "parent": "GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt",
+      "weight": 7265
+    },
+    "GlobalTheory.EX.RankVal": {
+      "parent": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+      "weight": 5
+    },
+    "GlobalTheory.EX.exists_ranks_rankVal_frame": {
+      "parent": "UpperTheory.Top.admissibleClassesTwistedChar",
+      "weight": 81
+    },
+    "GlobalTheory.EisM.chapterM_holds": {
+      "parent": "UpperTheory.V.Z.Kato.Joint.kato_global_unit_law_of_smoothed_classes",
+      "weight": 9647
+    },
+    "GlobalTheory.EtC.HomotopyInv.homotopy_invariance_etale": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 1671
+    },
+    "GlobalTheory.EtC.KummerSplit.isKum_kumT": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 252
+    },
+    "GlobalTheory.EtC.PrimLoc.prim_loc": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 177
+    },
+    "GlobalTheory.EtC.ProdCoh.ht_prod_bijective": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 209
+    },
+    "GlobalTheory.EtC.RedCoef.a11": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 1174
+    },
+    "GlobalTheory.EtC.TwistFiltered.twF_preservesFilteredColimits": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 217
+    },
+    "GlobalTheory.EtC.a8": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 564
+    },
+    "GlobalTheory.EtC.b4": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 412
+    },
+    "GlobalTheory.EtC.etC_c2": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 6322
+    },
+    "GlobalTheory.EtC.gaugeSplitting_holds": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 811
+    },
+    "GlobalTheory.EtC.isTwRes_tensor": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 1278
+    },
+    "GlobalTheory.EtC.laurentPolynomial_cohomology_strictlyHenselian_vanishing": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 3563
+    },
+    "GlobalTheory.EtC.projectiveBundleFormula_vectorBundle_any_space": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 13405
+    },
+    "GlobalTheory.EtC.smooth_surjective_cech_descent_cohomology": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 231
+    },
+    "GlobalTheory.EtC.twist_sections": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 193
+    },
+    "GlobalTheory.ExponentsFinite.yFinite": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 112
+    },
+    "GlobalTheory.Fam.colSide_alt": {
+      "parent": "GlobalTheory.MiTop.famAllQ_of_allTrue_alt",
+      "weight": 43853
+    },
+    "GlobalTheory.Fam.lawsLinks_of_geo_rows_cols_alt": {
+      "parent": "GlobalTheory.MiTop.famAllQ_of_allTrue_alt",
+      "weight": 36634
+    },
+    "GlobalTheory.FamilyNormRational.familyGroupSumFactorsRowWeightAmplitude": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 14351
+    },
+    "GlobalTheory.Fc.AllAtMemberStage0.allRows_of_open0_alt": {
+      "parent": "GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt",
+      "weight": 455025
+    },
+    "GlobalTheory.Fc.ClassTwoEntries.divisionSecondComplement_constructedPoints": {
+      "parent": "GlobalTheory.Fc.AllAtMemberStage0.allRows_of_open0_alt",
+      "weight": 2233
+    },
+    "GlobalTheory.Fc.S0.Open0ProofU.open_orbit_of_unramified_exponents_alt": {
+      "parent": "GlobalTheory.T.open0_of_unitary_group_hypotheses",
+      "weight": 169774
+    },
+    "GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 1232133
+    },
+    "GlobalTheory.Fc.S0.ontoX_and_lamLow_of_unitaryGroupHypotheses'": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 303161
+    },
+    "GlobalTheory.Fc.StageOne.rowFun_at_gridA_alt": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 426
+    },
+    "GlobalTheory.Fc.StageOneU.member_bundles_large_unramified_exponents_alt": {
+      "parent": "GlobalTheory.T.large_unramified_exponent_bundles_exist_alt",
+      "weight": 280668
+    },
+    "GlobalTheory.Fc.StageZeroRow.row_rRows_stage0_alt": {
+      "parent": "GlobalTheory.Fc.AllAtMemberStage0.allRows_of_open0_alt",
+      "weight": 9130
+    },
+    "GlobalTheory.Fc.nonempty_hyps_of_allRows_alt": {
+      "parent": "GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt",
+      "weight": 5019
+    },
+    "GlobalTheory.Fc.row_aAtG_at_built_alt": {
+      "parent": "GlobalTheory.Fc.AllAtMemberStage0.allRows_of_open0_alt",
+      "weight": 8080
+    },
+    "GlobalTheory.Fc.six_rows_at_member_alt": {
+      "parent": "GlobalTheory.T.period_entries_tie_and_level_valuations_at_built",
+      "weight": 43648
+    },
+    "GlobalTheory.FinWeil.exists_weil": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 2
+    },
+    "GlobalTheory.FinalJoin.runHolds_of_parOK": {
+      "parent": "GlobalTheory.BigOn.ontoX_of_hypotheses_alt_alt",
+      "weight": 112837
+    },
+    "GlobalTheory.FlagBundle.exists_flagCpt": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolG_alt_alt",
+      "weight": 2545
+    },
+    "GlobalTheory.FlagTan.kodaira_spencer_iso_flag_tangent_psi_set": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolG_alt_alt",
+      "weight": 1928
+    },
+    "GlobalTheory.FourthRootStd.span_range_emb4_eq_top": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 40
+    },
+    "GlobalTheory.FourthRootStd.stdOK": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 316
+    },
+    "GlobalTheory.FrameRat.nearAt_liftFr_smul": {
+      "parent": "GlobalTheory.TwV.adLawAt_xiAd",
+      "weight": 15
+    },
+    "GlobalTheory.GenReal.genInf": {
+      "parent": "GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt",
+      "weight": 5058
+    },
+    "GlobalTheory.Ggeo.KerComb.comb_of_tied": {
+      "parent": "GlobalTheory.Svd.servH_row",
+      "weight": 70
+    },
+    "GlobalTheory.Glob.CovolRow.linked_bundles_l3_of_open_alt": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 23
+    },
+    "GlobalTheory.Glob.open_and_linked_of_stronger_extension_alt": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 82
+    },
+    "GlobalTheory.GoodFactor.irreducible_character_good_idempotent_cuspidal_product": {
+      "parent": "GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt",
+      "weight": 2553
+    },
+    "GlobalTheory.GreenBridge.green_of_regular": {
+      "parent": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+      "weight": 280
+    },
+    "GlobalTheory.HSApp.vanBd_le_space": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+      "weight": 1592
+    },
+    "GlobalTheory.HTObjExt.extends_obj": {
+      "parent": "UpperTheory.Gal.Int.Geo.kodaira_spencer_of_weight_one",
+      "weight": 4356
+    },
+    "GlobalTheory.HeightCounting.Up.all_stages_of_specializations_alt": {
+      "parent": "GlobalTheory.Mem.Top.Bl.exists_baseLattice_of_prime_alt",
+      "weight": 31788
+    },
+    "GlobalTheory.Henselisation.exists_henselisation": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 575
+    },
+    "GlobalTheory.Hk3.howeUnram_holds": {
+      "parent": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+      "weight": 6499
+    },
+    "GlobalTheory.HodgeDominates.exists_lb_dominates": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolG_alt_alt",
+      "weight": 14989
+    },
+    "GlobalTheory.InertSign.vacuum_inert": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 2101
+    },
+    "GlobalTheory.InputsAtRecord.inputsNet_recPlus": {
+      "parent": "GlobalTheory.FinalJoin.runHolds_of_parOK",
+      "weight": 100117
+    },
+    "GlobalTheory.KZ.zetaSysU_of_halves2": {
+      "parent": "GlobalTheory.KZ.zetaUr_of_halves2",
+      "weight": 6
+    },
+    "GlobalTheory.KZ.zetaUr_of_halves2": {
+      "parent": "UpperTheory.V.Z.Kato.Final.zetaUr",
+      "weight": 23
+    },
+    "GlobalTheory.KerGaussA.kvalGe_gainA": {
+      "parent": "GlobalTheory.Svd.servH_row",
+      "weight": 1795
+    },
+    "GlobalTheory.KerSelfDual.isSDLat_latK_of_stdL": {
+      "parent": "GlobalTheory.KerSiteSelfDual.even_and_isSDLat_kerN",
+      "weight": 132
+    },
+    "GlobalTheory.KerSiteSelfDual.even_and_isSDLat_kerN": {
+      "parent": "GlobalTheory.pairOK_allSites",
+      "weight": 147
+    },
+    "GlobalTheory.KernelSpan.kernel_law": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 41
+    },
+    "GlobalTheory.LevGeo.adelicProb_mul_volFund": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolG_alt_alt",
+      "weight": 1858
+    },
+    "GlobalTheory.LevSrcCpl.levSrc_cpl": {
+      "parent": "GlobalTheory.AdLevCpl.levAt_coupled",
+      "weight": 221
+    },
+    "GlobalTheory.LevelIsometry.keeps_cusp_lattice_norm": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolG_alt_alt",
+      "weight": 1830
+    },
+    "GlobalTheory.Lin.primesRel_holds": {
+      "parent": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+      "weight": 6328
+    },
+    "GlobalTheory.LocCarry.mem_latS_latAd_iff": {
+      "parent": "GlobalTheory.TwV.site_cmpLite_siteAdm",
+      "weight": 41
+    },
+    "GlobalTheory.LocalRows.lg1_sLp_sO_hTF": {
+      "parent": "GlobalTheory.Fc.AllAtMemberStage0.allRows_of_open0_alt",
+      "weight": 192041
+    },
+    "GlobalTheory.LoopRowsCloseGap.loop_rows_closed_gap": {
+      "parent": "GlobalTheory.LocalRows.lg1_sLp_sO_hTF",
+      "weight": 8275
+    },
+    "GlobalTheory.Mem.Col2.ChExM.chart_of": {
+      "parent": "GlobalTheory.Mem.Col2.ChExM.exists_charts",
+      "weight": 1962
+    },
+    "GlobalTheory.Mem.Col2.ChExM.exists_charts": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 2404
+    },
+    "GlobalTheory.Mem.Col2.ChartLevel.chart_gLevH": {
+      "parent": "GlobalTheory.Mem.FormSym.formsTiedSym_std",
+      "weight": 309
+    },
+    "GlobalTheory.Mem.Col2.DiaChart.dilTied": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 334
+    },
+    "GlobalTheory.Mem.Col2.FinAtQ.chartLoc_finiteIndex": {
+      "parent": "GlobalTheory.T.furtherPlaces_group_contains_chart_levels",
+      "weight": 253
+    },
+    "GlobalTheory.Mem.Col2.HAt.Dil.diamond_on_hermitian_side": {
+      "parent": "GlobalTheory.Mem.Col2.TC.hermitian_data_at_level_prime",
+      "weight": 213
+    },
+    "GlobalTheory.Mem.Col2.HAt.FvOff.fv_eq_of_adC": {
+      "parent": "GlobalTheory.Mem.Col2.TC.hermitian_data_at_level_prime",
+      "weight": 100
+    },
+    "GlobalTheory.Mem.Col2.HAt.Stab.stabMap_tied": {
+      "parent": "GlobalTheory.Mem.Col2.TC.hermitian_data_at_level_prime",
+      "weight": 138
+    },
+    "GlobalTheory.Mem.Col2.HAt.UpMove.up_move": {
+      "parent": "GlobalTheory.Mem.Col2.TC.hermitian_data_at_level_prime",
+      "weight": 108
+    },
+    "GlobalTheory.Mem.Col2.HAt.adOf_of_adC": {
+      "parent": "GlobalTheory.Mem.Col2.TC.hermitian_data_at_level_prime",
+      "weight": 84
+    },
+    "GlobalTheory.Mem.Col2.HAt.clsP_hermitian": {
+      "parent": "GlobalTheory.Mem.Col2.TC.hermitian_data_at_level_prime",
+      "weight": 199
+    },
+    "GlobalTheory.Mem.Col2.HAt.dn_move_exists": {
+      "parent": "GlobalTheory.Mem.Col2.TC.hermitian_data_at_level_prime",
+      "weight": 67
+    },
+    "GlobalTheory.Mem.Col2.HAt.exists_isDia_steps": {
+      "parent": "GlobalTheory.Mem.Col2.HAt.Dil.diamond_on_hermitian_side",
+      "weight": 12
+    },
+    "GlobalTheory.Mem.Col2.HAt.pr_lvC_eq_lv": {
+      "parent": "GlobalTheory.Mem.Col2.TC.hermitian_data_at_level_prime",
+      "weight": 102
+    },
+    "GlobalTheory.Mem.Col2.HAt.seenCl_atT": {
+      "parent": "GlobalTheory.Mem.Col2.TC.hermitian_data_at_level_prime",
+      "weight": 81
+    },
+    "GlobalTheory.Mem.Col2.InEx.exists_colIn": {
+      "parent": "GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt",
+      "weight": 4004
+    },
+    "GlobalTheory.Mem.Col2.LevFun.fvTieG": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 270
+    },
+    "GlobalTheory.Mem.Col2.MemChart.cls_bij": {
+      "parent": "GlobalTheory.Mem.Col2.MemChart.exists_charts",
+      "weight": 39
+    },
+    "GlobalTheory.Mem.Col2.MemChart.exists_charts": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 465
+    },
+    "GlobalTheory.Mem.Col2.MemChart.stM_range": {
+      "parent": "GlobalTheory.Mem.Col2.MemChart.exists_charts",
+      "weight": 12
+    },
+    "GlobalTheory.Mem.Col2.MetricTie.ipV_norm_tie": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 24
+    },
+    "GlobalTheory.Mem.Col2.OneLevel.stepBefore_oneLevel": {
+      "parent": "GlobalTheory.Mem.FormSym.formsTiedSym_std",
+      "weight": 747
+    },
+    "GlobalTheory.Mem.Col2.PerConj.period_conj": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 86
+    },
+    "GlobalTheory.Mem.Col2.PtExist.exists_isPtOf_cm": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 61
+    },
+    "GlobalTheory.Mem.Col2.PtExist.exists_modify": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 82
+    },
+    "GlobalTheory.Mem.Col2.PtExist.unimodGenus": {
+      "parent": "GlobalTheory.Mem.Col2.PtExist.exists_isPtOf_cm",
+      "weight": 22
+    },
+    "GlobalTheory.Mem.Col2.SameOff.use₆": {
+      "parent": "GlobalTheory.Mem.Col2.TC.hermitian_data_at_level_prime",
+      "weight": 225
+    },
+    "GlobalTheory.Mem.Col2.TC.ChTw.charts_tuple_trivQ": {
+      "parent": "GlobalTheory.Mem.Col2.TC.twPack_ex",
+      "weight": 73
+    },
+    "GlobalTheory.Mem.Col2.TC.GLev0.glev_zero": {
+      "parent": "GlobalTheory.Mem.FormSym.formsTiedSym_std",
+      "weight": 263
+    },
+    "GlobalTheory.Mem.Col2.TC.StepZero.lvSame_zero": {
+      "parent": "GlobalTheory.Mem.Col2.TC.tw_lv_tied_and_same",
+      "weight": 262
+    },
+    "GlobalTheory.Mem.Col2.TC.bw_tie": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 129
+    },
+    "GlobalTheory.Mem.Col2.TC.charts_funKilled": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 18
+    },
+    "GlobalTheory.Mem.Col2.TC.clsP_tie": {
+      "parent": "GlobalTheory.Mem.FormSym.formsTiedSym_std",
+      "weight": 323
+    },
+    "GlobalTheory.Mem.Col2.TC.colsTiedSym_std": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 6985
+    },
+    "GlobalTheory.Mem.Col2.TC.colsTwPTiedS_std": {
+      "parent": "GlobalTheory.T.trueColumnChoice_exists_standardChainData",
+      "weight": 4382
+    },
+    "GlobalTheory.Mem.Col2.TC.dn_keeps_chart": {
+      "parent": "GlobalTheory.DnMove.dnNatTieG_cols",
+      "weight": 49
+    },
+    "GlobalTheory.Mem.Col2.TC.dn_level_functional": {
+      "parent": "GlobalTheory.DnMove.dnNatTieG_cols",
+      "weight": 93
+    },
+    "GlobalTheory.Mem.Col2.TC.dn_locP_lat": {
+      "parent": "GlobalTheory.DnMove.dnNatTieG_cols",
+      "weight": 195
+    },
+    "GlobalTheory.Mem.Col2.TC.exists_level_projections": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 139
+    },
+    "GlobalTheory.Mem.Col2.TC.hermitian_data_at_level_prime": {
+      "parent": "GlobalTheory.T.exists_hermitian_data_carT_of_std",
+      "weight": 1826
+    },
+    "GlobalTheory.Mem.Col2.TC.levels_top_row_sym": {
+      "parent": "GlobalTheory.Mem.FormSym.formsTiedSym_std",
+      "weight": 640
+    },
+    "GlobalTheory.Mem.Col2.TC.spaces_in_coordinates": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 46
+    },
+    "GlobalTheory.Mem.Col2.TC.til_ties": {
+      "parent": "GlobalTheory.Mem.FormSym.formsTiedSym_std",
+      "weight": 348
+    },
+    "GlobalTheory.Mem.Col2.TC.twPack_ex": {
+      "parent": "GlobalTheory.Mem.Col2.TC.tw_chains",
+      "weight": 2860
+    },
+    "GlobalTheory.Mem.Col2.TC.tw_chains": {
+      "parent": "GlobalTheory.T.trueColumnChoice_exists_chainData_with_basePoints",
+      "weight": 3152
+    },
+    "GlobalTheory.Mem.Col2.TC.tw_lv_tied_and_same": {
+      "parent": "GlobalTheory.T.tupleChains_levelStructure_compatible_at_levelPrime",
+      "weight": 374
+    },
+    "GlobalTheory.Mem.Col2.TC.val_tied": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 359
+    },
+    "GlobalTheory.Mem.Col2.TwAtStd.twAtT_exists": {
+      "parent": "GlobalTheory.Mem.Col2.TC.tw_chains",
+      "weight": 31
+    },
+    "GlobalTheory.Mem.Col2.TwP.til_tw": {
+      "parent": "GlobalTheory.T.tupleLayerCompatibilities_of_X_prime",
+      "weight": 292
+    },
+    "GlobalTheory.Mem.Col2.UpChart.upNatTie": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 628
+    },
+    "GlobalTheory.Mem.Col2.mem_locW_hlat_iff": {
+      "parent": "GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt",
+      "weight": 17
+    },
+    "GlobalTheory.Mem.FormSym.formsTiedSym_std": {
+      "parent": "GlobalTheory.T.exists_standardFormComparison_symmetricLevel_members",
+      "weight": 3111
+    },
+    "GlobalTheory.Mem.FormSym.readsK_one": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 13
+    },
+    "GlobalTheory.Mem.LiteralAutomorphy.evaluation_grid_of_join": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 749
+    },
+    "GlobalTheory.Mem.LiteralAutomorphy.rowRatW_of_rowTest": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 4
+    },
+    "GlobalTheory.Mem.NatEqui.chiFac_left": {
+      "parent": "GlobalTheory.Mem.NatEqui.eqP",
+      "weight": 5
+    },
+    "GlobalTheory.Mem.NatEqui.chiFac_ne_zero": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 4
+    },
+    "GlobalTheory.Mem.NatEqui.chiFac_right": {
+      "parent": "GlobalTheory.Mem.NatEqui.eqP",
+      "weight": 5
+    },
+    "GlobalTheory.Mem.NatEqui.chi_smulLat": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 17
+    },
+    "GlobalTheory.Mem.NatEqui.eqP": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 77
+    },
+    "GlobalTheory.Mem.SRe.UpS.has4_of_has3_of_sExt_none": {
+      "parent": "GlobalTheory.Mem.Top.Closing.memberE_closing_alt_alt",
+      "weight": 37472
+    },
+    "GlobalTheory.Mem.Top.Bl.exists_baseLattice_of_pair_alt": {
+      "parent": "GlobalTheory.Mem.Top.Bl.exists_baseLattice_of_prime_alt",
+      "weight": 110025
+    },
+    "GlobalTheory.Mem.Top.Bl.exists_baseLattice_of_prime_alt": {
+      "parent": "GlobalTheory.T.member_exists_baseLattice_alt",
+      "weight": 188022
+    },
+    "GlobalTheory.Mem.Top.Closing.memberE_closing_alt_alt": {
+      "parent": "GlobalTheory.Mem.Top.Bl.exists_baseLattice_of_pair_alt",
+      "weight": 75959
+    },
+    "GlobalTheory.Mem.TypePrimes.exists_gLoc_idG_chiTied": {
+      "parent": "GlobalTheory.Mem.FormSym.formsTiedSym_std",
+      "weight": 143
+    },
+    "GlobalTheory.MemberClose.exists_hyp_n_of_geometric_galois_compat": {
+      "parent": "GlobalTheory.T.hyps_e_third_layer_ser_n_of_geometric_galois",
+      "weight": 22910
+    },
+    "GlobalTheory.MiTop.famAllQ_of_allTrue_alt": {
+      "parent": "GlobalTheory.T.main_theorem_published_inputs_third_alt_alt",
+      "weight": 130748
+    },
+    "GlobalTheory.MomT.FromComb.chiFac_mem": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 3
+    },
+    "GlobalTheory.MtId.inMt_state": {
+      "parent": "GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt",
+      "weight": 2675
+    },
+    "GlobalTheory.NLink.InertStep.main_alt_alt": {
+      "parent": "GlobalTheory.NLinkClose.main_alt_alt",
+      "weight": 62524
+    },
+    "GlobalTheory.NLinkClose.main_alt_alt": {
+      "parent": "UpperTheory.GalC.linkN_of_twGood_galoisPreconditions",
+      "weight": 150531
+    },
+    "GlobalTheory.NLinkE.main_alt_alt": {
+      "parent": "GlobalTheory.NLinkClose.main_alt_alt",
+      "weight": 30640
+    },
+    "GlobalTheory.NefWt.weight_line_bundle_isNef": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolG_alt_alt",
+      "weight": 3241
+    },
+    "GlobalTheory.NegOneNorm.exists_norm_eq_neg_one": {
+      "parent": "GlobalTheory.RatEqui.oddEq_of_even",
+      "weight": 115
+    },
+    "GlobalTheory.NormGauss.sum_norm_neg": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 175
+    },
+    "GlobalTheory.NormResidue.exists_mul_involution_add_one_mem_pow": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 99
+    },
+    "GlobalTheory.OrthSelfDual.isLat_and_dl_eq_of_isSDLat_mvL": {
+      "parent": "GlobalTheory.KerSelfDual.isSDLat_latK_of_stdL",
+      "weight": 54
+    },
+    "GlobalTheory.ParaToral.toral_of_levelPara": {
+      "parent": "GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt",
+      "weight": 3362
+    },
+    "GlobalTheory.PerRedTw.reduction_perDecTw": {
+      "parent": "GlobalTheory.PerTwClose.twistedPeriodAdmissible_of_rowInt",
+      "weight": 132
+    },
+    "GlobalTheory.PerRedU.main": {
+      "parent": "GlobalTheory.PerTwClose.twistedPeriodAdmissible_of_rowInt",
+      "weight": 70
+    },
+    "GlobalTheory.PerTwClose.twistedPeriodAdmissible_of_rowInt": {
+      "parent": "GlobalTheory.Fc.six_rows_at_member_alt",
+      "weight": 266
+    },
+    "GlobalTheory.Published.HeckeTateFunctionalEquation.abs": {
+      "parent": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+      "weight": 0
+    },
+    "GlobalTheory.Published.chowFormIntExists_holds": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+      "weight": 0
+    },
+    "GlobalTheory.RatEqui.exists_factor": {
+      "parent": "GlobalTheory.RatEqui.oddEq_of_even",
+      "weight": 34
+    },
+    "GlobalTheory.RatEqui.exists_root": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 15
+    },
+    "GlobalTheory.RatEqui.isPull_col": {
+      "parent": "GlobalTheory.RatEqui.oddEq_of_even",
+      "weight": 217
+    },
+    "GlobalTheory.RatEqui.isPull_row": {
+      "parent": "GlobalTheory.RatEqui.oddEq_of_even",
+      "weight": 165
+    },
+    "GlobalTheory.RatEqui.oddEq_of_even": {
+      "parent": "GlobalTheory.TrueTheta.exists_family_of_curve",
+      "weight": 926
+    },
+    "GlobalTheory.RatLat.lat_gmap": {
+      "parent": "GlobalTheory.TwRat.ratPt",
+      "weight": 9
+    },
+    "GlobalTheory.RatPt.ratLaw_of_tie": {
+      "parent": "GlobalTheory.TwV.adLawAt_xiAd",
+      "weight": 718
+    },
+    "GlobalTheory.RowClaim.Join.thetaLift_row_properties_conj": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 67993
+    },
+    "GlobalTheory.RunPrimeData.exists_primeData_heights": {
+      "parent": "GlobalTheory.InputsAtRecord.inputsNet_recPlus",
+      "weight": 44822
+    },
+    "GlobalTheory.SDCompan.isSDLat_latK": {
+      "parent": "GlobalTheory.KerSelfDual.isSDLat_latK_of_stdL",
+      "weight": 62
+    },
+    "GlobalTheory.SDCompan.isSD_toStd": {
+      "parent": "GlobalTheory.SDCompan.isSDLat_latK",
+      "weight": 37
+    },
+    "GlobalTheory.SqTop.square_top_term_joined_estimates": {
+      "parent": "GlobalTheory.T.square_leading_term_bound",
+      "weight": 34270
+    },
+    "GlobalTheory.SqTower.tower_alt_bis": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 31772
+    },
+    "GlobalTheory.SrcMuDet.muOf_levelDet_mul_sigma_prod_rhoS_eq_one": {
+      "parent": "GlobalTheory.LevSrcCpl.levSrc_cpl",
+      "weight": 10
+    },
+    "GlobalTheory.StalkNoeth.isNoetherianRing_of_indEt": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 243
+    },
+    "GlobalTheory.Svd.modelsAt_of_part": {
+      "parent": "GlobalTheory.Svd.servH_row",
+      "weight": 36499
+    },
+    "GlobalTheory.Svd.servH_row": {
+      "parent": "GlobalTheory.Svd.servH_row_of_artin",
+      "weight": 73485
+    },
+    "GlobalTheory.Svd.servH_row_of_artin": {
+      "parent": "GlobalTheory.T.hServ_of_linkR",
+      "weight": 130968
+    },
+    "GlobalTheory.T.FlagModelStatement_holds": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Top.goodTower_and_volume",
+      "weight": 517
+    },
+    "GlobalTheory.T.FlatDegree_holds": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+      "weight": 9501
+    },
+    "GlobalTheory.T.abelian_cm_comp_laws_bound": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Plug.deepStR_of_volume",
+      "weight": 19877
+    },
+    "GlobalTheory.T.abelian_family_hodge_lattice": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Top.goodTower_and_volume",
+      "weight": 851
+    },
+    "GlobalTheory.T.abelian_part_lie_signature": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Top.goodTower_and_volume",
+      "weight": 527
+    },
+    "GlobalTheory.T.acyclic_extendScalars_zmod_of_flat_boundedBelow": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 295
+    },
+    "GlobalTheory.T.adelicData_extend_largerFields_of_hypotheses": {
+      "parent": "GlobalTheory.Fc.StageOneU.member_bundles_large_unramified_exponents_alt",
+      "weight": 12370
+    },
+    "GlobalTheory.T.base_setting_of_good_tower": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Cusp.volumeTheoremX_of_inputs",
+      "weight": 9295
+    },
+    "GlobalTheory.T.birOn_wtOf_of_consecutive_gap_bound": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolG_alt_alt",
+      "weight": 2796
+    },
+    "GlobalTheory.T.borelWeil_flagModel_detInverse_isAmple_local": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+      "weight": 603
+    },
+    "GlobalTheory.T.boundary_chart_log_period_family": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Top.goodTower_and_volume",
+      "weight": 693
+    },
+    "GlobalTheory.T.cartan_quasiIso_of_localQuasiIso_boundedBelow_descent": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 414
+    },
+    "GlobalTheory.T.charpoly_deRhamHomology_endomorphism_eq_map_ladic": {
+      "parent": "UpperTheory.Gal.Int.Geo.kodaira_spencer_of_weight_one",
+      "weight": 12706
+    },
+    "GlobalTheory.T.chartBaseFrame_badPrime_eq_companion_lattice": {
+      "parent": "GlobalTheory.TwV.congAt_fb_lev",
+      "weight": 738
+    },
+    "GlobalTheory.T.chartDatum_levelPrime_invariant_mul_level": {
+      "parent": "GlobalTheory.TwTop.levAt_top",
+      "weight": 55
+    },
+    "GlobalTheory.T.chartPoint_frames_move_integralRightTranslate": {
+      "parent": "GlobalTheory.TwV.isPtAd_mul_lev",
+      "weight": 186
+    },
+    "GlobalTheory.T.chartPoint_right_translate_by_level_coupled_step": {
+      "parent": "GlobalTheory.CplTarget.levAt_target",
+      "weight": 63
+    },
+    "GlobalTheory.T.chart_base_point_adelic_right_mul_level": {
+      "parent": "GlobalTheory.LevSrcCpl.levSrc_cpl",
+      "weight": 33
+    },
+    "GlobalTheory.T.chart_lastStep_twistBasePoint": {
+      "parent": "GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt",
+      "weight": 2
+    },
+    "GlobalTheory.T.cmFamilyFunctionals_detect_lowCoefficients": {
+      "parent": "GlobalTheory.InputsAtRecord.inputsNet_recPlus",
+      "weight": 15141
+    },
+    "GlobalTheory.T.columnPoint_eq_of_deco_and_cosetReduction": {
+      "parent": "GlobalTheory.Mem.Col2.MemChart.exists_charts",
+      "weight": 41
+    },
+    "GlobalTheory.T.compactification_top_chern_eq_volume": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolG_alt_alt",
+      "weight": 1538
+    },
+    "GlobalTheory.T.compatibleSystem_member_hypotheses": {
+      "parent": "GlobalTheory.Fc.StageOneU.member_bundles_large_unramified_exponents_alt",
+      "weight": 24
+    },
+    "GlobalTheory.T.compatibleSystem_weightOne_saturated": {
+      "parent": "GlobalTheory.Fc.StageOneU.member_bundles_large_unramified_exponents_alt",
+      "weight": 4119
+    },
+    "GlobalTheory.T.coreLe_of_gram_meas_liftRational": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolG_alt_alt",
+      "weight": 74
+    },
+    "GlobalTheory.T.coverDegree_of_grothendieck_deformation": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolG_alt_alt",
+      "weight": 33
+    },
+    "GlobalTheory.T.coverHeightSum_of_flatDeg_coverDegree_share": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolG_alt_alt",
+      "weight": 12001
+    },
+    "GlobalTheory.T.covering_gram_of_prints": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolG_alt_alt",
+      "weight": 196
+    },
+    "GlobalTheory.T.covering_meas_of_prints": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolG_alt_alt",
+      "weight": 1684
+    },
+    "GlobalTheory.T.covolX_of_truncation_badSet_lambda_lowBound": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolG_alt_alt",
+      "weight": 590
+    },
+    "GlobalTheory.T.crystalline_graded_pieces_description": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 179
+    },
+    "GlobalTheory.T.cusp_weight_integrable_on_fundamental_set": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Top.goodTower_and_volume",
+      "weight": 3060
+    },
+    "GlobalTheory.T.cusp_weight_regularisations_tied": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Cusp.volumeTheoremX_of_inputs",
+      "weight": 8420
+    },
+    "GlobalTheory.T.decoratedPointClasses_bijective_doubleCosets": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 65
+    },
+    "GlobalTheory.T.dual_mod_class_lattice_equiv_quotient": {
+      "parent": "GlobalTheory.Mem.Col2.TC.hermitian_data_at_level_prime",
+      "weight": 76
+    },
+    "GlobalTheory.T.eigen_frames_analytic": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+      "weight": 4886
+    },
+    "GlobalTheory.T.eigenframe_specialization_uniform_bound": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+      "weight": 1062
+    },
+    "GlobalTheory.T.etaleCohomology_field_eq_galoisCohomology": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 1744
+    },
+    "GlobalTheory.T.etaleCohomology_filteredColimit_rings_finitary": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 926
+    },
+    "GlobalTheory.T.etaleSheafOfRingFunctor_isFinitary": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 394
+    },
+    "GlobalTheory.T.etaleSpaceChains_mayerVietoris_shortExact": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 202
+    },
+    "GlobalTheory.T.etale_cocycle_coboundary_iff": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 530
+    },
+    "GlobalTheory.T.etale_cohomology_equivalence_of_strictly_henselian_stalks": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 187
+    },
+    "GlobalTheory.T.etale_descent_picard_group": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 333
+    },
+    "GlobalTheory.T.exists_K1_point_congruent": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 44
+    },
+    "GlobalTheory.T.exists_abelian_part_extension": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Top.goodTower_and_volume",
+      "weight": 517
+    },
+    "GlobalTheory.T.exists_adelicPoint_decoratedLattice_allTwists": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 2
+    },
+    "GlobalTheory.T.exists_admissible_hecke_projection_nonvanishing": {
+      "parent": "UpperTheory.V.Z.Kato.Final.zetaUr",
+      "weight": 1816
+    },
+    "GlobalTheory.T.exists_alexanderWhitneyDiagonal_swap_homotopy": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 539
+    },
+    "GlobalTheory.T.exists_botDat_of_placedP_framed": {
+      "parent": "GlobalTheory.MiTop.famAllQ_of_allTrue_alt",
+      "weight": 15731
+    },
+    "GlobalTheory.T.exists_character_allCharts_furtherPlaces": {
+      "parent": "GlobalTheory.T.furtherPlaces_group_contains_chart_levels",
+      "weight": 553
+    },
+    "GlobalTheory.T.exists_chart_point_frames_moved_by_level": {
+      "parent": "GlobalTheory.LevSrcCpl.levSrc_cpl",
+      "weight": 87
+    },
+    "GlobalTheory.T.exists_conj_referenceChartIndex": {
+      "parent": "GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt",
+      "weight": 269
+    },
+    "GlobalTheory.T.exists_couplingCoset_with_given_reduction": {
+      "parent": "GlobalTheory.Mem.Col2.MemChart.exists_charts",
+      "weight": 101
+    },
+    "GlobalTheory.T.exists_family_exponential_locally": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+      "weight": 2541
+    },
+    "GlobalTheory.T.exists_galSide_cf_eq_cgTrue_at_members": {
+      "parent": "GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt",
+      "weight": 3286
+    },
+    "GlobalTheory.T.exists_geometric_height_constants": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Top.goodTower_and_volume",
+      "weight": 12498
+    },
+    "GlobalTheory.T.exists_germ_system": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+      "weight": 815
+    },
+    "GlobalTheory.T.exists_good_cover_at_minimal_level": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolG_alt_alt",
+      "weight": 1937
+    },
+    "GlobalTheory.T.exists_good_root_tower": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Top.goodTower_and_volume",
+      "weight": 9790
+    },
+    "GlobalTheory.T.exists_group_dictionary": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Top.goodTower_and_volume",
+      "weight": 945
+    },
+    "GlobalTheory.T.exists_hermitian_data_carT_of_std": {
+      "parent": "GlobalTheory.Mem.Col2.TC.colsTiedSym_std",
+      "weight": 1828
+    },
+    "GlobalTheory.T.exists_holomorphicFrameOrbit_lift_of_arc": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+      "weight": 931
+    },
+    "GlobalTheory.T.exists_holomorphic_latticeBasis_punctPolydiscCover_polyGrowth": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+      "weight": 1992
+    },
+    "GlobalTheory.T.exists_kummer_boundary_etale_cohomology": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 1633
+    },
+    "GlobalTheory.T.exists_lattice_embedding": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Top.goodTower_and_volume",
+      "weight": 837
+    },
+    "GlobalTheory.T.exists_levelJ_character_eq_member_off_places": {
+      "parent": "GlobalTheory.Mem.Col2.TC.twPack_ex",
+      "weight": 219
+    },
+    "GlobalTheory.T.exists_lie_metric": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Top.goodTower_and_volume",
+      "weight": 581
+    },
+    "GlobalTheory.T.exists_penultimateLevel_couplingCosets": {
+      "parent": "GlobalTheory.Mem.Col2.TC.twPack_ex",
+      "weight": 2004
+    },
+    "GlobalTheory.T.exists_proper_normal_flagScheme_of_affine_cover": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+      "weight": 1198
+    },
+    "GlobalTheory.T.exists_quasiProjective_harrisTaylor_family": {
+      "parent": "GlobalTheory.UPel.HT.model_nonempty",
+      "weight": 47940
+    },
+    "GlobalTheory.T.exists_reference_class_matching_coupling_coset": {
+      "parent": "GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt",
+      "weight": 130
+    },
+    "GlobalTheory.T.exists_snc_model_of_patches": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Top.goodTower_and_volume",
+      "weight": 1016
+    },
+    "GlobalTheory.T.exists_standardFormComparison_symmetricLevel_members": {
+      "parent": "GlobalTheory.Mem.Col2.TC.colsTiedSym_std",
+      "weight": 3113
+    },
+    "GlobalTheory.T.exists_torus_stable_snc_charts": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Top.goodTower_and_volume",
+      "weight": 1129
+    },
+    "GlobalTheory.T.exists_unitaryAdelic_lift_typePrime_reductions": {
+      "parent": "GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt",
+      "weight": 207
+    },
+    "GlobalTheory.T.exists_unitaryAdelic_twist_diagonal_at_primes": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 2
+    },
+    "GlobalTheory.T.expSt_of_base_change_and_crystalline_lattices": {
+      "parent": "GlobalTheory.BigOn.ontoX_of_hypotheses_alt_alt",
+      "weight": 45116
+    },
+    "GlobalTheory.T.expansion_eq_zero_iff_coeffs_mem": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 178
+    },
+    "GlobalTheory.T.exportSt_of_reciprocity_and_casselman_wallach": {
+      "parent": "GlobalTheory.BigOn.ontoX_of_hypotheses_alt_alt",
+      "weight": 10039
+    },
+    "GlobalTheory.T.family_pos_of_hodge_tate_inputs": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Top.goodTower_volume_of_reduced",
+      "weight": 28711
+    },
+    "GlobalTheory.T.final_theorem_of_inputs_left": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Plug.deepStR_of_use",
+      "weight": 17929
+    },
+    "GlobalTheory.T.finite_constant_all_holds": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+      "weight": 8814
+    },
+    "GlobalTheory.T.flag_cover_realisation_pullback": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Cusp.volumeTheoremX_of_inputs",
+      "weight": 18193
+    },
+    "GlobalTheory.T.flag_degree_polynomial_eval": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Plug.deepStR_of_use",
+      "weight": 1893
+    },
+    "GlobalTheory.T.flag_frames_generic_model_right": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Top.goodTower_and_volume",
+      "weight": 1332
+    },
+    "GlobalTheory.T.flag_model_common_refinement": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Top.goodTower_and_volume",
+      "weight": 1500
+    },
+    "GlobalTheory.T.flatDeg_of_scholzeWeinstein_of_prints": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolG_alt_alt",
+      "weight": 3808
+    },
+    "GlobalTheory.T.flat_first_from_resolution_and_gaga": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+      "weight": 549
+    },
+    "GlobalTheory.T.flat_sections_of_injective_zmodEtaleSheaf": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 178
+    },
+    "GlobalTheory.T.flat_theorem_of_resolution_gaga": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Top.goodTower_and_volume",
+      "weight": 1054
+    },
+    "GlobalTheory.T.frame_functions_flat_agree": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+      "weight": 515
+    },
+    "GlobalTheory.T.full_intersection_tower_I8_identity": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Cusp.volumeTheoremX_of_inputs",
+      "weight": 24440
+    },
+    "GlobalTheory.T.full_torsion_integrally_closed": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Top.goodTower_and_volume",
+      "weight": 502
+    },
+    "GlobalTheory.T.furtherPlace_penultimateChart_character_inverseValue": {
+      "parent": "GlobalTheory.T.exists_character_allCharts_furtherPlaces",
+      "weight": 98
+    },
+    "GlobalTheory.T.furtherPlaces_group_contains_chart_levels": {
+      "parent": "GlobalTheory.T.exists_penultimateLevel_couplingCosets",
+      "weight": 1075
+    },
+    "GlobalTheory.T.galoisRep_descends_at_real_places": {
+      "parent": "GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt",
+      "weight": 12852
+    },
+    "GlobalTheory.T.geometric_parameter_uniform_alt": {
+      "parent": "GlobalTheory.Fc.StageOneU.member_bundles_large_unramified_exponents_alt",
+      "weight": 9874
+    },
+    "GlobalTheory.T.germ_system_height_free": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+      "weight": 7040
+    },
+    "GlobalTheory.T.globalLatticeIndexTheorem_of_lengthBoundAtPlaces": {
+      "parent": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+      "weight": 29200
+    },
+    "GlobalTheory.T.good_ft_entries_alt_alt": {
+      "parent": "GlobalTheory.Fc.S0.Open0ProofU.open_orbit_of_unramified_exponents_alt",
+      "weight": 4113
+    },
+    "GlobalTheory.T.good_tower_I5": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Cusp.volumeTheoremX_of_inputs",
+      "weight": 14194
+    },
+    "GlobalTheory.T.good_tower_real_extra": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Cusp.volumeTheoremX_of_inputs",
+      "weight": 7537
+    },
+    "GlobalTheory.T.graded_cech_cohomology_finite": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 238
+    },
+    "GlobalTheory.T.hServ_of_linkR": {
+      "parent": "GlobalTheory.Fc.AllAtMemberStage0.allRows_of_open0_alt",
+      "weight": 131055
+    },
+    "GlobalTheory.T.harish_chandra_inputs_combined_alt_alt": {
+      "parent": "GlobalTheory.Fc.S0.Open0ProofU.open_orbit_of_unramified_exponents_alt",
+      "weight": 1207
+    },
+    "GlobalTheory.T.harrisTaylor_typeTj_isogenies_representable": {
+      "parent": "UpperTheory.Gal.Int.Geo.kodaira_spencer_of_weight_one",
+      "weight": 7372
+    },
+    "GlobalTheory.T.hasUnramifiedIntegralFramedPoints_of_goodPlaces": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolG_alt_alt",
+      "weight": 1749
+    },
+    "GlobalTheory.T.hermitianColumnChoices_of_formsLevelsClasses": {
+      "parent": "GlobalTheory.Mem.Col2.TC.colsTiedSym_std",
+      "weight": 408
+    },
+    "GlobalTheory.T.hermitianColumns_generators_baseLattices_functionals": {
+      "parent": "GlobalTheory.Mem.Col2.TC.colsTiedSym_std",
+      "weight": 1422
+    },
+    "GlobalTheory.T.hodge_cpt_global_nef_bound": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Top.goodTower_and_volume",
+      "weight": 5271
+    },
+    "GlobalTheory.T.hodge_cpt_projective_model": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Top.goodTower_and_volume",
+      "weight": 782
+    },
+    "GlobalTheory.T.hodge_tate_weil_local": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Top.goodTower_and_volume",
+      "weight": 536
+    },
+    "GlobalTheory.T.hodge_tate_weil_pullback": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Top.goodTower_and_volume",
+      "weight": 1186
+    },
+    "GlobalTheory.T.holomorphic_adapted_frame_on_ball": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Top.goodTower_and_volume",
+      "weight": 588
+    },
+    "GlobalTheory.T.host_primes_over_level_place": {
+      "parent": "GlobalTheory.Mem.Col2.TC.hermitian_data_at_level_prime",
+      "weight": 30
+    },
+    "GlobalTheory.T.hyps_e_third_layer_ser_n_of_geometric_galois": {
+      "parent": "GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt",
+      "weight": 22912
+    },
+    "GlobalTheory.T.intAt_scaled_baseCosetRep_of_adTie": {
+      "parent": "GlobalTheory.TwV.adLawAt_xiAd",
+      "weight": 5
+    },
+    "GlobalTheory.T.irreducibilityRow_of_concreteAutomorphicData": {
+      "parent": "GlobalTheory.CountRow.row_counts_of_ties_alt",
+      "weight": 5812
+    },
+    "GlobalTheory.T.isCohomologyContinuousOnCone_of_levelwise": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 252
+    },
+    "GlobalTheory.T.isConnected_zeroSet_uniformizer": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+      "weight": 2245
+    },
+    "GlobalTheory.T.isTensor_universal_property": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 201
+    },
+    "GlobalTheory.T.jet_rank_complex_le": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolG_alt_alt",
+      "weight": 1303
+    },
+    "GlobalTheory.T.kernelChainCharacter_normOne_eq_infinityType": {
+      "parent": "GlobalTheory.TwV.MuLawPf.muLaw_underTie",
+      "weight": 68
+    },
+    "GlobalTheory.T.kernelChainCharacters_algebraic_unitaryPoints": {
+      "parent": "GlobalTheory.TwV.MuLawPf.muLaw_underTie",
+      "weight": 134
+    },
+    "GlobalTheory.T.kernelStepCharacter_eq_one_integralUnitary": {
+      "parent": "GlobalTheory.TwV.MuLawPf.muLaw_underTie",
+      "weight": 504
+    },
+    "GlobalTheory.T.killsOver_square_zero_lift": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Top.goodTower_and_volume",
+      "weight": 547
+    },
+    "GlobalTheory.T.kummer_etale_vanishing": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 437
+    },
+    "GlobalTheory.T.kummer_sequence_etale_tateTwist": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 297
+    },
+    "GlobalTheory.T.large_unramified_exponent_bundles_exist_alt": {
+      "parent": "GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt",
+      "weight": 280670
+    },
+    "GlobalTheory.T.lastStepCharacter_at_levelDet_mul_localCharacters": {
+      "parent": "GlobalTheory.TwTop.levAt_top",
+      "weight": 166
+    },
+    "GlobalTheory.T.levelCover_cuspForm_pullback_injective_descent": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolG_alt_alt",
+      "weight": 1179
+    },
+    "GlobalTheory.T.levelMoved_point_frames_matrixSteps": {
+      "parent": "GlobalTheory.TwV.levAt_mat",
+      "weight": 511
+    },
+    "GlobalTheory.T.lie_metric_height_bound": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Top.goodTower_and_volume",
+      "weight": 1666
+    },
+    "GlobalTheory.T.liftBadSet_of_deep_size_flatDeg_share": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolG_alt_alt",
+      "weight": 2665
+    },
+    "GlobalTheory.T.liftInj_and_nonVan_typeNZ_of_given": {
+      "parent": "GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt",
+      "weight": 72275
+    },
+    "GlobalTheory.T.liftLambdaBound_of_gram_meas": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolG_alt_alt",
+      "weight": 1637
+    },
+    "GlobalTheory.T.liftLowBound_of_cover_estimates": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolG_alt_alt",
+      "weight": 440
+    },
+    "GlobalTheory.T.line_degree_special_fibre": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+      "weight": 587
+    },
+    "GlobalTheory.T.localConstants_from_admitted_local_Galois_statements": {
+      "parent": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+      "weight": 7143
+    },
+    "GlobalTheory.T.localMove_classRep_iff_localConditions": {
+      "parent": "GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt",
+      "weight": 42
+    },
+    "GlobalTheory.T.local_sum_estimates_joined": {
+      "parent": "GlobalTheory.BigTop.Fun.Close.fittedFunction_at_zero_close_alt",
+      "weight": 9
+    },
+    "GlobalTheory.T.log_canonical_criterion_boundary": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolG_alt_alt",
+      "weight": 7460
+    },
+    "GlobalTheory.T.lowDef_of_gram_of_anchor": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolG_alt_alt",
+      "weight": 14143
+    },
+    "GlobalTheory.T.lowerBound_height_on_boundary": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Top.goodTower_and_volume",
+      "weight": 1089
+    },
+    "GlobalTheory.T.main_theorem_published_inputs_third_alt_alt": {
+      "parent": "GlobalTheory.Fc.S0.Open0ProofU.open_orbit_of_unramified_exponents_alt",
+      "weight": 148318
+    },
+    "GlobalTheory.T.mem_framedLevel_iff_two_adelic_points": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 2
+    },
+    "GlobalTheory.T.member_exists_baseLattice_alt": {
+      "parent": "GlobalTheory.Fc.StageOneU.member_bundles_large_unramified_exponents_alt",
+      "weight": 188024
+    },
+    "GlobalTheory.T.model_on_hodge_from_family": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Top.goodTower_and_volume",
+      "weight": 43746
+    },
+    "GlobalTheory.T.muCharacter_det_level_eq_local_tame_product": {
+      "parent": "GlobalTheory.TwV.adLawAt_xiAd",
+      "weight": 9
+    },
+    "GlobalTheory.T.nonempty_classMap_above_lastStep": {
+      "parent": "GlobalTheory.Mem.Col2.TC.twPack_ex",
+      "weight": 11
+    },
+    "GlobalTheory.T.nonvanishing_transfer_characterSums_powerSeries": {
+      "parent": "UpperTheory.Kd.C7.pLocu",
+      "weight": 1991
+    },
+    "GlobalTheory.T.open0_of_unitary_group_hypotheses": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 169776
+    },
+    "GlobalTheory.T.orbits_separated_by_regular_cusp": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolG_alt_alt",
+      "weight": 14602
+    },
+    "GlobalTheory.T.orthonormalChange_intertwines_rationalIsometries": {
+      "parent": "GlobalTheory.RatPt.ratLaw_of_tie",
+      "weight": 67
+    },
+    "GlobalTheory.T.period_entries_tie_and_level_valuations_at_built": {
+      "parent": "GlobalTheory.Fc.AllAtMemberStage0.allRows_of_open0_alt",
+      "weight": 43650
+    },
+    "GlobalTheory.T.period_gram_comparison_bound": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Top.goodTower_and_volume",
+      "weight": 1382
+    },
+    "GlobalTheory.T.period_lattice_on_punctured_disc": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+      "weight": 564
+    },
+    "GlobalTheory.T.pic_faithfullyFlat_descent_unitCocycles": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 356
+    },
+    "GlobalTheory.T.pointOverX_has_adelicPoint_blockExtend_mul": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 2
+    },
+    "GlobalTheory.T.polarised_divisible_group_exists": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Plug.deepStR_of_use",
+      "weight": 1877
+    },
+    "GlobalTheory.T.polarized_abelian_part_principal": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Top.goodTower_and_volume",
+      "weight": 523
+    },
+    "GlobalTheory.T.pulledLatticeVector_mem_dualBaseLatticeCompletion": {
+      "parent": "GlobalTheory.TwV.adLawAt_xiAd",
+      "weight": 67
+    },
+    "GlobalTheory.T.quotient_char_trivial_inertia_cyclotomic_tower": {
+      "parent": "UpperTheory.Kd.C7.pLocu",
+      "weight": 221
+    },
+    "GlobalTheory.T.restrictScalars_injective_sheaf_acyclic": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 532
+    },
+    "GlobalTheory.T.root_lines_weight_bound_of_free": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Top.goodTower_and_volume",
+      "weight": 798
+    },
+    "GlobalTheory.T.rowTestLiftFormula_principalLevel": {
+      "parent": "GlobalTheory.RowClaim.Join.thetaLift_row_properties_conj",
+      "weight": 76
+    },
+    "GlobalTheory.T.saturatedOrdinaryIdeal_cuts_out_crystalline_locus": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt",
+      "weight": 2452
+    },
+    "GlobalTheory.T.seeSawWeilBiAction_commutes": {
+      "parent": "GlobalTheory.T.main_theorem_published_inputs_third_alt_alt",
+      "weight": 2
+    },
+    "GlobalTheory.T.semi_abelian_pullback_torus_extension": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Top.goodTower_and_volume",
+      "weight": 727
+    },
+    "GlobalTheory.T.short_generator_norm_comparison": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolG_alt_alt",
+      "weight": 1080
+    },
+    "GlobalTheory.T.span_periodLattice_complexSemiAbelian_eq_top": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+      "weight": 533
+    },
+    "GlobalTheory.T.square_leading_term_bound": {
+      "parent": "GlobalTheory.BigTop.Fun.Close.fittedFunction_at_zero_close_alt",
+      "weight": 34272
+    },
+    "GlobalTheory.T.standard_weyl_lattices_fock_dual": {
+      "parent": "GlobalTheory.TransDual.nabDelDual",
+      "weight": 2
+    },
+    "GlobalTheory.T.stepZeroHermitianLevel_uniformiser_kills_values_alt": {
+      "parent": "GlobalTheory.Mem.Col2.TC.colsTiedSym_std",
+      "weight": 130
+    },
+    "GlobalTheory.T.subsingleton_etaleCohomology_genericFibre_henselianLine": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 214
+    },
+    "GlobalTheory.T.subsingleton_ht_one_genericFibre_of_sh_etale_cover": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 20768
+    },
+    "GlobalTheory.T.sumOKK_of_theta_local_inputs": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 2
+    },
+    "GlobalTheory.T.sum_size_bound_all_places": {
+      "parent": "GlobalTheory.BigTop.Fun.Close.fittedFunction_at_zero_close_alt",
+      "weight": 18544
+    },
+    "GlobalTheory.T.tateTwistCupProduct_assoc": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 415
+    },
+    "GlobalTheory.T.tateTwistCupProduct_graded_comm": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 200
+    },
+    "GlobalTheory.T.tateTwistCup_unit_and_primitiveRoot_classes": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 422
+    },
+    "GlobalTheory.T.test_vector_assembly_holds": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 692
+    },
+    "GlobalTheory.T.theorem_tb_of_local_blochKato_duality_euler": {
+      "parent": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+      "weight": 8424
+    },
+    "GlobalTheory.T.thetaKeyScalar_isUnit_on_integralModels": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+      "weight": 3199
+    },
+    "GlobalTheory.T.thetaLift_adjoint_scalarFormula_injective": {
+      "parent": "GlobalTheory.Fc.StageOneU.member_bundles_large_unramified_exponents_alt",
+      "weight": 17210
+    },
+    "GlobalTheory.T.theta_conditions_of_inputs_of_jumpsCard": {
+      "parent": "GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt",
+      "weight": 12220
+    },
+    "GlobalTheory.T.tieChi_at_members_of_depthZero": {
+      "parent": "UpperTheory.GalC.final_of_alt",
+      "weight": 7254
+    },
+    "GlobalTheory.T.toric_ratio_family_estimate'": {
+      "parent": "GlobalTheory.BigTop.Fun.Close.fittedFunction_at_zero_close_alt",
+      "weight": 1237
+    },
+    "GlobalTheory.T.tower_weil_inputs_combined": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Cusp.volumeTheoremX_of_inputs",
+      "weight": 13414
+    },
+    "GlobalTheory.T.transportedLattice_localization_free_le_coefficientSpace": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 2
+    },
+    "GlobalTheory.T.trueColumnChoice_exists_chainData_with_basePoints": {
+      "parent": "GlobalTheory.Mem.Col2.TC.colsTwPTiedS_std",
+      "weight": 3174
+    },
+    "GlobalTheory.T.trueColumnChoice_exists_standardChainData": {
+      "parent": "GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt",
+      "weight": 4384
+    },
+    "GlobalTheory.T.tupleChains_levelStructure_compatible_at_levelPrime": {
+      "parent": "GlobalTheory.Mem.Col2.TC.colsTwPTiedS_std",
+      "weight": 376
+    },
+    "GlobalTheory.T.tupleLayerCompatibilities_of_X_prime": {
+      "parent": "GlobalTheory.Mem.Col2.TC.colsTwPTiedS_std",
+      "weight": 796
+    },
+    "GlobalTheory.T.tuplePrimedSpaceClasses_level_and_comparison": {
+      "parent": "GlobalTheory.T.tupleLayerCompatibilities_of_X_prime",
+      "weight": 224
+    },
+    "GlobalTheory.T.tuple_integralForms_row_place_by_place": {
+      "parent": "GlobalTheory.T.tupleLayerCompatibilities_of_X_prime",
+      "weight": 73
+    },
+    "GlobalTheory.T.twisted_characters_linearly_independent": {
+      "parent": "GlobalTheory.RowClaim.Join.thetaLift_row_properties_conj",
+      "weight": 20
+    },
+    "GlobalTheory.T.twisted_jets_assemble": {
+      "parent": "GlobalTheory.RowClaim.Join.thetaLift_row_properties_conj",
+      "weight": 14050
+    },
+    "GlobalTheory.T.twisted_local_factors_match": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 2
+    },
+    "GlobalTheory.T.twisted_multiplicity_one": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 47087
+    },
+    "GlobalTheory.T.twisted_square_theta_integrals_eq": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 2
+    },
+    "GlobalTheory.T.twisted_thetaLift_cuspidal": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 2
+    },
+    "GlobalTheory.T.twisted_theta_integral_unfolds": {
+      "parent": "GlobalTheory.RowClaim.Join.thetaLift_row_properties_conj",
+      "weight": 25645
+    },
+    "GlobalTheory.T.uniform_lower_bound_of_sums'": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolG_alt_alt",
+      "weight": 227
+    },
+    "GlobalTheory.T.valuation_bounded_frame": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+      "weight": 1223
+    },
+    "GlobalTheory.T.valuation_multiplicity_run_estimate_alt": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolG_alt_alt",
+      "weight": 4560
+    },
+    "GlobalTheory.T.wachLattice_laterClauses_hold": {
+      "parent": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+      "weight": 12168
+    },
+    "GlobalTheory.T.wedge_eigen_line_generator": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+      "weight": 538
+    },
+    "GlobalTheory.T.weil_datum_product_compatibility": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 276
+    },
+    "GlobalTheory.T.weil_unitary_entries'": {
+      "parent": "GlobalTheory.Fc.S0.Open0ProofU.open_orbit_of_unramified_exponents_alt",
+      "weight": 14518
+    },
+    "GlobalTheory.ThLoc.algTAll": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 16
+    },
+    "GlobalTheory.TheoremT.liftF_of_isGood": {
+      "parent": "UpperTheory.GalC.linkN_of_twGood_galoisPreconditions",
+      "weight": 33297
+    },
+    "GlobalTheory.ThetaCoordLine.exists_eq_smul": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 75
+    },
+    "GlobalTheory.ThetaNullNormSquares.normTheta0": {
+      "parent": "GlobalTheory.T.weil_unitary_entries'",
+      "weight": 232
+    },
+    "GlobalTheory.TieBase.base_data": {
+      "parent": "GlobalTheory.TwV.site_cmpLite_siteAdm",
+      "weight": 6
+    },
+    "GlobalTheory.Top.Irr.closed_linkIRR_of_join_count": {
+      "parent": "UpperTheory.Top.shape_closed_link_n_of_green",
+      "weight": 773
+    },
+    "GlobalTheory.Top.closed_family_admissible_twist_link_alt": {
+      "parent": "UpperTheory.Top.shape_closed_link_n_of_green",
+      "weight": 21017
+    },
+    "GlobalTheory.Top.closed_linkEta_of_duty": {
+      "parent": "UpperTheory.Top.shape_closed_link_n_of_green",
+      "weight": 1143
+    },
+    "GlobalTheory.Top.closed_linkG_of_duty": {
+      "parent": "UpperTheory.Top.shape_closed_link_n_of_green",
+      "weight": 13
+    },
+    "GlobalTheory.Top.designExists_of_tuSize_aux4n_litThin": {
+      "parent": "UpperTheory.Top.shape_closed_link_n_of_green",
+      "weight": 1749
+    },
+    "GlobalTheory.Top.link_alt_alt_bis": {
+      "parent": "UpperTheory.Top.shape_closed_link_n_of_green",
+      "weight": 1314
+    },
+    "GlobalTheory.Top.link_brest_alt": {
+      "parent": "UpperTheory.Top.shape_closed_link_n_of_green",
+      "weight": 2204
+    },
+    "GlobalTheory.Top.link_gl": {
+      "parent": "UpperTheory.Top.shape_closed_link_n_of_green",
+      "weight": 11198
+    },
+    "GlobalTheory.Top.wire_sel_alt": {
+      "parent": "UpperTheory.Top.shape_closed_link_n_of_green",
+      "weight": 5644
+    },
+    "GlobalTheory.TransDual.nabDelDual": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 246
+    },
+    "GlobalTheory.TrueTheta.exists_chi": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 301
+    },
+    "GlobalTheory.TrueTheta.exists_coef_field": {
+      "parent": "GlobalTheory.TrueTheta.exists_family_of_curve",
+      "weight": 88
+    },
+    "GlobalTheory.TrueTheta.exists_family_of_curve": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 1108
+    },
+    "GlobalTheory.TrueTheta.exists_field": {
+      "parent": "GlobalTheory.TrueTheta.exists_coef_field",
+      "weight": 14
+    },
+    "GlobalTheory.TwRat.ratPt": {
+      "parent": "GlobalTheory.TwV.ptEx_isPtAd",
+      "weight": 48
+    },
+    "GlobalTheory.TwRat.ratUnitCol": {
+      "parent": "GlobalTheory.RatPt.ratLaw_of_tie",
+      "weight": 6
+    },
+    "GlobalTheory.TwTop.levAt_top": {
+      "parent": "GlobalTheory.TwV.adLawAt_xiAd",
+      "weight": 1352
+    },
+    "GlobalTheory.TwU.UnitaryFrom.exists_uf_seamGL_eq": {
+      "parent": "GlobalTheory.TwV.adLawAt_xiAd",
+      "weight": 37
+    },
+    "GlobalTheory.TwU.datLoc_homRe": {
+      "parent": "GlobalTheory.TwU.xiM_datLoc",
+      "weight": 10
+    },
+    "GlobalTheory.TwU.funMoved_ratA_act": {
+      "parent": "GlobalTheory.TwV.adLawAt_xiAd",
+      "weight": 15
+    },
+    "GlobalTheory.TwU.std_at_served": {
+      "parent": "GlobalTheory.TwV.site_cmpLite_siteAdm",
+      "weight": 14
+    },
+    "GlobalTheory.TwU.xiM_datLoc": {
+      "parent": "GlobalTheory.pairOK_allSites",
+      "weight": 37
+    },
+    "GlobalTheory.TwV.AwayCpl.ptAway_cpl": {
+      "parent": "GlobalTheory.TwV.adLawAt_xiAd",
+      "weight": 1000
+    },
+    "GlobalTheory.TwV.CompSp.locSp_compan_eq": {
+      "parent": "GlobalTheory.TwV.site_cmpLite_siteAdm",
+      "weight": 43
+    },
+    "GlobalTheory.TwV.FacQPt.facQ_isPt": {
+      "parent": "GlobalTheory.TwV.SpanPt.locSp_latAd_isPt",
+      "weight": 15
+    },
+    "GlobalTheory.TwV.Joint.basesAt_span": {
+      "parent": "GlobalTheory.TwV.site_cmpLite_siteAdm",
+      "weight": 7
+    },
+    "GlobalTheory.TwV.Joint.locSp_kerN_succ": {
+      "parent": "GlobalTheory.pairOK_allSites",
+      "weight": 37
+    },
+    "GlobalTheory.TwV.Joint.locSp_kerN_zero": {
+      "parent": "GlobalTheory.pairOK_allSites",
+      "weight": 16
+    },
+    "GlobalTheory.TwV.KerSp.locSp_latK_isPt": {
+      "parent": "GlobalTheory.pairOK_allSites",
+      "weight": 228
+    },
+    "GlobalTheory.TwV.LevDeco.ptAd_mul_lev_deco": {
+      "parent": "GlobalTheory.TwV.levAt_mat",
+      "weight": 71
+    },
+    "GlobalTheory.TwV.Lt.inert_theta_admissibility_of_complex_multiplication": {
+      "parent": "GlobalTheory.Svd.servH_row_of_artin",
+      "weight": 13159
+    },
+    "GlobalTheory.TwV.MuLawPf.muLaw_underTie": {
+      "parent": "GlobalTheory.TwV.adLawAt_xiAd",
+      "weight": 751
+    },
+    "GlobalTheory.TwV.SpanPt.locSp_latAd_isPt": {
+      "parent": "GlobalTheory.TwV.KerSp.locSp_latK_isPt",
+      "weight": 20
+    },
+    "GlobalTheory.TwV.StepDel.del_of_pos": {
+      "parent": "GlobalTheory.TwV.site_cmpLite_siteAdm",
+      "weight": 3
+    },
+    "GlobalTheory.TwV.StepZero.del_zero": {
+      "parent": "GlobalTheory.TwV.site_cmpLite_siteAdm",
+      "weight": 4
+    },
+    "GlobalTheory.TwV.adLawAt_xiAd": {
+      "parent": "GlobalTheory.TwV.exists_adLawAt_joint",
+      "weight": 10997
+    },
+    "GlobalTheory.TwV.away_of_dict": {
+      "parent": "GlobalTheory.TwV.site_cmpLite_siteAdm",
+      "weight": 2349
+    },
+    "GlobalTheory.TwV.congAt_fb_lev": {
+      "parent": "GlobalTheory.TwV.isPtAd_mul_lev",
+      "weight": 911
+    },
+    "GlobalTheory.TwV.cosetOf_eq_yb": {
+      "parent": "GlobalTheory.TwV.adLawAt_xiAd",
+      "weight": 40
+    },
+    "GlobalTheory.TwV.exists_adLawAt_joint": {
+      "parent": "GlobalTheory.TwV.joint_at_nonempty",
+      "weight": 11032
+    },
+    "GlobalTheory.TwV.isPtAd_mul_lev": {
+      "parent": "GlobalTheory.TwV.ptEx_isPtAd",
+      "weight": 1175
+    },
+    "GlobalTheory.TwV.joint_at_nonempty": {
+      "parent": "GlobalTheory.TwV.site_cmpLite_siteAdm",
+      "weight": 11423
+    },
+    "GlobalTheory.TwV.joint_dict": {
+      "parent": "GlobalTheory.TwV.site_cmpLite_siteAdm",
+      "weight": 189
+    },
+    "GlobalTheory.TwV.latAdLoc_of": {
+      "parent": "GlobalTheory.TwV.KerSp.locSp_latK_isPt",
+      "weight": 133
+    },
+    "GlobalTheory.TwV.levAt_mat": {
+      "parent": "GlobalTheory.TwV.adLawAt_xiAd",
+      "weight": 647
+    },
+    "GlobalTheory.TwV.levSrc_localData": {
+      "parent": "GlobalTheory.LevSrcCpl.levSrc_cpl",
+      "weight": 16
+    },
+    "GlobalTheory.TwV.locSp_eq_image": {
+      "parent": "GlobalTheory.TwV.latAdLoc_of",
+      "weight": 89
+    },
+    "GlobalTheory.TwV.locSp_reindex": {
+      "parent": "GlobalTheory.pairOK_allSites",
+      "weight": 11
+    },
+    "GlobalTheory.TwV.move_at_site": {
+      "parent": "GlobalTheory.TwV.site_cmpLite_siteAdm",
+      "weight": 563
+    },
+    "GlobalTheory.TwV.moved_pair_datum_eq_adelic_datum_alt": {
+      "parent": "GlobalTheory.TwU.xiM_datLoc",
+      "weight": 9
+    },
+    "GlobalTheory.TwV.ph_tensInt_onto": {
+      "parent": "GlobalTheory.TwV.locSp_eq_image",
+      "weight": 36
+    },
+    "GlobalTheory.TwV.pos_at_site": {
+      "parent": "GlobalTheory.TwV.site_cmpLite_siteAdm",
+      "weight": 32
+    },
+    "GlobalTheory.TwV.ptEx_isPtAd": {
+      "parent": "GlobalTheory.TwV.adLawAt_xiAd",
+      "weight": 1275
+    },
+    "GlobalTheory.TwV.scal_at_site": {
+      "parent": "GlobalTheory.TwV.site_cmpLite_siteAdm",
+      "weight": 103
+    },
+    "GlobalTheory.TwV.site_cmpLite_siteAdm": {
+      "parent": "GlobalTheory.Svd.modelsAt_of_part",
+      "weight": 30579
+    },
+    "GlobalTheory.TwV.site_law_xiIn": {
+      "parent": "GlobalTheory.TwV.site_cmpLite_siteAdm",
+      "weight": 5250
+    },
+    "GlobalTheory.TwV.sizeLaw_of_tie": {
+      "parent": "GlobalTheory.TwV.adLawAt_xiAd",
+      "weight": 607
+    },
+    "GlobalTheory.TwV.xiAd_intOff": {
+      "parent": "GlobalTheory.TwV.adLawAt_xiAd",
+      "weight": 95
+    },
+    "GlobalTheory.UPel.HT.Model.isProjOver_of_compactB": {
+      "parent": "UpperTheory.Gal.Int.Geo.kodaira_spencer_of_weight_one",
+      "weight": 13390
+    },
+    "GlobalTheory.UPel.HT.model_nonempty": {
+      "parent": "UpperTheory.Gal.Int.Geo.kodaira_spencer_of_weight_one",
+      "weight": 59936
+    },
+    "GlobalTheory.Unf.ContrLaw": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 12
+    },
+    "GlobalTheory.Unf.FlatLaw": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 7
+    },
+    "GlobalTheory.VacuumExact.vacuum_exact": {
+      "parent": "GlobalTheory.RatEqui.oddEq_of_even",
+      "weight": 53
+    },
+    "GlobalTheory.VolRatioFromSiegelWeil.volumeRatio": {
+      "parent": "GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt",
+      "weight": 838
+    },
+    "GlobalTheory.WeilConv.twisted_weil_representation_convergence": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 264
+    },
+    "GlobalTheory.WeilInter.om_iop": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 247
+    },
+    "GlobalTheory.carrierNeedsFromD": {
+      "parent": "GlobalTheory.CarrierGap.carrierP",
+      "weight": 38965
+    },
+    "GlobalTheory.discreteSeriesCoef_pointwiseBound": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 17859
+    },
+    "GlobalTheory.exists_strictHenselisation": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 352
+    },
+    "GlobalTheory.funMoved_mul_level": {
+      "parent": "GlobalTheory.TwV.isPtAd_mul_lev",
+      "weight": 27
+    },
+    "GlobalTheory.genusMassAt_two": {
+      "parent": "GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt",
+      "weight": 2
+    },
+    "GlobalTheory.goodPrime_packages": {
+      "parent": "GlobalTheory.leafDepthGood_of_chartForm",
+      "weight": 46421
+    },
+    "GlobalTheory.indEtale_localPieces_trans": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 716
+    },
+    "GlobalTheory.isLat_dl_of_isOrthCo": {
+      "parent": "GlobalTheory.pairOK_allSites",
+      "weight": 3
+    },
+    "GlobalTheory.kerTh_entire_algCoef": {
+      "parent": "GlobalTheory.pairOK_allSites",
+      "weight": 31
+    },
+    "GlobalTheory.leafDepthGood_of_chartForm": {
+      "parent": "GlobalTheory.BigOn.geoSt_of_pageSt_alt",
+      "weight": 61875
+    },
+    "GlobalTheory.pairOK_allSites": {
+      "parent": "GlobalTheory.TwV.site_cmpLite_siteAdm",
+      "weight": 585
+    },
+    "GlobalTheory.rowMainEqP_of_siegelWeil": {
+      "parent": "GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt",
+      "weight": 719
+    },
+    "GlobalTheory.rowNGP_of_siegelWeil": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 1500
+    },
+    "GlobalTheory.rowsPos_typeP": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 36951
+    },
+    "GlobalTheory.seriesRatS_and_serInt_of_globalArtin": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 13431
+    },
+    "GlobalTheory.smul_dualSet_latAd_mem": {
+      "parent": "GlobalTheory.TwV.KerSp.locSp_latK_isPt",
+      "weight": 39
+    },
+    "GlobalTheory.theoremB_closing": {
+      "parent": "GlobalTheory.NLink.InertStep.main_alt_alt",
+      "weight": 35344
+    },
+    "GlobalTheory.unitary_conj_orthonormal": {
+      "parent": "GlobalTheory.TwV.adLawAt_xiAd",
+      "weight": 17
+    },
+    "GroundTheory.Heights₂.Heights.NumbersDVR.NumericalSegre.full": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Plug.deepStR_of_use",
+      "weight": 2923
+    },
+    "GroundTheory.Heights₂.Heights.Regular.Tau0Holomorphic.cond": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+      "weight": 500
+    },
+    "GroundTheory.Heights₂.Heights.StrongApprox.SAHolds.full": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Plug.deepStR_of_use",
+      "weight": 1037
+    },
+    "GroundTheory.PAdicHodge.ACris.IsACrisFraction.exists_norm_eq_zpow": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 2008
+    },
+    "GroundTheory.PAdicHodge.ACris.bCris_fixed_mem_maxUnramified": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 520
+    },
+    "GroundTheory.PAdicHodge.ACris.exists_periodT_eq_mu_mul_unit": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 247
+    },
+    "GroundTheory.PAdicHodge.ACris.phiPlus_mem_span_periodT": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 373
+    },
+    "GroundTheory.PAdicHodge.bDeRham_fixed": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 1407
+    },
+    "LateralTheory.CohomologicalPurity.LeafAWCutTw.twSec": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 266
+    },
+    "LateralTheory.E.FiltPf.TowerFin_of": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 207
+    },
+    "LateralTheory.E.LeafHalf1Pf.LeafHalf1_of": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 275
+    },
+    "LateralTheory.EtaleFoundations.acyc.column_of": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 239
+    },
+    "LateralTheory.EtaleFoundations.tqis.cone_of": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 203
+    },
+    "LateralTheory.Fin.EtaleTwistResolutionUniversalExtension.intersectionNumber_baseChange": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 248
+    },
+    "LateralTheory.Fin.SHInv.etale_purely_inseparable_extension_cohomology_invariant_in_henselizati": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 307
+    },
+    "PositivityTheory.HtPt.Ah.ais": {
+      "parent": "PositivityTheory.HtPt.Ah.deep_slim_use",
+      "weight": 2006
+    },
+    "PositivityTheory.HtPt.Ah.deep_slim_use": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+      "weight": 486193
+    },
+    "PositivityTheory.HtPt.Ah.quot": {
+      "parent": "PositivityTheory.HtPt.Ah.deep_slim_use",
+      "weight": 2151
+    },
+    "PositivityTheory.HtPt.Ah.resK": {
+      "parent": "PositivityTheory.HtPt.Ah.deep_slim_use",
+      "weight": 63
+    },
+    "PositivityTheory.HtPt.Ce.geompf_tan": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+      "weight": 702
+    },
+    "PositivityTheory.HtPt.Cocp.tanpf_inj": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+      "weight": 3147
+    },
+    "PositivityTheory.KB.bOdd_zk": {
+      "parent": "UpperTheory.V.ZK.lemmaK_litN_alt",
+      "weight": 23135
+    },
+    "PositivityTheory.Pf1.HilbertSamuelMoriwaki.hsUse_outright": {
+      "parent": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+      "weight": 9
+    },
+    "PositivityTheory.Pf1.HilbertSamuelMoriwaki.moriwakiBig_outright": {
+      "parent": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+      "weight": 13
+    },
+    "PositivityTheory.Prw.toroidalChartsForFan_of": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+      "weight": 0
+    },
+    "PositivityTheory.QuaternionShaBounds.sSha": {
+      "parent": "UpperTheory.V.ZK.lemmaK",
+      "weight": 622
+    },
+    "PositivityTheory.Rg.BcB.F.FX.Bo.AdmProd_holds": {
+      "parent": "UpperTheory.FinalTheorems.everyCharacter",
+      "weight": 6
+    },
+    "PositivityTheory.Rg.BcB.F.FX.Bo.CandParts_holds": {
+      "parent": "UpperTheory.FinalTheorems.everyCharacter",
+      "weight": 29
+    },
+    "PositivityTheory.Rg.BcB.F.FX.Bo.IsoInv_holds": {
+      "parent": "UpperTheory.FinalTheorems.everyCharacter",
+      "weight": 38
+    },
+    "PositivityTheory.Rg.BcB.F.FX.Bo.LevOpen_holds": {
+      "parent": "UpperTheory.FinalTheorems.everyCharacter",
+      "weight": 120
+    },
+    "PositivityTheory.Rg.BcB.F.FX.Bo.StrictProd_holds": {
+      "parent": "UpperTheory.FinalTheorems.everyCharacter",
+      "weight": 19
+    },
+    "PositivityTheory.Rg.BcB.F.FX.Bo.Tw.FinStrict_holds": {
+      "parent": "UpperTheory.FinalTheorems.everyCharacter",
+      "weight": 297
+    },
+    "PositivityTheory.Rg.BcB.F.FX.Bo.Tw.StrictJoin_holds": {
+      "parent": "UpperTheory.HeckeLevelFrameExistence.candFin",
+      "weight": 88
+    },
+    "PositivityTheory.Rg.Rsw.L.fibEx": {
+      "parent": "PositivityTheory.Rg.Rsw.resCore",
+      "weight": 10255
+    },
+    "PositivityTheory.Rg.Rsw.L.fixW": {
+      "parent": "PositivityTheory.Rg.Rsw.resCore",
+      "weight": 446
+    },
+    "PositivityTheory.Rg.Rsw.L.goodEv": {
+      "parent": "PositivityTheory.Rg.Rsw.resCore",
+      "weight": 249
+    },
+    "PositivityTheory.Rg.Rsw.L.idemEx": {
+      "parent": "PositivityTheory.Rg.Rsw.resCore",
+      "weight": 2
+    },
+    "PositivityTheory.Rg.Rsw.L.nullSing": {
+      "parent": "PositivityTheory.Rg.Rsw.resCore",
+      "weight": 1313
+    },
+    "PositivityTheory.Rg.Rsw.resCore": {
+      "parent": "GlobalTheory.T.liftInj_and_nonVan_typeNZ_of_given",
+      "weight": 64875
+    },
+    "PositivityTheory.Rg.Rsw.sphBound": {
+      "parent": "PositivityTheory.Rg.Rsw.resCore",
+      "weight": 6778
+    },
+    "PositivityTheory.SiegelWeilFormula.Fin.siegelWeilStd": {
+      "parent": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+      "weight": 20986
+    },
+    "PositivityTheory.ThKR.theoremK_head2": {
+      "parent": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+      "weight": 97419
+    },
+    "PositivityTheory.Xgp.per_diag.levi_diagonal_of_isPeriodChart": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Plug.deepStR_of_use",
+      "weight": 1016
+    },
+    "PositivityTheory.Xj7N.small_sections_injective": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+      "weight": 4606
+    },
+    "QH.pairEx": {
+      "parent": "UpperTheory.T3.supplyOfAdmOf",
+      "weight": 17613
+    },
+    "ReciprocityTheory.AnForm.A.pshExtension_thm": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Plug.deepStR_of_use",
+      "weight": 919
+    },
+    "ReciprocityTheory.AnForm.M.degreeFormulaInt": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Plug.deepStR_of_use",
+      "weight": 798
+    },
+    "ReciprocityTheory.AnForm.M.poincareLelong": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Plug.deepStR_of_use",
+      "weight": 975
+    },
+    "ReciprocityTheory.ChartRestriction.DS.Lap.TopClosed.besselNVG": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 21500
+    },
+    "ReciprocityTheory.ChartRestriction.G.Out.GtBCPf.gtBaseChange": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+      "weight": 740
+    },
+    "ReciprocityTheory.ChartRestriction.G.SA.locGen": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Plug.deepStR_of_use",
+      "weight": 1362
+    },
+    "SelfIntersectionVolumeEstimates.height_lower_bound_general_alt": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolG_alt_alt",
+      "weight": 29605
+    },
+    "SelfIntersectionVolumeEstimates.topCovolG_alt_alt": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+      "weight": 205928
+    },
+    "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt": {
+      "parent": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+      "weight": 836896
+    },
+    "SheetDecomposition.baseUnifEx2": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Top.goodTower_and_volume",
+      "weight": 2241
+    },
+    "SheetDecomposition.transferU": {
+      "parent": "GlobalTheory.CompanionTheory.Ar.Top.goodTower_and_volume",
+      "weight": 817
+    },
+    "UpperTheory.BaseChangeIdentities.Conclusion1_alt_alt_alt": {
+      "parent": "GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt",
+      "weight": 4395
+    },
+    "UpperTheory.BaseChangeIdentities.baseChangeN": {
+      "parent": "UpperTheory.One.vwin_of_row",
+      "weight": 1699
+    },
+    "UpperTheory.BaseChangeIdentities.baseChangeN_of": {
+      "parent": "UpperTheory.BaseChangeIdentities.baseChangeN",
+      "weight": 1279
+    },
+    "UpperTheory.Comparison₂.charsA": {
+      "parent": "UpperTheory.Comparison₂.core_gm",
+      "weight": 203
+    },
+    "UpperTheory.Comparison₂.core_gm": {
+      "parent": "UpperTheory.Comparison₂.level_gm_le_on_family_scales",
+      "weight": 3303
+    },
+    "UpperTheory.Comparison₂.formB": {
+      "parent": "UpperTheory.Top.zeroFreeAll_of_topG",
+      "weight": 2057
+    },
+    "UpperTheory.Comparison₂.gmA_eq": {
+      "parent": "UpperTheory.Comparison₂.core_gm",
+      "weight": 242
+    },
+    "UpperTheory.Comparison₂.hostFactsS": {
+      "parent": "UpperTheory.Top.zero_free_all_of_green_v_win",
+      "weight": 130
+    },
+    "UpperTheory.Comparison₂.level_gm_le_on_family_scales": {
+      "parent": "UpperTheory.Top.zeroFreeAll_of_topG",
+      "weight": 3365
+    },
+    "UpperTheory.Comparison₂.sigA_le": {
+      "parent": "UpperTheory.Comparison₂.core_gm",
+      "weight": 51
+    },
+    "UpperTheory.ConvolutionTheory.R2.I.key": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.v_window_of_automorphy_csd_ss_mono_odd",
+      "weight": 3493
+    },
+    "UpperTheory.ConvolutionTheory.R2.quadBC2": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.v_window_of_automorphy_csd_ss_mono_odd",
+      "weight": 3963
+    },
+    "UpperTheory.ConvolutionTheory.R2.weilEx": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.v_window_of_automorphy_csd_ss_mono_odd",
+      "weight": 3582
+    },
+    "UpperTheory.ConvolutionTheory.RankTwoDescent.descS": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.published_hypotheses_from_patching_alt",
+      "weight": 20654
+    },
+    "UpperTheory.ConvolutionTheory.Sph.quadLift": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt",
+      "weight": 6855
+    },
+    "UpperTheory.Et.D3.intersectionNumber_baseChange": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 297
+    },
+    "UpperTheory.Et.E2.main": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 12772
+    },
+    "UpperTheory.Et.E3.main": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 6022
+    },
+    "UpperTheory.Et.affine_proper_base_change": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 5521
+    },
+    "UpperTheory.Et.e4": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 21767
+    },
+    "UpperTheory.FinalTheorems.everyCharacter": {
+      "parent": "allChi",
+      "weight": 9567042
+    },
+    "UpperTheory.FinalTheorems.everyCharacter_of_row": {
+      "parent": "UpperTheory.FinalTheorems.everyCharacter",
+      "weight": 7429192
+    },
+    "UpperTheory.Gal.FiniteEtaleModels.ksGood_holds": {
+      "parent": "UpperTheory.Gal.Int.Geo.kodaira_spencer_of_weight_one",
+      "weight": 5340
+    },
+    "UpperTheory.Gal.FixZ.FixK_holds": {
+      "parent": "UpperTheory.Gal.Int.Geo.kodaira_spencer_of_weight_one",
+      "weight": 29747
+    },
+    "UpperTheory.Gal.G3.kSEx_holds": {
+      "parent": "UpperTheory.Gal.Int.Geo.kodaira_spencer_of_weight_one",
+      "weight": 4631
+    },
+    "UpperTheory.Gal.G3.locTower_of": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 295
+    },
+    "UpperTheory.Gal.G3.vBcS_holds": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 322
+    },
+    "UpperTheory.Gal.Int.Geo.CovMain.mIn": {
+      "parent": "UpperTheory.Gal.Int.Geo.kodaira_spencer_of_weight_one",
+      "weight": 16664
+    },
+    "UpperTheory.Gal.Int.Geo.Pl.planEx_holds": {
+      "parent": "UpperTheory.Gal.Int.Geo.geometric_realization_of_weight_one",
+      "weight": 25753
+    },
+    "UpperTheory.Gal.Int.Geo.geoOne_holds": {
+      "parent": "UpperTheory.Gal.Int.galoisRepresentations_of_thetaLift",
+      "weight": 625495
+    },
+    "UpperTheory.Gal.Int.Geo.geoOne_of_parts": {
+      "parent": "UpperTheory.Gal.Int.Geo.geometric_realization_of_weight_one",
+      "weight": 127
+    },
+    "UpperTheory.Gal.Int.Geo.geometric_realization_of_weight_one": {
+      "parent": "UpperTheory.Gal.Int.Geo.geoOne_holds",
+      "weight": 595445
+    },
+    "UpperTheory.Gal.Int.Geo.jumpStep_holds": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 32467
+    },
+    "UpperTheory.Gal.Int.Geo.kodaira_spencer_of_weight_one": {
+      "parent": "UpperTheory.Gal.Int.Geo.geometric_realization_of_weight_one",
+      "weight": 235591
+    },
+    "UpperTheory.Gal.Int.Geo.repEx_holds": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 1426
+    },
+    "UpperTheory.Gal.Int.Geo.steps_holds": {
+      "parent": "UpperTheory.Gal.Int.Geo.geometric_realization_of_weight_one",
+      "weight": 317725
+    },
+    "UpperTheory.Gal.Int.Geo.steps_of": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 4105
+    },
+    "UpperTheory.Gal.Int.Geo.weight_one_geometric_realization": {
+      "parent": "UpperTheory.Gal.Int.Geo.geoOne_holds",
+      "weight": 29196
+    },
+    "UpperTheory.Gal.Int.galoisLocalGlobalStrong_of_geometry_lift": {
+      "parent": "UpperTheory.Gal.Int.galoisRepresentations_of_thetaLift",
+      "weight": 93354
+    },
+    "UpperTheory.Gal.Int.galoisRepresentations_of_thetaLift": {
+      "parent": "UpperTheory.FinalTheorems.everyCharacter",
+      "weight": 720478
+    },
+    "UpperTheory.Gal.KunnethLefschetz.Core.inputs": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 20688
+    },
+    "UpperTheory.Gal.KunnethLefschetz.core_holds": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 376
+    },
+    "UpperTheory.Gal.KunnethLefschetz.etSide_sm": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 288
+    },
+    "UpperTheory.Gal.KunnethLefschetz.steps_holds": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 5216
+    },
+    "UpperTheory.Gal.LocalSmoothExtension.ksHodge_of_geo": {
+      "parent": "UpperTheory.Gal.Int.Geo.kodaira_spencer_of_weight_one",
+      "weight": 30291
+    },
+    "UpperTheory.Gal.SV.galois_rep_exists_totally_real_rank_two_of_base_change": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.published_hypotheses_from_patching_alt",
+      "weight": 1381
+    },
+    "UpperTheory.Gal.Seam.crysStep_holds": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 9207
+    },
+    "UpperTheory.Gal.Seam.intMap": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 187
+    },
+    "UpperTheory.Gal.Seam.pieceIn_holds": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 1230
+    },
+    "UpperTheory.Gal.TranscendenceTraces.adic": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 328
+    },
+    "UpperTheory.Gal.TranscendenceTraces.corrEq_holds": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 203
+    },
+    "UpperTheory.Gal.TranscendenceTraces.fL_holds": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 635
+    },
+    "UpperTheory.Gal.TranscendenceTraces.trSum_holds": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 225
+    },
+    "UpperTheory.Gal.TranscendenceTraces.wtNormal_holds": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 837
+    },
+    "UpperTheory.Gal.crystallineComparison.Mod.esNorm_link": {
+      "parent": "UpperTheory.Gal.Int.Geo.kodaira_spencer_of_weight_one",
+      "weight": 3185
+    },
+    "UpperTheory.Gal.projectedFormsSystemPart.linkedUnlE_alt": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt",
+      "weight": 7849
+    },
+    "UpperTheory.GalC.exists_good_cut_facts_tie4": {
+      "parent": "UpperTheory.GalC.final_alt_alt",
+      "weight": 5033
+    },
+    "UpperTheory.GalC.final_alt_alt": {
+      "parent": "GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt",
+      "weight": 222063
+    },
+    "UpperTheory.GalC.final_of_alt": {
+      "parent": "UpperTheory.GalC.final_alt_alt",
+      "weight": 212676
+    },
+    "UpperTheory.GalC.linkN_of_twGood_galoisPreconditions": {
+      "parent": "UpperTheory.GalC.linkedAt_linkN_of_boundAtTwoThree",
+      "weight": 205214
+    },
+    "UpperTheory.GalC.linkedAt_linkN_of_boundAtTwoThree": {
+      "parent": "UpperTheory.GalC.final_of_alt",
+      "weight": 205234
+    },
+    "UpperTheory.GalN.V.Win.N.countK_alt": {
+      "parent": "UpperTheory.GalN.V.Win.N.numberU3U_of_prints",
+      "weight": 156
+    },
+    "UpperTheory.GalN.V.Win.N.countP_alt": {
+      "parent": "UpperTheory.GalN.V.Win.N.countQ_alt",
+      "weight": 313
+    },
+    "UpperTheory.GalN.V.Win.N.countQ_alt": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt",
+      "weight": 725
+    },
+    "UpperTheory.GalN.V.Win.N.frobenius_trace_count_bound_of_cm_eigensystem_count_alt": {
+      "parent": "UpperTheory.GalN.V.Win.N.numberU3U_of_prints",
+      "weight": 273
+    },
+    "UpperTheory.GalN.V.Win.N.frobenius_trace_count_bound_of_rat_eigensystem_count_alt": {
+      "parent": "UpperTheory.GalN.V.Win.N.numberU3U_of_prints",
+      "weight": 271
+    },
+    "UpperTheory.GalN.V.Win.N.numberU3U_of_prints": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt",
+      "weight": 1099
+    },
+    "UpperTheory.GalN.V.numberSp4_n_alt": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.countII_and_countIII_of_printsH_of_sp4In",
+      "weight": 299
+    },
+    "UpperTheory.GalS.galois_preconditions_at_mem": {
+      "parent": "UpperTheory.GalC.final_alt_alt",
+      "weight": 1273
+    },
+    "UpperTheory.HeckeLevelFrameExistence.CF.candFin_of": {
+      "parent": "UpperTheory.HeckeLevelFrameExistence.candFin",
+      "weight": 327
+    },
+    "UpperTheory.HeckeLevelFrameExistence.candFin": {
+      "parent": "UpperTheory.BaseChangeIdentities.baseChangeN",
+      "weight": 418
+    },
+    "UpperTheory.Kd.C7.pLocu": {
+      "parent": "UpperTheory.V.Z.Kato.Final.zetaUr",
+      "weight": 9832
+    },
+    "UpperTheory.Kd.K4.kato_eulerSystem_integrality": {
+      "parent": "UpperTheory.V.Z.Kato.Final.zetaUr",
+      "weight": 24730
+    },
+    "UpperTheory.Kd.K4.top": {
+      "parent": "UpperTheory.Kd.K4.kato_eulerSystem_integrality",
+      "weight": 24729
+    },
+    "UpperTheory.Lit.Cmp.locTied6": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 1121
+    },
+    "UpperTheory.Lit.Tam.tamagawa_local_volume_factor": {
+      "parent": "SelfIntersectionVolumeEstimates.topCovolG_alt_alt",
+      "weight": 8511
+    },
+    "UpperTheory.Lit.every_character_of_theta_integrals_local_matching": {
+      "parent": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+      "weight": 4409174
+    },
+    "UpperTheory.Lit.functionalsSeparate_of_howeUnram_of_siegelWeil": {
+      "parent": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "weight": 64874
+    },
+    "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound": {
+      "parent": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+      "weight": 3679692
+    },
+    "UpperTheory.LiteratureTheorems.OpenImageCondition": {
+      "parent": "UpperTheory.One.vwin_of_row",
+      "weight": 2
+    },
+    "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin": {
+      "parent": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+      "weight": 6497544
+    },
+    "UpperTheory.LiteratureTheorems.fargues_exact_of_literature": {
+      "parent": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+      "weight": 1613
+    },
+    "UpperTheory.LiteratureTheorems.galois_cohomology_from_literature": {
+      "parent": "UpperTheory.One.Join.v_window_of_depth_zero_residual_bc_cm",
+      "weight": 33
+    },
+    "UpperTheory.LiteratureTheorems.nef_rr_of_literature": {
+      "parent": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+      "weight": 769
+    },
+    "UpperTheory.LiteratureTheorems.poincare_lelong_inv_of_literature": {
+      "parent": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+      "weight": 18
+    },
+    "UpperTheory.LiteratureTheorems.principalisation_char_zero_of_literature": {
+      "parent": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+      "weight": 1572
+    },
+    "UpperTheory.LiteratureTheorems.resolution_char_zero_of_literature": {
+      "parent": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+      "weight": 35
+    },
+    "UpperTheory.LiteratureTheorems.zarhin_statement": {
+      "parent": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+      "weight": 3757
+    },
+    "UpperTheory.N.at23_family_alt": {
+      "parent": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+      "weight": 353
+    },
+    "UpperTheory.N.boundAtTwoThree_linked_of_recT": {
+      "parent": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+      "weight": 9
+    },
+    "UpperTheory.N.boundAtTwoThree_n_linked": {
+      "parent": "UpperTheory.N.boundAtTwoThree_linked_of_recT",
+      "weight": 6
+    },
+    "UpperTheory.N.boundAtTwoThree_of_local_bounds_at_two_three": {
+      "parent": "UpperTheory.N.at23_family_alt",
+      "weight": 52
+    },
+    "UpperTheory.N.exists_nonneg_threeC_constants_of_prints": {
+      "parent": "UpperTheory.N.at23_family_alt",
+      "weight": 62
+    },
+    "UpperTheory.N.exists_nonneg_twoC_constants_of_prints": {
+      "parent": "UpperTheory.N.at23_family_alt",
+      "weight": 223
+    },
+    "UpperTheory.One.Join.automorphic_inputs_from_literature": {
+      "parent": "UpperTheory.One.Join.v_window_of_depth_zero_residual_bc_cm",
+      "weight": 17
+    },
+    "UpperTheory.One.Join.automorphic_window_of_inputs": {
+      "parent": "UpperTheory.One.vwin_of_row",
+      "weight": 884497
+    },
+    "UpperTheory.One.Join.cm_abelian_inputs_from_literature": {
+      "parent": "UpperTheory.One.Join.automorphic_window_of_inputs",
+      "weight": 12
+    },
+    "UpperTheory.One.Join.local_inputs_from_literature": {
+      "parent": "UpperTheory.One.Join.v_window_of_depth_zero_residual_bc_cm",
+      "weight": 20
+    },
+    "UpperTheory.One.Join.v_window_of_depth_zero_residual_bc_cm": {
+      "parent": "UpperTheory.One.Join.automorphic_window_of_inputs",
+      "weight": 884469
+    },
+    "UpperTheory.One.M.New.llOf_alt": {
+      "parent": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+      "weight": 4
+    },
+    "UpperTheory.One.vwin_of_row": {
+      "parent": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+      "weight": 886201
+    },
+    "UpperTheory.Ru.crystallineComparison.phiStep": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 11116
+    },
+    "UpperTheory.T3.shortNorm": {
+      "parent": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+      "weight": 6103
+    },
+    "UpperTheory.T3.supplyOfAdmOf": {
+      "parent": "UpperTheory.Top.supplyOfAdm",
+      "weight": 21194
+    },
+    "UpperTheory.Top.VWin": {
+      "parent": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+      "weight": 1
+    },
+    "UpperTheory.Top.VWinAt": {
+      "parent": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+      "weight": 4
+    },
+    "UpperTheory.Top.admissibleClassesTwistedChar": {
+      "parent": "UpperTheory.Top.supplyChi",
+      "weight": 112
+    },
+    "UpperTheory.Top.admissible_ranks_of_CMDatum": {
+      "parent": "UpperTheory.Top.admissibleClassesTwistedChar",
+      "weight": 23
+    },
+    "UpperTheory.Top.every_character_of_green_v_win": {
+      "parent": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+      "weight": 194391
+    },
+    "UpperTheory.Top.hostOfField": {
+      "parent": "UpperTheory.Top.supplyOfAdm",
+      "weight": 10024
+    },
+    "UpperTheory.Top.shape_closed_link_n_of_green": {
+      "parent": "UpperTheory.Top.zero_free_all_of_green_v_win",
+      "weight": 146214
+    },
+    "UpperTheory.Top.supplyChi": {
+      "parent": "UpperTheory.Top.zero_free_all_of_green_v_win",
+      "weight": 31622
+    },
+    "UpperTheory.Top.supplyOfAdm": {
+      "parent": "UpperTheory.Top.supplyChi",
+      "weight": 31434
+    },
+    "UpperTheory.Top.topDesWin": {
+      "parent": "UpperTheory.Top.shape_closed_link_n_of_green",
+      "weight": 187
+    },
+    "UpperTheory.Top.zeroFreeAll_of_topG": {
+      "parent": "UpperTheory.Top.zero_free_all_of_green_v_win",
+      "weight": 5566
+    },
+    "UpperTheory.Top.zero_free_all_of_green_v_win": {
+      "parent": "UpperTheory.Top.every_character_of_green_v_win",
+      "weight": 194351
+    },
+    "UpperTheory.V.Af.card_k_of_printed_results": {
+      "parent": "UpperTheory.GalN.V.Win.N.countK_alt",
+      "weight": 32
+    },
+    "UpperTheory.V.Af.clozelCohC_alt": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.published_hypotheses_from_patching_alt",
+      "weight": 21
+    },
+    "UpperTheory.V.Af.cohBoundFree": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt",
+      "weight": 2339
+    },
+    "UpperTheory.V.Af.defQuatExists": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.published_hypotheses_from_patching_alt",
+      "weight": 214
+    },
+    "UpperTheory.V.Af.gelfandKazhdanReal": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.published_hypotheses_from_patching_alt",
+      "weight": 256
+    },
+    "UpperTheory.V.Af.newformRepOf": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.v_window_of_automorphy_csd_ss_mono_odd",
+      "weight": 84
+    },
+    "UpperTheory.V.Af.strongMultOneReal": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.v_window_of_automorphy_csd_ss_mono_odd",
+      "weight": 1450
+    },
+    "UpperTheory.V.Af.weyl_complex_of_printed_results": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt",
+      "weight": 75
+    },
+    "UpperTheory.V.Alg.M.main_holds": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt",
+      "weight": 8903
+    },
+    "UpperTheory.V.Alg.M.mprime_holds": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt",
+      "weight": 207
+    },
+    "UpperTheory.V.Alg.lemmaP": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt",
+      "weight": 3238
+    },
+    "UpperTheory.V.Base.control": {
+      "parent": "UpperTheory.V.X.zOne",
+      "weight": 1535
+    },
+    "UpperTheory.V.Base.dvrFacts": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt",
+      "weight": 77
+    },
+    "UpperTheory.V.Base.qoFacts": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt",
+      "weight": 224
+    },
+    "UpperTheory.V.Cu.sp4In_alt": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.sp4In0_alt",
+      "weight": 21554
+    },
+    "UpperTheory.V.FW.ferreroWashington": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt",
+      "weight": 4838
+    },
+    "UpperTheory.V.Fr.frame_ex": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt",
+      "weight": 4149
+    },
+    "UpperTheory.V.HV.Core.of_four_alt": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt",
+      "weight": 21873
+    },
+    "UpperTheory.V.HV.Core0.cohInp_alt": {
+      "parent": "UpperTheory.V.Z.J.count_i_of_printed_bound_k_kato_automorphy",
+      "weight": 2
+    },
+    "UpperTheory.V.HV.DescentVanishingReductions.adjoint_lift_of_prints": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt",
+      "weight": 4
+    },
+    "UpperTheory.V.HV.DescentVanishingReductions.adjoint_lifting_of_cohomology": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt",
+      "weight": 599
+    },
+    "UpperTheory.V.HV.DescentVanishingReductions.countII_and_countIII_of_printsH_of_sp4In": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt",
+      "weight": 15582
+    },
+    "UpperTheory.V.HV.DescentVanishingReductions.pmEx_of_printsH": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.sp4In0_alt",
+      "weight": 8074
+    },
+    "UpperTheory.V.HV.DescentVanishingReductions.published_hypotheses_from_patching_alt": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.v_window_of_automorphy_csd_ss_mono_odd",
+      "weight": 46525
+    },
+    "UpperTheory.V.HV.DescentVanishingReductions.sp4In0_alt": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt",
+      "weight": 111950
+    },
+    "UpperTheory.V.HV.DescentVanishingReductions.v_window_of_automorphy_csd_ss_mono_odd": {
+      "parent": "UpperTheory.V.v_window_of_literal_automorphy_n",
+      "weight": 884353
+    },
+    "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.v_window_of_automorphy_csd_ss_mono_odd",
+      "weight": 795498
+    },
+    "UpperTheory.V.HV.GD": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt",
+      "weight": 14
+    },
+    "UpperTheory.V.HV.jointWin_of_counts": {
+      "parent": "UpperTheory.V.HV.vwin_of_counts",
+      "weight": 3827
+    },
+    "UpperTheory.V.HV.thmHV_of_counts": {
+      "parent": "UpperTheory.V.HV.jointWin_of_counts",
+      "weight": 3794
+    },
+    "UpperTheory.V.HV.vwin_of_counts": {
+      "parent": "UpperTheory.V.HV.Core.of_four_alt",
+      "weight": 4677
+    },
+    "UpperTheory.V.Hi.nonempty_unitaryHeckeData": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt",
+      "weight": 6796
+    },
+    "UpperTheory.V.J.tanA": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt",
+      "weight": 4196
+    },
+    "UpperTheory.V.KT.tors_le": {
+      "parent": "UpperTheory.V.ZK.lemmaK",
+      "weight": 431
+    },
+    "UpperTheory.V.LDataCardLeFinrank.vFormula_of_classicalTheorems": {
+      "parent": "UpperTheory.V.ZK.lemmaK",
+      "weight": 51
+    },
+    "UpperTheory.V.LemmaK": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt",
+      "weight": 5
+    },
+    "UpperTheory.V.Loc.bkAbove": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt",
+      "weight": 6375
+    },
+    "UpperTheory.V.Loc.posExact": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt",
+      "weight": 2932
+    },
+    "UpperTheory.V.Loc.tateRat": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt",
+      "weight": 2363
+    },
+    "UpperTheory.V.Odd.actEx": {
+      "parent": "UpperTheory.V.Odd.thmBcFree_of",
+      "weight": 37
+    },
+    "UpperTheory.V.Odd.deg": {
+      "parent": "UpperTheory.V.Odd.thmBcFree_of",
+      "weight": 91
+    },
+    "UpperTheory.V.Odd.killPow": {
+      "parent": "UpperTheory.V.Odd.stickBound",
+      "weight": 1353
+    },
+    "UpperTheory.V.Odd.lenPow": {
+      "parent": "UpperTheory.V.Odd.stickBound",
+      "weight": 38
+    },
+    "UpperTheory.V.Odd.primeBound_of": {
+      "parent": "UpperTheory.V.Odd.thmBcFree_of",
+      "weight": 470
+    },
+    "UpperTheory.V.Odd.prodVal": {
+      "parent": "UpperTheory.V.Odd.primeBound_of",
+      "weight": 223
+    },
+    "UpperTheory.V.Odd.stickBound": {
+      "parent": "UpperTheory.V.Odd.thmBcFree_of",
+      "weight": 1849
+    },
+    "UpperTheory.V.Odd.thmBcFree_of": {
+      "parent": "UpperTheory.V.HV.Core.of_four_alt",
+      "weight": 2871
+    },
+    "UpperTheory.V.Pa.Lev.thetaQ": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt",
+      "weight": 8154
+    },
+    "UpperTheory.V.Pa.Lev.twoOf_alt": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt",
+      "weight": 4171
+    },
+    "UpperTheory.V.Pa.has_automorphy_of_statement": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt",
+      "weight": 2952
+    },
+    "UpperTheory.V.Pa.pFromAut": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt",
+      "weight": 47825
+    },
+    "UpperTheory.V.Pr.components_good_rank_three": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt",
+      "weight": 5332
+    },
+    "UpperTheory.V.PropA.aBound_of_isTower": {
+      "parent": "UpperTheory.V.Win.thmBab_of_lemmaK",
+      "weight": 1045
+    },
+    "UpperTheory.V.Th.adjointLiftingTheorem_of_locPrints_of_core": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.adjoint_lifting_of_cohomology",
+      "weight": 597
+    },
+    "UpperTheory.V.Th.core_alt_bis": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt",
+      "weight": 11790
+    },
+    "UpperTheory.V.Th.rigSp4_alt": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.countII_and_countIII_of_printsH_of_sp4In",
+      "weight": 1860
+    },
+    "UpperTheory.V.Th.sp4Main_alt": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.countII_and_countIII_of_printsH_of_sp4In",
+      "weight": 12353
+    },
+    "UpperTheory.V.Tower.exists_descends": {
+      "parent": "UpperTheory.V.ZK.lemmaK",
+      "weight": 53
+    },
+    "UpperTheory.V.Two.fixedIn": {
+      "parent": "UpperTheory.V.Win.thmBab_of_lemmaK",
+      "weight": 18
+    },
+    "UpperTheory.V.Two.towerFixed": {
+      "parent": "UpperTheory.V.Two.fixedIn",
+      "weight": 15
+    },
+    "UpperTheory.V.Two.towerTwo": {
+      "parent": "UpperTheory.V.Two.twoIn",
+      "weight": 849
+    },
+    "UpperTheory.V.Two.twoIn": {
+      "parent": "UpperTheory.V.Win.thmBab_of_lemmaK",
+      "weight": 1343
+    },
+    "UpperTheory.V.U3.CorGK": {
+      "parent": "UpperTheory.V.Z.J.count_i_of_printed_bound_k_kato_automorphy",
+      "weight": 9
+    },
+    "UpperTheory.V.U3.PropGK": {
+      "parent": "UpperTheory.V.Z.J.count_i_of_printed_bound_k_kato_automorphy",
+      "weight": 7
+    },
+    "UpperTheory.V.U3.countI": {
+      "parent": "UpperTheory.V.Z.J.count_i_of_printed_bound_k_kato_automorphy",
+      "weight": 253
+    },
+    "UpperTheory.V.UnitaryThreeInertia.countV_of_finiteness_duality_euler_host": {
+      "parent": "UpperTheory.V.Z.J.count_v_of_printed_bound_k_reduced_unitary_lift",
+      "weight": 11524
+    },
+    "UpperTheory.V.UnitaryThreeInertia.unitary_lift_of_reduced_core": {
+      "parent": "UpperTheory.V.Z.J.count_v_of_printed_bound_k_reduced_unitary_lift",
+      "weight": 109
+    },
+    "UpperTheory.V.Win.thmBab_of": {
+      "parent": "UpperTheory.V.Win.thmBab_of_lemmaK",
+      "weight": 977
+    },
+    "UpperTheory.V.Win.thmBab_of_lemmaK": {
+      "parent": "UpperTheory.V.HV.Core.of_four_alt",
+      "weight": 4107
+    },
+    "UpperTheory.V.Ws.spaceEx": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt",
+      "weight": 2567
+    },
+    "UpperTheory.V.X.So.hostVanE": {
+      "parent": "UpperTheory.V.Z.J.count_v_of_printed_bound_k_reduced_unitary_lift",
+      "weight": 707
+    },
+    "UpperTheory.V.X.corX": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt",
+      "weight": 183
+    },
+    "UpperTheory.V.X.propZ": {
+      "parent": "UpperTheory.V.HV.Core.of_four_alt",
+      "weight": 2058
+    },
+    "UpperTheory.V.X.residual_bernoulli_nonvanishing": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt",
+      "weight": 242
+    },
+    "UpperTheory.V.X.soBar": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt",
+      "weight": 313
+    },
+    "UpperTheory.V.X.soFin": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt",
+      "weight": 84
+    },
+    "UpperTheory.V.X.xpp": {
+      "parent": "UpperTheory.V.Z.J.count_v_of_printed_bound_k_reduced_unitary_lift",
+      "weight": 433
+    },
+    "UpperTheory.V.X.zOne": {
+      "parent": "UpperTheory.V.X.propZ",
+      "weight": 1820
+    },
+    "UpperTheory.V.X.zQuad": {
+      "parent": "UpperTheory.V.X.propZ",
+      "weight": 232
+    },
+    "UpperTheory.V.Z.Bc.cycC_holds": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.v_window_of_automorphy_csd_ss_mono_odd",
+      "weight": 963
+    },
+    "UpperTheory.V.Z.Bc.indCs": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.sp4In0_alt",
+      "weight": 35605
+    },
+    "UpperTheory.V.Z.Bc.seedIIs_alt": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.sp4In0_alt",
+      "weight": 39997
+    },
+    "UpperTheory.V.Z.Coh.borelInjC": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.published_hypotheses_from_patching_alt",
+      "weight": 521
+    },
+    "UpperTheory.V.Z.Coh.clozelConjC": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.published_hypotheses_from_patching_alt",
+      "weight": 10940
+    },
+    "UpperTheory.V.Z.J.D.modularity_n_of_printed_mult_comp": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt",
+      "weight": 10521
+    },
+    "UpperTheory.V.Z.J.admissible_typeI_even_level_alt": {
+      "parent": "UpperTheory.V.Z.J.count_i_of_printed_bound_k_kato_automorphy",
+      "weight": 312
+    },
+    "UpperTheory.V.Z.J.count_i_of_printed_bound_k_kato_automorphy": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt",
+      "weight": 12061
+    },
+    "UpperTheory.V.Z.J.count_v_of_printed_bound_k_reduced_unitary_lift": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt",
+      "weight": 15145
+    },
+    "UpperTheory.V.Z.J.hostNumberUE_alt": {
+      "parent": "UpperTheory.V.Z.J.count_v_of_printed_bound_k_reduced_unitary_lift",
+      "weight": 542
+    },
+    "UpperTheory.V.Z.J.hostRigidUE_alt": {
+      "parent": "UpperTheory.V.Z.J.count_v_of_printed_bound_k_reduced_unitary_lift",
+      "weight": 1182
+    },
+    "UpperTheory.V.Z.J.linkedUnlE_alt": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt",
+      "weight": 6
+    },
+    "UpperTheory.V.Z.J.oneCharU_of_katoTwoW_rig_admI_automorphy": {
+      "parent": "UpperTheory.V.Z.J.count_i_of_printed_bound_k_kato_automorphy",
+      "weight": 8872
+    },
+    "UpperTheory.V.Z.J.propGK_of_numberU3U_of_oneCharU": {
+      "parent": "UpperTheory.V.Z.J.count_i_of_printed_bound_k_kato_automorphy",
+      "weight": 254
+    },
+    "UpperTheory.V.Z.J.rigIUE_alt": {
+      "parent": "UpperTheory.V.Z.J.count_i_of_printed_bound_k_kato_automorphy",
+      "weight": 121
+    },
+    "UpperTheory.V.Z.Kato.Final.zetaUr": {
+      "parent": "UpperTheory.V.Z.Kato.WeilSphericalRecords.katoTwoW_of_printsH",
+      "weight": 126205
+    },
+    "UpperTheory.V.Z.Kato.Joint.kato_global_unit_law_of_smoothed_classes": {
+      "parent": "UpperTheory.V.Z.Kato.Final.zetaUr",
+      "weight": 39884
+    },
+    "UpperTheory.V.Z.Kato.K5.smoothedZetaClass_hodgeTateLaw": {
+      "parent": "UpperTheory.V.Z.Kato.Final.zetaUr",
+      "weight": 28779
+    },
+    "UpperTheory.V.Z.Kato.K5.top": {
+      "parent": "UpperTheory.V.Z.Kato.K5.smoothedZetaClass_hodgeTateLaw",
+      "weight": 28778
+    },
+    "UpperTheory.V.Z.Kato.WeilSphericalRecords.katoTwoW_of_printsH": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt",
+      "weight": 145398
+    },
+    "UpperTheory.V.Z.Mult.mult_free": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt",
+      "weight": 3688
+    },
+    "UpperTheory.V.Z.Sym.Top.linkedEnd_alt": {
+      "parent": "UpperTheory.V.Z.Win.Dn.ends0_alt",
+      "weight": 791
+    },
+    "UpperTheory.V.Z.Sym.W.adjoint_automorphy_w_of_printed_hida_window": {
+      "parent": "UpperTheory.V.Z.Sym.W.unitary_three_automorphy_dense_of_prints_and_row",
+      "weight": 52398
+    },
+    "UpperTheory.V.Z.Sym.W.adjoint_automorphy_w_of_pure_weight_adjoint_lift": {
+      "parent": "UpperTheory.V.Z.Sym.W.adjoint_automorphy_w_of_printed_hida_window",
+      "weight": 2812
+    },
+    "UpperTheory.V.Z.Sym.W.adjoint_lift_from_eisenstein_of_propagation": {
+      "parent": "UpperTheory.V.Z.Sym.W.unitary_three_automorphy_dense_of_prints_and_row",
+      "weight": 250
+    },
+    "UpperTheory.V.Z.Sym.W.adjoint_lift_w_of_literal_automorphy_spec_out": {
+      "parent": "UpperTheory.V.Z.Sym.W.adjoint_automorphy_w_of_printed_hida_window",
+      "weight": 3462
+    },
+    "UpperTheory.V.Z.Sym.W.prop_eg_w_of_printed_hida": {
+      "parent": "UpperTheory.V.Z.Sym.W.unitary_three_automorphy_dense_of_prints_and_row",
+      "weight": 8260
+    },
+    "UpperTheory.V.Z.Sym.W.seedInW_alt": {
+      "parent": "UpperTheory.V.Z.Sym.W.unitary_three_automorphy_dense_of_prints_and_row",
+      "weight": 2135
+    },
+    "UpperTheory.V.Z.Sym.W.specOutS": {
+      "parent": "UpperTheory.V.Z.Sym.W.adjoint_automorphy_w_of_printed_hida_window",
+      "weight": 45473
+    },
+    "UpperTheory.V.Z.Sym.W.unitary_three_automorphy_dense_of_prints": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt",
+      "weight": 63612
+    },
+    "UpperTheory.V.Z.Sym.W.unitary_three_automorphy_dense_of_prints_and_row": {
+      "parent": "UpperTheory.V.Z.Sym.W.unitary_three_automorphy_dense_of_prints",
+      "weight": 63611
+    },
+    "UpperTheory.V.Z.Tf.SR.descWeak": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.v_window_of_automorphy_csd_ss_mono_odd",
+      "weight": 9
+    },
+    "UpperTheory.V.Z.Win.Birth.fourth_initial_of_prints_h": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.sp4In0_alt",
+      "weight": 4342
+    },
+    "UpperTheory.V.Z.Win.Dn.ends0_alt": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt",
+      "weight": 4505
+    },
+    "UpperTheory.V.Z.Win.Dn.ends_of_alt": {
+      "parent": "UpperTheory.V.Z.Win.Dn.ends0_alt",
+      "weight": 3685
+    },
+    "UpperTheory.V.Z.Win.RR.rigII_a_alt": {
+      "parent": "UpperTheory.V.Z.J.count_i_of_printed_bound_k_kato_automorphy",
+      "weight": 445
+    },
+    "UpperTheory.V.ZK.Up.torsStab": {
+      "parent": "UpperTheory.V.ZK.lemmaK",
+      "weight": 31
+    },
+    "UpperTheory.V.ZK.lemmaK": {
+      "parent": "UpperTheory.V.ZK.lemmaK_litN_alt",
+      "weight": 10052
+    },
+    "UpperTheory.V.ZK.lemmaK_litN_alt": {
+      "parent": "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt",
+      "weight": 38725
+    },
+    "UpperTheory.V.ZK.lemmaK_of_steps": {
+      "parent": "UpperTheory.V.ZK.lemmaK",
+      "weight": 5
+    },
+    "UpperTheory.V.ZK.sClassOf": {
+      "parent": "UpperTheory.V.ZK.lemmaK",
+      "weight": 2207
+    },
+    "UpperTheory.V.ZK.sCount": {
+      "parent": "UpperTheory.V.ZK.lemmaK",
+      "weight": 2223
+    },
+    "UpperTheory.V.ZK.sThetaOf": {
+      "parent": "UpperTheory.V.ZK.lemmaK",
+      "weight": 259
+    },
+    "UpperTheory.V.ZK.torsAll": {
+      "parent": "UpperTheory.V.ZK.lemmaK",
+      "weight": 237
+    },
+    "UpperTheory.V.jointWin_of": {
+      "parent": "UpperTheory.V.HV.jointWin_of_counts",
+      "weight": 14
+    },
+    "UpperTheory.V.thmBc_iff": {
+      "parent": "UpperTheory.V.HV.vwin_of_counts",
+      "weight": 23
+    },
+    "UpperTheory.V.v_window_of_literal_automorphy_n": {
+      "parent": "UpperTheory.One.Join.v_window_of_depth_zero_residual_bc_cm",
+      "weight": 884355
+    },
+    "UpperTheory.V.vvle_of_parts": {
+      "parent": "UpperTheory.V.vwinAt_of_joint",
+      "weight": 161
+    },
+    "UpperTheory.V.vwinAt_of_joint": {
+      "parent": "UpperTheory.V.vwin_of_joint",
+      "weight": 775
+    },
+    "UpperTheory.V.vwin_of_joint": {
+      "parent": "UpperTheory.V.HV.vwin_of_counts",
+      "weight": 778
+    },
+    "UpperTheory.Zero.LLC.recTExists": {
+      "parent": "UpperTheory.FinalTheorems.everyCharacter",
+      "weight": 4837
+    },
+    "UpperTheory.exists_root_of_kummer_class_eq_zero": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 260
+    },
+    "allChi": {
+      "parent": null,
+      "weight": 9567045
+    },
+    "period_ring_base.base": {
+      "parent": "UpperTheory.Gal.Int.Geo.steps_holds",
+      "weight": 2198
+    }
+  },
+  "graph_sha256": "be8105049e470b3ef224a2b234a0cac6395f8fb1d983c8200416f116ba15abf6",
+  "root": "allChi",
+  "rule": "Nearest strictly dominating selected anchor. A subtree has the inclusive core-span weight in the pinned mixed allChi graph with literature stops. Roots outside allChi contribute no lines.",
+  "source_commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "total": 9567045
+}

@@ -1,0 +1,125 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "P040",
+  "edition_sha256": "3456724303d99b6b8370e58fe464688244829ba535f7d68116ab40214c219bb1",
+  "note_sha256": "fc9258f74c7b77f86dc088b4c2a103a7aea228662f0f40a5283e6455a55ef2ae",
+  "statement_sha256": "5dbbfa1748cd1789f0120508c5eabf8572751372bd17251f470c1fec30455167",
+  "sources": [
+    {
+      "path": "notes/units/P040.tex",
+      "sha256": "fc9258f74c7b77f86dc088b4c2a103a7aea228662f0f40a5283e6455a55ef2ae"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Finite-coefficient duality identifies the finite-level exact sequence ending in the dual invariant groups.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: finite-coefficient Poitou–Tate and local Tate duality"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.LDataCardLeFinrank.vFormula_of_classicalTheorems",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/GaloisCohomologyLength/Formula.lean",
+          "line0": 15,
+          "line1": 24
+        }
+      ],
+      "source": "notes/units/P040.tex",
+      "anchor": "The last maps of Poitou",
+      "source_lines": [
+        14,
+        56
+      ],
+      "claim_sha256": "7df08c6d84d1f4d825400b9c8150a4a19042bb2b318735a794117e81384a0da8",
+      "passage_sha256": "87c190ce70fdd9a242449049f7f9454c752469950e8cdcd41edd2658fda79674",
+      "sha256": "275656e08182f519a327e2f59c73c105e0d3baaefab4c31b435ab897fbf97afa",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Finiteness makes inverse limits exact; continuous cochains on the discrete side and the compact cochain lifts identify the limiting terms.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S1",
+        "standard: Mittag-Leffler for finite groups"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.LDataCardLeFinrank.vFormula_of_classicalTheorems",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/GaloisCohomologyLength/Formula.lean",
+          "line0": 15,
+          "line1": 24
+        }
+      ],
+      "source": "notes/units/P040.tex",
+      "anchor": "groups at finite level are finite",
+      "source_lines": [
+        14,
+        56
+      ],
+      "claim_sha256": "6eeb4c9a453b1fda5127afe3e84fbde2d3656c4e8a83626c6a88fbe37e96bc03",
+      "passage_sha256": "87c190ce70fdd9a242449049f7f9454c752469950e8cdcd41edd2658fda79674",
+      "sha256": "9b0d223e846c127ba131fb2447da184a93531ec873535b686edda5bc1efdb0bf",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The alternating length identity and the global invariant length give the compact-coefficient formula.",
+      "kind": "assembly",
+      "uses": [
+        "S2",
+        "input: global invariant identification"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.LDataCardLeFinrank.vFormula_of_classicalTheorems",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/GaloisCohomologyLength/Formula.lean",
+          "line0": 15,
+          "line1": 24
+        }
+      ],
+      "source": "notes/units/P040.tex",
+      "anchor": "Additivity of extended length",
+      "source_lines": [
+        14,
+        56
+      ],
+      "claim_sha256": "4bba5ee2382e2ee9e532cde2d8bdb5f9c4910965b67c96b6ce8d6526ecbdd9a9",
+      "passage_sha256": "87c190ce70fdd9a242449049f7f9454c752469950e8cdcd41edd2658fda79674",
+      "sha256": "393c4b2f12a0589010e448d4512efaf70daf597fcf6f7d0bad4ae8821dc7aac6",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "02ac96b0ffa9e41633e62cbed6209ea6348dc479c290efcd66e952a67ed7dcbd",
+      "sources": [
+        {
+          "path": "notes/units/P040.tex",
+          "sha256": "e105676e207adbbe41fc80099bfbdb61aae09a00af75802e95cfa03644453334"
+        }
+      ],
+      "statement_sha256": "5dbbfa1748cd1789f0120508c5eabf8572751372bd17251f470c1fec30455167",
+      "steps": {
+        "S1": "275656e08182f519a327e2f59c73c105e0d3baaefab4c31b435ab897fbf97afa",
+        "S2": "9b0d223e846c127ba131fb2447da184a93531ec873535b686edda5bc1efdb0bf",
+        "S3": "393c4b2f12a0589010e448d4512efaf70daf597fcf6f7d0bad4ae8821dc7aac6"
+      },
+      "step_texts": {
+        "S1": "Finite-coefficient duality identifies the finite-level exact sequence ending in the dual invariant groups.",
+        "S2": "Finiteness makes inverse limits exact; continuous cochains on the discrete side and the compact cochain lifts identify the limiting terms.",
+        "S3": "The alternating length identity and the global invariant length give the compact-coefficient formula."
+      },
+      "step_passages": {
+        "S1": "87c190ce70fdd9a242449049f7f9454c752469950e8cdcd41edd2658fda79674",
+        "S2": "87c190ce70fdd9a242449049f7f9454c752469950e8cdcd41edd2658fda79674",
+        "S3": "87c190ce70fdd9a242449049f7f9454c752469950e8cdcd41edd2658fda79674"
+      }
+    }
+  ]
+}

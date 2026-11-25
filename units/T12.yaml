@@ -1,0 +1,120 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "T12",
+  "title": "The value of the doubled Eisenstein series",
+  "track": {
+    "primary": "theta",
+    "secondary": []
+  },
+  "statement": "For every good number-field base $(F,E,\\sigma,B)$ and spaces $A,Y$ of\nranks $m,n\\ge1$, take opposite Hermitian and skew-Hermitian signs, with the\nsignature $(r,s)$ of $A$ satisfying $\\min(r,s)=0$. Fix a Hecke character\nrestricting as $\\eta^m$, any finite-index Darboux doubling model satisfying\nits splitting, rationality, invariance and theta-summation rules, a frame,\nstandard compact $K$ and height $a$. For every Haar measure with a\nfundamental domain $D$, every Schwartz vector $\\Phi$ with finite-dimensional\n$K$-span, and every $x$, the flat-section Eisenstein sum for\n$g\\mapsto l(\\omega(g)\\Phi)$ has a meromorphic continuation from a right\nhalf-plane, holomorphic at $s_0=(m-n)/2$, with value\n\\[\n E(x,s_0)=\n \\begin{cases}1,&n<m,\\\\2,&m\\le n\\end{cases}\n \\ \\mathop{\\mathrm{avg}}_{g\\in D}\\,\n       \\theta_F\\bigl(\\omega(x)S(g)\\Phi\\bigr).\n\\]\nThe average is taken with respect to the specified Haar measure.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Use a good number-field base and positive-rank spaces of opposite signs; the first has definite signature.",
+    "Fix the specified Hecke character, Darboux doubling model, frame, compact subgroup, height, Haar measure with its fundamental domain and a Schwartz vector of finite compact span."
+  ],
+  "lean": [
+    {
+      "name": "PositivityTheory.SiegelWeilFormula.Fin.siegelWeilStd",
+      "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilStandard/SiegelWeilStd.lean",
+      "line0": 8,
+      "line1": 8,
+      "sha256": "3be9614a424c514261625a27639342c2e5d1f56142c3a71fb7dccdf674af302b",
+      "dominated": 20986,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/T12_round3.md",
+      "section": "T12 · The two rank ranges in the doubled Siegel–Weil value",
+      "pages": [
+        1,
+        3
+      ],
+      "coverage": "Round-3 written exposition, pending independent review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "5.22 (sub:T12)",
+      "pages": [
+        43,
+        43
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/T12.tex",
+      "section": "sub:T12",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L1",
+  "reviews": [
+    "reviews/R21_review.md",
+    "reviews/DB3_review_B.md"
+  ],
+  "prerequisites": [
+    "N188"
+  ],
+  "size_pages": 3,
+  "open_questions": [
+    "At equal dimensions, which multiplier and measure enter the Siegel–Weil special-value formula, and which map transports them to T11?"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [
+    {
+      "grade": "L1",
+      "review": "reviews/R21_review.md",
+      "lines": [
+        108,
+        108
+      ],
+      "scope": "Lean interface as specified in the review row; no equivalence with a published result inferred.",
+      "verdict": "Exact statement comparison"
+    }
+  ],
+  "paper_id": "T12",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "the-value-of-the-doubled-eisenstein-series",
+  "aliases": [
+    "Siegel–Weil special-value formula",
+    "siegelWeilStd",
+    "T12 The value of the doubled Eisenstein series"
+  ],
+  "background": [
+    "Eisenstein series",
+    "Weil representations",
+    "Haar measures"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "5.22 (sub:T12)",
+    "pages": [
+      43,
+      43
+    ]
+  },
+  "question_sources": [
+    "questions/theta.md"
+  ],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "N188": "statement-reading"
+  },
+  "review_status": "pending_review",
+  "summary": "For the specified definite signature, doubling model, measure and test vector, the Eisenstein sum continues to the required point and equals a normalized theta average there. The factor is one when the second rank is smaller and two otherwise; this normalization enters the theta comparison.",
+  "reader_overrides": {
+    "open_questions": [
+      "At equal dimensions, which multiplier and measure enter the Siegel–Weil special-value formula, and which map transports them to T11?"
+    ],
+    "aliases": [
+      "Siegel–Weil special-value formula",
+      "siegelWeilStd",
+      "T12 The value of the doubled Eisenstein series"
+    ]
+  }
+}

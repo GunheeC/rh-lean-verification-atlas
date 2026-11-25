@@ -1,0 +1,95 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "T21",
+  "title": "Integrated Poincaré–Lelong identity",
+  "track": {
+    "primary": "arakelov",
+    "secondary": []
+  },
+  "statement": "Let $P$ have arithmetic dimension $n+2$\nin a finite multihomogeneous coordinate ring, and let\n$L_1,\\ldots,L_n,A,B$ be smooth conjugation-invariant Hermitian lines.\nAssume $B$ has zero multidegree and $s$ is a section of $A$ on $P$.\nWrite $J_Z(\\omega;f)$ for the project's point integral on $Z$ with\npotential list $\\omega$ and integrand $f$, and $\\omega_L$ for the\npotentials of the $L_i$. With $b=\\log h_B$ and $a=\\log h_A$,\n\\[\n J_P((b,\\omega_L);\\log\\|s\\|_A)=\n   \\sum_{W\\ \\mathrm{horizontal~in~div}(s)}^{\\mathrm{fin}}\n       \\mathrm{mult}_{W}(P+(s))J_W(\\omega_L;b)\n     -J_P((a,\\omega_L);b).\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "The Lean head takes the open-literature record and does not use it. `UpperTheory.LiteratureTheorems.poincare_lelong_inv_of_literature` (`Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:553–554`).",
+    "Use the stipulated multihomogeneous presentation, smooth conjugation-invariant Hermitian lines, the multidegree-zero line, and a section with the indicated divisor and intersection conditions."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.LiteratureTheorems.poincare_lelong_inv_of_literature",
+      "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+      "line0": 553,
+      "line1": 554,
+      "sha256": "f63f87e8bdc64ddbdbc24221630041d91a9b63a072987c74842244bb787caa67",
+      "dominated": 18,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/T21_round4.md",
+      "section": "T21 · Integrated Poincaré–Lelong identity",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "5.31 (sub:T21)",
+      "pages": [
+        46,
+        46
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/T21.tex",
+      "section": "sub:T21",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": 2,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "T21",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "integrated-poincarelelong-identity",
+  "aliases": [
+    "Integrated Poincaré--Lelong identity",
+    "poincare_lelong_inv_of_literature",
+    "T21 Integrated Poincaré–Lelong identity"
+  ],
+  "background": [
+    "Arithmetic intersection",
+    "Poincaré–Lelong formula"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "5.31 (sub:T21)",
+    "pages": [
+      46,
+      46
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "review_status": "pending_review",
+  "summary": "An integral containing the logarithm of a section norm splits into a sum over horizontal divisor components and a curvature term. This identity is the input used when an arithmetic intersection computation replaces a section by its divisor, including its multiplicities.",
+  "reader_overrides": {
+    "hypothesis_details": [
+      "The Lean head takes the open-literature record and does not use it. `UpperTheory.LiteratureTheorems.poincare_lelong_inv_of_literature` (`Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:553–554`).",
+      "Use the stipulated multihomogeneous presentation, smooth conjugation-invariant Hermitian lines, the multidegree-zero line, and a section with the indicated divisor and intersection conditions."
+    ]
+  }
+}

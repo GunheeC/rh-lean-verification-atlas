@@ -1,0 +1,224 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "Z2.K2",
+  "edition_sha256": "552cad5e26d626b24432ed1caf304311c7d19351db73260b64cb30247122160d",
+  "note_sha256": "99a1e5085328eae7bd5fefe324cae5272cd7b73d02a59db6bcd45dac1a5f909a",
+  "statement_sha256": "9b836c6587c1af27408e40dfa75a22bec7dec1d82465dbf22bfabae121b76ae7",
+  "sources": [
+    {
+      "path": "notes/blueprint/Z2.K2.tex",
+      "sha256": "99a1e5085328eae7bd5fefe324cae5272cd7b73d02a59db6bcd45dac1a5f909a"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The double-prism boundary gives the product law for evaluation after passing to cycles modulo boundaries.",
+      "kind": "computation",
+      "uses": [
+        "input: bar chain and prism conventions"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.ZK.sPrismMul",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/SPrismMul.lean",
+          "line0": 194,
+          "line1": 205
+        }
+      ],
+      "source": "notes/blueprint/Z2.K2.tex",
+      "anchor": "With the boundary convention used here",
+      "source_lines": [
+        123,
+        145
+      ],
+      "claim_sha256": "781c380702fcf66b27dce13058606b0a972976aae2a571f42d89ce46137176cd",
+      "passage_sha256": "c608d9e15dcb13a99b0cdf6204feb479b2e36c7ce38f6ce25f0b8d2efee1b81b",
+      "sha256": "a4303023d9814445727f13aef3fb6f61efa6f4a724806f4845e0b139449f79ba",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The scalar cup-product cocycle is closed and has the required value on the specified basic cyclic class.",
+      "kind": "computation",
+      "uses": [
+        "input: scalar cocycle and basic cycle"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.ZK.sCoc",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/FProd.lean",
+          "line0": 101,
+          "line1": 150
+        }
+      ],
+      "source": "notes/blueprint/Z2.K2.tex",
+      "anchor": "The bar coboundary is zero",
+      "source_lines": [
+        147,
+        171
+      ],
+      "claim_sha256": "f86211cb27036eeefc8af339e31e9cae2ca19425dc4bbb5baa72e7ddfaaf5336",
+      "passage_sha256": "77e4d960a0c7b949cdb7114a2c825d3f9329199591b2e095bd5e256e2c5a9bee",
+      "sha256": "f338ad1ff39631d7bc90891cca62cf8aa2afb794a8277d64d3d239d69fda94c5",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Projective-line transfer of the scalar cochain gives an evaluation family compatible with the boundary and direct sums.",
+      "kind": "assembly",
+      "uses": [
+        "S2",
+        "input: multiplicative coordinate law"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.ZK.sTrans",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/STrans.lean",
+          "line0": 411,
+          "line1": 413
+        }
+      ],
+      "source": "notes/blueprint/Z2.K2.tex",
+      "anchor": "The middle faces commute with transfer",
+      "source_lines": [
+        173,
+        191
+      ],
+      "claim_sha256": "5c6c2772dca155ce42729b9290ea3d20f07ce9c0efa80684d97c4a6787efd62d",
+      "passage_sha256": "692676d22942d27609e88b51e35c4d141c2ada60c6488dce12be1e3626a2fe49",
+      "sha256": "55ffea59212706ff0d1085cb4a7f62d0eb29bd10e218cc0a6cdd508a23f99652",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "Reindexing each character block gives the desired beta divisor on the distinguished block and the trivial divisor off it.",
+      "kind": "computation",
+      "uses": [
+        "input: interpolation and divisor-difference identity"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.ZK.Cl.cBetaDiv",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/LatticeBlockClasses/CBetaDiv.lean",
+          "line0": 33,
+          "line1": 62
+        }
+      ],
+      "source": "notes/blueprint/Z2.K2.tex",
+      "anchor": "On a coordinate of weight",
+      "source_lines": [
+        231,
+        257
+      ],
+      "claim_sha256": "842a23a7db170cf43df96a177049f58a9ed805ec6b22b0ab7c1cc26a21d0c751",
+      "passage_sha256": "25f48e855b2b7c967eedbfdffa4b576c559c5ca9acdce8595d909e835c195694",
+      "sha256": "43f56809e1cc3f92ddfdd3ec94c9fd85d840875c0b07f83c78fa11689630ebae",
+      "ai_review": []
+    },
+    {
+      "id": "S5",
+      "status": "active",
+      "claim": "The transported lattices admit matrices with the prescribed determinants on their blocks.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S4",
+        "input: Steinitz transport"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.ZK.Cl.cBlock",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/LatticeBlockClasses/CBlock.lean",
+          "line0": 83,
+          "line1": 164
+        }
+      ],
+      "source": "notes/blueprint/Z2.K2.tex",
+      "anchor": "Steinitz on the twisted blocks",
+      "source_lines": [
+        231,
+        257
+      ],
+      "claim_sha256": "63e0b169ebca610dc9e9ae371afcde45f2ff50dcb15ebef7a9f955d379f09ca7",
+      "passage_sha256": "25f48e855b2b7c967eedbfdffa4b576c559c5ca9acdce8595d909e835c195694",
+      "sha256": "6d6b626a5dd90bf318bed1dfeab4a1cff5491c8dc2a6495e3e9bad60fa729b47",
+      "ai_review": []
+    },
+    {
+      "id": "S6",
+      "status": "active",
+      "claim": "The cycle formed by the relation and transport prisms has the prescribed scalar determinant evaluation after a single common localization.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "S3",
+        "S5",
+        "input: twisted norm computation"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.ZK.sClassOf",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/SClassOf.lean",
+          "line0": 21,
+          "line1": 23
+        },
+        {
+          "name": "UpperTheory.V.ZK.Cl.cBetaVal",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/LatticeBlockClasses/CBetaVal.lean",
+          "line0": 31,
+          "line1": 122
+        }
+      ],
+      "source": "notes/blueprint/Z2.K2.tex",
+      "anchor": "The determinant evaluation on a scalar block",
+      "source_lines": [
+        292,
+        325
+      ],
+      "claim_sha256": "9ef05d4ea561d9c8ae7705f03a8eeee090137d6f52e7ea4d48e5ac047a60d89f",
+      "passage_sha256": "3ff5e3450ab84d86e4cfd7cf3cef1b663d916850006f38e0d3b611dc61071219",
+      "sha256": "f2f6425c3b7c0c01298ce5fd65f3044613b5c691c14bdaabc45fea37e6c942aa",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "485fa2d4649a1a44812125f7e034ba20d527c09ade1e1ee41c61907c67f8d18e",
+      "sources": [
+        {
+          "path": "notes/blueprint/Z2.K2.tex",
+          "sha256": "504dda935cb1e4ed3e97b9b58df48a1e9979e3518c30c4ef60c10715a43d4df1"
+        }
+      ],
+      "statement_sha256": "9b836c6587c1af27408e40dfa75a22bec7dec1d82465dbf22bfabae121b76ae7",
+      "steps": {
+        "S1": "a4303023d9814445727f13aef3fb6f61efa6f4a724806f4845e0b139449f79ba",
+        "S2": "f338ad1ff39631d7bc90891cca62cf8aa2afb794a8277d64d3d239d69fda94c5",
+        "S3": "55ffea59212706ff0d1085cb4a7f62d0eb29bd10e218cc0a6cdd508a23f99652",
+        "S4": "43f56809e1cc3f92ddfdd3ec94c9fd85d840875c0b07f83c78fa11689630ebae",
+        "S5": "6d6b626a5dd90bf318bed1dfeab4a1cff5491c8dc2a6495e3e9bad60fa729b47",
+        "S6": "f2f6425c3b7c0c01298ce5fd65f3044613b5c691c14bdaabc45fea37e6c942aa"
+      },
+      "step_texts": {
+        "S1": "The double-prism boundary gives the product law for evaluation after passing to cycles modulo boundaries.",
+        "S2": "The scalar cup-product cocycle is closed and has the required value on the specified basic cyclic class.",
+        "S3": "Projective-line transfer of the scalar cochain gives an evaluation family compatible with the boundary and direct sums.",
+        "S4": "Reindexing each character block gives the desired beta divisor on the distinguished block and the trivial divisor off it.",
+        "S5": "The transported lattices admit matrices with the prescribed determinants on their blocks.",
+        "S6": "The cycle formed by the relation and transport prisms has the prescribed scalar determinant evaluation after a single common localization."
+      },
+      "step_passages": {
+        "S1": "c608d9e15dcb13a99b0cdf6204feb479b2e36c7ce38f6ce25f0b8d2efee1b81b",
+        "S2": "77e4d960a0c7b949cdb7114a2c825d3f9329199591b2e095bd5e256e2c5a9bee",
+        "S3": "692676d22942d27609e88b51e35c4d141c2ada60c6488dce12be1e3626a2fe49",
+        "S4": "25f48e855b2b7c967eedbfdffa4b576c559c5ca9acdce8595d909e835c195694",
+        "S5": "25f48e855b2b7c967eedbfdffa4b576c559c5ca9acdce8595d909e835c195694",
+        "S6": "3ff5e3450ab84d86e4cfd7cf3cef1b663d916850006f38e0d3b611dc61071219"
+      }
+    }
+  ]
+}

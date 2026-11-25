@@ -1,0 +1,281 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "Z1.3.05",
+  "edition_sha256": "c294bf56b78e6852c3fc808a277ea68986255951aea95adb0cf6253acfaece83",
+  "note_sha256": "64283fe3fb7aebc660634790c88bcfef33c506fcfeffa3efcc342e1a3348a981",
+  "statement_sha256": "f12a2d8824c2fcff17af3f465e336a4e12bca6b2e74838c72a9284f858a10111",
+  "sources": [
+    {
+      "path": "notes/blueprint/Z1.3.05.tex",
+      "sha256": "64283fe3fb7aebc660634790c88bcfef33c506fcfeffa3efcc342e1a3348a981"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Conjugation on the cyclotomic kernel multiplies the lower coordinate at one by the twist value of the conjugating element.",
+      "kind": "computation",
+      "uses": [
+        "input: twisted cocycle law"
+      ],
+      "lean": [
+        {
+          "name": "conj_law",
+          "file": "Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/NormFactorLeOne.lean",
+          "line0": 76,
+          "line1": 97
+        }
+      ],
+      "source": "notes/blueprint/Z1.3.05.tex",
+      "anchor": "The twist $\\nu$ is trivial on inertia. On $H_m=I_A\\cap\\ker(\\mathrm{cycMod}_m)$ the cocycle identity gives",
+      "source_lines": [
+        20,
+        24
+      ],
+      "claim_sha256": "e2765a1d6f8751adecf9d36d9fefeb2e418b8ee0968d67da4ca7aa859662dbdd",
+      "passage_sha256": "2b4c847f96ee526751c04695e258798ff2d27e520723c386f54fa6fdbe213692",
+      "sha256": "0c8a35ec4cebd561455224e0a9f3afd19f342fb345e93986ffb1f62a44d10540",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Smoothing by two contributes the factor 1 minus twice the inverse character at two, of norm at most one.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "standard: primitive character sum"
+      ],
+      "lean": [
+        {
+          "name": "norm_factor_le_one",
+          "file": "Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/NormFactorLeOne.lean",
+          "line0": 44,
+          "line1": 54
+        },
+        {
+          "name": "sum_step",
+          "file": "Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/MemOfMulMem.lean",
+          "line0": 226,
+          "line1": 251
+        }
+      ],
+      "source": "notes/blueprint/Z1.3.05.tex",
+      "anchor": "Write $G$ for the integral power series produced from these layers. To compare its primitive character sums with those of the pinned $L$, take th",
+      "source_lines": [
+        28,
+        28
+      ],
+      "claim_sha256": "fa0f8ac468ed9046c17626363ff0fa14cf80d6cc82b94ce668b6e9cb2cc237d5",
+      "passage_sha256": "8ade733d525a430c6b432df3f7a372def4525fd860bb92bb18241d8e0f1dc571",
+      "sha256": "40871b5fa46554cd78666c420d2145d2abddb309293042ff9de16b7b5109e230",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Transport to the translated coordinate preserves the common Frobenius eigenvalue for the smoothed layers.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "input: inertia lift with prescribed cyclotomic value"
+      ],
+      "lean": [
+        {
+          "name": "eig_at",
+          "file": "Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/MemOfMulMem.lean",
+          "line0": 111,
+          "line1": 131
+        }
+      ],
+      "source": "notes/blueprint/Z1.3.05.tex",
+      "anchor": "frame $\\Phi$, smooth the layers by $Y=(1-d_0T_{d_0})Z$. To transport the",
+      "source_lines": [
+        36,
+        54
+      ],
+      "claim_sha256": "f30c713fb006601d1beb0f40edce64fbe46ee6f53e7a6d1bd30d6b552a23bd6e",
+      "passage_sha256": "fe1f9eb3e6e9ab5224eeb3672a8f9cac428dd70870d190a2bcafb4ca18a3c438",
+      "sha256": "dbb770b37203ff37d85c54bca28d507cf752c7e4cb64a3991e3364a515232075",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The integral series used for the vanishing comparison must represent the same smoothed family at every precision.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S2",
+        "S3",
+        "input: coherent norm lifts"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Kd.C7.pRepEx",
+          "file": "Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/SerMulPow.lean",
+          "line0": 31,
+          "line1": 82
+        }
+      ],
+      "source": "notes/blueprint/Z1.3.05.tex",
+      "anchor": "Assume specialization vanishes. Multiply $Z$ by $\\ell^{c_2}$ and subtract",
+      "source_lines": [
+        82,
+        110
+      ],
+      "claim_sha256": "68d3ec9699dd232384928c760ab8ce4e3012c243a00d64d54edb678593f97131",
+      "passage_sha256": "8dc471f9f66f8ccd1066295f3266abd9de0639705eb7345c9a3993b726353b2b",
+      "sha256": "627f52cda786b9f47b11ec3edc8824c9ffbe150e348a1253f954254e923212b3",
+      "ai_review": []
+    },
+    {
+      "id": "S5",
+      "status": "active",
+      "claim": "At a common primitive root the pinned lower bound and vanishing comparison are incompatible when the specialization is zero.",
+      "kind": "assembly",
+      "uses": [
+        "S4",
+        "input: nonvanishing transfer and rigidity"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.KZ.Cmp.nonvanishing_transfer",
+          "file": "Development/AbelianVarietyTheory/Proofs/FoundationProofs/NonvanishingTransferCharacterSumsPowerSeries.lean",
+          "line0": 339,
+          "line1": 359
+        }
+      ],
+      "source": "notes/blueprint/Z1.3.05.tex",
+      "anchor": "Given each primitive root $\\zeta$ of order $\\ell^k$, choose the common",
+      "source_lines": [
+        138,
+        156
+      ],
+      "claim_sha256": "e1a8c29ced44a949ea570552ec0405873a37c4489cc625ce8a62ebaa206c25d1",
+      "passage_sha256": "00863cbc3ecfbdd9b34cd4065f4c4c4cac0f4fd1d996872467d37ca40310a906",
+      "sha256": "2f726d5467f8eaa7d90d59abf85a0cde1cc05dcfd7bf50b6ce81bf023bd67e1c",
+      "ai_review": []
+    },
+    {
+      "id": "S6",
+      "status": "active",
+      "claim": "Constructing a single norm lift that works across layers and precisions remains a separate premise.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: simultaneous norm lift"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Kd.C7.pExact",
+          "file": "Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/SubOneMemOfPow.lean",
+          "line0": 276,
+          "line1": 276
+        }
+      ],
+      "source": "notes/blueprint/Z1.3.05.tex",
+      "anchor": "\\textbf{B08.} The simultaneous norm lift requires one unit \\(f\\)",
+      "source_lines": [
+        252,
+        267
+      ],
+      "claim_sha256": "4e7b6ccd899d2a0dc5717428aa9ac36d43bae762008e0e083f9dbb54dc8bf905",
+      "passage_sha256": "4e3c86daabb0d7376caa8c4c209b4a73e35beda829da03f941e4e5f9e9b48579",
+      "sha256": "f75644a3fb6e371f53c6ccf6a995fa88e39efd410b3cc11729e2ac98a4c290d9",
+      "ai_review": []
+    },
+    {
+      "id": "S7",
+      "status": "active",
+      "claim": "The division comparison requires rigidity for one coherent family of adjacent units and all large primitive roots.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: uniform high-layer rigidity"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.T.powerSeries_eq_of_congruent_values_at_primitiveRoots",
+          "file": "Development/AbelianVarietyTheory/Proofs/FoundationProofs/PowerSeriesEqOfCongruentValuesAtPrimitiveRootsStatement.lean",
+          "line0": 6,
+          "line1": 7
+        }
+      ],
+      "source": "notes/blueprint/Z1.3.05.tex",
+      "anchor": "\\textbf{B09.} Rigidity starts with integral series \\(A,B\\), \\(B\\ne0\\),",
+      "source_lines": [
+        252,
+        267
+      ],
+      "claim_sha256": "1c0c6f71e13d98ae18977c490ee93ba8da33980b9ed8eec6ffdb949e243521a3",
+      "passage_sha256": "4e3c86daabb0d7376caa8c4c209b4a73e35beda829da03f941e4e5f9e9b48579",
+      "sha256": "f147d64425d28a2d98885a8c4493a46959d775ebf7af0c8dcaf7c1657589466f",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "3f15067a6acc8aa1a5073a1d20ff6299849b13ee02e23ebad6a03583ebbba973",
+      "sources": [
+        {
+          "path": "notes/blueprint/Z1.3.05.tex",
+          "sha256": "80c6a116a0ec6fd00757140b6f2de0d11d0f2fb4db7e46fd81407fa22206c5f7"
+        }
+      ],
+      "steps": {
+        "S1": "6ccffd3235448e058102a94a14aefccc153150efd5f4173879f2f04fb0af85a9",
+        "S2": "63b00f07691bf0f20d055360f805cda713672774277058faa0d0d62aeb56e68a",
+        "S3": "3cc6c391056b7db2093d6542acbeebffd9e1920544e4ff501a5f595b59be9045",
+        "S4": "7de2f23ddcb5c3cf74210e581b3d20bb047485950211a221592621bfd950c4bb",
+        "S5": "267da50f3b9cd5a5d1dc3c3d36320a882ae4bfa793c5432640c8bc609b49926b",
+        "S6": "ea69ed5f457a4c74d07881b007b783d6256f2a81cee096882c19f8f5c548c7b2",
+        "S7": "8e1a47e447cf5fb0b7670e749e7e96cc4c45af9b996368187524db1334c066b5"
+      },
+      "step_texts": {
+        "S1": "Conjugation on the cyclotomic kernel multiplies the lower coordinate at one by the twist value of the conjugating element.",
+        "S2": "Smoothing by two contributes the factor 1 minus twice the inverse character at two, of norm at most one.",
+        "S3": "Transport to the translated coordinate preserves the common Frobenius eigenvalue for the smoothed layers.",
+        "S4": "The integral series used for the vanishing comparison must represent the same smoothed family at every precision.",
+        "S5": "At a common primitive root the pinned lower bound and vanishing comparison are incompatible when the specialization is zero.",
+        "S6": "Constructing a single norm lift that works across layers and precisions remains a separate premise.",
+        "S7": "The division comparison requires rigidity for one coherent family of adjacent units and all large primitive roots."
+      }
+    },
+    {
+      "edition_sha256": "9a3c7f1a9c787666936a85fb7c773641f8a63d254b5a8b59723542bc68f23f4f",
+      "sources": [
+        {
+          "path": "notes/blueprint/Z1.3.05.tex",
+          "sha256": "80c6a116a0ec6fd00757140b6f2de0d11d0f2fb4db7e46fd81407fa22206c5f7"
+        }
+      ],
+      "statement_sha256": "f12a2d8824c2fcff17af3f465e336a4e12bca6b2e74838c72a9284f858a10111",
+      "steps": {
+        "S1": "0c8a35ec4cebd561455224e0a9f3afd19f342fb345e93986ffb1f62a44d10540",
+        "S2": "40871b5fa46554cd78666c420d2145d2abddb309293042ff9de16b7b5109e230",
+        "S3": "dbb770b37203ff37d85c54bca28d507cf752c7e4cb64a3991e3364a515232075",
+        "S4": "627f52cda786b9f47b11ec3edc8824c9ffbe150e348a1253f954254e923212b3",
+        "S5": "2f726d5467f8eaa7d90d59abf85a0cde1cc05dcfd7bf50b6ce81bf023bd67e1c",
+        "S6": "f75644a3fb6e371f53c6ccf6a995fa88e39efd410b3cc11729e2ac98a4c290d9",
+        "S7": "f147d64425d28a2d98885a8c4493a46959d775ebf7af0c8dcaf7c1657589466f"
+      },
+      "step_texts": {
+        "S1": "Conjugation on the cyclotomic kernel multiplies the lower coordinate at one by the twist value of the conjugating element.",
+        "S2": "Smoothing by two contributes the factor 1 minus twice the inverse character at two, of norm at most one.",
+        "S3": "Transport to the translated coordinate preserves the common Frobenius eigenvalue for the smoothed layers.",
+        "S4": "The integral series used for the vanishing comparison must represent the same smoothed family at every precision.",
+        "S5": "At a common primitive root the pinned lower bound and vanishing comparison are incompatible when the specialization is zero.",
+        "S6": "Constructing a single norm lift that works across layers and precisions remains a separate premise.",
+        "S7": "The division comparison requires rigidity for one coherent family of adjacent units and all large primitive roots."
+      },
+      "step_passages": {
+        "S1": "2b4c847f96ee526751c04695e258798ff2d27e520723c386f54fa6fdbe213692",
+        "S2": "8ade733d525a430c6b432df3f7a372def4525fd860bb92bb18241d8e0f1dc571",
+        "S3": "fe1f9eb3e6e9ab5224eeb3672a8f9cac428dd70870d190a2bcafb4ca18a3c438",
+        "S4": "8dc471f9f66f8ccd1066295f3266abd9de0639705eb7345c9a3993b726353b2b",
+        "S5": "00863cbc3ecfbdd9b34cd4065f4c4c4cac0f4fd1d996872467d37ca40310a906",
+        "S6": "4e3c86daabb0d7376caa8c4c209b4a73e35beda829da03f941e4e5f9e9b48579",
+        "S7": "4e3c86daabb0d7376caa8c4c209b4a73e35beda829da03f941e4e5f9e9b48579"
+      }
+    }
+  ]
+}

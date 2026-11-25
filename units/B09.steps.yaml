@@ -1,0 +1,222 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "B09",
+  "edition_sha256": "b26e222d6e368e84f58b0aebdc76b14290482525cc8748d723decbdf11f9a50f",
+  "note_sha256": "7e76851738b3324baf87deed8034bdf8f589e39393a47af89442ac8cfdd0d51e",
+  "statement_sha256": "8022ca1a125b54a31411f93ad5b67f28c5765ecf4cc6865bf6a38b09d09af47c",
+  "sources": [
+    {
+      "path": "notes/units/B09_v4.md",
+      "sha256": "7e76851738b3324baf87deed8034bdf8f589e39393a47af89442ac8cfdd0d51e"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Writing the kept frequencies with their designated weights and the others with negative absolute value makes the band sum equal to the kept sum minus its omitted correction.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: compatible host character data"
+      ],
+      "lean": [
+        {
+          "name": "Deduction.ch_core",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean",
+          "line0": 343,
+          "line1": 442
+        }
+      ],
+      "source": "notes/units/B09_v4.md",
+      "anchor": "Put $E_0",
+      "source_lines": [
+        13,
+        28
+      ],
+      "claim_sha256": "a68f05d03577ae7ea21573f80932cf06c00b4d27e67ff97e58ec0f0edd7da7a9",
+      "passage_sha256": "23d6722db8e44416242a1a9c7dc2023312f2d8f4dfa369ccc8110229b626e31d",
+      "sha256": "bfcc326a1b3ca3a66d384b8eb495d74476afdfdd7b1a91ab0aea8bfc79b9a4b4",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "A change of evaluation point by at most one, together with the phase and derivative bounds, gives a common allowance for the three character cases.",
+      "kind": "inequality",
+      "uses": [
+        "S1",
+        "D562",
+        "D564"
+      ],
+      "lean": [
+        {
+          "name": "Deduction.CharacterBalanceMoves.one_char",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean",
+          "line0": 202,
+          "line1": 281
+        }
+      ],
+      "source": "notes/units/B09_v4.md",
+      "anchor": "Use $y_t",
+      "source_lines": [
+        32,
+        45
+      ],
+      "claim_sha256": "95ce818633d4982d0e93623619dd626da3e8358d2d9dc68cc3e781f01f509f01",
+      "passage_sha256": "780b9dd77ef18409ac77636da5b1312d693acd55170850e0ad140c8d3e55fc2c",
+      "sha256": "02b311c5765acb7202fcf37d1b15a3077c98a1dd368491f7c4a119496a194f92",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "A threshold depending only on the listed constants is sufficient to absorb the sum of the allowed per-character errors across the band.",
+      "kind": "inequality",
+      "uses": [
+        "S2",
+        "input: number of band characters bounded by M"
+      ],
+      "lean": [
+        {
+          "name": "Deduction.CharacterBalanceMoves.one_char",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean",
+          "line0": 202,
+          "line1": 281
+        }
+      ],
+      "source": "notes/units/B09_v4.md",
+      "anchor": "For a threshold independent",
+      "source_lines": [
+        47,
+        64
+      ],
+      "claim_sha256": "a378c1fdba091d03cca1cec062728cd2515eb160e5a69d21b8f4d07c41821055",
+      "passage_sha256": "d0cf67b054bb95fb76963678cb18ccf4d40ecb505a48d42d53d3b43317ea6b02",
+      "sha256": "c5b815debf5008e59116bd85a4203828de21a29e0f6bb20073d1bd41bdc736eb",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The moving thick widths and the thin-place contributions give controlled errors when each column is compared with its frozen-width sum.",
+      "kind": "inequality",
+      "uses": [
+        "D561",
+        "D562"
+      ],
+      "lean": [
+        {
+          "name": "Deduction.CharacterBalanceMoves.core",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean",
+          "line0": 283,
+          "line1": 338
+        }
+      ],
+      "source": "notes/units/B09_v4.md",
+      "anchor": "For each $u",
+      "source_lines": [
+        68,
+        88
+      ],
+      "claim_sha256": "7445f1c60a713cca28ccf12fe65a6b6c30c0119287dc2f6f978fff0bb90d0829",
+      "passage_sha256": "a56a44acbb0360033253439b37f066cac120c9f3d8fe8630bb13caf7dca43da9",
+      "sha256": "0dc7f68b0eb64cbd1e609e10eb66773b8ef5972ca56ab9945b7e81c723297dd3",
+      "ai_review": []
+    },
+    {
+      "id": "S5",
+      "status": "active",
+      "claim": "Averaging over the subgroup kills frequencies outside its annihilator and leaves the surviving weights multiplied by the thick-set density divided by two.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "S4",
+        "standard: finite character orthogonality"
+      ],
+      "lean": [
+        {
+          "name": "Deduction.CharacterBalanceMoves.core",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean",
+          "line0": 283,
+          "line1": 338
+        }
+      ],
+      "source": "notes/units/B09_v4.md",
+      "anchor": "For $s\\in T_2",
+      "source_lines": [
+        90,
+        112
+      ],
+      "claim_sha256": "961a24ab8f1968024bee039ee722b69c4ab0a98176d88e36580ad2f8e35eee8a",
+      "passage_sha256": "f4d917cff500813a799801c9a8c012b46868015975606825c1267c3481397609",
+      "sha256": "6b6c67c16b1a98f16bea15ab1ce21d58191deb940906f97466ef31660f789834",
+      "ai_review": []
+    },
+    {
+      "id": "S6",
+      "status": "active",
+      "claim": "After division by the positive column normalization the four bracket terms fit the size bounds; the remaining density and fixed factor are absorbed in the stated epsilon loss.",
+      "kind": "inequality",
+      "uses": [
+        "S3",
+        "S5",
+        "B10",
+        "D563"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.LFunctionChainParameters.ThickSetMeanBounds.proposition_size_bound",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean",
+          "line0": 507,
+          "line1": 592
+        }
+      ],
+      "source": "notes/units/B09_v4.md",
+      "anchor": "Expand $\\mathrm{Br}",
+      "source_lines": [
+        150,
+        174
+      ],
+      "claim_sha256": "c6159f5f3a574c2a9738700a037c31b26fe1bf21aad0bd861c4786e66c6ee7b9",
+      "passage_sha256": "309e575c3381e9d6cf1438fc21437ca6403bb5a4d2bf81a20715e09f9b5f9acb",
+      "sha256": "91357995d80f396d963dccd7bf9dd928eaa533e38032dcf21ee1544f8ac8b7a7",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "51760ffcde9c146e1f8bd3697ac9fb777292340c1866b4e8d2122948c0d2809b",
+      "sources": [
+        {
+          "path": "notes/units/B09_v4.md",
+          "sha256": "8fcd1be9e60ba1cc0b3cacac114da27476e6c10de8fb3f2a41b1a8313e66b3a5"
+        }
+      ],
+      "statement_sha256": "8022ca1a125b54a31411f93ad5b67f28c5765ecf4cc6865bf6a38b09d09af47c",
+      "steps": {
+        "S1": "bfcc326a1b3ca3a66d384b8eb495d74476afdfdd7b1a91ab0aea8bfc79b9a4b4",
+        "S2": "02b311c5765acb7202fcf37d1b15a3077c98a1dd368491f7c4a119496a194f92",
+        "S3": "c5b815debf5008e59116bd85a4203828de21a29e0f6bb20073d1bd41bdc736eb",
+        "S4": "0dc7f68b0eb64cbd1e609e10eb66773b8ef5972ca56ab9945b7e81c723297dd3",
+        "S5": "6b6c67c16b1a98f16bea15ab1ce21d58191deb940906f97466ef31660f789834",
+        "S6": "91357995d80f396d963dccd7bf9dd928eaa533e38032dcf21ee1544f8ac8b7a7"
+      },
+      "step_texts": {
+        "S1": "Writing the kept frequencies with their designated weights and the others with negative absolute value makes the band sum equal to the kept sum minus its omitted correction.",
+        "S2": "A change of evaluation point by at most one, together with the phase and derivative bounds, gives a common allowance for the three character cases.",
+        "S3": "A threshold depending only on the listed constants is sufficient to absorb the sum of the allowed per-character errors across the band.",
+        "S4": "The moving thick widths and the thin-place contributions give controlled errors when each column is compared with its frozen-width sum.",
+        "S5": "Averaging over the subgroup kills frequencies outside its annihilator and leaves the surviving weights multiplied by the thick-set density divided by two.",
+        "S6": "After division by the positive column normalization the four bracket terms fit the size bounds; the remaining density and fixed factor are absorbed in the stated epsilon loss."
+      },
+      "step_passages": {
+        "S1": "23d6722db8e44416242a1a9c7dc2023312f2d8f4dfa369ccc8110229b626e31d",
+        "S2": "780b9dd77ef18409ac77636da5b1312d693acd55170850e0ad140c8d3e55fc2c",
+        "S3": "d0cf67b054bb95fb76963678cb18ccf4d40ecb505a48d42d53d3b43317ea6b02",
+        "S4": "a56a44acbb0360033253439b37f066cac120c9f3d8fe8630bb13caf7dca43da9",
+        "S5": "f4d917cff500813a799801c9a8c012b46868015975606825c1267c3481397609",
+        "S6": "309e575c3381e9d6cf1438fc21437ca6403bb5a4d2bf81a20715e09f9b5f9acb"
+      }
+    }
+  ]
+}

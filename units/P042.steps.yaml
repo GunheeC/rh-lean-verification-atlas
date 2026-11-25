@@ -1,0 +1,125 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "P042",
+  "edition_sha256": "cb1d02ede6ceba857696603947a230793d2fe61a8f1a8c4ac4cf58e169545afc",
+  "note_sha256": "f7685dfd72b6d97de5009485f438cb917cefa748ed1041db7e09708cd97b9ea7",
+  "statement_sha256": "20b1b9014936eb61ff9cd3534091555d59aba0bb46ccc5c78680a2e7d0a2afea",
+  "sources": [
+    {
+      "path": "notes/units/P042.tex",
+      "sha256": "f7685dfd72b6d97de5009485f438cb917cefa748ed1041db7e09708cd97b9ea7"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Writing functions in a basis of the extended DVR detects off-support vanishing coordinatewise.",
+      "kind": "computation",
+      "uses": [
+        "standard: finite free DVR extension"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.RepresentationBoundsCohomology.ringDataObjects.moduleBc",
+          "file": "Formalism/WachLatticeTwists/RamifiedBlockRings/RamifiedBlockProofs/SpanSingle.lean",
+          "line0": 62,
+          "line1": 148
+        }
+      ],
+      "source": "notes/units/P042.tex",
+      "anchor": "In an",
+      "source_lines": [
+        13,
+        26
+      ],
+      "claim_sha256": "719e309b5eac4173b7b8ed25040c9fe6ae9e2f2dfbb8c95e4ae371f460b27e1c",
+      "passage_sha256": "15b4cbaddb7afd3e263dc3caae7fab88326b3461ac392796ae2ae34ad0301b10",
+      "sha256": "a74b0422c43fc0ac23ba35d17c18453a622b6412314875b93cfd9e3828e44717",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Transport of the ordered roots carries the relation matrix to a presentation with matching block evaluations.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "input: ordered evaluation compatibility"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.RepresentationBoundsCohomology.ringDataObjects.moduleBc",
+          "file": "Formalism/WachLatticeTwists/RamifiedBlockRings/RamifiedBlockProofs/SpanSingle.lean",
+          "line0": 62,
+          "line1": 148
+        }
+      ],
+      "source": "notes/units/P042.tex",
+      "anchor": "Choose a finite matrix of relations",
+      "source_lines": [
+        13,
+        26
+      ],
+      "claim_sha256": "3a61926974b36e75e048bae9489bb6f6cd9c645f863699e3cf95b60e302252d1",
+      "passage_sha256": "15b4cbaddb7afd3e263dc3caae7fab88326b3461ac392796ae2ae34ad0301b10",
+      "sha256": "ae2737bd226b52e7b29fb85868b54c06659511c08fb3ba08768ddca537a03f31",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Smith factors scale finite solution lengths by the ramification index and preserve an infinite free contribution.",
+      "kind": "computation",
+      "uses": [
+        "S2",
+        "standard: Smith normal form"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.RepresentationBoundsCohomology.ringDataObjects.moduleBc",
+          "file": "Formalism/WachLatticeTwists/RamifiedBlockRings/RamifiedBlockProofs/SpanSingle.lean",
+          "line0": 62,
+          "line1": 148
+        }
+      ],
+      "source": "notes/units/P042.tex",
+      "anchor": "At a distinguished fibre take Smith form",
+      "source_lines": [
+        13,
+        26
+      ],
+      "claim_sha256": "9597ed3c3c0b19bde930f493d68d973c808f033229bc1dbebfbbe8dcba4cc93f",
+      "passage_sha256": "15b4cbaddb7afd3e263dc3caae7fab88326b3461ac392796ae2ae34ad0301b10",
+      "sha256": "1e57ccfbb242b0b87563731308983742d823fe359144f73095d8831d7dd23c45",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "a4ec3c847f3d8dd87113b1764ca284a1a3f8e6f26845e0bcfb41d43e50a98c9d",
+      "sources": [
+        {
+          "path": "notes/units/P042.tex",
+          "sha256": "998b697171a467755abe59087299af07b97c3c5d0177b8d6b7752c4dfff5a1f7"
+        }
+      ],
+      "statement_sha256": "20b1b9014936eb61ff9cd3534091555d59aba0bb46ccc5c78680a2e7d0a2afea",
+      "steps": {
+        "S1": "a74b0422c43fc0ac23ba35d17c18453a622b6412314875b93cfd9e3828e44717",
+        "S2": "ae2737bd226b52e7b29fb85868b54c06659511c08fb3ba08768ddca537a03f31",
+        "S3": "1e57ccfbb242b0b87563731308983742d823fe359144f73095d8831d7dd23c45"
+      },
+      "step_texts": {
+        "S1": "Writing functions in a basis of the extended DVR detects off-support vanishing coordinatewise.",
+        "S2": "Transport of the ordered roots carries the relation matrix to a presentation with matching block evaluations.",
+        "S3": "Smith factors scale finite solution lengths by the ramification index and preserve an infinite free contribution."
+      },
+      "step_passages": {
+        "S1": "15b4cbaddb7afd3e263dc3caae7fab88326b3461ac392796ae2ae34ad0301b10",
+        "S2": "15b4cbaddb7afd3e263dc3caae7fab88326b3461ac392796ae2ae34ad0301b10",
+        "S3": "15b4cbaddb7afd3e263dc3caae7fab88326b3461ac392796ae2ae34ad0301b10"
+      }
+    }
+  ]
+}

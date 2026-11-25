@@ -1,0 +1,329 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% RH Notes blueprint source excerpts for Z3.2
+% Verbatim excerpts in the notation of the parent blueprint. The labelled editions and source ranges appear below.
+% See the unit YAML for the current proof status. Earlier-round passages retain their original wording.
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+\noindent\nolinkurl{Formalism.MainNotions.TruncatedSeriesCountingIdentities.admBK} --- hypothesis at this head (\path{Formalism/SharpRestriction/LevelLetterCocycles/DecompositionData.lean:238--243}); not compared.\par
+\noindent\nolinkurl{Formalism.WeaklyAdmissibleFiltrations.BlochKatoDim} --- hypothesis at this head (\path{Formalism/WeaklyAdmissibleFiltrations/Statement.lean:342--349}); not compared.\par
+External theorem numbers in the original excerpt are not verified here unless a separate edition-specific source record documents the comparison.
+% End of atlas edition annotation.
+
+\section*{Z3.2. Local comparisons and global lattice index}
+
+% Parent source SHA-256: 1af64922b98ed2310744411b1f18b25cc426c97220646321471836e1a3a409d6
+% blueprint/ch_P.tex lines 9024 through 9335; sec:P-r4-Z32
+\subsection{The local arithmetic comparisons in Z3.2}\label{sec:P-r4-Z32}
+
+\paragraph{The first block at a row.}
+Fix $w\in R$. Use the coefficient isomorphism for the self extension
+and the homeomorphism from the absolute local group onto $D_w$.
+Write $T_1$ for the integral source selected by the rank-one
+idempotent, $T'_w$ for the integral target, and $f:T_1\to T'_w$ for the
+surjective projection followed by the row-coordinate isomorphism.
+Its rational extension intertwines the actions. To see the source
+among the representations allowed by the row hypothesis, embed its
+localization in the evaluated matrices. Matrix rows separate points.
+Right multiplication by the inverse family matrix acts on these rows
+by the dual representation, with the prescribed character and cyclotomic
+twist. In a finite-dimensional space, finitely many of the row evaluations
+already have zero common kernel: as long as the kernel is nonzero, select
+an evaluation nonzero on it and decrease its dimension.
+The normalized target in block coordinates is the prescribed matrix
+lattice. For the two lattice embeddings $j_1,j_2$ and the rational
+map $f_K$ one has $f_Kj_1=j_2f$. Given an element of the transported
+target lattice, write it as the transport of $j_2(t)$, choose $s$
+with $f(s)=t$, and transport $j_1(s)$. This lifts that element of
+the target lattice (\nolinkurl{latHom_onto},
+\path{Formalism/AdmissibleDesigns/FinDimOfLat.lean:173--181};
+\nolinkurl{rowTie_disp},
+\path{Formalism/AdmissibleDesigns/FiniteClassesRowEqGeneric.lean:109--142}).
+Continuous family orbits give continuous orbits on the source. Lift a
+target vector and apply the continuous rational projection to its orbit
+to obtain target continuity
+(\path{rowSub_at}, \path{IdempotentPartRepresentationAt.lean:135--217};
+\path{rowMat_SN}, \path{PhiWRhoT.lean:160};
+\path{rowSub_S}, \path{rowOrb_S}, \path{rowFin_S},
+\path{RowLatticeFiniteFree.lean:62--122};
+\path{rowTie_disp}, \path{FiniteClassesRowEqGeneric.lean:102--158}).
+
+An integral finite cocycle is one whose image in the rational
+representation becomes a period coboundary. The induced map on period
+coefficients takes a witness for the source to one for the target.
+It also takes ordinary coboundaries to ordinary coboundaries. Thus $f$
+maps finite classes into finite classes. Conversely the definitions of
+both finite conditions can be read in the local period model by pulling
+a cocycle back along the inverse group and coefficient isomorphisms.
+Continuity is preserved in both directions by the lattice and vector
+space topologies. More explicitly, let $\iota$ identify the local group with $D_w$ and
+let $e$ denote the coefficient identification. On target cochains send
+$c$ to $g\mapsto e(j_2c(\iota g))$. It is injective since $\iota$ is
+onto and $j_2$ is injective. A local finite cocycle valued in the
+transported lattice pulls back pointwise through $j_2$ and
+$\iota^{-1}$. The topology of the embedded lattice makes this
+pullback continuous. Equivariance gives the cocycle identity, and the
+period test transfers by the same coefficient transport. Rational
+coboundaries belong to the finite condition, so the criterion descends
+to integral classes. For the denominator, the image cocycles on the
+local side are sums of the projected finite source cocycles and
+integral target coboundaries. Transport sends both summands to the
+corresponding summands. Conversely lift a source representative by
+the source lattice inverse and pull back the integral primitive of
+the second summand. This identifies the inverse image of the
+denominator with $J_w$ on classes, including the coboundary
+ambiguity. The resulting semilinear bijection on quotients identifies
+their submodule chains, hence their lengths
+(\nolinkurl{exists_pre}, \nolinkurl{im_iff}, \nolinkurl{len_eq_col},
+\path{Formalism/AdmissibleDesigns/LiftMapEquivariant.lean:164--305}). Apply the assumed
+\path{RowAt} bound to these two lattices and this particular map:
+it gives integers $m,k$ with colength $m$, $k=\operatorname{length}_O(O/lO)$,
+and $m\le b_w k$. Here $k=a$. This proves both $J_w\subset F_{s,w}$
+and finiteness with the required bound
+(\path{RowAt}, \path{Formalism/SharpRestriction/LevelLetterCocycles/QuotientHomNonvanishingBound.lean:142--147};
+\path{im_le_Fs}, \path{FiniteClassesContinuousLattice.lean:560};
+\path{fs_eq}, \path{finite_classes_row_eq_generic}, \path{rowLenD_eq},
+\nolinkurl{rowTie_disp},
+\path{Formalism/AdmissibleDesigns/FiniteClassesRowEqGeneric.lean:40--100,102--157}).
+
+\paragraph{The cup-product test.}
+For degree-one cocycles $u,v$, the cup representative at $(g,h)$
+is $b(u(g),g v(h))$, with the given pairing $b$ into the cyclotomic
+twist. Under the same local identifications this representative and the
+coboundary of any continuous one-cochain are carried to the corresponding
+representatives in the period model. Indeed the coefficient map commutes
+with addition, multiplication and the cyclotomic action. Transporting
+back proves the converse coboundary implication. The public annihilator
+hypothesis for the de Rham representation and its paired dual now
+identifies the rational finite condition with the annihilator of the
+dual rational finite condition. The local invariant isomorphisms on
+degree two preserve zero. Write $F,F'$ for the two rational finite spaces, $H'_{T}$ for
+the dual integral cohomology and $j':H'_T\to H'_{V}$ for its
+rationalization. Write $q$ for the reduction of rational classes on
+the first side and $U=K/O$. The duality compatibility gives
+$\langle qx,t\rangle_U=\langle x,j't\rangle_K\bmod O$.
+Thus $q(F)$ annihilates $F_{s,w}=(j')^{-1}F'$.
+
+For the converse take a torsion-side class $z$ annihilating
+$F_{s,w}$. Its functional $t\mapsto\langle z,t\rangle_U$
+factors through the image of $H'_T$ in $H'_V/F'$. This image is
+finitely generated by integral Tate finiteness and torsion-free
+inside a $K$-space, hence free over the DVR $O$. Choose an $O$-basis,
+lift its functional values from $U$ to $K$, and extend the resulting
+functional $K$-linearly to $H'_V/F'$. The basis stays independent
+after inverting the uniformizer. Rational duality represents the
+composite on $H'_V$ by a class $x$. Since that functional vanishes
+on $F'$, rational orthogonality gives $x\in F$. The reduction of
+this functional agrees on every basis element and therefore on
+every integral class with the functional of $z$. Integral
+nondegeneracy now gives $qx=z$. This proves both inclusions
+(\nolinkurl{bkbConv},
+\path{Formalism/WachLatticeTwists/CharacterSplitJumps/CharacterJumpProofs/PropLocBK.lean:13--84}). These are applications of the local
+duality hypotheses in the displayed theorem
+(\path{cup_iff}, \path{bk_a_of_admitted_bk_a},
+\path{CoboundaryMemFiniteClasses.lean:397--440,518--530};
+\path{bkInIso}, \path{bkInRow}, \path{BkInRow.lean:14--41};
+\path{rowRhoReal}, \path{RowChiReal.lean:16--53}).
+
+There is also a cochain calculation particular to $J_w$.
+In the left $A$-submodule $Y=\sum_g A y_g$ of $A$, with $y_g=(u(g)-1)P$, take the coefficient
+pairing $T_1\times Y\to Y(1)$ given by multiplication with the
+image of the first argument in $A$. Equivariance follows by cancelling
+$r(g)^{-1}r(g)$ and the two character factors. In $A$ the cocycle
+$g\mapsto y_g$ is the coboundary of $P$. Hence the cup with an
+integral source cocycle is a coboundary after inclusion in $A(1)$
+(the cup-coboundary identity follows by expanding the two cocycle
+identities). It is already a continuous coboundary in $Y(1)$:
+the local invariant isomorphisms for finitely generated $O$-modules with
+their module topologies identify the map on $H^2$ for the twist with
+the inclusion $Y\hookrightarrow A$. Naturality and injectivity of
+that inclusion prove injectivity on $H^2$; $Y$ is finite over $O$ as
+a submodule of the finite $O$-module $A$. Applying the functional
+induced by $\phi$ sends the resulting primitive to a primitive for the
+row pairing with $\Psi_0(\phi)$. Thus the pairing vanishes on $J_w$.
+Together with the preceding paragraph this gives precisely the
+injection of the row error into $(F_{s,w}/J_w)^\vee$ used earlier
+(\nolinkurl{Ymod}, \path{Formalism/CharacterColumnKernels/StatementN.lean:92--106}; \path{clause4GK}, \path{Clause4GK.lean:17--20};
+\path{h2Map_injective_statement}, \path{clause4},
+\path{H2MapInjectiveStatement.lean:14--55};
+\path{cupKillAdm}, \path{CupKillAdm.lean:254--274};
+\path{rowCup}, \path{KeyMul.lean:12--59};
+\path{bridgeRho}, \path{Formalism/WachLatticeTwists/CoprimeLiftBounds/CoprimeLiftProofs/Bridge.lean:14--43}).
+
+\paragraph{Character blocks at the same row.}
+Write $e=c-1$, $1\le c\le t$. The coefficient isomorphism identifies
+the torsion block, with its action, with $C_e=V_e/L_e$ for the
+one-dimensional twist $\epsilon^{-e}$. On $Y\oplus O$ use the extension
+action with invariant second coordinate $p$ and base vector $s=(0,1)$.
+Then $gs-s=(y_g,0)$. Its rational representation embeds into a finite
+sum of the twisted family representations. Concretely, in the
+evaluated algebra the map $(y,a)\mapsto y+aP$ intertwines the
+action. Record $a$ also on a fixed nonzero vector in the twisted
+special fibre (the first character line). These two records are jointly
+injective. Finite evaluation coordinates suffice by the decreasing
+kernel argument above. The range of the resulting embedding is stable, so the extension
+and the quotient fit in an equivariant short exact sequence with
+middle term this finite direct sum. Induction on the number of
+summands, using the split exact sequence for the last summand and
+the Fontaine hypotheses, gives a crystalline middle term whose
+filtered multiplicities sum those of the summands. The subobject
+and quotient clauses now give crystallinity and additivity of
+multiplicities for this second exact sequence. A jump of the
+extension contributes a positive multiplicity, and the quotient
+has nonnegative multiplicities. Hence some summand has a positive
+multiplicity there. The family clause of G2 identifies this
+multiplicity with that of the marked fibre, giving its jump
+(\nolinkurl{crys_sum}, \nolinkurl{crys_of_inj},
+\path{Formalism/AdmissibleDesigns/TensSubsingleton.lean:213--270,273--304};
+\nolinkurl{ytG_crys}, \path{Formalism/AdmissibleDesigns/YtRepZero.lean:147--158})
+(\path{ytEmbW_of}, \path{TwistedTargetOfInputs.lean:175--198};
+\path{ytG_psi}, \path{YtRepZero.lean:107--148};
+\path{jump_pi}, \path{ytTarget_of}, \path{YtTargetOf.lean:128--169}).
+
+The row functional on $Y$ extends $O$-linearly to this rational source
+with values in $C_e$. Indeed $C_e$ is divisible over a DVR, so a map on
+a submodule extends by the injectivity criterion for modules over a
+principal ideal domain. On the integral kernel of $p$ its restriction is
+the original equivariant map. The orbit difference at $s$ is therefore
+sent to the row cocycle. The first clause of the assumed
+\path{TBAt} gives $l^{c_B}$ times this cocycle in the finite torsion
+condition. For the length, let $U_e$ denote the locally constant torsion
+cocycles and $F_e$ the finite torsion condition on representatives.
+Transport a representative of the relaxed row quotient to
+\[
+ \frac{U_e\cap (l^{c_B})^{-1}F_e}{U_e\cap F_e}.
+\]
+This is well defined and injective: coboundaries are respected by the
+coefficient isomorphism, and the second clause of \path{TBAt}
+identifies the denominator on cohomology with zero at $e>0$, or with
+the unramified classes at $e=0$. In the latter case the group
+isomorphism carries inertia onto inertia. Thus membership of the
+transported representative in the denominator is exactly membership in
+the strict condition. The length of the target is bounded by
+$( [E_w:\mathbf Q_l]+1)c_Ba$ by the last clause of \path{TBAt}.
+The coefficient ring isomorphism preserves this length, since it
+transports submodule chains and $(l)$, and local coefficient
+compatibility identifies the degrees
+(\path{TBAt}, \path{Formalism/SharpRestriction/LevelLetterCocycles/QuotientHomNonvanishingBound.lean:171--187};
+\path{trC_hf}, \path{trC_mem_Z1D}, \path{TrCMemZ1D.lean:146--168};
+\path{lenMap_of}, \path{TrivialBoundTargetOfPsi.lean:109--132};
+\path{len_gen}, \path{tbLen_w}, \path{TrivialBoundTargetOfDict.lean:77--94,137--159}).
+
+\paragraph{Integral columns and the two lifts.}
+Let $T$ be the stable first-block lattice over $O$, $K=\operatorname{Frac}(O)$
+and $W=T\otimes_O K$. The map from its integral finite cohomology
+$F_f$ to continuous integral $H^1$ in the local model is injective:
+an integral primitive there pulls back to an integral primitive here
+by the lattice identification and surjectivity of the group isomorphism.
+Tate finiteness makes the target finitely generated and $O$ is
+Noetherian. To compute the rank, map $F_f$ to the rational finite
+cohomology. A continuous rational finite cocycle has compact image,
+since the local Galois group is profinite. Dilates of the open lattice
+cover its vector space. A finite subcover on the image gives one
+nonzero denominator clearing all cocycle values. The multiple still
+has a period primitive and hence gives an integral finite class.
+Conversely if an integral cocycle becomes $g v-v$ over $K$, clear
+one denominator of $v$ to make this an integral coboundary.
+Consequently the map is an isomorphism after inverting $O\setminus\{0\}$.
+The normalized coordinates identify $W$ with the local first-block
+representation $\rho_\pi\chi_1^{-1}$ by a continuous equivariant
+linear isomorphism. It conjugates the period coboundary tests in
+both directions. This proves $\operatorname{rank}_O(F_f/F_{f,\mathrm{tors}})=j_w$.
+Saturation and the basis lifts described above now apply, including
+when $j_w=0$. For each of the two evaluations the required lift is
+the $l^{m_w}$-multiple lift in the public lattice condition transported
+back on cocycles; for the second evaluation its input is the finite
+unramified trivial-coefficient class $\delta_O u_w$
+(\path{finite_FfG}, \path{bound_compact}, \path{thet_loc},
+\path{finrank_Ff}, \path{finFf_of}, \path{MemIntegralSpanIffImage.lean:199--251,265--282,722--850,894--916};
+\path{rankFf_normAt}, \path{RankFfNormAt.lean:26--65};
+\path{liftCol_eve_Dd}, \path{liftCol_evE_Dd}, \path{FiniteClassesLocalEq.lean:708--786,798--848}).
+
+\paragraph{The off-$Z$ dimension in the determinant.}
+At a column and an evaluated point, let $V$ be the full twisted rational
+fibre and $W=\rho_\pi\chi_1^{-1}$. The local comparison sends the
+finite cocycles $L_x$ and the ordinary coboundaries $\operatorname{im}D$
+to their namesakes for $V$, so
+$L_x/\operatorname{im}D\simeq H_f^1(V)$ and
+$\ker D\simeq H^0(V)$. For the first assertion apply the period
+map to the witness and use the inverse coordinate map to recover it.
+For the second use $D(v)(g)=gv-v$ and surjectivity onto the local
+group. Finite-dimensionality of $H_f^1(V)$ follows by the compact-image
+argument for all continuous cocycles and integral Tate finiteness.
+Where a stable lattice is needed, take the span of the orbits of an
+integral basis lattice; compactness bounds those finitely many basis
+orbits in one dilate, so this span is a finite free open lattice
+(\path{latSt}, \path{finDim_of_tate}, \path{finX_of},
+\path{MemIntegralSpanIffImage.lean:423--469,517--544,968--992};
+\path{dimLx_of}, \path{Formalism/AdmissibleDesigns/CohomZeroEquivContinuous.lean:424--488}).
+
+The family condition gives crystallinity of $V$ and equality of its
+filtered multiplicities with those at the marked point. The specified
+semisimple decomposition there splits off $W$ together with the
+characters. The Fontaine direct-sum and subobject clauses give
+crystallinity of $W$ and additivity of the multiplicities. All jumps
+of these characters are nonnegative by the local gain condition.
+Hence $m_V(\tau,i)=m_W(\tau,i)$ for every $i<0$.
+For each embedding $\tau$ take a common lower filtration index at which
+both exhaustive de Rham filtrations are the whole spaces. Summing
+successive dimension differences from that index through $-1$
+shows that the dimensions of the two quotients by $\mathrm{Fil}^0$
+agree. The chosen coefficient field contains the images of all embeddings of
+the local field into the algebraic closure. Restricting the codomain
+of each such embedding gives an inverse to composing with the
+coefficient-field inclusion. The embedding count therefore gives
+the required splitting (\nolinkurl{splits_coef},
+\path{Formalism/SharpRestriction/LevelLetterCocycles/LargeLevelLemmas.lean:42--56}).
+The Bloch--Kato dimension hypothesis now applies to both crystalline
+representations. Their filtered contributions
+are equal, and the local gain assumption gives $H^0(W)=0$.
+Therefore
+\[
+ \dim H_f^1(V)=\dim H^0(V)+\dim H_f^1(W)
+                =\dim\ker D+j_w .
+\]
+This proves the required upper bound for the dimension of
+$L_x/\operatorname{im}D$ in the determinant argument.
+The column comparison consumes this dimension bound through
+\nolinkurl{colLx_of_ringDef}, \nolinkurl{colLx} and
+\nolinkurl{plugOpen3_B} in \nolinkurl{theorem_n5_of_open_b}
+(\path{Formalism/AdmissibleDesigns/ColumnUnramifiedCharacter.lean:69--108};
+\path{Formalism/AdmissibleDesigns/ColLx.lean:32--70};
+\path{Formalism/AdmissibleDesigns/StatementOneBChangedOfOpen.lean:316--345,351--363}).
+The two normalized applications and the public arithmetic hypotheses
+are distinguished in Section~\ref{sec:r5-z32-rev}.
+These comparisons complete Z3.2 under the hypotheses of
+\path{SelmerBoundAtPoint.main}
+(\path{crysX_of}, \path{decomp_at}, \path{wp_font}, \path{negX_of},
+\path{IsDROfWpIso.lean:83--95,200--270,297--320};
+\path{negdim_eq}, \path{count_eq}, \path{rank_le_count}, \path{dimLx_of_font},
+\path{Formalism/AdmissibleDesigns/CohomZeroEquivContinuous.lean:199--263,531--600};
+\path{open_inputs_at_normalized}, \path{StatementOneBFromUnramified.lean:74--93};
+\path{theorem_n5_of_open_b}, \path{StatementOneBChangedOfOpen.lean:351--365}).
+
+Two compatibility statements also enter the cohomology calculation.
+The evaluated algebra has its finite-module topology and the twisted
+action is continuous for the local coefficient and fraction topologies;
+these hypotheses give the locally constant torsion cocycles used in
+$\Psi_c$ (\path{topoHyps}, \path{DisplayForms.lean:21--51}).
+For the second column lift, $\delta_O u_w$ represents a finite class
+by the explicit unramified trivial-coefficient hypothesis of the public
+theorem. The conversion is invoked by \nolinkurl{SelmerBoundAtPoint.main}
+itself (\nolinkurl{StD.unramified_input_of_admitted},
+\path{Formalism/AdmissibleDesigns/UnramifiedInputOfAdmitted.lean:27--34};
+\path{Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/SelmerLengthBoundAtPoint.lean:23--28}). These are additional inputs
+to the displayed reduction. The local class field and duality comparison should be read with its
+original quantifiers. For a characteristic-zero nonarchimedean local
+field, Milne states cup-product duality for finitely generated discrete
+modules with torsion of order prime to the characteristic, and the local
+Euler characteristic for finite modules of such order. Finite
+$l$-primary coefficients over $E_w$ satisfy this characteristic condition
+also at $w\mid l$. The passage to the lattice and rational period
+conditions uses the local hypotheses and comparisons above
+(\path{admBK}, \path{DecompositionData.lean:238--243};
+\cite[I.2, Corollary 2.3 and Theorem 2.8]{S-Milne}).
+\emph{Status: complete under the hypotheses of \path{SelmerBoundAtPoint.main}, including the explicit local arithmetic, topology, tame and class-field conditions.}
+
+%BIB S-Milne | J. S. Milne | Arithmetic Duality Theorems | second edition, BookSurge, 2006 | https://www.jmilne.org/math/Books/ADTnot.pdf | I.2, Corollary 2.3 and Theorem 2.8, local finite-coefficient duality and Euler characteristic; I.4.10(a),(b) for duality, and the exact sequence following part (c).
+\clearpage
+

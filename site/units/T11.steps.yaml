@@ -1,0 +1,183 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "T11",
+  "edition_sha256": "3aa5e09e13940d6c97a061054ea2338a6096af69d4574a8cd250020c15891335",
+  "note_sha256": "cba8811091b9d93f1af6651f61fc6dca4aab0c81bfe89756d7ff79aac1730785",
+  "statement_sha256": "fd7cde5bb7c729c4fa8114a1f2cdc739cdf7cf3b86076f492984784682ce3af5",
+  "sources": [
+    {
+      "path": "notes/units/T11_round3.md",
+      "sha256": "cba8811091b9d93f1af6651f61fc6dca4aab0c81bfe89756d7ff79aac1730785"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The chart construction supplies the spherical model required by the conditional comparison.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: spherical lattice-model construction"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.ThKR.thetaIntegralsAgree_and_localMatching_of_siegelWeil",
+          "file": "Development/WeilBound/ThetaLifts/Reductions/FiniteClosure/TheoremKOfMod.lean",
+          "line0": 22,
+          "line1": 27
+        },
+        {
+          "name": "PositivityTheory.Sph.modSt2",
+          "file": "Development/WeilBound/ThetaLifts/SphericalLattices/ModSt2.lean",
+          "line0": 5,
+          "line1": 7
+        }
+      ],
+      "source": "notes/units/T11_round3.md",
+      "anchor": "The pinned theorem first proves a version with a spherical lattice-model assumption **ModSt**. The f",
+      "source_lines": [
+        11,
+        11
+      ],
+      "claim_sha256": "da99be2bfe4047b603201b3a51afc4613c30053a2fcfcab7378301a771c52ca0",
+      "passage_sha256": "ec9f293b8d563dfad9c7226fbb6341882a8bbf4c9067d079db4eb4424058f935",
+      "sha256": "3805db59f8665e4b0ff853058e9e69b17445f11bf06e94c8514b5342fc05e694",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The ramified, split, inert and real data together supply a placewise match.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "input: finite and archimedean comparison data"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.ThKR.theoremK_head2_of_mod",
+          "file": "Development/WeilBound/ThetaLifts/Reductions/FiniteClosure/TheoremKOfMod.lean",
+          "line0": 14,
+          "line1": 20
+        }
+      ],
+      "source": "notes/units/T11_round3.md",
+      "anchor": "At ramified finite places the proof takes coinvariant and multiplicity-one results and a finite rami",
+      "source_lines": [
+        15,
+        15
+      ],
+      "claim_sha256": "5b531a5887781a51d2fdbac348f41f6918de4004bce8dea563f874487682653a",
+      "passage_sha256": "edfe1d43ef47cac1b03d70fc7d90c3cb14e35e9278cb0ab1d356b677d2f865c0",
+      "sha256": "fb3be078f3ec3c8be1f71596f44dd03c3962bc6b3aa4dc605f238a8e3b54d55c",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The global comparison supplies the required integration bounds on the indicated test data.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: Siegel set and decay estimates"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.Sph.Tr.closeSph",
+          "file": "Development/WeilBound/ThetaLifts/SphericalLattices/SphericalClosure/CloseSph.lean",
+          "line0": 103,
+          "line1": 117
+        }
+      ],
+      "source": "notes/units/T11_round3.md",
+      "anchor": "For the global calculation the Siegel set supplies height and decay estimates. On the unprimed side ",
+      "source_lines": [
+        17,
+        17
+      ],
+      "claim_sha256": "dcebb825ae9f7cafad15753f46828c4339cd77cc2180de507e14414090874c23",
+      "passage_sha256": "5aa9d0001de8d63e111430f5872e59c22278d9ac33ea591a41c24c1d58b09df5",
+      "sha256": "6cca8c3056226385872d0eaf4380287ba9259c45171961e17397b123396a5b95",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "For each admissible match the nonzero primed test enforces uniqueness of the comparison scalar, and every scalar implementing agreement is nonzero.",
+      "kind": "assembly",
+      "uses": [
+        "S2",
+        "S3",
+        "input: compatibility for every match"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.Sph.Tr.closeSph",
+          "file": "Development/WeilBound/ThetaLifts/SphericalLattices/SphericalClosure/CloseSph.lean",
+          "line0": 183,
+          "line1": 193
+        }
+      ],
+      "source": "notes/units/T11_round3.md",
+      "anchor": "For a particular match a scalar $c$ must satisfy $I(\\Phi)(h)=cI'(\\Phi')(h)$ at every $h$ and for all",
+      "source_lines": [
+        21,
+        21
+      ],
+      "claim_sha256": "075b0d8ccaa6fd3af14829c067270626912979591986e26f4668202d3e63e49e",
+      "passage_sha256": "6d05350b59eee65e8a66744575c2749dd1fd69a947821dca60d8aa02e74a6cf1",
+      "sha256": "3526f9641b6a06470190013082a26592a42725c52fbe61cc67e694bb9527755b",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "00517a3fddc07a5099dd0b5699ca5ea57825c0d4e90fd64f76eacb424b3be812",
+      "sources": [
+        {
+          "path": "notes/units/T11_round3.md",
+          "sha256": "80b5e45aad8307b1da38ec6ed914117b489a4cdc36287d63ba4e1a817650aa7f"
+        }
+      ],
+      "steps": {
+        "S1": "3805db59f8665e4b0ff853058e9e69b17445f11bf06e94c8514b5342fc05e694",
+        "S2": "fb3be078f3ec3c8be1f71596f44dd03c3962bc6b3aa4dc605f238a8e3b54d55c",
+        "S3": "6cca8c3056226385872d0eaf4380287ba9259c45171961e17397b123396a5b95",
+        "S4": "85a6ce2f258e771e2bd277940c7a1c196b4b6277b014dab1b316c165d6a03707"
+      },
+      "step_texts": {
+        "S1": "The chart construction supplies the spherical model required by the conditional comparison.",
+        "S2": "The ramified, split, inert and real data together supply a placewise match.",
+        "S3": "The global comparison supplies the required integration bounds on the indicated test data.",
+        "S4": "For each admissible match the integral scalar is nonzero on the specified nonzero primed test."
+      }
+    },
+    {
+      "edition_sha256": "bab3ac823b633d9d6028ae7742b0554eaff54dcc391e12f1442c3e4cf02d2bae",
+      "sources": [
+        {
+          "path": "notes/units/T11_round3.md",
+          "sha256": "80b5e45aad8307b1da38ec6ed914117b489a4cdc36287d63ba4e1a817650aa7f"
+        }
+      ],
+      "statement_sha256": "fd7cde5bb7c729c4fa8114a1f2cdc739cdf7cf3b86076f492984784682ce3af5",
+      "steps": {
+        "S1": "3805db59f8665e4b0ff853058e9e69b17445f11bf06e94c8514b5342fc05e694",
+        "S2": "fb3be078f3ec3c8be1f71596f44dd03c3962bc6b3aa4dc605f238a8e3b54d55c",
+        "S3": "6cca8c3056226385872d0eaf4380287ba9259c45171961e17397b123396a5b95",
+        "S4": "3526f9641b6a06470190013082a26592a42725c52fbe61cc67e694bb9527755b"
+      },
+      "step_texts": {
+        "S1": "The chart construction supplies the spherical model required by the conditional comparison.",
+        "S2": "The ramified, split, inert and real data together supply a placewise match.",
+        "S3": "The global comparison supplies the required integration bounds on the indicated test data.",
+        "S4": "For each admissible match the nonzero primed test enforces uniqueness of the comparison scalar, and every scalar implementing agreement is nonzero."
+      },
+      "step_passages": {
+        "S1": "ec9f293b8d563dfad9c7226fbb6341882a8bbf4c9067d079db4eb4424058f935",
+        "S2": "edfe1d43ef47cac1b03d70fc7d90c3cb14e35e9278cb0ab1d356b677d2f865c0",
+        "S3": "5aa9d0001de8d63e111430f5872e59c22278d9ac33ea591a41c24c1d58b09df5",
+        "S4": "6d05350b59eee65e8a66744575c2749dd1fd69a947821dca60d8aa02e74a6cf1"
+      }
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "T24",
+  "title": "Integral orthogonality for Hodge–Tate kernels",
+  "track": {
+    "primary": "local",
+    "secondary": [
+      "galois"
+    ]
+  },
+  "statement": "Fix a prime $p$, an algebraically closed\ncharacteristic-zero valued field $C$ with $v(p)<1$, a valuation ring $O$\nwhich is a $\\mathbb Z_p$-algebra complete for $(p)$, and a $p$-divisible\ngroup $G/O$. Choose $\\zeta_0=1$, $\\zeta_{n+1}^p=\\zeta_n$, $\\zeta_1\\ne1$.\nLet $B$ pair the two $O$-extended Tate modules of $G,G^\\vee$ bilinearly.\nOn pure Tate elements require the Weil pairing to be\n$a\\mu_{\\mathrm{Tate}}(\\zeta)$ and $B(1\\otimes x,1\\otimes\\chi)=a$ in $O$\nfor some $a\\in\\mathbb Z_p$, for every $x,\\chi$.\nThen $\\mathrm{HT}_G(x)=0$ if and only if $B(x,y)=0$ for all\n$y\\in\\ker(\\mathrm{dlog}_G)$ in the dual-side module.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "The Lean head takes the open-literature record and does not use it. `UpperTheory.LiteratureTheorems.fargues_exact_of_literature` (`Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:549–550`).",
+    "Use a prime $p$, an algebraically closed characteristic-zero valued field with the stated valuation condition, its $p$-adically complete valuation ring, a $p$-divisible group and compatible roots of unity."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.LiteratureTheorems.fargues_exact_of_literature",
+      "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+      "line0": 549,
+      "line1": 550,
+      "sha256": "01e7c70bdce0cc8a81cc7bbbd1253800728db8deeae9f6d86e4cd7f4c92100bf",
+      "dominated": 1613,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/T24_round4.md",
+      "section": "T24 · Why the orthogonal kernel is an integral assertion",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "5.34 (sub:T24)",
+      "pages": [
+        47,
+        47
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/T24.tex",
+      "section": "sub:T24",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": 2,
+  "open_questions": [
+    "How is the integral lattice recovered after passing to a rational kernel, and where can a power-of-p index occur?"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "T24",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "integral-orthogonality-for-hodgetate-kernels",
+  "aliases": [
+    "Integral orthogonality for Hodge--Tate kernels",
+    "fargues_exact_of_literature",
+    "T24 Integral orthogonality for Hodge–Tate kernels"
+  ],
+  "background": [
+    "p-divisible groups",
+    "Hodge–Tate maps",
+    "Integral lattices"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "5.34 (sub:T24)",
+    "pages": [
+      47,
+      47
+    ]
+  },
+  "question_sources": [
+    "questions/local.md"
+  ],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "review_status": "pending_review",
+  "summary": "A bilinear form on the two extended Tate modules, normalized by the Weil pairing, detects the Hodge–Tate kernel by testing against the kernel of the dual logarithmic differential. The theorem handed to the reader accepts a literature record. Its implementation uses a separately constructed prismatic comparison.",
+  "reader_overrides": {
+    "hypothesis_details": [
+      "The Lean head takes the open-literature record and does not use it. `UpperTheory.LiteratureTheorems.fargues_exact_of_literature` (`Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:549–550`).",
+      "Use a prime $p$, an algebraically closed characteristic-zero valued field with the stated valuation condition, its $p$-adically complete valuation ring, a $p$-divisible group and compatible roots of unity."
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "P007",
+  "title": "Reflection for primitive Dirichlet characters",
+  "track": {
+    "primary": "formal",
+    "secondary": [
+      "analytic"
+    ]
+  },
+  "statement": "For every $N\\ge1$ and every primitive Dirichlet character $\\chi$ modulo $N$, if $L(s,\\chi)=0$ with $0<\\Re s<1$, then $\\Re s=1/2$.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "The Dirichlet character is primitive and has positive modulus.",
+    "Its L-function vanishes at a point of the open critical strip."
+  ],
+  "lean": [
+    {
+      "name": "critAll",
+      "file": "Supplements/Kernels/MainTheorems.lean",
+      "line0": 11,
+      "line1": 13,
+      "sha256": "0d978db013e5eba6fa1d430c3cbd57ba979648c7e28481d8ee74be0150b7b823",
+      "dominated": 24,
+      "graph": "five_public_heads"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/P007_round4.md",
+      "section": "P007 · Using the primitive functional equation in the strip",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "6.7 (pn:P007)",
+      "pages": [
+        55,
+        55
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/P007.tex",
+      "section": "pn:P007",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [
+    "P009"
+  ],
+  "size_pages": 2,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "P007",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "reflection-for-primitive-dirichlet-characters",
+  "aliases": [
+    "Primitive reflection wrapper",
+    "critAll",
+    "P007 Reflection for primitive Dirichlet characters"
+  ],
+  "background": [
+    "Functional equations",
+    "Primitive Dirichlet characters"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "6.7 (pn:P007)",
+    "pages": [
+      55,
+      55
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "P009": "graph"
+  },
+  "review_status": "pending_review",
+  "summary": "For a primitive character, the functional equation turns a zero left of the middle of the strip into a zero of the inverse character to the right. The all-character input rules out that reflected zero."
+}

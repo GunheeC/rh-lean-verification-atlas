@@ -1,0 +1,96 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "P045",
+  "title": "A weighted valuation bound for a formal-group jet",
+  "track": {
+    "primary": "local",
+    "secondary": []
+  },
+  "statement": "Fix a prime \\(p\\) and project systems \\(X,Y,D\\). Assume the integral exponential factorization for the formal group (\\(\\mathrm{RestGc}\\)): in the indicated even cyclic coordinates, after adjoining a \\((p^2-1)\\)-st root of \\(p\\) and using the inverse Lubin--Tate parameter, the transformed exponential factors as the prescribed exponential times an integral series, with integral parameters. Assume each unweighted differential coefficient is zero or agrees with the corresponding coefficient of a local frame jet. If \\(D\\) admits \\(X,Y\\), then for any place \\(v\\), stage \\(j<m\\), \\(1\\le i\\le r\\), allowed integral parameter series \\(U\\), selected columns \\(I\\) and output monomial \\(n\\), the coefficient at \\(n\\) of the \\(i\\)-weighted differential of\n\\[\n \\Theta_j\\!\\left(\\exp(-\\Phi_{j,v})\\,U\\right)\n\\]\nsatisfies the lower valuation bound \\(g_v(j+1)\\) in the comparison field \\(Y\\). Integrality of \\(U\\) here is in the chosen parameter coordinates.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Fix a prime and compatible formal systems $X,Y,D$ with the stated integral exponential factorization RestGc.",
+    "Each unweighted coefficient vanishes or is a local-frame jet coefficient. Require admission and the indicated stage, differential and coordinate ranges."
+  ],
+  "lean": [
+    {
+      "name": "Formalism.MainNotions.FormalGroupSystem.Pf.hecke_place_bound",
+      "file": "Formalism/SharpRestriction/GrowthBounds/MultisetValuation/FirstTheoremPlaceBound.lean",
+      "line0": 28,
+      "line1": 30,
+      "sha256": "50d3609e3318b0ecf5022ca8276e5b51c9cd3f773d4adc431b7117ee74e15928",
+      "dominated": 150,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "7.22 (pn:P045)",
+      "pages": [
+        87,
+        87
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/P045.tex",
+      "section": "pn:P045",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L1",
+  "reviews": [
+    "reviews/R4_review_Z4.md"
+  ],
+  "prerequisites": [
+    "Z42-SITES"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [
+    {
+      "grade": "L1",
+      "review": "reviews/R4_review_Z4.md",
+      "lines": [
+        149,
+        159
+      ],
+      "scope": "Statement comparison; the proof has qualifications.",
+      "verdict": "No statement mismatch reported"
+    }
+  ],
+  "paper_id": "P045",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "a-weighted-valuation-bound-for-a-formal-group-jet",
+  "aliases": [
+    "Weighted jet at a place",
+    "P045 A weighted valuation bound for a formal-group jet"
+  ],
+  "background": [
+    "Lubin–Tate formal groups",
+    "Jets of formal power series",
+    "Nonarchimedean valuations"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "7.22 (pn:P045)",
+    "pages": [
+      87,
+      87
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "Z42-SITES": "statement-reading"
+  },
+  "summary": "Given the integral formal-group exponential factorization and the match to frame jets, each designated weighted differential coefficient satisfies the lower valuation bound at the next stage. This controls a row of the local comparison using the integral coordinates specified in the hypotheses."
+}

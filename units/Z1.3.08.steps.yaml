@@ -1,0 +1,161 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "Z1.3.08",
+  "edition_sha256": "6eb967cba42b4ad70d7f4043b5e52d00ea436683bc12fd0624772ce5f9837a44",
+  "note_sha256": "5c66eceb94ca4f5c302a3f7afff24dbea06a42a8437c327771c4e81f1c215d1f",
+  "statement_sha256": "e22c62fef7b2f32e9a6bfeb9fa169878e04f145a54ebba2c2ef71d96fd115faa",
+  "sources": [
+    {
+      "path": "notes/blueprint/Z1.3.08.tex",
+      "sha256": "5c66eceb94ca4f5c302a3f7afff24dbea06a42a8437c327771c4e81f1c215d1f"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Specializing the three inputs on the original closure yields a single pinned tuple.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "Z1.3.01",
+        "Z1.3.02",
+        "Z1.3.03",
+        "Z1.3.04"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Z.Kato.Joint.kato_global_unit_law_of_smoothed_classes",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/FrobeniusHodgeTateLaws/KatoGlobalUnitLawOfSmoothedClasses.lean",
+          "line0": 8,
+          "line1": 10
+        }
+      ],
+      "source": "notes/blueprint/Z1.3.08.tex",
+      "anchor": "\\nolinkurl{Pin7}. Z1.3.04 takes three inputs: the integral Euler-system",
+      "source_lines": [
+        15,
+        31
+      ],
+      "claim_sha256": "517d2b5969cf6f009a4b5b1e357eaab7fb97b42504a8f95de62a3cb66df2e2a2",
+      "passage_sha256": "83b825e624db6f588cd271c4d96bb7246f56d14e71c5e60c6799425704c71d9d",
+      "sha256": "375fdae6dd43209b0a3788a6dc6b1988df88c35b30dbb98daf29cb1c5c283aac",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The local test yields a nonzero quotient coordinate for the same global cocycle.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "Z1.3.05",
+        "Z1.3.06"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Kd.C7.pLocu",
+          "file": "Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/NormFactorLeOne.lean",
+          "line0": 162,
+          "line1": 164
+        }
+      ],
+      "source": "notes/blueprint/Z1.3.08.tex",
+      "anchor": "universal local test (.05) to these witnesses. Its inertia element has a",
+      "source_lines": [
+        15,
+        31
+      ],
+      "claim_sha256": "7640b5289185d331114073a445ea3b663a30dc3f501b152f103420cd80505ba8",
+      "passage_sha256": "83b825e624db6f588cd271c4d96bb7246f56d14e71c5e60c6799425704c71d9d",
+      "sha256": "2300592ca8f7547cdc95b89caa57872e43b5d3a71f942ce9eaf1ef2f1e66ca67",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The diagonal value one at that element rules out the Greenberg relation and retains the original exceptional set.",
+      "kind": "computation",
+      "uses": [
+        "S2",
+        "Z1.3.07"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.KZ.not_gr_of_nzAt",
+          "file": "Development/AbelianVarietyTheory/Definitions/Foundations/IsLocallyConstantCycMod.lean",
+          "line0": 40,
+          "line1": 44
+        }
+      ],
+      "source": "notes/blueprint/Z1.3.08.tex",
+      "anchor": "entry is $1$. Every Greenberg coboundary has quotient coordinate $(1-1)x=0$",
+      "source_lines": [
+        15,
+        31
+      ],
+      "claim_sha256": "24d33dcf0df34538bd445282e961775863c671fe5133207c817c29859ec4202c",
+      "passage_sha256": "83b825e624db6f588cd271c4d96bb7246f56d14e71c5e60c6799425704c71d9d",
+      "sha256": "aa57834a21dc5f77df028bff94207e7d77274b864f75b6d32524cabee1c87358",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The unconditional declaration inherits the remaining obligations in the global pin and local specialization tests.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S1",
+        "S2",
+        "input: global and local suppliers"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Z.Kato.Final.zetaUr",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/UnramifiedZeta/ZetaUr.lean",
+          "line0": 9,
+          "line1": 12
+        }
+      ],
+      "source": "notes/blueprint/Z1.3.08.tex",
+      "anchor": "\\emph{Partial for the unconditional declaration.} The assembly just given",
+      "source_lines": [
+        33,
+        47
+      ],
+      "claim_sha256": "f849ff334e7da9ea02e2634efd8dbcf5a38af8afa0d8c99d9bce8dfc317a8d7a",
+      "passage_sha256": "07a3ede93ea24273972abeb5ee479f1067eb94c9eef6de7d929b2efad7ac1f33",
+      "sha256": "92492381168fb05ea1abbd9529c8c15bf801ca92d10a57b417fb1f2321633194",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "d679ac4ef7003efac9386644b02e67c5d4a4f705a58beb871db6c19a373d96b2",
+      "sources": [
+        {
+          "path": "notes/blueprint/Z1.3.08.tex",
+          "sha256": "8f6522cfc565563d44f0efa1d26d1c5b98433f238d600a9d37f4e03f83bcbd55"
+        }
+      ],
+      "statement_sha256": "e22c62fef7b2f32e9a6bfeb9fa169878e04f145a54ebba2c2ef71d96fd115faa",
+      "steps": {
+        "S1": "375fdae6dd43209b0a3788a6dc6b1988df88c35b30dbb98daf29cb1c5c283aac",
+        "S2": "2300592ca8f7547cdc95b89caa57872e43b5d3a71f942ce9eaf1ef2f1e66ca67",
+        "S3": "aa57834a21dc5f77df028bff94207e7d77274b864f75b6d32524cabee1c87358",
+        "S4": "92492381168fb05ea1abbd9529c8c15bf801ca92d10a57b417fb1f2321633194"
+      },
+      "step_texts": {
+        "S1": "Specializing the three inputs on the original closure yields a single pinned tuple.",
+        "S2": "The local test yields a nonzero quotient coordinate for the same global cocycle.",
+        "S3": "The diagonal value one at that element rules out the Greenberg relation and retains the original exceptional set.",
+        "S4": "The unconditional declaration inherits the remaining obligations in the global pin and local specialization tests."
+      },
+      "step_passages": {
+        "S1": "83b825e624db6f588cd271c4d96bb7246f56d14e71c5e60c6799425704c71d9d",
+        "S2": "83b825e624db6f588cd271c4d96bb7246f56d14e71c5e60c6799425704c71d9d",
+        "S3": "83b825e624db6f588cd271c4d96bb7246f56d14e71c5e60c6799425704c71d9d",
+        "S4": "07a3ede93ea24273972abeb5ee479f1067eb94c9eef6de7d929b2efad7ac1f33"
+      }
+    }
+  ]
+}

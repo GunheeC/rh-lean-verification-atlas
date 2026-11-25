@@ -1,0 +1,177 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "T26",
+  "edition_sha256": "eb302864ea995c4eb8c45c15ac05b8cb0c9ad2e700e81f259adbc840daf07553",
+  "note_sha256": "598278a3424bf5fbcb2182921efbaf97db1202c500de669fd5c0ef0d2db5b277",
+  "statement_sha256": "9994fa6551cc0ce75fb5e8a4fa5297fe6e0c9baacf003c4581303a7cf15e0372",
+  "sources": [
+    {
+      "path": "notes/units/T26_round4.md",
+      "sha256": "598278a3424bf5fbcb2182921efbaf97db1202c500de669fd5c0ef0d2db5b277"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The successive-minima and arithmetic intersection inputs give a line of large degree.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "T17",
+        "T18",
+        "input: intersection system and resolution"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.CompanionTheory.Ar.Giv.lineOfLargeDegree_of_use",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/MoriwakiBigness/HilbertSamuelApplications/LineOfLargeDegreeOfUse.lean",
+          "line0": 10,
+          "line1": 29
+        },
+        {
+          "name": "GlobalTheory.CompanionTheory.Ar.Giv.lineOfLargeDegree_of_use",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/MoriwakiBigness/HilbertSamuelApplications/LineOfLargeDegreeOfUse.lean",
+          "line0": 72,
+          "line1": 88
+        }
+      ],
+      "source": "notes/units/T26_round4.md",
+      "anchor": "The first four inputs are the intersection system, the three Hilbert–Samuel consequences, ",
+      "source_lines": [
+        25,
+        25
+      ],
+      "claim_sha256": "54140c0298fd1f016094bd716924fe6528a60ce459c797949d0a5b1bac4ab88d",
+      "passage_sha256": "9320a523ef8c31db8890bd53199de0513d55b4f5d05e079262f5ac6439c52245",
+      "sha256": "dc029ce7d80306a70284d97ac7dcbfe37e9821bb008d4bd133ab4c2894098409",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The tower and the volume comparison are furnished using the same geometric data.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S1",
+        "T22",
+        "input: quotient by a finite flat subgroup"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.CompanionTheory.Ar.Plug.deepStR_of_use",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/MoriwakiBigness/HilbertSamuelApplications/DeepStROfUse.lean",
+          "line0": 12,
+          "line1": 23
+        },
+        {
+          "name": "GlobalTheory.CompanionTheory.Ar.Link.good_tower_volume_theorem_bis",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/MoriwakiBigness/HilbertSamuelApplications/GoodTowerVolumeTheoremBis.lean",
+          "line0": 9,
+          "line1": 19
+        }
+      ],
+      "source": "notes/units/T26_round4.md",
+      "anchor": "Extension of semiabelian homomorphisms, the Fargues Hodge–Tate input and GAGA for sections",
+      "source_lines": [
+        29,
+        29
+      ],
+      "claim_sha256": "6530257badee5fabf79b73a8ae13e8b95ead03a883d347028b1f006c0b704733",
+      "passage_sha256": "f770f91135c23867294716638331735241064cff368071a306b8a2113c8a747b",
+      "sha256": "71efbcf8b7947b17c1e1a02c4d821dd1b7ab75d95a88d6b1e09d014042cc8489",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The CM component-law estimate fixes one nonnegative constant before the choice of deep datum.",
+      "kind": "assembly",
+      "uses": [
+        "S2",
+        "T23"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.CompanionTheory.Ar.Plug.deepStR_of_use",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/MoriwakiBigness/HilbertSamuelApplications/DeepStROfUse.lean",
+          "line0": 16,
+          "line1": 23
+        },
+        {
+          "name": "GlobalTheory.CompanionTheory.Ar.Plug.deepStR_of_volume",
+          "file": "Development/AutomorphicSpectrum/Proofs/GeometryProofs/DeepStROfVolume.lean",
+          "line0": 21,
+          "line1": 38
+        }
+      ],
+      "source": "notes/units/T26_round4.md",
+      "anchor": "The Hilbert–Samuel component of `Given` supplies the birational pullback/pushforward ident",
+      "source_lines": [
+        33,
+        33
+      ],
+      "claim_sha256": "3e57ea829c531aeebb1ea4f3553d2a3270eda6f1a39422801908388bee37be29",
+      "passage_sha256": "d8130b98f57056bcd7cbb0daf74259be120b0701dc1ed1e514bf156c283f9708",
+      "sha256": "8fe02393edeb17083e220f2a1a109ed27363c91668359594add42a059ccc2c1f",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The small- and large-prime estimates bound the discriminant-and-level union by the cardinality allowed in the uniform comparison.",
+      "kind": "inequality",
+      "uses": [
+        "S3",
+        "input: good datum parameters"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.CompanionTheory.Ar.Plug.deepStR_of_volume",
+          "file": "Development/AutomorphicSpectrum/Proofs/GeometryProofs/DeepStROfVolume.lean",
+          "line0": 39,
+          "line1": 58
+        }
+      ],
+      "source": "notes/units/T26_round4.md",
+      "anchor": "The volume estimate bounds the cardinality of the union of primes dividing twice the absol",
+      "source_lines": [
+        37,
+        37
+      ],
+      "claim_sha256": "da346abbeff0141c05d3283268ff741ac38832ae5d7ffdd9892d91d7cb6dccdd",
+      "passage_sha256": "f32999ddd162cdc349df8191cc9ef8a524aa7fc47be6d8f17bbfa826bd9e9cce",
+      "sha256": "499c5c2b8afd643ba69ad0645ad20306b3f6c8cf799a8b855277859dd8c281ba",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "247e8407e68617f1024b51f7100a71b24b5325583acee9f960f4cb3ccb5e8776",
+      "sources": [
+        {
+          "path": "notes/units/T26_round4.md",
+          "sha256": "88cffd200360efa85710b97db6fdab17acedfbe6caaee52beeb6fd84bc409a71"
+        }
+      ],
+      "statement_sha256": "9994fa6551cc0ce75fb5e8a4fa5297fe6e0c9baacf003c4581303a7cf15e0372",
+      "steps": {
+        "S1": "dc029ce7d80306a70284d97ac7dcbfe37e9821bb008d4bd133ab4c2894098409",
+        "S2": "71efbcf8b7947b17c1e1a02c4d821dd1b7ab75d95a88d6b1e09d014042cc8489",
+        "S3": "8fe02393edeb17083e220f2a1a109ed27363c91668359594add42a059ccc2c1f",
+        "S4": "499c5c2b8afd643ba69ad0645ad20306b3f6c8cf799a8b855277859dd8c281ba"
+      },
+      "step_texts": {
+        "S1": "The successive-minima and arithmetic intersection inputs give a line of large degree.",
+        "S2": "The tower and the volume comparison are furnished using the same geometric data.",
+        "S3": "The CM component-law estimate fixes one nonnegative constant before the choice of deep datum.",
+        "S4": "The small- and large-prime estimates bound the discriminant-and-level union by the cardinality allowed in the uniform comparison."
+      },
+      "step_passages": {
+        "S1": "9320a523ef8c31db8890bd53199de0513d55b4f5d05e079262f5ac6439c52245",
+        "S2": "f770f91135c23867294716638331735241064cff368071a306b8a2113c8a747b",
+        "S3": "d8130b98f57056bcd7cbb0daf74259be120b0701dc1ed1e514bf156c283f9708",
+        "S4": "f32999ddd162cdc349df8191cc9ef8a524aa7fc47be6d8f17bbfa826bd9e9cce"
+      }
+    }
+  ]
+}

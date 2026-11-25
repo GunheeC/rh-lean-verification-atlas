@@ -1,0 +1,102 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "T07",
+  "title": "From the bounds at two and three to the Selmer lattice link",
+  "track": {
+    "primary": "local",
+    "secondary": []
+  },
+  "statement": "Assume the two-layer linkage hypotheses, the third-layer published inputs,\ngeometric Galois compatibility, the series input \\nolinkurl{SerN},\ndepth-zero support, local finiteness, local Tate duality and the local Euler\ncharacteristic. For each $h,c$, the linked norm bound at two and three\nimplies the linked norm condition for $\\mathrm{LinkN}$ at the same $p(c)$.\nOn a family $F_m$, the latter conclusion says that some $C,x_0$ work for\nevery $x\\ge x_0$, index $i$ with finite odd Tate--Shafarevich part, and lift\n$j$: the local condition \\nolinkurl{LinkN_at} holds for its size datum at\n$j,C$. This unfolds the abbreviation \\nolinkurl{NLink.Final.mainTheorem}.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume the two-layer linking and third-layer published hypotheses, geometric Galois comparison, SerN and depth-zero support.",
+    "Use local finiteness, Tate duality and the Euler characteristic; the linked norm bound at two and three must hold at the same dependence parameter."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.GalC.final_alt_alt",
+      "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/CFinal.lean",
+      "line0": 19,
+      "line1": 22,
+      "sha256": "0ea078c6271a1b8812ad8f069a5de718316c2448ea621048a247f59613e2d726",
+      "dominated": 222063,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/T07_round4.md",
+      "section": "T07 · Keeping the linked row when passing from two primes to the Selmer bound",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "5.17 (sub:T07)",
+      "pages": [
+        41,
+        41
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/T07.tex",
+      "section": "sub:T07",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [
+    "D427",
+    "N188"
+  ],
+  "size_pages": 2,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "T07",
+  "indexed_members": [
+    "D428",
+    "D429",
+    "D430",
+    "D431",
+    "D432"
+  ],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "from-the-bounds-at-two-and-three-to-the-selmer-lattice-link",
+  "aliases": [
+    "From small-prime bounds to linkage",
+    "final_alt_alt",
+    "T07 From the bounds at two and three to the Selmer lattice link"
+  ],
+  "background": [
+    "Local Galois cohomology",
+    "Linked norm estimates",
+    "Selmer groups"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "5.17 (sub:T07)",
+    "pages": [
+      41,
+      41
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "D427": "graph",
+    "N188": "graph"
+  },
+  "review_status": "pending_review",
+  "summary": "At the same reciprocity and dependence parameters, the local bound at two and three combines with memberwise Galois and tie data to give the linked Selmer norm condition. The combination requires compatible witnesses on a strengthened row."
+}

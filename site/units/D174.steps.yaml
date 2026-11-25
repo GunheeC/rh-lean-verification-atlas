@@ -1,0 +1,137 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "D174",
+  "edition_sha256": "b2bafebf436158c3f4f72c4500f555d7ae02eacf6f1dc032dac0ed089d88c725",
+  "note_sha256": "c9a3b13f933bd09395b21d03874751b74dd1cc066d7205c0b478783ac8ab4e63",
+  "statement_sha256": "ffba3508c99291d610a44e1556cd94d1ab9a54ee7a8b78f713dd985dbe0c63a6",
+  "sources": [
+    {
+      "path": "notes/units/D174_round4.md",
+      "sha256": "c9a3b13f933bd09395b21d03874751b74dd1cc066d7205c0b478783ac8ab4e63"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "At level $j$ the evaluation identifies the quotient by $\\ell^jL$ with the indicated torsion group and intertwines the two endomorphisms.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: evaluation maps at all levels"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.T.charpoly_deRhamHomology_endomorphism_eq_map_ladic",
+          "file": "Development/AbelianVarietyTheory/Proofs/DivisorProofs/CharpolyDeRhamHomologyEndomorphismEqMapLadicStatement.lean",
+          "line0": 8,
+          "line1": 18
+        }
+      ],
+      "source": "notes/units/D174_round4.md",
+      "anchor": "List the arithmetic in the evaluation hypothesis",
+      "source_lines": [
+        13,
+        13
+      ],
+      "claim_sha256": "b96a3a90a1d252bf2b490b51c9c7308a1f5a9e9d8cc2d0beffa916798f72f737",
+      "passage_sha256": "3afe0d2836181a845834417ed80a0f80987af8dc932024f8894b110b44eea9dd",
+      "sha256": "2c63374af671a921bf2e3b0d033b933a5f3fa34a43062552ec077f7ea5ae2d67",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The integral characteristic polynomial on the lattice equals the geometric polynomial of the packaged abelian-variety endomorphism.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S1",
+        "input: torsion evaluation theorem"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.DeRham.charpoly_push_eq",
+          "file": "Development/AbelianVarietyTheory/Proofs/DivisorProofs/CharpolyDeRhamHomologyEndomorphismEqMapLadic.lean",
+          "line0": 29,
+          "line1": 44
+        },
+        {
+          "name": "GlobalTheory.T.l_power_torsion_endomorphism_evaluation",
+          "file": "Development/AbelianVarietyTheory/Proofs/DivisorProofs/LPowerTorsionEndomorphismEvaluation.lean",
+          "line0": 10,
+          "line1": 19
+        }
+      ],
+      "source": "notes/units/D174_round4.md",
+      "anchor": "Produce a common geometric characteristic polynomial",
+      "source_lines": [
+        17,
+        17
+      ],
+      "claim_sha256": "c5a0c963e2a1b8ecc98cb44bcb5980343c2fbaca43742057de8a81e83e2b543e",
+      "passage_sha256": "546ea7f1509c81ea32443c87567ebf1b7b2567a7e378cc246c2d80406cbd7af9",
+      "sha256": "708d8c2ae2bbc9e28522dd4bf4b435364f515016b47fbb2cc89bce2394b4fce2",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Mapping that same geometric polynomial to the base field gives the characteristic polynomial of the de Rham pushforward.",
+      "kind": "assembly",
+      "uses": [
+        "S2",
+        "input: de Rham characteristic polynomial comparison"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.DeRham.charpoly_push_eq_map_charpoly",
+          "file": "Development/AbelianVarietyTheory/Proofs/DivisorProofs/CharpolyDeRhamHomologyEndomorphismEqMapLadic.lean",
+          "line0": 18,
+          "line1": 27
+        },
+        {
+          "name": "GlobalTheory.DeRham.charpoly_push_eq",
+          "file": "Development/AbelianVarietyTheory/Proofs/DivisorProofs/CharpolyDeRhamHomologyEndomorphismEqMapLadic.lean",
+          "line0": 29,
+          "line1": 44
+        }
+      ],
+      "source": "notes/units/D174_round4.md",
+      "anchor": "Compare the de Rham polynomial in the base field",
+      "source_lines": [
+        21,
+        21
+      ],
+      "claim_sha256": "bcd229e59616685c93dae255fe157edaba12b94be0fdff47f019adbb6baebee6",
+      "passage_sha256": "95a46e6db0449cb9f42c4c10416ec062979fbfdfa8d55a057e8cf556d96f286f",
+      "sha256": "306f0174d6398046cb86b2399e1ccc2256cb68241983f638072656574464330f",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "ba6b3d6fafdf0889a8f429758c500dfdd78d431a144bc49485198e6d463e8681",
+      "sources": [
+        {
+          "path": "notes/units/D174_round4.md",
+          "sha256": "90fccff09abdd90c195d7d840e2a5f1ca38bb19e9254559f9bebd02f8882c37a"
+        }
+      ],
+      "statement_sha256": "ffba3508c99291d610a44e1556cd94d1ab9a54ee7a8b78f713dd985dbe0c63a6",
+      "steps": {
+        "S1": "2c63374af671a921bf2e3b0d033b933a5f3fa34a43062552ec077f7ea5ae2d67",
+        "S2": "708d8c2ae2bbc9e28522dd4bf4b435364f515016b47fbb2cc89bce2394b4fce2",
+        "S3": "306f0174d6398046cb86b2399e1ccc2256cb68241983f638072656574464330f"
+      },
+      "step_texts": {
+        "S1": "At level $j$ the evaluation identifies the quotient by $\\ell^jL$ with the indicated torsion group and intertwines the two endomorphisms.",
+        "S2": "The integral characteristic polynomial on the lattice equals the geometric polynomial of the packaged abelian-variety endomorphism.",
+        "S3": "Mapping that same geometric polynomial to the base field gives the characteristic polynomial of the de Rham pushforward."
+      },
+      "step_passages": {
+        "S1": "3afe0d2836181a845834417ed80a0f80987af8dc932024f8894b110b44eea9dd",
+        "S2": "546ea7f1509c81ea32443c87567ebf1b7b2567a7e378cc246c2d80406cbd7af9",
+        "S3": "95a46e6db0449cb9f42c4c10416ec062979fbfdfa8d55a057e8cf556d96f286f"
+      }
+    }
+  ]
+}

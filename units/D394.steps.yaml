@@ -1,0 +1,177 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "D394",
+  "edition_sha256": "005d5948f9f85ca66d00c43f162d5e267037677eb10c91bbe95269154a2dd3b1",
+  "note_sha256": "b9c50244868e70599f78d478f6c99c5be91bf71387e27df0566b5b567c655c87",
+  "statement_sha256": "eab829ff0210088857869bba84ab33059f69b485c03f8f73e8c70243c9352fd6",
+  "sources": [
+    {
+      "path": "notes/units/D394_round4.md",
+      "sha256": "b9c50244868e70599f78d478f6c99c5be91bf71387e27df0566b5b567c655c87"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The six conclusions each quantify over a large slot for the fixed built, good and linked data.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: six Lg1 assertions at built and good slots"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.Fc.six_rows_at_member_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SixRowsAtMember.lean",
+          "line0": 11,
+          "line1": 17
+        }
+      ],
+      "source": "notes/units/D394_round4.md",
+      "anchor": "Fix the slot system and bundle linkage. The",
+      "source_lines": [
+        25,
+        25
+      ],
+      "claim_sha256": "b9118fd850a743ebf4e5797a915392e0c1aa01d91aea2466c94c2b900dfc0997",
+      "passage_sha256": "7672174960919d3e0c103647b6458bab7b0d2d96be003d6797bd1891c94058d5",
+      "sha256": "002afd8263727a5c6f0e7d1e54c58aa3cf93302fb86815002de7681608391e8e",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Intersecting the good slot with the true predicate supplies a common over-column view.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: good-twist-core over-column theorem"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.Fc.six_rows_at_member_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SixRowsAtMember.lean",
+          "line0": 18,
+          "line1": 24
+        }
+      ],
+      "source": "notes/units/D394_round4.md",
+      "anchor": "Intersect the good slot with the predicate that",
+      "source_lines": [
+        29,
+        29
+      ],
+      "claim_sha256": "b29aa4b14a759a248beb7aed2ea350fd166acd5cdb110c4ae86b63e4831c9f59",
+      "passage_sha256": "6f21a57a7f61a965c3bd9d5a27f268fa3d34f4cf060c82e749cfb59ff3556364",
+      "sha256": "257d68b63c5d5d9b0689da18b5a0bb55284e648a1e9b3abdda42d61d919bdb37",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Integrality of the reference row gives its period class sum at the linked bundle point.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S2",
+        "input: periodClassSumWeyl_of_rowInt"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.Fc.PeriodEntriesOverColumns.row_aPer0_of_overCols",
+          "file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ReferencePeriodIntegralBundlePointsOfOverColumns.lean",
+          "line0": 9,
+          "line1": 16
+        }
+      ],
+      "source": "notes/units/D394_round4.md",
+      "anchor": "For the untwisted period, first prove a row",
+      "source_lines": [
+        33,
+        33
+      ],
+      "claim_sha256": "079e36c5f415a414c07cc98fce41d86434b524bb46b9daf058f0ea14748f7bb8",
+      "passage_sha256": "ea30bd238d605ab25ba590090aba525966aca584f9e4c770ef6601dbcbae133a",
+      "sha256": "4c4a76c10480ffee9a779e56baba3cb4b394dddce2d788667a5be13686260ac9",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The two point readings, two periods, tie and valuation fields are obtained with the prescribed linkage.",
+      "kind": "assembly",
+      "uses": [
+        "S2",
+        "S3",
+        "input: reference and twisted entries and level-prime readings"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.Fc.six_rows_at_member_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SixRowsAtMember.lean",
+          "line0": 22,
+          "line1": 24
+        }
+      ],
+      "source": "notes/units/D394_round4.md",
+      "anchor": "The other conversions use the same over-column witness",
+      "source_lines": [
+        37,
+        37
+      ],
+      "claim_sha256": "c310973a7d2963181a20bf3365e4c58f09794294e4de789ffae084d7027f2e74",
+      "passage_sha256": "34c6607f4f816e35c8fe2c10749c02b0872b58be185e3688110b183ae18933c0",
+      "sha256": "545e1f070a1bd0f01e41ce2841b39d5645feb7934ed5a7c02a7734a576b5bcf4",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "788d92b8ea45e2dbf5fffdbd800aa9e812f4c55a9af88d9365224f3629933375",
+      "sources": [
+        {
+          "path": "notes/units/D394_round4.md",
+          "sha256": "af5c94f997da4d9083db7a10c272e44e0527e8e8e8e44b8b28faa250de982d27"
+        }
+      ],
+      "steps": {
+        "S1": "7164584c3ae91bb359411efc4d6b15bdf9efb6eb635e25a6e69ee8c8e51deb8f",
+        "S2": "e2a8965a5fa2b8c8bbdd9c7a9e7c7ab35de0150bbcf6fc6e54feebd0f98aa48c",
+        "S3": "52373f92dad2a5e9d25c967ed3cbe9b73479254bb2fb59c8f44064ec8d997d6a",
+        "S4": "c7bc307a82129e803618956ff33ebf07436a4c8d503961c70d096e4ce0e3a267"
+      },
+      "step_texts": {
+        "S1": "The six conclusions each quantify over a large slot for the fixed built, good and linked data.",
+        "S2": "Intersecting the good slot with the true predicate supplies a common over-column view.",
+        "S3": "Integrality of the reference row gives its period class sum at the linked bundle point.",
+        "S4": "The two point readings, two periods, tie and valuation fields are obtained with the prescribed linkage."
+      }
+    },
+    {
+      "edition_sha256": "dc2b3c29713f36d9c9645aa67ca2151680b87ecad8e53279833442c11fa7a418",
+      "sources": [
+        {
+          "path": "notes/units/D394_round4.md",
+          "sha256": "af5c94f997da4d9083db7a10c272e44e0527e8e8e8e44b8b28faa250de982d27"
+        }
+      ],
+      "statement_sha256": "eab829ff0210088857869bba84ab33059f69b485c03f8f73e8c70243c9352fd6",
+      "steps": {
+        "S1": "002afd8263727a5c6f0e7d1e54c58aa3cf93302fb86815002de7681608391e8e",
+        "S2": "257d68b63c5d5d9b0689da18b5a0bb55284e648a1e9b3abdda42d61d919bdb37",
+        "S3": "4c4a76c10480ffee9a779e56baba3cb4b394dddce2d788667a5be13686260ac9",
+        "S4": "7c5a9936fddb3bbc5b7dad97f1b10308fd927106d2b45b4f741391043994e144"
+      },
+      "step_texts": {
+        "S1": "The six conclusions each quantify over a large slot for the fixed built, good and linked data.",
+        "S2": "Intersecting the good slot with the true predicate supplies a common over-column view.",
+        "S3": "Integrality of the reference row gives its period class sum at the linked bundle point.",
+        "S4": "The two point readings, two periods, tie and valuation fields are obtained with the prescribed linkage."
+      },
+      "step_passages": {
+        "S1": "7672174960919d3e0c103647b6458bab7b0d2d96be003d6797bd1891c94058d5",
+        "S2": "6f21a57a7f61a965c3bd9d5a27f268fa3d34f4cf060c82e749cfb59ff3556364",
+        "S3": "ea30bd238d605ab25ba590090aba525966aca584f9e4c770ef6601dbcbae133a",
+        "S4": "34c6607f4f816e35c8fe2c10749c02b0872b58be185e3688110b183ae18933c0"
+      }
+    }
+  ]
+}

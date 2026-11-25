@@ -1,0 +1,209 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "Z2.K6",
+  "edition_sha256": "98f171d46d4baa082e076ea0649a26e600368df60a7ac6ec54c708eedcd376e4",
+  "note_sha256": "54a47ca95864bc4e492e202a50a5aee6791146a14858e05343d97d1ed14c55f3",
+  "statement_sha256": "3709653d2d3d068f6a84d0f68bbdd633009a6ca0a35fe0f795eb1020658a76f1",
+  "sources": [
+    {
+      "path": "notes/blueprint/Z2.K6.tex",
+      "sha256": "54a47ca95864bc4e492e202a50a5aee6791146a14858e05343d97d1ed14c55f3"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Restriction to the infinite layer is injective on the restricted localization kernel.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "Z2.K1"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Kum.resInfInj",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/KummerTheory/ResInfInj.lean",
+          "line0": 58,
+          "line1": 171
+        }
+      ],
+      "source": "notes/blueprint/Z2.K6.tex",
+      "anchor": "By Lemma~\\ref{lem:P-r3-k1}, restriction to the infinite layer is",
+      "source_lines": [
+        15,
+        46
+      ],
+      "claim_sha256": "8aa34fe6c3158ce09de77f76c4ccddeacc9c1016e2584c7a5359b335d6205201",
+      "passage_sha256": "8496330335143884240bb4bfb8e8872f75b3787f7da20465f4a9c67bf3fa67ae",
+      "sha256": "1a14e6d13dad30c66ac80536b445a5b698f3f9d21253802f67f58f180fce3866",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "One exponent kills the cocycle image and all chosen local primitives, so restriction is a homomorphism at every sufficiently large level.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "input: finitely many local primitives"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.QuaternionShaBounds.ShaAssumptions.good_of",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/RingEquivalences/OrderOfOneAddPrimePowZmodPrimePow.lean",
+          "line0": 390,
+          "line1": 410
+        }
+      ],
+      "source": "notes/blueprint/Z2.K6.tex",
+      "anchor": "Choose $\\nu_0\\ge c$ so that $\\ell^{\\nu_0}$ kills the image and all",
+      "source_lines": [
+        15,
+        46
+      ],
+      "claim_sha256": "ddee70b61edaff7d0744584af8309846fab04981d73349f1599538161d0c96dc",
+      "passage_sha256": "8496330335143884240bb4bfb8e8872f75b3787f7da20465f4a9c67bf3fa67ae",
+      "sha256": "cf2cbfaa304ac95e59ac367daf70611f969ab42175508791f466049e7d35728c",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The resulting everywhere-unramified character split at the coefficient prime gives an ideal class character vanishing on its primes.",
+      "kind": "literature",
+      "uses": [
+        "S2",
+        "standard: global Artin reciprocity"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.QuaternionShaBounds.ShaAssumptions.good_of",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/RingEquivalences/OrderOfOneAddPrimePowZmodPrimePow.lean",
+          "line0": 395,
+          "line1": 406
+        }
+      ],
+      "source": "notes/blueprint/Z2.K6.tex",
+      "anchor": "Inertia away from $\\ell$ already acts through the trivial group in the",
+      "source_lines": [
+        15,
+        46
+      ],
+      "claim_sha256": "15e1db1c2014f3362999f9cb20c2e721eccf76185ad59ae0a1da9a71d5aa1db6",
+      "passage_sha256": "8496330335143884240bb4bfb8e8872f75b3787f7da20465f4a9c67bf3fa67ae",
+      "sha256": "1f530394a11648d976cab732e6c52073828cd8536abd96f607898f20cf4a48f7",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "Transporting Frobenius along the inverse generator gives the prescribed eigenvalue on each evaluation.",
+      "kind": "computation",
+      "uses": [
+        "S3"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.QuaternionShaBounds.ClInj_holds",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/RingEquivalences/OrderOfOneAddPrimePowZmodPrimePow.lean",
+          "line0": 270,
+          "line1": 310
+        }
+      ],
+      "source": "notes/blueprint/Z2.K6.tex",
+      "anchor": "Identify $A[q]$ additively with $\\mathbf Z/q$. Frobenius at",
+      "source_lines": [
+        48,
+        58
+      ],
+      "claim_sha256": "98010400cbb60dc1a4e623a01bb215c19997cbcc3654418612db6b153070ea43",
+      "passage_sha256": "921dff482857ecadcf76d2eb3991f2a1cda76af9ee3a9b84e54e2891074dc085",
+      "sha256": "fb219a4cbfd8cb00b8019a6e51b6ee24e43af7323e3823a1e2c4d80115c26033",
+      "ai_review": []
+    },
+    {
+      "id": "S5",
+      "status": "active",
+      "claim": "Agreement of evaluations on prime ideals determines the class character since prime ideals generate the ideal class group.",
+      "kind": "assembly",
+      "uses": [
+        "S3",
+        "S4"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.QuaternionShaBounds.ClInj_holds",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/RingEquivalences/OrderOfOneAddPrimePowZmodPrimePow.lean",
+          "line0": 310,
+          "line1": 330
+        }
+      ],
+      "source": "notes/blueprint/Z2.K6.tex",
+      "anchor": "principal divisors, and the prime ideals generate the ideal class",
+      "source_lines": [
+        48,
+        58
+      ],
+      "claim_sha256": "89a7eac4ed0a81066cb1a43c385de750da87ad2e3160a8fee1c056efcc13723f",
+      "passage_sha256": "921dff482857ecadcf76d2eb3991f2a1cda76af9ee3a9b84e54e2891074dc085",
+      "sha256": "d3f944ada9e774acb27d7499fb461f62496c97003a83361f7f7cd7c575a1840a",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "eed4acf6d3c9293c0b69e73af1b221449fbbd45d9d4d1d3791a00bf04928c664",
+      "sources": [
+        {
+          "path": "notes/blueprint/Z2.K6.tex",
+          "sha256": "961b84783098c7b124c6cdb0fce56ab3de603674070143e7229bcfcb84517aa0"
+        }
+      ],
+      "steps": {
+        "S1": "36368851a217926a61c96f2468688b9c9b7bb0bba52d96afd905e1a20889b57b",
+        "S2": "8cb1e2ff79e8ddd5befe659678457d4e5f77ccfbdae514e3e91d7c97de2549be",
+        "S3": "c787559d89c5bf0d94d7593b41703cc3a66e18df4acc56cb749c32b240ca6c79",
+        "S4": "80353f2dbb2764b1d9935caac0dccfab78b074351535929b9ef487ea98ea2cca",
+        "S5": "bc3ad89fe1b42622cd7b50f3b943773216524ba259ebae4dbe58523526d8b868"
+      },
+      "step_texts": {
+        "S1": "Restriction to the infinite layer is injective on the restricted localization kernel.",
+        "S2": "One exponent kills the cocycle image and all chosen local primitives, so restriction is a homomorphism at every sufficiently large level.",
+        "S3": "The resulting everywhere-unramified character split at the coefficient prime gives an ideal class character vanishing on its primes.",
+        "S4": "Transporting Frobenius along the inverse generator gives the prescribed eigenvalue on each evaluation.",
+        "S5": "Agreement of evaluations on prime ideals determines the class character since prime ideals generate the ideal class group."
+      }
+    },
+    {
+      "edition_sha256": "f3fe2743caf36cdc2de816745c967f00f7b1106a8c6424d9ca5a295f665a75e2",
+      "sources": [
+        {
+          "path": "notes/blueprint/Z2.K6.tex",
+          "sha256": "961b84783098c7b124c6cdb0fce56ab3de603674070143e7229bcfcb84517aa0"
+        }
+      ],
+      "statement_sha256": "3709653d2d3d068f6a84d0f68bbdd633009a6ca0a35fe0f795eb1020658a76f1",
+      "steps": {
+        "S1": "1a14e6d13dad30c66ac80536b445a5b698f3f9d21253802f67f58f180fce3866",
+        "S2": "cf2cbfaa304ac95e59ac367daf70611f969ab42175508791f466049e7d35728c",
+        "S3": "1f530394a11648d976cab732e6c52073828cd8536abd96f607898f20cf4a48f7",
+        "S4": "fb219a4cbfd8cb00b8019a6e51b6ee24e43af7323e3823a1e2c4d80115c26033",
+        "S5": "d3f944ada9e774acb27d7499fb461f62496c97003a83361f7f7cd7c575a1840a"
+      },
+      "step_texts": {
+        "S1": "Restriction to the infinite layer is injective on the restricted localization kernel.",
+        "S2": "One exponent kills the cocycle image and all chosen local primitives, so restriction is a homomorphism at every sufficiently large level.",
+        "S3": "The resulting everywhere-unramified character split at the coefficient prime gives an ideal class character vanishing on its primes.",
+        "S4": "Transporting Frobenius along the inverse generator gives the prescribed eigenvalue on each evaluation.",
+        "S5": "Agreement of evaluations on prime ideals determines the class character since prime ideals generate the ideal class group."
+      },
+      "step_passages": {
+        "S1": "8496330335143884240bb4bfb8e8872f75b3787f7da20465f4a9c67bf3fa67ae",
+        "S2": "8496330335143884240bb4bfb8e8872f75b3787f7da20465f4a9c67bf3fa67ae",
+        "S3": "8496330335143884240bb4bfb8e8872f75b3787f7da20465f4a9c67bf3fa67ae",
+        "S4": "921dff482857ecadcf76d2eb3991f2a1cda76af9ee3a9b84e54e2891074dc085",
+        "S5": "921dff482857ecadcf76d2eb3991f2a1cda76af9ee3a9b84e54e2891074dc085"
+      }
+    }
+  ]
+}

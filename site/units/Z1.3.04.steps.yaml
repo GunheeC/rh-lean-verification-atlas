@@ -1,0 +1,159 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "Z1.3.04",
+  "edition_sha256": "7f6f5f3527b0eefced12950a9963a8d040b71d9a5e16b42c51597ea06cab9777",
+  "note_sha256": "77e8e1cdc12625928b08d92eb4dd14a9e3497940946dd2956b617de5808b751f",
+  "statement_sha256": "1a101a89f1ad55bac7b1ede97288e44164915411fdd8bf239bd4f3cb51ba51c3",
+  "sources": [
+    {
+      "path": "notes/blueprint/Z1.3.04.tex",
+      "sha256": "77e8e1cdc12625928b08d92eb4dd14a9e3497940946dd2956b617de5808b751f"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "One choice of ordinary source and Fourier data supplies the coefficients used by all three inputs.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "Z1.3.01",
+        "Z1.3.02",
+        "Z1.3.03",
+        "input: initial eigenfunctional"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Z.Kato.Joint.kato_global_unit_law_of_smoothed_classes",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/FrobeniusHodgeTateLaws/KatoGlobalUnitLawOfSmoothedClasses.lean",
+          "line0": 8,
+          "line1": 10
+        }
+      ],
+      "source": "notes/blueprint/Z1.3.04.tex",
+      "anchor": "Given the class theorem, the smoothed law and the admissible projection statement, start with the \\emph{same} ordinary source throughout. The eig",
+      "source_lines": [
+        13,
+        17
+      ],
+      "claim_sha256": "c60f4c9f330e59d461b70eff3772c7339ae0e02e8fce4477ceaab32097fd8655",
+      "passage_sha256": "25c82be57f843ae24d01b7363b3f9eac9990959ac1cfc4797f32bb879329aaa7",
+      "sha256": "56e3c6186a46cf574c87fa8544d375c27b8a4628ecb4bc1c1c1807fa330164dc",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Appending the four scaled frequencies multiplies the original moment by 1 minus d0 to the power e+1, a nonzero factor.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "input: four-term nonzero moment"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Z.Kato.Joint.glue2",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/FrobeniusHodgeTateLaws/AdmissibleHeckeAlgebraOfGenerated.lean",
+          "line0": 87,
+          "line1": 134
+        }
+      ],
+      "source": "notes/blueprint/Z1.3.04.tex",
+      "anchor": "Let $b_i,t_i$ be the original four smoothing coefficients and frequencies. Append the four pairs $(-d_0b_i,d_0t_i)$. All eight frequencies remain",
+      "source_lines": [
+        19,
+        20
+      ],
+      "claim_sha256": "d6ea1496afa9f9ba9126e095c4bca6bbe97e96312092c5ec4ad2e86e0ce31056",
+      "passage_sha256": "a5677ea9a1d3be0c2f2da3e132e018b3efa64bb51dfd6b181a7174979117c255",
+      "sha256": "ef6a03d0177e38fd75c651056b605c7a600ec9dcadbcb8cb311ff07a50104e02",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "At e=1 the prescribed smoothing inequality forces d to differ from one modulo the auxiliary level.",
+      "kind": "inequality",
+      "uses": [
+        "input: auxiliary-level residue condition"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.EisM.CuspidalUnitaryTwistsClaim",
+          "file": "Development/AbelianVarietyTheory/Statements/CuspidalUnitaryTwists/CuspidalUnitaryTwistsClaim.lean",
+          "line0": 13,
+          "line1": 22
+        }
+      ],
+      "source": "notes/blueprint/Z1.3.04.tex",
+      "anchor": "\\(e=1\\) the prescribed pair \\(n_1=1,n_2=0\\) requires",
+      "source_lines": [
+        25,
+        39
+      ],
+      "claim_sha256": "eeb10250b159e723f3681955e41cb309fc6b9b20a47d204fc4fbab37f63d9fbd",
+      "passage_sha256": "4ab9ce19e041c01e4ec6bf3dd4b04facab61eefb525733682f4a1c1557469f7a",
+      "sha256": "337b466e08473136a664083536967deeac8ce528af2da65dedf073f1696106de",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The pin requires one scalar and integral series with both signed formulas and a uniform lower bound.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S1",
+        "S2",
+        "input: common measured tuple"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Z.Kato.Joint.pinOf",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/FrobeniusHodgeTateLaws/LawMono.lean",
+          "line0": 72,
+          "line1": 97
+        }
+      ],
+      "source": "notes/blueprint/Z1.3.04.tex",
+      "anchor": "\\textbf{B07.} Obtain \\(\\mathrm{Pin7}\\) for the measured tuple, with one",
+      "source_lines": [
+        41,
+        49
+      ],
+      "claim_sha256": "b8649e16b80b7508adf6f0ef19b3a5f41c7af1958a00b011537ff1621f46864c",
+      "passage_sha256": "a10b4b717fb55f59ca6a55c67b1117efb2a608e18d99fdf43f7a7b91808d565a",
+      "sha256": "e09ecc9db7d893d5f942dc89e95579f62bf416a84facbbf36d4e42a0a6d14710",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "751e12a05f00360dc7ef2a38a868bacfda8d8192a05426fa381e162556925d55",
+      "sources": [
+        {
+          "path": "notes/blueprint/Z1.3.04.tex",
+          "sha256": "25e0b32fea9019c3abd4b2a0ae393bd18200fd4d2f5505996e413ce17a5d665b"
+        }
+      ],
+      "statement_sha256": "1a101a89f1ad55bac7b1ede97288e44164915411fdd8bf239bd4f3cb51ba51c3",
+      "steps": {
+        "S1": "56e3c6186a46cf574c87fa8544d375c27b8a4628ecb4bc1c1c1807fa330164dc",
+        "S2": "ef6a03d0177e38fd75c651056b605c7a600ec9dcadbcb8cb311ff07a50104e02",
+        "S3": "337b466e08473136a664083536967deeac8ce528af2da65dedf073f1696106de",
+        "S4": "e09ecc9db7d893d5f942dc89e95579f62bf416a84facbbf36d4e42a0a6d14710"
+      },
+      "step_texts": {
+        "S1": "One choice of ordinary source and Fourier data supplies the coefficients used by all three inputs.",
+        "S2": "Appending the four scaled frequencies multiplies the original moment by 1 minus d0 to the power e+1, a nonzero factor.",
+        "S3": "At e=1 the prescribed smoothing inequality forces d to differ from one modulo the auxiliary level.",
+        "S4": "The pin requires one scalar and integral series with both signed formulas and a uniform lower bound."
+      },
+      "step_passages": {
+        "S1": "25c82be57f843ae24d01b7363b3f9eac9990959ac1cfc4797f32bb879329aaa7",
+        "S2": "a5677ea9a1d3be0c2f2da3e132e018b3efa64bb51dfd6b181a7174979117c255",
+        "S3": "4ab9ce19e041c01e4ec6bf3dd4b04facab61eefb525733682f4a1c1557469f7a",
+        "S4": "a10b4b717fb55f59ca6a55c67b1117efb2a608e18d99fdf43f7a7b91808d565a"
+      }
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "T04",
+  "title": "All 26 large-slot conditions from the open conditions",
+  "track": {
+    "primary": "theta",
+    "secondary": []
+  },
+  "statement": "Assume the seven repository propositions \\nolinkurl{GlobalArtinReciprocity}, \\nolinkurl{SiegelWeilUnitaryConvergent} in the \\nolinkurl{HeckeCharacterZeroLocus.SiegelWeilU} namespace, \\nolinkurl{DiscreteSeriesCover}, \\nolinkurl{HarishChandraModules}, \\nolinkurl{CuspRapidDecay}, \\nolinkurl{CasselmanWallach} and \\nolinkurl{DiscreteSeriesClassification}, together with both estimates of T05. These propositions have not been compared here with a published formulation. For any proof $h_L$ of \\nolinkurl{RecTExists}, norm-choice extension over $h_L$, series extension,\ngeometry and family predicate $N$, let $p$ be their extension parameters.\nSuppose T08's open conditions and the linked covolume, functional and\n$N$-norm conditions hold at $p$. Then all 26 large-slot row conditions hold\nfor its built and good slots and its bundle linkage. They give class counts,\nthe $j$-invariant, rank, the second complement, prime column valuations,\narithmetic at bundle points, reference and twisted points and periods, the\nrow tie, row bounds, twists, primitivity, lambda primes, divisors,\ndecomposition points, selection jumps, the $L^p$ and order conditions,\nservice, zero locus, the frame condition, irreducibility counts, definite\nrows and the $N$-norm condition. Each row condition has its own existential\nlarge-slot quantifier.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Use the seven repository propositions named in the statement and both bounds in T05.",
+    "Fix a proof of RecTExists and a norm-choice extension over that proof, series extension, geometry and family predicate. Require T08’s open conditions and the three linked bounds at their extension parameters."
+  ],
+  "lean": [
+    {
+      "name": "GlobalTheory.Fc.AllAtMemberStage0.allRows_of_open0_alt",
+      "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkROfIsLinked.lean",
+      "line0": 50,
+      "line1": 86,
+      "sha256": "dc3cd4e48e9366b6b86f99520a38deac6fb61075907cfbc006290abb84bf476b",
+      "dominated": 455025,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/T04_round4.md",
+      "section": "T04 · All 26 large-slot conditions from the open conditions",
+      "pages": [
+        1,
+        3
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "5.14 (sub:T04)",
+      "pages": [
+        41,
+        41
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/T04.tex",
+      "section": "sub:T04",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [
+    "D025",
+    "D033",
+    "D379",
+    "D394",
+    "P046",
+    "P050",
+    "Z42-KERNEL",
+    "Z5.1"
+  ],
+  "size_pages": 3,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "T04",
+  "indexed_members": [
+    "D375",
+    "D376",
+    "D377",
+    "D380",
+    "D381",
+    "D382",
+    "D383",
+    "D384",
+    "D385",
+    "D386",
+    "D387",
+    "D388",
+    "D389",
+    "D390",
+    "D391",
+    "D392",
+    "D393"
+  ],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "all-26-large-slot-conditions-from-the-open-conditions",
+  "aliases": [
+    "From open conditions to all rows",
+    "allRows_of_open0_alt",
+    "T04 All 26 large-slot conditions from the open conditions"
+  ],
+  "background": [
+    "Siegel–Weil formula",
+    "Discrete series and rapid decay",
+    "Automorphic rows"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "5.14 (sub:T04)",
+    "pages": [
+      41,
+      41
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "D025": "graph",
+    "D033": "graph",
+    "D379": "graph",
+    "D394": "graph",
+    "P046": "graph",
+    "P050": "graph",
+    "Z42-KERNEL": "graph",
+    "Z5.1": "graph"
+  },
+  "review_status": "pending_review",
+  "summary": "Open row conditions and three linked bounds furnish all 26 large-slot obligations for the chosen extension. Some fields come from a common period comparison; the definite-row field requires intersecting several eventual assertions on a single slot.",
+  "reader_overrides": {
+    "hypothesis_details": [
+      "Use the seven repository propositions named in the statement and both bounds in T05.",
+      "Fix a proof of RecTExists and a norm-choice extension over that proof, series extension, geometry and family predicate. Require T08’s open conditions and the three linked bounds at their extension parameters."
+    ]
+  }
+}

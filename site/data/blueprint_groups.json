@@ -1,0 +1,115 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "source_files": {
+    "blueprint/status.json": "1793c863105d7b5f2c3d380e8606e5efc1eaa3e2fc2a6b3e9beb03a476506e71",
+    "blueprint/handoff_pages.tex": "2c5135fb3d2ed219e0c97fbb55b2741e00ca2007886ef811914e7ae2317edeeb",
+    "out/R14_pending.json": "77f8195334495aa6ea26b5a5b476c34580eeac51a28e1af714a47f5288be7d5e",
+    "out/R15_pending.json": "0594fbd2a10cfe9c5ee7582994d8a6244cbd922a04dffc9a33bb29d106d49707",
+    "out/R16_pending.json": "edd202d4fa8ee3e78b5cd432158c0270f68b3d49596248000d3af3d1b231db87"
+  },
+  "assignment_to_unit": "data/blueprint_membership.json",
+  "deep_chart_provenance": {
+    "Z4.4": [
+      "blueprint/status.json round11.subtheorems, round12.subtheorems, round12.original_inputs.Z4.4.assembly.results, round13.new_subtheorems and round14.round13_proof_reviews"
+    ],
+    "Z4.2.04/Z4.2.13/Z4.3": [
+      "new_declarations in the round 14, 15 and 16 pending registers, retaining parent assignment, scope and review where supplied"
+    ]
+  },
+  "grouping_rule": "Keep the 55 specialist assignments as 48 atlas units. Only the ten Z4.2 assignments indicated in SITES and FRAMES and KERNEL share atlas IDs (three plus three plus four assignments). Other atlas IDs retain a single original assignment. Chart suppliers are pinned separately from statement declarations.",
+  "groups": {
+    "Z42-SITES": {
+      "blueprint_assignment_ids": [
+        "Z4.2.01",
+        "Z4.2.03",
+        "Z4.2.05"
+      ],
+      "representative": "GlobalTheory.TwU.std_at_served",
+      "all_statement_roots": [
+        "GlobalTheory.TwU.std_at_served",
+        "GlobalTheory.TwV.joint_dict",
+        "GlobalTheory.TwV.pos_at_site"
+      ],
+      "auxiliary_chart_records": null,
+      "reason": "The standard site, joint dictionary and position embedding specify the local coordinates used by the later comparisons. All three statements have individual review rows."
+    },
+    "Z42-FRAMES": {
+      "blueprint_assignment_ids": [
+        "Z4.2.06",
+        "Z4.2.07",
+        "Z4.2.08"
+      ],
+      "representative": "GlobalTheory.TwV.move_at_site",
+      "all_statement_roots": [
+        "GlobalTheory.TwV.move_at_site",
+        "GlobalTheory.TwV.away_of_dict",
+        "GlobalTheory.TwV.scal_at_site"
+      ],
+      "auxiliary_chart_records": null,
+      "reason": "The move, off-prime comparison and integral scalar transport the same frame between lattice tuples. Their conclusions remain conditional on the supplied site and pair."
+    },
+    "Z42-KERNEL": {
+      "blueprint_assignment_ids": [
+        "Z4.2.09",
+        "Z4.2.10",
+        "Z4.2.11",
+        "Z4.2.12"
+      ],
+      "representative": "GlobalTheory.TwV.site_law_xiIn",
+      "all_statement_roots": [
+        "GlobalTheory.TwV.site_law_xiIn",
+        "GlobalTheory.TwV.StepZero.del_zero",
+        "GlobalTheory.TwV.StepDel.del_of_pos",
+        "GlobalTheory.TwV.site_cmpLite_siteAdm"
+      ],
+      "auxiliary_chart_records": null,
+      "reason": "The transformation law, zero-stage and positive-stage differences and admission assemble one chain of kernel comparisons. Their outstanding inputs remain attached to each original assignment."
+    },
+    "Z4.2.04": {
+      "blueprint_assignment_ids": [
+        "Z4.2.04"
+      ],
+      "representative": "GlobalTheory.pairOK_allSites",
+      "all_statement_roots": [
+        "GlobalTheory.pairOK_allSites"
+      ],
+      "auxiliary_chart_records": "data/blueprint_chart_members.json#/Z4.2.04",
+      "reason": "The adjacent-pair argument uses the paired local charts with translated kernels. Keep its reviewed root distinct from suppliers and from the unresolved common-field assertion of Z4.2.13."
+    },
+    "Z4.2.13": {
+      "blueprint_assignment_ids": [
+        "Z4.2.13"
+      ],
+      "representative": "GlobalTheory.TieBase.base_data",
+      "all_statement_roots": [
+        "GlobalTheory.TieBase.base_data"
+      ],
+      "auxiliary_chart_records": "data/blueprint_chart_members.json#/Z4.2.13",
+      "reason": "The period, lattice and theta-vector obligations concern the same tied base. The unit retains its open vector and equivariance obligations."
+    },
+    "Z4.3": {
+      "blueprint_assignment_ids": [
+        "Z4.3"
+      ],
+      "representative": "Formalism.MainNotions.WeilJacquetShalikaLaw.Proof.first_clause_cases",
+      "all_statement_roots": [
+        "Formalism.MainNotions.WeilJacquetShalikaLaw.Proof.first_clause_cases"
+      ],
+      "auxiliary_chart_records": "data/blueprint_chart_members.json#/Z4.3",
+      "reason": "The off-level reader invokes chart, covariance and series suppliers. The numerical implication at the registered root and the demanded selected-row application have different scopes."
+    },
+    "Z4.4": {
+      "blueprint_assignment_ids": [
+        "Z4.4"
+      ],
+      "representative": "GlobalTheory.PerTwClose.twistedPeriodAdmissible_of_rowInt",
+      "all_statement_roots": [
+        "GlobalTheory.PerTwClose.twistedPeriodAdmissible_of_rowInt"
+      ],
+      "auxiliary_chart_records": "data/blueprint_chart_members.json#/Z4.4",
+      "reason": "The proof contracts one integral local period at all relevant places after assembling the reference and twisted chain data. Individual deep chart results retain the verdict given at their own review."
+    }
+  },
+  "size_rule": "The excerpt index records exact TeX source intervals and individual named PDF destinations. Unit size is null where a complete reading interval has not been separately measured. The seven curated starters have independently measured packet sizes.",
+  "pdf_rule": "Only labels present in the release handoff_pages.tex carry a v13 locator. Each destination has both its printed and physical PDF page. Later working revisions have local source ranges."
+}

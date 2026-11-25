@@ -1,0 +1,99 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "Z1.5.03",
+  "edition_sha256": "5da31205df0793c15522de4cecd012d5243c648aa646a419a1333bc5f03b3526",
+  "note_sha256": "784bdf96b15654f8cf96b8cdb17400c7a682eed3788dda17d99bb3ebc506c7cb",
+  "statement_sha256": "5bdd65f9e9376895ff5258e5ce2b3af83316ed70ebeaaff13ac896327b080040",
+  "sources": [
+    {
+      "path": "notes/blueprint/Z1.5.03.tex",
+      "sha256": "784bdf96b15654f8cf96b8cdb17400c7a682eed3788dda17d99bb3ebc506c7cb"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "At each good place there is a well-defined Satake multiset, and multiplying its entries by the prescribed power of the residue norm keeps exactly the required rank.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: existence and uniqueness of spherical Satake parameters"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.GalN.V.Win.N.countK_alt",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/FrobeniusTraceCountBoundOfCmEigensystemCount.lean",
+          "line0": 63,
+          "line1": 125
+        }
+      ],
+      "source": "notes/blueprint/Z1.5.03.tex",
+      "anchor": "Given its spherical",
+      "source_lines": [
+        7,
+        25
+      ],
+      "claim_sha256": "68653da2f1b09f92b56ffa7f209d0f2ed936bb83624c1daf4c0e1a5e793c8698",
+      "passage_sha256": "cb461f569a63d1b6e92f038fd7ca797d4fae26d734da273e398ebc62352fb7a3",
+      "sha256": "28c2f950800abef48b6eb9599dcb8d3e8a4f47b47e0fe39a52a8e8db0c9c3000",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "An isomorphism of cusp representations transports the eigenvalue equations and therefore preserves the normalized tuple.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "input: Hecke eigenvalue equations for fixed vectors"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.GalN.V.Win.N.countK_alt",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/FrobeniusTraceCountBoundOfCmEigensystemCount.lean",
+          "line0": 63,
+          "line1": 125
+        }
+      ],
+      "source": "notes/blueprint/Z1.5.03.tex",
+      "anchor": "If the cusp",
+      "source_lines": [
+        7,
+        25
+      ],
+      "claim_sha256": "2835e92f191c019a0188d41dea99e4ceb2499c8ded1b3e523011714a0a87d4c2",
+      "passage_sha256": "cb461f569a63d1b6e92f038fd7ca797d4fae26d734da273e398ebc62352fb7a3",
+      "sha256": "3811fa82698d499bb9193a239240a22701645ee2b1b5e108d54044d62d2ceadf",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Turning the invariant tuple into a single finite classifier across coefficient primes still requires the named global comparisons.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S2",
+        "input: global integrality, conjugation and Frobenius separation"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.GalN.V.Win.N.countK_alt",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/FrobeniusTraceCountBoundOfCmEigensystemCount.lean",
+          "line0": 63,
+          "line1": 125
+        }
+      ],
+      "source": "notes/blueprint/Z1.5.03.tex",
+      "anchor": "The construction of that",
+      "source_lines": [
+        7,
+        25
+      ],
+      "claim_sha256": "13f3a2cb2348c02ad3ee1bc69d629dc5dd4786a5b95498d47fc6c2d32ff00271",
+      "passage_sha256": "cb461f569a63d1b6e92f038fd7ca797d4fae26d734da273e398ebc62352fb7a3",
+      "sha256": "cba9d063b77c23162f77dc4b469900394f860aaa205deb90c45e240cd642477a",
+      "ai_review": []
+    }
+  ],
+  "history": []
+}

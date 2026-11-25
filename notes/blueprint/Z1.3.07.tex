@@ -1,0 +1,34 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% RH Notes blueprint source excerpts for Z1.3.07
+% Verbatim excerpts in the notation of the parent blueprint. The labelled editions and source ranges appear below.
+% See the unit YAML for the current proof status. Earlier-round passages retain their original wording.
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+\noindent\nolinkurl{UpperTheory.V.Z.Kato.K5.smoothedZetaClass_hodgeTateLaw} --- in-repo constant (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/SmoothedZetaClasses/SmoothedZetaClassHodgeTateLaw.lean:4}); not compared.\par
+\noindent\nolinkurl{UpperTheory.Kd.K4.kato_eulerSystem_integrality} --- in-repo constant (\path{Development/AutomorphicArithmetic/Foundations/IwahoriReduction/NormProducts/AdmissibleWeightedDataMonoCoef.lean:208}); not compared.\par
+\noindent\nolinkurl{UpperTheory.V.Z.Kato.Joint.kato_global_unit_law_of_smoothed_classes} --- in-repo constant (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/FrobeniusHodgeTateLaws/KatoGlobalUnitLawOfSmoothedClasses.lean:8--10}); not compared.\par
+\noindent\nolinkurl{GlobalTheory.T.exists_admissible_hecke_projection_nonvanishing} --- in-repo constant (\path{Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsAdmissibleHeckeProjectionNonvanishingStatement.lean:13--49}); not compared.\par
+\noindent\nolinkurl{UpperTheory.Kd.C7.pLocu} --- in-repo constant (\path{Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/NormFactorLeOne.lean:162--164}); not compared.\par
+% End of atlas edition annotation.
+
+\section*{Z1.3.07. Failure of the local Greenberg condition}
+
+% Parent source SHA-256: 1af64922b98ed2310744411b1f18b25cc426c97220646321471836e1a3a409d6
+% blueprint/ch_P.tex lines 12371 through 12382; r5:Z1.3.07
+\subsection{Z1.3.07. The inertia witness excludes the Greenberg condition}\label{r5:Z1.3.07}
+Keep the hypotheses and the particular $(c,y,S')$ of Z1.3.06. The Greenberg condition $\mathrm{Gr}(W,A,y)$ would give a single $x\in\overline{\mathbb Q}_\ell$ such that
+\[
+ y(s)_1=W(s)_{11}x-x\qquad(s\in D_A).
+\]
+The witness for $\mathrm{NzAt}$ lies in $I_A\subset D_A$ and has $W(s)_{11}=1$. The equation then forces its second coordinate to vanish. This contradicts the nonzero coordinate of the same cocycle. Cyclotomic triviality is part of the witness but the last subtraction uses only its matrix entry and membership in $D_A$. The five other pieces of the conclusion follow directly from $\mathrm{Sys}$: the matrices have entries in $c.O$, $y$ is a cocycle with all coordinates in $c.O$, it satisfies the unramified condition away from $\ell$, and it satisfies the tame condition outside $S'$ with the same character and level quantifiers. These are exactly $\mathrm{ES}(W,A)$. Quantifying over the original normal forms and sources gives $\mathrm{ZetaUr}$.
+
+{\footnotesize \nolinkurl{GlobalTheory.Ord2.Unr}, \nolinkurl{Gr}, \nolinkurl{ES} (\nolinkurl{Development/AbelianVarietyTheory/Definitions/Foundations/FinalTheorems.lean}\allowbreak:68--73,98--102). \nolinkurl{GlobalTheory.KZ.not_gr_of_nzAt}, \nolinkurl{es_of_sys} (\nolinkurl{Development/AbelianVarietyTheory/Definitions/Foundations/IsLocallyConstantCycMod.lean}\allowbreak:13--19,40--48). \nolinkurl{GlobalTheory.Ord2.SrcUr}, \nolinkurl{ZetaUr} (\nolinkurl{Development/AbelianVarietyTheory/Statements/CuspidalUnitaryTwists/ZetaUr.lean}\allowbreak:13--20). \nolinkurl{GlobalTheory.KZ.zetaElementsUnramifiedOrdinary_of_eulerSystem_inertia}, \nolinkurl{zetaUr_of_halves2} (\nolinkurl{Development/AbelianVarietyTheory/Definitions/Foundations/ZetaElementsUnramifiedOrdinaryOfEulerSystemInert.lean}\allowbreak:18,36--46).}
+
+\emph{Complete for this implication.} [Hypothesis, discharged at the application:] the same global and local assertions as in Z1.3.06 enter through $\mathrm{zetaSysU\_of\_halves2}$. No choice of a second local class is needed.
+
+{\footnotesize \nolinkurl{UpperTheory.V.Z.Kato.Final.zetaUr} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/UnramifiedZeta/ZetaUr.lean}\allowbreak:9--12).}
+
+% blueprint/ch_P.tex lines 12657 through 12657; r6:review:Z1.3.07
+\phantomsection\label{r6:review:Z1.3.07} \emph{Original argument on p.~\pageref{r5:Z1.3.07}.} Z1.3.07 retains complete status for the Greenberg contradiction: evaluation at the same inertia element where the quotient character is one forces the second coordinate to vanish (\nolinkurl{zetaUr_of_halves2}, \path{Development/AbelianVarietyTheory/Definitions/Foundations/ZetaElementsUnramifiedOrdinaryOfEulerSystemInert.lean:43--46}; \nolinkurl{not_gr_of_nzAt}, \path{Development/AbelianVarietyTheory/Definitions/Foundations/IsLocallyConstantCycMod.lean:40--48}). Neither Kato implication establishes the global existence or the local nonvanishing premise itself.
+

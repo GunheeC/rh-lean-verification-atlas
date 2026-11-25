@@ -1,0 +1,95 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "T23",
+  "title": "Nef growth of the chart lattice",
+  "track": {
+    "primary": "arakelov",
+    "secondary": []
+  },
+  "statement": "Let $y$ be a birational\nmultihomogeneous presentation in a characteristic-zero field with\narithmetic variety $P$ of dimension $D+1$, and let the integral\nmultidegree $a$ be nef on the generic fibre. Put\n$V_n=\\operatorname{span}_{\\mathbb Q}(\\mathrm{chartLatNm}(y,a,n))$.\nEach $V_n$ is finite-dimensional and\n\\[\n \\lim_{n\\to\\infty} \\frac{D!\\,\\dim_{\\mathbb Q}V_n}{n^D}\n       =\\mathrm{genDeg}(P,D,a).\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "The Lean head takes the open-literature record and does not use it. `UpperTheory.LiteratureTheorems.nef_rr_of_literature` (`Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:551–552`).",
+    "Use a birational multihomogeneous presentation in characteristic zero of arithmetic dimension $D+1$, with integral multidegree nef on the generic fibre."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.LiteratureTheorems.nef_rr_of_literature",
+      "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+      "line0": 551,
+      "line1": 552,
+      "sha256": "73847f8516114e3a293002a27174afaf1de5265bdcc7aec23ae6b80cfda35032",
+      "dominated": 769,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/T23_round4.md",
+      "section": "T23 · Nef growth of the chart lattice",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "5.33 (sub:T23)",
+      "pages": [
+        47,
+        47
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/T23.tex",
+      "section": "sub:T23",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": 2,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "T23",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "nef-growth-of-the-chart-lattice",
+  "aliases": [
+    "nef_rr_of_literature",
+    "T23 Nef growth of the chart lattice"
+  ],
+  "background": [
+    "Asymptotic Riemann–Roch",
+    "Nef divisors",
+    "Lattice points"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "5.33 (sub:T23)",
+    "pages": [
+      47,
+      47
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "review_status": "pending_review",
+  "summary": "For a nef multidegree, the ranks of the normed chart lattices have a leading term determined by the generic degree. The argument sandwiches those ranks between ordinary section ranks with two fixed twists, preserving the particular chart lattice needed for the volume comparison.",
+  "reader_overrides": {
+    "hypothesis_details": [
+      "The Lean head takes the open-literature record and does not use it. `UpperTheory.LiteratureTheorems.nef_rr_of_literature` (`Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:551–552`).",
+      "Use a birational multihomogeneous presentation in characteristic zero of arithmetic dimension $D+1$, with integral multidegree nef on the generic fibre."
+    ]
+  }
+}

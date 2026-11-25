@@ -1,0 +1,112 @@
+{
+  "id": "Z2.K7",
+  "title": "Full integral homology torsion",
+  "track": {
+    "primary": "ktheory",
+    "secondary": []
+  },
+  "statement": "For totally complex $L$, the torsion in $H_m(\\mathrm{GL}_N(\\mathcal O_L),\\mathbf Z)$ is finite. With $n=[L:\\mathbf Q]$, $D=|\\mathrm{disc}\\,L|$, $E\\ge1$, $1\\le N\\le4E+6$, and $m\\le2E+1$, its log order is at most $(2D)^{(2En)^{24}}$.",
+  "assumptions": [
+    "source:blueprint_v13"
+  ],
+  "hypothesis_details": [
+    "Fix a totally complex field $L$.",
+    "The quantitative assertion uses $E\\ge1$, $1\\le N\\le4E+6$ and $0\\le m\\le2E+1$."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.KT.tors_le",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HermiteNormalForms/Assembly.lean",
+      "line0": 25,
+      "line1": 30,
+      "sha256": "510efa10b41ac04c6635d0e762a8f7d40b51066a51584f90e86db2e69e967ee3",
+      "dominated": 431,
+      "graph": "allChi",
+      "role": "statement"
+    },
+    {
+      "name": "UpperTheory.V.ZK.torsAll",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/ExponentLe.lean",
+      "line0": 70,
+      "line1": 117,
+      "sha256": "0798c23b6448fce7fa63038b788fb03faff9818aae67fca73ada95c3d06f6786",
+      "dominated": 237,
+      "graph": "allChi",
+      "role": "statement"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/blueprint/Z2.K7.tex",
+      "section": "prop:P-k-num, prop:P-r4-k7",
+      "pages": []
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "prop:P-k-num",
+      "pages": [
+        180,
+        180
+      ],
+      "printed_page": 155,
+      "scope": "First page of this named destination."
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "prop:P-r4-k7",
+      "pages": [
+        194,
+        194
+      ],
+      "printed_page": 169,
+      "scope": "First page of this named destination."
+    }
+  ],
+  "status": "Full",
+  "grade": "L2",
+  "reviews": [
+    "reviews/R4_review_Z2.md",
+    "reviews/R20_review.md"
+  ],
+  "prerequisites": [
+    "P038"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "blueprint_members": [
+    "Z2.K7"
+  ],
+  "representative": "UpperTheory.V.KT.tors_le",
+  "statement_declarations": [
+    "UpperTheory.V.KT.tors_le",
+    "UpperTheory.V.ZK.torsAll"
+  ],
+  "grade_scope": "Named statement declarations with the hypotheses above. Chart supplier records have their own review scopes.",
+  "confirmation_basis": "Minimum across the statement declarations, using registry rows for the blueprint assignments listed here. Reviews of other expositions of a shared declaration are included as context.",
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "slug": "integral-homology-torsion",
+  "aliases": [
+    "Z2.K7 Full integral homology torsion"
+  ],
+  "background": [
+    "Cellular group homology",
+    "Torsion of arithmetic groups"
+  ],
+  "hypothesis_source": {
+    "document": "blueprint_v13",
+    "section": "prop:P-k-num",
+    "pages": [
+      180,
+      180
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "P038": "graph"
+  },
+  "summary": "For a totally complex field, integral homology has finite torsion. In the specified range of degree and rank, its logarithmic order satisfies a bound with an explicit exponent in degree, twist parameter and discriminant. This makes the cost of full torsion available for prime-by-prime estimates."
+}

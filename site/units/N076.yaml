@@ -1,0 +1,92 @@
+{
+  "id": "N076",
+  "title": "Bessel period in the wave grid",
+  "track": {
+    "primary": "theta",
+    "secondary": []
+  },
+  "statement": "Under $0\\le C_t$, $t(n,\\epsilon)\\le C_t n^3$ for $n\\ge1$, both Zuckerman thresholds and In91, WBp holds for every real $C_b$. In its separated-parameter range the weighted minor moment is at most $b^{C_5(2r+2)^5}\\max(1,G^{-1})^{40(r+1)^2}jN2$ at every local point with $G>0$, uniformly in the allowed coefficient and derivative order.",
+  "assumptions": [
+    "source:blueprint_v13"
+  ],
+  "hypothesis_details": [
+    "Use the nonnegative majorant and cubic bound for the thresholds.",
+    "Assume both Zuckerman threshold estimates and the In91 input."
+  ],
+  "lean": [
+    {
+      "name": "CompanionTheory.WaveGrid.wave_bessel_period_threshold",
+      "file": "CompanionTheory/AutomorphicTheory/BesselWaveGrids/WeightedBoundRotatedUniformOfCubicThreshold.lean",
+      "line0": 23,
+      "line1": 28,
+      "sha256": "0b650394aaf80ff2b4b13b3419d69359af2da47191ef061630134ee2a8768d94",
+      "dominated": 16122,
+      "graph": "allChi",
+      "role": "statement"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/blueprint/N076.tex",
+      "section": "r6:N076",
+      "pages": []
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r6:N076",
+      "pages": [
+        564,
+        564
+      ],
+      "printed_page": 539,
+      "scope": "First page of this named destination."
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [
+    "D025"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "Derive the admissible-word normal form and its gauge-transformed hat-product bound together with the squared Wigner coefficient on each one-step Pieri summand."
+  ],
+  "last_checked": "2026-11-24",
+  "blueprint_members": [
+    "N076"
+  ],
+  "representative": "CompanionTheory.WaveGrid.wave_bessel_period_threshold",
+  "statement_declarations": [
+    "CompanionTheory.WaveGrid.wave_bessel_period_threshold"
+  ],
+  "grade_scope": "Named statement declarations with the hypotheses above. Chart supplier records have their own review scopes.",
+  "confirmation_basis": "Minimum across the statement declarations, using registry rows for the blueprint assignments listed here. Reviews of other expositions of a shared declaration are included as context.",
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "slug": "bessel-period-in-the-wave-grid",
+  "aliases": [
+    "wave_bessel_period_threshold",
+    "N076 Bessel period in the wave grid"
+  ],
+  "background": [
+    "Bessel periods",
+    "Discrete series",
+    "Branching rules"
+  ],
+  "hypothesis_source": {
+    "document": "blueprint_v13",
+    "section": "r6:N076",
+    "pages": [
+      564,
+      564
+    ]
+  },
+  "question_sources": [
+    "data/status_ledger.json"
+  ],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "D025": "statement-reading"
+  },
+  "summary": "In the separated-parameter range, the threshold and growth assumptions give a bound for a weighted minor moment at every allowed local point. Its explicit dependence on rank, scale and separation controls how costly a small separation can be in the Bessel-period estimate."
+}

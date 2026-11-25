@@ -1,0 +1,105 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "W11",
+  "title": "Bounded class-group ranks in cyclotomic layers",
+  "track": {
+    "primary": "galois",
+    "secondary": [
+      "local",
+      "ktheory"
+    ]
+  },
+  "statement": "Let $\\ell$ be any prime and $K/\\mathbb Q$ a finite abelian extension\ncontaining $\\mu_\\ell$ for odd $\\ell$, or $\\mu_4$ for $\\ell=2$. There\nis an integer $r\\ge0$ such that for every $n\\ge0$ and every model\n$K'$ of $K(\\mu_{\\ell^n})$ over $K$,\n\\[\n    \\big|\\operatorname{Cl}(K')/\\operatorname{Cl}(K')^\\ell\\big|\\le\\ell^r .\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Take $\\ell$ prime and $K/\\mathbb Q$ finite abelian.",
+    "The base contains $\\mu_\\ell$ for odd $\\ell$, or $\\mu_4$ at two. Use a layer model over that same base."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.FW.ferreroWashington",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/FerreroWashingtonIndex/FerreroWashington.lean",
+      "line0": 104,
+      "line1": 119,
+      "sha256": "b9f0ed4b26b0708e4cee57e659cc639647b13b19b55cfd7fc21b37f6c22135e6",
+      "dominated": 4838,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/W11_round3.md",
+      "section": "W11 · A uniform class-group rank bound in every cyclotomic layer",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-3 written exposition, pending independent review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "5.47 (sub:W11)",
+      "pages": [
+        52,
+        52
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/W11.tex",
+      "section": "sub:W11",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L1",
+  "reviews": [
+    "reviews/R21_review.md",
+    "reviews/DB3_review_B.md"
+  ],
+  "prerequisites": [],
+  "size_pages": 2,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [
+    {
+      "grade": "L1",
+      "review": "reviews/R21_review.md",
+      "lines": [
+        93,
+        93
+      ],
+      "scope": "Lean interface as specified in the review row; no equivalence with a published result inferred.",
+      "verdict": "Exact statement comparison"
+    }
+  ],
+  "paper_id": "W11",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "bounded-class-group-ranks-in-cyclotomic-layers",
+  "aliases": [
+    "ferreroWashington",
+    "W11 Bounded class-group ranks in cyclotomic layers"
+  ],
+  "background": [
+    "Cyclotomic Iwasawa theory",
+    "Class groups"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "5.47 (sub:W11)",
+    "pages": [
+      52,
+      52
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "review_status": "pending_review",
+  "summary": "For an abelian base containing the required roots of unity, one exponent bounds the order of every cyclotomic layer’s class group modulo its subgroup of ℓth powers, where ℓ is the chosen prime. The bound is independent of the layer and its model."
+}

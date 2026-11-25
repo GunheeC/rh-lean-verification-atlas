@@ -1,0 +1,244 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "Z2.K8",
+  "edition_sha256": "938e71dc7175c1c27fa6e87d5dcb99eac94288361517d047211e702e72f074a0",
+  "note_sha256": "648985250ee4ce27bcd4345bf743159f5da7ec5a7bc3bcd255f8b78c596717ae",
+  "statement_sha256": "a389956bbe945fcbe1023b510c84677bfb463971c43b6716abbaad3e33ee875b",
+  "sources": [
+    {
+      "path": "notes/blueprint/Z2.K8.tex",
+      "sha256": "648985250ee4ce27bcd4345bf743159f5da7ec5a7bc3bcd255f8b78c596717ae"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Finite duality identifies the left-hand term of the finite degree-two sequence with the dual localization kernel.",
+      "kind": "literature",
+      "uses": [
+        "standard: finite Poitou-Tate and local Tate duality"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.TateLimit.ptShaAt",
+          "file": "Development/AbelianVarietyTheory/Proofs/FoundationProofs/LengthEqLengthInvariantsOfTorsionLevels.lean",
+          "line0": 462,
+          "line1": 473
+        }
+      ],
+      "source": "notes/blueprint/Z2.K8.tex",
+      "anchor": "Take $T_j=(\\mathbf Z/\\ell^j)(E+1)$ and its Cartier dual $B_j=A_E[\\ell^j]$,",
+      "source_lines": [
+        15,
+        37
+      ],
+      "claim_sha256": "5b21e44cd89c042f6dd89ff28ac4607bb244e2a4fb425f4904eebaf46eb97bc3",
+      "passage_sha256": "1750be2af155b53dea4d429da171b9c2c9f4bc72094da17ce2913372a3c83724",
+      "sha256": "b64138f04d51f59765489bc2beae74988fa07eda7e1f24a65eed44d7ff19a6b1",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Stabilization of images in finite groups makes the inverse limit of the levelwise exact sequences exact.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S1",
+        "standard: Mittag-Leffler condition"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.TateLimit.local_lim",
+          "file": "Development/AbelianVarietyTheory/Proofs/FoundationProofs/LengthEqLengthInvariantsOfTorsionLevels.lean",
+          "line0": 282,
+          "line1": 293
+        }
+      ],
+      "source": "notes/blueprint/Z2.K8.tex",
+      "anchor": "All terms at finite level are finite since $S$ is finite. Inverse limits",
+      "source_lines": [
+        39,
+        57
+      ],
+      "claim_sha256": "359db0e87522e26a8b6b622b3cf25c0b19038fe83c8a9a6394046b07c7ad9a4f",
+      "passage_sha256": "18671fbc68d87491e2b2d0c0881ad1b849cf682bb8b16568abe8baab3d7f23e6",
+      "sha256": "bf2fce0cca55c8102514b24c1898547955299440c76109dbcb0162c6bd6a4bab",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Continuous cochains into the discrete torsion union have finite image, so their cohomology and localization kernel commute with this filtered union.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "standard: compactness"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.TateLimit.ptShaAt",
+          "file": "Development/AbelianVarietyTheory/Proofs/FoundationProofs/LengthEqLengthInvariantsOfTorsionLevels.lean",
+          "line0": 462,
+          "line1": 473
+        }
+      ],
+      "source": "notes/blueprint/Z2.K8.tex",
+      "anchor": "the limit. Discrete continuous cochains into $A_E$ have finite image on",
+      "source_lines": [
+        39,
+        57
+      ],
+      "claim_sha256": "19524b4a3cd36f937847c0b6d0ffcf9b0426f8e5f5b187826b47c62c593dac35",
+      "passage_sha256": "18671fbc68d87491e2b2d0c0881ad1b849cf682bb8b16568abe8baab3d7f23e6",
+      "sha256": "925d284f5ae83f162b7f03f0aca353e66b7f212afe1d4da08e630708a635f9d5",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "Surjective cochain reductions and stabilization of finite degree-one cohomology identify the middle limit with the compact degree-two group.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S2",
+        "standard: derived inverse limits"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.TateLimit.global_lim",
+          "file": "Development/AbelianVarietyTheory/Proofs/FoundationProofs/LengthEqLengthInvariantsOfTorsionLevels.lean",
+          "line0": 337,
+          "line1": 351
+        }
+      ],
+      "source": "notes/blueprint/Z2.K8.tex",
+      "anchor": "On the compact side the continuous cochain complex is the inverse limit",
+      "source_lines": [
+        39,
+        57
+      ],
+      "claim_sha256": "59bd337f8c6a4bf8cbd1d1db5c51c6546c4a55d704edce270b14a6856d1df4f2",
+      "passage_sha256": "18671fbc68d87491e2b2d0c0881ad1b849cf682bb8b16568abe8baab3d7f23e6",
+      "sha256": "abeb3b6cbe5571f421f36bb1e761760187f5c0c23aae18d47bd94c4bfd8a6522",
+      "ai_review": []
+    },
+    {
+      "id": "S5",
+      "status": "active",
+      "claim": "Additivity of length in the limiting exact sequence and duality give the stated length formula.",
+      "kind": "assembly",
+      "uses": [
+        "S2",
+        "S3",
+        "S4",
+        "Z2.K1"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.LDataCardLeFinrank.vFormula_of_classicalTheorems",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/GaloisCohomologyLength/Formula.lean",
+          "line0": 15,
+          "line1": 24
+        }
+      ],
+      "source": "notes/blueprint/Z2.K8.tex",
+      "anchor": "Length additivity, and preservation of extended length under duality",
+      "source_lines": [
+        39,
+        57
+      ],
+      "claim_sha256": "43f133e1e1ce449325c0c36cb492b7deab56dc0451b631464c7fd50af75732db",
+      "passage_sha256": "18671fbc68d87491e2b2d0c0881ad1b849cf682bb8b16568abe8baab3d7f23e6",
+      "sha256": "88aaa99456d6db6586f1c4ab40fcf61a4ba639571d4a924d19aba910f692a3c9",
+      "ai_review": []
+    },
+    {
+      "id": "S6",
+      "status": "active",
+      "claim": "Total ramification at each cyclotomic level and compactness give surjectivity of the cyclotomic character on inertia.",
+      "kind": "computation",
+      "uses": [
+        "standard: Eisenstein criterion"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.CycInertia.cycZ_Ine_surjective",
+          "file": "Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/CyclotomicCharInertiaSurjective.lean",
+          "line0": 63,
+          "line1": 96
+        }
+      ],
+      "source": "notes/blueprint/Z2.K8.tex",
+      "anchor": "Finally $\\Phi_{\\ell^j}(1+X)$ is monic, reduces to",
+      "source_lines": [
+        59,
+        68
+      ],
+      "claim_sha256": "1f07222db38f60b2c91d0082b862a3b2d10b2c488b1dec03eaf85e6ed15e6661",
+      "passage_sha256": "34e81baf52be79005179b1fe58ddef11f26e3bd83f1098657d9615d23ae010d0",
+      "sha256": "d7ed6dc86c7a4d7112b0fe6f3e80c3522e5063a5ebbb933130943836db296c00",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "f0ef95a5cac385fc549c99662519b7106f1271ef607e9e23243d91d8cef3d10c",
+      "sources": [
+        {
+          "path": "notes/blueprint/Z2.K8.tex",
+          "sha256": "1533d7697ff07408c0448253108d7cb764655b4f4dbd0faedeea68df8c7bbbd6"
+        }
+      ],
+      "steps": {
+        "S1": "425d7c3b06a523d931c3e87b2cdf637ef3d627340bd85cad0dec22d5497a2db4",
+        "S2": "c859c1eda621176ac76a0b8c8065ccd6155fd7ccd79bd3afe62180aebf00c57b",
+        "S3": "2b43293f3cace3027838a7846173ac9850ff08c93bd056bdb6a1da2d5b83fc59",
+        "S4": "7cdbbe9c950b4896d868bf621b04317d8a177cebc22936e2ac925363845df9c0",
+        "S5": "88aaa99456d6db6586f1c4ab40fcf61a4ba639571d4a924d19aba910f692a3c9",
+        "S6": "d7ed6dc86c7a4d7112b0fe6f3e80c3522e5063a5ebbb933130943836db296c00"
+      },
+      "step_texts": {
+        "S1": "Finite duality identifies the left-hand term of the finite degree-two sequence with the dual localization kernel.",
+        "S2": "Stabilization of images in finite groups makes the inverse limit of the levelwise exact sequences exact.",
+        "S3": "Continuous cochains into the discrete torsion union have finite image, so their cohomology and localization kernel commute with this filtered union.",
+        "S4": "Surjective cochain reductions and stabilization of finite degree-one cohomology identify the middle limit with the compact degree-two group.",
+        "S5": "Additivity of length in the limiting exact sequence and duality give the stated length formula.",
+        "S6": "Total ramification at each cyclotomic level and compactness give surjectivity of the cyclotomic character on inertia."
+      }
+    },
+    {
+      "edition_sha256": "9f6f8f3ca0b4e19a8cdfd678d9fd3d6a9fda0cc39e2640e5d326de84c5be123b",
+      "sources": [
+        {
+          "path": "notes/blueprint/Z2.K8.tex",
+          "sha256": "1533d7697ff07408c0448253108d7cb764655b4f4dbd0faedeea68df8c7bbbd6"
+        }
+      ],
+      "statement_sha256": "a389956bbe945fcbe1023b510c84677bfb463971c43b6716abbaad3e33ee875b",
+      "steps": {
+        "S1": "b64138f04d51f59765489bc2beae74988fa07eda7e1f24a65eed44d7ff19a6b1",
+        "S2": "bf2fce0cca55c8102514b24c1898547955299440c76109dbcb0162c6bd6a4bab",
+        "S3": "925d284f5ae83f162b7f03f0aca353e66b7f212afe1d4da08e630708a635f9d5",
+        "S4": "abeb3b6cbe5571f421f36bb1e761760187f5c0c23aae18d47bd94c4bfd8a6522",
+        "S5": "88aaa99456d6db6586f1c4ab40fcf61a4ba639571d4a924d19aba910f692a3c9",
+        "S6": "d7ed6dc86c7a4d7112b0fe6f3e80c3522e5063a5ebbb933130943836db296c00"
+      },
+      "step_texts": {
+        "S1": "Finite duality identifies the left-hand term of the finite degree-two sequence with the dual localization kernel.",
+        "S2": "Stabilization of images in finite groups makes the inverse limit of the levelwise exact sequences exact.",
+        "S3": "Continuous cochains into the discrete torsion union have finite image, so their cohomology and localization kernel commute with this filtered union.",
+        "S4": "Surjective cochain reductions and stabilization of finite degree-one cohomology identify the middle limit with the compact degree-two group.",
+        "S5": "Additivity of length in the limiting exact sequence and duality give the stated length formula.",
+        "S6": "Total ramification at each cyclotomic level and compactness give surjectivity of the cyclotomic character on inertia."
+      },
+      "step_passages": {
+        "S1": "1750be2af155b53dea4d429da171b9c2c9f4bc72094da17ce2913372a3c83724",
+        "S2": "18671fbc68d87491e2b2d0c0881ad1b849cf682bb8b16568abe8baab3d7f23e6",
+        "S3": "18671fbc68d87491e2b2d0c0881ad1b849cf682bb8b16568abe8baab3d7f23e6",
+        "S4": "18671fbc68d87491e2b2d0c0881ad1b849cf682bb8b16568abe8baab3d7f23e6",
+        "S5": "18671fbc68d87491e2b2d0c0881ad1b849cf682bb8b16568abe8baab3d7f23e6",
+        "S6": "34e81baf52be79005179b1fe58ddef11f26e3bd83f1098657d9615d23ae010d0"
+      }
+    }
+  ]
+}

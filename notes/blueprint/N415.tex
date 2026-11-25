@@ -1,0 +1,84 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% RH Notes blueprint source excerpts for N415
+% Verbatim excerpts in the notation of the parent blueprint. The labelled editions and source ranges appear below.
+% See the unit YAML for the current proof status. Earlier-round passages retain their original wording.
+\section*{N415. Relative prime count in progressions}
+
+% Parent source SHA-256: 44e3b079775c8d7cc0d43b0314bf43a3959be56b2bbafa7f26e5441a1a9163de
+% blueprint/ch_T.tex lines 674 through 748; r5:lit:N415
+\paragraph{A relative prime count and a character sum (N415, N420).}\label{r5:lit:N415}
+Thorner and Zaman, \emph{Refinements to the prime number theorem for
+arithmetic progressions} (Math. Z. 306 (2024), Article 54, \href{https://doi.org/10.1007/s00209-023-03414-3}{doi:10.1007/s00209-023-03414-3}), Corollary~1.4 and Remark~1.5, give the following
+uniform formula for $q\ge2$, $(a,q)=1$ and $t\ge q^{12}$.
+For the log-weighted prime count in the class $a$, the main term is
+\[
+ H_a(t)=\frac{t-s t^\beta/\beta}{\varphi(q)}
+\]
+and the error is $O(H_a(t)E_q(t))$, where $s=\chi_1(a)$ for the
+exceptional real character and zero in its absence. For an absolute
+$c>0$,
+\[
+ E_q(t)=e^{-c\log t/\log q}
+       +\exp\{-c(\log t)^{3/5}/(\log\log t)^{1/5}\}.
+\]
+Their zero-free window at real height uses $1/(13\log(3q))$.
+Equation~(1.2) and the discussion after it give
+$1-\beta\gg q^{-1/2}$ when a zero exists.
+See \href{https://arxiv.org/pdf/2108.10878\#page=3}{Thorner--Zaman,
+Corollary 1.4 (p.~3), with (1.2) on p.~2}.
+
+For N415 take $q=M$, a positive multiple of eight, and enlarge the
+absolute constant $C_0$ in the hypothesis so that $X\ge q^{100}$.
+On $[\sqrt X,X]$ partial summation applies to the formula at each $t$.
+The main differential divided by $\log t$ is
+$(1-s t^{\beta-1})\,dt/(\varphi(q)\log t)$.
+Its integral gives the difference of the two logarithmic integrals in
+\path{mainAP}, including its lower-end convention
+$\mathrm{li}_2(x)=\int_2^x dt/\log t$.
+Write $m(X)=1$ if $s\ne1$, and
+$m(X)=\min(1,(1-\beta)\log X)$ if $s=1$. In the latter case integrate
+over $[X^\beta,X]$ to see that $\mathrm{li}_2(X)-\mathrm{li}_2(X^\beta)
+\asymp m(X)X/\log X$. In both cases $H_a(t)\ll m(X)t/\varphi(q)$ on
+the stated interval, by $1-e^{-v}\le\min(1,v)$ in the cancelling case.
+The endpoint error and its partial-summation integral are thus bounded by
+$O(E_q(\sqrt X)\,m(X)X/(\varphi(q)\log X))$.
+The initial prime count and lower-end main term are $O(\sqrt X)$.
+Relative to the main term their cost is
+$O(q^{3/2}\log X/\sqrt X)$ by (1.2). Both errors fit the two
+exponentials of \path{PNTAPRelW} after reducing its absolute $c_3$.
+
+Lean requires that a choice of no zero rules out every real
+nonprincipal-character zero above $1-1/(8\log q)$. A zero selected
+by the published window qualifies. If only the wider window contains a
+candidate, take any such candidate. Then
+$1-\beta\ge1/(13\log(3q))$, so the change in the main term, relative to
+$\mathrm{li}_2(X)/\varphi(q)$, is
+$O(e^{-c'\log X/\log q})$ for an absolute $c'>0$; by increasing $C_0$
+it is smaller than half the original main term. The same relative
+bound follows with the newly selected main term. This checks both
+directions of the optional choice.
+See \path{liX}, \path{piAP}, \path{IsExcPair}, \path{mainAP},
+\path{PNTAPRelW} (\path{MeanSquareHypWIff.lean:24,26,29,33,38}) and
+\path{pnt_progressions_relative_weak_holds} (\path{PNTFinal.lean:22}).
+
+For N420 put $q=N\ge2$ and sum the log-weighted formula over
+$a\in(\mathbb Z/q)^\times$ with multiplier $\chi(a)$. Orthogonality
+centers the principal term and cancels the exceptional term unless
+$\chi=\chi_1$. In the surviving case the hypothesis \path{NoExc}
+forces $\beta\le 1-c_0$, so this term is $O(u^{1-c_0})$.
+The sum of the absolute errors is $O(u E_q(u))$, since
+$|s|\le1$ and the factor $\varphi(q)^{-1}$ cancels against the number
+of classes. The additional prime powers contribute
+$O(\sqrt u\,(\log u)^2)$. For $u\ge q^{12}$, $\lambda\ge\log q$
+and $\lambda\ge1$, both terms are absorbed in
+\[
+ C u(\log u+\lambda)^2
+   \exp\{-c\log u/(\lambda+\sqrt{\log u})\},
+\]
+with $c>0$ allowed to depend on $c_0$. For $e\le u<q^{12}$,
+$\log u/(\lambda+\sqrt{\log u})\le12$ and the elementary
+$O(u\log u)$ bound suffices. For the primitive principal character of
+conductor one use modulus two, restore the omitted powers of two, and
+use the trivial bound below $2^{12}$. This proves the requested
+\path{QH.psi_thin} (\path{PsiThin.lean:385}).
+

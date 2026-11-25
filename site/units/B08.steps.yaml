@@ -1,0 +1,132 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "B08",
+  "edition_sha256": "48144b93add933e508611237c361eac75e6b9eb57dba0ec151694e71ce90d894",
+  "note_sha256": "cf7e7531dcafd2eab40241a355eb93888ad8cf31375b896e7e782dd9c24764dc",
+  "statement_sha256": "ecda7b4a1d97ef9e34573805248d25bc61b8c441bd04eb49075d11c55bae21e7",
+  "sources": [
+    {
+      "path": "notes/units/B08_v4.md",
+      "sha256": "cf7e7531dcafd2eab40241a355eb93888ad8cf31375b896e7e782dd9c24764dc"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The maximum of three thresholds controls the character conversion, the fixed lattice constant and the factor one plus four times the host order parameter.",
+      "kind": "computation",
+      "uses": [
+        "B09",
+        "D550"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Comparison₂.core_gm",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/CoreGm.lean",
+          "line0": 12,
+          "line1": 74
+        }
+      ],
+      "source": "notes/units/B08_v4.md",
+      "anchor": "maximum of three thresholds",
+      "source_lines": [
+        13,
+        20
+      ],
+      "claim_sha256": "4e1157ec75247081314a188509832e309235b3ec28aa86ed44188def78a785cf",
+      "passage_sha256": "4ac982a77ab2de112cce97aadbe36eae2c4221a5c68c521eee1454870fa04e2e",
+      "sha256": "5cf4a70b75c84f0dd0a70ae6d25ea0042b505c29e8f8db6332986f3599e47dea",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The common largeness condition still holds at the internal height exponent because its multiplier is nonnegative and the internal exponent is bounded above.",
+      "kind": "inequality",
+      "uses": [
+        "S1",
+        "B10"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Comparison₂.core_gm",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/CoreGm.lean",
+          "line0": 12,
+          "line1": 74
+        }
+      ],
+      "source": "notes/units/B08_v4.md",
+      "anchor": "Since $c'_{HH}",
+      "source_lines": [
+        22,
+        44
+      ],
+      "claim_sha256": "e560f07162a4ade191489a35620106418c53b29a13203235326421535dcd89f7",
+      "passage_sha256": "ff85c5e2d25530085bace373bfdc26164b31e07396b55954074df41fc3e21d0b",
+      "sha256": "a3f148884168a6f4d7fd3631335202e836f6765708b2f64a2b2d60868e52993e",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Nonnegativity of the bracket allows the internal division and loss exponents in the gap estimate to be replaced by their outer bounds.",
+      "kind": "inequality",
+      "uses": [
+        "S2",
+        "B10"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Comparison₂.core_gm",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/CoreGm.lean",
+          "line0": 12,
+          "line1": 74
+        }
+      ],
+      "source": "notes/units/B08_v4.md",
+      "anchor": "The bracket $B$",
+      "source_lines": [
+        22,
+        44
+      ],
+      "claim_sha256": "00fb4824e519854d1d2deae2a79b3054643f4abdf7d051341612c9fbde74f418",
+      "passage_sha256": "ff85c5e2d25530085bace373bfdc26164b31e07396b55954074df41fc3e21d0b",
+      "sha256": "870dc40a44d3fa0405b106d097bac1233b663cbf951152afdcd2e6b909a9c845",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "Absorbing the omitted frequencies into the common scale factor yields the level estimate with division plus loss plus seven in the epsilon exponent.",
+      "kind": "assembly",
+      "uses": [
+        "S3",
+        "D014",
+        "D547",
+        "D548",
+        "D549",
+        "B09"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Comparison₂.core_gm",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/CoreGm.lean",
+          "line0": 12,
+          "line1": 74
+        }
+      ],
+      "source": "notes/units/B08_v4.md",
+      "anchor": "Using D547",
+      "source_lines": [
+        22,
+        44
+      ],
+      "claim_sha256": "1737550c51a2c4a3a425c0bcb11b35a697251911d7dcb865f6efbe203df73498",
+      "passage_sha256": "ff85c5e2d25530085bace373bfdc26164b31e07396b55954074df41fc3e21d0b",
+      "sha256": "8bd5fcea6867c47e144a33f54e297137204c00ab5473a808d99053728a1cd7b1",
+      "ai_review": []
+    }
+  ],
+  "history": []
+}

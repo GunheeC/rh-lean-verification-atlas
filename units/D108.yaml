@@ -1,0 +1,79 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D108",
+  "title": "Residual nonvanishing from a Bernoulli unit",
+  "track": {
+    "primary": "galois",
+    "secondary": [
+      "local"
+    ]
+  },
+  "statement": "For an odd prime and a nontrivial character of order prime to it whose reduction differs from cyclotomic, a unit first Bernoulli value for the inverse character forces every residual cocycle satisfying UnrEv to be a coboundary.\n\\[\n\\operatorname{UnrEv}(c)\\ \\Longrightarrow\\ [c]=0.\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "The prime is odd and the character is nontrivial, of order prime to it and distinct from cyclotomic after reduction.",
+    "The first Bernoulli value of the inverse character is a unit and the residual cocycle satisfies UnrEv."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.X.residual_bernoulli_nonvanishing",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/LevelCohomology/ResidualBernoulliNonvanishing.lean",
+      "line0": 174,
+      "line1": 263,
+      "sha256": "e3df603f0ce361270ec3613008c6df20b46e5ffb2a8db4e5ba0f5df75f842ce0",
+      "dominated": 242,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "G.116 (decomp:D108)",
+      "pages": [
+        186,
+        186
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D108.tex",
+      "section": "decomp:D108",
+      "pages": []
+    }
+  ],
+  "status": "Statement only",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [],
+  "paper_id": "D108",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "residual-nonvanishing-from-a-bernoulli-unit",
+  "aliases": [
+    "residual_bernoulli_nonvanishing",
+    "D108 Residual nonvanishing from a Bernoulli unit"
+  ],
+  "background": [
+    "Residual Galois cohomology",
+    "Bernoulli numbers of characters"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.116 (decomp:D108)",
+    "pages": [
+      186,
+      186
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {}
+}

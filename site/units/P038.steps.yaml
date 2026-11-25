@@ -1,0 +1,156 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "P038",
+  "edition_sha256": "b7b85f0b5c1e7bb9739927a784a8708cdfa68d7ed3beb6d660679ed8975b55f4",
+  "note_sha256": "f10ebc933fb43e869c8d1381521325a95cab32082c0a7a2570a9e5c297cd625a",
+  "statement_sha256": "033c310a81ee40daeebcea84739bb1f78193b12942bc4c894f1ebea4357ea9dd",
+  "sources": [
+    {
+      "path": "notes/units/P038.tex",
+      "sha256": "f10ebc933fb43e869c8d1381521325a95cab32082c0a7a2570a9e5c297cd625a"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The locally finite convex covering of the positive cone gives exact augmented face chains.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: integral face-complex construction"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.KT.sx_exact",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HermiteNormalForms/Assembly.lean",
+          "line0": 14,
+          "line1": 17
+        }
+      ],
+      "source": "notes/units/P038.tex",
+      "anchor": "Their intersections in the positive dual",
+      "source_lines": [
+        13,
+        33
+      ],
+      "claim_sha256": "a8ee250ff0cb68a0c5a2436214e6bc919e6d104ca6f3121d37681d867d6475a6",
+      "passage_sha256": "ba2ebf04dae66fff3bacb0a010df13d4fac8be23ccc288cdd131ee8dd80c5796",
+      "sha256": "9dcfe589ed8973cc5260a0ca086f92b0f75a0f2ea6a2c9b385aebbd06392278f",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Finite stabilizers inject after reduction modulo three, giving the asserted uniform stabilizer order bound.",
+      "kind": "inequality",
+      "uses": [
+        "input: integral finite subgroup reduction"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.KT.stab",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HermiteNormalForms/ImportsAlt.lean",
+          "line0": 8,
+          "line1": 26
+        }
+      ],
+      "source": "notes/units/P038.tex",
+      "anchor": "Reduction into the matrix ring",
+      "source_lines": [
+        13,
+        33
+      ],
+      "claim_sha256": "ab1c8c1c6ae6dec79a27aac68bbb77b5cb66c772b156a74cf3e6468a7bd150ec",
+      "passage_sha256": "ba2ebf04dae66fff3bacb0a010df13d4fac8be23ccc288cdd131ee8dd80c5796",
+      "sha256": "ab39efafbce18314e79e56fcc85baf5a49f865f9be306cc5ab31d270fe231054",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Shapiro and the bar complex bound the positive-degree losses in each dimension shift.",
+      "kind": "inequality",
+      "uses": [
+        "S1",
+        "S2",
+        "standard: Shapiro lemma and finite-group homology"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.KH.mainFace",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/TorsionBoundsChains/LogLeExp.lean",
+          "line0": 59,
+          "line1": 66
+        }
+      ],
+      "source": "notes/units/P038.tex",
+      "anchor": "Dimension-shift",
+      "source_lines": [
+        35,
+        48
+      ],
+      "claim_sha256": "24c5a1fa01d1f93342615cd98087b7f02ee4b8baa272c016c8fd93287592cb1d",
+      "passage_sha256": "107386c19ec42cebb6090efe53087abbfdd919ee462693fc2c48d435f186165f",
+      "sha256": "be71bc74905a594ebbe71ef2ad67a4d1adf7e57ad786ea1d1dc638d727855e24",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "Hadamard bounds the final saturation index by $(m+2)^A$; multiplying the losses gives the all-prime torsion bound.",
+      "kind": "inequality",
+      "uses": [
+        "S3",
+        "standard: Hadamard inequality"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.KT.tors_le",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HermiteNormalForms/Assembly.lean",
+          "line0": 25,
+          "line1": 30
+        }
+      ],
+      "source": "notes/units/P038.tex",
+      "anchor": "Projecting independent columns",
+      "source_lines": [
+        35,
+        48
+      ],
+      "claim_sha256": "256202878fb9c3bdfadc136d53d570164c0660a3ba3decab51b8ad02d2147b57",
+      "passage_sha256": "107386c19ec42cebb6090efe53087abbfdd919ee462693fc2c48d435f186165f",
+      "sha256": "77b63822a7f19d9eef0a09ec538c315457e510dd548ce78dabeb07d2ef4b2953",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "b36865bb997b026587d48d635fb6bf6bc493fb80ff41d80830a96ee306c7e144",
+      "sources": [
+        {
+          "path": "notes/units/P038.tex",
+          "sha256": "1195dce347fd5a0df099a7e3216484dd7c0d8c8917c2710635d08733ab71a52b"
+        }
+      ],
+      "statement_sha256": "033c310a81ee40daeebcea84739bb1f78193b12942bc4c894f1ebea4357ea9dd",
+      "steps": {
+        "S1": "9dcfe589ed8973cc5260a0ca086f92b0f75a0f2ea6a2c9b385aebbd06392278f",
+        "S2": "ab39efafbce18314e79e56fcc85baf5a49f865f9be306cc5ab31d270fe231054",
+        "S3": "be71bc74905a594ebbe71ef2ad67a4d1adf7e57ad786ea1d1dc638d727855e24",
+        "S4": "77b63822a7f19d9eef0a09ec538c315457e510dd548ce78dabeb07d2ef4b2953"
+      },
+      "step_texts": {
+        "S1": "The locally finite convex covering of the positive cone gives exact augmented face chains.",
+        "S2": "Finite stabilizers inject after reduction modulo three, giving the asserted uniform stabilizer order bound.",
+        "S3": "Shapiro and the bar complex bound the positive-degree losses in each dimension shift.",
+        "S4": "Hadamard bounds the final saturation index by $(m+2)^A$; multiplying the losses gives the all-prime torsion bound."
+      },
+      "step_passages": {
+        "S1": "ba2ebf04dae66fff3bacb0a010df13d4fac8be23ccc288cdd131ee8dd80c5796",
+        "S2": "ba2ebf04dae66fff3bacb0a010df13d4fac8be23ccc288cdd131ee8dd80c5796",
+        "S3": "107386c19ec42cebb6090efe53087abbfdd919ee462693fc2c48d435f186165f",
+        "S4": "107386c19ec42cebb6090efe53087abbfdd919ee462693fc2c48d435f186165f"
+      }
+    }
+  ]
+}

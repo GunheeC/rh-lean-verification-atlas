@@ -1,0 +1,17 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit P050. Local manuscript v3, item 7.27, heading on printed PDF p. 90.
+% Formalism.HN.place_lattice_structure
+% paper2/inputs_two.tex:155–165. Verbatim excerpt; SHA-256 95bc54656a514c712c6fe5ce51d60e570b30b4c9eeabdf79bbad5e175893a928.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+\begin{theorem}[Lattice realization over a number field]\label{pn:P050}
+Let \(K\) be any number field with the given star structure, \(V\) a finite-dimensional \(K\)-space with compatible \(\mathcal O_K\)-action, \(b\) a basis, and \(X_v\) invertible complex frames at all infinite places. For a finitely generated \(\mathcal O_K\)-submodule \(L\), the realization is injective on \(L\), its image is discrete, and
+\[
+ \operatorname{rank}_{\mathbf Z}\rho_X L=[K:\mathbf Q]\,\operatorname{rank}_K L,
+ \qquad \operatorname{ht}_{b,X}(L)>0 .
+\]
+\end{theorem}
+\nodestatus{P050}
+\begin{proof}
+In the ambient basis, clear the denominators of a finite generating family. Its image lies in the image of a rescaled copy of \(\mathcal O_K^{\dim V}\); the real independence of an integral embedding basis and invertibility of the frames give injectivity and discreteness. Select a maximal \(K\)-independent family \(e_1,\ldots,e_j\) from \(L\). Clear denominators again, this time in their span, to enclose \(L\) between \(\sum\mathcal O_K e_i\) and an integral rescaling of that module by \(1/c\). The two endpoints have \(\mathbf Z\)-rank \([K:\mathbf Q]j\); the middle lattice has the same rank. Its covolume in its span is positive, as are the discriminant and power-of-two factors of the height. This is the denominator argument in blueprint \bploc{lem:P5-gram-realize}; the Lean proposition on discreteness also allows real places.
+\end{proof}

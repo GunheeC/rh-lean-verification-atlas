@@ -1,0 +1,127 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "D564",
+  "edition_sha256": "38bcf9f4f7b23d987e9e0ef2697937782d326f37547e62c519cb9b6ed7550628",
+  "note_sha256": "7e76851738b3324baf87deed8034bdf8f589e39393a47af89442ac8cfdd0d51e",
+  "statement_sha256": "31f44308f7b4a0a0747cb966ba9ec77fec0b3fee8e71b6b6cda61e07de8a1e3a",
+  "sources": [
+    {
+      "path": "notes/units/B09_v4.md",
+      "sha256": "7e76851738b3324baf87deed8034bdf8f589e39393a47af89442ac8cfdd0d51e"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Moving from the common scale to the test-set evaluation points costs at most the common derivative allowance.",
+      "kind": "inequality",
+      "uses": [
+        "D562",
+        "input: absolute point displacement at most one"
+      ],
+      "lean": [
+        {
+          "name": "Deduction.CharacterBalanceMoves.one_char",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean",
+          "line0": 202,
+          "line1": 281
+        }
+      ],
+      "source": "notes/units/B09_v4.md",
+      "anchor": "Use $y_t",
+      "source_lines": [
+        32,
+        45
+      ],
+      "claim_sha256": "df23e441ec2354e62fc071e7fec0cab6a730390efcecb062405f2af75dce4b70",
+      "passage_sha256": "780b9dd77ef18409ac77636da5b1312d693acd55170850e0ad140c8d3e55fc2c",
+      "sha256": "966d07f06b20e76b0182e9f5b86c6d68cb258941e805a741e90d5defe1525ed6",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "In the kept nonprincipal case one pays for the phase discrepancy as well as the argument change; the principal character has no phase discrepancy.",
+      "kind": "case-split",
+      "uses": [
+        "S1",
+        "input: kept-character phase and test-set share bounds"
+      ],
+      "lean": [
+        {
+          "name": "Deduction.CharacterBalanceMoves.one_char",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean",
+          "line0": 202,
+          "line1": 281
+        }
+      ],
+      "source": "notes/units/B09_v4.md",
+      "anchor": "Use $y_t",
+      "source_lines": [
+        32,
+        45
+      ],
+      "claim_sha256": "38bbfe9f2978b8c299744760c2c72b5a8f40e4f3ae7f048ecb396ec9d7cd1ead",
+      "passage_sha256": "780b9dd77ef18409ac77636da5b1312d693acd55170850e0ad140c8d3e55fc2c",
+      "sha256": "e9c87801bc6568ee4e98daf52f15632febbcd8e47efd71231be502f86f0d4126",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Each character case yields the test-set lower bound with its admissible error subtracted from the designated contribution.",
+      "kind": "inequality",
+      "uses": [
+        "S1",
+        "S2",
+        "input: the three errors bounded by R"
+      ],
+      "lean": [
+        {
+          "name": "Deduction.CharacterBalanceMoves.one_char",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean",
+          "line0": 202,
+          "line1": 281
+        }
+      ],
+      "source": "notes/units/B09_v4.md",
+      "anchor": "For a threshold independent",
+      "source_lines": [
+        47,
+        64
+      ],
+      "claim_sha256": "458d46040f7b38237dedd4ae38e51a41d64650e586af8584f6e6bf078f0c0bbc",
+      "passage_sha256": "d0cf67b054bb95fb76963678cb18ccf4d40ecb505a48d42d53d3b43317ea6b02",
+      "sha256": "27a0eb2323bcbe3e8297557bcfb17c365726bc6ccc5b6f267bdf7fc101717932",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "924dc89d6f1039cd4337ff1eff31dfca414b3252b91a79d0221752415ee9d64a",
+      "sources": [
+        {
+          "path": "notes/units/B09_v4.md",
+          "sha256": "8fcd1be9e60ba1cc0b3cacac114da27476e6c10de8fb3f2a41b1a8313e66b3a5"
+        }
+      ],
+      "statement_sha256": "31f44308f7b4a0a0747cb966ba9ec77fec0b3fee8e71b6b6cda61e07de8a1e3a",
+      "steps": {
+        "S1": "966d07f06b20e76b0182e9f5b86c6d68cb258941e805a741e90d5defe1525ed6",
+        "S2": "e9c87801bc6568ee4e98daf52f15632febbcd8e47efd71231be502f86f0d4126",
+        "S3": "27a0eb2323bcbe3e8297557bcfb17c365726bc6ccc5b6f267bdf7fc101717932"
+      },
+      "step_texts": {
+        "S1": "Moving from the common scale to the test-set evaluation points costs at most the common derivative allowance.",
+        "S2": "In the kept nonprincipal case one pays for the phase discrepancy as well as the argument change; the principal character has no phase discrepancy.",
+        "S3": "Each character case yields the test-set lower bound with its admissible error subtracted from the designated contribution."
+      },
+      "step_passages": {
+        "S1": "780b9dd77ef18409ac77636da5b1312d693acd55170850e0ad140c8d3e55fc2c",
+        "S2": "780b9dd77ef18409ac77636da5b1312d693acd55170850e0ad140c8d3e55fc2c",
+        "S3": "d0cf67b054bb95fb76963678cb18ccf4d40ecb505a48d42d53d3b43317ea6b02"
+      }
+    }
+  ]
+}

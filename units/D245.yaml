@@ -1,0 +1,88 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D245",
+  "title": "The period span of the positive Frobenius vector",
+  "track": {
+    "primary": "local",
+    "secondary": []
+  },
+  "statement": "Let epsilon in the tilt have untilt 1 and suppose the untilt of its inverse Frobenius is different from 1. If y in the positive crystalline period ring has zero de Rham theta image after every nonnegative Frobenius iterate, then the Frobenius of y is a multiple of the image of the crystalline period t(epsilon) in that ring.\n\\[\n\\bigl(\\forall n\\ge0,\\ \\theta_{\\rm dR}(\\iota(\\varphi^n y))=0\\bigr)\\ \\Longrightarrow\\ \\varphi y\\in\\bigl(t(\\varepsilon)\\bigr)B_{\\rm cris}^{+}.\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "The untilt of $\\varepsilon$ equals one and the untilt of its inverse Frobenius differs from one.",
+    "For $y\\in B_{\\rm cris}^+$, the de Rham theta image of every nonnegative Frobenius iterate is zero."
+  ],
+  "lean": [
+    {
+      "name": "GroundTheory.PAdicHodge.ACris.phiPlus_mem_span_periodT",
+      "file": "GroundTheory/PAdicHodge/FontaineLemma.lean",
+      "line0": 42,
+      "line1": 72,
+      "sha256": "3f8f0a8a9d1581d5023e49bda4fad0bcea9f5a6949981c8887a4f3cc94a38471",
+      "dominated": 373,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/D245_round4.md",
+      "section": "D245 · Where the extra power of the coefficient prime goes",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "G.256 (decomp:D245)",
+      "pages": [
+        221,
+        221
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D245.tex",
+      "section": "decomp:D245",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": 2,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "D245",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "the-period-span-of-the-positive-frobenius-vector",
+  "aliases": [
+    "phiPlus_mem_span_periodT",
+    "D245 The period span of the positive Frobenius vector"
+  ],
+  "background": [
+    "Tilts and Frobenius",
+    "The crystalline period $t$"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.256 (decomp:D245)",
+    "pages": [
+      221,
+      221
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "review_status": "pending_review",
+  "summary": "If every Frobenius iterate of a positive crystalline period has zero theta value after comparison, its Frobenius image is divisible by the chosen period in the positive crystalline ring. The proof clears a denominator, proves integral divisibility with an extra factor of $p$, and then removes that factor in the localized ring."
+}

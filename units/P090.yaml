@@ -1,0 +1,137 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "P090",
+  "title": "The full adelic law for the specified kernel",
+  "track": {
+    "primary": "theta",
+    "secondary": []
+  },
+  "statement": "For every chain and adelic datum $A$, determinant map $d$ and exponent $a$ satisfying the given adelic pin and tie conditions, the functions $\\Xi=\\Xi_{\\rm ad}(A,a)$ and $\\mu_T=\\mu_{\\rm of}(t,u,\\mu,d)$ satisfy the entire $\\mathrm{AdLawAt}$. The first function reads the prescribed adjacent kernels after change of frame, transforms under rational and level actions, depends only on the specified bad-place components, satisfies the local congruence condition, is supported on the prescribed denominator lattice and is integral off the designated primes. The second reads both rank-one determinants and class representatives, is algebraic and multiplicative on norm-one ideles, is trivial on the prescribed integral ideles, and on norm-one rational points is the product of the prescribed integral embedding powers.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Take a chain, its adelic data, determinant map and exponent.",
+    "Require the specified adelic pin and tie conditions for those same data."
+  ],
+  "lean": [
+    {
+      "name": "GlobalTheory.TwV.adLawAt_xiAd",
+      "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/AdelicChainDatumCharacterLawsJointKernel.lean",
+      "line0": 62,
+      "line1": 116,
+      "sha256": "d1fd9fe5f0e8fbba380a974b24f35772e719affe0a81b643f01f8c23f6a9ddb3",
+      "dominated": 10997,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/P090_round4.md",
+      "section": "P090 · The full adelic law for the specified kernel",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "10.9 (pn:P090)",
+      "pages": [
+        110,
+        110
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/P090.tex",
+      "section": "pn:P090",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [
+    "P134"
+  ],
+  "size_pages": 2,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "P090",
+  "indexed_members": [
+    "P091",
+    "P092",
+    "P097",
+    "P099",
+    "P100",
+    "P101",
+    "P102",
+    "P103",
+    "P104",
+    "P105",
+    "P106",
+    "P107",
+    "P108",
+    "P109",
+    "P110",
+    "P111",
+    "P112",
+    "P113",
+    "P114",
+    "P115",
+    "P116",
+    "P117",
+    "P118",
+    "P119",
+    "P120",
+    "P121",
+    "P122",
+    "P123",
+    "P124",
+    "P125",
+    "P126",
+    "P127",
+    "P128",
+    "P129",
+    "P130",
+    "P131",
+    "P132",
+    "P133",
+    "P135",
+    "P136",
+    "P137",
+    "P138",
+    "P140"
+  ],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "the-full-adelic-law-for-the-specified-kernel",
+  "aliases": [
+    "adLawAt_xiAd",
+    "P090 The full adelic law for the specified kernel"
+  ],
+  "background": [
+    "Adelic theta functions",
+    "Unitary determinants",
+    "Idèle characters"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "10.9 (pn:P090)",
+    "pages": [
+      110,
+      110
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "P134": "graph"
+  },
+  "review_status": "pending_review",
+  "summary": "One kernel and one determinant character satisfy the transformation, support and integrality requirements along the entire chosen chain. The statement lets adjacent stages use the same class representatives and character when a matrix step changes to a coupled step."
+}

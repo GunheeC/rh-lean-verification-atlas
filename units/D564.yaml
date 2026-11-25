@@ -1,0 +1,87 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D564",
+  "title": "The bound for one character on the selected set",
+  "track": {
+    "primary": "analytic",
+    "secondary": []
+  },
+  "statement": "With the designated subgroup, kept characters and TT amplitudes, assume the derivative bound, normalization and three explicit error bounds r1–r3 by R. For every character psi in the subgroup band, |TT| times (vv(psi)\\ensuremath{-}R) is at most the sum over t in TT of the real part of psi(e1(t)) times the smoothed sum at y(t).\n\\[\n|TT|\\,(\\operatorname{vv}(\\psi)-R)\\le\\sum_{t\\in TT}\\operatorname{Re}\\bigl(\\psi(e_1t)G_\\psi(y_t)\\bigr)\\qquad(\\psi\\in\\Psi_{A_0}).\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Take $x\\ge3$, a character in the subgroup band and sample points at distance at most one from $x$.",
+    "Assume the derivative estimate, nonnegative constants, kept-character normalization, share and functional bounds, and the three explicit errors bounded by the same $R$."
+  ],
+  "lean": [
+    {
+      "name": "Deduction.CharacterBalanceMoves.one_char",
+      "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean",
+      "line0": 202,
+      "line1": 281,
+      "sha256": "8bc1d19ac2bb7388bc1aefdbc69db0d12cf03058f12fddd47bc4b83159b27279",
+      "dominated": 105,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "G.598 (decomp:D564)",
+      "pages": [
+        306,
+        306
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D564.tex",
+      "section": "decomp:D564",
+      "pages": []
+    },
+    {
+      "document": "paper2_v3",
+      "section": "The chain in detail: P017",
+      "pages": [
+        9,
+        13
+      ],
+      "coverage": "Shared subsection for this station, including subordinate inputs."
+    }
+  ],
+  "status": "Full",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [],
+  "paper_id": "D564",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "the-bound-for-one-character-on-the-selected-set",
+  "aliases": [
+    "one_char",
+    "D564 The bound for one character on the selected set"
+  ],
+  "background": [
+    "Character orthogonality",
+    "Bounds for smoothed prime sums"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.598 (decomp:D564)",
+    "pages": [
+      306,
+      306
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "summary": "For one character in the subgroup band, the weighted sum on the test set controls its designated contribution up to the common error allowance. The derivative, normalization and three separate error estimates are what permit comparison across different test arguments."
+}

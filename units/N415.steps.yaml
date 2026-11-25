@@ -1,0 +1,99 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "N415",
+  "edition_sha256": "4e35d006aea1441f94b009ac77a15e5f10f7047b73b76530cb7c9cbd748913a9",
+  "note_sha256": "b4c5c048f8c7e8cd2193bcf6760282f12a8d4a0a4b87d9400ba6676382cfacc6",
+  "statement_sha256": "1439482a070cbba3f006737d366c4b571cd8ae41b78c58832b4bbcf8adce04a9",
+  "sources": [
+    {
+      "path": "notes/blueprint/N415.tex",
+      "sha256": "b4c5c048f8c7e8cd2193bcf6760282f12a8d4a0a4b87d9400ba6676382cfacc6"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "In the cited range the log-weighted prime count has a relative error around a main term that includes the exceptional real character when present.",
+      "kind": "literature",
+      "uses": [
+        "input: prime number theorem for arithmetic progressions in the cited source"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.HermitianLattices.Ext.PrimesInProgressions.pnt_progressions_relative_weak_holds",
+          "file": "Formalism/GL3MeanSquares/GenusMeanAsymptotics/JacobiCharacterSums/PNTFinal.lean",
+          "line0": 22,
+          "line1": 24
+        }
+      ],
+      "source": "notes/blueprint/N415.tex",
+      "anchor": "uniform formula for",
+      "source_lines": [
+        7,
+        28
+      ],
+      "claim_sha256": "b6a9b203b11e4c50ce28781cd825c68fc145b675fb586cb7cb094f79ae98c4dd",
+      "passage_sha256": "062567b7b7c577601dc3880793f00fd0835f9d51323cdf4fbf50adb20270e8f4",
+      "sha256": "b32bc2b8f0a09c04d0a24b1bc734ba59a1454a2dcd02f21ceeeb6347ea006721",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Partial summation gives the difference of logarithmic integrals for the main term and controls the relative error at the enlarged scale.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "standard: partial summation"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.HermitianLattices.Ext.PrimesInProgressions.pnt_progressions_relative_weak_holds",
+          "file": "Formalism/GL3MeanSquares/GenusMeanAsymptotics/JacobiCharacterSums/PNTFinal.lean",
+          "line0": 22,
+          "line1": 24
+        }
+      ],
+      "source": "notes/blueprint/N415.tex",
+      "anchor": "On $[\\sqrt X,X]$",
+      "source_lines": [
+        30,
+        48
+      ],
+      "claim_sha256": "52268acae685238196cd0326297d2e437c6bd72d17471281f298909fa349f80f",
+      "passage_sha256": "58180bf1dc81d415174d495f1fc908ae08dca69c6160a431484c3ee3d6b2d27c",
+      "sha256": "cd7295e8c89c4d0352be58a953bcb4918c5e9df628c60612fb86ae8d388e7965",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "When the stipulated larger exceptional window adds a zero beyond the narrower cutoff, its contribution is absorbed into the recorded relative error at the required scale.",
+      "kind": "case-split",
+      "uses": [
+        "S2",
+        "input: exceptional-zero window comparison"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.HermitianLattices.Ext.PrimesInProgressions.pnt_progressions_relative_weak_holds",
+          "file": "Formalism/GL3MeanSquares/GenusMeanAsymptotics/JacobiCharacterSums/PNTFinal.lean",
+          "line0": 22,
+          "line1": 24
+        }
+      ],
+      "source": "notes/blueprint/N415.tex",
+      "anchor": "Lean requires that",
+      "source_lines": [
+        50,
+        62
+      ],
+      "claim_sha256": "cf115ede95f3b82a445b6c685a8ddcbc746a32998716cecf903c87d8117d6d00",
+      "passage_sha256": "ff22ffdaa9fbe18758caf433bf540ee6af46f92c7ce2c1128fd6540e0bfcd5e7",
+      "sha256": "0a350ef41beefa34a6fdb48f75a007555ab85d31d152749311bbfafdf2a62e32",
+      "ai_review": []
+    }
+  ],
+  "history": []
+}

@@ -1,0 +1,36 @@
+name: "Ask a reading question"
+description: "Point to the first unclear step in a unit."
+body:
+  - type: markdown
+    attributes:
+      value: "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved"
+  - type: textarea
+    id: unit
+    attributes:
+      label: "Unit or declaration"
+    validations:
+      required: true
+  - type: textarea
+    id: location
+    attributes:
+      label: "Edition and exact location"
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: "What is the first unclear step?"
+    validations:
+      required: true
+  - type: textarea
+    id: tried
+    attributes:
+      label: "Background or sources already consulted"
+    validations:
+      required: false
+  - type: textarea
+    id: assistance
+    attributes:
+      label: "AI assistance and what the submitting person personally checked"
+    validations:
+      required: true

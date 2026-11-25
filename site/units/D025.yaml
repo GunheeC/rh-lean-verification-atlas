@@ -1,0 +1,88 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D025",
+  "title": "A nonzero Bessel period",
+  "track": {
+    "primary": "theta",
+    "secondary": []
+  },
+  "statement": "For admissible discrete-series parameters with even $k\\ge2$, interlacing and half-integral difference in the two-unitary-group setup, for every admissible discrete-series representation, comparison representation, lowest-weight unit vector and pair of Haar measures, two group translates give a nonzero matrix-coefficient Bessel integral.\n\\[\n\\exists x,x_0\\in U(H_{p_k}),\\quad \\int \\langle\\sigma(x_0)w,\\sigma(uv)\\sigma(x)w\\rangle\\,\\overline{\\psi_{\\rm gen}(v)}\\,\\pi(u^{-1})\\,d(\\mu_W\\otimes\\mu_N)(u,v)\\ne0.\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Take the prescribed even rank, interlacing weights and half-integral discrete-series parameters.",
+    "Use the admissible representations, lowest-weight unit vector and Haar measures on the two integration factors."
+  ],
+  "lean": [
+    {
+      "name": "ReciprocityTheory.ChartRestriction.DS.Lap.TopClosed.besselNVG",
+      "file": "ReciprocityTheory/ReductiveGroups/DiscreteSeries/LaplaceOperators/BesselVectors/Closed.lean",
+      "line0": 10,
+      "line1": 10,
+      "sha256": "48293f087f6f5e275ce46c5a3bcc98370be0b1979f9f1667b03b36e63c87b2a8",
+      "dominated": 21500,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/D025_round4.md",
+      "section": "D025 · A nonzero Bessel period",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "G.29 (decomp:D025)",
+      "pages": [
+        164,
+        164
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D025.tex",
+      "section": "decomp:D025",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": 2,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "D025",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "a-nonzero-bessel-period",
+  "aliases": [
+    "besselNVG",
+    "D025 A nonzero Bessel period"
+  ],
+  "background": [
+    "Discrete series of unitary groups",
+    "Bessel periods and Haar measures"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.29 (decomp:D025)",
+    "pages": [
+      164,
+      164
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "review_status": "pending_review",
+  "summary": "For a fixed discrete-series representation, a finite-dimensional comparison representation and a lowest-weight unit vector, two translates make the specified Bessel integral nonzero. The result supplies a detecting test even though a particular choice of translates could give zero."
+}

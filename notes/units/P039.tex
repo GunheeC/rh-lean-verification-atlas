@@ -1,0 +1,31 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit P039. Local manuscript v3, item 7.16, heading on printed PDF p. 82.
+% UpperTheory.V.ZK.torsAll
+% paper2/inputs_one.tex:704–728. Verbatim excerpt; SHA-256 bbd1a7c3c7a7e620c479eefecfcd535cfc0ef400a2f8bbc95ab27e4d5bd2f2bf.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+\begin{formalstatement}[One discriminant exponent throughout the window]\label{pn:P039}
+There exists \(C\in\mathbb R\) such that for every totally complex \(L\),
+\(e\ge1,\ 1\le N\le4e+6,\ 0\le m\le2e+1\), putting
+\(n=[L:\mathbb Q]\) and \(D=|\operatorname{disc} L|\), the full torsion
+\(T\) in \(H_m(G_N,\mathbb Z)\) is finite and
+\[
+          \log |T|\le \exp\!\left((2en)^C\log(2D)\right).
+\]
+\end{formalstatement}\nodestatus{P039}
+\begin{outline}
+The numerical calculation in Blueprint Z2.K7~\bploc{prop:P-r4-k7} gives \(C=24\).
+For \(d=nN\) its Hermite normal form count gives
+\(A\le(2Dd)^{12(m+1)d^3N}\). With \(s=3^{dN}\), the preceding
+bound gives \(\log|T|\le As^{m+1}(2m+1)\). Now
+\(\log s\le 2dN\), so its right side is bounded by the exponential of
+\[
+ (m+1)\left(12d^3N\log(2Dd)+2dN\right)+2m .
+\]
+Put \(u=en\). Then \(d,N\le10u\), \(m+1\le4u\) and
+\(\log(2Dd)\le16u\log(2D)\). The braces are bounded by
+\(1{,}920{,}300u^5\log(2D)\) and \(2m\le12u^6\log(2D)\).
+Since \(7{,}681{,}212<2^{24}\) and \(u\ge1\), the claimed
+exponent suffices. This specializes the full torsion estimate,
+retaining all prime factors throughout the specified window.
+\end{outline}

@@ -1,0 +1,104 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "N076",
+  "edition_sha256": "1e526b53b0dea2ca1df10032e6b793cb03197b615522604cb59328249960bbb5",
+  "note_sha256": "013bde3a9dcfcc1fc82076672a0c5b19b7cc2daa5fc06f85d1a5a77192c2471b",
+  "statement_sha256": "68ce0467b9eef0ffff7b8648fef34651acbd89b81ea1f3e07f95d53da9d7beac",
+  "sources": [
+    {
+      "path": "notes/blueprint/N076.tex",
+      "sha256": "013bde3a9dcfcc1fc82076672a0c5b19b7cc2daa5fc06f85d1a5a77192c2471b"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Vandermonde inversion at the distinct integer exponents bounds each coefficient in terms of finitely many model evaluations.",
+      "kind": "computation",
+      "uses": [
+        "input: cut-word expansion"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.FourierDecayAlt.P.CutBP.CompactFormNormalFormDomination.normal_form_top_domination",
+          "file": "CompanionTheory/AutomorphicTheory/CompactTopologicalForms/NormalFormTopDomination.lean",
+          "line0": 10,
+          "line1": 35
+        }
+      ],
+      "source": "notes/blueprint/N076.tex",
+      "anchor": "Fix an admissible cut word $w$ and a coefficient index in the word. Let $o$ bound the orders in its ",
+      "source_lines": [
+        12,
+        17
+      ],
+      "claim_sha256": "173bf5ec5ebbac4ccba87de39eca93af42ddbf5014361a446163d16b22107d6a",
+      "passage_sha256": "eb3edc429fe51be1635c5482d77a930e360485eb5c024735812addb25d2a6053",
+      "sha256": "3fd2a9b281d7217a74a10558d451a83cb1084765c4af9d9954d403049261d3ac",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The integrable majorants allow removal of the radial spatial cutoff in each of the finitely many operator estimates.",
+      "kind": "inequality",
+      "uses": [
+        "S1",
+        "input: integrable cutoff majorants"
+      ],
+      "lean": [
+        {
+          "name": "CompanionTheory.NFCpt.nfTopDomAll_of_ptwC",
+          "file": "CompanionTheory/AutomorphicTheory/DiscreteGroupWaves/NFDomC.lean",
+          "line0": 63,
+          "line1": 82
+        }
+      ],
+      "source": "notes/blueprint/N076.tex",
+      "anchor": "For each word the compact pointwise estimate uses finitely many differential operators $\\Theta_j$ an",
+      "source_lines": [
+        19,
+        20
+      ],
+      "claim_sha256": "49ed0d0542f9e9d64fdf8d2f9a6782d04936248465e92159808acff850ec5be0",
+      "passage_sha256": "a3789da6c6925a9d21adef81cad63b156139af97ad3e4ba817161a60a0389f7b",
+      "sha256": "c3ce81a427005c50f3db82286e5e2962fd71a58776da9f610745e242d26b17b4",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "At the specified branching gap a raising or lowering sequence remains admissible and gives the two-shift norm bound.",
+      "kind": "case-split",
+      "uses": [
+        "input: branching gap"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.WigSh.chain_lower_bound",
+          "file": "Development/AbelianVarietyTheory/Proofs/JetHarmonics/ChainLowerBound.lean",
+          "line0": 35,
+          "line1": 73
+        },
+        {
+          "name": "GlobalTheory.WigSh.exists_shifted_types_lower_bound",
+          "file": "Development/AbelianVarietyTheory/Proofs/JetHarmonics/ExistsShiftedTypesLowerBound.lean",
+          "line0": 19,
+          "line1": 65
+        }
+      ],
+      "source": "notes/blueprint/N076.tex",
+      "anchor": "Write the regular type in common-offset integer coordinates $L$, with $L_i-L_{i+1}\\ge2n_0+1$ at the ",
+      "source_lines": [
+        22,
+        28
+      ],
+      "claim_sha256": "c4a445fcd96723eef2345586fb185e21e4e57b56c47037863f73b46dfcddbddb",
+      "passage_sha256": "bad03c3e4c9aaf50093394149d89f4ff6eff3f1ab77bcd4a28de2f0150c2e36c",
+      "sha256": "7a0b350bbc8074787f76358f7c363fb0279c7661531b5727a6fee07f8d0bd51b",
+      "ai_review": []
+    }
+  ],
+  "history": []
+}

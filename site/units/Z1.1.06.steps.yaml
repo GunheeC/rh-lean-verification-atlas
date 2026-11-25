@@ -1,0 +1,99 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "Z1.1.06",
+  "edition_sha256": "7a91b02c627295cec7cc9c29a7bf30e64aee07e95f633b55572105a4e6c53459",
+  "note_sha256": "6b2f1260cb313946be9fcbdcecba1a2a4a9cd182dd340ac990de1afda78c908e",
+  "statement_sha256": "7c4be892c5f2c851bb0b5f30ae9521e1d03cb672881f9e2b7305b22ec5b14e4e",
+  "sources": [
+    {
+      "path": "notes/blueprint/Z1.1.06.tex",
+      "sha256": "6b2f1260cb313946be9fcbdcecba1a2a4a9cd182dd340ac990de1afda78c908e"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "If two embedding rows agree after reduction, the reduced discriminant vanishes.",
+      "kind": "computation",
+      "uses": [
+        "input: discriminant of an integral basis"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.UnramDiscr.embedding_eq",
+          "file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/IneLeFixingSubgroup.lean",
+          "line0": 18,
+          "line1": 58
+        }
+      ],
+      "source": "notes/blueprint/Z1.1.06.tex",
+      "anchor": "Suppose \\(\\mathrm{disc}(K)\\) has nonzero residue. In any integral basis",
+      "source_lines": [
+        7,
+        30
+      ],
+      "claim_sha256": "5a7c3d0188803a3e23065992b5b06a08d18ff78d30505a0934e58da8b7d5d5e2",
+      "passage_sha256": "50a0426cea6514cff74f70bfcfa07b0ea54093ee301df2bab18599f2f6c09a79",
+      "sha256": "2b8b6a2b24f9a28d3e74f17631ac6821bfb684841ff271c1c30bffd5d23dcd70",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Nontrivial inertia on the quadratic field forces its discriminant into the maximal ideal.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "input: inertia fixes residues"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.UnramDiscr.embedding_eq",
+          "file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/IneLeFixingSubgroup.lean",
+          "line0": 18,
+          "line1": 58
+        }
+      ],
+      "source": "notes/blueprint/Z1.1.06.tex",
+      "anchor": "residue, fixes the restriction to \\(K\\) of the given embedding. In",
+      "source_lines": [
+        7,
+        30
+      ],
+      "claim_sha256": "271505c895062fdc4253b3c3fa1da6321f1669790ed6850b39fd4a6699ed3efd",
+      "passage_sha256": "50a0426cea6514cff74f70bfcfa07b0ea54093ee301df2bab18599f2f6c09a79",
+      "sha256": "2b6a5f4d048e71f453dddf707b4772fe52231ac6885cda490b5456957f719f1f",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The enlarged level remains in that maximal ideal after multiplication by ell and the integral level factor.",
+      "kind": "assembly",
+      "uses": [
+        "S2",
+        "input: integral level factors"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Z.Win.Dn.gdEnd_of_frame_linkedEnd_downCsdK_descent",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/GdEndOf.lean",
+          "line0": 54,
+          "line1": 83
+        }
+      ],
+      "source": "notes/blueprint/Z1.1.06.tex",
+      "anchor": "as well, and multiplying by the integral \\(\\ell N\\) keeps it there.",
+      "source_lines": [
+        7,
+        30
+      ],
+      "claim_sha256": "d174402dbde54b2ca74c218be4838559cf97945b337705cf6393f6967aacb7e0",
+      "passage_sha256": "50a0426cea6514cff74f70bfcfa07b0ea54093ee301df2bab18599f2f6c09a79",
+      "sha256": "5cbb05ee81623712a0b8007528c6ed7aef51c0c744790d3bcc1ddf62e3bb821a",
+      "ai_review": []
+    }
+  ],
+  "history": []
+}

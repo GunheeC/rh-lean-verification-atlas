@@ -1,0 +1,39 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>B07 · Character hosts on power windows · RH verification atlas</title><link rel="stylesheet" href="../atlas.css"><script>window.MathJax={tex:{inlineMath:[["$","$"]],displayMath:[["$$","$$"]],processEscapes:true},options:{ignoreHtmlClass:"no-math"}};</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script></head><body><header><div class="bar"><a class="brand" href="../index.html">RH verification atlas</a><nav aria-label="Atlas navigation"><a href="../index.html">Home</a> <a href="../STATUS.html">Status</a> <a href="../MAP.html">Map</a> <a href="../dashboard/index.html">Tracks</a> <a href="../lookup/search.html">Search declarations</a></nav></div></header><main><h1 id="b07--character-hosts-on-power-windows">B07 · Character hosts on power windows</h1>
+<p class="notice">AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved</p>
+<p>A Selmer bound uniform on the requested windows supplies hosts for a primitive character on windows of exponent three halves. At each eligible scale the host carries the required ranks, kept characters, estimates for the other characters and a finite localization budget together. Later estimates can therefore use one choice of host.</p>
+<p><code>character-hosts-on-power-windows</code> · <a href="../tracks/analytic/index.html">Analytic number theory</a> · <a href="../tracks/galois/index.html">Galois representations, automorphy lifting, Iwasawa theory and Euler systems</a></p>
+<p><strong>Outlined</strong> · <strong>L1</strong> Statement matched to Lean · Record generated 2026-11-25 (no human check).</p>
+<div class="scroll"><table>
+<thead><tr><th>1 · Lean pinned</th><th>2 · Statement compared</th><th>3 · Prose</th><th>4 · Steps</th><th>5 · AI review</th><th>6 · Human</th></tr></thead>
+<tbody><tr><td>✓</td><td>✓</td><td>Outlined</td><td>4</td><td>–</td><td>0 of 4 steps</td></tr>
+</tbody></table></div>
+<p><a href="B07.check.html">Numbered proof and check records</a> · <a href="../PROGRESS.html">Progress and counting rules</a></p>
+<h2 id="statement">Statement</h2>
+<p>For each primitive character <span class="math">$\psi$</span>, assume the bound of Section 2 (manuscript p. 7) at <span class="math">$t=\lfloor x^{401}\rfloor$</span> with the quantifiers of <span class="math">$V$</span> for this <span class="math">$\psi$</span>. For every <span class="math">$0&lt;\varepsilon&lt;1/52$</span> there are <span class="math">$C_{T2},C_8,C_5,c_6,C_b,x_0$</span> with <span class="math">$C_8\ge1$</span> and <span class="math">$C_5,c_6,C_b&gt;0$</span>, and a system of scales with exponent-<span class="math">$3/2$</span> windows. At each eligible scale <span class="math">$s$</span> with <span class="math">$s.\varepsilon=\varepsilon$</span> and <span class="math">$s.x\ge x_0$</span> there exist the specified ranks, a host with invariant <span class="math">$C_{T2}$</span>, and an auxiliary prime parameter satisfying the rank and host-size conditions. The character request at these data enforces the kept-character and share conditions for <span class="math">$\operatorname{cyc}(\psi)$</span>, the pointwise bounds on the other characters (logarithmic-derivative constant <span class="math">$4$</span>), and the finite-length Selmer bound with budget <span class="math">$\sqrt b$</span>.</p>
+<h2 id="assumptions">Assumptions</h2>
+<ul><li>Fix a primitive character.</li><li>Assume its pointwise Selmer-window assertion with cutoff exponent 401, including the stated window and page-function quantifiers.</li></ul>
+<p>Sources for the assumptions · <a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a></p>
+<h2 id="where-to-read">Where to read</h2>
+<p>Blueprint v13 and papers v3–v5 are this atlas project’s own AI-written, unpublished drafts. They have no human review and were not written by the author of the Lean development. Blueprint v13, its separate cover, and paper v5 are distributed as assets of release v0.1.0. For v3 and v4 the atlas supplies selected excerpts and notes. <a href="../data/editions.json">Edition register</a></p>
+<ul><li><a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a>, 5.7 (sub:B07), p. 37. Statement starts on the cited page.</li><li><a href="../notes/units/B07.tex">Manuscript source excerpt</a> · section <code>sub:B07</code></li><li><a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a>, The chain in detail: P015, pp. 17–19. Shared subsection for this station, including subordinate inputs.</li></ul>
+<h3 id="declaration-name-matches">Declaration-name matches</h3>
+<ul><li><a href="../crosswalk/naskrecki.html">Naskręcki’s reading project</a> · 1 matching declaration · indices <code>supply</code>.</li></ul>
+<h2 id="evidence">Evidence</h2>
+<ul><li><a href="../reviews/R21_review.html">R21 review</a>, original line 135 — Exact statement comparison. Lean interface as specified in the review row; no equivalence with a published result inferred.</li></ul>
+<p>Review records · <a href="../reviews/R21_review.html">R21 review</a></p>
+<h2 id="lean-declarations">Lean declarations</h2>
+<ul><li><code>UpperTheory.Top.supplyChi</code>  <br><a href="https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/SupplyChi.lean#L8-L16"><code>SupplyChi.lean</code></a>, lines 8–16 · 31,622 dominated lines · SHA-256 <code>3802f3f332e6</code>.</li></ul>
+<p><a href="B07.yaml">Machine record and full declaration hashes</a> · <a href="../lookup/declarations.html">Declaration lookup</a></p>
+<h2 id="reading-prerequisites">Reading prerequisites</h2>
+<p>Background · Selmer groups · Auxiliary primes · Character sums.</p>
+<ul><li><a href="D510.html">D510 · A common quadratic host on a window</a> · graph</li><li><a href="D511.html">D511 · Host data from the chosen field</a> · graph</li><li><a href="D513.html">D513 · Choice of even column rank in a prescribed frame</a> · graph</li></ul>
+<p><a href="../data/round3_prerequisites.json">Evidence and definitions of reading links</a></p>
+<h2 id="open-questions">Open questions</h2>
+<ul><li>Which constants are fixed before choosing a prime pair on which all the required twisted-character bounds hold?</li></ul>
+<h2 id="graph-connections">Graph connections</h2>
+<p>Arrows may connect either a unit’s main declaration or an indexed member.</p>
+<p><strong>Uses</strong> · <a href="D510.html">D510</a> · <a href="D511.html">D511</a> · <a href="D513.html">D513</a></p>
+<p><strong>Used by</strong> · <a href="P015.html">P015</a></p>
+<p><a href="../data/unit_graph.json">Declaration witnesses and graph scope</a></p>
+<p>Lookup aliases · <code>supplyChi</code>, <code>B07 Character hosts on power windows</code></p>
+<p>&lt;!-- Unit metadata SHA-256 7b137fae617be4c158b125b4b30389a81326e1d4409b36c882936157e4c9d0e6 --&gt;</p></main><footer><a href="../help.html">Using the local edition</a></footer></body></html>

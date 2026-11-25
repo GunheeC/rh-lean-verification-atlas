@@ -1,0 +1,110 @@
+{
+  "id": "Z4.2.02",
+  "title": "Local realization of the tagged kernel",
+  "track": {
+    "primary": "local",
+    "secondary": [
+      "theta"
+    ]
+  },
+  "statement": "Given CurveEx, a standard served site and a joint $J$ for the fixed tagged kernel datum, construct an embedding compatible with the global field, a Lubin–Tate curve datum, finite classes and stabilizers, and adelic data $\\Xi$ and $\\mu_T$ satisfying the law, together in $J$.At.",
+  "assumptions": [
+    "source:blueprint_v13"
+  ],
+  "hypothesis_details": [
+    "Assume CurveEx.",
+    "Use a standard served site and a joint for the fixed tagged kernel datum."
+  ],
+  "lean": [
+    {
+      "name": "GlobalTheory.TwV.joint_at_nonempty",
+      "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/JointDataAtPAndAdelicDatumNonempty.lean",
+      "line0": 16,
+      "line1": 22,
+      "sha256": "3fc9f7bb0c97791212cc4aee6c8da007268bd63738bb63042243ac7de049f371",
+      "dominated": 11423,
+      "graph": "allChi",
+      "role": "statement"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/blueprint/Z4.2.02.tex",
+      "section": "r6:Z4.2.02, r8:Z4.2.02",
+      "pages": []
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r6:Z4.2.02",
+      "pages": [
+        382,
+        382
+      ],
+      "printed_page": 357,
+      "scope": "First page of this named destination."
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r8:Z4.2.02",
+      "pages": [
+        442,
+        442
+      ],
+      "printed_page": 417,
+      "scope": "First page of this named destination."
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [
+    "reviews/R7_review.md",
+    "reviews/R8_review.md"
+  ],
+  "prerequisites": [
+    "P090",
+    "Z42-SITES"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "Derive the rational, support, congruence and integrality laws for xiAd, and level equivariance in the matrix, coupled and type-prime top charts, including the adelic determinant-to-tame-character comparison.",
+    "After a coordinate change, which integrality and valuation bounds remain valid on the original coefficient ring?"
+  ],
+  "last_checked": "2026-11-24",
+  "blueprint_members": [
+    "Z4.2.02"
+  ],
+  "representative": "GlobalTheory.TwV.joint_at_nonempty",
+  "statement_declarations": [
+    "GlobalTheory.TwV.joint_at_nonempty"
+  ],
+  "grade_scope": "Named statement declarations with the hypotheses above. Chart supplier records have their own review scopes.",
+  "confirmation_basis": "Minimum across the statement declarations, using registry rows for the blueprint assignments listed here. Reviews of other expositions of a shared declaration are included as context.",
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "slug": "local-realization-of-the-tagged-kernel",
+  "aliases": [
+    "joint_at_nonempty",
+    "Z4.2.02 Local realization of the tagged kernel"
+  ],
+  "background": [
+    "Lubin–Tate formal groups",
+    "Lattices and local charts"
+  ],
+  "hypothesis_source": {
+    "document": "blueprint_v13",
+    "section": "r6:Z4.2.02",
+    "pages": [
+      382,
+      382
+    ]
+  },
+  "question_sources": [
+    "data/status_ledger.json",
+    "questions/local.md"
+  ],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "P090": "graph",
+    "Z42-SITES": "statement-reading"
+  },
+  "summary": "At a standard served site, curve existence and a joint datum give one local realization of the tagged kernel. It includes a compatible embedding, a Lubin–Tate curve, stabilizers and adelic data obeying their laws, so those ingredients refer to the same site."
+}

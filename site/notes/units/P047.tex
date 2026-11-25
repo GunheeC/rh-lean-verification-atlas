@@ -1,0 +1,13 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit P047. Local manuscript v3, item 7.24, heading on printed PDF p. 88.
+% Formalism.MainNotions.WeilJacquetShalikaLaw.Proof.first_clause_cases
+% paper2/inputs_two.tex:113–119. Verbatim excerpt; SHA-256 29575f607f28e7ff872679a6a03c5c42fe09fc0d3c15eaca20dfde036ce105b3.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+\begin{theorem}[Four cases for the first column bound]\label{pn:P047}
+Assume the coefficient inequalities for orbits without the operator, medium inert primes, discriminant primes, and the remaining primes under the stabilizer-denominator identity. Assume the size and error definitions. Fix a word \(u\), a used tuple \(\mu\), a place \(w\) of residue characteristic \(p\ne T_u\) outside \(\{g_0,g_1\}\cup Q(\mu)\), and \(x\in S_{\rm ram}(u,w)\). The column of \(T\) at \(u,\mu,w,x\) has its prescribed lower bound \(\operatorname{lowS}(u,w)\).
+\end{theorem}
+\nodestatus{P047}
+\begin{proof}
+At a discriminant place, expansion of the error subtracts the discriminant loss and the stabilizer loss from each lift, and restores the term \(s_pv_p(D_{\Gamma,u})\); this is the assumed discriminant inequality. Otherwise test whether \(p\) is within the indicated size range and has zero residue class or the specified exceptional inert signature. Within that range the zero-class case with \(h_P=0\) gives exactly the medium-prime loss. In the complementary in-range case use the no-operator bound: its numerical correction is a sum of nonnegative gains, so monotonicity gives the common lower bound. Outside the range and classes, all lift contributions \(F_j(w)\) vanish and the lower bound simplifies to \(-(\#\mathrm{lifts}-s_p)v_p(D_{\Gamma,u})\). Apply the remaining-prime hypothesis. The four inputs here are premises. Their simultaneous realization for a chosen kernel is a separate question in Z4.3. See blueprint \bploc{par:round-four-z43} and \bploc{par:r4-z43-deep}.
+\end{proof}

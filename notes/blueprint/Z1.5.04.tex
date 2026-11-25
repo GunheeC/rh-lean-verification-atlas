@@ -1,0 +1,25 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% RH Notes blueprint source excerpts for Z1.5.04
+% Verbatim excerpts in the notation of the parent blueprint. The labelled editions and source ranges appear below.
+% See the unit YAML for the current proof status. Earlier-round passages retain their original wording.
+\section*{Z1.5.04. Classifiers over an imaginary quadratic field}
+
+% Parent source SHA-256: 9559fca8cc392b75d71f1c158fe0c635cfcab567e2f489b52db4c5bb29d98029
+% blueprint/ch_P_r8_small.tex lines 516 through 531; r8:small:Z1.5.04
+\paragraph{Z1.5.04. Varying the purity while keeping the tuple well-defined.}
+\phantomsection\label{r8:small:Z1.5.04}
+With \(K\) imaginary quadratic, the variable weight \(\mathrm{wt}\) in
+the call to \nolinkurl{exists_eigData} does not enter the definition of
+the normalized tuple \(v\mapsto\mathrm{algSat}(n,Nv,B_v)\). For fixed
+\(m,M\), use S01--S02 on each representative in \(\mathrm{SigP}(K,m,M)\):
+existence at \(v\nmid M\) gives the chosen multiset, uniqueness makes the
+choice independent of representative, and its image still has \(n\) elements.
+S11 gives \(Nv>1\), hence the factors involving powers of \(Nv\) used in
+the conjugate-place comparison have nonzero base. This verifies the
+isomorphism-invariance, cardinality and positive-base inputs for every
+admitted \(\mathrm{wt}\). The simultaneous conjugation, duality and
+integrality inputs for the quadratic classifier at that weight remain
+(\nolinkurl{UpperTheory.GalN.V.conjP_alt}, \path{VConjP.lean:85--117};
+\nolinkurl{UpperTheory.GalN.V.Win.N.countP_alt},
+\path{DenseThresholdCases/FrobeniusTraceCountBoundOfCmEigensystemCount.lean:129--191}).
+

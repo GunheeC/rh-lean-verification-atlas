@@ -1,0 +1,323 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "T08",
+  "edition_sha256": "d73fa297bd1775366e28e6aa2526652257d3a6f2f6f3dbd360dd3f82bbb8ca6f",
+  "note_sha256": "99dd25cad7b1fcdbeff39882845fa0e98ba0158f17f31ee751dce5eb06747e5b",
+  "statement_sha256": "ec59040e2e5d1dbdec250e6e7a7cc61c6dc143e685f4b02e65d5dd76342e1062",
+  "sources": [
+    {
+      "path": "notes/units/T08_round4.md",
+      "sha256": "99dd25cad7b1fcdbeff39882845fa0e98ba0158f17f31ee751dce5eb06747e5b"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The real tie combines with primitivity and the decomposition-point condition to give the jumps on the dependence extension.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: proof of RecTExists, primitive and decomposition-point data"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.Fc.S0.Open0ProofU.open_orbit_of_unramified_exponents_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/OpenOrbitOfUnramifiedExponents.lean",
+          "line0": 39,
+          "line1": 49
+        }
+      ],
+      "source": "notes/units/T08_round4.md",
+      "anchor": "Fix the proof of reciprocity existence and a real dependence parameter.",
+      "source_lines": [
+        25,
+        25
+      ],
+      "claim_sha256": "65fd65f6a4b8ff846c2a555bca1dd8b524c906ecaa00798d86f2eb053d161071",
+      "passage_sha256": "d59ea8e937dd15f2448e2bc994ec00ccebf6da7017f79d7e48b9906f3050763d",
+      "sha256": "e11a2014e9ae0339d3ae46da274dea5a044c3d8190495865cb21264cbaba76fb",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The first multiplicity input and the bookkeeping law give the divisor field at those parameters.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: multiplicity input and bookkeeping law"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.Fc.S0.Open0ProofU.open_orbit_of_unramified_exponents_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/OpenOrbitOfUnramifiedExponents.lean",
+          "line0": 50,
+          "line1": 63
+        }
+      ],
+      "source": "notes/units/T08_round4.md",
+      "anchor": "The third-place multiplicity calculation",
+      "source_lines": [
+        29,
+        29
+      ],
+      "claim_sha256": "1b392b9afcfde5ae4afc22dc93b51265d4e1aa3ed1f9a4bb3cad5a39bfa091b7",
+      "passage_sha256": "6c8cbcee850a576e1b6fda1269de6fb7c6bf506a452a842184697263f0ec0d77",
+      "sha256": "9e282e88f9fc4659a572611b3c6dedec6eaaea26469b9fa9a24356b94b963871",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The goodness supplier combines the inhabited extension with the finite-group result from Green regular characters and the Zelevinsky field.",
+      "kind": "assembly",
+      "uses": [
+        "S1"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.Fc.S0.Open0ProofU.open_orbit_of_unramified_exponents_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/OpenOrbitOfUnramifiedExponents.lean",
+          "line0": 64,
+          "line1": 64
+        }
+      ],
+      "source": "notes/units/T08_round4.md",
+      "anchor": "The goodness supplier combines the inhabited extension with the finite-group result from Green regular characters and the Zelevinsky field.",
+      "source_lines": [
+        33,
+        33
+      ],
+      "claim_sha256": "1c7652a41972936638120fe15a3b178cfed8b9f7788628c01cd14392e970fa68",
+      "passage_sha256": "8ec74d0f5e19fa867040151d420918abb78bb36f39da418202eed6b20a775fa1",
+      "sha256": "6d04e650dc3c9b840e94447654053944d2a835b276e5a7a72f16176ee3e83b90",
+      "ai_review": []
+    },
+    {
+      "id": "S3a",
+      "status": "active",
+      "claim": "The label supplier takes the first component of goodness on this same extension.",
+      "kind": "assembly",
+      "uses": [
+        "S3"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.Fc.S0.Open0ProofU.open_orbit_of_unramified_exponents_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/OpenOrbitOfUnramifiedExponents.lean",
+          "line0": 65,
+          "line1": 65
+        }
+      ],
+      "source": "notes/units/T08_round4.md",
+      "anchor": "The label supplier takes the first component of goodness on this same extension.",
+      "source_lines": [
+        35,
+        35
+      ],
+      "claim_sha256": "ec20a54974eb93ea11a2239656e91dca5cbbbf3f9cef6a25d1eb00705cdc2075",
+      "passage_sha256": "9229bf3bac414d4a659dfe285bf802b7fbc4d4a6cc5cb4bc050d8796ac829834",
+      "sha256": "b57daaa447433b5c94a0125d2f69a0580e6e9a9ccd12a480b99310cb227a4182",
+      "ai_review": []
+    },
+    {
+      "id": "S3b",
+      "status": "active",
+      "claim": "The ray-class-field input, divisor assertion and tie supply the weak geometric field.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "S2"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.Fc.S0.Open0ProofU.open_orbit_of_unramified_exponents_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/OpenOrbitOfUnramifiedExponents.lean",
+          "line0": 66,
+          "line1": 66
+        }
+      ],
+      "source": "notes/units/T08_round4.md",
+      "anchor": "The ray-class-field input, divisor assertion and tie supply the weak geometric field.",
+      "source_lines": [
+        37,
+        37
+      ],
+      "claim_sha256": "0f0b63461d5c38e9983680842bcdb8785ee3292c23159061e8d0ba5b5e38c62d",
+      "passage_sha256": "4991f2892f8971c8dd4dc5e210564019196b51ea732b7dec11f814371457cde6",
+      "sha256": "11c812fabccf469422254841f2796b022bb90333b3f817a98924552d0dc04e2f",
+      "ai_review": []
+    },
+    {
+      "id": "S3c",
+      "status": "active",
+      "claim": "The defect field comes from the Weil-unitary calculation on the fixed extension.",
+      "kind": "assembly",
+      "uses": [
+        "S1"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.Fc.S0.Open0ProofU.open_orbit_of_unramified_exponents_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/OpenOrbitOfUnramifiedExponents.lean",
+          "line0": 67,
+          "line1": 68
+        }
+      ],
+      "source": "notes/units/T08_round4.md",
+      "anchor": "The defect field comes from the Weil-unitary calculation on the fixed extension.",
+      "source_lines": [
+        39,
+        39
+      ],
+      "claim_sha256": "a41daea2e34d085d872d832713506c15c92498579a3bce67d63925f16c56e2ea",
+      "passage_sha256": "be480983502f5b3a9fd2301682aaf578b82049a3cbb956bbda601264e9e1ef94",
+      "sha256": "c23ae02bccb0d89c0dc9add5147def943d176f9fa9314b9eb0f27fada96c16cb",
+      "ai_review": []
+    },
+    {
+      "id": "S3d",
+      "status": "active",
+      "claim": "The lambda-prime assertion is passed to the Harish–Chandra calculation to obtain kappa.",
+      "kind": "assembly",
+      "uses": [
+        "S1"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.Fc.S0.Open0ProofU.open_orbit_of_unramified_exponents_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/OpenOrbitOfUnramifiedExponents.lean",
+          "line0": 56,
+          "line1": 63
+        }
+      ],
+      "source": "notes/units/T08_round4.md",
+      "anchor": "The lambda-prime assertion is passed to the Harish–Chandra calculation to obtain kappa.",
+      "source_lines": [
+        41,
+        41
+      ],
+      "claim_sha256": "d1df1aa9f0e3964729ce3f296cdbff53bbb4ba2239047d753b1e85cc147a2a95",
+      "passage_sha256": "72bc376ea883dfc6fa74adc97fe2d491fec7bda2eed1f64faff546b7494617c9",
+      "sha256": "2cca8d668050a882094f8110f9f3e35ad234de5ef15fb8e39ee0e1af102fc342",
+      "ai_review": []
+    },
+    {
+      "id": "S3e",
+      "status": "active",
+      "claim": "The assembled tuple takes the second components of goodness and multiplicity and the already constructed labels, geometry, kappa and defect.",
+      "kind": "assembly",
+      "uses": [
+        "S2",
+        "S3",
+        "S3a",
+        "S3b",
+        "S3c",
+        "S3d"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.Fc.S0.Open0ProofU.open_orbit_of_unramified_exponents_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/OpenOrbitOfUnramifiedExponents.lean",
+          "line0": 69,
+          "line1": 69
+        }
+      ],
+      "source": "notes/units/T08_round4.md",
+      "anchor": "The assembled tuple takes the second components of goodness and multiplicity and the already constructed labels, geometry, kappa and defect.",
+      "source_lines": [
+        43,
+        43
+      ],
+      "claim_sha256": "a02e753252cfaa63c76aebe7db48ab88a8dcba7e5318f256deb9c3cb3f59a572",
+      "passage_sha256": "bcc9b6925b9f01d9e4a1ead69063e958ea60beefb2fe16c143712552cf122571",
+      "sha256": "03d68edb8090c789c96208e733dde5dda0fcf9db351dc08219528ad45d25ac60",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "5efd0123a5483abd86b2ceb3272e4c3fa9ee2055f493de78ec7da2a622c22fd5",
+      "sources": [
+        {
+          "path": "notes/units/T08_round4.md",
+          "sha256": "c2b6f18282e347a3cdbf2edd37ffee7b8da7f915fc796ffea12f1836441b5bcd"
+        }
+      ],
+      "steps": {
+        "S1": "5bbc60b985e2e8b456cc15ee72423c76133f5aa393862b40cfe6bcc5e5348706",
+        "S2": "a1b292a5f45c6a420e633bc1f5cf0e50f56c46b25ed8af783a3745ce260ffe1d",
+        "S3": "74522520284a19e1f34ea91b33edb57364ffc1449accf59e4a4d275ba9b3fb85"
+      },
+      "step_texts": {
+        "S1": "The real tie combines with primitivity and the decomposition-point condition to give the jumps on the dependence extension.",
+        "S2": "The first multiplicity input and the bookkeeping law give the divisor field at those parameters.",
+        "S3": "The label, goodness, geometric, multiplicity, kappa and defect fields complete the open-parameter record on the same extension."
+      }
+    },
+    {
+      "edition_sha256": "fc3878c25398dda5cc9bcd6bb9d636bb80b1e6e39c153983a6673ab865746b3e",
+      "sources": [
+        {
+          "path": "notes/units/T08_round4.md",
+          "sha256": "c2b6f18282e347a3cdbf2edd37ffee7b8da7f915fc796ffea12f1836441b5bcd"
+        }
+      ],
+      "statement_sha256": "933c2cef468d115ba674e5139f3b4f88a47d9b5289f181c5a465bdfd7ac87c5e",
+      "steps": {
+        "S1": "6bda716fba71d4b083bcc73c31c41e86c883fb28b9c38971c719c71690dc1d1f",
+        "S2": "2648500b178e8edde5e796d861afc829aacff011a1bfadc80be7fe911e53768f",
+        "S3": "e655d1cbbca5765c8ad56df7d2956526ac257239a08d8a93c8b15ca0143528f3"
+      },
+      "step_texts": {
+        "S1": "The real tie combines with primitivity and the decomposition-point condition to give the jumps on the dependence extension.",
+        "S2": "The first multiplicity input and the bookkeeping law give the divisor field at those parameters.",
+        "S3": "The label, goodness, geometric, multiplicity, kappa and defect fields complete the open-parameter record on the same extension."
+      },
+      "step_passages": {
+        "S1": "ff5c6bfdc3bbfda4afbab9e104d30b5423014256a0a711661d9031529aa733f2",
+        "S2": "498ccb5e11d0cc90429bcbb0184555d788aaa5ea1f6ec29bf6c88f8bb0f522e6",
+        "S3": "d5d4db1ee2a12c5c3917fce5cb0b136aa8dc055ce03b7ea33211c8fe2c8b37d3"
+      }
+    },
+    {
+      "edition_sha256": "79ea7bc3eb1d64cec43c609226efaf399323b89bad68a57f2519fb2cc901fc6b",
+      "sources": [
+        {
+          "path": "notes/units/T08_round4.md",
+          "sha256": "99dd25cad7b1fcdbeff39882845fa0e98ba0158f17f31ee751dce5eb06747e5b"
+        }
+      ],
+      "statement_sha256": "ec59040e2e5d1dbdec250e6e7a7cc61c6dc143e685f4b02e65d5dd76342e1062",
+      "steps": {
+        "S1": "e73afec30e0f14e41cf385693bc348f828759690785bbd18472469d7ff33f123",
+        "S2": "9e282e88f9fc4659a572611b3c6dedec6eaaea26469b9fa9a24356b94b963871",
+        "S3": "6d04e650dc3c9b840e94447654053944d2a835b276e5a7a72f16176ee3e83b90",
+        "S3a": "b57daaa447433b5c94a0125d2f69a0580e6e9a9ccd12a480b99310cb227a4182",
+        "S3b": "11c812fabccf469422254841f2796b022bb90333b3f817a98924552d0dc04e2f",
+        "S3c": "c23ae02bccb0d89c0dc9add5147def943d176f9fa9314b9eb0f27fada96c16cb",
+        "S3d": "2cca8d668050a882094f8110f9f3e35ad234de5ef15fb8e39ee0e1af102fc342",
+        "S3e": "03d68edb8090c789c96208e733dde5dda0fcf9db351dc08219528ad45d25ac60"
+      },
+      "step_texts": {
+        "S1": "The real tie combines with primitivity and the decomposition-point condition to give the jumps on the dependence extension.",
+        "S2": "The first multiplicity input and the bookkeeping law give the divisor field at those parameters.",
+        "S3": "The goodness supplier combines the inhabited extension with the finite-group result from Green regular characters and the Zelevinsky field.",
+        "S3a": "The label supplier takes the first component of goodness on this same extension.",
+        "S3b": "The ray-class-field input, divisor assertion and tie supply the weak geometric field.",
+        "S3c": "The defect field comes from the Weil-unitary calculation on the fixed extension.",
+        "S3d": "The lambda-prime assertion is passed to the Harish–Chandra calculation to obtain kappa.",
+        "S3e": "The assembled tuple takes the second components of goodness and multiplicity and the already constructed labels, geometry, kappa and defect."
+      },
+      "step_passages": {
+        "S1": "d59ea8e937dd15f2448e2bc994ec00ccebf6da7017f79d7e48b9906f3050763d",
+        "S2": "6c8cbcee850a576e1b6fda1269de6fb7c6bf506a452a842184697263f0ec0d77",
+        "S3": "8ec74d0f5e19fa867040151d420918abb78bb36f39da418202eed6b20a775fa1",
+        "S3a": "9229bf3bac414d4a659dfe285bf802b7fbc4d4a6cc5cb4bc050d8796ac829834",
+        "S3b": "4991f2892f8971c8dd4dc5e210564019196b51ea732b7dec11f814371457cde6",
+        "S3c": "be480983502f5b3a9fd2301682aaf578b82049a3cbb956bbda601264e9e1ef94",
+        "S3d": "72bc376ea883dfc6fa74adc97fe2d491fec7bda2eed1f64faff546b7494617c9",
+        "S3e": "bcc9b6925b9f01d9e4a1ead69063e958ea60beefb2fe16c143712552cf122571"
+      }
+    }
+  ]
+}

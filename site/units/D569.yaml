@@ -1,0 +1,97 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D569",
+  "title": "Transport of the main term across the finite bijections",
+  "track": {
+    "primary": "arakelov",
+    "secondary": []
+  },
+  "statement": "Assume the per-unit arithmetic/lattice identifications, including the chosen bijections onto TT and the character set. Then for every u, Main(u) equals the sum over t in TT and j<m of the real part of MAIN(ell,a(t),w(tr(u),j)).\n\\[\n\\mathrm{Main}(u)=\\sum_{t\\in TT}\\sum_{j<m}\\operatorname{Re}\\mathrm{MAIN}(\\ell,a(t),w(\\mathrm{tr}(u),j)).\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Fix the unit, translation map, top and place bijections, and compatible arithmetic coefficients.",
+    "The combined identification record holds for these very bijections."
+  ],
+  "lean": [
+    {
+      "name": "Deduction.ch_top_main_eq",
+      "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChTop.lean",
+      "line0": 11,
+      "line1": 35,
+      "sha256": "f60731cdac49753d67580c96f4dbb104248eb7aa0ca1fed5f9ef7f4bbcd7a2e3",
+      "dominated": 25,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/D569_round4.md",
+      "section": "D569 · Transport of the main term across the finite bijections",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "G.605 (decomp:D569)",
+      "pages": [
+        308,
+        308
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D569.tex",
+      "section": "decomp:D569",
+      "pages": []
+    },
+    {
+      "document": "paper2_v3",
+      "section": "The chain in detail: P017",
+      "pages": [
+        9,
+        13
+      ],
+      "coverage": "Shared subsection for this station, including subordinate inputs."
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": 2,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "D569",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "transport-of-the-main-term-across-the-finite-bijections",
+  "aliases": [
+    "ch_top_main_eq",
+    "D569 Transport of the main term across the finite bijections"
+  ],
+  "background": [
+    "Finite sums",
+    "Lattice and arithmetic period pairings"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.605 (decomp:D569)",
+    "pages": [
+      308,
+      308
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "review_status": "pending_review",
+  "summary": "Two finite bijections identify the lattice indices with the arithmetic indices. They transport the main term exactly, including its averaging factor. This lets the gap computation subtract the same main term on both sides."
+}

@@ -1,0 +1,162 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "T23",
+  "edition_sha256": "22f3ba27a7a7651a9722acb89ee8a00d7b07f66bb98013ead4cdb9527aeffd5f",
+  "note_sha256": "32f8c19c7c264f5bc7f62a08b1ec443500c3b0fe17e14e8e16adb1cb9a752b0a",
+  "statement_sha256": "fda25781d27bcd3011dc4094d4b8d081ce661e14edc8c80c5a373017d6156917",
+  "sources": [
+    {
+      "path": "notes/units/T23_round4.md",
+      "sha256": "32f8c19c7c264f5bc7f62a08b1ec443500c3b0fe17e14e8e16adb1cb9a752b0a"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The relative-dimension-zero case is supplied separately before the positive-dimensional squeeze.",
+      "kind": "case-split",
+      "uses": [
+        "input: nef generic multidegree"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.CompanionTheory.Ar.Pub.NefRR",
+          "file": "Development/AutomorphicSpectrum/PublishedTheorems/Geometry₂/NefRR.lean",
+          "line0": 8,
+          "line1": 14
+        },
+        {
+          "name": "PositivityTheory.Tls2.Nef.nefRR",
+          "file": "Development/WeilBound/CoreStatements/TemperedRepresentationTheory/NefDivisors/NefRR.lean",
+          "line0": 14,
+          "line1": 20
+        }
+      ],
+      "source": "notes/units/T23_round4.md",
+      "anchor": "Fix a finite multihomogeneous coordinate presentation $y$ over a characteristic-zero field",
+      "source_lines": [
+        28,
+        28
+      ],
+      "claim_sha256": "d5f74043aaf9047c384d8bd63d9ae6b7bc1b49dcd54821459e16bfa2a7415426",
+      "passage_sha256": "6920f7a58931ee3469116c27ad29d98d0a5b9bd5fe70789083f3f12a3bb76126",
+      "sha256": "8a4889d58edd5c7f66df0e5fbd9e9450a6cb54b0526a59d6c9cafe969e5c4794",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Multiplication by one nonzero scalar injects each normed chart span into the corresponding ordinary space at a fixed twist.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "input: fixed twist-shift theorem"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.Tls2.Nef.nefRR",
+          "file": "Development/WeilBound/CoreStatements/TemperedRepresentationTheory/NefDivisors/NefRR.lean",
+          "line0": 18,
+          "line1": 30
+        }
+      ],
+      "source": "notes/units/T23_round4.md",
+      "anchor": "When $D>0$ the twist-shift theorem returns a multidegree $e$ and a nonzero scalar $c$",
+      "source_lines": [
+        32,
+        32
+      ],
+      "claim_sha256": "b2c9d49b46f3f88b1e1fa30557ed804dd8e1eefe12df87182b070b7021cff782",
+      "passage_sha256": "fae41072fa21882789396d8f3b4e1b46883539b09747a3962268889aa4b6082f",
+      "sha256": "3a510ab2942d7fb6e395a30ef10ab5597753cf3537365b25119647e73ce3ada3",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The normed chart rank lies between the ordinary ranks at twists zero and the fixed upper twist.",
+      "kind": "inequality",
+      "uses": [
+        "S2",
+        "input: inclusion of ordinary sections"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.Tls2.Nef.nefRR",
+          "file": "Development/WeilBound/CoreStatements/TemperedRepresentationTheory/NefDivisors/NefRR.lean",
+          "line0": 31,
+          "line1": 44
+        }
+      ],
+      "source": "notes/units/T23_round4.md",
+      "anchor": "For the upper bound use invariance of rank under this injection onto its image, followed b",
+      "source_lines": [
+        36,
+        36
+      ],
+      "claim_sha256": "a405d293e5f656c8d78d430e3bee106435624764426bbbf0322b8e5160ffd7d4",
+      "passage_sha256": "d802874062947a8284e06a3eead31d2d2f3f87b7284099c78737411f4c5b4980",
+      "sha256": "2800a52162aed376d4559e0f68d7604c6e39373234c433b2962f77dab33eb880",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The eventual normalized lower and upper bounds force convergence to the generic degree.",
+      "kind": "assembly",
+      "uses": [
+        "S3",
+        "input: nef section asymptotics"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.Tls2.Nef.nefRR",
+          "file": "Development/WeilBound/CoreStatements/TemperedRepresentationTheory/NefDivisors/NefRR.lean",
+          "line0": 45,
+          "line1": 52
+        }
+      ],
+      "source": "notes/units/T23_round4.md",
+      "anchor": "For a prescribed positive tolerance use the nef sections lower estimate with twist zero an",
+      "source_lines": [
+        40,
+        40
+      ],
+      "claim_sha256": "750d8b381560a77741abcdac1f5e30c045de1abbcb0895cdc3d2649526a856cc",
+      "passage_sha256": "346b504cea579e190b0639204fb4798097a56d9a24a55ab871184aea7cbbef58",
+      "sha256": "72132582f4982d1f092be43dbdb3636abf5732b8655db2acd1e913fd6dfe6c29",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "1ade80904a6983e56457b9284f1d514df0c141e66444ed678f29363b73380437",
+      "sources": [
+        {
+          "path": "notes/units/T23_round4.md",
+          "sha256": "90a45ad19f5ff0553772b81902bd8de910cd0c3d7688dde4b9d01ef8636e9975"
+        }
+      ],
+      "statement_sha256": "62879a4360660ee0067fd886cf3bd1a86ff9f0b1287e6334ef538326fcdeadcd",
+      "steps": {
+        "S1": "8a4889d58edd5c7f66df0e5fbd9e9450a6cb54b0526a59d6c9cafe969e5c4794",
+        "S2": "3a510ab2942d7fb6e395a30ef10ab5597753cf3537365b25119647e73ce3ada3",
+        "S3": "2800a52162aed376d4559e0f68d7604c6e39373234c433b2962f77dab33eb880",
+        "S4": "72132582f4982d1f092be43dbdb3636abf5732b8655db2acd1e913fd6dfe6c29"
+      },
+      "step_texts": {
+        "S1": "The relative-dimension-zero case is supplied separately before the positive-dimensional squeeze.",
+        "S2": "Multiplication by one nonzero scalar injects each normed chart span into the corresponding ordinary space at a fixed twist.",
+        "S3": "The normed chart rank lies between the ordinary ranks at twists zero and the fixed upper twist.",
+        "S4": "The eventual normalized lower and upper bounds force convergence to the generic degree."
+      },
+      "step_passages": {
+        "S1": "6920f7a58931ee3469116c27ad29d98d0a5b9bd5fe70789083f3f12a3bb76126",
+        "S2": "fae41072fa21882789396d8f3b4e1b46883539b09747a3962268889aa4b6082f",
+        "S3": "d802874062947a8284e06a3eead31d2d2f3f87b7284099c78737411f4c5b4980",
+        "S4": "346b504cea579e190b0639204fb4798097a56d9a24a55ab871184aea7cbbef58"
+      }
+    }
+  ]
+}

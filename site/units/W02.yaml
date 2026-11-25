@@ -1,0 +1,105 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "W02",
+  "title": "Isobaric base change for the definite unitary group",
+  "track": {
+    "primary": "theta",
+    "secondary": []
+  },
+  "statement": "Let $E/E^+$ be CM, unramified at every finite prime, $n\\ge1$, and $\\pi$\nan automorphic representation of the specified definite unitary group.\nThere is a partition $n=\\sum_i N_i$ with positive parts and a discrete\n$\\mathrm{GL}_{N_i}(\\mathbb A_E)$ constituent $V_i$ for each part.\nEach is an ascending constituent built from a normalized unitary\nconjugate-self-dual cusp form. There are local components $\\sigma_{iw}$\nand infinitesimal characters $m_{i\\tau}$ of $V_i$. At each finite $w$\nthere is an irreducible subquotient $P_w$ of the local induced product\nof the $\\sigma_{iw}$. It is spherical when $\\pi$ is unramified there,\nhas the base-changed Satake multiset for each inert unramified datum,\nand realizes the unitary local component at split places. At each\nembedding $\\tau$, the sum of the $m_{i\\tau}$ equals the infinitesimal\ncharacter attached to each weight of $\\pi$ at $\\tau$.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Take a CM extension unramified at every finite place.",
+    "Use positive rank and an automorphic representation of the specified definite unitary group."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.BaseChangeIdentities.baseChangeN",
+      "file": "Development/AutomorphicArithmetic/Foundations/BaseChangeIdentities/DefiniteNHolds.lean",
+      "line0": 5,
+      "line1": 6,
+      "sha256": "9a593412b568a32461683e0cb571eeaaf66c52eeaf157e727fc53e8a8129905f",
+      "dominated": 1699,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/W02_round4.md",
+      "section": "W02 · From a finite comparison frame to definite isobaric base change",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "5.38 (sub:W02)",
+      "pages": [
+        49,
+        49
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/W02.tex",
+      "section": "sub:W02",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L1",
+  "reviews": [
+    "reviews/R21_review.md"
+  ],
+  "prerequisites": [
+    "W16"
+  ],
+  "size_pages": 2,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [
+    {
+      "grade": "L1",
+      "review": "reviews/R21_review.md",
+      "lines": [
+        116,
+        116
+      ],
+      "scope": "Lean interface as specified in the review row; no equivalence with a published result inferred.",
+      "verdict": "Exact statement comparison"
+    }
+  ],
+  "paper_id": "W02",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "isobaric-base-change-for-the-definite-unitary-group",
+  "aliases": [
+    "baseChangeN",
+    "W02 Isobaric base change for the definite unitary group"
+  ],
+  "background": [
+    "Definite unitary groups",
+    "Isobaric representations"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "5.38 (sub:W02)",
+    "pages": [
+      49,
+      49
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "W16": "graph"
+  },
+  "review_status": "pending_review",
+  "summary": "For an automorphic representation on the specified definite unitary group, this gives one family of isobaric constituents with compatible local parameters and archimedean weights. The Selmer-window construction uses this base change as a field of its automorphic input."
+}

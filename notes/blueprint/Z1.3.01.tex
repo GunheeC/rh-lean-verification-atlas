@@ -1,0 +1,50 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% RH Notes blueprint source excerpts for Z1.3.01
+% Verbatim excerpts in the notation of the parent blueprint. The labelled editions and source ranges appear below.
+% See the unit YAML for the current proof status. Earlier-round passages retain their original wording.
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+\noindent\nolinkurl{UpperTheory.Kd.K4.kato_eulerSystem_integrality} --- in-repo constant (\path{Development/AutomorphicArithmetic/Foundations/IwahoriReduction/NormProducts/AdmissibleWeightedDataMonoCoef.lean:208}); not compared.\par
+\noindent\nolinkurl{UpperTheory.V.Z.Kato.Nb.kato_tame_relation_projected} --- in-repo constant (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/EulerFactorBounds/KatoTameRelationProjected.lean:50--200}); not compared.\par
+\noindent\nolinkurl{UpperTheory.V.Z.Kato.Nb.kato_norm_compatible_cyclotomic_tower} --- in-repo constant (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/EulerFactorBounds/OneLeLevel.lean:175--221}); not compared.\par
+\noindent\nolinkurl{UpperTheory.V.Z.Kato.Nb.katoZetaElement_normCompatible_in_lTower} --- in-repo constant (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/EulerFactorBounds/ZetaClassCohomologyCompat.lean:210--314}); not compared.\par
+% End of atlas edition annotation.
+
+\section*{Z1.3.01. Integral Kato systems at all layers}
+
+% Parent source SHA-256: 1af64922b98ed2310744411b1f18b25cc426c97220646321471836e1a3a409d6
+% blueprint/ch_P.tex lines 13152 through 13160; r6:Z1.3.01
+\subsection{Z1.3.01. A common denominator and an actual tower of representatives}\label{r6:Z1.3.01}
+Under the hypotheses of entry~\ref{r5:map:Z1.3.01}, pick $x_0$ with $c_w(x_0)\ne0$. The predicate of admissibility for $x$ has a formal $x$ argument, but none of its clauses depends on $x$. Hence the datum at $x_0$ supplies the datum at every $x$. For each $x\in\mathbb Z/N$, the one-symbol theorem gives $C_x$ such that \emph{every} $C\ge C_x$ works at every layer. Take their finite maximum before choosing the families. Set $Y_r=\sum_x c_w(x)Y_{x,r}$. The twisted cocycle identity, push along reduction and coordinatewise continuity pass to the sum. Each $c_w(x)$ and each coordinate of $Y_{x,r}$ belongs to the same coefficient ring. This gives the weighted representative with one exponent, including at the terms where $c_w(x)=0$.
+\par{\footnotesize \nolinkurl{GlobalTheory.K4.AdmissibleNewformZetaData} (\nolinkurl{Development/AbelianVarietyTheory/Definitions/Foundations/AdmissibleNewformZetaData.lean}\allowbreak:15--36). \nolinkurl{UpperTheory.Kd.K4.ml} (\nolinkurl{Development/AutomorphicArithmetic/Foundations/IwahoriReduction/NormProducts/Ml.lean}\allowbreak:21--36). \nolinkurl{UpperTheory.Kd.K4.g3} (\nolinkurl{Development/AutomorphicArithmetic/Foundations/IwahoriReduction/NormProducts/AdmissibleWeightedDataMonoCoef.lean}\allowbreak:15--36).\par}
+
+The projected tame relation produces one exponent $k$ and one exceptional set for the whole family. Multiply every $Y_r$ by $\ell^k$. This raises the exponent in the chosen representatives from $C$ to $C+k$, since the projection respects addition and $\mathbb Z_\ell$-scalars. Fiberwise push and finite specialization both commute with this multiplication. At level $r$ the specialization uses the weight $((u.\mathrm{val})^e)^{-1}\chi_r(u)$ on units. The specialization lemma takes the same push-compatible family and its tame data, yielding $y,m,S''$ with the levelwise error bound, the global system for $\ell^m y$, the Iwasawa system for $\ell^m Y_{r,1}$ and their common specialization bound. One may take the output coefficient ring equal to the starting ring. Finally, for fixed $r,n$, continuity on the compact Galois group gives a finite subcover of cosets on which each of the finitely many coordinate functions varies by at most $|\ell|^n$. Intersect the corresponding stabilizers to obtain one finite set of algebraic elements whose pointwise stabilizer works for every translate and every unit at that layer.
+\par{\footnotesize \nolinkurl{UpperTheory.Kd.K4.ZetaTop.isZWc_raise} (\nolinkurl{Development/AutomorphicArithmetic/Foundations/IwahoriReduction/NormProducts/AdmissibleWeightedDataMonoCoef.lean}\allowbreak:61--90). \nolinkurl{UpperTheory.Kd.K4.ZetaTop.exists_finset_unif} (\nolinkurl{Development/AutomorphicArithmetic/Foundations/IwahoriReduction/NormProducts/AdmissibleWeightedDataMonoCoef.lean}\allowbreak:92--124). \nolinkurl{UpperTheory.Kd.K4.top} (\nolinkurl{Development/AutomorphicArithmetic/Foundations/IwahoriReduction/NormProducts/AdmissibleWeightedDataMonoCoef.lean}\allowbreak:150--204). \nolinkurl{GlobalTheory.KZ.middle_glue2} (\nolinkurl{Development/AbelianVarietyTheory/Proofs/FoundationProofs/NormSubMulAddLeOfUltrametricReplace.lean}\allowbreak:124--250).\par}
+
+\emph{Partial. [Proved in Lean, not reproduced:]} the single-symbol integral realization and the tame relation uniform in all auxiliary levels. In particular the former must supply representatives satisfying the cocycle and transition laws as equalities of functions for every sufficiently large exponent. The latter must supply the auxiliary-prime families with their polynomial and specialization comparison before the application of the specialization lemma. The weighted-sum argument alone supplies neither input.
+\par{\footnotesize \nolinkurl{UpperTheory.Kd.K4.ml} (\nolinkurl{Development/AutomorphicArithmetic/Foundations/IwahoriReduction/NormProducts/Ml.lean}\allowbreak:21--36). \nolinkurl{UpperTheory.Kd.K4.top} (\nolinkurl{Development/AutomorphicArithmetic/Foundations/IwahoriReduction/NormProducts/AdmissibleWeightedDataMonoCoef.lean}\allowbreak:154--188).\par}
+
+% Parent source SHA-256: 1fdc6ea9aac6cf10316f85b3253b33ae98289a76ff5aa2e79daaaf11e057ce18
+% blueprint/ch_P_r7.tex lines 582 through 601; r7:Z1.3.01
+\subsection{Z1.3.01. Integral representatives and tame control}\label{r7:Z1.3.01}
+\textbf{B01.} Kato's Theorem 12.6(2) concerns a matrix symbol in the
+canonical modular lattice and produces classes in Iwasawa cohomology.
+Here one needs a representative for each single symbol at the required
+integral scale, with strict pushdown of cocycles at every level.
+Equality in cohomology permits a coboundary at every transition.
+Neither a comparison with the given lattice and projector nor a compatible
+choice killing those coboundaries is supplied by the theorem. The
+auxiliary-level residue hypothesis can also fail as in B06 below.
+\textbf{B02.} The projected tame relation requires one additional loss
+and one exceptional set for all levels and admissible auxiliary primes.
+The source takes a loss for the unprojected tame relation, adds the
+maximum of the finitely many single-symbol losses and uses a separate
+uniform Frobenius--Hecke comparison outside one finite set. The
+class-valued conclusion of 12.6(2) provides neither estimate.
+See Section~\ref{r6:Z1.3.01}, \nolinkurl{UpperTheory.Kd.K4.ml},
+\path{NormProducts/Ml.lean:21--36}, \nolinkurl{UpperTheory.Kd.K4.top},
+\path{NormProducts/AdmissibleWeightedDataMonoCoef.lean:132--208}, and
+\nolinkurl{UpperTheory.V.Z.Kato.Nb.kato_tame_relation_projected},
+\path{EulerFactorBounds/KatoTameRelationProjected.lean:50--68}.
+

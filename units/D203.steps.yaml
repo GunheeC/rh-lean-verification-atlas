@@ -1,0 +1,186 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "D203",
+  "edition_sha256": "4fa388343a7a45015e74dfe2d52f21c6059547d3c0543b951ec6039266d53771",
+  "note_sha256": "f6faf155c4d887862724e9c41cc1abbfce474e2b34e0e7d77ab4898c849b8da1",
+  "statement_sha256": "b2065b6aa4e1c80209d0e102c93df53592fec07edd90a37391bd504a13bd9dd6",
+  "sources": [
+    {
+      "path": "notes/units/D203_round4.md",
+      "sha256": "f6faf155c4d887862724e9c41cc1abbfce474e2b34e0e7d77ab4898c849b8da1"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The exact filtration level of a nonzero invariant is zero.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: fixed nonzero de Rham period",
+        "standard: vanishing of nonzero-twist invariants"
+      ],
+      "lean": [
+        {
+          "name": "GroundTheory.PAdicHodge.bDeRham_fixed",
+          "file": "GroundTheory/PAdicHodge/BdRInvariants.lean",
+          "line0": 155,
+          "line1": 186
+        },
+        {
+          "name": "GroundTheory.PAdicHodge.bDeRham_exists_level",
+          "file": "GroundTheory/PAdicHodge/BdRInvariants.lean",
+          "line0": 95,
+          "line1": 103
+        },
+        {
+          "name": "GroundTheory.PAdicHodge.level_eq_zero_of_invariant",
+          "file": "GroundTheory/PAdicHodge/BdRInvariants.lean",
+          "line0": 150,
+          "line1": 153
+        }
+      ],
+      "source": "notes/units/D203_round4.md",
+      "anchor": "Choose the exact filtration level",
+      "source_lines": [
+        13,
+        13
+      ],
+      "claim_sha256": "7e6d65e68a8f21963e1c1fe892d0d7ce76038cc0af892e7380288e862a65b3c7",
+      "passage_sha256": "a89a052247e459038e1ea7c4b70a5ff419cd073655172cc5fba758c8d519209c",
+      "sha256": "94f70997fa008921470316ad23090f76643aabd32dd1f7c3f5ccf21c6b5adada",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The leading class of the invariant is the image of a scalar from the local field.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S1",
+        "input: degree-zero invariants"
+      ],
+      "lean": [
+        {
+          "name": "GroundTheory.PAdicHodge.cpTwistRep_invariants_zero",
+          "file": "GroundTheory/PAdicHodge/ExistsGalFixCyclotomicLayerCycloCharNeOne.lean",
+          "line0": 284,
+          "line1": 294
+        },
+        {
+          "name": "GroundTheory.PAdicHodge.bDeRham_fixed",
+          "file": "GroundTheory/PAdicHodge/BdRInvariants.lean",
+          "line0": 155,
+          "line1": 186
+        }
+      ],
+      "source": "notes/units/D203_round4.md",
+      "anchor": "Extract the coefficient before attempting equality",
+      "source_lines": [
+        17,
+        17
+      ],
+      "claim_sha256": "9f2b5a24f8a138ddfbb87930ea902bbfe9b34a77b649946b41d61aa24bd45fc7",
+      "passage_sha256": "4b6729bc880f7b705cf7c74f1abeb661e9c539e75dcd0de9911e770579be8837",
+      "sha256": "69b452637f4fc8cb53e9e4a450ce7a37b8d06fba1f1a97ce36914df29d286fd0",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Subtracting that scalar gives a fixed element in filtration one, which must vanish by the exact-level test.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "S2"
+      ],
+      "lean": [
+        {
+          "name": "GroundTheory.PAdicHodge.bDeRham_fixed",
+          "file": "GroundTheory/PAdicHodge/BdRInvariants.lean",
+          "line0": 155,
+          "line1": 186
+        },
+        {
+          "name": "GroundTheory.PAdicHodge.level_eq_zero_of_invariant",
+          "file": "GroundTheory/PAdicHodge/BdRInvariants.lean",
+          "line0": 150,
+          "line1": 153
+        }
+      ],
+      "source": "notes/units/D203_round4.md",
+      "anchor": "Eliminate a possible higher-order error",
+      "source_lines": [
+        21,
+        21
+      ],
+      "claim_sha256": "7826ae58076b8f5e3a04a876fc120d43d3c47cdddebf0f66d93096fe6d234809",
+      "passage_sha256": "ae3c48378b5426ae5252d6d84bbf2a04915200dc804c4781269eae71596dc2b9",
+      "sha256": "5919da89248d150c8a3e714faf97cc57a9d0ae6a88b912da7f934c8f8dac1fd7",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "For any nonzero element the largest integer filtration level containing it exists.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "standard: decreasing exhaustive separated integer filtration"
+      ],
+      "lean": [
+        {
+          "name": "GroundTheory.PAdicHodge.bDeRham_exists_level",
+          "file": "GroundTheory/PAdicHodge/BdRInvariants.lean",
+          "line0": 95,
+          "line1": 103
+        },
+        {
+          "name": "GroundTheory.PAdicHodge.level_eq_zero_of_invariant",
+          "file": "GroundTheory/PAdicHodge/BdRInvariants.lean",
+          "line0": 150,
+          "line1": 153
+        }
+      ],
+      "source": "notes/units/D203_round4.md",
+      "anchor": "Why an exact integer level exists",
+      "source_lines": [
+        25,
+        25
+      ],
+      "claim_sha256": "60f2c5cb9de5d01020d6a92fa0400489f591de875f0e6c32f360de58614ce953",
+      "passage_sha256": "cd395d4524cc1746407f1674b2b36666c26da6287ec45f9e9934faa00218cabc",
+      "sha256": "34b0306e1433899dd6d698ab6bb5e5c218f0f0b96bb2a70547e83d2c02633a52",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "9876cba2e308597796853e1b0d5528388189f668a463d6f59f46e3adff687e06",
+      "sources": [
+        {
+          "path": "notes/units/D203_round4.md",
+          "sha256": "36d28a035ebc8d157b09dd4129ca3b660b5f2fe190d9c99f224848cd0dcdf981"
+        }
+      ],
+      "statement_sha256": "b2065b6aa4e1c80209d0e102c93df53592fec07edd90a37391bd504a13bd9dd6",
+      "steps": {
+        "S1": "94f70997fa008921470316ad23090f76643aabd32dd1f7c3f5ccf21c6b5adada",
+        "S2": "69b452637f4fc8cb53e9e4a450ce7a37b8d06fba1f1a97ce36914df29d286fd0",
+        "S3": "5919da89248d150c8a3e714faf97cc57a9d0ae6a88b912da7f934c8f8dac1fd7",
+        "S4": "34b0306e1433899dd6d698ab6bb5e5c218f0f0b96bb2a70547e83d2c02633a52"
+      },
+      "step_texts": {
+        "S1": "The exact filtration level of a nonzero invariant is zero.",
+        "S2": "The leading class of the invariant is the image of a scalar from the local field.",
+        "S3": "Subtracting that scalar gives a fixed element in filtration one, which must vanish by the exact-level test.",
+        "S4": "For any nonzero element the largest integer filtration level containing it exists."
+      },
+      "step_passages": {
+        "S1": "a89a052247e459038e1ea7c4b70a5ff419cd073655172cc5fba758c8d519209c",
+        "S2": "4b6729bc880f7b705cf7c74f1abeb661e9c539e75dcd0de9911e770579be8837",
+        "S3": "ae3c48378b5426ae5252d6d84bbf2a04915200dc804c4781269eae71596dc2b9",
+        "S4": "cd395d4524cc1746407f1674b2b36666c26da6287ec45f9e9934faa00218cabc"
+      }
+    }
+  ]
+}

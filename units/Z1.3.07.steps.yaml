@@ -1,0 +1,95 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "Z1.3.07",
+  "edition_sha256": "249b0c89aefe22beb5759d60ae5110729f66bd217f9fd3ab7683c85fc7a730c3",
+  "note_sha256": "af0b7f89570181b63797feff22f736f990dc4d40ed3ed2859a8b2913ef03c974",
+  "statement_sha256": "fa6090ef258732a83c63fb93d9a3d4c02a66315d3317728eaf7ae9a2bb81e52c",
+  "sources": [
+    {
+      "path": "notes/blueprint/Z1.3.07.tex",
+      "sha256": "af0b7f89570181b63797feff22f736f990dc4d40ed3ed2859a8b2913ef03c974"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "A Greenberg coboundary would have lower coordinate equal to the quotient matrix entry times a fixed scalar minus that scalar.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "Z1.3.06",
+        "input: Greenberg condition"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.KZ.not_gr_of_nzAt",
+          "file": "Development/AbelianVarietyTheory/Definitions/Foundations/IsLocallyConstantCycMod.lean",
+          "line0": 40,
+          "line1": 44
+        }
+      ],
+      "source": "notes/blueprint/Z1.3.07.tex",
+      "anchor": "Keep the hypotheses and the particular $(c,y,S')$ of Z1.3.06. The Greenberg condition $\\mathrm{Gr}(W,A,y)$ would give a single $x\\in\\overline{\\ma",
+      "source_lines": [
+        17,
+        24
+      ],
+      "claim_sha256": "e32ad7e1da5e921bacb7973c86e8587baf58a69d9e2d02d601bf3528cab2c32b",
+      "passage_sha256": "a54a4969602dcdb7bf0a8754f2d2a91f71b93b611a2f4683e5cdfb7fb977beb0",
+      "sha256": "e90607a65308f999b27aeda8d9e46301caf5a8ab536c8077e6dfe88484c13255",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "At the same inertia witness the matrix entry is one, forcing that coordinate to vanish and contradicting its nonvanishing.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "Z1.3.06"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.KZ.not_gr_of_nzAt",
+          "file": "Development/AbelianVarietyTheory/Definitions/Foundations/IsLocallyConstantCycMod.lean",
+          "line0": 40,
+          "line1": 44
+        }
+      ],
+      "source": "notes/blueprint/Z1.3.07.tex",
+      "anchor": "The witness for $\\mathrm{NzAt}$ lies in $I_A\\subset D_A$ and has $W(s)_{11}=1$. The equation then forces its second coordinate to vanish. This co",
+      "source_lines": [
+        17,
+        24
+      ],
+      "claim_sha256": "7005b66baed7bd76ec28df7ed11076f2937a05295d608979185082102989dd71",
+      "passage_sha256": "a54a4969602dcdb7bf0a8754f2d2a91f71b93b611a2f4683e5cdfb7fb977beb0",
+      "sha256": "eda09290c2a2407f93c7615a9e068a7517615b86e749229c3263c170187a04a3",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "41ec6f14f8c2037efefc9330d39679e777c8f56d61cfa43e8dd0861b1c43be96",
+      "sources": [
+        {
+          "path": "notes/blueprint/Z1.3.07.tex",
+          "sha256": "9da1102479d51cceb67437cfb21082c375dfb93ceecbc81cb91c59804b6d11d1"
+        }
+      ],
+      "statement_sha256": "fa6090ef258732a83c63fb93d9a3d4c02a66315d3317728eaf7ae9a2bb81e52c",
+      "steps": {
+        "S1": "e90607a65308f999b27aeda8d9e46301caf5a8ab536c8077e6dfe88484c13255",
+        "S2": "eda09290c2a2407f93c7615a9e068a7517615b86e749229c3263c170187a04a3"
+      },
+      "step_texts": {
+        "S1": "A Greenberg coboundary would have lower coordinate equal to the quotient matrix entry times a fixed scalar minus that scalar.",
+        "S2": "At the same inertia witness the matrix entry is one, forcing that coordinate to vanish and contradicting its nonvanishing."
+      },
+      "step_passages": {
+        "S1": "a54a4969602dcdb7bf0a8754f2d2a91f71b93b611a2f4683e5cdfb7fb977beb0",
+        "S2": "a54a4969602dcdb7bf0a8754f2d2a91f71b93b611a2f4683e5cdfb7fb977beb0"
+      }
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "P050",
+  "title": "Lattice realization over a number field",
+  "track": {
+    "primary": "arakelov",
+    "secondary": []
+  },
+  "statement": "Let \\(K\\) be any number field with the given star structure, \\(V\\) a finite-dimensional \\(K\\)-space with compatible \\(\\mathcal O_K\\)-action, \\(b\\) a basis, and \\(X_v\\) invertible complex frames at all infinite places. For a finitely generated \\(\\mathcal O_K\\)-submodule \\(L\\), the realization is injective on \\(L\\), its image is discrete, and\n\\[\n \\operatorname{rank}_{\\mathbf Z}\\rho_X L=[K:\\mathbf Q]\\,\\operatorname{rank}_K L,\n \\qquad \\operatorname{ht}_{b,X}(L)>0 .\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Use a number field with the specified involution, a finite-dimensional vector space with compatible integral action and a basis.",
+    "Take invertible frames at the infinite places and a finitely generated integral submodule."
+  ],
+  "lean": [
+    {
+      "name": "Formalism.HN.place_lattice_structure",
+      "file": "Formalism/HarderNarasimhan/HarderNarasimhanProofs/DiscreteSpanOfLinIndep.lean",
+      "line0": 269,
+      "line1": 324,
+      "sha256": "39e24cf0474e58f166156f86569b831fb2186f1d1d031010d3c89f269959660c",
+      "dominated": 188,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "7.27 (pn:P050)",
+      "pages": [
+        90,
+        90
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/P050.tex",
+      "section": "pn:P050",
+      "pages": []
+    }
+  ],
+  "status": "Full",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [],
+  "paper_id": "P050",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "lattice-realization-over-a-number-field",
+  "aliases": [
+    "place_lattice_structure",
+    "P050 Lattice realization over a number field"
+  ],
+  "background": [
+    "Minkowski embeddings",
+    "Discrete lattices over number fields"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "7.27 (pn:P050)",
+    "pages": [
+      90,
+      90
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "summary": "A finitely generated lattice over the integers of a number field embeds discretely under its archimedean realization. Its integral rank equals the field degree times its field rank and its height is positive. These facts justify taking covolumes on the realized span."
+}

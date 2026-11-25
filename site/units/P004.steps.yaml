@@ -1,0 +1,179 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "P004",
+  "edition_sha256": "7de1b6501022564bf646b7c8af0a5f48707344db094ac2b08b68104886457244",
+  "note_sha256": "ad0c83092bcced556367f213ab36f302597072bd9f6835cb6c86240e008a5477",
+  "statement_sha256": "32970fce6ad745f36e193b63834cbfadb3d2dfaee725984b4fd04c9d127d32e7",
+  "sources": [
+    {
+      "path": "notes/units/P004_round4.md",
+      "sha256": "ad0c83092bcced556367f213ab36f302597072bd9f6835cb6c86240e008a5477"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The projection selecting the second-then-first component returns the strip statement for arbitrary characters.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "P006"
+      ],
+      "lean": [
+        {
+          "name": "LFunction_eq_zero_re",
+          "file": "Main.lean",
+          "line0": 10,
+          "line1": 10
+        },
+        {
+          "name": "DirichletLZerosOnLine",
+          "file": "Statements.lean",
+          "line0": 10,
+          "line1": 12
+        },
+        {
+          "name": "claimAll",
+          "file": "Supplements/Kernels/MainTheorems.lean",
+          "line0": 15,
+          "line1": 16
+        }
+      ],
+      "source": "notes/units/P004_round4.md",
+      "anchor": "Select the middle component",
+      "source_lines": [
+        13,
+        13
+      ],
+      "claim_sha256": "75357da790dc4af7093a87ed376d2518aa5dec47941eeab09c59231d4e530403",
+      "passage_sha256": "edc0700e80bfe2b0d2f33232fe6c7dbee1d87c21848b504c59794f98a788aa95",
+      "sha256": "45720703b4c1124241b735f27e5af27e0e8b73b1c8fefda34841e9df5a4b69a3",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Every omitted Euler factor is nonzero throughout the open strip, transferring a zero to the primitive character.",
+      "kind": "inequality",
+      "uses": [
+        "standard: change of level and norm of a character"
+      ],
+      "lean": [
+        {
+          "name": "Claim.prim_zero",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/ClaimStrip.lean",
+          "line0": 23,
+          "line1": 33
+        },
+        {
+          "name": "Claim.factor_ne_zero",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/ClaimStrip.lean",
+          "line0": 7,
+          "line1": 21
+        }
+      ],
+      "source": "notes/units/P004_round4.md",
+      "anchor": "Reduce the vanishing to a primitive character",
+      "source_lines": [
+        17,
+        17
+      ],
+      "claim_sha256": "efa65aa4a15507674473c032ed71acc8d895ce0e923003f8c0f0de9b206020d4",
+      "passage_sha256": "0fdee9a10ae5dc59593c2b8210250e96847b47144bad5081f09da264626ed4ab",
+      "sha256": "25d7ddc115a0e948159041257f8d808f3536e6cd644b2563ce5d11211b66da2e",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Reflection excludes the left half of the strip, direct use of the half-plane assertion excludes the right, and equality remains.",
+      "kind": "case-split",
+      "uses": [
+        "S2",
+        "P009",
+        "standard: primitive functional equation"
+      ],
+      "lean": [
+        {
+          "name": "Claim.prim_reflect",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/ClaimStrip.lean",
+          "line0": 42,
+          "line1": 57
+        },
+        {
+          "name": "Claim.strip",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/ClaimStrip.lean",
+          "line0": 59,
+          "line1": 73
+        }
+      ],
+      "source": "notes/units/P004_round4.md",
+      "anchor": "Follow the reflected character",
+      "source_lines": [
+        21,
+        21
+      ],
+      "claim_sha256": "656de983ed248daaecc611d8ff7d43203b559a973f4a74ceef360cacc32d0a49",
+      "passage_sha256": "2fbb42b0127c1ba936ad7fb673182e978cc7ef1d80eb1b81588981c3708d65ac",
+      "sha256": "bef289130f30de2285baea786fdb2c9c9047f79c3b25d8a925a0dc506defaf97",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "withdrawn",
+      "claim": "For LFunction_eq_zero_re, the normalized source bytes reproduce the pinned hash and contain the indicated supplier expression.",
+      "kind": "computation",
+      "uses": [
+        "standard: SHA-256 of LF-joined lines"
+      ],
+      "lean": [
+        {
+          "name": "LFunction_eq_zero_re",
+          "file": "Main.lean",
+          "line0": 10,
+          "line1": 10
+        }
+      ],
+      "source": "notes/units/P004_round4.md",
+      "anchor": "Reproduce the export check",
+      "source_lines": [
+        21,
+        21
+      ],
+      "claim_sha256": "83dc93a3bb01432db61702860b8c947ceff7cbff3c60c66f599acd12ee389833",
+      "passage_sha256": "61a4ee8b15c50355d2e949dbac4874a0f12f7ca08b4a25822563bdf41c5ba4cd",
+      "sha256": "d91d425a851ada9cb3afd1ac875cf5c85892abf95cfa3b0eb94d88d603afb901",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "2e57a7526f27e555184cc3578fbe389bc762962e2d0174f4a89d55b26052ea43",
+      "sources": [
+        {
+          "path": "notes/units/P004_round4.md",
+          "sha256": "42f5754dd65ed0b5111923f14fe10fceb17f29aa78003ef62976b167bb30e825"
+        }
+      ],
+      "statement_sha256": "32970fce6ad745f36e193b63834cbfadb3d2dfaee725984b4fd04c9d127d32e7",
+      "steps": {
+        "S1": "45720703b4c1124241b735f27e5af27e0e8b73b1c8fefda34841e9df5a4b69a3",
+        "S2": "25d7ddc115a0e948159041257f8d808f3536e6cd644b2563ce5d11211b66da2e",
+        "S3": "bef289130f30de2285baea786fdb2c9c9047f79c3b25d8a925a0dc506defaf97",
+        "S4": "d91d425a851ada9cb3afd1ac875cf5c85892abf95cfa3b0eb94d88d603afb901"
+      },
+      "step_texts": {
+        "S1": "The projection selecting the second-then-first component returns the strip statement for arbitrary characters.",
+        "S2": "Every omitted Euler factor is nonzero throughout the open strip, transferring a zero to the primitive character.",
+        "S3": "Reflection excludes the left half of the strip, direct use of the half-plane assertion excludes the right, and equality remains.",
+        "S4": "For LFunction_eq_zero_re, the normalized source bytes reproduce the pinned hash and contain the indicated supplier expression."
+      },
+      "step_passages": {
+        "S1": "edc0700e80bfe2b0d2f33232fe6c7dbee1d87c21848b504c59794f98a788aa95",
+        "S2": "0fdee9a10ae5dc59593c2b8210250e96847b47144bad5081f09da264626ed4ab",
+        "S3": "2fbb42b0127c1ba936ad7fb673182e978cc7ef1d80eb1b81588981c3708d65ac",
+        "S4": "61a4ee8b15c50355d2e949dbac4874a0f12f7ca08b4a25822563bdf41c5ba4cd"
+      }
+    }
+  ]
+}

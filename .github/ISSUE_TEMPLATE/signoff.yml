@@ -1,0 +1,134 @@
+name: "Record a personal reading"
+description: "Identify the edition, steps, assessment and work done by one named reader."
+body:
+  - type: markdown
+    attributes:
+      value: "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved Your name and text are public. Names are self-declared and the repository does not verify identities. L4 covers only a Full argument under its stated inputs, with a derivation, all steps and the separate statement checked. It establishes nothing about the inputs, V, F or RH. The display includes reader count, maintainer participation and AI assistance. 이 서식의 이름은 자기 신고이며 신원을 인증하지 않습니다. L4는 전제를 명시한 Full 단위의 유도 단계가 포함된 논증과 명제 대조에만 부여합니다."
+  - type: input
+    id: name
+    attributes:
+      label: "Reader name"
+      description: "Your public name as the reader. Maintainer readings use the same form."
+    validations:
+      required: true
+  - type: input
+    id: affiliation
+    attributes:
+      label: "Affiliation (optional)"
+      description: "Public affiliation, if you wish to include it."
+    validations:
+      required: false
+  - type: input
+    id: orcid
+    attributes:
+      label: "ORCID (optional)"
+      description: "Four groups of four characters, including the check digit."
+    validations:
+      required: false
+  - type: input
+    id: field
+    attributes:
+      label: "Field"
+      description: "Your mathematical or technical field."
+    validations:
+      required: true
+  - type: dropdown
+    id: level
+    attributes:
+      label: "Reader level"
+      description: "Select your present role."
+      options:
+        - "faculty"
+        - "postdoc"
+        - "phd-student"
+        - "other"
+    validations:
+      required: true
+  - type: input
+    id: unit
+    attributes:
+      label: "Unit"
+      description: "Copy the unit ID from the checklist."
+    validations:
+      required: true
+  - type: input
+    id: edition_sha256
+    attributes:
+      label: "Edition SHA-256"
+      description: "Copy the complete edition SHA-256 printed on the checklist."
+    validations:
+      required: true
+  - type: input
+    id: scope
+    attributes:
+      label: "Scope"
+      description: "Enter steps [S1,S2], whole-note, or statement-vs-lean."
+    validations:
+      required: true
+  - type: textarea
+    id: verdict
+    attributes:
+      label: "Verdict for each target"
+      description: "One line per target, e.g. S1: checked-correct. Choices: checked-correct, correct-with-reservation, gap-found, error-found, could-not-follow, not-attempted. Whole-note requires every active step. Only a second reader other than the maintainer may resolve an objection on unchanged text. Append resolves PRIOR_RECORD.yaml and explain the resolution. 동일한 내용의 이의를 해소하려면 관리자도 원 제기자도 아닌 별도 독자가 해결 과정을 써야 합니다."
+    validations:
+      required: true
+  - type: textarea
+    id: what_i_did
+    attributes:
+      label: "What I did"
+      description: "Identify what you personally derived, followed, or compared. To declare independent checking, include the sentence: I checked independently of other readers."
+    validations:
+      required: true
+  - type: input
+    id: time_spent_hours
+    attributes:
+      label: "Time spent in hours"
+      description: "Hours as a nonnegative number."
+    validations:
+      required: true
+  - type: textarea
+    id: reservations
+    attributes:
+      label: "Reservations"
+      description: "Explain any gap, error, reservation, or limitation. Enter none when applicable."
+    validations:
+      required: true
+  - type: textarea
+    id: conflicts_of_interest
+    attributes:
+      label: "Conflicts of interest"
+      description: "Describe any conflict or enter none."
+    validations:
+      required: true
+  - type: dropdown
+    id: ai_assistance_used
+    attributes:
+      label: "AI assistance used"
+      description: "All three levels are displayed. Substantial assistance cannot count toward independent human checking. substantial 도움은 공개하며 독립 확인에서 제외합니다."
+      options:
+        - "none"
+        - "some"
+        - "substantial"
+    validations:
+      required: true
+  - type: textarea
+    id: ai_assistance_description
+    attributes:
+      label: "AI assistance description"
+      description: "Describe the assistance or enter none."
+    validations:
+      required: true
+  - type: input
+    id: date
+    attributes:
+      label: "Date"
+      description: "Reading date in YYYY-MM-DD format."
+    validations:
+      required: true
+  - type: input
+    id: attestation
+    attributes:
+      label: "Attestation"
+      description: "Enter the exact sentence: I read the edition identified above myself."
+    validations:
+      required: true

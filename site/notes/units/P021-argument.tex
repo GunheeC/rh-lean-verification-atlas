@@ -1,0 +1,240 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Manuscript v3, heading p. 13; original out/r23_link.tex, SHA-256 742614e691e53727adc35f14c8f1184b1c158a7ad4993d44c3f2d550b014c5bc.
+\subsection{From the Selmer sum to the lattice error}\label{r23:link}
+Fix one family member $D$, its size datum, and a retained lift $1\le j\le m$.
+Write $d_j=\dim Z_{0,j}$ for the reference dimension recorded as
+\nolinkurl{dZ0} (\path{DataParams₂.lean:194}), $L=x^\varepsilon$, $b=\exp L$, and $v_\ell=0$ off the primes.
+At a prime put $v_\ell=\log\ell\sum_{1\le e<t}\operatorname{shaLen}_{D}(\ell,e)$,
+using the rational lengths of this member. Let $S_w$ be the support places
+where $\mu(w)\ne\mu_0$, $S$ their residue characteristics, $e_w$ their
+ramification indices and $\lambda_w$ the weights \nolinkurl{lwP}.
+The geometric error and its non-Selmer allowance are
+\[
+ E_j=\sum_{w\in S_w}\lambda_w e_w\eta_j(w),\qquad
+ A_x=fmbL^2+(\log x)^2N_c.
+\]
+In these symbols \nolinkurl{LinkN_at} is the implication
+$\text{$(v_\ell)_\ell$ summable}\Rightarrow
+ E_j\le d_j(CA_x+\sum_\ell v_\ell)$; the family version supplies
+one $C$ and one threshold and assumes finiteness of the actual lengths at the
+member before quantifying over its lifts.
+See \nolinkurl{vvTerm}, \nolinkurl{etaSum}, \nolinkurl{LinkN_at},
+\nolinkurl{LinkN} in \path{GlobalTheoremInputs.lean:25--47}.
+
+\begin{formalstatement}[Geometric inputs for the prime sum, inside \decid{D427}]
+At a parameter choice $P$ and a scale satisfying
+\nolinkurl{Large}$(x,\varepsilon,c)$, assume \nolinkurl{admitted}$(L_{\rm data},P,c)$.
+Under finiteness of the lengths this supplies a table with the local
+conditions \nolinkurl{AdmT}, including $c>0$ and its polynomial parameter
+bounds. Put $H=|\mathrm{Cl}(E)|$, $M=\texttt{restRowsFiniteGroupCard}$,
+and let $\lambda_\ell^{G}$ be the table's allowance \nolinkurl{lamG}.
+For $\ell\in S$, the contribution over $\ell$ is bounded by $d_j\log\ell$ times
+\[
+ \nu_\ell+2/\ell^2+\lambda_\ell^{G}+\mathrm{VVr}(\ell)
+       +\operatorname{ord}_\ell H+\operatorname{ord}_\ell M,
+ \qquad \log\ell\,\mathrm{VVr}(\ell)=v_\ell .
+\]
+The local inequalities used here are \nolinkurl{etaAt_le_g} on the designated
+set and \nolinkurl{etaAt_le} with \nolinkurl{loc_le_lamB} on its complement
+(\nolinkurl{TwistedPlaces.etaSum_le}, \path{MemPrimesOverOfMem.lean:558--632}).
+For $X=fmbL^2$ and $U=x^{c+2}\exp(x^{\varepsilon/4})$, the following
+are the table estimates under these same size hypotheses. In the displayed
+order the sums of the five nonnegative envelopes for
+$\log\ell\,\lambda_\ell^G$ are bounded by
+\[
+ 2T,\qquad 8cX,\qquad 4cX,\qquad 1000(c+1)^3X,\qquad 1164000T,
+ \qquad T=(c+1)^2U^{18}.
+\]
+The envelopes cover the designated primes, the host's small primes or $3$,
+$q,d$, ordinary primes $\ell\ne2,3$ below or at the cutoff, and exceptional
+primes above it. The remaining large ordinary primes contribute zero.
+Also $6+\nu_{\rm budget}+\log H+\log M\le20T$ and $4\cdot10^6T\le b$.
+See \nolinkurl{sum_g}, \nolinkurl{sum_23}, \nolinkurl{sum_qd},
+\nolinkurl{sum_small}, \nolinkurl{sum_exc}, \nolinkurl{glob_le}, \nolinkurl{big_le_b},
+\nolinkurl{point_bound} in \path{ExportBoundOfAdmissible.lean:18--19},
+\path{ExportBoundOfAdmissible.lean:501--502,611--613,651--652},
+\path{ExportBoundOfAdmissible.lean:733--735,798--799,825--826,893--996}.
+\end{formalstatement}
+
+\begin{proposition}[The local estimate and the family error]
+The preceding geometric inputs give the pointwise linking estimate with
+$C=2000(|c|+1)^3$ under finiteness and summability. On an eventual
+family with $\varepsilon>0$, \nolinkurl{HypV}, \nolinkurl{LinkN} with constant $C$,
+and \nolinkurl{SmallLevelRankEq}, every retained lift satisfies, on a common tail,
+\[
+ E_j\le D_0 (|C|+1)x^\varepsilon(B_0+N_c).
+\]
+\end{proposition}
+\begin{proof}
+Sort the filtered places by residue characteristic, counting each place once.
+Sum the local bound. Since $H,M$ are positive integers, each truncated
+prime factorization contributes at most $\log H$, respectively $\log M$.
+The elementary sums in the source give
+$\sum_{\ell\in S}\log\ell(\nu_\ell+2/\ell^2)\le6+\nu_{\rm budget}$.
+Nonnegativity and summability give
+$\sum_{\ell\in S}\log\ell\,\mathrm{VVr}(\ell)\le\sum_\ell v_\ell$.
+For the remaining terms, if the prime meets multiple tests, the first
+applicable branch of the table is bounded by the sum of their nonnegative
+envelopes. Thus the total geometric part inside the factor $d_j$ is at most
+\[
+ (20+2+1164000)T + (12c+1000(c+1)^3)X\le2000(c+1)^3X.
+\]
+Indeed the first term is at most $b\le X$ since $f,m,L\ge1$, and
+$1+12c\le1000(c+1)^3$. As $N_c\ge0$, $X\le A_x$.
+Multiplication by the nonnegative dimension and addition of the Selmer part
+give the claimed estimate. The same $c$ all along an admissible family
+gives the same $C$ after taking the maximum of the admissibility, largeness
+and parameter thresholds. This is the argument of
+\nolinkurl{TwistedPlaces.etaSum_le} (\path{MemPrimesOverOfMem.lean:606--647}),
+\nolinkurl{export_bound_of_admissible} and \nolinkurl{stmtU_holds}
+(\path{ExportBoundOfAdmissible.lean:1023--1053,1141--1160}).
+
+For the family inequality, apply the universal field bound \nolinkurl{VVle}
+to the member's own closure and local data. Finiteness allows one to take
+the natural value of each extended length, and the record equality
+\nolinkurl{sha_eq} identifies it with the rational summand above. Each
+$v_\ell$ is nonnegative. Filtering the nonprimes from an arbitrary finite
+partial sum bounds it by $\sqrt b$; the supremum of these sums therefore
+exists and is at most $\sqrt b$. This proves simultaneously the finiteness,
+summability and total bound needed by the family link
+(\nolinkurl{UpperTheory.Top.vvRecord}, \path{DivinNOfHypV.lean:17--57}).
+Choose the maximum of the three family thresholds, the parameter threshold
+plus one, and a threshold beyond which $(\log x)^2\le x^\varepsilon$.
+Such a threshold exists since $\log x/x^{\varepsilon/2}\to0$.
+Write $y=x^\varepsilon\ge1$. Now $d_j=D_0$, $B_0=fmby$,
+$\sqrt b\le b\le B_0$ and $A_x\le y(B_0+N_c)$. Hence
+\[
+ E_j\le D_0\{ |C|y(B_0+N_c)+B_0\}
+       \le D_0(|C|+1)y(B_0+N_c).
+\]
+See \nolinkurl{log_sq_le_rpow}, \nolinkurl{divinN_at},
+\nolinkurl{divinN_of_hypV} in \path{DivinNOfHypV.lean:59--130}.
+\end{proof}
+
+\paragraph{Which assumptions pass to the slopes?}
+In the application \decid{D427} supplies the family link on the original
+rows: construct a good cut for each member above the threshold (use the
+whole cut below it), apply the tied-character and two/three-prime bounds
+on the cut family, and transfer back. In that transfer the extra term is at
+most $d_j\log M$, with $\log M\le C_1x^{C_1}L\le C_1A_x$ eventually
+since $x^{C_1}\le b$ and $f,m,L\ge1$. Thus the original constant can
+be taken to be the cut constant plus $C_1$. The cut construction and local
+compatibility are separate geometric suppliers (see \decid{D421} and \decid{D423})
+(\nolinkurl{linkN_of_twGood_galoisPreconditions}, \path{LinkNFam.lean:35--53};
+\nolinkurl{linkN_of_gd}, \path{LinkNOfGd.lean:38--93}).
+The transfer to divisibility uses the further input \decid{D481}:
+on the chosen design, the tuple and discriminant sizes give
+\nolinkurl{LinkDIVt}; covered twists (\nolinkurl{LinkEta}) and the bound just
+proved give \nolinkurl{LinkDIV}. The remaining closed links, including the
+slope and rank data, enter on this same design to produce a tied chain.
+These are independent premises of \decid{D488}
+(\nolinkurl{LinkDIVt}, \path{GlobalTheoremInputs.lean:77--95};
+\nolinkurl{topDesWin}, \path{DesWin.lean:11--31}).
+
+\begin{formalstatement}[The per-unit lattice implication, \nodeid{P021}]
+For a finite record with nonempty finite word sets $W(u_0)$ assume
+\nolinkurl{HidaSetting}, \nolinkurl{DIV}, \nolinkurl{EComp5}, \nolinkurl{HComp},
+\nolinkurl{Count5}, \nolinkurl{Slopes}, \nolinkurl{QuotientSlopeBoundsWith},
+\nolinkurl{LossBounds}, \nolinkurl{SlopeIneq}, \nolinkurl{HHBound} and \nolinkurl{FParams}.
+Then $\mathrm{ASK}(u_0)\le\mathrm{Main}(u_0)+\mathrm{ErrX5at}(u_0)$.
+The clauses and the error polynomial are
+\nolinkurl{PointwiseBoundVariant}, \nolinkurl{ErrX5at}
+(\path{QuotientSlopeBoundsWith.lean:15--54,72--75};
+\path{MeanBoundSecondForm.lean:111--169}).
+\end{formalstatement}
+\begin{proof}
+Fix $u_0$. Write $\langle\cdot\rangle$ for the mean with weights
+$d_u/\sum d_u$; these are positive and sum to one. Put $A=\sum_t a_t$,
+$s=\langle\mu_N-h\rangle$, $u_F=\max(\mu_N^{\max}-h)-s$,
+and $\overline{Lo}=\langle Lo\rangle$. The lower quotient-slope and division
+bounds, added, cancel $F_o$ and give at each word
+\[
+ \mu_N-h\ge \mu_M+G_a+\mu_{CC}-Ee-Lo-S_{\rm Div}
+                  +A\log T_u-E_{\rm Div}.
+\]
+For clarity, the divisibility and counting expressions used below are
+\[
+\begin{aligned}
+ S_{\rm Div}&=m\sum_t\bigl(a_t\log a_t-a_t-a_t(\gamma+\log(\pi/v)-\ell)\bigr),\\
+ E_{\rm Div}&=c_{\rm Div}n_TaL_a+c_{\rm Div}m(B_0+N_c)x^{e_{\rm Div}\varepsilon},\\
+ \Lambda&=\sum_{j<m}\frac1f\sum_{\rho<f}\log(w_{j\rho}v/\pi)
+             +m\,\mathrm{lg}-c_{\rm Count}(L_a+m^2L_a/k),
+\end{aligned}
+\]
+where $\ell$ here is the real logarithmic-derivative entry of the record and
+$\mathrm{lg}$ its common logarithmic factor. See \nolinkurl{Data.logOm},
+\nolinkurl{Data.Main} (\path{MeanBoundSecondForm.lean:84--109}),
+\nolinkurl{Data.SDiv}, \nolinkurl{Data.EDiv} (\path{RankGapProofs/WeightedMeanData.lean:129--134}),
+and \nolinkurl{Lam5} (\path{ChainSlopeWindows/LevelOfCongruence.lean:17--19}).
+Here $\mu_M\ge-c_Sn_TaL_a(1+m/k)$,
+$Ee\le m(A\,\mathrm{lg}+c_E B_0)$, and $\log T_u\ge\Lambda$ by the
+lower counting bound, with $A\ge0$. The main-term identity is
+\[
+ S_{\rm Div}-A\Lambda+mA\,\mathrm{lg}
+   =\mathrm{Main}+A c_{\rm Count}(L_a+m^2L_a/k):
+\]
+expand the sum of $\log(wv/\pi)$ using $w,v>0$; the constant
+$mA\log(v/\pi)$ cancels its occurrence in $S_{\rm Div}$ and
+$mA\,\mathrm{lg}$ cancels the term from $\Lambda$. Averaging now gives
+\[
+ \begin{gathered}
+ G_a+\mu_{CC}-\mathrm{Main}-K_0-\overline{Lo}\le s,\\
+ K_0=A c_{\rm Count}(L_a+m^2L_a/k)+E_{\rm Div}+mc_EB_0+
+               c_S n_T aL_a(1+m/k).
+ \end{gathered}
+\]
+Here and below $c_S=c_{\rm Slope}$.
+See \nolinkurl{s_lower5}, \nolinkurl{key_identity5}
+(\path{ChainSlopeWindows/LevelOfCongruence.lean:17--35,50--66,105--111}).
+
+Compare the upper quotient slope at $u$ to the lower one at $u'$.
+The common $G_a+F_o$ cancels. The two $Ee$ errors cost $2mc_EB_0$.
+Height comparison costs $c_H(n_TaL_a+mB_0)$ and moving the $A\log T$
+terms costs $A c_{\rm Count}\log k$. Write $V_0$ for the sum of these three
+costs. The original slope spread costs $c_Sn_TaL_a(2+m/k)$ and the
+upper quotient error costs $c_{\rm Sl1}mB_0$. Averaging over $u'$ and
+maximizing over $u$ gives $0\le u_F\le K_3+\overline{Lo}$ with
+$K_3=c_Sn_TaL_a(2+m/k)+V_0+c_{\rm Sl1}mB_0$.
+Nonnegativity follows since $\mu_N\le\mu_N^{\max}$.
+By the upper count for $\log T_u$ and $IO\le Lo_P$, \decid{D570} gives
+\[
+ \overline{Lo}\le M:=c_{\rm Sl1}Lo_P+
+ c_{\rm Sl1}n_Tm(a/k+b')c_{\rm Count}mL+c_{\rm Sl1}X''+1 .
+\]
+This follows directly by substituting the upper count in the formula
+for each $Lo(u)$ and averaging; its coefficient is nonnegative.
+See \nolinkurl{Vvar_bound5}, \nolinkurl{u_function_le_mean},
+\nolinkurl{weighted_mean_lower_bound_le}
+(\path{ChainSlopeWindows/LevelOfCongruence.lean:68--103,162--171}).
+
+Set $X=x^{c_{HH}}$. For $z=u_F>0$ and $0<H'=HH\le Xb$, use
+$\log t\le t-1$ at $t=(1+H'/z)/(1+X)$:
+\[
+ z\log(1+H'/z)\le z\log(1+X)+\frac{H'-zX}{1+X}
+ \le(z+b)\log(1+X).
+\]
+The last inequality uses $X/(1+X)\le\log(1+X)$.
+At $z=0$ the source uses zero for the left side. The finite parameter bounds
+give $0\le\delta\le\bar\delta<1$, $0\le\eta\le\bar\eta$,
+$0\le e\le\bar e\le1/4$, so the height hypothesis permits application of
+the slope inequality. It yields
+\[
+ s\le\mu_{CC}+\log|W(u_0)|+
+ \frac{4\log(1+X)(K_3+M+b)+(\bar\eta+4\sqrt{\bar e})Xb}{1-\bar\delta}.
+\]
+Cancel $\mu_{CC}$ against the lower bound for $s$, insert
+$\mathrm{ASK}-G_a\le Lo_P$ and $\overline{Lo}\le M$.
+The resulting error is $K_0+\log|W(u_0)|+Lo_P+M$ plus the displayed
+fraction, exactly \nolinkurl{ErrX5at}
+(\nolinkurl{Ga_bound5}, \nolinkurl{each_unit_bound_statement},
+\path{ChainSlopeWindows/LevelOfCongruence.lean:113--160,175--197}).
+Finally the top and place bijections, with the matching weight and scalar
+identities, take $\mathrm{Main}$ to $\sum_{t,j}\Re\mathrm{MAIN}$.
+The fifth field of \nolinkurl{IdentU} independently identifies $\mathrm{ASK}$
+with the arithmetic sum (\path{DedekindLFunctions/SplitInertia.lean:67--72}). Subtraction gives
+$\operatorname{gap}(\operatorname{tr}u_0)\le\mathrm{ErrX5at}(u_0)$;
+the two additional size-window bounds and large-$x$ condition in
+\nolinkurl{ch_top} convert that error to the bracket of the previous stage.
+See \decid{D569}, \nolinkurl{ch_top_main_eq}, \nolinkurl{ch_top}
+(\path{LandauTheorems/ChTop.lean:11--55}).
+\end{proof}

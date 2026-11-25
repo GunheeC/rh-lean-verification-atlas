@@ -1,0 +1,148 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "D443",
+  "edition_sha256": "6d81e624471d7649c7f0bc47f9866cd08d6c429b2a6cb8308c70ff8743bab12d",
+  "note_sha256": "1e491497c99ffd1e0e2d5f1cc03cd7701a0c8bfe1a468095e0ec56cb147d0101",
+  "statement_sha256": "b2c4e8ca50693bdcbd1e29934da6eedd7bbca9e42ceae5406b438dd3497f3981",
+  "sources": [
+    {
+      "path": "notes/units/D443_round4.md",
+      "sha256": "1e491497c99ffd1e0e2d5f1cc03cd7701a0c8bfe1a468095e0ec56cb147d0101"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The flat-degree hypothesis invoked on the Hodge-bundle fields returns the global flat-degree statement through the residue supplier.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: closed residue comparison"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.T.flatDeg_of_scholzeWeinstein_of_prints",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/FlatDegreeStatement.lean",
+          "line0": 22,
+          "line1": 23
+        },
+        {
+          "name": "GlobalTheory.CovTop.FlatDegProof.flatDeg_alt_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/FlatDegreeStatement.lean",
+          "line0": 12,
+          "line1": 16
+        },
+        {
+          "name": "UpperTheory.Lit.Flat.flat_tensor_swap_isIso",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/HodgeBundleWeights/FlatTensorSwapIsIso.lean",
+          "line0": 7,
+          "line1": 8
+        }
+      ],
+      "source": "notes/units/D443_round4.md",
+      "anchor": "Identify the actual supplier",
+      "source_lines": [
+        13,
+        13
+      ],
+      "claim_sha256": "f5d24be949b59d7670259235e6a17e4f4ab9e45b1d5e0b1584c6a528ba573d77",
+      "passage_sha256": "deb229d4a4ebce733efba15a7e0fad3e153b20c1b6b56dc656bde476cb4da30a",
+      "sha256": "1fd3ba23f258b5166107c708c5598fe03b7b2262eee7d333d6e4fbbd3a930b76",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The same host and good cover supply the deep law and the character whose period agrees with the host period.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: deep law and log-period identity"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.CovTop.FlatDegProof.flatDegAt_of_st",
+          "file": "Development/AbelianVarietyTheory/Proofs/DivisorProofs/FlatDegreeStatement.lean",
+          "line0": 15,
+          "line1": 23
+        }
+      ],
+      "source": "notes/units/D443_round4.md",
+      "anchor": "Put the global assertion at the chosen good cover",
+      "source_lines": [
+        17,
+        17
+      ],
+      "claim_sha256": "96f68cf7bdf53df6594b3484ab6739313af13b4ac0d6bbe0b1318f64458b768d",
+      "passage_sha256": "6ade239e82253dbacc0fd558ec8032ac769d6f2bee01cc8ed77a0bfd5c62dff0",
+      "sha256": "a1b75e4cc8e2bea8a58e3b95b650d1fbe3d77b3771f3d92a9b26bcdda6d34b08",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Specialization and the period rewrite give the local degree condition uniformly inside the family witnesses.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "S2"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.CovTop.FlatDegProof.flatDegAt_of_st",
+          "file": "Development/AbelianVarietyTheory/Proofs/DivisorProofs/FlatDegreeStatement.lean",
+          "line0": 15,
+          "line1": 23
+        },
+        {
+          "name": "GlobalTheory.CovTop.FlatDegProof.flatDeg_alt_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/FlatDegreeStatement.lean",
+          "line0": 12,
+          "line1": 16
+        },
+        {
+          "name": "FlatDegreeResidue.flatDegreeSt_of_resK",
+          "file": "Development/WeilBound/CoreStatements/ComplexPeriods/FlatDegreeResidues/FlatSlim.lean",
+          "line0": 5,
+          "line1": 6
+        }
+      ],
+      "source": "notes/units/D443_round4.md",
+      "anchor": "Assemble the family witnesses",
+      "source_lines": [
+        21,
+        21
+      ],
+      "claim_sha256": "7ccfcd2111c1e5f1544861025a4b7adf205a5c5d59e74a42fc3b98fc6bed5285",
+      "passage_sha256": "f7637a26ae854092b086c8ff009ae657420218ab9aaeace456242387939215b7",
+      "sha256": "44ce1f90fbff64902f48d1a99c363376dd9fe0629fef9691bfbce20ee0ccf889",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "4f1b91b236004e160308494c9a9200bc4bb8a159194da6e4d4f169fb49e2437b",
+      "sources": [
+        {
+          "path": "notes/units/D443_round4.md",
+          "sha256": "bbf818d7ad7d70404a86526486e9f4a842e022444943804ee9f40e37ea1baa20"
+        }
+      ],
+      "statement_sha256": "8ef7a657f567e29557eaa4bc5bddb52aa98dd21fc949ef701e620dd5a4621736",
+      "steps": {
+        "S1": "1fd3ba23f258b5166107c708c5598fe03b7b2262eee7d333d6e4fbbd3a930b76",
+        "S2": "a1b75e4cc8e2bea8a58e3b95b650d1fbe3d77b3771f3d92a9b26bcdda6d34b08",
+        "S3": "44ce1f90fbff64902f48d1a99c363376dd9fe0629fef9691bfbce20ee0ccf889"
+      },
+      "step_texts": {
+        "S1": "The flat-degree hypothesis invoked on the Hodge-bundle fields returns the global flat-degree statement through the residue supplier.",
+        "S2": "The same host and good cover supply the deep law and the character whose period agrees with the host period.",
+        "S3": "Specialization and the period rewrite give the local degree condition uniformly inside the family witnesses."
+      },
+      "step_passages": {
+        "S1": "deb229d4a4ebce733efba15a7e0fad3e153b20c1b6b56dc656bde476cb4da30a",
+        "S2": "6ade239e82253dbacc0fd558ec8032ac769d6f2bee01cc8ed77a0bfd5c62dff0",
+        "S3": "f7637a26ae854092b086c8ff009ae657420218ab9aaeace456242387939215b7"
+      }
+    }
+  ]
+}

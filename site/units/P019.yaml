@@ -1,0 +1,104 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "P019",
+  "title": "A zero-free half-plane for a selected class of primitive characters",
+  "track": {
+    "primary": "analytic",
+    "secondary": []
+  },
+  "statement": "Fix a predicate $Q$ on $\\mathcal P$, $\\lambda>1$, and a system of families with core and tied predicates as in \\nolinkurl{TopWin.lean:19--33}. For each $\\psi$ satisfying $Q$, write $\\mathcal L=\\operatorname{cyc}(\\psi)$ and suppose the following.\n\\begin{enumerate}\n\\item For every $e_D,e_L\\in\\mathbb R$, every $\\varepsilon>0$ and every family $F$ at $\\varepsilon$, the conjunction of \\code{EFamC}$(\\mathcal L,F)$ and eventual tiedness on its window set with $e_D,e_L$ implies $\\mathcal G_{\\mathcal L}(x)\\le x^{1/2+(e_D+e_L+7)\\varepsilon}$ at every sufficiently large point of that set.\n\\item The level-window implication of P018 holds for $\\mathcal L$.\n\\item There exist $e_D,e_L\\in\\mathbb R$ and $\\varepsilon_1>0$, common to all subsequent $\\varepsilon$. For every $0<\\varepsilon<\\varepsilon_1$ there is a family $F$ at $\\varepsilon$ satisfying \\code{EFamC}$(\\mathcal L,F)$ with exponent-$\\lambda$ windows and eventual tiedness on that set with these same $e_D,e_L$. In both clauses eventual tiedness uses fixed $K,c_{HH},e_K,C_L,x_0$ for the selected family, as in P017.\n\\end{enumerate}\nThen $L(s,\\psi)\\ne0$ for every $\\psi$ satisfying $Q$ and every $s$ with $\\Re s>1/2$.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Fix a character predicate $Q$, $\\lambda>1$ and the stipulated family system. For each selected character use its cyclic level.",
+    "The P017-type bound and the P018 window criterion hold on that level.",
+    "There are fixed real $e_D,e_L$ and $\\varepsilon_1>0$. For each $0<\\varepsilon<\\varepsilon_1$, a family satisfies EFamC, has exponent-$\\lambda$ windows and is eventually tied with those $e_D,e_L$."
+  ],
+  "lean": [
+    {
+      "name": "Formalism.HC.zeroFreeOn_of_tiedWin_cyc",
+      "file": "Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/TopWin.lean",
+      "line0": 90,
+      "line1": 93,
+      "sha256": "36d8faaaa8fcf358a1250ed36e10632ee8b47b989ceb420a88bee1f0a36fc443",
+      "dominated": 58,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "6.35 (pn:P019)",
+      "pages": [
+        67,
+        67
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/P019.tex",
+      "section": "pn:P019",
+      "pages": []
+    }
+  ],
+  "status": "Full",
+  "grade": "L2",
+  "reviews": [
+    "reviews/R20_review.md"
+  ],
+  "prerequisites": [],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [
+    {
+      "grade": "L2",
+      "review": "reviews/R20_review.md",
+      "lines": [
+        51,
+        51
+      ],
+      "scope": "R20 local implication under its stated premises, not its prerequisite cones.",
+      "verdict": "F: full derivation; yes"
+    },
+    {
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "lines": [
+        106,
+        106
+      ],
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript.",
+      "verdict": "Exact statement comparison"
+    }
+  ],
+  "paper_id": "P019",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "a-zero-free-half-plane-for-a-selected-class-of-primitive-characters",
+  "aliases": [
+    "Zero-freeness for a selected class of primitive characters",
+    "zeroFreeOn_of_tiedWin_cyc",
+    "P019 A zero-free half-plane for a selected class of primitive characters"
+  ],
+  "background": [
+    "Power windows",
+    "Uniform asymptotic estimates",
+    "Families of primitive characters"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "6.35 (pn:P019)",
+    "pages": [
+      67,
+      67
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "summary": "Uniform choices of the division and loss exponents let the family prime-sum bound approach the half power as epsilon shrinks. If suitable tied families and the level window criterion are available for each selected primitive character, its L-function is nonzero to the right of one half."
+}

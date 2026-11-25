@@ -1,0 +1,576 @@
+{
+  "id": "Z4.2.04",
+  "title": "Theta kernels for adjacent pairs",
+  "track": {
+    "primary": "theta",
+    "secondary": [
+      "local"
+    ]
+  },
+  "statement": "At every site obeying the dictionary, two consecutive valid tuples give admitted kernel lattices, a locally constant datum in the indicated congruence sense, an entire theta kernel with algebraic coefficients, the indicated algebraic scalars with nonzero character factor, and unit frames giving the two local spans.",
+  "assumptions": [
+    "source:blueprint_v13"
+  ],
+  "hypothesis_details": [
+    "The site satisfies its prescribed dictionary.",
+    "The two consecutive lattice tuples are valid."
+  ],
+  "lean": [
+    {
+      "name": "GlobalTheory.pairOK_allSites",
+      "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/KernelSiteLatticeTuplePairsAdmissible.lean",
+      "line0": 23,
+      "line1": 47,
+      "sha256": "0bba6b388a037a327e7b1b61ce0c1efc7c15b591e1cf210f9a1c9d69339d2d73",
+      "dominated": 585,
+      "graph": "allChi",
+      "role": "statement"
+    },
+    {
+      "name": "Formalism.L2.KerInert.RepComb.lamK_eq",
+      "file": "Formalism/LocalToGlobal/InertKernelTheory/InertCoprimeLemmas/RepComb.lean",
+      "line0": 331,
+      "line1": 333,
+      "sha256": "45b657dbdc06dfbd820dbb17ac55986afc50c28f3a7f5eb9ad08b0dbadf7c993",
+      "dominated": 72,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "Formalism.L2.KerInert.RepComb.laFacts_of_adm",
+      "file": "Formalism/LocalToGlobal/InertKernelTheory/InertCoprimeLemmas/RepComb.lean",
+      "line0": 341,
+      "line1": 362,
+      "sha256": "34e2e4fd295380f2145fa33404e05acb2e47e38ada7139537974258b0b82ffa6",
+      "dominated": 22,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "Formalism.L2.Ker.lattice_integral_of_facts",
+      "file": "Formalism/LocalToGlobal/KernelLattices/KernelLocalFactors/PeriodLatticeFinitelyGenerated.lean",
+      "line0": 1524,
+      "line1": 1529,
+      "sha256": "d6f044608f2deb765865b4a2570973423bd05ea440f1383ae38cd992e639fa7d",
+      "dominated": 10,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "Formalism.L2.Ker.finite_index_of_fg",
+      "file": "Formalism/LocalToGlobal/KernelLattices/KernelLocalFactors/PeriodLatticeFinitelyGenerated.lean",
+      "line0": 1703,
+      "line1": 1708,
+      "sha256": "7ac92878530785ddffeefb9e91780b4cdd3593e1118c7083b865693af53facaa",
+      "dominated": 51,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "Formalism.L2.Ker.twist_lattice_kernel",
+      "file": "Formalism/LocalToGlobal/KernelLattices/KernelLocalFactors/PeriodLatticeFinitelyGenerated.lean",
+      "line0": 179,
+      "line1": 196,
+      "sha256": "fe1c21b6ad491e279fdc99ac1b395765218188d3e9589879e09ce8cf64589bfa",
+      "dominated": 94,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "Formalism.L2.Ker.theta_coset_kernel",
+      "file": "Formalism/LocalToGlobal/KernelLattices/KernelLocalFactors/PeriodLatticeFinitelyGenerated.lean",
+      "line0": 276,
+      "line1": 290,
+      "sha256": "13d468aae4c2120099a02228e989b46276be3e0c79787cfbc321fd3dc7d96e2d",
+      "dominated": 135,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.kerTh_entire_algCoef",
+      "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/KerThEntireAlgCoef.lean",
+      "line0": 22,
+      "line1": 40,
+      "sha256": "b21b8acb237bcde29f2f683f323d42d82cf31a15ff1e2492f2e4ce7422fca7ca",
+      "dominated": 31,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "Formalism.L2.GlobalTheoryTheory.Comp.glob_one",
+      "file": "Formalism/LocalToGlobal/GlobalTheory/EqGlobOfHat.lean",
+      "line0": 39,
+      "line1": 40,
+      "sha256": "fde8243268834f89636655ef08f63e6955b828eeae85d6d485f6ca2935660341",
+      "dominated": 2,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "Formalism.L2.GlobalTheoryTheory.Comp.mem_hat_glob",
+      "file": "Formalism/LocalToGlobal/GlobalTheory/EqGlobOfHat.lean",
+      "line0": 42,
+      "line1": 44,
+      "sha256": "caa552580ee9acf79ae91f08262313785f3401c3ca742415b7a2d2ddbcf12127",
+      "dominated": 3,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.isLat_dl_of_isOrthCo",
+      "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/IsLatDlOfIsOrthCo.lean",
+      "line0": 139,
+      "line1": 141,
+      "sha256": "63393d5ca869d23946d78cf10e4c8ea37b5133b7465d1479ba2f702b1069e2d9",
+      "dominated": 3,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "Formalism.L2.GlobalTheoryTheory.Comp.glob_dl",
+      "file": "Formalism/LocalToGlobal/GlobalTheory/EqGlobOfHat.lean",
+      "line0": 197,
+      "line1": 205,
+      "sha256": "0d5b01cd14cce2f60078bb5615ddd1a9a9dd54bb2ec195945310351596ae548c",
+      "dominated": 9,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "Formalism.L2.GlobalTheoryTheory.Comp.glob_companion",
+      "file": "Formalism/LocalToGlobal/GlobalTheory/ExistsUnitaryOneDetEq.lean",
+      "line0": 18,
+      "line1": 23,
+      "sha256": "12f76646e9c71cc524b0f9d2176f66ab10d2cc742af5e1efb06d41fae959060b",
+      "dominated": 26,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.OrthSelfDual.isLat_and_dl_eq_of_isSDLat_mvL",
+      "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/IsLatAndDlEqOfIsSDLatMvL.lean",
+      "line0": 28,
+      "line1": 71,
+      "sha256": "73921a1efb9f0aeda955ca25085df7be76753bf5de7bacfd94d8775b7a92f854",
+      "dominated": 54,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.SDCompan.isSD_toStd",
+      "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/IsSDLatLatK.lean",
+      "line0": 44,
+      "line1": 70,
+      "sha256": "8961fab8677a462e3f0e6dab61fc2f0985ba74ed1c3d65e1cd81cae759cb94e5",
+      "dominated": 37,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.SDCompan.isSDLat_latK",
+      "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/IsSDLatLatK.lean",
+      "line0": 98,
+      "line1": 100,
+      "sha256": "7483272ca1b0db88dcd1d2192a3fe237b5ec093c947495d034490fe329bb8695",
+      "dominated": 62,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.KerSelfDual.isSDLat_latK_of_stdL",
+      "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/IsSDLatLatKOfStdL.lean",
+      "line0": 19,
+      "line1": 34,
+      "sha256": "cef1a48d54ed00adf9000f4ce6e5f2d881b27f8af57bd9cc8386ae93a2711920",
+      "dominated": 132,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.KerSiteSelfDual.even_and_isSDLat_kerN",
+      "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/KernelLatticeSelfDualEvenRankAtSite.lean",
+      "line0": 22,
+      "line1": 27,
+      "sha256": "446bf0e8f7c3d9a495447a8cb2caf9e0d8b825cae4c4abe27eabbe7ad93ac8c2",
+      "dominated": 147,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.TwV.ph_tensInt_onto",
+      "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/TensorFirstFactorIntegersOntoLocalIntegers.lean",
+      "line0": 14,
+      "line1": 49,
+      "sha256": "5cba74dbe0f04c27d24b874cd7358cd0ad67c1e540308df4665aef7775e7314e",
+      "dominated": 36,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.TwV.locSp_eq_image",
+      "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/LocSpEqImage.lean",
+      "line0": 16,
+      "line1": 66,
+      "sha256": "0b08a52d0d61b64035bf0c95014c370e7d4b3d8d2fe61292c45b332532eba287",
+      "dominated": 89,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.LocCarry.mem_latS_latAd_iff",
+      "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/MemLatSLatAdIff.lean",
+      "line0": 37,
+      "line1": 72,
+      "sha256": "91bf3510dfae43cd4741551e959d0100a77e17d1372698d769e3734dde539782",
+      "dominated": 41,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.TwV.latAdLoc_of",
+      "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/LatAdLocOf.lean",
+      "line0": 17,
+      "line1": 60,
+      "sha256": "14335fadedfa9c1086af96c9c1b71ed7b0d792a110c82944999be15c3209641b",
+      "dominated": 133,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.smul_dualSet_latAd_mem",
+      "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/SmulDualSetLatAdMem.lean",
+      "line0": 17,
+      "line1": 55,
+      "sha256": "afdab51ba71a499f62aa358cb2e7998523c2866582d98874d393d98e30f1cb98",
+      "dominated": 39,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.TwV.CompSp.locSp_compan_eq",
+      "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/LocSpCompanEq.lean",
+      "line0": 17,
+      "line1": 59,
+      "sha256": "d26ca5b06c5e761cf712d62c53abcb8afe332fc2c09a10baf48511bbfc085f8c",
+      "dominated": 43,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.TwV.FacQPt.facQ_isPt",
+      "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/FacQIsPt.lean",
+      "line0": 19,
+      "line1": 33,
+      "sha256": "41d6812a2953eeeef01fef64ffee641e3e2319080e6e2b7953e2860d50e56baa",
+      "dominated": 15,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.TwV.SpanPt.locSp_latAd_isPt",
+      "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/LocSpLatAdIsPt.lean",
+      "line0": 25,
+      "line1": 29,
+      "sha256": "258ca12be724930fb3c24203f06479f1f67dd21607172b43f762c3f01b07c44d",
+      "dominated": 20,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.TwV.KerSp.locSp_latK_isPt",
+      "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/KernelLatticeFirstFactorLatticeTuplePoint.lean",
+      "line0": 21,
+      "line1": 30,
+      "sha256": "a448f3821716e46dc7c09503502325d878491fccd635b0ceb2e064e8e3fb7283",
+      "dominated": 228,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.TwV.Joint.basesAt_span",
+      "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/LatticeTupleBasesSpanAtPlaces.lean",
+      "line0": 10,
+      "line1": 16,
+      "sha256": "d10d3c2eb359c2654f97d7ea5eae2f27a002e856ddd805e697f7474826b9d826",
+      "dominated": 7,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.TwV.locSp_reindex",
+      "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/ColSpanMapMulVecLin.lean",
+      "line0": 21,
+      "line1": 26,
+      "sha256": "692c37fba464ac665e338e300ffc56fcaeaa6886e5d23c7dbd35fa49f04aa959",
+      "dominated": 11,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.TwV.Joint.locSp_kerN_zero",
+      "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/FrameLocalLatticeSpanKernelLatticeZero.lean",
+      "line0": 19,
+      "line1": 34,
+      "sha256": "39a274e60860b5aa9b8ca1a098da339341aaa56adc0f81bfc05c36bc5cba8020",
+      "dominated": 16,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.TwV.Joint.locSp_kerN_succ",
+      "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/FrameLocalLatticeSpanKernelLatticeSucc.lean",
+      "line0": 18,
+      "line1": 54,
+      "sha256": "71a615ecb3d2f10f7a52dd88016c19777fb58abec51530f0a91a58e119f71da2",
+      "dominated": 37,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.TwV.moved_pair_datum_eq_adelic_datum_alt",
+      "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/MovedPairDatumEqAdelicDatum.lean",
+      "line0": 21,
+      "line1": 24,
+      "sha256": "4a26644ef7f5efe1a80711b701d0ec6abd8c3cdd27e4358f080b8fd03bcd244f",
+      "dominated": 9,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.TwU.datLoc_homRe",
+      "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/DatLocHomRe.lean",
+      "line0": 14,
+      "line1": 23,
+      "sha256": "bd27b359dce6951ff041c5c53c674722bb249dc59296421a61cae4914e3d7fd2",
+      "dominated": 10,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.TwU.xiM_datLoc",
+      "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/MovedPairDatumDependsOnlyOnLevel.lean",
+      "line0": 13,
+      "line1": 28,
+      "sha256": "267565cec6dd6be717d8311c729ffbe1eef154ad89fe4df806c813d315c93f35",
+      "dominated": 37,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "Formalism.L2.Ker.kThetaVector",
+      "file": "Formalism/LocalToGlobal/KernelLattices/KernelLocalFactors/IsAdmissibleFlagPairOfUnitriangularLeftAutomorph.lean",
+      "line0": 27,
+      "line1": 29,
+      "sha256": "82a55bd90997324f4aa6de3089491761f8e96c43efc8bca2ff09851b4668ca00",
+      "dominated": 4,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "Formalism.L2.Th1.H.product_theta_mem",
+      "file": "Formalism/LocalToGlobal/TorsionIntegrality/QuadraticSemicharacters/CayleyGaussianIntegrals/Th0CharMulOpUTh0HalfPeriodEq.lean",
+      "line0": 199,
+      "line1": 212,
+      "sha256": "4eb0fb94b9e8f43b3d9ffb1a350ccb0e91392ff7f6ff2e9095ad7ec67d0dc9ef",
+      "dominated": 14,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "Formalism.L2.Th1.H.ThStd_proof",
+      "file": "Formalism/LocalToGlobal/TorsionIntegrality/QuadraticSemicharacters/CayleyGaussianIntegrals/Th0CharMulOpUTh0HalfPeriodEq.lean",
+      "line0": 282,
+      "line1": 309,
+      "sha256": "49646a20a13c89e53e53411760a38a3eb90a29f2380d70c1e874beae4fd96874",
+      "dominated": 191,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "Formalism.L2.Th1.H.InterInv_of",
+      "file": "Formalism/LocalToGlobal/TorsionIntegrality/QuadraticSemicharacters/CayleyGaussianIntegrals/LogarithmEquivalence.lean",
+      "line0": 201,
+      "line1": 241,
+      "sha256": "35e14ff042b641e0ef37d08c8f7d34aa1931b1c020d5b4d8c8d6ec8b689c1df7",
+      "dominated": 49,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "Formalism.L2.Th1.H.FourthRoot_of",
+      "file": "Formalism/LocalToGlobal/TorsionIntegrality/QuadraticSemicharacters/CayleyGaussianIntegrals/MatrixFormFourfoldBlockFirstBlockEmb.lean",
+      "line0": 102,
+      "line1": 158,
+      "sha256": "92f48910d48865f19cd88b646c1e36e99990e110334b80fb85384015732478b6",
+      "dominated": 109,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "Formalism.L2.Th1.H.ThetaVector_of",
+      "file": "Formalism/LocalToGlobal/TorsionIntegrality/QuadraticSemicharacters/CayleyGaussianIntegrals/MatrixFormFourfoldBlockFirstBlockEmb.lean",
+      "line0": 250,
+      "line1": 302,
+      "sha256": "350f4cd4aeb80c400cdd2d48616887cebb262d225cba8b9b8064aae24af080fc",
+      "dominated": 53,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.SO.stdOK",
+      "file": "Formalism/LocalToGlobal/GlobalTheory/GL3/PStdOK.lean",
+      "line0": 338,
+      "line1": 339,
+      "sha256": "900fc21bae371cc721f5365666ad89e711ae6af391acc2a36fd33d215e90166f",
+      "dominated": 77,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.FourthRootStd.stdOK",
+      "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/SpanRangeEmb4EqTop.lean",
+      "line0": 700,
+      "line1": 701,
+      "sha256": "c5cac2080e24d46f66b26bdb84b084ef20eccfc918538b229d359f064a9823f7",
+      "dominated": 316,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "Formalism.L2.Th1.H.quadMultiplierSemicharacter",
+      "file": "Formalism/LocalToGlobal/TorsionIntegrality/QuadraticSemicharacters/CayleyGaussianIntegrals/MatrixFormFourfoldBlockFirstBlockEmb.lean",
+      "line0": 178,
+      "line1": 232,
+      "sha256": "5f3373b66afc0b8d1070736d3a5117a547bc74e4fd90a6ff6bb85e5f0a684703",
+      "dominated": 72,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.SC.char_eq",
+      "file": "Formalism/LocalToGlobal/GlobalTheory/GL3/PStdChar.lean",
+      "line0": 310,
+      "line1": 352,
+      "sha256": "c68b413742f5cac93a8c454fbcc6c7f1da2a66f3ad507ba5dbfb8fa6877f632f",
+      "dominated": 158,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.FourthRootStd.span_range_emb4_eq_top",
+      "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/SpanRangeEmb4EqTop.lean",
+      "line0": 256,
+      "line1": 295,
+      "sha256": "ec3a59433ade51f2f85cf3cda4ec06540a22898f4e78aebb7a4752c7e36b36a6",
+      "dominated": 40,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "Formalism.L2.Ker.Base.isomOK",
+      "file": "Formalism/LocalToGlobal/KernelLattices/KernelLocalFactors/IsAdmissibleFlagPairOfUnitriangularLeftAutomorph.lean",
+      "line0": 773,
+      "line1": 798,
+      "sha256": "3a51185ab150a8b46ed9e8b3f41138ecf61eae8dc74329041307f89800980bdb",
+      "dominated": 84,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "Formalism.L2.Ker.Base.lat0OK",
+      "file": "Formalism/LocalToGlobal/KernelLattices/KernelLocalFactors/IsAdmissibleFlagPairOfUnitriangularLeftAutomorph.lean",
+      "line0": 438,
+      "line1": 439,
+      "sha256": "8f1b545fb6fca5c47ab3ce436b2610634b223b0092c86b8728a01c82efb451f6",
+      "dominated": 2,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.SO.up",
+      "file": "Formalism/LocalToGlobal/GlobalTheory/GL3/PStdOK.lean",
+      "line0": 251,
+      "line1": 301,
+      "sha256": "e831c086c90e7313166b8fbb8c9d40e70576f2e38d1b8340578b4e3ec00d0a33",
+      "dominated": 72,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.SO.down",
+      "file": "Formalism/LocalToGlobal/GlobalTheory/GL3/PStdOK.lean",
+      "line0": 303,
+      "line1": 325,
+      "sha256": "286b1b1c2738cfcb58f42245a8bcd2cd683e1f058fbb9a9c6ab27f9ce10ed297",
+      "dominated": 23,
+      "graph": "allChi",
+      "role": "chart supplier"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/blueprint/Z4.2.04.tex",
+      "section": "r6:Z4.2.04, r15:translated, r15:pair, r16:stdok, r16:ktheta, r14:kernel-lattice, r14:kernel-finite, r14:kernel-jets, r14:site-pair, r15:site-glob, r15:site-dual, r15:site-standard, r15:span-place, r15:span-frame, r15:span-steps, r15:datum, r16:ktheta-line, r16:ktheta-transport, r16:ktheta-root, r16:std-char, r16:std-isom, r16:std-dual, r16:std-indices, r16:pair-candidate",
+      "pages": []
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r6:Z4.2.04",
+      "pages": [
+        379,
+        379
+      ],
+      "printed_page": 354,
+      "scope": "First page of this named destination."
+    }
+  ],
+  "status": "Full",
+  "grade": "L2",
+  "reviews": [
+    "reviews/R14_review_B.md",
+    "reviews/R15_review_A.md",
+    "reviews/R16_review_A.md",
+    "reviews/R17_review.md"
+  ],
+  "prerequisites": [
+    "Z42-SITES"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "blueprint_members": [
+    "Z4.2.04"
+  ],
+  "representative": "GlobalTheory.pairOK_allSites",
+  "statement_declarations": [
+    "GlobalTheory.pairOK_allSites"
+  ],
+  "grade_scope": "Named statement declarations with the hypotheses above. Chart supplier records have their own review scopes.",
+  "confirmation_basis": "Minimum across the statement declarations, using registry rows for the blueprint assignments listed here. Reviews of other expositions of a shared declaration are included as context.",
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "slug": "theta-kernels-for-adjacent-pairs",
+  "aliases": [
+    "pairOK_allSites",
+    "Z4.2.04 Theta kernels for adjacent pairs"
+  ],
+  "background": [
+    "Theta kernels",
+    "Congruence lattices"
+  ],
+  "hypothesis_source": {
+    "document": "blueprint_v13",
+    "section": "r6:Z4.2.04",
+    "pages": [
+      379,
+      379
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "Z42-SITES": "statement-reading"
+  },
+  "summary": "At a site satisfying the dictionary, two adjacent valid tuples give the required kernel lattices and a theta kernel with algebraic coefficients. The nonzero character factor and unit frames specify how the two local spans are compared."
+}

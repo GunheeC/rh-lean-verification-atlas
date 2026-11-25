@@ -1,0 +1,39 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit P030. Local manuscript v3, item 7.7, heading on printed PDF p. 76.
+% UpperTheory.GalN.V.Win.N.countQ_alt
+% paper2/inputs_one.tex:271–297. Verbatim excerpt; SHA-256 086279a212ef7ef91b9dc468a0fde1c049f5ad4d41c49f87c84cfac00c316385.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+\noindent\nolinkurl{UpperTheory.GalN.V.Win.N.countQ_alt} --- in-repo constant (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/FrobeniusTraceCountBoundOfCmEigensystemCount.lean:255--335}); not compared.\par
+% End of atlas edition annotation.
+
+\begin{formalstatement}[A rational classifier of variable purity]\label{pn:P030}
+Assume \(H'\), the level and Satake--Frobenius correspondence for
+imaginary quadratic fields, and preservation of admissibility whenever
+quadratic restriction is irreducible. For each \(n\ge2\) there exist
+\(c,A\in\mathbb N\). For all \(m_1>\cdots>m_n\),
+\(m_i+m_{n+1-i}=w_0\in\mathbb Z\), \(|m_i|\le H\), \(M\ge1\),
+and \(p\nmid M\) prime, the rational place above \(p\) admits data
+\(D\) of weight \(m\), purity \(w_0\), and \(|D.S|\le c[M(H+1)]^A\).
+These data classify \(\mathrm{AdmRNAlt}(\iota,M,m,w_0)\) representations
+of \(G_{\mathbb Q}\) at this place for every odd \(\ell\ne p\), closure
+and \(\iota\).
+\end{formalstatement}\nodestatus{P030}
+
+Blueprint Z1.5.05~\bploc{r8:small:Z1.5.05} starts with \(n^2+2\) quadratic fields, of which
+\(n^2+1\) remain after avoiding the auxiliary prime. Given the
+quadratic classifiers and the aggregation lemma, the rational bound
+has constant \(2^{n+1}(n^2+1)\sum c_j\) and exponent \(\sum A_j\).
+Recovering compatible roots and controlling the restriction fibres by
+quadratic self-twists are the unwritten parts. For a cuspidal invariant
+lift over a cyclic extension of prime degree, Arthur and Clozel,
+\emph{Simple Algebras, Base Change, and the Advanced Theory of the Trace
+Formula}, Chapter~III, Theorem~4.2(d), identify the cuspidal descent
+fibre up to twists by powers of the associated character. The rational
+classifier needs the corresponding fibre test for the admitted Galois
+representations together with compatible Frobenius root choices over
+the selected fields. For that difference the proof is in Lean only.
+\cite{r21-ac}

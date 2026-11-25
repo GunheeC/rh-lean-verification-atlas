@@ -1,0 +1,124 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "T14",
+  "title": "An averaged slope bound over deep components",
+  "track": {
+    "primary": "arakelov",
+    "secondary": [
+      "theta"
+    ]
+  },
+  "statement": "Assume the eight statements T17--T24. There is a real $C\\ge0$ uniform in\nthe following data. Let a core $T$ on $D$ satisfy the core laws and\n$m^2\\le k$. Take $1\\le j<m$, a deep datum $Y$ of index $j$, an integer\n$e\\ge0$ and a real $o$ with $Y$ good at $(e,o)$. Suppose its integer\n$M'$ has at most fifteen distinct prime factors. For each admissible\nweight $u$ with gap $g>0$, there are real numbers $s_Z$, indexed by\ncomponents, such that\n\\[\n  s_Z\\le\\mathrm{compVolSlope}_{Y,\\xi_R,8,\\mathrm{mixVals}(B),Z}(u),\n  \\qquad\n  \\frac{\\sum_Z^{\\mathrm{fin}}s_Z}{\\#\\mathrm{Comp}}\n   \\ge -C\\,\\mathrm{errX}(\\ell(D),u,g),\\qquad B=\\mathrm{bndB}(u,g).\n\\]\nHere the weight decreases strictly at each embedding, and differences\nfrom each index on the $q$-side to any other index there or on the\n$p$-side have absolute value at least $g$.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume the eight inputs T17–T24.",
+    "Use core data satisfying the core laws and $m^2\\le k$, $1\\le j<m$, a good deep datum at $(e,o)$, and the stated bound on the number of prime factors."
+  ],
+  "lean": [
+    {
+      "name": "PositivityTheory.HtPt.Ah.deep_slim_use",
+      "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/MoriwakiBigness/HilbertSamuelApplications/AhSlimU.lean",
+      "line0": 9,
+      "line1": 14,
+      "sha256": "cdaf281cbb61ff4c019f95f1e1260bac32c3221e0a21b0ac149b9e4f71d83b0b",
+      "dominated": 486193,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "5.24 (sub:T14)",
+      "pages": [
+        44,
+        44
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/T14.tex",
+      "section": "sub:T14",
+      "pages": []
+    },
+    {
+      "document": "paper2_v3",
+      "section": "The chain in detail: P012",
+      "pages": [
+        22,
+        23
+      ],
+      "coverage": "Shared subsection for this station, including subordinate inputs."
+    },
+    {
+      "document": "crosswalk/adriazola.json",
+      "section": "H15.69 · Hypothesis 15.69 (target DeepStR only)",
+      "pages": [],
+      "coverage": "Target predicate only. The local implication has additional hypotheses."
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L1",
+  "reviews": [
+    "reviews/R21_review.md"
+  ],
+  "prerequisites": [
+    "D309",
+    "T26"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "Which supplier fixes the small-section error uniformly over the components that vary in the family?"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [
+    {
+      "grade": "L1",
+      "review": "reviews/R21_review.md",
+      "lines": [
+        131,
+        131
+      ],
+      "scope": "Lean interface as specified in the review row; no equivalence with a published result inferred.",
+      "verdict": "Exact statement comparison"
+    }
+  ],
+  "paper_id": "T14",
+  "indexed_members": [
+    "D139",
+    "D307",
+    "D308",
+    "D310",
+    "D311"
+  ],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "an-averaged-slope-bound-over-deep-components",
+  "aliases": [
+    "DeepStR target",
+    "An averaged bound over deep components",
+    "deep_slim_use",
+    "T14 An averaged slope bound over deep components"
+  ],
+  "background": [
+    "Arakelov slopes",
+    "Heights of deep components"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "5.24 (sub:T14)",
+    "pages": [
+      44,
+      44
+    ]
+  },
+  "question_sources": [
+    "questions/arakelov.md"
+  ],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "D309": "graph",
+    "T26": "graph"
+  },
+  "summary": "On a good deep component datum meeting the rank, weight-gap and prime-factor restrictions, one can bound component slopes from below on average with an explicit error. A single constant works across those data, furnishing the averaged estimate used in the covolume comparison."
+}

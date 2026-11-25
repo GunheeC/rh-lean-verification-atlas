@@ -1,0 +1,100 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "Z1.5.06",
+  "edition_sha256": "9de3b3c3027ce79054f5f6c4e6f0f36413a1164480fc2d0c12cfeebfff48ec50",
+  "note_sha256": "95acee2291bfaac110a2fa1b846c9bdb5d5ea4fcc297cac72218443c4842d490",
+  "statement_sha256": "f4e7c6556e8ec9cc8a16980c1c145d5803dcae2a1beac7a84e67e92872b6a7b0",
+  "sources": [
+    {
+      "path": "notes/blueprint/Z1.5.06.tex",
+      "sha256": "95acee2291bfaac110a2fa1b846c9bdb5d5ea4fcc297cac72218443c4842d490"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The rational classifier at symmetric weights gives a finite list of eigenvalue pairs at the underlying good rational prime.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "Z1.5.05",
+        "input: rational rank-two admissibility"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.GalN.V.Win.N.frobenius_trace_count_bound_of_rat_eigensystem_count_alt",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/FrobeniusTraceCountBoundOfCmEigensystemCount.lean",
+          "line0": 348,
+          "line1": 398
+        }
+      ],
+      "source": "notes/blueprint/Z1.5.06.tex",
+      "anchor": "Apply the rank-two",
+      "source_lines": [
+        14,
+        18
+      ],
+      "claim_sha256": "a3d8fab4677b3a21bd2de20bc2bf1243d02d2eae1705bbbbe51250e1ad2883e8",
+      "passage_sha256": "b3fdcd3ee339a5ff9754e74f2bce22ab4a602c268f3b95ae305f007c1e47558f",
+      "sha256": "89caba3f488ac0f463deaee67a6fd995bc54cefacb9a413445848504c8b25610",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Restriction of inverse Frobenius corresponds to the indicated residue-degree power, so the sum of the powered eigenvalues gives its trace.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "standard: Frobenius and residue degree"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.GalN.V.Win.N.frobenius_trace_count_bound_of_rat_eigensystem_count_alt",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/FrobeniusTraceCountBoundOfCmEigensystemCount.lean",
+          "line0": 348,
+          "line1": 398
+        }
+      ],
+      "source": "notes/blueprint/Z1.5.06.tex",
+      "anchor": "For the chosen place",
+      "source_lines": [
+        22,
+        22
+      ],
+      "claim_sha256": "26215533ffc2b0a1d30cc721269e768f313abd73fa933bca765fb5cb138a4e36",
+      "passage_sha256": "73b4c300de1c32a7a1a62b4c5e65999db2673fe891d2b59243d105ba8d59a05f",
+      "sha256": "1d12745b0c9840ad3849f582599225dc03aa690e7fb4c69277067383895a6eb9",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Unramifiedness makes the trace computed from the chosen Frobenius lift independent of that lift, producing the required bounded trace list.",
+      "kind": "assembly",
+      "uses": [
+        "S2",
+        "input: compatibility of Frobenius modulo inertia"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.GalN.V.Win.N.frobenius_trace_count_bound_of_rat_eigensystem_count_alt",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/FrobeniusTraceCountBoundOfCmEigensystemCount.lean",
+          "line0": 348,
+          "line1": 398
+        }
+      ],
+      "source": "notes/blueprint/Z1.5.06.tex",
+      "anchor": "The rational classifier supplies",
+      "source_lines": [
+        33,
+        34
+      ],
+      "claim_sha256": "18e5363088138d0ba039a31223b0ee22c6ca28d9aac2bfed488f0d8b659dbf9d",
+      "passage_sha256": "379e15fff99d2135a5cfefd4bd0eacb17fe4587f9ff7b2a7f68f1bb43b0e544c",
+      "sha256": "c50c3624cc58301cf0b56f2091d1862df6375d6ddf1dccfe773ef7965d2ad399",
+      "ai_review": []
+    }
+  ],
+  "history": []
+}

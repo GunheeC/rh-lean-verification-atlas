@@ -1,0 +1,27 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>국소 p진 이론 · RH verification atlas</title><link rel="stylesheet" href="../../atlas.css"><script>window.MathJax={tex:{inlineMath:[["$","$"]],displayMath:[["$$","$$"]],processEscapes:true},options:{ignoreHtmlClass:"no-math"}};</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script></head><body><header><div class="bar"><a class="brand" href="../../index.html">RH verification atlas</a><nav aria-label="Atlas navigation"><a href="../../index.html">Home</a> <a href="../../STATUS.html">Status</a> <a href="../../MAP.html">Map</a> <a href="../../dashboard/index.html">Tracks</a> <a href="../../lookup/search.html">Search declarations</a></nav></div></header><main><p class="notice">AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved</p>
+<h1 id="국소-p진-이론">국소 p진 이론</h1>
+<p>서면 연역은 <a href="pillars/V.html">V</a>·<a href="pillars/F.html">F</a>, Green의 유한체 지표 명제와 국소 함의 31개 및 v5에 열거한 중간 입력을 가정한다. 이 아틀라스에는 V와 F의 사람이 읽을 수 있는 전체 증명이 없다. Lean 원문은 두 입력을 저장소 안의 항으로 공급한다. 이 자료를 사람이 검토한 적은 없다.</p>
+<p>결정질 표현·관성군·국소 상호법칙은 이 분야의 통상 용어다. 좋은 클래스·행·국소 결손은 이 경로에서 고정된 Lean 식별자나 이 프로젝트 초고의 표현을 가리킨다. 그 뜻은 연결한 정의에서 확인한다. <a href="../../lookup/glossary.html">용어집</a></p>
+<p>v13 블루프린트와 v3·v4·v5 원고는 이 프로젝트의 AI가 작성한 미출판·미검토 초고이며 Lean 개발 저자의 저작이 아니다. 블루프린트 v13과 별도 표지, 원고 v5는 릴리스 v0.1.0의 첨부 파일로 배포한다. 원고 v3·v4는 인용 대목의 발췌본과 해설을 제공한다. <a href="../../data/editions.json">판본 장부</a></p>
+<p><a href="../../tracks/local/index.html">영문 안내</a> · <a href="index.html">한국어 첫 화면</a> · <a href="../../notes/local/index.html">시작 읽기 자료</a> · <a href="../../questions/local.html">열린 질문</a></p>
+<p>이 트랙은 한 유한소를 고정하고, 그곳에서 실제로 측정하는 양부터 확인한다. 완비화한 계수환, 그 위의 격자 및 유한 길이 모듈을 먼저 정한 다음 정규화와 분기지수를 기록한다. P041–P044는 정규화한 환 위에서 얻은 자료를 원래 국소 조건과 비교하는 경로다. 잔여체 위의 등식만 있으면 되는 단계와 정수환 위 등식까지 필요한 단계를 나눠 읽는다.</p>
+<p>형식군 쪽에서는 높이 2인 형식군의 좌표와 Lubin–Tate 자료가 핵의 판독에 들어간다. 자리마다 좌표를 고르는 일과 여러 자리에서 하나의 지정된 전역 벡터를 판독하는 일은 양화 순서가 다르다. Z42-SITES에서 격자와 허용 자리의 사전을 읽고, Z4.2.02에서 선택한 국소 모형과 이미 지정된 핵을 같은 자료로 만드는 조건을 살핀다. P045는 국소 전개에서 얻는 계수의 값매김 하한을 Hecke 쪽에서 쓰는 지점이다.</p>
+<p>끝으로, 관성 소수에서 얻는 이득은 소수가 실제로 어떤 유형으로 분류되는지에 의존한다. D014는 명시한 host 가정 아래 예외 소수 집합, 관성군과 Frobenius의 첫 이진 좌표를 식별한다. 별도의 p진 Hodge 비교는 결정적 표현, 필트레이션과 Frobenius에 관한 자료를 옮긴다. 두 경로를 연결할 때 분기 조건, 좌표의 적분성, 비교 사상이 유지하는 격자를 각각 확인한다.</p>
+<h2 id="대학원생의-시작-단위">대학원생의 시작 단위</h2>
+<p><strong>FactLpF의 국소 상계와 P045 주변 계수 모형</strong> · Blueprint v13 §§4.1–4.3, 58–64쪽(7쪽). 보조정리 4.6(FactLpF)에서 0이 아닌 주기 길이 <span class="math">$d$</span>, 정수 <span class="math">$\ell \ge 2$</span>, 음이 아닌 각 행 크기 <span class="math">$D_s$</span>가 주어질 때의 초등 부등식을 확인하고 뒤의 계수 모형과 비교한다. 뒤의 Hecke 자리 상계 P045는 더 많은 형식군 자료를 사용한다. <a href="../../notes/local/index.html">시작 읽기 자료</a></p>
+<p><strong>읽고 남길 것</strong>　국소 부등식에서 분모를 지불하는 항과 평가환을 표시하고, 계수 모형에서 추가되는 가정을 따로 적는다.</p>
+<h2 id="배경과-확인된-자료">배경과 확인된 자료</h2>
+<p>이산부치환과 완비화, 분기·관성·Frobenius, 형식군의 좌표 교체, p진 표현의 결정적 비교와 Hodge–Tate 가중치. 국소 계산을 읽을 때 체와 잔여체의 표수를 구분한다.</p>
+<p>AI 검토(R21)는 대각합·유도·초첨점·꼬임 조건을 Scholze의 p진 국소체에 대한 국소 Langlands 대응과 비교했다고 보고한다(Theorem 1.2(a)–(d), 위치 미검증). B04의 매개변수 배정은 지정한 좋은 첨점 클래스 밖에서 더 약하다.</p>
+<p>문헌 확인 범위와 수학적 판단의 근거는 각 검토 기록에 남아 있다. <a href="../../reviews/R21_review.html">R21_review</a> · <a href="../../reviews/R18_review.html">R18_review</a></p>
+<h2 id="읽기-순서">읽기 순서</h2>
+<p>입문부터 순서대로 읽되, 이미 익숙한 단위는 단위 카드의 가정과 결론만 확인하고 넘어갈 수 있다. 아래 순서는 학습을 위한 경로다. 선언 간 직접 의존성은 각 카드와 분해 지도를 따른다.</p>
+<h3 id="입문">입문</h3>
+<ol><li><strong><a href="../../units/Z3.1.html">Z3.1</a></strong> · 정규화한 행렬 대수</li><li><strong><a href="../../units/Z3.2.html">Z3.2</a></strong> · 국소 비교와 전역 지수</li><li><strong><a href="../../units/D014.html">D014</a></strong> · 예외 소수와 관성군</li><li><strong><a href="../../units/Z42-SITES.html">Z42-SITES</a></strong> · 격자와 국소 표준모형의 좌표</li></ol>
+<h3 id="핵심-논증">핵심 논증</h3>
+<ol><li><strong><a href="../../units/P045.html">P045</a></strong> · Hecke 자리에서의 계수 상계</li><li><strong><a href="../../units/B04.html">B04</a></strong> · 국소 대응의 tame type 조건</li><li><strong><a href="../../units/Z42-FRAMES.html">Z42-FRAMES</a></strong> · 자리 사이에서 frame과 스칼라의 정규화</li></ol>
+<h3 id="미해결-가정과-적용-범위">미해결 가정과 적용 범위</h3>
+<ol><li><strong><a href="../../units/Z4.2.02.html">Z4.2.02</a></strong> · 지정한 핵의 국소 실현</li><li><strong><a href="../../units/T24.html">T24</a></strong> · 적분 Hodge–Tate 핵의 정확성</li></ol>
+<h2 id="열린-질문">열린 질문</h2>
+<ol><li>형식군의 좌표를 바꾸었을 때 Taylor 계수의 정수성과 값매김 하한 중 어느 쪽이 불변인가? Z4.2.02에서 필요한 동일한 자리와 계수환을 적어 보라.</li><li>D014의 예외 소수 d에서 관성군의 비자명 원소를 만드는 합동식은 무엇인가? 일반적인 예외 소수에서의 분해 조건과 왜 구분되는가?</li><li>T24의 사상을 유리화한 뒤 얻는 핵에서 원래 정수 격자를 어느 단계에서 복원하는가? 포화성과 p-멱 지표의 발생 가능성을 확인하라.</li></ol>
+<p><a href="../../questions/local.html">질문에 답할 때 확인할 자료</a> · <a href="../../tracks/local/units.html">분야별 전체 단위 목록</a> · <a href="../../dashboard/index.html">전체 대시보드</a></p></main><footer><a href="../../help.html">Using the local edition</a></footer></body></html>

@@ -1,0 +1,38 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>W14 · From special values to the minus part · RH verification atlas</title><link rel="stylesheet" href="../atlas.css"><script>window.MathJax={tex:{inlineMath:[["$","$"]],displayMath:[["$$","$$"]],processEscapes:true},options:{ignoreHtmlClass:"no-math"}};</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script></head><body><header><div class="bar"><a class="brand" href="../index.html">RH verification atlas</a><nav aria-label="Atlas navigation"><a href="../index.html">Home</a> <a href="../STATUS.html">Status</a> <a href="../MAP.html">Map</a> <a href="../dashboard/index.html">Tracks</a> <a href="../lookup/search.html">Search declarations</a></nav></div></header><main><h1 id="w14--from-special-values-to-the-minus-part">W14 · From special values to the minus part</h1>
+<p class="notice">AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved</p>
+<p><code>from-special-values-to-the-minus-part</code> · <a href="../tracks/galois/index.html">Galois representations, automorphy lifting, Iwasawa theory and Euler systems</a></p>
+<p><strong>Statement only</strong> · <strong>L0</strong> Declaration pinned; no review of this unit · Record generated 2026-11-25 (no human check).</p>
+<div class="scroll"><table>
+<thead><tr><th>1 · Lean pinned</th><th>2 · Statement compared</th><th>3 · Prose</th><th>4 · Steps</th><th>5 · AI review</th><th>6 · Human</th></tr></thead>
+<tbody><tr><td>✓</td><td>–</td><td>Statement only</td><td>0</td><td>–</td><td>0 of 0 steps</td></tr>
+</tbody></table></div>
+<p>Awaiting numbered proof · <a href="../PROGRESS.html">Progress and counting rules</a></p>
+<h2 id="statement">Statement</h2>
+<p>Assume the following character estimate. For every abelian CM field <span class="math">$F$</span>, compatible algebraic closure, and cyclotomic action of <span class="math">$(\mathbb Z/N\mathbb Z)^\times$</span> on <span class="math">$F$</span> (<span class="math">$N&gt;0$</span>), take an odd prime <span class="math">$\ell\nmid[F:\mathbb Q]$</span>, a finite DVR <span class="math">$O\subset\overline{\mathbb Q}_\ell$</span> over <span class="math">$\mathbb Z_\ell$</span>, <span class="math">$k\ge1$</span>, and a character <span class="math">$\psi$</span> of <span class="math">$\operatorname{Gal}(F/\mathbb Q)$</span> valued in <span class="math">$O^\times$</span>. Write <span class="math">$\chi$</span> for the induced character modulo <span class="math">$N$</span>. If <span class="math">$\chi(-1)=(-1)^{k+1}$</span>, the <span class="math">$O$</span>-length of the <span class="math">$\psi$</span>-eigenspace of the localization kernel with twist <span class="math">$-k$</span> is at most <span class="math">$\operatorname{ord}_O(a)$</span> for every <span class="math">$a\in O$</span> representing the denominator-cleared primitive Bernoulli value <span class="math">$\operatorname{den}(N,k+1)B_{\rm prim}(k+1,\chi)$</span>. Then there exists a real <span class="math">$C$</span> such that for every abelian datum <span class="math">$M$</span>, <span class="math">$e,t\ge2$</span>, prime pair <span class="math">$q,d$</span> as in W12 and CM field <span class="math">$E$</span> of type <span class="math">$(M,e,q,d)$</span>, all its odd-prime minus lengths <span class="math">$h_\ell^-(E,k)$</span> for <span class="math">$1\le k&lt;t$</span> are finite. Put <span class="math">$n=[E:\mathbb Q]$</span>, <span class="math">$f=\operatorname{cond}E$</span>, <span class="math">$o=\deg M$</span>. For every finite set <span class="math">$T$</span> of odd primes,</p>
+<div class="math display">$$\begin{aligned} \sum_{\ell\in T}\log\ell\sum_{1\le k&lt;t}h_\ell^-(E,k) &amp;\le 3nt^2\log(tf)\\ &amp;\quad+C\!\sum_{\substack{p\mid o\\p\ {\rm odd\ prime}}} pn^2t^2\log^2(tpf). \end{aligned}$$</div>
+<h2 id="assumptions">Assumptions</h2>
+<ul><li>Assume the specified character estimate over abelian CM fields: for the allowed odd prime and parity the localization-kernel eigenspace length is bounded by the valuation of the prescribed special-value representative.</li><li>Use the compatible cyclotomic action, finite coefficient DVR, twist and character in this comparison.</li></ul>
+<p>Sources for the assumptions · <a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a></p>
+<h2 id="where-to-read">Where to read</h2>
+<p>Blueprint v13 and papers v3–v5 are this atlas project’s own AI-written, unpublished drafts. They have no human review and were not written by the author of the Lean development. Blueprint v13, its separate cover, and paper v5 are distributed as assets of release v0.1.0. For v3 and v4 the atlas supplies selected excerpts and notes. <a href="../data/editions.json">Edition register</a></p>
+<ul><li><a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a>, 5.50 (sub:W14), p. 53. Statement starts on the cited page.</li><li><a href="../notes/units/W14.tex">Manuscript source excerpt</a> · section <code>sub:W14</code></li></ul>
+<h3 id="other-expositions-and-comparisons">Other expositions and comparisons</h3>
+<ul><li><a href="https://github.com/jimjamzola/RH-Alpoge-Reconstruction/blob/aa9c86bf2a7d29b08575641fecea19a2a603e87c/manuscript/main.pdf">Adriazola, §17, decomposition theorem, statement (II)</a> · none. <a href="../crosswalk/adriazola.html">Correspondence table</a>.</li></ul>
+<h2 id="evidence">Evidence</h2>
+<p>The pinned declaration is recorded in the formal source. No higher-level verdict is assigned to this unit.</p>
+<h2 id="lean-declarations">Lean declarations</h2>
+<ul><li><code>UpperTheory.V.Odd.thmBcFree_of</code>  <br><a href="https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/OddResidueBounds/ThmBcOfPsiBound.lean#L295-L295"><code>ThmBcOfPsiBound.lean</code></a>, lines 295 · 2,871 dominated lines · SHA-256 <code>2c8cebde03e9</code>.</li></ul>
+<p><a href="W14.yaml">Machine record and full declaration hashes</a> · <a href="../lookup/declarations.html">Declaration lookup</a></p>
+<h2 id="reading-prerequisites">Reading prerequisites</h2>
+<p>Background · Special values of Dirichlet L-functions · Minus eigenspaces.</p>
+<ul><li><a href="D551.html">D551 · Annihilation of the minus kernel</a> · graph</li></ul>
+<p><a href="../data/round3_prerequisites.json">Evidence and definitions of reading links</a></p>
+<h2 id="open-questions">Open questions</h2>
+<p>None recorded.</p>
+<h2 id="graph-connections">Graph connections</h2>
+<p>Arrows may connect either a unit’s main declaration or an indexed member.</p>
+<p><strong>Uses</strong> · <a href="D551.html">D551</a></p>
+<p><strong>Used by</strong> · <a href="D551.html">D551</a> · <a href="P020.html">P020</a></p>
+<p><a href="../data/unit_graph.json">Declaration witnesses and graph scope</a></p>
+<p>Lookup aliases · <code>thmBcFree_of</code>, <code>W14 From special values to the minus part</code></p>
+<p>&lt;!-- Unit metadata SHA-256 65d4fc53fc20240981caf21abd21122da5706f7a57d38ec4349397e6f19ce2fe --&gt;</p></main><footer><a href="../help.html">Using the local edition</a></footer></body></html>

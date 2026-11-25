@@ -1,0 +1,222 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "P031",
+  "edition_sha256": "c77a49ade219c448f2d8e419fa05b1aaf6a602550273b0bf8c048e23bcff8a08",
+  "note_sha256": "d648c6f4ab21c523991e95b9d1310a9d361a93e835b1178bc7aad231771d00e8",
+  "statement_sha256": "f6e3605d1a10654c047ab8de5d94409552bab77f589819f1fece6d2e88ef86f2",
+  "sources": [
+    {
+      "path": "notes/units/P031.tex",
+      "sha256": "d648c6f4ab21c523991e95b9d1310a9d361a93e835b1178bc7aad231771d00e8"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Successive prime powers of the chosen principal unit increase its valuation depth by one.",
+      "kind": "computation",
+      "uses": [
+        "standard: binomial valuations"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Tower.exists_descends",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/NumberFieldTowers/ExistsDescends.lean",
+          "line0": 50,
+          "line1": 57
+        }
+      ],
+      "source": "notes/units/P031.tex",
+      "anchor": "exact depth \\(c_0\\), by maximality. Binomial expansion gives",
+      "source_lines": [
+        13,
+        37
+      ],
+      "claim_sha256": "b0da284bd67396d701113732ad62e78fcd3bb5328682d762fa860aeec948b290",
+      "passage_sha256": "7640083f0d5767e1764fc90c07b9bb7d8c7beab99b83d64866655ff596879198",
+      "sha256": "6fb0be60dfd57f5bec8502bd9380ebf3d0e4ea627c174255c2b02c1ed01780f0",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The finite-layer localization kernel identifies with the invariant subgroup of the fixed infinite-layer character module.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S1",
+        "input: inflation–restriction"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Kum.resInfInj",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/KummerTheory/ResInfInj.lean",
+          "line0": 58,
+          "line1": 68
+        },
+        {
+          "name": "UpperTheory.V.Kum.resInfOnto",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/KummerTheory/ResInfOnto.lean",
+          "line0": 102,
+          "line1": 122
+        }
+      ],
+      "source": "notes/units/P031.tex",
+      "anchor": "restriction identifies the localization kernel over \\(L_m\\) with",
+      "source_lines": [
+        39,
+        54
+      ],
+      "claim_sha256": "fe4f8c5dcd3b2d1978d50cad03b5b3bc1b63b69f251d76f52903979e4ad4bca6",
+      "passage_sha256": "dbfe9b4bfad89b04f8050aa0354ccfa0e36afc540092e345864f2f79b50e0052",
+      "sha256": "33a10205325e1f235350f783cba29992bac7d81c5829ef3a40044c5939134aac",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Local triviality can be tested on the corresponding infinite-layer characters.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S2",
+        "input: open local decomposition image"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Kum.decCob",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/KummerTheory/ResInfOnto.lean",
+          "line0": 15,
+          "line1": 58
+        }
+      ],
+      "source": "notes/units/P031.tex",
+      "anchor": "ring of \\(\\mathbb Z_\\ell\\). For a place above \\(\\ell\\) the local image",
+      "source_lines": [
+        39,
+        54
+      ],
+      "claim_sha256": "40df3a40373b144bb2ce27d6fc05f09aec4ba65c64a499e339f9de0ef1b7575c",
+      "passage_sha256": "dbfe9b4bfad89b04f8050aa0354ccfa0e36afc540092e345864f2f79b50e0052",
+      "sha256": "4ef10bbcfdbda373c611c9cf874fdb73641653826896a3cd42403a0b3b9dde7e",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "Dualizing the fixed group yields the cokernel of the inverse-generator action minus one.",
+      "kind": "computation",
+      "uses": [
+        "S2",
+        "S3",
+        "standard: Pontryagin duality"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Tower.cokerDual",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/NumberFieldTowers/CokerDual.lean",
+          "line0": 8,
+          "line1": 19
+        }
+      ],
+      "source": "notes/units/P031.tex",
+      "anchor": "Dualize \\(B\\) into \\(\\mathbb Q_\\ell/\\mathbb Z_\\ell\\). Since the target",
+      "source_lines": [
+        56,
+        63
+      ],
+      "claim_sha256": "d52bf6c8f53a381c835c808315dfdd07f664aff66e4766dd4409e3d4b05220fb",
+      "passage_sha256": "d9aa82718b474016d77076f0cfe39a378d55165578689b7a14df93d228c29c9a",
+      "sha256": "07fc08c39dcc3af54d8e8400e872096e803616bf2ba5a5851556724bde699645",
+      "ai_review": []
+    },
+    {
+      "id": "S5",
+      "status": "active",
+      "claim": "The length equality extends to infinite length using arbitrarily large finite submodules.",
+      "kind": "assembly",
+      "uses": [
+        "S4"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Tower.cokerDual",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/NumberFieldTowers/CokerDual.lean",
+          "line0": 8,
+          "line1": 19
+        },
+        {
+          "name": "UpperTheory.V.Tower.step0",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/NumberFieldTowers/ExistsDescends.lean",
+          "line0": 26,
+          "line1": 46
+        }
+      ],
+      "source": "notes/units/P031.tex",
+      "anchor": "length by a composition series. In the infinite-length case arbitrarily",
+      "source_lines": [
+        56,
+        63
+      ],
+      "claim_sha256": "5c3dd34a45da1731c39c119a4870beaec203b17aff8e92875726eb7c8b111cf9",
+      "passage_sha256": "d9aa82718b474016d77076f0cfe39a378d55165578689b7a14df93d228c29c9a",
+      "sha256": "6ac151e5a40b914569f3b8aa38413285cb5df90b8e5419fc2c3dbdf33c80855d",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "d6ab7a4c01834e998becd4056d1f072e4a0d48cea23994645a60c4e6605da5ba",
+      "sources": [
+        {
+          "path": "notes/units/P031.tex",
+          "sha256": "ed0e26f182c444e0ad81f7810e3836558c477a9bc941fbe2b927558e2d12e972"
+        }
+      ],
+      "steps": {
+        "S1": "6fb0be60dfd57f5bec8502bd9380ebf3d0e4ea627c174255c2b02c1ed01780f0",
+        "S2": "245567c78dd502e2182febcaf63fcd984b5a299ccd3c4a1765d1c8bbf7be950d",
+        "S3": "e45336405bd2b8aac7d73fec7558cca20f918cb88d00c9099100dde0642c87ed",
+        "S4": "0b42834f9869313b08fd0d881382fe67530150e00560bed7cc7cc75345085f4c",
+        "S5": "be37f2aba75e3990c15ed51519c8cfe402592308ac624dc260778908421fedbe"
+      },
+      "step_texts": {
+        "S1": "Successive prime powers of the chosen principal unit increase its valuation depth by one.",
+        "S2": "The finite-layer localization kernel identifies with the invariant subgroup of the fixed infinite-layer character module.",
+        "S3": "Local triviality can be tested on the corresponding infinite-layer characters.",
+        "S4": "Dualizing the fixed group yields the cokernel of the inverse-generator action minus one.",
+        "S5": "The length equality extends to infinite length using arbitrarily large finite submodules."
+      }
+    },
+    {
+      "edition_sha256": "c4c095733c3d25dfa7ce80c050c8db2e0c92aade880e29ff4552613bcfccb4b5",
+      "sources": [
+        {
+          "path": "notes/units/P031.tex",
+          "sha256": "ed0e26f182c444e0ad81f7810e3836558c477a9bc941fbe2b927558e2d12e972"
+        }
+      ],
+      "statement_sha256": "f6e3605d1a10654c047ab8de5d94409552bab77f589819f1fece6d2e88ef86f2",
+      "steps": {
+        "S1": "6fb0be60dfd57f5bec8502bd9380ebf3d0e4ea627c174255c2b02c1ed01780f0",
+        "S2": "33a10205325e1f235350f783cba29992bac7d81c5829ef3a40044c5939134aac",
+        "S3": "4ef10bbcfdbda373c611c9cf874fdb73641653826896a3cd42403a0b3b9dde7e",
+        "S4": "07fc08c39dcc3af54d8e8400e872096e803616bf2ba5a5851556724bde699645",
+        "S5": "6ac151e5a40b914569f3b8aa38413285cb5df90b8e5419fc2c3dbdf33c80855d"
+      },
+      "step_texts": {
+        "S1": "Successive prime powers of the chosen principal unit increase its valuation depth by one.",
+        "S2": "The finite-layer localization kernel identifies with the invariant subgroup of the fixed infinite-layer character module.",
+        "S3": "Local triviality can be tested on the corresponding infinite-layer characters.",
+        "S4": "Dualizing the fixed group yields the cokernel of the inverse-generator action minus one.",
+        "S5": "The length equality extends to infinite length using arbitrarily large finite submodules."
+      },
+      "step_passages": {
+        "S1": "7640083f0d5767e1764fc90c07b9bb7d8c7beab99b83d64866655ff596879198",
+        "S2": "dbfe9b4bfad89b04f8050aa0354ccfa0e36afc540092e345864f2f79b50e0052",
+        "S3": "dbfe9b4bfad89b04f8050aa0354ccfa0e36afc540092e345864f2f79b50e0052",
+        "S4": "d9aa82718b474016d77076f0cfe39a378d55165578689b7a14df93d228c29c9a",
+        "S5": "d9aa82718b474016d77076f0cfe39a378d55165578689b7a14df93d228c29c9a"
+      }
+    }
+  ]
+}

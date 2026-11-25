@@ -1,0 +1,92 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D510",
+  "title": "A common quadratic host on a window",
+  "track": {
+    "primary": "analytic",
+    "secondary": [
+      "galois"
+    ]
+  },
+  "statement": "Assume a uniform construction extending each admissible field row, with the order, conductor, lcm divisibility and good prime pair stipulated in the source, to a good host with the character-share bound. For primitive psi the exponent-401 Selmer window and admissibility at all large eligible frames then give 3/2-power host windows for the cyclic level with constant 4 and Selmer bound sqrt(b).\n\\[\n\\mathrm{HostExW}\\bigl(\\tfrac32,(s,R,H)\\mapsto\\mathrm{EAtH}(\\mathrm{cyc}(\\psi),H,TT_H,x,\\varepsilon,4)\\wedge\\mathrm{VVle}(E_H,t_R,\\sqrt b)\\bigr).\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume a uniform extension of eligible field rows to good hosts satisfying the required order, conductor, prime pair and character-share conditions.",
+    "For the primitive character assume its Selmer window with exponent 401 and the eventual admissibility of a compatible rank tuple on each eligible frame."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.T3.supplyOfAdmOf",
+      "file": "Development/AutomorphicArithmetic/ShortNorms/supplyOfAdmOf.lean",
+      "line0": 13,
+      "line1": 135,
+      "sha256": "4a8adb57498e9c9f9801dd87e5d23925a7cc4763db487771075abe42f56b33a9",
+      "dominated": 21194,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "G.533 (decomp:D510)",
+      "pages": [
+        290,
+        290
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D510.tex",
+      "section": "decomp:D510",
+      "pages": []
+    },
+    {
+      "document": "paper2_v3",
+      "section": "The chain in detail: P015",
+      "pages": [
+        17,
+        19
+      ],
+      "coverage": "Shared subsection for this station, including subordinate inputs."
+    }
+  ],
+  "status": "Statement only",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [
+    "N415"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [],
+  "paper_id": "D510",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "a-common-quadratic-host-on-a-window",
+  "aliases": [
+    "supplyOfAdmOf",
+    "D510 A common quadratic host on a window"
+  ],
+  "background": [
+    "Primitive characters",
+    "Power windows and auxiliary primes"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.533 (decomp:D510)",
+    "pages": [
+      290,
+      290
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "N415": "graph"
+  }
+}

@@ -1,0 +1,59 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit P026. Local manuscript v3, item 7.3, heading on printed PDF p. 73.
+% UpperTheory.V.Z.Kato.Final.zetaUr
+% paper2/inputs_one.tex:82–127. Verbatim excerpt; SHA-256 ce558aa934ae89e9a63835d37d7cfb10302a941a271885291ff1b87962eb46f2.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+\noindent\nolinkurl{UpperTheory.V.Z.Kato.Joint.kato_global_unit_law_of_smoothed_classes} --- in-repo constant (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/FrobeniusHodgeTateLaws/KatoGlobalUnitLawOfSmoothedClasses.lean:8--10}); not compared.\par
+\noindent\nolinkurl{UpperTheory.Kd.K4.kato_eulerSystem_integrality} --- in-repo constant (\path{Development/AutomorphicArithmetic/Foundations/IwahoriReduction/NormProducts/AdmissibleWeightedDataMonoCoef.lean:208}); not compared.\par
+% End of atlas edition annotation.
+
+\begin{formalstatement}[An integral ordinary zeta cocycle]\label{pn:P026}
+Let \(\ell\) be odd, \(e\ge1\), \(A\) a place above \(\ell\), and \(W\)
+a continuous integral two-dimensional representation of \(G_{\mathbb Q}\).
+Assume the specified normal form: \(W\) is unramified outside \(S\)
+containing the primes over \(\ell\), its determinant \(\delta\) has
+square one and takes value \(-1\) on complex conjugations, and its
+restriction to \(\ker\chi\cap\ker\delta\) is irreducible. At \(A\),
+\(W\) is upper triangular,
+a positive power of its first diagonal character on inertia equals the
+same power of \(\chi^e\), and that character differs from \(\chi\)
+somewhere on the decomposition group. Let \(g\) be a newform of weight
+\(2e+1\), of level prime to \(\ell\), with unit \(a_\ell(g)\).
+Suppose there is a character \(\eta\) trivial on the subgroup fixing
+\(\mu_\ell\) pointwise such that \(g\) is attached (via \(\iota\))
+to \(W\otimes\chi^{-e}\delta^{-1}\eta\), and
+\(W(s)_{22}\chi(s)^e\delta(s)^{-1}\eta(s)=1\) on inertia at \(A\).
+There exist a common coefficient ring \(O\) for \(W\), an \(O\)-integral
+continuous cocycle \(y\), and a finite set \(S'\) with the following properties.
+On inertia away from \(\ell\), \(y\) is locally a coboundary.
+There is no scalar \(x\) with \(y(s)_2=(W(s)_{22}-1)x\) throughout
+the decomposition group of \(A\).
+For every \(n\ge1,\ w\notin S',\ \ell^n\mid Nw-1\), and every admitted
+surjective character to \(\mathbb Z/\ell^n\) trivial on the subgroup
+fixing \(\mu_{Nw}\) pointwise, the same \(y\) satisfies the tame norm relation.
+\end{formalstatement}\nodestatus{P026}
+
+The four exclusive lines at \nodeid{P026} count the final assembly. Its substantial cocycle and integrality inputs lie below this head; see \nodeid{P058}--\nodeid{P066} and their distinct ownership entries. The tame relation supplies an integral translated cocycle on the
+character fibres whose sum is \(P y\) up to an integral coboundary.
+The scalar \(P\) is congruent at precision \(n\) to a unit times
+\(\det(W(\mathrm{Frob}_w)-1)\); the local classes away from \(w,\ell\)
+satisfy the specified integral inertia condition. Kato constructs zeta
+elements for eigenforms and norm compatibilities in \emph{\(p\)-adic
+Hodge theory and values of zeta functions of modular forms}, (8.1.3)
+and Proposition~8.12. In Kato's notation, for \(m\mid m'\), with
+\(S\cup\operatorname{prime}(m')\subseteq S'\) and \(cd\) prime to \(S'\),
+corestriction sends \(z_{m'}(S')\) to
+\[
+ \prod_{t\in S'\setminus S}
+ \left(1-\overline a_t\sigma_t^{-1}t^{-r}
+ +\overline{\varepsilon}(t)\sigma_t^{-2}t^{k-1-2r}\right)z_m(S).
+\]
+The smoothing and auxiliary indices on the eigenform classes are fixed.
+The change to this integral lattice and the failure
+of the second-coordinate local coboundary test require the comparisons
+at the two producers in Blueprint Z1.3.08~\bploc{r7:Z1.3.08}. For this difference the proof
+is in Lean only. \cite{r21-kato}

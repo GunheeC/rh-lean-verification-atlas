@@ -1,0 +1,175 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "D155",
+  "edition_sha256": "e724349a9720c4e9c86381a719a766b2a6eb0d9e8808ff597368625ced62925e",
+  "note_sha256": "7f4eb4e9c2771185bb5a5b4742e432df37aeed0ff1bc7782578a65301f260fbc",
+  "statement_sha256": "6b3194acbf08749a1f59d39ef815c3551bc463db0f82289dbf171e44cf4f6d30",
+  "sources": [
+    {
+      "path": "notes/units/D155_round4.md",
+      "sha256": "7f4eb4e9c2771185bb5a5b4742e432df37aeed0ff1bc7782578a65301f260fbc"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The target is the self-intersection of the pulled-back coordinate line, normalized by the absolute degree of the field.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: compatible invertible frames"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.Published.FubiniStudyChowHeight",
+          "file": "Development/AbelianVarietyTheory/PublishedTheorems/Divisors₂/FubiniStudyChowHeight.lean",
+          "line0": 17,
+          "line1": 30
+        }
+      ],
+      "source": "notes/units/D155_round4.md",
+      "anchor": "Let $Y$ be integral with the specified closed immersion into projective space over the int",
+      "source_lines": [
+        22,
+        22
+      ],
+      "claim_sha256": "809e1ad1765f705a3df832560d3e2a0255c312e78396cc0717c0cb8498b2592f",
+      "passage_sha256": "de894ab88a391f58b80a07dae0c1103225524863550f52f5419156b81dd76c34",
+      "sha256": "3709e2130c36ea44563c7c2313801bc06d874bf01f1370ea5894b5f087624a06",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The unitary ambiguity at conjugate embeddings leaves the assigned Fubini–Study norms compatible under conjugation.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "input: arithmetic intersection existence"
+      ],
+      "lean": [
+        {
+          "name": "FubiniStudyChowHeightFormula₂.fubiniStudy_chowHeight_formula",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/HodgeBundleWeights/FubiniStudyChowHeightFormula.lean",
+          "line0": 17,
+          "line1": 18
+        },
+        {
+          "name": "FubiniStudyChowHeightFormula₂.fubiniStudyChowHeight_of",
+          "file": "Development/WeilBound/CoreStatements/AbelianHeightsDuality/FubiniStudyChowHeight/FubiniStudyChowHeightOfArExists.lean",
+          "line0": 152,
+          "line1": 153
+        },
+        {
+          "name": "FubiniStudyChowHeightFormula₂.fubiniStudyChowHeight_of_arExists",
+          "file": "Development/WeilBound/CoreStatements/AbelianHeightsDuality/FubiniStudyChowHeight/FubiniStudyChowHeightOfArExists.lean",
+          "line0": 109,
+          "line1": 124
+        }
+      ],
+      "source": "notes/units/D155_round4.md",
+      "anchor": "The hypothesis record supplies its arithmetic-calculus field and hence the existence of ar",
+      "source_lines": [
+        26,
+        26
+      ],
+      "claim_sha256": "b1cfc4891aafadf0f1fa87abd152a9abed6c241ba8249f79a17e9e8cfb12694d",
+      "passage_sha256": "222cc7361aacf5838e4084b1095e49d1155b17c9978e596e224e9f244f3063fb",
+      "sha256": "cb2706ccf007589010c0db2f2ecd3af594d5be459f8e0fdf14752b7f1e937641",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The pulled-back coordinate sections give the scalar-extended generic ideal whose Chow form is the given polynomial.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "S2"
+      ],
+      "lean": [
+        {
+          "name": "FubiniStudyChowHeightFormula₂.fubiniStudyChowHeight_of_arExists",
+          "file": "Development/WeilBound/CoreStatements/AbelianHeightsDuality/FubiniStudyChowHeight/FubiniStudyChowHeightOfArExists.lean",
+          "line0": 125,
+          "line1": 142
+        }
+      ],
+      "source": "notes/units/D155_round4.md",
+      "anchor": "The generic ideal of those sections is the scalar extension of the homogeneous ideal at th",
+      "source_lines": [
+        30,
+        30
+      ],
+      "claim_sha256": "7dbfa4a838cb22af25b019c9a5f8de807e0feecd0452bf515613a1351ec414a1",
+      "passage_sha256": "4ab6eee85f01335ed9940680a80ab19ab8dab0b65c968cd9a60dc6d0fe606284",
+      "sha256": "5b4f192d4d6e41c62e7f82d4cf43c56bb4f786838c9073f0cc54d796de691088",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The inverse matrix of each auxiliary norm recovers the original frame, identifying the intersection with the claimed form height.",
+      "kind": "assembly",
+      "uses": [
+        "S2",
+        "S3",
+        "input: Chow height recursion"
+      ],
+      "lean": [
+        {
+          "name": "FubiniStudyChowHeightFormula₂.Fs.stMain",
+          "file": "Development/WeilBound/CoreStatements/AbelianHeightsDuality/FubiniStudyChowHeight/FubiniStudyChowHeightOfArExists.lean",
+          "line0": 92,
+          "line1": 95
+        },
+        {
+          "name": "FubiniStudyChowHeightFormula₂.fubiniStudyChowHeight_of_arExists",
+          "file": "Development/WeilBound/CoreStatements/AbelianHeightsDuality/FubiniStudyChowHeight/FubiniStudyChowHeightOfArExists.lean",
+          "line0": 143,
+          "line1": 150
+        }
+      ],
+      "source": "notes/units/D155_round4.md",
+      "anchor": "The comparison invoked here combines a vertical calculation, an archimedean chart calculat",
+      "source_lines": [
+        34,
+        34
+      ],
+      "claim_sha256": "cffd21ec92d84d9b2313151cec8b44ecbdfd71c54d9deb4d92c315561d617548",
+      "passage_sha256": "d1a97c307e15bf52f2074af7eb62c57eecc7e0a9318c046d3acd4607f34e0a41",
+      "sha256": "ef634558b43a96d9e7d9109850777e313bf7053b800483b9ecedf2e5d85615d0",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "b9e246967f62d205dc6f82e9f2db099cce11524d0926c72b2b8b9e9635b4f7ea",
+      "sources": [
+        {
+          "path": "notes/units/D155_round4.md",
+          "sha256": "7fed4c379f54004b99543c14c51718a7fb1f1fc86ff33fff3a103827901df2d7"
+        }
+      ],
+      "statement_sha256": "6b3194acbf08749a1f59d39ef815c3551bc463db0f82289dbf171e44cf4f6d30",
+      "steps": {
+        "S1": "3709e2130c36ea44563c7c2313801bc06d874bf01f1370ea5894b5f087624a06",
+        "S2": "cb2706ccf007589010c0db2f2ecd3af594d5be459f8e0fdf14752b7f1e937641",
+        "S3": "5b4f192d4d6e41c62e7f82d4cf43c56bb4f786838c9073f0cc54d796de691088",
+        "S4": "ef634558b43a96d9e7d9109850777e313bf7053b800483b9ecedf2e5d85615d0"
+      },
+      "step_texts": {
+        "S1": "The target is the self-intersection of the pulled-back coordinate line, normalized by the absolute degree of the field.",
+        "S2": "The unitary ambiguity at conjugate embeddings leaves the assigned Fubini–Study norms compatible under conjugation.",
+        "S3": "The pulled-back coordinate sections give the scalar-extended generic ideal whose Chow form is the given polynomial.",
+        "S4": "The inverse matrix of each auxiliary norm recovers the original frame, identifying the intersection with the claimed form height."
+      },
+      "step_passages": {
+        "S1": "de894ab88a391f58b80a07dae0c1103225524863550f52f5419156b81dd76c34",
+        "S2": "222cc7361aacf5838e4084b1095e49d1155b17c9978e596e224e9f244f3063fb",
+        "S3": "4ab6eee85f01335ed9940680a80ab19ab8dab0b65c968cd9a60dc6d0fe606284",
+        "S4": "d1a97c307e15bf52f2074af7eb62c57eecc7e0a9318c046d3acd4607f34e0a41"
+      }
+    }
+  ]
+}

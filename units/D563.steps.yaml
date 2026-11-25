@@ -1,0 +1,99 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "D563",
+  "edition_sha256": "307ac28a309556ed61b61c453df2c64df674e7ebc1d8d595895590be08770d04",
+  "note_sha256": "0775a60e4ae81cd57b5359956d2cda14bef194df910e8b202982e133789e1a19",
+  "statement_sha256": "48bf7f8a06e77faf62e8c7d22431e305e23d47fb1d04d29f389134603b8592f2",
+  "sources": [
+    {
+      "path": "notes/units/D563-argument.tex",
+      "sha256": "0775a60e4ae81cd57b5359956d2cda14bef194df910e8b202982e133789e1a19"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The lower bounds on cardinality and column count make the density and the normalization positive, permitting division.",
+      "kind": "inequality",
+      "uses": [
+        "input: size-window bounds"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.LFunctionChainParameters.ThickSetMeanBounds.proposition_size_bound",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean",
+          "line0": 507,
+          "line1": 592
+        }
+      ],
+      "source": "notes/units/D563-argument.tex",
+      "anchor": "In particular $t,m,k,Q$",
+      "source_lines": [
+        1,
+        21
+      ],
+      "claim_sha256": "ab080c5528e910cdca2a647221e2f14b0a143607ac3eb6ff621f83602e9ea1fc",
+      "passage_sha256": "9c2f8c1917df9a5e01d362e3dfc8277ce52430dc749b5d335a188aecae3b2096",
+      "sha256": "cee7500aac36e1b7764450ac293fab8a6be02bb0c33d607ef0d18633c5dc0087",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "After division by the positive normalization the four bracket terms are bounded by two, two, four and two times the common comparison power.",
+      "kind": "inequality",
+      "uses": [
+        "S1",
+        "input: rank and size inequalities"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.LFunctionChainParameters.ThickSetMeanBounds.proposition_size_bound",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean",
+          "line0": 507,
+          "line1": 592
+        }
+      ],
+      "source": "notes/units/D563-argument.tex",
+      "anchor": "Expand $\\mathrm{Br}",
+      "source_lines": [
+        23,
+        57
+      ],
+      "claim_sha256": "83f099c2ee2c2ba107d5c26a4f63ea5039fa3bc6d6d6f485178479e3149cc881",
+      "passage_sha256": "17fdd5c08c22d342cad57529e8cfd818319e0234b7a989630b111bcbf8cef020",
+      "sha256": "771cd49767a382d5e2fd2cb5ca2b5dd5ae8e9436abaafb9c5f1ecf61385d2106",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The density lower bound costs at most one epsilon power; the largeness bound then absorbs the factor 26 to yield the required exponent.",
+      "kind": "inequality",
+      "uses": [
+        "S2",
+        "input: normalized character average"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.LFunctionChainParameters.ThickSetMeanBounds.proposition_size_bound",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean",
+          "line0": 507,
+          "line1": 592
+        }
+      ],
+      "source": "notes/units/D563-argument.tex",
+      "anchor": "Consequently",
+      "source_lines": [
+        23,
+        57
+      ],
+      "claim_sha256": "3b7acfe5276c546524e466f676b164ffdf4e66e20e8e6efa509c1f6598acd937",
+      "passage_sha256": "17fdd5c08c22d342cad57529e8cfd818319e0234b7a989630b111bcbf8cef020",
+      "sha256": "bca1815fa79c64c720726f8f79015fe7ba964f3867538ae6ec92eb6cdb8d8d09",
+      "ai_review": []
+    }
+  ],
+  "history": []
+}

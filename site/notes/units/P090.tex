@@ -1,0 +1,18 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit P090. Local manuscript v3, item 10.9, heading on printed PDF p. 110.
+% GlobalTheory.TwV.adLawAt_xiAd
+% paper2/branches.tex:351–362. Verbatim excerpt; SHA-256 f25964d947c33d6859c5af3ffc9c354bddeb6319e7caed992121e27fac48b06f.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+\begin{formalstatement}[The full adelic law for the specified kernel]\label{pn:P090}
+For every chain and adelic datum $A$, determinant map $d$ and exponent $a$ satisfying the given adelic pin and tie conditions, the functions $\Xi=\Xi_{\rm ad}(A,a)$ and $\mu_T=\mu_{\rm of}(t,u,\mu,d)$ satisfy the entire $\mathrm{AdLawAt}$. The first function reads the prescribed adjacent kernels after change of frame, transforms under rational and level actions, depends only on the specified bad-place components, satisfies the local congruence condition, is supported on the prescribed denominator lattice and is integral off the designated primes. The second reads both rank-one determinants and class representatives, is algebraic and multiplicative on norm-one ideles, is trivial on the prescribed integral ideles, and on norm-one rational points is the product of the prescribed integral embedding powers.
+\end{formalstatement}
+\nodestatus{P090}
+
+
+The Lean proof assembles the point-existence and coupling-coset readings, the character on norm-one ideles, independence away from the designated coordinates, and the matrix, coupled and top level laws. Changing representative uses the away identity. The kernel reads the target coupling coset at the first coupled index and the source coset at the next. Each unitary determinant can be read on a rank-one unitary scalar, which gives the character formula on class representatives. These steps explain the assembly; its chart transformation inputs still require a written comparison. For simultaneous level translation $(x,x')\mapsto(x\kappa,x'\kappa')$, let $X_0,X_1$ be the two evaluations on one fixed argument. The precise required relation is
+\[
+ \mu_{i+1}(\det\kappa')\chi_i(\kappa)X_1
+  =\mu_{i+1}(\det\kappa)\chi_{i+1}(\kappa')X_0 .
+\]
+Blueprint Z4.2.02~\bploc{r8:Z4.2.02} isolates these identities in the matrix, coupled and top charts (\bploc{r7:Z4.2.02}, \bploc{r8:Z4.2.02}). Rank-one determinant multiplicativity and the twist-prime calculation do not supply all chart identities for the prescribed kernel. The general splitting characters of the adelic Weil representation do not fix these two functions and their integral support.

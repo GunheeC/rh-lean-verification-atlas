@@ -1,0 +1,173 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "P007",
+  "edition_sha256": "7fcea3c3e9a029b8cf4c6a360e9d5b2ff33cce0f5fb8d13701f2700e8f8ce752",
+  "note_sha256": "0a57519082db2825d3cdcea64cbd59e923b250b447c18cb2e413cb2cf371b118",
+  "statement_sha256": "263735ca6480a9ee9b8a5c2ba621c514eb50c52f694c5ee35deb7ffcfd411253",
+  "sources": [
+    {
+      "path": "notes/units/P007_round4.md",
+      "sha256": "0a57519082db2825d3cdcea64cbd59e923b250b447c18cb2e413cb2cf371b118"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The same nonzero modulus and primitive character are fixed throughout the reflected calculation.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: primitive character and open-strip point"
+      ],
+      "lean": [
+        {
+          "name": "critAll",
+          "file": "Supplements/Kernels/MainTheorems.lean",
+          "line0": 11,
+          "line1": 13
+        },
+        {
+          "name": "PrimitiveDirichletLZerosOnLine",
+          "file": "Statements.lean",
+          "line0": 14,
+          "line1": 16
+        }
+      ],
+      "source": "notes/units/P007_round4.md",
+      "anchor": "Separate primitive from arbitrary characters",
+      "source_lines": [
+        13,
+        13
+      ],
+      "claim_sha256": "d39c9db33ad86cd46fc2c7956190eb4f0765dfb9856031bec56570a378ad41cb",
+      "passage_sha256": "dadc0b8c7cd29135c64d6c652c3837f6067894c27e4b27a21e46e395fe74b29b",
+      "sha256": "dd0cf0fe1bba09888063081e8af7de175515bc78f3d07b7d3a027f6b4b41c0ce",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "For either parity the gamma factor at positive real part is nonzero, so the ordinary zero gives a completed zero.",
+      "kind": "case-split",
+      "uses": [
+        "standard: parity formulas for the gamma factor"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.VW.gammaFactor_ne_zero",
+          "file": "Formalism/GammaFactorNonvanishing/CritLine.lean",
+          "line0": 6,
+          "line1": 9
+        },
+        {
+          "name": "Formalism.VW.critLine",
+          "file": "Formalism/GammaFactorNonvanishing/CritLine.lean",
+          "line0": 11,
+          "line1": 27
+        }
+      ],
+      "source": "notes/units/P007_round4.md",
+      "anchor": "Remove the gamma factor at the zero",
+      "source_lines": [
+        17,
+        17
+      ],
+      "claim_sha256": "13f15dda4c92953e1703521c7b2833035696b47593cf9e5d01d026e59b870a01",
+      "passage_sha256": "861363f43fa45e5cd3b0634a81d343577c3e397020b35e45cec84949aa6750fd",
+      "sha256": "f63ec425172971302da03f3420376931fda2194ef3ab3d697db88b670424bfba",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The reflected zero of the inverse character contradicts the half-plane witness on the left branch; the right branch contradicts it directly.",
+      "kind": "case-split",
+      "uses": [
+        "S2",
+        "P009",
+        "standard: primitive functional equation"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.VW.critLine",
+          "file": "Formalism/GammaFactorNonvanishing/CritLine.lean",
+          "line0": 11,
+          "line1": 27
+        },
+        {
+          "name": "critAll",
+          "file": "Supplements/Kernels/MainTheorems.lean",
+          "line0": 11,
+          "line1": 13
+        }
+      ],
+      "source": "notes/units/P007_round4.md",
+      "anchor": "Apply the all-character input on the proper side",
+      "source_lines": [
+        21,
+        21
+      ],
+      "claim_sha256": "8c41986a3147044c04f24443cf30bcac53d64556eb6b9bd43a46b6b1c832e60d",
+      "passage_sha256": "e973ee59dbed7ccca6697be95367f910df8a19823a67080eee76d4edc81b7b3a",
+      "sha256": "22a5d7eeb4db30dd1566ff0172549f13fd208c7c4bd72baa8fa443c1ae4ce584",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "withdrawn",
+      "claim": "For critAll, the normalized source bytes reproduce the pinned hash and contain the indicated supplier expression.",
+      "kind": "computation",
+      "uses": [
+        "standard: SHA-256 of LF-joined lines"
+      ],
+      "lean": [
+        {
+          "name": "critAll",
+          "file": "Supplements/Kernels/MainTheorems.lean",
+          "line0": 11,
+          "line1": 13
+        }
+      ],
+      "source": "notes/units/P007_round4.md",
+      "anchor": "Reproduce the export check",
+      "source_lines": [
+        21,
+        21
+      ],
+      "claim_sha256": "f60f5b9e124f87d1c0b425cd07c52fb40d277a86a42761f1c43d3dc4e8d6778b",
+      "passage_sha256": "61a4ee8b15c50355d2e949dbac4874a0f12f7ca08b4a25822563bdf41c5ba4cd",
+      "sha256": "edc610afe0fc5e994dd19b9defc9a7f067ee5ff2486dab0e6bb6569aff4a23ce",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "589f067709cad422179b77da48f60759d67b9ae3a6fc30065e38d6973f8a0314",
+      "sources": [
+        {
+          "path": "notes/units/P007_round4.md",
+          "sha256": "a1d12d5bbe6dd2d90da74c2bb8a619f75cf9a927ffe1c2a8543d7013d46014ab"
+        }
+      ],
+      "statement_sha256": "263735ca6480a9ee9b8a5c2ba621c514eb50c52f694c5ee35deb7ffcfd411253",
+      "steps": {
+        "S1": "dd0cf0fe1bba09888063081e8af7de175515bc78f3d07b7d3a027f6b4b41c0ce",
+        "S2": "f63ec425172971302da03f3420376931fda2194ef3ab3d697db88b670424bfba",
+        "S3": "22a5d7eeb4db30dd1566ff0172549f13fd208c7c4bd72baa8fa443c1ae4ce584",
+        "S4": "edc610afe0fc5e994dd19b9defc9a7f067ee5ff2486dab0e6bb6569aff4a23ce"
+      },
+      "step_texts": {
+        "S1": "The same nonzero modulus and primitive character are fixed throughout the reflected calculation.",
+        "S2": "For either parity the gamma factor at positive real part is nonzero, so the ordinary zero gives a completed zero.",
+        "S3": "The reflected zero of the inverse character contradicts the half-plane witness on the left branch; the right branch contradicts it directly.",
+        "S4": "For critAll, the normalized source bytes reproduce the pinned hash and contain the indicated supplier expression."
+      },
+      "step_passages": {
+        "S1": "dadc0b8c7cd29135c64d6c652c3837f6067894c27e4b27a21e46e395fe74b29b",
+        "S2": "861363f43fa45e5cd3b0634a81d343577c3e397020b35e45cec84949aa6750fd",
+        "S3": "e973ee59dbed7ccca6697be95367f910df8a19823a67080eee76d4edc81b7b3a",
+        "S4": "61a4ee8b15c50355d2e949dbac4874a0f12f7ca08b4a25822563bdf41c5ba4cd"
+      }
+    }
+  ]
+}

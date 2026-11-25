@@ -1,0 +1,48 @@
+name: "Suggest a source or crosswalk row"
+description: "Give the edition and the exact scope of a source comparison."
+body:
+  - type: markdown
+    attributes:
+      value: "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved"
+  - type: textarea
+    id: source
+    attributes:
+      label: "Title, authorship and stable source location"
+    validations:
+      required: true
+  - type: textarea
+    id: pin
+    attributes:
+      label: "Immutable commit or document SHA-256 and license evidence"
+    validations:
+      required: true
+  - type: textarea
+    id: external
+    attributes:
+      label: "External theorem, section or atlas ID with file and line"
+    validations:
+      required: true
+  - type: textarea
+    id: unit
+    attributes:
+      label: "Unit ID and qualified Lean declaration"
+    validations:
+      required: true
+  - type: textarea
+    id: comparison
+    attributes:
+      label: "Name-only, partial or exact: compare hypotheses and conclusion"
+    validations:
+      required: true
+  - type: textarea
+    id: independence
+    attributes:
+      label: "Basis for independence, if proposing L3"
+    validations:
+      required: false
+  - type: textarea
+    id: assistance
+    attributes:
+      label: "AI assistance and what the submitting person personally checked"
+    validations:
+      required: true

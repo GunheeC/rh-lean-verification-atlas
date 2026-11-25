@@ -1,0 +1,168 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "D082",
+  "edition_sha256": "7a390151b5a7f05db06cc236f8c86a02f7b0a111b4cf761b4daea79015c980e6",
+  "note_sha256": "a4f45b17c938114ad0dd8b82469c625a236cae344c99e7d6da6b34cf41dd135f",
+  "statement_sha256": "64e7358fe25cdc52e8eb4cdcec5c911d6fba4d81d47035d5bba9de6d3683d8d1",
+  "sources": [
+    {
+      "path": "notes/units/D082_round4.md",
+      "sha256": "a4f45b17c938114ad0dd8b82469c625a236cae344c99e7d6da6b34cf41dd135f"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The paired map to the decomposition subgroup induces the two given actions by projection.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: compatible open embedding and global restriction"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Loc.bkAbove",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/BkAbove.lean",
+          "line0": 47,
+          "line1": 79
+        }
+      ],
+      "source": "notes/units/D082_round4.md",
+      "anchor": "Identify the two local actions",
+      "source_lines": [
+        13,
+        13
+      ],
+      "claim_sha256": "6997a85271e8094a0ba73b318196326710191cb85cd80f661742344d232b7c9d",
+      "passage_sha256": "5c600bba2226c006c488eec0b266b830bdaaba1891dee4e381d4fe63b19733d0",
+      "sha256": "736b2bcffd3b4a7c96e045a228659de2d652cdac5dde3fe8e32c54b73551b6e5",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The pullback of the local image under the second projection has finite index and carries the restricted coboundary witness.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S1",
+        "standard: open subgroups of compact groups"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Loc.bkAbove",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/BkAbove.lean",
+          "line0": 47,
+          "line1": 79
+        }
+      ],
+      "source": "notes/units/D082_round4.md",
+      "anchor": "Restrict a witness, or locate the finite-index subgroup",
+      "source_lines": [
+        17,
+        17
+      ],
+      "claim_sha256": "a12d4b7e31f87766a0c54356f34096ad98b0323e91ad501edd43d960caa03523",
+      "passage_sha256": "428c8052b7fadbfc22702bbb36940deb07973bfc642ac45142f259d0eaf057a0",
+      "sha256": "ef409a261effb71118de4655c5c88bbd30d7a75a4f123f14d99a267f9b34df50",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "If the coset sum of the modified cocycle is $S$ and the index is $d$, then $x-d^{-1}S$ is a coboundary witness on the full group.",
+      "kind": "computation",
+      "uses": [
+        "S2",
+        "standard: finite coset sum"
+      ],
+      "lean": [
+        {
+          "name": "bkAbove_avg",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/BkAbove.lean",
+          "line0": 5,
+          "line1": 45
+        },
+        {
+          "name": "UpperTheory.V.Loc.bkAbove",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/BkAbove.lean",
+          "line0": 47,
+          "line1": 79
+        }
+      ],
+      "source": "notes/units/D082_round4.md",
+      "anchor": "Average with the right sign",
+      "source_lines": [
+        21,
+        21
+      ],
+      "claim_sha256": "209a4e26a017eca40274b7d16c11091b132672e0f71b74145beb8b3ae0594e61",
+      "passage_sha256": "8e554d9b46cd295d4776d26eb9a92bfefd0d43ffbd654e703ed65e6b2d6f93ad",
+      "sha256": "a03fc4ec47e58ffb5b2d552d5d1af7b381b0d6d384eebac6773ade9582b16b64",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "Applying the averaging identity to the crystalline-period cocycle and pulling witnesses back in the reverse direction gives the finite-condition equivalence.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "S3"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Loc.bkAbove",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/BkAbove.lean",
+          "line0": 47,
+          "line1": 79
+        },
+        {
+          "name": "bkAbove_avg",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/BkAbove.lean",
+          "line0": 5,
+          "line1": 45
+        }
+      ],
+      "source": "notes/units/D082_round4.md",
+      "anchor": "Test the two directions on a period vector",
+      "source_lines": [
+        25,
+        25
+      ],
+      "claim_sha256": "66bd2823a24bf0c7db75bdde399339a8ef75d5a5ff5b101f3567f7d6472605a5",
+      "passage_sha256": "90181313276e5949b5d8bebf26807beae60de2f899e0f8fb1c103e54cf280521",
+      "sha256": "2fae9f9395eece5c38ac568b59ff71a30a58de8c970d8b3892cc1a214014b7e6",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "cd2adf29cddadb182fc3454610fed6b6e531ab7709212ce61dae11de2eb1e5b3",
+      "sources": [
+        {
+          "path": "notes/units/D082_round4.md",
+          "sha256": "1fedbdda5d393eb2ab08e5fd25247cf5aa9ae30a3d185748a025b6e1c7fd0bba"
+        }
+      ],
+      "statement_sha256": "64e7358fe25cdc52e8eb4cdcec5c911d6fba4d81d47035d5bba9de6d3683d8d1",
+      "steps": {
+        "S1": "736b2bcffd3b4a7c96e045a228659de2d652cdac5dde3fe8e32c54b73551b6e5",
+        "S2": "ef409a261effb71118de4655c5c88bbd30d7a75a4f123f14d99a267f9b34df50",
+        "S3": "a03fc4ec47e58ffb5b2d552d5d1af7b381b0d6d384eebac6773ade9582b16b64",
+        "S4": "2fae9f9395eece5c38ac568b59ff71a30a58de8c970d8b3892cc1a214014b7e6"
+      },
+      "step_texts": {
+        "S1": "The paired map to the decomposition subgroup induces the two given actions by projection.",
+        "S2": "The pullback of the local image under the second projection has finite index and carries the restricted coboundary witness.",
+        "S3": "If the coset sum of the modified cocycle is $S$ and the index is $d$, then $x-d^{-1}S$ is a coboundary witness on the full group.",
+        "S4": "Applying the averaging identity to the crystalline-period cocycle and pulling witnesses back in the reverse direction gives the finite-condition equivalence."
+      },
+      "step_passages": {
+        "S1": "5c600bba2226c006c488eec0b266b830bdaaba1891dee4e381d4fe63b19733d0",
+        "S2": "428c8052b7fadbfc22702bbb36940deb07973bfc642ac45142f259d0eaf057a0",
+        "S3": "8e554d9b46cd295d4776d26eb9a92bfefd0d43ffbd654e703ed65e6b2d6f93ad",
+        "S4": "90181313276e5949b5d8bebf26807beae60de2f899e0f8fb1c103e54cf280521"
+      }
+    }
+  ]
+}

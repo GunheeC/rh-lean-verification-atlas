@@ -1,0 +1,189 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "B04",
+  "edition_sha256": "c618783fe8df352cdfdc7dd8ec3e3fdf1e45bb73a69b89b4317802ed41786a2f",
+  "note_sha256": "c2bb44fff3cd447f7dc6cddb28a4efe55c6d15c824bda76bc4f62d5e935e20f0",
+  "statement_sha256": "b126a50941fd1ff98f19811e02745231c72763cc07021b05a6c3894dc1eb51e4",
+  "sources": [
+    {
+      "path": "notes/units/B04_round3.md",
+      "sha256": "c2bb44fff3cd447f7dc6cddb28a4efe55c6d15c824bda76bc4f62d5e935e20f0"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Good support requires a cuspidal support whose constituents satisfy the stated rank-one or local-field and smooth-twist condition.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: chosen local completion"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.RecT.Good",
+          "file": "Development/AbelianVarietyTheory/Definitions/NonGaloisDescent/RecTExists.lean",
+          "line0": 23,
+          "line1": 23
+        }
+      ],
+      "source": "notes/units/B04_round3.md",
+      "anchor": "At a cuspidal class",
+      "source_lines": [
+        9,
+        9
+      ],
+      "claim_sha256": "394ecbf7be0a893520a4558e4b015dff9dd409d64cc638edebfb2882b981f22f",
+      "passage_sha256": "9f5a2c9a9955dfe24dbfc6f66bff54494ed9d90600f0c3789aac616a909257ce",
+      "sha256": "179c2995ebe38a6aa9603b002399a21a26ccfdcae1b30ea25be82ae0ee227e7c",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The chosen Artin map admits a cuspidal assignment using the good map on the good branch and an auxiliary parameter on its complement.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: fixed Artin map and cuspidal construction"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Zero.LLC.cuspEx",
+          "file": "Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/CuspEx.lean",
+          "line0": 168,
+          "line1": 266
+        }
+      ],
+      "source": "notes/units/B04_round3.md",
+      "anchor": "Next, **cuspEx**",
+      "source_lines": [
+        13,
+        13
+      ],
+      "claim_sha256": "e65cc3d24a37acb231f15041224138de9bf3197d3a29a65326c8bff984e2121d",
+      "passage_sha256": "06def34e4a026b38f990524e60209be79d4b11da465b04ad2074b73b0d725f36",
+      "sha256": "31d0369e502cc207d9f7f6faa635fce2d00a45d8ee389634c658ab408ceb71e7",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Exhaustion and multisegment uniqueness give an extension agreeing with the original assignment on cuspidals.",
+      "kind": "assembly",
+      "uses": [
+        "S2",
+        "input: exhaustion and multisegment uniqueness"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.LocLanglands.exists_isLExt",
+          "file": "Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LanglandsExtensionUniqueOnCuspidal.lean",
+          "line0": 34,
+          "line1": 56
+        }
+      ],
+      "source": "notes/units/B04_round3.md",
+      "anchor": "Extend $r$ by multisegments",
+      "source_lines": [
+        15,
+        15
+      ],
+      "claim_sha256": "e85444d71304945ed8e9edef09faecd87435c112da0a14b415580968c1f2eca9",
+      "passage_sha256": "110870c2d99916b2a9f89600a92ea1744af8356329d30e6e3124353064d9fa73",
+      "sha256": "498620ea80009fda9e14081eaac3ff66932761d28e2ede07ef4edfcc5303c6fa",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The good-support and depth suppliers give the prescribed compatibility clauses for the extended parameter.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S1",
+        "S2",
+        "S3",
+        "input: duality and depth laws"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Zero.LLC.recTExists",
+          "file": "Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/RecTExists.lean",
+          "line0": 20,
+          "line1": 66
+        }
+      ],
+      "source": "notes/units/B04_round3.md",
+      "anchor": "Duality and injectivity on good support",
+      "source_lines": [
+        21,
+        21
+      ],
+      "claim_sha256": "df95e39574fb988146304c4b34e66eda48b74ce6eb6c3592a14818d4ee36f273",
+      "passage_sha256": "3e10c44e7c84fcb099aa909183d91a43bd2c1e96acaca39747954e2fe0d8f334",
+      "sha256": "5de231009dae4d85647152895e58d4665d7a762f8b589cec1903c46e15bc6333",
+      "ai_review": []
+    },
+    {
+      "id": "S5",
+      "status": "active",
+      "claim": "Cuspidality of the inflated class permits replacement by the cuspidal assignment and gives the tame inertia polynomial and zero monodromy.",
+      "kind": "assembly",
+      "uses": [
+        "S2",
+        "S3",
+        "input: inflated cuspidal type law"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Zero.LLC.recTExists",
+          "file": "Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/RecTExists.lean",
+          "line0": 20,
+          "line1": 66
+        }
+      ],
+      "source": "notes/units/B04_round3.md",
+      "anchor": "Finally inflation of the stipulated type",
+      "source_lines": [
+        27,
+        27
+      ],
+      "claim_sha256": "d99d2fa6c149f8864ed640fee16ab8e52fb65a700f8d2a0b2cfb688c74cfc474",
+      "passage_sha256": "7590e6e7b3a8af0c3ddb743f7c494a089bab912bc54e51d008db8e2305fb0957",
+      "sha256": "5575d57429bc7587dc4c6a2a83d9676cd4128f33969daf586816bb96facb22fc",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "45ab02f6af627f6ff26b4c7ceb0b1eeb7b548fb6a2fcc7209248b49bd852f963",
+      "sources": [
+        {
+          "path": "notes/units/B04_round3.md",
+          "sha256": "017977f39b5eead095bbb8248707107ff17b91cd7b7d01e5c8be6432ccc9ec32"
+        }
+      ],
+      "statement_sha256": "b126a50941fd1ff98f19811e02745231c72763cc07021b05a6c3894dc1eb51e4",
+      "steps": {
+        "S1": "179c2995ebe38a6aa9603b002399a21a26ccfdcae1b30ea25be82ae0ee227e7c",
+        "S2": "31d0369e502cc207d9f7f6faa635fce2d00a45d8ee389634c658ab408ceb71e7",
+        "S3": "498620ea80009fda9e14081eaac3ff66932761d28e2ede07ef4edfcc5303c6fa",
+        "S4": "5de231009dae4d85647152895e58d4665d7a762f8b589cec1903c46e15bc6333",
+        "S5": "5575d57429bc7587dc4c6a2a83d9676cd4128f33969daf586816bb96facb22fc"
+      },
+      "step_texts": {
+        "S1": "Good support requires a cuspidal support whose constituents satisfy the stated rank-one or local-field and smooth-twist condition.",
+        "S2": "The chosen Artin map admits a cuspidal assignment using the good map on the good branch and an auxiliary parameter on its complement.",
+        "S3": "Exhaustion and multisegment uniqueness give an extension agreeing with the original assignment on cuspidals.",
+        "S4": "The good-support and depth suppliers give the prescribed compatibility clauses for the extended parameter.",
+        "S5": "Cuspidality of the inflated class permits replacement by the cuspidal assignment and gives the tame inertia polynomial and zero monodromy."
+      },
+      "step_passages": {
+        "S1": "9f5a2c9a9955dfe24dbfc6f66bff54494ed9d90600f0c3789aac616a909257ce",
+        "S2": "06def34e4a026b38f990524e60209be79d4b11da465b04ad2074b73b0d725f36",
+        "S3": "110870c2d99916b2a9f89600a92ea1744af8356329d30e6e3124353064d9fa73",
+        "S4": "3e10c44e7c84fcb099aa909183d91a43bd2c1e96acaca39747954e2fe0d8f334",
+        "S5": "7590e6e7b3a8af0c3ddb743f7c494a089bab912bc54e51d008db8e2305fb0957"
+      }
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "P047",
+  "edition_sha256": "38dc5dc80ba5ff68c22b5b41bbb371353c7bb6acaf3b967afc2fe47f7fb5ab2c",
+  "note_sha256": "1b5b151d950ec5538b0f1dacdb6470568255ab3f0a06c0ec7056943b1b966ed4",
+  "statement_sha256": "6c9939a7d6345f5c005e878ee2e78746a033491d57f5ac8c7ab81c6517c6217f",
+  "sources": [
+    {
+      "path": "notes/units/P047.tex",
+      "sha256": "1b5b151d950ec5538b0f1dacdb6470568255ab3f0a06c0ec7056943b1b966ed4"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Expansion of the discriminant and stabilizer losses gives the common lower bound at a discriminant place.",
+      "kind": "inequality",
+      "uses": [
+        "input: discriminant-prime estimate"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.MainNotions.WeilJacquetShalikaLaw.Proof.first_clause_cases",
+          "file": "Formalism/SharpRestriction/GrowthBounds/AdmissibleIntegers/StatementsOfRemainingBound.lean",
+          "line0": 34,
+          "line1": 43
+        }
+      ],
+      "source": "notes/units/P047.tex",
+      "anchor": "At a discriminant place",
+      "source_lines": [
+        7,
+        14
+      ],
+      "claim_sha256": "4b27247328c67663a84343dda8b3b51f55d4c6dacd446609fbfe234180c91fd4",
+      "passage_sha256": "29575f607f28e7ff872679a6a03c5c42fe09fc0d3c15eaca20dfde036ce105b3",
+      "sha256": "979053843eeefc790f51febc8f7b833637bbba6fb09457a0904b3f997c7fa8cd",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The in-range zero-class branch with vanishing operator parameter receives precisely the medium-prime loss.",
+      "kind": "case-split",
+      "uses": [
+        "input: medium-prime estimate"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.MainNotions.WeilJacquetShalikaLaw.Proof.first_clause_cases",
+          "file": "Formalism/SharpRestriction/GrowthBounds/AdmissibleIntegers/StatementsOfRemainingBound.lean",
+          "line0": 44,
+          "line1": 63
+        }
+      ],
+      "source": "notes/units/P047.tex",
+      "anchor": "Within that range",
+      "source_lines": [
+        7,
+        14
+      ],
+      "claim_sha256": "13ab2281ef55def11cc15a99cd6093d6d858d4507d1fcd69dd58d3db6b29e5d7",
+      "passage_sha256": "29575f607f28e7ff872679a6a03c5c42fe09fc0d3c15eaca20dfde036ce105b3",
+      "sha256": "1bd6ab01a8633c6ad1886b3d39b7441126bb8732692416a4f399365442dd8d4e",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Nonnegative gains preserve the common lower bound in the other in-range case.",
+      "kind": "inequality",
+      "uses": [
+        "input: no-operator estimate"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.MainNotions.WeilJacquetShalikaLaw.Proof.first_clause_cases",
+          "file": "Formalism/SharpRestriction/GrowthBounds/AdmissibleIntegers/StatementsOfRemainingBound.lean",
+          "line0": 64,
+          "line1": 77
+        }
+      ],
+      "source": "notes/units/P047.tex",
+      "anchor": "In the complementary in-range",
+      "source_lines": [
+        7,
+        14
+      ],
+      "claim_sha256": "39e930ff3b8424f40272791cc50ef875d3b762a3c0a896fd1a95d62305e1073f",
+      "passage_sha256": "29575f607f28e7ff872679a6a03c5c42fe09fc0d3c15eaca20dfde036ce105b3",
+      "sha256": "7fc822b05636c0a1643658c1ade634948559607520b5d4f90a424ec8b561dbea",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "Outside the indicated range and classes the lift gains vanish and the remaining-prime bound applies.",
+      "kind": "case-split",
+      "uses": [
+        "input: remaining-prime estimate"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.MainNotions.WeilJacquetShalikaLaw.Proof.first_clause_cases",
+          "file": "Formalism/SharpRestriction/GrowthBounds/AdmissibleIntegers/StatementsOfRemainingBound.lean",
+          "line0": 78,
+          "line1": 95
+        }
+      ],
+      "source": "notes/units/P047.tex",
+      "anchor": "Outside the range",
+      "source_lines": [
+        7,
+        14
+      ],
+      "claim_sha256": "e9704fb76a5c8c48445f34e3483edfcba7835245f4de6c67b668868686ed80df",
+      "passage_sha256": "29575f607f28e7ff872679a6a03c5c42fe09fc0d3c15eaca20dfde036ce105b3",
+      "sha256": "2648dfed457c7c6ab1f26609d3090f2679280a71a26eb695adae79f6009cbe54",
+      "ai_review": []
+    }
+  ],
+  "history": []
+}

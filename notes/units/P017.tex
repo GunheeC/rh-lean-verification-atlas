@@ -1,0 +1,23 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit P017. Local manuscript v3, item 6.17, heading on printed PDF p. 59.
+% UpperTheory.Comparison₂.level_gm_le_on_family_scales
+% paper2/upper.tex:133–143. Verbatim excerpt; SHA-256 566d7fca6053781eaf364ab59a2db8074c7df4b864ad6898063e784417a0e1d8.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+\noindent\nolinkurl{UpperTheory.Comparison₂.windowInequality_of_artinInputs} --- in-repo constant (\path{Development/AutomorphicArithmetic/PrimitiveCosets/WindowInequalityOfArtinInputs.lean:17--25}); not compared.\par
+% End of atlas edition annotation.
+
+\begin{formalstatement}[Chebyshev control on a chain-tied family]\label{pn:P017}
+Let $\mathcal L$ be a level. For all $e_D,e_L\in\mathbb R$, $\varepsilon>0$, and every family $F$ at $\varepsilon$ satisfying \code{EFamC}$(\mathcal L,F)$, suppose there exist $K,c_{HH},e_K,C_L,x_0\in\mathbb R$ such that at every $x\ge x_0$ in $\mathrm{Win}(F)$ the condition \code{ChainTied}$(F;e_D,e_L,K,c_{HH},e_K,C_L;x)$ holds. Then some $x_1'$ satisfies
+\[
+ \mathcal G_{\mathcal L}(x)\le x^{1/2+(e_D+e_L+7)\varepsilon}
+ \qquad(x\in\mathrm{Win}(F),\ x\ge x_1').
+\]
+\end{formalstatement}
+\nodestatus{P017} \noindent\emph{Round 23 candidate.} See Section~\ref{sec:r23-status} for the written argument and its review status.\par
+\begin{formalroute}
+Take $C,x_E$ from \code{EFamC} and the one-scale Chebyshev threshold $x_1$ for the given level, exponents, auxiliary constants, $C$ and $\varepsilon$. For $x\in\mathrm{Win}(F)$ with $x\ge\max(x_1,x_E,x_0)$, the chain-tied-to-core lemma selects an index with a core package. The family condition gives \code{EAtH} for that same member. The one-scale inequality \code{core\_gm} applies. It has the lattice estimate among its inputs (blueprint Chapter~E, \emph{Chebyshev-type bound on the windows of a family}~\bploc{prop:E-windows-ineq}). Classical oscillation criteria consume an estimate on prime sums. The proof obligation here runs in the other direction, from the supplied lattice-chain data to this character-weighted estimate with its explicit loss.
+\end{formalroute}

@@ -1,0 +1,137 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "P005",
+  "edition_sha256": "47c5fbdef8cf9ee69e2d4468685c1f4881e0807ae9f4f09b8063a279f9341066",
+  "note_sha256": "a1191be8ba80d8ce2d5f8f9305b9a54080ccfbd01dc1ca44b6506e0061932b43",
+  "statement_sha256": "bbe8a1cc98ed59a4ac2418729f32e41f756f3e6c293f438c0d6876ca13897202",
+  "sources": [
+    {
+      "path": "notes/units/P005_round3.md",
+      "sha256": "a1191be8ba80d8ce2d5f8f9305b9a54080ccfbd01dc1ca44b6506e0061932b43"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The primitive open-strip target carries a fixed nonzero modulus and two strict real-part bounds.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "P007"
+      ],
+      "lean": [
+        {
+          "name": "PrimitiveDirichletLZerosOnLine",
+          "file": "Statements.lean",
+          "line0": 14,
+          "line1": 16
+        },
+        {
+          "name": "critAll",
+          "file": "Supplements/Kernels/MainTheorems.lean",
+          "line0": 11,
+          "line1": 13
+        }
+      ],
+      "source": "notes/units/P005_round3.md",
+      "anchor": "Fix the character and isolate the input",
+      "source_lines": [
+        7,
+        7
+      ],
+      "claim_sha256": "716e00d17848652f67b13487c4b192dd78fb3b01f80bf0e360d1e1c15300fb30",
+      "passage_sha256": "27d41de7143a702bccfa8c5d00e27a184900584d99cee1f947c6cadc782504b1",
+      "sha256": "579c282f705e15fcda34a644c058c8dd9027a48fdaf2f1bd15271eea9ed4acb9",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The gamma denominator is nonzero in both parity cases, so the completed L-function vanishes at the original point.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "standard: gamma factor formulas"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.VW.gammaFactor_ne_zero",
+          "file": "Formalism/GammaFactorNonvanishing/CritLine.lean",
+          "line0": 6,
+          "line1": 9
+        },
+        {
+          "name": "Formalism.VW.critLine",
+          "file": "Formalism/GammaFactorNonvanishing/CritLine.lean",
+          "line0": 11,
+          "line1": 27
+        }
+      ],
+      "source": "notes/units/P005_round3.md",
+      "anchor": "Pass to the completed function at the original point",
+      "source_lines": [
+        13,
+        13
+      ],
+      "claim_sha256": "bdc2ea2a4cf8239d6d99166088743343969fe6db574112b9a04926d749fcb8c0",
+      "passage_sha256": "9347e94b97845bda9e24a97cb83f020f17d9fe33858cd2bc709999a6bf04391a",
+      "sha256": "d603d0b1c66c5d95fb6ee38663701366b910dc370c44782ebdce3966bdb445c7",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The inverse character's functional equation transfers the left-side zero to a forbidden right-side zero; the original right branch is excluded directly.",
+      "kind": "case-split",
+      "uses": [
+        "S2",
+        "P009"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.VW.critLine",
+          "file": "Formalism/GammaFactorNonvanishing/CritLine.lean",
+          "line0": 11,
+          "line1": 27
+        }
+      ],
+      "source": "notes/units/P005_round3.md",
+      "anchor": "Apply the functional equation in the needed direction",
+      "source_lines": [
+        17,
+        17
+      ],
+      "claim_sha256": "096c2122df767386dabc38a4986957e29b891485f4d8e9fd4b85728421041db6",
+      "passage_sha256": "8e41ea7130de43e18c2ec902174af3445dcc1963a93c55a76968173063978dd4",
+      "sha256": "6805cce7698adc74b72e4a534b30a38090a72df74693bcbe2bfb9e210fa78c5b",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "5fddba93eba3c02c278a060bd3bb42665440698b26ba45f692ef568865ddb9a8",
+      "sources": [
+        {
+          "path": "notes/units/P005_round3.md",
+          "sha256": "33b39bf13949d640e4400367edd63dc83092e669e62f0ece8cb0ef8acda3eff9"
+        }
+      ],
+      "statement_sha256": "bbe8a1cc98ed59a4ac2418729f32e41f756f3e6c293f438c0d6876ca13897202",
+      "steps": {
+        "S1": "579c282f705e15fcda34a644c058c8dd9027a48fdaf2f1bd15271eea9ed4acb9",
+        "S2": "d603d0b1c66c5d95fb6ee38663701366b910dc370c44782ebdce3966bdb445c7",
+        "S3": "6805cce7698adc74b72e4a534b30a38090a72df74693bcbe2bfb9e210fa78c5b"
+      },
+      "step_texts": {
+        "S1": "The primitive open-strip target carries a fixed nonzero modulus and two strict real-part bounds.",
+        "S2": "The gamma denominator is nonzero in both parity cases, so the completed L-function vanishes at the original point.",
+        "S3": "The inverse character's functional equation transfers the left-side zero to a forbidden right-side zero; the original right branch is excluded directly."
+      },
+      "step_passages": {
+        "S1": "27d41de7143a702bccfa8c5d00e27a184900584d99cee1f947c6cadc782504b1",
+        "S2": "9347e94b97845bda9e24a97cb83f020f17d9fe33858cd2bc709999a6bf04391a",
+        "S3": "8e41ea7130de43e18c2ec902174af3445dcc1963a93c55a76968173063978dd4"
+      }
+    }
+  ]
+}

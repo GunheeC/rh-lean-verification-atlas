@@ -1,0 +1,170 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "P017",
+  "title": "Chebyshev control on a chain-tied family",
+  "track": {
+    "primary": "analytic",
+    "secondary": [
+      "galois",
+      "arakelov"
+    ]
+  },
+  "statement": "Let $\\mathcal L$ be a level. For all $e_D,e_L\\in\\mathbb R$, $\\varepsilon>0$, and every family $F$ at $\\varepsilon$ satisfying \\code{EFamC}$(\\mathcal L,F)$, suppose there exist $K,c_{HH},e_K,C_L,x_0\\in\\mathbb R$ such that at every $x\\ge x_0$ in $\\mathrm{Win}(F)$ the condition \\code{ChainTied}$(F;e_D,e_L,K,c_{HH},e_K,C_L;x)$ holds. Then some $x_1'$ satisfies\n\\[\n \\mathcal G_{\\mathcal L}(x)\\le x^{1/2+(e_D+e_L+7)\\varepsilon}\n \\qquad(x\\in\\mathrm{Win}(F),\\ x\\ge x_1').\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Fix a level, real $e_D,e_L$, $\\varepsilon>0$ and a family $F$ at $\\varepsilon$ satisfying the level explicit-formula condition EFamC.",
+    "There are fixed $K,c_{HH},e_K,C_L,x_0$ such that ChainTied holds on every window point $x\\ge x_0$ for this family with those same constants."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.Comparison₂.level_gm_le_on_family_scales",
+      "file": "Development/AutomorphicArithmetic/PrimitiveCosets/LevelGmLeOnFamilyScales.lean",
+      "line0": 28,
+      "line1": 30,
+      "sha256": "3ccafb3b79c94bca951834869fa86b0f798622473f991b8215748e8a3087b2d1",
+      "dominated": 3365,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/P017_v4.md",
+      "section": "A single eventual threshold for the whole tied family",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-3 written exposition, pending independent review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "6.17 (pn:P017)",
+      "pages": [
+        59,
+        59
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/P017.tex",
+      "section": "pn:P017",
+      "pages": []
+    },
+    {
+      "document": "paper2_v3",
+      "section": "The chain in detail: P017",
+      "pages": [
+        9,
+        13
+      ],
+      "coverage": "Shared subsection for this station, including subordinate inputs."
+    },
+    {
+      "document": "notes/units/P017-argument.tex",
+      "section": "r23:p017",
+      "pages": []
+    },
+    {
+      "document": "paper2_v4",
+      "section": "Mechanism, §3",
+      "pages": [
+        10,
+        20
+      ],
+      "coverage": "Paper v4, pending independent review."
+    }
+  ],
+  "status": "Full",
+  "grade": "L2",
+  "reviews": [
+    "reviews/R20_review.md",
+    "reviews/R23_review.md",
+    "reviews/DB3_review_A.md"
+  ],
+  "prerequisites": [
+    "B08",
+    "P021"
+  ],
+  "size_pages": 2,
+  "open_questions": [
+    "Where do the balance identity, width Lipschitz bound and thick-place identification enter the printed v3 proof, and which arguments are supplied for them?"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [
+    {
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "lines": [
+        49,
+        49
+      ],
+      "scope": "R20 local implication under its stated premises, not its prerequisite cones.",
+      "verdict": "Statement exact"
+    },
+    {
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "lines": [
+        104,
+        104
+      ],
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript.",
+      "verdict": "Exact statement comparison"
+    },
+    {
+      "grade": "L1",
+      "review": "reviews/R23_review.md",
+      "lines": [
+        27,
+        88
+      ],
+      "scope": "R23 window theorem; exact conditional statement, no approval of its lower proof suppliers.",
+      "verdict": "CORRECT WITH GAPS"
+    },
+    {
+      "review": "reviews/DB3_review_A.md",
+      "lines": [
+        86,
+        97
+      ],
+      "grade": "L2",
+      "verdict": "CONFIRMED",
+      "scope": "For each level and family with EFamC and ChainTied on its window, one eventual threshold gives the advertised Chebyshev inequality on that same window. Full written implication in the reviewed edition."
+    }
+  ],
+  "paper_id": "P017",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "chain-tied-chebyshev-window",
+  "aliases": [
+    "P017 window inequality",
+    "chain-tied family",
+    "level_gm_le_on_family_scales",
+    "P017 Chebyshev control on a chain-tied family"
+  ],
+  "background": [
+    "Smoothed character sums",
+    "Finite Fourier analysis",
+    "Uniform bounds on power windows"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "6.17 (pn:P017)",
+    "pages": [
+      59,
+      59
+    ]
+  },
+  "question_sources": [
+    "reviews/R23_review.md"
+  ],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "B08": "graph",
+    "P021": "graph"
+  },
+  "review_status": "ai_reviewed",
+  "summary": "If one family satisfies the character conditions and its inequalities hold together with fixed constants on its window tail, its level prime sum obeys a half-power bound there. The explicit epsilon loss records the division and loss exponents. A separate argument must supply the family and its windows."
+}

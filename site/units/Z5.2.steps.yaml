@@ -1,0 +1,156 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "Z5.2",
+  "edition_sha256": "b35bcde6d530dd096095cea7e57e037705531539b1f6239952c13358b5234efc",
+  "note_sha256": "1b8a2c88e2e62e008af949de1c7c774e3a76e9b2637bd78cba494e8f008291cb",
+  "statement_sha256": "c0ad035ea83795bec01e6a5c8c6fe79a7a40d41883f2c5979fbb18f2287d9532",
+  "sources": [
+    {
+      "path": "notes/blueprint/Z5.2.tex",
+      "sha256": "1b8a2c88e2e62e008af949de1c7c774e3a76e9b2637bd78cba494e8f008291cb"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Twice the complex conjugate of the realization of the trace dual equals the Euclidean dual lattice.",
+      "kind": "computation",
+      "uses": [
+        "Z5.1",
+        "input: trace pairing"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.HN.DualPolygon.dualZ_zl_eq",
+          "file": "Formalism/HarderNarasimhan/HarderNarasimhanProofs/DualPl.lean",
+          "line0": 196,
+          "line1": 310
+        }
+      ],
+      "source": "notes/blueprint/Z5.2.tex",
+      "anchor": "The Euclidean dual is exactly $L^\\#=2J\\rho' T$. Indeed, pairing the",
+      "source_lines": [
+        7,
+        35
+      ],
+      "claim_sha256": "8a9d26fdbd024771e541532443a02d529120cc10fc969c08f0fb89ffbe91dff3",
+      "passage_sha256": "5ba87dd47aada385a1aee11b60ff57489400b7fb6584b455431a720a1192b54c",
+      "sha256": "474312383c95e29ad6f8272eb4a4abc82d15f8c6046cae9aa128c05fb4c191f7",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The covolume of the realized trace dual is the reciprocal primal covolume times two to the negative real dimension.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "standard: dual basis matrix"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.HN.DualPolygon.dualZ_zl_eq",
+          "file": "Formalism/HarderNarasimhan/HarderNarasimhanProofs/DualPl.lean",
+          "line0": 196,
+          "line1": 310
+        }
+      ],
+      "source": "notes/blueprint/Z5.2.tex",
+      "anchor": "A Euclidean lattice with basis matrix $H$ has dual basis $H^{-t}$.",
+      "source_lines": [
+        7,
+        35
+      ],
+      "claim_sha256": "e174568f49b6e23738a5aa33c3f33dd83462fa6f3d6422cc92c967e13f198909",
+      "passage_sha256": "5ba87dd47aada385a1aee11b60ff57489400b7fb6584b455431a720a1192b54c",
+      "sha256": "ff53cc5129821c2dcfa8dded33ac8cf90fbda69f747360d531a20e0401ea35ea",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The codifferent contains the integer ring with index equal to the absolute discriminant.",
+      "kind": "computation",
+      "uses": [
+        "standard: discriminant of the trace pairing"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.HN.DualPolygon.twist_index",
+          "file": "Formalism/HarderNarasimhan/HarderNarasimhanProofs/DualPl.lean",
+          "line0": 689,
+          "line1": 728
+        }
+      ],
+      "source": "notes/blueprint/Z5.2.tex",
+      "anchor": "has a full real realization. In the integral basis $\\omega_i$ the",
+      "source_lines": [
+        37,
+        65
+      ],
+      "claim_sha256": "3aad59747adf5c11a5a90b455277cd581c62b57d6f901879f08760b9520606d2",
+      "passage_sha256": "b95a1570dd065d1f6b781c4ea8e72505145333112d8821007b4ca6cc5994d559",
+      "sha256": "1a2d218bbaf773af8a107043f46d6c2e919faa09c29367dbe812488e8a240bc2",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "Local freeness gives the trace-dual to integral-dual index as the absolute discriminant to the lattice rank.",
+      "kind": "assembly",
+      "uses": [
+        "S3",
+        "input: finite presented lattice"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.HN.DualPolygon.key_lemma",
+          "file": "Formalism/HarderNarasimhan/HarderNarasimhanProofs/DualPl.lean",
+          "line0": 947,
+          "line1": 955
+        }
+      ],
+      "source": "notes/blueprint/Z5.2.tex",
+      "anchor": "At each nonzero prime $\\mathfrak p$, $A_{\\mathfrak p}$ is free of rank $D$",
+      "source_lines": [
+        37,
+        65
+      ],
+      "claim_sha256": "3ecb950a86260db4050e41698c38455dafe4f58f6a9b07e2924a44868b8486e8",
+      "passage_sha256": "b95a1570dd065d1f6b781c4ea8e72505145333112d8821007b4ca6cc5994d559",
+      "sha256": "139a64949b3a3bfdaf6622c0808d699849562ef09ecb60422addc4eaa633d050",
+      "ai_review": []
+    },
+    {
+      "id": "S5",
+      "status": "active",
+      "claim": "The two height normalizations cancel the covolume factor, leaving product one.",
+      "kind": "computation",
+      "uses": [
+        "S2",
+        "S4",
+        "Z5.1"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.HN.DualPolygon.ht_dual",
+          "file": "Formalism/HarderNarasimhan/HarderNarasimhanProofs/DualPl.lean",
+          "line0": 1065,
+          "line1": 1073
+        }
+      ],
+      "source": "notes/blueprint/Z5.2.tex",
+      "anchor": "Each height contributes $2^{fD}\\Delta^{-D/2}$, so their product is one",
+      "source_lines": [
+        37,
+        65
+      ],
+      "claim_sha256": "1cac3a693f8376985e0f306faa8f96c6e98e2cb8f8b989660d6bbe106349b0e6",
+      "passage_sha256": "b95a1570dd065d1f6b781c4ea8e72505145333112d8821007b4ca6cc5994d559",
+      "sha256": "51f4f8f5956f954b9b5027c31f00dcb95857690b7fb2c962904dd499767b606e",
+      "ai_review": []
+    }
+  ],
+  "history": []
+}

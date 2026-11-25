@@ -1,0 +1,78 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D077",
+  "title": "Ordinary Eisenstein lifts at split primes",
+  "track": {
+    "primary": "galois",
+    "secondary": [
+      "local"
+    ]
+  },
+  "statement": "At split primes satisfying the slope test, every sufficiently large weight of the correct parity gives the specified Eisenstein lift with its local conditions and unlinked adjoint.\n\\[\n\\mathrm{HypothesesH}'\\ \\Longrightarrow\\ \\mathrm{PropEGW}.\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume the automorphic input record $H'$.",
+    "Take a split prime satisfying the slope test and a sufficiently large weight of the specified parity."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.Z.Sym.W.prop_eg_w_of_printed_hida",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TPropEGW.lean",
+      "line0": 9,
+      "line1": 14,
+      "sha256": "f2d3117d3e62942a3591d669f60941150d051753aa9f1554f9da507a8e06b9b6",
+      "dominated": 8260,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "G.83 (decomp:D077)",
+      "pages": [
+        178,
+        178
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D077.tex",
+      "section": "decomp:D077",
+      "pages": []
+    }
+  ],
+  "status": "Statement only",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [],
+  "paper_id": "D077",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "ordinary-eisenstein-lifts-at-split-primes",
+  "aliases": [
+    "D077 Ordinary Eisenstein lifts at split primes"
+  ],
+  "background": [
+    "Ordinary Hida families",
+    "Eisenstein congruences"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.83 (decomp:D077)",
+    "pages": [
+      178,
+      178
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {}
+}

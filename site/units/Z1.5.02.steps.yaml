@@ -1,0 +1,156 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "Z1.5.02",
+  "edition_sha256": "40a3bead1f72287eb519981ebe3b2b7ebcee1d8c8c5b5f66ee5259515064d2fb",
+  "note_sha256": "a06c58fd9060b5679976face95e69c170a5b1795d995005d9ebfd65384424b35",
+  "statement_sha256": "1fbcbed64b7fae3269636e453456a54d2f68225708dfbfc5d8b81652e75c0414",
+  "sources": [
+    {
+      "path": "notes/blueprint/Z1.5.02.tex",
+      "sha256": "a06c58fd9060b5679976face95e69c170a5b1795d995005d9ebfd65384424b35"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Finite edge representatives bound the size of the normalized flag complex needed for the cohomology estimate.",
+      "kind": "computation",
+      "uses": [
+        "input: finitely many edge orbits"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Af.card_k_of_printed_results",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TCardK.lean",
+          "line0": 18,
+          "line1": 36
+        }
+      ],
+      "source": "notes/blueprint/Z1.5.02.tex",
+      "anchor": "Choose a finite set",
+      "source_lines": [
+        41,
+        42
+      ],
+      "claim_sha256": "173b7100dbacb26d25011e34b3c69ae4b68b83f7ca45c94d7a66e9bd2b70a282",
+      "passage_sha256": "0de95adf200b0e1658074872de5ca44158b67f56a741b57fb2cb0c697230d65a",
+      "sha256": "e618b23fadc2108c4883c65aaa2fbcd36bf89c423d5337937c584f2d694c1d2f",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The signed averaging projection is compatible with the boundary and restricts the range of degrees that can contribute.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "standard: alternating chain projection"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Af.card_k_of_printed_results",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TCardK.lean",
+          "line0": 18,
+          "line1": 36
+        }
+      ],
+      "source": "notes/blueprint/Z1.5.02.tex",
+      "anchor": "Apply the normalized signed average",
+      "source_lines": [
+        44,
+        45
+      ],
+      "claim_sha256": "757bf87ec00d29ba05b181ba67ff92d24b987358d6872f452511aa105fe16632",
+      "passage_sha256": "327be4eb699ae038a7070f8fbfd94265cb37e7292566d0ce8ba57af165afb76b",
+      "sha256": "595a503822b07950e3ffc8db2d6b55b139136c820c3864b3d1810c2dc76155e5",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The relevant arithmetic stabilizer cohomology bounds the size of the inequivalent cuspidal family with the specified level and coefficient representation.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S2",
+        "input: cohomological contribution and injection"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Af.card_k_of_printed_results",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TCardK.lean",
+          "line0": 18,
+          "line1": 36
+        }
+      ],
+      "source": "notes/blueprint/Z1.5.02.tex",
+      "anchor": "For the counting application",
+      "source_lines": [
+        52,
+        53
+      ],
+      "claim_sha256": "2977cda13ed62e440ca7949be6d54cae3380106151bb4ce25a1d6c0c75ed42b1",
+      "passage_sha256": "3ac8f70475943d473062f6f1762a4304538ee87a734ff78739ce2431f6ad0763",
+      "sha256": "c80e68f44d7645fe23afa6808ce66440ba829cd222ab6991375704f289311060",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "Bounding the congruence subgroup index by reduction modulo three times the level and using the coefficient dimension gives the polynomial count.",
+      "kind": "inequality",
+      "uses": [
+        "S3",
+        "Z1.5.01"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Af.card_k_of_printed_results",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TCardK.lean",
+          "line0": 18,
+          "line1": 36
+        }
+      ],
+      "source": "notes/blueprint/Z1.5.02.tex",
+      "anchor": "Finally $h",
+      "source_lines": [
+        63,
+        64
+      ],
+      "claim_sha256": "7f86c4dd2474a33feb78442a6a3fd10a4482c1fb422494fb7db234b67b066b1a",
+      "passage_sha256": "ccfaf85c30382b6d7461634ac5b706727789aaabcbdda728f869ccd53fdf9185",
+      "sha256": "7fc7e0e4815181c8c89566d89b1aafc66a62630d338a2c868d12de908af1cedf",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "ed09a8fc15b75309df318ffb85cb45a4a055e7c97e93b298ee1ea8c6e44d972f",
+      "sources": [
+        {
+          "path": "notes/blueprint/Z1.5.02.tex",
+          "sha256": "1be4cb8d5f18f6eda9628342def274c0678a07aeafcb738446bccdab63b01aba"
+        }
+      ],
+      "statement_sha256": "1fbcbed64b7fae3269636e453456a54d2f68225708dfbfc5d8b81652e75c0414",
+      "steps": {
+        "S1": "e618b23fadc2108c4883c65aaa2fbcd36bf89c423d5337937c584f2d694c1d2f",
+        "S2": "595a503822b07950e3ffc8db2d6b55b139136c820c3864b3d1810c2dc76155e5",
+        "S3": "c80e68f44d7645fe23afa6808ce66440ba829cd222ab6991375704f289311060",
+        "S4": "7fc7e0e4815181c8c89566d89b1aafc66a62630d338a2c868d12de908af1cedf"
+      },
+      "step_texts": {
+        "S1": "Finite edge representatives bound the size of the normalized flag complex needed for the cohomology estimate.",
+        "S2": "The signed averaging projection is compatible with the boundary and restricts the range of degrees that can contribute.",
+        "S3": "The relevant arithmetic stabilizer cohomology bounds the size of the inequivalent cuspidal family with the specified level and coefficient representation.",
+        "S4": "Bounding the congruence subgroup index by reduction modulo three times the level and using the coefficient dimension gives the polynomial count."
+      },
+      "step_passages": {
+        "S1": "0de95adf200b0e1658074872de5ca44158b67f56a741b57fb2cb0c697230d65a",
+        "S2": "327be4eb699ae038a7070f8fbfd94265cb37e7292566d0ce8ba57af165afb76b",
+        "S3": "3ac8f70475943d473062f6f1762a4304538ee87a734ff78739ce2431f6ad0763",
+        "S4": "ccfaf85c30382b6d7461634ac5b706727789aaabcbdda728f869ccd53fdf9185"
+      }
+    }
+  ]
+}

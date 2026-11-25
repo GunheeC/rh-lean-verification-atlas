@@ -1,0 +1,888 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% RH Notes blueprint source excerpts for Z4.3
+% Verbatim excerpts in the notation of the parent blueprint. The labelled editions and source ranges appear below.
+% See the unit YAML for the current proof status. Earlier-round passages retain their original wording.
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+The first status refers to the input of the common-good-model construction. Hensel lifting is used in the later local calculation. The reference to a Weil operator names an object in that calculation.
+\noindent\nolinkurl{GlobalTheory.Published.GlobalArtinReciprocity} --- hypothesis at this head (\path{Development/AbelianVarietyTheory/PublishedTheorems/AutomorphicForms₂/ExistsUniqueHcharOfFiniteOrder.lean:70--72}); not compared.\par
+\noindent\nolinkurl{GlobalTheory.Corev.CmTwoClosing.cmGoodModel_of_globalArtinReciprocity} --- in-repo constant (\path{Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/CmGoodModelOfGlobalArtinReciprocity.lean:10--11}); not compared.\par
+\noindent\nolinkurl{GlobalTheory.T.chebotarev_degreeOne_valuationSubrings} --- in-repo constant (\path{Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/ChebotarevDegreeOneValuationSubringsStatement.lean:5--6}); not compared.\par
+External theorem numbers in the original excerpt are not verified here unless a separate edition-specific source record documents the comparison.
+% End of atlas edition annotation.
+
+\section*{Z4.3. Off-level kernel valuations}
+
+% Parent source SHA-256: 1af64922b98ed2310744411b1f18b25cc426c97220646321471836e1a3a409d6
+% blueprint/ch_P.tex lines 12700 through 12975; r6:Z4.3
+\subsection*{Z4.3. Rational class pairs, complex forms and the common CM model}
+\phantomsection\label{r6:Z4.3}
+Fix the true columns, the standard tie for the selected kernel $t$ on
+$\mathrm{ex}$, and the twist identification of
+Paragraph~\ref{par:r5-z43-ties}. Write $F$ for the coefficient field,
+$\sigma:F\hookrightarrow\mathbf C$ for its given embedding and $C$ for
+the twisted chain of a word $u$ and a used tuple $\mu$. Two statements
+have different quantifiers. For each off-level place, each $i<m$, each
+pair $c,c'$ and each rational source vector, one needs a rational
+target vector for the entries of $t$. For the complex form spaces one
+needs the operator of $C$ to carry $F_i$ into $F_{i+1}$, both on the
+used twists and on the member chain.
+See \path{KmapRat}, \path{KFi} (\path{Formalism/SharpRestriction/Divisibility/OrbitPlaces.lean:107--109,1367--1369})
+and \path{at_of_true_columns} (\path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/AtOfTrueColumns.lean:30--47}).
+
+\paragraph{The rational vector for an individual pair.}
+Let $\nu_i(\tau,r)$ be the integral polynomial weight of the class
+kernel and $k_i(\tau)$ its last coordinate, for $i<m$.
+Antitonicity gives $0\le k_i(\tau)\le\nu_i(\tau,r)$.
+Use the weight with natural part $\nu_i-k_i$ and evaluation shift
+$s_i$, where $s_0=k_0-s^\sharp_0$ and $s_{i+1}=-s^{\rm div}_i$.
+At an interior step the old weight coordinates increase by
+$s^\sharp_{i+1}-s^{\rm div}_i$ and the new coordinates all equal
+this increment. In fact the indices $N_i+a$, $0\le a<t_0+1$,
+have quotient $i$ and remainder $a$ after subtracting the initial
+rank and dividing by the rank increment $t_0+1$. Consequently the
+natural part at $i+1$ is precisely $\nu_i$ padded by zeros,
+and $s_i+s^\sharp_i=k_i$. At the terminal step this padding is
+the definition of the last weight. Thus this calculation includes
+$i=m-1$. See \path{nu_step_old}, \path{nu_step_new}, \path{wtTie_meet},
+\path{natW_succ} (\path{Development/AbelianVarietyTheory/Definitions/GaloisGeometry/KernelRationalReferenceTuple.lean:17--63,65--132,133--215,346--420}).
+
+Here is the evaluation comparison over $F$. Write
+$D_k(Y)=\prod_\tau\det(Y_\tau)^{k(\tau)}$. In each block the
+bideterminants spanning the dual Weyl space have exactly as many
+full-size factors as the last coordinate of their shape. A full-size
+factor either repeats a row and vanishes or equals the determinant
+up to sign. Hence the indicated power divides every generator.
+Taking products over blocks and finite linear combinations gives
+$D_k\mid Q$ for the weight-$\nu$ polynomial $Q$. Write $Q=D_kP$.
+Under invertible triangular column substitution, $D_k$ acquires
+the character $\prod_\tau(\prod_r\beta_{\tau,rr})^{k(\tau)}$.
+This scalar and $D_k$ are nonzero (evaluate the latter at identities).
+Cancelling them proves the required weight $\nu-k$ for $P$.
+On the initial frame $\det^{-s^\sharp_0}Q$ thus evaluates as
+$\det^{s_0}P$ block by block, and multiplication by $D_k$ gives
+the converse inclusion. At higher levels the preceding padding
+identifies the polynomial spaces directly. Quotienting by the kernel
+of evaluation preserves the range since every coset has a
+representative. This identifies the range of the \emph{actual} entry
+evaluation at both ends by the equality in $\mathrm{IsEntC}(t)$.
+See \path{range_evC}, \path{vqTie_kerEntC},
+\path{gdet_pow_dvd_dualWeyl}, \path{dk_dvd_wtPol},
+\path{frameWeightPolyDivByDet_proof}
+(\path{Development/AbelianVarietyTheory/Definitions/GaloisGeometry/KernelRationalReferenceTuple.lean:442--531,545--608,624--674}).
+
+Fix $v$ and choose $P$ representing its shifted evaluation. Put
+$z=\rho_i(c)\rho'_i(c')$. The two factors have norm one.
+For a derivative index $a$ of multidegree
+$d_\tau=\sum_r\nu_i(\tau,r)$ in block $\tau$, choose $J_a\in F$
+with $\sigma(J_a)=z\,\mathrm{jet}_a(\Theta_{cc'})$. To see why the
+specified class kernel has this property, use the support and
+period of its finite datum to sum over the finite quotient of the
+divided hom lattice by the multiplied hom lattice. The individual
+translates are smooth, so the jet of the sum is the sum of the jets.
+The determinant-character identity and the weights of the finite
+datum put the remaining scalar factors in $\sigma(F)$. For each
+representative the true-column hypothesis \path{JetsIn} gives the
+required field element for the remaining product at degree $d_\tau$.
+The equality between that degree and the true-column degree is obtained
+by taking natural floors of the nonnegative integral weight entries
+and summing. The standard tie identifies the differential generators
+and the theta function of $t$ with these true-column data.
+See \path{rho_jet_mem}, \path{rk_of_std}
+(\path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/TrueKernelJetsMulDetCharactersMemCoefficientFiel.lean:24--68},
+\path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/CoefficientFieldConditionOfStandardKernelCompari.lean:18--55}).
+
+Set $J_a=0$ at other degrees. The differential polynomial formed
+from $D_{k_i}P$ only uses multidegree $(d_\tau)_\tau$. Thus its jet
+map is unchanged after applying $\sigma$ to this choice of
+coefficients. Unfolding the pair operator on the polynomial model
+and using $z\ne0$ identifies its complex output with the evaluation
+of $\mathrm{jetMap}(J,k_i,P)$, with the target shift
+$-s_i^{\rm div}$. The target weight is the padded weight just
+computed. The range equality therefore supplies $v'$ in the
+rational target quotient with exactly the required evaluation.
+The argument works for each off-level place in the definition.
+See \path{wtTie_meet}, \path{kmapRat_of_vqU},
+\path{kmapRat_kerEntC'} (\path{Development/AbelianVarietyTheory/Definitions/GaloisGeometry/KernelRationalReferenceTuple.lean:133--215,244--278,685--687}).
+
+\paragraph{The stabilizer calculation on the same chain.}
+Use the true-column standard reader in the auxiliary tied record
+$t'$. It is constructed with $I.\mathrm{kerRd}$ and its standard
+top chain; the lattice and theta comparison equations are transported
+to this reader. It is a record on the \emph{same} $\mathrm{ex}$.
+In its frame the complex Young span is the polynomial value space.
+The action fixing a class is given by left multiplication by the
+matrix of its stabilizer with the attached character. Thus the two
+tests for membership at a positive level are the polynomial value
+test and this transformation law, with the actual frame and weight
+of the true columns. The standard level reader identifies its
+stabilizers with these specified points. See \path{stdKer_stdRd},
+\path{stab_pin}, \path{formsAre_stabStd}, \path{duty_of_std}
+(\path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/StandardKernelDataWithStandardBaseLevels.lean:14--36},
+\path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/TrueChainStabilisersEqStandardBaseLevelPoints.lean:24--65},
+\path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/TrueChainComplexFormsStabiliserLaw.lean:18--57,69--117},
+\path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/ConditionsAtStandardKernelComparisonTrueColumns.lean:16--24}).
+
+Fix a target stabilizer represented by $\gamma$ with multiplier $k$
+over the finite coefficient field. It preserves the target lattice.
+The test function $\Xi$ is invariant under addition of the level
+multiple of the hom lattice. Before the first coupled step use the
+source identity and change only the target frame. At the first
+coupled step the stabilizer additionally fixes the coupling class,
+so its chosen representative can change by an allowed period. At the
+last step apply the top-data law at a level prime and the double-depth
+congruence at the other primes; the inverse target-frame matrix is
+the level-group element there. Multiplying the local identities gives
+$\Xi(\gamma x)M=\sigma_0(k)\Xi(x)$, with $M$ the product of the
+embedded finite character values at $\det\gamma$. These are the
+three cases $i<m_2$, $i=m_2$ and $i=m_2+1$.
+See \path{term_law}, \path{xiEntry_stab}, \path{xiCpl1_stab}
+and the top-level product calculation
+(\path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/ClassSumTermLawStabiliserTarget.lean:25--70}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/XiEntryStab.lean:13--37},
+\path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/XiCpl1Stab.lean:21--54}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/LastStepDatumLawTopLevelStabilizer.lean:87--156}).
+
+Write $d=\det\gamma$. It is a norm-one unit. The global character
+identity gives $M=\prod_\tau\tau(d)^{-e_i(\tau)}$ with
+$e_i=s^{\rm div}_i+N_i/2$. The common half-rank factor drops out
+because $\prod_\tau\tau(d)=1$. In particular $M\ne0$.
+Reindexing the finite lattice sum by $\gamma$ uses the first covariance law
+at a target stabilizer (Section~\ref{r14:equivariance}). Under its suppliers
+this makes the entire theta function
+an eigenfunction of left multiplication with eigenvalue
+$\sigma_0(k)/M$. Its differentiability follows by taking the finite
+sum of the differentiable translated vacua and composing with the
+linear change of archimedean coordinates. Applying the polynomial
+differential operator at zero after changing the target frame
+multiplies the answer by this same eigenvalue, by the chain rule
+with the inverse target matrix. The target determinant in the
+denominator contributes precisely $M$. Hence the pair term acquires
+$\sigma_0(k)$, including its character. Its polynomial value has the
+target weight by the same padded-weight jet calculation over
+$\mathbf C$. See \path{termLaw_of_xi}, \path{thC_left_stab},
+\path{kerTie_entire}, \path{applyAt0_polD_eigen}, \path{lawAt_Kmap}
+(\path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/PairKernelLawOfFiniteDatumLaw.lean:21--59,85--121}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/ThCLeftStab.lean:368--420},
+\path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/KerTieEntire.lean:12--24}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/PairKernelTermTargetStabiliserLaw.lean:18--75},
+\path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/PairKernelMapsStepWeightValues.lean:19--33}).
+
+For each $c'$ sum the pair terms with the source weights $C.\mathrm{wt}_i(c)$.
+Both tests are linear, proving membership in $F_{i+1}$.
+At the reference tuple the given isomorphism of rational lattices
+intertwines their evaluations on the common chain. The spans of all
+evaluated vectors agree at $i$ and $i+1$ (expand in either lattice
+basis), giving the member-chain assertion as well. This proves
+$\mathrm{KFi}(D,\mathrm{ex.tw})$ from $t'$, while the rational class-pair
+assertion above is on $t.\mathrm{ent}$. These are precisely the two
+separate arguments required by the rational kernel form.
+See \path{K_mem_Fi}, \path{carries_one}, \path{kFi_of_tie},
+\path{KernelFormRational} (\path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/KernelOperatorMapsStabiliserEquivariantForms.lean:11--38},
+\path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/MemberFormsStableOfReferenceTuple.lean:7--47}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/KernelClassSumsCarryChainComplexForms.lean:13--25},
+\path{Formalism/SharpRestriction/Divisibility/OrbitPlaces.lean:1374--1375}).
+
+\paragraph{The common good model and its uses.}
+The row construction takes global Artin reciprocity as its stated input.
+The induced ideal-class map kills inertia and sends arithmetic
+Frobenius to the class of the prime. To see where this gives the
+unramified CM invariant, take an integral monic polynomial of the CM
+value $j$ and remove the finite primes dividing an integer separating
+its distinct roots upon reduction. Intersect the open kernel of the
+class map with the subgroup fixing all those roots. Degree-one
+Chebotarev in this finite quotient represents the coset of a given
+inertia element by a Frobenius outside the discarded set. Its ideal
+class is trivial. The CM Frobenius congruence there and the arithmetic
+Frobenius congruence imply that the root and its transform have equal
+reduction. Root separation makes them equal, and equality of the
+cosets gives the same conclusion for the original inertia element.
+Thus $j$ is integral and its image is in the completed maximal
+unramified extension at the required $p$. See \path{inertia_fixes},
+\path{good_model}, \path{cmGoodModel_of_globalArtinReciprocity}
+(\path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/CmLatticeGoodModelUnramified.lean:10--69}, \path{Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/CmGoodModelOfGlobalArtinReciprocity.lean:10--11}).
+
+There is a further valuation step from $j$ to a short model.
+Write $J=\iota(j)$. For $J=0$ and $J=1728$ use $(g_2,g_3)=(0,1)$
+and $(1,0)$ respectively, scaling by a sixth or fourth root in
+$\mathbf C_p$. In the other cases, normalize a homothetic lattice
+so that both invariants equal $C=27J/(J-1728)$. When $|J|<1$ put
+$|J|=p^n$; after scaling to discriminant one by $b$ this gives
+$|b|^{12}p^{2n}=1$. Take one point from each sign pair in an odd CM
+endomorphism kernel of order coprime to $3p$ so its resulting size
+$t$ is nonzero modulo 3. In the ramified-at-three case the construction
+takes the intersection of the kernels of an auxiliary prime and
+$r+\sqrt{-d}$ with prime valuation exactly one in its norm.
+The root polynomial of the kernel, or the common roots of the two
+kernel polynomials, puts the product of their $\wp$-coordinates in
+the unramified field. Its norm is $p^a$ for integral $a$. Each scaled
+coordinate is a unit by the prime-to-order torsion test at the
+exceptional reduction, so $|b|^{2t}p^a=1$. Eliminating $|b|$ gives
+$nt=3a$, hence $3\mid n$. When $|J-1728|=p^n<1$ the discriminant
+calculation instead gives $|b|^4=p^n$. The same argument with $t$
+odd gives $nt=-2a$ and $2\mid n$. In the unit cases the respective
+exponent is zero. Write $|J|=p^{3m}$, $|J-1728|=p^{2n}$ and put
+$h=p^{m-n}$. The model $(h^2 C,h^3 C)$ has discriminant
+$h^6 C^2(C-27)$ of norm one; the cubes and squares of its
+coefficient norms are $|J|$ and $|J-1728|$. The common scaling exists
+because $C$ is the ratio of the cube and square of the original two
+invariants. This gives the witnesses for CM2 at $p\ge5$, $p\nmid d$,
+for the specified $\iota$. See \path{kerProd_prin}, \path{kerProd_ideal},
+\path{unit_prod}, \path{valDiv3}, \path{valDiv2}, \path{model_generic},
+\path{model_of_valDiv} (\path{ReciprocityTheory/ReductiveGroups/UnramifiedIntegrals/RedKerPrin.lean:30--91}, \path{ReciprocityTheory/ReductiveGroups/UnramifiedIntegrals/RedKerIdeal.lean:33--79},
+\path{ReciprocityTheory/ReductiveGroups/UnramifiedIntegrals/RedValB.lean:40--52}, \path{ReciprocityTheory/ReductiveGroups/UnramifiedIntegrals/NormWeierstrassCoeffSmallJ.lean:98--185},
+\path{ReciprocityTheory/ReductiveGroups/UnramifiedIntegrals/Norm1728EqOneOfFiveLe.lean:45--148}, \path{ReciprocityTheory/ReductiveGroups/UnramifiedIntegrals/RedModel.lean:42--126,128--189}).
+
+For the curve dictionary the additional input is CM4: prime-to-$p$
+nonzero torsion gives a nonidentity point on the scaled short curve.
+Inertia acts trivially on this prime-to-$p$ torsion in the good
+reduction argument. Reduction of a nonidentity such point is
+nonidentity, since the formal group has no nonzero prime-to-$p$
+torsion. Its two affine coordinates are consequently integral and
+unramified. The second coordinate in the short model uses
+$b^3\wp'/2$; multiplying by $2$ preserves both conclusions. The
+dictionary uses CM2 and this torsion statement; its CM3 parameter is
+unused. Conversely the lattice model removes the inert-prime ideal
+factor preserving the scaled lattice, then constructs the model of
+the coprime ideal from CM2 and CM3; its CM4 parameter is unused.
+This dependence is visible in the proof terms, although both public
+signatures accept all three propositions. See \path{cmTorsion_of_point},
+\path{cm4}, \path{datum_exists_lattice}, \path{curveDict_of_cm}
+(\path{ReciprocityTheory/ReductiveGroups/UnramifiedIntegrals/TorStatus.lean:15--38}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsRingEquivTranscendental.lean:277--351},
+\path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/CurveDictOfCm.lean:17--20}).
+
+\emph{The hand proof of the following height-two implication for the specified CM3 model is on page~\pageref{r9:Z4.3}.}
+Let $U$ be the completed maximal unramified field at this inert
+prime, $\varphi$ its isometric Frobenius lift and $\lambda$ the
+normalized short-curve logarithm. The integral two-variable law
+$\Phi$ has logarithm $\lambda$, and the integral endomorphism $A$
+has zero constant and satisfies $\lambda(A)=a\lambda$,
+$|\varphi(a)-a|=1$, $\varphi^2(a)=a$. Its multiplier is the
+embedded CM generator. Let $e=[p]$ have zero constant, integral
+coefficients, $\lambda(e)=p\lambda$, and a coefficient of norm one
+at some degree $i\le p^2$. The comparison for this logarithm is the coefficient estimate
+\[
+ \exists c\in U,\quad |c|=1,\qquad
+ \lambda(X)-\frac{c}{p}(\varphi^2\lambda)(X^{p^2})
+       \in\mathcal O_U[[X]] .
+\]
+Frobenius acts on coefficients here. The source uses the comparison
+of the short multiplication-by-$p$ series and its logarithm, then
+twisted division to eliminate higher Frobenius iterates in this
+estimate. This is the particular implication \path{hon_main},
+specialized in \path{cm3}, rather than an unspecified choice of CM
+curve. Given its unit $c$, solve $\epsilon=c\varphi^2(\epsilon)$
+among units by successive lifts from the algebraically closed residue
+field. The formal inverse-logarithm comparison then gives integral
+coefficients of
+$u_{g_2,g_3}(\epsilon\sum_{j\ge0}X^{p^{2j}}/p^j)$ in $U$.
+This is the required integral height-two coordinate, with unit linear
+term. See \path{HD}, \path{hon_main}, \path{lang_semilinear},
+\path{fin_integral}, \path{cm3}
+(\path{ReciprocityTheory/ReductiveGroups/UnramifiedIntegrals/FgDefs.lean:14--28}, \path{ReciprocityTheory/ReductiveGroups/UnramifiedIntegrals/FgHonH.lean:220--256}, \path{ReciprocityTheory/ReductiveGroups/UnramifiedIntegrals/SemilinNormPowSubPow.lean:76--101},
+\path{ReciprocityTheory/ReductiveGroups/UnramifiedIntegrals/FgFinA.lean:115--132}, \path{ReciprocityTheory/ReductiveGroups/UnramifiedIntegrals/FgClose.lean:25--91}).
+
+The algebraicity of the translated Taylor coefficients is supplied
+separately: a torsion point lies in the saturated lattice, the
+normalized translated vacuum has algebraic jets there, and multiplying
+by the algebraic character factor preserves algebraicity. In the row
+service the one CM2 proposition supplies the three-output theorem,
+inert integrality, inert admissibility and the formal-curve existence
+argument. With the height-two coordinate, the common curve, basis
+and input quantifiers are precisely those of
+Paragraph~\ref{par:r4-z43-host}. The place and embedding are fixed before
+choosing the local frame, which is then available for every allowed
+translate. For the selected row the shared rational unitary covariance, including its target-stabilizer use, still depends on its suppliers. The finite expansion has been hand-derived under the translated-jet and reader hypotheses (the two original questions are on p.~\pageref{r9:z43-open}). The suppliers at the individual callers are registered on p.~\pageref{r10:z43-register}. These hypotheses identify the data to which the class-pair map, complex-form preservation and four-way numerical comparison apply. See \path{algTAll}, \path{servH_row_of_artin},
+\path{torsionTaylorAlgebraic_latticeExists_of_cm}, \path{at_of_true_columns}
+(\path{Development/AbelianVarietyTheory/Definitions/GaloisGeometry/AlgTAll.lean:12--25}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/BundleBothPartsOfStandardKernelOfGlobalArtinReci.lean:15--24},
+\path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/TorsionTaylorAlgebraicLatticeExistsOfCm.lean:15--19}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/AtOfTrueColumns.lean:30--47}).
+
+% Parent source SHA-256: 99a8461100a8be8176578b515f15d452958d95ac91f86554c8727ce0a98ee36e
+% blueprint/ch_P_r14.tex lines 1333 through 1509; r14:comb-tied, r14:comb-seam, r14:comb-pseries
+\subsection{The selected reader and its $p$-adic combination (Z4.3(ii))}
+\label{r14:comb-tied}
+
+Fix a tied entry $t$ on the data $(D,L,h_T,G_i,G_l,K,Y,c_X,\mathrm{ex})$.
+Let $u,\mu$ be its word and tuple, $i<m$ and $(c,c')$ any classes
+in steps $i,i+1$. Write $r=t.\mathrm{rd}(u,\mu)$, $s=t.\mathrm{seam}$,
+$A=t.\mathrm{amb}$, $T=t.B.\mathrm{tor}$ and
+$e=t.B.e^{\rm nat}(t.\chi)$. Set $M=r.N_i(c)$, $M'=r.N_{i+1}(c')$,
+$L_0=s.\mathrm{lat}(M)$, $L_1=s.\mathrm{lat}(M')$ and
+$S=(t.O(u,\mu)).S$. At a level-free place $w$, put
+$p=\operatorname{resChar}(w)$ and $\lambda=t.\mathrm{ent}.\mathrm{lam}(w)$.
+The assertion to submit is the precise implication of
+\nolinkurl{GlobalTheory.Ggeo.KerComb.comb_of_tied}. Assuming
+\nolinkurl{AlgTAll} and $t.\mathrm{Hyp}$, the ordered lattice pair is
+admitted and the $p$-series of this very class-pair kernel satisfies
+\nolinkurl{TaylorLogMetric.IsComb} for $T,e,\lambda,L_0,L_1$.
+The site theorem used for Z4.2.04 has a different conclusion, $J.\mathrm{Dict}
+\Rightarrow S_{\rm site}.\mathrm{Pair}$. The common calculation is
+the complex finite expansion of Section~\ref{r14:pair-kernel}.
+See \path{SatakeParameters/CombOfTied.lean:14--33} and
+\path{SatakeParameters/KernelSiteLatticeTuplePairsAdmissible.lean:23--45}.
+
+\paragraph{Transport of this kernel to the chosen period lattice.}
+\phantomsection\label{r14:comb-seam}
+Specialize $t.\mathrm{Hyp}$ at $u,\mu,i$. It gives
+$A.\mathrm{sc}=\operatorname{area}(T)^{-1}$ and a positive level
+$\ell=r.\mathrm{lev}$ supported on $S$. On the specified adjacent pair
+it gives the pushed vacuum equality, the inclusion of pushed periods in
+$\mathrm{La}(D,T,L_0,L_1)$, integrality of both forms on the period
+lattice, the three nonzero relative indices and $\mathrm{IntOff}(S,r.\Xi(x))$
+for every $x$. Here $\mathrm{IntOff}$ means algebraic with norm at most one
+under every $p'$-adic embedding off $S$. Apply the volume-one expansion
+of Section~\ref{r14:kernel-finite} with these data. In its notation
+$\Lambda=\mathrm{LamC}$, $A_-=\mathrm{AC}$, $B_+=\mathrm{BC}$, the
+three quotients, in order, are
+\[
+ \frac{A_-}{A_-\cap\Lambda},\qquad
+ \frac{\Lambda\cap A_-}{\Lambda\cap A_-\cap B_+},\qquad
+ \frac{B_+}{B_+\cap\Lambda}.
+\]
+The middle cardinal is the Fourier denominator. The index pair $(x,y)$
+ranges over representatives of the first and third quotients. Its weight
+$\rho_{x,y}$ is integral off $S$, and the shift $x+y$ has
+$\ell(x+y)\in\Lambda$, since both $\ell x$ and $\ell y$ belong to
+$\Lambda$. The datum used here is $\mathrm{onV}(r.\Xi)$, which at a
+point in the embedding image takes a value of $r.\Xi$ and elsewhere
+is zero. These are the inputs of \nolinkurl{theta_coset_kernel};
+see \path{FirstKernelLawReading.lean:92--94,114--123,447--448},
+\path{XiIndCClass.lean:210--211,224--228,239} and
+\path{PeriodLatticeFinitelyGenerated.lean:248--290}.
+
+Write $s_*F(z)=F((z_{s.\mathrm{iT}(\tau)})_\tau)$ and
+$P_s v=(v_{s.\mathrm{iT}^{-1}(\tau)})_\tau$.
+Reindex the finite sum of matrix entries over $\tau$ in the Hermitian
+form. Its coefficient is $\operatorname{area}(T)^{-1}$ in both coordinates,
+so the values on $(z,P_sv)$ and $(P_sv,P_sv)$ are the two inner products
+in the old exponential multiplier. Reindexing $z+P_sv$ by $s.\mathrm{iT}$ gives the reindexed $z$ plus $v$. Substitution in the formula
+for $U$ therefore gives $s_*(U_vF)=U_{P_sv}(s_*F)$. Reindexing commutes
+with addition, hence $\ell P_s(x+y)$ lies in $\mathrm{La}(D,T,L_0,L_1)$
+by the period inclusion. Applying $s_*$ term by term and the pushed
+vacuum equality gives the expansion of $r.\mathrm{Th}$ with the
+same weights, shifts $v_{x,y}=P_s(x+y)$, and vacuum $e(L_0,L_1)$.
+The defining equalities $t.O_{\rm lat}$ and $t.O_{\rm Th}$ identify
+both lattices and the kernel with those of the actual entry.
+This proves the reader implication \nolinkurl{reading_is_kernel};
+\nolinkurl{kernel_comparison_holds} simply unpacks the same witnesses
+into the algebraicity, norm and torsion clauses of $\mathrm{IsKer}$.
+See \path{FirstKernelLawReading.lean:74--79,127--130,428--434},
+\path{PeriodLatticeFinitelyGenerated.lean:200--208,298--333} and
+\path{GeneralLinearActions/IsDiscriminantTwelfthRootOfIdealLattice.lean:84--85}.
+
+\paragraph{The coefficient identity after applying $\lambda$.}
+\phantomsection\label{r14:comb-pseries}
+$N_j=k+j(t_0+1)$ has even rank at both steps, since $k$ is even and the
+rank parameter $t_0$ is odd. Both lattice objects in $t.O$ include their
+self-duality witnesses. This gives the two evenness and two self-duality
+clauses of admission. The reader's bad set is
+$\{(D.\mathrm{mem}\,u).A.T,g_0,g_1\}\cup Y.Q_p(\mu)$.
+The three clauses of \nolinkurl{LevFree} give $p\notin S$, and hence
+$p\nmid\ell$. See \path{SatakeParameters/CombOfTied.lean:15--32},
+\path{FirstKernelLawReading.lean:428--434}, \path{DataKerI.lean:65--67}
+and \path{GeneralLinearActions/IsDiscriminantTwelfthRootOfIdealLattice.lean:171--174}.
+
+For an admitted pair the unshifted $e$ is smooth to every complex
+order. Indeed the standard vacuum belongs to its theta space by
+$B.\mathrm{thZeroMem}$ under $B.\mathrm{StdOK}$. The two lattice moves
+carry it into the theta space of $(L_0,L_1)$ by
+$B.\mathrm{thMoved\_mem}$ and $B.\mathrm{LatAll}$
+(p.~\pageref{r14:lat-indices}). Its first condition is complex
+differentiability everywhere. Osgood's lemma in the coordinates of
+\nolinkurl{analyticOnNhd_of_differentiable_vc}
+(\path{AnalyticOnNhdOfDifferentiableVc.lean:21--32}) therefore supplies
+all orders of smoothness, also after multiplication by the constant
+character factor.
+The curve ideal and its discriminant root supply $\delta\ne 0$ and
+$B.\mathrm{StdOK}$. For every torsion shift, \nolinkurl{AlgTAll} at
+$t.\mathrm{cc},t.\delta,t.B,t.\chi$ supplies algebraicity of every
+Taylor coefficient of the translate. The character hypothesis here is
+$t.\chi_{\rm ok}$. This gives precisely \nolinkurl{transcendence_algebraic_eigen}
+and \nolinkurl{TransAlg}. See Sections~\ref{r7:Z4.2.04} and
+\ref{r8:Z4.2.04}, \path{KernelLocalFactors/StdOK.lean:7--9},
+\path{SelfDualLatticeNorms/SelfDualComap.lean:153--155},
+\path{FirstKernelLawReading.lean:382--387,395--403,568--574} and
+\path{PeriodLatticeFinitelyGenerated.lean:1826--1831}.
+
+Write $a_\alpha(F)$ for the iterated derivative at zero in the repeated
+coordinate directions of $\alpha$, divided by $\prod_j\alpha_j!$.
+Each $U_v e$ is smooth by its translation and exponential formula.
+Finite linearity of the iterated derivative, with the same factorial on
+every term, gives $a_\alpha(\Theta)=\sum_{x,y}\rho_{x,y}
+a_\alpha(U_{v_{x,y}}e)$. Every factor on the right belongs to
+$\overline{\mathbf Q}$. Thus $\mathrm{lamC}$ agrees on the sum and on
+each product with the ring homomorphism $\lambda$. For every $\alpha$,
+\[
+ [X^\alpha]\,\mathrm{pSer}_\lambda(\Theta)=
+   \sum_{x,y}\lambda(\rho_{x,y})\,
+   [X^\alpha]\,\mathrm{pSer}_\lambda(U_{v_{x,y}}e).
+\]
+This is formal coefficientwise equality, with no interchange of an
+infinite sum. The witnesses in \nolinkurl{IsComb} take the \emph{same}
+lattices $L_0,L_1$ at each summand. Both local agreement conditions
+$\mathrm{EqAt}$ hold with multiplier $1$. Each $\lambda(\rho_{x,y})$
+has norm at most one, and each translated point is killed modulo the
+period lattice by the positive integer $\ell$ coprime to $p$.
+This proves \nolinkurl{kernel_combination_form} on its stated
+$\mathrm{TransAlg}$ and $\mathrm{IsKer}$ hypotheses (for general
+$\mathrm{IsKer}$ use the possibly different $S$-supported annihilator
+of each individual shift). Composing with the reader implication proves
+\nolinkurl{first_kernel_law_reading} and specializes to
+\nolinkurl{comb_of_tied} on the data above. See
+\path{GeneralLinearActions/IsDiscriminantTwelfthRootOfIdealLattice.lean:115--118,178--181,211--213,280--295},
+\path{KernelLocalFactors/ThDistC.lean:435--440} and
+\path{PeriodLatticeFinitelyGenerated.lean:1457--1498,1520--1522}.
+
+\paragraph{Use on the inert row and review boundary.}
+The standard-basis integrality theorem chooses one unit $e_p$ and a
+standard series $b_p$ at each qualifying place from the local host and
+orbit hypotheses. It accepts any admitted pair, two standard bases and
+an $\mathrm{IsComb}$ series there. For the two matrices of the adapted
+reader, finite generation of each lattice, the adapted basis condition
+and conjugate duality give the required standard bases. Transporting
+$t.\mathrm{ent}.\mathrm{Th}$ by the adapted coefficient identity gives
+the standard series of precisely the $p$-series above. Substitution gives
+the required expansion for each orbit representative system $R$, with
+sign function constantly $-1$. The choices of $e_p,b_p$ precede the class
+pair and $R$; at a nonqualifying place the source takes $(1,0)$ in the
+vacuous implication. See \nolinkurl{exists_beFam_evenConditionsInert_of_kerEnt},
+\path{AdmissibleKernelSeriesInertPrimeNonConjugateFrob.lean:24--44,49--65}
+and \nolinkurl{normalisedFamily_standardBases_integrality_alt},
+\path{NormalisedFamilyStandardBasesIntegralityStatement.lean:12--13}.
+
+Review B confirmed the conditional finite-expansion deduction in
+Z4.3(ii). In addition to the inert-row caller above, three source
+declarations use \nolinkurl{comb_of_tied}:
+\nolinkurl{Ggeo.frobeniusConjugation_conditions_adaptedKernelDatum_alt}
+(\path{FrobeniusConjugationConditionsAdaptedKernelDatum.lean:23--62}),
+\nolinkurl{Ggeo.AdmEntInt.kernelDatum_entries_integral_away_from_d}
+(\path{KernelDatumEntriesIntegralAwayFromD.lean:25--41}), and
+\nolinkurl{Ggeo.KerShapeD.thetaKernelShapeAtD_ofKer_of_hyp_adapted}
+(\path{KernelDatumThetaSeriesShapeAtDAdaptedBases.lean:16--42}).
+All four pass the hypotheses $t.\mathrm{Hyp}$ and \nolinkurl{AlgTAll}.
+In the latter two $\mathrm{AlgTAll}$ is the field $h_{\rm In}.\mathrm{algT}$.
+The four outputs enter \nolinkurl{PdvClose.at_of_true_columns} through
+their statement wrappers (\path{AtOfTrueColumns.lean:30--47}).
+\nolinkurl{CurveThetaInert.torsionTaylorAlgebraic_latticeExists_of_cm}
+supplies the translated Taylor law by \nolinkurl{ThLoc.algTAll},
+and the lattice existence through CM2
+(\path{TorsionTaylorAlgebraicLatticeExistsOfCm.lean:15--19};
+\path{BundleBothPartsOfStandardKernelOfGlobalArtinReci.lean:15--24}).
+The application assumes $t.\mathrm{Hyp}$; on the selected
+true column the supplier takes $\mathrm{ColSide}(t)$, obtained from
+$\mathrm{Duty}$, and $t.\mathrm{TopPinned}$. The adapted bases, the
+local host and the split-bound hypotheses enter the application just
+described. The dependencies on the actual selected row are recorded in
+Section~\ref{r15:z43-premises}. The independent covariance argument
+Z4.3(i) concerns $B.\mathrm{EqP}(\chi)$ at the inert and stabilizer
+sites. The original Z4.3 input retains its accepted partial grade.
+
+% Parent source SHA-256: 726efab7fd295a2dce4fc43b2a38c6ed087511bfb339c03e564ed0607ef7693c
+% blueprint/ch_P_r15.tex lines 940 through 1003; r15:rational-weights
+\paragraph{The two determinant exponents.}\label{r15:rational-weights}
+Let $W$ be a Weil operator on $v$. Denote its two Hecke characters
+by $\psi=W.\mathrm{chV}$ and $\psi'=W.\mathrm{chV}'$, their infinity weights
+by $n_{\psi,\tau},n_{\psi',\tau}$, and the signs by $\epsilon,\epsilon'$.
+Let $a_\tau,a'_\tau$ be integers satisfying
+\[
+ 2a_\tau=\epsilon' n_{\psi',\tau}-m,\qquad
+ 2a'_\tau=\epsilon n_{\psi,\tau}+n .
+\]
+For rational unitaries $\gamma,\gamma'$ and their adelic images, every
+all-level theta function $F$ satisfies
+\[
+ W(\gamma_A,\gamma'_A)F
+ = \prod_\tau\bigl(\tau(\det\gamma)^{-a_\tau}
+                      \tau(\det\gamma')^{-a'_\tau}\bigr)\,
+ P_{\gamma,\gamma'}F,
+ \qquad
+ P_{\gamma,\gamma'}F(z)=F((\gamma'^*_\tau z_\tau\gamma_\tau)_\tau).
+\]
+Here the star denotes conjugate transpose after embedding.
+See \nolinkurl{TaylorLogMetric.pull},
+\path{GeneralLinearActions/IsDiscriminantTwelfthRootOfIdealLattice.lean:106--108},
+and \nolinkurl{oddEq}, \path{GlobalSchurBounds/StandardLatticesGL3.lean:612--619}.
+
+First act only by $\gamma$ with $1-\gamma$ nonsingular. Put $u=\det\gamma$.
+Unitarity gives $u\bar u=1$. Write $u=d/\bar d$, taking $d=1+u$ for
+$u\ne-1$ and a nonzero anti-invariant element for $u=-1$. At every
+embedding, $(\tau(d)/|\tau(d)|)^2=\tau(u)$. The principal-idele law for
+$\psi'$ and $2(a_\tau+m/2)=\epsilon'n_{\psi',\tau}$ then give the Weil
+multiplier $\prod_\tau\tau(u)^{-(a_\tau+m/2)}$ on $v$ relative to the
+normalized intertwiner. The analytic pullback on $v$ relative to the
+same intertwiner has multiplier $\prod_\tau\tau(u)^{-m/2}$, from the
+phase computation in Paragraph~\ref{r14:eq-rational}. The quotient gives
+the first exponent. Acting only by $\gamma'$ with $1-\gamma'$ nonsingular
+uses $\psi$ and $2(a'_\tau-n/2)=\epsilon n_{\psi,\tau}$. Its two
+exponents on $\tau(\det\gamma')$ are $-(a'_\tau-n/2)$ and $+n/2$,
+giving $-a'_\tau$ in the quotient. All multipliers divided out are nonzero.
+See \nolinkurl{RatEqui.char_value}, \nolinkurl{RatEqui.det_root},
+\path{FoundationProofs/OddEqOfEven.lean:26--71},
+\nolinkurl{VacuumExact.vacuum_exact}, \path{WeilOperatorVacuumExactConstantEvenRank.lean:79--105},
+\nolinkurl{RatRow.pull_eq_smul_iop}, \path{ThetaPullbackFirstGroupRationalPointEqSmul.lean:141--219},
+and \nolinkurl{RatEqui.pull_right_eq_det_smul},
+\path{ThetaPullbackSecondGroupRationalPointEqDetSmul.lean:150--234}.
+
+Both operators intertwine the rational Heisenberg translations of $v$.
+Their agreement there extends by linearity to all levels since these
+translates span. To handle an arbitrary $\gamma$, factor it as
+$(z\gamma)(\bar z\,1)$, where $z\bar z=1$, $z\ne1$ and $z^{-1}$ avoids
+the finite spectrum of $\gamma$. There are infinitely many choices before
+these exclusions, since $(r+\xi)/(r-\xi)$ are distinct as $r$ ranges
+over $\mathbf Q^\times$ and $0\ne\xi=-\bar\xi$. Each factor has
+nonsingular one minus the matrix. Multiplying the two identities gives
+the formula for $\gamma$, and the same reasoning applies to $\gamma'$.
+Finally the two actions compose by the group law and
+$(\gamma'_1\gamma'_2)^*=\gamma_2'^*\gamma_1'^*$.
+This gives all exponents in \nolinkurl{RatEqui.oddEq_of_even}.
+Its $\mathrm{oddE0}$ supplies membership and $W.\mathrm{nz}$ supplies
+nonvanishing. The two one-sided laws above therefore apply directly to any
+nonzero standard theta vector even when only its membership is supplied.
+See \nolinkurl{ThetaSpan.theta_span}, \path{ThetaSpanRationalTranslatesVacuum.lean:143--195},
+\nolinkurl{RatExtend.om_eq_pull_of_vacuum}, \path{OmEqPullOfVacuum.lean:207--250},
+and \nolinkurl{RatEqui.exists_factor}, \nolinkurl{IsPull.mul},
+\nolinkurl{RatEqui.isPull_row}, \nolinkurl{RatEqui.isPull_col},
+\path{FoundationProofs/OddEqOfEven.lean:82--109,117--180}.
+
+% Parent source SHA-256: 2055d64ab882ca041a67ad1f4360db7dd6562c6c3f381c19b443acef9a2f98b1
+% blueprint/ch_P_r9.tex lines 23 through 365; r9:Z4.3
+\subsection*{Z4.3. Frobenius descent for the inert coordinate}
+\phantomsection\label{r9:Z4.3}
+At the inert-prime step of Section~\ref{r6:Z4.3}, put $K=\widehat{\mathbb Q_p^{\rm nr}}$,
+$R=\mathcal O_K$, $q=p^2$, and $\tau=\sigma^2$, where $\sigma$ is the
+isometric Frobenius lift. An exponent on $\tau$ acts on coefficients.
+Congruence of two series means that each coefficient of their
+\emph{difference} lies in $pR$. This convention applies even to
+logarithms with unbounded coefficients. The formal-group calculation
+below uses the following data.
+\[
+\begin{gathered}
+ \lambda(0)=0,\quad\lambda'(0)=1,\quad
+ \lambda(\Phi(X,Y))=\lambda(X)+\lambda(Y),\\
+ \lambda(A)=a\lambda,\qquad \lambda(e)=p\lambda,\qquad
+ |\sigma(a)-a|=1,\quad \tau(a)=a.
+\end{gathered}
+\]
+Here $\Phi,A,e$ have integral coefficients and zero constant term,
+and $e_i=[X^i]e$ is a unit for some $i\le q$.
+The required estimate is for the specified $\lambda$ in this parameter.
+Basenames in this calculation use the source directory
+\path{ReciprocityTheory/ReductiveGroups/UnramifiedIntegrals/}. See
+\path{LawD}, \path{HD}, \path{QCls} (\path{FgDefs.lean:14--46}) and
+\path{FrobField}, \path{ResClosed} (\path{KurDefs.lean:22--37}).
+
+\paragraph{Two coefficient tests.}
+Write $V_\Phi=\partial_Y\Phi(X,0)$. The inverse of the normalized
+logarithm gives $\Phi(X,0)=X$. Differentiating its addition formula
+gives $\lambda'V_\Phi=1$. Since $V_\Phi\in R[[X]]$ and $V_\Phi(0)=1$,
+$\lambda'$ is integral. If $f'$ is integral and two zero-constant
+integral substitutions satisfy $P=Q+pB$, then $f(P)-f(Q)$ has
+coefficients in $pR$. Indeed for $1\le j\le n$ the factor
+\[
+ f_n {n\choose j}p^j=(nf_n){n-1\choose j-1}\,p^j/j
+\]
+lies in $pR$, because $j-v_p(j)\ge1$. In each total degree the
+binomial expansions of $f_n(Q+pB)^n$ are finite. This proof applies
+in any finite number of variables.
+
+Define $\delta D=\sum_{m\ge0}D_{pm}X^m$. If $D'$ has coefficients
+in $pR$, then $D\equiv(\delta D)(X^p)$ and $(\delta D)'$ is
+integral. Indeed, $nD_n\in pR$ forces $D_n\in pR$ for $p\nmid n$,
+and $mD_{pm}=(pmD_{pm})/p\in R$. For an integral substitution
+$P$ with zero constant,
+$P(\mathbf X)^p\equiv(\sigma P)(\mathbf X^p)$, by Frobenius on
+the residue field. Substitute $P$ in the congruence for $D$ and
+apply the first test to $\delta D$. Thus
+\[
+ D(P(\mathbf X))\equiv(\delta D)\big((\sigma P)(\mathbf X^p)\big).
+\]
+Congruence after substitution of every variable by its $p$th power
+reflects congruence, by reading the coefficients at the multiplied
+multiindices. See \path{LawD.deriv_integral} (\path{FgHonB.lean:205--231}),
+\path{qls} (\path{FgHonA.lean:137--192}) and \path{desc_congr},
+\path{desc_key}, \path{desc_QCls} (\path{FgHonC.lean:44--148}).
+
+\paragraph{Extracting the first unit and the successive twists.}
+A series $D$ of zero constant and integral derivative belongs to
+$Q(\Phi,A;b)$ if $D(\Phi)\equiv D(X)+D(Y)$ and $D(A)\equiv bD$.
+Differentiation in $Y$ at zero gives
+$D'V_\Phi\equiv D'(0)$, so $D'\equiv D'(0)\lambda'$.
+If also $D'\equiv0$, the second test carries its two congruences
+to $\delta D\in Q(\sigma\Phi,\sigma A;b)$ for $b\in R$.
+For $D\in Q(\Phi,A;a)$ put $d=D'(0)$. Then $E=D-d\lambda$
+is in the same class with $E'\equiv0$.
+The linear term of $(\delta E)(\sigma A)\equiv a\delta E$
+is $(\delta E)'(0)(\sigma a-a)\equiv0$, since $A'(0)=a$.
+The unit difference kills this linear coefficient modulo $p$.
+Applying the differential identity for $\sigma\Phi$ makes
+$(\delta E)'\equiv0$. Descending again gives
+\[
+ D\equiv d\lambda+D_2(X^q),\qquad
+ D_2\in Q(\tau\Phi,\tau A;a).
+\]
+This works at every $\tau$-twist, as $\tau a=a$ and $\sigma$ is
+isometric. See \path{hon_deriv} (\path{FgHonB.lean:232}),
+\path{eigen_trick}, \path{lemmaQ} (\path{FgHonD.lean:115--122,195--232})
+and \path{lemmaQ_tw} (\path{FgHonF.lean:153--165}).
+
+To initialize this iteration one needs a \emph{unit} tangent.
+Applying the inverse logarithm shows that $e$ preserves $\Phi$ and
+commutes with $A$. From $\lambda'(e)e'=p\lambda'$ we get
+$e'\equiv0$, since $\lambda'(e)$ has integral inverse. Modulo $p$
+write $e(X)=h_1(X^p)$ with $h_1=\delta e$.
+The two exact homomorphism identities, reduced modulo $p$, say
+$h_1(\sigma\Phi)\equiv\Phi(h_1(X),h_1(Y))$ and
+$h_1(\sigma A)\equiv A(h_1)$. The latter identity gives
+$h_1'(0)(\sigma a-a)\equiv0$. The former gives
+$h_1'V_{\sigma\Phi}\equiv V_\Phi(h_1)h_1'(0)$, so $h_1'\equiv0$.
+A second descent yields an integral $h=\delta^2 e$ with
+$e\equiv h(X^q)$, $h(\tau\Phi)\equiv\Phi(h(X),h(Y))$ and
+$h(\tau A)\equiv A(h)$. The unit of $e$ in degrees $1$ to $q$
+must occur at $q$, so $h'(0)=e_q$ is a unit.
+Our substitution test for $\lambda$ now gives
+$D_0=\lambda(h)\in Q(\tau\Phi,\tau A;a)$,
+$p\lambda\equiv D_0(X^q)$, and $D_0'(0)=e_q$.
+Applying the two descents repeatedly produces $c_j\in R$,
+$c_0=e_q\in R^\times$, with
+\[
+ p\lambda(X)\equiv\sum_{j\ge0}c_j(\tau^{j+1}\lambda)(X^{q^{j+1}}).
+\]
+In degree $k$, the unexpanded tail is a zero-constant series
+in $X^{q^{j+1}}$ and eventually contributes zero.
+See \path{LawD.subst_of_log}, \path{LawD.comm_of_log}, \path{hon_shape},
+\path{hon_level} (\path{SubstOfLog.lean:15--56,88--135}),
+\path{hon_mu} and \path{hon_series} (\path{FgHonF.lean:78--152,166--220}).
+
+\paragraph{Eliminating the higher twists.}
+Take $t_0=1$. There is a sequence $t_m\in R$ satisfying, for $n\ge2$,
+\[
+ p t_n=\sum_{i=0}^{n-1}t_i\,\tau^i(c_{n-1-i}).
+\]
+To construct it, send a bounded sequence $(s_m)_{m\ge1}$ in the unit
+ball to the solution $(t_m)_{m\ge1}$ of the triangular equations
+\[
+ \sum_{i=1}^{m}\tau^i(c_{m-i})t_i=p s_{m+1}-c_m
+ \qquad(m\ge1).
+\]
+The diagonal entries $\tau^m(c_0)$ are units. Forward substitution
+keeps the solution integral. The same recursion on differences bounds
+the sup norm by $|p|$ times the input difference. The unit ball of
+bounded sequences is complete in the sup norm, so the contraction
+has a fixed point, giving the desired recurrence.
+
+For fixed $k>0$ put
+$w_i=[X^k](\tau^i\lambda)(X^{q^i})$.
+Twisting the preceding Frobenius relation and substituting $X^{q^i}$
+gives $p w_i-\sum_{j\ge0}\tau^i(c_j) w_{i+j+1}\in pR$.
+Multiply by $t_i$ and sum. Only $q^i\le k$ can contribute. The
+recurrence cancels the coefficients of all $w_n$ with $n\ge2$.
+What remains is $p w_0-(c_0-pt_1)w_1\in pR$.
+Degree zero vanishes. Hence $c=c_0-pt_1$ is a unit and
+\[
+ \lambda(X)-(c/p)(\tau\lambda)(X^q)\in R[[X]].
+\]
+This proves the implication labelled \path{hon_main} in
+Section~\ref{r6:Z4.3}. See \path{twisted_division}
+(\path{FgHonG.lean:63--109}), \path{hon_regroup},
+\path{hon_coeff_shift} and \path{hon_main} (\path{FgHonH.lean:15--77,192--256}).
+
+\paragraph{Recovering the specified inverse coordinate.}
+The residue field is $\overline{\mathbf F}_p$. Lift a nonzero root
+of $z^{q-1}=\bar c^{-1}$ to a unit $u$. If $u-c\tau u=p^m r$
+for $m\ge1$, replace $u$ by $u+p^m v$ with
+$\bar v-\bar c\bar v^q=-\bar r$. Such a root exists in the same
+residue field, and the new error lies in $p^{m+1}R$. Completeness
+and continuity give a unit $\epsilon=c\tau\epsilon$.
+Set $f=\epsilon^{-1}\lambda$ and
+$L(X)=\sum_{j\ge0}X^{q^j}/p^j$. Then
+$B=f-p^{-1}(\tau f)(X^q)$ is integral and $L-p^{-1}L(X^q)=X$.
+To construct $H$ with $f(H)=L$, start with $H=0$, and suppose
+an integral polynomial $H$ of zero constant has matched the terms
+below degree $n\ge1$. We have
+\[
+ L-f(H)=X-B(H)+p^{-1}\big(L(X^q)-(\tau f)(H^q)\big).
+\]
+The coefficient of degree $n$ on the right is integral. Indeed
+$H^q\equiv(\tau H)(X^q)$, and $(\tau f)'$ is integral. Replacing
+$H^q$ by this congruent series changes the parenthesis by a series
+in $pR[[X]]$. The resulting parenthesis is
+$\tau(L-f(H))(X^q)$ and vanishes through degree $n$, since $qn>n$.
+One may therefore add $[X^n](L-f(H))/f'(0)$ times $X^n$ to $H$,
+as $f'(0)=\epsilon^{-1}$ is a unit. Induction proves
+$H=\lambda^{-1}(\epsilon L)\in R[[X]]$ with linear coefficient
+$\epsilon$. Under $K\hookrightarrow\mathbf C_p$ this is precisely
+$u_{g_2,g_3}(\epsilon L)$, since the short exponential and logarithm
+are compositional inverses. The choice of $\epsilon$ precedes the
+coefficient index, as required by CM3. See
+\path{lang_semilinear} (\path{SemilinNormPowSubPow.lean:76--160}),
+\path{fin_integral} (\path{FgFinA.lean:115--178}) and
+\path{cm3} (\path{FgClose.lean:25--91}).
+
+\paragraph{Checking the height-two hypotheses on the specified short model.}
+Fix squarefree $d\equiv3\pmod4$, the CM period lattice, an inert prime $p\geq5$ with $p\nmid d$,
+the specified $\iota:\mathbf C\simeq\mathbf C_p$, and \emph{any}
+good model $(g_2,g_3)$ for them. Write $U$ for the completion of the
+maximal unramified extension of $\mathbf Q_p$ inside $\mathbf C_p$.
+Its residue field is $k=\overline{\mathbf F}_p$. Indeed the nonzero
+elements of each $\mathbf F_{p^s}$ lift uniquely to roots of
+$X^{p^s-1}=1$ in its unramified lift. These roots, for all $s$,
+generate the dense unramified field. Completion preserves the residue
+field and value group because a Cauchy sequence with nonzero limit has
+eventually constant norm, and can be approximated modulo $p$.
+Arithmetic Frobenius on this field sends a prime-to-$p$ root $\zeta$
+to $\zeta^p$. It is isometric and extends continuously to $U$, giving
+$\sigma(x)\equiv x^p\pmod p$ on its valuation ring $R$.
+For $a=\iota(\omega_d)$, the equation $a^2-a+(d+1)/4=0$ reduces to
+an irreducible separable quadratic since its discriminant is $-d$.
+Both roots have unique Hensel lifts in $R$. Frobenius interchanges
+them, so $\sigma a=1-a$, $|\sigma a-a|=1$ and $\sigma^2 a=a$.
+See \nolinkurl{kur_complete} and \nolinkurl{FrobField}
+(\path{KurDefs.lean:14--36}), \nolinkurl{kurFrob}
+(\path{KmuInclDenseRange.lean:26--67}), \nolinkurl{kur_resClosed}
+(\path{TchOfIntegral.lean:25}) and \nolinkurl{kur_quad}
+(\path{NormSqrtNegPowPrimeSqSub.lean:177}).
+
+The defining scale gives a homothetic complex lattice with invariants
+mapping to $g_2,g_3$ and with the same endomorphism $z\mapsto\omega_d z$.
+The equation $y^2=x^3-g_2x/4-g_3/4$ over $R$ has unit discriminant.
+It defines a smooth proper elliptic scheme $E$. Its group law completed
+at the origin is integral, and in the short-curve parameter its
+normalized logarithm and inverse are $\lambda=\mathrm{lgS}$ and
+$u=\mathrm{uSer}$. This follows by integrating the invariant
+differential normalized to have linear coefficient one, or by inverting
+the uniformization parameter $-2\wp/\wp'$. \emph{Alternative proof of endomorphism integrality.} The algebraic endomorphism
+of the uniformized complex curve transfers under $\iota$ to one with
+tangent multiplier $a$. To see it over a finite extension of $U$,
+put $m=(d+1)/4$. Its kernel lies in $E[m]$ since
+$\omega_d(1-\omega_d)=m$. A finite extension defines its kernel
+points and hence the quotient isogeny. The induced isomorphism
+from the quotient back to $E$ also descends after finite extension:
+in characteristic zero put both curves in short form, where an
+origin-preserving isomorphism is given by a scaling whose fourth or
+sixth power is prescribed by a nonzero coefficient. Over the new
+valuation ring both source and target of the endomorphism have good
+reduction. The N\'eron mapping property extends it, and uniqueness
+preserves the group law and origin. Its formal series is
+$A=u(a\lambda)$ by the logarithm and the tangent multiplier. Each
+coefficient belongs to $U$ by this formula and is integral by extension,
+so $A\in R[[T]]$. The mapping property used here is stated in
+Conrad \cite[Definition~5.1 and Example~5.3]{P-R9-Conrad}. The source uses integral coordinates of the nonzero
+kernel points to reach the same conclusion. See \nolinkurl{good_lattice}
+(\path{FgAnLat.lean:11--27}), \nolinkurl{lgS_eq_logSer} and
+\nolinkurl{curve_law} (\path{ShortWIntModel.lean:12--35}),
+\nolinkurl{endo_curve} (\path{FgAnEndo.lean:11--48}) and
+\nolinkurl{end_integral} (\path{EndIntegral.lean:54--115}).
+
+Iterate the integral formal addition law, starting from $[0]=0$ and
+$[n+1]=\Phi([n],X)$. Each $[n]$ is integral and
+$\lambda([n])=n\lambda$ by induction. Inverting the logarithm gives
+$e=[p]_E=u(p\lambda)$ (\nolinkurl{mulN_integral}, \path{FgMulN.lean:26--88}).
+It reduces to multiplication
+by $p$ in the formal group of $E_k$.
+
+\emph{Alternative proof of the degree bound.} The morphism $[p]$ of this
+elliptic curve is finite flat of degree $p^2$ \cite[Lemma~39.9.8, Tag~0BFG]{P-R9-Stacks}. Its full kernel therefore has length $p^2$.
+The completed local algebra of that kernel at the identity is
+$k[[T]]/(\overline e(T))$, so $\overline e$ has a first nonzero
+coefficient of degree at most $p^2$. Its lift is a unit in $R$.
+The Lean proof instead uses \nolinkurl{good_lattice}, \nolinkurl{half_cubic}
+and \nolinkurl{half_prod_norm} in \nolinkurl{level_le} (\path{FgLevel.lean:41--87})
+used in \nolinkurl{cm3} (\path{FgClose.lean:25--91}),
+before determining the formal height.
+
+\paragraph{The theta identity still required on the selected row.}\phantomsection\label{r9:z43-open}
+Fix $D$, the curve ideal $\mathfrak c$, its discriminant twelfth root
+$\delta$, the base $B$ on this datum and a character $\chi$ satisfying
+$\mathrm{IsChi}(D,\chi)$. Write $S,S'$ for the two standard lattices
+of even ranks $N,N'$. At an inert $p\ge5$, weak approximation expresses
+an admitted pair as $(\gamma M,\gamma'M')$, with $M,M'$ self-dual and
+equal locally at $p$ to $S,S'$, and $(\gamma,\gamma')\in
+U_N(E)\times U_{N'}(E)$ rational. For each such choice used in the
+reduction, with $\gamma_\tau,\gamma'_\tau$ denoting the embedded
+matrices, the following equality of entire functions is needed:
+\[
+ e^{\rm nat}_{B,\chi}(\gamma M,\gamma'M')(z)=
+ e^{\rm nat}_{B,\chi}(M,M')
+       \bigl((\gamma_\tau^{\prime *}z_\tau\gamma_\tau)_\tau\bigr).
+\]
+There is no scalar in this change of variables. Explicitly, $e^{\rm nat}$
+is the standard tensor theta acted on by the two normalized lattice
+averages along $(S,S')\to(M,S')\to(M,M')$, and multiplied by
+\[
+ C_\chi(M,M')=
+ \chi(\mathrm{detId}(S,M))^{N'/2}
+ \chi(\mathrm{detId}(S',M'))^{-N/2}.
+\]
+Each average has the inverse square root of the index and the
+semicharacter times the translated vacuum in its sum. Reindexing sends
+the starting pair to $(\gamma S,\gamma'S')$. To return to $(S,S')$
+requires its vacuum scalar and the compatibility of the intervening
+averages. For instance the one-sided standard-vacuum factors in the
+direct proof are
+$(\prod_\tau\tau(\overline{\det\gamma}))^{N'/2}$ on the source
+and $(\prod_\tau\tau(\det\gamma'))^{N/2}$ on the target. The rule
+for $\chi(\mathrm{detId}(S,\gamma M))$ multiplies its old value by
+$\prod_\tau\tau(\det\gamma)^{-1}$. Since a unitary determinant has
+$\overline{\det\gamma}=(\det\gamma)^{-1}$, the ratio
+$C_\chi(\gamma M,\gamma'M')/C_\chi(M,M')$ is the product of the two displayed factors.
+The normalization cancels only if the inverse of that product occurs when the
+unnormalized vacuum is expressed after moving both reference lattices back.
+Verifying this return map, including its scalar on the generators, remains open
+in the hand derivation.
+See \path{KernelLattices/LateralTheory.lean:165--178},
+\path{GeneralLinearActions/IsDiscriminantTwelfthRootOfIdealLattice.lean:100--109},
+\path{GlobalSchurBounds/TaylorLogMetric.lean:37--50},
+\path{SplitPairEquations/Reduction.lean:74--94} and
+\path{NormalisedFamilySatisfiesEquivarianceLaws.lean:17--31}.
+
+Given the displayed equality, transport of a torsion point and a
+local basis, integrality at the standard pair and finite linearity
+give the desired estimate as in Paragraph~\ref{par:r4-z43-host}.
+The source invokes the first conjunct of
+\nolinkurl{eulerProduct_eq_of_curve_ideal} precisely for this equality
+(\path{InertCoprimeLemmas/IntAsm.lean:55--77},
+\path{SplitPairEquations/FinalEq.lean:6--9}). The direct proof uses
+the square and triangle identities and the two standard-vacuum
+scalars; its calculation on generators passes through the finite Gauss
+sum (\path{IntegralSquareRoots/SecondConstantOfTrianglesData.lean:14--32},
+\path{IntegralSquareRoots/SecondConstantOfGaussSum.lean:14--31}).
+The finite-sum argument on the fixed target stabilizer already used in
+this chapter assumes this very covariance for $(1,\gamma')$
+(\path{SatakeParameters/ThCLeftStab.lean:368--372,435--436}).
+The alternative reference-family deduction on
+page~\pageref{r8:Z4.2.13} requires constructing a family with its three
+move laws and comparing its standard vector, as seen in
+\path{NormalisedFamilySatisfiesEquivarianceLaws.lean:59--99}.
+The normalization for the rational moves above is therefore
+\emph{[Proved in Lean, not reproduced]}.
+This is an internal call of the inert integrality supplied to the
+row from CM2 (\path{IntInertOfComplexMultiplicationCondition.lean:11--14},
+\path{BundleBothPartsOfStandardKernelOfGlobalArtinReci.lean:15--24}).
+
+\paragraph{What the target stabilizer fixes.}
+For a word, column, step $i<m$ and class pair $(c,c')$ of the auxiliary true-column reader on the same chain, put $N=r.N_i(c)$, $N'=r.N_{i+1}(c')$. Write $e_{N,N'}$ for its seam-reindexed normalized vacuum. The target stabilizer is represented by a rational unitary $\gamma$ with $\gamma N'=N'$. Its action $L_\gamma$ on the archimedean variables is left multiplication, block by block, by the embedded matrix of $\gamma$. The stabilizer calculation requires
+\[
+             e_{N,N'}(L_\gamma z)=e_{N,N'}(z)\qquad(\text{every }z).
+\]
+Indeed the two lattice arguments in simultaneous unitary equivariance become $N$ and $N'$ on taking the source matrix to be $1$. Transport across the seam identifies the inverse pullback matrix with the conjugate transpose of the embedded target matrix. This gives the displayed equality by specializing the same first component of $B.\mathrm{EqP}(\chi)$ used for the inert transfer. Once this equality holds, reindexing the kernel under $L_\gamma$ leaves only the finite-datum multiplier $\sigma_0(k)/M$. The implementation supplies equivariance by comparing the normalized vacuum to a reference family and invoking its simultaneous change-of-basis law. The restricted invariance for these pairs is \emph{[Proved in Lean, not reproduced]} as described at Z4.2.13.
+See \path{SatakeParameters/PairKernelLawOfFiniteDatumLaw.lean:54--61,85--104}, \path{SatakeParameters/ThCLeftStab.lean:368--397,432--436} and \path{IwasawaDecomposition/NormalisedFamilySatisfiesEquivarianceLaws.lean:59--76,89--101}.
+
+\paragraph{Which finite sums enter the row.}
+For coefficient-field rationality the standard reader writes the supported periodic datum as a sum of its values times coset indicators, one for each class of the divided Hom lattice modulo the multiplied Hom lattice. Linearity gives the sum of indicator kernels once each induced indicator kernel is identified at the product level $c_Ac_B$. Only after this identification does the supplied \path{JetsIn} place its normalized jets in the field. See \path{SatakeParameters/TrueKernelJetsMulDetCharactersMemCoefficientFiel.lean:28--55,57--68}, \path{SatakeParameters/ThetaSupportInDivLattice.lean:81--110} and \path{KernelLocalFactors/ThDistC.lean:1768--1769}.
+
+For the adapted, level-free series of the actual tied reader, \path{comb_of_tied} uses a second identity. Each selected kernel must expand into translates of $B.eNat(\chi)$ with algebraic weights integral away from the bad set and shift orders supported there. The source inserts three sets of representatives, normalizes the middle Fourier sum and combines the outer shifts by the Heisenberg phase. At volume one, write $\Phi$ for the selected finite datum, $\alpha$ for the semicharacter, $E_H$ for the alternating form and $S_X,S_A,S_B$ for the three representative sets. The required terms are $U_{x+y}e$ for $x\in S_X$, $y\in S_B$, with weights
+\[
+ r_{x,y}=\frac{\alpha(x)\alpha(y)}{|S_A|}
+    e^{-\pi i E_H(x,y)}
+    \sum_{t\in S_A}\Phi(t-x)\,e^{2\pi i E_H(t,y)}.
+\]
+This follows formally by substituting \path{hatS} and applying \path{opU_xiS} (\path{KernelLattices/XiIndCClass.lean:18--28}, \path{KernelLocalFactors/PeriodLatticeFinitelyGenerated.lean:168--196}). The outstanding specialization must identify these representatives with the three quotients of the selected lattice pair, prove that every $r_{x,y}$ is algebraic and integral outside its bad set, and show that $x+y$ is killed by an integer supported on that set.
+The phase and the normalization for the selected adjacencies are precisely the specialization of the calculation left open at Z4.2.04. This use is \emph{[Proved in Lean, not reproduced]}. It enters the inert bound through \path{SatakeParameters/AdmissibleKernelSeriesInertPrimeNonConjugateFrob.lean:59}, \path{SatakeParameters/CombOfTied.lean:14--33} and \path{KernelLocalFactors/PeriodLatticeFinitelyGenerated.lean:179--196,276--290,320--333,1520--1522}.
+
+\paragraph{Verdict for the original input.}
+The Frobenius comparison and the integral coordinate now hold for the specified good model.
+The two open arguments for the actual column are the first conjunct of
+$B.\mathrm{EqP}(\chi)$, used at both the inert and the stabilizer sites, and the
+Z4.2.04 specialization of the weighted kernel expansion in \nolinkurl{comb_of_tied}.
+The direct covariance and finite expansion have cones of 24,010 and 15,441
+core lines. Even conditional on both arguments, the application retains the
+the application premises registered on p.~\pageref{r10:z43-register}.
+Z4.3 remains \emph{partial}. Thirteen of the twenty original inputs meet the
+conditional completion criterion in the trust ledger.
+

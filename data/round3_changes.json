@@ -1,0 +1,3948 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "date": "2026-11-25",
+  "lean_commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "lean_archive_sha256": "9631b4f020199e580ba86178cb56c6e9b09f690c2369a80dc4334aa93f49c7fc",
+  "print_layout": "A4 pages, 20 mm margins, Georgia 11 pt with 1.38 line spacing; math rendered with MathJax SVG. Counts per local note, separate from original manuscript pagination.",
+  "reading_paths": {
+    "analytic": {
+      "first": [
+        "P003",
+        "P022",
+        "P023",
+        "P018"
+      ],
+      "core": [
+        "B10",
+        "B09",
+        "B08",
+        "P017"
+      ]
+    },
+    "arakelov": {
+      "first": [
+        "Z5.1",
+        "Z5.2",
+        "P050",
+        "P049"
+      ],
+      "core": [
+        "P021",
+        "T17",
+        "T15"
+      ]
+    },
+    "formal": {
+      "first": [
+        "P001",
+        "P003",
+        "P005",
+        "P009"
+      ],
+      "core": [
+        "P010",
+        "P011",
+        "P012"
+      ]
+    },
+    "galois": {
+      "first": [
+        "W11",
+        "P040",
+        "W08",
+        "W09"
+      ],
+      "core": [
+        "P026",
+        "W13",
+        "P013"
+      ]
+    },
+    "ktheory": {
+      "first": [
+        "Z2.K2",
+        "Z2.K5",
+        "Z2.K8",
+        "P034"
+      ],
+      "core": [
+        "Z2.K1",
+        "P035",
+        "P038"
+      ]
+    },
+    "local": {
+      "first": [
+        "Z3.1",
+        "Z3.2",
+        "D014",
+        "Z42-SITES"
+      ],
+      "core": [
+        "P045",
+        "B04",
+        "Z42-FRAMES"
+      ]
+    },
+    "theta": {
+      "first": [
+        "N188",
+        "Z4.2.04",
+        "P048",
+        "T12"
+      ],
+      "core": [
+        "Z4.4",
+        "T11",
+        "T09"
+      ]
+    }
+  },
+  "changes": [
+    {
+      "id": "B04",
+      "track": "local",
+      "old_status": "Statement only",
+      "status": "Outlined",
+      "grade": "L0",
+      "review_status": "pending_review",
+      "pages_written": 2,
+      "notes": [
+        {
+          "path": "notes/units/B04_round3.md",
+          "pages": 2,
+          "sha256": "d797847f87ad0e4d9711b76d91305e6523ab6a342f2e9803e18c964fb101996f"
+        }
+      ],
+      "weakest_step": "Check that inflation establishes cuspidality and the required Q_p and depth conditions put the representation on the good branch of the cuspidal map.",
+      "lean_ranges": [
+        {
+          "name": "UpperTheory.Zero.LLC.artEx",
+          "file": "Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/ArtEx.lean",
+          "line0": 7,
+          "line1": 15,
+          "sha256": "bc859825a4d9d466ee9655f338fb9f9d42cd94ecec33f6dc0bab12e4e94b02f0"
+        },
+        {
+          "name": "UpperTheory.Zero.LLC.recTExists",
+          "file": "Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/RecTExists.lean",
+          "line0": 20,
+          "line1": 26,
+          "sha256": "92f5c60e9d5083457ac4c55694ae9562e62d925d8f24f18e70800ff88000be4c"
+        },
+        {
+          "name": "UpperTheory.Zero.LLC.cuspEx",
+          "file": "Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/CuspEx.lean",
+          "line0": 168,
+          "line1": 193,
+          "sha256": "604071d53c68b80e2e4b49db40ec72cf0bb0fd1e7913c5d61739b8e73ffc8a67"
+        },
+        {
+          "name": "UpperTheory.Zero.LLC.cuspEx",
+          "file": "Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/CuspEx.lean",
+          "line0": 258,
+          "line1": 266,
+          "sha256": "469a351640142669c2eb4fd6a4d4488cdf4159ff32d24ae3441a49e539a618ca"
+        },
+        {
+          "name": "GlobalTheory.LocLanglands.exists_isLExt",
+          "file": "Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LanglandsExtensionUniqueOnCuspidal.lean",
+          "line0": 34,
+          "line1": 56,
+          "sha256": "34d8d39ee42e80e107cbd4126751037f8a2b8412b9031c2872155c99cfb363cc"
+        },
+        {
+          "name": "UpperTheory.Zero.LLC.recTExists",
+          "file": "Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/RecTExists.lean",
+          "line0": 27,
+          "line1": 57,
+          "sha256": "e5ab32f4b46f6e21d913cc68e4df9cd72360102ce02e30a9207ef81b59f7b588"
+        },
+        {
+          "name": "UpperTheory.Zero.LLC.extTw",
+          "file": "Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/RcTwOfSegments.lean",
+          "line0": 36,
+          "line1": 57,
+          "sha256": "12a60906453c343202414e6c06d6c2e26508ab5dd93c4b7ba66619efe421e82d"
+        },
+        {
+          "name": "UpperTheory.Zero.LLC.recTExists",
+          "file": "Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/RecTExists.lean",
+          "line0": 39,
+          "line1": 44,
+          "sha256": "1d8167726a17543334ba975a9f8adb3ba2d537d13268d5afd37843302051334a"
+        },
+        {
+          "name": "UpperTheory.Zero.LLC.extDepth",
+          "file": "Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/ExtDepth.lean",
+          "line0": 11,
+          "line1": 34,
+          "sha256": "8a6fdac8fd9c5d5622119d678cb9780150895e35ccf4b26675884890e7126c54"
+        },
+        {
+          "name": "GlobalTheory.RecT.TypeLaw",
+          "file": "Development/AbelianVarietyTheory/Definitions/NonGaloisDescent/RecTExists.lean",
+          "line0": 34,
+          "line1": 52,
+          "sha256": "a38805e5a613406a34cd0eb987ccadbfd10739d37d0653d3f300a97a0bffc229"
+        },
+        {
+          "name": "UpperTheory.Zero.LLC.typeIff",
+          "file": "Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/TypeIff.lean",
+          "line0": 46,
+          "line1": 57,
+          "sha256": "40f5b41bae32658aee5f1feb1fe76cf3b92b20616166fbbb59c9b9f89008da42"
+        },
+        {
+          "name": "UpperTheory.Zero.LLC.recTExists",
+          "file": "Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/RecTExists.lean",
+          "line0": 58,
+          "line1": 66,
+          "sha256": "59aa30c03fb95e557dcb776d50cc7b0e0b3bf91d1f6f98e87946a24197ac4c2b"
+        }
+      ]
+    },
+    {
+      "id": "B08",
+      "track": "analytic",
+      "old_status": "Outlined",
+      "status": "Full",
+      "grade": "L1",
+      "review_status": "pending_review",
+      "pages_written": 2,
+      "notes": [
+        {
+          "path": "notes/units/B08_v4.md",
+          "pages": 2,
+          "sha256": "a7f81596adaef68bae2e31691a2d4a96f830c0f9c1fdc420092a7167b5e369ec"
+        }
+      ],
+      "weakest_step": "Check that both one-scale implications use the universal threshold for the selected host, and absorb the discarded 4o term without changing the advertised exponent.",
+      "lean_ranges": [
+        {
+          "name": "UpperTheory.Comparison₂.core_gm",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/CoreGm.lean",
+          "line0": 12,
+          "line1": 74,
+          "sha256": "b73760a18d5253b23d291914c3579cfc2125b0864ba945c9fffe6f1260fb8394"
+        },
+        {
+          "name": "Deduction.ch_core",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean",
+          "line0": 343,
+          "line1": 442,
+          "sha256": "1c0b4be1f96d1fb59d5b7e4901b2036613b4f74c11d405016ffa5cf7b975ea56"
+        },
+        {
+          "name": "Deduction.ch_top",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChTop.lean",
+          "line0": 37,
+          "line1": 72,
+          "sha256": "4d71f0cccac3ac250ed97d70beb0d18c902b9639ccde0f4c5b31c38a26f724fd"
+        },
+        {
+          "name": "Formalism.LFunctionChainParameters.LErr.large_x_eventually",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/SubThreeMulLogTwoLe.lean",
+          "line0": 319,
+          "line1": 329,
+          "sha256": "90f46cef73a8bbf9409ddb93252d5d50dd1093899eda3623171ad8cb61b9a738"
+        },
+        {
+          "name": "UpperTheory.Comparison₂.sigA_le",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/SigALe.lean",
+          "line0": 38,
+          "line1": 60,
+          "sha256": "76af9a0c15d1430c03efad24324cc1e1fc880da1c469944dac5ab35525f9a4e1"
+        }
+      ]
+    },
+    {
+      "id": "B09",
+      "track": "analytic",
+      "old_status": "Outlined",
+      "status": "Full",
+      "grade": "L1",
+      "review_status": "pending_review",
+      "pages_written": 3,
+      "notes": [
+        {
+          "path": "notes/units/B09_v4.md",
+          "pages": 3,
+          "sha256": "86809e4ff1954d3380426b0395e1f504068394f82d9b98878213453f90c3a745"
+        }
+      ],
+      "weakest_step": "Check the coefficient signs after the subgroup average and the local width replacement before applying the numerical bound to all four terms.",
+      "lean_ranges": [
+        {
+          "name": "Deduction.ch_core",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean",
+          "line0": 343,
+          "line1": 442,
+          "sha256": "1c0b4be1f96d1fb59d5b7e4901b2036613b4f74c11d405016ffa5cf7b975ea56"
+        },
+        {
+          "name": "Deduction.CharacterBalanceMoves.core",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean",
+          "line0": 283,
+          "line1": 338,
+          "sha256": "a2527ea0437b7e8bd11ed4cc2589fa3ff9c61fb3430254faa376637873cb8453"
+        },
+        {
+          "name": "Formalism.LFunctionChainParameters.ThickSetMeanBounds.proposition_size_bound",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean",
+          "line0": 507,
+          "line1": 592,
+          "sha256": "e573a01b923620c758779f91a8f4686e88c5bc4e08d203caaea4e3ece27e6f6f"
+        },
+        {
+          "name": "Deduction.CharacterBalanceMoves.one_char",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean",
+          "line0": 202,
+          "line1": 281,
+          "sha256": "8bc1d19ac2bb7388bc1aefdbc69db0d12cf03058f12fddd47bc4b83159b27279"
+        },
+        {
+          "name": "Formalism.LFunctionChainParameters.ThickSetMeanBounds.derivative_integral_all",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean",
+          "line0": 966,
+          "line1": 981,
+          "sha256": "2199aa1029611946a5ad7a243a47df41a56417d05aa0ea592a91d4064256cb3c"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean",
+          "line0": 16,
+          "line1": 20,
+          "sha256": "6d9fbd6c614e16341140ecf8cbcbdad18f0c4563cfa1c503289711f47953be0f"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean",
+          "line0": 28,
+          "line1": 73,
+          "sha256": "cc0f3c2c7b0ba7345330b1622ecdac6891877637ec972928282586473f6d469f"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean",
+          "line0": 75,
+          "line1": 152,
+          "sha256": "2cd1af6bbeb207dc0b2f12cd38f4601a4293c2fc59903b4b040f5d8405737b4c"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean",
+          "line0": 154,
+          "line1": 179,
+          "sha256": "937c516b332624c344070398e74d4d0ef9bc9a2782864aef683927d50f466a54"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean",
+          "line0": 183,
+          "line1": 200,
+          "sha256": "af6999a76116913efbf79539ce618c1c2f964a79f70014140118fa6a10cddffd"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean",
+          "line0": 283,
+          "line1": 320,
+          "sha256": "7e58af41af96108b794642c604c82b95c2967cd4286e5d68e3d6db99fb074fe0"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean",
+          "line0": 322,
+          "line1": 338,
+          "sha256": "8f90e8f082d25f0d9c5265aef07e437c7b0868b84179ee4b48671cb3be269eeb"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean",
+          "line0": 343,
+          "line1": 370,
+          "sha256": "6cd63c3b2abe7bc923ddf33e6b5c2bef5675614bc4ceb182eadeaaa099ca0674"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean",
+          "line0": 352,
+          "line1": 359,
+          "sha256": "5365d62de86025d43e5ec588de82a7e2438ede25b4a137b0927a6395b5d0a130"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean",
+          "line0": 375,
+          "line1": 439,
+          "sha256": "7fc95505bb28b70d4241c51658576909368a71e29057ff0060fb5c45cdf201a6"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean",
+          "line0": 419,
+          "line1": 442,
+          "sha256": "9e33c916e83e6b4eddcbbdea249e565bfb8a356c74e290bba4ed77cf263b618d"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/SplitInertia.lean",
+          "line0": 26,
+          "line1": 40,
+          "sha256": "d6c48025e719cc42d9c7ec7652ca31b5af53f2588942600520b538d5c3435bd3"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/CoreAtH.lean",
+          "line0": 27,
+          "line1": 27,
+          "sha256": "c39392b1455c9910b5eedc956ff9ca301dedd22f28253cbb9a2325ee92b2ed15"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/GmAEq.lean",
+          "line0": 61,
+          "line1": 149,
+          "sha256": "9a030e980281ef02d4c0e1b0803352edc89c15c88c56163027de3672e703c068"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/SigALe.lean",
+          "line0": 38,
+          "line1": 60,
+          "sha256": "76af9a0c15d1430c03efad24324cc1e1fc880da1c469944dac5ab35525f9a4e1"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/charsA.lean",
+          "line0": 80,
+          "line1": 125,
+          "sha256": "2e3825540c0f207d1382c9bb8f7d4a9c0dd8c08b01dbe9ec6c2758ad44ac77c4"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean",
+          "line0": 31,
+          "line1": 113,
+          "sha256": "c544581777004bc8d2d35d895dfd7deba782b5db373b5b9e893881c220e2b856"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean",
+          "line0": 966,
+          "line1": 970,
+          "sha256": "b3ba93e5c95b38cc9205b79f1a7df084e70befe1d06510f4f60c091c04ee17a6"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/PChain.lean",
+          "line0": 23,
+          "line1": 26,
+          "sha256": "2aaff78a437c0cd3c75ef46952e15a96fbe1f816f8ef98897a6df3ba39d46279"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/SizeWindowBrackets/ErrorFormsWeakWindowsFalse.lean",
+          "line0": 133,
+          "line1": 136,
+          "sha256": "b347d3fcede7af2830e2988f9d46547de34bb650b206f950d9030ca4df713572"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/SizeWindowBrackets/GrowthBoundGivesRiemannHypothesis.lean",
+          "line0": 109,
+          "line1": 123,
+          "sha256": "35531cb89678638a963c3220b374f19f58202680753a8523ef60e7fa271ba3a8"
+        }
+      ]
+    },
+    {
+      "id": "B10",
+      "track": "arakelov",
+      "old_status": "Outlined",
+      "status": "Full",
+      "grade": "L0",
+      "review_status": "pending_review",
+      "pages_written": 2,
+      "notes": [
+        {
+          "path": "notes/units/B10_v4.md",
+          "pages": 2,
+          "sha256": "5507c49b8f56a85ce34d64c65b59f9ea0b5af1db4cd9d8ec1eec37c4fda33f89"
+        }
+      ],
+      "weakest_step": "Check the main term at the single selected lattice and the sign of the lower bound before adding the pointwise error estimate.",
+      "lean_ranges": [
+        {
+          "name": "Deduction.ch_top",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChTop.lean",
+          "line0": 37,
+          "line1": 72,
+          "sha256": "4d71f0cccac3ac250ed97d70beb0d18c902b9639ccde0f4c5b31c38a26f724fd"
+        },
+        {
+          "name": "Deduction.ch_top_main_eq",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChTop.lean",
+          "line0": 11,
+          "line1": 35,
+          "sha256": "f60731cdac49753d67580c96f4dbb104248eb7aa0ca1fed5f9ef7f4bbcd7a2e3"
+        },
+        {
+          "name": "Formalism.LFunctionChainParameters.LChain.errX5at_le",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/PChain.lean",
+          "line0": 613,
+          "line1": 672,
+          "sha256": "a72dea7a7c24282008d1fea77748cb076f221dc8265c60e47a62b11f42887ebf"
+        },
+        {
+          "name": "Formalism.LFunctionChainParameters.WeightedSlopeBounds.each_unit_bound_statement",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LevelOfCongruence.lean",
+          "line0": 175,
+          "line1": 197,
+          "sha256": "efab74dec4a4927817a21e5bf9d65a49006c760fb4191db5373926aeed2c5d78"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/SplitInertia.lean",
+          "line0": 50,
+          "line1": 52,
+          "sha256": "484941612cdf4766e075a1b9729a0562bb59cc23a5f09e2746f38969eaa33479"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/CoreAtH.lean",
+          "line0": 29,
+          "line1": 41,
+          "sha256": "29d52decf84e5bdecd990b537763fd54d09d9f3297ad13d29f76016b5e00f6db"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/SizeWindowBrackets/ErrorFormsWeakWindowsFalse.lean",
+          "line0": 133,
+          "line1": 135,
+          "sha256": "664b10b45a51862ed4c58fca2f9660ae36ca47d49f0c7a494ef5105ffd90965f"
+        }
+      ]
+    },
+    {
+      "id": "D014",
+      "track": "analytic",
+      "old_status": "Statement only",
+      "status": "Full",
+      "grade": "L0",
+      "review_status": "pending_review",
+      "pages_written": 4,
+      "notes": [
+        {
+          "path": "notes/units/D014_round3.md",
+          "pages": 2,
+          "sha256": "e438bcab9b9fef44d94523fe68de35905464fecacd2c00f21567730c5a9dc6a1"
+        },
+        {
+          "path": "notes/units/D014_v4.md",
+          "pages": 2,
+          "sha256": "a6ddf2a8b8efdbe88e023fcaeb276e691690f4fdc7cd09153df79a3743597a42"
+        }
+      ],
+      "weakest_step": "Verify that the CRT unit is local at d and its Jacobi sign excludes the identity, so the prescribed involution occurs in the inertia image. Check the chosen local unit at d and its sign after the binary coordinates in the frame are exchanged.",
+      "lean_ranges": [
+        {
+          "name": "Deduction.CH.HostFactsS",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/SplitInertia.lean",
+          "line0": 14,
+          "line1": 22,
+          "sha256": "a5dbb62e2bdf41425fd5cd8c5399724ee8686efb00829be463bce3a32ff554b4"
+        },
+        {
+          "name": "hostFactsS_pf",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/hostFactsS.lean",
+          "line0": 44,
+          "line1": 57,
+          "sha256": "6346c08faf17fe8ae58fc3aee5a2b928b7538e84fe3d8d47596fb62f6db07956"
+        },
+        {
+          "name": "inPhi_of_jac",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/hostFactsS.lean",
+          "line0": 7,
+          "line1": 15,
+          "sha256": "d4b283f7d5ff7916d219f54b50455c0c65c547c3b1b52e0a8537311e3a6e2e3e"
+        },
+        {
+          "name": "hostFactsS_pf",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/hostFactsS.lean",
+          "line0": 49,
+          "line1": 70,
+          "sha256": "532044d5b497783ed19f27b7e8472823cd68c7fa4af3a56581279326031447ea"
+        },
+        {
+          "name": "jac_of_dvd",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/hostFactsS.lean",
+          "line0": 17,
+          "line1": 31,
+          "sha256": "2f63d4b153cf0f707df20bbffb1a55da213dc4c216c136d4180eed36eb2fbc44"
+        },
+        {
+          "name": "d_dvd_ordCompl",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/hostFactsS.lean",
+          "line0": 33,
+          "line1": 38,
+          "sha256": "101e717529ac8fe0f8767041dcca455e3de5e30ff22d0a2980764f8909023ff5"
+        },
+        {
+          "name": "hostFactsS_pf",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/hostFactsS.lean",
+          "line0": 71,
+          "line1": 82,
+          "sha256": "8de6825683431efa481d6c20f65aa92bbb136513b95523b90c38f699184c76f4"
+        },
+        {
+          "name": "toE_iod'",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/hostFactsS.lean",
+          "line0": 40,
+          "line1": 42,
+          "sha256": "cfda1986527b1e58d73af3be7ddb14e7a16c10d1de3b3766712ede8794478396"
+        },
+        {
+          "name": "hostFactsS_pf",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/hostFactsS.lean",
+          "line0": 83,
+          "line1": 105,
+          "sha256": "2bf1c1605b8df6be62c39e5809759c914944193bc7fa751c961e48898b202943"
+        },
+        {
+          "name": "hostFactsS_pf",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/hostFactsS.lean",
+          "line0": 106,
+          "line1": 125,
+          "sha256": "f91637c28fedbaebe7f0366080c80c65ceea822544c54107e96ae3ab0b964742"
+        },
+        {
+          "name": "UpperTheory.Comparison₂.hostFactsS",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/hostFactsS.lean",
+          "line0": 127,
+          "line1": 136,
+          "sha256": "ef97916068b30a9b83bc32d6b22fb03bdc3882660a3447f087cb63045e087583"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/hostFactsS.lean",
+          "line0": 17,
+          "line1": 38,
+          "sha256": "2d743a5b524a1ca1767101773e9fc22abdd1a163b46e4f0bb94dfd30bacb0498"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/RecH.lean",
+          "line0": 10,
+          "line1": 23,
+          "sha256": "c525d256a18ff834f0f914979ad8a381287f263ad0aa29ef3840923db748970e"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/ToEBij.lean",
+          "line0": 37,
+          "line1": 39,
+          "sha256": "eddae19e1c900a7ea5d27aaead9062c0c1410c5898bb48c301f3b9e673ec7094"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/ToEBij.lean",
+          "line0": 67,
+          "line1": 71,
+          "sha256": "1fffcbb2e902e4b73bbbae9ebbb56f5b655f445cbf5798abf7578ae92558a888"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/hostFactsS.lean",
+          "line0": 7,
+          "line1": 38,
+          "sha256": "1323427f1ee903ddecf920a07c345a61f68b6f5975be43b234e5f9c81dba4444"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/hostFactsS.lean",
+          "line0": 44,
+          "line1": 125,
+          "sha256": "413fa96e633a1abb7f81e65d957ac63269c39b919af608d69ec37464384723a3"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/FrobeniusOrbits/Statement.lean",
+          "line0": 13,
+          "line1": 14,
+          "sha256": "736e3e1659908bfc4c910af125fb552a84e4deaaf5d5e87f138021748a50709d"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/ConjEMemHostFIff.lean",
+          "line0": 12,
+          "line1": 52,
+          "sha256": "43b3f2f53bf7c5c697eebb2801cbe41774277f3f62dc93a0c5eb15ee73c460cb"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/ConjEMemHostFIff.lean",
+          "line0": 45,
+          "line1": 46,
+          "sha256": "9f0f74bddbd68bca29ceb52f060a89df7fea68ad203c0c82edb2dfde8a82a9b1"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/ConjEMemHostFIff.lean",
+          "line0": 99,
+          "line1": 99,
+          "sha256": "7fd94441add90a62900cf82a11b70bf0e95d795ebe3c086acdf2ef1ca1c7dde8"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/HostFacts.lean",
+          "line0": 15,
+          "line1": 24,
+          "sha256": "02bd41b3b42da8d108052b59c0ed378408934520499de8ab94b9cb517a73b34c"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/GaloisMapComplexConjugation.lean",
+          "line0": 33,
+          "line1": 40,
+          "sha256": "37540556e643689e8428f031844d6eb7245268dd541d9fc9bbb240642d96cae2"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/GaloisMapComplexConjugation.lean",
+          "line0": 47,
+          "line1": 61,
+          "sha256": "2ea5b048d52c2cf3fe05065b483beefaa27b0b5c7582ecf22550578e435884ec"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/GaloisMapComplexConjugation.lean",
+          "line0": 86,
+          "line1": 89,
+          "sha256": "bde9b3c0d58c79868c1a628cddf5c69098e29077716930d6cb7ae1e8cb2dce2f"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/GaloisMapComplexConjugation.lean",
+          "line0": 123,
+          "line1": 128,
+          "sha256": "c7006f9c6b8d88815c5f5f43009fdc8e1f32d4a9b9f6c5571d067be5dd7a3acd"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/GaloisMapComplexConjugation.lean",
+          "line0": 290,
+          "line1": 295,
+          "sha256": "2954b0b6e52924d0ee2baa61778251ac0d1b8be2b7785541952f625a673667c5"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/ThickAverageLoss/PartnersToFactorsAt.lean",
+          "line0": 20,
+          "line1": 20,
+          "sha256": "c79d9c6358a2456ca5d0f751489a9f4f4b71c0e0eeab594d2dadc81ee319c6d2"
+        }
+      ]
+    },
+    {
+      "id": "D547",
+      "track": "analytic",
+      "old_status": "Statement only",
+      "status": "Full",
+      "grade": "L0",
+      "review_status": "pending_review",
+      "pages_written": 2,
+      "notes": [
+        {
+          "path": "notes/units/D547_v4.md",
+          "pages": 2,
+          "sha256": "6713aaa57470da70616fc882b91dd9336cfbf0514bb5809aafd11cb6bfe1d756"
+        }
+      ],
+      "weakest_step": "The local conductor–inertia equivalence at primes dividing the host modulus must justify the zero branch as well as the Frobenius branch.",
+      "lean_ranges": [
+        {
+          "name": "UpperTheory.Comparison₂.gmA_eq",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/GmAEq.lean",
+          "line0": 61,
+          "line1": 149,
+          "sha256": "9a030e980281ef02d4c0e1b0803352edc89c15c88c56163027de3672e703c068"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/ChrBij.lean",
+          "line0": 25,
+          "line1": 29,
+          "sha256": "500ba30541e5298144ddc65743efdb0fcb49e33890c0448102b4025236544a42"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/GmAEq.lean",
+          "line0": 16,
+          "line1": 59,
+          "sha256": "99764d65e4fbdf9281d6736f5e7e15a4f0ea3737d9da87b3e8b9c2a3d8dfbae6"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/GzEq.lean",
+          "line0": 6,
+          "line1": 50,
+          "sha256": "476a4c67c3e622be9d254738fdfe2c9946f838750e57853f2e2b198325ed5118"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/PrimInj.lean",
+          "line0": 6,
+          "line1": 27,
+          "sha256": "a7ca968ab30633371b2804bb216ab791ce9ff925e991d6e8f5a8479bde026f5c"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/PrimRead.lean",
+          "line0": 25,
+          "line1": 97,
+          "sha256": "4202355e42e38b24bccb247fc9ab777bbe3f41271fc6a30d8ae932b87391cc25"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/RecH.lean",
+          "line0": 10,
+          "line1": 23,
+          "sha256": "c525d256a18ff834f0f914979ad8a381287f263ad0aa29ef3840923db748970e"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/ExplicitFormulaErrorOfHostConditions.lean",
+          "line0": 144,
+          "line1": 151,
+          "sha256": "6d042c989f177fb9e5a1cabea9919b30f12420d35ddd8d3b8e118859644f5f75"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/GaloisMapComplexConjugation.lean",
+          "line0": 86,
+          "line1": 96,
+          "sha256": "5f952d89e83a89fc28b0af270206330fecd3ee465991957e91eec87fb108961d"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/GaloisMapComplexConjugation.lean",
+          "line0": 129,
+          "line1": 150,
+          "sha256": "c7f71a6761d6c30c9a86ee410eb0a86efae35f859dadfebce59080643d456f60"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/GaloisMapComplexConjugation.lean",
+          "line0": 209,
+          "line1": 245,
+          "sha256": "4639434b056c091714947150303e108a728586e65d5d55e85b73e262ae05c36c"
+        }
+      ]
+    },
+    {
+      "id": "D548",
+      "track": "analytic",
+      "old_status": "Statement only",
+      "status": "Full",
+      "grade": "L0",
+      "review_status": "pending_review",
+      "pages_written": 1,
+      "notes": [
+        {
+          "path": "notes/units/D548_v4.md",
+          "pages": 1,
+          "sha256": "843285b8403bb3bebdf76ecf8de7252d16dfa5bdaf1f19b345bed27611122559"
+        }
+      ],
+      "weakest_step": "Check that both signs at iod exhaust precisely the unkept bounded host characters for which the supplied derivative estimate applies.",
+      "lean_ranges": [
+        {
+          "name": "UpperTheory.Comparison₂.charsA",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/charsA.lean",
+          "line0": 80,
+          "line1": 125,
+          "sha256": "2e3825540c0f207d1382c9bb8f7d4a9c0dd8c08b01dbe9ec6c2758ad44ac77c4"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/CardPsiA.lean",
+          "line0": 26,
+          "line1": 63,
+          "sha256": "32e33eb5bf4ceea9e440450a7a20671c31cddb2c46dff488d4c7026efe2d00c0"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/TopsSum.lean",
+          "line0": 30,
+          "line1": 103,
+          "sha256": "7cc42a97ec5d9719363036817063752a9a910ef887ad15bd654622d09b9fc1d2"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/charsA.lean",
+          "line0": 20,
+          "line1": 51,
+          "sha256": "eee8aef99ccd1dc87f52f5c7a5f279ceda64e617ea65f2620133c27e56be167e"
+        }
+      ]
+    },
+    {
+      "id": "D549",
+      "track": "analytic",
+      "old_status": "Statement only",
+      "status": "Full",
+      "grade": "L0",
+      "review_status": "pending_review",
+      "pages_written": 1,
+      "notes": [
+        {
+          "path": "notes/units/D549_v4.md",
+          "pages": 1,
+          "sha256": "e936e9caada820ee657a06605e4a101bf62ea49f3b650ca87a8ab5359e14a374"
+        }
+      ],
+      "weakest_step": "The pointwise host bound applies only after the omitted frequencies have been identified with the designated bounded class; check both signs.",
+      "lean_ranges": [
+        {
+          "name": "UpperTheory.Comparison₂.sigA_le",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/SigALe.lean",
+          "line0": 38,
+          "line1": 60,
+          "sha256": "76af9a0c15d1430c03efad24324cc1e1fc880da1c469944dac5ab35525f9a4e1"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/SigALe.lean",
+          "line0": 18,
+          "line1": 60,
+          "sha256": "945fe244da12b2e3fd027df9f7dd86c6131edf0fe6d10a7fef11df301e150547"
+        }
+      ]
+    },
+    {
+      "id": "D550",
+      "track": "analytic",
+      "old_status": "Statement only",
+      "status": "Full",
+      "grade": "L0",
+      "review_status": "pending_review",
+      "pages_written": 1,
+      "notes": [
+        {
+          "path": "notes/units/D550_v4.md",
+          "pages": 1,
+          "sha256": "51d63005ae67a121eec1c6ac16dfc37ce50cfc5b767629747c6c9fc319021906"
+        }
+      ],
+      "weakest_step": "The same threshold must work when the fixed real K_* is smaller than one and when ε is very small.",
+      "lean_ranges": [
+        {
+          "name": "Formalism.LFunctionChainParameters.LErr.large_x_eventually",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/SubThreeMulLogTwoLe.lean",
+          "line0": 319,
+          "line1": 329,
+          "sha256": "90f46cef73a8bbf9409ddb93252d5d50dd1093899eda3623171ad8cb61b9a738"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/SizeWindowBrackets/ErrorFormsWeakWindowsFalse.lean",
+          "line0": 16,
+          "line1": 21,
+          "sha256": "e3b6db1064af7d37e01145002151e88db39ded9ef3b1e2f2184255d2c86cf10d"
+        }
+      ]
+    },
+    {
+      "id": "D561",
+      "track": "analytic",
+      "old_status": "Outlined",
+      "status": "Outlined",
+      "grade": "L0",
+      "review_status": "pending_review",
+      "pages_written": 3,
+      "notes": [
+        {
+          "path": "notes/units/D561_v4.md",
+          "pages": 3,
+          "sha256": "667fa8743d9af425d0809181dc2c09467cdb574dbdbf6104cddeefef50e0a21f"
+        }
+      ],
+      "weakest_step": "The frozen-width identity gives only the reindexing in th_le; the thin terms and the errors from changing the actual widths belong to the enclosing D561 estimate.",
+      "lean_ranges": [
+        {
+          "name": "Deduction.ch_balance",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChBalance.lean",
+          "line0": 200,
+          "line1": 260,
+          "sha256": "ed29418b71866546dcaaad4dce557ca4bbc1315ad1e70930c6c990b8a58ad229"
+        },
+        {
+          "name": "Deduction.CharacterBalanceMoves.th_le",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean",
+          "line0": 75,
+          "line1": 152,
+          "sha256": "2cd1af6bbeb207dc0b2f12cd38f4601a4293c2fc59903b4b040f5d8405737b4c"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChBalance.lean",
+          "line0": 42,
+          "line1": 196,
+          "sha256": "c689bf4c1018d67f0c4956ae2f3fe870d12a2d9eb1658f3f76b5099cf7eaf450"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChBalance.lean",
+          "line0": 206,
+          "line1": 260,
+          "sha256": "d7812d8640e3870f42ea24c318b5240e9d09b5359f8657147ead36fe6aaeb3f9"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean",
+          "line0": 16,
+          "line1": 20,
+          "sha256": "6d9fbd6c614e16341140ecf8cbcbdad18f0c4563cfa1c503289711f47953be0f"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean",
+          "line0": 75,
+          "line1": 104,
+          "sha256": "0a1fd28cb28dad4318f81d3d6f5c73227a17d61587d5616aeaab961fd4fe7159"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/SplitInertia.lean",
+          "line0": 14,
+          "line1": 22,
+          "sha256": "a5dbb62e2bdf41425fd5cd8c5399724ee8686efb00829be463bce3a32ff554b4"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean",
+          "line0": 147,
+          "line1": 169,
+          "sha256": "2d5d23751e381f2708e30c68bd88c95b7b0d44b79c32ea771f93738bac86ef01"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/StronglyIrreducible.lean",
+          "line0": 153,
+          "line1": 212,
+          "sha256": "cf1038550f4bfff141285f79254a67bb71c0d384f87e0d863850e8a51291daf1"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/StronglyIrreducible.lean",
+          "line0": 311,
+          "line1": 317,
+          "sha256": "482d1fc61d29e48f5cc826c79ae06d1518d3fa7c5af033ede1569d4d67dc6350"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/StronglyIrreducible.lean",
+          "line0": 619,
+          "line1": 686,
+          "sha256": "6c0b3ae47131ca7fe7a58802ff1ce5f3802feca6de71cc04c99d1889eb9eeb02"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/SizeWindowBrackets/FirstPrimeNeSecondPrime.lean",
+          "line0": 19,
+          "line1": 19,
+          "sha256": "c1dcd7b82d3764af89f490b4bbc57947a532973c7446c889e5ba16233c59d7f2"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/SizeWindowBrackets/FirstPrimeNeSecondPrime.lean",
+          "line0": 19,
+          "line1": 42,
+          "sha256": "b0e540dae0ef1784840171d6e1aaf369566330ac391736abb41b149ce5d22734"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/SizeWindowBrackets/FirstPrimeNeSecondPrime.lean",
+          "line0": 61,
+          "line1": 66,
+          "sha256": "9a76a6041d789742284d416788076145f2dd55de08112ab83252cd42878d391e"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/SizeWindowBrackets/FirstPrimeNeSecondPrime.lean",
+          "line0": 68,
+          "line1": 70,
+          "sha256": "7ad68117cc418697ac88d335764d871835c4b41ae20489b24f99f20ebd14ab38"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/SizeWindowBrackets/FirstPrimeNeSecondPrime.lean",
+          "line0": 72,
+          "line1": 96,
+          "sha256": "88a721158a9a5e04ea71c979b9bbc89e4dd05f49ca8068d6783b53d945c67379"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/SizeWindowBrackets/FirstPrimeNeSecondPrime.lean",
+          "line0": 93,
+          "line1": 96,
+          "sha256": "7e0ef82dd1cb42071425bb2c4b8da80905c0a8fbdb80c418a451fb78a1de5732"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/StatementOC.lean",
+          "line0": 11,
+          "line1": 13,
+          "sha256": "6429370ff1e172844889837c6f08fd0409af49663f24c1449a88d60f5d66296d"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/ThickAverageLoss/PartnersToFactorsAt.lean",
+          "line0": 20,
+          "line1": 29,
+          "sha256": "9d8b1d5661c79438c13433837db13fa6c1e3165caa07be88ccfa9e8cdaeb5189"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/ThickAverageLoss/PartnersToFactorsAt.lean",
+          "line0": 62,
+          "line1": 65,
+          "sha256": "246b3c14667384f338b3c2f56ab961f989f42b4f2da028579fc97eff33bfbd38"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/ThickAverageLoss/PartnersToFactorsAt.lean",
+          "line0": 97,
+          "line1": 97,
+          "sha256": "837aaee07552bab43c1832db5d6ea07e4e7f8cad902cc55fa8828c4d75442a64"
+        }
+      ]
+    },
+    {
+      "id": "D562",
+      "track": "analytic",
+      "old_status": "Statement only",
+      "status": "Full",
+      "grade": "L0",
+      "review_status": "pending_review",
+      "pages_written": 2,
+      "notes": [
+        {
+          "path": "notes/units/D562_v4.md",
+          "pages": 2,
+          "sha256": "9ebea1fe684289be61e9ee9f430a64933b9cab6d302d904b2a10872ea556c9d6"
+        }
+      ],
+      "weakest_step": "The principal-character kernel and logarithmic correction have opposite signs; their difference must preserve the constant three.",
+      "lean_ranges": [
+        {
+          "name": "Formalism.LFunctionChainParameters.ThickSetMeanBounds.derivative_integral_all",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean",
+          "line0": 966,
+          "line1": 981,
+          "sha256": "2199aa1029611946a5ad7a243a47df41a56417d05aa0ea592a91d4064256cb3c"
+        },
+        {
+          "name": "Formalism.LFunctionChainParameters.ThickSetMeanBounds.lipschitz_weight_all",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean",
+          "line0": 957,
+          "line1": 964,
+          "sha256": "0bb1c563c4e47fac46b11361efcbfe3cd1c0afe8cb0e32560a9c6585f5786c84"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean",
+          "line0": 668,
+          "line1": 694,
+          "sha256": "bda2ae56ef1228d277e547db245d178e03a782266c7042b98b07f9ac872cf50f"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean",
+          "line0": 745,
+          "line1": 769,
+          "sha256": "e356e277afe9f28697cf1f7a90d405928da148f69083a74dcd95ef2d655c02e8"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean",
+          "line0": 778,
+          "line1": 826,
+          "sha256": "fdec9940d00e9cdd09b9ce8c4dd6b10556aab07e31f62d5e41dae6dcdb7eb895"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean",
+          "line0": 828,
+          "line1": 875,
+          "sha256": "7e6f50386cda1c955144ebcf78a8b3d532b64d1f7d4e19de7659470ec1c9c150"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean",
+          "line0": 879,
+          "line1": 953,
+          "sha256": "4921f32727cb449ecaad495ce78b5bc80e7a3c7b6795948268477a166faa2ca7"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean",
+          "line0": 957,
+          "line1": 981,
+          "sha256": "77ce80f24ad459d940a568ef860c54ac5585e340ac185d4f3dff15f711608d5a"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/SizeWindowBrackets/FirstPrimeNeSecondPrime.lean",
+          "line0": 61,
+          "line1": 70,
+          "sha256": "ecfb728dbaa58935bae6b8b799d72d9c7e7ab9ccf30137893e57299c15ff513a"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/StatementOC.lean",
+          "line0": 11,
+          "line1": 13,
+          "sha256": "6429370ff1e172844889837c6f08fd0409af49663f24c1449a88d60f5d66296d"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/ZetaNonvanishing/GzLipschitz.lean",
+          "line0": 28,
+          "line1": 53,
+          "sha256": "fa511f5d015071c03df0b60addc7de2064472286834bf142e227604190b665ad"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/ZetaNonvanishing/GzLipschitz.lean",
+          "line0": 55,
+          "line1": 106,
+          "sha256": "9e35cb923a94d59364076f2282daa67b48a40a1b03fa262edd3fde0c9b164d1f"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/ZetaNonvanishing/GzLipschitz.lean",
+          "line0": 127,
+          "line1": 184,
+          "sha256": "411ce94c4aae9fce0d5ba2b178e38f895aacd1d954fa82919e57b6d44fa33724"
+        }
+      ]
+    },
+    {
+      "id": "D567",
+      "track": "arakelov",
+      "old_status": "Statement only",
+      "status": "Full",
+      "grade": "L0",
+      "review_status": "pending_review",
+      "pages_written": 2,
+      "notes": [
+        {
+          "path": "notes/units/D567_v4.md",
+          "pages": 2,
+          "sha256": "c0a854b46fd435b65a63dda32963d99d334e095f4d0892dca6bec66c9f834d68"
+        }
+      ],
+      "weakest_step": "Check the absorption of the fraction with denominator 1−δ̄, especially the mixed frame term and the uniform constants 112 and 2.",
+      "lean_ranges": [
+        {
+          "name": "Formalism.LFunctionChainParameters.LChain.errX5at_le",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/PChain.lean",
+          "line0": 613,
+          "line1": 672,
+          "sha256": "a72dea7a7c24282008d1fea77748cb076f221dc8265c60e47a62b11f42887ebf"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/SizeWindowBrackets/ErrorFormsWeakWindowsFalse.lean",
+          "line0": 16,
+          "line1": 21,
+          "sha256": "e3b6db1064af7d37e01145002151e88db39ded9ef3b1e2f2184255d2c86cf10d"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/SizeWindowBrackets/ErrorFormsWeakWindowsFalse.lean",
+          "line0": 23,
+          "line1": 52,
+          "sha256": "7c80375b1bd15c6c1325b098e81ae56188a73293de7f4fcf8533ae77628757d9"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/SizeWindowBrackets/QuotientSlopeBoundsWith.lean",
+          "line0": 37,
+          "line1": 54,
+          "sha256": "e61801db7a87433a3aeed032b457521941c6074cd31bfa71ca72699874b3f343"
+        }
+      ]
+    },
+    {
+      "id": "P001",
+      "track": "formal",
+      "old_status": "Statement only",
+      "status": "Outlined",
+      "grade": "L1",
+      "review_status": "pending_review",
+      "pages_written": 2,
+      "notes": [
+        {
+          "path": "notes/units/P001_round3.md",
+          "pages": 2,
+          "sha256": "2057b6264e448b525e63d94e6f24d7379f2eb73df4fe7be56a17b57ee835d4a9"
+        }
+      ],
+      "weakest_step": "The reflection step divides the cases at a negative even integer and at zero. Check the precise exclusion of each against the predicate passed to the public export.",
+      "lean_ranges": [
+        {
+          "name": "riemannHypothesis",
+          "file": "Main.lean",
+          "line0": 4,
+          "line1": 4,
+          "sha256": "71b3d50605ddda7c0c74fbbf5cca47165a4cfa2ad72f50f36b907ecac7ff505a"
+        },
+        {
+          "name": "rhOfAll",
+          "file": "Supplements/Kernels/MainTheorems.lean",
+          "line0": 9,
+          "line1": 9,
+          "sha256": "0411e5a9dfb3386efa1d19f21b4f48f3061578663df27aa2e1537c899cf946d9"
+        },
+        {
+          "name": "RiemannZetaZerosOnLine",
+          "file": "Statements.lean",
+          "line0": 3,
+          "line1": 4,
+          "sha256": "c75daf92d6cf044721eb5f81c076df03f599d020fa7209b074229c950f10314f"
+        },
+        {
+          "name": "Formalism.VW.rh_of_every",
+          "file": "Formalism/GammaFactorNonvanishing/CritLine.lean",
+          "line0": 29,
+          "line1": 32,
+          "sha256": "beecfff17a25432d57c68fb893b086240bbfcc8095a94583bc6213691cd2b451"
+        },
+        {
+          "name": "Formalism.VW.rh_of_right",
+          "file": "Formalism/GammaFactorNonvanishing/RhOfRight.lean",
+          "line0": 5,
+          "line1": 62,
+          "sha256": "48fd885b7d506b9e0149834d4ba3fabd53cd0226a12c57527e8f6377c4c2105c"
+        },
+        {
+          "name": "allChi",
+          "file": "Supplements/Kernels/MainTheorems.lean",
+          "line0": 7,
+          "line1": 7,
+          "sha256": "11a64a2901f9f1dfe7c998d12b57e1edacc087d6740857bb890f079d82026b5d"
+        }
+      ]
+    },
+    {
+      "id": "P003",
+      "track": "formal",
+      "old_status": "Statement only",
+      "status": "Outlined",
+      "grade": "L1",
+      "review_status": "pending_review",
+      "pages_written": 2,
+      "notes": [
+        {
+          "path": "notes/units/P003_round3.md",
+          "pages": 2,
+          "sha256": "9a2d5f2984694a76360bdc54c838c4a2b0d27f3de79c571c85054ee0126dc7b7"
+        }
+      ],
+      "weakest_step": "Passing from the primitive character to its lift must preserve the disjunction at the pole before the change-of-level identity can be invoked.",
+      "lean_ranges": [
+        {
+          "name": "DirichletLNonvanishingRightOfHalf",
+          "file": "Statements.lean",
+          "line0": 6,
+          "line1": 8,
+          "sha256": "fa9d73877cdad2bc86079a09f8032e7e0e6cf895c6725f2b87f88e6e8d820ebb"
+        },
+        {
+          "name": "LFunction_ne_zero_of_half_lt_re",
+          "file": "Main.lean",
+          "line0": 8,
+          "line1": 8,
+          "sha256": "5b0ee88593377690a537bd3111264f9a9652eaad5475b129ce9e15b263830d64"
+        },
+        {
+          "name": "UpperTheory.EveryCharacter",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/EveryCharacter.lean",
+          "line0": 13,
+          "line1": 14,
+          "sha256": "19b590d4f118e2b3a8dfc4cddce4d8be959b352780f70bcb530728021a247a3c"
+        },
+        {
+          "name": "UpperTheory.Top.imprimitive",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/Imprimitive.lean",
+          "line0": 5,
+          "line1": 35,
+          "sha256": "710456ef393cc097cfc5619d02fb92167a87d0f2bdd4c5340a56c9fe57c35661"
+        },
+        {
+          "name": "UpperTheory.Top.every_character_of_green_v_win",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean",
+          "line0": 16,
+          "line1": 18,
+          "sha256": "2a16d81a39b3886cfb84a9c50bb541d385037c4cd8e02941f0d57943b9d96da1"
+        },
+        {
+          "name": "UpperTheory.Top.zero_free_all_of_green_v_win",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean",
+          "line0": 12,
+          "line1": 15,
+          "sha256": "5e975b2462270fb38d695e966d3ce6bb6f409b715ddc3302ba807422a5925e41"
+        },
+        {
+          "name": "allChi",
+          "file": "Supplements/Kernels/MainTheorems.lean",
+          "line0": 7,
+          "line1": 7,
+          "sha256": "11a64a2901f9f1dfe7c998d12b57e1edacc087d6740857bb890f079d82026b5d"
+        }
+      ]
+    },
+    {
+      "id": "P005",
+      "track": "formal",
+      "old_status": "Statement only",
+      "status": "Outlined",
+      "grade": "L1",
+      "review_status": "pending_review",
+      "pages_written": 2,
+      "notes": [
+        {
+          "path": "notes/units/P005_round3.md",
+          "pages": 2,
+          "sha256": "33b39bf13949d640e4400367edd63dc83092e669e62f0ece8cb0ef8acda3eff9"
+        }
+      ],
+      "weakest_step": "Check that the functional equation is used for the inverse character, and that the ordinary-to-completed quotient at the original point has nonzero denominator.",
+      "lean_ranges": [
+        {
+          "name": "PrimitiveDirichletLZerosOnLine",
+          "file": "Statements.lean",
+          "line0": 14,
+          "line1": 16,
+          "sha256": "fb07f24c884386896a4a7624aa14c794f7f1e1514389b6abc801919d77cf6aea"
+        },
+        {
+          "name": "LFunction_eq_zero_re_of_isPrimitive",
+          "file": "Main.lean",
+          "line0": 12,
+          "line1": 12,
+          "sha256": "0401b524ca2966a15b42b17c6d82be74188720e1452c23c1c994ee9ed8fc53e6"
+        },
+        {
+          "name": "critAll",
+          "file": "Supplements/Kernels/MainTheorems.lean",
+          "line0": 11,
+          "line1": 13,
+          "sha256": "0d978db013e5eba6fa1d430c3cbd57ba979648c7e28481d8ee74be0150b7b823"
+        },
+        {
+          "name": "Formalism.VW.critLine",
+          "file": "Formalism/GammaFactorNonvanishing/CritLine.lean",
+          "line0": 11,
+          "line1": 27,
+          "sha256": "865affffeaded44b5a21e65294e831a1d70a206630ad0500170661ae21a7011a"
+        },
+        {
+          "name": "Formalism.VW.gammaFactor_ne_zero",
+          "file": "Formalism/GammaFactorNonvanishing/CritLine.lean",
+          "line0": 6,
+          "line1": 9,
+          "sha256": "2d3b6ed3e1ee7243cc5f21187156ba938c5569d6127ebc304ceb0f8b7beec7ec"
+        }
+      ]
+    },
+    {
+      "id": "P009",
+      "track": "formal",
+      "old_status": "Statement only",
+      "status": "Outlined",
+      "grade": "L0",
+      "review_status": "pending_review",
+      "pages_written": 2,
+      "notes": [
+        {
+          "path": "notes/units/P009_round3.md",
+          "pages": 2,
+          "sha256": "5ff5421e8346a7c34e91bd45ba778246608cb693e0629ae0042baaaf3b0b7bfd"
+        }
+      ],
+      "weakest_step": "Identify which predicate the primitive-window argument actually produces before passing to the arbitrary-character statement. A bound for one prescribed primitive character would be insufficient.",
+      "lean_ranges": [
+        {
+          "name": "UpperTheory.EveryCharacter",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/EveryCharacter.lean",
+          "line0": 13,
+          "line1": 14,
+          "sha256": "19b590d4f118e2b3a8dfc4cddce4d8be959b352780f70bcb530728021a247a3c"
+        },
+        {
+          "name": "allChi",
+          "file": "Supplements/Kernels/MainTheorems.lean",
+          "line0": 7,
+          "line1": 7,
+          "sha256": "11a64a2901f9f1dfe7c998d12b57e1edacc087d6740857bb890f079d82026b5d"
+        },
+        {
+          "name": "UpperTheory.FinalTheorems.everyCharacter",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+          "line0": 10,
+          "line1": 11,
+          "sha256": "cb6e29e571bc60a80fe7adced18bc00414f6ec80fb9521724b707e6e6e3244a4"
+        },
+        {
+          "name": "UpperTheory.Top.zero_free_all_of_green_v_win",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean",
+          "line0": 12,
+          "line1": 15,
+          "sha256": "5e975b2462270fb38d695e966d3ce6bb6f409b715ddc3302ba807422a5925e41"
+        },
+        {
+          "name": "UpperTheory.Top.supplyChi",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/SupplyChi.lean",
+          "line0": 8,
+          "line1": 16,
+          "sha256": "3802f3f332e6c3e3325ad9b7016e8d050001a204984bd21c05f59b93b9de2e22"
+        },
+        {
+          "name": "UpperTheory.Top.zeroFreeAll_of_topG",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/ZeroFreeAllOfTopG.lean",
+          "line0": 26,
+          "line1": 34,
+          "sha256": "779f1617311a91f102fe98548f3774bcaf188e12c0506c5aa600f76d4af099a9"
+        },
+        {
+          "name": "UpperTheory.Top.every_character_of_green_v_win",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean",
+          "line0": 16,
+          "line1": 18,
+          "sha256": "2a16d81a39b3886cfb84a9c50bb541d385037c4cd8e02941f0d57943b9d96da1"
+        },
+        {
+          "name": "rhOfAll",
+          "file": "Supplements/Kernels/MainTheorems.lean",
+          "line0": 9,
+          "line1": 9,
+          "sha256": "0411e5a9dfb3386efa1d19f21b4f48f3061578663df27aa2e1537c899cf946d9"
+        },
+        {
+          "name": "critAll",
+          "file": "Supplements/Kernels/MainTheorems.lean",
+          "line0": 11,
+          "line1": 13,
+          "sha256": "0d978db013e5eba6fa1d430c3cbd57ba979648c7e28481d8ee74be0150b7b823"
+        },
+        {
+          "name": "claimAll",
+          "file": "Supplements/Kernels/MainTheorems.lean",
+          "line0": 15,
+          "line1": 16,
+          "sha256": "ed1f716842f8ede8864c2da8b1ba7bef252f4af1ef68f6775a487aa17e90270c"
+        }
+      ]
+    },
+    {
+      "id": "P010",
+      "track": "formal",
+      "old_status": "Statement only",
+      "status": "Outlined",
+      "grade": "L0",
+      "review_status": "pending_review",
+      "pages_written": 2,
+      "notes": [
+        {
+          "path": "notes/units/P010_round3.md",
+          "pages": 2,
+          "sha256": "361f445754d0f024801a0df86a50c05f680db9d87b9cedcd50b417d41f1003e9"
+        }
+      ],
+      "weakest_step": "The source obtains one representation with the entire local compatibility record. Independently justifying this simultaneous existence from the geometric and theta-lift inputs is the first substantive gap in this outline.",
+      "lean_ranges": [
+        {
+          "name": "UpperTheory.FinalTheorems.everyCharacter",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+          "line0": 10,
+          "line1": 11,
+          "sha256": "cb6e29e571bc60a80fe7adced18bc00414f6ec80fb9521724b707e6e6e3244a4"
+        },
+        {
+          "name": "UpperTheory.GalStar.Row0b",
+          "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConjBis.lean",
+          "line0": 69,
+          "line1": 73,
+          "sha256": "23cc1c7b8b2db73b7854a708307bade99265d8282dbcb44c2a9e7cd186cab132"
+        },
+        {
+          "name": "UpperTheory.GalStar.PropsB",
+          "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConjBis.lean",
+          "line0": 54,
+          "line1": 67,
+          "sha256": "b60cf372ac879d4c0b44734211fc353c107228c1873f5e95f49c3ecab266ef5e"
+        },
+        {
+          "name": "UpperTheory.Gal.Int.recT",
+          "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/Development.lean",
+          "line0": 18,
+          "line1": 18,
+          "sha256": "5db40a7336663ea3bc5f13b85aa93a42f6bcc5d380345219591f350ab5e9b7bc"
+        },
+        {
+          "name": "UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter",
+          "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/RowSrc.lean",
+          "line0": 6,
+          "line1": 6,
+          "sha256": "9b1f19b756ad9cdefeec6fcbdb062e6e4c6042fe61c69ee48c430b18a4ce4055"
+        },
+        {
+          "name": "UpperTheory.TP.K.tLiftK",
+          "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/TLiftK.lean",
+          "line0": 4,
+          "line1": 5,
+          "sha256": "79b84c0c2f1b6e4a7ca2b39315446ee36750a48c12b9e07dd690dbbe6a0c357c"
+        },
+        {
+          "name": "UpperTheory.Gal.Int.galoisRepresentations_of_thetaLift",
+          "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/GaloisRepresentationsOfThetaLift.lean",
+          "line0": 6,
+          "line1": 6,
+          "sha256": "12febd1379de698868467c4a10ce2d4019e357ebf2b6b84a6ae005ff80152aa0"
+        },
+        {
+          "name": "UpperTheory.Gal.Int.galoisLocalGlobal_of_geometry_lift",
+          "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/Development.lean",
+          "line0": 27,
+          "line1": 28,
+          "sha256": "b65470ab4c8d6785e4fa57d961ebf381b7ca1fbc40beefbcee076c95af8dbdd2"
+        },
+        {
+          "name": "UpperTheory.Gal.Int.coreAll_of",
+          "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/Development.lean",
+          "line0": 20,
+          "line1": 22,
+          "sha256": "1ee7147ad9e18da52fa37de117294ebce77f5fe40b7ef340334687668ed4a7f9"
+        },
+        {
+          "name": "UpperTheory.Gal.Int.rest",
+          "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/Development.lean",
+          "line0": 24,
+          "line1": 25,
+          "sha256": "e7aaf2e60606c7e9ab09edfc45aa72926a1ad339e26e1dce7c6132a75dc4d425"
+        },
+        {
+          "name": "UpperTheory.Gal.Int.galoisLocalGlobalStrong_of_geometry_lift",
+          "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/Development.lean",
+          "line0": 30,
+          "line1": 31,
+          "sha256": "d9f01df8e3bbef17b56e3dcfad8f5335c9882e2a5dafdcec3bb5619ba1ab20db"
+        },
+        {
+          "name": "UpperTheory.GalStar.Row0.row0b",
+          "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConjBis.lean",
+          "line0": 84,
+          "line1": 86,
+          "sha256": "3552a79c6c8a3aefffed62d48c31352cdc20b210ffa0fbed6c5b396f7ae516c0"
+        },
+        {
+          "name": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+          "line0": 7,
+          "line1": 8,
+          "sha256": "ed0432efd387d0f5b2c1887164113564dc5b1f56d51bb77fa00e420454d520f7"
+        }
+      ]
+    },
+    {
+      "id": "P011",
+      "track": "galois",
+      "old_status": "Statement only",
+      "status": "Outlined",
+      "grade": "L1",
+      "review_status": "pending_review",
+      "pages_written": 2,
+      "notes": [
+        {
+          "path": "notes/units/P011_round3.md",
+          "pages": 2,
+          "sha256": "2deef4b42ecd2cdb51e9bde5079d310f5b3995cde64ba6eedbe76c3c5e9cf044"
+        }
+      ],
+      "weakest_step": "Check that the row simultaneously supports both fields in the literature record and the uniform field-and-layer quantifiers of VWin. The code gives the window supplier, while the stronger arithmetic estimates remain separate reading obligations.",
+      "lean_ranges": [
+        {
+          "name": "UpperTheory.GalStar.Row0b",
+          "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConjBis.lean",
+          "line0": 69,
+          "line1": 73,
+          "sha256": "23cc1c7b8b2db73b7854a708307bade99265d8282dbcb44c2a9e7cd186cab132"
+        },
+        {
+          "name": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+          "line0": 7,
+          "line1": 8,
+          "sha256": "ed0432efd387d0f5b2c1887164113564dc5b1f56d51bb77fa00e420454d520f7"
+        },
+        {
+          "name": "UpperTheory.LiteratureTheorems.OpenLiteratureStatements",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+          "line0": 215,
+          "line1": 218,
+          "sha256": "2faedb8ab6c33102ff16eee80c795459cace87930fc9a5e7a86c4647d9e3c4cc"
+        },
+        {
+          "name": "UpperTheory.Zero.LLC.recTExists",
+          "file": "Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/RecTExists.lean",
+          "line0": 20,
+          "line1": 66,
+          "sha256": "f1d123825985c33caf5ee84b0b48bb1df17663e55b1004e0e0d380e704ac27a2"
+        },
+        {
+          "name": "UpperTheory.One.vwin_of_row",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/VwinOfRow.lean",
+          "line0": 4,
+          "line1": 5,
+          "sha256": "c6737c388a60710399cbefa7c22fa10c35609465302265d87f51a8f680299764"
+        },
+        {
+          "name": "UpperTheory.One.Join.automorphic_window_of_inputs",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TopMainZj.lean",
+          "line0": 71,
+          "line1": 74,
+          "sha256": "01d6284ac53245ee62afd25ec7e4b8a32e2351626f7820ba01711fcb52b28a55"
+        },
+        {
+          "name": "UpperTheory.Top.VWin",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean",
+          "line0": 49,
+          "line1": 49,
+          "sha256": "84c157849fbf30a25382ffcc055f63d04544cc5c2e38936e0b220d9e7c661bb8"
+        },
+        {
+          "name": "UpperTheory.Top.VWinAt",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean",
+          "line0": 44,
+          "line1": 47,
+          "sha256": "5ae8705f36350477e336b73960001e8aa1b0aa0720106a6a8c993601774892de"
+        },
+        {
+          "name": "UpperTheory.Top.VAt",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean",
+          "line0": 41,
+          "line1": 42,
+          "sha256": "c5887138c8f5a097a96d7d8fea7f4b24e9143ddc9e6406401824738869d5be7e"
+        },
+        {
+          "name": "UpperTheory.Top.VVle",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean",
+          "line0": 12,
+          "line1": 17,
+          "sha256": "40401271208e3cb9536b359c87cf6a4f28cab860edb7e750e1294a7c45913a4f"
+        },
+        {
+          "name": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+          "line0": 810,
+          "line1": 813,
+          "sha256": "830dcc21c3e6cbb1aa36c0fb5396d2ed4099f5f72b2c18644ad323b75924fac3"
+        },
+        {
+          "name": "UpperTheory.EveryCharacter",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/EveryCharacter.lean",
+          "line0": 13,
+          "line1": 14,
+          "sha256": "19b590d4f118e2b3a8dfc4cddce4d8be959b352780f70bcb530728021a247a3c"
+        }
+      ]
+    },
+    {
+      "id": "P017",
+      "track": "analytic",
+      "old_status": "Outlined",
+      "status": "Full",
+      "grade": "L1",
+      "review_status": "pending_review",
+      "pages_written": 2,
+      "notes": [
+        {
+          "path": "notes/units/P017_v4.md",
+          "pages": 2,
+          "sha256": "1c39b38b6d0b4b85003e5b820e02d23ba035173fc70605d35c3a636a7db70152"
+        }
+      ],
+      "weakest_step": "Verify that the same eventual threshold precedes the scale-dependent reference member and that the host transfer identifies the very same selected translates.",
+      "lean_ranges": [
+        {
+          "name": "UpperTheory.Comparison₂.level_gm_le_on_family_scales",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/LevelGmLeOnFamilyScales.lean",
+          "line0": 28,
+          "line1": 30,
+          "sha256": "3ccafb3b79c94bca951834869fa86b0f798622473f991b8215748e8a3087b2d1"
+        },
+        {
+          "name": "UpperTheory.Comparison₂.core_gm",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/CoreGm.lean",
+          "line0": 12,
+          "line1": 74,
+          "sha256": "b73760a18d5253b23d291914c3579cfc2125b0864ba945c9fffe6f1260fb8394"
+        },
+        {
+          "name": "Deduction.ch_core",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean",
+          "line0": 343,
+          "line1": 442,
+          "sha256": "1c0b4be1f96d1fb59d5b7e4901b2036613b4f74c11d405016ffa5cf7b975ea56"
+        },
+        {
+          "name": "Deduction.ch_top",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChTop.lean",
+          "line0": 37,
+          "line1": 72,
+          "sha256": "4d71f0cccac3ac250ed97d70beb0d18c902b9639ccde0f4c5b31c38a26f724fd"
+        },
+        {
+          "name": "UpperTheory.Comparison₂.tiedCore_of_chainTied",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/LevelGmLeOnFamilyScales.lean",
+          "line0": 13,
+          "line1": 26,
+          "sha256": "3c976c086a7fc24254621a015b8cbdb0f676a380faa97df8d4b0f65dcf6b8577"
+        },
+        {
+          "name": "UpperTheory.Comparison₂.windowInequality_of_artinInputs",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/WindowInequalityOfArtinInputs.lean",
+          "line0": 17,
+          "line1": 25,
+          "sha256": "1e34532af7583c17cf8935de7cb473e289ba210c050a3408a185bd23cfdd70b3"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/SharpRestriction/GlobalSchurBounds/TieGlobal.lean",
+          "line0": 97,
+          "line1": 114,
+          "sha256": "ee75ebdaefc4c477d6a861c449117734998c23db306600b5d46646ae33d5eee7"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/TopDefs.lean",
+          "line0": 15,
+          "line1": 16,
+          "sha256": "695c5843601cab184a89a7a0f0f9bc180e843d226271553e4c5c0c2877e29055"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/TopWin.lean",
+          "line0": 23,
+          "line1": 28,
+          "sha256": "666c53e061ac1db5fc1b72c232a0a545e51c8e195ae7844c03b0abcb59f37107"
+        }
+      ]
+    },
+    {
+      "id": "P026",
+      "track": "galois",
+      "old_status": "Statement only",
+      "status": "Outlined",
+      "grade": "L0",
+      "review_status": "pending_review",
+      "pages_written": 3,
+      "notes": [
+        {
+          "path": "notes/units/P026_round3.md",
+          "pages": 3,
+          "sha256": "6de734e914879206e0527e3ca4ea5970d50df5a60e319e212b255179aec46165"
+        }
+      ],
+      "weakest_step": "Inspect the specialization and the Hecke projection that connect the global integral tuple to Pin7. Matching the twist, lattice and second coordinate is necessary to use the local contradiction on the cocycle actually supplied.",
+      "lean_ranges": [
+        {
+          "name": "GlobalTheory.Ord2.ZetaUr",
+          "file": "Development/AbelianVarietyTheory/Statements/CuspidalUnitaryTwists/ZetaUr.lean",
+          "line0": 18,
+          "line1": 20,
+          "sha256": "2c28d0529067a5d3b2fa5e45897ade476dc6de5f7d86678ce473c765943daa78"
+        },
+        {
+          "name": "GlobalTheory.Ord2.SrcUr",
+          "file": "Development/AbelianVarietyTheory/Statements/CuspidalUnitaryTwists/ZetaUr.lean",
+          "line0": 13,
+          "line1": 16,
+          "sha256": "65c2eaadbe62eebcc78c0d6edca81a45b4bf45a7ba25062bafcb1876124fdfe0"
+        },
+        {
+          "name": "UpperTheory.V.Z.Kato.Final.zetaUr",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/UnramifiedZeta/ZetaUr.lean",
+          "line0": 9,
+          "line1": 12,
+          "sha256": "bde81d34b87e1ead6f724aa1fda87fc35be45b0c72261d2d54b8efc39b45c132"
+        },
+        {
+          "name": "GlobalTheory.KZ.Sys",
+          "file": "Development/AbelianVarietyTheory/Definitions/Foundations/IsLocallyConstantCycMod.lean",
+          "line0": 13,
+          "line1": 19,
+          "sha256": "b4b4ded7ae99c8da921fb026d1a87dd470ff1f50398aa14cea9d6b652d7afcac"
+        },
+        {
+          "name": "GlobalTheory.KZ.SpLink",
+          "file": "Development/AbelianVarietyTheory/Definitions/Foundations/IsLocallyConstantCycMod.lean",
+          "line0": 35,
+          "line1": 38,
+          "sha256": "e71eca2c408be60b3b1aa01d9fe94de6c4a7a2ba6a961a5225908c1f401d6637"
+        },
+        {
+          "name": "GlobalTheory.KZ.ExistsZetaEulerSystemIwasawaData",
+          "file": "Development/AbelianVarietyTheory/Definitions/Foundations/ZetaElementsUnramifiedOrdinaryOfEulerSystemInert.lean",
+          "line0": 20,
+          "line1": 26,
+          "sha256": "f201ccf9a9561b35677cd865e25d2a8e80419250ddf6947179dbad684634bbb8"
+        },
+        {
+          "name": "UpperTheory.V.Z.Kato.Joint.kato_global_unit_law_of_smoothed_classes",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/FrobeniusHodgeTateLaws/KatoGlobalUnitLawOfSmoothedClasses.lean",
+          "line0": 8,
+          "line1": 10,
+          "sha256": "915b0a4f68ca30e02e2beae7d1a2d2cd53aef31b6aee3d6fe7a87f275bc9acd2"
+        },
+        {
+          "name": "GlobalTheory.KZ.ZetaEulerSystemNonvanishing",
+          "file": "Development/AbelianVarietyTheory/Definitions/Foundations/ZetaElementsUnramifiedOrdinaryOfEulerSystemInert.lean",
+          "line0": 28,
+          "line1": 34,
+          "sha256": "67646f81dcf26231c89353aba41ecb9d946fa35c8de3ab9aa52371f9199edb1d"
+        },
+        {
+          "name": "UpperTheory.Kd.C7.LocalUnitsRoots.main",
+          "file": "Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/NormFactorLeOne.lean",
+          "line0": 99,
+          "line1": 126,
+          "sha256": "fcdcbaa3bdb64a5857decd2fd9a71ed47653e1ee7705a0e8efee0099b699cbd8"
+        },
+        {
+          "name": "UpperTheory.Kd.C7.LocalUnitsRoots.main",
+          "file": "Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/NormFactorLeOne.lean",
+          "line0": 127,
+          "line1": 157,
+          "sha256": "c1404a5d13282a4301aab6482f6aa4b22b70a4960180458da60b21dd8c808191"
+        },
+        {
+          "name": "UpperTheory.Kd.C7.pLocu",
+          "file": "Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/NormFactorLeOne.lean",
+          "line0": 162,
+          "line1": 164,
+          "sha256": "fa8d443d46e85b9d9b4a32360d03f0a19ff9d80fdb0956ec946aff0db338acdc"
+        },
+        {
+          "name": "GlobalTheory.KZ.zetaSysU_of_halves2",
+          "file": "Development/AbelianVarietyTheory/Definitions/Foundations/ZetaElementsUnramifiedOrdinaryOfEulerSystemInert.lean",
+          "line0": 36,
+          "line1": 41,
+          "sha256": "718faf59dc779c82707b4ac7f6116e3a24f0d6647b4aef415092838d90777fae"
+        },
+        {
+          "name": "GlobalTheory.KZ.es_of_sys",
+          "file": "Development/AbelianVarietyTheory/Definitions/Foundations/IsLocallyConstantCycMod.lean",
+          "line0": 46,
+          "line1": 55,
+          "sha256": "af9af446921f4e27dcdc7a4df90d8d97252ee6746d7e6f49d4cf56bb35c5232a"
+        },
+        {
+          "name": "GlobalTheory.KZ.zetaUr_of_halves2",
+          "file": "Development/AbelianVarietyTheory/Definitions/Foundations/ZetaElementsUnramifiedOrdinaryOfEulerSystemInert.lean",
+          "line0": 43,
+          "line1": 46,
+          "sha256": "fe63d8687476a61432ad9d9a2fb56293cd94ba2d02e18cfc62920577b5157c9a"
+        }
+      ]
+    },
+    {
+      "id": "T09",
+      "track": "theta",
+      "old_status": "Statement only",
+      "status": "Outlined",
+      "grade": "L0",
+      "review_status": "pending_review",
+      "pages_written": 2,
+      "notes": [
+        {
+          "path": "notes/units/T09_round3.md",
+          "pages": 2,
+          "sha256": "2b936651ff4ceac9c5cc0d7b0aedecb80abf4a13e5a26dcd761061305fe1111c"
+        }
+      ],
+      "weakest_step": "Check the common-factor assertion for the row evaluation and its use of the tensor description of the coefficient space and Bessel multiplicity bound across distinct rows.",
+      "lean_ranges": [
+        {
+          "name": "GlobalTheory.IndefiniteRowSideFullHecke.LevelPlusSubgroup.Separates",
+          "file": "Development/AbelianVarietyTheory/BlockTheory/DivisorBase/LevelPlusSubgroup.lean",
+          "line0": 65,
+          "line1": 67,
+          "sha256": "a29083642ffcef462e765a7e61a2d2370b17313ebfab0d85aac9985afd4a17ea"
+        },
+        {
+          "name": "GlobalTheory.IndefiniteRowSideFullHecke.LevelPlusSubgroup.SeparatesSpan",
+          "file": "Development/AbelianVarietyTheory/BlockTheory/DivisorBase/LevelPlusSubgroup.lean",
+          "line0": 69,
+          "line1": 71,
+          "sha256": "8fa1344baf2418e4bad8f97d0a6451f9b2d066eec0472c144c15fbee3c946683"
+        },
+        {
+          "name": "GlobalTheory.IndefiniteRowSideFullHecke.LevelPlusSubgroup.FunctionalsSeparate",
+          "file": "Development/AbelianVarietyTheory/BlockTheory/DivisorBase/LevelPlusSubgroup.lean",
+          "line0": 83,
+          "line1": 91,
+          "sha256": "fb5ca3a65237dc7deb91ed68d1d3c79ddea1a6c40fdb94e208d309df1cf6e68f"
+        },
+        {
+          "name": "UpperTheory.Lit.realInputE_holds",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/FockModels/RealBranch.lean",
+          "line0": 231,
+          "line1": 235,
+          "sha256": "7276a0ca4027d8fbcd8a862b3eacaeb2dc62c6e7f2d78207d36f756322c5ec5c"
+        },
+        {
+          "name": "UpperTheory.Lit.functionalsSeparate_of_howeUnram_of_siegelWeil",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/FunctionalsSeparateOfHoweUnramOfSiegelWeil.lean",
+          "line0": 17,
+          "line1": 19,
+          "sha256": "817e728e510e88e99d1e68c0dfbea1b34a8883a5d27f8aadb3e75f338424bf8d"
+        },
+        {
+          "name": "UpperTheory.Lit.real_functionals_separate_of_hypothesis",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/RealFunctionalsSeparateOfHypothesis.lean",
+          "line0": 15,
+          "line1": 24,
+          "sha256": "565ebce3bb9ae9aa9a79a9e83db0cce95af0524b82e0c00083638b8a6295c1a9"
+        },
+        {
+          "name": "UpperTheory.Lit.real_functionals_separate_of_hypothesis",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/RealFunctionalsSeparateOfHypothesis.lean",
+          "line0": 28,
+          "line1": 30,
+          "sha256": "3d181f1513007e76b3114c1a95650b57f9935fc83d7cdc6255553fab7d7d8d10"
+        },
+        {
+          "name": "GlobalTheory.RowConvAll.separating_family_converges",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/ConvergenceOfSeparatingFamily.lean",
+          "line0": 14,
+          "line1": 26,
+          "sha256": "c49f33857772e80f45ccd10258c88c1b325059778ddb3b73766efad333315e86"
+        },
+        {
+          "name": "GlobalTheory.Twist.CoreOntoAssembly.twist_core_surjective_of_local_components",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/TwistCoreSurjectiveOfLocalComponents.lean",
+          "line0": 15,
+          "line1": 21,
+          "sha256": "f335d32089e8e260f33698ae821b1fea9a56b0d26e9694d3abe399ea95de274b"
+        },
+        {
+          "name": "UpperTheory.Lit.real_functionals_separate_of_hypothesis",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/RealFunctionalsSeparateOfHypothesis.lean",
+          "line0": 24,
+          "line1": 29,
+          "sha256": "6ea0835d175f7347ab6f4c7f4b21517b491217a50ed2e22014a1bdf6966012c4"
+        },
+        {
+          "name": "UpperTheory.Lit.bessel_separate_of_step_gap",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/BesselSeparate.lean",
+          "line0": 9,
+          "line1": 11,
+          "sha256": "a3f80cb5ae64ebb14dc85f69568704eaba0ee65f97514872dafc43b589c7952d"
+        },
+        {
+          "name": "UpperTheory.Lit.real_functionals_separate_of_hypothesis",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/RealFunctionalsSeparateOfHypothesis.lean",
+          "line0": 27,
+          "line1": 30,
+          "sha256": "a68d8f08b4fb056fc45349ba23b949d618ef5c98ff62346e25b934d6acad10b3"
+        },
+        {
+          "name": "UpperTheory.Lit.Bur.separate_of_burGapPos",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/BesselModels/SepGap.lean",
+          "line0": 222,
+          "line1": 256,
+          "sha256": "45f190b226dae8eb3e72ab36c88abf917daac3045d57c870aae46d98a8a1a6cd"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AbelianVarietyTheory/BlockTheory/DivisorBase/LevelPlusSubgroup.lean",
+          "line0": 65,
+          "line1": 71,
+          "sha256": "d2ba6367653cfc139bd0201a7b83bdd88b787e9fab4f6029c66982f6ad102d88"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/BesselSeparate.lean",
+          "line0": 8,
+          "line1": 11,
+          "sha256": "5c7c9ab4bfec539a1ca42dc026d7aecf0dee227cb7d2350411ff5657e430e9e2"
+        }
+      ]
+    },
+    {
+      "id": "T11",
+      "track": "theta",
+      "old_status": "Statement only",
+      "status": "Outlined",
+      "grade": "L0",
+      "review_status": "pending_review",
+      "pages_written": 2,
+      "notes": [
+        {
+          "path": "notes/units/T11_round3.md",
+          "pages": 2,
+          "sha256": "4f9bfee641d772b5870a10f974708fb6a50a9c01f87edb872b3391b4afc4c371"
+        }
+      ],
+      "weakest_step": "Trace the nonzero bottom contribution to a primed test in the prescribed space and the scalar comparison for every choice of matching maps.",
+      "lean_ranges": [
+        {
+          "name": "GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.IsConst",
+          "file": "Development/AbelianVarietyTheory/BlockTheory/DivisorBase/WeilTensorModels.lean",
+          "line0": 491,
+          "line1": 491,
+          "sha256": "8c0774bd9f3d504e0f776aa1f673680bc6f8eb96f3e16086db4baab66095eda7"
+        },
+        {
+          "name": "GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.IsMatched",
+          "file": "Development/AbelianVarietyTheory/BlockTheory/DivisorBase/WeilTensorModels.lean",
+          "line0": 493,
+          "line1": 496,
+          "sha256": "f7b37f5debcc80dfd28d4707c4a53714383b1072e1a268277139586a49e1fc1b"
+        },
+        {
+          "name": "GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.Decay",
+          "file": "Development/AbelianVarietyTheory/BlockTheory/DivisorBase/WeilTensorModels.lean",
+          "line0": 498,
+          "line1": 501,
+          "sha256": "69e064cb25b170e783e0f59a912753ebf403d222da7aff56b53a5b7eeeff4c75"
+        },
+        {
+          "name": "GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.OneConst",
+          "file": "Development/AbelianVarietyTheory/BlockTheory/DivisorBase/WeilTensorModels.lean",
+          "line0": 503,
+          "line1": 505,
+          "sha256": "83b37347f6d26bac05d2e22a6e5510429698b6e43dc2c603f36b5a266b9bb420"
+        },
+        {
+          "name": "GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.LocalMatching",
+          "file": "Development/AbelianVarietyTheory/BlockTheory/DivisorBase/WeilTensorModels.lean",
+          "line0": 581,
+          "line1": 583,
+          "sha256": "79d0d91c34ca1aaf8733e1e6c393433e22e33b9ae98c3347d6e47ac5c1125363"
+        },
+        {
+          "name": "GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.ThetaIntegralsAgree",
+          "file": "Development/AbelianVarietyTheory/BlockTheory/DivisorBase/WeilTensorModels.lean",
+          "line0": 585,
+          "line1": 592,
+          "sha256": "3014596166a24897cea649bb1114590941101077ff91e78802ab4cc5b10f0bb0"
+        },
+        {
+          "name": "PositivityTheory.Sph.modSt2",
+          "file": "Development/WeilBound/ThetaLifts/SphericalLattices/ModSt2.lean",
+          "line0": 7,
+          "line1": 7,
+          "sha256": "bf34e74e7d4102fd2f14db5ae13ec798697b2d0a47777535a54c9cdae29d1618"
+        },
+        {
+          "name": "PositivityTheory.ThKR.theoremK_head2_of_mod",
+          "file": "Development/WeilBound/ThetaLifts/Reductions/FiniteClosure/TheoremKOfMod.lean",
+          "line0": 14,
+          "line1": 20,
+          "sha256": "61fba8662a8adce6f449f96ab0b5f3a32776a6fdcf324f001ba8aeabb446bf77"
+        },
+        {
+          "name": "PositivityTheory.ThKR.thetaIntegralsAgree_and_localMatching_of_siegelWeil",
+          "file": "Development/WeilBound/ThetaLifts/Reductions/FiniteClosure/TheoremKOfMod.lean",
+          "line0": 22,
+          "line1": 24,
+          "sha256": "980e8aa20fcabf5650cfbad03ed4237fce442586e0eaa5ce075a5b16ec1d80d6"
+        },
+        {
+          "name": "PositivityTheory.ThKR.theoremK_head2",
+          "file": "Development/WeilBound/ThetaLifts/Reductions/FiniteClosure/TheoremKOfMod.lean",
+          "line0": 26,
+          "line1": 27,
+          "sha256": "85d76e9d59ffa0b7c45c1dae9bde68d8979615f47da86fbe108c068502267291"
+        },
+        {
+          "name": "PositivityTheory.ThKR.theoremK_head2_of_mod",
+          "file": "Development/WeilBound/ThetaLifts/Reductions/FiniteClosure/TheoremKOfMod.lean",
+          "line0": 15,
+          "line1": 20,
+          "sha256": "bbabedeaf1dd5fb72818aeeb42347bb179cbd7d1b46bf7d2c9f30749263ea1cc"
+        },
+        {
+          "name": "PositivityTheory.Sph.Tr.closeSph",
+          "file": "Development/WeilBound/ThetaLifts/SphericalLattices/SphericalClosure/CloseSph.lean",
+          "line0": 28,
+          "line1": 43,
+          "sha256": "fd4643afe676a92424a172dad6144e665a8d53b77704c5447c87df806625d27f"
+        },
+        {
+          "name": "PositivityTheory.Sph.Tr.closeSph",
+          "file": "Development/WeilBound/ThetaLifts/SphericalLattices/SphericalClosure/CloseSph.lean",
+          "line0": 129,
+          "line1": 135,
+          "sha256": "c71dd599b1bebf2a2c3d75e9781595ab23b704534cb5c4cfcbd44007c67f01f5"
+        },
+        {
+          "name": "PositivityTheory.ThKG.agree_of_leaves",
+          "file": "Development/WeilBound/ThetaLifts/AgreeOfLeaves.lean",
+          "line0": 7,
+          "line1": 8,
+          "sha256": "cae249cf705e6e0c524e825be1bb10553134e126407ffeec9457b77f2e8fe89b"
+        },
+        {
+          "name": "PositivityTheory.Sph.Tr.closeSph",
+          "file": "Development/WeilBound/ThetaLifts/SphericalLattices/SphericalClosure/CloseSph.lean",
+          "line0": 103,
+          "line1": 117,
+          "sha256": "fe757d1327554015a4723eefa67baf5e31f5fe888d6cb73f11b8bca36672d1d5"
+        },
+        {
+          "name": "PositivityTheory.Sph.Tr.closeSph",
+          "file": "Development/WeilBound/ThetaLifts/SphericalLattices/SphericalClosure/CloseSph.lean",
+          "line0": 118,
+          "line1": 135,
+          "sha256": "eae9dc6bc76c256408f685b836791c6f7151e07766112fa7c8b0ef6549b76ee2"
+        },
+        {
+          "name": "GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.Coinv",
+          "file": "Development/AbelianVarietyTheory/BlockTheory/DivisorBase/WeilTensorModels.lean",
+          "line0": 507,
+          "line1": 512,
+          "sha256": "a6d98fe236d04d069dd6c96c1a678ffb393bedf7774bb38187797f85cefc9912"
+        },
+        {
+          "name": "PositivityTheory.Sph.Tr.closeSph",
+          "file": "Development/WeilBound/ThetaLifts/SphericalLattices/SphericalClosure/CloseSph.lean",
+          "line0": 145,
+          "line1": 150,
+          "sha256": "5cd36100745cf9624bd31134d638dbeb9f4fc492e2a518cdc0e5d0e85114f040"
+        },
+        {
+          "name": "GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.stepFac",
+          "file": "Development/AbelianVarietyTheory/BlockTheory/DivisorBase/WeilTensorModels.lean",
+          "line0": 552,
+          "line1": 557,
+          "sha256": "0b78d1a75a1fbbb72c504b7ff748a9dc5d62dd20ff4d20c72f9cd24a0065fb13"
+        },
+        {
+          "name": "GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.StepBeta",
+          "file": "Development/AbelianVarietyTheory/BlockTheory/DivisorBase/WeilTensorModels.lean",
+          "line0": 559,
+          "line1": 567,
+          "sha256": "6acd8a50d55253973b77295993e659eec6a59cb03586d5523734affd0587583b"
+        },
+        {
+          "name": "GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.StepAlpha",
+          "file": "Development/AbelianVarietyTheory/BlockTheory/DivisorBase/WeilTensorModels.lean",
+          "line0": 571,
+          "line1": 579,
+          "sha256": "e909e2b7518db25aa012e441ee988515ffcec08eb1ddc8dd3d98f16126421409"
+        },
+        {
+          "name": "PositivityTheory.Sph.Tr.closeSph",
+          "file": "Development/WeilBound/ThetaLifts/SphericalLattices/SphericalClosure/CloseSph.lean",
+          "line0": 183,
+          "line1": 193,
+          "sha256": "6bbdaf5c9a5642f33b5978cb629082d2f2b5476f21d53df952eb13116ed01cf9"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AbelianVarietyTheory/BlockTheory/DivisorBase/WeilTensorModels.lean",
+          "line0": 491,
+          "line1": 505,
+          "sha256": "c07d02fac4f8256ce7b239c45023865d35616afeb5861abd228e3869fafbe460"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AbelianVarietyTheory/BlockTheory/DivisorBase/WeilTensorModels.lean",
+          "line0": 491,
+          "line1": 512,
+          "sha256": "c3489712f4d589366cfa3a782b1d457a4ed469cdd3ff6afb967dd7f106cf6d7c"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AbelianVarietyTheory/BlockTheory/DivisorBase/WeilTensorModels.lean",
+          "line0": 498,
+          "line1": 505,
+          "sha256": "7301bfa044b27f31079ae1417f288b939b5c46f0b56a122692a26f19f2a40556"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AbelianVarietyTheory/BlockTheory/DivisorBase/WeilTensorModels.lean",
+          "line0": 552,
+          "line1": 567,
+          "sha256": "d9810be5ccc99bcfd59bfaf1b8ff366a355d72693bae45fd065c6a6e4b32e431"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AbelianVarietyTheory/BlockTheory/DivisorBase/WeilTensorModels.lean",
+          "line0": 571,
+          "line1": 592,
+          "sha256": "6506569011c9f3783f39b61d8a1ae39a3cc3f69fdf11a315f2851c3ee0bae5e3"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AbelianVarietyTheory/BlockTheory/DivisorBase/WeilTensorModels.lean",
+          "line0": 581,
+          "line1": 592,
+          "sha256": "64f64ceceb1354eb7231a17b9788cb46b4947a325e6bab6e13cb84d89919c9ff"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/WeilBound/ThetaLifts/Reductions/FiniteClosure/TheoremKOfMod.lean",
+          "line0": 14,
+          "line1": 27,
+          "sha256": "b1f53a4343c3af273ef85feafaedd84bc88cf2db7eb40b7d67fc90d04a52b35c"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/WeilBound/ThetaLifts/SphericalLattices/ModSt2.lean",
+          "line0": 5,
+          "line1": 7,
+          "sha256": "9c0ee0a6d66364541eb7263f404468d0fb0f1704b16afa29924f291ce562acd0"
+        }
+      ]
+    },
+    {
+      "id": "T12",
+      "track": "theta",
+      "old_status": "Statement only",
+      "status": "Outlined",
+      "grade": "L1",
+      "review_status": "pending_review",
+      "pages_written": 2,
+      "notes": [
+        {
+          "path": "notes/units/T12_round3.md",
+          "pages": 2,
+          "sha256": "68f3ae4d07f510a11fd60ac84d7ac67a971308c985649a01c8cf286736ae5bb4"
+        }
+      ],
+      "weakest_step": "Check the singular Whittaker and holomorphic-leading-term inputs in the step carrying the doubled equal-rank value to lower ranks.",
+      "lean_ranges": [
+        {
+          "name": "GlobalTheory.ThK.Dbl.IsDbl",
+          "file": "Development/WeilBound/ThetaLifts/LatticeBasics/Hypotheses2.lean",
+          "line0": 62,
+          "line1": 74,
+          "sha256": "a71ad303d6038ae7b52f2f22b5051055d5c4aed395873bb40dfc68b97fee08f4"
+        },
+        {
+          "name": "GlobalTheory.ThK.Dbl.SiegelWeilStd",
+          "file": "Development/WeilBound/ThetaLifts/LatticeBasics/HypothesesS.lean",
+          "line0": 11,
+          "line1": 21,
+          "sha256": "387f7c6883befae2ea2b4525a6f25ba28583ca185d5a9328f6b3513d94511a02"
+        },
+        {
+          "name": "GlobalTheory.ThK.Dbl.EisValueAt",
+          "file": "Development/WeilBound/ThetaLifts/LatticeBasics/Hypotheses2.lean",
+          "line0": 76,
+          "line1": 78,
+          "sha256": "59fc8c0069349ac6f2b2038ca9b530285e41c982a41b893c69d64fed6852eee2"
+        },
+        {
+          "name": "PositivityTheory.SiegelWeilFormula.Act.ctSplit_of_parts",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilActions/CtSplitOfParts.lean",
+          "line0": 137,
+          "line1": 158,
+          "sha256": "6c5e0aa85f6937e3197ff0226b19c036f59f85456a20d46a4e8704c0d82bcdff"
+        },
+        {
+          "name": "PositivityTheory.SiegelWeilFormula.Act.ctSplit_of",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilActions/CtSplitOf.lean",
+          "line0": 10,
+          "line1": 11,
+          "sha256": "3aadcc6631c76e135b6f4081fd9515d99a3c4ee7cd60da27702aeb8de109f352"
+        },
+        {
+          "name": "PositivityTheory.SiegelWeilFormula.Fin.tWeyl_of",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilStandard/SiegelWeilStdPre.lean",
+          "line0": 16,
+          "line1": 17,
+          "sha256": "ca5d9634ec9b69ce97fac0236d1f546013d4c26665917bcbe9ca7392ea95c843"
+        },
+        {
+          "name": "PositivityTheory.SiegelWeilFormula.Fin.siegelWeilStd_pre",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilStandard/SiegelWeilStdPre.lean",
+          "line0": 19,
+          "line1": 23,
+          "sha256": "360c3deda45b736e8200495767f291d7334dc65031a96db21c2eb4f4d7492874"
+        },
+        {
+          "name": "PositivityTheory.SiegelWeilFormula.Fin.locInst_of",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilStandard/SiegelWeilStdMid.lean",
+          "line0": 14,
+          "line1": 14,
+          "sha256": "df83b30d669c26a533da8eca3b1829cad1d6e65fc536562635a520de09e11d0b"
+        },
+        {
+          "name": "PositivityTheory.SiegelWeilFormula.Fin.siegelWeilStd_mid",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilStandard/SiegelWeilStdMid.lean",
+          "line0": 16,
+          "line1": 20,
+          "sha256": "06a373186dc32f68e4c243b9b18ceee5c7ccbe7d2279aa9791c408297cc9eb20"
+        },
+        {
+          "name": "PositivityTheory.SiegelWeilFormula.Fin.tTheta",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilStandard/SiegelWeilStdOf.lean",
+          "line0": 37,
+          "line1": 37,
+          "sha256": "a0ca7eb81c3d8cfe66d77a4cd72da7e18f9f3d1aff04ba84a3a58a6189f097fe"
+        },
+        {
+          "name": "PositivityTheory.SiegelWeilFormula.Fin.tAll_of",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilStandard/SiegelWeilStdOf.lean",
+          "line0": 39,
+          "line1": 39,
+          "sha256": "5a63eb2fc6ab588b5f56d7334a8e9f345e5af177c252c1a2f349361e889ce16f"
+        },
+        {
+          "name": "PositivityTheory.SiegelWeilFormula.Fin.thetaCoef",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilStandard/SiegelWeilStdOf.lean",
+          "line0": 41,
+          "line1": 41,
+          "sha256": "a59bd551257ea62c24010ec2517b9ec387a0e3504913d4685c54761528379109"
+        },
+        {
+          "name": "PositivityTheory.SiegelWeilFormula.Fin.whitGenLt",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilStandard/SiegelWeilStdOf.lean",
+          "line0": 43,
+          "line1": 44,
+          "sha256": "fe7735459eff11855de680e39f7cd0699cbb7282e9be3a6edda030fc538f6275"
+        },
+        {
+          "name": "PositivityTheory.SiegelWeilFormula.Fin.whitGenEq",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilStandard/SiegelWeilStdOf.lean",
+          "line0": 46,
+          "line1": 47,
+          "sha256": "19dccb3f8353e89ffaedd3f5d8b34f2b4ede0a3729becf5d5cd95bb120110f23"
+        },
+        {
+          "name": "PositivityTheory.SiegelWeilFormula.Fin.whitGenLow",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilStandard/SiegelWeilStdOf.lean",
+          "line0": 49,
+          "line1": 50,
+          "sha256": "267c956f289b6e5bc89412ce0621f15de98872259a871cf8150df549d8a69206"
+        },
+        {
+          "name": "PositivityTheory.SiegelWeilFormula.Fin.siegelWeilStd_of",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilStandard/SiegelWeilStdOf.lean",
+          "line0": 52,
+          "line1": 67,
+          "sha256": "73afe16348ca0c2ff31abd2f851440a2f1908e6f76787b17fa7c9c9538286fa0"
+        },
+        {
+          "name": "PositivityTheory.SiegelWeilFormula.Atop.siegelWeilStd_of",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/FockVacuumBounds/SiegelWeilStdLeaves.lean",
+          "line0": 40,
+          "line1": 58,
+          "sha256": "2ec7241e760c84f926ce8e2bf8d996936c73fe3d5e27698e05bf9397b53d81e9"
+        },
+        {
+          "name": "PositivityTheory.SiegelWeilFormula.Atop.fieldOf",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/FockVacuumBounds/FieldOf.lean",
+          "line0": 50,
+          "line1": 63,
+          "sha256": "3bfd85b699b231377489222f4d04f74cf26d5823335309b62c072e0196a1074f"
+        },
+        {
+          "name": "PositivityTheory.SiegelWeilFormula.Fin.siegelWeilStd_of_ct",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilStandard/SiegelWeilStdOfCt.lean",
+          "line0": 8,
+          "line1": 8,
+          "sha256": "be0aac484d2730163c0e06e8474ed6ea5bb467237620bf62c63d308165bbc2fa"
+        },
+        {
+          "name": "PositivityTheory.SiegelWeilFormula.Fin.siegelWeilStd",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilStandard/SiegelWeilStd.lean",
+          "line0": 8,
+          "line1": 8,
+          "sha256": "3be9614a424c514261625a27639342c2e5d1f56142c3a71fb7dccdf674af302b"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilStandard/SiegelWeilStdMid.lean",
+          "line0": 14,
+          "line1": 20,
+          "sha256": "bd610198374b182fe59cf133af8780ab464a6d40a57e24a22bf45247bfc7f81e"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilStandard/SiegelWeilStdOf.lean",
+          "line0": 37,
+          "line1": 50,
+          "sha256": "85401f7b9c5d0ad34e7780d153755251300f17aaa8ea3b78cd2963fee41f5a92"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilStandard/SiegelWeilStdPre.lean",
+          "line0": 16,
+          "line1": 23,
+          "sha256": "a443ecc47553b8e9d83709e75c4c54ab8aed9fba5956c01065f095fa4118df43"
+        }
+      ]
+    },
+    {
+      "id": "T15",
+      "track": "arakelov",
+      "old_status": "Statement only",
+      "status": "Outlined",
+      "grade": "L0",
+      "review_status": "pending_review",
+      "pages_written": 3,
+      "notes": [
+        {
+          "path": "notes/units/T15_round3.md",
+          "pages": 3,
+          "sha256": "878c27cffd8d0b07cf0d1b4f3cc36f3a5412e9ab2465002dfa74826ab5178539"
+        }
+      ],
+      "weakest_step": "Compatibility of the chosen deep cover and quotient, carrying section and height normalization in the two bounds that feed the uniform lower estimate.",
+      "lean_ranges": [
+        {
+          "name": "SelfIntersectionVolumeEstimates.topCovolG_alt_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopCovolG.lean",
+          "line0": 39,
+          "line1": 58,
+          "sha256": "fd8ede73b86afd6106f2bca330f81b16015ef2f4083de6cb6ee80701b2227999"
+        },
+        {
+          "name": "SelfIntersectionVolumeEstimates.VolumeEstimateHypotheses",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/HodgeBundleWeights/VolumeEstimateHypotheses.lean",
+          "line0": 11,
+          "line1": 11,
+          "sha256": "a0f4835032c8862e15648d82e5c3d9094325927372902bbc19e2f98e73dacd99"
+        },
+        {
+          "name": "GlobalTheory.CovTop.HypothesesX",
+          "file": "Development/AbelianVarietyTheory/Definitions/Divisors/HypothesesX.lean",
+          "line0": 10,
+          "line1": 20,
+          "sha256": "51a8fb2630b24f1e0fe9f1bf908b299b5f045a7aa80cd5acb440238551cbcbb3"
+        },
+        {
+          "name": "GlobalTheory.CovTop.PublishedHodgeBundleTheorems",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/HodgeBundleWeights/ToKnownTheoremsOf.lean",
+          "line0": 7,
+          "line1": 35,
+          "sha256": "4cc91d518df82d30471d805f8bd3d1de4bfc0d0e52c58cc63558d812265cfe70"
+        },
+        {
+          "name": "GlobalTheory.CovHt.HypothesesH",
+          "file": "Development/AbelianVarietyTheory/Definitions/Divisors/SemiposAtOfPositive.lean",
+          "line0": 216,
+          "line1": 220,
+          "sha256": "eb01705e81c1a5113da81ae6ed5d118bc6c3a5822459ed45a36342837a503ee5"
+        },
+        {
+          "name": "GlobalTheory.Published.GrothendieckDeformation",
+          "file": "Development/AbelianVarietyTheory/PublishedTheorems/Divisors₂/GrothendieckDeformation.lean",
+          "line0": 12,
+          "line1": 15,
+          "sha256": "81e56b309c220c85234619ff75aa48ad5080c311f607638a701f9121a324c2c7"
+        },
+        {
+          "name": "GlobalTheory.HSCore.Quoted",
+          "file": "Development/AbelianVarietyTheory/Definitions/Divisors/WellChosen.lean",
+          "line0": 22,
+          "line1": 30,
+          "sha256": "6a9cdabe338bf8110d4d0cfdac4154f1096c5708d307c04d18b30df97bf4c320"
+        },
+        {
+          "name": "GlobalTheory.CompanionTheory.Ar.Plug.DeepStR",
+          "file": "Development/AutomorphicSpectrum/Definitions/GlobalGeometry/ModelSmall.lean",
+          "line0": 63,
+          "line1": 66,
+          "sha256": "076c0ab2437dc7cb00b22d4bfa15d2447cc39c2494b4de3c4b36d9300d41eb59"
+        },
+        {
+          "name": "Formalism.MainNotions.Closed",
+          "file": "Formalism/SharpRestriction/ParamsHeightRankConstant.lean",
+          "line0": 159,
+          "line1": 161,
+          "sha256": "695339d9d7e45e6ef9e8d225b3445fc9b303ae73beda40cc5200441d65b4ae76"
+        },
+        {
+          "name": "GlobalTheory.CovTop.RowsTAlt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LiftLambdaBound.lean",
+          "line0": 17,
+          "line1": 17,
+          "sha256": "b071d03c79605e61363e73d2ba19d906621c26e4b8b65f9bb5c84505300b6741"
+        },
+        {
+          "name": "GlobalTheory.CovTop.EventuallyAtAllPoints",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LiftLambdaBound.lean",
+          "line0": 18,
+          "line1": 19,
+          "sha256": "58e05fcf44ace7832d25a2ec82a3242ec1a63ac917d833422cc90e7b68096bac"
+        },
+        {
+          "name": "GlobalTheory.CovTop.EventuallyAtAllPoints.and",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LiftLambdaBound.lean",
+          "line0": 20,
+          "line1": 25,
+          "sha256": "26f816cde19881b02b94e0543ca9d8726ca699e2bb63cd23ae7e7294de6411e3"
+        },
+        {
+          "name": "GlobalTheory.CovTop.LiftsCondition",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LiftLambdaBound.lean",
+          "line0": 26,
+          "line1": 28,
+          "sha256": "e51e25ad4bc60030730a968999b6f0613da318ef5bd0760fc21327eaf3cde507"
+        },
+        {
+          "name": "GlobalTheory.CovTop.CoversCondition",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LiftLambdaBound.lean",
+          "line0": 29,
+          "line1": 32,
+          "sha256": "7fe2b11c59f0c2040288e1fcc6d410bea135ad840360507131c8ba607b601239"
+        },
+        {
+          "name": "GlobalTheory.CovTop.CovolumeBoundOfX",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LiftLambdaBound.lean",
+          "line0": 60,
+          "line1": 61,
+          "sha256": "7a4740db4f779a2810e867a5eebe7004c25751696b97717c86282a0b56c09ec0"
+        },
+        {
+          "name": "Formalism.L2.Indef.IndefData.L3",
+          "file": "Formalism/LocalToGlobal/IndefiniteForms/IndefSide.lean",
+          "line0": 315,
+          "line1": 316,
+          "sha256": "24fbcd453ce2710bb6cbd6325c433a52afd6d3dfa8667d77f2f3133fc34c6bdc"
+        },
+        {
+          "name": "GlobalTheory.CovTop.CoverDegree",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LiftLambdaBound.lean",
+          "line0": 56,
+          "line1": 56,
+          "sha256": "986b89709a792d2b9ad94213b649a5bd230137a9400f422690bad76ad4b29d89"
+        },
+        {
+          "name": "GlobalTheory.CovTop.ShareCondition",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LiftLambdaBound.lean",
+          "line0": 57,
+          "line1": 57,
+          "sha256": "72b3c289223135532fec7da7a8dbcaa0c0339c2a8aa8f351b784839f3a22cf70"
+        },
+        {
+          "name": "GlobalTheory.CovTop.HeightCondition",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LiftLambdaBound.lean",
+          "line0": 58,
+          "line1": 58,
+          "sha256": "a46351305553310d05682111acff5017b77263bf92b6644510b119558978f31a"
+        },
+        {
+          "name": "GlobalTheory.CovTop.CoverHeightSum",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LiftLambdaBound.lean",
+          "line0": 59,
+          "line1": 59,
+          "sha256": "0a8153a4041ab9e304bb5999556cd55de3729aa9aaf16fed0e7ef9b2a1b4a105"
+        },
+        {
+          "name": "SelfIntersectionVolumeEstimates.height_lower_bound_general_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/HeightLowerBoundGeneral.lean",
+          "line0": 21,
+          "line1": 22,
+          "sha256": "1db0da646376a3c1bd1e52e9785a02de7a24d87f8a81fbbca1e68273ea684b12"
+        },
+        {
+          "name": "GlobalTheory.T.coverHeightSum_of_flatDeg_coverDegree_share",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/HilbertSamuelLowerBoundOfComponents.lean",
+          "line0": 128,
+          "line1": 129,
+          "sha256": "c560f2214cfd620b1faf84af36c8f38cf6b667e616f98f606f328994a2cbe3b8"
+        },
+        {
+          "name": "GlobalTheory.CovTop.FromComp.u_low_of_cover_hyps",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ULowOf.lean",
+          "line0": 16,
+          "line1": 24,
+          "sha256": "3fb21ab78cbb36a67cd0a5bda143851bb167fae4b18a288ba50775a1b360852f"
+        },
+        {
+          "name": "GlobalTheory.T.liftLowBound_of_cover_estimates",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LowOfCoverHypothesesStatement.lean",
+          "line0": 11,
+          "line1": 12,
+          "sha256": "097d3b1e249edf88faf3a69cdde4ea4dd420be0b769837374e2e5645c8dd9611"
+        },
+        {
+          "name": "GlobalTheory.T.covolX_of_truncation_badSet_lambda_lowBound",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/CovolXOfStepsStatement.lean",
+          "line0": 11,
+          "line1": 12,
+          "sha256": "e68818be7e3aa007a96b4c780365ea24c1138af879d3b50df64d57d3a5353301"
+        },
+        {
+          "name": "GlobalTheory.CovTop.Assembly.covolX_of_lift_bounds_and_coreLe",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/CovolXOfSteps.lean",
+          "line0": 16,
+          "line1": 40,
+          "sha256": "4f2ecfbf77ce0566c098a31dbd46c411246f33a7adab25dcddc10ad32ba1c0a3"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LiftLambdaBound.lean",
+          "line0": 17,
+          "line1": 19,
+          "sha256": "07d82803644ca92464a0736168bfb5f252abca23dbedb27de5f4c8eb89045fb9"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LiftLambdaBound.lean",
+          "line0": 26,
+          "line1": 32,
+          "sha256": "483c9fa87f0e8f578c71ab6c5a4f25d8aec9257bd27cec11f04f618077a0bd60"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LiftLambdaBound.lean",
+          "line0": 56,
+          "line1": 59,
+          "sha256": "70ecc6be027dca0a86b35f87e35dadfdba4b67d23743827f2857b31f51464c04"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopCovolG.lean",
+          "line0": 39,
+          "line1": 41,
+          "sha256": "4d3618803645a2a002befa14455aaaf83f07267a547199db34230e05ddb5ccec"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopCovolG.lean",
+          "line0": 42,
+          "line1": 50,
+          "sha256": "de19d486c8a51144f665c61fc83dfdcbcc6aaff7dfd9560baf8e7220da4dbd81"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopCovolG.lean",
+          "line0": 50,
+          "line1": 53,
+          "sha256": "4528abd189e204117c5130b507641e37b04f4a2cc9ee4fd0a73e5ae4ca85d16f"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopCovolG.lean",
+          "line0": 54,
+          "line1": 55,
+          "sha256": "8c2978400f7a656886df79be34ca04a6b259c1b2873447c5a47563ed4c6e7ccd"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopCovolG.lean",
+          "line0": 56,
+          "line1": 57,
+          "sha256": "4504cd957f111f2dc0e792fab9ed7a20845d7d528b0c95e803707ab6202da940"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopCovolG.lean",
+          "line0": 58,
+          "line1": 58,
+          "sha256": "c3f1a7c9c95a8325f543a8e13bbea94ca7bf9965c37acfa93b66d2f06fac7052"
+        }
+      ]
+    },
+    {
+      "id": "T17",
+      "track": "arakelov",
+      "old_status": "Statement only",
+      "status": "Outlined",
+      "grade": "L0",
+      "review_status": "pending_review",
+      "pages_written": 2,
+      "notes": [
+        {
+          "path": "notes/units/T17_round3.md",
+          "pages": 2,
+          "sha256": "5b983c98d795a809d11972cbbb55a54151c5256e79ef2ca533a808bd31c433b5"
+        }
+      ],
+      "weakest_step": "Recovering the original chart-lattice volume in the nonpositive-degree case from separation and shifted-line estimates.",
+      "lean_ranges": [
+        {
+          "name": "MoriwakiBigStatement",
+          "file": "ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/ArakelovGeometry/MoriwakiSt.lean",
+          "line0": 29,
+          "line1": 36,
+          "sha256": "81fe793c0e12128c249d06fb36a06da236fa2cae82b7a4bef52d2714ed463fe9"
+        },
+        {
+          "name": "MoriwakiHSStatement",
+          "file": "ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/ArakelovGeometry/MoriwakiSt.lean",
+          "line0": 18,
+          "line1": 27,
+          "sha256": "0a18352565d3d5b33b5562e60e93490b933734048f4b331d4be78aab119dae20"
+        },
+        {
+          "name": "MoriwakiBig.of_found",
+          "file": "GroundTheory/HeightsAndTheta/Heights/OrbitLimits/MoriwakiBig.lean",
+          "line0": 11,
+          "line1": 16,
+          "sha256": "738d2fd54738c7272a7d712c6f3953a54f7b0aff25837f1e63fda6006fc20881"
+        },
+        {
+          "name": "ArithmeticVolumeBig.Statement",
+          "file": "GroundTheory/HeightsAndTheta/Heights/HilbertSamuel/StatementsArith.lean",
+          "line0": 404,
+          "line1": 410,
+          "sha256": "71e907ee63687279bae4516fcb75f55fad860a7c70f4312505c784ad98cee3c4"
+        },
+        {
+          "name": "MoriwakiBigCurve.Statement",
+          "file": "GroundTheory/HeightsAndTheta/Heights/OrbitLimits/StatementsMoriwakiBigCurve.lean",
+          "line0": 13,
+          "line1": 20,
+          "sha256": "cac702d653651b9679020fd5af03620df29976f9de7d1ee62ec54aec4ff63ba7"
+        },
+        {
+          "name": "ArithmeticVolumeBig.proof",
+          "file": "GroundTheory/HeightsAndTheta/Heights/HilbertSamuel/CharZeroOfIsHorizontal.lean",
+          "line0": 23,
+          "line1": 28,
+          "sha256": "6baf24f9c25fe4c8a24c783be9c2621c59f986d89e7dd4e23d28db176be5c254"
+        },
+        {
+          "name": "charZero_of_isHorizontal",
+          "file": "GroundTheory/HeightsAndTheta/Heights/HilbertSamuel/CharZeroOfIsHorizontal.lean",
+          "line0": 12,
+          "line1": 21,
+          "sha256": "552487c6cbd6fc3f4a5f39fe4eee1ad748fcf2753d7cf186c319f740856d360b"
+        },
+        {
+          "name": "G6.StatementB",
+          "file": "GroundTheory/HeightsAndTheta/Heights/HilbertSamuel/StatementsArith.lean",
+          "line0": 395,
+          "line1": 400,
+          "sha256": "70742a538a929b65c628bf8e6dafe2df452899532c17216a8895850e4b3327f0"
+        },
+        {
+          "name": "hsChain",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/MoriwakiBigness/MoriwakiBigTheorem/HSChain.lean",
+          "line0": 258,
+          "line1": 274,
+          "sha256": "0acd644b10ca5f7be83b78ea222f00dbb85940852d201c8ba8b994407b9ac7d6"
+        },
+        {
+          "name": "CurveCountLower.Statement",
+          "file": "GroundTheory/HeightsAndTheta/Heights/OrbitLimits/StatementsCurveCountLower.lean",
+          "line0": 9,
+          "line1": 16,
+          "sha256": "377353008d46a445de4301e1a9cc170b51b27529c44b9c6def6abc63220beb74"
+        },
+        {
+          "name": "MoriwakiBigCurve.proof",
+          "file": "GroundTheory/HeightsAndTheta/Heights/OrbitLimits/PMoriwakiBigCurve.lean",
+          "line0": 15,
+          "line1": 47,
+          "sha256": "cfd5c8f39bc3ef71db6f342e6ca6fd1f0742c4c435604a286c937ad4dfb846ce"
+        },
+        {
+          "name": "chartLat_le_chartLatNm",
+          "file": "GroundTheory/HeightsAndTheta/Heights/OrbitLimits/PMoriwakiBigCurve.lean",
+          "line0": 11,
+          "line1": 13,
+          "sha256": "22e9d71cc886d021a441a60f0c2b39bbef2723dfb08aaf01a1a76fe5e9bb234f"
+        },
+        {
+          "name": "hsChain",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/MoriwakiBigness/MoriwakiBigTheorem/HSChain.lean",
+          "line0": 293,
+          "line1": 303,
+          "sha256": "093788e1f7a9342bd490fd71a9dad7d48c0065c619258cfad2cd6808f2ba5119"
+        },
+        {
+          "name": "moriwakiBig_of_classicalTheorems",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/MoriwakiBigness/MoriwakiBigTheorem/HSChain.lean",
+          "line0": 365,
+          "line1": 370,
+          "sha256": "4ffd9e96da2b4c13a58f06764f85bae084bfe5cb269ae8707131614933d130fb"
+        },
+        {
+          "name": "arith_intersection_system_of_poincare_lelong",
+          "file": "Development/AutomorphicSpectrum/Proofs/MetricProofs/ArithIntersectionSystemOfPoincareLelongStatement.lean",
+          "line0": 11,
+          "line1": 12,
+          "sha256": "67cffb3f9fd2a1f84f28ee8c1b385fb89e87726dbdfd145a3e449adcd5581e0d"
+        },
+        {
+          "name": "moriwakiBig_outright",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/MoriwakiBigness/MoriwakiBigTheorem/Outright.lean",
+          "line0": 9,
+          "line1": 11,
+          "sha256": "646095c5286191a20a9b8c25f48c653139adaacafbadcd3480bd61dbf9ceebfa"
+        }
+      ]
+    },
+    {
+      "id": "V4-COND",
+      "track": "analytic",
+      "old_status": null,
+      "status": "Full",
+      "grade": "L0",
+      "review_status": "pending_review",
+      "pages_written": 6,
+      "notes": [
+        {
+          "path": "notes/units/V4-COND_round3.md",
+          "pages": 6,
+          "sha256": "5c0efbc6b90d3cf1d9e3943ed1b72cf2e3af4de809f5704275201a63e10588a0"
+        }
+      ],
+      "weakest_step": "Trace the common selection and family through the actual Selmer rank and the independent slope comparison feeding the global implication.",
+      "lean_ranges": [
+        {
+          "name": "UpperTheory.Top.zero_free_all_of_green_v_win",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean",
+          "line0": 12,
+          "line1": 15,
+          "sha256": "5e975b2462270fb38d695e966d3ce6bb6f409b715ddc3302ba807422a5925e41"
+        },
+        {
+          "name": "UpperTheory.Comparison₂.level_gm_le_on_family_scales",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/LevelGmLeOnFamilyScales.lean",
+          "line0": 28,
+          "line1": 30,
+          "sha256": "3ccafb3b79c94bca951834869fa86b0f798622473f991b8215748e8a3087b2d1"
+        },
+        {
+          "name": "UpperTheory.Comparison₂.formB",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/Imports.lean",
+          "line0": 8,
+          "line1": 19,
+          "sha256": "7e428d22efce0efd80b227098601dbf9c2bc6e24039be5c07475f955713a5d5c"
+        },
+        {
+          "name": "riemannHypothesis",
+          "file": "Main.lean",
+          "line0": 4,
+          "line1": 4,
+          "sha256": "71b3d50605ddda7c0c74fbbf5cca47165a4cfa2ad72f50f36b907ecac7ff505a"
+        },
+        {
+          "name": "riemannZeta_eq_zero_re",
+          "file": "Main.lean",
+          "line0": 6,
+          "line1": 6,
+          "sha256": "b76ddf651dfdaa35aa759391bf660be25e1a3d4299cf9b6fd89926313aac2ae7"
+        },
+        {
+          "name": "LFunction_ne_zero_of_half_lt_re",
+          "file": "Main.lean",
+          "line0": 8,
+          "line1": 8,
+          "sha256": "5b0ee88593377690a537bd3111264f9a9652eaad5475b129ce9e15b263830d64"
+        },
+        {
+          "name": "LFunction_eq_zero_re",
+          "file": "Main.lean",
+          "line0": 10,
+          "line1": 10,
+          "sha256": "16e8622c29d633b78f0009d3ed16ed8cd13ece9122362aed0a4fb12646635409"
+        },
+        {
+          "name": "LFunction_eq_zero_re_of_isPrimitive",
+          "file": "Main.lean",
+          "line0": 12,
+          "line1": 12,
+          "sha256": "0401b524ca2966a15b42b17c6d82be74188720e1452c23c1c994ee9ed8fc53e6"
+        },
+        {
+          "name": "Formalism.MainNotions.J.linkMu_of_linkDIV",
+          "file": "Formalism/SharpRestriction/AdmissibleParameterJoins/SumLogPrimeFactorsLe.lean",
+          "line0": 775,
+          "line1": 784,
+          "sha256": "c71b0143e398c32cb0762d42617585f906fcb22a1489cd1bad2e85f4eaf3e03f"
+        },
+        {
+          "name": "UpperTheory.Top.divinN_of_hypV",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/DivinNOfHypV.lean",
+          "line0": 117,
+          "line1": 131,
+          "sha256": "20325dee787b2886ef672e596c3b539fc216684714416a9736e2a96a16e83440"
+        },
+        {
+          "name": "Claim.strip",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/ClaimStrip.lean",
+          "line0": 59,
+          "line1": 73,
+          "sha256": "96cf2c7e2043ba37d7bd7976a7106ee17826306b91be3b5123b4209645557c34"
+        },
+        {
+          "name": "Claim.zeta",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/ClaimStrip.lean",
+          "line0": 75,
+          "line1": 100,
+          "sha256": "ee2f0046467db886764cc122180455d6198ed4d9afc494ae38edd14a7bb4d957"
+        },
+        {
+          "name": "Claim.zeta_iff",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/ClaimStrip.lean",
+          "line0": 102,
+          "line1": 102,
+          "sha256": "ff1e193d8791861153c9d1c0077712253a3b3ba9eab7de39b73b42ea9f2f5559"
+        },
+        {
+          "name": "UpperTheory.Top.topDesWin",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/DesWin.lean",
+          "line0": 11,
+          "line1": 31,
+          "sha256": "21426fb09afe08ec5330cee84e3953ee4565f9f6d616f3482be2a4e352c7fc35"
+        },
+        {
+          "name": "UpperTheory.Top.shape_closed_link_n_of_green",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopShape.lean",
+          "line0": 33,
+          "line1": 55,
+          "sha256": "67cd6a960ebf7fb51c4d08387215973751664c95458069aadd7cd6cfb7d065c1"
+        },
+        {
+          "name": "UpperTheory.Top.supplyChi",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/SupplyChi.lean",
+          "line0": 8,
+          "line1": 16,
+          "sha256": "3802f3f332e6c3e3325ad9b7016e8d050001a204984bd21c05f59b93b9de2e22"
+        },
+        {
+          "name": "UpperTheory.Top.VWin",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean",
+          "line0": 49,
+          "line1": 49,
+          "sha256": "84c157849fbf30a25382ffcc055f63d04544cc5c2e38936e0b220d9e7c661bb8"
+        },
+        {
+          "name": "UpperTheory.Top.zeroFreeAll_of_topG",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/ZeroFreeAllOfTopG.lean",
+          "line0": 26,
+          "line1": 34,
+          "sha256": "779f1617311a91f102fe98548f3774bcaf188e12c0506c5aa600f76d4af099a9"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AbelianVarietyTheory/Definitions/NonGaloisDescent/LabelDatum.lean",
+          "line0": 82,
+          "line1": 112,
+          "sha256": "093c0a2227750d08f68fe5961a2a5391801aac0641f04088b73495e135667b2a"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsRanksRankValFrame.lean",
+          "line0": 45,
+          "line1": 99,
+          "sha256": "9eded7a6c52d5582a3d35db0ae0c0876012c571c36b064f0dc9a575dbc6f8877"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/LinkGl.lean",
+          "line0": 14,
+          "line1": 31,
+          "sha256": "50ea47933db45c6a1bd8444f061acfb36555e58406fce4b4a74fdf5df0575ae2"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/SumRangeEqRoots.lean",
+          "line0": 225,
+          "line1": 304,
+          "sha256": "bf88f05c856ea17023e795b5f4927ca92a35971bd50f00ca4ed56ad8505d16f7"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/VwinOfRow.lean",
+          "line0": 4,
+          "line1": 5,
+          "sha256": "c6737c388a60710399cbefa7c22fa10c35609465302265d87f51a8f680299764"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/BoundedTw.lean",
+          "line0": 45,
+          "line1": 56,
+          "sha256": "182ed86fc4d12babef87510aff04bf054bda1b6e19f8235afc777d762a0c817f"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/ClaimStrip.lean",
+          "line0": 59,
+          "line1": 102,
+          "sha256": "20f163a8bd477e8f807b2a39467c335a068edc36ad4526596553e2e0bfc5a3f3"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean",
+          "line0": 12,
+          "line1": 49,
+          "sha256": "b5a098ce305cd2cdc5f5c94da0337f463f90381f099994d3f6e97fca2a01d961"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/FieldChi.lean",
+          "line0": 20,
+          "line1": 59,
+          "sha256": "fb81ec44f4a2b420bed29158a25fe2fe7a8113865000059178e37966e8cc8aef"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/HostOfField.lean",
+          "line0": 8,
+          "line1": 15,
+          "sha256": "8855c0cb1dda7f740a7192d02c9ee56053f49b8c0fa7ceb3b3e99b6ea82eec7c"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/Imprimitive.lean",
+          "line0": 5,
+          "line1": 35,
+          "sha256": "710456ef393cc097cfc5619d02fb92167a87d0f2bdd4c5340a56c9fe57c35661"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/IsChiField.lean",
+          "line0": 5,
+          "line1": 51,
+          "sha256": "f014c52a660677d1bbea1a0605fa09e54bb482dd911a42fb786b433d570e6a2c"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/PairHyp.lean",
+          "line0": 24,
+          "line1": 35,
+          "sha256": "d85dba8e4fb7ad44f2945fad6e12598103867f9b30b3d003eedccdbf37799131"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/WinPairs.lean",
+          "line0": 5,
+          "line1": 81,
+          "sha256": "acb5276c751b2655aab4d17ad84086b03280a7ad5ae2c7ca679d8ded72f5bcae"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/CoprimeRanks/AdmChi.lean",
+          "line0": 13,
+          "line1": 20,
+          "sha256": "e83ed9ad3dbfca3b124d5efa66d21e6d0159b651278ac56e6dc0fe52dec35214"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChBalance.lean",
+          "line0": 200,
+          "line1": 260,
+          "sha256": "ed29418b71866546dcaaad4dce557ca4bbc1315ad1e70930c6c990b8a58ad229"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean",
+          "line0": 75,
+          "line1": 152,
+          "sha256": "2cd1af6bbeb207dc0b2f12cd38f4601a4293c2fc59903b4b040f5d8405737b4c"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/MeanSquareBounds/pairEx.lean",
+          "line0": 112,
+          "line1": 169,
+          "sha256": "574039390e63e91b94458f5170f3c35d3f85576a947346054d6b39a5015088ee"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/GmAEq.lean",
+          "line0": 61,
+          "line1": 149,
+          "sha256": "9a030e980281ef02d4c0e1b0803352edc89c15c88c56163027de3672e703c068"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/SigALe.lean",
+          "line0": 38,
+          "line1": 60,
+          "sha256": "76af9a0c15d1430c03efad24324cc1e1fc880da1c469944dac5ab35525f9a4e1"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/charsA.lean",
+          "line0": 80,
+          "line1": 125,
+          "sha256": "2e3825540c0f207d1382c9bb8f7d4a9c0dd8c08b01dbe9ec6c2758ad44ac77c4"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/hostFactsS.lean",
+          "line0": 127,
+          "line1": 136,
+          "sha256": "ef97916068b30a9b83bc32d6b22fb03bdc3882660a3447f087cb63045e087583"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ClosedFamilyAdmissibleTwistLink.lean",
+          "line0": 12,
+          "line1": 31,
+          "sha256": "62cef6f7f5cab6bf8084e4c7a0166566cf4899ba2bb455e0100ebd33b33414e7"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/DIVRecBridgeSel.lean",
+          "line0": 197,
+          "line1": 205,
+          "sha256": "ba4779fe82b80ed4d297ed2593dcebc96ca4e68ce674e24e37713d6f6cb3a4e9"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/Hyps.lean",
+          "line0": 22,
+          "line1": 90,
+          "sha256": "a06d22400ea580ca4c23cce1498fc880d05096b95425bb66ca0507d7c014026a"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/Link.lean",
+          "line0": 20,
+          "line1": 54,
+          "sha256": "1247c41e8510e8eb30f213a1e0c74ee102f53cfe54bcfb920dd612657ee6ce66"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkAltAltBis.lean",
+          "line0": 16,
+          "line1": 48,
+          "sha256": "18ce175af24874aac2c4acd94a976c31658fd278b5f3fa172250f3c230021bf2"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkBrest.lean",
+          "line0": 18,
+          "line1": 36,
+          "sha256": "16a8381f3bda15ac92cdbd19d9efd1b3345034c0b137db409b887e1076b89cdf"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkEta.lean",
+          "line0": 13,
+          "line1": 22,
+          "sha256": "5d63e2545472c3f0d0c651d3344076e7e96218414b43431df7ecb16507441dc1"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkEx.lean",
+          "line0": 15,
+          "line1": 37,
+          "sha256": "5f7549dfb16ebb7c9d814a275af2808ec468c197005fe294f185ff4391cddcab"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkG.lean",
+          "line0": 13,
+          "line1": 24,
+          "sha256": "b494e8e96859c738a10c7333ca58640c60ece3961ded3cc83908293a103c5440"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkIrr.lean",
+          "line0": 22,
+          "line1": 43,
+          "sha256": "a06648c3418207186add4b6a2d5befe7adc1bdc8b2c7e846a95a06cba5d88d08"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SelectionClosedOfWuDecay.lean",
+          "line0": 20,
+          "line1": 52,
+          "sha256": "7caa7d85c07b672306551be483ec9ed6479f97cebecaa5948051a755d11aebf5"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ShapeOf.lean",
+          "line0": 24,
+          "line1": 30,
+          "sha256": "6abdef3bcedaa01f9fbefcf84252976895c95aafff23574a6d4238f047d81659"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+          "line0": 44,
+          "line1": 68,
+          "sha256": "7c64a85613593761729e25e8e59316e93e4566b0495623843333ac8a5102d27e"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean",
+          "line0": 12,
+          "line1": 19,
+          "sha256": "4c213557563a048d435136dd745164bd166b52423bdfe52fbfecaaf4551ea47c"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/WireSel.lean",
+          "line0": 20,
+          "line1": 50,
+          "sha256": "60827a5c9a3fd08c688e40374bf7486ce66d5a9c43bf1920f80bcb99d32279e5"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/SharpRestriction/ParamsHeightRankConstant.lean",
+          "line0": 159,
+          "line1": 171,
+          "sha256": "30762988ce6ee91c247fc07d131be819fe99d882fdeec60aacaff0d13fc3841a"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean",
+          "line0": 957,
+          "line1": 964,
+          "sha256": "0bb1c563c4e47fac46b11361efcbfe3cd1c0afe8cb0e32560a9c6585f5786c84"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean",
+          "line0": 966,
+          "line1": 981,
+          "sha256": "2199aa1029611946a5ad7a243a47df41a56417d05aa0ea592a91d4064256cb3c"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/PChain.lean",
+          "line0": 613,
+          "line1": 672,
+          "sha256": "a72dea7a7c24282008d1fea77748cb076f221dc8265c60e47a62b11f42887ebf"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/SubThreeMulLogTwoLe.lean",
+          "line0": 319,
+          "line1": 329,
+          "sha256": "90f46cef73a8bbf9409ddb93252d5d50dd1093899eda3623171ad8cb61b9a738"
+        },
+        {
+          "name": "Supporting source interval",
+          "file": "Main.lean",
+          "line0": 4,
+          "line1": 12,
+          "sha256": "68fc9bfd30faeb6cad8fac94bb68cd1d6f5bc715a0fd8dd21500cc119e66ac22"
+        }
+      ],
+      "superseded": "Historical writing status at import. The current V4-COND card classifies the conditional deduction as Outlined. The v5 exposition awaits independent review."
+    },
+    {
+      "id": "W08",
+      "track": "galois",
+      "old_status": "Statement only",
+      "status": "Outlined",
+      "grade": "L0",
+      "review_status": "pending_review",
+      "pages_written": 2,
+      "notes": [
+        {
+          "path": "notes/units/W08_round3.md",
+          "pages": 2,
+          "sha256": "c794b97ad8e94f9bbd02f7a252394b5e0d091263ef14f0c638427c98eee5ebbd"
+        }
+      ],
+      "weakest_step": "Follow the fixed-kernel bijection into the simultaneous trace estimate. Choosing a new test integer for each coefficient prime or each character would lose the collective bound.",
+      "lean_ranges": [
+        {
+          "name": "UpperTheory.V.HV.CountI",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/Counts.lean",
+          "line0": 53,
+          "line1": 58,
+          "sha256": "04c7f456d96e97640c70eba1ed03d9581daf105bcda47e368db3c1f675de802b"
+        },
+        {
+          "name": "UpperTheory.V.Z.J.count_i_of_printed_bound_k_kato_automorphy",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/LinkedUnlE.lean",
+          "line0": 49,
+          "line1": 54,
+          "sha256": "3970adb13bfb7042a1bd5a6a90a9d568007421cf78b646ea14672abf40434992"
+        },
+        {
+          "name": "UpperTheory.V.Z.J.oneCharU_of_katoTwoW_rig_admI_automorphy",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/FOneCharU.lean",
+          "line0": 75,
+          "line1": 95,
+          "sha256": "f05a9eae95129beb2f7dbcfd609c61571023578d9e45c08f06dd2596ddb96a8a"
+        },
+        {
+          "name": "UpperTheory.V.Z.J.propGK_of_numberU3U_of_oneCharU",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/FPropGKU.lean",
+          "line0": 118,
+          "line1": 145,
+          "sha256": "54fc1ad7254c6fbf472f57fcd52ba38edc96d5edf4767c37368e8e78de7c441e"
+        },
+        {
+          "name": "UpperTheory.V.Z.J.propGK_of_numberU3U_of_oneCharU",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/FPropGKU.lean",
+          "line0": 146,
+          "line1": 172,
+          "sha256": "154970e32a15426dfaf11a9639a9ba0b13195148ff181ff8c117614c2adf8682"
+        },
+        {
+          "name": "UpperTheory.V.U3.corGK",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/CorGSumLog.lean",
+          "line0": 37,
+          "line1": 73,
+          "sha256": "f2ea81afe2db1bca371b4c198c1a4be9c3db299d594347907cd0d4954c62bdc4"
+        },
+        {
+          "name": "UpperTheory.V.U3.countI",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/CountI.lean",
+          "line0": 61,
+          "line1": 75,
+          "sha256": "12dcf1bed5acbf498224edabe20a08eeee459bf3e642325a31d39c788bc3cbde"
+        },
+        {
+          "name": "UpperTheory.V.U3.countI",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/CountI.lean",
+          "line0": 22,
+          "line1": 62,
+          "sha256": "a6451675a0904db9a50cbf45c3b1fc94ae58dad3b0b90a183ed343f4ce938953"
+        },
+        {
+          "name": "UpperTheory.V.U3.countI",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/CountI.lean",
+          "line0": 76,
+          "line1": 102,
+          "sha256": "1672010769e164d01bf761d00f2d3988ef7cc45be9c3fca11679865f7b0bea37"
+        },
+        {
+          "name": "UpperTheory.V.U3.countI",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/CountI.lean",
+          "line0": 103,
+          "line1": 136,
+          "sha256": "67c441cd9cf9a5522a63f8ff27164f7deae29b427938cbe86cac531f9701e689"
+        },
+        {
+          "name": "absorb",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/CountI.lean",
+          "line0": 12,
+          "line1": 20,
+          "sha256": "c0b77c507a5643534fe6fb3a32d065ad0feee03fdbe36e960f4b6ed73d1db036"
+        }
+      ]
+    },
+    {
+      "id": "W09",
+      "track": "galois",
+      "old_status": "Statement only",
+      "status": "Outlined",
+      "grade": "L0",
+      "review_status": "pending_review",
+      "pages_written": 2,
+      "notes": [
+        {
+          "path": "notes/units/W09_round3.md",
+          "pages": 2,
+          "sha256": "947593586c5025b1441064f62fa93fd5db082eae093f5de17ab15ddb11314919"
+        }
+      ],
+      "weakest_step": "Verify that the coefficient change preserves the conductor and the order of the prime-to-$\\ell$ part and that the length comparison refers to the same normalized invariant on both sides. All three are needed to descend the estimate.",
+      "lean_ranges": [
+        {
+          "name": "UpperTheory.V.HV.chiP",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/DirichletPrimeToLPartMulLPowerPart.lean",
+          "line0": 86,
+          "line1": 86,
+          "sha256": "81ce07c079fcbfb9eeed298285104548434687de05042192221272c5178aaa7e"
+        },
+        {
+          "name": "UpperTheory.V.HV.CountShape",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/Counts.lean",
+          "line0": 60,
+          "line1": 63,
+          "sha256": "d0d22d192b85626e4ac2b8f6475571003e921d6bac9d1b776dd58d6b24a79a5e"
+        },
+        {
+          "name": "UpperTheory.V.HV.Host.CaseII",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/DirichletPrimeToLPartMulLPowerPart.lean",
+          "line0": 212,
+          "line1": 212,
+          "sha256": "939cbff94428e3d50b0542c13ba5d24a15faaaf4f01f4551c343c852caa4e7be"
+        },
+        {
+          "name": "UpperTheory.V.HV.Host.CaseIII",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/DirichletPrimeToLPartMulLPowerPart.lean",
+          "line0": 214,
+          "line1": 215,
+          "sha256": "677a4c35b33e478cf8810e09c6465d7cc8bfb542f8073f4aff59737fa356799a"
+        },
+        {
+          "name": "UpperTheory.V.HV.VLe",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/DirichletPrimeToLPartMulLPowerPart.lean",
+          "line0": 120,
+          "line1": 120,
+          "sha256": "efd4f6234d4aa810d6d9c0b5cd3ff2d559cefefa9ebeedced9b76d448dcad184"
+        },
+        {
+          "name": "UpperTheory.V.HV.DescentVanishingReductions.countII_and_countIII_of_printsH_of_sp4In",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/AdjointLiftingOfCohomology.lean",
+          "line0": 33,
+          "line1": 39,
+          "sha256": "2b3d66bebed0168b2ec5a3f9af2b571ec963d6ee0dcecdfce72a02dbd78b14dd"
+        },
+        {
+          "name": "UpperTheory.V.X.soBar",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/LevelCohomology/FdAdjoinRange.lean",
+          "line0": 78,
+          "line1": 96,
+          "sha256": "abd78102fffe5980c2f9bafd5289ebf16a7bd6ca7665a5565aeb43036cafd631"
+        },
+        {
+          "name": "UpperTheory.V.X.soFin",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/LevelCohomology/ExistsAb.lean",
+          "line0": 43,
+          "line1": 99,
+          "sha256": "739e21981e27cdb27ac6d82d4e464a25c129a6c40270e1ed860621b4a1a68d78"
+        },
+        {
+          "name": "main_big",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/ConductorAtMapInjectiveCoeff.lean",
+          "line0": 68,
+          "line1": 102,
+          "sha256": "8a4ac0cb8247d67abe83f424402b1e171123f181dabe62441c0e96872a09ddca"
+        },
+        {
+          "name": "main_big",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/ConductorAtMapInjectiveCoeff.lean",
+          "line0": 102,
+          "line1": 130,
+          "sha256": "59e97f8d92cfa2c4d34341a8ac343e50813f95db7723a5af348477d85fcdc01c"
+        },
+        {
+          "name": "UpperTheory.V.Th.sp4Main_alt",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/ConductorAtMapInjectiveCoeff.lean",
+          "line0": 131,
+          "line1": 164,
+          "sha256": "58f1ade4d84f89277434a59220bb2647ea88407d1f3302907080f4b1f8e59145"
+        },
+        {
+          "name": "UpperTheory.V.Th.sp4Main_alt",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/ConductorAtMapInjectiveCoeff.lean",
+          "line0": 162,
+          "line1": 171,
+          "sha256": "fd93c8897c5d6af59a2994dfb542919e3efdfa1ed8041d74abca4e80471d1240"
+        }
+      ]
+    },
+    {
+      "id": "W11",
+      "track": "galois",
+      "old_status": "Statement only",
+      "status": "Outlined",
+      "grade": "L1",
+      "review_status": "pending_review",
+      "pages_written": 2,
+      "notes": [
+        {
+          "path": "notes/units/W11_round3.md",
+          "pages": 2,
+          "sha256": "121c9a5ff8e208745ddaab762bfa8a856c960b6e38c99718a26ee7d999861651"
+        }
+      ],
+      "weakest_step": "In the two-primary branch, trace the sign bound through conjugation and the square in the final index estimate. A layer-dependent sign bound here would invalidate the subsequent choice of one $r$.",
+      "lean_ranges": [
+        {
+          "name": "UpperTheory.V.Published.FerreroWashington",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/PublishedTheorems/FerreroWashington.lean",
+          "line0": 7,
+          "line1": 11,
+          "sha256": "ec49c6da4bdd353a276727643cdee14a853f2baa203be92c470b33d3ffb9ff39"
+        },
+        {
+          "name": "UpperTheory.V.FW.embed",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/FerreroWashingtonIndex/EmbedDeg.lean",
+          "line0": 16,
+          "line1": 53,
+          "sha256": "a1c9f1b066712e0d74a21ef5d6691a0495143ea0cabfd444bfb8a5ae7268988f"
+        },
+        {
+          "name": "UpperTheory.V.FW.embed",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/FerreroWashingtonIndex/EmbedDeg.lean",
+          "line0": 54,
+          "line1": 78,
+          "sha256": "cb16d016c5e937a5d6c189dbe91c4a6b10362801b686d9570921016daa4caa87"
+        },
+        {
+          "name": "UpperTheory.V.FW.cyc",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/FerreroWashingtonIndex/FerreroWashington.lean",
+          "line0": 18,
+          "line1": 33,
+          "sha256": "63ec43e0450126c119fb8430a835f32c39816af6e842e3730e7f17e02c56c1b3"
+        },
+        {
+          "name": "UpperTheory.V.FW.cyc",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/FerreroWashingtonIndex/FerreroWashington.lean",
+          "line0": 42,
+          "line1": 55,
+          "sha256": "4b27a6d0354ae723b74c764589aca448b5499a9ab8911eeafbadee0881b55915"
+        },
+        {
+          "name": "UpperTheory.V.FW.cyc",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/FerreroWashingtonIndex/FerreroWashington.lean",
+          "line0": 77,
+          "line1": 90,
+          "sha256": "0a945651eea19a6219240db51b801c84520c4f930d30bd0f1e30d036d08a8954"
+        },
+        {
+          "name": "UpperTheory.V.FW.cyc",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/FerreroWashingtonIndex/FerreroWashington.lean",
+          "line0": 54,
+          "line1": 66,
+          "sha256": "43f704546b5276c461f03f5a0cd57d4d109b415e357072f14e6e7ca1fe50c864"
+        },
+        {
+          "name": "UpperTheory.V.FW.cyc",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/FerreroWashingtonIndex/FerreroWashington.lean",
+          "line0": 89,
+          "line1": 102,
+          "sha256": "71bd0d968af72c4b1d2d2a1dcde85f73329021b056332957e40bd680778550a1"
+        },
+        {
+          "name": "UpperTheory.V.FW.desc",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/FerreroWashingtonIndex/CardClDualOne.lean",
+          "line0": 10,
+          "line1": 39,
+          "sha256": "d2b1b16649972e9f2e666d0e525661bc18c5673f55ef97c5f7a66ff7de05fc4a"
+        },
+        {
+          "name": "UpperTheory.V.FW.desc",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/FerreroWashingtonIndex/CardClDualOne.lean",
+          "line0": 40,
+          "line1": 94,
+          "sha256": "7d1b43934f87fd021ad21e34560c86de05b3d9e7d62b6f31af760cad2e2f57ef"
+        },
+        {
+          "name": "UpperTheory.V.FW.ferreroWashington",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/FerreroWashingtonIndex/FerreroWashington.lean",
+          "line0": 104,
+          "line1": 119,
+          "sha256": "b9f0ed4b26b0708e4cee57e659cc639647b13b19b55cfd7fc21b37f6c22135e6"
+        }
+      ]
+    },
+    {
+      "id": "W13",
+      "track": "galois",
+      "old_status": "Statement only",
+      "status": "Outlined",
+      "grade": "L0",
+      "review_status": "pending_review",
+      "pages_written": 2,
+      "notes": [
+        {
+          "path": "notes/units/W13_round3.md",
+          "pages": 2,
+          "sha256": "664c4d54186ea3d8784f9eb6217ea6745847a243d846867eb7993636c0bea273"
+        }
+      ],
+      "weakest_step": "Track the exceptional-layer estimate and the two auxiliary primes through the choice of $Y$. The plus-part theorem must apply to the particular interval W12 returns for the prescribed page function.",
+      "lean_ranges": [
+        {
+          "name": "UpperTheory.V.HV.vwin_of_counts",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/JointWinOfCounts.lean",
+          "line0": 30,
+          "line1": 33,
+          "sha256": "6550cb3fa71638641308abae05eac3983e56c2d0962731973d806ec5cff6a46f"
+        },
+        {
+          "name": "UpperTheory.V.HV.sumOut",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/SumOut.lean",
+          "line0": 50,
+          "line1": 72,
+          "sha256": "bacfbf982bf80b8740a4ab708823548f1b5e17d63a7a321943418488a7453153"
+        },
+        {
+          "name": "UpperTheory.V.HV.sumOut",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/SumOut.lean",
+          "line0": 171,
+          "line1": 204,
+          "sha256": "c498acd6a6d2e8d36351b5393d95458e2eb1f7e04ac8f42c4b759c46d00cefe8"
+        },
+        {
+          "name": "UpperTheory.V.HV.pointHV_of_counts",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/JointWinOfCounts.lean",
+          "line0": 16,
+          "line1": 18,
+          "sha256": "2da03b005268e51699b40532f81ce5c54d37b749c46177104f58e7aa55a9bbb5"
+        },
+        {
+          "name": "UpperTheory.V.HV.sumIn",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/FinalLe.lean",
+          "line0": 86,
+          "line1": 104,
+          "sha256": "d2c35d8358b65a2e43c8230a69cd555b2a1c6d67e38db03f86fc49f1de76feef"
+        },
+        {
+          "name": "UpperTheory.V.HV.point",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/PointArith.lean",
+          "line0": 36,
+          "line1": 92,
+          "sha256": "ce5edf941885ffe8b53412167ce6958242650beca498a274a42fab7c3e56dc87"
+        },
+        {
+          "name": "UpperTheory.V.HV.thmHV",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/ThmHV.lean",
+          "line0": 6,
+          "line1": 40,
+          "sha256": "239d8a843d14b0366cf6065ec039ffc2af23b21f6dbfb00ddb8e713616d265b1"
+        },
+        {
+          "name": "UpperTheory.V.HV.thmHV_of_counts",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/JointWinOfCounts.lean",
+          "line0": 20,
+          "line1": 23,
+          "sha256": "245d9f6ae3f317427bb361cc6607533f3b76e1bb769bc3a73136491604d68419"
+        },
+        {
+          "name": "UpperTheory.V.vwinAt_of_joint",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/CMFieldExponentialBounds/AdmissibleOfPageN.lean",
+          "line0": 41,
+          "line1": 49,
+          "sha256": "74ef92c668ab8108570515df3018c48bfbb0474cb193288258158936e887fde9"
+        },
+        {
+          "name": "UpperTheory.V.HV.jointWin_of_counts",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/JointWinOfCounts.lean",
+          "line0": 25,
+          "line1": 28,
+          "sha256": "f460ad590f807d77ce8680c03dd3e3c0452619e10947d87315f53a4650759cdd"
+        },
+        {
+          "name": "UpperTheory.V.jointWin_of",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/PrimeSetBoundDataOfPrimitiveChar.lean",
+          "line0": 145,
+          "line1": 156,
+          "sha256": "30b8975d9209d89347586988d1523737f38a6d0fc8b8dc3bfbe463fdf8f7b73d"
+        },
+        {
+          "name": "UpperTheory.V.vwinAt_of_joint",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/CMFieldExponentialBounds/AdmissibleOfPageN.lean",
+          "line0": 50,
+          "line1": 103,
+          "sha256": "dbcdd8922dfccda059c029a003b926f45cad2bf7b72010450ddff6d4a42d2a4a"
+        },
+        {
+          "name": "UpperTheory.V.thmBc_iff",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/PrimeSetBoundDataOfPrimitiveChar.lean",
+          "line0": 112,
+          "line1": 134,
+          "sha256": "bba9f5fbf2ef12fca9d9047cbdb599c19c527e65a0bb12b58fa2d237251b806b"
+        },
+        {
+          "name": "UpperTheory.V.vvle_of_parts",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/LengthEqAddEigen.lean",
+          "line0": 127,
+          "line1": 189,
+          "sha256": "f1c9c55bd5efdf50a50637b4296ac6aef43822921ff2fa93b89bfd3ca1062e96"
+        },
+        {
+          "name": "UpperTheory.V.vwinAt_of_joint",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/CMFieldExponentialBounds/AdmissibleOfPageN.lean",
+          "line0": 104,
+          "line1": 129,
+          "sha256": "5c94e4d75b222c80fba0bd5e2119100ceb2dc63d8f444afb079e4f037b730529"
+        },
+        {
+          "name": "UpperTheory.V.vwin_of_joint",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/CMFieldExponentialBounds/AdmissibleOfPageN.lean",
+          "line0": 131,
+          "line1": 133,
+          "sha256": "b662b11d89985654c71b123cef6554ddc5c41e1ab3e7b34ea22ee89f98b89a6c"
+        }
+      ]
+    }
+  ],
+  "source_file_sha256": {
+    "Development/AbelianVarietyTheory/BlockTheory/DivisorBase/LevelPlusSubgroup.lean": "63d9a907b1a2aa53fb217467b74dc25f41c0efec75aae56fdff9cb30cc65a9d4",
+    "Development/AbelianVarietyTheory/BlockTheory/DivisorBase/WeilTensorModels.lean": "62209e957e734a32e4a85feb546cb2e8e7e087475d54fe5575b8fa7b4bd80197",
+    "Development/AbelianVarietyTheory/Definitions/Divisors/HypothesesX.lean": "1c1230697ec3d5e2671223d5f8b2e317f05f903949a4edc5f1a39b154e56f791",
+    "Development/AbelianVarietyTheory/Definitions/Divisors/SemiposAtOfPositive.lean": "7fc2c91a3f3d0bc130bb65b092eb1761feb10701036ee8dff304e5ee91e1cb2e",
+    "Development/AbelianVarietyTheory/Definitions/Divisors/WellChosen.lean": "d3338786bea3a686277764358ce56f87b52cff69692e96775df4b1e27e28c17d",
+    "Development/AbelianVarietyTheory/Definitions/Foundations/IsLocallyConstantCycMod.lean": "ec4d1f503a778a0506da600aa4745b81614c14070d86a7694b654c9905ae3368",
+    "Development/AbelianVarietyTheory/Definitions/Foundations/ZetaElementsUnramifiedOrdinaryOfEulerSystemInert.lean": "5993d657db9d8a8d4616c02463ef7f4c48c2bdc21ff4f63cc074b47312296645",
+    "Development/AbelianVarietyTheory/Definitions/NonGaloisDescent/LabelDatum.lean": "3ecda7efa98f4a1abae048b7262f22be37610901a9bcd987e7a3742b202f7cb6",
+    "Development/AbelianVarietyTheory/Definitions/NonGaloisDescent/RecTExists.lean": "dcda8fc275cc47fadff03b062e870ae83dd6cbeae43d774ac3b7fd6b5c78202a",
+    "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsRanksRankValFrame.lean": "e8652daf78fdca9fc202b7c1c2b54e1c6873f449e61547639750de93598ef7fc",
+    "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/LinkGl.lean": "f968ce06056ca8326be9b449b4717cab0f7d9e81354503b3427e928480816443",
+    "Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LanglandsExtensionUniqueOnCuspidal.lean": "2299f6634dd118b3bf167a0136348a30a4eb2ecb6fb51685acc085b8976fd708",
+    "Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/SumRangeEqRoots.lean": "d4dcbccd896d31c0791d8ee32e245cb442302ca0a720e9acfd70cb67bd89cc17",
+    "Development/AbelianVarietyTheory/PublishedTheorems/Divisors₂/GrothendieckDeformation.lean": "43243bb7b3a02a642b3f2f11590c1ef3fa9c211780405b7137ba28f1831f5c09",
+    "Development/AbelianVarietyTheory/Statements/CuspidalUnitaryTwists/ZetaUr.lean": "c73569849a793bd89a6ce0f604c993dd3f1048d0d4419c69dcd66c98f6f8bc0d",
+    "Development/AutomorphicArithmetic/AutomorphicVarieties/CMFieldExponentialBounds/AdmissibleOfPageN.lean": "ded642308ff9cd83eed14643f20899986c271c73f2ee900bccf6f7a32f3b350d",
+    "Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/FerreroWashingtonIndex/CardClDualOne.lean": "d59cd9107ddedc8badcedc22165c9a2729f0c158df1db73d4e43fe5374046510",
+    "Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/FerreroWashingtonIndex/EmbedDeg.lean": "6f002788dc6c37f9c92b0c6f939dcc5b68dad191fce6ff46a9f44bd72ea5bdaf",
+    "Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/FerreroWashingtonIndex/FerreroWashington.lean": "425bd4e7cef263fd37a5b6c46639c3d31df40a9cb91e4894a71c30e313bba3fa",
+    "Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/Counts.lean": "cc00a1a2e38f8dc5a87a0cc5d79ab8100db8c59255d62be12c95931262fc53c2",
+    "Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/DirichletPrimeToLPartMulLPowerPart.lean": "581296043e4d3e868e1530db3aa8d36f0af6e95a7345a67967b8508dd54592c0",
+    "Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/FinalLe.lean": "088c68d9ee2382e5152fde8b4d201b3e6bf197985a18477a8b4da84377c2fb6f",
+    "Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/JointWinOfCounts.lean": "3c71cf0dabc617e3d1ab9fc04939c311e4242912407cdfbc71c8e0764563d558",
+    "Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/PointArith.lean": "e60eadcd175fbf96e558d403e91466831e4c41c1393400789bc5a581bcc85fbe",
+    "Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/SumOut.lean": "4cb9dc9c0dca0804fcb4cb68deeb0cacb0b47c32f8fec59084d240646754bc28",
+    "Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/ThmHV.lean": "c61ade8f3660fff5364b93469ee6ac19164b7f6ad2d3fcd38e2a2b1bcb2577d2",
+    "Development/AutomorphicArithmetic/AutomorphicVarieties/LengthEqAddEigen.lean": "b10fd612b8aec69ff4f2839049eb06613d0078d2aeddac738f0f8461eb3151f2",
+    "Development/AutomorphicArithmetic/AutomorphicVarieties/LevelCohomology/ExistsAb.lean": "60e20af06f3966078ab4128495b19d99fd519e2de676900da75c48257801d92c",
+    "Development/AutomorphicArithmetic/AutomorphicVarieties/LevelCohomology/FdAdjoinRange.lean": "6ad2312eaf413554d2c34b1c69720c4d18214ebce15681eab64645690c196e27",
+    "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/FrobeniusHodgeTateLaws/KatoGlobalUnitLawOfSmoothedClasses.lean": "bf31995bf2f81022853510b9b16afe908aa7d2e9facce123384cdde2fe527581",
+    "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/UnramifiedZeta/ZetaUr.lean": "59493416c4bea39d32c44a0586f8c5e5c9acd03827db018aa466734f0b8458bd",
+    "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/AdjointLiftingOfCohomology.lean": "7b0b75bee74bfb55a2e0fcd21485f3442e7f9acccf6353830ac1a3f89b92bc9e",
+    "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/ConductorAtMapInjectiveCoeff.lean": "ed67ec56cee1121217c5940001a8d62cdefb79379499e0f2a1a3f92b5e90f2af",
+    "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/FOneCharU.lean": "7ba4909bace94627f5dab4a28180f53c93b7b8be03b2ec1d33fba9cf5708a2d9",
+    "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/FPropGKU.lean": "c3f14dafdc1a3657be28733e7924a8d72f6e72cb7a0e1dcd766860597b56b76a",
+    "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/LinkedUnlE.lean": "107b75233150ebd8a27bd37ae350a295996a79c863f3d469a925c0f1f78fd0a7",
+    "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TopMainZj.lean": "f824d3f7873a493432bdfcbdc279fa82d70a6a9dbaac44c2a30316cada2eae3e",
+    "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/VwinOfRow.lean": "d2df45a5cf337190ae6f885e8e43056ae4e804ae8da250a2ab0abd64b1ca7080",
+    "Development/AutomorphicArithmetic/AutomorphicVarieties/PrimeSetBoundDataOfPrimitiveChar.lean": "8d78f096654f4cdd977c71b1b163bb0883c53a295d0928816d96b0d6a8362cf1",
+    "Development/AutomorphicArithmetic/AutomorphicVarieties/PublishedTheorems/FerreroWashington.lean": "1f56d2c4c78367fc7165908ba2a5ae342a24a47e527bae0bc5609ad8e5a9f8c8",
+    "Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/CorGSumLog.lean": "8fb1f7e2de2193d3f0fb8101356b00dc623e86005c101d21b23e1deb0d2b2611",
+    "Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/CountI.lean": "99f0cc5f6a6a4e16e00057ccf5eef3b69cc177da858cfea2afa41ad0ed350812",
+    "Development/AutomorphicArithmetic/CharacterBoxes/BoundedTw.lean": "1ecc06acbcddcfdc2368602e1e1e1e7009cf9b363669427ac057d174afd17046",
+    "Development/AutomorphicArithmetic/CharacterBoxes/ClaimStrip.lean": "74498552f19df4bd5b3c296ed247d25d40cabd1057647dd4db1ee7ba1c57ea03",
+    "Development/AutomorphicArithmetic/CharacterBoxes/DesWin.lean": "655762e90a0d7aae940774b631286a6cb942e59f68d7a3c350c05274487bf6ec",
+    "Development/AutomorphicArithmetic/CharacterBoxes/DivinNOfHypV.lean": "cefdce360890e26405199ef8db01d6b0c7e044c4ebebeb6bbcfd23de6148bde0",
+    "Development/AutomorphicArithmetic/CharacterBoxes/EveryCharacter.lean": "31f6e49936226cfc3d71b15685347bd2874db0aef384e5cf4fea7d09ba68dc71",
+    "Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean": "732c3347fb02e410cf9af8831afdbba1d230fc522c3dbbccdb4b708e5dde73db",
+    "Development/AutomorphicArithmetic/CharacterBoxes/FieldChi.lean": "784b9d6aed0292547065a98f2577d41f82269332559815f38fc85da4f69369b3",
+    "Development/AutomorphicArithmetic/CharacterBoxes/HostOfField.lean": "cd70757dd71088386ae322de0a4ce80adaeec30c2fcfe5f2ae03ae2b69e515b9",
+    "Development/AutomorphicArithmetic/CharacterBoxes/Imprimitive.lean": "8de85415d0d139f23b2b50ba56c18ab3b3e29740f41e2d86eaf99b95765f512e",
+    "Development/AutomorphicArithmetic/CharacterBoxes/IsChiField.lean": "2b38c0083ca9d740508d050aca313960613d588df5ac2a9bd3303eec27f7e421",
+    "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean": "a5f71e107087e37b2c598709795b0f56c0a6741cf1e8ab99ee1f97e2fce0fe34",
+    "Development/AutomorphicArithmetic/CharacterBoxes/PairHyp.lean": "53e9e84d14f148d61844f97dc184f29119a828c4cd48b8ead5eeff45206d9c54",
+    "Development/AutomorphicArithmetic/CharacterBoxes/SupplyChi.lean": "70a11ba909e03b9153a6beacce24da22f3224b8192ec6980b7f27018961be81b",
+    "Development/AutomorphicArithmetic/CharacterBoxes/WinPairs.lean": "41c1edf737bb6e1a4791d4440488a885889209db750698359ab4d1e237dc2f6e",
+    "Development/AutomorphicArithmetic/CharacterBoxes/ZeroFreeAllOfTopG.lean": "349d9eafe63952c2fa4ccb2055bef7de0144d442c552196183fe48f01958f033",
+    "Development/AutomorphicArithmetic/CoprimeRanks/AdmChi.lean": "07a9e8180f7aa508f38b841bac2742bfa707053e10a4bb291f68b495f24a0716",
+    "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChBalance.lean": "502b43ca1aa951cad0f60719ea17e17912db992ee8371f6d88cdd2d496159911",
+    "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean": "80ceae1e3c5728267fe7e7848342ca2d754c5363e9b6d8ae2d628c70f26772e0",
+    "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChTop.lean": "9be04f7335746cae6bbdf52a813ae6713a90bf2a555eefc56f538bfd96af954f",
+    "Development/AutomorphicArithmetic/DedekindLFunctions/SplitInertia.lean": "7cba3fb7f7bae39df7e93248dfcf9b4255c37e8c1ebc0cb6a821b506b3839563",
+    "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/Development.lean": "b78ea71866812c4d1f3df65f1f3f3e702fa65ec2bb1ea61ca1a250b6fdd536bd",
+    "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/GaloisRepresentationsOfThetaLift.lean": "3f72f1644a6214bb5b90a5e9bac5e33b0474d52eb22f2f1841d443ed342531c2",
+    "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/RowSrc.lean": "0cfbca6cb7d1da543ee9d24c30faeeb3f68838f91c4f6c2c0e682e025c8b9a44",
+    "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/TLiftK.lean": "cb810adcf09297fdd356174b67d6abdc43c079dbe65797b1f47383871c1bf6ca",
+    "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConjBis.lean": "e3020031e884beef2eff18275019b7213a16f3c721242e9a79891b5396955719",
+    "Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/NormFactorLeOne.lean": "70c8fc4790002cc662d5e8fc8e66772213d6f273a7599c69ea013c3997b9af20",
+    "Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/ArtEx.lean": "151bbc3b12e309d4b48f504eeeff426caa2e95844679faa1e2ee2eeab0f1599d",
+    "Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/CuspEx.lean": "302ab0b096870b9d6819c4f078bdb72629d0f9d32516107a07cf8e7995b3ffa0",
+    "Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/ExtDepth.lean": "99752a5f94d9432117877e3dad1c9768db9bed7952d30b780b32a143dfa270ac",
+    "Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/RcTwOfSegments.lean": "e70053a8a2218fcebcbff0faf9da2b0521057bf06612291fe9b93560f0297cee",
+    "Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/RecTExists.lean": "2411dd4cb455607d3f39761258ccde5c9e945443c421e69a626e4148a79824ab",
+    "Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/TypeIff.lean": "9a543dbb47a0d740a6fb2f8b6b67d71e9f6f1284c5e5bfbc2cb358450289972f",
+    "Development/AutomorphicArithmetic/MeanSquareBounds/pairEx.lean": "8af18345e99c599e185472a0221b84acf33455b19ea1d77fe5bed311236f9890",
+    "Development/AutomorphicArithmetic/PrimitiveCosets/CardPsiA.lean": "8c6b5cbf8030859b9cc80323c0ce4942261e00e8de68c2819b03a0a770396fbb",
+    "Development/AutomorphicArithmetic/PrimitiveCosets/ChrBij.lean": "9284283c1bc30e10a1cb37395b5798771f06f4199a7b5889f0307ede18dadc43",
+    "Development/AutomorphicArithmetic/PrimitiveCosets/CoreAtH.lean": "cb17dfd05546ac3116b0638406cb082913e3370841a8abfab1e6498b6d4ac698",
+    "Development/AutomorphicArithmetic/PrimitiveCosets/CoreGm.lean": "73abeaad38ed40bde0c2f974f53cae9d851e72d23ae389dea129b2bbddc58bc8",
+    "Development/AutomorphicArithmetic/PrimitiveCosets/GmAEq.lean": "8443808b37680ed3d10eeafbd3f739a95b0d1e479918834a3065de28e8269f5b",
+    "Development/AutomorphicArithmetic/PrimitiveCosets/GzEq.lean": "f9d5098d865f17d235c3b87010fe1037028ddfe2d358809a4782c3a3221f2914",
+    "Development/AutomorphicArithmetic/PrimitiveCosets/Imports.lean": "9d38c47879d3c02199f747433f009ba4cf6eb44d7480f031e5763a2ee271950e",
+    "Development/AutomorphicArithmetic/PrimitiveCosets/LevelGmLeOnFamilyScales.lean": "978ad99fd0d9e2dc25af57715030516195b629ccd9d5a114451fc5402f1d1426",
+    "Development/AutomorphicArithmetic/PrimitiveCosets/PrimInj.lean": "8c8a6cf73b4bd162f11de94c86f5f4756e8967792bf9a51c456833de70f70827",
+    "Development/AutomorphicArithmetic/PrimitiveCosets/PrimRead.lean": "faeb6d27f74da9319a52b8c768b50c591c588b315ebfa0f830c0dcabdb4d1b8a",
+    "Development/AutomorphicArithmetic/PrimitiveCosets/RecH.lean": "61b35d1b52c98edd6829ae968b6d21d8fb754efd6dad97f357838f54477d65d5",
+    "Development/AutomorphicArithmetic/PrimitiveCosets/SigALe.lean": "88689d3064a0a824da4109d4c183a4cffed8953acffe6eeacb75b088b4f78f55",
+    "Development/AutomorphicArithmetic/PrimitiveCosets/ToEBij.lean": "ca69e9bf67ef48bc8da51fe0fcf271c9cb75233e6ee2d70f8714dae6094eb4d8",
+    "Development/AutomorphicArithmetic/PrimitiveCosets/TopsSum.lean": "a3ca8a26d2c5eab820d9c162a6e490c6ec7fee51a81572907630727de170a33a",
+    "Development/AutomorphicArithmetic/PrimitiveCosets/WindowInequalityOfArtinInputs.lean": "02d09bb042cbcb56956053a9a4ca75302f5a2cc93583f299005078f4656826aa",
+    "Development/AutomorphicArithmetic/PrimitiveCosets/charsA.lean": "36119af651432954be67b5827f5d6eb66a2fcbe2cdbacae3659638a49942352f",
+    "Development/AutomorphicArithmetic/PrimitiveCosets/hostFactsS.lean": "60f91d5782860a2feaf87c2754ea62a99f684425f58b274e9c443088886c2590",
+    "Development/AutomorphicArithmetic/ThetaCorrespondence/BesselModels/SepGap.lean": "c1dc5c0f7e122e28124128f4fd3d39d31c9527c3b985123af74fd67533c20208",
+    "Development/AutomorphicArithmetic/ThetaCorrespondence/FockModels/RealBranch.lean": "9ae76d30f18bf5a84ff2794b3c5116dcacab335a3f00601fdb93afe9f2763b2e",
+    "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/HodgeBundleWeights/ToKnownTheoremsOf.lean": "f56a93dc187c44ef4d3424a79a4c2d1f7942b1993d40912f89164ada600ea1a6",
+    "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/HodgeBundleWeights/VolumeEstimateHypotheses.lean": "83ebe746ecfa5c7411e8728e33c247cfdb783fa7bf02a011867fc1665e2ecc47",
+    "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/BesselSeparate.lean": "73af774fd04ed8c8f0177dd522e303da9e1fe9c69d2d4b037cc3d69d353c2339",
+    "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/ConvergenceOfSeparatingFamily.lean": "41d0ea4d86a8393cedb716940d55e24af41af71827c90ed3a4aca1a588d08580",
+    "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/FunctionalsSeparateOfHoweUnramOfSiegelWeil.lean": "e66efd1ce6a95fb25ebaa88f6bcadc531a377cc3805dc7607fdbea23395adb18",
+    "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/RealFunctionalsSeparateOfHypothesis.lean": "0e687d3aca1f14565d532b29da8342e2cfc109b1537d54da90e6d6c3e516e619",
+    "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/TwistCoreSurjectiveOfLocalComponents.lean": "100a05025ca3af0adf1175518d8703ce45371f6e7a6ba576c68cc12bbb7f8548",
+    "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ClosedFamilyAdmissibleTwistLink.lean": "067cb1855f9b14052b0249c3cfefa9438f34eb7456f04f9178e52f7f22095de3",
+    "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/CovolXOfSteps.lean": "91523ca83062a562c25a77e794e99d2028103fce290ca0749392aed99ea38c75",
+    "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/CovolXOfStepsStatement.lean": "b44910310a652e4b6edc43be701af3e695b2f65f146b5096f05710bb82ea6d3a",
+    "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/DIVRecBridgeSel.lean": "0de206a2fc6c31be807f5f06931f747cdf014ebdd0eb620d68241201dc036dde",
+    "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean": "246b74eeb03dae250c45b46c155b3590cb53c2bac86f5e35f4b74338db487068",
+    "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/HeightLowerBoundGeneral.lean": "1af1d51cff0167b78f535722cc18e73e094b96f69c4a79d0dababa20a357444a",
+    "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/HilbertSamuelLowerBoundOfComponents.lean": "8f952800c424367f1c8961e71b610a9cf0ac39e9f6b9958b7591199e48ddfdee",
+    "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/Hyps.lean": "7c2e3cf200c8adb32d232bf97122dca648fd4e19de132f6d1f07f620171fa8cb",
+    "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LiftLambdaBound.lean": "a73cbdc50b441874d719358771398f999f21e720ef899a99b66c09b9bf72272b",
+    "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/Link.lean": "1dbc9383671b38da8e1cade8572a5f078d9b1e45f2564c467a2f8378ab405340",
+    "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkAltAltBis.lean": "11ed238739b6a58a2a79a50ed5646735983864ea40e24a8c579418b7e2498652",
+    "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkBrest.lean": "dfbd939b0138bcd2f9fd8ac34811159e019ac4f9a554dfcbfbd4a4bb30986087",
+    "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkEta.lean": "a4ad2eeac3c5f56044ba8f9cac74a2c86a6a4521a038e51b10134b42923322d7",
+    "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkEx.lean": "bfbedb911b2dabd71108669e19f9fe6b309cb0d760cb63e2364b4a86ede5b99e",
+    "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkG.lean": "a970d262e644a841430e3ec28da07df726ef9b54ecb3fd7cfcf8d4510b622af1",
+    "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkIrr.lean": "ef48463f59972481bba8016468c7c4b2b3b8f10f16de4415f75cdc02ca8538ed",
+    "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LowOfCoverHypothesesStatement.lean": "fac6e35572dc8e5ab42f60dad82df6e5b3f70b5ed886b4f9174f8a24508cfecd",
+    "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SelectionClosedOfWuDecay.lean": "834326f8581b63d7d52e0009774e5a144617e868e77f9ee2d10fb33d83ce5f5d",
+    "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ShapeOf.lean": "c37a51fd244c4812302bf5d816a248e119ec9ed84089869752267ae741a61705",
+    "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean": "e761e876e3236895eec1b67b5a2118846ddfcc6883eed367ac6cc78523da15f2",
+    "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopCovolG.lean": "f29362501bf62b9b6a7eb933aa0bdf9065414ecca014cf4a9da2970d791b4928",
+    "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean": "7d1d7972a4abe1284c5e4da9dd65a6eb605b06efb5e993b298fe5aaed88e9adf",
+    "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopShape.lean": "9647d4cbe444f79de90c7a5371801e83c58a040499bf03fd61faf37be9e6eaa3",
+    "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ULowOf.lean": "786778b04ec637740a20437600bdc223884e40c74c399d7b7585e51fe7ba614e",
+    "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/WireSel.lean": "b340a3384f17a4ce9d76a77d6d3b8b1922805b2cc35535992df7cd646a56bf12",
+    "Development/AutomorphicSpectrum/Definitions/GlobalGeometry/ModelSmall.lean": "84140c20a9441c7be967faf774488de69bc363d6f3122cae8f22dabf1ef157ab",
+    "Development/AutomorphicSpectrum/Proofs/MetricProofs/ArithIntersectionSystemOfPoincareLelongStatement.lean": "00e9e215c80c7a6cba66e043a353f13e5967cd567d03b96dfd0f8f7891b93dc9",
+    "Development/WeilBound/CoreStatements/AutomorphicKernels/MoriwakiBigness/MoriwakiBigTheorem/HSChain.lean": "df35a13618566af092f1351fa6836815fcdfe6dd1d0f473ca474c6c5aeece622",
+    "Development/WeilBound/CoreStatements/AutomorphicKernels/MoriwakiBigness/MoriwakiBigTheorem/Outright.lean": "77ca33b2710f66cbde5c17f05ccb40ab31984a273f4f5d7495f91b3add9e5620",
+    "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/FockVacuumBounds/FieldOf.lean": "afa217a8e6eb9c318c691f52da22857ed757bee0d668b3bfe00c896565ecf430",
+    "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/FockVacuumBounds/SiegelWeilStdLeaves.lean": "a0aa3edcfeb0156b92073ef8bdbf19b4d09b5e8c32a9e1cce9705abcb63cb38a",
+    "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilActions/CtSplitOf.lean": "ed0e13588934fc9264ac2c1685e57b73878afb8111302f9d13f8978ffde7c23f",
+    "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilActions/CtSplitOfParts.lean": "6b1523ccff04d216570e49c4a42914245b5b0e1ba58d021122580e757eaec1b1",
+    "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilStandard/SiegelWeilStd.lean": "fcfc50f0151ae18442a877ab9193933f99b922a5d812aa7569ccc4665156f1dd",
+    "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilStandard/SiegelWeilStdMid.lean": "cc664cb7c6a21db1fb1f087838c9060ad07e95fd44d417be292df7ad7e7d39b2",
+    "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilStandard/SiegelWeilStdOf.lean": "b18bc4c4f52855a75f8d162eaed94cf6e64a91f09343025f056575579f7587a5",
+    "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilStandard/SiegelWeilStdOfCt.lean": "971e5a9ed18c71e0aefd59ce3f975166a411dd9f2f3419e56ca28cdff40cae8f",
+    "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilStandard/SiegelWeilStdPre.lean": "13cf8762c54a4957ff82f07804b6087355a2b9a2f57797538a18709ef1a30711",
+    "Development/WeilBound/ThetaLifts/AgreeOfLeaves.lean": "d744817cdee7b91992ea1185f8147cb144fe8edff6275756e32901b22f2b47f0",
+    "Development/WeilBound/ThetaLifts/LatticeBasics/Hypotheses2.lean": "f59f3394a75445c20425f60f0d7770b0677299642b34faceee4a9202fb9a6002",
+    "Development/WeilBound/ThetaLifts/LatticeBasics/HypothesesS.lean": "b510de45ddc13f556f389989d2400bc6fcf33b1ef1267e9fcd2fd38df0dd3570",
+    "Development/WeilBound/ThetaLifts/Reductions/FiniteClosure/TheoremKOfMod.lean": "9db3d1af3aac449a4142cbd146a4bcb7b12fbb1fe3b1c73115a4fa274a87b6bf",
+    "Development/WeilBound/ThetaLifts/SphericalLattices/ModSt2.lean": "0264602c4e55b73561e6cab35d4d2cf456d1bba6b7f53c2fb7ac7c4085cf4579",
+    "Development/WeilBound/ThetaLifts/SphericalLattices/SphericalClosure/CloseSph.lean": "388ed49b7854787ba11153c6fbdf7094da29e3f940fa9c61773342cb72707d1e",
+    "Formalism/FrobeniusOrbits/Statement.lean": "be6f07f572e21568d41366bad89e578cb716b1bd4622b9eea7b195063465abad",
+    "Formalism/GammaFactorNonvanishing/CritLine.lean": "5b1552ac13442150f6900f37b9b44eff1491fad1bebe2ec07a959eecb9bcfe02",
+    "Formalism/GammaFactorNonvanishing/RhOfRight.lean": "7e2c0b519ee420192cad8fb281c2d2bfebae2ba553342fd579c81c2aa0bd3dc5",
+    "Formalism/LocalToGlobal/IndefiniteForms/IndefSide.lean": "eff45b2225af32f6bfdd328ab1cfcf5bbb0d64e3137ddd473e0c020c5fb8c460",
+    "Formalism/SharpRestriction/AdmissibleParameterJoins/SumLogPrimeFactorsLe.lean": "8224d8e9387c86a67912457eefe92f38f21ca2c1ac57df8f09da3ba4c2bbb2a6",
+    "Formalism/SharpRestriction/GlobalSchurBounds/TieGlobal.lean": "065799d1ade7de2b196ce5fc384596059f85f5ea952b5582f5040b2807c65b6d",
+    "Formalism/SharpRestriction/ParamsHeightRankConstant.lean": "444928b34f52db021ec70d340afcdee5d2478292b880d7a04d333ac6948b1416",
+    "Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/ConjEMemHostFIff.lean": "db32b7af86f38a66881c2345572c33156fdf027b2f0b2d6c64a6775f8e970647",
+    "Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/ExplicitFormulaErrorOfHostConditions.lean": "d6b12bcbdc15c1b717c33a712474f9fca18c577a65c41fff2b2937534e5447ba",
+    "Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/HostFacts.lean": "55932761ca70f4de199ea50ec2cf0b23c720102c73d9572956e9b20e8eb52d77",
+    "Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/TopDefs.lean": "9741bfa9f85eee26252fdc38e0bcc46a4e065ce57f2695def4ca8463f945c850",
+    "Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/TopWin.lean": "afbbf8ec0a8aca08b7935c6118c76eef06b2eee896805e7de277b9d4e09fc52b",
+    "Formalism/SizeWindowBrackets/ChainSlopeWindows/GaloisMapComplexConjugation.lean": "a2103b58ff829b63399edc4126b0cdc842ef18fe2cd3791b4bc07f4fa56bfe01",
+    "Formalism/SizeWindowBrackets/ChainSlopeWindows/LevelOfCongruence.lean": "b28d36820d558a77dd1b3d15fa0d8f13b130081b82f9439cc61bc676a137efd4",
+    "Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean": "90e749885560a742ca12305e0f028da32a95ef10bb42580986306387be48894d",
+    "Formalism/SizeWindowBrackets/ChainSlopeWindows/PChain.lean": "be3c0f0ead3ebf13bc147c927c79aa5470d45a67739249d3b04a40d17281bf0d",
+    "Formalism/SizeWindowBrackets/ChainSlopeWindows/StronglyIrreducible.lean": "8871c7b007650900936033e9d830127bdd116de6fe04ce5f567a996714eea5a3",
+    "Formalism/SizeWindowBrackets/ChainSlopeWindows/SubThreeMulLogTwoLe.lean": "fd4d5681f52473477e8e04e8aed6dc14d81bc7daf63b354037a02d585dcdd00a",
+    "Formalism/SizeWindowBrackets/ErrorFormsWeakWindowsFalse.lean": "8b8613a5e3934127fb8b52ba402e658414662f63bff8f0e9fb52bedddd1173f2",
+    "Formalism/SizeWindowBrackets/FirstPrimeNeSecondPrime.lean": "0af06fb5bd926de8235472c1c0482770d70e13b5bc58a0afef86d7d6b512246d",
+    "Formalism/SizeWindowBrackets/GrowthBoundGivesRiemannHypothesis.lean": "8143a96da8be39cf426ef142bccbff94bac7706e5bd8e97719a8feebf3272309",
+    "Formalism/SizeWindowBrackets/QuotientSlopeBoundsWith.lean": "1bec3441ff655a4bf463b13dc317eec649852fe0b93e5d8dc9dd571cf1660857",
+    "Formalism/StatementOC.lean": "0249562a8b70df61856f6fdce16afdf17fbe88c9945af4231700503d11027f8a",
+    "Formalism/ThickAverageLoss/PartnersToFactorsAt.lean": "bebc91c34ad8abca4bdea86738be95217a72884c9fb7397ea73b91d723a5c39e",
+    "Formalism/ZetaNonvanishing/GzLipschitz.lean": "c6c5805ce9f9697235230d737f20c2d476e618f6808c80934d0ee8a6d4856c44",
+    "GroundTheory/HeightsAndTheta/Heights/HilbertSamuel/CharZeroOfIsHorizontal.lean": "beb0e6ed575c7048fcfdf3cb44fb8ba782bc2c39afacb23f4bb83897a082fdbe",
+    "GroundTheory/HeightsAndTheta/Heights/HilbertSamuel/StatementsArith.lean": "ac4771d60a9b56cc8b848ad43fda25169a27f5ed7e072740233fca4a2a5fe7ee",
+    "GroundTheory/HeightsAndTheta/Heights/OrbitLimits/MoriwakiBig.lean": "ac96178832d1416c194c8a336c7591b0c8cf134d205e25ea20d57735d2365f76",
+    "GroundTheory/HeightsAndTheta/Heights/OrbitLimits/PMoriwakiBigCurve.lean": "bc1bc1885def8f23f7cbbc29478e91dee349ba0d8a3d729f456db5394ca9939c",
+    "GroundTheory/HeightsAndTheta/Heights/OrbitLimits/StatementsCurveCountLower.lean": "e099da7b6a2ba2b30e7d22741acf1210080e22598d3b2b1af1a56c5787035709",
+    "GroundTheory/HeightsAndTheta/Heights/OrbitLimits/StatementsMoriwakiBigCurve.lean": "8ebd198cf1152e46d86151a824c0f676d25b055391cef8374d7e5f9c1aaff01f",
+    "Main.lean": "017645ca448f2fd1f6fd5c4c2cb2c6e96e472725be13f6e180ca6e1574360939",
+    "ReciprocityTheory/ReductiveGroups/ArithmeticGeometry/ArakelovGeometry/MoriwakiSt.lean": "27872d1872a344f39647c98998c84154f350b58a2e87504616f1bdb6df28d23f",
+    "Statements.lean": "79ef7ca776e42abe1f46caee13ea09bd19f1e2d0b1620d8d5d200258f33b47bf",
+    "Supplements/Kernels/MainTheorems.lean": "1e734200b9b6a6d2a968743bd0c433d614bd6606cf538ac6d4f0ff70044dde53"
+  }
+}

@@ -1,0 +1,187 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "T15",
+  "edition_sha256": "40fc04483918d2512a4f6cb9a1eaca63f300cc7a2308b700c82df54d9924badb",
+  "note_sha256": "4e2aa523df9e3504dc7e982b301d00312c6065e94e140868ac85554f6411a080",
+  "statement_sha256": "0363b8e33d121dc6e89c7280701832753d32a10df475f57b623921a084f49f77",
+  "sources": [
+    {
+      "path": "notes/units/T15_round3.md",
+      "sha256": "4e2aa523df9e3504dc7e982b301d00312c6065e94e140868ac85554f6411a080"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The common geometry yields the Gram and measure bounds used on the cover.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: Hodge and toroidal records"
+      ],
+      "lean": [
+        {
+          "name": "SelfIntersectionVolumeEstimates.topCovolG_alt_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopCovolG.lean",
+          "line0": 42,
+          "line1": 49
+        }
+      ],
+      "source": "notes/units/T15_round3.md",
+      "anchor": "1. **Fix the geometry in which the estimates agree.** From the toroidal record take the integral Siegel model, and from the model-geometry record",
+      "source_lines": [
+        31,
+        31
+      ],
+      "claim_sha256": "a591da07967332be98ae2dbffd222b19892cd90d0a027487da5735a3b0bafb27",
+      "passage_sha256": "eab5a4f7c1f508fa618278f7da7740048fb3a62dd8b6daf35a169ccc719aae15",
+      "sha256": "39b2468bf96597456db91342f4e3c16db065ef0e820796185408154daccf12f1",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The cover degree is controlled before its share is estimated.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S1",
+        "input: deformation and flat-degree bounds"
+      ],
+      "lean": [
+        {
+          "name": "SelfIntersectionVolumeEstimates.topCovolG_alt_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopCovolG.lean",
+          "line0": 49,
+          "line1": 53
+        }
+      ],
+      "source": "notes/units/T15_round3.md",
+      "anchor": "2. **Compute degree before using the height.** Deep goodness uses the Hodge, deformation and quoted inputs with the three geometric fields just e",
+      "source_lines": [
+        33,
+        33
+      ],
+      "claim_sha256": "b889d6f846cdd90131eefade7eedc7ef1a1f14874931e2ba9077149db6dd4ff4",
+      "passage_sha256": "74e8ff66e2936dbe01f8da5b13024b9711be58484e1ec52f5aa618cd5596934d",
+      "sha256": "ed110fb70448195b45e3587d29d8e8ed841e395715d5df20deda1d45de19dd8d",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The individual lower height and the sum of cover heights apply to the same admissible cover.",
+      "kind": "inequality",
+      "uses": [
+        "S2",
+        "input: volume and deep component bounds"
+      ],
+      "lean": [
+        {
+          "name": "SelfIntersectionVolumeEstimates.topCovolG_alt_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopCovolG.lean",
+          "line0": 51,
+          "line1": 55
+        }
+      ],
+      "source": "notes/units/T15_round3.md",
+      "anchor": "3. **Bring the arithmetic estimate onto this cover.** The height lower bound and the bound for the cover-height sum are different assertions. The",
+      "source_lines": [
+        35,
+        35
+      ],
+      "claim_sha256": "968f27dba9cce1129c4a4ae759391c6069470bb3a30864d11934b5828f9f23cb",
+      "passage_sha256": "0f16421293f9c8b6757ecd62ffb560960bb2f88e1001ae8ce71bcf255a1c95db",
+      "sha256": "a7258c494da91c305e814c8d0449167a771ff2eda1127f94b02f5198adbd05e6",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The uniform component estimate descends through the lift lower bound.",
+      "kind": "assembly",
+      "uses": [
+        "S2",
+        "S3"
+      ],
+      "lean": [
+        {
+          "name": "SelfIntersectionVolumeEstimates.topCovolG_alt_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopCovolG.lean",
+          "line0": 55,
+          "line1": 58
+        }
+      ],
+      "source": "notes/units/T15_round3.md",
+      "anchor": "4. **Make the lower bound uniform and transport it off the cover.** Intersect the seven eventual conditions for goodness, size, degree, share, he",
+      "source_lines": [
+        37,
+        37
+      ],
+      "claim_sha256": "50f76e4121ec1c688e724e56699b5b52201a1a491e31d5e99377f7b9cad30bf9",
+      "passage_sha256": "3f47528edbb40afdb3ac3a8816a7fc90a0440a6f99fec840078b34e8fbea0af2",
+      "sha256": "769c1c15792951e8add917408f6fa9dfe775adca855da7db615b4ee904f39b5e",
+      "ai_review": []
+    },
+    {
+      "id": "S5",
+      "status": "active",
+      "claim": "The combined eventual conditions give a threshold valid before varying the point and the column.",
+      "kind": "inequality",
+      "uses": [
+        "S4",
+        "input: core and lower constants"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.CovTop.Assembly.covolX_of_lift_bounds_and_coreLe",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/CovolXOfSteps.lean",
+          "line0": 16,
+          "line1": 40
+        }
+      ],
+      "source": "notes/units/T15_round3.md",
+      "anchor": "Write $C_1,C_2\\ge0$ for the constants in the core and lower bounds. The family exponent is positive by evaluating its scale at an index over zero",
+      "source_lines": [
+        43,
+        43
+      ],
+      "claim_sha256": "acad5767b0953ae9cd88a091ca8f17078c26eca0474000c663dffed5011a0ec5",
+      "passage_sha256": "4b74d876a63af02f157792b8e0a1c947a255b870002b0903bd608aa8afa6b8db",
+      "sha256": "1b9e968428215e7722e2aedfb4ebe81af62a6f4d4ad6b989560bf645cdcab41e",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "d93a4fd6c329c1ed583e7ed5bf09a15e8f9099d3c04d008882d656923229c982",
+      "sources": [
+        {
+          "path": "notes/units/T15_round3.md",
+          "sha256": "e55061af3ca5741a002a88268fa2f505a8ae4b944c98d6b14083596aaeaa5380"
+        }
+      ],
+      "statement_sha256": "0363b8e33d121dc6e89c7280701832753d32a10df475f57b623921a084f49f77",
+      "steps": {
+        "S1": "39b2468bf96597456db91342f4e3c16db065ef0e820796185408154daccf12f1",
+        "S2": "ed110fb70448195b45e3587d29d8e8ed841e395715d5df20deda1d45de19dd8d",
+        "S3": "a7258c494da91c305e814c8d0449167a771ff2eda1127f94b02f5198adbd05e6",
+        "S4": "769c1c15792951e8add917408f6fa9dfe775adca855da7db615b4ee904f39b5e",
+        "S5": "1b9e968428215e7722e2aedfb4ebe81af62a6f4d4ad6b989560bf645cdcab41e"
+      },
+      "step_texts": {
+        "S1": "The common geometry yields the Gram and measure bounds used on the cover.",
+        "S2": "The cover degree is controlled before its share is estimated.",
+        "S3": "The individual lower height and the sum of cover heights apply to the same admissible cover.",
+        "S4": "The uniform component estimate descends through the lift lower bound.",
+        "S5": "The combined eventual conditions give a threshold valid before varying the point and the column."
+      },
+      "step_passages": {
+        "S1": "eab5a4f7c1f508fa618278f7da7740048fb3a62dd8b6daf35a169ccc719aae15",
+        "S2": "74e8ff66e2936dbe01f8da5b13024b9711be58484e1ec52f5aa618cd5596934d",
+        "S3": "0f16421293f9c8b6757ecd62ffb560960bb2f88e1001ae8ce71bcf255a1c95db",
+        "S4": "3f47528edbb40afdb3ac3a8816a7fc90a0440a6f99fec840078b34e8fbea0af2",
+        "S5": "4b74d876a63af02f157792b8e0a1c947a255b870002b0903bd608aa8afa6b8db"
+      }
+    }
+  ]
+}

@@ -1,0 +1,306 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% RH Notes blueprint source excerpts for Z42-FRAMES
+% Verbatim excerpts in the notation of the parent blueprint. The labelled editions and source ranges appear below.
+% See the unit YAML for the current proof status. Earlier-round passages retain their original wording.
+\section*{Z42-FRAMES. Translation, away comparison and arithmetic scalars}
+
+% Parent source SHA-256: 1af64922b98ed2310744411b1f18b25cc426c97220646321471836e1a3a409d6
+% blueprint/ch_P.tex lines 13190 through 13200; r6:Z4.2.06
+\subsection{Z4.2.06. Arithmetic translation and its scalar (v8)}\label{r6:Z4.2.06}
+\emph{The reviewed deduction and its hypotheses are on page~\pageref{r8:Z4.2.06}.}
+Fix a valid source \(L\), a valid target \(L'\) and an element \(\gamma\) of the arithmetic group at the source component. The chart gives a rational isometry \(g\). Local bases for \(L\) and \(\gamma L\) have the required column spans, so their point representatives differ by the rational action on the left and a level element \(\kappa\) on the right. At zero the away-level lift of \(\gamma\) is compared with the chosen representatives by this equality; at a successor write the component as \((\beta,a)\) and transport the level element along the identification of the two charts. Conjugating \(g\) into standard coordinates and using the dictionary gives the moved lattice; the right level element preserves the standard lattice. In the local frame the matrix relation is \(F_v\gamma_v=\rho_v(g_{\rm std})F_v\). Applying the rational and level laws for the finite datum gives the scalar \(\mu_{j+1}(\det\kappa)/\chi_{\rm lev}(\kappa)\) on the transformed datum (\nolinkurl{moveBy_zero}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/StepZeroLatticeTupleMoveByRationalIsometry.lean:79--107,115--144}; \nolinkurl{moveBy_succ}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/KernelSiteMoveLatticeTupleAtSuccStep.lean:23--49,50--108}; \nolinkurl{kerN_smul}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/KernelLatticeMovedLatticeTuple.lean:21--32}; \nolinkurl{xiM_smul_moveBy}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/MovedDatumMovedLatticeTuple.lean:40--73}; \nolinkurl{site_move}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/KernelSiteArithmeticGroupMove.lean:18--35}).
+
+Multiplicativity on norm-one ideles writes the moved determinant character as the product of its rational, original and level values. The level value cancels against the finite-datum multiplier and the level character. The remaining rational determinant product is \(\prod_\tau\tau(\det g)\), with the two exponent shifts from the source normalization and the target half-rank. The ratio of the old to the moved \(p\)-powers is
+\[
+p^{\sum_v {\rm vm}_{v,j+1}(\ell_v(\gamma L)-\ell_v(L))}.
+\]
+It follows by subtracting the two length exponents, so \(L'\) drops out. All factors divided out are nonzero by the norm-one character law or invertibility of \(g\) (\nolinkurl{scal_core}, \nolinkurl{moveBy_scal}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/LatticeTupleMoveScalarPowerOfP.lean:34--52,55--116}).
+
+\emph{Historical v8 proof boundary. The current treatment is on page~\pageref{r8:Z4.2.06}.} Identifying the arithmetic-group eigenvalue with the product of the embedded determinant powers and the above length correction requires the character-at-infinity identity for the actual local action. The reduction to that identity takes determinants in the frame equation and cancels \(\det F_v\), then replaces the rational character by its infinity type (\nolinkurl{kapG_at_site}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/EigenvalueArithmeticElementAtSite.lean:14--81}; \nolinkurl{kapG_eq_char_inf}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/KapGEqCharInf.lean:19}). The premise (B) of \nolinkurl{GlobalTheory.TwV.move_at_site} is the dictionary (\path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/KernelSiteArithmeticGroupMovesFrames.lean:13--15}).
+
+% blueprint/ch_P.tex lines 13203 through 13221; r6:Z4.2.08
+\subsection{Z4.2.08. The exponent in the scalar bound (complete)}\label{r6:Z4.2.08}
+The explicit hypothesis, discharged at the site assembly on page~\pageref{r7:review:Z4.2.08}, is \(J.{\rm Dict}(\mathrm{std})\) for the given site; the joint supplies the split charts and Z4.2.05 supplies Pos (\nolinkurl{scal_at_site}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/KernelSiteSeriesScalarPowIntegral.lean:14--16}; \nolinkurl{pos_at_site}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/SitePlaceInducesPositionEmbeddings.lean:11--13}). Take a representative \(L\) at \(j<m\) and a valid target \(L'\). A representative is a valid tuple. Write \(w_v={\rm vm}_{v,j+1}\) and \(\mu=\mu_{j+1}\). The formula to check is algebraicity of \({\rm scalG}\) and the upper bound \(1\) for \(\lVert p^e\lambda({\rm scalG})\rVert\), where
+\(e=\sum_v w_v(\ell_v(L')-\ell_v(L))\)
+(\nolinkurl{GlobalTheory.TwV.scal_at_site}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/KernelSiteSeriesScalarPowIntegral.lean:14--16}; \nolinkurl{expG}, \nolinkurl{scalG}, \path{Formalism/LocalToGlobal/InertKernelTheory/ScalG.lean:19--28}).
+
+Both determinants belong to the norm-one group, by taking determinants in the unitary equation. Their first-factor orders are \(-\ell_v\): in a tuple basis the local lattice is the column span and its signed length is the negative order of the basis determinant. Reindexing preserves that determinant; at a successor one identifies the chart's first factor with the one at zero. Both lattices are self-dual of even rank, as in Z4.2.04. Their determinant \emph{ideals} have norm one. If \(\mathfrak a\) is either ideal, a positive power is generated by a norm-one element \(z\); the character law gives \(\chi(\mathfrak a)^k=(\prod_\tau\tau(z))^{-1}\). At the odd inert prime the CM product is a unit: the product over the type is the image of the type norm, whose product with its conjugate is one; an arithmetic Frobenius at one prime over \(p\) fixes every prime over \(p\), since the acting Galois group here is abelian and transitive on these primes. It cannot fix \(\sqrt{-d}\): reduction at the chosen prime gives \((\sqrt{-d})^p=-\sqrt{-d}\) by inertness, and \(p\nmid2d\). It acts on the type norm by conjugation, exchanging its principal fractional ideal with its inverse. The orders of these two ideals at each prime over \(p\) are therefore equal and opposite. Clearing the remaining denominators gives a common denominator prime to \(p\). Thus both embedded norms are at most one, and their product is one. Taking the positive \(k\)-th root of the norm gives one, and algebraicity follows from the displayed power identity. Thus every determinant-\(\chi\) power, including their product in \({\rm chiFac}\), contributes norm one (\nolinkurl{len_bases}, \nolinkurl{latticeTuplePoint_det_normOne_order_eq_neg_length}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/LatticeTuplePointDetNormOneOrderEqNegLength.lean:78--94,111--125}; \nolinkurl{chi_alg_unit_inert}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/ChiAlgUnitInert.lean:21--58}; \nolinkurl{prod_embT}, \nolinkurl{normUnitK_of_frobOut}, \nolinkurl{normUnit_of_inert}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/NormProdCmEmbeddingsEqOneOfInert.lean:261--285,300--352,365--415,428--515,518--530}; \nolinkurl{scal_of_pos_pair}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/ThetaSeriesScalarBoundedOfPosPair.lean:25--55}).
+
+For a norm-one idele \(d\), kill its ideal class by the class number \(h\), obtaining \(d^h=a k\) with \(k\) integral invertible. Divide by the conjugate equality:
+\(d^{2h}=(a/\bar a)(k/\bar k)\). Both factors have norm one. The integral factor has character of finite order, hence \(p\)-adic norm one. The character on the rational factor is a product of its embeddings to the prescribed infinity exponents. Odd positions use the conjugate, whose order is the negative of the original order. The constant shift in the exponents sums to zero over the alternating positions of even cardinality. What remains at \(v\) is \(w_v\); the integral factor has order zero there. Taking positive \(2h\)-th roots yields
+\[
+\lVert\lambda(\mu(d))\rVert=\lVert p\rVert^{\sum_v w_v\,{\rm ord}_v(d)} .
+\]
+The site character law also gives algebraicity on this group (\nolinkurl{normOne_idele_pow_eq_normOne_principal_mul_unit}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsPowNormOneIdeleEqPrincipalMulIntegralUnit.lean:13--26,107--136}; \nolinkurl{lambdaCharacter_norm_eq_p_pow_of_pos}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/NormLambdaCharacterNormOneIdeleEqPPow.lean:19--84}).
+
+To see why the integral factor above has finite order under the character, lift it to a one-dimensional unitary matrix \(y\). For its determinant \(z\), the relation \(\bar z=z^{-1}\) gives \(z/\bar z=z^2\). Under the joint's adelic isomorphism this square has the prescribed determinant reading of \(y^2\). The resulting Hecke character is evaluated on a finite integral idele. A continuous character of the profinite unit group into \(\mathbf C^\times\) has finite image: a sufficiently small neighborhood of one contains no nontrivial subgroup, and its preimage contains an open subgroup of finite index. Equivalently one can apply this to the circle-valued part after proving that the absolute value is one. A nonreference twist multiplies this value by a finite-order character of the given tuple. Taking a multiple of the two orders, then doubling for the square, gives the claimed finite order (\nolinkurl{mt_finite_order}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/MtFiniteOrder.lean:14--59}; \nolinkurl{circle_pow}, \nolinkurl{finite_order}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/HeckeCharFiniteOrderUnitIdele.lean:13--19,36--61,80--90}).
+
+For the exponent identification, read the last added block at coordinate \(m_{\rm base}+1+j(t+1)\) in the successor chart. Its block quotient is \(j\), so its lifted highest weight is the negative of the weight at step \(j+1\). The chart weight comparison gives the infinity exponent minus the two constant shifts from the source degree and successor half-rank. Each local embedding norm is computed by writing a nonzero local scalar as a unit times a power of the uniformizer; the local twist preserves the norm of units and fixes \(p\). These two calculations justify the alternating weighted-order sum used above (\nolinkurl{fillAt_of_comp}, \nolinkurl{wG_succ_eq_shift}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/SystemWeightsEqShiftedCharacterExponents.lean:13--27,30--65}; \nolinkurl{norm_twG}, \nolinkurl{norm_lamC_type_normOne}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/NormLamCTypeNormOne.lean:25--51,58--97}).
+
+In \({\rm scalG}\) the remaining factor is \(\mu(d_{L'})/\mu(d_L)\). Its norm exponent is \(\sum_v w_v(-\ell_v(L')+\ell_v(L))=-e\). Multiplying by \(p^e\) gives norm exactly one. Algebraicity of the product follows from that of all its factors. This deduction uses the even-rank and self-duality component of Z4.2.04 and the position identification of the site (details on page~\pageref{r7:review:Z4.2.08}) (\nolinkurl{scal_of_pos_pair}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/ThetaSeriesScalarBoundedOfPosPair.lean:31--41,43--86}).
+
+% blueprint/ch_P.tex lines 13235 through 13244; r6:Z4.2.07
+\subsection{Z4.2.07. Removing one local coordinate (v8)}\label{r6:Z4.2.07}
+\emph{The reviewed deduction and its hypotheses are on page~\pageref{r8:Z4.2.07}.}
+For \(v\) and \(j<m\), pull the maximal ideal of the first integral split factor \(W_v\) back to \(\mathcal O_E\). Its preimage \(P\) is a nonzero prime: \(p\) maps to a uniformizer, so \(p\in P\) and \(p\notin P^2\). The approximation is integral at this specified factor: for \(y\in W_v\) and \(k\ge0\) an integral element has image \(y+p^k z\) for some \(z\in W_v\), by approximation in the base completion and the integral coordinate identification. Split approximation also supplies \(a\in P\) with \(\bar a\notin P\), separating \(P\) from its conjugate. The unramified calculation trivializes the inverse half-different at \(P\). Neither prime is in the bad support, and neither divides the reader level: the level and \(p\) have a Bézout relation, and reduction modulo either prime would otherwise give \(0=1\)
+(\nolinkurl{primeAt}, \nolinkurl{exists_primeOf_place}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsPrimeUnderFirstFactorAtPlaceOverP.lean:80--87,107--187}; \nolinkurl{prime_not_stable}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/PrimeNotStable.lean:140--238}; \nolinkurl{away_of_pos_pair}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/KernelSiteAwayOfPositivePair.lean:25--46}).
+
+When both component sets are inhabited, choose a norm-one idele \(\pi\) of order one at \(v\), trivial away from \(v\). Write \(V={\rm vm}_{v,j+1}\), \(A=\lfloor j(t+1)/2\rfloor\), \(A'=\lfloor(j+1)(t+1)/2\rfloor\), \(M=\lambda(\mu_{j+1}(\pi))\), \(C=\lambda(\chi_I(\pi))\). The two required factors have \(p\)-adic images
+\(p^{-V}MC^A,\ p^V M^{-1}C^{-A'}\). The character norm on \(\pi\) is \(\lVert p\rVert^V\), so the \(p\)-powers precisely cancel its norm. Equality of the away data gives equality of both components and equality of the tuples after setting the \(v\)-coordinate to zero. The dictionary then identifies the lattices off the split prime pair, and equality of components identifies their frames. With \(n,n'\) the two length differences, the powers of \(M,C,p\) cancel in the comparison after multiplication by the source and target factors to powers \(n,n'\). No division by a theta value is needed. If either component set is empty, choose both units to be one; the tuple comparison has empty domain
+(\nolinkurl{two_units}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/TwoUnitsAtPlaceUniformizingIdele.lean:38--81}; \nolinkurl{key}, \nolinkurl{scal_away}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/KernelSiteScalarsAgreeAwayFromPlace.lean:18--24,66--160}; \nolinkurl{eqOff_kerN_of_sameAway}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/EqOffPrimeKernelLatticesOfAgreeAway.lean:21}; \nolinkurl{away_of_pos_pair}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/KernelSiteAwayOfPositivePair.lean:47--73}).
+
+\emph{Historical v8 proof boundary. The current treatment is on page~\pageref{r8:Z4.2.07}.} The formulas above must be realized by elements of the prescribed coefficient field of valuation zero. In particular one must obtain \(\mu_{j+1}(\pi)\) and the required powers of \(\chi_I(\pi)\) in that field via the fixed embeddings. This is stronger than proving the displayed norms in \(\mathbf C_p\); it uses the component data in \nolinkurl{two_units} (\path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/TwoUnitsAtPlaceUniformizingIdele.lean:38--53}). The dictionary is the premise (B) of \nolinkurl{away_of_dict} (\path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/KernelSiteSeriesIndependentAwayFromPlaceOverP.lean:13--16}).
+
+% Parent source SHA-256: 207e78e6b2d4d14fe076fb0786f59ac155d782525aa51e0bdb15ddc90646adc2
+% blueprint/ch_P_r8_move_review.tex lines 1 through 118; r8:Z4.2.06
+\subsection{Z4.2.06. Constructing the arithmetic move and its multiplier}\label{r8:Z4.2.06}
+
+\noindent\textbf{[Hypothesis, discharged at \nolinkurl{admissible_at_each_site} for the dictionary, with the site chosen in \nolinkurl{site_cmpLite_siteAdm}.]}
+The assertion is about a given site \(S:J.\mathrm{At}\) and a dictionary
+\(J.\mathrm{Dict}\). At the actual use the dictionary is
+\nolinkurl{latticeTuple_joint_dictionary} (Z4.2.03). The two split
+algebra identifications are \nolinkurl{J.alg0} and \nolinkurl{J.alg}.
+The site supplies the rational and level transformation laws of its finite
+function, the multiplicativity, nonvanishing, rational-principal and
+algebraicity laws of its character (\nolinkurl{S.law.mu_mul},
+\nolinkurl{mu_ne}, \nolinkurl{mu_rat}, \nolinkurl{mu_alg}), and the
+coefficient embedding comparison \nolinkurl{S.hK}. The position
+comparison is Z4.2.05. Existence of a site with these fields is assigned
+to Z4.2.02 (p.~\pageref{r8:Z4.2.02}).
+\textbf{[Proved in Lean, not reproduced:} the part of the construction
+of such a site still listed on p.~\pageref{r8:Z4.2.02}.\textbf{]}
+Here the quantifier ranges over sites already carrying these fields.
+
+Fix a level \(j<m\), a source component, a valid lattice tuple \(L\), a
+valid target and \(\gamma\) in the source arithmetic group. Write \(g\)
+for its pinned rational representative (\nolinkurl{gamI}), and \(y_c\)
+for the component representative. The element
+\(y_c^{-1}(\operatorname{rat}g)y_c\) is unitary and has level
+components away from \(p\), by the defining arithmetic-group condition.
+Retain those components and replace its components over \(p\) by the
+identity. The resulting \(\kappa_a\) belongs to the level group: this
+group is specified by its local subgroups, and changing finitely many
+components preserves the restricted product. This gives
+\nolinkurl{awayEx_of}. The zero-level tie
+\nolinkurl{lev0AtOf_compatible.chi} gives \(r_a\in LL\) reading
+\(\chi_{\rm lev}(\kappa_a)\) in the complex embedding and the
+inverse arithmetic character in the coefficient embedding. At
+\(j=i+1\) use the component's pair (chart, within-chart component)
+and the corresponding field \nolinkurl{Core.chi}; the conditions
+\nolinkurl{gam}, \nolinkurl{gamU} and \nolinkurl{actB} hold in this
+same chart. This explains which level and which character are used.
+
+Let \(x,x'\) be the selected points for \(L,\gamma L\).
+The point \(y=(\operatorname{rat}g)x\kappa_a^{-1}\) has component
+\(y_c\) away from \(p\): this follows on inserting the displayed
+conjugate. Over \(p\) the chart action on the chosen bases gives the
+bases \(\gamma_vT_v\) of \(\gamma L\). Thus \(y^{-1}x'\) is one away
+from \(p\); at a place over \(p\) its matrix in the pinned basis
+compares two bases of the same column lattice. It and its inverse
+are integral, and the chart's integral stabilizer condition places it
+in the local level group. It is unitary as a quotient of unitary
+points. Consequently \(\kappa_1=y^{-1}x'\) belongs to the level.
+Since every bad place lies away from \(p\), it has
+\(\chi_{\rm lev}(\kappa_1)=1\). We obtain the actual witnesses
+\[
+ \kappa=\kappa_a^{-1}\kappa_1,\qquad
+ x'=(\operatorname{rat}g)x\kappa,\qquad
+ \chi_{\rm lev}(\kappa)=\operatorname{embLL}(r_a^{-1}).
+\]
+Inverting the second embedding identity for \(r_a\) gives the reading of
+\(r_a^{-1}\) as the arithmetic character. At a successor the chart is
+transported back along the component bijection, which preserves the
+underlying level matrix and its character.
+See \nolinkurl{awayEx_of} (\path{TiedFamilies/EqOneOfPh.lean:152--158}),
+\nolinkurl{ptOne_of} (\path{TiedFamilies/TiePtOne.lean:55--83}),
+\nolinkurl{isPt_move_eq} (\path{SatakeParameters/IsPtMoveEq.lean:14--27}),
+\path{SatakeParameters/StepZeroLatticeTupleMoveByRationalIsometry.lean:86--141}
+and \path{SatakeParameters/KernelSiteMoveLatticeTupleAtSuccStep.lean:23--42,50--106}.
+
+Let \(C\) carry Gram coordinates to standard ones and put \(e=CgC^{-1}\)
+with the dictionary rank identification. From \(C^*C=J\) and
+\(g^*Jg=J\) we get \(e^*e=ee^*=1\) and \(\det e=\det g\).
+The frame matrices are constant on the component: at zero they
+are assigned by the common pinning, and at a successor the component
+determines the chart and its pinned basis. Substituting that basis into
+the chart identity \nolinkurl{actB} gives
+\(F_v\gamma_v=\rho_v(e)F_v\), the required frame relation.
+Right multiplication by \(\kappa\) preserves the completed base lattice
+by the level condition. Left multiplication by \(g\) carries its
+rational intersection to the moved one and, being an isometry, carries
+its Hermitian dual to the moved dual. Hence it also carries the sum
+defining the companion lattice to the moved companion. Applying \(C\)
+gives \(\ker N(\gamma L)=e\,\ker N(L)\).
+These are \nolinkurl{eMat_unitary_det}, \nolinkurl{latK_rat_mul_lev},
+\nolinkurl{latticeTuple_chart_eq_of_same_component} and
+\nolinkurl{latticeTuple_frameMatrices_eq_of_same_component}
+(\path{SatakeParameters/ToMatrixCoMulSymm.lean:92--106},
+\path{SatakeParameters/LatKRatMulLev.lean:13--20},
+\path{SatakeParameters/KernelSiteArithmeticGroupMove.lean:18--35}).
+
+To read the moved datum, evaluate its two-point formula on \((x',x_T)\)
+and on \((x,x_T)\) at the fixed target point \(x_T\). In the first
+evaluation remove \((\kappa,1)\) using the site's level law, then
+\((g,1)\) using its rational law. The target action is the identity;
+the source action sends the argument \(h\) to \(h\circ e\).
+The resulting multiplier is
+\[
+ c_\Xi=\mu_{j+1}(\det\kappa)\chi_{\rm lev}(\kappa)^{-1}
+       \in\overline{\mathbb Q}.
+\]
+Indeed unitarity makes \(\det\kappa\) norm one, so
+\nolinkurl{mu_alg} applies. The denominator is the nonzero embedded
+number \(r_a^{-1}\). The two-point formula above is the definition
+after the dictionary replaces each tuple by its chart and point
+(\nolinkurl{movedDatum_pair_eq_adelicDatum_two_points},
+\nolinkurl{xiM_smul_moveBy},
+\path{SatakeParameters/MovedDatumMovedLatticeTuple.lean:40--74}).
+
+Only the even self-dual lattice and the two scalar fields of
+Z4.2.04 enter the final computation. Their derivation is on
+p.~\pageref{r8:Z4.2.04}. In particular the character of the relative
+determinant of each lattice is nonzero algebraic, and
+\(\mathrm{scal0}\) is the product of signed powers of these characters
+and of the target and inverse source norm-one character values.
+Moving the source by \(e\) multiplies its top exterior lattice by
+\((\det e)\); the principal-ideal rule for the character therefore
+multiplies its old value by
+\((\prod_\tau\tau(\det e))^{-1}\)
+(\nolinkurl{chi_detId_smulLat},
+\path{SatakeParameters/CharDeterminantIdealUnitarySmulSelfDual.lean:9--15}).
+The scalar and length computation on p.~\pageref{r7:Z4.2.06} now uses
+these fields and the displayed \(c_\Xi\). This supplies each field of
+\nolinkurl{MoveTie} at the fixed site.
+
+% blueprint/ch_P_r8_move_review.tex lines 120 through 236; r8:Z4.2.07
+\subsection{Z4.2.07. Comparing the two lattices off the chosen prime}\label{r8:Z4.2.07}
+
+\noindent\textbf{[Hypothesis, discharged at \nolinkurl{admissible_at_each_site} for the dictionary, with the site chosen in \nolinkurl{site_cmpLite_siteAdm}.]}
+The same fixed site, dictionary (Z4.2.03), split identifications and
+position comparison as in Z4.2.06 are used. In addition,
+\(\mathrm{KIn}(t)\) is the joint field \nolinkurl{J.kin}: for each
+\(k\in t.X.K\) there exists \(r\in LL\) such that
+\(\operatorname{embLL}(r)=t.\mathrm{seam}.\sigma_0(k)\).
+The construction \nolinkurl{GlobalTheory.Port.jIn_nonempty_true} assigns
+\nolinkurl{GlobalTheory.T.kernelCoefficientField_le_coefficientField} to
+this field (\path{SatakeParameters/TrueColumnExistsChainChartsKernelDataForms.lean:23--25,62--73}).
+This inclusion supplies the coefficient preimages required by \nolinkurl{away_of_pos_pair} and
+\nolinkurl{two_units}; \nolinkurl{S.hK} compares the two embeddings
+of that \(r\). The site's away-invariance and character laws are
+included in the explicit site premise of Z4.2.06. The independent
+aggregate Pair obligation is on p.~\pageref{r8:Z4.2.04}.
+\textbf{[Proved in Lean, not reproduced:} the remaining general-pair
+finite-kernel calculation listed there.\textbf{]} This comparison uses
+only self-duality and algebraicity of \(\mathrm{scal0}\), both derived
+before that calculation.
+
+Fix \(v,j\), let \(w\) be the corresponding place of \(F\), and write
+\(W_v\) for its integer ring in the chosen coordinates. Integral elements
+of \(E\) have integral first projection by integrality over the local DVR.
+Take \(P\) to be the preimage of \(pW_v\) in \(\mathcal O_E\).
+Then \(P\) is prime, contains \(p\), and \(p\notin P^2\), since the
+image of \(P^2\) is contained in \(p^2W_v\). This gives the
+membership test in \nolinkurl{PrimeOf}. For every \(y\in W_v\) and
+\(k\ge0\), approximate \(y\) modulo \(p^kW_v\) by an element of
+\(\mathcal O_F\), using density in its local integer completion.
+Indeed approximation in \(F\) gives a local integral fraction, and its
+denominator prime to \(w\) has an inverse modulo the required power of
+\(w\). Its image in \(\mathcal O_E\) gives the required approximation.
+The split coordinates are distinct places: \(E\) is dense in
+\(E\otimes_F F_w=F_w\times F_w\) by approximating the coefficients of
+an \(F\)-basis. One can therefore approximate \((0,1)\) mod the two
+maximal ideals. If the two induced primes were equal their valuation
+rings on \(E\) would both be \(\mathcal O_{E,P}\), contradicting that
+approximation. Choosing \(a\in P\setminus\bar P\) gives
+\(\bar a\notin P\). Since \(p\notin P^2\), the ramification index is
+one and the finite residue field extension is separable. The absolute
+different is thus a local unit. By transitivity of differents the
+pinned half-different, a divisor of the relative different, and its
+inverse are units at \(P\).
+See \path{SatakeParameters/ExistsPrimeUnderFirstFactorAtPlaceOverP.lean:127--183},
+\path{SatakeParameters/PrimeNotStable.lean:140--234} and
+\path{SatakeParameters/LocalisationInverseHalfDifferentEqOneUnramified.lean:10--57}.
+
+The selected residue characteristic avoids the type primes and the row
+primes by the index and avoidance fields. Each bad prime lies over one of
+these excluded primes; its norm is coprime to \(p\), since its residue
+field has that excluded characteristic. Taking products in the reader
+level gives \(\gcd(\mathrm{lev},p)=1\), including its tame factor
+by the same avoidance condition. Hence neither \(P\) nor \(\bar P\)
+is bad or divides the level. In the splitting at \(w\) take the idele
+\(\pi=(p,p^{-1})\) there and \(1\) elsewhere. Conjugation swaps its
+entries, so \(\pi\bar\pi=1\); its first order is one. See
+\nolinkurl{level_badPrimes_coprime_residueChar},
+\path{SatakeParameters/LevelBadPrimesCoprimeResidueChar.lean:34--93}
+and \path{SatakeParameters/ExistsNormOneIdeleOrderOneTrivialElsewhere.lean:57--96}.
+
+Take two tuples with equal deleted data in the same component at one
+of the two levels. Their points \(x,x'\) agree away from \(w\):
+they have the same fixed component away from \(p\); at each other place
+over \(p\) the identical local tuple entry selects the same basis.
+Unitarity recovers the second split matrix from the first. Their frame
+matrices also agree by the component calculation in Z4.2.06.
+Write \(L_b\) for the pinned full, finitely generated base lattice,
+and \(\widehat L_b\) for its finite-adelic span. Put \(K=x'^{-1}x\).
+Clear one common integer denominator \(D>0\) so both
+\(DK\widehat L_b\) and \(DK^{-1}\widehat L_b\) lie in
+\(\widehat L_b\): choose an \(E\)-basis in \(L_b\), express the
+images of finitely many generators in that basis, and clear the
+denominators of those finite adeles. Put \(m\ge\operatorname{ord}_w D\).
+For every \(c\in w^m\), \(c/D\) is integral at \(w\), whereas
+at every other place \(K=1\) and \(c\) is integral. Thus multiplication
+by \(c\) carries the rational lattice
+\(L_x=E^N\cap x\widehat L_b\) into \(L_{x'}\) and conversely.
+This is the two-direction application of
+\nolinkurl{latAd_smul_mem_of_sameOff}
+(\path{SatakeParameters/AdelicLatticeSmulMemOfAgreeAwayFromPlace.lean:114--163,208--248,258--271}).
+
+For an arbitrary \(a\in P^m\) set \(c=a\bar a\). This integral element
+is fixed by conjugation, hence lies in \(\mathcal O_F\).
+Its first projection is in \(p^mW_v\), because the first projection of
+\(a\) is in \(p^mW_v\) and that of \(\bar a\) is integral.
+Therefore \(c\in w^m\). For \(y\in L_x^\vee\) and \(z\in L_{x'}\),
+the identity \(H(z,cy)=H(cz,y)\) shows \(cy\in L_{x'}^\vee\).
+The opposite inclusion after multiplying by \(c\) follows by exchanging
+the two lattices. The companion is the sum of the original lattice
+and the prescribed ideal multiple of the span of its dual.
+The same two inclusions survive this sum and the fixed linear
+coordinate change to the kernel lattice. Thus for every such \(a\),
+\(a\bar a\) carries either kernel lattice into the other. This is
+precisely the predicate \nolinkurl{GL3Theta.EqOff} in \nolinkurl{eqOff_kerN_of_sameAway}. Apply it separately at \(j\) and
+\(j+1\) (\path{SatakeParameters/KernelLatticeEqAwayFromPrimeOfAgreeOffPlace.lean:19--104,106--160}).
+
+For the finite functions apply the site's away law to these two pairs
+of points at their common charts: the places at which the law reads
+the representatives avoid \(p\), so both restrictions agree. For the
+scalar the quotient \(k=(d_b\pi^{\ell_b-\ell_a})^{-1}d_a\) of point
+determinants is one away from \(w\), and has local orders \((0,0)\) at
+\(w\) by unitarity and \(\operatorname{ord}_v d=-\ell_v\).
+The unramified characters therefore discard \(k\). The two exponents
+and their cancellation against the powers of the comparison units are
+displayed on p.~\pageref{r7:Z4.2.07}. In the coefficient descent there,
+\nolinkurl{J.pins.muTil} identifies the transported quotient reading,
+\nolinkurl{J.pins.mu0} gives unramifiedness, and
+\nolinkurl{J.pins.ch.muVal} reads each local uniformizer in the pinned
+field. Multiplying and applying \nolinkurl{J.kin} gives the stated
+common coefficient before either tuple is selected. If either component
+set is empty take both units equal to one; the existence of the tuples
+would itself supply both components. These arguments give all clauses of
+\nolinkurl{AwayTie} under the fixed-site premise.
+See \path{SatakeParameters/StepCharacterUniformizingIdeleMemCoeffField.lean:91--175},
+\path{SatakeParameters/KernelSiteAwayOfPositivePair.lean:21--73} and
+\path{SatakeParameters/JointSiteChainComparedCarriesAdmittedSystem.lean:29--38}.
+
+% Parent source SHA-256: 1fdc6ea9aac6cf10316f85b3253b33ae98289a76ff5aa2e79daaaf11e057ce18
+% blueprint/ch_P_r7.tex lines 12 through 21; r7:review:Z4.2.08
+\subsection{The supplied site and the scalar in Z4.2.08}\label{r7:review:Z4.2.08}
+\emph{[Hypothesis, discharged at the assembly of the site conditions.]} Fix $S:J.\mathrm{At}(\mathrm{std})$. Its law provides multiplicativity, the rational-idele formula, the determinant reading and algebraicity of $\mu$; its curve data supply $p\ge5$, inertness and the prescribed $\chi$. These are fields of the given site (\nolinkurl{Joint.At} (\path{Development/AbelianVarietyTheory/Definitions/GaloisGeometry/JointCmpEmbeddingY.lean:134--145})); constructing a site belongs to Z4.2.02. The scalar implication \nolinkurl{GlobalTheory.TwV.scal_at_site} (\path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/KernelSiteSeriesScalarPowIntegral.lean:14--16}) additionally assumes $J.\mathrm{Dict}(\mathrm{std})$. At the consumer \nolinkurl{GlobalTheory.TwV.admissible_at_each_site} (\path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/JointSiteChainComparedCarriesAdmittedSystem.lean:29--37}), Z4.2.03 supplies it via \nolinkurl{GlobalTheory.TwV.joint_dict} (\path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/LatticeTupleJointDictionary.lean:16--23}). The auxiliary predicate also requires the two split identifications (\nolinkurl{Sites} (\path{Development/AbelianVarietyTheory/Definitions/GaloisGeometry/IsUnifAt.lean:59--68})), supplied by $J.\mathrm{alg0},J.\mathrm{alg}$.
+
+For the source and target tuples, the dictionary identifies the rank with $N_j=k+j(t+1)$, respectively $N_{j+1}$. Here $k$ is even and $t$ is odd. The dictionary also identifies each kernel lattice with its adelic model. In the orthogonal frame the base companion is the standard self-dual lattice; dualizing commutes with a unitary translation at each finite place, and equality of full lattices can be tested on finite completions. This gives the two self-dualities. These four facts form the first component of Z4.2.04 used on page~\pageref{r6:Z4.2.08} (\nolinkurl{Formalism.MainNotions.product_zeroth_first_parts.N_even} (\path{Formalism/SharpRestriction/Divisibility/ProductZerothFirstParts.lean:303--305}); \nolinkurl{GlobalTheory.KerSelfDual.isSDLat_latK_of_stdL} (\path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/IsSDLatLatKOfStdL.lean:19--34}); \nolinkurl{GlobalTheory.KerSiteSelfDual.even_and_isSDLat_kerN} (\path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/KernelLatticeSelfDualEvenRankAtSite.lean:22--27}); \nolinkurl{GlobalTheory.pairOK_allSites} (\path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/KernelSiteLatticeTuplePairsAdmissible.lean:23--45})). The scalar calculation extracts precisely this component of the pair on lines 27--33 of \nolinkurl{GlobalTheory.TwV.Xc.scal_of_pos_pair} (\path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/ThetaSeriesScalarBoundedOfPosPair.lean:22--55}).
+
+In a first-factor chart, two bases of a lattice differ by an integral invertible matrix, whose determinant is a unit. Thus the signed length, defined as minus the order of the determinant of a chosen basis, equals minus the order of the determinant of the actual chart basis. The dictionary identifies the chosen point determinant with this basis determinant in the first factor, at a successor using the identification with the step-zero place. Its norm-one property follows by taking determinants of the unitary identity. See \nolinkurl{lenLat_colSpan} (\path{Formalism/LocalToGlobal/GroupLattices/PendingLemmas/DetOfColSpanEq.lean:126--133}) and \nolinkurl{len_bases}, \nolinkurl{latticeTuplePoint_det_normOne_order_eq_neg_length} (\path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/LatticeTuplePointDetNormOneOrderEqNegLength.lean:78--94,111--125}).
+
+For the type norm $y=N_\Psi z$, every $\rho\in\Psi$ permutes the type indices and fixes $y$. For the Frobenius $g$ in the inert branch its quadratic character is $-1$, also the character of conjugation $c$. Hence $c^{-1}g\in\Psi$, and $g(y)=c(y)=y^{-1}$, the last equality following from $z\bar z=1$. At every prime above $p$ the Frobenius therefore fixes the valuation and negates its value on $y$. All these valuations are zero. The type product is the distinguished embedding of $y$, so its $p$-adic norm is one. See \nolinkurl{nPsi_inv}, \nolinkurl{nPsi_conj}, \nolinkurl{prod_embT}, \nolinkurl{normUnitK_of_frobOut}, \nolinkurl{normUnit_of_inert} (\path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/NormProdCmEmbeddingsEqOneOfInert.lean:261--301,316--353,428--515,518--530}).
+
+For the integral norm-one idele write $z=\det y$ and transport it back to the finite adelic coordinates as $x$. The tie identifies $q(x)$ with $\mathrm{dtU}(y^2)$ since $z/\bar z=z^2$. Integrality of $x$ and $x^{-1}$ is preserved by the coordinate isomorphism. The reference character read at $q(x)$ is a finite-order value of the Hecke character on integral units. For a twist multiply by the value of the finite-order tuple character at $x$. If their orders divide $n,k$ respectively, raising the original determinant reading to $2nk$ gives one. These are the equalities $q_{\mathrm{dt}}$, $\mu_{\mathrm{Til}}$, and the reference/twist alternatives in \nolinkurl{GlobalTheory.TieFinOrd.mt_finite_order} (\path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/MtFiniteOrder.lean:14--59}). Finally, local order is additive because it is the discrete valuation after the first-factor projection. It vanishes on integral units, agrees with the local valuation on rational ideles, and vanishes on an idele supported only at another place. A constant shift in the weight sum contributes the constant times $\sum_s(-1)^s=0$, since the local number of coordinates is even (\nolinkurl{GlobalTheory.TwV.Xc.OrdA.ordA_props} (\path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/PhiAMemRange.lean:68--86}); \nolinkurl{GlobalTheory.TwV.Xc.vm_shift_cancels} (\path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/SumAltSignRange.lean:35--44})). The remaining power of $\lVert p\rVert$ is the negative of the signed-length exponent already displayed on page~\pageref{r6:Z4.2.08}. This proves algebraicity and the stated norm bound for the given site and dictionary.
+

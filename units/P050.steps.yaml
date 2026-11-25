@@ -1,0 +1,125 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "P050",
+  "edition_sha256": "5367f265f0187ca8e4aa7f4cf1b772ff75a0901bdc08be60c107ad94540ebf6f",
+  "note_sha256": "00a821d413d69e992e89451493784b6f32f29f9bdfb4669a97eaaef58711154c",
+  "statement_sha256": "663db79f906212875ea8de59c79be0a12c2892f5b5961ceeef3b90879a538b9c",
+  "sources": [
+    {
+      "path": "notes/units/P050.tex",
+      "sha256": "00a821d413d69e992e89451493784b6f32f29f9bdfb4669a97eaaef58711154c"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The framed image of the given finitely generated lattice is discrete and injective inside a fixed rescaled lattice.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "standard: restriction of scalars"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.HN.PlaceLattice.exists_denom",
+          "file": "Formalism/HarderNarasimhan/HarderNarasimhanProofs/DiscreteSpanOfLinIndep.lean",
+          "line0": 224,
+          "line1": 248
+        },
+        {
+          "name": "Formalism.HN.place_lattice_structure",
+          "file": "Formalism/HarderNarasimhan/HarderNarasimhanProofs/DiscreteSpanOfLinIndep.lean",
+          "line0": 269,
+          "line1": 304
+        }
+      ],
+      "source": "notes/units/P050.tex",
+      "anchor": "clear the denominators of a finite generating family",
+      "source_lines": [
+        7,
+        18
+      ],
+      "claim_sha256": "f3e33fc6dca8416968fc4568ef3d479b861f0604a9f8a6ca205fe48e94d8cc75",
+      "passage_sha256": "95bc54656a514c712c6fe5ce51d60e570b30b4c9eeabdf79bbad5e175893a928",
+      "sha256": "6eb13e793d05b33b66b45613c155a85c9c11e09c8e43ad491e686661d5c8dda6",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The rational rank of the intermediate lattice equals the number-field degree times its rank in the span.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "input: maximal independent family"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.HN.place_lattice_structure",
+          "file": "Formalism/HarderNarasimhan/HarderNarasimhanProofs/DiscreteSpanOfLinIndep.lean",
+          "line0": 292,
+          "line1": 319
+        }
+      ],
+      "source": "notes/units/P050.tex",
+      "anchor": "The two endpoints",
+      "source_lines": [
+        7,
+        18
+      ],
+      "claim_sha256": "ea7d385f732443df0487afc16d229ff40635651586638eb6febaebdd5503b33b",
+      "passage_sha256": "95bc54656a514c712c6fe5ce51d60e570b30b4c9eeabdf79bbad5e175893a928",
+      "sha256": "71b4c5b03b13140686aac9772f1e8564d843ebba1d240e29afce57ab32bea535",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The framed covolume and the height normalization are positive.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "S2"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.HN.place_lattice_structure",
+          "file": "Formalism/HarderNarasimhan/HarderNarasimhanProofs/DiscreteSpanOfLinIndep.lean",
+          "line0": 317,
+          "line1": 324
+        }
+      ],
+      "source": "notes/units/P050.tex",
+      "anchor": "Its covolume in its span",
+      "source_lines": [
+        7,
+        18
+      ],
+      "claim_sha256": "f586a599a41c9e3b82a60abe2da7b354ae775e780bef7bf78e866215447b35c1",
+      "passage_sha256": "95bc54656a514c712c6fe5ce51d60e570b30b4c9eeabdf79bbad5e175893a928",
+      "sha256": "169c48cc77472a06408bf6b436caa83cd9d687fe4559acdb5065a8469f38157d",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "afc8c2e2c8341aeb758920a4d9f0a1ec3f9f6253a5a5afd39d92e4560d999fce",
+      "sources": [
+        {
+          "path": "notes/units/P050.tex",
+          "sha256": "00a821d413d69e992e89451493784b6f32f29f9bdfb4669a97eaaef58711154c"
+        }
+      ],
+      "steps": {
+        "S1": "0bff49bc3fb80815d5beb41e48021ff41506b4783fd6a59a059cd7e9c0a2f59c",
+        "S2": "698f2fa0560c0406adb1ec72f0c52d8a5a5b3a66e12fb546fe23c6d36b8cdb4b",
+        "S3": "6f6fee0662b66e36b8a98ccb98854eddc46cdf11bd151a0f0fe33da548fc5734"
+      },
+      "step_texts": {
+        "S1": "The framed image of the given finitely generated lattice is discrete and injective inside a fixed rescaled lattice.",
+        "S2": "The rational rank of the intermediate lattice equals the number-field degree times its rank in the span.",
+        "S3": "The framed covolume and the height normalization are positive."
+      }
+    }
+  ]
+}

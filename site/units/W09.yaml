@@ -1,0 +1,129 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "W09",
+  "title": "The individual bounds in Cases II and III",
+  "track": {
+    "primary": "galois",
+    "secondary": []
+  },
+  "statement": "Assume $H'$, W05 and the rank-four conclusions of W06. Each of the\nfollowing two cases has its own $C\\in\\mathbb N$ depending only on\n$\\chi$. For every large host, $0<e<t$, odd $\\ell$, closure, coefficient\nring and $\\psi\\in X_h(O,e)$ in the case, the length is finite and\n$v_\\ell(\\psi,e)\\log\\ell\\le(\\ell Ne)^C$:\n\\begin{itemize}\n\\item Case II requires $e\\ge2$, even order of $\\chi_P$, and either\n$\\ell\\in B_\\chi$ or $\\ell-1\\mid2e$.\n\\item Case III requires $\\ell\\notin B_\\chi$, $\\ell-1\\mid2e$ and\n$\\psi$ nontrivial of odd order.\n\\end{itemize}",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume $H'$, W05 and the rank-four input of W06.",
+    "Use the indicated large host, odd prime, coefficient ring and Case II or Case III character with $0<e<t$."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.HV.DescentVanishingReductions.countII_and_countIII_of_printsH_of_sp4In",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/AdjointLiftingOfCohomology.lean",
+      "line0": 33,
+      "line1": 39,
+      "sha256": "2b3d66bebed0168b2ec5a3f9af2b571ec963d6ee0dcecdfce72a02dbd78b14dd",
+      "dominated": 15582,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/W09_round3.md",
+      "section": "W09 · The two individual symplectic Selmer bounds",
+      "pages": [
+        1,
+        3
+      ],
+      "coverage": "Round-3 written exposition, pending independent review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "5.45 (sub:W09)",
+      "pages": [
+        51,
+        51
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/W09.tex",
+      "section": "sub:W09",
+      "pages": []
+    },
+    {
+      "document": "paper2_v3",
+      "section": "The chain in detail: P013",
+      "pages": [
+        20,
+        22
+      ],
+      "coverage": "Shared subsection for this station, including subordinate inputs."
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [
+    "reviews/DB3_review_B.md"
+  ],
+  "prerequisites": [
+    "B04",
+    "D082",
+    "D108",
+    "P025",
+    "P027",
+    "P028",
+    "P030",
+    "Z1.2",
+    "Z1.4",
+    "Z1.5.05"
+  ],
+  "size_pages": 3,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "W09",
+  "indexed_members": [
+    "D106",
+    "D107",
+    "D110",
+    "D112",
+    "D519",
+    "D520",
+    "D521"
+  ],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "the-individual-bounds-in-cases-ii-and-iii",
+  "aliases": [
+    "countII_and_countIII_of_printsH_of_sp4In",
+    "W09 The individual bounds in Cases II and III"
+  ],
+  "background": [
+    "Symplectic Galois representations",
+    "Local Selmer lengths"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "5.45 (sub:W09)",
+    "pages": [
+      51,
+      51
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "B04": "graph",
+    "D082": "graph",
+    "D108": "graph",
+    "P025": "graph",
+    "P027": "graph",
+    "P028": "graph",
+    "P030": "graph",
+    "Z1.2": "graph",
+    "Z1.4": "graph",
+    "Z1.5.05": "graph"
+  },
+  "review_status": "pending_review",
+  "summary": "In each of Cases II and III, one exponent for the initial character gives a finite length bound for every qualifying character individually. The cases have different parity and divisibility requirements, so the estimates can be applied only after identifying the correct case."
+}

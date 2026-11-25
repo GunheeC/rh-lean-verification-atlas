@@ -1,0 +1,41 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>P018 · The level window criterion · RH verification atlas</title><link rel="stylesheet" href="../atlas.css"><script>window.MathJax={tex:{inlineMath:[["$","$"]],displayMath:[["$$","$$"]],processEscapes:true},options:{ignoreHtmlClass:"no-math"}};</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script></head><body><header><div class="bar"><a class="brand" href="../index.html">RH verification atlas</a><nav aria-label="Atlas navigation"><a href="../index.html">Home</a> <a href="../STATUS.html">Status</a> <a href="../MAP.html">Map</a> <a href="../dashboard/index.html">Tracks</a> <a href="../lookup/search.html">Search declarations</a></nav></div></header><main><h1 id="p018--the-level-window-criterion">P018 · The level window criterion</h1>
+<p class="notice">AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved</p>
+<p>A one-sided bound on the level prime sum over arbitrarily distant power windows excludes level zeros whose real part exceeds the chosen exponent. An entire interval at a time must satisfy the bound; this is the analytic criterion that the family estimate must feed.</p>
+<p><code>the-level-window-criterion</code> · <a href="../tracks/analytic/index.html">Analytic number theory</a></p>
+<p><strong>Full</strong> · <strong>L2</strong> Written proof accepted in AI cross-review · Record generated 2026-11-25 (no human check).</p>
+<div class="scroll"><table>
+<thead><tr><th>1 · Lean pinned</th><th>2 · Statement compared</th><th>3 · Prose</th><th>4 · Steps</th><th>5 · AI review</th><th>6 · Human</th></tr></thead>
+<tbody><tr><td>✓</td><td>✓</td><td>Full</td><td>3</td><td>Current argument (AI)</td><td>0 of 3 steps</td></tr>
+</tbody></table></div>
+<p><a href="P018.check.html">Numbered proof and check records</a> · <a href="../PROGRESS.html">Progress and counting rules</a></p>
+<h2 id="statement">Statement</h2>
+<p>Let <span class="math">$\mathcal L$</span> be a level, <span class="math">$\lambda&gt;1$</span> and <span class="math">$0&lt;\theta&lt;1$</span>. If the set <span class="math">$\{x:\mathcal G_{\mathcal L}(x)\le x^{\theta}\}$</span> has windows of exponent <span class="math">$\lambda$</span>, then <span class="math">$\mathcal L$</span> is zero-free above <span class="math">$\theta$</span>.</p>
+<h2 id="assumptions">Assumptions</h2>
+<ul><li>Fix a level, <span class="math">$\lambda&gt;1$</span> and <span class="math">$0&lt;\theta&lt;1$</span>.</li><li>The set of <span class="math">$x$</span> on which the level prime sum is at most <span class="math">$x^\theta$</span> contains power windows of exponent <span class="math">$\lambda$</span>.</li></ul>
+<p>Sources for the assumptions · <a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a></p>
+<h2 id="where-to-read">Where to read</h2>
+<p>Blueprint v13 and papers v3–v5 are this atlas project’s own AI-written, unpublished drafts. They have no human review and were not written by the author of the Lean development. Blueprint v13, its separate cover, and paper v5 are distributed as assets of release v0.1.0. For v3 and v4 the atlas supplies selected excerpts and notes. <a href="../data/editions.json">Edition register</a></p>
+<ul><li><a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a>, 6.34, p. 67. Statement starts on the cited page.</li><li><a href="../notes/units/P018.tex">Manuscript source excerpt</a> · section <code>pn:P018</code></li></ul>
+<h3 id="other-expositions-and-comparisons">Other expositions and comparisons</h3>
+<ul><li><a href="https://github.com/jimjamzola/RH-Alpoge-Reconstruction/blob/aa9c86bf2a7d29b08575641fecea19a2a603e87c/manuscript/main.pdf">Adriazola, §10–11, formB, ZLbound, lowterm and inversion</a> · partial. <a href="../crosswalk/adriazola.html">Correspondence table</a>.</li></ul>
+<h3 id="declaration-name-matches">Declaration-name matches</h3>
+<ul><li><a href="../crosswalk/naskrecki.html">Naskręcki’s reading project</a> · 1 matching declaration · indices <code>form-b</code>.</li></ul>
+<h2 id="evidence">Evidence</h2>
+<ul><li><a href="../reviews/R20_review.html">R20 review</a>, original line 50 — F: full derivation; yes. R20 local implication under its stated premises, not its prerequisite cones.</li></ul>
+<p>Review records · <a href="../reviews/R20_review.html">R20 review</a></p>
+<h2 id="lean-declarations">Lean declarations</h2>
+<ul><li><code>UpperTheory.Comparison₂.formB</code>  <br><a href="https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/PrimitiveCosets/Imports.lean#L8-L19"><code>Imports.lean</code></a>, lines 8–19 · 2,057 dominated lines · SHA-256 <code>7e428d22efce</code>.</li></ul>
+<p><a href="P018.yaml">Machine record and full declaration hashes</a> · <a href="../lookup/declarations.html">Declaration lookup</a></p>
+<h2 id="reading-prerequisites">Reading prerequisites</h2>
+<p>Background · Zero-free regions · Growth of smoothed prime sums.</p>
+<ul><li><a href="P023.html">P023 · Power windows for a positive character family</a> · graph</li></ul>
+<p><a href="../data/round3_prerequisites.json">Evidence and definitions of reading links</a></p>
+<h2 id="open-questions">Open questions</h2>
+<p>None recorded.</p>
+<h2 id="graph-connections">Graph connections</h2>
+<p>Arrows may connect either a unit’s main declaration or an indexed member.</p>
+<p><strong>Uses</strong> · <a href="P023.html">P023</a></p>
+<p><strong>Used by</strong> · <a href="P016.html">P016</a></p>
+<p><a href="../data/unit_graph.json">Declaration witnesses and graph scope</a></p>
+<p>Lookup aliases · <code>level window criterion</code>, <code>formB</code>, <code>P018 The level window criterion</code></p>
+<p>&lt;!-- Unit metadata SHA-256 489e1ac6884523611b2c99a6fe4048d6548c7c737f1178a718852135eb63f678 --&gt;</p></main><footer><a href="../help.html">Using the local edition</a></footer></body></html>

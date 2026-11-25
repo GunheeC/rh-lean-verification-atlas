@@ -1,0 +1,99 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "P096",
+  "edition_sha256": "1ed112a0b7dedf73f7e284ba3d0a3990335380f0d851c6130d8b97e11ebdc190",
+  "note_sha256": "fe854ed9b197a0af7b67e99a238a392d71aedc4e72d2ae085aed7c087de0504b",
+  "statement_sha256": "e2270e763908ad3fa5faceb9fd8bbc4046e51053306abe0df69a7c16b5273507",
+  "sources": [
+    {
+      "path": "notes/units/P096-argument.tex",
+      "sha256": "fe854ed9b197a0af7b67e99a238a392d71aedc4e72d2ae085aed7c087de0504b"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The two class representatives transport the completed span of the same base lattice.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: fixed base lattice and one-place relation"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.Mem.Col2.SameOff.locP_le_of_locLat_le",
+          "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/AdelicConjugateCharacterStandardForms.lean",
+          "line0": 206,
+          "line1": 241
+        }
+      ],
+      "source": "notes/units/P096-argument.tex",
+      "anchor": "In either case both classes use the same base lattice $B$. The level",
+      "source_lines": [
+        10,
+        30
+      ],
+      "claim_sha256": "8d50d8a9abffc36b4718cb6e08d9ebe651126d2b22070e09fa5923fbbbff4955",
+      "passage_sha256": "9c673a2c2cc8965dac7cf68bc764d8a27c04897d4cf2249813a525bc2c38280d",
+      "sha256": "fe8912363a5080de4ac96a2fac41573791246614d4a1770c2008991b08690e20",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "In each completion away from the moved place, the conjugated second class lattice and the first have equal span.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "input: projection at a place away from the move"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.Mem.Col2.SameOff.locP_le_of_locLat_le",
+          "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/AdelicConjugateCharacterStandardForms.lean",
+          "line0": 206,
+          "line1": 241
+        }
+      ],
+      "source": "notes/units/P096-argument.tex",
+      "anchor": "Fix $Q$ over $w\\ne v_0$. For a rational lattice $L$ write",
+      "source_lines": [
+        32,
+        52
+      ],
+      "claim_sha256": "bc4815c39204dbedfcb3cc756bfe91e585f7bec7a5651be8e54a097e1ee3ef86",
+      "passage_sha256": "8912f0dd803e69ffc7083f808c691c7dd75702e5d4e2a4242ef72e5a9ec38900",
+      "sha256": "99210b81f7858652c5fcf4edb02149c2d91381384e2e89240e7f8496551a4e74",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Equality of the completed spans descends to equality of the localized rational lattices.",
+      "kind": "assembly",
+      "uses": [
+        "S2",
+        "standard: full finite lattices over a discrete valuation ring"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.Mem.Col2.SameOff.locP_le_of_locLat_le",
+          "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/AdelicConjugateCharacterStandardForms.lean",
+          "line0": 206,
+          "line1": 241
+        }
+      ],
+      "source": "notes/units/P096-argument.tex",
+      "anchor": "To descend the equality, put $R=(\\mathcal O_E)_Q$. For any full finite",
+      "source_lines": [
+        54,
+        64
+      ],
+      "claim_sha256": "f441deac7fa53bc1aa5738cbfcb97a128dd6d5d6206b0432a2bf2941a3edc215",
+      "passage_sha256": "4419dd3a4d1415ea7b0ac8553dff741895b70d4761d3155eef6b85b34c204c32",
+      "sha256": "fbdfefb59c21a9b431fa031d5cd32edb7120f0e84391ce3fd2e6be7e045fec7f",
+      "ai_review": []
+    }
+  ],
+  "history": []
+}

@@ -1,0 +1,76 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Writing and reading progress · RH verification atlas</title><link rel="stylesheet" href="atlas.css"></head><body><header><div class="bar"><a class="brand" href="index.html">RH verification atlas</a><nav aria-label="Atlas navigation"><a href="index.html">Home</a> <a href="STATUS.html">Status</a> <a href="MAP.html">Map</a> <a href="dashboard/index.html">Tracks</a> <a href="lookup/search.html">Search declarations</a></nav></div></header><main><h1 id="writing-and-reading-progress">Writing and reading progress</h1>
+<p class="notice">AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved</p>
+<p>Of 217 units, <strong>55 have a Full argument under stated inputs</strong>, <strong>127 have an outline</strong>, and <strong>35 give the statement only</strong>.</p>
+<p>The notes contain <strong>739 active proof steps</strong>. <strong>6</strong> have a current step-specific AI review. <strong>0</strong> have a current human check.</p>
+<h2 id="source-lines-cited-by-active-steps">Source lines cited by active steps</h2>
+<p>A cited line locates a written step in the pinned Lean source and by itself establishes neither a line-by-line check nor a complete proof.</p>
+<p>The steps cite <strong>13,015 distinct physical lines</strong>. Of these, 12,584 are in the dependency graph of the all-character statement <code>allChi</code>. The original 855 indexed files contain 5,862 of the cited lines. The remaining 7,153 appear in other files at the same Lean commit.</p>
+<div class="scroll"><table>
+<thead><tr><th>Evidence or exposition</th><th>Distinct cited lines / 17,374,215 full-source lines</th><th>Within 9,567,045 core lines</th><th>Within 101,765 lines of the original file sample</th></tr></thead>
+<tbody><tr><td>Any written unit</td><td>13,015 (0.0749%)</td><td>12,584 (0.1315%)</td><td>5,862 (5.7603%)</td></tr>
+<tr><td>Full</td><td>5,863 (0.0337%)</td><td>5,853 (0.0612%)</td><td>3,177 (3.1219%)</td></tr>
+<tr><td>Outlined</td><td>7,928 (0.0456%)</td><td>7,507 (0.0785%)</td><td>3,144 (3.0895%)</td></tr>
+<tr><td>Current AI review of the specific step</td><td>60 (0.0003%)</td><td>60 (0.0006%)</td><td>51 (0.0501%)</td></tr>
+<tr><td>Current AI review of the containing prose</td><td>1,686 (0.0097%)</td><td>1,686 (0.0176%)</td><td>1,060 (1.0416%)</td></tr>
+<tr><td>Current human check of the specific step</td><td>0 (0.0000%)</td><td>0 (0.0000%)</td><td>0 (0.0000%)</td></tr>
+</tbody></table></div>
+<p>Full and Outlined notes cite 776 of the same physical lines. The first row takes their union. The two AI rows distinguish a verdict on the named step from a review of its enclosing prose. A whole-note review does not supply a verdict on a step added later. Each evidence row counts its own union.</p>
+<h2 id="position-in-the-declaration-index">Position in the declaration index</h2>
+<p>This table shows where a line sits in the index. It gives no evidence that the line was explained or read.</p>
+<div class="scroll"><table>
+<thead><tr><th>Writing status of nearest indexed statement</th><th>Core lines at this index position</th></tr></thead>
+<tbody><tr><td>Full</td><td>31,564 (0.3299%)</td></tr>
+<tr><td>Outlined</td><td>8,324,895 (87.0164%)</td></tr>
+<tr><td>Statement only</td><td>1,210,586 (12.6537%)</td></tr>
+<tr><td>Of Full, also at evidence level L2</td><td>5,202 (0.0544%)</td></tr>
+</tbody></table></div>
+<p>Each line belongs to the nearest indexed unit statement at or above it in the dominator tree. 28 statement declarations have more than one primary unit. For a shared statement, the earliest unit ID in ordinary character order owns the position. This deterministic tie-break ignores grades. The Full-and-L2 row is part of Full.</p>
+<p>For example, P034 and Z2.K4 share the head <code>bOdd_zk</code>. The tie rule assigns its 23,135 lines to P034. Choosing the other card would move those positions between the two writing-status rows without changing a single note.</p>
+<p>A core line is one unit of weight for a physical source line of a reachable core declaration in the graph rooted at <code>allChi</code> (9,567,045 in total). A literature node is a declaration marked as a stopping point by the extraction’s name or module rule, so the graph does not follow its proof or establish its relation to any publication.</p>
+<p>The complete pinned source contains 17,374,215 physical lines in 175,187 Lean files. This is the count of newline characters in every <code>.lean</code> file under <code>lean/src/</code> in the pinned archive. Every nonempty file ends with a newline.</p>
+<p>The V and F supplier subtrees are disjoint. They contain 886,201 and 3,679,692 core lines, respectively, or 4,565,893 together. The closed character statement P010 contains a further 2,137,850 core lines outside the subtree of its row implication P011. These are source-graph locations. The atlas contains no human-readable derivation of either supplier.</p>
+<p><a href="progress/by-field.html">Per-field citation unions</a> · <a href="progress/index.html">Counting rules</a> · <a href="progress/index_position.json">Reproduce the index assignment</a></p>
+<h2 id="units-with-evidence-at-each-stage">Units with evidence at each stage</h2>
+<p>The first two stages concern the unit’s statement. Written includes Full arguments and Outlined derivations. A human check of a whole unit requires a positive current record for every active step and the statement comparison.</p>
+<div class="scroll"><table>
+<thead><tr><th>Primary field</th><th>Units</th><th>1 · Pinned</th><th>2 · Compared</th><th>3 · Written</th><th>4 · Steps</th><th>5 · AI review</th><th>6 · Human</th></tr></thead>
+<tbody><tr><td><strong>All</strong></td><td>217</td><td>217</td><td>79</td><td>182</td><td>182</td><td>20</td><td>0</td></tr>
+<tr><td><a href="tracks/analytic/index.html">analytic</a></td><td>35</td><td>35</td><td>22</td><td>31</td><td>31</td><td>11</td><td>0</td></tr>
+<tr><td><a href="tracks/arakelov/index.html">arakelov</a></td><td>33</td><td>33</td><td>11</td><td>27</td><td>27</td><td>4</td><td>0</td></tr>
+<tr><td><a href="tracks/formal/index.html">formal</a></td><td>10</td><td>10</td><td>5</td><td>10</td><td>10</td><td>0</td><td>0</td></tr>
+<tr><td><a href="tracks/galois/index.html">galois</a></td><td>62</td><td>62</td><td>14</td><td>37</td><td>37</td><td>2</td><td>0</td></tr>
+<tr><td><a href="tracks/ktheory/index.html">ktheory</a></td><td>11</td><td>11</td><td>11</td><td>11</td><td>11</td><td>1</td><td>0</td></tr>
+<tr><td><a href="tracks/local/index.html">local</a></td><td>26</td><td>26</td><td>5</td><td>26</td><td>26</td><td>1</td><td>0</td></tr>
+<tr><td><a href="tracks/theta/index.html">theta</a></td><td>40</td><td>40</td><td>11</td><td>40</td><td>40</td><td>1</td><td>0</td></tr>
+</tbody></table></div>
+<h2 id="checks-on-individual-steps">Checks on individual steps</h2>
+<div class="scroll"><table>
+<thead><tr><th>Primary field</th><th>Active steps</th><th>AI-reviewed steps</th><th>Human-checked steps</th><th>Steps with two independent readers</th><th>Units with two independent readers</th><th>Disputed</th></tr></thead>
+<tbody><tr><td><strong>All</strong></td><td>739</td><td>6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td><a href="tracks/analytic/index.html">analytic</a></td><td>116</td><td>6</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td><a href="tracks/arakelov/index.html">arakelov</a></td><td>106</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td><a href="tracks/formal/index.html">formal</a></td><td>35</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td><a href="tracks/galois/index.html">galois</a></td><td>163</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td><a href="tracks/ktheory/index.html">ktheory</a></td><td>52</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td><a href="tracks/local/index.html">local</a></td><td>102</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td><a href="tracks/theta/index.html">theta</a></td><td>165</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+</tbody></table></div>
+<p>Among 24 units at L2 and 20 at stage 5, L2 without stage 5: <a href="units/D014.html">D014</a>, <a href="units/P014.html">P014</a>, <a href="units/Z1.3.06.html">Z1.3.06</a>, <a href="units/Z1.3.07.html">Z1.3.07</a>, <a href="units/Z4.2.04.html">Z4.2.04</a>. Stage 5 without L2: <a href="units/D550.html">D550</a>.</p>
+<p>D014’s L2 concerns one written proof. Its separate companion note has no current whole-note review.</p>
+<p>D550’s current individual checkpoints have scoped AI reviews. The light check does not approve its entire argument at L2.</p>
+<p>Stage 2 uses a recorded comparison of the named statement, including earlier comparisons of the same transcription. Stage 5 accepts an edition-matched review of the written argument or a review of every active step. An earlier unit-level review remains unit-level. A proof can have a review before it has a step checklist.</p>
+<h2 id="recorded-history">Recorded history</h2>
+<p>Blue shows units with written arguments. Rust shows units with a complete human check for the recorded edition. The horizontal axis numbers the snapshots. The source-line column uses the checklist available in each round.</p>
+<p><img src="progress/history.svg" alt="Written and human-checked units through the recorded snapshots" loading="lazy"></p>
+<div class="scroll"><table>
+<thead><tr><th>Snapshot</th><th>Date (UTC)</th><th>Units</th><th>Compared</th><th>Written</th><th>With steps</th><th>AI review</th><th>Human</th><th>Distinct lines cited</th></tr></thead>
+<tbody><tr><td>1 · Round 1</td><td>2026-11-24</td><td>213</td><td>71</td><td>94</td><td>0</td><td>20</td><td>0</td><td>0</td></tr>
+<tr><td>2 · Round 2</td><td>2026-11-24</td><td>213</td><td>71</td><td>94</td><td>0</td><td>20</td><td>0</td><td>0</td></tr>
+<tr><td>3 · Round 3</td><td>2026-11-25</td><td>214</td><td>71</td><td>119</td><td>0</td><td>20</td><td>0</td><td>0</td></tr>
+<tr><td>4 · Round 4</td><td>2026-11-25</td><td>217</td><td>78</td><td>182</td><td>182</td><td>26</td><td>0</td><td>12,936</td></tr>
+<tr><td>5 · Round 5</td><td>2026-11-25</td><td>217</td><td>78</td><td>182</td><td>182</td><td>26</td><td>0</td><td>12,936</td></tr>
+<tr><td>6 · Round 6</td><td>2026-11-25</td><td>217</td><td>79</td><td>182</td><td>182</td><td>20</td><td>0</td><td>13,015</td></tr>
+</tbody></table></div>
+<p>The early records summarize editorial editions predating the public release. Their identifiers are digests of the recorded counts. The first three editions contain prose but predate step checklists. Zero cited lines there means zero recorded step citations.</p>
+<p>Round 6 counted only reviews covering the current argument, reducing the unit count from 26 to 20, and set aside earlier verdicts on D014 S7 and D548 S2–S3, reducing the number of steps with a specific review from 9 to 6.</p>
+<p><a href="progress/history.jsonl">Machine-readable history</a> · <a href="dashboard/index.html">Dashboard</a> · <a href="signoffs/index.html">Submit a human check</a></p></main><footer><a href="help.html">Using the local edition</a></footer></body></html>

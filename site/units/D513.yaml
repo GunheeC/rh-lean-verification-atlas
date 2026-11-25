@@ -1,0 +1,86 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D513",
+  "title": "Choice of even column rank in a prescribed frame",
+  "track": {
+    "primary": "analytic",
+    "secondary": []
+  },
+  "statement": "For each 0<epsilon<1/52, simultaneously for all sufficiently large scales and every frame of order in [x\\textasciicircum{}(2+8epsilon),2x\\textasciicircum{}(2+8epsilon)], there exist ranks inducing exactly that frame, with the prescribed exponent, rank, size and growth inequalities of RankVal.\n\\[\nx^{2+8\\varepsilon}\\le {\\rm ord}(\\phi)\\le2x^{2+8\\varepsilon}\\ \\Longrightarrow\\ \\exists R,\\ R^{\\rm frame}=\\phi\\ \\wedge\\ \\operatorname{RankVal}(s,R).\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Fix $0<\\varepsilon<1/52$ and a sufficiently large scale of that exponent.",
+    "Require $x^{2+8\\varepsilon}\\le\\operatorname{ord}(\\phi)\\le2x^{2+8\\varepsilon}$."
+  ],
+  "lean": [
+    {
+      "name": "GlobalTheory.EX.exists_ranks_rankVal_frame",
+      "file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsRanksRankValFrame.lean",
+      "line0": 45,
+      "line1": 99,
+      "sha256": "9eded7a6c52d5582a3d35db0ae0c0876012c571c36b064f0dc9a575dbc6f8877",
+      "dominated": 81,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "G.536 (decomp:D513)",
+      "pages": [
+        291,
+        291
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D513.tex",
+      "section": "decomp:D513",
+      "pages": []
+    },
+    {
+      "document": "paper2_v3",
+      "section": "The chain in detail: P015",
+      "pages": [
+        17,
+        19
+      ],
+      "coverage": "Shared subsection for this station, including subordinate inputs."
+    }
+  ],
+  "status": "Statement only",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [],
+  "paper_id": "D513",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "choice-of-even-column-rank-in-a-prescribed-frame",
+  "aliases": [
+    "exists_ranks_rankVal_frame",
+    "D513 Choice of even column rank in a prescribed frame"
+  ],
+  "background": [
+    "Real power estimates",
+    "Finite cyclic frames"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.536 (decomp:D513)",
+    "pages": [
+      291,
+      291
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {}
+}

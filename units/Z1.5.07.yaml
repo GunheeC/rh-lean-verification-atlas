@@ -1,0 +1,115 @@
+{
+  "id": "Z1.5.07",
+  "title": "CM Frobenius trace bound",
+  "track": {
+    "primary": "analytic",
+    "secondary": [
+      "galois"
+    ]
+  },
+  "statement": "From CountKAlt obtain, over each fixed CM field, a trace classifier for Adm3NAlt at inverse Frobenius of norm $\\mathrm Nw$. Its size is at most $c[N(e+1)]^A$, when $p$ is prime to $N$ and the field discriminant, for each odd coefficient prime distinct from $p$.",
+  "assumptions": [
+    "Z1.5.03",
+    "source:blueprint_v13"
+  ],
+  "hypothesis_details": [
+    "Assume CountKAlt for the fixed CM field.",
+    "Use a place prime to the level and discriminant of the field."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.GalN.V.Win.N.frobenius_trace_count_bound_of_cm_eigensystem_count_alt",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/FrobeniusTraceCountBoundOfCmEigensystemCount.lean",
+      "line0": 418,
+      "line1": 461,
+      "sha256": "af2b4986daa36dfdef194fc6046dd893741d2e5b61afd3478a4f973d85e3e248",
+      "dominated": 273,
+      "graph": "allChi",
+      "role": "statement"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/blueprint/Z1.5.07.tex",
+      "section": "r5:small:Z1.5.07, r6:review:Z1.5.07, r7:review:Z1.5.07",
+      "pages": []
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r5:small:Z1.5.07",
+      "pages": [
+        357,
+        357
+      ],
+      "printed_page": 332,
+      "scope": "First page of this named destination."
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r6:review:Z1.5.07",
+      "pages": [
+        362,
+        362
+      ],
+      "printed_page": 337,
+      "scope": "First page of this named destination."
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r7:review:Z1.5.07",
+      "pages": [
+        390,
+        390
+      ],
+      "printed_page": 365,
+      "scope": "First page of this named destination."
+    }
+  ],
+  "status": "Full",
+  "grade": "L2",
+  "reviews": [
+    "reviews/R5_review_A.md",
+    "reviews/R6_review.md"
+  ],
+  "prerequisites": [
+    "Z1.5.03"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "blueprint_members": [
+    "Z1.5.07"
+  ],
+  "representative": "UpperTheory.GalN.V.Win.N.frobenius_trace_count_bound_of_cm_eigensystem_count_alt",
+  "statement_declarations": [
+    "UpperTheory.GalN.V.Win.N.frobenius_trace_count_bound_of_cm_eigensystem_count_alt"
+  ],
+  "grade_scope": "Named statement declarations with the hypotheses above. Chart supplier records have their own review scopes.",
+  "confirmation_basis": "Minimum across the statement declarations, using registry rows for the blueprint assignments listed here. Reviews of other expositions of a shared declaration are included as context.",
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "slug": "cm-frobenius-trace-bound",
+  "aliases": [
+    "frobenius_trace_count_bound_of_cm_eigensystem_count_alt",
+    "Z1.5.07 CM Frobenius trace bound"
+  ],
+  "background": [
+    "CM fields",
+    "Frobenius traces"
+  ],
+  "hypothesis_source": {
+    "document": "blueprint_v13",
+    "section": "r5:small:Z1.5.07",
+    "pages": [
+      357,
+      357
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "Z1.5.03": "statement-reading"
+  },
+  "summary": "At a prime away from level and discriminant, the CM counting input bounds the list of possible inverse Frobenius traces for the designated rank-three representations. For a fixed CM field, one polynomial in level and twist works across the allowed coefficient primes."
+}

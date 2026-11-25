@@ -1,0 +1,15 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit P015. Local manuscript v3, item 6.15, heading on printed PDF p. 58.
+% UpperTheory.Top.zero_free_all_of_green_v_win
+% paper2/upper.tex:115–123. Verbatim excerpt; SHA-256 c5e9fa4243c8f21d871df156601aeb777e4b590a6a111d1a5833ed88082226ab.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+\begin{formalstatement}[Primitive characters from the three inputs]\label{pn:P015}
+Assume $\mathcal B,V,\mathcal F$. For every $\psi\in\mathcal P$ and every $s$ with $\Re s>1/2$, one has $L(s,\psi)\ne0$.
+\end{formalstatement}
+\nodestatus{P015} \noindent\emph{Round 23 candidate.} See Section~\ref{sec:r23-status} for the written argument and its review status.\par
+\begin{formalroute}
+Choose the record supplied by $\mathcal F$. The closed-link shape theorem applied to $\mathcal B$, followed by the shape-to-goal theorem for this record, gives \code{TopG}. For each $\psi$, its component of $V$ gives host existence through \code{supplyChi} at $\lambda=3/2$. These are the hypotheses of P016. This is the reduction in blueprint Chapter~D, \emph{Zero-free half-plane from Green, VWin and HypsAlt}~\bploc{cor:D-zerofree}. The primitive predicate includes the assigned value at $1$. The step requiring project-specific input is the construction of connected families and hosts from these assumptions. Green's finite-group character classification treats one input to that construction.
+\end{formalroute}
+
+\paragraph{Hosts and connected families.} An exponent-$\lambda$ window set contains $[Y,Y^\lambda]$ at arbitrarily large $Y$. A requirement $G$ is a predicate on a scale, a frame, its host, the finite test set and the rank parameter. \code{HostExW}$(\lambda,G)$ supplies for every $0<\varepsilon<1/52$ common size constants, an exponent-$\lambda$ window set, $J\ge1$ and a threshold. Each eligible scale in that set past the threshold has ranks, a host and an auxiliary prime satisfying the size predicates and $G$. The family class $\operatorname{cls}(G,\lambda)$ requires those windows and eventual satisfaction of $G$ by every indexed member. For a primitive $\psi$, $G_\psi$ combines the host condition \code{EAtH} for the cyclic level of $\psi$ (constant $4$) and the Selmer bound \code{VVle}$(E,t,\sqrt b)$. The family assertion \code{HypV} demands the latter eventually. The predicate \code{TopG} asserts that for all $\lambda>1$ and all requirements $G$, \code{HostExW}$(\lambda,G)$ and \code{HypV} on each family of the class imply its connectedness. This gives common real $e_D,e_L$ and $\varepsilon_1>0$, followed for each $0<\varepsilon<\varepsilon_1$ by a family and constants making the chain tied on all sufficiently large window scales (\nolinkurl{CharacterBoxes/ZeroFreeAllOfTopG.lean:12--26}, \nolinkurl{ThinScalesIffHostBound.lean:120}).

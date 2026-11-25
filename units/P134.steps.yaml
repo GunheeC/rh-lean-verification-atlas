@@ -1,0 +1,125 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "P134",
+  "edition_sha256": "7d811ff66ab2fb98d5fc40a487138b98a49169dd53e0a675238dcf009252dae7",
+  "note_sha256": "7286aff7ba278626a263606707f5ae6f6878831c8789be697636b4aa352df2e6",
+  "statement_sha256": "9e647f1b8339b524aad8b6ce053297a4ae0959b8b8ce2df1311b9d01d9cafc9f",
+  "sources": [
+    {
+      "path": "notes/units/P134-argument.tex",
+      "sha256": "7286aff7ba278626a263606707f5ae6f6878831c8789be697636b4aa352df2e6"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "At depth zero the local congruence test requires integrality of the matrix difference in the base frame.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: depth-zero congruence predicate"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.TwV.IsPtAd",
+          "file": "Development/AbelianVarietyTheory/Definitions/GaloisGeometry/UnderTie.lean",
+          "line0": 24,
+          "line1": 27
+        }
+      ],
+      "source": "notes/units/P134-argument.tex",
+      "anchor": "\\paragraph{The local test.}",
+      "source_lines": [
+        9,
+        29
+      ],
+      "claim_sha256": "febbf0b146575f8b4c68fbb71eda3b162c499d0a00fd1b50b3670e4c34164b36",
+      "passage_sha256": "0fd90c5663b8184c36fa484e53ffb7b9422fe531fb73245c593e2c1ce5706ca2",
+      "sha256": "07a5a5408fb45a5c8134715b618addc9507990ef2fcda7708974165aad022f73",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The specified frame represents the local companion lattice at the bad prime.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: pinned companion-lattice identity"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.TwV.baseFrame_std_eq_compan",
+          "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/ChartBaseFrameBadPrimeEqCompanionLattice.lean",
+          "line0": 55,
+          "line1": 83
+        }
+      ],
+      "source": "notes/units/P134-argument.tex",
+      "anchor": "Let $L$ be the chart level's base lattice, $J$ its Hermitian matrix and",
+      "source_lines": [
+        31,
+        50
+      ],
+      "claim_sha256": "3b0ca68692221a32ab6950567ac66c7eeb4fc2d39d05804ebc45a9c7dc676bdd",
+      "passage_sha256": "db09b35dcecb4f2daf938f7d438ac8f0985dbc1236e2ccb49bc3d70466706527",
+      "sha256": "4a01f4b1f034b9ebc3b61656b49c1e73c05dfa172f53471142f2eb2e71c7117b",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "In the base frame a stabilizer and its inverse preserve the integral lattice, giving the depth-zero congruence.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "S2",
+        "input: level stabilization"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.LevStab.int_conj",
+          "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/GlobLatCompanOfLev.lean",
+          "line0": 118,
+          "line1": 151
+        },
+        {
+          "name": "GlobalTheory.LevStab.lev_stab_cong",
+          "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/GlobLatCompanOfLev.lean",
+          "line0": 174,
+          "line1": 215
+        }
+      ],
+      "source": "notes/units/P134-argument.tex",
+      "anchor": "For an element $\\kappa$ of the level subgroup, each local component",
+      "source_lines": [
+        86,
+        101
+      ],
+      "claim_sha256": "7f8bb9c93243e32a7414542e9e47ebf7ac00e3ca6e65a5f60695be5d6eda5e2d",
+      "passage_sha256": "e5c626174bfdaf219d2abca48eaa5c47e6bd21d2964282c356d816944e223d30",
+      "sha256": "4cb872ad111eaac2e34b2ad401a85afb9f6ba061c1ca02272857d2529747b243",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "10df935a732302252677b32ab1e9a8677813c5764eb4c0a6171ab15c97b0bb50",
+      "sources": [
+        {
+          "path": "notes/units/P134-argument.tex",
+          "sha256": "7286aff7ba278626a263606707f5ae6f6878831c8789be697636b4aa352df2e6"
+        }
+      ],
+      "steps": {
+        "S1": "07a5a5408fb45a5c8134715b618addc9507990ef2fcda7708974165aad022f73",
+        "S2": "4a01f4b1f034b9ebc3b61656b49c1e73c05dfa172f53471142f2eb2e71c7117b",
+        "S3": "417d2c702f20eeae9a036d5400e5edfc3098ea8fc72f9a4182bfd1326919f54f"
+      },
+      "step_texts": {
+        "S1": "At depth zero the local congruence test requires integrality of the matrix difference in the base frame.",
+        "S2": "The specified frame represents the local companion lattice at the bad prime.",
+        "S3": "In the base frame a stabilizer and its inverse preserve the integral lattice, giving the depth-zero congruence."
+      }
+    }
+  ]
+}

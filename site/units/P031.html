@@ -1,0 +1,38 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>P031 · One cyclotomic generator for every layer · RH verification atlas</title><link rel="stylesheet" href="../atlas.css"><script>window.MathJax={tex:{inlineMath:[["$","$"]],displayMath:[["$$","$$"]],processEscapes:true},options:{ignoreHtmlClass:"no-math"}};</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script></head><body><header><div class="bar"><a class="brand" href="../index.html">RH verification atlas</a><nav aria-label="Atlas navigation"><a href="../index.html">Home</a> <a href="../STATUS.html">Status</a> <a href="../MAP.html">Map</a> <a href="../dashboard/index.html">Tracks</a> <a href="../lookup/search.html">Search declarations</a></nav></div></header><main><h1 id="p031--one-cyclotomic-generator-for-every-layer">P031 · One cyclotomic generator for every layer</h1>
+<p class="notice">AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved</p>
+<p>One cyclotomic generator gives a cokernel formula for the localization-kernel length across every permitted layer and positive twist. Fixing that generator allows the layer index to vary while keeping the action being measured identifiable.</p>
+<p><code>one-cyclotomic-generator-for-every-layer</code> · <a href="../tracks/galois/index.html">Galois representations, automorphy lifting, Iwasawa theory and Euler systems</a> · <a href="../tracks/ktheory/index.html">Algebraic K-theory and cohomology of arithmetic groups</a></p>
+<p><strong>Full</strong> · <strong>L1</strong> Statement matched to Lean · Record generated 2026-11-25 (no human check).</p>
+<div class="scroll"><table>
+<thead><tr><th>1 · Lean pinned</th><th>2 · Statement compared</th><th>3 · Prose</th><th>4 · Steps</th><th>5 · AI review</th><th>6 · Human</th></tr></thead>
+<tbody><tr><td>✓</td><td>✓</td><td>Full</td><td>5</td><td>–</td><td>0 of 5 steps</td></tr>
+</tbody></table></div>
+<p><a href="P031.check.html">Numbered proof and check records</a> · <a href="../PROGRESS.html">Progress and counting rules</a></p>
+<h2 id="statement">Statement</h2>
+<p>Let <span class="math">$\ell$</span> be prime and let <span class="math">$L_0$</span> contain a primitive <span class="math">$\ell$</span>-th root if <span class="math">$\ell$</span> is odd, or a primitive fourth root if <span class="math">$\ell=2$</span>. Write <span class="math">$c_0$</span> for the largest <span class="math">$c$</span> such that <span class="math">$L_0$</span> contains a primitive <span class="math">$\ell^c$</span>-th root. There exists <span class="math">$\gamma\in G_{L_0}$</span> whose cyclotomic image topologically generates the image and satisfies <span class="math">$v_\ell(\chi(\gamma)-1)=c_0$</span>. The base contains a primitive <span class="math">$\ell^{c_0}$</span>-th root. For every <span class="math">$E\ge1$</span>, every <span class="math">$m\ge0$</span>, and every degree-<span class="math">$\ell^m$</span> cyclotomic layer <span class="math">$L_m/L_0$</span>,</p>
+<div class="math display">$$\operatorname{shaInv}(L_m,\ell,E)= \operatorname{length}_{\mathbb Z_\ell} \operatorname{coker}\bigl(x_{\mathrm{Tw}}(E,\gamma)^{\ell^m}-1\bigr).$$</div>
+<p>Here <span class="math">$x_{\mathrm{Tw}}$</span> is the twisted action on the dual of the infinite-layer character module with the specified local conditions.</p>
+<h2 id="assumptions">Assumptions</h2>
+<ul><li>Fix a prime <span class="math">$\ell$</span> and a number field containing a primitive <span class="math">$\ell$</span>-th root when <span class="math">$\ell$</span> is odd, or a primitive fourth root at two.</li><li>Use its maximal root-of-unity exponent and the corresponding tower.</li></ul>
+<p>Sources for the assumptions · <a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a></p>
+<h2 id="where-to-read">Where to read</h2>
+<p>Blueprint v13 and papers v3–v5 are this atlas project’s own AI-written, unpublished drafts. They have no human review and were not written by the author of the Lean development. Blueprint v13, its separate cover, and paper v5 are distributed as assets of release v0.1.0. For v3 and v4 the atlas supplies selected excerpts and notes. <a href="../data/editions.json">Edition register</a></p>
+<ul><li><a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a>, 7.8, p. 76. Statement starts on the cited page.</li><li><a href="../notes/units/P031.tex">Manuscript source excerpt</a> · section <code>pn:P031</code></li></ul>
+<h2 id="evidence">Evidence</h2>
+<ul><li><a href="../reviews/R20_review.html">R20 review</a>, original line 109 — Exact statement comparison. Named theorem at the specified hypotheses in the R20 manuscript.</li></ul>
+<p>Review records · <a href="../reviews/R20_review.html">R20 review</a></p>
+<h2 id="lean-declarations">Lean declarations</h2>
+<ul><li><code>UpperTheory.V.Tower.exists_descends</code>  <br><a href="https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/NumberFieldTowers/ExistsDescends.lean#L50-L57"><code>ExistsDescends.lean</code></a>, lines 50–57 · 53 dominated lines · SHA-256 <code>b612f89d62d4</code>.</li></ul>
+<p><a href="P031.yaml">Machine record and full declaration hashes</a> · <a href="../lookup/declarations.html">Declaration lookup</a></p>
+<h2 id="reading-prerequisites">Reading prerequisites</h2>
+<p>Background · Cyclotomic extensions · Galois groups of localizations.</p>
+<p>No prior atlas unit is specified.</p>
+<h2 id="open-questions">Open questions</h2>
+<p>None recorded.</p>
+<h2 id="graph-connections">Graph connections</h2>
+<p>Arrows may connect either a unit’s main declaration or an indexed member.</p>
+<p><strong>Uses</strong> · No recorded edge.</p>
+<p><strong>Used by</strong> · <a href="P013.html">P013</a> · <a href="W05.html">W05</a></p>
+<p><a href="../data/unit_graph.json">Declaration witnesses and graph scope</a></p>
+<p>Lookup aliases · <code>P031 One cyclotomic generator for every layer</code></p>
+<p>&lt;!-- Unit metadata SHA-256 babbdc6461743fe5de74ef4f50e95cbd0c2bf709fa3ebc602f8e55591f4c866f --&gt;</p></main><footer><a href="../help.html">Using the local edition</a></footer></body></html>

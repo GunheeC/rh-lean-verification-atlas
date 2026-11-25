@@ -1,0 +1,195 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "P090",
+  "edition_sha256": "4f57f362defe067b855d237871a1ad38970bcd38fa7c903d14d8a653ae872c8a",
+  "note_sha256": "9804317b54b562990b706e7d26c3ff8f4bf5d528f556a5abc8db969e852e1d6e",
+  "statement_sha256": "9fd9a9a6bf98dafe515590bed48dd5c159b46d6758636c76ab3e49c93dc075e8",
+  "sources": [
+    {
+      "path": "notes/units/P090_round4.md",
+      "sha256": "9804317b54b562990b706e7d26c3ff8f4bf5d528f556a5abc8db969e852e1d6e"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The specified point of each class represents that class in the pinned adelic datum.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: chart-point existence and the adelic tie"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.TwV.adLawAt_xiAd",
+          "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/AdelicChainDatumCharacterLawsJointKernel.lean",
+          "line0": 62,
+          "line1": 69
+        },
+        {
+          "name": "GlobalTheory.TwV.xiAd_eq_of_isPtAd",
+          "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/AdelicChainDatumCharacterLawsJointKernel.lean",
+          "line0": 33,
+          "line1": 42
+        }
+      ],
+      "source": "notes/units/P090_round4.md",
+      "anchor": "Work under the pin and tie for the",
+      "source_lines": [
+        19,
+        19
+      ],
+      "claim_sha256": "8da9844a5684c48f63c0905ce2ffe7b72a9f295004ddf37e322d452c71d7d50c",
+      "passage_sha256": "34de8aec2e6c4693e757c1c2fb059699f9e2608c364f2b17b93008a7e61c56d5",
+      "sha256": "9fdfb0bcac0e0c22b201872ae791c7070ab7c11c1dc0eba65e2c4bb20e3178b2",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Independence of the kernel outside the bad components holds at matrix, first coupled and final steps.",
+      "kind": "case-split",
+      "uses": [
+        "S1",
+        "input: matrix, first-coupled and terminal independence"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.TwV.adLawAt_xiAd",
+          "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/AdelicChainDatumCharacterLawsJointKernel.lean",
+          "line0": 70,
+          "line1": 84
+        }
+      ],
+      "source": "notes/units/P090_round4.md",
+      "anchor": "Split the index according as it is less",
+      "source_lines": [
+        23,
+        23
+      ],
+      "claim_sha256": "ba323e17fcd0cd0dfa9b8fdc5370ffcff0d741f33079382b0daca277696bde92",
+      "passage_sha256": "c1b635ea7dc9d219d58f55be0e26b20a0c09ca2ee25c2497a1936db650a3ed49",
+      "sha256": "68562344232adbe2146b2eb95478a363ae6b37c43f5dcdfa9a03c6e75915b8a7",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "At first coupling the value uses the second representative's coupling coset, and at the final step it uses the first representative's coset.",
+      "kind": "case-split",
+      "uses": [
+        "S1",
+        "S2",
+        "input: chain identities and coupling-coset identity"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.TwV.adLawAt_xiAd",
+          "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/AdelicChainDatumCharacterLawsJointKernel.lean",
+          "line0": 85,
+          "line1": 106
+        },
+        {
+          "name": "GlobalTheory.TwV.adLawAt_xiAd",
+          "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/AdelicChainDatumCharacterLawsJointKernel.lean",
+          "line0": 107,
+          "line1": 113
+        }
+      ],
+      "source": "notes/units/P090_round4.md",
+      "anchor": "Rewrite the chosen kernel using the point-reading lemma",
+      "source_lines": [
+        27,
+        27
+      ],
+      "claim_sha256": "a3631cd2a1e7c0b049be9e9e8dd8a2d61d61882068b3dd314fe03161a6e85bd3",
+      "passage_sha256": "2006c2454e1f3ad87ba78dbd94247bb938a2f1fb11150ede44aad34c242381b5",
+      "sha256": "6ff13307c7af7b350f83ea3406c3f5867c5e76142e269fb71f969bf29f3f2fad",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The norm-one determinant gives a rank-one unitary matrix with precisely the original determinant, furnishing the class character reading.",
+      "kind": "computation",
+      "uses": [
+        "input: norm-one determinant and determinant tie"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.TwV.exists_u1Af_det",
+          "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/AdelicChainDatumCharacterLawsJointKernel.lean",
+          "line0": 44,
+          "line1": 58
+        },
+        {
+          "name": "GlobalTheory.TwV.adLawAt_xiAd",
+          "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/AdelicChainDatumCharacterLawsJointKernel.lean",
+          "line0": 114,
+          "line1": 116
+        }
+      ],
+      "source": "notes/units/P090_round4.md",
+      "anchor": "For a unitary matrix in the specified finite",
+      "source_lines": [
+        31,
+        31
+      ],
+      "claim_sha256": "4f65e701a183219f5f6c775589a7392c1ba469b490df01d672fff2f5b68bfea0",
+      "passage_sha256": "44bf4ee92221f353a4bd0fd41eba676641eb4857cc796744f23284b4fa391a30",
+      "sha256": "f7570a9da6de19334384012c6a67a20271ebb850cec154b7bc75d574b57d9c89",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "6227be0ae7ad0d788f7e6929c48bb1c3c7db082001cd97c044343fb7dd977860",
+      "sources": [
+        {
+          "path": "notes/units/P090_round4.md",
+          "sha256": "338eabf954406999ee732655eedb38954c79f1b9b49b9b1aa5603684b046906c"
+        }
+      ],
+      "steps": {
+        "S1": "96099d350767d42af9a93da707f3e112a0c4a4a264543b4b63420bd942d9eaea",
+        "S2": "627ab3a9aaf973017ba1c1f5fe585942732585e32c75730dfcfa71874fcbe9a4",
+        "S3": "0370f50d5ed3b36f92965ca5ae0c240bb4a2532f7e27b4729ee3391d26d5ccdc",
+        "S4": "53a5dc2d693b5daba75fd0205b66b9b255db497e3c00edbc6bff5da032752a3b"
+      },
+      "step_texts": {
+        "S1": "The specified point of each class represents that class in the pinned adelic datum.",
+        "S2": "Independence of the kernel outside the bad components holds at matrix, first coupled and final steps.",
+        "S3": "At first coupling the value uses the second representative's coupling coset, and at the final step it uses the first representative's coset.",
+        "S4": "The norm-one determinant gives a rank-one unitary matrix with precisely the original determinant, furnishing the class character reading."
+      }
+    },
+    {
+      "edition_sha256": "3e8282b7bd791e11969ca09ae73df7ab17051ced3692890e62a8d58ca1feb426",
+      "sources": [
+        {
+          "path": "notes/units/P090_round4.md",
+          "sha256": "338eabf954406999ee732655eedb38954c79f1b9b49b9b1aa5603684b046906c"
+        }
+      ],
+      "statement_sha256": "9fd9a9a6bf98dafe515590bed48dd5c159b46d6758636c76ab3e49c93dc075e8",
+      "steps": {
+        "S1": "9fdfb0bcac0e0c22b201872ae791c7070ab7c11c1dc0eba65e2c4bb20e3178b2",
+        "S2": "68562344232adbe2146b2eb95478a363ae6b37c43f5dcdfa9a03c6e75915b8a7",
+        "S3": "6ff13307c7af7b350f83ea3406c3f5867c5e76142e269fb71f969bf29f3f2fad",
+        "S4": "f7570a9da6de19334384012c6a67a20271ebb850cec154b7bc75d574b57d9c89"
+      },
+      "step_texts": {
+        "S1": "The specified point of each class represents that class in the pinned adelic datum.",
+        "S2": "Independence of the kernel outside the bad components holds at matrix, first coupled and final steps.",
+        "S3": "At first coupling the value uses the second representative's coupling coset, and at the final step it uses the first representative's coset.",
+        "S4": "The norm-one determinant gives a rank-one unitary matrix with precisely the original determinant, furnishing the class character reading."
+      },
+      "step_passages": {
+        "S1": "34de8aec2e6c4693e757c1c2fb059699f9e2608c364f2b17b93008a7e61c56d5",
+        "S2": "c1b635ea7dc9d219d58f55be0e26b20a0c09ca2ee25c2497a1936db650a3ed49",
+        "S3": "2006c2454e1f3ad87ba78dbd94247bb938a2f1fb11150ede44aad34c242381b5",
+        "S4": "44bf4ee92221f353a4bd0fd41eba676641eb4857cc796744f23284b4fa391a30"
+      }
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "P036",
+  "title": "Counting equivariant characters in a cyclotomic layer",
+  "track": {
+    "primary": "ktheory",
+    "secondary": []
+  },
+  "statement": "Take a layer \\(F/L\\) with \\(L\\) totally complex, \\(E\\ge1\\),\n\\(a=\\kappa^E\\), and \\(b,B\\in\\mathbb N\\). Suppose every finite family\nof elements of \\(F^\\times\\) satisfying the divisor difference condition,\nwith pairwise distinct classes of \\(N_a(\\alpha)^{\\ell^b}\\) modulo\n\\(q\\)-th powers, has size at most \\(B\\). Let \\(\\mathcal H_q\\) consist\nof the functions on the prime ideals of \\(F\\) with values in\n\\(\\mathbb Z/q\\) that kill principal divisors and satisfy\n\\(\\phi(\\gamma^{-1}P)=a\\phi(P)\\). Writing \\(v=v_\\ell(E)\\) and\n\\(g=2[L:\\mathbb Q]+\\lfloor\\log_2 h_L\\rfloor+2\\), we have\n\\[\n \\mathcal H_q\\text{ finite},\\qquad\n |\\mathcal H_q|q^{r_2(L)}\n       \\le B\\,\\ell^{(b+v)g+c+v}.\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Take a cyclotomic layer $F/L$ over totally complex $L$, a positive exponent $E$ and nonnegative $b,B$.",
+    "The Few bound $B$ applies to finite families satisfying the divisor-difference condition and pairwise distinct prescribed norm classes."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.ZK.sCount",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/SelmerOrderCounts.lean",
+      "line0": 16,
+      "line1": 111,
+      "sha256": "b609ec60bcf992dfad3e6ecbfad1c5f1094e3a1a07756adf589676b08e0d22c2",
+      "dominated": 2223,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "7.13 (pn:P036)",
+      "pages": [
+        80,
+        80
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/P036.tex",
+      "section": "pn:P036",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L1",
+  "reviews": [
+    "reviews/R20_review.md"
+  ],
+  "prerequisites": [
+    "Z2.K2"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [
+    {
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "lines": [
+        112,
+        112
+      ],
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript.",
+      "verdict": "Exact statement comparison"
+    }
+  ],
+  "paper_id": "P036",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "counting-equivariant-characters-in-a-cyclotomic-layer",
+  "aliases": [
+    "Few bound",
+    "The finite count and the loss in the exponent",
+    "P036 Counting equivariant characters in a cyclotomic layer"
+  ],
+  "background": [
+    "Kummer theory",
+    "Equivariant character groups",
+    "Finite quotients"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "7.13 (pn:P036)",
+    "pages": [
+      80,
+      80
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "Z2.K2": "statement-reading"
+  },
+  "summary": "Suppose a cap is known for finite families separated by the specified power classes. The equivariant divisor characters then form a finite group with an explicit order bound, including losses from the twist and the class number. This turns a separation estimate into a character count."
+}

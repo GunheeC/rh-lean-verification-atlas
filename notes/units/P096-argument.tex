@@ -1,0 +1,73 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Manuscript v3, heading p. 148; original paper2/pending_p096.tex, SHA-256 afa227cf428f335f3d9be5e09c8e3f51c12c3d058ff5cbc6ebbd1f0445574726.
+\subsection{Candidate proof of equality away from the moved place (P096)}
+\label{sec:pending-p096}
+\noindent\textsf{P096. The Round 21 AI reviewer found the statement and argument correct and referred the candidate for separate cross-review.}
+Fix the data of \nodeid{P096}, put $n=N_i$, and write $v_0$ for the
+place of $F$ specified by the move. Let $L_c,L_{c'}\subset E^n$ be
+the two class lattices in the chosen coordinates.
+
+\begin{proof}[Candidate proof]
+If $i=0$ or $i=m$, the first clause of \code{AdC} supplies the
+endpoint level $U$ and representatives $y,y'$ of $c,c'$ in that
+level. If $0<i<m$, the second clause gives
+$\operatorname{chOf}_i(c')=\operatorname{chOf}_i(c)$. Use the
+chart at this common label, its level $U$, and its two representatives.
+In either case both classes use the same base lattice $B$. The level
+field \nolinkurl{Lb_fin} gives finite generation over $\mathcal O_E$,
+so its generators also generate the integral span after local extension.
+Writing a hat for the span over the integral finite adelic coefficient ring,
+the \nolinkurl{y_lat} field of the endpoint level or of the common chart gives
+$\widehat L_c=y\widehat B$ and $\widehat L_{c'}=y'\widehat B$.
+The one-place relation gives
+\[
+    \gamma_f y'=y\eta\kappa,\qquad
+    \kappa\in U,\qquad \eta_w=1\quad(w\ne v_0),
+\]
+where $\gamma_f$ is the diagonal image of the rational matrix.
+At each $w$ the local level lies in the stabilizer of the integral
+local span of $B$. Thus $\kappa_w$ preserves that span in both
+directions, since $\kappa_w^{-1}$ also belongs to the local level.
+
+Fix $Q$ over $w\ne v_0$. For a rational lattice $L$ write
+$L_Q^\wedge=\mathcal O_{E_Q}\cdot L\subset E_Q^n$. Evaluating adelic
+coordinates at $w$ gives coefficients in $E\otimes_F F_w\simeq\prod_{Q\mid w}E_Q$.
+Projection to the factor indexed by $Q$ sends the integral coefficients
+into $\mathcal O_{E_Q}$: the generators from $\mathcal O_E$ and from
+the integral adeles of $F$ are integral there. The
+$\mathcal O_{E_Q}$-span of the evaluated lattice is exactly
+$L_Q^\wedge$. Indeed its generators include the image of $L$, and
+every evaluated linear combination belongs to $\mathcal O_{E_Q}\cdot L$.
+The same reasoning applies to the integral local span at $w$. The
+representative identities therefore give
+$L_{c,Q}^\wedge=y_QB_Q^\wedge$ and
+$L_{c',Q}^\wedge=y'_QB_Q^\wedge$, with
+$\kappa_Q B_Q^\wedge=B_Q^\wedge$. Evaluation of the displayed
+one-place relation now yields
+\[
+  (\gamma L_{c'})_Q^\wedge
+     =\gamma y'_Q B_Q^\wedge
+     =y_Q\kappa_Q B_Q^\wedge
+     =L_{c,Q}^\wedge .
+\]
+
+To descend the equality, put $R=(\mathcal O_E)_Q$. For any full finite
+lattice $L\subset E^n$, $L_Q=R L$ is finite and torsion free over the
+DVR $R$. An $R$-basis is therefore also an $E$-basis of $E^n$.
+In that basis a rational vector in $L_Q^\wedge$ has coefficients in
+$E\cap \mathcal O_{E_Q}=R$, since the completed valuation restricts to
+the $Q$-valuation on $E$. Consequently $E^n\cap L_Q^\wedge=L_Q$.
+Both class lattices are finite and span $E^n$ by the class-lattice
+hypothesis and the coordinate isomorphism. The invertible rational
+matrix $\gamma$ preserves these two properties. Intersecting the
+completed equality with $E^n$ gives $(\gamma L_{c'})_Q=(L_c)_Q$.
+\end{proof}
+
+\noindent\small The two clauses are in
+\nolinkurl{IwasawaDecomposition/MemSmulLk.lean:397--403} and the adelic
+identity in \nolinkurl{HermitianColumns/CoordinateLatticeSelfDual.lean:17--21}.
+The general argument and its specialization \code{use₆} are in
+\nolinkurl{IwasawaDecomposition/AdelicConjugateCharacterStandardForms.lean:206--241}.
+The local product identification is \nolinkurl{GroundTheory.Global.SemiLocal.tensorEquiv'}
+in \nolinkurl{GroundTheory/GlobalFields/SemilocalAlgebras/Finite.lean:111--119}.
+\normalsize

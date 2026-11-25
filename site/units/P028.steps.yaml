@@ -1,0 +1,155 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "P028",
+  "edition_sha256": "9a1964a53288d3d03946f30035eb7e743d3e0fffe3bace86b19bb82feb8d1c25",
+  "note_sha256": "840c9c8f19a6ab1b511b6d26b516d4cd7d7885dcc5ad40800000c8eb6531d3aa",
+  "statement_sha256": "fa09cefb58ca4dcd6225fc4b00d124b154ca8e8413b152668ce34b020d79cd53",
+  "sources": [
+    {
+      "path": "notes/units/P028.tex",
+      "sha256": "840c9c8f19a6ab1b511b6d26b516d4cd7d7885dcc5ad40800000c8eb6531d3aa"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Each integral point derivation vanishes on the saturation of the square of the augmentation ideal.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: integral lift of derivations"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Alg.M.mprime_holds",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/Mprime.lean",
+          "line0": 43,
+          "line1": 46
+        }
+      ],
+      "source": "notes/units/P028.tex",
+      "anchor": "A point derivation kills \\((\\ker x)^2\\); its integral lift kills the",
+      "source_lines": [
+        7,
+        35
+      ],
+      "claim_sha256": "bbca5607760dcbd26e973f55b38e04fc4f5d4a99eb859ac0d9897ac53aa2856a",
+      "passage_sha256": "b8096ee29246c6a0f69dc6321800cec955d642f4928cc81e51b4b08e3c2fbf0f",
+      "sha256": "cd5e5832921a1b873164f0acca915106810861aaba507b3ebcdc7456a238bf60",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Its values define a functional on the cotangent quotient, and those functionals separate the injected elements.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "input: weight constraint"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Alg.M.mprime_holds",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/Mprime.lean",
+          "line0": 47,
+          "line1": 73
+        }
+      ],
+      "source": "notes/units/P028.tex",
+      "anchor": "gives a functional on the displayed quotient \\(Q\\). The map to",
+      "source_lines": [
+        7,
+        35
+      ],
+      "claim_sha256": "e10571eeaca23b8c86508b7ab534992176977621574636466707e006764d61f7",
+      "passage_sha256": "b8096ee29246c6a0f69dc6321800cec955d642f4928cc81e51b4b08e3c2fbf0f",
+      "sha256": "4ad2ef062e676c51506d4f170e0c02c86d8361a4a3864b9ff8895cd0b2dbd6c7",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The length of the finite-torsion dual is bounded by the length of the quotient.",
+      "kind": "inequality",
+      "uses": [
+        "S2",
+        "standard: DVR composition series"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Alg.M.mprime_holds",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/Mprime.lean",
+          "line0": 74,
+          "line1": 79
+        }
+      ],
+      "source": "notes/units/P028.tex",
+      "anchor": "is immediate. Otherwise induction on a composition series bounds",
+      "source_lines": [
+        7,
+        35
+      ],
+      "claim_sha256": "6a17772ea1ca030a192a479b0e12cef9167aac5da75abc118b452fc56bda9461",
+      "passage_sha256": "b8096ee29246c6a0f69dc6321800cec955d642f4928cc81e51b4b08e3c2fbf0f",
+      "sha256": "129709b2a8388619fc261058047b347d3ff5662d234040de8b91b7300febeac6",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "Cardinality comparison converts the additive injection into the required length inequality.",
+      "kind": "inequality",
+      "uses": [
+        "S2",
+        "S3"
+      ],
+      "lean": [
+        {
+          "name": "len_le_of_inj",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/Mprime.lean",
+          "line0": 28,
+          "line1": 36
+        },
+        {
+          "name": "UpperTheory.V.Alg.M.mprime_holds",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/Mprime.lean",
+          "line0": 79,
+          "line1": 80
+        }
+      ],
+      "source": "notes/units/P028.tex",
+      "anchor": "one. Every finite-length module has cardinality equal to the residue",
+      "source_lines": [
+        7,
+        35
+      ],
+      "claim_sha256": "69b2064c8c98cdad836fddc0a9fec65e4f061945c84512156bb8c67bac9ab4c4",
+      "passage_sha256": "b8096ee29246c6a0f69dc6321800cec955d642f4928cc81e51b4b08e3c2fbf0f",
+      "sha256": "fef9cbbd0a5a469da4547dcbf2a968a551f81e500ef6f7063ec3bb49d27b3d59",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "edd5638002d5ba4ca771044041b8ffddc89910b91b234598a82ab4bbafab880e",
+      "sources": [
+        {
+          "path": "notes/units/P028.tex",
+          "sha256": "840c9c8f19a6ab1b511b6d26b516d4cd7d7885dcc5ad40800000c8eb6531d3aa"
+        }
+      ],
+      "steps": {
+        "S1": "c96389b7a633ee4ebf04b343eabc7e30043010d1ae09bf443b0b10ee2e4ae4a1",
+        "S2": "84708c3a3508f0bd448158c9d6a5034bee0586b2513be04c5400b1fada455999",
+        "S3": "09662bec086f51c269adc119aacb8ae77f744a4a6f94209a1e4b4c08b2a107c4",
+        "S4": "c1c2c3dcd49e538f4b9e620b33e569527ab363a0c6f65d39345b9c28cf71f6b6"
+      },
+      "step_texts": {
+        "S1": "Each integral point derivation vanishes on the saturation of the square of the augmentation ideal.",
+        "S2": "Its values define a functional on the cotangent quotient, and those functionals separate the injected elements.",
+        "S3": "The length of the finite-torsion dual is bounded by the length of the quotient.",
+        "S4": "Cardinality comparison converts the additive injection into the required length inequality."
+      }
+    }
+  ]
+}

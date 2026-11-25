@@ -1,0 +1,128 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "B07",
+  "edition_sha256": "79646529b52b51cb6e56f7830dbb215accb4b7701e3dc7f571b2895c4ca54202",
+  "note_sha256": "9d8d22bb743577c04607440890aebb581047e653828924c3160ffc08d9417952",
+  "statement_sha256": "9045f2a2ea640445ed711a740ee56f8e73faf0ad9eec2fffbc82ecfe6ae86abd",
+  "sources": [
+    {
+      "path": "notes/units/P015-argument.tex",
+      "sha256": "9d8d22bb743577c04607440890aebb581047e653828924c3160ffc08d9417952"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The character construction fixes the field-frame constant before the two primes and the eventual frame are chosen.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: field extension and admission data"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Top.supplyChi",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/SupplyChi.lean",
+          "line0": 8,
+          "line1": 16
+        }
+      ],
+      "source": "notes/units/P015-argument.tex",
+      "anchor": "For the same $\\psi$, \\nolinkurl{fieldChi} supplies $c\\ge1,e_",
+      "source_lines": [
+        56,
+        73
+      ],
+      "claim_sha256": "fefe1acad24fed89950b7ffd70d577025930cd6334a55ec98693595124a3f352",
+      "passage_sha256": "bdd6d29c7289df9c71be95d96be9c5d1ddf95ad5f788fac3ce6b7d422ff5450c",
+      "sha256": "8b5f766bb064c8a106228bd843c84c9899cb55976fb2dbbfd83a71792c61257e",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Rescaling the point on the Selmer interval makes the dyadic frame order fall between the two required powers at the new scale.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "P013"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Top.supplyChi",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/SupplyChi.lean",
+          "line0": 8,
+          "line1": 16
+        }
+      ],
+      "source": "notes/units/P015-argument.tex",
+      "anchor": "\\begin{proof}\nWrite $a=2+8\\varepsilon$, $k=c^{1/a}\\ge1$. Cho",
+      "source_lines": [
+        75,
+        103
+      ],
+      "claim_sha256": "cf55fee86d751094d53aca30f429f2089755cde2b777f0ea6fcc6b1ea16c1ce4",
+      "passage_sha256": "2f12b7bad58fa4515ed4303d7cc1b8bd8772380a903bca387b47b502f4a4146c",
+      "sha256": "411cfbb6ec25f0cc56333329d69a6816b42e29541ad4199cb1c82ad7a5336149",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The good prime pair and the admitted extension produce the selected host on the same frame as the rank tuple.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S2",
+        "D513",
+        "D511"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Top.supplyChi",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/SupplyChi.lean",
+          "line0": 8,
+          "line1": 16
+        }
+      ],
+      "source": "notes/units/P015-argument.tex",
+      "anchor": "Fix $C_0\\ge\\max(1,J,\\Lambda.o,8M)$ before selecting a scale.",
+      "source_lines": [
+        105,
+        136
+      ],
+      "claim_sha256": "8959bdbb9e5398848b45cc00e299e477d03aaf373699875c5cbd04a08e1e28ac",
+      "passage_sha256": "e4f576de8279dbfffa196e44dae8db8459a1133b8b258baa5b25ff105170bc60",
+      "sha256": "4107d137cf0bb828b6d87198a86188d08ad2756c8bf1197d2aff3cc9ad0bfc53",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The chosen host satisfies both the complementary character bounds and the length bound obtained by restricting the twist cutoff.",
+      "kind": "assembly",
+      "uses": [
+        "S3",
+        "P013"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Top.supplyChi",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/SupplyChi.lean",
+          "line0": 8,
+          "line1": 16
+        }
+      ],
+      "source": "notes/units/P015-argument.tex",
+      "anchor": "Every prime divisor of $Q_S$ divides $2M$ by the displayed l",
+      "source_lines": [
+        138,
+        153
+      ],
+      "claim_sha256": "db73c947a5935010c87ed01fc6a19bbcd4af918f39388bebb02dbcc25847e2c3",
+      "passage_sha256": "94ceeae1661c4dbd17fb60079ed4b0964740e82fd1cf28d14fef70cbb14d8373",
+      "sha256": "22e14abe26399e5ab0baf6f17e4ebcc991e56636819583ac8c9d954df61652f2",
+      "ai_review": []
+    }
+  ],
+  "history": []
+}

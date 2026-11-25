@@ -1,0 +1,30 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit P023. Local manuscript v3, item 6.33, heading on printed PDF p. 67.
+% Deduction.zeroFree_of_rpow_window
+% paper2/upper.tex:613–636. Verbatim excerpt; SHA-256 ea804308b4450f1e00c98a71577d41d5df69e5e6537117716b96b2d069ee4028.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+\begin{theorem}[Power windows for a positive character family]\label{pn:P023}
+
+\par\noindent{\footnotesize \nolinkurl{ZeroFreeOfRpowWindow.lean:11}, \nolinkurl{lemmaL.lean:13}, \nolinkurl{WindowHypOfRpow.lean:27}, \nolinkurl{WindowHypUOfWindowHyp.lean:29}.}\par
+Let $F$ be a character family, $0<\theta<1$, $\delta>0$ and $C\in\mathbb R$. Assume that for every
+$Y_0$ there is $Y\ge Y_0$ such that
+\[
+\mathcal G_F(y)\le C\,y^{\theta}\qquad\text{for all }y\in[Y,Y^{1+\delta}].
+\]
+Then $F$ is zero-free above $\theta$.
+\end{theorem}
+\nodestatus{P023}
+\begin{proof}
+Let $g(u)=\mathcal G_F(e^{u})$. We check $\mathrm W(g,\theta,\delta)$. Given $\eta>0$ and $U_0$,
+choose $Y\ge\max(e^{U_0},e)$ as in the hypothesis and so large that
+$|C|\delta\log Y\le Y^{\eta}$; put $U=\log Y\ge1$ and $R(u)=|C|e^{\theta u}$ on $[U,(1+\delta)U]$.
+Then $g\le R$ there, $R\ge0$, and
+$\int_U^{(1+\delta)U}R(u)e^{-\theta u}du=|C|\delta U\le e^{\eta U}$. By
+Proposition~\ref{prop:E-poledata-family} and \nodeid{P022},
+$\operatorname{Re}\rho\le\theta$ for all $\rho\in Z_F$. Now let $L(s,\chi_i)=0$ with
+$\operatorname{Re}s>\theta$. If $\operatorname{Re}s\ge1$ this contradicts the non-vanishing on
+$\operatorname{Re}s\ge1$ (Mathlib, \nolinkurl{NumberTheory/LSeries/Nonvanishing.lean}, the Dirichlet and zeta nonvanishing theorems); otherwise $s\in Z_F$ and
+$\operatorname{Re}s\le\theta$, a contradiction.
+
+\end{proof}

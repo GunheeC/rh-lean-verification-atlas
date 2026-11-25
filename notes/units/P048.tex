@@ -1,0 +1,23 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit P048. Local manuscript v3, item 7.25, heading on printed PDF p. 89.
+% GlobalTheory.PerTwClose.twistedPeriodAdmissible_of_rowInt
+% paper2/inputs_two.tex:121–137. Verbatim excerpt; SHA-256 403770d7790692cc8740c7c818e6725673f322fd198e10b3b2ad4d12b374508a.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+\begin{formalstatement}[One twisted period with simultaneous local bounds]\label{pn:P048}
+Take a base and pre-chart, an admissible column record \(I\) with its pinned frames and coefficients, its stage laws \(l\), later chart data and the level-zero lattice identification. Assume that the reference and twisted rows on this choice are integral. Choose the coefficient and tuple data with \(t_p.\xi=I.\xi\), and any divisor datum \(Y\). Under the stabilizer-denominator identity, for every word \(u\), used nonreference place tuple \(\mu\), integral point \(x\) of the twisted point lattice and \(F\) in the indicated ambient carrier and \(V_0(\mu)\), there exists \(y\in L_L\) such that its chosen complex image is the twisted period of the embedded \(x\) and the identified \(F\), and for every \(w\) with \(p_w\notin Q_Y(\mu)\),
+\[
+       y=0\quad\text{or}\quad v_w(y)\ \ge\ -e_w v_{p_w}(D_{\Gamma,u}).
+\]
+\end{formalstatement}
+\nodestatus{P048}
+The Lean wrapper calls four comparisons, P054--P057, on common witnesses. The outline below summarizes the existing reconstruction of those choices and the final finite sum.
+\begin{outline}
+Choose the reference charts and forms together with their standardness and level properties, the common generator and its reference character. Changing the zero level preserves the base lattice, its subgroup, representatives, stabilizers and generator frame, hence its carrier comparisons still hold. The equality of uniformizers converts the annihilation at zero into the input for the cofactor and residue comparisons. These furnish a common level-zero element and the tied standard column datum. Equality of the tuple characters identifies the auxiliary-place tests for that datum. The twisted chain then supplies a common top point, level projections, point lifts, evaluations and their compatibilities on the same charts. This sequence of choices is given in blueprint \bploc{r12:assembly}.
+
+Choose an orthonormal frame of the primed space at each embedding. The polynomials representing the values lie in the indicated weight space under every permitted change of frame. This uses scalar extension of the transported integral Weyl lattice and its dual (blueprint \bploc{r12:weyl}). Restriction to a single decoration class is a coordinate projection. Different classes pair to zero in the weighted inner product, so the period is a sum of individual class contributions. For each class \(c\), the common row and point comparisons supply a numerator \(b_c\in L_L\). Its row lies in the localized coefficient lattice and the point lies in the opposite lattice. Evaluation in the transported dual frames thus makes \(b_c\) integral at every allowed \(w\), including the zero case. With \(h_c=|\mathrm{Stab}(c)|\) the required field element is
+\[
+                 y=\sum_c b_c/h_c.
+\]
+The complex realization of this sum is the given period by the coordinate decomposition. Since \(h_c\mid D_{\Gamma,u}\), each nonzero summand has valuation at least \(-e_wv_{p_w}(D_{\Gamma,u})\); the ultrametric inequality passes the bound to their sum. The representatives and numerators were fixed before \(w\) was chosen. The round 14 AI cross-review accepted the Z4.4 derivation under its stated assumptions. That record distinguishes proof-level rechecking of transported duality from statement checks of nine subsidiary declarations.
+\end{outline}

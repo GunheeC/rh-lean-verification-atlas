@@ -1,0 +1,90 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D155",
+  "title": "Fubini–Study normalization of Chow height",
+  "track": {
+    "primary": "arakelov",
+    "secondary": [
+      "theta"
+    ]
+  },
+  "statement": "The published Hodge-bundle package gives the Fubini–Study expression for the height of the common Chow form.\n\\[\n\\mathrm{PublishedHodgeBundleTheorems}\\ \\Longrightarrow\\ \\mathrm{FubiniStudyChowHeight}.\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume the published Hodge-bundle record.",
+    "Use an integral arithmetic projective model, conjugation-compatible frame matrices and a Chow form of its generic cycle."
+  ],
+  "lean": [
+    {
+      "name": "FubiniStudyChowHeightFormula₂.fubiniStudy_chowHeight_formula",
+      "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/HodgeBundleWeights/FubiniStudyChowHeightFormula.lean",
+      "line0": 17,
+      "line1": 18,
+      "sha256": "0bb29f3202fc1b662285ddf5c72e98141b12a0519d384554a999f7c07a99013b",
+      "dominated": 0,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/D155_round4.md",
+      "section": "D155 · Fubini–Study normalization of Chow height",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "G.165 (decomp:D155)",
+      "pages": [
+        198,
+        198
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D155.tex",
+      "section": "decomp:D155",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": 2,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "D155",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "fubinistudy-normalization-of-chow-height",
+  "aliases": [
+    "fubiniStudy_chowHeight_formula",
+    "D155 Fubini–Study normalization of Chow height"
+  ],
+  "background": [
+    "Chow heights",
+    "Fubini–Study metrics"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.165 (decomp:D155)",
+    "pages": [
+      198,
+      198
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "review_status": "pending_review",
+  "summary": "A generic Chow form and the Fubini–Study metric on the projective coordinates give two descriptions of one self-intersection. The normalization includes the absolute degree of the number field and uses the same matrices that specified the metric at infinity."
+}

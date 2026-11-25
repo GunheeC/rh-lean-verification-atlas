@@ -1,0 +1,100 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "Z1.1.03",
+  "edition_sha256": "76b41deb5ddab04a4fbdc1a3fd2f40ad5944e8f888fbf095df218c955bf1f73c",
+  "note_sha256": "c32674047d88e3712334b313a904baaa35fe49949ee4989069e300830da338f5",
+  "statement_sha256": "1a301c0a05eec4e47bf9fb102ca25d226e3f09e2e459cbe5d3cf6c1ab5e19d37",
+  "sources": [
+    {
+      "path": "notes/blueprint/Z1.1.03.tex",
+      "sha256": "c32674047d88e3712334b313a904baaa35fe49949ee4989069e300830da338f5"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "A prime above ell contains the level, so the pointwise comparison there yields a global witness with its away-from-level data.",
+      "kind": "assembly",
+      "uses": [
+        "input: level divisible by ell"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Z.Sym.W.adjoint_automorphy_w_of_pure_weight_adjoint_lift",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/MemOfUnder.lean",
+          "line0": 101,
+          "line1": 114
+        }
+      ],
+      "source": "notes/blueprint/Z1.1.03.tex",
+      "anchor": "Choose an embedding of the number field in \\(\\overline{\\mathbb Q}_\\ell\\).",
+      "source_lines": [
+        7,
+        27
+      ],
+      "claim_sha256": "c81a2e6a388972c8d6e50c34b02286009c6faddfb1df5d62d40fda1a82a6e348",
+      "passage_sha256": "b3fc760602253383405acdf34b0c751e80bf7280e86cea6e90d3420309ce8b85",
+      "sha256": "339cc26009486d36f845e1d3610e55f39cc9983157bab0b0b2bc658b0887de67",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "At each place dividing the level the pointwise comparison can supply a separate local witness.",
+      "kind": "case-split",
+      "uses": [
+        "S1",
+        "input: pointwise core comparison"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Z.Sym.W.adjoint_automorphy_w_of_pure_weight_adjoint_lift",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/MemOfUnder.lean",
+          "line0": 101,
+          "line1": 114
+        }
+      ],
+      "source": "notes/blueprint/Z1.1.03.tex",
+      "anchor": "\\(M\\). For any other place \\(w\\), use those data if \\(w\\nmid M\\). If",
+      "source_lines": [
+        7,
+        27
+      ],
+      "claim_sha256": "d33ad052602e433c032dd200e1aa6e4c44a4c44119630ee6605f20b57fd554bf",
+      "passage_sha256": "b3fc760602253383405acdf34b0c751e80bf7280e86cea6e90d3420309ce8b85",
+      "sha256": "629bfe11b07fa3b44446c31972997fadb00863389a29420d0f014a140a07ee57",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The away witness and the chosen ramified witnesses satisfy the placewise domain of gluing.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "S2",
+        "input: local gluing"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Z.Sym.W.adjoint_automorphy_w_of_pure_weight_adjoint_lift",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/MemOfUnder.lean",
+          "line0": 101,
+          "line1": 114
+        }
+      ],
+      "source": "notes/blueprint/Z1.1.03.tex",
+      "anchor": "The gluing input accepts a witness separately for every \\(w\\), so this",
+      "source_lines": [
+        7,
+        27
+      ],
+      "claim_sha256": "a6a51f39fe381b9c8ef6a6ee354ceb862e9953eedd8a353e737e673507a46c89",
+      "passage_sha256": "b3fc760602253383405acdf34b0c751e80bf7280e86cea6e90d3420309ce8b85",
+      "sha256": "bc07d990a3574448b6c4f6f62fdd6fafdcd03aaa1de0bdfd4103b9661057d868",
+      "ai_review": []
+    }
+  ],
+  "history": []
+}

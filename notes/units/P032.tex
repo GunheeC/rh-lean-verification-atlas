@@ -1,0 +1,62 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit P032. Local manuscript v3, item 7.9, heading on printed PDF p. 77.
+% UpperTheory.V.ZK.sClassOf
+% paper2/inputs_one.tex:377–432. Verbatim excerpt; SHA-256 270207101f563eb23aa0c1798c475898de913c6db3d696cbf6edc756a7b0ef0e.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+\begin{formalstatement}[An integral cycle with uniform residue evaluations]\label{pn:P032}
+Assume functoriality and the boundary identities for chains and prisms,
+the prism composition law, the specified basic bar cycle and its
+coefficient relation, the interpolation distribution, and the Steinitz
+transport hypothesis. In any layer as above take \(E=e+1\), \(e\ge0\),
+\(m=2E+1<\ell^c\), and \(a=\kappa^E\). For any \(\alpha\in F^\times\)
+satisfying the difference condition there are \(N\), a degree-\(m\)
+bar cycle \(y\) on \(\mathrm{GL}_N(\mathcal O_L)\) over
+\(\mathbb Z/q\), and \(0\ne b\in\mathcal O_F\) such that the following
+holds. For every reduction \(r:\mathcal O_F\to k\) to a finite field
+which is onto on \(\mathcal O_L\) and has \(r(b)\ne0\), for every
+character \(v:k^\times\to\mathbb Z/q\), and for every additive
+evaluating family \(\theta\) satisfying the scalar law for \(r(\zeta)\),
+there is a residue \(u\in k^\times\) of \(N_a(\alpha)\) for which
+\[
+ \theta\bigl(\operatorname{red}_r y\bigr)=
+ \prod_{\substack{0\le j<m\\j\ne E}}(a-\kappa^j)\,v(u)
+ \quad\text{in }\mathbb Z/q.
+\]
+\end{formalstatement}\nodestatus{P032}
+\begin{outline}
+We recall the construction in Blueprint Z2.K2~\bploc{sec:P-r4-K2}. Write
+\(p(Y)=\prod_{0\le j<m,\,j\ne E}(Y-\kappa^j)=\sum_i B_iY^i\)
+and form \(\beta=\prod_i(\gamma^{-i}\alpha)^{B_i}\).
+Writing \((Y-a)p(Y)=\sum A_iY^i\), substitution of the difference
+condition gives \(\operatorname{ord}_P\beta=\sum_iA_iD(\gamma^iP)\).
+In the interpolation distribution, change coordinates by
+\(\gamma^{-i}\) on the orbit of weight \(\kappa^i\). This is
+well-defined since \(\kappa\bmod q\) and \(\gamma\) both have order
+\(\ell^{\nu-c}\). The designated character block then has divisor
+\(\operatorname{div}\beta\); the other total block divisors vanish.
+Steinitz transport chooses matrices carrying the corresponding
+lattices with determinant \(\beta\) on that block and \(1\) elsewhere.
+
+Let \(\sum n_t(d_t)_*z=\partial b'\) be the given relation, choosing
+a unit coefficient \(n_{t_0}\). Apply the two lattice actions
+\(\sigma,\rho\) to \(b'\) and close their difference with the sum of
+transport prisms on \((\sigma d_t)_*z\), weighted by \(n_t\). The
+prism boundary relation cancels the difference term by term.
+Divide the resulting cycle by \(n_{t_0}\) and add a trivial
+complement to the projective lattice to place it in a free lattice.
+The complement contributes zero in positive-degree homology.
+
+Choose one denominator below every prime in the support of \(D\)
+and clearing the kernel and cokernel of the integral map underlying
+\(F\otimes_LF\simeq\prod_{\tau\in\operatorname{Gal}(F/L)}F\).
+This makes all conjugates of the required elements units, splits the
+coordinates for every allowed reduction, and equalizes the localized
+lattices. If \(\omega(\tau)\) is the exponent of \(\tau\) on \(\zeta\),
+the scalar evaluation and the determinant calculation now give
+\(S(\beta)\), where \(S(t)=\sum_\tau\omega(\tau)^E v(r(\tau t))\).
+Reindexing yields \(S(\gamma^{-i}\alpha)=a^iS(\alpha)\). Hence
+\(S(\beta)=p(a)S(\alpha)=p(a)v(r(N_a(\alpha)))\), with the last
+residue interpreted in the common localization. The construction of
+\(y,b\) precedes \(r,v,\theta\).
+\end{outline}

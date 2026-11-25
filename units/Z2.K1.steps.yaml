@@ -1,0 +1,184 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "Z2.K1",
+  "edition_sha256": "a3d8ae1d6483d3f78525c6d6a1f5269ba181541cb2ee7b1d8fbf02eff2d884c9",
+  "note_sha256": "12252e29520b63481c5d621de73cc359037f443ad478b981c6961b0cd83e8d4f",
+  "statement_sha256": "d9c57ed660a5096ee809b8ffd7631883e2980269cbf5f8fae00c6c27770cd4a3",
+  "sources": [
+    {
+      "path": "notes/blueprint/Z2.K1.tex",
+      "sha256": "12252e29520b63481c5d621de73cc359037f443ad478b981c6961b0cd83e8d4f"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "For the initial root exponent, the valuation of successive prime-power iterates increases by one at each step.",
+      "kind": "computation",
+      "uses": [
+        "standard: binomial valuation in principal units"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Tower.cycRange",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/NumberFieldTowers/CycRange.lean",
+          "line0": 9,
+          "line1": 62
+        }
+      ],
+      "source": "notes/blueprint/Z2.K1.tex",
+      "anchor": "Write $c_0$ for the initial maximum root exponent. The cyclotomic image",
+      "source_lines": [
+        7,
+        30
+      ],
+      "claim_sha256": "b3431e88f457fc70d17753fb73c05f5aa12a50da52450e3b0a894996a76949b2",
+      "passage_sha256": "06d15c1f4b7b6c7857d0c2e623c750f6e386f785d5b1fbb2ef20535d46cc3cd2",
+      "sha256": "a657bd9b78145760941fe95e6c0da2232dfc0913bb28660c619971251d9bcbb8",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The chosen cyclotomic generator raised to the layer index power generates the subgroup over that layer.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S1"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Tower.layerUniq",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/NumberFieldTowers/LayerUniq.lean",
+          "line0": 25,
+          "line1": 40
+        }
+      ],
+      "source": "notes/blueprint/Z2.K1.tex",
+      "anchor": "Choose $\\gamma$ acting by $1+\\ell^{c_0}$, so the",
+      "source_lines": [
+        7,
+        30
+      ],
+      "claim_sha256": "fced50faa0ac676a6baa15e42ba0b5e8b0bd3dd1de19278b33342e42e1dbc688",
+      "passage_sha256": "06d15c1f4b7b6c7857d0c2e623c750f6e386f785d5b1fbb2ef20535d46cc3cd2",
+      "sha256": "fd0d7f4c757007dbf9cb5b66678e20659c2f32ccbecff2f23909a2d1b3357c55",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Continuous characters of the infinite-layer group vanishing on the decomposition groups form the module on which the layer quotient acts.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: unramified-outside-the-prime quotient"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Kum.XDual",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/KummerTheory/Mk0IdMapCongr.lean",
+          "line0": 90,
+          "line1": 99
+        }
+      ],
+      "source": "notes/blueprint/Z2.K1.tex",
+      "anchor": "outside $S$ is still unramified there. Put $H=\\operatorname{Gal}(L_S/L_\\infty)$,",
+      "source_lines": [
+        32,
+        45
+      ],
+      "claim_sha256": "d0b50ab7ea5a6bf6ea344ff64d1e27199d33deaf8bade9382d763ecfcc20620d",
+      "passage_sha256": "88fe2f9bc641b47b2849bf83cdf14f8361f698fc8a2774e76906fcc746ffaafb",
+      "sha256": "d1a2cbee3f8286674132a093326cad209aed02e5353baf36fe64f6834b3fc6c3",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "Restriction identifies the finite-layer localization kernel with invariant infinite-layer characters using both global lifting and local injectivity.",
+      "kind": "assembly",
+      "uses": [
+        "S2",
+        "S3",
+        "standard: inflation-restriction"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Kum.resInfInj",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/KummerTheory/ResInfInj.lean",
+          "line0": 58,
+          "line1": 171
+        },
+        {
+          "name": "UpperTheory.V.Kum.resInfOnto",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/KummerTheory/ResInfOnto.lean",
+          "line0": 102,
+          "line1": 166
+        }
+      ],
+      "source": "notes/blueprint/Z2.K1.tex",
+      "anchor": "Restriction identifies the localization kernel with $B^{\\Gamma_m}$.",
+      "source_lines": [
+        47,
+        68
+      ],
+      "claim_sha256": "4d2aba59a297c9088e47f02b1f65dccbecd8759390172f116af98eae39ca4193",
+      "passage_sha256": "16e8f8db70ebb5ef98f1a00d31923764a77c3b4c2bbceef3e4efb32fc9ca5f74",
+      "sha256": "a7d9b674fe86d5d0b1ac287c421b2d30d61a3c5d5381dd99ede481c0a6a6619a",
+      "ai_review": []
+    },
+    {
+      "id": "S5",
+      "status": "active",
+      "claim": "Dualizing invariants converts the generator kernel into its coinvariant quotient without changing the extended length.",
+      "kind": "assembly",
+      "uses": [
+        "S4",
+        "standard: duality for divisible modules"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Tower.cokerDual",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/NumberFieldTowers/CokerDual.lean",
+          "line0": 8,
+          "line1": 19
+        }
+      ],
+      "source": "notes/blueprint/Z2.K1.tex",
+      "anchor": "Take $X=\\operatorname{Hom}_{\\mathbf Z_\\ell}(B,\\mathbf Q_\\ell/\\mathbf Z_\\ell)$,",
+      "source_lines": [
+        70,
+        83
+      ],
+      "claim_sha256": "143b11f79bdeedeafec015434e115ee0216300695626da849c0a84de187e5ac4",
+      "passage_sha256": "2a810f22706062efbb901aab1e0c9584d33fdbf8807de678911a303953b82301",
+      "sha256": "b2d0b591dec47139231747ef2ab158fa0959efdbae0445ac71adb3467da18ede",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "cb5858fb1f39df3cb20251ef1a4b8bc484189a523e017fe814c174858197ff2a",
+      "sources": [
+        {
+          "path": "notes/blueprint/Z2.K1.tex",
+          "sha256": "12252e29520b63481c5d621de73cc359037f443ad478b981c6961b0cd83e8d4f"
+        }
+      ],
+      "steps": {
+        "S1": "71b97fa525b2ba0d9ec7e15acaeabe3ff9456e83a708e8f8f947c9dc98c136e1",
+        "S2": "fd0d7f4c757007dbf9cb5b66678e20659c2f32ccbecff2f23909a2d1b3357c55",
+        "S3": "d1a2cbee3f8286674132a093326cad209aed02e5353baf36fe64f6834b3fc6c3",
+        "S4": "b49d36db597489e2b18947267c38ee2d07550d9caad910214c78d52c4b75f5cb",
+        "S5": "b2d0b591dec47139231747ef2ab158fa0959efdbae0445ac71adb3467da18ede"
+      },
+      "step_texts": {
+        "S1": "For the initial root exponent, the valuation of successive prime-power iterates increases by one at each step.",
+        "S2": "The chosen cyclotomic generator raised to the layer index power generates the subgroup over that layer.",
+        "S3": "Continuous characters of the infinite-layer group vanishing on the decomposition groups form the module on which the layer quotient acts.",
+        "S4": "Restriction identifies the finite-layer localization kernel with invariant infinite-layer characters using both global lifting and local injectivity.",
+        "S5": "Dualizing invariants converts the generator kernel into its coinvariant quotient without changing the extended length."
+      }
+    }
+  ]
+}

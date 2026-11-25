@@ -1,0 +1,31 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Audit one export and distinguish three verification questions · RH verification atlas</title><link rel="stylesheet" href="../../atlas.css"></head><body><header><div class="bar"><a class="brand" href="../../index.html">RH verification atlas</a><nav aria-label="Atlas navigation"><a href="../../index.html">Home</a> <a href="../../STATUS.html">Status</a> <a href="../../MAP.html">Map</a> <a href="../../dashboard/index.html">Tracks</a> <a href="../../lookup/search.html">Search declarations</a></nav></div></header><main><p class="notice">AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved</p>
+<h1 id="audit-one-export-and-distinguish-three-verification-questions">Audit one export and distinguish three verification questions</h1>
+<p><strong>Starter for the formal track.</strong> Atlas units <a href="../../units/P001.html">P001</a>. The local reading target is <code>riemannHypothesis</code> (exact head). P001 is the public export inspected in this byte audit.</p>
+<p><strong>Background.</strong> Directory navigation, SHA-256, and the distinction between the type of a Lean declaration, its dependencies, and a compiled object. No mathematical background beyond the statement being inspected is required.</p>
+<p><strong>Reading target.</strong> Check the name and normalized range hash of one public export, then compare the exact scope of its statement with the dated evidence for replay and comparison.</p>
+<p><strong>Reading order.</strong> Read the chapter overview and the five declarations. Trace P001 to its single source line and use the local check below. Compare the recorded results for dependencies and proof exports with the source claim you have actually checked.</p>
+<p><strong>Scope and prerequisites.</strong> The byte comparison is fully repeatable from the fixed source checkout. A kernel replay and an independent mathematical proof are outside this exercise. The blueprint describes prior replay results, not a replay performed by the atlas.</p>
+<p><strong>Edition.</strong> Blueprint v13, Ch. 1 and §2.1, printed pp. 1–7 (7 actual pages; PDF pages 26–32). The page images preserve the typeset formulas. On a shared boundary page, adjoining material may be visible; the TeX selection below marks the exact span.</p>
+<p><a href="excerpt.tex">TeX excerpt with portable source-root references</a> · <a href="../../data/editions.json">Edition register</a></p>
+<p>Original PDF SHA-256 <code>d9dcb73f10a5829865f9246409d886c16cb1d2087717adf7758f154257a28af4</code>.</p>
+<p><strong>Pinned Lean source.</strong> <code>Main.lean:4–4</code>, range SHA-256 <code>71b3d50605ddda7c0c74fbbf5cca47165a4cfa2ad72f50f36b907ecac7ff505a</code>. The <a href="../../data/pins.json">pin register</a> records the graph and dominated line count.</p>
+<ul><li><code>blueprint/ch_O.tex:1–133</code>, selected source bytes SHA-256 <code>3975f2747b3a03f1ae66bf0f38a63164db86e1f587b77eaefa535a89647f2efa</code>.</li><li><code>blueprint/ch_E.tex:1–236</code>, selected source bytes SHA-256 <code>ac99195e5a3a2aa67a19f12d0b60422e57c4cb2435d35bffa15c2e4973f6cbbc</code>.</li></ul>
+<p>The selected-source fingerprints above identify the original manuscript fragments. The distributed TeX uses <code>LEAN_SRC</code> for the local source root.</p>
+<h3 id="repeat-the-local-export-check">Repeat the local export check</h3>
+<p>From the atlas root, with <code>LEAN_SRC</code> set as in the <a href="procedures.html">procedures</a>, run this read-only check. The hash excludes a final newline, matching the atlas range convention.</p>
+<pre><code>import hashlib, json, os
+from pathlib import Path
+
+entry = json.loads(Path(&quot;data/pins.json&quot;).read_text())[&quot;anchors&quot;][&quot;riemannHypothesis&quot;]
+source = Path(os.environ[&quot;LEAN_SRC&quot;]) / entry[&quot;file&quot;]
+lines = source.read_text().splitlines()[entry[&quot;line0&quot;] - 1:entry[&quot;line1&quot;]]
+assert hashlib.sha256(&quot;\n&quot;.join(lines).encode()).hexdigest() == entry[&quot;sha256&quot;]
+print(entry[&quot;file&quot;], entry[&quot;line0&quot;], entry[&quot;line1&quot;], *lines, sep=&quot;\n&quot;)</code></pre>
+<h2 id="typeset-pages">Typeset pages</h2>
+<p><img src="pages/1.webp" alt="Blueprint v13, printed page 1" loading="lazy"></p>
+<p><img src="pages/2.webp" alt="Blueprint v13, printed page 2" loading="lazy"></p>
+<p><img src="pages/3.webp" alt="Blueprint v13, printed page 3" loading="lazy"></p>
+<p><img src="pages/4.webp" alt="Blueprint v13, printed page 4" loading="lazy"></p>
+<p><img src="pages/5.webp" alt="Blueprint v13, printed page 5" loading="lazy"></p>
+<p><img src="pages/6.webp" alt="Blueprint v13, printed page 6" loading="lazy"></p>
+<p><img src="pages/7.webp" alt="Blueprint v13, printed page 7" loading="lazy"></p></main><footer><a href="../../help.html">Using the local edition</a></footer></body></html>

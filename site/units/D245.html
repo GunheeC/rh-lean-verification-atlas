@@ -1,0 +1,38 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>D245 · The period span of the positive Frobenius vector · RH verification atlas</title><link rel="stylesheet" href="../atlas.css"><script>window.MathJax={tex:{inlineMath:[["$","$"]],displayMath:[["$$","$$"]],processEscapes:true},options:{ignoreHtmlClass:"no-math"}};</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script></head><body><header><div class="bar"><a class="brand" href="../index.html">RH verification atlas</a><nav aria-label="Atlas navigation"><a href="../index.html">Home</a> <a href="../STATUS.html">Status</a> <a href="../MAP.html">Map</a> <a href="../dashboard/index.html">Tracks</a> <a href="../lookup/search.html">Search declarations</a></nav></div></header><main><h1 id="d245--the-period-span-of-the-positive-frobenius-vector">D245 · The period span of the positive Frobenius vector</h1>
+<p class="notice">AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved</p>
+<p>If every Frobenius iterate of a positive crystalline period has zero theta value after comparison, its Frobenius image is divisible by the chosen period in the positive crystalline ring. The proof clears a denominator, proves integral divisibility with an extra factor of <span class="math">$p$</span>, and then removes that factor in the localized ring.</p>
+<p><code>the-period-span-of-the-positive-frobenius-vector</code> · <a href="../tracks/local/index.html">Local p-adic theory</a></p>
+<p><strong>Outlined</strong> · <strong>L0</strong> Declaration pinned; no review of this unit · Record generated 2026-11-25 (no human check).</p>
+<p><strong>First-pass outline of the head proof term</strong> · 373 dominated core lines. In scope, this note describes what the top-level term calls; it does not explain the dependency cone beneath it.</p>
+<div class="scroll"><table>
+<thead><tr><th>1 · Lean pinned</th><th>2 · Statement compared</th><th>3 · Prose</th><th>4 · Steps</th><th>5 · AI review</th><th>6 · Human</th></tr></thead>
+<tbody><tr><td>✓</td><td>–</td><td>Outlined</td><td>4</td><td>–</td><td>0 of 4 steps</td></tr>
+</tbody></table></div>
+<p><a href="D245.check.html">Numbered proof and check records</a> · <a href="../PROGRESS.html">Progress and counting rules</a></p>
+<h2 id="statement">Statement</h2>
+<p>Let epsilon in the tilt have untilt 1 and suppose the untilt of its inverse Frobenius is different from 1. If y in the positive crystalline period ring has zero de Rham theta image after every nonnegative Frobenius iterate, then the Frobenius of y is a multiple of the image of the crystalline period t(epsilon) in that ring.</p>
+<div class="math display">$$\bigl(\forall n\ge0,\ \theta_{\rm dR}(\iota(\varphi^n y))=0\bigr)\ \Longrightarrow\ \varphi y\in\bigl(t(\varepsilon)\bigr)B_{\rm cris}^{+}.$$</div>
+<h2 id="assumptions">Assumptions</h2>
+<ul><li>The untilt of <span class="math">$\varepsilon$</span> equals one and the untilt of its inverse Frobenius differs from one.</li><li>For <span class="math">$y\in B_{\rm cris}^+$</span>, the de Rham theta image of every nonnegative Frobenius iterate is zero.</li></ul>
+<p>Sources for the assumptions · <a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a></p>
+<p><strong>New exposition · pending_review.</strong> This edition has no independent review of the new argument. Earlier verdicts below retain their stated scopes.</p>
+<h2 id="where-to-read">Where to read</h2>
+<p>Blueprint v13 and papers v3–v5 are this atlas project’s own AI-written, unpublished drafts. They have no human review and were not written by the author of the Lean development. Blueprint v13, its separate cover, and paper v5 are distributed as assets of release v0.1.0. For v3 and v4 the atlas supplies selected excerpts and notes. <a href="../data/editions.json">Edition register</a></p>
+<ul><li><a href="../notes/units/D245_round4.html">D245 · Where the extra power of the coefficient prime goes</a>, pp. 1–2 in the atlas print layout. Round-4 outline under the named inputs; pending_review.</li><li><a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a>, G.256 (decomp:D245), p. 221. Statement starts on the cited page.</li><li><a href="../notes/units/D245.tex">Manuscript source excerpt</a> · section <code>decomp:D245</code></li></ul>
+<h2 id="evidence">Evidence</h2>
+<p>The pinned declaration is recorded in the formal source. No higher-level verdict is assigned to this unit.</p>
+<h2 id="lean-declarations">Lean declarations</h2>
+<ul><li><code>GroundTheory.PAdicHodge.ACris.phiPlus_mem_span_periodT</code>  <br><a href="https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/GroundTheory/PAdicHodge/FontaineLemma.lean#L42-L72"><code>FontaineLemma.lean</code></a>, lines 42–72 · 373 dominated lines · SHA-256 <code>3f8f0a8a9d15</code>.</li></ul>
+<p><a href="D245.yaml">Machine record and full declaration hashes</a> · <a href="../lookup/declarations.html">Declaration lookup</a></p>
+<h2 id="reading-prerequisites">Reading prerequisites</h2>
+<p>Background · Tilts and Frobenius · The crystalline period <span class="math">$t$</span>.</p>
+<p>No prior atlas unit is specified.</p>
+<h2 id="open-questions">Open questions</h2>
+<p>None recorded.</p>
+<h2 id="graph-connections">Graph connections</h2>
+<p>Arrows may connect either a unit’s main declaration or an indexed member.</p>
+<p><strong>Uses</strong> · <a href="B02.html">B02</a></p>
+<p><strong>Used by</strong> · <a href="B02.html">B02</a> · <a href="D230.html">D230</a></p>
+<p><a href="../data/unit_graph.json">Declaration witnesses and graph scope</a></p>
+<p>Lookup aliases · <code>phiPlus_mem_span_periodT</code>, <code>D245 The period span of the positive Frobenius vector</code></p>
+<p>&lt;!-- Unit metadata SHA-256 d5e768a30e0fef44622f3261f5e2b0dd7d0e8151aa2668c3d8a05798e69d415a --&gt;</p></main><footer><a href="../help.html">Using the local edition</a></footer></body></html>

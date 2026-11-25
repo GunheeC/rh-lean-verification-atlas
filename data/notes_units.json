@@ -1,0 +1,3688 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "edition": "paper2_v3",
+  "pdf_sha256": "83af020c6a19b7ddba22d72bd6b27145cf957b0cb4eadc0e643ebff476b25898",
+  "page_rule": "Heading pages come from the aux file of the hash-matched edition. They locate the entry; they are not a statement of its proof length. Reading lengths for packets use actual page images.",
+  "units": {
+    "P001": {
+      "path": "notes/units/P001.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P001",
+      "number": "6.1",
+      "heading_page": 54,
+      "lean_declarations": [
+        "riemannHypothesis"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/upper.tex",
+          "line0": 5,
+          "line1": 9,
+          "fragment_sha256": "73246e624dbc9a60c7d56f65f22695601cdaf755cd830ffbe3b2145d5ca9943d",
+          "file_sha256": "9f26a45a8ae682c150f7939122063178d4b9663ab6619e5fe753ac5b3df2b7e5"
+        }
+      ]
+    },
+    "P002": {
+      "path": "notes/units/P002.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P002",
+      "number": "6.2",
+      "heading_page": 54,
+      "lean_declarations": [
+        "riemannZeta_eq_zero_re"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/upper.tex",
+          "line0": 11,
+          "line1": 15,
+          "fragment_sha256": "283444256d16a88d727acb2965896094d1e592cfa4c16340c47d1b3a752eecfa",
+          "file_sha256": "9f26a45a8ae682c150f7939122063178d4b9663ab6619e5fe753ac5b3df2b7e5"
+        }
+      ]
+    },
+    "P003": {
+      "path": "notes/units/P003.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P003",
+      "number": "6.3",
+      "heading_page": 55,
+      "lean_declarations": [
+        "LFunction_ne_zero_of_half_lt_re"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/upper.tex",
+          "line0": 17,
+          "line1": 21,
+          "fragment_sha256": "89637a6f0030f686f2859b68f6af02a7bd3cb9ea3140d0e2b57f8964f5d92bf2",
+          "file_sha256": "9f26a45a8ae682c150f7939122063178d4b9663ab6619e5fe753ac5b3df2b7e5"
+        }
+      ]
+    },
+    "P004": {
+      "path": "notes/units/P004.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P004",
+      "number": "6.4",
+      "heading_page": 55,
+      "lean_declarations": [
+        "LFunction_eq_zero_re"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/upper.tex",
+          "line0": 23,
+          "line1": 27,
+          "fragment_sha256": "c0259fc358b84394f003e402698bafb9d4490904ef552f616584490426dd399f",
+          "file_sha256": "9f26a45a8ae682c150f7939122063178d4b9663ab6619e5fe753ac5b3df2b7e5"
+        }
+      ]
+    },
+    "P005": {
+      "path": "notes/units/P005.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P005",
+      "number": "6.5",
+      "heading_page": 55,
+      "lean_declarations": [
+        "LFunction_eq_zero_re_of_isPrimitive"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/upper.tex",
+          "line0": 29,
+          "line1": 33,
+          "fragment_sha256": "aab0f59d4eda84890c92ebc28767e0d766b35537b95a95566b12575cb35fa1ee",
+          "file_sha256": "9f26a45a8ae682c150f7939122063178d4b9663ab6619e5fe753ac5b3df2b7e5"
+        }
+      ]
+    },
+    "P006": {
+      "path": "notes/units/P006.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P006",
+      "number": "6.6",
+      "heading_page": 55,
+      "lean_declarations": [
+        "claimAll"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/upper.tex",
+          "line0": 35,
+          "line1": 45,
+          "fragment_sha256": "f00b53c04bcf5b2514b3a07eaf170ecd7dd849106b9ea8d57d55ae2476398744",
+          "file_sha256": "9f26a45a8ae682c150f7939122063178d4b9663ab6619e5fe753ac5b3df2b7e5"
+        }
+      ]
+    },
+    "P007": {
+      "path": "notes/units/P007.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P007",
+      "number": "6.7",
+      "heading_page": 55,
+      "lean_declarations": [
+        "critAll"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/upper.tex",
+          "line0": 47,
+          "line1": 51,
+          "fragment_sha256": "5f89615597d1e1caf0fd0bfc3d022d6faf891558361100390c0c6dc815f30d2e",
+          "file_sha256": "9f26a45a8ae682c150f7939122063178d4b9663ab6619e5fe753ac5b3df2b7e5"
+        }
+      ]
+    },
+    "P008": {
+      "path": "notes/units/P008.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P008",
+      "number": "6.8",
+      "heading_page": 56,
+      "lean_declarations": [
+        "rhOfAll"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/upper.tex",
+          "line0": 53,
+          "line1": 57,
+          "fragment_sha256": "bc1973763bf0288f003190799c291a2bd1ede84ede16b0f10bf316919699f490",
+          "file_sha256": "9f26a45a8ae682c150f7939122063178d4b9663ab6619e5fe753ac5b3df2b7e5"
+        }
+      ]
+    },
+    "P009": {
+      "path": "notes/units/P009.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P009",
+      "number": "6.9",
+      "heading_page": 56,
+      "lean_declarations": [
+        "allChi"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/upper.tex",
+          "line0": 59,
+          "line1": 63,
+          "fragment_sha256": "920365c363f734605c7ec76ba630a21c346003f4b8edc657593a5bae354abb7a",
+          "file_sha256": "9f26a45a8ae682c150f7939122063178d4b9663ab6619e5fe753ac5b3df2b7e5"
+        }
+      ]
+    },
+    "P010": {
+      "path": "notes/units/P010.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P010",
+      "number": "6.10",
+      "heading_page": 56,
+      "lean_declarations": [
+        "UpperTheory.FinalTheorems.everyCharacter"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/upper.tex",
+          "line0": 65,
+          "line1": 69,
+          "fragment_sha256": "4e30cde8eb6ba4f10dc6631ce312d94052a9c870644cbddb1163326a42773f8c",
+          "file_sha256": "9f26a45a8ae682c150f7939122063178d4b9663ab6619e5fe753ac5b3df2b7e5"
+        }
+      ]
+    },
+    "P011": {
+      "path": "notes/units/P011.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P011",
+      "number": "6.11",
+      "heading_page": 56,
+      "lean_declarations": [
+        "UpperTheory.FinalTheorems.everyCharacter_of_row"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/upper.tex",
+          "line0": 74,
+          "line1": 91,
+          "fragment_sha256": "8831e593a9899fdf35889be5e5f3aad3a92edf941a8a82596a80393210e20537",
+          "file_sha256": "9f26a45a8ae682c150f7939122063178d4b9663ab6619e5fe753ac5b3df2b7e5"
+        }
+      ]
+    },
+    "P012": {
+      "path": "notes/units/P012.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P012",
+      "number": "6.12",
+      "heading_page": 57,
+      "lean_declarations": [
+        "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/upper.tex",
+          "line0": 93,
+          "line1": 97,
+          "fragment_sha256": "b0b4dda81b4177023c29b22496dfc6d1aad05cec58b879ebdacc5b96a65ced65",
+          "file_sha256": "9f26a45a8ae682c150f7939122063178d4b9663ab6619e5fe753ac5b3df2b7e5"
+        }
+      ],
+      "additional_exposition": {
+        "path": "notes/units/P012-argument.tex",
+        "heading_page": 22,
+        "source": "out/r23_p012.tex",
+        "source_sha256": "ee390969606d602a5bd61719e0c28f4b791e881dbd90e20277b52b79d12ff27d"
+      }
+    },
+    "P013": {
+      "path": "notes/units/P013.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P013",
+      "number": "6.13",
+      "heading_page": 57,
+      "lean_declarations": [
+        "UpperTheory.One.vwin_of_row"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/upper.tex",
+          "line0": 99,
+          "line1": 105,
+          "fragment_sha256": "2f97ba9839dcdf3c2d19d5458b372ed730b2e2ef29ea1f9a8602c765e1eb7cf9",
+          "file_sha256": "9f26a45a8ae682c150f7939122063178d4b9663ab6619e5fe753ac5b3df2b7e5"
+        }
+      ],
+      "additional_exposition": {
+        "path": "notes/units/P013-argument.tex",
+        "heading_page": 20,
+        "source": "out/r23_selmer.tex",
+        "source_sha256": "acdd3e1b74d108d6f47b44268e7e0e7a4ac51644da72705690b9a3a0adc11edb"
+      }
+    },
+    "P014": {
+      "path": "notes/units/P014.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P014",
+      "number": "6.14",
+      "heading_page": 58,
+      "lean_declarations": [
+        "UpperTheory.Top.every_character_of_green_v_win"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/upper.tex",
+          "line0": 107,
+          "line1": 113,
+          "fragment_sha256": "33d3df656d56d4b76bd5e32e7c60ce8d757a6e53f949df7bf8903d043d9cd7bd",
+          "file_sha256": "9f26a45a8ae682c150f7939122063178d4b9663ab6619e5fe753ac5b3df2b7e5"
+        }
+      ]
+    },
+    "P015": {
+      "path": "notes/units/P015.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P015",
+      "number": "6.15",
+      "heading_page": 58,
+      "lean_declarations": [
+        "UpperTheory.Top.zero_free_all_of_green_v_win"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/upper.tex",
+          "line0": 115,
+          "line1": 123,
+          "fragment_sha256": "c5e9fa4243c8f21d871df156601aeb777e4b590a6a111d1a5833ed88082226ab",
+          "file_sha256": "9f26a45a8ae682c150f7939122063178d4b9663ab6619e5fe753ac5b3df2b7e5"
+        }
+      ],
+      "additional_exposition": {
+        "path": "notes/units/P015-argument.tex",
+        "heading_page": 17,
+        "source": "out/r23_host.tex",
+        "source_sha256": "a416cbdc1776136bfb4e4aff18286f0a1e80ddfd07386b3043525371b2073f69"
+      }
+    },
+    "P016": {
+      "path": "notes/units/P016.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P016",
+      "number": "6.16",
+      "heading_page": 59,
+      "lean_declarations": [
+        "UpperTheory.Top.zeroFreeAll_of_topG"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/upper.tex",
+          "line0": 125,
+          "line1": 131,
+          "fragment_sha256": "9c69e789bf5d0a064c49fd75753fd0714c64a6548d6ad5ad8f5a30887a2aa345",
+          "file_sha256": "9f26a45a8ae682c150f7939122063178d4b9663ab6619e5fe753ac5b3df2b7e5"
+        }
+      ]
+    },
+    "P017": {
+      "path": "notes/units/P017.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P017",
+      "number": "6.17",
+      "heading_page": 59,
+      "lean_declarations": [
+        "UpperTheory.Comparison₂.level_gm_le_on_family_scales"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/upper.tex",
+          "line0": 133,
+          "line1": 143,
+          "fragment_sha256": "566d7fca6053781eaf364ab59a2db8074c7df4b864ad6898063e784417a0e1d8",
+          "file_sha256": "9f26a45a8ae682c150f7939122063178d4b9663ab6619e5fe753ac5b3df2b7e5"
+        }
+      ],
+      "additional_exposition": {
+        "path": "notes/units/P017-argument.tex",
+        "heading_page": 9,
+        "source": "out/r23_p017.tex",
+        "source_sha256": "49f2380c337781b49a96cff47c1372f8d5923ff45d8bf22629de80a824819866"
+      }
+    },
+    "P018": {
+      "path": "notes/units/P018.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P018",
+      "number": "6.34",
+      "heading_page": 67,
+      "lean_declarations": [
+        "UpperTheory.Comparison₂.formB"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/upper.tex",
+          "line0": 638,
+          "line1": 653,
+          "fragment_sha256": "1c0d6f607755504272ae2dac5a16bebdd3ade560176476814dd2b4fb3e5e9dc2",
+          "file_sha256": "9f26a45a8ae682c150f7939122063178d4b9663ab6619e5fe753ac5b3df2b7e5"
+        }
+      ]
+    },
+    "P019": {
+      "path": "notes/units/P019.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P019",
+      "number": "6.35",
+      "heading_page": 67,
+      "lean_declarations": [
+        "Formalism.HC.zeroFreeOn_of_tiedWin_cyc"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/upper.tex",
+          "line0": 658,
+          "line1": 670,
+          "fragment_sha256": "88faceba9e9e4d2eb006febcaf6910be12cba260f0e485dc5048c0ad69dd6e3c",
+          "file_sha256": "9f26a45a8ae682c150f7939122063178d4b9663ab6619e5fe753ac5b3df2b7e5"
+        }
+      ]
+    },
+    "P020": {
+      "path": "notes/units/P020.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P020",
+      "number": "6.36",
+      "heading_page": 68,
+      "lean_declarations": [
+        "UpperTheory.V.HV.Core.of_four_alt"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/upper.tex",
+          "line0": 672,
+          "line1": 678,
+          "fragment_sha256": "92c3d82d783244d4a2ef6961e26cbd29ade566a9b97861f93bf41acbbc9e80ed",
+          "file_sha256": "9f26a45a8ae682c150f7939122063178d4b9663ab6619e5fe753ac5b3df2b7e5"
+        }
+      ]
+    },
+    "P021": {
+      "path": "notes/units/P021.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P021",
+      "number": "6.40",
+      "heading_page": 70,
+      "lean_declarations": [
+        "Formalism.LFunctionChainParameters.WeightedSlopeBounds.each_unit_bound_statement"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/upper.tex",
+          "line0": 750,
+          "line1": 819,
+          "fragment_sha256": "d810ce4ac8262d9661669ce6d5150733ab80d6320ca852da0db85033c5e6604a",
+          "file_sha256": "9f26a45a8ae682c150f7939122063178d4b9663ab6619e5fe753ac5b3df2b7e5"
+        }
+      ],
+      "additional_exposition": {
+        "path": "notes/units/P021-argument.tex",
+        "heading_page": 13,
+        "source": "out/r23_link.tex",
+        "source_sha256": "742614e691e53727adc35f14c8f1184b1c158a7ad4993d44c3f2d550b014c5bc"
+      }
+    },
+    "P022": {
+      "path": "notes/units/P022.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P022",
+      "number": "6.23",
+      "heading_page": 61,
+      "lean_declarations": [
+        "Deduction.landau_window"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/upper.tex",
+          "line0": 229,
+          "line1": 501,
+          "fragment_sha256": "cd1725570f86ce9f2349baddcb308f0312327d295980dad536abfde87190631d",
+          "file_sha256": "9f26a45a8ae682c150f7939122063178d4b9663ab6619e5fe753ac5b3df2b7e5"
+        }
+      ]
+    },
+    "P023": {
+      "path": "notes/units/P023.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P023",
+      "number": "6.33",
+      "heading_page": 67,
+      "lean_declarations": [
+        "Deduction.zeroFree_of_rpow_window"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/upper.tex",
+          "line0": 613,
+          "line1": 636,
+          "fragment_sha256": "ea804308b4450f1e00c98a71577d41d5df69e5e6537117716b96b2d069ee4028",
+          "file_sha256": "9f26a45a8ae682c150f7939122063178d4b9663ab6619e5fe753ac5b3df2b7e5"
+        }
+      ]
+    },
+    "P024": {
+      "path": "notes/units/P024.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P024",
+      "number": "7.1",
+      "heading_page": 72,
+      "lean_declarations": [
+        "UpperTheory.V.Z.Win.Dn.ends0_alt"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/inputs_one.tex",
+          "line0": 12,
+          "line1": 44,
+          "fragment_sha256": "6c61e297636e859c1a31ee019e898f04c15b46b29037df23193db8c5df6f31ba",
+          "file_sha256": "12d344e87bca2e484e1373561779751ceaa782c71c24193761425e9d624a53a3"
+        }
+      ]
+    },
+    "P025": {
+      "path": "notes/units/P025.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P025",
+      "number": "7.2",
+      "heading_page": 72,
+      "lean_declarations": [
+        "UpperTheory.V.Th.adjointLiftingTheorem_of_locPrints_of_core"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/inputs_one.tex",
+          "line0": 46,
+          "line1": 80,
+          "fragment_sha256": "80253032c1c655c9fc12089c5d959573b2397a645e55d8f612b63b38fba8ab48",
+          "file_sha256": "12d344e87bca2e484e1373561779751ceaa782c71c24193761425e9d624a53a3"
+        }
+      ]
+    },
+    "P026": {
+      "path": "notes/units/P026.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P026",
+      "number": "7.3",
+      "heading_page": 73,
+      "lean_declarations": [
+        "UpperTheory.V.Z.Kato.Final.zetaUr"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/inputs_one.tex",
+          "line0": 82,
+          "line1": 127,
+          "fragment_sha256": "ce558aa934ae89e9a63835d37d7cfb10302a941a271885291ff1b87962eb46f2",
+          "file_sha256": "12d344e87bca2e484e1373561779751ceaa782c71c24193761425e9d624a53a3"
+        }
+      ]
+    },
+    "P027": {
+      "path": "notes/units/P027.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P027",
+      "number": "7.4",
+      "heading_page": 74,
+      "lean_declarations": [
+        "UpperTheory.V.Alg.M.main_holds"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/inputs_one.tex",
+          "line0": 131,
+          "line1": 203,
+          "fragment_sha256": "4022491f2705cd8ce02fe1d6987fd69494872a2e1f32b30a99fe03e40b520cff",
+          "file_sha256": "12d344e87bca2e484e1373561779751ceaa782c71c24193761425e9d624a53a3"
+        }
+      ]
+    },
+    "P028": {
+      "path": "notes/units/P028.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P028",
+      "number": "7.5",
+      "heading_page": 75,
+      "lean_declarations": [
+        "UpperTheory.V.Alg.M.mprime_holds"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/inputs_one.tex",
+          "line0": 205,
+          "line1": 232,
+          "fragment_sha256": "b8096ee29246c6a0f69dc6321800cec955d642f4928cc81e51b4b08e3c2fbf0f",
+          "file_sha256": "12d344e87bca2e484e1373561779751ceaa782c71c24193761425e9d624a53a3"
+        }
+      ]
+    },
+    "P029": {
+      "path": "notes/units/P029.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P029",
+      "number": "7.6",
+      "heading_page": 75,
+      "lean_declarations": [
+        "UpperTheory.GalN.V.Win.N.countK_alt"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/inputs_one.tex",
+          "line0": 242,
+          "line1": 269,
+          "fragment_sha256": "85ffc664734e43e3a1243ca745c6409fe505eb2b0c8cc5b9aaf0d7ea5a6c9562",
+          "file_sha256": "12d344e87bca2e484e1373561779751ceaa782c71c24193761425e9d624a53a3"
+        }
+      ]
+    },
+    "P030": {
+      "path": "notes/units/P030.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P030",
+      "number": "7.7",
+      "heading_page": 76,
+      "lean_declarations": [
+        "UpperTheory.GalN.V.Win.N.countQ_alt"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/inputs_one.tex",
+          "line0": 271,
+          "line1": 297,
+          "fragment_sha256": "086279a212ef7ef91b9dc468a0fde1c049f5ad4d41c49f87c84cfac00c316385",
+          "file_sha256": "12d344e87bca2e484e1373561779751ceaa782c71c24193761425e9d624a53a3"
+        }
+      ]
+    },
+    "P031": {
+      "path": "notes/units/P031.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P031",
+      "number": "7.8",
+      "heading_page": 76,
+      "lean_declarations": [
+        "UpperTheory.V.Tower.exists_descends"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/inputs_one.tex",
+          "line0": 310,
+          "line1": 375,
+          "fragment_sha256": "5623281c8f641737cf25aa6d561b4c00bf3c3c62cb22e183c0c5cfe85977eac7",
+          "file_sha256": "12d344e87bca2e484e1373561779751ceaa782c71c24193761425e9d624a53a3"
+        }
+      ]
+    },
+    "P032": {
+      "path": "notes/units/P032.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P032",
+      "number": "7.9",
+      "heading_page": 77,
+      "lean_declarations": [
+        "UpperTheory.V.ZK.sClassOf"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/inputs_one.tex",
+          "line0": 377,
+          "line1": 432,
+          "fragment_sha256": "270207101f563eb23aa0c1798c475898de913c6db3d696cbf6edc756a7b0ef0e",
+          "file_sha256": "12d344e87bca2e484e1373561779751ceaa782c71c24193761425e9d624a53a3"
+        }
+      ]
+    },
+    "P033": {
+      "path": "notes/units/P033.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P033",
+      "number": "7.10",
+      "heading_page": 78,
+      "lean_declarations": [
+        "UpperTheory.V.ZK.sThetaOf"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/inputs_one.tex",
+          "line0": 434,
+          "line1": 467,
+          "fragment_sha256": "b6ab11f1e7f123eece8bab4d10978250dec6a775af23cbfb638e49809b38317f",
+          "file_sha256": "12d344e87bca2e484e1373561779751ceaa782c71c24193761425e9d624a53a3"
+        }
+      ]
+    },
+    "P034": {
+      "path": "notes/units/P034.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P034",
+      "number": "7.11",
+      "heading_page": 79,
+      "lean_declarations": [
+        "PositivityTheory.KB.bOdd_zk"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/inputs_one.tex",
+          "line0": 476,
+          "line1": 533,
+          "fragment_sha256": "09a233150c7acb8f8e798d9658f9cf31965028ba23d9c66d6007467b358056c0",
+          "file_sha256": "12d344e87bca2e484e1373561779751ceaa782c71c24193761425e9d624a53a3"
+        }
+      ]
+    },
+    "P035": {
+      "path": "notes/units/P035.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P035",
+      "number": "7.12",
+      "heading_page": 79,
+      "lean_declarations": [
+        "UpperTheory.V.ZK.Up.torsStab"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/inputs_one.tex",
+          "line0": 535,
+          "line1": 552,
+          "fragment_sha256": "53ce4af38d5ce3250d9919ea443a2a99ae959d2e8bdddf030836bd13faa86e05",
+          "file_sha256": "12d344e87bca2e484e1373561779751ceaa782c71c24193761425e9d624a53a3"
+        }
+      ]
+    },
+    "P036": {
+      "path": "notes/units/P036.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P036",
+      "number": "7.13",
+      "heading_page": 80,
+      "lean_declarations": [
+        "UpperTheory.V.ZK.sCount"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/inputs_one.tex",
+          "line0": 556,
+          "line1": 621,
+          "fragment_sha256": "2215db3a6e073d7ecfacfd3e404c10d7cc6ec97ff3e0e88c5e34a08c539418d2",
+          "file_sha256": "12d344e87bca2e484e1373561779751ceaa782c71c24193761425e9d624a53a3"
+        }
+      ]
+    },
+    "P037": {
+      "path": "notes/units/P037.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P037",
+      "number": "7.14",
+      "heading_page": 81,
+      "lean_declarations": [
+        "PositivityTheory.QuaternionShaBounds.sSha"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/inputs_one.tex",
+          "line0": 623,
+          "line1": 658,
+          "fragment_sha256": "f5b249c9dd5bdc930965ebf6ef94f1428daa1ad2bc783610082e69f22f1583bf",
+          "file_sha256": "12d344e87bca2e484e1373561779751ceaa782c71c24193761425e9d624a53a3"
+        }
+      ]
+    },
+    "P038": {
+      "path": "notes/units/P038.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P038",
+      "number": "7.15",
+      "heading_page": 81,
+      "lean_declarations": [
+        "UpperTheory.V.KT.tors_le"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/inputs_one.tex",
+          "line0": 662,
+          "line1": 702,
+          "fragment_sha256": "e45b1510782769c1d1543a8f260039a4ca2b72029957618c70d63e6a49e400d7",
+          "file_sha256": "12d344e87bca2e484e1373561779751ceaa782c71c24193761425e9d624a53a3"
+        }
+      ]
+    },
+    "P039": {
+      "path": "notes/units/P039.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P039",
+      "number": "7.16",
+      "heading_page": 82,
+      "lean_declarations": [
+        "UpperTheory.V.ZK.torsAll"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/inputs_one.tex",
+          "line0": 704,
+          "line1": 728,
+          "fragment_sha256": "bbd1a7c3c7a7e620c479eefecfcd535cfc0ef400a2f8bbc95ab27e4d5bd2f2bf",
+          "file_sha256": "12d344e87bca2e484e1373561779751ceaa782c71c24193761425e9d624a53a3"
+        }
+      ]
+    },
+    "P040": {
+      "path": "notes/units/P040.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P040",
+      "number": "7.17",
+      "heading_page": 82,
+      "lean_declarations": [
+        "UpperTheory.V.LDataCardLeFinrank.vFormula_of_classicalTheorems"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/inputs_one.tex",
+          "line0": 730,
+          "line1": 771,
+          "fragment_sha256": "87c190ce70fdd9a242449049f7f9454c752469950e8cdcd41edd2658fda79674",
+          "file_sha256": "12d344e87bca2e484e1373561779751ceaa782c71c24193761425e9d624a53a3"
+        }
+      ]
+    },
+    "P041": {
+      "path": "notes/units/P041.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P041",
+      "number": "7.18",
+      "heading_page": 83,
+      "lean_declarations": [
+        "Formalism.MainNotions.N.K.normalized_ring_data"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/inputs_two.tex",
+          "line0": 5,
+          "line1": 27,
+          "fragment_sha256": "3c983c691595779b1957f4b365cd33199adf0f7f1b5b32a0ce3b62d78e56c9f0",
+          "file_sha256": "e3937f52dcf511a82598d2586b3b865775a6dafff4381684233a0d69579cae71"
+        }
+      ]
+    },
+    "P042": {
+      "path": "notes/units/P042.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P042",
+      "number": "7.19",
+      "heading_page": 84,
+      "lean_declarations": [
+        "Formalism.RepresentationBoundsCohomology.ringDataObjects.moduleBc"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/inputs_two.tex",
+          "line0": 29,
+          "line1": 41,
+          "fragment_sha256": "15b4cbaddb7afd3e263dc3caae7fab88326b3461ac392796ae2ae34ad0301b10",
+          "file_sha256": "e3937f52dcf511a82598d2586b3b865775a6dafff4381684233a0d69579cae71"
+        }
+      ]
+    },
+    "P043": {
+      "path": "notes/units/P043.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P043",
+      "number": "7.20",
+      "heading_page": 85,
+      "lean_declarations": [
+        "Formalism.MainNotions.N.K.Closed.open_inputs_at_normalized"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/inputs_two.tex",
+          "line0": 43,
+          "line1": 59,
+          "fragment_sha256": "9c6b33f5e61239d345b9c78c4e5f0d34c95022e580d4c7a98aa97a6332412157",
+          "file_sha256": "e3937f52dcf511a82598d2586b3b865775a6dafff4381684233a0d69579cae71"
+        }
+      ]
+    },
+    "P044": {
+      "path": "notes/units/P044.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P044",
+      "number": "7.21",
+      "heading_page": 86,
+      "lean_declarations": [
+        "Formalism.MainNotions.N.K.Closed.theorem_n5_from_inputs"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/inputs_two.tex",
+          "line0": 61,
+          "line1": 83,
+          "fragment_sha256": "6e6849cf21293e4cf455f0a0474a3eb563d612469bb628d38e04538096e6c4e2",
+          "file_sha256": "e3937f52dcf511a82598d2586b3b865775a6dafff4381684233a0d69579cae71"
+        }
+      ]
+    },
+    "P045": {
+      "path": "notes/units/P045.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P045",
+      "number": "7.22",
+      "heading_page": 87,
+      "lean_declarations": [
+        "Formalism.MainNotions.FormalGroupSystem.Pf.hecke_place_bound"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/inputs_two.tex",
+          "line0": 87,
+          "line1": 104,
+          "fragment_sha256": "9d0a089082966f4c95ff817c87c2a94419beda58a07b8b9aa7464151ebe3cbc4",
+          "file_sha256": "e3937f52dcf511a82598d2586b3b865775a6dafff4381684233a0d69579cae71"
+        }
+      ]
+    },
+    "P046": {
+      "path": "notes/units/P046.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P046",
+      "number": "7.23",
+      "heading_page": 88,
+      "lean_declarations": [
+        "GlobalTheory.TwV.site_cmpLite_siteAdm"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/inputs_two.tex",
+          "line0": 106,
+          "line1": 111,
+          "fragment_sha256": "6e6e8d8df118eebdeb2aa6aaeb814dba2d37cd377534d85122a511123b39420e",
+          "file_sha256": "e3937f52dcf511a82598d2586b3b865775a6dafff4381684233a0d69579cae71"
+        }
+      ]
+    },
+    "P047": {
+      "path": "notes/units/P047.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P047",
+      "number": "7.24",
+      "heading_page": 88,
+      "lean_declarations": [
+        "Formalism.MainNotions.WeilJacquetShalikaLaw.Proof.first_clause_cases"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/inputs_two.tex",
+          "line0": 113,
+          "line1": 119,
+          "fragment_sha256": "29575f607f28e7ff872679a6a03c5c42fe09fc0d3c15eaca20dfde036ce105b3",
+          "file_sha256": "e3937f52dcf511a82598d2586b3b865775a6dafff4381684233a0d69579cae71"
+        }
+      ]
+    },
+    "P048": {
+      "path": "notes/units/P048.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P048",
+      "number": "7.25",
+      "heading_page": 89,
+      "lean_declarations": [
+        "GlobalTheory.PerTwClose.twistedPeriodAdmissible_of_rowInt"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/inputs_two.tex",
+          "line0": 121,
+          "line1": 137,
+          "fragment_sha256": "403770d7790692cc8740c7c818e6725673f322fd198e10b3b2ad4d12b374508a",
+          "file_sha256": "e3937f52dcf511a82598d2586b3b865775a6dafff4381684233a0d69579cae71"
+        }
+      ]
+    },
+    "P049": {
+      "path": "notes/units/P049.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P049",
+      "number": "7.26",
+      "heading_page": 90,
+      "lean_declarations": [
+        "Formalism.HN.height_gram_determinant"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/inputs_two.tex",
+          "line0": 143,
+          "line1": 153,
+          "fragment_sha256": "f66e57e3cf6a7bb15e87749f5fedc81316e87921aaf1917f287fe3f0ec3c46f5",
+          "file_sha256": "e3937f52dcf511a82598d2586b3b865775a6dafff4381684233a0d69579cae71"
+        }
+      ]
+    },
+    "P050": {
+      "path": "notes/units/P050.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P050",
+      "number": "7.27",
+      "heading_page": 90,
+      "lean_declarations": [
+        "Formalism.HN.place_lattice_structure"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/inputs_two.tex",
+          "line0": 155,
+          "line1": 165,
+          "fragment_sha256": "95bc54656a514c712c6fe5ce51d60e570b30b4c9eeabdf79bbad5e175893a928",
+          "file_sha256": "e3937f52dcf511a82598d2586b3b865775a6dafff4381684233a0d69579cae71"
+        }
+      ]
+    },
+    "P090": {
+      "path": "notes/units/P090.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P090",
+      "number": "10.9",
+      "heading_page": 110,
+      "lean_declarations": [
+        "GlobalTheory.TwV.adLawAt_xiAd"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/branches.tex",
+          "line0": 351,
+          "line1": 362,
+          "fragment_sha256": "f25964d947c33d6859c5af3ffc9c354bddeb6319e7caed992121e27fac48b06f",
+          "file_sha256": "ca3a03eec2df2bf7cb2c4bf99b7893974107ae351992ee8d5f002b800ff49e3d"
+        }
+      ]
+    },
+    "P096": {
+      "path": "notes/units/P096.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P096",
+      "number": "A.6",
+      "heading_page": 133,
+      "lean_declarations": [
+        "GlobalTheory.Mem.Col2.SameOff.use₆"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/charts.tex",
+          "line0": 171,
+          "line1": 180,
+          "fragment_sha256": "a8447b42c505e211b2ec76841313579b3973e39fa596f6ec5ed84dc898935a81",
+          "file_sha256": "18ac47d6bdef0f9a68452aee0231b5f62ec333e719b392b4c9055c4bddc81cd8"
+        }
+      ],
+      "additional_exposition": {
+        "path": "notes/units/P096-argument.tex",
+        "heading_page": 148,
+        "source": "paper2/pending_p096.tex",
+        "source_sha256": "afa227cf428f335f3d9be5e09c8e3f51c12c3d058ff5cbc6ebbd1f0445574726"
+      }
+    },
+    "P134": {
+      "path": "notes/units/P134.tex",
+      "edition": "paper2_v3",
+      "label": "pn:P134",
+      "number": "C.14",
+      "heading_page": 145,
+      "lean_declarations": [
+        "GlobalTheory.TwV.congAt_fb_lev"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/lower.tex",
+          "line0": 387,
+          "line1": 393,
+          "fragment_sha256": "903dacab5f876cf57c8b41a5f282009b3d9c9deaa470e076475486d3e4eb83fc",
+          "file_sha256": "bd21b7e5e25fa893452a2fb550cbedfeaa1b3c615ecbbce5c9e46664e11d629f"
+        }
+      ],
+      "additional_exposition": {
+        "path": "notes/units/P134-argument.tex",
+        "heading_page": 148,
+        "source": "paper2/pending_proof.tex",
+        "source_sha256": "f080c15d3cb18fd56ac15e23b3bc092ea515925739b4aee4e5561c8df4058a40"
+      }
+    },
+    "T01": {
+      "path": "notes/units/T01.tex",
+      "edition": "paper2_v3",
+      "label": "sub:T01",
+      "number": "5.11",
+      "heading_page": 40,
+      "lean_declarations": [
+        "UpperTheory.Lit.every_character_of_theta_integrals_local_matching"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_p012.tex",
+          "line0": 20,
+          "line1": 31,
+          "fragment_sha256": "6f9e243b1cc4103fb6cdd4fad14f1820eb6957abbf77ae925f2e0c2d2088c6cc",
+          "file_sha256": "d6e5d13fa38132480fe382a5be9f9b341680fd0b84c992fc03e83e9146e47aa6"
+        }
+      ]
+    },
+    "T02": {
+      "path": "notes/units/T02.tex",
+      "edition": "paper2_v3",
+      "label": "sub:T02",
+      "number": "5.12",
+      "heading_page": 40,
+      "lean_declarations": [
+        "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_p012.tex",
+          "line0": 33,
+          "line1": 48,
+          "fragment_sha256": "c2e5b4028758e5f90ca90f35a6e8165c0c0962dc87714dca77ccd08bcb921ab8",
+          "file_sha256": "d6e5d13fa38132480fe382a5be9f9b341680fd0b84c992fc03e83e9146e47aa6"
+        }
+      ]
+    },
+    "T03": {
+      "path": "notes/units/T03.tex",
+      "edition": "paper2_v3",
+      "label": "sub:T03",
+      "number": "5.13",
+      "heading_page": 40,
+      "lean_declarations": [
+        "GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_p012.tex",
+          "line0": 50,
+          "line1": 61,
+          "fragment_sha256": "efb43c716819662e8222709a4f9d98a817c1e526461fbc2d360da0275465bf99",
+          "file_sha256": "d6e5d13fa38132480fe382a5be9f9b341680fd0b84c992fc03e83e9146e47aa6"
+        }
+      ]
+    },
+    "T04": {
+      "path": "notes/units/T04.tex",
+      "edition": "paper2_v3",
+      "label": "sub:T04",
+      "number": "5.14",
+      "heading_page": 41,
+      "lean_declarations": [
+        "GlobalTheory.Fc.AllAtMemberStage0.allRows_of_open0_alt"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_p012.tex",
+          "line0": 63,
+          "line1": 81,
+          "fragment_sha256": "57e99c124a0ac043966922000f8d4928457a969e5046656fe23b66d79825415e",
+          "file_sha256": "d6e5d13fa38132480fe382a5be9f9b341680fd0b84c992fc03e83e9146e47aa6"
+        }
+      ]
+    },
+    "T05": {
+      "path": "notes/units/T05.tex",
+      "edition": "paper2_v3",
+      "label": "sub:T05",
+      "number": "5.15",
+      "heading_page": 41,
+      "lean_declarations": [
+        "GlobalTheory.Fc.S0.ontoX_and_lamLow_of_unitaryGroupHypotheses'"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_p012.tex",
+          "line0": 83,
+          "line1": 94,
+          "fragment_sha256": "16682c2dce069641511a3242e51eb3aab8c9c32bffd80b9f0e840465e22337d5",
+          "file_sha256": "d6e5d13fa38132480fe382a5be9f9b341680fd0b84c992fc03e83e9146e47aa6"
+        }
+      ]
+    },
+    "T06": {
+      "path": "notes/units/T06.tex",
+      "edition": "paper2_v3",
+      "label": "sub:T06",
+      "number": "5.16",
+      "heading_page": 41,
+      "lean_declarations": [
+        "GlobalTheory.T.large_unramified_exponent_bundles_exist_alt"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_p012.tex",
+          "line0": 96,
+          "line1": 107,
+          "fragment_sha256": "b323c2f51be0adbd717ab9e98612e67274f28d75e1c190b3807e785b4f042df5",
+          "file_sha256": "d6e5d13fa38132480fe382a5be9f9b341680fd0b84c992fc03e83e9146e47aa6"
+        }
+      ]
+    },
+    "T07": {
+      "path": "notes/units/T07.tex",
+      "edition": "paper2_v3",
+      "label": "sub:T07",
+      "number": "5.17",
+      "heading_page": 41,
+      "lean_declarations": [
+        "UpperTheory.GalC.final_alt_alt"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_p012.tex",
+          "line0": 109,
+          "line1": 121,
+          "fragment_sha256": "b57af544aad6b39dbd2191480a9b78fb760d25983518e6cf426f9cfe58c8d142",
+          "file_sha256": "d6e5d13fa38132480fe382a5be9f9b341680fd0b84c992fc03e83e9146e47aa6"
+        }
+      ]
+    },
+    "T08": {
+      "path": "notes/units/T08.tex",
+      "edition": "paper2_v3",
+      "label": "sub:T08",
+      "number": "5.18",
+      "heading_page": 42,
+      "lean_declarations": [
+        "GlobalTheory.T.open0_of_unitary_group_hypotheses"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_p012.tex",
+          "line0": 123,
+          "line1": 133,
+          "fragment_sha256": "6625786c08c8e745e68d01bc33d2e7bbfcfa373764ab853367fc1304d162778a",
+          "file_sha256": "d6e5d13fa38132480fe382a5be9f9b341680fd0b84c992fc03e83e9146e47aa6"
+        }
+      ]
+    },
+    "T09": {
+      "path": "notes/units/T09.tex",
+      "edition": "paper2_v3",
+      "label": "sub:T09",
+      "number": "5.19",
+      "heading_page": 42,
+      "lean_declarations": [
+        "UpperTheory.Lit.functionalsSeparate_of_howeUnram_of_siegelWeil"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_p012.tex",
+          "line0": 135,
+          "line1": 150,
+          "fragment_sha256": "aec04dcd4c9d225ad413c5ce44b267ce210b73f4e439e13f7ca99622a0451f26",
+          "file_sha256": "d6e5d13fa38132480fe382a5be9f9b341680fd0b84c992fc03e83e9146e47aa6"
+        }
+      ]
+    },
+    "T10": {
+      "path": "notes/units/T10.tex",
+      "edition": "paper2_v3",
+      "label": "sub:T10",
+      "number": "5.20",
+      "heading_page": 42,
+      "lean_declarations": [
+        "GlobalTheory.BigTop.Fun.Close.fourier_coefficient_fit_of_join_alt"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_p012.tex",
+          "line0": 152,
+          "line1": 163,
+          "fragment_sha256": "165a2344ac83d60a5f80598f9d0a198d53d2d0af706aba0a1c0a31331d6a7ea8",
+          "file_sha256": "d6e5d13fa38132480fe382a5be9f9b341680fd0b84c992fc03e83e9146e47aa6"
+        }
+      ]
+    },
+    "T11": {
+      "path": "notes/units/T11.tex",
+      "edition": "paper2_v3",
+      "label": "sub:T11",
+      "number": "5.21",
+      "heading_page": 43,
+      "lean_declarations": [
+        "PositivityTheory.ThKR.theoremK_head2"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_p012.tex",
+          "line0": 165,
+          "line1": 194,
+          "fragment_sha256": "a78f5be615c03e9335543fe6432bdd9f7b3f861362f54877ce8d28a9f2088243",
+          "file_sha256": "d6e5d13fa38132480fe382a5be9f9b341680fd0b84c992fc03e83e9146e47aa6"
+        }
+      ]
+    },
+    "T12": {
+      "path": "notes/units/T12.tex",
+      "edition": "paper2_v3",
+      "label": "sub:T12",
+      "number": "5.22",
+      "heading_page": 43,
+      "lean_declarations": [
+        "PositivityTheory.SiegelWeilFormula.Fin.siegelWeilStd"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_p012.tex",
+          "line0": 196,
+          "line1": 218,
+          "fragment_sha256": "46159b5edde2e206cad44b9d3cfa73af1a248bda64678e6d81ef3a89d3f37b7d",
+          "file_sha256": "d6e5d13fa38132480fe382a5be9f9b341680fd0b84c992fc03e83e9146e47aa6"
+        }
+      ]
+    },
+    "T13": {
+      "path": "notes/units/T13.tex",
+      "edition": "paper2_v3",
+      "label": "sub:T13",
+      "number": "5.23",
+      "heading_page": 43,
+      "lean_declarations": [
+        "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_p012.tex",
+          "line0": 220,
+          "line1": 240,
+          "fragment_sha256": "2a619edc08b70c3932470eaf89b8acc000f38a2a0f6c286b59563c37a23c3316",
+          "file_sha256": "d6e5d13fa38132480fe382a5be9f9b341680fd0b84c992fc03e83e9146e47aa6"
+        }
+      ]
+    },
+    "T14": {
+      "path": "notes/units/T14.tex",
+      "edition": "paper2_v3",
+      "label": "sub:T14",
+      "number": "5.24",
+      "heading_page": 44,
+      "lean_declarations": [
+        "PositivityTheory.HtPt.Ah.deep_slim_use"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_p012.tex",
+          "line0": 242,
+          "line1": 261,
+          "fragment_sha256": "53cbf8259a9ed27d82bf543e0d8875c674ba00bea6901eb2c68b8cf96e2db0ac",
+          "file_sha256": "d6e5d13fa38132480fe382a5be9f9b341680fd0b84c992fc03e83e9146e47aa6"
+        }
+      ]
+    },
+    "T15": {
+      "path": "notes/units/T15.tex",
+      "edition": "paper2_v3",
+      "label": "sub:T15",
+      "number": "5.25",
+      "heading_page": 44,
+      "lean_declarations": [
+        "SelfIntersectionVolumeEstimates.topCovolG_alt_alt"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_p012.tex",
+          "line0": 263,
+          "line1": 275,
+          "fragment_sha256": "1fbac968416cc48ef0d8b53cd83d28f20dbf26c376e0398d6091b36c6e558ba4",
+          "file_sha256": "d6e5d13fa38132480fe382a5be9f9b341680fd0b84c992fc03e83e9146e47aa6"
+        }
+      ]
+    },
+    "T16": {
+      "path": "notes/units/T16.tex",
+      "edition": "paper2_v3",
+      "label": "sub:T16",
+      "number": "5.26",
+      "heading_page": 44,
+      "lean_declarations": [
+        "ChowFormHeightComparison₂.chow_form_height_comparison"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_p012.tex",
+          "line0": 277,
+          "line1": 297,
+          "fragment_sha256": "a0aa19feae42b37ec56e2ef75488e9d12756816dc2427d1f6200bd49fb710950",
+          "file_sha256": "d6e5d13fa38132480fe382a5be9f9b341680fd0b84c992fc03e83e9146e47aa6"
+        }
+      ]
+    },
+    "T17": {
+      "path": "notes/units/T17.tex",
+      "edition": "paper2_v3",
+      "label": "sub:T17",
+      "number": "5.27",
+      "heading_page": 45,
+      "lean_declarations": [
+        "PositivityTheory.Pf1.HilbertSamuelMoriwaki.moriwakiBig_outright"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_p012.tex",
+          "line0": 299,
+          "line1": 315,
+          "fragment_sha256": "7e59d1ea740a3b8d05709705adf5c567a0fc00c6f921636f566dcb155f22e689",
+          "file_sha256": "d6e5d13fa38132480fe382a5be9f9b341680fd0b84c992fc03e83e9146e47aa6"
+        }
+      ]
+    },
+    "T18": {
+      "path": "notes/units/T18.tex",
+      "edition": "paper2_v3",
+      "label": "sub:T18",
+      "number": "5.28",
+      "heading_page": 45,
+      "lean_declarations": [
+        "PositivityTheory.Pf1.HilbertSamuelMoriwaki.hsUse_outright"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_p012.tex",
+          "line0": 317,
+          "line1": 335,
+          "fragment_sha256": "2ddd309ab91adcc1615c47a8ffc382ab074a7400993be5524602b07463623927",
+          "file_sha256": "d6e5d13fa38132480fe382a5be9f9b341680fd0b84c992fc03e83e9146e47aa6"
+        }
+      ]
+    },
+    "T19": {
+      "path": "notes/units/T19.tex",
+      "edition": "paper2_v3",
+      "label": "sub:T19",
+      "number": "5.29",
+      "heading_page": 46,
+      "lean_declarations": [
+        "UpperTheory.LiteratureTheorems.resolution_char_zero_of_literature"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_p012.tex",
+          "line0": 337,
+          "line1": 348,
+          "fragment_sha256": "3b47d11a7accf3d44677ee217d781f8f4ddad5e05450bb0024436a9037ae4ca0",
+          "file_sha256": "d6e5d13fa38132480fe382a5be9f9b341680fd0b84c992fc03e83e9146e47aa6"
+        }
+      ]
+    },
+    "T20": {
+      "path": "notes/units/T20.tex",
+      "edition": "paper2_v3",
+      "label": "sub:T20",
+      "number": "5.30",
+      "heading_page": 46,
+      "lean_declarations": [
+        "UpperTheory.LiteratureTheorems.principalisation_char_zero_of_literature"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_p012.tex",
+          "line0": 350,
+          "line1": 365,
+          "fragment_sha256": "bd4cc5e313a0ce1fba8fd7d0fa13eaa27fa1a5e6aeaa40eb1812ba9392e41702",
+          "file_sha256": "d6e5d13fa38132480fe382a5be9f9b341680fd0b84c992fc03e83e9146e47aa6"
+        }
+      ]
+    },
+    "T21": {
+      "path": "notes/units/T21.tex",
+      "edition": "paper2_v3",
+      "label": "sub:T21",
+      "number": "5.31",
+      "heading_page": 46,
+      "lean_declarations": [
+        "UpperTheory.LiteratureTheorems.poincare_lelong_inv_of_literature"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_p012.tex",
+          "line0": 367,
+          "line1": 385,
+          "fragment_sha256": "0a51d5488026e48ce10fdcef4913f01455bd56b8791649db06f94e7ed108f441",
+          "file_sha256": "d6e5d13fa38132480fe382a5be9f9b341680fd0b84c992fc03e83e9146e47aa6"
+        }
+      ]
+    },
+    "T22": {
+      "path": "notes/units/T22.tex",
+      "edition": "paper2_v3",
+      "label": "sub:T22",
+      "number": "5.32",
+      "heading_page": 47,
+      "lean_declarations": [
+        "UpperTheory.LiteratureTheorems.zarhin_statement"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_p012.tex",
+          "line0": 387,
+          "line1": 399,
+          "fragment_sha256": "2adab53bac70e3ca610fa73c36b99e1da508bf6d2d477619a58145bf11e7ce63",
+          "file_sha256": "d6e5d13fa38132480fe382a5be9f9b341680fd0b84c992fc03e83e9146e47aa6"
+        }
+      ]
+    },
+    "T23": {
+      "path": "notes/units/T23.tex",
+      "edition": "paper2_v3",
+      "label": "sub:T23",
+      "number": "5.33",
+      "heading_page": 47,
+      "lean_declarations": [
+        "UpperTheory.LiteratureTheorems.nef_rr_of_literature"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_p012.tex",
+          "line0": 401,
+          "line1": 416,
+          "fragment_sha256": "d56971094bef87619f7a38c10deed9e6f18d8c60497459728221341e4debc6f1",
+          "file_sha256": "d6e5d13fa38132480fe382a5be9f9b341680fd0b84c992fc03e83e9146e47aa6"
+        }
+      ]
+    },
+    "T24": {
+      "path": "notes/units/T24.tex",
+      "edition": "paper2_v3",
+      "label": "sub:T24",
+      "number": "5.34",
+      "heading_page": 47,
+      "lean_declarations": [
+        "UpperTheory.LiteratureTheorems.fargues_exact_of_literature"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_p012.tex",
+          "line0": 418,
+          "line1": 433,
+          "fragment_sha256": "5b5132778c826a0e919f38c77e155e74c8f37a330e267c214cf3932464c24c42",
+          "file_sha256": "d6e5d13fa38132480fe382a5be9f9b341680fd0b84c992fc03e83e9146e47aa6"
+        }
+      ]
+    },
+    "T25": {
+      "path": "notes/units/T25.tex",
+      "edition": "paper2_v3",
+      "label": "sub:T25",
+      "number": "5.35",
+      "heading_page": 48,
+      "lean_declarations": [
+        "UpperTheory.N.boundAtTwoThree_linked_of_recT"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_p012.tex",
+          "line0": 435,
+          "line1": 452,
+          "fragment_sha256": "c9bf47e651e8a32050f0928f82865e45d4d31ee73aa29e4e13731e10e1d5b9ad",
+          "file_sha256": "d6e5d13fa38132480fe382a5be9f9b341680fd0b84c992fc03e83e9146e47aa6"
+        }
+      ]
+    },
+    "T26": {
+      "path": "notes/units/T26.tex",
+      "edition": "paper2_v3",
+      "label": "sub:T26",
+      "number": "5.36",
+      "heading_page": 48,
+      "lean_declarations": [
+        "GlobalTheory.CompanionTheory.Ar.Plug.deepStR_of_use"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_p012.tex",
+          "line0": 454,
+          "line1": 464,
+          "fragment_sha256": "3988ca569ae859930837f5d7cf9a9c102444be09125c887550b54f1f39cb0581",
+          "file_sha256": "d6e5d13fa38132480fe382a5be9f9b341680fd0b84c992fc03e83e9146e47aa6"
+        }
+      ]
+    },
+    "B01": {
+      "path": "notes/units/B01.tex",
+      "edition": "paper2_v3",
+      "label": "sub:B01",
+      "number": "5.1",
+      "heading_page": 35,
+      "lean_declarations": [
+        "UpperTheory.Gal.Int.galoisRepresentations_of_thetaLift"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_bridges.tex",
+          "line0": 17,
+          "line1": 48,
+          "fragment_sha256": "00c130e0c99b47de7452b6131ca61a2e52eed34865b59287c7e694f6ccbff71d",
+          "file_sha256": "baf9c81ada92d3f6fc3491b26d3f6c98358dd8cfe567cee3a1dab6b0933c57fe"
+        }
+      ]
+    },
+    "B02": {
+      "path": "notes/units/B02.tex",
+      "edition": "paper2_v3",
+      "label": "sub:B02",
+      "number": "5.2",
+      "heading_page": 35,
+      "lean_declarations": [
+        "UpperTheory.Gal.Int.Geo.geoOne_holds"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_bridges.tex",
+          "line0": 50,
+          "line1": 73,
+          "fragment_sha256": "c7d78c35ca43f0d36d4fa49a456ea7f610f36595aec7d3214c61a04d2a3e4885",
+          "file_sha256": "baf9c81ada92d3f6fc3491b26d3f6c98358dd8cfe567cee3a1dab6b0933c57fe"
+        }
+      ]
+    },
+    "B03": {
+      "path": "notes/units/B03.tex",
+      "edition": "paper2_v3",
+      "label": "sub:B03",
+      "number": "5.3",
+      "heading_page": 36,
+      "lean_declarations": [
+        "UpperTheory.Gal.Int.galoisLocalGlobalStrong_of_geometry_lift"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_bridges.tex",
+          "line0": 75,
+          "line1": 85,
+          "fragment_sha256": "61a125f7dc5d4f428b7aef51feb457a0da982021ef2d2c7bfd198dfdf1cb311d",
+          "file_sha256": "baf9c81ada92d3f6fc3491b26d3f6c98358dd8cfe567cee3a1dab6b0933c57fe"
+        }
+      ]
+    },
+    "B04": {
+      "path": "notes/units/B04.tex",
+      "edition": "paper2_v3",
+      "label": "sub:B04",
+      "number": "5.4",
+      "heading_page": 36,
+      "lean_declarations": [
+        "UpperTheory.Zero.LLC.recTExists"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_bridges.tex",
+          "line0": 87,
+          "line1": 114,
+          "fragment_sha256": "232ef7542757879c15d9d03e5008761b1c2c2fe48b6f95dca1e8967208f77f4f",
+          "file_sha256": "baf9c81ada92d3f6fc3491b26d3f6c98358dd8cfe567cee3a1dab6b0933c57fe"
+        }
+      ]
+    },
+    "B05": {
+      "path": "notes/units/B05.tex",
+      "edition": "paper2_v3",
+      "label": "sub:B05",
+      "number": "5.5",
+      "heading_page": 37,
+      "lean_declarations": [
+        "UpperTheory.Top.shape_closed_link_n_of_green"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_bridges.tex",
+          "line0": 118,
+          "line1": 151,
+          "fragment_sha256": "f2755fa2d81aa122e4506bf2160f1dc01ca9c97405b8a52b3c82a1b2fcbbd1e2",
+          "file_sha256": "baf9c81ada92d3f6fc3491b26d3f6c98358dd8cfe567cee3a1dab6b0933c57fe"
+        }
+      ]
+    },
+    "B06": {
+      "path": "notes/units/B06.tex",
+      "edition": "paper2_v3",
+      "label": "sub:B06",
+      "number": "5.6",
+      "heading_page": 37,
+      "lean_declarations": [
+        "GlobalTheory.Top.closed_family_admissible_twist_link_alt"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_bridges.tex",
+          "line0": 153,
+          "line1": 169,
+          "fragment_sha256": "472fbc7b4aa36aa713f3a0d645b43ea70f0b4dea6bf1b7e5d7d0a3b9cf8b5f3c",
+          "file_sha256": "baf9c81ada92d3f6fc3491b26d3f6c98358dd8cfe567cee3a1dab6b0933c57fe"
+        }
+      ]
+    },
+    "B07": {
+      "path": "notes/units/B07.tex",
+      "edition": "paper2_v3",
+      "label": "sub:B07",
+      "number": "5.7",
+      "heading_page": 37,
+      "lean_declarations": [
+        "UpperTheory.Top.supplyChi"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_bridges.tex",
+          "line0": 171,
+          "line1": 186,
+          "fragment_sha256": "2c00b42975ef5f899e804ec91bb187f11552a8514a3132d0a4a4a9d377c09116",
+          "file_sha256": "baf9c81ada92d3f6fc3491b26d3f6c98358dd8cfe567cee3a1dab6b0933c57fe"
+        }
+      ]
+    },
+    "B08": {
+      "path": "notes/units/B08.tex",
+      "edition": "paper2_v3",
+      "label": "sub:B08",
+      "number": "5.8",
+      "heading_page": 38,
+      "lean_declarations": [
+        "UpperTheory.Comparison₂.core_gm"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_bridges.tex",
+          "line0": 191,
+          "line1": 221,
+          "fragment_sha256": "f557d68e9b07ccf89b54bc0b29a197fa951187d0e9bde37249a5637cfa37acb9",
+          "file_sha256": "baf9c81ada92d3f6fc3491b26d3f6c98358dd8cfe567cee3a1dab6b0933c57fe"
+        }
+      ]
+    },
+    "B09": {
+      "path": "notes/units/B09.tex",
+      "edition": "paper2_v3",
+      "label": "sub:B09",
+      "number": "5.9",
+      "heading_page": 38,
+      "lean_declarations": [
+        "Deduction.ch_core"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_bridges.tex",
+          "line0": 223,
+          "line1": 269,
+          "fragment_sha256": "de615aac4dfd5340c68d23bd00458ffeb23fc0dcd95e45a48fc70019ee5c1dea",
+          "file_sha256": "baf9c81ada92d3f6fc3491b26d3f6c98358dd8cfe567cee3a1dab6b0933c57fe"
+        }
+      ]
+    },
+    "B10": {
+      "path": "notes/units/B10.tex",
+      "edition": "paper2_v3",
+      "label": "sub:B10",
+      "number": "5.10",
+      "heading_page": 39,
+      "lean_declarations": [
+        "Deduction.ch_top"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_bridges.tex",
+          "line0": 271,
+          "line1": 304,
+          "fragment_sha256": "9b907b3364224c22c70889f2b534b6b28d68e779302a246aae1c490edab736a4",
+          "file_sha256": "baf9c81ada92d3f6fc3491b26d3f6c98358dd8cfe567cee3a1dab6b0933c57fe"
+        }
+      ]
+    },
+    "W01": {
+      "path": "notes/units/W01.tex",
+      "edition": "paper2_v3",
+      "label": "sub:W01",
+      "number": "5.37",
+      "heading_page": 48,
+      "lean_declarations": [
+        "UpperTheory.One.Join.automorphic_window_of_inputs"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_p013.tex",
+          "line0": 10,
+          "line1": 23,
+          "fragment_sha256": "c7ac24bd67febb5792ba695065e9244c3685d7623e2c527310cf32aff2b1ed9d",
+          "file_sha256": "461885581e2cf4488dd5e39ff9c6f35fec3bd4a246c1494faf86d640234f1c28"
+        }
+      ]
+    },
+    "W02": {
+      "path": "notes/units/W02.tex",
+      "edition": "paper2_v3",
+      "label": "sub:W02",
+      "number": "5.38",
+      "heading_page": 49,
+      "lean_declarations": [
+        "UpperTheory.BaseChangeIdentities.baseChangeN"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_p013.tex",
+          "line0": 25,
+          "line1": 45,
+          "fragment_sha256": "775f3cd7cfe527b3b1d6c35612543fda6837c02e2150f3c3dcf0f6f7e110726a",
+          "file_sha256": "461885581e2cf4488dd5e39ff9c6f35fec3bd4a246c1494faf86d640234f1c28"
+        }
+      ]
+    },
+    "W03": {
+      "path": "notes/units/W03.tex",
+      "edition": "paper2_v3",
+      "label": "sub:W03",
+      "number": "5.39",
+      "heading_page": 49,
+      "lean_declarations": [
+        "UpperTheory.V.HV.DescentVanishingReductions.published_hypotheses_from_patching_alt"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_p013.tex",
+          "line0": 47,
+          "line1": 62,
+          "fragment_sha256": "ea855bf4ef336d565b70dca501b3b080a06bcf9db8c08cff57208434d2f4e4ad",
+          "file_sha256": "461885581e2cf4488dd5e39ff9c6f35fec3bd4a246c1494faf86d640234f1c28"
+        }
+      ]
+    },
+    "W04": {
+      "path": "notes/units/W04.tex",
+      "edition": "paper2_v3",
+      "label": "sub:W04",
+      "number": "5.40",
+      "heading_page": 49,
+      "lean_declarations": [
+        "UpperTheory.V.Z.Tf.SR.descWeak"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_p013.tex",
+          "line0": 64,
+          "line1": 80,
+          "fragment_sha256": "933a577eeedd803765f95d04a50f849bd9c43bedb855656df18973c0bc632641",
+          "file_sha256": "461885581e2cf4488dd5e39ff9c6f35fec3bd4a246c1494faf86d640234f1c28"
+        }
+      ]
+    },
+    "W05": {
+      "path": "notes/units/W05.tex",
+      "edition": "paper2_v3",
+      "label": "sub:W05",
+      "number": "5.41",
+      "heading_page": 50,
+      "lean_declarations": [
+        "UpperTheory.V.ZK.lemmaK_litN_alt"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_p013.tex",
+          "line0": 82,
+          "line1": 98,
+          "fragment_sha256": "41a82d685bbe03a0a65d13fa51a7a0445338542ae47e47f6c19a77911a1df0e7",
+          "file_sha256": "461885581e2cf4488dd5e39ff9c6f35fec3bd4a246c1494faf86d640234f1c28"
+        }
+      ]
+    },
+    "W06": {
+      "path": "notes/units/W06.tex",
+      "edition": "paper2_v3",
+      "label": "sub:W06",
+      "number": "5.42",
+      "heading_page": 50,
+      "lean_declarations": [
+        "UpperTheory.V.HV.DescentVanishingReductions.sp4In0_alt"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_p013.tex",
+          "line0": 100,
+          "line1": 126,
+          "fragment_sha256": "6ac9d671fd32fb88379f1817aa9bc05e49f0a583ff2ffd5d53c9756704c6fdd1",
+          "file_sha256": "461885581e2cf4488dd5e39ff9c6f35fec3bd4a246c1494faf86d640234f1c28"
+        }
+      ]
+    },
+    "W07": {
+      "path": "notes/units/W07.tex",
+      "edition": "paper2_v3",
+      "label": "sub:W07",
+      "number": "5.43",
+      "heading_page": 50,
+      "lean_declarations": [
+        "UpperTheory.V.Z.Kato.WeilSphericalRecords.katoTwoW_of_printsH"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_p013.tex",
+          "line0": 128,
+          "line1": 170,
+          "fragment_sha256": "5e593224b9167e5e7ebd8888a2414bd31cb3fc762cc9fe051a3ebd6861de48a8",
+          "file_sha256": "461885581e2cf4488dd5e39ff9c6f35fec3bd4a246c1494faf86d640234f1c28"
+        }
+      ]
+    },
+    "W08": {
+      "path": "notes/units/W08.tex",
+      "edition": "paper2_v3",
+      "label": "sub:W08",
+      "number": "5.44",
+      "heading_page": 51,
+      "lean_declarations": [
+        "UpperTheory.V.Z.J.count_i_of_printed_bound_k_kato_automorphy"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_p013.tex",
+          "line0": 172,
+          "line1": 187,
+          "fragment_sha256": "6483df231c5301f12370d862955e2da10fdff63f92e7d5cbc74e2bd55270feb9",
+          "file_sha256": "461885581e2cf4488dd5e39ff9c6f35fec3bd4a246c1494faf86d640234f1c28"
+        }
+      ]
+    },
+    "W09": {
+      "path": "notes/units/W09.tex",
+      "edition": "paper2_v3",
+      "label": "sub:W09",
+      "number": "5.45",
+      "heading_page": 51,
+      "lean_declarations": [
+        "UpperTheory.V.HV.DescentVanishingReductions.countII_and_countIII_of_printsH_of_sp4In"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_p013.tex",
+          "line0": 189,
+          "line1": 201,
+          "fragment_sha256": "5fe5afdd15bce902d5c70a9627c26cbd6781e05402eb26f2053a5d6aa59a39e6",
+          "file_sha256": "461885581e2cf4488dd5e39ff9c6f35fec3bd4a246c1494faf86d640234f1c28"
+        }
+      ]
+    },
+    "W10": {
+      "path": "notes/units/W10.tex",
+      "edition": "paper2_v3",
+      "label": "sub:W10",
+      "number": "5.46",
+      "heading_page": 52,
+      "lean_declarations": [
+        "UpperTheory.V.Z.J.count_v_of_printed_bound_k_reduced_unitary_lift"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_p013.tex",
+          "line0": 203,
+          "line1": 220,
+          "fragment_sha256": "f509db1a529870996ecb8e08b646feaaa4041235553825c1b22e2359f3e59acd",
+          "file_sha256": "461885581e2cf4488dd5e39ff9c6f35fec3bd4a246c1494faf86d640234f1c28"
+        }
+      ]
+    },
+    "W11": {
+      "path": "notes/units/W11.tex",
+      "edition": "paper2_v3",
+      "label": "sub:W11",
+      "number": "5.47",
+      "heading_page": 52,
+      "lean_declarations": [
+        "UpperTheory.V.FW.ferreroWashington"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_p013.tex",
+          "line0": 222,
+          "line1": 242,
+          "fragment_sha256": "a37ac69ea254fc931cf811151c14e3ebf4ff007d0ddd54c2ccc948119a96d6dd",
+          "file_sha256": "461885581e2cf4488dd5e39ff9c6f35fec3bd4a246c1494faf86d640234f1c28"
+        }
+      ]
+    },
+    "W12": {
+      "path": "notes/units/W12.tex",
+      "edition": "paper2_v3",
+      "label": "sub:W12",
+      "number": "5.48",
+      "heading_page": 52,
+      "lean_declarations": [
+        "UpperTheory.V.Win.thmBab_of_lemmaK"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_p013.tex",
+          "line0": 244,
+          "line1": 270,
+          "fragment_sha256": "ed7f7ca5c4364b8947823403a14232ad5f0947d1cd6073e6dbbe51c541646b66",
+          "file_sha256": "461885581e2cf4488dd5e39ff9c6f35fec3bd4a246c1494faf86d640234f1c28"
+        }
+      ]
+    },
+    "W13": {
+      "path": "notes/units/W13.tex",
+      "edition": "paper2_v3",
+      "label": "sub:W13",
+      "number": "5.49",
+      "heading_page": 53,
+      "lean_declarations": [
+        "UpperTheory.V.HV.vwin_of_counts"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_p013.tex",
+          "line0": 272,
+          "line1": 284,
+          "fragment_sha256": "ff185e5ffb2367012b0ff067f9f16ef681627ef3375520b5a9070107611564b2",
+          "file_sha256": "461885581e2cf4488dd5e39ff9c6f35fec3bd4a246c1494faf86d640234f1c28"
+        }
+      ]
+    },
+    "W14": {
+      "path": "notes/units/W14.tex",
+      "edition": "paper2_v3",
+      "label": "sub:W14",
+      "number": "5.50",
+      "heading_page": 53,
+      "lean_declarations": [
+        "UpperTheory.V.Odd.thmBcFree_of"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_p013.tex",
+          "line0": 286,
+          "line1": 312,
+          "fragment_sha256": "991ee82ada4257fe2ab2acd397908f35221389a43d84cf0ad869658c58dbe4e2",
+          "file_sha256": "461885581e2cf4488dd5e39ff9c6f35fec3bd4a246c1494faf86d640234f1c28"
+        }
+      ]
+    },
+    "W15": {
+      "path": "notes/units/W15.tex",
+      "edition": "paper2_v3",
+      "label": "sub:W15",
+      "number": "5.51",
+      "heading_page": 53,
+      "lean_declarations": [
+        "UpperTheory.V.X.propZ"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_p013.tex",
+          "line0": 314,
+          "line1": 321,
+          "fragment_sha256": "ec551620b4c96452d8f0fdee0b8c1afdd74df3cbd294e9db727be24d6763db5a",
+          "file_sha256": "461885581e2cf4488dd5e39ff9c6f35fec3bd4a246c1494faf86d640234f1c28"
+        }
+      ]
+    },
+    "W16": {
+      "path": "notes/units/W16.tex",
+      "edition": "paper2_v3",
+      "label": "sub:W16",
+      "number": "5.52",
+      "heading_page": 54,
+      "lean_declarations": [
+        "UpperTheory.HeckeLevelFrameExistence.candFin"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/split_p013.tex",
+          "line0": 323,
+          "line1": 337,
+          "fragment_sha256": "a382433461d50311d5dd368cbbf87d332184ca61a237d51d2375a38440e6a2f2",
+          "file_sha256": "461885581e2cf4488dd5e39ff9c6f35fec3bd4a246c1494faf86d640234f1c28"
+        }
+      ]
+    },
+    "D002": {
+      "path": "notes/units/D002.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D002",
+      "number": "G.3",
+      "heading_page": 157,
+      "lean_declarations": [
+        "GlobalTheory.T.globalLatticeIndexTheorem_of_lengthBoundAtPlaces"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 89,
+          "line1": 94,
+          "fragment_sha256": "356433fc95d8b293c5e8bc5d3b9f58ab26ab877f471fa041791c3332ea29e286",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D004": {
+      "path": "notes/units/D004.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D004",
+      "number": "G.6",
+      "heading_page": 158,
+      "lean_declarations": [
+        "GlobalTheory.T.wachLattice_laterClauses_hold"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 114,
+          "line1": 119,
+          "fragment_sha256": "b6792c97da8a71eb8fabb0d895a0e5892147b8ee5b06bdf0a8868275ea64d945",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D006": {
+      "path": "notes/units/D006.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D006",
+      "number": "G.8",
+      "heading_page": 158,
+      "lean_declarations": [
+        "GlobalTheory.T.theorem_tb_of_local_blochKato_duality_euler"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 130,
+          "line1": 135,
+          "fragment_sha256": "38e7c70e870613db80850e2d2e868779edd42c456f28d7314d0219337eed4d31",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D014": {
+      "path": "notes/units/D014.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D014",
+      "number": "G.16",
+      "heading_page": 160,
+      "lean_declarations": [
+        "UpperTheory.Comparison₂.hostFactsS"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 194,
+          "line1": 199,
+          "fragment_sha256": "7f82b36b42cbc52c492ec321838129abcf89aae969f4f2b985fc98d20e0af15d",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D024": {
+      "path": "notes/units/D024.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D024",
+      "number": "G.28",
+      "heading_page": 163,
+      "lean_declarations": [
+        "GlobalTheory.T.twisted_theta_integral_unfolds"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 294,
+          "line1": 299,
+          "fragment_sha256": "3e01e5a98fabcf80a90cb6faf582941a2a9610e47d7015d26f64f0587a270897",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D025": {
+      "path": "notes/units/D025.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D025",
+      "number": "G.29",
+      "heading_page": 164,
+      "lean_declarations": [
+        "ReciprocityTheory.ChartRestriction.DS.Lap.TopClosed.besselNVG"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 302,
+          "line1": 307,
+          "fragment_sha256": "24cf72d8c02afed04fd390cc5638b698c7d5f4cb851e39d4f5b72dd71f57bd5b",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D033": {
+      "path": "notes/units/D033.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D033",
+      "number": "G.37",
+      "heading_page": 166,
+      "lean_declarations": [
+        "GlobalTheory.rowNGP_of_siegelWeil"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 366,
+          "line1": 371,
+          "fragment_sha256": "8dbb3cb46db03a6c940e0ca814b419dc0d9d57897eee403e03ed379ba93dd1a7",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D044": {
+      "path": "notes/units/D044.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D044",
+      "number": "G.48",
+      "heading_page": 169,
+      "lean_declarations": [
+        "GlobalTheory.T.twisted_square_theta_integrals_eq"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 454,
+          "line1": 459,
+          "fragment_sha256": "973eac588fcf61705ce32a865af2bdc29e8676f6fc01ee9764a6d5d15e0240ed",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D077": {
+      "path": "notes/units/D077.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D077",
+      "number": "G.83",
+      "heading_page": 178,
+      "lean_declarations": [
+        "UpperTheory.V.Z.Sym.W.prop_eg_w_of_printed_hida"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 744,
+          "line1": 749,
+          "fragment_sha256": "a1969cadf6ffe8feb9397eae789a0dfd863ae3fad88412a26b426c33f65d22e0",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D082": {
+      "path": "notes/units/D082.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D082",
+      "number": "G.89",
+      "heading_page": 179,
+      "lean_declarations": [
+        "UpperTheory.V.Loc.bkAbove"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 793,
+          "line1": 798,
+          "fragment_sha256": "5bf575b24b5ca757adbb68f4e35fa22cf6ab27ff82bc7f98e6a43907302edcb8",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D097": {
+      "path": "notes/units/D097.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D097",
+      "number": "G.105",
+      "heading_page": 183,
+      "lean_declarations": [
+        "GlobalTheory.T.saturatedOrdinaryIdeal_cuts_out_crystalline_locus"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 922,
+          "line1": 927,
+          "fragment_sha256": "d6cf24ff71595d462487a2f72e65756af51d3a1fce3e5219715cf6c7cdcb4665",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D108": {
+      "path": "notes/units/D108.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D108",
+      "number": "G.116",
+      "heading_page": 186,
+      "lean_declarations": [
+        "UpperTheory.V.X.residual_bernoulli_nonvanishing"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 1012,
+          "line1": 1017,
+          "fragment_sha256": "e66e1e8065afaa37563a1cd32d885e342d134874109d0dbd79b2e7bfd34ad069",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D123": {
+      "path": "notes/units/D123.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D123",
+      "number": "G.133",
+      "heading_page": 190,
+      "lean_declarations": [
+        "GlobalTheory.T.FlatDegree_holds"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 1153,
+          "line1": 1158,
+          "fragment_sha256": "3da2965bea4281c07df645586c647a388ba103c7bc81848f0b1cad0951e9c071",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D128": {
+      "path": "notes/units/D128.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D128",
+      "number": "G.138",
+      "heading_page": 191,
+      "lean_declarations": [
+        "GlobalTheory.T.thetaKeyScalar_isUnit_on_integralModels"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 1193,
+          "line1": 1198,
+          "fragment_sha256": "98e34c1cf9da394935113c78e124a8baba40923bff4f5b5dc101dea912801f71",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D154": {
+      "path": "notes/units/D154.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D154",
+      "number": "G.164",
+      "heading_page": 198,
+      "lean_declarations": [
+        "ChowFormCompatibility.chow_form_hyperplane_section"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 1401,
+          "line1": 1406,
+          "fragment_sha256": "2cce46319a3d72acec098cf7f5482b7f4223530250c143610565529a09ca745a",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D155": {
+      "path": "notes/units/D155.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D155",
+      "number": "G.165",
+      "heading_page": 198,
+      "lean_declarations": [
+        "FubiniStudyChowHeightFormula₂.fubiniStudy_chowHeight_formula"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 1409,
+          "line1": 1414,
+          "fragment_sha256": "25cc6503a6e3d3ba06ac32475cf8c2d534482565a088b239abc64eae9a338f64",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D174": {
+      "path": "notes/units/D174.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D174",
+      "number": "G.184",
+      "heading_page": 203,
+      "lean_declarations": [
+        "GlobalTheory.T.charpoly_deRhamHomology_endomorphism_eq_map_ladic"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 1565,
+          "line1": 1570,
+          "fragment_sha256": "8b85a0c2826deee789a3b66162dce59dcafbfc0e7cc036e2b21288403898211e",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D193": {
+      "path": "notes/units/D193.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D193",
+      "number": "G.203",
+      "heading_page": 207,
+      "lean_declarations": [
+        "UpperTheory.Gal.crystallineComparison.Mod.esNorm_link"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 1718,
+          "line1": 1723,
+          "fragment_sha256": "4d7034879c9683804fad61d88bf1bc9598509d7d9e936c9a86422a992a89c3f4",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D203": {
+      "path": "notes/units/D203.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D203",
+      "number": "G.213",
+      "heading_page": 210,
+      "lean_declarations": [
+        "GroundTheory.PAdicHodge.bDeRham_fixed"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 1798,
+          "line1": 1803,
+          "fragment_sha256": "f92b1d6a24e2e43c44834f6a8ab5c4e93dc5103f3d984096bd3beb2b9db291d6",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D230": {
+      "path": "notes/units/D230.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D230",
+      "number": "G.241",
+      "heading_page": 217,
+      "lean_declarations": [
+        "GroundTheory.PAdicHodge.ACris.bCris_fixed_mem_maxUnramified"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 2023,
+          "line1": 2028,
+          "fragment_sha256": "2339b33107dcd64a53652bba0505164438e690b3c3654c3030b662d103aabcd0",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D245": {
+      "path": "notes/units/D245.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D245",
+      "number": "G.256",
+      "heading_page": 221,
+      "lean_declarations": [
+        "GroundTheory.PAdicHodge.ACris.phiPlus_mem_span_periodT"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 2143,
+          "line1": 2148,
+          "fragment_sha256": "135665bfef6490c5714aee0210349db284ce0e3506072d74a4f98221126f5c53",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D302": {
+      "path": "notes/units/D302.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D302",
+      "number": "G.313",
+      "heading_page": 235,
+      "lean_declarations": [
+        "GlobalTheory.T.crystalline_graded_pieces_description"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 2599,
+          "line1": 2604,
+          "fragment_sha256": "5c04711938274188aa9b0cc2ec8e8927af007080993302506ed50678b79bc718",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D309": {
+      "path": "notes/units/D309.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D309",
+      "number": "G.320",
+      "heading_page": 237,
+      "lean_declarations": [
+        "GlobalTheory.CompanionTheory.Relay.hodge_tate_of_fargues_exact"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 2656,
+          "line1": 2661,
+          "fragment_sha256": "eb7d157db34588d26baac3e6f139e1813151629e5d99c23b11c7e2de51a3941e",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D317": {
+      "path": "notes/units/D317.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D317",
+      "number": "G.330",
+      "heading_page": 239,
+      "lean_declarations": [
+        "GlobalTheory.T.full_intersection_tower_I8_identity"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 2742,
+          "line1": 2747,
+          "fragment_sha256": "2914ac142b24bf5308041917eb5ea7ceaee72c7a92f02d1000467fd61556b974",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D331": {
+      "path": "notes/units/D331.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D331",
+      "number": "G.344",
+      "heading_page": 242,
+      "lean_declarations": [
+        "GlobalTheory.T.cusp_weight_integrable_on_fundamental_set"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 2854,
+          "line1": 2859,
+          "fragment_sha256": "1385e8def993219ee97621360dbb871227c163449135589bcb5e56131f8eb66f",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D340": {
+      "path": "notes/units/D340.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D340",
+      "number": "G.353",
+      "heading_page": 244,
+      "lean_declarations": [
+        "GlobalTheory.T.period_gram_comparison_bound"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 2926,
+          "line1": 2931,
+          "fragment_sha256": "a3032c737f25fd46d11e3c08be2046dfc0a0226880222dc4facec058520fbab8",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D351": {
+      "path": "notes/units/D351.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D351",
+      "number": "G.364",
+      "heading_page": 247,
+      "lean_declarations": [
+        "ReciprocityTheory.AnForm.M.poincareLelong"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 3014,
+          "line1": 3019,
+          "fragment_sha256": "5da7d86300d4ceb44e36e8a9a27e0fa6828a0cb82bb06c1510d5f0ffd587b2bb",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D379": {
+      "path": "notes/units/D379.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D379",
+      "number": "G.392",
+      "heading_page": 254,
+      "lean_declarations": [
+        "GlobalTheory.CountConstants.count_constants_of_siegelWeil"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 3243,
+          "line1": 3248,
+          "fragment_sha256": "d23ce0c48b1af984b2b19d63d6ec728b931f74f7c15de35cfcbd0b865bf7054a",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D394": {
+      "path": "notes/units/D394.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D394",
+      "number": "G.408",
+      "heading_page": 258,
+      "lean_declarations": [
+        "GlobalTheory.T.period_entries_tie_and_level_valuations_at_built"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 3378,
+          "line1": 3384,
+          "fragment_sha256": "4e3849a2215da5f2e97ba642f8c5f9d0b603d133bb853225f51ab9b94ff6f0af",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D415": {
+      "path": "notes/units/D415.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D415",
+      "number": "G.430",
+      "heading_page": 264,
+      "lean_declarations": [
+        "GlobalTheory.T.thetaLift_adjoint_scalarFormula_injective"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 3567,
+          "line1": 3572,
+          "fragment_sha256": "ffeace1eec50167dad4cec2dea09a389bba09a4ce2b7557758a80732defedd91",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D421": {
+      "path": "notes/units/D421.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D421",
+      "number": "G.437",
+      "heading_page": 266,
+      "lean_declarations": [
+        "GlobalTheory.NLinkClose.main_alt_alt"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 3626,
+          "line1": 3632,
+          "fragment_sha256": "911870043a467f2a781c8b442d7c5af730a4d517a41be9f5a8a1e97cb4922f4e",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D427": {
+      "path": "notes/units/D427.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D427",
+      "number": "G.443",
+      "heading_page": 267,
+      "lean_declarations": [
+        "UpperTheory.GalC.linkN_of_twGood_galoisPreconditions"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 3676,
+          "line1": 3682,
+          "fragment_sha256": "c6a7220a56557f806ee1bacb72013acd852796b51fc7055c2315dd49329226ff",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D443": {
+      "path": "notes/units/D443.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D443",
+      "number": "G.461",
+      "heading_page": 271,
+      "lean_declarations": [
+        "GlobalTheory.T.flatDeg_of_scholzeWeinstein_of_prints"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 3825,
+          "line1": 3830,
+          "fragment_sha256": "d54b6cb1d1df93bd9448879e67b6944903b5cd5653f5bb62a43e01da25edf44f",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D479": {
+      "path": "notes/units/D479.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D479",
+      "number": "G.499",
+      "heading_page": 281,
+      "lean_declarations": [
+        "GlobalTheory.Top.link_gl"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 4136,
+          "line1": 4141,
+          "fragment_sha256": "46dffa67cc0eda5e9297d534fa1f25bb0a98bde3d5b5918d381b82d5535ea7ec",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D481": {
+      "path": "notes/units/D481.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D481",
+      "number": "G.501",
+      "heading_page": 282,
+      "lean_declarations": [
+        "Formalism.L2.DIV.closed_linkDIVt_of_closed_bridge_kernel"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 4152,
+          "line1": 4157,
+          "fragment_sha256": "d302b9d0773fb0d50c94c5c3ea141c80d976cd12141d857b75b720da4f53fd0d",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D484": {
+      "path": "notes/units/D484.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D484",
+      "number": "G.504",
+      "heading_page": 282,
+      "lean_declarations": [
+        "GlobalTheory.Top.link_alt_alt_bis"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 4176,
+          "line1": 4181,
+          "fragment_sha256": "c1a99d2f04436e9adf0193262554d70e720b662324f092081505e6f735ee5ffc",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D486": {
+      "path": "notes/units/D486.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D486",
+      "number": "G.506",
+      "heading_page": 283,
+      "lean_declarations": [
+        "GlobalTheory.Top.Irr.closed_linkIRR_of_join_count"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 4192,
+          "line1": 4197,
+          "fragment_sha256": "98a9736c42185249ca44b78aed18e0cf9368cb7ad44c55065fb2986ce8f08ff2",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D506": {
+      "path": "notes/units/D506.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D506",
+      "number": "G.529",
+      "heading_page": 289,
+      "lean_declarations": [
+        "UpperTheory.V.Z.Coh.borelInjC"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 4382,
+          "line1": 4387,
+          "fragment_sha256": "88269c1ce4650291d8ca7216380d43a822b28a66488418c7b9f86ac1bbe94749",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D510": {
+      "path": "notes/units/D510.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D510",
+      "number": "G.533",
+      "heading_page": 290,
+      "lean_declarations": [
+        "UpperTheory.T3.supplyOfAdmOf"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 4415,
+          "line1": 4420,
+          "fragment_sha256": "010dd8db4ff781681057db2a1c07071971d12de26bd8b70c58c7ab8f142ea6d0",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D511": {
+      "path": "notes/units/D511.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D511",
+      "number": "G.534",
+      "heading_page": 290,
+      "lean_declarations": [
+        "UpperTheory.Top.hostOfField"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 4423,
+          "line1": 4428,
+          "fragment_sha256": "ff975f54f0cbef184b4dfd511bd71b81a80d2b1ffc6ff936d284d5a9cdde7a36",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D513": {
+      "path": "notes/units/D513.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D513",
+      "number": "G.536",
+      "heading_page": 291,
+      "lean_declarations": [
+        "GlobalTheory.EX.exists_ranks_rankVal_frame"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 4439,
+          "line1": 4444,
+          "fragment_sha256": "96afbb5dd05cda3c0539fe3a07f29fb24ed067a54cf81acf5bba2caddebcfccf",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D528": {
+      "path": "notes/units/D528.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D528",
+      "number": "G.555",
+      "heading_page": 296,
+      "lean_declarations": [
+        "UpperTheory.V.Z.J.oneCharU_of_katoTwoW_rig_admI_automorphy"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 4599,
+          "line1": 4604,
+          "fragment_sha256": "0c0b2fcad5e87057f8df05c3a1e64fb5f0e6e5bf9ab8c304c23295ca754b3ca1",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D532": {
+      "path": "notes/units/D532.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D532",
+      "number": "G.560",
+      "heading_page": 297,
+      "lean_declarations": [
+        "UpperTheory.V.U3.countI"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 4640,
+          "line1": 4645,
+          "fragment_sha256": "ffefb88887ea737c94bf1459b705217e7709156c87b1aea48e3abadbecb2401b",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D536": {
+      "path": "notes/units/D536.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D536",
+      "number": "G.564",
+      "heading_page": 298,
+      "lean_declarations": [
+        "UpperTheory.V.vwinAt_of_joint"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 4673,
+          "line1": 4678,
+          "fragment_sha256": "80a4c60a49c17eada4c0f7b2fa05d2c9f837e7faf29f70889dde02072c19070c",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D547": {
+      "path": "notes/units/D547.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D547",
+      "number": "G.577",
+      "heading_page": 301,
+      "lean_declarations": [
+        "UpperTheory.Comparison₂.gmA_eq"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 4781,
+          "line1": 4786,
+          "fragment_sha256": "92cdf52ccd1635edf67899c08b8e60afe73e0e523f570fd0a52457c77f028363",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D548": {
+      "path": "notes/units/D548.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D548",
+      "number": "G.579",
+      "heading_page": 302,
+      "lean_declarations": [
+        "UpperTheory.Comparison₂.charsA"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 4798,
+          "line1": 4803,
+          "fragment_sha256": "ce70405705a6c84ab6af264227b25bae33dda2da52084c14f0a644626ec677b3",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D549": {
+      "path": "notes/units/D549.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D549",
+      "number": "G.580",
+      "heading_page": 302,
+      "lean_declarations": [
+        "UpperTheory.Comparison₂.sigA_le"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 4806,
+          "line1": 4811,
+          "fragment_sha256": "5a4f805fa25dd04d3e0c6a09d732f12aaba66ad6d11bfd600113a3c52a5a9a30",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D550": {
+      "path": "notes/units/D550.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D550",
+      "number": "G.581",
+      "heading_page": 302,
+      "lean_declarations": [
+        "Formalism.LFunctionChainParameters.LErr.large_x_eventually"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 4814,
+          "line1": 4819,
+          "fragment_sha256": "7a72b3bd81a2279395b40207d5cd64f500e22b5b45dc627af3d2cfb4b453456e",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D551": {
+      "path": "notes/units/D551.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D551",
+      "number": "G.582",
+      "heading_page": 302,
+      "lean_declarations": [
+        "UpperTheory.V.Odd.killPow"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 4823,
+          "line1": 4828,
+          "fragment_sha256": "6b96848950aee2306e3db8111d61e7a8bcc080ee037b95d79e2aca21f58aee46",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D558": {
+      "path": "notes/units/D558.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D558",
+      "number": "G.590",
+      "heading_page": 304,
+      "lean_declarations": [
+        "UpperTheory.V.Base.control"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 4889,
+          "line1": 4894,
+          "fragment_sha256": "c33eef0a52e40aa2c046d8bf5417a1e70d214fcbb0d608fa861797f2119d41ce",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D561": {
+      "path": "notes/units/D561.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D561",
+      "number": "G.594",
+      "heading_page": 305,
+      "lean_declarations": [
+        "Deduction.CharacterBalanceMoves.core"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 4923,
+          "line1": 4928,
+          "fragment_sha256": "2b9d4b2b102af34f580955f3a82387915618e2f876d039d3fa1da9f9fb7dd09c",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D562": {
+      "path": "notes/units/D562.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D562",
+      "number": "G.595",
+      "heading_page": 306,
+      "lean_declarations": [
+        "Formalism.LFunctionChainParameters.ThickSetMeanBounds.derivative_integral_all"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 4931,
+          "line1": 4936,
+          "fragment_sha256": "9caf2526d9ca1bc8735447b498225f20e234eef78ddd49f157934e49e4e5b81b",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D563": {
+      "path": "notes/units/D563.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D563",
+      "number": "G.596",
+      "heading_page": 306,
+      "lean_declarations": [
+        "Formalism.LFunctionChainParameters.ThickSetMeanBounds.proposition_size_bound"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 4939,
+          "line1": 4947,
+          "fragment_sha256": "78f4c819057a5364896463dc172e3b80bcbabb75b6fa17746e0896964058d315",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ],
+      "additional_exposition": {
+        "path": "notes/units/D563-argument.tex",
+        "heading_page": 13,
+        "source": "out/r23_budget.tex",
+        "source_sha256": "85dbea55991176a134df2edeadb31e86bc846586dec36f6144300b459eacc72a"
+      }
+    },
+    "D564": {
+      "path": "notes/units/D564.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D564",
+      "number": "G.598",
+      "heading_page": 306,
+      "lean_declarations": [
+        "Deduction.CharacterBalanceMoves.one_char"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 4959,
+          "line1": 4964,
+          "fragment_sha256": "54b0f32ef2c2f8aeec45bcff8c7d9bdfc378c5ee44ba404e758dcddb93b1bee9",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D566": {
+      "path": "notes/units/D566.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D566",
+      "number": "G.600",
+      "heading_page": 307,
+      "lean_declarations": [
+        "Formalism.LFunctionChainParameters.LChain.size_windows_split"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 4975,
+          "line1": 4980,
+          "fragment_sha256": "fa11c3dcecdb2e6f77a51ef2a9b22c38a80f602d0dfd5b797f02e65c10b309d6",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D567": {
+      "path": "notes/units/D567.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D567",
+      "number": "G.601",
+      "heading_page": 307,
+      "lean_declarations": [
+        "Formalism.LFunctionChainParameters.LChain.errX5at_le"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 4984,
+          "line1": 4989,
+          "fragment_sha256": "9f1831acaa24a6f75d502d6fd477cfdb6eeddf5e7271454ff02085d6b21cb5a4",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D568": {
+      "path": "notes/units/D568.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D568",
+      "number": "G.602",
+      "heading_page": 307,
+      "lean_declarations": [
+        "Formalism.LFunctionChainParameters.WeightedSlopeBounds.Ga_bound5"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 4992,
+          "line1": 4997,
+          "fragment_sha256": "feff4980b86a3fcdb87284017a9edeeb7af62c53183f91a86071571b1c9c2431",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D569": {
+      "path": "notes/units/D569.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D569",
+      "number": "G.605",
+      "heading_page": 308,
+      "lean_declarations": [
+        "Deduction.ch_top_main_eq"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 5018,
+          "line1": 5023,
+          "fragment_sha256": "77929bbf049f55ebacabe9e0548065fd64252c668bbd8ec7daf725b911d9e7d2",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D570": {
+      "path": "notes/units/D570.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D570",
+      "number": "G.606",
+      "heading_page": 308,
+      "lean_declarations": [
+        "Formalism.LFunctionChainParameters.WeightedSlopeBounds.weighted_mean_lower_bound_le"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 5026,
+          "line1": 5031,
+          "fragment_sha256": "9962b282ee2ca5ab561205aa30c15d39db66554f7eb55bc44e4634989cd4f38c",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    },
+    "D575": {
+      "path": "notes/units/D575.tex",
+      "edition": "paper2_v3",
+      "label": "decomp:D575",
+      "number": "G.614",
+      "heading_page": 310,
+      "lean_declarations": [
+        "GlobalTheory.GreenBridge.green_of_regular"
+      ],
+      "source_ranges": [
+        {
+          "file": "paper2/decomposition_tables.tex",
+          "line0": 5096,
+          "line1": 5101,
+          "fragment_sha256": "210d70168a590d79e5353da1a72d4b28439d493cd3dabffa7f1e89e995de7b05",
+          "file_sha256": "c473458e958724530fdb7b501cdc647cab6226e4150c575ffb33a6c3031dc418"
+        }
+      ]
+    }
+  },
+  "lean_declarations": {
+    "riemannHypothesis": [
+      "P001"
+    ],
+    "riemannZeta_eq_zero_re": [
+      "P002"
+    ],
+    "LFunction_ne_zero_of_half_lt_re": [
+      "P003"
+    ],
+    "LFunction_eq_zero_re": [
+      "P004"
+    ],
+    "LFunction_eq_zero_re_of_isPrimitive": [
+      "P005"
+    ],
+    "claimAll": [
+      "P006"
+    ],
+    "critAll": [
+      "P007"
+    ],
+    "rhOfAll": [
+      "P008"
+    ],
+    "allChi": [
+      "P009"
+    ],
+    "UpperTheory.FinalTheorems.everyCharacter": [
+      "P010"
+    ],
+    "UpperTheory.FinalTheorems.everyCharacter_of_row": [
+      "P011"
+    ],
+    "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin": [
+      "P012"
+    ],
+    "UpperTheory.One.vwin_of_row": [
+      "P013"
+    ],
+    "UpperTheory.Top.every_character_of_green_v_win": [
+      "P014"
+    ],
+    "UpperTheory.Top.zero_free_all_of_green_v_win": [
+      "P015"
+    ],
+    "UpperTheory.Top.zeroFreeAll_of_topG": [
+      "P016"
+    ],
+    "UpperTheory.Comparison₂.level_gm_le_on_family_scales": [
+      "P017"
+    ],
+    "UpperTheory.Comparison₂.formB": [
+      "P018"
+    ],
+    "Formalism.HC.zeroFreeOn_of_tiedWin_cyc": [
+      "P019"
+    ],
+    "UpperTheory.V.HV.Core.of_four_alt": [
+      "P020"
+    ],
+    "Formalism.LFunctionChainParameters.WeightedSlopeBounds.each_unit_bound_statement": [
+      "P021"
+    ],
+    "Deduction.landau_window": [
+      "P022"
+    ],
+    "Deduction.zeroFree_of_rpow_window": [
+      "P023"
+    ],
+    "UpperTheory.V.Z.Win.Dn.ends0_alt": [
+      "P024"
+    ],
+    "UpperTheory.V.Th.adjointLiftingTheorem_of_locPrints_of_core": [
+      "P025"
+    ],
+    "UpperTheory.V.Z.Kato.Final.zetaUr": [
+      "P026"
+    ],
+    "UpperTheory.V.Alg.M.main_holds": [
+      "P027"
+    ],
+    "UpperTheory.V.Alg.M.mprime_holds": [
+      "P028"
+    ],
+    "UpperTheory.GalN.V.Win.N.countK_alt": [
+      "P029"
+    ],
+    "UpperTheory.GalN.V.Win.N.countQ_alt": [
+      "P030"
+    ],
+    "UpperTheory.V.Tower.exists_descends": [
+      "P031"
+    ],
+    "UpperTheory.V.ZK.sClassOf": [
+      "P032"
+    ],
+    "UpperTheory.V.ZK.sThetaOf": [
+      "P033"
+    ],
+    "PositivityTheory.KB.bOdd_zk": [
+      "P034"
+    ],
+    "UpperTheory.V.ZK.Up.torsStab": [
+      "P035"
+    ],
+    "UpperTheory.V.ZK.sCount": [
+      "P036"
+    ],
+    "PositivityTheory.QuaternionShaBounds.sSha": [
+      "P037"
+    ],
+    "UpperTheory.V.KT.tors_le": [
+      "P038"
+    ],
+    "UpperTheory.V.ZK.torsAll": [
+      "P039"
+    ],
+    "UpperTheory.V.LDataCardLeFinrank.vFormula_of_classicalTheorems": [
+      "P040"
+    ],
+    "Formalism.MainNotions.N.K.normalized_ring_data": [
+      "P041"
+    ],
+    "Formalism.RepresentationBoundsCohomology.ringDataObjects.moduleBc": [
+      "P042"
+    ],
+    "Formalism.MainNotions.N.K.Closed.open_inputs_at_normalized": [
+      "P043"
+    ],
+    "Formalism.MainNotions.N.K.Closed.theorem_n5_from_inputs": [
+      "P044"
+    ],
+    "Formalism.MainNotions.FormalGroupSystem.Pf.hecke_place_bound": [
+      "P045"
+    ],
+    "GlobalTheory.TwV.site_cmpLite_siteAdm": [
+      "P046"
+    ],
+    "Formalism.MainNotions.WeilJacquetShalikaLaw.Proof.first_clause_cases": [
+      "P047"
+    ],
+    "GlobalTheory.PerTwClose.twistedPeriodAdmissible_of_rowInt": [
+      "P048"
+    ],
+    "Formalism.HN.height_gram_determinant": [
+      "P049"
+    ],
+    "Formalism.HN.place_lattice_structure": [
+      "P050"
+    ],
+    "GlobalTheory.TwV.adLawAt_xiAd": [
+      "P090"
+    ],
+    "GlobalTheory.Mem.Col2.SameOff.use₆": [
+      "P096"
+    ],
+    "GlobalTheory.TwV.congAt_fb_lev": [
+      "P134"
+    ],
+    "UpperTheory.Lit.every_character_of_theta_integrals_local_matching": [
+      "T01"
+    ],
+    "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound": [
+      "T02"
+    ],
+    "GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt": [
+      "T03"
+    ],
+    "GlobalTheory.Fc.AllAtMemberStage0.allRows_of_open0_alt": [
+      "T04"
+    ],
+    "GlobalTheory.Fc.S0.ontoX_and_lamLow_of_unitaryGroupHypotheses'": [
+      "T05"
+    ],
+    "GlobalTheory.T.large_unramified_exponent_bundles_exist_alt": [
+      "T06"
+    ],
+    "UpperTheory.GalC.final_alt_alt": [
+      "T07"
+    ],
+    "GlobalTheory.T.open0_of_unitary_group_hypotheses": [
+      "T08"
+    ],
+    "UpperTheory.Lit.functionalsSeparate_of_howeUnram_of_siegelWeil": [
+      "T09"
+    ],
+    "GlobalTheory.BigTop.Fun.Close.fourier_coefficient_fit_of_join_alt": [
+      "T10"
+    ],
+    "PositivityTheory.ThKR.theoremK_head2": [
+      "T11"
+    ],
+    "PositivityTheory.SiegelWeilFormula.Fin.siegelWeilStd": [
+      "T12"
+    ],
+    "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt": [
+      "T13"
+    ],
+    "PositivityTheory.HtPt.Ah.deep_slim_use": [
+      "T14"
+    ],
+    "SelfIntersectionVolumeEstimates.topCovolG_alt_alt": [
+      "T15"
+    ],
+    "ChowFormHeightComparison₂.chow_form_height_comparison": [
+      "T16"
+    ],
+    "PositivityTheory.Pf1.HilbertSamuelMoriwaki.moriwakiBig_outright": [
+      "T17"
+    ],
+    "PositivityTheory.Pf1.HilbertSamuelMoriwaki.hsUse_outright": [
+      "T18"
+    ],
+    "UpperTheory.LiteratureTheorems.resolution_char_zero_of_literature": [
+      "T19"
+    ],
+    "UpperTheory.LiteratureTheorems.principalisation_char_zero_of_literature": [
+      "T20"
+    ],
+    "UpperTheory.LiteratureTheorems.poincare_lelong_inv_of_literature": [
+      "T21"
+    ],
+    "UpperTheory.LiteratureTheorems.zarhin_statement": [
+      "T22"
+    ],
+    "UpperTheory.LiteratureTheorems.nef_rr_of_literature": [
+      "T23"
+    ],
+    "UpperTheory.LiteratureTheorems.fargues_exact_of_literature": [
+      "T24"
+    ],
+    "UpperTheory.N.boundAtTwoThree_linked_of_recT": [
+      "T25"
+    ],
+    "GlobalTheory.CompanionTheory.Ar.Plug.deepStR_of_use": [
+      "T26"
+    ],
+    "UpperTheory.Gal.Int.galoisRepresentations_of_thetaLift": [
+      "B01"
+    ],
+    "UpperTheory.Gal.Int.Geo.geoOne_holds": [
+      "B02"
+    ],
+    "UpperTheory.Gal.Int.galoisLocalGlobalStrong_of_geometry_lift": [
+      "B03"
+    ],
+    "UpperTheory.Zero.LLC.recTExists": [
+      "B04"
+    ],
+    "UpperTheory.Top.shape_closed_link_n_of_green": [
+      "B05"
+    ],
+    "GlobalTheory.Top.closed_family_admissible_twist_link_alt": [
+      "B06"
+    ],
+    "UpperTheory.Top.supplyChi": [
+      "B07"
+    ],
+    "UpperTheory.Comparison₂.core_gm": [
+      "B08"
+    ],
+    "Deduction.ch_core": [
+      "B09"
+    ],
+    "Deduction.ch_top": [
+      "B10"
+    ],
+    "UpperTheory.One.Join.automorphic_window_of_inputs": [
+      "W01"
+    ],
+    "UpperTheory.BaseChangeIdentities.baseChangeN": [
+      "W02"
+    ],
+    "UpperTheory.V.HV.DescentVanishingReductions.published_hypotheses_from_patching_alt": [
+      "W03"
+    ],
+    "UpperTheory.V.Z.Tf.SR.descWeak": [
+      "W04"
+    ],
+    "UpperTheory.V.ZK.lemmaK_litN_alt": [
+      "W05"
+    ],
+    "UpperTheory.V.HV.DescentVanishingReductions.sp4In0_alt": [
+      "W06"
+    ],
+    "UpperTheory.V.Z.Kato.WeilSphericalRecords.katoTwoW_of_printsH": [
+      "W07"
+    ],
+    "UpperTheory.V.Z.J.count_i_of_printed_bound_k_kato_automorphy": [
+      "W08"
+    ],
+    "UpperTheory.V.HV.DescentVanishingReductions.countII_and_countIII_of_printsH_of_sp4In": [
+      "W09"
+    ],
+    "UpperTheory.V.Z.J.count_v_of_printed_bound_k_reduced_unitary_lift": [
+      "W10"
+    ],
+    "UpperTheory.V.FW.ferreroWashington": [
+      "W11"
+    ],
+    "UpperTheory.V.Win.thmBab_of_lemmaK": [
+      "W12"
+    ],
+    "UpperTheory.V.HV.vwin_of_counts": [
+      "W13"
+    ],
+    "UpperTheory.V.Odd.thmBcFree_of": [
+      "W14"
+    ],
+    "UpperTheory.V.X.propZ": [
+      "W15"
+    ],
+    "UpperTheory.HeckeLevelFrameExistence.candFin": [
+      "W16"
+    ],
+    "GlobalTheory.T.globalLatticeIndexTheorem_of_lengthBoundAtPlaces": [
+      "D002"
+    ],
+    "GlobalTheory.T.wachLattice_laterClauses_hold": [
+      "D004"
+    ],
+    "GlobalTheory.T.theorem_tb_of_local_blochKato_duality_euler": [
+      "D006"
+    ],
+    "UpperTheory.Comparison₂.hostFactsS": [
+      "D014"
+    ],
+    "GlobalTheory.T.twisted_theta_integral_unfolds": [
+      "D024"
+    ],
+    "ReciprocityTheory.ChartRestriction.DS.Lap.TopClosed.besselNVG": [
+      "D025"
+    ],
+    "GlobalTheory.rowNGP_of_siegelWeil": [
+      "D033"
+    ],
+    "GlobalTheory.T.twisted_square_theta_integrals_eq": [
+      "D044"
+    ],
+    "UpperTheory.V.Z.Sym.W.prop_eg_w_of_printed_hida": [
+      "D077"
+    ],
+    "UpperTheory.V.Loc.bkAbove": [
+      "D082"
+    ],
+    "GlobalTheory.T.saturatedOrdinaryIdeal_cuts_out_crystalline_locus": [
+      "D097"
+    ],
+    "UpperTheory.V.X.residual_bernoulli_nonvanishing": [
+      "D108"
+    ],
+    "GlobalTheory.T.FlatDegree_holds": [
+      "D123"
+    ],
+    "GlobalTheory.T.thetaKeyScalar_isUnit_on_integralModels": [
+      "D128"
+    ],
+    "ChowFormCompatibility.chow_form_hyperplane_section": [
+      "D154"
+    ],
+    "FubiniStudyChowHeightFormula₂.fubiniStudy_chowHeight_formula": [
+      "D155"
+    ],
+    "GlobalTheory.T.charpoly_deRhamHomology_endomorphism_eq_map_ladic": [
+      "D174"
+    ],
+    "UpperTheory.Gal.crystallineComparison.Mod.esNorm_link": [
+      "D193"
+    ],
+    "GroundTheory.PAdicHodge.bDeRham_fixed": [
+      "D203"
+    ],
+    "GroundTheory.PAdicHodge.ACris.bCris_fixed_mem_maxUnramified": [
+      "D230"
+    ],
+    "GroundTheory.PAdicHodge.ACris.phiPlus_mem_span_periodT": [
+      "D245"
+    ],
+    "GlobalTheory.T.crystalline_graded_pieces_description": [
+      "D302"
+    ],
+    "GlobalTheory.CompanionTheory.Relay.hodge_tate_of_fargues_exact": [
+      "D309"
+    ],
+    "GlobalTheory.T.full_intersection_tower_I8_identity": [
+      "D317"
+    ],
+    "GlobalTheory.T.cusp_weight_integrable_on_fundamental_set": [
+      "D331"
+    ],
+    "GlobalTheory.T.period_gram_comparison_bound": [
+      "D340"
+    ],
+    "ReciprocityTheory.AnForm.M.poincareLelong": [
+      "D351"
+    ],
+    "GlobalTheory.CountConstants.count_constants_of_siegelWeil": [
+      "D379"
+    ],
+    "GlobalTheory.T.period_entries_tie_and_level_valuations_at_built": [
+      "D394"
+    ],
+    "GlobalTheory.T.thetaLift_adjoint_scalarFormula_injective": [
+      "D415"
+    ],
+    "GlobalTheory.NLinkClose.main_alt_alt": [
+      "D421"
+    ],
+    "UpperTheory.GalC.linkN_of_twGood_galoisPreconditions": [
+      "D427"
+    ],
+    "GlobalTheory.T.flatDeg_of_scholzeWeinstein_of_prints": [
+      "D443"
+    ],
+    "GlobalTheory.Top.link_gl": [
+      "D479"
+    ],
+    "Formalism.L2.DIV.closed_linkDIVt_of_closed_bridge_kernel": [
+      "D481"
+    ],
+    "GlobalTheory.Top.link_alt_alt_bis": [
+      "D484"
+    ],
+    "GlobalTheory.Top.Irr.closed_linkIRR_of_join_count": [
+      "D486"
+    ],
+    "UpperTheory.V.Z.Coh.borelInjC": [
+      "D506"
+    ],
+    "UpperTheory.T3.supplyOfAdmOf": [
+      "D510"
+    ],
+    "UpperTheory.Top.hostOfField": [
+      "D511"
+    ],
+    "GlobalTheory.EX.exists_ranks_rankVal_frame": [
+      "D513"
+    ],
+    "UpperTheory.V.Z.J.oneCharU_of_katoTwoW_rig_admI_automorphy": [
+      "D528"
+    ],
+    "UpperTheory.V.U3.countI": [
+      "D532"
+    ],
+    "UpperTheory.V.vwinAt_of_joint": [
+      "D536"
+    ],
+    "UpperTheory.Comparison₂.gmA_eq": [
+      "D547"
+    ],
+    "UpperTheory.Comparison₂.charsA": [
+      "D548"
+    ],
+    "UpperTheory.Comparison₂.sigA_le": [
+      "D549"
+    ],
+    "Formalism.LFunctionChainParameters.LErr.large_x_eventually": [
+      "D550"
+    ],
+    "UpperTheory.V.Odd.killPow": [
+      "D551"
+    ],
+    "UpperTheory.V.Base.control": [
+      "D558"
+    ],
+    "Deduction.CharacterBalanceMoves.core": [
+      "D561"
+    ],
+    "Formalism.LFunctionChainParameters.ThickSetMeanBounds.derivative_integral_all": [
+      "D562"
+    ],
+    "Formalism.LFunctionChainParameters.ThickSetMeanBounds.proposition_size_bound": [
+      "D563"
+    ],
+    "Deduction.CharacterBalanceMoves.one_char": [
+      "D564"
+    ],
+    "Formalism.LFunctionChainParameters.LChain.size_windows_split": [
+      "D566"
+    ],
+    "Formalism.LFunctionChainParameters.LChain.errX5at_le": [
+      "D567"
+    ],
+    "Formalism.LFunctionChainParameters.WeightedSlopeBounds.Ga_bound5": [
+      "D568"
+    ],
+    "Deduction.ch_top_main_eq": [
+      "D569"
+    ],
+    "Formalism.LFunctionChainParameters.WeightedSlopeBounds.weighted_mean_lower_bound_le": [
+      "D570"
+    ],
+    "GlobalTheory.GreenBridge.green_of_regular": [
+      "D575"
+    ]
+  }
+}

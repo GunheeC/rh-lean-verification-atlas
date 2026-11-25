@@ -1,0 +1,90 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D128",
+  "title": "Integrality of the theta scalar on the integral models",
+  "track": {
+    "primary": "theta",
+    "secondary": [
+      "arakelov"
+    ]
+  },
+  "statement": "At a valued integral-model point with the stated level, splitting and regularity data, a generating section gives a unit representing its theta scalar. For a general section with the required generator comparison and $8\\mid N$, the normalized value $a\\kappa^{N/8}$ is a unit. $\\mathrm{KeyUnitOnModels}$.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Take a key rule satisfying its defining condition and a CM host with signature ranks of positive sum.",
+    "Use the stipulated base ring and prime-level structure on the model, including conditions N3, N4 and split fibres."
+  ],
+  "lean": [
+    {
+      "name": "GlobalTheory.T.thetaKeyScalar_isUnit_on_integralModels",
+      "file": "Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaKeyScalarIsUnitOnIntegralModelsStatement.lean",
+      "line0": 5,
+      "line1": 6,
+      "sha256": "b7baafe56b62ca8fcf4668a74d78bb230f45d48e64efb69ccf944602a9ad98d0",
+      "dominated": 3199,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/D128_round4.md",
+      "section": "D128 · Integrality of the theta scalar on the integral models",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "G.138 (decomp:D128)",
+      "pages": [
+        191,
+        191
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D128.tex",
+      "section": "decomp:D128",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": 2,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "D128",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "integrality-of-the-theta-scalar-on-the-integral-models",
+  "aliases": [
+    "thetaKeyScalar_isUnit_on_integralModels",
+    "D128 Integrality of the theta scalar on the integral models"
+  ],
+  "background": [
+    "Integral models of Shimura varieties",
+    "Units in valuation rings"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.138 (decomp:D128)",
+    "pages": [
+      191,
+      191
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "review_status": "pending_review",
+  "summary": "At a valued point of an admissible integral model, a theta key computed from a generating section comes from a unit of the valuation ring. The formula also tracks how a change of section affects tensor powers. This supplies the unit information needed when comparing integral frames."
+}

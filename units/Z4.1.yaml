@@ -1,0 +1,99 @@
+{
+  "id": "Z4.1",
+  "title": "Normalized Hecke action on jets",
+  "track": {
+    "primary": "local",
+    "secondary": [
+      "theta"
+    ]
+  },
+  "statement": "For an admitted place and each lift stage $j<m$, the index-zero local differentiated entries satisfy the bounds $g_A$ and $g_B-\\mathrm{alEven}$. For $1\\le i\\le r$ the $p$-weighted column differential satisfies the bound $g_B$ for all allowed integral parameters, selected columns and output monomials. Chapter P also treats preservation of the lattice by the normalized Hecke operator.",
+  "assumptions": [
+    "source:blueprint_v13"
+  ],
+  "hypothesis_details": [
+    "Use an admitted local place and a lift at stage $j<m$.",
+    "The column, parameter and output monomial lie in the stipulated ranges."
+  ],
+  "lean": [
+    {
+      "name": "Formalism.MainNotions.FormalGroupSystem.Pf.hecke_place_bound",
+      "file": "Formalism/SharpRestriction/GrowthBounds/MultisetValuation/FirstTheoremPlaceBound.lean",
+      "line0": 28,
+      "line1": 30,
+      "sha256": "50d3609e3318b0ecf5022ca8276e5b51c9cd3f773d4adc431b7117ee74e15928",
+      "dominated": 150,
+      "graph": "allChi",
+      "role": "statement"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/blueprint/Z4.1.tex",
+      "section": "sec:P-r4-z41-kernel, sec:P-r4-z41",
+      "pages": []
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "sec:P-r4-z41-kernel",
+      "pages": [
+        230,
+        230
+      ],
+      "printed_page": 205,
+      "scope": "First page of this named destination."
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "sec:P-r4-z41",
+      "pages": [
+        224,
+        224
+      ],
+      "printed_page": 199,
+      "scope": "First page of this named destination."
+    }
+  ],
+  "status": "Full",
+  "grade": "L1",
+  "reviews": [
+    "reviews/R4_review_Z4.md"
+  ],
+  "prerequisites": [],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "blueprint_members": [
+    "Z4.1"
+  ],
+  "representative": "Formalism.MainNotions.FormalGroupSystem.Pf.hecke_place_bound",
+  "statement_declarations": [
+    "Formalism.MainNotions.FormalGroupSystem.Pf.hecke_place_bound"
+  ],
+  "grade_scope": "Named statement declarations with the hypotheses above. Chart supplier records have their own review scopes.",
+  "confirmation_basis": "Minimum across the statement declarations, using registry rows for the blueprint assignments listed here. Reviews of other expositions of a shared declaration are included as context.",
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "slug": "normalized-hecke-action-on-jets",
+  "aliases": [
+    "Z4.1 Normalized Hecke action on jets"
+  ],
+  "background": [
+    "Hecke correspondences",
+    "Formal-group jets",
+    "Valuations"
+  ],
+  "hypothesis_source": {
+    "document": "blueprint_v13",
+    "section": "sec:P-r4-z41-kernel",
+    "pages": [
+      230,
+      230
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "summary": "For an admitted local model the differentiated entries meet the designated valuation bounds at each lift stage. The weighted claim covers all allowed integral parameters, selected columns and output monomials, providing the coefficient control used for jets."
+}

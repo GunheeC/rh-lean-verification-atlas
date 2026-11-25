@@ -1,0 +1,88 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D174",
+  "title": "Characteristic polynomials in de Rham and étale realizations",
+  "track": {
+    "primary": "local",
+    "secondary": []
+  },
+  "statement": "For the given endomorphism, the de Rham homology characteristic polynomial is the image of the integral characteristic polynomial for the \\ensuremath{\\ell}-adic endomorphism.\n\\[\n\\operatorname{charpoly}(f_{\\rm dR})=\\bigl(\\operatorname{charpoly}(\\varphi)\\bigr)_{\\mathbb Z\\to k}.\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Use an abelian scheme over an algebraically closed field and a group endomorphism.",
+    "The integral lattice and its power-torsion evaluation maps are compatible with the endomorphism; the prime is invertible in the base field and de Rham homology is finite-dimensional."
+  ],
+  "lean": [
+    {
+      "name": "GlobalTheory.T.charpoly_deRhamHomology_endomorphism_eq_map_ladic",
+      "file": "Development/AbelianVarietyTheory/Proofs/DivisorProofs/CharpolyDeRhamHomologyEndomorphismEqMapLadicStatement.lean",
+      "line0": 8,
+      "line1": 18,
+      "sha256": "97320057fceb6f7ca31418807f0a2f46f59b9c8d15db3ba6bdfca84650a4d128",
+      "dominated": 12706,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/D174_round4.md",
+      "section": "D174 · Comparing two characteristic polynomials through the same endomorphism",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "G.184 (decomp:D174)",
+      "pages": [
+        203,
+        203
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D174.tex",
+      "section": "decomp:D174",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": 2,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "D174",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "characteristic-polynomials-in-de-rham-and-etale-realizations",
+  "aliases": [
+    "charpoly_deRhamHomology_endomorphism_eq_map_ladic",
+    "D174 Characteristic polynomials in de Rham and étale realizations"
+  ],
+  "background": [
+    "Characteristic polynomials",
+    "Abelian schemes and de Rham cohomology"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.184 (decomp:D174)",
+    "pages": [
+      203,
+      203
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "review_status": "pending_review",
+  "summary": "An endomorphism of an abelian scheme over an algebraically closed field is compared with an integral endomorphism on a finite free lattice modelling all its prime-power torsion. The de Rham characteristic polynomial is obtained by mapping the lattice polynomial into the base field."
+}

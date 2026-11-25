@@ -1,0 +1,4961 @@
+{
+  "method": "Each record cites lines in source_review (relative to the historical notes), available via the local provenance card in review. Verdict applies only to the listed declaration(s) and stated scope. L2 requires a corresponding full exposition. No grade propagates along a dependency edge or to other anchors. Absence is not a negative verdict.",
+  "records": [
+    {
+      "declarations": [
+        "UpperTheory.V.Af.weyl_complex_of_printed_results"
+      ],
+      "legacy_unit": "Z1.5.01",
+      "grade": "L2",
+      "review": "reviews/R5_review_A.md",
+      "source_review": "out/R5_review_A.md",
+      "lines": [
+        7,
+        7
+      ],
+      "source_sha256": "7d564bd168c4bc30caaff4fb8fc1f75797ffb5eed672fcb9f2ae46b8d19e23df",
+      "verdict": "COMPLETE CONFIRMED",
+      "scope": "Exactly the named unit at the hypotheses reviewed in the cited row."
+    },
+    {
+      "declarations": [
+        "UpperTheory.GalN.V.Win.N.frobenius_trace_count_bound_of_rat_eigensystem_count_alt"
+      ],
+      "legacy_unit": "Z1.5.06",
+      "grade": "L2",
+      "review": "reviews/R5_review_A.md",
+      "source_review": "out/R5_review_A.md",
+      "lines": [
+        8,
+        8
+      ],
+      "source_sha256": "7d564bd168c4bc30caaff4fb8fc1f75797ffb5eed672fcb9f2ae46b8d19e23df",
+      "verdict": "COMPLETE CONFIRMED",
+      "scope": "Exactly the named unit at the hypotheses reviewed in the cited row."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.TwU.std_at_served"
+      ],
+      "legacy_unit": "Z4.2.01",
+      "grade": "L2",
+      "review": "reviews/R5_review_B.md",
+      "source_review": "out/R5_review_B.md",
+      "lines": [
+        7,
+        7
+      ],
+      "source_sha256": "05c90c433f3b62c8976a82e7d18a6bc7204db9c0ed522890fc74383cffebf6e9",
+      "verdict": "COMPLETE CONFIRMED",
+      "scope": "Exactly the named unit at the hypotheses reviewed in the cited row."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.TwV.joint_dict"
+      ],
+      "legacy_unit": "Z4.2.03",
+      "grade": "L2",
+      "review": "reviews/R5_review_B.md",
+      "source_review": "out/R5_review_B.md",
+      "lines": [
+        8,
+        8
+      ],
+      "source_sha256": "05c90c433f3b62c8976a82e7d18a6bc7204db9c0ed522890fc74383cffebf6e9",
+      "verdict": "COMPLETE CONFIRMED",
+      "scope": "Exactly the named unit at the hypotheses reviewed in the cited row."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.TwV.pos_at_site"
+      ],
+      "legacy_unit": "Z4.2.05",
+      "grade": "L2",
+      "review": "reviews/R5_review_B.md",
+      "source_review": "out/R5_review_B.md",
+      "lines": [
+        9,
+        9
+      ],
+      "source_sha256": "05c90c433f3b62c8976a82e7d18a6bc7204db9c0ed522890fc74383cffebf6e9",
+      "verdict": "COMPLETE CONFIRMED",
+      "scope": "Exactly the named unit at the hypotheses reviewed in the cited row."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.KZ.zetaSysU_of_halves2"
+      ],
+      "legacy_unit": "Z1.3.06",
+      "grade": "L2",
+      "review": "reviews/R5_review_C.md",
+      "source_review": "out/R5_review_C.md",
+      "lines": [
+        7,
+        7
+      ],
+      "source_sha256": "db28c39baf686e374f8f28cd6d16d59a4da59d2d7c7456ed0a8b7323e3de9789",
+      "verdict": "COMPLETE CONFIRMED",
+      "scope": "Exactly the named unit at the hypotheses reviewed in the cited row."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.KZ.zetaUr_of_halves2"
+      ],
+      "legacy_unit": "Z1.3.07",
+      "grade": "L2",
+      "review": "reviews/R5_review_C.md",
+      "source_review": "out/R5_review_C.md",
+      "lines": [
+        8,
+        8
+      ],
+      "source_sha256": "db28c39baf686e374f8f28cd6d16d59a4da59d2d7c7456ed0a8b7323e3de9789",
+      "verdict": "COMPLETE CONFIRMED",
+      "scope": "Exactly the named unit at the hypotheses reviewed in the cited row."
+    },
+    {
+      "declarations": [
+        "UpperTheory.V.Z.Sym.W.adjoint_lift_from_eisenstein_of_propagation"
+      ],
+      "legacy_unit": "Z1.1.04",
+      "grade": "L2",
+      "review": "reviews/R5_review_C.md",
+      "source_review": "out/R5_review_C.md",
+      "lines": [
+        9,
+        9
+      ],
+      "source_sha256": "db28c39baf686e374f8f28cd6d16d59a4da59d2d7c7456ed0a8b7323e3de9789",
+      "verdict": "COMPLETE CONFIRMED",
+      "scope": "Exactly the named unit at the hypotheses reviewed in the cited row."
+    },
+    {
+      "declarations": [
+        "UpperTheory.V.Af.card_k_of_printed_results"
+      ],
+      "legacy_unit": "Z1.5.02",
+      "grade": "L1",
+      "review": "reviews/R6_review.md",
+      "source_review": "out/R6_review.md",
+      "lines": [
+        13,
+        13
+      ],
+      "source_sha256": "120684e5a02afcba6c4942f8a82606125930c6a833a3705c226f395dc4273841",
+      "verdict": "Statement faithful; gaps in proof",
+      "scope": "Exactly the named unit at the hypotheses reviewed in the cited row."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.TwV.scal_at_site"
+      ],
+      "legacy_unit": "Z4.2.08",
+      "grade": "L1",
+      "review": "reviews/R6_review.md",
+      "source_review": "out/R6_review.md",
+      "lines": [
+        14,
+        14
+      ],
+      "source_sha256": "120684e5a02afcba6c4942f8a82606125930c6a833a3705c226f395dc4273841",
+      "verdict": "Statement faithful; gaps in proof",
+      "scope": "Exactly the named unit at the hypotheses reviewed in the cited row."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.TwV.move_at_site"
+      ],
+      "legacy_unit": "Z4.2.06",
+      "grade": "L1",
+      "review": "reviews/R7_review.md",
+      "source_review": "out/R7_review.md",
+      "lines": [
+        17,
+        17
+      ],
+      "source_sha256": "2d65c55fd3ed203cf7c1a96dd5301f607647293c45a1cf956e1c503f109090d0",
+      "verdict": "Statement faithful; gaps in proof",
+      "scope": "Exactly the named unit at the hypotheses reviewed in the cited row."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.TwV.away_of_dict"
+      ],
+      "legacy_unit": "Z4.2.07",
+      "grade": "L1",
+      "review": "reviews/R7_review.md",
+      "source_review": "out/R7_review.md",
+      "lines": [
+        18,
+        18
+      ],
+      "source_sha256": "2d65c55fd3ed203cf7c1a96dd5301f607647293c45a1cf956e1c503f109090d0",
+      "verdict": "Statement faithful; gaps in proof",
+      "scope": "Exactly the named unit at the hypotheses reviewed in the cited row."
+    },
+    {
+      "declarations": [
+        "UpperTheory.V.KT.tors_le",
+        "UpperTheory.V.ZK.torsAll"
+      ],
+      "legacy_unit": "Z2.K7",
+      "grade": "L2",
+      "review": "reviews/R4_review_Z2.md",
+      "source_review": "out/R4_review_Z2.md",
+      "lines": [
+        91,
+        123
+      ],
+      "source_sha256": "286e910f2743565d62dab15bf7f254eeeaeb16b481c1daf480526250d8cb7221",
+      "verdict": "COMPLETE CONFIRMED",
+      "scope": "Named unit conclusion. Its lower suppliers keep their own individual verdicts."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.pairOK_allSites"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L2",
+      "review": "reviews/R17_review.md",
+      "source_review": "out/R17_review.md",
+      "lines": [
+        34,
+        38
+      ],
+      "source_sha256": "288b9592687eb74b507031c5d8740bc11b9f8487be45d09c113a754d6546a6bc",
+      "verdict": "An AI review reports: unconditional completion confirmed",
+      "scope": "Named unit conclusion. Its lower suppliers keep their own individual verdicts."
+    },
+    {
+      "declarations": [
+        "UpperTheory.GalN.V.Win.N.frobenius_trace_count_bound_of_cm_eigensystem_count_alt"
+      ],
+      "legacy_unit": "Z1.5.07",
+      "grade": "L2",
+      "review": "reviews/R6_review.md",
+      "source_review": "out/R6_review.md",
+      "lines": [
+        218,
+        218
+      ],
+      "source_sha256": "120684e5a02afcba6c4942f8a82606125930c6a833a3705c226f395dc4273841",
+      "verdict": "Only R5 gap explicitly fixed and independently rechecked",
+      "scope": "At the pre-existing CountKAlt hypothesis; the closure concerns the B_cris step named in R5_review_A."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.PerTwClose.twistedPeriodAdmissible_of_rowInt"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L2",
+      "review": "reviews/R14_review_B.md",
+      "source_review": "out/R14_review_B.md",
+      "lines": [
+        348,
+        353
+      ],
+      "source_sha256": "60856cf048b48ffbb71f7c7faca762efe865e425a6b66db34e144f23468f5713",
+      "verdict": "R13 conditional approval followed by applied edits and R14 independent acceptance of the recorded grade",
+      "scope": "Root hand proof under its stated inputs, per R13_recheck.md:188, blueprint/status.json round14.approval and this recheck; individual suppliers evaluated separately."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.T.hermitianColumnChoices_of_formsLevelsClasses"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L1",
+      "review": "reviews/R11_review.md",
+      "source_review": "out/R11_review.md",
+      "lines": [
+        14,
+        14
+      ],
+      "source_sha256": "c2566a64ed8165e09bd775e866534a1ff0c6d0c1823e8de78186161e39aeb3ac",
+      "verdict": "CONFIRMED WITH GAPS",
+      "scope": "Declaration-level statement comparison only; proof qualifications remain."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.T.stepZeroHermitianLevel_uniformiser_kills_values_alt"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L1",
+      "review": "reviews/R11_review.md",
+      "source_review": "out/R11_review.md",
+      "lines": [
+        15,
+        15
+      ],
+      "source_sha256": "c2566a64ed8165e09bd775e866534a1ff0c6d0c1823e8de78186161e39aeb3ac",
+      "verdict": "CONFIRMED WITH GAPS",
+      "scope": "Declaration-level statement comparison only; proof qualifications remain."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.T.hermitianColumns_generators_baseLattices_functionals"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L2",
+      "review": "reviews/R11_review.md",
+      "source_review": "out/R11_review.md",
+      "lines": [
+        16,
+        16
+      ],
+      "source_sha256": "c2566a64ed8165e09bd775e866534a1ff0c6d0c1823e8de78186161e39aeb3ac",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.Mem.Col2.TC.spaces_in_coordinates"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L2",
+      "review": "reviews/R11_review.md",
+      "source_review": "out/R11_review.md",
+      "lines": [
+        17,
+        17
+      ],
+      "source_sha256": "c2566a64ed8165e09bd775e866534a1ff0c6d0c1823e8de78186161e39aeb3ac",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.T.transportedLattice_localization_free_le_coefficientSpace"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L2",
+      "review": "reviews/R12_review_A.md",
+      "source_review": "out/R12_review_A.md",
+      "lines": [
+        18,
+        18
+      ],
+      "source_sha256": "ce0beaa9b665080b6f21da3c25242bccbaff64b46044daa790ab5268fc58e4df",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.T.standard_weyl_lattices_fock_dual"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L2",
+      "review": "reviews/R12_review_A.md",
+      "source_review": "out/R12_review_A.md",
+      "lines": [
+        17,
+        17
+      ],
+      "source_sha256": "ce0beaa9b665080b6f21da3c25242bccbaff64b46044daa790ab5268fc58e4df",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.Mem.Col2.PtExist.exists_modify"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L2",
+      "review": "reviews/R12_review_A.md",
+      "source_review": "out/R12_review_A.md",
+      "lines": [
+        19,
+        19
+      ],
+      "source_sha256": "ce0beaa9b665080b6f21da3c25242bccbaff64b46044daa790ab5268fc58e4df",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "Formalism.L2.Col.decoPtSurj_of"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L1",
+      "review": "reviews/R12_review_A.md",
+      "source_review": "out/R12_review_A.md",
+      "lines": [
+        22,
+        22
+      ],
+      "source_sha256": "ce0beaa9b665080b6f21da3c25242bccbaff64b46044daa790ab5268fc58e4df",
+      "verdict": "CONFIRMED WITH GAPS",
+      "scope": "Declaration-level statement comparison only; proof qualifications remain."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.Mem.Col2.PtExist.unimodGenus"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L1",
+      "review": "reviews/R12_review_A.md",
+      "source_review": "out/R12_review_A.md",
+      "lines": [
+        23,
+        23
+      ],
+      "source_sha256": "ce0beaa9b665080b6f21da3c25242bccbaff64b46044daa790ab5268fc58e4df",
+      "verdict": "CONFIRMED WITH GAPS",
+      "scope": "Declaration-level statement comparison only; proof qualifications remain."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.Mem.Col2.PtExist.exists_isPtOf_cm"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L2",
+      "review": "reviews/R12_review_A.md",
+      "source_review": "out/R12_review_A.md",
+      "lines": [
+        20,
+        20
+      ],
+      "source_sha256": "ce0beaa9b665080b6f21da3c25242bccbaff64b46044daa790ab5268fc58e4df",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.T.exists_adelicPoint_decoratedLattice_allTwists"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L2",
+      "review": "reviews/R12_review_A.md",
+      "source_review": "out/R12_review_A.md",
+      "lines": [
+        21,
+        21
+      ],
+      "source_sha256": "ce0beaa9b665080b6f21da3c25242bccbaff64b46044daa790ab5268fc58e4df",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.T.exists_hermitian_data_carT_of_std"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L1",
+      "review": "reviews/R12_review_A.md",
+      "source_review": "out/R12_review_A.md",
+      "lines": [
+        24,
+        24
+      ],
+      "source_sha256": "ce0beaa9b665080b6f21da3c25242bccbaff64b46044daa790ab5268fc58e4df",
+      "verdict": "CONFIRMED WITH GAPS",
+      "scope": "Declaration-level statement comparison only; proof qualifications remain."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.T.decoratedPointClasses_bijective_doubleCosets"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L2",
+      "review": "reviews/R12_review_A.md",
+      "source_review": "out/R12_review_A.md",
+      "lines": [
+        25,
+        25
+      ],
+      "source_sha256": "ce0beaa9b665080b6f21da3c25242bccbaff64b46044daa790ab5268fc58e4df",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.Mem.Col2.mem_locW_hlat_iff"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L2",
+      "review": "reviews/R12_review_A.md",
+      "source_review": "out/R12_review_A.md",
+      "lines": [
+        26,
+        26
+      ],
+      "source_sha256": "ce0beaa9b665080b6f21da3c25242bccbaff64b46044daa790ab5268fc58e4df",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.T.exists_K1_point_congruent"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L2",
+      "review": "reviews/R12_review_A.md",
+      "source_review": "out/R12_review_A.md",
+      "lines": [
+        27,
+        27
+      ],
+      "source_sha256": "ce0beaa9b665080b6f21da3c25242bccbaff64b46044daa790ab5268fc58e4df",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.T.mem_framedLevel_iff_two_adelic_points"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L1",
+      "review": "reviews/R12_review_A.md",
+      "source_review": "out/R12_review_A.md",
+      "lines": [
+        28,
+        28
+      ],
+      "source_sha256": "ce0beaa9b665080b6f21da3c25242bccbaff64b46044daa790ab5268fc58e4df",
+      "verdict": "CONFIRMED WITH GAPS",
+      "scope": "Declaration-level statement comparison only; proof qualifications remain."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.Mem.Col2.TwP.til_tw"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L1",
+      "review": "reviews/R12_review_A.md",
+      "source_review": "out/R12_review_A.md",
+      "lines": [
+        29,
+        29
+      ],
+      "source_sha256": "ce0beaa9b665080b6f21da3c25242bccbaff64b46044daa790ab5268fc58e4df",
+      "verdict": "CONFIRMED WITH GAPS",
+      "scope": "Declaration-level statement comparison only; proof qualifications remain."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.T.tuple_integralForms_row_place_by_place"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L1",
+      "review": "reviews/R12_review_A.md",
+      "source_review": "out/R12_review_A.md",
+      "lines": [
+        30,
+        30
+      ],
+      "source_sha256": "ce0beaa9b665080b6f21da3c25242bccbaff64b46044daa790ab5268fc58e4df",
+      "verdict": "CONFIRMED WITH GAPS",
+      "scope": "Declaration-level statement comparison only; proof qualifications remain."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.T.tuplePrimedSpaceClasses_level_and_comparison"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L1",
+      "review": "reviews/R12_review_A.md",
+      "source_review": "out/R12_review_A.md",
+      "lines": [
+        31,
+        31
+      ],
+      "source_sha256": "ce0beaa9b665080b6f21da3c25242bccbaff64b46044daa790ab5268fc58e4df",
+      "verdict": "CONFIRMED WITH GAPS",
+      "scope": "Declaration-level statement comparison only; proof qualifications remain."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.T.tupleLayerCompatibilities_of_X_prime"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L1",
+      "review": "reviews/R12_review_A.md",
+      "source_review": "out/R12_review_A.md",
+      "lines": [
+        32,
+        32
+      ],
+      "source_sha256": "ce0beaa9b665080b6f21da3c25242bccbaff64b46044daa790ab5268fc58e4df",
+      "verdict": "CONFIRMED WITH GAPS",
+      "scope": "Declaration-level statement comparison only; proof qualifications remain."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.Mem.Col2.TC.StepZero.lvSame_zero"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L1",
+      "review": "reviews/R12_review_A.md",
+      "source_review": "out/R12_review_A.md",
+      "lines": [
+        38,
+        38
+      ],
+      "source_sha256": "ce0beaa9b665080b6f21da3c25242bccbaff64b46044daa790ab5268fc58e4df",
+      "verdict": "CONFIRMED WITH GAPS",
+      "scope": "Declaration-level statement comparison only; proof qualifications remain."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.Mem.Col2.TC.dn_keeps_chart"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L1",
+      "review": "reviews/R12_review_A.md",
+      "source_review": "out/R12_review_A.md",
+      "lines": [
+        35,
+        35
+      ],
+      "source_sha256": "ce0beaa9b665080b6f21da3c25242bccbaff64b46044daa790ab5268fc58e4df",
+      "verdict": "CONFIRMED WITH GAPS",
+      "scope": "Declaration-level statement comparison only; proof qualifications remain."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.Mem.Col2.TC.exists_level_projections"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L2",
+      "review": "reviews/R12_review_A.md",
+      "source_review": "out/R12_review_A.md",
+      "lines": [
+        33,
+        33
+      ],
+      "source_sha256": "ce0beaa9b665080b6f21da3c25242bccbaff64b46044daa790ab5268fc58e4df",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.Mem.Col2.TC.dn_level_functional"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L1",
+      "review": "reviews/R12_review_A.md",
+      "source_review": "out/R12_review_A.md",
+      "lines": [
+        35,
+        35
+      ],
+      "source_sha256": "ce0beaa9b665080b6f21da3c25242bccbaff64b46044daa790ab5268fc58e4df",
+      "verdict": "CONFIRMED WITH GAPS",
+      "scope": "Declaration-level statement comparison only; proof qualifications remain."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.Mem.Col2.TC.dn_locP_lat"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L1",
+      "review": "reviews/R12_review_A.md",
+      "source_review": "out/R12_review_A.md",
+      "lines": [
+        35,
+        35
+      ],
+      "source_sha256": "ce0beaa9b665080b6f21da3c25242bccbaff64b46044daa790ab5268fc58e4df",
+      "verdict": "CONFIRMED WITH GAPS",
+      "scope": "Declaration-level statement comparison only; proof qualifications remain."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.Mem.Col2.LevFun.fvTieG"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L1",
+      "review": "reviews/R12_review_A.md",
+      "source_review": "out/R12_review_A.md",
+      "lines": [
+        34,
+        34
+      ],
+      "source_sha256": "ce0beaa9b665080b6f21da3c25242bccbaff64b46044daa790ab5268fc58e4df",
+      "verdict": "CONFIRMED WITH GAPS",
+      "scope": "Declaration-level statement comparison only; proof qualifications remain."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.Mem.Col2.TC.bw_tie"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L1",
+      "review": "reviews/R12_review_A.md",
+      "source_review": "out/R12_review_A.md",
+      "lines": [
+        36,
+        36
+      ],
+      "source_sha256": "ce0beaa9b665080b6f21da3c25242bccbaff64b46044daa790ab5268fc58e4df",
+      "verdict": "CONFIRMED WITH GAPS",
+      "scope": "Declaration-level statement comparison only; proof qualifications remain."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.DnMove.dnNatTieG_cols"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L1",
+      "review": "reviews/R12_review_A.md",
+      "source_review": "out/R12_review_A.md",
+      "lines": [
+        37,
+        37
+      ],
+      "source_sha256": "ce0beaa9b665080b6f21da3c25242bccbaff64b46044daa790ab5268fc58e4df",
+      "verdict": "CONFIRMED WITH GAPS",
+      "scope": "Declaration-level statement comparison only; proof qualifications remain."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.Mem.Col2.UpChart.upNatTie"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L1",
+      "review": "reviews/R12_review_A.md",
+      "source_review": "out/R12_review_A.md",
+      "lines": [
+        37,
+        37
+      ],
+      "source_sha256": "ce0beaa9b665080b6f21da3c25242bccbaff64b46044daa790ab5268fc58e4df",
+      "verdict": "CONFIRMED WITH GAPS",
+      "scope": "Declaration-level statement comparison only; proof qualifications remain."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.T.tupleChains_levelStructure_compatible_at_levelPrime"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L1",
+      "review": "reviews/R12_review_A.md",
+      "source_review": "out/R12_review_A.md",
+      "lines": [
+        39,
+        39
+      ],
+      "source_sha256": "ce0beaa9b665080b6f21da3c25242bccbaff64b46044daa790ab5268fc58e4df",
+      "verdict": "CONFIRMED WITH GAPS",
+      "scope": "Declaration-level statement comparison only; proof qualifications remain."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.Mem.Col2.MemChart.stM_range"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L2",
+      "review": "reviews/R12_review_B.md",
+      "source_review": "out/R12_review_B.md",
+      "lines": [
+        24,
+        24
+      ],
+      "source_sha256": "4f2f73d8ab62283127c95358bf89d17a3e19be0345b6a6f9ce57632178f7137b",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.Mem.Col2.MemChart.cls_bij"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L2",
+      "review": "reviews/R12_review_B.md",
+      "source_review": "out/R12_review_B.md",
+      "lines": [
+        23,
+        23
+      ],
+      "source_sha256": "4f2f73d8ab62283127c95358bf89d17a3e19be0345b6a6f9ce57632178f7137b",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.T.exists_couplingCoset_with_given_reduction"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L2",
+      "review": "reviews/R12_review_B.md",
+      "source_review": "out/R12_review_B.md",
+      "lines": [
+        26,
+        26
+      ],
+      "source_sha256": "4f2f73d8ab62283127c95358bf89d17a3e19be0345b6a6f9ce57632178f7137b",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.T.columnPoint_eq_of_deco_and_cosetReduction"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L2",
+      "review": "reviews/R12_review_B.md",
+      "source_review": "out/R12_review_B.md",
+      "lines": [
+        25,
+        25
+      ],
+      "source_sha256": "4f2f73d8ab62283127c95358bf89d17a3e19be0345b6a6f9ce57632178f7137b",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.Mem.TypePrimes.exists_gLoc_idG_chiTied"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L2",
+      "review": "reviews/R12_review_B.md",
+      "source_review": "out/R12_review_B.md",
+      "lines": [
+        22,
+        22
+      ],
+      "source_sha256": "4f2f73d8ab62283127c95358bf89d17a3e19be0345b6a6f9ce57632178f7137b",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.Mem.Col2.MetricTie.ipV_norm_tie"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L1",
+      "review": "reviews/R12_review_B.md",
+      "source_review": "out/R12_review_B.md",
+      "lines": [
+        30,
+        30
+      ],
+      "source_sha256": "4f2f73d8ab62283127c95358bf89d17a3e19be0345b6a6f9ce57632178f7137b",
+      "verdict": "CONFIRMED WITH GAPS",
+      "scope": "Declaration-level statement comparison only; proof qualifications remain."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.Mem.Col2.ChartLevel.chart_gLevH"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L2",
+      "review": "reviews/R12_review_B.md",
+      "source_review": "out/R12_review_B.md",
+      "lines": [
+        36,
+        36
+      ],
+      "source_sha256": "4f2f73d8ab62283127c95358bf89d17a3e19be0345b6a6f9ce57632178f7137b",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.Mem.Col2.TC.til_ties"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L2",
+      "review": "reviews/R12_review_B.md",
+      "source_review": "out/R12_review_B.md",
+      "lines": [
+        32,
+        32
+      ],
+      "source_sha256": "4f2f73d8ab62283127c95358bf89d17a3e19be0345b6a6f9ce57632178f7137b",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.Mem.Col2.DiaChart.dilTied"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L1",
+      "review": "reviews/R12_review_B.md",
+      "source_review": "out/R12_review_B.md",
+      "lines": [
+        31,
+        31
+      ],
+      "source_sha256": "4f2f73d8ab62283127c95358bf89d17a3e19be0345b6a6f9ce57632178f7137b",
+      "verdict": "CONFIRMED WITH GAPS",
+      "scope": "Declaration-level statement comparison only; proof qualifications remain."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.Mem.Col2.TC.GLev0.glev_zero"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L2",
+      "review": "reviews/R12_review_B.md",
+      "source_review": "out/R12_review_B.md",
+      "lines": [
+        34,
+        34
+      ],
+      "source_sha256": "4f2f73d8ab62283127c95358bf89d17a3e19be0345b6a6f9ce57632178f7137b",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.Mem.Col2.TC.levels_top_row_sym"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L2",
+      "review": "reviews/R12_review_B.md",
+      "source_review": "out/R12_review_B.md",
+      "lines": [
+        35,
+        35
+      ],
+      "source_sha256": "4f2f73d8ab62283127c95358bf89d17a3e19be0345b6a6f9ce57632178f7137b",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.Mem.Col2.OneLevel.stepBefore_oneLevel"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L2",
+      "review": "reviews/R12_review_B.md",
+      "source_review": "out/R12_review_B.md",
+      "lines": [
+        33,
+        33
+      ],
+      "source_sha256": "4f2f73d8ab62283127c95358bf89d17a3e19be0345b6a6f9ce57632178f7137b",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.Mem.Col2.TC.val_tied"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L1",
+      "review": "reviews/R12_review_B.md",
+      "source_review": "out/R12_review_B.md",
+      "lines": [
+        29,
+        29
+      ],
+      "source_sha256": "4f2f73d8ab62283127c95358bf89d17a3e19be0345b6a6f9ce57632178f7137b",
+      "verdict": "CONFIRMED WITH GAPS",
+      "scope": "Declaration-level statement comparison only; proof qualifications remain."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.Mem.Col2.MemChart.exists_charts"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L1",
+      "review": "reviews/R12_review_B.md",
+      "source_review": "out/R12_review_B.md",
+      "lines": [
+        27,
+        27
+      ],
+      "source_sha256": "4f2f73d8ab62283127c95358bf89d17a3e19be0345b6a6f9ce57632178f7137b",
+      "verdict": "CONFIRMED WITH GAPS",
+      "scope": "Declaration-level statement comparison only; proof qualifications remain."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.Mem.Col2.TC.clsP_tie"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L1",
+      "review": "reviews/R12_review_B.md",
+      "source_review": "out/R12_review_B.md",
+      "lines": [
+        28,
+        28
+      ],
+      "source_sha256": "4f2f73d8ab62283127c95358bf89d17a3e19be0345b6a6f9ce57632178f7137b",
+      "verdict": "CONFIRMED WITH GAPS",
+      "scope": "Declaration-level statement comparison only; proof qualifications remain."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.T.exists_standardFormComparison_symmetricLevel_members"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L1",
+      "review": "reviews/R12_review_B.md",
+      "source_review": "out/R12_review_B.md",
+      "lines": [
+        37,
+        37
+      ],
+      "source_sha256": "4f2f73d8ab62283127c95358bf89d17a3e19be0345b6a6f9ce57632178f7137b",
+      "verdict": "CONFIRMED WITH GAPS",
+      "scope": "Declaration-level statement comparison only; proof qualifications remain."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.T.exists_unitaryAdelic_twist_diagonal_at_primes"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L2",
+      "review": "reviews/R12_review_B.md",
+      "source_review": "out/R12_review_B.md",
+      "lines": [
+        43,
+        43
+      ],
+      "source_sha256": "4f2f73d8ab62283127c95358bf89d17a3e19be0345b6a6f9ce57632178f7137b",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.T.exists_unitaryAdelic_lift_typePrime_reductions"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L2",
+      "review": "reviews/R12_review_B.md",
+      "source_review": "out/R12_review_B.md",
+      "lines": [
+        46,
+        46
+      ],
+      "source_sha256": "4f2f73d8ab62283127c95358bf89d17a3e19be0345b6a6f9ce57632178f7137b",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.T.exists_reference_class_matching_coupling_coset"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L2",
+      "review": "reviews/R12_review_B.md",
+      "source_review": "out/R12_review_B.md",
+      "lines": [
+        47,
+        47
+      ],
+      "source_sha256": "4f2f73d8ab62283127c95358bf89d17a3e19be0345b6a6f9ce57632178f7137b",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.T.exists_conj_referenceChartIndex"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L1",
+      "review": "reviews/R12_review_B.md",
+      "source_review": "out/R12_review_B.md",
+      "lines": [
+        48,
+        48
+      ],
+      "source_sha256": "4f2f73d8ab62283127c95358bf89d17a3e19be0345b6a6f9ce57632178f7137b",
+      "verdict": "CONFIRMED WITH GAPS",
+      "scope": "Declaration-level statement comparison only; proof qualifications remain."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.T.exists_levelJ_character_eq_member_off_places"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L2",
+      "review": "reviews/R12_review_B.md",
+      "source_review": "out/R12_review_B.md",
+      "lines": [
+        51,
+        51
+      ],
+      "source_sha256": "4f2f73d8ab62283127c95358bf89d17a3e19be0345b6a6f9ce57632178f7137b",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.Mem.Col2.FinAtQ.chartLoc_finiteIndex"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L2",
+      "review": "reviews/R12_review_B.md",
+      "source_review": "out/R12_review_B.md",
+      "lines": [
+        54,
+        54
+      ],
+      "source_sha256": "4f2f73d8ab62283127c95358bf89d17a3e19be0345b6a6f9ce57632178f7137b",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.T.pointOverX_has_adelicPoint_blockExtend_mul"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L2",
+      "review": "reviews/R12_review_B.md",
+      "source_review": "out/R12_review_B.md",
+      "lines": [
+        44,
+        44
+      ],
+      "source_sha256": "4f2f73d8ab62283127c95358bf89d17a3e19be0345b6a6f9ce57632178f7137b",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.T.furtherPlace_penultimateChart_character_inverseValue"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L1",
+      "review": "reviews/R12_review_B.md",
+      "source_review": "out/R12_review_B.md",
+      "lines": [
+        52,
+        52
+      ],
+      "source_sha256": "4f2f73d8ab62283127c95358bf89d17a3e19be0345b6a6f9ce57632178f7137b",
+      "verdict": "CONFIRMED WITH GAPS",
+      "scope": "Declaration-level statement comparison only; proof qualifications remain."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.T.exists_character_allCharts_furtherPlaces"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L2",
+      "review": "reviews/R12_review_B.md",
+      "source_review": "out/R12_review_B.md",
+      "lines": [
+        53,
+        53
+      ],
+      "source_sha256": "4f2f73d8ab62283127c95358bf89d17a3e19be0345b6a6f9ce57632178f7137b",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.T.chart_lastStep_twistBasePoint"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L1",
+      "review": "reviews/R12_review_B.md",
+      "source_review": "out/R12_review_B.md",
+      "lines": [
+        45,
+        45
+      ],
+      "source_sha256": "4f2f73d8ab62283127c95358bf89d17a3e19be0345b6a6f9ce57632178f7137b",
+      "verdict": "CONFIRMED WITH GAPS",
+      "scope": "Declaration-level statement comparison only; proof qualifications remain."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.T.furtherPlaces_group_contains_chart_levels"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L2",
+      "review": "reviews/R12_review_B.md",
+      "source_review": "out/R12_review_B.md",
+      "lines": [
+        55,
+        55
+      ],
+      "source_sha256": "4f2f73d8ab62283127c95358bf89d17a3e19be0345b6a6f9ce57632178f7137b",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.Mem.Col2.ChExM.chart_of"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L1",
+      "review": "reviews/R12_review_B.md",
+      "source_review": "out/R12_review_B.md",
+      "lines": [
+        49,
+        49
+      ],
+      "source_sha256": "4f2f73d8ab62283127c95358bf89d17a3e19be0345b6a6f9ce57632178f7137b",
+      "verdict": "CONFIRMED WITH GAPS",
+      "scope": "Declaration-level statement comparison only; proof qualifications remain."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.Mem.Col2.ChExM.exists_charts"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L1",
+      "review": "reviews/R12_review_B.md",
+      "source_review": "out/R12_review_B.md",
+      "lines": [
+        50,
+        50
+      ],
+      "source_sha256": "4f2f73d8ab62283127c95358bf89d17a3e19be0345b6a6f9ce57632178f7137b",
+      "verdict": "CONFIRMED WITH GAPS",
+      "scope": "Declaration-level statement comparison only; proof qualifications remain."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.T.exists_penultimateLevel_couplingCosets"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L1",
+      "review": "reviews/R12_review_B.md",
+      "source_review": "out/R12_review_B.md",
+      "lines": [
+        56,
+        56
+      ],
+      "source_sha256": "4f2f73d8ab62283127c95358bf89d17a3e19be0345b6a6f9ce57632178f7137b",
+      "verdict": "CONFIRMED WITH GAPS",
+      "scope": "Declaration-level statement comparison only; proof qualifications remain."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.T.trueColumnChoice_exists_chainData_with_basePoints"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L1",
+      "review": "reviews/R12_review_B.md",
+      "source_review": "out/R12_review_B.md",
+      "lines": [
+        57,
+        57
+      ],
+      "source_sha256": "4f2f73d8ab62283127c95358bf89d17a3e19be0345b6a6f9ce57632178f7137b",
+      "verdict": "CONFIRMED WITH GAPS",
+      "scope": "Declaration-level statement comparison only; proof qualifications remain."
+    },
+    {
+      "declarations": [
+        "Formalism.L2.Ker.Base.latAll"
+      ],
+      "legacy_unit": "Z4.2.13",
+      "grade": "L2",
+      "review": "reviews/R14_review_A.md",
+      "source_review": "out/R14_review_A.md",
+      "lines": [
+        28,
+        28
+      ],
+      "source_sha256": "de9371122d85257a3871435c76082b2dd702e905ad9c64d430fa005eae7d31be",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.hermitian_form_integral_values"
+      ],
+      "legacy_unit": "Z4.2.13",
+      "grade": "L2",
+      "review": "reviews/R14_review_A.md",
+      "source_review": "out/R14_review_A.md",
+      "lines": [
+        29,
+        29
+      ],
+      "source_sha256": "de9371122d85257a3871435c76082b2dd702e905ad9c64d430fa005eae7d31be",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.hermitian_pairing_integral"
+      ],
+      "legacy_unit": "Z4.2.13",
+      "grade": "L2",
+      "review": "reviews/R14_review_A.md",
+      "source_review": "out/R14_review_A.md",
+      "lines": [
+        30,
+        30
+      ],
+      "source_sha256": "de9371122d85257a3871435c76082b2dd702e905ad9c64d430fa005eae7d31be",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.arithmetic_hermitian_form"
+      ],
+      "legacy_unit": "Z4.2.13",
+      "grade": "L2",
+      "review": "reviews/R14_review_A.md",
+      "source_review": "out/R14_review_A.md",
+      "lines": [
+        31,
+        31
+      ],
+      "source_sha256": "de9371122d85257a3871435c76082b2dd702e905ad9c64d430fa005eae7d31be",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.AR.div_okc"
+      ],
+      "legacy_unit": "Z4.2.13",
+      "grade": "L2",
+      "review": "reviews/R14_review_A.md",
+      "source_review": "out/R14_review_A.md",
+      "lines": [
+        32,
+        32
+      ],
+      "source_sha256": "de9371122d85257a3871435c76082b2dd702e905ad9c64d430fa005eae7d31be",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.curve_lattice_self_dual"
+      ],
+      "legacy_unit": "Z4.2.13",
+      "grade": "L2",
+      "review": "reviews/R14_review_A.md",
+      "source_review": "out/R14_review_A.md",
+      "lines": [
+        33,
+        33
+      ],
+      "source_sha256": "de9371122d85257a3871435c76082b2dd702e905ad9c64d430fa005eae7d31be",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.SD.coord"
+      ],
+      "legacy_unit": "Z4.2.13",
+      "grade": "L2",
+      "review": "reviews/R14_review_A.md",
+      "source_review": "out/R14_review_A.md",
+      "lines": [
+        34,
+        34
+      ],
+      "source_sha256": "de9371122d85257a3871435c76082b2dd702e905ad9c64d430fa005eae7d31be",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.SD.alg_step"
+      ],
+      "legacy_unit": "Z4.2.13",
+      "grade": "L2",
+      "review": "reviews/R14_review_A.md",
+      "source_review": "out/R14_review_A.md",
+      "lines": [
+        35,
+        35
+      ],
+      "source_sha256": "de9371122d85257a3871435c76082b2dd702e905ad9c64d430fa005eae7d31be",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.SelfDualRec_of_curve"
+      ],
+      "legacy_unit": "Z4.2.13",
+      "grade": "L2",
+      "review": "reviews/R14_review_A.md",
+      "source_review": "out/R14_review_A.md",
+      "lines": [
+        36,
+        36
+      ],
+      "source_sha256": "de9371122d85257a3871435c76082b2dd702e905ad9c64d430fa005eae7d31be",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.self_dual_lattice"
+      ],
+      "legacy_unit": "Z4.2.13",
+      "grade": "L2",
+      "review": "reviews/R14_review_A.md",
+      "source_review": "out/R14_review_A.md",
+      "lines": [
+        37,
+        37
+      ],
+      "source_sha256": "de9371122d85257a3871435c76082b2dd702e905ad9c64d430fa005eae7d31be",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.semiChar_of_HfInt"
+      ],
+      "legacy_unit": "Z4.2.13",
+      "grade": "L2",
+      "review": "reviews/R14_review_A.md",
+      "source_review": "out/R14_review_A.md",
+      "lines": [
+        38,
+        38
+      ],
+      "source_sha256": "de9371122d85257a3871435c76082b2dd702e905ad9c64d430fa005eae7d31be",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.La_index_finite"
+      ],
+      "legacy_unit": "Z4.2.13",
+      "grade": "L2",
+      "review": "reviews/R14_review_A.md",
+      "source_review": "out/R14_review_A.md",
+      "lines": [
+        39,
+        39
+      ],
+      "source_sha256": "de9371122d85257a3871435c76082b2dd702e905ad9c64d430fa005eae7d31be",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.La_index_ne_zero"
+      ],
+      "legacy_unit": "Z4.2.13",
+      "grade": "L2",
+      "review": "reviews/R14_review_A.md",
+      "source_review": "out/R14_review_A.md",
+      "lines": [
+        40,
+        40
+      ],
+      "source_sha256": "de9371122d85257a3871435c76082b2dd702e905ad9c64d430fa005eae7d31be",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.TrueTheta.exists_field"
+      ],
+      "legacy_unit": "Z4.2.13",
+      "grade": "L2",
+      "review": "reviews/R14_review_A.md",
+      "source_review": "out/R14_review_A.md",
+      "lines": [
+        44,
+        44
+      ],
+      "source_sha256": "de9371122d85257a3871435c76082b2dd702e905ad9c64d430fa005eae7d31be",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.ExponentsFinite.yFinite"
+      ],
+      "legacy_unit": "Z4.2.13",
+      "grade": "L2",
+      "review": "reviews/R14_review_A.md",
+      "source_review": "out/R14_review_A.md",
+      "lines": [
+        47,
+        47
+      ],
+      "source_sha256": "de9371122d85257a3871435c76082b2dd702e905ad9c64d430fa005eae7d31be",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.NegOneNorm.exists_norm_eq_neg_one"
+      ],
+      "legacy_unit": "Z4.2.13",
+      "grade": "L2",
+      "review": "reviews/R14_review_A.md",
+      "source_review": "out/R14_review_A.md",
+      "lines": [
+        51,
+        51
+      ],
+      "source_sha256": "de9371122d85257a3871435c76082b2dd702e905ad9c64d430fa005eae7d31be",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.NormResidue.exists_mul_involution_add_one_mem_pow"
+      ],
+      "legacy_unit": "Z4.2.13",
+      "grade": "L2",
+      "review": "reviews/R14_review_A.md",
+      "source_review": "out/R14_review_A.md",
+      "lines": [
+        52,
+        52
+      ],
+      "source_sha256": "de9371122d85257a3871435c76082b2dd702e905ad9c64d430fa005eae7d31be",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.RatEqui.exists_root"
+      ],
+      "legacy_unit": "Z4.2.13",
+      "grade": "L2",
+      "review": "reviews/R14_review_A.md",
+      "source_review": "out/R14_review_A.md",
+      "lines": [
+        53,
+        53
+      ],
+      "source_sha256": "de9371122d85257a3871435c76082b2dd702e905ad9c64d430fa005eae7d31be",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.Mem.NatEqui.chi_smulLat"
+      ],
+      "legacy_unit": "Z4.2.13",
+      "grade": "L2",
+      "review": "reviews/R14_review_A.md",
+      "source_review": "out/R14_review_A.md",
+      "lines": [
+        56,
+        56
+      ],
+      "source_sha256": "de9371122d85257a3871435c76082b2dd702e905ad9c64d430fa005eae7d31be",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.Mem.NatEqui.chiFac_ne_zero"
+      ],
+      "legacy_unit": "Z4.2.13",
+      "grade": "L2",
+      "review": "reviews/R14_review_A.md",
+      "source_review": "out/R14_review_A.md",
+      "lines": [
+        57,
+        57
+      ],
+      "source_sha256": "de9371122d85257a3871435c76082b2dd702e905ad9c64d430fa005eae7d31be",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.Mem.NatEqui.chiFac_right"
+      ],
+      "legacy_unit": "Z4.2.13",
+      "grade": "L2",
+      "review": "reviews/R14_review_A.md",
+      "source_review": "out/R14_review_A.md",
+      "lines": [
+        58,
+        58
+      ],
+      "source_sha256": "de9371122d85257a3871435c76082b2dd702e905ad9c64d430fa005eae7d31be",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.Mem.NatEqui.chiFac_left"
+      ],
+      "legacy_unit": "Z4.2.13",
+      "grade": "L2",
+      "review": "reviews/R14_review_A.md",
+      "source_review": "out/R14_review_A.md",
+      "lines": [
+        59,
+        59
+      ],
+      "source_sha256": "de9371122d85257a3871435c76082b2dd702e905ad9c64d430fa005eae7d31be",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "Formalism.L2.KerInert.RepComb.lamK_eq"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L2",
+      "review": "reviews/R14_review_B.md",
+      "source_review": "out/R14_review_B.md",
+      "lines": [
+        25,
+        25
+      ],
+      "source_sha256": "60856cf048b48ffbb71f7c7faca762efe865e425a6b66db34e144f23468f5713",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "Formalism.L2.KerInert.RepComb.laFacts_of_adm"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L1",
+      "review": "reviews/R14_review_B.md",
+      "source_review": "out/R14_review_B.md",
+      "lines": [
+        26,
+        26
+      ],
+      "source_sha256": "60856cf048b48ffbb71f7c7faca762efe865e425a6b66db34e144f23468f5713",
+      "verdict": "CONFIRMED WITH GAPS",
+      "scope": "Declaration-level statement comparison only; proof qualifications remain."
+    },
+    {
+      "declarations": [
+        "Formalism.L2.Ker.lattice_integral_of_facts"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L1",
+      "review": "reviews/R14_review_B.md",
+      "source_review": "out/R14_review_B.md",
+      "lines": [
+        27,
+        27
+      ],
+      "source_sha256": "60856cf048b48ffbb71f7c7faca762efe865e425a6b66db34e144f23468f5713",
+      "verdict": "CONFIRMED WITH GAPS",
+      "scope": "Declaration-level statement comparison only; proof qualifications remain."
+    },
+    {
+      "declarations": [
+        "Formalism.L2.Ker.finite_index_of_fg"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L2",
+      "review": "reviews/R14_review_B.md",
+      "source_review": "out/R14_review_B.md",
+      "lines": [
+        28,
+        28
+      ],
+      "source_sha256": "60856cf048b48ffbb71f7c7faca762efe865e425a6b66db34e144f23468f5713",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "Formalism.L2.Ker.twist_lattice_kernel"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L2",
+      "review": "reviews/R14_review_B.md",
+      "source_review": "out/R14_review_B.md",
+      "lines": [
+        29,
+        29
+      ],
+      "source_sha256": "60856cf048b48ffbb71f7c7faca762efe865e425a6b66db34e144f23468f5713",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "Formalism.L2.Ker.theta_coset_kernel"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L2",
+      "review": "reviews/R14_review_B.md",
+      "source_review": "out/R14_review_B.md",
+      "lines": [
+        30,
+        30
+      ],
+      "source_sha256": "60856cf048b48ffbb71f7c7faca762efe865e425a6b66db34e144f23468f5713",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.kerTh_entire_algCoef"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L1",
+      "review": "reviews/R14_review_B.md",
+      "source_review": "out/R14_review_B.md",
+      "lines": [
+        31,
+        31
+      ],
+      "source_sha256": "60856cf048b48ffbb71f7c7faca762efe865e425a6b66db34e144f23468f5713",
+      "verdict": "CONFIRMED WITH GAPS",
+      "scope": "Declaration-level statement comparison only; proof qualifications remain."
+    },
+    {
+      "declarations": [
+        "Formalism.L2.Ker.push_opU"
+      ],
+      "legacy_unit": "Z4.3",
+      "grade": "L2",
+      "review": "reviews/R14_review_B.md",
+      "source_review": "out/R14_review_B.md",
+      "lines": [
+        33,
+        33
+      ],
+      "source_sha256": "60856cf048b48ffbb71f7c7faca762efe865e425a6b66db34e144f23468f5713",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "Formalism.L2.Ker.reading_is_kernel"
+      ],
+      "legacy_unit": "Z4.3",
+      "grade": "L2",
+      "review": "reviews/R14_review_B.md",
+      "source_review": "out/R14_review_B.md",
+      "lines": [
+        34,
+        34
+      ],
+      "source_sha256": "60856cf048b48ffbb71f7c7faca762efe865e425a6b66db34e144f23468f5713",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "Formalism.L2.Ker.taylor_sum"
+      ],
+      "legacy_unit": "Z4.3",
+      "grade": "L2",
+      "review": "reviews/R14_review_B.md",
+      "source_review": "out/R14_review_B.md",
+      "lines": [
+        35,
+        35
+      ],
+      "source_sha256": "60856cf048b48ffbb71f7c7faca762efe865e425a6b66db34e144f23468f5713",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "Formalism.L2.Ker.transcendence_algebraic_eigen"
+      ],
+      "legacy_unit": "Z4.3",
+      "grade": "L1",
+      "review": "reviews/R14_review_B.md",
+      "source_review": "out/R14_review_B.md",
+      "lines": [
+        36,
+        36
+      ],
+      "source_sha256": "60856cf048b48ffbb71f7c7faca762efe865e425a6b66db34e144f23468f5713",
+      "verdict": "CONFIRMED WITH GAPS",
+      "scope": "Declaration-level statement comparison only; proof qualifications remain."
+    },
+    {
+      "declarations": [
+        "Formalism.L2.Ker.kernel_combination_form"
+      ],
+      "legacy_unit": "Z4.3",
+      "grade": "L2",
+      "review": "reviews/R14_review_B.md",
+      "source_review": "out/R14_review_B.md",
+      "lines": [
+        37,
+        37
+      ],
+      "source_sha256": "60856cf048b48ffbb71f7c7faca762efe865e425a6b66db34e144f23468f5713",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "Formalism.L2.Ker.first_kernel_law_reading"
+      ],
+      "legacy_unit": "Z4.3",
+      "grade": "L2",
+      "review": "reviews/R14_review_B.md",
+      "source_review": "out/R14_review_B.md",
+      "lines": [
+        38,
+        38
+      ],
+      "source_sha256": "60856cf048b48ffbb71f7c7faca762efe865e425a6b66db34e144f23468f5713",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.Ggeo.KerComb.comb_of_tied"
+      ],
+      "legacy_unit": "Z4.3",
+      "grade": "L1",
+      "review": "reviews/R14_review_B.md",
+      "source_review": "out/R14_review_B.md",
+      "lines": [
+        39,
+        39
+      ],
+      "source_sha256": "60856cf048b48ffbb71f7c7faca762efe865e425a6b66db34e144f23468f5713",
+      "verdict": "CONFIRMED WITH GAPS",
+      "scope": "Declaration-level statement comparison only; proof qualifications remain."
+    },
+    {
+      "declarations": [
+        "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.base_linkage_nonempty"
+      ],
+      "legacy_unit": "Z4.2.13",
+      "grade": "L2",
+      "review": "reviews/R14_review_A.md",
+      "source_review": "out/R14_review_A.md",
+      "lines": [
+        61,
+        61
+      ],
+      "source_sha256": "de9371122d85257a3871435c76082b2dd702e905ad9c64d430fa005eae7d31be",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.NormGauss.sum_norm_neg"
+      ],
+      "legacy_unit": "Z4.2.13",
+      "grade": "L2",
+      "review": "reviews/R14_review_A.md",
+      "source_review": "out/R14_review_A.md",
+      "lines": [
+        64,
+        64
+      ],
+      "source_sha256": "de9371122d85257a3871435c76082b2dd702e905ad9c64d430fa005eae7d31be",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.pairOK_allSites"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L1",
+      "review": "reviews/R14_review_B.md",
+      "source_review": "out/R14_review_B.md",
+      "lines": [
+        32,
+        32
+      ],
+      "source_sha256": "60856cf048b48ffbb71f7c7faca762efe865e425a6b66db34e144f23468f5713",
+      "verdict": "CONFIRMED WITH GAPS",
+      "scope": "Declaration-level statement comparison only; proof qualifications remain."
+    },
+    {
+      "declarations": [
+        "Formalism.L2.GlobalTheoryTheory.Comp.glob_one"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L2",
+      "review": "reviews/R15_review_A.md",
+      "source_review": "out/R15_review_A.md",
+      "lines": [
+        35,
+        35
+      ],
+      "source_sha256": "5b787a5d05d1e8388d5a01f8a2d426eec614cd95e91b37523d9006cac6b16d6f",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "Formalism.L2.GlobalTheoryTheory.Comp.mem_hat_glob"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L2",
+      "review": "reviews/R15_review_A.md",
+      "source_review": "out/R15_review_A.md",
+      "lines": [
+        36,
+        36
+      ],
+      "source_sha256": "5b787a5d05d1e8388d5a01f8a2d426eec614cd95e91b37523d9006cac6b16d6f",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.isLat_dl_of_isOrthCo"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L2",
+      "review": "reviews/R15_review_A.md",
+      "source_review": "out/R15_review_A.md",
+      "lines": [
+        52,
+        52
+      ],
+      "source_sha256": "5b787a5d05d1e8388d5a01f8a2d426eec614cd95e91b37523d9006cac6b16d6f",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "Formalism.L2.GlobalTheoryTheory.Comp.glob_dl"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L2",
+      "review": "reviews/R15_review_A.md",
+      "source_review": "out/R15_review_A.md",
+      "lines": [
+        53,
+        53
+      ],
+      "source_sha256": "5b787a5d05d1e8388d5a01f8a2d426eec614cd95e91b37523d9006cac6b16d6f",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "Formalism.L2.GlobalTheoryTheory.Comp.glob_companion"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L2",
+      "review": "reviews/R15_review_A.md",
+      "source_review": "out/R15_review_A.md",
+      "lines": [
+        54,
+        54
+      ],
+      "source_sha256": "5b787a5d05d1e8388d5a01f8a2d426eec614cd95e91b37523d9006cac6b16d6f",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.OrthSelfDual.isLat_and_dl_eq_of_isSDLat_mvL"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L2",
+      "review": "reviews/R15_review_A.md",
+      "source_review": "out/R15_review_A.md",
+      "lines": [
+        64,
+        64
+      ],
+      "source_sha256": "5b787a5d05d1e8388d5a01f8a2d426eec614cd95e91b37523d9006cac6b16d6f",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.SDCompan.isSD_toStd"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L2",
+      "review": "reviews/R15_review_A.md",
+      "source_review": "out/R15_review_A.md",
+      "lines": [
+        65,
+        65
+      ],
+      "source_sha256": "5b787a5d05d1e8388d5a01f8a2d426eec614cd95e91b37523d9006cac6b16d6f",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.SDCompan.isSDLat_latK"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L2",
+      "review": "reviews/R15_review_A.md",
+      "source_review": "out/R15_review_A.md",
+      "lines": [
+        66,
+        66
+      ],
+      "source_sha256": "5b787a5d05d1e8388d5a01f8a2d426eec614cd95e91b37523d9006cac6b16d6f",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.KerSelfDual.isSDLat_latK_of_stdL"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L2",
+      "review": "reviews/R15_review_A.md",
+      "source_review": "out/R15_review_A.md",
+      "lines": [
+        67,
+        67
+      ],
+      "source_sha256": "5b787a5d05d1e8388d5a01f8a2d426eec614cd95e91b37523d9006cac6b16d6f",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.KerSiteSelfDual.even_and_isSDLat_kerN"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L2",
+      "review": "reviews/R15_review_A.md",
+      "source_review": "out/R15_review_A.md",
+      "lines": [
+        68,
+        68
+      ],
+      "source_sha256": "5b787a5d05d1e8388d5a01f8a2d426eec614cd95e91b37523d9006cac6b16d6f",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.TwV.ph_tensInt_onto"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L2",
+      "review": "reviews/R15_review_A.md",
+      "source_review": "out/R15_review_A.md",
+      "lines": [
+        78,
+        78
+      ],
+      "source_sha256": "5b787a5d05d1e8388d5a01f8a2d426eec614cd95e91b37523d9006cac6b16d6f",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.TwV.locSp_eq_image"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L2",
+      "review": "reviews/R15_review_A.md",
+      "source_review": "out/R15_review_A.md",
+      "lines": [
+        79,
+        79
+      ],
+      "source_sha256": "5b787a5d05d1e8388d5a01f8a2d426eec614cd95e91b37523d9006cac6b16d6f",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.LocCarry.mem_latS_latAd_iff"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L2",
+      "review": "reviews/R15_review_A.md",
+      "source_review": "out/R15_review_A.md",
+      "lines": [
+        80,
+        80
+      ],
+      "source_sha256": "5b787a5d05d1e8388d5a01f8a2d426eec614cd95e91b37523d9006cac6b16d6f",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.TwV.latAdLoc_of"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L2",
+      "review": "reviews/R15_review_A.md",
+      "source_review": "out/R15_review_A.md",
+      "lines": [
+        81,
+        81
+      ],
+      "source_sha256": "5b787a5d05d1e8388d5a01f8a2d426eec614cd95e91b37523d9006cac6b16d6f",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.smul_dualSet_latAd_mem"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L2",
+      "review": "reviews/R15_review_A.md",
+      "source_review": "out/R15_review_A.md",
+      "lines": [
+        82,
+        82
+      ],
+      "source_sha256": "5b787a5d05d1e8388d5a01f8a2d426eec614cd95e91b37523d9006cac6b16d6f",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.TwV.CompSp.locSp_compan_eq"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L2",
+      "review": "reviews/R15_review_A.md",
+      "source_review": "out/R15_review_A.md",
+      "lines": [
+        83,
+        83
+      ],
+      "source_sha256": "5b787a5d05d1e8388d5a01f8a2d426eec614cd95e91b37523d9006cac6b16d6f",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.TwV.FacQPt.facQ_isPt"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L2",
+      "review": "reviews/R15_review_A.md",
+      "source_review": "out/R15_review_A.md",
+      "lines": [
+        84,
+        84
+      ],
+      "source_sha256": "5b787a5d05d1e8388d5a01f8a2d426eec614cd95e91b37523d9006cac6b16d6f",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.TwV.SpanPt.locSp_latAd_isPt"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L2",
+      "review": "reviews/R15_review_A.md",
+      "source_review": "out/R15_review_A.md",
+      "lines": [
+        85,
+        85
+      ],
+      "source_sha256": "5b787a5d05d1e8388d5a01f8a2d426eec614cd95e91b37523d9006cac6b16d6f",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.TwV.KerSp.locSp_latK_isPt"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L2",
+      "review": "reviews/R15_review_A.md",
+      "source_review": "out/R15_review_A.md",
+      "lines": [
+        86,
+        86
+      ],
+      "source_sha256": "5b787a5d05d1e8388d5a01f8a2d426eec614cd95e91b37523d9006cac6b16d6f",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.TwV.Joint.basesAt_span"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L2",
+      "review": "reviews/R15_review_A.md",
+      "source_review": "out/R15_review_A.md",
+      "lines": [
+        87,
+        87
+      ],
+      "source_sha256": "5b787a5d05d1e8388d5a01f8a2d426eec614cd95e91b37523d9006cac6b16d6f",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.TwV.locSp_reindex"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L2",
+      "review": "reviews/R15_review_A.md",
+      "source_review": "out/R15_review_A.md",
+      "lines": [
+        88,
+        88
+      ],
+      "source_sha256": "5b787a5d05d1e8388d5a01f8a2d426eec614cd95e91b37523d9006cac6b16d6f",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.TwV.Joint.locSp_kerN_zero"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L2",
+      "review": "reviews/R15_review_A.md",
+      "source_review": "out/R15_review_A.md",
+      "lines": [
+        89,
+        89
+      ],
+      "source_sha256": "5b787a5d05d1e8388d5a01f8a2d426eec614cd95e91b37523d9006cac6b16d6f",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.TwV.Joint.locSp_kerN_succ"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L2",
+      "review": "reviews/R15_review_A.md",
+      "source_review": "out/R15_review_A.md",
+      "lines": [
+        90,
+        90
+      ],
+      "source_sha256": "5b787a5d05d1e8388d5a01f8a2d426eec614cd95e91b37523d9006cac6b16d6f",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.TwV.moved_pair_datum_eq_adelic_datum_alt"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L2",
+      "review": "reviews/R15_review_A.md",
+      "source_review": "out/R15_review_A.md",
+      "lines": [
+        105,
+        105
+      ],
+      "source_sha256": "5b787a5d05d1e8388d5a01f8a2d426eec614cd95e91b37523d9006cac6b16d6f",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.TwU.datLoc_homRe"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L2",
+      "review": "reviews/R15_review_A.md",
+      "source_review": "out/R15_review_A.md",
+      "lines": [
+        106,
+        106
+      ],
+      "source_sha256": "5b787a5d05d1e8388d5a01f8a2d426eec614cd95e91b37523d9006cac6b16d6f",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.TwU.xiM_datLoc"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L2",
+      "review": "reviews/R15_review_A.md",
+      "source_review": "out/R15_review_A.md",
+      "lines": [
+        107,
+        107
+      ],
+      "source_sha256": "5b787a5d05d1e8388d5a01f8a2d426eec614cd95e91b37523d9006cac6b16d6f",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.FinWeil.exists_weil"
+      ],
+      "legacy_unit": "Z4.2.13",
+      "grade": "L1",
+      "review": "reviews/R15_review_B.md",
+      "source_review": "out/R15_review_B.md",
+      "lines": [
+        106,
+        106
+      ],
+      "source_sha256": "4fa6720c78f5bdc8654139141afe86ff3b43b59e71ee10d44d49376109240e0b",
+      "verdict": "CONFIRMED WITH GAPS",
+      "scope": "Declaration-level statement comparison only; proof qualifications remain."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.InertSign.vacuum_inert"
+      ],
+      "legacy_unit": "Z4.2.13",
+      "grade": "L1",
+      "review": "reviews/R15_review_B.md",
+      "source_review": "out/R15_review_B.md",
+      "lines": [
+        107,
+        107
+      ],
+      "source_sha256": "4fa6720c78f5bdc8654139141afe86ff3b43b59e71ee10d44d49376109240e0b",
+      "verdict": "CONFIRMED WITH GAPS",
+      "scope": "Declaration-level statement comparison only; proof qualifications remain."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.VacuumExact.vacuum_exact"
+      ],
+      "legacy_unit": "Z4.2.13",
+      "grade": "L1",
+      "review": "reviews/R15_review_B.md",
+      "source_review": "out/R15_review_B.md",
+      "lines": [
+        108,
+        108
+      ],
+      "source_sha256": "4fa6720c78f5bdc8654139141afe86ff3b43b59e71ee10d44d49376109240e0b",
+      "verdict": "CONFIRMED WITH GAPS",
+      "scope": "Declaration-level statement comparison only; proof qualifications remain."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.ThLoc.algTAll"
+      ],
+      "legacy_unit": "Z4.2.13",
+      "grade": "L1",
+      "review": "reviews/R15_review_B.md",
+      "source_review": "out/R15_review_B.md",
+      "lines": [
+        109,
+        109
+      ],
+      "source_sha256": "4fa6720c78f5bdc8654139141afe86ff3b43b59e71ee10d44d49376109240e0b",
+      "verdict": "CONFIRMED WITH GAPS",
+      "scope": "Declaration-level statement comparison only; proof qualifications remain."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.RatEqui.isPull_row"
+      ],
+      "legacy_unit": "Z4.3(i)",
+      "grade": "L1",
+      "review": "reviews/R15_review_B.md",
+      "source_review": "out/R15_review_B.md",
+      "lines": [
+        110,
+        110
+      ],
+      "source_sha256": "4fa6720c78f5bdc8654139141afe86ff3b43b59e71ee10d44d49376109240e0b",
+      "verdict": "CONFIRMED WITH GAPS",
+      "scope": "Declaration-level statement comparison only; proof qualifications remain."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.RatEqui.isPull_col"
+      ],
+      "legacy_unit": "Z4.3(i)",
+      "grade": "L1",
+      "review": "reviews/R15_review_B.md",
+      "source_review": "out/R15_review_B.md",
+      "lines": [
+        111,
+        111
+      ],
+      "source_sha256": "4fa6720c78f5bdc8654139141afe86ff3b43b59e71ee10d44d49376109240e0b",
+      "verdict": "CONFIRMED WITH GAPS",
+      "scope": "Declaration-level statement comparison only; proof qualifications remain."
+    },
+    {
+      "declarations": [
+        "Formalism.L2.Ker.kThetaVector"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L1",
+      "review": "reviews/R16_review_A.md",
+      "source_review": "out/R16_review_A.md",
+      "lines": [
+        11,
+        11
+      ],
+      "source_sha256": "1d6e6c9289cd0a15c13415ecd1313e42935a9088654cc9928529c1c364f13d1a",
+      "verdict": "CONFIRMED WITH GAPS",
+      "scope": "Declaration-level statement comparison only; proof qualifications remain."
+    },
+    {
+      "declarations": [
+        "Formalism.L2.Th1.H.product_theta_mem"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L2",
+      "review": "reviews/R16_review_A.md",
+      "source_review": "out/R16_review_A.md",
+      "lines": [
+        27,
+        27
+      ],
+      "source_sha256": "1d6e6c9289cd0a15c13415ecd1313e42935a9088654cc9928529c1c364f13d1a",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "Formalism.L2.Th1.H.ThStd_proof"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L1",
+      "review": "reviews/R16_review_A.md",
+      "source_review": "out/R16_review_A.md",
+      "lines": [
+        28,
+        28
+      ],
+      "source_sha256": "1d6e6c9289cd0a15c13415ecd1313e42935a9088654cc9928529c1c364f13d1a",
+      "verdict": "CONFIRMED WITH GAPS",
+      "scope": "Declaration-level statement comparison only; proof qualifications remain."
+    },
+    {
+      "declarations": [
+        "Formalism.L2.Th1.H.InterInv_of"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L2",
+      "review": "reviews/R16_review_A.md",
+      "source_review": "out/R16_review_A.md",
+      "lines": [
+        29,
+        29
+      ],
+      "source_sha256": "1d6e6c9289cd0a15c13415ecd1313e42935a9088654cc9928529c1c364f13d1a",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "Formalism.L2.Th1.H.FourthRoot_of"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L2",
+      "review": "reviews/R16_review_A.md",
+      "source_review": "out/R16_review_A.md",
+      "lines": [
+        30,
+        30
+      ],
+      "source_sha256": "1d6e6c9289cd0a15c13415ecd1313e42935a9088654cc9928529c1c364f13d1a",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "Formalism.L2.Th1.H.ThetaVector_of"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L2",
+      "review": "reviews/R16_review_A.md",
+      "source_review": "out/R16_review_A.md",
+      "lines": [
+        31,
+        31
+      ],
+      "source_sha256": "1d6e6c9289cd0a15c13415ecd1313e42935a9088654cc9928529c1c364f13d1a",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.SO.stdOK"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L2",
+      "review": "reviews/R16_review_A.md",
+      "source_review": "out/R16_review_A.md",
+      "lines": [
+        59,
+        59
+      ],
+      "source_sha256": "1d6e6c9289cd0a15c13415ecd1313e42935a9088654cc9928529c1c364f13d1a",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.FourthRootStd.stdOK"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L2",
+      "review": "reviews/R16_review_A.md",
+      "source_review": "out/R16_review_A.md",
+      "lines": [
+        60,
+        60
+      ],
+      "source_sha256": "1d6e6c9289cd0a15c13415ecd1313e42935a9088654cc9928529c1c364f13d1a",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "Formalism.L2.Th1.H.quadMultiplierSemicharacter"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L2",
+      "review": "reviews/R16_review_A.md",
+      "source_review": "out/R16_review_A.md",
+      "lines": [
+        61,
+        61
+      ],
+      "source_sha256": "1d6e6c9289cd0a15c13415ecd1313e42935a9088654cc9928529c1c364f13d1a",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.SC.char_eq"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L2",
+      "review": "reviews/R16_review_A.md",
+      "source_review": "out/R16_review_A.md",
+      "lines": [
+        62,
+        62
+      ],
+      "source_sha256": "1d6e6c9289cd0a15c13415ecd1313e42935a9088654cc9928529c1c364f13d1a",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.FourthRootStd.span_range_emb4_eq_top"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L2",
+      "review": "reviews/R16_review_A.md",
+      "source_review": "out/R16_review_A.md",
+      "lines": [
+        63,
+        63
+      ],
+      "source_sha256": "1d6e6c9289cd0a15c13415ecd1313e42935a9088654cc9928529c1c364f13d1a",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "Formalism.L2.Ker.Base.isomOK"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L2",
+      "review": "reviews/R16_review_A.md",
+      "source_review": "out/R16_review_A.md",
+      "lines": [
+        64,
+        64
+      ],
+      "source_sha256": "1d6e6c9289cd0a15c13415ecd1313e42935a9088654cc9928529c1c364f13d1a",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "Formalism.L2.Ker.Base.lat0OK"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L2",
+      "review": "reviews/R16_review_A.md",
+      "source_review": "out/R16_review_A.md",
+      "lines": [
+        65,
+        65
+      ],
+      "source_sha256": "1d6e6c9289cd0a15c13415ecd1313e42935a9088654cc9928529c1c364f13d1a",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.SO.up"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L2",
+      "review": "reviews/R16_review_A.md",
+      "source_review": "out/R16_review_A.md",
+      "lines": [
+        66,
+        66
+      ],
+      "source_sha256": "1d6e6c9289cd0a15c13415ecd1313e42935a9088654cc9928529c1c364f13d1a",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.SO.down"
+      ],
+      "legacy_unit": "Z4.2.04",
+      "grade": "L2",
+      "review": "reviews/R16_review_A.md",
+      "source_review": "out/R16_review_A.md",
+      "lines": [
+        67,
+        67
+      ],
+      "source_sha256": "1d6e6c9289cd0a15c13415ecd1313e42935a9088654cc9928529c1c364f13d1a",
+      "verdict": "CONFIRMED",
+      "scope": "Only this declaration's hand derivation under the reviewed hypotheses."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.TransDual.nabDelDual"
+      ],
+      "legacy_unit": "Z4.4",
+      "grade": "L2",
+      "review": "reviews/R13_recheck.md",
+      "source_review": "out/R13_recheck.md",
+      "lines": [
+        168,
+        168
+      ],
+      "source_sha256": "e1823ce0f3a387cc55ba7182ab50068e020ef90da3203f8d5a667da42be3f9b9",
+      "verdict": "A1 checked in full",
+      "scope": "Transported Hermitian duality only; no other new R13 entry is included."
+    },
+    {
+      "declarations": [
+        "UpperTheory.Top.every_character_of_green_v_win"
+      ],
+      "legacy_unit": "P014",
+      "grade": "L2",
+      "review": "reviews/R20_review.md",
+      "source_review": "out/R20_review.md",
+      "lines": [
+        46,
+        46
+      ],
+      "source_sha256": "944006e694afcc9d99ca8f0174fa3d08d7fe3f3bb80eeac91f3c58fed2523bff",
+      "verdict": "F: full derivation; yes",
+      "scope": "R20 local implication under its stated premises, not its prerequisite cones."
+    },
+    {
+      "declarations": [
+        "UpperTheory.Top.zero_free_all_of_green_v_win"
+      ],
+      "legacy_unit": "P015",
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "source_review": "out/R20_review.md",
+      "lines": [
+        47,
+        47
+      ],
+      "source_sha256": "944006e694afcc9d99ca8f0174fa3d08d7fe3f3bb80eeac91f3c58fed2523bff",
+      "verdict": "Statement exact",
+      "scope": "R20 local implication under its stated premises, not its prerequisite cones."
+    },
+    {
+      "declarations": [
+        "UpperTheory.Top.zeroFreeAll_of_topG"
+      ],
+      "legacy_unit": "P016",
+      "grade": "L2",
+      "review": "reviews/R20_review.md",
+      "source_review": "out/R20_review.md",
+      "lines": [
+        48,
+        48
+      ],
+      "source_sha256": "944006e694afcc9d99ca8f0174fa3d08d7fe3f3bb80eeac91f3c58fed2523bff",
+      "verdict": "F: full derivation; yes",
+      "scope": "R20 local implication under its stated premises, not its prerequisite cones."
+    },
+    {
+      "declarations": [
+        "UpperTheory.Comparison₂.level_gm_le_on_family_scales"
+      ],
+      "legacy_unit": "P017",
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "source_review": "out/R20_review.md",
+      "lines": [
+        49,
+        49
+      ],
+      "source_sha256": "944006e694afcc9d99ca8f0174fa3d08d7fe3f3bb80eeac91f3c58fed2523bff",
+      "verdict": "Statement exact",
+      "scope": "R20 local implication under its stated premises, not its prerequisite cones."
+    },
+    {
+      "declarations": [
+        "UpperTheory.Comparison₂.formB"
+      ],
+      "legacy_unit": "P018",
+      "grade": "L2",
+      "review": "reviews/R20_review.md",
+      "source_review": "out/R20_review.md",
+      "lines": [
+        50,
+        50
+      ],
+      "source_sha256": "944006e694afcc9d99ca8f0174fa3d08d7fe3f3bb80eeac91f3c58fed2523bff",
+      "verdict": "F: full derivation; yes",
+      "scope": "R20 local implication under its stated premises, not its prerequisite cones."
+    },
+    {
+      "declarations": [
+        "Formalism.HC.zeroFreeOn_of_tiedWin_cyc"
+      ],
+      "legacy_unit": "P019",
+      "grade": "L2",
+      "review": "reviews/R20_review.md",
+      "source_review": "out/R20_review.md",
+      "lines": [
+        51,
+        51
+      ],
+      "source_sha256": "944006e694afcc9d99ca8f0174fa3d08d7fe3f3bb80eeac91f3c58fed2523bff",
+      "verdict": "F: full derivation; yes",
+      "scope": "R20 local implication under its stated premises, not its prerequisite cones."
+    },
+    {
+      "declarations": [
+        "UpperTheory.V.HV.Core.of_four_alt"
+      ],
+      "legacy_unit": "P020",
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "source_review": "out/R20_review.md",
+      "lines": [
+        52,
+        52
+      ],
+      "source_sha256": "944006e694afcc9d99ca8f0174fa3d08d7fe3f3bb80eeac91f3c58fed2523bff",
+      "verdict": "Statement exact",
+      "scope": "R20 local implication under its stated premises, not its prerequisite cones."
+    },
+    {
+      "declarations": [
+        "Formalism.LFunctionChainParameters.WeightedSlopeBounds.each_unit_bound_statement"
+      ],
+      "legacy_unit": "P021",
+      "grade": "L2",
+      "review": "reviews/R20_review.md",
+      "source_review": "out/R20_review.md",
+      "lines": [
+        53,
+        53
+      ],
+      "source_sha256": "944006e694afcc9d99ca8f0174fa3d08d7fe3f3bb80eeac91f3c58fed2523bff",
+      "verdict": "F: full derivation; yes",
+      "scope": "R20 local implication under its stated premises, not its prerequisite cones."
+    },
+    {
+      "declarations": [
+        "Deduction.landau_window"
+      ],
+      "legacy_unit": "P022",
+      "grade": "L2",
+      "review": "reviews/R20_review.md",
+      "source_review": "out/R20_review.md",
+      "lines": [
+        54,
+        54
+      ],
+      "source_sha256": "944006e694afcc9d99ca8f0174fa3d08d7fe3f3bb80eeac91f3c58fed2523bff",
+      "verdict": "F: full derivation; yes",
+      "scope": "R20 local implication under its stated premises, not its prerequisite cones."
+    },
+    {
+      "declarations": [
+        "Deduction.zeroFree_of_rpow_window"
+      ],
+      "legacy_unit": "P023",
+      "grade": "L2",
+      "review": "reviews/R20_review.md",
+      "source_review": "out/R20_review.md",
+      "lines": [
+        55,
+        55
+      ],
+      "source_sha256": "944006e694afcc9d99ca8f0174fa3d08d7fe3f3bb80eeac91f3c58fed2523bff",
+      "verdict": "F: full derivation; yes",
+      "scope": "R20 local implication under its stated premises, not its prerequisite cones."
+    },
+    {
+      "declarations": [
+        "UpperTheory.V.Alg.M.mprime_holds"
+      ],
+      "legacy_unit": "P028",
+      "grade": "L2",
+      "review": "reviews/R20_review.md",
+      "source_review": "out/R20_review.md",
+      "lines": [
+        57,
+        57
+      ],
+      "source_sha256": "944006e694afcc9d99ca8f0174fa3d08d7fe3f3bb80eeac91f3c58fed2523bff",
+      "verdict": "F: full derivation; yes",
+      "scope": "R20 local implication under its stated premises, not its prerequisite cones."
+    },
+    {
+      "declarations": [
+        "UpperTheory.V.ZK.sClassOf"
+      ],
+      "legacy_unit": "P032",
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "source_review": "out/R20_review.md",
+      "lines": [
+        58,
+        58
+      ],
+      "source_sha256": "944006e694afcc9d99ca8f0174fa3d08d7fe3f3bb80eeac91f3c58fed2523bff",
+      "verdict": "Statement exact",
+      "scope": "R20 local implication under its stated premises, not its prerequisite cones."
+    },
+    {
+      "declarations": [
+        "UpperTheory.V.ZK.sThetaOf"
+      ],
+      "legacy_unit": "P033",
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "source_review": "out/R20_review.md",
+      "lines": [
+        59,
+        59
+      ],
+      "source_sha256": "944006e694afcc9d99ca8f0174fa3d08d7fe3f3bb80eeac91f3c58fed2523bff",
+      "verdict": "Statement exact",
+      "scope": "R20 local implication under its stated premises, not its prerequisite cones."
+    },
+    {
+      "declarations": [
+        "UpperTheory.V.LDataCardLeFinrank.vFormula_of_classicalTheorems"
+      ],
+      "legacy_unit": "P040",
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "source_review": "out/R20_review.md",
+      "lines": [
+        60,
+        60
+      ],
+      "source_sha256": "944006e694afcc9d99ca8f0174fa3d08d7fe3f3bb80eeac91f3c58fed2523bff",
+      "verdict": "Statement exact",
+      "scope": "R20 local implication under its stated premises, not its prerequisite cones."
+    },
+    {
+      "declarations": [
+        "Formalism.HN.height_gram_determinant"
+      ],
+      "legacy_unit": "P049",
+      "grade": "L2",
+      "review": "reviews/R20_review.md",
+      "source_review": "out/R20_review.md",
+      "lines": [
+        62,
+        62
+      ],
+      "source_sha256": "944006e694afcc9d99ca8f0174fa3d08d7fe3f3bb80eeac91f3c58fed2523bff",
+      "verdict": "F: full derivation; yes",
+      "scope": "R20 local implication under its stated premises, not its prerequisite cones."
+    },
+    {
+      "declarations": [
+        "Formalism.DivisionValues.dual_lattice_measure"
+      ],
+      "legacy_unit": "P051",
+      "grade": "L2",
+      "review": "reviews/R20_review.md",
+      "source_review": "out/R20_review.md",
+      "lines": [
+        63,
+        63
+      ],
+      "source_sha256": "944006e694afcc9d99ca8f0174fa3d08d7fe3f3bb80eeac91f3c58fed2523bff",
+      "verdict": "F: full derivation; yes",
+      "scope": "R20 local implication under its stated premises, not its prerequisite cones."
+    },
+    {
+      "declarations": [
+        "Formalism.HN.DualPolygon.ht_dual"
+      ],
+      "legacy_unit": "P052",
+      "grade": "L2",
+      "review": "reviews/R20_review.md",
+      "source_review": "out/R20_review.md",
+      "lines": [
+        64,
+        64
+      ],
+      "source_sha256": "944006e694afcc9d99ca8f0174fa3d08d7fe3f3bb80eeac91f3c58fed2523bff",
+      "verdict": "F: full derivation; yes",
+      "scope": "R20 local implication under its stated premises, not its prerequisite cones."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.KZ.zetaUr_of_halves2"
+      ],
+      "legacy_unit": "P053",
+      "grade": "L2",
+      "review": "reviews/R20_review.md",
+      "source_review": "out/R20_review.md",
+      "lines": [
+        65,
+        65
+      ],
+      "source_sha256": "944006e694afcc9d99ca8f0174fa3d08d7fe3f3bb80eeac91f3c58fed2523bff",
+      "verdict": "F: full derivation; yes",
+      "scope": "R20 local implication under its stated premises, not its prerequisite cones."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.KZ.zetaSysU_of_halves2"
+      ],
+      "legacy_unit": "P068",
+      "grade": "L2",
+      "review": "reviews/R20_review.md",
+      "source_review": "out/R20_review.md",
+      "lines": [
+        67,
+        67
+      ],
+      "source_sha256": "944006e694afcc9d99ca8f0174fa3d08d7fe3f3bb80eeac91f3c58fed2523bff",
+      "verdict": "F: full derivation; yes",
+      "scope": "R20 local implication under its stated premises, not its prerequisite cones."
+    },
+    {
+      "declarations": [
+        "riemannHypothesis"
+      ],
+      "legacy_unit": "P001",
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "source_review": "out/R20_review.md",
+      "lines": [
+        96,
+        96
+      ],
+      "source_sha256": "944006e694afcc9d99ca8f0174fa3d08d7fe3f3bb80eeac91f3c58fed2523bff",
+      "verdict": "Exact statement comparison",
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript."
+    },
+    {
+      "declarations": [
+        "riemannZeta_eq_zero_re"
+      ],
+      "legacy_unit": "P002",
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "source_review": "out/R20_review.md",
+      "lines": [
+        96,
+        96
+      ],
+      "source_sha256": "944006e694afcc9d99ca8f0174fa3d08d7fe3f3bb80eeac91f3c58fed2523bff",
+      "verdict": "Exact statement comparison",
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript."
+    },
+    {
+      "declarations": [
+        "LFunction_ne_zero_of_half_lt_re"
+      ],
+      "legacy_unit": "P003",
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "source_review": "out/R20_review.md",
+      "lines": [
+        97,
+        97
+      ],
+      "source_sha256": "944006e694afcc9d99ca8f0174fa3d08d7fe3f3bb80eeac91f3c58fed2523bff",
+      "verdict": "Exact statement comparison",
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript."
+    },
+    {
+      "declarations": [
+        "LFunction_eq_zero_re"
+      ],
+      "legacy_unit": "P004",
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "source_review": "out/R20_review.md",
+      "lines": [
+        98,
+        98
+      ],
+      "source_sha256": "944006e694afcc9d99ca8f0174fa3d08d7fe3f3bb80eeac91f3c58fed2523bff",
+      "verdict": "Exact statement comparison",
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript."
+    },
+    {
+      "declarations": [
+        "LFunction_eq_zero_re_of_isPrimitive"
+      ],
+      "legacy_unit": "P005",
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "source_review": "out/R20_review.md",
+      "lines": [
+        98,
+        98
+      ],
+      "source_sha256": "944006e694afcc9d99ca8f0174fa3d08d7fe3f3bb80eeac91f3c58fed2523bff",
+      "verdict": "Exact statement comparison",
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript."
+    },
+    {
+      "declarations": [
+        "UpperTheory.FinalTheorems.everyCharacter_of_row"
+      ],
+      "legacy_unit": "P011",
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "source_review": "out/R20_review.md",
+      "lines": [
+        99,
+        99
+      ],
+      "source_sha256": "944006e694afcc9d99ca8f0174fa3d08d7fe3f3bb80eeac91f3c58fed2523bff",
+      "verdict": "Exact statement comparison",
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript."
+    },
+    {
+      "declarations": [
+        "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin"
+      ],
+      "legacy_unit": "P012",
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "source_review": "out/R20_review.md",
+      "lines": [
+        101,
+        101
+      ],
+      "source_sha256": "944006e694afcc9d99ca8f0174fa3d08d7fe3f3bb80eeac91f3c58fed2523bff",
+      "verdict": "Exact statement comparison",
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript."
+    },
+    {
+      "declarations": [
+        "UpperTheory.One.vwin_of_row"
+      ],
+      "legacy_unit": "P013",
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "source_review": "out/R20_review.md",
+      "lines": [
+        102,
+        102
+      ],
+      "source_sha256": "944006e694afcc9d99ca8f0174fa3d08d7fe3f3bb80eeac91f3c58fed2523bff",
+      "verdict": "Exact statement comparison",
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript."
+    },
+    {
+      "declarations": [
+        "UpperTheory.Top.every_character_of_green_v_win"
+      ],
+      "legacy_unit": "P014",
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "source_review": "out/R20_review.md",
+      "lines": [
+        103,
+        103
+      ],
+      "source_sha256": "944006e694afcc9d99ca8f0174fa3d08d7fe3f3bb80eeac91f3c58fed2523bff",
+      "verdict": "Exact statement comparison",
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript."
+    },
+    {
+      "declarations": [
+        "UpperTheory.Top.zero_free_all_of_green_v_win"
+      ],
+      "legacy_unit": "P015",
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "source_review": "out/R20_review.md",
+      "lines": [
+        103,
+        103
+      ],
+      "source_sha256": "944006e694afcc9d99ca8f0174fa3d08d7fe3f3bb80eeac91f3c58fed2523bff",
+      "verdict": "Exact statement comparison",
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript."
+    },
+    {
+      "declarations": [
+        "UpperTheory.Top.zeroFreeAll_of_topG"
+      ],
+      "legacy_unit": "P016",
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "source_review": "out/R20_review.md",
+      "lines": [
+        103,
+        103
+      ],
+      "source_sha256": "944006e694afcc9d99ca8f0174fa3d08d7fe3f3bb80eeac91f3c58fed2523bff",
+      "verdict": "Exact statement comparison",
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript."
+    },
+    {
+      "declarations": [
+        "UpperTheory.Comparison₂.level_gm_le_on_family_scales"
+      ],
+      "legacy_unit": "P017",
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "source_review": "out/R20_review.md",
+      "lines": [
+        104,
+        104
+      ],
+      "source_sha256": "944006e694afcc9d99ca8f0174fa3d08d7fe3f3bb80eeac91f3c58fed2523bff",
+      "verdict": "Exact statement comparison",
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript."
+    },
+    {
+      "declarations": [
+        "Deduction.landau_window"
+      ],
+      "legacy_unit": "P022",
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "source_review": "out/R20_review.md",
+      "lines": [
+        106,
+        106
+      ],
+      "source_sha256": "944006e694afcc9d99ca8f0174fa3d08d7fe3f3bb80eeac91f3c58fed2523bff",
+      "verdict": "Exact statement comparison",
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript."
+    },
+    {
+      "declarations": [
+        "Deduction.zeroFree_of_rpow_window"
+      ],
+      "legacy_unit": "P023",
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "source_review": "out/R20_review.md",
+      "lines": [
+        106,
+        106
+      ],
+      "source_sha256": "944006e694afcc9d99ca8f0174fa3d08d7fe3f3bb80eeac91f3c58fed2523bff",
+      "verdict": "Exact statement comparison",
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript."
+    },
+    {
+      "declarations": [
+        "UpperTheory.Comparison₂.formB"
+      ],
+      "legacy_unit": "P018",
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "source_review": "out/R20_review.md",
+      "lines": [
+        106,
+        106
+      ],
+      "source_sha256": "944006e694afcc9d99ca8f0174fa3d08d7fe3f3bb80eeac91f3c58fed2523bff",
+      "verdict": "Exact statement comparison",
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript."
+    },
+    {
+      "declarations": [
+        "Formalism.HC.zeroFreeOn_of_tiedWin_cyc"
+      ],
+      "legacy_unit": "P019",
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "source_review": "out/R20_review.md",
+      "lines": [
+        106,
+        106
+      ],
+      "source_sha256": "944006e694afcc9d99ca8f0174fa3d08d7fe3f3bb80eeac91f3c58fed2523bff",
+      "verdict": "Exact statement comparison",
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript."
+    },
+    {
+      "declarations": [
+        "Formalism.LFunctionChainParameters.WeightedSlopeBounds.each_unit_bound_statement"
+      ],
+      "legacy_unit": "P021",
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "source_review": "out/R20_review.md",
+      "lines": [
+        108,
+        108
+      ],
+      "source_sha256": "944006e694afcc9d99ca8f0174fa3d08d7fe3f3bb80eeac91f3c58fed2523bff",
+      "verdict": "Exact statement comparison",
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript."
+    },
+    {
+      "declarations": [
+        "UpperTheory.V.Tower.exists_descends"
+      ],
+      "legacy_unit": "P031",
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "source_review": "out/R20_review.md",
+      "lines": [
+        109,
+        109
+      ],
+      "source_sha256": "944006e694afcc9d99ca8f0174fa3d08d7fe3f3bb80eeac91f3c58fed2523bff",
+      "verdict": "Exact statement comparison",
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript."
+    },
+    {
+      "declarations": [
+        "UpperTheory.V.ZK.sClassOf"
+      ],
+      "legacy_unit": "P032",
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "source_review": "out/R20_review.md",
+      "lines": [
+        110,
+        110
+      ],
+      "source_sha256": "944006e694afcc9d99ca8f0174fa3d08d7fe3f3bb80eeac91f3c58fed2523bff",
+      "verdict": "Exact statement comparison",
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript."
+    },
+    {
+      "declarations": [
+        "UpperTheory.V.ZK.sThetaOf"
+      ],
+      "legacy_unit": "P033",
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "source_review": "out/R20_review.md",
+      "lines": [
+        110,
+        110
+      ],
+      "source_sha256": "944006e694afcc9d99ca8f0174fa3d08d7fe3f3bb80eeac91f3c58fed2523bff",
+      "verdict": "Exact statement comparison",
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript."
+    },
+    {
+      "declarations": [
+        "UpperTheory.V.ZK.Up.torsStab"
+      ],
+      "legacy_unit": "P035",
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "source_review": "out/R20_review.md",
+      "lines": [
+        111,
+        111
+      ],
+      "source_sha256": "944006e694afcc9d99ca8f0174fa3d08d7fe3f3bb80eeac91f3c58fed2523bff",
+      "verdict": "Exact statement comparison",
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript."
+    },
+    {
+      "declarations": [
+        "UpperTheory.V.ZK.sCount"
+      ],
+      "legacy_unit": "P036",
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "source_review": "out/R20_review.md",
+      "lines": [
+        112,
+        112
+      ],
+      "source_sha256": "944006e694afcc9d99ca8f0174fa3d08d7fe3f3bb80eeac91f3c58fed2523bff",
+      "verdict": "Exact statement comparison",
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript."
+    },
+    {
+      "declarations": [
+        "PositivityTheory.QuaternionShaBounds.sSha"
+      ],
+      "legacy_unit": "P037",
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "source_review": "out/R20_review.md",
+      "lines": [
+        113,
+        113
+      ],
+      "source_sha256": "944006e694afcc9d99ca8f0174fa3d08d7fe3f3bb80eeac91f3c58fed2523bff",
+      "verdict": "Exact statement comparison",
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript."
+    },
+    {
+      "declarations": [
+        "UpperTheory.V.KT.tors_le"
+      ],
+      "legacy_unit": "P038",
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "source_review": "out/R20_review.md",
+      "lines": [
+        114,
+        114
+      ],
+      "source_sha256": "944006e694afcc9d99ca8f0174fa3d08d7fe3f3bb80eeac91f3c58fed2523bff",
+      "verdict": "Exact statement comparison",
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript."
+    },
+    {
+      "declarations": [
+        "UpperTheory.V.LDataCardLeFinrank.vFormula_of_classicalTheorems"
+      ],
+      "legacy_unit": "P040",
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "source_review": "out/R20_review.md",
+      "lines": [
+        115,
+        115
+      ],
+      "source_sha256": "944006e694afcc9d99ca8f0174fa3d08d7fe3f3bb80eeac91f3c58fed2523bff",
+      "verdict": "Exact statement comparison",
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript."
+    },
+    {
+      "declarations": [
+        "Formalism.HN.height_gram_determinant"
+      ],
+      "legacy_unit": "P049",
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "source_review": "out/R20_review.md",
+      "lines": [
+        116,
+        116
+      ],
+      "source_sha256": "944006e694afcc9d99ca8f0174fa3d08d7fe3f3bb80eeac91f3c58fed2523bff",
+      "verdict": "Exact statement comparison",
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript."
+    },
+    {
+      "declarations": [
+        "Formalism.DivisionValues.dual_lattice_measure"
+      ],
+      "legacy_unit": "P051",
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "source_review": "out/R20_review.md",
+      "lines": [
+        116,
+        116
+      ],
+      "source_sha256": "944006e694afcc9d99ca8f0174fa3d08d7fe3f3bb80eeac91f3c58fed2523bff",
+      "verdict": "Exact statement comparison",
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript."
+    },
+    {
+      "declarations": [
+        "Formalism.HN.DualPolygon.ht_dual"
+      ],
+      "legacy_unit": "P052",
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "source_review": "out/R20_review.md",
+      "lines": [
+        116,
+        116
+      ],
+      "source_sha256": "944006e694afcc9d99ca8f0174fa3d08d7fe3f3bb80eeac91f3c58fed2523bff",
+      "verdict": "Exact statement comparison",
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript."
+    },
+    {
+      "declarations": [
+        "Formalism.LFunctionChainParameters.WeightedSlopeBounds.each_unit_bound_statement"
+      ],
+      "legacy_unit": "P021",
+      "grade": "L2",
+      "review": "reviews/R23_review.md",
+      "source_review": "out/R23_review.md",
+      "lines": [
+        120,
+        136
+      ],
+      "source_sha256": "b4255492226a35974a296a52c921ecd647e89d563e56363af91a4239b7c2b82c",
+      "verdict": "CORRECT AND COMPLETE under displayed hypotheses",
+      "scope": "Only the per-unit ASK inequality from all eleven hypotheses."
+    },
+    {
+      "declarations": [
+        "UpperTheory.Comparison₂.level_gm_le_on_family_scales"
+      ],
+      "legacy_unit": "P017",
+      "grade": "L1",
+      "review": "reviews/R23_review.md",
+      "source_review": "out/R23_review.md",
+      "lines": [
+        27,
+        88
+      ],
+      "source_sha256": "b4255492226a35974a296a52c921ecd647e89d563e56363af91a4239b7c2b82c",
+      "verdict": "CORRECT WITH GAPS",
+      "scope": "R23 window theorem; exact conditional statement, no approval of its lower proof suppliers."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.Mem.Col2.SameOff.use₆"
+      ],
+      "legacy_unit": "P096",
+      "grade": "L1",
+      "review": "reviews/R21_review.md",
+      "source_review": "out/R21_review.md",
+      "lines": [
+        417,
+        432
+      ],
+      "source_sha256": "9e241d4b6e07b744eaa2c025e6c6ef9e8567170923b4f9a928dc4a1d5b08b7fc",
+      "verdict": "Statement compared; later candidate recheck reserved",
+      "scope": "Statement-level verdict only; no completion of other segments in the same legacy unit."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.TwV.congAt_fb_lev"
+      ],
+      "legacy_unit": "P134",
+      "grade": "L1",
+      "review": "reviews/R21_review.md",
+      "source_review": "out/R21_review.md",
+      "lines": [
+        433,
+        448
+      ],
+      "source_sha256": "9e241d4b6e07b744eaa2c025e6c6ef9e8567170923b4f9a928dc4a1d5b08b7fc",
+      "verdict": "Statement compared; later candidate recheck reserved",
+      "scope": "Statement-level verdict only; no completion of other segments in the same legacy unit."
+    },
+    {
+      "declarations": [
+        "UpperTheory.LiteratureTheorems.resolution_char_zero_of_literature"
+      ],
+      "legacy_unit": "T19",
+      "grade": "L1",
+      "review": "reviews/R21_review.md",
+      "source_review": "out/R21_review.md",
+      "lines": [
+        91,
+        91
+      ],
+      "source_sha256": "9e241d4b6e07b744eaa2c025e6c6ef9e8567170923b4f9a928dc4a1d5b08b7fc",
+      "verdict": "Exact statement comparison",
+      "scope": "Lean interface as specified in the review row; no equivalence with a published result inferred."
+    },
+    {
+      "declarations": [
+        "UpperTheory.LiteratureTheorems.principalisation_char_zero_of_literature"
+      ],
+      "legacy_unit": "T20",
+      "grade": "L1",
+      "review": "reviews/R21_review.md",
+      "source_review": "out/R21_review.md",
+      "lines": [
+        92,
+        92
+      ],
+      "source_sha256": "9e241d4b6e07b744eaa2c025e6c6ef9e8567170923b4f9a928dc4a1d5b08b7fc",
+      "verdict": "Exact statement comparison",
+      "scope": "Lean interface as specified in the review row; no equivalence with a published result inferred."
+    },
+    {
+      "declarations": [
+        "UpperTheory.V.FW.ferreroWashington"
+      ],
+      "legacy_unit": "W11",
+      "grade": "L1",
+      "review": "reviews/R21_review.md",
+      "source_review": "out/R21_review.md",
+      "lines": [
+        93,
+        93
+      ],
+      "source_sha256": "9e241d4b6e07b744eaa2c025e6c6ef9e8567170923b4f9a928dc4a1d5b08b7fc",
+      "verdict": "Exact statement comparison",
+      "scope": "Lean interface as specified in the review row; no equivalence with a published result inferred."
+    },
+    {
+      "declarations": [
+        "UpperTheory.Gal.Int.galoisLocalGlobalStrong_of_geometry_lift"
+      ],
+      "legacy_unit": "B03",
+      "grade": "L1",
+      "review": "reviews/R21_review.md",
+      "source_review": "out/R21_review.md",
+      "lines": [
+        104,
+        104
+      ],
+      "source_sha256": "9e241d4b6e07b744eaa2c025e6c6ef9e8567170923b4f9a928dc4a1d5b08b7fc",
+      "verdict": "Exact statement comparison",
+      "scope": "Lean interface as specified in the review row; no equivalence with a published result inferred."
+    },
+    {
+      "declarations": [
+        "PositivityTheory.SiegelWeilFormula.Fin.siegelWeilStd"
+      ],
+      "legacy_unit": "T12",
+      "grade": "L1",
+      "review": "reviews/R21_review.md",
+      "source_review": "out/R21_review.md",
+      "lines": [
+        108,
+        108
+      ],
+      "source_sha256": "9e241d4b6e07b744eaa2c025e6c6ef9e8567170923b4f9a928dc4a1d5b08b7fc",
+      "verdict": "Exact statement comparison",
+      "scope": "Lean interface as specified in the review row; no equivalence with a published result inferred."
+    },
+    {
+      "declarations": [
+        "ChowFormHeightComparison₂.chow_form_height_comparison"
+      ],
+      "legacy_unit": "T16",
+      "grade": "L1",
+      "review": "reviews/R21_review.md",
+      "source_review": "out/R21_review.md",
+      "lines": [
+        109,
+        109
+      ],
+      "source_sha256": "9e241d4b6e07b744eaa2c025e6c6ef9e8567170923b4f9a928dc4a1d5b08b7fc",
+      "verdict": "Exact statement comparison",
+      "scope": "Lean interface as specified in the review row; no equivalence with a published result inferred."
+    },
+    {
+      "declarations": [
+        "UpperTheory.BaseChangeIdentities.baseChangeN"
+      ],
+      "legacy_unit": "W02",
+      "grade": "L1",
+      "review": "reviews/R21_review.md",
+      "source_review": "out/R21_review.md",
+      "lines": [
+        116,
+        116
+      ],
+      "source_sha256": "9e241d4b6e07b744eaa2c025e6c6ef9e8567170923b4f9a928dc4a1d5b08b7fc",
+      "verdict": "Exact statement comparison",
+      "scope": "Lean interface as specified in the review row; no equivalence with a published result inferred."
+    },
+    {
+      "declarations": [
+        "UpperTheory.V.Z.Tf.SR.descWeak"
+      ],
+      "legacy_unit": "W04",
+      "grade": "L1",
+      "review": "reviews/R21_review.md",
+      "source_review": "out/R21_review.md",
+      "lines": [
+        117,
+        117
+      ],
+      "source_sha256": "9e241d4b6e07b744eaa2c025e6c6ef9e8567170923b4f9a928dc4a1d5b08b7fc",
+      "verdict": "Exact statement comparison",
+      "scope": "Lean interface as specified in the review row; no equivalence with a published result inferred."
+    },
+    {
+      "declarations": [
+        "UpperTheory.V.ZK.lemmaK_litN_alt"
+      ],
+      "legacy_unit": "W05",
+      "grade": "L1",
+      "review": "reviews/R21_review.md",
+      "source_review": "out/R21_review.md",
+      "lines": [
+        118,
+        118
+      ],
+      "source_sha256": "9e241d4b6e07b744eaa2c025e6c6ef9e8567170923b4f9a928dc4a1d5b08b7fc",
+      "verdict": "Exact statement comparison",
+      "scope": "Lean interface as specified in the review row; no equivalence with a published result inferred."
+    },
+    {
+      "declarations": [
+        "UpperTheory.Lit.every_character_of_theta_integrals_local_matching"
+      ],
+      "legacy_unit": "T01",
+      "grade": "L1",
+      "review": "reviews/R21_review.md",
+      "source_review": "out/R21_review.md",
+      "lines": [
+        127,
+        127
+      ],
+      "source_sha256": "9e241d4b6e07b744eaa2c025e6c6ef9e8567170923b4f9a928dc4a1d5b08b7fc",
+      "verdict": "Exact statement comparison",
+      "scope": "Lean interface as specified in the review row; no equivalence with a published result inferred."
+    },
+    {
+      "declarations": [
+        "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound"
+      ],
+      "legacy_unit": "T02",
+      "grade": "L1",
+      "review": "reviews/R21_review.md",
+      "source_review": "out/R21_review.md",
+      "lines": [
+        128,
+        128
+      ],
+      "source_sha256": "9e241d4b6e07b744eaa2c025e6c6ef9e8567170923b4f9a928dc4a1d5b08b7fc",
+      "verdict": "Exact statement comparison",
+      "scope": "Lean interface as specified in the review row; no equivalence with a published result inferred."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt"
+      ],
+      "legacy_unit": "T03",
+      "grade": "L1",
+      "review": "reviews/R21_review.md",
+      "source_review": "out/R21_review.md",
+      "lines": [
+        129,
+        129
+      ],
+      "source_sha256": "9e241d4b6e07b744eaa2c025e6c6ef9e8567170923b4f9a928dc4a1d5b08b7fc",
+      "verdict": "Exact statement comparison",
+      "scope": "Lean interface as specified in the review row; no equivalence with a published result inferred."
+    },
+    {
+      "declarations": [
+        "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt"
+      ],
+      "legacy_unit": "T13",
+      "grade": "L1",
+      "review": "reviews/R21_review.md",
+      "source_review": "out/R21_review.md",
+      "lines": [
+        130,
+        130
+      ],
+      "source_sha256": "9e241d4b6e07b744eaa2c025e6c6ef9e8567170923b4f9a928dc4a1d5b08b7fc",
+      "verdict": "Exact statement comparison",
+      "scope": "Lean interface as specified in the review row; no equivalence with a published result inferred."
+    },
+    {
+      "declarations": [
+        "PositivityTheory.HtPt.Ah.deep_slim_use"
+      ],
+      "legacy_unit": "T14",
+      "grade": "L1",
+      "review": "reviews/R21_review.md",
+      "source_review": "out/R21_review.md",
+      "lines": [
+        131,
+        131
+      ],
+      "source_sha256": "9e241d4b6e07b744eaa2c025e6c6ef9e8567170923b4f9a928dc4a1d5b08b7fc",
+      "verdict": "Exact statement comparison",
+      "scope": "Lean interface as specified in the review row; no equivalence with a published result inferred."
+    },
+    {
+      "declarations": [
+        "GlobalTheory.CompanionTheory.Ar.Plug.deepStR_of_use"
+      ],
+      "legacy_unit": "T26",
+      "grade": "L1",
+      "review": "reviews/R21_review.md",
+      "source_review": "out/R21_review.md",
+      "lines": [
+        132,
+        132
+      ],
+      "source_sha256": "9e241d4b6e07b744eaa2c025e6c6ef9e8567170923b4f9a928dc4a1d5b08b7fc",
+      "verdict": "Exact statement comparison",
+      "scope": "Lean interface as specified in the review row; no equivalence with a published result inferred."
+    },
+    {
+      "declarations": [
+        "UpperTheory.One.Join.automorphic_window_of_inputs"
+      ],
+      "legacy_unit": "W01",
+      "grade": "L1",
+      "review": "reviews/R21_review.md",
+      "source_review": "out/R21_review.md",
+      "lines": [
+        133,
+        133
+      ],
+      "source_sha256": "9e241d4b6e07b744eaa2c025e6c6ef9e8567170923b4f9a928dc4a1d5b08b7fc",
+      "verdict": "Exact statement comparison",
+      "scope": "Lean interface as specified in the review row; no equivalence with a published result inferred."
+    },
+    {
+      "declarations": [
+        "UpperTheory.Top.supplyChi"
+      ],
+      "legacy_unit": "B07",
+      "grade": "L1",
+      "review": "reviews/R21_review.md",
+      "source_review": "out/R21_review.md",
+      "lines": [
+        135,
+        135
+      ],
+      "source_sha256": "9e241d4b6e07b744eaa2c025e6c6ef9e8567170923b4f9a928dc4a1d5b08b7fc",
+      "verdict": "Exact statement comparison",
+      "scope": "Lean interface as specified in the review row; no equivalence with a published result inferred."
+    },
+    {
+      "declarations": [
+        "UpperTheory.Comparison₂.core_gm"
+      ],
+      "legacy_unit": "B08",
+      "grade": "L1",
+      "review": "reviews/R21_review.md",
+      "source_review": "out/R21_review.md",
+      "lines": [
+        136,
+        136
+      ],
+      "source_sha256": "9e241d4b6e07b744eaa2c025e6c6ef9e8567170923b4f9a928dc4a1d5b08b7fc",
+      "verdict": "Exact statement comparison",
+      "scope": "Lean interface as specified in the review row; no equivalence with a published result inferred."
+    },
+    {
+      "declarations": [
+        "Deduction.ch_core"
+      ],
+      "legacy_unit": "B09",
+      "grade": "L1",
+      "review": "reviews/R21_review.md",
+      "source_review": "out/R21_review.md",
+      "lines": [
+        137,
+        137
+      ],
+      "source_sha256": "9e241d4b6e07b744eaa2c025e6c6ef9e8567170923b4f9a928dc4a1d5b08b7fc",
+      "verdict": "Exact statement comparison",
+      "scope": "Lean interface as specified in the review row; no equivalence with a published result inferred."
+    },
+    {
+      "declarations": [
+        "Formalism.LFunctionChainParameters.ThickSetMeanBounds.proposition_size_bound"
+      ],
+      "legacy_unit": "D563",
+      "grade": "L2",
+      "review": "reviews/R23_review.md",
+      "source_review": "out/R23_review.md",
+      "lines": [
+        61,
+        67
+      ],
+      "source_sha256": "b4255492226a35974a296a52c921ecd647e89d563e56363af91a4239b7c2b82c",
+      "verdict": "Seven steps rederived, each marked correct",
+      "scope": "Only the numerical size bound of v3 Lemma 3.4, at its stated inequalities; use with its hand exposition and not as approval of P017."
+    },
+    {
+      "declarations": [
+        "PositivityTheory.KB.bOdd_zk",
+        "UpperTheory.V.ZK.Up.torsStab"
+      ],
+      "legacy_unit": "Z2.K4",
+      "grade": "L1",
+      "review": "reviews/R5_review_A.md",
+      "source_review": "out/R5_review_A.md",
+      "lines": [
+        10,
+        12
+      ],
+      "source_sha256": "7d564bd168c4bc30caaff4fb8fc1f75797ffb5eed672fcb9f2ae46b8d19e23df",
+      "verdict": "No statement mismatch reported",
+      "scope": "Statement comparison; the proof has qualifications."
+    },
+    {
+      "declarations": [
+        "UpperTheory.V.ZK.sClassOf",
+        "UpperTheory.V.ZK.sThetaOf"
+      ],
+      "legacy_unit": "Z2.K2",
+      "grade": "L1",
+      "review": "reviews/R4_review_Z2.md",
+      "source_review": "out/R4_review_Z2.md",
+      "lines": [
+        12,
+        16
+      ],
+      "source_sha256": "286e910f2743565d62dab15bf7f254eeeaeb16b481c1daf480526250d8cb7221",
+      "verdict": "No statement mismatch reported",
+      "scope": "Statement comparison; the proof has qualifications."
+    },
+    {
+      "declarations": [
+        "Formalism.MainNotions.FormalGroupSystem.Pf.hecke_place_bound"
+      ],
+      "legacy_unit": "Z4.1",
+      "grade": "L1",
+      "review": "reviews/R4_review_Z4.md",
+      "source_review": "out/R4_review_Z4.md",
+      "lines": [
+        149,
+        159
+      ],
+      "source_sha256": "e3e5f72145063e2f4e3021703997dcdfa83db51095279b592b6717e9d6dd7806",
+      "verdict": "No statement mismatch reported",
+      "scope": "Statement comparison; the proof has qualifications."
+    },
+    {
+      "declarations": [
+        "UpperTheory.V.Alg.M.main_holds",
+        "UpperTheory.V.Alg.M.mprime_holds"
+      ],
+      "legacy_unit": "Z1.4",
+      "grade": "L1",
+      "review": "reviews/R4_review_Z1Z3.md",
+      "source_review": "out/R4_review_Z1Z3.md",
+      "lines": [
+        43,
+        50
+      ],
+      "source_sha256": "df0e87d509f8162576a007f109e7d292a226540a1366649c8fd9fc7fed15c804",
+      "verdict": "No statement mismatch reported",
+      "scope": "Statement comparison; the proof has qualifications."
+    },
+    {
+      "declarations": [
+        "Deduction.ch_top"
+      ],
+      "legacy_unit": "B10",
+      "grade": "L2",
+      "review": "reviews/DB3_review_A.md",
+      "source_review": "out/DB3_review_A.md",
+      "lines": [
+        78,
+        85
+      ],
+      "source_sha256": "4706de34e6492a2925757dcf48c7b3fa3ff2655c6e79f788b00aa4ab0c2283ab",
+      "verdict": "CONFIRMED",
+      "scope": "Quantifiers over finite units, words, top indices, columns and places; identity, size, error-window, bracket and largeness hypotheses; bound for each transported lattice gap. P021 remains an input. Full written implication in the reviewed edition.",
+      "note": "notes/units/B10_v4.md",
+      "reviewed_sha256": "5507c49b8f56a85ce34d64c65b59f9ea0b5af1db4cd9d8ec1eec37c4fda33f89",
+      "current_sha256": "5507c49b8f56a85ce34d64c65b59f9ea0b5af1db4cd9d8ec1eec37c4fda33f89"
+    },
+    {
+      "declarations": [
+        "UpperTheory.Comparison₂.level_gm_le_on_family_scales"
+      ],
+      "legacy_unit": "P017",
+      "grade": "L2",
+      "review": "reviews/DB3_review_A.md",
+      "source_review": "out/DB3_review_A.md",
+      "lines": [
+        86,
+        97
+      ],
+      "source_sha256": "4706de34e6492a2925757dcf48c7b3fa3ff2655c6e79f788b00aa4ab0c2283ab",
+      "verdict": "CONFIRMED",
+      "scope": "For each level and family with EFamC and ChainTied on its window, one eventual threshold gives the advertised Chebyshev inequality on that same window. Full written implication in the reviewed edition.",
+      "note": "notes/units/P017_v4.md",
+      "reviewed_sha256": "1c39b38b6d0b4b85003e5b820e02d23ba035173fc70605d35c3a636a7db70152",
+      "current_sha256": "1c39b38b6d0b4b85003e5b820e02d23ba035173fc70605d35c3a636a7db70152"
+    },
+    {
+      "declarations": [
+        "UpperTheory.Comparison₂.hostFactsS"
+      ],
+      "legacy_unit": "D014",
+      "grade": "L1",
+      "review": "reviews/DB3_review_A.md",
+      "source_review": "out/DB3_review_A.md",
+      "lines": [
+        98,
+        106
+      ],
+      "source_sha256": "4706de34e6492a2925757dcf48c7b3fa3ff2655c6e79f788b00aa4ab0c2283ab",
+      "verdict": "CONFIRMED",
+      "scope": "Every frame and axial host yields HostFactsS on the exceptional set insert H.q H.small; each field refers to that same host. Statement comparison only.",
+      "note": "notes/units/D014_round3.md",
+      "reviewed_sha256": "e438bcab9b9fef44d94523fe68de35905464fecacd2c00f21567730c5a9dc6a1",
+      "current_sha256": "2ebab8ac6f81939092e76673f933bbabf1ab1b129c807c29dc617a125d816260"
+    },
+    {
+      "declarations": [
+        "UpperTheory.Comparison₂.hostFactsS"
+      ],
+      "legacy_unit": "D014",
+      "grade": "L2",
+      "review": "reviews/DB3_review_A.md",
+      "source_review": "out/DB3_review_A.md",
+      "lines": [
+        98,
+        106
+      ],
+      "source_sha256": "4706de34e6492a2925757dcf48c7b3fa3ff2655c6e79f788b00aa4ab0c2283ab",
+      "verdict": "CONFIRMED",
+      "scope": "Every frame and axial host yields HostFactsS on the exceptional set insert H.q H.small; each field refers to that same host. Full written implication in the reviewed edition.",
+      "note": "notes/units/D014_v4.md",
+      "reviewed_sha256": "a6ddf2a8b8efdbe88e023fcaeb276e691690f4fdc7cd09153df79a3743597a42",
+      "current_sha256": "a6ddf2a8b8efdbe88e023fcaeb276e691690f4fdc7cd09153df79a3743597a42"
+    },
+    {
+      "declarations": [
+        "UpperTheory.Comparison₂.gmA_eq"
+      ],
+      "legacy_unit": "D547",
+      "grade": "L1",
+      "review": "reviews/DB3_review_A.md",
+      "source_review": "out/DB3_review_A.md",
+      "lines": [
+        108,
+        115
+      ],
+      "source_sha256": "4706de34e6492a2925757dcf48c7b3fa3ff2655c6e79f788b00aa4ab0c2283ab",
+      "verdict": "CONFIRMED",
+      "scope": "For every real scale with EAtH and compatibility, and every real argument, the kept-character arithmetic sum equals the level sum. The corrected preamble permits arbitrary scales. Statement comparison only.",
+      "note": "notes/units/D547_v4.md",
+      "reviewed_sha256": "6713aaa57470da70616fc882b91dd9336cfbf0514bb5809aafd11cb6bfe1d756",
+      "current_sha256": "b815e0ee9c050098472e6acf05d17cc00dc8ce65256f6a8b7f4f5cb3eea90585"
+    },
+    {
+      "declarations": [
+        "UpperTheory.Comparison₂.charsA"
+      ],
+      "legacy_unit": "D548",
+      "grade": "L1",
+      "review": "reviews/DB3_review_A.md",
+      "source_review": "out/DB3_review_A.md",
+      "lines": [
+        118,
+        118
+      ],
+      "source_sha256": "4706de34e6492a2925757dcf48c7b3fa3ff2655c6e79f788b00aa4ab0c2283ab",
+      "verdict": "CONFIRMED (light check)",
+      "scope": "For a positive scale, EAtH and compatibility imply CharsA with the specified kept subset, factors 1/(3o+1) and 4o, and the listed character bounds. Statement comparison only.",
+      "note": "notes/units/D548_v4.md",
+      "reviewed_sha256": "843285b8403bb3bebdf76ecf8de7252d16dfa5bdaf1f19b345bed27611122559",
+      "current_sha256": "843285b8403bb3bebdf76ecf8de7252d16dfa5bdaf1f19b345bed27611122559"
+    },
+    {
+      "declarations": [
+        "UpperTheory.Comparison₂.sigA_le"
+      ],
+      "legacy_unit": "D549",
+      "grade": "L1",
+      "review": "reviews/DB3_review_A.md",
+      "source_review": "out/DB3_review_A.md",
+      "lines": [
+        120,
+        120
+      ],
+      "source_sha256": "4706de34e6492a2925757dcf48c7b3fa3ff2655c6e79f788b00aa4ab0c2283ab",
+      "verdict": "CONFIRMED (light check)",
+      "scope": "With positive scale, EAtH and compatibility, the omitted-character correction is at most 4o times the scale to the power 1/2 + epsilon. Statement comparison only.",
+      "note": "notes/units/D549_v4.md",
+      "reviewed_sha256": "e936e9caada820ee657a06605e4a101bf62ea49f3b650ca87a8ab5359e14a374",
+      "current_sha256": "e936e9caada820ee657a06605e4a101bf62ea49f3b650ca87a8ab5359e14a374"
+    },
+    {
+      "declarations": [
+        "Formalism.LFunctionChainParameters.LErr.large_x_eventually"
+      ],
+      "legacy_unit": "D550",
+      "grade": "L1",
+      "review": "reviews/DB3_review_A.md",
+      "source_review": "out/DB3_review_A.md",
+      "lines": [
+        122,
+        122
+      ],
+      "source_sha256": "4706de34e6492a2925757dcf48c7b3fa3ff2655c6e79f788b00aa4ab0c2283ab",
+      "verdict": "CONFIRMED (light check)",
+      "scope": "For each positive epsilon and fixed real constants, one eventual threshold handles both log x and the fixed KBig bound. Statement comparison only.",
+      "note": "notes/units/D550_v4.md",
+      "reviewed_sha256": "51d63005ae67a121eec1c6ac16dfc37ce50cfc5b767629747c6c9fc319021906",
+      "current_sha256": "51d63005ae67a121eec1c6ac16dfc37ce50cfc5b767629747c6c9fc319021906"
+    },
+    {
+      "declarations": [
+        "Formalism.LFunctionChainParameters.ThickSetMeanBounds.derivative_integral_all"
+      ],
+      "legacy_unit": "D562",
+      "grade": "L1",
+      "review": "reviews/DB3_review_A.md",
+      "source_review": "out/DB3_review_A.md",
+      "lines": [
+        124,
+        135
+      ],
+      "source_sha256": "4706de34e6492a2925757dcf48c7b3fa3ff2655c6e79f788b00aa4ab0c2283ab",
+      "verdict": "CONFIRMED",
+      "scope": "One nonnegative increment constant precedes all group and character data. The principal and nonprincipal increments use the bounds in the pinned DerivIntAll interface. Statement comparison only.",
+      "note": "notes/units/D562_v4.md",
+      "reviewed_sha256": "9ebea1fe684289be61e9ee9f430a64933b9cab6d302d904b2a10872ea556c9d6",
+      "current_sha256": "21c995f68900e7dba384453f7500729f20ca826e024df14da326c4ea12f1d9e6"
+    },
+    {
+      "declarations": [
+        "Formalism.LFunctionChainParameters.LChain.errX5at_le"
+      ],
+      "legacy_unit": "D567",
+      "grade": "L2",
+      "review": "reviews/DB3_review_A.md",
+      "source_review": "out/DB3_review_A.md",
+      "lines": [
+        136,
+        147
+      ],
+      "source_sha256": "4706de34e6492a2925757dcf48c7b3fa3ff2655c6e79f788b00aa4ab0c2283ab",
+      "verdict": "CONFIRMED",
+      "scope": "At every unit, the error windows and the largeness requirement give ErrX5at at most the CErr-times-epsilon power of x times ErrText. Full written implication in the reviewed edition.",
+      "note": "notes/units/D567_v4.md",
+      "reviewed_sha256": "c0a854b46fd435b65a63dda32963d99d334e095f4d0892dca6bec66c9f834d68",
+      "current_sha256": "c0a854b46fd435b65a63dda32963d99d334e095f4d0892dca6bec66c9f834d68"
+    }
+  ],
+  "round3_note_reviews": [
+    {
+      "unit": "B08",
+      "note": "notes/units/B08_v4.md",
+      "original_verdict": "CONFIRMED WITH GAPS",
+      "review": "reviews/DB3_review_A.md",
+      "review_range": [
+        39,
+        55
+      ],
+      "summary_line": 20,
+      "original_review_sha256": "4706de34e6492a2925757dcf48c7b3fa3ff2655c6e79f788b00aa4ab0c2283ab",
+      "published_review_sha256": "8dfade6464dc7a48025446f77f7093759f4afc3cb9b731df680e26abb56d0245",
+      "reviewed_sha256": "a7f81596adaef68bae2e31691a2d4a96f830c0f9c1fdc420092a7167b5e369ec",
+      "current_sha256": "cf7e7531dcafd2eab40241a355eb93888ad8cf31375b896e7e782dd9c24764dc",
+      "same_edition": false,
+      "statement_compared": false,
+      "statement_comparison": null,
+      "accepted_whole_note": false,
+      "disposition": "Original review retained. Corrected or scope-limited prose has no new whole-note acceptance.",
+      "required_corrections": [
+        11
+      ],
+      "reviewed_text_archive": "archive/reviewed_editions/round3.json",
+      "current_grade": "L1"
+    },
+    {
+      "unit": "B09",
+      "note": "notes/units/B09_v4.md",
+      "original_verdict": "CONFIRMED WITH GAPS",
+      "review": "reviews/DB3_review_A.md",
+      "review_range": [
+        56,
+        77
+      ],
+      "summary_line": 21,
+      "original_review_sha256": "4706de34e6492a2925757dcf48c7b3fa3ff2655c6e79f788b00aa4ab0c2283ab",
+      "published_review_sha256": "8dfade6464dc7a48025446f77f7093759f4afc3cb9b731df680e26abb56d0245",
+      "reviewed_sha256": "86809e4ff1954d3380426b0395e1f504068394f82d9b98878213453f90c3a745",
+      "current_sha256": "7e76851738b3324baf87deed8034bdf8f589e39393a47af89442ac8cfdd0d51e",
+      "same_edition": false,
+      "statement_compared": false,
+      "statement_comparison": null,
+      "accepted_whole_note": false,
+      "disposition": "Original review retained. Corrected or scope-limited prose has no new whole-note acceptance.",
+      "required_corrections": [
+        8,
+        9,
+        10
+      ],
+      "reviewed_text_archive": "archive/reviewed_editions/round3.json",
+      "current_grade": "L1"
+    },
+    {
+      "unit": "B10",
+      "note": "notes/units/B10_v4.md",
+      "original_verdict": "CONFIRMED",
+      "review": "reviews/DB3_review_A.md",
+      "review_range": [
+        78,
+        85
+      ],
+      "summary_line": 22,
+      "original_review_sha256": "4706de34e6492a2925757dcf48c7b3fa3ff2655c6e79f788b00aa4ab0c2283ab",
+      "published_review_sha256": "8dfade6464dc7a48025446f77f7093759f4afc3cb9b731df680e26abb56d0245",
+      "reviewed_sha256": "5507c49b8f56a85ce34d64c65b59f9ea0b5af1db4cd9d8ec1eec37c4fda33f89",
+      "current_sha256": "5507c49b8f56a85ce34d64c65b59f9ea0b5af1db4cd9d8ec1eec37c4fda33f89",
+      "same_edition": true,
+      "statement_compared": true,
+      "statement_comparison": {
+        "lean_head": {
+          "name": "Deduction.ch_top",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChTop.lean",
+          "line0": 37,
+          "line1": 72,
+          "sha256": "4d71f0cccac3ac250ed97d70beb0d18c902b9639ccde0f4c5b31c38a26f724fd"
+        },
+        "scope": "Quantifiers over finite units, words, top indices, columns and places; identity, size, error-window, bracket and largeness hypotheses; bound for each transported lattice gap. P021 remains an input."
+      },
+      "accepted_whole_note": true,
+      "disposition": "AI-reviewed full note at its stated inputs.",
+      "required_corrections": [],
+      "reviewed_text_archive": "archive/reviewed_editions/round3.json",
+      "current_grade": "L2",
+      "statement_sha256": "5739a4afadc26b374e0ac758ad944fe96609834b15403e56ea986905c4b7d9df"
+    },
+    {
+      "unit": "P017",
+      "note": "notes/units/P017_v4.md",
+      "original_verdict": "CONFIRMED",
+      "review": "reviews/DB3_review_A.md",
+      "review_range": [
+        86,
+        97
+      ],
+      "summary_line": 23,
+      "original_review_sha256": "4706de34e6492a2925757dcf48c7b3fa3ff2655c6e79f788b00aa4ab0c2283ab",
+      "published_review_sha256": "8dfade6464dc7a48025446f77f7093759f4afc3cb9b731df680e26abb56d0245",
+      "reviewed_sha256": "1c39b38b6d0b4b85003e5b820e02d23ba035173fc70605d35c3a636a7db70152",
+      "current_sha256": "1c39b38b6d0b4b85003e5b820e02d23ba035173fc70605d35c3a636a7db70152",
+      "same_edition": true,
+      "statement_compared": true,
+      "statement_comparison": {
+        "lean_head": {
+          "name": "UpperTheory.Comparison₂.level_gm_le_on_family_scales",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/LevelGmLeOnFamilyScales.lean",
+          "line0": 28,
+          "line1": 30,
+          "sha256": "3ccafb3b79c94bca951834869fa86b0f798622473f991b8215748e8a3087b2d1"
+        },
+        "scope": "For each level and family with EFamC and ChainTied on its window, one eventual threshold gives the advertised Chebyshev inequality on that same window."
+      },
+      "accepted_whole_note": true,
+      "disposition": "AI-reviewed full note at its stated inputs.",
+      "required_corrections": [],
+      "reviewed_text_archive": "archive/reviewed_editions/round3.json",
+      "current_grade": "L2",
+      "statement_sha256": "2f3c649b6314ffd7036c024b2138a9ead6249ad91035cd4400d31ff6b767d15f"
+    },
+    {
+      "unit": "D014",
+      "note": "notes/units/D014_round3.md",
+      "original_verdict": "CONFIRMED",
+      "review": "reviews/DB3_review_A.md",
+      "review_range": [
+        98,
+        106
+      ],
+      "summary_line": 24,
+      "original_review_sha256": "4706de34e6492a2925757dcf48c7b3fa3ff2655c6e79f788b00aa4ab0c2283ab",
+      "published_review_sha256": "8dfade6464dc7a48025446f77f7093759f4afc3cb9b731df680e26abb56d0245",
+      "reviewed_sha256": "e438bcab9b9fef44d94523fe68de35905464fecacd2c00f21567730c5a9dc6a1",
+      "current_sha256": "199ad63e717739228d7ef1fac8584b6d27182961d67c5c9c17d648603d830314",
+      "same_edition": false,
+      "statement_compared": true,
+      "statement_comparison": {
+        "lean_head": {
+          "name": "UpperTheory.Comparison₂.hostFactsS",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/hostFactsS.lean",
+          "line0": 127,
+          "line1": 136,
+          "sha256": "ef97916068b30a9b83bc32d6b22fb03bdc3882660a3447f087cb63045e087583"
+        },
+        "scope": "Every frame and axial host yields HostFactsS on the exceptional set insert H.q H.small; each field refers to that same host."
+      },
+      "accepted_whole_note": false,
+      "disposition": "Original review retained. Corrected or scope-limited prose has no new whole-note acceptance.",
+      "required_corrections": [],
+      "reviewed_text_archive": "archive/reviewed_editions/round3.json",
+      "current_grade": "L2",
+      "editorial_correction": "The submitted note calls the host record seven-field three times. Its own enumerated conclusions and Deduction.CH.HostFactsS at SplitInertia.lean:14–22 give eight. The current note corrects the count. The unchanged D014_v4 edition supplies unit L2.",
+      "statement_sha256": "e677647831a0794177041486b7ce6e9da4d45481893fc2ad0964bb3f9ce908a6"
+    },
+    {
+      "unit": "D014",
+      "note": "notes/units/D014_v4.md",
+      "original_verdict": "CONFIRMED",
+      "review": "reviews/DB3_review_A.md",
+      "review_range": [
+        98,
+        106
+      ],
+      "summary_line": 25,
+      "original_review_sha256": "4706de34e6492a2925757dcf48c7b3fa3ff2655c6e79f788b00aa4ab0c2283ab",
+      "published_review_sha256": "8dfade6464dc7a48025446f77f7093759f4afc3cb9b731df680e26abb56d0245",
+      "reviewed_sha256": "a6ddf2a8b8efdbe88e023fcaeb276e691690f4fdc7cd09153df79a3743597a42",
+      "current_sha256": "f798b74affe565d2929178ffb6641e8c66f6ed22f2da5f2c6027c42c19260325",
+      "same_edition": false,
+      "statement_compared": true,
+      "statement_comparison": {
+        "lean_head": {
+          "name": "UpperTheory.Comparison₂.hostFactsS",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/hostFactsS.lean",
+          "line0": 127,
+          "line1": 136,
+          "sha256": "ef97916068b30a9b83bc32d6b22fb03bdc3882660a3447f087cb63045e087583"
+        },
+        "scope": "Every frame and axial host yields HostFactsS on the exceptional set insert H.q H.small; each field refers to that same host."
+      },
+      "accepted_whole_note": false,
+      "disposition": "AI-reviewed full note at its stated inputs.",
+      "required_corrections": [],
+      "reviewed_text_archive": "archive/reviewed_editions/round3.json",
+      "current_grade": "L2",
+      "statement_sha256": "e677647831a0794177041486b7ce6e9da4d45481893fc2ad0964bb3f9ce908a6"
+    },
+    {
+      "unit": "D547",
+      "note": "notes/units/D547_v4.md",
+      "original_verdict": "CONFIRMED",
+      "review": "reviews/DB3_review_A.md",
+      "review_range": [
+        108,
+        115
+      ],
+      "summary_line": 26,
+      "original_review_sha256": "4706de34e6492a2925757dcf48c7b3fa3ff2655c6e79f788b00aa4ab0c2283ab",
+      "published_review_sha256": "8dfade6464dc7a48025446f77f7093759f4afc3cb9b731df680e26abb56d0245",
+      "reviewed_sha256": "6713aaa57470da70616fc882b91dd9336cfbf0514bb5809aafd11cb6bfe1d756",
+      "current_sha256": "80525170d78e0c73491bfca04fe7cd46e732c6bc39c9e90a33d851b70ff9b3af",
+      "same_edition": false,
+      "statement_compared": true,
+      "statement_comparison": {
+        "lean_head": {
+          "name": "UpperTheory.Comparison₂.gmA_eq",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/GmAEq.lean",
+          "line0": 61,
+          "line1": 149,
+          "sha256": "9a030e980281ef02d4c0e1b0803352edc89c15c88c56163027de3672e703c068"
+        },
+        "scope": "For every real scale with EAtH and compatibility, and every real argument, the kept-character arithmetic sum equals the level sum. The corrected preamble permits arbitrary scales."
+      },
+      "accepted_whole_note": false,
+      "disposition": "Original review retained. Corrected or scope-limited prose has no new whole-note acceptance.",
+      "required_corrections": [
+        15
+      ],
+      "reviewed_text_archive": "archive/reviewed_editions/round3.json",
+      "current_grade": "L1",
+      "statement_sha256": "e12b1859e443e38511fed7538e8e77171e66dee7f2220e2c873ad4ed0d499e46"
+    },
+    {
+      "unit": "D548",
+      "note": "notes/units/D548_v4.md",
+      "original_verdict": "CONFIRMED (light check)",
+      "review": "reviews/DB3_review_A.md",
+      "review_range": [
+        118,
+        118
+      ],
+      "summary_line": 27,
+      "original_review_sha256": "4706de34e6492a2925757dcf48c7b3fa3ff2655c6e79f788b00aa4ab0c2283ab",
+      "published_review_sha256": "8dfade6464dc7a48025446f77f7093759f4afc3cb9b731df680e26abb56d0245",
+      "reviewed_sha256": "843285b8403bb3bebdf76ecf8de7252d16dfa5bdaf1f19b345bed27611122559",
+      "current_sha256": "0702c591b5ffd4a28764d5dfd7f9567795557ea420b50cf87b4fb4c158b73168",
+      "same_edition": false,
+      "statement_compared": true,
+      "statement_comparison": {
+        "lean_head": {
+          "name": "UpperTheory.Comparison₂.charsA",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/charsA.lean",
+          "line0": 80,
+          "line1": 125,
+          "sha256": "2e3825540c0f207d1382c9bb8f7d4a9c0dd8c08b01dbe9ec6c2758ad44ac77c4"
+        },
+        "scope": "For a positive scale, EAtH and compatibility imply CharsA with the specified kept subset, factors 1/(3o+1) and 4o, and the listed character bounds."
+      },
+      "accepted_whole_note": false,
+      "disposition": "Original review retained. Corrected or scope-limited prose has no new whole-note acceptance.",
+      "required_corrections": [],
+      "reviewed_text_archive": "archive/reviewed_editions/round3.json",
+      "current_grade": "L1",
+      "statement_sha256": "74f73190617cc78c865e2b13e0862871a131c4d2039fa177b59b3371822ebfd7"
+    },
+    {
+      "unit": "D549",
+      "note": "notes/units/D549_v4.md",
+      "original_verdict": "CONFIRMED (light check)",
+      "review": "reviews/DB3_review_A.md",
+      "review_range": [
+        120,
+        120
+      ],
+      "summary_line": 28,
+      "original_review_sha256": "4706de34e6492a2925757dcf48c7b3fa3ff2655c6e79f788b00aa4ab0c2283ab",
+      "published_review_sha256": "8dfade6464dc7a48025446f77f7093759f4afc3cb9b731df680e26abb56d0245",
+      "reviewed_sha256": "e936e9caada820ee657a06605e4a101bf62ea49f3b650ca87a8ab5359e14a374",
+      "current_sha256": "e936e9caada820ee657a06605e4a101bf62ea49f3b650ca87a8ab5359e14a374",
+      "same_edition": true,
+      "statement_compared": true,
+      "statement_comparison": {
+        "lean_head": {
+          "name": "UpperTheory.Comparison₂.sigA_le",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/SigALe.lean",
+          "line0": 38,
+          "line1": 60,
+          "sha256": "76af9a0c15d1430c03efad24324cc1e1fc880da1c469944dac5ab35525f9a4e1"
+        },
+        "scope": "With positive scale, EAtH and compatibility, the omitted-character correction is at most 4o times the scale to the power 1/2 + epsilon."
+      },
+      "accepted_whole_note": false,
+      "disposition": "Original review retained. Corrected or scope-limited prose has no new whole-note acceptance.",
+      "required_corrections": [],
+      "reviewed_text_archive": "archive/reviewed_editions/round3.json",
+      "current_grade": "L1",
+      "statement_sha256": "fb334948922faaa1ce11a44172c05c0415999fe6e23442cc1e61ed933666f65c"
+    },
+    {
+      "unit": "D550",
+      "note": "notes/units/D550_v4.md",
+      "original_verdict": "CONFIRMED (light check)",
+      "review": "reviews/DB3_review_A.md",
+      "review_range": [
+        122,
+        122
+      ],
+      "summary_line": 29,
+      "original_review_sha256": "4706de34e6492a2925757dcf48c7b3fa3ff2655c6e79f788b00aa4ab0c2283ab",
+      "published_review_sha256": "8dfade6464dc7a48025446f77f7093759f4afc3cb9b731df680e26abb56d0245",
+      "reviewed_sha256": "51d63005ae67a121eec1c6ac16dfc37ce50cfc5b767629747c6c9fc319021906",
+      "current_sha256": "51d63005ae67a121eec1c6ac16dfc37ce50cfc5b767629747c6c9fc319021906",
+      "same_edition": true,
+      "statement_compared": true,
+      "statement_comparison": {
+        "lean_head": {
+          "name": "Formalism.LFunctionChainParameters.LErr.large_x_eventually",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/SubThreeMulLogTwoLe.lean",
+          "line0": 319,
+          "line1": 329,
+          "sha256": "90f46cef73a8bbf9409ddb93252d5d50dd1093899eda3623171ad8cb61b9a738"
+        },
+        "scope": "For each positive epsilon and fixed real constants, one eventual threshold handles both log x and the fixed KBig bound."
+      },
+      "accepted_whole_note": false,
+      "disposition": "Original review retained. Corrected or scope-limited prose has no new whole-note acceptance.",
+      "required_corrections": [],
+      "reviewed_text_archive": "archive/reviewed_editions/round3.json",
+      "current_grade": "L1",
+      "statement_sha256": "a57d0df057c5aab6aa0061db149330ebd8180df872cdeb4356c52868cba188a1"
+    },
+    {
+      "unit": "D562",
+      "note": "notes/units/D562_v4.md",
+      "original_verdict": "CONFIRMED",
+      "review": "reviews/DB3_review_A.md",
+      "review_range": [
+        124,
+        135
+      ],
+      "summary_line": 30,
+      "original_review_sha256": "4706de34e6492a2925757dcf48c7b3fa3ff2655c6e79f788b00aa4ab0c2283ab",
+      "published_review_sha256": "8dfade6464dc7a48025446f77f7093759f4afc3cb9b731df680e26abb56d0245",
+      "reviewed_sha256": "9ebea1fe684289be61e9ee9f430a64933b9cab6d302d904b2a10872ea556c9d6",
+      "current_sha256": "1233ad411cf370899bdaedbf2311729df20f781c3cd238210a61ac35ba9d4d34",
+      "same_edition": false,
+      "statement_compared": true,
+      "statement_comparison": {
+        "lean_head": {
+          "name": "Formalism.LFunctionChainParameters.ThickSetMeanBounds.derivative_integral_all",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean",
+          "line0": 966,
+          "line1": 981,
+          "sha256": "2199aa1029611946a5ad7a243a47df41a56417d05aa0ea592a91d4064256cb3c"
+        },
+        "scope": "One nonnegative increment constant precedes all group and character data. The principal and nonprincipal increments use the bounds in the pinned DerivIntAll interface."
+      },
+      "accepted_whole_note": false,
+      "disposition": "Original review retained. Corrected or scope-limited prose has no new whole-note acceptance.",
+      "required_corrections": [
+        14
+      ],
+      "reviewed_text_archive": "archive/reviewed_editions/round3.json",
+      "current_grade": "L1",
+      "statement_sha256": "9aa68af37068386e2f1a37da14aee367320bfd14317e5217ce7756578bfc0963"
+    },
+    {
+      "unit": "D567",
+      "note": "notes/units/D567_v4.md",
+      "original_verdict": "CONFIRMED",
+      "review": "reviews/DB3_review_A.md",
+      "review_range": [
+        136,
+        147
+      ],
+      "summary_line": 31,
+      "original_review_sha256": "4706de34e6492a2925757dcf48c7b3fa3ff2655c6e79f788b00aa4ab0c2283ab",
+      "published_review_sha256": "8dfade6464dc7a48025446f77f7093759f4afc3cb9b731df680e26abb56d0245",
+      "reviewed_sha256": "c0a854b46fd435b65a63dda32963d99d334e095f4d0892dca6bec66c9f834d68",
+      "current_sha256": "c0a854b46fd435b65a63dda32963d99d334e095f4d0892dca6bec66c9f834d68",
+      "same_edition": true,
+      "statement_compared": true,
+      "statement_comparison": {
+        "lean_head": {
+          "name": "Formalism.LFunctionChainParameters.LChain.errX5at_le",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/PChain.lean",
+          "line0": 613,
+          "line1": 672,
+          "sha256": "a72dea7a7c24282008d1fea77748cb076f221dc8265c60e47a62b11f42887ebf"
+        },
+        "scope": "At every unit, the error windows and the largeness requirement give ErrX5at at most the CErr-times-epsilon power of x times ErrText."
+      },
+      "accepted_whole_note": true,
+      "disposition": "AI-reviewed full note at its stated inputs.",
+      "required_corrections": [],
+      "reviewed_text_archive": "archive/reviewed_editions/round3.json",
+      "current_grade": "L2",
+      "statement_sha256": "62b442fa166bb5f982b2f377825142047a23e488c88c355650bcc88fb8bc561c"
+    },
+    {
+      "unit": "D561",
+      "note": "notes/units/D561_v4.md",
+      "original_verdict": "CONFIRMED WITH GAPS (as an outline)",
+      "review": "reviews/DB3_review_A.md",
+      "review_range": [
+        149,
+        160
+      ],
+      "summary_line": 32,
+      "original_review_sha256": "4706de34e6492a2925757dcf48c7b3fa3ff2655c6e79f788b00aa4ab0c2283ab",
+      "published_review_sha256": "8dfade6464dc7a48025446f77f7093759f4afc3cb9b731df680e26abb56d0245",
+      "reviewed_sha256": "667fa8743d9af425d0809181dc2c09467cdb574dbdbf6104cddeefef50e0a21f",
+      "current_sha256": "47ef8eda8227d8d7e53a080d13561d6db0a0d49231ec85c8e5efa7d4ec0c6e51",
+      "same_edition": false,
+      "statement_compared": false,
+      "statement_comparison": null,
+      "accepted_whole_note": false,
+      "disposition": "Original review retained. Corrected or scope-limited prose has no new whole-note acceptance.",
+      "required_corrections": [
+        12,
+        13
+      ],
+      "reviewed_text_archive": "archive/reviewed_editions/round3.json",
+      "current_grade": "L0"
+    },
+    {
+      "unit": "V4-COND",
+      "note": "notes/units/V4-COND_round3.md",
+      "original_verdict": "CONFIRMED WITH GAPS; \"Full\" is an overclaim",
+      "review": "reviews/DB3_review_A.md",
+      "review_range": [
+        161,
+        202
+      ],
+      "summary_line": 33,
+      "original_review_sha256": "4706de34e6492a2925757dcf48c7b3fa3ff2655c6e79f788b00aa4ab0c2283ab",
+      "published_review_sha256": "8dfade6464dc7a48025446f77f7093759f4afc3cb9b731df680e26abb56d0245",
+      "reviewed_sha256": "5c0efbc6b90d3cf1d9e3943ed1b72cf2e3af4de809f5704275201a63e10588a0",
+      "current_sha256": "4be59821b8bfc664500b5b65cc355147de34d94741e04692d25035f8673b86d5",
+      "same_edition": false,
+      "statement_compared": false,
+      "statement_comparison": null,
+      "accepted_whole_note": false,
+      "disposition": "Original review retained. Corrected or scope-limited prose has no new whole-note acceptance.",
+      "required_corrections": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "reviewed_text_archive": "archive/reviewed_editions/round3.json",
+      "current_grade": "L0"
+    },
+    {
+      "unit": "B04",
+      "note": "notes/units/B04_round3.md",
+      "original_verdict": "FAITHFUL WITH GAPS",
+      "review": "reviews/DB3_review_B.md",
+      "review_range": [
+        151,
+        163
+      ],
+      "summary_line": 25,
+      "original_review_sha256": "0a30dbfeddb92bb47e21c9df456a9f50c632dd67bf9a85f379c1ef9d61fce543",
+      "published_review_sha256": "ff29c3d22bf9415dcd049a87bd256c76dcb864108e9ce3b9f2733d47a4d6228b",
+      "reviewed_sha256": "d797847f87ad0e4d9711b76d91305e6523ab6a342f2e9803e18c964fb101996f",
+      "current_sha256": "c2bb44fff3cd447f7dc6cddb28a4efe55c6d15c824bda76bc4f62d5e935e20f0",
+      "same_edition": false,
+      "statement_compared": false,
+      "statement_comparison": null,
+      "accepted_whole_note": false,
+      "disposition": "Original review retained. Corrected or scope-limited prose has no new whole-note acceptance.",
+      "required_corrections": [
+        8,
+        26
+      ],
+      "reviewed_text_archive": "archive/reviewed_editions/round3.json",
+      "current_grade": "L0",
+      "body_verdict_verbatim": "FAITHFUL WITH GAPS."
+    },
+    {
+      "unit": "P010",
+      "note": "notes/units/P010_round3.md",
+      "original_verdict": "FAITHFUL WITH GAPS (statement description weakened in a misleading direction)",
+      "review": "reviews/DB3_review_B.md",
+      "review_range": [
+        51,
+        68
+      ],
+      "summary_line": 26,
+      "original_review_sha256": "0a30dbfeddb92bb47e21c9df456a9f50c632dd67bf9a85f379c1ef9d61fce543",
+      "published_review_sha256": "ff29c3d22bf9415dcd049a87bd256c76dcb864108e9ce3b9f2733d47a4d6228b",
+      "reviewed_sha256": "361f445754d0f024801a0df86a50c05f680db9d87b9cedcd50b417d41f1003e9",
+      "current_sha256": "3a6aad25b0645aab98175009e95d5015a38456ae5b2616c833b5043384ccd400",
+      "same_edition": false,
+      "statement_compared": false,
+      "statement_comparison": null,
+      "accepted_whole_note": false,
+      "disposition": "Original review retained. Corrected or scope-limited prose has no new whole-note acceptance.",
+      "required_corrections": [
+        1,
+        2,
+        3,
+        26
+      ],
+      "reviewed_text_archive": "archive/reviewed_editions/round3.json",
+      "current_grade": "L0",
+      "body_verdict_verbatim": "FAITHFUL WITH GAPS; item 3 borders on misleading and must be fixed."
+    },
+    {
+      "unit": "P011",
+      "note": "notes/units/P011_round3.md",
+      "original_verdict": "FAITHFUL WITH GAPS",
+      "review": "reviews/DB3_review_B.md",
+      "review_range": [
+        70,
+        83
+      ],
+      "summary_line": 27,
+      "original_review_sha256": "0a30dbfeddb92bb47e21c9df456a9f50c632dd67bf9a85f379c1ef9d61fce543",
+      "published_review_sha256": "ff29c3d22bf9415dcd049a87bd256c76dcb864108e9ce3b9f2733d47a4d6228b",
+      "reviewed_sha256": "2deef4b42ecd2cdb51e9bde5079d310f5b3995cde64ba6eedbe76c3c5e9cf044",
+      "current_sha256": "a41acd36e14a5ce2f5cbfd9e4c5b1ea96823b10f8333e3d79d9eb1552ae3f800",
+      "same_edition": false,
+      "statement_compared": false,
+      "statement_comparison": null,
+      "accepted_whole_note": false,
+      "disposition": "Original review retained. Corrected or scope-limited prose has no new whole-note acceptance.",
+      "required_corrections": [
+        4,
+        5,
+        26
+      ],
+      "reviewed_text_archive": "archive/reviewed_editions/round3.json",
+      "current_grade": "L1",
+      "body_verdict_verbatim": "FAITHFUL WITH GAPS."
+    },
+    {
+      "unit": "P026",
+      "note": "notes/units/P026_round3.md",
+      "original_verdict": "FAITHFUL WITH GAPS",
+      "review": "reviews/DB3_review_B.md",
+      "review_range": [
+        85,
+        101
+      ],
+      "summary_line": 28,
+      "original_review_sha256": "0a30dbfeddb92bb47e21c9df456a9f50c632dd67bf9a85f379c1ef9d61fce543",
+      "published_review_sha256": "ff29c3d22bf9415dcd049a87bd256c76dcb864108e9ce3b9f2733d47a4d6228b",
+      "reviewed_sha256": "6de734e914879206e0527e3ca4ea5970d50df5a60e319e212b255179aec46165",
+      "current_sha256": "89a420b5c15ad9076f7e39ed885b621c6c2e9d7a5d57ec971fecd2937941aaf2",
+      "same_edition": false,
+      "statement_compared": false,
+      "statement_comparison": null,
+      "accepted_whole_note": false,
+      "disposition": "Original review retained. Corrected or scope-limited prose has no new whole-note acceptance.",
+      "required_corrections": [
+        6,
+        7,
+        26
+      ],
+      "reviewed_text_archive": "archive/reviewed_editions/round3.json",
+      "current_grade": "L0",
+      "body_verdict_verbatim": "FAITHFUL WITH GAPS."
+    },
+    {
+      "unit": "W08",
+      "note": "notes/units/W08_round3.md",
+      "original_verdict": "FAITHFUL WITH GAPS",
+      "review": "reviews/DB3_review_B.md",
+      "review_range": [
+        165,
+        175
+      ],
+      "summary_line": 29,
+      "original_review_sha256": "0a30dbfeddb92bb47e21c9df456a9f50c632dd67bf9a85f379c1ef9d61fce543",
+      "published_review_sha256": "ff29c3d22bf9415dcd049a87bd256c76dcb864108e9ce3b9f2733d47a4d6228b",
+      "reviewed_sha256": "c794b97ad8e94f9bbd02f7a252394b5e0d091263ef14f0c638427c98eee5ebbd",
+      "current_sha256": "4973eb5de3cd0fc49c44fdf7377c76a1a56f06b25a08de3a4f11ace4059a5cb8",
+      "same_edition": false,
+      "statement_compared": false,
+      "statement_comparison": null,
+      "accepted_whole_note": false,
+      "disposition": "Original review retained. Corrected or scope-limited prose has no new whole-note acceptance.",
+      "required_corrections": [
+        10,
+        26
+      ],
+      "reviewed_text_archive": "archive/reviewed_editions/round3.json",
+      "current_grade": "L0",
+      "body_verdict_verbatim": "FAITHFUL WITH GAPS."
+    },
+    {
+      "unit": "W09",
+      "note": "notes/units/W09_round3.md",
+      "original_verdict": "FAITHFUL OUTLINE",
+      "review": "reviews/DB3_review_B.md",
+      "review_range": [
+        177,
+        183
+      ],
+      "summary_line": 30,
+      "original_review_sha256": "0a30dbfeddb92bb47e21c9df456a9f50c632dd67bf9a85f379c1ef9d61fce543",
+      "published_review_sha256": "ff29c3d22bf9415dcd049a87bd256c76dcb864108e9ce3b9f2733d47a4d6228b",
+      "reviewed_sha256": "947593586c5025b1441064f62fa93fd5db082eae093f5de17ab15ddb11314919",
+      "current_sha256": "ce094e829d12e4ea961b7dc3c6312f8d7690fef19e5a04dbcfbc89bb9d14b355",
+      "same_edition": false,
+      "statement_compared": false,
+      "statement_comparison": null,
+      "accepted_whole_note": false,
+      "disposition": "Original review retained. Corrected or scope-limited prose has no new whole-note acceptance.",
+      "required_corrections": [
+        26
+      ],
+      "reviewed_text_archive": "archive/reviewed_editions/round3.json",
+      "current_grade": "L0",
+      "body_verdict_verbatim": "FAITHFUL OUTLINE."
+    },
+    {
+      "unit": "W11",
+      "note": "notes/units/W11_round3.md",
+      "original_verdict": "FAITHFUL WITH GAPS",
+      "review": "reviews/DB3_review_B.md",
+      "review_range": [
+        185,
+        196
+      ],
+      "summary_line": 31,
+      "original_review_sha256": "0a30dbfeddb92bb47e21c9df456a9f50c632dd67bf9a85f379c1ef9d61fce543",
+      "published_review_sha256": "ff29c3d22bf9415dcd049a87bd256c76dcb864108e9ce3b9f2733d47a4d6228b",
+      "reviewed_sha256": "121c9a5ff8e208745ddaab762bfa8a856c960b6e38c99718a26ee7d999861651",
+      "current_sha256": "77b447b5274e4b38d3e3671a5a36833fc5f79197ce4b0ddb06f2145a382ccf2c",
+      "same_edition": false,
+      "statement_compared": false,
+      "statement_comparison": null,
+      "accepted_whole_note": false,
+      "disposition": "Original review retained. Corrected or scope-limited prose has no new whole-note acceptance.",
+      "required_corrections": [
+        9,
+        26
+      ],
+      "reviewed_text_archive": "archive/reviewed_editions/round3.json",
+      "current_grade": "L1",
+      "body_verdict_verbatim": "FAITHFUL WITH GAPS."
+    },
+    {
+      "unit": "W13",
+      "note": "notes/units/W13_round3.md",
+      "original_verdict": "FAITHFUL OUTLINE",
+      "review": "reviews/DB3_review_B.md",
+      "review_range": [
+        103,
+        117
+      ],
+      "summary_line": 32,
+      "original_review_sha256": "0a30dbfeddb92bb47e21c9df456a9f50c632dd67bf9a85f379c1ef9d61fce543",
+      "published_review_sha256": "ff29c3d22bf9415dcd049a87bd256c76dcb864108e9ce3b9f2733d47a4d6228b",
+      "reviewed_sha256": "664c4d54186ea3d8784f9eb6217ea6745847a243d846867eb7993636c0bea273",
+      "current_sha256": "b1a03b88749b225a866120f0472b08b4562feda852178ea3a2f2a5ad5370e7f0",
+      "same_edition": false,
+      "statement_compared": false,
+      "statement_comparison": null,
+      "accepted_whole_note": false,
+      "disposition": "Original review retained. Corrected or scope-limited prose has no new whole-note acceptance.",
+      "required_corrections": [
+        26
+      ],
+      "reviewed_text_archive": "archive/reviewed_editions/round3.json",
+      "current_grade": "L0",
+      "body_verdict_verbatim": "FAITHFUL OUTLINE."
+    },
+    {
+      "unit": "T09",
+      "note": "notes/units/T09_round3.md",
+      "original_verdict": "FAITHFUL WITH GAPS",
+      "review": "reviews/DB3_review_B.md",
+      "review_range": [
+        198,
+        208
+      ],
+      "summary_line": 33,
+      "original_review_sha256": "0a30dbfeddb92bb47e21c9df456a9f50c632dd67bf9a85f379c1ef9d61fce543",
+      "published_review_sha256": "ff29c3d22bf9415dcd049a87bd256c76dcb864108e9ce3b9f2733d47a4d6228b",
+      "reviewed_sha256": "2b936651ff4ceac9c5cc0d7b0aedecb80abf4a13e5a26dcd761061305fe1111c",
+      "current_sha256": "e845e5ae402db212d4ebff62567ea139d8c07a082756a14a1d9313cc4b554d96",
+      "same_edition": false,
+      "statement_compared": false,
+      "statement_comparison": null,
+      "accepted_whole_note": false,
+      "disposition": "Original review retained. Corrected or scope-limited prose has no new whole-note acceptance.",
+      "required_corrections": [
+        14,
+        26
+      ],
+      "reviewed_text_archive": "archive/reviewed_editions/round3.json",
+      "current_grade": "L0",
+      "body_verdict_verbatim": "FAITHFUL WITH GAPS."
+    },
+    {
+      "unit": "T11",
+      "note": "notes/units/T11_round3.md",
+      "original_verdict": "FAITHFUL OUTLINE",
+      "review": "reviews/DB3_review_B.md",
+      "review_range": [
+        210,
+        216
+      ],
+      "summary_line": 34,
+      "original_review_sha256": "0a30dbfeddb92bb47e21c9df456a9f50c632dd67bf9a85f379c1ef9d61fce543",
+      "published_review_sha256": "ff29c3d22bf9415dcd049a87bd256c76dcb864108e9ce3b9f2733d47a4d6228b",
+      "reviewed_sha256": "4f9bfee641d772b5870a10f974708fb6a50a9c01f87edb872b3391b4afc4c371",
+      "current_sha256": "cba8811091b9d93f1af6651f61fc6dca4aab0c81bfe89756d7ff79aac1730785",
+      "same_edition": false,
+      "statement_compared": false,
+      "statement_comparison": null,
+      "accepted_whole_note": false,
+      "disposition": "Original review retained. Corrected or scope-limited prose has no new whole-note acceptance.",
+      "required_corrections": [
+        15,
+        26
+      ],
+      "reviewed_text_archive": "archive/reviewed_editions/round3.json",
+      "current_grade": "L0",
+      "body_verdict_verbatim": "FAITHFUL OUTLINE."
+    },
+    {
+      "unit": "T12",
+      "note": "notes/units/T12_round3.md",
+      "original_verdict": "FAITHFUL WITH GAPS",
+      "review": "reviews/DB3_review_B.md",
+      "review_range": [
+        119,
+        133
+      ],
+      "summary_line": 35,
+      "original_review_sha256": "0a30dbfeddb92bb47e21c9df456a9f50c632dd67bf9a85f379c1ef9d61fce543",
+      "published_review_sha256": "ff29c3d22bf9415dcd049a87bd256c76dcb864108e9ce3b9f2733d47a4d6228b",
+      "reviewed_sha256": "68f3ae4d07f510a11fd60ac84d7ac67a971308c985649a01c8cf286736ae5bb4",
+      "current_sha256": "0a28c4bec73fb9a58ac84ec5e6cccbe7bae2fd210b76bef63aad74c2dcd3db68",
+      "same_edition": false,
+      "statement_compared": false,
+      "statement_comparison": null,
+      "accepted_whole_note": false,
+      "disposition": "Original review retained. Corrected or scope-limited prose has no new whole-note acceptance.",
+      "required_corrections": [
+        11,
+        26
+      ],
+      "reviewed_text_archive": "archive/reviewed_editions/round3.json",
+      "current_grade": "L1",
+      "body_verdict_verbatim": "FAITHFUL WITH GAPS."
+    },
+    {
+      "unit": "T15",
+      "note": "notes/units/T15_round3.md",
+      "original_verdict": "FAITHFUL OUTLINE",
+      "review": "reviews/DB3_review_B.md",
+      "review_range": [
+        135,
+        149
+      ],
+      "summary_line": 36,
+      "original_review_sha256": "0a30dbfeddb92bb47e21c9df456a9f50c632dd67bf9a85f379c1ef9d61fce543",
+      "published_review_sha256": "ff29c3d22bf9415dcd049a87bd256c76dcb864108e9ce3b9f2733d47a4d6228b",
+      "reviewed_sha256": "878c27cffd8d0b07cf0d1b4f3cc36f3a5412e9ab2465002dfa74826ab5178539",
+      "current_sha256": "4e2aa523df9e3504dc7e982b301d00312c6065e94e140868ac85554f6411a080",
+      "same_edition": false,
+      "statement_compared": false,
+      "statement_comparison": null,
+      "accepted_whole_note": false,
+      "disposition": "Original review retained. Corrected or scope-limited prose has no new whole-note acceptance.",
+      "required_corrections": [
+        12,
+        26
+      ],
+      "reviewed_text_archive": "archive/reviewed_editions/round3.json",
+      "current_grade": "L0",
+      "body_verdict_verbatim": "FAITHFUL OUTLINE (with the minor corrections above)."
+    },
+    {
+      "unit": "T17",
+      "note": "notes/units/T17_round3.md",
+      "original_verdict": "FAITHFUL WITH GAPS",
+      "review": "reviews/DB3_review_B.md",
+      "review_range": [
+        218,
+        224
+      ],
+      "summary_line": 37,
+      "original_review_sha256": "0a30dbfeddb92bb47e21c9df456a9f50c632dd67bf9a85f379c1ef9d61fce543",
+      "published_review_sha256": "ff29c3d22bf9415dcd049a87bd256c76dcb864108e9ce3b9f2733d47a4d6228b",
+      "reviewed_sha256": "5b983c98d795a809d11972cbbb55a54151c5256e79ef2ca533a808bd31c433b5",
+      "current_sha256": "764fe025ac91cd9c3e74bb9148aa7cee9b0f5ae2e0cd0fa3495dc9381d7f3040",
+      "same_edition": false,
+      "statement_compared": false,
+      "statement_comparison": null,
+      "accepted_whole_note": false,
+      "disposition": "Original review retained. Corrected or scope-limited prose has no new whole-note acceptance.",
+      "required_corrections": [
+        13,
+        26
+      ],
+      "reviewed_text_archive": "archive/reviewed_editions/round3.json",
+      "current_grade": "L0",
+      "body_verdict_verbatim": "FAITHFUL WITH GAPS."
+    },
+    {
+      "unit": "P001",
+      "note": "notes/units/P001_round3.md",
+      "original_verdict": "FAITHFUL OUTLINE",
+      "review": "reviews/DB3_review_B.md",
+      "review_range": [
+        226,
+        230
+      ],
+      "summary_line": 38,
+      "original_review_sha256": "0a30dbfeddb92bb47e21c9df456a9f50c632dd67bf9a85f379c1ef9d61fce543",
+      "published_review_sha256": "ff29c3d22bf9415dcd049a87bd256c76dcb864108e9ce3b9f2733d47a4d6228b",
+      "reviewed_sha256": "2057b6264e448b525e63d94e6f24d7379f2eb73df4fe7be56a17b57ee835d4a9",
+      "current_sha256": "2632c0094418ae594a8b3373d2e0a2ff93880e11bfbd9f43efa0e23ddef44847",
+      "same_edition": false,
+      "statement_compared": true,
+      "statement_comparison": {
+        "lean_head": {
+          "name": "riemannHypothesis",
+          "file": "Main.lean",
+          "line0": 4,
+          "line1": 4,
+          "sha256": "71b3d50605ddda7c0c74fbbf5cca47165a4cfa2ad72f50f36b907ecac7ff505a"
+        },
+        "scope": "The public declaration has exactly the project RiemannHypothesis proposition as its type. The reader reviewed the outlined transfer at modulus one and the reflection steps."
+      },
+      "accepted_whole_note": false,
+      "disposition": "AI-reviewed outline at its stated inputs.",
+      "required_corrections": [
+        26
+      ],
+      "reviewed_text_archive": "archive/reviewed_editions/round3.json",
+      "current_grade": "L1",
+      "body_verdict_verbatim": "FAITHFUL OUTLINE.",
+      "statement_sha256": "18c7ff49a5b5a8192066e92b99582ac348ddc10145898dbd38e762a4093df451"
+    },
+    {
+      "unit": "P003",
+      "note": "notes/units/P003_round3.md",
+      "original_verdict": "FAITHFUL WITH GAPS",
+      "review": "reviews/DB3_review_B.md",
+      "review_range": [
+        232,
+        236
+      ],
+      "summary_line": 39,
+      "original_review_sha256": "0a30dbfeddb92bb47e21c9df456a9f50c632dd67bf9a85f379c1ef9d61fce543",
+      "published_review_sha256": "ff29c3d22bf9415dcd049a87bd256c76dcb864108e9ce3b9f2733d47a4d6228b",
+      "reviewed_sha256": "9a2d5f2984694a76360bdc54c838c4a2b0d27f3de79c571c85054ee0126dc7b7",
+      "current_sha256": "f99daf1b995a6cd16f8236f2a1e8b47a1edb7830203845ab7df87d120aca4190",
+      "same_edition": false,
+      "statement_compared": false,
+      "statement_comparison": null,
+      "accepted_whole_note": false,
+      "disposition": "Original review retained. Corrected or scope-limited prose has no new whole-note acceptance.",
+      "required_corrections": [
+        16,
+        26
+      ],
+      "reviewed_text_archive": "archive/reviewed_editions/round3.json",
+      "current_grade": "L1",
+      "body_verdict_verbatim": "FAITHFUL WITH GAPS."
+    },
+    {
+      "unit": "P005",
+      "note": "notes/units/P005_round3.md",
+      "original_verdict": "FAITHFUL OUTLINE",
+      "review": "reviews/DB3_review_B.md",
+      "review_range": [
+        238,
+        242
+      ],
+      "summary_line": 40,
+      "original_review_sha256": "0a30dbfeddb92bb47e21c9df456a9f50c632dd67bf9a85f379c1ef9d61fce543",
+      "published_review_sha256": "ff29c3d22bf9415dcd049a87bd256c76dcb864108e9ce3b9f2733d47a4d6228b",
+      "reviewed_sha256": "33b39bf13949d640e4400367edd63dc83092e669e62f0ece8cb0ef8acda3eff9",
+      "current_sha256": "a1191be8ba80d8ce2d5f8f9305b9a54080ccfbd01dc1ca44b6506e0061932b43",
+      "same_edition": false,
+      "statement_compared": true,
+      "statement_comparison": {
+        "lean_head": {
+          "name": "LFunction_eq_zero_re_of_isPrimitive",
+          "file": "Main.lean",
+          "line0": 12,
+          "line1": 12,
+          "sha256": "0401b524ca2966a15b42b17c6d82be74188720e1452c23c1c994ee9ed8fc53e6"
+        },
+        "scope": "The public declaration has type PrimitiveDirichletLZerosOnLine. The reader checked the inverse-character functional-equation transfer in the outline."
+      },
+      "accepted_whole_note": false,
+      "disposition": "AI-reviewed outline at its stated inputs.",
+      "required_corrections": [
+        26
+      ],
+      "reviewed_text_archive": "archive/reviewed_editions/round3.json",
+      "current_grade": "L1",
+      "body_verdict_verbatim": "FAITHFUL OUTLINE.",
+      "statement_sha256": "35979134f0549f6e3ec2d4dd3a06ad925c46b86da6dd8abcfaf3792d98f2f4eb"
+    },
+    {
+      "unit": "P009",
+      "note": "notes/units/P009_round3.md",
+      "original_verdict": "FAITHFUL WITH GAPS",
+      "review": "reviews/DB3_review_B.md",
+      "review_range": [
+        244,
+        248
+      ],
+      "summary_line": 41,
+      "original_review_sha256": "0a30dbfeddb92bb47e21c9df456a9f50c632dd67bf9a85f379c1ef9d61fce543",
+      "published_review_sha256": "ff29c3d22bf9415dcd049a87bd256c76dcb864108e9ce3b9f2733d47a4d6228b",
+      "reviewed_sha256": "5ff5421e8346a7c34e91bd45ba778246608cb693e0629ae0042baaaf3b0b7bfd",
+      "current_sha256": "346d1693563e4782ca86eb2a13a9d680e0c06992b42e66bdad5776b1e0c28be4",
+      "same_edition": false,
+      "statement_compared": false,
+      "statement_comparison": null,
+      "accepted_whole_note": false,
+      "disposition": "Original review retained. Corrected or scope-limited prose has no new whole-note acceptance.",
+      "required_corrections": [
+        17,
+        26
+      ],
+      "reviewed_text_archive": "archive/reviewed_editions/round3.json",
+      "current_grade": "L0",
+      "body_verdict_verbatim": "FAITHFUL WITH GAPS."
+    }
+  ],
+  "round3_review_reports": {
+    "A": {
+      "path": "reviews/DB3_review_A.md",
+      "original_sha256": "4706de34e6492a2925757dcf48c7b3fa3ff2655c6e79f788b00aa4ab0c2283ab",
+      "published_sha256": "8dfade6464dc7a48025446f77f7093759f4afc3cb9b731df680e26abb56d0245"
+    },
+    "B": {
+      "path": "reviews/DB3_review_B.md",
+      "original_sha256": "0a30dbfeddb92bb47e21c9df456a9f50c632dd67bf9a85f379c1ef9d61fce543",
+      "published_sha256": "ff29c3d22bf9415dcd049a87bd256c76dcb864108e9ce3b9f2733d47a4d6228b"
+    }
+  },
+  "external_correspondence_policy": "Crosswalk rows are bibliographic or statement locators and confer no unit grade."
+}

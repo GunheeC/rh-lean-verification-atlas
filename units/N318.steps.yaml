@@ -1,0 +1,124 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "N318",
+  "edition_sha256": "0ea73691315a0c7f6e4cdc1f2b9d9711fef2e64fc8ff18e8fe6f7adfaeb8fcfe",
+  "note_sha256": "afaf4eeb9d461a4f7061ec8cac1b89c9f348184a25843d84d0e884e1f2be411f",
+  "statement_sha256": "6ce5d5efbb8c0e2497a094f7a4fb5dd95b340bae081c7b81e0a4e89ee7803f63",
+  "sources": [
+    {
+      "path": "notes/blueprint/N318.tex",
+      "sha256": "afaf4eeb9d461a4f7061ec8cac1b89c9f348184a25843d84d0e884e1f2be411f"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Fixing the bottom indices first gives a single nonzero normalization for every eligible pair at those indices.",
+      "kind": "computation",
+      "uses": [
+        "input: nonzero normalization and L-values"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.BotFormula.rallis_bottom_formula_large_rank",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/RallisBottomFormulaLargeRank.lean",
+          "line0": 20,
+          "line1": 43
+        }
+      ],
+      "source": "notes/blueprint/N318.tex",
+      "anchor": "Fix $\\delta,t_0,i,j$ before choosing any tuple. The ranks and the weight $P.n$ agree for every eligi",
+      "source_lines": [
+        29,
+        29
+      ],
+      "claim_sha256": "25001f03ce674de4d4cb20d623ceb0a6a0cca049732d52568fba5a37d4174368",
+      "passage_sha256": "3cda2d6e0cba76ae0df9e4dc17f8610f06b4eece17ecc7dda6b03866d5211bf9",
+      "sha256": "37463f2eb8080c51cdb47ef74f1800072d079edc5afa07be418341266bac1e64",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The same small functional can be evaluated through the two surjections to the common real-place model.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: compatible real and finite matching maps"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.BotMatch.theta_bottom_minor_match",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/RallisBottomMinorMatching.lean",
+          "line0": 145,
+          "line1": 189
+        }
+      ],
+      "source": "notes/blueprint/N318.tex",
+      "anchor": "For the matching, write $q,q'$ for the surjective polynomial maps to the same real-place model over ",
+      "source_lines": [
+        39,
+        43
+      ],
+      "claim_sha256": "19fe8dce5b5f26924f3109edb1ef819505826d87c729127087789cf8c8a6a74a",
+      "passage_sha256": "40bd7665b61e1e5933e17cd477105fd1fa345c6adfde05d609523025b1aaba8f",
+      "sha256": "87aaeb944eb83af67541dadd3f381230559bf37c53bcd21803cbf8c1a3808b83",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "If all small coordinates vanished, the matching identity would force the selected large coordinate to vanish.",
+      "kind": "assembly",
+      "uses": [
+        "S2",
+        "input: nonzero large coordinate"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.SqTop.BotNeFormula.bottomTheta_ne_zero_of_innerProduct_formula",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/BottomThetaNeZeroOfInnerProductFormula.lean",
+          "line0": 59,
+          "line1": 71
+        }
+      ],
+      "source": "notes/blueprint/N318.tex",
+      "anchor": "If every small coordinate at the chosen $h$ vanished, this sum, and then the selected large coordina",
+      "source_lines": [
+        39,
+        43
+      ],
+      "claim_sha256": "dc5df2cf49a97432165a75a1111cb1b32bc26c9e2da5c365e7d82118a89c7d6f",
+      "passage_sha256": "40bd7665b61e1e5933e17cd477105fd1fa345c6adfde05d609523025b1aaba8f",
+      "sha256": "322629062e5ab6e6651aaffa8e40375940c99ed3717cabc40585ceaaa9aa8c7f",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "64bf04bd8082c345e841d282d20ce1c03246eeb78f77cb36f7752c3b401f50f1",
+      "sources": [
+        {
+          "path": "notes/blueprint/N318.tex",
+          "sha256": "066baa8c2eab563f7351362e8985a4de6e3498fbe0924d25f8ece37118a9a9ce"
+        }
+      ],
+      "statement_sha256": "6ce5d5efbb8c0e2497a094f7a4fb5dd95b340bae081c7b81e0a4e89ee7803f63",
+      "steps": {
+        "S1": "37463f2eb8080c51cdb47ef74f1800072d079edc5afa07be418341266bac1e64",
+        "S2": "87aaeb944eb83af67541dadd3f381230559bf37c53bcd21803cbf8c1a3808b83",
+        "S3": "322629062e5ab6e6651aaffa8e40375940c99ed3717cabc40585ceaaa9aa8c7f"
+      },
+      "step_texts": {
+        "S1": "Fixing the bottom indices first gives a single nonzero normalization for every eligible pair at those indices.",
+        "S2": "The same small functional can be evaluated through the two surjections to the common real-place model.",
+        "S3": "If all small coordinates vanished, the matching identity would force the selected large coordinate to vanish."
+      },
+      "step_passages": {
+        "S1": "3cda2d6e0cba76ae0df9e4dc17f8610f06b4eece17ecc7dda6b03866d5211bf9",
+        "S2": "40bd7665b61e1e5933e17cd477105fd1fa345c6adfde05d609523025b1aaba8f",
+        "S3": "40bd7665b61e1e5933e17cd477105fd1fa345c6adfde05d609523025b1aaba8f"
+      }
+    }
+  ]
+}

@@ -1,0 +1,307 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Manuscript v3, heading p. 9; original out/r23_p017.tex, SHA-256 49f2380c337781b49a96cff47c1372f8d5923ff45d8bf22629de80a824819866.
+\subsection{From a tied lattice chain to the level prime sum}\label{r23:p017}
+
+\begin{proposition}[P017, family window estimate]\label{r23:family}
+Fix a level $\Lambda$, real $e_D,e_L$ and $\varepsilon>0$. Let $F$ be a
+family at $\varepsilon$ with the uniform explicit-formula hypothesis
+$\mathrm{EFamC}(\Lambda,F)$. Suppose that there exist $K,c_{HH},e_K,C_L,x_0$
+such that, for every $x\ge x_0$ in $\mathrm{Win}(F)$,
+$\mathrm{ChainTied}(F;e_D,e_L,K,c_{HH},e_K,C_L,x)$ holds.
+Then there exists $X$ such that on this same set for $x\ge X$,
+\[
+     \mathcal G_\Lambda(x)\le x^{1/2+(e_D+e_L+7)\varepsilon}.
+\]
+Here $\mathcal G_\Lambda$ is the real weighted prime sum of
+Definition~\ref{def:E-level}. The estimate is one-sided.
+\end{proposition}
+\noindent\nolinkurl{UpperTheory.Comparison₂.level_gm_le_on_family_scales},
+\path{LevelGmLeOnFamilyScales.lean:28--30};
+\nolinkurl{Formalism.HC.ChebyshevInequalityOnWindows},
+\path{TotientGaloisClasses/TopWin.lean:23--28}.
+
+\paragraph{The column scale.}
+In the arithmetic construction, $\delta_1=x^{-\varepsilon/8}$. With
+$A=\sqrt{x\delta_1}=x^{1/2-\varepsilon/16}$, the construction may take
+the even integer $m=2\lceil A/2\rceil$. For $0<\varepsilon<1/52$
+and $x\ge16$, $A\ge2$ and $A\le m<A+2\le2A$. This gives the $m$ 
+clause of \nolinkurl{GlobalTheory.EX.RankVal} at the prescribed frame, whose
+order lies in $[x^{2+8\varepsilon},2x^{2+8\varepsilon}]$.
+For $x^{9\varepsilon/16}\ge2$ the resulting bounds imply
+\[
+    x^{1/2-\varepsilon}\le m\le x^{1/2+\varepsilon/2},\qquad
+    x/m\le x^{1/2+\varepsilon}.
+\]
+Thus dividing a cost of order $x$ by the number of columns produces a
+square-root scale. A second cost is proportional to $m$ itself. The four
+terms after division, including the density losses, are evaluated in
+Lemma~\ref{r23:budget}. In Proposition~\ref{r23:family} the two wider rank
+bounds are supplied directly in the tied size windows, so the implication
+has the stated quantifier $\varepsilon>0$.
+\decid{D513};
+\nolinkurl{Scale.delta1}, \path{LocalRingCardinality/DataParams₂.lean:45};
+\nolinkurl{GlobalTheory.EX.RankVal}, \path{PairRowIffQdRows.lean:28--32};
+\nolinkurl{GlobalTheory.EX.exists_even_between} and
+\nolinkurl{GlobalTheory.EX.exists_ranks_rankVal_frame},
+\path{ExistsRanksRankValFrame.lean:10--15,45--99};
+\nolinkurl{Deduction.ch_core}, \path{LandauTheorems/ChCore.lean:343--351}.
+
+\paragraph{The bound before taking characters.}
+At one scale let $H$ be the finite additive group of the reference frame,
+$A_0\le H$, $TT\subset H$, $T_2\subset A_0$ and
+$n=|H|$, $n_T=|TT|$, $n_2=|T_2|$, $\delta_2=n_2/n$.
+Write $\mathrm{gap}(u)$ for the sum of
+$\mathrm{ASK}-\Re\mathrm{MAIN}$ over $t\in TT$ and $1\le j\le m$
+at translate $u$. Let $B$ be the four-term bracket in
+\hyperref[sub:B09]{B09}, with $a_E$ the lattice parameter $a$.
+\nolinkurl{Deduction.CH.gapA}, \path{DedekindLFunctions/SplitInertia.lean:50--52};
+\nolinkurl{errorBracketSizeWindows}, \path{ErrorFormsWeakWindowsFalse.lean:133--135}.
+
+\begin{formalstatement}[Lattice inputs for the gap]\label{r23:gapinputs}
+Under the eleven hypotheses in \nodeid{P021}, at each lattice unit $v$,
+$\mathrm{ASK}(v)-\mathrm{Main}(v)\le\mathrm{ErrX5at}(v)$.
+Under the error windows and $\mathrm{LargeX}$,
+$\mathrm{ErrX5at}(v)\le x^{(e_{\rm Div}+e_{\rm Loss}+3)\varepsilon}
+\mathrm{ErrText}$ (\decid{D567}). The actual bounds for $B_0,N_c$
+and the required size and identification hypotheses are specified in
+\hyperref[sub:B10]{B10}. The weighted mean and slope inputs to P021
+are recorded at \decid{D568} and \decid{D570}.
+\end{formalstatement}
+\noindent\nolinkurl{each_unit_bound_statement}, \path{LevelOfCongruence.lean:175--197};
+\nolinkurl{errX5at_le}, \path{ChainSlopeWindows/PChain.lean:613--672}.
+
+\begin{proof}[Derivation of the gap bound, B10]
+For $v$ mapping to $u$, replace the top and place indices by the given
+bijections with $TT$ and $\Phi$. The summands of the lattice main term
+then have exactly the recorded $a_t$, $w_{u,j}$, Euler constant and
+$\Re\ell(\chi_C)$, so the sum is $\sum_{t,j}\Re\mathrm{MAIN}_{t,j}$.
+The identification of the ask term gives $\sum_{t,j}\mathrm{ASK}_{t,j}$.
+Their difference is $\mathrm{gap}(u)$ (\decid{D569}).
+Now $\mathrm{ErrText}=n_Ta_E(1+m^2/k)+m(B_0+N_c)$.
+Insert $B_0\le2nmbx^\varepsilon$ and
+$N_c\le n_2 k b x^\varepsilon/(n^2x^{-\varepsilon})$.
+All multipliers are nonnegative, so $\mathrm{ErrText}\le B$.
+Combining the two inequalities in \ref{r23:gapinputs} gives
+\[
+    \mathrm{gap}(u)\le x^{(e_{\rm Div}+e_{\rm Loss}+3)\varepsilon}B.
+\]
+Every $u\in A_0$ has a preimage by the coverage clause in
+\nolinkurl{CoreAtH}; this transfers the bound to the entire subgroup.
+\nolinkurl{Deduction.ch_top_main_eq}, \path{LandauTheorems/ChTop.lean:11--35};
+\nolinkurl{Deduction.ch_top}, \path{LandauTheorems/ChTop.lean:37--72};
+\nolinkurl{CoreAtH}, \path{PrimitiveCosets/CoreAtH.lean:29--41}.
+\end{proof}
+
+\paragraph{Which characters are being summed.}
+Put $E_0=(\mathbb Z/2)^2$, $s_0=((1,0),0)$,
+$e_1(t)=s_0+(0,t)$ and
+$\mathcal A=\{\xi\in\widehat{E_0\times H}:\xi(0,A_0)=1\}$.
+The character sum at $y$ is denoted by $G_\xi(y)$.
+Write $K'$ for the kept subset, $o=\Lambda.o$, $c=(3o+1)^{-1}$, $M=4o$,
+$K_o=\sum_{\psi\in\Lambda.\mathrm{KEPT}}|(L'/L)(1,\psi)|$
+with the source's convention for the logarithmic derivative at one.
+Define $v_\xi=\mathrm{wt}_c(\xi)\Re G_\xi(x)$ for $\xi\in K'$,
+and $v_\xi=-|G_\xi(x)|$ for $\xi\in\mathcal A\setminus K'$.
+Here $\mathrm{wt}_c$ is $1$ on the characters trivial on $H$, and $c$
+on the other characters. Thus
+$G:=\sum_{\xi\in\mathcal A}v_\xi=G_m^A(x)-\Sigma_A(x)$
+by splitting the finite sum (\decid{D565}).
+\nolinkurl{UpperTheory.Comparison₂.koOf}, \path{PrimitiveCosets/CoreAtH.lean:27};
+\nolinkurl{Deduction.CH.wtA}, \nolinkurl{GmA}, \nolinkurl{SigA},
+\path{DedekindLFunctions/SplitInertia.lean:26--40};
+\nolinkurl{CharacterBalanceMoves.sum_vv}, \path{LandauTheorems/ChCore.lean:183--200}.
+
+\begin{formalstatement}[Character inputs at the same host]\label{r23:charinputs}
+Let the host satisfy the axioms \nolinkurl{HostAx} on its frame. Assume $\mathrm{EAtH}(\Lambda,H,TT,x,\varepsilon,C_E)$
+and $\ell$ agrees with its primitive-character logarithmic derivatives.
+Then $0\in K'\subset\mathcal A$, all kept characters take value one at
+$s_0$, and $|\mathcal A|\le M$. For kept $\xi$ nontrivial on $H$,
+$|\sum_{t\in TT}\xi(0,t)-c n_T|\le M x^{-1+\varepsilon}n_T$.
+Nonzero kept characters satisfy $|\ell(\xi)|\le K_o$ and discarded
+members of $\mathcal A$ satisfy $|\ell(\xi)|\le C_E\log x$
+(\decid{D548}). Also $G_m^A(y)=\mathcal G_\Lambda(y)$ for every $y$
+(\decid{D547}) and each discarded $|G_\xi(x)|\le x^{1/2+\varepsilon}$
+(\decid{D549}). There is an absolute $C_d\ge0$ such that for $y,z\ge1$
+the increments of $G_0$ are bounded by $C_d|y-z|$, and those of each
+nontrivial $G_\xi$ by
+$|y-z|(\log\max(y,z)+C_d+|\ell(\xi)|)$ (\decid{D562}).
+\end{formalstatement}
+\noindent\nolinkurl{charsA}, \path{PrimitiveCosets/charsA.lean:80--125};
+\nolinkurl{gmA_eq}, \path{PrimitiveCosets/GmAEq.lean:61--149};
+\nolinkurl{sigA_le}, \path{PrimitiveCosets/SigALe.lean:38--60};
+\nolinkurl{derivative_integral_all}, \path{LipschitzWeightAndMinimum.lean:966--970}.
+The identification in D547 sends $\xi$ to the primitive character inducing
+its host character. Existence and injectivity give a bijection on the kept
+sets. Triviality on $H$ singles out the principal and distinguished quadratic
+cases; the exceptional-character field of $\mathrm{EAtH}$ matches their
+weights. Compatibility with $\ell$ identifies the prime sums termwise.
+For the omitted set the same reading and the host bound give D549 after
+summing at most $4o$ terms.
+
+\begin{proof}[Conversion to a character lower bound, D564--D565]
+Use $y_t=a_t/b$, so $|y_t-x|\le1$, and take $x\ge3$.
+For nonzero $\xi$, $G_\xi(1)=\ell(\xi)$, whence the increment estimate gives
+$|G_\xi(x)|\le x(\log x+C_d+|\ell(\xi)|)$.
+For nonzero kept $\xi$, first replace $G_\xi(y_t)$ by $G_\xi(x)$ under
+$\sum_t\xi(e_1(t))$. The cost per term is at most
+$\log(x+1)+C_d+K_o$. Next replace the sum of its coefficients by
+$n_T\mathrm{wt}_c(\xi)$: the values at $e_1(t)$ and $(0,t)$ agree,
+and the total error is bounded by
+$n_T M x^{-1+\varepsilon}x(\log x+C_d+K_o)$.
+For $\xi$ trivial on $H$ this latter error is zero. For the principal
+frequency the entire cost per term is $C_d$. For each discarded frequency
+use $\Re(\xi(e_1(t))G_\xi(y_t))\ge-|G_\xi(y_t)|$ and the increment
+bound to get a lower bound $v_\xi-(\log(x+1)+C_d+|C_E|\log x)$.
+These are exactly the three cases of \decid{D564}.
+
+For a threshold independent of the host, let $s=x^{1/4}$,
+$e=x^\varepsilon$ and
+\[
+ A_1=5+C_d+|K_o|+|M|(4+C_d+|K_o|)+4|C_E|.
+\]
+Since $\log x\le4s$, $\log(x+1)\le5s$ and $1\le s,e$, each of the
+three per-character costs per $t$ is at most $A_1 s e$ (the coefficient
+error uses $x^{-1+\varepsilon}x=e$). Increase the threshold until
+$|M|A_1\le s$. Summing over the band costs at most $n_Ts^2e$,
+hence also at most $4n_Tx^{1/2+\varepsilon}$. Taking real parts gives
+\[
+ n_T(G-4x^{1/2+\varepsilon})
+ \le \sum_{t\in TT}\Re\sum_{\xi\in\mathcal A}
+                 \xi(e_1(t))G_\xi(y_t).
+\]
+\nolinkurl{CharacterBalanceMoves.move}, \nolinkurl{triv} and \nolinkurl{one_char},
+\path{LandauTheorems/ChCore.lean:154--179,202--281};
+\nolinkurl{Deduction.ch_core}, \path{LandauTheorems/ChCore.lean:352--359,375--439}.
+\end{proof}
+
+\paragraph{Averaging over the translates.}
+The formal inputs to the following calculation are the exact host
+balance $\mathrm{ASK}-\mathrm{MAIN}=\mathrm{De}$ for positive
+$a_t,w$ and $a_t/w\le N$, and the weight increment bound
+\[
+ |wG_\xi(A/w)-bG_\xi(A/b)|\le
+   3A|w-b|/\min(w,b)\quad (A,w,b>0).
+\]
+These enter the formal statement \decid{D561}. The host assumption for
+balance on the excluded set $S=\{q\}\cup\mathrm{small}$ is \decid{D014}.
+\nolinkurl{Deduction.ch_balance}, \path{LandauTheorems/ChBalance.lean:200--203};
+\nolinkurl{lipschitz_weight_all}, \path{LipschitzWeightAndMinimum.lean:957--964};
+\nolinkurl{hostFactsS}, \path{PrimitiveCosets/hostFactsS.lean:127--136}.
+
+\begin{proof}[Finite-group average and B09]
+Put $f=|\Phi|=2n$. For each $u\in A_0$, retain the thick places and freeze
+their widths at $b$. The resulting Fourier sum for $t\in TT$ is
+\[
+ T(u,t)=\frac{b}{f}\sum_{s\in T_2}\;
+        \sum_{\xi\in\widehat{E_0\times H}} \xi(-e_1(s+u-t))G_\xi(y_t).
+\]
+To compare with one column of $\mathrm{De}$, write both sums on the
+same translated complement of $\Phi$. A thick place there is indexed
+once by $s\in T_2$, with the Fourier factor in the display. At a thick
+place $b\le w\le b+\eta+1$ and $a_t\le(x+1)b$, so replacing its
+weighted value by the frozen one costs at most $3(x+1)(\eta+1)$.
+At a thin place $0<w\le2b'$. Since $a_t\ge(x-1)b$,
+$b'X'\le xb$ and $x\ge3$, one has $a_t/w\ge X'/3$.
+Thinness therefore bounds $w|G_\xi(a_t/w)|$ by $a_t\theta\le
+(x+1)b\theta$. There are at most $f$ places and $2f$ characters,
+each with unit-modulus Fourier coefficient and normalization $1/f$.
+The sum of absolute errors is at most
+\[
+ 2f\big[3(x+1)(\eta+1)+(x+1)b\theta\big]\le 2b/x
+\]
+by the two cost inequalities in \hyperref[sub:B09]{B09}.
+The balance identity now gives
+$\Re T(u,t)\le\mathrm{ASK}_{t,j}-\Re\mathrm{MAIN}_{t,j}+2b/x$
+for every column $j$. Thus if $\mathrm{gap}(u)\le E$ on $A_0$, then
+$\sum_{t,j}\Re T(u,t)\le E+2n_Tmb/x$ on $A_0$.
+\nolinkurl{CharacterBalanceMoves.Th}, \nolinkurl{th_le},
+\path{LandauTheorems/ChCore.lean:16--20,75--152};
+\nolinkurl{CharacterBalanceMoves.core}, \path{LandauTheorems/ChCore.lean:283--320}.
+
+For $s\in T_2\subset A_0$, sum $\xi(-e_1(s+u-t))$ over $u\in A_0$.
+Its value is $|A_0|\xi(e_1(t))$ if $\xi\in\mathcal A$, since
+$-e_1(s+u-t)=e_1(t)+(0,-s)+(0,-u)$.
+Otherwise choose $u'\in A_0$ with $\xi(0,u')\ne1$; translating the
+sum by $u'$ multiplies it by $\xi(0,-u')$, hence the sum vanishes.
+Consequently the average of $T(u,t)$ over $A_0$ equals
+$b(\delta_2/2)\sum_{\xi\in\mathcal A}\xi(e_1(t))G_\xi(y_t)$:
+the factor is $bn_2/f$. Sum over all $t$ and the $m$ columns and apply
+the preceding character lower bound. Since $|A_0|>0$, the result is
+\[
+    n_T m b(\delta_2/2)(G-4x^{1/2+\varepsilon})\le E+2n_Tmb/x .
+\]
+With $E=x^{C\varepsilon}B$, $C\ge0$, the size-window calculation
+in Lemma~\ref{r23:budget} now gives $G\le x^{1/2+(C+3)\varepsilon}$.
+Its hypotheses are precisely \nolinkurl{RestSize}, the upper rank and
+lower $k$ inequalities, $x\ge3$, $26\le x^{3\varepsilon/8}$, and the
+sign and cardinality conditions (\decid{D563}, \decid{D566}).
+Adding $\Sigma_A$ proves B09. The threshold precedes the choice of
+$H,TT,T_2$, the weights, and $m$.
+\nolinkurl{CharacterBalanceMoves.sum_A}, \nolinkurl{sum_Th},
+\path{LandauTheorems/ChCore.lean:28--73};
+\nolinkurl{CharacterBalanceMoves.core}, \path{LandauTheorems/ChCore.lean:322--338};
+\nolinkurl{Deduction.ch_core}, \path{LandauTheorems/ChCore.lean:343--370,419--442}.
+\end{proof}
+
+\begin{proof}[The one-scale estimate, B08]
+Fix the level and all the constants of \hyperref[sub:B08]{B08}. Take the
+maximum of three thresholds. First take the B09 threshold with
+$C=\max(e_D+e_L,0)+3$, $c=(3o+1)^{-1}$, $M=4o$, $C_E$ the
+explicit-formula constant and $K_o$ as above. Here $|c|\le1$ since
+$o\ge0$. Second require
+$\log x,\,200(1+K)^2(1+c_{HH})(1+e_K)\le x^\varepsilon$
+(\decid{D550}). Third require $1+4o\le x^\varepsilon$.
+All three thresholds depend only on the fixed constants.
+
+For any host above that threshold with both the explicit-formula and
+core packages, write $c'_{HH},e_{\rm Div},e_{\rm Loss}$ for its internal
+constants. Its error windows give $K,e_K,c'_{HH},e_{\rm Div},e_{\rm Loss}\ge0$.
+Since $c'_{HH}\le c_{HH}$, the same largeness bound holds for $c'_{HH}$.
+Also $0\le e_{\rm Div}\le e_D$, $0\le e_{\rm Loss}\le e_L$,
+so $C=e_D+e_L+3$. The data have scale $x$ and exponent $\varepsilon$.
+The bracket $B$ is nonnegative. Thus B10 and monotonicity of $x^a$
+in $a$ give $\mathrm{gap}(u)\le x^{C\varepsilon}B$ for all $u\in A_0$.
+The sizes, thinness, costs and containment $T_2\subset A_0$ are fields
+of the same core package. D014 supplies its arithmetic host facts and
+D548 the required character data. Hence B09 applies.
+Using D547 to identify the kept sum and D549 to add the omitted terms,
+\begin{align*}
+ \mathcal G_\Lambda(x)
+   &\le x^{1/2+(e_D+e_L+6)\varepsilon}+4o\,x^{1/2+\varepsilon}\\
+   &\le (1+4o)x^{1/2+(e_D+e_L+6)\varepsilon}
+    \le x^{1/2+(e_D+e_L+7)\varepsilon}.
+\end{align*}
+This establishes B08 for all eligible frames and hosts simultaneously.
+\nolinkurl{UpperTheory.Comparison₂.core_gm}, \path{PrimitiveCosets/CoreGm.lean:12--74};
+\nolinkurl{large_x_eventually}, \path{SubThreeMulLogTwoLe.lean:319--329}.
+\end{proof}
+
+\begin{proof}[Family quantifiers and proof of Proposition~\ref{r23:family}]
+Unpack $\mathrm{EFamC}$ to obtain $C_E,x_E$ such that every member at
+each $x\ge x_E$ satisfies $\mathrm{EAtH}$ with $C_E$. Fix the five
+eventual-tiedness witnesses of the proposition. Let $X$ be the maximum
+of $x_0,x_E$ and the B08 threshold for these constants. For $x\in
+\mathrm{Win}(F)$, $x\ge X$, unpack $\mathrm{ChainTied}$ at this $x$.
+Use its reference member $i_0$, take the translation map to be the identity
+on its frame group, and use the word fibre of the assigned member
+$\mathrm{pt}(u)$ at each $u$. This covers $A_0$. The arithmetic tie's
+test-set membership equation and the family's common $TT$ image identify
+$TT$ with the reference host's $TT$ by injectivity of the frame coordinate.
+Its digit description at translate $0$ expresses each $s\in T_2$ as a digit
+in the cyclic subgroup $A_0$. The same tie supplies the compatible
+$\ell$. Restrict the weight bounds and cutoff from all translates to
+$A_0$, and retain the two bijections, identities, lattice size and error
+bounds, thin scales, costs and remaining-size bounds. These are exactly
+the existential witnesses for $\mathrm{CoreAtH}$ at $i_0$.
+Evaluate the universally quantified explicit-formula bound at this very
+$i_0$. B08 now gives the claimed estimate. Since $X$ was fixed before
+$x$ and $i_0$, it works on the whole tail of the window.
+\nolinkurl{Formalism.HC.EFamC}, \path{TotientGaloisClasses/TopDefs.lean:15--16};
+\nolinkurl{ChainTied}, \path{GlobalSchurBounds/TieGlobal.lean:97--114};
+\nolinkurl{UpperTheory.Comparison₂.tiedCore_of_chainTied},
+\path{LevelGmLeOnFamilyScales.lean:13--26};
+\nolinkurl{UpperTheory.Comparison₂.windowInequality_of_artinInputs},
+\path{WindowInequalityOfArtinInputs.lean:17--25};
+\nolinkurl{UpperTheory.Comparison₂.level_gm_le_on_family_scales},
+\path{LevelGmLeOnFamilyScales.lean:28--30}.
+\end{proof}

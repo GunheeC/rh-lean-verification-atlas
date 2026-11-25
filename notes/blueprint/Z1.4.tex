@@ -1,0 +1,991 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% RH Notes blueprint source excerpts for Z1.4
+% Verbatim excerpts in the notation of the parent blueprint. The labelled editions and source ranges appear below.
+% See the unit YAML for the current proof status. Earlier-round passages retain their original wording.
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+\noindent\nolinkurl{UpperTheory.V.U3.CohInp.pt} --- record field (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/KatoUse.lean:19--21}); not compared.\par
+\noindent\nolinkurl{UpperTheory.V.U3.bloch_kato_nonpositive_weight} --- in-repo constant (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/BlochKatoNonpositiveWeight.lean:297--414}); not compared.\par
+\noindent\nolinkurl{UpperTheory.V.Z.Kato.WeilSphericalRecords.katoTwoW_of_printsH} --- in-repo constant (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/KatoTwoWOfPublishedH.lean:48--49}); not compared.\par
+% End of atlas edition annotation.
+
+\section*{Z1.4. Graded cotangent length}
+
+% Parent source SHA-256: 1af64922b98ed2310744411b1f18b25cc426c97220646321471836e1a3a409d6
+% blueprint/ch_P.tex lines 10608 through 11581; sec:P-z14-full, thm:P-r5-lemma-m
+\subsection{The graded model and the factor two (Z1.4)}
+\label{sec:P-z14-full}
+
+\paragraph{The local and global presentation.}
+Start with the datum \nolinkurl{GD}. Restriction to the quadratic field
+gives the sign character. Choose complex conjugation and an embedding
+of the algebraic closure at $\ell$. The open local sign kernel defines
+a finite local extension. Since $\ell$ is prime to the discriminant
+the sign is unramified there. The local Dirichlet and cyclotomic
+inertia formulas give the required restriction of $\Psi$
+(\nolinkurl{exists_dat}, \path{ExistsDat.lean:134--178}).
+Fix the resulting datum, the common marking and the local condition of
+Lemma~\ref{lem:P-z1-mark}. The input shared with the other Z1 units is
+\nolinkurl{CohInp}. For the local condition one represents the
+unconstrained local lift and then takes the specified local quotient.
+The finiteness needed for representability is the finiteness of continuous
+characters from each open subgroup to $\mathbf F_\ell$. Here is the
+global check. For an open subgroup $H$ in the Galois quotient, the
+permutation module on its finite coset set has finite coefficient
+group. A character of $H$ induces a cocycle into this module by choosing
+coset representatives $s_x$ and evaluating on
+$s_x^{-1}g s_{g^{-1}x}$. Evaluation at the identity coset (with its
+representative chosen to be $1$) recovers the original character.
+There are finitely many coboundaries, and global $H^1$ is finite by the
+cohomological input. This proves the required finiteness first for the
+group unramified outside the finitely many primes dividing $\ell N$ or
+ramifying in the quadratic field, then for the further quotient killing the
+prescribed inertia. Precomposition with its surjection injects the
+characters of each open subgroup into those of its preimage. The
+local proof uses the local finiteness field in the same way. The
+base representation kills the excluded inertia, so the functor is
+nonempty. Quotient the universal ring by the marked normalization
+equations and the pullback of the local ideal to obtain the desired
+marked ring. Its universal property follows by factoring a homomorphism
+through these equations
+(\nolinkurl{exists_uLoc}, \path{ULocEx.lean:10--51};
+\nolinkurl{exists_ring}, \path{RingEx.lean:30--109};
+\nolinkurl{exists_model}, \path{UnitaryThreeGroups/ModelEx.lean:30--97,106--178}).
+
+In the relative framed presentation, choose homogeneous matrix-entry
+and framing differences whose cotangent classes give the relative
+tangent coordinates. Formal power series in them over the local chart
+map onto the complete ring, by successive lifting modulo powers of
+the maximal ideal. The weights are the row weights minus the column
+weights. Choose the relative equations minimally modulo the old
+relations and the maximal ideal times the new relation ideal.
+Weight by weight their number is at most the obstruction-space
+dimension. Indeed each linear functional on this space of minimal
+relations defines a small extension by killing its kernel. A zero
+obstruction would lift the universal point over that extension, and
+the resulting section would kill the selected relation modulo the maximal
+ideal, contrary to its chosen nonzero class. Linear combinations give
+the same test for independence. Zero equations pad a smaller list to
+the stipulated obstruction dimension. This is the role of
+\nolinkurl{lemmaP} and \nolinkurl{boxPres} in the construction.
+The global frame uses the quotient unramified outside the chosen finite
+set. For every auxiliary place other than the one over $\ell$ its
+excluded subgroup is inertia intersected with the residual kernel.
+The local input, global finiteness, the cohomological dimension count
+and the condition at complex conjugation supply the hypotheses of
+the framed presentation
+(\path{CommutativeAlgebra/LemmaP.lean:256--311,331--424};
+\path{UnitaryThreeGroups/BoxPresOf.lean:63--147,149--164}).
+
+Impose the marking on the box presentation. In a power series
+cover, retain the equations already pulled back from the local ring,
+and lift the box relations and normalization equations homogeneously.
+Their images generate the kernel: subtract a combination of lifted
+normalization equations, then lift the remaining kernel element with
+the old relations. Sort the generators by weight. In the notation of
+\nolinkurl{model_of_pres}, if $u(j)$ counts the auxiliary tangent
+coordinates, the chart parameters are
+$(r,s,r',s',m)=(u(-1)+2,u(-2)+1,u(1)+3,u(2)+1,u(0)+3)$.
+The equation lists $F,G,E,E',Z$ have sizes $r+1,s,r',s',m$ and
+weights $-1,-2,1,2,0$. The chart has variable multiplicities
+$r,s,r'+1,s'+1,m$ in those same weights. The extra equations come
+from the specified normalization. Each matrix entry has a homogeneous
+lift because the original coordinates are entry differences from the
+base. Truncating homogeneous power series gives the entry-monomial
+approximations to every prescribed maximal-ideal precision
+(\nolinkurl{model_of_pres},
+\path{UnitaryThreeGroups/ModelOfPres.lean:39--115,155--208,229--329};
+\nolinkurl{mDims}, \path{OrbitVanishingLocal.lean:88--109}).
+
+There are two different evaluation issues. An algebraic point on the
+graded ring must extend to the completion after rescaling. On its
+finitely many nonzero coordinate values $y_i$ of weights $w_i$ the
+required inequalities are $|t^{w_i}y_i|<1$. Degree-zero products in
+the maximal ideal have absolute value strictly less than one: an
+integral inverse in the finite degree-zero image would make the
+original degree-zero element a unit. Thus each nonzero pair of
+opposite weights satisfies the strict inequality obtained by eliminating
+$t$. The upper and lower bounds on $v(t)$ cut out an open interval
+(possibly unbounded). Choose a rational point in it and a scalar of
+that valuation in the algebraic closure. Zero weights already satisfy
+the inequality. The rescaled coordinates belong to the open unit ball
+of a common finite extension and all power series converge there.
+Their homogeneous relations vanish, so evaluation factors through
+the marked ring. For a tangent vector at a local point, evaluate
+series in the dual numbers by first-order substitution. Derivatives
+at the point converge in a finite extension containing the finitely
+many variable values and their derivatives. The tangent annihilates
+the relations, so this map also descends. On the homogeneous algebra
+it agrees with the given derivation: compare on the variables and on
+degree-zero integral values, using the finite algebra and its
+adically continuous extension as in the cited proof. These arguments
+give the point and tangent clauses of the model
+(\nolinkurl{points_finite}, \path{CommutativeAlgebra/PointsFinite.lean:310--370};
+\nolinkurl{exists_torus_twist_eq_localPoint_of_weightedPres},
+\path{ExistsTorusTwistEqLocalPointOfWeightedPres.lean:95--127};
+\nolinkurl{exists_dualNumber_point_of_pointDerivation_vanishing},
+\path{ExistsDualNumberPointOfPointDerivationVanishing.lean:91--136,212--224}).
+
+\paragraph{Fixed weights and the integral lower comparison.}
+At a simultaneous upper and lower point, write its three diagonal
+characters on $G_K$ as $a_i$. Their quotients by
+$\Psi^{1-i}$ (indices $i=0,1,2$) are congruent to $1$.
+Away from $\ell$ the local matrices have the prescribed inertia
+eigenvalues. Comparison modulo the maximal ideal identifies the
+diagonal eigenvalue unless two coincide there; on the residual
+inertia kernel the datum kills the corresponding action. Above
+$\ell$ the local flag supplies the three characters and separation
+on the marked inertia element distinguishes the three positions.
+Thus all three quotients are unramified. They factor through the
+class group by class field theory and lie in the principal units.
+The class number is prime to $\ell$, and a principal unit of order
+prime to $\ell$ is $1$ (factor the difference of its power and $1$).
+This identifies the two representations on $G_K$. Their values at
+complex conjugation agree by normalization, and these elements
+generate $G_{\mathbf Q}$
+(\nolinkurl{pt_fixed}, \path{RootOfCharpoly.lean:126--225};
+\nolinkurl{char_eq_one}, \path{PowEqOneOfUnr.lean:103--115}).
+
+For an infinitesimal class at the base in any degree $j\le0$,
+pair the entries $(i,b)$ and $(2-b,2-i)$. The difference and sum
+of the two entries give one-dimensional cocycles of characters
+$\Psi^j$ and $\Psi^j\eta$, respectively. Finite local conditions
+pass through these equivariant projections. For $j=0$, restrict to
+$G_K$, where both characters are trivial. The weight-zero finite
+local condition gives an unramified class at $\ell$ and the away
+condition gives this at every other prime. A continuous additive
+unramified character of $G_K$ is zero: its reductions by open additive
+balls factor through the finite class group, and multiplication by the
+class number on the characteristic-zero target is injective. The
+value of the cocycle on the other coset is its value at complex
+conjugation. The primitive $-c(\mathrm{cc})/2$ works for $\eta$,
+and for the trivial character $c(\mathrm{cc})=0$.
+
+For $j=-n<0$ each character is a finite-order character times
+$\chi_{\rm cyc}^{-en}$ with $en>0$. Descend the finite local cocycle
+to a finite coefficient field. Its finite subspace at this negative
+weight consists of coboundaries by the character clause of the local
+input. Conjugating the chosen place gives a primitive on every
+decomposition group above $\ell$, and the away condition gives a primitive
+on inertia elsewhere. These are exactly the hypotheses of the negative
+twist vanishing \nolinkurl{soBar}, supplied by the bounded
+\nolinkurl{LemmaK} of Z2, normalized Poitou--Tate and local
+finiteness and duality. The resulting scalar primitives for differences
+and sums assemble, on dividing by two and respecting reflection of
+the indices, into one matrix primitive. Degrees outside the matrix
+weight range already vanish. In particular the argument gives all
+$j\le0$, including $-1,-2$ needed for the cotangent rows.
+The marking forces a normalized coboundary at the base to come from
+the diagonal torus Lie algebra, which fixes the base. Its normalized
+tangent is therefore zero. Dualizing degree by degree gives the
+three spans of M1
+(\nolinkurl{bloch_kato_nonpositive_weight},
+\path{BlochKatoNonpositiveWeight.lean:122--157,194--291,297--414};
+\nolinkurl{soBar}, \path{FdAdjoinRange.lean:78--96};
+\nolinkurl{gradedModel_spansCot_of_rigid_weights},
+\path{GradedModelSpansCotOfRigidWeights.lean:228--244}).
+
+At a two-sided point, transport two derivations by the same torus
+scalar to a local point. Their dual-number maps give coboundaries
+by the separate arithmetic rigidity input. Differentiating the
+normalization puts both infinitesimal conjugators in the same
+one-dimensional diagonal torus Lie algebra. A nonzero pair of
+scalars thus annihilates the coboundaries. A tangent derivation is
+determined by its matrix entries, so inverse scaling gives the same
+relation on the original derivations. This proves M4 under precisely
+the rigidity supplied in Z1.2--Z1.3
+(\nolinkurl{gradedModel_derivationCondition_of_ptHyp},
+\path{GradedModelDerivationConditionOfPtHyp.lean:111--185}).
+
+The isomorphism clause of the two-sided classification identifies the
+representatives in the final cover. An intertwiner on $G_K$ carries
+the marked diagonal difference to its counterpart. Its three simple
+eigenvalues are $\zeta,0,-\zeta$, and the two specialized $\zeta$'s
+are congruent to the same residual unit. This excludes exchange of
+the nonzero eigenvalues since $\ell$ is odd. The intertwiner is
+diagonal with entries $m_0,m_1,m_2$. Applying the intertwining equation
+also to the conjugate-dual elements gives
+$(m_i m_{2-i}-m_j m_{2-j})r(g)_{ij}=0$. If an entry connects the
+middle and outer coordinates, $m_0m_2=m_1^2$, so division by $m_1$
+gives the torus matrix. Otherwise only the corner ratio affects
+conjugation and a square root of $m_0/m_2$ works. The normalized
+values at complex conjugation then extend the equality from $G_K$
+to the whole group (\nolinkurl{conjBy_tor_of_iso},
+\path{UnitaryThreeGroups/FreeEtaleSheafZmodExistsHomSendingGenerator.lean:10--62,69--120};
+\nolinkurl{twoPt_shape}, \path{PtShape.lean:129--171}).
+
+Fix $0\ne b\in O$. Normalize each $b$-torsion Selmer cocycle
+to have value zero at $g_1$. This fixes its representative since
+$\Psi(g_1)^{-1}-1$ is a unit. The values then belong to the cyclic
+$b$-torsion of the divisible coefficient module, identified by a
+generator with $O/(b)$. Send a value $u$ to the matrix with
+$(1,0)$ entry $u$ and $(2,1)$ entry $-u$, all other entries zero.
+This is equivariant of weight $-1$, additive and injective by its
+$(1,0)$ entry. The value at complex conjugation is zero by the
+cocycle law and invertibility of $2$. The marking equation at
+$g_1$ and its conjugate follow from normalization. On excluded inertia
+the character is trivial and the local coboundary consequently
+vanishes. The local primitive at $\ell$ can itself be chosen
+$b$-torsion: applying $b$ to the local coboundary at an element
+whose $\Psi^2-1$ is a unit kills $b$ times the primitive.
+Thus the image satisfies every marked cocycle condition with
+modulus precisely $b$
+(\nolinkurl{sha_inj}, \path{ShaInj.lean:11--37};
+\nolinkurl{sha_inj_gen}, \path{ShaInjGen.lean:30--101,225--337}).
+
+For each of these cocycles deform the lift over the square-zero ring
+$O\oplus O/(b)$ by $(1+\epsilon\gamma(g))r_0(g)$. Multiplication is
+the cocycle law and the local condition is the restriction coboundary.
+Lift that local primitive to an integral matrix of the same weight
+by lifting its permitted entries. The integral coboundary defines an
+integral local derivation annihilating the local relations. The
+universal global lift gives the derivation modulo $b$. To lift it on
+the model, prescribe the integral local derivation on the old
+variables, lift the values on each new weight-$-1$ variable, and put
+zero on new variables of every other weight. For the derivation at
+the origin only linear power-series coefficients contribute. It kills
+the old relations by its restriction, hence descends to the model
+before imposing the new global equations. Its reduction is the given
+derivation on every variable. The global derivation modulo $b$ kills
+the new equations, and if its pullback to the model is zero its values
+on entries recover $\gamma=0$. This provides exactly the integral
+lift and injection in the lower length lemma. Each discrete cocycle on
+a compact group has finite image, killed by a product of annihilators;
+the Selmer module is the union of its $\pi^n$-torsion pieces. A finite
+strict submodule filtration is witnessed inside one such piece, so the
+bound holds for the full length
+(\nolinkurl{model_lower}, \path{ModelLower.lean:296--365,373--401};
+\nolinkurl{exists_base_pointDerivation_of_weight_homogeneous},
+\path{ExistsBasePointDerivationOfWeightHomogeneous.lean:13--48,79--117};
+\nolinkurl{vlen_le}, \path{VlenLe.lean:13--67}).
+
+\paragraph{Smith form, the slice and the orbit cover.}
+Let $A,x,I,a$ satisfy the hypotheses M1--M5 already displayed,
+$B=A_0$ and $K$ the algebraically closed valuation field. Passing to
+the fraction field in the smooth chart identifies the degree-$-1$
+cotangent space with the $r$ independent linear coordinate terms.
+The integral cotangent lattice is torsion free by saturation; it is
+finite because the ring is finitely generated in nonzero weights
+over $B$ and $B$ has a Noetherian local presentation. The equations
+$F_1,\dots,F_r,F_*$ span it after inverting the uniformizer $\pi$
+by M1. Smith form and the rank-one kernel on the equation side allow
+a change of generators over $O$ with
+\[
+ F_i\equiv\pi^{c_i}y_i\pmod{\operatorname{sat}((\ker x)^2)},
+ \qquad F_*\equiv0,\qquad L=\sum_{i=1}^r c_i .
+\]
+Neither their span nor their ideal changes. The independent linear
+parts of the $m$ weight-zero equations allow formal elimination of
+all $m$ weight-zero parameters over the fraction field: replace
+those variables by the equations, invert the linear block, and solve
+successive homogeneous terms recursively. Write $\phi$ for the cut
+chart. If $\phi(a)=0$, add $gF_i$ to $a$, with $g$ of weight $1$
+and $F_i$ of weight $-1$ of nonzero chart image. Such $g$ exists by
+the positive coordinate, and some $F_i$ must have nonzero linear term
+because the negative coordinate survives and the $F_i$ span. This
+preserves $x(a)$ and every evaluation on $I$ and makes $\phi(a)\ne0$
+(\nolinkurl{sm_holds}, \path{SmHolds.lean:55--74,89--112};
+\nolinkurl{cut_holds}, \path{CutHolds.lean:101--121};
+\nolinkurl{nz_holds}, \path{NzCoeffMul.lean:33--89}).
+
+Choose finite $B$-generators for $A_{-2},A_2$. They suffice to
+detect each sign: square a nonzero evaluated homogeneous value and
+group monomials into weight-$2$ or weight-$-2$ factors over $B$.
+For a two-sided point choose generators $f,g$ of the two weights
+with both evaluations nonzero. Scale by a square root of $\xi(f)$
+so the new value of $f$ is $1$. On the slice $f=1,\ g\ne0$, the
+degree derivation $D(h)=j\xi(h)$ for $h\in A_j$ has $D(f)=-2$.
+Every tangent to the slice kills $f$ and all equations in $I$.
+By M4 it is proportional to $D$, hence zero. The slice algebra over
+$\operatorname{Frac}(O)$ is of finite type by M2 and the finite
+homogeneous generators. Vanishing geometric tangents at every
+geometric point makes its local rings fields by Nakayama, so it is
+reduced, zero-dimensional and has finitely many geometric points.
+The finitely many pairs $f,g$ consequently give a finite orbit cover
+(\nolinkurl{slice_holds}, \path{SliceHolds.lean:48--66,92--172};
+\nolinkurl{fin_holds}, \path{FinHolds.lean:49--98}).
+
+\paragraph{The intersection calculation.}
+The following computation applies to \emph{any} finite orbit cover $T$.
+Set $N_0=A_{-2}$, $N_1=A_2$ and
+$N_2=BF_*^2+N_0^2N_1$. Use the three-graded algebra whose part
+in multidegree $d=(d_0,d_1,d_2)\ge0$ is
+$N_0^{d_0}N_1^{d_1}N_2^{d_2}$, carrying formal markers of these
+degrees. In this algebra let $s$ be the list of sections
+$F_1^2,\ldots,F_r^2,G_i$ in direction $0$, $E_i^2,E'_i$ in
+direction $1$, and $F_*^2$ in direction $2$. Write $J$ for the
+coefficientwise kernel of $\phi$. For a list $s$ and a graded module
+$U$, write $\chi(s;U)_d$ for the Euler characteristic obtained by
+replacing each multiplication by its cokernel minus its shifted
+kernel and taking lengths in degree $d$. This is the source's
+recursive convention on the degrees where these lengths are finite
+(\nolinkurl{mN}, \nolinkurl{ts}, \path{ToDegInjective.lean:187--217};
+\nolinkurl{chi}, \path{EulerVanishingBelowDimension.lean:66--71}).
+
+Here are the support checks behind the use of lengths. Write
+$D_0=(A_{-2}A_2)\subset B$. A point over an embedding
+$\sigma:B\to K$ is two-sided precisely when some product
+$f g$, $f\in A_{-2},g\in A_2$, survives. If a homogeneous prime
+of the Rees algebra contains the sections and the $Z_i$, and misses
+the irrelevant ideal (the product of the three generating ideals),
+its contraction contains $I\cap B$. To see the contraction, on
+each axis choose a section outside the prime. Clearing a power of
+that section represents the degree-zero part of every equation by
+the specified Rees sections, with squaring sufficient for the odd
+weights. Primality removes the power and the square
+(\nolinkurl{zi_holds}, \path{ExistsSecNotMem.lean:63--94}).
+Under M2 a horizontal such contraction is the kernel of an embedding
+of the finite degree-zero quotient into $K$. If $D_0$ vanishes there,
+the positive and negative axes give two strict one-sided points
+restricting to this same embedding: retain a surviving section from the axis,
+kill the opposite weights and pass to a geometric point of the
+localization. The products of opposite signs vanish in the residue
+field, and a power of every further generator of the killed sign
+belongs to the ideal so obtained. Setting both signs to zero gives
+the diagonal point. If this is the base, the negative cotangent equations exclude a negative branch.
+In weight $-1$ a product of two augmentation terms has a factor of
+nonnegative weight, which vanishes at the one-sided point (in weight
+zero this follows from its base restriction). In weight $-2$ the only
+additional pair of negative weights is $(-1,-1)$, already zero.
+The spanning equations and torsion saturation therefore kill all
+weight-$-1$ and weight-$-2$ evaluations, hence the entire negative
+direction. Otherwise the two branches violate
+M3. Thus this horizontal contraction cannot occur. If instead $D_0$
+survives, a geometric point over $\sigma$ is two-sided, and its
+degree-zero evaluation occurs in $T$ by coverage
+(\nolinkurl{zii_holds}, \path{SameDegreeZeroOfRestriction.lean:15--42};
+\nolinkurl{ct_holds}, \path{XProjZero.lean:81--103};
+\nolinkurl{zm_holds}, \path{ZmOfHom.lean:163--222};
+\nolinkurl{zp_holds}, \path{ExistsNotInP.lean:201--232}).
+This prime test has two consequences. With $a$ added to the sections,
+no surviving horizontal point remains, by M5. Finite generation
+converts radical containment into containment of a power of the
+product of the irrelevant and maximal ideals. Without $a$, a power
+of $I\cap B$ kills the sufficiently large pieces, and the only
+nonzero generic localizations of those pieces are at $\sigma$ coming
+from $T$. Inverting the irrelevant generators justifies passing from
+a power of their ideal to all large multidegrees. The quotient by
+the annihilator is then finite over $O$, since $B/(I\cap B)$ is
+finite and $B$ is Noetherian. These are the finiteness and support
+conditions in the following Euler computations
+(\nolinkurl{admissibility_holds}, \path{AdmissibilityHolds.lean:30--77};
+\nolinkurl{eventually_mQ_gr_finite_annihilator},
+\path{EventuallyMQGrFiniteAnnihilator.lean:77--123}).
+
+For the lower bound keep the leading part of each coefficient in the
+cut chart. For $d$ its possible monomials have total negative and
+positive weights
+\[
+                    u=2d_0+4d_2,\qquad w=2d_1+2d_2 .
+\]
+All terms have negative total at least $u$: each $N_0$ contributes
+two, and $F_*$ lies in the saturated square, so $F_*^2$ contributes
+at least four (a weight-$-1$ term with no linear part has negative
+total at least two). The ordinary weight then fixes $w$. The kernel
+of these leading coefficients is homogeneous, is saturated for
+multiplication by $\pi$, and contains both $J$ and $a$ because
+$x(a)=0$. Its degree-$d$ quotient maps into the vector space on these
+monomials. It spans that space: pick chart elements isolating each
+linear coordinate, multiply them according to the monomial, first eliminating the quadratic products of weight-one
+coordinates from each weight-two leading term. These finitely many
+coefficients can be eliminated with products of isolated weight-one
+terms after clearing denominators; the distinguished linear term
+is preserved. Then partition the negative and positive factors into weight-two groups.
+The even totals permit pairing weight-one factors; $N_0^{d_0+2d_2}
+N_1^{d_1+d_2}$ lies in the required product. This gives independent
+leading coefficients indexed by the monomials after tensoring with
+$\operatorname{Frac}(O)$. Their image is a finite torsion-free
+$O$-lattice since $B$ acts there by $x$. Reduction by $\pi$ has
+dimension equal to that rank. Thus its Hilbert function is the
+coefficient of $X^uY^w$ in
+\[
+  \frac{1}{(1-X)^r(1-X^2)^s(1-Y)^{r'+1}(1-Y^2)^{s'+1}}.
+\]
+This computation concerns the lattice's own reduction; the leading
+coefficients need not be units in the original coordinates
+(\nolinkurl{exists_mem_oz_pow_coeff_ne_zero_unique},
+\path{ChartLeadingWeightTwo.lean:170--195,250--289,381--391};
+\nolinkurl{lk_holds}, \path{LkHolds.lean:8--30};
+\nolinkurl{hf_holds}, \path{ReesGradedPieceSurjection.lean:199--270}).
+
+In the leading quotient the first $r$ sections now have the form
+$\pi^{2c_i}y_i^2$. Peeling a factor $\pi^k$ from a section in the
+Euler characteristic contributes $k$ times the corresponding
+finite difference of the Hilbert function modulo $\pi$ of the
+other sections. Indeed $\pi$ is regular on this quotient and the
+successive layers of $U/\pi^k U$ are copies of $U/\pi U$.
+The remaining Euler term is eventually nonnegative. Permuting
+sections and iterating gives a lower bound
+$(\sum_i2c_i)$ times the mixed difference with $r-1+s$ differences
+in direction $0$, $r'+s'$ in direction $1$, and one in direction $2$.
+The generating series for that difference simplifies to
+\[
+ (1+X)^{r-1}(1+Y)^{r'}
+ \frac{1-X^4Y^2}{(1-X)(1-Y)(1-Y^2)} .
+\]
+For all sufficiently large $u,w$, the two $X$-geometric-series
+coefficients at $u$ and $u-4$ are both one. Taking the difference in
+$Y$ cancels $1-Y^2$. Every translate by the finite polynomial
+therefore contributes its coefficient, giving $2^{r-1+r'}$.
+Quotienting by the leading kernel can only decrease the eventual
+Euler characteristic, by additivity and nonnegativity of the
+kernel module. Consequently
+\[
+ 2^{r+r'}\sum_i c_i
+       \le \chi(s; (\mathcal R/J)/a)_d .
+\]
+See \nolinkurl{la_holds}, \path{LaDifPerm.lean:77--111};
+\nolinkurl{num_holds}, \path{FrobeniusInclusionXEqMulQ.lean:206--283};
+\nolinkurl{low_holds}, \path{AdmissibleMonoIdeal.lean:191--218,260--322}.
+
+For the upper bound, $a$ is regular modulo $J$ because $\phi(a)\ne0$
+and its target power-series ring is a domain. Put $a$ first in the
+list, then permute it to the end. The equality of eventual Euler
+characteristics follows by additivity, or by taking the two orders
+of homology of the same multiplication complexes. Passing from
+the other sections to their successive quotients gives
+\[
+ \chi(s;(\mathcal R/J)/a)_d\ \le \chi\bigl((a);\mathcal R/(J+(s))\bigr)_d .
+\]
+Here the direction is the eventual Euler upper-bound rule for
+quotient by sections, including its annihilator terms; treating the
+sections as a regular sequence is unnecessary
+(\nolinkurl{core_holds}, \path{AlgMemCoef.lean:23--46,121--137}).
+On the right write $M_d=(\mathcal R/(J+(s)))_d$. For multiplication
+by $a$ on this finite module the difference between cokernel and
+kernel lengths equals the sum of
+$\operatorname{length}_{B_{\ker\sigma}}\!\left((M_d)_{\ker\sigma}\right)\,v(\sigma a)$
+over generic embeddings, counted separately. Filter the module by
+prime quotients: the finite-length pieces have equal kernel and
+cokernel lengths, and each horizontal piece contributes the
+valuation of its norm of $a$ (sum over its embeddings). Exact
+sequences add the differences. The preceding support check restricts
+the sum to the restrictions of members of $T$
+(\nolinkurl{th_holds}, \path{HerbrandFinLen.lean:92--109,189--243}).
+
+For each such $\sigma$, put $P=\ker\sigma$, and choose
+$f\in A_{-2}$, $g\in A_2$ with $b=fg\notin P$. We show directly
+that the localization at $P$ of each weight-$j$ piece of $A/I$ is
+annihilated by $P$ and cyclic. First, a homogeneous element $h$ with
+$h^n=0$ after this localization is already zero there. Indeed
+$t h^n\in I$ for some $t\in B\setminus P$. Every point of the slice
+$f=1$, $g\ne0$ consequently annihilates $th$. The slice algebra with
+$g$ and the uniformizer inverted is reduced by the transverse tangent
+calculation above. Clearing its denominators gives
+$c g^N th\in I+(f-1)$ with $0\ne c\in O$. Comparing homogeneous
+components successively in the identity modulo $I$ clears the
+dehomogenization: if a homogeneous $H$ belongs to $I+(f-1)$,
+then $f^mH\in I$ for some $m$. Indeed, modulo $I$ the coefficients
+of a putative multiple of $f-1$ telescope along the progression
+of degrees separated by $\deg f$, and there are only finitely many
+nonzero coefficients. Multiplying the cleared identity by further
+powers of $f$ and $g$ gives $cb^{N+m}th\in I$, whose multiplier
+is a unit in $B_P$. For $s\in P$ the image of $s$ satisfies a monic
+equation over $O$ by M2. Factor the polynomial as $X^k q(X)$ with
+$q(0)\ne0$. Then $q(s)\notin P$ and $s^k=0$ in the localized
+quotient. The preceding argument gives $s=0$ there.
+
+For any integer $j$ choose $e=f^j$ for $j\ge0$ and $e=g^{-j}$
+otherwise. It has weight $-2j$ and is a unit after localizing at
+$b$. If every $h\in A_j$ satisfies $h^2e\in P$, then each such $h$
+has square zero locally, hence is zero. Otherwise choose $h_0$ with
+$h_0^2e\notin P$. The two products $hh_0e,h_0^2e$ belong to $B$,
+and $(h_0^2e)h=(hh_0e)h_0$ proves cyclicity. The weight piece thus
+has length at most one over $B_P$
+(\nolinkurl{slice_holds}, \path{SliceHolds.lean:48};
+\nolinkurl{deh_holds}, \path{DehHolds.lean:5};
+\nolinkurl{nilpotent_modulo_kernel},
+\nolinkurl{locLen_quotientWeightPiece_le_one},
+\path{LocLenQuotientWeightPieceLeOne.lean:41,70--148}).
+Replacing one
+equation $h$ by $h^2$ increases this bound by a factor of at most
+two: modulo $h^2$ the submodule generated by $h$ is a quotient of
+the original module modulo $h$ in the shifted degree. The quotient
+by that submodule is the module modulo $h$. Apply this for the
+$r+1$ equations $F$ and the $r'$ equations $E$. After localization the Rees component is a quotient of a
+submodule of the squared-equation weight piece. The two comparison
+maps have the same source lattice, and the kernel of its projection
+to the weight piece maps to zero in the Rees piece after multiplication
+by a power of $fg$. Submodules and quotients can only decrease length. This gives $2^{r+1+r'}$ as a uniform bound.
+Since $a$ is nonzero and integral on these points, its valuations
+are nonnegative. Counting all representatives in $T$ bounds the
+sum over their distinct restrictions
+(\nolinkurl{locLen_quotientWeightPiece_le_one},
+\path{LocLenQuotientWeightPieceLeOne.lean:70--121};
+\nolinkurl{locLen_aPiece_ideal2_le_two_pow},
+\path{LocLenAPieceIdeal2LeTwoPow.lean:69--115};
+\nolinkurl{locLen_mQ_gr_le_locLen_aPiece},
+\path{LocalizedLengthLeOfSurjective.lean:6--36,124--213};
+\nolinkurl{up_holds}, \path{TwoSigned.lean:17--32,65--95}).
+
+Take one multidegree beyond all three thresholds. The two inequalities
+give $2^{r+r'}L\le 2^{r+1+r'}\sum_{\xi\in T}v(\xi(a))$.
+Cancellation proves the claim for every cover, including the empty
+cover when there are no two-sided points. This proves the upper
+algebra lemma and explains why one may reapply it after choosing
+irredundant orbit representatives. Applying it with the trace
+difference in Proposition~\ref{prop:P-z1-model} and the lower
+injection above gives the conditional Z1.4 comparison. The
+existence of the common marking, automorphy of the two-sided points
+and their adjoint rigidity are the independently stated arithmetic
+inputs in Z1.1--Z1.3 (\nolinkurl{main_holds},
+\path{MainCotSpan.lean:32--70}; \nolinkurl{model_upper},
+\path{ModelUpper.lean:103--121,218--250};
+\nolinkurl{oneChar_unramU}, \path{FOneCharU.lean:19--54}).
+
+
+\paragraph{Euler rules in the multigraded intersection.}
+Let $R$ be the standard multigraded algebra over the Noetherian local ring $(B,\mathfrak m)$, $F$ a finite graded $R$-module and $I=\prod_i(R_{e_i})$ the irrelevant ideal. Each section $(d,s)$ has $d\ge0$, $s\in R_d$. Admissibility for a list $L$ means $(\mathfrak m R\cdot I)^N\subseteq\operatorname{Ann}(F)+(L)$ for some $N$. Write $Q_sF=F/sF$ and $K_sF=(0:_Fs)[d]$, with $F[d]_u=F_{u-d}$. By definition $\chi_{s,L}(F)=\chi_L(Q_sF)-\chi_L(K_sF)$ in degree $u$. The empty-list value takes the natural-number value of the $B$-length, so an ordinary length calculation first requires finiteness. Eventual equalities hold above one bound in each coordinate; finitely many bounds and their fixed translates have a common upper bound.
+
+{\footnotesize \nolinkurl{GMod.shift}, \nolinkurl{GMod.ann}, \nolinkurl{chi}, \nolinkurl{admitted}, \nolinkurl{HidaSetting} (\nolinkurl{Formalism/SharpRestriction/ValuationFrobeniusEpsilon/LeastPrimeTwists/QuotientShiftIrreducible/NoetherianQuotientCalc/EulerVanishingBelowDimension.lean}\allowbreak:37--68,78--95,113--160).}
+
+\emph{Finiteness and exact sequences.} The finite axis pieces generate $R$ as a $B$-algebra, so $R$ is Noetherian. Choose finite homogeneous generators of $F$ by splitting arbitrary generators into their finitely many components. In degree $u$ their contributions come from $R_{u-d_j}$; these components are finite over $B$ by the axis product rule. When every coordinate of $u-d_j$ is at least $N$, the component is contained in $I^N$ by removing $N$ factors in every direction. Thus under empty-list admissibility $\mathfrak m^NF_u=0$. The filtration by powers of $\mathfrak m$ has finite-dimensional residue-field quotients, giving finite length. If $I^N$ itself kills $F$, its late pieces vanish. Homogeneous submodules and quotients inherit the direct-sum decompositions: the components of a homogeneous-generated submodule remain inside it, and projections of a homogeneous generating family generate the quotient degreewise. Images and kernels of graded maps are homogeneous by taking degree components. Noetherianity supplies finite generation. Shifts translate degree in the recursion and graded isomorphisms identify each quotient, kernel and length.
+
+{\footnotesize \nolinkurl{Std.isNoetherianRing}, \nolinkurl{sub_isGr}, \nolinkurl{quo_isGr}, \nolinkurl{ruleGr} (\nolinkurl{Formalism/SharpRestriction/ValuationFrobeniusEpsilon/LeastPrimeTwists/QuotientShiftIrreducible/NoetherianQuotientCalc/RuleGr.lean}\allowbreak:93--104,186--243,256--292). \nolinkurl{length_ne_top_of_pow}, \nolinkurl{GMod.IsGr.exists_gens}, \nolinkurl{ruleFin} (\nolinkurl{Formalism/SharpRestriction/ValuationFrobeniusEpsilon/LeastPrimeTwists/QuotientShiftIrreducible/NoetherianQuotientCalc/RuleFin.lean}\allowbreak:13--65,222--257,294--362). \nolinkurl{ruleIrr} (\nolinkurl{Formalism/SharpRestriction/ValuationFrobeniusEpsilon/LeastPrimeTwists/QuotientShiftIrreducible/NoetherianQuotientCalc/RuleIrr.lean}\allowbreak:9--14). \nolinkurl{ruleShift} (\nolinkurl{Formalism/SharpRestriction/ValuationFrobeniusEpsilon/LeastPrimeTwists/QuotientShiftIrreducible/NoetherianQuotientCalc/RuleShift.lean}\allowbreak:28). \nolinkurl{ruleIso} (\nolinkurl{Formalism/SharpRestriction/ValuationFrobeniusEpsilon/LeastPrimeTwists/QuotientShiftIrreducible/NoetherianQuotientCalc/RuleIso.lean}\allowbreak:104).}
+
+For a strict graded short exact sequence $0\to F'\to F\to F''\to0$, prove additivity by induction on the list. In the empty case add the finite lengths of the degree pieces. For head $s$ apply multiplication by $s$ vertically from the shifted to the unshifted sequence. The six terms are
+\[
+0\to K_sF'\to K_sF\to K_sF''\xrightarrow{\delta}Q_sF'\to Q_sF\to Q_sF''\to0 .
+\]
+For $\delta$, lift an element of the last kernel to the middle module, multiply by $s$, lift back to $F'$ and reduce modulo $s$. Changing the first lift changes the result by $sF'$. This construction gives exactness at the two middle positions and preserves degrees with the shift above. Every kernel, cokernel and intermediate image is killed by $s$ and by $\operatorname{Ann}(F)$, so the tail is admissible there. Split at the graded images, apply the induction hypothesis to each short exact sequence and cancel the equal image terms. This gives additivity on the full list.
+
+{\footnotesize \nolinkurl{delta}, \nolinkurl{exact_ann_delta}, \nolinkurl{exact_delta_quot}, \nolinkurl{length_add}, \nolinkurl{euler_additivity_of_rules} (\nolinkurl{Formalism/SharpRestriction/ValuationFrobeniusEpsilon/LeastPrimeTwists/QuotientShiftIrreducible/NoetherianQuotientCalc/EulerAdditivityExactSequence.lean}\allowbreak:192--251,273--325,339--363,386--425).}
+
+\emph{Interchanging sections.} For adjacent $s,t$ of degrees $d,d'$ consider
+\[
+ H_1=\{(x,y):sx+ty=0\}/\{(tz,-sz):z\in F\},\quad
+ (x,y)\in F[d]\oplus F[d'] .
+\]
+The sequence $0\to Q_tK_sF\to H_1\to K_tQ_sF\to0$ is graded exact. The maps send $x$ to $(x,0)$ and a pair to $y\bmod sF$. If $ty\in sF$, solve $sx=-ty$ to lift; if $y=sz$, add $(tz,-sz)$ to kill the second coordinate. A boundary with second coordinate zero has $sz=0$, giving injectivity on the left. The four recursive terms of $\chi_{s,t,L}$ therefore combine as the tail characteristic of $F/(s,t)F$, minus that of $H_1$, plus that of $(0:_F(s,t))[d+d']$. Swapping coordinates interchanges the two middle complexes and negates their boundaries; the double quotient and double annihilator are unchanged. For a cycle $(x,y)$ its $s$- and $t$-multiples are boundaries of $-y$ and $x$, so both sections kill the middle homology. Tail admissibility justifies additivity in this step. Adjacent swaps imply the permutation rule, also under a prefix by applying its recursion to the quotient and shifted kernel.
+
+{\footnotesize \nolinkurl{fgK_exact}, \nolinkurl{sesK}, \nolinkurl{isoH}, \nolinkurl{swap_eq}, \nolinkurl{euler_rule_two_of_graded_finite_iso} (\nolinkurl{Formalism/SharpRestriction/ValuationFrobeniusEpsilon/LeastPrimeTwists/QuotientShiftIrreducible/NoetherianQuotientCalc/EulerIndependenceOfOrder.lean}\allowbreak:17--66,105--126,428--460,505--554,555--576,586--616).}
+
+\emph{Nonnegativity.} Choose in a nonzero graded module a homogeneous $x\ne0$ with maximal annihilator among such elements. For homogeneous $a,b$ with $abx=0$, either $ax=0$ or $\operatorname{Ann}(ax)=\operatorname{Ann}(x)$, so $bx=0$. The annihilator is homogeneous and prime: in its quotient take leading nonzero terms in a translation-invariant total ordering of the degree group to pass from homogeneous to arbitrary products. The cyclic submodule $Rx$ is a shifted prime quotient. Repeating in the quotient ends by Noetherianity. Additivity and shifts reduce positivity to those prime quotients. If $I\subset P$, all late pieces and hence all finitely iterated kernel and quotient contributions vanish. Otherwise $R/P$ is a relevant domain. For $s\notin P$, its kernel vanishes and positivity follows by induction on the shorter list. If $s\in P$, choose $\sigma\notin P$ of the same degree by picking one element outside $P$ in each generating axis and taking their product with the required powers (degree zero uses $1$). The original $s$ acts by zero, so its contribution is the difference of the tail on $R/P$ and its degree shift. Here the tail alone is already admissible on $R/P$. Additivity for the injection by $\sigma$ makes this difference the tail characteristic on $(R/P)/\sigma$, nonnegative by induction. The empty list starts with a nonnegative length.
+
+{\footnotesize \nolinkurl{exists_prime_ker}, \nolinkurl{ruleDev} (\nolinkurl{Formalism/SharpRestriction/ValuationFrobeniusEpsilon/LeastPrimeTwists/QuotientShiftIrreducible/NoetherianQuotientCalc/RuleDev.lean}\allowbreak:11--34,149--201,307--367). \nolinkurl{E4.exists_sec}, \nolinkurl{dev_reduce}, \nolinkurl{prime_step} (\nolinkurl{Formalism/SharpRestriction/ValuationFrobeniusEpsilon/LeastPrimeTwists/QuotientShiftIrreducible/NoetherianQuotientCalc/VanishingBelowDimensionRule.lean}\allowbreak:177--198,260--338). \nolinkurl{Pos.e1}, \nolinkurl{Pos.dev}, \nolinkurl{rulePos} (\nolinkurl{Formalism/SharpRestriction/ValuationFrobeniusEpsilon/LeastPrimeTwists/QuotientShiftIrreducible/NoetherianQuotientCalc/RulePos.lean}\allowbreak:18--45).}
+
+\emph{Upper bound and finite differences.} For head $s$, both $Q_sF$ and $K_sF$ are annihilated by $(s)+\operatorname{Ann}(F)$. The subtracted tail characteristic is thus eventually nonnegative. Dropping it successively yields $\chi_{L,U}(F)\le\chi_U(F/(L)F)$ eventually, including $U=((0,a))$ in the calculation above. Under the stronger empty-list admissibility on $F$, every tail is admissible already. Factor multiplication $F[d]\to F$ through its image; additivity on the two resulting short exact sequences cancels the image, giving $\chi_{s,L}(F)_u=\chi_L(F)_u-\chi_L(F)_{u-d}$. Iteration yields the alternating subset sum of degree-shifted Hilbert functions, retaining repeated positions. For an injective section the kernel term vanishes in every degree even without this stronger condition.
+
+{\footnotesize \nolinkurl{UB.ann_sup_le_ann}, \nolinkurl{ruleUB} (\nolinkurl{Formalism/SharpRestriction/ValuationFrobeniusEpsilon/LeastPrimeTwists/QuotientShiftIrreducible/NoetherianQuotientCalc/RuleUB.lean}\allowbreak:9--21,25--42). \nolinkurl{Sm.hdiff}, \nolinkurl{Sm.step}, \nolinkurl{ruleSmall} (\nolinkurl{Formalism/SharpRestriction/ValuationFrobeniusEpsilon/LeastPrimeTwists/QuotientShiftIrreducible/NoetherianQuotientCalc/RuleSmall.lean}\allowbreak:22--38,98--116,122--138). \nolinkurl{UpperTheory.V.Alg.M.core_holds} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/AlgMemCoef.lean}\allowbreak:23--46,92--105,121--137).}
+
+\paragraph{Horizontal length and the valuation of the norm.}
+Here $O$ is the complete characteristic-zero DVR, $K$ is algebraically closed with faithful $O$-action, and $v$ agrees with the additive order on nonzero elements of $O$. Let $B$ satisfy $\mathrm{IsCO}$, let $M$ be finite over $B$ with $B/\operatorname{Ann} M$ finite over $O$, and take $a,S,c$ as in \nolinkurl{th_holds}: on the finite set $S$ the images of $a$ are nonzero of nonnegative valuation and $\ell_\sigma(M)\le c$, and all other localized lengths vanish. Here $\ell_\sigma(M)=\operatorname{length}_{B_{\ker\sigma}}M_{\ker\sigma}$. Lengths of the kernel and cokernel are over $B$; restricted-scalar lengths over $O$ agree in the finite-length calculation because the residue field map is an isomorphism.
+
+{\footnotesize \nolinkurl{theta_eq}, \nolinkurl{herbrand_finLen}, \nolinkurl{len_eq}, \nolinkurl{UpperTheory.V.Alg.M.th_holds} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/HerbrandFinLen.lean}\allowbreak:11--33,83--101,189--202).}
+
+Use a finite prime filtration of $M$. Every prime quotient $D=B/P$ in it is finite over $O$ by the annihilator bound. If $P\cap O\ne0$ (contraction via the structure map), its contraction is maximal in the DVR; the finite domain over the residue field is a field. This simple $B$-module has equal finite kernel and cokernel lengths for any endomorphism, by additivity across its image. No map $B\to K$ killing $P$ can be faithful on $O$.
+
+If $P\cap O=0$, the finite torsion-free $O$-module $D$ is free. Inverting the nonzero elements of $O$ gives a finite-dimensional domain, hence a field $L$ over $F=\operatorname{Frac}(O)$. Its $F$-embeddings into $K$ are exactly the $O$-algebra maps $D\to K$, by the universal property of this localization. For each such embedding $(B/P)_P$ has length one; at a kernel not containing $P$, some element of $P$ is invertible, so the localization vanishes. Localization is exact, so each subquotient's length is bounded by that of $M$. Every embedding through $D$ therefore lies in $S$. There is such an embedding since $K$ is algebraically closed, and hence $\bar a\ne0$ in $D$. Multiplication by $\bar a$ is injective. Its matrix in an $O$-basis of $D$ has nonzero determinant $N_{L/F}(\bar a)$, by using the same basis after localization. Smith reduction over the DVR gives diagonal entries units times powers of the uniformizer. Their exponents add to the finite length of $D/\bar aD$ and to the valuation of the determinant. In characteristic zero $L/F$ is separable, so $L\otimes_F K$ is the product of the embedding factors, on which $\bar a$ acts by the scalars $\tau\bar a$. Thus the valuation is $\sum_\tau v(\tau\bar a)$ with each embedding counted separately.
+
+{\footnotesize \nolinkurl{length_quotient_eq_norm_valuation}, \nolinkurl{algebra_norm_eq_prod_embeddings}, \nolinkurl{UpperTheory.V.Alg.M.length_quotient_span_eq_finsum_valuation} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/LengthQuotientSpanEqFinsumValuation.lean}\allowbreak:12--43,45--57,61--114,115--140). \nolinkurl{loc_self}, \nolinkurl{loc_not_le}, \nolinkurl{prime_case} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/HerbrandFinLen.lean}\allowbreak:49--90,92--187).}
+
+The snake sequence for multiplication by $a$ on a short exact sequence bounds the middle kernel and cokernel lengths by the sums of the corresponding outside lengths. This propagates their finiteness up the filtration. Its alternating sum shows that the length differences add. The localized lengths add in the same short exact sequence. Consequently
+\[
+ \operatorname{length}_B(M/aM)-\operatorname{length}_B(0:_Ma)
+ =\sum_{\sigma\in S}\ell_\sigma(M)\,v(\sigma a)
+ \le c\sum_{\sigma\in S}v(\sigma a).
+\]
+Nonnegativity of each $v(\sigma a)$ is needed for the last inequality only. The inequality is the public conclusion; the equality is the intermediate identity in its proof. [Hypothesis, discharged at the application:] finiteness of the annihilator quotient and the support and local-length bounds for the late graded pieces are supplied by the support and orbit calculations in this section.
+
+{\footnotesize \nolinkurl{UpperTheory.V.Alg.M.th_holds} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/HerbrandFinLen.lean}\allowbreak:189--258). \nolinkurl{UpperTheory.V.Alg.M.up_holds} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/TwoSigned.lean}\allowbreak:17--95).}
+
+\paragraph{Z1.4. The three points above a relevant prime.}
+Let $I=Q.\mathrm{ideal}$, $B=A_0$, and let $R$ be the three-axis Rees algebra.
+Write $N_0=A_{-2}$, $N_1=A_2$, $N_2=BF_*^2+N_0^2N_1$ and
+$D=(uv:u\in A_{-2},\ v\in A_2)\subset B$.
+Take any prime $P$ of $R$ containing the listed sections and the weight-zero equations.
+Relevance means $\mathrm{Irr}\not\subset P$. Since $\mathrm{Irr}$ is the product of the
+three axis ideals, on each axis $i$ some section $[f_i]_i=f_iT_i$ lies outside $P$.
+Put $p=P\cap B$. The special section $[F_*^2]_2$ belongs to $P$.
+Since $N_2\subseteq N_0$, the equality
+$[F_*^2]_0[f_2]_2=[f_2]_0[F_*^2]_2$ and primality give $[F_*^2]_0\in P$.
+The other squared negative equations already occur on axis zero.
+Now $u=[f_0]_0[f_1]_1\notin P$. For a homogeneous equation $y$ and a coefficient $c$
+of opposite weight, $(cy)^e u$ factors through its listed section, with $e=2$ for
+$|\deg y|=1$ and $e=1$ for $|\deg y|=2$. For example for $y=F_i$ the factors
+are $[F_i^2]_0$ and $[c^2 f_0 f_1]_1$. The other sign exchanges the axes.
+For a weight-zero equation use its image in $P$ directly. Cancel $u$ and take the
+prime radical to get $cy\in p$. In an arbitrary multiple of $y$, only the coefficient
+of weight $-\deg y$ contributes to weight zero. Addition and multiplication of
+coefficients thus give $I\cap B\subset p$. By M2, $B/(I\cap B)$ and then
+$B/p$ are finite over the DVR $O$. If $p$ meets $O\setminus\{0\}$ this finite domain
+is a field and $p=\mathfrak m_B$. Otherwise its fraction field is finite over
+$\operatorname{Frac}(O)$, so it embeds over $O$ in $K$. This yields $\sigma:B\to K$
+with kernel $p$.
+\par{\footnotesize \nolinkurl{UpperTheory.V.Alg.M.zi_holds} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/ExistsSecNotMem.lean}\allowbreak:63--198). \nolinkurl{UpperTheory.V.Alg.M.emb_holds} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/PrimeMaximalOrKernel.lean}\allowbreak:5--84).\par}
+
+Assume $D\subset p$ and take such a $\sigma$. For $z\in A_{\pm 2r}$ write
+$[z]^\pm_r=zT_{i}^{r}$ with $i=0$ for the minus sign and $i=1$ for the plus sign.
+These sections exist since $A_{\pm2r}=(A_{\pm2})^r$ as $B$-submodules,
+using generation in weights $\pm1,\pm2$. For each sign define an ideal
+$H_\pm\subset A$ by testing
+\[
+  [\operatorname{pr}_{\pm2r}(ha)]^\pm_r\in P\qquad(h\in A)
+\]
+for every $r\ge0$ on the minus side and every $r\ge1$ on the plus side.
+Additivity gives closure under addition. Testing against every $h$ gives closure under
+multiplication. For homogeneous $a$ only the complementary weight of $h$
+enters each test. In either ideal $pA\subset H_\pm$. Choose $f=f_i$ on the
+corresponding axis. For $b\notin p$, $bf^n\notin H_\pm$ for every $n\ge0$:
+testing against $f$ gives $b([f]^\pm_1)^{n+1}\notin P$.
+\par{\footnotesize \nolinkurl{UpperTheory.V.Alg.M.oz_two_mul_eq_pow} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/OzTwoMulEqPow.lean}\allowbreak:93--127). \nolinkurl{UpperTheory.V.Alg.M.zmJ} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/ZmOfHom.lean}\allowbreak:15--34). \nolinkurl{UpperTheory.V.Alg.M.zm_abs} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/ZmOfHom.lean}\allowbreak:36--88). \nolinkurl{UpperTheory.V.Alg.M.GradedPrimePointLifting.idJ} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/ExistsNotInP.lean}\allowbreak:93--113). \nolinkurl{UpperTheory.V.Alg.M.zp_holds} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/ExistsNotInP.lean}\allowbreak:176--219).\par}
+
+On the negative side, homogeneous $g^2\in H_-$ implies $g\in H_-$:
+the test for $(h g)^2$ is the square of the test for $h g$. Also $fg\in H_-$
+implies $g\in H_-$ by cancellation of the surviving section $[f]^-_1$.
+For $g\in A_2$ one has $fg\in D\subset H_-$, so $A_2\subset H_-$.
+For any positive weight $j$, $g^2\in A_{2j}=(A_2)^j\subset H_-$,
+giving $g\in H_-$. If $v\in A_{-2}$ has $[v]^-_1\in P$, then for every
+complementary $h$ the identity
+$[f]^-_1[hv]^-_r=[fh]^-_r[v]^-_1$ puts $[hv]^-_r$ in $P$.
+This includes the listed $G_i$ and all $F_i^2$, hence all $F_i$.
+The positive equations and the $Z_i$ are already in $H_-$. Thus $I\subset H_-$.
+\par{\footnotesize \nolinkurl{UpperTheory.V.Alg.M.zm_abs} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/ZmOfHom.lean}\allowbreak:36--88). \nolinkurl{UpperTheory.V.Alg.M.zm_holds} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/ZmOfHom.lean}\allowbreak:163--298).\par}
+
+On the positive side, take $g$ of weight $-s<0$, and take $h$ so $hg$ has
+weight $2r$, $r\ge1$. Expand $g^2$ in $(A_{-2})^s$ and $h^2$ in
+$(A_2)^{2r+s}$. In every product contributing to $(hg)^2$, contract one
+negative factor and one positive factor into $D\subset p$. Pair the remaining
+$s-1$ negative factors with positive ones to get coefficients in $B$.
+The remaining $2r$ positive factors give a legitimate section on this axis.
+Hence $([hg]^+_r)^2\in P$, giving $[hg]^+_r\in P$. Thus every negative
+weight lies in $H_+$. A listed $E'_i$ of weight two is killed by its section,
+since the complementary coefficient has even nonnegative weight. For $E_i$ of
+weight one, square $hE_i$ and use the listed section of $E_i^2$. Together
+with $Z_i\in p$ these tests place $I$ in $H_+$.
+\par{\footnotesize \nolinkurl{UpperTheory.V.Alg.M.GradedPrimePointLifting.inP_neg} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/ExistsNotInP.lean}\allowbreak:118--141). \nolinkurl{UpperTheory.V.Alg.M.GradedPrimePointLifting.neg_mem_idJ} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/ExistsNotInP.lean}\allowbreak:142--153). \nolinkurl{UpperTheory.V.Alg.M.GradedPrimePointLifting.one_mem_idJ} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/ExistsNotInP.lean}\allowbreak:163--174). \nolinkurl{UpperTheory.V.Alg.M.zp_holds} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/ExistsNotInP.lean}\allowbreak:201--233).\par}
+
+The set of $bf^n$ with $b\notin p$ is multiplicatively closed and disjoint from
+$H_\pm$. A prime $P'$ of $A$ above $H_\pm$ disjoint from this set contracts
+to $p$ and omits $f$. Writing $k=\operatorname{Frac}(B/p)$, the nonzero
+ring $K\otimes_k\operatorname{Frac}(A/P')$ has a prime. Its inverse image
+in $K\otimes_B A$ contracts to $P'$ since nonzero elements of $A/P'$ become
+units in this tensor product of fields. In the finite type $K$-algebra $K\otimes_B A$,
+this prime is the intersection of the maximals above it. At least one omits $f$,
+and its residue field is $K$ by the weak Nullstellensatz. We get two points
+$\xi_-,\xi_+$ on $V(I)$ with restriction $\sigma$. Each kills the opposite
+weights and is nonzero on its chosen $f$.
+\par{\footnotesize \nolinkurl{UpperTheory.V.Alg.M.ns_holds} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/NsPoint.lean}\allowbreak:11--107). \nolinkurl{UpperTheory.V.Alg.M.zm_holds} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/ZmOfHom.lean}\allowbreak:163--298). \nolinkurl{UpperTheory.V.Alg.M.zp_holds} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/ExistsNotInP.lean}\allowbreak:201--233).\par}
+
+A third point is $\xi_0(a)=\sigma(\operatorname{pr}_0(a))$. It is multiplicative:
+for a generator in weight $\pm2$ the opposite-weight product has value zero by $D$,
+and for weight $\pm1$ its square has value zero by $D$. The weight-zero generators
+act by scalars. Induction on the generating algebra gives multiplicativity on all of $A$.
+It lies on $V(I)$, kills all nonzero weights and restricts to $\sigma$.
+If $\xi_0=x_K$, the cotangent spanning hypotheses show $\xi_-$ vanishes on
+$A_{-1}$: the equations $F_i$ vanish, and in a product of two augmentation-ideal
+terms of weights summing to $-1$ one weight is nonnegative, where $\xi_-$ vanishes
+on the augmentation ideal. Apply the same argument to $G_i$ in weight $-2$.
+The only new pair is $(-1,-1)$, already killed. This contradicts survival in
+weight $-2$. If $\xi_0\ne x_K$, M3 at $\xi_0$ excludes at least one of the
+two strict signs over its restriction, contradicting the two points just constructed.
+Thus every relevant prime containing the sections, the $Z_i$, and $DR$ contains
+$\mathfrak m_BR$.
+\par{\footnotesize \nolinkurl{UpperTheory.V.Alg.M.fix_holds} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/FixHolds.lean}\allowbreak:6--128). \nolinkurl{UpperTheory.V.Alg.M.ct_holds} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/XProjZero.lean}\allowbreak:81--113). \nolinkurl{UpperTheory.V.Alg.M.zii_holds} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/SameDegreeZeroOfRestriction.lean}\allowbreak:15--42).\par}
+
+\paragraph{From support to a common power.}
+Let $J$ contain the $Z_i$, and $L=J+(\text{listed sections},a)$.
+To test the radical, take \emph{every} prime $P\supset L$.
+If $P$ contains $\mathrm{Irr}$ or $\mathfrak m_BR$, then it contains their product.
+In the remaining horizontal, relevant case, if $D\not\subset p$, some
+$u\in A_{-2},v\in A_2$ have $\sigma(uv)\ne0$. There is a lift
+$\xi\in V(I)$ of $\sigma$: the ideal $I+pA$ has degree-zero part in $p$
+by homogeneity of $I$, so the point construction above applies with $f=1$.
+Then $\xi(u)\xi(v)\ne0$, and the two-sided clause of M5 forces
+$\xi(a)\ne0$, whereas $a\in p$. Therefore $D\subset p$ and the
+three-point argument applies. This proves
+$\mathfrak m_BR\,\mathrm{Irr}\subseteq\sqrt L$. For finitely many generators
+$t_1,\ldots,t_s$ of this product, choose $e_j\ge1$ with $t_j^{e_j}\in L$.
+Every monomial of total exponent $1+\sum_j(e_j-1)$ has some exponent at
+least $e_j$, so the corresponding \emph{single} ideal power is in $L$.
+Finite generation follows from that of $\mathfrak m_B$ and of the axis
+modules in the standard multigrading.
+\par{\footnotesize \nolinkurl{UpperTheory.V.Alg.M.tsp_holds} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/TspHolds.lean}\allowbreak:7--77). \nolinkurl{UpperTheory.V.Alg.M.admissibility_holds} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/AdmissibilityHolds.lean}\allowbreak:12--77).\par}
+
+For homogeneous $J$ containing all the listed sections and $Z_i$, put
+$M=R/J$. More generally, if all relevant primes above $J+I'R$ contain $I_0 R$
+for base ideals $I_0,I'$, the same proof gives
+$(I_0R\,\mathrm{Irr})^n\subset J+I'R$. For all coordinatewise large degrees
+$d$, $M_d\subset\mathrm{Irr}^n M$ by standard generation. Multiplying by
+$I_0^n$ and taking the degree-$d$ component gives $I_0^n M_d\subset I'M_d$.
+Use first $(I_0,I')=(I\cap B,0)$ and then $(\mathfrak m_B,D)$.
+The first containment gives $B/\operatorname{Ann}_B M_d$ finite over $O$:
+its quotient by the image of $I\cap B$ is finite by M2, and the image is a
+finitely generated nilpotent ideal, whose successive powers have finite
+filtration quotients over that finite ring. At $p=\ker\sigma$ the first
+containment kills $(M_d)_p$ if some $b\in I\cap B$ is invertible there.
+If $D\subset p$, an $O$-uniformizer belongs to $\mathfrak m_B$ and is a unit
+in $B_p$ because $O$ embeds in $K$. The second containment gives
+$(M_d)_p=D_p(M_d)_p$, hence $(M_d)_p=0$ by finite generation and Nakayama.
+Both assertions hold on the intersection of the two eventual degree ranges.
+\par{\footnotesize \nolinkurl{power_ideal_kills_graded_pieces} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/EventuallyMQGrFiniteAnnihilator.lean}\allowbreak:19--34). \nolinkurl{UpperTheory.V.Alg.M.kill_holds} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/KillHolds.lean}\allowbreak:25--64). \nolinkurl{UpperTheory.V.Alg.M.eventually_mQ_gr_finite_annihilator} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/EventuallyMQGrFiniteAnnihilator.lean}\allowbreak:36--123).\par}
+
+\paragraph{Z1.4. The abstract inequality and the arithmetic application.}
+\begin{theorem}[Graded cotangent length]\label{thm:P-r5-lemma-m}
+\lean{UpperTheory.V.Alg.M.main_holds}
+Let $O$ be a complete DVR of characteristic zero, $K$ an algebraically
+closed extension of its fraction field, and $v:K\to\mathbb R$ additive on
+products of nonzero elements, satisfying $v(u+w)\geq\min(v(u),v(w))$
+when $u,w,u+w\ne0$ and agreeing with the normalized DVR order on
+$O\setminus\{0\}$. Let $A=\bigoplus_j A_j$ be a commutative
+$O$-algebra with an $O$-point $x$. Suppose $A_0$ is Noetherian local,
+complete for its maximal ideal, with local structure map inducing a
+surjection of residue fields. Suppose $A$ is generated over $A_0$ by
+finitely many homogeneous elements of weights $-2,-1,1,2$, and $x$
+vanishes on every nonzero weight. Let $I$ be generated by the five
+lists $F,G,E,E',Z$ in weights $-1,-2,1,2,0$ of respective sizes
+$r+1,s,r',s',m$, with $x(Z_i)=0$. Write
+$P=\{b:\exists\,0\ne c\in O,\ cb\in(\ker x)^2\}$ and
+$L_j$ for the image of $A_j\cap\ker x$ in $A/P$. Assume the following.
+\begin{enumerate}
+\item $r\ge1$. There is a graded power-series chart over
+$\operatorname{Frac}O$ with constant term $x$ and respectively
+$r,s,r'+1,s'+1,m$ variables in the five weights, none elsewhere.
+Each variable's linear coefficient can be isolated by the image of
+some element of $A$. For an element of $\ker x$, vanishing of all
+linear coefficients implies membership in $P$. The images of $F,G,Z$
+span $L_{-1},L_{-2},L_0$ respectively after inverting $O\setminus\{0\}$.
+\item The image of $A_0$ in $A/I$ is finite as an $O$-module.
+\item For a $K$-point of $A/I$ vanishing on both signs and distinct
+from $x_K$, at least one of the two strictly one-sided signs is absent
+among points of $A/I$ with its restriction to $A_0$.
+\item At every point of $A/I$ nonzero on elements of each sign
+the space of $O$-point derivations killing $I$ has dimension at most one.
+\item $a\in A_0$, $x(a)=0$, and $\xi(a)\ne0$ at each such two-sided point.
+\end{enumerate}
+There is a finite set $T$ of two-sided points of $A/I$ meeting every
+two-sided $K^\times$-orbit. The length
+$L=\operatorname{length}_O(L_{-1}/\langle \bar F_i\rangle_O)$ is finite.
+For \emph{every} such cover,
+\[
+                         L\ \leq\ 2\sum_{\xi\in T}v(\xi(a)).
+\]
+In particular the empty cover gives $L=0$ when there are no two-sided points.
+\end{theorem}
+The source declarations are \nolinkurl{IsNVal}, \nolinkurl{IsWRing}, \nolinkurl{Covers},
+\nolinkurl{Eqns}, \nolinkurl{M1}--\nolinkurl{M5} and \nolinkurl{LemmaM}
+(\path{Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/OrbitVanishingLocal.lean:9--118}),
+\nolinkurl{IsCO}, \nolinkurl{satSq}, \nolinkurl{cotLat}, \nolinkurl{SpansCot} and \nolinkurl{cotLen}
+(\path{Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/ResMapBijective.lean:9--15},
+\path{Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/ResMapBijective.lean:245--268}), and \nolinkurl{main_holds}
+(\path{Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/MainCotSpan.lean:32--70}).
+The lower bound on an injected module is a separate theorem with a finite
+residue field hypothesis, \nolinkurl{UpperTheory.V.Alg.M.mprime_holds}
+(\path{Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/Mprime.lean:38--80}).
+
+\paragraph{Which ring is represented.}
+The local ring $U$ represents \emph{unconstrained} lifts of the specified
+residual representation with fixed multiplier. To see where the
+representability result enters, first quotient the group by the closed
+normal subgroup generated by the elements required to act trivially.
+On that quotient the residual homomorphism embeds in matrices indexed by
+$\{0,1,2\}\sqcup\{0,1,2\}$. Given the finite-character condition
+$\Phi_\ell$, the matrix lift has a universal complete local ring.
+In that ring take the ideal generated by the entries of the equations
+for the embedded unitary group, with the already fixed component
+$\eta(g)$. The equations commute with base change. A map factors through
+this ideal exactly when every matrix lies in the specified component.
+The embedding is injective on that component, so recovery of the unitary
+lift and its uniqueness follow. In the local problem the killed set
+is empty and $\Phi_\ell$ comes from the local part of \nolinkurl{CohInp}.
+For the global problem the quotient kills the specified inertia elements.
+Global finiteness supplies $\Phi_\ell$ after allowing the finitely many
+ramified places and those dividing $\ell N$. The local ideal
+$D.\mathrm{loc}.I_t(U)$ is then imposed on the restriction, together
+with the marked normalization. The global model uses the resulting
+ring, an auxiliary framed ring, the local presentation and
+\nolinkurl{boxPres}. \textbf{Proved in Lean, not reproduced} (A):
+representability of unrestricted matrix lifts under $\Phi_\ell$, in
+\nolinkurl{UpperTheory.V.Alg.univ_lift}
+(\path{Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/UnivLift.lean:488--509}).
+For the reduction and its three uses see
+\nolinkurl{UpperTheory.V.U3.exists_univ}
+(\path{Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/UnivEx.lean:27--91}, \path{Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/UnivEx.lean:342--412}),
+\nolinkurl{exists_uLoc} (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/ULocEx.lean:24--51}),
+\nolinkurl{exists_ring} (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/RingEx.lean:109--153}), and
+\nolinkurl{exists_model} (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/ModelEx.lean:156--178}).
+
+\paragraph{The obstruction bound in the framed presentation.}
+In the relative power-series presentation take $K_1$ to be the kernel
+and $K_0$ the extended ideal of relations from the local base.
+Pass to the intermediate quotient by $K_0+\mathfrak m K_1$.
+Its surjection to the framed ring has kernel annihilated by the maximal
+ideal. The homogeneous minimal relative relations give a residue-field
+basis of that kernel: they span by the presentation, and a linear
+relation would contradict their minimality modulo $K_0+\mathfrak m K_1$.
+For each weight the lifting obstruction of the universal framed object
+gives a class for each such basis element. A vanishing linear combination
+would allow a lift through the corresponding one-dimensional quotient
+of the small extension. Universality gives a section there. The relation
+detection calculation forces every coefficient of that combination into
+the maximal ideal, hence zero in the residue field. Thus the number
+of minimal relations in that weight is at most the dimension of the
+framed obstruction space. Zero relations pad the list to that dimension;
+outside the finite set of differences of matrix weights the obstruction
+space is zero. For the arithmetic specialization the allowed away-from-$\ell$
+inertia quotients have index prime to $\ell$, and the global count
+in each weight uses the actual complex-conjugation eigenspace dimension.
+\textbf{Proved in Lean, not reproduced} (A): construction of the
+framed universal ring, its relative tangent presentation, and the
+obstruction-class lifting criterion used in this argument.
+See \nolinkurl{UpperTheory.V.Alg.lemmaP}
+(\path{Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/LemmaP.lean:256--294}, \path{Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/LemmaP.lean:295--424})
+and \nolinkurl{UpperTheory.V.U3.boxPres}
+(\path{Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/BoxPresOf.lean:63--147}, \path{Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/BoxPresOf.lean:149--164}).
+
+\paragraph{Extending a point on the graded algebra.}
+Write $W$ for the weighted presentation, $z_s$ for its variables,
+$\xi$ for the point and $\pi$ for a uniformizer. The image of degree
+zero is finite over $O$ by M2. For any nonconstant monomial of
+weight zero with nonzero value, its value has norm $<1$. Indeed if
+the inverse value were integral, reversing its monic equation would
+give a homogeneous degree-zero series with constant term one that is a
+unit even inside weight zero, but whose image under $\xi$ is zero.
+The strict-inequality alternative for the weights (\nolinkurl{carver}) now
+gives a torus twist for which all variable values $y_s$ have norm $<1$.
+Choose $e_s$ so $y_s^{e_s}/\pi$ is integral. Adjoin these elements,
+the $y_s$, and finite module generators for the degree-zero image.
+The resulting algebra $B$ is finite over $O$. For
+$J=\sqrt{\pi B}$ one has $J^N\subseteq\pi B$ for some $N$, so $B$ is
+$J$-adically complete and $y_s\in J$. Evaluation of power series in $B$
+is defined. To compare it with the \emph{prescribed} degree-zero values,
+induct modulo $J^n$. After subtracting its constant term, a series of
+weight zero is a finite sum of nonconstant weight-zero monomials times
+weight-zero series (take minimal exponents in the componentwise order).
+Each monomial contributes a factor in $J$, promoting agreement modulo
+$J^n$ to agreement modulo $J^{n+1}$. The initial prescribed value belongs
+to $B$; separation gives equality. For a general homogeneous weight use
+the minimal monomials of that weight and the established degree-zero
+equality on their coefficients. The homogeneous presentation kernel,
+and then the homogeneous generators of the imposed ideal, vanish after
+evaluation. This gives the local point on the quotient in the orbit of
+$\xi$. See \nolinkurl{carver} (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/Carver.lean:135--178}),
+\nolinkurl{pf_nonint}, \nolinkurl{pf_step}, \nolinkurl{pf_agree}, \nolinkurl{pf_factor}
+and \nolinkurl{points_finite} (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/PointsFinite.lean:156--308},
+\path{Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/PointsFinite.lean:310--383}), and
+\nolinkurl{UpperTheory.exists_torus_twist_eq_localPoint_of_weightedPres}
+(\path{Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/ExistsTorusTwistEqLocalPointOfWeightedPres.lean:95--137}).
+
+\paragraph{Extending an actual point derivation.}
+At an integral local point $f$ of the quotient, package a derivation
+$D$ annihilating its equations as the algebra map
+$\tau(b)=f(b)+\epsilon D(b)$ on the graded algebra. Since $\tau$
+annihilates the graded ideal, M2 gives finite generation of
+$\tau(A_0)$ as an $O$-module, including the infinitesimal values.
+The local point is bounded on the entire ring by residue surjectivity,
+and strictly small on each variable. A dual number with integral scalar
+part is integral, since its difference from that part is square zero.
+Apply the preceding finite-algebra construction to $\tau(z_s)$:
+integrality of $\pi^{-1}\tau(z_s)^{e_s}$ follows from its scalar part.
+The weighted extension to this complete algebra agrees with $\tau$ on
+the whole graded algebra, by the degree-zero comparison modulo powers
+of $J$. Its scalar projection on the full power-series ring agrees
+with $f$: both are bounded, agree on the variables, and the image of a
+tail of total degree at least $n$ has norm at most $\rho^n$, where
+$\rho=\max_s|f(z_s)|<1$ (take $0$ for no variables). Its values on the
+generators of the quotient kernel are zero in \emph{both} components.
+It therefore descends to a dual-number point with scalar projection $f$
+on the whole quotient and prescribed second component $D$ on the graded
+algebra. See \nolinkurl{md_ext}, \nolinkurl{md_uniq}, \nolinkurl{md_main},
+\nolinkurl{UpperTheory.exists_dualNumber_point_of_pointDerivation_vanishing}
+(\path{Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/ExistsDualNumberPointOfPointDerivationVanishing.lean:27--135},
+\path{Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/ExistsDualNumberPointOfPointDerivationVanishing.lean:136--225})
+and \nolinkurl{UpperTheory.weightedPres_exists_algHom_extension_of_adicComplete}
+(\path{Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/WeightedPresExistsAlgHomExtensionOfAdicComplete.lean:119--246}).
+
+\paragraph{The two-sided dichotomy.}
+At a local point the marked scalar $\zeta$ differs from its base
+unit by an element of norm $<1$. Thus $\zeta\ne0$, and the diagonal
+marked difference has three distinct entries $\zeta,0,-\zeta$. A
+subspace stable under the representation on $\ker\eta$ is stable under
+this difference and hence under each of its three polynomial coordinate
+projectors. It is spanned by a subset $S$ of the three coordinate axes.
+If there is no proper nonzero such subspace this is type I. Otherwise
+write $Z_{ij}$ for vanishing of entry $(i,j)$ for every group element
+in $\ker\eta$. Stability forces $Z_{ij}$ for $j\in S$, $i\notin S$.
+The polarization interchanges $Z_{ij}$ and $Z_{2-j,2-i}$.
+For $S=\{0\},\{0,1\}$ this gives an upper triangular representation;
+for $S=\{2\},\{1,2\}$ it gives a lower triangular one. The remaining
+subsets $\{1\},\{0,2\}$ separate the middle axis from the outside
+pair. If the outside pair is irreducible this is type II. Otherwise
+its marked eigenvalues $\zeta,-\zeta$ are distinct, so the same
+projector argument gives a stable coordinate line in that pair and
+again a triangular representation. At a two-sided point both triangular
+possibilities are excluded by definition. This proves the classification
+used before applying the separate rigidity input in each case.
+See \nolinkurl{exists_coord_of_not_matIrr}, \nolinkurl{UpperTheory.V.U3.shape_cases}
+(\path{Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/ExistsCoordOfNotMatIrr.lean:8--123}) and
+\nolinkurl{UpperTheory.V.U3.twoPt_shape} (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/PtShape.lean:85--171}).
+
+\paragraph{Arithmetic hypotheses and where they are supplied.}
+\textbf{Hypothesis, discharged at the arithmetic assembly} (B):
+\nolinkurl{CohInp} gives local published theorems, normalized Poitou--Tate,
+global finiteness, global Euler characteristic, and the bounded
+input \nolinkurl{lemK}. The point-hypothesis constructor also takes
+\nolinkurl{KatoTwoW}, the two rigidity cases, a marked datum over a CM
+field, the comparison with $\mathbb C$, the automorphy and type-II
+hypotheses \nolinkurl{AutBAlt}, \nolinkurl{LemWAlt}, and a base point.
+In the actual use, \nolinkurl{SmallClassNumbers.corGK_of} constructs
+$\mathrm{CohInp}$ from \nolinkurl{cohInp_alt} and \nolinkurl{lemmaK_litN_alt}
+and supplies the displayed Kato and rigidity declarations under
+\nolinkurl{Af.HypothesesH'}. The theorem \nolinkurl{corGK} obtains the latter input from
+the published-hypotheses assembly. At the point-hypothesis constructor,
+\nolinkurl{tanCoc_isBK} supplies the finite local condition for each tangent
+(Z1.2); the nonpositive-weight theorem then gives a coboundary at the
+base. At a two-sided point the type-I branch uses the first rigidity
+input with its automorphy certificate. The type-II branch uses the
+second, the Kato input and the type-II automorphy certificate.
+See \nolinkurl{CohInp} (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/KatoUse.lean:19--26}),
+\nolinkurl{ptHyp_of_autB_of_lemW_of_isBase}
+(\path{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/FPtHypU.lean:15--40})
+and \nolinkurl{corGK_of}, \nolinkurl{corGK}
+(\path{Development/AutomorphicArithmetic/AutomorphicVarieties/SmallClassNumbers/CorGKOf.lean:10--25}).
+
+For the fixed-point character, reduce modulo the open unit balls
+$|u-1|<\delta$, $0<\delta\le1$. These quotient characters have open
+kernel and kill inertia. The field is totally complex, so the real-place
+condition in \nolinkurl{Kum.artKer} is vacuous. Thus the kernel of the Artin
+class map is in each quotient kernel. Raising to the class number puts
+each Galois element in that kernel. Intersecting the balls gives
+$\kappa(g)^h=1$; the prime-to-$\ell$ integer $h$ is a unit, so the
+principal unit $\kappa(g)$ is $1$. For a weight-zero cocycle the
+character is trivial on $G_K$. The local implication at $\ell$
+\emph{uses} \nolinkurl{Loc.z1fUnr} with $\mathrm{CohInp.loc}$, after descent
+to finite coefficients: the local coefficient representation is
+unramified, and the finite cocycle vanishes on inertia. Conjugating
+and using the given away-from-$\ell$ condition makes the restriction to
+$G_K$ an everywhere unramified additive character. Reduction modulo open
+additive balls gives the same Artin-kernel containment (complex
+conjugations have order two and an additive characteristic-zero
+target kills them). The finite class group annihilates the image,
+so the original additive character is zero. The negative-weight
+argument instead uses \nolinkurl{Loc.z1fChar} followed by \nolinkurl{X.soBar}
+with normalized Poitou--Tate, the two specified local inputs and
+$\mathrm{CohInp.lemK}$. See \nolinkurl{pt_fixed}
+(\path{Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/RootOfCharpoly.lean:126--225}), \nolinkurl{char_eq_one}
+(\path{Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/PowEqOneOfUnr.lean:37--129}), \nolinkurl{unr_zero},
+\nolinkurl{neg_case}, \nolinkurl{zero_case}, \nolinkurl{bloch_kato_nonpositive_weight}
+(\path{Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/BlochKatoNonpositiveWeight.lean:122--156},
+\path{Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/BlochKatoNonpositiveWeight.lean:194--297}),
+and \nolinkurl{Loc.z1fUnr} (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/ExistsIntBasis.lean:370}).
+
+\textbf{Proved in Lean, not reproduced} (A): the class-field input
+\nolinkurl{UpperTheory.V.Kum.artKer} states that the Artin kernel is
+contained in the kernel of an open-kernel abelian character trivial
+on inertia and complex conjugations, via the Hilbert class field
+(\path{Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/KummerTheory/ArtKer.lean:61--106}).
+On the period side \nolinkurl{UpperTheory.exists_crystalline_period_matrix_bcris_of_isCrys}
+produces, for a crystalline representation in a chosen basis,
+$M,M'\in\operatorname{Mat}_d(B_{\mathrm{cris}})$ with $MM'=1$ and
+$A\in\operatorname{Mat}_d(K_0)$ with unit determinant, satisfying
+$\varphi(M)=MA$ and $\rho(g)g(M)=M$. The proof invokes
+\nolinkurl{tiedP}, fraction-field invariants and the line-unit result.
+The upstream published package is identified by
+\nolinkurl{GlobalTheory.T.fontaineBcrisBasicTheorems_proof}
+(\path{Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/ExistsCrystallinePeriodMatrixBcrisOfIsCrys.lean:97--111},
+\path{Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/FiniteCohomology.lean:84},
+\path{Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/FontaineBcrisBasicTheoremsProofStatement.lean:5--6}).
+These are suppliers for the arithmetic specialization. The abstract
+length theorem quantifies over the ring, its equations and M1--M5 above.
+

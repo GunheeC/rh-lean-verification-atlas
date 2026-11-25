@@ -1,0 +1,108 @@
+{
+  "id": "Z1.4",
+  "title": "Graded cotangent length",
+  "track": {
+    "primary": "galois",
+    "secondary": []
+  },
+  "statement": "In the marked graded model satisfying M1--M5, any finite cover $T$ of two-sided point orbits gives $L\\le 2\\sum_{\\xi\\in T}v(\\xi(a))$ for the fixed element $a$ and the length $L$ of the degree $-1$ cotangent quotient. The integral normalized injection and fixed-weight lifts give the opposite comparison $\\mathrm{length}(V)\\le L$ for the specified module.",
+  "assumptions": [
+    "source:blueprint_v13"
+  ],
+  "hypothesis_details": [
+    "The marked graded model satisfies M1–M5 and the point set covers two-sided orbits.",
+    "For the opposite inequality use the normalized injection and fixed-weight derivation lifts."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.Alg.M.main_holds",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/MainCotSpan.lean",
+      "line0": 32,
+      "line1": 70,
+      "sha256": "4c2a75e2086feb11bb55fae623d984ee027998779f208ce391e9fe21dc8c17f8",
+      "dominated": 8903,
+      "graph": "allChi",
+      "role": "statement"
+    },
+    {
+      "name": "UpperTheory.V.Alg.M.mprime_holds",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/Mprime.lean",
+      "line0": 38,
+      "line1": 80,
+      "sha256": "fc594b0a599a25f0fa093d8b84c44602c5cc37e4adf0ec73c2af9d87b5a64a19",
+      "dominated": 207,
+      "graph": "allChi",
+      "role": "statement"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/blueprint/Z1.4.tex",
+      "section": "sec:P-z14-full, thm:P-r5-lemma-m",
+      "pages": []
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "sec:P-z14-full",
+      "pages": [
+        311,
+        311
+      ],
+      "printed_page": 286,
+      "scope": "First page of this named destination."
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "thm:P-r5-lemma-m",
+      "pages": [
+        322,
+        322
+      ],
+      "printed_page": 297,
+      "scope": "First page of this named destination."
+    }
+  ],
+  "status": "Full",
+  "grade": "L1",
+  "reviews": [
+    "reviews/R4_review_Z1Z3.md",
+    "reviews/R20_review.md"
+  ],
+  "prerequisites": [],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "blueprint_members": [
+    "Z1.4"
+  ],
+  "representative": "UpperTheory.V.Alg.M.main_holds",
+  "statement_declarations": [
+    "UpperTheory.V.Alg.M.main_holds",
+    "UpperTheory.V.Alg.M.mprime_holds"
+  ],
+  "grade_scope": "Named statement declarations with the hypotheses above. Chart supplier records have their own review scopes.",
+  "confirmation_basis": "Minimum across the statement declarations, using registry rows for the blueprint assignments listed here. Reviews of other expositions of a shared declaration are included as context.",
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "slug": "graded-cotangent-length",
+  "aliases": [
+    "Z1.4 Graded cotangent length"
+  ],
+  "background": [
+    "Graded cotangent spaces",
+    "Lengths over discrete valuation rings"
+  ],
+  "hypothesis_source": {
+    "document": "blueprint_v13",
+    "section": "sec:P-z14-full",
+    "pages": [
+      311,
+      311
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "summary": "Under the graded-model hypotheses, the degree-minus-one cotangent length lies above the specified module length and below twice a finite sum of orbit valuations. The two comparisons turn orbit evaluations into an upper bound for that module."
+}

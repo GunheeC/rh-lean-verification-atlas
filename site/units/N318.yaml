@@ -1,0 +1,95 @@
+{
+  "id": "N318",
+  "title": "Joined estimates at the square top term",
+  "track": {
+    "primary": "theta",
+    "secondary": [
+      "local"
+    ]
+  },
+  "statement": "Real Howe duality, local theta, the Hecke functional equation, toric and zeta denominator bounds, lattice norm transport, reflection, equality of theta integrals and local matching imply DenSum, ThbSt, OneSqSt, BotSmall, BotNe, FieldDat, TorEx, DenEx, BotEx, LNe, TriEx and Tower simultaneously.",
+  "assumptions": [
+    "source:blueprint_v13"
+  ],
+  "hypothesis_details": [
+    "Assume real Howe duality, the local theta input and the Hecke functional equation.",
+    "Use the toric and zeta denominator bounds, norm transport and reflection.",
+    "Require equality of the indicated theta integrals and matching of the local models."
+  ],
+  "lean": [
+    {
+      "name": "GlobalTheory.SqTop.square_top_term_joined_estimates",
+      "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/SquareTopTermJoinedEstimates.lean",
+      "line0": 13,
+      "line1": 35,
+      "sha256": "e5ee6f6b113748580c186ad01763e7860d8c21219e52bbb763dadb6cc873a098",
+      "dominated": 34270,
+      "graph": "allChi",
+      "role": "statement"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/blueprint/N318.tex",
+      "section": "r6:N318",
+      "pages": []
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r6:N318",
+      "pages": [
+        566,
+        566
+      ],
+      "printed_page": 541,
+      "scope": "First page of this named destination."
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [
+    "D044"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "For the joined estimate, match the global Fock evaluation and its split and inert factors with proportional images of the fixed finite vectors and the normalized bottom class sum."
+  ],
+  "last_checked": "2026-11-24",
+  "blueprint_members": [
+    "N318"
+  ],
+  "representative": "GlobalTheory.SqTop.square_top_term_joined_estimates",
+  "statement_declarations": [
+    "GlobalTheory.SqTop.square_top_term_joined_estimates"
+  ],
+  "grade_scope": "Named statement declarations with the hypotheses above. Chart supplier records have their own review scopes.",
+  "confirmation_basis": "Minimum across the statement declarations, using registry rows for the blueprint assignments listed here. Reviews of other expositions of a shared declaration are included as context.",
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "slug": "joined-estimates-at-the-square-top-term",
+  "aliases": [
+    "square_top_term_joined_estimates",
+    "N318 Joined estimates at the square top term"
+  ],
+  "background": [
+    "Real Howe duality",
+    "Local zeta integrals",
+    "Fock spaces"
+  ],
+  "hypothesis_source": {
+    "document": "blueprint_v13",
+    "section": "r6:N318",
+    "pages": [
+      566,
+      566
+    ]
+  },
+  "question_sources": [
+    "data/status_ledger.json"
+  ],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "D044": "graph"
+  },
+  "summary": "With the listed local theta, functional equation, denominator, matching and norm-transport inputs, the square-model comparison supplies all twelve stated conclusions simultaneously. The joint conclusion matters when the denominator, bottom term, nonvanishing and tower conditions must be used for the same comparison."
+}

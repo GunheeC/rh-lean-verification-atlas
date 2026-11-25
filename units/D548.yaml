@@ -1,0 +1,122 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D548",
+  "title": "Character shares on the retained cosets",
+  "track": {
+    "primary": "analytic",
+    "secondary": []
+  },
+  "statement": "For x>0, a host explicit-formula record and compatible functional give the zero character in the kept set, band membership and normalization at sgc0, at most 4o band characters, the TT character-share error at most 4o x\\textasciicircum{}(\\ensuremath{-}1+epsilon)|TT|, the fixed bound on nonzero kept characters, and C log x on the others.\n\\[\n\\operatorname{CharsA}\\bigl(\\ell,A_0,K_{\\rm kept},TT,(3o+1)^{-1},4o,K_o,C,\\varepsilon,x\\bigr).\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Use a positive scale, level, axial host and test set.",
+    "Assume the explicit-formula record and a compatible additive-character functional at this host."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.Comparison₂.charsA",
+      "file": "Development/AutomorphicArithmetic/PrimitiveCosets/charsA.lean",
+      "line0": 80,
+      "line1": 125,
+      "sha256": "2e3825540c0f207d1382c9bb8f7d4a9c0dd8c08b01dbe9ec6c2758ad44ac77c4",
+      "dominated": 203,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v5",
+      "section": "A2 · Character-share conditions",
+      "pages": [
+        19,
+        20
+      ],
+      "review_status": "pending_review",
+      "coverage": "Revised paper v5 exposition, pending independent review. The PDF link opens the release attachment after publication."
+    },
+    {
+      "document": "notes/units/D548_v4.md",
+      "section": "D548 · Kept characters and residue-class shares",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-3 written exposition, pending independent review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "G.579 (decomp:D548)",
+      "pages": [
+        302,
+        302
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D548.tex",
+      "section": "decomp:D548",
+      "pages": []
+    },
+    {
+      "document": "paper2_v4",
+      "section": "Mechanism, §3",
+      "pages": [
+        16,
+        17
+      ],
+      "coverage": "Paper v4, pending independent review."
+    }
+  ],
+  "status": "Full",
+  "grade": "L1",
+  "reviews": [
+    "reviews/DB3_review_A.md"
+  ],
+  "prerequisites": [],
+  "size_pages": 2,
+  "open_questions": [
+    "How do the subgroup-band multiplicities yield the stated share bound for every retained nontrivial character?"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [
+    {
+      "review": "reviews/DB3_review_A.md",
+      "lines": [
+        118,
+        118
+      ],
+      "grade": "L1",
+      "verdict": "CONFIRMED (light check)",
+      "scope": "For a positive scale, EAtH and compatibility imply CharsA with the specified kept subset, factors 1/(3o+1) and 4o, and the listed character bounds. Statement comparison only."
+    }
+  ],
+  "paper_id": "D548",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "character-shares-on-the-retained-cosets",
+  "aliases": [
+    "charsA",
+    "D548 Character shares on the retained cosets"
+  ],
+  "background": [
+    "Finite Fourier analysis",
+    "Character shares"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.579 (decomp:D548)",
+    "pages": [
+      302,
+      302
+    ]
+  },
+  "question_sources": [
+    "reviews/R23_review.md"
+  ],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "review_status": "pending_review",
+  "summary": "The host character data identify the kept characters inside a band of bounded size, control their average on the test set, and give separate derivative bounds for kept and omitted characters. These are the hypotheses needed to run the finite character comparison at the selected scale."
+}

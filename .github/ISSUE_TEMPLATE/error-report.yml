@@ -1,0 +1,42 @@
+name: "Report an error or a difference in hypotheses"
+description: "Identify a specific disputed claim or conflicting sources."
+body:
+  - type: markdown
+    attributes:
+      value: "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved"
+  - type: textarea
+    id: unit
+    attributes:
+      label: "First affected unit or declaration"
+    validations:
+      required: true
+  - type: textarea
+    id: where
+    attributes:
+      label: "Edition hashes, pages or source lines"
+    validations:
+      required: true
+  - type: textarea
+    id: claim
+    attributes:
+      label: "Claim and its explicit hypotheses"
+    validations:
+      required: true
+  - type: textarea
+    id: finding
+    attributes:
+      label: "Discrepancy, failed step or counterexample"
+    validations:
+      required: true
+  - type: textarea
+    id: extent
+    attributes:
+      label: "Effect on this conclusion and any uncertainty"
+    validations:
+      required: true
+  - type: textarea
+    id: assistance
+    attributes:
+      label: "AI assistance and what the submitting person personally checked"
+    validations:
+      required: true

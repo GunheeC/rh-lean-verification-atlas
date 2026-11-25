@@ -1,0 +1,424 @@
+{
+  "lean_comparison_commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "sources": [
+    {
+      "id": "lean-repository",
+      "title": "Lean source mirror",
+      "author_or_provider": "leanprover-community/riemann-hypothesis",
+      "url": "https://github.com/leanprover-community/riemann-hypothesis",
+      "pinned_url": "https://github.com/leanprover-community/riemann-hypothesis/tree/40e56bab026552e089d7afcfeff08d2defb9c005",
+      "revision": "40e56bab026552e089d7afcfeff08d2defb9c005",
+      "version_kind": "git_commit",
+      "license": {
+        "status": "no_redistribution_license_verified",
+        "spdx": null,
+        "scope": "No licence file found at the pinned commit. The matching original tar archive contains no file named LICENSE, LICENCE or COPYING.",
+        "url": "https://github.com/leanprover-community/riemann-hypothesis/tree/40e56bab026552e089d7afcfeff08d2defb9c005"
+      },
+      "scope": "Immutable mirror of the author’s original Lean source. The src directory contains the five public conclusions and their dependencies. The archive supplies the same root tree.",
+      "retrieved_on": "2026-11-25",
+      "timestamp": "2026-11-20T14:36:09Z",
+      "source_blob_prefix": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/",
+      "root_git_tree": "e517b335d21898fd2506ad538a1e1775c0aaa4e4",
+      "extra_reader_files": [
+        "Main.lean",
+        "Statements.lean"
+      ],
+      "reader_urls": {
+        "main": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Main.lean",
+        "statements": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Statements.lean",
+        "commit": "https://github.com/leanprover-community/riemann-hypothesis/commit/40e56bab026552e089d7afcfeff08d2defb9c005"
+      },
+      "local_evidence": [
+        "sources/lean-goals.md",
+        "data/pins.json"
+      ],
+      "short_title": "Lean source mirror",
+      "format": "Lean 4 project in Git",
+      "reader_scope": "The five public declarations, their types and the source files to which the atlas pins its units.",
+      "reader_need": "Open the exact Lean source behind a declaration",
+      "atlas_mapping": {
+        "target": "data/pins.json",
+        "description": "Reference source for every unit."
+      },
+      "attribution_evidence": "https://github.com/leanprover-community/riemann-hypothesis/tree/40e56bab026552e089d7afcfeff08d2defb9c005"
+    },
+    {
+      "id": "lean-archive",
+      "title": "Original Lean source archive",
+      "author_or_provider": "Levent Alpöge",
+      "url": "https://alpo.ge/",
+      "pinned_url": "https://alpo.ge/lean.tar.gz.part01",
+      "revision": "9631b4f020199e580ba86178cb56c6e9b09f690c2369a80dc4334aa93f49c7fc",
+      "version_kind": "sha256_of_joined_archive",
+      "license": {
+        "status": "no_redistribution_license_verified",
+        "spdx": null,
+        "scope": "No licence file found at the pinned commit. The matching original tar archive contains no file named LICENSE, LICENCE or COPYING.",
+        "url": "https://alpo.ge/lean.tar.gz.part01"
+      },
+      "scope": "The 14 numbered parts, concatenated in order, form the original compressed source archive. Its extracted project tree matches the source mirror at the pinned commit.",
+      "retrieved_on": "2026-11-25",
+      "timestamp": null,
+      "date_released": "2026-11-20",
+      "archive_parts": [
+        "https://alpo.ge/lean.tar.gz.part01",
+        "https://alpo.ge/lean.tar.gz.part02",
+        "https://alpo.ge/lean.tar.gz.part03",
+        "https://alpo.ge/lean.tar.gz.part04",
+        "https://alpo.ge/lean.tar.gz.part05",
+        "https://alpo.ge/lean.tar.gz.part06",
+        "https://alpo.ge/lean.tar.gz.part07",
+        "https://alpo.ge/lean.tar.gz.part08",
+        "https://alpo.ge/lean.tar.gz.part09",
+        "https://alpo.ge/lean.tar.gz.part10",
+        "https://alpo.ge/lean.tar.gz.part11",
+        "https://alpo.ge/lean.tar.gz.part12",
+        "https://alpo.ge/lean.tar.gz.part13",
+        "https://alpo.ge/lean.tar.gz.part14"
+      ],
+      "root_git_tree": "e517b335d21898fd2506ad538a1e1775c0aaa4e4",
+      "matching_git_commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+      "verified_local_record": "Atlas project archive",
+      "short_title": "Original Lean distribution",
+      "format": "14 numbered gzip-file parts",
+      "reader_scope": "The submitted source and build configuration. Joining the original parts yields the archive whose extracted root tree matches the Git mirror.",
+      "reader_need": "Reassemble the original submission",
+      "atlas_mapping": {
+        "target": "data/pins.json",
+        "description": "The archive checksum and root tree identify the baseline for every source span."
+      },
+      "attribution_evidence": "https://github.com/jimjamzola/RH-Alpoge-Reconstruction/blob/aa9c86bf2a7d29b08575641fecea19a2a603e87c/CITATION.cff#L40-L47"
+    },
+    {
+      "id": "mit-audit",
+      "author_or_provider": "Andrew Sutherland (MIT)",
+      "title": "RH Lean proof: verification files",
+      "url": "https://math.mit.edu/~drew/grh/",
+      "pinned_url": "https://math.mit.edu/~drew/grh/",
+      "revision": "51d1d86aa983ffa794708767f07b90e7abe4ff0f9ef340936b8c0fc693b6728a",
+      "version_kind": "sha256_of_retrieved_bytes",
+      "timestamp": null,
+      "license": {
+        "status": "no_redistribution_license_verified",
+        "spdx": null,
+        "scope": "Rights unknown. No external text distributed.",
+        "url": "https://math.mit.edu/~drew/grh/"
+      },
+      "scope": "Formal verification and resource measurements. Date printed on audit page: 24 November 2026.",
+      "retrieved_on": "2026-11-25",
+      "displayed_update": "2026-11-24T05:25:00Z",
+      "local_evidence": [
+        "sources/kernel-audit.md"
+      ],
+      "reader_urls": {
+        "checker_summary": "https://math.mit.edu/~drew/grh/",
+        "axiom_log": "https://math.mit.edu/~drew/grh/audit.log"
+      },
+      "short_title": "MIT verification record",
+      "format": "Dated web report and logs",
+      "reader_scope": "Build and kernel replay results, export comparisons and checker logs for the submission.",
+      "reader_need": "Look up which checker ran on which artifact",
+      "atlas_mapping": {
+        "target": "sources/kernel-audit.md",
+        "description": "The status page cites the dated checker outcomes."
+      },
+      "attribution_evidence": "https://math.mit.edu/~drew/grh/"
+    },
+    {
+      "id": "adriazola",
+      "author_or_provider": "Jimmie Adriazola",
+      "title": "RH-Alpoge-Reconstruction",
+      "url": "https://github.com/jimjamzola/RH-Alpoge-Reconstruction",
+      "pinned_url": "https://github.com/jimjamzola/RH-Alpoge-Reconstruction/tree/aa9c86bf2a7d29b08575641fecea19a2a603e87c",
+      "revision": "aa9c86bf2a7d29b08575641fecea19a2a603e87c",
+      "version_kind": "git_commit",
+      "timestamp": "2026-11-24T16:27:32Z",
+      "license": {
+        "status": "verified_at_repository_pin",
+        "spdx": "CC-BY-4.0",
+        "scope": "Repository root license. Third-party material may have separate terms.",
+        "url": "https://github.com/jimjamzola/RH-Alpoge-Reconstruction/blob/aa9c86bf2a7d29b08575641fecea19a2a603e87c/LICENSE"
+      },
+      "scope": "Manuscript and numbered hypotheses, indexed for navigation.",
+      "retrieved_on": "2026-11-25",
+      "edition_evidence": {
+        "pages": 287,
+        "printed_date": "2026-11-24",
+        "pdf_sha256": "8ced945d3a2fcf7fb7a2a760db6859416cd8db2ed11617d8bc28b43b82ed3a94",
+        "pdf_url": "https://github.com/jimjamzola/RH-Alpoge-Reconstruction/blob/aa9c86bf2a7d29b08575641fecea19a2a603e87c/manuscript/main.pdf",
+        "repo_revision": "aa9c86bf2a7d29b08575641fecea19a2a603e87c"
+      },
+      "source_blob_prefix": "https://github.com/jimjamzola/RH-Alpoge-Reconstruction/blob/aa9c86bf2a7d29b08575641fecea19a2a603e87c/",
+      "short_title": "Adriazola’s reconstruction",
+      "format": "PDF manuscript and TeX project",
+      "reader_scope": "Numbered manuscript sections on analytic reductions, arithmetic inputs and their assembly.",
+      "reader_need": "Locate a section or numbered hypothesis in the manuscript",
+      "atlas_mapping": {
+        "target": "crosswalk/adriazola.md",
+        "description": "Manuscript numbers, Lean declarations and atlas units."
+      },
+      "manuscript_title": "The Alpöge Proof of the Riemann Hypothesis",
+      "attribution_evidence": "https://github.com/jimjamzola/RH-Alpoge-Reconstruction/blob/aa9c86bf2a7d29b08575641fecea19a2a603e87c/CITATION.cff#L20-L22"
+    },
+    {
+      "id": "naskrecki",
+      "author_or_provider": "Bartosz Naskręcki",
+      "title": "riemann-rev",
+      "url": "https://github.com/nasqret/riemann-rev",
+      "pinned_url": "https://github.com/nasqret/riemann-rev/tree/6ccea03b21e96b70356c07afb85a88d581b61e86",
+      "revision": "6ccea03b21e96b70356c07afb85a88d581b61e86",
+      "version_kind": "git_commit",
+      "timestamp": "2026-11-24T05:14:02Z",
+      "license": {
+        "status": "verified_at_repository_pin",
+        "spdx": "0BSD",
+        "scope": "Repository root license. Third-party material may have separate terms.",
+        "url": "https://github.com/nasqret/riemann-rev/blob/6ccea03b21e96b70356c07afb85a88d581b61e86/LICENSE"
+      },
+      "scope": "Reading aid for the Lean development. Registered for navigation.",
+      "retrieved_on": "2026-11-25",
+      "attribution_evidence": "https://github.com/nasqret/riemann-rev/blob/6ccea03b21e96b70356c07afb85a88d581b61e86/LICENSE#L3",
+      "reader_urls": {
+        "site": "https://nasqret.github.io/riemann-rev/",
+        "interactive_atlas": "https://nasqret.github.io/riemann-rev/atlas/"
+      },
+      "source_blob_prefix": "https://github.com/nasqret/riemann-rev/blob/6ccea03b21e96b70356c07afb85a88d581b61e86/",
+      "short_title": "Naskręcki’s reading project",
+      "format": "Online atlas, guide and source data",
+      "reader_scope": "A guided map of components and named declarations, with a record of checks and links back to Lean source.",
+      "reader_need": "Explore the proof component map",
+      "atlas_mapping": {
+        "target": "crosswalk/naskrecki.md",
+        "description": "Index of exact Lean declaration names.",
+        "matched_distinct_names": 121,
+        "name_file_pairs": 503,
+        "files_with_matches": 23,
+        "eligible_files_scanned": 108,
+        "upstream_atlas_node_ids_matched": 55
+      }
+    },
+    {
+      "id": "josebrox",
+      "author_or_provider": "JoseBrox/GRH_distillation",
+      "title": "GRH_distillation",
+      "url": "https://github.com/JoseBrox/GRH_distillation",
+      "pinned_url": "https://github.com/JoseBrox/GRH_distillation/tree/a6e7aa8f8694c2cbc330671ea34512f024927d28",
+      "revision": "a6e7aa8f8694c2cbc330671ea34512f024927d28",
+      "version_kind": "git_commit",
+      "timestamp": "2026-11-24T23:57:05Z",
+      "license": {
+        "status": "no_root_license_verified",
+        "spdx": null,
+        "scope": "Rights unknown. No external text distributed.",
+        "url": "https://github.com/JoseBrox/GRH_distillation/tree/a6e7aa8f8694c2cbc330671ea34512f024927d28"
+      },
+      "scope": "Distillation project. Registered for navigation.",
+      "retrieved_on": "2026-11-25",
+      "reader_urls": {
+        "guide": "https://github.com/JoseBrox/GRH_distillation/blob/a6e7aa8f8694c2cbc330671ea34512f024927d28/paper/guide/main.pdf"
+      },
+      "source_blob_prefix": "https://github.com/JoseBrox/GRH_distillation/blob/a6e7aa8f8694c2cbc330671ea34512f024927d28/",
+      "short_title": "JoseBrox/GRH_distillation",
+      "format": "PDF guide, manuscripts, proof maps and source atlas",
+      "reader_scope": "Separate RH and Dirichlet GRH expositions, with mathematical sections, proof maps and a concordance to Lean.",
+      "reader_need": "Start with a short guide and compare the RH and Dirichlet programs",
+      "atlas_mapping": {
+        "target": "crosswalk/josebrox.md",
+        "description": "Index of exact Lean declaration names.",
+        "matched_distinct_names": 12,
+        "name_file_pairs": 13,
+        "files_with_matches": 4,
+        "eligible_files_scanned": 1315
+      },
+      "attribution_evidence": "https://github.com/JoseBrox/GRH_distillation/blob/a6e7aa8f8694c2cbc330671ea34512f024927d28/README.md"
+    },
+    {
+      "id": "jae-63",
+      "author_or_provider": "jae-63/rh-alpoge-blueprint",
+      "title": "rh-alpoge-blueprint",
+      "url": "https://github.com/jae-63/rh-alpoge-blueprint",
+      "pinned_url": "https://github.com/jae-63/rh-alpoge-blueprint/tree/0434143d80c94d491e2228e234507d38dfcb57d7",
+      "revision": "0434143d80c94d491e2228e234507d38dfcb57d7",
+      "version_kind": "git_commit",
+      "timestamp": "2026-11-20T22:15:51Z",
+      "license": {
+        "status": "verified_at_repository_pin",
+        "spdx": "Apache-2.0",
+        "scope": "Repository root license. Third-party material may have separate terms.",
+        "url": "https://github.com/jae-63/rh-alpoge-blueprint/blob/0434143d80c94d491e2228e234507d38dfcb57d7/LICENSE"
+      },
+      "scope": "Reading guide and dependency mapping. Registered for navigation.",
+      "retrieved_on": "2026-11-25",
+      "reader_urls": {
+        "guide": "https://github.com/jae-63/rh-alpoge-blueprint/blob/0434143d80c94d491e2228e234507d38dfcb57d7/BLUEPRINT.md"
+      },
+      "source_blob_prefix": "https://github.com/jae-63/rh-alpoge-blueprint/blob/0434143d80c94d491e2228e234507d38dfcb57d7/",
+      "short_title": "jae-63/rh-alpoge-blueprint",
+      "format": "Markdown blueprint, dependency graphs and data",
+      "reader_scope": "A reading order from the public theorems to the analytic argument, with plain-language descriptions and named Lean declarations.",
+      "reader_need": "Trace the argument through a compact blueprint",
+      "atlas_mapping": {
+        "target": "crosswalk/jae-63.md",
+        "description": "Index of exact Lean declaration names.",
+        "matched_distinct_names": 57,
+        "name_file_pairs": 75,
+        "files_with_matches": 5,
+        "eligible_files_scanned": 9
+      },
+      "attribution_evidence": "https://github.com/jae-63/rh-alpoge-blueprint/blob/0434143d80c94d491e2228e234507d38dfcb57d7/README.md"
+    },
+    {
+      "id": "waterloo-zeta",
+      "author_or_provider": "www.math.uwaterloo.ca",
+      "title": "The Alpöge–Claude proof of the Riemann hypothesis explained for the Riemann zeta function",
+      "url": "https://www.math.uwaterloo.ca/~mrubinst/alpoge_claude_grh/zeta-paper_v2.pdf",
+      "pinned_url": "https://www.math.uwaterloo.ca/~mrubinst/alpoge_claude_grh/zeta-paper_v2.pdf",
+      "revision": "b49de5037af55c6df66843db710332a358c4eb1d2799581c673cd2ea17e8ea40",
+      "version_kind": "sha256_of_retrieved_bytes",
+      "timestamp": null,
+      "license": {
+        "status": "no_redistribution_license_verified",
+        "spdx": null,
+        "scope": "Rights unknown. No external text distributed.",
+        "url": "https://www.math.uwaterloo.ca/~mrubinst/alpoge_claude_grh/zeta-paper_v2.pdf"
+      },
+      "scope": "Version 2 PDF on a University of Waterloo website.",
+      "retrieved_on": "2026-11-25",
+      "edition": "Version 2, working draft, 22 November 2026",
+      "short_title": "Waterloo zeta draft",
+      "format": "PDF, version 2",
+      "reader_scope": "Version 2 organizes the zeta-function argument around prime-power sums and a mean inequality.",
+      "reader_need": "Read an exposition focused on the Riemann zeta function",
+      "atlas_mapping": {
+        "target": null,
+        "description": "Not yet mapped."
+      },
+      "attribution_evidence": "https://www.math.uwaterloo.ca/~mrubinst/alpoge_claude_grh/zeta-paper_v2.pdf"
+    },
+    {
+      "id": "alpoge-note",
+      "author_or_provider": "Levent Alpöge",
+      "title": "Author’s remark",
+      "url": "https://alpo.ge/remark.pdf",
+      "pinned_url": "https://alpo.ge/remark.pdf",
+      "revision": "3fc97784b71ddd44ff8aa0a177e99622a1c61b13cfa843a0989ee4a7a0cfeb8d",
+      "version_kind": "sha256_of_retrieved_bytes",
+      "timestamp": null,
+      "license": {
+        "status": "no_redistribution_license_verified",
+        "spdx": null,
+        "scope": "Rights unknown. No external text distributed.",
+        "url": "https://alpo.ge/remark.pdf"
+      },
+      "scope": "Four-page note dated 20 November 2026. Author context.",
+      "retrieved_on": "2026-11-25",
+      "short_title": "Alpöge’s announcement",
+      "format": "Four-page PDF",
+      "reader_scope": "Four-page announcement dated 20 November 2026, with a description of the announced result and a dated list of steps.",
+      "reader_need": "Read the author’s original account",
+      "atlas_mapping": {
+        "target": null,
+        "description": "Announcement and date identified here. There is no declaration-level index for this document."
+      },
+      "attribution_evidence": "https://github.com/jimjamzola/RH-Alpoge-Reconstruction/blob/aa9c86bf2a7d29b08575641fecea19a2a603e87c/CITATION.cff#L40-L47"
+    }
+  ],
+  "crosswalk_evidence_urls": "sources/reader_urls.json",
+  "reader_references": [
+    {
+      "url": "https://github.com/GunheeC/rh-lean-verification-atlas",
+      "title": "RH Lean Verification Atlas",
+      "scope": "Canonical repository selected by the atlas owner."
+    },
+    {
+      "url": "https://personal.math.ubc.ca/~gerg/teaching/539-Winter2020/Apr2.pdf",
+      "title": "UBC Math 539 handout, 2 April 2020",
+      "scope": "Analytic track. AI review R19, public line 78, reports comparing Landau’s theorem in the Math 539 handout of 2 April 2020, p. 1, Theorem 15.1. No human check is recorded.",
+      "human_review": false,
+      "attribution_evidence": "https://personal.math.ubc.ca/~gerg/teaching/539-Winter2020/Apr2.pdf",
+      "attribution_scope": "Publication locator. This title-based label gives no personal byline."
+    },
+    {
+      "url": "https://arxiv.org/pdf/math/0612269",
+      "title": "A. Moriwaki, Continuity of volumes on arithmetic varieties",
+      "scope": "Arakelov track. Arithmetic volumes and the introduction’s Theorem A. Locator not independently verified in this release.",
+      "human_review": false,
+      "attribution_evidence": "https://github.com/JoseBrox/GRH_distillation/blob/a6e7aa8f8694c2cbc330671ea34512f024927d28/notes/geometric-core-lower-bound.md#L292"
+    },
+    {
+      "url": "https://msp.org/pjm/2013/264-1/pjm-v264-n1-p11-p.pdf",
+      "title": "S. Yamana, The Siegel–Weil formula for unitary groups",
+      "scope": "Theta track. Theorem 2. Locator not independently verified in this release.",
+      "human_review": false,
+      "attribution_evidence": "https://github.com/jimjamzola/RH-Alpoge-Reconstruction/blob/aa9c86bf2a7d29b08575641fecea19a2a603e87c/audit/pre_synthesis/SiegelWeil_R1/SiegelWeil_R1_Report.tex#L133-L134"
+    },
+    {
+      "url": "https://archive.numdam.org/item/AST_2004__295__117_0.pdf",
+      "title": "K. Kato, p-adic Hodge theory and values of zeta functions of modular forms",
+      "scope": "Galois track. Sections 8 and 9. Locator not independently verified in this release.",
+      "human_review": false,
+      "attribution_evidence": "https://github.com/JoseBrox/GRH_distillation/blob/a6e7aa8f8694c2cbc330671ea34512f024927d28/paper/shared/selmer-support-continuation-type-two-rigidity-references.tex#L2-L4"
+    },
+    {
+      "url": "https://people.mpim-bonn.mpg.de/scholze/LocalLanglands.pdf",
+      "title": "Scholze, The local Langlands correspondence for GL_n over p-adic fields",
+      "scope": "Local track. Theorem 1.2. Locator not independently verified in this release.",
+      "human_review": false,
+      "attribution_evidence": "https://github.com/JoseBrox/GRH_distillation/blob/a6e7aa8f8694c2cbc330671ea34512f024927d28/notes/classical-local-correspondence.md#L558"
+    },
+    {
+      "url": "https://doi.org/10.24033/asens.1269",
+      "title": "Stable real cohomology of arithmetic groups",
+      "scope": "K-theory track. Proposition 12.2. Locator not independently verified in this release.",
+      "human_review": false,
+      "attribution_evidence": "https://doi.org/10.24033/asens.1269",
+      "attribution_scope": "Publication locator. This title-based label gives no personal byline."
+    },
+    {
+      "url": "https://ems.press/content/book-chapter-files/27335",
+      "title": "A bound for the torsion in the K-theory of algebraic integers",
+      "scope": "K-theory track. Sections on the torsion estimate. The earlier AI report R19 gives §4.1, Theorem 1, p. 778 (2003). No human check of the published statement is recorded.",
+      "human_review": false,
+      "attribution_evidence": "https://ems.press/content/book-chapter-files/27335",
+      "attribution_scope": "Publication locator. This title-based label gives no personal byline."
+    },
+    {
+      "url": "https://creativecommons.org/licenses/by/4.0/",
+      "title": "Creative Commons Attribution 4.0 International",
+      "scope": "Official license summary."
+    },
+    {
+      "url": "https://creativecommons.org/licenses/by/4.0/legalcode.en",
+      "title": "CC BY 4.0 Legal Code",
+      "scope": "Official legal text."
+    },
+    {
+      "url": "https://opensource.org/license/mit",
+      "title": "The MIT License",
+      "scope": "Open Source Initiative license text."
+    }
+  ],
+  "presentation_assets": [
+    {
+      "url": "https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js",
+      "scope": "Optional static site math typesetting only. No mathematical assertion or verification grade rests on this presentation dependency.",
+      "version": "3.2.2",
+      "license_spdx": "Apache-2.0",
+      "license_url": "https://github.com/mathjax/MathJax/blob/3.2.2/LICENSE"
+    }
+  ],
+  "workflow_release_evidence": [
+    "https://github.com/actions/checkout/releases/tag/v7.0.1",
+    "https://github.com/actions/setup-python/releases/tag/v7.1.0"
+  ],
+  "release_preparation_sources": [
+    "https://github.com/marketplace/actions/setup-python",
+    "https://cli.github.com/manual/gh_repo_edit",
+    "https://cli.github.com/manual/gh_release_create",
+    "https://cli.github.com/manual/gh_run_list",
+    "https://cli.github.com/manual/gh_run_watch",
+    "https://help.zenodo.org/docs/github/enable-repository/",
+    "https://zenodo.org/uploads/new"
+  ]
+}

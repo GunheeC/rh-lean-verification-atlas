@@ -1,0 +1,17 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit P006. Local manuscript v3, item 6.6, heading on printed PDF p. 55.
+% claimAll
+% paper2/upper.tex:35–45. Verbatim excerpt; SHA-256 f00b53c04bcf5b2514b3a07eaf170ecd7dd849106b9ea8d57d55ae2476398744.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+\begin{formalstatement}[Goal: Three public predicates together]\label{pn:P006}
+The half-plane assertion $H$ of P003, the open-strip assertion $S$ of P004, and the zeta assertion of P002 hold jointly.
+\end{formalstatement}
+\nodestatus{P006}
+\paragraph{The reductions assuming $H$.} If $\chi^*$ is the primitive character inducing $\chi$ of modulus $N$, the change-of-level formula gives, away from the principal pole,
+\[
+ L(s,\chi)=L(s,\chi^*)\prod_{p\mid N}(1-\chi^*(p)p^{-s}).
+\]
+Each factor is nonzero when $\sigma>0$, since $|\chi^*(p)p^{-s}|\le p^{-\sigma}<1$. In the open strip a zero on the right of $1/2$ contradicts $H$. A zero left of $1/2$ gives a zero of $L(s,\chi^*)$. Its completed function vanishes there since the gamma factor is finite. The primitive functional equation gives a zero of the completed inverse character at $1-s$. Its gamma factor is finite and nonzero, and $1-s$ has real part greater than $1/2$. This contradicts $H$ applied to $(\chi^*)^{-1}$ (\nolinkurl{CharacterBoxes/ClaimStrip.lean:7,59}, NIST DLMF, Eqs.~25.15.4--5).
+
+For modulus one, $S$ gives the zeta conclusion in the open strip. Zeta has no zeros in $\sigma\ge1$, and $\zeta(0)=-1/2$. At a putative zero with $\sigma\le0$ distinct from zero and the negative even integers, $\pi^{-s/2}\Gamma(s/2)$ is finite and nonzero. The functional equation gives a zero of $\zeta(1-s)$ with $\Re(1-s)\ge1$ and $1-s\ne1$, a contradiction (\nolinkurl{CharacterBoxes/ClaimStrip.lean:75}). The conjunction takes its remaining input $H$ from P009. These are the implications of blueprint Chapter~E, \emph{The main theorems and the reduction to primitive characters}~\bploc{sec:E-main}.

@@ -1,0 +1,131 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "W10",
+  "title": "The small-rank bound in Case V",
+  "track": {
+    "primary": "galois",
+    "secondary": []
+  },
+  "statement": "Assume $H'$, W05 and the reduced unitary rank-three lifting input.\nOver a model of $\\mathbb Q(i)$ this input selects, for each host frame, a\nmarked element at which the weight-zero piece of every universal lift\nis module-finite and each Type~I specialization satisfies the prescribed\nautomorphy clause of weight $-1$. For every $\\chi$ there is $C\\in\\mathbb N$\nsuch that the individual finite-length bound of W09 holds for each large\nhost, closure, coefficient ring, $0<e<t$ and $\\psi\\in X_h(O,e)$\nsatisfying $\\ell$ odd, $\\ell\\in B_\\chi$, $e=1$ and\n\\[\n R_1=16\\,\\operatorname{ord}(\\chi)(\\ell\\operatorname{cond}(\\chi))^2\n            4^{n_0}\\le 2^{c_2(\\psi)}.\n\\]\nHere $c_2$ is the exponent of $2$ in the conductor of the local\n$2$-component of $\\psi$, and $n_0=v_2(\\ell^{f_0}-1)$, with $f_0$ the\norder of $\\ell$ modulo the least common multiple of $4$ and the order\nof the prime-to-$\\ell$ part of $\\psi$ stripped of its $2$-component.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume $H'$, the W05 uniform cohomology bound and reduced unitary rank-three lifting.",
+    "Use the marked host frame and eligible Case V parameters."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.Z.J.count_v_of_printed_bound_k_reduced_unitary_lift",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/LinkedUnlE.lean",
+      "line0": 55,
+      "line1": 61,
+      "sha256": "8b7dbacff5a75fa05aa68de116f5ec37515e4695fac91835fdf56d7abd84b211",
+      "dominated": 15145,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "5.46 (sub:W10)",
+      "pages": [
+        52,
+        52
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/W10.tex",
+      "section": "sub:W10",
+      "pages": []
+    },
+    {
+      "document": "paper2_v3",
+      "section": "The chain in detail: P013",
+      "pages": [
+        20,
+        22
+      ],
+      "coverage": "Shared subsection for this station, including subordinate inputs."
+    }
+  ],
+  "status": "Statement only",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [
+    "B04",
+    "D077",
+    "D108",
+    "P025",
+    "P027",
+    "P028",
+    "P029",
+    "P030",
+    "Z1.1.01",
+    "Z1.1.02",
+    "Z1.1.03",
+    "Z1.1.04",
+    "Z1.2",
+    "Z1.4",
+    "Z1.5.03",
+    "Z1.5.05",
+    "Z1.5.06",
+    "Z1.5.07"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [],
+  "paper_id": "W10",
+  "indexed_members": [
+    "D522",
+    "D523",
+    "D524",
+    "D525",
+    "D526",
+    "D527"
+  ],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "the-small-rank-bound-in-case-v",
+  "aliases": [
+    "count_v_of_printed_bound_k_reduced_unitary_lift",
+    "W10 The small-rank bound in Case V"
+  ],
+  "background": [
+    "Rank-three automorphy lifting",
+    "Selmer lengths"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "5.46 (sub:W10)",
+    "pages": [
+      52,
+      52
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "B04": "graph",
+    "D077": "graph",
+    "D108": "graph",
+    "P025": "graph",
+    "P027": "graph",
+    "P028": "graph",
+    "P029": "graph",
+    "P030": "graph",
+    "Z1.1.01": "graph",
+    "Z1.1.02": "graph",
+    "Z1.1.03": "graph",
+    "Z1.1.04": "graph",
+    "Z1.2": "graph",
+    "Z1.4": "graph",
+    "Z1.5.03": "graph",
+    "Z1.5.05": "graph",
+    "Z1.5.06": "graph",
+    "Z1.5.07": "graph"
+  }
+}

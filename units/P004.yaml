@@ -1,0 +1,108 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "P004",
+  "title": "Real parts of Dirichlet zeros in the open strip",
+  "track": {
+    "primary": "formal",
+    "secondary": [
+      "analytic"
+    ]
+  },
+  "statement": "For every $N\\ge1$ and every Dirichlet character $\\chi$ modulo $N$, if $L(s,\\chi)=0$ with $0<\\Re s<1$, then $\\Re s=1/2$.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Take a Dirichlet character of positive modulus.",
+    "The point is a zero in the open strip $0<\\Re s<1$."
+  ],
+  "lean": [
+    {
+      "name": "LFunction_eq_zero_re",
+      "file": "Main.lean",
+      "line0": 10,
+      "line1": 10,
+      "sha256": "16e8622c29d633b78f0009d3ed16ed8cd13ece9122362aed0a4fb12646635409",
+      "dominated": 101,
+      "graph": "five_public_heads"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/P004_round4.md",
+      "section": "P004 · Extracting the all-character open-strip claim",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "6.4 (pn:P004)",
+      "pages": [
+        55,
+        55
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/P004.tex",
+      "section": "pn:P004",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L1",
+  "reviews": [
+    "reviews/R20_review.md"
+  ],
+  "prerequisites": [
+    "P006"
+  ],
+  "size_pages": 2,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [
+    {
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "lines": [
+        98,
+        98
+      ],
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript.",
+      "verdict": "Exact statement comparison"
+    }
+  ],
+  "paper_id": "P004",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "real-parts-of-dirichlet-zeros-in-the-open-strip",
+  "aliases": [
+    "Zeros in the open strip",
+    "LFunction_eq_zero_re",
+    "P004 Real parts of Dirichlet zeros in the open strip"
+  ],
+  "background": [
+    "Dirichlet L-functions",
+    "The critical strip"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "6.4 (pn:P004)",
+    "pages": [
+      55,
+      55
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "P006": "graph"
+  },
+  "review_status": "pending_review",
+  "summary": "The public assertion applies to every character of a positive modulus. Its proof selects the open-strip component of a conjunction. The analytic reduction behind that component must handle characters induced from smaller conductors."
+}

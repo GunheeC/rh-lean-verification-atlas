@@ -1,0 +1,82 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "P030",
+  "title": "A rational classifier of variable purity",
+  "track": {
+    "primary": "galois",
+    "secondary": []
+  },
+  "statement": "Assume \\(H'\\), the level and Satake--Frobenius correspondence for\nimaginary quadratic fields, and preservation of admissibility whenever\nquadratic restriction is irreducible. For each \\(n\\ge2\\) there exist\n\\(c,A\\in\\mathbb N\\). For all \\(m_1>\\cdots>m_n\\),\n\\(m_i+m_{n+1-i}=w_0\\in\\mathbb Z\\), \\(|m_i|\\le H\\), \\(M\\ge1\\),\nand \\(p\\nmid M\\) prime, the rational place above \\(p\\) admits data\n\\(D\\) of weight \\(m\\), purity \\(w_0\\), and \\(|D.S|\\le c[M(H+1)]^A\\).\nThese data classify \\(\\mathrm{AdmRNAlt}(\\iota,M,m,w_0)\\) representations\nof \\(G_{\\mathbb Q}\\) at this place for every odd \\(\\ell\\ne p\\), closure\nand \\(\\iota\\).",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume $H'$, the imaginary-quadratic level and Frobenius correspondence, and preservation of admissibility under irreducible quadratic restriction.",
+    "Use rank at least two, the specified symmetry and size of weights, and an allowed level and good prime."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.GalN.V.Win.N.countQ_alt",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/FrobeniusTraceCountBoundOfCmEigensystemCount.lean",
+      "line0": 255,
+      "line1": 335,
+      "sha256": "8d20a533aa506551ff681dca718da08c93744b8a926d0d7fa4f924d48a290063",
+      "dominated": 725,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "7.7 (pn:P030)",
+      "pages": [
+        76,
+        76
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/P030.tex",
+      "section": "pn:P030",
+      "pages": []
+    }
+  ],
+  "status": "Statement only",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [
+    "Z1.5.04"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [],
+  "paper_id": "P030",
+  "indexed_members": [
+    "P061"
+  ],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "a-rational-classifier-of-variable-purity",
+  "aliases": [
+    "P030 A rational classifier of variable purity"
+  ],
+  "background": [
+    "Quadratic restriction of representations",
+    "Satake parameters"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "7.7 (pn:P030)",
+    "pages": [
+      76,
+      76
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "Z1.5.04": "graph"
+  }
+}

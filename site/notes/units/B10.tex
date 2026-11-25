@@ -1,0 +1,40 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit B10. Local manuscript v3, item 5.10, heading on printed PDF p. 39.
+% Deduction.ch_top
+% paper2/split_bridges.tex:271–304. Verbatim excerpt; SHA-256 9b907b3364224c22c70889f2b534b6b28d68e779302a246aae1c490edab736a4.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+\begin{proposition}[Transporting the lattice inequality to a gap]\label{sub:B10}
+Take finite units $U_0$, nonempty finite word sets $W(u)$, finite top
+indices, and lattice data with $m$ columns and $f$ places. Take a finite
+abelian group $H$, a map $\operatorname{tr}:U_0\to H$, and arithmetic
+data as in \hyperref[sub:B09]{B09}. Assume top and place bijections
+identify the coefficients $a_t$, column weights, Euler constant and
+$\Re\ell(\chi_C)$, and express the lattice $\mathrm{ASK}(u)$ as the
+sum of its arithmetic terms at $\operatorname{tr}u$.
+Assume the eleven lattice hypotheses of \nodeid{P021} and the following
+bounds on the data. With $x\ge1$, $0<\varepsilon\le1$,
+$b\ge1$, $xb\le a$, $n_T\ge1$, $m\le x^{1/2+\varepsilon/2}$,
+$xm\le k$, one has
+\[
+ 1\le k\le\min(a,x^{e_K}),\quad 0\le L,L_a\le2x^\varepsilon,\quad
+ 0\le kb'\le a,\quad 0\le X''\le a,\quad 0\le a_t\le2a .
+\]
+Also $e_K\ge0$, $\log|W(u)|\le(k-3)\log2$, $\bar\delta\le1/2$,
+$\bar\eta,\bar e\ge0$, and
+$(\bar\eta+4\sqrt{\bar e})x^{c_{HH}}b\le Kx^\varepsilon n_Ta$.
+The seven constants controlling division, the $E$ and $H$ errors, counting,
+slope, first-slope and loss bounds are in $[0,K]$; the exponents
+$e_{\rm Div},e_{\rm Loss},c_{HH}$ are nonnegative. Finally
+\[
+\begin{gathered}
+ 0\le B_0\le 2nmbx^\varepsilon,\qquad
+ 0\le N_c\le n_2 k b x^\varepsilon/(n^2x^{-\varepsilon}),\\
+ \max\{\log x,200(1+K)^2(1+c_{HH})(1+e_K)\}\le x^\varepsilon .
+\end{gathered}
+\]
+For each $u\in U_0$ the gap at $\operatorname{tr}u$ is at most
+$x^{(e_{\rm Div}+e_{\rm Loss}+3)\varepsilon}\mathrm{Br}$ with $a_E=a$.
+\end{proposition}\subnode{B10}
+\path{DedekindLFunctions/SplitInertia.lean:67--77};
+\path{SizeWindowBrackets/ErrorFormsWeakWindowsFalse.lean:19--52}.

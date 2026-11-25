@@ -1,0 +1,512 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Verbatim sections of local blueprint v13. See README.md for macros, edition and source spans.
+
+% blueprint/ch_E.tex:237-738
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+External theorem numbers in the original excerpt are not verified here unless a separate edition-specific source record documents the comparison.
+% End of atlas edition annotation.
+
+\section{Smoothed prime sums and levels}\label{sec:E-level}
+
+The whole chapter is about one family of functions of a real variable: the Ces\`aro-smoothed sums
+of $\Lambda(n)\chi(n)$, normalised so that their Mellin transform has no pole at $s=1$. A
+\emph{level} is a finite set of primitive characters, closed under inversion, together with weights;
+the object that will be bounded from above is the weighted sum of the real parts over the level.
+
+\begin{definition}[The functions $G$ and $G_\chi$]\label{def:E-G}
+\lean{Formalism.Gz, Formalism.HC.An.G, Formalism.HC.An.gChi, Formalism.HC.An.logDerivativeAtOne, Deduction.Gchi}
+\footnote{\nolinkurl{Formalism/StatementOC.lean:13}, \nolinkurl{Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/Analytic.lean:14,23,11}, \nolinkurl{Development/AutomorphicArithmetic/DedekindLFunctions/CharFamily.lean:15}.}%
+For real $y$ use Mathlib's real logarithm, with $\log 0=0$ and $\log(-t)=\log t$ for $t>0$
+(\texttt{Real.log\_zero}, \texttt{Real.log\_neg\_eq\_log},
+\nolinkurl{Mathlib/Analysis/SpecialFunctions/Log/Basic.lean:103,121}). Put
+\[
+G(y)=\sum_{1\le n\le y}\Lambda(n)\Bigl(\frac yn-1\Bigr)-y\log y+(1+\gamma)\,y .
+\]
+For a non-principal Dirichlet character $\chi$ modulo $N$ put
+$\ell(\chi)=\dfrac{L'}{L}(1,\chi)$ (\texttt{logDerivativeAtOne}; recall $L(1,\chi)\neq0$) and
+\[
+G_\chi(y)=\sum_{1\le n\le y}\Lambda(n)\chi(n)\Bigl(\frac yn-1\Bigr)+y\,\ell(\chi)\in\mathbb C .
+\]
+For $\chi=\mathbf 1$ (modulus $1$) put $G_{\mathbf 1}=G$. For every real $y$, \texttt{UpperTheory.Comparison\textsubscript{2}.Gz\_eq}
+identifies \texttt{Formalism.Gz}, \texttt{An.G} and \texttt{Deduction.G}
+(\nolinkurl{Development/AutomorphicArithmetic/PrimitiveCosets/GzEq.lean:6}).
+For a primitive character, \texttt{UpperTheory.Comparison\textsubscript{2}.gChi\_eq} identifies
+\texttt{An.gChi} and \texttt{Deduction.Gchi}. Its principal branch uses primitivity to deduce
+$N=1$ (\nolinkurl{Development/AutomorphicArithmetic/PrimitiveCosets/GChiEq.lean:16--35}).
+For an imprimitive non-principal character the displayed formula follows by expanding the two
+non-principal branches. At a principal character of general modulus, \texttt{An.gChi} selects $G$,
+whereas the sum in \texttt{Deduction.Gchi} retains the character values.
+\end{definition}
+
+\begin{definition}[Level, its weights and its sum]\label{def:E-level}
+\lean{Formalism.HC.KSet, Formalism.HC.Level, Formalism.HC.Level.wt, Formalism.HC.Level.Gm, Formalism.HC.Level.cyc, Formalism.HC.Level.ZeroFreeAbove}
+\footnote{\nolinkurl{Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/PrimePairSizeCondition.lean:39}, \nolinkurl{Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/ExplicitFormulaErrorOfHostConditions.lean:8,36,38,121,24}.}%
+A \emph{level} $\mathcal L$ consists of
+\begin{itemize}
+\item a finite set $K=K(\mathcal L)\subset\mathcal P$ (the \emph{kept} characters, \texttt{KEPT})
+with $\mathbf 1\in K$ and $\psi^{-1}\in K$ for $\psi\in K$;
+\item an optional element $\psi_K\in K$ (\texttt{psK}), which if present is real and odd;
+\item an integer $o=o(\mathcal L)\ge0$.
+\end{itemize}
+Its weights are $\operatorname{wt}(\psi)=1$ if $\psi=\psi_K$ and
+$\operatorname{wt}(\psi)=\dfrac1{3o+1}$ otherwise, and its sum is
+\[
+\mathcal G_{\mathcal L}(y)=G(y)+\sum_{\psi\in K\smallsetminus\{\mathbf 1\}}\operatorname{wt}(\psi)\,
+\operatorname{Re}G_\psi(y)\qquad(y\in\mathbb R).
+\]
+$\mathcal L$ is \emph{zero-free above $\theta$} if every $\psi\in K$ is. For $\psi\in\mathcal P$ the
+\emph{cyclic level} $\operatorname{cyc}(\psi)$ has
+$K=\{(\psi^{j})^{*}:j\in\mathbb Z\}$, no $\psi_K$, and $o$ equal to the order of $\psi$; clearly
+$\psi\in K(\operatorname{cyc}\psi)$ (\texttt{Level.mem\_cyc}).
+\end{definition}
+
+\begin{definition}[Windows]\label{def:E-windows}
+\lean{Formalism.HC.HasWindows, Formalism.HC.Level.FormBAt, Formalism.HC.Level.FormB}
+\footnote{\nolinkurl{Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/Window.lean:7,30,33}.}%
+Let $S\subset\mathbb R$ and $\lambda\in\mathbb R$. $S$ \emph{has windows of exponent $\lambda$}
+(\texttt{HasWindows S la}) if for every $y$ there is $Y\ge y$ with $[Y,Y^{\lambda}]\subset S$.
+\end{definition}
+
+%======================================================================
+\section{A one-sided theorem of Landau type on windows}\label{sec:E-landau}
+
+\emph{What this step does.} Landau's classical theorem says that a Dirichlet integral
+$\int_1^\infty A(y)y^{-s-1}\,dy$ with $A\ge0$ locally bounded and locally Riemann integrable
+has a singularity at its finite real abscissa of convergence; it is the standard tool for oscillation results such as
+$\psi(x)-x=\Omega_\pm(x^{\Theta-\varepsilon})$ (see \cite[\S15.1 ``Applications of Landau's
+theorem'']{E-MV} and \cite[p.~1]{E-Landau-notes}). In the application here the upper bound holds on windows
+$[Y,Y^{1+\delta}]$ for arbitrarily large $Y$. In the variable $u=\log y$, the kernel
+$u^ke^{-\sigma u}/k!$ concentrates near $k/\sigma$. The window estimate thus gives an
+upper bound at selected, arbitrarily large orders $k$. A hypothetical pole produces the
+opposing estimate at \emph{every} order: isolate a nearest simple pole at distance $d$
+from a centre $z$ and choose $r'>d$ inside the disc containing no other pole. Its
+contribution to $c_k(z)$ has modulus $|c_\rho|/d^{k+1}$, while the holomorphic remainder
+is $O((r')^{-k})$. At a real centre with a real pole, the positive residue gives the
+corresponding lower bound on the real part. Fixing $\eta=\tfrac12\log(r'/d)$ makes
+these estimates incompatible at the orders selected by the windows
+(\texttt{Deduction.landau\_window}, \nolinkurl{Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindow.lean:83--166}).
+Positivity enters twice: through $|g|+g\le 2R$ where $g\le R$, and through the positivity of the
+residues at real poles (which in the application comes from the weights being positive and from
+$-1/(\beta(\beta-1))>0$ for $0<\beta<1$). We give the proof in full; it does not use Landau's
+theorem as a black box.
+
+\subsection{The abstract statement}
+
+\begin{definition}[Pole data]\label{def:E-poledata}
+\lean{Deduction.PoleData}
+\footnote{\nolinkurl{Development/AutomorphicArithmetic/DedekindLFunctions/LandauZeroFreeCriterion.lean:15}.}%
+Let $g:\mathbb R\to\mathbb R$, $\Phi:\mathbb C\to\mathbb C$ and $Z\subset\mathbb C$. The triple
+$(g,\Phi,Z)$ is \emph{pole data} if:
+\begin{enumerate}
+\item[(P1)] $g$ is Borel measurable and there is $C_0$ with $|g(u)|\le C_0e^{2u}$ for all $u\ge0$;
+\item[(P2)] $\Phi(s)=\int_0^\infty g(u)e^{-su}\,du$ for $\operatorname{Re}s>2$;
+\item[(P3)] $Z\subset\{\operatorname{Re}s>0\}$, $Z$ has no accumulation point in
+$\{\operatorname{Re}s>0\}$, and $\Phi$ is holomorphic on $\{\operatorname{Re}s>0\}\smallsetminus Z$;
+\item[(P4)] at every $\rho\in Z$ the function $\Phi$ has a simple pole: there are $c_\rho\neq0$ and
+$h$ holomorphic near $\rho$ with $\Phi(s)=c_\rho/(s-\rho)+h(s)$ for $s\neq\rho$ near $\rho$; and if
+$\rho$ is real then $c_\rho$ is real and positive.
+\end{enumerate}
+\end{definition}
+
+\begin{definition}[Window hypothesis in the logarithmic variable]\label{def:E-windowU}
+\lean{Deduction.WindowHypU}
+\footnote{\nolinkurl{Development/AutomorphicArithmetic/DedekindLFunctions/LandauZeroFreeCriterion.lean:25}.}%
+Let $g:\mathbb R\to\mathbb R$, $\theta,\delta\in\mathbb R$. We say that
+$\mathrm{W}(g,\theta,\delta)$ holds if for every $\eta>0$ and every $U_0$ there are $U\ge U_0$ and a
+function $R:\mathbb R\to\mathbb R$. Writing $I=\{u:U\le u\le(1+\delta)U\}$, we require
+$u\mapsto R(u)e^{-\theta u}$ to be integrable on $I$, with $R(u)\ge0$ and $g(u)\le R(u)$
+on $I$, and $\int_I R(u)e^{-\theta u}\,du\le e^{\eta U}$.
+The theorem below imposes $\delta>0$ to choose the kernel order in Lemma~\ref{lem:E-tails}
+(\texttt{Deduction.landau\_tails}, \nolinkurl{Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauTails.lean:80--85}).
+\end{definition}
+
+\begin{theorem}[Landau on windows, abstract form]\label{thm:E-landau-window}
+\lean{Deduction.landau_window}\uses{def:E-poledata,def:E-windowU,prop:E-landau-key,lem:E-dichotomy,lem:E-nearest}
+\footnote{\nolinkurl{Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindow.lean:83}.}%
+Let $(g,\Phi,Z)$ be pole data, $0<\theta<1$ and $\delta>0$, and assume
+$\mathrm{W}(g,\theta,\delta)$. Then $\operatorname{Re}\rho\le\theta$ for every $\rho\in Z$.
+\end{theorem}
+
+The proof occupies the rest of this subsection. Throughout, for $\operatorname{Re}s>2$ and
+$k\ge0$ we write
+\[
+c_k(s)=\frac{(-1)^{k}}{k!}\,\Phi^{(k)}(s)=\int_0^\infty g(u)\,\frac{u^{k}}{k!}\,e^{-su}\,du ,
+\]
+the second equality being differentiation under the integral sign, which is legitimate by (P1)
+(\texttt{Deduction.landau\_coeff}). Note that $\Phi$ is holomorphic for $\operatorname{Re}s>2$ by
+(P1), (P2), so by (P4) (a pole is a point near which $\Phi$ is unbounded)
+\begin{equation}\label{eq:E-poles-left}
+\operatorname{Re}\rho\le2\qquad\text{for all }\rho\in Z
+\end{equation}
+(\texttt{Deduction.landau\_pole\_re\_le}).
+
+\begin{lemma}[Kernel bounds]\label{lem:E-kernel}
+\lean{Deduction.landau_kernel_max, Deduction.kernel_integral, Deduction.landau_tails_chernoff}
+\footnote{\nolinkurl{Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauKernelMax.lean:9}, \nolinkurl{Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/kernelIntegral.lean:9}, \nolinkurl{Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauTails.lean:18}.}%
+Let $k\ge0$ be an integer.
+\begin{enumerate}
+\item For $a>0$ and $u\ge0$: $\dfrac{u^{k}e^{-au}}{k!}\le\dfrac1{a^{k}}$.
+\item For $a>0$: $\displaystyle\int_0^\infty\frac{u^{k}e^{-au}}{k!}\,du=\frac1{a^{k+1}}$.
+\item For $0\le l<s$ and arbitrary $U,V\in\mathbb R$,
+\[
+\int_{(0,\infty)\smallsetminus[U,V]}\frac{u^{k}e^{-su}}{k!}\,du\le
+\frac{e^{lU}}{(s+l)^{k+1}}+\frac{e^{-lV}}{(s-l)^{k+1}} .
+\]
+\end{enumerate}
+\end{lemma}
+\begin{proof}
+(1) With $t=au$: $t^{k}/k!\le e^{t}$. (2) is the Gamma integral. (3) Outside $[U,V]=\{u:U\le u\le V\}$, either $u<U$ or $u>V$, including when $V<U$. For $u<U$ we have
+$1\le e^{l(U-u)}$ and for $u>V$ we have $1\le e^{l(u-V)}$; hence on the domain of integration
+$e^{-su}\le e^{lU}e^{-(s+l)u}+e^{-lV}e^{-(s-l)u}$. Integrate over $(0,\infty)$ and use (2).
+\textit{[Status: complete]}
+\end{proof}
+
+\begin{lemma}[Tails are negligible for a suitable $k$]\label{lem:E-tails}
+\lean{Deduction.landau_tails}\uses{lem:E-kernel}
+\footnote{\nolinkurl{Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauTails.lean:80}.}%
+Let $\delta>0$. Put $l=2+6/\delta$, $M=l(1+\delta)$ and $\sigma=M(2+l)$; then $\sigma>2$. There is a
+constant $C=C(\delta)$ such that for every $U\ge1$ the integer
+$k=\lceil(1+\delta/2)\sigma U\rceil$ satisfies $k\ge U$ and
+\[
+\int_{(0,\infty)\smallsetminus[U,(1+\delta)U]}\frac{u^{k}e^{-(\sigma-2)u}}{k!}\,du\le\frac{C}{\sigma^{k}} .
+\]
+\end{lemma}
+\begin{proof}
+We have $l>2$, $M>l$, hence $\sigma-2>l(2+l)-2>l$. Apply Lemma~\ref{lem:E-kernel}(3) with
+$s=\sigma-2$ and $V=(1+\delta)U$. It remains to bound the two terms by a constant times
+$\sigma^{-k}$. We use $1+t\le e^{t}$.
+
+\emph{Lower tail.} $\dfrac{\sigma}{\sigma-2+l}=1-\dfrac{l-2}{\sigma-2+l}\le
+\exp\Bigl(-\dfrac{l-2}{\sigma-2+l}\Bigr)$, so
+\[
+\frac{e^{lU}}{(\sigma-2+l)^{k+1}}=\frac{1}{(\sigma-2+l)\,\sigma^{k}}\;e^{lU}
+\Bigl(\frac{\sigma}{\sigma-2+l}\Bigr)^{k}\le
+\frac{1}{(\sigma-2+l)\,\sigma^{k}}\exp\Bigl(lU-\frac{k(l-2)}{\sigma-2+l}\Bigr).
+\]
+Since $k\ge(1+\delta/2)\sigma U$ and $(1+\delta/2)(l-2)=(1+\delta/2)\cdot6/\delta=l+1$, we get
+$k(l-2)\ge(l+1)\sigma U$; and $(l+1)\sigma\ge l(\sigma-2+l)$ because $\sigma\ge l(l-2)$. Hence the
+exponent is $\le0$ and the lower tail is at most $\dfrac{1}{(\sigma-2+l)\sigma^{k}}$.
+
+\emph{Upper tail.} $\sigma-2-l=(M-1)(2+l)$, so
+$\dfrac{\sigma}{\sigma-2-l}=1+\dfrac{1}{M-1}\le e^{1/(M-1)}$ and
+\[
+\frac{e^{-lV}}{(\sigma-2-l)^{k+1}}\le\frac{1}{(\sigma-2-l)\,\sigma^{k}}
+\exp\Bigl(-MU+\frac{k}{M-1}\Bigr),
+\]
+using $lV=l(1+\delta)U=MU$. Now $k\le(1+\delta/2)\sigma U+1$ and
+$(1+\delta/2)(2+l)=7+6/\delta+2\delta=M-1$, so $(1+\delta/2)\sigma=M(M-1)$ and
+$k/(M-1)\le MU+1/(M-1)\le MU+1$ (note $M-1\ge1$). Hence the upper tail is at most
+$\dfrac{e}{(\sigma-2-l)\sigma^{k}}$.
+
+So $C=\dfrac{e}{\sigma-2-l}+\dfrac{1}{\sigma-2+l}$ works. Finally
+$k\ge(1+\delta/2)\sigma U\ge U$.
+\textit{[Status: complete]}
+\end{proof}
+
+\begin{proposition}[Key inequality for Taylor coefficients]\label{prop:E-landau-key}
+\lean{Deduction.landau_window_key, Deduction.landau_window_ineq}\uses{lem:E-kernel,lem:E-tails,def:E-poledata,def:E-windowU}
+\footnote{\nolinkurl{Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindow.lean:40}, \nolinkurl{Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindowIneq.lean:27}.}%
+Let $(g,\Phi,Z)$ be pole data, $0<\theta<1$, $\delta>0$, and assume $\mathrm W(g,\theta,\delta)$.
+Let $\sigma=\sigma(\delta)>2$ be as in Lemma~\ref{lem:E-tails}. There is a constant $C_1$ (depending
+on $\delta$ and on $C_0$ of \textup{(P1)}) such that for every $\eta>0$ and every $U_0$ there are a
+real $U\ge U_0$ and an integer $k\ge U$ with
+\[
+|c_k(\sigma+i\gamma)|+\operatorname{Re}c_k(\sigma)\le\frac{C_1e^{\eta U}}{(\sigma-\theta)^{k}}
+\qquad\text{for all }\gamma\in\mathbb R .
+\]
+\end{proposition}
+\begin{proof}
+Let $w_k(u)=u^{k}e^{-\sigma u}/k!\ge0$. Then
+$|c_k(\sigma+i\gamma)|\le\int_0^\infty|g|\,w_k$ and
+$\operatorname{Re}c_k(\sigma)=c_k(\sigma)=\int_0^\infty g\,w_k$, so
+\begin{equation}\label{eq:E-key1}
+|c_k(\sigma+i\gamma)|+\operatorname{Re}c_k(\sigma)\le\int_0^\infty\bigl(|g(u)|+g(u)\bigr)w_k(u)\,du .
+\end{equation}
+Given $\eta$ and $U_0$, take $U\ge\max(U_0,1)$ and $R$ from $\mathrm W(g,\theta,\delta)$, and $k$
+from Lemma~\ref{lem:E-tails}. Split the integral in \eqref{eq:E-key1} at the window
+$I=[U,(1+\delta)U]$.
+
+\emph{On $I$.} Since $g\le R$ and $R\ge0$ we have $|g|+g\le2R$ (if $g\ge0$ this is $2g\le2R$; if
+$g<0$ the left side is $0$). By Lemma~\ref{lem:E-kernel}(1) with $a=\sigma-\theta>0$,
+$w_k(u)=\dfrac{u^{k}e^{-(\sigma-\theta)u}}{k!}\,e^{-\theta u}\le
+\dfrac{e^{-\theta u}}{(\sigma-\theta)^{k}}$. Hence
+\[
+\int_I(|g|+g)\,w_k\le\frac{2}{(\sigma-\theta)^{k}}\int_IR(u)e^{-\theta u}\,du\le
+\frac{2e^{\eta U}}{(\sigma-\theta)^{k}} .
+\]
+
+\emph{Off $I$.} By (P1), $(|g|+g)w_k\le2C_0\,u^{k}e^{-(\sigma-2)u}/k!$, and by
+Lemma~\ref{lem:E-tails} the integral over $(0,\infty)\smallsetminus I$ is at most
+$2C_0C/\sigma^{k}\le2C_0C\,e^{\eta U}/(\sigma-\theta)^{k}$.
+
+So $C_1=2+2C_0C$ works.
+\textit{[Status: complete]}
+\end{proof}
+
+\begin{lemma}[Dichotomy for the pole nearest to $\sigma$]\label{lem:E-dichotomy}
+\lean{Deduction.landau_dichotomy, Deduction.landau_finite}
+\footnote{\nolinkurl{Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauDichotomy.lean:24}, \nolinkurl{Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauFinite.lean:9}.}%
+Let $Z\subset\mathbb C$ have no accumulation point in $\{\operatorname{Re}s>0\}$, let
+$0<\theta<\sigma$, assume $\operatorname{Re}\rho<\sigma$ for all $\rho\in Z$, and let
+$\rho_0\in Z$ with $\operatorname{Re}\rho_0>\theta$. Then one of the following holds.
+\begin{enumerate}
+\item[(A)] There are $D\le\sigma-\theta$ and $\rho_1\in Z$ such that the open disc
+$B(\sigma,D)$ contains no point of $Z$ and $\sigma-\operatorname{Re}\rho_1<D$.
+\item[(B)] There are a real $\beta\in Z$ with $\beta>\theta$ and a radius $r$ with
+$\sigma-\beta<r\le\sigma-\theta$ such that $\beta$ is the only point of $Z$ in $B(\sigma,r)$.
+\end{enumerate}
+\end{lemma}
+\begin{proof}
+The closed disc $\bar B(\sigma,\sigma-\theta)$ is a compact subset of
+$\{\operatorname{Re}s\ge\theta\}\subset\{\operatorname{Re}s>0\}$, so
+$F=Z\cap\bar B(\sigma,\sigma-\theta)$ is finite.
+
+If $F=\emptyset$, take $D=\sigma-\theta$ and $\rho_1=\rho_0$: (A) holds.
+
+Otherwise let $d=\min_{w\in F}|w-\sigma|\le\sigma-\theta$. No point of $Z$ lies in $B(\sigma,d)$. If
+some $\rho_1\in Z$ has $\sigma-\operatorname{Re}\rho_1<d$, then (A) holds with $D=d$. Assume now
+that $\sigma-\operatorname{Re}w\ge d$ for all $w\in Z$. A point $w$ with $|w-\sigma|=d$ and
+$\sigma-\operatorname{Re}w\ge d$ must be $w=\sigma-d$. So $\beta=\sigma-d$ is in $Z$, it is the
+unique point of $F$ at distance $d$ from $\sigma$, and $d<\sigma-\theta$ because
+$d\le\sigma-\operatorname{Re}\rho_0<\sigma-\theta$; thus $\beta>\theta$. As $F$ is finite there is
+$r$ with $d<r\le\sigma-\theta$ such that all points of $F\smallsetminus\{\beta\}$ are at distance
+$\ge r$ from $\sigma$. Every point of $Z\cap B(\sigma,r)$ lies in $F$, hence equals $\beta$: (B)
+holds.
+\textit{[Status: complete]}
+\end{proof}
+
+\begin{lemma}[A point on the line $\operatorname{Re}s=\sigma$ with a unique nearest pole]\label{lem:E-nearest}
+\lean{Deduction.landau_nearest}
+\footnote{\nolinkurl{Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauNearest.lean:36}.}%
+Let $Z\subset\mathbb C$ have no accumulation point in $\{\operatorname{Re}s>0\}$. Suppose
+$\operatorname{Re}\rho<\sigma$ for every $\rho\in Z$, let $D<\sigma$ and let $\rho_1\in Z$ with $\sigma-\operatorname{Re}\rho_1<D$. Then
+there are $\gamma\in\mathbb R$, $\rho\in Z$ and $r$ with
+$|\sigma+i\gamma-\rho|<r\le D$ such that $\rho$ is the only point of $Z$ in
+$B(\sigma+i\gamma,r)$.
+\end{lemma}
+\begin{proof}
+We have $D>\sigma-\operatorname{Re}\rho_1>0$. Let $\gamma_0=\operatorname{Im}\rho_1$, so $|\sigma+i\gamma_0-\rho_1|=\sigma-\operatorname{Re}\rho_1<D$.
+Choose a compact interval $J\ni\gamma_0$ of positive length such that
+$|\sigma+i\gamma-\rho_1|<D$ for all $\gamma\in J$. The set
+$K=\{w:\exists\gamma\in J,\ |w-\sigma-i\gamma|\le D\}$ is compact and contained in
+$\{\operatorname{Re}w\ge\sigma-D\}\subset\{\operatorname{Re}w>0\}$, so $Z\cap K$ is finite. For two
+distinct points $a,b\in Z\cap K$ the equation $|\sigma+i\gamma-a|=|\sigma+i\gamma-b|$ reads
+\[
+2\gamma(\operatorname{Im}b-\operatorname{Im}a)=(\sigma-\operatorname{Re}b)^{2}-(\sigma-\operatorname{Re}a)^{2}
++(\operatorname{Im}b)^{2}-(\operatorname{Im}a)^{2}.
+\]
+If $\operatorname{Im}a\neq\operatorname{Im}b$ it has exactly one solution $\gamma$. If
+$\operatorname{Im}a=\operatorname{Im}b$ it would force
+$(\sigma-\operatorname{Re}a)^{2}=(\sigma-\operatorname{Re}b)^{2}$ with both bases positive, i.e.\
+$a=b$; so it has no solution. Hence only finitely many $\gamma$ are ``bad'' and we can choose
+$\gamma\in J$ which is not. Put $z=\sigma+i\gamma$. The points of $Z$ in $\bar B(z,D)$ lie in $K$,
+are finitely many, include $\rho_1$, and have pairwise different distances to $z$. Let $\rho$ be the
+nearest one, $d=|z-\rho|<D$, and let $r$ be the minimum of $D$ and of the second smallest distance
+(or $r=D$ if there is no second point). Then $d<r\le D$ and $\rho$ is the only point of $Z$ in
+$B(z,r)$.
+\textit{[Status: complete]}
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:E-landau-window}]
+Suppose $\rho_0\in Z$ has $\operatorname{Re}\rho_0>\theta$. Let $\sigma>2$ and $C_1$ be as in
+Proposition~\ref{prop:E-landau-key}. By \eqref{eq:E-poles-left}, $\operatorname{Re}\rho<\sigma$
+for all $\rho\in Z$. We use two standard facts about Taylor coefficients.
+
+\emph{(T1) Cauchy's estimate.} If $\Psi$ is holomorphic on $B(z,r)$ and $0<r'<r$, then with
+$M=\max_{|s-z|=r'}|\Psi(s)|$ one has $|\Psi^{(k)}(z)/k!|\le M/r'^{k}$ for all $k$
+(\texttt{Deduction.landau\_cauchy}).
+
+\emph{(T2) Coefficients near a simple pole.} If $\Phi$ is holomorphic on
+$B(z,r)\smallsetminus\{\rho\}$, $\rho\neq z$, and $\Phi(s)=c/(s-\rho)+h(s)$ near $\rho$ with $h$
+holomorphic at $\rho$, then $\Psi(s)=\Phi(s)-c/(s-\rho)$ extends holomorphically to $B(z,r)$;
+since $\dfrac{(-1)^{k}}{k!}\dfrac{d^{k}}{ds^{k}}\dfrac{c}{s-\rho}=\dfrac{c}{(s-\rho)^{k+1}}$, (T1)
+gives for $0<r'<r$ a constant $M$ with
+\[
+\Bigl|\frac{(-1)^{k}}{k!}\Phi^{(k)}(z)-\frac{c}{(z-\rho)^{k+1}}\Bigr|\le\frac{M}{r'^{k}}\qquad(k\ge0)
+\]
+(\texttt{Deduction.landau\_pole\_asym}).
+
+Apply Lemma~\ref{lem:E-dichotomy}.
+
+\emph{Case (A).} We have $D\le\sigma-\theta<\sigma$. Lemma~\ref{lem:E-nearest} gives
+$z=\sigma+i\gamma$, $\rho\in Z$ and $r$ with $d:=|z-\rho|<r\le D$, $\rho$ the only pole in
+$B(z,r)$; note $d>0$ since $\operatorname{Re}\rho<\sigma$, and $B(z,r)\subset\{\operatorname{Re}>0\}$.
+Put $r'=(d+r)/2$, so $d<r'<r\le D\le\sigma-\theta$. By (T2) with the residue $c=c_\rho\neq0$ of
+(P4), and by (T1) on $B(\sigma,D)$ (which contains no pole and lies in
+$\{\operatorname{Re}>0\}$), there are $M,M'$ with
+\[
+\frac{|c|}{d^{k+1}}\le|c_k(z)|+\frac{M}{r'^{k}},\qquad
+\operatorname{Re}c_k(\sigma)\ge-|c_k(\sigma)|\ge-\frac{M'}{r'^{k}}\qquad(k\ge0).
+\]
+Let $\eta=\tfrac12\log(r'/d)>0$. For every $U_0$, Proposition~\ref{prop:E-landau-key} gives
+$U\ge U_0$ and $k\ge U$ with
+\[
+\frac{|c|}{d^{k+1}}\le\frac{C_1e^{\eta U}}{(\sigma-\theta)^{k}}+\frac{M+M'}{r'^{k}}\le
+\frac{(C_1+M+M')\,e^{\eta k}}{r'^{k}},
+\]
+where we used $r'\le\sigma-\theta$ and $U\le k$. Hence
+$(r'/d)^{k/2}\le(C_1+M+M')\,d/|c|$ for integers $k\ge U_0$ with $U_0$ arbitrarily large, which is
+absurd since $r'/d>1$ (\texttt{Deduction.landau\_growth\_contra},
+\texttt{Deduction.landau\_window\_contra}).
+
+\emph{Case (B).} Let $d=\sigma-\beta>0$ and $r'=(d+r)/2$, so $d<r'<r\le\sigma-\theta$, and
+$B(\sigma,r)\subset\{\operatorname{Re}>0\}$ contains only the pole $\beta$. By (T2) with the residue
+$c=c_\beta>0$ of (P4), and because $(\sigma-\beta)^{k+1}$ is real,
+\[
+\operatorname{Re}c_k(\sigma)\ge\frac{c}{d^{k+1}}-\frac{M}{r'^{k}}\qquad(k\ge0).
+\]
+With $\gamma=0$, Proposition~\ref{prop:E-landau-key} and $|c_k(\sigma)|\ge0$ give, for the same
+$\eta$ and arbitrary $U_0$, some $k\ge U\ge U_0$ with
+$c/d^{k+1}\le(C_1+M)e^{\eta k}/r'^{k}$, the same contradiction.
+
+Hence no such $\rho_0$ exists.
+\textit{[Status: complete]}
+\end{proof}
+
+\begin{remark}\label{rem:E-landau-compare}
+If the upper bound holds for all large $u$ the theorem reduces to (a special case of) Landau's
+theorem, cf.\ \cite[\S15.1]{E-MV}. In the windowed form the hypothesis $c_\rho>0$ at real poles
+cannot be dropped and replaces the usual positivity of coefficients; non-real poles are handled by
+moving the centre of expansion along the line $\operatorname{Re}s=\sigma$. The assumption
+$\theta<1$, together with $\sigma>2$, gives $\sigma-\theta>0$ when bounding the window integral
+and dividing by $(\sigma-\theta)^k$ (\texttt{Deduction.landau\_window\_key},
+\nolinkurl{Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindow.lean:40,57,60}).
+\end{remark}
+
+\subsection{Application to families of characters}
+
+\begin{definition}[Character family]\label{def:E-charfamily}
+\lean{Deduction.CharFamily, Deduction.Gm, Deduction.ZeroFree, Deduction.zeroSet}
+\footnote{\nolinkurl{Development/AutomorphicArithmetic/DedekindLFunctions/CharFamily.lean:24,36,38}, \nolinkurl{Development/AutomorphicArithmetic/DedekindLFunctions/LandauZeroFreeCriterion.lean:11}.}%
+A \emph{character family} $F$ is a finite index set $I$, for each $i\in I$ a Dirichlet character
+$\chi_i$ modulo $N_i$ which is either non-principal or the character $\mathbf 1$ modulo $1$, and
+weights $a_i>0$. Put $\mathcal G_F(y)=\sum_{i}a_i\operatorname{Re}G_{\chi_i}(y)$ and
+\[
+Z_F=\{\rho\in\mathbb C:\ \operatorname{Re}\rho>0,\ \rho\neq1,\ \exists i:\ L(\rho,\chi_i)=0\text{ or }
+L(\bar\rho,\chi_i)=0\}.
+\]
+$F$ is \emph{zero-free above $\theta$} if $L(s,\chi_i)\neq0$ for all $i$ and
+$\operatorname{Re}s>\theta$.
+\end{definition}
+
+\begin{lemma}[Mellin transform of $G_\chi$]\label{lem:E-mellin}
+\lean{Deduction.mellin_Gchi_of_ne_one, Deduction.mellin_Gchi_modOne, Deduction.mellin_ramp, Deduction.Gchi_growth}
+\footnote{\nolinkurl{Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/mellinGchiOfNeOne.lean:116}, \nolinkurl{Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/mellinGchiModOne.lean:115}, \nolinkurl{Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/MellinRamp.lean:10}, \nolinkurl{Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/GchiGrowth.lean:37}.}%
+Let $\chi$ be non-principal modulo $N$, or $\chi=\mathbf 1$. Then $|G_\chi(y)|\le Cy^{2}$ for
+$y\ge1$ with a constant $C=C(\chi)$, and for $\operatorname{Re}s>1$
+\[
+\int_1^\infty G_\chi(y)\,y^{-s-1}\,dy=\Phi_\chi(s):=
+\begin{cases}
+\dfrac{-\dfrac{L'}{L}(s,\chi)+s\,\ell(\chi)}{s(s-1)}, & \chi\neq\mathbf 1,\\[3ex]
+-\dfrac{\dfrac{\zeta'}{\zeta}(s)+\dfrac1{s-1}+1-(1+\gamma)s}{s(s-1)}, & \chi=\mathbf 1 .
+\end{cases}
+\]
+\end{lemma}
+\begin{proof}
+\emph{Growth.} For $y\ge1$ and $n\le y$ we have $0\le\Lambda(n)(y/n-1)\le(\log y)\,y/n$, so
+$\bigl|\sum_{n\le y}\Lambda(n)\chi(n)(y/n-1)\bigr|\le y\log y\,(1+\log y)\ll y^{2}$; the remaining
+terms $y\,\ell(\chi)$, $y\log y$ and $(1+\gamma)y$ are also $O(y^{2})$.
+
+\emph{Transform.} For $n\ge1$ and $\operatorname{Re}s>1$,
+\[
+\int_1^\infty\max\Bigl(\frac yn-1,0\Bigr)y^{-s-1}dy=\int_n^\infty\Bigl(\frac{y^{-s}}{n}-y^{-s-1}\Bigr)dy
+=\frac{n^{-s}}{s-1}-\frac{n^{-s}}{s}=\frac{n^{-s}}{s(s-1)} .
+\]
+Since $\sum_n\Lambda(n)n^{-\operatorname{Re}s}<\infty$, Fubini's theorem gives
+$\int_1^\infty\sum_{n\le y}\Lambda(n)\chi(n)(y/n-1)\,y^{-s-1}dy=
+\dfrac{1}{s(s-1)}\sum_n\Lambda(n)\chi(n)n^{-s}=-\dfrac{1}{s(s-1)}\dfrac{L'}{L}(s,\chi)$. Further
+$\int_1^\infty y\cdot y^{-s-1}dy=\dfrac1{s-1}$ and
+$\int_1^\infty y\log y\cdot y^{-s-1}dy=\dfrac1{(s-1)^{2}}$. For $\chi\neq\mathbf1$ this gives the
+first formula. For $\chi=\mathbf 1$ we get
+$-\dfrac{\zeta'/\zeta(s)}{s(s-1)}-\dfrac{1}{(s-1)^{2}}+\dfrac{1+\gamma}{s-1}$, which equals the
+second formula because $\dfrac1{(s-1)^{2}}=\dfrac{1}{s(s-1)}\Bigl(\dfrac1{s-1}+1\Bigr)$.
+\textit{[Status: complete]}
+\end{proof}
+
+\begin{proposition}[Pole data of a character family]\label{prop:E-poledata-family}
+\lean{Deduction.poleData, Deduction.poleData_char}\uses{def:E-poledata,def:E-charfamily,lem:E-mellin}
+\footnote{\nolinkurl{Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/poleData.lean:248,137}.}%
+Let $F$ be a character family and $g(u)=\mathcal G_F(e^{u})$. There is $\Phi$ such that
+$(g,\Phi,Z_F)$ is pole data.
+\end{proposition}
+\begin{proof}
+Since $\ell(\bar\chi)=\overline{\ell(\chi)}$ we have $\overline{G_\chi(y)}=G_{\bar\chi}(y)$, hence
+$\operatorname{Re}G_\chi=\tfrac12(G_\chi+G_{\bar\chi})$. Put
+$\Phi=\sum_ia_i\cdot\tfrac12(\Phi_{\chi_i}+\Phi_{\bar\chi_i})$ with $\Phi_\chi$ as in
+Lemma~\ref{lem:E-mellin}.
+
+(P1): measurability is clear (step functions and continuous functions), and
+$|g(u)|\le C_0e^{2u}$ by Lemma~\ref{lem:E-mellin}. (P2): substitute $y=e^{u}$ in
+Lemma~\ref{lem:E-mellin}; the integral converges absolutely for $\operatorname{Re}s>2$ by (P1).
+
+(P3), (P4): fix a non-principal $\chi$. $L(s,\chi)$ is entire and $L(1,\chi)\neq0$. The numerator
+$-\frac{L'}{L}(s,\chi)+s\ell(\chi)$ of $\Phi_\chi$ vanishes at $s=1$, so $\Phi_\chi$ is holomorphic
+at $s=1$. In $\operatorname{Re}s>0$ the only other singularities are at the zeros $\rho$ of
+$L(s,\chi)$, where $-L'/L$ has a simple pole with residue $-m_\chi(\rho)$ ($m_\chi(\rho)\ge1$ the
+multiplicity); hence $\Phi_\chi$ has there a simple pole with residue
+\[
+-\frac{m_\chi(\rho)}{\rho(\rho-1)} ,
+\]
+which makes sense since $\rho\neq0,1$. For $\chi=\mathbf 1$: from
+$\zeta(s)=\dfrac1{s-1}+\gamma+O(s-1)$ we get
+$\dfrac{\zeta'}{\zeta}(s)+\dfrac1{s-1}=\gamma+O(s-1)$, so the numerator of $\Phi_{\mathbf1}$ is
+holomorphic near $1$ and vanishes at $s=1$; again $\Phi_{\mathbf 1}$ is holomorphic at $1$ and has
+simple poles with residues $-m_\zeta(\rho)/(\rho(\rho-1))$ at the zeros of $\zeta$ in
+$\operatorname{Re}s>0$. As $m_{\bar\chi}(\rho)=m_\chi(\bar\rho)$, the function $\Phi$ is meromorphic
+in $\operatorname{Re}s>0$ with at most simple poles, and its residue at $\rho$ is
+\[
+c_\rho=-\frac{1}{\rho(\rho-1)}\sum_ia_i\,\frac{m_{\chi_i}(\rho)+m_{\chi_i}(\bar\rho)}{2},
+\]
+with the convention $m=0$ at a non-zero. Because all $a_i>0$, the sum is a non-negative real number
+which is positive exactly when $\rho\in Z_F$. So $\Phi$ is holomorphic off $Z_F$ and has a simple
+pole with $c_\rho\neq0$ at each point of $Z_F$; $Z_F$ is discrete in $\operatorname{Re}s>0$ as a
+finite union of zero sets. Finally let $\rho=\beta\in Z_F$ be real. No $L(s,\chi_i)$ vanishes for
+$\operatorname{Re}s\ge1$ \cite{E-mathlib-nonvanishing}, so $0<\beta<1$ and
+$-1/(\beta(\beta-1))>0$; hence $c_\beta>0$.
+\textit{[Status: complete]}
+\end{proof}
+
+\begin{theorem}[Landau on windows for a character family]\label{thm:E-rpow-window}
+\lean{Deduction.zeroFree_of_rpow_window, Deduction.lemmaL, Deduction.windowHyp_of_rpow, Deduction.windowHypU_of_windowHyp}
+\uses{thm:E-landau-window,prop:E-poledata-family}
+\footnote{\nolinkurl{Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ZeroFreeOfRpowWindow.lean:11}, \nolinkurl{Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/lemmaL.lean:13}, \nolinkurl{Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/WindowHypOfRpow.lean:27}, \nolinkurl{Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/WindowHypUOfWindowHyp.lean:29}.}%
+Let $F$ be a character family, $0<\theta<1$, $\delta>0$ and $C\in\mathbb R$. Assume that for every
+$Y_0$ there is $Y\ge Y_0$ such that
+\[
+\mathcal G_F(y)\le C\,y^{\theta}\qquad\text{for all }y\in[Y,Y^{1+\delta}].
+\]
+Then $F$ is zero-free above $\theta$.
+\end{theorem}
+\begin{proof}
+Let $g(u)=\mathcal G_F(e^{u})$. We check $\mathrm W(g,\theta,\delta)$. Given $\eta>0$ and $U_0$,
+choose $Y\ge\max(e^{U_0},e)$ as in the hypothesis and so large that
+$|C|\delta\log Y\le Y^{\eta}$; put $U=\log Y\ge1$ and $R(u)=|C|e^{\theta u}$ on $[U,(1+\delta)U]$.
+Then $g\le R$ there, $R\ge0$, and
+$\int_U^{(1+\delta)U}R(u)e^{-\theta u}du=|C|\delta U\le e^{\eta U}$. By
+Proposition~\ref{prop:E-poledata-family} and Theorem~\ref{thm:E-landau-window},
+$\operatorname{Re}\rho\le\theta$ for all $\rho\in Z_F$. Now let $L(s,\chi_i)=0$ with
+$\operatorname{Re}s>\theta$. If $\operatorname{Re}s\ge1$ this contradicts the non-vanishing on
+$\operatorname{Re}s\ge1$ \cite{E-mathlib-nonvanishing}; otherwise $s\in Z_F$ and
+$\operatorname{Re}s\le\theta$, a contradiction.
+\textit{[Status: complete]}
+\end{proof}
+
+\begin{corollary}[\texttt{formB}]\label{cor:E-formB}
+\lean{UpperTheory.Comparison₂.formB}\uses{thm:E-rpow-window,def:E-level,def:E-windows}
+\footnote{\nolinkurl{Development/AutomorphicArithmetic/PrimitiveCosets/Imports.lean:8}.}%
+Let $\mathcal L$ be a level, $\lambda>1$ and $0<\theta<1$. If the set
+$\{x:\mathcal G_{\mathcal L}(x)\le x^{\theta}\}$ has windows of exponent $\lambda$, then
+$\mathcal L$ is zero-free above $\theta$.
+\end{corollary}
+\begin{proof}
+Let $F$ be the character family indexed by $K(\mathcal L)$ with $\chi_\psi=\psi$ and weights
+$a_{\mathbf 1}=1$, $a_\psi=\operatorname{wt}(\psi)$ for $\psi\neq\mathbf 1$. The weights are
+positive ($1$ or $1/(3o+1)$), and a primitive character is either non-principal or equal to
+$\mathbf 1$ modulo $1$. Since $G_{\mathbf 1}=G$ is real, $\mathcal G_F=\mathcal G_{\mathcal L}$.
+Apply Theorem~\ref{thm:E-rpow-window} with $\delta=\lambda-1$ and $C=1$.
+\textit{[Status: complete]}
+\end{proof}
+
+%======================================================================

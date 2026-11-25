@@ -1,0 +1,104 @@
+{
+  "id": "Z5.2",
+  "title": "Height of the evaluation dual",
+  "track": {
+    "primary": "arakelov",
+    "secondary": []
+  },
+  "statement": "For positive full rank $D$ and invertible archimedean frames over the same field, the evaluation dual has reciprocal height and size. Thus its ordinary slope has the opposite sign to the primal slope $-2\\log\\mathrm{ht}/(nD)$.",
+  "assumptions": [
+    "source:blueprint_v13"
+  ],
+  "hypothesis_details": [
+    "Use a lattice of positive full rank in the invertible archimedean frames.",
+    "Use the specified evaluation pairing."
+  ],
+  "lean": [
+    {
+      "name": "Formalism.DivisionValues.dual_lattice_measure",
+      "file": "Formalism/QuotientMetricDivisors/HermitianTwistDivisors/DualMu.lean",
+      "line0": 14,
+      "line1": 48,
+      "sha256": "89ec3a4b1789ce315e4a9e80641233fd5284092e289ce086d86dc964a87f9630",
+      "dominated": 41,
+      "graph": "allChi",
+      "role": "statement"
+    },
+    {
+      "name": "Formalism.HN.DualPolygon.ht_dual",
+      "file": "Formalism/HarderNarasimhan/HarderNarasimhanProofs/DualPl.lean",
+      "line0": 1065,
+      "line1": 1073,
+      "sha256": "0c0cc1e736d8f0c6973a07c9e5444dfee14290d74f1ee31a136d63a83f14c90e",
+      "dominated": 9,
+      "graph": "allChi",
+      "role": "statement"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/blueprint/Z5.2.tex",
+      "section": "lem:P5-eval-realize",
+      "pages": []
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "lem:P5-eval-realize",
+      "pages": [
+        200,
+        200
+      ],
+      "printed_page": 175,
+      "scope": "First page of this named destination."
+    }
+  ],
+  "status": "Full",
+  "grade": "L0",
+  "reviews": [
+    "reviews/R20_review.md"
+  ],
+  "prerequisites": [
+    "P050",
+    "Z5.1"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "blueprint_members": [
+    "Z5.2"
+  ],
+  "representative": "Formalism.DivisionValues.dual_lattice_measure",
+  "statement_declarations": [
+    "Formalism.DivisionValues.dual_lattice_measure",
+    "Formalism.HN.DualPolygon.ht_dual"
+  ],
+  "grade_scope": "Named statement declarations with the hypotheses above. Chart supplier records have their own review scopes.",
+  "confirmation_basis": "Minimum across the statement declarations, using registry rows for the blueprint assignments listed here. Reviews of other expositions of a shared declaration are included as context.",
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "slug": "height-of-the-evaluation-dual",
+  "aliases": [
+    "dual_lattice_measure",
+    "Z5.2 Height of the evaluation dual"
+  ],
+  "background": [
+    "Hermitian duals",
+    "Lattice covolumes"
+  ],
+  "hypothesis_source": {
+    "document": "blueprint_v13",
+    "section": "lem:P5-eval-realize",
+    "pages": [
+      200,
+      200
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "P050": "graph",
+    "Z5.1": "graph"
+  },
+  "summary": "In positive full rank the evaluation dual has reciprocal height and size to the primal lattice. Its ordinary slope therefore changes sign. This lets the same height calculation supply the slope of the dual under the stipulated frame normalization."
+}

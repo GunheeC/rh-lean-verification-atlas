@@ -1,0 +1,323 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "P036",
+  "edition_sha256": "885818ea4e37006663bd97f79231c9acdaa30afa4a511da2bd8828b4c2198a4d",
+  "note_sha256": "955e5fef5933007dd51c2153135350bd81804527f0ae7293dea996740f363b82",
+  "statement_sha256": "9bcab281d7b1ea7676f6c5cc87fe249f43ebcdf55d7e778ee4f42bdebb33ba95",
+  "sources": [
+    {
+      "path": "notes/units/P036.tex",
+      "sha256": "566579e5df1e4cab1837b6d4fd5287daff8aed466c8b92d3b1afe2b1d3f31c29"
+    },
+    {
+      "path": "notes/ktheory/excerpt.tex",
+      "sha256": "dd1bd49494e308d665c9e09b10f0f02d7327ce3118976e24edb08c8eca1ac8e9"
+    },
+    {
+      "path": "notes/ktheory/README.md",
+      "sha256": "eb871b4072febd45e005fc23bfb4b6a262a7fc1a22defc39248c0796971945cd"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Divisor injectivity gives an exact unit/class-group count for the finite quotient $W$.",
+      "kind": "computation",
+      "uses": [
+        "input: twisted divisor calculation"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.ZK.sCount",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/SelmerOrderCounts.lean",
+          "line0": 16,
+          "line1": 111
+        }
+      ],
+      "source": "notes/units/P036.tex",
+      "anchor": "determines",
+      "source_lines": [
+        13,
+        51
+      ],
+      "claim_sha256": "53d89e775e2e17ab67f55a1c3ba584cba97b6711d8a8da1fffa371d1f90714c0",
+      "passage_sha256": "47f767677b010f5a3b95e6ef610d93b1c1bd6a184b2c2b17b9b52b4822b09f45",
+      "sha256": "5b3373d39e10f397d97930d7419813f3f546a903177c1594f3b7228cf6368775",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Removing the constant direction in the unit-lattice determinant gives the factor $(a^h-1)^{r_2(L)}/(a-1)$.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "standard: logarithmic unit lattice"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.ZK.sCount",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/SelmerOrderCounts.lean",
+          "line0": 16,
+          "line1": 111
+        }
+      ],
+      "source": "notes/units/P036.tex",
+      "anchor": "The unit index is calculated",
+      "source_lines": [
+        13,
+        51
+      ],
+      "claim_sha256": "309c21e507160ad9178dcb4bf0f248d24c4c615a590ac70e8356efb3a2a2ab1c",
+      "passage_sha256": "47f767677b010f5a3b95e6ef610d93b1c1bd6a184b2c2b17b9b52b4822b09f45",
+      "sha256": "25a9c9901ab50e1c5de878e1180218b6ff026538a96b0686ca568275131c2ac0",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Taking one representative per twisted-norm image class bounds its cardinality by the assumed finite-family cap.",
+      "kind": "inequality",
+      "uses": [
+        "input: finite-family cap"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.ZK.sCount",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/SelmerOrderCounts.lean",
+          "line0": 16,
+          "line1": 111
+        }
+      ],
+      "source": "notes/units/P036.tex",
+      "anchor": "A representative for each image",
+      "source_lines": [
+        53,
+        70
+      ],
+      "claim_sha256": "dc19744677a4586b86ebf3dbbe124630c97d90c42f0f3468f8dcef5d8ee40fa1",
+      "passage_sha256": "902b761ddbb26b4d7a423af0b65e4f1ba487fbbe683c008e9dcb8977e0f52aaf",
+      "sha256": "5d8626bf4159ad98d72835f80397752862bad9454afc37461f1bb364fe062762",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The initial prime-torsion generator bound and the prime-power annihilator bound the kernel contribution on successive layers.",
+      "kind": "inequality",
+      "uses": [
+        "input: initial torsion and annihilator bounds"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.ZK.sCount",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/SelmerOrderCounts.lean",
+          "line0": 16,
+          "line1": 111
+        }
+      ],
+      "source": "notes/units/P036.tex",
+      "anchor": "Multiplication by",
+      "source_lines": [
+        53,
+        70
+      ],
+      "claim_sha256": "fb3ebc5e86173b5fb8fc40321db694385974ab5496230532355f2f37c7e4fe3d",
+      "passage_sha256": "902b761ddbb26b4d7a423af0b65e4f1ba487fbbe683c008e9dcb8977e0f52aaf",
+      "sha256": "46f38a7c71a3e023aa9b131833de4d817468c5a446912d72cf78d518eef7c293",
+      "ai_review": []
+    },
+    {
+      "id": "S5",
+      "status": "active",
+      "claim": "Combining the unit index with image and kernel bounds gives the asserted character-group estimate.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.ZK.sCount",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/SelmerOrderCounts.lean",
+          "line0": 16,
+          "line1": 111
+        }
+      ],
+      "source": "notes/units/P036.tex",
+      "anchor": "Multiplying the class-character bound",
+      "source_lines": [
+        53,
+        70
+      ],
+      "claim_sha256": "e692a489636991c00cef14b6cadb9ed8de0ffb5cf46847d997d490c0ff2488bd",
+      "passage_sha256": "902b761ddbb26b4d7a423af0b65e4f1ba487fbbe683c008e9dcb8977e0f52aaf",
+      "sha256": "be9ae7045760f1925e3d61fff1b28c096c28db9b22ab928b29cbbbd5a8138ab5",
+      "ai_review": []
+    },
+    {
+      "id": "S6",
+      "status": "active",
+      "claim": "A maximum of the thresholds for a finite set of restriction classes gives a common cyclotomic layer.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: finite-layer restriction comparison"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.QuaternionShaBounds.ShaAsm_holds",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/RingEquivalences/OrderOfOneAddPrimePowZmodPrimePow.lean",
+          "line0": 454,
+          "line1": 486
+        }
+      ],
+      "source": "notes/ktheory/excerpt.tex",
+      "anchor": "Take a finite subset",
+      "source_lines": [
+        468,
+        481
+      ],
+      "claim_sha256": "cc42fc53cf3995a7cb41abbb6092e0cb83551dd8f7b9422e4ec9e20a99f3cc00",
+      "passage_sha256": "bb3fa1e734d0fcac18b59adc2f28551aadd726bff1d932ead011ea6549638a52",
+      "sha256": "b36d2ad9ffe316bc2c4290d5ad879f8e9d4f4792201be3750752ca3afde2dbc3",
+      "ai_review": []
+    },
+    {
+      "id": "S7",
+      "status": "active",
+      "claim": "The cap on each finite subset bounds the cardinality of the entire restriction image.",
+      "kind": "inequality",
+      "uses": [
+        "input: finite-family cap"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.QuaternionShaBounds.ShaAsm_holds",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/RingEquivalences/OrderOfOneAddPrimePowZmodPrimePow.lean",
+          "line0": 454,
+          "line1": 486
+        }
+      ],
+      "source": "notes/ktheory/excerpt.tex",
+      "anchor": "An infinite image would have a finite subset",
+      "source_lines": [
+        468,
+        481
+      ],
+      "claim_sha256": "e32cff176976981a0ab496d50106a854e836de3d37cbacefdcef7fc8f60dd1ce",
+      "passage_sha256": "bb3fa1e734d0fcac18b59adc2f28551aadd726bff1d932ead011ea6549638a52",
+      "sha256": "9c288df30f6ff37d8699a22d4395c6aefced4cddddfb4cc9f91d87de87c1e052",
+      "ai_review": []
+    },
+    {
+      "id": "S8",
+      "status": "active",
+      "claim": "The order of this finite module equals the residue cardinality raised to its length.",
+      "kind": "computation",
+      "uses": [
+        "standard: finite DVR-module length"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.QuaternionShaBounds.ShaAsm_holds",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/RingEquivalences/OrderOfOneAddPrimePowZmodPrimePow.lean",
+          "line0": 454,
+          "line1": 486
+        }
+      ],
+      "source": "notes/ktheory/excerpt.tex",
+      "anchor": "successive simple quotients",
+      "source_lines": [
+        468,
+        481
+      ],
+      "claim_sha256": "d57c9cb25fca90d67c1cbf4f9ccc69c179b7538f8cbafab6d796a5af79ee94dc",
+      "passage_sha256": "bb3fa1e734d0fcac18b59adc2f28551aadd726bff1d932ead011ea6549638a52",
+      "sha256": "3239481c0933a0a21aa0da61b2ef312739d41f8abbd45052aaf30198a45a8231",
+      "ai_review": []
+    },
+    {
+      "id": "S9",
+      "status": "active",
+      "claim": "The numerical cap used in the finite-subset argument is an input from the preceding arithmetic comparisons.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: separation, integral cycles and homological torsion bounds"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.ZK.sCount",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/SelmerOrderCounts.lean",
+          "line0": 16,
+          "line1": 111
+        }
+      ],
+      "source": "notes/ktheory/README.md",
+      "anchor": "The elementary last step assumes",
+      "source_lines": [
+        5,
+        5
+      ],
+      "claim_sha256": "4d99df7cb8c76ff6db6f4151719cb5bfd1b7e1c3896e8625d91271762ea9b4d3",
+      "passage_sha256": "7e953a933ed0d994005ab53f3fd1c2da162b7e88c5956b3405e3f0e3950819e9",
+      "sha256": "3d0bc5cd71977e8635de244a6f2632f3b6c0bd170a60c369abe8786153d05d89",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "7e25794d56bd833e1dc5b4352541ba6e2e07f388b4330a467c94c399a1374062",
+      "sources": [
+        {
+          "path": "notes/units/P036.tex",
+          "sha256": "ba4c32c40c1aca3a98f6f3cb1acd4e3d1cf13da46e266cbfe0e1eb6dae7db980"
+        },
+        {
+          "path": "notes/ktheory/excerpt.tex",
+          "sha256": "c09bf569423a4adcc357469a72540bf168dc767901cf0cbf5fd63aaf69616873"
+        },
+        {
+          "path": "notes/ktheory/README.md",
+          "sha256": "eb871b4072febd45e005fc23bfb4b6a262a7fc1a22defc39248c0796971945cd"
+        }
+      ],
+      "statement_sha256": "9bcab281d7b1ea7676f6c5cc87fe249f43ebcdf55d7e778ee4f42bdebb33ba95",
+      "steps": {
+        "S1": "5b3373d39e10f397d97930d7419813f3f546a903177c1594f3b7228cf6368775",
+        "S2": "25a9c9901ab50e1c5de878e1180218b6ff026538a96b0686ca568275131c2ac0",
+        "S3": "5d8626bf4159ad98d72835f80397752862bad9454afc37461f1bb364fe062762",
+        "S4": "46f38a7c71a3e023aa9b131833de4d817468c5a446912d72cf78d518eef7c293",
+        "S5": "be9ae7045760f1925e3d61fff1b28c096c28db9b22ab928b29cbbbd5a8138ab5",
+        "S6": "b36d2ad9ffe316bc2c4290d5ad879f8e9d4f4792201be3750752ca3afde2dbc3",
+        "S7": "9c288df30f6ff37d8699a22d4395c6aefced4cddddfb4cc9f91d87de87c1e052",
+        "S8": "3239481c0933a0a21aa0da61b2ef312739d41f8abbd45052aaf30198a45a8231",
+        "S9": "3d0bc5cd71977e8635de244a6f2632f3b6c0bd170a60c369abe8786153d05d89"
+      },
+      "step_texts": {
+        "S1": "Divisor injectivity gives an exact unit/class-group count for the finite quotient $W$.",
+        "S2": "Removing the constant direction in the unit-lattice determinant gives the factor $(a^h-1)^{r_2(L)}/(a-1)$.",
+        "S3": "Taking one representative per twisted-norm image class bounds its cardinality by the assumed finite-family cap.",
+        "S4": "The initial prime-torsion generator bound and the prime-power annihilator bound the kernel contribution on successive layers.",
+        "S5": "Combining the unit index with image and kernel bounds gives the asserted character-group estimate.",
+        "S6": "A maximum of the thresholds for a finite set of restriction classes gives a common cyclotomic layer.",
+        "S7": "The cap on each finite subset bounds the cardinality of the entire restriction image.",
+        "S8": "The order of this finite module equals the residue cardinality raised to its length.",
+        "S9": "The numerical cap used in the finite-subset argument is an input from the preceding arithmetic comparisons."
+      },
+      "step_passages": {
+        "S1": "47f767677b010f5a3b95e6ef610d93b1c1bd6a184b2c2b17b9b52b4822b09f45",
+        "S2": "47f767677b010f5a3b95e6ef610d93b1c1bd6a184b2c2b17b9b52b4822b09f45",
+        "S3": "902b761ddbb26b4d7a423af0b65e4f1ba487fbbe683c008e9dcb8977e0f52aaf",
+        "S4": "902b761ddbb26b4d7a423af0b65e4f1ba487fbbe683c008e9dcb8977e0f52aaf",
+        "S5": "902b761ddbb26b4d7a423af0b65e4f1ba487fbbe683c008e9dcb8977e0f52aaf",
+        "S6": "bb3fa1e734d0fcac18b59adc2f28551aadd726bff1d932ead011ea6549638a52",
+        "S7": "bb3fa1e734d0fcac18b59adc2f28551aadd726bff1d932ead011ea6549638a52",
+        "S8": "bb3fa1e734d0fcac18b59adc2f28551aadd726bff1d932ead011ea6549638a52",
+        "S9": "7e953a933ed0d994005ab53f3fd1c2da162b7e88c5956b3405e3f0e3950819e9"
+      }
+    }
+  ]
+}

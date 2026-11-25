@@ -1,0 +1,157 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "P003",
+  "edition_sha256": "db17c2d9e47984ec310dd2f465fe6ec8f25bd11a331b82dafed5a9f1c587e347",
+  "note_sha256": "f99daf1b995a6cd16f8236f2a1e8b47a1edb7830203845ab7df87d120aca4190",
+  "statement_sha256": "8cfe5a0c09d0490d2dc31639d3638fb2c8758e96d60f15d74dcd80363818973d",
+  "sources": [
+    {
+      "path": "notes/units/P003_round3.md",
+      "sha256": "f99daf1b995a6cd16f8236f2a1e8b47a1edb7830203845ab7df87d120aca4190"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The public and internal half-plane predicates agree after unfolding, including the principal-character exception.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "P009"
+      ],
+      "lean": [
+        {
+          "name": "LFunction_ne_zero_of_half_lt_re",
+          "file": "Main.lean",
+          "line0": 8,
+          "line1": 8
+        }
+      ],
+      "source": "notes/units/P003_round3.md",
+      "anchor": "The exact assertion exported",
+      "source_lines": [
+        7,
+        7
+      ],
+      "claim_sha256": "40a13e39267ab81766e34b8de5dc902a4fd4d5f574200004b95b6f2edf66d805",
+      "passage_sha256": "9a6692fe79722ca97298cf509285817a4669e2ac2e464ce7e4f77f690a39e250",
+      "sha256": "1ebeba93b155e4a30f0ed13fbfd0ef86f10292e4ae12651e4607667a5c3c33b0",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The primitive supplier has no pole exclusion; the conductor-change formula separately uses the transferred exception.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: primitive ZeroFreeAll"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Top.imprimitive",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/Imprimitive.lean",
+          "line0": 5,
+          "line1": 35
+        }
+      ],
+      "source": "notes/units/P003_round3.md",
+      "anchor": "Lift nonvanishing from the conductor",
+      "source_lines": [
+        13,
+        13
+      ],
+      "claim_sha256": "fb59f8e666b84d2ccee956ddb16316a77405c7be70b82a253711749b76a1218d",
+      "passage_sha256": "f68ce9cc4f37a63876cea7dae7f784276aec0a493aeeb0bba9fca530539ba9d8",
+      "sha256": "2fff4833d52dcc852c88d28e4d6f7dd2fe0a5b43028139281da397b9d585ceab",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Each missing Euler factor is nonzero because its subtracted term has norm strictly below one.",
+      "kind": "inequality",
+      "uses": [
+        "S2",
+        "standard: character norm bound"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Top.imprimitive",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/Imprimitive.lean",
+          "line0": 5,
+          "line1": 35
+        }
+      ],
+      "source": "notes/units/P003_round3.md",
+      "anchor": "The change-of-level formula now expresses",
+      "source_lines": [
+        17,
+        17
+      ],
+      "claim_sha256": "17d698f2608482f4f65a40a9bb766b591b844e7a830a743b1e29ff443fcdb0e7",
+      "passage_sha256": "ef1369c745420fb1852c6ecaa206778794b28da1e4c13fba77b11c84d6f1292a",
+      "sha256": "b68b7a685ab607f073edd8932ba8d5a5d60c01ca2e58491294ec0c4e0cfc7296",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The primitive zero-free result furnished at the fixed geometric witness extends by change of level to all characters.",
+      "kind": "assembly",
+      "uses": [
+        "S2",
+        "S3",
+        "P014",
+        "P015"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Top.every_character_of_green_v_win",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean",
+          "line0": 16,
+          "line1": 18
+        }
+      ],
+      "source": "notes/units/P003_round3.md",
+      "anchor": "What supplies the primitive input",
+      "source_lines": [
+        25,
+        25
+      ],
+      "claim_sha256": "5138e9afa8dcb5cb0a442715b0d0922a2dcbcf15953de133dd2704fd27c37a71",
+      "passage_sha256": "1dd592d5d9050f29873a3e23329aeca89a32337ed606e5138cdf32b844ba2a96",
+      "sha256": "6b112f23144e47738304a5cb31eb39be652db830ce432653aa9ed087707176a9",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "3f0f7b9bf0f382b82126bc0f8880a65ed429a1de68d50873e78b815dd54ac899",
+      "sources": [
+        {
+          "path": "notes/units/P003_round3.md",
+          "sha256": "775f56b0026b6af63fa47870055a580c1fb11a103fe510f0bd3aa95e55cd7bbb"
+        }
+      ],
+      "statement_sha256": "8cfe5a0c09d0490d2dc31639d3638fb2c8758e96d60f15d74dcd80363818973d",
+      "steps": {
+        "S1": "1ebeba93b155e4a30f0ed13fbfd0ef86f10292e4ae12651e4607667a5c3c33b0",
+        "S2": "2fff4833d52dcc852c88d28e4d6f7dd2fe0a5b43028139281da397b9d585ceab",
+        "S3": "b68b7a685ab607f073edd8932ba8d5a5d60c01ca2e58491294ec0c4e0cfc7296",
+        "S4": "6b112f23144e47738304a5cb31eb39be652db830ce432653aa9ed087707176a9"
+      },
+      "step_texts": {
+        "S1": "The public and internal half-plane predicates agree after unfolding, including the principal-character exception.",
+        "S2": "The primitive supplier has no pole exclusion; the conductor-change formula separately uses the transferred exception.",
+        "S3": "Each missing Euler factor is nonzero because its subtracted term has norm strictly below one.",
+        "S4": "The primitive zero-free result furnished at the fixed geometric witness extends by change of level to all characters."
+      },
+      "step_passages": {
+        "S1": "9a6692fe79722ca97298cf509285817a4669e2ac2e464ce7e4f77f690a39e250",
+        "S2": "f68ce9cc4f37a63876cea7dae7f784276aec0a493aeeb0bba9fca530539ba9d8",
+        "S3": "ef1369c745420fb1852c6ecaa206778794b28da1e4c13fba77b11c84d6f1292a",
+        "S4": "1dd592d5d9050f29873a3e23329aeca89a32337ed606e5138cdf32b844ba2a96"
+      }
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "T09",
+  "edition_sha256": "1d65f1e93478b4d26528860edf8ba140607f4ecad2a810d60183756b7601e95b",
+  "note_sha256": "e845e5ae402db212d4ebff62567ea139d8c07a082756a14a1d9313cc4b554d96",
+  "statement_sha256": "9f36106a427641810a727bf6abbd8b19911e2b6c24f7915f8e07de41a324c586",
+  "sources": [
+    {
+      "path": "notes/units/T09_round3.md",
+      "sha256": "e845e5ae402db212d4ebff62567ea139d8c07a082756a14a1d9313cc4b554d96"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Passing to multiplicity spaces gives the common tower on which the convergence test is made.",
+      "kind": "assembly",
+      "uses": [
+        "input: separating models and twist extension"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Lit.real_functionals_separate_of_hypothesis",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/RealFunctionalsSeparateOfHypothesis.lean",
+          "line0": 20,
+          "line1": 23
+        }
+      ],
+      "source": "notes/units/T09_round3.md",
+      "anchor": "The inner proof **real_functionals_separate_of_hypothesis** first obtains models of the separating d",
+      "source_lines": [
+        15,
+        15
+      ],
+      "claim_sha256": "8ab3d3c40c9fe676755036b733f668f035919f426ba2d82801a4c378856e6456",
+      "passage_sha256": "ad7ab8773b857c28f92be3d2113b80e4ae72d5cb9be3836d755fc0c444a1e693",
+      "sha256": "4d6539f9b7bd6676263b2144779a33898e025bebaa36002da7ff2936a38979fe",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The pairing from the full row and its column integration converge on the chosen tower.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S1",
+        "input: rapid decay for the cusp function"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.RowConvAll.separating_family_converges",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/ConvergenceOfSeparatingFamily.lean",
+          "line0": 14,
+          "line1": 26
+        }
+      ],
+      "source": "notes/units/T09_round3.md",
+      "anchor": "There is a concrete test for this compatibility at the top row. Specialize the tower to the full num",
+      "source_lines": [
+        17,
+        17
+      ],
+      "claim_sha256": "5f148c5948e9358082e0943cf180d2ede7c5c3ec28c7f9b1c16a8691ec580129",
+      "passage_sha256": "5f970e3a6611c30721d2ff4b911b91d1767b33f13574aabb5f0f59f01e3c17de",
+      "sha256": "9876de78529cf289103a0f0f4ce59b5ccda66a143fbb409fa7ba15a91d2b1349",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Nonzero periods and surjectivity give a weak detecting test for every nonzero row in range.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S1",
+        "input: period nonvanishing and local-component surjectivity"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Lit.real_functionals_separate_of_hypothesis",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/RealFunctionalsSeparateOfHypothesis.lean",
+          "line0": 24,
+          "line1": 29
+        }
+      ],
+      "source": "notes/units/T09_round3.md",
+      "anchor": "For the nonvanishing part, **periodNe_of_eigen** uses the archimedean input with the hypotheses on H",
+      "source_lines": [
+        21,
+        21
+      ],
+      "claim_sha256": "aa5989657c69f7e2801a400279db932d9e84cc1310ed4e980a12f1dfbeee638f",
+      "passage_sha256": "f69ca34971a72b731592e83710f408acb569bdd1caf40a0313c3ec502b504e30",
+      "sha256": "74269222b9e208f66a86c57f7f174f2496d3178739adf727dae37b96fedf496a",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "One pair of real vector and coefficient functional works for all later nonzero rows.",
+      "kind": "case-split",
+      "uses": [
+        "S2",
+        "S3",
+        "input: factor_gap"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Lit.Bur.separate_of_burGapPos",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/BesselModels/SepGap.lean",
+          "line0": 222,
+          "line1": 256
+        }
+      ],
+      "source": "notes/units/T09_round3.md",
+      "anchor": "The quantifier change has a short argument once the factorization **factor_gap** is available. At th",
+      "source_lines": [
+        25,
+        25
+      ],
+      "claim_sha256": "68147a730a855e64cea37e1eec564440d880082397a77819be0ab2f2f7eb9d4d",
+      "passage_sha256": "4c5fce8c4f451f8098c72b8c8ac6165ddfcaa4de6069616bbdf97224e14a3479",
+      "sha256": "f90abe4a31e0d037532b010d017f9f7f2db2d1f08a06507b10a7844e53a74dfb",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "0aed4898ee593825f0b3515cda50cd80348feda8e53ed6818ebdabdcb3a58d2d",
+      "sources": [
+        {
+          "path": "notes/units/T09_round3.md",
+          "sha256": "17652a709a5221baee038300cd8c80a34718aa96403e5573881d6eb5f5bef5cd"
+        }
+      ],
+      "statement_sha256": "9f36106a427641810a727bf6abbd8b19911e2b6c24f7915f8e07de41a324c586",
+      "steps": {
+        "S1": "4d6539f9b7bd6676263b2144779a33898e025bebaa36002da7ff2936a38979fe",
+        "S2": "9876de78529cf289103a0f0f4ce59b5ccda66a143fbb409fa7ba15a91d2b1349",
+        "S3": "74269222b9e208f66a86c57f7f174f2496d3178739adf727dae37b96fedf496a",
+        "S4": "f90abe4a31e0d037532b010d017f9f7f2db2d1f08a06507b10a7844e53a74dfb"
+      },
+      "step_texts": {
+        "S1": "Passing to multiplicity spaces gives the common tower on which the convergence test is made.",
+        "S2": "The pairing from the full row and its column integration converge on the chosen tower.",
+        "S3": "Nonzero periods and surjectivity give a weak detecting test for every nonzero row in range.",
+        "S4": "One pair of real vector and coefficient functional works for all later nonzero rows."
+      },
+      "step_passages": {
+        "S1": "ad7ab8773b857c28f92be3d2113b80e4ae72d5cb9be3836d755fc0c444a1e693",
+        "S2": "5f970e3a6611c30721d2ff4b911b91d1767b33f13574aabb5f0f59f01e3c17de",
+        "S3": "f69ca34971a72b731592e83710f408acb569bdd1caf40a0313c3ec502b504e30",
+        "S4": "4c5fce8c4f451f8098c72b8c8ac6165ddfcaa4de6069616bbdf97224e14a3479"
+      }
+    }
+  ]
+}

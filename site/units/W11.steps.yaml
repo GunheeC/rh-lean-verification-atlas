@@ -1,0 +1,155 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "W11",
+  "edition_sha256": "694759f2fa53bcb203184c81f713d6f7d853075291418ef30e6b83a25c64353a",
+  "note_sha256": "77b447b5274e4b38d3e3671a5a36833fc5f79197ce4b0ddb06f2145a382ccf2c",
+  "statement_sha256": "e2b5506fbaa2062dc29fb50b0da06948f45f87f3fe2938164ee39954d29fc7da",
+  "sources": [
+    {
+      "path": "notes/units/W11_round3.md",
+      "sha256": "77b447b5274e4b38d3e3671a5a36833fc5f79197ce4b0ddb06f2145a382ccf2c"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "A layer in the requested tower embeds in a lifted cyclotomic layer at the fixed tame conductor.",
+      "kind": "computation",
+      "uses": [
+        "input: abelian cyclotomic embedding"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.FW.embed",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/FerreroWashingtonIndex/EmbedDeg.lean",
+          "line0": 16,
+          "line1": 53
+        }
+      ],
+      "source": "notes/units/W11_round3.md",
+      "anchor": "This harmless enlargement ensures $f>1$ and $(f,\\ell)=1$. For a proposed tower threshold $n_0$ and any input layer $n$, put $m=n+a+n_0$. The embe",
+      "source_lines": [
+        13,
+        17
+      ],
+      "claim_sha256": "925d7b0dab48bee3cb6220ec7a7d7a07f3dd92c7e216e017f4bef414bbe8a62c",
+      "passage_sha256": "2de2698f7790e45d871b3c6664d52aae8de1a304b86b21933ad3c7e1510fa468",
+      "sha256": "f589823f78f720f97bf2aacc349c48e5b708e061ea7dc5dded80a1c9082f4147",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The degree of the ambient cyclotomic extension over the chosen layer is uniformly bounded.",
+      "kind": "inequality",
+      "uses": [
+        "S1"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.FW.embed",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/FerreroWashingtonIndex/EmbedDeg.lean",
+          "line0": 54,
+          "line1": 78
+        }
+      ],
+      "source": "notes/units/W11_round3.md",
+      "anchor": "Here is the degree comparison that makes this maneuver uniform. The absolute degree of $L$ is $\\varphi(f\\ell^m)$, while the primitive root in $K'",
+      "source_lines": [
+        19,
+        23
+      ],
+      "claim_sha256": "6f532413d6e3e901b09ad1edf4d98848e2a9eb8127d1ab889d3d8ca194d420c1",
+      "passage_sha256": "9a324b64a569444609a7873b2d7bd234e2e0d6055bd700b0167ec6eb0a8478c9",
+      "sha256": "1c96f9a9d3ad2bbbc48439dfaf61232428d1b559c04abcda573a47e6b0eeb3dd",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The odd and two-primary branches yield a bound on the cyclotomic quotient throughout the tail.",
+      "kind": "case-split",
+      "uses": [
+        "S1",
+        "input: cyclotomic index and reflection results"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.FW.cyc",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/FerreroWashingtonIndex/FerreroWashington.lean",
+          "line0": 54,
+          "line1": 66
+        }
+      ],
+      "source": "notes/units/W11_round3.md",
+      "anchor": "For odd $\\ell$, the field on the chosen tail contains a primitive $\\ell$th root. The reflection inequality and the odd-prime group estimate then ",
+      "source_lines": [
+        29,
+        29
+      ],
+      "claim_sha256": "7d00cfbd0c36083f228857c28a83fc6e7d06bd2b32144f9f8a721e0464857724",
+      "passage_sha256": "5ae65312a9ea9d139ef5eb3892a84f4feda9d8dd7b31fd7b1b7c83e7bf6f06f0",
+      "sha256": "e27feeb2bbfe89b850a14f867f555be658aa9d89d78f2aa9fbe93c7ef64a1888",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "Class-group descent bounds the requested quotient by a fixed power of the coefficient prime.",
+      "kind": "inequality",
+      "uses": [
+        "S2",
+        "S3"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.FW.ferreroWashington",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/FerreroWashingtonIndex/FerreroWashington.lean",
+          "line0": 104,
+          "line1": 119
+        }
+      ],
+      "source": "notes/units/W11_round3.md",
+      "anchor": "Apply the tail bound at the *lifted* index $m$ and multiply the two bounds. The fixed integer $R=D\\ell^{n_0}B$ bounds $d_\\ell(K')$ for every orig",
+      "source_lines": [
+        35,
+        35
+      ],
+      "claim_sha256": "c92346be666d058e5cc202bb52e550b80f1f55e3a87b87fc4dc4c0233a2cdc2e",
+      "passage_sha256": "31b3380e98b208499c763fb9662faaa4c90a28ca77ff63a4842afe841bc92321",
+      "sha256": "2569c29b7177cabc6b47aa05d69b446c8acf72faad92cff468133ff6e96f9746",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "c0b67744a6ff5cf204bd3a128e90679087321b0e567bd8f9962be1a4f2b0a846",
+      "sources": [
+        {
+          "path": "notes/units/W11_round3.md",
+          "sha256": "53af6e2aee8f9af53f5988dcdb2f7502b71cd27022b9b418ebd4d32e160c9fdb"
+        }
+      ],
+      "statement_sha256": "e2b5506fbaa2062dc29fb50b0da06948f45f87f3fe2938164ee39954d29fc7da",
+      "steps": {
+        "S1": "f589823f78f720f97bf2aacc349c48e5b708e061ea7dc5dded80a1c9082f4147",
+        "S2": "1c96f9a9d3ad2bbbc48439dfaf61232428d1b559c04abcda573a47e6b0eeb3dd",
+        "S3": "e27feeb2bbfe89b850a14f867f555be658aa9d89d78f2aa9fbe93c7ef64a1888",
+        "S4": "2569c29b7177cabc6b47aa05d69b446c8acf72faad92cff468133ff6e96f9746"
+      },
+      "step_texts": {
+        "S1": "A layer in the requested tower embeds in a lifted cyclotomic layer at the fixed tame conductor.",
+        "S2": "The degree of the ambient cyclotomic extension over the chosen layer is uniformly bounded.",
+        "S3": "The odd and two-primary branches yield a bound on the cyclotomic quotient throughout the tail.",
+        "S4": "Class-group descent bounds the requested quotient by a fixed power of the coefficient prime."
+      },
+      "step_passages": {
+        "S1": "2de2698f7790e45d871b3c6664d52aae8de1a304b86b21933ad3c7e1510fa468",
+        "S2": "9a324b64a569444609a7873b2d7bd234e2e0d6055bd700b0167ec6eb0a8478c9",
+        "S3": "5ae65312a9ea9d139ef5eb3892a84f4feda9d8dd7b31fd7b1b7c83e7bf6f06f0",
+        "S4": "31b3380e98b208499c763fb9662faaa4c90a28ca77ff63a4842afe841bc92321"
+      }
+    }
+  ]
+}

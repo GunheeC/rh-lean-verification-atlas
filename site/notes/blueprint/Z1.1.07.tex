@@ -1,0 +1,25 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% RH Notes blueprint source excerpts for Z1.1.07
+% Verbatim excerpts in the notation of the parent blueprint. The labelled editions and source ranges appear below.
+% See the unit YAML for the current proof status. Earlier-round passages retain their original wording.
+\section*{Z1.1.07. The two marked-point conclusions}
+
+% Parent source SHA-256: 9559fca8cc392b75d71f1c158fe0c635cfcab567e2f489b52db4c5bb29d98029
+% blueprint/ch_P_r8_small.tex lines 481 through 496; r8:small:Z1.1.07
+\paragraph{Z1.1.07. Matching the level and finiteness inputs.}
+\phantomsection\label{r8:small:Z1.1.07}
+The level used in the linked construction requires both a sign kernel
+and a continuous cyclotomic character on one quotient. S22 constructs
+both on \(G_{L^+}/N\). At precisely this level, its open sign kernel is
+the subgroup to which the global character bound of S16 restricts, and
+its designated valuations are the ones at which S16 gives the local
+bounds. Thus for any one permitted \(s,S'\) we obtain a single \(V\)
+with all three finiteness properties once the supplied cohomological
+premise is imposed. This fills the level and finiteness inputs of
+\nolinkurl{linkedUnlE_holds_alt}, including the argument of
+\nolinkurl{b0Ex}. The production of compatible linked flags from the two
+seed theorems and the final descent remain open
+(\path{DenseThresholdCases/LinkedUnlEHolds.lean:24--29};
+\nolinkurl{UpperTheory.V.Z.Win.Dn.ends0_alt},
+\path{DenseThresholdCases/DnEndsTop.lean:15--16}).
+

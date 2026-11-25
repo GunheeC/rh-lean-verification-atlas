@@ -1,0 +1,89 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D004",
+  "title": "Norm bounds for the Wach lattice",
+  "track": {
+    "primary": "local",
+    "secondary": [
+      "galois"
+    ]
+  },
+  "statement": "Every host with compatible local Wach, Fontaine and comparison data satisfies the full Delta-invariant norm-bound package: Wach freeness and characterization, P2–P9, semisimple Gamma quotient, Pr2a–Pr2d, the third lemma and Conclusion E.\n\\[\n\\forall(D,HW,F,C_m),\\quad \\operatorname{DeltaInvariantNormBound}(D,HW,F,C_m).\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Fix a host with compatible local Wach, Fontaine and comparison data."
+  ],
+  "lean": [
+    {
+      "name": "GlobalTheory.T.wachLattice_laterClauses_hold",
+      "file": "Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/WachLatticeLaterClausesHoldStatement.lean",
+      "line0": 8,
+      "line1": 9,
+      "sha256": "0a4932c8eb54d9ebd0e154187ee0c7711730781105098fb5dcfe4d42aa080598",
+      "dominated": 12168,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/D004_round4.md",
+      "section": "D004 · Reading the Wach norm package by its individual clauses",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "G.6 (decomp:D004)",
+      "pages": [
+        158,
+        158
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D004.tex",
+      "section": "decomp:D004",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": 2,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "D004",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "norm-bounds-for-the-wach-lattice",
+  "aliases": [
+    "wachLattice_laterClauses_hold",
+    "D004 Norm bounds for the Wach lattice"
+  ],
+  "background": [
+    "Wach modules",
+    "Integral crystalline comparison"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.6 (decomp:D004)",
+    "pages": [
+      158,
+      158
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "review_status": "pending_review",
+  "summary": "A fixed local Wach datum, its Fontaine data and a compatible comparison determine a whole collection of lattice and cohomological assertions. This unit gathers them on the same input so later estimates can select the clauses they need."
+}

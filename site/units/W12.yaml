@@ -1,0 +1,93 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "W12",
+  "title": "One interval for the prime two and exceptional layers",
+  "track": {
+    "primary": "galois",
+    "secondary": [
+      "analytic"
+    ]
+  },
+  "statement": "Assume Poitou--Tate duality, local finiteness and local Tate duality\nin the coefficient models for W05, the class-rank bound W11 and W05.\nThere are functions $R_0(M),R_\\ell(L)$ with values in $\\mathbb N$\nand a real $c>0$ such that the following works for every $C_t\\ge1$.\nTake an abelian field datum $M$ of modulus $m$, a finite set $B'$ of\nodd primes with abelian data $L_\\ell$ containing $\\mu_\\ell$, a real\n$A_1$ and $0<\\varepsilon<1/52$. Set\n\\[\n R=R_0(M)+\\sum_{\\ell\\in B'}R_\\ell(L_\\ell),\\qquad\n J=2^{R+2}(2cC_t/\\varepsilon)^R .\n\\]\nThere is $X_0$ uniform in the integer functions $e,t$ satisfying,\nfor $x\\ge2$, $2\\le e(x)$, $2^{e(x)}\\le x^{A_1}$ and\n$2\\le t(x)\\le x^{C_t}$. For $X\\ge X_0$ and primes $q\\equiv3\\pmod8$,\n$d\\equiv7\\pmod{16}$ with $(qd,m)=1$ and\n$\\log(qd)\\le X^{\\varepsilon/(4J)}$, there exists $Y$ with\n$X^{1/J}\\le Y$ and $Y^2\\le X$. At every $x\\in[Y,Y^2]$ the sum over\n$1\\le k<t(x)$ of the localization-kernel lengths is finite term by term\nand at most $\\exp(x^{4\\varepsilon/5})$ in each of two settings:\nat $2$ in every field of type $(M,e(x),q,d)$, and at each\n$\\ell\\in B'$ in every cyclotomic layer over a model of $L_\\ell$\nof degree $\\ell^{\\operatorname{Nat.log}_\\ell(R_\\ell(L_\\ell))+3}$.\nThe integer logarithm at zero is zero. The field type uses the fixed\ngroup in \\nodeid{P013} with the defining kernel of $M$ in place\nof $\\ker\\chi$.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume Poitou–Tate duality, local finiteness and local Tate duality for the stated coefficient models.",
+    "Use the cyclotomic class-rank bound W11 and uniform second-cohomology bound W05."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.Win.thmBab_of_lemmaK",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/ThmBabOfLemmaK.lean",
+      "line0": 9,
+      "line1": 12,
+      "sha256": "76cc36c87e7787c5f240b9fb985574c4b8b707c6143bb7bd49309d432316d219",
+      "dominated": 4107,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "5.48 (sub:W12)",
+      "pages": [
+        52,
+        52
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/W12.tex",
+      "section": "sub:W12",
+      "pages": []
+    }
+  ],
+  "status": "Statement only",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [
+    "W05",
+    "W11"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [],
+  "paper_id": "W12",
+  "indexed_members": [
+    "D541",
+    "D542",
+    "D543",
+    "D544",
+    "D545",
+    "D546"
+  ],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "one-interval-for-the-prime-two-and-exceptional-layers",
+  "aliases": [
+    "thmBab_of_lemmaK",
+    "W12 One interval for the prime two and exceptional layers"
+  ],
+  "background": [
+    "Poitou–Tate duality",
+    "Cyclotomic class groups",
+    "Exceptional primes"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "5.48 (sub:W12)",
+    "pages": [
+      52,
+      52
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "W05": "statement-reading",
+    "W11": "statement-reading"
+  }
+}

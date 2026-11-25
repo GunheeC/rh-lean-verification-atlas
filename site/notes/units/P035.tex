@@ -1,0 +1,30 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit P035. Local manuscript v3, item 7.12, heading on printed PDF p. 79.
+% UpperTheory.V.ZK.Up.torsStab
+% paper2/inputs_one.tex:535–552. Verbatim excerpt; SHA-256 53ce4af38d5ce3250d9919ea443a2a99ae959d2e8bdddf030836bd13faa86e05.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+\noindent\nolinkurl{PositivityTheory.v8.KStability.kStability} --- in-repo constant (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/HomologicalStability/KStability.lean:3--4}); not compared.\par
+% End of atlas edition annotation.
+
+\begin{formalstatement}[Stable torsion orders]\label{pn:P035}
+For a totally complex field \(L\) and \(n'\ge n\ge 2m+4\), the torsion
+in \(H_m(G_{n'},\mathbb Z)\) is finite, of order
+\(\lvert H_m(G_n,\mathbb Z)_{\rm tors}\rvert\).
+\end{formalstatement}\nodestatus{P035}
+\begin{outline}
+The case \(m=0\) follows from \(H_0(G,\mathbb Z)=\mathbb Z\).
+For \(m>0\), apply integral homological stability between consecutive
+ranks. Van der Kallen takes \(e_0=\max(1,\mathrm{sdim})\) and gives
+surjectivity for \(n\ge2m+e_0-1\) and injectivity for \(n\ge2m+e_0\).
+The ring of integers admits \(\mathrm{sdim}=1\); thus \(n\ge2m+1\)
+suffices and includes all the stated ranks. The composite is an isomorphism and hence restricts to
+an isomorphism of torsion subgroups. Finiteness at \(n\) follows from
+the integral face-complex bound below. This is the stability argument
+of Blueprint Z2.K4~\bploc{r7:review:Z2.K4}. See W.~van der Kallen, \emph{Homology stability
+for linear groups}, \S2.2 (p.~273) and Theorem~4.11 (p.~289).
+\cite{r21-vdk}
+\end{outline}

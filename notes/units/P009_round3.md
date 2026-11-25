@@ -1,0 +1,33 @@
+# P009 · The common half-plane input and the three ways it is used
+
+AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+
+**pending_review** · Reading outline against Lean commit `40e56bab026552e089d7afcfeff08d2defb9c005`. [Unit card](../../units/P009.md)
+
+## The assertion shared by the exports
+
+Write $H$ for the assertion that $L(s,\chi)\ne0$ whenever $\chi$ is a complex Dirichlet character of positive modulus $N$, $\Re s>1/2$, and $\chi\ne1$ or $s\ne1$. The last disjunction excludes the principal-character pole. It places no restriction on a nonprincipal character at $s=1$. The explicit definition is `UpperTheory.EveryCharacter` (`Development/AutomorphicArithmetic/CharacterBoxes/EveryCharacter.lean:13–14`). The declaration called `allChi` (`Supplements/Kernels/MainTheorems.lean:7–7`) is an alias of [P010](../../units/P010.md) with this very result type. Paper v3 records this step in §6.9 on p. 56. [Local excerpt](P009.tex)
+
+This places P009 on both sides of a useful distinction for reading the argument. Above it, public results choose particular points or characters from a uniform assertion. Below it, the formal development supplies an assertion quantified over every character. To check the logical passage, introduce an arbitrary $N,\chi,s$ with the displayed side conditions. The result of [P010](../../units/P010.md) specializes immediately at these data. No choice of a new scale or an auxiliary prime is made at this call. The uniformity had to be established before making the specialization. The type of its supplier is `UpperTheory.FinalTheorems.everyCharacter` (`Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean:10–11`).
+
+## How an arithmetic family reaches this interface
+
+One can locate the uniformity on the lower conditional route by reading [P014](../../units/P014.md) and [P015](../../units/P015.md). Fix the three formal inputs there. They are Green's finite-group character statement, a Selmer window for every primitive character, and nonemptiness of a single geometric witness with the prescribed closed link and definite-side condition. The nonemptiness premise allows the proof to select a witness once. Its shape comparison provides the connected-family predicate. For each primitive character $\psi$, the restriction of the uniform Selmer input to $\psi$ furnishes a host on windows of exponent $3/2$. These operations occur together in `UpperTheory.Top.zero_free_all_of_green_v_win` (`Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:12–15`). The host call and the quantifiers in its return type can be inspected in `UpperTheory.Top.supplyChi` (`Development/AutomorphicArithmetic/CharacterBoxes/SupplyChi.lean:8–16`).
+
+On the route to the closed Lean export, `UpperTheory.Lit.every_character_of_theta_integrals_local_matching` supplies Green by applying `GlobalTheory.GreenBridge.green_of_regular` to the regular-character field; the nonempty geometric witness comes from `UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound` using the closed two-prime bound at every dependence parameter (`Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean:44–73`).
+
+The analytic conversion takes the connected classes and their supplied hosts. It uses the one-scale-to-family inequality and the Landau window criterion `UpperTheory.Comparison₂.formB` (`Development/AutomorphicArithmetic/PrimitiveCosets/Imports.lean:8–19`). For each $\lambda>1$ and $0<\theta<1$ the latter turns cofinal windows of $G_m(x)\le x^\theta$ into zero-freeness above $\theta$ (`Formalism.HC.Level.FormBAt`, `Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/Window.lean:30–33`), then feeds the tied windows for $\psi$ into the primitive zero-free argument. In particular the class must still supply the explicit-formula condition and the tied-family witness at the same parameters. Both are selected from its data in lines 26–34 of `UpperTheory.Top.zeroFreeAll_of_topG` (`Development/AutomorphicArithmetic/CharacterBoxes/ZeroFreeAllOfTopG.lean:26–34`). See [P017](../../units/P017.md) for the bound on that family. The resulting primitive nonvanishing statement is promoted to $H$ at `UpperTheory.Top.every_character_of_green_v_win` (`Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean:16–18`). The change-of-level factors have positive-real-part nonvanishing as detailed in [the P003 deduction](P003_round3.md). These are conditional uses of the family and window inputs.
+
+## Track each use of the common input
+
+There are three distinct specialization patterns. First, [P003](../../units/P003.md) makes the assertion itself public after unfolding the two predicates. Second, `rhOfAll` (`Supplements/Kernels/MainTheorems.lean:9–9`) selects the modulus-one character and uses the reflection argument for zeta. Its proof at [P001](../../units/P001.md) needs the nonvanishing input at the reflected point as well as at the original point in the right half-plane. Third, `critAll` (`Supplements/Kernels/MainTheorems.lean:11–13`) uses it at both a primitive character and the inverse primitive character. The product assembled in `claimAll` (`Supplements/Kernels/MainTheorems.lean:15–16`) also passes $H$ to a strip theorem covering imprimitive characters.
+
+These uses explain why knowing only the zeta specialization would not suffice to supply this common input. They do not furnish further arguments for existence of the Selmer windows or the simultaneous geometric data. P009's full statement has no hypothesis binder for those suppliers. The outline records their formal route through P010 and the specific mathematical interface the exports consume.
+
+**First point for review.** Identify which predicate the primitive-window argument actually produces before passing to the arbitrary-character statement. A bound for one prescribed primitive character would be insufficient.
+
+## Status of literature-named inputs
+
+- `GlobalTheory.Fc.S0.UnitaryGroupThirdPlaceHypotheses.greenRegularCharacters` — record field (`Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/BernsteinUnitaryProductIrreducible.lean:50`); not compared.
+- `GlobalTheory.GreenBridge.green_of_regular` — in-repo constant (`Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/SumRangeEqRoots.lean:225–304`); not compared.
+- `UpperTheory.Comparison₂.formB` — in-repo constant (`Development/AutomorphicArithmetic/PrimitiveCosets/Imports.lean:8–19`); not compared.

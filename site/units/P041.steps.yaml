@@ -1,0 +1,157 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "P041",
+  "edition_sha256": "c0ff81c4946831684dffc18c5749e61f2b02b07f56efddea1f8652d347832360",
+  "note_sha256": "938f2e0e66f0d3b6e8f2d3aa49432e5ac996a5b6b0dc1c15ce4530156ebb085a",
+  "statement_sha256": "644e024bed00b4220429d8814a721d1d4993f1337d5822a2904f1a0201086888",
+  "sources": [
+    {
+      "path": "notes/units/P041.tex",
+      "sha256": "938f2e0e66f0d3b6e8f2d3aa49432e5ac996a5b6b0dc1c15ce4530156ebb085a"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Characteristic coefficients descend to the original scalar algebra by determinant factorization at each truncation.",
+      "kind": "computation",
+      "uses": [
+        "input: characteristic coefficients of the individual group matrices"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.MainNotions.N.K.normalized_ring_data",
+          "file": "Formalism/AdmissibleDesigns/NormalizedRingData.lean",
+          "line0": 20,
+          "line1": 60
+        }
+      ],
+      "source": "notes/units/P041.tex",
+      "anchor": "Form the polynomial",
+      "source_lines": [
+        13,
+        32
+      ],
+      "claim_sha256": "3d1c38910d356e8c4a0f0f08dffa5354ec54c4cdbc599f13683ba3216edbb019",
+      "passage_sha256": "edca0ded1b1dc55d0cf3be58a5526789acd629605c5938e3ba74a8457028cf6a",
+      "sha256": "8742484d625396b3e86646ba0c261299bc173766d1bfcd1c57a8e7d8f723abd3",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Ordered adjoining of roots gives a free algebra of rank $t!$ whose rational fibers enumerate the orderings.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S1",
+        "standard: monic division and Chinese remainder theorem"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.MainNotions.N.K.normalized_ring_data",
+          "file": "Formalism/AdmissibleDesigns/NormalizedRingData.lean",
+          "line0": 20,
+          "line1": 60
+        }
+      ],
+      "source": "notes/units/P041.tex",
+      "anchor": "Adjoin roots successively",
+      "source_lines": [
+        13,
+        32
+      ],
+      "claim_sha256": "926d9adbd541cd7dae2f496f4d0ea92e6b1dab3a617019b3dfc5686faecf4a22",
+      "passage_sha256": "edca0ded1b1dc55d0cf3be58a5526789acd629605c5938e3ba74a8457028cf6a",
+      "sha256": "e00b61031d2f689f955b530fc9a470115e9cefd9402ccc7a98dca18b440752eb",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The integral eigenline numerator acts by the product of the eigenvalue differences on the chosen corner line and by zero on the other lines.",
+      "kind": "computation",
+      "uses": [
+        "S2",
+        "standard: eigenprojector polynomial"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.MainNotions.N.K.normalized_ring_data",
+          "file": "Formalism/AdmissibleDesigns/NormalizedRingData.lean",
+          "line0": 20,
+          "line1": 60
+        }
+      ],
+      "source": "notes/units/P041.tex",
+      "anchor": "The integral numerator",
+      "source_lines": [
+        34,
+        36
+      ],
+      "claim_sha256": "c3cef35ed262060beed23158a935b506f8ae10ee6e29fcf2a33e3d30e55b201b",
+      "passage_sha256": "d07f297e3b202deafee8dd32cec82a086bd536478aea5fc3c29b2536ec5a2cf8",
+      "sha256": "822e8818704bf0831c495e7d20625f305cd5fddde0f7ba5a5438e77b1e0a117f",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The row and column evaluations give the length bound by the sum of block Hom lengths.",
+      "kind": "inequality",
+      "uses": [
+        "S2",
+        "S3",
+        "input: row and column hypotheses"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.MainNotions.N.K.normalized_ring_data",
+          "file": "Formalism/AdmissibleDesigns/NormalizedRingData.lean",
+          "line0": 20,
+          "line1": 60
+        }
+      ],
+      "source": "notes/units/P041.tex",
+      "anchor": "The resulting nonzero evaluation maps",
+      "source_lines": [
+        34,
+        36
+      ],
+      "claim_sha256": "c16f2008474c06bff8457bccbe815faf7ba2da4bcb512d8cd4301f8c7a1d3343",
+      "passage_sha256": "d07f297e3b202deafee8dd32cec82a086bd536478aea5fc3c29b2536ec5a2cf8",
+      "sha256": "b7d5f8d07c4c34e30f7e42e713d698f3d3bdbe3e81e1136d0a4c05386daa70a3",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "303435a1e19964fa0d921c5dd4124c0302ab56b1375aef1dd64954615dc2dcf0",
+      "sources": [
+        {
+          "path": "notes/units/P041.tex",
+          "sha256": "7b90fad97880fa5bbb3ac1ab897bd0df8d62af0a92cb6e020960cf80cce82aa9"
+        }
+      ],
+      "statement_sha256": "644e024bed00b4220429d8814a721d1d4993f1337d5822a2904f1a0201086888",
+      "steps": {
+        "S1": "8742484d625396b3e86646ba0c261299bc173766d1bfcd1c57a8e7d8f723abd3",
+        "S2": "e00b61031d2f689f955b530fc9a470115e9cefd9402ccc7a98dca18b440752eb",
+        "S3": "822e8818704bf0831c495e7d20625f305cd5fddde0f7ba5a5438e77b1e0a117f",
+        "S4": "b7d5f8d07c4c34e30f7e42e713d698f3d3bdbe3e81e1136d0a4c05386daa70a3"
+      },
+      "step_texts": {
+        "S1": "Characteristic coefficients descend to the original scalar algebra by determinant factorization at each truncation.",
+        "S2": "Ordered adjoining of roots gives a free algebra of rank $t!$ whose rational fibers enumerate the orderings.",
+        "S3": "The integral eigenline numerator acts by the product of the eigenvalue differences on the chosen corner line and by zero on the other lines.",
+        "S4": "The row and column evaluations give the length bound by the sum of block Hom lengths."
+      },
+      "step_passages": {
+        "S1": "edca0ded1b1dc55d0cf3be58a5526789acd629605c5938e3ba74a8457028cf6a",
+        "S2": "edca0ded1b1dc55d0cf3be58a5526789acd629605c5938e3ba74a8457028cf6a",
+        "S3": "d07f297e3b202deafee8dd32cec82a086bd536478aea5fc3c29b2536ec5a2cf8",
+        "S4": "d07f297e3b202deafee8dd32cec82a086bd536478aea5fc3c29b2536ec5a2cf8"
+      }
+    }
+  ]
+}

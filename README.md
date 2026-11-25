@@ -1,0 +1,87 @@
+# RH Lean Verification Atlas
+
+AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+
+Levent Alpöge’s Lean development states the Riemann hypothesis for zeta and four further assertions about zeros of zeta or Dirichlet L-functions. A third-party audit records kernel acceptance, and this project did not reproduce that run. No human has read or checked the mathematical material in this atlas. The written deduction assumes V, F, Green’s finite-field character input, 31 local implications and the further inputs listed in v5, and V and F have no complete human-readable derivations in this atlas, although the Lean repository supplies terms for both. [MainConclusion.lean:10–11](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean#L10-L11) · [RowSrc.lean:6–6](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/RowSrc.lean#L6-L6) · [EveryCharacterOfLiteratureOfVWin.lean:810–813](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean#L810-L813)
+
+[Five formal statements](sources/lean-goals.md) · [External audit](sources/kernel-audit.md) · [V and its quantifiers](pillars/V.md) · [F and its common selection](pillars/F.md) · [한국어](README.ko.md)
+
+Blueprint v13 and papers v3, v4 and v5 are this project’s AI-written, unpublished drafts. None has had human review. Their author is not the author of the Lean development. Blueprint v13, its separate cover, and paper v5 are distributed as assets of release v0.1.0. For v3 and v4 the atlas supplies selected excerpts and notes. [Editions and fingerprints](data/editions.json)
+
+Pick a statement from Levent Alpöge’s Lean development. A reading unit covers one claim or several related claims. It lists their hypotheses and Lean declarations. It links to a written argument when one is available. A recorded review identifies the text and the claim it examined. The external kernel audit concerns the compiled Lean development. [Reading progress](PROGRESS.md) · [Next units and human reading queue](ROADMAP.md) · [Contributors](AUTHORS.md)
+
+> **Writing and review** · [Evidence and limits](STATUS.md) · [Progress over time](PROGRESS.md)  
+> Of 217 units, 55 give full arguments under their stated inputs, 127 give outlines and 35 give statements only.  
+> 24 units hold L2 for an AI review of a written argument. Of 739 current steps, 6 have an AI review identifying that specific inference.  
+> Named readers have checked 0 current steps. 0 units have named checks for all steps and the statement comparison. [Reader queue](ROADMAP.md)
+
+## Choose your entry
+
+| If you came here to… | Open |
+|---|---|
+| Understand the claim and what has been checked | [Verification status](STATUS.md) · [Mathematical overview](OVERVIEW.md) · [Frequently asked questions](FAQ.md) |
+| See where the written derivation of the two main assumptions stops | [V · Selmer window](pillars/V.md) · [F · definite-side witness](pillars/F.md) |
+| Choose a reading route and see its length | [Reading orders](docs/reading-orders.md) |
+| Check something in your field | [Analytic number theory](tracks/analytic/README.md) · [Arakelov geometry and geometry of numbers](tracks/arakelov/README.md) · [Theta correspondence and automorphic representations of unitary groups](tracks/theta/README.md) · [Galois representations, automorphy lifting, Iwasawa theory and Euler systems](tracks/galois/README.md) · [Local p-adic theory](tracks/local/README.md) · [Algebraic K-theory and cohomology of arithmetic groups](tracks/ktheory/README.md) · [Formalization and reproducibility](tracks/formal/README.md) |
+| Read a graduate-level argument with its prerequisites | [Choose a 6–8 page packet](notes/README.md) · [Start with a one-sided prime-sum window](notes/analytic/README.md) |
+| Resolve a Lean name you already have | [Declaration lookup](lookup/declarations.md) · [Glossary](lookup/glossary.md) |
+| Compare the public reading and checking projects | [Public landscape](LANDSCAPE.md) · [Statement and name crosswalks](crosswalk/README.md) |
+| Report a problem or record a check | [Contribution forms and evidence](CONTRIBUTING.md) · [Named-reader form](signoffs/TEMPLATE.md) |
+
+The [proof map](MAP.md) connects the five goals to their inputs in three views. Use the [dashboard](dashboard/README.md) to find a unit by its written coverage or review grade.
+
+To browse a downloaded copy, open `site/index.html`. Its declaration search and diagrams work from disk.
+
+<!-- roadmap:volunteers:start -->
+### Ten short checklists awaiting readers
+
+Sorted by steps, note length and prerequisites. [Full volunteer queue and writing plan](ROADMAP.md)
+
+1. [D549 · The omitted-frequency correction](units/D549.check.md) · 2 steps · 1 pp.
+2. [D550 · A common scale for logarithms and fixed constants](units/D550.check.md) · 2 steps · 1 pp.
+3. [V-OPEN · The polarized row in the open-image condition](units/V-OPEN.check.md) · 2 steps · 3 pp.
+4. [P014 · Nonvanishing for arbitrary characters from Green, the Selmer window and the family witness](units/P014.check.md) · 2 steps
+5. [T14 · An averaged slope bound over deep components](units/T14.check.md) · 2 steps
+6. [Z1.3.06 · Compatibility of the local and global cocycles](units/Z1.3.06.check.md) · 2 steps
+7. [P016 · Zero-freeness from host existence and connectedness](units/P016.check.md) · 2 steps
+8. [Z1.3.07 · Failure of the local Greenberg condition](units/Z1.3.07.check.md) · 2 steps
+9. [B05 · Connected families from Green and the closed link](units/B05.check.md) · 2 steps
+10. [T02 · A common definite-side witness](units/T02.check.md) · 2 steps
+
+<!-- roadmap:volunteers:end -->
+
+## Seven tracks
+
+| Field | A first question | Starter unit |
+|---|---|---|
+| [Analytic number theory](tracks/analytic/README.md) | What window estimate excludes a pole? | [P022](units/P022.md) |
+| [Arakelov geometry and geometry of numbers](tracks/arakelov/README.md) | Where does the discriminant enter a covolume? | [P049](units/P049.md) |
+| [Theta correspondence and automorphic representations of unitary groups](tracks/theta/README.md) | Which integral lattices are dual in the Fock model? | [Z4.4](units/Z4.4.md) |
+| [Galois representations, automorphy lifting, Iwasawa theory and Euler systems](tracks/galois/README.md) | How do the two Selmer length bounds combine? | [P020](units/P020.md) |
+| [Local p-adic theory](tracks/local/README.md) | Which inert-prime estimate controls a row of the table? | [P045](units/P045.md) |
+| [Algebraic K-theory and cohomology of arithmetic groups](tracks/ktheory/README.md) | Where does the exponent loss enter the finite count? | [P036](units/P036.md) |
+| [Formalization and reproducibility](tracks/formal/README.md) | How do I check the identity of a public declaration? | [P001](units/P001.md) |
+
+## Evidence levels
+
+| Highest recorded level | What a reader can inspect | Units |
+|---|---|---:|
+| L0 | Declaration pinned; no review of this unit | 138 |
+| L1 | Statement and assumptions compared with a pinned declaration | 55 |
+| L2 | A written argument under its stated inputs passed the recorded AI cross-review | 24 |
+| L3 | Matching evidence from at least two independent sources | 0 |
+| L4 | Full argument with a derivation beyond an appeal to an input. Named current checks cover all steps and the statement comparison | 0 |
+
+“Full” means the argument is written under the assumptions shown on its page. An outline still has intermediate reasoning to supply. A statement-only unit gives the claim and its source. Each grade records the evidence for that unit. The dashboard keeps AI review, independent corroboration and human checks in separate columns. These evidence levels are not cumulative prerequisites. L4 concerns the local written argument under its stated inputs. It gives no conclusion about V, F or RH. For each L4, read the number of readers, whether one is the maintainer and their declared AI assistance. Substantial assistance does not qualify as independent human reading. A second reader other than the maintainer or a text revision that supersedes the target can close a dispute. Reader names are self-declared and the repository does not verify identity. [Grade evidence](reviews/README.md) · [Named-check rules](signoffs/README.md)
+
+## How to cite
+
+Cite *RH Lean Verification Atlas (AI-drafted; maintained by Gunhee Cho)* (2026), version v0.1.0 (25 November 2026), its exact atlas commit, the unit ID and the Lean declaration. When relying on an exposition, include its edition and pages. [Citation metadata](CITATION.cff) · [Edition hashes](data/editions.json) · [Release notes](RELEASE_NOTES_v0.1.0.md)
+
+## How to contribute a check
+
+Choose one unit. Identify the edition and exact inference you read, then record your verdict and any reservations. Partial checks, counterexamples and unresolved questions each have a place. [Contribution guide](CONTRIBUTING.md) · [Open questions](questions/README.md)
+
+## License
+
+Copyright © 2026 Gunhee Cho to the extent copyright subsists in AI-generated text. Original atlas writing and data are licensed under CC BY 4.0. Original scripts and workflow code are licensed under the MIT License. The grant excludes material derived from the Lean source and other third-party work. See the source register for the pinned repository’s licence record. [Pinned Lean licence record](sources/README.md) · [License scope](LICENSE) · [MIT License](LICENSE-MIT) · [Third-party notice](NOTICE.md)

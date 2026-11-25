@@ -1,0 +1,159 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "T04",
+  "edition_sha256": "700a27056c19d127221be672325b1f617ccdec9bd3a416a4dd41212a6b2d92a8",
+  "note_sha256": "e7bc4cfa0f7b4c8992a2eb1847ee0e5b87ea24eb0577370e5bcef0bdb25cebc7",
+  "statement_sha256": "6d763bb32c31a98e4c66241bbceb9720054e97371cc2d8fc210afd031a089bc9",
+  "sources": [
+    {
+      "path": "notes/units/T04_round4.md",
+      "sha256": "e7bc4cfa0f7b4c8992a2eb1847ee0e5b87ea24eb0577370e5bcef0bdb25cebc7"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "A bundle linkage projects to reciprocity linkage at the same dependent point.",
+      "kind": "assembly",
+      "uses": [
+        "input: BundleLinkage witness and projection to boundary reciprocity"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.Fc.AllAtMemberStage0.forall_linked_bundles_and_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkROfIsLinked.lean",
+          "line0": 40,
+          "line1": 43
+        },
+        {
+          "name": "GlobalTheory.Fc.AllAtMemberStage0.linkR_of_isLinked'",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkROfIsLinked.lean",
+          "line0": 45,
+          "line1": 49
+        },
+        {
+          "name": "GlobalTheory.Fc.AllAtMemberStage0.allRows_of_open0_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkROfIsLinked.lean",
+          "line0": 50,
+          "line1": 55
+        }
+      ],
+      "source": "notes/units/T04_round4.md",
+      "anchor": "The statement fixes a proof of `RecTExists`, norm and",
+      "source_lines": [
+        33,
+        33
+      ],
+      "claim_sha256": "a0be4e35ab3edfb577c4ae593b486d0557085f0328cc9e6670aa7614c3763bf3",
+      "passage_sha256": "b99ea73edbe310c38ca6d4fe7f4d77f1be4d2dcef1daa5b7a812be2c692b2b7e",
+      "sha256": "d536ae4352a763f95767bf41f8b24691c36e53f3e85ac9dec9f7a375250af727",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The six period and valuation projections furnish their six specified eventual row fields.",
+      "kind": "assembly",
+      "uses": [
+        "D394",
+        "input: fixed slots and linkage"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.Fc.AllAtMemberStage0.allRows_of_open0_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkROfIsLinked.lean",
+          "line0": 52,
+          "line1": 79
+        }
+      ],
+      "source": "notes/units/T04_round4.md",
+      "anchor": "For the given slots and linkage, obtain the",
+      "source_lines": [
+        37,
+        37
+      ],
+      "claim_sha256": "c8c48f60affecd8fda63f838dc0fdc9ab1af8698ddeba9d6bf089d40a58392c8",
+      "passage_sha256": "3b78d6846c425fd257640e690ab9cea04e6ea06ec7406c3b8d66d92ee208543b",
+      "sha256": "b9bd4f4416fba468f41c8400a2fe0ab4e7f1082e16c1d712c1625087bfe332c7",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Intersecting the required linked eventual assertions permits the stage-zero definite-row theorem on a single slot.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "S2",
+        "T08",
+        "T05",
+        "input: linked covolume, functional and norm conditions"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.Fc.AllAtMemberStage0.allRows_of_open0_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkROfIsLinked.lean",
+          "line0": 79,
+          "line1": 86
+        }
+      ],
+      "source": "notes/units/T04_round4.md",
+      "anchor": "The definite row needs primitivity, divisors, goodness and",
+      "source_lines": [
+        41,
+        41
+      ],
+      "claim_sha256": "09d170a5423677a2e72855b6f19e4eee9b5cb10392b807bfc94d665cc5e9481a",
+      "passage_sha256": "05437753ad7cea00874ef96b41d5513a248cc7cee82ee4fe40256afc77ec1f92",
+      "sha256": "cae45857f13a2a976459fdabdacf4579f6399e11cf750f47abdc29e539d75cab",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "14af7346d94c2124509a88b5df4f03ad590bb3b1830dac28dfa21c090be2dd91",
+      "sources": [
+        {
+          "path": "notes/units/T04_round4.md",
+          "sha256": "ae57faae6abe6d4541acf9d3068170ef1e099806bc1d52fd0618511316dd2ebc"
+        }
+      ],
+      "steps": {
+        "S1": "73c281a4d110fab07e2aae98dfc4c9e889fb8e70506aeeeb7d69f03c1b8b583b",
+        "S2": "037bb3cffd1da44397d9485b9750b595074c08b952aa8349dcc209fd12d8fa5a",
+        "S3": "b47087641b4b40f71cbc50019bec0bbdc7bc419eb5fa1347e162f0d0f85c4c96"
+      },
+      "step_texts": {
+        "S1": "A bundle linkage projects to reciprocity linkage at the same dependent point.",
+        "S2": "The six period and valuation projections furnish their six specified eventual row fields.",
+        "S3": "Intersecting the required linked eventual assertions permits the stage-zero definite-row theorem on a single slot."
+      }
+    },
+    {
+      "edition_sha256": "e15a58b676848e6c6661e85e07b2035c6aff87fd07f6e0e5aa9309219e89b28f",
+      "sources": [
+        {
+          "path": "notes/units/T04_round4.md",
+          "sha256": "ae57faae6abe6d4541acf9d3068170ef1e099806bc1d52fd0618511316dd2ebc"
+        }
+      ],
+      "statement_sha256": "e198aea9153f28c408bbe4d0e49da76f249b3477363423a20ce1e8a57a8238f6",
+      "steps": {
+        "S1": "331907283bb1e843c5bc102f1c4da2aa454bf85898040ebff0f4a5895b6e3379",
+        "S2": "b9bd4f4416fba468f41c8400a2fe0ab4e7f1082e16c1d712c1625087bfe332c7",
+        "S3": "cae45857f13a2a976459fdabdacf4579f6399e11cf750f47abdc29e539d75cab"
+      },
+      "step_texts": {
+        "S1": "A bundle linkage projects to reciprocity linkage at the same dependent point.",
+        "S2": "The six period and valuation projections furnish their six specified eventual row fields.",
+        "S3": "Intersecting the required linked eventual assertions permits the stage-zero definite-row theorem on a single slot."
+      },
+      "step_passages": {
+        "S1": "176d90fd6ce48a3822efbe81f71c8c7dc3fcd1a26f477720974e07a8381ea962",
+        "S2": "3b78d6846c425fd257640e690ab9cea04e6ea06ec7406c3b8d66d92ee208543b",
+        "S3": "05437753ad7cea00874ef96b41d5513a248cc7cee82ee4fe40256afc77ec1f92"
+      }
+    }
+  ]
+}

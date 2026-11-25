@@ -1,0 +1,4582 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "source_editions": [
+    "paper2_v3",
+    "blueprint_v13"
+  ],
+  "policy": "Reader-facing hypotheses summarize the local input record and the conditions on an instance. The pinned statement and edition remain authoritative for the full quantifier order and the definitions of bundled conditions. Background is recommended prior knowledge, not an added mathematical premise.",
+  "units": {
+    "B01": {
+      "background": [
+        "Unitary theta lifting",
+        "Polarized Galois representations"
+      ],
+      "hypotheses": [
+        "Assume stable-range theta lifting over the good CM base for the Hermitian and skew-Hermitian spaces, prescribed splitting characters and infinity exponents.",
+        "The source weights satisfy $d+m_W(v)\\le2\\lambda_v(k)$. Apply the assertion to a regular algebraic polarized cuspidal pair."
+      ],
+      "baseline": {
+        "sha256": "1115309ea6adc36cd9e26f6d5a2d5560cec2ad96a58a0b7635eea118caccb362",
+        "title": "Theta lifting and the polarised Galois row",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "B02": {
+      "background": [
+        "Galois representations of automorphic forms",
+        "Satake parameters",
+        "Hodge–Tate weights"
+      ],
+      "hypotheses": [
+        "Fix the CM and coefficient data, odd rank, admissible field parameter and a square root of its negative.",
+        "Use the prescribed nonsplit exceptional set, separated places above $\\ell$ agreeing on the quadratic subfield, and the automorphic, local type, spherical, Satake and lacunary-weight conditions."
+      ],
+      "baseline": {
+        "sha256": "89932800cca2c7935fa1842c31b0570663f66a9a35258b275ef4c1472ca13361",
+        "title": "Weight-one geometric realisation in odd rank",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "B03": {
+      "background": [
+        "Local–global compatibility",
+        "Theta lifting"
+      ],
+      "hypotheses": [
+        "Assume odd-rank geometric existence as in B02 and the stable-range theta-lift hypothesis used in B01.",
+        "Fix an algebraic closure of the CM field, $\\ell$, the coefficient isomorphism and a regular algebraic polarized cuspidal pair."
+      ],
+      "title": "Local–global compatibility from geometric realization and theta lifting",
+      "baseline": {
+        "sha256": "b9bd0ba1170569dd244456e0a4cb8e30ab9a87fc600ce541d6277425b7459f11",
+        "title": "Local and global comparison from two suppliers",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L1"
+      }
+    },
+    "B04": {
+      "background": [
+        "Local class field theory",
+        "Weil–Deligne representations",
+        "Multisegments"
+      ],
+      "hypotheses": [
+        "Fix a number field, an algebraic closure, a valuation ring above a finite place and the corresponding local field.",
+        "For the tame-type clause use the residue-characteristic, level and character data in that clause."
+      ],
+      "baseline": {
+        "sha256": "d26b8d2111a6a160bc6420a6a5d465be0059db1fe7241315b48c0c00c316d4cd",
+        "title": "A local parameter with the tame type law",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "B05": {
+      "background": [
+        "Hermitian lattice families",
+        "Selmer groups",
+        "Green's characters"
+      ],
+      "hypotheses": [
+        "Assume Green's character statement and the alternative family shape with a common twist selection, its division input, duties, size and realization conditions.",
+        "Use the definite and indefinite selections, served periods and points, counts, projections, real ties, mass ratios and genus-mass inputs.",
+        "On the enriched class require the eventual closed Selmer-to-lattice inequality for every eligible lift with the prescribed summable prime terms."
+      ],
+      "baseline": {
+        "sha256": "b1eb6a93013f72b68112a1cc2b6805cee1b81c526a2d9b35c9f1a2e9f5426608",
+        "title": "Connected families from Green and the closed link",
+        "prerequisites": [
+          "B06",
+          "D479",
+          "D481",
+          "D484",
+          "D486"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "B06": {
+      "background": [
+        "Theta periods",
+        "Integral structures",
+        "Local valuations"
+      ],
+      "hypotheses": [
+        "Start with a served twist selection on the enriched family class.",
+        "Assume closed untwisted and twisted integrality, period and column conditions; a uniform bound controls the used tuples and family size at the type prime."
+      ],
+      "baseline": {
+        "sha256": "5ff42b43b1802cb2f3748095a8b3702de8636642633a71232e0ce56271b4ac80",
+        "title": "Valuation of period columns in a selected family",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "B07": {
+      "background": [
+        "Selmer groups",
+        "Auxiliary primes",
+        "Character sums"
+      ],
+      "hypotheses": [
+        "Fix a primitive character.",
+        "Assume its pointwise Selmer-window assertion with cutoff exponent 401, including the stated window and page-function quantifiers."
+      ],
+      "questions": [
+        {
+          "text": "Which constants are fixed before choosing a prime pair on which all the required twisted-character bounds hold?",
+          "source": "questions/analytic.md"
+        }
+      ],
+      "slug": "character-hosts-on-power-windows",
+      "aliases": [
+        "supplyChi"
+      ],
+      "baseline": {
+        "sha256": "2eb5fcb4e3b204f979a6df107f366572968ceb1152022c728bbb640dec47e288",
+        "title": "Character hosts on power windows",
+        "prerequisites": [
+          "D510",
+          "D511",
+          "D513"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L1"
+      }
+    },
+    "B08": {
+      "background": [
+        "Explicit formulas for L-functions",
+        "Finite Fourier analysis",
+        "Slope estimates"
+      ],
+      "hypotheses": [
+        "Fix the level and real constants $e_D,e_L,K,c_{HH},e_K,C$ and $\\varepsilon>0$ before choosing the frame, host and test set.",
+        "At the chosen scale the host satisfies the explicit-formula, character compatibility, share and derivative clauses for the level.",
+        "Require a core lattice realization on the same host, with B10's error and exponent controls, B09's sizes, thinness and costs, and the stated subgroup inclusion."
+      ],
+      "questions": [
+        {
+          "text": "Which estimates feeding the one-scale argument are proved in the v3 text, and which are asserted at the host-to-character step?",
+          "source": "reviews/R23_review.md"
+        }
+      ],
+      "baseline": {
+        "sha256": "354d76fbb31f9dc2114e699435a69e80c1c77231ee5b4cdd7e48af5e523303e1",
+        "title": "A one-scale bound at a host",
+        "prerequisites": [
+          "B09",
+          "B10",
+          "D014",
+          "D547",
+          "D548",
+          "D549",
+          "D550"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L1"
+      }
+    },
+    "B09": {
+      "background": [
+        "Finite Fourier analysis",
+        "Smoothed character sums",
+        "Asymptotic error estimates"
+      ],
+      "hypotheses": [
+        "Fix $C\\ge0$, $\\varepsilon>0$, $|c|\\le1$ and the recorded character constants. Use the finite host, $T_2\\subseteq A_0$, positive $b,k$ and nonnegative $a_E$.",
+        "Impose the width, cutoff, frequency, cost and remaining-size conditions, including the upper rank and $xm\\le k$ inequalities.",
+        "The kept characters satisfy normalization and share bounds. For every subgroup translate the gap is at most $x^{C\\varepsilon}$ times the same size bracket."
+      ],
+      "questions": [
+        {
+          "text": "When widths are frozen, how do the cost estimates differ for the principal character and for the discarded characters?",
+          "source": "questions/analytic.md"
+        }
+      ],
+      "baseline": {
+        "sha256": "53979c74c877b44b61908d95baebd4cfe4b36477c8ee80ea3ead27b981134575",
+        "title": "Finite character conversion of a gap bound",
+        "prerequisites": [
+          "D561",
+          "D562",
+          "D563",
+          "D564",
+          "D566"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L1"
+      }
+    },
+    "B10": {
+      "background": [
+        "Hermitian slope inequalities",
+        "Character sums",
+        "Lattice comparison"
+      ],
+      "hypotheses": [
+        "Use finite unit and nonempty word-fibre data, the finite group, translation and the two specified bijections matching coefficients, weights, character constants and ASK.",
+        "Assume the eleven lattice conditions for these data and the ErrWindows, $B_0,N_c$ and large-scale inequalities in the statement."
+      ],
+      "questions": [
+        {
+          "text": "Which bijections at a fixed unit transport the lattice main term and its error budget to the arithmetic gap?",
+          "source": "reviews/R23_review.md"
+        }
+      ],
+      "baseline": {
+        "sha256": "9bbffda526c75f66213be8a961647b4e88b881eaa8f58bb6d1db7d36a76713bd",
+        "title": "Transporting the lattice inequality to a gap",
+        "prerequisites": [
+          "D567",
+          "D568",
+          "D569",
+          "D570",
+          "P021"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D002": {
+      "background": [
+        "Local Galois cohomology",
+        "Lattice indices and local lengths"
+      ],
+      "hypotheses": [
+        "Global Artin reciprocity, local Tate duality and the local Euler characteristic formula hold.",
+        "The chosen constituent and member satisfy G1–G6, the tame-generator and local Bloch–Kato hypotheses, Fontaine and coefficient compatibility, continuity and semisimple decomposition.",
+        "Use the specified local length, unramified, lift-exponent and TB bounds for this same constituent."
+      ],
+      "baseline": {
+        "sha256": "4e07dfa9a4004a24d9135e21a13519b5f89d0076e1f60aa24e60d447ad13c8e0",
+        "title": "A global lattice index from local lengths",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D004": {
+      "background": [
+        "Wach modules",
+        "Integral crystalline comparison"
+      ],
+      "hypotheses": [
+        "Fix a host with compatible local Wach, Fontaine and comparison data."
+      ],
+      "baseline": {
+        "sha256": "23c4283d26b860ddcc28aac45a16788dcb0e2efa502275aaa2146d3cd9f6401e",
+        "title": "Norm bounds for the Wach lattice",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D006": {
+      "background": [
+        "Bloch–Kato finite local conditions",
+        "Local Tate duality"
+      ],
+      "hypotheses": [
+        "Assume the local Bloch–Kato theorem, local Tate duality and the local Euler characteristic theorem.",
+        "Use one compatible system of local Wach, Fontaine and comparison data."
+      ],
+      "baseline": {
+        "sha256": "1a733617f35c3b3d048732a9e05144ea1c9b0e2bc3e115605366f594514d5e4c",
+        "title": "Local Bloch–Kato, Tate and Euler identities",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D014": {
+      "background": [
+        "Artin reciprocity",
+        "Inertia and Frobenius"
+      ],
+      "hypotheses": [
+        "Fix a frame and an axial host on that frame.",
+        "Use its induced arithmetic record and the union of its distinguished prime with its recorded small-prime set."
+      ],
+      "questions": [
+        {
+          "text": "Which simultaneous congruences give the nontrivial inertia element at the exceptional prime d?",
+          "source": "questions/local.md"
+        }
+      ],
+      "baseline": {
+        "sha256": "cfe977d458871aa92a38ff92249896274a6bdbefd05d9e65fc16ba4995286fd2",
+        "title": "Inertia and Frobenius at exceptional host primes",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D024": {
+      "background": [
+        "Theta lifts",
+        "Unfolding cuspidal integrals"
+      ],
+      "hypotheses": [
+        "Assume the local theta inputs and cuspidality of the smooth lifts.",
+        "The row sums must exist for the admitted datum."
+      ],
+      "baseline": {
+        "sha256": "e76eb1c5c66150254018dc33944daedff3b61a3c7f368ee7eff8202726341ac0",
+        "title": "Unfolding a twisted theta integral",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D025": {
+      "background": [
+        "Discrete series of unitary groups",
+        "Bessel periods and Haar measures"
+      ],
+      "hypotheses": [
+        "Take the prescribed even rank, interlacing weights and half-integral discrete-series parameters.",
+        "Use the admissible representations, lowest-weight unit vector and Haar measures on the two integration factors."
+      ],
+      "baseline": {
+        "sha256": "ad38d993b58914d3779e948fd960e158a3c1b32b04722643c9fd3aa067fc2da8",
+        "title": "A nonzero Bessel period",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D033": {
+      "background": [
+        "Convergent Siegel–Weil formula",
+        "Off-diagonal estimates for theta series"
+      ],
+      "hypotheses": [
+        "Assume the convergent unitary Siegel–Weil input.",
+        "For the row estimate use an admissible tied standard two-word datum satisfying Hyp0 and absolute convergence."
+      ],
+      "baseline": {
+        "sha256": "3fe8bbfb67beb686dad3462c97aa823e202915294a3aa661a01dba2c7f2b1f09",
+        "title": "Uniform row bounds from convergent Siegel–Weil",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D044": {
+      "background": [
+        "Weil models",
+        "Theta-integral matching"
+      ],
+      "hypotheses": [
+        "Assume the local theta input, agreement of the original Weil-model integrals and local matching.",
+        "Use matched data and their designated test spaces when specializing the assertion."
+      ],
+      "baseline": {
+        "sha256": "2d00e5cdaaab3dfa2573da8e9a764550ee47cdca019fa552c9db839c3616b0ff",
+        "title": "Agreement of the square-model theta integrals",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D077": {
+      "background": [
+        "Ordinary Hida families",
+        "Eisenstein congruences"
+      ],
+      "hypotheses": [
+        "Assume the automorphic input record $H'$.",
+        "Take a split prime satisfying the slope test and a sufficiently large weight of the specified parity."
+      ],
+      "baseline": {
+        "sha256": "afcd45cc0fce1e61200d47fde5f61272bea4ee21b2c53b03487574b14c814074",
+        "title": "Ordinary Eisenstein lifts at split primes",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D082": {
+      "background": [
+        "Galois cocycles",
+        "Bloch–Kato finite conditions"
+      ],
+      "hypotheses": [
+        "Fix the algebraic closure embedding and an open local embedding compatible with the two restriction maps.",
+        "Use the stated coefficient module, its Galois action and a continuous cocycle."
+      ],
+      "baseline": {
+        "sha256": "71f5f129aa084b7cff72cd9c5c84abfdc61966eada51af62cff63368b9e6ba80",
+        "title": "Restriction and the Bloch–Kato finite condition",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D097": {
+      "background": [
+        "Ordinary deformation rings",
+        "Crystalline Galois representations"
+      ],
+      "hypotheses": [
+        "Assume the local published theorem record.",
+        "Use a universal ordinary rank-three datum over the stated complete discrete valuation ring at a prime."
+      ],
+      "baseline": {
+        "sha256": "99d177fedd46603594774e176cac1f98df01e796f787dffedc37ede3d67578e7",
+        "title": "The crystalline locus in the ordinary local deformation space",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D108": {
+      "background": [
+        "Residual Galois cohomology",
+        "Bernoulli numbers of characters"
+      ],
+      "hypotheses": [
+        "The prime is odd and the character is nontrivial, of order prime to it and distinct from cyclotomic after reduction.",
+        "The first Bernoulli value of the inverse character is a unit and the residual cocycle satisfies UnrEv."
+      ],
+      "baseline": {
+        "sha256": "ebeffe70abcc217014aee58a685a9ecda71fae3c15b0b6e08d379ccb3037d657",
+        "title": "Residual nonvanishing from a Bernoulli unit",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D123": {
+      "background": [
+        "CM periods",
+        "Adelic metrics and Arakelov degree"
+      ],
+      "hypotheses": [
+        "Use a CM host, the stated Kronecker character, CM type and prescribed embedding of the host square root.",
+        "The section is the specified flat generator and its assigned norms satisfy the norm-comparison condition."
+      ],
+      "baseline": {
+        "sha256": "d9374be398e891416ff14b5b0fd8fd33087e3bf13b7d5c5cddb74fe6a7152c3c",
+        "title": "Arakelov degree of the normalized flat generator",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D128": {
+      "background": [
+        "Integral models of Shimura varieties",
+        "Units in valuation rings"
+      ],
+      "hypotheses": [
+        "Take a key rule satisfying its defining condition and a CM host with signature ranks of positive sum.",
+        "Use the stipulated base ring and prime-level structure on the model, including conditions N3, N4 and split fibres."
+      ],
+      "baseline": {
+        "sha256": "c5a169ccd6f3e2629fe593d267ff24db98f35cbdf70ad909b93b453d9c8278cd",
+        "title": "Integrality of the theta scalar on the integral models",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D154": {
+      "background": [
+        "Chow forms",
+        "Hyperplane sections and intersection multiplicities"
+      ],
+      "hypotheses": [
+        "Over a characteristic-zero field use a homogeneous prime ideal with the required dimension and a hyperplane whose form lies outside it.",
+        "Choose a Chow form for the original cycle and a Chow form for each component of its section."
+      ],
+      "baseline": {
+        "sha256": "d9633bcd94ee92a4057027be301e9d07b16411089721085a82ede605a6be3c27",
+        "title": "Hyperplane sections of the Chow form",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D155": {
+      "background": [
+        "Chow heights",
+        "Fubini–Study metrics"
+      ],
+      "hypotheses": [
+        "Assume the published Hodge-bundle record.",
+        "Use an integral arithmetic projective model, conjugation-compatible frame matrices and a Chow form of its generic cycle."
+      ],
+      "baseline": {
+        "sha256": "0e626b3f3bfd8c80127b1126294c5f93447b4c5d8affe111971415059c18debe",
+        "title": "Fubini–Study normalization of Chow height",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D174": {
+      "background": [
+        "Characteristic polynomials",
+        "Abelian schemes and de Rham cohomology"
+      ],
+      "hypotheses": [
+        "Use an abelian scheme over an algebraically closed field and a group endomorphism.",
+        "The integral lattice and its power-torsion evaluation maps are compatible with the endomorphism; the prime is invertible in the base field and de Rham homology is finite-dimensional."
+      ],
+      "baseline": {
+        "sha256": "aca757fe7f62449d011c0070adc43d077825103a56d68dfc63aef2ec529a5dbd",
+        "title": "Characteristic polynomials in de Rham and étale realizations",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D193": {
+      "background": [
+        "Normalization of integral models",
+        "Isogenies of abelian varieties"
+      ],
+      "hypotheses": [
+        "Fix the datum at a prime $p$ over a characteristic-zero discrete valuation ring with $p$ in its maximal ideal. Use a model of level $N\\ge3$ coprime to $p$.",
+        "Take a maximal ideal containing the ideal at $r$, $j\\le n$, and $c=p^e$ with $e>0$ if $j>0$. The multiplicity parameter is one."
+      ],
+      "baseline": {
+        "sha256": "f75d8d3cc300c615373778f650fed78b76769ede96a380e285c92e7d5da38c7c",
+        "title": "The normalized flat model and universal isogeny",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D203": {
+      "background": [
+        "Galois invariants",
+        "The de Rham period ring"
+      ],
+      "hypotheses": [
+        "Fix the prescribed $p$-adic field $K$ and $x\\in B_{\\rm dR}$.",
+        "Every element of the absolute Galois group of $K$ fixes $x$."
+      ],
+      "baseline": {
+        "sha256": "f4f7242680e7e2231ee3265c63986fd20cbe131a31fa69f700bba8fe1e98e57e",
+        "title": "Fixed vectors over the de Rham period ring",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D230": {
+      "background": [
+        "Crystalline period rings",
+        "Unramified extensions of local fields"
+      ],
+      "hypotheses": [
+        "Use the chosen crystalline period ring and its comparison map into the de Rham ring.",
+        "The given element is fixed by every automorphism of the algebraic closure over $K$."
+      ],
+      "baseline": {
+        "sha256": "bf32ca0a8e445cb533c0d3fb7e3549bcaae999c2961be2b45a1bae3baab1d807",
+        "title": "Crystalline invariants over the maximal unramified extension",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D245": {
+      "background": [
+        "Tilts and Frobenius",
+        "The crystalline period $t$"
+      ],
+      "hypotheses": [
+        "The untilt of $\\varepsilon$ equals one and the untilt of its inverse Frobenius differs from one.",
+        "For $y\\in B_{\\rm cris}^+$, the de Rham theta image of every nonnegative Frobenius iterate is zero."
+      ],
+      "baseline": {
+        "sha256": "d974114aeb23dc3ab86d2aa59f4c4605592d17f2b58c1d844717e8853fd12896",
+        "title": "The period span of the positive Frobenius vector",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D302": {
+      "background": [
+        "Divided-power envelopes",
+        "Filtered crystalline period rings"
+      ],
+      "hypotheses": [
+        "Fix a prime $\\ell$, a period algebra at $\\ell$ and a nonnegative filtration degree $r$.",
+        "The first and third clauses concern elements of the $r$th filtered piece; the second takes any coefficient in $W$."
+      ],
+      "baseline": {
+        "sha256": "3e482138ca97b27d14d739b013c8097926b45d2374949314f17e6da707111ab2",
+        "title": "Graded pieces of the crystalline filtration",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D309": {
+      "background": [
+        "Tate modules of p-divisible groups",
+        "The Hodge–Tate sequence"
+      ],
+      "hypotheses": [
+        "Assume the Fargues exactness assertion in the period-ring and coefficient setting of the declaration."
+      ],
+      "baseline": {
+        "sha256": "71323ea96945fb31732de0426976e4fccf97392b4e1777db24c6b0c091bf420e",
+        "title": "The Hodge–Tate sequence from the Fargues exact sequence",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D317": {
+      "background": [
+        "Arithmetic intersection theory",
+        "Heights of flags"
+      ],
+      "hypotheses": [
+        "Assume the comparison, Given and Weil records.",
+        "Fix a good origin on the root tower with positive ranks, the required extra data and a full intersection system."
+      ],
+      "baseline": {
+        "sha256": "a9b73fe6023b59236f91578e2caa87dae513abd8be884628f4eacc3ac4dc6e9a",
+        "title": "The intersection identity along the tower",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D331": {
+      "background": [
+        "Fundamental domains of arithmetic groups",
+        "Archimedean cusp integrals"
+      ],
+      "hypotheses": [
+        "Use a CM host with the arithmetic action of the lattice group and its prescribed fundamental set.",
+        "The indices satisfy $1\\le j'$ and $3j'+1\\le j+j'$."
+      ],
+      "baseline": {
+        "sha256": "12299b901c6287d7cf2955fd4d30065aee92b8b7b88d7f0120ce7a9630523fc2",
+        "title": "Integrability of the cusp weight",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D340": {
+      "background": [
+        "Gram matrices",
+        "Boundary growth of Hodge metrics"
+      ],
+      "hypotheses": [
+        "Take log-period data and sections differentiable on the unit ball, linearly independent at the origin.",
+        "The chart radius satisfies $0<\\rho\\le1$ and the permuted vanishing boundary coordinates obey the prescribed condition."
+      ],
+      "baseline": {
+        "sha256": "05da0c52c6d2f02c5e0d497ae01c4720b1d464d5f40ac83c1a7fcf508f97994d",
+        "title": "Comparison of the period Gram matrices",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D351": {
+      "background": [
+        "Poincaré–Lelong formula",
+        "Simple normal crossings divisors"
+      ],
+      "hypotheses": [
+        "Use a compact Hausdorff space with a finite holomorphic atlas, an admissible metrized line and section, and a simple normal crossings divisor with holomorphic component inclusions.",
+        "The test function is smooth and each of the $e$ potentials is admissible."
+      ],
+      "baseline": {
+        "sha256": "442f89f94e1a1327c609db474585efeeaffa7ecea1bcf8a9d7e01e84785a281e",
+        "title": "The Poincaré–Lelong identity",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D379": {
+      "background": [
+        "Convergent Siegel–Weil formula",
+        "Uniform counting for automorphic forms"
+      ],
+      "hypotheses": [
+        "Assume the convergent unitary Siegel–Weil assertion.",
+        "For the counting clause take an eligible family and a test predicate on its automorphic data."
+      ],
+      "baseline": {
+        "sha256": "d0b7379d649132a0fe7ffc0f8eb1d969dd9e458cc065c8de5d2ceadd600065d4",
+        "title": "Counting constants from Siegel–Weil",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D394": {
+      "background": [
+        "Twisted period integrals",
+        "Valuations of Hecke columns"
+      ],
+      "hypotheses": [
+        "Fix a slot system and a linkage satisfying the bundle condition.",
+        "The eventual assertions are restricted to constructed and good members."
+      ],
+      "baseline": {
+        "sha256": "e8e08910b1b0f496c7f239931d36de07dce371060784a4934117d95a819ec3d1",
+        "title": "Tying period entries to level valuations",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D415": {
+      "background": [
+        "Howe duality and doubling integrals",
+        "Adjoints of theta operators"
+      ],
+      "hypotheses": [
+        "Use the harmonic-analysis, Siegel–Weil, Hecke-form and doubling input records specified at the pin.",
+        "For the given real datum and face assume the comparison hypotheses, unit conductor ideal, agreement of place sets and the fixed-point condition at conjugation-invariant good places.",
+        "Take a scalar form satisfying the stated admissibility condition."
+      ],
+      "baseline": {
+        "sha256": "48ed2904be6ae94c742948a66fba62b42015ad2b71dc2b4775dde7d733375f8e",
+        "title": "Injectivity of the adjoint theta scalar formula",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D421": {
+      "background": [
+        "Twists of Galois families",
+        "Finite Selmer groups"
+      ],
+      "hypotheses": [
+        "Assume the second-layer hypothesis record, a twist-good family and its normalization facts for $C\\ge0$ and the specified $C_T$.",
+        "The family has the bounds at two and three; the memberwise clause uses its specified odd Selmer finiteness condition."
+      ],
+      "baseline": {
+        "sha256": "e7fb7b1694b447a7f32709279c1ce45bc089d2a20322fb409c0abbfc8d2d3bc2",
+        "title": "Uniform hub estimates for twist-good families",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D427": {
+      "background": [
+        "Local-to-global Galois cohomology",
+        "Prime-weighted Selmer lengths"
+      ],
+      "hypotheses": [
+        "Assume the second-layer record, the cut hypothesis and a twist-good family.",
+        "At every specified family index the normalization preconditions and four ties hold."
+      ],
+      "baseline": {
+        "sha256": "1f9ca589e3b89cff7591b329dd839ed0ee889432ed1e56cc2be8aca01e84b0c2",
+        "title": "The Selmer contribution to the lattice link",
+        "prerequisites": [
+          "D421"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D443": {
+      "background": [
+        "p-divisible groups",
+        "Arakelov degrees of Hodge bundles"
+      ],
+      "hypotheses": [
+        "Assume the published Hodge-bundle record for the designated flat generators on the given cover."
+      ],
+      "baseline": {
+        "sha256": "38c89fdc515b9dc04d6e857c16371567eaa0bed51cf9a506cd58e7a75466a799",
+        "title": "Flat degree and the Scholze–Weinstein input",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D479": {
+      "background": [
+        "Lattice masses",
+        "Arithmetic families and their ranks"
+      ],
+      "hypotheses": [
+        "For the family class assume duty and closed real-place second-layer data on the enriched class.",
+        "Use the mass-ratio bound and genus-mass hypotheses. The first implication assumes chosen data of exponent three; the second assumes the tuple and discriminant size bounds."
+      ],
+      "baseline": {
+        "sha256": "d414be0b3e08d546031a784f020c51ab7cce0dbd01a08456f2cb6d4e80874bdd",
+        "title": "Global lattice compatibility of a family",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D481": {
+      "background": [
+        "Division kernels",
+        "Uniform bounds over families"
+      ],
+      "hypotheses": [
+        "Assign division-kernel data on a tail of each family, with the stated closed uniform bound.",
+        "Impose the tuple and discriminant size conditions. For the expanded division-height clause use the covered-twist and eta-sum bounds."
+      ],
+      "baseline": {
+        "sha256": "ec769751ef05d4d54608f8bdb003617f22750ea7d78ebaa0b600028ff6830161",
+        "title": "Divisibility of the closed bridge kernel",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D484": {
+      "background": [
+        "Hilbert–Schmidt norms",
+        "Spectral counting for automorphic forms"
+      ],
+      "hypotheses": [
+        "Use the spectral and real selections, decay, transport, type, volume and counting data in the pinned assertion.",
+        "On the indicated enriched family class assume the tuple-size bound."
+      ],
+      "baseline": {
+        "sha256": "bb1fbba86c0c272879cdcbc3630f4c6ed4e61b71a82e1bbc1202f21e66daa252",
+        "title": "The spectral link from the tuple-size bound",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D486": {
+      "background": [
+        "Finite general linear groups",
+        "Counting automorphic rows"
+      ],
+      "hypotheses": [
+        "Assume Green's character input and $c_{\\rm Ic}>0$.",
+        "Assume closed eventual existence of rows satisfying injective labeling, joining and counting on the same family."
+      ],
+      "baseline": {
+        "sha256": "ad7bdcaae621e6706d932ee63c5a8cf95d13b75ef7646a952e934af2edb4efbc",
+        "title": "Joined row counts and the irreducibility link",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D506": {
+      "background": [
+        "Cuspidal cohomology",
+        "Borel comparison maps"
+      ],
+      "hypotheses": [
+        "Use a totally complex field, positive rank, compact open level and the designated algebraic coefficient representation.",
+        "Take a finite family of pairwise inequivalent cuspidal representations that contribute to the specified cohomology and have a level-fixed vector."
+      ],
+      "baseline": {
+        "sha256": "818e34f2a12d9b8b1e147e4865ee59e512117a10f1f7404074ddf255fedc6e4f",
+        "title": "The Borel injection in the cohomological comparison",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D510": {
+      "background": [
+        "Primitive characters",
+        "Power windows and auxiliary primes"
+      ],
+      "hypotheses": [
+        "Assume a uniform extension of eligible field rows to good hosts satisfying the required order, conductor, prime pair and character-share conditions.",
+        "For the primitive character assume its Selmer window with exponent 401 and the eventual admissibility of a compatible rank tuple on each eligible frame."
+      ],
+      "baseline": {
+        "sha256": "173341b9dd3f53472406db3f2d1762e7e7864a39d12eede995c4691b047373b8",
+        "title": "A common quadratic host on a window",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D511": {
+      "background": [
+        "Orders of characters",
+        "Conductor divisibility and prime windows"
+      ],
+      "hypotheses": [
+        "Fix $0<\\varepsilon<1/52$ and $C_0\\ge1$. Use an eligible large scale, valid ranks and an admitted initial host.",
+        "Use its size and conductor bounds, the positive lcm divisor, good prime pair in the window and all field rows through $\\lfloor Y^{\\varepsilon/5}\\rfloor$."
+      ],
+      "baseline": {
+        "sha256": "715db47048a65ad2f31a889a281dd98f8bd66cbdbc311924d3e781c5573b40d2",
+        "title": "Host data from the chosen field",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D513": {
+      "background": [
+        "Real power estimates",
+        "Finite cyclic frames"
+      ],
+      "hypotheses": [
+        "Fix $0<\\varepsilon<1/52$ and a sufficiently large scale of that exponent.",
+        "Require $x^{2+8\\varepsilon}\\le\\operatorname{ord}(\\phi)\\le2x^{2+8\\varepsilon}$."
+      ],
+      "baseline": {
+        "sha256": "b0cd8b8f3810aec17ce3ea1ca256364ab50ba517747f973f8ada7ad8d8741ade",
+        "title": "Choice of even column rank in a prescribed frame",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D528": {
+      "background": [
+        "Kato's Euler system",
+        "Lengths of finite Selmer groups"
+      ],
+      "hypotheses": [
+        "Use the cohomological input, three algebraic comparison lemmas, two-twist Kato input and both adjoint rigidity results.",
+        "Impose level admissibility and the unramified-coefficient automorphy input on the finite family."
+      ],
+      "baseline": {
+        "sha256": "9fd9c8f45b3ecd6d161b36faad9d3a5bc59d2bc9ac9670f3649c7fc3450d2f20",
+        "title": "A single character from the Kato and rigidity inputs",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D532": {
+      "background": [
+        "Galois orbits",
+        "Prime-weighted Selmer lengths"
+      ],
+      "hypotheses": [
+        "Assume the orbit bound at the two test primes (CorGK).",
+        "Specialize to a primitive character, an eligible host and a finite set of odd Case-I primes beyond the auxiliary primes."
+      ],
+      "baseline": {
+        "sha256": "75963acf7cc5f9c4f89204f99d6276a69637a5d33ab0d6f8b6198c2f40f9363e",
+        "title": "The first Selmer character count",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D536": {
+      "background": [
+        "Selmer windows",
+        "Odd-minus localization bounds"
+      ],
+      "hypotheses": [
+        "Fix $C_t\\ge1$ and a primitive character.",
+        "Assume the joint window and odd-minus bound with this same cutoff $C_t$."
+      ],
+      "baseline": {
+        "sha256": "43460bb42f2f18f057cc1e370bed921a9457b1093cc09aff90cbf3677880aa37",
+        "title": "The pointwise window from a joint count",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D547": {
+      "background": [
+        "Characters of finite abelian groups",
+        "Smoothed prime sums"
+      ],
+      "hypotheses": [
+        "Fix a level, axial host, test set, scale and parameters.",
+        "The host satisfies the explicit-formula record for those data and its additive-character functional is compatible."
+      ],
+      "questions": [
+        {
+          "text": "How does the host-to-level character dictionary account for primitive inducing characters and the principal term at the same level?",
+          "source": "reviews/R23_review.md"
+        }
+      ],
+      "baseline": {
+        "sha256": "01801cbc75cffc94c7b30049128d033416e245f6789a624a1738317f7c737665",
+        "title": "Identifying the host and level prime sums",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D548": {
+      "background": [
+        "Finite Fourier analysis",
+        "Character shares"
+      ],
+      "hypotheses": [
+        "Use a positive scale, level, axial host and test set.",
+        "Assume the explicit-formula record and a compatible additive-character functional at this host."
+      ],
+      "questions": [
+        {
+          "text": "How do the subgroup-band multiplicities yield the stated share bound for every retained nontrivial character?",
+          "source": "reviews/R23_review.md"
+        }
+      ],
+      "baseline": {
+        "sha256": "966e530cd28a408450acbe0495daadd56aee3e9ef02dba0a58e808c7f8bba5f6",
+        "title": "Character shares on the retained cosets",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D549": {
+      "background": [
+        "Fourier expansions",
+        "Smoothed character sums"
+      ],
+      "hypotheses": [
+        "Take $x>0$ and an axial host at the stated level and test set.",
+        "Assume its explicit-formula record and compatibility of the character functional."
+      ],
+      "questions": [
+        {
+          "text": "Which discarded frequencies contribute to the coefficient $4o$ in the correction term?",
+          "source": "reviews/R23_review.md"
+        }
+      ],
+      "baseline": {
+        "sha256": "526502a09519c6d5b8920c865b71ae5962a2b9bac7c1163ea31ca382869535cb",
+        "title": "The omitted-frequency correction",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D550": {
+      "background": [
+        "Asymptotic estimates",
+        "Growth of logarithms"
+      ],
+      "hypotheses": [
+        "Fix a positive exponent $\\varepsilon$ and real constants $K,c_{HH},e_K$ before choosing the scale threshold."
+      ],
+      "baseline": {
+        "sha256": "23b37c16532b29829461eb9a59b9665b1544189554539c30082c8180878e08f9",
+        "title": "A common scale for logarithms and fixed constants",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D551": {
+      "background": [
+        "Class field theory",
+        "Cyclotomic twists of Selmer groups"
+      ],
+      "hypotheses": [
+        "The CM field embeds into the indicated cyclotomic field of positive conductor $N$.",
+        "Use procyclic local data at the chosen prime and an integral twist $e\\ge1$."
+      ],
+      "baseline": {
+        "sha256": "5de4e514659de61a5d9031d3142eeb3247179be4bab613b2b18f953761fa700d",
+        "title": "Annihilation of the minus kernel",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D558": {
+      "background": [
+        "Inflation–restriction",
+        "Character eigenspaces in Galois cohomology"
+      ],
+      "hypotheses": [
+        "Take an open normal subgroup in the kernel of the given character and a nonzero integral twist.",
+        "At the prime two the subgroup satisfies the stated cyclotomic containment condition."
+      ],
+      "baseline": {
+        "sha256": "c1680aa50301305a5454011a9aba59e41fcf3a4cef35bae8742d54740a99975a",
+        "title": "Cyclotomic restriction on locally trivial Selmer classes",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D561": {
+      "background": [
+        "Finite Fourier orthogonality",
+        "Averaging character sums"
+      ],
+      "hypotheses": [
+        "Assume the host prime facts, $x\\ge3$, $b>0$, the size and thinness conditions, cost windows, and $T_2\\subseteq A_0$.",
+        "Bound the gap by the same error for every $u\\in A_0$ and give the subgroup-band sum a lower bound of $|TT|Y$."
+      ],
+      "questions": [
+        {
+          "text": "Which map indexes the thick places by the translated set, and where is its injectivity used in the average?",
+          "source": "reviews/R23_review.md"
+        }
+      ],
+      "aliases": [
+        "translate average"
+      ],
+      "baseline": {
+        "sha256": "ad8081b9b49db8d9e3adbc705ff554cc733d3dbe47f00deff42f06152e389be9",
+        "title": "Orthogonality under the translate average",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D562": {
+      "background": [
+        "Partial summation",
+        "Lipschitz estimates for smoothed character sums"
+      ],
+      "hypotheses": [
+        "Fix any finite abelian group, arithmetic data and additive-character functional.",
+        "Both arguments are at least one. The first estimate takes a nontrivial character, and the second concerns the zeta term."
+      ],
+      "questions": [
+        {
+          "text": "Which increment bound supplies one constant for the principal term and for the nontrivial characters across the host data?",
+          "source": "reviews/R23_review.md"
+        }
+      ],
+      "aliases": [
+        "smoothed character-sum Lipschitz bound"
+      ],
+      "baseline": {
+        "sha256": "ce50ef71e35fd6f4aa0a54afb468482a9c850f9223f2ae4b270fba553cb500f5",
+        "title": "Increment bounds for smoothed character sums",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D563": {
+      "background": [
+        "Power inequalities",
+        "Optimization of error terms"
+      ],
+      "hypotheses": [
+        "Assume SizeWindows on the counts and real parameters, including positive $b,\\varepsilon,n$, nonnegative $C$, and the size, count and bracket bounds in D566.",
+        "With $Q=n_Tmb$, $r=n_{T,2}/n$ and $X=x^{1/2+\\varepsilon}$, assume $Qr(G_x-4X)/2\\le\\mathrm{Err}+2Q/x$."
+      ],
+      "aliases": [
+        "size-window bracket absorption"
+      ],
+      "baseline": {
+        "sha256": "3b4053bbbb276fbecc2c8f9198cf5988d98ba275ba54a5a1cc7c50a2740215e6",
+        "title": "Absorbing the four size-window errors",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L2"
+      }
+    },
+    "D564": {
+      "background": [
+        "Character orthogonality",
+        "Bounds for smoothed prime sums"
+      ],
+      "hypotheses": [
+        "Take $x\\ge3$, a character in the subgroup band and sample points at distance at most one from $x$.",
+        "Assume the derivative estimate, nonnegative constants, kept-character normalization, share and functional bounds, and the three explicit errors bounded by the same $R$."
+      ],
+      "baseline": {
+        "sha256": "49d811e081a98a54c09f47b221a576ea3f85c8c8d4a72d15bc3540d241b99f0b",
+        "title": "The bound for one character on the selected set",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D566": {
+      "background": [
+        "Real power estimates",
+        "Error budgets"
+      ],
+      "hypotheses": [
+        "Use real scale and error parameters and natural group, test-set and rank counts. The two sides compare conditions on the same tuple."
+      ],
+      "baseline": {
+        "sha256": "d4fea78e824ee25c070a734a4fef87b52188dfe4fb99da6d37fecd86e7185c1a",
+        "title": "The equivalent clauses of a size window",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D567": {
+      "background": [
+        "Hermitian slope inequalities",
+        "Power bounds on error terms"
+      ],
+      "hypotheses": [
+        "Fix finite index and nonempty word-fibre data, the arithmetic constants and one unit.",
+        "The error windows and large-scale conditions both hold for these data."
+      ],
+      "questions": [
+        {
+          "text": "How do the individual lattice errors fit into the four-term arithmetic bracket with the stated uniform exponent?",
+          "source": "reviews/R23_review.md"
+        }
+      ],
+      "baseline": {
+        "sha256": "8c38a4909ef9f8c7d60e614cc4cbee7110883b228b939ab365d1ffd2f59797db",
+        "title": "The per-unit lattice error and the arithmetic bracket",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D568": {
+      "background": [
+        "Hermitian slopes",
+        "Weighted means"
+      ],
+      "hypotheses": [
+        "Use a Hida size setting, division, $E$ and $H$ comparison, counting and slope bounds.",
+        "Assume quotient-slope, slope-inequality, height and finite-parameter conditions at the same unit."
+      ],
+      "baseline": {
+        "sha256": "194a3d7e2d37f512131cbe9e53bdc5de02740b9949632a8123ab605eb239f0e6",
+        "title": "A slope bound for the Gaussian term",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D569": {
+      "background": [
+        "Finite sums",
+        "Lattice and arithmetic period pairings"
+      ],
+      "hypotheses": [
+        "Fix the unit, translation map, top and place bijections, and compatible arithmetic coefficients.",
+        "The combined identification record holds for these very bijections."
+      ],
+      "baseline": {
+        "sha256": "a95c0fa65cf67ab80b3a0cc5d3625486048caca4ca2591596f5eb521d2bf0ec4",
+        "title": "Transport of the main term across the finite bijections",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D570": {
+      "background": [
+        "Weighted averages",
+        "Lower slopes of Hermitian lattices"
+      ],
+      "hypotheses": [
+        "Use the Hida size setting, the counting hypothesis and one unit with its prescribed weights."
+      ],
+      "baseline": {
+        "sha256": "dd1b5efafd24a1e5228256824250baa5e961e8bf46895ac401daf765119cc3fe",
+        "title": "Upper bound for the weighted mean of lower slopes",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "D575": {
+      "background": [
+        "Green's characters",
+        "Finite general linear groups"
+      ],
+      "hypotheses": [
+        "Assume the regular-character classification for finite general linear groups.",
+        "Use a prime field size, an allowed pairing and positive degree."
+      ],
+      "baseline": {
+        "sha256": "6371b1d8263d61e67e2ba517e2827c1973ec8855347fc76b85ac8a3b9ad5adf2",
+        "title": "Green's parameterization of finite cuspidal characters",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "N076": {
+      "background": [
+        "Bessel periods",
+        "Discrete series",
+        "Branching rules"
+      ],
+      "hypotheses": [
+        "Use the nonnegative majorant and cubic bound for the thresholds.",
+        "Assume both Zuckerman threshold estimates and the In91 input."
+      ],
+      "questions": [
+        {
+          "text": "Derive the admissible-word normal form and its gauge-transformed hat-product bound together with the squared Wigner coefficient on each one-step Pieri summand.",
+          "source": "data/status_ledger.json"
+        }
+      ],
+      "baseline": {
+        "sha256": "21deb7e65f83e099cf375cdd06b0eedfa40966d3791f74b2e5c252e5065b7290",
+        "title": "Bessel period in the wave grid",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": false,
+        "grade": "L0"
+      }
+    },
+    "N188": {
+      "background": [
+        "Hermitian theta series",
+        "Schwartz–Bruhat functions",
+        "Gram matrices"
+      ],
+      "hypotheses": [
+        "Work over the given CM Hermitian space with dimension greater than twice the target rank.",
+        "Use an adelic Schwartz–Bruhat test and a nonsingular Hermitian Gram index."
+      ],
+      "baseline": {
+        "sha256": "5e7e8163781123dee74b9e375697152e216296fc1b6f7f49a6dd9911d4d00569",
+        "title": "Nonsingular Hermitian Gram coefficient",
+        "prerequisites": [],
+        "open_question_count": 0,
+        "full_statement_in_hypotheses": false,
+        "grade": "L0"
+      }
+    },
+    "N318": {
+      "background": [
+        "Real Howe duality",
+        "Local zeta integrals",
+        "Fock spaces"
+      ],
+      "hypotheses": [
+        "Assume real Howe duality, the local theta input and the Hecke functional equation.",
+        "Use the toric and zeta denominator bounds, norm transport and reflection.",
+        "Require equality of the indicated theta integrals and matching of the local models."
+      ],
+      "questions": [
+        {
+          "text": "For the joined estimate, match the global Fock evaluation and its split and inert factors with proportional images of the fixed finite vectors and the normalized bottom class sum.",
+          "source": "data/status_ledger.json"
+        }
+      ],
+      "baseline": {
+        "sha256": "68744746128fa1fd9dfc77a34e630b1375df9ede5df6dc7c53098877cce962f6",
+        "title": "Joined estimates at the square top term",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": false,
+        "grade": "L0"
+      }
+    },
+    "N415": {
+      "background": [
+        "Primes in progressions",
+        "Dirichlet characters"
+      ],
+      "hypotheses": [
+        "Use a reduced residue class modulo a positive multiple of eight.",
+        "The endpoint satisfies $X\\ge2$ and $\\log X\\ge C_0\\log M\\log(\\log M+2)$."
+      ],
+      "aliases": [
+        "relative prime count"
+      ],
+      "baseline": {
+        "sha256": "66f70a3da539e2c55208147261404abf026874fe3a27021425d055c9ac1d0231",
+        "title": "Relative prime count in progressions",
+        "prerequisites": [],
+        "open_question_count": 0,
+        "full_statement_in_hypotheses": false,
+        "grade": "L0"
+      }
+    },
+    "P001": {
+      "background": [
+        "The Riemann zeta function",
+        "Trivial zeros and analytic continuation"
+      ],
+      "hypotheses": [
+        "Take a zero $s$ of the Riemann zeta function with $s\\ne1$.",
+        "Exclude all negative even integers $s=-2(n+1)$ for $n\\ge0$."
+      ],
+      "questions": [
+        {
+          "text": "What bytes are hashed for a declaration, the full archive and the compiled object? Reproduce one digest with its stated convention.",
+          "source": "questions/formal.md"
+        }
+      ],
+      "slug": "mathlib-riemann-hypothesis",
+      "baseline": {
+        "sha256": "c88bbe9752264b16fe171744b5de5677ed6142fb5d7124b67f87203efbf3ed54",
+        "title": "The Riemann hypothesis in Mathlib's formulation",
+        "prerequisites": [
+          "P008"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L1"
+      }
+    },
+    "P002": {
+      "background": [
+        "The Riemann zeta function",
+        "Complex zeros"
+      ],
+      "hypotheses": [
+        "Take $s\\in\\mathbb C$ with $\\zeta(s)=0$ and $s\\ne1$.",
+        "The zero is not any negative even integer."
+      ],
+      "title": "Real part of a nontrivial zeta zero",
+      "baseline": {
+        "sha256": "0c985e1f4345fdec450f50ebf6eea1e52142e6661e65b3571022bac0c9a72c91",
+        "title": "The zeta zero-line assertion",
+        "prerequisites": [
+          "P008"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L1"
+      }
+    },
+    "P003": {
+      "background": [
+        "Dirichlet characters",
+        "Poles of Dirichlet L-functions"
+      ],
+      "hypotheses": [
+        "Take a character of positive modulus and $s$ with $\\Re s>1/2$.",
+        "If the character is principal, require $s\\ne1$."
+      ],
+      "title": "Nonvanishing of Dirichlet L-functions in the right half-plane",
+      "baseline": {
+        "sha256": "508592c8f0a1089b3b6257c910e1fcf486e6636f811fd890704cd1a3116e23c7",
+        "title": "The Dirichlet half-plane",
+        "prerequisites": [
+          "P009"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L1"
+      }
+    },
+    "P004": {
+      "background": [
+        "Dirichlet L-functions",
+        "The critical strip"
+      ],
+      "hypotheses": [
+        "Take a Dirichlet character of positive modulus.",
+        "The point is a zero in the open strip $0<\\Re s<1$."
+      ],
+      "title": "Real parts of Dirichlet zeros in the open strip",
+      "baseline": {
+        "sha256": "4635dc1f3e69681ff49154a01269edc9e7c7d6750a75432147baeae50087a4c0",
+        "title": "Zeros in the open strip",
+        "prerequisites": [
+          "P006"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L1"
+      }
+    },
+    "P005": {
+      "background": [
+        "Primitive Dirichlet characters",
+        "The critical strip"
+      ],
+      "hypotheses": [
+        "Take a primitive Dirichlet character of positive modulus.",
+        "The point is a zero in the open strip $0<\\Re s<1$."
+      ],
+      "title": "Real parts of primitive-character zeros in the open strip",
+      "baseline": {
+        "sha256": "d8ef1202a8cb7a747255e606d9dc5b17b635d97d6bb7accb968e93ba912597a7",
+        "title": "Primitive zeros in the open strip",
+        "prerequisites": [
+          "P007"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L1"
+      }
+    },
+    "P006": {
+      "background": [
+        "Dirichlet L-functions",
+        "Conjunctions and specialization in Lean"
+      ],
+      "hypotheses": [
+        "The exported conjunction has no theorem-level antecedent. Each component uses its own character, zero, strip or pole conditions."
+      ],
+      "title": "Joint zeta, open-strip and half-plane assertions",
+      "baseline": {
+        "sha256": "0c60e940937f859f2186028ebf366c19a8198d583ff925348bb273bca61136c1",
+        "title": "Three public predicates together",
+        "prerequisites": [
+          "P009"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "P007": {
+      "background": [
+        "Functional equations",
+        "Primitive Dirichlet characters"
+      ],
+      "hypotheses": [
+        "The Dirichlet character is primitive and has positive modulus.",
+        "Its L-function vanishes at a point of the open critical strip."
+      ],
+      "title": "Reflection for primitive Dirichlet characters",
+      "baseline": {
+        "sha256": "8c829789a4480c43b56462553eab880cdcae7ce28bd8359dff244216d312ce81",
+        "title": "Primitive reflection wrapper",
+        "prerequisites": [
+          "P009"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "P008": {
+      "background": [
+        "The principal Dirichlet character",
+        "Trivial zeros of the Riemann zeta function"
+      ],
+      "hypotheses": [
+        "Take a complex zero of $\\zeta$ distinct from $1$ and from every negative even integer."
+      ],
+      "title": "Specializing the half-plane assertion to the zeta function",
+      "baseline": {
+        "sha256": "723dd4ad2103bda39cecd37ab90f6d7c28f30fd0f756fddf3e4eddf860eab7f5",
+        "title": "Zeta specialization",
+        "prerequisites": [
+          "P009"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "P009": {
+      "background": [
+        "Dirichlet L-functions",
+        "The principal-character pole"
+      ],
+      "hypotheses": [
+        "Fix a Dirichlet character of positive modulus and $s$ with $\\Re s>1/2$.",
+        "Exclude the pole by requiring a nonprincipal character or $s\\ne1$."
+      ],
+      "title": "Half-plane nonvanishing for all Dirichlet characters",
+      "baseline": {
+        "sha256": "82025d8beeb3b84f25604ec9b3cb4e819cd4cabc269a6c32f489f6b9c3743c91",
+        "title": "All Dirichlet characters",
+        "prerequisites": [
+          "P010"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "P010": {
+      "background": [
+        "Dirichlet L-functions",
+        "Half-plane nonvanishing"
+      ],
+      "hypotheses": [
+        "Fix a Dirichlet character of positive modulus and $s$ with $\\Re s>1/2$.",
+        "The character is nonprincipal or $s\\ne1$."
+      ],
+      "questions": [
+        {
+          "text": "Which two routes in the 775-node map reach a shared declaration? Compare inclusive and dominated counts.",
+          "source": "questions/formal.md"
+        }
+      ],
+      "title": "The every-character nonvanishing theorem",
+      "baseline": {
+        "sha256": "536ae2f24a07e299216961d2742e9c86078517a8610308cdc2bd5e81c89c0c29",
+        "title": "The final every-character assertion",
+        "prerequisites": [
+          "P011"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "P011": {
+      "background": [
+        "Polarized Galois representations",
+        "Dirichlet L-functions"
+      ],
+      "hypotheses": [
+        "Assume the full polarized Galois row $\\mathcal R$.",
+        "For the half-plane assertion use positive modulus, $\\Re s>1/2$, and exclude the principal-character pole."
+      ],
+      "baseline": {
+        "sha256": "44d3c817ae4da6fe56f431366bc771b5f29898be79e69c8bc728c6dcec609354",
+        "title": "Nonvanishing conditional on the polarised row",
+        "prerequisites": [
+          "P012",
+          "P013"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L1"
+      }
+    },
+    "P012": {
+      "background": [
+        "The local Langlands correspondence",
+        "Selmer groups",
+        "Dirichlet L-functions"
+      ],
+      "hypotheses": [
+        "Assume the Selmer window $V$.",
+        "The open-literature record includes both stated copies of the polarized row and existence of compatible local reciprocity/parameter maps at the designated places."
+      ],
+      "questions": [
+        {
+          "text": "Which of the linked inputs constructs one definite-side family, selection and witness satisfying every certificate simultaneously?",
+          "source": "reviews/R23_review.md"
+        }
+      ],
+      "slug": "literature-and-selmer-window",
+      "aliases": [
+        "HypsAlt",
+        "OpenLiteratureStatements"
+      ],
+      "baseline": {
+        "sha256": "274dc18420347a860a5c04bc4b0c1a9f1a3c1f34d6c3f1496adb9412fa6e67b0",
+        "title": "Nonvanishing from the literature record and the window",
+        "prerequisites": [
+          "P014",
+          "P041",
+          "P042",
+          "P043",
+          "P044",
+          "P046",
+          "P048",
+          "P049",
+          "P050"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L1"
+      }
+    },
+    "P013": {
+      "background": [
+        "Selmer groups and localization",
+        "Galois representations attached to automorphic forms"
+      ],
+      "hypotheses": [
+        "Assume the full polarized Galois row $\\mathcal R$.",
+        "The window is tested for each primitive character, admissible page function and allowed positive exponent."
+      ],
+      "questions": [
+        {
+          "text": "Does a second record give an independent exposition of the same proposition, or an additional checker run on the same export? Identify the evidence type.",
+          "source": "questions/formal.md"
+        }
+      ],
+      "slug": "selmer-window-from-polarized-row",
+      "aliases": [
+        "Selmer window V",
+        "VWin"
+      ],
+      "baseline": {
+        "sha256": "b7bb6f6b6353235286d5d3a95c49b864dbebba2db4652551d75693b30c9d1a46",
+        "title": "The Selmer window from the polarised row",
+        "prerequisites": [
+          "P020",
+          "P024",
+          "P025",
+          "P026",
+          "P027",
+          "P028",
+          "P029",
+          "P030",
+          "P031",
+          "P032",
+          "P033",
+          "P034",
+          "P035",
+          "P036",
+          "P037",
+          "P038",
+          "P039",
+          "P040"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L1"
+      }
+    },
+    "P014": {
+      "background": [
+        "Green's characters for finite general linear groups",
+        "Selmer windows",
+        "Dirichlet L-functions"
+      ],
+      "hypotheses": [
+        "Assume Green's finite-group character statement $\\mathcal B$.",
+        "Assume the Selmer window $V$ and nonemptiness of the single definite-side family record $\\mathcal F$."
+      ],
+      "title": "Nonvanishing for arbitrary characters from Green, the Selmer window and the family witness",
+      "baseline": {
+        "sha256": "fb0457ec9a758ef1f2d0239f6f7340763652c16a731c0c66eb9aceee4cf0e887",
+        "title": "Arbitrary characters from the three inputs",
+        "prerequisites": [
+          "P015"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L2"
+      }
+    },
+    "P015": {
+      "background": [
+        "Primitive characters",
+        "Theta lifts",
+        "Selmer windows"
+      ],
+      "hypotheses": [
+        "Assume Green's character statement, the Selmer window and a common definite-side family witness.",
+        "The character is in the prescribed primitive character class and $\\Re s>1/2$."
+      ],
+      "questions": [
+        {
+          "text": "Where is the Selmer bound established for the very cyclic level and family used in the host and connectedness steps?",
+          "source": "reviews/R23_review.md"
+        }
+      ],
+      "title": "Primitive-character nonvanishing from Green, the Selmer window and the family witness",
+      "baseline": {
+        "sha256": "dcfb9a973a0ebd55109d51f18e2eef40e499d436650bf8dc7e5687f876ba2791",
+        "title": "Primitive characters from the three inputs",
+        "prerequisites": [
+          "P016",
+          "P045",
+          "P047"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L1"
+      }
+    },
+    "P016": {
+      "background": [
+        "Primitive characters",
+        "Power windows",
+        "Smoothed prime sums"
+      ],
+      "hypotheses": [
+        "Fix $\\lambda>1$ and assume the connected-family assertion TopG.",
+        "Every primitive character request $G_\\psi$ admits hosts on windows with this same exponent $\\lambda$."
+      ],
+      "baseline": {
+        "sha256": "b0f277bffed40d90b7cb34ecc0065c25db33094c2241749fb01548be6163dd39",
+        "title": "Zero-freeness from host existence and connectedness",
+        "prerequisites": [
+          "P017",
+          "P018",
+          "P019"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L2"
+      }
+    },
+    "P017": {
+      "background": [
+        "Smoothed character sums",
+        "Finite Fourier analysis",
+        "Uniform bounds on power windows"
+      ],
+      "hypotheses": [
+        "Fix a level, real $e_D,e_L$, $\\varepsilon>0$ and a family $F$ at $\\varepsilon$ satisfying the level explicit-formula condition EFamC.",
+        "There are fixed $K,c_{HH},e_K,C_L,x_0$ such that ChainTied holds on every window point $x\\ge x_0$ for this family with those same constants."
+      ],
+      "questions": [
+        {
+          "text": "Where do the balance identity, width Lipschitz bound and thick-place identification enter the printed v3 proof, and which arguments are supplied for them?",
+          "source": "reviews/R23_review.md"
+        }
+      ],
+      "slug": "chain-tied-chebyshev-window",
+      "aliases": [
+        "P017 window inequality",
+        "chain-tied family"
+      ],
+      "baseline": {
+        "sha256": "a543dced9ea9eaf37a3bba508f022f2f07ddde3b54ed8ae133244145d9465ffc",
+        "title": "Chebyshev control on a chain-tied family",
+        "prerequisites": [
+          "P021"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L1"
+      }
+    },
+    "P018": {
+      "background": [
+        "Zero-free regions",
+        "Growth of smoothed prime sums"
+      ],
+      "hypotheses": [
+        "Fix a level, $\\lambda>1$ and $0<\\theta<1$.",
+        "The set of $x$ on which the level prime sum is at most $x^\\theta$ contains power windows of exponent $\\lambda$."
+      ],
+      "aliases": [
+        "level window criterion"
+      ],
+      "baseline": {
+        "sha256": "33fa21815654618947ce00b12328fbf358d2da6df937e8c7c08f24295bce862e",
+        "title": "The level window criterion",
+        "prerequisites": [
+          "P023"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L2"
+      }
+    },
+    "P019": {
+      "background": [
+        "Power windows",
+        "Uniform asymptotic estimates",
+        "Families of primitive characters"
+      ],
+      "hypotheses": [
+        "Fix a character predicate $Q$, $\\lambda>1$ and the stipulated family system. For each selected character use its cyclic level.",
+        "The P017-type bound and the P018 window criterion hold on that level.",
+        "There are fixed real $e_D,e_L$ and $\\varepsilon_1>0$. For each $0<\\varepsilon<\\varepsilon_1$, a family satisfies EFamC, has exponent-$\\lambda$ windows and is eventually tied with those $e_D,e_L$."
+      ],
+      "title": "A zero-free half-plane for a selected class of primitive characters",
+      "baseline": {
+        "sha256": "2a0c95966393a7639984af05ba981d20bbd8fb19649beab1ecf7a8beea9cbb2e",
+        "title": "Zero-freeness for a selected class of primitive characters",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L2"
+      }
+    },
+    "P020": {
+      "background": [
+        "Galois cohomology",
+        "Local conditions on Selmer groups",
+        "Prime-weighted counts"
+      ],
+      "hypotheses": [
+        "Assume the local, automorphy, cohomological and CM records of the rank-$n$ literature hypothesis.",
+        "One constant $C_K$ satisfies LemmaK, and the four character-count assertions I, II, III and V hold."
+      ],
+      "baseline": {
+        "sha256": "dad8fdeac52d4171fc6b1a9e6b35f1b80c996b241869a2949ce5184fb3685286",
+        "title": "The Selmer window from four character counts",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L1"
+      }
+    },
+    "P021": {
+      "background": [
+        "Hermitian lattices",
+        "Slopes and weighted means"
+      ],
+      "hypotheses": [
+        "Fix the finite unit and word-fibre data, constants and $X_{pp}$.",
+        "Assume the Hida setting, division bound, $E$ and $H$ comparisons, counting, slopes and quotient-slope bounds of the cited lattice definition.",
+        "Use LossBounds, SlopeIneq, HHBound and FParams on the same data (Definition 6.38, p. 69)."
+      ],
+      "title": "A pointwise upper bound from weighted lattice slopes",
+      "slug": "pointwise-lattice-slope-bound",
+      "baseline": {
+        "sha256": "66e93e2cd0fd9dd09991e361afb57bc10c6ce96ac835aba49fffa1e2a8b2d9c9",
+        "title": "A pointwise upper bound from weighted slopes",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L2"
+      }
+    },
+    "P022": {
+      "background": [
+        "Laplace transforms",
+        "Isolated poles and residues",
+        "Cauchy estimates"
+      ],
+      "hypotheses": [
+        "The triple $(g,\\Phi,Z)$ satisfies the pole-data record, including its growth, transform, isolated-singularity and residue conditions.",
+        "Take $0<\\theta<1$ and $\\delta>0$. The logarithmic window condition $W(g,\\theta,\\delta)$ holds."
+      ],
+      "questions": [
+        {
+          "text": "Where does the contradiction use positivity of the residue at a real pole? Identify the corresponding datum in P023.",
+          "source": "questions/analytic.md"
+        }
+      ],
+      "title": "Landau’s criterion on logarithmic windows",
+      "slug": "landau-window-criterion",
+      "aliases": [
+        "Landau window theorem",
+        "one-sided Landau criterion"
+      ],
+      "baseline": {
+        "sha256": "6df64a04f6cf73ea03094d6bfab8dfbd4ecb38bbe8c3437bbadaf204b8c088ef",
+        "title": "A one-sided theorem on logarithmic windows",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L2"
+      }
+    },
+    "P023": {
+      "background": [
+        "Dirichlet L-functions",
+        "Mellin transforms",
+        "Smoothed prime sums"
+      ],
+      "hypotheses": [
+        "Fix a character family, $0<\\theta<1$, $\\delta>0$ and a real constant $C$.",
+        "For every starting threshold there is a larger $Y$ with $\\mathcal G_F(y)\\le Cy^\\theta$ throughout $[Y,Y^{1+\\delta}]$."
+      ],
+      "slug": "positive-character-power-windows",
+      "aliases": [
+        "power-window zero-free criterion"
+      ],
+      "baseline": {
+        "sha256": "3720e0772bd9d75831c7bbb7c87e3a721127a5e60c645e76c88408305b248d14",
+        "title": "Power windows for a positive character family",
+        "prerequisites": [
+          "P022"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L2"
+      }
+    },
+    "P024": {
+      "background": [
+        "Automorphy lifting",
+        "Ordinary deformation rings"
+      ],
+      "hypotheses": [
+        "Assume $H'$, weak descent, cyclic base change, quadratic descent, the quaternion existence input and real semisimplicity.",
+        "Use the prescribed admissible marked CM datum; the reduced host conclusion additionally assumes a quadratic $K$ containing a root of $X^2+1$."
+      ],
+      "title": "A common mark for the two automorphy conclusions",
+      "baseline": {
+        "sha256": "79f05f12b51e3c81d6a099a330ee586e7a33258ab1b238bc349730e3cf041a54",
+        "title": "Two conclusions with a common mark",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "P025": {
+      "background": [
+        "Ordinary deformation rings",
+        "Local Tate duality",
+        "Bloch–Kato Selmer groups"
+      ],
+      "hypotheses": [
+        "Assume local finiteness, Tate duality, Euler characteristics, Bloch–Kato local comparison and dense ordinary adjoint vanishing.",
+        "Use the admitted CM Hida setting with $\\mu_\\ell\\not\\subset L$, ranks two through four, a locally generic automorphic point and the stated inertia ratios for strictly decreasing weights.",
+        "For the chosen polarizing form and extension the pulled-back continuous cocycle satisfies the finite local condition."
+      ],
+      "baseline": {
+        "sha256": "3c3487ab6860d6f4a89b8c4bb23c787b35e676a0973ce3b4c47be831ec294d22",
+        "title": "Ordinary to Bloch--Kato adjoint vanishing",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "P026": {
+      "background": [
+        "Euler systems for modular forms",
+        "Ordinary local representations",
+        "Galois cocycles"
+      ],
+      "hypotheses": [
+        "Take odd $\\ell$, $e\\ge1$ and an integral rank-two representation in the specified ordinary normal form at a place over $\\ell$.",
+        "Use its ramification, determinant, kernel irreducibility and two local character conditions.",
+        "A weight-$2e+1$ newform of level prime to $\\ell$ has unit $a_\\ell$. It realizes the indicated twist by $\\eta$, with $\\eta$ trivial on the subgroup fixing $\\mu_\\ell$ and with the second diagonal character satisfying the specified inertia identity."
+      ],
+      "questions": [
+        {
+          "text": "Where is a denominator chosen that works for the integral Hecke projector at every layer?",
+          "source": "questions/galois.md"
+        }
+      ],
+      "baseline": {
+        "sha256": "6b8fade345f2f4146baed28b768b65d59e6929f4c2c79b4b6b406075cafbe65e",
+        "title": "An integral ordinary zeta cocycle",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "P027": {
+      "background": [
+        "Graded deformation rings",
+        "Cotangent spaces and integral lengths"
+      ],
+      "hypotheses": [
+        "Use a complete characteristic-zero DVR, an algebraically closed valued extension, and the marked graded algebra with the stated finite generators and complete local degree-zero algebra.",
+        "Assume $r\\ge1$, the stated equation counts and smooth marked chart, the negative and zero-weight cotangent spanning conditions and finiteness of the degree-zero image.",
+        "The one-sided fibres, two-sided tangent dimensions, chosen function vanishing at the mark, and the finite orbit cover satisfy the conditions in the statement."
+      ],
+      "baseline": {
+        "sha256": "e534df3f85730e0d7b741e1c4b099581f113e193e6b1d65c99ea916b50b3e321",
+        "title": "Length measured by two-sided orbits",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L1"
+      }
+    },
+    "P028": {
+      "background": [
+        "Point derivations",
+        "Saturated lattices and module lengths"
+      ],
+      "hypotheses": [
+        "Fix a DVR with finite residue field, a graded algebra, a marked point vanishing on the selected degree, elements $F_i$ in that degree and $c\\ne0$.",
+        "The additive injection into the dual modulo $c$ kills all $F_i$, and every value lifts to a point derivation of that weight."
+      ],
+      "baseline": {
+        "sha256": "c20ce52277412ff5e3234e5b19153b581b5b83429b7bef215fec631a746de261",
+        "title": "The lower bound from integral derivations",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L2"
+      }
+    },
+    "P029": {
+      "background": [
+        "CM Galois representations",
+        "Satake parameters",
+        "Frobenius traces"
+      ],
+      "hypotheses": [
+        "Assume $H'$ and LevelKNAlt. Fix a CM field and rank $n\\ge2$.",
+        "The strictly decreasing weights satisfy $m_i+m_{n+1-i}=1-n$ and the given height bound. Use the stipulated admissibility, level and good-prime conditions."
+      ],
+      "baseline": {
+        "sha256": "10e6b4d94caac463b38b2788b7e522790b57371c02dcb12888c80056cc5829d1",
+        "title": "A CM classifier of fixed purity",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "P030": {
+      "background": [
+        "Quadratic restriction of representations",
+        "Satake parameters"
+      ],
+      "hypotheses": [
+        "Assume $H'$, the imaginary-quadratic level and Frobenius correspondence, and preservation of admissibility under irreducible quadratic restriction.",
+        "Use rank at least two, the specified symmetry and size of weights, and an allowed level and good prime."
+      ],
+      "baseline": {
+        "sha256": "ecfac37ceaea611020fd33bc14debff8e3806e66d133fdaccf97fe0d9b3657dc",
+        "title": "A rational classifier of variable purity",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "P031": {
+      "background": [
+        "Cyclotomic extensions",
+        "Galois groups of localizations"
+      ],
+      "hypotheses": [
+        "Fix a prime $\\ell$ and a number field containing a primitive $\\ell$th root when $\\ell$ is odd, or a primitive fourth root at two.",
+        "Use its maximal root-of-unity exponent and the corresponding tower."
+      ],
+      "baseline": {
+        "sha256": "e9f545c41804fd037135a36fc5619d1cbe52ca642501c636401f05e0a10ea21b",
+        "title": "One cyclotomic generator for every layer",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L1"
+      }
+    },
+    "P032": {
+      "background": [
+        "Bar resolutions",
+        "Homology of arithmetic groups",
+        "Transfer"
+      ],
+      "hypotheses": [
+        "Assume the chain/prism functoriality, boundary and composition identities, the basic bar cycle with its coefficient relation, interpolation and Steinitz transport.",
+        "In the cyclotomic layer set $E=e+1$, $e\\ge0$, $m=2E+1<\\ell^c$ and $a=\\kappa^E$. The element satisfies the stated divisor difference condition."
+      ],
+      "title": "Integral bar cycles with uniform residue evaluations",
+      "baseline": {
+        "sha256": "895b93d5aff3c428ac2d7f3650e97cfeae2cee6e6987fbcf9d0ced2e8eb4d11d",
+        "title": "An integral cycle with uniform residue evaluations",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L1"
+      }
+    },
+    "P033": {
+      "background": [
+        "Group homology",
+        "Determinant pairings",
+        "Finite fields"
+      ],
+      "hypotheses": [
+        "Assume the chain, prism, composition and basic-cycle identities, the scalar-functional transfer and the scalar cocycle formula.",
+        "Fix a finite field, a primitive $q$th root with $q>0$, the stipulated character and the specified evaluation data."
+      ],
+      "baseline": {
+        "sha256": "41a6809ff89456fc5631f433358d2317e4f854a39840dbb31daaaa1bc8efbcbf",
+        "title": "The determinant evaluation on scalar prisms",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L1"
+      }
+    },
+    "P034": {
+      "background": [
+        "Homological stability",
+        "Block embeddings of general linear groups"
+      ],
+      "hypotheses": [
+        "Take a totally complex field, even $k\\ge0$, $q=k+1<r_2(L)$ and $n\\ge2q+4$.",
+        "Fix a positive integer $t$ for the diagonal block and stabilization operations."
+      ],
+      "questions": [
+        {
+          "text": "Where does the restriction on the number of complex places enter? Distinguish the rank conclusion checked against Borel from the extra range condition.",
+          "source": "questions/ktheory.md"
+        }
+      ],
+      "baseline": {
+        "sha256": "ccc7bd1d9d4368c236b4dad394f66a501c79e306e9e628b9704da7478c446c04",
+        "title": "Odd homology after successive block operations",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L1"
+      }
+    },
+    "P035": {
+      "background": [
+        "Group homology",
+        "Stable range for arithmetic groups"
+      ],
+      "hypotheses": [
+        "Use a totally complex number field $L$ and nonnegative homological degree $m$.",
+        "The matrix ranks satisfy $n'\\ge n\\ge 2m+4$."
+      ],
+      "questions": [
+        {
+          "text": "Does stabilization bound the full integral torsion or its component at one prime? Track the remaining factors on the way to Z2.K7.",
+          "source": "questions/ktheory.md"
+        }
+      ],
+      "title": "Stability of integral homological torsion orders",
+      "baseline": {
+        "sha256": "a17b95f7a195f32fc9b6873630ee8ad36548ffd78c8b01f504f78f05586caf35",
+        "title": "Stable torsion orders",
+        "prerequisites": [
+          "P038"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L1"
+      }
+    },
+    "P036": {
+      "background": [
+        "Kummer theory",
+        "Equivariant character groups",
+        "Finite quotients"
+      ],
+      "hypotheses": [
+        "Take a cyclotomic layer $F/L$ over totally complex $L$, a positive exponent $E$ and nonnegative $b,B$.",
+        "The Few bound $B$ applies to finite families satisfying the divisor-difference condition and pairwise distinct prescribed norm classes."
+      ],
+      "title": "Counting equivariant characters in a cyclotomic layer",
+      "aliases": [
+        "Few bound"
+      ],
+      "baseline": {
+        "sha256": "6a59528296783901e04f2371890dd7b42bf7320fa5ef3918d452c3b19fe17e8e",
+        "title": "The finite count and the loss in the exponent",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L1"
+      }
+    },
+    "P037": {
+      "background": [
+        "Cyclotomic towers",
+        "Localization kernels",
+        "Finite character groups"
+      ],
+      "hypotheses": [
+        "Use totally complex $L$ with maximal $\\ell$-power root order $\\ell^c$, $c\\ge1$ and $c\\ge2$ when $\\ell=2$.",
+        "Fix $E\\ge1$. The prescribed character groups are finite with the same bound $B$ over every allowed layer."
+      ],
+      "baseline": {
+        "sha256": "af65313a47fa8f332b2a96775ea557f2a9f8f2c3d87a2e6d044ce4c150d501d8",
+        "title": "From a uniform layer bound to the localization kernel",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L1"
+      }
+    },
+    "P038": {
+      "background": [
+        "Equivariant cellular chains",
+        "Torsion in arithmetic-group homology"
+      ],
+      "hypotheses": [
+        "Fix totally complex $L$ and nonnegative $N,m$.",
+        "Use the uniform face-orbit count through degree $m$ for the integral Hermitian complex at this rank."
+      ],
+      "baseline": {
+        "sha256": "05882ce5c96a9417c2d7eddd2b83895aab108dfb19580c41e08d38a03592b1d1",
+        "title": "All-prime torsion from faces and stabilizers",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L1"
+      }
+    },
+    "P039": {
+      "background": [
+        "Torsion in group homology",
+        "Discriminants of number fields"
+      ],
+      "hypotheses": [
+        "Take a totally complex number field and a positive integer $e$.",
+        "The matrix rank and homological degree satisfy $1\\le N\\le4e+6$ and $0\\le m\\le2e+1$."
+      ],
+      "title": "Uniform discriminant dependence for integral homological torsion",
+      "baseline": {
+        "sha256": "f8dc4c0880ad9674e3c0bcaf9fc97cd894b48e88ccc9cec61c120e62b7910fd3",
+        "title": "One discriminant exponent throughout the window",
+        "prerequisites": [
+          "P038"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L1"
+      }
+    },
+    "P040": {
+      "background": [
+        "Poitou–Tate duality",
+        "Tate twists",
+        "Local cohomology"
+      ],
+      "hypotheses": [
+        "Take a number field, a prime $\\ell$ odd or with no real places of the field, admissible local data and an integral twist.",
+        "Finite-coefficient Poitou–Tate duality, local finiteness and local Tate duality hold."
+      ],
+      "title": "A Poitou–Tate length identity with compact coefficients",
+      "baseline": {
+        "sha256": "9df08d0cdcdfaf63c6fad98a441687c0c59bce878e3cf8ae7921ec11a12356c9",
+        "title": "A compact-coefficient length formula",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L1"
+      }
+    },
+    "P041": {
+      "background": [
+        "Generalized matrix algebras",
+        "Hecke algebras",
+        "Residual representations"
+      ],
+      "hypotheses": [
+        "The family at the marked point is the specified integral block sum, its determinant coefficients lie in the Hecke algebra and its residual block spans the full matrix algebra.",
+        "The chosen orthogonal idempotents and distinguished element satisfy the corner evaluation and distinct-root hypotheses."
+      ],
+      "title": "Length estimates in an ordered matrix-corner algebra",
+      "baseline": {
+        "sha256": "ecf2ee81e4933bae2c09d8491aaa7c208ff48679516e9b8ecd0dc0b6085d7537",
+        "title": "Ordered corner algebra and its length estimate",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "P042": {
+      "background": [
+        "Discrete valuation rings",
+        "Splitting algebras",
+        "Module length"
+      ],
+      "hypotheses": [
+        "Take a finite free extension of coefficient DVRs with the stated valuation scaling and compatible evaluated splitting algebras.",
+        "Assume the distinct-eigenvalue corner, defining identities, Noetherianity and scalar-action conditions; use the prescribed generators of the original module."
+      ],
+      "baseline": {
+        "sha256": "cc7e37c70522a71c49a9de392f3159071c01684c26f4a427eb52855ce0d59724",
+        "title": "Transport of the presented module across DVRs",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "P043": {
+      "background": [
+        "Local Galois representations",
+        "Fontaine conditions",
+        "Tame inertia"
+      ],
+      "hypotheses": [
+        "Use the normalized family with its ring, scalar, topology, rank and evaluation identifications.",
+        "Assume G2, G4, G5, tame generators, semisimple decomposition, Fontaine conditions, local Tate finiteness and compatible coefficients.",
+        "Use the good coefficient extension, the specified auxiliary-character powers and the TB bound on this family."
+      ],
+      "title": "Local comparison and continuity on a normalized Galois family",
+      "baseline": {
+        "sha256": "dd9e6c37a2abae9b53bf3d7f73a7ce0428391e5210e04ae0587eec3acc74da37",
+        "title": "Five local conclusions on one normalized representation",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "P044": {
+      "background": [
+        "Local Tate duality",
+        "Lattice indices",
+        "Galois deformation theory"
+      ],
+      "hypotheses": [
+        "Assume G1–G6, the tame-generator, Bloch–Kato, annihilator, continuity, decomposition, Fontaine, Tate-finiteness and coefficient compatibility conditions.",
+        "Use the stated local length, lift-exponent and TB bounds with the specified rows, columns and constituent.",
+        "The idempotent design (5.1) and unramified input hold at $\\pi\\in Z$, the prime differs from $g_0,g_1$, and the global and scalar lengths in the bound are finite."
+      ],
+      "baseline": {
+        "sha256": "d1fa5467a509fb8a81900446787518a579c065e05133ea7253c8323e253ab28e",
+        "title": "Normalized congruence index",
+        "prerequisites": [
+          "P043"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "P045": {
+      "background": [
+        "Lubin–Tate formal groups",
+        "Jets of formal power series",
+        "Nonarchimedean valuations"
+      ],
+      "hypotheses": [
+        "Fix a prime and compatible formal systems $X,Y,D$ with the stated integral exponential factorization RestGc.",
+        "Each unweighted coefficient vanishes or is a local-frame jet coefficient. Require admission and the indicated stage, differential and coordinate ranges."
+      ],
+      "title": "A weighted valuation bound for a formal-group jet",
+      "baseline": {
+        "sha256": "7b1ac8f10cb6439bec88901be6432484c87fca115c86e34d057d7a19427db778",
+        "title": "Weighted jet at a place",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L1"
+      }
+    },
+    "P046": {
+      "background": [
+        "Lubin–Tate theory",
+        "Theta kernels",
+        "Lattice stabilizers"
+      ],
+      "hypotheses": [
+        "Assume the entry-admission rule and curve realization at eligible inert primes, with the specified tied host, kernel, comparison, labels and joint.",
+        "Use a nonvanishing inert place of residue characteristic $p\\ge5$ outside the level with $p\\nmid T_u$, a used tuple, trivial level-zero stabilizer as specified and $2r_G\\le k$."
+      ],
+      "title": "Simultaneous local comparison and admission on the lattice chain",
+      "baseline": {
+        "sha256": "3e426e2ca93cc56a4bd18f19b33348d8ad845ffc36c82e981e3f235bb04859a5",
+        "title": "Comparison and admission on the same chain",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "P047": {
+      "background": [
+        "Integral theta series",
+        "Valuations of Fourier coefficients"
+      ],
+      "hypotheses": [
+        "Assume the four coefficient cases, the size and error definitions and the stated stabilizer-denominator identity.",
+        "The tuple is used and the prime is off level, distinct from $T_u$ and outside the excluded set. The point lies in the indicated ramified set."
+      ],
+      "baseline": {
+        "sha256": "8a16027e98bda7c878d2cf386cc0ac5ca50b0c6aac399461081669253a289c11",
+        "title": "Four cases for the first column bound",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "P048": {
+      "background": [
+        "Theta periods",
+        "Integral lattices",
+        "Valuations of periods"
+      ],
+      "hypotheses": [
+        "Use the base and pre-chart, pinned frame and coefficients, stage laws, later data and level-zero lattice identification.",
+        "The reference and twisted rows are integral, the coefficient and tuple characters agree, and the stabilizer-denominator identity holds.",
+        "Fix the indicated divisor, used nonreference tuple, integral point and permitted form."
+      ],
+      "baseline": {
+        "sha256": "9ab438f860240b587607af8165c7d3acccf60268f8c3556fdfb6b9be8539d9eb",
+        "title": "One twisted period with simultaneous local bounds",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L1"
+      }
+    },
+    "P049": {
+      "background": [
+        "Hermitian Gram determinants",
+        "Minkowski embeddings",
+        "Lattice indices"
+      ],
+      "hypotheses": [
+        "Use a totally complex number field with its involution, a finite-dimensional space with compatible integral action, a basis and invertible archimedean frames.",
+        "Take a linearly independent family. For the index formula the containing integral lattice is finitely generated of the same rank."
+      ],
+      "baseline": {
+        "sha256": "d1269aff78188ef2b9d9ecf938b5344b26df88a09c6e77e8fd18603d540c93f0",
+        "title": "Gram determinant in the span of the lattice",
+        "prerequisites": [
+          "P050"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L2"
+      }
+    },
+    "P050": {
+      "background": [
+        "Minkowski embeddings",
+        "Discrete lattices over number fields"
+      ],
+      "hypotheses": [
+        "Use a number field with the specified involution, a finite-dimensional vector space with compatible integral action and a basis.",
+        "Take invertible frames at the infinite places and a finitely generated integral submodule."
+      ],
+      "baseline": {
+        "sha256": "1838e973503ad0c42457c45c4c2ee7a42a46d8dcf6c97096609ae1f06165c0bb",
+        "title": "Lattice realization over a number field",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "P090": {
+      "background": [
+        "Adelic theta functions",
+        "Unitary determinants",
+        "Idèle characters"
+      ],
+      "hypotheses": [
+        "Take a chain, its adelic data, determinant map and exponent.",
+        "Require the specified adelic pin and tie conditions for those same data."
+      ],
+      "baseline": {
+        "sha256": "31433b67dba2d121eea7f97147ecf0c5887aeed853a9f8413a001f5521c1ca3a",
+        "title": "The full adelic law for the specified kernel",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "P096": {
+      "background": [
+        "Localization of lattices",
+        "Height-one primes",
+        "Change of frame"
+      ],
+      "hypotheses": [
+        "Fix standard column data, a word, a stage $i\\le m$, a place and two classes related there by the specified $\\gamma$.",
+        "The height-one prime of the coefficient ring contracts to a prime distinct from the designated place below."
+      ],
+      "baseline": {
+        "sha256": "5e14670cbcc123620a20381c21f51d4d8ffe5fbbdf1aca6704a78f17167c0cb8",
+        "title": "Equality of localized class lattices",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L1"
+      }
+    },
+    "P134": {
+      "background": [
+        "Congruence subgroups",
+        "Represented points on lattice charts"
+      ],
+      "hypotheses": [
+        "Use tied data and a chart at stage $i\\le m$.",
+        "The point is represented in that chart, the element belongs to its level group, and the conjugating frame is the stated one at a place of $B$."
+      ],
+      "title": "Depth-zero congruence in a represented base frame",
+      "baseline": {
+        "sha256": "41dcfd64a96131eb433a167538bcce121d3c3fc6e1bd53eacdbfe9284787850f",
+        "title": "Depth zero in the base frame",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L1"
+      }
+    },
+    "T01": {
+      "background": [
+        "Unitary representations",
+        "Theta correspondences",
+        "Selmer windows"
+      ],
+      "hypotheses": [
+        "Assume the third-place unitary hypothesis $P$, local theta inputs $F$, matching and equality of theta integrals.",
+        "Use the closed covolume bound, compatible local reciprocity maps and the primitive-character Selmer window with exponent 401."
+      ],
+      "baseline": {
+        "sha256": "2e4a6b1a766192d05ee922395cd1798909726ab313eb1050641f27a5081d7a82",
+        "title": "From matched theta data to the half-plane",
+        "prerequisites": [
+          "D002",
+          "D004",
+          "D006",
+          "D575",
+          "P014",
+          "P015",
+          "T02",
+          "T25"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L1"
+      }
+    },
+    "T02": {
+      "background": [
+        "Theta kernels",
+        "Covolumes of Hermitian lattices",
+        "Local reciprocity"
+      ],
+      "hypotheses": [
+        "Assume $P,F$, theta integral agreement, local matching and the uniform covolume assertion.",
+        "For each proof hL of RecTExists, the last premise supplies the linked closed small-prime bound at parametersOfDependence hL c for every real c. The local map is existential inside RecTExists, separately for each field, closure and place over a place (IsRecTOfIsRec.lean:78–80)."
+      ],
+      "questions": [
+        {
+          "text": "Which record identifies the lattice and chosen row when the one-unit inequality P021 is used throughout a family?",
+          "source": "questions/arakelov.md"
+        }
+      ],
+      "aliases": [
+        "definite-side witness",
+        "nonemptiness of HypsAlt"
+      ],
+      "baseline": {
+        "sha256": "224c9f118d710851a06c0c1097fb757d88450badd6dbaa080d71585d015c493b",
+        "title": "A common definite-side witness",
+        "prerequisites": [
+          "D025",
+          "D044",
+          "T03",
+          "T05",
+          "T08",
+          "T09",
+          "T10"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L1"
+      }
+    },
+    "T03": {
+      "background": [
+        "Unramified representations",
+        "Adelic family parameters"
+      ],
+      "hypotheses": [
+        "Assume the third-place hypotheses and rationality of the tested rows.",
+        "Fix a proof hL of RecTExists, a real dependence parameter and an eventually large retwisting predicate. RecTExists asserts that a local map satisfying IsRecT exists at each place.",
+        "The small-prime bound is linked at the dependence parameter. The functional and covolume bounds are linked at the extension parameter."
+      ],
+      "title": "Building the definite-side family from unramified row data",
+      "baseline": {
+        "sha256": "28f442aa5f29486394f74fa1f9195f97c48bda4253dd6a5ee4866f2789f7c505",
+        "title": "The member-stage construction",
+        "prerequisites": [
+          "D033",
+          "T04",
+          "T05",
+          "T06",
+          "T07",
+          "T08"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L1"
+      }
+    },
+    "T04": {
+      "background": [
+        "Siegel–Weil formula",
+        "Discrete series and rapid decay",
+        "Automorphic rows"
+      ],
+      "hypotheses": [
+        "Use global Artin reciprocity, convergent Siegel–Weil, the discrete-series and harmonic-analysis inputs, and both bounds in T05.",
+        "In the chosen reciprocity, norm, series and geometry extension require T08's open conditions and the linked covolume, functional and norm conditions."
+      ],
+      "title": "All 26 large-slot conditions from the open conditions",
+      "baseline": {
+        "sha256": "10479899e95ff4d3d972634c05c17de7f496cc20ff88d730ad6e8742a73f98c1",
+        "title": "From open conditions to all rows",
+        "prerequisites": [
+          "D394"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "T05": {
+      "background": [
+        "Weighted valuations",
+        "Local estimates on automorphic families"
+      ],
+      "hypotheses": [
+        "Fix the admissible family and row data. The first assertion requires its division input and points satisfying the stated More condition.",
+        "The two estimates use their respective false-side and true-side row data, with the thresholds and parameter $C$ in their stated order."
+      ],
+      "baseline": {
+        "sha256": "629014469a37e28101c70836fa0083eec8a13a14c75e8d6db458609efd6748c3",
+        "title": "Two uniform bounds on indefinite rows",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "T06": {
+      "background": [
+        "Unitary-group mass formulas",
+        "Automorphic membership"
+      ],
+      "hypotheses": [
+        "Assume the third-place unitary hypotheses and rationality of the eligible rows.",
+        "Fix a proof of the existence proposition RecTExists and a real dependence parameter, and take an eventually large retwisting predicate. The lattice-mass clause takes an unramified CM datum of rank at least three."
+      ],
+      "title": "Lattice masses, automorphic membership and existence of linked bundles",
+      "baseline": {
+        "sha256": "ea6da4eb456d2a74069cfa9889955a80b68875a207c064cb323eb3508d406ebc",
+        "title": "Three member and linkage conclusions",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "T07": {
+      "background": [
+        "Local Galois cohomology",
+        "Linked norm estimates",
+        "Selmer groups"
+      ],
+      "hypotheses": [
+        "Assume the two-layer linking and third-layer published hypotheses, geometric Galois comparison, SerN and depth-zero support.",
+        "Use local finiteness, Tate duality and the Euler characteristic; the linked norm bound at two and three must hold at the same dependence parameter."
+      ],
+      "title": "From the bounds at two and three to the Selmer lattice link",
+      "baseline": {
+        "sha256": "2d6947a3c5a23a6cd2554aa814132f2208c42c9432ea2413a129318cdd0cb9ed",
+        "title": "From small-prime bounds to linkage",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "T08": {
+      "background": [
+        "Adelic parameter families",
+        "Unitary-group row data"
+      ],
+      "hypotheses": [
+        "Assume the third-place unitary hypothesis $P$.",
+        "Fix a proof of RecTExists and a real dependence parameter and use the specified built, good and linked row data."
+      ],
+      "title": "The twelve linked conditions at dependence parameters",
+      "baseline": {
+        "sha256": "6147d9286cdca2e719c687836290abd550b10c8f43318d8bdb4cd0056486d0fd",
+        "title": "Open conditions at the dependence parameters",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "T09": {
+      "background": [
+        "Unramified Howe duality",
+        "Weil representations",
+        "Siegel–Weil formula"
+      ],
+      "hypotheses": [
+        "Assume the local theta input, both spherical-span implications of unramified Howe duality and convergent unitary Siegel–Weil.",
+        "Use row-size and Eisenstein ties, $C_F\\ge6510$, a compatible Weil model, admissible grid and nonzero smooth vector."
+      ],
+      "baseline": {
+        "sha256": "110bd6b60156de5ccf8cf2c05632815b56d2b3c4afa80c9e2e477dfc7f9fcc56",
+        "title": "Separation on the evaluation grid",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "T10": {
+      "background": [
+        "Theta correspondence",
+        "Hecke functional equations",
+        "Spectral estimates"
+      ],
+      "hypotheses": [
+        "Take the local theta data and automorphic join, the Hecke–Tate functional equation and the two theta comparisons.",
+        "Assume separating functionals and the lower-weight assertion. The family has the division input and points on the specified field grid."
+      ],
+      "title": "The constant-function fit from theta and Hecke functionals",
+      "baseline": {
+        "sha256": "b3c3367adb07323e86a5a7465a65e881fd07b8f3ca0189487ec801c2c5f364f2",
+        "title": "Fitting the constant function",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "T11": {
+      "background": [
+        "Doubling integrals",
+        "Meromorphic continuation",
+        "Schwartz spaces"
+      ],
+      "hypotheses": [
+        "Assume the doubling Eisenstein summation and continuation with the stated moderate local regularizations.",
+        "Use the standard special-value assertion and an admissible triple of Weil models over the given field pair."
+      ],
+      "title": "Simultaneous global theta-integral comparison and local matching",
+      "baseline": {
+        "sha256": "1e6af8721b94712336497f3702cc27d45ff297440682e179a97994a97ebfebcc",
+        "title": "Simultaneous comparison and local matching",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "T12": {
+      "background": [
+        "Eisenstein series",
+        "Weil representations",
+        "Haar measures"
+      ],
+      "hypotheses": [
+        "Use a good number-field base and positive-rank spaces of opposite signs; the first has definite signature.",
+        "Fix the specified Hecke character, Darboux doubling model, frame, compact subgroup, height, Haar measure with its fundamental domain and a Schwartz vector of finite compact span."
+      ],
+      "questions": [
+        {
+          "text": "At equal dimensions, which multiplier and measure enter the doubling formula, and which map transports them to T11?",
+          "source": "questions/theta.md"
+        }
+      ],
+      "aliases": [
+        "doubling formula"
+      ],
+      "baseline": {
+        "sha256": "91a812828639ab5cb0fecc5e636673b4520de27eb156ca2d7384b3a47c276465",
+        "title": "The value of the doubled Eisenstein series",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L1"
+      }
+    },
+    "T13": {
+      "background": [
+        "Arakelov intersection theory",
+        "Hodge bundles",
+        "Toroidal compactifications"
+      ],
+      "hypotheses": [
+        "Use T17–T24: arithmetic bigness, Hilbert–Samuel, resolution, principalisation, Poincaré–Lelong, splitting, nef Riemann–Roch and Hodge–Tate orthogonality.",
+        "Assume integral toroidal models and fan/KS, Lie seminegativity, point separation, arithmetic degree, the published Hodge-bundle package and Grothendieck deformation.",
+        "Use a family with its required hypotheses and largeness conditions at the selected exponent and scale."
+      ],
+      "baseline": {
+        "sha256": "8112c4be5651dc8c43f62fa1fc0b00f33e1c82279eaa38a5c4de6f4a04f04cee",
+        "title": "Arithmetic inputs for the covolume bound",
+        "prerequisites": [
+          "D123",
+          "D128",
+          "D154",
+          "D155",
+          "D575",
+          "T14",
+          "T15",
+          "T16"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L1"
+      }
+    },
+    "T14": {
+      "background": [
+        "Arakelov slopes",
+        "Heights of deep components"
+      ],
+      "hypotheses": [
+        "Assume the eight inputs T17–T24.",
+        "Use core data satisfying the core laws and $m^2\\le k$, $1\\le j<m$, a good deep datum at $(e,o)$, and the stated bound on the number of prime factors."
+      ],
+      "questions": [
+        {
+          "text": "Which supplier fixes the small-section error uniformly over the components that vary in the family?",
+          "source": "questions/arakelov.md"
+        }
+      ],
+      "title": "An averaged slope bound over deep components",
+      "aliases": [
+        "DeepStR target"
+      ],
+      "baseline": {
+        "sha256": "e66efc8afbfdf9a2b4f049a251674eb631a40f0681f09290601bddbb048b9c40",
+        "title": "An averaged bound over deep components",
+        "prerequisites": [
+          "D309",
+          "T26"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L1"
+      }
+    },
+    "T15": {
+      "background": [
+        "Chow heights",
+        "Toroidal compactifications",
+        "Arakelov volumes"
+      ],
+      "hypotheses": [
+        "Assume the self-intersection estimate, injectivity on small sections and the toroidal, Lie, Green, point-separation, Chow, Hodge-bundle and arithmetic-degree inputs.",
+        "Use Grothendieck deformation, the listed extension, nefness, proper-intersection and section inputs, and the deep component bound T14."
+      ],
+      "baseline": {
+        "sha256": "23529cfbb07b5ccf60fdef3ea8be03c85065b41c3cc966442b5950ff31836b79",
+        "title": "From heights to a uniform covolume bound",
+        "prerequisites": [
+          "D443"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "T16": {
+      "background": [
+        "Heights of Chow forms",
+        "Arithmetic projective varieties"
+      ],
+      "hypotheses": [
+        "Use the Hodge-bundle record, a number field with no real embeddings, a compatible module, extension field and conjugation-invariant Gram data.",
+        "The section lattice is finitely generated and spanning; assume the ratio, positive image-degree, image-model and self-intersection conditions."
+      ],
+      "baseline": {
+        "sha256": "a833ced1c99f52903d39c44ffd5e371f29e890269b22fb45cc3566520bb2a805",
+        "title": "The Chow height of an image model",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L1"
+      }
+    },
+    "T17": {
+      "background": [
+        "Arithmetic intersection theory",
+        "Nef Hermitian line bundles",
+        "Arithmetic volume"
+      ],
+      "hypotheses": [
+        "Take a finite multihomogeneous birational presentation of arithmetic dimension $D+1$ and an intersection system satisfying its axioms.",
+        "The Hermitian line is conjugation invariant, relatively semipositive, fibre-nef in its multidegree and nef on the generic fibre."
+      ],
+      "baseline": {
+        "sha256": "c3b4c09679d4ed888bb0340b018ec6d66a592387df2e634ec4496eeb2cf14270",
+        "title": "Arithmetic intersection bounded by small-section volume",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "T18": {
+      "background": [
+        "Arithmetic Hilbert–Samuel theory",
+        "Small sections",
+        "Nefness"
+      ],
+      "hypotheses": [
+        "Fix the stated intersection system and finite multihomogeneous presentation. The positivity clause assumes semipositivity, fibre nefness, conjugation invariance and nonnegative curve degrees.",
+        "The chart-lattice clause assumes a birational characteristic-zero presentation, $D\\ge1$, small generation and conjugation invariance.",
+        "For the normed-chart clause use the stated relative semipositivity, nonnegative multidegree, bounded monomials, dimension and invariance conditions."
+      ],
+      "baseline": {
+        "sha256": "a45539ca6129087e9453ca7b3e66ed2a7ed1b25f36d01c8f0d196432b18ee2ad",
+        "title": "Three arithmetic Hilbert--Samuel consequences",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "T19": {
+      "background": [
+        "Resolution of singularities",
+        "Blowups"
+      ],
+      "hypotheses": [
+        "Assume the open-literature record.",
+        "Take a reduced separated finite-type scheme over a field of characteristic zero."
+      ],
+      "baseline": {
+        "sha256": "3a488691a307f3f760202c21b3cbc67000f5b9c023a0232c4f76971476d6880e",
+        "title": "Resolution over a characteristic-zero field",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L1"
+      }
+    },
+    "T20": {
+      "background": [
+        "Principalisation of ideals",
+        "Simple normal crossings"
+      ],
+      "hypotheses": [
+        "Assume the open-literature record.",
+        "Use a smooth, quasi-compact separated scheme over a characteristic-zero field, an ideal whose cosupport contains no component and the stated normal-crossings boundary."
+      ],
+      "baseline": {
+        "sha256": "ff247e01abb7fd0127071df859e2beb20918db6741dd38ecb23d26b526003f77",
+        "title": "Principalisation with a prescribed boundary",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L1"
+      }
+    },
+    "T21": {
+      "background": [
+        "Arithmetic intersection",
+        "Poincaré–Lelong formula"
+      ],
+      "hypotheses": [
+        "Assume the open-literature record.",
+        "Use the stipulated multihomogeneous presentation, smooth conjugation-invariant Hermitian lines, the multidegree-zero line, and a section with the indicated divisor and intersection conditions."
+      ],
+      "baseline": {
+        "sha256": "1abb181b8ac14ff5c8d55d8317c04e5193bfcaf57215621ce63e8e771263bda0",
+        "title": "Integrated Poincaré--Lelong identity",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "T22": {
+      "background": [
+        "Abelian schemes",
+        "Valuation rings",
+        "Zarhin's trick"
+      ],
+      "hypotheses": [
+        "Assume the open-literature record.",
+        "Use the valuation ring of an algebraically closed valued field and an abelian scheme admitting a relatively ample invertible sheaf over that ring."
+      ],
+      "baseline": {
+        "sha256": "5e3f964c50e0f67277714cc6c472f1760b2f2951ea52444a62cbd0d7f58472b0",
+        "title": "Splitting off an abelian scheme",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "T23": {
+      "background": [
+        "Asymptotic Riemann–Roch",
+        "Nef divisors",
+        "Lattice points"
+      ],
+      "hypotheses": [
+        "Assume the open-literature record.",
+        "Use a birational multihomogeneous presentation in characteristic zero of arithmetic dimension $D+1$, with integral multidegree nef on the generic fibre."
+      ],
+      "baseline": {
+        "sha256": "8844dccae8b0200745e603af4e96e95e930107b5435b3373afdec5b3880c075f",
+        "title": "Nef growth of the chart lattice",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "T24": {
+      "background": [
+        "p-divisible groups",
+        "Hodge–Tate maps",
+        "Integral lattices"
+      ],
+      "hypotheses": [
+        "Assume the open-literature record.",
+        "Use a prime $p$, an algebraically closed characteristic-zero valued field with the stated valuation condition, its $p$-adically complete valuation ring, a $p$-divisible group and compatible roots of unity."
+      ],
+      "questions": [
+        {
+          "text": "How is the integral lattice recovered after passing to a rational kernel, and where can a power-of-p index occur?",
+          "source": "questions/local.md"
+        }
+      ],
+      "baseline": {
+        "sha256": "efe1797d4a3205992abd504dbf0ffdb1bbe8e4048fb16ad81701aa7b59e57cc3",
+        "title": "Integral orthogonality for Hodge--Tate kernels",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "T25": {
+      "background": [
+        "Local Galois conditions at small primes",
+        "Uniform norm estimates"
+      ],
+      "hypotheses": [
+        "Assume the two-layer linkage hypotheses.",
+        "Fix a proof hL of RecTExists and a parameter record over hL. The bound concerns the eligible large members at two and three."
+      ],
+      "baseline": {
+        "sha256": "2419e7ffc5c4d6c1b52dd17880332408d57e30ba131220c160af90e93f37de2e",
+        "title": "Uniform bounds at two and three",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "T26": {
+      "background": [
+        "Arithmetic intersection",
+        "Semiabelian schemes",
+        "Hodge–Tate theory"
+      ],
+      "hypotheses": [
+        "Assume the intersection system, arithmetic Hilbert–Samuel, bigness, resolution, and extension of semiabelian homomorphisms.",
+        "Use Fargues Hodge–Tate, GAGA for sections, the finite flat quotient, Zarhin splitting and nef Riemann–Roch inputs.",
+        "The component data satisfy the depth, index, goodness and prime-divisor restrictions of T14."
+      ],
+      "baseline": {
+        "sha256": "4fc839ffa37b817da6b081a9122a8d05e0714743db853b5e54f2e151e6a84e51",
+        "title": "The arithmetic inputs behind the deep estimate",
+        "prerequisites": [
+          "D351"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L1"
+      }
+    },
+    "W01": {
+      "background": [
+        "Galois representations and automorphy",
+        "Isobaric base change",
+        "Selmer windows"
+      ],
+      "hypotheses": [
+        "Assume the one-field open-image record with its polarized row, isobaric base change and the Galois row for the indicated local parameters.",
+        "Test the window on a primitive character, an allowed exponent and an admissible page function."
+      ],
+      "baseline": {
+        "sha256": "d25c1e82ffd79b3941e61c0c9c516531673068398f65694264f2e2c3060b841f",
+        "title": "From the rank row to a Selmer window",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L1"
+      }
+    },
+    "W02": {
+      "background": [
+        "Definite unitary groups",
+        "Isobaric representations"
+      ],
+      "hypotheses": [
+        "Take a CM extension unramified at every finite place.",
+        "Use positive rank and an automorphic representation of the specified definite unitary group."
+      ],
+      "baseline": {
+        "sha256": "93d0006d652cc9c798555b4d9224580c96992645fa252216516c6bb01601f7f8",
+        "title": "Isobaric base change for the definite unitary group",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L1"
+      }
+    },
+    "W03": {
+      "background": [
+        "Galois representations attached to automorphic forms",
+        "Unitary descent"
+      ],
+      "hypotheses": [
+        "Use the rank-$n$ literature hypothesis record and weak unitary descent in ranks two through four."
+      ],
+      "baseline": {
+        "sha256": "088fd5e6e509843238590f154022155c3c8fc2ebc31335dc8a1af093e6ef750d",
+        "title": "Patching the real and CM hypotheses",
+        "prerequisites": [
+          "D506"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "W04": {
+      "background": [
+        "Satake parameters",
+        "Unitary descent",
+        "Conjugate self-duality"
+      ],
+      "hypotheses": [
+        "Take a CM extension unramified at finite places, a prime and a finite exceptional set of split places containing the places above it.",
+        "Use rank two through four and a regular algebraic cuspidal representation, conjugate self-dual with Satake parameters off the exceptional set."
+      ],
+      "baseline": {
+        "sha256": "f8ff5f12fa7e37ea4cc2b4e6bde1604565d86f9cf7d102e75cb305dc1603eb9a",
+        "title": "Weak unitary descent in ranks two through four",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L1"
+      }
+    },
+    "W05": {
+      "background": [
+        "Galois cohomology in degree two",
+        "Tate twists",
+        "Cyclotomic number fields"
+      ],
+      "hypotheses": [
+        "Assume the rank-$n$ literature record.",
+        "In the bound take totally complex $L$, a primitive $\\ell$th root in $L$ for odd $\\ell$ (fourth root for $\\ell=2$), admissible local data and $e\\ge1$."
+      ],
+      "questions": [
+        {
+          "text": "For which twists and degrees does the needed prime fall outside Soulé’s product? Identify a supplier for the remaining small-prime term.",
+          "source": "questions/ktheory.md"
+        }
+      ],
+      "slug": "uniform-second-cohomology-bound",
+      "aliases": [
+        "LemmaK"
+      ],
+      "baseline": {
+        "sha256": "e1a58b149173c283f23730e71638df9322dc59fcc617bd05951a8ff97add98c1",
+        "title": "A uniform second-cohomology bound",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L1"
+      }
+    },
+    "W06": {
+      "background": [
+        "Symplectic deformation rings",
+        "Ordinary Galois representations"
+      ],
+      "hypotheses": [
+        "Assume $H'$ and use an eligible large host, odd coefficient prime, $0<e<t$ and the prescribed character in $X_h(O,e)$.",
+        "Take a good rank-four symplectic datum satisfying the Case II or III and character restrictions in the statement."
+      ],
+      "baseline": {
+        "sha256": "c2d1039b6dd29deded77872f9fa62aff71df1fecee57d17ee1d89bbeef4be670",
+        "title": "The rank-four symplectic deformation conditions",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "W07": {
+      "background": [
+        "Kato classes",
+        "Ordinary modular forms",
+        "Local Galois cohomology"
+      ],
+      "hypotheses": [
+        "Assume $H'$, an odd $\\ell$, $e\\ge1$, $\\ell-1\\nmid 2e$, and the stipulated imaginary quadratic field, closure and even positive level with the coprimality restrictions.",
+        "Use the Used character, representation and ordinary-polynomial inputs with the given local and irreducibility conditions.",
+        "The weight-$2e+1$ newform realizes the indicated twist; every quadratic CM restriction on which the representation stays irreducible has the specified local flags and common real window parameter."
+      ],
+      "baseline": {
+        "sha256": "c8f8b10d5bcfa781331a743727f2bbd9676ef41949922aac448d251b7f63158a",
+        "title": "Vanishing for the two rank-two twists",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "W08": {
+      "background": [
+        "Adjoint Selmer groups",
+        "Automorphy lifting"
+      ],
+      "hypotheses": [
+        "Assume $H'$, the uniform cohomological bound of W05, two-twist vanishing and rank-three automorphy for unramified coefficients.",
+        "In the last input the two kinds of specialization use the prescribed common mark."
+      ],
+      "baseline": {
+        "sha256": "3a56f83edb10755d8becfbc283bbce2d3074b6618c1ea81c9792f5c575957402",
+        "title": "The collective bound in Case I",
+        "prerequisites": [
+          "D528",
+          "D532"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "W09": {
+      "background": [
+        "Symplectic Galois representations",
+        "Local Selmer lengths"
+      ],
+      "hypotheses": [
+        "Assume $H'$, W05 and the rank-four input of W06.",
+        "Use the indicated large host, odd prime, coefficient ring and Case II or Case III character with $0<e<t$."
+      ],
+      "baseline": {
+        "sha256": "89351553800b3ef339fcdbdc31c3d70d25e2952ef6196b5529691ccdcea1b02e",
+        "title": "The individual bounds in Cases II and III",
+        "prerequisites": [
+          "D108"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "W10": {
+      "background": [
+        "Rank-three automorphy lifting",
+        "Selmer lengths"
+      ],
+      "hypotheses": [
+        "Assume $H'$, the W05 uniform cohomology bound and reduced unitary rank-three lifting.",
+        "Use the marked host frame and eligible Case V parameters."
+      ],
+      "baseline": {
+        "sha256": "a9835b5799ece773877b98d218419e00b4f69626dc3935b50f5c8eb463da8f1f",
+        "title": "The small-rank bound in Case V",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "W11": {
+      "background": [
+        "Cyclotomic Iwasawa theory",
+        "Class groups"
+      ],
+      "hypotheses": [
+        "Take $\\ell$ prime and $K/\\mathbb Q$ finite abelian.",
+        "The base contains $\\mu_\\ell$ for odd $\\ell$, or $\\mu_4$ at two. Use a layer model over that same base."
+      ],
+      "baseline": {
+        "sha256": "0091e712421bf6b1d9d63f0e5a0f4157bc84d03b9960c2312a23b2a0cce3e39f",
+        "title": "Bounded class-group ranks in cyclotomic layers",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L1"
+      }
+    },
+    "W12": {
+      "background": [
+        "Poitou–Tate duality",
+        "Cyclotomic class groups",
+        "Exceptional primes"
+      ],
+      "hypotheses": [
+        "Assume Poitou–Tate duality, local finiteness and local Tate duality for the stated coefficient models.",
+        "Use the cyclotomic class-rank bound W11 and uniform second-cohomology bound W05."
+      ],
+      "baseline": {
+        "sha256": "1cc8005436f8315ffc7e9fc6d2be1a97a9b1d44c4ad1d8820b837e44f0052f54",
+        "title": "One interval for the prime two and exceptional layers",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "W13": {
+      "background": [
+        "Selmer localization",
+        "Prime-weighted estimates",
+        "Character decomposition"
+      ],
+      "hypotheses": [
+        "Assume Poitou–Tate, local finiteness and local Tate duality. Take a uniform W05 constant and W12 constants at the same cutoff 401.",
+        "Use the minus-part estimate, the collective Case I, individual Cases II and III, restricted Case V, and the indicated exceptional trivial-character Case Z bound."
+      ],
+      "questions": [
+        {
+          "text": "Which cases supply a sum over characters and which supply individual bounds? Track the logarithmic weight and the exceptional primes in each sum.",
+          "source": "questions/galois.md"
+        }
+      ],
+      "title": "Assembling the Selmer window from five counting cases",
+      "baseline": {
+        "sha256": "c296a1e5c79011eb9d4946fb4142ef9c87e69d97f9b179ce61615f2305251d94",
+        "title": "Assembly of the five counting bounds",
+        "prerequisites": [
+          "D536"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "W14": {
+      "background": [
+        "Special values of Dirichlet L-functions",
+        "Minus eigenspaces"
+      ],
+      "hypotheses": [
+        "Assume the specified character estimate over abelian CM fields: for the allowed odd prime and parity the localization-kernel eigenspace length is bounded by the valuation of the prescribed special-value representative.",
+        "Use the compatible cyclotomic action, finite coefficient DVR, twist and character in this comparison."
+      ],
+      "baseline": {
+        "sha256": "d27ade4d8dc5f0193bc6d044abb92f5efbdc59fd31ba2960ec0ece08fcf18e81",
+        "title": "From special values to the minus part",
+        "prerequisites": [
+          "D551"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "W15": {
+      "background": [
+        "Cyclotomic twists",
+        "Localization kernels"
+      ],
+      "hypotheses": [
+        "Fix an algebraic closure of $\\mathbb Q$, a prime $\\ell\\ge5$ and an allowed coefficient ring.",
+        "Take even $e\\ge2$ satisfying $\\ell-1\\mid 2e$ and the trivial character."
+      ],
+      "baseline": {
+        "sha256": "79f72b28ac4ad0fd7e73ab99648771ee4cadc34d1e1df10959920e3520ec2968",
+        "title": "Vanishing of the exceptional trivial-character length",
+        "prerequisites": [
+          "D558"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "W16": {
+      "background": [
+        "Local Hecke algebras",
+        "Base change",
+        "Smooth representations"
+      ],
+      "hypotheses": [
+        "Fix a local parameter rule, finite-unramified CM extension, positive rank, a unitary automorphic representation and its comparison frame.",
+        "Use the local tests and auxiliary nonsplit places disjoint from the initial and bad sets."
+      ],
+      "baseline": {
+        "sha256": "6e342b5b238ebd3cd311e60e82485988fe2b5624435718e0578f9c40645a8af0",
+        "title": "Finiteness of the candidates in a base-change frame",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": true,
+        "grade": "L0"
+      }
+    },
+    "Z1.1.01": {
+      "background": [
+        "Ordinary modular forms",
+        "Eisenstein congruences"
+      ],
+      "hypotheses": [
+        "Fix a marked complex conjugation and a nontrivial splitting character.",
+        "The local slope-test inputs are admissible."
+      ],
+      "questions": [
+        {
+          "text": "Construct one Eisenstein seed satisfying PR, RW and NoHalf at every sufficiently large weight of the specified parity.",
+          "source": "data/status_ledger.json"
+        }
+      ],
+      "baseline": {
+        "sha256": "b89e5e4252639033c3f68d540182e09da19057bba66ee83106ab94aeda90a0d1",
+        "title": "Ordinary Eisenstein seeds",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": false,
+        "grade": "L0"
+      }
+    },
+    "Z1.1.02": {
+      "background": [
+        "Galois twists",
+        "Ordinary Eisenstein representations"
+      ],
+      "hypotheses": [
+        "The linked fields and level satisfy splitting and inertia restrictions.",
+        "Use an open-irreducible, unlinked ordinary seed with PR and the required weight and parity."
+      ],
+      "questions": [
+        {
+          "text": "Construct one twist with all required local types and show that its restricted seed lies in the full adjoint window.",
+          "source": "data/status_ledger.json"
+        }
+      ],
+      "baseline": {
+        "sha256": "4736c46332a5e9a363633aeb59fd9566df28617a5f202f3918d224be0811ff2a",
+        "title": "Twisting a seed into the adjoint window",
+        "prerequisites": [
+          "Z1.1.01"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": false,
+        "grade": "L0"
+      }
+    },
+    "Z1.1.03": {
+      "background": [
+        "Hida theory",
+        "Automorphy lifting"
+      ],
+      "hypotheses": [
+        "Use the linked CM field, an odd coefficient prime and a nonzero level divisible by twice that prime.",
+        "Assume unramified splitting and membership of the representation in the adjoint window."
+      ],
+      "questions": [
+        {
+          "text": "Derive the weight-compatible descent and pure-weight adjoint lift used by the core at each ramified place.",
+          "source": "data/status_ledger.json"
+        }
+      ],
+      "baseline": {
+        "sha256": "454805caf1f0dff6959141163646511183aa78ed6cce24dc516118641334df0c",
+        "title": "Automorphy in the adjoint window",
+        "prerequisites": [
+          "Z1.1.02"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": false,
+        "grade": "L0"
+      }
+    },
+    "Z1.1.04": {
+      "background": [
+        "Galois representations attached to modular forms",
+        "Cyclotomic congruences"
+      ],
+      "hypotheses": [
+        "Use a linkable field pair with distinct characters and a lower bound for the weight.",
+        "The three seed propagation inputs hold at the indicated ranks and weights."
+      ],
+      "baseline": {
+        "sha256": "d266e87c1dba93661719e2145da0c6cb04b4f214dffff039fb84d7da08bf76bd",
+        "title": "Rank-three seeds at prescribed weights",
+        "prerequisites": [
+          "Z1.1.01",
+          "Z1.1.02",
+          "Z1.1.03"
+        ],
+        "open_question_count": 0,
+        "full_statement_in_hypotheses": false,
+        "grade": "L2"
+      }
+    },
+    "Z1.1.05": {
+      "background": [
+        "Ordinary deformation rings",
+        "Automorphic Galois representations"
+      ],
+      "hypotheses": [
+        "Assume $H'$ and the rank-two and dense rank-three seed assertions.",
+        "The linked frame is admissible and has the indicated place above $\\ell$."
+      ],
+      "questions": [
+        {
+          "text": "Construct the linked frame, its finite rank-three points and a common twist giving the required automorphy at its endpoints.",
+          "source": "data/status_ledger.json"
+        }
+      ],
+      "baseline": {
+        "sha256": "4bebe76adf7b6427874d6860b6e834f4c52876a63263ebf76556f128042583f1",
+        "title": "Automorphy of linked endpoints",
+        "prerequisites": [
+          "Z1.1.04"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": false,
+        "grade": "L0"
+      }
+    },
+    "Z1.1.06": {
+      "background": [
+        "Marked deformation rings",
+        "Unramified flags"
+      ],
+      "hypotheses": [
+        "Use $H'$ on the indicated host.",
+        "Assume the linked endpoint assertion and linked unramified flags for that same datum."
+      ],
+      "questions": [
+        {
+          "text": "From the linked points and flags derive both the ordinary marking and the host marking with their finite and rank-three automorphic conclusions.",
+          "source": "data/status_ledger.json"
+        }
+      ],
+      "baseline": {
+        "sha256": "533654d0060e0cfdb8926af6b9dc001bbc354eb3fa013026d2b7233598f9eb24",
+        "title": "The common marking and degree zero",
+        "prerequisites": [
+          "Z1.1.05"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": false,
+        "grade": "L0"
+      }
+    },
+    "Z1.1.07": {
+      "background": [
+        "Automorphy lifting",
+        "Ordinary deformation theory"
+      ],
+      "hypotheses": [
+        "Use the automorphic input record $H'$ at the indicated seed and dense automorphy data."
+      ],
+      "questions": [
+        {
+          "text": "Derive the linked flags and linked ends for the same pair of seeds and carry out their joint descent.",
+          "source": "data/status_ledger.json"
+        }
+      ],
+      "baseline": {
+        "sha256": "b115702b0025d9e896c62431b8f36f4cfd206d33666e3fa4984105770ecdb375",
+        "title": "The two marked-point conclusions",
+        "prerequisites": [
+          "Z1.1.05",
+          "Z1.1.06"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": false,
+        "grade": "L0"
+      }
+    },
+    "Z1.2": {
+      "background": [
+        "Ordinary deformations",
+        "Bloch–Kato local conditions",
+        "Adjoint representations"
+      ],
+      "hypotheses": [
+        "Use ranks two through four and the local theorem record.",
+        "Assume dense ordinary vanishing at the prescribed generic points. For the coboundary clause impose the stated parity."
+      ],
+      "questions": [
+        {
+          "text": "Stage C. Local crystalline comparisons and the Fontaine Bcris boundary remain. At the caller, \\nolinkurl{ordinary_vanishing_two_of_printed_hida} (374,411 core lines through literature vertices, 374,408 stopping there) uses \\nolinkurl{hida_x_of_printed_hida} (341,282 through literature, 341,279 stopping there), \\nolinkurl{core_o_of_literal_automorphy_n} (132,810, including the 94,762-line operator statement), arithmetic Hida regularity (37,088) and local class field theory (19,625). The tangent and linked-flag suppliers belong to Z1.1.",
+          "source": "data/status_ledger.json"
+        },
+        {
+          "text": "For which weights and ramified places do the ordinary and Bloch–Kato local conditions agree in the comparison used by P025?",
+          "source": "questions/galois.md"
+        }
+      ],
+      "baseline": {
+        "sha256": "1f4ac35f3bc4615a3df20ac3aa2908ec4a01ab01431357df5b34077b5e7d6876",
+        "title": "Ordinary adjoint rigidity",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": false,
+        "grade": "L0"
+      }
+    },
+    "Z1.3.01": {
+      "background": [
+        "Cyclotomic Euler systems",
+        "Integral Galois cohomology"
+      ],
+      "hypotheses": [
+        "Fix the ordinary normal form and an unramified modular source of weight $2e+1$.",
+        "Use admissible tower, projection, level, smoothing and lattice data."
+      ],
+      "questions": [
+        {
+          "text": "Construct strict integral single-symbol cocycles and one uniform tame exceptional set and loss.",
+          "source": "data/status_ledger.json"
+        }
+      ],
+      "baseline": {
+        "sha256": "868dbff0d0bc87bc15fce73dbfc58fddb81f6b26d23ab2801cae2b5deefad3f8",
+        "title": "Integral Kato systems at all layers",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": false,
+        "grade": "L0"
+      }
+    },
+    "Z1.3.02": {
+      "background": [
+        "Hodge–Tate weights",
+        "Euler systems",
+        "Distributions"
+      ],
+      "hypotheses": [
+        "Fix compatible Hodge–Tate data, embedding, integral class family and eigendistribution.",
+        "The smoothing integer is at least two and prime to the coefficient prime."
+      ],
+      "questions": [
+        {
+          "text": "Prove the cusp coefficient formula for this Hecke functional, with its common loss and norm-one factors.",
+          "source": "data/status_ledger.json"
+        }
+      ],
+      "baseline": {
+        "sha256": "fd44bfbc702d1e32880ad51a4c9e47f32d0ca5e0c2ba461a3b41a6ba9e7e449b",
+        "title": "Hodge--Tate law for smoothed classes",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": false,
+        "grade": "L0"
+      }
+    },
+    "Z1.3.03": {
+      "background": [
+        "Hecke projectors",
+        "Integral representations",
+        "Ordinary modular forms"
+      ],
+      "hypotheses": [
+        "Fix rank-two ordinary data at an odd prime away from $N\\ge5$.",
+        "Use the compatible Hecke splitting and an admissible projector polynomial."
+      ],
+      "questions": [
+        {
+          "text": "Construct the odd-weight cusp representative and compare its coefficients at successive precisions.",
+          "source": "data/status_ledger.json"
+        }
+      ],
+      "baseline": {
+        "sha256": "4d38fd98ad0fe886033617ecfe05d921cbc89e2b9ff8e093cd926bf0813265f3",
+        "title": "Equivariant Hecke projection",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": false,
+        "grade": "L0"
+      }
+    },
+    "Z1.3.04": {
+      "background": [
+        "Integral Galois cocycles",
+        "Hecke operators"
+      ],
+      "hypotheses": [
+        "Use an ordinary normal form and its unramified modular source.",
+        "Assume the integral class theorem, the Hodge–Tate law and Hecke projection for this source."
+      ],
+      "questions": [
+        {
+          "text": "Construct the initial ordinary eigenfunctional and prove Pin7 for the same tuple with common scale and lower bound.",
+          "source": "data/status_ledger.json"
+        }
+      ],
+      "baseline": {
+        "sha256": "c24a1f3bd317d588dfe47b1c8c379a3af8aced85647d5f34d4aeb16ff5bae559",
+        "title": "One global system with local constraints",
+        "prerequisites": [
+          "Z1.3.01",
+          "Z1.3.02",
+          "Z1.3.03"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": false,
+        "grade": "L0"
+      }
+    },
+    "Z1.3.05": {
+      "background": [
+        "Cyclotomic inertia",
+        "Iwasawa cohomology"
+      ],
+      "hypotheses": [
+        "Fix the normal form and modular source with their local and cyclotomic parameters.",
+        "A single tuple satisfies Sys, IwSys2, SpLink and Pin7 for those data."
+      ],
+      "questions": [
+        {
+          "text": "Establish the simultaneous Frobenius unit lift and uniform primitive-root rigidity over all coefficient indices.",
+          "source": "data/status_ledger.json"
+        }
+      ],
+      "baseline": {
+        "sha256": "1d131f8ba3fb78c7b6e995820d2f866ca3addd5b22b9ba2d64b0f0ae25ea6d70",
+        "title": "Nonvanishing at cyclotomic inertia",
+        "prerequisites": [
+          "Z1.3.04"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": false,
+        "grade": "L0"
+      }
+    },
+    "Z1.3.06": {
+      "background": [
+        "Galois cohomology",
+        "Local–global compatibility of Euler systems"
+      ],
+      "hypotheses": [
+        "A global tuple exists for every eligible source.",
+        "The local assertion applies to every tuple satisfying the same pin predicate."
+      ],
+      "baseline": {
+        "sha256": "6e539bd692b4eebcd8a605a526cba019af3de97bba25b1be04a7ec9a1b9eefb1",
+        "title": "Compatibility of the local and global cocycles",
+        "prerequisites": [
+          "Z1.3.04",
+          "Z1.3.05"
+        ],
+        "open_question_count": 0,
+        "full_statement_in_hypotheses": false,
+        "grade": "L2"
+      }
+    },
+    "Z1.3.07": {
+      "background": [
+        "Greenberg local conditions",
+        "Ordinary Galois representations"
+      ],
+      "hypotheses": [
+        "Fix an ordinary normal form.",
+        "Assume its global and local existence assertions with a common pin."
+      ],
+      "baseline": {
+        "sha256": "cf1ca97af2a4a9d772234c8867120cddc011e181d40e703d4657c8bbdbe3d7ad",
+        "title": "Failure of the local Greenberg condition",
+        "prerequisites": [
+          "Z1.3.06",
+          "Z1.3.04",
+          "Z1.3.05"
+        ],
+        "open_question_count": 0,
+        "full_statement_in_hypotheses": false,
+        "grade": "L2"
+      }
+    },
+    "Z1.3.08": {
+      "background": [
+        "Kato classes",
+        "Unramified local conditions"
+      ],
+      "hypotheses": [
+        "Fix an ordinary normal form.",
+        "Its modular source is unramified as specified and has weight $2e+1$."
+      ],
+      "questions": [
+        {
+          "text": "Discharge the nine project comparisons at the global and local producers in Z1.3.01 through Z1.3.05.",
+          "source": "data/status_ledger.json"
+        }
+      ],
+      "aliases": [
+        "Kato zeta classes"
+      ],
+      "baseline": {
+        "sha256": "cb6ca4d2c1dffed77c941da538f03e8b3405a062c0109fa1155cb34ea8768bfa",
+        "title": "Unramified classes in the ordinary normal form",
+        "prerequisites": [
+          "Z1.3.04",
+          "Z1.3.05",
+          "Z1.3.07"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": false,
+        "grade": "L0"
+      }
+    },
+    "Z1.4": {
+      "background": [
+        "Graded cotangent spaces",
+        "Lengths over discrete valuation rings"
+      ],
+      "hypotheses": [
+        "The marked graded model satisfies M1–M5 and the point set covers two-sided orbits.",
+        "For the opposite inequality use the normalized injection and fixed-weight derivation lifts."
+      ],
+      "baseline": {
+        "sha256": "c242ac76994392ef97c958f6f051eaf5ff0dff111272988757f6f6c41b18789f",
+        "title": "Graded cotangent length",
+        "prerequisites": [],
+        "open_question_count": 0,
+        "full_statement_in_hypotheses": false,
+        "grade": "L1"
+      }
+    },
+    "Z1.5.01": {
+      "background": [
+        "Highest weights",
+        "Weyl dimension formula"
+      ],
+      "hypotheses": [
+        "Fix a totally complex number field and a rank.",
+        "The integral weights strictly decrease and are bounded in absolute value by $H$."
+      ],
+      "baseline": {
+        "sha256": "e59d2c7b40e10a86e0d05bcca0330026934bc59c53c1fb0c4cb128751dad6ed4",
+        "title": "Coefficient representations and the Weyl bound",
+        "prerequisites": [],
+        "open_question_count": 0,
+        "full_statement_in_hypotheses": false,
+        "grade": "L2"
+      }
+    },
+    "Z1.5.02": {
+      "background": [
+        "Cohomological automorphic representations",
+        "Borel's injection"
+      ],
+      "hypotheses": [
+        "Fix the CM field and a rank at least two.",
+        "The automorphic input record supplies cohC and borelC for these data."
+      ],
+      "baseline": {
+        "sha256": "19ed694c18304f5d7751b61da90092b3f9451bf62c80fe89e565d214b238b8ba",
+        "title": "Counting automorphic eigensystems",
+        "prerequisites": [
+          "Z1.5.01"
+        ],
+        "open_question_count": 0,
+        "full_statement_in_hypotheses": false,
+        "grade": "L1"
+      }
+    },
+    "Z1.5.03": {
+      "background": [
+        "Satake parameters",
+        "CM Galois representations"
+      ],
+      "hypotheses": [
+        "Assume the automorphic input record and LevelKNAlt.",
+        "Use the prescribed pure weight and a prime away from the level and CM discriminant."
+      ],
+      "questions": [
+        {
+          "text": "Construct the conjugation and integrality comparisons and the fixed-purity CM classifier with Frobenius separation at all permitted coefficient primes.",
+          "source": "data/status_ledger.json"
+        }
+      ],
+      "baseline": {
+        "sha256": "dccb39cdad78f17edf7eb5e4da4396b878dbe9083e675af1a9203a16cc86513c",
+        "title": "Frobenius classifiers over a CM field",
+        "prerequisites": [
+          "Z1.5.02"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": false,
+        "grade": "L0"
+      }
+    },
+    "Z1.5.04": {
+      "background": [
+        "Automorphic base change",
+        "Satake parameters"
+      ],
+      "hypotheses": [
+        "Use the automorphic hypotheses and LevelPNAlt over the imaginary quadratic field.",
+        "The weight is symmetric and the prime avoids the level and field discriminant."
+      ],
+      "questions": [
+        {
+          "text": "Prove the simultaneous conjugation, duality and integrality comparisons for the imaginary-quadratic classifier at the prescribed weight.",
+          "source": "data/status_ledger.json"
+        }
+      ],
+      "baseline": {
+        "sha256": "9b0b7a4fab063986c3ee2a902fb5af74e3db42db9db09c8ada058e8a71ff5a67",
+        "title": "Classifiers over an imaginary quadratic field",
+        "prerequisites": [
+          "Z1.5.02"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": false,
+        "grade": "L0"
+      }
+    },
+    "Z1.5.05": {
+      "background": [
+        "Restriction of representations",
+        "Frobenius conjugacy classes"
+      ],
+      "hypotheses": [
+        "Assume the automorphic hypotheses, LevelPNAlt and preservation of admissibility on restriction.",
+        "Use the prescribed weight and a prime away from the level."
+      ],
+      "questions": [
+        {
+          "text": "Establish the compatible Frobenius root choices and the restriction/self-twist bound on the fibres of the rational classifier.",
+          "source": "data/status_ledger.json"
+        }
+      ],
+      "baseline": {
+        "sha256": "6b3d316d22e1f8a4fa90ddb4d391ad4df42d44250825afccc90c6a206425caf7",
+        "title": "Descent of classifiers to the rational case",
+        "prerequisites": [
+          "Z1.5.04"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": false,
+        "grade": "L0"
+      }
+    },
+    "Z1.5.06": {
+      "background": [
+        "Frobenius traces",
+        "Rational Galois representations"
+      ],
+      "hypotheses": [
+        "Assume CountQAlt and NewAdmAlt.",
+        "The level and exponent are positive and the prime avoids the level."
+      ],
+      "baseline": {
+        "sha256": "abf798e462d8535eb74f1d14b2f5118674ecc094559ec004d4d237989023d246",
+        "title": "Rational Frobenius trace bound",
+        "prerequisites": [
+          "Z1.5.05"
+        ],
+        "open_question_count": 0,
+        "full_statement_in_hypotheses": false,
+        "grade": "L2"
+      }
+    },
+    "Z1.5.07": {
+      "background": [
+        "CM fields",
+        "Frobenius traces"
+      ],
+      "hypotheses": [
+        "Assume CountKAlt for the fixed CM field.",
+        "Use a place prime to the level and discriminant of the field."
+      ],
+      "baseline": {
+        "sha256": "4c982284f0cd77583d7e000f7fce4e750b9f2145947d279158a1c1a5a52b03d2",
+        "title": "CM Frobenius trace bound",
+        "prerequisites": [
+          "Z1.5.03"
+        ],
+        "open_question_count": 0,
+        "full_statement_in_hypotheses": false,
+        "grade": "L2"
+      }
+    },
+    "Z2.K1": {
+      "background": [
+        "Cyclotomic extensions",
+        "Localization in Galois cohomology"
+      ],
+      "hypotheses": [
+        "Fix a coefficient prime and a base number field containing the required roots of unity."
+      ],
+      "baseline": {
+        "sha256": "e86273355c785130f13c2716f15e720cc783836a6bd2612fddb2acb246ed8b31",
+        "title": "Cyclotomic tower and localization kernel",
+        "prerequisites": [],
+        "open_question_count": 0,
+        "full_statement_in_hypotheses": false,
+        "grade": "L0"
+      }
+    },
+    "Z2.K2": {
+      "background": [
+        "Bar and prism complexes",
+        "Integral group homology",
+        "Residue maps"
+      ],
+      "hypotheses": [
+        "Use a cyclic layer with $2e+3<\\ell^c$ and an element satisfying the divisor condition.",
+        "The residual maps and evaluators satisfy the stated scalar conditions."
+      ],
+      "baseline": {
+        "sha256": "c982b2c205c0fffbace3224012fd91decd3958ee46bcbdb011556258a41ff7d0",
+        "title": "Cycles on integral matrices and uniform residue evaluation",
+        "prerequisites": [],
+        "open_question_count": 0,
+        "full_statement_in_hypotheses": false,
+        "grade": "L1"
+      }
+    },
+    "Z2.K4": {
+      "background": [
+        "Homological stability",
+        "Odd homology of general linear groups"
+      ],
+      "hypotheses": [
+        "The field is totally complex. For the odd-rank statement use even $k$, $k+1<r_2(L)$, positive block multiplicity and $n\\ge2(k+1)+4$.",
+        "For stable torsion use $n'\\ge n\\ge2m+4$."
+      ],
+      "baseline": {
+        "sha256": "4ce116edfcdf7302fef415400479616c9d387fe594032a34f66ee566371a3127",
+        "title": "Odd stable homology and torsion",
+        "prerequisites": [],
+        "open_question_count": 0,
+        "full_statement_in_hypotheses": false,
+        "grade": "L1"
+      }
+    },
+    "Z2.K5": {
+      "background": [
+        "Kummer theory",
+        "Equivariant characters",
+        "Finite groups"
+      ],
+      "hypotheses": [
+        "Fix totally complex $L$, the cyclotomic layer, its root and generator, and $E\\ge1$.",
+        "The Few assertion on the designated norm classes holds with bound $B$."
+      ],
+      "baseline": {
+        "sha256": "94e21407c274e7d29ad5950805dcfc20b700d43d74cebe9f305d6a741dfd81d4",
+        "title": "Equivariant character count",
+        "prerequisites": [],
+        "open_question_count": 0,
+        "full_statement_in_hypotheses": false,
+        "grade": "L0"
+      }
+    },
+    "Z2.K6": {
+      "background": [
+        "Cyclotomic extensions",
+        "Galois localization"
+      ],
+      "hypotheses": [
+        "Use totally complex $L$, $E\\ge1$ and TopRoot at the maximal root exponent.",
+        "On every allowed layer the designated equivariant character group is finite with the same order bound $B$."
+      ],
+      "baseline": {
+        "sha256": "c793ee924846abe677c0a8a636940c0dda9c0519dcdbb23bbceed6b97f4eecd5",
+        "title": "Uniform layer count and the global kernel",
+        "prerequisites": [
+          "Z2.K1",
+          "Z2.K5"
+        ],
+        "open_question_count": 0,
+        "full_statement_in_hypotheses": false,
+        "grade": "L0"
+      }
+    },
+    "Z2.K7": {
+      "background": [
+        "Cellular group homology",
+        "Torsion of arithmetic groups"
+      ],
+      "hypotheses": [
+        "Fix a totally complex field $L$.",
+        "The quantitative assertion uses $E\\ge1$, $1\\le N\\le4E+6$ and $0\\le m\\le2E+1$."
+      ],
+      "slug": "integral-homology-torsion",
+      "baseline": {
+        "sha256": "9c1cf2e6298091eabb31f70883877fce239ff515e755d6199a01c7b54d7f956d",
+        "title": "Full integral homology torsion",
+        "prerequisites": [],
+        "open_question_count": 0,
+        "full_statement_in_hypotheses": false,
+        "grade": "L2"
+      }
+    },
+    "Z2.K8": {
+      "background": [
+        "Poitou–Tate duality",
+        "Local Tate duality",
+        "Tate twists"
+      ],
+      "hypotheses": [
+        "Assume PTCase for the number field and prime and use the given twist and local data.",
+        "Use finite Poitou–Tate duality, local finiteness and local Tate duality."
+      ],
+      "baseline": {
+        "sha256": "b99d840ab9e9e2f69b192448c901fdb86dbcc6eac3864ba26ce9d603aaac4328",
+        "title": "Finite duality and the length formula",
+        "prerequisites": [],
+        "open_question_count": 0,
+        "full_statement_in_hypotheses": false,
+        "grade": "L0"
+      }
+    },
+    "Z3.1": {
+      "background": [
+        "Matrix algebras over local rings",
+        "Residual representations"
+      ],
+      "hypotheses": [
+        "Take a normalized point with characteristic coefficients in the Hecke algebra and full residual matrix span.",
+        "Assume the stated idempotent and distinct-eigenvalue corner conditions."
+      ],
+      "baseline": {
+        "sha256": "7d70f29d9b2b57269a3aad8d4a4691fd53528ca54dff58d86ffdee0cf53ed27d",
+        "title": "Normalized matrix algebra",
+        "prerequisites": [],
+        "open_question_count": 0,
+        "full_statement_in_hypotheses": false,
+        "grade": "L0"
+      }
+    },
+    "Z3.2": {
+      "background": [
+        "Lattice indices",
+        "Local Galois cohomology"
+      ],
+      "hypotheses": [
+        "Use G1–G6, tame generators, Bloch–Kato and annihilator conditions, family continuity and semisimple decomposition.",
+        "Use Fontaine and Tate local conditions, coefficient compatibility, the unramified hypothesis and the designated row, exponent and TB data."
+      ],
+      "baseline": {
+        "sha256": "2a907c6c319aa11c757bae905aab0be2fc9df2c021605f10bc0b7ddf98dea195",
+        "title": "Local comparisons and global lattice index",
+        "prerequisites": [
+          "Z3.1"
+        ],
+        "open_question_count": 0,
+        "full_statement_in_hypotheses": false,
+        "grade": "L0"
+      }
+    },
+    "Z4.1": {
+      "background": [
+        "Hecke correspondences",
+        "Formal-group jets",
+        "Valuations"
+      ],
+      "hypotheses": [
+        "Use an admitted local place and a lift at stage $j<m$.",
+        "The column, parameter and output monomial lie in the stipulated ranges."
+      ],
+      "baseline": {
+        "sha256": "aa5d9e29e1f13097ff84d996ceabb3302afb0565fadc5791319a845856837748",
+        "title": "Normalized Hecke action on jets",
+        "prerequisites": [],
+        "open_question_count": 0,
+        "full_statement_in_hypotheses": false,
+        "grade": "L1"
+      }
+    },
+    "Z4.2.02": {
+      "background": [
+        "Lubin–Tate formal groups",
+        "Lattices and local charts"
+      ],
+      "hypotheses": [
+        "Assume CurveEx.",
+        "Use a standard served site and a joint for the fixed tagged kernel datum."
+      ],
+      "questions": [
+        {
+          "text": "Derive the rational, support, congruence and integrality laws for xiAd, and level equivariance in the matrix, coupled and type-prime top charts, including the adelic determinant-to-tame-character comparison.",
+          "source": "data/status_ledger.json"
+        },
+        {
+          "text": "After a coordinate change, which integrality and valuation bounds remain valid on the original coefficient ring?",
+          "source": "questions/local.md"
+        }
+      ],
+      "baseline": {
+        "sha256": "2b53c03af69cafc0c7a3dff92b1b22b86a4dcedca12fe21fb64fb931398cbc14",
+        "title": "Local realization of the tagged kernel",
+        "prerequisites": [
+          "Z42-SITES"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": false,
+        "grade": "L0"
+      }
+    },
+    "Z4.2.04": {
+      "background": [
+        "Theta kernels",
+        "Congruence lattices"
+      ],
+      "hypotheses": [
+        "The site satisfies its prescribed dictionary.",
+        "The two consecutive lattice tuples are valid."
+      ],
+      "baseline": {
+        "sha256": "b64ec3c2bd3bb71460b34665c57e8a22e281fc1df46627e9ed5319ab3b124c53",
+        "title": "Theta kernels for adjacent pairs",
+        "prerequisites": [
+          "Z42-SITES"
+        ],
+        "open_question_count": 0,
+        "full_statement_in_hypotheses": false,
+        "grade": "L2"
+      }
+    },
+    "Z4.2.13": {
+      "background": [
+        "Theta functions",
+        "Period lattices"
+      ],
+      "hypotheses": [
+        "Fix a tied kernel entry with its associated character, period and normalization."
+      ],
+      "questions": [
+        {
+          "text": "VecP and EqP still require the same-base character, CM, Weil and covariance suppliers classified in the round-15 register. The period is nonzero and LatAll is confirmed.",
+          "source": "data/status_ledger.json"
+        },
+        {
+          "text": "Do period nonvanishing and vector equivariance hold for the same choice? Find the result controlling the ratio of the normalizing scalars.",
+          "source": "questions/theta.md"
+        }
+      ],
+      "baseline": {
+        "sha256": "6d6282045d3f80477ae9fbd29fcc82fe78c0d75673018ad9298d4cdce69a6b72",
+        "title": "Period, lattice and theta-vector laws of the tied base",
+        "prerequisites": [],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": false,
+        "grade": "L0"
+      }
+    },
+    "Z4.3": {
+      "background": [
+        "Local valuations",
+        "Theta columns"
+      ],
+      "hypotheses": [
+        "Use a tuple off level, with the prime outside its prescribed excluded set.",
+        "The size and error identities and all four prime-case coefficient laws hold."
+      ],
+      "questions": [
+        {
+          "text": "Rational covariance and the selected-row suppliers remain open. CM2 and the three suppliers of the local host have a union of 114,570 core lines. The selected-reader finite expansion is confirmed under its stated hypotheses.",
+          "source": "data/status_ledger.json"
+        },
+        {
+          "text": "Which inertia rows are needed off level, and how much of the Bessel-period witness in N076 do they share?",
+          "source": "questions/theta.md"
+        }
+      ],
+      "baseline": {
+        "sha256": "c7986b856aaafee88cff7572819a63bffa1f136a71fcdfe43d301742155b0bd1",
+        "title": "Off-level kernel valuations",
+        "prerequisites": [
+          "Z4.1",
+          "Z42-KERNEL"
+        ],
+        "open_question_count": 1,
+        "full_statement_in_hypotheses": false,
+        "grade": "L0"
+      }
+    },
+    "Z4.4": {
+      "background": [
+        "Twisted period integrals",
+        "Integral row lattices"
+      ],
+      "hypotheses": [
+        "Use the Ok and Pins records, fixed laws, later data and integral rows.",
+        "The tuple is tied to the prescribed character."
+      ],
+      "baseline": {
+        "sha256": "025001b198ac2f7cd1de18419719e3e4bb4c8215adffeb34f9dd0e5714956d65",
+        "title": "Twisted periods on the selected chain",
+        "prerequisites": [
+          "Z42-SITES"
+        ],
+        "open_question_count": 0,
+        "full_statement_in_hypotheses": false,
+        "grade": "L2"
+      }
+    },
+    "Z42-FRAMES": {
+      "background": [
+        "Local frames",
+        "Unitary translations",
+        "Adelic scalar factors"
+      ],
+      "hypotheses": [
+        "For the translation law assume a site dictionary with the pair-admission and algebraicity data for the scalar and character factors.",
+        "For the away comparison use the actual joint with self-dual, coefficient-compatible adjacent data. The scalar law also requires the indicated even ranks."
+      ],
+      "baseline": {
+        "sha256": "c5430dfe9c7a9af8b2b8ba3ff647f6021bed7a23d716d7cc58cb33922a3ff8c9",
+        "title": "Translation, away comparison and arithmetic scalars",
+        "prerequisites": [
+          "Z4.2.02",
+          "Z4.2.04"
+        ],
+        "open_question_count": 0,
+        "full_statement_in_hypotheses": false,
+        "grade": "L1"
+      }
+    },
+    "Z42-KERNEL": {
+      "background": [
+        "Theta transformations",
+        "Congruence levels",
+        "Lubin–Tate coordinates"
+      ],
+      "hypotheses": [
+        "The transformation branch requires Pair, Pos, Move and Away.",
+        "At level zero assume the dictionary, Pair, Pos and Law, and fix the algebraic embedding and its extension. A positive stage satisfies $0<j<m$.",
+        "For the final comparison assume AdmAtEnt2 and CurveEx with a joint, a used tuple, trivial level-zero stabilizers and twice the rank at most $k$."
+      ],
+      "questions": [
+        {
+          "text": "Supply \\nolinkurl{TieBase.base_data} (Z4.2.13), \\nolinkurl{KerMove.kerTh_move} and the bad-prime exclusion in \\nolinkurl{lev_pos_and_noConj}. For the full modelXi and movesCompose interfaces derive the geometric half-lattice comparisons for arbitrary curve bases and the simultaneous split-supported changes of a triple.",
+          "source": "data/status_ledger.json"
+        },
+        {
+          "text": "Class-kernel pullback under rational isometries, including the tied base in Z4.2.13 and kernel covariance; component-independent unit; source factor identity; moved source operator and degrees; target frame realization. Supporting inputs are tuple decomposition, the class entry polynomial, its extended weight, frame invertibility, character product and reading from all realizations. Direct suppliers in the all-step argument include \\nolinkurl{sysS_ranks}, \\nolinkurl{rk_le}, \\nolinkurl{ltC_ne}, \\nolinkurl{equiv_frame_b} and \\nolinkurl{kernelSite_contractionIdentity_operatorHalf}.",
+          "source": "data/status_ledger.json"
+        },
+        {
+          "text": "Supply \\nolinkurl{joint_at_nonempty} (.02), \\nolinkurl{pairOK_allSites} (.04), \\nolinkurl{site_law_xiIn} (.09) with \\nolinkurl{TieBase.base_data} (.13), and the five common inputs of the differential changes (.10 and .11). In the assembly prove the remaining fields of \\nolinkurl{kernelSite_seriesData_below_lastStep}, the stabilizer comparison \\nolinkurl{tieStab_kaAtAny}, and the realizing-polynomial comparison in \\nolinkurl{series_reading_entries}.",
+          "source": "data/status_ledger.json"
+        }
+      ],
+      "baseline": {
+        "sha256": "9cc3d2cf0b3230eeeac9e159189a93eb2aada23bdbe5fa7ad966d3fe9504ae26",
+        "title": "Transformation and level changes of the kernel",
+        "prerequisites": [
+          "Z4.2.02",
+          "Z4.2.04",
+          "Z4.2.13",
+          "Z42-FRAMES"
+        ],
+        "open_question_count": 3,
+        "full_statement_in_hypotheses": false,
+        "grade": "L0"
+      }
+    },
+    "Z42-SITES": {
+      "background": [
+        "Local lattice parameters",
+        "Unitary theta kernels"
+      ],
+      "hypotheses": [
+        "The served site has its host tie and tied lattice, with $2r_G\\le k$.",
+        "Supply the joint and its actual tuple at a stage $j\\le m$. For the position calculation fix the site embeddings and position $(v,s)$."
+      ],
+      "baseline": {
+        "sha256": "386c234606793a1e0d82cc00875cc8b757ec963f4675f5439aa5621330ef3e75",
+        "title": "Served-site parameters and the lattice dictionary",
+        "prerequisites": [],
+        "open_question_count": 0,
+        "full_statement_in_hypotheses": false,
+        "grade": "L2"
+      }
+    },
+    "Z5.1": {
+      "background": [
+        "Minkowski embeddings",
+        "Gram determinants",
+        "Lattice index"
+      ],
+      "hypotheses": [
+        "Use a finitely generated full lattice over a totally complex number field.",
+        "The archimedean frame is invertible."
+      ],
+      "questions": [
+        {
+          "text": "Which discriminant, square and place weights appear before and after dualizing? Recover both sides after changing the basis.",
+          "source": "questions/arakelov.md"
+        }
+      ],
+      "aliases": [
+        "Gram determinant formula"
+      ],
+      "baseline": {
+        "sha256": "89885723f61aa96789696ed0833a99a7510de2c61c77548b421fdd6c835985aa",
+        "title": "Gram determinant and additive index",
+        "prerequisites": [],
+        "open_question_count": 0,
+        "full_statement_in_hypotheses": false,
+        "grade": "L0"
+      }
+    },
+    "Z5.2": {
+      "background": [
+        "Hermitian duals",
+        "Lattice covolumes"
+      ],
+      "hypotheses": [
+        "Use a lattice of positive full rank in the invertible archimedean frames.",
+        "Use the specified evaluation pairing."
+      ],
+      "baseline": {
+        "sha256": "5d03bf3ca67b1de110e1b4c497ed014eb12e93e7f197ea3e360528efc0a04c66",
+        "title": "Height of the evaluation dual",
+        "prerequisites": [
+          "Z5.1"
+        ],
+        "open_question_count": 0,
+        "full_statement_in_hypotheses": false,
+        "grade": "L0"
+      }
+    }
+  }
+}

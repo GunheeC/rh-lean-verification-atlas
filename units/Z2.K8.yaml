@@ -1,0 +1,93 @@
+{
+  "id": "Z2.K8",
+  "title": "Finite duality and the length formula",
+  "track": {
+    "primary": "galois",
+    "secondary": [
+      "ktheory"
+    ]
+  },
+  "statement": "For $\\mathrm{PTCase}(F,\\ell)$ and any integral twist $e$ of the given local data, finite Poitou--Tate, local finiteness and local Tate duality give the length identity $V_{\\rm len}+\\nu_{\\rm Gal}=\\mathrm{shaLen}+\\sum_w\\mathrm{localH0TwistLength}_w$ for the coefficient module and localization conditions of VFormula.",
+  "assumptions": [
+    "source:blueprint_v13"
+  ],
+  "hypothesis_details": [
+    "Assume PTCase for the number field and prime and use the given twist and local data.",
+    "Use finite Poitou–Tate duality, local finiteness and local Tate duality."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.LDataCardLeFinrank.vFormula_of_classicalTheorems",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/GaloisCohomologyLength/Formula.lean",
+      "line0": 15,
+      "line1": 24,
+      "sha256": "7c56f35b41ca74425b09d9a7d9c41d9189f2fd59a61fe7db672fed431c8ff356",
+      "dominated": 51,
+      "graph": "allChi",
+      "role": "statement"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/blueprint/Z2.K8.tex",
+      "section": "lem:P-r3-k8",
+      "pages": []
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "lem:P-r3-k8",
+      "pages": [
+        184,
+        184
+      ],
+      "printed_page": 159,
+      "scope": "First page of this named destination."
+    }
+  ],
+  "status": "Full",
+  "grade": "L0",
+  "reviews": [
+    "reviews/R20_review.md"
+  ],
+  "prerequisites": [
+    "D006"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "blueprint_members": [
+    "Z2.K8"
+  ],
+  "representative": "UpperTheory.V.LDataCardLeFinrank.vFormula_of_classicalTheorems",
+  "statement_declarations": [
+    "UpperTheory.V.LDataCardLeFinrank.vFormula_of_classicalTheorems"
+  ],
+  "grade_scope": "Named statement declarations with the hypotheses above. Chart supplier records have their own review scopes.",
+  "confirmation_basis": "Minimum across the statement declarations, using registry rows for the blueprint assignments listed here. Reviews of other expositions of a shared declaration are included as context.",
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "slug": "finite-duality-and-the-length-formula",
+  "aliases": [
+    "Z2.K8 Finite duality and the length formula"
+  ],
+  "background": [
+    "Poitou–Tate duality",
+    "Local Tate duality",
+    "Tate twists"
+  ],
+  "hypothesis_source": {
+    "document": "blueprint_v13",
+    "section": "lem:P-r3-k8",
+    "pages": [
+      184,
+      184
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "D006": "statement-reading"
+  },
+  "summary": "Under finite Poitou–Tate duality, local finiteness and local Tate duality, a length identity relates global second cohomology, the localization kernel and local fixed vectors for the given twist. The correction term records what must be added on the global side of the comparison."
+}

@@ -1,0 +1,40 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit P033. Local manuscript v3, item 7.10, heading on printed PDF p. 78.
+% UpperTheory.V.ZK.sThetaOf
+% paper2/inputs_one.tex:434–467. Verbatim excerpt; SHA-256 b6ab11f1e7f123eece8bab4d10978250dec6a775af23cbfb638e49809b38317f.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+\begin{theorem}[The determinant evaluation on scalar prisms]\label{pn:P033}
+Assume the chain, prism, prism composition and basic-cycle identities,
+the transfer of scalar functionals and the scalar cocycle formula.
+For any finite field \(k\), positive integer \(q\), \(e\ge0\),
+primitive \(q\)-th root \(\zeta\in k^\times\), and character
+\(v:k^\times\to\mathbb Z/q\), there is an additive evaluating
+family \(\theta\) of degree \(2e+3\). For every finite \(k\)-vector
+space \(V\), every \(x\in\mathbb N\), and \(g\in\mathrm{GL}(V)\),
+\[
+ \theta_V\!\left(P_g((j\mapsto\zeta^{xj}I_V)_*z)\right)
+ = x^{e+1}v(\det g).
+\]
+Here \(P_g\) is the conjugation prism, and \(z\) is the specified
+degree-\(2e+2\) cyclic bar cycle.
+\end{theorem}\nodestatus{P033}
+\begin{proof}
+For \(q=1\) all evaluations are zero. Otherwise \(q\mid |k^\times|\)
+and \(|k|=1\) in \(\mathbb Z/q\). Transfer the supplied scalar
+cocycle along the projective lines of \(V\). The resulting family
+kills boundaries, is additive on direct sums and recovers the given
+functional on scalar cycles in dimension one, by the transfer hypothesis.
+For fixed \(x,V\), the scalar action commutes with every \(g\).
+Prism composition modulo boundaries thus makes the left hand side
+a homomorphism from \(\mathrm{GL}(V)\) to an abelian group. It
+vanishes on transvections: conjugating \(1+tE_{ij}\) by a diagonal
+matrix with \(i\)-th entry \(b\ne0,1\) multiplies \(t\) by \(b\).
+Taking differences realizes any transvection since \(b-1\) is
+invertible; such a \(b\) exists because \(q>1\). Row elimination,
+including signed interchanges expressed as transvections, reduces
+the value to that on diagonal matrices. The direct-sum law adds the
+one-dimensional evaluations, giving \(x^{e+1}v(\det g)\). The
+zero-dimensional case follows from the trivial action. This is the
+determinant calculation in Blueprint Z2.K2~\bploc{sec:P-r4-K2}.
+\end{proof}

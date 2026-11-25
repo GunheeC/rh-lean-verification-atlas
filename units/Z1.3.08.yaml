@@ -1,0 +1,111 @@
+{
+  "id": "Z1.3.08",
+  "title": "Unramified classes in the ordinary normal form",
+  "track": {
+    "primary": "galois",
+    "secondary": []
+  },
+  "statement": "Combining the integral, Hodge–Tate and Hecke projection results with the local power-series test supplies ZetaUr for every ordinary normal form with its unramified weight-$2e+1$ modular source.",
+  "assumptions": [
+    "source:blueprint_v13"
+  ],
+  "hypothesis_details": [
+    "Fix an ordinary normal form.",
+    "Its modular source is unramified as specified and has weight $2e+1$."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.Z.Kato.Final.zetaUr",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/UnramifiedZeta/ZetaUr.lean",
+      "line0": 9,
+      "line1": 12,
+      "sha256": "bde81d34b87e1ead6f724aa1fda87fc35be45b0c72261d2d54b8efc39b45c132",
+      "dominated": 126205,
+      "graph": "allChi",
+      "role": "statement"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/blueprint/Z1.3.08.tex",
+      "section": "r6:Z1.3.08, r7:Z1.3.08",
+      "pages": []
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r6:Z1.3.08",
+      "pages": [
+        387,
+        387
+      ],
+      "printed_page": 362,
+      "scope": "First page of this named destination."
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r7:Z1.3.08",
+      "pages": [
+        407,
+        407
+      ],
+      "printed_page": 382,
+      "scope": "First page of this named destination."
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [
+    "Z1.3.01",
+    "Z1.3.02",
+    "Z1.3.03",
+    "Z1.3.04",
+    "Z1.3.05",
+    "Z1.3.07"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "Discharge the nine project comparisons at the global and local producers in Z1.3.01 through Z1.3.05."
+  ],
+  "last_checked": "2026-11-24",
+  "blueprint_members": [
+    "Z1.3.08"
+  ],
+  "representative": "UpperTheory.V.Z.Kato.Final.zetaUr",
+  "statement_declarations": [
+    "UpperTheory.V.Z.Kato.Final.zetaUr"
+  ],
+  "grade_scope": "Named statement declarations with the hypotheses above. Chart supplier records have their own review scopes.",
+  "confirmation_basis": "Minimum across the statement declarations, using registry rows for the blueprint assignments listed here. Reviews of other expositions of a shared declaration are included as context.",
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "slug": "unramified-classes-in-the-ordinary-normal-form",
+  "aliases": [
+    "Kato zeta classes",
+    "Z1.3.08 Unramified classes in the ordinary normal form"
+  ],
+  "background": [
+    "Kato classes",
+    "Unramified local conditions"
+  ],
+  "hypothesis_source": {
+    "document": "blueprint_v13",
+    "section": "r6:Z1.3.08",
+    "pages": [
+      387,
+      387
+    ]
+  },
+  "question_sources": [
+    "data/status_ledger.json"
+  ],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "Z1.3.01": "graph",
+    "Z1.3.02": "graph",
+    "Z1.3.03": "graph",
+    "Z1.3.04": "graph",
+    "Z1.3.05": "graph",
+    "Z1.3.07": "graph"
+  },
+  "summary": "For the admitted ordinary representation and unramified modular source, the integral construction, Hodge–Tate formula, Hecke projection and local power-series test supply the unramified zeta-class conclusion together. This identifies the inputs behind the global cocycle assertion."
+}

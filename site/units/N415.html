@@ -1,0 +1,35 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>N415 · Relative prime count in progressions · RH verification atlas</title><link rel="stylesheet" href="../atlas.css"><script>window.MathJax={tex:{inlineMath:[["$","$"]],displayMath:[["$$","$$"]],processEscapes:true},options:{ignoreHtmlClass:"no-math"}};</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script></head><body><header><div class="bar"><a class="brand" href="../index.html">RH verification atlas</a><nav aria-label="Atlas navigation"><a href="../index.html">Home</a> <a href="../STATUS.html">Status</a> <a href="../MAP.html">Map</a> <a href="../dashboard/index.html">Tracks</a> <a href="../lookup/search.html">Search declarations</a></nav></div></header><main><h1 id="n415--relative-prime-count-in-progressions">N415 · Relative prime count in progressions</h1>
+<p class="notice">AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved</p>
+<p>For a reduced progression whose modulus is divisible by eight, sufficiently large scales admit a relative prime-count estimate with an explicit error. A possible exceptional real zero contributes its own main-term correction. The estimate retains the dependence on the modulus when the progression varies.</p>
+<p><code>relative-prime-count-in-progressions</code> · <a href="../tracks/analytic/index.html">Analytic number theory</a></p>
+<p><strong>Full</strong> · <strong>L0</strong> Declaration pinned; no review of this unit · Record generated 2026-11-25 (no human check).</p>
+<div class="scroll"><table>
+<thead><tr><th>1 · Lean pinned</th><th>2 · Statement compared</th><th>3 · Prose</th><th>4 · Steps</th><th>5 · AI review</th><th>6 · Human</th></tr></thead>
+<tbody><tr><td>✓</td><td>–</td><td>Full</td><td>3</td><td>–</td><td>0 of 3 steps</td></tr>
+</tbody></table></div>
+<p><a href="N415.check.html">Numbered proof and check records</a> · <a href="../PROGRESS.html">Progress and counting rules</a></p>
+<h2 id="statement">Statement</h2>
+<p>For <span class="math">$M&gt;0$</span>, <span class="math">$8\mid M$</span>, reduced <span class="math">$a\bmod M$</span>, <span class="math">$X\ge2$</span> and <span class="math">$\log X\ge C_0\log M\log(\log M+2)$</span>, the prime count has main term <span class="math">$\bigl(\mathrm{li}_2(X)-\chi(a)\mathrm{li}_2(X^\beta)\bigr)/\varphi(M)$</span> with relative error <span class="math">$\ll e^{-c\log X/\log M}+e^{-\sqrt{c\log X}}$</span>. The character term is omitted if the exceptional window is empty. Chapter T derives the relative error and exceptional-window adjustment from Thorner–Zaman.</p>
+<h2 id="assumptions">Assumptions</h2>
+<ul><li>Use a reduced residue class modulo a positive multiple of eight.</li><li>The endpoint satisfies <span class="math">$X\ge2$</span> and <span class="math">$\log X\ge C_0\log M\log(\log M+2)$</span>.</li></ul>
+<p>Sources for the assumptions · <a href="../data/editions.json">RH verification blueprint, release v13</a></p>
+<h2 id="where-to-read">Where to read</h2>
+<p>Blueprint v13 and papers v3–v5 are this atlas project’s own AI-written, unpublished drafts. They have no human review and were not written by the author of the Lean development. Blueprint v13, its separate cover, and paper v5 are distributed as assets of release v0.1.0. For v3 and v4 the atlas supplies selected excerpts and notes. <a href="../data/editions.json">Edition register</a></p>
+<ul><li><a href="../notes/blueprint/N415.tex">Blueprint source excerpt</a> · section <code>r5:lit:N415</code></li><li><a href="../data/editions.json">RH verification blueprint, release v13</a>, section label <code>r5:lit:N415</code>, PDF p. 571 (printed p. 546)</li></ul>
+<h2 id="evidence">Evidence</h2>
+<p>The pinned declaration is recorded in the formal source. No higher-level verdict is assigned to this unit.</p>
+<h2 id="lean-declarations">Lean declarations</h2>
+<ul><li><code>Formalism.HermitianLattices.Ext.PrimesInProgressions.pnt_progressions_relative_weak_holds</code>  <br><a href="https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/GL3MeanSquares/GenusMeanAsymptotics/JacobiCharacterSums/PNTFinal.lean#L22-L24"><code>PNTFinal.lean</code></a>, lines 22–24 · 11,065 dominated lines · SHA-256 <code>c1b14461fcc5</code>.</li></ul>
+<p><a href="N415.yaml">Machine record and full declaration hashes</a> · <a href="../lookup/declarations.html">Declaration lookup</a></p>
+<h2 id="reading-prerequisites">Reading prerequisites</h2>
+<p>Background · Primes in progressions · Dirichlet characters.</p>
+<p>PNTAPRelW has a reduced residue class, a modulus divisible by eight, a particular logarithmic lower bound on the scale and a possible exceptional term. The other analytic reading units treat host primes or Chebyshev power windows. None supplies the relative progression estimate at those hypotheses. <a href="../data/round3_prerequisites.json">Statement evidence</a></p>
+<h2 id="open-questions">Open questions</h2>
+<p>None recorded.</p>
+<h2 id="graph-connections">Graph connections</h2>
+<p>Arrows may connect either a unit’s main declaration or an indexed member.</p>
+<p><strong>Uses</strong> · No recorded edge.</p>
+<p><strong>Used by</strong> · <a href="D510.html">D510</a></p>
+<p><a href="../data/unit_graph.json">Declaration witnesses and graph scope</a></p>
+<p>Lookup aliases · <code>relative prime count</code>, <code>pnt_progressions_relative_weak_holds</code>, <code>N415 Relative prime count in progressions</code></p>
+<p>&lt;!-- Unit metadata SHA-256 2f6318d013b5ecda747e2e0d0be529a7345b713a295138c7c690981d6bc426c6 --&gt;</p></main><footer><a href="../help.html">Using the local edition</a></footer></body></html>

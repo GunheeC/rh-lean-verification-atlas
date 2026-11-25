@@ -1,0 +1,94 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "P014",
+  "edition_sha256": "efcd4b121c7375f7a4eb1db1a3cd915221ba35e55c3e45a584cd018c0f241597",
+  "note_sha256": "5f134ee8ddc054808611ec1612c9e0ca3c45e05e899b8a7ea90bcbe433a758c0",
+  "statement_sha256": "5d4b7dddd56d4059bee6ffeabbf892c438634ab393d94ad8deb3b2128dd5f87a",
+  "sources": [
+    {
+      "path": "notes/units/P014.tex",
+      "sha256": "5f134ee8ddc054808611ec1612c9e0ca3c45e05e899b8a7ea90bcbe433a758c0"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The three assumed arithmetic inputs give nonvanishing of the inducing primitive character in the half-plane.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "P015"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Top.every_character_of_green_v_win",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean",
+          "line0": 16,
+          "line1": 18
+        }
+      ],
+      "source": "notes/units/P014.tex",
+      "anchor": "P015 supplies zero-freeness",
+      "source_lines": [
+        13,
+        20
+      ],
+      "claim_sha256": "962237df805673b8f955fbdb94857bd5ad371d8f9a411ebb4205d29a62aad5ba",
+      "passage_sha256": "33d3df656d56d4b76bd5e32e7c60ce8d757a6e53f949df7bf8903d043d9cd7bd",
+      "sha256": "472ede96d223a50677180d0bb72b0b8fc7c6f93e6d123b78587b1c43f08f073e",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Each extra Euler factor is nonzero because its prime-power term has modulus below one; this transfers nonvanishing with the principal-pole exception.",
+      "kind": "inequality",
+      "uses": [
+        "S1",
+        "standard: change of level for Dirichlet L-functions"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Top.every_character_of_green_v_win",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean",
+          "line0": 16,
+          "line1": 18
+        }
+      ],
+      "source": "notes/units/P014.tex",
+      "anchor": "Every factor in its finite Euler product",
+      "source_lines": [
+        13,
+        20
+      ],
+      "claim_sha256": "557b331e999855cd7010adf7ff65c43d7da99a2ac4846e46922524d45d9c189f",
+      "passage_sha256": "33d3df656d56d4b76bd5e32e7c60ce8d757a6e53f949df7bf8903d043d9cd7bd",
+      "sha256": "aab8c7cfc25758dd327d512eea62d54d597a0ff087ac787af883dfbaaae185ae",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "d2898c38145542c55f3bf98e69428d8256f35b2819c4495a6dc4b75dfaafa106",
+      "sources": [
+        {
+          "path": "notes/units/P014.tex",
+          "sha256": "e22ff7866d6634725361e13c96a844906daa0afd9300a9b54b5fbdac4f61ee90"
+        }
+      ],
+      "statement_sha256": "5d4b7dddd56d4059bee6ffeabbf892c438634ab393d94ad8deb3b2128dd5f87a",
+      "steps": {
+        "S1": "472ede96d223a50677180d0bb72b0b8fc7c6f93e6d123b78587b1c43f08f073e",
+        "S2": "aab8c7cfc25758dd327d512eea62d54d597a0ff087ac787af883dfbaaae185ae"
+      },
+      "step_texts": {
+        "S1": "The three assumed arithmetic inputs give nonvanishing of the inducing primitive character in the half-plane.",
+        "S2": "Each extra Euler factor is nonzero because its prime-power term has modulus below one; this transfers nonvanishing with the principal-pole exception."
+      },
+      "step_passages": {
+        "S1": "33d3df656d56d4b76bd5e32e7c60ce8d757a6e53f949df7bf8903d043d9cd7bd",
+        "S2": "33d3df656d56d4b76bd5e32e7c60ce8d757a6e53f949df7bf8903d043d9cd7bd"
+      }
+    }
+  ]
+}

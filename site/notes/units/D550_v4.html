@@ -1,0 +1,17 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>D550 · A common threshold for the logarithm and the fixed error constant · RH verification atlas</title><link rel="stylesheet" href="../../atlas.css"><script>window.MathJax={tex:{inlineMath:[["$","$"]],displayMath:[["$$","$$"]],processEscapes:true},options:{ignoreHtmlClass:"no-math"}};</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script></head><body><header><div class="bar"><a class="brand" href="../../index.html">RH verification atlas</a><nav aria-label="Atlas navigation"><a href="../../index.html">Home</a> <a href="../../STATUS.html">Status</a> <a href="../../MAP.html">Map</a> <a href="../../dashboard/index.html">Tracks</a> <a href="../../lookup/search.html">Search declarations</a></nav></div></header><main><h1 id="d550--a-common-threshold-for-the-logarithm-and-the-fixed-error-constant">D550 · A common threshold for the logarithm and the fixed error constant</h1>
+<p class="notice">AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved</p>
+<p>The pinned source paths below use the root <code>src/</code>. The proof is adapted from the project’s manuscript v4 and is <strong>pending_review</strong>. Manuscript v4, §3.1, printed pp. 13. <a href="../../units/D550.html">Unit card</a> · <a href="../../data/editions.json">Mathematical editions</a>.</p>
+<ul><li><strong>A7</strong> <code>Formalism.LFunctionChainParameters.LErr.large_x_eventually</code>, <code>Formalism/SizeWindowBrackets/ChainSlopeWindows/SubThreeMulLogTwoLe.lean:319–329</code>.</li></ul>
+<p><strong>How the lattice error fits the arithmetic bracket.</strong></p>
+<p>The lattice estimate uses the following bracket and fixed threshold. Write</p>
+<div class="math display">$$
+ E=n_Ta(1+m^2/k)+m(B_0+N_c),\qquad
+ K_* =200(1+K)^2(1+c_{HH})(1+e_K).
+$$</div>
+<p>These are <code>ErrText</code> and <code>KBig</code> (<code>ErrorFormsWeakWindowsFalse.lean:16–21</code>).</p>
+<p><strong>A common threshold, D550</strong></p>
+<p>For every <span class="math">$\varepsilon&gt;0$</span> and all fixed real <span class="math">$K,c_{HH},e_K$</span> there is <span class="math">$x_0$</span> such that <span class="math">$x\ge x_0$</span> implies <span class="math">$\log x\le x^\varepsilon$</span> and <span class="math">$K_*\le x^\varepsilon$</span>.</p>
+<p><strong>Proof.</strong></p>
+<p>Take <span class="math">$x_0=\exp(\max\{0,2/\varepsilon^2,\log(\max\{1,K_*\})/\varepsilon\})$</span>. For <span class="math">$u=\log x\ge2/\varepsilon^2$</span>, positivity of the exponential series gives <span class="math">$e^{\varepsilon u}\ge (\varepsilon u)^2/2\ge u$</span>. Also <span class="math">$e^{\varepsilon u}\ge\max\{1,K_*\}$</span>. This proves both inequalities at the same scale (<code>LErr.large_x_eventually</code>, <code>SubThreeMulLogTwoLe.lean:319–329</code>).</p>
+<h2 id="point-for-the-reviewer">Point for the reviewer</h2>
+<p>The same threshold must work when the fixed real K_* is smaller than one and when ε is very small.</p></main><footer><a href="../../help.html">Using the local edition</a></footer></body></html>

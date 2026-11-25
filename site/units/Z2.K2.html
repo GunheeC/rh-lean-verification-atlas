@@ -1,0 +1,37 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Z2.K2 · Cycles on integral matrices and uniform residue evaluation · RH verification atlas</title><link rel="stylesheet" href="../atlas.css"><script>window.MathJax={tex:{inlineMath:[["$","$"]],displayMath:[["$$","$$"]],processEscapes:true},options:{ignoreHtmlClass:"no-math"}};</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script></head><body><header><div class="bar"><a class="brand" href="../index.html">RH verification atlas</a><nav aria-label="Atlas navigation"><a href="../index.html">Home</a> <a href="../STATUS.html">Status</a> <a href="../MAP.html">Map</a> <a href="../dashboard/index.html">Tracks</a> <a href="../lookup/search.html">Search declarations</a></nav></div></header><main><h1 id="z2k2--cycles-on-integral-matrices-and-uniform-residue-evaluation">Z2.K2 · Cycles on integral matrices and uniform residue evaluation</h1>
+<p class="notice">AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved</p>
+<p>A divisor condition yields an integral matrix-group cycle and one exceptional denominator. At every allowed reduction its evaluation recovers the character of a twisted norm times an explicit product. The same cycle can therefore test many reductions.</p>
+<p><code>cycles-on-integral-matrices-and-uniform-residue-evaluation</code> · <a href="../tracks/ktheory/index.html">Algebraic K-theory and cohomology of arithmetic groups</a></p>
+<p><strong>Full</strong> · <strong>L1</strong> Statement matched to Lean · Record generated 2026-11-25 (no human check).</p>
+<div class="scroll"><table>
+<thead><tr><th>1 · Lean pinned</th><th>2 · Statement compared</th><th>3 · Prose</th><th>4 · Steps</th><th>5 · AI review</th><th>6 · Human</th></tr></thead>
+<tbody><tr><td>✓</td><td>✓</td><td>Full</td><td>6</td><td>–</td><td>0 of 6 steps</td></tr>
+</tbody></table></div>
+<p><a href="Z2.K2.check.html">Numbered proof and check records</a> · <a href="../PROGRESS.html">Progress and counting rules</a></p>
+<h2 id="statement">Statement</h2>
+<p>In a cyclic layer with <span class="math">$2e+3&lt;\ell^c$</span>, any <span class="math">$\alpha$</span> satisfying the divisor condition gives a degree-<span class="math">$(2e+3)$</span> cycle over <span class="math">$\mathcal O_L$</span> with coefficients modulo <span class="math">$\ell^\nu$</span> and a single nonzero denominator. At every allowed residue map, every additive evaluator with the prescribed scalar value returns <span class="math">$P_{e+1}v(u)$</span> for a residue <span class="math">$u$</span> of the twisted norm, with <span class="math">$P_{e+1}=\prod_{0\le i&lt;2e+3,\ i\ne e+1}(\kappa^{e+1}-\kappa^i)$</span> and <span class="math">$\kappa=1+\ell^c$</span>. A primitive reduced root supplies such an evaluator.</p>
+<h2 id="assumptions">Assumptions</h2>
+<ul><li>Use a cyclic layer with <span class="math">$2e+3&lt;\ell^c$</span> and an element satisfying the divisor condition.</li><li>The residual maps and evaluators satisfy the stated scalar conditions.</li></ul>
+<p>Sources for the assumptions · <a href="../data/editions.json">RH verification blueprint, release v13</a></p>
+<h2 id="where-to-read">Where to read</h2>
+<p>Blueprint v13 and papers v3–v5 are this atlas project’s own AI-written, unpublished drafts. They have no human review and were not written by the author of the Lean development. Blueprint v13, its separate cover, and paper v5 are distributed as assets of release v0.1.0. For v3 and v4 the atlas supplies selected excerpts and notes. <a href="../data/editions.json">Edition register</a></p>
+<ul><li><a href="../notes/blueprint/Z2.K2.tex">Blueprint source excerpt</a></li><li><a href="../data/editions.json">RH verification blueprint, release v13</a>, section label <code>prop:P-k-few</code>, PDF p. 174 (printed p. 149)</li><li><a href="../data/editions.json">RH verification blueprint, release v13</a>, section label <code>sec:P-r4-K2</code>, PDF p. 187 (printed p. 162)</li></ul>
+<h2 id="evidence">Evidence</h2>
+<ul><li><a href="../reviews/R4_review_Z2.html">R4 review Z2</a>, original lines 12–16 — No statement mismatch reported. Statement comparison; the proof has qualifications.</li></ul>
+<p>Named statement declarations with the hypotheses above. Chart supplier records have their own review scopes.</p>
+<p>Review records · <a href="../reviews/R4_review_Z2.html">R4 review Z2</a> · <a href="../reviews/R20_review.html">R20 review</a></p>
+<h2 id="lean-declarations">Lean declarations</h2>
+<ul><li><code>UpperTheory.V.ZK.sClassOf</code>  <br><a href="https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/SClassOf.lean#L21-L23"><code>SClassOf.lean</code></a>, lines 21–23 · 2,207 dominated lines · SHA-256 <code>552bb1d63bce</code>.</li><li><code>UpperTheory.V.ZK.sThetaOf</code>  <br><a href="https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/SThetaOf.lean#L192-L273"><code>SThetaOf.lean</code></a>, lines 192–273 · 259 dominated lines · SHA-256 <code>779dff9d7fed</code>.</li></ul>
+<p><a href="Z2.K2.yaml">Machine record and full declaration hashes</a> · <a href="../lookup/declarations.html">Declaration lookup</a></p>
+<h2 id="reading-prerequisites">Reading prerequisites</h2>
+<p>Background · Bar and prism complexes · Integral group homology · Residue maps.</p>
+<p>The two statement roots construct the integral cycle and the residue evaluator in one cyclic-layer model. P032 and P033 are the overlapping paper anchors, not preparatory units. The later calculation in Z2.K5 uses the cycle and norm setting before deriving a separate counting conclusion. <a href="../data/round3_prerequisites.json">Statement evidence</a></p>
+<h2 id="open-questions">Open questions</h2>
+<p>None recorded.</p>
+<h2 id="graph-connections">Graph connections</h2>
+<p>Arrows may connect either a unit’s main declaration or an indexed member.</p>
+<p><strong>Uses</strong> · No recorded edge.</p>
+<p><strong>Used by</strong> · <a href="P013.html">P013</a> · <a href="W05.html">W05</a></p>
+<p><a href="../data/unit_graph.json">Declaration witnesses and graph scope</a></p>
+<p>Lookup aliases · <code>Z2.K2 Cycles on integral matrices and uniform residue evaluation</code></p>
+<p>&lt;!-- Unit metadata SHA-256 1571a2d913cbf7ce689ec52eb7a09105623a5265e20c8f2225108c890fee2a61 --&gt;</p></main><footer><a href="../help.html">Using the local edition</a></footer></body></html>

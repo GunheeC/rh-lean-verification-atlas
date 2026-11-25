@@ -1,0 +1,536 @@
+{
+  "changes": [
+    {
+      "id": "T12",
+      "old_status": "Statement only",
+      "status": "Outlined",
+      "note": "notes/units/T12_round3.md",
+      "weakest_step": "Check the singular Whittaker and holomorphic-leading-term inputs in the step carrying the doubled equal-rank value to lower ranks.",
+      "pages_written": 2,
+      "review_status": "pending_review",
+      "lean_ranges": [
+        {
+          "name": "GlobalTheory.ThK.Dbl.IsDbl",
+          "file": "Development/WeilBound/ThetaLifts/LatticeBasics/Hypotheses2.lean",
+          "line0": 62,
+          "line1": 74
+        },
+        {
+          "name": "GlobalTheory.ThK.Dbl.SiegelWeilStd",
+          "file": "Development/WeilBound/ThetaLifts/LatticeBasics/HypothesesS.lean",
+          "line0": 11,
+          "line1": 21
+        },
+        {
+          "name": "GlobalTheory.ThK.Dbl.EisValueAt",
+          "file": "Development/WeilBound/ThetaLifts/LatticeBasics/Hypotheses2.lean",
+          "line0": 76,
+          "line1": 78
+        },
+        {
+          "name": "PositivityTheory.SiegelWeilFormula.Act.ctSplit_of_parts",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilActions/CtSplitOfParts.lean",
+          "line0": 137,
+          "line1": 158
+        },
+        {
+          "name": "PositivityTheory.SiegelWeilFormula.Act.ctSplit_of",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilActions/CtSplitOf.lean",
+          "line0": 10,
+          "line1": 11
+        },
+        {
+          "name": "PositivityTheory.SiegelWeilFormula.Fin.tWeyl_of",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilStandard/SiegelWeilStdPre.lean",
+          "line0": 16,
+          "line1": 17
+        },
+        {
+          "name": "PositivityTheory.SiegelWeilFormula.Fin.siegelWeilStd_pre",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilStandard/SiegelWeilStdPre.lean",
+          "line0": 19,
+          "line1": 23
+        },
+        {
+          "name": "PositivityTheory.SiegelWeilFormula.Fin.locInst_of",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilStandard/SiegelWeilStdMid.lean",
+          "line0": 14,
+          "line1": 14
+        },
+        {
+          "name": "PositivityTheory.SiegelWeilFormula.Fin.siegelWeilStd_mid",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilStandard/SiegelWeilStdMid.lean",
+          "line0": 16,
+          "line1": 20
+        },
+        {
+          "name": "PositivityTheory.SiegelWeilFormula.Fin.tTheta",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilStandard/SiegelWeilStdOf.lean",
+          "line0": 37,
+          "line1": 37
+        },
+        {
+          "name": "PositivityTheory.SiegelWeilFormula.Fin.tAll_of",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilStandard/SiegelWeilStdOf.lean",
+          "line0": 39,
+          "line1": 39
+        },
+        {
+          "name": "PositivityTheory.SiegelWeilFormula.Fin.thetaCoef",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilStandard/SiegelWeilStdOf.lean",
+          "line0": 41,
+          "line1": 41
+        },
+        {
+          "name": "PositivityTheory.SiegelWeilFormula.Fin.whitGenLt",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilStandard/SiegelWeilStdOf.lean",
+          "line0": 43,
+          "line1": 44
+        },
+        {
+          "name": "PositivityTheory.SiegelWeilFormula.Fin.whitGenEq",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilStandard/SiegelWeilStdOf.lean",
+          "line0": 46,
+          "line1": 47
+        },
+        {
+          "name": "PositivityTheory.SiegelWeilFormula.Fin.whitGenLow",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilStandard/SiegelWeilStdOf.lean",
+          "line0": 49,
+          "line1": 50
+        },
+        {
+          "name": "PositivityTheory.SiegelWeilFormula.Fin.siegelWeilStd_of",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilStandard/SiegelWeilStdOf.lean",
+          "line0": 52,
+          "line1": 67
+        },
+        {
+          "name": "PositivityTheory.SiegelWeilFormula.Atop.siegelWeilStd_of",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/FockVacuumBounds/SiegelWeilStdLeaves.lean",
+          "line0": 40,
+          "line1": 58
+        },
+        {
+          "name": "PositivityTheory.SiegelWeilFormula.Atop.fieldOf",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/FockVacuumBounds/FieldOf.lean",
+          "line0": 50,
+          "line1": 63
+        },
+        {
+          "name": "PositivityTheory.SiegelWeilFormula.Fin.siegelWeilStd_of_ct",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilStandard/SiegelWeilStdOfCt.lean",
+          "line0": 8,
+          "line1": 8
+        },
+        {
+          "name": "PositivityTheory.SiegelWeilFormula.Fin.siegelWeilStd",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilStandard/SiegelWeilStd.lean",
+          "line0": 8,
+          "line1": 8
+        }
+      ]
+    },
+    {
+      "id": "T11",
+      "old_status": "Statement only",
+      "status": "Outlined",
+      "note": "notes/units/T11_round3.md",
+      "weakest_step": "Trace the nonzero bottom contribution to a primed test in the prescribed space and the scalar comparison for every choice of matching maps.",
+      "pages_written": 2,
+      "review_status": "pending_review",
+      "lean_ranges": [
+        {
+          "name": "GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.IsConst",
+          "file": "Development/AbelianVarietyTheory/BlockTheory/DivisorBase/WeilTensorModels.lean",
+          "line0": 491,
+          "line1": 491
+        },
+        {
+          "name": "GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.IsMatched",
+          "file": "Development/AbelianVarietyTheory/BlockTheory/DivisorBase/WeilTensorModels.lean",
+          "line0": 493,
+          "line1": 496
+        },
+        {
+          "name": "GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.Decay",
+          "file": "Development/AbelianVarietyTheory/BlockTheory/DivisorBase/WeilTensorModels.lean",
+          "line0": 498,
+          "line1": 501
+        },
+        {
+          "name": "GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.OneConst",
+          "file": "Development/AbelianVarietyTheory/BlockTheory/DivisorBase/WeilTensorModels.lean",
+          "line0": 503,
+          "line1": 505
+        },
+        {
+          "name": "GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.LocalMatching",
+          "file": "Development/AbelianVarietyTheory/BlockTheory/DivisorBase/WeilTensorModels.lean",
+          "line0": 581,
+          "line1": 583
+        },
+        {
+          "name": "GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.ThetaIntegralsAgree",
+          "file": "Development/AbelianVarietyTheory/BlockTheory/DivisorBase/WeilTensorModels.lean",
+          "line0": 585,
+          "line1": 592
+        },
+        {
+          "name": "PositivityTheory.Sph.modSt2",
+          "file": "Development/WeilBound/ThetaLifts/SphericalLattices/ModSt2.lean",
+          "line0": 7,
+          "line1": 7
+        },
+        {
+          "name": "PositivityTheory.ThKR.theoremK_head2_of_mod",
+          "file": "Development/WeilBound/ThetaLifts/Reductions/FiniteClosure/TheoremKOfMod.lean",
+          "line0": 14,
+          "line1": 20
+        },
+        {
+          "name": "PositivityTheory.ThKR.thetaIntegralsAgree_and_localMatching_of_siegelWeil",
+          "file": "Development/WeilBound/ThetaLifts/Reductions/FiniteClosure/TheoremKOfMod.lean",
+          "line0": 22,
+          "line1": 24
+        },
+        {
+          "name": "PositivityTheory.ThKR.theoremK_head2",
+          "file": "Development/WeilBound/ThetaLifts/Reductions/FiniteClosure/TheoremKOfMod.lean",
+          "line0": 26,
+          "line1": 27
+        },
+        {
+          "name": "PositivityTheory.ThKR.theoremK_head2_of_mod",
+          "file": "Development/WeilBound/ThetaLifts/Reductions/FiniteClosure/TheoremKOfMod.lean",
+          "line0": 15,
+          "line1": 20
+        },
+        {
+          "name": "PositivityTheory.Sph.Tr.closeSph",
+          "file": "Development/WeilBound/ThetaLifts/SphericalLattices/SphericalClosure/CloseSph.lean",
+          "line0": 28,
+          "line1": 43
+        },
+        {
+          "name": "PositivityTheory.Sph.Tr.closeSph",
+          "file": "Development/WeilBound/ThetaLifts/SphericalLattices/SphericalClosure/CloseSph.lean",
+          "line0": 129,
+          "line1": 135
+        },
+        {
+          "name": "PositivityTheory.ThKG.agree_of_leaves",
+          "file": "Development/WeilBound/ThetaLifts/AgreeOfLeaves.lean",
+          "line0": 7,
+          "line1": 8
+        },
+        {
+          "name": "PositivityTheory.Sph.Tr.closeSph",
+          "file": "Development/WeilBound/ThetaLifts/SphericalLattices/SphericalClosure/CloseSph.lean",
+          "line0": 103,
+          "line1": 117
+        },
+        {
+          "name": "PositivityTheory.Sph.Tr.closeSph",
+          "file": "Development/WeilBound/ThetaLifts/SphericalLattices/SphericalClosure/CloseSph.lean",
+          "line0": 118,
+          "line1": 135
+        },
+        {
+          "name": "GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.Coinv",
+          "file": "Development/AbelianVarietyTheory/BlockTheory/DivisorBase/WeilTensorModels.lean",
+          "line0": 507,
+          "line1": 512
+        },
+        {
+          "name": "PositivityTheory.Sph.Tr.closeSph",
+          "file": "Development/WeilBound/ThetaLifts/SphericalLattices/SphericalClosure/CloseSph.lean",
+          "line0": 145,
+          "line1": 150
+        },
+        {
+          "name": "GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.stepFac",
+          "file": "Development/AbelianVarietyTheory/BlockTheory/DivisorBase/WeilTensorModels.lean",
+          "line0": 552,
+          "line1": 557
+        },
+        {
+          "name": "GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.StepBeta",
+          "file": "Development/AbelianVarietyTheory/BlockTheory/DivisorBase/WeilTensorModels.lean",
+          "line0": 559,
+          "line1": 567
+        },
+        {
+          "name": "GlobalTheory.IndefiniteRowSideFullHecke.WeilTensorModels.StepAlpha",
+          "file": "Development/AbelianVarietyTheory/BlockTheory/DivisorBase/WeilTensorModels.lean",
+          "line0": 571,
+          "line1": 579
+        },
+        {
+          "name": "PositivityTheory.Sph.Tr.closeSph",
+          "file": "Development/WeilBound/ThetaLifts/SphericalLattices/SphericalClosure/CloseSph.lean",
+          "line0": 183,
+          "line1": 193
+        }
+      ]
+    },
+    {
+      "id": "T09",
+      "old_status": "Statement only",
+      "status": "Outlined",
+      "note": "notes/units/T09_round3.md",
+      "weakest_step": "Check the common-factor assertion for the row evaluation and its use of the tensor description of the coefficient space and Bessel multiplicity bound across distinct rows.",
+      "pages_written": 2,
+      "review_status": "pending_review",
+      "lean_ranges": [
+        {
+          "name": "GlobalTheory.IndefiniteRowSideFullHecke.LevelPlusSubgroup.Separates",
+          "file": "Development/AbelianVarietyTheory/BlockTheory/DivisorBase/LevelPlusSubgroup.lean",
+          "line0": 65,
+          "line1": 67
+        },
+        {
+          "name": "GlobalTheory.IndefiniteRowSideFullHecke.LevelPlusSubgroup.SeparatesSpan",
+          "file": "Development/AbelianVarietyTheory/BlockTheory/DivisorBase/LevelPlusSubgroup.lean",
+          "line0": 69,
+          "line1": 71
+        },
+        {
+          "name": "GlobalTheory.IndefiniteRowSideFullHecke.LevelPlusSubgroup.FunctionalsSeparate",
+          "file": "Development/AbelianVarietyTheory/BlockTheory/DivisorBase/LevelPlusSubgroup.lean",
+          "line0": 83,
+          "line1": 91
+        },
+        {
+          "name": "UpperTheory.Lit.realInputE_holds",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/FockModels/RealBranch.lean",
+          "line0": 231,
+          "line1": 235
+        },
+        {
+          "name": "UpperTheory.Lit.functionalsSeparate_of_howeUnram_of_siegelWeil",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/FunctionalsSeparateOfHoweUnramOfSiegelWeil.lean",
+          "line0": 17,
+          "line1": 19
+        },
+        {
+          "name": "UpperTheory.Lit.real_functionals_separate_of_hypothesis",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/RealFunctionalsSeparateOfHypothesis.lean",
+          "line0": 15,
+          "line1": 24
+        },
+        {
+          "name": "UpperTheory.Lit.real_functionals_separate_of_hypothesis",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/RealFunctionalsSeparateOfHypothesis.lean",
+          "line0": 28,
+          "line1": 30
+        },
+        {
+          "name": "GlobalTheory.RowConvAll.separating_family_converges",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/ConvergenceOfSeparatingFamily.lean",
+          "line0": 14,
+          "line1": 26
+        },
+        {
+          "name": "GlobalTheory.Twist.CoreOntoAssembly.twist_core_surjective_of_local_components",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/TwistCoreSurjectiveOfLocalComponents.lean",
+          "line0": 15,
+          "line1": 21
+        },
+        {
+          "name": "UpperTheory.Lit.real_functionals_separate_of_hypothesis",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/RealFunctionalsSeparateOfHypothesis.lean",
+          "line0": 24,
+          "line1": 29
+        },
+        {
+          "name": "UpperTheory.Lit.bessel_separate_of_step_gap",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/BesselSeparate.lean",
+          "line0": 9,
+          "line1": 11
+        },
+        {
+          "name": "UpperTheory.Lit.real_functionals_separate_of_hypothesis",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/RealFunctionalsSeparateOfHypothesis.lean",
+          "line0": 27,
+          "line1": 30
+        },
+        {
+          "name": "UpperTheory.Lit.Bur.separate_of_burGapPos",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/BesselModels/SepGap.lean",
+          "line0": 222,
+          "line1": 256
+        }
+      ]
+    },
+    {
+      "id": "D014",
+      "old_status": "Statement only",
+      "status": "Full",
+      "note": "notes/units/D014_round3.md",
+      "weakest_step": "Verify that the CRT unit is local at d and its Jacobi sign excludes the identity, so the prescribed involution occurs in the inertia image.",
+      "pages_written": 2,
+      "review_status": "pending_review",
+      "lean_ranges": [
+        {
+          "name": "Deduction.CH.HostFactsS",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/SplitInertia.lean",
+          "line0": 14,
+          "line1": 22
+        },
+        {
+          "name": "hostFactsS_pf",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/hostFactsS.lean",
+          "line0": 44,
+          "line1": 57,
+          "visibility": "file-private"
+        },
+        {
+          "name": "inPhi_of_jac",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/hostFactsS.lean",
+          "line0": 7,
+          "line1": 15,
+          "visibility": "file-private"
+        },
+        {
+          "name": "hostFactsS_pf",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/hostFactsS.lean",
+          "line0": 49,
+          "line1": 70,
+          "visibility": "file-private"
+        },
+        {
+          "name": "jac_of_dvd",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/hostFactsS.lean",
+          "line0": 17,
+          "line1": 31,
+          "visibility": "file-private"
+        },
+        {
+          "name": "d_dvd_ordCompl",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/hostFactsS.lean",
+          "line0": 33,
+          "line1": 38,
+          "visibility": "file-private"
+        },
+        {
+          "name": "hostFactsS_pf",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/hostFactsS.lean",
+          "line0": 71,
+          "line1": 82,
+          "visibility": "file-private"
+        },
+        {
+          "name": "toE_iod'",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/hostFactsS.lean",
+          "line0": 40,
+          "line1": 42,
+          "visibility": "file-private"
+        },
+        {
+          "name": "hostFactsS_pf",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/hostFactsS.lean",
+          "line0": 83,
+          "line1": 105,
+          "visibility": "file-private"
+        },
+        {
+          "name": "hostFactsS_pf",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/hostFactsS.lean",
+          "line0": 106,
+          "line1": 125,
+          "visibility": "file-private"
+        },
+        {
+          "name": "UpperTheory.Comparison₂.hostFactsS",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/hostFactsS.lean",
+          "line0": 127,
+          "line1": 136
+        }
+      ]
+    },
+    {
+      "id": "B04",
+      "old_status": "Statement only",
+      "status": "Outlined",
+      "note": "notes/units/B04_round3.md",
+      "weakest_step": "Check that inflation establishes cuspidality and the required Q_p and depth conditions put the representation on the good branch of the cuspidal map.",
+      "pages_written": 2,
+      "review_status": "pending_review",
+      "lean_ranges": [
+        {
+          "name": "UpperTheory.Zero.LLC.artEx",
+          "file": "Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/ArtEx.lean",
+          "line0": 7,
+          "line1": 15
+        },
+        {
+          "name": "UpperTheory.Zero.LLC.recTExists",
+          "file": "Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/RecTExists.lean",
+          "line0": 20,
+          "line1": 26
+        },
+        {
+          "name": "UpperTheory.Zero.LLC.cuspEx",
+          "file": "Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/CuspEx.lean",
+          "line0": 168,
+          "line1": 193
+        },
+        {
+          "name": "UpperTheory.Zero.LLC.cuspEx",
+          "file": "Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/CuspEx.lean",
+          "line0": 258,
+          "line1": 266
+        },
+        {
+          "name": "GlobalTheory.LocLanglands.exists_isLExt",
+          "file": "Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/LanglandsExtensionUniqueOnCuspidal.lean",
+          "line0": 34,
+          "line1": 56
+        },
+        {
+          "name": "UpperTheory.Zero.LLC.recTExists",
+          "file": "Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/RecTExists.lean",
+          "line0": 27,
+          "line1": 57
+        },
+        {
+          "name": "UpperTheory.Zero.LLC.extTw",
+          "file": "Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/RcTwOfSegments.lean",
+          "line0": 36,
+          "line1": 57
+        },
+        {
+          "name": "UpperTheory.Zero.LLC.recTExists",
+          "file": "Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/RecTExists.lean",
+          "line0": 39,
+          "line1": 44
+        },
+        {
+          "name": "UpperTheory.Zero.LLC.extDepth",
+          "file": "Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/ExtDepth.lean",
+          "line0": 11,
+          "line1": 34
+        },
+        {
+          "name": "GlobalTheory.RecT.TypeLaw",
+          "file": "Development/AbelianVarietyTheory/Definitions/NonGaloisDescent/RecTExists.lean",
+          "line0": 34,
+          "line1": 52
+        },
+        {
+          "name": "UpperTheory.Zero.LLC.typeIff",
+          "file": "Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/TypeIff.lean",
+          "line0": 46,
+          "line1": 57
+        },
+        {
+          "name": "UpperTheory.Zero.LLC.recTExists",
+          "file": "Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/RecTExists.lean",
+          "line0": 58,
+          "line1": 66
+        }
+      ]
+    }
+  ]
+}

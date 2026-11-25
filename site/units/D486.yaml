@@ -1,0 +1,90 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D486",
+  "title": "Joined row counts and the irreducibility link",
+  "track": {
+    "primary": "theta",
+    "secondary": [
+      "analytic"
+    ]
+  },
+  "statement": "Assume Green’s finite-group character input and the closed existence of injectively labelled, joined and counted rows with cIc positive. Eventually at every index the row deviations are nonnegative and their delta statistic is at most exp(\\ensuremath{-}x\\textasciicircum{}(ez/7)).\n\\[\n\\delta\\le\\exp(-x^{e_z/7}).\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume Green's character input and $c_{\\rm Ic}>0$.",
+    "Assume closed eventual existence of rows satisfying injective labeling, joining and counting on the same family."
+  ],
+  "lean": [
+    {
+      "name": "GlobalTheory.Top.Irr.closed_linkIRR_of_join_count",
+      "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkIrr.lean",
+      "line0": 22,
+      "line1": 43,
+      "sha256": "a06648c3418207186add4b6a2d5befe7adc1bdc8b2c7e846a95a06cba5d88d08",
+      "dominated": 773,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/D486_round4.md",
+      "section": "D486 · Joined row counts and the irreducibility link",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "G.506 (decomp:D486)",
+      "pages": [
+        283,
+        283
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D486.tex",
+      "section": "decomp:D486",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": 2,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "D486",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "joined-row-counts-and-the-irreducibility-link",
+  "aliases": [
+    "closed_linkIRR_of_join_count",
+    "D486 Joined row counts and the irreducibility link"
+  ],
+  "background": [
+    "Finite general linear groups",
+    "Counting automorphic rows"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.506 (decomp:D486)",
+    "pages": [
+      283,
+      283
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "review_status": "pending_review",
+  "summary": "Joined, injectively labelled and counted rows give the eventual small irreducibility error for every sufficiently large family index. Green's finite-group input supplies admissibility of the label weights used in this deduction."
+}

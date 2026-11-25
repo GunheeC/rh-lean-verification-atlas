@@ -1,0 +1,63 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% RH Notes blueprint source excerpts for N188
+% Verbatim excerpts in the notation of the parent blueprint. The labelled editions and source ranges appear below.
+% See the unit YAML for the current proof status. Earlier-round passages retain their original wording.
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+\noindent\nolinkurl{GlobalTheory.Published.SiegelOneVector.IsSchwartzBruhat} --- hypothesis at this head (\path{Development/AbelianVarietyTheory/PublishedTheorems/GlobalTheta/IsSchwartzBruhatOfProd.lean:22--26}); not compared.\par
+\noindent\nolinkurl{GlobalTheory.T.siegel_weil_measure_of_rank_small_or_zero} --- in-repo constant (\path{CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/SiegelWeilMeasureOfRankSmallOrZeroStatement.lean:7--8}); not compared.\par
+\noindent\nolinkurl{GlobalTheory.T.siegel_weil_hermitian_coefficient} --- in-repo constant (\path{Development/WeilBound/RepresentationTheoryGL/RegularisedSiegelWeil/ThetaIdempotents/ThetaCoefficients/SiegelWeilHermitianCoefficientStatement.lean:9--10}); not compared.\par
+\noindent\nolinkurl{GlobalTheory.T.archimedean_siegel_weil_integral_identity} --- in-repo constant (\path{Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ArchimedeanSiegelWeilIntegralIdentityStatement.lean:15--22}); not compared.\par
+\noindent\nolinkurl{GlobalTheory.T.finite_adelic_siegel_weil_integral_identity} --- in-repo constant (\path{Development/AutomorphicSpectrum/Proofs/BlockDecomposition/FiniteAdelicSiegelWeilIntegralIdentityStatement.lean:15--22}); not compared.\par
+External theorem numbers in the original excerpt are not verified here unless a separate edition-specific source record documents the comparison.
+% End of atlas edition annotation.
+
+\section*{N188. Nonsingular Hermitian Gram coefficient}
+
+% Parent source SHA-256: 44e3b079775c8d7cc0d43b0314bf43a3959be56b2bbafa7f26e5441a1a9163de
+% blueprint/ch_T.tex lines 481 through 523; r5:lit:N188
+\paragraph{The nonsingular coefficient and its normalization (N187--N189).}\label{r5:lit:N188}
+Let $E/F$ be the given CM extension, $V=(E^M,J)$ nondegenerate, and
+$Q(X)$ the Hermitian Gram matrix of $n$ vectors. Write
+$[b,T]=\tfrac12\operatorname{Tr}_{E/F}\operatorname{tr}(bT)$.
+The two functions used in N188 and N189 are
+\[
+ F^*_\Phi(b)=\int\Phi(X)\psi([b,Q(X)])\,dX,\qquad
+ F_\Phi(T)=\int F^*_\Phi(b)\psi(-[b,T])\,db .
+\]
+The source fixes a nontrivial character of $\mathbb A_F/F$ and self-dual
+measures for the indicated trace pairings (\path{IsCharAF}, \path{SdW},
+\path{SdHerm}, \path{SWXSDefs.lean:94--120,160--165,213--214,292--299};
+\path{starN}, \path{coefN}, \path{ThetaPartD.lean:17--27}).
+These are Weil's invariant map and its dual variable for the adjoint
+involution on $\operatorname{End}_E(V)$ acting on $V^n$. The involution
+has type $\mathrm I_2$ and $\epsilon=1/2$, so his condition
+$M>2n+4\epsilon-2$ is exactly $M>2n$. On Hermitian matrices
+$\operatorname{tr}(bT)\in\mathbb A_F$, which explains the half-trace in the
+coordinate formula. Rational changes of bases or a rational scalar in
+the rational pairing change the product of local measure factors by
+one, by the product formula. The global self-dual measure has rational
+quotient volume one (Weil, \S3). The Schwartz functions in his \S41
+include the source's finite sums of archimedean Schwartz functions times
+locally constant, compactly supported finite parts
+(\path{IsSchwartzBruhatOfProd.lean:18--27}).
+
+Weil proves $F^*_\Phi\in L^1$ and identifies $F_\Phi(T)$ with integration
+against a measure on the Gram fibre. His individual-fibre identity for
+invariant quotient probability then identifies it with the average of
+$\sum_{Q(x)=T}\Phi(h^{-1}x)$ over $U(V)(F)\backslash U(V)(\mathbb A_F)$.
+When $\det T\ne0$ every tuple in this sum has full rank. The inverse
+changes Weil's right quotient to the left quotient in the source, and
+the factor $\mu(\mathcal F)^{-1}$ normalizes its Haar fundamental domain
+to probability (\path{thetaMeas}, \path{IsEulerProd.lean:84--87}).
+For $n=0$ both integrations reduce to evaluation at the unique tuple.
+This gives N189 and N188, respectively, with N187 an alias of N188
+(\path{integrable_starN}, \path{SiegelWeilConvergentRange.lean:20--82};
+\path{coefN_eq_theta}, \path{SiegelWeilHermitianFormula.lean:303--336};
+\path{siegel_weil_hermitian_formula}, \path{SiegelWeilHermitianFormulaStatement.lean:12--22}).
+See \cite[\S\S3,41,52, Theorem~5]{T-Weil1965}. Yamana's coefficient
+version also has constant one since the Witt index $r$ is at most $M/2$, so
+$M-r>n$. His archimedean test space in this statement consists of
+Fock polynomials \cite[pp.~236--237, Lemma~3.1]{T-Yamana2013}.
+

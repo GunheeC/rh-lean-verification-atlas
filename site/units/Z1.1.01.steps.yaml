@@ -1,0 +1,99 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "Z1.1.01",
+  "edition_sha256": "1e588440301fc9505b47572082ebaa3a96e63a408334313aaa6aa6e49e41a9d0",
+  "note_sha256": "955c677e8c7abccf47acc3a241ff9f5a1547530428f0c775c55e1848c27924a4",
+  "statement_sha256": "15cf89e13c4e3c3cd400802726c55f69e78a075050e99a70b64d5ca307afa643",
+  "sources": [
+    {
+      "path": "notes/blueprint/Z1.1.01.tex",
+      "sha256": "955c677e8c7abccf47acc3a241ff9f5a1547530428f0c775c55e1848c27924a4"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Conjugation by a two-dimensional Frobenius with eigenvalues a and b has eigenvalues a/b, 1 and b/a on trace-zero endomorphisms.",
+      "kind": "computation",
+      "uses": [
+        "standard: triangularization"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Z.Sym.Unl.adUnl",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/UnlinkedHalfIntegral/UnlinkedHeckeRoots/SplitTwo.lean",
+          "line0": 40,
+          "line1": 73
+        }
+      ],
+      "source": "notes/blueprint/Z1.1.01.tex",
+      "anchor": "\\(A=|\\iota(a)|\\), \\(B=|\\iota(b)|\\), \\(t=A/B\\). Triangularizing the",
+      "source_lines": [
+        7,
+        30
+      ],
+      "claim_sha256": "6d1fa156fabaf11f58d21b5e9cf892e991fa75999326234f66d152aefaab9e85",
+      "passage_sha256": "8fcf904b75599a1d68b0724b0ae99476f1ae23c330af4c7da7bf7be46748d938",
+      "sha256": "5d1f0e8073f7afd1bcdaf7cbc3ccab83d9fff28ebc9785f18b3fd2f8fc418915",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The strict ratio bound and the two excluded squared ratios rule out norm ratio q among the adjoint eigenvalues.",
+      "kind": "inequality",
+      "uses": [
+        "S1",
+        "input: RW and NoHalf"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Z.Sym.Unl.adUnl",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/SymmetricPowerTransfer/UnlinkedHalfIntegral/UnlinkedHeckeRoots/SplitTwo.lean",
+          "line0": 40,
+          "line1": 73
+        }
+      ],
+      "source": "notes/blueprint/Z1.1.01.tex",
+      "anchor": "are \\(1,t,t^{-1},t^2,t^{-2}\\). RW gives \\(q^{-1}<t<q\\), and NoHalf",
+      "source_lines": [
+        7,
+        30
+      ],
+      "claim_sha256": "3e48529172764b272c2ec8f6f881a5ca268e10be9ee56f2dc38f602c09ebf58c",
+      "passage_sha256": "8fcf904b75599a1d68b0724b0ae99476f1ae23c330af4c7da7bf7be46748d938",
+      "sha256": "96549ee32dd74a09563eb2e2832fd98a8ffcbe41e5bdd71d281ac7d5825cd99d",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The unlinkedness calculation applies to the Eisenstein seed only after the two bounds have been supplied on that same seed.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S2",
+        "input: uniform seed with both bounds"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Z.Sym.W.prop_eg_w_of_printed_hida",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TPropEGW.lean",
+          "line0": 9,
+          "line1": 14
+        }
+      ],
+      "source": "notes/blueprint/Z1.1.01.tex",
+      "anchor": "S14 supplies the root-of-unity interpretation used to form the finite",
+      "source_lines": [
+        7,
+        30
+      ],
+      "claim_sha256": "081b12008f4aeadcc34d01e4fd3d1d6009696821cc717efeb0faeeb2589383f5",
+      "passage_sha256": "8fcf904b75599a1d68b0724b0ae99476f1ae23c330af4c7da7bf7be46748d938",
+      "sha256": "d76df5016c12db6bc213d79083b6b2f40a39282927cff5a4bdcb4ce82dff9dc0",
+      "ai_review": []
+    }
+  ],
+  "history": []
+}

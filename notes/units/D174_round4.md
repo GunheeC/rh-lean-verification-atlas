@@ -1,0 +1,25 @@
+# D174 · Comparing two characteristic polynomials through the same endomorphism
+
+AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+
+**First-pass outline of the head proof term** · 12,706 dominated core lines (index size).
+
+this note describes what the top-level term calls; it does not explain the dependency cone beneath it
+
+**pending_review** · [Unit card](../../units/D174.md) · [Track guide](../../tracks/local/README.md)
+
+An endomorphism of an abelian scheme over an algebraically closed field is compared with an integral endomorphism on a finite free lattice modelling all its prime-power torsion. The de Rham characteristic polynomial is obtained by mapping the lattice polynomial into the base field. `GlobalTheory.T.charpoly_deRhamHomology_endomorphism_eq_map_ladic` ([CharpolyDeRhamHomologyEndomorphismEqMapLadicStatement.lean:8–18](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CharpolyDeRhamHomologyEndomorphismEqMapLadicStatement.lean#L8-L18)).
+
+## List the arithmetic in the evaluation hypothesis
+
+Fix the algebraically closed field $k$, the commutative group object $A$ which is an abelian scheme, its group endomorphism $f$, and a finite free integral module $L$ with endomorphism $\varphi$. Choose a prime $\ell$ nonzero in $k$. At every level $j$ the evaluation map is additive for the group law and intertwines $\varphi$ with $f$. Its kernel is exactly $\ell^j L$, and its image consists exactly of points killed by $\ell^j$. Thus the data concern a whole system of finite-level tests. Agreement of the endomorphisms after forgetting the evaluations is insufficient for this theorem. `GlobalTheory.T.charpoly_deRhamHomology_endomorphism_eq_map_ladic` ([CharpolyDeRhamHomologyEndomorphismEqMapLadicStatement.lean:8–18](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CharpolyDeRhamHomologyEndomorphismEqMapLadicStatement.lean#L8-L18)).
+
+## Produce a common geometric characteristic polynomial
+
+The source equips the given abelian scheme with the relative dimension witness obtained from its smoothness statement. This packages it as the particular abelian variety $B$ expected by the two comparison theorems. Its endomorphism $f'$ is formed from the given morphism. The torsion evaluation theorem accepts the additive, equivariant, kernel and image conditions on that same $B$ and identifies the characteristic polynomial of $\varphi$ with the geometric polynomial of $f'$. At this point the equality is still a statement over the integers. No choice of basis for the de Rham space has been made. `GlobalTheory.DeRham.charpoly_push_eq` ([CharpolyDeRhamHomologyEndomorphismEqMapLadic.lean:29–44](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CharpolyDeRhamHomologyEndomorphismEqMapLadic.lean#L29-L44)). `GlobalTheory.T.l_power_torsion_endomorphism_evaluation` ([LPowerTorsionEndomorphismEvaluation.lean:10–19](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LPowerTorsionEndomorphismEvaluation.lean#L10-L19)).
+
+## Compare the de Rham polynomial in the base field
+
+With finite-dimensional de Rham homology, the second comparison puts the characteristic polynomial of the pushforward of $f'$ equal to the integer polynomial mapped by $\mathbb Z\to k$. Its proof splits into positive characteristic and characteristic zero before invoking the corresponding comparison theorem. Substitute the torsion evaluation equality into this result to get the asserted polynomial identity. Equality here takes place after the coefficient map, which can lose information in positive characteristic. The transfer across realizations is the nonformal input; packaging $A$ and rewriting the two polynomials is the final bookkeeping. For the separate problem of extending an isogeny over an integral model see [D193](../../units/D193.md). `GlobalTheory.DeRham.charpoly_push_eq_map_charpoly` ([CharpolyDeRhamHomologyEndomorphismEqMapLadic.lean:18–27](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CharpolyDeRhamHomologyEndomorphismEqMapLadic.lean#L18-L27)). `GlobalTheory.DeRham.charpoly_push_eq` ([CharpolyDeRhamHomologyEndomorphismEqMapLadic.lean:29–44](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CharpolyDeRhamHomologyEndomorphismEqMapLadic.lean#L29-L44)).
+
+**First step to challenge.** Check the kernel and image of each level of the evaluation map. The same endomorphism must act on these identified torsion groups for the integral comparison to apply.

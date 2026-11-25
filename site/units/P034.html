@@ -1,0 +1,38 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>P034 · Odd homology after successive block operations · RH verification atlas</title><link rel="stylesheet" href="../atlas.css"><script>window.MathJax={tex:{inlineMath:[["$","$"]],displayMath:[["$$","$$"]],processEscapes:true},options:{ignoreHtmlClass:"no-math"}};</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script></head><body><header><div class="bar"><a class="brand" href="../index.html">RH verification atlas</a><nav aria-label="Atlas navigation"><a href="../index.html">Home</a> <a href="../STATUS.html">Status</a> <a href="../MAP.html">Map</a> <a href="../dashboard/index.html">Tracks</a> <a href="../lookup/search.html">Search declarations</a></nav></div></header><main><h1 id="p034--odd-homology-after-successive-block-operations">P034 · Odd homology after successive block operations</h1>
+<p class="notice">AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved</p>
+<p>In the stable range for a totally complex field, iterating the specified difference of block repetition and stabilization leaves an integral span of rank at most the number of complex places. This bounds how many independent odd-homology classes can survive the operations.</p>
+<p><code>odd-homology-after-successive-block-operations</code> · <a href="../tracks/ktheory/index.html">Algebraic K-theory and cohomology of arithmetic groups</a></p>
+<p><strong>Outlined</strong> · <strong>L1</strong> Statement matched to Lean · Record generated 2026-11-25 (no human check).</p>
+<div class="scroll"><table>
+<thead><tr><th>1 · Lean pinned</th><th>2 · Statement compared</th><th>3 · Prose</th><th>4 · Steps</th><th>5 · AI review</th><th>6 · Human</th></tr></thead>
+<tbody><tr><td>✓</td><td>✓</td><td>Outlined</td><td>3</td><td>–</td><td>0 of 3 steps</td></tr>
+</tbody></table></div>
+<p><a href="P034.check.html">Numbered proof and check records</a> · <a href="../PROGRESS.html">Progress and counting rules</a></p>
+<h2 id="statement">Statement</h2>
+<p>Let <span class="math">$L$</span> be totally complex, <span class="math">$k\ge0$</span> even, <span class="math">$q=k+1&lt;r_2(L)$</span>, and <span class="math">$n\ge2q+4$</span>. Fix any integer <span class="math">$t&gt;0$</span>. Starting with <span class="math">$z_0(x)=x$</span> in <span class="math">$H_q(G_n,\mathbb Z)$</span>, define</p>
+<div class="math display">$$z_{j+1}(x)=(\operatorname{diag}_t)_*z_j(x) -t^{j+2}\operatorname{stab}_*z_j(x),$$</div>
+<p>where block repetition and stabilization both land in rank <span class="math">$t^{j+1}n$</span>. The integral span of all <span class="math">$z_k(x)$</span> has rank at most <span class="math">$r_2(L)$</span>.</p>
+<h2 id="assumptions">Assumptions</h2>
+<ul><li>Take a totally complex field, even <span class="math">$k\ge0$</span>, <span class="math">$q=k+1&lt;r_2(L)$</span> and <span class="math">$n\ge2q+4$</span>.</li><li>Fix a positive integer <span class="math">$t$</span> for the diagonal block and stabilization operations.</li></ul>
+<p>Sources for the assumptions · <a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a></p>
+<h2 id="where-to-read">Where to read</h2>
+<p>Blueprint v13 and papers v3–v5 are this atlas project’s own AI-written, unpublished drafts. They have no human review and were not written by the author of the Lean development. Blueprint v13, its separate cover, and paper v5 are distributed as assets of release v0.1.0. For v3 and v4 the atlas supplies selected excerpts and notes. <a href="../data/editions.json">Edition register</a></p>
+<ul><li><a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a>, 7.11, p. 79. Statement starts on the cited page.</li><li><a href="../notes/units/P034.tex">Manuscript source excerpt</a> · section <code>pn:P034</code></li></ul>
+<h2 id="evidence">Evidence</h2>
+<ul><li><a href="../reviews/R5_review_A.html">R5 review A</a>, original lines 10–12 — No statement mismatch reported. Statement comparison; the proof has qualifications.</li></ul>
+<p>Review records · <a href="../reviews/R5_review_A.html">R5 review A</a></p>
+<h2 id="lean-declarations">Lean declarations</h2>
+<ul><li><code>PositivityTheory.KB.bOdd_zk</code>  <br><a href="https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/TorsionIntegers/Bridge.lean#L34-L35"><code>Bridge.lean</code></a>, lines 34–35 · 23,135 dominated lines · SHA-256 <code>e774804fcff5</code>.</li></ul>
+<p><a href="P034.yaml">Machine record and full declaration hashes</a> · <a href="../lookup/declarations.html">Declaration lookup</a></p>
+<h2 id="reading-prerequisites">Reading prerequisites</h2>
+<p>Background · Homological stability · Block embeddings of general linear groups.</p>
+<p>BOdd concerns the rank of the span after repeated difference of block and stabilization maps. P035 uses the same ambient homology but treats torsion orders in stable rank. Neither that later torsion comparison nor the residue evaluator of Z2.K2 supplies the block-operation rank estimate. <a href="../data/round3_prerequisites.json">Statement evidence</a></p>
+<h2 id="open-questions">Open questions</h2>
+<ul><li>Where does the restriction on the number of complex places enter? Distinguish the rank conclusion checked against Borel from the extra range condition.</li></ul>
+<h2 id="graph-connections">Graph connections</h2>
+<p>Arrows may connect either a unit’s main declaration or an indexed member.</p>
+<p><strong>Uses</strong> · No recorded edge.</p>
+<p><strong>Used by</strong> · <a href="P013.html">P013</a> · <a href="W05.html">W05</a></p>
+<p><a href="../data/unit_graph.json">Declaration witnesses and graph scope</a></p>
+<p>Lookup aliases · <code>P034 Odd homology after successive block operations</code></p>
+<p>&lt;!-- Unit metadata SHA-256 b03f44fefde609258c392026162a59489a0857a85b06b51809d8729591bca836 --&gt;</p></main><footer><a href="../help.html">Using the local edition</a></footer></body></html>

@@ -1,0 +1,95 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "T17",
+  "title": "Arithmetic intersection bounded by small-section volume",
+  "track": {
+    "primary": "arakelov",
+    "secondary": []
+  },
+  "statement": "Take finite blocks of homogeneous coordinates $y$ in a field $\\Omega$,\ntheir vanishing ideal $P$, a birational presentation of arithmetic dimension\n$D+1$, and an intersection system $I$ satisfying its defining axioms.\nLet $A$ be a conjugation-invariant Hermitian line, semipositive relative\nto some $P_0\\subseteq P$, nef on the fibres in its multidegree and nef on\nthe generic fibre in the specified sense. Then\n\\[\n I_P(A^{D+1})\\le\n \\mathrm{arVolP}\\bigl(\\text{small sections for }P,y,A,\\,\n       \\mathrm{chartLat}(y,\\deg A),1,D\\bigr).\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Take a finite multihomogeneous birational presentation of arithmetic dimension $D+1$ and an intersection system satisfying its axioms.",
+    "The Hermitian line is conjugation invariant, relatively semipositive, fibre-nef in its multidegree and nef on the generic fibre."
+  ],
+  "lean": [
+    {
+      "name": "PositivityTheory.Pf1.HilbertSamuelMoriwaki.moriwakiBig_outright",
+      "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/MoriwakiBigness/MoriwakiBigTheorem/Outright.lean",
+      "line0": 9,
+      "line1": 11,
+      "sha256": "646095c5286191a20a9b8c25f48c653139adaacafbadcd3480bd61dbf9ceebfa",
+      "dominated": 13,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/T17_round3.md",
+      "section": "T17 · Why the small-section volume bounds the top intersection",
+      "pages": [
+        1,
+        3
+      ],
+      "coverage": "Round-3 written exposition, pending independent review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "5.27 (sub:T17)",
+      "pages": [
+        45,
+        45
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/T17.tex",
+      "section": "sub:T17",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [
+    "reviews/DB3_review_B.md"
+  ],
+  "prerequisites": [
+    "T21"
+  ],
+  "size_pages": 3,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "T17",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "arithmetic-intersection-bounded-by-small-section-volume",
+  "aliases": [
+    "moriwakiBig_outright",
+    "T17 Arithmetic intersection bounded by small-section volume"
+  ],
+  "background": [
+    "Arithmetic intersection theory",
+    "Nef Hermitian line bundles",
+    "Arithmetic volume"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "5.27 (sub:T17)",
+    "pages": [
+      45,
+      45
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "T21": "statement-reading"
+  },
+  "review_status": "pending_review",
+  "summary": "For a Hermitian line satisfying the semipositivity and nefness hypotheses on the given arithmetic presentation, its top intersection is bounded by the volume of small sections in the specified chart lattice. This lets a count of small sections control an intersection number."
+}

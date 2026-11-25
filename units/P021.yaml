@@ -1,0 +1,134 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "P021",
+  "title": "A pointwise upper bound from weighted lattice slopes",
+  "track": {
+    "primary": "arakelov",
+    "secondary": []
+  },
+  "statement": "For any data, constants and real $X_{pp}$ as above, assume the eleven hypotheses of Definition \\ref{def:L-hyps}. Then for every $u_0\\in U_0$\n\\[\n  ASK(u_0)\\le\\mathrm{Main}(u_0)+\\mathrm{Err}(u_0),\n\\]\nwhere, with\n$M_{Lo}=c_{Sl1}Lo_P+c_{Sl1}n_Tm(a/k+b')\\,c_{Count}mL+c_{Sl1}X_{pp}+1$,\n$V=2mc_EB_0+c_H(n_TaLa+mB_0)+A\\,c_{Count}\\log k$ and\n$\\bar U=c_{Slope}n_TaLa(2+m/k)+V+c_{Sl1}mB_0+M_{Lo}$,\n\\[\n\\begin{aligned}\n \\mathrm{Err}(u_0)={}&A\\,c_{Count}\\Bigl(La+\\frac{m^2La}{k}\\Bigr)+E_{Div}+m\\,c_EB_0\\\\\n &+c_{Slope}n_TaLa\\Bigl(1+\\frac mk\\Bigr)+\\log|W(u_0)|+Lo_P+M_{Lo}\\\\\n &+\\frac1{1-\\bar\\delta}\\Bigl(4\\log(1+x^{c_{HH}})\\,(\\bar U+b)+(\\bar\\eta+4\\sqrt{\\bar e})\\,x^{c_{HH}}b\\Bigr).\n\\end{aligned}\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Fix the finite unit and word-fibre data, constants and $X_{pp}$.",
+    "Assume the Hida setting, division bound, $E$ and $H$ comparisons, counting, slopes and quotient-slope bounds of the cited lattice definition.",
+    "Use LossBounds, SlopeIneq, HHBound and FParams on the same data (Definition 6.38, p. 69)."
+  ],
+  "lean": [
+    {
+      "name": "Formalism.LFunctionChainParameters.WeightedSlopeBounds.each_unit_bound_statement",
+      "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LevelOfCongruence.lean",
+      "line0": 175,
+      "line1": 197,
+      "sha256": "efab74dec4a4927817a21e5bf9d65a49006c760fb4191db5373926aeed2c5d78",
+      "dominated": 301,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "6.40 (pn:P021)",
+      "pages": [
+        70,
+        70
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/P021.tex",
+      "section": "pn:P021",
+      "pages": []
+    },
+    {
+      "document": "paper2_v3",
+      "section": "The chain in detail: LinkN_at",
+      "pages": [
+        13,
+        16
+      ],
+      "coverage": "Shared subsection for this station, including subordinate inputs."
+    },
+    {
+      "document": "notes/units/P021-argument.tex",
+      "section": "r23:link",
+      "pages": []
+    }
+  ],
+  "status": "Full",
+  "grade": "L2",
+  "reviews": [
+    "reviews/R20_review.md",
+    "reviews/R23_review.md"
+  ],
+  "prerequisites": [
+    "D568",
+    "D570"
+  ],
+  "size_pages": 4,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [
+    {
+      "grade": "L2",
+      "review": "reviews/R20_review.md",
+      "lines": [
+        53,
+        53
+      ],
+      "scope": "R20 local implication under its stated premises, not its prerequisite cones.",
+      "verdict": "F: full derivation; yes"
+    },
+    {
+      "grade": "L2",
+      "review": "reviews/R23_review.md",
+      "lines": [
+        120,
+        136
+      ],
+      "scope": "Only the per-unit ASK inequality from all eleven hypotheses.",
+      "verdict": "CORRECT AND COMPLETE under displayed hypotheses"
+    },
+    {
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "lines": [
+        108,
+        108
+      ],
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript.",
+      "verdict": "Exact statement comparison"
+    }
+  ],
+  "paper_id": "P021",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "pointwise-lattice-slope-bound",
+  "aliases": [
+    "A pointwise upper bound from weighted slopes",
+    "each_unit_bound_statement",
+    "P021 A pointwise upper bound from weighted lattice slopes"
+  ],
+  "background": [
+    "Hermitian lattices",
+    "Slopes and weighted means"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "6.40 (pn:P021)",
+    "pages": [
+      70,
+      70
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "D568": "graph",
+    "D570": "graph"
+  },
+  "summary": "Eleven lattice hypotheses give an upper bound, at each unit, by a main term and an explicit error involving counting, division and slopes. Keeping those terms visible lets the arithmetic comparison determine whether their combined size fits the desired prime-sum bound."
+}

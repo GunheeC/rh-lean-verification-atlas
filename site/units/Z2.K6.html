@@ -1,0 +1,37 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Z2.K6 · Uniform layer count and the global kernel · RH verification atlas</title><link rel="stylesheet" href="../atlas.css"><script>window.MathJax={tex:{inlineMath:[["$","$"]],displayMath:[["$$","$$"]],processEscapes:true},options:{ignoreHtmlClass:"no-math"}};</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script></head><body><header><div class="bar"><a class="brand" href="../index.html">RH verification atlas</a><nav aria-label="Atlas navigation"><a href="../index.html">Home</a> <a href="../STATUS.html">Status</a> <a href="../MAP.html">Map</a> <a href="../dashboard/index.html">Tracks</a> <a href="../lookup/search.html">Search declarations</a></nav></div></header><main><h1 id="z2k6--uniform-layer-count-and-the-global-kernel">Z2.K6 · Uniform layer count and the global kernel</h1>
+<p class="notice">AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved</p>
+<p>If the equivariant character groups in all allowed layers have order at most one common bound, the base localization-kernel invariant is finite and the corresponding prime power is at most that bound. This passes from counts in the tower to a length at its base.</p>
+<p><code>uniform-layer-count-and-the-global-kernel</code> · <a href="../tracks/galois/index.html">Galois representations, automorphy lifting, Iwasawa theory and Euler systems</a> · <a href="../tracks/ktheory/index.html">Algebraic K-theory and cohomology of arithmetic groups</a></p>
+<p><strong>Full</strong> · <strong>L0</strong> Declaration pinned; no review of this unit · Record generated 2026-11-25 (no human check).</p>
+<div class="scroll"><table>
+<thead><tr><th>1 · Lean pinned</th><th>2 · Statement compared</th><th>3 · Prose</th><th>4 · Steps</th><th>5 · AI review</th><th>6 · Human</th></tr></thead>
+<tbody><tr><td>✓</td><td>–</td><td>Full</td><td>5</td><td>–</td><td>0 of 5 steps</td></tr>
+</tbody></table></div>
+<p><a href="Z2.K6.check.html">Numbered proof and check records</a> · <a href="../PROGRESS.html">Progress and counting rules</a></p>
+<h2 id="statement">Statement</h2>
+<p>Let <span class="math">$L$</span> be totally complex with maximal <span class="math">$\ell$</span>-power root exponent <span class="math">$c$</span> satisfying TopRoot, and <span class="math">$E\ge1$</span>. If the specified equivariant character groups are finite of order at most <span class="math">$B$</span> for every allowed layer, there is a finite integer <span class="math">$s=\mathrm{shaInv}(L,\ell,E)$</span> with <span class="math">$\ell^s\le B$</span>.</p>
+<h2 id="assumptions">Assumptions</h2>
+<ul><li>Use totally complex <span class="math">$L$</span>, <span class="math">$E\ge1$</span> and TopRoot at the maximal root exponent.</li><li>On every allowed layer the designated equivariant character group is finite with the same order bound <span class="math">$B$</span>.</li></ul>
+<p>Sources for the assumptions · <a href="../data/editions.json">RH verification blueprint, release v13</a></p>
+<h2 id="where-to-read">Where to read</h2>
+<p>Blueprint v13 and papers v3–v5 are this atlas project’s own AI-written, unpublished drafts. They have no human review and were not written by the author of the Lean development. Blueprint v13, its separate cover, and paper v5 are distributed as assets of release v0.1.0. For v3 and v4 the atlas supplies selected excerpts and notes. <a href="../data/editions.json">Edition register</a></p>
+<ul><li><a href="../notes/blueprint/Z2.K6.tex">Blueprint source excerpt</a> · section <code>lem:P-r3-k6</code></li><li><a href="../data/editions.json">RH verification blueprint, release v13</a>, section label <code>lem:P-r3-k6</code>, PDF p. 184 (printed p. 159)</li></ul>
+<h2 id="evidence">Evidence</h2>
+<p>The pinned declaration is recorded in the formal source. No higher-level verdict is assigned to this unit.</p>
+<p>Review records · <a href="../reviews/R20_review.html">R20 review</a></p>
+<h2 id="lean-declarations">Lean declarations</h2>
+<ul><li><code>PositivityTheory.QuaternionShaBounds.sSha</code>  <br><a href="https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/RingEquivalences/OrderOfOneAddPrimePowZmodPrimePow.lean#L490-L490"><code>OrderOfOneAddPrimePowZmodPrimePow.lean</code></a>, lines 490 · 622 dominated lines · SHA-256 <code>91adde882fb7</code>.</li></ul>
+<p><a href="Z2.K6.yaml">Machine record and full declaration hashes</a> · <a href="../lookup/declarations.html">Declaration lookup</a></p>
+<h2 id="reading-prerequisites">Reading prerequisites</h2>
+<p>Background · Cyclotomic extensions · Galois localization.</p>
+<ul><li><a href="Z2.K1.html">Z2.K1 · Cyclotomic tower and localization kernel</a> · statement-reading</li><li><a href="Z2.K5.html">Z2.K5 · Equivariant character count</a> · statement-reading</li></ul>
+<p><a href="../data/round3_prerequisites.json">Evidence and definitions of reading links</a></p>
+<h2 id="open-questions">Open questions</h2>
+<p>None recorded.</p>
+<h2 id="graph-connections">Graph connections</h2>
+<p>Arrows may connect either a unit’s main declaration or an indexed member.</p>
+<p><strong>Uses</strong> · No recorded edge.</p>
+<p><strong>Used by</strong> · <a href="P013.html">P013</a> · <a href="W05.html">W05</a></p>
+<p><a href="../data/unit_graph.json">Declaration witnesses and graph scope</a></p>
+<p>Lookup aliases · <code>Z2.K6 Uniform layer count and the global kernel</code></p>
+<p>&lt;!-- Unit metadata SHA-256 d151a49be95aa869a3735544c17d91266b3949144eb7c84105e4362d306ec887 --&gt;</p></main><footer><a href="../help.html">Using the local edition</a></footer></body></html>

@@ -1,0 +1,79 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D551",
+  "title": "Annihilation of the minus kernel",
+  "track": {
+    "primary": "galois",
+    "secondary": [
+      "local"
+    ]
+  },
+  "statement": "For each eligible CM subfield, procyclic local data and positive twist e, a power of the prime kills the minus kernel. Its exponent times log of the prime is bounded by C times the field degree, (e+1) and log(e times the prime times the conductor parameter).\n\\[\n\\ell^r\\Sha^{-}(D,e)=0,\\qquad r\\log\\ell\\le C[E:\\mathbb Q](e+1)\\log(e\\ell N).\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "The CM field embeds into the indicated cyclotomic field of positive conductor $N$.",
+    "Use procyclic local data at the chosen prime and an integral twist $e\\ge1$."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.Odd.killPow",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/OddResidueBounds/KillPow.lean",
+      "line0": 31,
+      "line1": 104,
+      "sha256": "9da889a661cea7aab567e0826100b4d54768388248fe72f99e9034cef9ce80c0",
+      "dominated": 1353,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "G.582 (decomp:D551)",
+      "pages": [
+        302,
+        302
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D551.tex",
+      "section": "decomp:D551",
+      "pages": []
+    }
+  ],
+  "status": "Statement only",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [],
+  "paper_id": "D551",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "annihilation-of-the-minus-kernel",
+  "aliases": [
+    "killPow",
+    "D551 Annihilation of the minus kernel"
+  ],
+  "background": [
+    "Class field theory",
+    "Cyclotomic twists of Selmer groups"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.582 (decomp:D551)",
+    "pages": [
+      302,
+      302
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {}
+}

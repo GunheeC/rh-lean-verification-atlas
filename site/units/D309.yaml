@@ -1,0 +1,87 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D309",
+  "title": "The Hodge–Tate sequence from the Fargues exact sequence",
+  "track": {
+    "primary": "local",
+    "secondary": []
+  },
+  "statement": "The Fargues exactness input gives the specified annihilator bound on the Hodge–Tate cokernel and identifies the Hodge–Tate kernel by orthogonality to the kernel of the dual logarithmic differential.\n\\[\n\\mathrm{FarguesExact}\\ \\Longrightarrow\\ \\mathrm{FarguesHodgeTate}.\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume the Fargues exactness assertion in the period-ring and coefficient setting of the declaration."
+  ],
+  "lean": [
+    {
+      "name": "GlobalTheory.CompanionTheory.Relay.hodge_tate_of_fargues_exact",
+      "file": "Development/AutomorphicSpectrum/Proofs/AlgebraProofs/HodgeTateOfFarguesExact.lean",
+      "line0": 36,
+      "line1": 37,
+      "sha256": "0e4d0991d467dab7761af1b3fb4cf0cacd118d5d6eea9fb6a23dc75470142a77",
+      "dominated": 517,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/D309_round4.md",
+      "section": "D309 · Two distinct inputs to the Hodge–Tate package",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "G.320 (decomp:D309)",
+      "pages": [
+        237,
+        237
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D309.tex",
+      "section": "decomp:D309",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": 2,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "D309",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "the-hodgetate-sequence-from-the-fargues-exact-sequence",
+  "aliases": [
+    "hodge_tate_of_fargues_exact",
+    "D309 The Hodge–Tate sequence from the Fargues exact sequence"
+  ],
+  "background": [
+    "Tate modules of p-divisible groups",
+    "The Hodge–Tate sequence"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.320 (decomp:D309)",
+    "pages": [
+      237,
+      237
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "review_status": "pending_review",
+  "summary": "The kernel criterion supplied by Fargues exactness gives one half of a Hodge–Tate package. The other half bounds the cokernel over the valuation ring and needs its own theorem, with a special inequality at two."
+}

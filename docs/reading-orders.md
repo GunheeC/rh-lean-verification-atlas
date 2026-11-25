@@ -1,0 +1,40 @@
+# Reading orders
+
+AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+
+Blueprint v13 and papers v3, v4 and v5 are this project’s AI-written, unpublished drafts. None has had human review. Their author is not the author of the Lean development. Blueprint v13, its separate cover, and paper v5 are distributed as assets of release v0.1.0. For v3 and v4 the atlas supplies selected excerpts and notes. [Edition register](../data/editions.json)
+
+Choose an afternoon for the analytic idea, a week for one field, or the last itinerary to follow the conditional theorem from its local estimates to its five conclusions. Counts refer to pages assigned. Starter packets contain the numbered pages of blueprint v13. Standalone notes use the recorded A4 layout. Manuscript assignments identify the edition. A unit's grade and its written coverage are recorded on its card. [Edition register](../data/editions.json) · [A4 layout](../data/round4_changes.json) · [Corrections to the earlier editions](../data/round4_review_corrections.json)
+
+## One afternoon · 10 pages
+
+1. Read the [mathematical overview](../OVERVIEW.md), **2 pages**. Write down what the Selmer window supplies, what the definite-side witness supplies, and why they must be used on a common family.
+2. Read the [analytic starter for P022](../notes/analytic/README.md), **8 pages**, blueprint v13 printed pp. 7–14. Start with the pole data. Follow the sign at a real pole and the radius estimate through the contradiction. At the end, state which one-sided estimate has to hold on an entire interval and which zero-free conclusion follows under that hypothesis. [P022 card](../units/P022.md)
+
+## One week in my field
+
+Each row is a five-session course. Start with the packet in the first column, even if a later day enters a different field. The page numbers in parentheses are the number of pages to read that day. For the K-theory assignments beyond the packet, the links give the corresponding blueprint excerpts and the table names the printed pages.
+
+| Field and first day | Second day | Third day | Fourth day | Fifth day | Total |
+|---|---|---|---|---|---:|
+| **Analytic number theory** · [P022 window packet](../notes/analytic/README.md) (8) | [B10, get the gap from a lattice bound](../notes/units/B10_v4.md) (2) | [B09, average over the finite subgroup](../notes/units/B09_v4.md) (4) | [B08, pass to the level at one scale](../notes/units/B08_v4.md) (2) | [P017, put the threshold on one family](../notes/units/P017_v4.md) (2) | **18** |
+| **Arakelov geometry and geometry of numbers** · [P049 Gram determinant packet](../notes/arakelov/README.md) (6) | [T17, bound intersection by small-section volume](../notes/units/T17_round3.md) (3) | [T15, trace the covolume input](../notes/units/T15_round3.md) (3) | [P021, read the weighted-slope argument](../notes/units/P021-argument.tex), v3 pp. 13–16 (4) | [B10, carry that bound into the gap](../notes/units/B10_v4.md) (2) | **18** |
+| **Theta correspondence and automorphic representations of unitary groups** · [Z4.4 period-lattice packet](../notes/theta/README.md) (6) | [T12, fix the normalization of the doubled value](../notes/units/T12_round3.md) (3) | [T11, compare matching integrals](../notes/units/T11_round3.md) (3) | [T09, test separation on a grid](../notes/units/T09_round3.md) (4) | [T02, locate the common witness](../units/T02.md), v3 pp. 22–23, top-level exposition (2) | **18** |
+| **Galois representations, automorphy lifting, Iwasawa theory and Euler systems** · [P020 Selmer-length packet](../notes/galois/README.md) (6) | [W11, keep the class-rank bound fixed along the tower](../notes/units/W11_round3.md) (2) | [W08, bound Case I collectively](../notes/units/W08_round3.md) (3) | [W09, bound Cases II and III individually](../notes/units/W09_round3.md) (3) | [W13, assemble the common window](../notes/units/W13_round3.md) (3) | **17** |
+| **Local p-adic theory** · [P045 local-defect packet](../notes/local/README.md) (7) | [B04, identify which local types have the stronger parameter laws](../notes/units/B04_round3.md) (3) | [D014, compute host inertia](../notes/units/D014_round3.md) (2) | [D014, follow the two distinguished frame coordinates](../notes/units/D014_v4.md) (2) | [D547, compare the character prime sums at ramified primes](../notes/units/D547_v4.md) (2) | **16** |
+| **Algebraic K-theory and cohomology of arithmetic groups** · [P036 divisor-character packet](../notes/ktheory/README.md) (7) | [Z2.K2, evaluate the integral cycle](../notes/blueprint/Z2.K2.tex), v13 pp. 162–167 (6) | [Z2.K1, choose one generator for every layer](../notes/blueprint/Z2.K1.tex), pp. 157–158 (2) | [Z2.K6, pass to the base kernel](../notes/blueprint/Z2.K6.tex) and [Z2.K8, take the duality limit](../notes/blueprint/Z2.K8.tex), pp. 159–160 together (2) | [Z2.K7, track the torsion exponent](../notes/blueprint/Z2.K7.tex), pp. 168–170 (3) | **20** |
+| **Formalization and reproducibility** · [P001 declaration-identity packet](../notes/formal/README.md) (7) | [P003, inspect the principal-character exception](../notes/units/P003_round3.md) (2) | [P005, check the primitive open-strip formulation](../notes/units/P005_round3.md) (2) | [P009, trace the all-character export](../notes/units/P009_round3.md) (2) | [P011, identify the row assumed by the implication](../notes/units/P011_round3.md) (3) | **16** |
+
+## The whole conditional deduction · 33 pages
+
+Read the supplier notes before their applications. The ten list-A rows occupy eight distinct notes. A4 and A9 share D562. A8 and A10 share D561. The accounting below charges each note once. V, F, Green’s assertion and the host and closed-link implications in lists B and C remain premises of the conditional theorem. The last assignment, an outline, contains all 34 rows and identifies the additional inputs used in its written reduction. These include the rank growth estimate, the pointwise lattice estimate, the Selmer-to-division and slope comparisons, the level window criterion, and the classical boundary and reflection results. [List-A declarations and source ranges](../data/round3_v4.json)
+
+| Order | Reading | Pages | Check before continuing |
+|---|---|---:|---|
+| 1 | [A7 · D550](../notes/units/D550_v4.md), [A5 · D567](../notes/units/D567_v4.md), [B10](../notes/units/B10_v4.md) | 1 + 2 + 2 | Fix the scale threshold, bound the per-unit error and carry it across the index bijections to the arithmetic gap. |
+| 2 | [A6 · D014](../notes/units/D014_v4.md), [A1 · D547](../notes/units/D547_v4.md), [A2 · D548](../notes/units/D548_v4.md), [A3 · D549](../notes/units/D549_v4.md) | 2 + 2 + 2 + 1 | Identify the inertia and the kept characters of the same host. Separate the exact prime-sum identity, the character-share control and the bound for omitted frequencies. |
+| 3 | [A4 and A9 · D562](../notes/units/D562_v4.md), [A8 and A10 · D561](../notes/units/D561_v4.md) | 2 + 4 | Distinguish movement of the evaluation point from movement of the width. Check the balance identity and the fixed-width reindexing. D561 has an outline for its enclosing estimate. |
+| 4 | [B09](../notes/units/B09_v4.md), [B08](../notes/units/B08_v4.md), [P017](../notes/units/P017_v4.md) | 4 + 2 + 2 | Average the gap, remove the omitted-frequency error and obtain a one-scale estimate. Lift it to the tail of a single family's window with fixed constants. |
+| 5 | [V4-COND · hypotheses, four proof steps and five conclusions](../notes/units/V4-COND_round3.md) | 7 | Trace V to a bound at the chosen host's rank, and F to division and slope on the same selection. Then follow the shrinking epsilon, the zero-free window criterion and the passage to all five formulations, retaining the principal-pole exception. |
+
+In the revised v5 draft, Theorem 1.1 starts on p. 6, the hypothesis table spans pp. 38–41 and Theorem 3.43 spans pp. 41–42. The corresponding v4 locations are pp. 6, 37–39 and 40. The last assignment counts the standalone conditional note. [V4-COND card](../units/V4-COND.md)

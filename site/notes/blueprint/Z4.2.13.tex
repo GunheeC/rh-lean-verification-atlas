@@ -1,0 +1,1412 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% RH Notes blueprint source excerpts for Z4.2.13
+% Verbatim excerpts in the notation of the parent blueprint. The labelled editions and source ranges appear below.
+% See the unit YAML for the current proof status. Earlier-round passages retain their original wording.
+\section*{Z4.2.13. Period, lattice and theta-vector laws of the tied base}
+
+% Parent source SHA-256: 99a8461100a8be8176578b515f15d452958d95ac91f86554c8727ce0a98ee36e
+% blueprint/ch_P_r14.tex lines 34 through 54; r14:period
+\paragraph{Why the period cannot vanish.}\label{r14:period}
+$B.L$ is a period pair whose lattice is $\mathrm{lamOf}(D,\mathfrak c,\delta)$
+(\nolinkurl{Base.lat}, \path{KernelLattices/LateralTheory.lean:128--132}).
+If $\delta=0$, each generator $\delta\phi_0(c)$ is zero, so its additive
+closure is zero. The first period belongs to the lattice, whereas the first
+vector of an independent period pair is nonzero. This contradiction uses
+only the base, so it supplies the same nonvanishing hypothesis whenever
+the lattice proofs below require it
+(\nolinkurl{lamOf_zero}, \nolinkurl{base_linkage_nonempty},
+\path{GlobalTheory/GL3/PFamily.lean:74--86}).
+
+For the two statements without $B$ (\nolinkurl{TrueTheta.exists_coef_field}
+and \nolinkurl{TrueTheta.exists_family_of_curve}), start with the unscaled
+ideal lattice. A nonzero ideal gives an independent period pair there.
+Its Weierstrass discriminant is nonzero, and
+$\delta^{12}=g_2^3-27g_3^2$ for this lattice, hence $\delta\ne0$.
+See \nolinkurl{CurveLattice.discr_ne_zero},
+\nolinkurl{CurveLattice.exists_periodPair_lamOf}
+(\path{FoundationProofs/ExistsPeriodPairIdealCurveLattice.lean:64--67,112--119}),
+\nolinkurl{InertSign.delta_ne_zero}
+(\path{WeilRepresentationVacuumSignInertPlaces.lean:240--248}).
+
+% blueprint/ch_P_r14.tex lines 75 through 125; r14:lat-integral
+\paragraph{Integrality and parity.}\phantomsection\label{r14:lat-integral}
+Write $h(S,T)=\operatorname{Tr}_{E/K}\operatorname{tr}(T^*S)$.
+The fixed host supplies that $I$ is its own dual for
+$(a,b)\mapsto\operatorname{Tr}_{E/K}(a\bar b)$: its different is
+$\mathfrak b\bar{\mathfrak b}$, so the trace dual of $\bar I$ is
+$(\mathfrak b\bar{\mathfrak b})^{-1}(\bar I)^{-1}=I$.
+For lattice homomorphisms $P,Q$, $Q^*$ sends $L'$ into $L$ by
+self-duality. Thus $Q^*P$ preserves $L$, and its trace belongs to
+$\mathcal O_E$: after localization at each prime, the full torsion-free
+lattice is free and an integral matrix represents the endomorphism there.
+For $a,b\in I$, absorb this integral trace into $a$. Trace duality gives
+$h(aP,bQ)\in\mathcal O_K$, hence $h(M,M)\subset\mathcal O_K$ by addition.
+The $\tau$ are precisely the extensions of $\phi_0|_K$ (the conjugate half
+acts differently on $\sqrt{-d}$), so their sum computes the relative trace.
+See \nolinkurl{HostDer.unimodular}, the host different factorization
+(\path{TotientGaloisClasses/ConjEMemHostFIff.lean:159--162},
+\path{LocalRingCardinality/DataHost.lean:64--65,153--154}),
+\nolinkurl{TI.sE_hom_gen}, \nolinkurl{TI.trace_conj_integral},
+\nolinkurl{hermitian_pairing_integral}
+(\path{GL3/PHfInt.lean:79--111,145--164,203--209}), and
+\nolinkurl{FL.embA_bij}, \nolinkurl{FL.sum_tau_trace}
+(\path{GL3/PHfTrace.lean:34--69}).
+
+Write $s=\sqrt d$, $\omega=(1+is)/2$; the embedded quadratic order is
+$\mathbb Z+\mathbb Z\omega$ since $d$ is prime and $d\equiv3\pmod4$.
+Indeed for an algebraic integer $x+yis$ with $x,y\in\mathbb Q$, trace and
+norm give $2x\in\mathbb Z$ and $d(2y)^2\in\mathbb Z$; squarefreeness gives
+$2y\in\mathbb Z$ and the norm modulo $4$ gives the same parity for both.
+Conversely $\omega$ satisfies a monic integral quadratic.
+A nonzero ideal of the quadratic order has finite index in its
+rank-two integral lattice (it contains a nonzero principal ideal).
+It is free of rank two; see \nolinkurl{CS.cc_basis}
+(\path{GL3/PSelfDual.lean:494--543}). In such a $\mathbb Z$-basis the area of $C$ is
+$A=|\delta|^2(s/2)m$, where $m$ is the absolute coordinate determinant
+relative to $(1,\omega)$. It is positive since a nonzero ideal contains
+a nonzero principal ideal of full rank. Every oriented determinant of two
+periods is an integer multiple of $A$, and a basis attains $A$ up to sign,
+as required by the infimum defining area. For $c,c'\in\mathfrak c$
+write $\overline{\phi_0(c')}\phi_0(c)=(u+vis)/2$. Taking determinants
+of the periods of $c'$ with those of $c$ and $c\omega$ gives respectively
+$v/m\in\mathbb Z$ and $(u+v)/(2m)\in\mathbb Z$.
+Thus the product divided by $m$ belongs to $\mathbb Z+\mathbb Z\omega$.
+On generators of $\Lambda$ multiply this element by $\phi_0(h(S,T))$
+and by $2/s$. Additivity now gives, for $x,y\in\Lambda$,
+\[
+ H(x,y)=a/s+ib,\qquad a,b\in\mathbb Z,\quad a\equiv b\pmod2.
+\]
+This proves $\Lambda\subset\Lambda^\vee$ for $\Im H$. See
+\nolinkurl{AR.okc_of}, \nolinkurl{AR.div_okc}, \nolinkurl{HfArithRec_of_int}
+(\path{GL3/PHfArith.lean:34--37,85--86,295--306,321--389,402--419}) and
+\nolinkurl{hermitian_form_integral_values} (\path{GL3/PThIndep.lean:11}).
+
+% blueprint/ch_P_r14.tex lines 127 through 163; r14:lat-dual
+\paragraph{Recovering the dual lattice.}\phantomsection\label{r14:lat-dual}
+For an oriented basis $w_1,w_2$ of $C$ the pairing
+$\Im(z\bar w)/A$ has off-diagonal entries $\pm1$ on that basis.
+In its real coordinates, integral pairing with the two basis vectors
+therefore characterizes membership in $C$. Take $v\in\Lambda^\vee$.
+Pair with all $w e(T)$, $w\in C$, $T\in M$. The preceding plane
+calculation gives
+$\ell(T)=\sum v_{\tau ij}\overline{\tau(T_{ij})}\in C$.
+The module $M$ spans all matrices over $\mathbb Q$: full lattices $L,L'$
+are commensurable with their integral coordinate lattices (clear denominators
+of generators and of the expressions for the coordinate basis). Hence a
+fixed nonzero integer multiplies every integral matrix into
+$\operatorname{Hom}(L,L')$ and then into $M$ after one more denominator
+bound for the nonzero fractional ideal $I$. Testing a single matrix entry at
+$\bar y$ after clearing denominators gives
+$\delta^{-1}\sum_\tau v_{\tau ij}\tau(y)\in\phi_0(K)$ for every $y\in E$.
+Pulling back by $\phi_0$ defines a $K$-linear functional of $y$.
+Nondegeneracy of the separable trace writes it uniquely as
+$\operatorname{Tr}_{E/K}(X_{ij}y)$; independence of distinct embeddings
+then gives $v_{\tau ij}=\delta\tau(X_{ij})$.
+Thus $\ell(T)=\delta\phi_0(h(X,T))$ and $h(X,M)\subset\mathfrak c$.
+See \nolinkurl{curve_lattice_self_dual}, \nolinkurl{SD.coord},
+\nolinkurl{SelfDualRec_of_curve}
+(\path{GL3/PSelfDual.lean:184--261,310--393,410--459,563--622}).
+
+For $k\in\mathfrak c^{-1}$, $h(kX,M)\subset\mathcal O_K$.
+If $x\in L$, $y\in L'$, the rank-one map $yx^*$ sends $L$ into $L'$.
+Testing $a yx^*$ for every $a\in I$ gives
+$\operatorname{Tr}_{E/K}(\langle y,kXx\rangle\bar a)\in\mathcal O_K$.
+Trace duality of $I$ gives $\langle y,kXx\rangle\in I$.
+For every $b\in\mathfrak b$ we get $bkXx\in L'$ by self-duality of $L'$,
+so $bkX\in\operatorname{Hom}(L,L')$. Expressing $1$ as a sum of
+products in $I\mathfrak b$ gives $kX\in M$; doing the same for
+$\mathfrak c\mathfrak c^{-1}$ gives $X\in\mathfrak c M$. Consequently
+$v\in\Lambda$. See \nolinkurl{SD.hom_step}, \nolinkurl{SD.rank_one_mem_hom_lattice},
+\nolinkurl{SD.hYY_rank1}, \nolinkurl{SD.alg_step}, \nolinkurl{self_dual_lattice}
+(\path{GL3/PSelfDual.lean:15--46,54--180,624}).
+
+% blueprint/ch_P_r14.tex lines 165 through 187; r14:lat-indices
+\paragraph{Semicharacter and the two indices.}\phantomsection\label{r14:lat-indices}
+For $x\in\Lambda$, $H(x,x)$ is real, so the parity above gives
+$q(x)=(s/2)\Re H(x,x)\in\mathbb Z$. Rounding fixes $q(x)$ and
+$\alpha(x)=(-1)^{q(x)}$ is a sign. Polarization gives
+$q(x+y)-q(x)-q(y)=s\Re H(x,y)=a$. Since $a\equiv b\pmod2$,
+$\alpha(x+y)=\alpha(x)\alpha(y)\exp(\pi i\Im H(x,y))$.
+For each admitted pair, $\mathfrak cM$ is commensurable with the integral
+coordinate matrices: $L,L'$ have upper and lower integral denominator
+bounds, hence so does the module of maps between them; multiplication by a
+nonzero ideal or fractional ideal preserves such bounds by clearing the
+ideal's generators and using any one nonzero member for the lower bound.
+For two pairs take $R=e((\delta_0^{-1}\operatorname{Mat}(\mathcal O_E)))$
+scaled by $\delta$, with a common positive integer denominator $\delta_0$,
+so that $kR\subset\Lambda_1\cap\Lambda_2\subset\Lambda_i\subset R$
+for some $k>0$. Then both intersection quotients are subquotients of the
+finite group $R/kR$; both indices are nonzero, also in rank zero.
+This proves the two clauses of \nolinkurl{Base.LatAll}
+(\path{KernelLattices/LateralTheory.lean:185--189,207--213}).
+See \nolinkurl{IO.semiChar_of_HfInt}, \nolinkurl{IO.La_index_finite},
+\nolinkurl{IO.La_index_ne_zero} (\path{GL3/PIopIso.lean:208--267,275--293,315--338}),
+\nolinkurl{FL.YY_lower}, \nolinkurl{FL.La_upper}, \nolinkurl{FL.La_lower}
+(\path{GL3/PLinkThU.lean:515--541,547--608,609--634}) and
+\nolinkurl{Base.latAll} (\path{KernelLocalFactors/IsAdmissibleFlagPairOfUnitriangularLeftAutomorph.lean:623--644}).
+
+% blueprint/ch_P_r14.tex lines 189 through 270; r14:line
+\paragraph{Why comparison on a theta line gives a scalar.}\label{r14:line}
+At the admitted pair let $A$ be the period lattice and let $H$ be the
+area-normalized Hermitian form, linear in its first argument. The reference
+and natural vectors have the same automorphy factor on $A$. We need
+dimension at most one before a nonzero reference vector can serve as a
+basis. For the Hom lattice, take arithmetic trace-dual families $y_i,y_i'$
+with $x=\sum_i h(x,y_i')y_i$. After applying the embeddings this expansion
+also holds over $\mathbb C$: distinct embeddings are linearly independent
+and their evaluation vectors span each matrix coordinate. The coordinates
+of any element of $A$ against $y_i'$ belong to the planar period lattice.
+They determine the element by the expansion, so their map embeds $A$
+continuously into a finite power of a discrete lattice and $A$ is
+discrete. Its imaginary dual equals $A$ by the lattice argument above.
+For the alternative orthonormal presentation of the lattice the same
+expansion holds with $y_i'=y_i$.
+See \nolinkurl{ThetaLine.expand}, \nolinkurl{ThetaLine.of_dual_families}
+and \nolinkurl{ThetaLine.theta_line}
+(\path{FoundationProofs/ThetaSpaceSelfDualPairAtMostLine.lean:82--132,145--169,187--219,276--294}).
+
+Identify the coordinate space with $\mathbb C^g$, where
+$g=|\mathrm{Tau}|NN'$. Multiplying by the inverse of the positive
+area gives the positive definite Hermitian matrix. For $a\in A$ an entire
+theta function satisfies
+\[
+ f(z+a)=\alpha(a)^{-1}\exp\big(\pi H(z,a)+\tfrac\pi2 H(a,a)\big) f(z).
+\]
+The sign from interchanging the arguments of $\operatorname{Im}H$ preserves
+the integral-dual condition.
+The integral alternating form on $A$ is perfect: a real linear functional
+is represented by pairing with some $y$ by nondegeneracy, and if it takes
+integral values on $A$, self-duality puts $y$ in $A$. Uniqueness follows
+from real spanning and positive definiteness. Indeed a nonzero vector
+symplectically orthogonal to the real span would put an entire real
+line in the discrete integral dual. Thus the lattice has real span
+$\mathbb C^g$ and integral rank $2g$. The same argument works for
+the frame lattice: there the orthonormal frame is its own dual family
+in \nolinkurl{ThetaLine.of_dual_families}.
+A primitive basis vector in the perfect alternating lattice pairs to
+one with a second vector. Split off their unimodular plane and iterate
+on its orthogonal complement to obtain an integral symplectic basis.
+See \nolinkurl{ThetaTranslSpan.span_eq_top}
+(\path{UnitaryExistence/ExistsImEqLattice.lean:106--122}) and
+\nolinkurl{SiegelNormalForm.exists_normal_form}
+(\path{ToricGeometry/IsUnitOfLagrangian.lean:177--353}); its linear
+exponential term uses logarithms of the unit phases on the first
+basis vectors. In a symplectic integral
+basis of this principal form, the first half gives a complex basis by
+positivity on a Lagrangian. In the resulting coordinates, multiplication
+by the nonvanishing exponential of a quadratic polynomial makes the
+first $g$ periods ordinary periods. The second half then acts on the
+transformed function $u$ by
+$u(z+\tau_j)=b_j\exp(-2\pi i z_j)u(z)$ with $b_j\ne0$.
+These are the degree-one transformation laws obtained in
+\nolinkurl{ThetaCoordLine.transl_of_mem}, \nolinkurl{ThetaCoordLine.exists_eq_smul}
+(\path{FoundationProofs/ThetaFunctionSelfDualExistsEqSmul.lean:25--52,54--93}),
+\nolinkurl{ThetaTranslSpan.exists_eq_smul}
+(\path{UnitaryExistence/ExistsImEqLattice.lean:162--235}), and
+\nolinkurl{card_le_pow_of_linearIndependent_theta_principal}
+(\path{ToricGeometry/CardLePowOfLinearIndependentThetaPrincipal.lean:11--59}).
+
+Let $c_m(u)$ be the Fourier coefficient on the real unit cube, for
+$m\in\mathbb Z^g$. Translating its contour by $\tau_j$ is valid coordinate
+by coordinate by holomorphy and cancellation of the opposite faces.
+Equating the two evaluations gives
+\[
+ b_jc_{m+e_j}(u)=\exp(2\pi i\,m\cdot\tau_j)c_m(u).
+\]
+Both factors are nonzero. Thus $c_0(u)=0$ forces every coefficient to vanish.
+For every complex translation of the real unit cube the translated
+coefficients are the original ones multiplied by nonzero exponentials.
+Fourier uniqueness on each translated real torus gives zero there, hence
+zero at every point of the complex space.
+This works for $g=0$ as well, when evaluation is the only coefficient.
+The map to $c_0$ is injective on these sections. For a nonzero reference
+vector $G$, subtracting the right multiple of $G$ from $F$ now proves
+$F=aG$ before undoing the invertible change of coordinates.
+See \nolinkurl{fourierCoeff_unitCube_translate_of_entire_periodic}
+(\path{ToricGeometry/FourierCoeffUnitCubeTranslateOfEntirePeriodic.lean:70--135}),
+\nolinkurl{entire_periodic_eq_zero_of_fourierCoeff_eq_zero}
+(\path{ToricGeometry/EntirePeriodicEqZeroOfFourierCoeffEqZero.lean:26--96})
+and \nolinkurl{ClassicalTheta.card_le_pow_of_linearIndependent}
+(\path{ToricGeometry/CardLePowOfLinearIndependent.lean:50--120}).
+
+% blueprint/ch_P_r14.tex lines 272 through 576; r14:vec, r14:vec-transport, r14:vec-fixed, r14:vec-descent
+\subsection{The natural nonzero vector and its field of coefficients}
+\label{r14:vec}
+Fix \(D,\mathfrak c,\delta,B,\chi\) from the tied entry, put
+\(T=B.\mathrm{tor}=\mathrm{tor}_0(D,\mathfrak c,\delta)\), and write
+\(\Lambda=\delta\varphi_0(\mathfrak c)\).
+The entry gives a curve ideal, a twelfth root of its lattice discriminant,
+and a character multiplicative on norm-one ideals with prescribed values on
+principal unitary ideals. For each pair of even ranks \(N,N'\) and
+self-dual lattices \(L,L'\) we will exhibit, for the prescribed function
+\(F=B.\mathrm{eNat}(\chi)_{L,L'}\),
+\[
+ F\in\mathrm{Th}(D,T,L,L'),\qquad F\ne0,\qquad
+ \exists M\subset\mathbf C,\quad [M:\mathbf Q]<\infty,\quad
+ \forall\alpha,\quad a_\alpha(F)\in M .
+\]
+Here \(a_\alpha\) is the derivative at zero in the indicated coordinate
+directions divided by \(\prod_k\alpha(k)!\). The coordinates are
+\((\tau,i,j)\) with \(i\in\mathrm{Fin}(N')\), \(j\in\mathrm{Fin}(N)\).
+The order of the two final quantifiers permits \(M\) to depend on the
+pair. See \nolinkurl{TaylorLogMetric.vec22} and
+\nolinkurl{Base.VecP} (\path{GlobalSchurBounds/TaylorLogMetric.lean:13--16},
+\path{KernelLattices/LateralTheory.lean:215}).
+
+\paragraph{Construction and nonvanishing.}\label{r14:vec-transport}
+Write \(S,S'\) for the standard lattices of the indicated ranks,
+\(A_0=\mathrm{La}(S,S')\), \(A_1=\mathrm{La}(L,S')\) and
+\(A_2=\mathrm{La}(L,L')\). Write \(I_{ij}\) for the normalized
+intertwiner from \(A_i\) to \(A_j\). On the target pair put
+\[
+ \begin{aligned}
+  C_\chi&=\chi(\operatorname{detId}(S,L))^{N'/2}\,
+           \chi(\operatorname{detId}(S',L'))^{-N/2},\\
+  V_0(z)&=\prod_{i,j}\theta_M\big((z_{\tau i j})_\tau\big),
+     & F&=C_\chi I_{12}(I_{01}V_0).
+ \end{aligned}
+\]
+The symbol \(\operatorname{detId}\) denotes the ideal spanned by the determinants
+of matrices carrying the first lattice into the second. The vector
+\(\theta_M=B.\mathrm{thMM}\) is the chosen theta function whose
+fourfold tensor product is \(B.\kappa\) times the standard fourfold
+kernel in the coordinates \(B.g_C\)
+(\path{KernelLattices/LateralTheory.lean:23--36,145--179}).
+The supplied period pair has lattice \(\Lambda\) and positive area.
+Its half-period and the two semicharacter comparisons, self-duality,
+and both finite indices give \(B.\mathrm{StdOK}\)
+through the inputs \nolinkurl{SO.stdOK} and \nolinkurl{FourthRootStd.stdOK}
+(3,161 and 2,853 inclusive theorem lines beyond the common host baseline,
+respectively; the same convention applies to supplier sizes below).
+See \path{GL3/PStdOK.lean:326--339} and \path{SpanRangeEmb4EqTop.lean:700--701}.
+Each local root in \(B.\kappa\) has a nonzero prescribed power; its
+finite product with integral exponents is nonzero. The fourfold identity and nonvanishing
+use \nolinkurl{thM_spec} and \nolinkurl{isThM_ne_zero} with $B.\mathrm{StdOK}$
+and $B.\kappa\ne0$ (3,001 lines;
+\path{KernelLocalFactors/IsAdmissibleFlagPairOfUnitriangularLeftAutomorph.lean:75--81,218--220}).
+The earlier scalar calculation is in Paragraph~\ref{par:r4-z43-iso};
+Z4.3 is partial, and review A treated this as a supplier. At a point with all columns
+equal to a point of nonvanishing, \(V_0\ne0\); the empty product
+covers zero rank. The tensor-product translation rule on \(A_0\)
+uses the sum of the integral quadratic terms of its columns, giving
+\(V_0\in\mathrm{Th}(A_0)\).
+The identification with the tensor product lattice and the equality of
+the two area normalizations enter via \nolinkurl{Base.lat0OK},
+\nolinkurl{Base.areaOK} and \nolinkurl{Base.thZeroMem}
+(\path{KernelLocalFactors/IsAdmissibleFlagPairOfUnitriangularLeftAutomorph.lean:318--319,438--439,480--501}).
+
+The three pairs are admitted. For each of the two adjacent pairs,
+\(\mathrm{LatAll}\) supplies self-duality and the same semicharacter
+on both lattices and both finite relative indices. Averaging the target
+signed translations over representatives sends a theta vector to a
+theta vector; on the source fixed space the reverse normalized average
+composed with the forward one is the identity. Indeed, summing a
+nontrivial character of the finite intersection quotient gives zero,
+and its trivial character gives its order, which cancels the two
+normalizations: the alternating form pairs the two intersection
+quotients perfectly into $\mathbf Q/\mathbf Z$, so their orders coincide.
+Indeed their annihilators are the respective intersections by self-duality.
+Under $B.\mathrm{StdOK},B.\mathrm{LatAll},B.\mathrm{ThZeroMem}(N,N')$
+and admission, both transports preserve nonvanishing.
+The determinant ideals are norm one by
+\nolinkurl{relative_determinant_norm_one}
+(\path{DeterminantNormOneOfUnitDisc.lean:409}). For each such ideal a positive
+power is generated by a unitary element, so the corresponding power
+of its character is a product of inverses of CM conjugates of that
+element. All are algebraic of absolute value one. Both factors of
+\(C_\chi\) are therefore nonzero and algebraic for the displayed
+integral exponents. Scalar multiplication preserves the theta relations
+and yields the first two conclusions. The source implements these steps
+in \nolinkurl{Base.thMoved_ne_zero}, \nolinkurl{Base.vec_mem_ne}
+(\path{KernelLocalFactors/IsAdmissibleFlagPairOfUnitriangularLeftAutomorph.lean:197--222,234--271,480--508,646--660}),
+and \nolinkurl{GlobalTheory.MomT.FromComb.chiFac_mem}
+(\path{GlobalInterpolation/TranslateMomentsAllOfJetMomR.lean:323--339}).
+
+\paragraph{The line and the reference vector.}\label{r14:vec-reference}
+The CM embeddings restrict to \(\varphi_0\) on \(K\), and their sum
+on \(E\) is \(\varphi_0\circ\mathrm{Tr}_{E/K}\): the indexing set
+enumerates \(\mathrm{Gal}(E/K)\) once. This is the
+\nolinkurl{admG1} used in \nolinkurl{GlobalTheory.ThetaLine.theta_line}.
+The trace-dual coordinate argument and the determining Fourier coefficient
+in Section~\ref{r14:line} show that any two such vectors are proportional
+once the reference vector is nonzero.
+See \nolinkurl{GlobalTheory.InducedType.induced_type}
+(\path{FoundationProofs/InducedTypeThetaGenusOnePermutes.lean:43--53,74--75})
+and \nolinkurl{GlobalTheory.ThetaLine.theta_line}
+(\path{FoundationProofs/ThetaSpaceSelfDualPairAtMostLine.lean:276--294}).
+
+For the same curve put \(n=\mathrm N\mathfrak c\), which is odd, and
+\(t_0=\delta n/2\). Then \(2t_0\in\Lambda\) since \(n\in\mathfrak c\).
+If either \((1\pm i\sqrt d)t_0/2\) belonged to \(\Lambda\), dividing
+by \(\delta\ne0\) would give an algebraic integer of trace \(n/2\)
+over \(\mathbf Q\), impossible for odd \(n\). Write
+\(A=\mathrm{area}(\Lambda)\) and let \(\sigma^*_\Lambda\) be the modified
+sigma function \nolinkurl{sgStar}, normalized by \((\sigma^*_\Lambda)'(0)=1\).
+The genus-one vector uses the exponential Heisenberg translation
+\[
+ \begin{aligned}
+ (U_1(t)h)(z)
+    &=h(z+t)\exp\!\left(-\frac{\pi z\overline t}{A}
+                          -\frac{\pi t\overline t}{2A}\right),\\
+ \mathrm{th}_0(z)
+    &=\frac{(U_1(t_0)\sigma^*_\Lambda)(z)}
+            {(U_1(t_0)\sigma^*_\Lambda)(0)} .
+ \end{aligned}
+\]
+Here \(t_0\notin\Lambda\) by the unkilled half-period condition and
+the stability of \(\Lambda\) under the CM integers. Hence the modified
+sigma function is nonzero there: \nolinkurl{OddTheta.sgStar_laws}
+constructs the normalized entire function whose zeros are exactly the
+period lattice (\path{OddThetaFunctionExistenceUniqueness.lean:115--147}).
+Consequently \(\mathrm{th}_0(0)=1\)
+(\path{GlobalSchurBounds/GL3Theta.lean:196--203},
+\path{GeneralLinearActions/IsDiscriminantTwelfthRootOfIdealLattice.lean:234--241}).
+For even \(NN'\) choose an orthonormal
+frame for the standard pair at 2. Pull back its product of genus-one
+thetas and apply the normalized intertwiner from the frame lattice
+to \(A_0\), with the algebraic scalar of absolute value one prescribed
+by the vacuum construction. The product at the origin is one.
+Applying the reverse intertwiner detects its nonvanishing. The resulting
+\(e_0\) satisfies the standard vacuum conditions \nolinkurl{oddE0};
+these include its description by that frame and scalar. The construction
+uses \nolinkurl{GlobalTheory.TwoTorsionPt.exists_point} and
+\nolinkurl{GlobalTheory.Vacuum.exists_vacuum}
+(\path{FoundationProofs/ExistsTwoTorsionCMPointAllConjugates.lean:16--99,127--130},
+\path{FoundationProofs/NormSqMulGaussianLatticeTranslateEqShifted.lean:276--355}).
+The latter is an input of 16,557 lines for the full vector family.
+In its frame at 2, \nolinkurl{OddGenus.odd_one} first obtains a rational
+orthonormal frame for a positive diagonal Hermitian form with square
+determinant (\path{StandardPairLatticeLocallyOrthonormalBasis.lean:138,337--357,420--425}).
+The quadratic local-to-global input \nolinkurl{Published.HasseNormSt}
+takes $d,x\ne0$ with $x=a^2-db^2$ at every finite and real place and
+produces such a representation over the base number field. In the split
+case $d=r^2$, use $a=(x+1)/2$, $b=(x-1)/(2r)$ as in
+\nolinkurl{Published.HasseNormSt.of_isSquare}. For nonsquare $d$,
+\nolinkurl{QNorm.hasseNormSt} supplies the local-to-global norm step
+(\path{ExistsNormTensor.lean:12--25},
+\path{HasseNormTheoremQuadraticExtension.lean:13--32}).
+The comparison with Hasse's cyclic norm theorem, including the
+complex places, is on p.~\pageref{r15:hasse-comparison}.
+In particular \nolinkurl{SqDet.exists_rat_sum_norm_forms_eq_one}
+uses isotropy of the rational form $\langle a,ad,b,bd,-1\rangle$
+to produce a vector of norm one; see
+\path{ExistsOrthonormalHermitianOfDiagPosIsSquare.lean:17--54},
+\nolinkurl{LocalQuad.isotropic_of_indefinite}
+(\path{ExistsCongrIffTraceFormsIsometricCm.lean:290--298}) and
+\nolinkurl{LocalQuad.exists_norm_of_quaternary}
+(\path{ExistsQuaternaryOfCoordinates.lean:14--40}).
+These are the three literature-boundary declarations on this frame route.
+
+In \nolinkurl{GlobalTheory.TrueTheta.exists_family_of_curve} a character
+\(\chi'\) descends from an idelic character \(\kappa'\) trivial on
+integral units, with its value on a relative determinant ideal read
+from an adelic mover. Choose movers \(g,g'\) from the standard
+lattices to \(L,L'\). Their unit scalar \(s\), given by those two
+determinant factors with exponents \(N'/2,-N/2\), is algebraic by
+\nolinkurl{HeckeVal.hecke_values}
+(\path{UnitaryHeckeCharacterValues.lean:232--278}) in the vacuum scalar
+comparison. Thus the reference vector for this pair is
+\(e=sG\), \(G=I_{02}e_0\), with a \emph{single} direct transport.
+It is a nonzero theta vector by the inverse-intertwiner identity.
+Its use here requires only \(s\in\overline{\mathbf Q}^{\times}\);
+one could take \(s=1\) in the coefficient-field argument for this
+individual pair. The reference character and the natural character
+can differ. See \path{IwasawaDecomposition/ExistsThetaVectorFamilyOfCurveDatum.lean:15--52,75--90}
+and \path{IwasawaDecomposition/ExistsMovesOfSelfDual.lean:77--135,570--581,659--675}.
+
+\paragraph{A number field for the reference vector.}\label{r14:vec-fixed}
+Here is the finite descent inside
+\nolinkurl{GlobalTheory.TrueTheta.exists_coef_field}. The CM period
+calculation gives algebraic \(g_2(\Lambda),g_3(\Lambda)\): the normalized
+discriminant and the integral CM \(j\)-invariant first determine
+\(g_2^3\), then \(g_3^2\). The resulting CM theta calculation gives
+algebraic Taylor coefficients of \(G\). More explicitly, the
+genus-one normalized theta and its rational translates have algebraic
+jets; products in the orthonormal CM coordinates preserve this property.
+A normalized intertwiner is a finite sum of rational translates with
+algebraic signs and inverse square root of an integer. The Heisenberg
+phase arising on composing rational translates is a root of unity.
+Hence the same algebraicity holds after each intertwiner. The needed
+source laws are \nolinkurl{CurveAlgebraic.integral_j_and_algebraic_data},
+\nolinkurl{ThetaAlgebraic.taylor_algebraic}, and the conjugation law
+\nolinkurl{ThetaConj.useConj_all}. For every algebraic embedding of
+the coefficient field the last law takes a transported vacuum to a
+signed transport of the conjugate vacuum, on the conjugate torus.
+The sign is nonzero. These laws use the curve and its normalized
+half-period, the vacuum's frame description, self-duality of the
+input and output pairs, and even \(NN'\)
+(\path{FoundationProofs/IntegralJAndAlgebraicData.lean:126--151},
+\path{FoundationProofs/ThetaTaylorCoeffsAlgebraicAtComplexMultiplicatio.lean:594--616},
+\path{FoundationProofs/ThetaVacuaConjugatesCmPoints.lean:529--567}).
+
+Choose \(\alpha_0\) with \(a_{\alpha_0}(G)\ne0\) by the Taylor expansion
+of the nonzero entire \(G\). For a rational basis \(b_j\) of \(E\),
+adjoin to \(\mathbf Q\) the finite set
+\[
+ \{\mathrm{emb}_\tau(b_j)\}_{\tau,j}
+ \ \cup\ \{g_2(\Lambda),g_3(\Lambda),s,a_{\alpha_0}(G)\}.
+\]
+Call the resulting number field \(M_0\). Each automorphism \(\sigma\) of
+\(\overline{\mathbf Q}/M_0\) fixes every CM embedding on that basis
+and fixes \(g_2(\Lambda),g_3(\Lambda)\). The torus constructed from the
+conjugated embeddings and the lattice with those invariants is
+therefore \(T\) by uniqueness of the lattice with fixed $(g_2,g_3)$,
+\nolinkurl{ThetaConj.lamConj_eq_self}
+(\path{CmThetaTaylorCoeffAlgebraicAndConjugate.lean:47--59}).
+Coefficientwise conjugation of \(G\) gives an
+entire theta vector on \(A_2\) by the conjugation law. It is nonzero:
+reverse the signed transport; the resulting conjugate vacuum still
+has the normalized half-period product description. The line argument
+makes this vector \(aG\). Its holomorphy and nonvanishing justify recovering
+the coefficients of its defining conjugated series by
+\nolinkurl{ConjSeries.taylor_fnConj}
+(\path{TaylorCoeffConjugateSeries.lean:207--223}).
+Coefficients of the conjugate are
+\(\sigma(a_\beta(G))\), and linearity gives \(a\,a_\beta(G)\)
+for every \(\beta\). Comparing at \(\alpha_0\), whose nonzero
+coefficient is fixed, gives \(a=1\). All \(a_\beta(G)\) belong to
+the fixed field \(M_0\), by the infinite Galois correspondence
+\nolinkurl{InfiniteGalois.fixedField_fixingSubgroup} applied to the finite
+set of generators (\path{ExistsMovesOfSelfDual.lean:407--420}), hence so do all \(a_\beta(e)\). This uses
+\nolinkurl{GlobalTheory.TrueTheta.exists_field} and
+\nolinkurl{GlobalTheory.TrueTheta.exists_coef_field}
+(\path{IwasawaDecomposition/ExistsMovesOfSelfDual.lean:407--440,442--515}).
+
+\paragraph{The algebraic scalar for the prescribed natural vector.}
+\label{r14:vec-descent}
+We also need algebraicity on the natural side. The standard
+fourfold tensor identity expresses the fourfold product of
+\(\theta_M\) as an algebraic multiple of a finite sum of products
+of rationally translated genus-one functions in algebraic linear
+coordinates. Choose an index $\beta$ of least total degree with nonzero
+normalized Taylor coefficient $a_\beta$ of $\theta_M$; one exists by
+entireness and nonvanishing. The four independent blocks have coefficient
+$a_\beta^4$ at $(\beta,\beta,\beta,\beta)$ and $a_\alpha a_\beta^3$
+at $(\alpha,\beta,\beta,\beta)$ for every $\alpha$. Each is algebraic by the
+fourfold identity, hence $a_\beta$ is algebraic and nonzero; division
+gives $a_\alpha\in\overline{\mathbf Q}$ for all $\alpha$. Products of
+these expansions give the same conclusion for $V_0$.
+The input \nolinkurl{AlgTranslate.coefIn_translate}
+(\path{CoefInTranslate.lean:53--85}) applied in the standard theta
+calculation gives
+algebraic jets of \(U_x V_0\) for every \(x\) in the rational saturation
+of \(A_0\). Every period of \(A_1,A_2\) belongs to this saturation.
+Under successive translates the phase is the exponential of \(\pi i\)
+times a rational number. Therefore the two finite signed averages
+preserve this translated-jet property, and so does multiplication by
+\(C_\chi\in\overline{\mathbf Q}\). This last deduction uses the supplier
+\nolinkurl{GlobalTheory.ThLoc.algTAll} (15,462 lines), which gives algebraic Taylor
+coefficients of \(U_xF\) for every \(x\) with \(m x\in A_2\) for
+some positive integer \(m\); set \(x=0,m=1\), for which \(U_0F=F\).
+See \path{IwasawaDecomposition/VacuumEntireAndNormalizedJetsAlgebraic.lean:121--149,197--258,280--318}
+and \path{GaloisGeometry/AlgTAll.lean:12--27}.
+
+Both \(F\) and \(e\ne0\) lie on the same theta line on \(A_2\);
+write \(F=be\). Then \(a_\beta(F)=b\,a_\beta(e)\) for every
+multi-index by complex linearity of the derivative. Choose \(\alpha\)
+with \(a_\alpha(e)\ne0\). Its numerator \(a_\alpha(F)\) is algebraic
+and the denominator belongs to \(M_0\), so
+\(b=a_\alpha(F)/a_\alpha(e)\in\overline{\mathbf Q}\).
+The compositum \(M=M_0\mathbf Q(b)\) is finite. It contains all
+\(a_\beta(F)\) simultaneously. Moreover \(b\ne0\) since \(F\ne0\).
+This scalar is chosen anew for each pair. The comparison for all
+pairs of fixed ranks in the equivariance proof requires a separate
+argument (\nolinkurl{GlobalTheory.ColNorms.familyVectors},
+\path{DivisorProofs/NormalisedFamilyNonzeroThetaVectorsNumberField.lean:15--50}).
+
+\paragraph{Interface at the tied entry.}
+The formal family theorem additionally takes the host field conditions,
+the induced CM type, and finite support of the relative determinant
+exponents of \(B.\mathrm{kc}\). It eliminates these three explicit
+arguments before starting its proof at a pair. In the call at the
+tied entry they have independent suppliers. The host field conditions
+come from the host ramification theorem, and the restriction of each
+CM embedding to \(K\) holds because its indexing automorphism fixes
+\(K\). The ignored finite-support input has its own proof.\footnote{For
+$\mathrm{yFinite}$ clear denominators of the fixed map and its inverse
+on finite integral generators. At any split prime beyond the product
+of the two denominators both maps are integral at the selected prime,
+so the relative determinant is a unit.} These are
+\nolinkurl{GL3Theta.cm_field_facts_hold},
+\nolinkurl{GL3Theta.induced_cm_type}, and
+\nolinkurl{GlobalTheory.ExponentsFinite.yFinite}
+(\path{UnitTraceSumBounds/InducedCmType.lean:10--17},
+\path{DivisorProofs/KernelConstantExponentsFinite.lean:85--126}).
+The proof supplies the prescribed \(B.\mathrm{VecP}(\chi)\) using the
+same base and character as the other projections of
+\nolinkurl{GlobalTheory.TieBase.base_data} conditional on the indicated suppliers.
+
+% blueprint/ch_P_r14.tex lines 578 through 1058; r14:equivariance, r14:eq-reference, r14:eq-transport, r14:eq-rational, r14:eq-normalize, r14:weil-sign
+\subsection{Equivariance of the normalized theta family}\label{r14:equivariance}
+Fix a curve ideal $\mathfrak c$, a discriminant twelfth root $\delta$ and a
+base $B$ on these data. Write $T=B.\mathrm{tor}$, and take any $\chi$
+satisfying $\mathrm{IsChi}(D,\chi)$. For even ranks $n,m$ and self-dual
+Hermitian lattices $L,M$ of these ranks, put $A_{LM}=\mathrm{La}(D,T,L,M)$,
+$S=\mathrm{stdL}(D,n)$ and $S'=\mathrm{stdL}(D,m)$. Write $I_{A,B'}$ for the
+normalized translation average and $e_\chi(L,M)=B.eNat(\chi,n,m,L,M)$.
+For $g,h$ rational unitary matrices define
+$P_{g,h}F(z)=F((h_\tau^*z_\tau g_\tau)_\tau)$, using the torus's
+embeddings. The three assertions are
+\begin{align*}
+ P_{g,h}e_\chi(L,M)&=e_\chi(gL,hM),\\
+ e_\chi(L,M_1)&=\chi(\operatorname{detId}(M,M_1))^{-n/2}\,
+ I_{A_{LM},A_{LM_1}}e_\chi(L,M),\\
+ e_\chi(L_1,M)&=\chi(\operatorname{detId}(L,L_1))^{m/2}\,
+ I_{A_{LM},A_{L_1M}}e_\chi(L,M).
+\end{align*}
+Here and below $\operatorname{detId}$ denotes the relative determinant ideal. The exponent
+in the second line uses the unchanged source rank, and the one in the third
+uses the unchanged target rank. Zero ranks are allowed. See
+\nolinkurl{Base.EqP} (\path{KernelLattices/LateralTheory.lean:219}),
+\nolinkurl{eq22} (\path{GlobalSchurBounds/TaylorLogMetric.lean:37--50}) and
+\nolinkurl{pull} (\path{IsDiscriminantTwelfthRootOfIdealLattice.lean:106--108}).
+
+\paragraph{One reference character and one family.}\phantomsection\label{r14:eq-reference}
+For a finite idele $u$ write $J(u)=\{a\in E:u^{-1}a\in\widehat{\mathcal O}_E\}$.
+Two ideles representing the same fractional ideal differ by an integral
+unit. The character $\kappa$ in \nolinkurl{TrueTheta.exists_kappa} is trivial
+on these units. Hence $\eta(J(u))=\kappa(u)$ is independent of $u$.
+Set $\eta$ equal to zero on unrepresented submodules. Every norm-one
+ideal has a representative, $J(uv)=J(u)J(v)$, and a rational
+norm-one element $b$ represents $(b)$ with value
+$\prod_\tau\tau(b)^{-1}$. These give both clauses of $\mathrm{IsChi}$.
+If $g_1,g_2$ move the standard lattice to $L_1,L_2$, the criterion for
+membership in $\operatorname{detId}(L_1,L_2)$ is integrality after division by
+$\det(g_1^{-1}g_2)$. Thus
+$\eta(\operatorname{detId}(L_1,L_2))=\kappa(\det(g_1^{-1}g_2))$.
+The particular $\kappa$ is shared across the ranks. Its construction
+restricts a Hecke character to the split-place idempotent $e$ by
+$u\mapsto eu+(1-e)$. The splitting characters have half-weight parameters $k=-n/2$ and
+$k'=m/2$ and infinity types $2k=-n$ and $2k'=m$, respectively.
+They give a Weil operator $W$ with
+$\epsilon n_\tau(\psi)+n=0$ and
+$\epsilon' n_\tau(\psi')-m=0$. On the split factor its vacuum multiplier
+is $\psi(y')^{\epsilon}\psi'(y)^{\epsilon'}$, with
+$y/\bar y=\det(g_{\rm split})$ and
+$y'/\bar y'=\det(h_{\rm split})$. The inert sign in the product formula
+has even exponent. The resulting multiplier, for $g,h$ moving $S,S'$ to
+$L,M$, is
+\[
+ c(g,h)=\kappa(\det g)^{m/2}\kappa(\det h)^{-n/2}
+       =:C_\eta(L,M).
+\]
+Three inputs in \nolinkurl{TrueTheta.exists_kappa} are needed before the
+vacuum identity. \nolinkurl{TrueTheta.exists_base} extends a unitary
+character trivial on integral ideles and supplies Hecke characters with
+weights $2k$ (402 lines, \path{ExistsMovesOfSelfDual.lean:519--564}).
+\nolinkurl{InertTrivial.character_trivial_at_inert} removes the inert
+part on the rational norm-one idele; this gives the value
+$\prod_\tau\tau(b)^{-1}$ required for the reference character in
+\nolinkurl{NatEqui.chi_smulLat} (6,020 lines,
+\path{CharacterTrivialAtInertPrimes.lean:255--309},
+\path{ExistsMovesOfSelfDual.lean:592--607}). \nolinkurl{HeckeVal.hecke_values}
+gives algebraicity and conjugate modulus one of the scalar factors
+(879 lines, \path{UnitaryHeckeCharacterValues.lean:232--278}).
+The operator inputs are \nolinkurl{FinWeil.exists_weil},
+\nolinkurl{InertSign.vacuum_inert} and \nolinkurl{VacuumExact.vacuum_exact}
+(\path{ExistsWeilOfVacuum.lean:82--83},
+\path{WeilRepresentationVacuumSignInertPlaces.lean:254--327},
+\path{WeilOperatorVacuumExactConstantEvenRank.lean:79--105}).
+Review A of round 14 reported 5,355 theorem lines in its ordered partition. The order-independent three-root cut in Section~\ref{r15:supplier-classification} gives 5,132. See \nolinkurl{TrueTheta.idele_ideal_laws},
+\nolinkurl{mem_detId_iff}, \nolinkurl{scal}, \nolinkurl{exists_kappa} and
+\nolinkurl{exists_chi}
+(\path{IwasawaDecomposition/ExistsMovesOfSelfDual.lean:137--230,404--406,542--556,566--657,659--695}).
+
+Choose the distinguished two-torsion point and a nonzero standard vacuum satisfying \nolinkurl{oddE0}
+$v$ for each even rank product. Define
+$E(L,M)=C_\eta(L,M)I_{A_{SS'},A_{LM}}v$. Since the character value is
+defined on the ideal, arbitrary choices of adelic movers leave $E$ fixed.
+Self-dual lattices admit such movers. In the source, a common denominator
+$m_0$ bounds a generating set of $L$. A rational unitary change puts
+a multiple $sL$ in standard coordinates, with $s$ coprime to $m_0$.
+This is the input \nolinkurl{RepEqAt.repExS} (5,038 lines,
+\path{ExistsTriv.lean:54--91}). Five boundary declarations in its
+Hermitian genus argument have the following uses. Column pairings are
+the entries of $P^tG\bar P$ by \nolinkurl{Published.herm_col};
+\nolinkurl{Published.cc_ne_zero} and \nolinkurl{Published.det_map_cc}
+give $\overline{x}\ne0$ for $x\ne0$ and
+$\det(\bar P)=\overline{\det P}$. For the quadratic space over the
+maximal real subfield, \nolinkurl{Published.exists_cc_eq_neg} gives
+$\theta\ne0$ with $\bar\theta=-\theta$, and
+\nolinkurl{Published.exists_basis_one_imaginary} gives the basis
+$1,\theta$. See \path{AlgebraMapNormOfBasisOneSqrt.lean:33--36,50--57,252--277}.
+These enter \nolinkurl{SelfDualGenus.exists_coord},
+\nolinkurl{SelfDualGenus.exists_of_locConj_eq} and the Gram-matrix and
+orthogonal-frame steps in \path{FiniteResidueFieldAdicCompletionIntegers.lean:109--129,376--446,639--703}.
+Their role as elementary inputs to the genus argument is recorded on
+p.~\pageref{r15:hasse-comparison}.
+Using complementary conjugation-invariant idempotents divisible by $s$
+and $m_0$ respectively, patch this unitary with the identity. The two
+integrality conditions put $L$ inside the resulting moved lattice.
+Both are self-dual, so dualizing reverses this inclusion and gives
+equality. The character and vacuum normalization give
+$W(g,h)v=E(L,M)$ for these movers. The average preserves theta membership
+and its reverse recovers $v$, so $E$ is nonzero. Its coefficient number field
+uses the algebraicity and conjugation of the averaged jets. Adjoin the
+images under every $\tau$ of a rational basis of the CM field, the two
+invariants $g_2$ and $g_3$ of the elliptic lattice,
+$c(g,h)$, and one nonzero Taylor coefficient of the average. An automorphism
+fixing these data preserves its theta line by conjugation, and comparing
+the chosen coefficient forces its proportionality scalar to be one.
+Every Taylor coefficient, already algebraic, is fixed and belongs to the
+same finite extension of $\mathbf Q$. See \nolinkurl{TrueTheta.exists_moves_of_selfDual},
+\nolinkurl{exists_coef_field}
+(\path{ExistsMovesOfSelfDual.lean:77--135,407--420,442--515}) and
+\nolinkurl{TrueTheta.exists_family_of_curve}
+(\path{ExistsThetaVectorFamilyOfCurveDatum.lean:15--46,68--81}).
+
+\paragraph{Transport between two moved pairs.}\phantomsection\label{r14:eq-transport}
+The full intertwining statement takes a curve datum with $\delta\ne0$,
+ranks $n,m$, a standard vector and a Weil operator $W$ for it.
+Use paired notation $g=(g,g')$, $h=(h,h')$, $k=(k,k')$.
+Suppose the two components of each of $h,gh,k,gk$ move their respective
+standard lattices to the components of $L_1,L_2,M_1,M_2$ (eight move
+hypotheses). For every $F\in\mathrm{Th}(L_1)$,
+\[
+ W(g) I_{A(L_1),A(M_1)}F
+   = I_{A(L_2),A(M_2)} W(g)F.
+\]
+Here $A(P)$ is the period lattice of the pair $P$. In
+\nolinkurl{WeilInter.om_iop} the three inputs are the coset correspondence
+\nolinkurl{exists_thetaLattice_correspondence_weilOperator} (1,341 lines),
+membership after the move \nolinkurl{WeilTheta.om_mem_Th_moved} (5,583),
+and all-level closure \nolinkurl{ThetaLevels.levels_closed} (4,010).
+See \path{ExistsThetaLatticeCorrespondenceWeilOperatorStatement.lean:7--8},
+\path{WeilRepresentationThetaMovedLattice.lean:21--43},
+\path{ThetaFunctionsAllLevelsClosure.lean:29--68} and
+\path{WeilRepresentationCommHeisenbergIntertwiner.lean:88--100}.
+Let $(g,h)$ and $(g_1,h_1)$ move the standard pair to $(L,M)$ and
+$(L_1,M_1)$. Apply the vacuum identity first at the relative movers
+$k=g^{-1}g_1$, $k'=h^{-1}h_1$. Acting next by $W(g,h)$ pushes their
+average to the average from $A_{LM}$ to $A_{L_1M_1}$. Indeed the lattice
+correspondence identifies the two finite quotients of the target lattice
+by its intersection with the source lattice. It therefore preserves the
+factor $[A':A'\cap A]^{-1/2}$. On each coset the Weil action carries a
+Heisenberg translate to the corresponding translate; changing its
+representative by an element of the intersection preserves the
+semicharacter-weighted summand. Summation proves the intertwining identity.
+Related inputs are the lattice facts used for coordinate moves
+(\nolinkurl{VacuumScalar.lattice_facts}, 4,615 lines,
+\path{OddnessConditionHolds.lean:378--414}), unitarity of the normalized
+intertwiner (\nolinkurl{theta_translation_intertwiner_unitary},
+3,407 lines, \path{ThetaTranslationIntertwinerUnitary.lean:183--202}),
+and existence of an arithmetic lattice for each adelic mover
+(\nolinkurl{NormSum.exists_lattice_of_adelic_point}, 1,105 lines,
+\path{ExistsLatticeOfAdelicPoint.lean:231--252}).
+The representation product law now gives
+\[
+ E(L_1,M_1)=c(k,k')I_{A_{LM},A_{L_1M_1}}E(L,M).
+\]
+For $g_1=g$ the source factor is one and the target factor is
+$\eta(\operatorname{detId}(M,M_1))^{-n/2}$. For $h_1=h$ the target factor is one
+and the source factor is $\eta(\operatorname{detId}(L,L_1))^{m/2}$.
+See \nolinkurl{WeilInter.quot_bijective}, \nolinkurl{wd_congr},
+\nolinkurl{om_iop} (\path{WeilRepresentationCommHeisenbergIntertwiner.lean:28--67,88--125})
+and \nolinkurl{TrueTheta.exists_family_of_curve}
+(\path{ExistsThetaVectorFamilyOfCurveDatum.lean:47--67,95--108}).
+
+\paragraph{The scalar for rational movers.}\phantomsection\label{r14:eq-rational}
+For $u=\det g$ rational unitary, $u\bar u=1$. Write $u=b/\bar b$,
+using $b=1+u$ for $u\ne-1$ and $b=\sqrt{-d}$ otherwise. A Hecke
+character of infinity weight $j_\tau$ and sign $\epsilon$ then gives
+$\psi(b)^{\epsilon}=\prod_\tau\tau(u)^{-k_\tau}$ if
+$2k_\tau=\epsilon j_\tau$. This follows by the principal-idele law and
+$\tau(b)/\overline{\tau(b)}=\tau(u)$. Apply this to the exact Weil
+vacuum multiplier with the above two weights. For a single rational
+source mover it gives $\prod_\tau\tau(\det g)^{-m/2}$, and for a
+single target mover it gives $\prod_\tau\tau(\det h)^{n/2}$.
+See \nolinkurl{RatEqui.exists_root}, \nolinkurl{char_value},
+\nolinkurl{det_root} (\path{OddEqOfEven.lean:26--71}) and
+\nolinkurl{VacuumExact.vacuum_exact} (\path{WeilOperatorVacuumExactConstantEvenRank.lean:79--105}).
+
+To compare the analytic pullback on $v$ with the same average, first
+suppose $1-g$ is invertible. On each complex matrix space right
+multiplication gives
+$D_0=\det_{\mathbf C}(1-u_0^{-1})=\prod_\tau\tau(\det(1-g))^m$,
+where $u_0^{-1}$ acts by right multiplication by $g_\tau$.
+In the periodized Gaussian formula of Paragraph~\ref{par:r4-z43-iso}
+(an earlier argument inside partial unit Z4.3, treated as a supplier by
+review A)
+the scalar is $|D_0|/D_0$ times the normalized Gauss phase. Here the
+half-coordinate projection on the unchanged even-dimensional side splits
+the finite quotient sum into two factors, interchanged by the coordinate
+reversal, so the factors are equal. The auxiliary integral endomorphism
+commuting with that projection conjugates the summand and permutes its
+first factor. The first sum is real, and the full sum is its square.
+The intertwiner and pullback have equal norms on $v\ne0$, so the
+nonnegative phase is one. For $w=\tau(\det(1-g))$ the identity
+$\det g\,\overline{\det(1-g)}=\det(1-g)$ follows by taking
+determinants of $g(1-g^*)=-(1-g)$ and using even $n$. Hence
+$|w^m|/w^m=\tau(\det g)^{-m/2}$. On the target side $1-h^*$ acts
+on the left, repeated $n$ times. For
+$w'=\tau(\det(1-h^*))$ one has
+$\overline{w'}=\tau(\det h)w'$, giving
+$|w'^n|/w'^n=\tau(\det h)^{n/2}$.
+These two constants agree with the Weil multipliers, including their
+signs. See \nolinkurl{SymConst.gauss_nonneg}, \nolinkurl{const_of_symm}
+(\path{UnitaryThetaConstantEqInverseDeterminantPhase.lean:39--56,98--107,243--278}),
+\nolinkurl{finsum_quotient_nonneg_of_swap_conj} (\path{FinsumQuotientNonnegOfSwapConj.lean:75--99}),
+\nolinkurl{RatRow.pull_eq_smul_iop}
+(\path{ThetaPullbackFirstGroupRationalPointEqSmul.lean:128--190}) and
+\nolinkurl{RatEqui.pull_right_eq_det_smul}
+(\path{ThetaPullbackSecondGroupRationalPointEqDetSmul.lean:150--180}).
+
+Here is the integral endomorphism in the phase calculation. If $j$ clears
+the denominators of $(1-u_0^{-1})^{-1}$ on the working period lattice,
+choose $\ell,b\in\mathcal O_E$ with $\ell\bar\ell=-1+4jb$. To see the
+congruence, factor $(4j)$ into prime powers. On a conjugate pair choose
+residues $1,-1$. At a fixed prime $P$ the host's unramified conjugation
+induces a nontrivial residue involution; no fixed prime lies above $2$.
+The latter follows from $\bar w_0=1-w_0$ and $w_0(1-w_0)\in P$ above
+$2$: primality and stability would put both $w_0$ and $1-w_0$ in $P$.
+At such an odd fixed prime the norm from the finite residue field onto
+the fixed field is surjective. Lift a solution modulo $P^a$, $a\ge1$,
+by putting $d=z\bar z+1$ and $z_1=z(1+yd)$, where $2y=1$ modulo
+$P$. Since $y+\bar y=1$ modulo $P$, the new error modulo $P^{a+1}$
+is $d(1-y-\bar y)=0$. Chinese remaindering gives $\ell$ globally, and
+conjugation of its norm equation shows $\bar b=b$.
+Use entrywise multiplication by $\ell$ and $b$ on the unchanged side
+of the matrix space. Both preserve the lattice and commute with the
+half-coordinate projection and the moving unitary. Their pairing obeys
+$H(\ell x,\ell y)=-H(x,y)+4jH(bx,y)$. Thus multiplication by $\ell$
+is invertible modulo $j$, with inverse $-\bar\ell$. For the Cayley operator
+$C=(1+u_0^{-1})(1-u_0^{-1})^{-1}/2$, write $jx=y-u_0^{-1}y$ with
+$y,u_0^{-1}y$ in the lattice. Then $2jCx=y+u_0^{-1}y$ is integral.
+Substitution in the phase
+$\exp(\pi i(s\operatorname{Re}H(x,x)-\operatorname{Im}H(Cx,x)))$
+reverses its sign in the exponent modulo $2\mathbf Z$. Indeed
+$2s\operatorname{Re}H(bx,x)$ is integral by polarizing the integral
+diagonal, and $2j\operatorname{Im}H(bCx,x)$ is integral by the
+preceding identity. This proves the conjugate permutation of the first
+half of the finite sum. See \nolinkurl{NegOneNorm.exists_norm_eq_neg_one},
+\nolinkurl{exists_dvd_mul_involution_add_one}
+(\path{ExistsDvdMulInvolutionAddOne.lean:12--79,81--127}),
+\nolinkurl{NormResidue.exists_mul_involution_add_one_mem_pow}
+(\path{ExistsMulInvolutionAddOneMemPow.lean:41--106}),
+\nolinkurl{SymConst.gauss_nonneg}
+(\path{UnitaryThetaConstantEqInverseDeterminantPhase.lean:140--192}),
+\nolinkurl{RatRow.pull_eq_smul_iop} and \nolinkurl{RatEqui.pull_right_eq_det_smul}
+(\path{ThetaPullbackFirstGroupRationalPointEqSmul.lean:197--219},
+\path{ThetaPullbackSecondGroupRationalPointEqDetSmul.lean:196--234}).
+
+The equality on $v$ extends to every rational Heisenberg translate of $v$
+by covariance of both operators. At each finite level, character projection
+on the finite period quotient expresses the section as a linear combination
+of these translates: the standard fixed-character component is the
+one-dimensional standard theta space, and translating by dual torsion
+points gives the other components. Thus $W$ agrees with pullback on the
+theta span. To include a rational matrix with eigenvalue $1$, factor
+$g=(zg)(\bar z\,1)$ with $z\bar z=1$, $z\ne1$, and $z^{-1}$
+outside the finite spectrum of $g$. Indeed for a nonzero imaginary
+$\theta$, $(t+\theta)/(t-\theta)$ gives infinitely many distinct
+norm-one scalars as $t$ varies in $\mathbf Q$; only finitely many are
+excluded. See \nolinkurl{exists_normOne_scalar_avoiding_matrix_eigenvalues}
+(\path{ExistsNormOneScalarAvoidingMatrixEigenvaluesStatement.lean:8--9}).
+Both factors are admissible for the
+preceding calculation. Multiply their operator identities; the same
+factorization works for $h$. Finally the two groups act on different
+sides of $z_\tau$. Multiplication of the two identities and
+$W(\gamma_A g,\gamma'_A h)v=W(\gamma_A,\gamma'_A)W(g,h)v$
+prove simultaneous covariance for $E$. See \nolinkurl{ThetaSpan.theta_span}
+(\path{ThetaSpanRationalTranslatesVacuum.lean:143--176}),
+\nolinkurl{RatExtend.om_eq_pull_of_vacuum}
+(\path{OmEqPullOfVacuum.lean:207--227}),
+\nolinkurl{RatEqui.exists_factor}, \nolinkurl{isPull_row}, \nolinkurl{isPull_col}
+and the $a=a'=0$ specialization of \nolinkurl{oddEq_of_even}
+(\path{OddEqOfEven.lean:82--109,117--180}; its full statement permits
+arbitrary exponents satisfying the two weight equations),
+and \nolinkurl{TrueTheta.exists_family_of_curve}
+(\path{ExistsThetaVectorFamilyOfCurveDatum.lean:82--94}).
+
+\paragraph{Change from the reference character to the prescribed one.}\phantomsection\label{r14:eq-normalize}
+At $(S,S')$ the reference vector is nonzero. The tensor $B.\mathrm{thZero}$
+belongs to this same theta line: its factors are entire and their
+translation laws multiply. On a standard matrix period the quadratic
+exponent is a sum of integral entry exponents, so its semicharacter is
+exactly the product of theirs. Self-duality of the imaginary form gives
+at most one independent theta vector, by the Fourier-coefficient
+recursion in Paragraph~\ref{par:r4-z43-iso}. In applying that fact to
+the actual period lattice, trace-dual families for the Hom lattice provide
+an expansion of each vector; testing against the dual generators reduces
+the alternating duality test to the elliptic period lattice. Hence
+$B.\mathrm{thZero}=aE(S,S')$ with one $a$ depending only on the ranks
+and fixed initial data. No division by $a$ is needed.
+See \nolinkurl{WeilVac.thZero_mem}
+(\path{ExistsWeilOThZeroTriv.lean:80--103}) and \nolinkurl{ThetaLine.theta_line},
+\nolinkurl{of_dual_families}
+(\path{ThetaSpaceSelfDualPairAtMostLine.lean:145--170,209--220,276--294}).
+
+Write $C_\chi(L,M)=\chi(\operatorname{detId}(S,L))^{m/2}\chi(\operatorname{detId}(S',M))^{-n/2}$.
+For a chain of self-dual lattices relative determinants multiply and are
+norm-one ideals. Inverting the chain gives the reciprocal character value
+because $\chi(1)=1$; in particular all these factors are nonzero. Transport
+$E(S,S')$ first to $(L,S')$ and then to $(L,M)$ by the two single-lattice
+laws. By complex linearity of each finite average,
+\[
+ e_\chi(L,M)=a\frac{C_\chi(L,M)}{C_\eta(L,M)}E(L,M).
+\]
+Composition of relative determinant ideals, including their norm-one
+property for self-dual pairs, is the input \nolinkurl{RelDetIdeal.detId_normOne_mul}
+(\path{DetIdNormOneMul.lean:156--166}). For $gL$ the relative determinant is multiplied by $(\det g)$; the forward
+map is $g$, and the inverse inclusion is obtained with $g^*$.
+Both $\chi$ and $\eta$ therefore acquire the same
+$\prod_\tau\tau(\det g)^{-1}$. The target determinant has the
+analogous multiplier. The ratio above is invariant under both moves,
+and the covariance of $E$ proves the first displayed law. Changing
+only $M$ to $M_1$ multiplies the ratio by
+$[\chi(\operatorname{detId}(M,M_1))/\eta(\operatorname{detId}(M,M_1))]^{-n/2}$.
+The denominator cancels against the reference target factor. Changing only
+$L$ yields the same cancellation with exponent $m/2$. These are the
+second and third laws on the same $B$ and $\chi$. See
+\nolinkurl{chi_detId_mul}, \nolinkurl{chi_detId_ne_zero}, \nolinkurl{iop_mul}
+(\path{MovedVacuumMemThetaFunctionsAndMoves.lean:65--87}),
+\nolinkurl{ChiFacLaw.detId_image} (\path{DetIdLatGmap.lean:15--33}),
+\nolinkurl{NatEqui.chi_smulLat}, \nolinkurl{sd_smulLat},
+\nolinkurl{chiFac_ne_zero}, \nolinkurl{chiFac_right}, \nolinkurl{chiFac_left}
+and \nolinkurl{NatEqui.eqP}
+(\path{NormalisedFamilySatisfiesEquivarianceLaws.lean:17--57,59--117}).
+
+\paragraph{The two uses on Z4.3.}\phantomsection\label{r14:eq-z43}
+For the tied datum use $t.\mathrm{cc\_ok},t.\delta\mathrm{\_ok},
+t.\chi\mathrm{\_ok}$ in the preceding proof. At an inert prime
+$p\ge5$ with Jacobi symbol $(-d/p)=-1$, weak approximation in
+\nolinkurl{KerInert.transOne} supplies $L=gM$, $L'=hM'$ where $M,M'$ are self-dual
+of even ranks and locally standard at $p$.
+Apply the first law to this very $M,M',g,h$. It changes the normalized
+vacuum in the translated series to its pullback. The separate torsion
+transport, coefficient algebraicity, standard-pair estimate and pullback
+of the basis then apply. Lean takes the same conjunct from
+\nolinkurl{eulerProduct_eq_of_curve_ideal}; the proof here supplies it
+through the reference family. The reader for the class-sum argument is chosen separately. In
+\nolinkurl{at_of_true_columns} the inert-series supplier
+\nolinkurl{admissibleKernelSeries_inertPrime_nonConjugateFrobenius} takes
+the adapted $t$ and $t.\mathrm{Hyp}$. The complex forms supplier
+\nolinkurl{kernelClassSums_carry_chainComplexForms} takes
+$t'$ with $\mathrm{ColSide}(t')$ and $\mathrm{FormsPin}(t')$.
+These are exactly the existential witnesses of $\mathrm{Duty}(t).\mathrm{forms}$.
+To compare characters, choose the witness actually constructed by
+\nolinkurl{Pdv.duty_of_std}. Its standard-reader supplier
+\nolinkurl{Pdv.stdKer_stdRd} rebuilds the record with the prescribed
+reader and top chain and copies $\mathfrak c,\delta,B,\chi,c_D,O$ and
+the entry function. Thus this explicit witness has the original
+character. An arbitrary witness of the existential supplies its own
+character for the same universal covariance law. See
+\nolinkurl{Pdv.Duty} (\path{IsEntC.lean:39--43}),
+\nolinkurl{at_of_true_columns} (\path{AtOfTrueColumns.lean:32--42}),
+\nolinkurl{duty_of_std} (\path{ConditionsAtStandardKernelComparisonTrueColumns.lean:17--24})
+and \nolinkurl{standardKernelData_with_standardBaseLevels}
+(\path{StandardKernelDataWithStandardReadersStatement.lean:13--14},
+\path{StandardKernelDataWithStandardBaseLevels.lean:15--16,31--42}).
+
+For the complex stabilizer use a compatible
+seam, the admitted seam lattices and a unitary $h$ stabilizing the target
+lattice. Take $g=1$ and use the seam's unitary matrix of $h$. Both lattice
+arguments stay fixed. Under reindexing the conjugate transpose on the
+left is the inverse of the target action, so substitution gives
+$e(L_hz)=e(z)$ in the reader's coordinates. The finite datum's own
+multiplier is a separate input. See \nolinkurl{TieBase.base_data}
+(\path{KernelEntryPeriodNeZeroAndLatticeLaws.lean:14--19}),
+\nolinkurl{KerInert.transOne} (\path{InertCoprimeLemmas/IntAsm.lean:55--77}),
+\nolinkurl{KerLaw.vac_leftE}, \nolinkurl{thC_left_stab}
+(\path{ThCLeftStab.lean:368--397,432--436}).
+
+\emph{Review boundary.} This derivation reconstructs both reference
+transports, the exact scalar cancellation, and the two uses of the first
+law. The construction of the finite action and the inert
+vacuum calculation continue at pp.~\pageref{r14:weil-action}
+and~\pageref{r14:weil-sign}, with their stated local inputs.
+The reference coefficient field uses the algebraicity and conjugation of
+averaged jets as in the vector-family argument on
+p.~\pageref{r14:vec-fixed}. The review confirms the scalar cancellation and records the full
+$\mathrm{EqP}$ and its first conjunct as conditional. For the first
+conjunct the vacuum enters \nolinkurl{TrueTheta.exists_kappa} only
+through membership in the standard theta space and nonvanishing
+(\path{ExistsMovesOfSelfDual.lean:570--578},
+\path{ExistsThetaVectorFamilyOfCurveDatum.lean:82--94}).
+Taking an arbitrary such vector bypasses \nolinkurl{Vacuum.exists_vacuum},
+its three Hasse-norm boundary declarations and the three CM coefficient
+laws; the movers and the Weil identities remain inputs. The remaining Z4.3
+application premises and its weighted kernel expansion are separate.
+
+\paragraph{The finite Weil action on the translates of one vacuum.}\phantomsection\label{r14:weil-action}
+Write $U(x)$ for Heisenberg translation, $A$ for the completed standard
+lattice, and $v$ for its nonzero fixed vacuum. Its translates span the
+all-level theta space by \nolinkurl{FinWeil.Vacuum.vacuum_fixed_span}
+(\path{AdelicWeilVacuumFixedAndTranslatesSpan.lean:57--90}). The passage
+to the adelic model uses \nolinkurl{FinWeil.Model.exists_isModel}
+(\path{ExistsAdelicWeilRepresentationModel.lean:67--129}), and its
+identification with the analytic average uses \nolinkurl{FinWeil.iop_eq_sumOp}
+(\path{ThetaIntertwinerEqNormalisedAdelicSum.lean:60--127}).
+For a unitary pair $g$, put $A_g=gA$ and prescribe
+\[
+  L_g U(x)v=U(gx)v_g,\qquad
+  v_g=\lambda([A_g:A_g\cap A])^{-1}
+               \sum_{b\in A_g/(A_g\cap A)}U(b)v .
+\]
+The sum uses representatives. Changing a representative by the intersection
+does not alter the summand by the fixed-vector and isotropy laws, and
+translation by $A_g$ fixes the sum. Here is why the prescription respects
+relations. For $a\in A$, the vectors $U(x)v$ have eigencharacter
+$a\mapsto\gamma(a,x)$ under $U(a)$. Distinct cosets modulo $A$ give
+distinct characters by self-duality. A finite relation therefore splits
+by these characters: acting by $U(a)-\gamma(a,x_0)$ removes a chosen
+term, and induction separates any two different characters. Within one
+coset the translates are proportional by the Heisenberg multiplication
+law. The primed vectors $U(gx)v_g$ obey exactly the same proportionalities
+and character distinctions under $U(ga)$, because $g$ preserves
+$\gamma$. Thus $L_g$ exists on the span. On a translate, composition
+reduces to sending the representatives for $A_k/(A_k\cap A)$ to their
+images under $g$, then composing the two normalized averages. The
+composition formula for self-dual lattices gives $L_g L_k=L_{gk}$.
+Its induction chooses an intermediate adjacent lattice, reducing the
+relative index by a residue-field cardinal greater than one. The
+adjacent-lattice composition formula is a separate input of that
+induction. The normalization uses $\lambda(p)=\sqrt p$ off the
+inert primes and $\sqrt p\exp(\pi i/f_p)$ at an inert prime of residue
+degree $f_p$, so $\lambda(p^{f_p})=-\sqrt{p^{f_p}}$ there. On split-supported
+moves the relative index has no inert prime divisor; the normalized
+adelic sum becomes the positive-square-root theta average. Multiplying
+$L_g$ by the two determinant characters gives the split vacuum scalar
+above. See \nolinkurl{FinWeil.exists_weil_rep}
+(\path{ExistsWeilRepresentationHeisenberg.lean:81--120,135--192,198--278}),
+\nolinkurl{FinWeil.normOp_comp}
+(\path{NormalizedHeisenbergIntertwinerComp.lean:14--44}),
+\nolinkurl{FinWeil.exists_lam}, \nolinkurl{FinWeil.exists_goodNorm}
+(\path{ExistsGoodIndexNormalizationNegativeInert.lean:34--73,92--125}) and
+\nolinkurl{FinWeil.exists_weil_of_vacuum} (\path{ExistsWeilOfVacuum.lean:22--42,71--83}).
+
+\paragraph{The sign of an inert neighbour.}\phantomsection\label{r14:weil-sign}
+Let $k$ be the residue field at the conjugation-stable maximal ideal,
+with nonidentity involution $s$ and fixed field $F$. In the local
+triangle of rank $r$, the two quotient coordinates are in $k^r$.
+The condition that the sum of their representatives lies in the first
+lattice identifies the coordinates on the diagonal. The off-diagonal
+pairings between different indices are trivial, leaving one factor
+$\sum_{t\in k}\psi_i(t s(t))$ for each coordinate. Here $\psi_i$
+is an additive character trivial on the defining ideal. Its restriction
+to $F$ is nontrivial: triviality on all $a+s(a)$ would put the first
+generator for that coordinate in the third lattice by self-duality,
+and the two quotient-coordinate kernel tests would then imply
+$1$ lies in the defining ideal. To evaluate the factor, write
+$q=|F|$. The nonidentity involution on a finite field has order two,
+so $|k|=q^2$, $s(t)=t^q$, and the norm $t\mapsto t^{q+1}$ has
+$q+1$ preimages on each nonzero element of $F$ by cyclicity of $k^\times$.
+Its zero fibre has one element. Character orthogonality gives
+\[
+ \sum_{t\in k}\psi_i(t s(t))
+     =1+(q+1)\sum_{u\in F^\times}\psi_i(u)=-q .
+\]
+The triangle multiplier is the product of these factors times a
+positive real normalization. Its eighth power is one, hence the
+multiplier is $(-1)^r$. For a single neighbour $B\to C$, choose the
+local transvection taking $B$ to $C$ and fixing a third neighbouring
+lattice $A$. Its transported vector at $A$ is fixed because two
+inert-supported movers with the same lattice differ by an integral
+stabilizer. Express the vector at $B$ as a multiple of the average
+from $A$ using the theta-line property. Transport gives the same multiple
+for $C$, and the triangle just evaluated supplies the sign for the
+step $B\to C$. A neighbour towards the standard lattice lowers
+$\ell(S,L)=\operatorname{length}(S/(S\cap L))$ by one. The intermediate
+distributive triple has multiplier one, so induction gives
+$(-1)^{m\ell(S,L)+n\ell(S',M)}$ for both sides together, with ranks
+$n,m$ respectively. It is one for the two even ranks here. This
+derivation uses the local transvection, diagonal neighbour coordinates,
+and the positive-normalization/eighth-root property of the triple as
+inputs. See \nolinkurl{NormGauss.exists_norm_eq}, \nolinkurl{NormGauss.sum_norm_neg}
+(\path{FinsumNormNeg.lean:8--55,57--183}),
+\nolinkurl{TriangleSign.mu_eq_sign}
+(\path{ThetaTripleConstantEqNegOnePow.lean:98--161,173--221}), and
+\nolinkurl{InertSign.exists_move}, \nolinkurl{InertSign.core}, \nolinkurl{InertSign.vacuum_inert}
+(\path{WeilRepresentationVacuumSignInertPlaces.lean:89--119,144--196,197--236,275--327}).
+
+% blueprint/ch_P_r14.tex lines 1060 through 1110; r14:base-assembly
+\subsection{Assembly and downstream use}\label{r14:base-assembly}
+For the given $t$, use the nonzero period of Section~\ref{r14:base} in
+\nolinkurl{Base.latAll}. This proves both the single-pair lattice laws and
+the two ordered indices between any admitted pairs. Specialize
+\nolinkurl{ColNorms.familyVectors} to $(D,\mathfrak c,\delta,B,\chi)$ with
+the three host and finite-support arguments listed in
+Section~\ref{r14:vec}. This gives membership, nonvanishing and one number
+field for all coefficient indices at each pair. Section~\ref{r14:equivariance}
+specializes \nolinkurl{Mem.NatEqui.eqP} to the same three correctness
+fields of $t$. Its \emph{single scalar for fixed ranks} is determined at
+the standard pair and transported to every pair. The scalar used in the
+coefficient-field descent is allowed to depend on the pair. Thus both
+universal statements concern $B.e^{\mathrm{nat}}(\chi)$ with their declared
+quantifiers. Taking the indicated conjunction proves the proposed
+implication of \nolinkurl{GlobalTheory.TieBase.base_data}
+(\path{SatakeParameters/KernelEntryPeriodNeZeroAndLatticeLaws.lean:14--19}).
+Review A confirmed as hand-proved the conjunction $\delta\ne0\ \land B.\mathrm{LatAll}$ in this partial unit. The assembly and character
+factors match the root. The proofs of $\mathrm{VecP}$ and
+$\mathrm{EqP}$ still depend on the suppliers specified above. Neither $t.\mathrm{Hyp}$ nor a second character
+is a premise of this assembly.
+
+\paragraph{Where these conclusions enter the next units.}
+Z4.2.09 uses the four conclusions to specialize the split-site law with
+the pair, position, frame movement and away-from-place laws on the same
+site (\nolinkurl{TwV.site_law_xiIn},
+\path{SatakeParameters/KernelSiteLawAndFixedCoordinateStabiliserLaw.lean:20--45}).
+The pullback for Z4.2.10 and .11 receives them through
+\nolinkurl{kernelEntry_period_ne_zero_and_lattice_laws} in
+\nolinkurl{SPull.kerTh_eq_pull}
+(\path{SatakeParameters/ThetaKernelFunctionAdelicPointsEqPullbackClassKe.lean:65--79}).
+At Z4.2.12 the site supplies the dictionary, pair, position, move,
+away and scalar laws. One embedding extending that site's $\lambda$ serves
+both the zero-step and positive-step frame comparisons.
+See \nolinkurl{admissible_at_each_site}, \nolinkurl{site_cmpLite_siteAdm}
+(\path{SatakeParameters/JointSiteChainComparedCarriesAdmittedSystem.lean:29--49,62--83}).
+The split-place interpolation, independent class-kernel comparisons and
+assembly retain their own additional conclusions and hypotheses.
+The twisted-prime law Z4.2.02 is a further open unit.
+
+\paragraph{Which dependency size is being counted.}
+At the pinned source, traversing type and value edges of
+\nolinkurl{TieBase.base_data} until the first literature declaration gives
+9,400 core declarations and eight literature leaves. The core contributes
+60,733 inclusive declaration lines. Counting only the 3,766 core
+theorems with valid ranges gives 51,444 lines; removing the 176 singleton
+ranges gives 51,268. These are three measures of the same root. Its
+entire 60,733-line cone belongs to each of Z4.2.09--12. The reference-family
+route \nolinkurl{NatEqui.eqP} accounts for 50,356 core lines inside it.
+This last number measures dependencies, not how many lines have received
+independent mathematical review (\path{blueprint/status.json},
+\path{out/R14_pending.json}).
+
+% Parent source SHA-256: 726efab7fd295a2dce4fc43b2a38c6ed087511bfb339c03e564ed0607ef7693c
+% blueprint/ch_P_r15.tex lines 1092 through 1183; r15:weil
+\paragraph{Constructing an operator with prescribed characters.}
+\phantomsection\label{r15:weil}
+For even $n,m$, every $v\ne0$ and every pair of Hecke characters
+$\psi,\psi'$ of ranks $n,m$ admit a $W$ with
+$(W.\mathrm{chV},W.\mathrm{chV}',W.\mathrm{ep},W.\mathrm{ep}')
+=(\psi,\psi',1,1)$.
+The construction works for arbitrary ranks in
+\nolinkurl{FinWeil.exists_weil_of_vacuum}, which specializes to
+\nolinkurl{FinWeil.exists_weil}
+(\path{FoundationProofs/ExistsWeilOfVacuum.lean:22--83}).
+
+Use the adelic Heisenberg model on the finite-level space
+$\mathcal H=\mathrm{TT}$, with operators $U(x)$, commutator pairing
+$\gamma$, self-dual standard lattice $A$ and action
+$\rho(g,h)x=hxg^{-1}$. The model supplies agreement on rational points
+and, on each vector, constancy on a sufficiently small open coset.
+The standard theta law and density make $v$ fixed by $A$. Restriction
+to rational periods and the one-dimensional theta bound show that the
+$A$-fixed vectors are $\mathbf C v$. A vector fixed by $lA$ splits
+under the finite abelian action of $A/lA$ into character components.
+Self-duality pairs this group perfectly with $l^{-1}A/A$; applying an
+inverse Heisenberg translate turns each component into an $A$-fixed
+vector. Hence the $U(x)v$ span $\mathcal H$.
+These uses of \nolinkurl{Model.exists_isModel},
+\nolinkurl{Vacuum.vacuum_fixed_span}, and \nolinkurl{span_translates_vacuum}
+are in \path{FoundationProofs/ExistsAdelicWeilRepresentationModel.lean:67--129},
+\path{FoundationProofs/AdelicWeilVacuumFixedAndTranslatesSpan.lean:36--90},
+and \path{FoundationProofs/SpanHeisenbergTranslatesVacuumEqTop.lean:10--76}.
+
+For self-dual commensurable $A,B$ and $u$ fixed by $A$ use
+$T_{AB}u=\lambda([B:A\cap B])^{-1}\sum_{b\in B/(A\cap B)}U(b)u$.
+The good normalization $\lambda$ equals the positive square root on
+indices without inert factors. On a simple quotient by a
+conjugation-stable prime $P$, its value is $-\sqrt{|k_P|}$.
+The host condition $D.\mathrm{host.der.unramEF}$ excludes ramification
+in the relative extension, so the nonsplit primes here are inert
+(\nolinkurl{FinWeil.exists_goodNorm},
+\path{FoundationProofs/ExistsGoodIndexNormalizationNegativeInert.lean:92--125}).
+Each sum is $B$-fixed by reindexing. The composition rule
+$T_{BC}T_{AB}u=T_{AC}u$ follows from the adjacent-lattice sum identity
+by induction on $[B:A\cap B]$: take an adjacent $A'$ towards $B$
+with $d_{AB}=d_{AA'}d_{A'B}$ and $d_{AA'}>1$, where $d_{AB}=[B:A\cap B]$.
+Apply the adjacent identity first with target $B$, use induction from
+$A'$ with target $C$, then apply the adjacent identity with target $C$.
+At index one, self-duality implies $B=A$ and $T_{AA}u=u$. The local
+input for the equal-intersection adjacent case is the signed Gauss
+factor; the construction also uses existence of $A'$.
+See \nolinkurl{exists_goodNorm}, \nolinkurl{sumOp_comp_of_adj_of_inf_eq},
+\nolinkurl{normOp_comp} and \nolinkurl{exists_adj_selfDual_step}
+(\path{FoundationProofs/ExistsGoodIndexNormalizationNegativeInert.lean:92--125},
+\path{FoundationProofs/HeisenbergSumCompOfAdjacentOfInfEq.lean:22--192},
+\path{FoundationProofs/NormalizedHeisenbergIntertwinerComp.lean:14--45},
+\path{FoundationProofs/ExistsAdjacentSelfDualLatticeToward.lean:65--104}).
+
+For $s=(g,h)$ put $A_s=\rho(s)A$, $v_s=T_{A A_s}v$, and define
+$L_sU(x)v=U(\rho(s)x)v_s$. To see that the formula respects relations,
+separate the $A$-eigencharacters of the translates in a finite
+relation. Distinct cosets modulo $A$ give distinct characters by
+self-duality. Inside one coset the Weyl product expresses every
+translate as a scalar multiple of one nonzero translate. The same
+scalar occurs after transport because $v_s$ is $A_s$-fixed and $\rho$
+preserves the pairing and the multiplication phase. Thus $L_s$ extends
+linearly and intertwines $U$ with $U\circ\rho(s)$. Transporting the
+summation representatives by $\rho(s)$ gives
+$L_sL_t v=T_{A_s A_{st}}T_{A A_s}v=v_{st}$; intertwining extends
+this equality and $L_1=1$ to the spanning translates
+(\nolinkurl{exists_weil_rep},
+\path{FoundationProofs/ExistsWeilRepresentationHeisenberg.lean:105--197,198--278}).
+
+Twist $L_s$ by $c_\psi(h)c_{\psi'}(g)$, with
+$c_\eta(g)=\eta(1-\varepsilon+\varepsilon\det g)$, where
+$\varepsilon$ selects one component above each split prime. This is a
+character, trivial on inert-supported movers. If
+$x=\det(g)\bar x$ and $x=1$ at inert primes, the quotient of $x$ by
+$1-\varepsilon+\varepsilon\det g$ is $b\bar b$, where
+$b=1-\bar\varepsilon+\bar\varepsilon x$. The norm law gives
+$c_\eta(g)=\eta(x)$. Extend the twisted operator by zero outside
+$\mathcal H$. On $\mathcal H$ it preserves the space and satisfies
+additivity, homogeneity, identity and composition. Constancy at
+$\rho(s)x$ supplies the modulus for the rational lift law. For
+integral inert-supported movers $A_s\subset A$, so the sum on $v$
+has one term and the twist is one. At split-supported movers the index
+has no inert factor and the sum equals the positive-normalized analytic
+intertwiner: the comparison uses rational representatives of
+$A_s/(A_s\cap A)$ and agreement of $U$ with rational Weyl operators.
+The multiplier on $v$ is $\psi(x')\psi'(x)$. This verifies the three
+remaining operator laws. The index and coset comparisons used here
+are \nolinkurl{idx_map_actA} and \nolinkurl{iop_eq_sumOp}; the twist
+is \nolinkurl{SplitCharacter.exists_split_character}
+(\path{FoundationProofs/HeisenbergRelativeIndexTranslateCompletedLattice.lean:13--32,48--108},
+\path{FoundationProofs/ThetaIntertwinerEqNormalisedAdelicSum.lean:60--127},
+\path{FoundationProofs/ExistsSplitCharacterUnitaryGroup.lean:71--116}).
+
+% blueprint/ch_P_r15.tex lines 1185 through 1260; r15:vacuum-inert
+\paragraph{The sign at inert places.}\phantomsection\label{r15:vacuum-inert}
+Let $nm$ be even and let $W$ be any Weil operator on $v$; its field
+$W.\mathrm{nz}$ gives $v\ne0$. For inert-supported movers $g,h$
+taking $S,S'$ to $L,L'$, set $A_f=\mathrm{La}(L,L')$ and
+$\ell(B,C)=\mathrm{length}_{\mathcal O_E}(B/(B\cap C))$. Then
+\[
+ W(g,h)v=(-1)^{n\ell(S',L')+m\ell(S,L)} I_{A_0 A_f}v.
+\]
+In \nolinkurl{InertSign.vacuum_inert} the analytic input is that each
+moved theta space is at most a line, with mutually inverse normalized
+intertwiners, equivariant for $W$ on moved pairs
+(\path{FoundationProofs/WeilRepresentationVacuumSignInertPlaces.lean:254--327};
+\nolinkurl{ThetaLine.theta_line}, \nolinkurl{WeilInter.om_iop},
+\path{FoundationProofs/ThetaSpaceSelfDualPairAtMostLine.lean:276--294},
+\path{FoundationProofs/WeilRepresentationCommHeisenbergIntertwiner.lean:88--125}).
+
+The moved vector belongs to that line by
+\nolinkurl{WeilTheta.om_mem_Th_moved}
+(\path{WeilRepresentationThetaMovedLattice.lean:21--43}).
+\nolinkurl{T.kernelLattices_form_selfDual_triples} provides the
+triple multiplier and \nolinkurl{T.exists_traceOne_integer_conj_diff_prime_to}
+supplies a trace-one integer whose conjugate difference is nonzero
+modulo the chosen prime (\path{KernelLatticesFormSelfDualTriplesStatement.lean:7--8},
+\path{ExistsTraceOneIntegerConjDiffPrimeToStatement.lean:7--8}).
+
+Move one coordinate, keeping opposite rank $r$ fixed. Write $E_B$ for
+the image of $v$ under an inert mover to $B$. Two such movers differ
+on the right by an integral inert stabilizer; hence $E_B$ is
+well-defined, and the inverse action makes it nonzero. For a nonzero
+length choose a simple submodule of $S/(S\cap B)$ with generator
+$x$ lifted to $S$; write $P$ for its annihilator. Then $x\notin B$,
+$Px\subset B$, and $\langle x,x\rangle$ is integral. The prime $q$
+under $P$ is inert: otherwise $S$ and $B$ agree at $q$, so some
+$s$ prime to $q$ carries $x$ into $B$; B\'ezout applied to $s$ and
+$q$ would give $x\in B$. The nearer neighbour
+$C=\{b\in B:\langle b,x\rangle\in\mathcal O_E\}+\mathcal O_E x$
+reduces the length by one. The local transvection input supplies a
+third reachable lattice $A$ and an inert mover from $B$ to $C$ fixing
+$A$. For the theta lattices associated to these three arithmetic
+lattices write $I_{AB}$, etc., for their intertwiners
+(\nolinkurl{NearerNeighbour.exists_nearer}, \nolinkurl{InertSign.exists_move},
+\nolinkurl{InertSign.core},
+\path{FoundationProofs/CardParitySignLengthOfEq.lean:68--106},
+\path{FoundationProofs/WeilRepresentationVacuumSignInertPlaces.lean:89--119,126--236}).
+
+For this triangle the row or column coordinate theorem over $k=\mathcal O_E/P$
+identifies the contributing pairs of cosets with equal residue coordinates.
+The fixed field $k_0$ has order $Q$, with $[k:k_0]=2$. The
+trivial-character component of the Heisenberg sums is a product of $r$
+sums of $a\mapsto\chi_i(a\bar a)$ on $k$. Here each $\chi_i$ restricts
+nontrivially to $k_0$: the diagonal-pairing lemma proves that triviality
+on traces would make a generator commute with the whole opposite
+lattice, contradicting self-duality and its nonzero residue. The norm
+has $Q+1$ preimages over every nonzero element, so each sum is
+$1+(Q+1)(-1)=-Q$. As the positive-normalized intertwiners have a
+unit-modulus triple scalar, that scalar is $(-1)^r$. For a between-lattice
+or mixed-coordinate distributive triple each contributing phase is one
+by splitting the middle vector into its two intersections; the scalar is
+then $+1$. The lower inputs here are the diagonal coordinates, their
+nondegeneracy, and distributivity, as in
+\nolinkurl{TriangleSign.mu_eq_sign}, \nolinkurl{DistLa.dist_La},
+\nolinkurl{DistTriple.const_eq_one}
+(\path{FoundationProofs/ThetaTripleConstantEqNegOnePow.lean:98--221},
+\path{FoundationProofs/ThetaLatticeTriplesDistributive.lean:103--156},
+\path{FoundationProofs/ThetaTripleConstantEqOneDistributive.lean:10--45}).
+
+Write $E_B=c I_{AB}E_A$ using the line and inverse intertwiner.
+The mover above fixes $E_A$, so equivariance gives $E_C=c I_{AC}E_A$.
+The triangle then gives $I_{BC}E_B=(-1)^r E_C$. The reverse
+intertwiner, the length decrement, and the between-lattice identity
+give $E_B=(-1)^{r\ell(S,B)}I_{SB}v$ by induction, starting from the
+identity mover. Apply this successively in the two coordinates.
+Equivariance, the representation law and the mixed-coordinate scalar
+one give the claimed exponent. Empty coordinate sets give sign $+1$
+(\nolinkurl{InertSign.core}, \nolinkurl{InertSign.vacuum_inert},
+\path{FoundationProofs/WeilRepresentationVacuumSignInertPlaces.lean:126--236,293--327}).
+
+% blueprint/ch_P_r15.tex lines 1262 through 1328; r15:vacuum-exact
+\paragraph{The exact multiplier.}\phantomsection\label{r15:vacuum-exact}
+Now let $n,m$ each be even. For an arbitrary $W$ on $v$, write
+$\psi=W.\mathrm{chV}$, $\psi'=W.\mathrm{chV}'$ and
+$\epsilon=W.\mathrm{ep}$, $\epsilon'=W.\mathrm{ep}'$. For any
+movers $g,h$ to $L,L'$ and ideles satisfying $x=\det(g)\bar x$,
+$x'=\det(h)\bar x'$, one has
+\[
+ W(g,h)v=\psi(x')^{\epsilon}\psi'(x)^{\epsilon'} I_{A_0 A_f}v .
+\]
+First, $G=I_{A_0 A_f}v\ne0$ by applying the reverse intertwiner.
+By \nolinkurl{T.weilOperator_conj_heisenberg_moved_lattice}
+(\path{WeilOperatorConjHeisenbergMovedLatticeStatement.lean:8--9}),
+every period in $A_f$ fixes
+$W(g,h)v$: conjugating by the inverse mover gives a period of $A_0$
+on $v$. This calculation takes place at finite level, since the level
+of $W(g,h)v$ times $[A_0:A_0\cap A_f]$ also works after a shift by
+an $A_f$ period. Thus $W(g,h)v=cG$ on the moved theta line
+(\nolinkurl{VacuumExact.exists_scalar}, \nolinkurl{VacuumExact.vacuum_exact},
+\path{FoundationProofs/WeilOperatorVacuumExactConstantEvenRank.lean:17--52,79--105}).
+
+Let $e=\varepsilon+\bar\varepsilon$ project onto the non-inert
+components. Cutting a mover into $eg+(1-e)1$ and $(1-e)g+e1$ gives
+commuting split and inert parts with product $g$; likewise for $h$.
+Let $A_s,A_i$ be their respective period lattices. The indices
+$d_j=[A_j:A_j\cap A_0]$ satisfy $d_f=d_s d_i$: at inert primes the
+split lattice agrees with $A_0$ and the full lattice with $A_i$,
+and conversely at the other primes. This applies the local period
+comparison in \nolinkurl{NormSum.La_agree_of_trivAt} and the
+intersection-index identity \nolinkurl{VacuumScalar.index_mul}
+(\path{FoundationProofs/ThetaLatticeAgreeOfTrivialAtPrime.lean:74--112},
+\path{FoundationProofs/OddnessConditionHolds.lean:63--91,434--456}).
+
+Let $c_s,c_i$ be the scalars for the parts. Write $H$ for the raw
+full sum, so $Hv=\sqrt{d_f}G$. Transport the inert representatives
+through the split mover into $A_f$ and adjust the split representatives
+by periods in $A_s\cap A_0$ to put them in $A_s\cap A_f$. The first
+step uses Weyl equivariance and the second uses local agreement and the
+fact that the adjustment fixes $v$. Their raw sums $H_i,H_s$ commute
+with $H$: shifts in $A_f$ have exact addition on $A_f$, as their
+multiplication phase is one when tested on its nonzero fixed vector
+$G$. Thus $HG=d_fG$, $H_iG=d_iG$, $H_sG=d_sG$. The representation
+law gives
+$cG=(c_sc_i)/\sqrt{d_id_s}\,H_iH_s v$. Apply $H$ and cancel $G$:
+$c d_f=(c_sc_i)\sqrt{d_f}\,d_id_s/\sqrt{d_id_s}$, so $c=c_s c_i$
+(\nolinkurl{VacuumScalar.scalar_eq}, \nolinkurl{VacuumScalar.scalar_mul},
+\path{FoundationProofs/OddnessConditionHolds.lean:209--251,457--493}).
+For the inert part both ranks are even, so its length sign is one.
+The split determinant lifts $y=ex+1-e$, $y'=ex'+1-e$ are one at
+inert primes. The ratios $x/y,x'/y'$ are supported there, and
+\nolinkurl{InertTrivial.character_trivial_at_inert} therefore preserves
+both even-rank character values. The field $W.\mathrm{split}$ gives
+$c_s=\psi(x')^{\epsilon}\psi'(x)^{\epsilon'}$, proving the formula
+(\nolinkurl{VacuumExact.split_part},
+\path{FoundationProofs/WeilOperatorVacuumExactConstantEvenRank.lean:54--105},
+\path{FoundationProofs/CharacterTrivialAtInertPrimes.lean:255--309}).
+The three proofs use a given nonzero vector in the standard theta
+space. In the two base-free applications (rows 18 and 22 of the
+R14 review), $\delta\ne0$ is supplied by the curve
+discriminant. Write the unscaled ideal lattice as $a(\mathbf Z\tau+
+\mathbf Z)$ with $a\ne0$ and $\Im\tau>0$. Its discriminant is
+$(2\pi/a)^{12}\Delta(\tau)$; the twelfth-root law equates this
+nonzero value to $\delta^{12}$. This proves the needed nonvanishing
+using just the curve datum
+(\nolinkurl{CurveLattice.discr_of_tau}, \nolinkurl{CurveLattice.lattice_of_curve},
+\path{FoundationProofs/IdealPeriodLatticeOfCurveDatum.lean:52--62,136--157}).
+The coefficient field, CM conjugation and the local forms of
+the full \nolinkurl{Vacuum.exists_vacuum} remain separate supplies.
+
+% blueprint/ch_P_r15.tex lines 1330 through 1371; r15:jets
+\paragraph{Translated coefficients for the prescribed natural vector.}
+\phantomsection\label{r15:jets}
+For a curve datum, base $B$, admissible character and admitted pair,
+if a positive multiple of $x$ belongs to the period lattice then every
+normalized Taylor coefficient of $U_x B.e^{\mathrm{nat}}$ is algebraic.
+Section~\ref{r15:translated} checks the four-copy construction of
+the standard tensor and the finite intertwiners, giving algebraic
+coefficients throughout its rational period saturation. Explicitly,
+$B.e^{\mathrm{nat}}=\mathrm{chiFac}\,B.\mathrm{thMoved}$; the coefficient
+$\mathrm{chiFac}$ is algebraic at an admitted pair, and clearing the
+positive multiple puts $x$ in that saturation. Linearity proves the
+assertion in \nolinkurl{ThLoc.algTAll}
+(\path{SatakeParameters/AlgTAll.lean:6},
+\path{GaloisGeometry/AlgTAll.lean:12--26}). For the broader input
+\nolinkurl{AlgTranslate.coefIn_translate}, start with any algebraic-jet
+theta vector on two self-dual lattices. Frame restriction writes it as
+a finite sum $\sum_i c_i f_i$ of zero-padded restrictions of torsion
+translates of a product theta. The CM translation law on that product
+gives $a_\alpha(f_i)\in k=\overline{\mathbf Q}$. Choose a $k$-linear
+retraction $\pi:\mathbf C\to k$ of the inclusion. For every $\alpha$,
+\[
+ a_\alpha(e)=\pi\!\left(\sum_i c_i a_\alpha(f_i)\right)
+            =\sum_i\pi(c_i)a_\alpha(f_i).
+\]
+Uniqueness from the Taylor series gives the same function with
+coefficients $\pi(c_i)$. Padding the shift puts $Rjx$ (in padded
+coordinates) in the product lattice, where $jx$ was an original
+period and $R>0$ is the lattice comparison index multiple. Translation
+and normalized Taylor coefficients commute with zero-padding.
+The broader argument needs frame restriction, CM product translation
+and the lattice comparison. In Lean, \nolinkurl{JetAlgebraic.ta_thMoved} uses
+\nolinkurl{AlgTranslate.coefIn_translate}, which accounts for 10,897
+theorem lines outside $D7$. Section~\ref{r15:translated} substitutes
+the four-variable identity and the genus-one torsion translation for
+that formal route, bypassing both this declaration and
+\nolinkurl{cmTheta_taylorCoeff_algebraic_and_conjugate}. Its two
+upstream arguments have independent locations in
+Sections~\ref{r16:ktheta} and~\ref{r16:stdok}
+(\path{VacuumEntireAndNormalizedJetsAlgebraic.lean:311--316}).
+For the finite-span calculation see
+(\nolinkurl{AlgTranslate.exists_alg_comb}, \nolinkurl{AlgTranslate.coefIn_translate},
+\path{SatakeParameters/CoefInTranslate.lean:28--51,53--85}).
+
+% Parent source SHA-256: 9f5cb0d34db7a3512d516aefedd7111b0e4c8718613c492875db00e44bd18a5f
+% blueprint/ch_P_r8_base.tex lines 1 through 49; r8:Z4.2.13
+\subsection{Z4.2.13. The period and theta family on the tied base}\label{r8:Z4.2.13}
+Let \(t\) be a tied kernel entry for the fixed host, curve ideal, discriminant root, extra comparison data and lattice system. Write \(\delta=t.\delta\), \(B=t.B\), \(\chi=t.\chi\). The required conclusion is
+\[
+ \delta\ne0,\qquad B.\mathrm{LatAll},\qquad B.\mathrm{VecP}(\chi),\qquad B.\mathrm{EqP}(\chi).
+\]
+The first lattice clause gives the period-lattice conditions at every admitted pair. The second gives finite relative indices in both directions between the period lattices of any two admitted pairs of the same ranks. The vector clause requires a nonzero theta vector and a single number field for all of its Taylor coefficients at each pair. Equivariance comprises the simultaneous rational unitary change of basis and the two separate lattice changes with their determinant-character factors. All clauses concern the same normalized family \(B.eNat(\chi)\). See \nolinkurl{GlobalTheory.TieBase.base_data} (\path{SatakeParameters/KernelEntryPeriodNeZeroAndLatticeLaws.lean:14--19}), \nolinkurl{Base.LatAll}, \nolinkurl{Base.VecP}, \nolinkurl{Base.EqP} (\path{KernelLattices/LateralTheory.lean:173--175,185--189,207--219}) and \nolinkurl{theta_vector_family_iff_parts} (\path{GlobalTheory/GL3/PFamily.lean:13--19,34--36}).
+
+\paragraph{Nonvanishing of the period.}
+The two periods of the lattice in \(B\) are linearly independent. If \(\delta=0\), the lattice identified by the base with \(\mathrm{lamOf}(D,\mathfrak c,\delta)\) is zero. Its first period belongs to it, so is zero, contradicting independence. This proves the first clause for every tied base. See \nolinkurl{base_linkage_nonempty} (\path{GlobalTheory/GL3/PFamily.lean:80--86}).
+
+\paragraph{One coefficient field for the entire germ.}
+Fix an admitted pair. Suppose the reference family supplies a nonzero entire vector \(e\) with every Taylor coefficient in a single number field \(M\), and that the common theta-line comparison gives \(B.eNat(\chi)=a e\). Suppose also that all Taylor coefficients of the left side are algebraic, as obtained by the source from the translated-jet theorem at shift zero. Some Taylor coefficient \(e_\alpha\) is nonzero, since otherwise the Taylor expansion of the entire function would vanish identically. The linearity of the normalized Taylor coefficient gives
+\[
+ a=\frac{[z^\alpha] B.eNat(\chi)}{[z^\alpha]e}\in\overline{\mathbf Q}.
+\]
+Thus \(M(a)\) is finite over \(\mathbf Q\). Every coefficient of the normalized vector lies in this same field. The construction allows the field to depend on the pair. This proves the coefficient-field descent once the three stated inputs are supplied (\nolinkurl{GlobalTheory.ColNorms.familyVectors}, \path{DivisorProofs/NormalisedFamilyNonzeroThetaVectorsNumberField.lean:15--50}).
+
+The application of \nolinkurl{ColNorms.familyVectors} in
+\nolinkurl{TieBase.base_data} passes three further theorems
+(\path{SatakeParameters/KernelEntryPeriodNeZeroAndLatticeLaws.lean:16--19};
+\nolinkurl{FamilyVectors}, \path{DivisorProofs/CosetRefinement.lean:84--86}).
+\nolinkurl{GL3Theta.cm_field_facts_hold} gives the host field conditions
+\(\mathrm{adm1}(D)\), including the finite-place ramification and splitting
+conditions. \nolinkurl{GL3Theta.induced_cm_type} gives
+\(\mathrm{embT}_\tau(a)=\varphi_0(a)\) for every \(\tau\) and \(a\in K\)
+viewed in \(E\) (\path{UnitTraceSumBounds/InducedCmType.lean:10--17};
+\path{GlobalSchurBounds/GL3Theta.lean:828--831};
+\path{GlobalSchurBounds/TaylorLogMetric.lean:206--215}).
+\nolinkurl{ExponentsFinite.yFinite}, applied to the base's
+choice \(k=B.\mathrm{kc}\), proves that the rational primes split in \(K\)
+with nonzero relative-determinant exponent \(k.y_P(p)\) form a finite set.
+It clears denominators for the lattice map and its inverse to bound those
+primes (\nolinkurl{KapChoice.YFinite}, \path{KernelLattices/LateralTheory.lean:107--113};
+\path{DivisorProofs/KernelConstantExponentsFinite.lean:85--126}).
+These are explicit arguments to the family theorem. The quoted
+coefficient-field deduction begins after choosing the reference family.
+
+\paragraph{Expert lemmas still needed.}
+\emph{[Proved in Lean, not reproduced: full lattice and family construction.]}
+For the given curve ideal, its discriminant root and this base, establish self-duality for the imaginary part of the period pairing, its integral semicharacter law, and finite index in both directions. The scalar nonvanishing argument alone supplies none of these comparisons (\nolinkurl{Base.latAll}, \path{KernelLocalFactors/IsAdmissibleFlagPairOfUnitriangularLeftAutomorph.lean:623--644}). For these same admissible even-rank pairs, construct the nonzero reference family, prove that its theta space is a line, and identify the natural normalized vector with a nonzero member. The descent above uses these data before it tests a Taylor coefficient (\nolinkurl{familyVectors}, \path{DivisorProofs/NormalisedFamilyNonzeroThetaVectorsNumberField.lean:15--32}).
+
+For a reference character \(\chi'\), write \(C_\chi(L,L')=\mathrm{Base.chiFac}(\chi,N,N',L,L')\).
+With ranks fixed the required comparison uses one scalar \(a\) for all admitted \((L,L')\):
+\[
+ e^{\rm nat}_\chi(L,L')=a\,\frac{C_\chi(L,L')}{C_{\chi'}(L,L')}e_{\chi'}(L,L').
+\]
+Given the reference family's two lattice-change laws, this identity transports the target intertwiner with exponent \(-\lfloor N/2\rfloor\) and the source intertwiner with \(\lfloor N'/2\rfloor\): multiply the quotient by the relative determinant factors from each character, and cancel the reference factor using its nonvanishing. Under simultaneous unitary change the determinant-of-basis terms coincide for the two characters and cancel from the quotient. Establishing the reference family's three laws and its comparison at the standard lattices remains open in this note (\nolinkurl{GlobalTheory.Mem.NatEqui.eqP}, \path{IwasawaDecomposition/NormalisedFamilySatisfiesEquivarianceLaws.lean:17--33,42--60,63--117}). The root is therefore \emph{partial}. Its four conclusions enter Z4.2.09 and the class-kernel pullback in Z4.2.10--11. Z4.2.12 inherits them through those two calls.
+
+\emph{Counting the shared input.} Following both type and value edges from \nolinkurl{GlobalTheory.TieBase.base_data} (\path{SatakeParameters/KernelEntryPeriodNeZeroAndLatticeLaws.lean:14--19}) gives 60,733 inclusive core-declaration lines and eight literature-boundary declarations in the project ledger. All 60,733 lines also occur under other expert assignments. Among the 6,438 core theorem declarations, 3,766 have valid ranges. They contribute 51,444 lines with both endpoints included. Omitting the 176 one-line ranges reproduces the independent review's figure of 51,268. Listing the input separately changes the assignment count and leaves the overall union unchanged.
+

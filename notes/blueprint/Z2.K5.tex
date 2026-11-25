@@ -1,0 +1,141 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% RH Notes blueprint source excerpts for Z2.K5
+% Verbatim excerpts in the notation of the parent blueprint. The labelled editions and source ranges appear below.
+% See the unit YAML for the current proof status. Earlier-round passages retain their original wording.
+\section*{Z2.K5. Equivariant character count}
+
+% Parent source SHA-256: 1af64922b98ed2310744411b1f18b25cc426c97220646321471836e1a3a409d6
+% blueprint/ch_P.tex lines 517 through 648; prop:P-k-count
+\begin{proposition}[Divisors, units and finite subsets]\label{prop:P-k-count}
+\lean{UpperTheory.V.ZK.sCount}
+\uses{prop:P-k-few}
+With $v=v_\ell(E)$, $g=2n'+\lfloor\log_2 h_M\rfloor+2$, where $h_M$ is
+the class number, and $X=(b+v)g+c+v$, one has
+\[
+ |\mathcal H_q|\le B_*:=T_{2E+1}T_{2E}\ell^X.
+\]
+Moreover $\Sigma(M)=s$ for an integer $s\ge0$ and $\ell^s\le B_*$.
+The first assertion combines \nolinkurl{sCount} with separation
+and cancellation (\nolinkurl{sNum}, \path{NumThree.lean:221--241}).
+The second is \nolinkurl{PositivityTheory.QuaternionShaBounds.sSha}
+(\path{OrderOfOneAddPrimePowZmodPrimePow.lean:490};
+\nolinkurl{SSha}, \path{ClassCounting/LemmaKOfSteps.lean:143--147}).
+\end{proposition}
+\begin{proof}
+In additive notation take $Y=F^\times$, $I=\operatorname{Div}(\mathcal O_F)$,
+with principal divisor map $\partial:Y\to I$. On these groups write
+$\delta$ for the action of $\gamma^{-1}$ minus $a$ on $Y$.
+On divisors the same endomorphism sends $u(P)$ to $u(\gamma P)-a u(P)$,
+so it commutes with $\partial$ (\nolinkurl{IsDat}, \path{TwoLe.lean:56--61}).
+Let $U=\partial^{-1}(\delta I)$. Form
+\[
+ W=U/(\delta Y+Y_{\rm tors}),\qquad
+ Q_{\rm cl}=I/(\partial Y+\delta I),\qquad
+ Q_{\rm u}=\ker\partial/(\delta\ker\partial+Y_{\rm tors}).
+\]
+These are \nolinkurl{Dat.W}, \nolinkurl{Dat.ClQ}, \nolinkurl{Dat.EQ}
+(\path{SelmerOrderCounts/TwoLe.lean:34--47}).
+Lemma~\ref{lem:P-r3-k5} proves the following arithmetic properties.
+All three groups are finite,
+$|W|=|Q_{\rm u}|\,|Q_{\rm cl}|$,
+$|\mathcal H_q|\le\ell^{v_\ell(|Q_{\rm cl}|)}$ with $\mathcal H_q$ finite,
+and $|W[\ell]|\le\ell^g$. The powered norm gives a homomorphism $f$ on
+$W$ whose image can be represented by a finite family as in
+Proposition~\ref{prop:P-k-few}. Its kernel is killed by
+$m\ell^{b+v}$ with $(m,\ell)=1$. See \nolinkurl{sCount}
+(\path{SelmerOrderCounts.lean:20--71}) for \nolinkurl{cardW},
+\nolinkurl{eqHomLe}, \nolinkurl{kerF}, \nolinkurl{fewLe} and
+\nolinkurl{selInj} in this application. In particular the condition
+on $W[\ell]$ is a condition at the base $M$, although the group $W$ was
+constructed using $F$.
+
+The unit factor supplies $q^r$. The project takes the logarithmic
+unit lattice modulo roots of unity and appends one trivial integral
+coordinate to fill the constant direction. On the full real space of
+archimedean places, $\gamma$ permutes the places in $r$ cycles of
+length $h$ because $M$ is totally complex. On one cycle the absolute determinant
+of this permutation minus $a$ times the identity is $a^h-1$
+(the characteristic polynomial is $t^h-1$). On the extra constant line
+it is $a-1$. Computing the index of the resulting lattice endomorphism
+by its determinant gives
+\[
+ |Q_{\rm u}|(a-1)=(a^h-1)^r .
+\]
+Lemma~\ref{lem:P-r3-k5} identifies this logarithmic lattice with the
+units modulo roots of unity. The determinant and division account for the two different
+integer factors in this formula (\nolinkurl{cardEQ},
+\path{SelmerOrderCounts/CardEQ.lean:98--128}). Since $\kappa=1+\ell^c$
+and $h=\ell^{\nu-c}$,
+\[
+ v_\ell(a-1)=c+v,\qquad v_\ell(a^h-1)=\nu+v.
+\]
+Indeed raising a principal unit to an exponent prime to $\ell$ preserves
+the valuation of its difference from $1$, and raising it to $\ell$
+increases that valuation by one when $c\ge1$ for odd $\ell$ and $c\ge2$
+for $\ell=2$. Both facts follow by expanding $(1+t)^j$ and comparing
+the first term with subsequent terms. In particular $a^h-1=q\ell^v m$
+for some $m$ prime to $\ell$, also when $\nu=c$ and $h=1$. Thus
+\[
+ v_\ell(|Q_{\rm u}|)+c+v=r(\nu+v)\ge r\nu .
+\]
+This is the equality used in \nolinkurl{sCount}
+(\path{SelmerOrderCounts.lean:30--50,81--98}).
+
+Let $K_f$ be the kernel of $f$. On its $\ell$-primary subgroup $m$ acts
+invertibly, so that subgroup is killed by $\ell^{b+v}$. Each multiplication
+by $\ell$ from $W[\ell^i]$ to $W[\ell^{i-1}]$ for $i\ge1$ has kernel of size at
+most $|W[\ell]|$. Induction gives $|W[\ell^{b+v}]|\le\ell^{(b+v)g}$.
+The index of $K_f$ in $W$ is $|\operatorname{im} f|$. Taking $\ell$-parts
+yields
+\[
+ \ell^{v_\ell(|W|)}\le|\operatorname{im}f|\,\ell^{(b+v)g}.
+\]
+This is \nolinkurl{pCount} (\path{SelmerOrderCounts/PCount.lean:38--92}).
+Multiplying the class-character bound by $q^r$ and inserting the unit
+identity gives
+\[
+\begin{aligned}
+ |\mathcal H_q|q^r
+ &\le\ell^{v_\ell(|Q_{\rm cl}|)+v_\ell(|Q_{\rm u}|)+c+v}\\
+ &\le |\operatorname{im}f|\,\ell^{(b+v)g+c+v}
+ \le q^r T_{2E+1}T_{2E}\ell^X .
+\end{aligned}
+\]
+Since $q^r>0$ it can be cancelled. In particular $X$ uses $c$, which was
+fixed when $M$ was chosen, and $v_\ell(E)$. It contains no $\nu$.
+This is the passage from \nolinkurl{sCount}
+(\path{SelmerOrderCounts.lean:91--111}) to \nolinkurl{sNum}
+(\path{NumThree.lean:221--241}).
+
+Lemma~\ref{lem:P-r3-k6} supplies the passage back to cohomology. Restriction to the infinite
+cyclotomic layer injects the degree-one localization kernel into the
+equivariant continuous characters there. Each character in that image
+lifts, at every sufficiently large $\nu$, to an equivariant finite-level
+ideal class character killed by $\ell^\nu$. For the cyclic layer with
+generator chosen above there is an injection from these latter characters
+into $\mathcal H_q$. The finite-level pullback determines the original
+infinite-level character. The identifications use
+\nolinkurl{good_of}, \nolinkurl{ClInj}, \nolinkurl{LayEx},
+\nolinkurl{ShaAsm_holds}
+(\path{OrderOfOneAddPrimePowZmodPrimePow.lean:26--38,390--410,454--463}).
+In the source the threshold is obtained by first extending an equivariant
+character to a finite level, expressing it by pullback from a finite class
+group there, and bounding the exponent of its finite image. Restriction
+to deeper levels preserves the bound on its image. This explains why all
+sufficiently large levels work.
+
+Take a finite subset $T$ in the image of global restriction. A maximum
+of its thresholds, $c$ and $2$ gives one level for all its members.
+Choose one lift per member. If the chosen finite-level images in
+$\mathcal H_q$ coincide, injectivity before restriction gives equality of
+the lifts, and restriction gives equality of their members in $T$.
+Thus $|T|\le B_*$. An infinite image would have a finite subset of size
+$B_*+1$. The image is consequently finite, and applying the same bound
+to the entire image gives its order at most $B_*$. A finite
+$\mathbf Z_\ell$-module has order $\ell^s$ for its length $s$ (take
+successive simple quotients). Restriction is injective, hence this $s$
+is $\Sigma(M)$. This finite-subset argument is \nolinkurl{card_le} and
+\nolinkurl{ShaAsm_holds} (\path{OrderOfOneAddPrimePowZmodPrimePow.lean:412--448,464--490}).
+\emph{Status: complete modulo Proposition~\ref{prop:P-k-few}.}
+\end{proof}
+

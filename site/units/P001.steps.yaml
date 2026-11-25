@@ -1,0 +1,246 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "P001",
+  "edition_sha256": "65d504c9069b5a047ce926d055bb3499c547e5571ee6323bd48a91ec18e510e3",
+  "note_sha256": "0ce8a08fb3623d306885aab1693676bd7c932ee79d3486dc3339d74e210eff6e",
+  "statement_sha256": "5306f24a6997fb5a1c97222bb550568272fc0d9f0b3b290f8c34067f8ba80731",
+  "sources": [
+    {
+      "path": "notes/units/P001_round3.md",
+      "sha256": "2632c0094418ae594a8b3373d2e0a2ff93880e11bfbd9f43efa0e23ddef44847"
+    },
+    {
+      "path": "notes/formal/excerpt.tex",
+      "sha256": "dc0c386329bd12020471cf3d8a0c7b0e3793f64e035c85ad7b4f741f0aa32d21"
+    },
+    {
+      "path": "notes/formal/README.md",
+      "sha256": "aa8a2272b0bb14e24d2b329ecc2e77b57c417bbdaa99f1cf6b2325085a5a3385"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Both zeta exports use the same supplier and the explicit predicate excludes one and negative even integers.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "P002"
+      ],
+      "lean": [
+        {
+          "name": "riemannHypothesis",
+          "file": "Main.lean",
+          "line0": 4,
+          "line1": 4
+        },
+        {
+          "name": "RiemannZetaZerosOnLine",
+          "file": "Statements.lean",
+          "line0": 3,
+          "line1": 4
+        }
+      ],
+      "source": "notes/units/P001_round3.md",
+      "anchor": "The input to the reduction",
+      "source_lines": [
+        7,
+        7
+      ],
+      "claim_sha256": "7778d7e19c51ddc09f06aab57ebab7fbb4069e7f8eeeded005827dad7d2af0fc",
+      "passage_sha256": "f9fb571666e6d196c81d85c4f6cf3b316571d976eb8ae7024b2ac9a3290f2614",
+      "sha256": "48e58c2c23048e9b992a94af2a662e93f976c2a7b2c5dcda953c6b3788179c44",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The modulus-one choice in the half-plane input gives zeta nonvanishing away from one on the right.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "P009"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.VW.rh_of_every",
+          "file": "Formalism/GammaFactorNonvanishing/CritLine.lean",
+          "line0": 29,
+          "line1": 32
+        }
+      ],
+      "source": "notes/units/P001_round3.md",
+      "anchor": "Specialize the character and choose the point of reflection",
+      "source_lines": [
+        13,
+        13
+      ],
+      "claim_sha256": "5361aa8494ebf1f4793b7116e804a4d0101bc075d7db1fb09c43cd01a70bdf9b",
+      "passage_sha256": "7b5b55e0b535438eb14ab9ec1f40d361b0a5be3a599385af1fa741e6ab063868",
+      "sha256": "2cbd9562bc61bfc91a04feecac89e718d9d79256910fad855fc8d29ed2ebe51d",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "At the reflected point, the exclusions and gamma, cosine and zeta nonvanishing prevent a zero of the product.",
+      "kind": "case-split",
+      "uses": [
+        "S1",
+        "S2",
+        "standard: zeta functional equation"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.VW.rh_of_right",
+          "file": "Formalism/GammaFactorNonvanishing/RhOfRight.lean",
+          "line0": 5,
+          "line1": 62
+        }
+      ],
+      "source": "notes/units/P001_round3.md",
+      "anchor": "Exclude the vanishing of every factor",
+      "source_lines": [
+        19,
+        19
+      ],
+      "claim_sha256": "39fe250ae13d85ecd50021954773a144f439eccf00b3cafd825e24ac88bdf89c",
+      "passage_sha256": "dbfd9f5cd3297b7d36d014d2e65299fe5973be34c6fe1be0f14bafb5fe5373f1",
+      "sha256": "291e71a147859836ad91ffd0aaf2b9f43344965c1ab494e71df22e9753cd24cf",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The recorded formal export list begins with the declaration riemannHypothesis in Main.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: pinned source edition"
+      ],
+      "lean": [
+        {
+          "name": "riemannHypothesis",
+          "file": "Main.lean",
+          "line0": 4,
+          "line1": 4
+        }
+      ],
+      "source": "notes/formal/excerpt.tex",
+      "anchor": "This blueprint follows five declarations",
+      "source_lines": [
+        7,
+        16
+      ],
+      "claim_sha256": "3e9824339555ebfa776fcd84ccf5fff8d6cac3e51df8f013a239790f24f39acb",
+      "passage_sha256": "89a6fe2acaaaf7dc4178150503739b8a7641539ed7fab5797b5c103f558baacf",
+      "sha256": "8c577614cd8583f887730ee18ab446a4bf421d2b0eb669ea8290a8b255f444fc",
+      "ai_review": []
+    },
+    {
+      "id": "S5",
+      "status": "active",
+      "claim": "The one-line export reproduces the recorded hash when its trailing newline is omitted.",
+      "kind": "computation",
+      "uses": [
+        "standard: SHA-256"
+      ],
+      "lean": [
+        {
+          "name": "riemannHypothesis",
+          "file": "Main.lean",
+          "line0": 4,
+          "line1": 4
+        }
+      ],
+      "source": "notes/formal/README.md",
+      "anchor": "The hash excludes a final newline",
+      "source_lines": [
+        30,
+        30
+      ],
+      "claim_sha256": "aba9569a370eafa87e408864c121d19692573bad4b2586eb65ad79d8585b96ae",
+      "passage_sha256": "bf4114c907e5631e34a87201aa42296d7e5483e7d48421ed993f5e7adf23af18",
+      "sha256": "6a627da2ae3456fd44f949d1c1440c52b90c13f381a157bbeab26b50716440b2",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "02bfd4b03431c048a5d3013137b6b94226d6492137e7f20bbbd44e2b8d5b9fab",
+      "sources": [
+        {
+          "path": "notes/units/P001_round3.md",
+          "sha256": "2057b6264e448b525e63d94e6f24d7379f2eb73df4fe7be56a17b57ee835d4a9"
+        },
+        {
+          "path": "notes/formal/excerpt.tex",
+          "sha256": "a9d810c7dcbe02df9185a5475ccaabbb5a24e4b44b6ad98f7b2f96799840c203"
+        },
+        {
+          "path": "notes/formal/README.md",
+          "sha256": "dd78137c92aefbb2ec2d4eb91ff7028285f4a1e428c75946346a5630b9ea0dae"
+        }
+      ],
+      "statement_sha256": "5306f24a6997fb5a1c97222bb550568272fc0d9f0b3b290f8c34067f8ba80731",
+      "steps": {
+        "S1": "48e58c2c23048e9b992a94af2a662e93f976c2a7b2c5dcda953c6b3788179c44",
+        "S2": "2cbd9562bc61bfc91a04feecac89e718d9d79256910fad855fc8d29ed2ebe51d",
+        "S3": "291e71a147859836ad91ffd0aaf2b9f43344965c1ab494e71df22e9753cd24cf",
+        "S4": "8c577614cd8583f887730ee18ab446a4bf421d2b0eb669ea8290a8b255f444fc",
+        "S5": "b9b1971e440fea1457b18757a6ec23676d24971831cb592ae5138f5a2143a71f"
+      },
+      "step_texts": {
+        "S1": "Both zeta exports use the same supplier and the explicit predicate excludes one and negative even integers.",
+        "S2": "The modulus-one choice in the half-plane input gives zeta nonvanishing away from one on the right.",
+        "S3": "At the reflected point, the exclusions and gamma, cosine and zeta nonvanishing prevent a zero of the product.",
+        "S4": "The recorded formal export list begins with the declaration riemannHypothesis in Main.",
+        "S5": "The one-line export reproduces the recorded hash when its trailing newline is omitted."
+      },
+      "step_passages": {
+        "S1": "f9fb571666e6d196c81d85c4f6cf3b316571d976eb8ae7024b2ac9a3290f2614",
+        "S2": "7b5b55e0b535438eb14ab9ec1f40d361b0a5be3a599385af1fa741e6ab063868",
+        "S3": "dbfd9f5cd3297b7d36d014d2e65299fe5973be34c6fe1be0f14bafb5fe5373f1",
+        "S4": "89a6fe2acaaaf7dc4178150503739b8a7641539ed7fab5797b5c103f558baacf",
+        "S5": "14fa31da388dbca4b445cee453d03a6bed9de6134fb6591b9bebb917f100a66f"
+      }
+    },
+    {
+      "edition_sha256": "e408698339283c41995a5d6a0bc1e0c7bd27c5dcdd559b3f30c986022269e5d5",
+      "sources": [
+        {
+          "path": "notes/units/P001_round3.md",
+          "sha256": "2632c0094418ae594a8b3373d2e0a2ff93880e11bfbd9f43efa0e23ddef44847"
+        },
+        {
+          "path": "notes/formal/excerpt.tex",
+          "sha256": "a9d810c7dcbe02df9185a5475ccaabbb5a24e4b44b6ad98f7b2f96799840c203"
+        },
+        {
+          "path": "notes/formal/README.md",
+          "sha256": "dd78137c92aefbb2ec2d4eb91ff7028285f4a1e428c75946346a5630b9ea0dae"
+        }
+      ],
+      "statement_sha256": "5306f24a6997fb5a1c97222bb550568272fc0d9f0b3b290f8c34067f8ba80731",
+      "steps": {
+        "S1": "48e58c2c23048e9b992a94af2a662e93f976c2a7b2c5dcda953c6b3788179c44",
+        "S2": "2cbd9562bc61bfc91a04feecac89e718d9d79256910fad855fc8d29ed2ebe51d",
+        "S3": "291e71a147859836ad91ffd0aaf2b9f43344965c1ab494e71df22e9753cd24cf",
+        "S4": "8c577614cd8583f887730ee18ab446a4bf421d2b0eb669ea8290a8b255f444fc",
+        "S5": "b9b1971e440fea1457b18757a6ec23676d24971831cb592ae5138f5a2143a71f"
+      },
+      "step_texts": {
+        "S1": "Both zeta exports use the same supplier and the explicit predicate excludes one and negative even integers.",
+        "S2": "The modulus-one choice in the half-plane input gives zeta nonvanishing away from one on the right.",
+        "S3": "At the reflected point, the exclusions and gamma, cosine and zeta nonvanishing prevent a zero of the product.",
+        "S4": "The recorded formal export list begins with the declaration riemannHypothesis in Main.",
+        "S5": "The one-line export reproduces the recorded hash when its trailing newline is omitted."
+      },
+      "step_passages": {
+        "S1": "f9fb571666e6d196c81d85c4f6cf3b316571d976eb8ae7024b2ac9a3290f2614",
+        "S2": "7b5b55e0b535438eb14ab9ec1f40d361b0a5be3a599385af1fa741e6ab063868",
+        "S3": "dbfd9f5cd3297b7d36d014d2e65299fe5973be34c6fe1be0f14bafb5fe5373f1",
+        "S4": "89a6fe2acaaaf7dc4178150503739b8a7641539ed7fab5797b5c103f558baacf",
+        "S5": "14fa31da388dbca4b445cee453d03a6bed9de6134fb6591b9bebb917f100a66f"
+      }
+    }
+  ]
+}

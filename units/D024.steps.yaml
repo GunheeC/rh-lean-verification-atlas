@@ -1,0 +1,157 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "D024",
+  "edition_sha256": "58e8b38b09bf965e310a78c99275ab03e89e8f887acf97dea79a94c1474fc83a",
+  "note_sha256": "414b2653a5a21429d6891a7081cb1eccdcdb7e0f8e567a9bc7018a03e88a5745",
+  "statement_sha256": "a7355f0646a2c4814be90611237eac45bef189f5071e6093ffa886c9ab88f61a",
+  "sources": [
+    {
+      "path": "notes/units/D024_round4.md",
+      "sha256": "414b2653a5a21429d6891a7081cb1eccdcdb7e0f8e567a9bc7018a03e88a5745"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The real-integral relation, period splitting and iterated chain hold together in one eventual depth regime.",
+      "kind": "assembly",
+      "uses": [
+        "input: ThetaLocalInputs, LiftsCuspidal and the common depth filter"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.RowUnfLast.twisted_theta_integral_unfolding",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/TwistedThetaIntegralUnfolding.lean",
+          "line0": 10,
+          "line1": 19
+        },
+        {
+          "name": "GlobalTheory.RowUnfLast.twisted_theta_integral_unfolding",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/TwistedThetaIntegralUnfolding.lean",
+          "line0": 25,
+          "line1": 30
+        }
+      ],
+      "source": "notes/units/D024_round4.md",
+      "anchor": "The hypotheses supply local theta data, cuspidality of",
+      "source_lines": [
+        25,
+        25
+      ],
+      "claim_sha256": "ec47db215bb135bd2bc633cfce674c473f062993ef5495a76e1e20c3d2fb5658",
+      "passage_sha256": "12c1070e8535e0cc60ecbed167cbbd6fd94f7441287c72f7083d1ac109d89fd1",
+      "sha256": "86812d21968456c78f666e9a2304113abde0576a6ef0c05a6e74551e442b824e",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "On the chosen flat datum the supported-cell description applies at the same parameter as the local representations.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S1",
+        "input: support on cells and bi-invariance"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.RowUnfLast.twisted_theta_integral_unfolding",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/TwistedThetaIntegralUnfolding.lean",
+          "line0": 15,
+          "line1": 22
+        },
+        {
+          "name": "GlobalTheory.RowUnfLast.twisted_theta_integral_unfolding",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/TwistedThetaIntegralUnfolding.lean",
+          "line0": 27,
+          "line1": 30
+        }
+      ],
+      "source": "notes/units/D024_round4.md",
+      "anchor": "At this depth the unfolded integrand is bi-invariant",
+      "source_lines": [
+        29,
+        29
+      ],
+      "claim_sha256": "6bd8ac3366f4533248f9ce01963bd45e856624aa44898fbbe912159ff926d845",
+      "passage_sha256": "50bf8a1390787204d50b5d871be72f70e8137f545f3fd52881c3358fc04dc14f",
+      "sha256": "e16eda5f224161d0459ead219322aba431ab5d8e223acb8aef31b3fd5a9888b4",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "With the cell masses, period change of measures and Fock readings inserted, the real integral equals its unfolded expression.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "S2",
+        "input: SumOKK, measure change and the real iterated integral"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.RowUnfLast.twisted_theta_integral_unfolding",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/TwistedThetaIntegralUnfolding.lean",
+          "line0": 19,
+          "line1": 30
+        }
+      ],
+      "source": "notes/units/D024_round4.md",
+      "anchor": "The local cell-value theorem consumes flatness, product dependence,",
+      "source_lines": [
+        33,
+        33
+      ],
+      "claim_sha256": "9aabb09ff037352c6722f185526ed52a5509395a84dd1e36f821b91e70435e9e",
+      "passage_sha256": "050eeb371ae4ab645f0daf21cc9cd5ce2b93fc7070e5e5fd319690033453ef9e",
+      "sha256": "b54e5bc84f3aa682f8e7e317939d9743fb070474d08644402566d337709aeca4",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "b12073c1547d1bfaa40367ea7897c7c72871d1c2396932a45671c981f660fbb7",
+      "sources": [
+        {
+          "path": "notes/units/D024_round4.md",
+          "sha256": "a5c68f692eaea427847789591a88dc32024fb230eccb0e11dc0036e2693a02cf"
+        }
+      ],
+      "steps": {
+        "S1": "748c48c4d92f18df73fef261d6f3a542bb2163ad9a817cba102aa5a95f838fc9",
+        "S2": "893b289e4234d23808ba6eeca47e3fe68a8f61fb908c405fa2bac8530ce4d108",
+        "S3": "080218771f44fcfe97c2ea07e8caf4b18b591ac0ae6e93d7609f538fcd079532"
+      },
+      "step_texts": {
+        "S1": "The real-integral relation, period splitting and iterated chain hold together in one eventual depth regime.",
+        "S2": "On the chosen flat datum the supported-cell description applies at the same parameter as the local representations.",
+        "S3": "With the cell masses, period change of measures and Fock readings inserted, the real integral equals its unfolded expression."
+      }
+    },
+    {
+      "edition_sha256": "2b0b6e09d542f15fc79a18eb81e71fc31587b149b3e619e7bfb64ac216be9546",
+      "sources": [
+        {
+          "path": "notes/units/D024_round4.md",
+          "sha256": "a5c68f692eaea427847789591a88dc32024fb230eccb0e11dc0036e2693a02cf"
+        }
+      ],
+      "statement_sha256": "a7355f0646a2c4814be90611237eac45bef189f5071e6093ffa886c9ab88f61a",
+      "steps": {
+        "S1": "86812d21968456c78f666e9a2304113abde0576a6ef0c05a6e74551e442b824e",
+        "S2": "e16eda5f224161d0459ead219322aba431ab5d8e223acb8aef31b3fd5a9888b4",
+        "S3": "b54e5bc84f3aa682f8e7e317939d9743fb070474d08644402566d337709aeca4"
+      },
+      "step_texts": {
+        "S1": "The real-integral relation, period splitting and iterated chain hold together in one eventual depth regime.",
+        "S2": "On the chosen flat datum the supported-cell description applies at the same parameter as the local representations.",
+        "S3": "With the cell masses, period change of measures and Fock readings inserted, the real integral equals its unfolded expression."
+      },
+      "step_passages": {
+        "S1": "12c1070e8535e0cc60ecbed167cbbd6fd94f7441287c72f7083d1ac109d89fd1",
+        "S2": "50bf8a1390787204d50b5d871be72f70e8137f545f3fd52881c3358fc04dc14f",
+        "S3": "050eeb371ae4ab645f0daf21cc9cd5ce2b93fc7070e5e5fd319690033453ef9e"
+      }
+    }
+  ]
+}

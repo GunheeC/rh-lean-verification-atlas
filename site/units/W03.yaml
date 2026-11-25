@@ -1,0 +1,93 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "W03",
+  "title": "Patching the real and CM hypotheses",
+  "track": {
+    "primary": "galois",
+    "secondary": []
+  },
+  "statement": "Given the rank-$n$ literature record and W04, there is a common\nrecord $H'$ with the following fifteen fields. It retains the rank-$n$\ninput, supplies the cohomological, conjugation and Borel-injectivity\nassertions, and attaches Galois representations in rank two over totally\nreal fields. It supplies strong multiplicity one, the Gelfand--Kazhdan\nduality, admissibility, quadratic base change and the newform\nrealization on the real side. Its last five fields give weak unitary\ndescent, the cyclic base-change and rank-two descent conditions,\ndefinite quaternionic existence and semisimplicity of the real cuspidal\nrepresentation.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Use the rank-$n$ literature hypothesis record and weak unitary descent in ranks two through four."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.HV.DescentVanishingReductions.published_hypotheses_from_patching_alt",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/PublishedHypothesesFromPatching.lean",
+      "line0": 98,
+      "line1": 103,
+      "sha256": "968f8dafe4365691e706ea7a88f7093cdd6463aa7ff5333033030e7d2e4aba17",
+      "dominated": 46525,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "5.39 (sub:W03)",
+      "pages": [
+        49,
+        49
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/W03.tex",
+      "section": "sub:W03",
+      "pages": []
+    }
+  ],
+  "status": "Statement only",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [
+    "B04",
+    "D506"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [],
+  "paper_id": "W03",
+  "indexed_members": [
+    "D087",
+    "D101",
+    "D103",
+    "D111",
+    "D503",
+    "D504",
+    "D505",
+    "D507",
+    "D508",
+    "D509"
+  ],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "patching-the-real-and-cm-hypotheses",
+  "aliases": [
+    "published_hypotheses_from_patching_alt",
+    "W03 Patching the real and CM hypotheses"
+  ],
+  "background": [
+    "Galois representations attached to automorphic forms",
+    "Unitary descent"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "5.39 (sub:W03)",
+    "pages": [
+      49,
+      49
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "B04": "graph",
+    "D506": "graph"
+  }
+}

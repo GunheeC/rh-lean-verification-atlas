@@ -1,0 +1,135 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "P017",
+  "edition_sha256": "5303c530b9401bcaa27cee6b4007f44ca61d27dc216a6681fc41b88336539299",
+  "note_sha256": "1c39b38b6d0b4b85003e5b820e02d23ba035173fc70605d35c3a636a7db70152",
+  "statement_sha256": "67de3ffb8c1acb90dacbad41a325777934236346fd9e86a47fe6a89a2d6f4b5c",
+  "sources": [
+    {
+      "path": "notes/units/P017_v4.md",
+      "sha256": "1c39b38b6d0b4b85003e5b820e02d23ba035173fc70605d35c3a636a7db70152"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The explicit-formula condition and tiedness give constants fixed for the family; one maximum includes both thresholds and the one-scale threshold.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: family explicit-formula and eventual tiedness"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Comparison₂.level_gm_le_on_family_scales",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/LevelGmLeOnFamilyScales.lean",
+          "line0": 28,
+          "line1": 30
+        }
+      ],
+      "source": "notes/units/P017_v4.md",
+      "anchor": "Unpack $\\mathrm{EFamC}",
+      "source_lines": [
+        31,
+        56
+      ],
+      "claim_sha256": "5bf6e6da1fc2b95060f3a17ac7c7131901ad4ed80215a77128ca21525e82c125",
+      "passage_sha256": "ad16fa013e353aefdf5543ff715786638d3c4da99ccfd89b71c6b7619273bcee",
+      "sha256": "452395ca6911d3210d1dbdf608dc790bdd1b7650c2399b9f97ca21aac6cfecd5",
+      "ai_review": [
+        {
+          "verdict": "CONFIRMED",
+          "scope": "The explicit-formula condition and tiedness give constants fixed for the family; one maximum includes both thresholds and the one-scale threshold.",
+          "file": "reviews/DB3_review_A.md",
+          "lines": [
+            91,
+            91
+          ],
+          "edition_sha256": "5303c530b9401bcaa27cee6b4007f44ca61d27dc216a6681fc41b88336539299",
+          "step_sha256": "452395ca6911d3210d1dbdf608dc790bdd1b7650c2399b9f97ca21aac6cfecd5"
+        }
+      ]
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "At each eligible scale the reference frame, identity translation and chosen word fibres satisfy the coverage, subgroup and test-set requirements.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "input: arithmetic tie and common test set"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Comparison₂.tiedCore_of_chainTied",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/LevelGmLeOnFamilyScales.lean",
+          "line0": 13,
+          "line1": 26
+        }
+      ],
+      "source": "notes/units/P017_v4.md",
+      "anchor": "Use its reference member",
+      "source_lines": [
+        31,
+        56
+      ],
+      "claim_sha256": "d3c8592873e8f64da354ee1c2e9b590b5aac2145c562057398f1597f3f4000d4",
+      "passage_sha256": "ad16fa013e353aefdf5543ff715786638d3c4da99ccfd89b71c6b7619273bcee",
+      "sha256": "b49f6d819d70f7f5ea9d46af6192d2d873634c55ce311e8440cc7851726075af",
+      "ai_review": [
+        {
+          "verdict": "CONFIRMED",
+          "scope": "At each eligible scale the reference frame, identity translation and chosen word fibres satisfy the coverage, subgroup and test-set requirements.",
+          "file": "reviews/DB3_review_A.md",
+          "lines": [
+            92,
+            92
+          ],
+          "edition_sha256": "5303c530b9401bcaa27cee6b4007f44ca61d27dc216a6681fc41b88336539299",
+          "step_sha256": "b49f6d819d70f7f5ea9d46af6192d2d873634c55ce311e8440cc7851726075af"
+        }
+      ]
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The explicit-formula estimate holds for that same reference member; applying the one-scale estimate yields the bound on the family’s window tail.",
+      "kind": "assembly",
+      "uses": [
+        "S2",
+        "B08"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Comparison₂.windowInequality_of_artinInputs",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/WindowInequalityOfArtinInputs.lean",
+          "line0": 17,
+          "line1": 25
+        }
+      ],
+      "source": "notes/units/P017_v4.md",
+      "anchor": "Evaluate the universally",
+      "source_lines": [
+        31,
+        56
+      ],
+      "claim_sha256": "ca2362ab508aceb303a617cecf00535f4b6d1b2dbec74c64815ffbadb9c15e04",
+      "passage_sha256": "ad16fa013e353aefdf5543ff715786638d3c4da99ccfd89b71c6b7619273bcee",
+      "sha256": "b172fae43ddb0143f19243a067fb127c9029f3eeee730295235feb2194c105ea",
+      "ai_review": [
+        {
+          "verdict": "CONFIRMED",
+          "scope": "The explicit-formula estimate holds for that same reference member; applying the one-scale estimate yields the bound on the family’s window tail.",
+          "file": "reviews/DB3_review_A.md",
+          "lines": [
+            91,
+            91
+          ],
+          "edition_sha256": "5303c530b9401bcaa27cee6b4007f44ca61d27dc216a6681fc41b88336539299",
+          "step_sha256": "b172fae43ddb0143f19243a067fb127c9029f3eeee730295235feb2194c105ea"
+        }
+      ]
+    }
+  ],
+  "history": []
+}

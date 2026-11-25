@@ -1,0 +1,149 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "Z1.1.02",
+  "edition_sha256": "14c35931c71c83fbfac05f669e3f0f79fee162a667b16b8ddf2c65643e820a43",
+  "note_sha256": "f7f5deb5dc2ae46bbc53f427ac10b0f8a94fae0a1519203cf22ef38fa850b513",
+  "statement_sha256": "5c884f5843828abcf424e5c0531236f08657aff61f3de60af35d0ef411346569",
+  "sources": [
+    {
+      "path": "notes/blueprint/Z1.1.02.tex",
+      "sha256": "f7f5deb5dc2ae46bbc53f427ac10b0f8a94fae0a1519203cf22ef38fa850b513"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The value of theta at complex conjugation has order dividing both two and ell, so it equals one.",
+      "kind": "computation",
+      "uses": [
+        "input: odd prime and order condition"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Z.Sym.W.seedInW_alt",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TSeedInW.lean",
+          "line0": 126,
+          "line1": 135
+        }
+      ],
+      "source": "notes/blueprint/Z1.1.02.tex",
+      "anchor": "\\(\\theta^\\ell=1\\), so \\(\\theta(c)^2=\\theta(c)^\\ell=1\\) forces",
+      "source_lines": [
+        7,
+        31
+      ],
+      "claim_sha256": "6dd2f783b298aac14741019812295f32e0066b4d0def6375b9ca8af5d6bdc84b",
+      "passage_sha256": "8bdaa9169f3b84eb62238d3f1834ac23b23919effa12c5c3c7408b5990d6de92",
+      "sha256": "bdd6eaf03e85ab0f7d68e9e31a1f6c59fac384bfd44c175c521d664508815611",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The open intersection of the three kernels is contained in the kernel of the product character.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: open kernels of the three characters"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Z.Sym.W.seedInW_alt",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TSeedInW.lean",
+          "line0": 139,
+          "line1": 152
+        }
+      ],
+      "source": "notes/blueprint/Z1.1.02.tex",
+      "anchor": "The intersection of the three open kernels is contained in \\(\\ker\\Theta\\),",
+      "source_lines": [
+        7,
+        31
+      ],
+      "claim_sha256": "8905eb7a8c24d6c85da1a6345ee74ff4354fa1fd7112edda3264789dab7c27ee",
+      "passage_sha256": "8bdaa9169f3b84eb62238d3f1834ac23b23919effa12c5c3c7408b5990d6de92",
+      "sha256": "fbc4d9777e37ba84229139b71b8768ef109582e56f868bde75aa995b88f2ec22",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Multiplying the determinant by the two conjugate twist values leaves the inverse cyclotomic value.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "S2",
+        "input: twist product identity"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Z.Sym.W.seedInW_alt",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TSeedInW.lean",
+          "line0": 162,
+          "line1": 174
+        }
+      ],
+      "source": "notes/blueprint/Z1.1.02.tex",
+      "anchor": "\\(\\det\\rho(s)=a^m b\\) and \\(\\kappa(s)\\kappa(s')=a^{-(m+1)}b^{-1}\\).",
+      "source_lines": [
+        7,
+        31
+      ],
+      "claim_sha256": "69a05c8bd7aca664cc9b9ef0eb815ba00371a1ddd9206cd8103ba226e99ddaa5",
+      "passage_sha256": "8bdaa9169f3b84eb62238d3f1834ac23b23919effa12c5c3c7408b5990d6de92",
+      "sha256": "65394cd583083da36e5630bea9d7968affb8bb8cb5f1c3a267c70b3805bcedcf",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The polarization identity applies to the required window only if the same twist has its local types and lies in that window.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S3",
+        "input: twist with prescribed local types"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Z.Sym.W.seedInW_alt",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TSeedInW.lean",
+          "line0": 214,
+          "line1": 224
+        }
+      ],
+      "source": "notes/blueprint/Z1.1.02.tex",
+      "anchor": "prime. The existence of the twist with all prescribed local types, and the",
+      "source_lines": [
+        7,
+        31
+      ],
+      "claim_sha256": "e2f75ae648ce2ef8530910746ce47e36b08f600e0303d80b981dcb660d3cb138",
+      "passage_sha256": "8bdaa9169f3b84eb62238d3f1834ac23b23919effa12c5c3c7408b5990d6de92",
+      "sha256": "ff80037f97bee539ed395d8d22fe108191f004873c8f74a95d021e3ac6f9dc19",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "5947d09c326182d5504649d81d16d3646f033d18865d903d5197d4ce53cac080",
+      "sources": [
+        {
+          "path": "notes/blueprint/Z1.1.02.tex",
+          "sha256": "f7f5deb5dc2ae46bbc53f427ac10b0f8a94fae0a1519203cf22ef38fa850b513"
+        }
+      ],
+      "steps": {
+        "S1": "a4188ffd215a8c6b69d9db7dd1c950069a1d9e5f81acb19a2e0fb8f81e13086d",
+        "S2": "776e4200c8bfe5259c15265b91916519413c98bfe08e279889f749c5f8659f3d",
+        "S3": "a81619dedc11f9f39fd80e05c9c06270f50f18b2aee125ef32194ea53265b111",
+        "S4": "0ecc0e18e205b90daf4f30b2ee06fd0ba36330673e014b8137ea88183b178cb4"
+      },
+      "step_texts": {
+        "S1": "The value of theta at complex conjugation has order dividing both two and ell, so it equals one.",
+        "S2": "The open intersection of the three kernels is contained in the kernel of the product character.",
+        "S3": "Multiplying the determinant by the two conjugate twist values leaves the inverse cyclotomic value.",
+        "S4": "The polarization identity applies to the required window only if the same twist has its local types and lies in that window."
+      }
+    }
+  ]
+}

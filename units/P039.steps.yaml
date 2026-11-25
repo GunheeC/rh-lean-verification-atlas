@@ -1,0 +1,99 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "P039",
+  "edition_sha256": "e68550bbf38ba4a9cbe5269806de8bb74b68dde662d80f4914b20e44568992a1",
+  "note_sha256": "fa54b9efa83a0b45fbc52f6748e49b07e4f88dd298fa3ea3bf9349dd04869d66",
+  "statement_sha256": "774357b039cab07c81549d34f4f55b7115a0636b4f9f8907e5a887625c0bb996",
+  "sources": [
+    {
+      "path": "notes/units/P039.tex",
+      "sha256": "fa54b9efa83a0b45fbc52f6748e49b07e4f88dd298fa3ea3bf9349dd04869d66"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The Hermite normal form count supplies the explicit orbit bound at rank $N$.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: Hermite normal form orbit count"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.KT.orbnum",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HermiteNormalForms/Orbnum.lean",
+          "line0": 80,
+          "line1": 92
+        }
+      ],
+      "source": "notes/units/P039.tex",
+      "anchor": "Hermite normal form count gives",
+      "source_lines": [
+        7,
+        32
+      ],
+      "claim_sha256": "e6e819b8f35283237569ad1ece9d3e73b344fe6cbc984c3ab3aa8dea3e6e6c41",
+      "passage_sha256": "bbd1a7c3c7a7e620c479eefecfcd535cfc0ef400a2f8bbc95ab27e4d5bd2f2bf",
+      "sha256": "fc5ec251bf5f692acfb1502c94f8e67953fb844bddf89ffda83a9bfc51568abc",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The orbit and stabilizer bounds inserted into P038 give the displayed upper bound on the logarithm of torsion.",
+      "kind": "inequality",
+      "uses": [
+        "S1",
+        "P038"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.ZK.torsAll",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/ExponentLe.lean",
+          "line0": 70,
+          "line1": 117
+        }
+      ],
+      "source": "notes/units/P039.tex",
+      "anchor": "preceding",
+      "source_lines": [
+        7,
+        32
+      ],
+      "claim_sha256": "e71ede85ebf121abee70e2c7221995571184551c669c2ea88c47c8bf81c050f1",
+      "passage_sha256": "bbd1a7c3c7a7e620c479eefecfcd535cfc0ef400a2f8bbc95ab27e4d5bd2f2bf",
+      "sha256": "25f4b572a6ba150d22610b622998c126841a8daf34ebe91685d35dcbbf679961",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "In the specified rank and degree window the resulting exponential bound admits the single exponent $24$.",
+      "kind": "inequality",
+      "uses": [
+        "S2",
+        "standard: elementary logarithmic estimates"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.ZK.torsAll",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/ExponentLe.lean",
+          "line0": 70,
+          "line1": 117
+        }
+      ],
+      "source": "notes/units/P039.tex",
+      "anchor": "The braces are bounded",
+      "source_lines": [
+        7,
+        32
+      ],
+      "claim_sha256": "3c7253af3acecfc62dd1ba5111d9192aa47f5d17083393575e300ad3dbfcaa9e",
+      "passage_sha256": "bbd1a7c3c7a7e620c479eefecfcd535cfc0ef400a2f8bbc95ab27e4d5bd2f2bf",
+      "sha256": "0eb12a1ba315f79a0a7cdc46c9d73d62f547b836731706fcd3cf8f592af42424",
+      "ai_review": []
+    }
+  ],
+  "history": []
+}

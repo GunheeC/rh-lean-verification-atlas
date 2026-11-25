@@ -1,0 +1,1457 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "edition": "paper2_v4",
+  "review_status": "pending_review",
+  "source_commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "hypothesis_table": [
+    {
+      "group": "Sources",
+      "row": "V",
+      "paper_id": "V",
+      "unit_id": "P013",
+      "role": "supplier of global predicate",
+      "description": "The quantified Selmer window stated below. P013 constructs it from a row premise.",
+      "lean_range": {
+        "name": "UpperTheory.One.vwin_of_row",
+        "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/VwinOfRow.lean",
+        "line0": 4,
+        "line1": 5,
+        "sha256": "c6737c388a60710399cbefa7c22fa10c35609465302265d87f51a8f680299764"
+      },
+      "dominated": 886201,
+      "inclusive": 1724828,
+      "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/VwinOfRow.lean#L4-L5"
+    },
+    {
+      "group": "Sources",
+      "row": "F",
+      "paper_id": "F",
+      "unit_id": "T02",
+      "role": "supplier of global predicate",
+      "description": "The single common nonempty definite-side hypothesis record below. T02 constructs this record under its own inputs.",
+      "lean_range": {
+        "name": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+        "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+        "line0": 44,
+        "line1": 68,
+        "sha256": "7c64a85613593761729e25e8e59316e93e4566b0495623843333ac8a5102d27e"
+      },
+      "dominated": 3679692,
+      "inclusive": 5646411,
+      "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean#L44-L68"
+    },
+    {
+      "group": "Sources",
+      "row": "B",
+      "paper_id": "B",
+      "unit_id": "D575",
+      "role": "supplier of global predicate",
+      "description": "Green’s parametrization stated below. D575 supplies it from regularity data.",
+      "lean_range": {
+        "name": "GlobalTheory.GreenBridge.green_of_regular",
+        "file": "Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/SumRangeEqRoots.lean",
+        "line0": 225,
+        "line1": 304,
+        "sha256": "bf88f05c856ea17023e795b5f4927ca92a35971bd50f00ca4ed56ad8505d16f7"
+      },
+      "dominated": 280,
+      "inclusive": 370,
+      "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/SumRangeEqRoots.lean#L225-L304"
+    },
+    {
+      "group": "A",
+      "row": "A1",
+      "paper_id": "D547",
+      "unit_id": "D547",
+      "role": "full quantified local implication",
+      "description": "For every real evaluation point, identify the weighted kept host sum with the cyclic-level sum.",
+      "lean_range": {
+        "name": "UpperTheory.Comparison₂.gmA_eq",
+        "file": "Development/AutomorphicArithmetic/PrimitiveCosets/GmAEq.lean",
+        "line0": 61,
+        "line1": 149,
+        "sha256": "9a030e980281ef02d4c0e1b0803352edc89c15c88c56163027de3672e703c068"
+      },
+      "dominated": 242,
+      "inclusive": 1045,
+      "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/PrimitiveCosets/GmAEq.lean#L61-L149"
+    },
+    {
+      "group": "A",
+      "row": "A2",
+      "paper_id": "D548",
+      "unit_id": "D548",
+      "role": "full quantified local implication",
+      "description": "A compatible host and its explicit-formula bounds give kept identities, band cardinality, residue-class shares and character derivative bounds.",
+      "lean_range": {
+        "name": "UpperTheory.Comparison₂.charsA",
+        "file": "Development/AutomorphicArithmetic/PrimitiveCosets/charsA.lean",
+        "line0": 80,
+        "line1": 125,
+        "sha256": "2e3825540c0f207d1382c9bb8f7d4a9c0dd8c08b01dbe9ec6c2758ad44ac77c4"
+      },
+      "dominated": 203,
+      "inclusive": 919,
+      "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/PrimitiveCosets/charsA.lean#L80-L125"
+    },
+    {
+      "group": "A",
+      "row": "A3",
+      "paper_id": "D549",
+      "unit_id": "D549",
+      "role": "full quantified local implication",
+      "description": "At a positive explicit-formula scale, bound the discarded nonnegative sum by $4o x^{1/2+\\varepsilon}$.",
+      "lean_range": {
+        "name": "UpperTheory.Comparison₂.sigA_le",
+        "file": "Development/AutomorphicArithmetic/PrimitiveCosets/SigALe.lean",
+        "line0": 38,
+        "line1": 60,
+        "sha256": "76af9a0c15d1430c03efad24324cc1e1fc880da1c469944dac5ab35525f9a4e1"
+      },
+      "dominated": 51,
+      "inclusive": 700,
+      "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/PrimitiveCosets/SigALe.lean#L38-L60"
+    },
+    {
+      "group": "A",
+      "row": "A4",
+      "paper_id": "D562",
+      "unit_id": "D562",
+      "role": "full quantified local implication",
+      "description": "There is an absolute nonnegative constant controlling increments at all points at least one, separately for the principal and nonprincipal characters.",
+      "lean_range": {
+        "name": "Formalism.LFunctionChainParameters.ThickSetMeanBounds.derivative_integral_all",
+        "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean",
+        "line0": 966,
+        "line1": 981,
+        "sha256": "2199aa1029611946a5ad7a243a47df41a56417d05aa0ea592a91d4064256cb3c"
+      },
+      "dominated": 270,
+      "inclusive": 341,
+      "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean#L966-L981"
+    },
+    {
+      "group": "A",
+      "row": "A5",
+      "paper_id": "D567",
+      "unit_id": "D567",
+      "role": "full quantified local implication",
+      "description": "Under the per-unit error windows and the common largeness conditions, bound the local error by the bracket times the indicated exponent loss.",
+      "lean_range": {
+        "name": "Formalism.LFunctionChainParameters.LChain.errX5at_le",
+        "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/PChain.lean",
+        "line0": 613,
+        "line1": 672,
+        "sha256": "a72dea7a7c24282008d1fea77748cb076f221dc8265c60e47a62b11f42887ebf"
+      },
+      "dominated": 289,
+      "inclusive": 398,
+      "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SizeWindowBrackets/ChainSlopeWindows/PChain.lean#L613-L672"
+    },
+    {
+      "group": "A",
+      "row": "A6",
+      "paper_id": "D014",
+      "unit_id": "D014",
+      "role": "full quantified local implication",
+      "description": "The arithmetic host axioms imply the inertia and Frobenius conditions at the excluded finite set, the auxiliary ramified prime and all other primes.",
+      "lean_range": {
+        "name": "UpperTheory.Comparison₂.hostFactsS",
+        "file": "Development/AutomorphicArithmetic/PrimitiveCosets/hostFactsS.lean",
+        "line0": 127,
+        "line1": 136,
+        "sha256": "ef97916068b30a9b83bc32d6b22fb03bdc3882660a3447f087cb63045e087583"
+      },
+      "dominated": 130,
+      "inclusive": 564,
+      "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/PrimitiveCosets/hostFactsS.lean#L127-L136"
+    },
+    {
+      "group": "A",
+      "row": "A7",
+      "paper_id": "D550",
+      "unit_id": "D550",
+      "role": "full quantified local implication",
+      "description": "Fix positive $\\varepsilon$ and the constants in the error multiplier. One threshold bounds both the logarithm and that multiplier by $x^\\varepsilon$.",
+      "lean_range": {
+        "name": "Formalism.LFunctionChainParameters.LErr.large_x_eventually",
+        "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/SubThreeMulLogTwoLe.lean",
+        "line0": 319,
+        "line1": 329,
+        "sha256": "90f46cef73a8bbf9409ddb93252d5d50dd1093899eda3623171ad8cb61b9a738"
+      },
+      "dominated": 13,
+      "inclusive": 15,
+      "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SizeWindowBrackets/ChainSlopeWindows/SubThreeMulLogTwoLe.lean#L319-L329"
+    },
+    {
+      "group": "A",
+      "row": "A8",
+      "paper_id": "A8",
+      "unit_id": "D561",
+      "role": "full quantified local implication",
+      "description": "Under the finite local host conditions and support cutoff, character orthogonality identifies the difference between the ask and main sums with the deviation.",
+      "lean_range": {
+        "name": "Deduction.ch_balance",
+        "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChBalance.lean",
+        "line0": 200,
+        "line1": 260,
+        "sha256": "ed29418b71866546dcaaad4dce557ca4bbc1315ad1e70930c6c990b8a58ad229"
+      },
+      "dominated": 582,
+      "inclusive": 670,
+      "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChBalance.lean#L200-L260"
+    },
+    {
+      "group": "A",
+      "row": "A9",
+      "paper_id": "A9",
+      "unit_id": "D562",
+      "role": "full quantified local implication",
+      "description": "For every pair of positive widths, the change of the weighted prime sum has absolute value at most three times the scale times the width change divided by the smaller width.",
+      "lean_range": {
+        "name": "Formalism.LFunctionChainParameters.ThickSetMeanBounds.lipschitz_weight_all",
+        "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean",
+        "line0": 957,
+        "line1": 964,
+        "sha256": "0bb1c563c4e47fac46b11361efcbfe3cd1c0afe8cb0e32560a9c6585f5786c84"
+      },
+      "dominated": 177,
+      "inclusive": 244,
+      "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean#L957-L964"
+    },
+    {
+      "group": "A",
+      "row": "A10",
+      "paper_id": "A10",
+      "unit_id": "D561",
+      "role": "fixed-width substep",
+      "description": "Use the fixed-width thick-place reindexing in th_le. The cited interval and graph size cover its enclosing lemma, which also estimates the error.",
+      "lean_range": {
+        "name": "Deduction.CharacterBalanceMoves.th_le",
+        "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean",
+        "line0": 75,
+        "line1": 152,
+        "sha256": "2cd1af6bbeb207dc0b2f12cd38f4601a4293c2fc59903b4b040f5d8405737b4c"
+      },
+      "dominated": 276,
+      "inclusive": 343,
+      "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean#L75-L152"
+    },
+    {
+      "group": "B",
+      "row": "B1",
+      "paper_id": "B1",
+      "unit_id": "D510",
+      "role": "full quantified local implication",
+      "description": "For each modulus, exponent and window parameter, obtain good prime pairs with the density and twisted-character prime-sum and zero-free estimates in PairEx.",
+      "lean_range": {
+        "name": "QH.pairEx",
+        "file": "Development/AutomorphicArithmetic/MeanSquareBounds/pairEx.lean",
+        "line0": 112,
+        "line1": 169,
+        "sha256": "574039390e63e91b94458f5170f3c35d3f85576a947346054d6b39a5015088ee"
+      },
+      "dominated": 17613,
+      "inclusive": 26640,
+      "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/MeanSquareBounds/pairEx.lean#L112-L169"
+    },
+    {
+      "group": "B",
+      "row": "B2",
+      "paper_id": "B2",
+      "unit_id": "B07",
+      "role": "full quantified local implication",
+      "description": "A primitive character supplies $c,e_0$ before the frame exponent and primes. For each admissible input construct an initial frame and field host, its kernel, twists and conductor bounds.",
+      "lean_range": {
+        "name": "UpperTheory.Top.fieldChi",
+        "file": "Development/AutomorphicArithmetic/CharacterBoxes/FieldChi.lean",
+        "line0": 20,
+        "line1": 59,
+        "sha256": "fb81ec44f4a2b420bed29158a25fe2fe7a8113865000059178e37966e8cc8aef"
+      },
+      "dominated": 3104,
+      "inclusive": 6384,
+      "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/FieldChi.lean#L20-L59"
+    },
+    {
+      "group": "B",
+      "row": "B3",
+      "paper_id": "B3",
+      "unit_id": "B07",
+      "role": "full quantified local implication",
+      "description": "On the prescribed interval, twist form, conductor divisibility, prime support and PairGood imply pointwise bounds for the complementary frequencies and logarithmic derivatives bounded by $4\\log x$.",
+      "lean_range": {
+        "name": "UpperTheory.Top.boundedTw",
+        "file": "Development/AutomorphicArithmetic/CharacterBoxes/BoundedTw.lean",
+        "line0": 45,
+        "line1": 56,
+        "sha256": "182ed86fc4d12babef87510aff04bf054bda1b6e19f8235afc777d762a0c817f"
+      },
+      "dominated": 51,
+      "inclusive": 253,
+      "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/BoundedTw.lean#L45-L56"
+    },
+    {
+      "group": "B",
+      "row": "B4",
+      "paper_id": "B4",
+      "unit_id": "B07",
+      "role": "full quantified local implication",
+      "description": "For each primitive character, frame and raw host, KerChi identifies its field as IsChiField for that same frame exponent and pair of primes.",
+      "lean_range": {
+        "name": "UpperTheory.Top.isChiField",
+        "file": "Development/AutomorphicArithmetic/CharacterBoxes/IsChiField.lean",
+        "line0": 5,
+        "line1": 51,
+        "sha256": "f014c52a660677d1bbea1a0605fa09e54bb482dd911a42fb786b433d570e6a2c"
+      },
+      "dominated": 47,
+      "inclusive": 128,
+      "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/IsChiField.lean#L5-L51"
+    },
+    {
+      "group": "B",
+      "row": "B5",
+      "paper_id": "B5",
+      "unit_id": "B07",
+      "role": "full quantified local implication",
+      "description": "For every WinPair derive HostHyp, the small odd prime symbols and the two quadratic-reciprocity identities for odd integers.",
+      "lean_range": {
+        "name": "UpperTheory.Top.pairHyp",
+        "file": "Development/AutomorphicArithmetic/CharacterBoxes/PairHyp.lean",
+        "line0": 24,
+        "line1": 35,
+        "sha256": "d85dba8e4fb7ad44f2945fad6e12598103867f9b30b3d003eedccdbf37799131"
+      },
+      "dominated": 29,
+      "inclusive": 42,
+      "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/PairHyp.lean#L24-L35"
+    },
+    {
+      "group": "B",
+      "row": "B6",
+      "paper_id": "D511",
+      "unit_id": "D511",
+      "role": "full quantified local implication",
+      "description": "The size and field conditions, admission, good pair and pair window extend this very initial host to a good host with uniform constants and the required shares.",
+      "lean_range": {
+        "name": "UpperTheory.Top.hostOfField",
+        "file": "Development/AutomorphicArithmetic/CharacterBoxes/HostOfField.lean",
+        "line0": 8,
+        "line1": 15,
+        "sha256": "8855c0cb1dda7f740a7192d02c9ee56053f49b8c0fa7ceb3b3e99b6ea82eec7c"
+      },
+      "dominated": 10024,
+      "inclusive": 41613,
+      "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/HostOfField.lean#L8-L15"
+    },
+    {
+      "group": "B",
+      "row": "B7",
+      "paper_id": "D513",
+      "unit_id": "D513",
+      "role": "full quantified local implication",
+      "description": "For each $0<\\varepsilon<1/52$ choose the scale threshold before the scale and frame. Order in the required two-sided interval supplies ranks with that exact frame.",
+      "lean_range": {
+        "name": "GlobalTheory.EX.exists_ranks_rankVal_frame",
+        "file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsRanksRankValFrame.lean",
+        "line0": 45,
+        "line1": 99,
+        "sha256": "9eded7a6c52d5582a3d35db0ae0c0876012c571c36b064f0dc9a575dbc6f8877"
+      },
+      "dominated": 81,
+      "inclusive": 132,
+      "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsRanksRankValFrame.lean#L45-L99"
+    },
+    {
+      "group": "B",
+      "row": "B8",
+      "paper_id": "D515",
+      "unit_id": "B07",
+      "role": "full quantified local implication",
+      "description": "For the scale and initial host on that frame, choose ranks with RankVal and admission of the transported host.",
+      "lean_range": {
+        "name": "UpperTheory.Top.admissibleClassesTwistedChar",
+        "file": "Development/AutomorphicArithmetic/CoprimeRanks/AdmChi.lean",
+        "line0": 13,
+        "line1": 20,
+        "sha256": "e83ed9ad3dbfca3b124d5efa66d21e6d0159b651278ac56e6dc0fe52dec35214"
+      },
+      "dominated": 112,
+      "inclusive": 458,
+      "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CoprimeRanks/AdmChi.lean#L13-L20"
+    },
+    {
+      "group": "C",
+      "row": "C1",
+      "paper_id": "D483",
+      "unit_id": "B05",
+      "role": "full quantified local implication",
+      "description": "Design choices, twisted selection, duty, closed size, class-number estimate and LitThin supply a design on the restricted family class.",
+      "lean_range": {
+        "name": "GlobalTheory.Top.designExists_of_tuSize_aux4n_litThin",
+        "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkEx.lean",
+        "line0": 15,
+        "line1": 37,
+        "sha256": "5f7549dfb16ebb7c9d814a275af2808ec468c197005fe294f185ff4391cddcab"
+      },
+      "dominated": 1749,
+      "inclusive": 36881,
+      "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkEx.lean#L15-L37"
+    },
+    {
+      "group": "C",
+      "row": "C2",
+      "paper_id": "D479",
+      "unit_id": "D479",
+      "role": "full quantified local implication",
+      "description": "Duty, second-layer conditions and mass inputs supply the closed slope/rank and global implications. The surrounding comparison must still supply the slope hypotheses used by the second-layer conditions.",
+      "lean_range": {
+        "name": "GlobalTheory.Top.link_gl",
+        "file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/LinkGl.lean",
+        "line0": 14,
+        "line1": 31,
+        "sha256": "50ea47933db45c6a1bd8444f061acfb36555e58406fce4b4a74fdf5df0575ae2"
+      },
+      "dominated": 11198,
+      "inclusive": 191128,
+      "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/LinkGl.lean#L14-L31"
+    },
+    {
+      "group": "C",
+      "row": "C3",
+      "paper_id": "D481",
+      "unit_id": "D481",
+      "role": "full quantified local implication",
+      "description": "For a family class and absolute constant, division-kernel data above a uniform threshold and closed kernel-constant bounds supply a closed division bound with the very same constant.",
+      "lean_range": {
+        "name": "Formalism.L2.DIV.closed_linkDIVt_of_closed_bridge_kernel",
+        "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/DIVRecBridgeSel.lean",
+        "line0": 197,
+        "line1": 205,
+        "sha256": "ba4779fe82b80ed4d297ed2593dcebc96ca4e68ce674e24e37713d6f6cb3a4e9"
+      },
+      "dominated": 5437,
+      "inclusive": 42336,
+      "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/DIVRecBridgeSel.lean#L197-L205"
+    },
+    {
+      "group": "C",
+      "row": "C4",
+      "paper_id": "D480",
+      "unit_id": "B05",
+      "role": "full quantified local implication",
+      "description": "A common selection, spectral and base choices, definite height, compatible columns, twists, primitivity, division rows and point data supply the selected wire data.",
+      "lean_range": {
+        "name": "GlobalTheory.Top.wire_sel_alt",
+        "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/WireSel.lean",
+        "line0": 20,
+        "line1": 50,
+        "sha256": "60827a5c9a3fd08c688e40374bf7486ce66d5a9c43bf1920f80bcb99d32279e5"
+      },
+      "dominated": 5644,
+      "inclusive": 74597,
+      "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/WireSel.lean#L20-L50"
+    },
+    {
+      "group": "C",
+      "row": "C5",
+      "paper_id": "D482",
+      "unit_id": "B05",
+      "role": "full quantified local implication",
+      "description": "On one selected family class the remaining comparison inputs supply the closed residual link requirements.",
+      "lean_range": {
+        "name": "GlobalTheory.Top.link_brest_alt",
+        "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkBrest.lean",
+        "line0": 18,
+        "line1": 36,
+        "sha256": "16a8381f3bda15ac92cdbd19d9efd1b3345034c0b137db409b887e1076b89cdf"
+      },
+      "dominated": 2204,
+      "inclusive": 344189,
+      "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkBrest.lean#L18-L36"
+    },
+    {
+      "group": "C",
+      "row": "C6",
+      "paper_id": "B06",
+      "unit_id": "B06",
+      "role": "full quantified local implication",
+      "description": "From the closed selected twist estimates with their serving and numerical requirements obtain the family’s linked admissible twists.",
+      "lean_range": {
+        "name": "GlobalTheory.Top.closed_family_admissible_twist_link_alt",
+        "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ClosedFamilyAdmissibleTwistLink.lean",
+        "line0": 12,
+        "line1": 31,
+        "sha256": "62cef6f7f5cab6bf8084e4c7a0166566cf4899ba2bb455e0100ebd33b33414e7"
+      },
+      "dominated": 21017,
+      "inclusive": 65731,
+      "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ClosedFamilyAdmissibleTwistLink.lean#L12-L31"
+    },
+    {
+      "group": "C",
+      "row": "C7",
+      "paper_id": "D484",
+      "unit_id": "D484",
+      "role": "full quantified local implication",
+      "description": "The spectral selection, Wu decay, finite rows, frame, counting, local row, mass and selected pretrace inputs supply the closed Bessel/row conclusions.",
+      "lean_range": {
+        "name": "GlobalTheory.Top.link_alt_alt_bis",
+        "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkAltAltBis.lean",
+        "line0": 16,
+        "line1": 48,
+        "sha256": "18ce175af24874aac2c4acd94a976c31658fd278b5f3fa172250f3c230021bf2"
+      },
+      "dominated": 1314,
+      "inclusive": 130614,
+      "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkAltAltBis.lean#L16-L48"
+    },
+    {
+      "group": "C",
+      "row": "C8",
+      "paper_id": "D485",
+      "unit_id": "B05",
+      "role": "full quantified local implication",
+      "description": "For any class and twist selection, duty for its members implies a closed eta link on the derived class.",
+      "lean_range": {
+        "name": "GlobalTheory.Top.closed_linkEta_of_duty",
+        "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkEta.lean",
+        "line0": 13,
+        "line1": 22,
+        "sha256": "5d63e2545472c3f0d0c651d3344076e7e96218414b43431df7ecb16507441dc1"
+      },
+      "dominated": 1143,
+      "inclusive": 26383,
+      "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkEta.lean#L13-L22"
+    },
+    {
+      "group": "C",
+      "row": "C9",
+      "paper_id": "D486",
+      "unit_id": "D486",
+      "role": "full quantified local implication",
+      "description": "Green and the common joined row/count estimate with positive counting constant yield a closed irreducible-character link.",
+      "lean_range": {
+        "name": "GlobalTheory.Top.Irr.closed_linkIRR_of_join_count",
+        "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkIrr.lean",
+        "line0": 22,
+        "line1": 43,
+        "sha256": "a06648c3418207186add4b6a2d5befe7adc1bdc8b2c7e846a95a06cba5d88d08"
+      },
+      "dominated": 773,
+      "inclusive": 36291,
+      "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkIrr.lean#L22-L43"
+    },
+    {
+      "group": "C",
+      "row": "C10",
+      "paper_id": "D489",
+      "unit_id": "B05",
+      "role": "full quantified local implication",
+      "description": "On the selected derived family class, duty implies the closed G link.",
+      "lean_range": {
+        "name": "GlobalTheory.Top.closed_linkG_of_duty",
+        "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkG.lean",
+        "line0": 13,
+        "line1": 24,
+        "sha256": "b494e8e96859c738a10c7333ca58640c60ece3961ded3cc83908293a103c5440"
+      },
+      "dominated": 13,
+      "inclusive": 252591,
+      "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkG.lean#L13-L24"
+    },
+    {
+      "group": "C",
+      "row": "C11",
+      "paper_id": "C11",
+      "unit_id": "B05",
+      "role": "full quantified local implication",
+      "description": "On the given compatible primitive selected data, lambda/division rows and eventual surjectivity of all retained column projections imply the closed small-level rank equalities.",
+      "lean_range": {
+        "name": "GlobalTheory.Top.link_alt_alt_alt",
+        "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/Link.lean",
+        "line0": 20,
+        "line1": 54,
+        "sha256": "1247c41e8510e8eb30f213a1e0c74ee102f53cfe54bcfb920dd612657ee6ce66"
+      },
+      "dominated": 122,
+      "inclusive": 45303,
+      "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/Link.lean#L20-L54"
+    },
+    {
+      "group": "C",
+      "row": "C12",
+      "paper_id": "C12",
+      "unit_id": "B05",
+      "role": "full quantified local implication",
+      "description": "On the compatible selected data, Wu decay, finite rows, the selected realization, base-image fullness and selected-row conditions give a closed comparison of complement forms.",
+      "lean_range": {
+        "name": "GlobalTheory.Top.selection_closed_of_wu_decay_alt",
+        "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SelectionClosedOfWuDecay.lean",
+        "line0": 20,
+        "line1": 52,
+        "sha256": "7caa7d85c07b672306551be483ec9ed6479f97cebecaa5948051a755d11aebf5"
+      },
+      "dominated": 347,
+      "inclusive": 128020,
+      "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SelectionClosedOfWuDecay.lean#L20-L52"
+    },
+    {
+      "group": "C",
+      "row": "C13",
+      "paper_id": "C13",
+      "unit_id": "P015",
+      "role": "full quantified local implication",
+      "description": "For arbitrary propositions $P,Q,T$ and predicate $N$ on family classes, the shape, proofs of $P,Q$ and one complete HypsAlt witness for $N$ imply $T$.",
+      "lean_range": {
+        "name": "GlobalTheory.Fc.goal_of_shape_of_hyps",
+        "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ShapeOf.lean",
+        "line0": 24,
+        "line1": 30,
+        "sha256": "6abdef3bcedaa01f9fbefcf84252976895c95aafff23574a6d4238f047d81659"
+      },
+      "dominated": 9,
+      "inclusive": 63925,
+      "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ShapeOf.lean#L24-L30"
+    }
+  ],
+  "changes": [
+    {
+      "id": "P017",
+      "old_status": "Outlined",
+      "status": "Full",
+      "grade": "L1",
+      "note": "notes/units/P017_v4.md",
+      "weakest_step": "Verify that the same eventual threshold precedes the scale-dependent reference member and that the host transfer identifies the very same selected translates.",
+      "lean_ranges": [
+        {
+          "name": "UpperTheory.Comparison₂.level_gm_le_on_family_scales",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/LevelGmLeOnFamilyScales.lean",
+          "line0": 28,
+          "line1": 30,
+          "sha256": "3ccafb3b79c94bca951834869fa86b0f798622473f991b8215748e8a3087b2d1"
+        },
+        {
+          "name": "UpperTheory.Comparison₂.core_gm",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/CoreGm.lean",
+          "line0": 12,
+          "line1": 74,
+          "sha256": "b73760a18d5253b23d291914c3579cfc2125b0864ba945c9fffe6f1260fb8394"
+        },
+        {
+          "name": "Deduction.ch_core",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean",
+          "line0": 343,
+          "line1": 442,
+          "sha256": "1c0b4be1f96d1fb59d5b7e4901b2036613b4f74c11d405016ffa5cf7b975ea56"
+        },
+        {
+          "name": "Deduction.ch_top",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChTop.lean",
+          "line0": 37,
+          "line1": 72,
+          "sha256": "4d71f0cccac3ac250ed97d70beb0d18c902b9639ccde0f4c5b31c38a26f724fd"
+        },
+        {
+          "name": "UpperTheory.Comparison₂.tiedCore_of_chainTied",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/LevelGmLeOnFamilyScales.lean",
+          "line0": 13,
+          "line1": 26,
+          "sha256": "3c976c086a7fc24254621a015b8cbdb0f676a380faa97df8d4b0f65dcf6b8577"
+        },
+        {
+          "name": "UpperTheory.Comparison₂.windowInequality_of_artinInputs",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/WindowInequalityOfArtinInputs.lean",
+          "line0": 17,
+          "line1": 25,
+          "sha256": "1e34532af7583c17cf8935de7cb473e289ba210c050a3408a185bd23cfdd70b3"
+        }
+      ],
+      "v4_pages": [
+        10,
+        20
+      ],
+      "v4_page_intervals": [
+        [
+          10,
+          20
+        ]
+      ],
+      "review_status": "pending_review",
+      "pages_written": 2,
+      "page_measurement": "Local A4 render of the English note, with 20 mm margins and 11 pt Georgia. The v4 page intervals refer separately to the source manuscript."
+    },
+    {
+      "id": "B08",
+      "old_status": "Outlined",
+      "status": "Full",
+      "grade": "L1",
+      "note": "notes/units/B08_v4.md",
+      "weakest_step": "Check that both one-scale implications use the universal threshold for the selected host, and absorb the discarded 4o term without changing the advertised exponent.",
+      "lean_ranges": [
+        {
+          "name": "UpperTheory.Comparison₂.core_gm",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/CoreGm.lean",
+          "line0": 12,
+          "line1": 74,
+          "sha256": "b73760a18d5253b23d291914c3579cfc2125b0864ba945c9fffe6f1260fb8394"
+        },
+        {
+          "name": "Deduction.ch_core",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean",
+          "line0": 343,
+          "line1": 442,
+          "sha256": "1c0b4be1f96d1fb59d5b7e4901b2036613b4f74c11d405016ffa5cf7b975ea56"
+        },
+        {
+          "name": "Deduction.ch_top",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChTop.lean",
+          "line0": 37,
+          "line1": 72,
+          "sha256": "4d71f0cccac3ac250ed97d70beb0d18c902b9639ccde0f4c5b31c38a26f724fd"
+        },
+        {
+          "name": "Formalism.LFunctionChainParameters.LErr.large_x_eventually",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/SubThreeMulLogTwoLe.lean",
+          "line0": 319,
+          "line1": 329,
+          "sha256": "90f46cef73a8bbf9409ddb93252d5d50dd1093899eda3623171ad8cb61b9a738"
+        },
+        {
+          "name": "UpperTheory.Comparison₂.sigA_le",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/SigALe.lean",
+          "line0": 38,
+          "line1": 60,
+          "sha256": "76af9a0c15d1430c03efad24324cc1e1fc880da1c469944dac5ab35525f9a4e1"
+        }
+      ],
+      "v4_pages": [
+        19,
+        19
+      ],
+      "v4_page_intervals": [
+        [
+          19,
+          19
+        ]
+      ],
+      "review_status": "pending_review",
+      "pages_written": 2,
+      "page_measurement": "Local A4 render of the English note, with 20 mm margins and 11 pt Georgia. The v4 page intervals refer separately to the source manuscript."
+    },
+    {
+      "id": "B09",
+      "old_status": "Outlined",
+      "status": "Full",
+      "grade": "L1",
+      "note": "notes/units/B09_v4.md",
+      "weakest_step": "Check the coefficient signs after the subgroup average and the local width replacement before applying the numerical bound to all four terms.",
+      "lean_ranges": [
+        {
+          "name": "Deduction.ch_core",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean",
+          "line0": 343,
+          "line1": 442,
+          "sha256": "1c0b4be1f96d1fb59d5b7e4901b2036613b4f74c11d405016ffa5cf7b975ea56"
+        },
+        {
+          "name": "Deduction.CharacterBalanceMoves.core",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean",
+          "line0": 283,
+          "line1": 338,
+          "sha256": "a2527ea0437b7e8bd11ed4cc2589fa3ff9c61fb3430254faa376637873cb8453"
+        },
+        {
+          "name": "Formalism.LFunctionChainParameters.ThickSetMeanBounds.proposition_size_bound",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean",
+          "line0": 507,
+          "line1": 592,
+          "sha256": "e573a01b923620c758779f91a8f4686e88c5bc4e08d203caaea4e3ece27e6f6f"
+        },
+        {
+          "name": "Deduction.CharacterBalanceMoves.one_char",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean",
+          "line0": 202,
+          "line1": 281,
+          "sha256": "8bc1d19ac2bb7388bc1aefdbc69db0d12cf03058f12fddd47bc4b83159b27279"
+        },
+        {
+          "name": "Formalism.LFunctionChainParameters.ThickSetMeanBounds.derivative_integral_all",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean",
+          "line0": 966,
+          "line1": 981,
+          "sha256": "2199aa1029611946a5ad7a243a47df41a56417d05aa0ea592a91d4064256cb3c"
+        }
+      ],
+      "v4_pages": [
+        16,
+        21
+      ],
+      "v4_page_intervals": [
+        [
+          16,
+          21
+        ]
+      ],
+      "review_status": "pending_review",
+      "pages_written": 3,
+      "page_measurement": "Local A4 render of the English note, with 20 mm margins and 11 pt Georgia. The v4 page intervals refer separately to the source manuscript."
+    },
+    {
+      "id": "B10",
+      "old_status": "Outlined",
+      "status": "Full",
+      "grade": "L0",
+      "note": "notes/units/B10_v4.md",
+      "weakest_step": "Check the main term at the single selected lattice and the sign of the lower bound before adding the pointwise error estimate.",
+      "lean_ranges": [
+        {
+          "name": "Deduction.ch_top",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChTop.lean",
+          "line0": 37,
+          "line1": 72,
+          "sha256": "4d71f0cccac3ac250ed97d70beb0d18c902b9639ccde0f4c5b31c38a26f724fd"
+        },
+        {
+          "name": "Deduction.ch_top_main_eq",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChTop.lean",
+          "line0": 11,
+          "line1": 35,
+          "sha256": "f60731cdac49753d67580c96f4dbb104248eb7aa0ca1fed5f9ef7f4bbcd7a2e3"
+        },
+        {
+          "name": "Formalism.LFunctionChainParameters.LChain.errX5at_le",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/PChain.lean",
+          "line0": 613,
+          "line1": 672,
+          "sha256": "a72dea7a7c24282008d1fea77748cb076f221dc8265c60e47a62b11f42887ebf"
+        },
+        {
+          "name": "Formalism.LFunctionChainParameters.WeightedSlopeBounds.each_unit_bound_statement",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LevelOfCongruence.lean",
+          "line0": 175,
+          "line1": 197,
+          "sha256": "efab74dec4a4927817a21e5bf9d65a49006c760fb4191db5373926aeed2c5d78"
+        }
+      ],
+      "v4_pages": [
+        12,
+        14
+      ],
+      "v4_page_intervals": [
+        [
+          12,
+          14
+        ]
+      ],
+      "review_status": "pending_review",
+      "pages_written": 2,
+      "page_measurement": "Local A4 render of the English note, with 20 mm margins and 11 pt Georgia. The v4 page intervals refer separately to the source manuscript."
+    },
+    {
+      "id": "V4-COND",
+      "old_status": "New",
+      "status": "Full",
+      "grade": "L0",
+      "note": "notes/units/V4-COND_round3.md",
+      "weakest_step": "Trace the common selection and family through the actual Selmer rank and the independent slope comparison feeding the global implication.",
+      "lean_ranges": [
+        {
+          "name": "UpperTheory.Top.zero_free_all_of_green_v_win",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean",
+          "line0": 12,
+          "line1": 15,
+          "sha256": "5e975b2462270fb38d695e966d3ce6bb6f409b715ddc3302ba807422a5925e41"
+        },
+        {
+          "name": "UpperTheory.Comparison₂.level_gm_le_on_family_scales",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/LevelGmLeOnFamilyScales.lean",
+          "line0": 28,
+          "line1": 30,
+          "sha256": "3ccafb3b79c94bca951834869fa86b0f798622473f991b8215748e8a3087b2d1"
+        },
+        {
+          "name": "UpperTheory.Comparison₂.formB",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/Imports.lean",
+          "line0": 8,
+          "line1": 19,
+          "sha256": "7e428d22efce0efd80b227098601dbf9c2bc6e24039be5c07475f955713a5d5c"
+        },
+        {
+          "name": "riemannHypothesis",
+          "file": "Main.lean",
+          "line0": 4,
+          "line1": 4,
+          "sha256": "71b3d50605ddda7c0c74fbbf5cca47165a4cfa2ad72f50f36b907ecac7ff505a"
+        },
+        {
+          "name": "riemannZeta_eq_zero_re",
+          "file": "Main.lean",
+          "line0": 6,
+          "line1": 6,
+          "sha256": "b76ddf651dfdaa35aa759391bf660be25e1a3d4299cf9b6fd89926313aac2ae7"
+        },
+        {
+          "name": "LFunction_ne_zero_of_half_lt_re",
+          "file": "Main.lean",
+          "line0": 8,
+          "line1": 8,
+          "sha256": "5b0ee88593377690a537bd3111264f9a9652eaad5475b129ce9e15b263830d64"
+        },
+        {
+          "name": "LFunction_eq_zero_re",
+          "file": "Main.lean",
+          "line0": 10,
+          "line1": 10,
+          "sha256": "16e8622c29d633b78f0009d3ed16ed8cd13ece9122362aed0a4fb12646635409"
+        },
+        {
+          "name": "LFunction_eq_zero_re_of_isPrimitive",
+          "file": "Main.lean",
+          "line0": 12,
+          "line1": 12,
+          "sha256": "0401b524ca2966a15b42b17c6d82be74188720e1452c23c1c994ee9ed8fc53e6"
+        },
+        {
+          "name": "Formalism.MainNotions.J.linkMu_of_linkDIV",
+          "file": "Formalism/SharpRestriction/AdmissibleParameterJoins/SumLogPrimeFactorsLe.lean",
+          "line0": 775,
+          "line1": 784,
+          "sha256": "c71b0143e398c32cb0762d42617585f906fcb22a1489cd1bad2e85f4eaf3e03f"
+        },
+        {
+          "name": "UpperTheory.Top.divinN_of_hypV",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/DivinNOfHypV.lean",
+          "line0": 117,
+          "line1": 131,
+          "sha256": "20325dee787b2886ef672e596c3b539fc216684714416a9736e2a96a16e83440"
+        },
+        {
+          "name": "Claim.strip",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/ClaimStrip.lean",
+          "line0": 59,
+          "line1": 73,
+          "sha256": "96cf2c7e2043ba37d7bd7976a7106ee17826306b91be3b5123b4209645557c34"
+        },
+        {
+          "name": "Claim.zeta",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/ClaimStrip.lean",
+          "line0": 75,
+          "line1": 100,
+          "sha256": "ee2f0046467db886764cc122180455d6198ed4d9afc494ae38edd14a7bb4d957"
+        },
+        {
+          "name": "Claim.zeta_iff",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/ClaimStrip.lean",
+          "line0": 102,
+          "line1": 102,
+          "sha256": "ff1e193d8791861153c9d1c0077712253a3b3ba9eab7de39b73b42ea9f2f5559"
+        },
+        {
+          "name": "UpperTheory.Top.topDesWin",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/DesWin.lean",
+          "line0": 11,
+          "line1": 31,
+          "sha256": "21426fb09afe08ec5330cee84e3953ee4565f9f6d616f3482be2a4e352c7fc35"
+        },
+        {
+          "name": "UpperTheory.Top.shape_closed_link_n_of_green",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopShape.lean",
+          "line0": 33,
+          "line1": 55,
+          "sha256": "67cd6a960ebf7fb51c4d08387215973751664c95458069aadd7cd6cfb7d065c1"
+        },
+        {
+          "name": "UpperTheory.Top.supplyChi",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/SupplyChi.lean",
+          "line0": 8,
+          "line1": 16,
+          "sha256": "3802f3f332e6c3e3325ad9b7016e8d050001a204984bd21c05f59b93b9de2e22"
+        },
+        {
+          "name": "UpperTheory.Top.VWin",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean",
+          "line0": 49,
+          "line1": 49,
+          "sha256": "84c157849fbf30a25382ffcc055f63d04544cc5c2e38936e0b220d9e7c661bb8"
+        },
+        {
+          "name": "UpperTheory.Top.zeroFreeAll_of_topG",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/ZeroFreeAllOfTopG.lean",
+          "line0": 26,
+          "line1": 34,
+          "sha256": "779f1617311a91f102fe98548f3774bcaf188e12c0506c5aa600f76d4af099a9"
+        }
+      ],
+      "v4_pages": [
+        37,
+        40
+      ],
+      "v4_page_intervals": [
+        [
+          6,
+          6
+        ],
+        [
+          37,
+          40
+        ]
+      ],
+      "review_status": "pending_review",
+      "pages_written": 6,
+      "page_measurement": "Local A4 render of the English note, with 20 mm margins and 11 pt Georgia. The v4 page intervals refer separately to the source manuscript."
+    },
+    {
+      "id": "D547",
+      "old_status": "Statement only",
+      "status": "Full",
+      "grade": "L0",
+      "note": "notes/units/D547_v4.md",
+      "weakest_step": "The local conductor–inertia equivalence at primes dividing the host modulus must justify the zero branch as well as the Frobenius branch.",
+      "lean_ranges": [
+        {
+          "name": "UpperTheory.Comparison₂.gmA_eq",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/GmAEq.lean",
+          "line0": 61,
+          "line1": 149,
+          "sha256": "9a030e980281ef02d4c0e1b0803352edc89c15c88c56163027de3672e703c068"
+        }
+      ],
+      "v4_pages": [
+        16,
+        17
+      ],
+      "v4_page_intervals": [
+        [
+          16,
+          17
+        ]
+      ],
+      "review_status": "pending_review",
+      "pages_written": 2,
+      "page_measurement": "Actual local A4 render of this English proof note, 11 pt, 18 mm margins. The note is imported/adapted from v4."
+    },
+    {
+      "id": "D548",
+      "old_status": "Statement only",
+      "status": "Full",
+      "grade": "L0",
+      "note": "notes/units/D548_v4.md",
+      "weakest_step": "Check that both signs at iod exhaust precisely the unkept bounded host characters for which the supplied derivative estimate applies.",
+      "lean_ranges": [
+        {
+          "name": "UpperTheory.Comparison₂.charsA",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/charsA.lean",
+          "line0": 80,
+          "line1": 125,
+          "sha256": "2e3825540c0f207d1382c9bb8f7d4a9c0dd8c08b01dbe9ec6c2758ad44ac77c4"
+        }
+      ],
+      "v4_pages": [
+        16,
+        17
+      ],
+      "v4_page_intervals": [
+        [
+          16,
+          17
+        ]
+      ],
+      "review_status": "pending_review",
+      "pages_written": 2,
+      "page_measurement": "Actual local A4 render of this English proof note, 11 pt, 18 mm margins. The note is imported/adapted from v4."
+    },
+    {
+      "id": "D549",
+      "old_status": "Statement only",
+      "status": "Full",
+      "grade": "L0",
+      "note": "notes/units/D549_v4.md",
+      "weakest_step": "The pointwise host bound applies only after the omitted frequencies have been identified with the designated bounded class; check both signs.",
+      "lean_ranges": [
+        {
+          "name": "UpperTheory.Comparison₂.sigA_le",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/SigALe.lean",
+          "line0": 38,
+          "line1": 60,
+          "sha256": "76af9a0c15d1430c03efad24324cc1e1fc880da1c469944dac5ab35525f9a4e1"
+        }
+      ],
+      "v4_pages": [
+        16,
+        17
+      ],
+      "v4_page_intervals": [
+        [
+          16,
+          17
+        ]
+      ],
+      "review_status": "pending_review",
+      "pages_written": 1,
+      "page_measurement": "Actual local A4 render of this English proof note, 11 pt, 18 mm margins. The note is imported/adapted from v4."
+    },
+    {
+      "id": "D562",
+      "old_status": "Statement only",
+      "status": "Full",
+      "grade": "L0",
+      "note": "notes/units/D562_v4.md",
+      "weakest_step": "The principal-character kernel and logarithmic correction have opposite signs; their difference must preserve the constant three.",
+      "lean_ranges": [
+        {
+          "name": "Formalism.LFunctionChainParameters.ThickSetMeanBounds.derivative_integral_all",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean",
+          "line0": 966,
+          "line1": 981,
+          "sha256": "2199aa1029611946a5ad7a243a47df41a56417d05aa0ea592a91d4064256cb3c"
+        },
+        {
+          "name": "Formalism.LFunctionChainParameters.ThickSetMeanBounds.lipschitz_weight_all",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean",
+          "line0": 957,
+          "line1": 964,
+          "sha256": "0bb1c563c4e47fac46b11361efcbfe3cd1c0afe8cb0e32560a9c6585f5786c84"
+        }
+      ],
+      "v4_pages": [
+        14,
+        15
+      ],
+      "v4_page_intervals": [
+        [
+          14,
+          15
+        ]
+      ],
+      "review_status": "pending_review",
+      "pages_written": 2,
+      "page_measurement": "Actual local A4 render of this English proof note, 11 pt, 18 mm margins. The note is imported/adapted from v4."
+    },
+    {
+      "id": "D567",
+      "old_status": "Statement only",
+      "status": "Full",
+      "grade": "L0",
+      "note": "notes/units/D567_v4.md",
+      "weakest_step": "Check the absorption of the fraction with denominator 1−δ̄, especially the mixed frame term and the uniform constants 112 and 2.",
+      "lean_ranges": [
+        {
+          "name": "Formalism.LFunctionChainParameters.LChain.errX5at_le",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/PChain.lean",
+          "line0": 613,
+          "line1": 672,
+          "sha256": "a72dea7a7c24282008d1fea77748cb076f221dc8265c60e47a62b11f42887ebf"
+        }
+      ],
+      "v4_pages": [
+        13,
+        13
+      ],
+      "v4_page_intervals": [
+        [
+          13,
+          13
+        ]
+      ],
+      "review_status": "pending_review",
+      "pages_written": 2,
+      "page_measurement": "Actual local A4 render of this English proof note, 11 pt, 18 mm margins. The note is imported/adapted from v4."
+    },
+    {
+      "id": "D014",
+      "old_status": "Statement only",
+      "status": "Full",
+      "grade": "L0",
+      "note": "notes/units/D014_v4.md",
+      "weakest_step": "Check the chosen local unit at d and its sign after the binary coordinates in the frame are exchanged.",
+      "lean_ranges": [
+        {
+          "name": "UpperTheory.Comparison₂.hostFactsS",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/hostFactsS.lean",
+          "line0": 127,
+          "line1": 136,
+          "sha256": "ef97916068b30a9b83bc32d6b22fb03bdc3882660a3447f087cb63045e087583"
+        }
+      ],
+      "v4_pages": [
+        15,
+        16
+      ],
+      "v4_page_intervals": [
+        [
+          15,
+          16
+        ]
+      ],
+      "review_status": "pending_review",
+      "pages_written": 2,
+      "page_measurement": "Actual local A4 render of this English proof note, 11 pt, 18 mm margins. The note is imported/adapted from v4."
+    },
+    {
+      "id": "D550",
+      "old_status": "Statement only",
+      "status": "Full",
+      "grade": "L0",
+      "note": "notes/units/D550_v4.md",
+      "weakest_step": "The same threshold must work when the fixed real K_* is smaller than one and when ε is very small.",
+      "lean_ranges": [
+        {
+          "name": "Formalism.LFunctionChainParameters.LErr.large_x_eventually",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/SubThreeMulLogTwoLe.lean",
+          "line0": 319,
+          "line1": 329,
+          "sha256": "90f46cef73a8bbf9409ddb93252d5d50dd1093899eda3623171ad8cb61b9a738"
+        }
+      ],
+      "v4_pages": [
+        13,
+        13
+      ],
+      "v4_page_intervals": [
+        [
+          13,
+          13
+        ]
+      ],
+      "review_status": "pending_review",
+      "pages_written": 1,
+      "page_measurement": "Actual local A4 render of this English proof note, 11 pt, 18 mm margins. The note is imported/adapted from v4."
+    },
+    {
+      "id": "D561",
+      "old_status": "Outlined",
+      "status": "Outlined",
+      "grade": "L0",
+      "note": "notes/units/D561_v4.md",
+      "weakest_step": "The frozen-width identity gives only the reindexing in th_le; the thin terms and the errors from changing the actual widths belong to the enclosing D561 estimate.",
+      "lean_ranges": [
+        {
+          "name": "Deduction.ch_balance",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChBalance.lean",
+          "line0": 200,
+          "line1": 260,
+          "sha256": "ed29418b71866546dcaaad4dce557ca4bbc1315ad1e70930c6c990b8a58ad229"
+        },
+        {
+          "name": "Deduction.CharacterBalanceMoves.th_le",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean",
+          "line0": 75,
+          "line1": 152,
+          "sha256": "2cd1af6bbeb207dc0b2f12cd38f4601a4293c2fc59903b4b040f5d8405737b4c"
+        }
+      ],
+      "v4_pages": [
+        10,
+        18
+      ],
+      "v4_page_intervals": [
+        [
+          10,
+          12
+        ],
+        [
+          18,
+          18
+        ]
+      ],
+      "review_status": "pending_review",
+      "pages_written": 4,
+      "page_measurement": "Actual local A4 render of this English proof note, 11 pt, 18 mm margins. The note is imported/adapted from v4."
+    }
+  ],
+  "list_a": [
+    {
+      "row": "A1",
+      "id": "D547",
+      "unit_id": "D547",
+      "lean_range": {
+        "name": "UpperTheory.Comparison₂.gmA_eq",
+        "file": "Development/AutomorphicArithmetic/PrimitiveCosets/GmAEq.lean",
+        "line0": 61,
+        "line1": 149,
+        "sha256": "9a030e980281ef02d4c0e1b0803352edc89c15c88c56163027de3672e703c068"
+      },
+      "v4_pages": [
+        16,
+        17
+      ],
+      "note": "notes/units/D547_v4.md",
+      "scope": "full quantified local implication",
+      "review_status": "pending_review"
+    },
+    {
+      "row": "A2",
+      "id": "D548",
+      "unit_id": "D548",
+      "lean_range": {
+        "name": "UpperTheory.Comparison₂.charsA",
+        "file": "Development/AutomorphicArithmetic/PrimitiveCosets/charsA.lean",
+        "line0": 80,
+        "line1": 125,
+        "sha256": "2e3825540c0f207d1382c9bb8f7d4a9c0dd8c08b01dbe9ec6c2758ad44ac77c4"
+      },
+      "v4_pages": [
+        16,
+        17
+      ],
+      "note": "notes/units/D548_v4.md",
+      "scope": "full quantified local implication",
+      "review_status": "pending_review"
+    },
+    {
+      "row": "A3",
+      "id": "D549",
+      "unit_id": "D549",
+      "lean_range": {
+        "name": "UpperTheory.Comparison₂.sigA_le",
+        "file": "Development/AutomorphicArithmetic/PrimitiveCosets/SigALe.lean",
+        "line0": 38,
+        "line1": 60,
+        "sha256": "76af9a0c15d1430c03efad24324cc1e1fc880da1c469944dac5ab35525f9a4e1"
+      },
+      "v4_pages": [
+        16,
+        17
+      ],
+      "note": "notes/units/D549_v4.md",
+      "scope": "full quantified local implication",
+      "review_status": "pending_review"
+    },
+    {
+      "row": "A4",
+      "id": "D562",
+      "unit_id": "D562",
+      "lean_range": {
+        "name": "Formalism.LFunctionChainParameters.ThickSetMeanBounds.derivative_integral_all",
+        "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean",
+        "line0": 966,
+        "line1": 981,
+        "sha256": "2199aa1029611946a5ad7a243a47df41a56417d05aa0ea592a91d4064256cb3c"
+      },
+      "v4_pages": [
+        14,
+        15
+      ],
+      "note": "notes/units/D562_v4.md",
+      "scope": "full quantified local implication",
+      "review_status": "pending_review"
+    },
+    {
+      "row": "A5",
+      "id": "D567",
+      "unit_id": "D567",
+      "lean_range": {
+        "name": "Formalism.LFunctionChainParameters.LChain.errX5at_le",
+        "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/PChain.lean",
+        "line0": 613,
+        "line1": 672,
+        "sha256": "a72dea7a7c24282008d1fea77748cb076f221dc8265c60e47a62b11f42887ebf"
+      },
+      "v4_pages": [
+        13,
+        13
+      ],
+      "note": "notes/units/D567_v4.md",
+      "scope": "full quantified local implication",
+      "review_status": "pending_review"
+    },
+    {
+      "row": "A6",
+      "id": "D014",
+      "unit_id": "D014",
+      "lean_range": {
+        "name": "UpperTheory.Comparison₂.hostFactsS",
+        "file": "Development/AutomorphicArithmetic/PrimitiveCosets/hostFactsS.lean",
+        "line0": 127,
+        "line1": 136,
+        "sha256": "ef97916068b30a9b83bc32d6b22fb03bdc3882660a3447f087cb63045e087583"
+      },
+      "v4_pages": [
+        15,
+        16
+      ],
+      "note": "notes/units/D014_v4.md",
+      "scope": "full quantified local implication",
+      "review_status": "pending_review"
+    },
+    {
+      "row": "A7",
+      "id": "D550",
+      "unit_id": "D550",
+      "lean_range": {
+        "name": "Formalism.LFunctionChainParameters.LErr.large_x_eventually",
+        "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/SubThreeMulLogTwoLe.lean",
+        "line0": 319,
+        "line1": 329,
+        "sha256": "90f46cef73a8bbf9409ddb93252d5d50dd1093899eda3623171ad8cb61b9a738"
+      },
+      "v4_pages": [
+        13,
+        13
+      ],
+      "note": "notes/units/D550_v4.md",
+      "scope": "full quantified local implication",
+      "review_status": "pending_review"
+    },
+    {
+      "row": "A8",
+      "id": "D561",
+      "unit_id": "D561",
+      "lean_range": {
+        "name": "Deduction.ch_balance",
+        "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChBalance.lean",
+        "line0": 200,
+        "line1": 260,
+        "sha256": "ed29418b71866546dcaaad4dce557ca4bbc1315ad1e70930c6c990b8a58ad229"
+      },
+      "v4_pages": [
+        10,
+        12
+      ],
+      "note": "notes/units/D561_v4.md",
+      "scope": "full quantified local implication",
+      "review_status": "pending_review"
+    },
+    {
+      "row": "A9",
+      "id": "D562",
+      "unit_id": "D562",
+      "lean_range": {
+        "name": "Formalism.LFunctionChainParameters.ThickSetMeanBounds.lipschitz_weight_all",
+        "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean",
+        "line0": 957,
+        "line1": 964,
+        "sha256": "0bb1c563c4e47fac46b11361efcbfe3cd1c0afe8cb0e32560a9c6585f5786c84"
+      },
+      "v4_pages": [
+        14,
+        15
+      ],
+      "note": "notes/units/D562_v4.md",
+      "scope": "full quantified local implication",
+      "review_status": "pending_review"
+    },
+    {
+      "row": "A10",
+      "id": "D561",
+      "unit_id": "D561",
+      "lean_range": {
+        "name": "Deduction.CharacterBalanceMoves.th_le",
+        "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean",
+        "line0": 75,
+        "line1": 152,
+        "sha256": "2cd1af6bbeb207dc0b2f12cd38f4601a4293c2fc59903b4b040f5d8405737b4c"
+      },
+      "v4_pages": [
+        18,
+        18
+      ],
+      "note": "notes/units/D561_v4.md",
+      "scope": "fixed-width substep",
+      "review_status": "pending_review"
+    }
+  ]
+}

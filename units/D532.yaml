@@ -1,0 +1,77 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D532",
+  "title": "The first Selmer character count",
+  "track": {
+    "primary": "galois",
+    "secondary": []
+  },
+  "statement": "The two-test-prime orbit bound implies Case I: for each primitive character choose two auxiliary primes and an exponent; beyond both primes the log-prime-weighted sum of lengths over every finite set of odd Case-I primes is bounded by (host level times cutoff) to that exponent, and every length is finite.\n\\[\n\\mathrm{CorGK}\\ \\Longrightarrow\\ \\mathrm{CountI}.\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume the orbit bound at the two test primes (CorGK).",
+    "Specialize to a primitive character, an eligible host and a finite set of odd Case-I primes beyond the auxiliary primes."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.U3.countI",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/CountI.lean",
+      "line0": 22,
+      "line1": 136,
+      "sha256": "61df5ed42e1ea16f16fa2510bb5b85e75e0b62a264f199a95a380fe209bec83d",
+      "dominated": 253,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "G.560 (decomp:D532)",
+      "pages": [
+        297,
+        297
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D532.tex",
+      "section": "decomp:D532",
+      "pages": []
+    }
+  ],
+  "status": "Statement only",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [],
+  "paper_id": "D532",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "the-first-selmer-character-count",
+  "aliases": [
+    "countI",
+    "D532 The first Selmer character count"
+  ],
+  "background": [
+    "Galois orbits",
+    "Prime-weighted Selmer lengths"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.560 (decomp:D532)",
+    "pages": [
+      297,
+      297
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {}
+}

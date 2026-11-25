@@ -1,0 +1,988 @@
+{
+  "id": "Z4.4",
+  "title": "Twisted periods on the selected chain",
+  "track": {
+    "primary": "theta",
+    "secondary": [
+      "local"
+    ]
+  },
+  "statement": "Assume Ok, Pins, the fixed laws and later data, integral rows, and a tuple tied to the prescribed $\\xi$. For every divisor datum, used nonreference tuple, integral point and permitted form there is one field element realizing the twisted period. At each allowed $w$ it is zero or has valuation at least $-e_w v_p(D_{\\Gamma,u})$.",
+  "assumptions": [
+    "source:blueprint_v13"
+  ],
+  "hypothesis_details": [
+    "Use the Ok and Pins records, fixed laws, later data and integral rows.",
+    "The tuple is tied to the prescribed character."
+  ],
+  "lean": [
+    {
+      "name": "GlobalTheory.PerTwClose.twistedPeriodAdmissible_of_rowInt",
+      "file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/AdmissiblePeriodTwistOfIntegralRows.lean",
+      "line0": 14,
+      "line1": 21,
+      "sha256": "6757ac3a4924225232e2e7fb87d63aa937f20fdd1019c3a72df3abe34b463f73",
+      "dominated": 266,
+      "graph": "allChi",
+      "role": "statement"
+    },
+    {
+      "name": "GlobalTheory.T.hermitianColumnChoices_of_formsLevelsClasses",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/HermitianColumnChoicesOfFormsLevelsClassesStatement.lean",
+      "line0": 8,
+      "line1": 9,
+      "sha256": "233978ff43bf42a89d5c355c59b209ab89b2ab7aa157c894bb2445085393ddac",
+      "dominated": 408,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.T.stepZeroHermitianLevel_uniformiser_kills_values_alt",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/StepZeroHermitianLevelUniformiserKillsValuesStatement.lean",
+      "line0": 9,
+      "line1": 10,
+      "sha256": "a30309c69100722c0183779a18d896495614430568720043319613d1a97998e6",
+      "dominated": 130,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.T.hermitianColumns_generators_baseLattices_functionals",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/HermitianColumnsGeneratorsBaseLatticesFunctionalStatement.lean",
+      "line0": 8,
+      "line1": 9,
+      "sha256": "04d8cd153aea65808f9e8a55b9fddb43a449789593695d3063849aef0a0a9fee",
+      "dominated": 1422,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.Mem.Col2.TC.spaces_in_coordinates",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TrueColumnSpacesStandardInFrameCoords.lean",
+      "line0": 90,
+      "line1": 101,
+      "sha256": "69a56ce729852a5fece2ca9bbc63da35a0ae4a95acbba400222d84e78469e029",
+      "dominated": 46,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.T.transportedLattice_localization_free_le_coefficientSpace",
+      "file": "Development/AbelianVarietyTheory/Proofs/FoundationProofs/TransportedLatticeLocalizationFreeLeCoefficientSStatement.lean",
+      "line0": 14,
+      "line1": 15,
+      "sha256": "4a304f30f1533903fc6d356ede798811165afe8208d196191b213d8b92a91f4b",
+      "dominated": 2,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.T.standard_weyl_lattices_fock_dual",
+      "file": "Development/AbelianVarietyTheory/Proofs/FoundationProofs/StandardWeylLatticesFockDualStatement.lean",
+      "line0": 14,
+      "line1": 15,
+      "sha256": "f8c587975fc79094055db20893e72a16aa4d9e10b91592c7ac34d2489b7ede35",
+      "dominated": 2,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.Mem.Col2.PtExist.exists_modify",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ValuedLtOfMem.lean",
+      "line0": 219,
+      "line1": 295,
+      "sha256": "a4450ae84facd67992dcde9aa048eb42fe660c87c3c5bfe0a0a0c81f8ed4275b",
+      "dominated": 82,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "Formalism.L2.Col.decoPtSurj_of",
+      "file": "Formalism/LocalToGlobal/Columns/AdelicLemmas.lean",
+      "line0": 1245,
+      "line1": 1401,
+      "sha256": "7d7fad233c0bcb59d1063d284891002b645cbc44f2b4b54dd7fe283df632229b",
+      "dominated": 246,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.Mem.Col2.PtExist.unimodGenus",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ValuedLtOfMem.lean",
+      "line0": 102,
+      "line1": 123,
+      "sha256": "d0e8cc3ab18e5d7ffae55e6c530cbe4899752a886646383413b95830cb5f46a4",
+      "dominated": 22,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.Mem.Col2.PtExist.exists_isPtOf_cm",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ValuedLtOfMem.lean",
+      "line0": 299,
+      "line1": 337,
+      "sha256": "4f92c9fbbf06a66689609c52938eccf2636c1ee7199a0f5a7eb154f0c85fe469",
+      "dominated": 61,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.T.exists_adelicPoint_decoratedLattice_allTwists",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsAdelicPointDecoratedLatticeAllTwistsStatement.lean",
+      "line0": 7,
+      "line1": 8,
+      "sha256": "c74e778c24fa048e6c04dab719a49fb8164a6e7d5bdeba95383bac3b361a86a9",
+      "dominated": 2,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.T.exists_hermitian_data_carT_of_std",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/HermitianDataAtLevelPrimeStatement.lean",
+      "line0": 8,
+      "line1": 9,
+      "sha256": "ca25c039ff82be605219aafb38e1fa15f89e53e03ee4237063bb8542408241ab",
+      "dominated": 1828,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.T.decoratedPointClasses_bijective_doubleCosets",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/DecoratedPointClassesBijectiveDoubleCosetsStatement.lean",
+      "line0": 8,
+      "line1": 9,
+      "sha256": "12de5ea66d34be7514f3a4e32ae86773d74621d56e26a1c1ba8ae86818b043b5",
+      "dominated": 65,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.Mem.Col2.mem_locW_hlat_iff",
+      "file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/MemLocWHlatIff.lean",
+      "line0": 14,
+      "line1": 30,
+      "sha256": "1014215aaaac3e7df549e5b0b0377844ddcbbff889373a35d36d9abda4af2e74",
+      "dominated": 17,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.T.exists_K1_point_congruent",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsK1PointCongruentStatement.lean",
+      "line0": 8,
+      "line1": 9,
+      "sha256": "8a9af278cf842f7293ebc3d7184b63d69551fa85d8efe322ecf645d49e54699e",
+      "dominated": 44,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.T.mem_framedLevel_iff_two_adelic_points",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/MemFramedLevelIffTwoAdelicPointsStatement.lean",
+      "line0": 8,
+      "line1": 9,
+      "sha256": "c6cf80c06b43b644579c279ae59002c2041c7c6329ec9ac9c03facebe78fc6c1",
+      "dominated": 2,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.Mem.Col2.TwP.til_tw",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExtMMulVecFix.lean",
+      "line0": 253,
+      "line1": 377,
+      "sha256": "a42b5c4bdb72530709db1741a2a7d0152a4025be24de0da669ed45b43fab574d",
+      "dominated": 292,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.T.tuple_integralForms_row_place_by_place",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TupleIntegralFormsRowPlaceByPlaceStatement.lean",
+      "line0": 11,
+      "line1": 12,
+      "sha256": "35a2f9f4ea28b10b35a9dcec37517bdcf1719944f925aeb8e49ae96c02aeda80",
+      "dominated": 73,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.T.tuplePrimedSpaceClasses_level_and_comparison",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TuplePrimedSpaceClassesLevelAndComparisonStatement.lean",
+      "line0": 9,
+      "line1": 10,
+      "sha256": "00155fad8c752f066fdabf007ab60d21e292b91c0f8adf4fb7dacc8f72f39cbb",
+      "dominated": 224,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.T.tupleLayerCompatibilities_of_X_prime",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TupleLayerCompatibilitiesOfXPrimeStatement.lean",
+      "line0": 9,
+      "line1": 16,
+      "sha256": "d8bfcc35cc217c082235685604272b4d06f88d241e72bbc009c50bd04399a592",
+      "dominated": 796,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.Mem.Col2.TC.StepZero.lvSame_zero",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LvSameZero.lean",
+      "line0": 335,
+      "line1": 371,
+      "sha256": "74d0f0abf4828471adc754fd842d2d78e8048651743ac72566eb78bc2d8e3891",
+      "dominated": 262,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.Mem.Col2.TC.dn_keeps_chart",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/MoveDownLevelPrimeKeepsChart.lean",
+      "line0": 198,
+      "line1": 202,
+      "sha256": "b6399cc2c5a33f83caedb46a474d54c9b46bfc95cccccb9a5a51889f0b340de5",
+      "dominated": 49,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.Mem.Col2.TC.exists_level_projections",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ReductionModPrimeLevelPrimeSmulEq.lean",
+      "line0": 197,
+      "line1": 231,
+      "sha256": "550cf93d76d4a56e30d638c43cde7f9e0dfa0bd8c82044db9d5498afe514e0b1",
+      "dominated": 139,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.Mem.Col2.TC.dn_level_functional",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/MoveDownLevelFunctionalEq.lean",
+      "line0": 100,
+      "line1": 130,
+      "sha256": "81f4992da4d2b362ee2bb2e809589462aa9e3f488a152b2ea6cffcf565c20ef2",
+      "dominated": 93,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.Mem.Col2.TC.dn_locP_lat",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/DownMoveLocalDualLatticeEqLevelPrime.lean",
+      "line0": 88,
+      "line1": 120,
+      "sha256": "8ea2e56aa090a3362224751ddf444c09f1ed72b8b1e5250fb9692cd23865f1bb",
+      "dominated": 195,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.Mem.Col2.LevFun.fvTieG",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ChartTiedLevelChain.lean",
+      "line0": 300,
+      "line1": 330,
+      "sha256": "d8d3320a147c47562d8454849da685ac10d0af2c8dcbeb0c329c9064ba6ef9b0",
+      "dominated": 270,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.Mem.Col2.TC.bw_tie",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/IsBasisAtOfIsLocBasis.lean",
+      "line0": 180,
+      "line1": 266,
+      "sha256": "0ca67ad24cedd87aa11bbbdd08dee3bf175fa5fef03bd8f2611345e484d47469",
+      "dominated": 129,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.DnMove.dnNatTieG_cols",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ChartTiedLevelChainHost.lean",
+      "line0": 48,
+      "line1": 58,
+      "sha256": "307afbd378f6a173f00b61246406fd46a11c72b519c335ff927e5c02fb344c27",
+      "dominated": 714,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.Mem.Col2.UpChart.upNatTie",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/InvSmulMem.lean",
+      "line0": 281,
+      "line1": 329,
+      "sha256": "693ed70592a464e0a4f2b5c070082a56165545245004392a0355ee1632e71c22",
+      "dominated": 628,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.T.tupleChains_levelStructure_compatible_at_levelPrime",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TupleChainsLevelStructureCompatibleAtLevelPrimeStatement.lean",
+      "line0": 8,
+      "line1": 9,
+      "sha256": "c2584912a8e713bc3e057eaf53555d5a5af4d29aca7ab0ce1b24e15002b4735b",
+      "dominated": 376,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.Mem.Col2.MemChart.stM_range",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsMemberStepCharts.lean",
+      "line0": 355,
+      "line1": 366,
+      "sha256": "cf60b764aff7f572e4eeef7ff52bef82bd549c48de31682f22dfda2a19ab0244",
+      "dominated": 12,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.Mem.Col2.MemChart.cls_bij",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsMemberStepCharts.lean",
+      "line0": 310,
+      "line1": 348,
+      "sha256": "1351ae0eadadf33064902193cf5104ea0d588e5bc1f93014ca2ea8cf96a6a647",
+      "dominated": 39,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.T.exists_couplingCoset_with_given_reduction",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsCouplingCosetWithGivenReductionStatement.lean",
+      "line0": 6,
+      "line1": 7,
+      "sha256": "2a4e0c90dd64c71a4e24dc4a929fb3c4ba0b7ffd1455e61471db981d91804c36",
+      "dominated": 101,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.T.columnPoint_eq_of_deco_and_cosetReduction",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ColumnPointEqOfDecoAndCosetReductionStatement.lean",
+      "line0": 6,
+      "line1": 7,
+      "sha256": "3c107d78394a23941c13053f4bd902d5223e6171b3ed99ed1cfaceb598ead7f3",
+      "dominated": 41,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.Mem.TypePrimes.exists_gLoc_idG_chiTied",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsGLocIdGChiTied.lean",
+      "line0": 194,
+      "line1": 211,
+      "sha256": "c22b0a2219875e00f255496addf94f2c9d603505430510ee85d0d6e599cab04a",
+      "dominated": 143,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.Mem.Col2.MetricTie.ipV_norm_tie",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/UnitaryOfIsON.lean",
+      "line0": 195,
+      "line1": 205,
+      "sha256": "a3f0250730cd891dcf214ad0c9348fe58435d1347c0218e8ccfbaf36c02a33b0",
+      "dominated": 24,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.Mem.Col2.ChartLevel.chart_gLevH",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ValLtOfRedM.lean",
+      "line0": 478,
+      "line1": 487,
+      "sha256": "d811b35097412c009643c776d6a64b9efb69bdd73967dca3e4c61ff4c34df3f6",
+      "dominated": 309,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.Mem.Col2.TC.til_ties",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/HermitianFormLastCoordinateUniformizerVectorSelf.lean",
+      "line0": 1086,
+      "line1": 1143,
+      "sha256": "d891fb4a8c8de8493a89aa85ec3cda8e36bcea97252150d975cd3118b461dae6",
+      "dominated": 348,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.Mem.Col2.DiaChart.dilTied",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/DiamondOperatorsOnCharts.lean",
+      "line0": 176,
+      "line1": 231,
+      "sha256": "d9dca43fa6026965f9ae71aa60705c57e2b8ec4fe3e75f02601c41b0b8a0f077",
+      "dominated": 334,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.Mem.Col2.TC.GLev0.glev_zero",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LevelTwistPrimesStepZeroCharacterEqOne.lean",
+      "line0": 571,
+      "line1": 573,
+      "sha256": "75cace62c42d77f01127d6282602be5fa76f9172920915d83b39d6d8d4b89a78",
+      "dominated": 263,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.Mem.Col2.TC.levels_top_row_sym",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LevelsTopRowSym.lean",
+      "line0": 217,
+      "line1": 224,
+      "sha256": "2e97b46cf84ffa61a1a08c513c7b8a68bcd3b60b16caf9770937d0670255a319",
+      "dominated": 640,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.Mem.Col2.OneLevel.stepBefore_oneLevel",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ChartTiedTopLevelChain.lean",
+      "line0": 369,
+      "line1": 484,
+      "sha256": "da67070b9fc3f4e82f45e95d0273adffca74f21be39f719ecae236f3cbaabc67",
+      "dominated": 747,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.Mem.Col2.TC.val_tied",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/HermitianChartComplexRationalIntegralForms.lean",
+      "line0": 394,
+      "line1": 510,
+      "sha256": "d67a058a9c5bca59e62c25810591639fa942793bd092d310cde72127c7ae4da7",
+      "dominated": 359,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.Mem.Col2.MemChart.exists_charts",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsMemberStepCharts.lean",
+      "line0": 521,
+      "line1": 566,
+      "sha256": "af1bd2b7a46ae42b83ccd297b0cb789b902fbd3d998a3138c1b060058668b342",
+      "dominated": 465,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.Mem.Col2.TC.clsP_tie",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsEmbFIff.lean",
+      "line0": 209,
+      "line1": 293,
+      "sha256": "4ccc76787932894ceab1cbda44463628ed8cd117698539714e0bc5f6eac0ecec",
+      "dominated": 323,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.T.exists_standardFormComparison_symmetricLevel_members",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsStandardFormComparisonSymmetricLevelMemberStatement.lean",
+      "line0": 8,
+      "line1": 9,
+      "sha256": "835a40123f46912fcc83b549030073168740c69a64e69d13672c0de1ee5afa2a",
+      "dominated": 3113,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.T.exists_unitaryAdelic_twist_diagonal_at_primes",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsUnitaryAdelicTwistDiagonalAtPrimesStatement.lean",
+      "line0": 8,
+      "line1": 9,
+      "sha256": "d4c4b05754200264d42618e38a2ec59c617e20947092bbfb3e363ce487f2197e",
+      "dominated": 2,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.T.exists_unitaryAdelic_lift_typePrime_reductions",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsUnitaryAdelicLiftTypePrimeReductionsStatement.lean",
+      "line0": 7,
+      "line1": 13,
+      "sha256": "e3990dcd2830aa0b5fd6295ca6e1200956ac8e2186935752651f71035f8cd40d",
+      "dominated": 207,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.T.exists_reference_class_matching_coupling_coset",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsReferenceClassMatchingCouplingCosetStatement.lean",
+      "line0": 7,
+      "line1": 14,
+      "sha256": "1fbfcadc3f14e6c502676d86a35303c874568fcbd1a444fe79e52aec99d54d6d",
+      "dominated": 130,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.T.exists_conj_referenceChartIndex",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsConjReferenceChartIndexStatement.lean",
+      "line0": 7,
+      "line1": 16,
+      "sha256": "41a234f157ccdd69946f54c6b4b6e551783b1e584d374d14fde40128c3715335",
+      "dominated": 269,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.T.exists_levelJ_character_eq_member_off_places",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsLevelJCharacterEqMemberOffPlacesStatement.lean",
+      "line0": 7,
+      "line1": 8,
+      "sha256": "3350d88489e539f3d66110f963db89af55bcce4fb617671398c8e66fd160f645",
+      "dominated": 219,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.Mem.Col2.FinAtQ.chartLoc_finiteIndex",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ChartLocalGroupFiniteIndexAtFurtherPlace.lean",
+      "line0": 195,
+      "line1": 209,
+      "sha256": "b7e232d638f15259c00e6e153a819fbd057cf6e478b793b4a2289e6906950127",
+      "dominated": 253,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.T.pointOverX_has_adelicPoint_blockExtend_mul",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/PointOverXHasAdelicPointBlockExtendMulStatement.lean",
+      "line0": 8,
+      "line1": 9,
+      "sha256": "b4bb917fa83a060370aac6b1c01a0641e4ed1c609cd5a340da3205b4a753caa5",
+      "dominated": 2,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.T.furtherPlace_penultimateChart_character_inverseValue",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/FurtherPlacePenultimateChartCharacterInverseValuStatement.lean",
+      "line0": 12,
+      "line1": 13,
+      "sha256": "78c1cd7ee7b2d5d70c4c35f0727ac6cdc3c8f6e585a44132ca289f84099976fe",
+      "dominated": 98,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.T.exists_character_allCharts_furtherPlaces",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsCharacterAllChartsFurtherPlacesStatement.lean",
+      "line0": 9,
+      "line1": 10,
+      "sha256": "a79d93f64e212872dab312bea0c70ba73393762ee90f09d01c59d962c69d537e",
+      "dominated": 553,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.T.chart_lastStep_twistBasePoint",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ChartLastStepTwistBasePointStatement.lean",
+      "line0": 8,
+      "line1": 9,
+      "sha256": "aca75e955632df5160fdb271c5a5608b8769341556911fa6b7d592d6829de5d7",
+      "dominated": 2,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.T.furtherPlaces_group_contains_chart_levels",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/FurtherPlacesGroupContainsChartLevelsStatement.lean",
+      "line0": 9,
+      "line1": 10,
+      "sha256": "002155422ad15237dc3c75d57cfdb95644a8f1aaef33b4fa22df85e048d6d127",
+      "dominated": 1075,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.Mem.Col2.ChExM.chart_of",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsFiniteOrderChartsMiddleSteps.lean",
+      "line0": 314,
+      "line1": 396,
+      "sha256": "93548aced33e508abc7f90d2f9260d5b41b82325cf2bc742813667d0ea614d71",
+      "dominated": 1962,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.Mem.Col2.ChExM.exists_charts",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsFiniteOrderChartsMiddleSteps.lean",
+      "line0": 450,
+      "line1": 499,
+      "sha256": "065abb74c7e6df2139a1beca2d46555b419ee68cf1acf53ec7620d37132d773f",
+      "dominated": 2404,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.T.exists_penultimateLevel_couplingCosets",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsPenultimateLevelCouplingCosetsStatement.lean",
+      "line0": 8,
+      "line1": 9,
+      "sha256": "2262a8a5dfa352eda78d604b7a2e6eb071ede7206d08e63e2dc7de2f55b678e1",
+      "dominated": 2004,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.T.trueColumnChoice_exists_chainData_with_basePoints",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TrueColumnChoiceExistsChainDataWithBasePointsStatement.lean",
+      "line0": 10,
+      "line1": 18,
+      "sha256": "ef42a13f8eda577239e406e59a1058b735fc397310b14d6290912d658005ede8",
+      "dominated": 3174,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.Mem.Col2.TC.colsTiedSym_std",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsStandardColumnComparisonsTrueColumns.lean",
+      "line0": 20,
+      "line1": 72,
+      "sha256": "abba95d32247d52fc2ab278ce1ceac62493c31eb88b4ea756f91b5c02719f734",
+      "dominated": 6985,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.Mem.Col2.TC.colsTwPTiedS_std",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TrueColumnChoiceExistsStandardChainData.lean",
+      "line0": 45,
+      "line1": 56,
+      "sha256": "11fd590e9045d17a12c6a3d13cada4a33b6fe0573c80416d3ab7c6078f903df5",
+      "dominated": 4382,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.TransDual.nabDelDual",
+      "file": "Development/AbelianVarietyTheory/Proofs/FoundationProofs/TransportedWeylLatticeHermitianDuality.lean",
+      "line0": 278,
+      "line1": 309,
+      "sha256": "23c8c69eb1c1b2c98a975839146e831515425c4bdd7fab230be2da8334bfc501",
+      "dominated": 246,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.Mem.Col2.TC.ChTw.charts_tuple_trivQ",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ChartsTupleTrivQ.lean",
+      "line0": 86,
+      "line1": 101,
+      "sha256": "a0e98f8f3c68eedeba1e2a44b8e45cf5e840ba687fb62c0dbe611d36026d00e5",
+      "dominated": 73,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.Mem.Col2.TC.twPack_ex",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TrueColumnChoiceTwistedChainsFormsClasses.lean",
+      "line0": 272,
+      "line1": 319,
+      "sha256": "c0504e9a3d2c1e06d9c1cdff87f413c0b16e593928dd83ce484fe4b45965f8f0",
+      "dominated": 2860,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.Mem.Col2.TC.tw_chains",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/TrueColumnChoiceTwistedChainsFormsClasses.lean",
+      "line0": 464,
+      "line1": 484,
+      "sha256": "a70ad0ea96eb4fe8a6ad15ded7ecdc213e4adc4f0ae7e267c507c9790d05016d",
+      "dominated": 3152,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.Mem.Col2.TwAtStd.twAtT_exists",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/DecoStabTrivial.lean",
+      "line0": 146,
+      "line1": 176,
+      "sha256": "e7ebe51b0f0966ba522f280a8ffcca30c1a005a9c8ddb10ab2e9a9d7ff9d642a",
+      "dominated": 31,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.Mem.Col2.TC.charts_funKilled",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/InclMulInvMul.lean",
+      "line0": 422,
+      "line1": 439,
+      "sha256": "513c1029d512649388ad4b64817f8b243b9b9c69ceb05318a33b584130f548ec",
+      "dominated": 18,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.Mem.Col2.PerConj.period_conj",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/CevInjective.lean",
+      "line0": 219,
+      "line1": 225,
+      "sha256": "d9dda287ed86f7b352c3d54145d8ab40d746f0a3139b6e62ca86066db9b196c0",
+      "dominated": 86,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.T.localMove_classRep_iff_localConditions",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/LocalMoveClassRepIffLocalConditionsStatement.lean",
+      "line0": 7,
+      "line1": 12,
+      "sha256": "ec87a1701ff1e9c135e603c3ca02c10945ea6403b6718559b62d41a4fd690b10",
+      "dominated": 42,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.Mem.FormSym.readsK_one",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/MemFiCComp.lean",
+      "line0": 147,
+      "line1": 159,
+      "sha256": "f9e2bcef04f868862167b0230e6c12bd7e9f4a3106d09044ad76fa6aced38749",
+      "dominated": 13,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.T.nonempty_classMap_above_lastStep",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/NonemptyClassMapAboveLastStepStatement.lean",
+      "line0": 7,
+      "line1": 8,
+      "sha256": "5c8040f869e96a758aef463a5116b16afc0763274ff70b9167cbd48569eb5d9b",
+      "dominated": 11,
+      "graph": "allChi",
+      "role": "chart supplier"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/blueprint/Z4.4.tex",
+      "section": "r6:review:Z4.4, r11:z44, r11:fock, r12:assembly, r13:recheck, r12:weyl, r12:point, r12:s4, r12:s9, r12:s8, r12:s1, r12:s7, r13:weyl-dual, r13:interior-charts, r13:stage-pack, r13:s9-values, r14:z44-approved",
+      "pages": []
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r6:review:Z4.4",
+      "pages": [
+        364,
+        364
+      ],
+      "printed_page": 339,
+      "scope": "First page of this named destination."
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r11:z44",
+      "pages": [
+        486,
+        486
+      ],
+      "printed_page": 461,
+      "scope": "First page of this named destination."
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r11:fock",
+      "pages": [
+        494,
+        494
+      ],
+      "printed_page": 469,
+      "scope": "First page of this named destination."
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r12:assembly",
+      "pages": [
+        550,
+        550
+      ],
+      "printed_page": 525,
+      "scope": "First page of this named destination."
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r13:recheck",
+      "pages": [
+        551,
+        551
+      ],
+      "printed_page": 526,
+      "scope": "First page of this named destination."
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r12:weyl",
+      "pages": [
+        498,
+        498
+      ],
+      "printed_page": 473,
+      "scope": "First page of this named destination."
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r12:point",
+      "pages": [
+        503,
+        503
+      ],
+      "printed_page": 478,
+      "scope": "First page of this named destination."
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r12:s4",
+      "pages": [
+        506,
+        506
+      ],
+      "printed_page": 481,
+      "scope": "First page of this named destination."
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r12:s9",
+      "pages": [
+        509,
+        509
+      ],
+      "printed_page": 484,
+      "scope": "First page of this named destination."
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r12:s8",
+      "pages": [
+        516,
+        516
+      ],
+      "printed_page": 491,
+      "scope": "First page of this named destination."
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r12:s1",
+      "pages": [
+        524,
+        524
+      ],
+      "printed_page": 499,
+      "scope": "First page of this named destination."
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r12:s7",
+      "pages": [
+        536,
+        536
+      ],
+      "printed_page": 511,
+      "scope": "First page of this named destination."
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r13:weyl-dual",
+      "pages": [
+        502,
+        502
+      ],
+      "printed_page": 477,
+      "scope": "First page of this named destination."
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r13:interior-charts",
+      "pages": [
+        543,
+        543
+      ],
+      "printed_page": 518,
+      "scope": "First page of this named destination."
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r13:stage-pack",
+      "pages": [
+        548,
+        548
+      ],
+      "printed_page": 523,
+      "scope": "First page of this named destination."
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r13:s9-values",
+      "pages": [
+        515,
+        515
+      ],
+      "printed_page": 490,
+      "scope": "First page of this named destination."
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r14:z44-approved",
+      "pages": [
+        552,
+        552
+      ],
+      "printed_page": 527,
+      "scope": "First page of this named destination."
+    }
+  ],
+  "status": "Full",
+  "grade": "L2",
+  "reviews": [
+    "reviews/R11_review.md",
+    "reviews/R12_review_A.md",
+    "reviews/R12_review_B.md",
+    "reviews/R13_recheck.md",
+    "reviews/R14_review_B.md"
+  ],
+  "prerequisites": [
+    "P096",
+    "Z42-SITES"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "blueprint_members": [
+    "Z4.4"
+  ],
+  "representative": "GlobalTheory.PerTwClose.twistedPeriodAdmissible_of_rowInt",
+  "statement_declarations": [
+    "GlobalTheory.PerTwClose.twistedPeriodAdmissible_of_rowInt"
+  ],
+  "grade_scope": "Named statement declarations with the hypotheses above. Chart supplier records have their own review scopes.",
+  "confirmation_basis": "Minimum across the statement declarations, using registry rows for the blueprint assignments listed here. Reviews of other expositions of a shared declaration are included as context.",
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "slug": "twisted-periods-on-the-selected-chain",
+  "aliases": [
+    "Z4.4 Twisted periods on the selected chain"
+  ],
+  "background": [
+    "Twisted period integrals",
+    "Integral row lattices"
+  ],
+  "hypothesis_source": {
+    "document": "blueprint_v13",
+    "section": "r6:review:Z4.4",
+    "pages": [
+      364,
+      364
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "P096": "graph",
+    "Z42-SITES": "statement-reading"
+  },
+  "summary": "With the stated pins, integral rows and tied character, one field element represents a chosen twisted period and satisfies the lower valuation bound at every allowed place. This makes the denominator estimate simultaneous for that period."
+}

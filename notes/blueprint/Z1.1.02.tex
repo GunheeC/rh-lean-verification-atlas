@@ -1,0 +1,32 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% RH Notes blueprint source excerpts for Z1.1.02
+% Verbatim excerpts in the notation of the parent blueprint. The labelled editions and source ranges appear below.
+% See the unit YAML for the current proof status. Earlier-round passages retain their original wording.
+\section*{Z1.1.02. Twisting a seed into the adjoint window}
+
+% Parent source SHA-256: 9559fca8cc392b75d71f1c158fe0c635cfcab567e2f489b52db4c5bb29d98029
+% blueprint/ch_P_r8_small.tex lines 395 through 417; r8:small:Z1.1.02
+\paragraph{Z1.1.02. One determinant identity for the requested twist.}
+\phantomsection\label{r8:small:Z1.1.02}
+In \nolinkurl{UpperTheory.V.Z.Sym.W.seedInW_alt} put
+\(\Theta=\chi'\eta\theta\). The chosen complex conjugation \(c\) has square
+one and the character \(\theta\) has odd \(\ell\)-power condition
+\(\theta^\ell=1\), so \(\theta(c)^2=\theta(c)^\ell=1\) forces
+\(\theta(c)=1\). On \(G_L\) both \(\eta\) and \(\theta\) are trivial by
+the two kernel assumptions. Thus \(\Theta|_{G_L}=\chi'|_{G_L}\).
+The intersection of the three open kernels is contained in \(\ker\Theta\),
+so the latter and \(\ker\Theta^{-1}\) are open. This verifies the parity
+and finite-character conditions for the twist request with infinity
+weight \(-(m+1)\). Conditional on the resulting \(\kappa\), take \(s'\)
+conjugate to \(s\) by \(c\), let \(a=\chi_{\rm cyc}(s)\), and
+\(b=\Theta(s)\), via restriction. The two supplied equalities give
+\(\det\rho(s)=a^m b\) and \(\kappa(s)\kappa(s')=a^{-(m+1)}b^{-1}\).
+Their product is \(a^{-1}\), the required polarization multiplier.
+An alternative conjugation differs from \(c\) by an element of \(G_L\);
+conjugating \(s'\) by that element leaves the one-dimensional \(\kappa(s')\)
+unchanged. S19 controls the finite exceptional set at a fixed coefficient
+prime. The existence of the twist with all prescribed local types, and the
+window for that same twist, remain at \nolinkurl{Pl.lemTWM} and
+\nolinkurl{seedInW_alt} (\path{LemTWM.lean:216--245};
+\path{TSeedInW.lean:117--202,217--270}).
+

@@ -1,0 +1,90 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "P044",
+  "title": "Normalized congruence index",
+  "track": {
+    "primary": "local",
+    "secondary": []
+  },
+  "statement": "Assume G1--G6. The characteristic coefficients belong to \\(T\\) and the local gain and crystalline conditions hold. The constituents satisfy absolute irreducibility and distinctness with the prescribed residual characteristic polynomials and full residual span on block zero. Ramification away from the assigned sets is trivial, the assigned inertia elements satisfy their polynomial relations, and any parameter admitting the distinguished rational character line belongs to \\(Z\\). Assume tame inertia generators, the Bloch--Kato finite conditions and annihilator comparison, family continuity, semisimple decomposition, Fontaine conditions, local \\(H^1\\) finiteness and local coefficient compatibility. Assume condition 5.1 supplying an idempotent design at \\(\\pi\\in Z\\), and the unramified input for the decomposition. Let \\(b_w,m_w,c_B\\) satisfy the row colength, column lifting and \\(TB\\) hypotheses at the good coefficient extensions. If \\(\\ell\\ne g_0,g_1,\\ \\pi\\in Z\\), the global \\(s_\\pi\\) input is finite and the scalar lengths are finite for \\(0<k<t\\), then\n\\[\n\\begin{aligned}\nv_{\\rm cc}(\\pi)\\le{}&\n \\sum_{w\\in R\\cup C}\\operatorname{lenW}(w)+s_\\pi+\n \\sum_{0<k<t}\\operatorname{shaLen}(k)+v_\\ell(h_E)\\\\\n &+t c_B\\sum_{w\\in R}([E_w:\\mathbf Q_\\ell]+2)\n +4 n_V(|C|+1)v_\\delta+t|C|h_0\n +t\\sum_{w\\in Q}\\operatorname{lenUnit}(O/(\\zeta_w-1)).\n\\end{aligned}\n\\]\nHere \\(R,C\\) are the chosen rows and columns, \\(n_V=r+t\\), and \\(\\operatorname{lenW}\\) is the normalized loss for the corresponding local datum.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume G1–G6, the tame-generator, Bloch–Kato, annihilator, continuity, decomposition, Fontaine, Tate-finiteness and coefficient compatibility conditions.",
+    "Use the stated local length, lift-exponent and TB bounds with the specified rows, columns and constituent.",
+    "The idempotent design (5.1) and unramified input hold at $\\pi\\in Z$, the prime differs from $g_0,g_1$, and the global and scalar lengths in the bound are finite."
+  ],
+  "lean": [
+    {
+      "name": "Formalism.MainNotions.N.K.Closed.theorem_n5_from_inputs",
+      "file": "Formalism/AdmissibleDesigns/StatementOneBFromUnramified.lean",
+      "line0": 142,
+      "line1": 175,
+      "sha256": "c8d1745b519bab4d0d2498bceaea110e4c7371acd45b2f8db13bf0821c1502c0",
+      "dominated": 21932,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "7.21 (pn:P044)",
+      "pages": [
+        86,
+        86
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/P044.tex",
+      "section": "pn:P044",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [
+    "P041",
+    "P043",
+    "Z3.1",
+    "Z3.2"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [],
+  "paper_id": "P044",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "normalized-congruence-index",
+  "aliases": [
+    "theorem_n5_from_inputs",
+    "P044 Normalized congruence index"
+  ],
+  "background": [
+    "Local Tate duality",
+    "Lattice indices",
+    "Galois deformation theory"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "7.21 (pn:P044)",
+    "pages": [
+      86,
+      86
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "P041": "graph",
+    "P043": "graph",
+    "Z3.1": "graph",
+    "Z3.2": "graph"
+  },
+  "summary": "At an eligible distinguished point, the normalized congruence index is bounded by local row and column losses, global Selmer lengths, class-number and ramification terms. The hypotheses on the family, idempotents and finite lengths specify when that comparison can be applied."
+}

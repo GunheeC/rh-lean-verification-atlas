@@ -1,0 +1,76 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit P021. Local manuscript v3, item 6.40, heading on printed PDF p. 70.
+% Formalism.LFunctionChainParameters.WeightedSlopeBounds.each_unit_bound_statement
+% paper2/upper.tex:750–819. Verbatim excerpt; SHA-256 d810ce4ac8262d9661669ce6d5150733ab80d6320ca852da0db85033c5e6604a.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+\begin{theorem}[A pointwise upper bound from weighted slopes]\label{pn:P021}
+
+For any data, constants and real $X_{pp}$ as above, assume the eleven hypotheses of Definition \ref{def:L-hyps}. Then for every $u_0\in U_0$
+\[
+  ASK(u_0)\le\mathrm{Main}(u_0)+\mathrm{Err}(u_0),
+\]
+where, with
+$M_{Lo}=c_{Sl1}Lo_P+c_{Sl1}n_Tm(a/k+b')\,c_{Count}mL+c_{Sl1}X_{pp}+1$,
+$V=2mc_EB_0+c_H(n_TaLa+mB_0)+A\,c_{Count}\log k$ and
+$\bar U=c_{Slope}n_TaLa(2+m/k)+V+c_{Sl1}mB_0+M_{Lo}$,
+\[
+\begin{aligned}
+ \mathrm{Err}(u_0)={}&A\,c_{Count}\Bigl(La+\frac{m^2La}{k}\Bigr)+E_{Div}+m\,c_EB_0\\
+ &+c_{Slope}n_TaLa\Bigl(1+\frac mk\Bigr)+\log|W(u_0)|+Lo_P+M_{Lo}\\
+ &+\frac1{1-\bar\delta}\Bigl(4\log(1+x^{c_{HH}})\,(\bar U+b)+(\bar\eta+4\sqrt{\bar e})\,x^{c_{HH}}b\Bigr).
+\end{aligned}
+\]
+\end{theorem}
+\nodestatus{P021}
+\begin{proof}
+Fix $u_0$; write $\overline{Lo}$ for the $d$-weighted mean of $Lo(u)$ over $u\in W(u_0)$.
+
+\emph{Step 1 (lower bound for $s$).} For each $u$, by \texttt{QuotientSlopeBoundsWith} (lower) and
+\texttt{DIV} (solved for $-h(u)$):
+\[
+ \mu_N(u)-h(u)\ge\bigl[\mu_M(u)+G_a+F_o-Ee(u)-Lo(u)\bigr]+\bigl[\mu_{CC}-F_o-S_{Div}+A\log T_u-E_{Div}\bigr].
+\]
+$F_o$ cancels. Insert $\mu_M(u)\ge-c_{Slope}n_TaLa(1+m/k)$, $Ee(u)\le m(A\lg+c_EB_0)$ and
+$A\log T_u\ge A\Lambda(u_0)$ ($A\ge0$), and average with weights $d_u>0$:
+\[
+  s\ \ge\ G_a+\mu_{CC}-K_5-\overline{Lo},\qquad
+  K_5=c_{Slope}n_TaLa\bigl(1+\tfrac mk\bigr)+m(A\lg+c_EB_0)+S_{Div}-A\Lambda(u_0)+E_{Div}.
+\]
+
+\emph{Step 2 (slope inequality).} By \texttt{FParams}, \texttt{HHBound} and \texttt{SlopeIneq},
+$s\le\mu_{CC}+\log|W(u_0)|+\Phi$ with
+$\Phi=(1-\delta)^{-1}(4u_F\log(1+HH/u_F)+(\eta+4\sqrt e)HH)$. Combined with Step 1, $\mu_{CC}$ cancels:
+\[
+  G_a\le K_5+\overline{Lo}+\log|W(u_0)|+\Phi .
+\]
+
+\emph{Step 3 (main term).} By Lemma \ref{lem:L-keyid},
+$K_5=\mathrm{Main}(u_0)+Ac_{Count}(La+m^2La/k)+E_{Div}+mc_EB_0+c_{Slope}n_TaLa(1+m/k)$.
+
+\emph{Step 4 (bound for $\Phi$).} For $u,u'$: by \texttt{QuotientSlopeBoundsWith} (upper for $u$, lower
+for $u'$), \texttt{Slopes},
+\[
+\begin{aligned}
+ &(\mu_N^{\max}(u)-h(u))-(\mu_N(u')-h(u'))\\
+ &\quad\le c_{Slope}n_TaLa\bigl(2+\tfrac mk\bigr)+c_{Sl1}mB_0+Lo(u')\\
+ &\qquad+\bigl[(-Ee(u)-h(u))-(-Ee(u')-h(u'))\bigr].
+\end{aligned}
+\]
+The last bracket is $\le V$ by \texttt{EComp5} (twice), \texttt{HComp} and the third part of
+\texttt{Count5}. Averaging over $u'$ and taking the maximum over $u$:
+$0\le u_F\le K_3+\overline{Lo}$, $K_3=c_{Slope}n_TaLa(2+m/k)+V+c_{Sl1}mB_0$. The elementary inequality
+\[
+  u\log(1+H/u)\le\log(1+X)\,(U+b)\qquad(0\le u\le U,\ 0<H\le Xb,\ b,X>0)
+\]
+follows for $u>0$ by applying $\log t\le t-1$ to $t=(1+H/u)/(1+X)$ and using
+$H/(1+X)\le bX/(1+X)\le b\log(1+X)$; for $u=0$ the extended left side is zero.
+Applying this bound with $X=x^{c_{HH}}$ gives
+$4u_F\log(1+HH/u_F)\le4\log(1+x^{c_{HH}})(K_3+\overline{Lo}+b)$; and
+$(\eta+4\sqrt e)HH\le(\bar\eta+4\sqrt{\bar e})x^{c_{HH}}b$, $(1-\delta)^{-1}\le(1-\bar\delta)^{-1}$.
+
+\emph{Step 5.} $\overline{Lo}\le c_{Sl1}IO+c_{Sl1}n_Tm(a/k+b')c_{Count}mL+c_{Sl1}X_{pp}+1\le M_{Lo}$
+by \texttt{Count5} (upper) and $IO\le Lo_P$; and $ASK\le G_a+Lo_P$. Collecting terms gives the claim.
+The intermediate declarations are \texttt{s\_lower5}, \texttt{Vvar\_bound5}, \texttt{u\_function\_le\_mean}, \texttt{Ga\_bound5},
+\texttt{weighted\_mean\_lower\_bound\_le}. 
+\end{proof}

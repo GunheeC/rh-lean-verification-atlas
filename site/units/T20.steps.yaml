@@ -1,0 +1,181 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "T20",
+  "edition_sha256": "bbc82de7b478f89c1e04b5c5115a5ebcf5cc1a2d7a093b02de0f872c556e13c8",
+  "note_sha256": "fcaf146e4f35e294e15e69f3cf38aec3acf20857828aedc49a5eda1ed12f6437",
+  "statement_sha256": "e2b8fa4af47862496383c2745ef9abf8ef3c6e681f9c11dc8ba79d8e9ab30aad",
+  "sources": [
+    {
+      "path": "notes/units/T20_round4.md",
+      "sha256": "fcaf146e4f35e294e15e69f3cf38aec3acf20857828aedc49a5eda1ed12f6437"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The finite list of vanishing ideals of the boundary components has union of supports equal to the prescribed closed set.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: noetherian boundary"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.LiteratureTheorems.principalisation_char_zero_of_literature",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+          "line0": 555,
+          "line1": 556
+        },
+        {
+          "name": "PositivityTheory.ResPlug.WeightsCompactStabilizer.principalisationCharZero_closed",
+          "file": "Development/WeilBound/CoreStatements/ResolutionCharZero/PrincipalisationCharZeroClosed.lean",
+          "line0": 7,
+          "line1": 8
+        },
+        {
+          "name": "PositivityTheory.ResPlug.GBnd.gBoundary",
+          "file": "Development/WeilBound/CoreStatements/ResolutionCharZero/RqGbnd.lean",
+          "line0": 777,
+          "line1": 790
+        }
+      ],
+      "source": "notes/units/T20_round4.md",
+      "anchor": "The top-level record argument is present in the statement, while its proof takes a closed ",
+      "source_lines": [
+        28,
+        28
+      ],
+      "claim_sha256": "6411acabbb6350fa70e368a0448957d670476d58e88823a7da531bccacda79e5",
+      "passage_sha256": "70043b15c79888fe40ffb1e6c77098c3cf174ebf753b9b5658bf0e50d6836872",
+      "sha256": "77d9085e6ee5cb4da87269227232c968a6a7799acd9c49fda4ca7977e9018f1e",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The active component labels in a common chart are distinct and give the normal-crossings condition for the list.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "input: étale coordinate charts"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.ResPlug.GBnd.gBoundary",
+          "file": "Development/WeilBound/CoreStatements/ResolutionCharZero/RqGbnd.lean",
+          "line0": 782,
+          "line1": 818
+        }
+      ],
+      "source": "notes/units/T20_round4.md",
+      "anchor": "For a point of $X$, choose the local étale chart and the subset of its coordinate hyperpla",
+      "source_lines": [
+        32,
+        32
+      ],
+      "claim_sha256": "8c36a9de1e402af78f2ffc3f51eb328b0882b1c9eca0220c4080a3fb8476a262",
+      "passage_sha256": "87dd6ffd4089132b3574b4e1a0410d434e3c17f49733be4130dffedf041192d4",
+      "sha256": "63366d2995581a1cddf709f6e4bcf909a6247bd7a7c435d39f2d872ec2fd6aac",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The reduced inverse image of the cosupport is the closed subscheme needed for the final crossing condition.",
+      "kind": "computation",
+      "uses": [
+        "S2",
+        "input: endpoint comparisons"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.ResPlug.WeightsCompactStabilizer.gEnd_of",
+          "file": "Development/WeilBound/CoreStatements/ResolutionCharZero/PrincipalisationCharZeroBotOfEff.lean",
+          "line0": 236,
+          "line1": 246
+        }
+      ],
+      "source": "notes/units/T20_round4.md",
+      "anchor": "For a principalizing sequence the endpoint criterion has three inputs",
+      "source_lines": [
+        36,
+        36
+      ],
+      "claim_sha256": "15922e15c1ec9f18b7f710f63e03f0ee40f4b65cc20120f38c749d23df94d5b0",
+      "passage_sha256": "aed18fcffa464414d32a89c6c45bf79b3fc2b87a0b44bfa80b89775e1d12ccdb",
+      "sha256": "d3edb37d013715331bd855a33824440ebeb223caa23157fcba99ba3148593dfd",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "Effective Cartierness, normal crossings and the complement isomorphism hold for the same terminal map.",
+      "kind": "assembly",
+      "uses": [
+        "S2",
+        "S3",
+        "input: principalisation sequence"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.ResPlug.WeightsCompactStabilizer.principalisationCharZero_of_eff",
+          "file": "Development/WeilBound/CoreStatements/ResolutionCharZero/PrincipalisationCharZeroBotOfEff.lean",
+          "line0": 263,
+          "line1": 264
+        },
+        {
+          "name": "PositivityTheory.ResPlug.WeightsCompactStabilizer.principalisationCharZero_of_boundary",
+          "file": "Development/WeilBound/CoreStatements/ResolutionCharZero/PrincipalisationCharZeroOfBoundary.lean",
+          "line0": 14,
+          "line1": 15
+        },
+        {
+          "name": "PositivityTheory.ResPlug.WeightsCompactStabilizer.principalisationCharZero_bot_closed",
+          "file": "Development/WeilBound/CoreStatements/ResolutionCharZero/PrincipalisationCharZeroOfBoundary.lean",
+          "line0": 17,
+          "line1": 25
+        }
+      ],
+      "source": "notes/units/T20_round4.md",
+      "anchor": "The complement isomorphism and strict normal crossings are extracted from the same princip",
+      "source_lines": [
+        40,
+        40
+      ],
+      "claim_sha256": "4e1f7786d3bebe13cce3fc4f6fdb3b62deca12693491744ad94c984f29eb9322",
+      "passage_sha256": "efee37290c9fd36d3464978b92b8ef00512870fec6136291e5083763a458e7f6",
+      "sha256": "65ba719a6bf31b98f61fe96b15d8a3e98bc0e7e135d69bf4ce5fe4ecbb697895",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "d8b5b267edbf5c9e579341450db23da7989ce48098098fb7677a9a68b9abe255",
+      "sources": [
+        {
+          "path": "notes/units/T20_round4.md",
+          "sha256": "1727b3cee0d1b506adf6eb435c26f0fade8ba108c363883ac273981749edbfe6"
+        }
+      ],
+      "statement_sha256": "4a3014fc020ff4fcbe038a24257ca76ece9b0455c425c63635103b568b418c30",
+      "steps": {
+        "S1": "77d9085e6ee5cb4da87269227232c968a6a7799acd9c49fda4ca7977e9018f1e",
+        "S2": "63366d2995581a1cddf709f6e4bcf909a6247bd7a7c435d39f2d872ec2fd6aac",
+        "S3": "d3edb37d013715331bd855a33824440ebeb223caa23157fcba99ba3148593dfd",
+        "S4": "65ba719a6bf31b98f61fe96b15d8a3e98bc0e7e135d69bf4ce5fe4ecbb697895"
+      },
+      "step_texts": {
+        "S1": "The finite list of vanishing ideals of the boundary components has union of supports equal to the prescribed closed set.",
+        "S2": "The active component labels in a common chart are distinct and give the normal-crossings condition for the list.",
+        "S3": "The reduced inverse image of the cosupport is the closed subscheme needed for the final crossing condition.",
+        "S4": "Effective Cartierness, normal crossings and the complement isomorphism hold for the same terminal map."
+      },
+      "step_passages": {
+        "S1": "70043b15c79888fe40ffb1e6c77098c3cf174ebf753b9b5658bf0e50d6836872",
+        "S2": "87dd6ffd4089132b3574b4e1a0410d434e3c17f49733be4130dffedf041192d4",
+        "S3": "aed18fcffa464414d32a89c6c45bf79b3fc2b87a0b44bfa80b89775e1d12ccdb",
+        "S4": "efee37290c9fd36d3464978b92b8ef00512870fec6136291e5083763a458e7f6"
+      }
+    }
+  ]
+}

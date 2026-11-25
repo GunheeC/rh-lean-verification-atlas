@@ -1,0 +1,67 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Three checks on a pinned Lean export · RH verification atlas</title><link rel="stylesheet" href="../../atlas.css"><script>window.MathJax={tex:{inlineMath:[["$","$"]],displayMath:[["$$","$$"]],processEscapes:true},options:{ignoreHtmlClass:"no-math"}};</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script></head><body><header><div class="bar"><a class="brand" href="../../index.html">RH verification atlas</a><nav aria-label="Atlas navigation"><a href="../../index.html">Home</a> <a href="../../STATUS.html">Status</a> <a href="../../MAP.html">Map</a> <a href="../../dashboard/index.html">Tracks</a> <a href="../../lookup/search.html">Search declarations</a></nav></div></header><main><h1 id="three-checks-on-a-pinned-lean-export">Three checks on a pinned Lean export</h1>
+<p class="notice">AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved</p>
+<p><strong>pending_review</strong> · The examples use Python 3.11 or later. The axiom query and graph extraction also use Lean 4.33.1. Start in the atlas checkout. For the source-slice check, use a separate checkout of the public Lean source. The following shell commands acquire its pinned revision and create a temporary working directory. The third check uses this checkout and its separately obtained compiled objects. <a href="../../units/P001.html">Unit P001</a> · <a href="../../data/pins.json">Pin ledger</a></p>
+<pre><code>WORK_DIR=$(mktemp -d)
+git clone --no-checkout https://github.com/leanprover-community/riemann-hypothesis &quot;$WORK_DIR/source&quot;
+git -C &quot;$WORK_DIR/source&quot; checkout --detach 40e56bab026552e089d7afcfeff08d2defb9c005
+export LEAN_SRC=&quot;$WORK_DIR/source/src&quot;</code></pre>
+<h2 id="1-extract-a-declaration-and-check-its-hash">1. Extract a declaration and check its hash</h2>
+<p>Look up the qualified name, source file and inclusive line range in the pin ledger. For the public zeta export the source is <code>Main.lean:4–4</code> at commit <code>40e56bab026552e089d7afcfeff08d2defb9c005</code>. Python indexes the first line as zero. Slice from <code>line0 - 1</code> up to the exclusive Python endpoint <code>line1</code>. Joining with LF puts one newline <em>between</em> neighboring source lines and none at the end. Run the following command in the atlas directory.</p>
+<pre><code>python3 - &lt;&lt;&#x27;PY&#x27;
+import hashlib, json, os
+from pathlib import Path
+pin = json.loads(Path(&#x27;data/pins.json&#x27;).read_text())[&#x27;anchors&#x27;][&#x27;riemannHypothesis&#x27;]
+source = Path(os.environ[&#x27;LEAN_SRC&#x27;]) / pin[&#x27;file&#x27;]
+lines = source.read_text(encoding=&#x27;utf-8&#x27;).splitlines()
+span = &#x27;\n&#x27;.join(lines[pin[&#x27;line0&#x27;] - 1 : pin[&#x27;line1&#x27;]])
+digest = hashlib.sha256(span.encode(&#x27;utf-8&#x27;)).hexdigest()
+assert digest == pin[&#x27;sha256&#x27;]
+print(span, digest, sep=&#x27;\n&#x27;)
+PY</code></pre>
+<p>The command printed the declaration and <code>71b3d50605ddda7c0c74fbbf5cca47165a4cfa2ad72f50f36b907ecac7ff505a</code>. A terminal newline in this one-line input would yield a different digest. The result identifies the exact source slice. Its mathematical deduction uses the modulus-one character and the zeta functional equation. <a href="../units/P001_round3.html">Read the deduction</a></p>
+<h2 id="2-ask-which-axioms-an-export-uses">2. Ask which axioms an export uses</h2>
+<p>The compiled-object reader below requires the public object archive. Its manifest and archive are available at the pinned dataset revision shown below. The archive is 28,638,044,751 bytes; allow about 99 GB for the extracted tree. The manifest and the named object are checked separately below. The full <code>#print axioms</code> query also needs the compiled packages pinned in the source checkout’s <code>lake-manifest.json</code>. Use an independently prepared checkout with those packages or populate its standard dependency cache in the temporary checkout. Python and Lean’s core libraries suffice for the object-reader alternative.</p>
+<pre><code>export OLEAN_DIR=&quot;$WORK_DIR/objects&quot;
+export LEAN_PACKAGES=&quot;$WORK_DIR/source/.lake/packages&quot;
+mkdir -p &quot;$OLEAN_DIR/extract&quot;
+BASE=https://huggingface.co/datasets/JackMcCarthy/riemann-hypothesis-build/resolve/9036e64326acf4acfae159b96664e9708445c1d1
+curl -fL &quot;$BASE/olean-manifest.sha256&quot; -o &quot;$OLEAN_DIR/olean-manifest.sha256&quot;
+curl -fL &quot;$BASE/oleans.tar.zst&quot; -o &quot;$OLEAN_DIR/oleans.tar.zst&quot;
+python3 - &lt;&lt;&#x27;PYCODE&#x27;
+import hashlib, os
+from pathlib import Path
+with (Path(os.environ[&#x27;OLEAN_DIR&#x27;]) / &#x27;oleans.tar.zst&#x27;).open(&#x27;rb&#x27;) as f:
+    assert hashlib.file_digest(f, &#x27;sha256&#x27;).hexdigest() == &#x27;953bab5386a7849527a11960f80a2fab427c49c637d6e94cc75788dd8f40196b&#x27;
+PYCODE
+zstd -dc &quot;$OLEAN_DIR/oleans.tar.zst&quot; | tar -xf - -C &quot;$OLEAN_DIR/extract&quot;
+(cd &quot;$WORK_DIR/source&quot; &amp;&amp; lake exe cache get)</code></pre>
+<p>The ordinary command is <code>#print axioms &lt;qualified-name&gt;</code> after importing the module. The launcher below sets the search path to the existing published and package objects, then sends two lines to Lean. For an export directly used in the public zeta reduction, run</p>
+<pre><code>python3 scripts/round3_print_axioms.py Formalism.GammaFactorNonvanishing.RhOfRight Formalism.VW.rh_of_right --objects &quot;$OLEAN_DIR/extract/.lake/build/lib/lean&quot; --packages &quot;$LEAN_PACKAGES&quot;</code></pre>
+<p>This imports <code>Formalism.GammaFactorNonvanishing.RhOfRight</code> and executes <code>#print axioms Formalism.VW.rh_of_right</code>. The observed output was <code>&#x27;Formalism.VW.rh_of_right&#x27; depends on axioms: [propext, Classical.choice, Quot.sound]</code>. That theorem is the reflection implication with a right-half-plane premise. The public export <code>riemannHypothesis</code> lies in <code>Main</code> and is a different declaration. The equivalent command for the full public module is</p>
+<pre><code>python3 scripts/round3_print_axioms.py Main riemannHypothesis riemannZeta_eq_zero_re LFunction_ne_zero_of_half_lt_re LFunction_eq_zero_re LFunction_eq_zero_re_of_isPrimitive --objects &quot;$OLEAN_DIR/extract/.lake/build/lib/lean&quot; --packages &quot;$LEAN_PACKAGES&quot;</code></pre>
+<p>On 25 November 2026 we ran this <code>import Main</code> and all five <code>#print axioms</code> commands with Lean 4.33.1. The process exited successfully. For each of the five names Lean reported <code>propext</code>, <code>Classical.choice</code> and <code>Quot.sound</code>. This imports the compiled environment and queries its axiom collector. It uses the existing module objects and performs no source rebuild.</p>
+<p>Lean 4.33.1 stores the axiom set computed for an exported declaration in its module object. The following checks identify the manifest and <code>Main.olean</code> before reading the five named entries. This is a smaller local procedure for the public targets when importing the whole development is impractical.</p>
+<pre><code>python3 - &lt;&lt;&#x27;PY&#x27;
+import os
+from hashlib import file_digest, sha256
+from pathlib import Path
+manifest = Path(os.environ[&#x27;OLEAN_DIR&#x27;]) / &#x27;olean-manifest.sha256&#x27;
+with manifest.open(&#x27;rb&#x27;) as handle:
+    assert file_digest(handle, &#x27;sha256&#x27;).hexdigest() == &#x27;fb3609ad73a17102e6e3e2346c5358a9c0957bcf5945442a7e5ffaa00c441ff5&#x27;
+relative = &#x27;.lake/build/lib/lean/Main.olean&#x27;
+matches = [line.split()[0] for line in manifest.read_text().splitlines() if line.endswith(&#x27;  &#x27; + relative)]
+obj = Path(os.environ[&#x27;OLEAN_DIR&#x27;]) / &#x27;extract&#x27; / relative
+assert matches == [sha256(obj.read_bytes()).hexdigest()]
+print(matches[0])
+PY
+lean +leanprover/lean4:v4.33.1 --run scripts/round3_axiom_entries.lean &quot;$OLEAN_DIR/extract/.lake/build/lib/lean/Main.olean&quot;</code></pre>
+<p>The first command printed <code>ce9a2006adda570c7404866ff3ceb4a7341c6c5d8ae7b56b6d8600b4c312d1ab</code>. The second returned entries for all five public names listed above. Each entry contained <code>propext</code>, <code>Classical.choice</code> and <code>Quot.sound</code>. The reader selects the <code>exportedAxiomsExt</code> entry array. In this toolchain the serialization is defined at <code>Lean/Util/CollectAxioms.lean:120–146</code>, and the lookup at lines 149–153. The native print command calls the collector at <code>Lean/Elab/Print.lean:240–251</code>. This checks the metadata carried by the specified compiled object. Rechecking proof terms in a kernel is a different operation documented under the dated external audit. <a href="../../scripts/round3_print_axioms.py">Lean launcher</a> · <a href="../../scripts/round3_axiom_entries.lean">Object reader</a> · <a href="../../sources/kernel-audit.html">Kernel audit</a></p>
+<h2 id="3-recompute-dominated-lines-for-one-node">3. Recompute dominated lines for one node</h2>
+<p>In the graph rooted at <code>allChi</code>, a declaration <span class="math">$v$</span> dominates a reached declaration <span class="math">$w$</span> if <em>every</em> directed path from the root to <span class="math">$w$</span> contains <span class="math">$v$</span>. Delete <span class="math">$v$</span>, traverse again and subtract the surviving weight. A supplier with an alternative path survives, even if it lies below <span class="math">$v$</span> in the original traversal.</p>
+<p>For a concrete example take the row-to-half-plane declaration in <a href="../../units/P011.html">P011</a>. The atlas records the fingerprint and declaration-name index in <code>progress/position_graph.json</code>. Follow the <a href="../../progress/index.html#rebuild-the-optional-traversal-graph">graph regeneration procedure</a> to reconstruct the traversal arrays outside the atlas. The deletion program verifies the resulting bytes before traversing. The arrays retain every vertex, its weight and every distinct outgoing dependency, except that nodes tagged <code>lit</code> have no outgoing edges. This stopping convention defines its literature frontier. The tag says where traversal stops; it establishes no equivalence with a published result. Each reachable core declaration with a valid source span contributes its inclusive line count exactly once. This choice counts overlapping spans of different declarations independently.</p>
+<pre><code>python3 scripts/check_graph_position.py --graph &quot;$GRAPH_WORK/position_graph.xz&quot; UpperTheory.FinalTheorems.everyCharacter_of_row</code></pre>
+<p>The command printed</p>
+<pre><code>root: 9567045
+without UpperTheory.FinalTheorems.everyCharacter_of_row: 2137853
+dominated: 7429192</code></pre>
+<p>The subtraction agrees with the P011 pin. To replay a different target, pass one of the declaration names listed in the graph’s JSON name index. The reconstructed arrays omit duplicate edges and retain all vertex weights. The <a href="../../scripts/pack_position_graph.py">packer</a> checks their fingerprint against the published index. The graph includes dependencies arising in types, values and constructor data. Its weight describes reachability for this root and this frontier. A high weight can belong to a two-line theorem that gathers many suppliers. Adding parent and child weights double-counts their shared dominated region. The separate <code>five_public_heads</code> weights for the public exports use a different root convention. <a href="../../scripts/check_graph_position.py">Traversal implementation</a> · <a href="../units/P011_round3.html">P011 deduction</a></p></main><footer><a href="../../help.html">Using the local edition</a></footer></body></html>

@@ -1,0 +1,88 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D154",
+  "title": "Hyperplane sections of the Chow form",
+  "track": {
+    "primary": "arakelov",
+    "secondary": []
+  },
+  "statement": "Slicing the first block of the Chow form by a hyperplane gives, up to a nonzero scalar, the product of the component Chow forms raised to the intersection multiplicities.\n\\[\n\\exists c\\in k^\\times,\\qquad f(u,-)=c\\prod_{Q\\in\\operatorname{supp}(P\\cap H_u)}g_Q^{m_Q}.\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Over a characteristic-zero field use a homogeneous prime ideal with the required dimension and a hyperplane whose form lies outside it.",
+    "Choose a Chow form for the original cycle and a Chow form for each component of its section."
+  ],
+  "lean": [
+    {
+      "name": "ChowFormCompatibility.chow_form_hyperplane_section",
+      "file": "Development/WeilBound/CoreStatements/NefModelVolumes/ChowFormHyperplaneSection.lean",
+      "line0": 12,
+      "line1": 38,
+      "sha256": "2a4f525036952efa0c225601133cc7b293c39ca1e923a180908e9f1e0bfa1965",
+      "dominated": 0,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/D154_round4.md",
+      "section": "D154 · Hyperplane sections of the Chow form",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "G.164 (decomp:D154)",
+      "pages": [
+        198,
+        198
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D154.tex",
+      "section": "decomp:D154",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": 2,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "D154",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "hyperplane-sections-of-the-chow-form",
+  "aliases": [
+    "chow_form_hyperplane_section",
+    "D154 Hyperplane sections of the Chow form"
+  ],
+  "background": [
+    "Chow forms",
+    "Hyperplane sections and intersection multiplicities"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.164 (decomp:D154)",
+    "pages": [
+      198,
+      198
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "review_status": "pending_review",
+  "summary": "A hyperplane cuts the original cycle into components with multiplicities. Specializing one block of the Chow form records exactly those components as factors. The scalar ambiguity is harmless for this factorization, but the multiplicities and the requirement that the hyperplane avoid the original prime are essential."
+}

@@ -1,0 +1,81 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "P025",
+  "title": "Ordinary to Bloch–Kato adjoint vanishing",
+  "track": {
+    "primary": "galois",
+    "secondary": [
+      "local"
+    ]
+  },
+  "statement": "Assume local cohomological finiteness, Tate duality, the Euler\ncharacteristic formulas and the local Bloch--Kato theorem in the\nspecified coefficient models. Assume the dense ordinary vanishing\nhypothesis: at every locally generic automorphic point below each\nallowed ordinary adjoint cocycle is a coboundary. Let \\(L\\) be CM with\n\\(\\mu_\\ell\\not\\subset L\\), take a Hida setting and level \\(V\\) with\n\\(V.S'=S\\), large coefficients, \\(2\\le n\\le4\\), an admitted residual\nrepresentation, and a locally generic automorphic point \\(x,\\rho\\)\nof its universal ordinary determinant ring. For each \\(v\\mid\\ell\\)\nsuppose there are strictly decreasing integers \\(m_i\\) and \\(k>0\\)\nsuch that on inertia\n\\[\n \\bigl(\\psi_{v,i}\\psi_{v,j}^{-1}\\chi^{m_j-m_i}\\bigr)^k=1\n \\quad(i,j=1,\\ldots,n).\n\\]\nFor every allowed polarizing form and adjoint extension \\(R\\), each\ncontinuous cocycle \\(z\\) whose pullback satisfies the Bloch--Kato\nfinite condition has the form \\(z(g)=R(g)X-X\\) for one matrix \\(X\\)\nand all \\(g\\).",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume local finiteness, Tate duality, Euler characteristics, Bloch–Kato local comparison and dense ordinary adjoint vanishing.",
+    "Use the admitted CM Hida setting with $\\mu_\\ell\\not\\subset L$, ranks two through four, a locally generic automorphic point and the stated inertia ratios for strictly decreasing weights.",
+    "For the chosen polarizing form and extension the pulled-back continuous cocycle satisfies the finite local condition."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.Th.adjointLiftingTheorem_of_locPrints_of_core",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/AdLOf.lean",
+      "line0": 104,
+      "line1": 150,
+      "sha256": "4e1cd7823cb628ae111564c465d5b957a0f7b5684602aa21fdbfe0fa3136e782",
+      "dominated": 597,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "7.2 (pn:P025)",
+      "pages": [
+        72,
+        72
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/P025.tex",
+      "section": "pn:P025",
+      "pages": []
+    }
+  ],
+  "status": "Statement only",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [],
+  "paper_id": "P025",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "ordinary-to-blochkato-adjoint-vanishing",
+  "aliases": [
+    "Ordinary to Bloch--Kato adjoint vanishing",
+    "P025 Ordinary to Bloch–Kato adjoint vanishing"
+  ],
+  "background": [
+    "Ordinary deformation rings",
+    "Local Tate duality",
+    "Bloch–Kato Selmer groups"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "7.2 (pn:P025)",
+    "pages": [
+      72,
+      72
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {}
+}

@@ -1,0 +1,189 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "W04",
+  "edition_sha256": "88c00e9106668ffceff80aee925f5bd912738652a7a788c9bfd8044dea5faddb",
+  "note_sha256": "bb955e59b2cc4d8b3678a135f407086a1f5a5477cefbf43199f103d51f4a209c",
+  "statement_sha256": "5f06f97aae87f469e8092edec9d8ee80c59870193c1dbe1706a9fd7a66a04b0d",
+  "sources": [
+    {
+      "path": "notes/units/W04_round4.md",
+      "sha256": "bb955e59b2cc4d8b3678a135f407086a1f5a5477cefbf43199f103d51f4a209c"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Every nonsplit place lies over the complement of the split exceptional set, where the Satake hypothesis applies.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: finite exceptional set of split places and Satake hypotheses"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Z.Tf.SR.DescWeakAll",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/TraceFormula/SplitRigidity/HasOfSplit.lean",
+          "line0": 20,
+          "line1": 30
+        }
+      ],
+      "source": "notes/units/W04_round4.md",
+      "anchor": "Fix the CM extension, unramified at finite places,",
+      "source_lines": [
+        27,
+        27
+      ],
+      "claim_sha256": "508e282f4ae45d221be9d8670b2be6984be5b04a9d361934d4bb1a74a841033b",
+      "passage_sha256": "9106d6201f9ae356748aa2e91ab0b5163c8acebbc3cb223f88c7bfb76424f29e",
+      "sha256": "0147b536df600c3c2860be530d76b474bba7d81a0af26206818af978ac170e81",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "In the failure branch of the trace alternative there is a regular candidate excluding the cuspidal representation but agreeing at cofinally many split places.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S1",
+        "input: trace-formula alternative runTh"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Z.Tf.GaloisFromTraceFormula.runTh",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/TraceFormula/GaloisFromTraceFormula/DescWeak.lean",
+          "line0": 9,
+          "line1": 9
+        },
+        {
+          "name": "UpperTheory.V.Z.Tf.SR.descWeakAll",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/TraceFormula/SplitRigidity/HasOfSplit.lean",
+          "line0": 26,
+          "line1": 27
+        }
+      ],
+      "source": "notes/units/W04_round4.md",
+      "anchor": "The all-ranks internal deduction uses the trace-comparison alternative",
+      "source_lines": [
+        31,
+        31
+      ],
+      "claim_sha256": "f8329a1411e94e117a973135b3e0b440b67ce7a1a1f4dee81dcb412a71183112",
+      "passage_sha256": "c8cde963913b9084fa43c7dfb01d879cdec472b1a95f7ced701b4a0bc181d719",
+      "sha256": "fa7e1ebc28d9d404b8c0c3e5a691916b2b28a880627e8a3f7783cae0f122b96c",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Split rigidity forces this candidate to contain the original cuspidal representation, contradicting its exclusion.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S2",
+        "input: split rigidity and constituent unitarity"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Z.Tf.SR.has_of_split",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/TraceFormula/SplitRigidity/HasOfSplit.lean",
+          "line0": 11,
+          "line1": 18
+        },
+        {
+          "name": "UpperTheory.V.Z.Tf.SR.splitRigid",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/TraceFormula/SplitRigidity/SplitRigid.lean",
+          "line0": 12,
+          "line1": 13
+        }
+      ],
+      "source": "notes/units/W04_round4.md",
+      "anchor": "Apply split rigidity to the cuspidal representation and",
+      "source_lines": [
+        35,
+        35
+      ],
+      "claim_sha256": "946017e57258c2cb9f7f8df0523c013a14183ba67dc3a6ee6604b726c2d69c0c",
+      "passage_sha256": "707bfa4ec2f3223d66a6d7cee944f55d86ae4d0c64d8dc82bbc09f8655018f31",
+      "sha256": "7abd9e012e14fc5c645a788b35c330010d1e5f69792daaaaeb81ab13fd1dc010",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The surviving descent witness is unramified at all nonsplit places and matches at cofinally many split places.",
+      "kind": "assembly",
+      "uses": [
+        "S3",
+        "input: positive rank and descent alternative"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Z.Tf.SR.DescWeakAll",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/TraceFormula/SplitRigidity/HasOfSplit.lean",
+          "line0": 20,
+          "line1": 30
+        }
+      ],
+      "source": "notes/units/W04_round4.md",
+      "anchor": "The surviving witness is an automorphic subrepresentation on",
+      "source_lines": [
+        39,
+        39
+      ],
+      "claim_sha256": "238e29ed2ccba7970e2811934cc93800ad280a29fa85fbaf5b4b41662d8668dd",
+      "passage_sha256": "306e89bed0960c44b5fc527c0c51d13470019193beed3688148e26a94dfedc7e",
+      "sha256": "4a865a8a704af7e12c0169ac0d4ef014e0720b1d0499fdc38734056f5eb5ae78",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "cf5acc839678b4189a588cf6e7b1a4431eeec1eea0ec9bd61835fb85f1444587",
+      "sources": [
+        {
+          "path": "notes/units/W04_round4.md",
+          "sha256": "6945395716826bc84b9534208cb1d1e43400ae7576cc7fc15d21ba0861df8cb6"
+        }
+      ],
+      "steps": {
+        "S1": "06a06c22c14bce56fda4c0b0b7b3d4bd01dd6b7dd2f0831814cae9ac9821398f",
+        "S2": "35b45081956654b8e9203519821333aa52319e7fb800cb7077bb3e41367ed2ec",
+        "S3": "b0a2ecec8c9dca531bcb2fd43c9ba8dcd79d8bef99d975ca75aba48e320041b2",
+        "S4": "925d4ebd546ef1992c68b05f23d8c1b715a76b16ff748e7563bdb503aa830deb"
+      },
+      "step_texts": {
+        "S1": "Every nonsplit place lies over the complement of the split exceptional set, where the Satake hypothesis applies.",
+        "S2": "In the failure branch of the trace alternative there is a regular candidate excluding the cuspidal representation but agreeing at cofinally many split places.",
+        "S3": "Split rigidity forces this candidate to contain the original cuspidal representation, contradicting its exclusion.",
+        "S4": "The surviving descent witness is unramified at all nonsplit places and matches at cofinally many split places."
+      }
+    },
+    {
+      "edition_sha256": "0a49c228d436a53d4130bcf9a2ad6e2ea01769819daf8b8cfcf74c28d81d08ed",
+      "sources": [
+        {
+          "path": "notes/units/W04_round4.md",
+          "sha256": "6945395716826bc84b9534208cb1d1e43400ae7576cc7fc15d21ba0861df8cb6"
+        }
+      ],
+      "statement_sha256": "5f06f97aae87f469e8092edec9d8ee80c59870193c1dbe1706a9fd7a66a04b0d",
+      "steps": {
+        "S1": "0147b536df600c3c2860be530d76b474bba7d81a0af26206818af978ac170e81",
+        "S2": "fa7e1ebc28d9d404b8c0c3e5a691916b2b28a880627e8a3f7783cae0f122b96c",
+        "S3": "7abd9e012e14fc5c645a788b35c330010d1e5f69792daaaaeb81ab13fd1dc010",
+        "S4": "4a865a8a704af7e12c0169ac0d4ef014e0720b1d0499fdc38734056f5eb5ae78"
+      },
+      "step_texts": {
+        "S1": "Every nonsplit place lies over the complement of the split exceptional set, where the Satake hypothesis applies.",
+        "S2": "In the failure branch of the trace alternative there is a regular candidate excluding the cuspidal representation but agreeing at cofinally many split places.",
+        "S3": "Split rigidity forces this candidate to contain the original cuspidal representation, contradicting its exclusion.",
+        "S4": "The surviving descent witness is unramified at all nonsplit places and matches at cofinally many split places."
+      },
+      "step_passages": {
+        "S1": "9106d6201f9ae356748aa2e91ab0b5163c8acebbc3cb223f88c7bfb76424f29e",
+        "S2": "c8cde963913b9084fa43c7dfb01d879cdec472b1a95f7ced701b4a0bc181d719",
+        "S3": "707bfa4ec2f3223d66a6d7cee944f55d86ae4d0c64d8dc82bbc09f8655018f31",
+        "S4": "306e89bed0960c44b5fc527c0c51d13470019193beed3688148e26a94dfedc7e"
+      }
+    }
+  ]
+}

@@ -1,0 +1,427 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% RH Notes blueprint source excerpts for Z1.2
+% Verbatim excerpts in the notation of the parent blueprint. The labelled editions and source ranges appear below.
+% See the unit YAML for the current proof status. Earlier-round passages retain their original wording.
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+\noindent\nolinkurl{UpperTheory.V.Loc.LocalPublishedTheorems.bk} --- record field (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/LocalPublishedTheorems.lean:19}); not compared.\par
+% End of atlas edition annotation.
+
+\section*{Z1.2. Ordinary adjoint rigidity}
+
+% Parent source SHA-256: 1af64922b98ed2310744411b1f18b25cc426c97220646321471836e1a3a409d6
+% blueprint/ch_P.tex lines 12645 through 12652; r6:review:Z1.2
+\paragraph{Z1.2. Local and global proof boundaries.}\label{r6:review:Z1.2} \emph{Original argument on p.~\pageref{sec:P-r5-z12}.} 
+The declared root takes ordinary vanishing and the local published record as premises. Its \nolinkurl{OrdZero} input uses a form over $c.O$ and its \nolinkurl{AdZero} target uses the form condition over $\mathbf Z_\ell$. The two multiplier characters agree after extension to $\overline{\mathbf Q}_\ell$ by the scalar tower identities. Source: \nolinkurl{adjointLiftingTheorem_of_locPrints_of_core}, \path{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/AdLOf.lean:104--150}. The following inputs remain \emph{proved in Lean, not reproduced}.
+\begin{itemize}
+\item For the local step, transport the decomposition group, its inertia and cyclotomic character through an open embedding, then transport the finite period primitive (\nolinkurl{Loc.decEmb}, \path{Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/DecEmb.lean:71}; \nolinkurl{Loc.bkAbove}, \path{Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/BkAbove.lean:47}). Crystallinity of the ordinary representation on the small subgroup uses the decreasing weights and exclusions of cyclotomic links (\nolinkurl{Loc.prC}, \path{Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/SnocZeroLastCoordinateLast.lean:345--352}); passage to its endomorphisms uses internal Hom (\nolinkurl{Loc.isCrys_isDR_internalHom}, \path{Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/AdmHom.lean:108}). Restriction of finite cocycles to the stable corner is \nolinkurl{Th.z1fSub}, \path{Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/ContinuousSubActions/ContActionSub.lean:83}; the negative- and zero-weight scalar steps are \nolinkurl{Loc.z1fChar}, \path{Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/ExistsNeOne.lean:63}\ and \nolinkurl{Loc.z1fUnr}, \path{Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/ExistsIntBasis.lean:370}. The coefficient descent is \nolinkurl{OrdinaryBlock.desc}, \path{Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/GaloisRepresentationTypes/CornerStable.lean:273--305}.
+\item For ordinary vanishing the precision-dependent auxiliary places require \nolinkurl{Pa.arPl}, \path{Development/AutomorphicArithmetic/AutomorphicVarieties/PatchingModules/AutomorphicDetection/ArPl.lean:13}. The uniform constant in the global upper bound uses the finite-level and dual Selmer estimates (\nolinkurl{Th.oneLevelO}, \path{Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/CyclicReductionCohomology/OneLevelO.lean:52}; \nolinkurl{Th.b1absO}, \path{Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/CyclicReductionCohomology/ResidualRepOne.lean:44}). The lower bound needs the Hida ideal, regularity and support of an operator with nonzero specialization (\nolinkurl{Hi.exists_hecke_ideal}, \path{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/ExistsHeckeIdeal.lean:70}; \nolinkurl{Th.Nm.regular_arithmetic_hida_of_literal_automorphy}, \path{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/NmRegArith.lean:109}; \nolinkurl{Th.has_operator_statement}, \path{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/THasOp.lean:18}). The weight algebra, enlarged determinant ring, trace tests and integral model are further inputs to this count. Their assembly occurs in \nolinkurl{Th.hida_x_of_printed_hida}, \path{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/THidaX.lean:17}\ and \nolinkurl{Th.core_alt_bis}, \path{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/ThFinal.lean:17--18}.
+\item For unlinking, the local unramified direction and cochain (\nolinkurl{Z.J.cupUnr}, \path{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/CrystallineCardinalities/CupUnr.lean:101}), ordinary and exceptional local counts (\nolinkurl{Z.J.locLow}, \path{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/CrystallineCardinalities/LocLow.lean:134}; \nolinkurl{Z.J.locHigh}, \path{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/CrystallineCardinalities/LocHigh.lean:18}), and the associated-prime/derivation obstruction (\nolinkurl{V.J.derZero}, \path{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/DerivativeDivisibility/DerZero.lean:53}) are substantive. A proof still needs the normalization and global duality bounds, purity and simple-root selection on the same component, and the two signed monomials. The last flag argument uses splitting to lift local elements and preservation of potential crystallinity under restriction, isomorphism and duality (\nolinkurl{move_all, unlEnd3E}, \path{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/LogarithmicNormBounds/BlockValuationRep.lean:150--215,234--346}).
+\end{itemize}
+\emph{Hypothesis, discharged at the application.} The actual call to \nolinkurl{Z.J.linkedUnlE_alt}, \path{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/LinkedUnlE.lean:43--48} supplies Artin reciprocity, local class field theory, unitary modularity, \nolinkurl{modularity_n_of_printed_mult_comp}, the level and weight algebras, the universal determinant ring, both seed ranks, twist and algebraic character comparisons, local/global cohomological comparisons, the tangent input and ordinary vanishing. Thus the published local record, the derived finite-to-ordinary comparison and the separate integral vanishing and unlinking arguments have identifiable, different proof obligations.
+
+% Parent source SHA-256: 509893882390ca545e5542b088ec432ed3c1ed009152eeca67e7fc44894dd956
+% blueprint/ch_P_r11.tex lines 32 through 432; r11:adj
+\subsection{Z1.2. Three different rigidity assertions}
+\label{r11:adj}
+Throughout this subsection file suffixes are relative to
+\path{Development/AutomorphicArithmetic/AutomorphicVarieties/}.
+Write $D$ for its directory
+\path{ModularityArgument/ThresholdArguments/DenseThresholdCases/},
+$C$ for \path{TheoremsMuLinked/CyclicReductionCohomology/}, and $J$ for
+\path{ModularityArgument/LinkedUnramifiedChains/}.
+
+\paragraph{The declared root.}
+Let $L$ be the CM field in the Hida setting, $V.S'=s.S$, with no primitive
+$\ell$th root in $L$, $c$ large, $2\le n\le4$, $r.\mathrm{V0ok}$,
+$B$ the universal ordinary determinant ring, and $x$ the arithmetic point
+with locally generic automorphic realization $\rho$.
+In particular the given flag has characters $\psi_{v,i}$, and the freeness,
+irreducibility and separability hypotheses are those in
+\nolinkurl{AutomorphicPointLocallyGeneric}, $D$\path{AutomorphicPointGalois.lean:18--39}.
+For each $v\mid\ell$, assume there are strictly decreasing integers $m_i$
+and a single $k_v>0$ such that
+$(\psi_{v,i}/\psi_{v,j}\,\epsilon^{m_j-m_i})^{k_v}=1$ on inertia
+for all $i,j$. For every allowed polarization and polarized adjoint action
+$R$, let $z$ be a continuous cocycle whose pullback to $G_{L^+}$ is
+Bloch--Kato finite. The conclusion is one $X$ with $z(g)=R(g)X-X$ for
+\emph{every} $g$. The declared implication assumes
+\nolinkurl{LocalPublishedTheorems} and \nolinkurl{DenseThresholdMainCase}.
+The latter supplies this conclusion when $z$ vanishes on $r.I_p(u)$ and,
+locally at each $v$, subtracting one coboundary in an ordinary basis
+makes $z$ upper triangular everywhere and its diagonal zero on inertia.
+The polarization character obtained over $c.O$ agrees with that over
+$\mathbf Z_\ell$ after mapping into $\overline{\mathbf Q}_\ell$ by transitivity
+of the coefficient maps.
+\nolinkurl{OrdAt, OrdCoc, Par, OrdZero, AdZero},
+\path{TheoremsMuLinked/OrdZero.lean:22--34,56--72};
+\nolinkurl{adjointLiftingTheorem_of_locPrints_of_core},
+$D$\path{AdLOf.lean:104--150}.
+
+Away from $\ell$ take the primitive at the place provided by the finite
+condition. Upon conjugating the place by $\gamma$, the primitive becomes
+$R(\gamma)X-z(\gamma)$: expand $z(g\gamma)=z(\gamma(\gamma^{-1}g\gamma))$.
+On the specified inertia the determinant relations give
+$\mathrm{tr}(\rho(h)(\rho(g)-1))=0$ for every $h$. The matrices
+$\rho(h)$ span the full matrix algebra by irreducibility over the
+algebraically closed coefficient field. Testing against matrix units gives
+$\rho(g)=1$, hence $z(g)=0$ there. Above $\ell$ two embeddings over the
+base differ by an automorphism of its algebraic closure. The same
+calculation transports a finite primitive $x$ to
+$(R(\gamma)\otimes1)x-z(\gamma)\otimes1$: the conjugation intertwines
+the two local actions on simple tensors and hence on their sums.
+The open embedding matching inertia and cyclotomic characters and the
+finite-to-ordinary implication then give the second ordinary condition.
+This is the deduction at the root conditional on those local comparisons.
+\nolinkurl{adL_conj, adL_emb, adL_above, adL_away, adL_desc, adL_triv},
+$D$\path{AdLOf.lean:10--103};
+\nolinkurl{bkOrd}, \path{TheoremsMuLinked/GaloisRepresentationTypes/CornerStable.lean:373--436}.
+
+\paragraph{Finite local classes and the ordinary condition.}
+
+For an open embedding $\phi:G\hookrightarrow G_{\mathbf Q_\ell}$ write
+$dX(g)=R(g)X-X$. A continuous cocycle $y$ is finite if there is one
+$x\in V\otimes_{\mathbf Q_\ell}B_{\rm cris}$ such that
+$y(g)\otimes1=gx-x$ for every $g$. The ordinary conclusion is a single
+$X$ making $y-dX$ upper triangular at every $g$ in a flag basis, with
+zero diagonal on inertia (\nolinkurl{BkOrd}, \path{FreeFlag.lean:33--40};
+\nolinkurl{OrdinaryBlock.fin}, \path{CornerStable.lean:122--129}).
+
+\paragraph{Away from $\ell$.}
+For $g\in r.I_p(u)$ the determinant relation gives
+$\operatorname{tr}(\rho(h)(\rho(g)-1))=0$ for \emph{every} $h$.
+Indeed the relation tests $[g]-[1]$ against $[h]$ before specialization,
+and the trace of the specialized determinant is the matrix trace.
+Irreducibility gives full matrix span at the given point. Linearity
+therefore permits $\rho(h)$ to be replaced by $E_{ji}$, which reads
+off the $(i,j)$ entry of $\rho(g)-1$. Thus $\rho(g)=1$, and its
+adjoint action fixes every primitive on this inertia. Sources:
+\nolinkurl{Ws.Eb.relKill}, \path{EigenbasisLifts/RelKill.lean:13--46};
+\nolinkurl{Ws.Eb.trPlus}, \path{EigenbasisLifts/TrPlus.lean:10--42};
+\nolinkurl{adL_triv}, \path{AdLOf.lean:98--122}.
+
+\paragraph{Transport of a period primitive.}
+For $j:\Omega\hookrightarrow\overline{\mathbf Q}_\ell$ and number field
+$F$, let $K=\mathbf Q_\ell(j(F))$; adjoining images of a rational
+basis suffices. Restriction sends $G_K$ to the decomposition group of
+$A=\{x:\lVert jx\rVert\le1\}$ by
+$j(\operatorname{res}\sigma(x))=\sigma(jx)$. Normality gives the
+restriction, preservation of the norm puts it in the stabilizer, and
+injectivity of $j$ gives the product law. For continuity at $1$ take
+a finite extension fixed by a basic Krull neighbourhood. Stabilizers
+of the images of a finite basis have open intersection mapping into the
+neighbourhood. Restriction is injective by density of $j(\Omega)$.
+Conversely $g\in\operatorname{Dec}(A)$ preserves the balls
+$\lVert jz\rVert\le|\ell|^m$ by the valuation-ring test on $z/\ell^m$.
+It extends to the completion, fixes $\mathbf Q_\ell$ by density of
+$\mathbf Q$, and restricts back to the normal algebraic closure. It fixes
+$j(F)$. Compactness and Hausdorffness give a homeomorphism. To compare
+inertia, approximate each local integral element by $jx$ at distance
+$<1$ and apply the ultrametric inequality. To compare cyclotomic
+characters, compare actions on a primitive $\ell^m$th root for every $m$.
+Sources: \nolinkurl{CovariantDegrees.j_resE},
+\nolinkurl{CovariantDegrees.rHom}, \nolinkurl{CovariantDegrees.continuous_rHom},
+\path{IntegralCasts/CapelliIdentities/CovariantDegrees.lean:1232--1249},
+\path{CapelliIdentities/CovariantDegrees.lean:4809--6170};
+\nolinkurl{LB.denseRange_emb}, \path{NDLocA.lean:12--45};
+\nolinkurl{LB.KwF}, \path{NDLocB.lean:14--24};
+\nolinkurl{LB.rHom_injective}, \nolinkurl{LB.exists_ext},
+\nolinkurl{LB.rHom_surjective}, \path{NDLocC.lean:87--184};
+\nolinkurl{LB.eDec}, \path{NDLocD.lean:21--35};
+\nolinkurl{de_ine}, \nolinkurl{de_cyc}, \nolinkurl{Loc.decEmb},
+\path{PadicHodgeTheory/DecEmb.lean:12--74}.
+
+The group of compatible global/local pairs $\operatorname{decJ}(j)$
+projects onto $G_K$ with inverse pairing a local automorphism and its
+restriction. Existence of a period primitive persists on restriction to
+an open subgroup. Conversely, if $f(h)=hx-x$ on a finite-index subgroup
+$H$, then $u=f-dx$ satisfies $u(gh)=u(g)$ for $h\in H$. On left
+cosets $u(gq)=u(g)+gu(q)$. For $S=\sum_{q\in G/H}u(q)$ this gives
+$[G:H]u(g)=S-gS$, so $x-S/[G:H]$ is a global primitive. Changing
+the embedding by $\gamma$ replaces the primitive by
+$(R(\gamma)\otimes1)x-c(\gamma)\otimes1$, by the cocycle identity.
+Sources: \nolinkurl{Af.decJ}, \path{BlochKatoSelmerVanishes.lean:119--128};
+\nolinkurl{Loc.decJFacts}, \path{DecJFacts.lean:5--50};
+\nolinkurl{bkAbove_avg}, \nolinkurl{Loc.bkAbove}, \path{BkAbove.lean:5--79};
+\nolinkurl{adL_above}, \path{AdLOf.lean:27--57}.
+
+\paragraph{Finite coefficient descent.}
+For compact Hausdorff $G$ and a continuous matrix representation over
+$\overline{\mathbf Q}_\ell$, take a countable family of finite extensions
+cofinal on finite sets of coefficients. To construct it, approximate an
+algebraic coefficient by an element of the embedded $\overline{\mathbf Q}$
+more closely than its distances to its other conjugates. Krasner's lemma
+puts it in the field of the approximation; use finite sets of approximants.
+The closed subgroups on which entries of both $r(g)$ and $r(g^{-1})$ lie
+in the respective field cover $G$. Baire gives one with interior; it is
+open and has finite index. Adjoining entries of coset representatives
+gives a finite extension $E_0$ containing all representation entries.
+Sources: \nolinkurl{CompactRepField.exists_mem_adjoin_simple},
+\nolinkurl{CompactRepField.exists_countable_family},
+\nolinkurl{CompactRepField.exists_finiteDimensional_entries_mem},
+\path{CompactGroupRepDefinedOverFiniteExtension.lean:14--119}.
+
+Write the period primitive as a finite sum $x=\sum_t A_t\otimes b_t$.
+Adjoin all entries of the $A_t$ to $E_0$ to obtain $E$, and choose an
+$E$-linear retraction $p:\overline{\mathbf Q}_\ell\to E$ of the
+inclusion $i$. Entrywise $p$ commutes with conjugation by $r(g)$.
+Thus $(p\otimes1)x$ is a primitive for $p y$, and $(i\otimes1)$
+takes it back to $x$. It follows that
+$i p y(g)\otimes1=y(g)\otimes1$. Tensoring with $1$ is injective:
+the nonzero $\mathbf Q_\ell$-algebra $B_{\rm cris}$ admits a linear
+functional taking $1$ to $1$. So $y$ itself descends, and continuity
+of $p y$ follows from the induced topology and $i p y=y$. All
+diagonal characters descend as entries. Sources:
+\nolinkurl{OrdinaryBlock.tmul_one_inj}, \nolinkurl{OrdinaryBlock.desc},
+\nolinkurl{OrdinaryBlock.bar}, \path{CornerStable.lean:196--201},
+\path{CornerStable.lean:209--345}.
+
+\paragraph{Rank-one and extension comparisons.}
+Write $H_f^1=Z_f^1/B^1$. Fix finite $E/\mathbf Q_\ell$ and a continuous
+character $\kappa$ of weight $w<0$ on an open inertia subgroup.
+The cyclotomic character has an element of infinite order on this
+inertia, so $\kappa$ is nontrivial. Multiplication by
+$\kappa(g)-1\ne0$ at one $g$ shows $H^0=0$ and $\dim_E B^1=1$.
+The rank-one filtration and the local dimension formula give
+\[
+ \operatorname{Fil}^0D_{\rm dR}=D_{\rm dR},\qquad
+ \dim_E H_f^1+\dim_E\operatorname{Fil}^0D_{\rm dR}
+ =\dim_E H^0+[G_{\mathbf Q_\ell}:\phi(G)] .
+\]
+De Rham admissibility and restriction of scalars give
+$\dim_E D_{\rm dR}=[G_{\mathbf Q_\ell}:\phi(G)]$. Hence $H_f^1=0$:
+every finite scalar cocycle is $g\mapsto(\kappa(g)-1)m$.
+Sources: \nolinkurl{Loc.z1fChar}, \path{ExistsNeOne.lean:31--106};
+\nolinkurl{Loc.charFil}, \path{CharFil.lean:193--232};
+\nolinkurl{Loc.bkDim}, \path{CocycleTransportH1fSurjective.lean:133--173}.
+
+For a continuous cocycle $c$ form $E_c=V\oplus E$ with
+$g(v,a)=(gv+a c(g),a)$. A $G$-equivariant injection $f:V\to W$
+induces an injection $E_c\to E_{fc}$ by $(v,a)\mapsto(fv,a)$.
+If $W$ is crystalline on an open normal subgroup $U$ and $fc$ is
+finite, the extension criterion gives crystallinity of $E_{fc}$ on $U$.
+Closure under subrepresentations gives this for $V$ and $E_c$; the
+criterion gives finiteness of $c$. Applied to a stable matrix corner
+this permits entry evaluation in its rank-one quotient. On the trivial
+diagonal character, a finite cocycle vanishes on inertia: its extension
+is crystalline, the filtration has steps $\mathrm{Fil}^0=D$,
+$\mathrm{Fil}^1=0$, and trivial inertia on the extension evaluated
+at $(0,1)$ forces $c(g)=0$. Sources: \nolinkurl{Th.z1fSub},
+\path{ContActionSub.lean:58--100}; \nolinkurl{OrdinaryBlock.entry},
+\path{CornerStable.lean:72--93}; \nolinkurl{Loc.z1fUnr},
+\path{PadicHodgeTheory/ExistsIntBasis.lean:303--375};
+\nolinkurl{Loc.crWt0}, \path{WtMatFix.lean:204--265}.
+
+The triangular-to-crystalline step here takes $A=E$ and $\pi=1_E$ on
+$U$. Write the action in blocks $(M_0,b;0,k)$ with $k$ the last
+character. By induction the top block is crystalline. The extension
+cocycle is $c(g)=b(g)/k(g)$ for $V_0\otimes k^{-1}$, by block
+multiplication. The twist is crystalline, and its flag factors have
+weights $w_i-w_{\rm last}>0$. The pairwise hypothesis excludes the
+cyclotomic character among them. A nonzero equivariant functional to
+the cyclotomic line would descend nontrivially from the first flag
+quotient on which it is nonzero. Thus the twisted dual invariants
+vanish. The positive-weight comparison makes $c$ finite, and the
+extension criterion completes the induction. For a finite algebra over
+$E$, powers of the nilpotent kernel of $\pi:A\to E$ refine each flag
+quotient into residual scalar factors. For the full crystalline column
+space $V$ restricted to $\mathbf Q_\ell$, evaluation embeds the matrix
+space into $V^*\otimes_{\mathbf Q_\ell}V$. Stability under dual, tensor,
+and subrepresentation gives its crystallinity. Sources:
+\nolinkurl{Loc.prC}, \nolinkurl{DualInvariantFiltration.key},
+\path{SnocZeroLastCoordinateLast.lean:53--146},
+\path{SnocZeroLastCoordinateLast.lean:217--352};
+\nolinkurl{OrdinaryBlock.crOn_ad}, \path{CornerStable.lean:96--120};
+\nolinkurl{Loc.isCrys_isDR_internalHom}, \path{AdmHom.lean:18--27},
+\path{AdmHom.lean:77--86}, \path{AdmHom.lean:108--120}.
+
+\emph{Proof boundary.} The comparisons used in these deductions are
+proved in Lean; their foundational period-ring and cohomological
+arguments are not reproduced here. With prefix \nolinkurl{UpperTheory.V.Loc},
+the seven comparison roots and their inclusive core line counts are
+\nolinkurl{crExt} (crystallinity of a rank-one quotient extension
+equivalent to finiteness of its twisted cocycle, 18,598,
+\path{MatrixExtendByZeroApply.lean:201--273}),
+\nolinkurl{prF} ($Z_f^1=Z^1$ for a continuous positive representation
+with zero cyclotomically twisted dual invariants, 20,759,
+\path{PrF.lean:7--23}), \nolinkurl{bkDim} (11,421),
+\nolinkurl{charFil} (16,908), \nolinkurl{crWt0} (16,171),
+\nolinkurl{isCrys_isDR_sub_quot} (admissibility under equivariant
+injections and surjections, 13,208, \path{AdmSub.lean:105--129}),
+and \nolinkurl{isCrys_isDR_internalHom} (16,296).
+The union of these seven inclusive cones has 26,405 core lines.
+
+\paragraph{Ordinary tangent count.}
+The precise upper bound concerns a trace image. For a fixed Taylor--Wiles
+system $T$ with $q$ auxiliary places, integral point $y$, total local degree
+$d$, $Q=|O/\mathfrak m|$ and $b=nd+nq$, write
+\[
+ S_{m,N}=\{g\mapsto\mathrm{tr}(z(g)\rho_{m,N}(g)):\ 
+                 z\in\mathrm{Sel}_{m,N}\}.
+\]
+The set on the right is taken over locally constant polarized cocycles
+vanishing on marked inertia and satisfying the local ordinary conditions.
+The conclusion of \nolinkurl{b1absO} is
+$\exists C_*,\ \forall m,\ \forall N\gg_m0,\quad
+ S_{m,N}\text{ finite},\ |S_{m,N}|\le Q^{mb+C_*}$.
+Its hypotheses include $\ell\ne2$, the system with degree $d$ and
+subgroup $D_0$, \nolinkurl{PhiCond}, a nontrivial local cyclotomic value
+at each $v$, triviality of $y.\rho$ on the prescribed \nolinkurl{PL}
+intersection, $y.\mathrm{N4}(D_0)$, distinct split auxiliary eigenvalues
+and the integral trace detection condition \nolinkurl{DetO}.
+\nolinkurl{Pt.Sel, Pt.trFun, Pt.B1},
+\path{TheoremsMuLinked/OrdinaryHeckeAlgebraIntegral.lean:52--66};
+\nolinkurl{b1absO}, $C$\path{ResidualRepOne.lean:44--82};
+\nolinkurl{DetO}, $C$\path{DualPair.lean:113}.
+
+Here is the step that makes the precision quantifier work.
+Put $t={n\choose2}$ and let $d_v$ sum to $d$. Take the global invariant
+and dual bounds $c_1,c_2$, the distinguished auxiliary bound $c_0$, the
+ordinary local constants $C_v$ and the split auxiliary constants $A_j$
+\emph{before} choosing $m$. After $m$ is fixed intersect the two eventual
+level conditions for dual cocycles and the auxiliary Frobenius tests.
+At such a level the one-level product inequality bounds
+$|S_{m,N}|Q^{u}$, where $u=m(n+t)\#\{v\}+mtd$, by $Q$ to the power
+\[
+ c_1+c_2+\sum_v\{m(n+t)(1+d_v)+C_v\}+c_0+\sum_{j=1}^q(mn+A_j).
+\]
+Subtracting $u$ gives $mb+C_*$ with
+$C_*=c_1+c_2+c_0+\sum C_v+\sum A_j$. Cancellation is valid since $Q>0$.
+The one-level argument uses the ordinary local subgroup generated by
+coboundaries and the triangular subgroup, the cocycles vanishing on
+the marked inertia at tame places, and the full cocycles at auxiliary
+places. These lie between coboundaries and cocycles, so the given global
+duality formula applies. Inclusion of the trace image is what permits the
+last cardinality bound. \nolinkurl{oneLevelO}, $C$\path{OneLevelO.lean:52--134};
+\nolinkurl{sum_exp, b1absO}, $C$\path{ResidualRepOne.lean:25--33,44--129}.
+
+\emph{Statement only (project proof in Lean).}
+In particular the dual estimate still needed in this reduction asserts,
+under the odd sign at conjugation, \nolinkurl{PhiCond}, the prescribed
+\nolinkurl{PL} triviality and \nolinkurl{DetO}, that there is a fixed
+$c_2$ such that, for each $m$ and all sufficiently large $N$, any finite
+space of locally constant cocycles of the specified twisted adjoint
+action $R'$ has
+\[
+ |\{z\in Z^1_{\rm lc}(R'):\ 
+     \forall j\ \exists Y_j,\ z(s)=R'(s)Y_j-Y_j
+                  \ (s=\phi_{N,j},\tau_{N,j})\}|
+ \le |B^1(R')|Q^{c_2}.
+\]
+The same $Y_j$ is required at the two generators. Its source first descends
+a cocycle normalized at conjugation and then bounds integral twisted
+cocycles with vanishing traces against all powers of the test matrices.
+The latter uniform bound and the construction of the weight and auxiliary
+derivations on the same Hecke level have no complete hand proof here.
+\nolinkurl{dualNO}, $C$\path{DualNO.lean:50--55,95--144}
+(cone 2,410). The containing \nolinkurl{b1absO} cone is 4,280.
+The separate application \nolinkurl{core_alt_bis}, $D$\path{ThFinal.lean:17},
+still requires the ordinary vanishing assertion for all the points specified
+above (cone 375,722). Its two-sided count is applied in
+\nolinkurl{core_o_of_literal_automorphy_n}, $D$\path{TCoreO.lean:129--159},
+and \nolinkurl{ordinary_vanishing_two_of_printed_hida},
+$D$\path{TOrdVan.lean:159--192}.
+
+\paragraph{Unlinked flag: two deductions at the exceptional place.}
+First suppose an adjacent cyclotomic extension supplies
+\nolinkurl{UnitStep} in a triangular rank-three representation over a
+coefficient DVR $O$. Write $A=O/(\ell^k)$, $a=|A|$, $k>0$, and $d$ for
+the local degree. In the space $Z_F$ of upper triangular ordinary
+cocycles let $W$ be the subgroup whose two adjacent diagonal functions
+are equal everywhere. Suppose $|W|\ge a^{6+3d}$ and at every $k$ a
+cocycle $y\in Z_F$ has adjacent diagonal difference $\bar c$ at some
+$s_0$, for a fixed $0\ne c\in O$. For each
+$b\in(\bar c)\subset A$ choose $r_b\bar c=b$. Then
+$(w,b)\mapsto w+r_by$ is injective: the adjacent diagonal difference
+at $s_0$ recovers $b$, after which subtraction recovers $w$.
+Since $O/(c)$ surjects onto $A/(\bar c)$, we obtain the uniform estimate
+\[
+ a^{7+3d}\le |O/(c)|\,|Z_F|.
+\]
+This is the extra local power \emph{before} adding the unrestricted
+matrix coboundaries. The two supplier statements here are the lower bound
+on $W$ and existence of $c,y$ from the local Euler and generation data,
+triangularity, $(\ell:O)\ne0$ and \nolinkurl{UnitStep}. The group is
+compact and the coefficients carry the specified $\ell$-adic structure.
+\nolinkurl{locHigh}, $J$\path{CrystallineCardinalities/LocHigh.lean:18--87}
+(cone 1,109); \nolinkurl{sel_cut,selLow},
+$J$\path{CrystallineCardinalities/SelLow.lean:44--52,60--98}.
+
+The cochain used for \nolinkurl{UnitStep} has a prescribed sign. For an
+open embedding of the local group in $G_{\mathbf Q_\ell}$, finite
+$E/\mathbf Q_\ell$ and a finite cyclotomic cocycle $\kappa$, restrict the
+unramified additive degree $d_0$ with $d_0(\mathrm{Frob})=1$. Some
+positive power of Frobenius belongs to the open image, so $d_0$ there is
+nonzero. For a $\mathbf Q_\ell$-basis $e_i$ of $E$, the trivial-action
+cocycles $d_0e_i$ are finite by the unramified comparison. Pair each with
+$\kappa$ using the dual-coordinate pairing $E(1)\times E\to\mathbf Q_\ell(1)$.
+The finite-class orthogonality in the assumed Bloch--Kato record supplies
+continuous $f_i$ with
+$\epsilon(s)f_i(t)-f_i(st)+f_i(s)=d_0(t)\kappa_i(s)$.
+Hence $u=d_0$ in $E$ and $\beta=\sum_i f_ie_i$ satisfy
+$\beta(st)=\beta(s)+\epsilon(s)\beta(t)-\kappa(s)u(t)$.
+This deduction uses the comparison of the finite local conditions with
+those in the record and the unramified criterion, including on the
+open subgroup. \nolinkurl{exists_deg,gk_case,cupUnr},
+$J$\path{CrystallineCardinalities/CupUnr.lean:13--22,43--97,101--135}
+(cone 24,143).
+
+\paragraph{From counting to two integral tangent vectors.}
+Here the passage from finite levels to characteristic zero admits a
+self-contained module argument. Assume $O$ a coefficient DVR with
+$(\ell:O)\ne0$, $R$ a Noetherian commutative $O$-algebra, $\xi:R\to O$
+an $O$-algebra point and $T\subset R$. Suppose the number of $O$-linear
+$\xi$-derivations to $A_k=O/(\ell^k)$ killing $T$ is at least
+$|A_k|^2/C$ for all $k>0$, with $C>0$ fixed. Then there are two
+$O$-linearly independent such derivations to $O$.
+Form $M=R/\langle T,ab-\xi(a)b-\xi(b)a\rangle_O$ as an $O$-module.
+Derivations with these conditions are exactly the linear maps from $M$.
+In $M$ the class of $1$ vanishes (take $a=b=1$), and so does the square
+of $\ker\xi$ as an ideal. The finite ideal generators of $\ker\xi$
+therefore span $M$ over $O$: replace each coefficient $r$ by $\xi(r)$,
+since their difference lies in the kernel. Decompose $M$ over the DVR
+as a free summand of rank $s$ and cyclic torsion summands $O/(a_i)$.
+In $A_k$, multiplication by $a_i$ has kernel and cokernel of equal order.
+The cokernel is a quotient of $O/(a_i)$, so the possible images of the
+torsion generators number at most $C'=\prod_i|O/(a_i)|$ independently of
+$k$. If $s\le1$, there are at most $C'|A_k|$ maps. Since $|A_k|$ tends
+to infinity this contradicts the lower bound. Projection on two different
+free coordinates gives the independent integral derivations. The proof
+takes no inverse limit of choices. \nolinkurl{tors_card,hom_alt,rel_fin,rankTwo},
+$J$\path{CrystallineCardinalities/RankTwo.lean:9--96,98--165,177--229}.
+
+\paragraph{The flag obligation that remains.}
+On an even level, for each linked frame with \nolinkurl{Ok}, \nolinkurl{Big}
+and its \nolinkurl{SeedClause}, the assertion \nolinkurl{UnlPt} quantifies
+over the specified integral rank-three realizations with prescribed inertia,
+their compatible Galois realization irreducible on all open subgroups, and
+each frame place $v$ at which it is potentially crystalline. It requires
+\emph{for every ordered pair} $i,j$ an element $g\in\Phi.G_v$ such that
+\[
+ \psi_{v,i}(g)\ne\psi_{v,j}(g)\,\epsilon(k.j_v(g))
+ \quad\text{after the specified coefficient embedding.}
+\]
+The independent derivations constructed from a hypothetical link must
+annihilate the entire weight-zero algebra on the \emph{same} component
+before the type-I grading gives a contradiction. In particular the
+annihilator, simple-root selection and the local-to-global lower count at
+that point remain project inputs. For the final comparison of flags the
+matching argument itself is elementary. In one triangular basis with
+diagonal $D_b$, suppose none of the frame characters $\psi_j$ agrees
+identically with $D_b$. Choose $g_j$ giving a mismatch for each $j$.
+The $bb$-entry of the ordered product
+$\prod_j(T(g_j)-\psi_j(g_j)I)$ is the product of three nonzero scalars.
+The defining ordinary product is zero, a contradiction. This gives a
+single matching character per row, sufficient for the application, even
+without a fixed permutation in advance. Transport to a frame place and
+restriction of potential crystallinity are additional hypotheses of the
+comparison in the endpoint proof.
+\nolinkurl{UnlPt}, $J$\path{WeightInfinitesimalCharacters/AdmissibleUnitaryThreePoint.lean:20--27};
+\nolinkurl{LinkedUnlE,UnlEndLogNorm}, $J$\path{LogarithmicNormBounds/LinkedUnlEOf.lean:12--30};
+\nolinkurl{flag_match,unlEnd3E}, $J$\path{LogarithmicNormBounds/BlockValuationRep.lean:27--63,234--346};
+\nolinkurl{linkedUnlE_alt}, $D$\path{LinkedUnlE.lean:43--48}
+(cone 1,111,243). This cone and the ordinary tangent input are at callers
+outside the declared root's 38,519-line cone. The counts are inclusive
+core declaration spans and overlap.
+

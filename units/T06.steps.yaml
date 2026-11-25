@@ -1,0 +1,169 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "T06",
+  "edition_sha256": "acb28b677801f209c5264a118fbf03f52a3fd6dc255cd3e1ae2fbb8d05bb94c2",
+  "note_sha256": "8c932427ad0ed1983696f8ee021d5b008ee274051793615b5571fdef79bfac36",
+  "statement_sha256": "f58aa26d2a2e5fae1f15fc48940923471bae4dbb0af338c6cac7f675b4d47c88",
+  "sources": [
+    {
+      "path": "notes/units/T06_round4.md",
+      "sha256": "8c932427ad0ed1983696f8ee021d5b008ee274051793615b5571fdef79bfac36"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The first membership package supplies the standard-lattice mass ratio.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: compatibleSystem_member_hypotheses"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.Fc.StageOneU.member_bundles_large_unramified_exponents_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MemberBundlesLargeUnramifiedExponents.lean",
+          "line0": 34,
+          "line1": 49
+        }
+      ],
+      "source": "notes/units/T06_round4.md",
+      "anchor": "Fix the third-place unitary input, rationality for the",
+      "source_lines": [
+        26,
+        26
+      ],
+      "claim_sha256": "446a2ab8796fbee45b2d14d2ff1dbb2c8dd836711e3036078146a3ec08d096cc",
+      "passage_sha256": "c0af9918b2e057c0f1dc970e5888f8936b42598b39daf7de6d69a89c7d51c7a6",
+      "sha256": "21e6269e5b07f9ad1953b0274b8091e100bdd4b9a269910ff327464a7d191029",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The rationality input provides rational weights and hence the weight-one saturation needed for base membership.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: row rationality and rational-weights theorem"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.Fc.StageOneU.member_bundles_large_unramified_exponents_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MemberBundlesLargeUnramifiedExponents.lean",
+          "line0": 47,
+          "line1": 58
+        }
+      ],
+      "source": "notes/units/T06_round4.md",
+      "anchor": "With the second package, combine row rationality with",
+      "source_lines": [
+        30,
+        30
+      ],
+      "claim_sha256": "f7701f231fea016227cfcebbcfe2c2b306ae171bb4cc22eb11a509b4365f6725",
+      "passage_sha256": "7e8eb76bc35863e8040c9646152c2e9d911c8748b5a40a223c522a7abffc5c0b",
+      "sha256": "937062866c9cd7eabac146ce12c25a22bd5a835a2cd1f1014531b1f6414108ee",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Base membership passes to the extension with its eventually large retwisting predicate, where the Weil block supplies linked bundles.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "S2",
+        "input: multiplicative closure, retwisting and nonempty Weil block"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.Fc.StageOneU.member_bundles_large_unramified_exponents_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MemberBundlesLargeUnramifiedExponents.lean",
+          "line0": 59,
+          "line1": 63
+        }
+      ],
+      "source": "notes/units/T06_round4.md",
+      "anchor": "The third-layer Galois construction supplies the fields required",
+      "source_lines": [
+        34,
+        34
+      ],
+      "claim_sha256": "dc7ae2ed5524860bcb28eee52f025f3106452f0c6780a452ce192190158ea16e",
+      "passage_sha256": "a8738b21904d1adc8c961a164479b9df673baaf94525d602cf1b8dd1ea39207d",
+      "sha256": "f347653629864ed79b6b7e36462d70229cdcd41297bb89695c5d99010d67d630",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "90b4534b221b524cfbd7982a4fe9d21bc6a7943c07af04144f56235508bd2bc5",
+      "sources": [
+        {
+          "path": "notes/units/T06_round4.md",
+          "sha256": "e6eae6f69f896c7d7c3449f0c3119b71646664e9f81aed661da13b7c15043d7d"
+        }
+      ],
+      "steps": {
+        "S1": "7a48e7abd9d9baa930ed4f25c842f4139b308e8dd22f4a66a7ecd48bb6eb245c",
+        "S2": "bce74ea13d4785954bcb54c6647d6ef04c93afd1526bca0cf507b02a952fdaa5",
+        "S3": "bb8a73c75e8864efb72f1240898826a4143987e60f7eccd502cff0bb3e766c8a"
+      },
+      "step_texts": {
+        "S1": "The first membership package supplies the standard-lattice mass ratio.",
+        "S2": "The rationality input provides rational weights and hence the weight-one saturation needed for base membership.",
+        "S3": "Base membership passes to the extension with its eventually large retwisting predicate, where the Weil block supplies linked bundles."
+      }
+    },
+    {
+      "edition_sha256": "8fa29851cd591d729cb69cff794fd21baab6dc0490e0507970a49784bc489505",
+      "sources": [
+        {
+          "path": "notes/units/T06_round4.md",
+          "sha256": "e6eae6f69f896c7d7c3449f0c3119b71646664e9f81aed661da13b7c15043d7d"
+        }
+      ],
+      "statement_sha256": "f58aa26d2a2e5fae1f15fc48940923471bae4dbb0af338c6cac7f675b4d47c88",
+      "steps": {
+        "S1": "034fdf0e4e9e658c88e224ea769642c7dcdafcfb45526280f470a7b42b6e6afe",
+        "S2": "3327d7c51ab1a57bafaa288db67441d831b66a9f18558b541c515801a6e8d37c",
+        "S3": "f347653629864ed79b6b7e36462d70229cdcd41297bb89695c5d99010d67d630"
+      },
+      "step_texts": {
+        "S1": "The first membership package supplies the standard-lattice mass ratio.",
+        "S2": "The rationality input provides rational weights and hence the weight-one saturation needed for base membership.",
+        "S3": "Base membership passes to the extension with its eventually large retwisting predicate, where the Weil block supplies linked bundles."
+      },
+      "step_passages": {
+        "S1": "b10378f64fb0622456860f7ea5880e494fd372c284a374e603e3188177aac60f",
+        "S2": "75f4496f259632504e9700d1746e977a98457cfe67b898c8e4718836180cc51c",
+        "S3": "a8738b21904d1adc8c961a164479b9df673baaf94525d602cf1b8dd1ea39207d"
+      }
+    },
+    {
+      "edition_sha256": "b0048b484338b16ae39c0cd61c4431f6ec397bba9a6537db701ffb633f3784b2",
+      "sources": [
+        {
+          "path": "notes/units/T06_round4.md",
+          "sha256": "8150b8ff1b685f919506ebffcde0bee37016b7332c3ad2fd9b8cb58f86b1d154"
+        }
+      ],
+      "statement_sha256": "f58aa26d2a2e5fae1f15fc48940923471bae4dbb0af338c6cac7f675b4d47c88",
+      "steps": {
+        "S1": "034fdf0e4e9e658c88e224ea769642c7dcdafcfb45526280f470a7b42b6e6afe",
+        "S2": "3327d7c51ab1a57bafaa288db67441d831b66a9f18558b541c515801a6e8d37c",
+        "S3": "f347653629864ed79b6b7e36462d70229cdcd41297bb89695c5d99010d67d630"
+      },
+      "step_texts": {
+        "S1": "The first membership package supplies the standard-lattice mass ratio.",
+        "S2": "The rationality input provides rational weights and hence the weight-one saturation needed for base membership.",
+        "S3": "Base membership passes to the extension with its eventually large retwisting predicate, where the Weil block supplies linked bundles."
+      },
+      "step_passages": {
+        "S1": "b10378f64fb0622456860f7ea5880e494fd372c284a374e603e3188177aac60f",
+        "S2": "75f4496f259632504e9700d1746e977a98457cfe67b898c8e4718836180cc51c",
+        "S3": "a8738b21904d1adc8c961a164479b9df673baaf94525d602cf1b8dd1ea39207d"
+      }
+    }
+  ]
+}

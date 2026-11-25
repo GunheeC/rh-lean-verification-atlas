@@ -1,0 +1,178 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "P027",
+  "edition_sha256": "414cb81eb735f138e142e5923338b8e122bc65dbea7fe5f31403bbc39b2c3788",
+  "note_sha256": "302bc06e5b1f9f79c6d03d9caed63f0682fd272c756650fa6206cf9d7fe3f82d",
+  "statement_sha256": "5279258277fbd08e7abb5a1dfacc1dad5238c9029dbaf414a15fced735062bcb",
+  "sources": [
+    {
+      "path": "notes/units/P027.tex",
+      "sha256": "302bc06e5b1f9f79c6d03d9caed63f0682fd272c756650fa6206cf9d7fe3f82d"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The length of the negative cotangent quotient is the sum of its elementary-divisor exponents.",
+      "kind": "computation",
+      "uses": [
+        "standard: Smith normal form"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Alg.M.main_holds",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/MainCotSpan.lean",
+          "line0": 36,
+          "line1": 41
+        }
+      ],
+      "source": "notes/units/P027.tex",
+      "anchor": "\\(-1\\) is free of rank \\(r\\). Smith reduction of the first list gives",
+      "source_lines": [
+        7,
+        50
+      ],
+      "claim_sha256": "33c83d4b0de24bd14cc5a58ff17f4ce61567eb600c1c56ae092420e1c2bf42a8",
+      "passage_sha256": "65987e2aa309e733da05e207dcb707157d8c4d32b22bad18b5eb7f581622a3ea",
+      "sha256": "8984b0aef387dd07a2d0733429de8649df25a39da1e421571308a18b9f563d98",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The transverse slices are zero-dimensional and give a finite orbit cover under the degree-zero finiteness assumption.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: transverse derivation bound"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Alg.M.main_holds",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/MainCotSpan.lean",
+          "line0": 65,
+          "line1": 66
+        }
+      ],
+      "source": "notes/units/P027.tex",
+      "anchor": "one-dimensional torus orbits are zero-dimensional by the derivation",
+      "source_lines": [
+        7,
+        50
+      ],
+      "claim_sha256": "e0f77f19ef9beb4a5104178f3bc88ef3bb855015b81ade63de0bf95bac2935f8",
+      "passage_sha256": "65987e2aa309e733da05e207dcb707157d8c4d32b22bad18b5eb7f581622a3ea",
+      "sha256": "7d58ee5f05a02333a334d692befe965266bce9e5a5e2b7303d301fa88d68d1e1",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The leading squared equations give the lower Euler-characteristic bound with factor two to the sum of the two ranks.",
+      "kind": "inequality",
+      "uses": [
+        "S1",
+        "input: mixed Euler-characteristic estimate"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Alg.M.main_holds",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/MainCotSpan.lean",
+          "line0": 65,
+          "line1": 70
+        }
+      ],
+      "source": "notes/units/P027.tex",
+      "anchor": "factor \\(1-Y^2\\). Nonnegativity of the remaining Euler characteristic",
+      "source_lines": [
+        52,
+        62
+      ],
+      "claim_sha256": "2bec4fc970b4ee3247a87c6013d936e024c04dc3f310446eb3a30e4b6386777c",
+      "passage_sha256": "39f9caff9419fa6c3c564aea73fe2436253e9fbee09c271d6f0f0f06cc8d6862",
+      "sha256": "17d78ca41f122d3398d34968ebd52e4d9f9dc1b10fd5d0101d3e3154d89513fa",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "Only horizontal filtration factors contribute valuations of the chosen invariant to the upper bound.",
+      "kind": "inequality",
+      "uses": [
+        "S2",
+        "input: prime filtration"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Alg.M.main_holds",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/MainCotSpan.lean",
+          "line0": 65,
+          "line1": 70
+        }
+      ],
+      "source": "notes/units/P027.tex",
+      "anchor": "\\(v(\\xi(a))\\). The one-sided condition places the contributing",
+      "source_lines": [
+        64,
+        80
+      ],
+      "claim_sha256": "e9e34a982cbbc8abdddbfd869603c268fc668193b1f3bfeaf552ec300de70452",
+      "passage_sha256": "7795d582e9987fa2e3c6a13015b48baabdbbdde225a87d20c3c90776dcc1a74a",
+      "sha256": "3ef35f5b2d3f3c83f43c244bf34641fb66923b1b7c0fb38945bc4e5ae436512e",
+      "ai_review": []
+    },
+    {
+      "id": "S5",
+      "status": "active",
+      "claim": "Cancelling the common power of two leaves twice the sum of the orbit valuations.",
+      "kind": "assembly",
+      "uses": [
+        "S3",
+        "S4"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Alg.M.main_holds",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/MainCotSpan.lean",
+          "line0": 65,
+          "line1": 70
+        }
+      ],
+      "source": "notes/units/P027.tex",
+      "anchor": "The values are nonnegative, so repeated restrictions cause no problem.",
+      "source_lines": [
+        64,
+        80
+      ],
+      "claim_sha256": "a33bbf7b6796ff8b798be29a07afd9ad51c9b6844fe519ed7e3d17927775a085",
+      "passage_sha256": "7795d582e9987fa2e3c6a13015b48baabdbbdde225a87d20c3c90776dcc1a74a",
+      "sha256": "31e0d2bee0f1cd831d057e7e249114888e3c85ee3e0b4b8acce2d3fb167a2384",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "4bde26f86ab4e8b320ce46286c698b8cc3da53bde1ced745c224e3fa7117c7fb",
+      "sources": [
+        {
+          "path": "notes/units/P027.tex",
+          "sha256": "302bc06e5b1f9f79c6d03d9caed63f0682fd272c756650fa6206cf9d7fe3f82d"
+        }
+      ],
+      "steps": {
+        "S1": "94fcb0647ab6cfbdf424a1cb3c62448cdf3759ad0124ee1eba74b400893eca05",
+        "S2": "e673ffe963b8808438adb2ee5ffcfbdc45caea3f4a071e0beb554337c6862b5b",
+        "S3": "24089f6f1879d28051990f288804439dbf6886597ae62fd28be4509d246bb5d8",
+        "S4": "c668055144220b0aa165583d45f33a71133c6398332efdf2bedc0139b9286ce3",
+        "S5": "9dd801426076da9e6c450c0e9b19805de982d9dfb823532c8dbba602f3b06969"
+      },
+      "step_texts": {
+        "S1": "The length of the negative cotangent quotient is the sum of its elementary-divisor exponents.",
+        "S2": "The transverse slices are zero-dimensional and give a finite orbit cover under the degree-zero finiteness assumption.",
+        "S3": "The leading squared equations give the lower Euler-characteristic bound with factor two to the sum of the two ranks.",
+        "S4": "Only horizontal filtration factors contribute valuations of the chosen invariant to the upper bound.",
+        "S5": "Cancelling the common power of two leaves twice the sum of the orbit valuations."
+      }
+    }
+  ]
+}

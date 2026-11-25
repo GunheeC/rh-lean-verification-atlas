@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "Cite the atlas edition, unit ID, Lean declaration and note edition. AI-drafted; maintained by Gunhee Cho. The release tag resolves to the exact public Git commit. The distributed release notes give its full hash. AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved"
+title: "RH Lean Verification Atlas (AI-drafted; maintained by Gunhee Cho)"
+type: dataset
+authors:
+  - family-names: Cho
+    given-names: Gunhee
+version: "0.1.0"
+date-released: 2026-11-25
+# Git revision naming the release commit. Resolve with git rev-parse 'v0.1.0^{commit}'.
+commit: "v0.1.0"
+repository-code: "https://github.com/GunheeC/rh-lean-verification-atlas"
+url: "https://github.com/GunheeC/rh-lean-verification-atlas/releases/tag/v0.1.0"
+license:
+  - CC-BY-4.0
+  - MIT
+abstract: "AI-drafted; maintained by Gunhee Cho. A reading index of claims in a pinned Lean development, written expositions, checker evidence and open questions. AUTHORS.md identifies contributions. No human check has been submitted."

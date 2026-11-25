@@ -1,0 +1,37 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% RH Notes blueprint source excerpts for Z1.3.06
+% Verbatim excerpts in the notation of the parent blueprint. The labelled editions and source ranges appear below.
+% See the unit YAML for the current proof status. Earlier-round passages retain their original wording.
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+\noindent\nolinkurl{UpperTheory.V.Z.Kato.K5.smoothedZetaClass_hodgeTateLaw} --- in-repo constant (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/SmoothedZetaClasses/SmoothedZetaClassHodgeTateLaw.lean:4}); not compared.\par
+\noindent\nolinkurl{UpperTheory.Kd.K4.kato_eulerSystem_integrality} --- in-repo constant (\path{Development/AutomorphicArithmetic/Foundations/IwahoriReduction/NormProducts/AdmissibleWeightedDataMonoCoef.lean:208}); not compared.\par
+\noindent\nolinkurl{UpperTheory.V.Z.Kato.Joint.kato_global_unit_law_of_smoothed_classes} --- in-repo constant (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/FrobeniusHodgeTateLaws/KatoGlobalUnitLawOfSmoothedClasses.lean:8--10}); not compared.\par
+\noindent\nolinkurl{GlobalTheory.T.exists_admissible_hecke_projection_nonvanishing} --- in-repo constant (\path{Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsAdmissibleHeckeProjectionNonvanishingStatement.lean:13--49}); not compared.\par
+\noindent\nolinkurl{UpperTheory.Kd.C7.pLocu} --- in-repo constant (\path{Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/NormFactorLeOne.lean:162--164}); not compared.\par
+% End of atlas edition annotation.
+
+\section*{Z1.3.06. Compatibility of the local and global cocycles}
+
+% Parent source SHA-256: 1af64922b98ed2310744411b1f18b25cc426c97220646321471836e1a3a409d6
+% blueprint/ch_P.tex lines 12355 through 12369; r5:Z1.3.06
+\subsection{Z1.3.06. Specialize the local test to the global cocycle}\label{r5:Z1.3.06}
+Fix a prime $\ell$, an algebraic closure $\Omega$ of $\mathbb Q$, a coefficient-field identification $\iota$, an integer $e\ge1$ as required by the ordinary normal form, the finite set $S$, valuation ring $A$, representation $W$ and form $g$ of weight $2e+1$. Retain both the ordinary normal form and the unramified-source hypotheses. The claim holds for any common predicate $\mathrm{Pin}$. Its global premise produces one ordered tuple
+\[
+ (c,y,S',\nu,\chi,Z)
+ \quad\text{with}\quad
+ \mathrm{Sys}(W,c,y,S'),\quad\mathrm{IwSys2}(c,A,\nu,Z),\quad
+ \mathrm{SpLink}(A,e,\chi,Z,y),\quad\mathrm{Pin}(e,A,W,c,\nu,\chi,Z).
+\]
+Its local premise quantifies universally over all six entries of precisely this tuple. Apply that premise at these witnesses with the same four proofs. It supplies an $s$ in inertia with cyclotomic character $1$, $W(s)_{11}=1$ and $y(s)_1\ne0$ (indices $0,1$). Keep $c,y,S'$ and the first proof. This proves the existential assertion $\mathrm{ZetaSysUr2}$, including the tame condition for every eligible $w\notin S'$ and every admissible surjective character. The dependence of the local test on $y$ comes through the specialization link, even though $y$ is absent from the arguments of $\mathrm{Pin}$.
+
+{\footnotesize \nolinkurl{GlobalTheory.KZ.zetaSysU_of_halves2}, \nolinkurl{ExistsZetaEulerSystemIwasawaData}, \nolinkurl{ZetaEulerSystemNonvanishing} (\nolinkurl{Development/AbelianVarietyTheory/Definitions/Foundations/ZetaElementsUnramifiedOrdinaryOfEulerSystemInert.lean}\allowbreak:13--41). \nolinkurl{GlobalTheory.KZ.Sys}, \nolinkurl{NzAt}, \nolinkurl{SpLink} (\nolinkurl{Development/AbelianVarietyTheory/Definitions/Foundations/IsLocallyConstantCycMod.lean}\allowbreak:13--19,32--38).}
+
+\emph{Complete for this implication.} [Hypothesis, discharged at the application:] for $\mathrm{Pin7}$ the global half is supplied by the smoothed integral classes, Hodge--Tate law and Hecke projection; the local half is $\mathrm{pLocu}$. Both are applied to the original datum in the final theorem. The global construction and local nonvanishing remain separate review units Z1.3.04--05.
+
+{\footnotesize \nolinkurl{UpperTheory.V.Z.Kato.Final.zetaUr} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/UnramifiedZeta/ZetaUr.lean}\allowbreak:9--12).}
+
+% blueprint/ch_P.tex lines 12656 through 12656; r6:review:Z1.3.06
+\phantomsection\label{r6:review:Z1.3.06} \emph{Original argument on p.~\pageref{r5:Z1.3.06}.} Z1.3.06 retains complete status for applying the universal local assertion to the six witnesses produced by the global assertion (\nolinkurl{zetaSysU_of_halves2}, \path{Development/AbelianVarietyTheory/Definitions/Foundations/ZetaElementsUnramifiedOrdinaryOfEulerSystemInert.lean:36--41}).
+

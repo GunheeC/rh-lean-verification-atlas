@@ -1,0 +1,102 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "P028",
+  "title": "The lower bound from integral derivations",
+  "track": {
+    "primary": "galois",
+    "secondary": []
+  },
+  "statement": "Let \\(O\\) be a discrete valuation ring with finite residue field, \\(A\\)\nan algebra graded by an abelian group, \\(x:A\\to O\\) a point vanishing on\n\\(A_j\\), and \\(F_i\\in A_j\\). Fix \\(0\\ne c\\in O\\). Suppose an\nadditive injection \\(D:M\\to\\operatorname{Hom}_O(A,O/(c))\\) kills all\n\\(F_i\\) at every value. Suppose each \\(D(\\mu)\\) is the reduction of an\n\\(O\\)-valued point derivation of weight \\(j\\) at \\(x\\). With the\nsaturated lattice as above,\n\\[\n \\operatorname{length}_O M \\le\n \\operatorname{length}_O(L_j/\\langle\\overline F_i\\rangle).\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Fix a DVR with finite residue field, a graded algebra, a marked point vanishing on the selected degree, elements $F_i$ in that degree and $c\\ne0$.",
+    "The additive injection into the dual modulo $c$ kills all $F_i$, and every value lifts to a point derivation of that weight."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.Alg.M.mprime_holds",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/CommutativeAlgebra/GradedModulesLength/Mprime.lean",
+      "line0": 38,
+      "line1": 80,
+      "sha256": "fc594b0a599a25f0fa093d8b84c44602c5cc37e4adf0ec73c2af9d87b5a64a19",
+      "dominated": 207,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "7.5 (pn:P028)",
+      "pages": [
+        75,
+        75
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/P028.tex",
+      "section": "pn:P028",
+      "pages": []
+    }
+  ],
+  "status": "Full",
+  "grade": "L2",
+  "reviews": [
+    "reviews/R20_review.md",
+    "reviews/R4_review_Z1Z3.md"
+  ],
+  "prerequisites": [],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [
+    {
+      "grade": "L2",
+      "review": "reviews/R20_review.md",
+      "lines": [
+        57,
+        57
+      ],
+      "scope": "R20 local implication under its stated premises, not its prerequisite cones.",
+      "verdict": "F: full derivation; yes"
+    },
+    {
+      "grade": "L1",
+      "review": "reviews/R4_review_Z1Z3.md",
+      "lines": [
+        43,
+        50
+      ],
+      "scope": "Statement comparison; the proof has qualifications.",
+      "verdict": "No statement mismatch reported"
+    }
+  ],
+  "paper_id": "P028",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "the-lower-bound-from-integral-derivations",
+  "aliases": [
+    "mprime_holds",
+    "P028 The lower bound from integral derivations"
+  ],
+  "background": [
+    "Point derivations",
+    "Saturated lattices and module lengths"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "7.5 (pn:P028)",
+    "pages": [
+      75,
+      75
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "summary": "Injectively represented integral point derivations that vanish on the chosen equations bound the length of a module by that of a cotangent-lattice quotient. This gives the lower comparison needed when an independent geometric or orbit count bounds the quotient from above."
+}

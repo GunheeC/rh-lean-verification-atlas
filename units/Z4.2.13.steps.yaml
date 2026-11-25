@@ -1,0 +1,190 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "Z4.2.13",
+  "edition_sha256": "030dd9033967889faa0cbf53cb6ee9bfa912cfc5dd13cc413ec0b3aec7796ff8",
+  "note_sha256": "830abc1c6c077d31c969b19c1f176cd7b20cbce84967ff5a2ab54a35b0bcc9a1",
+  "statement_sha256": "530d0beb4de89bcac94b766e60980113a272919f54d10d50ba03cd796362acc7",
+  "sources": [
+    {
+      "path": "notes/blueprint/Z4.2.13.tex",
+      "sha256": "830abc1c6c077d31c969b19c1f176cd7b20cbce84967ff5a2ab54a35b0bcc9a1"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The specified period of the transported curve is nonzero.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: tied curve and its period realization"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.L2.Ker.Base.thMoved_ne_zero",
+          "file": "Formalism/LocalToGlobal/KernelLattices/KernelLocalFactors/IsAdmissibleFlagPairOfUnitriangularLeftAutomorph.lean",
+          "line0": 251,
+          "line1": 262
+        }
+      ],
+      "source": "notes/blueprint/Z4.2.13.tex",
+      "anchor": "\\paragraph{Why the period cannot vanish.}\\label{r14:period}",
+      "source_lines": [
+        7,
+        18
+      ],
+      "claim_sha256": "75056c3e8cc9e5342ea046cb8865498297cd2c32a75854f771d3525c9e088c91",
+      "passage_sha256": "b02e8cd4b02d04de631e68a07c90f6d3ce3f1c4486cb695a1551e8c83b99f704",
+      "sha256": "23e5c59f602cd53247e3e09c6395a312d83403f125036ebae5577e71bee271c7",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The prescribed pairing takes integral values on the given lattice.",
+      "kind": "computation",
+      "uses": [
+        "input: arithmetic Hermitian pairing"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.hermitian_form_integral_values",
+          "file": "Formalism/LocalToGlobal/GlobalTheory/GL3/PThIndep.lean",
+          "line0": 11,
+          "line1": 11
+        },
+        {
+          "name": "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.hermitian_pairing_integral",
+          "file": "Formalism/LocalToGlobal/GlobalTheory/GL3/PHfInt.lean",
+          "line0": 203,
+          "line1": 207
+        },
+        {
+          "name": "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.arithmetic_hermitian_form",
+          "file": "Formalism/LocalToGlobal/GlobalTheory/GL3/PHfInt.lean",
+          "line0": 209,
+          "line1": 209
+        }
+      ],
+      "source": "notes/blueprint/Z4.2.13.tex",
+      "anchor": "\\paragraph{Integrality and parity.}\\phantomsection\\label{r14:lat-integral}",
+      "source_lines": [
+        31,
+        53
+      ],
+      "claim_sha256": "49f7acf5a3ba1540c91dcd108f3271f379ea9909c420f8c8e5aae87d4381379a",
+      "passage_sha256": "a56bb4c00a30de46b7b436765ab41a14d7f3446780020b87555700734499c82f",
+      "sha256": "bfbd25c6edac76dc18f9b8af924ea5bc2f610b99056c60cb3cd67bf60b9182c2",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The complementary dual-lattice containment gives self-duality at the specified base.",
+      "kind": "assembly",
+      "uses": [
+        "S2",
+        "input: recovered dual-lattice description"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.SelfDualRec_of_curve",
+          "file": "Formalism/LocalToGlobal/GlobalTheory/GL3/PSelfDual.lean",
+          "line0": 310,
+          "line1": 393
+        },
+        {
+          "name": "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.self_dual_lattice",
+          "file": "Formalism/LocalToGlobal/GlobalTheory/GL3/PSelfDual.lean",
+          "line0": 624,
+          "line1": 624
+        }
+      ],
+      "source": "notes/blueprint/Z4.2.13.tex",
+      "anchor": "\\paragraph{Recovering the dual lattice.}\\phantomsection\\label{r14:lat-dual}",
+      "source_lines": [
+        84,
+        108
+      ],
+      "claim_sha256": "780c4473e6ec92985220a0fbcf443a3394f702e7961619da65d49f547f0586d4",
+      "passage_sha256": "4eacf3be5b907fd19ccda6368cb72983ad810ac1a3c4021d8db70ce4cffb1b08",
+      "sha256": "cc3d1954e907792bb60fb0633251712c685a31d6747e9a2ceee809c3a2e6f6d2",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The induced semicharacter and nonzero indices satisfy the remaining lattice requirements.",
+      "kind": "computation",
+      "uses": [
+        "S2",
+        "S3",
+        "input: finite-index maps"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.semiChar_of_HfInt",
+          "file": "Formalism/LocalToGlobal/GlobalTheory/GL3/PIopIso.lean",
+          "line0": 240,
+          "line1": 267
+        },
+        {
+          "name": "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.La_index_finite",
+          "file": "Formalism/LocalToGlobal/GlobalTheory/GL3/PIopIso.lean",
+          "line0": 315,
+          "line1": 330
+        },
+        {
+          "name": "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.La_index_ne_zero",
+          "file": "Formalism/LocalToGlobal/GlobalTheory/GL3/PIopIso.lean",
+          "line0": 332,
+          "line1": 338
+        }
+      ],
+      "source": "notes/blueprint/Z4.2.13.tex",
+      "anchor": "\\paragraph{Semicharacter and the two indices.}\\phantomsection\\label{r14:lat-indices}",
+      "source_lines": [
+        123,
+        146
+      ],
+      "claim_sha256": "fbfe1630d4e1f10acf804ec7593db9b7d5d63a179c8d54809ec5fbc0f65da4db",
+      "passage_sha256": "de8bfcee040740d141d8bfc891f4d344410d712b98804d3bdd68a6796b4122b5",
+      "sha256": "0522e8959e2350a55ada0fcc4fe9b7acc45908d24feb8ae5a00e40b4ccb16b35",
+      "ai_review": []
+    },
+    {
+      "id": "S5",
+      "status": "active",
+      "claim": "Two nonzero vectors in the specified theta line are scalar multiples.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: same theta line and nonzero reference vector"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.L2.Ker.Base.vec_mem_ne",
+          "file": "Formalism/LocalToGlobal/KernelLattices/KernelLocalFactors/IsAdmissibleFlagPairOfUnitriangularLeftAutomorph.lean",
+          "line0": 656,
+          "line1": 660
+        },
+        {
+          "name": "GlobalTheory.MomT.FromComb.chiFac_mem",
+          "file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TranslateMomentsAllOfJetMomR.lean",
+          "line0": 337,
+          "line1": 339
+        }
+      ],
+      "source": "notes/blueprint/Z4.2.13.tex",
+      "anchor": "\\paragraph{Why comparison on a theta line gives a scalar.}\\label{r14:line}",
+      "source_lines": [
+        148,
+        166
+      ],
+      "claim_sha256": "f4dec2b52a383a714f2e11fde34f428db33d18c8878eac6204b12af4e1348fcf",
+      "passage_sha256": "31daa3bc3916676d4527b5261cd19cc035b899ec63d37398bf1c5afbe980ebfb",
+      "sha256": "8ce8a5f2e9b645a43e716a6416fcfe988a23574ef251418041d3fd200102e969",
+      "ai_review": []
+    }
+  ],
+  "history": []
+}

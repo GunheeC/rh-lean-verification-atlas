@@ -1,0 +1,39 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>P020 · The Selmer window from four character counts · RH verification atlas</title><link rel="stylesheet" href="../atlas.css"><script>window.MathJax={tex:{inlineMath:[["$","$"]],displayMath:[["$$","$$"]],processEscapes:true},options:{ignoreHtmlClass:"no-math"}};</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script></head><body><header><div class="bar"><a class="brand" href="../index.html">RH verification atlas</a><nav aria-label="Atlas navigation"><a href="../index.html">Home</a> <a href="../STATUS.html">Status</a> <a href="../MAP.html">Map</a> <a href="../dashboard/index.html">Tracks</a> <a href="../lookup/search.html">Search declarations</a></nav></div></header><main><h1 id="p020--the-selmer-window-from-four-character-counts">P020 · The Selmer window from four character counts</h1>
+<p class="notice">AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved</p>
+<p>Four character counts, the stated local and global comparison records, and a uniform second-cohomology estimate give the Selmer window for every designated primitive character. In particular, the cohomology exponent must work across all the allowed fields, primes and twists.</p>
+<p><code>the-selmer-window-from-four-character-counts</code> · <a href="../tracks/galois/index.html">Galois representations, automorphy lifting, Iwasawa theory and Euler systems</a> · <a href="../tracks/analytic/index.html">Analytic number theory</a></p>
+<p><strong>Outlined</strong> · <strong>L1</strong> Statement matched to Lean · Record generated 2026-11-25 (no human check).</p>
+<div class="scroll"><table>
+<thead><tr><th>1 · Lean pinned</th><th>2 · Statement compared</th><th>3 · Prose</th><th>4 · Steps</th><th>5 · AI review</th><th>6 · Human</th></tr></thead>
+<tbody><tr><td>✓</td><td>✓</td><td>Outlined</td><td>4</td><td>–</td><td>0 of 4 steps</td></tr>
+</tbody></table></div>
+<p><a href="P020.check.html">Numbered proof and check records</a> · <a href="../PROGRESS.html">Progress and counting rules</a></p>
+<h2 id="statement">Statement</h2>
+<p>Assume the local, automorphy, cohomological and CM input records of <code>LiteratureRankNHypothesis</code>, the existence of one <span class="math">$C_K\in\mathbb R$</span> satisfying <code>LemmaK</code>, and the four bounds <code>CountI</code>, <code>CountII</code>, <code>CountIII</code>, <code>CountV</code> of <code>HeightAndVanishing/Counts.lean:53–69</code>. Then the assertion <span class="math">$V$</span> above holds for every primitive <span class="math">$\psi$</span>. In <code>LemmaK</code> the same <span class="math">$C_K$</span> bounds the log cardinality of the finite group <span class="math">$H^2(\mathrm{zlTw}(D,j+1))$</span> by <span class="math">$\exp((2j[L:\mathbb Q])^{C_K}\log(2|\operatorname{disc}L|))$</span> for every prime <span class="math">$\ell$</span>, every admissible totally complex field <span class="math">$L$</span> with the required root of unity, closure and local datum <span class="math">$D$</span>, and every <span class="math">$j\ge1$</span> (<code>LemmaK.lean:9–17</code>).</p>
+<h2 id="assumptions">Assumptions</h2>
+<ul><li>Assume the local, automorphy, cohomological and CM records of the rank-<span class="math">$n$</span> literature hypothesis.</li><li>One constant <span class="math">$C_K$</span> satisfies LemmaK, and the four character-count assertions I, II, III and V hold.</li></ul>
+<p>Sources for the assumptions · <a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a></p>
+<h2 id="where-to-read">Where to read</h2>
+<p>Blueprint v13 and papers v3–v5 are this atlas project’s own AI-written, unpublished drafts. They have no human review and were not written by the author of the Lean development. Blueprint v13, its separate cover, and paper v5 are distributed as assets of release v0.1.0. For v3 and v4 the atlas supplies selected excerpts and notes. <a href="../data/editions.json">Edition register</a></p>
+<ul><li><a href="../notes/galois/index.html">Graduate reading packet · Recovering a full Selmer length from two eigenspaces</a></li><li><a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a>, 6.36, p. 68. Statement starts on the cited page.</li><li><a href="../notes/units/P020.tex">Manuscript source excerpt</a> · section <code>pn:P020</code></li></ul>
+<h3 id="declaration-name-matches">Declaration-name matches</h3>
+<ul><li><a href="../crosswalk/naskrecki.html">Naskręcki’s reading project</a> · 1 matching declaration · indices <code>four-use</code>.</li></ul>
+<h2 id="evidence">Evidence</h2>
+<ul><li><a href="../reviews/R20_review.html">R20 review</a>, original line 52 — Statement exact. R20 local implication under its stated premises, not its prerequisite cones.</li></ul>
+<p>Review records · <a href="../reviews/R20_review.html">R20 review</a></p>
+<h2 id="lean-declarations">Lean declarations</h2>
+<ul><li><code>UpperTheory.V.HV.Core.of_four_alt</code>  <br><a href="https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/HVCore.lean#L18-L22"><code>HVCore.lean</code></a>, lines 18–22 · 21,873 dominated lines · SHA-256 <code>3d509aa1d715</code>.</li></ul>
+<p><a href="P020.yaml">Machine record and full declaration hashes</a> · <a href="../lookup/declarations.html">Declaration lookup</a></p>
+<h2 id="reading-prerequisites">Reading prerequisites</h2>
+<p>Background · Galois cohomology · Local conditions on Selmer groups · Prime-weighted counts.</p>
+<ul><li><a href="W11.html">W11 · Bounded class-group ranks in cyclotomic layers</a> · graph</li><li><a href="W12.html">W12 · One interval for the prime two and exceptional layers</a> · graph</li><li><a href="W13.html">W13 · Assembling the Selmer window from five counting cases</a> · graph</li><li><a href="W14.html">W14 · From special values to the minus part</a> · graph</li><li><a href="W15.html">W15 · Vanishing of the exceptional trivial-character length</a> · graph</li></ul>
+<p><a href="../data/round3_prerequisites.json">Evidence and definitions of reading links</a></p>
+<h2 id="open-questions">Open questions</h2>
+<p>None recorded.</p>
+<h2 id="graph-connections">Graph connections</h2>
+<p>Arrows may connect either a unit’s main declaration or an indexed member.</p>
+<p><strong>Uses</strong> · <a href="W11.html">W11</a> · <a href="W12.html">W12</a> · <a href="W13.html">W13</a> · <a href="W14.html">W14</a> · <a href="W15.html">W15</a></p>
+<p><strong>Used by</strong> · <a href="P013.html">P013</a> · <a href="W01.html">W01</a></p>
+<p><a href="../data/unit_graph.json">Declaration witnesses and graph scope</a></p>
+<p>Lookup aliases · <code>of_four_alt</code>, <code>P020 The Selmer window from four character counts</code></p>
+<p>&lt;!-- Unit metadata SHA-256 2e88c6c4e2a955653ad906083221e058b3ed1e98c4a2fca5410b833b078bb93f --&gt;</p></main><footer><a href="../help.html">Using the local edition</a></footer></body></html>

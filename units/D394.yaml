@@ -1,0 +1,98 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D394",
+  "title": "Tying period entries to level valuations",
+  "track": {
+    "primary": "theta",
+    "secondary": []
+  },
+  "statement": "For every slot system and bundle linkage, six conditions hold eventually on built and good members: evaluation on the reference chain, twisted points, periods at zero and after twisting, compatibility of the two evaluations, and the level-prime column valuations.\n\\[\n\\bigwedge_{j=1}^{6}\\mathrm{Lg1}(\\mathrm{KPx},\\,\\mathrm{IsBuiltE},\\,\\mathrm{IsGoodE},\\,P_j).\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Fix a slot system and a linkage satisfying the bundle condition.",
+    "The eventual assertions are restricted to constructed and good members."
+  ],
+  "lean": [
+    {
+      "name": "GlobalTheory.T.period_entries_tie_and_level_valuations_at_built",
+      "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SixRowsAtMemberStatement.lean",
+      "line0": 12,
+      "line1": 13,
+      "sha256": "d65898222d979493bc9b1b50f3aa3237517dc8eddf2e726cafcceb37c260a5a6",
+      "dominated": 43650,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/D394_round4.md",
+      "section": "D394 · Tying period entries to level valuations",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "G.408 (decomp:D394)",
+      "pages": [
+        258,
+        258
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D394.tex",
+      "section": "decomp:D394",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [
+    "P048",
+    "P096",
+    "Z4.4"
+  ],
+  "size_pages": 2,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "D394",
+  "indexed_members": [
+    "D378"
+  ],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "tying-period-entries-to-level-valuations",
+  "aliases": [
+    "period_entries_tie_and_level_valuations_at_built",
+    "D394 Tying period entries to level valuations"
+  ],
+  "background": [
+    "Twisted period integrals",
+    "Valuations of Hecke columns"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.408 (decomp:D394)",
+    "pages": [
+      258,
+      258
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "P048": "graph",
+    "P096": "graph",
+    "Z4.4": "graph"
+  },
+  "review_status": "pending_review",
+  "summary": "For good constructed slots, six eventual assertions control reference and twisted evaluations, their periods, the real-row tie and the level-prime valuations. All six are read from the over-column description and carried to the linked bundle points."
+}

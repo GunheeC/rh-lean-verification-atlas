@@ -1,0 +1,31 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% RH Notes blueprint source excerpts for Z1.1.01
+% Verbatim excerpts in the notation of the parent blueprint. The labelled editions and source ranges appear below.
+% See the unit YAML for the current proof status. Earlier-round passages retain their original wording.
+\section*{Z1.1.01. Ordinary Eisenstein seeds}
+
+% Parent source SHA-256: 9559fca8cc392b75d71f1c158fe0c635cfcab567e2f489b52db4c5bb29d98029
+% blueprint/ch_P_r8_small.tex lines 372 through 393; r8:small:Z1.1.01
+\paragraph{Z1.1.01. The unlinked adjoint of the same seed.}
+\phantomsection\label{r8:small:Z1.1.01}
+Take the rank-two seed furnished in the first line of the reduction
+\nolinkurl{prop_eg_w_of_printed_hida}. Retain its Eisenstein and PR data.
+Here is the deduction from its two bounds RW and NoHalf. At a tested
+\(w\nmid\ell\), put \(q=Nw>1\). Choose Frobenius at the given place
+above \(w\). Let \(a,b\) be the two nonzero eigenvalues of this matrix,
+\(A=|\iota(a)|\), \(B=|\iota(b)|\), \(t=A/B\). Triangularizing the
+rank-two matrix shows that conjugation on its trace-zero endomorphisms
+has eigenvalues \(a/b,1,b/a\), with multiplicities, even if the matrix
+has a Jordan block. The possible ratios of two adjoint eigenvalue norms
+are \(1,t,t^{-1},t^2,t^{-2}\). RW gives \(q^{-1}<t<q\), and NoHalf
+excludes \(t^2=q\) and \(t^{-2}=q\). None of the ratios is \(q\).
+Thus \(\alpha^k=(q\beta)^k\) for adjoint eigenvalues \(\alpha,\beta\) and \(k>0\) is impossible, by taking absolute values and the positive real root. This is the Frobenius witness
+with exponent one in \nolinkurl{UpperTheory.V.Z.Sym.Unl.adUnl}
+(\path{UnlinkedHeckeRoots/SplitTwo.lean:40--73};
+\nolinkurl{NoHalf}, \nolinkurl{AdUnl}, \path{UnlinkedHalfIntegral/UnitFormC.lean:92--105}).
+S14 supplies the root-of-unity interpretation used to form the finite
+characters. The weight-uniform construction of a single seed carrying both
+bounds remains at \nolinkurl{prop_eg_complex_of_printed_hida}
+(\path{WEGCore.lean:235--303}; \nolinkurl{prop_eg_w_of_printed_hida},
+\path{TPropEGW.lean:9--14}).
+

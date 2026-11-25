@@ -1,0 +1,107 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "P023",
+  "title": "Power windows for a positive character family",
+  "track": {
+    "primary": "analytic",
+    "secondary": []
+  },
+  "statement": "\\par\\noindent{\\footnotesize \\nolinkurl{ZeroFreeOfRpowWindow.lean:11}, \\nolinkurl{lemmaL.lean:13}, \\nolinkurl{WindowHypOfRpow.lean:27}, \\nolinkurl{WindowHypUOfWindowHyp.lean:29}.}\\par\nLet $F$ be a character family, $0<\\theta<1$, $\\delta>0$ and $C\\in\\mathbb R$. Assume that for every\n$Y_0$ there is $Y\\ge Y_0$ such that\n\\[\n\\mathcal G_F(y)\\le C\\,y^{\\theta}\\qquad\\text{for all }y\\in[Y,Y^{1+\\delta}].\n\\]\nThen $F$ is zero-free above $\\theta$.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Fix a character family, $0<\\theta<1$, $\\delta>0$ and a real constant $C$.",
+    "For every starting threshold there is a larger $Y$ with $\\mathcal G_F(y)\\le Cy^\\theta$ throughout $[Y,Y^{1+\\delta}]$."
+  ],
+  "lean": [
+    {
+      "name": "Deduction.zeroFree_of_rpow_window",
+      "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ZeroFreeOfRpowWindow.lean",
+      "line0": 11,
+      "line1": 14,
+      "sha256": "3b6b55af7f0e73ce4bec45738805bc20ab3e4dde5c2f5b9e57843a3f2f0d5d1d",
+      "dominated": 1958,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "6.33 (pn:P023)",
+      "pages": [
+        67,
+        67
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/P023.tex",
+      "section": "pn:P023",
+      "pages": []
+    }
+  ],
+  "status": "Full",
+  "grade": "L2",
+  "reviews": [
+    "reviews/R20_review.md"
+  ],
+  "prerequisites": [
+    "P022"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [
+    {
+      "grade": "L2",
+      "review": "reviews/R20_review.md",
+      "lines": [
+        55,
+        55
+      ],
+      "scope": "R20 local implication under its stated premises, not its prerequisite cones.",
+      "verdict": "F: full derivation; yes"
+    },
+    {
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "lines": [
+        106,
+        106
+      ],
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript.",
+      "verdict": "Exact statement comparison"
+    }
+  ],
+  "paper_id": "P023",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "positive-character-power-windows",
+  "aliases": [
+    "power-window zero-free criterion",
+    "zeroFree_of_rpow_window",
+    "P023 Power windows for a positive character family"
+  ],
+  "background": [
+    "Dirichlet L-functions",
+    "Mellin transforms",
+    "Smoothed prime sums"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "6.33 (pn:P023)",
+    "pages": [
+      67,
+      67
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "P022": "graph"
+  },
+  "summary": "If the weighted prime sum of a positive character family stays below a fixed multiple of a power on arbitrarily distant whole power intervals, the family is zero-free above that exponent. This supplies the family version of the window criterion used at a level."
+}

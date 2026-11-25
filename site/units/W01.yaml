@@ -1,0 +1,179 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "W01",
+  "title": "From the rank row to a Selmer window",
+  "track": {
+    "primary": "galois",
+    "secondary": []
+  },
+  "statement": "Assume the one-field open-image record with field $\\mathcal R$, the\nisobaric base-change assertion W02, and the Galois row for local\nparameters satisfying \\code{IsRecT}. For each primitive character, each\n$0<\\varepsilon<1/52$ and each admissible page function, the window $V$\nof \\nodeid{P013} holds. In particular a single $[Y,Y^2]$ works for all\nprescribed fields, all local data, and every finite set of primes, with\ntwist cutoff $\\lfloor x^{401}\\rfloor$ and bound $\\exp(x^\\varepsilon/2)$.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "The head takes the open-image record, isobaric base change and the Galois row separately. The open-image field is never projected by the adapters on this route. `UpperTheory.One.Join.automorphic_window_of_inputs` (`Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TopMainZj.lean:71–74`).",
+    "Test the window on a primitive character, an allowed exponent and an admissible page function."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.One.Join.automorphic_window_of_inputs",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TopMainZj.lean",
+      "line0": 71,
+      "line1": 74,
+      "sha256": "01d6284ac53245ee62afd25ec7e4b8a32e2351626f7820ba01711fcb52b28a55",
+      "dominated": 884497,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/W01_round4.md",
+      "section": "W01 · The rank record that supplies a common Selmer window",
+      "pages": [
+        1,
+        3
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "5.37 (sub:W01)",
+      "pages": [
+        48,
+        48
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/W01.tex",
+      "section": "sub:W01",
+      "pages": []
+    },
+    {
+      "document": "paper2_v3",
+      "section": "The chain in detail: P013",
+      "pages": [
+        20,
+        22
+      ],
+      "coverage": "Shared subsection for this station, including subordinate inputs."
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L1",
+  "reviews": [
+    "reviews/R21_review.md"
+  ],
+  "prerequisites": [
+    "D097",
+    "P020",
+    "P024",
+    "W03",
+    "W04",
+    "W05",
+    "W06",
+    "W07",
+    "W08",
+    "W09",
+    "W10",
+    "Z1.1.07"
+  ],
+  "size_pages": 3,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [
+    {
+      "grade": "L1",
+      "review": "reviews/R21_review.md",
+      "lines": [
+        133,
+        133
+      ],
+      "scope": "Lean interface as specified in the review row; no equivalence with a published result inferred.",
+      "verdict": "Exact statement comparison"
+    }
+  ],
+  "paper_id": "W01",
+  "indexed_members": [
+    "D071",
+    "D072",
+    "D073",
+    "D074",
+    "D075",
+    "D076",
+    "D078",
+    "D079",
+    "D080",
+    "D081",
+    "D083",
+    "D084",
+    "D085",
+    "D086",
+    "D088",
+    "D089",
+    "D090",
+    "D091",
+    "D092",
+    "D093",
+    "D094",
+    "D095",
+    "D096",
+    "D098",
+    "D099",
+    "D100",
+    "D104",
+    "D105",
+    "D114",
+    "D115",
+    "D116",
+    "D117",
+    "D118",
+    "D121",
+    "D122"
+  ],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "from-the-rank-row-to-a-selmer-window",
+  "aliases": [
+    "automorphic_window_of_inputs",
+    "W01 From the rank row to a Selmer window"
+  ],
+  "background": [
+    "Galois representations and automorphy",
+    "Isobaric base change",
+    "Selmer windows"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "5.37 (sub:W01)",
+    "pages": [
+      48,
+      48
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "D097": "graph",
+    "P020": "graph",
+    "P024": "graph",
+    "W03": "graph",
+    "W04": "graph",
+    "W05": "graph",
+    "W06": "graph",
+    "W07": "graph",
+    "W08": "graph",
+    "W09": "graph",
+    "W10": "graph",
+    "Z1.1.07": "graph"
+  },
+  "review_status": "pending_review",
+  "summary": "Local, automorphic, cohomological and CM data feed an estimate on a single interval for all specified Selmer lengths. This step shows where the polarized Galois row and isobaric base change enter the proof and where the four arithmetic counts must share their inputs.",
+  "reader_overrides": {
+    "hypothesis_details": [
+      "The head takes the open-image record, isobaric base change and the Galois row separately. The open-image field is never projected by the adapters on this route. `UpperTheory.One.Join.automorphic_window_of_inputs` (`Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TopMainZj.lean:71–74`).",
+      "Test the window on a primitive character, an allowed exponent and an admissible page function."
+    ]
+  }
+}

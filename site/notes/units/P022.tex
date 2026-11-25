@@ -1,0 +1,279 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit P022. Local manuscript v3, item 6.23, heading on printed PDF p. 61.
+% Deduction.landau_window
+% paper2/upper.tex:229–501. Verbatim excerpt; SHA-256 cd1725570f86ce9f2349baddcb308f0312327d295980dad536abfde87190631d.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+\subsubsection{The abstract statement}
+
+\begin{definition}[Pole data]\label{def:E-poledata}
+
+\par\noindent{\footnotesize \nolinkurl{LandauZeroFreeCriterion.lean:15}.}\par
+Let $g:\mathbb R\to\mathbb R$, $\Phi:\mathbb C\to\mathbb C$ and $Z\subset\mathbb C$. The triple
+$(g,\Phi,Z)$ is \emph{pole data} if:
+\begin{enumerate}
+\item[(P1)] $g$ is Borel measurable and there is $C_0$ with $|g(u)|\le C_0e^{2u}$ for all $u\ge0$;
+\item[(P2)] $\Phi(s)=\int_0^\infty g(u)e^{-su}\,du$ for $\operatorname{Re}s>2$;
+\item[(P3)] $Z\subset\{\operatorname{Re}s>0\}$, $Z$ has no accumulation point in
+$\{\operatorname{Re}s>0\}$, and $\Phi$ is holomorphic on $\{\operatorname{Re}s>0\}\smallsetminus Z$;
+\item[(P4)] at every $\rho\in Z$ the function $\Phi$ has a simple pole: there are $c_\rho\neq0$ and
+$h$ holomorphic near $\rho$ with $\Phi(s)=c_\rho/(s-\rho)+h(s)$ for $s\neq\rho$ near $\rho$; and if
+$\rho$ is real then $c_\rho$ is real and positive.
+\end{enumerate}
+\end{definition}
+
+\begin{definition}[Window hypothesis in the logarithmic variable]\label{def:E-windowU}
+
+\par\noindent{\footnotesize \nolinkurl{LandauZeroFreeCriterion.lean:25}.}\par
+Let $g:\mathbb R\to\mathbb R$, $\theta,\delta\in\mathbb R$. We say that
+$\mathrm{W}(g,\theta,\delta)$ holds if for every $\eta>0$ and every $U_0$ there are $U\ge U_0$ and a
+function $R:\mathbb R\to\mathbb R$. Writing $I=\{u:U\le u\le(1+\delta)U\}$, we require
+$u\mapsto R(u)e^{-\theta u}$ to be integrable on $I$, with $R(u)\ge0$ and $g(u)\le R(u)$
+on $I$, and $\int_I R(u)e^{-\theta u}\,du\le e^{\eta U}$.
+The abstract theorem imposes $\delta>0$ to choose the kernel order in Lemma~\ref{lem:E-tails}
+(\texttt{Deduction.landau\_tails}, \nolinkurl{landauTails.lean:80--85}).
+\end{definition}
+
+\begin{theorem}[A one-sided theorem on logarithmic windows]\label{pn:P022}
+
+\par\noindent{\footnotesize \nolinkurl{landauWindow.lean:83}.}\par
+Let $(g,\Phi,Z)$ be pole data, $0<\theta<1$ and $\delta>0$, and assume
+$\mathrm{W}(g,\theta,\delta)$. Then $\operatorname{Re}\rho\le\theta$ for every $\rho\in Z$.
+\end{theorem}
+\nodestatus{P022}
+
+The proof occupies the rest of this subsection. Throughout, for $\operatorname{Re}s>2$ and
+$k\ge0$ we write
+\[
+c_k(s)=\frac{(-1)^{k}}{k!}\,\Phi^{(k)}(s)=\int_0^\infty g(u)\,\frac{u^{k}}{k!}\,e^{-su}\,du ,
+\]
+the second equality being differentiation under the integral sign, which is legitimate by (P1)
+(\texttt{Deduction.landau\_coeff}). Note that $\Phi$ is holomorphic for $\operatorname{Re}s>2$ by
+(P1), (P2), so by (P4) (a pole is a point near which $\Phi$ is unbounded)
+\begin{equation}\label{eq:E-poles-left}
+\operatorname{Re}\rho\le2\qquad\text{for all }\rho\in Z
+\end{equation}
+(\texttt{Deduction.landau\_pole\_re\_le}).
+
+\begin{lemma}[Kernel bounds]\label{lem:E-kernel}
+
+\par\noindent{\footnotesize \nolinkurl{LandauKernelMax.lean:9}, \nolinkurl{kernelIntegral.lean:9}, \nolinkurl{landauTails.lean:18}.}\par
+Let $k\ge0$ be an integer.
+\begin{enumerate}
+\item For $a>0$ and $u\ge0$: $\dfrac{u^{k}e^{-au}}{k!}\le\dfrac1{a^{k}}$.
+\item For $a>0$: $\displaystyle\int_0^\infty\frac{u^{k}e^{-au}}{k!}\,du=\frac1{a^{k+1}}$.
+\item For $0\le l<s$ and arbitrary $U,V\in\mathbb R$,
+\[
+\int_{(0,\infty)\smallsetminus[U,V]}\frac{u^{k}e^{-su}}{k!}\,du\le
+\frac{e^{lU}}{(s+l)^{k+1}}+\frac{e^{-lV}}{(s-l)^{k+1}} .
+\]
+\end{enumerate}
+\end{lemma}
+\begin{proof}
+(1) With $t=au$: $t^{k}/k!\le e^{t}$. (2) is the Gamma integral. (3) Outside $[U,V]=\{u:U\le u\le V\}$, either $u<U$ or $u>V$, including when $V<U$. For $u<U$ we have
+$1\le e^{l(U-u)}$ and for $u>V$ we have $1\le e^{l(u-V)}$; hence on the domain of integration
+$e^{-su}\le e^{lU}e^{-(s+l)u}+e^{-lV}e^{-(s-l)u}$. Integrate over $(0,\infty)$ and use (2).
+
+\end{proof}
+
+\begin{lemma}[Tails are negligible for a suitable $k$]\label{lem:E-tails}
+
+\par\noindent{\footnotesize \nolinkurl{landauTails.lean:80}.}\par
+Let $\delta>0$. Put $l=2+6/\delta$, $M=l(1+\delta)$ and $\sigma=M(2+l)$; then $\sigma>2$. There is a
+constant $C=C(\delta)$ such that for every $U\ge1$ the integer
+$k=\lceil(1+\delta/2)\sigma U\rceil$ satisfies $k\ge U$ and
+\[
+\int_{(0,\infty)\smallsetminus[U,(1+\delta)U]}\frac{u^{k}e^{-(\sigma-2)u}}{k!}\,du\le\frac{C}{\sigma^{k}} .
+\]
+\end{lemma}
+\begin{proof}
+We have $l>2$, $M>l$, hence $\sigma-2>l(2+l)-2>l$. Apply Lemma~\ref{lem:E-kernel}(3) with
+$s=\sigma-2$ and $V=(1+\delta)U$. It remains to bound the two terms by a constant times
+$\sigma^{-k}$. We use $1+t\le e^{t}$.
+
+\emph{Lower tail.} $\dfrac{\sigma}{\sigma-2+l}=1-\dfrac{l-2}{\sigma-2+l}\le
+\exp\Bigl(-\dfrac{l-2}{\sigma-2+l}\Bigr)$, so
+\[
+\frac{e^{lU}}{(\sigma-2+l)^{k+1}}=\frac{1}{(\sigma-2+l)\,\sigma^{k}}\;e^{lU}
+\Bigl(\frac{\sigma}{\sigma-2+l}\Bigr)^{k}\le
+\frac{1}{(\sigma-2+l)\,\sigma^{k}}\exp\Bigl(lU-\frac{k(l-2)}{\sigma-2+l}\Bigr).
+\]
+Since $k\ge(1+\delta/2)\sigma U$ and $(1+\delta/2)(l-2)=(1+\delta/2)\cdot6/\delta=l+1$, we get
+$k(l-2)\ge(l+1)\sigma U$; and $(l+1)\sigma\ge l(\sigma-2+l)$ because $\sigma\ge l(l-2)$. Hence the
+exponent is $\le0$ and the lower tail is at most $\dfrac{1}{(\sigma-2+l)\sigma^{k}}$.
+
+\emph{Upper tail.} $\sigma-2-l=(M-1)(2+l)$, so
+$\dfrac{\sigma}{\sigma-2-l}=1+\dfrac{1}{M-1}\le e^{1/(M-1)}$ and
+\[
+\frac{e^{-lV}}{(\sigma-2-l)^{k+1}}\le\frac{1}{(\sigma-2-l)\,\sigma^{k}}
+\exp\Bigl(-MU+\frac{k}{M-1}\Bigr),
+\]
+using $lV=l(1+\delta)U=MU$. Now $k\le(1+\delta/2)\sigma U+1$ and
+$(1+\delta/2)(2+l)=7+6/\delta+2\delta=M-1$, so $(1+\delta/2)\sigma=M(M-1)$ and
+$k/(M-1)\le MU+1/(M-1)\le MU+1$ (note $M-1\ge1$). Hence the upper tail is at most
+$\dfrac{e}{(\sigma-2-l)\sigma^{k}}$.
+
+So $C=\dfrac{e}{\sigma-2-l}+\dfrac{1}{\sigma-2+l}$ works. Finally
+$k\ge(1+\delta/2)\sigma U\ge U$.
+
+\end{proof}
+
+\begin{proposition}[Key inequality for Taylor coefficients]\label{prop:E-landau-key}
+
+\par\noindent{\footnotesize \nolinkurl{landauWindow.lean:40}, \nolinkurl{landauWindowIneq.lean:27}.}\par
+Let $(g,\Phi,Z)$ be pole data, $0<\theta<1$, $\delta>0$, and assume $\mathrm W(g,\theta,\delta)$.
+Let $\sigma=\sigma(\delta)>2$ be as in Lemma~\ref{lem:E-tails}. There is a constant $C_1$ (depending
+on $\delta$ and on $C_0$ of \textup{(P1)}) such that for every $\eta>0$ and every $U_0$ there are a
+real $U\ge U_0$ and an integer $k\ge U$ with
+\[
+|c_k(\sigma+i\gamma)|+\operatorname{Re}c_k(\sigma)\le\frac{C_1e^{\eta U}}{(\sigma-\theta)^{k}}
+\qquad\text{for all }\gamma\in\mathbb R .
+\]
+\end{proposition}
+\begin{proof}
+Let $w_k(u)=u^{k}e^{-\sigma u}/k!\ge0$. Then
+$|c_k(\sigma+i\gamma)|\le\int_0^\infty|g|\,w_k$ and
+$\operatorname{Re}c_k(\sigma)=c_k(\sigma)=\int_0^\infty g\,w_k$, so
+\begin{equation}\label{eq:E-key1}
+|c_k(\sigma+i\gamma)|+\operatorname{Re}c_k(\sigma)\le\int_0^\infty\bigl(|g(u)|+g(u)\bigr)w_k(u)\,du .
+\end{equation}
+Given $\eta$ and $U_0$, take $U\ge\max(U_0,1)$ and $R$ from $\mathrm W(g,\theta,\delta)$, and $k$
+from Lemma~\ref{lem:E-tails}. Split the integral in \eqref{eq:E-key1} at the window
+$I=[U,(1+\delta)U]$.
+
+\emph{On $I$.} Since $g\le R$ and $R\ge0$ we have $|g|+g\le2R$ (if $g\ge0$ this is $2g\le2R$; if
+$g<0$ the left side is $0$). By Lemma~\ref{lem:E-kernel}(1) with $a=\sigma-\theta>0$,
+$w_k(u)=\dfrac{u^{k}e^{-(\sigma-\theta)u}}{k!}\,e^{-\theta u}\le
+\dfrac{e^{-\theta u}}{(\sigma-\theta)^{k}}$. Hence
+\[
+\int_I(|g|+g)\,w_k\le\frac{2}{(\sigma-\theta)^{k}}\int_IR(u)e^{-\theta u}\,du\le
+\frac{2e^{\eta U}}{(\sigma-\theta)^{k}} .
+\]
+
+\emph{Off $I$.} By (P1), $(|g|+g)w_k\le2C_0\,u^{k}e^{-(\sigma-2)u}/k!$, and by
+Lemma~\ref{lem:E-tails} the integral over $(0,\infty)\smallsetminus I$ is at most
+$2C_0C/\sigma^{k}\le2C_0C\,e^{\eta U}/(\sigma-\theta)^{k}$.
+
+So $C_1=2+2C_0C$ works.
+
+\end{proof}
+
+\begin{lemma}[Dichotomy for the pole nearest to $\sigma$]\label{lem:E-dichotomy}
+
+\par\noindent{\footnotesize \nolinkurl{LandauDichotomy.lean:24}, \nolinkurl{LandauFinite.lean:9}.}\par
+Let $Z\subset\mathbb C$ have no accumulation point in $\{\operatorname{Re}s>0\}$, let
+$0<\theta<\sigma$, assume $\operatorname{Re}\rho<\sigma$ for all $\rho\in Z$, and let
+$\rho_0\in Z$ with $\operatorname{Re}\rho_0>\theta$. Then one of the following holds.
+\begin{enumerate}
+\item[(A)] There are $D\le\sigma-\theta$ and $\rho_1\in Z$ such that the open disc
+$B(\sigma,D)$ contains no point of $Z$ and $\sigma-\operatorname{Re}\rho_1<D$.
+\item[(B)] There are a real $\beta\in Z$ with $\beta>\theta$ and a radius $r$ with
+$\sigma-\beta<r\le\sigma-\theta$ such that $\beta$ is the only point of $Z$ in $B(\sigma,r)$.
+\end{enumerate}
+\end{lemma}
+\begin{proof}
+The closed disc $\bar B(\sigma,\sigma-\theta)$ is a compact subset of
+$\{\operatorname{Re}s\ge\theta\}\subset\{\operatorname{Re}s>0\}$, so
+$F=Z\cap\bar B(\sigma,\sigma-\theta)$ is finite.
+
+If $F=\emptyset$, take $D=\sigma-\theta$ and $\rho_1=\rho_0$: (A) holds.
+
+Otherwise let $d=\min_{w\in F}|w-\sigma|\le\sigma-\theta$. No point of $Z$ lies in $B(\sigma,d)$. If
+some $\rho_1\in Z$ has $\sigma-\operatorname{Re}\rho_1<d$, then (A) holds with $D=d$. Assume now
+that $\sigma-\operatorname{Re}w\ge d$ for all $w\in Z$. A point $w$ with $|w-\sigma|=d$ and
+$\sigma-\operatorname{Re}w\ge d$ must be $w=\sigma-d$. So $\beta=\sigma-d$ is in $Z$, it is the
+unique point of $F$ at distance $d$ from $\sigma$, and $d<\sigma-\theta$ because
+$d\le\sigma-\operatorname{Re}\rho_0<\sigma-\theta$; thus $\beta>\theta$. As $F$ is finite there is
+$r$ with $d<r\le\sigma-\theta$ such that all points of $F\smallsetminus\{\beta\}$ are at distance
+$\ge r$ from $\sigma$. Every point of $Z\cap B(\sigma,r)$ lies in $F$, hence equals $\beta$: (B)
+holds.
+
+\end{proof}
+
+\begin{lemma}[A point on the line $\operatorname{Re}s=\sigma$ with a unique nearest pole]\label{lem:E-nearest}
+
+\par\noindent{\footnotesize \nolinkurl{LandauNearest.lean:36}.}\par
+Let $Z\subset\mathbb C$ have no accumulation point in $\{\operatorname{Re}s>0\}$. Suppose
+$\operatorname{Re}\rho<\sigma$ for every $\rho\in Z$, let $D<\sigma$ and let $\rho_1\in Z$ with $\sigma-\operatorname{Re}\rho_1<D$. Then
+there are $\gamma\in\mathbb R$, $\rho\in Z$ and $r$ with
+$|\sigma+i\gamma-\rho|<r\le D$ such that $\rho$ is the only point of $Z$ in
+$B(\sigma+i\gamma,r)$.
+\end{lemma}
+\begin{proof}
+We have $D>\sigma-\operatorname{Re}\rho_1>0$. Let $\gamma_0=\operatorname{Im}\rho_1$, so $|\sigma+i\gamma_0-\rho_1|=\sigma-\operatorname{Re}\rho_1<D$.
+Choose a compact interval $J\ni\gamma_0$ of positive length such that
+$|\sigma+i\gamma-\rho_1|<D$ for all $\gamma\in J$. The set
+$K=\{w:\exists\gamma\in J,\ |w-\sigma-i\gamma|\le D\}$ is compact and contained in
+$\{\operatorname{Re}w\ge\sigma-D\}\subset\{\operatorname{Re}w>0\}$, so $Z\cap K$ is finite. For two
+distinct points $a,b\in Z\cap K$ the equation $|\sigma+i\gamma-a|=|\sigma+i\gamma-b|$ reads
+\[
+2\gamma(\operatorname{Im}b-\operatorname{Im}a)=(\sigma-\operatorname{Re}b)^{2}-(\sigma-\operatorname{Re}a)^{2}
++(\operatorname{Im}b)^{2}-(\operatorname{Im}a)^{2}.
+\]
+If $\operatorname{Im}a\neq\operatorname{Im}b$ it has exactly one solution $\gamma$. If
+$\operatorname{Im}a=\operatorname{Im}b$ it would force
+$(\sigma-\operatorname{Re}a)^{2}=(\sigma-\operatorname{Re}b)^{2}$ with both bases positive, i.e.\
+$a=b$; so it has no solution. Hence only finitely many $\gamma$ are ``bad'' and we can choose
+$\gamma\in J$ which is not. Put $z=\sigma+i\gamma$. The points of $Z$ in $\bar B(z,D)$ lie in $K$,
+are finitely many, include $\rho_1$, and have pairwise different distances to $z$. Let $\rho$ be the
+nearest one, $d=|z-\rho|<D$, and let $r$ be the minimum of $D$ and of the second smallest distance
+(or $r=D$ if there is no second point). Then $d<r\le D$ and $\rho$ is the only point of $Z$ in
+$B(z,r)$.
+
+\end{proof}
+
+\begin{proof}[Proof of \nodeid{P022}]
+Suppose $\rho_0\in Z$ has $\operatorname{Re}\rho_0>\theta$. Let $\sigma>2$ and $C_1$ be as in
+Proposition~\ref{prop:E-landau-key}. By \eqref{eq:E-poles-left}, $\operatorname{Re}\rho<\sigma$
+for all $\rho\in Z$. We use two standard facts about Taylor coefficients.
+
+\emph{(T1) Cauchy's estimate.} If $\Psi$ is holomorphic on $B(z,r)$ and $0<r'<r$, then with
+$M=\max_{|s-z|=r'}|\Psi(s)|$ one has $|\Psi^{(k)}(z)/k!|\le M/r'^{k}$ for all $k$
+(\texttt{Deduction.landau\_cauchy}).
+
+\emph{(T2) Coefficients near a simple pole.} If $\Phi$ is holomorphic on
+$B(z,r)\smallsetminus\{\rho\}$, $\rho\neq z$, and $\Phi(s)=c/(s-\rho)+h(s)$ near $\rho$ with $h$
+holomorphic at $\rho$, then $\Psi(s)=\Phi(s)-c/(s-\rho)$ extends holomorphically to $B(z,r)$;
+since $\dfrac{(-1)^{k}}{k!}\dfrac{d^{k}}{ds^{k}}\dfrac{c}{s-\rho}=\dfrac{c}{(s-\rho)^{k+1}}$, (T1)
+gives for $0<r'<r$ a constant $M$ with
+\[
+\Bigl|\frac{(-1)^{k}}{k!}\Phi^{(k)}(z)-\frac{c}{(z-\rho)^{k+1}}\Bigr|\le\frac{M}{r'^{k}}\qquad(k\ge0)
+\]
+(\texttt{Deduction.landau\_pole\_asym}).
+
+Apply Lemma~\ref{lem:E-dichotomy}.
+
+\emph{Case (A).} We have $D\le\sigma-\theta<\sigma$. Lemma~\ref{lem:E-nearest} gives
+$z=\sigma+i\gamma$, $\rho\in Z$ and $r$ with $d:=|z-\rho|<r\le D$, $\rho$ the only pole in
+$B(z,r)$; note $d>0$ since $\operatorname{Re}\rho<\sigma$, and $B(z,r)\subset\{\operatorname{Re}>0\}$.
+Put $r'=(d+r)/2$, so $d<r'<r\le D\le\sigma-\theta$. By (T2) with the residue $c=c_\rho\neq0$ of
+(P4), and by (T1) on $B(\sigma,D)$ (which contains no pole and lies in
+$\{\operatorname{Re}>0\}$), there are $M,M'$ with
+\[
+\frac{|c|}{d^{k+1}}\le|c_k(z)|+\frac{M}{r'^{k}},\qquad
+\operatorname{Re}c_k(\sigma)\ge-|c_k(\sigma)|\ge-\frac{M'}{r'^{k}}\qquad(k\ge0).
+\]
+Let $\eta=\tfrac12\log(r'/d)>0$. For every $U_0$, Proposition~\ref{prop:E-landau-key} gives
+$U\ge U_0$ and $k\ge U$ with
+\[
+\frac{|c|}{d^{k+1}}\le\frac{C_1e^{\eta U}}{(\sigma-\theta)^{k}}+\frac{M+M'}{r'^{k}}\le
+\frac{(C_1+M+M')\,e^{\eta k}}{r'^{k}},
+\]
+where we used $r'\le\sigma-\theta$ and $U\le k$. Hence
+$(r'/d)^{k/2}\le(C_1+M+M')\,d/|c|$ for integers $k\ge U_0$ with $U_0$ arbitrarily large, which is
+absurd since $r'/d>1$ (\texttt{Deduction.landau\_growth\_contra},
+\texttt{Deduction.landau\_window\_contra}).
+
+\emph{Case (B).} Let $d=\sigma-\beta>0$ and $r'=(d+r)/2$, so $d<r'<r\le\sigma-\theta$, and
+$B(\sigma,r)\subset\{\operatorname{Re}>0\}$ contains only the pole $\beta$. By (T2) with the residue
+$c=c_\beta>0$ of (P4), and because $(\sigma-\beta)^{k+1}$ is real,
+\[
+\operatorname{Re}c_k(\sigma)\ge\frac{c}{d^{k+1}}-\frac{M}{r'^{k}}\qquad(k\ge0).
+\]
+With $\gamma=0$, Proposition~\ref{prop:E-landau-key} and $|c_k(\sigma)|\ge0$ give, for the same
+$\eta$ and arbitrary $U_0$, some $k\ge U\ge U_0$ with
+$c/d^{k+1}\le(C_1+M)e^{\eta k}/r'^{k}$, the same contradiction.
+
+Hence no such $\rho_0$ exists.
+
+\end{proof}

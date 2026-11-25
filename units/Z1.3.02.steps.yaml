@@ -1,0 +1,216 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "Z1.3.02",
+  "edition_sha256": "44090b65402eb2f9f32d3a3accb217e25752699ab8c793cf7aca1142b52f00cc",
+  "note_sha256": "dc97f26e994d97d2ab2bf704bf7333ce0d6ad23f4dc023b1e7db49e82c23c0c6",
+  "statement_sha256": "68e3e411c85eaae17a5d9f672d9976017147c39c8444d6ad53b0f58620103fba",
+  "sources": [
+    {
+      "path": "notes/blueprint/Z1.3.02.tex",
+      "sha256": "dc97f26e994d97d2ab2bf704bf7333ce0d6ad23f4dc023b1e7db49e82c23c0c6"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Translation of the unit argument by d0 multiplies the character-weighted sum by the inverse character value at d0.",
+      "kind": "computation",
+      "uses": [
+        "standard: reindexing a finite group"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.HTLawZeta.sum_translate",
+          "file": "Development/AbelianVarietyTheory/Proofs/FoundationProofs/SumTranslate.lean",
+          "line0": 74,
+          "line1": 88
+        }
+      ],
+      "source": "notes/blueprint/Z1.3.02.tex",
+      "anchor": "Keep the data of entry~\\ref{r5:map:Z1.3.02} and write $u_m=d_0\\bmod\\ell^m$, a unit. The layer coordinate to be tested is $Y_{m,1}(s,y)-d_0Y_{m,1}",
+      "source_lines": [
+        14,
+        18
+      ],
+      "claim_sha256": "c38fa7cf96ddf8dfd6862ca949b14edd7f6b212d6eb94b9bd85b6b389e567dc3",
+      "passage_sha256": "889f52643f2b563ce4cc89c76b739ed90f45b5d47734870c382ac5e6cb55ccfb",
+      "sha256": "e65413c98215e0086beef53a3da2ea19615958c8b955b4a25c76f769dceecf17",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "A common power of ell clears the denominators of the diamond average even when ell divides the size of the averaging group.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "input: finite support of lambda"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Z.Kato.K5.hco",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/SmoothedZetaClasses/Hco.lean",
+          "line0": 50,
+          "line1": 105
+        }
+      ],
+      "source": "notes/blueprint/Z1.3.02.tex",
+      "anchor": "For a single $x$ on the support of $c_w$, the local coefficient statement uses a finite support for $\\lambda$, a common power clearing its denomi",
+      "source_lines": [
+        20,
+        28
+      ],
+      "claim_sha256": "a6c93ac66b4fdea515f1a46353baad316fd44a9809b6733bde2c3fe7b0a4b82f",
+      "passage_sha256": "40e096768f7917069d912536c67caf239d771c808d3979a3f90f46bcbc46ec8c",
+      "sha256": "78bfa71bfc57815e510f1d0195cabb6efcc28d41833ac56e962381b1829045ad",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "On the subgroup fixing the primitive root, the reduced lower-coordinate functions are continuous additive characters.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: integral inertia cocycle"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.LambdaValuationPowers.Smooth.smoothed_pres",
+          "file": "Development/AbelianVarietyTheory/Proofs/FoundationProofs/SmoothedPresOfShCoc.lean",
+          "line0": 59,
+          "line1": 62
+        },
+        {
+          "name": "GlobalTheory.CoefCoord.coord_mod_pow",
+          "file": "Development/AbelianVarietyTheory/Proofs/FoundationProofs/NormLeOneOfIsIntegral.lean",
+          "line0": 105,
+          "line1": 128
+        }
+      ],
+      "source": "notes/blueprint/Z1.3.02.tex",
+      "anchor": "On inertia its diagonal multiplier is one, and on \\(H\\) the translation",
+      "source_lines": [
+        33,
+        86
+      ],
+      "claim_sha256": "a2ef59fd807915ba54674e2526e9593f69b6ed03b313b2c9df12421a861e58f7",
+      "passage_sha256": "17b641c0f684bcb97ed0d056d7858a7f08c88942c8bd1b501e55d9ccecc595d7",
+      "sha256": "d7179304ac17c12d564bac321020c586c1e23068ba1ad2b7cc7ff1e7727c1fcc",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "A nonzero weighted Galois sum gives an eigenvector whose M-th power is fixed by the subgroup.",
+      "kind": "computation",
+      "uses": [
+        "S3",
+        "standard: independence of embeddings"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.KumFix.exists_eigen",
+          "file": "Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsKummerElementFixedFieldClosedSubgroup.lean",
+          "line0": 29,
+          "line1": 80
+        }
+      ],
+      "source": "notes/blueprint/Z1.3.02.tex",
+      "anchor": "For each \\(i\\) the finite Galois extension of \\(\\Omega^H\\) corresponding",
+      "source_lines": [
+        33,
+        86
+      ],
+      "claim_sha256": "1e23c2f25034025ae51e395e13880733bedd87977792b0c8ec1c774a31f389e3",
+      "passage_sha256": "17b641c0f684bcb97ed0d056d7858a7f08c88942c8bd1b501e55d9ccecc595d7",
+      "sha256": "401810790d4a984dc10e1e3c758c6d01692d6a38e1a7b497f5599f4a8bf6261e",
+      "ai_review": []
+    },
+    {
+      "id": "S5",
+      "status": "active",
+      "claim": "The final law still requires the comparison with the chosen Hecke functional using common losses.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S2",
+        "S4",
+        "input: cusp coefficient comparison"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Z.Kato.K5.hco",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/SmoothedZetaClasses/Hco.lean",
+          "line0": 34,
+          "line1": 105
+        }
+      ],
+      "source": "notes/blueprint/Z1.3.02.tex",
+      "anchor": "\\textbf{B03.} The remaining assertion compares the cusp coefficients",
+      "source_lines": [
+        88,
+        96
+      ],
+      "claim_sha256": "a1b749660b65e51036bfe785859970dc057549588d5319a0f7766b1e4ae6ce67",
+      "passage_sha256": "642a4413058fc69e6501de740559246e2ebc1e2643c640703397d11623f80fa2",
+      "sha256": "570978c022e4c44df2532ec0eb0d9088bc79eeb4cff43f79f6a781482b5242d1",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "c639a64be58250504942a87285b8ea184fd38d38f3d730744d8e99deec481b90",
+      "sources": [
+        {
+          "path": "notes/blueprint/Z1.3.02.tex",
+          "sha256": "0bcd61cb5a1b731da5fb93f13c763e6902491cd876bbfef204d34c2bfa0ae45d"
+        }
+      ],
+      "steps": {
+        "S1": "e65413c98215e0086beef53a3da2ea19615958c8b955b4a25c76f769dceecf17",
+        "S2": "78bfa71bfc57815e510f1d0195cabb6efcc28d41833ac56e962381b1829045ad",
+        "S3": "50512393f3902667c6fb10d418a363490463eb67ddfd274c8076b2a240d37c52",
+        "S4": "defb356a6def6b28ffd6be8a3f638b2ae134c9c33e619b65f9e411416180229f",
+        "S5": "570978c022e4c44df2532ec0eb0d9088bc79eeb4cff43f79f6a781482b5242d1"
+      },
+      "step_texts": {
+        "S1": "Translation of the unit argument by d0 multiplies the character-weighted sum by the inverse character value at d0.",
+        "S2": "A common power of ell clears the denominators of the diamond average even when ell divides the size of the averaging group.",
+        "S3": "On the subgroup fixing the primitive root, the reduced lower-coordinate functions are continuous additive characters.",
+        "S4": "A nonzero weighted Galois sum gives an eigenvector whose M-th power is fixed by the subgroup.",
+        "S5": "The final law still requires the comparison with the chosen Hecke functional using common losses."
+      }
+    },
+    {
+      "edition_sha256": "9eac2f20b4edd226161e9d7c05f0a830e43b278e792f898ed800a46df2097e41",
+      "sources": [
+        {
+          "path": "notes/blueprint/Z1.3.02.tex",
+          "sha256": "0bcd61cb5a1b731da5fb93f13c763e6902491cd876bbfef204d34c2bfa0ae45d"
+        }
+      ],
+      "statement_sha256": "68e3e411c85eaae17a5d9f672d9976017147c39c8444d6ad53b0f58620103fba",
+      "steps": {
+        "S1": "e65413c98215e0086beef53a3da2ea19615958c8b955b4a25c76f769dceecf17",
+        "S2": "78bfa71bfc57815e510f1d0195cabb6efcc28d41833ac56e962381b1829045ad",
+        "S3": "d7179304ac17c12d564bac321020c586c1e23068ba1ad2b7cc7ff1e7727c1fcc",
+        "S4": "401810790d4a984dc10e1e3c758c6d01692d6a38e1a7b497f5599f4a8bf6261e",
+        "S5": "570978c022e4c44df2532ec0eb0d9088bc79eeb4cff43f79f6a781482b5242d1"
+      },
+      "step_texts": {
+        "S1": "Translation of the unit argument by d0 multiplies the character-weighted sum by the inverse character value at d0.",
+        "S2": "A common power of ell clears the denominators of the diamond average even when ell divides the size of the averaging group.",
+        "S3": "On the subgroup fixing the primitive root, the reduced lower-coordinate functions are continuous additive characters.",
+        "S4": "A nonzero weighted Galois sum gives an eigenvector whose M-th power is fixed by the subgroup.",
+        "S5": "The final law still requires the comparison with the chosen Hecke functional using common losses."
+      },
+      "step_passages": {
+        "S1": "889f52643f2b563ce4cc89c76b739ed90f45b5d47734870c382ac5e6cb55ccfb",
+        "S2": "40e096768f7917069d912536c67caf239d771c808d3979a3f90f46bcbc46ec8c",
+        "S3": "17b641c0f684bcb97ed0d056d7858a7f08c88942c8bd1b501e55d9ccecc595d7",
+        "S4": "17b641c0f684bcb97ed0d056d7858a7f08c88942c8bd1b501e55d9ccecc595d7",
+        "S5": "642a4413058fc69e6501de740559246e2ebc1e2643c640703397d11623f80fa2"
+      }
+    }
+  ]
+}

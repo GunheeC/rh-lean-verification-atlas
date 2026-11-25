@@ -1,0 +1,174 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "P008",
+  "edition_sha256": "5beb0e678d20316b9d50edcd1d2b7f2961f244b3a1bddad394019a6310e50e01",
+  "note_sha256": "f808b56f25799587e6eb5351203db53ce71ee4646952aa39aaa842148b48e338",
+  "statement_sha256": "24bd6f4367d8751ad31291231c5a8479943fca2cf720de6740f489b288cc3695",
+  "sources": [
+    {
+      "path": "notes/units/P008_round4.md",
+      "sha256": "f808b56f25799587e6eb5351203db53ce71ee4646952aa39aaa842148b48e338"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The all-character disjunction at modulus one supplies zeta nonvanishing away from one in the right half-plane.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "P009",
+        "standard: modulus-one L-function identity"
+      ],
+      "lean": [
+        {
+          "name": "rhOfAll",
+          "file": "Supplements/Kernels/MainTheorems.lean",
+          "line0": 9,
+          "line1": 9
+        },
+        {
+          "name": "Formalism.VW.rh_of_every",
+          "file": "Formalism/GammaFactorNonvanishing/CritLine.lean",
+          "line0": 29,
+          "line1": 32
+        }
+      ],
+      "source": "notes/units/P008_round4.md",
+      "anchor": "Specialize the disjunction correctly",
+      "source_lines": [
+        13,
+        13
+      ],
+      "claim_sha256": "1d5c1439e1bf8953b77350ded808504aca68f56c6bfe2d391b969d5d7b45b000",
+      "passage_sha256": "3fb137fe73d91c1a41f47fc031d541c73c89051a6be278b58bcf30dd28688f73",
+      "sha256": "a9538c181afba6548a97d3703ec82fc518a922a6426fd2f274e6f5dbabe08d24",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "At a putative zero to the left, the reflected gamma, cosine, power and zeta factors are all nonzero under the given exclusions.",
+      "kind": "case-split",
+      "uses": [
+        "S1",
+        "standard: zeta functional equation"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.VW.rh_of_right",
+          "file": "Formalism/GammaFactorNonvanishing/RhOfRight.lean",
+          "line0": 5,
+          "line1": 62
+        }
+      ],
+      "source": "notes/units/P008_round4.md",
+      "anchor": "Locate the forbidden factors",
+      "source_lines": [
+        17,
+        17
+      ],
+      "claim_sha256": "2be122c098823e31e0bfcf6095badf8cfe0cfc3ff3f224df3df96f1d536395f5",
+      "passage_sha256": "167362db0caf7e02bec85384fd2f15aed3591f1dff880fac599355b14a79283d",
+      "sha256": "892de0ff1c73d912aba6c3231ca325c0aedab1c0f38891b357c0a1eec502806a",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The right-side contradiction and middle equality complete the predicate used by the two public zeta exports.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "S2"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.VW.rh_of_right",
+          "file": "Formalism/GammaFactorNonvanishing/RhOfRight.lean",
+          "line0": 5,
+          "line1": 62
+        },
+        {
+          "name": "riemannHypothesis",
+          "file": "Main.lean",
+          "line0": 4,
+          "line1": 4
+        },
+        {
+          "name": "riemannZeta_eq_zero_re",
+          "file": "Main.lean",
+          "line0": 6,
+          "line1": 6
+        }
+      ],
+      "source": "notes/units/P008_round4.md",
+      "anchor": "Return the predicate expected at the public interface",
+      "source_lines": [
+        21,
+        21
+      ],
+      "claim_sha256": "19fe50eebd71f323bcc4bbc2c8f096c2fcaa769f933208237324aea3a8cf4f52",
+      "passage_sha256": "ebec3a665eef534f1cdec9f9925164dea1ee004d82c824bc149a518825f93a51",
+      "sha256": "3e5c8b37f463b9c0430491db8232cc9a1929b2d05961cfd1004d1986baf542f0",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "withdrawn",
+      "claim": "For rhOfAll, the normalized source bytes reproduce the pinned hash and contain the indicated supplier expression.",
+      "kind": "computation",
+      "uses": [
+        "standard: SHA-256 of LF-joined lines"
+      ],
+      "lean": [
+        {
+          "name": "rhOfAll",
+          "file": "Supplements/Kernels/MainTheorems.lean",
+          "line0": 9,
+          "line1": 9
+        }
+      ],
+      "source": "notes/units/P008_round4.md",
+      "anchor": "Reproduce the export check",
+      "source_lines": [
+        21,
+        21
+      ],
+      "claim_sha256": "2f7cea68ea10db0e6001065b77f97388c9bae25a7a427fd4020865fd761006f3",
+      "passage_sha256": "61a4ee8b15c50355d2e949dbac4874a0f12f7ca08b4a25822563bdf41c5ba4cd",
+      "sha256": "50dc8932b80327f716dd834e7c0d6d9187921780144e6d8c3f6fe0291de04293",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "67fcee5bb37ca63e384b17ca882aa5657cde80cc4c536ee5fc469fa4e1076d5a",
+      "sources": [
+        {
+          "path": "notes/units/P008_round4.md",
+          "sha256": "ad4f33a1187c5dacf25ba3a7a861309d8b994297d6adc30f91b151f72adede2e"
+        }
+      ],
+      "statement_sha256": "24bd6f4367d8751ad31291231c5a8479943fca2cf720de6740f489b288cc3695",
+      "steps": {
+        "S1": "a9538c181afba6548a97d3703ec82fc518a922a6426fd2f274e6f5dbabe08d24",
+        "S2": "892de0ff1c73d912aba6c3231ca325c0aedab1c0f38891b357c0a1eec502806a",
+        "S3": "3e5c8b37f463b9c0430491db8232cc9a1929b2d05961cfd1004d1986baf542f0",
+        "S4": "50dc8932b80327f716dd834e7c0d6d9187921780144e6d8c3f6fe0291de04293"
+      },
+      "step_texts": {
+        "S1": "The all-character disjunction at modulus one supplies zeta nonvanishing away from one in the right half-plane.",
+        "S2": "At a putative zero to the left, the reflected gamma, cosine, power and zeta factors are all nonzero under the given exclusions.",
+        "S3": "The right-side contradiction and middle equality complete the predicate used by the two public zeta exports.",
+        "S4": "For rhOfAll, the normalized source bytes reproduce the pinned hash and contain the indicated supplier expression."
+      },
+      "step_passages": {
+        "S1": "3fb137fe73d91c1a41f47fc031d541c73c89051a6be278b58bcf30dd28688f73",
+        "S2": "167362db0caf7e02bec85384fd2f15aed3591f1dff880fac599355b14a79283d",
+        "S3": "ebec3a665eef534f1cdec9f9925164dea1ee004d82c824bc149a518825f93a51",
+        "S4": "61a4ee8b15c50355d2e949dbac4874a0f12f7ca08b4a25822563bdf41c5ba4cd"
+      }
+    }
+  ]
+}

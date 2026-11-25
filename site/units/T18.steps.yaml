@@ -1,0 +1,168 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "T18",
+  "edition_sha256": "0267eb873395166f16f558efba803e01c164e36737e00c05dbd744a210027087",
+  "note_sha256": "1d5723bab95ff36a464226f26f057433f67daceab45a1a2b8b07724230ad60d1",
+  "statement_sha256": "7da36b00b635ae27353c6d5291f4b4d7de66fe470bc31bfd6dba4af5fae33e3c",
+  "sources": [
+    {
+      "path": "notes/units/T18_round4.md",
+      "sha256": "1d5723bab95ff36a464226f26f057433f67daceab45a1a2b8b07724230ad60d1"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The required three clauses are the last three projections of the same arithmetic package.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: five-component Hilbert–Samuel theorem"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.Pf1.HilbertSamuelMoriwaki.hsUse_of_hypotheses",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/MoriwakiBigness/MoriwakiBigTheorem/HSChain.lean",
+          "line0": 376,
+          "line1": 378
+        },
+        {
+          "name": "PositivityTheory.Pf1.HilbertSamuelMoriwaki.HSUse",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/MoriwakiBigness/MoriwakiBigTheorem/HSChain.lean",
+          "line0": 372,
+          "line1": 374
+        },
+        {
+          "name": "PositivityTheory.Pf1.HilbertSamuelMoriwaki.hsUse_outright",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/MoriwakiBigness/MoriwakiBigTheorem/Outright.lean",
+          "line0": 13,
+          "line1": 15
+        }
+      ],
+      "source": "notes/units/T18_round4.md",
+      "anchor": "The head has no hypotheses. It uses three in-repo constants",
+      "source_lines": [
+        31,
+        31
+      ],
+      "claim_sha256": "31220ea3640e1b8c861bad7ed907f40e691cb761a27a30210a729a2b77f95c49",
+      "passage_sha256": "dac7e44d65ad56f0578c184d4b9401b3a8c5336c73786fa41bbd3f46d29458ad",
+      "sha256": "8b4e14b4a3c359a44c9bda7766300eda5510ccf4bb7afb816832e0deb2335783",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Mixed-section and scaled intersection positivity supply nonnegativity of the arithmetic top intersection.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S1",
+        "input: mixed Kleiman comparison"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.Pf1.HilbertSamuelMoriwaki.hsChain",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/MoriwakiBigness/MoriwakiBigTheorem/HSChain.lean",
+          "line0": 310,
+          "line1": 322
+        }
+      ],
+      "source": "notes/units/T18_round4.md",
+      "anchor": "For the first component the source assembles a mixed-section step using a small-section in",
+      "source_lines": [
+        35,
+        35
+      ],
+      "claim_sha256": "e9ba2a5f5153f203fe00057ce376859c2d6583d16dd99384d29ff57b2de6c2bf",
+      "passage_sha256": "c6366ae93dba68576a3e3f444f57fe56a45894c5c249158f0e591fed3bb2f6e3",
+      "sha256": "5e5fe60e23ba7ba8ccbdab88eada424a3ec6bf97a4e255beb7a7fc876346c3f4",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The power-block estimate gives the Euclidean-sections estimate used for small-generated chart lattices.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S1",
+        "input: tensor-power degree estimate"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.Pf1.HilbertSamuelMoriwaki.hsChain",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/MoriwakiBigness/MoriwakiBigTheorem/HSChain.lean",
+          "line0": 345,
+          "line1": 360
+        }
+      ],
+      "source": "notes/units/T18_round4.md",
+      "anchor": "Power-block metric data and the point norms of sections feed the measure comparison in the",
+      "source_lines": [
+        39,
+        39
+      ],
+      "claim_sha256": "254ab642700ea10406f34021371dcf6b3a1016e387eb478f7920e189aa8f46a1",
+      "passage_sha256": "1ff8f8d2fe41016bc201b743611c6d9f590b8af688c41c79020bb55cb87e7e43",
+      "sha256": "ff195f7c61795f5d0b51e86d13582d466a4af7ddaf004c235e83d39b4ad41864",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The upper normalization and perturbation of monomials furnish the separate bound on the normed chart lattice.",
+      "kind": "assembly",
+      "uses": [
+        "S3",
+        "input: packing and monomial perturbation"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.Pf1.HilbertSamuelMoriwaki.hsChain",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/MoriwakiBigness/MoriwakiBigTheorem/HSChain.lean",
+          "line0": 359,
+          "line1": 365
+        }
+      ],
+      "source": "notes/units/T18_round4.md",
+      "anchor": "The third conclusion has its own normalization",
+      "source_lines": [
+        43,
+        43
+      ],
+      "claim_sha256": "416f13e28471bf8e2f26bb10ca68917562b277592eb34040054a22b11c5dc520",
+      "passage_sha256": "51cd88e5e9fb5a1942db0f21f7d2449513dad11305df51482ed9c24307347a2a",
+      "sha256": "65425f54016bee72cbee9cebf4bae0eeae82b6bf4a53f9beb13dba451a71f318",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "ff6b60d495d641bec1f958870033df4b491d9050ca42b836271f78d0bf9c2305",
+      "sources": [
+        {
+          "path": "notes/units/T18_round4.md",
+          "sha256": "a7d7b2c342c79c48a3136120bda51dbd66eba59dce63dc160570fd72578d60a3"
+        }
+      ],
+      "statement_sha256": "7da36b00b635ae27353c6d5291f4b4d7de66fe470bc31bfd6dba4af5fae33e3c",
+      "steps": {
+        "S1": "edfa5b5893692a339adbeaa16bc027ca6e326b1589ef3439930594b65c8284a4",
+        "S2": "5e5fe60e23ba7ba8ccbdab88eada424a3ec6bf97a4e255beb7a7fc876346c3f4",
+        "S3": "ff195f7c61795f5d0b51e86d13582d466a4af7ddaf004c235e83d39b4ad41864",
+        "S4": "65425f54016bee72cbee9cebf4bae0eeae82b6bf4a53f9beb13dba451a71f318"
+      },
+      "step_texts": {
+        "S1": "The required three clauses are the last three projections of the same arithmetic package.",
+        "S2": "Mixed-section and scaled intersection positivity supply nonnegativity of the arithmetic top intersection.",
+        "S3": "The power-block estimate gives the Euclidean-sections estimate used for small-generated chart lattices.",
+        "S4": "The upper normalization and perturbation of monomials furnish the separate bound on the normed chart lattice."
+      },
+      "step_passages": {
+        "S1": "14fe6e5289c9bc1b81e3c992ac81051e73e38014ad3ac0ce0c07f0d9423e493f",
+        "S2": "c6366ae93dba68576a3e3f444f57fe56a45894c5c249158f0e591fed3bb2f6e3",
+        "S3": "1ff8f8d2fe41016bc201b743611c6d9f590b8af688c41c79020bb55cb87e7e43",
+        "S4": "51cd88e5e9fb5a1942db0f21f7d2449513dad11305df51482ed9c24307347a2a"
+      }
+    }
+  ]
+}

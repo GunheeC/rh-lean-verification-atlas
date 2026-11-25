@@ -1,0 +1,94 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D230",
+  "title": "Crystalline invariants over the maximal unramified extension",
+  "track": {
+    "primary": "local",
+    "secondary": []
+  },
+  "statement": "For an element of the chosen crystalline period ring fixed by Gal(Q̄\\ensuremath{\\ell}/K) (with \\ensuremath{\\ell} the local prime), its image in the de Rham period ring is the image of an element of the maximal unramified subfield of K.\n\\[\nx\\in B_{\\rm cris}^{G_K}\\ \\Longrightarrow\\ \\exists k\\in K_{\\rm ur},\\ \\iota_{\\rm cris,dR}(x)=\\iota_K(k).\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Use the chosen crystalline period ring and its comparison map into the de Rham ring.",
+    "The given element is fixed by every automorphism of the algebraic closure over $K$."
+  ],
+  "lean": [
+    {
+      "name": "GroundTheory.PAdicHodge.ACris.bCris_fixed_mem_maxUnramified",
+      "file": "GroundTheory/PAdicHodge/FontaineLemmaInvariants.lean",
+      "line0": 420,
+      "line1": 426,
+      "sha256": "048839146df4ebef139ab56734bf211e5380fc8469f48dbb55bc2b5f0af39265",
+      "dominated": 520,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/D230_round4.md",
+      "section": "D230 · Removing crystalline denominators before identifying an unramified scalar",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "G.241 (decomp:D230)",
+      "pages": [
+        217,
+        217
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D230.tex",
+      "section": "decomp:D230",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [
+    "D203",
+    "D245"
+  ],
+  "size_pages": 2,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "D230",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "crystalline-invariants-over-the-maximal-unramified-extension",
+  "aliases": [
+    "bCris_fixed_mem_maxUnramified",
+    "D230 Crystalline invariants over the maximal unramified extension"
+  ],
+  "background": [
+    "Crystalline period rings",
+    "Unramified extensions of local fields"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.241 (decomp:D230)",
+    "pages": [
+      217,
+      217
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "D203": "graph",
+    "D245": "graph"
+  },
+  "review_status": "pending_review",
+  "summary": "A fixed crystalline period maps into the de Rham field as a scalar in the maximal unramified part of the chosen local field. The reduction first replaces the element by a fixed representative in the positive crystalline ring."
+}

@@ -1,0 +1,108 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "T25",
+  "title": "Uniform bounds at two and three",
+  "track": {
+    "primary": "local",
+    "secondary": []
+  },
+  "statement": "Assume the two-layer linkage hypotheses. For every proof $h_L$ of the placewise local-map existence proposition \\nolinkurl{RecTExists} and every parameter record $p$ over $h_L$, the following closed family assertion satisfies the\nlinked norm condition at $p$. There exist $C,x_0$ such that at all\n$x\\ge x_0$, $x>x_1$, and each index, for every compatible local\n$HW,F$ with its comparison and every hub $X,C_2$ satisfying the specified\nsetup, the bound holds at each twisted place $i$ with $l_i=2$ or with\n$l_i=3$ and $3$ outside the host's small set. For every good $\\pi$ it reads\n\\[\n \\begin{aligned}\n v_{cc}(i,\\pi)&\\le s_\\pi(\\rho_i)+\\mathrm{midF}(L,C)\n       +\\mathrm{VVr}(l_i)+v_{hE}(l_i)+\\varepsilon_L(l_i),\\\\\n \\mathrm{midF}(L,C)&=C f m b\\log x+C x^C\\mathrm{large}_2(L)^2 .\n \\end{aligned}\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume the two-layer linkage hypotheses.",
+    "Fix a proof hL of RecTExists and a parameter record over hL. The bound concerns the eligible large members at two and three."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.N.boundAtTwoThree_linked_of_recT",
+      "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/At23OfAll.lean",
+      "line0": 24,
+      "line1": 26,
+      "sha256": "2ff28ca4530fa69763604c8333f3b13cad599754e2447196e66b6b54594f3ba4",
+      "dominated": 9,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/T25_round4.md",
+      "section": "T25 · Joining the two local bounds without choosing new constants at each place",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "5.35 (sub:T25)",
+      "pages": [
+        48,
+        48
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/T25.tex",
+      "section": "sub:T25",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [
+    "D002",
+    "D004",
+    "D006"
+  ],
+  "size_pages": 2,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "T25",
+  "indexed_members": [
+    "D013",
+    "D015",
+    "D016",
+    "D017",
+    "D573"
+  ],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "uniform-bounds-at-two-and-three",
+  "aliases": [
+    "boundAtTwoThree_linked_of_recT",
+    "T25 Uniform bounds at two and three"
+  ],
+  "background": [
+    "Local Galois conditions at small primes",
+    "Uniform norm estimates"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "5.35 (sub:T25)",
+    "pages": [
+      48,
+      48
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "D002": "graph",
+    "D004": "graph",
+    "D006": "graph"
+  },
+  "review_status": "pending_review",
+  "summary": "For a fixed family, the two-prime estimate has one constant and threshold for every eligible twisted place and every good parameter there. At three the host must satisfy the extra small-set exclusion. The bound is then inserted into the linked slot for a parameter record indexed by a proof of local-map existence.",
+  "reader_overrides": {
+    "hypothesis_details": [
+      "Assume the two-layer linkage hypotheses.",
+      "Fix a proof hL of RecTExists and a parameter record over hL. The bound concerns the eligible large members at two and three."
+    ]
+  }
+}

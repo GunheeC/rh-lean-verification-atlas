@@ -1,0 +1,283 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "P013",
+  "edition_sha256": "ca755c1397f7ab81a5a840383d57520fc21cc3e376177defa1461f0b4319531b",
+  "note_sha256": "a6c5f7bc2bb238516e92cd7fa2ad7f9fd9e9f0960f7ca1d9fbdf66cd90461353",
+  "statement_sha256": "21654bc58526d799b31e7a7ad8da0b5729b379ae5e13e8178de5fb7da16a5a29",
+  "sources": [
+    {
+      "path": "notes/units/P013-argument.tex",
+      "sha256": "a6c5f7bc2bb238516e92cd7fa2ad7f9fd9e9f0960f7ca1d9fbdf66cd90461353"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The patched rank record produces the four count estimates on one row.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "W01",
+        "W02",
+        "W08",
+        "W09",
+        "W10",
+        "input: common polarized row"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.HV.DescentVanishingReductions.vwin_of_hypotheses_H_E_alt",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/WindowBoundOfLiteratureLevel.lean",
+          "line0": 25,
+          "line1": 29
+        }
+      ],
+      "source": "notes/units/P013-argument.tex",
+      "anchor": "Put $O=\\code{OpenImageCondition.mk}(\\mathcal R)$. For the three arguments",
+      "source_lines": [
+        78,
+        95
+      ],
+      "claim_sha256": "aac93450a4de78a5f45d565d4ea6363a640328dedd5378345bfc09f98ef0ba59",
+      "passage_sha256": "1ab4d3f744520fdaa470265503aee69a5707e14f8598745820889efecbf77926",
+      "sha256": "679caeed6e23ff8cbd126b4b68fbed3d0f8c2806ff939d2c46a0c2333b24bf44",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The nonexceptional odd primes enter I, Z, II or III and the exceptional odd primes enter II, IV or V.",
+      "kind": "case-split",
+      "uses": [
+        "S1",
+        "input: odd prime case partition"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.HV.cases",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/Cases.lean",
+          "line0": 8,
+          "line1": 12
+        }
+      ],
+      "source": "notes/units/P013-argument.tex",
+      "anchor": "(\\hyperref[sub:W15]{W15}). By the case lemma, I, Z, II, III cover",
+      "source_lines": [
+        97,
+        119
+      ],
+      "claim_sha256": "09e4d436ccc70bd719f28170e6032ef79572f7ba1f16cf5041dfe851dfc92a47",
+      "passage_sha256": "9179541197c4b83167edbe38dc3c1edab14a146b633dc90cd6286b9f39f036b3",
+      "sha256": "ec13207ba28d70441da81cb9ec5109cfc67007d95e23eb8aec3a414a96df5ecc",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "A single exponent dominates all singleton estimates because the exceptional prime set is finite.",
+      "kind": "inequality",
+      "uses": [
+        "S2",
+        "input: finite exceptional set"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.HV.point",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/PointArith.lean",
+          "line0": 36,
+          "line1": 92
+        }
+      ],
+      "source": "notes/units/P013-argument.tex",
+      "anchor": "To see uniformity in the prime set, put $b=\\#B_\\chi$ and choose an",
+      "source_lines": [
+        121,
+        130
+      ],
+      "claim_sha256": "d3ac3eef5e56f6ef9f5bf7fda0ec480f1d76c8346cf4c6ce6c15009ab64ecd5d",
+      "passage_sha256": "941e0638683f655c83f1606b3bc3368f5c58efd63dadbbfad7d84c1ed1c5f86c",
+      "sha256": "efef5feef8a60a9e41ba097ab1a53366156388787b81d225ba13d32df022a637",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "One interval carries both the two-adic budget and the exceptional-layer bounds.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "W12",
+        "input: matched page and twist cutoffs"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.jointWin_of",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/PrimeSetBoundDataOfPrimitiveChar.lean",
+          "line0": 145,
+          "line1": 156
+        }
+      ],
+      "source": "notes/units/P013-argument.tex",
+      "anchor": "W12, applied to the data of $\\chi$ at $C_t=401$, gives the",
+      "source_lines": [
+        132,
+        151
+      ],
+      "claim_sha256": "7921c0f2aab2f9ff3df1f3463d9c7ed5670b3c99966a096a32f67dd74ff964e3",
+      "passage_sha256": "79083d47e008adbe827e1682d0e9ceba76349767810a32e8b4ac6b28c7f8251b",
+      "sha256": "505299d6c3783cc0c369ee87249912955f21e97f7b3e65fca38458ee43f960fa",
+      "ai_review": []
+    },
+    {
+      "id": "S5",
+      "status": "active",
+      "claim": "The plus estimate applies on the same interval that furnishes the layer bounds.",
+      "kind": "assembly",
+      "uses": [
+        "S3",
+        "S4",
+        "input: large host"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.HV.thmHV",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/ThmHV.lean",
+          "line0": 6,
+          "line1": 40
+        }
+      ],
+      "source": "notes/units/P013-argument.tex",
+      "anchor": "The plus estimate just proved applies on \\emph{every} interval",
+      "source_lines": [
+        132,
+        151
+      ],
+      "claim_sha256": "8bc6d556251d12f6b0d9be4dbfd25db6f66b5dd345e5d6ca5b7b51305392927e",
+      "passage_sha256": "79083d47e008adbe827e1682d0e9ceba76349767810a32e8b4ac6b28c7f8251b",
+      "sha256": "754b3769e511ab45da224582e76e0c8a710173f0a497500a71a91f46d9e6c860",
+      "ai_review": []
+    },
+    {
+      "id": "S6",
+      "status": "active",
+      "claim": "The odd eigenspace lengths and the possible two-adic term sum to a bound uniform in finite prime sets.",
+      "kind": "assembly",
+      "uses": [
+        "S5",
+        "W14",
+        "input: common minus budget"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.vvle_of_parts",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/LengthEqAddEigen.lean",
+          "line0": 127,
+          "line1": 189
+        }
+      ],
+      "source": "notes/units/P013-argument.tex",
+      "anchor": "For odd primes the finite plus and minus lengths add to the full length.",
+      "source_lines": [
+        167,
+        200
+      ],
+      "claim_sha256": "bb475db4774210ae9f383b6abbea68417f526c6c1f67a1f5a65fe50a87edfabf",
+      "passage_sha256": "463960deb3517f5e0494f89844e0e6ed554b4a97df9278c1691e4bf521c2f956",
+      "sha256": "f6072f2511b98f5434b7b84f63976fa07afa1790e184aec62c4f6d6d40fd45b4",
+      "ai_review": []
+    },
+    {
+      "id": "S7",
+      "status": "active",
+      "claim": "For all sufficiently large x the common budget is at most exp(x^epsilon/2).",
+      "kind": "inequality",
+      "uses": [
+        "S6",
+        "input: positive epsilon"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.vwinAt_of_joint",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/CMFieldExponentialBounds/AdmissibleOfPageN.lean",
+          "line0": 102,
+          "line1": 129
+        }
+      ],
+      "source": "notes/units/P013-argument.tex",
+      "anchor": "For large $x$ this expression is at most",
+      "source_lines": [
+        167,
+        200
+      ],
+      "claim_sha256": "c8b96c5d83bad6a3b15559a439deba3c6cbba3dbf179c2634a5a4dfb302a55ae",
+      "passage_sha256": "463960deb3517f5e0494f89844e0e6ed554b4a97df9278c1691e4bf521c2f956",
+      "sha256": "223ceb1bb73ab8da67912f05f9b5875e03c3ee0209758d44dc20860fca3b65fe",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "8007e3bcc07e2fde88849d783bdd03c35764a542e201e4c28a8d411cfdb8dd76",
+      "sources": [
+        {
+          "path": "notes/units/P013-argument.tex",
+          "sha256": "a69102ae6331c59e86cf5b4add690083012b2c089a3d7d635b2333a51a1cacf6"
+        }
+      ],
+      "steps": {
+        "S1": "f5bcca38f16696fee1b077757b5c3ef795e0bd450b2acb302f2d05c8346f1a87",
+        "S2": "ec13207ba28d70441da81cb9ec5109cfc67007d95e23eb8aec3a414a96df5ecc",
+        "S3": "efef5feef8a60a9e41ba097ab1a53366156388787b81d225ba13d32df022a637",
+        "S4": "505299d6c3783cc0c369ee87249912955f21e97f7b3e65fca38458ee43f960fa",
+        "S5": "754b3769e511ab45da224582e76e0c8a710173f0a497500a71a91f46d9e6c860",
+        "S6": "f6072f2511b98f5434b7b84f63976fa07afa1790e184aec62c4f6d6d40fd45b4",
+        "S7": "223ceb1bb73ab8da67912f05f9b5875e03c3ee0209758d44dc20860fca3b65fe"
+      },
+      "step_texts": {
+        "S1": "The patched rank record produces the four count estimates on one row.",
+        "S2": "The nonexceptional odd primes enter I, Z, II or III and the exceptional odd primes enter II, IV or V.",
+        "S3": "A single exponent dominates all singleton estimates because the exceptional prime set is finite.",
+        "S4": "One interval carries both the two-adic budget and the exceptional-layer bounds.",
+        "S5": "The plus estimate applies on the same interval that furnishes the layer bounds.",
+        "S6": "The odd eigenspace lengths and the possible two-adic term sum to a bound uniform in finite prime sets.",
+        "S7": "For all sufficiently large x the common budget is at most exp(x^epsilon/2)."
+      }
+    },
+    {
+      "edition_sha256": "5b57d32fcd5874a88397c474301d691e0e428c5eb9cc506de8f7db7ecad8f38e",
+      "sources": [
+        {
+          "path": "notes/units/P013-argument.tex",
+          "sha256": "a69102ae6331c59e86cf5b4add690083012b2c089a3d7d635b2333a51a1cacf6"
+        }
+      ],
+      "statement_sha256": "21654bc58526d799b31e7a7ad8da0b5729b379ae5e13e8178de5fb7da16a5a29",
+      "steps": {
+        "S1": "679caeed6e23ff8cbd126b4b68fbed3d0f8c2806ff939d2c46a0c2333b24bf44",
+        "S2": "ec13207ba28d70441da81cb9ec5109cfc67007d95e23eb8aec3a414a96df5ecc",
+        "S3": "efef5feef8a60a9e41ba097ab1a53366156388787b81d225ba13d32df022a637",
+        "S4": "505299d6c3783cc0c369ee87249912955f21e97f7b3e65fca38458ee43f960fa",
+        "S5": "754b3769e511ab45da224582e76e0c8a710173f0a497500a71a91f46d9e6c860",
+        "S6": "f6072f2511b98f5434b7b84f63976fa07afa1790e184aec62c4f6d6d40fd45b4",
+        "S7": "223ceb1bb73ab8da67912f05f9b5875e03c3ee0209758d44dc20860fca3b65fe"
+      },
+      "step_texts": {
+        "S1": "The patched rank record produces the four count estimates on one row.",
+        "S2": "The nonexceptional odd primes enter I, Z, II or III and the exceptional odd primes enter II, IV or V.",
+        "S3": "A single exponent dominates all singleton estimates because the exceptional prime set is finite.",
+        "S4": "One interval carries both the two-adic budget and the exceptional-layer bounds.",
+        "S5": "The plus estimate applies on the same interval that furnishes the layer bounds.",
+        "S6": "The odd eigenspace lengths and the possible two-adic term sum to a bound uniform in finite prime sets.",
+        "S7": "For all sufficiently large x the common budget is at most exp(x^epsilon/2)."
+      },
+      "step_passages": {
+        "S1": "1ab4d3f744520fdaa470265503aee69a5707e14f8598745820889efecbf77926",
+        "S2": "9179541197c4b83167edbe38dc3c1edab14a146b633dc90cd6286b9f39f036b3",
+        "S3": "941e0638683f655c83f1606b3bc3368f5c58efd63dadbbfad7d84c1ed1c5f86c",
+        "S4": "79083d47e008adbe827e1682d0e9ceba76349767810a32e8b4ac6b28c7f8251b",
+        "S5": "79083d47e008adbe827e1682d0e9ceba76349767810a32e8b4ac6b28c7f8251b",
+        "S6": "463960deb3517f5e0494f89844e0e6ed554b4a97df9278c1691e4bf521c2f956",
+        "S7": "463960deb3517f5e0494f89844e0e6ed554b4a97df9278c1691e4bf521c2f956"
+      }
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>D561 · Prime-power balance and the fixed-width thick sum · RH verification atlas</title><link rel="stylesheet" href="../../atlas.css"><script>window.MathJax={tex:{inlineMath:[["$","$"]],displayMath:[["$$","$$"]],processEscapes:true},options:{ignoreHtmlClass:"no-math"}};</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script></head><body><header><div class="bar"><a class="brand" href="../../index.html">RH verification atlas</a><nav aria-label="Atlas navigation"><a href="../../index.html">Home</a> <a href="../../STATUS.html">Status</a> <a href="../../MAP.html">Map</a> <a href="../../dashboard/index.html">Tracks</a> <a href="../../lookup/search.html">Search declarations</a></nav></div></header><main><h1 id="d561--prime-power-balance-and-the-fixed-width-thick-sum">D561 · Prime-power balance and the fixed-width thick sum</h1>
+<p class="notice">AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved</p>
+<p>The pinned source paths below use the root <code>src/</code>. The proof is adapted from the project’s manuscript v4 and is <strong>pending_review</strong>. Manuscript v4, §3.1, printed pp. 10–12, 18. <a href="../../units/D561.html">Unit card</a> · <a href="../../data/editions.json">Mathematical editions</a>.</p>
+<ul><li><strong>A8</strong> <code>Deduction.ch_balance</code>, <code>Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChBalance.lean:200–260</code>.</li><li><strong>A10</strong> <code>Deduction.CharacterBalanceMoves.th_le</code>, <code>Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean:75–152</code>.</li></ul>
+<p>The first identity evaluates all prime-power contributions. The second identifies the thick summands when the width is frozen at <span class="math">$b$</span>. The thin-place and moving-width estimates needed for the enclosing comparison are distinct steps.</p>
+<h2 id="a8--prime-power-balance">A8 · Prime-power balance</h2>
+<p><strong>Prime powers in one column.</strong></p>
+<p>Write <span class="math">$U=(\mathbb Z/2)^2\times H$</span> and <span class="math">$\Phi=\{g=((g_1,g_2),h):g_1=0\}$</span>. Thus <span class="math">$|U|=2f$</span> with <span class="math">$f=|\Phi|=2|H|$</span>. The character <span class="math">$\chi_C(g)=(-1)^{g_1}$</span> distinguishes the two cosets of <span class="math">$\Phi$</span>. For <span class="math">$t\in H$</span> set <span class="math">$P_t(g)=((1,1),0)+g+((0,0),t)$</span>. Translation by this fixed element interchanges <span class="math">$\Phi$</span> and its complement. The data at a prime <span class="math">$p$</span> are a subgroup <span class="math">$I_p\le U$</span> and an element <span class="math">$F_p\in U$</span>. Write <span class="math">$0\in\widehat U$</span> for the character identically one and <span class="math">$[z]_+=\max(z,0)$</span> for real <span class="math">$z$</span>. The host hypothesis here is <code>Deduction.CH.HostFactsS</code> (D014): a finite set <span class="math">$S$</span> contains <span class="math">$2,q_1$</span>, and <span class="math">$d$</span> is a prime outside <span class="math">$S$</span>. For primes <span class="math">$p\notin S\cup\{d\}$</span>, <span class="math">$I_p=\{0\}$</span>; for <span class="math">$p\in S$</span>, <span class="math">$I_p\subset\Phi$</span> and <span class="math">$F_p\in\Phi$</span>; and <span class="math">$I_d=\{0,((1,0),0)\}$</span>. <code>DedekindLFunctions/SplitInertia.lean:14–22</code>; <code>InPhi</code>, <code>cconj</code>, <code>topPl</code>, <code>ThickAverageLoss/PartnersToFactorsAt.lean:20–29</code>; <code>partner</code>, <code>chC</code>, <code>ArithData</code>, <code>SizeWindowBrackets/FirstPrimeNeSecondPrime.lean:19–42</code>.</p>
+<p><strong>Exact prime and character balance</strong></p>
+<p>Take the host just specified, any function <span class="math">$\ell:\widehat U\to\mathbb C$</span>, <span class="math">$a&gt;0$</span>, <span class="math">$t\in H$</span>, a width function <span class="math">$w:U\to\mathbb R$</span> positive on <span class="math">$\Phi$</span>, and <span class="math">$N\in\mathbb N$</span> with <span class="math">$a/w(\rho)\le N$</span> for every <span class="math">$\rho\in\Phi$</span>. Put <span class="math">$W_g=w(P_t(g))$</span> for <span class="math">$g\notin\Phi$</span> and <span class="math">$h(v,g)=[a/v-W_g]_+$</span>. Here <span class="math">$p$</span> is called inert if it is prime, <span class="math">$p\notin\{2,q_1,d\}$</span> and <span class="math">$F_p\notin\Phi$</span>. Then, as an identity in <span class="math">$\mathbb C$</span>, <span class="math">$\mathrm{ASK}-\mathrm{MAIN}=\mathrm{De}$</span>, where the three quantities are</p>
+<div class="math display">$$
+\begin{aligned}
+ \mathrm{ASK}={}&amp;
+ 2\sum_{\substack{p\le N\\p\ {\rm inert}}}
+  (\log p)\!\sum_{\substack{1\le i\le N\\iF_p\notin\Phi}}h(p^i,iF_p)
+ + (\log d)\sum_{i=1}^N
+  \sum_{\substack{g\notin\Phi\\g-iF_d\in I_d}} h(d^i,g),\\
+ \mathrm{MAIN}={}&amp; a\left(\log a-1-\gamma+\ell(\chi_C)
+           -\frac1f\sum_{\rho\in\Phi}\log w(\rho)\right),\\
+ \mathrm{De}={}&amp;\frac1f\sum_{g\notin\Phi}\sum_{\xi\in\widehat U}
+      \overline{\xi(g)}\,W_g G_\xi(a/W_g).
+\end{aligned}
+$$</div>
+<p>Here <span class="math">$G_\xi$</span> is the centered character sum defined in the proof and <span class="math">$\gamma$</span> is Euler&#x27;s constant.</p>
+<p><code>IsInert</code>, <code>askP</code>, <code>askD</code>, <code>ASK</code>, <code>MAIN</code>, <code>De</code>, <code>SizeWindowBrackets/FirstPrimeNeSecondPrime.lean:72–96</code>; <code>Deduction.ch_balance</code>, <code>LandauTheorems/ChBalance.lean:200–260</code>.</p>
+<p><strong>Proof.</strong></p>
+<p>For <span class="math">$n\ge1$</span> let <span class="math">$v_\xi(n)$</span> be the product over <span class="math">$p\mid n$</span> of the means of <span class="math">$\xi$</span> on <span class="math">$\operatorname{ord}_p(n)F_p+I_p$</span>. The empty product is one, and <span class="math">$v_0(n)=1$</span>. At a prime power <span class="math">$p^i$</span>, <span class="math">$i\ge1$</span>, the product has just one factor. Finite Fourier orthogonality thus gives</p>
+<div class="math display">$$
+ \frac1f\sum_{\xi\in\widehat U}\overline{\xi(g)}v_\xi(p^i)
+ =\frac{1}{f|I_p|}\sum_{z\in I_p}\sum_{\xi\in\widehat U}
+                         \xi(iF_p+z-g)
+ =\frac{2}{|I_p|}\,\mathbf 1_{g-iF_p\in I_p}.
+$$</div>
+<p>Indeed the inner sum at zero is <span class="math">$|U|$</span>: decompose <span class="math">$U$</span> into cyclic factors, on each of which the characters are the roots of unity of the corresponding order. At a nonzero element one of the cyclic geometric sums vanishes. At most one <span class="math">$z$</span> has <span class="math">$iF_p+z-g=0$</span>. This explains both the inertia divisor and the factor <span class="math">$2$</span>. See <code>cosetMean</code>, <code>primVal</code>, <code>FirstPrimeNeSecondPrime.lean:61–66</code>; <code>orthogonality_ramified</code>, <code>ChainSlopeWindows/StronglyIrreducible.lean:311–317</code>.</p>
+<p>Consider the finite Fourier sum</p>
+<div class="math display">$$
+ J=\frac1f\sum_{g\notin\Phi}\sum_{\xi\in\widehat U}\overline{\xi(g)}
+       \sum_{n=1}^N\Lambda(n)v_\xi(n)h(n,g).
+$$</div>
+<p>Only prime powers <span class="math">$n=p^i$</span> contribute, with <span class="math">$\Lambda(n)=\log p$</span>. Since <span class="math">$P_t(g)\in\Phi$</span>, <span class="math">$a/W_g\le N$</span>. Thus <span class="math">$h(p^i,g)=0$</span> whenever <span class="math">$p^i&gt;N$</span>, and one can sum over <span class="math">$p\le N$</span> and <span class="math">$1\le i\le N$</span>. Evaluate the character sum using the preceding identity.</p>
+<ul><li>For <span class="math">$p\in S$</span>, both <span class="math">$F_p$</span> and <span class="math">$I_p$</span> lie in <span class="math">$\Phi$</span>, so no <span class="math">$g\notin\Phi$</span> contributes. In particular <span class="math">$F_p\in\Phi$</span> excludes inertness, and the first term of ASK also vanishes at this prime (<code>ask</code> decomposition, <code>ChBalance.lean:163–167</code>).</li><li>For <span class="math">$p\notin S\cup\{d\}$</span>, only <span class="math">$g=iF_p$</span> can contribute, with coefficient <span class="math">$2$</span>. If <span class="math">$F_p\in\Phi$</span>, all its multiples lie in <span class="math">$\Phi$</span>. Otherwise <span class="math">$p$</span> is inert (since <span class="math">$2,q_1\in S$</span>) and precisely the exponents with <span class="math">$iF_p\notin\Phi$</span> give the first term of <span class="math">$\mathrm{ASK}$</span>.</li><li>For <span class="math">$p=d$</span>, the coefficient on <span class="math">$iF_d+I_d$</span> is <span class="math">$2/2=1$</span>. Intersect this coset with <span class="math">$U\setminus\Phi$</span> to get the second term of <span class="math">$\mathrm{ASK}$</span>. If <span class="math">$d&gt;N$</span>, every <span class="math">$d^i&gt;N$</span> and the written term vanishes.</li></ul>
+<p>Hence <span class="math">$J=\mathrm{ASK}$</span>. The split, unramified and ramified sums and their recombination are <code>CharacterBalance.lsplit</code>, <code>lunram</code>, <code>ld</code> and <code>askExp</code>, <code>LandauTheorems/ChBalance.lean:42–196</code>.</p>
+<p>Evaluate <span class="math">$J$</span> in the other order. Put</p>
+<div class="math display">$$
+ L_\xi(y)=\sum_{1\le n\le y}\Lambda(n)v_\xi(n)(y/n-1).
+$$</div>
+<p>Then <span class="math">$G_0(y)=L_0(y)-y\log y+(1+\gamma)y$</span> and, for <span class="math">$\xi\ne0$</span>, <span class="math">$G_\xi(y)=L_\xi(y)+y\ell(\xi)$</span>. Fix <span class="math">$g\notin\Phi$</span>, put <span class="math">$W=W_g$</span> and <span class="math">$y=a/W$</span>. Since <span class="math">$0&lt;y\le N$</span>, the inner <span class="math">$n$</span>-sum is <span class="math">$W L_\xi(y)$</span>: on <span class="math">$n\le y$</span> the factor is <span class="math">$W(y/n-1)$</span>, and on <span class="math">$n&gt;y$</span> it vanishes. Consequently this sum equals <span class="math">$WG_\xi(y)$</span> plus the correction</p>
+<div class="math display">$$
+ \begin{cases}
+ a\log a-a\log W-(1+\gamma)a,&amp;\xi=0,\\
+ -a\ell(\xi),&amp;\xi\ne0.
+ \end{cases}
+$$</div>
+<p>These are <code>GPsi</code>, <code>FirstPrimeNeSecondPrime.lean:68–70</code>, <code>Gz</code>, <code>Formalism/StatementOC.lean:11–13</code>, and <code>sum_cut</code>, <code>inner_eq</code>, <code>ChainSlopeWindows/StronglyIrreducible.lean:619–686</code>.</p>
+<p>The <span class="math">$WG_\xi(y)$</span> terms give <span class="math">$\mathrm{De}$</span>. For <span class="math">$\xi=0$</span>, the map <span class="math">$g\mapsto P_t(g)$</span> is a bijection onto <span class="math">$\Phi$</span> with inverse <span class="math">$\rho\mapsto\rho-((1,1),0)-((0,0),t)$</span>. Its averaged correction is <span class="math">$a\log a-(1+\gamma)a-(a/f)\sum_{\rho\in\Phi}\log w(\rho)$</span>. For the nontrivial characters, use <span class="math">$\mathbf 1_{g\notin\Phi}=(1-\chi_C(g))/2$</span>. Character orthogonality gives</p>
+<div class="math display">$$
+ \frac1f\sum_{g\notin\Phi}\overline{\xi(g)}
+  =\mathbf 1_{\xi=0}-\mathbf 1_{\xi=\chi_C}.
+$$</div>
+<p>Thus the nontrivial-character correction is <span class="math">$+a\ell(\chi_C)$</span>, with the plus sign coming from the two minus signs. Together the corrections give exactly <span class="math">$\mathrm{MAIN}$</span>. Comparing <span class="math">$J=\mathrm{De}+\mathrm{MAIN}$</span> with <span class="math">$J=\mathrm{ASK}$</span> proves the identity. See <code>partner_bijection</code>, <code>colour_sum</code>, <code>ChainSlopeWindows/StronglyIrreducible.lean:153–212</code>, and <code>ch_balance</code>, <code>LandauTheorems/ChBalance.lean:206–260</code>.</p>
+<h2 id="a10--fixed-width-thick-places">A10 · Fixed-width thick places</h2>
+<p><strong>The thick part of the place sum at fixed width</strong></p>
+<p>Write <span class="math">$g=((\alpha,\beta),h)\in E_0\times H$</span> and <span class="math">$\Phi=\{g:\alpha=0\}$</span>. Let</p>
+<div class="math display">$$
+ \begin{gathered}
+ c_{\rm conj}=((1,1),0),\qquad
+ \operatorname{topPl}(t)=((0,0),t),\qquad
+ \operatorname{thickPl}(s)=((0,1),s),\\
+ P_t(g)=c_{\rm conj}+g+\operatorname{topPl}(t)
+       =((1+\alpha,1+\beta),h+t).
+ \end{gathered}
+$$</div>
+<p>This <span class="math">$P_t$</span> is <code>partner</code>. The condition <code>IsThickAt</code><span class="math">$(T_2,u,\rho)$</span> means <span class="math">$\rho=\operatorname{thickPl}(s+u)$</span> for some <span class="math">$s\in T_2$</span>. Fix <span class="math">$a=a_t$</span>, <span class="math">$b&gt;0$</span>, and a column with weights <span class="math">$w$</span>. In the Fourier sum <span class="math">$\mathrm{De}$</span> retain the terms with thick partners only and replace <span class="math">$w(P_t(g))$</span> by <span class="math">$b$</span> in both occurrences. The resulting complex sum is</p>
+<div class="math display">$$
+ T(u,t)=\frac{b}{|\Phi|}\sum_{s\in T_2}
+      \sum_{\xi\in\widehat{E_0\times H}}
+        \xi(-e_1(s+u-t))\,G_\xi(a/b).
+$$</div>
+<p><strong>Proof.</strong></p>
+<p>The first sign of <span class="math">$g+\operatorname{topPl}(t)$</span> is <span class="math">$\alpha$</span>, so the translated complement of <span class="math">$\Phi$</span> is exactly the original complement. There <span class="math">$\alpha=1$</span> and <span class="math">$P_t(g)=((0,1+\beta),h+t)$</span> belongs to <span class="math">$\Phi$</span>. Finite character values have modulus one, hence <span class="math">$\overline{\xi(g)}=\xi(-g)$</span>. Inserting these two equalities in the definition of <span class="math">$\mathrm{De}$</span> gives</p>
+<div class="math display">$$
+ \Re\mathrm{De}=\Re\left(\frac{1}{|\Phi|}
+ \sum_{g+\operatorname{topPl}(t)\notin\Phi}\sum_\xi
+ \xi(-g) w(P_t(g))\,G_\xi(a/w(P_t(g)))\right).
+$$</div>
+<p>This is the assertion <code>De_re</code>: the associated cyclic host has the same character functions, term by term. Now <span class="math">$P_t(g)$</span> is thick exactly when <span class="math">$\beta=0$</span> and <span class="math">$h=s+u-t$</span> for some <span class="math">$s\in T_2$</span>. That <span class="math">$s=h-u+t$</span> is unique, and the inverse is <span class="math">$g=e_1(s+u-t)$</span>. Reindexing by this bijection and inserting the constant width <span class="math">$b$</span> gives the claimed complex equality before taking any real parts. The thin contribution disappears in this frozen sum; comparison with the original <span class="math">$\mathrm{De}$</span> also incurs the change of width at each thick place, as estimated in the enclosing moving-width argument. <code>InPhi</code>, <code>topPl</code>, <code>thickPl</code>, <code>IsThickAt</code> and <code>balTop</code>, <code>ThickAverageLoss/PartnersToFactorsAt.lean:20–29,62–65,97</code>; <code>partner</code>, <code>De</code>, <code>SizeWindowBrackets/FirstPrimeNeSecondPrime.lean:19,93–96</code>; <code>De_re</code>, <code>GC_host</code>, <code>ChainSlopeWindows/LipschitzWeightAndMinimum.lean:147–169</code>; <code>Th</code>, <code>th_le</code>, <code>LandauTheorems/ChCore.lean:16–20,75–104</code>.</p>
+<h2 id="point-for-the-reviewer">Point for the reviewer</h2>
+<p>The frozen-width identity gives only the reindexing in th_le; the thin terms and the errors from changing the actual widths belong to the enclosing D561 estimate.</p>
+<h2 id="from-these-two-inputs-to-the-cards-head">From these two inputs to the card’s head</h2>
+<p>The unit card pins <code>Deduction.CharacterBalanceMoves.core</code> (<code>ChCore.lean:283–338</code>). For one <span class="math">$u\in A_0$</span>, apply <code>th_le</code> to each <span class="math">$t,j$</span> with the positive moving width and A9, and apply the real part of <code>ch_balance</code> to the same column with its cutoff. The two CostWindows inequalities bound the resulting thin and thick errors together by <span class="math">$2b/x$</span> per column. Sum the errors over <span class="math">$t\in TT$</span> and <span class="math">$j\in\mathrm{Fin}(m)$</span> and use the pointwise gap premise. Then sum over <span class="math">$u\in A_0$</span>. Character orthogonality in <code>sum_Th</code> replaces the resulting thick sum by the subgroup cardinality times the frozen band sum with factor <span class="math">$mb\delta_2/2$</span>. Cancel the positive subgroup cardinality and use the sign of <span class="math">$mb\delta_2/2$</span> to insert the lower bound <span class="math">$h_Y$</span>. This is the enclosing inequality in the card. The detailed width and numerical estimates are in <a href="B09_v4.html">B09</a>. <code>Deduction.CharacterBalanceMoves.core</code>, <code>ChCore.lean:296–320,322–338</code>.</p>
+<h2 id="status-of-literature-named-inputs">Status of literature-named inputs</h2>
+<ul><li><code>Deduction.CharacterBalanceMoves.sum_Th</code> — in-repo constant (<code>Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean:56–73</code>); not compared.</li></ul></main><footer><a href="../../help.html">Using the local edition</a></footer></body></html>

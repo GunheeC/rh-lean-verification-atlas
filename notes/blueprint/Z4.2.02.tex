@@ -1,0 +1,72 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% RH Notes blueprint source excerpts for Z4.2.02
+% Verbatim excerpts in the notation of the parent blueprint. The labelled editions and source ranges appear below.
+% See the unit YAML for the current proof status. Earlier-round passages retain their original wording.
+\section*{Z4.2.02. Local realization of the tagged kernel}
+
+% Parent source SHA-256: 1af64922b98ed2310744411b1f18b25cc426c97220646321471836e1a3a409d6
+% blueprint/ch_P.tex lines 13224 through 13232; r6:Z4.2.02
+\subsection{Z4.2.02. Choosing the site and its adelic datum (v8)}\label{r6:Z4.2.02}
+\emph{The v10 continuation is on page~\pageref{r8:Z4.2.02}.}
+A served place gives a positive number of local places. Choose \(E\) in the local embedding system, then extend \(E.iK\circ{\rm embW}\) along the fixed \({\rm embLL}\) to \(\lambda:\overline{\mathbf Q}\to\mathbf C_p\). Apply the premise \emph{B}, \nolinkurl{Lt.CurveEx}, to this very \(\lambda\), the joint's coprimality condition and the prime conditions from the served index. This gives a single formal group and its curve specification compatible with the embedding (\nolinkurl{exists_cEmbC_lam}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsCEmbCLam.lean:14--20}; \nolinkurl{GlobalTheory.TwV.joint_at_nonempty}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/JointDataAtPAndAdelicDatumNonempty.lean:16--22}).
+
+In each component below or at \(m\), restrict the finite set of class labels to those attained by valid tuples. Choose one valid preimage per attained label. For any other valid tuple its label is attained, and equality of labels supplies a group element taking the chosen representative to it. The stabilizer has positive natural cardinal by the joint's stabilizer bound, hence is finite. Above \(m\) there are no components. These arguments give precisely the two finiteness fields of the same site (\nolinkurl{exists_finset_reps_of_cls}, \nolinkurl{finClasses_sysS}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsFinsetRepsOfCls.lean:9--33}; \nolinkurl{finStab_site}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/FinStabSite.lean:11--17}).
+
+For the witness \((\Xi,\mu)=({\rm xiAd},{\rm muOf})\), define the value of \(\Xi\) using point representatives and the fixed coordinate change. The away law identifies the evaluations arising from any two representing pairs for the same adelic inputs. For the chart-reading formula distinguish \(i<m_2\), \(i=m_2\) and \(i=m_2+1\); the coupling coset is that of the target in the middle case and the source in the last. For the character's class-reading field, a unitary matrix has norm-one determinant \(x\); the one-dimensional scalar matrix \(x\) is unitary with determinant exactly \(x\). Apply the one-dimensional character law, then the prescribed determinant reading. The remaining record also requires rational invariance, support, local constancy, integrality and level equivariance (\nolinkurl{xiAd_eq_of_isPtAd}, \nolinkurl{exists_u1Af_det}, \nolinkurl{adLawAt_xiAd}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/AdelicChainDatumCharacterLawsJointKernel.lean:33--58,62--116}).
+
+\emph{Historical v8 proof boundary. The current treatment is on page~\pageref{r8:Z4.2.02}.} The three level-equivariance identities for these chosen point functions remain in the corresponding matrix, first coupled, and last-step charts. In particular the middle identity must work with the target coupling coset above. Their precise inputs are the point-existence, norm-one character and away conditions of this same joint (\nolinkurl{levAt_mat}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/FiniteDatumLevelEquivarianceAtMatrixSteps.lean:18}; \nolinkurl{levAt_coupled}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/AdelicDatumLevelEquivarianceFirstCoupledStep.lean:13}; \nolinkurl{levAt_top}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/LastStepAdelicDatumLevelEquivariance.lean:42}; \nolinkurl{adLawAt_xiAd}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/AdelicChainDatumCharacterLawsJointKernel.lean:64--98}).
+
+% Parent source SHA-256: 82348682aa8bd82a180ccf41a80739c2a478dfdf9f5727fa2fa88afbde0010dc
+% blueprint/ch_P_r8_frames.tex lines 1 through 51; r8:Z4.2.02
+\subsection{Z4.2.02. The last twist-prime factor}\label{r8:Z4.2.02}
+Fix a twist prime \(P\) outside the type primes, with the chart, uniformizer \(q\), depth \(M\), middle pair \((g,z)\) and top pair \((g',z')\) of Section~\ref{r7:Z4.2.02}. Let \(\mathcal O\) denote the ring of elements integral at \(P\), \(k\) its residue field, and \(\xi\) the residual twist character on \(k^\times\). Extend \(\xi\) by zero at zero. The uniformizer hypothesis says \(q\in P\setminus P^2\). At the final step the auxiliary column count is zero. Write the matrix \(W\) as \(\binom{Y}{\eta}\), separating its last row. In these coordinates \(g'\) acts by \(j\) on the projection to the upper coordinates and fixes the last coordinate, hence its matrix is \(\mathrm{diag}(j,1)\). In particular \(\det g'=\det j\). On replacing \(W\) by \(g'^{-1}Wg\) its two parts become \(j^{-1}Yg\) and \(\eta g\). See \nolinkurl{GlobalTheory.TwTopLaw.det_eq_of_blk} and \nolinkurl{topLawQ_midTop} (\path{TopLevelDatumTransformAtTwistPrimeUnderLevels.lean:58--102,108--137,168--200}).
+
+Write \(A=\bar j\), \(B=\bar g\), using the integral frames of the two levels. Both matrices and their inverses preserve the first \(r\) coordinates over \(k\). To see the flag condition, take a standard vector in one of the first \(r\) positions in the parabolic lattice. In each lower row its image belongs to \(q\mathcal O\), by preservation of that lattice; the reduced entry there is zero. Apply the same argument to the inverse. At the middle level the last chart tag is \(1\), so its conjugate parabolic gives this very flag. The rank identities identify both distinguished upper blocks as \(r\)-by-\(r\).
+Write \(A_{11},A_{22},B_{11},B_{22}\) for their diagonal blocks, and put
+\[
+ a_i=\xi(\det A_{ii}),\qquad b_i=\xi(\det B_{ii})\qquad(i=1,2).
+\]
+They are units, including for an empty complementary block. The two level characters and the determinant characters in the transformation law are
+\[
+ z=b_2^{-1},\quad z'=a_2^{-1},\qquad
+ \rho_S(\det g)=(b_1b_2)^{-1},\quad
+ \rho_T(\det g')=a_1a_2 .
+\]
+Indeed the row character is the inverse character of the lower-right block. The middle unipotent character evaluates to one because its coordinate sum is empty. The full determinants are products of the diagonal determinants. See \nolinkurl{jq_LLz}, \nolinkurl{lamQB_eq}, \nolinkurl{scal_law} (\path{KernelLocalFactors/TopLawQ.lean:90--143,396--446}) and \nolinkurl{topLawQ_midTop} (\path{TopLevelDatumTransformAtTwistPrimeUnderLevels.lean:138--177,219--253}).
+
+The top factor is \(\Phi(Y)\,T(\eta,y)\), by \nolinkurl{topDat} (\path{XtPhiTopGCongr.lean:72--74}). The first factor vanishes unless \(Y\) is integral and the lower-left block of \(\bar Y\) is zero. On that locus it equals \(\xi(\det\bar Y_{11})\). This follows by reducing the entries in the unpadded chart: integrality after dividing an entry by \(q\) is equivalent to its residue vanishing. Lattice integrality and flag preservation are unchanged in both directions by the two level matrices. On the support the new upper block is \(A_{11}^{-1}\bar Y_{11} B_{11}\), so \(\Phi(j^{-1}Yg)=a_1^{-1}b_1\Phi(Y)\). A singular upper block gives zero on both sides. See \nolinkurl{phiZ_law}, \nolinkurl{phiQ_eq}, \nolinkurl{phiQ_law} (\path{KernelLocalFactors/TopLawQ.lean:67--88,252--316}).
+
+For the last row set \(L=\mathcal O^n\). The condition for \(T\) is \(q^M\eta(L)\subset\mathcal O\), equivalent to \(q^M\eta g(L)\subset\mathcal O\). If it fails both factors vanish. If it holds then
+\[
+ T(\eta,y)=q^{-Mn}\psi_P(-\eta y)
+\]
+with the fixed coefficient-field meaning of \(q^{-Mn}\). For the new vector \(g^{-1}y_1\) the linear functional takes the value \(\eta y_1\). The assumption \(q^{-M}(y_1-y_2)\in L\) gives \(\eta(y_1-y_2)\in\mathcal O\). Independently \(q^M y_2\in L\) gives \(q^{2M}\eta y_2\in\mathcal O\). Since \(D(P)\ge2M\), the partial additive law for \(\psi_P\) applies on \(q^{-D(P)}\mathcal O\) to \(-\eta y_2\) and \(-\eta(y_1-y_2)\). The second has character value one. Thus \(T(\eta g,g^{-1}y_1)=T(\eta,y_2)\), including \(M=0\). This uses both bounds in \nolinkurl{ftY_moveQ} (\path{KernelLocalFactors/TopLawQ.lean:596--656}) and the definition \nolinkurl{ftY} (\path{FiniteSumNonzeroLargeDepth.lean:1150--1155}).
+
+The scalar on the transformed factor is now
+\[
+ a_2^{-1}(a_1^{-1}b_1)(b_1b_2)^{-1}(a_1a_2)=b_2^{-1}=z.
+\]
+This proves \nolinkurl{topLawQ_midTop}, including the case where the local datum vanishes. The construction in \nolinkurl{joint_at_nonempty} then requires the adelic datum for every chart and every prime (\path{JointDataAtPAndAdelicDatumNonempty.lean:16--22}). Its hypothesis \nolinkurl{CurveEx} supplies the Lubin--Tate curve for the chosen embedding and is passed to this call in \nolinkurl{site_cmpLite_siteAdm}. The finite classes, stabilizers and embedding are described on p.~\pageref{r6:Z4.2.02}.
+
+\paragraph{Remaining expert lemmas for the pinned adelic datum.}
+Take arbitrary data of \nolinkurl{UnderTie}, namely the pinned chain \(A,\mathrm{dtU},a\) satisfying \nolinkurl{AdPins} and \nolinkurl{AdTie}. Write \(F_i(x,x';z)=\mathrm{xiAd}_{i,\beta,\beta'}(x,x';z)\) and \(M_i=\mathrm{muOf}_{i+1}\). The first function evaluates the finite datum at two chart representatives in the designated frames. The second reads the step character on a rank-one unitary representative of the norm-one idele. Fix arbitrary \(i+1\le m\), chart labels \(\beta,\beta'\), unitary adelic points \(x,x'\) of these ranks and rational matrix argument \(z\). Let \(N,N'\) be their pinned lattices, \(c\) the reader level, \(B=\mathrm{ssRec}(t,u,\mu)\) the selected finite primes of the CM field, and \(S=(t.O\,u\,\mu).S\) the rational bad primes.
+\begin{enumerate}
+\item At chart points representing the same local data above \(B\), both choices in \(F_i\) must give identical functions (\nolinkurl{PtAway}). For rational unitary isometries \(g,g'\), prove
+\[
+ F_i(gx,g'x';z)=F_i(x,x';\mathrm{inFr}(g_{\rm std},g'_{\rm std},z)).
+\]
+Here \(\mathrm{inFr}\) expresses the homomorphism in the two standard-coordinate isometries. Prove also that \(F_i(x,x';z)=F_i(x,x';z')\) whenever \((z-z')/c\) lies in the localized period module at every \(P\in B\), and that a nonzero value forces \(cz(N_P)\subseteq N'_P\) at all such \(P\). Every value must be algebraic and have norm at most one for every embedding at each \(p\notin S\). These are the distinct \nolinkurl{RatLaw}, \nolinkurl{SizeLaw} and \nolinkurl{IntOff} conclusions. Moving rational frames cancels their actions on the matrix argument; it still requires compatible representatives and congruence-invariant local functions in all three chart branches. The modulus bound for the middle coupling coset and the arithmetic bounds on its weights enter separately. See \path{GaloisGeometry/UnderTie.lean:47--101}, \path{GaloisGeometry/NatCastMemOfPlace.lean:14--19}, \path{FiniteAdelicDatumRationalInvarianceOfKernelChain.lean:14--58}, \path{AdelicDatumInvarianceSupportKernelChain.lean:99--177} and \path{AdelicFiniteDatumIntegralOffBadPrimes.lean:117--133}.
+\item For all right level elements \(\kappa,\kappa'\) in these charts prove
+\[
+ M_i(\det\kappa')\,\chi_\beta(\kappa) F_i(x\kappa,x'\kappa';z)
+ =M_i(\det\kappa)\,\chi_{\beta'}(\kappa')F_i(x,x';z).
+\]
+The three cases are \(i<m_2,\ i=m_2,\ i=m_2+1\). The coupling coset belongs to the target in the middle case and to the source in the last. The matrix and coupled equivariance, the final type-prime identity, and the comparison of the chosen local frame values with the adelic determinants still need hand proofs. In particular fix any \(i<m\), any chart at \(j\le m\), a level element \(\kappa\) there, and rational scalars \(e_P\) for all bad row primes \(P\). Put \(d_0=\det\kappa\). If \(q_P^{-1}(d_0^{-1}\,\mathrm{seam}(e_P)-1)\) is integral at the transported prime for every \(P\), the required determinant assertion is
+\[
+ M_i(d_0)\,\sigma_0\!\left(\prod_P\rho_{S,i,P}(e_P)\right)=1,qquad
+ M_i(d_0)=\sigma_0\!\left(\prod_P\rho_{T,i,P}(e_P)\right).
+\]
+Here \(q_P\) is the prescribed \nolinkurl{qOf} integer at the transported prime and \(\sigma_0\) the prescribed complex coefficient embedding. The residue calculation above identifies individual factors at the last twist prime. It provides neither an integral Hilbert--90 preimage with its prescribed trivial components nor the tame character product at the other primes. Those are genuine deductions inside the construction. See \nolinkurl{muOf_det_lev} (\path{MuCharacterDetLevelEqLocalTameProduct.lean:385--401,416--488}), \nolinkurl{exists_integral_h90_preimage_trivial_where_trivial} (\path{IntegralHilbert90FiniteIdelesTrivialWhereTrivial.lean:164--171,352--354}), \nolinkurl{phiAt_source}, \nolinkurl{phiAt_target} (\path{PhiMapsAndOmegaLaw.lean:819--857}), \nolinkurl{xiAt_two_sided} (\path{ExistsMoveRight.lean:218--248,278--285}), \nolinkurl{levAt_mat}, \nolinkurl{levAt_coupled} and \nolinkurl{levAt_top} (\path{FiniteDatumLevelEquivarianceAtMatrixSteps.lean:18--79}, \path{AdelicDatumLevelEquivarianceFirstCoupledStep.lean:13--37}, \path{LastStepAdelicDatumLevelEquivariance.lean:16--38,42--115}).
+\end{enumerate}
+\emph{Partial. [Proved in Lean, not reproduced]} The chart point existence and independence, the step-character laws and the listed finite-datum clauses are assembled at \path{AdelicChainDatumCharacterLawsJointKernel.lean:62--116}. The proved final twist-prime identity is one local factor of this assembly.
+

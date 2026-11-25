@@ -1,0 +1,183 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "D415",
+  "edition_sha256": "3da11f9e2b0ff2bc540ca1c2717d1b52ad89d9331e5c52cae0bf98a9205f06b9",
+  "note_sha256": "e00826fa9dc3f43c31e4833c2d9cc68bc8efa3ae8bc52ab767971fc3f1e99505",
+  "statement_sha256": "8077b90b68a5e29c2b759a6fa0771ed3e126fbfff1649651a51c470198f4c42c",
+  "sources": [
+    {
+      "path": "notes/units/D415_round4.md",
+      "sha256": "e00826fa9dc3f43c31e4833c2d9cc68bc8efa3ae8bc52ab767971fc3f1e99505"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The given harmonic-analysis and spherical hypotheses supply the positive chain-step scalars.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: standing hypotheses for positive theta-chain scalars"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.Core.Rk.UpInjRow.upInj",
+          "file": "Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/ThetaLiftAdjointScalarFormulaInjective.lean",
+          "line0": 32,
+          "line1": 38
+        }
+      ],
+      "source": "notes/units/D415_round4.md",
+      "anchor": "Use the discrete-series cover, Harish–Chandra finiteness and modules,",
+      "source_lines": [
+        25,
+        25
+      ],
+      "claim_sha256": "06b81123619e3108a8c5c328840a9cc36d5cd8b51be2b81388f017942cf16b85",
+      "passage_sha256": "99ee4ef69e8e9082a7ed7c218a5131b83a0b424623f06735e7d8700059df41f6",
+      "sha256": "efdf1ebb9e3360571ce2a26173b4fb02c24a422d22fb910471c966e1aac70638",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "On a nonzero row part one model supplies positive local values at all stages.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "input: nonzero row part and its common model"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.Core.Rk.UpInjRow.upInj",
+          "file": "Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/ThetaLiftAdjointScalarFormulaInjective.lean",
+          "line0": 34,
+          "line1": 38
+        },
+        {
+          "name": "GlobalTheory.Core.Rk.UpInjScal.exists_lvals",
+          "file": "Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/UpInjOfBForm.lean",
+          "line0": 29,
+          "line1": 46
+        }
+      ],
+      "source": "notes/units/D415_round4.md",
+      "anchor": "For the chosen admissible scalar form the adjoint",
+      "source_lines": [
+        29,
+        29
+      ],
+      "claim_sha256": "8167c65eb21ed885cc34f720366953f1bb5b26d6b2578ed939109d37fbd519f2",
+      "passage_sha256": "43adb6d671691de7158ec9e4d77109c5320a9eacda3622db92bd78981e73ab81",
+      "sha256": "6cc49950d8ab674451b7fe262fbc73a95ca48f884509a4f61b3412b160ced422",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The theta-adjoint composite acts by a positive scalar on each part, with scalar one permissible on a zero part.",
+      "kind": "case-split",
+      "uses": [
+        "S2",
+        "input: BForm scalar formula"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.Core.Rk.upInj_of_bForm",
+          "file": "Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/UpInjOfBForm.lean",
+          "line0": 54,
+          "line1": 69
+        }
+      ],
+      "source": "notes/units/D415_round4.md",
+      "anchor": "On a zero row part, any vector in",
+      "source_lines": [
+        33,
+        33
+      ],
+      "claim_sha256": "6d7837a1d56482450d689bd0e79428450cf55015021bd4fafd28d30189349307",
+      "passage_sha256": "de5f9d7bcfd368d96e179c73df6a612e937455fcd6143d1a69a115b298748e53",
+      "sha256": "f14f3f16fd1df52315714100d1e8873f80591643e50b0b54b632beca6f0a646f",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "Nonzero scalar action on the spanning parts implies injectivity of the adjoint.",
+      "kind": "assembly",
+      "uses": [
+        "S3",
+        "standard: injectivity of an adjoint from nonzero scalar action on spanning parts"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.Core.Rk.upInj_of_bForm",
+          "file": "Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/UpInjOfBForm.lean",
+          "line0": 70,
+          "line1": 76
+        }
+      ],
+      "source": "notes/units/D415_round4.md",
+      "anchor": "For each part the scalar is nonzero. Choose",
+      "source_lines": [
+        37,
+        37
+      ],
+      "claim_sha256": "2f5765dfb892ada60562832446b98afba8f39152b893b8cdfb61252d12df796b",
+      "passage_sha256": "ef1360847e9543283fa047e62e92cadd5e7493a5bd1ec12221e958a51b7cdeda",
+      "sha256": "e72beaaa4b20002cfb1a6eb1de99ee6b48c9299dad0e77e5e1dae10d7839a5e5",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "ea48f7b1bba746c90995647ced511c4a626fe0b9d4201d811f5fda54aec0999f",
+      "sources": [
+        {
+          "path": "notes/units/D415_round4.md",
+          "sha256": "2111972b3ff64dc43fdf0aa29468ce28b0a36b99f532ecb7d18fefab966da409"
+        }
+      ],
+      "steps": {
+        "S1": "7df68dd0e1f23952abd911d4d5a69eef8789312870f7be18f7f47b621cb957a7",
+        "S2": "222f9fa44f1e4c555fda567041b236c58d8f37be5bc0a3cd7b4ee98ded1c557b",
+        "S3": "f54118490add17db0684e084de7d4b4b42ef849397989fe832fa38e28bffa8a8",
+        "S4": "e7c44bccc2036e027003d18ca43178f668683a1fccc52b8d05a04d232aa73ae9"
+      },
+      "step_texts": {
+        "S1": "The given harmonic-analysis and spherical hypotheses supply the positive chain-step scalars.",
+        "S2": "On a nonzero row part one model supplies positive local values at all stages.",
+        "S3": "The theta-adjoint composite acts by a positive scalar on each part, with scalar one permissible on a zero part.",
+        "S4": "Nonzero scalar action on the spanning parts implies injectivity of the adjoint."
+      }
+    },
+    {
+      "edition_sha256": "d3e7736f2c43ceeef5d170fc6d831c304e1260c3b362e0989e7ff63b01394ef2",
+      "sources": [
+        {
+          "path": "notes/units/D415_round4.md",
+          "sha256": "2111972b3ff64dc43fdf0aa29468ce28b0a36b99f532ecb7d18fefab966da409"
+        }
+      ],
+      "statement_sha256": "8077b90b68a5e29c2b759a6fa0771ed3e126fbfff1649651a51c470198f4c42c",
+      "steps": {
+        "S1": "efdf1ebb9e3360571ce2a26173b4fb02c24a422d22fb910471c966e1aac70638",
+        "S2": "6cc49950d8ab674451b7fe262fbc73a95ca48f884509a4f61b3412b160ced422",
+        "S3": "f14f3f16fd1df52315714100d1e8873f80591643e50b0b54b632beca6f0a646f",
+        "S4": "e72beaaa4b20002cfb1a6eb1de99ee6b48c9299dad0e77e5e1dae10d7839a5e5"
+      },
+      "step_texts": {
+        "S1": "The given harmonic-analysis and spherical hypotheses supply the positive chain-step scalars.",
+        "S2": "On a nonzero row part one model supplies positive local values at all stages.",
+        "S3": "The theta-adjoint composite acts by a positive scalar on each part, with scalar one permissible on a zero part.",
+        "S4": "Nonzero scalar action on the spanning parts implies injectivity of the adjoint."
+      },
+      "step_passages": {
+        "S1": "99ee4ef69e8e9082a7ed7c218a5131b83a0b424623f06735e7d8700059df41f6",
+        "S2": "43adb6d671691de7158ec9e4d77109c5320a9eacda3622db92bd78981e73ab81",
+        "S3": "de5f9d7bcfd368d96e179c73df6a612e937455fcd6143d1a69a115b298748e53",
+        "S4": "ef1360847e9543283fa047e62e92cadd5e7493a5bd1ec12221e958a51b7cdeda"
+      }
+    }
+  ]
+}

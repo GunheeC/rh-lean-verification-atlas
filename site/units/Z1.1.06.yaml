@@ -1,0 +1,94 @@
+{
+  "id": "Z1.1.06",
+  "title": "The common marking and degree zero",
+  "track": {
+    "primary": "galois",
+    "secondary": []
+  },
+  "statement": "From $\\mathrm{HypothesesH}'$, the linked endomorphism conclusion and linked unramified flags, obtain both the ordinary integral marked-point theorem and the host marking with finite weight-zero components and its rank-three characteristic-zero automorphy clause.",
+  "assumptions": [
+    "Z1.1.05",
+    "source:blueprint_v13"
+  ],
+  "hypothesis_details": [
+    "Use $H'$ on the indicated host.",
+    "Assume the linked endpoint assertion and linked unramified flags for that same datum."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.Z.Win.Dn.ends_of_alt",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/DnEnds.lean",
+      "line0": 35,
+      "line1": 39,
+      "sha256": "9289d653ef1b3d823d0ac38df3932cdf54e082dc966efbc483a4d28ece386c66",
+      "dominated": 3685,
+      "graph": "allChi",
+      "role": "statement"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/blueprint/Z1.1.06.tex",
+      "section": "r8:small:Z1.1.06",
+      "pages": []
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r8:small:Z1.1.06",
+      "pages": [
+        468,
+        468
+      ],
+      "printed_page": 443,
+      "scope": "First page of this named destination."
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [
+    "B04",
+    "Z1.1.05"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "From the linked points and flags derive both the ordinary marking and the host marking with their finite and rank-three automorphic conclusions."
+  ],
+  "last_checked": "2026-11-24",
+  "blueprint_members": [
+    "Z1.1.06"
+  ],
+  "representative": "UpperTheory.V.Z.Win.Dn.ends_of_alt",
+  "statement_declarations": [
+    "UpperTheory.V.Z.Win.Dn.ends_of_alt"
+  ],
+  "grade_scope": "Named statement declarations with the hypotheses above. Chart supplier records have their own review scopes.",
+  "confirmation_basis": "Minimum across the statement declarations, using registry rows for the blueprint assignments listed here. Reviews of other expositions of a shared declaration are included as context.",
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "slug": "the-common-marking-and-degree-zero",
+  "aliases": [
+    "ends_of_alt",
+    "Z1.1.06 The common marking and degree zero"
+  ],
+  "background": [
+    "Marked deformation rings",
+    "Unramified flags"
+  ],
+  "hypothesis_source": {
+    "document": "blueprint_v13",
+    "section": "r8:small:Z1.1.06",
+    "pages": [
+      468,
+      468
+    ]
+  },
+  "question_sources": [
+    "data/status_ledger.json"
+  ],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "B04": "graph",
+    "Z1.1.05": "statement-reading"
+  },
+  "summary": "The linked endomorphism result and unramified flags give the integral marking and a host marking whose weight-zero pieces are finite. This supplies the distinguished point at which the rank-three characteristic-zero automorphy clause is required."
+}

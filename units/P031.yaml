@@ -1,0 +1,92 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "P031",
+  "title": "One cyclotomic generator for every layer",
+  "track": {
+    "primary": "galois",
+    "secondary": [
+      "ktheory"
+    ]
+  },
+  "statement": "Let \\(\\ell\\) be prime and let \\(L_0\\) contain a primitive \\(\\ell\\)-th\nroot if \\(\\ell\\) is odd, or a primitive fourth root if \\(\\ell=2\\).\nWrite \\(c_0\\) for the largest \\(c\\) such that \\(L_0\\) contains a\nprimitive \\(\\ell^c\\)-th root. There exists \\(\\gamma\\in G_{L_0}\\) whose\ncyclotomic image topologically generates the image and satisfies\n\\(v_\\ell(\\chi(\\gamma)-1)=c_0\\). The base contains a primitive\n\\(\\ell^{c_0}\\)-th root. For every \\(E\\ge1\\), every \\(m\\ge0\\), and\nevery degree-\\(\\ell^m\\) cyclotomic layer \\(L_m/L_0\\),\n\\[\n \\operatorname{shaInv}(L_m,\\ell,E)=\n \\operatorname{length}_{\\mathbb Z_\\ell}\n \\operatorname{coker}\\bigl(x_{\\mathrm{Tw}}(E,\\gamma)^{\\ell^m}-1\\bigr).\n\\]\nHere \\(x_{\\mathrm{Tw}}\\) is the twisted action on the dual of the\ninfinite-layer character module with the specified local conditions.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Fix a prime $\\ell$ and a number field containing a primitive $\\ell$th root when $\\ell$ is odd, or a primitive fourth root at two.",
+    "Use its maximal root-of-unity exponent and the corresponding tower."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.Tower.exists_descends",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/NumberFieldTowers/ExistsDescends.lean",
+      "line0": 50,
+      "line1": 57,
+      "sha256": "b612f89d62d4eef6732fbc955e0646ad7d28151ed86ab43afce184d9040f1ab0",
+      "dominated": 53,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "7.8 (pn:P031)",
+      "pages": [
+        76,
+        76
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/P031.tex",
+      "section": "pn:P031",
+      "pages": []
+    }
+  ],
+  "status": "Full",
+  "grade": "L1",
+  "reviews": [
+    "reviews/R20_review.md"
+  ],
+  "prerequisites": [],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [
+    {
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "lines": [
+        109,
+        109
+      ],
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript.",
+      "verdict": "Exact statement comparison"
+    }
+  ],
+  "paper_id": "P031",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "one-cyclotomic-generator-for-every-layer",
+  "aliases": [
+    "P031 One cyclotomic generator for every layer"
+  ],
+  "background": [
+    "Cyclotomic extensions",
+    "Galois groups of localizations"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "7.8 (pn:P031)",
+    "pages": [
+      76,
+      76
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "summary": "One cyclotomic generator gives a cokernel formula for the localization-kernel length across every permitted layer and positive twist. Fixing that generator allows the layer index to vary while keeping the action being measured identifiable."
+}

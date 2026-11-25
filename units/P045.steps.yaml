@@ -1,0 +1,251 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "P045",
+  "edition_sha256": "1eacb3433d6bd875cc264992fd23b246d1f6cb465f616d016a19c3ebb7a2a439",
+  "note_sha256": "ba7b8403ff5f1bbb819943f194ecd35faedd8740ed2642c79c4f83ca09c2542e",
+  "statement_sha256": "ce382fa64e6aa68a95e75a6fa9ce78fc5b350f4f7c1a6e0e1d6312afd7dcfa79",
+  "sources": [
+    {
+      "path": "notes/units/P045.tex",
+      "sha256": "2397bd218c676fa0ad34f0e4bd78f0f339461e1e6879f100822c1fdfd9932c59"
+    },
+    {
+      "path": "notes/local/excerpt.tex",
+      "sha256": "e740e9db39129cd2d8d30350e2af52fbc59ad372c8e49376606c595a52d8e0b4"
+    },
+    {
+      "path": "notes/local/README.md",
+      "sha256": "32cd7da9d4545767de3a7c490613be429eb5a80671293629b65d772a9becdbd7"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Paired and mixed terms yield the asserted factorial valuation lower bound on each coefficient.",
+      "kind": "inequality",
+      "uses": [
+        "input: integral factorization and differentiated low forms"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.MainNotions.FormalGroupSystem.Pf.hecke_place_bound",
+          "file": "Formalism/SharpRestriction/GrowthBounds/MultisetValuation/FirstTheoremPlaceBound.lean",
+          "line0": 28,
+          "line1": 30
+        }
+      ],
+      "source": "notes/units/P045.tex",
+      "anchor": "the factorial from differentiation",
+      "source_lines": [
+        7,
+        21
+      ],
+      "claim_sha256": "93c99ceda1bc21be9c226ccef87fba6fe961f4b69764b58570ac90b168ad0851",
+      "passage_sha256": "e091382fa53909d2a7fddc74f2768248bcaa57d2eac33556fb386d918b4e47b7",
+      "sha256": "6cac9ec57f81a138a361d105aa4752379cd3519f0f964404d7086f27ba74b2a1",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Every paired term consumes an available mark, yielding the weighted budget bound.",
+      "kind": "inequality",
+      "uses": [
+        "S1",
+        "input: minor and top-degree budgets"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.MainNotions.FormalGroupSystem.Pf.hecke_place_bound",
+          "file": "Formalism/SharpRestriction/GrowthBounds/MultisetValuation/FirstTheoremPlaceBound.lean",
+          "line0": 28,
+          "line1": 30
+        }
+      ],
+      "source": "notes/units/P045.tex",
+      "anchor": "For the weighted estimate mark columns",
+      "source_lines": [
+        23,
+        25
+      ],
+      "claim_sha256": "b73fe054b8ce7ab3081c913ee96f0efb3c7998417018d2227a24200de12cce29",
+      "passage_sha256": "7888938977cb7041e19970e8d0d2145724e3c9aa3edb47113cd6ce589ff5211f",
+      "sha256": "2e879b4fc167ab3ce5c64e1060876041293083af05e288ec3fe71677faec150f",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The generic frame-entry norm bounds the individual specialized coefficients.",
+      "kind": "computation",
+      "uses": [
+        "S2",
+        "standard: multiplicative Gauss norm"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.MainNotions.FormalGroupSystem.Pf.hecke_place_bound",
+          "file": "Formalism/SharpRestriction/GrowthBounds/MultisetValuation/FirstTheoremPlaceBound.lean",
+          "line0": 28,
+          "line1": 30
+        }
+      ],
+      "source": "notes/units/P045.tex",
+      "anchor": "Applying the multiplicative Gauss norm",
+      "source_lines": [
+        23,
+        25
+      ],
+      "claim_sha256": "804bf3e633967e268d9eb2b68fecacdd360d3f16abfece0e83c7ec897d4313e9",
+      "passage_sha256": "7888938977cb7041e19970e8d0d2145724e3c9aa3edb47113cd6ce589ff5211f",
+      "sha256": "ab8dd1d1614771ae00b81060a0c542f5cf695dce138bb537e75a9784fad88fa5",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The local height and position counts give the claimed place bound at the specified index.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "S2",
+        "S3",
+        "input: integral formal-group jet comparison"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.MainNotions.FormalGroupSystem.Pf.hecke_place_bound",
+          "file": "Formalism/SharpRestriction/GrowthBounds/MultisetValuation/FirstTheoremPlaceBound.lean",
+          "line0": 28,
+          "line1": 30
+        }
+      ],
+      "source": "notes/units/P045.tex",
+      "anchor": "Substitution of the position and height counts",
+      "source_lines": [
+        23,
+        25
+      ],
+      "claim_sha256": "80e2cabce1838e1a6e947cbd5eceaff375bfa3910ab454ec495bc75ac9eb2b51",
+      "passage_sha256": "7888938977cb7041e19970e8d0d2145724e3c9aa3edb47113cd6ce589ff5211f",
+      "sha256": "38f8d4af776ac962f8227fc2345f1b0a52de2dd849a4477e58511094674f25d5",
+      "ai_review": []
+    },
+    {
+      "id": "S5",
+      "status": "active",
+      "claim": "The zero array is feasible under the nonnegativity hypothesis, so the supremum is nonnegative.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "standard: nonnegative arrays"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.BasicNotions.factLpF",
+          "file": "Formalism/LocalRingCardinality/RankBoundMonotoneInDimension.lean",
+          "line0": 817,
+          "line1": 859
+        }
+      ],
+      "source": "notes/local/excerpt.tex",
+      "anchor": "is feasible, so the supremum",
+      "source_lines": [
+        126,
+        141
+      ],
+      "claim_sha256": "1956a52c39cac4b59cdc4f46256e96a4874c54d3e61ba5a9c1a98b317bc1d0f8",
+      "passage_sha256": "3ff3c52a2f5cfbf34e489563313a2e66c9996f2bfe6e10f8d5778a4eb484efa1",
+      "sha256": "efa709de099f8ad71fc8f852bd5bf13806b6f535844502af2732d970218ef134",
+      "ai_review": []
+    },
+    {
+      "id": "S6",
+      "status": "active",
+      "claim": "Reindexing the cyclic columns in the sum of the constraints counts the unweighted array entries once.",
+      "kind": "computation",
+      "uses": [
+        "standard: permutation of a finite cyclic group"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.BasicNotions.factLpF",
+          "file": "Formalism/LocalRingCardinality/RankBoundMonotoneInDimension.lean",
+          "line0": 817,
+          "line1": 859
+        }
+      ],
+      "source": "notes/local/excerpt.tex",
+      "anchor": "Summing the constraints",
+      "source_lines": [
+        126,
+        141
+      ],
+      "claim_sha256": "0e68b03e077d5d411205f8345556ec10ee53db485ddaa47e4da99ba18f1f32b7",
+      "passage_sha256": "3ff3c52a2f5cfbf34e489563313a2e66c9996f2bfe6e10f8d5778a4eb484efa1",
+      "sha256": "5921e0070c2778557da88b90d7e0fed0ba7ee1f4e45128ca1eae61428ad11b15",
+      "ai_review": []
+    },
+    {
+      "id": "S7",
+      "status": "active",
+      "claim": "Odd indices give a factor at least $\\ell$ and hence bound the feasible sum by the total row size divided by $\\ell+1$.",
+      "kind": "inequality",
+      "uses": [
+        "input: nonnegative feasible array and odd-index support"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.BasicNotions.factLpF",
+          "file": "Formalism/LocalRingCardinality/RankBoundMonotoneInDimension.lean",
+          "line0": 817,
+          "line1": 859
+        }
+      ],
+      "source": "notes/local/excerpt.tex",
+      "anchor": "the feasible set is bounded above",
+      "source_lines": [
+        126,
+        141
+      ],
+      "claim_sha256": "96c1650fe50596440b366fd0f50702781ddad7bd5f2cbde40c1babea98042aca",
+      "passage_sha256": "3ff3c52a2f5cfbf34e489563313a2e66c9996f2bfe6e10f8d5778a4eb484efa1",
+      "sha256": "b621f260069016b7cb2647348ae02cfbfaafd274df132fa060154929549e67ed",
+      "ai_review": []
+    },
+    {
+      "id": "S8",
+      "status": "active",
+      "claim": "The elementary defect calculation assumes only the displayed finite-array data, while the jet application also assumes integral local comparison inputs.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: comparison at the designated local place"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.BasicNotions.factLpF",
+          "file": "Formalism/LocalRingCardinality/RankBoundMonotoneInDimension.lean",
+          "line0": 817,
+          "line1": 859
+        },
+        {
+          "name": "Formalism.MainNotions.FormalGroupSystem.Pf.hecke_place_bound",
+          "file": "Formalism/SharpRestriction/GrowthBounds/MultisetValuation/FirstTheoremPlaceBound.lean",
+          "line0": 28,
+          "line1": 30
+        }
+      ],
+      "source": "notes/local/README.md",
+      "anchor": "The finite-array inequality is closed",
+      "source_lines": [
+        13,
+        13
+      ],
+      "claim_sha256": "d333e72c7b93641a5c66ce41710da54b65a9623f6438314c8f5c82b103b568b8",
+      "passage_sha256": "1594a5bd20906400286dd2f38a432867933bfdda944390da24fff6a5c8909156",
+      "sha256": "9eef9c40a8f6b83465690d12e9757981ecbcf0f96e74e97f2b3a1243bcd76718",
+      "ai_review": []
+    }
+  ],
+  "history": []
+}

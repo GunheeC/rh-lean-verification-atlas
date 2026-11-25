@@ -1,0 +1,203 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "T24",
+  "edition_sha256": "ebc0814003d5d1f4a52be2f72c4299a53084aeeff6897655e541ab68914fd4ef",
+  "note_sha256": "2aeb38f1ccfdad1761391f83fdc4fc9cbbd07628c60a76a97dac7bc481ee459e",
+  "statement_sha256": "367c6731b1a2936173cb169056162186f1eec41fff1a83b0009e35f918fb7700",
+  "sources": [
+    {
+      "path": "notes/units/T24_round4.md",
+      "sha256": "2aeb38f1ccfdad1761391f83fdc4fc9cbbd07628c60a76a97dac7bc481ee459e"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "On every pure pair the same $p$-adic exponent determines both the Tate pairing and the coefficient of the given bilinear form.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: normalized Weil pairing and compatible roots"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.CompanionTheory.Ar.HT.FarguesExact",
+          "file": "Development/AutomorphicSpectrum/PublishedTheorems/Algebra₂/FarguesExact.lean",
+          "line0": 10,
+          "line1": 18
+        }
+      ],
+      "source": "notes/units/T24_round4.md",
+      "anchor": "Fix the two integral modules and the form",
+      "source_lines": [
+        13,
+        13
+      ],
+      "claim_sha256": "277ac7117ba64d59e535887f2ed02d064598182b8ac5c2cc8b840d7951a7826a",
+      "passage_sha256": "153cf269df6ee2c06481c8082cecf66128741d74a50fc541b7b21d49fcb508b1",
+      "sha256": "f83d044396125199320238357a66883690ced1705b382f0166cbba402b9e1404",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The wrapper calls a closed supplier of the orthogonality statement.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: prismatic comparison on connected and dual-connected data"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.LiteratureTheorems.fargues_exact_of_literature",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+          "line0": 549,
+          "line1": 550
+        },
+        {
+          "name": "UpperTheory.Lit.farguesExact",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/PrismaticDieudonne/PrismaticDieudonneHodge.lean",
+          "line0": 27,
+          "line1": 28
+        },
+        {
+          "name": "UpperTheory.Lit.prismaticDieudonneHodge",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/PrismaticDieudonne/PrismaticDieudonneHodge.lean",
+          "line0": 19,
+          "line1": 25
+        }
+      ],
+      "source": "notes/units/T24_round4.md",
+      "anchor": "Identify the supplier behind the interface",
+      "source_lines": [
+        17,
+        17
+      ],
+      "claim_sha256": "d2a0e636d378e48a04a2bf2b7d8cd12fc371548233741b8758e56e0a101daeaa",
+      "passage_sha256": "215327d04ab96f35996789aac99996b59a00770d7e9a4dc81988b29a20e91da1",
+      "sha256": "479d5834b39d651b5ef844b12c5d2466123b381bafb896932cc60d08c8353bb2",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The scaled factorization through the differential implies that the bilinear form vanishes on its kernel.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "S2",
+        "input: kernel description from the Hodge–Tate sandwich"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.Tls2.Jfarg.farguesExact_of_hodge",
+          "file": "Development/WeilBound/CoreStatements/TemperedRepresentationTheory/FarguesExactness/FarguesExactOfPrismatic.lean",
+          "line0": 56,
+          "line1": 107
+        }
+      ],
+      "source": "notes/units/T24_round4.md",
+      "anchor": "Move from pure Tate vectors to the desired functional",
+      "source_lines": [
+        21,
+        21
+      ],
+      "claim_sha256": "4c1ffe49d917e57818b5bdb291bdc69639674c66b07d498c2572980f5145f08a",
+      "passage_sha256": "de6491e79df0977225b275f2b39e0424234012201ebdbfd2e8a9ac5f5fc27145",
+      "sha256": "37e2b9ec7f5ad0949f7d7a723b9a252596463b8e64fcf50ef41155a122f3c4ea",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "A form annihilating the differential kernel factors after multiplication by $p^2$, giving the converse over the valuation ring.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "S2",
+        "input: the $p^2$ image bound"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.Tls2.Jfarg.farguesExact_of_hodge",
+          "file": "Development/WeilBound/CoreStatements/TemperedRepresentationTheory/FarguesExactness/FarguesExactOfPrismatic.lean",
+          "line0": 56,
+          "line1": 107
+        },
+        {
+          "name": "GlobalTheory.CompanionTheory.Relay.hodge_tate_of_fargues_exact",
+          "file": "Development/AutomorphicSpectrum/Proofs/AlgebraProofs/HodgeTateOfFarguesExact.lean",
+          "line0": 36,
+          "line1": 37
+        }
+      ],
+      "source": "notes/units/T24_round4.md",
+      "anchor": "Recover the converse over the original ring",
+      "source_lines": [
+        25,
+        25
+      ],
+      "claim_sha256": "d5218b845eb674e24a5fb6475fc723203c5006982abbca39b41f33e08d4796bc",
+      "passage_sha256": "e54fb8d95937e9e084c1e7810b7cf6394a50206ff02196acbe6a86e0a697d573",
+      "sha256": "bccc0a1f54146cd71ae4f88f6f56aedca0880ebafa84553d6ed86b6aeb47b8b4",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "445afec43fae73c3b3500bc9a2e956d0188bb801ef20800b3d6a860e448c6623",
+      "sources": [
+        {
+          "path": "notes/units/T24_round4.md",
+          "sha256": "66f5d93ba75e9aed554f66fb3825ea1574b0edabff8c130fc75baa52c67b27bf"
+        }
+      ],
+      "statement_sha256": "0dc5e690e4250a71c97ab61900f76799f1efa5a805a839d396f6e4ee6ffa5610",
+      "steps": {
+        "S1": "f83d044396125199320238357a66883690ced1705b382f0166cbba402b9e1404",
+        "S2": "479d5834b39d651b5ef844b12c5d2466123b381bafb896932cc60d08c8353bb2",
+        "S3": "37e2b9ec7f5ad0949f7d7a723b9a252596463b8e64fcf50ef41155a122f3c4ea",
+        "S4": "bccc0a1f54146cd71ae4f88f6f56aedca0880ebafa84553d6ed86b6aeb47b8b4"
+      },
+      "step_texts": {
+        "S1": "On every pure pair the same $p$-adic exponent determines both the Tate pairing and the coefficient of the given bilinear form.",
+        "S2": "The wrapper calls a closed supplier of the orthogonality statement.",
+        "S3": "The scaled factorization through the differential implies that the bilinear form vanishes on its kernel.",
+        "S4": "A form annihilating the differential kernel factors after multiplication by $p^2$, giving the converse over the valuation ring."
+      },
+      "step_passages": {
+        "S1": "153cf269df6ee2c06481c8082cecf66128741d74a50fc541b7b21d49fcb508b1",
+        "S2": "215327d04ab96f35996789aac99996b59a00770d7e9a4dc81988b29a20e91da1",
+        "S3": "de6491e79df0977225b275f2b39e0424234012201ebdbfd2e8a9ac5f5fc27145",
+        "S4": "e54fb8d95937e9e084c1e7810b7cf6394a50206ff02196acbe6a86e0a697d573"
+      }
+    },
+    {
+      "edition_sha256": "83a1f1763b230cb7e503465a246200f9344d60ea66b56a288bd2e5b96ba52669",
+      "sources": [
+        {
+          "path": "notes/units/T24_round4.md",
+          "sha256": "2aeb38f1ccfdad1761391f83fdc4fc9cbbd07628c60a76a97dac7bc481ee459e"
+        }
+      ],
+      "statement_sha256": "0dc5e690e4250a71c97ab61900f76799f1efa5a805a839d396f6e4ee6ffa5610",
+      "steps": {
+        "S1": "f83d044396125199320238357a66883690ced1705b382f0166cbba402b9e1404",
+        "S2": "479d5834b39d651b5ef844b12c5d2466123b381bafb896932cc60d08c8353bb2",
+        "S3": "37e2b9ec7f5ad0949f7d7a723b9a252596463b8e64fcf50ef41155a122f3c4ea",
+        "S4": "bccc0a1f54146cd71ae4f88f6f56aedca0880ebafa84553d6ed86b6aeb47b8b4"
+      },
+      "step_texts": {
+        "S1": "On every pure pair the same $p$-adic exponent determines both the Tate pairing and the coefficient of the given bilinear form.",
+        "S2": "The wrapper calls a closed supplier of the orthogonality statement.",
+        "S3": "The scaled factorization through the differential implies that the bilinear form vanishes on its kernel.",
+        "S4": "A form annihilating the differential kernel factors after multiplication by $p^2$, giving the converse over the valuation ring."
+      },
+      "step_passages": {
+        "S1": "153cf269df6ee2c06481c8082cecf66128741d74a50fc541b7b21d49fcb508b1",
+        "S2": "215327d04ab96f35996789aac99996b59a00770d7e9a4dc81988b29a20e91da1",
+        "S3": "de6491e79df0977225b275f2b39e0424234012201ebdbfd2e8a9ac5f5fc27145",
+        "S4": "e54fb8d95937e9e084c1e7810b7cf6394a50206ff02196acbe6a86e0a697d573"
+      }
+    }
+  ]
+}

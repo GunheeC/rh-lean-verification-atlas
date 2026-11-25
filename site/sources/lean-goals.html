@@ -1,0 +1,31 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>What Main.lean exports · RH verification atlas</title><link rel="stylesheet" href="../atlas.css"></head><body><header><div class="bar"><a class="brand" href="../index.html">RH verification atlas</a><nav aria-label="Atlas navigation"><a href="../index.html">Home</a> <a href="../STATUS.html">Status</a> <a href="../MAP.html">Map</a> <a href="../dashboard/index.html">Tracks</a> <a href="../lookup/search.html">Search declarations</a></nav></div></header><main><h1 id="what-mainlean-exports">What Main.lean exports</h1>
+<p class="notice">AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved</p>
+<p>These are the five declaration signatures in the pinned submission. The linked definitions give the Lean quantifiers and exceptional points. <a href="https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Main.lean#L4-L12">Main.lean, lines 4–12</a> · <a href="https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Statements.lean#L3-L16">Statements.lean, lines 3–16</a></p>
+<h2 id="p001">P001</h2>
+<pre><code>theorem riemannHypothesis : RiemannHypothesis</code></pre>
+<p>The first target is the Mathlib predicate. The source identifies it definitionally with the explicit zeta formulation in P002. Both exclude negative even integers and the conventional value at the pole. <a href="https://math.mit.edu/~drew/grh/">Challenge and definition</a></p>
+<p><a href="../units/P001.html">Unit P001</a> · <a href="https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Main.lean#L4-L4">Source signature</a></p>
+<h2 id="p002">P002</h2>
+<pre><code>theorem riemannZeta_eq_zero_re : RiemannZetaZerosOnLine</code></pre>
+<pre><code>def RiemannZetaZerosOnLine : Prop :=
+  ∀ s : ℂ, riemannZeta s = 0 → (¬∃ n : ℕ, s = -2 * ((n : ℂ) + 1)) → s ≠ 1 → s.re = 1 / 2</code></pre>
+<p><a href="../units/P002.html">Unit P002</a> · <a href="https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Main.lean#L6-L6">Source signature</a></p>
+<h2 id="p003">P003</h2>
+<pre><code>theorem LFunction_ne_zero_of_half_lt_re : DirichletLNonvanishingRightOfHalf</code></pre>
+<pre><code>def DirichletLNonvanishingRightOfHalf : Prop :=
+  ∀ (N : ℕ) [NeZero N] (χ : DirichletCharacter ℂ N) (s : ℂ),
+    1 / 2 &lt; s.re → (χ ≠ 1 ∨ s ≠ 1) → DirichletCharacter.LFunction χ s ≠ 0</code></pre>
+<p><a href="../units/P003.html">Unit P003</a> · <a href="https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Main.lean#L8-L8">Source signature</a></p>
+<h2 id="p004">P004</h2>
+<pre><code>theorem LFunction_eq_zero_re : DirichletLZerosOnLine</code></pre>
+<pre><code>def DirichletLZerosOnLine : Prop :=
+  ∀ (N : ℕ) [NeZero N] (χ : DirichletCharacter ℂ N) (s : ℂ),
+    0 &lt; s.re → s.re &lt; 1 → DirichletCharacter.LFunction χ s = 0 → s.re = 1 / 2</code></pre>
+<p><a href="../units/P004.html">Unit P004</a> · <a href="https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Main.lean#L10-L10">Source signature</a></p>
+<h2 id="p005">P005</h2>
+<pre><code>theorem LFunction_eq_zero_re_of_isPrimitive : PrimitiveDirichletLZerosOnLine</code></pre>
+<pre><code>def PrimitiveDirichletLZerosOnLine : Prop :=
+  ∀ (N : ℕ) [NeZero N] (χ : DirichletCharacter ℂ N), χ.IsPrimitive →
+    ∀ s : ℂ, 0 &lt; s.re → s.re &lt; 1 → DirichletCharacter.LFunction χ s = 0 → s.re = 1 / 2</code></pre>
+<p><a href="../units/P005.html">Unit P005</a> · <a href="https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Main.lean#L12-L12">Source signature</a></p>
+<p>For each of these five conclusions the reported axiom set is <code>propext</code>, <code>Classical.choice</code>, <code>Quot.sound</code>. <a href="kernel-audit.html">Pinned checker record</a></p></main><footer><a href="../help.html">Using the local edition</a></footer></body></html>

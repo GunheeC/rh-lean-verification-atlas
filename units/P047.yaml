@@ -1,0 +1,79 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "P047",
+  "title": "Four cases for the first column bound",
+  "track": {
+    "primary": "theta",
+    "secondary": [
+      "arakelov"
+    ]
+  },
+  "statement": "Assume the coefficient inequalities for orbits without the operator, medium inert primes, discriminant primes, and the remaining primes under the stabilizer-denominator identity. Assume the size and error definitions. Fix a word \\(u\\), a used tuple \\(\\mu\\), a place \\(w\\) of residue characteristic \\(p\\ne T_u\\) outside \\(\\{g_0,g_1\\}\\cup Q(\\mu)\\), and \\(x\\in S_{\\rm ram}(u,w)\\). The column of \\(T\\) at \\(u,\\mu,w,x\\) has its prescribed lower bound \\(\\operatorname{lowS}(u,w)\\).",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume the four coefficient cases, the size and error definitions and the stated stabilizer-denominator identity.",
+    "The tuple is used and the prime is off level, distinct from $T_u$ and outside the excluded set. The point lies in the indicated ramified set."
+  ],
+  "lean": [
+    {
+      "name": "Formalism.MainNotions.WeilJacquetShalikaLaw.Proof.first_clause_cases",
+      "file": "Formalism/SharpRestriction/GrowthBounds/AdmissibleIntegers/StatementsOfRemainingBound.lean",
+      "line0": 25,
+      "line1": 95,
+      "sha256": "d3f2d79f70c8d850bd1fbe3c601d8337e7aed02151b9b50f70731a93e0edbb81",
+      "dominated": 72,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "7.24 (pn:P047)",
+      "pages": [
+        88,
+        88
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/P047.tex",
+      "section": "pn:P047",
+      "pages": []
+    }
+  ],
+  "status": "Full",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [],
+  "paper_id": "P047",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "four-cases-for-the-first-column-bound",
+  "aliases": [
+    "P047 Four cases for the first column bound"
+  ],
+  "background": [
+    "Integral theta series",
+    "Valuations of Fourier coefficients"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "7.24 (pn:P047)",
+    "pages": [
+      88,
+      88
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "summary": "Four coefficient estimates, covering different prime and orbit cases, yield the required lower column bound for a used tuple at each place outside the specified exceptions. The stabilizer-denominator identity is needed in the remaining case, so the local bounds retain their dependence on that identity."
+}

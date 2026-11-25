@@ -1,0 +1,152 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "T10",
+  "edition_sha256": "ee4d1b435f0bec85412133b2608a2e44883bc14eccc2d4733cc33bd8497f3dd9",
+  "note_sha256": "a6554effc76c0291b8779cd01b4933426ceab6d697ca766dbb62b8052ae3346b",
+  "statement_sha256": "e5038805503fd5928a34d299c97a3791f3e66abb34a0513ee5414e90e917b45e",
+  "sources": [
+    {
+      "path": "notes/units/T10_round4.md",
+      "sha256": "a6554effc76c0291b8779cd01b4933426ceab6d697ca766dbb62b8052ae3346b"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The join supplies the five denominator, transport and reflection inputs used by the fit theorem.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: JoinOut and HeckeTateFunctionalEquation"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.BigTop.Fun.Close.fourier_coefficient_fit_of_join_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/FourierCoefficientFitOfJoin.lean",
+          "line0": 12,
+          "line1": 17
+        },
+        {
+          "name": "GlobalTheory.BigTop.Fun.Close.fittedFunction_at_zero_close_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/FittedFunctionAtZeroClose.lean",
+          "line0": 42,
+          "line1": 48
+        }
+      ],
+      "source": "notes/units/T10_round4.md",
+      "anchor": "Keep the local theta inputs, the ordinary integral",
+      "source_lines": [
+        26,
+        26
+      ],
+      "claim_sha256": "0f505b39d3c211c17107d4189714436d0d79647df8568bc5ab0534d5d131b690",
+      "passage_sha256": "50203c0352e8b94733c4c478be52c862141826d9dd83c8d7e20db632b8a5fcb3",
+      "sha256": "c8feb57aff38d910c8be1c553fd569ee35da637ca650783cebc3c2989b2c44d6",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Separation and convergence on cuspidal lifts give injectivity of the tested row map.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "T09",
+        "input: cusp rapid decay and convergence for smooth lifts"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.BigTop.Fun.Close.fittedFunction_at_zero_close_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/FittedFunctionAtZeroClose.lean",
+          "line0": 49,
+          "line1": 59
+        }
+      ],
+      "source": "notes/units/T10_round4.md",
+      "anchor": "The local theta input alone gives the finite-place,",
+      "source_lines": [
+        30,
+        30
+      ],
+      "claim_sha256": "f0c34c96efdd13ab200a61c51a9413f9c38bb18f0104df80db6bdb6b302ff168",
+      "passage_sha256": "c994b89ae752838ffb5e22a7b48511216d81534a6bfecbf1fb6ed54e90ce52e3",
+      "sha256": "6769aeef7d27b5ea33ca49f8f1f341868571db4321dbbe119228457f4fbcedf4",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The square-ratio, denominator and local data supply the coefficient-field function used in the constant-function fit.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "S2",
+        "T11",
+        "input: denominator bound and local sum estimates"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.BigTop.Fun.Close.fittedFunction_at_zero_close_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/FittedFunctionAtZeroClose.lean",
+          "line0": 60,
+          "line1": 67
+        }
+      ],
+      "source": "notes/units/T10_round4.md",
+      "anchor": "The closure step collects a bundle built from",
+      "source_lines": [
+        34,
+        34
+      ],
+      "claim_sha256": "00cd29cf391963ddcb547100db6207c98851654817aa2a6de7d5663c623d39a6",
+      "passage_sha256": "341e0fdf7b333081b59e984d841d138ca1ba45d31ae1e812c633a5c3e8cf3f82",
+      "sha256": "ddfd36051e6118f00641f92d872f5fec97777438e097ed9c1a2e6b488c526189",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "b718381243daa4749f46b7e240f36dbf63b4f9ccaae786f8fa9f44978acc8931",
+      "sources": [
+        {
+          "path": "notes/units/T10_round4.md",
+          "sha256": "d5864a5c0345e585cd9b67355b86938689870ed194e89de20fd74cd7db76fc61"
+        }
+      ],
+      "steps": {
+        "S1": "a349628e464328dfde31833e5f49b65a9b0affe674d5fd0eb089f682985b93db",
+        "S2": "72888eec251356746b26e774d88a5cdcf64fcad14d5b551a95f18f1248b0faf6",
+        "S3": "fdd66a3843d03135a86de328190e09699935339c6d8e8e81aa4c9530fef1ebf9"
+      },
+      "step_texts": {
+        "S1": "The join supplies the five denominator, transport and reflection inputs used by the fit theorem.",
+        "S2": "Separation and convergence on cuspidal lifts give injectivity of the tested row map.",
+        "S3": "The square-ratio, denominator and local data supply the coefficient-field function used in the constant-function fit."
+      }
+    },
+    {
+      "edition_sha256": "218f08860bf124bf561c348a780372c44def79321a50af99290d3f9a5765b9ce",
+      "sources": [
+        {
+          "path": "notes/units/T10_round4.md",
+          "sha256": "d5864a5c0345e585cd9b67355b86938689870ed194e89de20fd74cd7db76fc61"
+        }
+      ],
+      "statement_sha256": "e5038805503fd5928a34d299c97a3791f3e66abb34a0513ee5414e90e917b45e",
+      "steps": {
+        "S1": "c8feb57aff38d910c8be1c553fd569ee35da637ca650783cebc3c2989b2c44d6",
+        "S2": "6769aeef7d27b5ea33ca49f8f1f341868571db4321dbbe119228457f4fbcedf4",
+        "S3": "ddfd36051e6118f00641f92d872f5fec97777438e097ed9c1a2e6b488c526189"
+      },
+      "step_texts": {
+        "S1": "The join supplies the five denominator, transport and reflection inputs used by the fit theorem.",
+        "S2": "Separation and convergence on cuspidal lifts give injectivity of the tested row map.",
+        "S3": "The square-ratio, denominator and local data supply the coefficient-field function used in the constant-function fit."
+      },
+      "step_passages": {
+        "S1": "50203c0352e8b94733c4c478be52c862141826d9dd83c8d7e20db632b8a5fcb3",
+        "S2": "c994b89ae752838ffb5e22a7b48511216d81534a6bfecbf1fb6ed54e90ce52e3",
+        "S3": "341e0fdf7b333081b59e984d841d138ca1ba45d31ae1e812c633a5c3e8cf3f82"
+      }
+    }
+  ]
+}

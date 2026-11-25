@@ -1,0 +1,125 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "P035",
+  "edition_sha256": "7e4593f7792e4cb259511d85bba01d28b35d08cd54ca2033fcdf414e8fad0247",
+  "note_sha256": "5c311662f922a002da68131a31f392306336371960ef89eb501cc51d4a760a16",
+  "statement_sha256": "58f2c6609ff39f61a4fe1e6a9c3c7ce5c36a66548661895c9eacb8904bc152cb",
+  "sources": [
+    {
+      "path": "notes/units/P035.tex",
+      "sha256": "5c311662f922a002da68131a31f392306336371960ef89eb501cc51d4a760a16"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Zeroth integral homology has trivial torsion.",
+      "kind": "case-split",
+      "uses": [
+        "standard: zeroth group homology"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.ZK.Up.torsStab",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/TorsionRankCounts/TorsStab.lean",
+          "line0": 16,
+          "line1": 39
+        }
+      ],
+      "source": "notes/units/P035.tex",
+      "anchor": "The case",
+      "source_lines": [
+        13,
+        31
+      ],
+      "claim_sha256": "4aaf5ee4343393db7fcb64818f65f4b0615e539d3ef72dd38c18823f4c98166c",
+      "passage_sha256": "53ce4af38d5ce3250d9919ea443a2a99ae959d2e8bdddf030836bd13faa86e05",
+      "sha256": "e9cd6d827706ef863794195fe5d1d43714498c2bf9bbc21ab94e8971cee67cdb",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The stated stable range gives an isomorphism on integral homology between the two ranks in positive degree.",
+      "kind": "literature",
+      "uses": [
+        "input: integral homological stability in the specified range"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.ZK.Up.torsStab",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/TorsionRankCounts/TorsStab.lean",
+          "line0": 16,
+          "line1": 39
+        }
+      ],
+      "source": "notes/units/P035.tex",
+      "anchor": "apply integral homological stability",
+      "source_lines": [
+        13,
+        31
+      ],
+      "claim_sha256": "c04103358f3d84c39aacc11c6f4e8588270106c3e0ce765ba636412225ac4d43",
+      "passage_sha256": "53ce4af38d5ce3250d9919ea443a2a99ae959d2e8bdddf030836bd13faa86e05",
+      "sha256": "f213c3cd8d81ae302ff122ea444dc8dff50da0dbc90109b5db32593c26db9174",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Transporting the torsion subgroup across the isomorphism preserves the finite order supplied at the original rank.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "S2",
+        "P038"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.ZK.Up.torsStab",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/TorsionRankCounts/TorsStab.lean",
+          "line0": 16,
+          "line1": 39
+        }
+      ],
+      "source": "notes/units/P035.tex",
+      "anchor": "The composite is an isomorphism",
+      "source_lines": [
+        13,
+        31
+      ],
+      "claim_sha256": "5cdcfe5d1b1174b0b90f15d4ca5b325f1b998997929eebded3663aba6081a6b1",
+      "passage_sha256": "53ce4af38d5ce3250d9919ea443a2a99ae959d2e8bdddf030836bd13faa86e05",
+      "sha256": "fb4d11e42e91c4d90375ab0e90751bf088180910c900b70eb8743c1a27c08557",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "5af9b95d53df52e6a06cb0dc953fb278df3e6d94190ffc9dba9724fdd0d4c8a8",
+      "sources": [
+        {
+          "path": "notes/units/P035.tex",
+          "sha256": "ea646c8e638601908159f85b642e376f69458e1a1ef0517cdf84aa2eae7d5a42"
+        }
+      ],
+      "statement_sha256": "58f2c6609ff39f61a4fe1e6a9c3c7ce5c36a66548661895c9eacb8904bc152cb",
+      "steps": {
+        "S1": "e9cd6d827706ef863794195fe5d1d43714498c2bf9bbc21ab94e8971cee67cdb",
+        "S2": "f213c3cd8d81ae302ff122ea444dc8dff50da0dbc90109b5db32593c26db9174",
+        "S3": "fb4d11e42e91c4d90375ab0e90751bf088180910c900b70eb8743c1a27c08557"
+      },
+      "step_texts": {
+        "S1": "Zeroth integral homology has trivial torsion.",
+        "S2": "The stated stable range gives an isomorphism on integral homology between the two ranks in positive degree.",
+        "S3": "Transporting the torsion subgroup across the isomorphism preserves the finite order supplied at the original rank."
+      },
+      "step_passages": {
+        "S1": "53ce4af38d5ce3250d9919ea443a2a99ae959d2e8bdddf030836bd13faa86e05",
+        "S2": "53ce4af38d5ce3250d9919ea443a2a99ae959d2e8bdddf030836bd13faa86e05",
+        "S3": "53ce4af38d5ce3250d9919ea443a2a99ae959d2e8bdddf030836bd13faa86e05"
+      }
+    }
+  ]
+}

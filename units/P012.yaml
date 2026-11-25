@@ -1,0 +1,166 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "P012",
+  "title": "Nonvanishing from the literature record and the window",
+  "track": {
+    "primary": "theta",
+    "secondary": [
+      "galois"
+    ]
+  },
+  "statement": "Assume $V$ and the record \\code{OpenLiteratureStatements}. Its first and third fields assert $\\mathcal R$. Its second asserts that for every number field with algebraic closure, valuation subring of that closure, and finite place below the subring, a local parameter map satisfying \\code{IsRecT} exists. Then $H$ holds.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume the Selmer window $V$.",
+    "The open-literature record includes both stated copies of the polarized row and existence of compatible local reciprocity/parameter maps at the designated places."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+      "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+      "line0": 810,
+      "line1": 813,
+      "sha256": "830dcc21c3e6cbb1aa36c0fb5396d2ed4099f5f72b2c18644ad323b75924fac3",
+      "dominated": 6497544,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "6.12 (pn:P012)",
+      "pages": [
+        57,
+        57
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/P012.tex",
+      "section": "pn:P012",
+      "pages": []
+    },
+    {
+      "document": "paper2_v3",
+      "section": "The chain in detail: P012",
+      "pages": [
+        22,
+        23
+      ],
+      "coverage": "Shared subsection for this station, including subordinate inputs."
+    },
+    {
+      "document": "notes/units/P012-argument.tex",
+      "section": "Written argument for P012",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L1",
+  "reviews": [
+    "reviews/R20_review.md"
+  ],
+  "prerequisites": [
+    "P014",
+    "P041",
+    "P042",
+    "P043",
+    "P044",
+    "P046",
+    "P048",
+    "P049",
+    "P050",
+    "T01",
+    "T11",
+    "T12",
+    "T13",
+    "T17",
+    "T18",
+    "T19",
+    "T20",
+    "T21",
+    "T22",
+    "T23",
+    "T24",
+    "Z3.1",
+    "Z3.2",
+    "Z4.4",
+    "Z42-KERNEL",
+    "Z5.1"
+  ],
+  "size_pages": 2,
+  "open_questions": [
+    "Which of the linked inputs constructs one definite-side family, selection and witness satisfying every certificate simultaneously?"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [
+    {
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "lines": [
+        101,
+        101
+      ],
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript.",
+      "verdict": "Exact statement comparison"
+    }
+  ],
+  "paper_id": "P012",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "literature-and-selmer-window",
+  "aliases": [
+    "HypsAlt",
+    "OpenLiteratureStatements",
+    "every_character_of_literature_of_vWin",
+    "P012 Nonvanishing from the literature record and the window"
+  ],
+  "background": [
+    "The local Langlands correspondence",
+    "Selmer groups",
+    "Dirichlet L-functions"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "6.12 (pn:P012)",
+    "pages": [
+      57,
+      57
+    ]
+  },
+  "question_sources": [
+    "reviews/R23_review.md"
+  ],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "P014": "graph",
+    "P041": "graph",
+    "P042": "graph",
+    "P043": "graph",
+    "P044": "graph",
+    "P046": "graph",
+    "P048": "graph",
+    "P049": "graph",
+    "P050": "graph",
+    "T01": "graph",
+    "T11": "graph",
+    "T12": "graph",
+    "T13": "graph",
+    "T17": "graph",
+    "T18": "graph",
+    "T19": "graph",
+    "T20": "graph",
+    "T21": "graph",
+    "T22": "graph",
+    "T23": "graph",
+    "T24": "graph",
+    "Z3.1": "graph",
+    "Z3.2": "graph",
+    "Z4.4": "graph",
+    "Z42-KERNEL": "graph",
+    "Z5.1": "graph"
+  },
+  "summary": "The Selmer window and the specified literature record together imply the every-character half-plane assertion. The record supplies the polarised row and a local parameter map obeying the stated laws. Separating those inputs makes it possible to inspect the conditional step without assuming their derivations have been read."
+}

@@ -1,0 +1,113 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "P032",
+  "title": "Integral bar cycles with uniform residue evaluations",
+  "track": {
+    "primary": "ktheory",
+    "secondary": []
+  },
+  "statement": "Assume functoriality and the boundary identities for chains and prisms,\nthe prism composition law, the specified basic bar cycle and its\ncoefficient relation, the interpolation distribution, and the Steinitz\ntransport hypothesis. In any layer as above take \\(E=e+1\\), \\(e\\ge0\\),\n\\(m=2E+1<\\ell^c\\), and \\(a=\\kappa^E\\). For any \\(\\alpha\\in F^\\times\\)\nsatisfying the difference condition there are \\(N\\), a degree-\\(m\\)\nbar cycle \\(y\\) on \\(\\mathrm{GL}_N(\\mathcal O_L)\\) over\n\\(\\mathbb Z/q\\), and \\(0\\ne b\\in\\mathcal O_F\\) such that the following\nholds. For every reduction \\(r:\\mathcal O_F\\to k\\) to a finite field\nwhich is onto on \\(\\mathcal O_L\\) and has \\(r(b)\\ne0\\), for every\ncharacter \\(v:k^\\times\\to\\mathbb Z/q\\), and for every additive\nevaluating family \\(\\theta\\) satisfying the scalar law for \\(r(\\zeta)\\),\nthere is a residue \\(u\\in k^\\times\\) of \\(N_a(\\alpha)\\) for which\n\\[\n \\theta\\bigl(\\operatorname{red}_r y\\bigr)=\n \\prod_{\\substack{0\\le j<m\\\\j\\ne E}}(a-\\kappa^j)\\,v(u)\n \\quad\\text{in }\\mathbb Z/q.\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume the chain/prism functoriality, boundary and composition identities, the basic bar cycle with its coefficient relation, interpolation and Steinitz transport.",
+    "In the cyclotomic layer set $E=e+1$, $e\\ge0$, $m=2E+1<\\ell^c$ and $a=\\kappa^E$. The element satisfies the stated divisor difference condition."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.ZK.sClassOf",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/SClassOf.lean",
+      "line0": 21,
+      "line1": 23,
+      "sha256": "552bb1d63bce80715de0cfa81ced5ca000b260a4089789d96d69319064c4982d",
+      "dominated": 2207,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "7.9 (pn:P032)",
+      "pages": [
+        77,
+        77
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/P032.tex",
+      "section": "pn:P032",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L1",
+  "reviews": [
+    "reviews/R20_review.md",
+    "reviews/R4_review_Z2.md"
+  ],
+  "prerequisites": [],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [
+    {
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "lines": [
+        58,
+        58
+      ],
+      "scope": "R20 local implication under its stated premises, not its prerequisite cones.",
+      "verdict": "Statement exact"
+    },
+    {
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "lines": [
+        110,
+        110
+      ],
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript.",
+      "verdict": "Exact statement comparison"
+    },
+    {
+      "grade": "L1",
+      "review": "reviews/R4_review_Z2.md",
+      "lines": [
+        12,
+        16
+      ],
+      "scope": "Statement comparison; the proof has qualifications.",
+      "verdict": "No statement mismatch reported"
+    }
+  ],
+  "paper_id": "P032",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "integral-bar-cycles-with-uniform-residue-evaluations",
+  "aliases": [
+    "An integral cycle with uniform residue evaluations",
+    "P032 Integral bar cycles with uniform residue evaluations"
+  ],
+  "background": [
+    "Bar resolutions",
+    "Homology of arithmetic groups",
+    "Transfer"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "7.9 (pn:P032)",
+    "pages": [
+      77,
+      77
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "summary": "A difference condition on an element of a cyclotomic layer yields one integral bar cycle whose good finite-field reductions have the prescribed evaluations. The cycle and its exceptional factor are chosen before the reduction, character and evaluation family, giving the uniformity needed for counting."
+}

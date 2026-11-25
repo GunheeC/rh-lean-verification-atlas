@@ -1,0 +1,121 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "T08",
+  "title": "The twelve linked conditions at dependence parameters",
+  "track": {
+    "primary": "theta",
+    "secondary": []
+  },
+  "statement": "Given $P$, every proof $h$ of `RecTExists` and every real $c$, the following\ntwelve conditions are linked at $p(c)$: primitivity, lambda-prime bounds,\ndivisors, decomposition points, selection jumps, ties, labels, goodness,\nweak geometric compatibility, multiplicities, kappa and defect. In\nparticular the geometric field supplies a comparison with the prescribed\npoint summands, class-sum normalization, point compatibility and the\nadditional point condition \\nolinkurl{More}.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume the third-place unitary hypothesis $P$.",
+    "Fix a proof of RecTExists and a real dependence parameter and use the specified built, good and linked row data."
+  ],
+  "lean": [
+    {
+      "name": "GlobalTheory.T.open0_of_unitary_group_hypotheses",
+      "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/OpenOrbitOfUnramifiedExponents.lean",
+      "line0": 75,
+      "line1": 76,
+      "sha256": "ff66069985adb2303e69d117b910328977c360555cdf942aa4f34d6b52db65dc",
+      "dominated": 169776,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/T08_round4.md",
+      "section": "T08 · The twelve linked conditions at dependence parameters",
+      "pages": [
+        1,
+        4
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "5.18 (sub:T08)",
+      "pages": [
+        42,
+        42
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/T08.tex",
+      "section": "sub:T08",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [
+    "D025",
+    "D033",
+    "N076",
+    "P049",
+    "P050",
+    "P096",
+    "Z5.1"
+  ],
+  "size_pages": 4,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "T08",
+  "indexed_members": [
+    "D467",
+    "D468",
+    "D469",
+    "D470",
+    "D471",
+    "D472",
+    "D473",
+    "D474",
+    "D475"
+  ],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "the-twelve-linked-conditions-at-dependence-parameters",
+  "aliases": [
+    "Open conditions at the dependence parameters",
+    "open0_of_unitary_group_hypotheses",
+    "T08 The twelve linked conditions at dependence parameters"
+  ],
+  "background": [
+    "Adelic parameter families",
+    "Unitary-group row data"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "5.18 (sub:T08)",
+    "pages": [
+      42,
+      42
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "D025": "graph",
+    "D033": "graph",
+    "N076": "graph",
+    "P049": "graph",
+    "P050": "graph",
+    "P096": "graph",
+    "Z5.1": "graph"
+  },
+  "review_status": "pending_review",
+  "summary": "At any chosen dependence parameter, the third-place unitary hypotheses yield twelve open conditions on linked rows. Their shared parameter lets the all-row construction use geometric compatibility, type labels, multiplicities and the other row fields together.",
+  "reader_overrides": {
+    "hypothesis_details": [
+      "Assume the third-place unitary hypothesis $P$.",
+      "Fix a proof of RecTExists and a real dependence parameter and use the specified built, good and linked row data."
+    ]
+  }
+}

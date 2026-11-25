@@ -1,0 +1,63 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% RH Notes blueprint source excerpts for Z5.1
+% Verbatim excerpts in the notation of the parent blueprint. The labelled editions and source ranges appear below.
+% See the unit YAML for the current proof status. Earlier-round passages retain their original wording.
+\section*{Z5.1. Gram determinant and additive index}
+
+% Parent source SHA-256: 1af64922b98ed2310744411b1f18b25cc426c97220646321471836e1a3a409d6
+% blueprint/ch_P.tex lines 2080 through 2133; lem:P5-gram-realize
+\begin{lemma}[Covolume in a complex frame]\label{lem:P5-gram-realize}
+\lean{Formalism.HN.height_gram_determinant}
+Let $K$ be totally complex of degree $n=2f$, and let $A$ be a full,
+finitely generated $\mathcal O_K$-lattice in the $D$-dimensional space
+$V$. In the invertible frames $X_v$, its realization $\rho_X A$ is a
+Euclidean lattice of rank $nD$ and positive covolume $C_X(A)$.
+If $e_1,\ldots,e_D$ is a $K$-basis in $A$ and $B=\sum_i\mathcal O_K e_i$,
+then, writing $\Delta=|\operatorname{disc}K|$,
+\[
+ [A:B]\operatorname{ht}(X,A)=\operatorname{ht}(X,B)
+ =\prod_{v\mid\infty}\det\operatorname{Gram}_v(X,e),
+ \qquad \operatorname{ht}(X,A)=2^{fD}\Delta^{-D/2}C_X(A).
+\]
+\end{lemma}
+\begin{proof}
+Fix an integral basis $\omega_1,\ldots,\omega_n$ of $\mathcal O_K$.
+Take the real matrix $M$ whose $i$th column consists of the real and
+imaginary parts of $\sigma_v(\omega_i)$, one embedding per pair.
+Replacing each pair of rows $(u,v)$ by $(u+iv,u-iv)$ multiplies the
+absolute determinant by 2. The resulting matrix $E$ contains all
+embeddings. The $(i,j)$ entry of $E^{t}E$ is
+$\operatorname{Tr}_{K/\mathbf Q}(\omega_i\omega_j)$, so
+$|\det M|=2^{-f}\sqrt{\Delta}$. This is the unit-ideal case of
+Milne \cite[Prop.~4.25]{P-Milne-Cheb} with the real coordinate measure.
+See \path{HeightGram.abs_det_amat} (\path{HtGram.lean:218--243}).
+
+Write $U_v$ for the complex matrix whose columns are the coordinates
+of $e_j$ in the frame, obtained by applying $X_v^{-1}$ to their
+embedded coordinates. Before these matrices act, the columns for
+the $\omega_i e_j$ give $D$ copies of $M$, up to row and column
+permutations. The real determinant of $U_v$ is $|\det U_v|^2$:
+after complexification the real linear map is conjugate to
+$\operatorname{diag}(U_v,\overline{U_v})$. The same number is
+$\det(U_v^*U_v)>0$. Taking determinants of the composite gives
+\[
+ C_X(B)=(2^{-f}\sqrt{\Delta})^D
+           \prod_{v\mid\infty}\det(U_v^*U_v).
+\]
+See \path{HeightGram.det_realif}, \path{HeightGram.det_gmat} and
+\path{Formalism.HN.htGram_of} (\path{HtGram.lean:85--137,191--197,341--409}).
+
+Each of the finitely many generators of $A$ has coordinates in $K$.
+Clearing their denominators with a single positive integer $c$ gives
+$B\subset A\subset c^{-1}B$. Thus the middle image is a discrete
+subgroup spanning the same real space as $\rho_X B$. In integral
+bases for $\rho_X B$ and $\rho_X A$, the absolute determinant of the
+inclusion matrix is $[A:B]$ by Smith normal form. It multiplies the
+larger lattice's covolume by that index. This proves the formulas,
+including $D=0$ with empty determinant one.
+See \path{PlaceLattice.exists_denom} and \path{place_lattice_structure}
+(\path{DiscreteSpanOfLinIndep.lean:224--248,269--324}) and
+\path{height_gram_determinant} (\path{HtGram.lean:411}).
+\emph{Status: complete.}
+\end{proof}
+

@@ -1,0 +1,360 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Verbatim sections of local blueprint v13. See README.md for macros, edition and source spans.
+
+% blueprint/ch_S.tex:50-392
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+\noindent\nolinkurl{UpperTheory.V.FW.ferreroWashington} --- in-repo constant (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/FerreroWashingtonIndex/FerreroWashington.lean:104--119}); variant.\par
+\noindent\nolinkurl{UpperTheory.V.HV.U.pt_s} --- in-repo constant (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/HVFinalU.lean:11}); not compared.\par
+\noindent\nolinkurl{GlobalTheory.Mem.LiteralAutomorphy.LitCoh.pt} --- record field (\path{Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/Brauer.lean:105--106}); not compared.\par
+\noindent\nolinkurl{GlobalTheory.Published.PoitouTateDuality} --- hypothesis at this head (\path{Development/AbelianVarietyTheory/PublishedTheorems/GaloisCohomology₂/ExistsPrimitiveRootPow.lean:13--27}); not compared.\par
+\noindent\nolinkurl{GlobalTheory.TateLimit.ptShaAt} --- in-repo constant (\path{Development/AbelianVarietyTheory/Proofs/FoundationProofs/LengthEqLengthInvariantsOfTorsionLevels.lean:462--513}); not compared.\par
+\noindent\nolinkurl{GlobalTheory.TateLimit.ptCokerAt} --- in-repo constant (\path{Development/AbelianVarietyTheory/Proofs/FoundationProofs/LengthEqLengthInvariantsOfTorsionLevels.lean:393--397}); not compared.\par
+\noindent\nolinkurl{UpperTheory.V.Published.FerreroWashington} --- hypothesis at this head (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/PublishedTheorems/FerreroWashington.lean:7--11}); variant.\par
+External theorem numbers in the original excerpt are not verified here unless a separate edition-specific source record documents the comparison.
+% End of atlas edition annotation.
+
+\section{The statement \texttt{VWin}}\label{sec:S-statement}
+
+This section unfolds the Lean definitions into standard objects. Nothing is proved except the
+duality statement that explains what the groups are.
+
+\begin{definition}[Tate--Shafarevich group of a Tate twist]\label{def:S-sha}
+\lean{Formalism.GaloisCohomology.Sha, Formalism.GaloisCohomology.shaLen, Formalism.GaloisCohomology.LData}
+Let $F$ be a number field, $l$ a prime, $e\in\mathbf{Z}$. Let $S_l$ be the set of primes of $F$ above $l$ and for
+$v\in S_l$ let $D_v\to G_{F,l}$ be a decomposition group at a chosen place of $\overline{F}$ above $v$. Put
+\[
+  \mathrm{Sha}^1_l(F,-e)\ :=\ \ker\Bigl(H^1\bigl(G_{F,l},\mathbf{Q}_l/\mathbf{Z}_l(-e)\bigr)\longrightarrow
+     \prod_{v\in S_l} H^1\bigl(D_v,\mathbf{Q}_l/\mathbf{Z}_l(-e)\bigr)\Bigr),
+\]
+a $\mathbf{Z}_l$-module, and $\operatorname{shaLen}_l(F,e):=\operatorname{length}_{\mathbf{Z}_l}\mathrm{Sha}^1_l(F,-e)\in\mathbf{N}\cup\{\infty\}$.
+(In Lean the data ``algebraic closure, places above $l$, the character through which $\chi_{\mathrm{cyc}}$ factors on
+$G_{F,l}$'' are packaged as a structure \texttt{LData}; all statements below quantify over all such choices,
+and the numerical length is independent of the choices by \texttt{shaLen\_congr}.)
+\end{definition}
+
+\begin{proposition}[Poitou--Tate]\label{prop:S-pt}
+\lean{Formalism.GaloisCohomology.PTShaAt, Formalism.GaloisCohomology.PTCokerAt, Formalism.GaloisCohomology.VFormula}
+\uses{def:S-sha}
+Let $F$, $l$, $e$ be as in Definition~\ref{def:S-sha}; assume $l\ne 2$ or $F$ totally complex. Let
+$\mathrm{Sha}^2_l(F,e+1)$ be the kernel of $H^2(G_{F,l},\mathbf{Z}_l(e+1))\to\prod_{v\mid l}H^2(D_v,\mathbf{Z}_l(e+1))$. Then
+\begin{enumerate}
+\item $\operatorname{length}\mathrm{Sha}^2_l(F,e+1)=\operatorname{length}\mathrm{Sha}^1_l(F,-e)$;
+\item the cokernel of $H^2(G_{F,l},\mathbf{Z}_l(e+1))\to\prod_{v\mid l}H^2(D_v,\mathbf{Z}_l(e+1))$ has the length of
+      $H^0(G_{F,l},\mathbf{Q}_l/\mathbf{Z}_l(-e))$;
+\item consequently, if moreover $\operatorname{length}H^2(D_v,\mathbf{Z}_l(e+1))=\operatorname{length}H^0(D_v,\mathbf{Q}_l/\mathbf{Z}_l(-e))$ for $v\mid l$
+      (local Tate duality), then
+      \[
+        \operatorname{length}H^2(G_{F,l},\mathbf{Z}_l(e+1))+\operatorname{length}H^0(G_{F,l},\mathbf{Q}_l/\mathbf{Z}_l(-e))
+        =\operatorname{shaLen}_l(F,e)+\sum_{v\mid l}\operatorname{length}H^0(D_v,\mathbf{Q}_l/\mathbf{Z}_l(-e)).
+      \]
+\end{enumerate}
+\end{proposition}
+\begin{proof}
+At finite $l$-power level the Poitou--Tate pairing of localisation kernels and the last terms
+of the nine-term sequence give equalities of cardinalities \cite[I.4.10(a),(b) and the sequence after (c)]{S-Milne}.
+The condition on real places eliminates the archimedean correction. For the cokernel,
+\texttt{ptCokerAt} uses local finiteness and local Tate duality to control the local product,
+then computes the lengths from the cardinalities of the finite-level quotients.
+For the kernel, \texttt{ptShaAt} filters the discrete $\mathrm{Sha}^1$ by the images of its
+$l^r$-coefficient levels and compares their cardinalities with those of the corresponding
+quotients of the compact kernel for sufficiently large $r$. For $e\ne0$ one power of $l$
+kills all the local invariants, and another kills the local $H^2$ product. For $e=0$ the
+action on the discrete coefficients is trivial. The cokernel modulo $l^r$ then has cardinality
+$l^r$, which gives the torsion-freeness needed in the divisibility step of the kernel comparison.
+Finally split the localisation map at its image. Adding the two short-exact-sequence length
+identities gives (3), also when a length is infinite.
+\textit{[Status: reconstructed. The finite-level duality and filtration comparison are inputs.]}
+\end{proof}
+
+\begin{remark}[Relation to $K$-theory; not in the Lean text]\label{rem:S-ktheory}
+Let $l$ be odd and $e\ge 1$. By the Quillen--Lichtenbaum conjecture (a theorem, as a consequence of the
+norm residue isomorphism theorem), the $l$-primary part of $K_{2i-2}(\mathcal{O}_F)$ is
+$H^2_{\mathrm{et}}(\mathcal{O}_F[1/l],\mathbf{Z}_l(i))$ for $i\ge 2$; see \cite[Theorem 70 and the proof of Theorem 77]{S-Weibel}.
+With $i=e+1$ and $H^2_{\mathrm{et}}(\mathcal{O}_F[1/l],\mathbf{Z}_l(i))=H^2(G_{F,l},\mathbf{Z}_l(i))$ this gives
+$H^2(G_{F,l},\mathbf{Z}_l(e+1))\cong K_{2e}(\mathcal{O}_F)\otimes\mathbf{Z}_l$. Hence, by Proposition~\ref{prop:S-pt},
+the length of $\mathrm{Sha}^1_l(F,-e)$ equals the length of the kernel of the localisation map
+$K_{2e}(\mathcal{O}_F)\otimes\mathbf{Z}_l\to\prod_{v\mid l}H^2(F_v,\mathbf{Z}_l(e+1))$, and
+\[
+  \operatorname{shaLen}_l(F,e)=v_l\bigl(\#K_{2e}(\mathcal{O}_F)\bigr)-\sum_{v\mid l}v_l\bigl(\#H^0(F_v,\mathbf{Q}_l/\mathbf{Z}_l(-e))\bigr)
+     +v_l\bigl(\#H^0(F,\mathbf{Q}_l/\mathbf{Z}_l(-e))\bigr).
+\]
+For odd $l$ the local invariant term counts the roots fixed by the $e$-th power of the
+cyclotomic character. For $F=\mathbf Q$ and $e=2k>0$, vanishing of the odd parts of all
+$K_{4k}(\mathbf Z)$ is equivalent to Vandiver's conjecture \cite[Theorem 105]{S-Weibel}, following Kurihara \cite{S-Kurihara}.
+This is a literature interpretation of the length identity.
+\end{remark}
+
+\begin{definition}[Total bound \texttt{VVle}]\label{def:S-vvle}
+\lean{UpperTheory.Top.VVle}\uses{def:S-sha}
+For a number field $E$, an integer $t\ge 0$ and a real $B$, $\mathrm{VVle}(E,t,B)$ is the conjunction, for
+every choice of the auxiliary data of Definition~\ref{def:S-sha} at every prime, of
+\begin{enumerate}
+\item $\operatorname{shaLen}_p(E,e)<\infty$ for every prime $p$ and every integer $0<e<t$;
+\item for every finite set $S$ of primes,
+$\displaystyle\sum_{l\in S}\log l\sum_{e=1}^{t-1}\operatorname{shaLen}_l(E,e)\ \le\ B .$
+\end{enumerate}
+Equivalently: all the groups are finite and $\sum_{0<e<t}\sum_l\log\#\mathrm{Sha}^1_l(E,-e)\le B$.
+It is monotone: $\mathrm{VVle}(E,t,B)\Rightarrow\mathrm{VVle}(E,t',B')$ for $t'\le t$, $B\le B'$
+(\texttt{VVle.mono}).
+\end{definition}
+
+\begin{definition}[The fields, the pairs $(q,d)$, the page]\label{def:S-chifield}
+\lean{UpperTheory.Top.IsChiField, UpperTheory.Top.WinPair, UpperTheory.Top.PageN, UpperTheory.Top.VAt}
+\uses{def:S-vvle}
+Let $\psi$ be a primitive Dirichlet character of conductor $N_\psi$ (\texttt{PChar}).
+\begin{enumerate}
+\item For $e,q,d\in\mathbf N$, a number field $E$ is a \emph{$\psi$-field of type $(e,q,d)$} if for some $N$
+divisible by $2^{e+2}$, $N_\psi$, $q$, $d$ there is an embedding $E\hookrightarrow\mathbf{Q}(\zeta_N)$ whose image is the
+fixed field of
+$\{a\in(\mathbf{Z}/N)^\times : a\equiv\pm1 \bmod 2^{e+2},\ \psi(a)=1,\ (\tfrac{a}{q})=(\tfrac{a}{d})=1\}$.
+For primes $q\equiv d\equiv 3 \pmod 4$ this is
+$E=\mathbf{Q}(\zeta_{2^{e+2}})^{+}\cdot K_\psi\cdot\mathbf{Q}(\sqrt{-q},\sqrt{-d})$ with $K_\psi$ the field cut out by $\psi$;
+it is a CM field (\texttt{isCMField\_of\_isChiField}). The bounds used in the proof,
+for $q,d>0$, are $[E:\mathbf Q]\le\operatorname{cond}(E)\le 2^{e+2}N_\psi qd$
+(\texttt{conductor\_bounds\_of\_isChiField}).
+\item $\mathrm{WinPair}(\varepsilon,Y,q,d)$: $q$ is a prime, $q\equiv 3 \pmod 8$,
+$\tfrac12Y^{\varepsilon/5}<\log q\le Y^{\varepsilon/5}$; $d$ is a prime, $d\equiv 7\pmod{16}$,
+$\tfrac12Y^{\varepsilon/5}\log^2Y<\log d\le Y^{\varepsilon/5}\log^2Y$; $q\mid d+1$; and every odd prime
+$p\le Y^{\varepsilon/5}$ divides $d+1$.
+\item $\mathrm{PageN}(\varepsilon,x,e)$: $x^{2+8\varepsilon}\le 2^{e}\le 2x^{2+8\varepsilon}$.
+\item $\mathrm{VAt}(\psi,\varepsilon,C_t,q,d,e,x)$: every $\psi$-field $E$ of type $(e,q,d)$ satisfies
+$\mathrm{VVle}\bigl(E,\lfloor x^{C_t}\rfloor,\sqrt{\exp(x^{\varepsilon})}\bigr)$.
+\end{enumerate}
+\end{definition}
+
+\begin{definition}[\texttt{VWinAt}, \texttt{VWin}]\label{def:S-vwin}
+\lean{UpperTheory.Top.VWinAt, UpperTheory.Top.VWin}\uses{def:S-chifield}
+$\mathrm{VWinAt}(\psi,C_t)$ is the statement: for every $\varepsilon$ with $0<\varepsilon<1/52$ and every function
+$e:\mathbf{R}\to\mathbf{N}$ with $\mathrm{PageN}(\varepsilon,x,e(x))$ for all $x\ge1$, there exist $J\ge 1$ and $X_0$ such that
+for every $X\ge X_0$ and all $q,d$ with $\mathrm{WinPair}(\varepsilon,X^{1/J},q,d)$ there exists $Y$ with
+\[
+   X^{1/J}\le Y,\qquad Y^2\le X,\qquad \mathrm{VAt}(\psi,\varepsilon,C_t,q,d,e(x),x)\ \text{ for all } x\in[Y,Y^2].
+\]
+$\mathrm{VWin}$ is: $\mathrm{VWinAt}(\psi,401)$ for every primitive Dirichlet character $\psi$.
+\end{definition}
+
+\noindent\emph{Sizes.} For $x$ in the window the twists run over
+$0<e'<\lfloor x^{401}\rfloor$, $\log q\le x^{\varepsilon/5}$ and $\log d\le x^{\varepsilon/5}\log^2x$ (because $x\ge X^{1/J}\ge1$ for large $X$), so
+$\log\operatorname{cond}(E)\ll_\psi x^{\varepsilon/5}\log^2 x$. The required bound is
+$\sum_l\sum_{e'}\log\#\mathrm{Sha}^1_l(E,-e')\le\exp(x^{\varepsilon}/2)$. The order of quantifiers matters: $J$ and
+$X_0$ depend on $\psi,\varepsilon$ and $e(\cdot)$ only; the window $[Y,Y^2]$ depends on $X$ and on $(q,d)$.
+The exponent $401$ plays no special role in this chapter (every $C_t\ge1$ would do); it is fixed by the consumer.
+
+\begin{theorem}[\texttt{VWin}]\label{thm:S-vwin}
+\lean{UpperTheory.V.HV.Core.of_four_alt}
+\uses{def:S-vwin, def:S-lemmaK, def:S-counts, prop:S-vwin-of-counts}
+Assume \texttt{LiteratureRankNHypothesis}, the bound $\mathrm{LemmaK}(C_K)$ for some $C_K$ (Definition~\ref{def:S-lemmaK}) and the four
+statements \textup{CountI}, \textup{CountII}, \textup{CountIII}, \textup{CountV}
+(Definition~\ref{def:S-counts}). Then $\mathrm{VWin}$ holds.
+\end{theorem}
+\noindent The bundle supplies Poitou--Tate duality, local finiteness and local Tate duality for
+the tower bounds. Its unramified orthogonality field enters \texttt{ML.iv} in the minus part.
+The assembly also calls Ferrero--Washington and \texttt{countZ}. See Section~\ref{sec:S-assembly}.
+
+% ------------------------------------------------------------------------------------------------
+\section{Splitting into the prime $2$, a minus part and a plus part}\label{sec:S-parts}
+
+Complex conjugation acts on $\mathrm{Sha}^1_l(E,-e)$ for a CM field $E$; for odd $l$ the group is the sum of
+its two eigenspaces. The eigenvalue $(-1)^e$ is called \emph{plus}: for the positive twists $e>0$ in the sum, in terms of the characters $\chi$ of
+$\operatorname{Gal}(E/\mathbf{Q})$ these are the components with $\chi(-1)=(-1)^e$, for which $L(\chi,-e)=0$. The eigenvalue
+$(-1)^{e+1}$ is \emph{minus}: $\chi(-1)=(-1)^{e+1}$ and $L(\chi,-e)\ne0$. The three parts are bounded by
+unrelated methods, so the splitting is the organising step of the chapter.
+
+\begin{lemma}[Eigenspace decomposition of length]\label{lem:S-eigen}
+\lean{UpperTheory.V.length_eq_add_eigen}
+Let $R$ be a commutative ring in which $2$ is a unit, $M$ an $R$-module, $N\subseteq M$ a submodule,
+$f\in\operatorname{End}_R(M)$ with $f^2=1$ and $f(N)\subseteq N$, and $s\in R$ with $s^2=1$. Then
+$\operatorname{length}_R N=\operatorname{length}_R\bigl(N\cap\ker(f-s)\bigr)+\operatorname{length}_R\bigl(N\cap\ker(f+s)\bigr)$.
+\end{lemma}
+\begin{proof}
+Let $c=1/2$. The maps $p_\pm(x)=c\,(x\pm s f(x))$ send $N$ into $N\cap\ker(f\mp s)$, because
+$f(x\pm sf(x))=f(x)\pm s x=\pm s\,(x\pm sf(x))$. The map $N\to(N\cap\ker(f-s))\times(N\cap\ker(f+s))$,
+$x\mapsto(p_+(x),p_-(x))$, has inverse $(a,b)\mapsto a+b$: indeed $p_+(x)+p_-(x)=2cx=x$, and for
+$a\in\ker(f-s)$ one has $p_+(a)=c(a+s^2a)=a$, $p_-(a)=0$, and symmetrically for $b$. Length is additive on
+products. \textit{[Status: complete]}
+\end{proof}
+
+\begin{definition}[Plus and minus parts; partial bounds]\label{def:S-pm}
+\lean{UpperTheory.V.ShaPlus, UpperTheory.V.ShaMinus, UpperTheory.V.plusLen, UpperTheory.V.minusLen, UpperTheory.V.VVat, UpperTheory.V.BoundedHeightTwoPlaceCondition, UpperTheory.V.VVminusLe, UpperTheory.V.VVplusLe}
+\uses{def:S-sha}
+Let $E$ be a CM field with complex conjugation $c$, acting on $H^1(G_{E,l},\mathbf{Q}_l/\mathbf{Z}_l(-e))$ by transport of
+structure and preserving $\mathrm{Sha}^1_l(E,-e)$. For $e\ge 0$ put
+\[
+ \mathrm{Sha}^{+}_l(E,e)=\mathrm{Sha}^1_l(E,-e)\cap\ker\bigl(c-(-1)^e\bigr),\qquad
+ \mathrm{Sha}^{-}_l(E,e)=\mathrm{Sha}^1_l(E,-e)\cap\ker\bigl(c-(-1)^{e+1}\bigr),
+\]
+with lengths $\operatorname{plusLen}_l(E,e)$, $\operatorname{minusLen}_l(E,e)$. Further:
+\begin{itemize}
+\item $\mathrm{VVat}(l,E,t,B)$: $\operatorname{shaLen}_l(E,e)<\infty$ for $0<e<t$ and
+      $\sum_{e=1}^{t-1}\operatorname{shaLen}_l(E,e)\le B$ (one prime, no factor $\log l$);
+\item $\mathrm{VVminusLe}(E,t,B)$, $\mathrm{VVplusLe}(E,t,B)$: the analogues of Definition~\ref{def:S-vvle} with
+      $\operatorname{shaLen}$ replaced by $\operatorname{minusLen}$, resp.\ $\operatorname{plusLen}$, and with all primes restricted to be odd.
+\end{itemize}
+\end{definition}
+
+\begin{proposition}[\texttt{vvle\_of\_parts}]\label{prop:S-parts}
+\lean{UpperTheory.V.vvle_of_parts}\uses{lem:S-eigen, def:S-pm, def:S-vvle}
+Let $E$ be a CM field, $t\in\mathbf{N}$, $B_2,B_-,B_+\in\mathbf{R}$. If $\mathrm{VVat}(2,E,t,B_2)$,
+$\mathrm{VVminusLe}(E,t,B_-)$ and $\mathrm{VVplusLe}(E,t,B_+)$ hold, then
+$\mathrm{VVle}(E,t,\ B_2\log 2+B_-+B_+)$.
+\end{proposition}
+\begin{proof}
+For odd $l$, $2\in\mathbf{Z}_l^\times$, $c^2=1$ and $c$ preserves $\mathrm{Sha}^1$, so Lemma~\ref{lem:S-eigen} with
+$s=(-1)^e$ gives $\operatorname{shaLen}_l(E,e)=\operatorname{plusLen}_l(E,e)+\operatorname{minusLen}_l(E,e)$ (\texttt{shaLen\_eq\_add}).
+Finiteness: for $p=2$ it is the first clause of $\mathrm{VVat}$; for $p$ odd a sum of two finite lengths is finite.
+The sum: split a finite set $S$ of primes into $S\cap\{2\}$ and its complement $S'$. The first contributes
+at most $\log2\cdot B_2$ (all terms are non-negative, so dropping to the singleton is harmless). On $S'$ the
+identity above, valid termwise since all lengths are finite, gives
+$\sum_{l\in S'}\log l\sum_e\operatorname{shaLen}=\sum_{l\in S'}\log l\sum_e\operatorname{minusLen}+\sum_{l\in S'}\log l\sum_e\operatorname{plusLen}\le B_-+B_+$.
+\textit{[Status: complete]}
+\end{proof}
+
+% ------------------------------------------------------------------------------------------------
+\section{The prime $2$ and finitely many odd primes: a Soul\'e-type bound in a window}\label{sec:S-bab}
+
+For $l=2$ there is no eigenspace decomposition, and for the finitely many odd primes in a set
+$B_\chi$ (those dividing orders, conductors and class numbers attached to $\chi$) the character-by-character
+method of the plus part fails. For these primes the development uses the cohomological bound of Definition~\ref{def:S-lemmaK}, a bound of Soul\'e's type for $\#H^2(\mathcal{O}_L[1/l],\mathbf{Z}_l(e+1))$, which is doubly exponential in $e$ and
+$[L:\mathbf{Q}]$. Applied directly to $E$ (degree $x^{2}$, $e$ up to $x^{401}$) it would be useless. The device is:
+$E$ is, up to a bounded base field $L_0$, a layer of a cyclotomic $\mathbf{Z}_l$-tower; in such a tower the
+length of $\mathrm{Sha}^1_l(\cdot,-e)$ grows at most linearly in the layer index (no $\mu$-invariant, by
+Ferrero--Washington) with a constant depending on the $l$-adic distance from $e$ to at most $R$ ``zeros'';
+so for all but at most $R$ exceptional twists $e$ the length is $O(R\log x)$, and for an exceptional $e$
+one applies the Soul\'e-type bound over a \emph{fixed} layer, which is acceptable only if $e\le x^{\eta}$
+with $\eta$ small. A pigeonhole argument on the logarithmic scale finds a window $[Y,Y^2]$ on which every
+exceptional $e\le x^{C_t}$ is in fact $\le x^{\eta}$. This is the origin of the window and of the constant
+$J$ in \texttt{VWin}. (In the author's outline: step 11, ``Iwasawa tower, by analogy with pigeonhole''.)
+
+\begin{definition}[\texttt{LemmaK}]\label{def:S-lemmaK}
+\lean{UpperTheory.V.LemmaK, UpperTheory.V.kBound}
+$\mathrm{LemmaK}(C_K)$: for every prime $l$, every choice of closure and local data over each totally complex number field $L$ containing a primitive
+$l$-th root of unity ($4$-th root if $l=2$), and every integer $e\ge1$, the group $H^2(G_{L,l},\mathbf{Z}_l(e+1))$ is
+finite and
+\[
+  \log\#H^2\bigl(G_{L,l},\mathbf{Z}_l(e+1)\bigr)\ \le\ \exp\Bigl(\bigl(2e\,[L:\mathbf{Q}]\bigr)^{C_K}\log\bigl(2\,|\operatorname{disc}L|\bigr)\Bigr).
+\]
+\end{definition}
+
+\begin{remark}[Status of \texttt{LemmaK}]\label{rem:S-lemmaK}
+Put $r=[L:\mathbf Q]$, $n=e+1\ge2$ and $D=|\operatorname{disc}L|$. Soul\'e's number-field
+theorem bounds a product of $\#H^2(\mathcal O_L[1/p],\mathbf Z_p(n))$ over
+$p\ge4n-1$ and $p\ge r+2$. Its general bound for $\log\log k(2n-2)$ involves
+$\sqrt D(\log D)^{r-1}$ \cite[\S4.3, Theorem 3 and \S4.4, Proposition 4(i)]{S-SouleBound}.
+For every odd $l$ in \texttt{LemmaK}, $\mathbf Q(\zeta_l)\subseteq L$, hence $l-1\le r$.
+Thus the prime whose group is required lies outside the published product. The case $l=2$,
+where $\mu_4\subseteq L$ is required, also lies outside it. Over $\mathbf Z$ the separate
+product in \cite[Theorem 3]{S-SouleVandiver} is for odd $n\ge3$ and $p\ge4n-1$.
+In the project \texttt{lemmaK\_litN\_alt} takes \texttt{LiteratureRankNHypothesis} and uses
+\texttt{bOdd} to obtain $\exists C_K\,\mathrm{LemmaK}(C_K)$.
+\textbf{[unverified: a published bound with the simultaneous prime range and discriminant dependence of \texttt{LemmaK}.]}
+\end{remark}
+
+\begin{definition}[Iwasawa-type growth bound \texttt{ABound}]\label{def:S-abound}
+\lean{UpperTheory.V.Win.ABound, UpperTheory.V.Win.SecondBound, UpperTheory.V.Win.FirstBound, UpperTheory.V.Win.Good, UpperTheory.V.IsLayer}
+\uses{def:S-sha}
+Let $l$ be a prime, $L_0$ a number field. A \emph{layer of height $m$} over $L_0$ is an extension $L_1/L_0$
+of degree $l^m$ that is cyclotomic ($L_1=L_0(\zeta_{l^k})$ for some $k$). Put $j_0=\operatorname{Nat.log}(l,R)+3$, with $\operatorname{Nat.log}(l,0)=0$.
+$\mathrm{ABound}(l,R,L_0)$ is the conjunction of:
+\begin{enumerate}
+\item there are $c\ge0$ with $\zeta_{l^c}\in L_0$, an integer $R'\le R$ and elements $s_1,\dots,s_{R'}$ of a
+normed ultrametric field extension of $\mathbf{Q}_l$, all chosen before $e,m,L_1,B$, such that for all $e\ge1$, all layers $L_1$ of height $m$ and
+all $B\in\mathbf{N}$: if $|s_i-e|\ge l^{-B}$ for all $i$ then
+$\operatorname{shaLen}_l(L_1,e)\le R'\,(\max(m,j_0)+c+B)$;
+\item (\texttt{SecondBound}) for all $e\ge1$, all layers $L_1$ of height $m$ and every layer $L_2$ of height
+$j_0$: $\operatorname{shaLen}_l(L_1,e)\le\operatorname{length}H^2(G_{L_2,l},\mathbf{Z}_l(e+1))+R\,\max(m-j_0,0)$. Both layers are over $L_0$ and can be chosen independently.
+\end{enumerate}
+For a finite set $\mathrm{Exc}\subset\mathbf{N}$ and reals $\eta,C_t,x$: $\mathrm{Good}(\eta,C_t,\mathrm{Exc},x)$ means that every
+$e\in\mathrm{Exc}$ with $e\le x^{C_t}$ satisfies $e\le x^{\eta}$.
+\end{definition}
+
+\begin{lemma}[Exceptional twists and windows]\label{lem:S-window}
+\lean{UpperTheory.V.Win.exc, UpperTheory.V.Win.window}\uses{def:S-abound}
+\begin{enumerate}
+\item Assume $\mathrm{ABound}(l,R,L_0)$, with $c$ as there. For every $Z\in\mathbf{N}$ there is a set $\mathrm{Exc}\subset\mathbf{N}$
+with $\#\mathrm{Exc}\le R$ such that for all $1\le e\le Z$, $e\notin\mathrm{Exc}$, and all layers $L_1$ of height $m$:
+$\operatorname{shaLen}_l(L_1,e)\le R\,(\max(m,j_0)+c+\operatorname{Nat.log}(l,Z))$.
+\item Let $R\in\mathbf{N}$, $0<\eta\le C_t$, $X>1$ and $\#\mathrm{Exc}\le R$. Then there is $Y$ with
+$X^{1/J}\le Y$, $Y^2\le X$, $J=2^{R+2}(C_t/\eta)^R$, such that $\mathrm{Good}(\eta,C_t,\mathrm{Exc},x)$ for all
+$x\in[Y,Y^2]$.
+\end{enumerate}
+\end{lemma}
+\begin{proof}
+(1) For $Z=0$ take $\mathrm{Exc}=\varnothing$ since $1\le e\le Z$ is empty. For $Z\ge1$ take $B=\lfloor\log_l Z\rfloor$, so $l^{B}\le Z<l^{B+1}$. Two distinct integers $e,e'\in[1,Z]$ satisfy
+$|e-e'|_l> l^{-(B+1)}$, i.e.\ $|e-e'|_l\ge l^{-B}$; by the ultrametric inequality, for each $i$ at most
+one integer $e\in[1,Z]$ has $|s_i-e|<l^{-B}$. Let $\mathrm{Exc}$ be the set of these (at most $R'\le R$)
+integers and apply clause (1) of $\mathrm{ABound}$.
+
+(2) Put $\rho=C_t/\eta\ge1$, $\Lambda=\log X>0$ and $u=\log x$. The point $x$ fails to be good only if
+some $e\in\mathrm{Exc}$, $e\ge2$, has $x^{\eta}<e\le x^{C_t}$, i.e.\ $u\in[a_e,\rho a_e)$ with $a_e=\log e/C_t$. So the
+bad set of $u$ is covered by at most $R$ intervals of the form $[a,\rho a)$, $a>0$. Consider the $R+1$
+intervals $I_k=[u_k,2u_k]$, $u_k=\tfrac{\Lambda}{J}(2\rho)^k$, $0\le k\le R$. They lie in $[\Lambda/J,\Lambda/2]$, because
+$2u_R=2\Lambda(2\rho)^R/(2^{R+2}\rho^R)=\Lambda/2$. An interval $[a,\rho a)$ cannot meet both $I_j$ and $I_k$ with
+$j<k$: a point of $I_j$ that is $\ge a$ gives $a\le2u_j$, and then every point of $[a,\rho a)$ is
+$<2\rho u_j=u_{j+1}\le u_k$. By the pigeonhole principle some $I_k$ meets no bad interval. Take $Y=\exp(u_k)$:
+then $X^{1/J}\le Y$, $Y^2=\exp(2u_k)\le X$, and $x\in[Y,Y^2]$ means $u\in I_k$.
+\textit{[Status: complete (our argument; the Lean proof is \texttt{Win.exc}, \texttt{Win.window} in
+\texttt{LayeredIsomorphisms/})]}
+\end{proof}
+
+\begin{proposition}[\texttt{ThmBab}]\label{prop:S-bab}
+\lean{UpperTheory.V.ThmBab, UpperTheory.V.Win.thmBab_of_lemmaK}
+\uses{def:S-lemmaK, def:S-abound, lem:S-window, def:S-pm}
+Assume finite-coefficient Poitou--Tate duality, local finiteness, local Tate duality,
+Ferrero--Washington and $\mathrm{LemmaK}(C_K)$ for some $C_K$. Then there are a constant $C_K'\ge1$ and functions $R_0$,
+$R_l$ (from abelian-field data to $\mathbf{N}$) such that for every $C_t\ge1$ the following holds. Let $M$ be an
+abelian field datum (a modulus $m$ and a subgroup of $(\mathbf{Z}/m)^\times$; for us the field $K_\psi$ cut out by $\psi$),
+$B'$ a finite set of odd primes and, for $l\in B'$, $L(l)$ an abelian field datum whose field contains $\mu_l$
+(for us $B'=B_\psi$ of Definition~\ref{def:S-host} and $L(l)=\mathbf{Q}(\zeta_{lN_\psi})$). Put
+\[
+  R=R_0(M)+\sum_{l\in B'}R_l(L(l)),\qquad J=2^{R+2}\Bigl(\frac{2C_K'C_t}{\varepsilon}\Bigr)^{R}.
+\]
+For all $0<\varepsilon<1/52$ and $A_1$ there is $X_0$ such that for all functions $e,t:\mathbf{R}\to\mathbf{N}$ with
+$2\le e(x)$, $2^{e(x)}\le x^{A_1}$, $2\le t(x)\le x^{C_t}$ $(x\ge 2)$, all $X\ge X_0$ and all primes
+$q\equiv3\pmod 8$, $d\equiv 7\pmod{16}$ prime to $m$ with $\log(qd)\le X^{\varepsilon/(4J)}$, there is $Y$ with
+$X^{1/J}\le Y$, $Y^2\le X$ such that for every $x\in[Y,Y^2]$:
+\begin{enumerate}
+\item[\textup{(a)}] (\texttt{BaAt}) every field $E$ of type $(e(x),q,d)$ over $M$ satisfies
+      $\mathrm{VVat}\bigl(2,E,t(x),\exp(x^{4\varepsilon/5})\bigr)$;
+\item[\textup{(b)}] (\texttt{BbAt}) for every $l\in B'$, every field $L_0$ with datum $L(l)$ and every layer $L_1$
+      of height $\operatorname{Nat.log}(l,R_l(L(l)))+3$ over $L_0$: $\mathrm{VVat}\bigl(l,L_1,t(x),\exp(x^{4\varepsilon/5})\bigr)$.
+\end{enumerate}
+\end{proposition}
+\begin{proof}
+Inputs established in Lean and not reproved here: (i) for every odd $l$ and every abelian $L_0\supseteq\mu_l$
+there is $R$ with $\mathrm{ABound}(l,R,L_0)$ (\texttt{FixedIn}); (ii) for every $M$ there is $R$ such that for
+all admissible $(q,d)$ there is a base field $L_0\supseteq\mu_4$ of degree $\le 8\deg M$, contained in
+$\mathbf{Q}(\zeta_{4mqd})$, with $\mathrm{ABound}(2,R,L_0)$, and such that every $E$ of type $(e,q,d)$ admits a layer
+$L_1/L_0$ of height $\le e+2$ with $\operatorname{shaLen}_2(E,k)\le1+\operatorname{shaLen}_2(L_1,k)$ for all $k\ge1$
+(\texttt{TwoIn}, \texttt{TwoBase}). Both are derived in Lean from a tower bound
+(\texttt{aBound\_of\_isTower}, using Poitou--Tate and local duality) and the vanishing of the $\mu$-invariant
+of abelian fields \cite{S-FW} (in Lean: \texttt{FW.ferreroWashington}, itself proved there). The important
+feature of (ii) is that $R$ does not depend on $(q,d)$.
+
+Take $C_K'=\max(C_K,1)$. In the $2$-adic argument the primitive $2^c$-th root
+in $L_0$ gives $c\le16\deg M$ by the cyclotomic degree bound and $[L_0:\mathbf Q]\le8\deg M$.
+This makes the threshold uniform in $(q,d)$. For odd $l$ choose one representative $L_0$ of
+$L(l)$ and a layer of height $j_0$. An isomorphism of the abelian base fields extends to an
+isomorphism of their height-$j_0$ cyclotomic layers (\texttt{abiso}, \texttt{layeriso}).
+The same exceptional set therefore works for every base and layer in (b).
+
+Given these, fix $x$ in a window provided by Lemma~\ref{lem:S-window}(2) for the union of the exceptional
+sets (at most $R$ elements in total, $Z=\lfloor X^{C_t}\rfloor$, $\eta=\varepsilon/(2C_K')$). Let $1\le k<t(x)\le x^{C_t}$.
+If $k$ is not exceptional, Lemma~\ref{lem:S-window}(1) gives
+$\operatorname{shaLen}(L_1,k)\le R(\max(m,j_0)+c+C_t\log_l X)$ with $m\le e(x)+2\ll\log x$ at $2$, and $m=j_0$ at each fixed odd prime. Since $\log X\le J\log x$, the
+length is $O(\log x)$. If $k$ is exceptional then $k\le x^{\eta}$ by goodness, and \texttt{SecondBound} with
+$\mathrm{LemmaK}$ over the fixed layer $L_2$ (degree $n_0$ bounded in terms of $M,R$; $\log(2|\operatorname{disc}L_2|)\le
+c_0x^{\varepsilon/4}$ because $\log(qd)\le x^{\varepsilon/4}$, \texttt{layerdisc}) gives
+\[
+ \operatorname{shaLen}(L_1,k)\le \frac{1}{\log l}\exp\bigl((2kn_0)^{C_K'}c_0x^{\varepsilon/4}\bigr)+R\,m
+   \le \exp\bigl(Cx^{\varepsilon/2}\cdot x^{\varepsilon/4}\bigr)+O(\log x),
+\]
+since $(2kn_0)^{C_K'}\le(2n_0)^{C_K'}x^{\eta C_K'}=(2n_0)^{C_K'}x^{\varepsilon/2}$. So every term is at most
+$C(1+\log x)+2\exp(Cx^{3\varepsilon/4})$ (\texttt{point2}, \texttt{ptBound}), and the sum over $k<x^{C_t}$ is at most
+$\exp(x^{4\varepsilon/5})$ for $x\ge x_0$ (\texttt{final}, \texttt{vvat}). For (a) one adds the $+1$ of (ii).
+\textit{[Status: reconstructed from Lean, details in \texttt{LayeredIsomorphisms/PartA.lean}, \texttt{PartB.lean},
+\texttt{ThmBabOf.lean}; inputs (i), (ii) not read]}
+\end{proof}
+
+% ------------------------------------------------------------------------------------------------

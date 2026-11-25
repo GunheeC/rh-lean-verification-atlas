@@ -1,0 +1,180 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "T25",
+  "edition_sha256": "d11707e6cff11d8eab8c95067481d71ec5076882311d3127caa32805951ef17f",
+  "note_sha256": "a600bdee09ee53e12385b63c4c3e817b3f0d7427632a389bfdf66f06d8a0afd2",
+  "statement_sha256": "46d66ff603cb4bd7a268419541eea48f36737d6e704fbad9b4f92cc2cb2f2c37",
+  "sources": [
+    {
+      "path": "notes/units/T25_round4.md",
+      "sha256": "a600bdee09ee53e12385b63c4c3e817b3f0d7427632a389bfdf66f06d8a0afd2"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Separate nonnegative row coefficients exist for the prime-two branch and the permitted prime-three branch.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: two-layer linkage hypotheses"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.N.at23_family_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/At23OfAll.lean",
+          "line0": 19,
+          "line1": 20
+        },
+        {
+          "name": "UpperTheory.N.boundAtTwoThree_of_local_bounds_at_two_three",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/FamilyBoundAtTwoThreeOfLocalBounds.lean",
+          "line0": 37,
+          "line1": 54
+        }
+      ],
+      "source": "notes/units/T25_round4.md",
+      "anchor": "Start with the two one-prime estimates",
+      "source_lines": [
+        13,
+        13
+      ],
+      "claim_sha256": "f7d81b61516e72c5a680739f43eeacf60a21d24f915194d55e5b2f795aa93177",
+      "passage_sha256": "0101ca2970a5ce2310f262561cf8cdf1aa845d23d01165af6ccac4a841ab981e",
+      "sha256": "ae1dc4fbfb74388dc3a768dad1675b47deb58da73c3f18e23a90bad660d26103",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The cost estimate on one branch gives a middle-term coefficient and threshold for that family.",
+      "kind": "inequality",
+      "uses": [
+        "S1",
+        "input: admissible family parameter bound"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.N.mid_of_rowOn_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/FamilyBoundAtTwoThreeOfLocalBounds.lean",
+          "line0": 11,
+          "line1": 36
+        },
+        {
+          "name": "UpperTheory.N.boundAtTwoThree_of_local_bounds_at_two_three",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/FamilyBoundAtTwoThreeOfLocalBounds.lean",
+          "line0": 37,
+          "line1": 54
+        }
+      ],
+      "source": "notes/units/T25_round4.md",
+      "anchor": "Translate to family constants",
+      "source_lines": [
+        17,
+        17
+      ],
+      "claim_sha256": "e15366e90505f1abf1f86cb78b32c656315206861c9eecc28b6cbd5cf8163671",
+      "passage_sha256": "40a11ded4cd630224d92403b838874cfb15be8a75c6cc52be82a0bedf6f1dffa",
+      "sha256": "78021226b401ce918436b9b9ad6014d2c735cc8b6ea94a0698baebc9e583c674",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The maxima of the two coefficients and thresholds serve both branches for all eligible places.",
+      "kind": "inequality",
+      "uses": [
+        "S2",
+        "standard: monotonicity of the middle term"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.N.boundAtTwoThree_of_local_bounds_at_two_three",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/FamilyBoundAtTwoThreeOfLocalBounds.lean",
+          "line0": 37,
+          "line1": 54
+        },
+        {
+          "name": "GlobalTheory.NLink.midF_mono",
+          "file": "Development/AbelianVarietyTheory/Definitions/NonGaloisDescent/BoundAtTwoThreeFamily.lean",
+          "line0": 36,
+          "line1": 50
+        }
+      ],
+      "source": "notes/units/T25_round4.md",
+      "anchor": "Combine the rows at the same scale",
+      "source_lines": [
+        21,
+        21
+      ],
+      "claim_sha256": "0701b39a4100d08c678d0d974c915b7db452fe81163d9914e791b993336875f1",
+      "passage_sha256": "9c35190638a1531808d8a9bb19cf5d7907ef5453d80bd25e7aabf747a2448179",
+      "sha256": "dcc40fe9852ce7eaebd98fa1c96d473d656cad09cd5e27975662f8e1f7516170",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "A bound on every family gives the linked slot condition at the prescribed reciprocity parameter.",
+      "kind": "assembly",
+      "uses": [
+        "S3",
+        "input: closure and row constructors"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.N.boundAtTwoThree_n_linked",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/At23OfAll.lean",
+          "line0": 21,
+          "line1": 23
+        },
+        {
+          "name": "UpperTheory.N.boundAtTwoThree_linked_of_recT",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/At23OfAll.lean",
+          "line0": 24,
+          "line1": 26
+        }
+      ],
+      "source": "notes/units/T25_round4.md",
+      "anchor": "Insert the uniform assertion into its slot",
+      "source_lines": [
+        25,
+        25
+      ],
+      "claim_sha256": "39da636e8ea838d9cf41f816d2cdb45b77c57dde5873466571e8df79e1289705",
+      "passage_sha256": "efd4f5f389d3e30212ee346f67eef8bb1c4eebfcfa082cbad57c3d5a3e6bbde7",
+      "sha256": "0389759b636921b5cd914c0965d64e075c8c36f21ad9ba612166eb0cc84dbd8b",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "ceb0a52073d02a2dba14d668f26edccde8da1689931be41e012c6af6c820087e",
+      "sources": [
+        {
+          "path": "notes/units/T25_round4.md",
+          "sha256": "4a3b15c50f77d34b58da02d5904079dd99395c9b018234e39ff22ad5c7976e65"
+        }
+      ],
+      "statement_sha256": "eda1fa71cf32ea11201b507938154257cbbeba6bdb83dac09d7e73c06a039b5b",
+      "steps": {
+        "S1": "ae1dc4fbfb74388dc3a768dad1675b47deb58da73c3f18e23a90bad660d26103",
+        "S2": "78021226b401ce918436b9b9ad6014d2c735cc8b6ea94a0698baebc9e583c674",
+        "S3": "dcc40fe9852ce7eaebd98fa1c96d473d656cad09cd5e27975662f8e1f7516170",
+        "S4": "0389759b636921b5cd914c0965d64e075c8c36f21ad9ba612166eb0cc84dbd8b"
+      },
+      "step_texts": {
+        "S1": "Separate nonnegative row coefficients exist for the prime-two branch and the permitted prime-three branch.",
+        "S2": "The cost estimate on one branch gives a middle-term coefficient and threshold for that family.",
+        "S3": "The maxima of the two coefficients and thresholds serve both branches for all eligible places.",
+        "S4": "A bound on every family gives the linked slot condition at the prescribed reciprocity parameter."
+      },
+      "step_passages": {
+        "S1": "0101ca2970a5ce2310f262561cf8cdf1aa845d23d01165af6ccac4a841ab981e",
+        "S2": "40a11ded4cd630224d92403b838874cfb15be8a75c6cc52be82a0bedf6f1dffa",
+        "S3": "9c35190638a1531808d8a9bb19cf5d7907ef5453d80bd25e7aabf747a2448179",
+        "S4": "efd4f5f389d3e30212ee346f67eef8bb1c4eebfcfa082cbad57c3d5a3e6bbde7"
+      }
+    }
+  ]
+}

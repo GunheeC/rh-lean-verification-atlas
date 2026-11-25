@@ -1,0 +1,149 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "W08",
+  "title": "The collective bound in Case I",
+  "track": {
+    "primary": "galois",
+    "secondary": []
+  },
+  "statement": "Assume $H'$, the uniform bound W05, the two-twist vanishing of W07,\nand the rank-three automorphy input for unramified coefficient rings.\nIn the latter, a common marked element gives finiteness and the\nType~I automorphy and Type~II modularity conclusions for the\nspecializations of each allowed deformation ring. For every $\\chi$\nthere are $C\\in\\mathbb N$ and primes $r_1,r_2$ such that, for each\nlarge host with $q_1,d>\\max(r_1,r_2)$, $0<e<t$, every algebraic\nclosure, every choice of coefficient rings $O_\\ell$ and every finite\nset $T$ of odd primes with $\\ell\\notin B_\\chi$, $\\ell-1\\nmid2e$,\nall the lengths below are finite and\n\\[\n \\sum_{\\ell\\in T}\\log\\ell\\!\n       \\sum_{\\psi\\in X_h(O_\\ell,e)} v_\\ell(\\psi,e)\\le (Nt)^C .\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume $H'$, the uniform cohomological bound of W05, two-twist vanishing and rank-three automorphy for unramified coefficients.",
+    "In the last input the two kinds of specialization use the prescribed common mark."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.Z.J.count_i_of_printed_bound_k_kato_automorphy",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/LinkedUnlE.lean",
+      "line0": 49,
+      "line1": 54,
+      "sha256": "3970adb13bfb7042a1bd5a6a90a9d568007421cf78b646ea14672abf40434992",
+      "dominated": 12061,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/W08_round3.md",
+      "section": "W08 · Summing the Case I Selmer lengths over primes and characters",
+      "pages": [
+        1,
+        3
+      ],
+      "coverage": "Round-3 written exposition, pending independent review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "5.44 (sub:W08)",
+      "pages": [
+        51,
+        51
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/W08.tex",
+      "section": "sub:W08",
+      "pages": []
+    },
+    {
+      "document": "paper2_v3",
+      "section": "The chain in detail: P013",
+      "pages": [
+        20,
+        22
+      ],
+      "coverage": "Shared subsection for this station, including subordinate inputs."
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [
+    "reviews/DB3_review_B.md"
+  ],
+  "prerequisites": [
+    "B04",
+    "D077",
+    "D097",
+    "D528",
+    "D532",
+    "P025",
+    "P027",
+    "P028",
+    "P029",
+    "P030",
+    "Z1.1.01",
+    "Z1.1.02",
+    "Z1.1.03",
+    "Z1.1.04",
+    "Z1.2",
+    "Z1.4",
+    "Z1.5.03",
+    "Z1.5.05",
+    "Z1.5.06",
+    "Z1.5.07"
+  ],
+  "size_pages": 3,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "W08",
+  "indexed_members": [
+    "D102",
+    "D119",
+    "D529",
+    "D530",
+    "D531",
+    "D533",
+    "D534"
+  ],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "the-collective-bound-in-case-i",
+  "aliases": [
+    "count_i_of_printed_bound_k_kato_automorphy",
+    "W08 The collective bound in Case I"
+  ],
+  "background": [
+    "Adjoint Selmer groups",
+    "Automorphy lifting"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "5.44 (sub:W08)",
+    "pages": [
+      51,
+      51
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "B04": "graph",
+    "D077": "graph",
+    "D097": "graph",
+    "D528": "graph",
+    "D532": "graph",
+    "P025": "graph",
+    "P027": "graph",
+    "P028": "graph",
+    "P029": "graph",
+    "P030": "graph",
+    "Z1.1.01": "graph",
+    "Z1.1.02": "graph",
+    "Z1.1.03": "graph",
+    "Z1.1.04": "graph",
+    "Z1.2": "graph",
+    "Z1.4": "graph",
+    "Z1.5.03": "graph",
+    "Z1.5.05": "graph",
+    "Z1.5.06": "graph",
+    "Z1.5.07": "graph"
+  },
+  "review_status": "pending_review",
+  "summary": "In counting Case I, the hypotheses give two auxiliary primes and a single exponent for each initial character. The resulting bound is collective: it controls a sum of lengths over all relevant characters and every finite set of eligible odd primes."
+}

@@ -1,0 +1,101 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "T09",
+  "title": "Separation on the evaluation grid",
+  "track": {
+    "primary": "theta",
+    "secondary": [
+      "arakelov"
+    ]
+  },
+  "statement": "Assume $F$, unramified Howe duality in its two spherical-span directions, and\nthe convergent unitary Siegel--Weil input. For each $\\varepsilon$ and\n$C_F\\ge6510$ some $x_0$ works for all size data of exponent $\\varepsilon$\nat $x\\ge x_0$ satisfying the row sizes and the Eisenstein tie. For every\ncompatible finite-group family, real datum with its level character and group\nrecord, grid $(1,C_F,b)$, Weil model above the datum, row volume and\nnonzero smooth vector $w$, there exist a real vector $\\rho$ and coefficient\nfunctional $\\xi$. For every nonzero $t$ in the trivial-character evaluation\nspace there are a column $\\Psi$ and grid datum $\\Phi$ for which the\npairing of the row form of $(w,t)$ converges and is nonzero.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume the local theta input, both spherical-span implications of unramified Howe duality and convergent unitary Siegel–Weil.",
+    "Use row-size and Eisenstein ties, $C_F\\ge6510$, a compatible Weil model, admissible grid and nonzero smooth vector."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.Lit.functionalsSeparate_of_howeUnram_of_siegelWeil",
+      "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/FunctionalsSeparateOfHoweUnramOfSiegelWeil.lean",
+      "line0": 17,
+      "line1": 19,
+      "sha256": "817e728e510e88e99d1e68c0dfbea1b34a8883a5d27f8aadb3e75f338424bf8d",
+      "dominated": 64874,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/T09_round3.md",
+      "section": "T09 · Detecting a nonzero row on the theta evaluation grid",
+      "pages": [
+        1,
+        4
+      ],
+      "coverage": "Round-3 written exposition, pending independent review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "5.19 (sub:T09)",
+      "pages": [
+        42,
+        42
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/T09.tex",
+      "section": "sub:T09",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [
+    "reviews/DB3_review_B.md"
+  ],
+  "prerequisites": [
+    "P049",
+    "P050",
+    "Z5.1"
+  ],
+  "size_pages": 4,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "T09",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "separation-on-the-evaluation-grid",
+  "aliases": [
+    "functionalsSeparate_of_howeUnram_of_siegelWeil",
+    "T09 Separation on the evaluation grid"
+  ],
+  "background": [
+    "Unramified Howe duality",
+    "Weil representations",
+    "Siegel–Weil formula"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "5.19 (sub:T09)",
+    "pages": [
+      42,
+      42
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "P049": "graph",
+    "P050": "graph",
+    "Z5.1": "graph"
+  },
+  "review_status": "pending_review",
+  "summary": "With the Howe and convergent Siegel–Weil inputs, sufficiently large compatible grids separate every nonzero element of the designated evaluation space. A column and test datum yield a convergent nonzero pairing, providing a witness that the row functional detects that element."
+}

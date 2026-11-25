@@ -1,0 +1,94 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "B01",
+  "title": "Theta lifting and the polarised Galois row",
+  "track": {
+    "primary": "theta",
+    "secondary": []
+  },
+  "statement": "Assume the following stable-range lift. Fix good CM base data, $n\\ge1$ and\nthe Hermitian space with matrix $1$ and signature $(n,0)$. There is $d_0$\nsuch that for every $d\\ge d_0$, skew space with matrix $\\delta I_d$ and\nsignature as in the lift, and splitting Hecke characters $\\chi_X,\\chi_W$\nwith the prescribed quadratic restrictions and infinity exponents $m_X,m_W$,\neach automorphic $U$ with weights $\\lambda_v$ satisfying\n$d+m_W(v)\\le2\\lambda_v(k)$ for every $v,k$ has a target $U'$ satisfying\nthe specified theta-lift relation. Under this assumption every regular\nalgebraic polarised cuspidal pair as above admits $r$, $w_\\pi\\in\\mathbb Z$\nand Hodge--Tate multisets $H_\\tau$ satisfying the whole row below.\n\nThe representation $r$ is continuous and semisimple. The multiset\n$H_\\tau$ is $(a-1)/2$ minus the infinitesimal character at $\\iota\\tau$,\nand $H_{\\tau c}=w_\\pi-H_\\tau$. At each $w\\nmid\\ell$ and for\n\\emph{every} parameter map satisfying the local laws in\n\\hyperref[sub:B04]{B04}, compare $\\mathrm{WD}(r|_{E_w})$ with the parameter\nof the algebraically normalised local component. They have equal dimension.\nA toral target with zero monodromy gives equality; under the source's\n`IsQpBig`, tame and squarefree conditions, a target with\nzero monodromy gives zero monodromy and equality of characteristic polynomials\non degree-zero Weil elements. For every tied local comparison datum and\ninducing bridge above $\\ell$, a spherical component gives crystallinity,\nthe de Rham property and jumps $H_\\tau$ at every induced embedding.\nA zero-monodromy toral target, or a zero-monodromy target satisfying the\nthree tame-range conditions, gives the de Rham and potentially semistable\nproperties, the same jumps and the preceding Weil--Deligne comparison.\n\nIn both tame clauses, `IsQpBig` requires a prime $g$ and a continuous ring isomorphism from $\\mathbb Q_g$ to the completion at $w$, with $n=1$ or $16n^2<g$ for the relevant rank $n$. `UpperTheory.GalStar.IsQpBig` (`Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConjBis.lean:15–16`). `UpperTheory.GalStar.AwayB` (`Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConjBis.lean:26–31`). `UpperTheory.GalStar.AboveB` (`Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConjBis.lean:48–52`).",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume stable-range theta lifting over the good CM base for the Hermitian and skew-Hermitian spaces, prescribed splitting characters and infinity exponents.",
+    "The source weights satisfy $d+m_W(v)\\le2\\lambda_v(k)$. Apply the assertion to a regular algebraic polarized cuspidal pair."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.Gal.Int.galoisRepresentations_of_thetaLift",
+      "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/GaloisRepresentationsOfThetaLift.lean",
+      "line0": 6,
+      "line1": 6,
+      "sha256": "12febd1379de698868467c4a10ce2d4019e357ebf2b6b84a6ae005ff80152aa0",
+      "dominated": 720478,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/B01_round4.md",
+      "section": "B01 · Theta lifting and the polarised Galois row",
+      "pages": [
+        1,
+        3
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "5.1 (sub:B01)",
+      "pages": [
+        35,
+        35
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/B01.tex",
+      "section": "sub:B01",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [
+    "B02",
+    "B03"
+  ],
+  "size_pages": 3,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "B01",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "theta-lifting-and-the-polarised-galois-row",
+  "aliases": [
+    "galoisRepresentations_of_thetaLift",
+    "B01 Theta lifting and the polarised Galois row"
+  ],
+  "background": [
+    "Unitary theta lifting",
+    "Polarized Galois representations"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "5.1 (sub:B01)",
+    "pages": [
+      35,
+      35
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "B02": "graph",
+    "B03": "graph"
+  },
+  "review_status": "pending_review",
+  "summary": "Assume the specified stable-range theta lift. The resulting Galois representation for each regular algebraic polarized cuspidal pair has the stated Hodge–Tate symmetry and local comparisons, with stronger conclusions only at places satisfying their extra conditions."
+}

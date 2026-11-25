@@ -1,0 +1,340 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "Z4.2.04",
+  "edition_sha256": "646643a914bbfe58d81df19afd6e82e543e7394f2ead2a7056093c2a98dfc252",
+  "note_sha256": "d56133cd850bbcdcf7154125fd50f9bda21528bf13eaacf2c8d71ba8705ada24",
+  "statement_sha256": "5a525880328166f818bc84f5d90ed780b1d95ccc1e8cfb9a28e526798453bbda",
+  "sources": [
+    {
+      "path": "notes/blueprint/Z4.2.04.tex",
+      "sha256": "d56133cd850bbcdcf7154125fd50f9bda21528bf13eaacf2c8d71ba8705ada24"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The rational local tests recover the completed lattice needed on the actual adjacent sites.",
+      "kind": "assembly",
+      "uses": [
+        "input: simultaneous rational lattice conditions"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.L2.GlobalTheoryTheory.Comp.glob_one",
+          "file": "Formalism/LocalToGlobal/GlobalTheory/EqGlobOfHat.lean",
+          "line0": 39,
+          "line1": 40
+        },
+        {
+          "name": "Formalism.L2.GlobalTheoryTheory.Comp.mem_hat_glob",
+          "file": "Formalism/LocalToGlobal/GlobalTheory/EqGlobOfHat.lean",
+          "line0": 42,
+          "line1": 44
+        },
+        {
+          "name": "GlobalTheory.LocCarry.mem_latS_latAd_iff",
+          "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/MemLatSLatAdIff.lean",
+          "line0": 37,
+          "line1": 72
+        }
+      ],
+      "source": "notes/blueprint/Z4.2.04.tex",
+      "anchor": "\\paragraph{Recovering the completed lattice from the simultaneous rational conditions.}",
+      "source_lines": [
+        177,
+        205
+      ],
+      "claim_sha256": "30e0a1271c946812e2b3dd4244bbce59d3db0c36e44c94aaabb868999948d65b",
+      "passage_sha256": "a7ac40e2e89851c059cba760e497d9c6296a81dc60870bf45f90f7ff0aafd75b",
+      "sha256": "114bab963827e54c14963d02f227ce8b0b0a9a9405de21be96526b7268a521d0",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The zero and successor descriptions identify the kernel lattice on the same tuple.",
+      "kind": "case-split",
+      "uses": [
+        "S1",
+        "input: specified site and tuple"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.TwV.Joint.locSp_kerN_zero",
+          "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/FrameLocalLatticeSpanKernelLatticeZero.lean",
+          "line0": 19,
+          "line1": 34
+        },
+        {
+          "name": "GlobalTheory.TwV.Joint.locSp_kerN_succ",
+          "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/FrameLocalLatticeSpanKernelLatticeSucc.lean",
+          "line0": 18,
+          "line1": 54
+        }
+      ],
+      "source": "notes/blueprint/Z4.2.04.tex",
+      "anchor": "\\paragraph{The zero and successor branches on the same tuple.}",
+      "source_lines": [
+        277,
+        305
+      ],
+      "claim_sha256": "15a4734eadfbcef380873f131363938fc88c36818fd428ead5c0edd17332115c",
+      "passage_sha256": "b78d14130c6bae2a71de10a4a604491560ad405f55cbfe8073a08438eda2f1ae",
+      "sha256": "3407cc1eb3405d50ca173f75fb541942ee4b5599c064910d3273af92b825e7ab",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The translated kernel's Taylor coefficients are algebraic under the supplied period and translation data.",
+      "kind": "computation",
+      "uses": [
+        "input: translated Taylor laws"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.kerTh_entire_algCoef",
+          "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/KerThEntireAlgCoef.lean",
+          "line0": 22,
+          "line1": 40
+        }
+      ],
+      "source": "notes/blueprint/Z4.2.04.tex",
+      "anchor": "\\subsection{Z4.2.04. Translated coefficients of the natural vector}",
+      "source_lines": [
+        366,
+        375
+      ],
+      "claim_sha256": "6992ced2e4e31819a78078230d5d9a47b2a046a6ade0685f9d6ef06a69a78299",
+      "passage_sha256": "200795714db1ec42264112f9f7fb1ac0e70878d9e66cfc349c6765291ca7639f",
+      "sha256": "995d0449a7dc09504ca68aa37d49fcb5ce225fc6584c0f9013c1d929b9b558e3",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The two sign laws identify the semicharacter used in the standard tuple.",
+      "kind": "computation",
+      "uses": [
+        "input: period signs on the standard base"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.L2.Th1.H.quadMultiplierSemicharacter",
+          "file": "Formalism/LocalToGlobal/TorsionIntegrality/QuadraticSemicharacters/CayleyGaussianIntegrals/MatrixFormFourfoldBlockFirstBlockEmb.lean",
+          "line0": 178,
+          "line1": 232
+        },
+        {
+          "name": "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.SC.char_eq",
+          "file": "Formalism/LocalToGlobal/GlobalTheory/GL3/PStdChar.lean",
+          "line0": 310,
+          "line1": 352
+        }
+      ],
+      "source": "notes/blueprint/Z4.2.04.tex",
+      "anchor": "\\paragraph{The two period signs.}\\phantomsection\\label{r16:std-char}",
+      "source_lines": [
+        708,
+        722
+      ],
+      "claim_sha256": "8e5db3e7930d669f4fc46dcb902fa6d42d13fe6b38294a10d592ef25f1d07241",
+      "passage_sha256": "8bf60e7025d4a8fc4da86a2ae38b3fdc413d8c9e4b1d0a598bb5364a37cb2e13",
+      "sha256": "0d20dcfdda2c0add2ed7e77103f30983ff062bf5cb39411d4a40c7eee6af118f",
+      "ai_review": []
+    },
+    {
+      "id": "S5",
+      "status": "active",
+      "claim": "The transported standard image has the required dual lattice.",
+      "kind": "assembly",
+      "uses": [
+        "S4",
+        "input: isometry and lattice span"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.L2.Ker.Base.isomOK",
+          "file": "Formalism/LocalToGlobal/KernelLattices/KernelLocalFactors/IsAdmissibleFlagPairOfUnitriangularLeftAutomorph.lean",
+          "line0": 773,
+          "line1": 798
+        },
+        {
+          "name": "Formalism.L2.Ker.Base.lat0OK",
+          "file": "Formalism/LocalToGlobal/KernelLattices/KernelLocalFactors/IsAdmissibleFlagPairOfUnitriangularLeftAutomorph.lean",
+          "line0": 438,
+          "line1": 439
+        }
+      ],
+      "source": "notes/blueprint/Z4.2.04.tex",
+      "anchor": "\\paragraph{The image lattice and its dual.}\\phantomsection\\label{r16:std-dual}",
+      "source_lines": [
+        809,
+        830
+      ],
+      "claim_sha256": "7a607883be8dd964f00b548f3abe5972a8dddaf01376812e3058e8cf49aba55a",
+      "passage_sha256": "c357307cee662fabc7c85ba44434d45a8859d8319ba4c5e7d944db8d9a30eebf",
+      "sha256": "3b8283100a1faf9de6ff5a57ef03f33c299aac7dcccc120cc043b97b81b4e4c8",
+      "ai_review": []
+    },
+    {
+      "id": "S6",
+      "status": "active",
+      "claim": "Restriction and scalar normalization produce the fourth-root theta vector on the chosen base.",
+      "kind": "computation",
+      "uses": [
+        "input: common one-dimensional theta line"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.L2.Ker.kThetaVector",
+          "file": "Formalism/LocalToGlobal/KernelLattices/KernelLocalFactors/IsAdmissibleFlagPairOfUnitriangularLeftAutomorph.lean",
+          "line0": 27,
+          "line1": 29
+        },
+        {
+          "name": "Formalism.L2.Th1.H.InterInv_of",
+          "file": "Formalism/LocalToGlobal/TorsionIntegrality/QuadraticSemicharacters/CayleyGaussianIntegrals/LogarithmEquivalence.lean",
+          "line0": 201,
+          "line1": 241
+        },
+        {
+          "name": "Formalism.L2.Th1.H.FourthRoot_of",
+          "file": "Formalism/LocalToGlobal/TorsionIntegrality/QuadraticSemicharacters/CayleyGaussianIntegrals/MatrixFormFourfoldBlockFirstBlockEmb.lean",
+          "line0": 102,
+          "line1": 158
+        },
+        {
+          "name": "Formalism.L2.Th1.H.ThetaVector_of",
+          "file": "Formalism/LocalToGlobal/TorsionIntegrality/QuadraticSemicharacters/CayleyGaussianIntegrals/MatrixFormFourfoldBlockFirstBlockEmb.lean",
+          "line0": 250,
+          "line1": 302
+        }
+      ],
+      "source": "notes/blueprint/Z4.2.04.tex",
+      "anchor": "\\paragraph{Restriction and a single scalar fourth root.}",
+      "source_lines": [
+        1073,
+        1084
+      ],
+      "claim_sha256": "6bd0d9b346c85287c564e8be403e77b9747d03eafbf69fbc659c94d2711ca38a",
+      "passage_sha256": "c6f0b46e3d4d5c7eaa2731f60449db856d7089c4db7af88311da70cade23948e",
+      "sha256": "47e7c42498eff74cc9b31c930be118c03d16e4f45eb09e807335b90c2fd7fbd0",
+      "ai_review": []
+    },
+    {
+      "id": "S7",
+      "status": "active",
+      "claim": "Finite transversals and their weights express the pairing kernel as the required finite theta sum.",
+      "kind": "computation",
+      "uses": [
+        "S2",
+        "S5",
+        "S6",
+        "input: finite-index period lattices"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.L2.Ker.twist_lattice_kernel",
+          "file": "Formalism/LocalToGlobal/KernelLattices/KernelLocalFactors/PeriodLatticeFinitelyGenerated.lean",
+          "line0": 179,
+          "line1": 196
+        },
+        {
+          "name": "Formalism.L2.Ker.theta_coset_kernel",
+          "file": "Formalism/LocalToGlobal/KernelLattices/KernelLocalFactors/PeriodLatticeFinitelyGenerated.lean",
+          "line0": 276,
+          "line1": 290
+        }
+      ],
+      "source": "notes/blueprint/Z4.2.04.tex",
+      "anchor": "\\paragraph{The three transversals and their weights.}\\label{r14:kernel-finite}",
+      "source_lines": [
+        1208,
+        1239
+      ],
+      "claim_sha256": "b9c507f926334f9b42e07acd126f820137030ddd06bf9e5908f0f9f45abca707",
+      "passage_sha256": "e3e7faf7ae7c6b97b43190721c02fba503b288456a3617532d50b72397d3705a",
+      "sha256": "7cd26130692c9480d3ed1e6b16140d48b6e7c71f40f8c00e187f09d6f5d2f5af",
+      "ai_review": []
+    },
+    {
+      "id": "S8",
+      "status": "active",
+      "claim": "The finite sum and analytic Taylor data satisfy the adjacent-site predicate.",
+      "kind": "assembly",
+      "uses": [
+        "S3",
+        "S7",
+        "input: adjacent determinant and frame identities"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.pairOK_allSites",
+          "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/KernelSiteLatticeTuplePairsAdmissible.lean",
+          "line0": 23,
+          "line1": 47
+        },
+        {
+          "name": "GlobalTheory.kerTh_entire_algCoef",
+          "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/KerThEntireAlgCoef.lean",
+          "line0": 22,
+          "line1": 40
+        }
+      ],
+      "source": "notes/blueprint/Z4.2.04.tex",
+      "anchor": "\\paragraph{Reassembling the site predicate.}\\label{r14:site-pair}",
+      "source_lines": [
+        1322,
+        1355
+      ],
+      "claim_sha256": "e138df6be82ee91104504675864f0b916c06e95d9827c4e7f2ac8847e91f1216",
+      "passage_sha256": "cb0b33825000082f3bb9994ecbcfbc31ecdb4a1af9e8286a5e9bf522d2c24790",
+      "sha256": "34839826e5b82aab1696037853ab2b7053863ef6dbd2e8f14048cc38ae8a7313",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "816ea1c6d7454b6598ae14dcbd47fb32702332fb473c8af420722385c08ed220",
+      "sources": [
+        {
+          "path": "notes/blueprint/Z4.2.04.tex",
+          "sha256": "775f1f0238a601807ce283a2a42ba9fe6ececf177be58af3d0967239a60470a2"
+        }
+      ],
+      "statement_sha256": "5a525880328166f818bc84f5d90ed780b1d95ccc1e8cfb9a28e526798453bbda",
+      "steps": {
+        "S1": "114bab963827e54c14963d02f227ce8b0b0a9a9405de21be96526b7268a521d0",
+        "S2": "3407cc1eb3405d50ca173f75fb541942ee4b5599c064910d3273af92b825e7ab",
+        "S3": "995d0449a7dc09504ca68aa37d49fcb5ce225fc6584c0f9013c1d929b9b558e3",
+        "S4": "0d20dcfdda2c0add2ed7e77103f30983ff062bf5cb39411d4a40c7eee6af118f",
+        "S5": "3b8283100a1faf9de6ff5a57ef03f33c299aac7dcccc120cc043b97b81b4e4c8",
+        "S6": "47e7c42498eff74cc9b31c930be118c03d16e4f45eb09e807335b90c2fd7fbd0",
+        "S7": "7cd26130692c9480d3ed1e6b16140d48b6e7c71f40f8c00e187f09d6f5d2f5af",
+        "S8": "34839826e5b82aab1696037853ab2b7053863ef6dbd2e8f14048cc38ae8a7313"
+      },
+      "step_texts": {
+        "S1": "The rational local tests recover the completed lattice needed on the actual adjacent sites.",
+        "S2": "The zero and successor descriptions identify the kernel lattice on the same tuple.",
+        "S3": "The translated kernel's Taylor coefficients are algebraic under the supplied period and translation data.",
+        "S4": "The two sign laws identify the semicharacter used in the standard tuple.",
+        "S5": "The transported standard image has the required dual lattice.",
+        "S6": "Restriction and scalar normalization produce the fourth-root theta vector on the chosen base.",
+        "S7": "Finite transversals and their weights express the pairing kernel as the required finite theta sum.",
+        "S8": "The finite sum and analytic Taylor data satisfy the adjacent-site predicate."
+      },
+      "step_passages": {
+        "S1": "a7ac40e2e89851c059cba760e497d9c6296a81dc60870bf45f90f7ff0aafd75b",
+        "S2": "b78d14130c6bae2a71de10a4a604491560ad405f55cbfe8073a08438eda2f1ae",
+        "S3": "200795714db1ec42264112f9f7fb1ac0e70878d9e66cfc349c6765291ca7639f",
+        "S4": "8bf60e7025d4a8fc4da86a2ae38b3fdc413d8c9e4b1d0a598bb5364a37cb2e13",
+        "S5": "c357307cee662fabc7c85ba44434d45a8859d8319ba4c5e7d944db8d9a30eebf",
+        "S6": "c6f0b46e3d4d5c7eaa2731f60449db856d7089c4db7af88311da70cade23948e",
+        "S7": "e3e7faf7ae7c6b97b43190721c02fba503b288456a3617532d50b72397d3705a",
+        "S8": "cb0b33825000082f3bb9994ecbcfbc31ecdb4a1af9e8286a5e9bf522d2c24790"
+      }
+    }
+  ]
+}

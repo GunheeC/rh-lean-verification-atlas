@@ -1,0 +1,88 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D082",
+  "title": "Restriction and the Bloch–Kato finite condition",
+  "track": {
+    "primary": "local",
+    "secondary": []
+  },
+  "statement": "For the specified embedding and compatible local restriction maps, a continuous cocycle satisfies the Bloch–Kato finite condition after restriction precisely when its pullback to the indicated decomposition subgroup satisfies that condition.\n\\[\nc\\circ\\psi\\in Z^1_f(\\varphi,\\rho\\circ\\psi)\\ \\Longleftrightarrow\\ c|_{\\mathrm{dec}_j}\\in Z^1_f(\\mathrm{pr}_2,\\rho\\circ\\mathrm{pr}_1).\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Fix the algebraic closure embedding and an open local embedding compatible with the two restriction maps.",
+    "Use the stated coefficient module, its Galois action and a continuous cocycle."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.Loc.bkAbove",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/BkAbove.lean",
+      "line0": 47,
+      "line1": 79,
+      "sha256": "76be07b8b6a1c998a3e602ba1b9d95be6470190f89c446220929029cb613f218",
+      "dominated": 6375,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/D082_round4.md",
+      "section": "D082 · Comparing two restrictions of a finite cocycle",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "G.89 (decomp:D082)",
+      "pages": [
+        179,
+        179
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D082.tex",
+      "section": "decomp:D082",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": 2,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "D082",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "restriction-and-the-blochkato-finite-condition",
+  "aliases": [
+    "bkAbove",
+    "D082 Restriction and the Bloch–Kato finite condition"
+  ],
+  "background": [
+    "Galois cocycles",
+    "Bloch–Kato finite conditions"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.89 (decomp:D082)",
+    "pages": [
+      179,
+      179
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "review_status": "pending_review",
+  "summary": "A continuous cocycle satisfying the finite condition on the chosen local group satisfies it on the decomposition subgroup, and conversely. Extending a witness from a subgroup requires division by a finite index in the rational coefficient field."
+}

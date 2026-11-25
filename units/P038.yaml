@@ -1,0 +1,101 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "P038",
+  "title": "All-prime torsion from faces and stabilizers",
+  "track": {
+    "primary": "ktheory",
+    "secondary": []
+  },
+  "statement": "For every totally complex number field \\(L\\) and \\(N,m\\ge0\\), let\n\\(d=[L:\\mathbb Q]N\\), \\(s=3^{dN}\\), and \\(A=\\mathrm{orbBound}(L,N,m)\\),\nthe uniform face-orbit bound of the integral Hermitian complex through\ndegree \\(m\\). Then \\(T=H_m(G_N,\\mathbb Z)_{\\rm tors}\\) is finite with\n\\[\n                    |T|\\le(m+2)^A s^{m A s^m}.\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Fix totally complex $L$ and nonnegative $N,m$.",
+    "Use the uniform face-orbit count through degree $m$ for the integral Hermitian complex at this rank."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.KT.tors_le",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HermiteNormalForms/Assembly.lean",
+      "line0": 25,
+      "line1": 30,
+      "sha256": "510efa10b41ac04c6635d0e762a8f7d40b51066a51584f90e86db2e69e967ee3",
+      "dominated": 431,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "7.15 (pn:P038)",
+      "pages": [
+        81,
+        81
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/P038.tex",
+      "section": "pn:P038",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L1",
+  "reviews": [
+    "reviews/R20_review.md",
+    "reviews/R4_review_Z2.md"
+  ],
+  "prerequisites": [],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [
+    {
+      "grade": "L2",
+      "review": "reviews/R4_review_Z2.md",
+      "lines": [
+        91,
+        123
+      ],
+      "scope": "Named unit conclusion. Its lower suppliers keep their own individual verdicts.",
+      "verdict": "COMPLETE CONFIRMED"
+    },
+    {
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "lines": [
+        114,
+        114
+      ],
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript.",
+      "verdict": "Exact statement comparison"
+    }
+  ],
+  "paper_id": "P038",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "all-prime-torsion-from-faces-and-stabilizers",
+  "aliases": [
+    "P038 All-prime torsion from faces and stabilizers"
+  ],
+  "background": [
+    "Equivariant cellular chains",
+    "Torsion in arithmetic-group homology"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "7.15 (pn:P038)",
+    "pages": [
+      81,
+      81
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "summary": "For a totally complex field, an explicit face-orbit bound and a stabilizer-size parameter bound the whole torsion subgroup of integral homology. Because the conclusion gives its full order, subsequent estimates can apply at every prime."
+}

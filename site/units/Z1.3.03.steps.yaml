@@ -1,0 +1,216 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "Z1.3.03",
+  "edition_sha256": "135632ba8e77070ba9cdf6d604baed3f1c09dbdad536ffc2844f04c04b8c5c87",
+  "note_sha256": "000b4cba03fac4314ced458b3de2f7d7f86e12e23bc7318ee861dbdf22cc9c15",
+  "statement_sha256": "a220bd8a2393409181bd15155a4465c575cf12826fd0c448345cca4101e70fcc",
+  "sources": [
+    {
+      "path": "notes/blueprint/Z1.3.03.tex",
+      "sha256": "000b4cba03fac4314ced458b3de2f7d7f86e12e23bc7318ee861dbdf22cc9c15"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Passing to the limit of the finite-level Hecke congruences gives the eigenidentity on the stable diamond-character part.",
+      "kind": "computation",
+      "uses": [
+        "input: commuting Hecke and Galois operators"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.LamChi.exists_pr_isLamFR",
+          "file": "Development/AbelianVarietyTheory/Proofs/FoundationProofs/ApplyPolyOfStable.lean",
+          "line0": 169,
+          "line1": 216
+        }
+      ],
+      "source": "notes/blueprint/Z1.3.03.tex",
+      "anchor": "On the diamond $\\chi$-submodule, the commutation of Hecke and Galois operators with the diamonds preserves the character condition. Let $L$ be th",
+      "source_lines": [
+        21,
+        22
+      ],
+      "claim_sha256": "8fa6d262b86de04af848fc2269547565971953c5281d9334c8044cbbfc3221e2",
+      "passage_sha256": "b43c15191dc5783f353565ea87c5526b18ba0f4a50ad0bbbe77e594ec28191fe",
+      "sha256": "3706ddc63c64905e66df00edd1f83bfe3c403ddd76ea3fe6b87a650bcae4d27e",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "On the nonzero branch division by one nonzero functional value normalizes a common period, and the zero branch admits period one.",
+      "kind": "case-split",
+      "uses": [
+        "S1",
+        "input: fixed algebraic approximants"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.LamChi.exists_fixed_period",
+          "file": "Development/AbelianVarietyTheory/Proofs/FoundationProofs/ApplyPolyOfStable.lean",
+          "line0": 76,
+          "line1": 99
+        }
+      ],
+      "source": "notes/blueprint/Z1.3.03.tex",
+      "anchor": "Here is the normalization step, including the zero case. If $L$ vanishes on the character part take zero multiplier and periods one. Otherwise ch",
+      "source_lines": [
+        24,
+        25
+      ],
+      "claim_sha256": "a3ad2f92b97e4eddaa8e9f9125bcfea76f84563cb393f7a3a51974a035fd0ced",
+      "passage_sha256": "5123f0c2ee32f15fbc39bcd6c1d9441da2529eda46a4cf64b0589bce1fd0f6dc",
+      "sha256": "24e89530a4aa0af9214dcec6304d7fbe0cf516b275cf7cb85ce5a33a4f67018f",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Ratios to one nonzero value are Galois fixed over the same finite coefficient extension.",
+      "kind": "computation",
+      "uses": [
+        "S2",
+        "input: common inertia multiplier"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.line_functional_eq_period_mul",
+          "file": "Development/AbelianVarietyTheory/Proofs/FoundationProofs/LineFunctionalEqPeriodMul.lean",
+          "line0": 23,
+          "line1": 99
+        }
+      ],
+      "source": "notes/blueprint/Z1.3.03.tex",
+      "anchor": "Write $y_i=L(\\sigma_i(0,1))$. When all $y_i=0$ take $u=1$, $\\kappa_i=0$. Otherwise fix $y_j\\ne0$. Choose one finite extension $K/\\mathbb Q_\\ell$ ",
+      "source_lines": [
+        38,
+        39
+      ],
+      "claim_sha256": "cbabca20cf4f4d730a264809c9b6e0720b6be7eb70a172e324abd4a41a516dbe",
+      "passage_sha256": "7321330869c6bb91eb087575970bfe114d4479b9dfcdfc5df983e2c2f79070ec",
+      "sha256": "48fce95f628c309708812d396ae0a08d1c32e35fbef5dc36620694500baeb64d",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The approximation by exactly fixed coefficients has a precision loss independent of the chosen integral coefficient.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: Ax uniform orbit estimate"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.PerFix.exists_fixed_near",
+          "file": "Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsInertiaFixedNearAlmostFixedCoefficients.lean",
+          "line0": 39,
+          "line1": 71
+        }
+      ],
+      "source": "notes/blueprint/Z1.3.03.tex",
+      "anchor": "For the second loss, let $H$ consist of automorphisms fixing $c.O$ pointwise and inducing the identity on the residue field. If an integral algeb",
+      "source_lines": [
+        41,
+        42
+      ],
+      "claim_sha256": "e7f072968587d204b15b6531f902eb64f82c66bc52e075825d1c149dd4727144",
+      "passage_sha256": "35c265b304a6916b7f48aa54f758aedf039b02be8aa49ed662d18821f352a55f",
+      "sha256": "bcd4b2281cef42640dee1ac5b6ece3310167b2a1e706241396042865eb2af672",
+      "ai_review": []
+    },
+    {
+      "id": "S5",
+      "status": "active",
+      "claim": "The projected functional still requires suitable cusp representatives for every admitted vector with coefficient compatibility between levels.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S3",
+        "S4",
+        "input: admissible cusp representatives"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.ThEx.of_lift",
+          "file": "Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsCuspFunctionalOddWeightOddPrime.lean",
+          "line0": 16,
+          "line1": 26
+        },
+        {
+          "name": "GlobalTheory.T.cgA_coeff_of_isThB_succ",
+          "file": "Development/AbelianVarietyTheory/Proofs/FoundationProofs/IsThBSuccCoeffCongStatement.lean",
+          "line0": 8,
+          "line1": 10
+        }
+      ],
+      "source": "notes/blueprint/Z1.3.03.tex",
+      "anchor": "\\textbf{B04.} For every admitted odd-weight \\(b\\), construct a cusp",
+      "source_lines": [
+        120,
+        133
+      ],
+      "claim_sha256": "7f357e2bfb4e1dc99cf77081c322aa685fd19f5d689ae21b86781288be78c312",
+      "passage_sha256": "af053d2dbaa1028cbdacb8bb4122a4d650179fa201dc800dd41648ad5acf4f76",
+      "sha256": "656dbf000ef4dc7900d31f82e23540988bd2db8ba771d67ceffb2cf89cbad2e2",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "528e4612cf679cd91ac7bfd7091853ce103e7a2acf4980e6d250ec457b65182f",
+      "sources": [
+        {
+          "path": "notes/blueprint/Z1.3.03.tex",
+          "sha256": "664c16cde47ca4c340f0fa1728e15fde8fed244ff5a5f8807c522e7012226f5d"
+        }
+      ],
+      "steps": {
+        "S1": "90e1507609d3d2e59a261e64f8a7250eb6f02f1ef9b2c803554c1fdb97055ca9",
+        "S2": "24e89530a4aa0af9214dcec6304d7fbe0cf516b275cf7cb85ce5a33a4f67018f",
+        "S3": "48fce95f628c309708812d396ae0a08d1c32e35fbef5dc36620694500baeb64d",
+        "S4": "bcd4b2281cef42640dee1ac5b6ece3310167b2a1e706241396042865eb2af672",
+        "S5": "acc60528b09d76950b3886491688cc1543e67211bdf66e6427b4ff44b3626f9a"
+      },
+      "step_texts": {
+        "S1": "Passing to the limit of the finite-level Hecke congruences gives the eigenidentity on the stable diamond-character part.",
+        "S2": "On the nonzero branch division by one nonzero functional value normalizes a common period, and the zero branch admits period one.",
+        "S3": "Ratios to one nonzero value are Galois fixed over the same finite coefficient extension.",
+        "S4": "The approximation by exactly fixed coefficients has a precision loss independent of the chosen integral coefficient.",
+        "S5": "The projected functional still requires suitable cusp representatives for every admitted vector with coefficient compatibility between levels."
+      }
+    },
+    {
+      "edition_sha256": "6bc33d589711943eb8f3612d1746d4de51e7d6cf699cc312e66c44506bd0c176",
+      "sources": [
+        {
+          "path": "notes/blueprint/Z1.3.03.tex",
+          "sha256": "664c16cde47ca4c340f0fa1728e15fde8fed244ff5a5f8807c522e7012226f5d"
+        }
+      ],
+      "statement_sha256": "a220bd8a2393409181bd15155a4465c575cf12826fd0c448345cca4101e70fcc",
+      "steps": {
+        "S1": "3706ddc63c64905e66df00edd1f83bfe3c403ddd76ea3fe6b87a650bcae4d27e",
+        "S2": "24e89530a4aa0af9214dcec6304d7fbe0cf516b275cf7cb85ce5a33a4f67018f",
+        "S3": "48fce95f628c309708812d396ae0a08d1c32e35fbef5dc36620694500baeb64d",
+        "S4": "bcd4b2281cef42640dee1ac5b6ece3310167b2a1e706241396042865eb2af672",
+        "S5": "656dbf000ef4dc7900d31f82e23540988bd2db8ba771d67ceffb2cf89cbad2e2"
+      },
+      "step_texts": {
+        "S1": "Passing to the limit of the finite-level Hecke congruences gives the eigenidentity on the stable diamond-character part.",
+        "S2": "On the nonzero branch division by one nonzero functional value normalizes a common period, and the zero branch admits period one.",
+        "S3": "Ratios to one nonzero value are Galois fixed over the same finite coefficient extension.",
+        "S4": "The approximation by exactly fixed coefficients has a precision loss independent of the chosen integral coefficient.",
+        "S5": "The projected functional still requires suitable cusp representatives for every admitted vector with coefficient compatibility between levels."
+      },
+      "step_passages": {
+        "S1": "b43c15191dc5783f353565ea87c5526b18ba0f4a50ad0bbbe77e594ec28191fe",
+        "S2": "5123f0c2ee32f15fbc39bcd6c1d9441da2529eda46a4cf64b0589bce1fd0f6dc",
+        "S3": "7321330869c6bb91eb087575970bfe114d4479b9dfcdfc5df983e2c2f79070ec",
+        "S4": "35c265b304a6916b7f48aa54f758aedf039b02be8aa49ed662d18821f352a55f",
+        "S5": "af053d2dbaa1028cbdacb8bb4122a4d650179fa201dc800dd41648ad5acf4f76"
+      }
+    }
+  ]
+}

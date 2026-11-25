@@ -1,0 +1,37 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit T12. Local manuscript v3, item 5.22, heading on printed PDF p. 43.
+% PositivityTheory.SiegelWeilFormula.Fin.siegelWeilStd
+% paper2/split_p012.tex:196–218. Verbatim excerpt; SHA-256 46159b5edde2e206cad44b9d3cfa73af1a248bda64678e6d81ef3a89d3f37b7d.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+\noindent\nolinkurl{PositivityTheory.SiegelWeilFormula.Fin.siegelWeilStd} --- in-repo constant (\path{Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilStandard/SiegelWeilStd.lean:8}); variant.\par
+\noindent\nolinkurl{PositivityTheory.SiegelWeilFormula.Fin.siegelWeilStd_mid} --- in-repo constant (\path{Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilStandard/SiegelWeilStdMid.lean:16--20}); not compared.\par
+\noindent\nolinkurl{PositivityTheory.SiegelWeilFormula.Fin.siegelWeilStd_of} --- in-repo constant (\path{Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilStandard/SiegelWeilStdOf.lean:52--67}); not compared.\par
+% End of atlas edition annotation.
+
+\begin{formalstatement}[The value of the doubled Eisenstein series]\label{sub:T12}
+
+For every good number-field base $(F,E,\sigma,B)$ and spaces $A,Y$ of
+ranks $m,n\ge1$, take opposite Hermitian and skew-Hermitian signs, with the
+signature $(r,s)$ of $A$ satisfying $\min(r,s)=0$. Fix a Hecke character
+restricting as $\eta^m$, any finite-index Darboux doubling model satisfying
+its splitting, rationality, invariance and theta-summation rules, a frame,
+standard compact $K$ and height $a$. For every Haar measure with a
+fundamental domain $D$, every Schwartz vector $\Phi$ with finite-dimensional
+$K$-span, and every $x$, the flat-section Eisenstein sum for
+$g\mapsto l(\omega(g)\Phi)$ has a meromorphic continuation from a right
+half-plane, holomorphic at $s_0=(m-n)/2$, with value
+\[
+ E(x,s_0)=
+ \begin{cases}1,&n<m,\\2,&m\le n\end{cases}
+ \ \mathop{\mathrm{avg}}_{g\in D}\,
+       \theta_F\bigl(\omega(x)S(g)\Phi\bigr).
+\]
+The average is taken with respect to the specified Haar measure.
+
+\end{formalstatement}\subnode{T12}
+
+\noindent The printed identity has the same two multipliers. The identification of arbitrary admitted doubling models and their linear functionals requires a comparison. \href{https://msp.org/pjm/2013/264-1/pjm-v264-n1-p11-p.pdf}{S. Yamana, The Siegel–Weil formula for unitary groups, Theorem 2}~\cite{r21-yamana}.

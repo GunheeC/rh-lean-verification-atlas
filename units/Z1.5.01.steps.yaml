@@ -1,0 +1,99 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "Z1.5.01",
+  "edition_sha256": "33bd6c84110cd4c918769c6785e45f56efba167f007291044aa643929be355a2",
+  "note_sha256": "7f7ed2afda645700f5fd0e4e16992cbfd68b4e38a1a0e0e3e5f8bca6d0eb42ec",
+  "statement_sha256": "92ef9d023abd178daafff6d4555a0c90cac45089cee37fd1d13218bb53134628",
+  "sources": [
+    {
+      "path": "notes/blueprint/Z1.5.01.tex",
+      "sha256": "7f7ed2afda645700f5fd0e4e16992cbfd68b4e38a1a0e0e3e5f8bca6d0eb42ec"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The product of leading minors of the prescribed sizes yields a nonzero polynomial highest-weight vector.",
+      "kind": "computation",
+      "uses": [
+        "standard: polynomial action on leading minors"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Af.weyl_complex_of_printed_results",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TWeylC.lean",
+          "line0": 10,
+          "line1": 44
+        }
+      ],
+      "source": "notes/blueprint/Z1.5.01.tex",
+      "anchor": "For $0\\le h",
+      "source_lines": [
+        14,
+        15
+      ],
+      "claim_sha256": "108ba75e36921075dc4b51ebf958bdc7251589af819c059f916dc27e5612f226",
+      "passage_sha256": "55eacebd290f9e07ca2dc852cc4c8c17a081b8cdfa7d0127eb1f59643009deb1",
+      "sha256": "6567b0908bd9d9f803996f381aa72112483d8f005b2a64ec2e8dceb39fd7031d",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The shifted determinant on this vector has eigenvalue the product of the diagonal factors specified by the weight.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "standard: shifted determinant action"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Af.weyl_complex_of_printed_results",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TWeylC.lean",
+          "line0": 10,
+          "line1": 44
+        }
+      ],
+      "source": "notes/blueprint/Z1.5.01.tex",
+      "anchor": "On this vector",
+      "source_lines": [
+        17,
+        18
+      ],
+      "claim_sha256": "697122ddc27f0b2c4688a2386cc0352f3bb47d870280d22fcef1c4b374087cae",
+      "passage_sha256": "7e22730d97cc777262f0fc65dc918385d16161447edd4d7b7d0b674af9c06644",
+      "sha256": "aa40cb1cf605bac96b398103ac282bfbe48ef565ccfd33fcdf6a6586325c12ba",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Twisting the polynomial representation at the embeddings produces the required infinitesimal character while its dimension stays polynomial in the weight bound.",
+      "kind": "assembly",
+      "uses": [
+        "S2",
+        "standard: finite-dimensional coefficient representations"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Af.weyl_complex_of_printed_results",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TWeylC.lean",
+          "line0": 10,
+          "line1": 44
+        }
+      ],
+      "source": "notes/blueprint/Z1.5.01.tex",
+      "anchor": "At each complex embedding",
+      "source_lines": [
+        20,
+        21
+      ],
+      "claim_sha256": "e8ca48aea5492b7380a427f12dfadd744ed7929533fe534d3ae6a54c7febefd3",
+      "passage_sha256": "a5379d37ceb00b81dd4b57b85f61f82333713715ebd976eb9a97aabfa970c417",
+      "sha256": "1d85c7879b85647dbe2552579e716fb93a1cc7ea9e0f04d4d547ecd48930b04d",
+      "ai_review": []
+    }
+  ],
+  "history": []
+}

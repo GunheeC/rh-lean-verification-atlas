@@ -1,0 +1,133 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D562",
+  "title": "Increment bounds for smoothed character sums",
+  "track": {
+    "primary": "analytic",
+    "secondary": []
+  },
+  "statement": "There is one nonnegative Cd such that for every finite additive group, arithmetic data and character functional, every nontrivial character satisfies the Lipschitz bound |Gpsi(y)\\ensuremath{-}Gpsi(z)| \\ensuremath{\\le} |y\\ensuremath{-}z|(log(max(y,z))+Cd+|ell(psi)|), and |Gz(y)\\ensuremath{-}Gz(z)| \\ensuremath{\\le} Cd|y\\ensuremath{-}z|, for y,z at least 1.\n\\[\n|G_\\psi(y)-G_\\psi(z)|\\le |y-z|\\bigl(\\log(\\max\\{y,z\\})+C_d+|\\ell(\\psi)|\\bigr),\\qquad |G_z(y)-G_z(z)|\\le C_d|y-z|.\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Fix any finite abelian group, arithmetic data and additive-character functional.",
+    "Both arguments are at least one. The first estimate takes a nontrivial character, and the second concerns the zeta term."
+  ],
+  "lean": [
+    {
+      "name": "Formalism.LFunctionChainParameters.ThickSetMeanBounds.derivative_integral_all",
+      "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean",
+      "line0": 966,
+      "line1": 981,
+      "sha256": "2199aa1029611946a5ad7a243a47df41a56417d05aa0ea592a91d4064256cb3c",
+      "dominated": 270,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v5",
+      "section": "A4 · Increments of the character sum",
+      "pages": [
+        14,
+        15
+      ],
+      "review_status": "pending_review",
+      "coverage": "Revised paper v5 exposition, pending independent review. The PDF link opens the release attachment after publication."
+    },
+    {
+      "document": "paper2_v5",
+      "section": "A9 · Change of the weight width",
+      "pages": [
+        14,
+        15
+      ],
+      "review_status": "pending_review",
+      "coverage": "Revised paper v5 exposition, pending independent review. The PDF link opens the release attachment after publication."
+    },
+    {
+      "document": "notes/units/D562_v4.md",
+      "section": "D562 · Changing a character sum in its argument and its width",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-3 written exposition, pending independent review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "G.595 (decomp:D562)",
+      "pages": [
+        306,
+        306
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D562.tex",
+      "section": "decomp:D562",
+      "pages": []
+    },
+    {
+      "document": "paper2_v4",
+      "section": "Mechanism, §3",
+      "pages": [
+        14,
+        15
+      ],
+      "coverage": "Paper v4, pending independent review."
+    }
+  ],
+  "status": "Full",
+  "grade": "L1",
+  "reviews": [
+    "reviews/DB3_review_A.md"
+  ],
+  "prerequisites": [],
+  "size_pages": 2,
+  "open_questions": [
+    "Which increment bound supplies one constant for the principal term and for the nontrivial characters across the host data?"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [
+    {
+      "review": "reviews/DB3_review_A.md",
+      "lines": [
+        124,
+        135
+      ],
+      "grade": "L1",
+      "verdict": "CONFIRMED",
+      "scope": "One nonnegative increment constant precedes all group and character data. The principal and nonprincipal increments use the bounds in the pinned DerivIntAll interface. Statement comparison only."
+    }
+  ],
+  "paper_id": "D562",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "increment-bounds-for-smoothed-character-sums",
+  "aliases": [
+    "smoothed character-sum Lipschitz bound",
+    "derivative_integral_all",
+    "D562 Increment bounds for smoothed character sums"
+  ],
+  "background": [
+    "Partial summation",
+    "Lipschitz estimates for smoothed character sums"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.595 (decomp:D562)",
+    "pages": [
+      306,
+      306
+    ]
+  },
+  "question_sources": [
+    "reviews/R23_review.md"
+  ],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "review_status": "pending_review",
+  "summary": "Changing the argument of a smoothed character sum costs at most its displacement times an explicit logarithmic and character-dependent factor. The companion term has a uniform Lipschitz constant. These estimates make it possible to replace nearby arguments while accounting for the resulting error."
+}

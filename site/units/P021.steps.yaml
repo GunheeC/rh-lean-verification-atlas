@@ -1,0 +1,128 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "P021",
+  "edition_sha256": "dd981c7f216833a1cfb344f6d534e2238ee031dc8c8e5fe2446403a7244e5c94",
+  "note_sha256": "34011069faec80ce809ab1de1d54b129c2b26409ec531c3697c752b99f2b5535",
+  "statement_sha256": "bbfd49008f9eaa1f1172b0456d1bb70e989b62fbc0c83b548f87a2a975522f65",
+  "sources": [
+    {
+      "path": "notes/units/P021-argument.tex",
+      "sha256": "34011069faec80ce809ab1de1d54b129c2b26409ec531c3697c752b99f2b5535"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The normalized unit weights sum to one.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: positive unit weights"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.LFunctionChainParameters.WeightedSlopeBounds.each_unit_bound_statement",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LevelOfCongruence.lean",
+          "line0": 175,
+          "line1": 197
+        }
+      ],
+      "source": "notes/units/P021-argument.tex",
+      "anchor": "Fix $u_0$. Write $\\langle\\cdot\\rangle$ for the mean with weights",
+      "source_lines": [
+        134,
+        188
+      ],
+      "claim_sha256": "879eed6a50d8e783054c266ad08c24eace3740234557faa9421454196a743e1b",
+      "passage_sha256": "2ab8d9afce3fc52d8a9dbb3fe9378424de63703cfe2d567754bc9a91e1d57b91",
+      "sha256": "85c89748ae91871626eff7502d56b4e03d62ba0ff7987a9e74fe06e17c17423c",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The common Gaussian and Fourier terms cancel in the upper-to-lower quotient slope comparison.",
+      "kind": "inequality",
+      "uses": [
+        "S1",
+        "D568"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.LFunctionChainParameters.WeightedSlopeBounds.u_function_le_mean",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LevelOfCongruence.lean",
+          "line0": 81,
+          "line1": 103
+        }
+      ],
+      "source": "notes/units/P021-argument.tex",
+      "anchor": "Compare the upper quotient slope at $u$ to the lower one at $u'$.",
+      "source_lines": [
+        190,
+        208
+      ],
+      "claim_sha256": "97467663716da2fd37b549a376765340ee22466687498ab906e3f7044191279b",
+      "passage_sha256": "c0e7207e3109012406a8007a6d8eefb8fe5403fde944e29bf67a9a6d5860f21b",
+      "sha256": "2c8e2dcbf2d05ea25da1fd169b1047fbd81387dbd2ee19ac152534c8f13a750a",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The upper log count bounds the averaged lower correction with its nonnegative coefficient.",
+      "kind": "inequality",
+      "uses": [
+        "S1",
+        "D570"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.LFunctionChainParameters.WeightedSlopeBounds.weighted_mean_lower_bound_le",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LevelOfCongruence.lean",
+          "line0": 162,
+          "line1": 171
+        }
+      ],
+      "source": "notes/units/P021-argument.tex",
+      "anchor": "By the upper count for $\\log T_u$ and $IO\\le Lo_P$, \\decid{D570} gives",
+      "source_lines": [
+        190,
+        208
+      ],
+      "claim_sha256": "63b632769fb58a46f8bfba111f82de919c38848459e7d45e26f0a7e2654aa341",
+      "passage_sha256": "c0e7207e3109012406a8007a6d8eefb8fe5403fde944e29bf67a9a6d5860f21b",
+      "sha256": "2dc7e1b5fc348ea6c687b7c5303ae4d484f51f4c79b8d20a02765689045ef756",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The uniform mean bound can be substituted in the Gaussian estimate to yield the per-unit error bound.",
+      "kind": "assembly",
+      "uses": [
+        "S2",
+        "S3",
+        "input: error parameters"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.LFunctionChainParameters.WeightedSlopeBounds.each_unit_bound_statement",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LevelOfCongruence.lean",
+          "line0": 175,
+          "line1": 197
+        }
+      ],
+      "source": "notes/units/P021-argument.tex",
+      "anchor": "for each $Lo(u)$ and averaging; its coefficient is nonnegative.",
+      "source_lines": [
+        190,
+        208
+      ],
+      "claim_sha256": "d41bfe6e8f351ebefb9a736f17e457e64d98de1632879f2a30efc2d177eba624",
+      "passage_sha256": "c0e7207e3109012406a8007a6d8eefb8fe5403fde944e29bf67a9a6d5860f21b",
+      "sha256": "cb7f2bb0c317630b0032e40dafe064ae062d0b9bef5c300e02c3ace6c7b4b063",
+      "ai_review": []
+    }
+  ],
+  "history": []
+}

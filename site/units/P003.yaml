@@ -1,0 +1,109 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "P003",
+  "title": "Nonvanishing of Dirichlet L-functions in the right half-plane",
+  "track": {
+    "primary": "formal",
+    "secondary": [
+      "analytic"
+    ]
+  },
+  "statement": "For every $N\\ge1$, Dirichlet character $\\chi$ modulo $N$ and $s\\in\\mathbb C$, $\\Re s>1/2$ and $(\\chi\\ne\\chi_0\\ \\text{or}\\ s\\ne1)$ imply $L(s,\\chi)\\ne0$.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Take a character of positive modulus and $s$ with $\\Re s>1/2$.",
+    "If the character is principal, require $s\\ne1$."
+  ],
+  "lean": [
+    {
+      "name": "LFunction_ne_zero_of_half_lt_re",
+      "file": "Main.lean",
+      "line0": 8,
+      "line1": 8,
+      "sha256": "5b0ee88593377690a537bd3111264f9a9652eaad5475b129ce9e15b263830d64",
+      "dominated": 4,
+      "graph": "five_public_heads"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/P003_round3.md",
+      "section": "P003 · The half-plane export and its conductor reduction",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-3 written exposition, pending independent review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "6.3 (pn:P003)",
+      "pages": [
+        55,
+        55
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/P003.tex",
+      "section": "pn:P003",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L1",
+  "reviews": [
+    "reviews/R20_review.md",
+    "reviews/DB3_review_B.md"
+  ],
+  "prerequisites": [
+    "P009"
+  ],
+  "size_pages": 2,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [
+    {
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "lines": [
+        97,
+        97
+      ],
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript.",
+      "verdict": "Exact statement comparison"
+    }
+  ],
+  "paper_id": "P003",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "nonvanishing-of-dirichlet-l-functions-in-the-right-half-plane",
+  "aliases": [
+    "The Dirichlet half-plane",
+    "LFunction_ne_zero_of_half_lt_re",
+    "P003 Nonvanishing of Dirichlet L-functions in the right half-plane"
+  ],
+  "background": [
+    "Dirichlet characters",
+    "Poles of Dirichlet L-functions"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "6.3 (pn:P003)",
+    "pages": [
+      55,
+      55
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "P009": "graph"
+  },
+  "review_status": "pending_review",
+  "summary": "The public half-plane target concerns every Dirichlet character of every positive modulus. Its L-function is required to be nonzero to the right of one half, with the principal character at one excepted. This is the nonvanishing formulation used to connect the other public goals."
+}

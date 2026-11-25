@@ -1,0 +1,161 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "D569",
+  "edition_sha256": "50f68ab2be68296a85d15348d5731871f5ad9e7334ae029cb6da443fd6e1d3d9",
+  "note_sha256": "d895b36a865dd53b7020707be5a722b28376dd3d68f43a01a9f17c01f7d31844",
+  "statement_sha256": "b95bcebc87ddc29a5fff2dcee3835d33333199b4dffc05d9beb45494a44285a9",
+  "sources": [
+    {
+      "path": "notes/units/D569_round4.md",
+      "sha256": "d895b36a865dd53b7020707be5a722b28376dd3d68f43a01a9f17c01f7d31844"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The two bijections identify the top parameters and the individual widths at the translated unit.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: index equivalences and identification record"
+      ],
+      "lean": [
+        {
+          "name": "Deduction.CH.IdentU",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/SplitInertia.lean",
+          "line0": 67,
+          "line1": 72
+        },
+        {
+          "name": "Deduction.ch_top_main_eq",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChTop.lean",
+          "line0": 11,
+          "line1": 21
+        }
+      ],
+      "source": "notes/units/D569_round4.md",
+      "anchor": "Fix the unit $u_0$",
+      "source_lines": [
+        22,
+        22
+      ],
+      "claim_sha256": "88e20c3b311a414e37d168611e05bfb8fbf1430f73a05af4835de0a04c678e34",
+      "passage_sha256": "50858e2cce48a81cee412fc8734496b87cc8003f627c852f342caf47410167f5",
+      "sha256": "ec399f7113138822eef307d6d7e506c9baa795953e6e9d1a5994ba7ab3ea0e40",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The coefficient average keeps its denominator when the indices are replaced by the arithmetic finite set.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "standard: finite reindexing"
+      ],
+      "lean": [
+        {
+          "name": "Deduction.ch_top_main_eq",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChTop.lean",
+          "line0": 17,
+          "line1": 25
+        }
+      ],
+      "source": "notes/units/D569_round4.md",
+      "anchor": "The second equivalence gives $f=\\#\\Phi$, first as a natural-number cardinality and then in",
+      "source_lines": [
+        26,
+        26
+      ],
+      "claim_sha256": "b8374a62a7ad900271c0d5ac1a33a8c82f38e2cf7cf18dfd72e2b712cbde4c77",
+      "passage_sha256": "10a34b69b3673720c7451b6ccae0086dfe25a49b3af6f9f70308b48bfecb6d88",
+      "sha256": "10e6b7555de775342155be4bc91db91adffaafa28a207fbbc313721ee10de244",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Reindexing the top sum and taking the real part gives exactly the arithmetic main sum.",
+      "kind": "computation",
+      "uses": [
+        "S2"
+      ],
+      "lean": [
+        {
+          "name": "Deduction.ch_top_main_eq",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChTop.lean",
+          "line0": 22,
+          "line1": 35
+        }
+      ],
+      "source": "notes/units/D569_round4.md",
+      "anchor": "Expand the lattice main term, replace the four matched quantities, and use the coefficient",
+      "source_lines": [
+        30,
+        30
+      ],
+      "claim_sha256": "3084d8a6b60bd63e6aef3cdf797fdd201ff1a4eb6860bd9f8ec76492a68e4b27",
+      "passage_sha256": "ebd48c74296d6157f722c4280e2a66a324a0bdfd4302d16ebcbbfe5c31b236f5",
+      "sha256": "6ff557e7be8c53f703389c59de5ef340daaaf0584bd35ca6403265f55b31c25f",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "withdrawn",
+      "claim": "Subtracting the transported main term from the transported request gives the arithmetic gap at the same translate.",
+      "kind": "assembly",
+      "uses": [
+        "S3",
+        "input: request clause"
+      ],
+      "lean": [
+        {
+          "name": "Deduction.ch_top",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChTop.lean",
+          "line0": 37,
+          "line1": 55
+        }
+      ],
+      "source": "notes/units/D569_round4.md",
+      "anchor": "The arithmetic gap involves a difference between a request and a main term",
+      "source_lines": [
+        30,
+        30
+      ],
+      "claim_sha256": "4d18dbb2c2c3565aa176e122cee0364b0715619d3c0ae2ddb95194d7bba9cbcd",
+      "passage_sha256": "045ad8c3840353e724745cde72b12104d3cd66b860152d6b214c625942980b7e",
+      "sha256": "539c1b6cf49fd6d242650a7b90b15f9ed2260c784f193083d7237dd93d9cc208",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "66e5af11bfbed49457ace10bfc7ce95f64833e1f968315995e511a950dd6c55b",
+      "sources": [
+        {
+          "path": "notes/units/D569_round4.md",
+          "sha256": "4a6409de45b500edaa65161d038519e88bc5a8e799ee09534dfa2f1597747ecf"
+        }
+      ],
+      "statement_sha256": "b95bcebc87ddc29a5fff2dcee3835d33333199b4dffc05d9beb45494a44285a9",
+      "steps": {
+        "S1": "ec399f7113138822eef307d6d7e506c9baa795953e6e9d1a5994ba7ab3ea0e40",
+        "S2": "10e6b7555de775342155be4bc91db91adffaafa28a207fbbc313721ee10de244",
+        "S3": "6ff557e7be8c53f703389c59de5ef340daaaf0584bd35ca6403265f55b31c25f",
+        "S4": "539c1b6cf49fd6d242650a7b90b15f9ed2260c784f193083d7237dd93d9cc208"
+      },
+      "step_texts": {
+        "S1": "The two bijections identify the top parameters and the individual widths at the translated unit.",
+        "S2": "The coefficient average keeps its denominator when the indices are replaced by the arithmetic finite set.",
+        "S3": "Reindexing the top sum and taking the real part gives exactly the arithmetic main sum.",
+        "S4": "Subtracting the transported main term from the transported request gives the arithmetic gap at the same translate."
+      },
+      "step_passages": {
+        "S1": "50858e2cce48a81cee412fc8734496b87cc8003f627c852f342caf47410167f5",
+        "S2": "10a34b69b3673720c7451b6ccae0086dfe25a49b3af6f9f70308b48bfecb6d88",
+        "S3": "ebd48c74296d6157f722c4280e2a66a324a0bdfd4302d16ebcbbfe5c31b236f5",
+        "S4": "045ad8c3840353e724745cde72b12104d3cd66b860152d6b214c625942980b7e"
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+# V4-COND · proof checklist
+
+AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+
+[Unit and hypotheses](V4-COND.md) · [Step manifest](V4-COND.steps.yaml)
+
+Sign-off edition SHA-256 `3cab8f635fe44e5b21dddc9e5e836560d5cfc115a98c01c4e200bb8f57cbdc99`. This identifies the exact statement, source files and ordered step text. The whole note SHA-256 is `4be59821b8bfc664500b5b65cc355147de34d94741e04692d25035f8673b86d5`. Each check covers the stated claim under its listed inputs.
+
+| Edition source | SHA-256 |
+|---|---|
+| [notes/units/V4-COND_round3.md](../notes/units/V4-COND_round3.md) | `4be59821b8bfc664500b5b65cc355147de34d94741e04692d25035f8673b86d5` |
+
+| Step | Claim | Uses | Pinned Lean source | AI step review | Human checks |
+|---|---|---|---|---|---|
+| <a id="S1"></a>**S1** | Taking the outer scale sufficiently large forces the returned Selmer interval above the fixed thresholds needed for the rescaled frame. ([source](../notes/units/V4-COND_round3.md), lines 101–101, inequality) | [P013](P013.md) · input: prime-pair and field-frame thresholds | [`UpperTheory.Top.supplyChi` 8–16](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/SupplyChi.lean#L8-L16) | No step-specific verdict | awaiting human check |
+| <a id="S2"></a>**S2** | A separate bound on the selected host rank permits truncating the nonnegative Selmer sum at that rank on the same host. ([source](../notes/units/V4-COND_round3.md), lines 101–101, appeal-to-input) | [S1](#S1) · [B07](B07.md) · input: rank comparison with x to the power 400 | [`UpperTheory.Top.supplyChi` 8–16](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/SupplyChi.lean#L8-L16) | No step-specific verdict | awaiting human check |
+| <a id="S3"></a>**S3** | The fields of a single definite-side selection supply compatible row and cut inputs to the division-kernel comparison. ([source](../notes/units/V4-COND_round3.md), lines 103–103, assembly) | [T02](T02.md) · [B05](B05.md) · input: Green and the closed-link comparisons | [`UpperTheory.Top.shape_closed_link_n_of_green` 33–55](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopShape.lean#L33-L55) | No step-specific verdict | awaiting human check |
+| <a id="S4"></a>**S4** | At the common family the rank equality transfers the finite Selmer bounds; the division and slope implications then furnish tiedness with the stated exponents. ([source](../notes/units/V4-COND_round3.md), lines 103–103, appeal-to-input) | [S2](#S2) · [S3](#S3) · input: closed Selmer link and independent slope comparison | [`UpperTheory.Top.divinN_of_hypV` 117–131](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/DivinNOfHypV.lean#L117-L131) · [`Formalism.MainNotions.J.linkMu_of_linkDIV` 775–784](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SharpRestriction/AdmissibleParameterJoins/SumLogPrimeFactorsLe.lean#L775-L784) | No step-specific verdict | awaiting human check |
+| <a id="S5"></a>**S5** | On the tail of that family's window the level prime sum has exponent one half plus nine epsilon. ([source](../notes/units/V4-COND_round3.md), lines 105–105, inequality) | [S4](#S4) · [P017](P017.md) · [P021](P021.md) · input: list A | [`UpperTheory.Comparison₂.level_gm_le_on_family_scales` 28–30](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/PrimitiveCosets/LevelGmLeOnFamilyScales.lean#L28-L30) | No step-specific verdict | awaiting human check |
+| <a id="S6"></a>**S6** | Given a putative primitive zero to the right of one half, choose an intermediate line, then epsilon; sufficiently distant whole windows satisfy the level criterion. ([source](../notes/units/V4-COND_round3.md), lines 113–113, appeal-to-input) | [S5](#S5) · [P018](P018.md) | [`UpperTheory.Comparison₂.formB` 8–19](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/PrimitiveCosets/Imports.lean#L8-L19) | No step-specific verdict | awaiting human check |
+| <a id="S7"></a>**S7** | The finite Euler factors preserve nonvanishing on changing conductor. Reflection in the open strip and the zeta functional equation give the remaining public formulations with their exceptions. ([source](../notes/units/V4-COND_round3.md), lines 115–115, case-split) | [S6](#S6) · standard: change of level and functional equations | [`Claim.strip` 59–73](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/ClaimStrip.lean#L59-L73) · [`Claim.zeta` 75–100](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/ClaimStrip.lean#L75-L100) | No step-specific verdict | awaiting human check |
+
+## Statement comparison and unit decision
+
+Statement against Lean · **awaiting human check**. Current edition meets L4 · **no**. All steps and statement checked by at least two independent readers · **no**.
+
+## How to record your check
+
+Choose the edition and step IDs you actually read. Report your method, verdict and any reservations. The form accepts partial and negative findings. [Sign-off guide and form](../signoffs/README.md)

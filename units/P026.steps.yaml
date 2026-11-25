@@ -1,0 +1,205 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "P026",
+  "edition_sha256": "0713ffe8703912e1660fb27e945da8b4f98c370156d4f55c73005a8458e5ac80",
+  "note_sha256": "89a420b5c15ad9076f7e39ed885b621c6c2e9d7a5d57ec971fecd2937941aaf2",
+  "statement_sha256": "96944178cf1639ab42fb626fe03778981099c4bec8051716294e3fed271c6e8e",
+  "sources": [
+    {
+      "path": "notes/units/P026_round3.md",
+      "sha256": "89a420b5c15ad9076f7e39ed885b621c6c2e9d7a5d57ec971fecd2937941aaf2"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The ordinary hypothesis fixes one positive power for the first inertia-character equality.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: ordinary modular source"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.Ord2.Nf",
+          "file": "Development/AbelianVarietyTheory/Definitions/Foundations/FinalTheorems.lean",
+          "line0": 53,
+          "line1": 66
+        }
+      ],
+      "source": "notes/units/P026_round3.md",
+      "anchor": "Let $\\ell$ be odd, $e\\ge1$, $W$ the admitted integral rank-two representation of the absolute Galois group of $\\mathbb Q$, and $A$ the prescribed",
+      "source_lines": [
+        9,
+        9
+      ],
+      "claim_sha256": "71002157908d7cc4bd1bc5570e4be6445f6d166e617f7f7ddca4071747d4c469",
+      "passage_sha256": "3387c8d4ca1c45732ed6cf5d62a57bfeaadbc91489cbecebc13016b8044a766b",
+      "sha256": "835006aeb823b7bc3edc581ecb6b90e9921a06c87cbe45a64057cade624592c1",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The global producer furnishes one integral tuple carrying the system, specialization and pin conditions.",
+      "kind": "assembly",
+      "uses": [
+        "Z1.3.01",
+        "Z1.3.02",
+        "Z1.3.03"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Z.Kato.Joint.kato_global_unit_law_of_smoothed_classes",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/FrobeniusHodgeTateLaws/KatoGlobalUnitLawOfSmoothedClasses.lean",
+          "line0": 8,
+          "line1": 10
+        }
+      ],
+      "source": "notes/units/P026_round3.md",
+      "anchor": "The three principal inputs are the integral Euler-system construction, the Hodge–Tate law for the smoothed classes and an admissible nonvanishing",
+      "source_lines": [
+        15,
+        15
+      ],
+      "claim_sha256": "67ccfa97adea91aa6d141e2dfdcb6db6a126d9148453322c6b8378a76a0c520d",
+      "passage_sha256": "e7feb28a3fc22f4ff6d45eb87423ef4237d42ac58d194df513801028fd459175",
+      "sha256": "127c67a72ea55090dff5f8b5594dd4549345759025eca70f27b537caceb068fa",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The Frobenius and power-series tests force nonvanishing on cyclotomically trivial inertia for that tuple.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S2",
+        "Z1.3.05"
+      ],
+      "lean": [
+        {
+          "name": "main",
+          "file": "Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/NormFactorLeOne.lean",
+          "line0": 127,
+          "line1": 157
+        }
+      ],
+      "source": "notes/units/P026_round3.md",
+      "anchor": "Restrict the layer relations to inertia; compatibility with the fixed Frobenius gives the needed conjugation law. The pinned local power-series c",
+      "source_lines": [
+        21,
+        21
+      ],
+      "claim_sha256": "f4132949e80f735a625c4ae0901ce7c0b784f749b18611d387586707d863d339",
+      "passage_sha256": "4a41d031276d289f63015bda3eea7a44b46d91fbd625fe39c6e264890b92437c",
+      "sha256": "9d14b1d4f98cf5331a944a947e337d50341c6fa9bcb3e121392baccce9b172bd",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "Substitution into the Greenberg coboundary identity at the same inertia witness gives a contradiction.",
+      "kind": "assembly",
+      "uses": [
+        "S2",
+        "S3"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.KZ.not_gr_of_nzAt",
+          "file": "Development/AbelianVarietyTheory/Definitions/Foundations/IsLocallyConstantCycMod.lean",
+          "line0": 40,
+          "line1": 44
+        },
+        {
+          "name": "GlobalTheory.KZ.zetaUr_of_halves2",
+          "file": "Development/AbelianVarietyTheory/Definitions/Foundations/ZetaElementsUnramifiedOrdinaryOfEulerSystemInert.lean",
+          "line0": 43,
+          "line1": 46
+        }
+      ],
+      "source": "notes/units/P026_round3.md",
+      "anchor": "Choose the output of the global producer once. Universal local nonvanishing applies to its four certified fields and leaves its ring, exceptional",
+      "source_lines": [
+        25,
+        25
+      ],
+      "claim_sha256": "e534c6314e9b87d6ceb42f0e62a8fd550bc9ec818061702a0c7d05330a6d12e7",
+      "passage_sha256": "b31df2e8254fd21ad4b1613138928bee42ca4ec24c16a2a8e1fa645425685c93",
+      "sha256": "6770d7d8158daa3a55438284c3d7a39d2802a0f7f805ac62c7c5490fd42a4c52",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "a76cc0bd78058756233a8ecffafb9b1d496dfae203c578682dcc6eecb0d65d03",
+      "sources": [
+        {
+          "path": "notes/units/P026_round3.md",
+          "sha256": "fb090b6b84c8fa3db1d4814e36b5f2a7485d2964623416528b108566591fa85d"
+        }
+      ],
+      "steps": {
+        "S1": "835006aeb823b7bc3edc581ecb6b90e9921a06c87cbe45a64057cade624592c1",
+        "S2": "127c67a72ea55090dff5f8b5594dd4549345759025eca70f27b537caceb068fa",
+        "S3": "c5c457ee6d5e6c5ebf12860fa8b2f3e6f6a2c1b366be69c90e8fa13780b90003",
+        "S4": "cdeeb9b2da9c851f86c9a4b1bb3db7b5f4c2737ef99f3b2bf09e973630be7cf6"
+      },
+      "step_texts": {
+        "S1": "The ordinary hypothesis fixes one positive power for the first inertia-character equality.",
+        "S2": "The global producer furnishes one integral tuple carrying the system, specialization and pin conditions.",
+        "S3": "The Frobenius and power-series tests force nonvanishing on cyclotomically trivial inertia for that tuple.",
+        "S4": "Substitution into the Greenberg coboundary identity at the same inertia witness gives a contradiction."
+      }
+    },
+    {
+      "edition_sha256": "286414b08900cbacc03f81c9b366e9525dfbbb053f04051c7e974e2ad4290a62",
+      "sources": [
+        {
+          "path": "notes/units/P026_round3.md",
+          "sha256": "fb090b6b84c8fa3db1d4814e36b5f2a7485d2964623416528b108566591fa85d"
+        }
+      ],
+      "steps": {
+        "S1": "835006aeb823b7bc3edc581ecb6b90e9921a06c87cbe45a64057cade624592c1",
+        "S2": "127c67a72ea55090dff5f8b5594dd4549345759025eca70f27b537caceb068fa",
+        "S3": "9d14b1d4f98cf5331a944a947e337d50341c6fa9bcb3e121392baccce9b172bd",
+        "S4": "cdeeb9b2da9c851f86c9a4b1bb3db7b5f4c2737ef99f3b2bf09e973630be7cf6"
+      },
+      "step_texts": {
+        "S1": "The ordinary hypothesis fixes one positive power for the first inertia-character equality.",
+        "S2": "The global producer furnishes one integral tuple carrying the system, specialization and pin conditions.",
+        "S3": "The Frobenius and power-series tests force nonvanishing on cyclotomically trivial inertia for that tuple.",
+        "S4": "Substitution into the Greenberg coboundary identity at the same inertia witness gives a contradiction."
+      }
+    },
+    {
+      "edition_sha256": "438c3afb07246f7e6a496811aac9905da32c669f3353283d84ec3becaf837c57",
+      "sources": [
+        {
+          "path": "notes/units/P026_round3.md",
+          "sha256": "fb090b6b84c8fa3db1d4814e36b5f2a7485d2964623416528b108566591fa85d"
+        }
+      ],
+      "statement_sha256": "96944178cf1639ab42fb626fe03778981099c4bec8051716294e3fed271c6e8e",
+      "steps": {
+        "S1": "835006aeb823b7bc3edc581ecb6b90e9921a06c87cbe45a64057cade624592c1",
+        "S2": "127c67a72ea55090dff5f8b5594dd4549345759025eca70f27b537caceb068fa",
+        "S3": "9d14b1d4f98cf5331a944a947e337d50341c6fa9bcb3e121392baccce9b172bd",
+        "S4": "6770d7d8158daa3a55438284c3d7a39d2802a0f7f805ac62c7c5490fd42a4c52"
+      },
+      "step_texts": {
+        "S1": "The ordinary hypothesis fixes one positive power for the first inertia-character equality.",
+        "S2": "The global producer furnishes one integral tuple carrying the system, specialization and pin conditions.",
+        "S3": "The Frobenius and power-series tests force nonvanishing on cyclotomically trivial inertia for that tuple.",
+        "S4": "Substitution into the Greenberg coboundary identity at the same inertia witness gives a contradiction."
+      },
+      "step_passages": {
+        "S1": "3387c8d4ca1c45732ed6cf5d62a57bfeaadbc91489cbecebc13016b8044a766b",
+        "S2": "e7feb28a3fc22f4ff6d45eb87423ef4237d42ac58d194df513801028fd459175",
+        "S3": "4a41d031276d289f63015bda3eea7a44b46d91fbd625fe39c6e264890b92437c",
+        "S4": "b31df2e8254fd21ad4b1613138928bee42ca4ec24c16a2a8e1fa645425685c93"
+      }
+    }
+  ]
+}

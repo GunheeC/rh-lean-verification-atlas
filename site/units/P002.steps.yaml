@@ -1,0 +1,168 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "P002",
+  "edition_sha256": "6eb53ae636132941ad4f30c8d5b5e5d4489eac5ecfbc4197791d12fcf6a55d53",
+  "note_sha256": "73a290aa8c9bc5fe745171f1b1bab516b2db413839bc87e79a537d2dcd204c2c",
+  "statement_sha256": "782cd2dffa1485a1e762f9197dcacb6064c3daab95e300e68b25d1ae2d41535a",
+  "sources": [
+    {
+      "path": "notes/units/P002_round4.md",
+      "sha256": "73a290aa8c9bc5fe745171f1b1bab516b2db413839bc87e79a537d2dcd204c2c"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The negative-even exclusion starts at minus two and the public predicate separately excludes one.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: explicit zeta predicate"
+      ],
+      "lean": [
+        {
+          "name": "RiemannZetaZerosOnLine",
+          "file": "Statements.lean",
+          "line0": 3,
+          "line1": 4
+        },
+        {
+          "name": "riemannZeta_eq_zero_re",
+          "file": "Main.lean",
+          "line0": 6,
+          "line1": 6
+        }
+      ],
+      "source": "notes/units/P002_round4.md",
+      "anchor": "Read the binders before the alias",
+      "source_lines": [
+        13,
+        13
+      ],
+      "claim_sha256": "ac2c38c4f1ddaacc6c3f855247a7f18b6cada25d90c8dab328d394d78bae6622",
+      "passage_sha256": "dd34c93295767f43dfc78a90ac2aceb3743ebe139af012418f129b1b5a3d96ac",
+      "sha256": "78355c4e3fbf42cb04ef66c0fb9b547c4883e29ad246bb61cbb6d5aa6d31319b",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Modulus-one specialization supplies nonvanishing to the right away from one.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "P008",
+        "P009"
+      ],
+      "lean": [
+        {
+          "name": "rhOfAll",
+          "file": "Supplements/Kernels/MainTheorems.lean",
+          "line0": 9,
+          "line1": 9
+        },
+        {
+          "name": "Formalism.VW.rh_of_every",
+          "file": "Formalism/GammaFactorNonvanishing/CritLine.lean",
+          "line0": 29,
+          "line1": 32
+        }
+      ],
+      "source": "notes/units/P002_round4.md",
+      "anchor": "Identify the input used at modulus one",
+      "source_lines": [
+        17,
+        17
+      ],
+      "claim_sha256": "bc89650bf1d8b30164e0a822744bce0591c5d50df78db8fed051024f441b4eb8",
+      "passage_sha256": "f45ff72397e7354f672a118800e430ce8c0c89b6c4bb5d88f61b345a727f5c74",
+      "sha256": "65bcf2ff84bffb4c04d514f668104557e5a9b34547e1f46ff3a59f934a4187ca",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "A cosine zero at the reflected point contradicts one of the three integer-sign cases, so the excluded left-half-plane zero is impossible.",
+      "kind": "case-split",
+      "uses": [
+        "S1",
+        "S2",
+        "standard: zeta functional equation"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.VW.rh_of_right",
+          "file": "Formalism/GammaFactorNonvanishing/RhOfRight.lean",
+          "line0": 5,
+          "line1": 62
+        }
+      ],
+      "source": "notes/units/P002_round4.md",
+      "anchor": "Inspect the difficult case of the reduction",
+      "source_lines": [
+        21,
+        21
+      ],
+      "claim_sha256": "ad7047e9d915efc8fb7d0a69507343f8fc237b14db59cfece94c1182035f143d",
+      "passage_sha256": "ba2bd10f55975927977b83a44c42015c730fc18098056fc0ca3a55d45f00e217",
+      "sha256": "3557872c566787760ffdba716dc1ef9d3c482a4b254e1a64fd6eb98f3b5ea410",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "withdrawn",
+      "claim": "For riemannZeta_eq_zero_re, the normalized source bytes reproduce the pinned hash and contain the indicated supplier expression.",
+      "kind": "computation",
+      "uses": [
+        "standard: SHA-256 of LF-joined lines"
+      ],
+      "lean": [
+        {
+          "name": "riemannZeta_eq_zero_re",
+          "file": "Main.lean",
+          "line0": 6,
+          "line1": 6
+        }
+      ],
+      "source": "notes/units/P002_round4.md",
+      "anchor": "Reproduce the export check",
+      "source_lines": [
+        21,
+        21
+      ],
+      "claim_sha256": "76dc03cddf0334eececdca5ebb53e5c6ec76c70eb41c5f2616f99e138a4923eb",
+      "passage_sha256": "61a4ee8b15c50355d2e949dbac4874a0f12f7ca08b4a25822563bdf41c5ba4cd",
+      "sha256": "40a17b77178722aeb0fe970f35746898c2cd44e8799c2d1c69ec1727d91f87a1",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "6bf97b1997bd1c9996eff646f6072be954fcd41409d3f07fd483085118e8b031",
+      "sources": [
+        {
+          "path": "notes/units/P002_round4.md",
+          "sha256": "f360c9024035a7a2ab8fd0d77fc8f1123698faeda0f5701f8dfeee630ca9cea4"
+        }
+      ],
+      "statement_sha256": "782cd2dffa1485a1e762f9197dcacb6064c3daab95e300e68b25d1ae2d41535a",
+      "steps": {
+        "S1": "78355c4e3fbf42cb04ef66c0fb9b547c4883e29ad246bb61cbb6d5aa6d31319b",
+        "S2": "65bcf2ff84bffb4c04d514f668104557e5a9b34547e1f46ff3a59f934a4187ca",
+        "S3": "3557872c566787760ffdba716dc1ef9d3c482a4b254e1a64fd6eb98f3b5ea410",
+        "S4": "40a17b77178722aeb0fe970f35746898c2cd44e8799c2d1c69ec1727d91f87a1"
+      },
+      "step_texts": {
+        "S1": "The negative-even exclusion starts at minus two and the public predicate separately excludes one.",
+        "S2": "Modulus-one specialization supplies nonvanishing to the right away from one.",
+        "S3": "A cosine zero at the reflected point contradicts one of the three integer-sign cases, so the excluded left-half-plane zero is impossible.",
+        "S4": "For riemannZeta_eq_zero_re, the normalized source bytes reproduce the pinned hash and contain the indicated supplier expression."
+      },
+      "step_passages": {
+        "S1": "dd34c93295767f43dfc78a90ac2aceb3743ebe139af012418f129b1b5a3d96ac",
+        "S2": "f45ff72397e7354f672a118800e430ce8c0c89b6c4bb5d88f61b345a727f5c74",
+        "S3": "ba2bd10f55975927977b83a44c42015c730fc18098056fc0ca3a55d45f00e217",
+        "S4": "61a4ee8b15c50355d2e949dbac4874a0f12f7ca08b4a25822563bdf41c5ba4cd"
+      }
+    }
+  ]
+}

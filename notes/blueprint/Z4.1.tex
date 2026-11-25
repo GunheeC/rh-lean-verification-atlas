@@ -1,0 +1,745 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% RH Notes blueprint source excerpts for Z4.1
+% Verbatim excerpts in the notation of the parent blueprint. The labelled editions and source ranges appear below.
+% See the unit YAML for the current proof status. Earlier-round passages retain their original wording.
+\section*{Z4.1. Normalized Hecke action on jets}
+
+% Parent source SHA-256: 1af64922b98ed2310744411b1f18b25cc426c97220646321471836e1a3a409d6
+% blueprint/ch_P.tex lines 4055 through 4790; sec:P-r4-z41, sec:P-r4-z41-kernel
+\subsection{Integral jet estimates and normalized action (Z4.1)}\label{sec:P-r4-z41}
+Let $v(x)=-\log_p\|x\|$, with $v(0)=+\infty$. Assume
+\path{EntryHyp}: $\nu>0$, $p>2$ is prime, the field is ultrametric with
+$\|p\|=p^{-1}$, all $u_s,\xi_{s,a},T_{c,i,a}$ are integral,
+$e_{s,b}=0$ for $s\notin TT$, and $F$ belongs to the coefficient class
+of $h=hhS(p,u)$. Thus there are integral $U_i$ such that, in degree
+$d$, $F$ has the coefficients of $\sum_{i=0}^{d}p^{-i}h^iU_i$.
+Put $a_s=\sum_b e_{s,b}$, $L_s=\sum_{c:s_c=s}l_c$,
+$C_s=\#\{c:s_c=s\}$, $d=\sum_s(a_s+L_s)$, $\rho=1/(p^2-1)$ and
+$\gamma=p\rho$. We prove the three displayed inequalities above
+for the factorial pairing $z$ with the frame entry. The variables
+at each of the $2\nu$ cyclic positions form an $r_0$ by $r_1$ matrix.
+See \path{InClass} (\path{OddLogRelation.lean:76}) and
+\path{lowOp}, \path{entryOp}, \path{EntryHyp}, \path{EntryStar}
+(\path{Formalism/ThetaLogCoordinates/UniformThetaSubstitution/StatementE.lean:147,151,170,176}).
+
+\emph{Terms visible to an entry of degree $d$.}
+Write $Y_{s,a,b}$ for low and $X_{s,b}$ for top variables. Replace the
+original variable by $Y_{s,a,b}+\mathbf1_{s\in TT}\xi_{s,a}X_{s,b}$.
+The chain rule for the factorial pairing moves the entry's top linear
+forms into this substitution, leaving $X^e Q(Y)$ on the operator
+side, where $Q=\prod_c\det((T_cY_{s_c})_{*,I_c})$.
+Take $E$ with $d<p^{2E}$ and truncate the two alternating
+Frobenius series in $h$ there. All discarded terms have degree $>d$.
+In each surviving power of exponent $p^t$, the mixed binomial
+coefficients are divisible by $p$. Expanding the two factors in each
+product of $h$ leaves the following four types, with integral coefficients:
+\[
+ A_\phi,\qquad B_k,\qquad Z,\qquad pY_0 .
+\]
+In $A_\phi$ the same column occurs at $s-2f$ and $s+1-2g$,
+with exponents $p^{2f+1}$ and $p^{2g}$, respectively. Both positions
+lie in $TT$ when its coefficient is nonzero. A term $B_k$,
+$k=(s,f,b)$, uses $p^{2f+1}$ top letters at $(s,b)$ and one low
+linear form in column $b$ at $s+2f+1$, with vector
+$(\xi_{s,a}^{p^{2f+1}})_a$. The terms grouped in $Z$ contain at least
+$p$ low letters: the only smaller positive exponent of a low factor is
+the linear term from $g=0$, which has already contributed to $B_k$.
+All binomial errors go into $pY_0$. This is coefficientwise through
+degree $d$; the integral $U_i$ stay integral under the linear
+substitution. See \path{aeval_entry} (\path{NormLeOfDvd.lean:116}),
+\path{dAof}, \path{bBof} (\path{Formalism/ThetaLogCoordinates/UniformThetaSubstitution/StatementE.lean:106,118}),
+\path{sort_prod}, \path{A_eq}, \path{B_eq}, \path{decomposition_of_hh}
+(\path{EDecomp.lean:288,352,414,498}).
+
+\emph{Factorials.} Consider a nonzero term in the multinomial expansion
+of $p^{-i}h^iU_i$. Let $P_\phi,B_k,i_2$ be its multiplicities of
+$A_\phi,B_k,Z$, write $P=\sum_\phi P_\phi$, $B=\sum_k B_k$, and set
+$i_{s,f}=\sum_bB_{s,f,b}$. Each $pY_0$ pays for its own denominator.
+If $b_k$ is the direction of the low linear form, expand
+$Q(Y+\sum_k t_k b_k)$ and take the coefficient of $\prod_k t_k^{B_k}$.
+Multiplication of the series by one low linear form is adjoint for the
+factorial pairing to directional differentiation of the polynomial.
+Iterating gives precisely this coefficient times $\prod_k B_k!$, by
+the multinomial theorem applied to each monomial. The multinomial
+coefficient choosing the $B$ factors includes the factor
+$B!/\prod_k B_k!$. Hence $B!$ survives. A residual low multi-index
+$n$ contributes its factorial $n!$, while the top multi-index contributes
+$e!$ (multi-index factorials are products). All other coefficient factors
+are integral. For a nonzero contribution,
+\[
+ |n|+B=\sum_sL_s,\qquad |n_s|\le L_s,\qquad pi_2\le |n|,
+ \qquad v(\text{term})\ \ge\ v_p(e!B!n!)-P-B-i_2 .
+\]
+Homogeneity gives the first two degree assertions and each factor of $Z$
+gives $p$ low letters for the third. The pure and mixed top exponents
+consumed are at most $e$ in every coordinate, as required for a nonzero
+coefficient. The ultrametric inequality permits us to use the weakest
+bound among these finitely many terms. See \path{e_one_identity_of},
+\path{e_one_integral_of} (\path{FinsuppStepInduction.lean:189,446}),
+\path{valid}, \path{bnd}, \path{term_bound}, \path{TermBound_of}
+(\path{NormNatCastLeOfDvd.lean:386,392,397,495}).
+
+Let $q_p(m)$ be the base-$p$ digit length, with $q_p(0)=0$. Summing
+$\lfloor m/p^j\rfloor$ over $j\ge1$ gives
+$v_p(m!)=(m-\mathrm{digitsum}_p(m))/(p-1)\ge m/(p-1)-q_p(m)$.
+Use $v_p(B!)\ge\sum_{s,f}v_p(i_{s,f}!)$ by multinomial integrality.
+Since $p^{2f+1}i_{s,f}\le a_s$, there are at most $q_p(a_s)$ nonzero
+$i_{s,f}$ for a given $s$, each with at most $q_p(a_s)$ digits.
+The top and residual low arrays have $r_1$ and $r_0 r_1$ entries per
+position. Their losses and the mixed loss total at most
+\[
+ \Delta=\sum_s\bigl(r_1q_p(a_s)+r_0r_1q_p(L_s)\bigr)
+                +\sum_{s\in TT}q_p(a_s)^2 .
+\]
+The three factorial degrees sum to $d$. Since $1/(p-1)=\gamma+\rho$
+and $i_2\le\sum_sL_s/p\le\gamma\sum_sL_s$, this gives the common bound
+\[
+        v(z)\ \ge\ \rho d+\gamma\sum_{s\in TT}a_s-P-B-\Delta
+        \tag{*}
+\]
+for the multiplicities of a worst contributing term. A zero entry
+satisfies all three bounds directly. See \path{deLoss}
+(\path{StatementAB.lean:100}), \path{factorialValuationLowerBound},
+\path{sum_lgN_le}, \path{gainFactorialInequality}
+(\path{ABArith.lean:35,55,103}) and \path{EntryStar_of}
+(\path{NormLeOfDvd.lean:309}).
+
+\emph{How the three charges differ.} For fixed $(s,f)$ the directions
+in $B_{s,f,b}$ have a common vector and target $t=s+2f+1$. A determinant
+at $t$ using two such directions has two proportional replaced columns,
+so it vanishes. Thus $i_{s,f}\le C_t$. More generally, for hits using
+columns in $J$, multilinearity bounds the hits on a nonzero determinant
+by $|\operatorname{im}I_c\cap J|$. Repeated original column indices give
+the zero determinant. Expand the product of the minors to sum the
+individual bounds. See \path{minor_hits} (\path{FinsuppStepInduction.lean:746})
+and \path{HitsCapPos_of}, \path{HitsColumnsPos_of}
+(\path{MinorProdBlockDegree.lean:36,58}).
+
+For an $A_\phi$, orient its pair from the larger exponent to the smaller.
+Write $e_{\rm hi}=\max(2f+1,2g)$ and $e_{\rm lo}=\min(2f+1,2g)$.
+If the charge starts at $s$ and lands at $s'$, then
+$s+e_{\rm hi}=s'+e_{\rm lo}$ modulo $2\nu$. Thus
+$\delta=(s'-s)_{\bmod 2\nu}$ is the least positive residue of
+$e_{\rm hi}-e_{\rm lo}$; it is odd and at most $e_{\rm hi}$.
+The charged top multiplicity is at least $p^\delta$. Let $N_{s,f}$
+count charges starting at $s$ with $\delta=2f+1$. Then
+\[
+ N_{s,f}+i_{s,f}\le a_s/p^{2f+1},\qquad
+ N_{s,f}=0\quad\hbox{if }2f+1\notin D(s),
+\]
+where $D(s)$ consists of the distances to opposite-parity tops.
+Subtract these two counts from $a_s/p^{2f+1}$. On $D(s)$ the
+remainder is nonnegative. Outside $D(s)$ it is at least
+$[a_s/p^{2f+1}-C_{s+2f+1}]_+$. Summing over $s,f$, use
+$\sum_{f\ge0}p^{-(2f+1)}=\gamma$. The left side is
+$\gamma\sum_s a_s-P-B$. The right side minus $\Delta$ is $G_A$.
+Substitution in (*) yields $v(z)\ge G_A+\rho d$.
+See \path{charge_exists}, \path{entryExcessBound_of}
+(\path{Formalism/ThetaLogCoordinates/UniformThetaSubstitution/FrobeniusLiftNorms/EntryAOneParity.lean:55,177}) and \path{excessGainBound}
+(\path{ABArith.lean:193}).
+
+Every paired term consumes at least one even top letter. An even-origin
+mixed term does so too, hence $P+\sum_{s\ {\rm even},f}i_{s,f}
+\le\sum_{s\ {\rm even}}a_s$. The remaining, odd-origin mixed counts are
+bounded by $\min(a_s/p^{2f+1},C_{s+2f+1})$. Applying (*) gives
+$v(z)\ge G_B-\sum_{s\ {\rm even}}a_s+\rho d$, by \path{gainG}
+(\path{Formalism/GrowthSums/StatementA.lean:104}). For the weighted inequality, mark the
+top coordinates with $s$ even and $b\notin J$, or $s$ odd and $b\in J$.
+Every pair has opposite parity and a common column, so it consumes a
+marked letter. Each even-origin mixed term either consumes a marked
+letter ($b\notin J$), or hits a column of $J$ in an odd minor
+($b\in J$). The marked top budget and the distinct-column budget of the
+odd minors add to exactly $b_J$. Thus $P+\sum_{s\ {\rm even},f}i_{s,f}
+\le b_J$. Use the same odd-origin estimate and add $v(p^{b_J})=b_J$
+to (*) to obtain $v(p^{b_J}z)\ge G_B+\rho d$. See
+\path{entryCappedBound_of}, \path{EntryB_of}
+(\path{EntryATwoAndB.lean:220,268}) and \path{cappedGainBound}
+(\path{ABArith.lean:240}).
+
+\paragraph{From the three entry estimates to the three place bounds (Z4.1).}
+\label{par:r5-z41-bridge}
+Fix a place $v$, a step $j+1\le m$, and a column choice $I$. Write
+$H_{sc}$ for the height of column $c$ at position $s$.
+In the field of rational functions in the frame coordinates $Y_{sia}$
+use the multiplicative Gauss norm. Constants retain their norm,
+each $Y_{sia}$ is integral, and evaluating a frame polynomial at these
+indeterminates has norm equal to its largest coefficient norm. Indeed choose, in each nonzero polynomial, the least multi-index of a
+coefficient of largest norm in an additive monomial order. At the sum
+of the two chosen indices their product strictly dominates every
+other summand: another pair attaining the two maxima would have both
+indices at least the chosen indices and their sum could agree only for
+the chosen pair. This proves multiplicativity and permits extension by
+quotients (\path{gN_mul}, \path{gAbs_algebraMap},
+\path{Formalism/GaussJetBounds/GaussJetProofs/GField.lean:97--135,168--193}). The
+coefficientwise isometric embedding preserves the integral witnesses and
+all coefficient identities of the scaled series class. In the resulting
+minor product separate precisely those $(s,c)$ with $s\in TT$ and
+$H_{sc}=1$. Their $1$-by-$1$ determinants are the linear forms
+$\sum_aY_{s0a}X_{sa b}$, with $b=I_{sc}(0)$. Group them by $(s,b)$
+and write $e_{sb}$ for the number in each group. Enumerate the
+complementary minors by $c'$ and retain their original row and column
+indices. Their product with the grouped powers is the entry operator.
+Thus $\sum_b e_{sb}$ counts the top singletons, the capacity counts the
+complementary columns, and their total height is the total number of
+boxes minus the number of top singletons. These are exactly
+$\mathrm{alN}=\mathrm{alG}$, $\mathrm{capN}=\mathrm{capG}$ and
+$\mathrm{lsN}=\mathrm{lsG}$. Evaluation commutes with the finite
+differential pairing, so each coefficient of the frame jet has norm
+bounded by this one entry pairing. See \path{generic_elements_exist},
+\path{EGaussK.reduce}
+(\path{Formalism/ThetaLogCoordinates/UniformThetaSubstitution/FrobeniusLiftNorms/EGaussK.lean:16--32,38--101})
+and \path{EGauss.minorAt_one}, \path{EGauss.entry_exists},
+\path{EGauss.struct}
+(\path{Formalism/ThetaLogCoordinates/UniformThetaSubstitution/FrobeniusLiftNorms/EGauss.lean:55--92,111--206}).
+
+For the weighted bound set $J=\{b:b<i\}$, $i\ge1$, and let
+$t_{sc}=|\operatorname{im}I_{sc}\cap J|$. The system exponent is
+\[
+ E_i=\sum_{s\ {\rm even},c}\bigl(\min(H_{sc},i)-t_{sc}\bigr)
+       +\sum_{s\ {\rm odd},c}t_{sc}.
+\]
+Here $t_{sc}\le\min(H_{sc},i)$. An even top singleton contributes
+$1$ to $b_J$ exactly when its index is outside $J$, hence contributes
+$1-t_{sc}$ to both sides. An odd top singleton contributes $t_{sc}$
+on each side. Each remaining odd minor contributes $t_{sc}$ on
+each side. A remaining even minor contributes zero to $b_J$ and a
+nonnegative amount to $E_i$. This proves $b_J\le E_i$ column by
+column. As $|p|=p^{-1}<1$, the estimate with $p^{b_J}$ implies the
+one with $p^{E_i}$. Repeated column indices give a zero determinant.
+Otherwise counting image indices is the same as counting their
+preimages, so the scaled differential polynomial is exactly
+$p^{E_i}$ times the unscaled one. Moreover the jet in system variables
+is obtained from the local frame jet by an injective variable renaming.
+A coefficient outside the image is zero and one inside is the
+coefficient of its unique preimage.
+See \path{EGauss.struct}, \path{GaussBK_of}
+(\path{Formalism/ThetaLogCoordinates/UniformThetaSubstitution/FrobeniusLiftNorms/EGauss.lean:207--246},
+\path{Formalism/ThetaLogCoordinates/UniformThetaSubstitution/FrobeniusLiftNorms/EGaussK.lean:166--184});
+\path{ea_PIvS_eq}, \path{ea_brScale}, \path{eb_jet}, \path{eb_brJet}
+(\path{Formalism/SharpRestriction/GrowthBounds/MultisetValuation/EaApplyDScale.lean:45--56,98--139},
+\path{Formalism/SharpRestriction/GrowthBounds/MultisetValuation/EbBrJet.lean:24--48}).
+
+Identify $\operatorname{Fin}(n'_v)$ with $\mathbf Z/(2\nu)$ by least
+residue, $n'_v=2\nu$. At a top there are
+$\nu_{s,1}-\nu_{s,2}$ singletons. At other positions put this count
+equal to zero. Subtracting it from the first row length gives capacity;
+subtracting it from the sum of the column heights gives the low size.
+These formulas count columns and boxes even when an individual count
+is zero. The residue identification preserves parity and sends
+cyclic addition and differences to their counterparts, so it preserves
+the excluded-distance sets and the even-top sum. The digit lengths
+in the two loss formulas agree at positive integers and have the same
+zero convention. Substitution in the definitions thus gives the three
+exponents $g_A$, $g_B-\mathrm{alEven}$ and $g_B$ at the actual
+system step $j+1$.
+See \path{ea_alG}, \path{ea_capG}, \path{ea_lsG}, \path{ea_deLoss},
+\path{gain_of_capacity_loss}, \path{ea_gainG}, \path{ea_sumEven},
+\path{ea_brNum}
+(\path{Formalism/SharpRestriction/GrowthBounds/MultisetValuation/GainOfCapacityLoss.lean:13--48,74--145,146--158,173--257}).
+
+For the series class let $\epsilon$ insert this place into the full
+coordinate set. Restriction to this place sends a series $F$ to
+the coefficients $F_{\epsilon_*n}$. Injectivity of $\epsilon$ gives
+a bijection on all decompositions of $\epsilon_*n$ as a sum of two
+multi-indices supported there. Every such decomposition is supported
+there, so restriction commutes with multiplication. It preserves
+total degree, hence commutes with rescaling by $X\mapsto\varpi X$.
+The monomial in $s\mathrm{SA}$ at position $s-2l$ and exponent
+$p^{2l}$ restricts to the corresponding monomial of $s\mathrm{Pos}$
+at exponent $(p^2)^l$. Summing and multiplying therefore sends
+$hhA$ to $hhS$. Restrict the integral witnesses for each power in
+the class identity; their coefficients remain in the unit ball.
+This gives the scaled entry class used above.
+See \path{ea_resV_mul}, \path{ea_resV_atPi}, \path{ea_atPi_subst},
+\path{ea_res_sSA}, \path{ea_res_hhA}, \path{ea_brClass}
+(\path{Formalism/SharpRestriction/GrowthBounds/MultisetValuation/EaDegreeMapDomain.lean:16--81,84--102,118--172}).
+
+There is a normed extension with the required root and the correct
+original integral ring $R=Y.O_c$. At a place $e_O>0$ and $p$ is
+associated in the base valuation ring to a positive power of its
+uniformizer. If $p^{-1}\in R$, intersection with the base field
+would give an inverse of $p$ in the base valuation ring, contradicting
+that association. For $x\ne0$ put
+$v(x)=\sup\{a/b:b>0,\ x^bp^{-a}\in R\}$.
+The rank-one condition gives a member and bounds the set above. Multiplying
+two tests after clearing denominators gives $v(xy)\ge v(x)+v(y)$.
+For every rational $a/b$, either its test for $x$ or the inverse
+test for $x^{-1}$ is integral. A rational strictly between $v(x)$
+and $-v(x^{-1})$ would violate that dichotomy; applying the product
+bound to $xx^{-1}=1$ proves equality for inversion and then for
+multiplication. For $x\notin R$ the rank-one condition gives
+$(x^{-1})^n/p\in R$ with $n>0$, so $v(x)<0$, whereas $x\in R$
+passes the test $0/1$. Factoring $x+y=y(1+x/y)$ when $x/y\in R$,
+and interchanging $x,y$ otherwise, proves the ultrametric inequality.
+Since $p^k\in R$ exactly for $k\ge0$, $v(p)=1$. The resulting
+norm $p^{-v}$, with value zero at zero, has unit ball $R$. Complete
+and use the extending spectral norm on the algebraic closure of the
+completion. Its restriction to the original field is isometric.
+The polynomial $T^{p^2-1}-p$ now has a root $\varpi$, and
+$|\varpi|=p^{-1/(p^2-1)}$. See \path{nm_pinv_of_place}, \path{nm_ext},
+\path{nm_restNorm_of_place}
+(\path{Formalism/SharpRestriction/GrowthBounds/MultisetValuation/NmPinvOfPlace.lean:14--62},
+\path{Formalism/SharpRestriction/GrowthBounds/MultisetValuation/NmRestNormOfPlace.lean:15--21});
+\path{nm_v}, \path{nm_v_mul}, \path{nm_v_nonneg_iff}, \path{nm_v_p},
+\path{nm_v_add}, \path{nm_extG}
+(\path{Formalism/SharpRestriction/GrowthBounds/MultisetValuation/RationalLowerBounds.lean:30--84,92--106,145--173,181--238},
+\path{Formalism/SharpRestriction/GrowthBounds/MultisetValuation/NmNEqZero.lean:64--85,97--125}).
+
+Finally choose an arbitrary factor $U$ whose parameter expression has
+integral coefficients. The scaled-series calculation above applies to
+this $U$ after coefficient extension: the Witt coefficients and
+$\varpi$ lie in the unit ball, hence so does the subring they generate.
+It gives a unit-ball coefficient system $u$ and the scaled class just
+restricted. Apply the appropriate jet bound, cancel the homogeneous
+factor $\varpi^d$ as in the preceding Gauss descent, and denote the
+coefficient obtained before field extension by $x$. Coefficient
+extension commutes with the finite differential pairing, so
+$|x|\le p^{-g}$ in the extension. For $b>0$ and $a\le bg$,
+$|x^bp^{-a}|\le p^{-bg+a}\le1$. The unit-ball identity puts
+$x^bp^{-a}$ in $Y.O_c$, precisely the test $Y.\mathrm{geC}(x,g)$.
+The argument applies to every $U$, column choice and monomial. Taking
+the two unscaled operators and the $i$-scaled one gives the stated
+three place bounds. See \path{ea_geC_of_norm}, \path{ea_Rp_le_ball},
+\path{ea_lowN}, \path{ea_A1U}, \path{ea_A2U}, \path{ea_BU}
+(\path{Formalism/SharpRestriction/GrowthBounds/MultisetValuation/EaGeCOfNorm.lean:53--110,198--239});
+\path{first_theorem_place_bound}, \path{second_lemma_place_bound} and
+\path{hecke_place_bound}
+(\path{Formalism/SharpRestriction/GrowthBounds/MultisetValuation/FirstTheoremPlaceBound.lean:20--30}).
+
+\paragraph{Expansion at one place and multiplication over the places.}
+Take the residue characteristic $p\ge5$, an even cycle of length
+$n'\ge2$, the prescribed Frobenius-periodic trace-dual bases, a Witt
+coefficient $c$ with $\sigma^2c=c$, $\varpi^{p^2-1}=p$, and a
+zero-constant inverse $\lambda_F(\mu)=X$. Let $R$ be the subring
+generated by the Witt coefficients and $\varpi$ in the extension
+field (\path{Rp}, \path{FormalGroupSystem.lean:194}). Put $q=p^2$. In the scaled logarithm
+$\lambda_F$, the coefficient at $q^j$ is
+$\varpi^{q^j-1}/p^j=p^{1+q+\cdots+q^{j-1}-j}$, with exponent zero
+at $j=0,1$. It is integral and divisible by $p$ for $j\ge2$.
+Solving for the coefficient of $\mu$ in increasing degree gives an
+integer recursively from lower coefficients since the linear term of
+$\lambda_F$ is $1$. Modulo $p$ the inverse satisfies $\mu+\mu^q=X$.
+Hence
+\[
+               \mu(X)\equiv\sum_{j\ge0}(-1)^jX^{q^j}\pmod p .
+\]
+Each coefficient in this identity is a finite calculation. See
+\path{sx_lam_int}, \path{sx_mu_alt_int}, \path{sx_mu_alt}
+(\path{SxMuAltInt.lean:13,187,332}).
+
+Let $S_{t,a,b}$ denote the alternating sum in the variables at positions
+$t-2j$ with exponents $p^{2j}$. On even positions the trace-dual basis
+identity says that the two square basis matrices multiply to the
+identity. Reversing them gives
+$\sum_r\sigma^t(\omega_r^*)\sigma^{t'}(\omega_r)=\delta_{tt'}$
+for $t,t'$ even. Applying $\sigma$ gives the odd--odd case.
+In the residue ring the binomial theorem gives
+$(\sum x)^p=\sum x^p$; Witt Frobenius reduces to the $p$th power.
+Consequently the alternating inverse applied to each linear basis
+coordinate is congruent modulo $pR$ to a sum of the $S_{t,a,b}$
+with respective coefficients $\sigma^t(\omega_r^*)$ on the even
+positions or $\sigma^t(\omega_r)$ on the odd ones. Indeed, in the
+$j$th term shift $t$ by $2j$ and replace the $p^{2j}$th power of
+the basis coefficient by its $2j$th Frobenius iterate. The bases
+are periodic with period $n'$. In the product of one coordinate
+and the $p$th power of the other, the latter Frobenius changes its
+index by one, and the sum over $r$ vanishes unless the two indices
+match after this shift. The two ordered products therefore give
+\[
+ \sum_{s,a,b}u_s S_{s,a,b}^{p} S_{s+1,a,b}
+       =hhS(p,u),\qquad
+  u_s=\begin{cases}c&s\ {\rm odd},\\-\sigma c&s\ {\rm even}.
+       \end{cases}
+\]
+The equal sign here identifies the surviving cyclic polynomial in
+the series coordinates; the substituted original difference equals
+this series plus $pY$ for integral $Y$. See \path{sx_dual_even},
+\path{sx_dual}, \path{frobenius_congruence_witt}, \path{sx_frob_sum}
+(\path{FrobeniusCongruenceWitt.lean:13,26,80,102}) and
+\path{restTwoSums_of} (\path{TripleSumComm.lean:205,286,298}).
+
+In $G_{c,\sigma c}$ remove the leading expression
+$(c X Y^p-\sigma c\,Y X^p)/p$ before scaling. In each orientation
+the remaining terms have degree $q^i+p q^j$, denominator
+$p^{i+j+1}$, $0\le i\le j$, $(i,j)\ne(0,0)$. After scaling both
+variables by $\varpi$, their powers of $\varpi$ are at least $p+1$:
+at $(0,1)$ the excess over $p+1$ is $(p-2)(q-1)$, increasing $i$
+by $1$ changes it by $(q-1)(q^i-1)$ and increasing $j$ by $1$
+changes it by $(q-1)(p q^j-1)$. The remaining series thus has the
+form $\varpi^{p+1}W$ with $W$ integral and of zero constant.
+After substituting the inverse coordinates, the negative exponent is
+$-(\varpi^{p+1}/p)hhS+\varpi^{p+1}R_1$, with $R_1$ integral of zero
+constant. Its second exponential is integral, since
+$v_p(m!)\le m/(p-1)$ and $\varpi^{p+1}$ has valuation $1/(p-1)$
+(the integer prime-to-$p$ factors of $m!$ are Witt units).
+Renaming variables embeds each place in the disjoint union of places.
+The sum of the local exponents has exponential equal to the product
+of their exponentials, coefficient by coefficient, and the product of
+their integral factors is integral. See
+\path{exists_atPi_G1_eq_C_pow_mul_integral_series}
+(\path{ExistsAtPiG1EqCPowMulIntegralSeries.lean:61}),
+\path{gcCondition_of_twoSums} (\path{TwoSumsCondition.lean:174}),
+\path{restGcA_of} (\path{ExpansionAllPlacesOfPlace.lean:173})
+and \path{restSExpA_of} (\path{DworkExponentialRestrictions.lean:118}).
+
+For a general $\beta$ satisfying \path{BeProp},
+Section~\ref{sec:P-r4-z41-kernel} proves that
+$\exp(\operatorname{inParam}(\beta)-G_{c,\sigma c})$ belongs to
+$1+(X,Y)W[[X,Y]]$, over the original Witt coefficient ring $W$,
+with $\sigma^2c=c$. A product of these units over the input
+coordinate pairs and the unit from the given equivalence of $\Phi$
+supply the correction for the exponential of $-\Phi$. Their inverses
+also have integral coefficients by the geometric series in a
+zero-constant term. Substitution in the integral zero-constant
+coordinates preserves integrality. For the admitted kernel's
+additional factor $U$, its expression in parameters is integral over
+$R_1$. For each of the linear forms $L_i$ of the chosen Witt bases,
+the integral coordinates $M_i=\varpi\mu(L_i)$ satisfy
+$\log_F(M_i)=\varpi L_i$ by the inverse identity. Consequently the
+scaled substitution on $U$ is the substitution of $M_i$ into its
+integral parameter expression. It stays integral in every allowed
+target subring $R'$ containing $R$ and the image of $R_1$. This is
+\path{restBeta} (\path{BiadditiveSecondVariable.lean:137}),
+\path{E0} (\path{IntegralExpRename.lean:61}),
+\path{restSExp_of}, \path{restSExpA_of}
+(\path{DworkExponentialRestrictions.lean:95,118}),
+\path{genInt}, \path{restSInt} (\path{InParamMap.lean:58,124})
+and \path{restSIntA} (\path{AtPiEqRescale.lean:64}).
+
+Finally set $c_0=\varpi^{p+1}$, and let $h'=hhS+pH$ be any allowed
+lift in $R'$ with zero constant. Then $H$ has zero constant as well.
+The identity
+\[
+   \exp(-c_0 hhS/p)=\exp(-c_0h'/p)\exp(c_0H)
+\]
+absorbs an integral factor, since $c_0^i/i!$ belongs to $R$.
+Writing the resulting integral prefactor as $V'$, take
+$U_i=(-c_0)^i V'/i!$ in the definition of \path{InClass}.
+Only $i\le d$ can matter in degree $d$. At multiple places the
+corresponding factor is $V'\prod_v(-c_0)^{i_v}/i_v!$,
+with $0\le i_v\le d$ for every $v$. This proves the required
+coefficients for each allowed lift and after extension of subrings.
+See \path{exp_change}, \path{SConcl_of}
+(\path{KernelExpansionOfRestrictions.lean:94,116}),
+\path{inClass_of_exp}, \path{inProd_of_exp}
+(\path{InClassOfExp.lean:143,163}) and \path{all_places_of_restrictions}
+(\path{AllPlacesOfRestrictions.lean:37}).
+
+\paragraph{Why the normalized Hecke operator preserves the lattice.}
+At an elementary edge over the principal ideal ring, take the Smith
+normal form for the inclusion of source in target. Each elementary
+divisor divides the irreducible $p$, so is a unit or is associated to
+$p$. If the residue field has $p^{n'}$ elements, the quotient has
+order $(p^{n'})^i$; the product of the cyclic factor orders therefore
+gives exactly $i$ nonunit divisors. Permute these first. The source
+basis matrix is $g$ and the target is the column span of
+$gD$, $D=\operatorname{diag}(p^{-1}I_i,I)$.
+See \path{lc_snf} and \path{lc_main}
+(\path{Formalism/SharpRestriction/GrowthBounds/LatticeSystems.lean:2036--2042,2098--2125,2149--2152,2190--2214}). Integral changes
+of basis on a fixed lattice lie in $\mathrm{GL}(\mathcal O)$:
+express each basis in the other to obtain inverse integral matrices.
+Their row actions preserve the integral Weyl lattice and their
+determinants are units, so the twisted lattice is independent of
+this choice. See \path{lc_main} (\path{LatticeSystems.lean:2098}),
+\path{dl_indep} and \path{dl_pos} (\path{GShiftRowGenMonomial.lean:376,443}).
+
+For an antitone polynomial weight $\eta$ put $N_i=\sum_{t<i}\eta_t$.
+A divided row operator picking $a$ letters moves precisely $a$
+row indices in each surviving monomial, so applying a fixed word to
+the highest-weight vector gives a homogeneous polynomial for the
+total degree $k$ in the first $i$ rows. Every supported monomial
+satisfies $k\le N_i$: in a product of column minors of shape $\eta$
+a column of height $h$ can contribute at most $\min(h,i)$ such
+letters. Sum over the columns to count the boxes of the first $i$
+rows. This continues to hold under divided row operations: expand
+the minors after adding a parameter times one row to another and
+extract the desired parameter power. Every term is still a product
+of minors with the same column heights. The action of $D$ on this
+word multiplies by $p^{-k}$; multiplication by $p^{N_i}$ leaves the
+integral multiple $p^{N_i-k}$ of the same generator. The words
+span, so the inclusion holds on the lattice. See \path{g_applyWord},
+\path{dom_dualWeyl}, \path{diag_monomial}, \path{weyl_diag}
+(\path{GShiftRowGenMonomial.lean:165,176,237,264}).
+
+For an integral antitone weight put $\eta_t=\lambda_t-\lambda_{\rm last}$.
+The determinant twist contributes $p^{i\lambda_{\rm last}}$
+for $i$ in range. This changes $N_i$ to $\sum_{t<i}\lambda_t$.
+A non-antitone weight gives the zero lattice in this construction.
+The embeddings and the Frobenius powers carry the diagonal entries
+$p^{-1},1$ to themselves. Tensor the single-factor inclusions over
+the cycle, adding their exponents to obtain $A_i$, and take the
+identity at the other places. Summing over the finite neighbors
+preserves the target submodule. For $1\le i$ in the admissible
+range and $j+1\le m$, the even weights give exactly the even part
+of the normalizing exponent
+\[
+ N'(j+1,i)=\sum_{s\ {\rm even}}\sum_{a=1}^{i}\lambda_I(s,a)
+              +i\sum_{s\ {\rm odd}}w(j+1,s)
+\]
+(\path{lamI}, \path{Nprime},
+\path{Formalism/SharpRestriction/GrowthBounds/FormalGroupSystem.lean:23,72--74}).
+Each of the at most $i$ odd
+weights at a position $s$ is bounded by $w(j+1,s)\ge0$, giving
+the odd part's upper bound. Thus $N'-A_i\ge0$ and multiplying the
+already integral sum by $p^{N'-A_i}$ yields the prescribed normalized
+operator. See \path{dl_P} (\path{GShiftRowGenMonomial.lean:327}),
+\path{Tminus_mem}, \path{Ar_lift_le}, \path{TmInt},
+\path{restricted_hecke_integral_of_edges}, \path{restWeylEdge}
+(\path{RestrictedHeckeIntegralOfEdges.lean:35,74,136,157,234}).
+
+\paragraph{The product entry and the single denominator loss.}
+The admitted total kernel is $\prod_v F_v$ times a factor $U$
+integral in parameters, by the exponential splitting above. A general
+such $U$ can involve several places. Expand its parameter expression
+in monomials. At fixed jet degree only finitely many contribute, since
+every substituted coordinate has zero constant. In a given monomial
+collect the coordinates over each $v$ as $U_v$, expressed in the
+original variables by the inverse parameter series. Its parameter
+expression is precisely the corresponding ordinary monomial, hence is
+integral. The local estimate applies to $F_vU_v$ by its quantifier over
+all such factors. The variables and derivative operators now split by
+place: a coefficient of the product pairs with a product of local
+derivatives, with the multi-index factorial splitting into the local
+factorials. Consequently the entries have valuation at least
+$\sum_v g_v$ for any local rational bounds $g_v$. Summing back the
+monomials with integral coefficients preserves the same bound. This
+proves the product estimate with the possibly mixed prefactor.
+See \path{en_places_add}, \path{restPlaces_of}
+(\path{KernelProductForm.lean:51,118}) and \path{restEnt_of}
+(\path{RestEntOf.lean:62}).
+
+By the admitted class formula, each component of the operator after
+scalar extension is a finite sum over $x$ of
+$c_K w_x^{-1}\sum_y K_{x,y}F_{x,y}$.
+At an interior level $w_x$ is the stabilizer order for its chosen
+representative; the last level has the two finite index sets and positive
+weights of the last class formula. In both cases $c_K$ is integral
+and $v_p(w_x)\le d_j$. The admitted frame condition at the chosen
+related lattices converts the product entry bound into membership
+of each normalized kernel value in the lattice of level $g$.
+Thus $p^{d_j}c_K/w_x$ is integral for each $x$, and the two finite
+sums cost only $d_j$ altogether. To descend, express the extended vector as a finite sum
+$\sum a_k z_k$ of lattice vectors with coefficient lower bound
+$g-d_j$. If the $z_k$ are dependent over the original field, choose a
+relation and a nonzero coefficient of least valuation in it. Divide
+the relation by that coefficient and eliminate its vector. Every
+ratio is integral, hence the remaining coefficients still have the
+same lower bound. Repeat until the vectors are independent. A
+nonsingular coordinate minor of the remaining vectors then recovers
+their coefficients from the original vector over the original field.
+The bound on the recovered coefficients gives precisely membership
+in the original scaled lattice (\path{descent_core},
+\path{DescentCore.lean:98}; \path{descent}, \path{InLatCSmulC.lean:54}). For a list of distinct selected places, expand the Hecke
+neighbor sums successively. At an unselected place the index is zero
+and its scalar equals one. Each term in the expansion therefore
+satisfies precisely the simultaneous edge relation, and the same bound
+applies to the sum. Equivariance gives the asserted global lattice
+condition. Passing from rational lower bounds to real endpoints is the
+ceiling argument given above. See \path{KSum}, \path{ksum_entry},
+\path{kernel_sum_of_class_data}, \path{entry_mem}, \path{TtL_mem},
+\path{Eqv_TtL}, \path{formB_of}
+(\path{KernelSumOfClassData.lean:178,185,197,206,92,244,255}) and
+\path{formB_lim}, \path{form_of_place}
+(\path{RamifiedLatticeOfChainEstimates.lean:65,90}).
+
+\emph{Status: complete for Z4.1 under the stated admission hypotheses.}
+Section~\ref{sec:P-r4-z41-kernel} supplies the biadditive normal form
+used here. \textit{[Hypothesis, discharged at
+\path{admissible_at_each_site} in \path{site_cmpLite_siteAdm}.]}
+This application to the selected site uses the thirteen conjuncts of
+\path{admitted}; the site realization belongs to Z4.2
+(\path{Formalism/SharpRestriction/GrowthBounds/FormalGroupSystem.lean:771--773},
+\path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/JointSiteChainComparedCarriesAdmittedSystem.lean:29--46,77--89}).
+The column proposition~\ref{prop:P4-columns} also requires the two
+prefactor inequalities, the neighbour count and the inverse convolution
+(\path{vGeK_cl}, \path{Cii}, \path{CountLoc}, \path{heckeCondition_of_adm};
+\path{Formalism/SharpRestriction/GrowthBounds/MultisetValuation/TheoremOfAlternateForm.lean:524,538},
+\path{Formalism/SharpRestriction/GrowthBounds/MultisetValuation/CountLoc.lean:9},
+\path{Formalism/SharpRestriction/GrowthBounds/MultisetValuation/HeckeConditionOfAdm.lean:75}).
+
+
+\paragraph{Classification of the biadditive local kernel.}\label{sec:P-r4-z41-kernel}
+We prove the normal-form input \path{RestBeta} of the preceding
+expansion. Work over $K=\operatorname{Frac}W(\overline{\mathbf F}_p)$,
+$p\ge5$, with integral ring $O$, $v(p)=1$ and Witt Frobenius $\sigma$.
+Write $q=p^2$, $N=q-1$ and
+\[
+ L(T)=\sum_{i\ge0}T^{q^i}/p^i,\qquad
+ U(T)=L(T^p)/p,\qquad
+ A(X,Y)=\sum_{0\le i\le j}
+      X^{q^i}Y^{p q^j}/p^{i+j+1}.
+\]
+Here $U(T^p)=L(T)-T$. Write $B\sim B'$ when $B-B'$ has zero constant
+and $\exp(B-B')$ is integral. For the input $b$ of \path{BeProp}, put
+$B(X,Y)=b(L(X),L(Y))$. We shall obtain $c\in O$, $\sigma^2c=c$,
+with $B\sim cA(X,Y)-\sigma(c)A(Y,X)$
+(\path{RestBeta}, \path{DworkExponentialRestrictions.lean:15};
+\path{BeProp}, \path{FormalGroupSystem.lean:125--157};
+\path{lgF}, \path{g0F}, \path{Aser}, \path{Gser},
+\path{OddLogRelation.lean:13--30}).
+
+\emph{Two coefficient tests.} If $\partial_X h$ is integral, replacing
+an integral zero-constant argument $x$ by $x+p r$ with $r$ integral of
+zero constant changes $h$ by an element of $pO[[\mathbf X]]$, for
+integral zero-constant arguments in the other variables as well.
+For a term $h_n X^n$ the contribution using $r^k$, $k\ge1$, carries
+$(nh_n)\binom{n-1}{k-1}p^k/k$, which belongs to $pO$. This proves
+the assertion coefficientwise. In particular $L'$ is integral with
+constant $1$. The unique $F=L^{-1}(L(X)+L(Y))$ is integral. Indeed it
+has rational coefficients. If its truncation $F_{<d}$ is $p$-integral,
+then $F_{<d}^q\equiv F_{<d}(X^q,Y^q)\pmod p$ by reduction to
+$\mathbf F_p$. The test for $L$ gives
+$L(F_{<d}^q)\equiv L(F_{<d}(X^q,Y^q))\pmod p$.
+In degree $d>1$ the latter agrees with $L(X^q)+L(Y^q)$, since the
+possible contributing degree of the original discrepancy is $d/q<d$.
+Using $L(T)=T+L(T^q)/p$, the degree-$d$ discrepancy of $F_{<d}$
+is integral. Its negative is the necessary degree-$d$ correction;
+the induction starts at $X+Y$. Uniqueness gives $\sigma F=F$ and
+$F(\zeta X,\zeta Y)=\zeta F(X,Y)$ for $\zeta^N=1$, as
+$L(\zeta X)=\zeta L(X)$ (\path{divided_derivative},
+\path{IntegralPderivLgF.lean:101,176}; \path{formal_law_exists},
+\path{formal_law_symmetric}, \path{CoeffSubstLgFOfDegreeOne.lean:306,312}).
+
+Set $\Phi h=(\sigma h)(X_1^p,\ldots,X_s^p)$ and
+$Dh=\Phi h/p-h$. For $h(0)=0$,
+\[
+              \exp h\ \hbox{integral}\quad\Longleftrightarrow\quad
+              Dh\ \hbox{integral}.
+\]
+Indeed, for $E=\exp h$, $\Phi E/E^p=\exp(pDh)$. If $E$ is integral
+then $\Phi E\equiv E^p\pmod p$, and taking the logarithm of
+$1+pT$ gives coefficients in $pO$. Conversely $Dh$ integral gives
+$\Phi E/E^p\in1+pO[[\mathbf X]]$ by the exponential series.
+Induct on degree in $E$. Dividing out its integral truncation of
+degrees $<d$ preserves this ratio condition. If the remaining leading
+homogeneous part is $C_d$, the degree-$d$ part of the ratio is $-pC_d$,
+so $C_d$ is integral. This also proves closure of $h\sim0$ under
+division by $N$, since $N$ is a $p$-adic unit fixed by $\sigma$
+(\path{dwork_multivariable}, \path{Formalism/ThetaLogCoordinates/UniformThetaSubstitution/FrobeniusLiftNorms/LocalComponentGL.lean:239,448};
+\path{LamModule_of}, \path{ScalingSwapLemmas.lean:314}).
+
+\emph{Support and the linear coefficient.} Write
+$\delta f=f(F(X,Y))-f(X)-f(Y)$, and $\delta_X G$ for this operation
+on the first variable of a two-variable series. The two additive
+clauses for $b$ give $\delta_X B\sim0$, $\delta_Y B\sim0$ after
+substituting $L$ in each variable. The conjugacy clause gives
+$B(\zeta X,Y)\sim B(X,\zeta^pY)$: each $N$th root is the
+Teichm\"uller lift of a root in $\mathbf F_{p^2}^\times$, with
+Frobenius its $p$th power. The average
+\[
+ G=N^{-1}\sum_{\zeta^N=1} B(\zeta X,\zeta^{-p}Y)
+\]
+is equivalent to $B$, and both additive defects still have integral
+exponentials by the symmetry of $F$. Summing powers of the primitive
+root shows that $G_{ij}=0$ unless $i,j\ge1$ and $i\equiv pj\pmod N$.
+Swapping variables preserves this condition since $p^2\equiv1\pmod N$
+(\path{sx_root}, \path{sx_betaHyp}, \path{BiadditiveSecondVariable.lean:61,130};
+\path{StepZero_of}, \path{ScalingSwapLemmas.lean:340}).
+
+Here is the one-variable calculation needed twice below. If $f(0)=0$
+and $\delta f$ is integral, then for some $a\in O$, $b'\in K$,
+\[
+                    f=aU+b'L+R,\qquad R\in O[[T]].
+\]
+First $\delta U=(L(F^p)-L(F(X^p,Y^p)))/p$ is integral by the
+substitution test and the congruence of the two arguments modulo $p$.
+Subtracting an integral multiple of $U$ or any multiple of $L$
+therefore preserves the assumption. Start with the remainder
+$f-[T]f\cdot L$. If its coefficients below $n>1$ are integral, the
+mixed coefficients of total degree $n$ in its coboundary imply
+$\binom nk [T^n]R\in O$, $0<k<n$, since the linear part of $F$ is
+$X+Y$. If $n$ is not a power of $p$, the base-$p$ digits of $n$ give
+a proper $k=p^s$ with $\binom nk$ nonzero modulo $p$ (expand
+$(1+T)^n$ in characteristic $p$). If $n=p^k$, $k\ge1$,
+$\binom{p^k}{p^{k-1}}$ has valuation one, by
+$\binom{p^k}{p^{k-1}}=p\binom{p^k-1}{p^{k-1}-1}$.
+So the exceptional coefficient $r_n$ satisfies $p r_n\in O$.
+At $n=p q^j$ subtract $p^{j+1}r_n U$, and at $n=q^{j+1}$
+subtract $p^{j+1}r_n L$. These corrections kill $r_n$, preserve
+integrality at all smaller degrees and change each scalar by an
+element of $p^j O$. The two resulting sequences converge by
+completeness and each limiting remainder coefficient belongs to the
+closed ring $O$. See \path{DeIntegral_of} (\path{IntegralPderivLgF.lean:191}),
+\path{correct}, \path{exists_limit} and \path{LemmaOne_of}
+(\path{NotDvdChoosePowMul.lean:16--62,195--276,297--328,428--539}).
+
+Put $f(Y)=[X]G(X,Y)$. Logarithmic differentiation of the integral
+unit $\exp(\delta_Y G)$ in $X$ at $X=0$ gives $\delta f$ integral.
+Differentiating $\exp(\delta_XG)$ in the added variable at zero gives
+$\partial_X G/L'(X)-f(Y)$ integral, since differentiating the group
+law gives $\partial_2F(X,0)=1/L'(X)$. In the preceding decomposition
+of $f$, only exponents $j\equiv p\pmod N$ can occur in $f$, while
+$L$ is supported on $j\equiv1$ and $U$ on $j\equiv p$.
+Thus $f-cU$ is integral for the integral $c=a$. We have proved
+$\partial_X G-cL'(X)U(Y)$ integral, and obtain $c'\in O$ likewise
+from $G(Y,X)$ (\path{FirstDeriv_of}, \path{CobLin_of}, \path{StepI_of},
+\path{ConstantCoeffLawFirstTwoOfThree.lean:265,337,411--473}).
+
+\emph{The Frobenius correction.} Let $S=F(X,Y)$, $T=F(X^p,Y^p)$,
+$Z$ the unchanged third variable and
+$V=(\sigma G)(X,Z)-\sigma(c)L(X)U(Z)$. Its first derivative is
+integral. Since $S^p\equiv T\pmod p$, the first coefficient test gives
+$V(T,Z^p)-V(S^p,Z^p)\in pO[[X,Y,Z]]$. Direct substitution using
+$L(S^p)-L(T)=p\delta U$ and $U(Z^p)=L(Z)-Z$ gives
+\[
+ \delta_X(DG)-\sigma(c)\delta U\, L(Z)
+ =D(\delta_XG)-\frac{V(T,Z^p)-V(S^p,Z^p)}p-\sigma(c)\delta U\,Z.
+\]
+All three right-hand terms are integral, the first by the exponential
+test. Applying the same identity with variables swapped shows that both
+additive defects of
+\[
+ H=DG-\sigma(c)U(X)L(Y)-\sigma(c')L(X)U(Y)
+\]
+are integral. This is the commutation computation of \path{StepII_of}
+(\path{PartialCoboundaryLinear.lean:225--245,320--416}).
+
+The support of $H$ still has $i\equiv pj\pmod N$ and avoids the axes.
+We give the slice argument that makes $H$ itself integral. Set
+$u_i=[T^i]U$, $l_i=[T^i]L$. Both additive defects are now integral,
+so the one-variable calculation on each row and column gives
+\[
+ H_{ij}\equiv a_j u_i+b_j l_i\equiv a'_i u_j+b'_i l_j\pmod O,
+ \qquad a_j,a'_i\in O .
+\]
+Here $\pmod O$ means that the differences lie in the additive subgroup
+$O$. Fix $i=p q^k$, and take $j=q^n$. The first expression has norm
+at most $p^{k+1}$ independently of $n$; the second equals $b'_i/p^n$.
+Hence $b'_{p q^k}=0$. Now fix $j$ and let $i=p q^k$ vary. The second
+expression has norm at most $|u_j|$ and the first equals $a_j/p^{k+1}$,
+so $a_j=0$. For $j$ not a power of $q$, take $i=q^k$. The second
+expression stays bounded by $|u_j|$, giving $b_j=0$. For $j=q^n$,
+$i=q^k$ is outside the support, since $1\not\equiv p\pmod N$.
+Then $b_j/p^k\in O$ for every $k$, again yielding $b_j=0$.
+This proves integrality of $H$ on the required support
+(\path{LemmaTwo_of}, \path{LemmaTwoOf.lean:280--476};
+\path{StepH_of}, \path{ConstantCoeffFirstTwoOfThree.lean:277--301}).
+
+At bidegree $(1,pq^i)$ the derivative test says
+$G_{1,pq^i}-c/p^{i+1}\in O$. At the same bidegree $\Phi G$ has
+coefficient zero, so integrality of $H$ gives
+$-G_{1,pq^i}-\sigma(c')/p^{i+1}\in O$. Thus $c+\sigma(c')$ is
+in every $p^{i+1}O$ and is zero. Transposing gives
+$c'+\sigma(c)=0$, hence $\sigma^2 c=c$. Put
+$A_c=cA(X,Y)-\sigma(c)A(Y,X)$. In $DA_c$, shifting the indices by
+applying $X,Y\mapsto X^p,Y^p$ and using $\sigma^2c=c$ gives
+\[
+                 DA_c=\sigma(c)U(X)L(Y)-cL(X)U(Y).
+\]
+For example at $(p q^i,q^j)$ the $-A_c$ term supplies
+$\sigma(c)/p^{i+j+1}$ when $j\le i$, and the $\Phi A_c/p$ term
+supplies it when $j>i$; the transposed coefficient is obtained with
+factor $-c$. These cover the product supports. We have
+$D(G-A_c)=H$ integral, so the exponential test gives $G\sim A_c$.
+In the Witt field, membership $c\in O$ represents an actual Witt
+vector and the embedding intertwines Frobenius. This proves the
+normal-form input used in \path{restSExp_of} and \path{restSExpA_of};
+the preceding one-place computation and its finite product then apply
+to the original kernel
+(\path{c_add_sigma_c_eq_zero}, \path{StepIV_of},
+\path{ConstantCoeffFirstTwoOfThree.lean:338--419};
+\path{BetaIsG_of}, \path{NormLiftLeOne.lean:32--60};
+\path{restBeta}, \path{BiadditiveSecondVariable.lean:137--153};
+\path{restSExp_of}, \path{restSExpA_of},
+\path{DworkExponentialRestrictions.lean:95--135}).
+

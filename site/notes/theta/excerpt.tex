@@ -1,0 +1,366 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Verbatim sections of local blueprint v13. See README.md for macros, edition and source spans.
+
+% blueprint/ch_P_r12.tex:224-585
+\subsection{The two standard Weyl lattices are exact duals}\label{r12:weyl}
+
+Let $K$ be the number field with involution, $R=\mathcal O_K$,
+$\iota$ a finite index set, $\lambda_\tau$ dominant weights, and
+$x\in VV(K,\lambda)$. For the normalized pairing $P$ at the identity
+Gram matrices the two claims are
+\[
+  P(\Delta,x)\subseteq R\ \Longleftrightarrow\ x\in\nabla,
+  \qquad P(\nabla,x)\subseteq R\ \Longleftrightarrow\ x\in\Delta .
+\]
+Here $\Delta=\mathrm{delStd}$ and $\nabla=\mathrm{nabStd}$.
+The condition $x\in VV$ is essential for coordinate testing.
+The target is \path{GlobalTheory.T.standard_weyl_lattices_fock_dual}
+(\path{StandardWeylLatticesFockDualStatement.lean:14--15}). Its inclusive
+cone has 5,730 core lines. References to \path{StatementA.lean},
+\path{StatementC.lean}, \path{StatementE.lean}, and the tableau files
+in this subsection are in \path{Formalism/GradedWeylDivisibility/}
+and its \path{FockSpaceTableaux/} subdirectory. Other bare filenames refer
+to \path{Development/AbelianVarietyTheory/Proofs/FoundationProofs/}.
+
+\paragraph{Recovering a polynomial coefficient by testing a Weyl word.}
+Start over $\mathbb Q$ with one partition $\nu$, $n\le r$, and the
+space $V_\nu$ of polynomials of column multidegree $\nu$ invariant
+under adding an earlier column to a later column, with an indeterminate
+scalar. Let $h$ be the product of the prescribed powers of leading
+principal minors and $N=(h,h)_F>0$. Write
+$B=(\cdot,\cdot)_F/N$. The lattice $\nabla_{\mathbb Z}$ consists of
+the integral polynomials in $V_\nu$ (the defining coefficient identities
+descend along $\mathbb Z\hookrightarrow\mathbb Q$);
+$\Delta_{\mathbb Z}$ is the integer span of the divided row words $Ah$.
+See \path{dualWeyl}, \path{rowGen}, \path{hw}, \path{applyWord},
+\path{weyl} (\path{StatementA.lean:24--73}) and \path{bDual}
+(\path{StatementE.lean:21--45}).
+
+Row substitutions preserve column totals and commute with column substitutions. Operators on a polynomial occur in the reverse order to successive row substitutions on its frame. A divided row operation selects the coefficient of $t^k$ in a row
+addition. Its adjoint for the factorial monomial pairing interchanges
+the two rows. On a monomial this is the factorial identity in
+\S\ref{r11:fock}; reversing the order of a product gives $A^t$.
+The evaluation identity $B(h,H)=H(I)$ on $V_\nu$ follows by checking
+products of initial-column minors. Each such product is row homogeneous.
+A product with the row weight of $h$ must, successively, use row $i$ in
+every minor of size at least $i$ (one-based rows). Such a product is
+$\pm h$ or zero. All other row weights vanish both in the pairing against
+$h$ and on evaluation at $I$. The spanning assertion for these products
+also follows by the leading-term elimination below, over $\mathbb Q$.
+This proves $B(A^t h,F)=(AF)(I)$; for integral $F$ the right side is
+integral. See \path{fockQ_hw} (\path{LowerTriOfInterlaced.lean:135--169}),
+\path{fockQ_applyWord} (\path{FockQWordRowActAdj.lean:8--18}) and
+\path{nablaEqDualWeylOf} (\path{ApplyWordMemDualWeyl.lean:110--180}).
+
+Suppose conversely that $F\in V_\nu$ and $B(\Delta_{\mathbb Z},F)$
+is integral. For a lower triangular exponent $e=(e_{as})$ with the
+prescribed column totals, set the diagonal variables to one, the
+strictly upper variables to zero and leave all strict lower variables
+independent. The coefficient at $e$ below the diagonal in the resulting
+polynomial is $[X^e]F$: the column totals recover the missing diagonal
+powers. This same coefficient is $(A_e F)(I)$. Indeed start at $I$
+and install below-diagonal variables column by column from right to left.
+For position $(a,s)$ add an indeterminate multiple of row $s$ to row
+$a$ and extract its power $e_{as}$ in the substitution on $F$.
+At this stage row $s$ is still the $s$th coordinate row: all previously
+installed entries have column at least $s$ and row strictly larger
+than their column. The substitution therefore installs precisely
+the variable at $(a,s)$; repeated coefficient extractions recover the
+coefficient claimed. This gives the source's ordered word under the
+fold-right convention. Exponents of the wrong column totals have zero
+coefficient. Thus every lower triangular coefficient is an integer,
+by applying the preceding identity to $A_e^th$.
+See \path{coeff_single}, \path{map_rowGen}, \path{eval_applyWord},
+\path{wordOf_eq}, \path{coeffWord}
+(\path{UnitriMonomialOfLowerTri.lean:36--58,60--88,93--131},
+\path{UnitriMonomialOfLowerTri.lean:141--156,221--236}).
+
+\paragraph{Leading exponents and integral straightening.}
+Take the lexicographic order comparing first by column, then by row.
+The leading exponent $m$ of a nonzero $F\in V_\nu$ satisfies, at
+each pair of consecutive columns $l,j$ and each row $a$,
+\[
+       \sum_{b\le a}m_{bj}\ \le\ \sum_{b<a}m_{bl}.                 \tag{*}
+\]
+Here is the two-column calculation explaining the strict endpoint.
+Keep the component with the same exponents outside those columns as
+$m$ and with the same combined degree in the two entries of each row.
+This retains the leading term, and substitution
+$X_{bj}\mapsto X_{bj}+tX_{bl}$ preserves this grading. The transformed
+component has $t$-degree zero since the original polynomial is invariant.
+
+More generally, give this transformed polynomial a degree allowance
+$s$. At the first remaining row write its variables as $X,Y$ and its
+degree there as $d$. Expand $\sum_{k=0}^K X^kY^{d-k}w_k$,
+where $w_K\ne0$ and the $w_k$ are independent of $X,Y$.
+The column order selects $k=K$ for the leading term. Put $e=d-K$.
+After substitution split off $(Y+tX)^e$; the residual factor is
+\[
+       L=\sum_{k=0}^{K} X^k(Y+tX)^{K-k}\,w_k(t),
+\]
+where $w_k(t)$ denotes substitution in all other rows.
+Substitution is injective (put $t=0$); the polynomial ring is a
+domain, so $e\le s$ and $\deg_t L\le s-e$. Putting $X=1$, $Y=-t$
+recovers $w_K(t)$, whose $t$-degree is at most $s-e+K$ since $L$
+has total $X,Y$-degree $K$. Now remove that row from $w_K$.
+At the first row $e\le s$; at every subsequent cut, the remaining
+right-column total is at most $s-e+K$ plus the preceding left-column
+total in the remaining rows, by induction. Restoring the first row
+adds $e$ on the left of the desired inequality and $K$ on the right.
+This proves (*) with allowance $s$, with the empty row set as base
+case. Apply it to the initial allowance zero. Sources:
+\path{InterlacedAt}, \path{pairW} (\path{StatementC.lean:34--46}),
+\path{leadInterlaced_of} (\path{LeadInterlaced.lean:30--62}),
+\path{lctwo_main} (\path{TwoColumn.lean:47--208}) and
+\path{peelDegBound_of} (\path{PeelDegBound.lean:119--181}).
+
+In column $s$ make a sorted list $L_s$ containing row $a$ with
+multiplicity $m_{as}$. Its length is $\nu_s$. By (*) the $k$th entry
+of $L_s$, whenever present, is strictly larger than the $k$th entry
+of $L_{s-1}$: apply (*) with $a$ that $k$th entry. For each $k$ take
+the initial-column minor with rows the $k$th entries of these lists,
+in column order. Their columns form an initial segment since $\nu$ is
+a partition. The row indices strictly increase. The diagonal
+permutation gives the unique leading monomial of this minor, with
+coefficient one: the first column where another permutation differs
+uses a larger row index. The product $D_m$ of the minors is therefore
+monic with leading exponent $m$, column totals $\nu$, and integer
+coefficients. The minors are invariant under the permitted column
+additions. This constructs the required tableau, including the empty
+product for the zero exponent. In particular $m$ is lower triangular,
+since the $s$th row in any strictly increasing list of row indices
+is at least $s$.
+See \path{sSYTExists_of} (\path{SSYTExists.lean:11--62}),
+\path{colLexInitMinor_of} (\path{ColLexInitMinor.lean:22--52}) and
+\path{columnLexBideterminant_of_initialMinor}
+(\path{ColumnLexBideterminant.lean:11--27}).
+
+Subtract $([X^m]F)D_m$. The leading exponent falls and every lower
+triangular coefficient stays integral. There are finitely many
+exponents at the fixed column totals. Iteration ends at zero and
+expresses $F$ as an integer sum of the $D_m$. With arbitrary coefficients
+the same elimination over a field proves the spanning assertion used
+above. Hence $\Delta_{\mathbb Z}^{\#}=\nabla_{\mathbb Z}$ in
+$V_\nu$, where $\#$ denotes the dual for $B$.
+This proves the converse in \path{nablaEqDualWeylOf}; see also
+\path{GlobalTheory.WeylInt.lowerTriIntegral}
+(\path{LowerTriIntegral.lean:41--82}).
+
+\paragraph{The other dual and the number-field coefficients.}
+The lattice $\Delta_{\mathbb Z}$ is contained in the finite free
+coefficient module at the fixed multidegree. It therefore has a finite
+integer basis by \path{Submodule.basisOfPid}
+(\path{Mathlib/LinearAlgebra/FreeModule/PID.lean}:300--302).
+Its rational span is all of $V_\nu$: a vector
+orthogonal to it has every lower triangular coefficient zero by word
+extraction, whereas a nonzero vector has a lower triangular leading
+exponent. The restricted Fock form is positive definite over $\mathbb Q$.
+Let $d_i$ be an integer basis of $\Delta_{\mathbb Z}$. Its
+$B$-dual basis $b_i$ exists over $\mathbb Q$ by inverting the Gram
+matrix. Testing a rational vector against the $d_i$ reads off precisely
+its coordinates on the $b_i$. Thus $\nabla_{\mathbb Z}$ has basis
+$b_i$. Testing on the $b_i$ gives back $\bigoplus_i\mathbb Z d_i$.
+This proves both dualities over $\mathbb Z$ without any unimodularity
+assumption on an individual Gram matrix. See \path{dual_dual_of_isLattice},
+\path{normB_nondeg}, \path{weylEqDualNablaOf}
+(\path{ApplyWordMemDualWeyl.lean:182--217},
+\path{ApplyWordMemDualWeyl.lean:298--324}).
+
+Apply this construction at each $\tau$ to $\nu=\lambda_\tau.\mathrm{natW}$.
+The divided words commute with coefficient extension, so the $d_i$
+span the Weyl lattice over $R$. The leading-term argument over the
+domain $R$ expresses each integral dual Weyl polynomial as an $R$-sum
+of the same integral bideterminants. They belong to the integral span
+of the $b_i$ already over $\mathbb Z$, and the $b_i$ retain their
+defining invariance over $R$. Thus these two rational bases also generate
+the two lattices defined over $R$. Tensor over the finite set of weights.
+On products of polynomials in the disjoint blocks, the factorial monomial
+form factors: the monomial factorials and the coefficients both multiply.
+The denominator of $P$ is the product of the single-block highest-weight
+norms, so the two product bases pair by $\delta_{IJ}$, in either order.
+They span the prescribed coefficient space over $K$ and their integral
+spans are the two standard lattices. Indeed the product polynomials
+give the pure tensors generating those spaces, and duality of the
+displayed families gives independence. The involution fixes the rational
+basis coefficients and preserves $R$ because it preserves integrality
+over $\mathbb Z$. Testing $x$ on either first-argument basis recovers
+its second-argument coordinates on the opposite basis; integral sums
+of basis elements pair integrally. This proves both biconditionals.
+See \path{dualWeyl_toK}, \path{weyl_toK}, \path{exists_dual_bases}, and
+\path{std_dual} (\path{StandardWeylLatticesFockDual.lean:129--139},
+\path{StandardWeylLatticesFockDual.lean:145--235},
+\path{StandardWeylLatticesFockDual.lean:237--307}).
+
+\paragraph{Localization of the transported lattices.}
+The preceding argument concerns the standard models. At a finite
+prime $w$ write $R_w$ for the localization of $R$ inside $K$.
+Localize either standard lattice $T$. Its defining integrality test is
+independent of the local frame: two bases of the same full lattice
+differ by a matrix in $\mathrm{GL}_n(R_w)$.
+For $\nabla$ an integral basis substitution with integral inverse
+preserves integral polynomials, column weights and right column
+invariance. For $\Delta$, an elementary row addition acts by the sum
+of its divided row operations multiplied by the corresponding powers
+of its integral parameter, a finite sum on each polynomial. Each
+divided operator prepends a letter to a Weyl generator. Diagonal units
+act on a word by a unit since $h$ is row homogeneous and every divided
+operation shifts the row weight by its prescribed amount. These
+matrices generate $\mathrm{GL}_n(R_w)$ by elimination with unit
+pivots and row interchanges (the latter are products of elementary
+matrices and diagonal units). The determinant twist is a unit even
+at a negative exponent. This gives frame independence for both
+lattices, including products of blocks.
+See \path{isBasisAt_inv_mul}, \path{indep_of_stable},
+\path{nabIndep_and_delIndep}
+(\path{NabIndepAndDelIndepLocalConditions.lean}:21--43) and the two
+stability inputs \path{GlobalTheory.T.polyAction_mem_locP_nabStd_of_isBasisAt}
+and \path{GlobalTheory.T.polyAction_mem_locP_delStd_of_isBasisAt}
+(\path{ActPMemLocPNabStdOfIsBasisAtStatement.lean}:14--15;
+\path{ActPMemLocPDelStdOfIsBasisAtStatement.lean}:14--15).
+
+Given a full lattice $M_\tau$ in each block, choose a local basis
+matrix $B_{w,\tau}$ over $K$ at $w$: $R_w$ is a DVR and the finitely
+generated torsion-free localization is free of full rank
+(\path{GlobalTheory.LatBasisAt.basisAtEx},
+\path{LatticeHasBasisAtEveryFinitePlace.lean}:66--105). Write
+$T_w(B_w)=\mathrm{act}(B_w)(T\otimes_R R_w)$ and
+$P_T=\bigcap_w T_w(B_w)$ in the rational coefficient space.
+The equality $(P_T)_w=T_w(B_w)$ merits a denominator argument.
+The inclusion from the left follows by localizing the defining test.
+For $x\in T_w(B_w)$, away from finitely many primes all $M_\tau$
+have identity frame (clear denominators in both inclusions between
+two full finitely generated lattices); also $x\in T_v(1)$ away from
+finitely many primes since $T$ spans the coefficient space. At each
+exceptional $v\ne w$, choose $k_v$ so $v^{k_v}x\subseteq T_v(B_v)$
+by clearing local denominators. Choose $s_v\in v^{k_v}\setminus w$,
+which exists because distinct maximal ideals are comaximal.
+The product of the finitely many $s_v$ belongs to $R\setminus w$
+and sends $x$ into every $T_v(B_v)$. Thus $x\in(P_T)_w$. With a
+single global frame the same intersection gives precisely the transported
+global lattice, since if $x\notin T$, the proper ideal
+$\{a\in R:ax\in T\}$ lies in some maximal ideal; there $x\notin T_w$.
+Finally, a single local test places $x$ in the $K$-span of the
+transported lattice and hence in $VV$, which is stable under changing
+frame (row substitution commutes with the defining right-column identities).
+These prove the three assertions in
+\path{GlobalTheory.T.transportedLattice_localization_free_le_coefficientSpace}
+(\path{TransportedLatticeLocalizationFreeLeCoefficientSStatement.lean:14--15});
+see \path{exists_isBasisAt_one}, \path{transLat_colLat}, \path{locP_transLat}
+and \path{nabDelLoc_free_leVV}
+(\path{TransportedLatticeLocalizationFreeLeCoefficientS.lean:91--125},
+\path{TransportedLatticeLocalizationFreeLeCoefficientS.lean:139--234}).
+
+\paragraph{Hermitian duality after transport.}\phantomsection\label{r13:weyl-dual}
+Let $R=\mathcal O_K$ for a number field $K$ with involution. Fix a
+finite set $\iota$, a rank $n$, dominant weights $\lambda_\tau$,
+Hermitian matrices $G_\tau$ with nonzero determinant and full
+$R$-lattices $M_\tau\subset K^n$. Write $V=VV(K,\lambda)$,
+$P_G=\mathrm{pairK}(\lambda,G)$ and
+$M_\tau^\#=\{x:\bar y^tG_\tau x\in R\text{ for all }y\in M_\tau\}$.
+Use $\nabla(M),\Delta(M)$ for the two transported lattices restricted
+to $V$. The two conclusions in \path{NabDelDual}
+(\path{CoefModLemmas.lean}:143--148) are equalities of $R$-submodules of $V$:
+\[
+ \nabla(M)^{\vee,P_G}=\Delta(M^\#),\qquad
+ \Delta(M)^{\vee,P_G}=\nabla(M^\#).
+\]
+The dual on the left always tests the \emph{first} argument against
+the specified lattice. We prove both equalities at each finite place and
+then intersect.
+
+For a sesquilinear $h$ and a finitely generated $R$-module $T$ in its
+first argument, suppose $x\in V$ and the module $D$ is characterized
+on $V$ by $x\in D\iff h(T,x)\subset R$. For each finite prime $w$,
+\[
+ x\in D_w\quad\Longleftrightarrow\quad h(T_{\bar w},x)\subset R_w .
+\]
+If $s x\in D$ for $s\notin w$, and $t y\in T$ for $t\notin\bar w$,
+then $h(ty,sx)=\bar t s h(y,x)\in R$, with $\bar t s\notin w$.
+Conversely the local pairing condition holds on generators $y_j$ of
+$T$. Choose $s_j\notin w$ clearing $h(y_j,x)$ and put $s=\prod_j s_j$.
+Then $h(T,sx)\subset R$ by conjugate linearity and $sx\in V$,
+so $sx\in D$. The empty product also works. For every $R$-submodule
+$A$ inside a $K$-space one has $A=\bigcap_w A_w$: if $x\notin A$,
+the proper ideal $\{s:sx\in A\}$ is contained in a maximal ideal
+$w$, at which $x\notin A_w$. This applies also to $R\subset K$.
+Hence $h(T,x)\subset R$ is equivalent to all the tests
+$h(T_{\bar w},x)\subset R_w$; this last equivalence follows simply
+by localizing each scalar and also holds without finite generation.
+See \path{mem_of_forall_locP}, \path{pair_denom},
+\path{mem_localization_dual} and \path{pair_integral_iff}
+(\path{TransportedWeylLatticeHermitianDuality.lean}:29--44,70--99,101--123).
+
+Fix $w$. Each $M_\tau^\#$ is full and finitely generated:
+$y\mapsto\bar y^t G_\tau$ takes generators of $M_\tau$ to a
+finite spanning family of row vectors over $K$. Its $R$-span is
+therefore between $dR^n$ and $d^{-1}R^n$ for some nonzero rational
+integer $d$ (clear the coordinates and a spanning inverse).
+Taking integral dot-product duals gives the same sandwich for
+$M_\tau^\#$, which is finitely generated since $R$ is Noetherian.
+This supplies the lattice clause of \path{dualFr_lattice_and_hdual}
+(\path{DualLatticeIsLatticeAndHermitianDual.lean}:92--147,173--175).
+Choose $B_\tau$ with columns an $R_{\bar w}$-basis of
+$(M_\tau)_{\bar w}$ and put $B'_\tau=(B_\tau^*G_\tau)^{-1}$.
+Since $B_\tau^*G_\tau B'_\tau=1$, the tests against the columns of
+$B_\tau$ read off the coordinates $(B'_\tau)^{-1}x$. By the
+localized dual test these coordinates belong to $R_w$ precisely when
+$x\in (M_\tau^\#)_w$. Thus $B'_\tau$ is a basis there, including
+at primes fixed by the involution. This proves the frame step in
+\path{mem_colLat_dual}, \path{isBasisAt_hdual} and \path{exists_dual_frame}
+(\path{TransportedWeylLatticeHermitianDuality.lean}:162--201,204--210).
+
+Take in turn $(T,T')=(\nabla,\Delta)$ and $(\Delta,\nabla)$ in the
+standard polynomial model. Write $A=T(M)$ and $A'=T'(M^\#)$ for
+the transported polynomial modules. The standard $T$ is finitely
+generated by the integral bases above
+(\path{std_fg_span}, \path{StdWeylLatticesFgAndSpanCoeffSpace.lean}:108--121).
+Every element of $A$ belongs to $V$: the preceding localization
+argument gives this for $\nabla(M)$, and
+$\Delta_{\rm std}\subset\nabla_{\rm std}$ since its divided
+words are integral polynomials in the same coefficient space.
+Transport preserves inclusions by the defining local tests
+(\path{transLat_mono}, \path{delStd_le_nabStd},
+\path{CoefModLemmas.lean}:248--257).
+Thus restricting to $V$ loses no test vectors.
+
+For $x\in V$ set $x_0=\mathrm{act}(B'^{-1})x\in V$.
+The localization formulas just established give
+$A_{\bar w}=\mathrm{act}(B)T_{\bar w}$ and
+$A'_w=\mathrm{act}(B')T'_w$. The covariance identity is
+\[
+ P_G(\mathrm{act}(B)y,x)
+   =P_{B^*GB'}(y,x_0)=P_1(y,x_0).
+\]
+Indeed $x=\mathrm{act}(B')x_0$; adjointness of row substitution for
+the factorial monomial pairing moves the first block substitution
+to the second, and the Gram determinant twist transforms by
+$\overline{\det\mathrm{Tw}(B)}\det\mathrm{Tw}(B')$, precisely
+the two scalar factors in the actions. This is \path{pairTransport}
+and its restriction \path{pairK_apply}
+(\path{CoefModLemmas.lean}:477--504).
+Therefore $P_G(A_{\bar w},x)\subset R_w$ is equivalent to
+$P_1(T_{\bar w},x_0)\subset R_w$, hence to $x_0\in T'_w$ by
+the localized dual test applied to standard Weyl duality, and
+finally to $x\in A'_w$. Intersecting over all $w$ gives
+$P_G(A,x)\subset R\iff x\in A'$ in $V$. The two choices of
+$(T,T')$ prove both equalities. See \path{dual_of_local} and
+\path{GlobalTheory.TransDual.nabDelDual}
+(\path{TransportedWeylLatticeHermitianDuality.lean}:218--274,278--309).
+
+For the Z4.4 numerator, \path{GlobalTheory.PeriodClassSum.pairBDualK}
+sets the star on $K$ to the identity and $G_\tau=1$. The vector
+dual then becomes the ordinary dot-product dual. Symmetry of the
+bilinear normalized pairing identifies $P_1(y,x)$ with
+$\mathrm{pairBK}(x,y)$; the two transported equalities give
+the two integral tests. \path{PeriodClassSum.pairBDual} applies
+this to the scalar extensions of the class lattice
+(\path{IsClassSumPairingFormsLat.lean}:181--197).
+\path{PairAtClass.pair_integral} uses the first test on the integral
+class component and the supplied opposite row to get its coefficient
+in $R$ (\path{ClassPairingIntegralFormRowIsIntegral.lean}:49--57).
+This is the route from the registered standard Weyl and transported
+localization theorems into the Z4.4 root. The public alias
+\path{GlobalTheory.T.transported_weylLattice_hermitianDuality}
+(\path{TransportedWeylLatticeHermitianDualityStatement.lean}:14--15)
+states the same two equalities.
+

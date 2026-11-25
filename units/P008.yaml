@@ -1,0 +1,94 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "P008",
+  "title": "Specializing the half-plane assertion to the zeta function",
+  "track": {
+    "primary": "formal",
+    "secondary": [
+      "analytic"
+    ]
+  },
+  "statement": "For every $s\\in\\mathbb C$, if $\\zeta(s)=0$, $s\\ne1$, and $s\\ne-2(n+1)$ for every $n\\in\\{0,1,\\ldots\\}$, then $\\Re s=1/2$.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Take a complex zero of $\\zeta$ distinct from $1$ and from every negative even integer."
+  ],
+  "lean": [
+    {
+      "name": "rhOfAll",
+      "file": "Supplements/Kernels/MainTheorems.lean",
+      "line0": 9,
+      "line1": 9,
+      "sha256": "0411e5a9dfb3386efa1d19f21b4f48f3061578663df27aa2e1537c899cf946d9",
+      "dominated": 63,
+      "graph": "five_public_heads"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/P008_round4.md",
+      "section": "P008 · Specializing the all-character bound to zeta",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "6.8 (pn:P008)",
+      "pages": [
+        56,
+        56
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/P008.tex",
+      "section": "pn:P008",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [
+    "P009"
+  ],
+  "size_pages": 2,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "P008",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "specializing-the-half-plane-assertion-to-the-zeta-function",
+  "aliases": [
+    "Zeta specialization",
+    "rhOfAll",
+    "P008 Specializing the half-plane assertion to the zeta function"
+  ],
+  "background": [
+    "The principal Dirichlet character",
+    "Trivial zeros of the Riemann zeta function"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "6.8 (pn:P008)",
+    "pages": [
+      56,
+      56
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "P009": "graph"
+  },
+  "review_status": "pending_review",
+  "summary": "Specializing the half-plane input to the character of modulus one gives right-half-plane nonvanishing for zeta away from one. A separate reflection argument turns that into the zeta predicate consumed by the public exports."
+}

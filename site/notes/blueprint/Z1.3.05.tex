@@ -1,0 +1,268 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% RH Notes blueprint source excerpts for Z1.3.05
+% Verbatim excerpts in the notation of the parent blueprint. The labelled editions and source ranges appear below.
+% See the unit YAML for the current proof status. Earlier-round passages retain their original wording.
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+\noindent\nolinkurl{UpperTheory.Kd.C7.pLocu} --- in-repo constant (\path{Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/NormFactorLeOne.lean:162--164}); not compared.\par
+% End of atlas edition annotation.
+
+\section*{Z1.3.05. Nonvanishing at cyclotomic inertia}
+
+% Parent source SHA-256: 1af64922b98ed2310744411b1f18b25cc426c97220646321471836e1a3a409d6
+% blueprint/ch_P.tex lines 12420 through 12439; r5:Z1.3.05
+\subsection{Z1.3.05. The power-series test on cyclically trivial inertia}\label{r5:Z1.3.05}
+For every tuple in Z1.3.06 satisfying $\mathrm{Sys}$, $\mathrm{IwSys2}$, $\mathrm{SpLink}$ and $\mathrm{Pin7}$, the conclusion is $\mathrm{NzAt}(W,A,y)$. Fix the tuple. Write $x\equiv_n y$ for $\lVert x-y\rVert\le\lVert\ell^n\rVert$. The ordinary hypotheses give odd $\ell$, $e\ge1$ and $A$ over $\ell$. If the witness fails to exist, $y(s)_1=0$ on cyclotomically trivial inertia: the quotient matrix entry there is $1$. Indeed $s$ fixes the $\ell$th roots of unity, whence the source character is trivial; the determinant character in the normal form is trivial on $s$ using its quadratic condition and the inertia calculation on square roots. Substitution in the defining equation of $\mathrm{SrcUr}$ gives the entry. For every desired precision $n$, $\mathrm{SpLink}$ now makes the specialized sum $0$ modulo $n$ for all sufficiently large $r$ and all such $s$. Here the pin fixes the weights $\chi_r(x)=\phi(x)^{-1}$ on units for $r\ge1$; the specialization also contains the inverse of $x^e$. This is precisely the vanishing input $\mathrm{SpZero}$.
+
+{\footnotesize \nolinkurl{GlobalTheory.KZ.Pin7} (\nolinkurl{Development/AbelianVarietyTheory/Definitions/Foundations/HTPresNuOfPolys.lean}\allowbreak:24--36). \nolinkurl{GlobalTheory.KZ.SpLink} (\nolinkurl{Development/AbelianVarietyTheory/Definitions/Foundations/IsLocallyConstantCycMod.lean}\allowbreak:32--38). \nolinkurl{GlobalTheory.quot_eq_one_of_cycBar_eq_one} (\nolinkurl{Development/AbelianVarietyTheory/Proofs/FoundationProofs/QuotientCharTrivialInertiaCyclotomicTower.lean}\allowbreak:231--241). \nolinkurl{UpperTheory.Kd.C7.LocalUnitsRoots.main}, \nolinkurl{UpperTheory.Kd.C7.pLocu} (\nolinkurl{Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/NormFactorLeOne.lean}\allowbreak:99--129,162--164).}
+
+The twist $\nu$ is trivial on inertia. On $H_m=I_A\cap\ker(\mathrm{cycMod}_m)$ the cocycle identity gives
+\[
+ Z_m(\sigma s\sigma^{-1})(1)=\nu(\sigma)Z_m(s)(1)
+\]
+for $\sigma\in D_A$ with trivial full cyclotomic character. Expand the product twice; the terms from $\sigma,\sigma^{-1}$ cancel by the identity for $\sigma\sigma^{-1}$, and the argument of the function stays $1$. Two Frobenius lifts differ by inertia, so $\nu(\sigma)=a$ for every such Frobenius, using the pinned lift with value $a$. Thus this very $Z$ meets the Frobenius-eigenvalue hypothesis of the local power-series constructor; its Kummer modulus is carried down the root tower by $\zeta_m^{\ell^{c_0}}=\zeta_{m-c_0}$ for $m\ge c_0$.
+
+{\footnotesize \nolinkurl{UpperTheory.Kd.C7.LocalUnitsRoots.cycMod_eq_one}, \nolinkurl{roots_pow}, \nolinkurl{conj_law}, \nolinkurl{main} (\nolinkurl{Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/NormFactorLeOne.lean}\allowbreak:58--97,127--143).}
+
+Write $G$ for the integral power series produced from these layers. To compare its primitive character sums with those of the pinned $L$, take the smoothing integer $2$, a unit modulo odd $\ell$. Reindexing $b\mapsto 2b$ multiplies the character sum by $\psi^{-1}(2)$, so the difference of the two translates contributes $1-2\psi^{-1}(2)$. This factor has norm at most $1$ since character values on units are roots of unity. Multiplication therefore preserves every input congruence. Compose the two pinned congruences with the one from the constructor, weakening all three to the smallest available precision $m-\max(c_0,c_1)$. The transfer theorem then forces a failure of congruence to zero for the $G$-moment at precision $n_1+r$ for every sufficiently large $r$ and every primitive root of order $\ell^r$. The constructor sends $\mathrm{SpZero}$ to the opposite congruence at this same $n_1+r$. Take $r$ to be the maximum of the two thresholds and use $j(\zeta_r)$ in both. This is the contradiction.
+
+{\footnotesize \nolinkurl{UpperTheory.Kd.C7.sum_step}, \nolinkurl{pCore} (\nolinkurl{Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/MemOfMulMem.lean}\allowbreak:226--251,253--288,289--352). \nolinkurl{UpperTheory.Kd.C7.LocalUnitsRoots.norm_factor_le_one}, \nolinkurl{main} (\nolinkurl{Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/NormFactorLeOne.lean}\allowbreak:34--54,137--158).}
+
+\emph{Partial.} For the sharper proof boundary see page~\pageref{r6:Z1.3.05}. At this point the missing analytic construction is $\mathrm{SCore}$ for the fixed inertia layers: it produces one integral $G$ with coherent units, a finite-level primitive-character comparison and the implication $\mathrm{SpZero}\Rightarrow\mathrm{IntZero}$ for that same $G$. In the first clause the remaining production of the representing series uses Kummer representability and the finite-layer precision estimate. In the second it uses the divided system and its representing-series compatibility. Also open here is the primitive-character transfer from a nonzero $L$-moment to a nonzero $G$-moment with a bounded additive loss; the precise congruence-family proposition and its Gauss-sum comparison are cited below. These are proved prerequisites of $\mathrm{pLocu}$, not hypotheses on a newform. [Hypothesis, discharged at the application:] $\mathrm{Nf}$ and $\mathrm{SrcUr}$ and the global tuple remain the arguments of the local test, with the pin supplied by the smoothed-class global half.
+
+{\footnotesize \nolinkurl{UpperTheory.Kd.C7.SCore} (\nolinkurl{Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/FixedIntegersIsUnitOfNotMemPrimeSpan.lean}\allowbreak:126--129). \nolinkurl{UpperTheory.Kd.C7.pCore} (\nolinkurl{Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/MemOfMulMem.lean}\allowbreak:253--352). \nolinkurl{GlobalTheory.KZ.Cmp.cg_div_gauss}, \nolinkurl{nonvanishing_transfer} (\nolinkurl{Development/AbelianVarietyTheory/Proofs/FoundationProofs/NonvanishingTransferCharacterSumsPowerSeries.lean}\allowbreak:131--164,281--359). \nolinkurl{UpperTheory.V.Z.Kato.Final.zetaUr} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/UnramifiedZeta/ZetaUr.lean}\allowbreak:9--12).}
+
+% blueprint/ch_P.tex lines 12994 through 13140; r6:Z1.3.05
+\subsection{Z1.3.05. An integral series for all characters and its remaining tests}
+\label{r6:Z1.3.05}
+This continues the inertia argument on page~\pageref{r5:Z1.3.05}. Write
+$q=|\ell|<1$ and $x\equiv_n y$ for $|x-y|\le q^n$.
+The input is the pinned tuple at the actual place, with $\ell$ odd.
+At level $m$ put $H_m=I_A\cap\ker(\chi_{\ell,m})$ and let
+$T_d$ send the coordinate $x$ to $xd$. Choose an integral coefficient
+basis $\beta$ once. Change each finite Kummer presentation to this basis
+at the common loss given by the presentation hypothesis. In one Frobenius
+frame $\Phi$, smooth the layers by $Y=(1-d_0T_{d_0})Z$. To transport the
+Frobenius equation from coordinate $1$ to $d_0$, choose an inertia element
+whose inverse cyclotomic image is $d_0$. Apply the cocycle conjugation formula
+first to this element, then to its Frobenius conjugate, which has the same
+cyclotomic image. Subtraction gives the same Frobenius eigenvalue $a$ for
+the smoothed value at $1$ on $H_m$.
+{\footnotesize\nolinkurl{UpperTheory.Kd.C7.exists_ine_un},
+\nolinkurl{eig_at}, \nolinkurl{sharp_eig}, \nolinkurl{pCore},
+\path{Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/MemOfMulMem.lean:82--91,111--139,253--268}.}
+
+\paragraph{Where coherence enters.}
+For each component of the smoothed presentations choose the polynomials
+$P_m$ with loss $b$. Their cyclotomic norms at consecutive levels agree
+after inserting a unit power with exponent $\ell^{m-(b+1)}$.
+Apply the simultaneous unit lift detailed below. Its logarithmic derivative
+removes the auxiliary power modulo the required ideal, leaving one
+representing vector $D$ with loss $b+1$. For $a\in O_c$ the norm-one
+inverse criterion makes $a$ an $O_c$-unit. The Frobenius law on $D$ and
+the period theorem give a \emph{single} completion unit $v$ and
+$\lambda_\beta(D_{\bullet,n})=v G_n$, $G_n\in O_c$, for every $n$.
+If $a\notin O_c$, any nonzero integral smoothed value $y$ has $ay$ integral
+by the eigen-equation. Divisibility in the valuation ring gives either $ay=yt$ or $y=ayt$ for
+$t\in O_c$. Cancel $y$ to obtain $a\in O_c$ or $a^{-1}\in O_c$.
+In the second case the norm-one inverse criterion gives $a\in O_c$ as well. Thus $y=0$
+throughout $H_m$ at $1$, and uniqueness gives $D=0$ and $G=0$.
+Approximate $v$ by algebraic $v_m$ to error $q^{m+1}$. Each $v_m$ is a
+unit and adjacent terms agree modulo precision $m$. Reindexing the finite
+unit group produces $1-d_0\psi^{-1}(d_0)$ and the ultrametric inequality
+retains the common loss over the entire character sum.
+{\footnotesize\nolinkurl{UpperTheory.Kd.C7.pRepEx},
+\path{Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/SerMulPow.lean:31--82};
+\nolinkurl{UpperTheory.Kd.C7.pPeriod}, \path{Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/Period.lean:69};
+\nolinkurl{mem_of_mul_mem}, \nolinkurl{pack}, \nolinkurl{exists_approx},
+\nolinkurl{sum_step}, \nolinkurl{pCore},
+\path{Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/MemOfMulMem.lean:92--110,140--225,226--288}.}
+
+\paragraph{Division on inertia.}
+Assume specialization vanishes. Multiply $Z$ by $\ell^{c_2}$ and subtract
+the coboundary $w(\delta_{\chi(s)}-\delta_1)$ given by the specialized
+cocycle estimate. Dirac masses commute with pushforward, so for every $s$ in inertia the difference
+still satisfies the sum over fibers, and its weighted moments tend to zero.
+For a common generator $g$ of the finite unit quotients set
+$\theta=\phi(g)g^k$. Finite-level division gives an integral solution
+$Z'_r(s)$ to $(T_g-\theta)Z'_r(s)=\mu_r(s)$.
+The inverse estimate for this operator gives injectivity at fixed level:
+a vector in its kernel lies in every accuracy ball. Apply injectivity to
+the defects in the cocycle and trace identities. Both defects vanish
+because the operator commutes with translation and with projection of
+fibers. Continuity at level $r$ follows by taking the open subgroup for
+the required input precision plus the inverse loss, intersected with
+$\ker\chi_{\ell,r}$. On $H_m$ the coboundary vanishes. After smoothing,
+the same identity therefore holds for $Y,Y'$. If $\theta\in O_c$, linearity,
+translation and uniqueness of representatives give
+$[\ell^{c_2}]D=\mathrm{sb}_gD'-[\theta]D'$ in the integral basis.
+In the moment calculation approximate the coefficients of the evaluated
+$D'$ to precision $2r$, then apply the shifted moment formula. The remaining
+error of size $q^{2r}$ permits the target precision $n+r$ after the fixed
+division loss for $r\ge n+c_2+1$. If $\theta\notin O_c$, the level identity
+forces every $Y'$ on $H_m$ to vanish by the same norm-one argument. It
+then forces $Y=0$ there and $G=0$.
+{\footnotesize\nolinkurl{UpperTheory.Kd.C7.pDiv},
+\path{Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/DivEqZeroOfCg.lean:49--207};
+\nolinkurl{pDivAlg}, \path{Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/DivAlg.lean:251};
+\nolinkurl{pClause2}, \path{Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/NormSubLeOne.lean:113--185};
+\nolinkurl{pCore}, \path{Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/MemOfMulMem.lean:289--352}.}
+
+\paragraph{Transfer between two integral series.}
+For $F=G,L$ and $d=1$, and also for $F=L$, $d=d_0$, form the integral
+Mellin components $A_{F,d}$. First choose $s=\ell^N$ so that $|s\kappa|\le1$, and enlarge the
+coefficient ring to contain $s\kappa$ and all $(\ell-1)$st roots of unity.
+The construction expands the shifted finite series in integral polynomials,
+decomposes the unit exponents into their tame and principal-unit parts,
+and takes each coefficient's limit along one fixed ultrafilter by compactness
+of the enlarged coefficient ring. For a primitive
+$\xi$ of order $\ell^r$, their finite evaluation at $(1+\ell)^e$, multiplied
+by $\ell^r$, agrees with $d^e\phi(d)$ times the weighted moment of $F$ to precision
+$2r$. At conductor $\ell^{k+1}$ let $z$ have that exact order and let $\psi$ be a
+primitive character with the specified tame part. At
+$\zeta=\psi^{-1}(1+\ell)$ the Gauss sum times the evaluation truncated
+at $\ell^{3k}$ is congruent to $\psi^{-1}(d)\,\mathrm{chSum}(F,k+1,z,\psi)$
+to precision $k+1$.
+Set $A_L=A_{L,1}-d_0 A_{L,d_0}$. The factor on the first moment is
+$f=1-d_0^{e+1}\phi(d_0)\ne0$ since $d_0\ge2$ and $\phi(d_0)$ is torsion.
+The prescribed lower bound for the $L$-moment gives
+$|\mathrm{tval}(A_L,r,(1+\ell)^e)|>|f|q^{n_0}$ eventually: divide the
+comparison error by $q^r$ and take $q^r<|f|q^{n_0}$.
+Since $s\kappa\ne0$, this lower bound gives $s\kappa A_L\ne0$.
+{\footnotesize\nolinkurl{GlobalTheory.KZ.Cmp.exists_series_limit},
+\nolinkurl{lower_bound_of_not_cg}, \nolinkurl{smoothing_factor_ne_zero},
+\nolinkurl{mellin_comp}, \nolinkurl{nonvanishing_transfer},
+\path{Development/AbelianVarietyTheory/Proofs/FoundationProofs/NonvanishingTransferCharacterSumsPowerSeries.lean:21--58,69--112,181--194,199--279,281--338}.}
+
+Given each primitive root $\zeta$ of order $\ell^k$, choose the common
+additive root $z$ supplied at level $k+1$ by the comparison for all primitive
+characters. Then choose a primitive $\psi$ at level $k+1$ with
+$\psi^{-1}(1+\ell)=\zeta$ and the designated tame component.
+Multiply by the dual Gauss sum, use the product $\ell^{k+1}$ and its
+dual-factor norm bound, and divide by the norm-one factors. This leaves
+precision $\lfloor k/2\rfloor-c_1$ for $s A_{G,1}$ and
+$s\kappa A_L$ with the ratios $u=a'/a$ and
+$w_k=v'_{k+1}u/v_{k+1}$. The coefficient rigidity statement below now
+makes the norm of the truncated evaluation of $s A_{G,1}$ at least that
+of $s\kappa A_L$: choose coefficient precision arbitrarily high before
+evaluating the finite truncation, and use $|w_k|=1$. Choose $q^{n_1}$
+below the resulting fixed positive lower bound. The first Mellin comparison,
+now for $G$ and \emph{each} primitive $\xi$, contradicts the vanishing
+congruence at the precision $r+n_1$ forced by the division argument above. Here the eventual
+threshold is enlarged to meet both estimates.
+{\footnotesize\nolinkurl{GlobalTheory.KZ.Cmp.cg_div_gauss},
+\nolinkurl{nonvanishing_transfer},
+\path{Development/AbelianVarietyTheory/Proofs/FoundationProofs/NonvanishingTransferCharacterSumsPowerSeries.lean:114--181,339--359}.}
+
+\paragraph{Partial. Exact points to verify independently.}
+The unit lift in this argument has the following order of quantifiers.
+For a Frobenius lift on $R$ with every element outside $(\ell)$ a unit,
+take eventual units $g_m$ whose neighboring evaluations agree under norm
+up to the evaluated power of a unit with exponent $\ell^{m-c}$.
+There must be \emph{one} unit $F\in R[[X]]$ such that for each
+$m\ge\max(1,m_0)$ and every precision $N$ there is a unit $w$ giving
+$\mathrm{LC}(\ell,m,N;\sigma^{-m}F,g_m w^{\ell^{m-c}})$.
+The other finite-level input is the integral division assertion for
+$T_g-\theta$ on a trace-compatible family with vanishing limiting
+$\phi x^k$ moment, together with its inverse bound of loss $c_3(r)$.
+On the transfer side the remaining rigidity test is this: for integral
+$A,B$ with $B\ne0$, $|u|=|w_m|=1$, $w_{m+1}\equiv_m w_m$,
+suppose for all large $m$ and all primitive $z$ of order $\ell^m$ that
+the truncations at $\ell^{3m}$ of $A$ and $w_m u^m B$ at $z$ agree
+to precision $\lfloor m/2\rfloor-c_1$. Deduce $u=1$ and, for every
+precision $k$, eventual congruence $A_n\equiv_k w_m B_n$
+\emph{simultaneously for all} $n$. The cited proofs and their
+representation, period and Mellin comparisons remain the mathematical
+inputs to the deductions above. The global newform and pinned-tuple
+hypotheses are as in Section~\ref{r5:Z1.3.05}.
+{\footnotesize\nolinkurl{UpperTheory.Kd.C7.SExact}, \nolinkurl{SDivAlg},
+\path{Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/FixedIntegersIsUnitOfNotMemPrimeSpan.lean:69--70,105--106};
+\nolinkurl{pExact}, \path{Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/SubOneMemOfPow.lean:276--300};
+\nolinkurl{GlobalTheory.T.powerSeries_eq_of_congruent_values_at_primitiveRoots},
+\path{Development/AbelianVarietyTheory/Proofs/FoundationProofs/PowerSeriesEqOfCongruentValuesAtPrimitiveRootsStatement.lean:6--7}.}
+
+% Parent source SHA-256: 1fdc6ea9aac6cf10316f85b3253b33ae98289a76ff5aa2e79daaaf11e057ce18
+% blueprint/ch_P_r7.tex lines 776 through 856; r7:Z1.3.05
+\subsection{Z1.3.05. Integral twisted division and two other inputs}\label{r7:Z1.3.05}
+\textbf{C03, hand proof.} Write \(U_r=(\mathbb Z/\ell^r)^\times\), with
+\(\ell\) odd. Take a generator modulo \(\ell\) and choose an integer
+lift \(g\ge2\) with \(g^{\ell-1}\not\equiv1\bmod\ell^2\): replacing
+a lift by its sum with \(\ell\) changes this power nontrivially modulo
+\(\ell^2\). Binomial expansion gives \(v_\ell(g^{(\ell-1)\ell^i}-1)=i+1\),
+so \(g\) generates every \(U_r\). Set
+\(\theta=\phi(g)g^k,\ \tau=\theta^{-1}\), \(k\ge1\).
+Both belong to \(\mathbb Z_\ell^\times\), since \(\phi(g)^{\ell-1}=1\)
+and those roots lift the distinct nonzero residues. Fix \(r\);
+let \(\gamma=g\bmod\ell^r,\ N=|U_r|\). Here \(\theta^N\ne1\):
+raising a hypothetical equality to the \((\ell-1)\)-st power gives
+the false integer equality \(g^{kN(\ell-1)}=1\).
+Telescoping \(T_g-\theta\) around the orbit bounds
+\(|1-\theta^N|\|q\|_\infty\) by \(\|(T_g-\theta)q\|_\infty\).
+One may take \(c_3(r)=v_\ell(1-\theta^N)\). This finite-level loss, uniform in \(q\) and the requested precision at that \(r\), also gives uniqueness.
+\par Let \(\mu_r\) be integral, compatible under pushforward, with
+twisted moments tending to zero. Put \(a=|\tau^N-1|>0\) and
+\(S(x)=\sum_{i=0}^{N-1}\tau^i\mu_r(x\gamma^i)\). Then
+\[
+ \tau S(x\gamma)-S(x)=(\tau^N-1)\mu_r(x).
+\]
+Pull \(f(\gamma^i)=\tau^{i\bmod N}\) up from \(U_r\) to \(U_s\).
+The sum against \(\mu_s\) equals \(S(1)\) by compatibility. At \(g^j\)
+this pullback differs from \(\tau^j\) by at most \(a\) by the geometric
+series identity. The inverse weight \(\eta_s(g^j)\) differs from
+\(\tau^j\) by at most \(\ell^{-s}\): the integer representative agrees
+with \(g^j\bmod\ell^s\), the tame character agrees exactly, and inversion
+of units preserves differences in norm. Choose \(s\) so \(\ell^{-s}\)
+and the norm of the \(\eta_s\)-moment are both at most \(a\).
+The ultrametric inequality gives \(|S(1)|\le a\); the recurrence
+gives this at every \(x\). Consequently \(q(x)=\tau S(x)/(\tau^N-1)\)
+lies in the given \(\mathcal O\). Indeed \(t=\tau^N-1\in\mathbf Z_\ell\) is nonzero. Write \(t=\ell^b u\) with \(u\in\mathbf Z_\ell^\times\).
+The bound \(|S(x)|\le|\ell^b|\) gives \(S(x)\in\ell^b\mathcal O\): the finite discrete valuation ring \(\mathcal O\) is the integral closure of \(\mathbf Z_\ell\) in its fraction field. Division by \(u\) stays in \(\mathcal O\). Substitution gives
+\(q(x\gamma)-\theta q(x)=\mu_r(x)\).
+\par To pass from vanishing specialization of the inertia cocycle \(Z\)
+to such a \(\mu\), denote by \(M_s\) the limit of the weighted moments
+on an inertia element \(s\). Successive weights agree to precision \(r\)
+after reduction, so the moments at \(r+1,r\) differ by at most
+\(\ell^{-r}\) at \(r\ge1\), uniformly in \(s\). The ring \(\mathcal O\), finite free over \(\mathbf Z_\ell\), is compact in its fraction field, hence complete, so \(M_s\in\mathcal O\).
+Multiplication of weights modulo \(\ell^r\) gives
+\(M_{st}=M_s+\eta(s)M_t\), where
+\(\eta(s)=\phi(\chi(s))^{-1}\chi(s)^{-k}\).
+The commutator \([t,s]\) has trivial cyclotomic character, hence its
+limit vanishes by \(\mathrm{SpZero}\): for every precision \(n\), a single lower bound for \(r\) works on \(I_A\cap\ker\chi\). Choose
+\(t\in I_A\) with \(\chi(t)=1+\ell\). For each \(r\ge1\), \(\Phi_{\ell^r}(1+T)\) is Eisenstein over \(\mathbf Q_\ell\); the cyclotomic extension of degree \(\varphi(\ell^r)\) is totally ramified. Local inertia therefore maps onto its full Galois group \(U_r\). Restriction through the chosen embedding puts these lifts in \(I_A\).
+The inverse images in the compact group \(I_A\) of \(1+\ell\bmod\ell^r\) are nested nonempty closed sets. An element of their intersection has the required character. See \nolinkurl{UpperTheory.Kd.C7.pFrobEx}, \path{LangPolynomials/FrobEx.lean:23--39}.
+Comparing \(ts\) and \(st\) gives
+\[
+ (\beta-1)M_s=(\eta(s)-1)M_t,\qquad\beta=(1+\ell)^{-k}\ne1 .
+\]
+Take \(c_2=v_\ell((1+\ell)^k-1)\), so \(v=\ell^{c_2}/(\beta-1)\in\mathbf Z_\ell^\times\) independently of \(r,s\) and the target precision. Put
+\(w=vM_t\). Thus
+\(\mu_r(s)=\ell^{c_2}Z_r(s)-w(\delta_{\chi_r(s)}-\delta_1)\)
+has moments tending to zero and remains integral and push-compatible. For the action \((s f)(x)=f(x\chi_r(s)^{-1})\) one has \(s\delta_1=\delta_{\chi_r(s)}\). The subtracted term is \(s(w\delta_1)-w\delta_1\), whose value at \(st\) equals its value at \(s\) plus the \(s\)-translate of its value at \(t\). Thus \(\mu_r\) retains the cocycle law. Reduction of the Dirac masses gives push-compatibility at the next level.
+The unique finite-level inverses are compatible under pushdown and
+satisfy the cocycle law: their defects map to zero under
+\(T_g-\theta\), which commutes with translation and pushdown.
+For continuity at level \(r\) and precision \(n\), intersect the open subgroup for \(Z\) at \(n+c_3(r)\) with \(\ker\chi_r\).
+On its intersection with inertia the Dirac masses cancel, so the inverse bound gives the required precision for \(Z'\).
+At every \(s\in I_A\cap\ker\chi_r\) the same cancellation yields the exact division identity for all \(x\in U_r\).
+\nolinkurl{UpperTheory.Kd.C7.pCob}, \path{LangPolynomials/SplitPow.lean:125--253};
+\nolinkurl{UpperTheory.Kd.C7.pDivAlg}, \path{LangPolynomials/DivAlg.lean:79--146,151--325};
+\nolinkurl{UpperTheory.Kd.C7.pDiv}, \path{LangPolynomials/DivEqZeroOfCg.lean:49--207}.
+
+\textbf{B08.} The simultaneous norm lift requires one unit \(f\)
+for every layer and every precision given norm-compatibility only up
+to the specified unit powers and a coefficient ring with Frobenius lift.
+\textbf{B09.} Rigidity starts with integral series \(A,B\), \(B\ne0\),
+adjacent units \(w_m\) agreeing to precision \(m\), and primitive-root
+tests for every sufficiently large \(m\) at truncation \(\ell^{3m}\) and
+precision \(\lfloor m/2\rfloor-c_0\) (truncated subtraction).
+It must force \(u=1\) and eventually give any prescribed precision
+simultaneously at all coefficient indices. The complex nonvanishing
+results in Section~\ref{r6:kato-lit} do not make either assertion.
+In particular Kato 13.5(2) requires even weight, whereas the present weight
+is \(2e+1\); 13.5(1) concerns complex \(L\)-values.
+\nolinkurl{UpperTheory.Kd.C7.SExact}, \path{LangPolynomials/FixedIntegersIsUnitOfNotMemPrimeSpan.lean:69--70};
+\nolinkurl{UpperTheory.Kd.C7.pExact}, \path{LangPolynomials/SubOneMemOfPow.lean:167--276};
+\nolinkurl{GlobalTheory.T.powerSeries_eq_of_congruent_values_at_primitiveRoots},
+\path{FoundationProofs/PowerSeriesEqOfCongruentValuesAtPrimitiveRootsStatement.lean:6--7}.
+

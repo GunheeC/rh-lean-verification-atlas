@@ -1,0 +1,30 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit P043. Local manuscript v3, item 7.20, heading on printed PDF p. 85.
+% Formalism.MainNotions.N.K.Closed.open_inputs_at_normalized
+% paper2/inputs_two.tex:43–59. Verbatim excerpt; SHA-256 9c6b33f5e61239d345b9c78c4e5f0d34c95022e580d4c7a98aa97a6332412157.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+\noindent\nolinkurl{Formalism.MainNotions.TruncatedSeriesCountingIdentities.FontaineAtPlacesOverL} --- hypothesis at this head (\path{Formalism/SharpRestriction/LevelLetterCocycles/DecompositionData.lean:288--290}); not compared.\par
+\noindent\nolinkurl{Formalism.MainNotions.LargeLevelLemmas.tateH1FinitenessAtPlacesOver} --- hypothesis at this head (\path{Formalism/SharpRestriction/LevelLetterCocycles/LargeLevelLemmas.lean:87--90}); not compared.\par
+% End of atlas edition annotation.
+
+\begin{formalstatement}[Five local conclusions on one normalized representation]\label{pn:P043}
+Work on the normalized family \(r_N\) with its ring record and evaluation, topology, scalar and rank identifications. Assume G2 (local gain bound and crystalline twist), G4 (unramified away from the specified sets), G5 (inertia polynomial relations), tame generators, semisimple decomposition, Fontaine conditions above \(\ell\), local Tate \(H^1\) finiteness, and local coefficient compatibility. Assume goodness of the self coefficient extension, the specified auxiliary character powers, and \(TB(c_B)\) for \(r_N\). On these same data the following hold.
+\begin{enumerate}
+\item Block zero satisfies the fixed \(\rho\)-block conditions for the determinant presentation.
+\item For \(c\ge1\), each admissible projected row cocycle is finite after multiplication by \(\ell^{c_B}\); the colength of the finite condition in its locally constant \(\ell^{c_B}\)-division part is at most \(ac_B([E_w:\mathbf Q_\ell]+1)\).
+\item All higher character blocks \(c\ge2\) satisfy their character local conditions.
+\item The first character block obeys its specified inertia and auxiliary-prime local conditions.
+\item The row subquotient, orbit, matrix-lattice and target orbit continuity conditions hold simultaneously.
+\end{enumerate}
+\end{formalstatement}
+\nodestatus{P043}
+Bellaïche--Chenevier, Theorem 1.5.5, injects the dual of an off-diagonal block modulo products through the other blocks into an extension group. Bloch--Kato, \emph{L-functions and Tamagawa numbers of motives}, \S3, defines the local finite condition by period comparison. For P043 one must put the actual normalized row map in that condition, identify its integral denominator, and obtain the displayed colength and tame restrictions on the same blocks.
+\begin{outline}
+The integral projection from the rank-one-idempotent source onto the row target extends to an equivariant rational map. Matrix rows separate its source, hence finitely many evaluations embed that rational space into the prescribed sum of dual twists. A target vector lifts integrally. Projecting the continuous orbit of a lift gives continuity on the target. Pull back the two lattices and their cochains by the local group and coefficient isomorphisms. A period coboundary stays a period coboundary. An ordinary target coboundary has an integral primitive which transports back, so the denominator on cohomology is precisely the sum of the projected finite source and target coboundaries. The row hypothesis now applies with the original quotient length.
+
+Cup products are preserved by these identifications. The given rational annihilator identity paired with integral finite classes gives the torsion annihilator after reduction modulo \(O\). Saturation of the inverse image of a rational finite space and the row target bound give assertion (2). For a higher scalar twist take an integral \(\mathbf Z_\ell\)-basis of \(O\). Projection of a cocycle commutes with restriction, inertia and coboundaries. Coboundary witnesses in each coordinate assemble to one for the full cocycle. Conversion to \(O\)-length gives the coefficient factor \(a\). For the first character, transport the strict finite condition through the block isomorphism using the projected period witness. The same lattice identifications give the row matrices and orbits. See the blueprint's \bploc{sec:P-r4-Z32} and its preceding comparisons of higher scalar twists and columns.
+\end{outline}

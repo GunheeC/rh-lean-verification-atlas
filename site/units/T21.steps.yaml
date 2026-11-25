@@ -1,0 +1,173 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "T21",
+  "edition_sha256": "60537015b735a7a6822fdf3b38c618d80cbc872cee5662db0eda883d6e043259",
+  "note_sha256": "e7a0b9b29838a30018c723c138b1dfeb5bdc5c0f84650f84b3f37e1890ede726",
+  "statement_sha256": "273b587e36cb8b5359413457152205115ac487394eb65bcd1c575d783dd97fb7",
+  "sources": [
+    {
+      "path": "notes/units/T21_round4.md",
+      "sha256": "e7a0b9b29838a30018c723c138b1dfeb5bdc5c0f84650f84b3f37e1890ede726"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The divisor term sums only horizontal components, with multiplicity from the ideal obtained by adjoining the section.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: conjugation-invariant Hermitian lines"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.CompanionTheory.Hypotheses₂.PoincareLelongInv",
+          "file": "Development/AutomorphicSpectrum/PublishedTheorems/Metrics₂/PoincareLelongInv.lean",
+          "line0": 9,
+          "line1": 18
+        }
+      ],
+      "source": "notes/units/T21_round4.md",
+      "anchor": "There are two distinguished lines in addition to the $n$ smooth test lines",
+      "source_lines": [
+        31,
+        31
+      ],
+      "claim_sha256": "e399827fb934c7150c4fc6c303b084701088cedf59085d27278c1428938355fa",
+      "passage_sha256": "8a4a690ab70a2f91737a80b9faaf269e311f353744d324b0eeacf705eefdca65",
+      "sha256": "bd1bac97471a8917ffe664d0c7dcb99f2333933d8e2675c33f37b4b9cf09594e",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Branchwise orders determine the limiting divisor contribution once mass on the smaller exceptional locus is controlled.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S1",
+        "input: branch limits and mass control"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.Tls2.Pl.lelongLimit",
+          "file": "Development/WeilBound/CoreStatements/TemperedRepresentationTheory/PoincareLelong/Development.lean",
+          "line0": 48,
+          "line1": 58
+        },
+        {
+          "name": "PositivityTheory.Tls2.Pl.stokesOnVariety",
+          "file": "Development/WeilBound/CoreStatements/TemperedRepresentationTheory/PoincareLelong/Development.lean",
+          "line0": 40,
+          "line1": 46
+        }
+      ],
+      "source": "notes/units/T21_round4.md",
+      "anchor": "The supplied analytic ingredients include a description of divisor branches at general poi",
+      "source_lines": [
+        35,
+        35
+      ],
+      "claim_sha256": "535c1bd25547558f6a8a76dad85b4c9bb5f333f4b634afc498118391fac813cd",
+      "passage_sha256": "e32c38eac7de264cad95ca449a363a761149ce5a06cf2fe8ea07e20513686c79",
+      "sha256": "7550d45eb1220d29e2327954e16352127bed9b08704cf45c07ec6a7635e81181",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The regularized chart formula and its limit give the integrated formula with the curvature term subtracted.",
+      "kind": "assembly",
+      "uses": [
+        "S2",
+        "input: chart comparison and Stokes"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.Tls2.Pl.lelongPolyLimit",
+          "file": "Development/WeilBound/CoreStatements/TemperedRepresentationTheory/PoincareLelong/Development.lean",
+          "line0": 60,
+          "line1": 64
+        },
+        {
+          "name": "PositivityTheory.Tls2.Pl.poincareLelong_of",
+          "file": "Development/WeilBound/CoreStatements/TemperedRepresentationTheory/PoincareLelong/Development.lean",
+          "line0": 70,
+          "line1": 84
+        }
+      ],
+      "source": "notes/units/T21_round4.md",
+      "anchor": "A weighted polynomial version of the limit uses the local multiplicity comparison for coma",
+      "source_lines": [
+        39,
+        39
+      ],
+      "claim_sha256": "7a2fc8617ca6f7d108d20f05d39472327994aec2d7fec8f188e035579c9dfed9",
+      "passage_sha256": "6be0dd1dfb2aadda7577b10364698873becd6f7d06a0e0c5b4332076c9505172",
+      "sha256": "205a0f7b4924d86bf7a1c4b4a9b4e6e7c9d8e1e8706cfddb5d672a8f175daa04",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The invariant version follows by specializing the stronger formula to lines satisfying the conjugation conditions.",
+      "kind": "assembly",
+      "uses": [
+        "S3"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.Tls2.Pl.poincareLelongInv_of_leaves",
+          "file": "Development/WeilBound/CoreStatements/TemperedRepresentationTheory/PoincareLelong/Development.lean",
+          "line0": 95,
+          "line1": 105
+        },
+        {
+          "name": "PositivityTheory.Tls2.Pl.poincareLelongInv",
+          "file": "Development/WeilBound/CoreStatements/TemperedRepresentationTheory/PoincareLelong/PoincareLelongInv.lean",
+          "line0": 19,
+          "line1": 23
+        }
+      ],
+      "source": "notes/units/T21_round4.md",
+      "anchor": "The more general arithmetic formula receives the smoothness, arithmetic-variety, zero-mult",
+      "source_lines": [
+        43,
+        43
+      ],
+      "claim_sha256": "29ed2cf9644c8e75ed397b3eb4599d6f0138010444ee18ad22521f38b7c662dd",
+      "passage_sha256": "8054d82513845378fa5f0856151602ed88611b4641334157171feb56c8def600",
+      "sha256": "524a68862359800b051ef0f82420ed07354c139c7791e4c546f1d661c273a656",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "9ef4b1fdba609aa54a801ac74e98e3c042abe0620b041d42ca8dcde0f623c34a",
+      "sources": [
+        {
+          "path": "notes/units/T21_round4.md",
+          "sha256": "5e7bd12c3274e882781318e7789ff03d161c5f6721081f71823ac3ec455c9570"
+        }
+      ],
+      "statement_sha256": "b320379f7a1a00a0cbfe67ca6247fdb8ea332c355a750f1aa73d9cfecb4da82a",
+      "steps": {
+        "S1": "bd1bac97471a8917ffe664d0c7dcb99f2333933d8e2675c33f37b4b9cf09594e",
+        "S2": "7550d45eb1220d29e2327954e16352127bed9b08704cf45c07ec6a7635e81181",
+        "S3": "205a0f7b4924d86bf7a1c4b4a9b4e6e7c9d8e1e8706cfddb5d672a8f175daa04",
+        "S4": "0c96084dbae73cea7b205644dbf5ce1c9bb496a5791e22fad995906c18eb316a"
+      },
+      "step_texts": {
+        "S1": "The divisor term sums only horizontal components, with multiplicity from the ideal obtained by adjoining the section.",
+        "S2": "Branchwise orders determine the limiting divisor contribution once mass on the smaller exceptional locus is controlled.",
+        "S3": "The regularized chart formula and its limit give the integrated formula with the curvature term subtracted.",
+        "S4": "The invariant version follows by specializing the stronger formula to lines satisfying the conjugation conditions."
+      },
+      "step_passages": {
+        "S1": "8a4a690ab70a2f91737a80b9faaf269e311f353744d324b0eeacf705eefdca65",
+        "S2": "e32c38eac7de264cad95ca449a363a761149ce5a06cf2fe8ea07e20513686c79",
+        "S3": "6be0dd1dfb2aadda7577b10364698873becd6f7d06a0e0c5b4332076c9505172",
+        "S4": "34a7419ce7721b49a882f6c638fa491229216db66d492264ee79607664a0528f"
+      }
+    }
+  ]
+}

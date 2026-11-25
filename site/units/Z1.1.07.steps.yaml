@@ -1,0 +1,99 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "Z1.1.07",
+  "edition_sha256": "8da09b8b7a2bcab338970be5bb49f8560b87d60051c6195144b78eecd9bd6571",
+  "note_sha256": "75d4072bf5bda67a882934fdd8e9aa98ed517a63b27aca6d6e99e43abcbbd871",
+  "statement_sha256": "c851777d9b03618eecfb87c007eb65e96e457a4676b9b66a47aa4101e0dd50f1",
+  "sources": [
+    {
+      "path": "notes/blueprint/Z1.1.07.tex",
+      "sha256": "75d4072bf5bda67a882934fdd8e9aa98ed517a63b27aca6d6e99e43abcbbd871"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The sign kernel and cyclotomic character live on the same quotient used for the linked level.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: common quotient for the sign and cyclotomic characters"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Z.J.linkedUnlE_holds_alt",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/LinkedUnlEHolds.lean",
+          "line0": 24,
+          "line1": 29
+        }
+      ],
+      "source": "notes/blueprint/Z1.1.07.tex",
+      "anchor": "The level used in the linked construction requires both a sign kernel",
+      "source_lines": [
+        7,
+        24
+      ],
+      "claim_sha256": "eee2c5cbb48d71922d22f5a5f6069f8c73d36d3116862e8f5616b6a6f73fcfe0",
+      "passage_sha256": "22488b6586334bcb02ac7bd498be9e54fe1d4b12a2d6f2d5699d73583b123f71",
+      "sha256": "50af19c62c0ba363b66f4ea099831a892925f3df5399ade0ecee0d6b78a98e95",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The global restriction and the local tests apply to the open subgroup and valuations of that quotient.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "input: global and local character bounds"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Z.J.linkedUnlE_holds_alt",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/LinkedUnlEHolds.lean",
+          "line0": 24,
+          "line1": 29
+        }
+      ],
+      "source": "notes/blueprint/Z1.1.07.tex",
+      "anchor": "the subgroup to which the global character bound of S16 restricts, and",
+      "source_lines": [
+        7,
+        24
+      ],
+      "claim_sha256": "321231e9d178136e96ffba6d7f09d0f1808555aab0ad94ad0c3f9fe77d262f43",
+      "passage_sha256": "22488b6586334bcb02ac7bd498be9e54fe1d4b12a2d6f2d5699d73583b123f71",
+      "sha256": "287feca586e78eceb5fbced1a5747837b40c06389990935e45417d922af83c41",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "For each permitted pair of parameters the three finiteness properties use a single witness.",
+      "kind": "assembly",
+      "uses": [
+        "S2",
+        "input: cohomological premise"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Z.J.linkedUnlE_holds_alt",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/LinkedUnlEHolds.lean",
+          "line0": 24,
+          "line1": 29
+        }
+      ],
+      "source": "notes/blueprint/Z1.1.07.tex",
+      "anchor": "bounds. Thus for any one permitted \\(s,S'\\) we obtain a single \\(V\\)",
+      "source_lines": [
+        7,
+        24
+      ],
+      "claim_sha256": "734d2b3cb22b137e2821e0b1d62cee98a105082bb0c8402bd2780b1b004969f3",
+      "passage_sha256": "22488b6586334bcb02ac7bd498be9e54fe1d4b12a2d6f2d5699d73583b123f71",
+      "sha256": "2d6486dfceb8140d4cfa8d2c7badeef2d957ae20c73dfa17c88bc89edf590e6c",
+      "ai_review": []
+    }
+  ],
+  "history": []
+}

@@ -1,0 +1,99 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "Z1.5.04",
+  "edition_sha256": "aee37b0240d187c89a5630e7cad57f906dc1c3a1e9ef1dab6b8ed9cd86c3442c",
+  "note_sha256": "872a4ce0dba5a9730107c5177ba5cc5b0c9c5e2d99cf7ee3a9add5b7d255ae50",
+  "statement_sha256": "b12543a8bb751880c8e7ebcebba096f20017ff83161181b5a1373953f83f54e4",
+  "sources": [
+    {
+      "path": "notes/blueprint/Z1.5.04.tex",
+      "sha256": "872a4ce0dba5a9730107c5177ba5cc5b0c9c5e2d99cf7ee3a9add5b7d255ae50"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The locally normalized tuple can be formed independently of the purity parameter in the stated call.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: prescribed local normalization"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.GalN.V.Win.N.countP_alt",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/FrobeniusTraceCountBoundOfCmEigensystemCount.lean",
+          "line0": 129,
+          "line1": 191
+        }
+      ],
+      "source": "notes/blueprint/Z1.5.04.tex",
+      "anchor": "does not enter the definition",
+      "source_lines": [
+        7,
+        24
+      ],
+      "claim_sha256": "204b27166b6dd339ff57bf1eed3a3fc8c77af0f8819fbabe1c2f851b7e6135a9",
+      "passage_sha256": "542d12eacb2d026ba6530e9bd28e1e9f14a89fa17e7a35147b554e12b807a044",
+      "sha256": "8afe179fba27120e75d5f21e46e5f24e4ab9a1d55d013e24cf5b7a8195f2e49c",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "At a good place the tuple has the prescribed number of entries and is invariant under changing the cusp representative by an isomorphism.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "input: uniqueness and size of the spherical multiset"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.GalN.V.Win.N.countP_alt",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/FrobeniusTraceCountBoundOfCmEigensystemCount.lean",
+          "line0": 129,
+          "line1": 191
+        }
+      ],
+      "source": "notes/blueprint/Z1.5.04.tex",
+      "anchor": "existence at",
+      "source_lines": [
+        7,
+        24
+      ],
+      "claim_sha256": "d40473d68678b8088836043c62045a632c03d4f8b2c368020ac4a5890c794166",
+      "passage_sha256": "542d12eacb2d026ba6530e9bd28e1e9f14a89fa17e7a35147b554e12b807a044",
+      "sha256": "fd165c08c1c5e78602669fb02a73901efbbaad583fd4c622f580a283a5838c4b",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "These local properties leave the simultaneous comparisons at the chosen purity weight as inputs to the full finite classifier.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S2",
+        "input: conjugation, duality and integrality"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.GalN.V.Win.N.countP_alt",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/FrobeniusTraceCountBoundOfCmEigensystemCount.lean",
+          "line0": 129,
+          "line1": 191
+        }
+      ],
+      "source": "notes/blueprint/Z1.5.04.tex",
+      "anchor": "The simultaneous conjugation",
+      "source_lines": [
+        7,
+        24
+      ],
+      "claim_sha256": "e2116568a7cef9a05fa99928066c4bbce424c111f38ac62aa5c13749ef2802aa",
+      "passage_sha256": "542d12eacb2d026ba6530e9bd28e1e9f14a89fa17e7a35147b554e12b807a044",
+      "sha256": "02866eabc7c25a3447ce6792a0a101b162b8d7778631842b3b3cb17d34679aae",
+      "ai_review": []
+    }
+  ],
+  "history": []
+}

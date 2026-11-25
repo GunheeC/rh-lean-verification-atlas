@@ -1,0 +1,91 @@
+{
+  "id": "Z1.1.02",
+  "title": "Twisting a seed into the adjoint window",
+  "track": {
+    "primary": "galois",
+    "secondary": []
+  },
+  "statement": "For a linked field pair and level $M$ with the unramified-splitting and inertia conditions, an open-irreducible, unlinked Eisenstein seed of weight $m+1$ with PR and the prescribed parity has a character twist over L in the stated adjoint window, $m\\ge2$.",
+  "assumptions": [
+    "source:blueprint_v13"
+  ],
+  "hypothesis_details": [
+    "The linked fields and level satisfy splitting and inertia restrictions.",
+    "Use an open-irreducible, unlinked ordinary seed with PR and the required weight and parity."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.Z.Sym.W.seedInW_alt",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TSeedInW.lean",
+      "line0": 117,
+      "line1": 270,
+      "sha256": "a1749c8c0911f684072e65c5c56601c711af7416becc168b3ac00c9e803acdca",
+      "dominated": 2135,
+      "graph": "allChi",
+      "role": "statement"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/blueprint/Z1.1.02.tex",
+      "section": "r8:small:Z1.1.02",
+      "pages": []
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r8:small:Z1.1.02",
+      "pages": [
+        467,
+        467
+      ],
+      "printed_page": 442,
+      "scope": "First page of this named destination."
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [
+    "Z1.1.01"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "Construct one twist with all required local types and show that its restricted seed lies in the full adjoint window."
+  ],
+  "last_checked": "2026-11-24",
+  "blueprint_members": [
+    "Z1.1.02"
+  ],
+  "representative": "UpperTheory.V.Z.Sym.W.seedInW_alt",
+  "statement_declarations": [
+    "UpperTheory.V.Z.Sym.W.seedInW_alt"
+  ],
+  "grade_scope": "Named statement declarations with the hypotheses above. Chart supplier records have their own review scopes.",
+  "confirmation_basis": "Minimum across the statement declarations, using registry rows for the blueprint assignments listed here. Reviews of other expositions of a shared declaration are included as context.",
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "slug": "twisting-a-seed-into-the-adjoint-window",
+  "aliases": [
+    "seedInW_alt",
+    "Z1.1.02 Twisting a seed into the adjoint window"
+  ],
+  "background": [
+    "Galois twists",
+    "Ordinary Eisenstein representations"
+  ],
+  "hypothesis_source": {
+    "document": "blueprint_v13",
+    "section": "r8:small:Z1.1.02",
+    "pages": [
+      467,
+      467
+    ]
+  },
+  "question_sources": [
+    "data/status_ledger.json"
+  ],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "Z1.1.01": "statement-reading"
+  },
+  "summary": "An admissible rank-two Eisenstein seed on the linked field pair can be twisted into the specified adjoint window. The inertia, parity and irreducibility conditions determine when the next automorphy statement can be applied."
+}

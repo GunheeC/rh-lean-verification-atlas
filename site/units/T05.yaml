@@ -1,0 +1,104 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "T05",
+  "title": "Two uniform bounds on indefinite rows",
+  "track": {
+    "primary": "analytic",
+    "secondary": []
+  },
+  "statement": "For every $P$, both of the following assertions hold on the admissible\nfamilies. First, for a family with \\nolinkurl{DIVinN}, some $C_0\\ge0$ works\neventually at points $p$ satisfying \\nolinkurl{More}: for $C\\ge C_0$ the\nfalse-side row satisfies \\nolinkurl{ON}. This gives the upper bound on the\nsum of the two conjugate-place indices for every twisted place, nonnegative\nrow errors there, and the summed weighted-error bound $E_{1,j}$ for each $j$.\nSecond, eventually at points and for all $C$, the true-side row satisfies\n$N_{L6,j}\\le\\log\\lambda_j(\\mu_0,p,v)$ for every $j,p,v$ in the row datum.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Fix the admissible family and row data. The first assertion requires its division input and points satisfying the stated More condition.",
+    "The two estimates use their respective false-side and true-side row data, with the thresholds and parameter $C$ in their stated order."
+  ],
+  "lean": [
+    {
+      "name": "GlobalTheory.Fc.S0.ontoX_and_lamLow_of_unitaryGroupHypotheses'",
+      "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SurjectiveAndLowWeightOfUnramifiedExponents.lean",
+      "line0": 16,
+      "line1": 29,
+      "sha256": "2880822452d7fa2c1a97e14293ff2047f5d740ff347ae4a372b19ee691b3a552",
+      "dominated": 303161,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/T05_round4.md",
+      "section": "T05 · Two estimates on different sides of the same row problem",
+      "pages": [
+        1,
+        4
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "5.15 (sub:T05)",
+      "pages": [
+        41,
+        41
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/T05.tex",
+      "section": "sub:T05",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": 4,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "T05",
+  "indexed_members": [
+    "D395",
+    "D396",
+    "D397",
+    "D398",
+    "D399",
+    "D400",
+    "D401",
+    "D402",
+    "D403",
+    "D404",
+    "D405",
+    "D406",
+    "D407",
+    "D408",
+    "D583"
+  ],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "two-uniform-bounds-on-indefinite-rows",
+  "aliases": [
+    "ontoX_and_lamLow_of_unitaryGroupHypotheses'",
+    "T05 Two uniform bounds on indefinite rows"
+  ],
+  "background": [
+    "Weighted valuations",
+    "Local estimates on automorphic families"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "5.15 (sub:T05)",
+    "pages": [
+      41,
+      41
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "review_status": "pending_review",
+  "summary": "Two estimates control the indefinite rows. One bounds the false-side row at sufficiently large parameters on families satisfying a division condition. The other bounds the true-side weight at every parameter once the point is sufficiently far out. The Fourier fit uses the second estimate. The final definite-side assembly uses both."
+}

@@ -1,0 +1,30 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit B02. Local manuscript v3, item 5.2, heading on printed PDF p. 35.
+% UpperTheory.Gal.Int.Geo.geoOne_holds
+% paper2/split_bridges.tex:50–73. Verbatim excerpt; SHA-256 c7d78c35ca43f0d36d4fa49a456ea7f610f36595aec7d3214c61a04d2a3e4885.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+\begin{formalstatement}[Weight-one geometric realisation in odd rank]\label{sub:B02}
+Fix a CM field and coefficient data as above, odd rank $a$, admissible field
+datum $d$ and $x\in E$ with $x^2=-d$. Fix the nonsplit exceptional set $T$,
+separated places $w_0,v'\mid\ell$ agreeing on integral elements of
+$\mathbb Q(x)$, and a finite set $S$. Let $U$ satisfy the automorphic
+condition off $T$, the specified $\ell$-type at $w_0$, the spherical condition
+off $w_0,S$, and the Satake-existence and lacunary-weight conditions at $v'$.
+Then there exists a continuous semisimple $\rho$ of some dimension with
+the source's Satake polynomial condition off a finite set of admissible
+places away from $\ell$, and a Hodge-jump witness containing $a$ lacunary
+integers. Call these common properties $V(\rho)$.
+At each such admissible $w\nmid\ell$ with Satake data one can insist on
+$V(\rho)$ and the polynomial condition at $w$ for every Satake multiset
+there. At each $w\mid\ell$ agreeing with $v'$ on $\mathbb Q(x)$, separated
+from $w_0,v'$ and having Satake data, the following two witnesses exist:
+one has $V(\rho)$, crystalline comparison and the prescribed weight jumps
+among its jumps at $w$; another has $V(\rho)$ and, for each Satake datum
+and inducing bridge, crystalline comparison and a degree $-1$ Weil element
+whose characteristic polynomial divides a power of the Satake polynomial.
+The dimension and representation may vary with the demanded witness.
+\end{formalstatement}\subnode{B02}
+See \path{GeometricFlagBases/HodgeTrAt.lean:79--91} and
+\path{ZetaCharacterDivisibility/InsideRefl.lean:48--78} for the local
+existence quantifiers.

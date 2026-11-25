@@ -1,0 +1,458 @@
+{
+  "changes": [
+    {
+      "id": "P001",
+      "old_status": "Statement only",
+      "status": "Outlined",
+      "note": "notes/units/P001_round3.md",
+      "weakest_step": "The reflection step divides the cases at a negative even integer and at zero. Check the precise exclusion of each against the predicate passed to the public export.",
+      "lean_ranges": [
+        {
+          "name": "riemannHypothesis",
+          "file": "Main.lean",
+          "line0": 4,
+          "line1": 4
+        },
+        {
+          "name": "rhOfAll",
+          "file": "Supplements/Kernels/MainTheorems.lean",
+          "line0": 9,
+          "line1": 9
+        },
+        {
+          "name": "RiemannZetaZerosOnLine",
+          "file": "Statements.lean",
+          "line0": 3,
+          "line1": 4
+        },
+        {
+          "name": "Formalism.VW.rh_of_every",
+          "file": "Formalism/GammaFactorNonvanishing/CritLine.lean",
+          "line0": 29,
+          "line1": 32
+        },
+        {
+          "name": "Formalism.VW.rh_of_right",
+          "file": "Formalism/GammaFactorNonvanishing/RhOfRight.lean",
+          "line0": 5,
+          "line1": 62
+        },
+        {
+          "name": "allChi",
+          "file": "Supplements/Kernels/MainTheorems.lean",
+          "line0": 7,
+          "line1": 7
+        }
+      ],
+      "pages_written": 2
+    },
+    {
+      "id": "P003",
+      "old_status": "Statement only",
+      "status": "Outlined",
+      "note": "notes/units/P003_round3.md",
+      "weakest_step": "Passing from the primitive character to its lift must preserve the disjunction at the pole before the change-of-level identity can be invoked.",
+      "lean_ranges": [
+        {
+          "name": "DirichletLNonvanishingRightOfHalf",
+          "file": "Statements.lean",
+          "line0": 6,
+          "line1": 8
+        },
+        {
+          "name": "LFunction_ne_zero_of_half_lt_re",
+          "file": "Main.lean",
+          "line0": 8,
+          "line1": 8
+        },
+        {
+          "name": "UpperTheory.EveryCharacter",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/EveryCharacter.lean",
+          "line0": 13,
+          "line1": 14
+        },
+        {
+          "name": "UpperTheory.Top.imprimitive",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/Imprimitive.lean",
+          "line0": 5,
+          "line1": 35
+        },
+        {
+          "name": "UpperTheory.Top.every_character_of_green_v_win",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean",
+          "line0": 16,
+          "line1": 18
+        },
+        {
+          "name": "UpperTheory.Top.zero_free_all_of_green_v_win",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean",
+          "line0": 12,
+          "line1": 15
+        },
+        {
+          "name": "allChi",
+          "file": "Supplements/Kernels/MainTheorems.lean",
+          "line0": 7,
+          "line1": 7
+        }
+      ],
+      "pages_written": 2
+    },
+    {
+      "id": "P005",
+      "old_status": "Statement only",
+      "status": "Outlined",
+      "note": "notes/units/P005_round3.md",
+      "weakest_step": "Check that the functional equation is used for the inverse character, and that the ordinary-to-completed quotient at the original point has nonzero denominator.",
+      "lean_ranges": [
+        {
+          "name": "PrimitiveDirichletLZerosOnLine",
+          "file": "Statements.lean",
+          "line0": 14,
+          "line1": 16
+        },
+        {
+          "name": "LFunction_eq_zero_re_of_isPrimitive",
+          "file": "Main.lean",
+          "line0": 12,
+          "line1": 12
+        },
+        {
+          "name": "critAll",
+          "file": "Supplements/Kernels/MainTheorems.lean",
+          "line0": 11,
+          "line1": 13
+        },
+        {
+          "name": "Formalism.VW.critLine",
+          "file": "Formalism/GammaFactorNonvanishing/CritLine.lean",
+          "line0": 11,
+          "line1": 27
+        },
+        {
+          "name": "Formalism.VW.gammaFactor_ne_zero",
+          "file": "Formalism/GammaFactorNonvanishing/CritLine.lean",
+          "line0": 6,
+          "line1": 9
+        }
+      ],
+      "pages_written": 2
+    },
+    {
+      "id": "P009",
+      "old_status": "Statement only",
+      "status": "Outlined",
+      "note": "notes/units/P009_round3.md",
+      "weakest_step": "Identify which predicate the primitive-window argument actually produces before passing to the arbitrary-character statement. A bound for one prescribed primitive character would be insufficient.",
+      "lean_ranges": [
+        {
+          "name": "UpperTheory.EveryCharacter",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/EveryCharacter.lean",
+          "line0": 13,
+          "line1": 14
+        },
+        {
+          "name": "allChi",
+          "file": "Supplements/Kernels/MainTheorems.lean",
+          "line0": 7,
+          "line1": 7
+        },
+        {
+          "name": "UpperTheory.FinalTheorems.everyCharacter",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+          "line0": 10,
+          "line1": 11
+        },
+        {
+          "name": "UpperTheory.Top.zero_free_all_of_green_v_win",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean",
+          "line0": 12,
+          "line1": 15
+        },
+        {
+          "name": "UpperTheory.Top.supplyChi",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/SupplyChi.lean",
+          "line0": 8,
+          "line1": 16
+        },
+        {
+          "name": "UpperTheory.Top.zeroFreeAll_of_topG",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/ZeroFreeAllOfTopG.lean",
+          "line0": 26,
+          "line1": 34
+        },
+        {
+          "name": "UpperTheory.Top.every_character_of_green_v_win",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean",
+          "line0": 16,
+          "line1": 18
+        },
+        {
+          "name": "rhOfAll",
+          "file": "Supplements/Kernels/MainTheorems.lean",
+          "line0": 9,
+          "line1": 9
+        },
+        {
+          "name": "critAll",
+          "file": "Supplements/Kernels/MainTheorems.lean",
+          "line0": 11,
+          "line1": 13
+        },
+        {
+          "name": "claimAll",
+          "file": "Supplements/Kernels/MainTheorems.lean",
+          "line0": 15,
+          "line1": 16
+        }
+      ],
+      "pages_written": 2
+    },
+    {
+      "id": "P010",
+      "old_status": "Statement only",
+      "status": "Outlined",
+      "note": "notes/units/P010_round3.md",
+      "weakest_step": "The source obtains one representation with the entire local compatibility record. Independently justifying this simultaneous existence from the geometric and theta-lift inputs is the first substantive gap in this outline.",
+      "lean_ranges": [
+        {
+          "name": "UpperTheory.FinalTheorems.everyCharacter",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+          "line0": 10,
+          "line1": 11
+        },
+        {
+          "name": "UpperTheory.GalStar.Row0b",
+          "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConjBis.lean",
+          "line0": 69,
+          "line1": 73
+        },
+        {
+          "name": "UpperTheory.GalStar.PropsB",
+          "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConjBis.lean",
+          "line0": 54,
+          "line1": 67
+        },
+        {
+          "name": "UpperTheory.Gal.Int.recT",
+          "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/Development.lean",
+          "line0": 18,
+          "line1": 18
+        },
+        {
+          "name": "UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter",
+          "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/RowSrc.lean",
+          "line0": 6,
+          "line1": 6
+        },
+        {
+          "name": "UpperTheory.TP.K.tLiftK",
+          "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/TLiftK.lean",
+          "line0": 4,
+          "line1": 5
+        },
+        {
+          "name": "UpperTheory.Gal.Int.galoisRepresentations_of_thetaLift",
+          "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/GaloisRepresentationsOfThetaLift.lean",
+          "line0": 6,
+          "line1": 6
+        },
+        {
+          "name": "UpperTheory.Gal.Int.galoisLocalGlobal_of_geometry_lift",
+          "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/Development.lean",
+          "line0": 27,
+          "line1": 28
+        },
+        {
+          "name": "UpperTheory.Gal.Int.coreAll_of",
+          "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/Development.lean",
+          "line0": 20,
+          "line1": 22
+        },
+        {
+          "name": "UpperTheory.Gal.Int.rest",
+          "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/Development.lean",
+          "line0": 24,
+          "line1": 25
+        },
+        {
+          "name": "UpperTheory.Gal.Int.galoisLocalGlobalStrong_of_geometry_lift",
+          "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/Development.lean",
+          "line0": 30,
+          "line1": 31
+        },
+        {
+          "name": "UpperTheory.GalStar.Row0.row0b",
+          "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConjBis.lean",
+          "line0": 84,
+          "line1": 86
+        },
+        {
+          "name": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+          "line0": 7,
+          "line1": 8
+        }
+      ],
+      "pages_written": 2
+    },
+    {
+      "id": "P011",
+      "old_status": "Statement only",
+      "status": "Outlined",
+      "note": "notes/units/P011_round3.md",
+      "weakest_step": "Check that the row simultaneously supports both fields in the literature record and the uniform field-and-layer quantifiers of VWin. The code gives the window supplier, while the stronger arithmetic estimates remain separate reading obligations.",
+      "lean_ranges": [
+        {
+          "name": "UpperTheory.GalStar.Row0b",
+          "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConjBis.lean",
+          "line0": 69,
+          "line1": 73
+        },
+        {
+          "name": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+          "line0": 7,
+          "line1": 8
+        },
+        {
+          "name": "UpperTheory.LiteratureTheorems.OpenLiteratureStatements",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+          "line0": 215,
+          "line1": 218
+        },
+        {
+          "name": "UpperTheory.Zero.LLC.recTExists",
+          "file": "Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/RecTExists.lean",
+          "line0": 20,
+          "line1": 66
+        },
+        {
+          "name": "UpperTheory.One.vwin_of_row",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/VwinOfRow.lean",
+          "line0": 4,
+          "line1": 5
+        },
+        {
+          "name": "UpperTheory.One.Join.automorphic_window_of_inputs",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TopMainZj.lean",
+          "line0": 71,
+          "line1": 74
+        },
+        {
+          "name": "UpperTheory.Top.VWin",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean",
+          "line0": 49,
+          "line1": 49
+        },
+        {
+          "name": "UpperTheory.Top.VWinAt",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean",
+          "line0": 44,
+          "line1": 47
+        },
+        {
+          "name": "UpperTheory.Top.VAt",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean",
+          "line0": 41,
+          "line1": 42
+        },
+        {
+          "name": "UpperTheory.Top.VVle",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean",
+          "line0": 12,
+          "line1": 17
+        },
+        {
+          "name": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+          "line0": 810,
+          "line1": 813
+        },
+        {
+          "name": "UpperTheory.EveryCharacter",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/EveryCharacter.lean",
+          "line0": 13,
+          "line1": 14
+        }
+      ],
+      "pages_written": 2
+    }
+  ],
+  "pagination": "A4, 19 mm margins, 11 pt serif at 1.43 line spacing, with visible TeX as in the offline fallback. Counts refer to the new notes.",
+  "tested_procedures": {
+    "guide": "notes/formal/procedures.md",
+    "source": {
+      "name": "riemannHypothesis",
+      "normalized_span_sha256": "71b3d50605ddda7c0c74fbbf5cca47165a4cfa2ad72f50f36b907ecac7ff505a"
+    },
+    "native_print_axioms": {
+      "name": "Formalism.VW.rh_of_right",
+      "module": "Formalism.GammaFactorNonvanishing.RhOfRight",
+      "exit_code": 0,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "main_object": {
+      "sha256": "ce9a2006adda570c7404866ff3ceb4a7341c6c5d8ae7b56b6d8600b4c312d1ab",
+      "manifest_sha256": "fb3609ad73a17102e6e3e2346c5358a9c0957bcf5945442a7e5ffaa00c441ff5",
+      "method": "Read the serialized exportedAxiomsExt entries in the manifest-matched original Main.olean with Lean 4.33.1.",
+      "names": [
+        "riemannHypothesis",
+        "riemannZeta_eq_zero_re",
+        "LFunction_ne_zero_of_half_lt_re",
+        "LFunction_eq_zero_re",
+        "LFunction_eq_zero_re_of_isPrimitive"
+      ],
+      "axioms_per_name": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "dominator": {
+      "graph_sha256": "be8105049e470b3ef224a2b234a0cac6395f8fb1d983c8200416f116ba15abf6",
+      "root": "allChi",
+      "removed": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+      "before": 9567045,
+      "after": 2137853,
+      "dominated": 7429192
+    },
+    "native_main_print_axioms": {
+      "module": "Main",
+      "command": "import Main, followed by #print axioms for each of the five public names",
+      "exit_code": 0,
+      "results": {
+        "riemannHypothesis": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "riemannZeta_eq_zero_re": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "LFunction_ne_zero_of_half_lt_re": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "LFunction_eq_zero_re": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "LFunction_eq_zero_re_of_isPrimitive": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "scope": "Toolchain 4.33.1, using the existing published and package objects; no Lean source rebuild."
+    }
+  }
+}

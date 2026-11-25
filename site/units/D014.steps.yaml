@@ -1,0 +1,332 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "D014",
+  "edition_sha256": "0d40d129365399a040c9e08c5be8c1387ead095684539f189a839a8078c4c33f",
+  "note_sha256": "8b561a53e12371cee6096957484c0a2287a9736f14f291ab26692507e0ba0255",
+  "statement_sha256": "36f5731e2b03484baf0e2e2d854c705404ae90f8c01bd9ad151cda747e3462e5",
+  "sources": [
+    {
+      "path": "notes/units/D014_round3.md",
+      "sha256": "199ad63e717739228d7ef1fac8584b6d27182961d67c5c9c17d648603d830314"
+    },
+    {
+      "path": "notes/units/D014_v4.md",
+      "sha256": "f798b74affe565d2929178ffb6641e8c66f6ed22f2da5f2c6027c42c19260325"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "A unit congruent to k modulo d has the stated Jacobi sign, so sign plus one puts its additive image in the designated subgroup.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: host Artin-character identity"
+      ],
+      "lean": [
+        {
+          "name": "inPhi_of_jac",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/hostFactsS.lean",
+          "line0": 7,
+          "line1": 15
+        }
+      ],
+      "source": "notes/units/D014_round3.md",
+      "anchor": "Here is the sign test",
+      "source_lines": [
+        11,
+        11
+      ],
+      "claim_sha256": "0dd9b77d3aec28fd6784c65f1bed4689e7828ec83b17b1c76d057bcc93eff983",
+      "passage_sha256": "fe35aba66bc20112fdc95e1cd56f63c511b336adc45424a01fcdc7842c13ec49",
+      "sha256": "7ca781970e296716847377a0d7c302f10631652e013db9a17e8220d1cab08e2d",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "At a prime away from the modulus the prime-to-prime part is the full modulus, so the inertia image is trivial.",
+      "kind": "case-split",
+      "uses": [
+        "input: factorization of the host modulus"
+      ],
+      "lean": [
+        {
+          "name": "hostFactsS_pf",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/hostFactsS.lean",
+          "line0": 44,
+          "line1": 57
+        }
+      ],
+      "source": "notes/units/D014_round3.md",
+      "anchor": "The elementary fields",
+      "source_lines": [
+        15,
+        15
+      ],
+      "claim_sha256": "705ba739517eb7c63a36a9c7ffb31ae24a02df93167295578675108c5b37178a",
+      "passage_sha256": "659e522750e67807199ec78ed382fdf8f39169b2e2af03362a8786f59bef86ca",
+      "sha256": "f0f981a465a276ceb47b601498376c4cce15fbace480d428858ac0dc4b478569",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "For a prime dividing the exceptional product, its inertia units and its Frobenius representative have positive sign at d.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "standard: quadratic reciprocity"
+      ],
+      "lean": [
+        {
+          "name": "jac_of_dvd",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/hostFactsS.lean",
+          "line0": 17,
+          "line1": 31
+        }
+      ],
+      "source": "notes/units/D014_round3.md",
+      "anchor": "Now let $p",
+      "source_lines": [
+        17,
+        17
+      ],
+      "claim_sha256": "08ac0b568eaf882c8be60cacbd2d1cf037c1a2c26cccb86d05d15bc7ed09693e",
+      "passage_sha256": "aaa3224114a08612d653bd4c103ce15acb734a1d15cde07c564e6ba210f234cd",
+      "sha256": "64481f93bb1c1f11e1aed2221fcfb98e6be06e6341825ed0fb83c4abeaa50ad7",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "At d, a local CRT unit with negative sign realizes the distinguished involution, giving the reverse inclusion in the inertia equality.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "standard: Chinese remainder theorem"
+      ],
+      "lean": [
+        {
+          "name": "hostFactsS_pf",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/hostFactsS.lean",
+          "line0": 44,
+          "line1": 57
+        }
+      ],
+      "source": "notes/units/D014_round3.md",
+      "anchor": "Both residues are units",
+      "source_lines": [
+        27,
+        27
+      ],
+      "claim_sha256": "d5941b494dc6aad687dd0c8f086701e187158941ba781421594d1dd862232423",
+      "passage_sha256": "721a61bb62d91883cb933e9e733dd85cab68437179eeb6c14919b2c29f6a20c8",
+      "sha256": "461aca6f6df7d0607782a405671cc7ebd5267fdf284265962a7190e689c07b8b",
+      "ai_review": []
+    },
+    {
+      "id": "S5",
+      "status": "active",
+      "claim": "The small primes together with q are the prime divisors of Qq; d lies outside that set.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: host frame and conductor"
+      ],
+      "lean": [
+        {
+          "name": "Deduction.CH.HostFactsS",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/SplitInertia.lean",
+          "line0": 14,
+          "line1": 22
+        }
+      ],
+      "source": "notes/units/D014_v4.md",
+      "anchor": "The host has",
+      "source_lines": [
+        29,
+        29
+      ],
+      "claim_sha256": "76a85afd28ff2b0b14a545b401c1ac6ce5b05626516dbf7eb3fff8c8c5aafc26",
+      "passage_sha256": "50138419fb358cdc12f7ea8909a139810cf4b683a551d3c55bf340008602e34c",
+      "sha256": "3535bb9d97c72a77cb35bbc0f64a8082a877ed5f8524cd384ee15bf46799c983",
+      "ai_review": []
+    },
+    {
+      "id": "S6",
+      "status": "active",
+      "claim": "Outside the conductor inertia is trivial, and at the primes in the exceptional set both required images belong to the prescribed subgroup.",
+      "kind": "case-split",
+      "uses": [
+        "S5",
+        "standard: quadratic reciprocity and its supplementary law"
+      ],
+      "lean": [
+        {
+          "name": "hostFactsS_pf",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/hostFactsS.lean",
+          "line0": 44,
+          "line1": 57
+        }
+      ],
+      "source": "notes/units/D014_v4.md",
+      "anchor": "If $p\\notin S",
+      "source_lines": [
+        31,
+        31
+      ],
+      "claim_sha256": "16754b69ba0bc262c2b10912e2d97abd166fa65eaaff36991d00f1a5386b1a92",
+      "passage_sha256": "6cdf775c22e4e2d22a0e116f987768a74ee0dc58e90c67811a17e702b9121f77",
+      "sha256": "efe24369bda70b3527a0c420fadb896ef21ea69d79df8c8e69adb3b580c03ea1",
+      "ai_review": []
+    },
+    {
+      "id": "S7",
+      "status": "active",
+      "claim": "The CRT unit congruent to one modulo Qq and minus one modulo d belongs to inertia at d and realizes its nonidentity element.",
+      "kind": "computation",
+      "uses": [
+        "S5",
+        "standard: Chinese remainder theorem"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Comparison₂.hostFactsS",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/hostFactsS.lean",
+          "line0": 127,
+          "line1": 136
+        }
+      ],
+      "source": "notes/units/D014_v4.md",
+      "anchor": "Finally $N",
+      "source_lines": [
+        33,
+        33
+      ],
+      "claim_sha256": "e7f568d894288bae74ee1c83f85fab50c23952379e7e7b0801bf9e145c8a2c95",
+      "passage_sha256": "b617fd9da50d99a22f4813f300c61a77663f26d046314b865202d245464b7681",
+      "sha256": "fea1ee8a0e80f599188bf92da64d54b9b3ca4e51f218db8ec8c6cee98c9f7019",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "78a4a1ed8bd2b4256d6139d6286ffb8772900c91a7febbd71baded3144512db7",
+      "sources": [
+        {
+          "path": "notes/units/D014_round3.md",
+          "sha256": "e438bcab9b9fef44d94523fe68de35905464fecacd2c00f21567730c5a9dc6a1"
+        },
+        {
+          "path": "notes/units/D014_v4.md",
+          "sha256": "a6ddf2a8b8efdbe88e023fcaeb276e691690f4fdc7cd09153df79a3743597a42"
+        }
+      ],
+      "steps": {
+        "S1": "7ca781970e296716847377a0d7c302f10631652e013db9a17e8220d1cab08e2d",
+        "S2": "f0f981a465a276ceb47b601498376c4cce15fbace480d428858ac0dc4b478569",
+        "S3": "64481f93bb1c1f11e1aed2221fcfb98e6be06e6341825ed0fb83c4abeaa50ad7",
+        "S4": "461aca6f6df7d0607782a405671cc7ebd5267fdf284265962a7190e689c07b8b",
+        "S5": "3535bb9d97c72a77cb35bbc0f64a8082a877ed5f8524cd384ee15bf46799c983",
+        "S6": "efe24369bda70b3527a0c420fadb896ef21ea69d79df8c8e69adb3b580c03ea1",
+        "S7": "49c85d43b58776aa82976a636fa55f00b08be04691ec1dff2fbbf45799d32c0c"
+      },
+      "step_texts": {
+        "S1": "A unit congruent to k modulo d has the stated Jacobi sign, so sign plus one puts its additive image in the designated subgroup.",
+        "S2": "At a prime away from the modulus the prime-to-prime part is the full modulus, so the inertia image is trivial.",
+        "S3": "For a prime dividing the exceptional product, its inertia units and its Frobenius representative have positive sign at d.",
+        "S4": "At d, a local CRT unit with negative sign realizes the distinguished involution, giving the reverse inclusion in the inertia equality.",
+        "S5": "The small primes together with q are the prime divisors of Qq; d lies outside that set.",
+        "S6": "Outside the conductor inertia is trivial, and at the primes in the exceptional set both required images belong to the prescribed subgroup.",
+        "S7": "Reducing the inertia unit at d modulo Qq restricts its image to the two designated elements, and the unit of negative sign realizes the nonidentity one."
+      }
+    },
+    {
+      "edition_sha256": "65a7fe33ca9f5565adeb9aadad3727e1f06f10879df1716521aafece1842cb97",
+      "sources": [
+        {
+          "path": "notes/units/D014_round3.md",
+          "sha256": "2ebab8ac6f81939092e76673f933bbabf1ab1b129c807c29dc617a125d816260"
+        },
+        {
+          "path": "notes/units/D014_v4.md",
+          "sha256": "a6ddf2a8b8efdbe88e023fcaeb276e691690f4fdc7cd09153df79a3743597a42"
+        }
+      ],
+      "steps": {
+        "S1": "7ca781970e296716847377a0d7c302f10631652e013db9a17e8220d1cab08e2d",
+        "S2": "f0f981a465a276ceb47b601498376c4cce15fbace480d428858ac0dc4b478569",
+        "S3": "64481f93bb1c1f11e1aed2221fcfb98e6be06e6341825ed0fb83c4abeaa50ad7",
+        "S4": "461aca6f6df7d0607782a405671cc7ebd5267fdf284265962a7190e689c07b8b",
+        "S5": "3535bb9d97c72a77cb35bbc0f64a8082a877ed5f8524cd384ee15bf46799c983",
+        "S6": "efe24369bda70b3527a0c420fadb896ef21ea69d79df8c8e69adb3b580c03ea1",
+        "S7": "49c85d43b58776aa82976a636fa55f00b08be04691ec1dff2fbbf45799d32c0c"
+      },
+      "step_texts": {
+        "S1": "A unit congruent to k modulo d has the stated Jacobi sign, so sign plus one puts its additive image in the designated subgroup.",
+        "S2": "At a prime away from the modulus the prime-to-prime part is the full modulus, so the inertia image is trivial.",
+        "S3": "For a prime dividing the exceptional product, its inertia units and its Frobenius representative have positive sign at d.",
+        "S4": "At d, a local CRT unit with negative sign realizes the distinguished involution, giving the reverse inclusion in the inertia equality.",
+        "S5": "The small primes together with q are the prime divisors of Qq; d lies outside that set.",
+        "S6": "Outside the conductor inertia is trivial, and at the primes in the exceptional set both required images belong to the prescribed subgroup.",
+        "S7": "Reducing the inertia unit at d modulo Qq restricts its image to the two designated elements, and the unit of negative sign realizes the nonidentity one."
+      }
+    },
+    {
+      "edition_sha256": "87f5a56b5d0263941a58301da344c51c6e0dc0bbdd3ebe2c6337b574bcf960c9",
+      "sources": [
+        {
+          "path": "notes/units/D014_round3.md",
+          "sha256": "2ebab8ac6f81939092e76673f933bbabf1ab1b129c807c29dc617a125d816260"
+        },
+        {
+          "path": "notes/units/D014_v4.md",
+          "sha256": "a6ddf2a8b8efdbe88e023fcaeb276e691690f4fdc7cd09153df79a3743597a42"
+        }
+      ],
+      "statement_sha256": "36f5731e2b03484baf0e2e2d854c705404ae90f8c01bd9ad151cda747e3462e5",
+      "steps": {
+        "S1": "7ca781970e296716847377a0d7c302f10631652e013db9a17e8220d1cab08e2d",
+        "S2": "f0f981a465a276ceb47b601498376c4cce15fbace480d428858ac0dc4b478569",
+        "S3": "64481f93bb1c1f11e1aed2221fcfb98e6be06e6341825ed0fb83c4abeaa50ad7",
+        "S4": "461aca6f6df7d0607782a405671cc7ebd5267fdf284265962a7190e689c07b8b",
+        "S5": "3535bb9d97c72a77cb35bbc0f64a8082a877ed5f8524cd384ee15bf46799c983",
+        "S6": "efe24369bda70b3527a0c420fadb896ef21ea69d79df8c8e69adb3b580c03ea1",
+        "S7": "fea1ee8a0e80f599188bf92da64d54b9b3ca4e51f218db8ec8c6cee98c9f7019"
+      },
+      "step_texts": {
+        "S1": "A unit congruent to k modulo d has the stated Jacobi sign, so sign plus one puts its additive image in the designated subgroup.",
+        "S2": "At a prime away from the modulus the prime-to-prime part is the full modulus, so the inertia image is trivial.",
+        "S3": "For a prime dividing the exceptional product, its inertia units and its Frobenius representative have positive sign at d.",
+        "S4": "At d, a local CRT unit with negative sign realizes the distinguished involution, giving the reverse inclusion in the inertia equality.",
+        "S5": "The small primes together with q are the prime divisors of Qq; d lies outside that set.",
+        "S6": "Outside the conductor inertia is trivial, and at the primes in the exceptional set both required images belong to the prescribed subgroup.",
+        "S7": "The CRT unit congruent to one modulo Qq and minus one modulo d belongs to inertia at d and realizes its nonidentity element."
+      },
+      "step_passages": {
+        "S1": "fe35aba66bc20112fdc95e1cd56f63c511b336adc45424a01fcdc7842c13ec49",
+        "S2": "659e522750e67807199ec78ed382fdf8f39169b2e2af03362a8786f59bef86ca",
+        "S3": "aaa3224114a08612d653bd4c103ce15acb734a1d15cde07c564e6ba210f234cd",
+        "S4": "721a61bb62d91883cb933e9e733dd85cab68437179eeb6c14919b2c29f6a20c8",
+        "S5": "50138419fb358cdc12f7ea8909a139810cf4b683a551d3c55bf340008602e34c",
+        "S6": "6cdf775c22e4e2d22a0e116f987768a74ee0dc58e90c67811a17e702b9121f77",
+        "S7": "b617fd9da50d99a22f4813f300c61a77663f26d046314b865202d245464b7681"
+      },
+      "step_ai_reviews": {
+        "S7": [
+          {
+            "verdict": "CONFIRMED",
+            "scope": "The CRT unit congruent to one modulo Qq and minus one modulo d belongs to inertia at d and realizes its nonidentity element.",
+            "file": "reviews/DB3_review_A.md",
+            "lines": [
+              102,
+              102
+            ],
+            "edition_sha256": "87f5a56b5d0263941a58301da344c51c6e0dc0bbdd3ebe2c6337b574bcf960c9",
+            "step_sha256": "fea1ee8a0e80f599188bf92da64d54b9b3ca4e51f218db8ec8c6cee98c9f7019"
+          }
+        ]
+      }
+    }
+  ]
+}

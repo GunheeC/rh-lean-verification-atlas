@@ -1,0 +1,596 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% RH Notes blueprint source excerpts for Z42-KERNEL
+% Verbatim excerpts in the notation of the parent blueprint. The labelled editions and source ranges appear below.
+% See the unit YAML for the current proof status. Earlier-round passages retain their original wording.
+\section*{Z42-KERNEL. Transformation and level changes of the kernel}
+
+% Parent source SHA-256: 1af64922b98ed2310744411b1f18b25cc426c97220646321471836e1a3a409d6
+% blueprint/ch_P.tex lines 13257 through 13263; r6:Z4.2.09
+\subsection{Z4.2.09. The stabilizer and the indicator relations (v8)}\label{r6:Z4.2.09}
+\emph{The v10 continuation is on page~\pageref{r8:Z4.2.09}.}
+Here Pair, Pos, Move and Away are premises (B). The inverse-\(\kappa\) law for the full frame series uses the first three. At a representative take a stabilizing \(\epsilon\): the moved source tuple agrees with the original, so specialization of the law gives its fixed-coordinate version. This same full law compares the restricted series with the one used in the admission condition. The last premise supplies the two valuation-zero factors for each away fiber (\nolinkurl{GlobalTheory.TwV.site_law_xiIn}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/KernelSiteLawAndFixedCoordinateStabiliserLaw.lean:20--48}).
+
+Fix a place, a step, and an away datum. Index the fiber by pairs of valid tuples. The value prescribed on a lattice indicator is the restricted kernel series divided by the nonzero normalization \(k_i\) formed from the two units, lengths and local volume exponent. An additive functional giving these values exists once every finite rational relation between the indicators gives the same relation between the normalized series. For a nonempty fiber choose a base pair. Its two frames identify the Hom-lattice indicators with indicators at the split prime. The square root of the volume ratio contributes the rational factor \(p^{h({\rm volE}_i-{\rm volE}_0)}\), where \(2h\) is the even number of positions at the place. The away law makes the remaining scalar common after the two length powers are removed. A relation of the corresponding complex theta functions can therefore be differentiated coefficient by coefficient; the Taylor coefficients are algebraic by Pair, so \(\lambda\) transports the rational linear relation. The common linear substitution and restriction commute with the finite sum. The resulting relation gives a functional for this fiber, and evaluating it on one generator and multiplying back by \(k_i\) gives the required series (\nolinkurl{resV_linSub_sum}, \nolinkurl{xiEx_theta_general}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/XiExThetaGeneral.lean:17--36,86--108,125--218,230--304}).
+
+\emph{Historical v8 proof boundary. The current treatment is on page~\pageref{r8:Z4.2.09}.} For a relation of these split Hom-lattice indicators, the corresponding finite sum of kernels with the volume and inverse-\({\rm chiFac}\) normalizations must vanish as a function of the complex argument. The result compares the moved source and target lattices with one common base pair; this is the analytic input before differentiating in the preceding argument (\nolinkurl{kerTh_relation_of_indicator}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/KernelThetaRelationOfIndicatorRelationSplit.lean:44--122}; \nolinkurl{xiEx_theta_general}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/XiExThetaGeneral.lean:149--214}).
+
+% blueprint/ch_P.tex lines 13266 through 13278; r6:Z4.2.11
+\subsection{Z4.2.11. One determinant constant and one polynomial at a positive step (v8)}\label{r6:Z4.2.11}
+\emph{The reviewed deduction and its hypotheses are on page~\pageref{r8:Z4.2.11}.}
+Fix \(1\le j<m\) and an extension \(\iota:\mathbf C\to\mathbf C_p\) of the chosen algebraic embedding. If either component set is empty, \(c_K=1\) works vacuously. Otherwise choose source and target components once. The determinant expression \({\rm cKs}\) uses the source and target basis determinants, the derivation-generator factors, signs of coordinate reversals and a power of the site scale. Each contributing norm is one. Independence of the initial component choices is an equality of the source and target basis factors, obtained from the chart basis identifications. Thus there is one \(c_K\) of norm one for this \((\iota,j)\), before the universal quantifiers over tuples and entries (\nolinkurl{cKs_unit_indep}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/StepDeterminantConstantUnitIndependent.lean:16--24,41--80}; \nolinkurl{tieDel_all_steps}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/KernelSiteFrameValuesAllStepsLtM.lean:23--41}).
+
+Fix a source representative, an entry \(x\) and a valid target tuple. The joint's sharpness condition selects \(Q\) for \(x\). Multiply the frame polynomial evaluated on \(Q\) and the class theta function by the two determinant-character factors for the respective classes to obtain \(P\). It has the prescribed extended weight. Reading it on the target chart and dividing by the prescribed determinant powers recovers the target class function. For each adelic decomposition \(d\), transport \(P\) to a polynomial \(V_d\) realizing that class function. The comparison needed at this point is
+\[
+ {\rm map}(\iota)(V_d)
+ =c_K\,{\rm DelF}_j\bigl({\rm cmp}_j(x,L)\bigr)
+                 \bigl({\rm srOf}_j(L,L')\bigr).
+\]
+The right side contains no \(d\). Choose one decomposition \(d_0\). Injectivity of coefficientwise \(\iota\) shows \(V_d=V_{d_0}\) for all \(d\); hence \emph{one} polynomial satisfies every realization required by the target reading. Applying the reading formula proves the desired equality conditional on the displayed comparison (\nolinkurl{tieDel_all_steps}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/KernelSiteFrameValuesAllStepsLtM.lean:40--94}; \nolinkurl{rdJ_eq_of_realAt}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/LatticeTupleReadingEqOfRealisingPolynomial.lean:33}; \nolinkurl{GlobalTheory.TwV.StepDel.del_of_pos}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/KernelSiteFrameValuesPositiveSteps.lean:10--12}).
+
+\emph{Historical v8 proof boundary. The current treatment is on page~\pageref{r8:Z4.2.11}.} In the displayed comparison, the frame-substituted theta coefficients must give the contraction by the moved differential with its prescribed degrees. The mixed derivative uses the target block-diagonal change and the inverse source change, and the coefficient pairing is restricted to indices selected by the degree hypothesis. The scalar left after the pairing is \(c_K(c_A s_O)\,\iota(u_S)\iota(u_T)={\rm scT}\). The mixed chain-rule and coefficient-pairing identity in these coordinates is the outstanding hand check. The unit's premises (B) are Dict, Pair, Pos and Law (\nolinkurl{delPolAt_site}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/KernelSiteContractionIdentityOperatorHalf.lean:14--27}; \nolinkurl{delPolAt_of_frames_scal}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/ContractionIdentityFramesWithOperatorScalar.lean:19--44}; \nolinkurl{tieDel_all_steps}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/KernelSiteFrameValuesAllStepsLtM.lean:65--86}).
+
+% blueprint/ch_P.tex lines 13281 through 13285; r6:Z4.2.10
+\subsection{Z4.2.10. The initial-level difference (v8)}\label{r6:Z4.2.10}
+\emph{The reviewed deduction and its hypotheses are on page~\pageref{r8:Z4.2.10}.}
+The initial step has its own quantifier: \emph{every} \(\iota\) extending the chosen algebraic embedding admits a unit constant for the comparison at \(j=0\). The tied rank formula gives \(0<m\). If there is no component at level zero or level one the comparison is vacuous; otherwise choose the components at precisely those two levels, giving \(c_K={\rm cKs}(\iota,0,a_0,a_1)\). The norm and component-independence follow from the factors in Z4.2.11. For a level-zero representative and a level-one target use their own class labels to form \(P\); the target weight is extended to rank \(N(1)\). The class reading uses the determinant powers at index zero of the divisor array. Selecting one \(V_{d_0}\) after fixing both tuples and \(x\) is legitimate because coefficient injectivity gives its realization for every decomposition. This specialization imposes no choice of \(\iota\) shared with later steps (\nolinkurl{GlobalTheory.TwV.StepZero.del_zero}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/KernelSiteFrameValuesStepZero.lean:10--13}; \nolinkurl{tieDel_all_steps}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/KernelSiteFrameValuesAllStepsLtM.lean:23--41,43--65,87--94}).
+
+\emph{Historical v8 proof boundary. The current treatment is on page~\pageref{r8:Z4.2.10}.} Even at zero the identification of the level-one transported polynomial with \(c_K\,{\rm DelF}_0({\rm cmp}_0)\,({\rm srOf}_0)\) requires the operator and coefficient-pairing identity of Z4.2.11, now for the actual initial-level frames. This is one shared proof obligation with two specializations. Dict, Pair, Pos and Law are the hypotheses (B) of \nolinkurl{del_zero} (\path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/KernelSiteFrameValuesStepZero.lean:10--13}; \nolinkurl{delPolAt_of_frames_scal}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/ContractionIdentityFramesWithOperatorScalar.lean:19--44}).
+
+% blueprint/ch_P.tex lines 13288 through 13295; r6:Z4.2.12
+\subsection{Z4.2.12. Admission on the chosen chain (v8)}\label{r6:Z4.2.12}
+\emph{The v10 continuation is on page~\pageref{r8:Z4.2.12}.}
+The premises (B) include \nolinkurl{Lt.AdmAtEnt2}, \nolinkurl{Lt.CurveEx}, a joint \(J\), a used tuple, \nolinkurl{Stab0}, and \(2r_G\le k\). The comparison map, its zero and \(K\) conditions, rationality and valuation all come from \({\rm kaAt}(X,H,h_T)\). The rank inequality supplies the standard served-site structure; Z4.2.02 supplies \(S\) for that structure and \(J\). Use exactly the chain \({\rm chainAt}(H,h_T)\) in both conclusions (\nolinkurl{GlobalTheory.TwV.site_cmpLite_siteAdm}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/JointSiteChainComparedCarriesAdmittedSystem.lean:77--89}).
+
+Apply \nolinkurl{Lt.AdmAtEnt2} to the actual prime, uniformizer, ramification, lattice data and series \(S.Y\). The dictionary, Pair, Pos and Scal yield the first-kernel obligation. The curve field, indicator functional and stabilizer law then leave a second-kernel datum. Choose an extension \(\iota\) of \(\lambda\) once. Use the reading \({\rm rdJ}(I,X.{\rm onCh},\iota)\) together with \({\rm srOf}(S.Y)\). The used-tuple and level-zero stabilizer conditions identify the stabilizer with respect to this same class map. On coefficient-field elements the prescribed comparison of embeddings follows since \({\rm embLL}(r)\) is algebraic, so \(\iota\) there equals \(\lambda\). The series compatibility uses \(S.Y\) itself. For the difference requirement split into \(j=0\) and \(0<j<m\), applying Z4.2.10 and Z4.2.11 at the fixed \(\iota\). The resulting \(c_K\) has norm one, hence is nonzero and both \(c_K\) and its inverse have norm at most one (\nolinkurl{admissible_at_each_site}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/JointSiteChainComparedCarriesAdmittedSystem.lean:29--75}).
+
+Finally the same choice \(d_G(0)=0,\ d_G(j)=v_p(D_\Gamma)\) for \(j>0\) meets the stated bound by its two defining cases (\nolinkurl{Lt.dGT}, \path{Development/AbelianVarietyTheory/Definitions/GaloisGeometry/ThetaSeriesDataHypothesesBelowMaximalLevel.lean:137}; \nolinkurl{site_cmpLite_siteAdm}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/JointSiteChainComparedCarriesAdmittedSystem.lean:83--89}).
+\emph{Historical v8 proof boundary. The current treatment is on page~\pageref{r8:Z4.2.12}.} The unresolved indicator comparison in Z4.2.09 and contraction in Z4.2.10--11 enter the first and second calls inside this admission argument, respectively. This assembly identifies their exact consumers; it gives a deduction conditional on those site inputs and the other named site properties above (\nolinkurl{admissible_at_each_site}, \path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/JointSiteChainComparedCarriesAdmittedSystem.lean:31--49,63--75}).
+
+% Parent source SHA-256: 9407740096de118f58fa36735e6b107d7712794e21469d7a6e5e749483d9dfcd
+% blueprint/ch_P_r8_split.tex lines 1 through 344; r8:Z4.2.09
+\subsection{Z4.2.09. One interpolation for a finite family of indicators}\label{r8:Z4.2.09}
+Fix the site and the hypotheses Pair, Pos, Move and Away of
+\nolinkurl{GlobalTheory.TwV.site_law_xiIn}
+(\path{SatakeParameters/KernelSiteLawAndFixedCoordinateStabiliserLaw.lean:20--48}).
+In the finite-family assertion of Section~\ref{r7:Z4.2.09}, include the
+base pair \(q_0=(N_0,N'_0)\), the pairs \(q_i=(N_i,N'_i)\) in the
+given relation, and the intermediate pairs \(p_i=(N_i,N'_0)\).
+All are admitted: the two ranks are even and the two lattice conditions
+are separate. Each agrees with \(q_0\) away from the split prime in the
+sense of \nolinkurl{GL3Theta.EqOff}. Let \(V\) be the archimedean
+matrix space, \(\Lambda_q\) the period lattice of the pair and
+\(\theta_0=B.\mathrm{thMoved}(q_0)\). We construct a single linear map
+on the indicators of the \(q_i\). Its value on \(1_{Y_{q_i,P}}\) is
+\[
+ \sqrt{\mathrm{volP}(Y_{0,P},Y_{q_i,P})}\,
+ I_{p_i,q_i}\,I_{0,p_i}\theta_0 .
+\]
+Here \(I_{i,j}\) is the positive-square-root normalized intertwiner
+from \(\Lambda_i\) to \(\Lambda_j\).
+This construction is conditional on the separate geometric input
+Z4.2.13 (p.~\pageref{r8:Z4.2.13}). Its precise assertion for every tied
+entry \(t\) is
+\[
+ t.\delta\ne0,\qquad t.B.\mathrm{LatAll},\qquad
+ t.B.\mathrm{VecP}(t.\chi),\qquad t.B.\mathrm{EqP}(t.\chi).
+\]
+These are internal deductions needed by both branches of Z4.2.09.
+The four hypotheses at the head of this section contain none of these
+deductions. The source theorem is \nolinkurl{GlobalTheory.TieBase.base_data}
+(\path{SatakeParameters/KernelEntryPeriodNeZeroAndLatticeLaws.lean:14--20}).
+In particular LatAll supplies the self-duality and semicharacter
+of each admitted period lattice as well as pairwise commensurability.
+The Hermitian form is the sum of the coordinate products divided by the
+area of the same curve lattice. The source definitions are
+\nolinkurl{Ker.Base.LatOK}, \nolinkurl{Ker.Base.LatAll}, \nolinkurl{Ker.formV}
+(\path{KernelLattices/LateralTheory.lean:43--60,185--189,210--213})
+and \nolinkurl{TaylorLogMetric.Hf}, \nolinkurl{TaylorLogMetric.admitted}
+(\path{GeneralLinearActions/IsDiscriminantTwelfthRootOfIdealLattice.lean:78--88,171--174}).
+
+\paragraph{Put all the lattices into two common halves.}
+Write \(R=\mathcal O_E\), \(I=\mathfrak cR\), and
+\(Y_q=\mathrm{AA}_0\operatorname{Hom}_{R}(N_q,N'_q)\) inside the
+rational matrix space. Write \(Y_{q,P}\) for its closure in the completed
+matrix space at \(P\). In coordinates the period lattice is
+\(\Lambda_q=\Phi(IY_q)\), where \(\Phi(y)=\delta\,\mathrm{emb}_V(y)\).
+Indeed both sides are generated additively by the images of \(c y\)
+for \(c\in\mathfrak c,\ y\in Y_q\). The embeddings agree on the curve
+field and \(\delta\ne0\) makes \(\Phi\) injective.
+See \nolinkurl{TaylorLogMetric.YYl}, \nolinkurl{TaylorLogMetric.La}
+(\path{GeneralLinearActions/IsDiscriminantTwelfthRootOfIdealLattice.lean:27--36,69--79})
+and \nolinkurl{lattice_equality_map_holds}, \nolinkurl{multiplicity_equality_holds},
+\nolinkurl{phi_injective_holds}
+(\path{AdicBoxOpenness/CentralCharacterLocalHolds.lean:12--24,66--114}).
+
+The split condition gives \(P\ne\bar P\). With \(h\) the ideal class
+number choose \(\pi\) generating \(P^h\), as \([P]^h=1\).
+For each pair choose an exponent in EqOff for each of its two
+lattices. With \(a=\pi^J\), \(b=\bar\pi^J\), a common sufficiently
+large \(J\) gives mutual inclusions under multiplication by
+\(w=(\pi\bar\pi)^J\), between the source lattices and between the target
+lattices. For Hom, two such inclusions give
+\(w^2Y_0\subseteq Y_q\) and \(w^2Y_q\subseteq Y_0\): in \(w^2 f(x)\)
+one factor puts \(x\) in the domain of \(f\) and the second puts its
+value in the required codomain. Take
+\(u=(\bar\pi/\pi)^{2J}\), so \(u\bar u=1\), and put
+\[
+ A=\Phi(IuY_0),\qquad C=\Phi(Iu^{-1}Y_0),\qquad
+ H_q=A\cap\Lambda_q,\qquad J_q=C\cap\Lambda_q .
+\]
+These two ambient halves are the lattices of
+\((N_0,uN'_0)\) and \((N_0,u^{-1}N'_0)\).
+The moves preserve the target's Hermitian self-duality by \(u\bar u=1\).
+Thus LatAll also applies on both halves.
+See \nolinkurl{EqOff}, \nolinkurl{YP} and \nolinkurl{volP}
+(\path{GlobalSchurBounds/GL3Theta.lean:696--724}),
+\nolinkurl{uniformizer_element_holds}, \nolinkurl{unipotent_pairing_holds},
+\nolinkurl{admissible_unipotent_holds}
+(\path{AdicBoxOpenness/CentralCharacterLocalHolds.lean:116--149,234--263})
+and \nolinkurl{halvesRec_of_facts}
+(\path{BoundedHalfModels/Assemble.lean:29--119}).
+
+Before applying \(\Phi\), localize these modules. At \(P\) they satisfy
+\(Iu^{-1}Y_0\subseteq IY_q\subseteq IuY_0\); at \(\bar P\) the
+inclusions reverse. This follows from the two \(w^2\)-bounds, since
+\(\bar\pi\) is a unit at \(P\) and \(\pi\) is a unit at \(\bar P\).
+Elsewhere all three modules agree. Consequently
+\(\Lambda_q=H_q+J_q\), and if \(a\in A,\ b\in C,\ a+b\in\Lambda_q\),
+then \(a,b\in\Lambda_q\).
+For the first assertion localize the proposed sum at every prime. For
+the second, at each prime one of the summands is already in the
+localized middle module and subtraction handles the other. Local
+membership implies global membership: if the class in the quotient
+were nonzero, its proper annihilator would be contained in a maximal
+ideal at which its localization is still nonzero.
+These are the first two conclusions of \nolinkurl{genHalves_of}
+(\path{AdicBoxOpenness/SqPowMulInvDivPowEqProdPow.lean:228--275}).
+
+Choose \(\gamma\in I\) of minimum \(P\)-valuation, so \(I_P=\gamma R_P\).
+The single map \(f:A\to\operatorname{Mat}(E_P)\) takes \(\Phi(a)\)
+to the image of \(\gamma^{-1}a\). The other local inclusions show
+\[
+ f^{-1}(Y_{q,P})=H_q,\qquad
+ [H_j:H_i\cap H_j]=[Y_{j,P}:Y_{i,P}\cap Y_{j,P}].
+\]
+To see the index equality, the quotient of the two indicated global
+submodules of \(A\) has support only at \(P\) and is killed by a power
+of \(P\), because the full lattices are commensurable. Localization
+and completion preserve this quotient: modulo \(P^n\), the maps from
+\(R\) to \(R_P\) and its completion are isomorphisms. The first follows
+by inverting every denominator modulo \(P^n\); the second follows from
+the definition of completion. A finite lattice over the local discrete
+valuation ring is free, hence its completion is exactly its closure in
+the completed matrix space. At \(P\), divide by \(\gamma\) to obtain
+the displayed quotient of \(Y\)-lattices. This also proves the membership
+formula: a rational vector lies in the completed lattice precisely when
+its coordinates in a local lattice basis lie in the valuation ring.
+See \nolinkurl{closure_character_holds}, \nolinkurl{low_approximation_holds}
+(\path{AdicBoxOpenness/ClosureCharacterHolds.lean:84--148}),
+\nolinkurl{gh_read_iff}, \nolinkurl{gh_relIndex}
+(\path{AdicBoxOpenness/SqPowMulInvDivPowEqProdPow.lean:138--226})
+and \nolinkurl{halvesRec_of_facts} (\path{BoundedHalfModels/Assemble.lean:151--175}).
+
+\paragraph{Construct the map on an indicator span.}
+Put \(e(a,b)=\operatorname{Im}H(a,b)\) and
+\(c(b,a)=\exp(-2\pi\mathrm i\,e(a,b))\) for \(a\in A,b\in C\).
+The operators \(W(x)=\alpha(x)U_x\) are representations on each half;
+\(W(a)W(b)=c(b,a)W(b)W(a)\). These identities follow by expanding
+the exponential of the two translations and using the semicharacter
+law on each half. The annihilator of \(H_q\) in \(C\) is \(J_q\).
+Indeed a member of the annihilator pairs integrally with \(H_q\), and
+with \(J_q\) by integrality on \(C\). It pairs integrally with their
+sum \(\Lambda_q\), hence belongs to \(\Lambda_q\) by self-duality.
+The reverse inclusion uses integrality on \(\Lambda_q\). Interchanging
+the halves gives the other annihilator identity. In particular
+\(W(H_0)\) and \(W(J_0)\) fix \(\theta_0\), which is obtained by
+rescaling the nonzero natural theta vector by the inverse of its
+nonzero character factor. See \nolinkurl{IsSelfDual},
+\nolinkurl{IsSemiChar}, \nolinkurl{fixedBy}
+(\path{QuadraticSemicharacters/IsSemiChar.lean:19--46}),
+\nolinkurl{heisenberg_unitary_holds}
+(\path{ModelIndexPairings/HeisenbergUnitaryHolds.lean:26--56}) and
+\nolinkurl{kerTh_relation_of_indicator}
+(\path{SatakeParameters/KernelThetaRelationOfIndicatorRelationSplit.lean:76--88}).
+
+On functions of \(s\in A\) use \(T_a F(s)=F(s+a)\),
+\(M_bF(s)=c(b,s)F(s)\). On the span of the functions
+\(T_aM_b1_{H_0}\) define
+\[
+ \mathcal X(T_aM_b1_{H_0})=W(a)W(b)\theta_0 .
+\]
+Here is why this is well-defined. Supports are cosets \(-a+H_0\).
+With one representative per coset the restrictions there are distinct
+characters of \(H_0\), indexed by \(b\bmod J_0\). They are linearly
+independent: in a shortest dependence among distinct characters,
+translate by an element where two differ and subtract a scalar
+multiple of the original dependence, obtaining a shorter nonzero one.
+Changing \(a\) by \(h\in H_0\) multiplies both sides by \(c(b,h)\);
+changing \(b\) by an element of \(J_0\) preserves both sides.
+Consequently there are no further relations. On the generators the
+commutation rule intertwines \(T_a,M_b\) with \(W(a),W(b)\);
+linearity gives it on their span. See \nolinkurl{eFam_li},
+\nolinkurl{xi_existence_holds}, \nolinkurl{xi_intersection_holds}
+(\path{ModelIndexPairings/FourierTransformIdentityHolds.lean:220--242,316--345,385--406})
+and \nolinkurl{gen}, \nolinkurl{IsXi}
+(\path{ModelLatticeMoves/IsBichar.lean:17--43}).
+
+For a move \(i\to j\) choose sets \(D_H,D_J\) of representatives of
+\(H_j/(H_i\cap H_j)\) and \(J_j/(J_i\cap J_j)\), of sizes \(n,m\).
+Their sums form representatives of
+\(\Lambda_j/(\Lambda_i\cap\Lambda_j)\): surjectivity follows from
+the sum decomposition, and equality modulo \(\Lambda_i\) separates
+into equality of both cosets by the second property of the halves.
+The bicharacter pairs \(J_j/(J_i\cap J_j)\) perfectly with
+\(H_i/(H_i\cap H_j)\). Its two kernels are trivial by the annihilator
+identities. Each finite abelian group has as many complex characters
+as elements (decompose into cyclic factors), so the injections
+in both directions into the two character groups force equality of
+orders. It follows that
+\[
+ \sum_{a\in D_H,\ b\in D_J}T_aM_b1_{H_i}=m\,1_{H_j},
+ \qquad
+ \mathrm{vol}_{ij}=\frac{n}{m}
+ =\mathrm{volP}(Y_{i,P},Y_{j,P}).
+\]
+Indeed at \(s+a\in H_i\) the inner character sum is zero unless
+\(s+a\in H_j\), where it is \(m\). If \(s\in H_j\) exactly one
+representative \(a\) has \(s+a\in H_i\). These are
+\nolinkurl{lattice_moves_hold}, \nolinkurl{index_duality_holds}
+(\path{ModelIndexPairings/FourierTransformIdentityHolds.lean:423--432},
+\path{ModelIndexPairings/RelIndexLeOfPairing.lean:75--129}).
+
+Starting at \(i=0\), the displayed formula places every \(1_{H_j}\)
+in the domain of \(\mathcal X\). Applying \(\mathcal X\) and using the
+semicharacter on \(\Lambda_j\) turns \(W(a)W(b)\) into \(W(a+b)\).
+The source normalization of \(I_{ij}\) divides the sum over the \(nm\)
+representatives by \(\sqrt{nm}\). Thus the same calculation, for every
+included \(i,j\), gives
+\[
+ I_{ij}\,\mathcal X(1_{H_i})
+   =\sqrt{m/n}\,\mathcal X(1_{H_j}).
+\]
+The image of \(1_{H_i}\) is fixed by \(W(H_i)\) and \(W(J_i)\) by
+intertwining and annihilation, hence by \(W(\Lambda_i)\), as required
+for independence of representatives. The relative volumes multiply
+along a triple: divide all indices by the common index at the triple
+intersection. The use of positive square roots therefore gives
+\(I_{p_i,q_i}I_{0,p_i}\theta_0
+=\mathcal X(1_{H_{q_i}})/\sqrt{\mathrm{vol}_{0,q_i}}\).
+Precomposing a local indicator with \(f\) gives \(1_{H_q}\).
+On the span of the local indicators \(F\mapsto\mathcal X(F\circ f)\)
+is the desired map. This handles every finite linear relation, including
+repeated indicators. No choice of halves must work for infinitely many
+indices: each relation is already finite. The calculations of the
+normalized move, compatibility and finite extension occur in
+\nolinkurl{MovesU_of}, \nolinkurl{MovesComposeU_of}, \nolinkurl{GenModelXi_of}
+(\path{ModelIndexPairings/MovesU.lean:100--235},
+\path{ModelIndexPairings/RelIndexLeOfPairing.lean:136--173},
+\path{ModelIndexPairings/GenModelXiOf.lean:25--63}).
+
+\paragraph{Exact interfaces for the two split-place theorems.}
+Fix arbitrary \(D\), curve ideal \(\mathfrak c\), and twelfth root
+\(\delta\) of its lattice discriminant in the sense of
+\nolinkurl{IsDiscriminantTwelfthRootOfIdealLattice}. Write
+\(T=\mathrm{tor0}(D,\mathfrak c,\delta)\), \(q=(L,L')\), and
+\(\mathrm{Th}_q=\mathrm{Th}(D,T,L,L')\). Admissibility means the two
+rank parities and self-dual lattice conditions of
+\nolinkurl{TaylorLogMetric.admitted}. The source asserts the following.
+\begin{enumerate}
+\item \nolinkurl{model_at_split_places_holds}. For every admissible
+base pair \(q_0\), split \(P\) and \(\theta\in\mathrm{Th}_{q_0}\),
+there is one complex-linear map \(X\) from \emph{all} complex-valued
+functions on \(\operatorname{Mat}_{N'\times N}(E_P)\) to functions on
+\(V\). It sends \(1_{Y_{q_0,P}}\) to \(\theta\), and for every admitted
+\(q\) satisfying EqOff at \(P\) in both coordinates,
+\[
+ X(1_{Y_{q,P}})=\sqrt{\mathrm{volP}(Y_{q_0,P},Y_{q,P})}\,
+ I_{q_0,q}\theta .
+\]
+For a fixed geometric base supplying the lattice laws above, the finite
+argument works for every such \(\theta\): it uses only invariance by
+the base lattice. Every relation uses finitely many indices and all
+proposed values are fixed before that family is chosen.
+The assignment is therefore well-defined on the span of all these
+indicators. Extending it by zero on a linear complement gives the stated
+domain, and the self-move fixes \(\theta\).
+The source proves this for arbitrary curve data by independently obtaining
+the geometric half-lattice and period-form comparisons.
+\item \nolinkurl{split_place_moves_compose}. Take three admitted pairs
+of the same ranks. For each coordinate of each adjacent pair assume
+\nolinkurl{EqOffSplit}. This means that some nonzero integral multiplier
+carries each lattice into the other and every prime dividing that
+multiplier splits; the four multipliers can differ. Then
+\(I_{2,3}I_{1,2}\theta=I_{1,3}\theta\) for every
+\(\theta\in\mathrm{Th}_{q_1}\). The calculation above proves the
+single-split-prime case needed for the fiber under the stated lattice
+laws. For the general conclusion the source takes a common split-supported
+multiple, chooses \(\pi\) coprime to \(\bar\pi\) with this multiple
+dividing \((\pi\bar\pi)^j\), and applies the simultaneous sum and
+annihilator identities to all three pairs. A complete derivation of these
+geometric comparisons from arbitrary curve data, including the
+multiple-place assertion, is open here.
+\end{enumerate}
+The definitions with their full quantifiers are \nolinkurl{modelXi},
+\nolinkurl{movesCompose} and \nolinkurl{EqOffSplit}
+(\path{GlobalSchurBounds/GL3Theta.lean:708--718,728--750}).
+The two unconditional declarations and the arbitrary-base and
+multiple-place constructions occur in
+\path{HalvesRecursion/Outright.lean:8--12},
+\path{RecursiveLatticeMembership/ModelXiNZOf.lean:29--76} and
+\path{BoundedHalfModels/MovesComposeOfParts.lean:95--183}.
+Their exact call with the tied base laws occurs in
+\nolinkurl{site_law_xiIn}
+(\path{SatakeParameters/KernelSiteLawAndFixedCoordinateStabiliserLaw.lean:26--46}).
+
+\paragraph{The other inputs to the site law.}
+\textbf{[Proved in Lean, not reproduced: unitary motion of the kernel.]}
+For a curve base with the period, character, LatAll, VecP and EqP laws,
+a positive level and a bad set containing no conjugate pair, let
+\((L,L')\) be admitted and \(\xi\) satisfy the finite-datum condition
+\(\mathrm{DatLoc}\). For every rational \(e,e'\) with
+\(ee^*=(e')(e')^*=1\), the assertion of \nolinkurl{KerMove.kerTh_move} is
+\[
+ \mathrm{kerTh}_{eL,e'L'}(x\mapsto\xi((e')^*xe))
+   =\mathrm{pull}_{e,e'}(\mathrm{kerTh}_{L,L'}(\xi)).
+\]
+Both class-character and Heisenberg factors must be transported. The
+site's scalar and frame change give the coefficient identity once this
+equality of functions is established. Its use for the source move is
+\nolinkurl{kapLawLt_frecG}
+(\path{SatakeParameters/KernelThetaAdmissibleLattices.lean:340--389},
+\path{SatakeParameters/IteratedFDerivConstSmulOfNe.lean:558--612}).
+The level and the bad set are also internal obligations:
+\nolinkurl{lev_pos_and_noConj} gives
+\(0<(t.\mathrm{rd}\,u\,\mu).\mathrm{lev}\) and
+\(Q\in\mathrm{ssRec}(t,u,\mu)\Rightarrow
+\bar Q\notin\mathrm{ssRec}(t,u,\mu)\) under the joint's pins and tie.
+Positivity follows by expanding the level as powers of positive
+ideal norms times the chosen prime. Pulling a conjugate pair through
+the seam would give one in the selected prime set. The remaining
+prime-selection exclusion is \nolinkurl{sall_noConj}
+(\path{SatakeParameters/FiniteDatumLevelPosBadPrimesNoConjugatePair.lean:19--34},
+\path{KernelLocalFactors/ExistsIntegralMulOrderElement.lean:353--365}).
+The full theta-vector equivariance behind the kernel move is assigned to
+Z4.2.13. Thus the index calculation above isolates one part of an open
+site implication.
+
+\paragraph{Return to the prescribed \(p\)-adic scalar.}
+For one away fiber keep its level and common frame fixed. Write
+\(b_i=\mathrm{chiFac}_i\). EqP and multiplicativity of the relative
+determinant identify the two-move vector with
+\(b_i^{-1}\) times the natural vector. The common translate operator
+then identifies the image of the indicator, on evaluating at any
+\(z\), with \(s_i b_i^{-1}\ker\mathrm{Th}_i(z)\), where
+\(s_i=\sqrt{\mathrm{vol}_{0i}}\).
+This uses \nolinkurl{thMoved_move_left}, \nolinkurl{thMoved_move_right}
+and \nolinkurl{kerTh_common}
+(\path{SatakeParameters/KernelThetaRelationOfIndicatorRelationSplit.lean:14--18,40--108});
+the common operator on the finite family is described on
+p.~\pageref{r7:Z4.2.09}. At the site the index formula reads
+\(s_i=p^{h(t_i-t_0)}\) with \(t_i=\mathrm{volE}_i\),
+\(h=n'_v/2\in\mathbb Z\).
+For the Away units \(u_v,u'_v\) write
+\(k_i=u_v^{\ell_i}(u'_v)^{\ell'_i}p^{-h t_i}\) and
+\(a_i=p^{\mathrm{pow}_i}\lambda(\mathrm{scal0}_i)\).
+The Away identity gives
+\(a_i/E.iK(k_i)=(a_0/E.iK(k_0))\,s_i\).
+Thus for a rational relation the coefficient identity from the
+complex kernels transfers to the \(p\)-adic reading coefficientwise:
+\(s_i\) is rational, Pair places \(b_i^{-1}\) and the Taylor
+coefficients in the domain of \(\lambda\), and the factor
+\(a_0/E.iK(k_0)\) is common. Apply the common substitution of frames
+and variable restriction. The resulting assignments
+\(1_{Y_i}\mapsto k_i^{-1}K_i\) respect every rational relation and
+so define the required functional on the span. Extend by zero on a
+linear complement. In an empty fiber the zero functional suffices.
+The source-move identity and its stabilizer restriction were deduced in
+Section~\ref{r7:Z4.2.09} conditional on the kernel move above. Together
+these deductions recover the three conclusions once the specified
+geometric and bad-place inputs are supplied. Z4.2.09 remains partial.
+The coefficientwise passage and the final three conclusions are in
+\nolinkurl{xiEx_theta_general}
+(\path{SatakeParameters/XiExThetaGeneral.lean:86--112,154--219,228--303}),
+\nolinkurl{site_law_xiIn}
+(\path{SatakeParameters/KernelSiteLawAndFixedCoordinateStabiliserLaw.lean:26--48}).
+
+% blueprint/ch_P_r8_split.tex lines 346 through 514; r8:Z4.2.12
+\subsection{Z4.2.12. Admission on the served chain}\label{r8:Z4.2.12}
+The quantifiers of \nolinkurl{GlobalTheory.TwV.site_cmpLite_siteAdm} fix
+\(\mathrm{AdmAtEnt2}\), \(\mathrm{CurveEx}\), a tied entry \(t\), word \(u\),
+tuple \(\mu\), place \(w\), comparison input \(I\), its hypothesis \(H\),
+label \(X\), and the joint \(J\) for these choices. Assume \(\mu\) is used,
+\(\mathrm{Stab0}(D)\) and \(2r_G(L.\mathrm{sc})\le D.R.k\). The conclusion is
+\(\mathrm{CmpLite}\) and \(\mathrm{SiteAdm}\) for the \emph{same}
+\(\mathrm{chainAt}(H,h_T)\). Here \(\mathrm{SiteAdm}\) packages the
+standard local structure, valuation data and an admitted system on that
+chain. Both admission and curve existence are explicit premises of this implication
+(\path{SatakeParameters/JointSiteChainComparedCarriesAdmittedSystem.lean:77--89};
+the statement and discharged-premise ledger are on p.~\pageref{r6:Z4.2.12}).
+
+First take the standard local structure
+\[\mathrm{std}=\mathrm{std\_at\_served}(D,u,w,h_g,L,h_T,G_i,G_l,J.\mathrm{tied},h_k).\]
+The first open input is the existence of \(S:J.\mathrm{At}(\mathrm{std})\)
+in Z4.2.02 (p.~\pageref{r8:Z4.2.02}). Conditional on its remaining
+adelic laws, fix the coefficient embedding and its compatible \(\lambda\);
+the supplied CurveEx, the joint's coprimality and the inert-prime
+conditions provide \(g\), its level tie and the curve \emph{at this}
+\(\lambda\). Use the adelic datum with laws at this joint and
+\(\mathrm{std}\). Its \(\Xi,\mu_T\), together with the finite class and
+stabilizer data, complete the site record. This is
+\nolinkurl{joint_at_nonempty}
+(\path{SatakeParameters/JointDataAtPAndAdelicDatumNonempty.lean:16--22}).
+From now on \(S\) is fixed. Form its joint dictionary, which supplies the
+frame coordinates used in Section~\ref{r8:Z4.2.04}. The second open
+input, the whole Pair theorem for this \(S\), includes the residual
+integral period and weighted finite-coset kernel comparisons at a general
+admitted pair specified there. Pos, Move,
+Away and the integral scalar for this \(S\) are the local statements
+in Z4.2.05--.08. The third open input, Z4.2.09 with its geometric base
+Z4.2.13, gives Law, its stabilizer restriction and the placewise
+indicator functional conditional on the sublemmas above. In particular the finite family, the
+two frames and the normalization factors all belong to this site.
+The first-kernel series data consume the dictionary, Pair, Pos and the
+integral scalar. Its input signature and all the calls at the same
+\(S\) are \nolinkurl{kernelSite_seriesData_below_lastStep}
+(\path{SatakeParameters/KernelSiteSeriesDataBelowLastStep.lean:20--34})
+and \nolinkurl{admissible_at_each_site}
+(\path{SatakeParameters/JointSiteChainComparedCarriesAdmittedSystem.lean:29--48}).
+
+Apply \(\mathrm{AdmAtEnt2}\) with this chain, \(\mathrm{std}\),
+its distinguished uniformizer, ramification data, \(S.E\), \(S.g\),
+\(S.\lambda\), \(J.\mathrm{xi0}(\mathrm{std},S.\Xi)\) and \(S.\mu_T\).
+Give it \(S.\mathrm{curve}\), the first-kernel data, the indicator
+functional and the stabilizer law. To fill its second-kernel entry,
+extend \(S.\lambda\) to \(\iota\) and take the prescribed reading
+\(\mathrm{rdJ}(I,X.\mathrm{onCh},\iota)\) and
+\(\mathrm{srOf}(S.Y)\). At \(j<m\) the common tied stabilizer comparison
+uses precisely the hypotheses that \(\mu\) is used and
+\(\mathrm{Stab0}(D)\). On a coefficient-field element, agreement with
+this reading follows since its complex image is algebraic and \(\iota\)
+extends \(S.\lambda\) there. Series compatibility uses that same \(S.Y\).
+For the differential entry take the constant of Z4.2.10 at \(j=0\)
+and of Z4.2.11 for \(0<j<m\), using the dictionary, Pair, Pos and Law. Both
+step comparisons are partial. In particular, for decompositions
+\(x=\gamma y_c\kappa\), \(x'=\gamma'y_{c'}\kappa'\), their class-kernel
+pullback requires
+\[
+ \mu_T(\det\kappa')\chi_c(\kappa)\,K(x,x')
+  =\mu_T(\det\kappa)\chi_{c'}(\kappa')\,
+     \mathrm{pull}_{\gamma,\gamma'}\mathrm{Th}(c,c')
+\]
+at each point, with the rational isometries in the indicated standard
+coordinates and \(\mu_T\) at the target level. The Lean deduction
+uses \nolinkurl{SPull.kerTh_eq_pull}, the unitary motion and the class
+identification \nolinkurl{th_eq_kerTh}, then
+\nolinkurl{pullAt_of_dict} and \nolinkurl{serAt_all}
+(\path{SatakeParameters/ThetaKernelFunctionAdelicPointsEqPullbackClassKe.lean:65--79},
+\path{SatakeParameters/ConsecutiveClassesKernelEqKernelFunctionTranspor.lean:14--20},
+\path{SatakeParameters/LatticeTupleKernelEqSmulPullbackClassKernel.lean:21--49},
+\path{SatakeParameters/ThetaSeriesSiteEqChangedFrameClassSeries.lean:11--19}).
+The independent review also leaves the four internal comparisons
+\nolinkurl{cKs_unit_indep}, \nolinkurl{unit_mul_scal_eq_scT},
+\nolinkurl{moved_forms_at_source} and \nolinkurl{transported_frame_realAt}
+open in Z4.2.10--.11. Their use at the site is
+\nolinkurl{tieDel_all_steps}
+(\path{SatakeParameters/KernelSiteFrameValuesAllStepsLtM.lean:23--94}). For this fixed \(j,\iota\) a single \(c_K\) serves all
+source representatives, inputs \(x\) and admissible target tuples.
+The tied equality \(m=t.m_2+2\) permits the zero specialization.
+In both cases the contraction multiplies the Taylor coefficient by
+\(\prod_i\alpha_i!\), exactly the denominator in the definition of
+that coefficient from the mixed derivative. The reindexing of the
+monomial is injective and preserves this product, while the weight
+condition selects the allowed degrees. See \nolinkurl{Joint.At.Del},
+\nolinkurl{KernelDifferenceAtLevel}, \nolinkurl{m_eq},
+\nolinkurl{TaylorLogMetric.taylor}, \nolinkurl{pairing_dictionary}
+(\path{GaloisGeometry/JointCmpEmbeddingY.lean:172--175},
+\path{InertKernelTheory/SecondKernelEntrywiseLastLevel.lean:46--53},
+\path{GaloisGeometry/ExistsMidLevIff.lean:418},
+\path{GeneralLinearActions/IsDiscriminantTwelfthRootOfIdealLattice.lean:115--118},
+\path{InertCoprimeLemmas/QuadraticBaseChangeGL3.lean:54--85}).
+The norm of \(c_K\) is one, hence it is nonzero and both it and its
+inverse have norm at most one. This fills the differential entry
+conditionally on Z4.2.10--.11.
+
+\paragraph{The local assembly's own inputs.}
+Two of the five steps have direct hand checks. For
+\nolinkurl{place_extends_to_iso}, regard \(\mathbb C_p\) as a field over
+\(\overline{\mathbb Q}\) by \(S.\lambda\). Its cardinality is the
+continuum: it contains \(\mathbb Q_p\), whose digit expansions already
+give that lower bound, and both algebraic closure and metric completion
+preserve the upper bound (polynomial roots and Cauchy sequences,
+respectively). Over a countable field an uncountable algebraically
+closed field has the same cardinality as a transcendence basis:
+rational functions use finitely many variables and algebraic extensions
+preserve this infinite cardinality. Match bases of \(\mathbb C\) and
+\(\mathbb C_p\) over \(\overline{\mathbb Q}\), then extend the rational
+function field isomorphism to their algebraic closures. This gives a
+field isomorphism extending the specified embedding. For
+\nolinkurl{series_compatibility_of} expand
+\(\mathrm{srOf}=(e_S/e_T)\,\mathrm{ThF}\). Each local factor of
+\(e_S,e_T\) is an integer power of the image of the nonzero uniformizer
+\(p\) under field inclusions, so multiplying by \((e_S/e_T)^{-1}\)
+recovers \(\mathrm{ThF}\). See \nolinkurl{exists_ringEquiv_extending},
+\nolinkurl{eFac_ne_zero}, \nolinkurl{series_compatibility_of}
+(\path{SatakeParameters/PlaceExtendsToIso.lean:7--8},
+\path{JetHarmonics/MkLeContinuumOfDenseRange.lean:10--26,50--80},
+\path{InertCoprimeLemmas/SecondKernelSeries.lean:12--28}).
+
+\textbf{[Proved in Lean, not reproduced: three remaining local
+comparisons.]}
+\begin{enumerate}
+\item On every such site, Dict, Pair, Pos and Scal imply
+\(S.\mathrm{K1}\), the below-maximal-level first-kernel hypotheses of
+\nolinkurl{Joint.At.K1}. Projection gives the lattice admission,
+position and integral scalar fields. The first-kernel construction
+still needs integrality of the joint datum outside the specified bad
+set, unit frame determinants, and the exact identification of the two
+completed lattices by the orthonormal bases.
+See \nolinkurl{kernelSite_seriesData_below_lastStep}
+(\path{GaloisGeometry/JointCmpEmbeddingY.lean:159--165},
+\path{SatakeParameters/KernelSiteSeriesDataBelowLastStep.lean:20--34}).
+\item With the comparison data, a used \(\mu\), Stab0 and \(j\le m\),
+every representative \(L\in S.Y.\mathrm{Rep}(j)\) has class stabilizer
+of cardinality \(X_{\rm sys}.\mathrm{stab}(j,L)\), where
+\(X_{\rm sys}=\mathrm{sysS}(H,X,\mathrm{std})\).
+The class map is that of \(\mathrm{kaAtAny}\) on this chain.
+Transporting the class map in the assembly is explicit; identifying
+the actual stabilizers of all these representatives is the remaining
+group comparison. See \nolinkurl{tieStab_kaAtAny},
+\nolinkurl{stabilizer_any_level}
+(\path{ChartedClasses/TieStabKaAtAny.lean:15--19},
+\path{InertCoprimeLemmas/SecondKernelStabilizers.lean:46--50},
+\path{InertKernelTheory/SecondKernelEntrywiseLastLevel.lean:33--40}).
+\item With the same class and chain data, block rationality, and
+\(\iota\) agreeing on the coefficient embedding, for every target
+vector \(y\), component \(c'\) and valid tuple \(L'\), the transported
+coefficients of \(\mathrm{cmp}_{j+1}(y)(c',L')\) equal
+\(\mathrm{rdJ}_j(c',L')(\mathrm{emb}_{j+1} y)\).
+The agreement on coefficients above accounts for passage to \(\iota\);
+identifying the selected complex realizing polynomial with the
+comparison polynomial uses the point-existence and evaluation-uniqueness
+argument inside \nolinkurl{rdS_cmpJ}. The source then transports this
+identity along the chain in \nolinkurl{series_reading_entries}
+(\path{InertCoprimeLemmas/SecondKernelProjection.lean:73--110,143--166}).
+\end{enumerate}
+
+Finally the five comparison components are the five projections of
+\(\mathrm{kaAt}(X,H,h_T)\). Pair them with the just-constructed system.
+The required valuation bound uses \(d_\Gamma(0)=0\) and
+\(d_\Gamma(j)=v_p(D_\Gamma)\) for \(j>0\). This gives precisely the
+two conclusions on the fixed chain once the inherited comparisons
+and the three local comparisons above are provided. The assembly
+records their common witnesses; Z4.2.12 remains partial. See
+\nolinkurl{admissible_at_each_site}, \nolinkurl{site_cmpLite_siteAdm}
+(\path{SatakeParameters/JointSiteChainComparedCarriesAdmittedSystem.lean:49--89})
+and the two differential specializations on p.~\pageref{r7:z42-specialize}.
+
+% Parent source SHA-256: 22dc662d037a6a97652e1e87c8d25d72e503e1025bfc9be56d0e9fd7f46e9808
+% blueprint/ch_P_r8_kernel_review.tex lines 22 through 27; r8:Z4.2.10
+\paragraph{Z4.2.10 (partial).}\phantomsection\label{r8:Z4.2.10}\label{r8:review:Z4.2.10}
+Under $J.\mathrm{Dict}(\mathrm{std}),S.\mathrm{Pair},S.\mathrm{Pos},S.\mathrm{Law}$
+the root asserts $S.\mathrm{Del}(0)$.
+The tied rank formula gives $0<m$ and supplies the initial specialization
+of \nolinkurl{tieDel_all_steps}.
+\path{KernelSiteFrameValuesStepZero.lean:10--13}.
+
+% blueprint/ch_P_r8_kernel_review.tex lines 29 through 47; r8:Z4.2.11
+\paragraph{Z4.2.11 (partial).}\phantomsection\label{r8:Z4.2.11}\label{r8:review:Z4.2.11}
+Under the same four hypotheses, every $j$ with $1\le j<m$ satisfies
+$S.\mathrm{Del}(j)$. Apply that same all-step theorem to $j<m$.
+The underlying source realization uses its successor branch. The
+constant may depend on $S,j,\iota$.
+\path{KernelSiteFrameValuesPositiveSteps.lean:10--12};
+\path{KernelSiteFrameValuesAllStepsLtM.lean:23--94}.
+Bare Lean filenames in this section are in
+\path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/}.
+
+\emph{[Hypothesis, discharged at \nolinkurl{admissible_at_each_site}.]}
+For the chosen site, the dictionary comes from Z4.2.03, Pair from Z4.2.04,
+Pos from Z4.2.05, and Law from Z4.2.09. Site existence for the served
+standard system enters through Z4.2.02 when .12 chooses $S$.
+The four propositions are premises at .10 and .11. The admission proof
+constructs them at the same $S$, splits $j=0$ or $0<j$, then applies
+the conclusion to its chosen extension $\iota$. See
+\path{JointSiteChainComparedCarriesAdmittedSystem.lean:29--49,61--89}.
+The following five obligations occur \emph{inside} the comparison proof.
+

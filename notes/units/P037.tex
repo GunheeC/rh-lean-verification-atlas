@@ -1,0 +1,48 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit P037. Local manuscript v3, item 7.14, heading on printed PDF p. 81.
+% PositivityTheory.QuaternionShaBounds.sSha
+% paper2/inputs_one.tex:623–658. Verbatim excerpt; SHA-256 f5b249c9dd5bdc930965ebf6ef94f1428daa1ad2bc783610082e69f22f1583bf.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+\noindent\nolinkurl{PositivityTheory.QuaternionShaBounds.ClInj_holds} --- in-repo constant (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/RingEquivalences/OrderOfOneAddPrimePowZmodPrimePow.lean:265--330}); not compared.\par
+% End of atlas edition annotation.
+
+\begin{theorem}[From a uniform layer bound to the localization kernel]\label{pn:P037}
+Let \(L\) be totally complex and \(\ell\) prime. Suppose \(\ell^c\)
+is the largest \(\ell\)-power order of a root of unity in \(L\),
+\(c\ge1\) and \(c\ge2\) at \(\ell=2\). Fix \(E\ge1\). If for every
+allowed layer \(F/L\) the preceding character group, defined with
+\(a=(1+\ell^c)^E\), is finite of order at most \(B\), then there
+exists \(s\in\mathbb N\) such that
+\[
+ \operatorname{shaInv}(L,\ell,E)=s,\qquad \ell^s\le B .
+\]
+\end{theorem}\nodestatus{P037}
+\begin{proof}
+Restriction to the infinite layer is injective by the comparison in
+Blueprint Z2.K1~\bploc{lem:P-r3-k1}. Represent a class by a cocycle \(z\). Its image
+is finite. At each of the finitely many places above \(\ell\)
+choose \(b_w\in A_E\) giving its local coboundary on the decomposition
+group. Choose \(\nu\) such that \(\ell^\nu\) kills these elements
+and the image of \(z\). Over \(F=L(\mu_{\ell^\nu})\) its restriction
+is a homomorphism and is zero on the chosen local groups and their
+conjugates. The unramified quotient imposes the remaining inertia
+conditions. By unramified Artin reciprocity this character factors
+through the ordinary class group; primes over \(\ell\) map to zero.
+Under the identification of \(A_E[\ell^\nu]\) with \(\mathbb Z/\ell^\nu\),
+the action of \(\gamma^{-1}\) gives the eigenvalue \(a\). Evaluations
+on prime ideals determine the resulting character.
+
+For any finite set of original classes one can choose a common
+\(\nu\), taking the maximum of their thresholds. Distinct restrictions
+at the infinite layer must then have distinct finite-level characters.
+Every such set has size at most \(B\), so the localization kernel is
+finite of order at most \(B\). A finite \(\mathbb Z_\ell\)-module of
+length \(s\) has order \(\ell^s\). The twist, the common-level
+argument, and this length comparison are the additions to reciprocity
+in Blueprint Z2.K6~\bploc{lem:P-r3-k6}. See J.~S.~Milne, \emph{Class Field Theory},
+Theorem~0.4 and Chapter~V. \cite{r21-cft}
+\end{proof}

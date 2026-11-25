@@ -1,0 +1,73 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "P016",
+  "edition_sha256": "bef543bc204d980fd1073d80397a9506090c633a475af7277ac20cb14b191e19",
+  "note_sha256": "6b7a1b48444d892d812c2b7764b50486b73f3ec52639126401393e73d29f475d",
+  "statement_sha256": "0372ced4fe4294355d9ffba7f941420ad5f4e8db09a4c0f3b32dd02ed7d02139",
+  "sources": [
+    {
+      "path": "notes/units/P016.tex",
+      "sha256": "6b7a1b48444d892d812c2b7764b50486b73f3ec52639126401393e73d29f475d"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The second clause of the eventual request supplies its Selmer bound, and the first gives the level explicit-formula property with constant four.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: host request with lambda-windows"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Top.zeroFreeAll_of_topG",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/ZeroFreeAllOfTopG.lean",
+          "line0": 26,
+          "line1": 34
+        }
+      ],
+      "source": "notes/units/P016.tex",
+      "anchor": "Every family in",
+      "source_lines": [
+        7,
+        14
+      ],
+      "claim_sha256": "2dbce69b190461eee7a103623c8e0cb5d88f23ca0ce3c88d8b56e42625c98afb",
+      "passage_sha256": "9c69e789bf5d0a064c49fd75753fd0714c64a6548d6ad5ad8f5a30887a2aa345",
+      "sha256": "40fac1122a323b65422014137be76d3839030fe18a7d7d8923c9fc2c5505d55b",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The connectedness witnesses provide windows and eventual tiedness on that level, giving the hypotheses of the zero-free criterion for the chosen primitive character.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "P017",
+        "P018",
+        "P019"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Top.zeroFreeAll_of_topG",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/ZeroFreeAllOfTopG.lean",
+          "line0": 26,
+          "line1": 34
+        }
+      ],
+      "source": "notes/units/P016.tex",
+      "anchor": "Now \\code{TopG}",
+      "source_lines": [
+        7,
+        14
+      ],
+      "claim_sha256": "d6b713a245c98b3caf337c7c6bd40a8ed13f579da677871eb68d9c988a9cdac7",
+      "passage_sha256": "9c69e789bf5d0a064c49fd75753fd0714c64a6548d6ad5ad8f5a30887a2aa345",
+      "sha256": "ed0056cd65a13eacf7dda8fe3c4d6608854323de89c12488d6ca5b0c872fb95b",
+      "ai_review": []
+    }
+  ],
+  "history": []
+}

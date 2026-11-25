@@ -1,0 +1,33 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit W02. Local manuscript v3, item 5.38, heading on printed PDF p. 49.
+% UpperTheory.BaseChangeIdentities.baseChangeN
+% paper2/split_p013.tex:25–45. Verbatim excerpt; SHA-256 775f3cd7cfe527b3b1d6c35612543fda6837c02e2150f3c3dcf0f6f7e110726a.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+\noindent\nolinkurl{UpperTheory.BaseChangeIdentities.baseChangeN} --- in-repo constant (\path{Development/AutomorphicArithmetic/Foundations/BaseChangeIdentities/DefiniteNHolds.lean:5--6}); not compared.\par
+% End of atlas edition annotation.
+
+\begin{formalstatement}[Isobaric base change for the definite unitary group]\label{sub:W02}
+Let $E/E^+$ be CM, unramified at every finite prime, $n\ge1$, and $\pi$
+an automorphic representation of the specified definite unitary group.
+There is a partition $n=\sum_i N_i$ with positive parts and a discrete
+$\mathrm{GL}_{N_i}(\mathbb A_E)$ constituent $V_i$ for each part.
+Each is an ascending constituent built from a normalized unitary
+conjugate-self-dual cusp form. There are local components $\sigma_{iw}$
+and infinitesimal characters $m_{i\tau}$ of $V_i$. At each finite $w$
+there is an irreducible subquotient $P_w$ of the local induced product
+of the $\sigma_{iw}$. It is spherical when $\pi$ is unramified there,
+has the base-changed Satake multiset for each inert unramified datum,
+and realizes the unitary local component at split places. At each
+embedding $\tau$, the sum of the $m_{i\tau}$ equals the infinitesimal
+character attached to each weight of $\pi$ at $\tau$.
+\end{formalstatement}\subnode{W02}
+Labesse obtains a weak isobaric base change with local compatibility
+under his discrete-series and packet hypothesis~$(*)$. Identifying those
+hypotheses, the model and the local normalizations is necessary to
+substitute that result here. The Lean construction uses the finite
+candidate lists in W16. Labesse assumes $[E^+:\mathbb Q]\ge2$ in \S5. Lean quantifies over all CM fields but requires $E/E^+$ unramified at every finite prime. When $E^+=\mathbb Q$, the imaginary quadratic field $E$ has a ramified finite prime, so this case has no admissible input (\nolinkurl{NumberField.exists_not_isUnramifiedAt_int}, \path{Mathlib/NumberTheory/NumberField/ExistsRamified.lean:41--48}).
+\href{https://webusers.imj-prg.fr/~michael.harris/CBCM.pdf}{Labesse, Corollary 5.3.}~\cite{r21-labesse}

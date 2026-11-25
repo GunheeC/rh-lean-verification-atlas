@@ -1,0 +1,88 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D024",
+  "title": "Unfolding a twisted theta integral",
+  "track": {
+    "primary": "theta",
+    "secondary": []
+  },
+  "statement": "The local theta inputs, smooth cuspidal lifts and existence of the row sums give the row unfolding identity at every admitted large-scale datum.\n\\[\n\\mathrm{ThetaLocalInputs}\\wedge\\mathrm{LiftsCuspidal}\\wedge\\mathrm{SumOKK}\\ \\Longrightarrow\\ \\mathrm{StepUnfold}.\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume the local theta inputs and cuspidality of the smooth lifts.",
+    "The row sums must exist for the admitted datum."
+  ],
+  "lean": [
+    {
+      "name": "GlobalTheory.T.twisted_theta_integral_unfolds",
+      "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/TwistedThetaIntegralUnfolding.lean",
+      "line0": 37,
+      "line1": 38,
+      "sha256": "1bf0174c172cb71f7496e38e3571060a1fc1879b1d723235542d77593f8b4d5a",
+      "dominated": 25645,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/D024_round4.md",
+      "section": "D024 · Unfolding a twisted theta integral",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "G.28 (decomp:D024)",
+      "pages": [
+        163,
+        163
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D024.tex",
+      "section": "decomp:D024",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": 2,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "D024",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "unfolding-a-twisted-theta-integral",
+  "aliases": [
+    "twisted_theta_integral_unfolds",
+    "D024 Unfolding a twisted theta integral"
+  ],
+  "background": [
+    "Theta lifts",
+    "Unfolding cuspidal integrals"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.28 (decomp:D024)",
+    "pages": [
+      163,
+      163
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "review_status": "pending_review",
+  "summary": "For a smooth cuspidal lift with the local theta inputs and existing row sums, the last-row integral agrees with its unfolded expression. The calculation must use the same large-depth cells, measures and test values throughout."
+}

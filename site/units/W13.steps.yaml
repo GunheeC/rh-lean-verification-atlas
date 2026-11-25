@@ -1,0 +1,211 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "W13",
+  "edition_sha256": "bf854ba8f216211df57401165e39ee2825dde3e4a8a1c40eddbcd266a2a578f2",
+  "note_sha256": "b1a03b88749b225a866120f0472b08b4562feda852178ea3a2f2a5ad5370e7f0",
+  "statement_sha256": "e4cf70a4822c76a1b502559b64eb7288f82fdf3b67acc864a13a7f5524b78801",
+  "sources": [
+    {
+      "path": "notes/units/W13_round3.md",
+      "sha256": "b1a03b88749b225a866120f0472b08b4562feda852178ea3a2f2a5ad5370e7f0"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The nonexceptional odd primes are bounded by the case estimates on the fixed host.",
+      "kind": "case-split",
+      "uses": [
+        "W08",
+        "W09"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.HV.sumOut",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/SumOut.lean",
+          "line0": 50,
+          "line1": 72
+        }
+      ],
+      "source": "notes/units/W13_round3.md",
+      "anchor": "Fix a primitive $\\chi$ and write $B_\\chi$ for the finite exceptional prime set. First consider odd primes outside it. For each exponent $0<e<t$, ",
+      "source_lines": [
+        9,
+        9
+      ],
+      "claim_sha256": "777b03b83e033a79c68d46395595b9f6da04e9dc9e1ff55f12d4fc04f9d9f78a",
+      "passage_sha256": "f00e36e9cf20effd740add67b7293a1fa21ed65452c5702f98cf3c201fc87b41",
+      "sha256": "3936b0a3520ce8fcd801d58aacdad0ae2d36b2415d9d1868b0b4c2aa23c90b94",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The remaining odd-prime ranges use their designated counts at the exceptional primes.",
+      "kind": "inequality",
+      "uses": [
+        "W10",
+        "input: exceptional character counts"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.HV.pointHV_of_counts",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/JointWinOfCounts.lean",
+          "line0": 16,
+          "line1": 18
+        }
+      ],
+      "source": "notes/units/W13_round3.md",
+      "anchor": "At each exceptional odd prime there are the II, IV and V ranges. The input for V in [W10](../../units/W10.md) covers the indicated small-rank ran",
+      "source_lines": [
+        11,
+        11
+      ],
+      "claim_sha256": "bbd61fcdac304bcb8ff214f7ee6ce43fffac406b543a2ffa10d27e95b80b7b65",
+      "passage_sha256": "a1e2667272396e841c99dd152ac2cf19984f6589cffc495eaca79bf58254397d",
+      "sha256": "76c63aa79d4c220e63fb9df5458dbc7485c270571f75279a7595d41714805783",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The plus-part estimate is applied on the same interval returned by the other window conditions.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "S2",
+        "input: simultaneous-layer window"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.HV.jointWin_of_counts",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/JointWinOfCounts.lean",
+          "line0": 25,
+          "line1": 28
+        }
+      ],
+      "source": "notes/units/W13_round3.md",
+      "anchor": "To select a common witness, choose the larger of the thresholds in the two window assertions and a common prime threshold dominating the characte",
+      "source_lines": [
+        17,
+        17
+      ],
+      "claim_sha256": "f3cd7dd3327d3a15ec121b22995910f6548236c734606fda651267093a04fa2c",
+      "passage_sha256": "b023e38f6c3d8c2b92fe0233c70a55695adbf1a85b8750f2efa496b3198931b5",
+      "sha256": "23262cb189c312a9878842d0749e4cf6aad75935ea5e3abc30b6a96d3b26d97b",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The two-adic part contributes its budget multiplied by log 2 while the odd sign budgets add.",
+      "kind": "computation",
+      "uses": [
+        "S3",
+        "input: twist-sign splitting"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.vvle_of_parts",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/LengthEqAddEigen.lean",
+          "line0": 127,
+          "line1": 189
+        }
+      ],
+      "source": "notes/units/W13_round3.md",
+      "anchor": "For an eligible CM field $E$, the two-adic contribution to a finite prime set is bounded by $(\\log 2)B(x)$. At odd primes the finite plus and min",
+      "source_lines": [
+        23,
+        27
+      ],
+      "claim_sha256": "873eed00bc7291b59a6213030bf1fea6d79a781493662c79d0f251fe9299b12f",
+      "passage_sha256": "f2bb600f8b2a52d353d2c57d9528ab9321113bfa418c2d6b9fdc4e86b2e4fc1d",
+      "sha256": "54d2ac7808ff3d55838a7bbc1308e2050772b7fa65e75d4dc9a1fb607787356c",
+      "ai_review": []
+    },
+    {
+      "id": "S5",
+      "status": "active",
+      "claim": "After one increase of the outer threshold the combined budget fits the exponential bound.",
+      "kind": "inequality",
+      "uses": [
+        "S4"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.vwinAt_of_joint",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/CMFieldExponentialBounds/AdmissibleOfPageN.lean",
+          "line0": 104,
+          "line1": 129
+        }
+      ],
+      "source": "notes/units/W13_round3.md",
+      "anchor": "After taking logarithms its upper bound is $O(1+x^{4\\varepsilon/5})$, which is $o(x^\\varepsilon)$. A single increase of the scale threshold gives",
+      "source_lines": [
+        23,
+        27
+      ],
+      "claim_sha256": "5a700223b59b658d9e42c755a625fa4c3c461b7d80ac78519df3d061b533ce6b",
+      "passage_sha256": "f2bb600f8b2a52d353d2c57d9528ab9321113bfa418c2d6b9fdc4e86b2e4fc1d",
+      "sha256": "8cbde06e1281d4d29416e83df994d638b554eecb0d0952e24c4c7a09e8743b82",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "c6e9406cb69e3ebb978bccd7c3fe2c7351fb3e11caf1747054da843382fec6dd",
+      "sources": [
+        {
+          "path": "notes/units/W13_round3.md",
+          "sha256": "94d2936c305f9f5b95d8647e57605ac993425e4dbd16de3c064dfca0c2139058"
+        }
+      ],
+      "steps": {
+        "S1": "3936b0a3520ce8fcd801d58aacdad0ae2d36b2415d9d1868b0b4c2aa23c90b94",
+        "S2": "76c63aa79d4c220e63fb9df5458dbc7485c270571f75279a7595d41714805783",
+        "S3": "23262cb189c312a9878842d0749e4cf6aad75935ea5e3abc30b6a96d3b26d97b",
+        "S4": "54d2ac7808ff3d55838a7bbc1308e2050772b7fa65e75d4dc9a1fb607787356c",
+        "S5": "71b7dc2b6e818fbf2331f998019a7662086ad714c137d2f48b25957f4cc77a6b"
+      },
+      "step_texts": {
+        "S1": "The nonexceptional odd primes are bounded by the case estimates on the fixed host.",
+        "S2": "The remaining odd-prime ranges use their designated counts at the exceptional primes.",
+        "S3": "The plus-part estimate is applied on the same interval returned by the other window conditions.",
+        "S4": "The two-adic part contributes its budget multiplied by log 2 while the odd sign budgets add.",
+        "S5": "After one increase of the outer threshold the combined budget fits the exponential bound."
+      }
+    },
+    {
+      "edition_sha256": "1725b74eb1030310c412011867641afcb7c6fb9208914013e76e480bd514c25d",
+      "sources": [
+        {
+          "path": "notes/units/W13_round3.md",
+          "sha256": "94d2936c305f9f5b95d8647e57605ac993425e4dbd16de3c064dfca0c2139058"
+        }
+      ],
+      "statement_sha256": "e4cf70a4822c76a1b502559b64eb7288f82fdf3b67acc864a13a7f5524b78801",
+      "steps": {
+        "S1": "3936b0a3520ce8fcd801d58aacdad0ae2d36b2415d9d1868b0b4c2aa23c90b94",
+        "S2": "76c63aa79d4c220e63fb9df5458dbc7485c270571f75279a7595d41714805783",
+        "S3": "23262cb189c312a9878842d0749e4cf6aad75935ea5e3abc30b6a96d3b26d97b",
+        "S4": "54d2ac7808ff3d55838a7bbc1308e2050772b7fa65e75d4dc9a1fb607787356c",
+        "S5": "8cbde06e1281d4d29416e83df994d638b554eecb0d0952e24c4c7a09e8743b82"
+      },
+      "step_texts": {
+        "S1": "The nonexceptional odd primes are bounded by the case estimates on the fixed host.",
+        "S2": "The remaining odd-prime ranges use their designated counts at the exceptional primes.",
+        "S3": "The plus-part estimate is applied on the same interval returned by the other window conditions.",
+        "S4": "The two-adic part contributes its budget multiplied by log 2 while the odd sign budgets add.",
+        "S5": "After one increase of the outer threshold the combined budget fits the exponential bound."
+      },
+      "step_passages": {
+        "S1": "f00e36e9cf20effd740add67b7293a1fa21ed65452c5702f98cf3c201fc87b41",
+        "S2": "a1e2667272396e841c99dd152ac2cf19984f6589cffc495eaca79bf58254397d",
+        "S3": "b023e38f6c3d8c2b92fe0233c70a55695adbf1a85b8750f2efa496b3198931b5",
+        "S4": "f2bb600f8b2a52d353d2c57d9528ab9321113bfa418c2d6b9fdc4e86b2e4fc1d",
+        "S5": "f2bb600f8b2a52d353d2c57d9528ab9321113bfa418c2d6b9fdc4e86b2e4fc1d"
+      }
+    }
+  ]
+}

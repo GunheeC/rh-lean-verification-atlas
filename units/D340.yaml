@@ -1,0 +1,79 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D340",
+  "title": "Comparison of the period Gram matrices",
+  "track": {
+    "primary": "arakelov",
+    "secondary": [
+      "theta"
+    ]
+  },
+  "statement": "The selected period Gram expression is bounded by the displayed exponential of the sum of boundary logarithms on the polydisc.\n\\[\nc I\\preceq G(t)^{-1}\\preceq C L(t)I,\\qquad \\|\\mathrm d G_{pq}(t)\\|\\le C e^{L(t)/2},\\qquad L(t)=\\exp(1)+\\sum_{i<a}\\log(1/\\lvert t_i\\rvert^2).\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Take log-period data and sections differentiable on the unit ball, linearly independent at the origin.",
+    "The chart radius satisfies $0<\\rho\\le1$ and the permuted vanishing boundary coordinates obey the prescribed condition."
+  ],
+  "lean": [
+    {
+      "name": "GlobalTheory.T.period_gram_comparison_bound",
+      "file": "Development/AutomorphicSpectrum/Proofs/GeometryProofs/PeriodGramComparisonBoundStatement.lean",
+      "line0": 9,
+      "line1": 10,
+      "sha256": "9a17aca2760f85f2905b78c6a9de92cd82e2143611c23139f57ccbc170a91989",
+      "dominated": 1382,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "G.353 (decomp:D340)",
+      "pages": [
+        244,
+        244
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D340.tex",
+      "section": "decomp:D340",
+      "pages": []
+    }
+  ],
+  "status": "Statement only",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [],
+  "paper_id": "D340",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "comparison-of-the-period-gram-matrices",
+  "aliases": [
+    "period_gram_comparison_bound",
+    "D340 Comparison of the period Gram matrices"
+  ],
+  "background": [
+    "Gram matrices",
+    "Boundary growth of Hodge metrics"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.353 (decomp:D340)",
+    "pages": [
+      244,
+      244
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {}
+}

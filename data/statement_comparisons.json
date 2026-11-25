@@ -1,0 +1,214 @@
+{
+  "source_commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "records": [
+    {
+      "unit": "T01",
+      "statement_sha256": "ac9af36287da655795eb893112af67bd4cba789ee50eec7e8f5e1f87cb538506",
+      "declaration": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+      "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+      "line0": 69,
+      "line1": 73,
+      "lean_sha256": "a24733b92afe929a3bce10446a1e6c1f7cda414ca65fce7d1e44ac00fd8518d7",
+      "support": [
+        {
+          "name": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+          "line0": 69,
+          "line1": 73,
+          "sha256": "a24733b92afe929a3bce10446a1e6c1f7cda414ca65fce7d1e44ac00fd8518d7"
+        },
+        {
+          "name": "UpperTheory.Zero.LLC.RecTExists",
+          "file": "Development/AutomorphicArithmetic/Foundations/LocalLanglands/IsRecTOfIsRec.lean",
+          "line0": 78,
+          "line1": 80,
+          "sha256": "770ee84cef1f7e304ecddca20818f293cbfa15cd26aa74a127dcefec54481c55"
+        },
+        {
+          "name": "UpperTheory.EveryCharacter",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/EveryCharacter.lean",
+          "line0": 13,
+          "line1": 14,
+          "sha256": "19b590d4f118e2b3a8dfc4cddce4d8be959b352780f70bcb530728021a247a3c"
+        },
+        {
+          "name": "UpperTheory.Top.VWin",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean",
+          "line0": 49,
+          "line1": 49,
+          "sha256": "84c157849fbf30a25382ffcc055f63d04544cc5c2e38936e0b220d9e7c661bb8"
+        },
+        {
+          "name": "PositivityTheory.ThKR.theoremK_head2",
+          "file": "Development/WeilBound/ThetaLifts/Reductions/FiniteClosure/TheoremKOfMod.lean",
+          "line0": 26,
+          "line1": 27,
+          "sha256": "85d76e9d59ffa0b7c45c1dae9bde68d8979615f47da86fbe108c068502267291"
+        }
+      ],
+      "original_review": "reviews/R21_review.md",
+      "published_review_lines": [
+        141,
+        141
+      ],
+      "result": "statement compared",
+      "scope": "The two records, theta agreement, local matching, covolume condition, proof of placewise existence and 401 window are the seven binders. EveryCharacter has positive modulus and the principal-character/pole exception in the stated open half-plane. The two theta predicates are the paired conclusions of theoremK_head2."
+    },
+    {
+      "unit": "T02",
+      "statement_sha256": "c478c49c39872d9b43e1a508b0aea25825c14a27da9f3365ba09c0674eca59d4",
+      "declaration": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+      "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+      "line0": 44,
+      "line1": 68,
+      "lean_sha256": "7c64a85613593761729e25e8e59316e93e4566b0495623843333ac8a5102d27e",
+      "support": [
+        {
+          "name": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+          "line0": 44,
+          "line1": 68,
+          "sha256": "7c64a85613593761729e25e8e59316e93e4566b0495623843333ac8a5102d27e"
+        },
+        {
+          "name": "UpperTheory.Zero.LLC.RecTExists",
+          "file": "Development/AutomorphicArithmetic/Foundations/LocalLanglands/IsRecTOfIsRec.lean",
+          "line0": 78,
+          "line1": 80,
+          "sha256": "770ee84cef1f7e304ecddca20818f293cbfa15cd26aa74a127dcefec54481c55"
+        },
+        {
+          "name": "GlobalTheory.Fc.HypsAlt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/Hyps.lean",
+          "line0": 22,
+          "line1": 90,
+          "sha256": "a06d22400ea580ca4c23cce1498fc880d05096b95425bb66ca0507d7c014026a"
+        },
+        {
+          "name": "GlobalTheory.Fc.S0.NL",
+          "file": "Development/AbelianVarietyTheory/Definitions/GlobalTwisting/GeometricWeakTiesOfStrong.lean",
+          "line0": 36,
+          "line1": 36,
+          "sha256": "b62bfc9f4df48277ddf76f1ab066bdc7ec716b1d24adf38ba4b501680954dc11"
+        }
+      ],
+      "original_review": "reviews/R21_review.md",
+      "published_review_lines": [
+        142,
+        142
+      ],
+      "result": "statement compared",
+      "scope": "An AI comparison of the current card with the five head inputs, the existence-proof binder, the linked bound for every real parameter and the single nonempty witness. The record fields, NL and the common maximum were read in their definitions or the displayed term. The comparison gives no verdict on a proof or a published theorem."
+    },
+    {
+      "unit": "T03",
+      "statement_sha256": "3db11f1768a70afadd7034591d7a8d87d6e712b99139df988de7c0b6e3ca6f41",
+      "declaration": "GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt",
+      "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/HypothesesNonemptyOfUnramifiedExponents.lean",
+      "line0": 41,
+      "line1": 61,
+      "lean_sha256": "0b7fae1cbdd2af84cebb033b7477a948407336a5ad88459ac7e8f20ca89535f2",
+      "support": [
+        {
+          "name": "GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/HypothesesNonemptyOfUnramifiedExponents.lean",
+          "line0": 41,
+          "line1": 61,
+          "sha256": "0b7fae1cbdd2af84cebb033b7477a948407336a5ad88459ac7e8f20ca89535f2"
+        },
+        {
+          "name": "UpperTheory.Zero.LLC.RecTExists",
+          "file": "Development/AutomorphicArithmetic/Foundations/LocalLanglands/IsRecTOfIsRec.lean",
+          "line0": 78,
+          "line1": 80,
+          "sha256": "770ee84cef1f7e304ecddca20818f293cbfa15cd26aa74a127dcefec54481c55"
+        },
+        {
+          "name": "GlobalTheory.Fc.S0.RowRat",
+          "file": "Development/AbelianVarietyTheory/Definitions/GlobalTwisting/GeometricWeakTiesOfStrong.lean",
+          "line0": 18,
+          "line1": 19,
+          "sha256": "7c319be6d16906974e895d44325680d1f528f695ee8efd962aeb774a5a7e1285"
+        },
+        {
+          "name": "GlobalTheory.Fc.S0.FunctionalCondition",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/GeometricWeakTies.lean",
+          "line0": 34,
+          "line1": 35,
+          "sha256": "a45169342bce6726a47eae7df08ead5dbdd78891d323a29756c3615fde43d6e0"
+        }
+      ],
+      "original_review": "reviews/R21_review.md",
+      "published_review_lines": [
+        143,
+        143
+      ],
+      "result": "statement compared",
+      "scope": "The head fixes P, RowRat, a proof of RecTExists, a real dependence parameter and a retwisting predicate with EvLgG. Its three linked inputs use different base and extension parameters. The output is the stated nonempty definite-side record. No uniform choice of reciprocity maps is claimed."
+    },
+    {
+      "unit": "T19",
+      "statement_sha256": "48c3fbbea045d0eac456e485fa5e5b42676a2860c66980885424472118ff4a90",
+      "declaration": "UpperTheory.LiteratureTheorems.resolution_char_zero_of_literature",
+      "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+      "line0": 557,
+      "line1": 558,
+      "lean_sha256": "11cf31e4f51ff77130dd05d20a24facda7f8c8da7e7a663b0a8bb0d49991f126",
+      "support": [
+        {
+          "name": "UpperTheory.LiteratureTheorems.resolution_char_zero_of_literature",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+          "line0": 557,
+          "line1": 558,
+          "sha256": "11cf31e4f51ff77130dd05d20a24facda7f8c8da7e7a663b0a8bb0d49991f126"
+        },
+        {
+          "name": "GlobalTheory.CompanionTheory.Hypotheses₂.ResolutionCharZero",
+          "file": "Development/AutomorphicSpectrum/PublishedTheorems/Geometry₂/ConclusionOfSmooth.lean",
+          "line0": 53,
+          "line1": 58,
+          "sha256": "4b66e826db6961e5a01831eb72b55827794ed8b0294d5606b5790a3a76013544"
+        }
+      ],
+      "original_review": "reviews/R21_review.md",
+      "published_review_lines": [
+        105,
+        105
+      ],
+      "result": "statement compared",
+      "scope": "Over a characteristic-zero field the source assumes locally finite type and quasi-compact, separated, reduced. The blowup sequence gives smoothness, an isomorphism over the smooth locus and simple normal crossings over its complement. The closed term ignores the head record."
+    },
+    {
+      "unit": "T20",
+      "statement_sha256": "f8eca3200ea4136808abd5febd4e257f8e2612cd8ea3b5f63ba703a486bfc4b4",
+      "declaration": "UpperTheory.LiteratureTheorems.principalisation_char_zero_of_literature",
+      "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+      "line0": 555,
+      "line1": 556,
+      "lean_sha256": "dd4f85439dbc86966d44c6f86c94c0d9901d1cc31869c2a7543a925da332751d",
+      "support": [
+        {
+          "name": "UpperTheory.LiteratureTheorems.principalisation_char_zero_of_literature",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+          "line0": 555,
+          "line1": 556,
+          "sha256": "dd4f85439dbc86966d44c6f86c94c0d9901d1cc31869c2a7543a925da332751d"
+        },
+        {
+          "name": "GlobalTheory.CompanionTheory.Hypotheses₂.PrincipalisationCharZero",
+          "file": "Development/AutomorphicSpectrum/PublishedTheorems/Geometry₂/NotSubsetOfDenseCompl.lean",
+          "line0": 57,
+          "line1": 66,
+          "sha256": "45e9b797dc70f54d22c5cd1ccc8d3e6921898ebf765f048024cfe877f0ba5d31"
+        }
+      ],
+      "original_review": "reviews/R21_review.md",
+      "published_review_lines": [
+        106,
+        106
+      ],
+      "result": "statement compared",
+      "scope": "Smooth relative dimension, quasi-compactness, separation, cosupport and pointwise boundary conditions agree. The SNC blowup sequence tracks the boundary, has smooth final source, effective Cartier pulled-back ideal with SNC reduced support, and is an isomorphism outside the cosupport. The closed term ignores the head record."
+    }
+  ]
+}

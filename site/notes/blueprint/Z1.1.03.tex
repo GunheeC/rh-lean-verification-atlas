@@ -1,0 +1,28 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% RH Notes blueprint source excerpts for Z1.1.03
+% Verbatim excerpts in the notation of the parent blueprint. The labelled editions and source ranges appear below.
+% See the unit YAML for the current proof status. Earlier-round passages retain their original wording.
+\section*{Z1.1.03. Automorphy in the adjoint window}
+
+% Parent source SHA-256: 9559fca8cc392b75d71f1c158fe0c635cfcab567e2f489b52db4c5bb29d98029
+% blueprint/ch_P_r8_small.tex lines 419 through 437; r8:small:Z1.1.03
+\paragraph{Z1.1.03. The initial local place and the gluing step.}
+\phantomsection\label{r8:small:Z1.1.03}
+In \nolinkurl{adjoint_automorphy_w_of_pure_weight_adjoint_lift}, the
+level assumption makes \(M\) a multiple of \(\ell\).
+Choose an embedding of the number field in \(\overline{\mathbb Q}_\ell\).
+The prime defined by elements of norm \(<1\) contains \(\ell\) by S18,
+hence contains \(M\). Apply the pointwise core comparison at this prime to
+obtain a global representation \(\pi\) with the required data away from
+\(M\). For any other place \(w\), use those data if \(w\nmid M\). If
+\(w\mid M\), repeat the same pointwise comparison at \(w\) to obtain
+the possibly different \(\pi_w\) and the ramified alternative there.
+The gluing input accepts a witness separately for every \(w\), so this
+choice supplies its full domain. The project-specific deductions still
+required are weight-compatible descent and the pure-weight adjoint lift
+which supply the core comparison; S08 is only one input to the former
+(\nolinkurl{weight_compatible_descent}, \nolinkurl{adjoint_automorphy_w_of_printed_hida_window},
+\path{UnitaryThreeInputsOfLiterature.lean:25--28};
+\nolinkurl{adjoint_automorphy_w_of_pure_weight_adjoint_lift},
+\path{DenseThresholdCases/MemOfUnder.lean:101--114}).
+

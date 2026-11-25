@@ -1,0 +1,196 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "B06",
+  "edition_sha256": "b1357be6aedd50f8e573c03f7a3485000e98785c903e12f1bfd2f467a5e5353e",
+  "note_sha256": "547c96e2258309bfa1c82758532add9e52986a79976240c9dfcb47d7fc289b03",
+  "statement_sha256": "1c7b4492529dafc1077b85e0a7837678954dd73a151388a5f177e0346606572b",
+  "sources": [
+    {
+      "path": "notes/units/B06_round4.md",
+      "sha256": "547c96e2258309bfa1c82758532add9e52986a79976240c9dfcb47d7fc289b03"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The used-tuple and family-size estimates at the type prime share one constant.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: used-tuple and type-prime size condition"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.Top.closed_family_admissible_twist_link_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ClosedFamilyAdmissibleTwistLink.lean",
+          "line0": 12,
+          "line1": 25
+        }
+      ],
+      "source": "notes/units/B06_round4.md",
+      "anchor": "Restrict the original chosen twist to the enriched",
+      "source_lines": [
+        31,
+        31
+      ],
+      "claim_sha256": "27f1444f7861462fb347dd5e59b3052db06c98bbe747fbdd8d8cecfc14e953db",
+      "passage_sha256": "b6b412793c5b0ecf7e578dbf9943a3f6b7212c2fa5bd02a4fb57b5d9ef426eff",
+      "sha256": "d10aa0d3950cecc29caf28d4a5d0b9baf4f03eb331098704fd145ed9ec0fe515",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Service for the selected twist together with the discriminant-size bound supplies family service.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: selected service and discriminant-size conditions"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.Top.closed_family_admissible_twist_link_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ClosedFamilyAdmissibleTwistLink.lean",
+          "line0": 25,
+          "line1": 31
+        },
+        {
+          "name": "Formalism.L2.G.ServT.closed_servF_of_servT_of_dGamSize",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/GServT.lean",
+          "line0": 31,
+          "line1": 33
+        }
+      ],
+      "source": "notes/units/B06_round4.md",
+      "anchor": "From membership in the enriched class extract its",
+      "source_lines": [
+        35,
+        35
+      ],
+      "claim_sha256": "513b3a004c93d5bcfc32145a9ae40556f8b128fb2a0e21b2eb59241d1cb1004f",
+      "passage_sha256": "019150a08457e0e2e89ad2beb796adc497ab86d875880e0adb52f74df9ad6a02",
+      "sha256": "0fac779c9272f8944a73e4ed0e66d59052744bd1686542f5a9a8355d87c81136",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The combined threshold ensures $3\\le x^{e_z/5}$ and makes all local level-two hypotheses hold at the same index.",
+      "kind": "inequality",
+      "uses": [
+        "S1",
+        "S2",
+        "D394",
+        "input: common largeness and positive scale exponent"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.L2.G.Adm2InU.famU",
+          "file": "Formalism/LocalToGlobal/GroupLattices/AdmissibleAtGeneratorPlaces.lean",
+          "line0": 263,
+          "line1": 275
+        },
+        {
+          "name": "Formalism.L2.G.Adm2InU.famU",
+          "file": "Formalism/LocalToGlobal/GroupLattices/AdmissibleAtGeneratorPlaces.lean",
+          "line0": 276,
+          "line1": 300
+        }
+      ],
+      "source": "notes/units/B06_round4.md",
+      "anchor": "For a fixed family take a maximum of",
+      "source_lines": [
+        39,
+        39
+      ],
+      "claim_sha256": "a6d9c0f092cf6ceacdb183d16f661c10cfcafa0428a87eb4816d14dd2f793470",
+      "passage_sha256": "3adce808c2ccc363ae72c1631c90d48af1abf3c5e5853f7dd00a13e0e9829da2",
+      "sha256": "00152df7ad0f9b2005326f0ca527360da545eb80d15814ead2a4652520bbb20b",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "Closure and the first admissibility projection give the asserted eventual valuation bound for the period columns.",
+      "kind": "assembly",
+      "uses": [
+        "S3",
+        "input: admissible_family_of_inclusion"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.L2.G.Adm2InU.admissible_family_of_inclusion",
+          "file": "Formalism/LocalToGlobal/GroupLattices/AdmissibleAtGeneratorPlaces.lean",
+          "line0": 315,
+          "line1": 329
+        },
+        {
+          "name": "GlobalTheory.Top.closed_family_admissible_twist_link_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ClosedFamilyAdmissibleTwistLink.lean",
+          "line0": 27,
+          "line1": 31
+        }
+      ],
+      "source": "notes/units/B06_round4.md",
+      "anchor": "Closure of a finite conjunction takes the smaller",
+      "source_lines": [
+        43,
+        43
+      ],
+      "claim_sha256": "209f268d9e4cacf7b62aa464f3463275ad5d1c8e4670c41f4e9d7f05892cd46e",
+      "passage_sha256": "63f65dd2ce3ce9c473f7c269a34da8b471cddd0fc48384c8011822641f4d30f1",
+      "sha256": "404801228482abdf87a0eb0a67dcce8fec89c00e076f3660ded93b082b43ac91",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "1aae6e29a02cd7b48e2ef51b8f7eb84c38dcce0157a0979492e2d44617c62c0d",
+      "sources": [
+        {
+          "path": "notes/units/B06_round4.md",
+          "sha256": "58311cc1d459e209a519f82c79d47886112cbbc586edfda1023205449ea17578"
+        }
+      ],
+      "steps": {
+        "S1": "0b6ebad0c1608144f8232f2cd0b379309c70891c9a138a9242fb51014f1af25b",
+        "S2": "a0415c1e5ccc9f762c9f7f2d1618cceed34f49ac532cb8586c061c061448cbf1",
+        "S3": "fc94fd03fc6be38847667897589abf5d01399fcf76ad65281d58d9e8050044db",
+        "S4": "2da9966e398920e097af796532164705bb14d7689534a5bad1a8456c1a62d38b"
+      },
+      "step_texts": {
+        "S1": "The used-tuple and family-size estimates at the type prime share one constant.",
+        "S2": "Service for the selected twist together with the discriminant-size bound supplies family service.",
+        "S3": "The combined threshold ensures $3\\le x^{e_z/5}$ and makes all local level-two hypotheses hold at the same index.",
+        "S4": "Closure and the first admissibility projection give the asserted eventual valuation bound for the period columns."
+      }
+    },
+    {
+      "edition_sha256": "a13fbd53cf5dd0799055ced9f08c657be785131b7b93459803017801fa9905d9",
+      "sources": [
+        {
+          "path": "notes/units/B06_round4.md",
+          "sha256": "58311cc1d459e209a519f82c79d47886112cbbc586edfda1023205449ea17578"
+        }
+      ],
+      "statement_sha256": "1c7b4492529dafc1077b85e0a7837678954dd73a151388a5f177e0346606572b",
+      "steps": {
+        "S1": "d10aa0d3950cecc29caf28d4a5d0b9baf4f03eb331098704fd145ed9ec0fe515",
+        "S2": "0fac779c9272f8944a73e4ed0e66d59052744bd1686542f5a9a8355d87c81136",
+        "S3": "00152df7ad0f9b2005326f0ca527360da545eb80d15814ead2a4652520bbb20b",
+        "S4": "404801228482abdf87a0eb0a67dcce8fec89c00e076f3660ded93b082b43ac91"
+      },
+      "step_texts": {
+        "S1": "The used-tuple and family-size estimates at the type prime share one constant.",
+        "S2": "Service for the selected twist together with the discriminant-size bound supplies family service.",
+        "S3": "The combined threshold ensures $3\\le x^{e_z/5}$ and makes all local level-two hypotheses hold at the same index.",
+        "S4": "Closure and the first admissibility projection give the asserted eventual valuation bound for the period columns."
+      },
+      "step_passages": {
+        "S1": "b6b412793c5b0ecf7e578dbf9943a3f6b7212c2fa5bd02a4fb57b5d9ef426eff",
+        "S2": "019150a08457e0e2e89ad2beb796adc497ab86d875880e0adb52f74df9ad6a02",
+        "S3": "3adce808c2ccc363ae72c1631c90d48af1abf3c5e5853f7dd00a13e0e9829da2",
+        "S4": "63f65dd2ce3ce9c473f7c269a34da8b471cddd0fc48384c8011822641f4d30f1"
+      }
+    }
+  ]
+}

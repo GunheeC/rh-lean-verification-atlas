@@ -1,0 +1,69 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% RH Notes blueprint source excerpts for Z2.K8
+% Verbatim excerpts in the notation of the parent blueprint. The labelled editions and source ranges appear below.
+% See the unit YAML for the current proof status. Earlier-round passages retain their original wording.
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+\noindent\nolinkurl{GlobalTheory.Published.PoitouTateDuality} --- hypothesis at this head (\path{Development/AbelianVarietyTheory/PublishedTheorems/GaloisCohomology₂/ExistsPrimitiveRootPow.lean:13--27}); not compared.\par
+\noindent\nolinkurl{GlobalTheory.TateLimit.local_tate_duality_h2_limit} --- in-repo constant (\path{Development/AbelianVarietyTheory/Proofs/FoundationProofs/LengthEqLengthInvariantsOfTorsionLevels.lean:295--302}); not compared.\par
+External theorem numbers in the original excerpt are not verified here unless a separate edition-specific source record documents the comparison.
+% End of atlas edition annotation.
+
+\section*{Z2.K8. Finite duality and the length formula}
+
+% Parent source SHA-256: 1af64922b98ed2310744411b1f18b25cc426c97220646321471836e1a3a409d6
+% blueprint/ch_P.tex lines 1047 through 1098; lem:P-r3-k8
+\begin{lemma}[The finite duality sequence at the limit (K8)]\label{lem:P-r3-k8}
+The length identity in Proposition~\ref{prop:P-k-main} holds at compact
+coefficients, and the cyclotomic character of inertia at $\ell$ over
+$\mathbf Q$ maps onto $\mathbf Z_\ell^\times$.
+\end{lemma}
+\begin{proof}
+Take $T_j=(\mathbf Z/\ell^j)(E+1)$ and its Cartier dual $B_j=A_E[\ell^j]$,
+$j\ge1$. Write $K_j$ for the kernel of localization on $H^1(G_{L,S},B_j)$
+and $D$ for character duality to $\mathbf Q_\ell/\mathbf Z_\ell$.
+The order of $T_j$ is a unit in the $S$-integers. The modified local
+groups at the infinite places vanish since all are complex, also for
+$\ell=2$. Global Poitou--Tate and local Tate duality give
+\[
+ 0\longrightarrow K_j^D\longrightarrow H^2(G_{L,S},T_j)
+ \longrightarrow\bigoplus_{w\mid\ell} H^0(L_w,B_j)^D
+ \longrightarrow H^0(G_{L,S},B_j)^D\longrightarrow0 .
+\]
+The first term is the dual of $K_j$ by the global pairing between the
+degree-one and degree-two localization kernels. The two right hand maps
+are the last two maps of the nine-term sequence. This is the finite
+coefficient case of \cite[I.2, Corollary 2.3 and I.4, Theorem 4.10]{S-Milne}.
+
+All terms at finite level are finite since $S$ is finite. Inverse limits
+of this sequence are exact: the images in each fixed finite term
+stabilize (the Mittag--Leffler condition). The finite sums commute with
+the limit. Discrete continuous cochains into $A_E$ have finite image on
+each compact power of the group. Taking the filtered union in $j$
+therefore commutes with $H^1$, with invariants and with the localization
+kernel. Dualizing these direct limits gives the displayed inverse limits.
+On the compact side the continuous cochain complex is the inverse limit
+of the complexes for $T_j$; cochain reductions are surjective by lifting
+each value on its clopen fibre. The possible error in degree two is
+$\varprojlim^1 H^1(G_{L,S},T_j)=0$ by the same stabilization. This
+identifies the middle group with $H^2(G_{L,S},\mathbf Z_\ell(E+1))$.
+Length additivity, and preservation of extended length under duality
+as in Lemma~\ref{lem:P-r3-k1}, give the asserted identity. The source
+proves the kernel and cokernel length comparisons in \nolinkurl{ptShaAt},
+\nolinkurl{ptCokerAt} and the local term in \nolinkurl{local_tate_duality_h2_limit}
+(\path{LengthEqLengthInvariantsOfTorsionLevels.lean:462,393,295}).
+They enter \nolinkurl{vFormula_of_classicalTheorems}
+(\path{GaloisCohomologyLength/Formula.lean:15--27}).
+
+Finally $\Phi_{\ell^j}(1+X)$ is monic, reduces to
+$X^{\varphi(\ell^j)}$ modulo $\ell$, and has constant term $\ell$.
+By Eisenstein, $\mathbf Q_\ell(\mu_{\ell^j})/\mathbf Q_\ell$ is
+totally ramified of degree $\varphi(\ell^j)$. Inertia thus maps onto
+$(\mathbf Z/\ell^j)^\times$ for each $j$. Its image in the inverse
+limit is closed by compactness and dense by these surjections.
+See \nolinkurl{cycZ_Ine_surjective}
+(\path{InertiaEigenvalues/CyclotomicCharInertiaSurjective.lean:63--96}).
+\emph{Status: complete under the finite duality theorems in the proposition.}
+\end{proof}
+

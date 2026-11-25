@@ -1,0 +1,100 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "Z1.5.07",
+  "edition_sha256": "da1ee6610466500f70ceb035bd7b3a50c4de595936689c040b4c99f181b22bf7",
+  "note_sha256": "4875024b5a3ab09a8d194ebf1557c04cd681b6d8bc6b93f60742fc8fa5a7bbec",
+  "statement_sha256": "b9358c97e422dd5b63d171563dcbca39ea9672e2ba50d1b2dc978acdd31c6b65",
+  "sources": [
+    {
+      "path": "notes/blueprint/Z1.5.07.tex",
+      "sha256": "4875024b5a3ab09a8d194ebf1557c04cd681b6d8bc6b93f60742fc8fa5a7bbec"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The rank-three weight tuple is strictly decreasing of the prescribed purity and hence lies in the range of the CM classifier.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "Z1.5.03",
+        "input: CM rank-three count"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.GalN.V.Win.N.frobenius_trace_count_bound_of_cm_eigensystem_count_alt",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/FrobeniusTraceCountBoundOfCmEigensystemCount.lean",
+          "line0": 418,
+          "line1": 461
+        }
+      ],
+      "source": "notes/blueprint/Z1.5.07.tex",
+      "anchor": "Apply the assumed",
+      "source_lines": [
+        14,
+        19
+      ],
+      "claim_sha256": "c3c0d28b5fa808efd20b239b80a8322e4b1cb6e190d1fa19cd8ce82a7cd9c0cf",
+      "passage_sha256": "505ba31d0cb0d14bff1432d68d14a8255561a79f045aa52dd2b26576e27ddd8b",
+      "sha256": "98c4f5973e3fe3bf8bc9b83d6a3a79e0daaebf9cd226941e3a62b260630ec51c",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Label the inverse cyclotomic twist in the classifier; the known scalar on inverse Frobenius recovers the trace of the original representation.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "input: level and local admissibility of the inverse twist"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.GalN.V.Win.N.frobenius_trace_count_bound_of_cm_eigensystem_count_alt",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/FrobeniusTraceCountBoundOfCmEigensystemCount.lean",
+          "line0": 418,
+          "line1": 461
+        }
+      ],
+      "source": "notes/blueprint/Z1.5.07.tex",
+      "anchor": "For the actual representation",
+      "source_lines": [
+        21,
+        22
+      ],
+      "claim_sha256": "d80842de7491b70d361dc87be59dfef8baf50c65a5307d3a3eac973488a573ff",
+      "passage_sha256": "e5d5333a1b25ca5ecc633875ef2fccd89e84aacf935bfa084a3526b2a9e40eb7",
+      "sha256": "aa7f0008ef11cf693dcc229a5a67d6e63acd52f3f8ef17447630d9ed98bb51f9",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Multiplication by the distinguished period shifts the filtered comparison for the twist, preserving the required local admissibility in the potentially crystalline branch.",
+      "kind": "computation",
+      "uses": [
+        "S2",
+        "standard: crystalline periods under a cyclotomic twist"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.GalN.V.Win.N.frobenius_trace_count_bound_of_cm_eigensystem_count_alt",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/FrobeniusTraceCountBoundOfCmEigensystemCount.lean",
+          "line0": 418,
+          "line1": 461
+        }
+      ],
+      "source": "notes/blueprint/Z1.5.07.tex",
+      "anchor": "Write $B$ for",
+      "source_lines": [
+        33,
+        34
+      ],
+      "claim_sha256": "f639d6c8d5513796ecf4aeaffad71d722c5ed5ba79647187d696319b69e85fd8",
+      "passage_sha256": "86c77f02e39e154c5f3396f1e29ae02aa2cefd26ea6f25f507ed4af41e42203a",
+      "sha256": "96581e2732a3343ac5b31b5f7a0c6b480397966571f7ed775f3903e26405be67",
+      "ai_review": []
+    }
+  ],
+  "history": []
+}

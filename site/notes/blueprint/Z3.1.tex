@@ -1,0 +1,163 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% RH Notes blueprint source excerpts for Z3.1
+% Verbatim excerpts in the notation of the parent blueprint. The labelled editions and source ranges appear below.
+% See the unit YAML for the current proof status. Earlier-round passages retain their original wording.
+\section*{Z3.1. Normalized matrix algebra}
+
+% Parent source SHA-256: 1af64922b98ed2310744411b1f18b25cc426c97220646321471836e1a3a409d6
+% blueprint/ch_P.tex lines 8798 through 8951; r6:normalized-ring
+\subsection{The normalized algebra and change of DVR}\label{r6:normalized-ring}
+\paragraph{Normalization at the distinguished point.}
+Use the data supplied by \path{adm51} at $\pi\in Z$ and the rational
+equivariant decomposition there. Replace the large representation at
+$\pi$ by the integral block sum of $\rho(\pi)$ and its named characters.
+For any $a=\sum t_g r(g)$ in the old matrix span, use the same coefficients
+and group elements in the new family. The resulting matrix agrees with
+$a$ away from $\pi$ and equals its conjugate over $K$ at $\pi$. Thus it
+depends only on $a$, has integral entries, and preserves products, ranks
+over $K$, orthogonality and idempotence. In particular this procedure
+applies to $e_B,e_1,X_0$. At $\pi$ the character components of $e_B$
+are all one by the supplied block actions. The matrix is block diagonal
+and its rank is $t$, so its remaining block is zero. Orthogonality on
+both sides puts $e_1$ entirely in the remaining block. The prescribed
+actions of $X_0$ are zero there and $\chi_c(g_*)$ on the individual
+lines. Consequently $s=X_0-e_Br(g_*)e_B$ vanishes at $\pi$ and lies
+in the corner globally
+(\path{inR_phiC}, \path{design_normalized},
+\path{DesignNormalizedOfAdmitted.lean:76--122,150--285,334--345}).
+
+There is a reason the corner polynomial has distinct roots even away
+from $\pi$. The original design gives $t!$ points above each $x$, an
+ordered factorization at each point, and a free scalar basis of size
+$t!$. Its restrictions to the fibre are linearly independent over $O$:
+multiply a putative relation by a scalar function in $T$ supported at
+$x$ with nonzero value there. The resulting global relation is zero,
+so uniqueness of the free expansion kills each original coefficient
+since $O$ is a domain. Such a separating function is obtained by
+multiplying, for each $z\ne x$, the difference of a function separating
+$x,z$ and its constant value at $z$. Over $K$ the fibre evaluation
+matrix is therefore square and nonsingular. Two points with the same
+ordered tuple would agree on the scalar generators and hence on the
+basis, an impossibility. The $t!$ different tuples all order the
+same multiset of roots. A repeated root would give fewer than $t!$
+orderings. Conjugation preserves the determinant defining the corner
+polynomial, so the argument applies to the new family
+(\path{descent_hyps}, \path{SecondPropositionEveryLocalisation.lean:835--863};
+\path{rr_inj}, \path{DesignOfAdmittedObjects.lean:165--201};
+\path{design_normalized}, \path{DesignNormalizedOfAdmitted.lean:285--332}).
+
+\paragraph{Why the determinant coefficients descend.}
+Write $R$ for a scalar function ring and $S\subset R$ for the subring
+specified by the coefficient hypothesis. For every group element $g$,
+$\det(1-zr(g))$ has coefficients in $S$. To extend this to a finite
+sum, work modulo $z^{N+1}$ with letters $x_j=s_jz^{d_j}r(g_j)$,
+$s_j\in S$, $d_j\ge1$. For a letter $x$ of least degree and sum $Y$
+of the others, factor
+\[
+  1-x-Y=(1-x)\{1-(1+x+\cdots+x^N)Y\}.
+\]
+The determinant of the first factor is known by substitution. In the
+second factor every new letter $x^k x_j$ with $k>0$ has larger degree,
+and is again a scalar times a group matrix. Remove the finitely many
+letters of the current degree successively and then increase the degree.
+Beyond $N$ the determinant is one modulo $z^{N+1}$. This proves the
+coefficient claim at each $N$. For $M=\sum_i y_i A_i$ with the $A_i$
+in the span, run this argument over the polynomial coefficient ring.
+The coefficient of $z^{\dim V}$ in $\det(1-zM)$ is
+$(-1)^{\dim V}\det M$. Thus every mixed determinant coefficient comes
+from the scalar algebra, including those of
+$\det(ye_B-X_0+1-e_B)$
+(\path{key}, \path{stepD}, \path{det_poly_statement},
+\path{LemmaDetPoly.lean:98--163,181--261,365--393};
+\path{detT}, \path{blockPolyT}, \path{CMemPolyT.lean:74--94,114--135}).
+
+For a square matrix $\Theta$ of such blocks, apply block elimination to
+$1-z\Theta$ over formal power series. A diagonal pivot $A$ has constant
+term one, so $A^{-1}$ has matrix-algebra coefficients by the geometric
+series. The Schur complement $D-CA^{-1}B$ again has constant matrix one
+and coefficients in that algebra. The determinant of a single pivot
+has scalar coefficients by the mixed determinant result, truncating its
+entries at the coefficient sought. Induction on the number of blocks
+in $\det(A)\det(D-CA^{-1}B)$ proves the assertion for all of $\Theta$,
+including its full determinant from the highest coefficient
+(\path{detGood}, \path{schur}, \path{blockDet},
+\path{IsUnitDetOfConst.lean:220--250,307--378,447--454}).
+
+\paragraph{The ordered cover and the two projectors.}
+Adjoin one root at a time to $T$ by the monic corner polynomial and
+the remaining monic quotients. Division with remainder gives a monomial
+basis of successive sizes $t,t-1,\ldots,1$, hence a free basis of size
+$t!$. On the fibre at $x$ over $K$, successive Chinese remainder
+decompositions for the distinct roots give the product of one copy of
+$K$ per ordering. Evaluation of that basis is independent on each fibre
+and injective on the whole splitting algebra (expand in the free
+basis over $T\subset O^X$). Its image is exactly $T'$, generated by
+pullbacks and ordered roots. Form $A$ by taking their scalar span of the
+group matrices. This span is closed under multiplication and is a finite
+$O$-module as a submodule of a finite product of integral matrix rings.
+It is left Noetherian, since left ideals are $O$-submodules.
+At the distinguished ordering evaluation gives the stated block maps.
+On the big block their images span modulo the maximal ideal by the
+residual hypothesis, hence span integrally by Nakayama. On a
+one-dimensional block constants already suffice
+(\path{splitPts}, \path{SplitPts.lean:13--156};
+\path{ring_objects_of_matrix_data},
+\path{RingObjectsOfMatrixData.lean:109--169,470--509}).
+
+In $A$, take
+$P=e_B\prod_{i=2}^t(X_0-\alpha_i e_B)$.
+Its evaluation on the first eigenline is multiplication by
+$\delta=\prod_{i=2}^t(\alpha_1-\alpha_i)$, and it is zero on the
+other eigenspaces and on $1-e_B$. The leading $e_B$ also handles $t=1$.
+Writing $P=\sum t_gr(g)$, its first character evaluation at $\pi'$
+gives $\sum t_g(\pi')\chi_1(g)=\delta_O$ as required for the
+coboundary calculation. Independently, the integral idempotent $e_1$
+splits its lattice into image and kernel. Its rank-one image is free
+over the DVR, and the corresponding summand on $U$ is isomorphic to
+$U$. These arguments give the normal form used in the determinant
+bound (\path{eMat}, \path{IdemFactor.lean:123};
+\path{idemKO}, \path{IdemKO.lean:12};
+\path{normalized_ring_data}, \path{NormalizedRingData.lean:20--61}).
+
+\paragraph{Transport of the presentations.}
+For $O\subset O'$ finite free with $v_{O'}(x)=e v_O(x)$, expand an
+element of the $O'$-span of $T$ in an $O$-basis of $O'$. Its coordinate
+functions belong to $T$. It vanishes off $Z$ if and only if each
+coordinate does, giving the extended congruence ideal $I_\pi O'$ and
+length $e\operatorname{length}_O(O/I_\pi)$. Above each point the new
+ordered roots are a permutation of the images of the old distinct roots,
+because their common polynomial already splits there. This associates to
+each new ordering the corresponding old one and takes $\pi'$ to the
+ordered specialization downstairs. Pullback and coefficient inclusion
+induce a homomorphism of the evaluated matrix algebras. The common
+characters, corner relations and block evaluations commute with this map
+(\path{vccBaseChange}, \path{MemCcIdealIffForall.lean:21};
+\path{stageC}, \path{AbsIrrOfSpan.lean:222--329};
+\path{exists_sigma}, \path{ExistsSigma.lean:44};
+\path{bcHom}, \path{SpanSingle.lean:23--36}).
+
+Present $N$ on its $g$ generators by a finite matrix of relations
+(Noetherianity) and present $N'$ using its image matrix on $g$
+generators. A nonzero rational solution at the corresponding old point
+remains nonzero by field inclusion. At the distinguished point the
+$U$-valued solution module is the kernel of the evaluated integral
+relation matrix. An invertible row or column operation over $O$ remains
+invertible over $O'$; in Smith form a nonzero invariant factor $s$
+contributes $v_O(s)$ and a free variable contributes a full $U$ of
+infinite length. Thus every block length scales by $e$, including zero
+and infinite lengths. When the residue field is infinite the identity
+extension suffices for any finite threshold. Otherwise lift an irreducible
+monic polynomial of sufficiently large residue degree to $O[X]$ and
+adjoin a root. The quotient is finite free, is a domain by irreducibility
+over $K$ (Gauss's lemma), and every maximal ideal contracts to the
+maximal ideal of $O$. Reduction by the old uniformizer gives a field,
+so the quotient has a unique maximal ideal generated by this
+uniformizer. It is a DVR with $e=1$ and the required residue size.
+This closes the normalized-ring and coefficient-extension input of
+Lemma~\ref{lem:P3-det}
+(\path{moduleBc}, \path{SpanSingle.lean:62--148};
+\path{kerBc}, \path{KerEqOfFactor.lean:43--98};
+\path{unram_ext}, \path{bigResidueExt}, \path{BigRes.lean:12--156};
+\path{lemma_five_three_extension_of_module},
+\path{LemmaFiveThreeExtensionOfModule.lean:47--79}).
+

@@ -1,0 +1,205 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "Z3.1",
+  "edition_sha256": "891abe577973797f7339aafb2a58a4104de71cb5ade45ee8ab73728d712af971",
+  "note_sha256": "08e257952493d3089ea23718ae1f2fa4daeec7b61c77e14dc4388bfc5a893ddc",
+  "statement_sha256": "130dc30ce7fc8bbcc15b59ec6fe87042ed843389cdb80818520ae8ee4156e862",
+  "sources": [
+    {
+      "path": "notes/blueprint/Z3.1.tex",
+      "sha256": "08e257952493d3089ea23718ae1f2fa4daeec7b61c77e14dc4388bfc5a893ddc"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Replacing the marked fibre by its integral block sum preserves matrix relations because evaluation there is rational conjugation.",
+      "kind": "assembly",
+      "uses": [
+        "input: rational block decomposition at the distinguished point"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.MainNotions.N.K.Norm.inR_phiC",
+          "file": "Formalism/AdmissibleDesigns/DesignNormalizedOfAdmitted.lean",
+          "line0": 76,
+          "line1": 105
+        }
+      ],
+      "source": "notes/blueprint/Z3.1.tex",
+      "anchor": "For any $a=\\sum t_g r(g)$ in the old matrix span, use the same coefficients",
+      "source_lines": [
+        7,
+        27
+      ],
+      "claim_sha256": "73240130040a0c8b4cf05557202d8c1bd4d3ffb12e357979bc9ef1aee1331bc2",
+      "passage_sha256": "ab52f405ac44f8978a0990c1bb6c91567abb02dc4036ee7d10d34f5c15eebf45",
+      "sha256": "1a21d4e2e496877aed904d71a719a16abb1a8bac7c7c10b1261e2e26ce62cd42",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Factoring in the truncated power series ring extends scalar-algebra membership of determinant coefficients from individual group elements to finite linear combinations.",
+      "kind": "computation",
+      "uses": [
+        "standard: formal determinant identities"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.TruncatedSeriesCounting.TruncatedSeriesCountingIdentities.DetPolyCore.stepD",
+          "file": "Formalism/TruncatedSeriesCounting/TruncatedSeriesProofs/LemmaDetPoly.lean",
+          "line0": 183,
+          "line1": 234
+        }
+      ],
+      "source": "notes/blueprint/Z3.1.tex",
+      "anchor": "$\\det(1-zr(g))$ has coefficients in $S$. To extend this to a finite",
+      "source_lines": [
+        49,
+        72
+      ],
+      "claim_sha256": "ab8b089eb7cb1348ddc88e9afa6b07acaa58ac506571e2466bc4dd6680ddf299",
+      "passage_sha256": "0a5b2faab6e873a54fffff11d6b8ed94ba120e300b7f916695787e969239ffa2",
+      "sha256": "ed2676de992df467fa9d2e8385d9315adfd4d24b8ec68a1b991d7c4ee3e5775b",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The ordered scalar span of the group matrices is closed under multiplication and finite over the coefficient ring.",
+      "kind": "assembly",
+      "uses": [
+        "standard: finite modules over a DVR"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.RepresentationBoundsCohomology.ringDataObjects.ring_objects_of_matrix_data",
+          "file": "Formalism/WachLatticeTwists/RamifiedBlockRings/RamifiedBlockProofs/RingObjectsOfMatrixData.lean",
+          "line0": 109,
+          "line1": 169
+        }
+      ],
+      "source": "notes/blueprint/Z3.1.tex",
+      "anchor": "pullbacks and ordered roots. Form $A$ by taking their scalar span of the",
+      "source_lines": [
+        86,
+        105
+      ],
+      "claim_sha256": "e3508d980522dbdea5e457e513763bde5ddbf3a04bcdd317555546e130e020b6",
+      "passage_sha256": "f03c93a6cd13d0a62b93e8e43e2dde930b9238bf29097fac0b46454b1922bcaa",
+      "sha256": "3fe2e1022cf63959061b15df8b695660fd71c9f1ea2c162343eff41a9d8fc5df",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "Evaluating the projector in its first character at the marked point gives the scalar required in the coboundary computation.",
+      "kind": "computation",
+      "uses": [
+        "input: normalized evaluation of the projector"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.MainNotions.N.K.normalized_ring_data",
+          "file": "Formalism/AdmissibleDesigns/NormalizedRingData.lean",
+          "line0": 20,
+          "line1": 60
+        }
+      ],
+      "source": "notes/blueprint/Z3.1.tex",
+      "anchor": "Writing $P=\\sum t_gr(g)$, its first character evaluation at $\\pi'$",
+      "source_lines": [
+        107,
+        120
+      ],
+      "claim_sha256": "3564fcac54ee2ba6b90ad7344b653adcfe53b2120da2b2639d4216057b6f418e",
+      "passage_sha256": "376f04afd6dcb9c3345e62469507fac85831770ba4b6e2cf586ee8d56c251217",
+      "sha256": "b9ed16720d74bce8809aa1f245990d41ddb4ecd026ac324763afc4b754bdf4f0",
+      "ai_review": []
+    },
+    {
+      "id": "S5",
+      "status": "active",
+      "claim": "Writing sections in a coefficient basis shows that the congruence ideal extends and its quotient length scales by the ramification index.",
+      "kind": "assembly",
+      "uses": [
+        "standard: finite free scalar extension"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.NG.vccBaseChange",
+          "file": "Formalism/CharacterColumnKernels/IdempotentNormalForms/MemCcIdealIffForall.lean",
+          "line0": 21,
+          "line1": 43
+        }
+      ],
+      "source": "notes/blueprint/Z3.1.tex",
+      "anchor": "functions belong to $T$. It vanishes off $Z$ if and only if each",
+      "source_lines": [
+        122,
+        137
+      ],
+      "claim_sha256": "44cc589fb2c723b84c8a5a0bdfc8301d6ef3ad6eccd07d53b856b45c25221104",
+      "passage_sha256": "3738d60277e398200357547c143508b9bcf5d17c884823b49b8406f10957c4db",
+      "sha256": "428fe1de942f35e24a1a451d01ef3f66678e8782a999d8ae75dd568116ec82bb",
+      "ai_review": []
+    },
+    {
+      "id": "S6",
+      "status": "active",
+      "claim": "After base change the invariant factors of the evaluated relation matrix give the same ramification scaling for every block length, including infinite length.",
+      "kind": "computation",
+      "uses": [
+        "S5",
+        "standard: Smith normal form"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.RepresentationBoundsCohomology.ringDataObjects.moduleBc",
+          "file": "Formalism/WachLatticeTwists/RamifiedBlockRings/RamifiedBlockProofs/SpanSingle.lean",
+          "line0": 62,
+          "line1": 148
+        }
+      ],
+      "source": "notes/blueprint/Z3.1.tex",
+      "anchor": "remains nonzero by field inclusion. At the distinguished point the",
+      "source_lines": [
+        139,
+        162
+      ],
+      "claim_sha256": "abdb90e1f3eb690911b191e1a2e4697c95b119e85b9963481ae7f12dff366d5c",
+      "passage_sha256": "67e86cfbff6e3e7db09b8221e5ca9a9bc5274bbecdff7bb023304260900192da",
+      "sha256": "b1d34c0a2d38305c09e668cd7b96541d381210dd5679612ee8bcb054ff602509",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "a9cd0ee21686c69a4168dba6862bef025294530eca99559dcfb66042cd2155a2",
+      "sources": [
+        {
+          "path": "notes/blueprint/Z3.1.tex",
+          "sha256": "08e257952493d3089ea23718ae1f2fa4daeec7b61c77e14dc4388bfc5a893ddc"
+        }
+      ],
+      "steps": {
+        "S1": "1a21d4e2e496877aed904d71a719a16abb1a8bac7c7c10b1261e2e26ce62cd42",
+        "S2": "42611a2805a588e170878a212e9a21c64f1f39a641c8f6fcd6cc479571637bc8",
+        "S3": "48283d4ef0f863394fc240b81baa54720c19984eecb620b92af331e7e9b96dbb",
+        "S4": "b22babc19216c950c4be27f5dcef8de5b4f706f2b03b49803a8bfb931314371f",
+        "S5": "e3e2f01bd45fc9144dc3252cc3c28d2e320aa85c8f97b9ea9ccd183bfc920d6f",
+        "S6": "b1d34c0a2d38305c09e668cd7b96541d381210dd5679612ee8bcb054ff602509"
+      },
+      "step_texts": {
+        "S1": "Replacing the marked fibre by its integral block sum preserves matrix relations because evaluation there is rational conjugation.",
+        "S2": "Factoring in the truncated power series ring extends scalar-algebra membership of determinant coefficients from individual group elements to finite linear combinations.",
+        "S3": "The ordered scalar span of the group matrices is closed under multiplication and finite over the coefficient ring.",
+        "S4": "Evaluating the projector in its first character at the marked point gives the scalar required in the coboundary computation.",
+        "S5": "Writing sections in a coefficient basis shows that the congruence ideal extends and its quotient length scales by the ramification index.",
+        "S6": "After base change the invariant factors of the evaluated relation matrix give the same ramification scaling for every block length, including infinite length."
+      }
+    }
+  ]
+}

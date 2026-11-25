@@ -1,0 +1,167 @@
+{
+  "id": "Z42-SITES",
+  "title": "Served-site parameters and the lattice dictionary",
+  "track": {
+    "primary": "local",
+    "secondary": [
+      "theta"
+    ]
+  },
+  "statement": "\\textbf{Z4.2.01.} At a served site with the host tie \\nolinkurl{GatTies} and its tied lattice data and $2r_G\\le k$, every position $v$ of the selected local model satisfies Std with its actual ranks, weights, marked subset and parameters. \\textbf{Z4.2.03.} For $j\\le m$ and an actual lattice tuple, the selected chart point satisfies the point condition and represents the prescribed rational-unitary/level double coset, the kernel lattice agrees after reindexing with the adelic lattice at that point, and its determinant is the prescribed one. \\textbf{Z4.2.05.} At every site the $p$-adic evaluation of the global embedding at position $(v,s)$ agrees with the local twist of the place embedding, applied to the conjugate exactly at odd positions.",
+  "assumptions": [
+    "source:blueprint_v13"
+  ],
+  "hypothesis_details": [
+    "The served site has its host tie and tied lattice, with $2r_G\\le k$.",
+    "Supply the joint and its actual tuple at a stage $j\\le m$. For the position calculation fix the site embeddings and position $(v,s)$."
+  ],
+  "lean": [
+    {
+      "name": "GlobalTheory.TwU.std_at_served",
+      "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/StdAtServed.lean",
+      "line0": 9,
+      "line1": 22,
+      "sha256": "ade5997ef2f31a3cc8250526e2485caca60328ccd62fd5eb085c8997c6eb19b0",
+      "dominated": 14,
+      "graph": "allChi",
+      "role": "statement"
+    },
+    {
+      "name": "GlobalTheory.TwV.joint_dict",
+      "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/LatticeTupleJointDictionary.lean",
+      "line0": 16,
+      "line1": 25,
+      "sha256": "33f8072b907e5ccbcb9a6c8a56f6c3e1c8c65f2f50ea59173ecff3484bece68f",
+      "dominated": 189,
+      "graph": "allChi",
+      "role": "statement"
+    },
+    {
+      "name": "GlobalTheory.TwV.pos_at_site",
+      "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/SitePlaceInducesPositionEmbeddings.lean",
+      "line0": 11,
+      "line1": 13,
+      "sha256": "8bb9bf8410028cda07b565d476c0c92530ff362ec84e692b39c83d28761cf354",
+      "dominated": 32,
+      "graph": "allChi",
+      "role": "statement"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/blueprint/Z42-SITES.tex",
+      "section": "r5:Z4.2.01, r6:review:Z4.2.01, r5:small:Z4.2.03, r6:review:Z4.2.03, r5:small:Z4.2.05, r6:review:Z4.2.05",
+      "pages": []
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r5:Z4.2.01",
+      "pages": [
+        349,
+        349
+      ],
+      "printed_page": 324,
+      "scope": "First page of this named destination."
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r6:review:Z4.2.01",
+      "pages": [
+        364,
+        364
+      ],
+      "printed_page": 339,
+      "scope": "First page of this named destination."
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r5:small:Z4.2.03",
+      "pages": [
+        359,
+        359
+      ],
+      "printed_page": 334,
+      "scope": "First page of this named destination."
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r6:review:Z4.2.03",
+      "pages": [
+        364,
+        364
+      ],
+      "printed_page": 339,
+      "scope": "First page of this named destination."
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r5:small:Z4.2.05",
+      "pages": [
+        360,
+        360
+      ],
+      "printed_page": 335,
+      "scope": "First page of this named destination."
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r6:review:Z4.2.05",
+      "pages": [
+        364,
+        364
+      ],
+      "printed_page": 339,
+      "scope": "First page of this named destination."
+    }
+  ],
+  "status": "Full",
+  "grade": "L2",
+  "reviews": [
+    "reviews/R5_review_B.md"
+  ],
+  "prerequisites": [
+    "D513"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "blueprint_members": [
+    "Z4.2.01",
+    "Z4.2.03",
+    "Z4.2.05"
+  ],
+  "representative": "GlobalTheory.TwU.std_at_served",
+  "statement_declarations": [
+    "GlobalTheory.TwU.std_at_served",
+    "GlobalTheory.TwV.joint_dict",
+    "GlobalTheory.TwV.pos_at_site"
+  ],
+  "grade_scope": "Named statement declarations with the hypotheses above. Chart supplier records have their own review scopes.",
+  "confirmation_basis": "Minimum across the statement declarations, using registry rows for the blueprint assignments listed here. Reviews of other expositions of a shared declaration are included as context.",
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "slug": "served-site-parameters-and-the-lattice-dictionary",
+  "aliases": [
+    "std_at_served",
+    "Z42-SITES Served-site parameters and the lattice dictionary"
+  ],
+  "background": [
+    "Local lattice parameters",
+    "Unitary theta kernels"
+  ],
+  "hypothesis_source": {
+    "document": "blueprint_v13",
+    "section": "r5:Z4.2.01",
+    "pages": [
+      349,
+      349
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "D513": "statement-reading"
+  },
+  "summary": "The served-site hypotheses fix the actual local ranks and parameters. The selected chart identifies the relevant double coset, lattice and determinant, and local evaluation matches the prescribed global embedding with conjugation at odd positions. These identifications specify the data on which the kernel calculations run."
+}

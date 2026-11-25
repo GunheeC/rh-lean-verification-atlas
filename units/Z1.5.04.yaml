@@ -1,0 +1,95 @@
+{
+  "id": "Z1.5.04",
+  "title": "Classifiers over an imaginary quadratic field",
+  "track": {
+    "primary": "analytic",
+    "secondary": [
+      "galois"
+    ]
+  },
+  "statement": "Assume the automorphic hypotheses and $\\mathrm{LevelPNAlt}$. For each imaginary quadratic field $K$ and $n\\ge2$ there are $c,A$ such that for all strictly decreasing weights $m$ with $|m_i|\\le H$ and $m_i+m_{\\mathrm{rev}(i)}=\\mathrm{wt}$, levels $M\\ge1$ and places $w\\mid p$ with $p\\nmid M\\,\\mathrm{disc}(K)$, there is a single Frobenius classifier $D$ over $w$ of size at most $c[M(H+1)]^A$ for every allowed $\\mathrm{AdmPNAlt}$ system at every odd coefficient prime $\\ell\\ne p$.",
+  "assumptions": [
+    "source:blueprint_v13"
+  ],
+  "hypothesis_details": [
+    "Use the automorphic hypotheses and LevelPNAlt over the imaginary quadratic field.",
+    "The weight is symmetric and the prime avoids the level and field discriminant."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.GalN.V.Win.N.countP_alt",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/FrobeniusTraceCountBoundOfCmEigensystemCount.lean",
+      "line0": 129,
+      "line1": 191,
+      "sha256": "67560dad272c217a5be020dfec6ecb3551220033cd3c9e6b4f8c556877dc5fc8",
+      "dominated": 313,
+      "graph": "allChi",
+      "role": "statement"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/blueprint/Z1.5.04.tex",
+      "section": "r8:small:Z1.5.04",
+      "pages": []
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r8:small:Z1.5.04",
+      "pages": [
+        469,
+        469
+      ],
+      "printed_page": 444,
+      "scope": "First page of this named destination."
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [
+    "Z1.5.01",
+    "Z1.5.02"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "Prove the simultaneous conjugation, duality and integrality comparisons for the imaginary-quadratic classifier at the prescribed weight."
+  ],
+  "last_checked": "2026-11-24",
+  "blueprint_members": [
+    "Z1.5.04"
+  ],
+  "representative": "UpperTheory.GalN.V.Win.N.countP_alt",
+  "statement_declarations": [
+    "UpperTheory.GalN.V.Win.N.countP_alt"
+  ],
+  "grade_scope": "Named statement declarations with the hypotheses above. Chart supplier records have their own review scopes.",
+  "confirmation_basis": "Minimum across the statement declarations, using registry rows for the blueprint assignments listed here. Reviews of other expositions of a shared declaration are included as context.",
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "slug": "classifiers-over-an-imaginary-quadratic-field",
+  "aliases": [
+    "countP_alt",
+    "Z1.5.04 Classifiers over an imaginary quadratic field"
+  ],
+  "background": [
+    "Automorphic base change",
+    "Satake parameters"
+  ],
+  "hypothesis_source": {
+    "document": "blueprint_v13",
+    "section": "r8:small:Z1.5.04",
+    "pages": [
+      469,
+      469
+    ]
+  },
+  "question_sources": [
+    "data/status_ledger.json"
+  ],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "Z1.5.01": "graph",
+    "Z1.5.02": "statement-reading"
+  },
+  "summary": "Over a fixed imaginary quadratic field, the classifier allows a variable symmetric purity weight. The same polynomially bounded list at the selected good place serves the allowed systems for every odd coefficient prime different from the residue characteristic."
+}

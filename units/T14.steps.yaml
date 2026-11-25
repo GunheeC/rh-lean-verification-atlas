@@ -1,0 +1,95 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "T14",
+  "edition_sha256": "6d7b21d3b715a6429d1b0a78515692b1a2816a50754d7600af443e3133baa83e",
+  "note_sha256": "143a3466b49f7aeee2d8a983ad8c2194ccc92b3cf48bf2571a162dab8370aab4",
+  "statement_sha256": "266be56cdc0c46e2d6bf35370df3bdabe4592aac16440ff565b9a470700c2458",
+  "sources": [
+    {
+      "path": "notes/units/T14.tex",
+      "sha256": "143a3466b49f7aeee2d8a983ad8c2194ccc92b3cf48bf2571a162dab8370aab4"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "One constant is chosen before the good deep datum and its admissible weight.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "T26",
+        "input: deep goodness"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.HtPt.Ah.deep_slim_use",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/MoriwakiBigness/HilbertSamuelApplications/AhSlimU.lean",
+          "line0": 9,
+          "line1": 14
+        }
+      ],
+      "source": "notes/units/T14.tex",
+      "anchor": "the following data. Let a core $T$ on $D$ satisfy the core laws and",
+      "source_lines": [
+        18,
+        33
+      ],
+      "claim_sha256": "0bea89004bf5ce5003fd8cd6d5b10efd5ec146924f1e40f93480dcde9558b4bd",
+      "passage_sha256": "8869d6e266afd003ab2bd9a7ce968ab1024df7e7b413d95f5e8c510883b30a30",
+      "sha256": "0fada660cf894d1623eec8f16e483d3672cebf4199f3b069cf3b0338cd8b3b0e",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "There are lower component slopes whose arithmetic mean satisfies the uniform error bound.",
+      "kind": "inequality",
+      "uses": [
+        "S1",
+        "input: at most fifteen level primes"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.HtPt.Ah.deep_slim_use",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/MoriwakiBigness/HilbertSamuelApplications/AhSlimU.lean",
+          "line0": 9,
+          "line1": 14
+        }
+      ],
+      "source": "notes/units/T14.tex",
+      "anchor": "s_Z\\le\\mathrm{compVolSlope}_{Y,\\xi_R,8,\\mathrm{mixVals}(B),Z}(u),",
+      "source_lines": [
+        18,
+        33
+      ],
+      "claim_sha256": "74dff9b96efe771c6092f75278be5f2f5fe730e525b09c3c0525072164858524",
+      "passage_sha256": "8869d6e266afd003ab2bd9a7ce968ab1024df7e7b413d95f5e8c510883b30a30",
+      "sha256": "4fabe1af1f776eea61fb0f1ba31502a808e1482b66febdb21d5fc768a7295447",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "ab8e6c047077632cac29b305ad06e0f237c4206deb9d1338ad21a2b6adae510e",
+      "sources": [
+        {
+          "path": "notes/units/T14.tex",
+          "sha256": "aaf42943862a37380b50efb8a0b9de3a919adc69808be95a2b62bc32b9750e91"
+        }
+      ],
+      "statement_sha256": "266be56cdc0c46e2d6bf35370df3bdabe4592aac16440ff565b9a470700c2458",
+      "steps": {
+        "S1": "0fada660cf894d1623eec8f16e483d3672cebf4199f3b069cf3b0338cd8b3b0e",
+        "S2": "4fabe1af1f776eea61fb0f1ba31502a808e1482b66febdb21d5fc768a7295447"
+      },
+      "step_texts": {
+        "S1": "One constant is chosen before the good deep datum and its admissible weight.",
+        "S2": "There are lower component slopes whose arithmetic mean satisfies the uniform error bound."
+      },
+      "step_passages": {
+        "S1": "8869d6e266afd003ab2bd9a7ce968ab1024df7e7b413d95f5e8c510883b30a30",
+        "S2": "8869d6e266afd003ab2bd9a7ce968ab1024df7e7b413d95f5e8c510883b30a30"
+      }
+    }
+  ]
+}

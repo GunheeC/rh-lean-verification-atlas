@@ -1,0 +1,272 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% RH Notes blueprint source excerpts for Z2.K4
+% Verbatim excerpts in the notation of the parent blueprint. The labelled editions and source ranges appear below.
+% See the unit YAML for the current proof status. Earlier-round passages retain their original wording.
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+These are the repository’s stable-realization implication and its target predicate. Borel’s comparison and the unit theorem cited in the hand argument are bibliographic inputs. Their numbered source locators have not been verified against the publications.
+\noindent\nolinkurl{PositivityTheory.KB.sSurj_of} --- in-repo constant (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/SurjectivityCase/SSurjOf.lean:5--6}); not compared.\par
+\noindent\nolinkurl{PositivityTheory.KB.SSurj} --- in-repo constant (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/SBStar.lean:20--24}); not compared.\par
+External theorem numbers in the original excerpt are not verified here unless a separate edition-specific source record documents the comparison.
+% End of atlas edition annotation.
+
+\section*{Z2.K4. Odd stable homology and torsion}
+
+% Parent source SHA-256: 1af64922b98ed2310744411b1f18b25cc426c97220646321471836e1a3a409d6
+% blueprint/ch_P.tex lines 11732 through 11957; sec:P-r5-k4
+\subsection{Z2.K4. Realizing the stable class and isolating one trace per place}\label{sec:P-r5-k4}
+
+\paragraph{The two comparisons.}
+Write $q=k+1$, $G_n=\mathrm{GL}_n(\mathcal O_L)$, and
+$X_n=\prod_{v\mid\infty}\operatorname{Herm}_n^+(\mathbf C)$. The stable
+realization asks for \emph{one} $N\ge n_0$ that works for every homogeneous,
+left $G_N$-invariant real $q$-cocycle $c$. Its evaluation on every real
+bar cycle must be the integral of a $\prod_v\mathrm{GL}_N(\mathbf C)$-invariant
+form over the corresponding straight simplices. Here $L$ is totally complex
+and $q<r_2(L)$. The second comparison, for $k$ even, asks for fixed
+weight-one systems $\tau_v$ valid at all ranks, and coefficients and
+higher-weight systems that may depend on the form and its rank
+(\nolinkurl{PositivityTheory.KB.SSurj}, \path{Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/SBStar.lean:20--24};
+\nolinkurl{PositivityTheory.KB.SWtOdd}, \path{Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/SBStarOdd.lean:9--16}).
+
+\paragraph{A literature proof of stable realization.}
+Apply Borel's comparison to the semisimple rational group
+$\mathrm{Res}_{L/\mathbf Q}\mathrm{SL}_N$ and its arithmetic subgroup
+$\Delta=\mathrm{SL}_N(\mathcal O_L)$. Its real group is the connected
+product $\prod_v\mathrm{SL}_N(\mathbf C)$, with symmetric space $Y_N$
+the product of the determinant-one positive Hermitian cones. Its rational
+rank is $N-1$. Borel's surjectivity range is
+$i\le\min(c(G),m(G(\mathbf R)))$. Both bounds tend to infinity with the
+rational rank. Choose $N\ge\max(n_0,2)$ so that this range contains
+\emph{every} $0\le i\le q$. Then $H^i(\Delta,\mathbf R)$ is represented
+by invariant forms on $Y_N$ in all those degrees. This use of the
+existential rank in \nolinkurl{SSurj} imposes no Borel range at the
+original rank $n_0$
+(\cite[Theorem 7.5, \S9.5 and \S\S11.2--11.4]{P-R5-Borel-stable};
+\nolinkurl{PositivityTheory.KB.SSurj}, \path{Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/SBStar.lean:20--24}).
+%BIB P-R5-Borel-stable | Armand Borel | Stable real cohomology of arithmetic groups | Ann. Sci. École Norm. Sup. (4) 7 (1974), 235–272 | https://www.numdam.org/item/10.24033/asens.1269.pdf | Theorem 7.5 and sections 9.5, 11.2–11.4 for the semisimple stable comparison over a number field.
+
+The remaining central factor matters already in degree one. Choose a
+torsion-free finite-index subgroup $U$ of the unit group. Scalar units
+give $\Gamma_0=\Delta\times U\subset G_N$ since the intersection would
+satisfy $u^N=1$. The determinant image of $\Gamma_0$ is $U^N$, of finite
+index in $\mathcal O_L^\times$, and $\Delta$ is the determinant kernel.
+At each place put $t_v=N^{-1}\log\det h_v$ and
+$y_v=e^{-t_v}h_v$. This identifies $X_N$ with
+$Y_N\times\mathbf R^{r_2}$. In the action used here
+$h\mapsto(g^{-1})^*hg^{-1}$, $t_v$ changes by
+$-2N^{-1}\log|\det g_v|$. A scalar unit translates it by
+$-2\log|u_v|$ while fixing $y_v$. The action on $y_v$ is
+conjugate-congruence by the determinant-normalized matrix: its determinant
+has modulus one and its phase can be removed by a unit scalar with
+trivial action on $y_v$. Consequently every invariant form on $Y_N$
+pulls back to a full-group invariant form, as does each $dt_v$.
+By the unit theorem these scalar translations form a full lattice in
+$\sum_v t_v=0$. Restricting constant covectors to the lattice therefore
+spans $H^1(U,\mathbf R)$; their exterior products span $H^*(U,\mathbf R)$
+by the cohomology of the torus. The real K\"unneth formula for
+$\Delta\times U$ now represents \emph{all} restrictions of classes in
+degree $q$ by sums of wedges of the two kinds of invariant forms. This
+includes all mixed terms. Restriction from $G_N$ is injective because
+transfer composed with restriction is multiplication by $[G_N:\Gamma_0]$.
+The class of this same form on $G_N$ thus equals the given class
+(\nolinkurl{PositivityTheory.KB.mat_actL}, \path{Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/ActLPos.lean:97--107};
+\nolinkurl{NumberField.Units.dirichletUnitTheorem.unitLattice_span_eq_top},
+\path{Mathlib/NumberTheory/NumberField/Units/DirichletTheorem.lean:318--350};
+\cite[Theorem 5.1 and its proof]{P-Milne-Mink}).
+
+To identify this comparison with the required evaluation, send a
+homogeneous bar simplex $(g_0,\ldots,g_q)$ to the affine simplex with
+vertices $g_i\cdot 1$ in $X_N$. Congruence acts linearly and the cone
+is convex. This augmented chain map respects deletion of vertices.
+Section~\ref{r6:review:Z2.K4} identifies its integration map with Borel's comparison. Indeed,
+on a torsion-free finite-index subgroup its quotient is a classifying
+space, and the affine map from the homogeneous bar realization to
+$X_N$ is equivariant between contractible free spaces. Passage back to
+$G_N$ is injective over $\mathbf R$ by transfer. Equivalently, any two
+equivariant choices of straightening into the cone are homotopic by
+linear interpolation. Changing from homogeneous to inhomogeneous chains
+gives the successive partial products in \nolinkurl{ev}; the integral
+of the pulled-back differential form is exactly \nolinkurl{intS}.
+The two cochains differ by a coboundary, whose value on every cycle is zero. Values of
+the form outside the positive cone can be set to zero since
+\nolinkurl{FInv} and \nolinkurl{intP} only test positive points.
+This proves the first comparison with the same $N$ for every $c$
+(\nolinkurl{PositivityTheory.KB.ev}, \nolinkurl{intS},
+\nolinkurl{FInv}, \nolinkurl{intP},
+\path{Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/ActLPos.lean:32--40,61--65,128--140};
+\cite[Theorem 7.5, proof by passage to a torsion-free subgroup]{P-R5-Borel-stable}).
+
+\paragraph{The proof selected by the Lean source.}
+The actual construction chooses a prime element of norm at least $25$,
+a partition-of-unity exponent $a$, and a common rank at least $3$,
+$n_0$, the Hecke threshold and the height-moment threshold for $2aq$.
+A Whitney form for $c$, followed by central averaging, gives a representative
+$\omega'$ with $\|\operatorname{fr}\omega'\|\le C\,\mathrm{ht}^{aq}$.
+The chosen moment gives square integrability of its frame on the
+finite-measure domain. Its normalized mean is the constant frame of a
+fully invariant form $\bar\omega$. Each coefficient of
+$\omega'-\bar\omega$ is square-integrable with zero mean. Iterating the
+Hecke contraction gives a bound $C_z(3/5)^r$ on its value on each
+cycle after $r$ steps. On a finite detecting family the stable double-coset
+formula bounds the norm of the vector of values below by
+$(4/5)^r\|x_0\|$. Dividing the two bounds and letting $r$ tend to
+infinity gives $x_0=0$. Stable surjectivity carries this vanishing to
+every cycle, so $\bar\omega$ represents $c$
+(\nolinkurl{PositivityTheory.KB.JoinReconstruction.key},
+\path{Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/IteratedHeckeBounds/LemForm.lean:49--108};
+\nolinkurl{lem_bound}, \path{Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/IteratedHeckeBounds/LemBound.lean:37--58,84--102};
+\nolinkurl{PositivityTheory.KB.AffineStabilizerVanishing.assemble},
+\path{Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/HeckeDoubleCosets/Assemble.lean:119--141,174--196,220--297}).
+\textit{[Proved in Lean, not reproduced: the alternative Hecke construction and its inputs, listed in
+Section~\ref{r6:review:Z2.K4}, including the spectral-gap and moment bounds,}
+\nolinkurl{PositivityTheory.KB.sGap_of},
+\path{Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/ArithmeticGapBounds/SGapOf.lean:10--14},
+\nolinkurl{PositivityTheory.KB.TwSMInt2.sMom_of},
+\path{Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/IntegralMomentReduction/SMomOf.lean:8--11}\textit{.]}
+The literature argument above discharges the entire \nolinkurl{SSurj}
+interface without assuming these estimates.
+
+\paragraph{From an invariant tensor to trace words.}
+Let $W$ be the set of infinite places and let $q$ be positive and odd.
+An invariant $q$-form on $X_N$ is determined by its value at the identity,
+a $\prod_w U(N)$-invariant real alternating tensor on
+$\bigoplus_w\operatorname{Herm}_N$. A positive square root transports
+this value to every point. Complexify the multilinear tensor, extending
+from Hermitian matrices to all matrices via $Z=H+iK$. In matrix entries it
+pairs with an operator on $(\bigoplus_w\mathbf C^N)^{\otimes q}$ that
+commutes with all block-unitary tensor powers. The relevant spanning
+calculation can be seen as follows. Let $\mathcal A$ be spanned by
+permutations of the tensor slots restricted to a specified tuple of
+places. These partial permutations contain the identity in their span
+and are closed under product and adjoint. Commuting with the place
+projections forces a coefficient of an element of $\mathcal A'$ to
+vanish across different tuples of places. Commuting with permutations
+makes the surviving entries constant under simultaneous reindexing.
+They are spanned by symmetrized products of block matrix units. Each
+such product is the coefficient of $t_1\cdots t_q$ in
+$(\sum_i t_i E_i)^{\otimes q}$, so polarization puts it in the span of
+block-matrix tensor powers. Those powers already lie in the span of
+block-unitary powers: a linear functional vanishing on the latter
+gives a degree-$q$ polynomial in diagonal entries, hence vanishes
+on arbitrarily chosen eigenvalues by interpolation on $q+1$ phases.
+Unitary diagonalization gives all Hermitian blocks, and the polynomial
+at $H+tK$ then gives $H+iK$. Thus $\mathcal A'$ is spanned by the
+unitary powers. Finite-dimensional double commutation gives
+$\mathcal A''=\mathcal A$ for this unital adjoint-closed algebra:
+on the space of matrices the Hilbert--Schmidt projection onto $\mathcal A$
+commutes with left multiplication by $\mathcal A$, since the subspace and its
+orthogonal complement are invariant. Its blocks between individual columns
+therefore belong to $\mathcal A'$. For $T\in\mathcal A''$ the projection
+commutes with left multiplication by $T$; applying this to the identity
+shows $T$ equals its projection.
+The representing tensor is therefore a combination of the partial
+permutations. Pairing such a permutation with matrix arguments gives one
+trace of a matrix word per cycle of the permutation, with the places
+constant around that cycle. Incompatible place labels give zero.
+Taking real and imaginary parts and alternating in the $q$ slots now
+spans every invariant real alternating form. These are spanning
+generators, so the argument works even in ranks with trace relations
+(\nolinkurl{BlockInvariants.cplx},
+\path{Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/PermutationSigns/BlkConjTranspose.lean:347--421};
+\nolinkurl{BlockInvariants.sw1}, \path{Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/PermutationSigns/PlacePermOperatorBicommutantSpan.lean:24--99,140--184};
+\nolinkurl{BlockInvariants.sw2}, \path{Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/PermutationSigns/PlacePermOperatorCommutantSpan.lean:53--61,91--169,251--260,346--383};
+\nolinkurl{BlockInvariants.fft_of}, \path{Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/PermutationSigns/FFTAsm.lean:51--84,94--152}).
+
+\paragraph{The one-cycle term.}
+For a pattern $x$ let $E_x(n)$ be the bar evaluation of the invariant
+form attached to its alternating trace. Padding by identity at the group
+level pads tangent vectors by zero, so preserves every trace word.
+Putting $d$ identical copies on the diagonal multiplies the trace of
+\emph{each} cycle by $d$. It scales $E_x$ by $d^{j}$ when there are
+$j$ cycles. The invariant forms here are closed: the symmetric-space
+bracket of two Hermitian tangent vectors is skew-Hermitian, so its
+projection back to the tangent space is zero in the formula for the
+exterior derivative of an invariant form. Pulling back to a simplex
+and applying Stokes gives zero on boundaries. Thus each $E_x$ is
+a weight-$j$ system in the precise sense of \nolinkurl{WSys}
+(\path{Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/SBStar.lean:9--12};
+\nolinkurl{TwAG.aGood}, \path{Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/SmoothCompositionIdentity/MatOne.lean:48--84};
+\nolinkurl{BlockInvariants.wPad}, \nolinkurl{weylTwoBlockMatrix},
+\path{Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/PermutationSigns/Weights.lean:246--262};
+\nolinkurl{BlockEvaluationBounds.Aev_bd}, \nolinkurl{Aev_stab}, \nolinkurl{Aev_blk},
+\path{Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/OddWeightCycles/AevApply.lean:15--46}).
+
+A permutation with one cycle is conjugate to the rotation on $q$ slots.
+Thus all its compatible place labels equal one $v$, and relabeling
+changes the alternating trace by the sign of the relabeling. Reversing
+the order conjugates the trace of a product of Hermitian matrices.
+The alternating real part is multiplied by the sign of reversal while
+the imaginary part picks up its negative. At least one of them is
+therefore zero. Fix $\tau_v$ to be the sum of the real and imaginary
+alternating rotation evaluations at $v$ in every rank. Each one-cycle
+term is a real multiple of $\tau_v$, with the zero term also allowed.
+This construction does not depend on $N$ or $\omega$. Group all remaining
+terms by their number of cycles $2\le j\le q$. Their real linear
+combinations have weight $j$. Integration, and then pairing with the
+bar chain, respect these finite sums, giving precisely the claimed
+decomposition. For $q=1$ the higher-weight sum is empty
+(\nolinkurl{BlockEvaluationBounds.wOneOdd}, \path{Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/OddWeightCycles/Weights.lean:144--198};
+\nolinkurl{BlockEvaluationBounds.swtOdd}, \path{Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/OddWeightCycles/AevApply.lean:67--115,117--152};
+\nolinkurl{PositivityTheory.KB.sWtOdd_of}, \path{Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/OddWeightCycles/SWtOddOf.lean:7--9}).
+
+\paragraph{Passage back to the original rank.}
+For $n\ge 2q+4$ and $\ell>0$, the rank after $k$ block operations is
+$m=\ell^kn\ge n$. Apply stable realization above $m$. The integral
+stabilization between $m$ and the chosen $N$ is an isomorphism in
+degree $q$; tensoring with $\mathbf R$ preserves it. If a terminal
+cycle in the real span has zero evaluations under every $\tau_v$ at
+$m$, these persist at $N$. On a terminal generator, evaluation by
+any weight $2\le j\le k+1$ contains the factor
+$\ell^j-\ell^{(j-2)+2}=0$ in the product of the $k$ recursive steps.
+This also kills mixed products involving determinant classes whenever
+they occur among these higher-weight components. Thus a separating
+real cocycle at $N$ would both detect the class and evaluate to zero
+after the two comparisons. The image in real homology has dimension
+at most $\#W=r_2(L)$. Each integral terminal generator maps into this
+image after extension of scalars, and an independent integral family
+stays independent after extension to $\mathbf R$. This gives the
+claimed $\mathbf Z$-rank bound. For the companion torsion statement,
+compose the consecutive integral stability isomorphisms from $n$ to
+$n'\ge n\ge2i+4$ in degree $i$. An isomorphism restricts to an
+isomorphism of torsion subgroups, and the finite torsion estimate used
+in K7 supplies finiteness
+(\nolinkurl{PositivityTheory.KB.sBStarOdd_of}, \path{Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/OddSpanRank/SBStarOddOf.lean:13--78};
+\nolinkurl{TwOdd.rank_span_le}, \path{Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/OddSpanRank/RankSpanLe.lean:7--45};
+\nolinkurl{PositivityTheory.KB.bOdd_zk}, \path{Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/TorsionIntegers/Bridge.lean:22--35};
+\nolinkurl{UpperTheory.V.ZK.Up.torsStab}, \path{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/TorsionRankCounts/TorsStab.lean:16--39}).
+\textit{[Hypothesis, discharged at}
+\nolinkurl{UpperTheory.V.ZK.bOdd}, \path{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/BOdd.lean:3}\textit{:}
+the odd-rank input of \nolinkurl{UpperTheory.V.ZK.lemmaK_of_litN_alt}
+is supplied at \nolinkurl{UpperTheory.V.ZK.lemmaK_litN_alt},
+\path{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/KFinal.lean:9--11}\textit{.]}
+
+% blueprint/ch_P.tex lines 12595 through 12612; r6:review:Z2.K4
+\subsection{Z2.K4. Straight simplices in the stable comparison}\label{r6:review:Z2.K4} \emph{Original argument on p.~\pageref{sec:P-r5-k4}.} 
+
+The hand proof of stable realization uses Borel's map $j$ from invariant forms on the symmetric space. Its source, target and stable range are given in the introduction and Theorem~7.5 of \cite{P-R5-Borel-stable}. We explain how the resulting class evaluates on the precise bar cycle in \nolinkurl{SSurj}. Work first on a finite-index torsion-free subgroup. Such a subgroup can be constructed by embedding $\mathrm{GL}_N(\mathcal O_L)$ in an integral matrix group by restriction of scalars and taking the kernel modulo $3$. If this kernel had torsion, some nonidentity element of prime order $p$ would be $I+3^aB$, $a\ge1$, with an entry of $B$ prime to $3$. In its $p$-th power the linear term has a strictly smaller $3$-adic valuation than all higher terms, also for $p=3$ when the linear term has valuation $a+1$. This contradicts the power being the identity. Intersecting this kernel with the arithmetic subgroup gives the required finite cover. The action on the positive cone is proper with finite stabilizers, hence free there for this subgroup. The contractible cone gives a classifying space on taking the quotient; the same applies to the determinant-one cone for the special linear group.
+\par{\footnotesize \nolinkurl{PositivityTheory.KB.SSurj} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/SBStar.lean}\allowbreak:20--24). \nolinkurl{PositivityTheory.KB.FInv}, \nolinkurl{intP} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/ActLPos.lean}\allowbreak:61--65,128--140).\par}
+
+A tuple $(g_0,\ldots,g_q)$ in the homogeneous bar resolution goes to the smooth singular simplex $s(t)=\sum_i t_i(g_i\cdot1)$ of the full cone. Each face is the simplex of the shortened tuple. This comparison lifts the identity on augmentations. Both complexes are free resolutions for the torsion-free subgroup: the smooth singular complex is exact by contraction of the convex cone, and the group acts freely on its simplices. Thus it induces the usual classifying-space identification. De Rham's integration isomorphism on the quotient sends a closed descended form to $\sigma\mapsto\int\sigma^*\omega$. Its pullback along the displayed comparison therefore gives exactly the integral on $s$. Borel's map includes the invariant form among the invariant differential forms of the arithmetic subgroup; this is the same de Rham class. For the determinant-one component, project $s$ by $h\mapsto h/(\det h)^{1/N}$ at each place before evaluation. In inhomogeneous bar notation the vertices are the successive partial products, giving precisely \nolinkurl{ev}. For the inclusion of the torsion-free subgroup $\Gamma'\subset\Gamma$, take the finite covering $E\Gamma/\Gamma'\to B\Gamma$ of classifying spaces. Summing all lifts of each simplex gives the transfer, whose composite with projection multiplies by the index. Restriction is consequently injective over $\mathbf R$, so the equality of cohomology classes descends to the original group and yields equality on every cycle \cite[Theorem 18.14]{P-R6-Lee-derham}\cite[\S3.G]{P-R6-Hatcher}.
+\par{\footnotesize \nolinkurl{PositivityTheory.KB.ev}, \nolinkurl{intS}, \nolinkurl{intP} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/ActLPos.lean}\allowbreak:32--40,61--65,128--140). \nolinkurl{PositivityTheory.KB.SSurj} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/SBStar.lean}\allowbreak:20--24).\par}
+%BIB P-R6-Lee-derham | John M. Lee | Introduction to Smooth Manifolds | 2nd ed., Graduate Texts in Mathematics 218, Springer (2013) | https://doi.org/10.1007/978-1-4419-9982-5_18 | Chapter 18, Theorem 18.14, integration of smooth forms on simplices.
+%BIB P-R6-Hatcher | Allen Hatcher | Algebraic Topology | Cambridge University Press (2002) | https://pi.math.cornell.edu/~hatcher/AT/AT.pdf | Sections 3.2 and 3.G, cross products and transfer.
+
+For the finite-index product $\Delta\times U$ of Section~\ref{sec:P-r5-k4}, the classifying space of $U$ is its real vector space modulo the lattice. A basis of the logarithmic lattice, with dual constant covectors, gives the degree-one periods $\delta_{ij}$. Products of distinct dual covectors give the dual basis on the coordinate subtori. Dirichlet's unit theorem identifies this lattice in the hyperplane of logarithms \cite[Theorem 5.1]{P-Milne-Mink}. The real K\"unneth isomorphism with this finite torus gives sums of products with the classes of $\Delta$ \cite[\S3.2]{P-R6-Hatcher}. On a product cycle, integrate the exterior product of the two pulled-back forms and apply iterated integration on the two factors. Triangulation of a product of simplices gives the cross product on singular chains, so these products give precisely the required periods. The construction of a single sufficiently large $N$ for this proof uses Borel's stable range in all degrees up to $q$. The additional condition $q<r_2(L)$ enters the formal Hecke proof through its Hecke input.
+\par{\footnotesize \nolinkurl{PositivityTheory.KB.SSurj} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/SBStar.lean}\allowbreak:20--24). \nolinkurl{PositivityTheory.KB.JoinReconstruction.key} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/IteratedHeckeBounds/LemForm.lean}\allowbreak:49--64).\par}
+
+\emph{Proved in Lean, not reproduced here (alternative construction of stable realization).} The formal Hecke route takes a suitable prime, a Hecke comparison, height and partition-of-unity bounds, a moment, Whitney reconstruction, central averaging, a spectral gap, localization, an invariant mean and an invariant-form input. Its contraction and detection argument is summarized in Section~\ref{sec:P-r5-k4}. The hand proof uses the preceding published comparison for the entire stable-realization input.
+\par{\footnotesize \nolinkurl{PositivityTheory.KB.JoinReconstruction.key} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/IteratedHeckeBounds/LemForm.lean}\allowbreak:49--108).\par}
+
+Finally the integral bar complex is free over $\mathbf Z$. Since $\mathbf R$ is flat over $\mathbf Z$, tensoring both the cycle--boundary sequence and the boundary--chain sequence identifies real bar homology with $\mathbf R\otimes_{\mathbf Z}H_*(G,\mathbf Z)$. The identification commutes with each group map because the chain map applies the homomorphism to each tuple. In particular it carries each recursive difference of the diagonal-copy map and a multiple of stabilization to the corresponding difference on homology. This is the scalar-extension step for the odd rank bound. For the separate torsion conclusion use consecutive integral stability isomorphisms in the range $n\ge 2i+4$ and the finiteness from K7. The original proof uses the project stability theorem; the published stable range cited in Section~\ref{sec:P-r5-k4} suffices for the hand argument. The Selmer upper-bound assembly takes precisely this torsion statement as its first input; its discharge and the numerical stability range are given on page~\pageref{r7:review:Z2.K4}.
+\par{\footnotesize \nolinkurl{PositivityTheory.KB.SBridge} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/SBridgeAlt.lean}\allowbreak:28--34). \nolinkurl{PositivityTheory.KB.PrimeModuloFree.th_zc} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/TensorPrimeModuli/SBStarOf.lean}\allowbreak:57--84). \nolinkurl{GlobalTheory.HomStab.kStability_main} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/HomologicalStability/LinkExactnessStability/HomologicalStabilityTheorem.lean}\allowbreak:10--32). \nolinkurl{UpperTheory.V.ZK.Up.torsStab} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/TorsionRankCounts/TorsStab.lean}\allowbreak:16--39). \nolinkurl{UpperTheory.V.ZK.sUpperOf} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/SUpperOf.lean}\allowbreak:64--66).\par}
+
+% Parent source SHA-256: 1fdc6ea9aac6cf10316f85b3253b33ae98289a76ff5aa2e79daaaf11e057ce18
+% blueprint/ch_P_r7.tex lines 26 through 30; r7:review:Z2.K4
+\subsection{Two stability comparisons in Z2.K4}\label{r7:review:Z2.K4}
+The odd-rank assertion \nolinkurl{PositivityTheory.KB.bOdd_zk} (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/TorsionIntegers/Bridge.lean:34--35}) uses the published stable-realization route on page~\pageref{r6:review:Z2.K4}: Borel's comparison, the de Rham integration isomorphism \cite[Theorem 18.14]{P-R6-Lee-derham}, and finite-cover transfer \cite[\S3.G]{P-R6-Hatcher}. \emph{[Proved in Lean, not reproduced: alternate Hecke construction.]} In the namespace \nolinkurl{PositivityTheory.KB} the explicit inputs are \nolinkurl{sPrime_of} (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/PrincipalPrimes/SPrimeOf.lean:6}) (prime), \nolinkurl{sHt_of} (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/HeightContinuity/SHtOf.lean:6--9}) (height), \nolinkurl{sHecke}, \nolinkurl{sPU}, \nolinkurl{sWhit}, \nolinkurl{sCen}, \nolinkurl{sLoc} (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/SBridge.lean:31--36}) (Hecke, partition of unity, Whitney reconstruction, central averaging and localization), and \nolinkurl{sMean_of} (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/MeanLatticeCounts/CountableLatS.lean:178--222}) (invariant mean). They feed the formal stable-realization construction described on page~\pageref{r6:review:Z2.K4}.
+
+\emph{[Hypothesis, discharged at the Selmer upper-bound assembly.]} The independent torsion input to \nolinkurl{UpperTheory.V.ZK.sUpperOf} (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/SUpperOf.lean:64--66}) is \nolinkurl{UpperTheory.V.ZK.Up.torsStab} (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/TorsionRankCounts/TorsStab.lean:16--39}). For degree $i>0$, van der Kallen's integral stability theorem for $\mathrm{GL}_n(R)$ gives an isomorphism for $n\ge2i+d$, where $d$ is the stable dimension in his convention. For the Dedekind ring $R=\mathcal O_L$, $d\le\dim R=1$ \cite[\S2.2 and Theorem 4.11(a)]{P-R7-vdK}. Degree zero is constant. Hence each step from $n$ to $n'\ge n\ge2i+4$ is an integral homology isomorphism. An additive isomorphism preserves elements of finite order in both directions. K7 gives finiteness at $n$, and transporting its torsion subgroup gives finiteness and equality of orders at $n'$. Finiteness and the common stable range are separate from the odd-rank bound.
+%BIB P-R7-vdK | Wilberd van der Kallen | Homology stability for linear groups | Inventiones Mathematicae 60 (1980), 269--295 | https://doi.org/10.1007/BF01390018 | Section 2.2, p. 271; Theorem 4.11(a), p. 286, with ordinary general linear groups and integral coefficients.
+

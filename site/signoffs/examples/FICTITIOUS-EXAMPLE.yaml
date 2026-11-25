@@ -1,0 +1,24 @@
+# FICTITIOUS/EXAMPLE. No human submitted this record. Do not put it in records/.
+example: FICTITIOUS/EXAMPLE
+reader:
+  name: FICTITIOUS EXAMPLE READER
+  field: Elementary algebra (worked example)
+  level: other
+unit: EXAMPLE-ONLY
+edition_sha256: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+scope:
+  steps: [S1, S2, S3]
+verdict:
+  S1: checked-correct
+  S2: gap-found
+  S3: not-attempted
+what_i_did: >-
+  In this fictitious example I derived the expansion in S1 on paper and tested the
+  denominator in S2 at zero. I did not read the downstream estimate S3.
+time_spent_hours: 0.5
+reservations: S2 divides by a parameter whose stated range includes zero.
+conflicts_of_interest: none
+ai_assistance_used: none
+ai_assistance_description: none
+date: '2000-01-01'
+attestation: FICTITIOUS — not an attestation

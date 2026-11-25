@@ -1,0 +1,156 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "P043",
+  "edition_sha256": "976ddcf3b5f4822ed18fcecbebd0abd093a292fa5a345288a4c4837543d988e4",
+  "note_sha256": "1326af3cc7ac33629fa26c805f2fb6d20b3759380e6c1a0205f3ffe5e40451d4",
+  "statement_sha256": "8c8dd7b35b0a576748d3668623c4ba30490cb6de899b6fc3474c0af2b471102f",
+  "sources": [
+    {
+      "path": "notes/units/P043.tex",
+      "sha256": "1326af3cc7ac33629fa26c805f2fb6d20b3759380e6c1a0205f3ffe5e40451d4"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "An integral lift and its continuous orbit give continuity on the projected row target.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: surjective integral projection and continuous source action"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.MainNotions.N.K.Closed.open_inputs_at_normalized",
+          "file": "Formalism/AdmissibleDesigns/StatementOneBFromUnramified.lean",
+          "line0": 74,
+          "line1": 93
+        }
+      ],
+      "source": "notes/units/P043.tex",
+      "anchor": "A target vector lifts integrally",
+      "source_lines": [
+        14,
+        27
+      ],
+      "claim_sha256": "8c4ddbd588b43b4d634b1aeffc538760c97b1553c49320f3b079ee49ae073d83",
+      "passage_sha256": "437621322367bb4f8b4adff2c87ea33255c8fd8b5ac2449eca19be6bb523b434",
+      "sha256": "9728a6d363b725d8605b30df116a64c3aeb6ba9be1a6d6d3588a184c21f4696c",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Pullback preserves finite period coboundaries and identifies the denominator defining the row length.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "input: compatible local isomorphisms"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.MainNotions.N.K.Closed.open_inputs_at_normalized",
+          "file": "Formalism/AdmissibleDesigns/StatementOneBFromUnramified.lean",
+          "line0": 74,
+          "line1": 93
+        }
+      ],
+      "source": "notes/units/P043.tex",
+      "anchor": "Pull back the two lattices",
+      "source_lines": [
+        14,
+        27
+      ],
+      "claim_sha256": "b4e6d5c688949251959c84f6dd342158bac3909a032b65232e9520c7dfe72382",
+      "passage_sha256": "437621322367bb4f8b4adff2c87ea33255c8fd8b5ac2449eca19be6bb523b434",
+      "sha256": "805943502c1ad0c77b6d7d7e80deab743706c02f4f2672494ebe40544526c053",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Under the integral pairings the rational annihilator identity yields the stated torsion annihilator after reduction.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S2",
+        "input: rational annihilator identity and saturation"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.MainNotions.N.K.Closed.open_inputs_at_normalized",
+          "file": "Formalism/AdmissibleDesigns/StatementOneBFromUnramified.lean",
+          "line0": 74,
+          "line1": 93
+        }
+      ],
+      "source": "notes/units/P043.tex",
+      "anchor": "Cup products are preserved",
+      "source_lines": [
+        29,
+        31
+      ],
+      "claim_sha256": "81d162f3705c8fd2faa001fffaff74e7009187b6ccf683f020ccbbfa22793fbc",
+      "passage_sha256": "cefce9635ee21107131e828b8cc438521d9038946e93c98ad84fad223eae4b0d",
+      "sha256": "611eb166791c8198d1059f958d882cddca851fbd4198d8d8fac3f5d1d4a23c53",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "Coordinate coboundary witnesses reassemble over the coefficient ring and give the stated length conversion for the scalar twists.",
+      "kind": "assembly",
+      "uses": [
+        "standard: integral coefficient basis",
+        "input: scalar cohomology clause"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.MainNotions.N.K.Closed.open_inputs_at_normalized",
+          "file": "Formalism/AdmissibleDesigns/StatementOneBFromUnramified.lean",
+          "line0": 74,
+          "line1": 93
+        }
+      ],
+      "source": "notes/units/P043.tex",
+      "anchor": "Projection of a cocycle commutes",
+      "source_lines": [
+        29,
+        31
+      ],
+      "claim_sha256": "90cf4e4c8cbb39ed8e404dd84f6872e54e292bad759804e9745a0175dcab1782",
+      "passage_sha256": "cefce9635ee21107131e828b8cc438521d9038946e93c98ad84fad223eae4b0d",
+      "sha256": "fc884b2ec28f806f41f58251d5a9e5e79a5b73b23d56a4520b971310749158fb",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "2cb0eb4842f7eda50a2e36e1e5e5e60597b4f84e840ad35cd1259f1295db6ade",
+      "sources": [
+        {
+          "path": "notes/units/P043.tex",
+          "sha256": "7300225fd9c0ee4e496e434b3429819a970f23c66f06b82c2ca36dbcaa85a5a8"
+        }
+      ],
+      "statement_sha256": "8c8dd7b35b0a576748d3668623c4ba30490cb6de899b6fc3474c0af2b471102f",
+      "steps": {
+        "S1": "9728a6d363b725d8605b30df116a64c3aeb6ba9be1a6d6d3588a184c21f4696c",
+        "S2": "805943502c1ad0c77b6d7d7e80deab743706c02f4f2672494ebe40544526c053",
+        "S3": "611eb166791c8198d1059f958d882cddca851fbd4198d8d8fac3f5d1d4a23c53",
+        "S4": "fc884b2ec28f806f41f58251d5a9e5e79a5b73b23d56a4520b971310749158fb"
+      },
+      "step_texts": {
+        "S1": "An integral lift and its continuous orbit give continuity on the projected row target.",
+        "S2": "Pullback preserves finite period coboundaries and identifies the denominator defining the row length.",
+        "S3": "Under the integral pairings the rational annihilator identity yields the stated torsion annihilator after reduction.",
+        "S4": "Coordinate coboundary witnesses reassemble over the coefficient ring and give the stated length conversion for the scalar twists."
+      },
+      "step_passages": {
+        "S1": "437621322367bb4f8b4adff2c87ea33255c8fd8b5ac2449eca19be6bb523b434",
+        "S2": "437621322367bb4f8b4adff2c87ea33255c8fd8b5ac2449eca19be6bb523b434",
+        "S3": "cefce9635ee21107131e828b8cc438521d9038946e93c98ad84fad223eae4b0d",
+        "S4": "cefce9635ee21107131e828b8cc438521d9038946e93c98ad84fad223eae4b0d"
+      }
+    }
+  ]
+}

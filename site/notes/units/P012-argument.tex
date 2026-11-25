@@ -1,0 +1,132 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Manuscript v3, heading p. 22; original out/r23_p012.tex, SHA-256 ee390969606d602a5bd61719e0c28f4b791e881dbd90e20277b52b79d12ff27d.
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+\noindent\nolinkurl{UpperTheory.LiteratureTheorems.poincare_lelong_inv_of_literature} --- in-repo constant (\path{Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:553--554}); not compared.\par
+\noindent\nolinkurl{PositivityTheory.Pf1.HilbertSamuelMoriwaki.moriwakiBig_outright} --- in-repo constant (\path{Development/WeilBound/CoreStatements/AutomorphicKernels/MoriwakiBigness/MoriwakiBigTheorem/Outright.lean:9--11}); not compared.\par
+\noindent\nolinkurl{UpperTheory.LiteratureTheorems.fargues_exact_of_literature} --- in-repo constant (\path{Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:549--550}); not compared.\par
+\noindent\nolinkurl{UpperTheory.LiteratureTheorems.zarhin_statement} --- in-repo constant (\path{Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:547--548}); not compared.\par
+\noindent\nolinkurl{UpperTheory.LiteratureTheorems.local_langlands_gl_recT_exists_of_literature} --- in-repo constant (\path{Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:313--314}); not compared.\par
+\noindent\nolinkurl{GlobalTheory.GreenBridge.green_of_regular} --- in-repo constant (\path{Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/SumRangeEqRoots.lean:225--304}); not compared.\par
+\noindent\nolinkurl{GlobalTheory.greenRegularCharacters_holds} --- in-repo constant (\path{Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/GreenCuspidalCharsByRegularCharsProof.lean:137--168}); not compared.\par
+\noindent\nolinkurl{GlobalTheory.Fc.S0.UnitaryGroupThirdPlaceHypotheses.siegelWeilUnitaryConvergent} --- record field (\path{Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/BernsteinUnitaryProductIrreducible.lean:33}); not compared.\par
+\noindent\nolinkurl{GlobalTheory.Fc.S0.UnitaryGroupThirdPlaceHypotheses.greenCuspidal} --- record field (\path{Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/BernsteinUnitaryProductIrreducible.lean:24}); not compared.\par
+\noindent\nolinkurl{GlobalTheory.Fc.S0.UnitaryGroupThirdPlaceHypotheses.discreteSeriesCover} --- record field (\path{Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/BernsteinUnitaryProductIrreducible.lean:57}); not compared.\par
+\noindent\nolinkurl{GlobalTheory.Fc.S0.UnitaryGroupThirdPlaceHypotheses.harishChandraModules} --- record field (\path{Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/BernsteinUnitaryProductIrreducible.lean:58}); not compared.\par
+\noindent\nolinkurl{GlobalTheory.Fc.S0.UnitaryGroupThirdPlaceHypotheses.cuspRapidDecay} --- record field (\path{Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/BernsteinUnitaryProductIrreducible.lean:31}); not compared.\par
+\noindent\nolinkurl{GlobalTheory.Fc.S0.UnitaryGroupThirdPlaceHypotheses.casselmanWallach} --- record field (\path{Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/BernsteinUnitaryProductIrreducible.lean:59}); not compared.\par
+\noindent\nolinkurl{GlobalTheory.Fc.S0.UnitaryGroupThirdPlaceHypotheses.rayClassFieldSt} --- record field (\path{Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/BernsteinUnitaryProductIrreducible.lean:52}); not compared.\par
+\noindent\nolinkurl{GlobalTheory.FunPr.ThetaLocalInputs.siegelSetUnitary} --- record field (\path{Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/BernsteinUnitaryProductIrreducible.lean:58}); not compared.\par
+\noindent\nolinkurl{GlobalTheory.FunPr.ThetaLocalInputs.howeDualityReal} --- record field (\path{Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/BernsteinUnitaryProductIrreducible.lean:57}); not compared.\par
+\noindent\nolinkurl{GlobalTheory.Fc.S0.UnitaryGroupThirdPlaceHypotheses.greenRegularCharacters} --- record field (\path{Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/BernsteinUnitaryProductIrreducible.lean:50}); not compared.\par
+% End of atlas edition annotation.
+
+\subsection{P012: the covolume bound and a common definite-side witness}
+\label{sec:r23-p012}
+
+The Selmer window and the definite-side witness are separate inputs to
+\nolinkurl{every_character_of_theta_integrals_local_matching}
+(\path{SiegelEisensteinSecondTermHypotheses.lean:69--73}).
+We trace the latter input backwards through two implications. The statements
+refer to the individual field specifications in \hyperref[sub:T13]{T13}
+and \hyperref[sub:T02]{T02}.
+
+\begin{formalstatement}[The closed covolume bound, \decid{T13}]
+Assume the following fifteen inputs in their source formulations:
+resolution and principalisation in characteristic zero, invariant
+Poincaré--Lelong, Hilbert--Samuel (\nolinkurl{HSUse}), Moriwaki bigness,
+Fargues exactness, Zarhin's statement, nef Riemann--Roch, integral
+Siegel toroidal models, toroidal models for the fan and KS,
+seminegativity of the semiabelian Lie bundle, point separation for a
+pair, arithmetic degree, the published Hodge-bundle record, and
+Grothendieck deformation. There is $\varepsilon_1>0$ such that for
+each $0<\varepsilon\le\varepsilon_1$ there is a largeness parameter $K$
+with the following property. For every $\varepsilon$-family $F$ and
+$H\in\mathbb R$ satisfying $\mathrm{FamHyp}(F)$ and
+$F.\mathrm{Large}(K,H)$ there exist $C_0\ge0$ and $x_0\in\mathbb R$.
+For every $x>x_1(F)$ with $x\ge x_0$, family index $\iota$, and point
+$p$ over $(x,\iota)$ satisfying \nolinkurl{RowsTAlt}, set $S=p.S(\mathrm{false})$.
+For all $C\ge C_0$ and all column indices $j$,
+\[
+   \frac{\operatorname{lcv}(S.XW_j,S.M_j)}{S.D}
+      \le (p.N(C,H)).\mathrm{l3}_j .
+\]
+\end{formalstatement}
+\noindent\nolinkurl{SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt},
+\path{ThirdPlaceSeries/TopCovolSlim2Use.lean:16--22};
+\nolinkurl{CovolumeBoundOfX} and \nolinkurl{EventuallyAtAllPoints},
+\path{LiftLambdaBound.lean:60--61} and \path{LiftLambdaBound.lean:17--19};
+\nolinkurl{Formalism.MainNotions.Closed}, \path{ParamsHeightRankConstant.lean:159--161}; \nolinkurl{L3},
+\path{IndefSide.lean:315--316}.
+
+\begin{outline}
+The first eight inputs give the lower bound on the average of the
+component slopes at a good deep datum (\decid{T14}). To pass from
+components to rows one needs two further geometric records.
+For the first, combine KS, seminegativity and separation with
+the Green assertion from regular characters (\decid{D575}) and the
+Fubini--Study Chow height formula from the Hodge record (\decid{D155}).
+For the second, obtain fan charts from KS (\decid{D157}), pass to
+toroidal charts using the integral Siegel model, and adjoin arithmetic
+degree. Toroidal nonvanishing (\decid{D153}) gives injectivity on
+small sections (\decid{D127}); pair this with the Chow-form height
+comparison (\decid{T16}). The remaining intersection inputs are
+fields $q_6,q_8,q_{13},q_7,q_{10},q_{12}$ of the Hodge record,
+integrality of the Chow form (\decid{D156}) and its hyperplane
+compatibility (\decid{D154}).
+Thus all seven premises of \decid{T15} are available.
+There the degree and share estimates on a cover, together with the
+height lower bound and the cover height sum, give a uniform lower
+bound on its components. Lifting this bound and applying the
+truncation, bad-set and lambda estimates yields the displayed
+inequality. These estimates are lower inputs to the outline.
+See \nolinkurl{topCovolSlim2_use_alt_alt},
+\path{ThirdPlaceSeries/TopCovolSlim2Use.lean:17--22}, and
+\nolinkurl{topCovolG_alt_alt}, \path{ThirdPlaceSeries/TopCovolG.lean:39--58}.
+\end{outline}
+
+\begin{formalstatement}[The definite-side record, \decid{T02}]
+Assume the third-place unitary-group record $P$, the local theta
+record $F$, agreement of theta integrals, local matching, and the
+closed covolume bound above. Fix any $h:\mathrm{RecTExists}$.
+For $c\in\mathbb R$ let $p(c)=\mathrm{parametersOfDependence}(h,c)$.
+Write $B$ for \nolinkurl{BoundAtTwoThreeFamilyFonAlt}. Suppose that
+for every real $c$ the following proposition holds:
+\[
+ \operatorname{LinkedAt}\bigl(p(c),\,
+ (Q,L)\mapsto\operatorname{SlotNormCondition}
+ (Q,L,\mathcal A\mapsto\operatorname{Closed}(\mathcal A,B))\bigr).
+\]
+Then $\mathrm{HypsAlt}(\mathrm{S0.NL},\mathrm{DefiniteSideCondition})$
+has an inhabitant. Its family class, bundle selection and threshold
+function are shared by its certificates.
+\end{formalstatement}
+\noindent\nolinkurl{UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound},
+\path{SiegelEisensteinSecondTermHypotheses.lean:44--68};
+\nolinkurl{GlobalTheory.Fc.HypsAlt}, \path{ThirdPlaceSeries/Hyps.lean:22--39}.
+
+\begin{outline}
+Separation of functionals follows from the unramified Howe input and
+convergent unitary Siegel--Weil (\decid{T09}). With matching and
+agreement, the test-vector result gives row rationality (\decid{D035}).
+There are two thresholds: evaluation on a grid gives $C_1$
+(\decid{D034}), and constant-function Fourier fit (\decid{T10})
+gives the threshold $C_0$ for the linked functional condition
+(\decid{D036}). Put $c=\max(C_0,C_1)$ and
+$A=\mathrm{GridA}(c)$. Since $c\ge C_1$, $A$ holds eventually.
+Take the open parameter statement at $p(c)$ (\decid{T08}) and
+transport it to the extension with origin and property $A$, no
+additional series and the closure of all geometries (\decid{D039}).
+On this extension $c\ge C_0$ now supplies the functional condition;
+the closed covolume estimate supplies the linked third-place row bound
+(\decid{D041}). Apply \decid{T03} with these two linked conditions
+on the extension and the assumed small-prime bound at the original
+$p(c)$. Its member-stage construction transfers the needed norm
+condition, assembles the row certificates and selects one definite-side
+record. This is where choosing a single $c$ for all three conditions
+matters. See \nolinkurl{nonempty_hyps_definite_side_of_closed_bound},
+\path{SiegelEisensteinSecondTermHypotheses.lean:45--68}, and
+\nolinkurl{hypotheses_nonempty_of_unramified_exponents_alt},
+\path{HypothesesNonemptyOfUnramifiedExponents.lean:41--61}.
+\end{outline}

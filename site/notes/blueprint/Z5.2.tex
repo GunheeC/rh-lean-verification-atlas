@@ -1,0 +1,66 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% RH Notes blueprint source excerpts for Z5.2
+% Verbatim excerpts in the notation of the parent blueprint. The labelled editions and source ranges appear below.
+% See the unit YAML for the current proof status. Earlier-round passages retain their original wording.
+\section*{Z5.2. Height of the evaluation dual}
+
+% Parent source SHA-256: 1af64922b98ed2310744411b1f18b25cc426c97220646321471836e1a3a409d6
+% blueprint/ch_P.tex lines 2135 through 2191; lem:P5-eval-realize
+\begin{lemma}[Height of the evaluation dual]\label{lem:P5-eval-realize}
+\lean{Formalism.HN.DualPolygon.ht_dual}\uses{lem:P5-gram-realize}
+For $A$ as above, $A^*=\{\phi\in V^*:\phi(A)\subseteq\mathcal O_K\}$
+in the dual frame satisfies
+$\operatorname{ht}(X^\vee,A^*)\operatorname{ht}(X,A)=1$.
+\end{lemma}
+\begin{proof}
+Write $L=\rho_X A$, $\rho'=\rho_{X^\vee}$, and let $J$ denote
+coordinatewise complex conjugation. The trace dual is
+$T=\{\phi\in V^*:\operatorname{Tr}(\phi(A))\subseteq\mathbf Z\}$.
+The Euclidean dual is exactly $L^\#=2J\rho' T$. Indeed, pairing the
+realizations of $x$ and $2J\rho'\phi$ gives
+$2\sum_v\operatorname{Re}(\sigma_v\phi(x))=\operatorname{Tr}(\phi(x))$:
+the transposed change of coordinates in the dual cancels $X_v^{-1}$
+in the primal. Conversely an integral linear form on $L$ extends to
+a rational linear form on $V$ because $A$ spans $V$ over $\mathbf Q$.
+The map $\phi\mapsto\operatorname{Tr}\circ\phi$ from $V^*$ to the
+rational dual is injective (a nonzero $K$-linear form takes the value
+$1$, whose trace is $n$) and both rational dimensions are $nD$.
+The representing real vectors agree since $L$ spans the real space.
+A Euclidean lattice with basis matrix $H$ has dual basis $H^{-t}$.
+The factor 2 acts in $nD$ real dimensions and $J$ is an isometry, giving
+\[
+ \operatorname{covol}(\rho'T)=2^{-nD}C_X(A)^{-1}.
+\]
+See \path{DualPolygon.ident_trace_eq}, \path{inner_realize_alt} and
+\path{dualZ_zl_eq} (\path{DualPl.lean:70--95,114--148,196--312}).
+
+Let $\mathfrak d^{-1}=\{z\in K:\operatorname{Tr}(z\mathcal O_K)
+\subseteq\mathbf Z\}$ be the codifferent. Since $\mathcal O_K A=A$,
+one has $T=\operatorname{Hom}_{\mathcal O_K}(A,\mathfrak d^{-1})$.
+Both modules in $A^*\subseteq T$ are full lattices: in the notation of
+the preceding proof $cB^*\subseteq A^*\subseteq B^*$, and $T$ already
+has a full real realization. In the integral basis $\omega_i$ the
+codifferent has coordinate lattice
+$(\operatorname{Tr}(\omega_i\omega_j))^{-1}\mathbf Z^n$.
+Hence $|\mathfrak d^{-1}/\mathcal O_K|=\Delta$.
+At each nonzero prime $\mathfrak p$, $A_{\mathfrak p}$ is free of rank $D$
+over the discrete valuation ring: it is finitely generated and
+torsion-free over a principal ideal domain. Localization commutes with
+these Hom modules since $A$ is finitely presented. Thus
+$(T/A^*)_{\mathfrak p}$ is the direct sum of $D$ copies of
+$(\mathfrak d^{-1}/\mathcal O_K)_{\mathfrak p}$. Multiplying residue-field
+orders with their composition lengths over the finitely many primes in
+the support gives $[T:A^*]=\Delta^D$. This also explains why a global
+$\mathcal O_K$-basis of $A$ is unnecessary. See
+\path{DualPolygon.dual_inf_ann_eq}, \path{twist_index} and \path{key_lemma}
+(\path{DualPl.lean:443--495,689--731,863--872,947--955}).
+It follows that
+\[
+ C_X(A)C_{X^\vee}(A^*)=2^{-nD}\Delta^D .
+\]
+Each height contributes $2^{fD}\Delta^{-D/2}$, so their product is one
+since $2f=n$. This proves the full-lattice clause of
+\path{Formalism.HN.DualPolygon.ht_dual} (\path{DualPl.lean:1065--1073}).
+\emph{Status: complete.}
+\end{proof}
+

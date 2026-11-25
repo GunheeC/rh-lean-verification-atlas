@@ -1,0 +1,156 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>R16_review_B · RH verification atlas</title><link rel="stylesheet" href="../atlas.css"></head><body><header><div class="bar"><a class="brand" href="../index.html">RH verification atlas</a><nav aria-label="Atlas navigation"><a href="../index.html">Home</a> <a href="../STATUS.html">Status</a> <a href="../MAP.html">Map</a> <a href="../dashboard/index.html">Tracks</a> <a href="../lookup/search.html">Search declarations</a></nav></div></header><main><p class="notice">AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved</p>
+<h1 id="r16_review_b">R16_review_B</h1>
+<p>AI review report produced during this project; file names are internal working names.</p>
+<ul><li>Internal source file: <code>out/R16_review_B.md</code></li><li>SHA-256: <code>ac60e0255aabdadb178405bc52036c13ac4e75229e959941ea347559be340080</code></li><li>Report scope: R16 review B — audit of the L/S/R/N triage pilot on Z1.5</li></ul>
+<h2 id="internal-report">Internal report</h2>
+<p>The report below preserves its original verdict, scope and unresolved points. Superseded graph percentages have been removed from this public edition. Source line numbers in other records count from its original title.</p>
+<h1 id="r16-review-b--audit-of-the-lsrn-triage-pilot-on-z15">R16 review B — audit of the L/S/R/N triage pilot on Z1.5</h1>
+<p>Reviewer B, independent. Pin <code>40e56bab026552e089d7afcfeff08d2defb9c005</code>. Nothing in this review claims, or depends on, RH being proved; it concerns only how a Lean development is partitioned for a human-readable blueprint.</p>
+<p>Inputs audited: <code>triage.py</code>, <code>R16_Z1_5_inputs.json</code>, <code>R16_Z1_5_triage.json</code>, <code>R16_Z1_5_triage.md</code>, <code>status.json</code>, the graph cache used by <code>graphq.py</code>, and the Lean source at the pin (original numbering, extracted with <code>git archive</code>).</p>
+<h2 id="0-verdict">0. Verdict</h2>
+<ul><li><strong>The tool is a correct and deterministic accountant.</strong> I reproduced the shipped JSON and Markdown byte for byte, and all 41 row sizes with an independent reimplementation.</li><li><strong>It is not yet a classifier, and the default N label is not a measurement of new mathematics.</strong> In this register N is the default bucket for everything nobody argued into L, S or R; the register&#x27;s own <code>scope</code> field says so (&quot;not a claim of novelty for every line&quot;).</li><li><strong>The reviewer estimated the mix of material in 25,578 lines assigned to N.</strong> The examples include project-specific adaptations, textbook-citable results, definitions and glue. The author marked these as judgments from statements.</li><li><strong>Not ready for the remaining ~2.1M lines.</strong> Run unchanged it would return N by default across the remaining material and reduce nothing. Seven changes are listed in §3.1; the first three are blocking.</li></ul>
+<p>Limits of this audit: all 7 R, 11 S and 1 L rows were read in full against Lean. For N rows I read module inventories, principal statements and the Prop definitions behind them for 12 rows whose historical index weight was 22,413 lines, but not the proof bodies. The novelty estimates are statement-level judgments, not line counts.</p>
+<h2 id="1-tool-audit">1. Tool audit</h2>
+<h3 id="11-reproduction">1.1 Reproduction</h3>
+<p><code>triage.py</code> imports <code>blueprint_cones.Graph</code>, which is not in <code>prev16/</code> or in the project scripts directory. The tool therefore cannot be run from the delivered inputs alone. I wrote a 15-line shim over the same pickle that <code>graphq.py</code> loads (weight = <code>line1 − line0 + 1</code> when <code>line0 &gt; 0</code>, else 0) and ran the unmodified tool.</p>
+<div class="scroll"><table>
+<thead><tr><th>Check</th><th>Result</th></tr></thead>
+<tbody><tr><td>Output JSON, <code>PYTHONHASHSEED</code> = 0, 1, 77</td><td>identical to each other and to the shipped <code>R16_Z1_5_triage.json</code> (sha256 <code>c42d36d2…</code>)</td></tr>
+<tr><td>Output Markdown, same seeds</td><td>identical to the shipped <code>.md</code> (sha256 <code>399122ff…</code>)</td></tr>
+<tr><td><code>register_sha256</code></td><td>matches the inputs file (<code>4be8bda4…</code>)</td></tr>
+<tr><td>Scope</td><td>2,527 declarations, 442 modules, 26,532 lines: confirmed</td></tr>
+<tr><td>Independent recomputation of residuals</td><td>41/41 rows match on declarations, core lines and theorem lines</td></tr>
+<tr><td>Unowned / multiply owned declarations</td><td>0 / 0</td></tr>
+<tr><td>Overlapping source ranges inside scope</td><td>none; sum of ranges equals distinct covered lines (26,532)</td></tr>
+<tr><td><code>graphq.py deps/callers/find</code> spot checks</td><td>consistent with the same pins</td></tr>
+</tbody></table></div>
+<p>Sample of reproduced rows (declarations, core lines, theorem lines):</p>
+<div class="scroll"><table>
+<thead><tr><th>Row</th><th>Class</th><th>Mine</th><th>Shipped</th></tr></thead>
+<tbody><tr><td>z15-local-reps</td><td>N</td><td>334 / 3,400 / 3,011</td><td>same</td></tr>
+<tr><td>z15-eigenspaces</td><td>N</td><td>249 / 3,372 / 3,318</td><td>same</td></tr>
+<tr><td>z15-regular-fibres</td><td>N</td><td>260 / 2,651 / 2,398</td><td>same</td></tr>
+<tr><td>z15-cohomology</td><td>N</td><td>302 / 2,550 / 2,241</td><td>same</td></tr>
+<tr><td>z15-global-trace</td><td>N</td><td>159 / 2,234 / 2,053</td><td>same</td></tr>
+<tr><td>z15-integrality</td><td>N</td><td>214 / 1,960 / 1,825</td><td>same</td></tr>
+<tr><td>z15-convolution</td><td>N</td><td>165 / 1,676 / 1,455</td><td>same</td></tr>
+<tr><td>z15-counts</td><td>N</td><td>98 / 812 / 775</td><td>same</td></tr>
+<tr><td>z15-quadratic-local</td><td>S</td><td>6 / 139 / 139</td><td>same</td></tr>
+<tr><td>z15-eigenline</td><td>L</td><td>3 / 90 / 90</td><td>same</td></tr>
+<tr><td>z15-exports</td><td>R</td><td>22 / 44 / 44</td><td>same</td></tr>
+<tr><td>z15-consumer-predicates</td><td>R</td><td>25 / 54 / 0</td><td>same</td></tr>
+</tbody></table></div>
+<h3 id="12-claimed-features-against-the-code">1.2 Claimed features against the code</h3>
+<div class="scroll"><table>
+<thead><tr><th>Claim</th><th>Implemented?</th><th>Comment</th></tr></thead>
+<tbody><tr><td>Residual (single-owner exclusive) classification</td><td>Yes in code (<code>walk_cut</code>), vacuous in this register</td><td>See 1.3</td></tr>
+<tr><td>Ownership and duplication checks</td><td>Yes, sound</td><td>A declaration in two seed sets raises; any scope declaration reached by two walks or by none raises; class totals must equal the scope</td></tr>
+<tr><td>Cycle detection</td><td>Yes, at row level only</td><td><code>TopologicalSorter</code> over row-to-row inheritance. It does not detect blueprint-level loops between proof labels, which was the R15 concern</td></tr>
+<tr><td>Auto-escalation</td><td>Partly</td><td>Only rows proposed R are scanned. S and L rows are never scanned. Signals are lexical</td></tr>
+<tr><td>L-citation check</td><td>Presence only</td><td><code>citation</code> and <code>hypothesis_comparison</code> must be non-empty strings; nothing checks them against the Lean statement</td></tr>
+<tr><td>Deterministic</td><td>Yes</td><td>No timestamps; outputs sorted; only the text of a cycle error could vary with hash seed</td></tr>
+</tbody></table></div>
+<h3 id="13-findings">1.3 Findings</h3>
+<p><strong>F1 (major). The residual walk does nothing here; classification is by module list.</strong> 40 of 41 rows carry a <code>modules</code> field (433 modules in total), and for every row the residual equals its seed set exactly. The <code>roots</code> are &quot;representative&quot; heads only. A row such as z15-local-reps is 50 modules and 334 declarations, shown in the Markdown by one head of 129 lines out of 3,400. This is the R15 problem inverted: rows are no longer judged by a wrapper head, but nobody judged them at all. They were bucketed by directory.</p>
+<p>Evidence that rows are directory buckets rather than mathematical units:</p>
+<ul><li>The three <code>z15-satake*</code> rows, three <code>z15-convolution*</code> rows and two each of cohomology, regular-fibres, global-trace and weyl share one rationale sentence verbatim.</li><li>The <code>-2</code>/<code>-3</code> splits exist to make the row graph acyclic, not because the mathematics divides there.</li><li><code>exclusive_before_cuts</code> is 0 for 40 of 41 rows, so no row is a self-contained cone.</li></ul>
+<p><strong>F2 (major). N is a default, and the tool can only move rows into it.</strong> <code>final = &#x27;N&#x27; if flags else proposed</code>. There is no gate on proposing N, no rationale requirement beyond a non-empty string, and no signal that would move a row out of N. The large N bucket is therefore a consequence of default assignments.</p>
+<p><strong>F3 (major). The pilot assigns only the exclusive Z1.5 core.</strong> The Z1.5 cone is 726,539 lines; the exclusive core classified here is 26,532. The other 700,007 lines are &quot;excluded baseline&quot; with no owner in this pilot. Across all 20 recursive inputs the exclusive cores sum to 845,527 lines, against 1,604,506 core lines in their union by my count (range weights from the same cache). About 759,000 lines are shared between inputs and have no owner under the exclusive-portfolio design. The tool lists them in <code>shared_core_boundary</code> but raises nothing. One R-row wrapper already dispatches into this unowned region: <code>cuspidal_traceMatrixUnits_acts_by_sum_infinitesimalCharacter</code> → <code>trace_Eop_of_hasInfChar</code> (53 lines, in the Z1.1 cone).</p>
+<p><strong>F4 (medium). No check that the source tree matches the pin.</strong> I pointed <code>--lean-root</code> at the cleaned tree (different numbering). The tool exited 0 and silently returned a different escalation set: <code>choice_source</code> disappeared from z15-exports-analytic. Class totals were unchanged only by luck. The default <code>--lean-root</code> is a relative path, so this is easy to hit.</p>
+<p><strong>F5 (medium). Escalation signals are lexical and both hits in this run are false positives.</strong> z15-exports-analytic (two 2-line wrappers) was escalated R→N because one statement contains a variable named <code>ε</code> (the CHOICE regex matches <code>ε</code>) and the other contains the type <code>Measure</code>. The CHOICE regex also matches <code>Nat.choose</code>. Cost here is 4 lines, but at 2.1M lines every wrapper mentioning a measure or an epsilon will inflate N. Conversely, a 36-line induction (z15-finite-product) passes because the threshold is 40.</p>
+<p><strong>F6 (medium). Definitions are classed R.</strong> z15-consumer-predicates is 54 lines with 0 theorem lines: <code>EigData</code>, <code>EigData.Classifies</code>, <code>CountKAlt</code>, <code>CountQAlt</code>, <code>Win</code>, <code>AdmKNAlt</code>, <code>AdmRNAlt</code>. These are the statement of the Z1.5 input. &quot;Trusted to the kernel&quot; is the wrong warrant for them: the kernel checks proofs, not whether a definition means what the blueprint says. Inside N there are a further 1,833 definition lines with the same issue in the other direction. Definitions need their own class routed to the definitions dictionary.</p>
+<p><strong>F7 (minor).</strong></p>
+<ul><li>Comment stripping is <code>line.partition(&#x27;--&#x27;)</code>; block comments are not handled.</li><li>88 scope declarations have no source range and are not marked auxiliary (65 theorems, 16 constructors, 6 definitions, 1 recursor). They are structure projections, equation lemmas and <code>casesOn</code>, all weight 0; none hides content. The scanner reports <code>source_range_unavailable</code> only for R rows.</li><li>A register author can keep an R row under the 300-line theorem threshold by splitting it; nothing aggregates R by directory.</li></ul>
+<p><strong>No bug that hides in-scope content.</strong> The completeness assertion (every scope declaration has exactly one owner, class totals equal scope) is sound. Content can only escape through the scope definition (F3) or through module-level granularity (F1).</p>
+<h2 id="2-classification-audit">2. Classification audit</h2>
+<h3 id="21-r-rows-7-rows-167-lines-all-read-in-full">2.1 R rows (7 rows, 167 lines): all read in full</h3>
+<div class="scroll"><table>
+<thead><tr><th>Row</th><th>Lines</th><th>Finding</th></tr></thead>
+<tbody><tr><td>z15-exports</td><td>44</td><td>22 two-line <code>first \| exact …</code> wrappers. 20 targets owned by z15-satake (N), 1 by z15-embeddings (S), 1 external (F3). Correct as R</td></tr>
+<tr><td>z15-exports-2</td><td>10</td><td>5 wrappers; all targets in z15-satake-2 (N). Correct</td></tr>
+<tr><td>z15-exports-3</td><td>6</td><td>3 wrappers; all targets in z15-satake-3 (N). Correct</td></tr>
+<tr><td>z15-cohom-interface</td><td>15</td><td>Swaps Γ∩Λ between two subgroup presentations and chains three hypotheses. Correct</td></tr>
+<tr><td>z15-finite-product</td><td>36</td><td>Pull one factor out of a pairwise-commuting product, by induction. Acceptable as R; S would be equally defensible</td></tr>
+<tr><td>z15-inversion</td><td>2</td><td>Two <code>rfl</code> lemmas. Correct</td></tr>
+<tr><td>z15-consumer-predicates</td><td>54</td><td>Definitions, not bookkeeping. Wrong class (F6); no hidden proof content</td></tr>
+</tbody></table></div>
+<p>Result: 0 of 7 hide proof content. This is a real improvement on R15 (3 of 12). The wrapper/implementation separation works: each wrapper&#x27;s target has a recorded owner. One row is in the wrong category.</p>
+<h3 id="22-s-rows-11-rows-697-lines-and-the-l-row-all-read-in-full">2.2 S rows (11 rows, 697 lines) and the L row: all read in full</h3>
+<p>All 11 S rows are self-contained standard arguments, and each rationale matches the Lean proof. No hidden content.</p>
+<div class="scroll"><table>
+<thead><tr><th>Row</th><th>Lines</th><th>Content</th><th>Could be L?</th></tr></thead>
+<tbody><tr><td>z15-cm-generator</td><td>76</td><td>x − x̄ gives a totally negative square in a CM field</td><td>no need</td></tr>
+<tr><td>z15-cohom-rank</td><td>34</td><td>rank H ≤ rank cycles ≤ rank chains; swap of finite and cardinal sums</td><td>no</td></tr>
+<tr><td>z15-coinduction</td><td>67</td><td>A is a retract of Coind Res A for finite index (averaged transfer)</td><td>yes: Brown, <em>Cohomology of Groups</em>, III §9</td></tr>
+<tr><td>z15-degrees</td><td>44</td><td>monomial count; degree of a leading minor</td><td>no</td></tr>
+<tr><td>z15-embeddings</td><td>48</td><td>embeddings of a CM field pair up over the real subfield</td><td>no</td></tr>
+<tr><td>z15-finite-quotients</td><td>63</td><td>fibre cardinality of G/U → G/U′; double-coset representatives; N(w) = p^f</td><td>no</td></tr>
+<tr><td>z15-finite-trace</td><td>98</td><td>trace under faithful restriction; twisted trace form on End(P)</td><td>no</td></tr>
+<tr><td>z15-haar</td><td>55</td><td>Haar measure scales by the inverse modulus of det</td><td>yes: Weil, <em>Basic Number Theory</em>, I §2</td></tr>
+<tr><td>z15-quadratic-local</td><td>139</td><td>Hensel for x²+x = z; split ⇒ unramified; different criterion</td><td>partly</td></tr>
+<tr><td>z15-subrepresentation</td><td>54</td><td>matrices of a restricted action</td><td>no</td></tr>
+<tr><td>z15-valuation</td><td>19</td><td>det of an integral invertible matrix is a unit</td><td>no</td></tr>
+</tbody></table></div>
+<p>L row z15-eigenline (90 lines): the citation (Horn–Johnson, Lemma 1.3.19) is the right result and the hypothesis comparison is accurate, including the arbitrary index set. Two notes:</p>
+<ul><li>The row holds two independent Lean proofs of the same lemma (strong induction on dimension, and a minimal invariant subspace).</li><li>z15-local-reps (N) contains a third proof, <code>jointEig</code> (66 lines: a commuting family has a joint eigenvector in the intersection of generalized eigenspaces), plus two thin restatements. The same textbook lemma is L in one row and N in another.</li></ul>
+<h3 id="23-n-rows-12-rows-sampled-22413-indexed-lines-in-these-rows">2.3 N rows: 12 rows sampled (22,413 indexed lines in these rows)</h3>
+<p>Structure of the N lines:</p>
+<div class="scroll"><table>
+<thead><tr><th>Slice</th><th>Lines</th></tr></thead>
+<tbody><tr><td>Definitions, structures, constructors</td><td>1,833</td></tr>
+<tr><td>Theorems of ≤ 5 lines (387 of them)</td><td>1,261</td></tr>
+<tr><td>Theorems of 6–15 lines</td><td>4,191</td></tr>
+<tr><td>Theorems of 16–40 lines</td><td>6,161</td></tr>
+<tr><td>Theorems of 41–100 lines (140)</td><td>8,331</td></tr>
+<tr><td>Theorems over 100 lines (27)</td><td>3,801</td></tr>
+<tr><td>Theorems whose statement is only opaque Prop names (<code>A → B → C</code>)</td><td>8,230</td></tr>
+</tbody></table></div>
+<p>The last line matters for any head-based reading: the entries assigned 8,230 indexed lines require opening the defined propositions, because the statement is a named Prop defined elsewhere (<code>theorem twExp : TwExp</code>).</p>
+<p>Per-row observations. The public edition omits the historical estimates of class shares. T = textbook-citable (should be L or S). A = project-specific adaptation of known theory: bespoke statement, standard method, needs a written proof. G = glue or assembly. D = definitions. X = candidate for genuinely new mathematics.</p>
+<div class="scroll"><table>
+<thead><tr><th>Row</th><th>Lines</th><th>What it is</th></tr></thead>
+<tbody><tr><td>z15-local-reps</td><td>3,400</td><td>Distributions on orbit strata of totally disconnected spaces (<code>CellStep</code>, <code>DistZero</code>: the Bernstein–Zelevinsky localisation method); Jacquet modules and Casselman-type traces at Iwahori level; <code>DcosOp</code> (double-coset operator = vol · e π(x) e); torus eigencharacters</td></tr>
+<tr><td>z15-eigenspaces</td><td>3,372</td><td>Isotypic decomposition over a restricted product (Flath-type), twisted Schur lemma on K-fixed vectors, finite-dimensionality of K-fixed eigenspaces, traces of products of commuting projections, then the CM-datum factorisations</td></tr>
+<tr><td>z15-regular-fibres (+ -2)</td><td>3,708</td><td>Matching of orbital integrals for indicator &quot;elementary&quot; functions near strict diagonal elements under cyclic base change (<code>ElemLoc</code>, <code>VolRatio</code>, <code>CosetSum</code>, <code>MatchPow</code>, <code>Core</code>); Hilbert 90; openness of the norm. Labesse / Arthur–Clozel territory in an explicitly computable case</td></tr>
+<tr><td>z15-cohomology</td><td>2,550</td><td>Uniform bound on total group cohomology via finite resolutions by permutation modules; passage along isomorphism, finite index and commensurability; minimal-vector stabilisers; existence of CM extensions; algebraicity of Hecke characters</td></tr>
+<tr><td>z15-global-trace</td><td>2,234</td><td><code>compress</code> (irreducibility under commuting idempotents and subalgebras), trace-comparison assembly theorems with 5–15 named hypotheses</td></tr>
+<tr><td>z15-integrality</td><td>1,960</td><td>ℓ-adic bounds on Hecke eigenvalues of algebraic automorphic forms on a definite unitary group in terms of the weight (<code>AbsBound</code>, <code>OpBound</code>, <code>VecForm</code>)</td></tr>
+<tr><td>z15-convolution</td><td>1,676</td><td>Spherical and twisted convolution operators, support and descent identities</td></tr>
+<tr><td>z15-satake</td><td>1,294</td><td>Idele and Hecke-character bookkeeping, ramified twists, torus eigenforms; one Kronecker-type lemma</td></tr>
+<tr><td>z15-arithmetic</td><td>1,206</td><td>Elementary algebraic number theory: split ⇔ local square, ramification index from inertia, integrality from a norm bound, CM criterion</td></tr>
+<tr><td>z15-weyl</td><td>888</td><td>Highest weights, Capelli-type determinant identities, infinitesimal character of a coefficient representation</td></tr>
+<tr><td>z15-counts</td><td>812</td><td>The five expert heads: assembly of count, Satake parameters, conjugation and integrality into <code>EigData</code></td></tr>
+<tr><td>z15-jacquet</td><td>370</td><td>Non-vanishing of Jacquet modules from character support; unipotent monodromy</td></tr>
+</tbody></table></div>
+<p>The clearest sign of over-classification is internal inconsistency. z15-arithmetic (N, 1,206 lines) contains <code>isSplitAt_of_isSquare</code>, <code>sqrt_fixed_of_isSquare_padic</code>, <code>ramificationIdx_eq_one</code> and <code>isIntegral_of_norm_le</code>. These are the same kind of statement, at the same depth, as the three theorems of z15-quadratic-local, which is S. The difference is only that the S ones were pulled into their own row.</p>
+<h3 id="24-estimate-for-the-25578-n-lines">2.4 Estimate for the 25,578 N lines</h3>
+<p>Weighting the table by row size:</p>
+<div class="scroll"><table>
+<thead><tr><th>Category</th><th>Estimated lines (historical extrapolation)</th><th>Proper tier</th></tr></thead>
+<tbody><tr><td>Genuinely new mathematics (X)</td><td>0–2,500</td><td>N</td></tr>
+<tr><td>Project-specific adaptation of known theory (A)</td><td>13,000–15,500</td><td>a new tier: short proof plus reference for the method</td></tr>
+<tr><td>Textbook-citable results (T)</td><td>6,500–9,000</td><td>L or S</td></tr>
+<tr><td>Glue and assembly (G)</td><td>1,300–2,000</td><td>R</td></tr>
+<tr><td>Definitions (D)</td><td>1,833</td><td>definitions dictionary</td></tr>
+</tbody></table></div>
+<p>The reviewer identified defaults that over-classify N and distinguished adaptation requiring exposition from a novelty claim.</p>
+<p>Reasoning for the low X figure. The mathematical content of Z1.5 is a polynomial bound, in level and weight, on the number of regular algebraic cuspidal eigensystems, with Frobenius data classifying the attached Galois representations. Every ingredient I could identify from statements has a known method: bounded cohomology of arithmetic groups, Flath-type factorisation, base-change matching for elementary functions, weight bounds on Hecke eigenvalues, Capelli-type identities. I found no statement whose method looked unfamiliar. The candidates for novelty are in how the pieces are combined (z15-counts, the assembly theorems of z15-global-trace, the specific matching statement <code>Core</code>).</p>
+<p>What would change this estimate: reading the proofs of the 27 theorems over 100 lines, and comparing the assembly statements against the source paper. I did neither.</p>
+<h2 id="3-assessment">3. Assessment</h2>
+<h3 id="31-is-the-tool-ready-for-the-remaining-21m-lines">3.1 Is the tool ready for the remaining ~2.1M lines?</h3>
+<p>No. The accounting layer is ready; the classification layer is not. In order:</p>
+<ol><li><strong>Give the shared core an owner (blocking).</strong> Exclusive portfolios cover 0.85M of about 1.6M lines in the union of the 20 inputs. Use a dominator-based or lowest-common-consumer rule, or run the shared region as its own portfolio. Without this, half the material is never classified and R wrappers can dispatch into it unseen.</li><li><strong>Stop using N as the default (blocking).</strong> Add an explicit &quot;unclassified&quot; state that is reported separately and never summed into N. Require a per-row statement of what is new for N, with the same strictness L has for citations.</li><li><strong>Split the tiers (blocking).</strong> Add D (definitions) and a tier for project-specific adaptations of known theory. With only L/S/R/N, everything bespoke lands in N regardless of difficulty.</li><li><strong>Cap row size and drop <code>modules</code> as the normal mechanism.</strong> A row should be one statement-level head and its true residual, for example at most 300 theorem lines or one module. Allow module lists only for R. Report head and residual line weights separately and flag unusually small heads for inspection.</li><li><strong>Resolve opaque statements.</strong> For a head whose statement is a named Prop, print the Prop&#x27;s definition in the report. A third of N is unreadable otherwise.</li><li><strong>Fix the scanner.</strong> Verify the source tree against the pin (git tree hash, or per-file hash) and fail on mismatch. Remove <code>ε</code> and bare <code>choose</code> from the CHOICE regex. Scan S rows as well. Add a duplicate-statement check so the same lemma cannot be L in one row and N in another.</li><li><strong>Ship <code>blueprint_cones.py</code> with the tool</strong> so the run is reproducible from the delivered files.</li></ol>
+<p>Items 1–3 change the headline number; 4–7 make it trustworthy.</p>
+<h3 id="32-what-z15-implies-for-the-size-of-the-n-tier">3.2 What Z1.5 implies for the size of the N tier</h3>
+<p>Base: about 2.1M remaining Lean lines.</p>
+<div class="scroll"><table>
+<thead><tr><th>Reading of &quot;N&quot;</th><th>Assumption</th><th>Hypothetical index weight</th></tr></thead>
+<tbody><tr><td>As the tool computes it today</td><td>Registers written the same way as Z1.5 (module buckets, N by default)</td><td>1.9–2.05M</td></tr>
+<tr><td>Needs a written proof (A + X)</td><td>Z1.5 mix transfers; T, G, D reclassified</td><td>1.05–1.4M</td></tr>
+<tr><td>Genuinely new mathematics (X)</td><td>Z1.5 mix transfers</td><td>0–210k, point ~60k</td></tr>
+</tbody></table></div>
+<p>Assumptions, each of which could move the range:</p>
+<ul><li><strong>Z1.5 is representative.</strong> It may not be. Its exclusive core has 26,532 indexed lines and is the counting-specific layer. Shared infrastructure is likely to be more textbook-heavy, which would lower both A and X. Inputs with large exclusive cores (Z1.1 at 431k, Z1.3 at 134k, Z4.2 at 107k) were not sampled and could differ in either direction.</li><li><strong>Statement-level judgment is adequate.</strong> I did not read proofs of N rows. A standard-looking statement can hide a non-standard proof; this pushes X up, not down.</li><li><strong>Line share is not page share.</strong> The A tier is long in Lean because of measure-theoretic and topological bookkeeping. I have no measured Lean-to-prose ratio for this project and do not offer a page count.</li></ul>
+<p>Practical consequence: the pilot does not show that the blueprint needs full hand proofs throughout the material assigned the default N label. It shows that the L/S/R/N scheme, applied at module granularity with N as default, cannot separate &quot;new&quot; from &quot;bespoke but standard&quot;. With the tier split in §3.1, the full-proof obligation should fall to a small fraction, and the dominant cost becomes the A tier.</p>
+<h2 id="4-summary">4. Summary</h2>
+<ul><li>Tool output reproduced byte for byte under three hash seeds; 41/41 row sizes reproduced independently; no unowned or doubly owned declaration; no bug that hides in-scope content.</li><li>The residual walk is vacuous in this register: rows are module lists, and N is the default bucket. The pilot assigns 26,532 exclusive Z1.5 lines, and the shared region in the 20-input union has no owner under the exclusive design.</li><li>The tool silently accepts a source tree that does not match the pin. Both auto-escalations in this run are regex false positives.</li><li>R rows: 0 of 7 hide proof content (R15 had 3 of 12); one is definitions and belongs in a D class. S rows: 11 of 11 correct. L row: correct, but the same lemma is re-proved inside an N row.</li><li>The 25,578 indexed N lines contain examples of project-specific adaptation, textbook-citable results, glue and definitions. The reviewer treats suspected novelty as a separate question.</li><li>Not ready for the full run. First changes: own the shared core, stop defaulting to N, add D and an adaptation tier.</li><li>Projected over 2.1M lines: 1.9–2.05M &quot;N&quot; as currently computed; 1.05–1.4M needing a written proof; 0–210k (point ~60k) genuinely new, subject to the stated assumptions.</li></ul></main><footer><a href="../help.html">Using the local edition</a></footer></body></html>

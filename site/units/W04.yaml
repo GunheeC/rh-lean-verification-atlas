@@ -1,0 +1,102 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "W04",
+  "title": "Weak unitary descent in ranks two through four",
+  "track": {
+    "primary": "theta",
+    "secondary": []
+  },
+  "statement": "Let $E/E^+$ be CM and unramified at finite places. Fix a prime $p$ and a\nfinite set $S$ of finite places of $E^+$ containing those above $p$,\nall split in $E$. Let $2\\le n\\le4$ and let $\\pi$ be a regular algebraic\ncuspidal representation of $\\mathrm{GL}_n(\\mathbb A_E)$ with\n$\\pi^\\vee\\simeq\\pi^c$ and Satake parameters at all places above the\ncomplement of $S$. There exists an automorphic representation $\\sigma$ of\nthe specified unitary group, unramified at every nonsplit finite place.\nAt all but finitely many split $w$ the component of $\\sigma$, read\non $\\mathrm{GL}_n(E_w)$, has the same Satake multiset as $\\pi_w$.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Take a CM extension unramified at finite places, a prime and a finite exceptional set of split places containing the places above it.",
+    "Use rank two through four and a regular algebraic cuspidal representation, conjugate self-dual with Satake parameters off the exceptional set."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.Z.Tf.SR.descWeak",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/TraceFormula/SplitRigidity/HasOfSplit.lean",
+      "line0": 29,
+      "line1": 30,
+      "sha256": "b7e3e089b6eb82d4e148a369eb7c81672b70ae73164d9e8e581b069d0451e9f1",
+      "dominated": 9,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/W04_round4.md",
+      "section": "W04 · Weak unitary descent in ranks two through four",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "5.40 (sub:W04)",
+      "pages": [
+        49,
+        49
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/W04.tex",
+      "section": "sub:W04",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L1",
+  "reviews": [
+    "reviews/R21_review.md"
+  ],
+  "prerequisites": [],
+  "size_pages": 2,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [
+    {
+      "grade": "L1",
+      "review": "reviews/R21_review.md",
+      "lines": [
+        117,
+        117
+      ],
+      "scope": "Lean interface as specified in the review row; no equivalence with a published result inferred.",
+      "verdict": "Exact statement comparison"
+    }
+  ],
+  "paper_id": "W04",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "weak-unitary-descent-in-ranks-two-through-four",
+  "aliases": [
+    "descWeak",
+    "W04 Weak unitary descent in ranks two through four"
+  ],
+  "background": [
+    "Satake parameters",
+    "Unitary descent",
+    "Conjugate self-duality"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "5.40 (sub:W04)",
+    "pages": [
+      49,
+      49
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "review_status": "pending_review",
+  "summary": "An eligible conjugate-self-dual cuspidal representation in ranks two through four has a weak descent to the specified unitary group. The descent is unramified at nonsplit places and matches the given Satake parameters at all but finitely many split places."
+}

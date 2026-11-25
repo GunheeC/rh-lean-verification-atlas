@@ -1,0 +1,267 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "V4-COND",
+  "edition_sha256": "3cab8f635fe44e5b21dddc9e5e836560d5cfc115a98c01c4e200bb8f57cbdc99",
+  "note_sha256": "4be59821b8bfc664500b5b65cc355147de34d94741e04692d25035f8673b86d5",
+  "statement_sha256": "458d5db25f7f2f8c97fb4e39311ffb0f581991736f3c41a7fad8c37b8b49d5b5",
+  "sources": [
+    {
+      "path": "notes/units/V4-COND_round3.md",
+      "sha256": "4be59821b8bfc664500b5b65cc355147de34d94741e04692d25035f8673b86d5"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Taking the outer scale sufficiently large forces the returned Selmer interval above the fixed thresholds needed for the rescaled frame.",
+      "kind": "inequality",
+      "uses": [
+        "P013",
+        "input: prime-pair and field-frame thresholds"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Top.supplyChi",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/SupplyChi.lean",
+          "line0": 8,
+          "line1": 16
+        }
+      ],
+      "source": "notes/units/V4-COND_round3.md",
+      "anchor": "For the requested lower endpoint",
+      "source_lines": [
+        101,
+        101
+      ],
+      "claim_sha256": "c572df7ba22382bb9ec14f2fc4843fb735945a2d62e2eca8228e6c261dfc548b",
+      "passage_sha256": "694b5decf3a44d2bd8635e3c5183881ee45ea22a59f2e9b7eba268accc659704",
+      "sha256": "922945049921d7557d58928e871b70de1a0ba0f8701efc8d35e5a933057e4a24",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "A separate bound on the selected host rank permits truncating the nonnegative Selmer sum at that rank on the same host.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S1",
+        "B07",
+        "input: rank comparison with x to the power 400"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Top.supplyChi",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/SupplyChi.lean",
+          "line0": 8,
+          "line1": 16
+        }
+      ],
+      "source": "notes/units/V4-COND_round3.md",
+      "anchor": "The eventual rank theorem",
+      "source_lines": [
+        101,
+        101
+      ],
+      "claim_sha256": "de1275cbc9bcf9bdb0e1d0b54f962e0e6a053b8655fc514f69c51cbe5cd30e78",
+      "passage_sha256": "694b5decf3a44d2bd8635e3c5183881ee45ea22a59f2e9b7eba268accc659704",
+      "sha256": "e11c5cf02522fa348b30227c0b1f42df5d496abdf5d4b8ca5521d3ee139a9fd6",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The fields of a single definite-side selection supply compatible row and cut inputs to the division-kernel comparison.",
+      "kind": "assembly",
+      "uses": [
+        "T02",
+        "B05",
+        "input: Green and the closed-link comparisons"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Top.shape_closed_link_n_of_green",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopShape.lean",
+          "line0": 33,
+          "line1": 55
+        }
+      ],
+      "source": "notes/units/V4-COND_round3.md",
+      "anchor": "Here the kernel-bound assembly",
+      "source_lines": [
+        103,
+        103
+      ],
+      "claim_sha256": "15e7fb1c02cd1fe8e2a769ec8cdbc5e9f5e5ce5600a5b39ff12dbb2d192064fd",
+      "passage_sha256": "0c6c4d96583ca8688e106056a3e91cc2a70073d9cb328ea91220cf9792cc2dd1",
+      "sha256": "4f8b5892ddd40f42161cd4a14141ec5513c37e46dcc9926f7c1585dc8bb6c8ea",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "At the common family the rank equality transfers the finite Selmer bounds; the division and slope implications then furnish tiedness with the stated exponents.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S2",
+        "S3",
+        "input: closed Selmer link and independent slope comparison"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Top.divinN_of_hypV",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/DivinNOfHypV.lean",
+          "line0": 117,
+          "line1": 131
+        },
+        {
+          "name": "Formalism.MainNotions.J.linkMu_of_linkDIV",
+          "file": "Formalism/SharpRestriction/AdmissibleParameterJoins/SumLogPrimeFactorsLe.lean",
+          "line0": 775,
+          "line1": 784
+        }
+      ],
+      "source": "notes/units/V4-COND_round3.md",
+      "anchor": "The rank equality",
+      "source_lines": [
+        103,
+        103
+      ],
+      "claim_sha256": "df9e00306333a6e47621faa8988fd55c1114845e749195e48de13d9319cf1778",
+      "passage_sha256": "0c6c4d96583ca8688e106056a3e91cc2a70073d9cb328ea91220cf9792cc2dd1",
+      "sha256": "5de6cb897ad73ebb2cf0f340b212c65a972eb495c76dbf973d197ddebc68590a",
+      "ai_review": []
+    },
+    {
+      "id": "S5",
+      "status": "active",
+      "claim": "On the tail of that family's window the level prime sum has exponent one half plus nine epsilon.",
+      "kind": "inequality",
+      "uses": [
+        "S4",
+        "P017",
+        "P021",
+        "input: list A"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Comparison₂.level_gm_le_on_family_scales",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/LevelGmLeOnFamilyScales.lean",
+          "line0": 28,
+          "line1": 30
+        }
+      ],
+      "source": "notes/units/V4-COND_round3.md",
+      "anchor": "By P017 with list A",
+      "source_lines": [
+        105,
+        105
+      ],
+      "claim_sha256": "3129f61deae9a7da41d5c2aed71c18f7bc36e886b80077df46ba101f57271fde",
+      "passage_sha256": "718bf23293201bd67d0f611561eb801eb39122f97645943de313496138272947",
+      "sha256": "12605e0a808f6d43f64b0c5d0fdd03983ceb223362e74055f955d529de672b11",
+      "ai_review": []
+    },
+    {
+      "id": "S6",
+      "status": "active",
+      "claim": "Given a putative primitive zero to the right of one half, choose an intermediate line, then epsilon; sufficiently distant whole windows satisfy the level criterion.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S5",
+        "P018"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Comparison₂.formB",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/Imports.lean",
+          "line0": 8,
+          "line1": 19
+        }
+      ],
+      "source": "notes/units/V4-COND_round3.md",
+      "anchor": "Choose $1/2<",
+      "source_lines": [
+        113,
+        113
+      ],
+      "claim_sha256": "1df7dde529df6902c594295de9e96edc67cf9600ddebaa7fcfed1d8df08dfa13",
+      "passage_sha256": "3060b65cf06edb1c21a5e86aed91725e45835e8903355ad182e522fe77717aa4",
+      "sha256": "8c2e850e9ee0d2e4a453a23930e6e28f5582de62b7ebd1600319c323e7c0abcb",
+      "ai_review": []
+    },
+    {
+      "id": "S7",
+      "status": "active",
+      "claim": "The finite Euler factors preserve nonvanishing on changing conductor. Reflection in the open strip and the zeta functional equation give the remaining public formulations with their exceptions.",
+      "kind": "case-split",
+      "uses": [
+        "S6",
+        "standard: change of level and functional equations"
+      ],
+      "lean": [
+        {
+          "name": "Claim.strip",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/ClaimStrip.lean",
+          "line0": 59,
+          "line1": 73
+        },
+        {
+          "name": "Claim.zeta",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/ClaimStrip.lean",
+          "line0": 75,
+          "line1": 100
+        }
+      ],
+      "source": "notes/units/V4-COND_round3.md",
+      "anchor": "Inducing a primitive character",
+      "source_lines": [
+        115,
+        115
+      ],
+      "claim_sha256": "578ae5cc73727869b228a9bc7111e52e1f8cc44cd489a45e52ad79cb1619646c",
+      "passage_sha256": "673a8c5b468e90ead453f19d15e1c011b5f1c248fa0e593a03197ecebfb65a91",
+      "sha256": "285d9427aedd83010b185b4633451f07e9f1abe0299a73cf3e061731896c8863",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "37dd951be7864f478a62a91bd815befbde803e82cf6a85d11f89746e2c3bc0ba",
+      "sources": [
+        {
+          "path": "notes/units/V4-COND_round3.md",
+          "sha256": "6db7ffe8525e1cf6e067ec138c1530003d45f5bc5957b5757d022f0d20200c06"
+        }
+      ],
+      "statement_sha256": "458d5db25f7f2f8c97fb4e39311ffb0f581991736f3c41a7fad8c37b8b49d5b5",
+      "steps": {
+        "S1": "922945049921d7557d58928e871b70de1a0ba0f8701efc8d35e5a933057e4a24",
+        "S2": "e11c5cf02522fa348b30227c0b1f42df5d496abdf5d4b8ca5521d3ee139a9fd6",
+        "S3": "4f8b5892ddd40f42161cd4a14141ec5513c37e46dcc9926f7c1585dc8bb6c8ea",
+        "S4": "5de6cb897ad73ebb2cf0f340b212c65a972eb495c76dbf973d197ddebc68590a",
+        "S5": "12605e0a808f6d43f64b0c5d0fdd03983ceb223362e74055f955d529de672b11",
+        "S6": "8c2e850e9ee0d2e4a453a23930e6e28f5582de62b7ebd1600319c323e7c0abcb",
+        "S7": "285d9427aedd83010b185b4633451f07e9f1abe0299a73cf3e061731896c8863"
+      },
+      "step_texts": {
+        "S1": "Taking the outer scale sufficiently large forces the returned Selmer interval above the fixed thresholds needed for the rescaled frame.",
+        "S2": "A separate bound on the selected host rank permits truncating the nonnegative Selmer sum at that rank on the same host.",
+        "S3": "The fields of a single definite-side selection supply compatible row and cut inputs to the division-kernel comparison.",
+        "S4": "At the common family the rank equality transfers the finite Selmer bounds; the division and slope implications then furnish tiedness with the stated exponents.",
+        "S5": "On the tail of that family's window the level prime sum has exponent one half plus nine epsilon.",
+        "S6": "Given a putative primitive zero to the right of one half, choose an intermediate line, then epsilon; sufficiently distant whole windows satisfy the level criterion.",
+        "S7": "The finite Euler factors preserve nonvanishing on changing conductor. Reflection in the open strip and the zeta functional equation give the remaining public formulations with their exceptions."
+      },
+      "step_passages": {
+        "S1": "694b5decf3a44d2bd8635e3c5183881ee45ea22a59f2e9b7eba268accc659704",
+        "S2": "694b5decf3a44d2bd8635e3c5183881ee45ea22a59f2e9b7eba268accc659704",
+        "S3": "0c6c4d96583ca8688e106056a3e91cc2a70073d9cb328ea91220cf9792cc2dd1",
+        "S4": "0c6c4d96583ca8688e106056a3e91cc2a70073d9cb328ea91220cf9792cc2dd1",
+        "S5": "718bf23293201bd67d0f611561eb801eb39122f97645943de313496138272947",
+        "S6": "3060b65cf06edb1c21a5e86aed91725e45835e8903355ad182e522fe77717aa4",
+        "S7": "673a8c5b468e90ead453f19d15e1c011b5f1c248fa0e593a03197ecebfb65a91"
+      }
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "W15",
+  "title": "Vanishing of the exceptional trivial-character length",
+  "track": {
+    "primary": "galois",
+    "secondary": []
+  },
+  "statement": "For every algebraic closure of $\\mathbb Q$, each prime $\\ell\\ge5$,\neach allowed coefficient ring $O$, and every even $e\\ge2$ such that\n$\\ell-1\\mid2e$, the $O$-length of the localization kernel of the\ntrivial-character coefficient module twisted by $\\kappa^{-e}$, at\nmodulus $\\ell$, is zero. The proof term separates\n$\\ell-1\\mid e$ from $\\ell-1\\nmid e$.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Fix an algebraic closure of $\\mathbb Q$, a prime $\\ell\\ge5$ and an allowed coefficient ring.",
+    "Take even $e\\ge2$ satisfying $\\ell-1\\mid 2e$ and the trivial character."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.X.propZ",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/LevelCohomology/PropZ.lean",
+      "line0": 11,
+      "line1": 16,
+      "sha256": "ace956b0d8a6ead16df5aef9bddaca31c9e0e37446f6719efd59debb8af13bcd",
+      "dominated": 2058,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "5.51 (sub:W15)",
+      "pages": [
+        53,
+        53
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/W15.tex",
+      "section": "sub:W15",
+      "pages": []
+    }
+  ],
+  "status": "Statement only",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [
+    "D558"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [],
+  "paper_id": "W15",
+  "indexed_members": [
+    "D109",
+    "D113",
+    "D559",
+    "D560"
+  ],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "vanishing-of-the-exceptional-trivial-character-length",
+  "aliases": [
+    "propZ",
+    "W15 Vanishing of the exceptional trivial-character length"
+  ],
+  "background": [
+    "Cyclotomic twists",
+    "Localization kernels"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "5.51 (sub:W15)",
+    "pages": [
+      53,
+      53
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "D558": "graph"
+  }
+}

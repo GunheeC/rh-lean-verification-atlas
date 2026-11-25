@@ -1,0 +1,200 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "D128",
+  "edition_sha256": "cf31a539077d32a84d2bc211ef5c9a02a0bb82a4b82fb0b7162b7da25f39706f",
+  "note_sha256": "37b178ed3e3334d98db1066211201f8c419fc6fe88f6c55b24b0ff1d5a973dd2",
+  "statement_sha256": "c6af5b77f3fb195137e6ed9c12d1fac5d1f23b41900b0a513da9bbc155b7718f",
+  "sources": [
+    {
+      "path": "notes/units/D128_round4.md",
+      "sha256": "37b178ed3e3334d98db1066211201f8c419fc6fe88f6c55b24b0ff1d5a973dd2"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "For a box section equal to $a$ times a generator, the required unit represents $a\\kappa^{N/8}$.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: UnitAt and the box-section comparison"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.IndefiniteRowSideFullHecke.FibreFramesOnModels.UnitAt",
+          "file": "Development/AbelianVarietyTheory/BlockTheory/DivisorBase/FibreFramesOnModels.lean",
+          "line0": 114,
+          "line1": 129
+        },
+        {
+          "name": "GlobalTheory.IndefiniteRowSideFullHecke.FibreFramesOnModels.KeyUnitOnModels",
+          "file": "Development/AbelianVarietyTheory/BlockTheory/DivisorBase/FibreFramesOnModels.lean",
+          "line0": 136,
+          "line1": 141
+        }
+      ],
+      "source": "notes/units/D128_round4.md",
+      "anchor": "Fix a CM host, positive signature sum, a",
+      "source_lines": [
+        25,
+        25
+      ],
+      "claim_sha256": "621973fdb1353e5dde0f638d1156408377d55b865867a8eeabf0a14d4c0b2a6a",
+      "passage_sha256": "7615c5e7803f7c0793ed9f8acc22c776320b2d4612d5a2107172472eb3f5852f",
+      "sha256": "933a5419afebc4d57daa8615962e7b53c4f1bdc157fb3a3522ab88f4f596744c",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Extensions of the open-chart key and its inverse multiply to one on the model chart.",
+      "kind": "assembly",
+      "uses": [
+        "input: generic density, normality and the DVR extension criterion"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.KeyUnitModels.exists_chart_unit",
+          "file": "Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaKeyScalarIsUnitOnIntegralModels.lean",
+          "line0": 73,
+          "line1": 107
+        },
+        {
+          "name": "GlobalTheory.KeyUnitModels.exists_chart_unit",
+          "file": "Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaKeyScalarIsUnitOnIntegralModels.lean",
+          "line0": 107,
+          "line1": 135
+        }
+      ],
+      "source": "notes/units/D128_round4.md",
+      "anchor": "Begin on the open generic chart where the",
+      "source_lines": [
+        29,
+        29
+      ],
+      "claim_sha256": "6588c30220a9e54bd5bf0ff1484dfa7ffc8118b987afcf62ccd40add94c487fc",
+      "passage_sha256": "df41198fafe217c52239629d14b3b080527b4ee880dd089810804947c0888b47",
+      "sha256": "c23fcf969f636073bd09a1823a7e01f54353b6e3d797572c12d6d742a9203361",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Rescaling a generator by $b$ multiplies its $N$-fold box section by $b^N$.",
+      "kind": "computation",
+      "uses": [
+        "S2",
+        "input: local generator and key rescaling law"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.KeyUnitModels.unitAt_local",
+          "file": "Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaKeyScalarIsUnitOnIntegralModels.lean",
+          "line0": 145,
+          "line1": 176
+        },
+        {
+          "name": "GlobalTheory.KeyUnitModels.unitAt_local",
+          "file": "Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaKeyScalarIsUnitOnIntegralModels.lean",
+          "line0": 177,
+          "line1": 193
+        }
+      ],
+      "source": "notes/units/D128_round4.md",
+      "anchor": "Choose the chart at the closed point, so",
+      "source_lines": [
+        33,
+        33
+      ],
+      "claim_sha256": "ae0bf59e91604d1ad088d01fba3fcc698f2db1480448a430ce23c965adc70370",
+      "passage_sha256": "2c33eddad4ae4cda57242a0827f122c5a726efbe8b7711b10d2158aa0d876577",
+      "sha256": "6747a243e9b1b4369dd038e581ac4dbbda23fc1b059c7e998939bb0ebf4917c2",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The localized-model argument establishes the unit criterion for each of the two classes of valued points.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S3",
+        "input: valuation-ring base change"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.KeyUnitModels.unitAt_valuation",
+          "file": "Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaKeyScalarIsUnitOnIntegralModels.lean",
+          "line0": 196,
+          "line1": 229
+        },
+        {
+          "name": "GlobalTheory.KeyUnitModels.keyUnitOnModels",
+          "file": "Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaKeyScalarIsUnitOnIntegralModels.lean",
+          "line0": 233,
+          "line1": 237
+        }
+      ],
+      "source": "notes/units/D128_round4.md",
+      "anchor": "Pull the valuation ring back to the coefficient",
+      "source_lines": [
+        37,
+        37
+      ],
+      "claim_sha256": "eda6231c9f6cea070d2961f86a0d67b0b0aa88d99a7c9e4b692bc2abe085ed3c",
+      "passage_sha256": "aabb89521c1f3655b2e303cbdd130ad658f3db1f5fc5487e4c575aad03d44346",
+      "sha256": "738e8bf0f3dcfe790a5af4606f43fe43435b305dd848ee0ee4b7a893fed4ce08",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "42555286ee0172c816e4f10230561b5a9580401242132944c4c8e32c6c2502bc",
+      "sources": [
+        {
+          "path": "notes/units/D128_round4.md",
+          "sha256": "ee02e9dadb9ed428ff5cbcfa298e4190d6b7424a000ac8531234a308bec04993"
+        }
+      ],
+      "steps": {
+        "S1": "46cd5bbdf70b7d78cc78910a577b93f6a096603e726ee313b066ca4edff8c699",
+        "S2": "aa29029ae85c048b5179e686e361a9283cfb699b53f2a31ff22d28deeaa7acf3",
+        "S3": "6be4fa5876d6a48a4745bf8c51c0eab9db55f084ef9e946d38608da0a204bf22",
+        "S4": "f7618e4288612aba75a7c24d255d1f829f3c3a38cd8d613cda7525b56549324d"
+      },
+      "step_texts": {
+        "S1": "For a box section equal to $a$ times a generator, the required unit represents $a\\kappa^{N/8}$.",
+        "S2": "Extensions of the open-chart key and its inverse multiply to one on the model chart.",
+        "S3": "Rescaling a generator by $b$ multiplies its $N$-fold box section by $b^N$.",
+        "S4": "The localized-model argument establishes the unit criterion for each of the two classes of valued points."
+      }
+    },
+    {
+      "edition_sha256": "822c3bc63f861dfc8f8442b7822729f140f92a7686c3e5568f2e36aacf8c5ffc",
+      "sources": [
+        {
+          "path": "notes/units/D128_round4.md",
+          "sha256": "ee02e9dadb9ed428ff5cbcfa298e4190d6b7424a000ac8531234a308bec04993"
+        }
+      ],
+      "statement_sha256": "c6af5b77f3fb195137e6ed9c12d1fac5d1f23b41900b0a513da9bbc155b7718f",
+      "steps": {
+        "S1": "933a5419afebc4d57daa8615962e7b53c4f1bdc157fb3a3522ab88f4f596744c",
+        "S2": "c23fcf969f636073bd09a1823a7e01f54353b6e3d797572c12d6d742a9203361",
+        "S3": "6747a243e9b1b4369dd038e581ac4dbbda23fc1b059c7e998939bb0ebf4917c2",
+        "S4": "738e8bf0f3dcfe790a5af4606f43fe43435b305dd848ee0ee4b7a893fed4ce08"
+      },
+      "step_texts": {
+        "S1": "For a box section equal to $a$ times a generator, the required unit represents $a\\kappa^{N/8}$.",
+        "S2": "Extensions of the open-chart key and its inverse multiply to one on the model chart.",
+        "S3": "Rescaling a generator by $b$ multiplies its $N$-fold box section by $b^N$.",
+        "S4": "The localized-model argument establishes the unit criterion for each of the two classes of valued points."
+      },
+      "step_passages": {
+        "S1": "7615c5e7803f7c0793ed9f8acc22c776320b2d4612d5a2107172472eb3f5852f",
+        "S2": "df41198fafe217c52239629d14b3b080527b4ee880dd089810804947c0888b47",
+        "S3": "2c33eddad4ae4cda57242a0827f122c5a726efbe8b7711b10d2158aa0d876577",
+        "S4": "aabb89521c1f3655b2e303cbdd130ad658f3db1f5fc5487e4c575aad03d44346"
+      }
+    }
+  ]
+}

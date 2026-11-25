@@ -1,0 +1,132 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "P034",
+  "edition_sha256": "192e81105c8c0991fc346eb5742a3b473accd0ac2c13f15e34d6ee1984a7aec5",
+  "note_sha256": "87da94dea7235b82fee482bd6c4cd90cc3ccbefd33413cb62ee31d549d723282",
+  "statement_sha256": "f62201b63df52642e42f82c89b053576dd2cb696d7cf96171c42b6d6b616662d",
+  "sources": [
+    {
+      "path": "notes/units/P034.tex",
+      "sha256": "87da94dea7235b82fee482bd6c4cd90cc3ccbefd33413cb62ee31d549d723282"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Stable comparison and the logarithms of scalar units supply the invariant-form pairings on the chosen higher rank.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: stable real comparison",
+        "standard: unit theorem"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.KB.bOdd_zk",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/TorsionIntegers/Bridge.lean",
+          "line0": 34,
+          "line1": 35
+        }
+      ],
+      "source": "notes/units/P034.tex",
+      "anchor": "The central directions are supplied",
+      "source_lines": [
+        13,
+        35
+      ],
+      "claim_sha256": "541f82232bd527ca6607d86133524052ac62d0471efc05da1f261b3692fde008",
+      "passage_sha256": "0b291b13c0f0dd16c68d6ef12c1f884cc0e5cf0611742537217b0f42cbe2a5a9",
+      "sha256": "891066536fdab78d22ea4e7fd98df6b195f6268bdb604830b719b6cd54b4f7e5",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Block repetition scales a product of $j$ traces by $t^j$, and the indicated recurrence annihilates it when $2\\le j\\le k+1$.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "input: trace-word decomposition"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.KB.sWtOdd_of",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/OddWeightCycles/SWtOddOf.lean",
+          "line0": 8,
+          "line1": 9
+        }
+      ],
+      "source": "notes/units/P034.tex",
+      "anchor": "trace factors scales",
+      "source_lines": [
+        37,
+        49
+      ],
+      "claim_sha256": "b5f2670d1d2651271ff2d37af386e457b973b7bba279f3903cfd76ad076ed821",
+      "passage_sha256": "eaee5a0b8b509c9aa31ad60177f5b408c24ece0855ff076d146e2e47672d4371",
+      "sha256": "bba697a9cbc109772e79cd259c25f933f698bce831276c56e07c517c757ccee1",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The surviving single-trace pairings separate the span with at most one independent real value per complex place, yielding the stated rank bound.",
+      "kind": "inequality",
+      "uses": [
+        "S2",
+        "input: stable realization and stabilization"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.KB.sBStarOdd_of",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/OddSpanRank/SBStarOddOf.lean",
+          "line0": 13,
+          "line1": 78
+        },
+        {
+          "name": "PositivityTheory.KB.bOdd_zk",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/TorsionIntegers/Bridge.lean",
+          "line0": 34,
+          "line1": 35
+        }
+      ],
+      "source": "notes/units/P034.tex",
+      "anchor": "evaluations separate the real",
+      "source_lines": [
+        51,
+        58
+      ],
+      "claim_sha256": "ca2eb83c14dbfca6c2d4ef6adcf8c99f0e75fe90116ad03aa3cbee6be3ab2968",
+      "passage_sha256": "fd2004d0bcf868cde0e4ec293e9b8fae2ca3ba775371b28d2d65b5bb5c1af98f",
+      "sha256": "ce8c1e2ff3931cc7cc7e0f5fb6a84dec11d5b9f24b76fe74a69ca796f4e804d4",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "add1db1250c3b403c052e4167fe5fb704b6a111a324d925c03df6c55081a8261",
+      "sources": [
+        {
+          "path": "notes/units/P034.tex",
+          "sha256": "bd37cc799d3bcd7b21a93451379f25c98c1145d4607ab3b69f07bb314d94aa62"
+        }
+      ],
+      "statement_sha256": "f62201b63df52642e42f82c89b053576dd2cb696d7cf96171c42b6d6b616662d",
+      "steps": {
+        "S1": "891066536fdab78d22ea4e7fd98df6b195f6268bdb604830b719b6cd54b4f7e5",
+        "S2": "bba697a9cbc109772e79cd259c25f933f698bce831276c56e07c517c757ccee1",
+        "S3": "ce8c1e2ff3931cc7cc7e0f5fb6a84dec11d5b9f24b76fe74a69ca796f4e804d4"
+      },
+      "step_texts": {
+        "S1": "Stable comparison and the logarithms of scalar units supply the invariant-form pairings on the chosen higher rank.",
+        "S2": "Block repetition scales a product of $j$ traces by $t^j$, and the indicated recurrence annihilates it when $2\\le j\\le k+1$.",
+        "S3": "The surviving single-trace pairings separate the span with at most one independent real value per complex place, yielding the stated rank bound."
+      },
+      "step_passages": {
+        "S1": "0b291b13c0f0dd16c68d6ef12c1f884cc0e5cf0611742537217b0f42cbe2a5a9",
+        "S2": "eaee5a0b8b509c9aa31ad60177f5b408c24ece0855ff076d146e2e47672d4371",
+        "S3": "fd2004d0bcf868cde0e4ec293e9b8fae2ca3ba775371b28d2d65b5bb5c1af98f"
+      }
+    }
+  ]
+}

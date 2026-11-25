@@ -1,0 +1,177 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "N188",
+  "edition_sha256": "63ec0347304fec24f35573fdb28d3b3a744eafebcc8994df2d9ded33f31aba0f",
+  "note_sha256": "29f4d1a66184c0638293c7d6780405de24ac59c555f051f4a7f9e556b790fe90",
+  "statement_sha256": "133cd2e1ff5639e1f1bab58d5430dbeb25d812cfff314a0c19076c7a1ac86c91",
+  "sources": [
+    {
+      "path": "notes/blueprint/N188.tex",
+      "sha256": "29f4d1a66184c0638293c7d6780405de24ac59c555f051f4a7f9e556b790fe90"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The two transforms use the trace pairing with opposite signs, fixing the normalization of the Gram coefficient.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: self-dual measures and additive character"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.CompanionTheory.SiegelND.starN",
+          "file": "Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ThetaPartD.lean",
+          "line0": 17,
+          "line1": 27
+        }
+      ],
+      "source": "notes/blueprint/N188.tex",
+      "anchor": "F^*_\\Phi(b)=\\int\\Phi(X)\\psi([b,Q(X)])\\,dX,\\qquad",
+      "source_lines": [
+        18,
+        44
+      ],
+      "claim_sha256": "0f264259ba34aef051d8c8fa4a99b81a1fa35dcc49c0e3331f3f2d7ed0752414",
+      "passage_sha256": "e240f2a368f2381a76c99207ea7dfb16bbbe897d5ca11a892dc5202322fbcc01",
+      "sha256": "ab2e1bd319c2e1544b9f1e27458d58929c5ebc049ccb99982ba3ebb9fc28e319",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The transform used to form the Gram coefficient is integrable in the stated range.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S1",
+        "input: convergent dimension range"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.CompanionTheory.SiegelND.Integ.integrable_starN",
+          "file": "Development/AutomorphicSpectrum/Proofs/BlockDecomposition/SiegelWeilConvergentRange.lean",
+          "line0": 20,
+          "line1": 82
+        }
+      ],
+      "source": "notes/blueprint/N188.tex",
+      "anchor": "Weil proves $F^*_\\Phi\\in L^1$ and identifies $F_\\Phi(T)$ with integration",
+      "source_lines": [
+        46,
+        62
+      ],
+      "claim_sha256": "944d0254e19971162188b02603316e4932ec7c362b62f7cce67afe45a800eeab",
+      "passage_sha256": "f2e45874aaec0131d2bc492800b46b7f521cc8e86f24fa11e5c64b11e4277b7f",
+      "sha256": "6780482ec84f76d037ad6066a9b6bd799ef022a95989d2fff6e3eba8d1dbd557",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Every rational tuple in the theta sum at a nonsingular Gram target has full rank.",
+      "kind": "case-split",
+      "uses": [
+        "input: nonsingular target"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.CompanionTheory.SiegelND.Coef.coefN_eq_theta",
+          "file": "Development/WeilBound/RepresentationTheoryGL/RegularisedSiegelWeil/ThetaIdempotents/ThetaCoefficients/SiegelWeilHermitianFormula.lean",
+          "line0": 303,
+          "line1": 336
+        }
+      ],
+      "source": "notes/blueprint/N188.tex",
+      "anchor": "When $\\det T\\ne0$ every tuple in this sum has full rank. The inverse",
+      "source_lines": [
+        46,
+        62
+      ],
+      "claim_sha256": "aaffcb9050597c66ab134171595b38b858d628a6aeeabe649c298da8e527773c",
+      "passage_sha256": "f2e45874aaec0131d2bc492800b46b7f521cc8e86f24fa11e5c64b11e4277b7f",
+      "sha256": "92d7c8ca3994911f3eccb63e642d355612505a45566feeb7b187716de82d1646",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The normalized theta average equals the nonsingular Gram coefficient with the specified measure.",
+      "kind": "assembly",
+      "uses": [
+        "S2",
+        "S3",
+        "input: fibre identity"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.CompanionTheory.SiegelND.Coef.coefN_eq_theta",
+          "file": "Development/WeilBound/RepresentationTheoryGL/RegularisedSiegelWeil/ThetaIdempotents/ThetaCoefficients/SiegelWeilHermitianFormula.lean",
+          "line0": 303,
+          "line1": 336
+        }
+      ],
+      "source": "notes/blueprint/N188.tex",
+      "anchor": "the factor $\\mu(\\mathcal F)^{-1}$ normalizes its Haar fundamental domain",
+      "source_lines": [
+        46,
+        62
+      ],
+      "claim_sha256": "be5da43f044be5aa416881ecc79ef279b8c1e19659b9c3e51ca6706d377a290c",
+      "passage_sha256": "f2e45874aaec0131d2bc492800b46b7f521cc8e86f24fa11e5c64b11e4277b7f",
+      "sha256": "6ee0ad5c653587c349017e864ddb2bac486aa1fc77770ee7453d7995848af0a3",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "91756b437f23c9e6a28289496c2161e10d2ab25830104aaffa8952fd315fbd48",
+      "sources": [
+        {
+          "path": "notes/blueprint/N188.tex",
+          "sha256": "5ae59cc81e0d2a2e44047523c1bd2fc382f2b990469ea5b74c3ea0d3ac39d166"
+        }
+      ],
+      "steps": {
+        "S1": "ab2e1bd319c2e1544b9f1e27458d58929c5ebc049ccb99982ba3ebb9fc28e319",
+        "S2": "3fcf66f030c9123860815eaaf6f377d7f70f3eeee5f29549c4742625b449abd4",
+        "S3": "92d7c8ca3994911f3eccb63e642d355612505a45566feeb7b187716de82d1646",
+        "S4": "6ee0ad5c653587c349017e864ddb2bac486aa1fc77770ee7453d7995848af0a3"
+      },
+      "step_texts": {
+        "S1": "The two transforms use the trace pairing with opposite signs, fixing the normalization of the Gram coefficient.",
+        "S2": "The transform used to form the Gram coefficient is integrable in the stated range.",
+        "S3": "Every rational tuple in the theta sum at a nonsingular Gram target has full rank.",
+        "S4": "The normalized theta average equals the nonsingular Gram coefficient with the specified measure."
+      }
+    },
+    {
+      "edition_sha256": "0975eb311ea4a5699bd181d4dac71b05b316aa7c2bb02bd47a4ff9cca2af37ab",
+      "sources": [
+        {
+          "path": "notes/blueprint/N188.tex",
+          "sha256": "5ae59cc81e0d2a2e44047523c1bd2fc382f2b990469ea5b74c3ea0d3ac39d166"
+        }
+      ],
+      "statement_sha256": "133cd2e1ff5639e1f1bab58d5430dbeb25d812cfff314a0c19076c7a1ac86c91",
+      "steps": {
+        "S1": "ab2e1bd319c2e1544b9f1e27458d58929c5ebc049ccb99982ba3ebb9fc28e319",
+        "S2": "6780482ec84f76d037ad6066a9b6bd799ef022a95989d2fff6e3eba8d1dbd557",
+        "S3": "92d7c8ca3994911f3eccb63e642d355612505a45566feeb7b187716de82d1646",
+        "S4": "6ee0ad5c653587c349017e864ddb2bac486aa1fc77770ee7453d7995848af0a3"
+      },
+      "step_texts": {
+        "S1": "The two transforms use the trace pairing with opposite signs, fixing the normalization of the Gram coefficient.",
+        "S2": "The transform used to form the Gram coefficient is integrable in the stated range.",
+        "S3": "Every rational tuple in the theta sum at a nonsingular Gram target has full rank.",
+        "S4": "The normalized theta average equals the nonsingular Gram coefficient with the specified measure."
+      },
+      "step_passages": {
+        "S1": "e240f2a368f2381a76c99207ea7dfb16bbbe897d5ca11a892dc5202322fbcc01",
+        "S2": "f2e45874aaec0131d2bc492800b46b7f521cc8e86f24fa11e5c64b11e4277b7f",
+        "S3": "f2e45874aaec0131d2bc492800b46b7f521cc8e86f24fa11e5c64b11e4277b7f",
+        "S4": "f2e45874aaec0131d2bc492800b46b7f521cc8e86f24fa11e5c64b11e4277b7f"
+      }
+    }
+  ]
+}

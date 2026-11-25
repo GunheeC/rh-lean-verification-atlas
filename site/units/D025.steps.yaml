@@ -1,0 +1,181 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "D025",
+  "edition_sha256": "0c9b50c84259c293c26bbcf166c1e7967d7bf7db24432724be4e20b8c6516fcc",
+  "note_sha256": "0f98ca79a20ef57edbcff834d2ab7953d9cfefecdc91e1944bc9b66768fd8d4b",
+  "statement_sha256": "1e1c5a6bdc077e5406098f0a43c8802788d394710b6f34ef34f840551b348764",
+  "sources": [
+    {
+      "path": "notes/units/D025_round4.md",
+      "sha256": "0f98ca79a20ef57edbcff834d2ab7953d9cfefecdc91e1944bc9b66768fd8d4b"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The two unitary translates may depend on the representations, the given lowest unit vector and both Haar measures.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: BesselNVG parameter and measure predicates"
+      ],
+      "lean": [
+        {
+          "name": "ReciprocityTheory.ChartRestriction.DS.Lap.TopNV.BesselNVG",
+          "file": "ReciprocityTheory/ReductiveGroups/DiscreteSeries/LaplaceOperators/BesselVectors/BesselNV.lean",
+          "line0": 39,
+          "line1": 57
+        }
+      ],
+      "source": "notes/units/D025_round4.md",
+      "anchor": "Choose an even integer $k\\ge2$ and an arbitrary",
+      "source_lines": [
+        25,
+        25
+      ],
+      "claim_sha256": "14c96d968b148c125867f350a0bf780705a96f5ac7194ebee7f1551bf3dfc114",
+      "passage_sha256": "535acb5cc145aee5917802bf61e67573f765842ded8481c887358e078751ddd6",
+      "sha256": "f63d783e0a610a6c873811278ffb9fccf5f055a12efc93cb249188419bda284e",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The finite-integral and signature-zero inputs produce the specialized nonzero model test for the admissible target.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: nvAll and the signature-zero model coefficient"
+      ],
+      "lean": [
+        {
+          "name": "ReciprocityTheory.ChartRestriction.DS.Lap.NVHTop.intS",
+          "file": "ReciprocityTheory/ReductiveGroups/DiscreteSeries/LaplaceOperators/SpectralGap/NVHTop.lean",
+          "line0": 25,
+          "line1": 26
+        },
+        {
+          "name": "ReciprocityTheory.ChartRestriction.DS.Lap.nv",
+          "file": "ReciprocityTheory/ReductiveGroups/DiscreteSeries/LaplaceOperators/Imports.lean",
+          "line0": 10,
+          "line1": 11
+        },
+        {
+          "name": "ReciprocityTheory.ChartRestriction.DS.Lap.TopFinal.bAtTarget_of",
+          "file": "ReciprocityTheory/ReductiveGroups/DiscreteSeries/LaplaceOperators/BesselVectors/BesselNVGOfNv.lean",
+          "line0": 10,
+          "line1": 16
+        }
+      ],
+      "source": "notes/units/D025_round4.md",
+      "anchor": "The first input is the integration statement obtained",
+      "source_lines": [
+        29,
+        29
+      ],
+      "claim_sha256": "81c8a5f9c645df21f751d4b1554fb6fd90aca3a6b719eb8b64a8df1dae388ab4",
+      "passage_sha256": "13ed274f1f6667815f9afdadc1095d9f5c9560b52581e9b7917d97cdde47b28a",
+      "sha256": "cfdc141d2649589ad66c0c63f957aabbc402244bafe7a8ffd37bf8c1b1be4b9f",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Testing the shifted Bessel integral on the model's detecting vector gives a nonzero value for the actual operator.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "S2",
+        "input: coefficient transport on UH"
+      ],
+      "lean": [
+        {
+          "name": "ReciprocityTheory.ChartRestriction.DS.Lap.TopNV.besselNVG_of",
+          "file": "ReciprocityTheory/ReductiveGroups/DiscreteSeries/LaplaceOperators/BesselVectors/BesselNV.lean",
+          "line0": 118,
+          "line1": 147
+        },
+        {
+          "name": "ReciprocityTheory.ChartRestriction.DS.Lap.TopNV.besselNVG_of",
+          "file": "ReciprocityTheory/ReductiveGroups/DiscreteSeries/LaplaceOperators/BesselVectors/BesselNV.lean",
+          "line0": 148,
+          "line1": 171
+        }
+      ],
+      "source": "notes/units/D025_round4.md",
+      "anchor": "Transport the discrete-series coefficient through the change of",
+      "source_lines": [
+        33,
+        33
+      ],
+      "claim_sha256": "0a7c7276587320efbd14e0b035c210640bbdc92f701f6b8ab2d47d05a8ad3970",
+      "passage_sha256": "bd8b77300915397db897eb4ca1d0540626c23a28152a3f6fcf9464d6dc483c1e",
+      "sha256": "3290e63b9ab75ce6c41bed2964bf16a8c98967192481ce4f379e201bf0174203",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "e8b01710bcf104c25b2ced2c82afb2eb2d684a86ebc921c91061cebc402e0fe8",
+      "sources": [
+        {
+          "path": "notes/units/D025_round4.md",
+          "sha256": "9f554498fb189d54268f0f46ef7e5cfae66fa9ed9ba1881a463bb2b80c5998fa"
+        }
+      ],
+      "steps": {
+        "S1": "6723da6547069ad990e028459a3b772c0f39a8c3488969ca1f98ee1614603606",
+        "S2": "4d4964f7a9de9b479f2f1be1f2cc329886266ae0888e0b6933fa933fc6ec368e",
+        "S3": "faa0d57f11ef2e39d06c73d64129a0cd27568cfcd285c87da7d04fada2913021"
+      },
+      "step_texts": {
+        "S1": "The two unitary translates may depend on the representations, the given lowest unit vector and both Haar measures.",
+        "S2": "The finite-integral and signature-zero inputs produce the specialized nonzero model test for the admissible target.",
+        "S3": "Testing the shifted Bessel integral on the model's detecting vector gives a nonzero value for the actual operator."
+      }
+    },
+    {
+      "edition_sha256": "cc57a6609ab5e08cbd0e95d3cbcce6537ee666b2caebff442d5f6303bf307d51",
+      "sources": [
+        {
+          "path": "notes/units/D025_round4.md",
+          "sha256": "9f554498fb189d54268f0f46ef7e5cfae66fa9ed9ba1881a463bb2b80c5998fa"
+        }
+      ],
+      "steps": {
+        "S1": "f63d783e0a610a6c873811278ffb9fccf5f055a12efc93cb249188419bda284e",
+        "S2": "cfdc141d2649589ad66c0c63f957aabbc402244bafe7a8ffd37bf8c1b1be4b9f",
+        "S3": "3290e63b9ab75ce6c41bed2964bf16a8c98967192481ce4f379e201bf0174203"
+      },
+      "step_texts": {
+        "S1": "The two unitary translates may depend on the representations, the given lowest unit vector and both Haar measures.",
+        "S2": "The finite-integral and signature-zero inputs produce the specialized nonzero model test for the admissible target.",
+        "S3": "Testing the shifted Bessel integral on the model's detecting vector gives a nonzero value for the actual operator."
+      }
+    },
+    {
+      "edition_sha256": "c6ce32dda12a2e0000109e6b0bda2fb311635902b3b3eea24cead5d363281ac7",
+      "sources": [
+        {
+          "path": "notes/units/D025_round4.md",
+          "sha256": "55aafcf8d1399d0a98f256fca046f4fcd7f5548040a88cf2305e49b5108066ea"
+        }
+      ],
+      "statement_sha256": "1e1c5a6bdc077e5406098f0a43c8802788d394710b6f34ef34f840551b348764",
+      "steps": {
+        "S1": "f63d783e0a610a6c873811278ffb9fccf5f055a12efc93cb249188419bda284e",
+        "S2": "cfdc141d2649589ad66c0c63f957aabbc402244bafe7a8ffd37bf8c1b1be4b9f",
+        "S3": "3290e63b9ab75ce6c41bed2964bf16a8c98967192481ce4f379e201bf0174203"
+      },
+      "step_texts": {
+        "S1": "The two unitary translates may depend on the representations, the given lowest unit vector and both Haar measures.",
+        "S2": "The finite-integral and signature-zero inputs produce the specialized nonzero model test for the admissible target.",
+        "S3": "Testing the shifted Bessel integral on the model's detecting vector gives a nonzero value for the actual operator."
+      },
+      "step_passages": {
+        "S1": "535acb5cc145aee5917802bf61e67573f765842ded8481c887358e078751ddd6",
+        "S2": "13ed274f1f6667815f9afdadc1095d9f5c9560b52581e9b7917d97cdde47b28a",
+        "S3": "bd8b77300915397db897eb4ca1d0540626c23a28152a3f6fcf9464d6dc483c1e"
+      }
+    }
+  ]
+}

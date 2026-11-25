@@ -1,0 +1,88 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "W14",
+  "title": "From special values to the minus part",
+  "track": {
+    "primary": "galois",
+    "secondary": []
+  },
+  "statement": "Assume the following character estimate. For every abelian CM field\n$F$, compatible algebraic closure, and cyclotomic action of\n$(\\mathbb Z/N\\mathbb Z)^\\times$ on $F$ ($N>0$), take an odd prime\n$\\ell\\nmid[F:\\mathbb Q]$, a finite DVR\n$O\\subset\\overline{\\mathbb Q}_\\ell$ over $\\mathbb Z_\\ell$, $k\\ge1$,\nand a character $\\psi$ of $\\operatorname{Gal}(F/\\mathbb Q)$ valued in\n$O^\\times$. Write $\\chi$ for the induced character modulo $N$.\nIf $\\chi(-1)=(-1)^{k+1}$, the $O$-length of the $\\psi$-eigenspace\nof the localization kernel with twist $-k$ is at most\n$\\operatorname{ord}_O(a)$ for every $a\\in O$ representing the\ndenominator-cleared primitive Bernoulli value\n$\\operatorname{den}(N,k+1)B_{\\rm prim}(k+1,\\chi)$.\nThen there exists a real $C$ such that for every abelian datum $M$,\n$e,t\\ge2$, prime pair $q,d$ as in W12 and CM field $E$ of type\n$(M,e,q,d)$, all its odd-prime minus lengths $h_\\ell^-(E,k)$ for\n$1\\le k<t$ are finite. Put $n=[E:\\mathbb Q]$, $f=\\operatorname{cond}E$,\n$o=\\deg M$. For every finite set $T$ of odd primes,\n\\[\n\\begin{split}\n \\sum_{\\ell\\in T}\\log\\ell\\sum_{1\\le k<t}h_\\ell^-(E,k)\n &\\le 3nt^2\\log(tf)\\\\\n &\\quad+C\\!\\sum_{\\substack{p\\mid o\\\\p\\ {\\rm odd\\ prime}}}\n                  pn^2t^2\\log^2(tpf).\n\\end{split}\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume the specified character estimate over abelian CM fields: for the allowed odd prime and parity the localization-kernel eigenspace length is bounded by the valuation of the prescribed special-value representative.",
+    "Use the compatible cyclotomic action, finite coefficient DVR, twist and character in this comparison."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.Odd.thmBcFree_of",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/OddResidueBounds/ThmBcOfPsiBound.lean",
+      "line0": 295,
+      "line1": 295,
+      "sha256": "2c8cebde03e946849ee37f8739cd2ba2054e533631703f8b2b49c94a93fc3d55",
+      "dominated": 2871,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "5.50 (sub:W14)",
+      "pages": [
+        53,
+        53
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/W14.tex",
+      "section": "sub:W14",
+      "pages": []
+    }
+  ],
+  "status": "Statement only",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [
+    "D551"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [],
+  "paper_id": "W14",
+  "indexed_members": [
+    "D552",
+    "D553",
+    "D554",
+    "D555",
+    "D556",
+    "D557"
+  ],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "from-special-values-to-the-minus-part",
+  "aliases": [
+    "thmBcFree_of",
+    "W14 From special values to the minus part"
+  ],
+  "background": [
+    "Special values of Dirichlet L-functions",
+    "Minus eigenspaces"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "5.50 (sub:W14)",
+    "pages": [
+      53,
+      53
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "D551": "graph"
+  }
+}

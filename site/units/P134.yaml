@@ -1,0 +1,99 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "P134",
+  "title": "Depth-zero congruence in a represented base frame",
+  "track": {
+    "primary": "theta",
+    "secondary": []
+  },
+  "statement": "For tied data, fix a chart $\\beta$ at $i\\le m$, a represented point\n$p\\sim_{i,\\beta}x$ and an element $\\kappa$ of its level group. For every\n$P\\in B$ write $k=\\mathrm{rat}(b_P)^{-1}\\kappa\\,\\mathrm{rat}(b_P)$.\nThen $\\mathrm{Cong}_{s(P),0}(k)$ and $\\mathrm{Cong}_{s(P),0}(k^{-1})$\nboth hold.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Use tied data and a chart at stage $i\\le m$.",
+    "The point is represented in that chart, the element belongs to its level group, and the conjugating frame is the stated one at a place of $B$."
+  ],
+  "lean": [
+    {
+      "name": "GlobalTheory.TwV.congAt_fb_lev",
+      "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/ChartLevelBaseFrameCongrOneAtBadPrime.lean",
+      "line0": 13,
+      "line1": 15,
+      "sha256": "93fcb8428b5aa6f1d6c3f39d2cb371d95e22815fc0bc7676b79b514fc7905a3e",
+      "dominated": 911,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "C.14 (pn:P134)",
+      "pages": [
+        145,
+        145
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/P134.tex",
+      "section": "pn:P134",
+      "pages": []
+    },
+    {
+      "document": "notes/units/P134-argument.tex",
+      "section": "Written argument for P134",
+      "pages": []
+    }
+  ],
+  "status": "Full",
+  "grade": "L1",
+  "reviews": [
+    "reviews/R21_review.md"
+  ],
+  "prerequisites": [],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [
+    {
+      "grade": "L1",
+      "review": "reviews/R21_review.md",
+      "lines": [
+        433,
+        448
+      ],
+      "scope": "Statement-level verdict only; no completion of other segments in the same legacy unit.",
+      "verdict": "Statement compared; later candidate recheck reserved"
+    }
+  ],
+  "paper_id": "P134",
+  "indexed_members": [
+    "P139"
+  ],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "depth-zero-congruence-in-a-represented-base-frame",
+  "aliases": [
+    "Depth zero in the base frame",
+    "congAt_fb_lev",
+    "P134 Depth-zero congruence in a represented base frame"
+  ],
+  "background": [
+    "Congruence subgroups",
+    "Represented points on lattice charts"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "C.14 (pn:P134)",
+    "pages": [
+      145,
+      145
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "summary": "For a represented point in a tied chart, conjugating a level-group element into each prescribed base frame gives the required depth-zero congruence for both the element and its inverse. This checks that the allowed coordinate change works in either direction."
+}

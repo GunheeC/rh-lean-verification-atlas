@@ -1,0 +1,105 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "B06",
+  "title": "Valuation of period columns in a selected family",
+  "track": {
+    "primary": "theta",
+    "secondary": []
+  },
+  "statement": "Fix $\\mathcal A$ with a twist selection. On $D_3(3,\\mathcal A)$ suppose\nthe following are closed: untwisted point and twisted-point integrality;\nthe untwisted period-class Weyl sum and twisted-period admissibility;\nthe sharp untwisted and twisted column bounds at the selected level;\nand the existence of a common constant for the used tuples and the\nfamily size at the type prime. Suppose the selection is served on this\nclass. Then the following too is closed: there is $x_0$ such that\nfor $x\\ge x_0$, $x>x_1(F)$ and each index at $x$, for every unit $u$,\nplace $w$, lattice vector $\\phi\\in L.\\mathrm{NuLat}(u)$ and form\n$F'$ in the prescribed level module and the subspace $V_0$, there is\na coefficient-field element $y$ whose fixed embedding equals the period\ncolumn at $(u,w,\\phi,F')$. It is zero or satisfies\n$v_w(y)\\ge\\lfloor\\operatorname{ur}(D,w,L.\\mathrm{sg}(u,w))\\rfloor$.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Start with a served twist selection on the enriched family class.",
+    "Assume closed untwisted and twisted integrality, period and column conditions; a uniform bound controls the used tuples and family size at the type prime."
+  ],
+  "lean": [
+    {
+      "name": "GlobalTheory.Top.closed_family_admissible_twist_link_alt",
+      "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ClosedFamilyAdmissibleTwistLink.lean",
+      "line0": 12,
+      "line1": 31,
+      "sha256": "62cef6f7f5cab6bf8084e4c7a0166566cf4899ba2bb455e0100ebd33b33414e7",
+      "dominated": 21017,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/B06_round4.md",
+      "section": "B06 · Valuation of period columns in a selected family",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "5.6 (sub:B06)",
+      "pages": [
+        37,
+        37
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/B06.tex",
+      "section": "sub:B06",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [
+    "P045",
+    "P047",
+    "Z4.1",
+    "Z4.3"
+  ],
+  "size_pages": 2,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "B06",
+  "indexed_members": [
+    "D018",
+    "D516",
+    "D517",
+    "D518",
+    "D574"
+  ],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "valuation-of-period-columns-in-a-selected-family",
+  "aliases": [
+    "closed_family_admissible_twist_link_alt",
+    "B06 Valuation of period columns in a selected family"
+  ],
+  "background": [
+    "Theta periods",
+    "Integral structures",
+    "Local valuations"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "5.6 (sub:B06)",
+    "pages": [
+      37,
+      37
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "P045": "graph",
+    "P047": "graph",
+    "Z4.1": "graph",
+    "Z4.3": "graph"
+  },
+  "review_status": "pending_review",
+  "summary": "For the specified twist selection and enriched family, sufficiently large points have the required level-prime valuation bound on period columns. The point, period and size estimates used to obtain it must apply to the same family at the same scale."
+}

@@ -1,0 +1,343 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% RH Notes blueprint source excerpts for Z2.K7
+% Verbatim excerpts in the notation of the parent blueprint. The labelled editions and source ranges appear below.
+% See the unit YAML for the current proof status. Earlier-round passages retain their original wording.
+\section*{Z2.K7. Full integral homology torsion}
+
+% Parent source SHA-256: 1af64922b98ed2310744411b1f18b25cc426c97220646321471836e1a3a409d6
+% blueprint/ch_P.tex lines 652 through 727; prop:P-k-num
+\begin{proposition}[Absorbing the two torsion orders]\label{prop:P-k-num}
+\lean{UpperTheory.V.ZK.sNum}
+\uses{prop:P-k-layer,prop:P-k-count}
+There is a single $C_\Sigma$ such that $\Sigma(L)=s_0<\infty$ and
+$s_0\log\ell\le K_{C_\Sigma}(E,n,D)$ in Proposition~\ref{prop:P-k-main}.
+\end{proposition}
+\begin{proof}
+Section~\ref{sec:P-r3-K247} proves the class-number estimate and the numerical step of K7. Its geometric and homological bounds are stated there with their proof sources. For every totally complex $M$, every $E\ge1$
+and every $i\le2E+1$ the integral torsion in rank $4E+6$ is finite and
+$\log T_i\le K_{C_0}(E,n',D')$ with one absolute $C_0$. The project
+obtains $C_0=24$ by combining a torsion estimate for the arithmetic group,
+a cell-orbit bound and the numerical comparison \nolinkurl{exponent_le}
+(\nolinkurl{torsAll}, \nolinkurl{sTors}, \path{ExponentLe.lean:6,70--125}).
+Here \nolinkurl{sTors} passes only the logarithmic inequality;
+finiteness is the other conjunct of \nolinkurl{torsAll}, supplied by
+\nolinkurl{KT.tors_le} (\path{HermiteNormalForms/Assembly.lean:25--30}).
+The auxiliary class-number bound used below is
+$\lfloor\log_2 h_M\rfloor\le4n'\log(2D')$. In \nolinkurl{gens_le}
+(\path{NumThree.lean:186--208}) this follows by setting the prime equal
+to $2$ in \nolinkurl{numGens} (\path{GeneratorCountTuples/NumGens.lean:6--45}),
+which invokes \nolinkurl{log_classNumber_le} (\path{IdealCounting/ClassC.lean:63}).
+The factors $T_i$ are taken in degrees $2E$ and $2E+1$, so both meet the
+homology cutoff, including its top endpoint.
+
+By the preceding propositions, $\Sigma(L)\le s$ in the extended
+naturals, hence $\Sigma(L)$ is finite before one takes its integer value
+$s_0$. Also $1\le\ell^s\le T_{2E+1}T_{2E}\ell^X$. In particular both
+torsion cardinalities are strictly positive independently of the convention
+for the cardinality of an infinite type. We may take logarithms:
+\[
+  s_0\log\ell\le s\log\ell
+  \le \log T_{2E+1}+\log T_{2E}+X\log\ell .
+\]
+See \nolinkurl{sNum} (\path{NumThree.lean:241--284}). Replacing extended
+length by its natural part prematurely would also assign the natural
+value zero to infinity.
+
+Put $u=2En'\ge2$, $Y=\log(2D')\ge1/2$. Since $\ell,c\le\ell^c\le2n'$,
+both are at most $u$, as are $v$ and $\log\ell$. From $2E+1<r_2(M)$
+and $2n'\le u$ one gets
+\[
+ b\le u+2u^2,\qquad g\le u+2uY+2 .
+\]
+For the first inequality bound the product in $b$ by $n'(3n')$.
+For the second insert the class-number estimate in the definition of
+$g$. Hence $b+v\le3u^2$, $g\le6uY$, and $c+v\le4uY\le u^3Y$. Thus
+\[
+ X\log\ell\le19u^4Y\le u^9Y
+\]
+since $u^5\ge32$. For $A=u^{\max(C_0,9)}Y\ge1$ we conclude
+$s\log\ell\le2e^A+A\le e^{4A}$. Indeed $A\le e^A$ and $3\le e^{3A}$.
+As $4\le u^2$, this gives $K_{C_1}(E,n',D')$ with
+$C_1=\max(C_0,9)+2$. The two comparisons are \nolinkurl{num_poly} and
+\nolinkurl{num_three} (\path{NumThree.lean:6--76}).
+
+It remains to transfer the real bound from $M$ down to $L$.
+Write $x=2En\ge2$ and $Y_0=\log(2D)\ge1/2$.
+The degree bound gives $d\le16En=8x$, $n'=dn\le4x^2$, and
+$2En'=dx\le8x^2\le x^5$. Put $w=\ell^c\le2n'\le8x^2$. Since $D,D',w$
+are positive, the discriminant inequality gives
+\[
+ \log(2D')\le \log2+d\log D+n'\log w
+             \le Y_0+8xY_0+32x^4
+             \le73x^4Y_0\le x^{11}Y_0 .
+\]
+Here $\log w\le w$ and $x^7\ge128$. These estimates also apply at $D=1$
+because of the factor $2$ inside the logarithms. Raising $2En'\le x^5$
+to the nonnegative exponent $C_1$ and multiplying proves
+\[
+  K_{C_1}(E,n',D')\le K_{5C_1+11}(E,n,D).
+\]
+This proves the proposition with $C_\Sigma=5C_1+11$
+(\nolinkurl{num_down}, \nolinkurl{sNum}, \path{NumThree.lean:79--184,211--219,364--378}).
+\emph{Status: complete modulo Propositions~\ref{prop:P-k-layer}
+and~\ref{prop:P-k-count}.}
+\end{proof}
+
+% blueprint/ch_P.tex lines 1696 through 1951; prop:P-r4-k7
+\begin{proposition}[An all-prime bound for the face complex]
+\label{prop:P-r4-k7}
+\lean{UpperTheory.V.KT.tors_le}\quad\lean{UpperTheory.V.KT.orbnum}
+Let $M$ be totally complex, $n=[M:\mathbf Q]$, $D=|\operatorname{disc}M|$,
+$N\ge1$, $d=nN$, and $G=\mathrm{GL}_N(\mathcal O_M)$.
+For every $m\ge0$ the entire integral torsion group in $H_m(G,\mathbf Z)$
+is finite of order at most
+\[
+ (m+2)^A s^{m A s^m},\qquad
+ s=3^{dN},\quad A=(2Dd)^{12(m+1)d^3N}.
+\]
+Together with the two numerical estimates of Section~\ref{sec:P-r3-K247}
+this closes K7 at exponent $24$ (\nolinkurl{torsAll},
+\path{ClassCounting/ExponentLe.lean:70--117}).
+\end{proposition}
+\begin{proof}
+\emph{The complex and exactness.}
+Take one complex embedding from each conjugate pair. Let $V$ be the
+real vector space of tuples $h=(h_v)_v$ of Hermitian $N$-by-$N$
+matrices, $T$ its cone of positive semidefinite tuples, and
+$\Lambda=\mathcal O_M^N$. Write $y_v$ for the embedded vector and put
+\[
+ q_y(h)=\sum_v y_v^*h_v y_v,\quad
+ P=\{h:q_y(h)\ge1\ (0\ne y\in\Lambda)\},\quad
+ U=\{x\in V^*:x(k)>0\ (0\ne k\in T)\}.
+\]
+The lattice embeds as a full real lattice in $\prod_v\mathbf C^N$
+of dimension $d$. In an integral basis the full embedding matrix
+(including conjugates) has determinant of absolute value $\sqrt D$,
+since its transposed product is the trace matrix. Taking real and
+imaginary parts contributes $2^{-n/2}$ per coordinate. Thus its
+covolume is $(2^{-n/2}\sqrt D)^N$.
+Scaling the identity form puts it in $P$ since a full lattice has a
+positive shortest length. The trace functional belongs to $U$
+(\nolinkurl{gramq}, \nolinkurl{gramdet}, \nolinkurl{psdcone},
+\path{HermiteNormalForms/RealVec.lean:6},
+\path{HermiteNormalForms/Gramdet.lean:33--49},
+\path{HermiteNormalForms/Psdcone.lean:6}).
+
+Every $h\in P$ is positive definite. A negative real direction would
+give a negative rational direction in lattice coordinates and then a
+negative integral one. For a semidefinite form with nonzero kernel
+choose a nonzero real vector $v$ in that kernel. In integral
+coordinates the multiples of $v$ modulo $\mathbf Z^d$ have a positive
+integer difference $kv$ arbitrarily close to an integer vector, by
+subdividing the unit cube into boxes. To ensure the integer vector is
+nonzero, first replace $v$ by a scalar multiple of norm $>2$.
+The quadratic value of the close integer vector is the quadratic value
+of its error, contradicting the lower bound. At each $h\in P$ there
+is consequently a common positive lower eigenvalue bound in a
+neighborhood of $h$. Only finitely many $y$ can have $q_y\le1$ anywhere
+in that neighborhood (\nolinkurl{grampd}, \nolinkurl{rypos},
+\nolinkurl{locfin}, \path{HermiteNormalForms/Grampd.lean:8},
+\path{HermiteNormalForms/Rypos.lean:9}, \path{HermiteNormalForms/Locfin.lean:8}).
+
+Call $v$ a vertex if the linear forms $q_y$ with $q_y(v)=1$ span $V^*$.
+Let $C_v$ be the closed convex set of $x$ minimized at $v$ on $P$,
+that is, $x(v)\le x(h)$ for all $h\in P$. The face sets $X_p$ are the
+ordered $(p+1)$-tuples of these vertices with $U\cap\bigcap_j C_{v_j}$
+nonempty. Repetitions are allowed, and deletion gives the face maps
+(\nolinkurl{IsVert}, \nolinkurl{normalCone}, \nolinkurl{simp},
+\path{ConvexNerveComplexes/NerveFaceClosed.lean:33--55};
+\nolinkurl{Sx}, \path{HermiteNormalForms/SmulNeZeroLat.lean:76--91}).
+
+These cones cover $U$ and only finitely many meet any compact
+$K\subset U$. Indeed on $K\times(T\cap\{\|k\|=1\})$ evaluation
+has a uniform positive minimum (empty $K$ is immediate). For a fixed
+$h_0\in P$, all minimizers of all $x\in K$ lie in the closed bounded
+set $P\cap\{\|h\|\le \max_{x\in K}x(h_0)/\min x(k)\}$.
+Each minimum is attained. Its compact convex minimizing face has an
+extreme point, obtained, for example, by successively minimizing a
+basis of linear coordinates. At such a point the active $q_y$ span:
+otherwise a common annihilating direction permits small perturbations
+of either sign, by local finiteness, and both must still minimize.
+This contradicts extremality. On the compact set of potential
+minimizers, finitely many of their neighborhoods above contain
+all possible active labels. Each vertex is specified by a basis drawn
+from those labels, so only finitely many vertices occur
+(\nolinkurl{exists_vert}, \nolinkurl{cone_finite}, \nolinkurl{vert_finite},
+\path{ConvexNerveComplexes/ExistsVert.lean:5--44},
+\path{ConvexNerveComplexes/ConeFinite.lean:7--37},
+\path{ConvexNerveComplexes/VertFinite.lean:5}).
+
+Here is a hand proof of the exactness used in \nolinkurl{acyc_simp}
+(\path{ConvexNerveComplexes/AcycSimp.lean:9--19}); the source proves
+the finite convex nerve step by hyperplane cuts
+(\nolinkurl{nerve_compact}, \path{ConvexNerveComplexes/NerveCompact.lean:5--83}).
+Choose a witness in $U$ for every tuple in a given finite cycle.
+Their convex hull $K$ is compact, convex and contained in $U$.
+The nonempty $F_v=K\cap C_v$ form a finite closed convex cover of $K$.
+Its nerve equals that of the open $\delta$-neighborhoods of the $F_v$
+for sufficiently small $\delta>0$: for each subfamily with empty
+intersection a sequence of points at distance tending to zero from
+all its members would have a common limit, by compactness. There are
+only finitely many subfamilies. The thickened cover has convex
+intersections and its union is the $\delta$-neighborhood of $K$, hence
+convex. To see exactness with ordered tuples, take the double complex of
+singular chains on intersections, summing over ordered index tuples,
+with alternating deletion horizontally. Vertically each nonempty
+intersection contracts to a point, leaving the ordered nerve chains.
+Horizontally, for a singular simplex lying in some cover member, prepend
+any chosen index whose member contains it: this contracts its augmented
+index complex. The resulting chains of small simplices compute the
+homology of the union, since barycentric subdivision on each finite
+chain makes all simplices subordinate, and subdivision is chain
+homotopic to the identity (the simplex prism supplies the homotopy).
+Both computations of the double complex therefore give reduced
+homology zero. The given cycle bounds already in this finite nerve,
+hence in $X_\bullet$. The augmentation is onto because $U$ is nonempty.
+This is the exact complex of \nolinkurl{sx_exact} and \nolinkurl{tupExact}
+(\path{HermiteNormalForms/Assembly.lean:14--17},
+\path{TorsionBoundsChains/TupExact.lean:58}).
+
+\emph{Counting orbits.}
+Take a tuple and a common minimizing functional $x\in U$.
+At its barycenter $h$, the vectors with $q_y(h)=1$ are exactly those
+minimal at every vertex. They span $M^N$ over $M$. Otherwise take a
+nonzero $M$-linear functional vanishing on their span. The sum over
+embeddings of its squared absolute values is a nonzero $k\in T$
+annihilating all active constraints. By local finiteness $h-\epsilon k$
+still lies in $P$ for small $\epsilon>0$, whereas $x(h-\epsilon k)<x(h)$.
+Choose $N$ independent common minimal columns and form their integral
+matrix $B$ (\nolinkurl{simp_span}, \nolinkurl{spanpsd}, \nolinkurl{sx_basis},
+\path{ConvexNerveComplexes/SimpSpan.lean:5--48},
+\path{HermiteNormalForms/Spanpsd.lean:6}, \path{HermiteNormalForms/ColsMinSmul.lean:13--22}).
+
+Set $I_0=D^N d^d$, $R=N^N I_0^2$. For $h'\in P$ the real Gram matrix
+$H$ of $q(h')$ in integral coordinates satisfies
+\[
+ \det H=2^{-d}D^N\Big(\prod_v\det h'_v\Big)^2,\qquad
+ \det H\ge d^{-d}.
+\]
+The first identity follows from the embedding determinant above and the
+real determinant $(\det h'_v)^2$ of a complex Hermitian form. For the
+second, transform the lattice by its positive square root so the
+minimum distance is at least one. The open cube of side $1/\sqrt d$
+embeds modulo that lattice since its diameter is at most one and the
+endpoints realizing one are excluded. Its volume is at most the
+covolume $\sqrt{\det H}$. In particular $\prod_v\det h'_v\ge I_0^{-1}$.
+This packing argument gives sufficient slack for \nolinkurl{detlow}
+(\path{HermiteNormalForms/Gramlow.lean:43}, \path{HermiteNormalForms/Detlow.lean:36}).
+
+Write $I=|N_{M/\mathbf Q}\det B|\ge1$. For any vertex in this tuple,
+$J_v=B_v^* h'_v B_v$ has diagonal entries between zero and one, since
+their sums over $v$ are the lengths of the chosen columns.
+Hadamard gives $\det J_v\le1$; the product is
+$I\prod_v\det h'_v\ge I/I_0$. Therefore $I\le I_0$ and every
+$\det J_v\ge 1/I_0$. As $\operatorname{tr}J_v\le N$, the least
+eigenvalue is at least $1/(I_0N^{N-1})$. Put $B'=IB^{-1}$, integral
+by the adjugate identity and the fact that $I/\det B$ is integral
+(the characteristic polynomial of $\det B$ gives this quotient).
+If $q_y(h')=1$, then
+$(B'_vy_v)^*J_v(B'_vy_v)\le I^2$ at every place. Thus all conjugates
+of all coordinates of $B'y$ have modulus at most
+$I\sqrt{I_0 N^{N-1}}\le R$
+(\nolinkurl{nrmle}, \nolinkurl{scinv}, \nolinkurl{nearcoord},
+\path{HermiteNormalForms/DetPull.lean:35},
+\path{HermiteNormalForms/Scinv.lean:6}, \path{HermiteNormalForms/Nearcoord.lean:10}).
+
+For fixed $I$, the residue matrix of $B'$ modulo $I\mathcal O_M$
+determines $B$ up to left multiplication by $G$. Indeed, if $B'_1$
+and $B'_2$ are congruent then $B_2 B_1^{-1}=1+B_2(B'_1-B'_2)/I$
+and its inverse are integral. This leaves at most
+$\sum_{I\le I_0,\, I\ge1} I^{nN^2}\le I_0^{1+dN}$ choices.
+For fixed $B$, an algebraic integer whose conjugates all have modulus
+at most $R$ is distinguished from all others by its class modulo
+$2R+1$: the quotient of a difference by $2R+1$, if integral, has all
+conjugates of modulus $<1$ and therefore has zero norm. Since $B'$ is
+injective, at most $Z=(2R+1)^d$ vectors can occur as minima at a
+vertex with these columns. Each vertex is determined by at most
+$\dim_{\mathbf R} V\le dN$ active equations $q_y(h')=1$.
+Padding an ordered choice of such equations by a blank gives at most
+$(Z+1)^{dN}$ vertices for those columns. Hence the number of tuple
+orbits is at most $I_0^{1+dN}(Z+1)^{dN(p+1)}$
+(\nolinkurl{hnfeq}, \nolinkurl{hnf}, \nolinkurl{cntconj}, \nolinkurl{vxdet},
+\nolinkurl{orb}, \path{HermiteNormalForms/Hnfeq.lean:6},
+\path{HermiteNormalForms/Hnf.lean:7}, \path{HermiteNormalForms/Cntconj.lean:7},
+\path{HermiteNormalForms/FiniteSubfamilySpansDual.lean:37},
+\path{HermiteNormalForms/ColsMinSmul.lean:34--75}).
+Put $B_0=2Dd\ge2$. Then $I_0\le B_0^{2d}$, $N^N\le B_0^d$,
+$2R+1\le B_0^{5d+2}$ and $Z+1\le B_0^{(5d+2)d+1}$.
+The total exponent is at most $12(p+1)d^3N$, since the first
+term $2d(1+dN)$ is at most $4(p+1)d^3N$ and the remaining term
+at most $8(p+1)d^3N$. This proves the asserted common bound $A$
+through $p=m$ (\nolinkurl{orbnum}, \path{HermiteNormalForms/Orbnum.lean:6--88}).
+
+\emph{Bounding stabilizers.}
+The action of $G$ on forms is inverse pullback, permuting the $q_y$
+and preserving the normal-cone intersection condition
+(\nolinkurl{smul_mem_simp}, \path{HermiteNormalForms/SmulNeZeroLat.lean:62--75}).
+The stabilizer of a tuple fixes its first positive definite vertex.
+Every column of a matrix fixing this form has fixed quadratic length,
+so each column ranges over a bounded subset of the integral lattice.
+Thus this stabilizer is finite. On any finite subgroup, entrywise
+reduction modulo $3\mathcal O_M$ is injective. Indeed if its kernel
+were nontrivial it would contain an element of prime order $p$.
+Write it as $1+3^aY$ with $a\ge1$ maximal. For $p\ne3$, expansion
+modulo $3^{a+1}$ gives $pY=0$ modulo $3$, impossible. For $p=3$,
+the expansion modulo $3^{a+2}$ gives $Y=0$ modulo $3$, again
+impossible (the terms after $3^{a+1}Y$ are divisible by $3^{a+2}$).
+The finite matrix ring has $3^{nN^2}=s$ elements
+(\nolinkurl{stabfin}, \nolinkurl{torsfree}, \nolinkurl{mink3},
+\nolinkurl{stab}, \path{HermiteNormalForms/Stabfin.lean:10},
+\path{HermiteNormalForms/Torsfree.lean:35--48},
+\path{HermiteNormalForms/Mink3.lean:8}, \path{HermiteNormalForms/ImportsAlt.lean:8--26}).
+
+\emph{The integral determinant and stabilizer contributions.}
+Write $C_i=\mathbf Z[X_i]$, $M_0=\mathbf Z$ and
+$M_{i+1}=\ker(C_i\twoheadrightarrow M_i)$, using the exact
+augmented complex above. On a transitive orbit with stabilizer $H$,
+the coefficient module is $\mathbf Z[G]\otimes_{\mathbf Z[H]}\mathbf Z$.
+Restricting a free right $\mathbf Z[G]$-resolution of $\mathbf Z$
+to $H$ is again free and exact. Tensoring with the displayed induced
+module thus computes $H_j(H,\mathbf Z)$. For $j>0$, multiplication
+by $|H|$ kills this group: in homogeneous bar chains prepend every
+$h\in H$ and sum. This operation is equivariant and its boundary
+identity on positive degrees gives a homotopy of multiplication by
+$|H|$ to zero on coinvariants. The inhomogeneous degree-$j$ chains
+are free of rank $|H|^j$, so their cycles have rank at most $|H|^j$.
+Their homology quotient, killed by $|H|$, has order at most
+$|H|^{|H|^j}$. Summing over the at most $A$ orbits in $X_i$ gives
+$|H_j(G,C_i)|\le s^{A s^j}$ for $i\le m$ and $j>0$
+(\nolinkurl{shapiro}, \nolinkurl{finGroup}, \nolinkurl{permCard},
+\path{TorsionBoundsChains/Shapiro.lean:6},
+\path{TorsionBoundsChains/FinGroup.lean:7--19},
+\path{TorsionBoundsChains/PermCard.lean:12}).
+
+The long exact sequence for each $0\to M_{i+1}\to C_i\to M_i\to0$
+maps $H_j(G,M_i)$ into $H_{j-1}(G,M_{i+1})$ with kernel an image
+of $H_j(G,C_i)$. Its torsion subgroup therefore has order at most
+$s^{A s^j}$ times the torsion order in the target whenever that
+target's torsion is finite. After $m$ steps the last group is the
+coinvariant quotient
+\[
+ H_0(G,M_m)=\operatorname{coker}\big((C_{m+1})_G\longrightarrow(C_m)_G\big).
+\]
+Here $(C_m)_G$ is free of rank at most $A$ and every column has
+$\ell^1$ norm at most $m+2$, including when several faces coincide.
+Choose $r$ rationally independent image columns spanning the
+rational image, and $r$ coordinate rows giving a nonzero minor.
+Projection to these rows is injective on that span, maps its saturated
+integer lattice into $\mathbf Z^r$, and maps the chosen columns to
+a lattice of index the absolute determinant of the minor. Therefore
+the index of the entire image in its saturation, which equals the
+cokernel torsion order, is at most that determinant. Hadamard bounds
+it by $(m+2)^r\le(m+2)^A$. If $r=0$ the index is one.
+This argument also works when $X_{m+1}$ has infinitely many orbits.
+Multiplying all the finite bounds and using
+$\sum_{j=1}^m s^j\le m s^m$ gives the proposition, including $m=0$
+(\nolinkurl{cokerTors}, \nolinkurl{det_natAbs_le_prod_l1_norms},
+\nolinkurl{shift}, \nolinkurl{mainFace},
+\path{TorsionBoundsChains/CokerTors.lean:10},
+\path{TorsionBoundsChains/DetNatAbsLeProdL1Norms.lean:5},
+\path{TorsionBoundsChains/LogLeExp.lean:14--67}).
+\emph{Status: K7 complete.}
+\end{proof}
+

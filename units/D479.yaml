@@ -1,0 +1,89 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D479",
+  "title": "Global lattice compatibility of a family",
+  "track": {
+    "primary": "arakelov",
+    "secondary": []
+  },
+  "statement": "On the enriched class D3(3,A), duty, tied real-place second-layer data, the mass-ratio estimate and the genus-mass hypotheses give two uniform implications. Chosen data of exponent 3 give fullness and the prescribed degree/rank relation. Tuple and discriminant-size bounds give the global comparison with constants 2, CH, 3, 2, 0.\n\\[\n\\mathrm{ChosenE}(F,3,C_H)\\Rightarrow\\mathrm{NuFullF}(F)\\wedge\\mathrm{MuRank}(F),\\quad \\mathrm{TuSize}(F)\\wedge\\mathrm{DGamSize}(F)\\Rightarrow\\mathrm{LinkGLOBAL}(F,2,C_H,3,2,0).\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "For the family class assume duty and closed real-place second-layer data on the enriched class.",
+    "Use the mass-ratio bound and genus-mass hypotheses. The first implication assumes chosen data of exponent three; the second assumes the tuple and discriminant size bounds."
+  ],
+  "lean": [
+    {
+      "name": "GlobalTheory.Top.link_gl",
+      "file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/LinkGl.lean",
+      "line0": 14,
+      "line1": 31,
+      "sha256": "50ea47933db45c6a1bd8444f061acfb36555e58406fce4b4a74fdf5df0575ae2",
+      "dominated": 11198,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "G.499 (decomp:D479)",
+      "pages": [
+        281,
+        281
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D479.tex",
+      "section": "decomp:D479",
+      "pages": []
+    }
+  ],
+  "status": "Statement only",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [
+    "D014",
+    "P049",
+    "P050",
+    "Z5.1",
+    "Z5.2"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [],
+  "paper_id": "D479",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "global-lattice-compatibility-of-a-family",
+  "aliases": [
+    "link_gl",
+    "D479 Global lattice compatibility of a family"
+  ],
+  "background": [
+    "Lattice masses",
+    "Arithmetic families and their ranks"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.499 (decomp:D479)",
+    "pages": [
+      281,
+      281
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "D014": "graph",
+    "P049": "graph",
+    "P050": "graph",
+    "Z5.1": "graph",
+    "Z5.2": "graph"
+  }
+}

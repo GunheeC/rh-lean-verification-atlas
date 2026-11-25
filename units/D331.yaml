@@ -1,0 +1,79 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D331",
+  "title": "Integrability of the cusp weight",
+  "track": {
+    "primary": "arakelov",
+    "secondary": [
+      "theta"
+    ]
+  },
+  "statement": "Integrating the cusp weight on the chosen fundamental set yields the stated bound involving its volume, the root discriminant and the CM-type and rank parameters.\n\\[\n0< V=\\int_{\\mathcal F}d\\mu,\\qquad \\int_{\\mathcal F}w_{\\rm cusp}\\,d\\mu\\le|\\Psi|j'\\bigl(6+\\log(2|\\Psi|\\,\\mathrm{rd}(E))+\\log(2|\\Psi|j'\\,\\mathrm{rd}(E))\\bigr)V.\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Use a CM host with the arithmetic action of the lattice group and its prescribed fundamental set.",
+    "The indices satisfy $1\\le j'$ and $3j'+1\\le j+j'$."
+  ],
+  "lean": [
+    {
+      "name": "GlobalTheory.T.cusp_weight_integrable_on_fundamental_set",
+      "file": "Development/AutomorphicSpectrum/Proofs/MetricProofs/CuspWeightIntegrableOnFundamentalSetStatement.lean",
+      "line0": 11,
+      "line1": 12,
+      "sha256": "2912c822bda928568727b9b2ff19575a2e0b801e1604cc45494a4e70ae973229",
+      "dominated": 3060,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "G.344 (decomp:D331)",
+      "pages": [
+        242,
+        242
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D331.tex",
+      "section": "decomp:D331",
+      "pages": []
+    }
+  ],
+  "status": "Statement only",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [],
+  "paper_id": "D331",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "integrability-of-the-cusp-weight",
+  "aliases": [
+    "cusp_weight_integrable_on_fundamental_set",
+    "D331 Integrability of the cusp weight"
+  ],
+  "background": [
+    "Fundamental domains of arithmetic groups",
+    "Archimedean cusp integrals"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.344 (decomp:D331)",
+    "pages": [
+      242,
+      242
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {}
+}

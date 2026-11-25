@@ -1,0 +1,161 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "P012",
+  "edition_sha256": "736216b1f15dfab01902ed56309990e64adac890be0d504f13902a77efb35d17",
+  "note_sha256": "94d851fcd2fd45e5135e1205746ae3326d26da835a11171b130c02dadd1afc7e",
+  "statement_sha256": "fd22ac9511a995361f422e26beec29a3c41bbd929256df8deb4ac9b7284dd2a9",
+  "sources": [
+    {
+      "path": "notes/units/P012-argument.tex",
+      "sha256": "94d851fcd2fd45e5135e1205746ae3326d26da835a11171b130c02dadd1afc7e"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The supplied geometric and arithmetic estimates provide the closed covolume bound for the false-side rows.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "T14",
+        "T15",
+        "T17"
+      ],
+      "lean": [
+        {
+          "name": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopCovolSlim2Use.lean",
+          "line0": 16,
+          "line1": 22
+        }
+      ],
+      "source": "notes/units/P012-argument.tex",
+      "anchor": "The first eight inputs give the lower bound on the average of the",
+      "source_lines": [
+        63,
+        87
+      ],
+      "claim_sha256": "8ed74a59ddc738d81785b4b26f1b0f179905be7a1dc6e2b6a98c99ea0edb6490",
+      "passage_sha256": "7dfd6806688276e9016e75c23835bd5ce1d4cfec1d3b65f65fc9e4b56bda0c09",
+      "sha256": "76996546274e2931a19b2b6cf6c9fe5fbc0efad17641a7fd2d7e7e3e717df1f3",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The larger of the evaluation and functional thresholds is admissible for both grid conditions.",
+      "kind": "inequality",
+      "uses": [
+        "T10",
+        "T09"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+          "line0": 52,
+          "line1": 58
+        }
+      ],
+      "source": "notes/units/P012-argument.tex",
+      "anchor": "(\\decid{D036}). Put $c=\\max(C_0,C_1)$ and",
+      "source_lines": [
+        109,
+        133
+      ],
+      "claim_sha256": "0213b7d6be361b4250f46ffa9d14db05086f7bb178cac6e96ead8b6b541b9a1d",
+      "passage_sha256": "088523942034b772bef01e338a15a8e220d6cd7faa8faa2a4c09598b33096811",
+      "sha256": "7f9ffb232d4db5f19f58cffd3b3efb7d9c39380a88058295a59b42c45b7d1cfb",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The covolume and functional links on the strengthened extension give a single definite-side witness with the initial small-prime bound.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "S2",
+        "T03",
+        "T08"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+          "line0": 58,
+          "line1": 68
+        }
+      ],
+      "source": "notes/units/P012-argument.tex",
+      "anchor": "(\\decid{D041}). Apply \\decid{T03} with these two linked conditions",
+      "source_lines": [
+        109,
+        133
+      ],
+      "claim_sha256": "2a871f6b991364c8295ff2efd26570383ddc42d2f2d43ecc67cdcf3318dea745",
+      "passage_sha256": "088523942034b772bef01e338a15a8e220d6cd7faa8faa2a4c09598b33096811",
+      "sha256": "95e46eca885a550aa2c28aff7ac6a6fbd495ec3ac0718b560521f06739efb7f1",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The window and the definite-side witness are used as distinct inputs in the character implication.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S3",
+        "T01",
+        "input: primitive-character Selmer window and Green"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+          "line0": 69,
+          "line1": 73
+        }
+      ],
+      "source": "notes/units/P012-argument.tex",
+      "anchor": "\\nolinkurl{every_character_of_theta_integrals_local_matching}",
+      "source_lines": [
+        28,
+        33
+      ],
+      "claim_sha256": "a7b06694c4bb2e61b94ee0fe33ff9ac5fa8f803a301f38af75abeb91bbb56e76",
+      "passage_sha256": "16a0bc79ddc3cc8681881e513b537222a6a6e67b1e2d6ae13c5e5289396a6365",
+      "sha256": "21e6f6a6cbd1d6e82f6ea50f5dba1d583371f30cadc402d4efa23f081908fc48",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "2f45007bb288adec9920229b7d64a45d1536c6068161623967201bb68ab6f204",
+      "sources": [
+        {
+          "path": "notes/units/P012-argument.tex",
+          "sha256": "ac0680c27fe3d2dce14006cbd265cb0bcface877f480a1afd19f7ac24734cc2d"
+        }
+      ],
+      "statement_sha256": "fd22ac9511a995361f422e26beec29a3c41bbd929256df8deb4ac9b7284dd2a9",
+      "steps": {
+        "S1": "76996546274e2931a19b2b6cf6c9fe5fbc0efad17641a7fd2d7e7e3e717df1f3",
+        "S2": "7f9ffb232d4db5f19f58cffd3b3efb7d9c39380a88058295a59b42c45b7d1cfb",
+        "S3": "95e46eca885a550aa2c28aff7ac6a6fbd495ec3ac0718b560521f06739efb7f1",
+        "S4": "21e6f6a6cbd1d6e82f6ea50f5dba1d583371f30cadc402d4efa23f081908fc48"
+      },
+      "step_texts": {
+        "S1": "The supplied geometric and arithmetic estimates provide the closed covolume bound for the false-side rows.",
+        "S2": "The larger of the evaluation and functional thresholds is admissible for both grid conditions.",
+        "S3": "The covolume and functional links on the strengthened extension give a single definite-side witness with the initial small-prime bound.",
+        "S4": "The window and the definite-side witness are used as distinct inputs in the character implication."
+      },
+      "step_passages": {
+        "S1": "7dfd6806688276e9016e75c23835bd5ce1d4cfec1d3b65f65fc9e4b56bda0c09",
+        "S2": "088523942034b772bef01e338a15a8e220d6cd7faa8faa2a4c09598b33096811",
+        "S3": "088523942034b772bef01e338a15a8e220d6cd7faa8faa2a4c09598b33096811",
+        "S4": "16a0bc79ddc3cc8681881e513b537222a6a6e67b1e2d6ae13c5e5289396a6365"
+      }
+    }
+  ]
+}

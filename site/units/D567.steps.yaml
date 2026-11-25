@@ -1,0 +1,189 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "D567",
+  "edition_sha256": "2947006a943ea93fd5799cda927e51a254ad65e7ba675d0c4185acf9f2c7089f",
+  "note_sha256": "c0a854b46fd435b65a63dda32963d99d334e095f4d0892dca6bec66c9f834d68",
+  "statement_sha256": "e56cc16a3dcd34c112167857eb1bcba42dc337dda69d2b1ba468d96770ab2a50",
+  "sources": [
+    {
+      "path": "notes/units/D567_v4.md",
+      "sha256": "c0a854b46fd435b65a63dda32963d99d334e095f4d0892dca6bec66c9f834d68"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The size hypotheses imply that the arithmetic bracket dominates one and the fixed threshold is bounded by the selected power of x.",
+      "kind": "inequality",
+      "uses": [
+        "input: error windows"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.LFunctionChainParameters.LChain.errX5at_le",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/PChain.lean",
+          "line0": 617,
+          "line1": 642
+        }
+      ],
+      "source": "notes/units/D567_v4.md",
+      "anchor": "Set $y=x^\\varepsilon$, $d=x^{e_{\\rm Div}\\varepsilon}$, $z=x^{e_{\\rm Loss}\\varepsilon}$, all at least one. Since $m\\le x$, we have $m\\le k$ and $m",
+      "source_lines": [
+        36,
+        36
+      ],
+      "claim_sha256": "c6f5bb854b3a3185963e9de5ce161fc6dd62af8594116c2b081666d33cd5a5c6",
+      "passage_sha256": "48756f7511a356410fdc94614fac1572c298f7430c0be70da6e5e4257d216145",
+      "sha256": "af3c7f83d6cb790a548616a4ee427ccee11824ebb8ebc7add5b3426c84e6bd63",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The nonfractional counting and division losses are bounded after dividing by the positive arithmetic bracket.",
+      "kind": "inequality",
+      "uses": [
+        "S1"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.LFunctionChainParameters.LChain.errX5at_le",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/PChain.lean",
+          "line0": 638,
+          "line1": 652
+        },
+        {
+          "name": "Formalism.LFunctionChainParameters.LChain.errX5at_le",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/PChain.lean",
+          "line0": 661,
+          "line1": 672
+        }
+      ],
+      "source": "notes/units/D567_v4.md",
+      "anchor": "In the formula `ErrX5at` (`QuotientSlopeBoundsWith.lean:37–54`) divide the terms outside the final fraction by $E$. The counting term is at most ",
+      "source_lines": [
+        38,
+        38
+      ],
+      "claim_sha256": "a7fde5803db5b2f6b5dfac5b2b3448e51e9ca31c0004f5fbe20f40974f80ea9b",
+      "passage_sha256": "691f615e4295fdd8025d61eb0032ae4e848fb84e8a905bcbedf614bccd4e780a",
+      "sha256": "b303d798974639fe3ea4152e3fb2413ab79044708a26964dffa754bdd5215101",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The count and additive parts of the lower-slope bound give the stated upper estimate for M divided by the bracket.",
+      "kind": "inequality",
+      "uses": [
+        "S1"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.LFunctionChainParameters.LChain.errX5at_le",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/PChain.lean",
+          "line0": 661,
+          "line1": 672
+        }
+      ],
+      "source": "notes/units/D567_v4.md",
+      "anchor": "Indeed its count term contains $n_Tm(a/k+b')mL\\le4n_Tam^2y/k$. Its two other additive terms are $c_{\\rm Sl1}X''$ and $1$. Adding the eight costs ",
+      "source_lines": [
+        46,
+        46
+      ],
+      "claim_sha256": "6596d6fd1bc2601dfb7bcda94f5d617561254ee17a5ffc3db3da9467cb839eff",
+      "passage_sha256": "e8edd6fd70bd52fe90e0c5742c6d8f870dc3c1fdf1d1f7dedd350814071dbd8c",
+      "sha256": "49931ecefc446d411f538896c18fff5f1e16d4ff2135f542a602e19280b823ea",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The frame variation and logarithmic terms fit the common bound after the inverse-denominator estimate.",
+      "kind": "inequality",
+      "uses": [
+        "S2",
+        "S3"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.LFunctionChainParameters.LChain.errX5at_le",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/PChain.lean",
+          "line0": 644,
+          "line1": 652
+        },
+        {
+          "name": "Formalism.LFunctionChainParameters.LChain.errX5at_le",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/PChain.lean",
+          "line0": 661,
+          "line1": 672
+        }
+      ],
+      "source": "notes/units/D567_v4.md",
+      "anchor": "The first bound is for $2mc_EB_0$, the second for $c_H(n_TaL_a+mB_0)$, and the last for $Ac_{\\rm Count}\\log k$. The two extra terms in $K_3/E$ co",
+      "source_lines": [
+        56,
+        56
+      ],
+      "claim_sha256": "acf0c17fd6314a4f43986ef4f8e0b713aaaab79418100787bba4efb3ff454a31",
+      "passage_sha256": "3d4e4a878f92208ec6f9e2f423054f803ec76c2ea4ad089105935ac7d835e339",
+      "sha256": "f4b12dbe20081c4d2bcfd51f51d6cc3958c22a8276b5f248ba0d4a5996dc7961",
+      "ai_review": []
+    },
+    {
+      "id": "S5",
+      "status": "active",
+      "claim": "The fixed coefficient is at most the available threshold, yielding the advertised final exponent.",
+      "kind": "assembly",
+      "uses": [
+        "S4",
+        "D550"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.LFunctionChainParameters.LChain.errX5at_le",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/PChain.lean",
+          "line0": 653,
+          "line1": 672
+        }
+      ],
+      "source": "notes/units/D567_v4.md",
+      "anchor": "Here $20+112+2\\le200$ and the last inequality uses $K_*\\le y$. Since $E\\ge1$, multiplication by $E$ proves the claim. This is a direct estimate o",
+      "source_lines": [
+        69,
+        69
+      ],
+      "claim_sha256": "b8f7049188aecf3465706eaaaa916e41e1c770a8de37652c2d260796324edb98",
+      "passage_sha256": "23892c2ca6041e9e0d2d5b6068613b79192eb53e0c27f9f83792660e3973a207",
+      "sha256": "2459712522bfa3ed2c1925ee326789c123fc56679eedf6e635f5b78ac86f2e5c",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "6355f0295e838bca4d4969e917ba92595a5c6080105504a394eedf87f35df828",
+      "sources": [
+        {
+          "path": "notes/units/D567_v4.md",
+          "sha256": "c0a854b46fd435b65a63dda32963d99d334e095f4d0892dca6bec66c9f834d68"
+        }
+      ],
+      "steps": {
+        "S1": "a2c212b1bfb43bbb6605b84cec38253e4dda8e33a19d001f643b14862b9412dc",
+        "S2": "9bbd619902d33e1d34c97a01e78cd81bb8cf3acb01147700ba0d36014e8963a2",
+        "S3": "ae69392e53a615698aed51674062365a3e2bd2996dc5e1a2530bc1a6ace1cd16",
+        "S4": "cec85a5dcd9da7e2e5540b8a9699aac3a85165f3b941d322a30aa90b3bf53c89",
+        "S5": "d2fd1f9d28bd161f64237df2839d4a0189539d4cedf031aa76191c609014fc88"
+      },
+      "step_texts": {
+        "S1": "The size hypotheses imply that the arithmetic bracket dominates one and the fixed threshold is bounded by the selected power of x.",
+        "S2": "The nonfractional counting and division losses are bounded after dividing by the positive arithmetic bracket.",
+        "S3": "The count and additive parts of the lower-slope bound give the stated upper estimate for M divided by the bracket.",
+        "S4": "The frame variation and logarithmic terms fit the common bound after the inverse-denominator estimate.",
+        "S5": "The fixed coefficient is at most the available threshold, yielding the advertised final exponent."
+      }
+    }
+  ]
+}

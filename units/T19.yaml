@@ -1,0 +1,107 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "T19",
+  "title": "Resolution over a characteristic-zero field",
+  "track": {
+    "primary": "arakelov",
+    "secondary": []
+  },
+  "statement": "For every characteristic-zero field $k$\nand reduced separated finite-type $k$-scheme $X$, there is a sequence of\nblowups $f:X'\\to X$ with $X'$ smooth. Its restriction over the smooth\nlocus is an isomorphism. The reduced inverse image of the complement\nis a simple normal crossings divisor. The formal wrapper uses a closed\nresolution term independently of its record argument.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "The Lean head takes the open-literature record and does not use it. `UpperTheory.LiteratureTheorems.resolution_char_zero_of_literature` (`Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:557–558`).",
+    "Take a reduced separated finite-type scheme over a field of characteristic zero."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.LiteratureTheorems.resolution_char_zero_of_literature",
+      "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+      "line0": 557,
+      "line1": 558,
+      "sha256": "11cf31e4f51ff77130dd05d20a24facda7f8c8da7e7a663b0a8bb0d49991f126",
+      "dominated": 35,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/T19_round4.md",
+      "section": "T19 · Resolution over a characteristic-zero field",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "5.29 (sub:T19)",
+      "pages": [
+        46,
+        46
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/T19.tex",
+      "section": "sub:T19",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L1",
+  "reviews": [
+    "reviews/R21_review.md"
+  ],
+  "prerequisites": [],
+  "size_pages": 2,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [
+    {
+      "grade": "L1",
+      "review": "reviews/R21_review.md",
+      "lines": [
+        91,
+        91
+      ],
+      "scope": "Lean interface as specified in the review row; no equivalence with a published result inferred.",
+      "verdict": "Exact statement comparison"
+    }
+  ],
+  "paper_id": "T19",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "resolution-over-a-characteristic-zero-field",
+  "aliases": [
+    "resolution_char_zero_of_literature",
+    "T19 Resolution over a characteristic-zero field"
+  ],
+  "background": [
+    "Resolution of singularities",
+    "Blowups"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "5.29 (sub:T19)",
+    "pages": [
+      46,
+      46
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "review_status": "pending_review",
+  "summary": "Resolution is used in a form that keeps the original smooth locus and controls the inverse image of its complement. This note traces how a functorial resolution supplies those properties and how its tower of blowups becomes a single composite in the target statement.",
+  "reader_overrides": {
+    "hypothesis_details": [
+      "The Lean head takes the open-literature record and does not use it. `UpperTheory.LiteratureTheorems.resolution_char_zero_of_literature` (`Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:557–558`).",
+      "Take a reduced separated finite-type scheme over a field of characteristic zero."
+    ]
+  }
+}

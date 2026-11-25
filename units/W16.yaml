@@ -1,0 +1,98 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "W16",
+  "title": "Finiteness of the candidates in a base-change frame",
+  "track": {
+    "primary": "galois",
+    "secondary": []
+  },
+  "statement": "Fix a local parameter reading rule, an everywhere finite-unramified CM\nextension $E/E^+$, $n\\ge1$, an automorphic $\\pi$ on the unitary group,\na finite set $S$ and a comparison frame for $(\\pi,S)$. Choose local test\ndata and an auxiliary finite set $T'$ of nonsplit places disjoint from\nthe frame's initial set $S_0$ and its bad set. For each partition\nindex $i$ and each $w\\in T'$, the ordered pairs of joint Hecke\neigenvalue tuples of all candidate pairs lie in a finite set. For\neach $w\\in S_0$ a finite list of model products suffices. Every candidate\nproduct has the same irreducible subquotients and the same dimension\nof $K'_w$-invariants as one on the list, whose invariant space is\nfinite-dimensional. A single integer bounds, over all candidates and\nall $w\\in T'$, the dimension of the candidate pair's invariants under\nthe prescribed two-block subgroup $I_2$.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Fix a local parameter rule, finite-unramified CM extension, positive rank, a unitary automorphic representation and its comparison frame.",
+    "Use the local tests and auxiliary nonsplit places disjoint from the initial and bad sets."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.HeckeLevelFrameExistence.candFin",
+      "file": "Development/AutomorphicArithmetic/Foundations/BaseChangeIdentities/FrameMatching/HeckeEigenvalueFiniteness/FrameEx.lean",
+      "line0": 15,
+      "line1": 17,
+      "sha256": "45630100626a5b17c849a413e0c741361b1a8dec4740b62b2087bd07af23b142",
+      "dominated": 418,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/W16_round4.md",
+      "section": "W16 · Three finiteness statements for a two-block comparison",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "5.52 (sub:W16)",
+      "pages": [
+        54,
+        54
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/W16.tex",
+      "section": "sub:W16",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": 2,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "W16",
+  "indexed_members": [
+    "D571",
+    "D572",
+    "D577",
+    "D578",
+    "D579",
+    "D580",
+    "D581",
+    "D582"
+  ],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "finiteness-of-the-candidates-in-a-base-change-frame",
+  "aliases": [
+    "candFin",
+    "W16 Finiteness of the candidates in a base-change frame"
+  ],
+  "background": [
+    "Local Hecke algebras",
+    "Base change",
+    "Smooth representations"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "5.52 (sub:W16)",
+    "pages": [
+      54,
+      54
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "review_status": "pending_review",
+  "summary": "A comparison frame admits finitely many relevant eigenvalue pairs and local product models, together with one invariant-dimension bound for its auxiliary places. This is the candidate finiteness needed by the definite isobaric base-change reduction."
+}

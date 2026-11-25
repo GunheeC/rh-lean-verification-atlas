@@ -1,0 +1,92 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "P034",
+  "title": "Odd homology after successive block operations",
+  "track": {
+    "primary": "ktheory",
+    "secondary": []
+  },
+  "statement": "Let \\(L\\) be totally complex, \\(k\\ge0\\) even, \\(q=k+1<r_2(L)\\), and\n\\(n\\ge2q+4\\). Fix any integer \\(t>0\\). Starting with \\(z_0(x)=x\\)\nin \\(H_q(G_n,\\mathbb Z)\\), define\n\\[\n z_{j+1}(x)=(\\operatorname{diag}_t)_*z_j(x)\n                 -t^{j+2}\\operatorname{stab}_*z_j(x),\n\\]\nwhere block repetition and stabilization both land in rank \\(t^{j+1}n\\).\nThe integral span of all \\(z_k(x)\\) has rank at most \\(r_2(L)\\).",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Take a totally complex field, even $k\\ge0$, $q=k+1<r_2(L)$ and $n\\ge2q+4$.",
+    "Fix a positive integer $t$ for the diagonal block and stabilization operations."
+  ],
+  "lean": [
+    {
+      "name": "PositivityTheory.KB.bOdd_zk",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/TorsionIntegers/Bridge.lean",
+      "line0": 34,
+      "line1": 35,
+      "sha256": "e774804fcff560bf11fc7691c1fcfa6151e70495573202b7dde2eeca9ecaf04c",
+      "dominated": 23135,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "7.11 (pn:P034)",
+      "pages": [
+        79,
+        79
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/P034.tex",
+      "section": "pn:P034",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L1",
+  "reviews": [
+    "reviews/R5_review_A.md"
+  ],
+  "prerequisites": [],
+  "size_pages": null,
+  "open_questions": [
+    "Where does the restriction on the number of complex places enter? Distinguish the rank conclusion checked against Borel from the extra range condition."
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [
+    {
+      "grade": "L1",
+      "review": "reviews/R5_review_A.md",
+      "lines": [
+        10,
+        12
+      ],
+      "scope": "Statement comparison; the proof has qualifications.",
+      "verdict": "No statement mismatch reported"
+    }
+  ],
+  "paper_id": "P034",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "odd-homology-after-successive-block-operations",
+  "aliases": [
+    "P034 Odd homology after successive block operations"
+  ],
+  "background": [
+    "Homological stability",
+    "Block embeddings of general linear groups"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "7.11 (pn:P034)",
+    "pages": [
+      79,
+      79
+    ]
+  },
+  "question_sources": [
+    "questions/ktheory.md"
+  ],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "summary": "In the stable range for a totally complex field, iterating the specified difference of block repetition and stabilization leaves an integral span of rank at most the number of complex places. This bounds how many independent odd-homology classes can survive the operations."
+}

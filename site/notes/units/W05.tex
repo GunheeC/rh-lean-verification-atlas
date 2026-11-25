@@ -1,0 +1,29 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit W05. Local manuscript v3, item 5.41, heading on printed PDF p. 50.
+% UpperTheory.V.ZK.lemmaK_litN_alt
+% paper2/split_p013.tex:82–98. Verbatim excerpt; SHA-256 41a82d685bbe03a0a65d13fa51a7a0445338542ae47e47f6c19a77911a1df0e7.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+\noindent\nolinkurl{UpperTheory.V.ZK.lemmaK_litN_alt} --- in-repo constant (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/KFinal.lean:11}); variant.\par
+% End of atlas edition annotation.
+
+\begin{formalstatement}[A uniform second-cohomology bound]\label{sub:W05}
+Assume the rank-$n$ literature record. There is a real $C_K$ such that,
+for every prime $\ell$, totally complex field $L$ containing a primitive
+$\ell$th root (a fourth root for $\ell=2$), algebraic closure and
+local data, and $e\ge1$, the group $H^2(G_{L,\ell},\mathbb Z_\ell(e+1))$
+is finite. With $r=[L:\mathbb Q]$ and $D=|\operatorname{disc}(L)|$,
+\[
+ \log\# H^2(G_{L,\ell},\mathbb Z_\ell(e+1))
+ \le \exp\big((2er)^{C_K}\log(2D)\big).
+\]
+\end{formalstatement}\subnode{W05}
+Soulé's Theorem~3 bounds the product for $p\ge4(e+1)-1$ and $p\ge r+2$.
+For odd $\ell$, $\mathbb Q(\mu_\ell)\subseteq L$ gives $\ell\le r+1$.
+Thus the needed prime falls outside that product, as does $2$.
+Proposition~4(i) also has different discriminant dependence.
+See the individual suppliers \nodeid{P031}--\nodeid{P040}.
+\href{https://www.maths.tcd.ie/EMIS/journals/DMJDMV/vol-kato/soule.dm.pdf}{Soulé, §§4.3--4.4.}~\cite{r21-soule}

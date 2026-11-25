@@ -1,0 +1,107 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "T20",
+  "title": "Principalisation with a prescribed boundary",
+  "track": {
+    "primary": "arakelov",
+    "secondary": []
+  },
+  "statement": "Let $X/k$ be smooth of relative\ndimension $d$, quasi-compact and separated over a characteristic-zero\nfield. Let $I$ be an ideal whose cosupport contains no irreducible\ncomponent of $X$, and $E$ a closed boundary that has simple normal\ncrossings at every point of $E$. There is a sequence of blowups in\nsmooth centres with normal crossings with the current boundary,\nupdating that boundary by total transform at every step. The resulting\n$X'$ is smooth, $I\\mathcal O_{X'}$ defines an effective Cartier divisor\nwith simple normal crossings reduced support, and $X'\\to X$ is an\nisomorphism off the cosupport of $I$. This wrapper also uses a closed term.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "The Lean head takes the open-literature record and does not use it. `UpperTheory.LiteratureTheorems.principalisation_char_zero_of_literature` (`Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:555–556`).",
+    "Use a smooth, quasi-compact separated scheme over a characteristic-zero field, an ideal whose cosupport contains no component and the stated normal-crossings boundary."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.LiteratureTheorems.principalisation_char_zero_of_literature",
+      "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+      "line0": 555,
+      "line1": 556,
+      "sha256": "dd4f85439dbc86966d44c6f86c94c0d9901d1cc31869c2a7543a925da332751d",
+      "dominated": 1572,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/T20_round4.md",
+      "section": "T20 · Principalisation with a prescribed boundary",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "5.30 (sub:T20)",
+      "pages": [
+        46,
+        46
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/T20.tex",
+      "section": "sub:T20",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L1",
+  "reviews": [
+    "reviews/R21_review.md"
+  ],
+  "prerequisites": [],
+  "size_pages": 2,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [
+    {
+      "grade": "L1",
+      "review": "reviews/R21_review.md",
+      "lines": [
+        92,
+        92
+      ],
+      "scope": "Lean interface as specified in the review row; no equivalence with a published result inferred.",
+      "verdict": "Exact statement comparison"
+    }
+  ],
+  "paper_id": "T20",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "principalisation-with-a-prescribed-boundary",
+  "aliases": [
+    "principalisation_char_zero_of_literature",
+    "T20 Principalisation with a prescribed boundary"
+  ],
+  "background": [
+    "Principalisation of ideals",
+    "Simple normal crossings"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "5.30 (sub:T20)",
+    "pages": [
+      46,
+      46
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "review_status": "pending_review",
+  "summary": "Principalisation must transform an ideal while tracking an already specified normal-crossings boundary through every blowup. The argument first represents the boundary by a compatible list of divisors, then combines the resulting sequence with three distinct assertions about its endpoint.",
+  "reader_overrides": {
+    "hypothesis_details": [
+      "The Lean head takes the open-literature record and does not use it. `UpperTheory.LiteratureTheorems.principalisation_char_zero_of_literature` (`Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:555–556`).",
+      "Use a smooth, quasi-compact separated scheme over a characteristic-zero field, an ideal whose cosupport contains no component and the stated normal-crossings boundary."
+    ]
+  }
+}

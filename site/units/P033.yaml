@@ -1,0 +1,113 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "P033",
+  "title": "The determinant evaluation on scalar prisms",
+  "track": {
+    "primary": "ktheory",
+    "secondary": []
+  },
+  "statement": "Assume the chain, prism, prism composition and basic-cycle identities,\nthe transfer of scalar functionals and the scalar cocycle formula.\nFor any finite field \\(k\\), positive integer \\(q\\), \\(e\\ge0\\),\nprimitive \\(q\\)-th root \\(\\zeta\\in k^\\times\\), and character\n\\(v:k^\\times\\to\\mathbb Z/q\\), there is an additive evaluating\nfamily \\(\\theta\\) of degree \\(2e+3\\). For every finite \\(k\\)-vector\nspace \\(V\\), every \\(x\\in\\mathbb N\\), and \\(g\\in\\mathrm{GL}(V)\\),\n\\[\n \\theta_V\\!\\left(P_g((j\\mapsto\\zeta^{xj}I_V)_*z)\\right)\n = x^{e+1}v(\\det g).\n\\]\nHere \\(P_g\\) is the conjugation prism, and \\(z\\) is the specified\ndegree-\\(2e+2\\) cyclic bar cycle.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume the chain, prism, composition and basic-cycle identities, the scalar-functional transfer and the scalar cocycle formula.",
+    "Fix a finite field, a primitive $q$th root with $q>0$, the stipulated character and the specified evaluation data."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.ZK.sThetaOf",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/SThetaOf.lean",
+      "line0": 192,
+      "line1": 273,
+      "sha256": "779dff9d7fed23189d9a0df56cee7222ffcec7123f345d939c8e9cf33c394dbb",
+      "dominated": 259,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "7.10 (pn:P033)",
+      "pages": [
+        78,
+        78
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/P033.tex",
+      "section": "pn:P033",
+      "pages": []
+    }
+  ],
+  "status": "Full",
+  "grade": "L1",
+  "reviews": [
+    "reviews/R20_review.md",
+    "reviews/R4_review_Z2.md"
+  ],
+  "prerequisites": [],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [
+    {
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "lines": [
+        59,
+        59
+      ],
+      "scope": "R20 local implication under its stated premises, not its prerequisite cones.",
+      "verdict": "Statement exact"
+    },
+    {
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "lines": [
+        110,
+        110
+      ],
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript.",
+      "verdict": "Exact statement comparison"
+    },
+    {
+      "grade": "L1",
+      "review": "reviews/R4_review_Z2.md",
+      "lines": [
+        12,
+        16
+      ],
+      "scope": "Statement comparison; the proof has qualifications.",
+      "verdict": "No statement mismatch reported"
+    }
+  ],
+  "paper_id": "P033",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "the-determinant-evaluation-on-scalar-prisms",
+  "aliases": [
+    "sThetaOf",
+    "P033 The determinant evaluation on scalar prisms"
+  ],
+  "background": [
+    "Group homology",
+    "Determinant pairings",
+    "Finite fields"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "7.10 (pn:P033)",
+    "pages": [
+      78,
+      78
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "summary": "For the specified finite-field character and root of unity, an additive evaluator sends each scalar conjugation prism to the character of the determinant times the stated power. This provides an explicit way to distinguish homological cycles through their reductions."
+}

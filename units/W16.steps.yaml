@@ -1,0 +1,210 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "W16",
+  "edition_sha256": "cbc3da09512a017f52d3cbde9931db4abc24c998e9e36deb5c4b5cb483b90cdb",
+  "note_sha256": "979f80c1d7d36218958f6cf983def4f3761a2091e9208b3107dd8c77d93042fb",
+  "statement_sha256": "4352ea46524b1723b44ecff6020f9d3ebd4279c9ce1ba970cd9818aa3ec1552e",
+  "sources": [
+    {
+      "path": "notes/units/W16_round4.md",
+      "sha256": "979f80c1d7d36218958f6cf983def4f3761a2091e9208b3107dd8c77d93042fb"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "For a fixed partition the two block models can be tested against the levels for the actual open subgroup.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: level-openness comparison"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.HeckeLevelFrameExistence.CF.candFin_of",
+          "file": "Development/AutomorphicArithmetic/Foundations/BaseChangeIdentities/FrameMatching/HeckeEigenvalueFiniteness/CandOf.lean",
+          "line0": 36,
+          "line1": 40
+        }
+      ],
+      "source": "notes/units/W16_round4.md",
+      "anchor": "For a partition index $i$ write $a_i$ and $n-a_i$ for its two degrees. Apply the level-openness input to the two groups for the actual frame. The",
+      "source_lines": [
+        13,
+        13
+      ],
+      "claim_sha256": "e5806dbbff72766c61f21e7c583ff5d2b02f87b1cda238d42187689e5e40202e",
+      "passage_sha256": "3da3588f8aab7aa4aa8f08d73f3bc1c43abd3f7f6bc921730ab64efa105596d9",
+      "sha256": "fbb5cff405323000f6c139a48e5ab6a0dc86c05693d7ce82ebe2a2206a3e9f8f",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The eigenvalue comparison produces a finite set of ordered pairs for each partition and place.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "input: finite local block lists"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.HeckeLevelFrameExistence.CF.part1",
+          "file": "Development/AutomorphicArithmetic/Foundations/BaseChangeIdentities/FrameMatching/HeckeEigenvalueFiniteness/Imports.lean",
+          "line0": 21,
+          "line1": 36
+        }
+      ],
+      "source": "notes/units/W16_round4.md",
+      "anchor": "Fix $i$ and $w$. For the finite lists of the two block types, the eigenvalue comparison produces a finite set $Z_{iw}$ of **ordered pairs** of ei",
+      "source_lines": [
+        17,
+        21
+      ],
+      "claim_sha256": "e7c2432f77db043637da2d026897d3d894ba30889cc9ad066479c2fc2068999e",
+      "passage_sha256": "bd84a5f8b3b31ba1d36df6f31e08a7f080df223e87231c9bc4f08453dc198204",
+      "sha256": "d20f458b2961d56a214660bb4b6827de668b15693cc910f1e5ceaeb77cce9303",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "A natural-number maximum bounds every dimension assigned to the finite exceptional set.",
+      "kind": "inequality",
+      "uses": [
+        "S2"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.HeckeLevelFrameExistence.CF.all_parts",
+          "file": "Development/AutomorphicArithmetic/Foundations/BaseChangeIdentities/FrameMatching/HeckeEigenvalueFiniteness/CandOf.lean",
+          "line0": 22,
+          "line1": 34
+        }
+      ],
+      "source": "notes/units/W16_round4.md",
+      "anchor": "The proof takes these suprema in the natural numbers. For a place belonging to $T'$, each relevant $m_{iw}$ is bounded by $m_0$. The bound works ",
+      "source_lines": [
+        17,
+        21
+      ],
+      "claim_sha256": "76dd8b4d36b1683fd26622793eed6f860ebfa96dab15bd0b0c07bfe4986b6264",
+      "passage_sha256": "bd84a5f8b3b31ba1d36df6f31e08a7f080df223e87231c9bc4f08453dc198204",
+      "sha256": "af81d02b4f737082cbc0637e10460802941fddefd1313747a1f8ed6b0219225c",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "Finite block lists yield the list of local-product models at the initial places.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S1",
+        "S2",
+        "input: strict-join comparison"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.HeckeLevelFrameExistence.CF.part2",
+          "file": "Development/AutomorphicArithmetic/Foundations/BaseChangeIdentities/FrameMatching/HeckeEigenvalueFiniteness/ImportsAlt.lean",
+          "line0": 26,
+          "line1": 38
+        }
+      ],
+      "source": "notes/units/W16_round4.md",
+      "anchor": "For $w$ in the initial set the output is a finite list of full local-product models. The strict-join result gives a finite list of joins of the t",
+      "source_lines": [
+        25,
+        25
+      ],
+      "claim_sha256": "ea987b2eaa256cfbd2e4dd5ae28f616c8bd62ecf1443284f0ad0998da4feb646",
+      "passage_sha256": "edd0a3cc7dde42005476a22e114bb08e54c9deca53b27d0f75f7e099124eb6a6",
+      "sha256": "09671f60a2dbeb3ff04f0de0ec4354b7b1f031ee8618939b6cfe52c0b20e9871",
+      "ai_review": []
+    },
+    {
+      "id": "S5",
+      "status": "active",
+      "claim": "The finite eigenvalue and model lists and the dimension bound provide the three simultaneous conclusions.",
+      "kind": "assembly",
+      "uses": [
+        "S3",
+        "S4"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.HeckeLevelFrameExistence.candFin",
+          "file": "Development/AutomorphicArithmetic/Foundations/BaseChangeIdentities/FrameMatching/HeckeEigenvalueFiniteness/FrameEx.lean",
+          "line0": 15,
+          "line1": 17
+        }
+      ],
+      "source": "notes/units/W16_round4.md",
+      "anchor": "Combine the finite eigenvalue sets from the first comparison, the finite product list just constructed, and the single dimension bound from the d",
+      "source_lines": [
+        29,
+        29
+      ],
+      "claim_sha256": "56a709b5eafd9c10c3d55e698793ad2824deb5fe96fb3add06e2a528a8b729c1",
+      "passage_sha256": "aaf2c932c368585d6802324a2ce5f94f4eee9771e590ad98c19e951766f07017",
+      "sha256": "683b3fb7fc8932db38bf82726fb0c4d779054b487e4c8d0ab6be816003b179e6",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "92513579ad987c2db18dcd4645f0650d0eb0657452bdf081591073b33b64dabc",
+      "sources": [
+        {
+          "path": "notes/units/W16_round4.md",
+          "sha256": "6108df4546c8cc75142b80200c463337653fdb26bab57d3583586f0c9d4279e0"
+        }
+      ],
+      "steps": {
+        "S1": "a7b9d6b14136642a7ef0ed7c17343de7ffef61a29484d134c982d33206bed202",
+        "S2": "0ff64fb20dfbdb604ac3789f204c939648c93addb9658f129a2fde82cc30887d",
+        "S3": "a15085b6b4a8392a27d029aae23eff9b4fcbb4d2ff05f9450f4eeb0d9f66b54d",
+        "S4": "2e75911491b4b9d55ab554855b2f06beccd21c3461f8770c794498de577cf3f2",
+        "S5": "683b3fb7fc8932db38bf82726fb0c4d779054b487e4c8d0ab6be816003b179e6"
+      },
+      "step_texts": {
+        "S1": "For a fixed partition the two block models can be tested against the levels for the actual open subgroup.",
+        "S2": "The eigenvalue comparison produces a finite set of ordered pairs for each partition and place.",
+        "S3": "A natural-number maximum bounds every dimension assigned to the finite exceptional set.",
+        "S4": "Finite block lists yield the list of local-product models at the initial places.",
+        "S5": "The finite eigenvalue and model lists and the dimension bound provide the three simultaneous conclusions."
+      }
+    },
+    {
+      "edition_sha256": "dedc97c73f6ced9da2987b0e6f2d51f3159abedc5e3f7695588e9f18b2cb4cc2",
+      "sources": [
+        {
+          "path": "notes/units/W16_round4.md",
+          "sha256": "6108df4546c8cc75142b80200c463337653fdb26bab57d3583586f0c9d4279e0"
+        }
+      ],
+      "statement_sha256": "4352ea46524b1723b44ecff6020f9d3ebd4279c9ce1ba970cd9818aa3ec1552e",
+      "steps": {
+        "S1": "fbb5cff405323000f6c139a48e5ab6a0dc86c05693d7ce82ebe2a2206a3e9f8f",
+        "S2": "d20f458b2961d56a214660bb4b6827de668b15693cc910f1e5ceaeb77cce9303",
+        "S3": "af81d02b4f737082cbc0637e10460802941fddefd1313747a1f8ed6b0219225c",
+        "S4": "09671f60a2dbeb3ff04f0de0ec4354b7b1f031ee8618939b6cfe52c0b20e9871",
+        "S5": "683b3fb7fc8932db38bf82726fb0c4d779054b487e4c8d0ab6be816003b179e6"
+      },
+      "step_texts": {
+        "S1": "For a fixed partition the two block models can be tested against the levels for the actual open subgroup.",
+        "S2": "The eigenvalue comparison produces a finite set of ordered pairs for each partition and place.",
+        "S3": "A natural-number maximum bounds every dimension assigned to the finite exceptional set.",
+        "S4": "Finite block lists yield the list of local-product models at the initial places.",
+        "S5": "The finite eigenvalue and model lists and the dimension bound provide the three simultaneous conclusions."
+      },
+      "step_passages": {
+        "S1": "3da3588f8aab7aa4aa8f08d73f3bc1c43abd3f7f6bc921730ab64efa105596d9",
+        "S2": "bd84a5f8b3b31ba1d36df6f31e08a7f080df223e87231c9bc4f08453dc198204",
+        "S3": "bd84a5f8b3b31ba1d36df6f31e08a7f080df223e87231c9bc4f08453dc198204",
+        "S4": "edd0a3cc7dde42005476a22e114bb08e54c9deca53b27d0f75f7e099124eb6a6",
+        "S5": "aaf2c932c368585d6802324a2ce5f94f4eee9771e590ad98c19e951766f07017"
+      }
+    }
+  ]
+}

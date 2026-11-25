@@ -1,0 +1,27 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>갈루아 표현·보형성 올림·Iwasawa 이론과 오일러 계 · RH verification atlas</title><link rel="stylesheet" href="../../atlas.css"></head><body><header><div class="bar"><a class="brand" href="../../index.html">RH verification atlas</a><nav aria-label="Atlas navigation"><a href="../../index.html">Home</a> <a href="../../STATUS.html">Status</a> <a href="../../MAP.html">Map</a> <a href="../../dashboard/index.html">Tracks</a> <a href="../../lookup/search.html">Search declarations</a></nav></div></header><main><p class="notice">AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved</p>
+<h1 id="갈루아-표현보형성-올림iwasawa-이론과-오일러-계">갈루아 표현·보형성 올림·Iwasawa 이론과 오일러 계</h1>
+<p>서면 연역은 <a href="pillars/V.html">V</a>·<a href="pillars/F.html">F</a>, Green의 유한체 지표 명제와 국소 함의 31개 및 v5에 열거한 중간 입력을 가정한다. 이 아틀라스에는 V와 F의 사람이 읽을 수 있는 전체 증명이 없다. Lean 원문은 두 입력을 저장소 안의 항으로 공급한다. 이 자료를 사람이 검토한 적은 없다.</p>
+<p>갈루아 표현·셀머 군·오일러 계은 이 분야의 통상 용어다. 편극 행·호스트·페이지 함수은 이 경로에서 고정된 Lean 식별자나 이 프로젝트 초고의 표현을 가리킨다. 그 뜻은 연결한 정의에서 확인한다. <a href="../../lookup/glossary.html">용어집</a></p>
+<p>v13 블루프린트와 v3·v4·v5 원고는 이 프로젝트의 AI가 작성한 미출판·미검토 초고이며 Lean 개발 저자의 저작이 아니다. 블루프린트 v13과 별도 표지, 원고 v5는 릴리스 v0.1.0의 첨부 파일로 배포한다. 원고 v3·v4는 인용 대목의 발췌본과 해설을 제공한다. <a href="../../data/editions.json">판본 장부</a></p>
+<p><a href="../../tracks/galois/index.html">영문 안내</a> · <a href="index.html">한국어 첫 화면</a> · <a href="../../notes/galois/index.html">시작 읽기 자료</a> · <a href="../../questions/galois.html">열린 질문</a></p>
+<p>P013의 Selmer 창은 하나의 갈루아 표현에 대한 소멸 정리보다 많은 양화사를 가진다. 먼저 원시 지표를 고정하고, 허용되는 체와 소수, 층에 걸쳐 국소화 사상의 핵의 길이를 합한다. 목표는 주어진 창의 모든 척도에서 그 총합을 지배하는 것이다. 어떤 상수가 체와 꼬임에 의존해도 되는지를 구분하는 것이 첫 독해 과제다.</p>
+<p>양의 부분과 음의 부분을 분리하면 Kato의 오일러 계, 수반 표현의 강성, 기저변환, 예외 층의 보정이 각각 어느 합에 기여하는지 보인다. P026에서 층마다 얻은 클래스가 같은 정수 계수의 계를 이루려면 노름 관계와 국소 조건을 동시에 점검해야 한다. P025에서는 보통 국소 조건과 Bloch–Kato 조건의 일치를 추적한다. W13은 그렇게 얻은 서로 다른 종류의 계수 상계를 하나의 창 술어로 합친다.</p>
+<p>W13의 조립에 대한 손유도를 확인하는 일과 수반 강성·올림 가정의 모든 공급자를 검토하는 일에는 서로 다른 자료가 필요하다. 실제로 지역-전역 비교가 잘 작동하는 한 체에서만 성립한 명제를 가변 CM 체 전체에 쓰면 상계의 균일성이 사라진다. 여기에 F가 요구하는 격자-길이 연결도 추가된다. 창 자체에서 F의 공동 증인이 나오지는 않는다.</p>
+<h2 id="대학원생의-시작-단위">대학원생의 시작 단위</h2>
+<p><strong>P013·P020 중 부호별 유한 길이의 합산</strong> · Blueprint v13 §§5.1–5.3, 76–81쪽(6쪽). 보조정리 5.8에서 2가 가역이고 부분모듈이 대합에 안정일 때 두 사영자의 직합을 확인한다. 이어 명제 5.10에서 홀수 소수의 두 길이와 따로 주어진 2진 예산을 합친다. 공급자인 Kato, 올림, 강성 정리는 이 읽기 범위 밖에 있다. <a href="../../notes/galois/index.html">시작 읽기 자료</a></p>
+<p><strong>읽고 남길 것</strong>　각 부분합마다 지표 집합, 로그 가중치, 상수 의존 변수를 한 줄에 쓰고 전체 합과 대조한다.</p>
+<h2 id="배경과-확인된-자료">배경과 확인된 자료</h2>
+<p>국소화 사상과 Galois cohomology, 완비 이산부치환 위의 길이, 보통 필트레이션, 순환확장에 대한 노름 적합성. 고급 단위에서는 변형 문제와 보형성 올림의 잔여 가정을 사용한다.</p>
+<p>AI 검토(R19)는 Kato의 p진 Hodge 이론과 모듈러 형식 제타값에 관한 글에서 제타 원소, 노름 관계 및 쌍대 지수 사상을 찾아보았다고 보고한다. (8.1.3), 명제 8.12, 정리 9.7의 위치는 이 아틀라스에서 검증되지 않았다. P026에는 균일 사영과 별도의 국소 조건이 필요하다.</p>
+<p>문헌 확인 범위와 수학적 판단의 근거는 각 검토 기록에 남아 있다. <a href="../../reviews/R19_review.html">R19_review</a> · <a href="../../reviews/R23_review.html">R23_review</a></p>
+<h2 id="읽기-순서">읽기 순서</h2>
+<p>입문부터 순서대로 읽되, 이미 익숙한 단위는 단위 카드의 가정과 결론만 확인하고 넘어갈 수 있다. 아래 순서는 학습을 위한 경로다. 선언 간 직접 의존성은 각 카드와 분해 지도를 따른다.</p>
+<h3 id="입문">입문</h3>
+<ol><li><strong><a href="../../units/W11.html">W11</a></strong> · 순환 층에서의 고전적 유계성</li><li><strong><a href="../../units/P040.html">P040</a></strong> · 길이와 기초적 계수식</li><li><strong><a href="../../units/W08.html">W08</a></strong> · Case I의 합</li><li><strong><a href="../../units/W09.html">W09</a></strong> · Cases II·III의 개별 추정</li></ol>
+<h3 id="핵심-논증">핵심 논증</h3>
+<ol><li><strong><a href="../../units/P026.html">P026</a></strong> · 정수 오일러 계와 국소 조건</li><li><strong><a href="../../units/W13.html">W13</a></strong> · 경우별 상계를 창으로 조립</li><li><strong><a href="../../units/P013.html">P013</a></strong> · 가변 CM 체 전체에서의 Selmer 창</li></ol>
+<h3 id="미해결-가정과-적용-범위">미해결 가정과 적용 범위</h3>
+<ol><li><strong><a href="../../units/Z1.2.html">Z1.2</a></strong> · 보통 수반 강성</li><li><strong><a href="../../units/W07.html">W07</a></strong> · 두 꼬임에서 요구되는 소멸</li><li><strong><a href="../../units/P024.html">P024</a></strong> · 단부 표시의 선택과 하강</li></ol>
+<h2 id="열린-질문">열린 질문</h2>
+<ol><li>P026에서 원문의 유리 계수 노름 관계를 정수 계수로 바꿀 때 각 층의 Hecke 사영자에 공통으로 쓸 분모는 어디서 고르는가?</li><li>P025와 Z1.2에서 보통 국소 조건을 Bloch–Kato 조건과 맞출 때, 선택한 가중치와 분기 장소에 무엇을 요구하는가?</li><li>W13에서 개별 지표 상계와 지표 전체의 합 상계는 어떤 서로 다른 가중치로 더해지는가? 예외 소수가 통상의 경우와 겹치지 않는지 표시하라.</li></ol>
+<p><a href="../../questions/galois.html">질문에 답할 때 확인할 자료</a> · <a href="../../tracks/galois/units.html">분야별 전체 단위 목록</a> · <a href="../../dashboard/index.html">전체 대시보드</a></p></main><footer><a href="../../help.html">Using the local edition</a></footer></body></html>

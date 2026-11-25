@@ -1,0 +1,108 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "P002",
+  "title": "Real part of a nontrivial zeta zero",
+  "track": {
+    "primary": "formal",
+    "secondary": [
+      "analytic"
+    ]
+  },
+  "statement": "For every $s\\in\\mathbb C$, if $\\zeta(s)=0$, $s\\ne1$, and $s\\ne-2(n+1)$ for every $n\\in\\{0,1,\\ldots\\}$, then $\\Re s=1/2$.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Take $s\\in\\mathbb C$ with $\\zeta(s)=0$ and $s\\ne1$.",
+    "The zero is not any negative even integer."
+  ],
+  "lean": [
+    {
+      "name": "riemannZeta_eq_zero_re",
+      "file": "Main.lean",
+      "line0": 6,
+      "line1": 6,
+      "sha256": "b76ddf651dfdaa35aa759391bf660be25e1a3d4299cf9b6fd89926313aac2ae7",
+      "dominated": 3,
+      "graph": "five_public_heads"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/P002_round4.md",
+      "section": "P002 · Which zeta zeros the explicit export quantifies over",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "6.2 (pn:P002)",
+      "pages": [
+        54,
+        54
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/P002.tex",
+      "section": "pn:P002",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L1",
+  "reviews": [
+    "reviews/R20_review.md"
+  ],
+  "prerequisites": [
+    "P008"
+  ],
+  "size_pages": 2,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [
+    {
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "lines": [
+        96,
+        96
+      ],
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript.",
+      "verdict": "Exact statement comparison"
+    }
+  ],
+  "paper_id": "P002",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "real-part-of-a-nontrivial-zeta-zero",
+  "aliases": [
+    "The zeta zero-line assertion",
+    "riemannZeta_eq_zero_re",
+    "P002 Real part of a nontrivial zeta zero"
+  ],
+  "background": [
+    "The Riemann zeta function",
+    "Complex zeros"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "6.2 (pn:P002)",
+    "pages": [
+      54,
+      54
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "P008": "graph"
+  },
+  "review_status": "pending_review",
+  "summary": "The public zeta export spells out the exclusions on a zero and passes the resulting predicate to the same supplier used for the Mathlib formulation. The exclusions matter when the argument reflects a zero across the critical line."
+}

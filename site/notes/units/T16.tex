@@ -1,0 +1,33 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit T16. Local manuscript v3, item 5.26, heading on printed PDF p. 44.
+% ChowFormHeightComparison₂.chow_form_height_comparison
+% paper2/split_p012.tex:277–297. Verbatim excerpt; SHA-256 a0aa19feae42b37ec56e2ef75488e9d12756816dc2427d1f6200bd49fb710950.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+\noindent\nolinkurl{GlobalTheory.CovTop.PublishedHodgeBundleTheorems.p4} --- record field (\path{Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/HodgeBundleWeights/ToKnownTheoremsOf.lean:11}); not compared.\par
+% End of atlas edition annotation.
+
+\begin{formalstatement}[The Chow height of an image model]\label{sub:T16}
+
+Assume the Hodge-bundle record. Let $K$ be a number field with no real
+embeddings, $V$ a $K$-module compatibly acted on by $\mathcal O_K$, and
+$\Omega/K$ a field. Let $N_\sigma$ on $V$ have Gram data and be invariant
+under conjugating $\sigma$. Let $W\subset V$ be a finitely generated
+$\mathcal O_K$-module spanning $V$ over $K$, and
+$\mathrm{ev}:V\to\Omega$ linear with generating ratios. For degree index
+$D\ge0$ suppose $d=\mathrm{imageDeg}(\mathrm{ev},D)>0$.
+Let $(X,L)$ be its integral image model over $\mathcal O_K$ with the
+specified embedding $\Omega\to K(X)$ and sections indexed by $W$ for
+$N_\sigma,W,\mathrm{ev},D$. If the constant metric shift $L(t)$ has
+self-intersection $a$, then
+\[
+ a\le [K:\mathbb Q](D+1)d\,
+       \bigl(\mathrm{imageHeight}(N,W,\mathrm{ev},D)+t\bigr).
+\]
+
+\end{formalstatement}\subnode{T16}
+
+\noindent The model identification, choice of Gram norms and constant metric shift enter the Lean inequality. \href{https://doi.org/10.1090/S0894-0347-1994-1260106-X}{J.-B. Bost, H. Gillet and C. Soulé, Heights of projective varieties and positive Green forms, Theorem 4.3.8}~\cite{r21-bgs}.

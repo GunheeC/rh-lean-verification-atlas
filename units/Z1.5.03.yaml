@@ -1,0 +1,92 @@
+{
+  "id": "Z1.5.03",
+  "title": "Frobenius classifiers over a CM field",
+  "track": {
+    "primary": "analytic",
+    "secondary": [
+      "galois"
+    ]
+  },
+  "statement": "From the automorphic hypotheses and LevelKNAlt, for each CM field $K$ and rank $n$ at least two, constants $c,A$ work for every strictly decreasing weight $|m_i|\\le H$ with $m_i+m_{\\mathrm{rev}(i)}=1-n$, every $M\\ge1$ and prime $w$ above $p$ with $p$ dividing neither $M$ nor the discriminant of $K$. One classifier for AdmKNAlt has size at most $c[M(H+1)]^A$ for every odd coefficient prime different from $p$.",
+  "assumptions": [
+    "source:blueprint_v13"
+  ],
+  "hypothesis_details": [
+    "Assume the automorphic input record and LevelKNAlt.",
+    "Use the prescribed pure weight and a prime away from the level and CM discriminant."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.GalN.V.Win.N.countK_alt",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/FrobeniusTraceCountBoundOfCmEigensystemCount.lean",
+      "line0": 63,
+      "line1": 125,
+      "sha256": "23eb2e3a79eda1a4755fd97c4aa8acb411f52f31434190c33dcbd0585f5e851f",
+      "dominated": 156,
+      "graph": "allChi",
+      "role": "statement"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/blueprint/Z1.5.03.tex",
+      "section": "r8:small:Z1.5.03",
+      "pages": []
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r8:small:Z1.5.03",
+      "pages": [
+        468,
+        468
+      ],
+      "printed_page": 443,
+      "scope": "First page of this named destination."
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [
+    "Z1.5.02"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "Construct the conjugation and integrality comparisons and the fixed-purity CM classifier with Frobenius separation at all permitted coefficient primes."
+  ],
+  "last_checked": "2026-11-24",
+  "blueprint_members": [
+    "Z1.5.03"
+  ],
+  "representative": "UpperTheory.GalN.V.Win.N.countK_alt",
+  "statement_declarations": [
+    "UpperTheory.GalN.V.Win.N.countK_alt"
+  ],
+  "grade_scope": "Named statement declarations with the hypotheses above. Chart supplier records have their own review scopes.",
+  "confirmation_basis": "Minimum across the statement declarations, using registry rows for the blueprint assignments listed here. Reviews of other expositions of a shared declaration are included as context.",
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "slug": "frobenius-classifiers-over-a-cm-field",
+  "aliases": [
+    "Z1.5.03 Frobenius classifiers over a CM field"
+  ],
+  "background": [
+    "Satake parameters",
+    "CM Galois representations"
+  ],
+  "hypothesis_source": {
+    "document": "blueprint_v13",
+    "section": "r8:small:Z1.5.03",
+    "pages": [
+      468,
+      468
+    ]
+  },
+  "question_sources": [
+    "data/status_ledger.json"
+  ],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "Z1.5.02": "graph"
+  },
+  "summary": "At a good prime of a fixed CM field, a finite list classifies allowed Frobenius data of fixed purity for every eligible odd coefficient prime. Its size bound is polynomial in the level and weight parameters, giving one count across coefficient systems."
+}

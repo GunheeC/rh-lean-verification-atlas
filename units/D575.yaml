@@ -1,0 +1,88 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D575",
+  "title": "Green's parameterization of finite cuspidal characters",
+  "track": {
+    "primary": "galois",
+    "secondary": []
+  },
+  "statement": "Assume the regular-character classification for finite general linear groups. For every prime field size g, permitted character pairing L and degree d>0, index the cuspidal characters by monic irreducible polynomials of degree d with nonzero constant coefficient. The characters have the prescribed degrees and Frobenius-orbit value formula; the labels identify equal characters and exhaust the cuspidal ones.\n\\[\n\\mathrm{GreenRegularCharacters}\\ \\Longrightarrow\\ \\mathrm{GLq.Green}.\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume the regular-character classification for finite general linear groups.",
+    "Use a prime field size, an allowed pairing and positive degree."
+  ],
+  "lean": [
+    {
+      "name": "GlobalTheory.GreenBridge.green_of_regular",
+      "file": "Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/SumRangeEqRoots.lean",
+      "line0": 225,
+      "line1": 304,
+      "sha256": "bf88f05c856ea17023e795b5f4927ca92a35971bd50f00ca4ed56ad8505d16f7",
+      "dominated": 280,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/D575_round4.md",
+      "section": "D575 · Green's parameterization of finite cuspidal characters",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "G.614 (decomp:D575)",
+      "pages": [
+        310,
+        310
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D575.tex",
+      "section": "decomp:D575",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": 2,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "D575",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "green-s-parameterization-of-finite-cuspidal-characters",
+  "aliases": [
+    "green_of_regular",
+    "D575 Green's parameterization of finite cuspidal characters"
+  ],
+  "background": [
+    "Green's characters",
+    "Finite general linear groups"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.614 (decomp:D575)",
+    "pages": [
+      310,
+      310
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "review_status": "pending_review",
+  "summary": "A classification indexed by regular multiplicative characters can be read using monic irreducible polynomial labels. The argument identifies Frobenius orbits on the two sides, including the value on a matrix with irreducible characteristic polynomial and the uniqueness and exhaustion of the labels."
+}

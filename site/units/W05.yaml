@@ -1,0 +1,136 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "W05",
+  "title": "A uniform second-cohomology bound",
+  "track": {
+    "primary": "galois",
+    "secondary": [
+      "local"
+    ]
+  },
+  "statement": "Assume the rank-$n$ literature record. There is a real $C_K$ such that,\nfor every prime $\\ell$, totally complex field $L$ containing a primitive\n$\\ell$th root (a fourth root for $\\ell=2$), algebraic closure and\nlocal data, and $e\\ge1$, the group $H^2(G_{L,\\ell},\\mathbb Z_\\ell(e+1))$\nis finite. With $r=[L:\\mathbb Q]$ and $D=|\\operatorname{disc}(L)|$,\n\\[\n \\log\\# H^2(G_{L,\\ell},\\mathbb Z_\\ell(e+1))\n \\le \\exp\\big((2er)^{C_K}\\log(2D)\\big).\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume the rank-$n$ literature record.",
+    "In the bound take totally complex $L$, a primitive $\\ell$th root in $L$ for odd $\\ell$ (fourth root for $\\ell=2$), admissible local data and $e\\ge1$."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.ZK.lemmaK_litN_alt",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/KFinal.lean",
+      "line0": 11,
+      "line1": 11,
+      "sha256": "3c9b240c3e60df3bff1f7de8a5a9137ed9e9d51673283c0d67be965360b1e11c",
+      "dominated": 38725,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "5.41 (sub:W05)",
+      "pages": [
+        50,
+        50
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/W05.tex",
+      "section": "sub:W05",
+      "pages": []
+    },
+    {
+      "document": "crosswalk/adriazola.json",
+      "section": "B-effective · §17.4.3, tw:effectiveK (target LemmaK only)",
+      "pages": [],
+      "coverage": "Target predicate only. The local implication has additional hypotheses."
+    }
+  ],
+  "status": "Statement only",
+  "grade": "L1",
+  "reviews": [
+    "reviews/R21_review.md"
+  ],
+  "prerequisites": [
+    "P031",
+    "P032",
+    "P033",
+    "P034",
+    "P035",
+    "P036",
+    "P037",
+    "P039",
+    "P040",
+    "Z2.K1",
+    "Z2.K2",
+    "Z2.K4",
+    "Z2.K5",
+    "Z2.K6",
+    "Z2.K7",
+    "Z2.K8"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "For which twists and degrees does the needed prime fall outside Soulé’s product? Identify a supplier for the remaining small-prime term."
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [
+    {
+      "grade": "L1",
+      "review": "reviews/R21_review.md",
+      "lines": [
+        118,
+        118
+      ],
+      "scope": "Lean interface as specified in the review row; no equivalence with a published result inferred.",
+      "verdict": "Exact statement comparison"
+    }
+  ],
+  "paper_id": "W05",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "uniform-second-cohomology-bound",
+  "aliases": [
+    "LemmaK",
+    "lemmaK_litN_alt",
+    "W05 A uniform second-cohomology bound"
+  ],
+  "background": [
+    "Galois cohomology in degree two",
+    "Tate twists",
+    "Cyclotomic number fields"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "5.41 (sub:W05)",
+    "pages": [
+      50,
+      50
+    ]
+  },
+  "question_sources": [
+    "questions/ktheory.md"
+  ],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "P031": "graph",
+    "P032": "graph",
+    "P033": "graph",
+    "P034": "graph",
+    "P035": "graph",
+    "P036": "graph",
+    "P037": "graph",
+    "P039": "graph",
+    "P040": "graph",
+    "Z2.K1": "graph",
+    "Z2.K2": "graph",
+    "Z2.K4": "graph",
+    "Z2.K5": "graph",
+    "Z2.K6": "graph",
+    "Z2.K7": "graph",
+    "Z2.K8": "graph"
+  }
+}

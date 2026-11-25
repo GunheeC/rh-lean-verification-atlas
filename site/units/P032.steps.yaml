@@ -1,0 +1,128 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "P032",
+  "edition_sha256": "621af7822cd099b1604b340d2bc8461e9577e35608eb70b548d637df30e0a353",
+  "note_sha256": "7c428cd4d052ab5da66697c9d30a06d00f892a47477e6acf4f227ea0bc073ece",
+  "statement_sha256": "c57157f7ea9e04ed5fa8878c8a46c5e17d73c273806ea156638fc3a8e546f341",
+  "sources": [
+    {
+      "path": "notes/units/P032.tex",
+      "sha256": "7c428cd4d052ab5da66697c9d30a06d00f892a47477e6acf4f227ea0bc073ece"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Applying the interpolation polynomial to the twisted conjugates gives the prescribed divisor on the distinguished block.",
+      "kind": "computation",
+      "uses": [
+        "input: divisor difference and interpolation distribution"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.ZK.Cl.cBetaDiv",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/LatticeBlockClasses/CBetaDiv.lean",
+          "line0": 33,
+          "line1": 62
+        }
+      ],
+      "source": "notes/units/P032.tex",
+      "anchor": "and form",
+      "source_lines": [
+        7,
+        39
+      ],
+      "claim_sha256": "4275c27976d8f94ee10b715915544d826af641f227db044fb172814c23a41a19",
+      "passage_sha256": "fb40d634c55bc2f333f8af863ae1f1f7be3d8a5de3ee970fcb7d7ca252f7bf90",
+      "sha256": "0b4cba6993e263ba551bb9641c7512ad3ef33c0682d385561c8a108f49db2eed",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The determinant on the designated transported lattice is the chosen beta and the other blocks have determinant one.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S1",
+        "input: Steinitz transport"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.ZK.Cl.cBlock",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/LatticeBlockClasses/CBlock.lean",
+          "line0": 83,
+          "line1": 164
+        }
+      ],
+      "source": "notes/units/P032.tex",
+      "anchor": "Steinitz transport chooses matrices",
+      "source_lines": [
+        7,
+        39
+      ],
+      "claim_sha256": "20b5c3604fe6e1e82cc8276ef6c936962fec542b72d6e161e6e5bed434e8f566",
+      "passage_sha256": "fb40d634c55bc2f333f8af863ae1f1f7be3d8a5de3ee970fcb7d7ca252f7bf90",
+      "sha256": "54faa19d16ad7432a4dd593ca163ed58f91ce518aa23e71c39c015bf7af784bf",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The sum of transport prisms closes the difference of the two chains to a cycle.",
+      "kind": "assembly",
+      "uses": [
+        "S2",
+        "input: basic cycle, coefficient relation and prism identity"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.ZK.Cl.cJoin",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/LatticeBlockClasses/CJoin.lean",
+          "line0": 5,
+          "line1": 187
+        }
+      ],
+      "source": "notes/units/P032.tex",
+      "anchor": "prism boundary relation cancels",
+      "source_lines": [
+        41,
+        48
+      ],
+      "claim_sha256": "ed2f06defb800614b92de89c0ef9974e606c1cb158bed16bdb9ad6c2c7fc95d2",
+      "passage_sha256": "f9944dbcc8e53378779e035ecce25f62b1a0d672d5ca1574bb752c591ec79441",
+      "sha256": "dfbcc10882c808132420e1f58ced748b8fc9f80d0986819afd6501bc0741fe6e",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "One common localization makes the scalar evaluation equal to the polynomial at the prescribed weight times the twisted norm evaluation.",
+      "kind": "computation",
+      "uses": [
+        "S3",
+        "P033",
+        "input: scalar evaluation law"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.ZK.Cl.cBetaVal",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/LatticeBlockClasses/CBetaVal.lean",
+          "line0": 31,
+          "line1": 122
+        }
+      ],
+      "source": "notes/units/P032.tex",
+      "anchor": "Choose one denominator",
+      "source_lines": [
+        50,
+        63
+      ],
+      "claim_sha256": "968d7be2ece8420a8964cbe705d7e753b50bfa54ea928138d19c7851bb794b90",
+      "passage_sha256": "490b19ff9224430817b2a231c832bc29852e8ef0d2ac83cbc71906140b67c0ce",
+      "sha256": "12a36e8f7df1eb538e5613ab68d45e236335bb496efea8d5821ae56745f5d946",
+      "ai_review": []
+    }
+  ],
+  "history": []
+}

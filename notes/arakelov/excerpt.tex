@@ -1,0 +1,438 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Verbatim sections of local blueprint v13. See README.md for macros, edition and source spans.
+
+% blueprint/ch_P.tex:1984-2417
+\subsection{Lattices, signs and the two duals}
+Let $K$ be totally complex, $n=[K:\mathbb Q]$, $\mathcal O=\mathcal O_K$,
+and $a\mapsto a^*$ an involution preserving $\mathcal O$. For the distinguished
+embedding $\sigma_0$ representing $v_0$ assume
+$\sigma_0(a^*)=\overline{\sigma_0(a)}$ for every $a\in K$.
+At other embeddings the analogous identity is required for entries in the
+specified subfield $K_0$. Write $\bar y$ for the conjugate of a finite
+place $y$, $v_y$ for the exponent in the principal fractional ideal, and
+$w_y=\log\mathrm N y/n$. The involution permutes the primes, preserves their
+residue field sizes, and gives $v_y(a^*)=v_{\bar y}(a)$.
+In particular $w_y=w_{\bar y}\ge0$. For $x\ne0$, factoring $(x)$ and taking
+the field norm in its embeddings gives the normalization
+\[
+   \sum_y w_y v_y(x)=\frac{1}{n}\log|N_{K/\mathbb Q}x|
+                  =\frac{2}{n}\sum_{v\mid\infty}\log|\sigma_v(x)|.
+\]
+All finite-place sums in this formula have finite support. Complex places
+are counted once on the right.
+See \path{IsCMSub}, \path{IsConjAt} and \path{lw}
+(\path{QuotientMetricDivisors/Statement.lean:18--64}),
+\path{ValBasic} (\path{QuotientMetricDivisors/ProdFormula.lean:41--47}) and
+\path{prod_formula'} (\path{HermitianTwistDivisors/ProdFormula.lean:39--93}).
+Indeed the involution sends the factorization of $(a)$ to that of $(a^*)$
+and induces an isomorphism on each corresponding residue field. Applying
+it twice fixes each prime, so reindexing the finite support leaves its
+sum unchanged. This proves the conjugation rules used below, including
+at a fixed prime (\path{finite_sum_conjugation}, \path{ValBasic.lean:147--152,170--173}).
+
+For full lattices $A,B$ in one $K$-space, take the ordinary localization
+at $y$ and set
+\[
+ i_y(A,B)=\operatorname{length}(A_y/(A\cap B)_y)
+                    -\operatorname{length}(B_y/(A\cap B)_y).
+\]
+Using a common sublattice in both terms gives the same difference by
+additivity of length. This also proves $i_y(A,C)=i_y(A,B)+i_y(B,C)$.
+If a basis for $B_y$ is obtained from one for $A_y$ by right multiplication
+by $C$, then $i_y(A,B)=v_y(\det C)$. Indeed, put the matrix into elementary
+divisor form over the discrete valuation ring after clearing denominators.
+In one coordinate the two lengths have difference $r$ for multiplication by
+a uniformizer to exponent $r$, including $r<0$. Summing the exponents gives
+the assertion. A semilocal basis at $\{y,\bar y\}$ is an ordinary basis
+after localization at either prime, since the denominators inverted in
+the semilocal ring are units at both. Applying this calculation to each
+localization gives both clauses, including $y=\bar y$. The source proves
+the determinant formula by diagonal and transvection reduction. See \path{Formalism.HermitianLatticesTheory.IndexBasic}
+(\path{HermitianLattices/StatementLat.lean:192--203}) and
+\path{index_change_formula} (\path{IdxChange.lean:640--647,671--694}).
+
+For a Hermitian form $h(x,z)=x^*Hz$, write
+$T^\#=\{z:h(T,z)\subset\mathcal O\}$. The index correction is
+$j_y(H,T)=i_y(T,T^\#)$. The dual that occurs in the final slope is the
+$\mathcal O$-linear evaluation dual in the $K$-dual space, equipped with
+the dual frames. These constructions have different roles. Given a frame
+$X_v$, its positive metric matrix is $A_v(X)=(X_v^{-1})^*X_v^{-1}$.
+For columns of a matrix $f$, its complex Gram is
+$\sigma_v(f)^* A_v(X)\sigma_v(f)$, and its rational Gram for $H$ is $f^*Hf$.
+We use ordinary determinants, so that the change of determinant is a squared
+absolute value at a complex embedding.
+See \path{Formalism.DivisionValues.gramR}, \path{detRatio}, \path{jw}
+(\path{QuotientMetricDivisors/Statement.lean:38--93}) and
+\path{Formalism.HN.DualPl} (\path{HarderNarasimhan/QuotRealize.lean:72--82}).
+
+\begin{lemma}[The signed local correction]\label{lem:P5-dual}
+\lean{Formalism.DivisionValues.conjugate_weight_gram_general}\uses{}
+If $H^*=H$ is nonsingular, $T$ is full, and the columns $f$ form a basis
+of $T$ after semilocalizing at $y,\bar y$, then
+\[
+                 j_y(H,T)=-v_y\bigl(\det(f^*Hf)\bigr).
+\]
+\end{lemma}
+\begin{proof}
+The semilocal ring inverts elements outside both primes and is stable under
+the involution. Its Dedekind factorization has at most two nonzero primes,
+so every ideal is principal (choose an element with just the specified
+orders at these primes by approximation, or by the Chinese remainder
+theorem). A finitely generated torsion-free module is free there. A full
+lattice therefore admits such a basis, with $K$-linearly independent
+columns. Semilocalization of its dual is the integral dual after
+semilocalizing: to clear the finitely many pairings against a generating
+set one may use a common denominator outside both primes. Consequently the
+columns $f(f^*Hf)^{-1}$ span the semilocal dual. Indeed their pairings with
+$f$ form the identity, and the pairings of any vector with $f$ are exactly
+its coefficients in that dual basis. Ordinary localization at $y$ now
+gives the preceding determinant formula with matrix $(f^*Hf)^{-1}$.
+Nondegeneracy and independence ensure the inverse exists.
+This proves the sign even when the two primes coincide or $T$ fails to be
+integral for $h$.
+See \path{semilocal_basis_exists} (\path{LocBasis.lean:110--143}),
+\path{jwGramW_of} and \path{conjugate_weight_gram_general}
+(\path{ConjugateWeightLatticeOfGeneral.lean:18--124}).
+\emph{Status: Complete.}
+\end{proof}
+
+\subsection{The real lattice and its evaluation dual}
+
+\begin{lemma}[Covolume in a complex frame]\label{lem:P5-gram-realize}
+\lean{Formalism.HN.height_gram_determinant}
+Let $K$ be totally complex of degree $n=2f$, and let $A$ be a full,
+finitely generated $\mathcal O_K$-lattice in the $D$-dimensional space
+$V$. In the invertible frames $X_v$, its realization $\rho_X A$ is a
+Euclidean lattice of rank $nD$ and positive covolume $C_X(A)$.
+If $e_1,\ldots,e_D$ is a $K$-basis in $A$ and $B=\sum_i\mathcal O_K e_i$,
+then, writing $\Delta=|\operatorname{disc}K|$,
+\[
+ [A:B]\operatorname{ht}(X,A)=\operatorname{ht}(X,B)
+ =\prod_{v\mid\infty}\det\operatorname{Gram}_v(X,e),
+ \qquad \operatorname{ht}(X,A)=2^{fD}\Delta^{-D/2}C_X(A).
+\]
+\end{lemma}
+\begin{proof}
+Fix an integral basis $\omega_1,\ldots,\omega_n$ of $\mathcal O_K$.
+Take the real matrix $M$ whose $i$th column consists of the real and
+imaginary parts of $\sigma_v(\omega_i)$, one embedding per pair.
+Replacing each pair of rows $(u,v)$ by $(u+iv,u-iv)$ multiplies the
+absolute determinant by 2. The resulting matrix $E$ contains all
+embeddings. The $(i,j)$ entry of $E^{t}E$ is
+$\operatorname{Tr}_{K/\mathbf Q}(\omega_i\omega_j)$, so
+$|\det M|=2^{-f}\sqrt{\Delta}$. This is the unit-ideal case of
+Milne \cite[Prop.~4.25]{P-Milne-Cheb} with the real coordinate measure.
+See \path{HeightGram.abs_det_amat} (\path{HtGram.lean:218--243}).
+
+Write $U_v$ for the complex matrix whose columns are the coordinates
+of $e_j$ in the frame, obtained by applying $X_v^{-1}$ to their
+embedded coordinates. Before these matrices act, the columns for
+the $\omega_i e_j$ give $D$ copies of $M$, up to row and column
+permutations. The real determinant of $U_v$ is $|\det U_v|^2$:
+after complexification the real linear map is conjugate to
+$\operatorname{diag}(U_v,\overline{U_v})$. The same number is
+$\det(U_v^*U_v)>0$. Taking determinants of the composite gives
+\[
+ C_X(B)=(2^{-f}\sqrt{\Delta})^D
+           \prod_{v\mid\infty}\det(U_v^*U_v).
+\]
+See \path{HeightGram.det_realif}, \path{HeightGram.det_gmat} and
+\path{Formalism.HN.htGram_of} (\path{HtGram.lean:85--137,191--197,341--409}).
+
+Each of the finitely many generators of $A$ has coordinates in $K$.
+Clearing their denominators with a single positive integer $c$ gives
+$B\subset A\subset c^{-1}B$. Thus the middle image is a discrete
+subgroup spanning the same real space as $\rho_X B$. In integral
+bases for $\rho_X B$ and $\rho_X A$, the absolute determinant of the
+inclusion matrix is $[A:B]$ by Smith normal form. It multiplies the
+larger lattice's covolume by that index. This proves the formulas,
+including $D=0$ with empty determinant one.
+See \path{PlaceLattice.exists_denom} and \path{place_lattice_structure}
+(\path{DiscreteSpanOfLinIndep.lean:224--248,269--324}) and
+\path{height_gram_determinant} (\path{HtGram.lean:411}).
+\emph{Status: complete.}
+\end{proof}
+
+\begin{lemma}[Height of the evaluation dual]\label{lem:P5-eval-realize}
+\lean{Formalism.HN.DualPolygon.ht_dual}\uses{lem:P5-gram-realize}
+For $A$ as above, $A^*=\{\phi\in V^*:\phi(A)\subseteq\mathcal O_K\}$
+in the dual frame satisfies
+$\operatorname{ht}(X^\vee,A^*)\operatorname{ht}(X,A)=1$.
+\end{lemma}
+\begin{proof}
+Write $L=\rho_X A$, $\rho'=\rho_{X^\vee}$, and let $J$ denote
+coordinatewise complex conjugation. The trace dual is
+$T=\{\phi\in V^*:\operatorname{Tr}(\phi(A))\subseteq\mathbf Z\}$.
+The Euclidean dual is exactly $L^\#=2J\rho' T$. Indeed, pairing the
+realizations of $x$ and $2J\rho'\phi$ gives
+$2\sum_v\operatorname{Re}(\sigma_v\phi(x))=\operatorname{Tr}(\phi(x))$:
+the transposed change of coordinates in the dual cancels $X_v^{-1}$
+in the primal. Conversely an integral linear form on $L$ extends to
+a rational linear form on $V$ because $A$ spans $V$ over $\mathbf Q$.
+The map $\phi\mapsto\operatorname{Tr}\circ\phi$ from $V^*$ to the
+rational dual is injective (a nonzero $K$-linear form takes the value
+$1$, whose trace is $n$) and both rational dimensions are $nD$.
+The representing real vectors agree since $L$ spans the real space.
+A Euclidean lattice with basis matrix $H$ has dual basis $H^{-t}$.
+The factor 2 acts in $nD$ real dimensions and $J$ is an isometry, giving
+\[
+ \operatorname{covol}(\rho'T)=2^{-nD}C_X(A)^{-1}.
+\]
+See \path{DualPolygon.ident_trace_eq}, \path{inner_realize_alt} and
+\path{dualZ_zl_eq} (\path{DualPl.lean:70--95,114--148,196--312}).
+
+Let $\mathfrak d^{-1}=\{z\in K:\operatorname{Tr}(z\mathcal O_K)
+\subseteq\mathbf Z\}$ be the codifferent. Since $\mathcal O_K A=A$,
+one has $T=\operatorname{Hom}_{\mathcal O_K}(A,\mathfrak d^{-1})$.
+Both modules in $A^*\subseteq T$ are full lattices: in the notation of
+the preceding proof $cB^*\subseteq A^*\subseteq B^*$, and $T$ already
+has a full real realization. In the integral basis $\omega_i$ the
+codifferent has coordinate lattice
+$(\operatorname{Tr}(\omega_i\omega_j))^{-1}\mathbf Z^n$.
+Hence $|\mathfrak d^{-1}/\mathcal O_K|=\Delta$.
+At each nonzero prime $\mathfrak p$, $A_{\mathfrak p}$ is free of rank $D$
+over the discrete valuation ring: it is finitely generated and
+torsion-free over a principal ideal domain. Localization commutes with
+these Hom modules since $A$ is finitely presented. Thus
+$(T/A^*)_{\mathfrak p}$ is the direct sum of $D$ copies of
+$(\mathfrak d^{-1}/\mathcal O_K)_{\mathfrak p}$. Multiplying residue-field
+orders with their composition lengths over the finitely many primes in
+the support gives $[T:A^*]=\Delta^D$. This also explains why a global
+$\mathcal O_K$-basis of $A$ is unnecessary. See
+\path{DualPolygon.dual_inf_ann_eq}, \path{twist_index} and \path{key_lemma}
+(\path{DualPl.lean:443--495,689--731,863--872,947--955}).
+It follows that
+\[
+ C_X(A)C_{X^\vee}(A^*)=2^{-nD}\Delta^D .
+\]
+Each height contributes $2^{fD}\Delta^{-D/2}$, so their product is one
+since $2f=n$. This proves the full-lattice clause of
+\path{Formalism.HN.DualPolygon.ht_dual} (\path{DualPl.lean:1065--1073}).
+\emph{Status: complete.}
+\end{proof}
+
+\subsection{The base quotient comparison}
+Write $\mathcal V(X,L)=2\log\operatorname{ht}(X,L)/n$, and use
+$\langle h_v\rangle=(2/n)\sum_{v\mid\infty}h_v$.
+Lemma~\ref{lem:P5-gram-realize} gives the following normalization.
+In full rank an independent list $b$ spanning
+$B$ over $\mathcal O$ satisfies
+$\operatorname{ht}(X,B)=\prod_v\det\operatorname{Gram}_v(X,b)$, and for a
+full $L\supseteq B$ one has $\operatorname{ht}(X,L)[L:B]=\operatorname{ht}(X,B)$.
+These are \path{Formalism.HN.HtGram} and
+\path{height_gram_determinant} (\path{HarderNarasimhan/StatementPl.lean:83--91},
+\path{HtGram.lean:411}). The index here is the cardinality of an additive
+quotient.
+
+For any full $L$, even if $L$ and $B$ are incomparable, choose an integer
+$c\ne0$ with $cB\subset L\cap B$. Comparison of the two indices above $cB$
+gives the following covolume formula:
+\[
+ \mathcal V(X,L)=
+ \big\langle\log\det\operatorname{Gram}_v(X,b)\big\rangle
+                          +2\sum_y w_y i_y(B,L).                 \qquad\text{(P5.1)}
+\]
+For a finite torsion module, the logarithm of its size is the sum of the
+local lengths times $\log\mathrm N y$: a composition quotient is a single
+residue field and contributes only at its own prime. Applying this twice
+cancels the common sublattice and proves finite support. Thus changing $L$
+to $L'$ in a fixed frame adds $2\sum_yw_y i_y(L,L')$. Applying an
+isomorphism $\phi$ to both $L$ and $B$ leaves their local indices unchanged.
+If $d_v(\phi)$ denotes its image Gram determinant divided by the source Gram
+determinant, the change in $\mathcal V$ between the two frames is exactly
+$\langle\log d_v(\phi)\rangle$. The ratio is independent of $b$ because
+changing the $K$-basis multiplies both determinants by the same positive
+factor. See \path{covolume_via_basis} (\path{LcvBasis.lean:324--427}),
+\path{ImageLcv}, \path{IdxLcv} (\path{QuotientMetricDivisors/ProdFormula.lean:54--67}).
+
+\begin{lemma}[The loss at the base type]\label{lem:P5-base}
+\lean{Formalism.DivisionValues.reduction_lemma_second}\uses{lem:P5-gram-realize}
+Let $P:K^a\twoheadrightarrow K^D$, let $M_*$ be full, and let $H$ have entries
+in $K_0$ and be positive definite at every infinite place. Give $Q=P M_*$
+the quotient metrics $A_v=(P_v H_v^{-1}P_v^*)^{-1}$ and write
+$\Gamma=(PH^{-1}P^*)^{-1}$ over $K$. For semilocal bases $e_y$ of $Q$, set
+$G_y=\det(e_y^*\Gamma e_y)$. Then $w_yv_y(G_y)$ has finite support and
+\[
+                       \mathcal V(X^Q,Q)\le\sum_y w_y v_y(G_y).
+\]
+\end{lemma}
+\begin{proof}
+The images of generators of $M_*$ generate $Q$ and their $K$-span
+is $P(K^a)=K^D$ since $M_*$ is full and $P$ is surjective
+(\path{lemmaRb_of}, \path{ReductionLemmaSecond.lean:163--177}). Write
+$\tau(a)=\overline{\sigma(a^*)}$ for the twist of an embedding $\sigma$.
+It agrees with $\sigma$ on $K_0$, commutes with conjugation of embeddings,
+and twisting twice returns the original embedding. In particular it
+permutes the infinite places. If $C=PH^{-1}P^*$, then
+\[
+          \sigma(C)=P_\sigma H_\sigma^{-1}P_\tau^*.
+\]
+At $v_0$, both embeddings on the right agree. The right side there is
+positive definite, so $\det C\ne0$ in $K$. Away from $v_0$, the two
+matrices of $P$ can differ. This is precisely where equality of the rational
+and archimedean quotient determinants could fail.
+See \path{Rb.tw_tw}, \path{Rb.plc_plc}, \path{Rb.Cmap}, \path{Rb.Hmap_tw}
+and \path{lemmaRb_of} (\path{ReductionLemmaSecond.lean:22--41,67--79,185--202}).
+
+For a positive definite complex matrix $S$ and rectangular matrices $U,V$,
+put $A=USU^*$, $B=USV^*$, $C'=VSV^*$. If $A$ is invertible, put
+$W=V-B^*A^{-1}U$. Direct multiplication gives
+$C'=B^*A^{-1}B+WSW^*$. A positive semidefinite matrix increases in
+determinant upon adding another one: for a positive definite first matrix
+conjugate it to the identity and use the eigenvalues of the second matrix,
+then pass to a limit for a singular first matrix. Hence
+$|\det B|^2\le\det A\det C'$. If $A$ is singular, a nonzero left null vector
+for $A$ also annihilates $U$ by positivity of $S$, hence annihilates $B$.
+The same inequality holds in that case. This is
+\path{determinant_cauchy_schwarz} (\path{DeterminantCauchySchwarz.lean:67--139}).
+
+Apply this inequality with $U=P_\sigma$, $V=P_\tau$, $S=H_\sigma^{-1}$;
+$H_\tau=H_\sigma$ since its entries are in $K_0$. The two real diagonal
+Gram determinants are the reciprocals of the metric determinants at the
+places of $\sigma,\tau$. Taking reciprocals of positive numbers gives
+\[
+  \det A_{v(\sigma)}\det A_{v(\tau)}
+        \le |\sigma(\det C)|^{-2}=|\sigma(\det\Gamma)|^2 .
+\]
+Conjugating the representative of a place leaves each positive real
+determinant unchanged. Sum logarithms over places: each term on the left
+then occurs twice, including the fixed places of the involution.
+The product formula gives
+$\langle\log\det A_v\rangle\le\sum_y w_yv_y(\det\Gamma)$.
+Finally, writing $B=\mathcal O^D$, the two basis changes at $y,\bar y$ give
+\[
+ v_y(G_y)=v_y(\det\Gamma)+ i_y(B,Q)+i_{\bar y}(B,Q).
+\]
+Each of these terms has finite support. In the weighted sum the last two
+terms combine to $2\sum_yw_y i_y(B,Q)$ by conjugation. Add them to the
+archimedean inequality and use (P5.1) in the standard basis.
+See \path{Rb.place_ineq}, \path{lemmaRb_of}
+(\path{ReductionLemmaSecond.lean:133--157,204--290}).
+\emph{Status: complete.}
+\end{proof}
+
+\subsection{One type at a time}
+Let $t_0$ denote the base type. The types $t_y$ assigned to the primes
+satisfy $t_{\bar y}=t_y$, and differ from $t_0$ only at finitely many
+primes. For each type we have a full quotient lattice $Q_t$ with frame
+$X^Q_t$ and an isomorphism $\iota_t$ to the fixed framed space $E$.
+There are finitely many columns $j$, with full $T_{jt}$, forms $H_{jt}$,
+frames $X^T_{jt}$ and isomorphisms $\theta_{jt}$ to fixed framed spaces
+$W_j$ containing the reference lattices $M_j$. Set
+$A_t=\iota_t Q_t$, $B_{jt}=\theta_{jt}T_{jt}$. At $v_0$ each $H_{jt}$
+realizes the indicated column metric. It is consequently Hermitian and
+nonsingular over $K$, as can be seen after applying the injective embedding
+$\sigma_0$. At the base type the column forms have entries in $K_0$ and
+realize the metrics at every infinite place. Given semilocal bases $e_{t,y}$
+of $Q_t$, we require a $G_{t,y}\in K$ with
+$\sigma_0 G_{t,y}=\det\operatorname{Gram}_{v_0}(X^Q_t,e_{t,y})$.
+At the base it is the rational Gram of Lemma~\ref{lem:P5-base}.
+For the actual quotients one obtains the required number at every type
+from the Hermitian $\Gamma_t=(P_tH_t^{-1}P_t^*)^{-1}$, since $\sigma_0$
+commutes with the adjoint. Moreover $\det(e^*\Gamma_t e)$ is star-invariant.
+These statements are \path{IsHermAt} (\path{RatHermLcvTwist.lean:11--15}),
+\path{gram_determinant_quotient_metric}
+(\path{ConjTransposeEqOfPosDef.lean:61--90}) and \path{IndefRows.stepB}
+(\path{IndefUse.lean:236--269}).
+
+\begin{lemma}[The two required determinant identities]\label{lem:P5-ratio}
+\lean{Formalism.L2.Indef.IndefRows.detId}\uses{}
+In the realization by indefinite rows the ratios satisfy
+\[
+  d_v(\iota_t)=\kappa_v^D\prod_j d_v(\theta_{jt})
+                  \qquad\text{if }t=t_0\text{ or }v=v_0.
+\]
+All column dimensions and quotient dimensions equal $D>0$ under the
+base-side well-formedness hypotheses.
+\end{lemma}
+\begin{proof}
+At the base one has independent summands spanning the quotient and each
+column; the row and column isomorphisms transport them to $E$ and $W_j$.
+The parts there have matching dimensions for each label $p$. Pulling them
+back along the isomorphisms for any $t$ preserves independence,
+exhaustion and dimensions. If their dimensions are $d_p$, summing gives
+$\sum_p d_p=\dim E=\dim W_j$ for each $j$. Bijectivity also identifies
+$\dim Q_{t_0}$ with $D$ and positivity of the base quotient yields $D>0$.
+This proves each rank assertion before any division by $D$.
+See \path{IndefRows.part_dim}, \path{IndefRows.dW_eq},
+\path{IndefRows.D_pos} and \path{IndefRows.Zpart_decomp}
+(\path{IndefUse.lean:109--170}).
+
+Let $N_1$ denote the matrix of a pulled-back target metric and $N_2$ its
+source metric. The scalar hypothesis on part $p$ is the bilinear identity
+$x^*N_1z=c_p x^*N_2z$ for basis vectors $x$ in this part and every
+rational vector $z$, after embedding at $v$. With the concatenated bases
+as columns of $C$, it gives the entire matrix identity
+\[
+ C^*N_1 C=\mathrm{diag}(c_{p(i)})C^*N_2 C .
+\]
+Consequently $d_v=\prod_p c_p^{d_p}$: the common factor
+$|\det C|^2$ cancels. This uses no orthogonality assumption between parts.
+For the row take $c_p=\kappa_v\prod_j\lambda_{jtpv}$, and in column $j$
+take $c_p=\lambda_{jtpv}$. Interchange the two finite products and use
+$\sum_p d_p=D$. The positivity of the frames makes every ratio for a
+bijective map strictly positive. The supplied scalar hypotheses hold
+in exactly the two cases of the statement. Zero-dimensional summands
+contribute exponent zero, and an empty family of columns contributes
+the product one.
+See \path{Formalism.DivisionValues.det_of_scalar}, \path{spectral_determinant_formula}
+(\path{SpecDet.lean:87--132,160--177}) and
+\path{IndefRows.detId} (\path{IndefUse.lean:196--205}).
+\emph{Status: Complete.}
+\end{proof}
+
+\begin{proposition}[Changing type at a conjugate pair]\label{prop:P5-local}
+\lean{Formalism.DivisionValues.ConjugateWeightGram.local_idW}
+\uses{lem:P5-dual,lem:P5-ratio}
+For fixed $y$ put
+\[
+ U_y(t)=v_y(G_{t,y})
+       +\sum_j\{i_y(M_j,B_{jt})+i_{\bar y}(M_j,B_{jt})+j_y(H_{jt},T_{jt})\}.
+\]
+Then $U_y(t_y)-U_y(t_0)=i_y(A_{t_0},A_{t_y})+i_{\bar y}(A_{t_0},A_{t_y})$.
+The same formula holds in the general determinant comparison when at
+$v_0$ the type $t_y$ has scalar $\kappa_{v_0}\rho_r$ with
+$\rho_r=\sigma_0(\rho)>0$, $v_y(\rho)=0$, and the base multiplier is one.
+\end{proposition}
+\begin{proof}
+Use subscripts $0,1$ for $t_0,t_y$. Choose semilocal column bases
+$f_{jh}$ for $T_{jh}$ and write $g_{jh}=\det(f_{jh}^*H_{jh} f_{jh})$.
+Let $C$ be the change of basis from $\iota_0e_0$ to $\iota_1e_1$ and
+$D_j$ the change from $\theta_{j0}f_{j0}$ to $\theta_{j1}f_{j1}$.
+With $N(z)=z^*z$ these matrices give the following identity in $K$:
+\[
+  \rho^D G_1\prod_j\bigl\{N(\det D_j)g_{j0}\bigr\}
+          =N(\det C)G_0\prod_j g_{j1}.                         \qquad\text{(P5.2)}
+\]
+To see it, first work at $\sigma_0$. The image row Gram determinants in
+the common metric are $d_{v_0}(\iota_h)\sigma_0(G_h)$, and the ratio of
+these image determinants is $|\sigma_0(\det C)|^2$. For each column the
+corresponding equation is
+\[
+ d_{v_0}(\theta_{j1})\sigma_0(g_{j1})=
+ |\sigma_0(\det D_j)|^2d_{v_0}(\theta_{j0})\sigma_0(g_{j0}).
+\]
+Insert these equations in the row equation, and divide by
+$\kappa_{v_0}^D\prod_j d_{v_0}(\theta_{j0})$. It is nonzero by positivity
+and invertibility. Since $\sigma_0$ respects the involution on $K$,
+the result is the image of (P5.2); injectivity lifts it back to $K$.
+Only this embedding occurs here. In particular the argument never applies
+a finite valuation to a complex number.
+See \path{ConjugateWeightGram.local_idW}
+(\path{ConjugateWeightLatticeOfGeneral.lean:208--265}).
+
+Every factor in (P5.2) is nonzero. Take $v_y$; the multiplier contributes
+$D v_y(\rho)=0$. The valuation of $N(\det D_j)$ is the sum of the two
+valuations of $\det D_j$ at $y,\bar y$. Since the same matrices represent
+the two local changes of basis, these valuations are the two changes of
+indices with reference lattice $M_j$. The term
+$v_y(g_{j0})-v_y(g_{j1})$ is the \emph{increase} of the Hermitian
+dual index by Lemma~\ref{lem:P5-dual}. Thus the difference of $U$ is
+$v_y(\det C)+v_{\bar y}(\det C)$, as claimed. If $y=\bar y$ the two ordinary
+indices coincide and both occurrences remain. If the type is unchanged both
+sides vanish even when base Gram and column terms themselves are nonzero.
+See \path{ConjugateWeightGram.local_idW}
+(\path{ConjugateWeightLatticeOfGeneral.lean:266--317}).
+\emph{Status: Complete.}
+\end{proof}
+

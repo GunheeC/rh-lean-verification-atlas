@@ -1,0 +1,160 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "T03",
+  "title": "Building the definite-side family from unramified row data",
+  "track": {
+    "primary": "theta",
+    "secondary": [
+      "arakelov"
+    ]
+  },
+  "statement": "Assume $P$ and row rationality: every datum in the starting row test with the\nprescribed group, geometric, weight and residue-characteristic conditions passes\nthe rational row test. Fix a proof $h_L$ of the placewise local-map existence proposition \\nolinkurl{RecTExists}, $c\\in\\mathbb R$, and an\neventually large retwisting predicate $A$. Suppose the small-prime norm bound\nis linked at $p(h_L,c)$, and the functional inequality of T10 and covolume\ninequality of T13 are linked in their row versions at $p_A(h_L,c)$.\nThen the definite-side family, selection and certificates of T02 exist.\nThe two types of parameter have distinct roles in this implication.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume the third-place hypotheses and rationality of the tested rows.",
+    "Fix a proof hL of RecTExists, a real dependence parameter and an eventually large retwisting predicate. RecTExists asserts that a local map satisfying IsRecT exists at each place.",
+    "The small-prime bound is linked at the dependence parameter. The functional and covolume bounds are linked at the extension parameter."
+  ],
+  "lean": [
+    {
+      "name": "GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt",
+      "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/HypothesesNonemptyOfUnramifiedExponents.lean",
+      "line0": 41,
+      "line1": 61,
+      "sha256": "0b7fae1cbdd2af84cebb033b7477a948407336a5ad88459ac7e8f20ca89535f2",
+      "dominated": 1232133,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/T03_round4.md",
+      "section": "T03 · Building the definite-side family from unramified row data",
+      "pages": [
+        1,
+        3
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "5.13 (sub:T03)",
+      "pages": [
+        40,
+        40
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/T03.tex",
+      "section": "sub:T03",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L1",
+  "reviews": [
+    "reviews/R21_review.md"
+  ],
+  "prerequisites": [
+    "D025",
+    "D033",
+    "D575",
+    "N076",
+    "N188",
+    "T04",
+    "T05",
+    "T06",
+    "T07",
+    "T08"
+  ],
+  "size_pages": 3,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [
+    {
+      "grade": "L1",
+      "review": "reviews/R21_review.md",
+      "lines": [
+        129,
+        129
+      ],
+      "scope": "Lean interface as specified in the review row; no equivalence with a published result inferred.",
+      "verdict": "Exact statement comparison"
+    }
+  ],
+  "paper_id": "T03",
+  "indexed_members": [
+    "D046",
+    "D047",
+    "D048",
+    "D049",
+    "D050",
+    "D051",
+    "D052",
+    "D053",
+    "D054",
+    "D055",
+    "D056",
+    "D057",
+    "D058",
+    "D059",
+    "D060",
+    "D061",
+    "D062",
+    "D063",
+    "D064",
+    "D065",
+    "D066",
+    "D067",
+    "D068",
+    "D069",
+    "D070"
+  ],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "building-the-definite-side-family-from-unramified-row-data",
+  "aliases": [
+    "The member-stage construction",
+    "hypotheses_nonempty_of_unramified_exponents_alt",
+    "T03 Building the definite-side family from unramified row data"
+  ],
+  "background": [
+    "Unramified representations",
+    "Adelic family parameters"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "5.13 (sub:T03)",
+    "pages": [
+      40,
+      40
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "D025": "graph",
+    "D033": "graph",
+    "D575": "graph",
+    "N076": "graph",
+    "N188": "graph",
+    "T04": "graph",
+    "T05": "graph",
+    "T06": "graph",
+    "T07": "graph",
+    "T08": "graph"
+  },
+  "review_status": "pending_review",
+  "summary": "A definite-side witness can be assembled if rational rows, an eventually available retwisting grid and three linked bounds are supplied. The small-prime bound begins on the dependence parameters. The functional and covolume bounds already live on the stronger extension.",
+  "reader_overrides": {
+    "hypothesis_details": [
+      "Assume the third-place hypotheses and rationality of the tested rows.",
+      "Fix a proof hL of RecTExists, a real dependence parameter and an eventually large retwisting predicate. RecTExists asserts that a local map satisfying IsRecT exists at each place.",
+      "The small-prime bound is linked at the dependence parameter. The functional and covolume bounds are linked at the extension parameter."
+    ]
+  }
+}

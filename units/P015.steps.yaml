@@ -1,0 +1,137 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "P015",
+  "edition_sha256": "c53af9d25888ad049b0bdfa3cd8d3da62ce67ec1473f054114c8feb29889e396",
+  "note_sha256": "9d8d22bb743577c04607440890aebb581047e653828924c3160ffc08d9417952",
+  "statement_sha256": "65f36697e97ce92d87b0b5f8c27744b95dfbf10906b303f9a565b7e5d9e9420e",
+  "sources": [
+    {
+      "path": "notes/units/P015-argument.tex",
+      "sha256": "9d8d22bb743577c04607440890aebb581047e653828924c3160ffc08d9417952"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Choose the common large scale before the admissible prime pair and host, giving both required request conditions on the selected frame.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "P013",
+        "D513",
+        "D511"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Top.supplyChi",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/SupplyChi.lean",
+          "line0": 8,
+          "line1": 16
+        }
+      ],
+      "source": "notes/units/P015-argument.tex",
+      "anchor": "Fix $C_0",
+      "source_lines": [
+        105,
+        136
+      ],
+      "claim_sha256": "300f1947fb6f6d9c9619442d2b4337b251ddb48bc725d90da2823b4bc9d452c1",
+      "passage_sha256": "e4f576de8279dbfffa196e44dae8db8459a1133b8b258baa5b25ff105170bc60",
+      "sha256": "1a652b69a9458e957dba27d71614f25aa23444a25ffeed495a86f1a863ac4144",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Intersect the closed conditions for the same request and select a family above their common largeness bound.",
+      "kind": "assembly",
+      "uses": [
+        "B05",
+        "T02",
+        "input: Green's character assertion"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Top.shape_closed_link_n_of_green",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopShape.lean",
+          "line0": 33,
+          "line1": 55
+        }
+      ],
+      "source": "notes/units/P015-argument.tex",
+      "anchor": "\\begin{proof}\nFix the request and the host witnesses. Feed t",
+      "source_lines": [
+        195,
+        210
+      ],
+      "claim_sha256": "608fafa4594b3140f35002ad1ef5a2204901a5825628d2f7fe3f4fc29d471ff6",
+      "passage_sha256": "13c6ba3c87a0c0f78b9044549e4d104e5968309416170a01f2fb0d616030ba27",
+      "sha256": "32e5ce647e20eaf45d6dd4d6d39f3be14d7df398540a30cad984801650c56ef4",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The finite Selmer bounds give the division input, and the slope comparison at the same family yields the remaining link.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S1",
+        "S2",
+        "input: rank equality and compatible slope inputs"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Top.divinN_of_hypV",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/DivinNOfHypV.lean",
+          "line0": 117,
+          "line1": 131
+        },
+        {
+          "name": "Formalism.MainNotions.J.linkMu_of_linkDIV",
+          "file": "Formalism/SharpRestriction/AdmissibleParameterJoins/SumLogPrimeFactorsLe.lean",
+          "line0": 775,
+          "line1": 784
+        }
+      ],
+      "source": "notes/units/P015-argument.tex",
+      "anchor": "The request supplies $\\mathrm{HypV}(F)$, which with $N$, the",
+      "source_lines": [
+        212,
+        225
+      ],
+      "claim_sha256": "1b08ebe21b138b868b9090604a3cc54b34680c67ee612dd0002646887ff8654e",
+      "passage_sha256": "5ce5ea7807141c1e6d6e1115e78660604da89eceb0f2c28c59c8bba8b3d42bcb",
+      "sha256": "db2f5ab296a887cc31a743d7fcc2881dc6d48e88e568bd28b085ded4b490023d",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "Connectedness together with the host-window request at exponent three halves gives the primitive-character nonvanishing conclusion.",
+      "kind": "assembly",
+      "uses": [
+        "S3",
+        "P016"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Top.zero_free_all_of_green_v_win",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean",
+          "line0": 12,
+          "line1": 15
+        }
+      ],
+      "source": "notes/units/P015-argument.tex",
+      "anchor": "For the application take $\\lambda=3/2$, $G=G_\\psi$.\nOn a fam",
+      "source_lines": [
+        227,
+        240
+      ],
+      "claim_sha256": "d7ed5d53342ed33569b3daeeb3599d1f21eac551fad54e2a0f03a289a5d895e7",
+      "passage_sha256": "df066783931e0f4901a5c920fc7b4ac2486dee84aced8f9a849277c71e665da3",
+      "sha256": "8f8336aed0686989729de612ca3edddbc5a1017541e5cbfb8d9b4a897e3fc4d0",
+      "ai_review": []
+    }
+  ],
+  "history": []
+}

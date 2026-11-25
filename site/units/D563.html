@@ -1,0 +1,40 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>D563 · Absorbing the four size-window errors · RH verification atlas</title><link rel="stylesheet" href="../atlas.css"><script>window.MathJax={tex:{inlineMath:[["$","$"]],displayMath:[["$$","$$"]],processEscapes:true},options:{ignoreHtmlClass:"no-math"}};</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script></head><body><header><div class="bar"><a class="brand" href="../index.html">RH verification atlas</a><nav aria-label="Atlas navigation"><a href="../index.html">Home</a> <a href="../STATUS.html">Status</a> <a href="../MAP.html">Map</a> <a href="../dashboard/index.html">Tracks</a> <a href="../lookup/search.html">Search declarations</a></nav></div></header><main><h1 id="d563--absorbing-the-four-size-window-errors">D563 · Absorbing the four size-window errors</h1>
+<p class="notice">AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved</p>
+<p>Under the size-window inequalities, a normalized inequality with four half-power error terms implies the stated bound on the scalar prime-sum quantity. This numerical step explains how the density and column factors can be divided out while retaining a half-power estimate with an explicit epsilon loss.</p>
+<p><code>absorbing-the-four-size-window-errors</code> · <a href="../tracks/analytic/index.html">Analytic number theory</a> · <a href="../tracks/arakelov/index.html">Arakelov geometry and geometry of numbers</a></p>
+<p><strong>Full</strong> · <strong>L2</strong> Written proof accepted in AI cross-review · Record generated 2026-11-25 (no human check).</p>
+<div class="scroll"><table>
+<thead><tr><th>1 · Lean pinned</th><th>2 · Statement compared</th><th>3 · Prose</th><th>4 · Steps</th><th>5 · AI review</th><th>6 · Human</th></tr></thead>
+<tbody><tr><td>✓</td><td>✓</td><td>Full</td><td>3</td><td>Current argument (AI)</td><td>0 of 3 steps</td></tr>
+</tbody></table></div>
+<p><a href="D563.check.html">Numbered proof and check records</a> · <a href="../PROGRESS.html">Progress and counting rules</a></p>
+<h2 id="statement">Statement</h2>
+<p>Let <span class="math">$n,n_T,n_{T,2},m$</span> be natural numbers and <span class="math">$C,\varepsilon,x,b,k,a_E,\mathrm{Err},G_x$</span> real. Assume the size-window inequalities, including <span class="math">$x\geq3$</span>, <span class="math">$n,b,\varepsilon&gt;0$</span> and the bounds on <span class="math">$m,k,a_E$</span> and <span class="math">$\mathrm{Err}$</span> in the linked definition. If</p>
+<div class="math display">$$n_T mb\,\frac{n_{T,2}}{2n}\bigl(G_x-4x^{1/2+\varepsilon}\bigr) \leq \mathrm{Err}+2n_T mb/x,$$</div>
+<p>then <span class="math">$G_x\leq x^{1/2+(C+3)\varepsilon}$</span>.</p>
+<h2 id="assumptions">Assumptions</h2>
+<ul><li>Assume SizeWindows on the counts and real parameters, including positive <span class="math">$b,\varepsilon,n$</span>, nonnegative <span class="math">$C$</span>, and the size, count and bracket bounds in D566.</li><li>With <span class="math">$Q=n_Tmb$</span>, <span class="math">$r=n_{T,2}/n$</span> and <span class="math">$X=x^{1/2+\varepsilon}$</span>, assume <span class="math">$Qr(G_x-4X)/2\le\mathrm{Err}+2Q/x$</span>.</li></ul>
+<p>Sources for the assumptions · <a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a></p>
+<h2 id="where-to-read">Where to read</h2>
+<p>Blueprint v13 and papers v3–v5 are this atlas project’s own AI-written, unpublished drafts. They have no human review and were not written by the author of the Lean development. Blueprint v13, its separate cover, and paper v5 are distributed as assets of release v0.1.0. For v3 and v4 the atlas supplies selected excerpts and notes. <a href="../data/editions.json">Edition register</a></p>
+<ul><li><a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a>, G.596 (decomp:D563), p. 306. Statement starts on the cited page.</li><li><a href="../notes/units/D563.tex">Manuscript source excerpt</a> · section <code>decomp:D563</code></li><li><a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a>, The chain in detail: P017, pp. 9–13. Shared subsection for this station, including subordinate inputs.</li><li><a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a>, Lemma 3.4 (r23:budget), p. 13. Complete four-term division and absorption argument.</li><li><a href="../notes/units/D563-argument.tex">Manuscript argument excerpt</a> · section <code>r23:budget</code></li></ul>
+<h3 id="other-expositions-and-comparisons">Other expositions and comparisons</h3>
+<ul><li><a href="https://github.com/jimjamzola/RH-Alpoge-Reconstruction/blob/aa9c86bf2a7d29b08575641fecea19a2a603e87c/manuscript/main.pdf">Adriazola, Proposition 4.3; Corollary 4.4</a> · partial. <a href="../crosswalk/adriazola.html">Correspondence table</a>.</li></ul>
+<h2 id="evidence">Evidence</h2>
+<ul><li><a href="../reviews/R23_review.html">R23 review</a>, original lines 61–67 — Seven steps rederived, each marked correct. Only the numerical size bound of v3 Lemma 3.4, at its stated inequalities; use with its hand exposition and not as approval of P017.</li></ul>
+<p>Review records · <a href="../reviews/R23_review.html">R23 review</a></p>
+<h2 id="lean-declarations">Lean declarations</h2>
+<ul><li><code>Formalism.LFunctionChainParameters.ThickSetMeanBounds.proposition_size_bound</code>  <br><a href="https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean#L507-L592"><code>LipschitzWeightAndMinimum.lean</code></a>, lines 507–592 · 180 dominated lines · SHA-256 <code>e573a01b9236</code>.</li></ul>
+<p><a href="D563.yaml">Machine record and full declaration hashes</a> · <a href="../lookup/declarations.html">Declaration lookup</a></p>
+<h2 id="reading-prerequisites">Reading prerequisites</h2>
+<p>Background · Power inequalities · Optimization of error terms.</p>
+<p>No prior atlas unit is specified.</p>
+<h2 id="open-questions">Open questions</h2>
+<p>None recorded.</p>
+<h2 id="graph-connections">Graph connections</h2>
+<p>Arrows may connect either a unit’s main declaration or an indexed member.</p>
+<p><strong>Uses</strong> · No recorded edge.</p>
+<p><strong>Used by</strong> · <a href="B09.html">B09</a></p>
+<p><a href="../data/unit_graph.json">Declaration witnesses and graph scope</a></p>
+<p>Lookup aliases · <code>size-window bracket absorption</code>, <code>proposition_size_bound</code>, <code>D563 Absorbing the four size-window errors</code></p>
+<p>&lt;!-- Unit metadata SHA-256 733edca61c33f58159195e4e6376c974ea8d4ff7cf645294cdc47b004d22d69a --&gt;</p></main><footer><a href="../help.html">Using the local edition</a></footer></body></html>

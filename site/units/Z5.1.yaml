@@ -1,0 +1,105 @@
+{
+  "id": "Z5.1",
+  "title": "Gram determinant and additive index",
+  "track": {
+    "primary": "arakelov",
+    "secondary": []
+  },
+  "statement": "For a full finitely generated lattice in an invertible frame over a totally complex field of degree $n$, the real realization has rank $nD$. For the free lattice $B$ of a full basis, its height is the product of its complex Gram determinants; for full $L\\supseteq B$, $\\mathrm{ht}(L)[L:B]=\\mathrm{ht}(B)$.",
+  "assumptions": [
+    "source:blueprint_v13"
+  ],
+  "hypothesis_details": [
+    "Use a finitely generated full lattice over a totally complex number field.",
+    "The archimedean frame is invertible."
+  ],
+  "lean": [
+    {
+      "name": "Formalism.HN.height_gram_determinant",
+      "file": "Formalism/HarderNarasimhan/HarderNarasimhanProofs/HtGram.lean",
+      "line0": 411,
+      "line1": 411,
+      "sha256": "b4719d7319fe3fb4a5ed3a51e09747f86942fe8db420342187a15c3e8298bdf3",
+      "dominated": 265,
+      "graph": "allChi",
+      "role": "statement"
+    },
+    {
+      "name": "Formalism.HN.place_lattice_structure",
+      "file": "Formalism/HarderNarasimhan/HarderNarasimhanProofs/DiscreteSpanOfLinIndep.lean",
+      "line0": 269,
+      "line1": 324,
+      "sha256": "39e24cf0474e58f166156f86569b831fb2186f1d1d031010d3c89f269959660c",
+      "dominated": 188,
+      "graph": "allChi",
+      "role": "statement"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/blueprint/Z5.1.tex",
+      "section": "lem:P5-gram-realize",
+      "pages": []
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "lem:P5-gram-realize",
+      "pages": [
+        199,
+        199
+      ],
+      "printed_page": 174,
+      "scope": "First page of this named destination."
+    }
+  ],
+  "status": "Full",
+  "grade": "L0",
+  "reviews": [
+    "reviews/R20_review.md"
+  ],
+  "prerequisites": [
+    "P050"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "Which discriminant, square and place weights appear before and after dualizing? Recover both sides after changing the basis."
+  ],
+  "last_checked": "2026-11-24",
+  "blueprint_members": [
+    "Z5.1"
+  ],
+  "representative": "Formalism.HN.height_gram_determinant",
+  "statement_declarations": [
+    "Formalism.HN.height_gram_determinant",
+    "Formalism.HN.place_lattice_structure"
+  ],
+  "grade_scope": "Named statement declarations with the hypotheses above. Chart supplier records have their own review scopes.",
+  "confirmation_basis": "Minimum across the statement declarations, using registry rows for the blueprint assignments listed here. Reviews of other expositions of a shared declaration are included as context.",
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "slug": "gram-determinant-and-additive-index",
+  "aliases": [
+    "Gram determinant formula",
+    "Z5.1 Gram determinant and additive index"
+  ],
+  "background": [
+    "Minkowski embeddings",
+    "Gram determinants",
+    "Lattice index"
+  ],
+  "hypothesis_source": {
+    "document": "blueprint_v13",
+    "section": "lem:P5-gram-realize",
+    "pages": [
+      199,
+      199
+    ]
+  },
+  "question_sources": [
+    "questions/arakelov.md"
+  ],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "P050": "graph"
+  },
+  "summary": "At full rank over a totally complex field, archimedean Gram determinants compute the height of a free basis lattice. Enlarging that lattice divides its height by the additive index, giving the normalization needed to compare covolumes of full lattices."
+}

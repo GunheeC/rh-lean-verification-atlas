@@ -1,0 +1,112 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "Z1.3.06",
+  "edition_sha256": "614aef214c2a7d99519fbbfb9a16fb305798fbacb8f0197006ead4c024c9e25c",
+  "note_sha256": "ee84d023b636b17d8a62713ba6863b455e8c3443fb87d148b1e485f086cf64db",
+  "statement_sha256": "4559f0402843fcff82fa41097ba313511455584b1e067839293e7a4f5d0faf5f",
+  "sources": [
+    {
+      "path": "notes/blueprint/Z1.3.06.tex",
+      "sha256": "ee84d023b636b17d8a62713ba6863b455e8c3443fb87d148b1e485f086cf64db"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The global hypothesis supplies one six-entry tuple with the four required properties.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "Z1.3.04",
+        "input: ordinary and unramified source"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.KZ.ExistsZetaEulerSystemIwasawaData",
+          "file": "Development/AbelianVarietyTheory/Definitions/Foundations/ZetaElementsUnramifiedOrdinaryOfEulerSystemInert.lean",
+          "line0": 20,
+          "line1": 26
+        }
+      ],
+      "source": "notes/blueprint/Z1.3.06.tex",
+      "anchor": "Fix a prime $\\ell$, an algebraic closure $\\Omega$ of $\\mathbb Q$, a coefficient-field identification $\\iota$, an integer $e\\ge1$ as required by t",
+      "source_lines": [
+        17,
+        27
+      ],
+      "claim_sha256": "58798690abfe16e00d2c6f801eae5d278f84da20e6e00d2936e4fd831137bb49",
+      "passage_sha256": "7db989eb6a2369b68190570496b38f2dac5e6c080a0da48af059d8a9c9105b85",
+      "sha256": "39ce6a9124536bfd247d625aec1a72152953366ed9d144d70584a287069c87c5",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The universal local test on that tuple produces a nonzero inertia coordinate while the original global system and its tame data are retained.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "Z1.3.05"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.KZ.zetaSysU_of_halves2",
+          "file": "Development/AbelianVarietyTheory/Definitions/Foundations/ZetaElementsUnramifiedOrdinaryOfEulerSystemInert.lean",
+          "line0": 36,
+          "line1": 41
+        }
+      ],
+      "source": "notes/blueprint/Z1.3.06.tex",
+      "anchor": "Its local premise quantifies universally over all six entries of precisely this tuple. Apply that premise at these witnesses with the same four p",
+      "source_lines": [
+        17,
+        27
+      ],
+      "claim_sha256": "95f8a47ea75b3e3dd29f1be0eb9c2502b25c1082b67f80549297a2d2e3076878",
+      "passage_sha256": "7db989eb6a2369b68190570496b38f2dac5e6c080a0da48af059d8a9c9105b85",
+      "sha256": "3ea3fddb3e9a5860f011b1860c9e9474007358b1125aad31be1459ceb6cc4395",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "3e79fc660c2317ecca859788309771f61724129cc5014611321762cab1d716a2",
+      "sources": [
+        {
+          "path": "notes/blueprint/Z1.3.06.tex",
+          "sha256": "36f8a63635ab5307cdf6b90a8eab14b0b47fd16077c831fb939c20cce09a89b9"
+        }
+      ],
+      "steps": {
+        "S1": "09922c169fa54efc2464ece27a4ce071d7abfda7ebe9050c9988b45b1b2f06a1",
+        "S2": "3ea3fddb3e9a5860f011b1860c9e9474007358b1125aad31be1459ceb6cc4395"
+      },
+      "step_texts": {
+        "S1": "The global hypothesis supplies one six-entry tuple with the four required properties.",
+        "S2": "The universal local test on that tuple produces a nonzero inertia coordinate while the original global system and its tame data are retained."
+      }
+    },
+    {
+      "edition_sha256": "52bf28a7a276438764f3e5c390b87dd2cc570d5bc493f73f36b0c2b3dd7e1642",
+      "sources": [
+        {
+          "path": "notes/blueprint/Z1.3.06.tex",
+          "sha256": "36f8a63635ab5307cdf6b90a8eab14b0b47fd16077c831fb939c20cce09a89b9"
+        }
+      ],
+      "statement_sha256": "4559f0402843fcff82fa41097ba313511455584b1e067839293e7a4f5d0faf5f",
+      "steps": {
+        "S1": "39ce6a9124536bfd247d625aec1a72152953366ed9d144d70584a287069c87c5",
+        "S2": "3ea3fddb3e9a5860f011b1860c9e9474007358b1125aad31be1459ceb6cc4395"
+      },
+      "step_texts": {
+        "S1": "The global hypothesis supplies one six-entry tuple with the four required properties.",
+        "S2": "The universal local test on that tuple produces a nonzero inertia coordinate while the original global system and its tame data are retained."
+      },
+      "step_passages": {
+        "S1": "7db989eb6a2369b68190570496b38f2dac5e6c080a0da48af059d8a9c9105b85",
+        "S2": "7db989eb6a2369b68190570496b38f2dac5e6c080a0da48af059d8a9c9105b85"
+      }
+    }
+  ]
+}

@@ -1,0 +1,1214 @@
+{
+  "Z4.4": {
+    "GlobalTheory.T.hermitianColumnChoices_of_formsLevelsClasses": {
+      "round": 11,
+      "proof_label": null,
+      "scope": "",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "GlobalTheory.T.stepZeroHermitianLevel_uniformiser_kills_values_alt": {
+      "round": 11,
+      "proof_label": null,
+      "scope": "",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "GlobalTheory.T.hermitianColumns_generators_baseLattices_functionals": {
+      "round": 11,
+      "proof_label": null,
+      "scope": "",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.Mem.Col2.TC.spaces_in_coordinates": {
+      "round": 11,
+      "proof_label": null,
+      "scope": "",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.T.transportedLattice_localization_free_le_coefficientSpace": {
+      "round": 12,
+      "proof_label": "r12:weyl",
+      "scope": "weyl",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.T.standard_weyl_lattices_fock_dual": {
+      "round": 12,
+      "proof_label": "r12:weyl",
+      "scope": "weyl",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.Mem.Col2.PtExist.exists_modify": {
+      "round": 12,
+      "proof_label": "r12:point",
+      "scope": "point",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "Formalism.L2.Col.decoPtSurj_of": {
+      "round": 12,
+      "proof_label": "r12:point",
+      "scope": "point",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "GlobalTheory.Mem.Col2.PtExist.unimodGenus": {
+      "round": 12,
+      "proof_label": "r12:point",
+      "scope": "point",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "GlobalTheory.Mem.Col2.PtExist.exists_isPtOf_cm": {
+      "round": 12,
+      "proof_label": "r12:point",
+      "scope": "point",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.T.exists_adelicPoint_decoratedLattice_allTwists": {
+      "round": 12,
+      "proof_label": "r12:point",
+      "scope": "point",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.T.exists_hermitian_data_carT_of_std": {
+      "round": 12,
+      "proof_label": "r12:s4",
+      "scope": "4",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "GlobalTheory.T.decoratedPointClasses_bijective_doubleCosets": {
+      "round": 12,
+      "proof_label": "r12:s9",
+      "scope": "9",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.Mem.Col2.mem_locW_hlat_iff": {
+      "round": 12,
+      "proof_label": "r12:s9",
+      "scope": "9",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.T.exists_K1_point_congruent": {
+      "round": 12,
+      "proof_label": "r12:s9",
+      "scope": "9",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.T.mem_framedLevel_iff_two_adelic_points": {
+      "round": 12,
+      "proof_label": "r12:s9",
+      "scope": "9",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "GlobalTheory.Mem.Col2.TwP.til_tw": {
+      "round": 12,
+      "proof_label": "r12:s9",
+      "scope": "9",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "GlobalTheory.T.tuple_integralForms_row_place_by_place": {
+      "round": 12,
+      "proof_label": "r12:s9",
+      "scope": "9",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "GlobalTheory.T.tuplePrimedSpaceClasses_level_and_comparison": {
+      "round": 12,
+      "proof_label": "r12:s9",
+      "scope": "9",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "GlobalTheory.T.tupleLayerCompatibilities_of_X_prime": {
+      "round": 12,
+      "proof_label": "r12:s9",
+      "scope": "9",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "GlobalTheory.Mem.Col2.TC.StepZero.lvSame_zero": {
+      "round": 12,
+      "proof_label": "r12:s8",
+      "scope": "8",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "GlobalTheory.Mem.Col2.TC.dn_keeps_chart": {
+      "round": 12,
+      "proof_label": "r12:s8",
+      "scope": "8",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "GlobalTheory.Mem.Col2.TC.exists_level_projections": {
+      "round": 12,
+      "proof_label": "r12:s8",
+      "scope": "8",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.Mem.Col2.TC.dn_level_functional": {
+      "round": 12,
+      "proof_label": "r12:s8",
+      "scope": "8",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "GlobalTheory.Mem.Col2.TC.dn_locP_lat": {
+      "round": 12,
+      "proof_label": "r12:s8",
+      "scope": "8",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "GlobalTheory.Mem.Col2.LevFun.fvTieG": {
+      "round": 12,
+      "proof_label": "r12:s8",
+      "scope": "8",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "GlobalTheory.Mem.Col2.TC.bw_tie": {
+      "round": 12,
+      "proof_label": "r12:s8",
+      "scope": "8",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "GlobalTheory.DnMove.dnNatTieG_cols": {
+      "round": 12,
+      "proof_label": "r12:s8",
+      "scope": "8",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "GlobalTheory.Mem.Col2.UpChart.upNatTie": {
+      "round": 12,
+      "proof_label": "r12:s8",
+      "scope": "8",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "GlobalTheory.T.tupleChains_levelStructure_compatible_at_levelPrime": {
+      "round": 12,
+      "proof_label": "r12:s8",
+      "scope": "8",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "GlobalTheory.Mem.Col2.MemChart.stM_range": {
+      "round": 12,
+      "proof_label": "r12:s1",
+      "scope": "1",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.Mem.Col2.MemChart.cls_bij": {
+      "round": 12,
+      "proof_label": "r12:s1",
+      "scope": "1",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.T.exists_couplingCoset_with_given_reduction": {
+      "round": 12,
+      "proof_label": "r12:s1",
+      "scope": "1",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.T.columnPoint_eq_of_deco_and_cosetReduction": {
+      "round": 12,
+      "proof_label": "r12:s1",
+      "scope": "1",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.Mem.TypePrimes.exists_gLoc_idG_chiTied": {
+      "round": 12,
+      "proof_label": "r12:s1",
+      "scope": "1",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.Mem.Col2.MetricTie.ipV_norm_tie": {
+      "round": 12,
+      "proof_label": "r12:s1",
+      "scope": "1",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "GlobalTheory.Mem.Col2.ChartLevel.chart_gLevH": {
+      "round": 12,
+      "proof_label": "r12:s1",
+      "scope": "1",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.Mem.Col2.TC.til_ties": {
+      "round": 12,
+      "proof_label": "r12:s1",
+      "scope": "1",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.Mem.Col2.DiaChart.dilTied": {
+      "round": 12,
+      "proof_label": "r12:s1",
+      "scope": "1",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "GlobalTheory.Mem.Col2.TC.GLev0.glev_zero": {
+      "round": 12,
+      "proof_label": "r12:s1",
+      "scope": "1",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.Mem.Col2.TC.levels_top_row_sym": {
+      "round": 12,
+      "proof_label": "r12:s1",
+      "scope": "1",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.Mem.Col2.OneLevel.stepBefore_oneLevel": {
+      "round": 12,
+      "proof_label": "r12:s1",
+      "scope": "1",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.Mem.Col2.TC.val_tied": {
+      "round": 12,
+      "proof_label": "r12:s1",
+      "scope": "1",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "GlobalTheory.Mem.Col2.MemChart.exists_charts": {
+      "round": 12,
+      "proof_label": "r12:s1",
+      "scope": "1",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "GlobalTheory.Mem.Col2.TC.clsP_tie": {
+      "round": 12,
+      "proof_label": "r12:s1",
+      "scope": "1",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "GlobalTheory.T.exists_standardFormComparison_symmetricLevel_members": {
+      "round": 12,
+      "proof_label": "r12:s1",
+      "scope": "1",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "GlobalTheory.T.exists_unitaryAdelic_twist_diagonal_at_primes": {
+      "round": 12,
+      "proof_label": "r12:s7",
+      "scope": "7",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.T.exists_unitaryAdelic_lift_typePrime_reductions": {
+      "round": 12,
+      "proof_label": "r12:s7",
+      "scope": "7",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.T.exists_reference_class_matching_coupling_coset": {
+      "round": 12,
+      "proof_label": "r12:s7",
+      "scope": "7",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.T.exists_conj_referenceChartIndex": {
+      "round": 12,
+      "proof_label": "r12:s7",
+      "scope": "7",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "GlobalTheory.T.exists_levelJ_character_eq_member_off_places": {
+      "round": 12,
+      "proof_label": "r12:s7",
+      "scope": "7",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.Mem.Col2.FinAtQ.chartLoc_finiteIndex": {
+      "round": 12,
+      "proof_label": "r12:s7",
+      "scope": "7",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.T.pointOverX_has_adelicPoint_blockExtend_mul": {
+      "round": 12,
+      "proof_label": "r12:s7",
+      "scope": "7",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.T.furtherPlace_penultimateChart_character_inverseValue": {
+      "round": 12,
+      "proof_label": "r12:s7",
+      "scope": "7",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "GlobalTheory.T.exists_character_allCharts_furtherPlaces": {
+      "round": 12,
+      "proof_label": "r12:s7",
+      "scope": "7",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.T.chart_lastStep_twistBasePoint": {
+      "round": 12,
+      "proof_label": "r12:s7",
+      "scope": "7",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "GlobalTheory.T.furtherPlaces_group_contains_chart_levels": {
+      "round": 12,
+      "proof_label": "r12:s7",
+      "scope": "7",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.Mem.Col2.ChExM.chart_of": {
+      "round": 12,
+      "proof_label": "r12:s7",
+      "scope": "7",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "GlobalTheory.Mem.Col2.ChExM.exists_charts": {
+      "round": 12,
+      "proof_label": "r12:s7",
+      "scope": "7",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "GlobalTheory.T.exists_penultimateLevel_couplingCosets": {
+      "round": 12,
+      "proof_label": "r12:s7",
+      "scope": "7",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "GlobalTheory.T.trueColumnChoice_exists_chainData_with_basePoints": {
+      "round": 12,
+      "proof_label": "r12:s7",
+      "scope": "7",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "GlobalTheory.Mem.Col2.TC.colsTiedSym_std": {
+      "round": 12,
+      "proof_label": "r12:assembly",
+      "scope": "",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.Mem.Col2.TC.colsTwPTiedS_std": {
+      "round": 12,
+      "proof_label": "r12:assembly",
+      "scope": "",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.TransDual.nabDelDual": {
+      "round": 13,
+      "proof_label": "r13:weyl-dual",
+      "scope": "transported Weyl duality",
+      "review": null,
+      "proof_recheck": "confirmed"
+    },
+    "GlobalTheory.Mem.Col2.TC.ChTw.charts_tuple_trivQ": {
+      "round": 13,
+      "proof_label": "r13:interior-charts",
+      "scope": "interior chart equivalences away from twist places",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": "confirmed"
+    },
+    "GlobalTheory.Mem.Col2.TC.twPack_ex": {
+      "round": 13,
+      "proof_label": "r13:stage-pack",
+      "scope": "a common set of middle and top charts",
+      "review": "CONFIRMED",
+      "proof_recheck": "confirmed"
+    },
+    "GlobalTheory.Mem.Col2.TC.tw_chains": {
+      "round": 13,
+      "proof_label": "r13:stage-pack",
+      "scope": "twisted chain with its standardness data",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": "confirmed"
+    },
+    "GlobalTheory.Mem.Col2.TwAtStd.twAtT_exists": {
+      "round": 13,
+      "proof_label": "r13:stage-pack",
+      "scope": "the level-prime datum at step zero",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": "confirmed"
+    },
+    "GlobalTheory.Mem.Col2.TC.charts_funKilled": {
+      "round": 13,
+      "proof_label": "r12:s1",
+      "scope": "replacement of the level functional on each chart",
+      "review": "CONFIRMED",
+      "proof_recheck": "confirmed"
+    },
+    "GlobalTheory.Mem.Col2.PerConj.period_conj": {
+      "round": 13,
+      "proof_label": "r13:s9-values",
+      "scope": "conjugate-linear period comparison",
+      "review": "CONFIRMED",
+      "proof_recheck": "confirmed"
+    },
+    "GlobalTheory.T.localMove_classRep_iff_localConditions": {
+      "round": 13,
+      "proof_label": "r13:interior-charts",
+      "scope": "two-way test of moves by local conditions",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": "confirmed"
+    },
+    "GlobalTheory.Mem.FormSym.readsK_one": {
+      "round": 13,
+      "proof_label": "r12:s1",
+      "scope": "a singleton chart reading at an endpoint",
+      "review": "CONFIRMED",
+      "proof_recheck": "confirmed"
+    },
+    "GlobalTheory.T.nonempty_classMap_above_lastStep": {
+      "round": 13,
+      "proof_label": "r13:stage-pack",
+      "scope": "the class map beyond the final step",
+      "review": "CONFIRMED",
+      "proof_recheck": "confirmed"
+    }
+  },
+  "Z4.2.13": {
+    "Formalism.L2.Ker.Base.latAll": {
+      "round": 14,
+      "proof_label": "r14:lat-indices",
+      "scope": "Self-duality and semicharacter at every admitted pair and both relative indices between pairs.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.hermitian_form_integral_values": {
+      "round": 14,
+      "proof_label": "r14:lat-integral",
+      "scope": "Imaginary integrality and the parity of the scaled real part on the period lattice.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.hermitian_pairing_integral": {
+      "round": 14,
+      "proof_label": "r14:lat-integral",
+      "scope": "The Hermitian trace of two inverse-different Hom lattice elements is integral.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.arithmetic_hermitian_form": {
+      "round": 14,
+      "proof_label": "r14:lat-integral",
+      "scope": "Arithmetic form of the pairing after division by the planar period area.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.AR.div_okc": {
+      "round": 14,
+      "proof_label": "r14:lat-integral",
+      "scope": "The ideal covolume divides the product of paired period coordinates in the quadratic order.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.curve_lattice_self_dual": {
+      "round": 14,
+      "proof_label": "r14:lat-dual",
+      "scope": "Membership in the planar lattice is determined by its area-normalized alternating dual.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.SD.coord": {
+      "round": 14,
+      "proof_label": "r14:lat-dual",
+      "scope": "Trace and independence of embeddings recover an algebraic coordinate from integral tests.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.SD.alg_step": {
+      "round": 14,
+      "proof_label": "r14:lat-dual",
+      "scope": "Rank-one Hom tests and invertibility of the two ideals recover the algebraic lattice.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.SelfDualRec_of_curve": {
+      "round": 14,
+      "proof_label": "r14:lat-dual",
+      "scope": "All elements integral against the imaginary pairing lie in the embedded lattice.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.self_dual_lattice": {
+      "round": 14,
+      "proof_label": "r14:lat-dual",
+      "scope": "Combining integrality and reconstruction identifies the imaginary dual with the given lattice.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.semiChar_of_HfInt": {
+      "round": 14,
+      "proof_label": "r14:lat-indices",
+      "scope": "Polarizing the integral quadratic form gives the theta semicharacter.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.La_index_finite": {
+      "round": 14,
+      "proof_label": "r14:lat-indices",
+      "scope": "Clearing upper and lower denominators makes the intersection quotient finite.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.La_index_ne_zero": {
+      "round": 14,
+      "proof_label": "r14:lat-indices",
+      "scope": "Finiteness of each intersection quotient gives positive relative indices.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "Formalism.L2.Ker.Base.thMoved_ne_zero": {
+      "round": 14,
+      "proof_label": "r14:vec-transport",
+      "scope": "Both normalized intertwiners preserve nonvanishing for these admitted lattices.",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "Formalism.L2.Ker.Base.vec_mem_ne": {
+      "round": 14,
+      "proof_label": "r14:vec-transport",
+      "scope": "The prescribed character normalization gives a nonzero theta vector for every admitted pair.",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "GlobalTheory.MomT.FromComb.chiFac_mem": {
+      "round": 14,
+      "proof_label": "r14:vec-transport",
+      "scope": "The two relative determinant character factors have algebraic product.",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "GlobalTheory.TrueTheta.exists_field": {
+      "round": 14,
+      "proof_label": "r14:vec-fixed",
+      "scope": "A finite set of algebraic generators determines the fixed field used for all jets.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.TrueTheta.exists_coef_field": {
+      "round": 14,
+      "proof_label": "r14:vec-fixed",
+      "scope": "One finite coefficient field contains the jets of the scalar multiple of the directly transported vacuum.",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "GlobalTheory.ColNorms.familyVectors": {
+      "round": 14,
+      "proof_label": "r14:vec-descent",
+      "scope": "The two-transport natural family is nonzero in its theta space and its coefficients lie in one number field per admitted pair.",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "GlobalTheory.ExponentsFinite.yFinite": {
+      "round": 14,
+      "proof_label": "r14:vec",
+      "scope": "A single pair of cleared denominators bounds every split prime of nonzero relative determinant exponent.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.TrueTheta.exists_chi": {
+      "round": 14,
+      "proof_label": "r14:eq-reference",
+      "scope": "Descend the adelic determinant character through integral units to norm-one determinant ideals.",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "GlobalTheory.TrueTheta.exists_family_of_curve": {
+      "round": 14,
+      "proof_label": "r14:eq-reference",
+      "scope": "Construct the normalized reference family and its three move laws from the selected Weil operator, vacuum and conjugation inputs.",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "GlobalTheory.WeilInter.om_iop": {
+      "round": 14,
+      "proof_label": "r14:eq-transport",
+      "scope": "On finite period quotients, compare the two index factors and the semicharacter-weighted translated summands.",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "GlobalTheory.NegOneNorm.exists_norm_eq_neg_one": {
+      "round": 14,
+      "proof_label": "r14:eq-rational",
+      "scope": "Construct an integral norm minus one modulo the working modulus using split residue pairs and odd-prime lifting.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.NormResidue.exists_mul_involution_add_one_mem_pow": {
+      "round": 14,
+      "proof_label": "r14:eq-rational",
+      "scope": "Lift a solution of the norm congruence by one prime power using the residue half and its conjugate.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.RatEqui.exists_root": {
+      "round": 14,
+      "proof_label": "r14:eq-rational",
+      "scope": "Produce a rational Hilbert-90 determinant root, including determinant minus one.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.RatEqui.exists_factor": {
+      "round": 14,
+      "proof_label": "r14:eq-rational",
+      "scope": "Factor a rational unitary matrix into two rational factors whose difference from the identity is invertible.",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "GlobalTheory.RatEqui.oddEq_of_even": {
+      "round": 14,
+      "proof_label": "r14:eq-rational",
+      "scope": "Combine the two rational pullbacks on finite-level theta vectors with the signed infinity weights.",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "GlobalTheory.Mem.NatEqui.chi_smulLat": {
+      "round": 14,
+      "proof_label": "r14:eq-normalize",
+      "scope": "Compare determinant-character values on a rational unitary image.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.Mem.NatEqui.chiFac_ne_zero": {
+      "round": 14,
+      "proof_label": "r14:eq-normalize",
+      "scope": "Invert the character factors using the reversed relative determinant.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.Mem.NatEqui.chiFac_right": {
+      "round": 14,
+      "proof_label": "r14:eq-normalize",
+      "scope": "Compute the target-lattice change of character factor with exponent minus half the source rank.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.Mem.NatEqui.chiFac_left": {
+      "round": 14,
+      "proof_label": "r14:eq-normalize",
+      "scope": "Compute the source-lattice change of character factor with exponent half the target rank.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.Mem.NatEqui.eqP": {
+      "round": 14,
+      "proof_label": "r14:equivariance",
+      "scope": "Transfer both lattice changes and simultaneous rational covariance to the specified normalized family.",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.base_linkage_nonempty": {
+      "round": 14,
+      "proof_label": "r14:period",
+      "scope": "The lattice of an independent period pair cannot be the zero subgroup.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.ThetaCoordLine.exists_eq_smul": {
+      "round": 14,
+      "proof_label": "r14:line",
+      "scope": "Reduction to a principal alternating form and a single determining Fourier coefficient for degree one.",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "GlobalTheory.TieBase.base_data": {
+      "round": 14,
+      "proof_label": "r14:base-assembly",
+      "scope": "Four assertions for the prescribed base and character on one tied kernel entry, with separate pairwise and fixed-rank scalar comparisons.",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "GlobalTheory.NormGauss.sum_norm_neg": {
+      "round": 14,
+      "proof_label": "r14:weil-sign",
+      "scope": "Evaluate the finite-field norm sum of an additive character nontrivial on traces by counting fibres over the fixed field.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.FinWeil.exists_weil": {
+      "round": 15,
+      "proof_label": "r15:weil",
+      "scope": "Construct the adelic intertwining action on translates of an arbitrary prescribed nonzero standard theta vector and verify the eight operator laws, including the crossed split characters and signs +1.",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "GlobalTheory.InertSign.vacuum_inert": {
+      "round": 15,
+      "proof_label": "r15:vacuum-inert",
+      "scope": "Compute the rank-parity scalar of one inert neighbour triangle and propagate it by length induction to the source and target moves for any ranks of even product.",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "GlobalTheory.VacuumExact.vacuum_exact": {
+      "round": 15,
+      "proof_label": "r15:vacuum-exact",
+      "scope": "Factor the normalized vacuum scalar over complementary supports and evaluate the crossed determinant characters for any given operator at separately even ranks.",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "GlobalTheory.ThLoc.algTAll": {
+      "round": 15,
+      "proof_label": "r15:jets",
+      "scope": "Deduce every translated normalized jet of the prescribed natural vector by its four-copy standard tensor, finite moves and algebraic character factor; distinguish the wider padded-frame translation theorem.",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    }
+  },
+  "Z4.2.04": {
+    "Formalism.L2.KerInert.RepComb.lamK_eq": {
+      "round": 14,
+      "proof_label": "r14:kernel-lattice",
+      "scope": "Algebraic and analytic period lattices agree for the same pair.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "Formalism.L2.KerInert.RepComb.laFacts_of_adm": {
+      "round": 14,
+      "proof_label": "r14:kernel-lattice",
+      "scope": "Transport self-duality and the semicharacter to the Fourier model.",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "Formalism.L2.Ker.lattice_integral_of_facts": {
+      "round": 14,
+      "proof_label": "r14:kernel-lattice",
+      "scope": "The alternating form and scaled diagonal are integral on the period lattice.",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "Formalism.L2.Ker.finite_index_of_fg": {
+      "round": 14,
+      "proof_label": "r14:kernel-finite",
+      "scope": "The three groups of representatives for the chosen pair are finite.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "Formalism.L2.Ker.twist_lattice_kernel": {
+      "round": 14,
+      "proof_label": "r14:kernel-finite",
+      "scope": "Volume-one Heisenberg expansion, including its Fourier denominator, phases, and integral weights.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "Formalism.L2.Ker.theta_coset_kernel": {
+      "round": 14,
+      "proof_label": "r14:kernel-finite",
+      "scope": "Specialize to the three actual coset spaces and construct shifts killed by the level.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.kerTh_entire_algCoef": {
+      "round": 14,
+      "proof_label": "r14:kernel-jets",
+      "scope": "Every normalized Taylor coefficient of the actual complex kernel is algebraic and the kernel is entire.",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "GlobalTheory.pairOK_allSites": {
+      "round": 14,
+      "proof_label": "r14:site-pair",
+      "scope": "Assembly of the site Pair predicate under the dictionary; earlier frame, scalar and congruence suppliers are reused.",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "Formalism.L2.GlobalTheoryTheory.Comp.glob_one": {
+      "round": 15,
+      "proof_label": "r15:site-glob",
+      "scope": "Intersecting the integral adelic span of a full lattice with rational vectors recovers that lattice.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "Formalism.L2.GlobalTheoryTheory.Comp.mem_hat_glob": {
+      "round": 15,
+      "proof_label": "r15:site-glob",
+      "scope": "Congruence approximation recovers the entire moved integral span from its rational vectors.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.isLat_dl_of_isOrthCo": {
+      "round": 15,
+      "proof_label": "r15:site-dual",
+      "scope": "Orthogonal coordinates and denominator bounds show that the Hermitian dual is a full finite lattice.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "Formalism.L2.GlobalTheoryTheory.Comp.glob_dl": {
+      "round": 15,
+      "proof_label": "r15:site-dual",
+      "scope": "Unitary adelic movement commutes with the Hermitian dual by integral intersection and inverse transport.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "Formalism.L2.GlobalTheoryTheory.Comp.glob_companion": {
+      "round": 15,
+      "proof_label": "r15:site-dual",
+      "scope": "Adelic transport commutes with addition of the principal-ideal multiple of the dual for a nonzero scalar.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.OrthSelfDual.isLat_and_dl_eq_of_isSDLat_mvL": {
+      "round": 15,
+      "proof_label": "r15:site-standard",
+      "scope": "Pull back the standard-form self-dual lattice condition through the specified orthogonal coordinates.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.SDCompan.isSD_toStd": {
+      "round": 15,
+      "proof_label": "r15:site-standard",
+      "scope": "The chosen orthogonal coordinates carry a full Hermitian self-dual lattice to a standard-form self-dual lattice.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.SDCompan.isSDLat_latK": {
+      "round": 15,
+      "proof_label": "r15:site-standard",
+      "scope": "The companion of a moved base lattice stays full and self-dual in the canonical coordinates, including the zero-scalar case.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.KerSelfDual.isSDLat_latK_of_stdL": {
+      "round": 15,
+      "proof_label": "r15:site-standard",
+      "scope": "Use the identity-chart equality to identify the original companion with the pullback of the standard lattice, then transport.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.KerSiteSelfDual.even_and_isSDLat_kerN": {
+      "round": 15,
+      "proof_label": "r15:site-standard",
+      "scope": "Use the dictionary rank and dependent lattice equalities to give even rank and self-duality for each valid tuple in the actual site.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.TwV.ph_tensInt_onto": {
+      "round": 15,
+      "proof_label": "r15:span-place",
+      "scope": "First split projection of the integral tensor order is exactly the local valuation ring.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.TwV.locSp_eq_image": {
+      "round": 15,
+      "proof_label": "r15:span-place",
+      "scope": "The integral span of the embedded lattice equals the first projection of its local tensor span.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.LocCarry.mem_latS_latAd_iff": {
+      "round": 15,
+      "proof_label": "r15:span-place",
+      "scope": "Integral adelic approximation and projection recover the localization of the transported global lattice.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.TwV.latAdLoc_of": {
+      "round": 15,
+      "proof_label": "r15:span-place",
+      "scope": "The first split local span of a transported lattice is the first local matrix acting on the original span.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.smul_dualSet_latAd_mem": {
+      "round": 15,
+      "proof_label": "r15:span-frame",
+      "scope": "A unitary transport preserves the level bound on the Hermitian dual.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.TwV.CompSp.locSp_compan_eq": {
+      "round": 15,
+      "proof_label": "r15:span-frame",
+      "scope": "After a unit level is inverted, the companion has exactly the same local span.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.TwV.FacQPt.facQ_isPt": {
+      "round": 15,
+      "proof_label": "r15:span-frame",
+      "scope": "At a represented point the first split matrix is conjugation of the given tuple matrix by the chart basis.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.TwV.SpanPt.locSp_latAd_isPt": {
+      "round": 15,
+      "proof_label": "r15:span-frame",
+      "scope": "Transported columns of the base chart span are the columns of the product B_v g_v.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.TwV.KerSp.locSp_latK_isPt": {
+      "round": 15,
+      "proof_label": "r15:span-frame",
+      "scope": "Passing through the companion and orthogonal coordinates produces the specified local kernel columns.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.TwV.Joint.basesAt_span": {
+      "round": 15,
+      "proof_label": "r15:span-steps",
+      "scope": "The selected tuple basis has the local tuple lattice as its column span.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.TwV.locSp_reindex": {
+      "round": 15,
+      "proof_label": "r15:span-steps",
+      "scope": "Transporting ranks and lattices converts the column product into the frame image of the local span.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.TwV.Joint.locSp_kerN_zero": {
+      "round": 15,
+      "proof_label": "r15:span-steps",
+      "scope": "The initial chart, unit level and dictionary put the actual step-zero kernel in these frame coordinates.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.TwV.Joint.locSp_kerN_succ": {
+      "round": 15,
+      "proof_label": "r15:span-steps",
+      "scope": "The successor chart, base and embedding identifications transport the kernel span to the selected component frame.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.TwV.moved_pair_datum_eq_adelic_datum_alt": {
+      "round": 15,
+      "proof_label": "r15:datum",
+      "scope": "The rank-checked branch evaluates the adelic datum after inverse frame changes cancel.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.TwU.datLoc_homRe": {
+      "round": 15,
+      "proof_label": "r15:datum",
+      "scope": "Transport through the rank equalities preserves congruences for the two identified lattices.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.TwU.xiM_datLoc": {
+      "round": 15,
+      "proof_label": "r15:datum",
+      "scope": "The actual moved datum satisfies the reader-level period congruence on the same adjacent kernel lattices.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "Formalism.L2.Ker.kThetaVector": {
+      "round": 16,
+      "proof_label": "r16:ktheta",
+      "scope": "For any StdData and nonzero scalar the normalized four-block kernel is the tensor of a one-block holomorphic vector, unique up to a fourth root of unity, which spans the theta line.",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "Formalism.L2.Th1.H.product_theta_mem": {
+      "round": 16,
+      "proof_label": "r16:ktheta-line",
+      "scope": "The product of the normalized half-period translates is a standard theta vector with value one at the origin.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "Formalism.L2.Th1.H.ThStd_proof": {
+      "round": 16,
+      "proof_label": "r16:ktheta-line",
+      "scope": "Comparing the one-variable sigma quotient on the torus and separating the coordinates yields the evaluation-at-zero description of every standard product theta vector.",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "Formalism.L2.Th1.H.InterInv_of": {
+      "round": 16,
+      "proof_label": "r16:ktheta-transport",
+      "scope": "The normalized finite intertwiners are mutual inverses on lattice-fixed functions by character orthogonality and self-duality of the two lattices.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "Formalism.L2.Th1.H.FourthRoot_of": {
+      "round": 16,
+      "proof_label": "r16:ktheta-root",
+      "scope": "Restrict at a nonzero four-block value, normalize its tensor by one scalar fourth root, and recover both the theta line and fourth-root uniqueness.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "Formalism.L2.Th1.H.ThetaVector_of": {
+      "round": 16,
+      "proof_label": "r16:ktheta",
+      "scope": "Transport the standard line onto the specified image lattice and pull it back by the given isometry, then extract and compare one-block roots.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.SO.stdOK": {
+      "round": 16,
+      "proof_label": "r16:stdok",
+      "scope": "All ten standard-data fields at the given base through the known LatAll projection and the base isometry.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.FourthRootStd.stdOK": {
+      "round": 16,
+      "proof_label": "r16:stdok",
+      "scope": "The same ten fields through the direct period dual test, explicit isometry and two denominator bounds.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "Formalism.L2.Th1.H.quadMultiplierSemicharacter": {
+      "round": 16,
+      "proof_label": "r16:std-char",
+      "scope": "Integrality, polarization congruence, signs and cocycle for the quadratic multiplier on a stable integral lattice for every odd parameter.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.SC.char_eq": {
+      "round": 16,
+      "proof_label": "r16:std-char",
+      "scope": "Identify the planar multiplier on two generators modulo twice the period lattice.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.FourthRootStd.span_range_emb4_eq_top": {
+      "round": 16,
+      "proof_label": "r16:std-isom",
+      "scope": "Full complex span of all four embedding blocks by the discriminant matrix of an integral basis.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "Formalism.L2.Ker.Base.isomOK": {
+      "round": 16,
+      "proof_label": "r16:std-isom",
+      "scope": "Transport the embedded trace identity to all complex vectors by double sesquilinearity.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "Formalism.L2.Ker.Base.lat0OK": {
+      "round": 16,
+      "proof_label": "r16:std-dual",
+      "scope": "Identify every entry of the standard pair period lattice at arbitrary ranks by integral elementary matrices.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.SO.up": {
+      "round": 16,
+      "proof_label": "r16:std-indices",
+      "scope": "A single positive integer clears the forward lattice image by integrality on an integral basis.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.SO.down": {
+      "round": 16,
+      "proof_label": "r16:std-indices",
+      "scope": "Integral multiples of inverse images of the standard coordinate basis yield the reverse inclusion.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    }
+  },
+  "Z4.3": {
+    "Formalism.L2.Ker.push_opU": {
+      "round": 14,
+      "proof_label": "r14:comb-seam",
+      "scope": "Reindexing a Heisenberg translate through the seam preserves its two Hermitian multipliers.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "Formalism.L2.Ker.reading_is_kernel": {
+      "round": 14,
+      "proof_label": "r14:comb-seam",
+      "scope": "Transport the finite complex kernel, its coefficients, and torsion into the reader on its stated step hypotheses.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "Formalism.L2.Ker.taylor_sum": {
+      "round": 14,
+      "proof_label": "r14:comb-pseries",
+      "scope": "Normalized Taylor derivatives of a finite scalar combination agree coefficientwise with the combination of derivatives.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "Formalism.L2.Ker.transcendence_algebraic_eigen": {
+      "round": 14,
+      "proof_label": "r14:comb-pseries",
+      "scope": "The moved theta is smooth and its translated Taylor coefficients satisfy the supplied algebraicity law.",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "Formalism.L2.Ker.kernel_combination_form": {
+      "round": 14,
+      "proof_label": "r14:comb-pseries",
+      "scope": "Read a complex kernel as a p-adic finite series combination using the original lattice pair at every summand.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "Formalism.L2.Ker.first_kernel_law_reading": {
+      "round": 14,
+      "proof_label": "r14:comb-pseries",
+      "scope": "Compose the reader and p-series implications for an admitted pair at a prime outside its bad set.",
+      "review": "CONFIRMED",
+      "proof_recheck": null
+    },
+    "GlobalTheory.Ggeo.KerComb.comb_of_tied": {
+      "round": 14,
+      "proof_label": "r14:comb-tied",
+      "scope": "The selected tied class pair is admitted and its p-series is a combination, under AlgTAll and t.Hyp.",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "GlobalTheory.RatEqui.isPull_row": {
+      "round": 15,
+      "proof_label": "r15:rational-weights",
+      "scope": "The row Weil scalar at every permitted determinant weight, extended from its standard theta vector to all levels and to movers with eigenvalue one.",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    },
+    "GlobalTheory.RatEqui.isPull_col": {
+      "round": 15,
+      "proof_label": "r15:rational-weights",
+      "scope": "The column Weil scalar at every permitted determinant weight, with the conjugate-transpose action and opposite half-rank shift.",
+      "review": "CONFIRMED WITH GAPS",
+      "proof_recheck": null
+    }
+  }
+}

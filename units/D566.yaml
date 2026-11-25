@@ -1,0 +1,76 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D566",
+  "title": "The equivalent clauses of a size window",
+  "track": {
+    "primary": "analytic",
+    "secondary": []
+  },
+  "statement": "SizeWindows is equivalent to RestSize together with the bound Err \\ensuremath{\\le} x\\textasciicircum{}(C·epsilon) times the error bracket, the two lower bounds x\\ensuremath{\\ge}3 and x\\textasciicircum{}(3epsilon/8)\\ensuremath{\\ge}26, and the remaining sign, count and scale inequalities (including m \\ensuremath{\\le} x\\textasciicircum{}(1/2+epsilon/2) and xm \\ensuremath{\\le} k).\n\\[\n\\mathrm{SizeWindows}\\ \\Longleftrightarrow\\ \\mathrm{RestSize}\\wedge \\mathrm{Err}\\le x^{C\\varepsilon}\\mathrm{Br}\\wedge x\\ge3\\wedge x^{3\\varepsilon/8}\\ge26\\wedge \\varepsilon>0\\wedge C\\ge0\\wedge n>0\\wedge b>0\\wedge a_E\\ge0\\wedge n_{T,2}\\le n\\wedge m\\le x^{1/2+\\varepsilon/2}\\wedge xm\\le k.\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Use real scale and error parameters and natural group, test-set and rank counts. The two sides compare conditions on the same tuple."
+  ],
+  "lean": [
+    {
+      "name": "Formalism.LFunctionChainParameters.LChain.size_windows_split",
+      "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/PChain.lean",
+      "line0": 23,
+      "line1": 26,
+      "sha256": "2aaff78a437c0cd3c75ef46952e15a96fbe1f816f8ef98897a6df3ba39d46279",
+      "dominated": 10,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "G.600 (decomp:D566)",
+      "pages": [
+        307,
+        307
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D566.tex",
+      "section": "decomp:D566",
+      "pages": []
+    }
+  ],
+  "status": "Statement only",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [],
+  "paper_id": "D566",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "the-equivalent-clauses-of-a-size-window",
+  "aliases": [
+    "size_windows_split",
+    "D566 The equivalent clauses of a size window"
+  ],
+  "background": [
+    "Real power estimates",
+    "Error budgets"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.600 (decomp:D566)",
+    "pages": [
+      307,
+      307
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {}
+}

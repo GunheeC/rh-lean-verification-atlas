@@ -1,0 +1,155 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "D230",
+  "edition_sha256": "d2a99a6d2e88f4325290ac44176e35585d6cf918eeaa9d39fce44a79d7050944",
+  "note_sha256": "342a40b436aede18de01101f0f74c381590a77bbe9fe65f9228dc44a5267cffc",
+  "statement_sha256": "2130280fde3ec9401902fce162e7663ee99fc6baa9ec5f43f82615bfa7c25c79",
+  "sources": [
+    {
+      "path": "notes/units/D230_round4.md",
+      "sha256": "342a40b436aede18de01101f0f74c381590a77bbe9fe65f9228dc44a5267cffc"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The sought equality identifies the comparison image of the fixed crystalline element with the de Rham image of a scalar in the maximal unramified part.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: period comparison embeddings"
+      ],
+      "lean": [
+        {
+          "name": "GroundTheory.PAdicHodge.ACris.bCris_fixed_mem_maxUnramified",
+          "file": "GroundTheory/PAdicHodge/FontaineLemmaInvariants.lean",
+          "line0": 420,
+          "line1": 426
+        },
+        {
+          "name": "GroundTheory.PAdicHodge.ACris.bCrisPlus_fixed",
+          "file": "GroundTheory/PAdicHodge/BCrisPlusInvariants.lean",
+          "line0": 340,
+          "line1": 344
+        }
+      ],
+      "source": "notes/units/D230_round4.md",
+      "anchor": "State the equality in its target field",
+      "source_lines": [
+        13,
+        13
+      ],
+      "claim_sha256": "69ce533680072fa8732eb5cf4549122addf9df4707250711798a808c82c98afc",
+      "passage_sha256": "38c48b9bbd0eff5cd90898b2770e94312bd34efa6c9487591ba1bc84e0304ee3",
+      "sha256": "c6c1dcbde3745047337aa14034dc86d881abcbaa2fc7b26b605776b80a0d2e10",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The localized fixed period has a positive crystalline representative fixed by the whole Galois subgroup.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: Frobenius-iterate and positive-ring lifting theorems"
+      ],
+      "lean": [
+        {
+          "name": "GroundTheory.PAdicHodge.ACris.exists_bCrisPlus_fixed_eq",
+          "file": "GroundTheory/PAdicHodge/FontaineLemmaInvariants.lean",
+          "line0": 394,
+          "line1": 400
+        },
+        {
+          "name": "GroundTheory.PAdicHodge.ACris.exists_iterate_phiB_eq",
+          "file": "GroundTheory/PAdicHodge/FontaineLemmaInvariants.lean",
+          "line0": 255,
+          "line1": 264
+        },
+        {
+          "name": "GroundTheory.PAdicHodge.ACris.exists_bCrisPlus_fixed_eq_of_iterate",
+          "file": "GroundTheory/PAdicHodge/FontaineLemmaInvariants.lean",
+          "line0": 360,
+          "line1": 389
+        }
+      ],
+      "source": "notes/units/D230_round4.md",
+      "anchor": "Lift the invariant before applying the positive-ring theorem",
+      "source_lines": [
+        17,
+        17
+      ],
+      "claim_sha256": "cd40fab4d2550ca70d4d948e6da4c1bcc058f4e11178be3b5ef5c138cbb50797",
+      "passage_sha256": "220a559da113860c2650d868139e75db08f5e6fcc45684a54d73dc7fe40f57fc",
+      "sha256": "2122178e0137ac99da7a7d92835338b20a274d3f490559815e49d1ef6d0f294a",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The positive representative yields an unramified scalar, and compatibility of the two embeddings gives the required equality for the original element.",
+      "kind": "assembly",
+      "uses": [
+        "S2",
+        "D203",
+        "input: positive crystalline scalar criterion"
+      ],
+      "lean": [
+        {
+          "name": "GroundTheory.PAdicHodge.ACris.bCrisPlus_fixed",
+          "file": "GroundTheory/PAdicHodge/BCrisPlusInvariants.lean",
+          "line0": 340,
+          "line1": 344
+        },
+        {
+          "name": "GroundTheory.PAdicHodge.bDeRhamPlus_fixed",
+          "file": "GroundTheory/PAdicHodge/BdRInvariants.lean",
+          "line0": 188,
+          "line1": 192
+        },
+        {
+          "name": "GroundTheory.PAdicHodge.ACris.bCris_fixed_mem_maxUnramified",
+          "file": "GroundTheory/PAdicHodge/FontaineLemmaInvariants.lean",
+          "line0": 420,
+          "line1": 426
+        }
+      ],
+      "source": "notes/units/D230_round4.md",
+      "anchor": "Apply the fixed-element theorem and transport the equality",
+      "source_lines": [
+        21,
+        21
+      ],
+      "claim_sha256": "0aabe30f8f9d80c1a6867cab4c22905d2d6d2a041617bdd2186762229c7cca12",
+      "passage_sha256": "5013e0022fc0a0f6179ab87fb288cb98eb0e4ec081fb4a321f489c62f6d0b8bb",
+      "sha256": "2c34c0d5f2232d76854cac741486a806add2f74442a7b406a15d41e20ae9e9ea",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "98da1ddbdbee9630adf70b1b5af7fdba04cb45cc71a15fb35c0dd6fa93895570",
+      "sources": [
+        {
+          "path": "notes/units/D230_round4.md",
+          "sha256": "d783da5abaa8e13bfe51dd8487427c479d2e017eeb11c5c6830a1398be6ef37d"
+        }
+      ],
+      "statement_sha256": "2130280fde3ec9401902fce162e7663ee99fc6baa9ec5f43f82615bfa7c25c79",
+      "steps": {
+        "S1": "c6c1dcbde3745047337aa14034dc86d881abcbaa2fc7b26b605776b80a0d2e10",
+        "S2": "2122178e0137ac99da7a7d92835338b20a274d3f490559815e49d1ef6d0f294a",
+        "S3": "2c34c0d5f2232d76854cac741486a806add2f74442a7b406a15d41e20ae9e9ea"
+      },
+      "step_texts": {
+        "S1": "The sought equality identifies the comparison image of the fixed crystalline element with the de Rham image of a scalar in the maximal unramified part.",
+        "S2": "The localized fixed period has a positive crystalline representative fixed by the whole Galois subgroup.",
+        "S3": "The positive representative yields an unramified scalar, and compatibility of the two embeddings gives the required equality for the original element."
+      },
+      "step_passages": {
+        "S1": "38c48b9bbd0eff5cd90898b2770e94312bd34efa6c9487591ba1bc84e0304ee3",
+        "S2": "220a559da113860c2650d868139e75db08f5e6fcc45684a54d73dc7fe40f57fc",
+        "S3": "5013e0022fc0a0f6179ab87fb288cb98eb0e4ec081fb4a321f489c62f6d0b8bb"
+      }
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "B05",
+  "edition_sha256": "c2a052ee8aab8bb5d11d683c9fcc339408a7108167bb398e6f32ea886f7a4924",
+  "note_sha256": "ba6e32a69f7e05b5b34878f752145d035f65e5f8fe2ff1f971ef908ce1e8ba70",
+  "statement_sha256": "566690896122591ee45a6846cd8623caf7cbd59c9e69a96cd05d390184888203",
+  "sources": [
+    {
+      "path": "notes/units/B05.tex",
+      "sha256": "ba6e32a69f7e05b5b34878f752145d035f65e5f8fe2ff1f971ef908ce1e8ba70"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The closed-link premise supplies constants that apply throughout the required family tail.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: alternative shape and Green"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Top.shape_closed_link_n_of_green",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopShape.lean",
+          "line0": 33,
+          "line1": 55
+        }
+      ],
+      "source": "notes/units/B05.tex",
+      "anchor": "closed link on $D_3(3,\\mathcal A)$: eventually there are common constants",
+      "source_lines": [
+        14,
+        48
+      ],
+      "claim_sha256": "cbbac522038e89bdebbf2f6cfba4fbecfff02b77c78c8484841b2cf4e7e9321f",
+      "passage_sha256": "f2755fa2d81aa122e4506bf2160f1dc01ca9c97405b8a52b3c82a1b2fcbbd1e2",
+      "sha256": "e5cec05993bbeaf4a48604c26ce18237b5688c09a19c2607a5141d063a5c50d5",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The shape implication returns a family with tied data for every sufficiently large scale.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S1",
+        "input: window hosts and Selmer bounds"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Top.shape_closed_link_n_of_green",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopShape.lean",
+          "line0": 33,
+          "line1": 55
+        }
+      ],
+      "source": "notes/units/B05.tex",
+      "anchor": "concludes that for every $\\lambda>1$ and every request $G$, if hosts exist",
+      "source_lines": [
+        14,
+        48
+      ],
+      "claim_sha256": "06275e218bdd7bad0a88e4de5db11188b985263849ea767c3260bf27dce02a62",
+      "passage_sha256": "f2755fa2d81aa122e4506bf2160f1dc01ca9c97405b8a52b3c82a1b2fcbbd1e2",
+      "sha256": "81ccbf873b4eb8c0c3310471463921144adf69971f6443bd7d073601233b9c3b",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "ae9d6b6bf15480db13d667b35b27c6640eeca887c4ad557f0f1a32fa001dc9df",
+      "sources": [
+        {
+          "path": "notes/units/B05.tex",
+          "sha256": "9b0845c202b0db3b8dfe501cb75730a70e96f334787bf76324fc812d597722ee"
+        }
+      ],
+      "statement_sha256": "566690896122591ee45a6846cd8623caf7cbd59c9e69a96cd05d390184888203",
+      "steps": {
+        "S1": "e5cec05993bbeaf4a48604c26ce18237b5688c09a19c2607a5141d063a5c50d5",
+        "S2": "81ccbf873b4eb8c0c3310471463921144adf69971f6443bd7d073601233b9c3b"
+      },
+      "step_texts": {
+        "S1": "The closed-link premise supplies constants that apply throughout the required family tail.",
+        "S2": "The shape implication returns a family with tied data for every sufficiently large scale."
+      },
+      "step_passages": {
+        "S1": "f2755fa2d81aa122e4506bf2160f1dc01ca9c97405b8a52b3c82a1b2fcbbd1e2",
+        "S2": "f2755fa2d81aa122e4506bf2160f1dc01ca9c97405b8a52b3c82a1b2fcbbd1e2"
+      }
+    }
+  ]
+}

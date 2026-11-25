@@ -1,0 +1,77 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D528",
+  "title": "A single character from the Kato and rigidity inputs",
+  "track": {
+    "primary": "galois",
+    "secondary": []
+  },
+  "statement": "Cohomological control, the three algebraic comparison lemmas, Kato input, two rigidity results, level admissibility and unramified automorphy bound a single finite Selmer length by twice a sum of trace-difference valuations for an admissible finite family.\n\\[\n\\mathrm{OneCharU}_{s}.\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Use the cohomological input, three algebraic comparison lemmas, two-twist Kato input and both adjoint rigidity results.",
+    "Impose level admissibility and the unramified-coefficient automorphy input on the finite family."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.Z.J.oneCharU_of_katoTwoW_rig_admI_automorphy",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/FOneCharU.lean",
+      "line0": 75,
+      "line1": 95,
+      "sha256": "f05a9eae95129beb2f7dbcfd609c61571023578d9e45c08f06dd2596ddb96a8a",
+      "dominated": 8872,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "G.555 (decomp:D528)",
+      "pages": [
+        296,
+        296
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D528.tex",
+      "section": "decomp:D528",
+      "pages": []
+    }
+  ],
+  "status": "Statement only",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [],
+  "paper_id": "D528",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "a-single-character-from-the-kato-and-rigidity-inputs",
+  "aliases": [
+    "oneCharU_of_katoTwoW_rig_admI_automorphy",
+    "D528 A single character from the Kato and rigidity inputs"
+  ],
+  "background": [
+    "Kato's Euler system",
+    "Lengths of finite Selmer groups"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.555 (decomp:D528)",
+    "pages": [
+      296,
+      296
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {}
+}

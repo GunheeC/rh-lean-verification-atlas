@@ -1,0 +1,84 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "P029",
+  "title": "A CM classifier of fixed purity",
+  "track": {
+    "primary": "galois",
+    "secondary": []
+  },
+  "statement": "Assume the automorphic hypotheses \\(H'\\) and the CM level and\nSatake--Frobenius correspondence \\(\\mathrm{LevelKNAlt}\\).\nFor each CM field \\(K\\) and \\(n\\ge2\\) there exist \\(c,A\\in\\mathbb N\\).\nLet \\(m_1>\\cdots>m_n\\) satisfy \\(m_i+m_{n+1-i}=1-n\\)\nand \\(|m_i|\\le H\\). Given \\(M\\ge1\\) and \\(w\\mid p\\) with \\(p\\) prime,\n\\(p\\nmid M\\operatorname{disc}(K)\\), there are eigenvalue data \\(D\\)\nat \\(Nw\\) of weight \\(m\\) and purity \\(1-n\\), with\n\\[\n |D.S|\\le c[M(H+1)]^A .\n\\]\nFor every odd prime \\(\\ell\\ne p\\), closure and coefficient comparison\n\\(\\iota\\), these same data classify the admitted\n\\(\\mathrm{AdmKNAlt}(\\iota,M,m)\\) representations of \\(G_K\\) at \\(w\\).",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume $H'$ and LevelKNAlt. Fix a CM field and rank $n\\ge2$.",
+    "The strictly decreasing weights satisfy $m_i+m_{n+1-i}=1-n$ and the given height bound. Use the stipulated admissibility, level and good-prime conditions."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.GalN.V.Win.N.countK_alt",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/FrobeniusTraceCountBoundOfCmEigensystemCount.lean",
+      "line0": 63,
+      "line1": 125,
+      "sha256": "23eb2e3a79eda1a4755fd97c4aa8acb411f52f31434190c33dcbd0585f5e851f",
+      "dominated": 156,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "7.6 (pn:P029)",
+      "pages": [
+        75,
+        75
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/P029.tex",
+      "section": "pn:P029",
+      "pages": []
+    }
+  ],
+  "status": "Statement only",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [
+    "Z1.5.02"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [],
+  "paper_id": "P029",
+  "indexed_members": [
+    "P064",
+    "P081"
+  ],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "a-cm-classifier-of-fixed-purity",
+  "aliases": [
+    "P029 A CM classifier of fixed purity"
+  ],
+  "background": [
+    "CM Galois representations",
+    "Satake parameters",
+    "Frobenius traces"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "7.6 (pn:P029)",
+    "pages": [
+      75,
+      75
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "Z1.5.02": "graph"
+  }
+}

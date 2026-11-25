@@ -1,0 +1,119 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D550",
+  "title": "A common scale for logarithms and fixed constants",
+  "track": {
+    "primary": "analytic",
+    "secondary": []
+  },
+  "statement": "For positive epsilon and fixed K,cHH,eK there exists x0 such that for every x at least x0 both log x and the constant KBig(K,cHH,eK) are at most x\\textasciicircum{}epsilon.\n\\[\n\\forall\\varepsilon>0,\\ \\forall K,c_{HH},e_K,\\ \\exists x_0,\\ \\forall x\\ge x_0,\\quad\\max\\{\\log x,K_{\\rm big}(K,c_{HH},e_K)\\}\\le x^\\varepsilon.\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Fix a positive exponent $\\varepsilon$ and real constants $K,c_{HH},e_K$ before choosing the scale threshold."
+  ],
+  "lean": [
+    {
+      "name": "Formalism.LFunctionChainParameters.LErr.large_x_eventually",
+      "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/SubThreeMulLogTwoLe.lean",
+      "line0": 319,
+      "line1": 329,
+      "sha256": "90f46cef73a8bbf9409ddb93252d5d50dd1093899eda3623171ad8cb61b9a738",
+      "dominated": 13,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v5",
+      "section": "A7 · A common large-scale threshold",
+      "pages": [
+        13,
+        13
+      ],
+      "review_status": "pending_review",
+      "coverage": "Revised paper v5 exposition, pending independent review. The PDF link opens the release attachment after publication."
+    },
+    {
+      "document": "notes/units/D550_v4.md",
+      "section": "D550 · A common threshold for the logarithm and the fixed error constant",
+      "pages": [
+        1,
+        1
+      ],
+      "coverage": "Round-3 written exposition, pending independent review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "G.581 (decomp:D550)",
+      "pages": [
+        302,
+        302
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D550.tex",
+      "section": "decomp:D550",
+      "pages": []
+    },
+    {
+      "document": "paper2_v4",
+      "section": "Mechanism, §3",
+      "pages": [
+        13,
+        13
+      ],
+      "coverage": "Paper v4, pending independent review."
+    }
+  ],
+  "status": "Full",
+  "grade": "L1",
+  "reviews": [
+    "reviews/DB3_review_A.md"
+  ],
+  "prerequisites": [],
+  "size_pages": 1,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [
+    {
+      "review": "reviews/DB3_review_A.md",
+      "lines": [
+        122,
+        122
+      ],
+      "grade": "L1",
+      "verdict": "CONFIRMED (light check)",
+      "scope": "For each positive epsilon and fixed real constants, one eventual threshold handles both log x and the fixed KBig bound. Statement comparison only."
+    }
+  ],
+  "paper_id": "D550",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "a-common-scale-for-logarithms-and-fixed-constants",
+  "aliases": [
+    "large_x_eventually",
+    "D550 A common scale for logarithms and fixed constants"
+  ],
+  "background": [
+    "Asymptotic estimates",
+    "Growth of logarithms"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.581 (decomp:D550)",
+    "pages": [
+      302,
+      302
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "review_status": "pending_review",
+  "summary": "For a fixed positive epsilon and fixed family constants, one scale threshold makes both the logarithm and the specified large constant smaller than the epsilon power of the scale. This allows both losses to be absorbed in the same eventual estimate."
+}

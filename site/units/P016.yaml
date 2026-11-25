@@ -1,0 +1,112 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "P016",
+  "title": "Zero-freeness from host existence and connectedness",
+  "track": {
+    "primary": "analytic",
+    "secondary": [
+      "galois"
+    ]
+  },
+  "statement": "Let $\\lambda>1$. Assume \\code{TopG} and \\code{HostExW}$(\\lambda,G_\\psi)$ for every $\\psi\\in\\mathcal P$. Then $L(s,\\psi)\\ne0$ for every $\\psi\\in\\mathcal P$ and $\\Re s>1/2$.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Fix $\\lambda>1$ and assume the connected-family assertion TopG.",
+    "Every primitive character request $G_\\psi$ admits hosts on windows with this same exponent $\\lambda$."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.Top.zeroFreeAll_of_topG",
+      "file": "Development/AutomorphicArithmetic/CharacterBoxes/ZeroFreeAllOfTopG.lean",
+      "line0": 26,
+      "line1": 34,
+      "sha256": "779f1617311a91f102fe98548f3774bcaf188e12c0506c5aa600f76d4af099a9",
+      "dominated": 5566,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "6.16 (pn:P016)",
+      "pages": [
+        59,
+        59
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/P016.tex",
+      "section": "pn:P016",
+      "pages": []
+    }
+  ],
+  "status": "Full",
+  "grade": "L2",
+  "reviews": [
+    "reviews/R20_review.md"
+  ],
+  "prerequisites": [
+    "P017",
+    "P018",
+    "P019"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [
+    {
+      "grade": "L2",
+      "review": "reviews/R20_review.md",
+      "lines": [
+        48,
+        48
+      ],
+      "scope": "R20 local implication under its stated premises, not its prerequisite cones.",
+      "verdict": "F: full derivation; yes"
+    },
+    {
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "lines": [
+        103,
+        103
+      ],
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript.",
+      "verdict": "Exact statement comparison"
+    }
+  ],
+  "paper_id": "P016",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "zero-freeness-from-host-existence-and-connectedness",
+  "aliases": [
+    "zeroFreeAll_of_topG",
+    "P016 Zero-freeness from host existence and connectedness"
+  ],
+  "background": [
+    "Primitive characters",
+    "Power windows",
+    "Smoothed prime sums"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "6.16 (pn:P016)",
+    "pages": [
+      59,
+      59
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "P017": "graph",
+    "P018": "graph",
+    "P019": "graph"
+  },
+  "summary": "A connectedness implication and the existence of suitable hosts on power windows for each designated primitive character imply half-plane nonvanishing for that class. The same window exponent must be greater than one throughout the setup."
+}

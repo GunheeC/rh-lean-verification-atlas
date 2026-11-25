@@ -1,0 +1,497 @@
+{
+  "id": "Z4.2.13",
+  "title": "Period, lattice and theta-vector laws of the tied base",
+  "track": {
+    "primary": "theta",
+    "secondary": [
+      "local"
+    ]
+  },
+  "statement": "For every tied kernel entry $t$, its period is nonzero, its admitted period lattices satisfy LatAll, and its normalized theta family satisfies VecP and EqP for the same character.",
+  "assumptions": [
+    "source:blueprint_v13"
+  ],
+  "hypothesis_details": [
+    "Fix a tied kernel entry with its associated character, period and normalization."
+  ],
+  "lean": [
+    {
+      "name": "GlobalTheory.TieBase.base_data",
+      "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/KernelEntryPeriodNeZeroAndLatticeLaws.lean",
+      "line0": 14,
+      "line1": 19,
+      "sha256": "dc8ce62568bb591c7f689a073ccfab20d59c2ad4a9a5ab42bd54f087b3ac884f",
+      "dominated": 6,
+      "graph": "allChi",
+      "role": "statement"
+    },
+    {
+      "name": "Formalism.L2.Ker.Base.latAll",
+      "file": "Formalism/LocalToGlobal/KernelLattices/KernelLocalFactors/IsAdmissibleFlagPairOfUnitriangularLeftAutomorph.lean",
+      "line0": 623,
+      "line1": 644,
+      "sha256": "c24181b1626fea4b7192741c7652fc9b9ea79d197863dd4fa8cc5a077a725ada",
+      "dominated": 35,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.hermitian_form_integral_values",
+      "file": "Formalism/LocalToGlobal/GlobalTheory/GL3/PThIndep.lean",
+      "line0": 11,
+      "line1": 11,
+      "sha256": "797c7880dac438a906d2ae645ddc6cc58ff73acdf234bff37acec0698b470e4c",
+      "dominated": 702,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.hermitian_pairing_integral",
+      "file": "Formalism/LocalToGlobal/GlobalTheory/GL3/PHfInt.lean",
+      "line0": 203,
+      "line1": 207,
+      "sha256": "a000c0750a586e11d75478f5a0e5bda2626ad13ca375ef935ed7f59434905d06",
+      "dominated": 224,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.arithmetic_hermitian_form",
+      "file": "Formalism/LocalToGlobal/GlobalTheory/GL3/PHfInt.lean",
+      "line0": 209,
+      "line1": 209,
+      "sha256": "029082b1888759a2bf89a2d9df9b0aa88624b35fa16b30b41bc1063c472b7cfe",
+      "dominated": 633,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.AR.div_okc",
+      "file": "Formalism/LocalToGlobal/GlobalTheory/GL3/PHfArith.lean",
+      "line0": 321,
+      "line1": 389,
+      "sha256": "b430cf2c417d8f4b29847e347b1a62214704f2533482f3cca414b9da4952ca6c",
+      "dominated": 218,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.curve_lattice_self_dual",
+      "file": "Formalism/LocalToGlobal/GlobalTheory/GL3/PSelfDual.lean",
+      "line0": 563,
+      "line1": 622,
+      "sha256": "95fc08a1404211fe87d613335a41df03d9bf4105f78d890fbba9e1400f1b0249",
+      "dominated": 195,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.SD.coord",
+      "file": "Formalism/LocalToGlobal/GlobalTheory/GL3/PSelfDual.lean",
+      "line0": 184,
+      "line1": 261,
+      "sha256": "ec498759753f5c2a79668e6bcc58cd703a0295b73bedebc5ebf87653eff44807",
+      "dominated": 78,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.SD.alg_step",
+      "file": "Formalism/LocalToGlobal/GlobalTheory/GL3/PSelfDual.lean",
+      "line0": 117,
+      "line1": 180,
+      "sha256": "d13470661d44965e60bb1a4abb1ddb0984e84f00b0e219d01bff8d5e404426bf",
+      "dominated": 145,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.SelfDualRec_of_curve",
+      "file": "Formalism/LocalToGlobal/GlobalTheory/GL3/PSelfDual.lean",
+      "line0": 310,
+      "line1": 393,
+      "sha256": "32156bd06c30e6b4bebf2e06cbeb7724404e787177dd480b500550a3b174995f",
+      "dominated": 336,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.self_dual_lattice",
+      "file": "Formalism/LocalToGlobal/GlobalTheory/GL3/PSelfDual.lean",
+      "line0": 624,
+      "line1": 624,
+      "sha256": "2833cfc3f7f4f6592b62598dba3871afce6af0a20fa3564e1160ae59b639fa48",
+      "dominated": 536,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.semiChar_of_HfInt",
+      "file": "Formalism/LocalToGlobal/GlobalTheory/GL3/PIopIso.lean",
+      "line0": 240,
+      "line1": 267,
+      "sha256": "ffaf5150799e9dc8f8331ec2f189ebc64222f7b0cd42495f3c5ce5a2704081a3",
+      "dominated": 34,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.La_index_finite",
+      "file": "Formalism/LocalToGlobal/GlobalTheory/GL3/PIopIso.lean",
+      "line0": 315,
+      "line1": 330,
+      "sha256": "c35ad53d6586ca6fa9a71068e4a1e6f415b8206255312f2cfcc76182ede046a2",
+      "dominated": 52,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.IO.La_index_ne_zero",
+      "file": "Formalism/LocalToGlobal/GlobalTheory/GL3/PIopIso.lean",
+      "line0": 332,
+      "line1": 338,
+      "sha256": "cd448b0676df9cacc58afd31f079ad5707f210367bdd9d748962f7cb71f17649",
+      "dominated": 7,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "Formalism.L2.Ker.Base.thMoved_ne_zero",
+      "file": "Formalism/LocalToGlobal/KernelLattices/KernelLocalFactors/IsAdmissibleFlagPairOfUnitriangularLeftAutomorph.lean",
+      "line0": 251,
+      "line1": 262,
+      "sha256": "6d90709f59281bbcff01d24eb48c6274941e631678c1a9d138ec53206dee8136",
+      "dominated": 25,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "Formalism.L2.Ker.Base.vec_mem_ne",
+      "file": "Formalism/LocalToGlobal/KernelLattices/KernelLocalFactors/IsAdmissibleFlagPairOfUnitriangularLeftAutomorph.lean",
+      "line0": 656,
+      "line1": 660,
+      "sha256": "a2bf355ddca8f60fb691186771e7ae5fe2ffb9a906511651813b81b965dfe12c",
+      "dominated": 52,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.MomT.FromComb.chiFac_mem",
+      "file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/TranslateMomentsAllOfJetMomR.lean",
+      "line0": 337,
+      "line1": 339,
+      "sha256": "773246160ee10b818a72fc38a0916d785000b6776e8b15a4ac208c6f77871aa0",
+      "dominated": 3,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.TrueTheta.exists_field",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsMovesOfSelfDual.lean",
+      "line0": 407,
+      "line1": 420,
+      "sha256": "f81c175e8380076de2778503e9e771fbc1593e4079afd3a8c14327a364b72af0",
+      "dominated": 14,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.TrueTheta.exists_coef_field",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsMovesOfSelfDual.lean",
+      "line0": 442,
+      "line1": 515,
+      "sha256": "98de8dc0795506b2618e98372ba8eb4765689bfe9758f82cf01d11c944c621aa",
+      "dominated": 88,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.ColNorms.familyVectors",
+      "file": "Development/AbelianVarietyTheory/Proofs/DivisorProofs/NormalisedFamilyNonzeroThetaVectorsNumberField.lean",
+      "line0": 15,
+      "line1": 50,
+      "sha256": "d2da300ba8af1686e11240ff45530561d16bf151b9f954b84efd9db762689bce",
+      "dominated": 36,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.ExponentsFinite.yFinite",
+      "file": "Development/AbelianVarietyTheory/Proofs/DivisorProofs/KernelConstantExponentsFinite.lean",
+      "line0": 85,
+      "line1": 126,
+      "sha256": "53c7467b1d5e6db38d4f0d52d07ef59942239bbd73ec4b9bb71dc46fa49be443",
+      "dominated": 112,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.TrueTheta.exists_chi",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsMovesOfSelfDual.lean",
+      "line0": 659,
+      "line1": 695,
+      "sha256": "416d601138fa09637a5f16039b66cd287c9a8b034468ac35504ee02df0676c84",
+      "dominated": 301,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.TrueTheta.exists_family_of_curve",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsThetaVectorFamilyOfCurveDatum.lean",
+      "line0": 15,
+      "line1": 108,
+      "sha256": "ea41ca9d7689b4058dae3abacff3fda5110211cb2d94177b7202f72f609fc065",
+      "dominated": 1108,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.WeilInter.om_iop",
+      "file": "Development/AbelianVarietyTheory/Proofs/FoundationProofs/WeilRepresentationCommHeisenbergIntertwiner.lean",
+      "line0": 88,
+      "line1": 125,
+      "sha256": "7cadd40c6f797db188d4621f0b5cc28e48835949e78002439959910ca8594d1f",
+      "dominated": 247,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.NegOneNorm.exists_norm_eq_neg_one",
+      "file": "Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsDvdMulInvolutionAddOne.lean",
+      "line0": 81,
+      "line1": 127,
+      "sha256": "11ee7a1c1a41f84d653fb25d90c5963bbf2bd7fa6c7c77c412b8d861e198cf50",
+      "dominated": 115,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.NormResidue.exists_mul_involution_add_one_mem_pow",
+      "file": "Development/AbelianVarietyTheory/Proofs/UnramifiedDepth/ExistsMulInvolutionAddOneMemPow.lean",
+      "line0": 41,
+      "line1": 106,
+      "sha256": "b30a4f9f0455870342d13d419af3983bc06489309a23deabb0fac688417e5ddb",
+      "dominated": 99,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.RatEqui.exists_root",
+      "file": "Development/AbelianVarietyTheory/Proofs/FoundationProofs/OddEqOfEven.lean",
+      "line0": 26,
+      "line1": 40,
+      "sha256": "24d703bef889f23fce74f49fb022f5eb83b0009d9b6f4a70cbd6623fdecd7bce",
+      "dominated": 15,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.RatEqui.exists_factor",
+      "file": "Development/AbelianVarietyTheory/Proofs/FoundationProofs/OddEqOfEven.lean",
+      "line0": 82,
+      "line1": 109,
+      "sha256": "2aea263e44e3052241b6f5f3007cea0904a37f0cbd21c766666e1384dd2264cd",
+      "dominated": 34,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.RatEqui.oddEq_of_even",
+      "file": "Development/AbelianVarietyTheory/Proofs/FoundationProofs/OddEqOfEven.lean",
+      "line0": 176,
+      "line1": 180,
+      "sha256": "04c337631b4e8e57f2e4e68d069ca8b3462eba25636853df20c771107cb35982",
+      "dominated": 926,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.Mem.NatEqui.chi_smulLat",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/NormalisedFamilySatisfiesEquivarianceLaws.lean",
+      "line0": 17,
+      "line1": 33,
+      "sha256": "a72cab9361c98b851fc32a50d0e1aafcc2d44b299b791b0357ff49f0c398d6f6",
+      "dominated": 17,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.Mem.NatEqui.chiFac_ne_zero",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/NormalisedFamilySatisfiesEquivarianceLaws.lean",
+      "line0": 42,
+      "line1": 45,
+      "sha256": "b1446cc3668f54f8782c4414509f96699cc83dd9573a91df560729623f48b8d4",
+      "dominated": 4,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.Mem.NatEqui.chiFac_right",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/NormalisedFamilySatisfiesEquivarianceLaws.lean",
+      "line0": 47,
+      "line1": 51,
+      "sha256": "23d9256603c81b5d46af74163974163f54eddedf62a2d6be25a70e8b0318ff4e",
+      "dominated": 5,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.Mem.NatEqui.chiFac_left",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/NormalisedFamilySatisfiesEquivarianceLaws.lean",
+      "line0": 53,
+      "line1": 57,
+      "sha256": "fbd9371ac3ba8b29bdc691327f5278511cb317a5a1daa1ef562a5e77a1ce29dc",
+      "dominated": 5,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.Mem.NatEqui.eqP",
+      "file": "Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/NormalisedFamilySatisfiesEquivarianceLaws.lean",
+      "line0": 59,
+      "line1": 117,
+      "sha256": "80353eef4e8e8ae77125a8f91cc42fefe3a00aebfef0bf9fa6773b615961afdc",
+      "dominated": 77,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "Formalism.L2.GlobalTheoryTheory.IntegralLatticeDensity.base_linkage_nonempty",
+      "file": "Formalism/LocalToGlobal/GlobalTheory/GL3/PFamily.lean",
+      "line0": 80,
+      "line1": 86,
+      "sha256": "e68b056cdb1b1f27029768c3ced41a4ac52a9e3377a75b11d96af8064c6884a9",
+      "dominated": 14,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.ThetaCoordLine.exists_eq_smul",
+      "file": "Development/AbelianVarietyTheory/Proofs/FoundationProofs/ThetaFunctionSelfDualExistsEqSmul.lean",
+      "line0": 54,
+      "line1": 93,
+      "sha256": "1e115957f9265877043b6d882634d25beaf0724c7088972cc51b7109b0717510",
+      "dominated": 75,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.NormGauss.sum_norm_neg",
+      "file": "Development/AbelianVarietyTheory/Proofs/FoundationProofs/FinsumNormNeg.lean",
+      "line0": 57,
+      "line1": 183,
+      "sha256": "7267b0eaca10cb03d646b1c9970c8dce1e01bd394d2a8acf1ee2d8b599ffb6e0",
+      "dominated": 175,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.FinWeil.exists_weil",
+      "file": "Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsWeilOfVacuum.lean",
+      "line0": 82,
+      "line1": 83,
+      "sha256": "a20c21eca114fb49dec37dbf5a7e1c37d9e967dff8aae0fdb0880889909a7d1c",
+      "dominated": 2,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.InertSign.vacuum_inert",
+      "file": "Development/AbelianVarietyTheory/Proofs/FoundationProofs/WeilRepresentationVacuumSignInertPlaces.lean",
+      "line0": 254,
+      "line1": 327,
+      "sha256": "af3ae241d02ee0a6ea957fe611fcd61cf9ae755e5310bf2c78c725f60133af45",
+      "dominated": 2101,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.VacuumExact.vacuum_exact",
+      "file": "Development/AbelianVarietyTheory/Proofs/FoundationProofs/WeilOperatorVacuumExactConstantEvenRank.lean",
+      "line0": 79,
+      "line1": 105,
+      "sha256": "7412642b350a02ca66ea4a0f2432626ebd31b100eb0609d8ffa266acb926d141",
+      "dominated": 53,
+      "graph": "allChi",
+      "role": "chart supplier"
+    },
+    {
+      "name": "GlobalTheory.ThLoc.algTAll",
+      "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/AlgTAll.lean",
+      "line0": 6,
+      "line1": 6,
+      "sha256": "adeb8b36d9c05aca187da672175bceba7e07fe489767cdc35d46ff4e0a30d19a",
+      "dominated": 16,
+      "graph": "allChi",
+      "role": "chart supplier"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/blueprint/Z4.2.13.tex",
+      "section": "r14:lat-indices, r14:lat-integral, r14:lat-dual, r14:vec-transport, r14:vec-fixed, r14:vec-descent, r14:vec, r14:eq-reference, r14:eq-transport, r14:eq-rational, r14:eq-normalize, r14:equivariance, r14:period, r14:line, r14:base-assembly, r14:weil-sign, r15:weil, r15:vacuum-inert, r15:vacuum-exact, r15:jets, r8:Z4.2.13",
+      "pages": []
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r8:Z4.2.13",
+      "pages": [
+        441,
+        441
+      ],
+      "printed_page": 416,
+      "scope": "First page of this named destination."
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [
+    "reviews/R14_review_A.md",
+    "reviews/R15_review_A.md"
+  ],
+  "prerequisites": [
+    "Z4.2.02"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "VecP and EqP still require the same-base character, CM, Weil and covariance suppliers classified in the round-15 register. The period is nonzero and LatAll is confirmed.",
+    "Do period nonvanishing and vector equivariance hold for the same choice? Find the result controlling the ratio of the normalizing scalars."
+  ],
+  "last_checked": "2026-11-24",
+  "blueprint_members": [
+    "Z4.2.13"
+  ],
+  "representative": "GlobalTheory.TieBase.base_data",
+  "statement_declarations": [
+    "GlobalTheory.TieBase.base_data"
+  ],
+  "grade_scope": "Named statement declarations with the hypotheses above. Chart supplier records have their own review scopes.",
+  "confirmation_basis": "Minimum across the statement declarations, using registry rows for the blueprint assignments listed here. Reviews of other expositions of a shared declaration are included as context.",
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "slug": "period-lattice-and-theta-vector-laws-of-the-tied-base",
+  "aliases": [
+    "base_data",
+    "Z4.2.13 Period, lattice and theta-vector laws of the tied base"
+  ],
+  "background": [
+    "Theta functions",
+    "Period lattices"
+  ],
+  "hypothesis_source": {
+    "document": "blueprint_v13",
+    "section": "r8:Z4.2.13",
+    "pages": [
+      441,
+      441
+    ]
+  },
+  "question_sources": [
+    "data/status_ledger.json",
+    "questions/theta.md"
+  ],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "Z4.2.02": "statement-reading"
+  },
+  "summary": "For a tied entry the period is nonzero, its period lattices obey the stated lattice law, and the normalized theta family satisfies both vector and transformation requirements for the same character. That common character is necessary to use the covariance law for the chosen entry."
+}

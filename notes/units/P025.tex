@@ -1,0 +1,53 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit P025. Local manuscript v3, item 7.2, heading on printed PDF p. 72.
+% UpperTheory.V.Th.adjointLiftingTheorem_of_locPrints_of_core
+% paper2/inputs_one.tex:46–80. Verbatim excerpt; SHA-256 80253032c1c655c9fc12089c5d959573b2397a645e55d8f612b63b38fba8ab48.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+\noindent\nolinkurl{UpperTheory.V.Loc.LocalPublishedTheorems.bk} --- record field (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/LocalPublishedTheorems.lean:19}); not compared.\par
+\noindent\nolinkurl{UpperTheory.V.Loc.LocalPublishedTheorems.lfK} --- record field (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/LocalPublishedTheorems.lean:13}); not compared.\par
+\noindent\nolinkurl{UpperTheory.V.Loc.LocalPublishedTheorems.ltK} --- record field (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/LocalPublishedTheorems.lean:14}); not compared.\par
+\noindent\nolinkurl{UpperTheory.V.Loc.LocalPublishedTheorems.leK} --- record field (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/LocalPublishedTheorems.lean:15}); not compared.\par
+\noindent\nolinkurl{UpperTheory.V.Loc.LocalPublishedTheorems.lf} --- record field (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/LocalPublishedTheorems.lean:16}); not compared.\par
+\noindent\nolinkurl{UpperTheory.V.Loc.LocalPublishedTheorems.lt} --- record field (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/LocalPublishedTheorems.lean:17}); not compared.\par
+\noindent\nolinkurl{UpperTheory.V.Loc.LocalPublishedTheorems.le} --- record field (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/LocalPublishedTheorems.lean:18}); not compared.\par
+% End of atlas edition annotation.
+
+\begin{formalstatement}[Ordinary to Bloch--Kato adjoint vanishing]\label{pn:P025}
+Assume local cohomological finiteness, Tate duality, the Euler
+characteristic formulas and the local Bloch--Kato theorem in the
+specified coefficient models. Assume the dense ordinary vanishing
+hypothesis: at every locally generic automorphic point below each
+allowed ordinary adjoint cocycle is a coboundary. Let \(L\) be CM with
+\(\mu_\ell\not\subset L\), take a Hida setting and level \(V\) with
+\(V.S'=S\), large coefficients, \(2\le n\le4\), an admitted residual
+representation, and a locally generic automorphic point \(x,\rho\)
+of its universal ordinary determinant ring. For each \(v\mid\ell\)
+suppose there are strictly decreasing integers \(m_i\) and \(k>0\)
+such that on inertia
+\[
+ \bigl(\psi_{v,i}\psi_{v,j}^{-1}\chi^{m_j-m_i}\bigr)^k=1
+ \quad(i,j=1,\ldots,n).
+\]
+For every allowed polarizing form and adjoint extension \(R\), each
+continuous cocycle \(z\) whose pullback satisfies the Bloch--Kato
+finite condition has the form \(z(g)=R(g)X-X\) for one matrix \(X\)
+and all \(g\).
+\end{formalstatement}\nodestatus{P025}
+
+The scalar-tower identity identifies the two multiplier characters in
+the ordinary and finite conditions. The local comparison must transport
+the period primitive, descend it on the stable corner, and recover the
+inertia flag. The global ordinary vanishing statement is a premise.
+Newton and Thorne's \emph{Adjoint Selmer groups of automorphic Galois
+representations of unitary type}, Theorem~A, uses an enormous-image
+hypothesis over the cyclotomic extension. The listed assumptions do
+not supply that match. P.~B.~Allen's \emph{Deformations of polarized
+automorphic Galois representations and adjoint Selmer groups}, Theorem~A,
+requires adequate residual image after restriction. Blueprint Z1.2~\bploc{r6:review:Z1.2}
+records the comparison from the project finite condition to its ordinary
+flag condition separately from the production of ordinary vanishing.
+\cite{r21-nt}\quad\cite{r21-allen}

@@ -1,0 +1,97 @@
+{
+  "id": "Z1.3.01",
+  "title": "Integral Kato systems at all layers",
+  "track": {
+    "primary": "galois",
+    "secondary": []
+  },
+  "statement": "For the ordinary normal form, unramified weight-$2e+1$ source and the admissible tower, projection, level, smoothing and lattice data, construct integral continuous twisted cocycles at all layers, compatible under pushdown, with a global specialization whose single $\\ell$-power multiple satisfies Sys, IwSys2 and SpLink.",
+  "assumptions": [
+    "source:blueprint_v13"
+  ],
+  "hypothesis_details": [
+    "Fix the ordinary normal form and an unramified modular source of weight $2e+1$.",
+    "Use admissible tower, projection, level, smoothing and lattice data."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.Kd.K4.kato_eulerSystem_integrality",
+      "file": "Development/AutomorphicArithmetic/Foundations/IwahoriReduction/NormProducts/AdmissibleWeightedDataMonoCoef.lean",
+      "line0": 208,
+      "line1": 208,
+      "sha256": "cbabe48694d559a2d5712bc20d27ea95dfea8b954db9a94cb9eeb6ae330937c7",
+      "dominated": 24730,
+      "graph": "allChi",
+      "role": "statement"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/blueprint/Z1.3.01.tex",
+      "section": "r6:Z1.3.01, r7:Z1.3.01",
+      "pages": []
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r6:Z1.3.01",
+      "pages": [
+        377,
+        377
+      ],
+      "printed_page": 352,
+      "scope": "First page of this named destination."
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r7:Z1.3.01",
+      "pages": [
+        403,
+        403
+      ],
+      "printed_page": 378,
+      "scope": "First page of this named destination."
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": null,
+  "open_questions": [
+    "Construct strict integral single-symbol cocycles and one uniform tame exceptional set and loss."
+  ],
+  "last_checked": "2026-11-24",
+  "blueprint_members": [
+    "Z1.3.01"
+  ],
+  "representative": "UpperTheory.Kd.K4.kato_eulerSystem_integrality",
+  "statement_declarations": [
+    "UpperTheory.Kd.K4.kato_eulerSystem_integrality"
+  ],
+  "grade_scope": "Named statement declarations with the hypotheses above. Chart supplier records have their own review scopes.",
+  "confirmation_basis": "Minimum across the statement declarations, using registry rows for the blueprint assignments listed here. Reviews of other expositions of a shared declaration are included as context.",
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "slug": "integral-kato-systems-at-all-layers",
+  "aliases": [
+    "kato_eulerSystem_integrality",
+    "Z1.3.01 Integral Kato systems at all layers"
+  ],
+  "background": [
+    "Cyclotomic Euler systems",
+    "Integral Galois cohomology"
+  ],
+  "hypothesis_source": {
+    "document": "blueprint_v13",
+    "section": "r6:Z1.3.01",
+    "pages": [
+      377,
+      377
+    ]
+  },
+  "question_sources": [
+    "data/status_ledger.json"
+  ],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "summary": "The specified ordinary modular source and integral auxiliary data give twisted cocycles on every layer, compatible under pushdown. One prime-power multiple of their global specialization satisfies the three required system conditions, so the normalization can be used throughout the tower."
+}

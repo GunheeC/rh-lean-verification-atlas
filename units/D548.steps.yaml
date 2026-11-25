@@ -1,0 +1,153 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "D548",
+  "edition_sha256": "60b13ad5a49e123817d98eb0a232f6b06be352a0957d4b067d4d20846ce513e9",
+  "note_sha256": "0702c591b5ffd4a28764d5dfd7f9567795557ea420b50cf87b4fb4c158b73168",
+  "statement_sha256": "142f63b0d5989df85ffea4dcd660353ae386d2a268059f502fec3ca59e3a8ea4",
+  "sources": [
+    {
+      "path": "notes/units/D548_v4.md",
+      "sha256": "0702c591b5ffd4a28764d5dfd7f9567795557ea420b50cf87b4fb4c158b73168"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Kept frequencies correspond injectively to kept primitive characters and obey the required triviality conditions.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: host explicit-formula and Artin data"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Comparison₂.charsA",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/charsA.lean",
+          "line0": 80,
+          "line1": 125
+        }
+      ],
+      "source": "notes/units/D548_v4.md",
+      "anchor": "The Artin map is onto",
+      "source_lines": [
+        13,
+        13
+      ],
+      "claim_sha256": "257b8dd384758749fd6bfd3fa5bf7d62188a50bd336b23e0827112207b6e02a0",
+      "passage_sha256": "b2af5ddb4b2a359de83279b458beaa1ae5dbe6b9d5cff35e39e634ac74b7b385",
+      "sha256": "bf298a805c6cb880644fff78bd77c59415d3516bedd91d838902763d0d6bbb3a",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The principal frequency is kept, and the annihilator band has cardinality bounded by four times the host order parameter.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "standard: characters of a finite quotient"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Comparison₂.charsA",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/charsA.lean",
+          "line0": 80,
+          "line1": 125
+        }
+      ],
+      "source": "notes/units/D548_v4.md",
+      "anchor": "We have $0",
+      "source_lines": [
+        15,
+        15
+      ],
+      "claim_sha256": "3809707b4c80aa98614f194fbf84cd5e701390d9d4a439950893d3f10f10745f",
+      "passage_sha256": "527a2d1b443e897f42ff90b4e5ebf02bec7e25b300149f46e2758f2927a454a1",
+      "sha256": "e56fea315fef43f25e3c48a8a0f811cbcf54c17475475cfb7adccb93b105cf92",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Summing the coset-share errors after character cancellation gives the stated total deviation, while the bounded character clause controls the omitted derivatives.",
+      "kind": "computation",
+      "uses": [
+        "S2",
+        "standard: finite character orthogonality"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Comparison₂.charsA",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/charsA.lean",
+          "line0": 80,
+          "line1": 125
+        }
+      ],
+      "source": "notes/units/D548_v4.md",
+      "anchor": "Translation by a coset",
+      "source_lines": [
+        24,
+        24
+      ],
+      "claim_sha256": "032e587c7ca4a5e8d33393a4b2f02f4a86dddb61df9ed7c09badab598de55169",
+      "passage_sha256": "3487c7ad19823567189b00e3848d02d772dc3cc68c7af4a51c79ef89d097b36e",
+      "sha256": "e72a4408791171d8578ffddd7e8efca086f7448c6b19ee1b2a91a15f3bd5bead",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "a0dcd1daac619975d8c6f65d3a2572dcea947670009d91972843cf5cda1e5ab6",
+      "sources": [
+        {
+          "path": "notes/units/D548_v4.md",
+          "sha256": "843285b8403bb3bebdf76ecf8de7252d16dfa5bdaf1f19b345bed27611122559"
+        }
+      ],
+      "statement_sha256": "142f63b0d5989df85ffea4dcd660353ae386d2a268059f502fec3ca59e3a8ea4",
+      "steps": {
+        "S1": "bf298a805c6cb880644fff78bd77c59415d3516bedd91d838902763d0d6bbb3a",
+        "S2": "e56fea315fef43f25e3c48a8a0f811cbcf54c17475475cfb7adccb93b105cf92",
+        "S3": "e72a4408791171d8578ffddd7e8efca086f7448c6b19ee1b2a91a15f3bd5bead"
+      },
+      "step_texts": {
+        "S1": "Kept frequencies correspond injectively to kept primitive characters and obey the required triviality conditions.",
+        "S2": "The principal frequency is kept, and the annihilator band has cardinality bounded by four times the host order parameter.",
+        "S3": "Summing the coset-share errors after character cancellation gives the stated total deviation, while the bounded character clause controls the omitted derivatives."
+      },
+      "step_passages": {
+        "S1": "b2af5ddb4b2a359de83279b458beaa1ae5dbe6b9d5cff35e39e634ac74b7b385",
+        "S2": "527a2d1b443e897f42ff90b4e5ebf02bec7e25b300149f46e2758f2927a454a1",
+        "S3": "3487c7ad19823567189b00e3848d02d772dc3cc68c7af4a51c79ef89d097b36e"
+      },
+      "step_ai_reviews": {
+        "S2": [
+          {
+            "verdict": "CONFIRMED (light check)",
+            "scope": "The principal frequency is kept, and the annihilator band has cardinality bounded by four times the host order parameter.",
+            "file": "reviews/DB3_review_A.md",
+            "lines": [
+              118,
+              118
+            ],
+            "edition_sha256": "a0dcd1daac619975d8c6f65d3a2572dcea947670009d91972843cf5cda1e5ab6",
+            "step_sha256": "e56fea315fef43f25e3c48a8a0f811cbcf54c17475475cfb7adccb93b105cf92"
+          }
+        ],
+        "S3": [
+          {
+            "verdict": "CONFIRMED (light check)",
+            "scope": "Summing the coset-share errors after character cancellation gives the stated total deviation, while the bounded character clause controls the omitted derivatives.",
+            "file": "reviews/DB3_review_A.md",
+            "lines": [
+              118,
+              118
+            ],
+            "edition_sha256": "a0dcd1daac619975d8c6f65d3a2572dcea947670009d91972843cf5cda1e5ab6",
+            "step_sha256": "e72a4408791171d8578ffddd7e8efca086f7448c6b19ee1b2a91a15f3bd5bead"
+          }
+        ]
+      }
+    }
+  ]
+}

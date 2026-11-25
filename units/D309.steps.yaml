@@ -1,0 +1,186 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "D309",
+  "edition_sha256": "fdb172286114083e96a65b8e863e0a372013a782e8262c9610a4653d3b916df8",
+  "note_sha256": "c86e4ef47fdc64d4939474b45a555fdf1384c650589b7d1ec4fdc0a9bc53ef1c",
+  "statement_sha256": "112930fb667b9550be9d9b3edbcdc796275fd4536ca4ed611039bbc15dc9b71f",
+  "sources": [
+    {
+      "path": "notes/units/D309_round4.md",
+      "sha256": "c86e4ef47fdc64d4939474b45a555fdf1384c650589b7d1ec4fdc0a9bc53ef1c"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "For the same group, the target asks for an integral image bound and an orthogonal-kernel equivalence.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: definition of FarguesHodgeTate"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.CompanionTheory.Ar.HT.FarguesExact",
+          "file": "Development/AutomorphicSpectrum/PublishedTheorems/Algebra₂/FarguesExact.lean",
+          "line0": 10,
+          "line1": 18
+        },
+        {
+          "name": "GlobalTheory.CompanionTheory.Ar.HT.FarguesHodgeTate",
+          "file": "Development/AutomorphicSpectrum/PublishedTheorems/Algebra₂/FarguesHodgeTate.lean",
+          "line0": 10,
+          "line1": 20
+        }
+      ],
+      "source": "notes/units/D309_round4.md",
+      "anchor": "Separate the two statements at a fixed group",
+      "source_lines": [
+        13,
+        13
+      ],
+      "claim_sha256": "9f322bdd2e422a1990ce52dd80ecfc50cd248b777fac7e231bb46717f0b51544",
+      "passage_sha256": "9643173e2fe558d83722df8d308e1703059c921ff11613c9dff02098ba197198",
+      "sha256": "fc1c79a5029d1c8f96f6b2202bf115d6760b366d988e83b7aea36f84d59e9017",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Specializing Fargues exactness supplies the entire kernel-equivalence conjunct.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "T24",
+        "S1"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.Xgn.farguesHodgeTate_of_farguesExact",
+          "file": "Development/WeilBound/CoreStatements/TorusUniformisation/ChowMahlerFamilies/XXgzFarOfExact.lean",
+          "line0": 50,
+          "line1": 60
+        },
+        {
+          "name": "UpperTheory.LiteratureTheorems.fargues_exact_of_literature",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+          "line0": 549,
+          "line1": 550
+        }
+      ],
+      "source": "notes/units/D309_round4.md",
+      "anchor": "Read the kernel input in the correct direction",
+      "source_lines": [
+        17,
+        17
+      ],
+      "claim_sha256": "e5397e44b631f3a213a3919646e4aa7995eb8c757f2f6f4669252355d3a8b776",
+      "passage_sha256": "ba02a16c8052d9589ef2336bf0b0b3ca01be189d847ef012f1fa9ffd87febe9c",
+      "sha256": "76d7c18fada73e4b909a08b0a52bbd00931170924a45c2e8e1c897f34483f5f2",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "At two the specified bound by $v(4)$ implies the sharp theorem's bound by $v(2)$; at other primes the required inequality is supplied directly.",
+      "kind": "inequality",
+      "uses": [
+        "S1",
+        "input: sharp cokernel theorem"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.CompanionTheory.Ar.HT.hodge_tate_cokernel_sharp",
+          "file": "Development/AutomorphicSpectrum/Proofs/GeometryProofs/HodgeTateCokernelSharp.lean",
+          "line0": 7,
+          "line1": 8
+        },
+        {
+          "name": "GlobalTheory.CompanionTheory.Ar.HT.FarguesHodgeTate",
+          "file": "Development/AutomorphicSpectrum/PublishedTheorems/Algebra₂/FarguesHodgeTate.lean",
+          "line0": 10,
+          "line1": 20
+        },
+        {
+          "name": "PositivityTheory.Xgn.farguesHodgeTate_of_farguesExact",
+          "file": "Development/WeilBound/CoreStatements/TorusUniformisation/ChowMahlerFamilies/XXgzFarOfExact.lean",
+          "line0": 50,
+          "line1": 60
+        }
+      ],
+      "source": "notes/units/D309_round4.md",
+      "anchor": "Read the scalar bound as an integral image condition",
+      "source_lines": [
+        21,
+        21
+      ],
+      "claim_sha256": "4d8030776068bdd2c12327f0d2f0ca56185ca948232eb33b11fbf1b9f57d7d26",
+      "passage_sha256": "f16d3fb1e5c8b73ee10421573196bb09e4a186ded0b1cb5da008620e65a3ad5d",
+      "sha256": "5872468d654410f7c4e0163cb57751e697a5203c5ce35c311adf6cdc30b2f09e",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "Pairing the two statements at the fixed group gives the Hodge–Tate package.",
+      "kind": "assembly",
+      "uses": [
+        "S2",
+        "S3"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.CompanionTheory.Relay.hodge_tate_of_fargues_exact",
+          "file": "Development/AutomorphicSpectrum/Proofs/AlgebraProofs/HodgeTateOfFarguesExact.lean",
+          "line0": 36,
+          "line1": 37
+        },
+        {
+          "name": "GlobalTheory.CompanionTheory.Ar.HT.hodge_tate_cokernel_sharp",
+          "file": "Development/AutomorphicSpectrum/Proofs/GeometryProofs/HodgeTateCokernelSharp.lean",
+          "line0": 7,
+          "line1": 8
+        }
+      ],
+      "source": "notes/units/D309_round4.md",
+      "anchor": "Record the interface consumed by subsequent uses",
+      "source_lines": [
+        25,
+        25
+      ],
+      "claim_sha256": "def97cd278173961df98a72c9826708b9cd39b6df1485728f54e4f0bcb188bdd",
+      "passage_sha256": "e8eb162035f0f451b961b3e9d60b8d3961fb4b10b959021af7222fba987a7733",
+      "sha256": "fc1fda5ad273d894cca093c95cb4d56e1a9cb2c7c52cefaf179c3a9b8bdbe3c6",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "ec16cbcdbf9982e0b64644b03c82074958b058f560e0f3a54986e3e681bce9e0",
+      "sources": [
+        {
+          "path": "notes/units/D309_round4.md",
+          "sha256": "d0f43cd1c3c946dd6b97e00a88f90f230f0e97a60eae464e52504fbee01b675f"
+        }
+      ],
+      "statement_sha256": "112930fb667b9550be9d9b3edbcdc796275fd4536ca4ed611039bbc15dc9b71f",
+      "steps": {
+        "S1": "fc1c79a5029d1c8f96f6b2202bf115d6760b366d988e83b7aea36f84d59e9017",
+        "S2": "76d7c18fada73e4b909a08b0a52bbd00931170924a45c2e8e1c897f34483f5f2",
+        "S3": "5872468d654410f7c4e0163cb57751e697a5203c5ce35c311adf6cdc30b2f09e",
+        "S4": "fc1fda5ad273d894cca093c95cb4d56e1a9cb2c7c52cefaf179c3a9b8bdbe3c6"
+      },
+      "step_texts": {
+        "S1": "For the same group, the target asks for an integral image bound and an orthogonal-kernel equivalence.",
+        "S2": "Specializing Fargues exactness supplies the entire kernel-equivalence conjunct.",
+        "S3": "At two the specified bound by $v(4)$ implies the sharp theorem's bound by $v(2)$; at other primes the required inequality is supplied directly.",
+        "S4": "Pairing the two statements at the fixed group gives the Hodge–Tate package."
+      },
+      "step_passages": {
+        "S1": "9643173e2fe558d83722df8d308e1703059c921ff11613c9dff02098ba197198",
+        "S2": "ba02a16c8052d9589ef2336bf0b0b3ca01be189d847ef012f1fa9ffd87febe9c",
+        "S3": "f16d3fb1e5c8b73ee10421573196bb09e4a186ded0b1cb5da008620e65a3ad5d",
+        "S4": "e8eb162035f0f451b961b3e9d60b8d3961fb4b10b959021af7222fba987a7733"
+      }
+    }
+  ]
+}

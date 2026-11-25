@@ -1,0 +1,199 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Manuscript v3, heading p. 20; original out/r23_selmer.tex, SHA-256 acdd3e1b74d108d6f47b44268e7e0e7a4ac51644da72705690b9a3a0adc11edb.
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+\noindent\nolinkurl{UpperTheory.V.Z.J.count_i_of_printed_bound_k_kato_automorphy} --- in-repo constant (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/LinkedUnlE.lean:49--54}); not compared.\par
+\noindent\nolinkurl{UpperTheory.V.Z.Kato.WeilSphericalRecords.katoTwoW_of_printsH} --- in-repo constant (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/KatoTwoWOfPublishedH.lean:48--49}); not compared.\par
+\noindent\nolinkurl{UpperTheory.V.FW.ferreroWashington} --- in-repo constant (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/FerreroWashingtonIndex/FerreroWashington.lean:104--119}); variant.\par
+\noindent\nolinkurl{UpperTheory.V.HV.U.pt_s} --- in-repo constant (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/HVFinalU.lean:11}); not compared.\par
+\noindent\nolinkurl{GlobalTheory.Mem.LiteralAutomorphy.LitCoh.pt} --- record field (\path{Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/Brauer.lean:105--106}); not compared.\par
+% End of atlas edition annotation.
+
+\subsection{P013. Four character estimates on one Selmer window}
+\label{sec:r23-selmer}
+
+\begin{proposition}[Selmer window from the polarised row]
+Assume the row $\mathcal R$ of \nodeid{P013}, namely
+\nolinkurl{UpperTheory.GalStar.Row0b} for the relation
+\nolinkurl{UpperTheory.Zero.LLC.IsRecT}. Fix a primitive character $\chi$,
+$0<\varepsilon<1/52$, and any nonnegative integer-valued page function $s(x)$ with
+$x^{2+8\varepsilon}\le 2^{s(x)}\le 2x^{2+8\varepsilon}$ for $x\ge1$.
+There exist $J'\ge1$ and $X_0$ such that for every $X\ge X_0$ and
+every \code{WinPair} $(\varepsilon,X^{1/J'},q,d)$ there is a common $Y$
+with $X^{1/J'}\le Y$ and $Y^2\le X$. For every $x\in[Y,Y^2]$ put
+$t=\lfloor x^{401}\rfloor$. For every field
+$E$ of type \code{IsChiField}$(\chi,s(x),q,d)$, every algebraic closure
+and local datum, the lengths $h_\ell(k)=\code{shaLen}(\mathrm{ld}_\ell,k)$
+are finite for all primes $\ell$ and $1\le k<t$. For every finite set
+$S$ of primes,
+\[
+ \sum_{\ell\in S}\log\ell\sum_{k=1}^{t-1} h_\ell(k)
+ \le \exp(x^\varepsilon/2).
+\]
+Here $s(x)$ is the page index and $k$ is the twist. The definitions of
+\code{VVle}, \code{IsChiField}, \code{WinPair}, \code{PageN},
+\code{VAt}, \code{VWinAt} and \code{VWin} are in
+\nolinkurl{CharacterBoxes/ExistsPageN.lean:12--49}. The source
+statement is \nolinkurl{UpperTheory.One.vwin_of_row},
+\nolinkurl{DenseThresholdCases/VwinOfRow.lean:4--5}.
+\end{proposition}
+
+\begin{formalstatement}[Arithmetic estimates used below]
+Use the local, automorphic, cohomological and CM fields of the rank-$n$
+record of \hyperref[sub:W01]{W01}, the patched record of
+\hyperref[sub:W03]{W03}, and the uniform $C_K$ of \hyperref[sub:W05]{W05}.
+Fix a primitive $\chi$. Write $N_h$ for the host modulus, $B_\chi$ for the
+exceptional primes, and $X_h(c,k)$ for the host characters of parity
+$(-1)^k$ with coefficients $c$. For $0<k<t$ on a large host $h$ of
+character $\chi$, let $v_\ell(\theta,k)$ denote \code{Vn}, its normalized
+character length. Each estimate includes finiteness of the corresponding
+\code{Vlen} for every allowed closure and coefficient system.
+\begin{itemize}
+\item \hyperref[sub:W08]{W08} (Count I) gives $C,r_1,r_2$ depending
+on $\chi$, with $r_i$ prime. If both host primes exceed both $r_i$, then
+for any finite set $T$ of odd $\ell\notin B_\chi$ with $\ell-1\nmid2k$,
+the sum of $v_\ell(\theta,k)\log\ell$ over $\ell\in T$ and
+$\theta\in X_h(c_\ell,k)$ is at most $(N_ht)^C$.
+\item \hyperref[sub:W09]{W09} (II, III) and \hyperref[sub:W10]{W10}
+(V) each give a constant $C$ depending on $\chi$ with
+$v_\ell(\theta,k)\log\ell\le(\ell N_h k)^C$ for odd $\ell$.
+II requires $k\ge2$, even order of $\chi_P(\ell,\theta)$ and
+either $\ell\in B_\chi$ or $\ell-1\mid2k$.
+III requires $\ell\notin B_\chi$, $\ell-1\mid2k$, and $\theta$
+nontrivial of odd order. V requires $\ell\in B_\chi$, $k=1$ and
+$R_1(\ell,\theta)\le2^{c_2(\theta)}$.
+\end{itemize}
+These are \code{CountI}, \code{CountShape}, \code{CountII},
+\code{CountIII}, \code{CountV} at \nolinkurl{HeightAndVanishing/Counts.lean:53--69};
+\code{chiP}, \code{EV}, \code{Vn}, \code{VLe}, \code{Big},
+\code{X}, \code{R1} and \code{CaseI}--\code{CaseV} are in
+\nolinkurl{DirichletPrimeToLPartMulLPowerPart.lean:86--120},
+\nolinkurl{DirichletPrimeToLPartMulLPowerPart.lean:185--219}.
+The other arithmetic inputs are the simultaneous two-adic and layer estimate
+of \hyperref[sub:W12]{W12} (\decid{D541}--\decid{D546}), the odd minus-part estimate of
+\hyperref[sub:W14]{W14} and the remaining cases specified below.
+\end{formalstatement}
+
+\begin{proof}
+\emph{Obtain the estimates from the same row.}
+Put $O=\code{OpenImageCondition.mk}(\mathcal R)$. For the three arguments
+of \nolinkurl{automorphic_window_of_inputs}, use $O$, the
+isobaric identity \nolinkurl{baseChangeN} (\hyperref[sub:W02]{W02})
+and $\mathcal R$ itself. The CM record from $O$ and the local, automorphic
+and cohomological records give a rank-$n$ record $H$. Patch $H$ with
+\nolinkurl{descWeak} to get $H'$. Its rank-$n$ field gives $C_K$.
+Use both symplectic estimates from W09, W08 with the two-twist Kato
+and unramified automorphy fields, and W10 with the second component of
+the end-data bound. These supply I, II, III, V simultaneously.
+The applications are \nolinkurl{vwin_of_row}
+(\nolinkurl{VwinOfRow.lean:4--5}),
+\nolinkurl{v_window_of_depth_zero_residual_bc_cm} and
+\nolinkurl{automorphic_window_of_inputs} (\nolinkurl{TopMainZj.lean:55--74}),
+\nolinkurl{vwin_of_hypotheses_H_E_alt} and
+\nolinkurl{v_window_of_literal_automorphy_n}
+(\nolinkurl{WindowBoundOfLiteratureLevel.lean:25--34}).
+
+\emph{Pass from characters to an odd plus-part estimate.}
+The Poitou--Tate, local finiteness and local duality fields with $C_K$
+give Count Vs on the complementary range $R_1>2^{c_2}$ in Case V.
+For exceptional $\ell$ and $k\ge2$ of odd $\chi_P$-order, Count IV
+bounds the weighted sum over twists for that character by
+$B+(N_ht)^C$ when the prescribed layer at $\ell$ has bound $B$.
+For nonexceptional $\ell$ in Case Z ($\ell-1\mid2k$, $\theta=1$),
+use \nolinkurl{countZ} applied to \nolinkurl{X.propZ}
+(\hyperref[sub:W15]{W15}). By the case lemma, I, Z, II, III cover
+nonexceptional odd primes, and II, IV, V cover exceptional odd primes.
+The transfer to field lengths in \nolinkurl{sumOut} bounds the entire
+nonexceptional plus sum by $u^{C_0}$, $u=N_ht$. In this transfer
+I is summed collectively at each $k$. For each remaining prime
+$\ell\notin B_\chi$, $\ell-1\mid2k$ implies $\ell\le2k+1<2t$.
+The lemma \nolinkurl{sumIn} gives a singleton bound
+$u^{C_\ell}+C_\ell B$ for each exceptional odd prime at its fixed
+layer. Both transfers give termwise finiteness. These lower inputs of
+\decid{D535} occur in \nolinkurl{HV.cases} (\nolinkurl{Cases.lean:8--12}),
+\nolinkurl{LayerLe.lean:12--37}, \nolinkurl{sumOut}
+(\nolinkurl{SumOut.lean:50}, \nolinkurl{SumOut.lean:171--204}),
+\nolinkurl{sumIn} (\nolinkurl{FinalLe.lean:86}),
+\nolinkurl{pointHV_of_counts} (\nolinkurl{JointWinOfCounts.lean:16--18})
+and \nolinkurl{Core.of_four_alt} (\nolinkurl{HVCore.lean:18--22}).
+
+To see uniformity in the prime set, put $b=\#B_\chi$ and choose an
+integer $D\ge C_\ell$ for all its prime members. Outside $B_\chi$ use
+the collective bound once. Inside, sum at most $b$ singleton bounds.
+For $B\ge0$, $u\ge2$, the resulting bound
+$u^{C_0}+bu^D+bDB$ is at most $u^{C}+CB$ with, for instance,
+$C=C_0+D+b+bD$ (use $2^b\ge b+1$).
+Finiteness at each odd prime follows by taking its singleton.
+This proves the combination used by \nolinkurl{HV.point},
+\nolinkurl{PointArith.lean:36--92}. It applies at each fixed vector
+of layer heights, chosen before the growing host.
+
+\emph{Choose one interval.}
+Write $B(x)=\exp(x^{4\varepsilon/5})$. The page inequalities imply
+$2\le s(x)$, $2^{s(x)}\le 2x^{2+8\varepsilon}\le x^4$,
+and $2\le t(x)\le x^{401}$ for $x\ge2$.
+W12, applied to the data of $\chi$ at $C_t=401$, gives the
+two-adic bound $B(x)$ and the exceptional layer bounds $B(x)$ on
+one interval. W12 uses Poitou--Tate, both local fields above,
+Ferrero--Washington and $C_K$. With W14 the odd minus bound comes
+from \nolinkurl{ML.iv} using Poitou--Tate and the unramified
+orthogonality field (\nolinkurl{Core.of_four_alt}, \nolinkurl{HVCore.lean:18--22}).
+The plus estimate just proved applies on \emph{every} interval
+having those layer bounds. Indeed $x\le X$ implies $t(x)\le X^{401}$,
+and $q,d>2X^{401}+1$ together with the fixed prime thresholds give
+a large host and the two thresholds of I. Its modulus equals
+$N=\operatorname{cond}(E)$, so its plus budget is $(Nt)^C+CB(x)$.
+This is \nolinkurl{HV.thmHV} (\nolinkurl{ThmHV.lean:6--40},
+\decid{D535}). Thus choosing the W12 interval once also supplies
+the plus bound there (\nolinkurl{jointWin_of},
+\nolinkurl{PrimeSetBoundDataOfPrimitiveChar.lean:145--156},
+\decid{D538}, \decid{D539}).
+
+More precisely, let $J>0,C,P,X_J$ be the joint constants, with $P$
+dominating all the fixed prime thresholds. Set $J'=\max(1,J)$,
+$z=X^{1/J'}$. For a \code{WinPair} at $z$, its logarithmic lower
+bounds eventually exceed $\log(2X^{401}+1)$ and every fixed threshold's
+logarithm. Its upper bounds give
+$\log(qd)\le z^{\varepsilon/5}(1+\log^2 z)\le z^{\varepsilon/4}
+\le X^{\varepsilon/(4J)}$. The residue conditions hold and the
+two primes exceed $N_\chi$, hence are coprime to it. These are
+exactly the conditions for the joint interval. Its lower end is
+$Y\ge X^{1/J}\ge z$, and $Y^2\le X$.
+All ensuing estimates can be imposed for $x\ge L$ by taking
+$X_0\ge\max(X_J,L^{J'})$. See \nolinkurl{vwinAt_of_joint},
+\nolinkurl{AdmissibleOfPageN.lean:41--101} (\decid{D536}).
+
+\emph{Add the three budgets.} Fix $x,E$ as in the statement.
+The congruence $q\equiv3\pmod4$ supplies the CM structure required
+for the odd estimates. Write $n=[E:\mathbb Q]$.
+The field bounds give $n\le N\le 2^{s(x)+2}N_\chi qd$.
+Thus $u=Nt\ge1$ and $\log u\le 2x^{\varepsilon/4}$ eventually:
+$\log(qd)\le x^{\varepsilon/4}$ and the remaining terms are a fixed
+constant plus $O(\log x)$. Set $a=x^{\varepsilon/4}$.
+By W14 and \nolinkurl{minusBound_le_exp_of_log_le}
+(\nolinkurl{minusle.lean:6--10}), the odd minus budget is at most
+$K\exp(8a)$ with $K$ independent of $x,E$. This applies along
+our admissible cutoff by \nolinkurl{thmBc_iff} (\decid{D537},
+\nolinkurl{PrimeSetBoundDataOfPrimitiveChar.lean:112}).
+For odd primes the finite plus and minus lengths add to the full length.
+Split any finite $S$ into its odd elements and its possible element $2$.
+Nonnegativity gives a contribution at $2$ at most $B(x)\log2$,
+whether or not $2\in S$. Hence every term is finite and the total is
+at most
+\[
+ B(x)\log2+K\exp(8a)+u^C+C B(x).
+\]
+This uses \nolinkurl{vvle_of_parts} (\nolinkurl{LengthEqAddEigen.lean:127--189})
+and \nolinkurl{vwinAt_of_joint} (\nolinkurl{AdmissibleOfPageN.lean:102--129}).
+For large $x$ this expression is at most
+$(1+\log2+K+|C|)\exp(\max(1,8,2|C|)x^{4\varepsilon/5})$.
+Its logarithm divided by $x^\varepsilon$ tends to zero, so increasing
+$X_0$ once gives $\exp(x^\varepsilon/2)$ uniformly. This proves the
+claimed window and, on quantifying over $\chi$, gives $V$.
+See \nolinkurl{error_terms_le_sqrt_exp_rpow}
+(\nolinkurl{ErrorTermsLeSqrtExpRpow.lean:6--8}),
+\nolinkurl{vwin_of_joint} (\nolinkurl{AdmissibleOfPageN.lean:131--133},
+\decid{D540}) and \nolinkurl{vwin_of_counts}
+(\nolinkurl{JointWinOfCounts.lean:30--33}, \hyperref[sub:W13]{W13}).
+\end{proof}

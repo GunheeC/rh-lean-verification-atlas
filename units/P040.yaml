@@ -1,0 +1,108 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "P040",
+  "title": "A Poitou–Tate length identity with compact coefficients",
+  "track": {
+    "primary": "local",
+    "secondary": [
+      "ktheory"
+    ]
+  },
+  "statement": "Let \\(F\\) be a number field and \\(\\ell\\) a prime such that \\(\\ell\\ne2\\)\nor \\(F\\) has no real place. Assume finite-coefficient Poitou--Tate\nduality, local finiteness and local Tate duality. For every allowed\nset of local data \\(D\\) and every \\(e\\in\\mathbb Z\\), with\n\\(A_e=(\\mathbb Q_\\ell/\\mathbb Z_\\ell)(-e)\\),\n\\[\n \\operatorname{length}H^2(G_{F,S},\\mathbb Z_\\ell(e+1))\n      +\\nu_{\\rm Gal}(\\ell,F,|e|)\n   =\\operatorname{length}\\Sha^1(D,A_e)\n      +\\sum_{w\\in D.S}\\operatorname{length}H^0(F_w,A_e).\n\\]\nAll lengths are extended \\(\\mathbb Z_\\ell\\)-lengths;\n\\(\\Sha^1\\) is the kernel of the specified localization.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Take a number field, a prime $\\ell$ odd or with no real places of the field, admissible local data and an integral twist.",
+    "Finite-coefficient Poitou–Tate duality, local finiteness and local Tate duality hold."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.LDataCardLeFinrank.vFormula_of_classicalTheorems",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/GaloisCohomologyLength/Formula.lean",
+      "line0": 15,
+      "line1": 24,
+      "sha256": "7c56f35b41ca74425b09d9a7d9c41d9189f2fd59a61fe7db672fed431c8ff356",
+      "dominated": 51,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "7.17 (pn:P040)",
+      "pages": [
+        82,
+        82
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/P040.tex",
+      "section": "pn:P040",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L1",
+  "reviews": [
+    "reviews/R20_review.md"
+  ],
+  "prerequisites": [
+    "D006"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [
+    {
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "lines": [
+        60,
+        60
+      ],
+      "scope": "R20 local implication under its stated premises, not its prerequisite cones.",
+      "verdict": "Statement exact"
+    },
+    {
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "lines": [
+        115,
+        115
+      ],
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript.",
+      "verdict": "Exact statement comparison"
+    }
+  ],
+  "paper_id": "P040",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "a-poitoutate-length-identity-with-compact-coefficients",
+  "aliases": [
+    "A compact-coefficient length formula",
+    "P040 A Poitou–Tate length identity with compact coefficients"
+  ],
+  "background": [
+    "Poitou–Tate duality",
+    "Tate twists",
+    "Local cohomology"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "7.17 (pn:P040)",
+    "pages": [
+      82,
+      82
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "D006": "statement-reading"
+  },
+  "summary": "With finite-coefficient duality and local finiteness, a length identity relates global second cohomology to the first-cohomology localization kernel and local fixed vectors. It applies at two under the stated no-real-place condition and keeps the global correction term visible."
+}

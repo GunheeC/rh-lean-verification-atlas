@@ -1,0 +1,99 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "Z1.1.05",
+  "edition_sha256": "c664c2512f0f8da98a8bb6001b6e603e67c513709e390fbe00540d7d8cb286aa",
+  "note_sha256": "c3732f77c2beb602f1752a29eaf3dfa329ea3e84a80a8bf97ed6708f60802416",
+  "statement_sha256": "6126ca0ea198e10dfeebc9ec102ea60d8f981517376c23326be4e038ee78102b",
+  "sources": [
+    {
+      "path": "notes/blueprint/Z1.1.05.tex",
+      "sha256": "c3732f77c2beb602f1752a29eaf3dfa329ea3e84a80a8bf97ed6708f60802416"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Away from ell the Artin value on inertia is a transported local unit value, so its m-th power is one.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: Artin realization and local power bound"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Sd.twist_of_printed_results",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TTwist.lean",
+          "line0": 143,
+          "line1": 178
+        }
+      ],
+      "source": "notes/blueprint/Z1.1.05.tex",
+      "anchor": "The given \\(m\\)-power bound on the local values of \\(Y\\) gives the",
+      "source_lines": [
+        7,
+        26
+      ],
+      "claim_sha256": "9c08720689da87026222a0ac5ce247c53daf0c7d604de5cd1f38f045bbddc242",
+      "passage_sha256": "60ae03a91fd4d4e560e9a23756040e9165ad886daad35cea620d281b04b89a6a",
+      "sha256": "2a605a502401e5a59ecfe995dd4da60ffa5c6c328405a3b1a65eef57291d7552",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "At an unramified finite place the value at the chosen Frobenius has the reciprocal normalization.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: unramified reciprocity normalization"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Sd.twist_of_printed_results",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TTwist.lean",
+          "line0": 143,
+          "line1": 178
+        }
+      ],
+      "source": "notes/blueprint/Z1.1.05.tex",
+      "anchor": "the inertia element is already the identity. At an unramified finite place",
+      "source_lines": [
+        7,
+        26
+      ],
+      "claim_sha256": "3a040e1521832dbf73f6374f6cfc489a476c4f177b09913464f51a1e0e23dc75",
+      "passage_sha256": "60ae03a91fd4d4e560e9a23756040e9165ad886daad35cea620d281b04b89a6a",
+      "sha256": "cfec003847d371a30596788667390347e0cd294c45b48dfad6521e218db913fc",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The local character calculations require an additional linked marking on the same frame to enter the dense conclusion.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S1",
+        "S2",
+        "input: linked-frame marking"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Gal.projectedFormsSystemPart.linked_endomorphism_dense",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/LinkedEndE.lean",
+          "line0": 18,
+          "line1": 67
+        }
+      ],
+      "source": "notes/blueprint/Z1.1.05.tex",
+      "anchor": "conjugation identity. The local consequences do not construct \\(Y\\) or",
+      "source_lines": [
+        7,
+        26
+      ],
+      "claim_sha256": "30aae485291717979a4d1184ade8f58dabbfc54fb67bc9cc1ca092494cf8ff04",
+      "passage_sha256": "60ae03a91fd4d4e560e9a23756040e9165ad886daad35cea620d281b04b89a6a",
+      "sha256": "fc968eb792bccfd3e32f785520c8a31e0ee1fd7bf62d1d0a7c1f6383f5b10a69",
+      "ai_review": []
+    }
+  ],
+  "history": []
+}

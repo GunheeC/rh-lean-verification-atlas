@@ -1,0 +1,89 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "W07",
+  "title": "Vanishing for the two rank-two twists",
+  "track": {
+    "primary": "galois",
+    "secondary": [
+      "local"
+    ]
+  },
+  "statement": "Assume $H'$. Fix an odd prime $\\ell$, $e\\ge1$ with $\\ell-1\\nmid2e$,\nan imaginary quadratic field $K$, an even positive level $N$ coprime to\n$D_K=|\\operatorname{disc}K|$, with $\\ell\\nmid D_K h_K$, and an\nalgebraic closure $\\Omega/\\mathbb Q$ containing $K$. Write\n$\\kappa$ for the cyclotomic character and $\\theta$ for the quadratic\ncharacter cutting out $K$. Take $\\psi$ and $W:G_{\\mathbb Q}\\to\n\\mathrm{GL}_2(\\overline{\\mathbb Q}_\\ell)$ satisfying the source\nconditions \\code{Used}. Explicitly, $\\psi$ factors through level $N$,\nhas prime-to-$\\ell$ order, has square one on inertia at $\\ell$, and\n$\\kappa^e\\psi$ is even. The representation $W$ has level datum\n$(ND_K;e,-e)$, the ordinary polynomial condition for $(e,-e)$, and\ndeterminant $\\theta$. On inertia at $\\ell$ its trace is\n$a+a^{-1}$ for $a=\\kappa^e\\psi$. Globally the residual trace is\n$\\theta a+a^{-1}$. At a chosen place above $\\ell$, inertia lies\nin $\\ker\\theta$ and the prescribed flag characters restrict to\n$\\kappa^{\\pm e}\\chi$ for a single character through level $\\ell$.\nThe restriction to $G_{K(\\mu_{\\ell^\\infty})}$ is irreducible.\nSuppose a weight-$2e+1$ newform realizes $W\\otimes\\kappa^{-e}$\nvia $\\iota$, and on every quadratic CM restriction on which $W$ is\nirreducible it has the witness \\code{WitA}: local unlinked flags\nabove $\\ell$ become power-unlinked, and each attached regular\nalgebraic cusp form has a common real parameter for its local window\naway from $\\ell$ and at the power-unlinked places. For both $W$ and $W\\otimes\\theta$, every cocycle satisfying the\nBloch--Kato local conditions is a coboundary.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume $H'$, an odd $\\ell$, $e\\ge1$, $\\ell-1\\nmid 2e$, and the stipulated imaginary quadratic field, closure and even positive level with the coprimality restrictions.",
+    "Use the Used character, representation and ordinary-polynomial inputs with the given local and irreducibility conditions.",
+    "The weight-$2e+1$ newform realizes the indicated twist; every quadratic CM restriction on which the representation stays irreducible has the specified local flags and common real window parameter."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.Z.Kato.WeilSphericalRecords.katoTwoW_of_printsH",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/KatoTwoWOfPublishedH.lean",
+      "line0": 48,
+      "line1": 49,
+      "sha256": "0d46b7fd06c3ce5ca058662258365575813229d001e91ee490bb87e01a06254e",
+      "dominated": 145398,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "5.43 (sub:W07)",
+      "pages": [
+        50,
+        50
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/W07.tex",
+      "section": "sub:W07",
+      "pages": []
+    }
+  ],
+  "status": "Statement only",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [
+    "B04",
+    "P026",
+    "Z1.3.08"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [],
+  "paper_id": "W07",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "vanishing-for-the-two-rank-two-twists",
+  "aliases": [
+    "katoTwoW_of_printsH",
+    "W07 Vanishing for the two rank-two twists"
+  ],
+  "background": [
+    "Kato classes",
+    "Ordinary modular forms",
+    "Local Galois cohomology"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "5.43 (sub:W07)",
+    "pages": [
+      50,
+      50
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "B04": "graph",
+    "P026": "graph",
+    "Z1.3.08": "graph"
+  }
+}

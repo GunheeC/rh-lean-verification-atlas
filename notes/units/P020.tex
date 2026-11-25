@@ -1,0 +1,23 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit P020. Local manuscript v3, item 6.36, heading on printed PDF p. 68.
+% UpperTheory.V.HV.Core.of_four_alt
+% paper2/upper.tex:672–678. Verbatim excerpt; SHA-256 92c3d82d783244d4a2ef6961e26cbd29ade566a9b97861f93bf41acbbc9e80ed.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+\noindent\nolinkurl{UpperTheory.V.FW.ferreroWashington} --- in-repo constant (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/FerreroWashingtonIndex/FerreroWashington.lean:104--119}); variant.\par
+\noindent\nolinkurl{UpperTheory.V.HV.U.pt_s} --- in-repo constant (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/HVFinalU.lean:11}); not compared.\par
+\noindent\nolinkurl{GlobalTheory.Mem.LiteralAutomorphy.LitCoh.pt} --- record field (\path{Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/Brauer.lean:105--106}); not compared.\par
+\noindent\nolinkurl{GlobalTheory.Mem.LiteralAutomorphy.LitCoh.lfK} --- record field (\path{Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/Brauer.lean:114}); not compared.\par
+\noindent\nolinkurl{GlobalTheory.Mem.LiteralAutomorphy.LitCoh.ltK} --- record field (\path{Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/Brauer.lean:115}); not compared.\par
+% End of atlas edition annotation.
+
+\begin{formalstatement}[The Selmer window from four character counts]\label{pn:P020}
+Assume the local, automorphy, cohomological and CM input records of \code{LiteratureRankNHypothesis}, the existence of one $C_K\in\mathbb R$ satisfying \code{LemmaK}, and the four bounds \code{CountI}, \code{CountII}, \code{CountIII}, \code{CountV} of \nolinkurl{HeightAndVanishing/Counts.lean:53--69}. Then the assertion $V$ above holds for every primitive $\psi$. In \code{LemmaK} the same $C_K$ bounds the log cardinality of the finite group $H^2(\mathrm{zlTw}(D,j+1))$ by $\exp((2j[L:\mathbb Q])^{C_K}\log(2|\operatorname{disc}L|))$ for every prime $\ell$, every admissible totally complex field $L$ with the required root of unity, closure and local datum $D$, and every $j\ge1$ (\nolinkurl{LemmaK.lean:9--17}).
+\end{formalstatement}
+\nodestatus{P020}
+\begin{outline}
+The assembly in blueprint Chapter~S, \emph{Assembly}~\bploc{sec:S-assembly}, uses Poitou--Tate, local finiteness, local Tate duality, the uniform bound with $C_K$ and Ferrero--Washington for the prime $2$ and the exceptional-prime layer bound. Use that layer bound in the separately proved Case~IV. For the minus part use the Poitou--Tate and unramified orthogonality fields in the minus-part comparison. The remaining count \code{countZ} is supplied independently. Combining Cases~I, II, III, V with these results gives the plus-part bound. For $t=\lfloor x^{401}\rfloor$, the single window from the layer bound works for the three parts. If $B_2,B_-,B_+$ are their bounds, then termwise splitting at odd primes and the separate prime $2$ give total bound $B_2\log 2+B_-+B_+$. On this window $\log(Nt)\ll_{\psi} x^{\varepsilon/5}(1+\log^2x)+\log x\ll x^{\varepsilon/4}$ for $N=\operatorname{cond}(E)$. The polynomial-in-$Nt$ terms and the sum over the fixed divisors of the character order are $\exp(O(x^{\varepsilon/4}))$. The other terms are $O(\exp(x^{4\varepsilon/5}))$. Increasing $X_0$ gives $\exp(\tfrac12 x^\varepsilon)$, as required. This is the assembly outlined in blueprint Chapter~S, Propositions \emph{vwin\_of\_counts} and \emph{vwinAt\_of\_joint}~\bploc{prop:S-vwin-of-counts}. The Lean proof uses five intermediate results beyond the displayed hypotheses: \nolinkurl{Win.thmBab_of_lemmaK} with \nolinkurl{FW.ferreroWashington}, \nolinkurl{Odd.thmBcFree_of} with \nolinkurl{ML.iv}, and \nolinkurl{countZ} applied to \nolinkurl{X.propZ} (\nolinkurl{HVCore.lean:18--22}). Their derivations are outside this outline.
+\end{outline}

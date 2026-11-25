@@ -1,0 +1,147 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D014",
+  "title": "Inertia and Frobenius at exceptional host primes",
+  "track": {
+    "primary": "analytic",
+    "secondary": [
+      "galois"
+    ]
+  },
+  "statement": "For each axial host on a frame the induced arithmetic data satisfy the host prime conditions with exceptional set consisting of its distinguished q and its given small primes.\n\\[\n\\operatorname{HostFactsS}\\bigl(\\operatorname{arith}(H),\\{q_H\\}\\cup S_{\\rm small}(H)\\bigr).\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Fix a frame and an axial host on that frame.",
+    "Use its induced arithmetic record and the union of its distinguished prime with its recorded small-prime set."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.Comparison₂.hostFactsS",
+      "file": "Development/AutomorphicArithmetic/PrimitiveCosets/hostFactsS.lean",
+      "line0": 127,
+      "line1": 136,
+      "sha256": "ef97916068b30a9b83bc32d6b22fb03bdc3882660a3447f087cb63045e087583",
+      "dominated": 130,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v5",
+      "section": "A6 · Inertia at exceptional host primes",
+      "pages": [
+        15,
+        16
+      ],
+      "review_status": "pending_review",
+      "coverage": "Revised paper v5 exposition, pending independent review. The PDF link opens the release attachment after publication."
+    },
+    {
+      "document": "notes/units/D014_v4.md",
+      "section": "D014 · Inertia and Frobenius at the exceptional host primes",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-3 written exposition, pending independent review."
+    },
+    {
+      "document": "notes/units/D014_round3.md",
+      "section": "D014 · Inertia and Frobenius for the arithmetic of a fixed host",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-3 written exposition, pending independent review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "G.16 (decomp:D014)",
+      "pages": [
+        160,
+        160
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D014.tex",
+      "section": "decomp:D014",
+      "pages": []
+    },
+    {
+      "document": "paper2_v4",
+      "section": "Mechanism, §3",
+      "pages": [
+        15,
+        16
+      ],
+      "coverage": "Paper v4, pending independent review."
+    }
+  ],
+  "status": "Full",
+  "grade": "L2",
+  "reviews": [
+    "reviews/DB3_review_A.md"
+  ],
+  "prerequisites": [
+    "D511"
+  ],
+  "size_pages": 4,
+  "open_questions": [
+    "Which simultaneous congruences give the nontrivial inertia element at the exceptional prime d?"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [
+    {
+      "review": "reviews/DB3_review_A.md",
+      "lines": [
+        98,
+        106
+      ],
+      "grade": "L1",
+      "verdict": "CONFIRMED",
+      "scope": "Every frame and axial host yields HostFactsS on the exceptional set insert H.q H.small; each field refers to that same host. Statement comparison only."
+    },
+    {
+      "review": "reviews/DB3_review_A.md",
+      "lines": [
+        98,
+        106
+      ],
+      "grade": "L2",
+      "verdict": "CONFIRMED",
+      "scope": "Every frame and axial host yields HostFactsS on the exceptional set insert H.q H.small; each field refers to that same host. Full written implication in the reviewed edition."
+    }
+  ],
+  "paper_id": "D014",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "inertia-and-frobenius-at-exceptional-host-primes",
+  "aliases": [
+    "hostFactsS",
+    "D014 Inertia and Frobenius at exceptional host primes"
+  ],
+  "background": [
+    "Artin reciprocity",
+    "Inertia and Frobenius"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.16 (decomp:D014)",
+    "pages": [
+      160,
+      160
+    ]
+  },
+  "question_sources": [
+    "questions/local.md"
+  ],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "D511": "statement-reading"
+  },
+  "review_status": "pending_review",
+  "summary": "An axial host determines inertia and Frobenius data satisfying the host prime conditions, with its distinguished prime and listed small primes singled out. This identifies precisely which primes an arithmetic character calculation must handle separately."
+}

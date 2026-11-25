@@ -1,0 +1,1525 @@
+{
+  "source_files_sha256": {
+    "blueprint/status.json": "1793c863105d7b5f2c3d380e8606e5efc1eaa3e2fc2a6b3e9beb03a476506e71",
+    "release/status.json": "60f8927502903c7604c59726cef3dceb5a92ee0372f4a864d8a0f0521a84ef8e",
+    "out/R19_skeleton.json": "d292e90417f02d658c69098885103d7f321a7752f2aad44f146a36eeddaf5ee4",
+    "out/R20_dispositions.json": "551281c58181fbb84999fbfe7919f9ec66e07a8532cb9bcf8d868604594bc740",
+    "out/R21_parent_status.json": "225eacb85f8ae4423cdf5ff40af52b05b032f5dad8aa7ab1406e499b1cc61120",
+    "out/R21_split_nodes.json": "f78546254205424bc1911c85c3340701ac20a2ded20be5d2632ae63cab99a8f0",
+    "out/R22_decomposition.json": "d399939c6c4b13358fd7019bd17e13a2e8e5480d8b4eadf787e47503f5d63cfa",
+    "out/R22_graph_weights.json": "6883a158098943b33c26550945d59caa067651d648e926b24dce45f94820d9b6",
+    "out/R23_pending.json": "0e4b1f593a70e1f3b83604c4c131c8d7e1de690652bc9bf0d0260e931ca0abb7",
+    "out/R23_review.md": "b4255492226a35974a296a52c921ecd647e89d563e56363af91a4239b7c2b82c",
+    "tasks/DB_round1.md": "1963a3b12de77dc44e95f7fa39c36075b047d08d1a847622ae987a6acac8de75"
+  },
+  "source_commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "blueprint_expert_units": {
+    "N415": {
+      "title": "Relative prime count in progressions",
+      "status": "complete",
+      "check": "Check the normalization of the exceptional character and the sign of the term at the reduced residue class. In the transition between zero-free regions, verify that the change of window is absorbed in the stated relative error throughout the permitted range of $X$.",
+      "basis": "published comparison",
+      "remaining_input": ""
+    },
+    "Z1.5.01": {
+      "title": "Coefficient representations and the Weyl bound",
+      "status": "complete",
+      "check": "Verify adjacent-column antisymmetry from the matrix-unit commutator and the cancellation of the conjugate embedding in the Wirtinger derivative.",
+      "basis": "project deduction",
+      "remaining_input": ""
+    },
+    "Z1.5.02": {
+      "title": "Counting automorphic eigensystems",
+      "status": "complete",
+      "check": "Verify the three finite-adele reductions, the actual constructor of the two automorphic hypotheses, and the independence of the stabilizer bound from weight and level.",
+      "basis": "project deduction",
+      "remaining_input": ""
+    },
+    "Z1.5.03": {
+      "title": "Frobenius classifiers over a CM field",
+      "status": "partial",
+      "check": "Verify conjugation and integrality for the same global representation.",
+      "basis": "Project classifier using CM Satake data and Frobenius uniqueness",
+      "remaining_input": "Construct the conjugation and integrality comparisons and the fixed-purity CM classifier with Frobenius separation at all permitted coefficient primes."
+    },
+    "Z1.5.04": {
+      "title": "Classifiers over an imaginary quadratic field",
+      "status": "partial",
+      "check": "Track the variable purity and the same local data through the quadratic comparison.",
+      "basis": "Project classifier using imaginary-quadratic Satake data",
+      "remaining_input": "Prove the simultaneous conjugation, duality and integrality comparisons for the imaginary-quadratic classifier at the prescribed weight."
+    },
+    "Z1.5.05": {
+      "title": "Descent of classifiers to the rational case",
+      "status": "partial",
+      "check": "Verify the two-witness fibre argument and the choice of an admissible restriction.",
+      "basis": "Project count using quadratic restriction and self-twist bounds",
+      "remaining_input": "Establish the compatible Frobenius root choices and the restriction/self-twist bound on the fibres of the rational classifier."
+    },
+    "Z1.5.06": {
+      "title": "Rational Frobenius trace bound",
+      "status": "complete",
+      "check": "Fix the same place and verify that the inverse-root convention and trivial inertia action give the trace at the prescribed inverse Frobenius.",
+      "basis": "project deduction",
+      "remaining_input": ""
+    },
+    "Z1.5.07": {
+      "title": "CM Frobenius trace bound",
+      "status": "complete",
+      "check": "Use the same bridge and finite extension in the potentially crystalline alternative; verify the action on the Tate period and the scaling factor at inverse Frobenius.",
+      "basis": "project deduction",
+      "remaining_input": ""
+    },
+    "Z2.K5": {
+      "title": "Equivariant character count",
+      "status": "complete",
+      "check": "Reproduce the finite character count from the divisor quotient. Keep the power arising from units on the same side throughout; compare the surviving denominator with the contribution of the initial torsion and of the valuation of $E$.",
+      "basis": "project deduction",
+      "remaining_input": ""
+    },
+    "Z5.1": {
+      "title": "Gram determinant and additive index",
+      "status": "complete",
+      "check": "Compute the real covolume first for the lattice on a full basis. Check the factor at a conjugate pair, the change of frame, and the direction of the index when that free sublattice is enlarged.",
+      "basis": "project deduction",
+      "remaining_input": ""
+    },
+    "Z5.2": {
+      "title": "Height of the evaluation dual",
+      "status": "complete",
+      "check": "Identify the dual used by evaluation before applying the height formula. Compute the real measure change and check the rank normalization of the slope. A rank-one lattice is a useful explicit test of the sign.",
+      "basis": "project deduction",
+      "remaining_input": ""
+    },
+    "N076": {
+      "title": "Bessel period in the wave grid",
+      "status": "partial",
+      "check": "Derive the admissible-word normal form, the product estimate after the gauge change, and the one-step Pieri coefficients with their squared normalization.",
+      "basis": "Project Bessel and Pieri estimates. Both Zuckerman thresholds are hypotheses",
+      "remaining_input": "Derive the admissible-word normal form and its gauge-transformed hat-product bound together with the squared Wigner coefficient on each one-step Pieri summand."
+    },
+    "N188": {
+      "title": "Nonsingular Hermitian Gram coefficient",
+      "status": "complete",
+      "check": "Align the Fourier transform, the adelic test function, the rational fibre and its measure with the cited version of Weil's formula. Check explicitly where nonsingularity and the strict inequality $M>2n$ enter the comparison.",
+      "basis": "published comparison",
+      "remaining_input": ""
+    },
+    "N318": {
+      "title": "Joined estimates at the square top term",
+      "status": "partial",
+      "check": "Reconstruct global Fock evaluation, split and inert local doubling factors, compatible quotient maps for the finite vectors, and the normalized bottom kernel and class sum.",
+      "basis": "Project normalization using real Howe duality and the stated theta and local inputs",
+      "remaining_input": "For the joined estimate, match the global Fock evaluation and its split and inert factors with proportional images of the fixed finite vectors and the normalized bottom class sum."
+    },
+    "Z4.1": {
+      "title": "Normalized Hecke action on jets",
+      "status": "complete",
+      "check": "At level zero distinguish the estimate before and after the exceptional even loss. At positive levels apply the normalized operator to the same lift. Check that admission supplies each input used in both inequalities.",
+      "basis": "project deduction",
+      "remaining_input": ""
+    },
+    "Z4.2.01": {
+      "title": "Standard local-model parameters",
+      "status": "complete",
+      "check": "Verify the lower bound on the rank in the branch r=1.",
+      "basis": "project deduction",
+      "remaining_input": ""
+    },
+    "Z4.2.02": {
+      "title": "Local realization of the tagged kernel",
+      "status": "partial",
+      "check": "Test the tame determinant comparison for the same level element and trace the support and integrality laws at every chart.",
+      "basis": "Joint existence consumes the entire pinned adelic datum law. CurveEx is its external premise",
+      "remaining_input": "Derive the rational, support, congruence and integrality laws for xiAd, and level equivariance in the matrix, coupled and type-prime top charts, including the adelic determinant-to-tame-character comparison."
+    },
+    "Z4.2.03": {
+      "title": "Adelic lattice dictionary",
+      "status": "complete",
+      "check": "Check the class label and right correction at zero and the chart integrality assumptions for the level element.",
+      "basis": "project deduction",
+      "remaining_input": ""
+    },
+    "Z4.2.04": {
+      "title": "Theta kernels for adjacent pairs",
+      "status": "complete",
+      "check": "Inspect the four-copy identity in the coefficient branch, the standard-pair integrality projection and the source of entireness at the prescribed kernel.",
+      "basis": "R16 review A approved unconditional completion after E1–E7. The 26 site declarations from R15, the two reviewed theta inputs and the consolidated translated-coefficient argument supply the Pair fields",
+      "remaining_input": ""
+    },
+    "Z4.2.05": {
+      "title": "Embedding and parity at each position",
+      "status": "complete",
+      "check": "Trace the involution at odd positions and use the embedding supplied by this joint.",
+      "basis": "project deduction",
+      "remaining_input": ""
+    },
+    "Z4.2.06": {
+      "title": "Arithmetic translation of the frames",
+      "status": "complete",
+      "check": "Check the inverse on the character of the level representative, algebraicity of cXi itself, and the sign of the principal determinant-ideal change.",
+      "basis": "Conditional on the supplied site and dictionary. The implementation calls the full Pair theorem of Z4.2.04. The move uses its admitted pair and the algebraicity of both scal0 and chiFac, derived separately in the hand argument",
+      "remaining_input": ""
+    },
+    "Z4.2.07": {
+      "title": "Comparison away from a split prime",
+      "status": "complete",
+      "check": "Check both kernel-lattice inclusions at both ranks, the quantifier order of the units, and the independent pinning and field-embedding identifications.",
+      "basis": "Conditional on the supplied site and dictionary. Of the three Pair consequences isolated in Z4.2.04 (admission, algebraicity of scal0 and of chiFac), the away comparison uses the self-dual lattices and algebraicity of scal0",
+      "remaining_input": ""
+    },
+    "Z4.2.08": {
+      "title": "Integrality of the normalized scalar",
+      "status": "complete",
+      "check": "Verify exactly which site fields enter, the even-rank self-duality from the pair, the Frobenius action on the type norm and the negative sign of each local length.",
+      "basis": "Conditional on the supplied site and dictionary. Of the three Pair consequences isolated in Z4.2.04 (admission, algebraicity of scal0 and of chiFac), the scalar bound reads only the admitted pair, giving even ranks and self-duality. Its own character argument supplies the bound",
+      "remaining_input": ""
+    },
+    "Z4.2.09": {
+      "title": "Transformation law for frame series",
+      "status": "partial",
+      "check": "Track both relative indices, pass from local to multi-prime composition, and carry every Heisenberg phase and class-character factor through the unitary pullback.",
+      "basis": "A single split fiber has an explicit finite-character interpolation and its square-root and p-adic normalizations. The root also uses the independent tied-base theorem and unitary motion of the actual kernel",
+      "remaining_input": "Supply \\nolinkurl{TieBase.base_data} (Z4.2.13), \\nolinkurl{KerMove.kerTh_move} and the bad-prime exclusion in \\nolinkurl{lev_pos_and_noConj}. For the full modelXi and movesCompose interfaces derive the geometric half-lattice comparisons for arbitrary curve bases and the simultaneous split-supported changes of a triple."
+    },
+    "Z4.2.10": {
+      "title": "Change of kernel at level zero",
+      "status": "partial",
+      "check": "Derive the rational-isometry class-kernel pullback from the tied base and prove the four scalar, operator and realization suppliers before assigning hand completion.",
+      "basis": "The scalar is one on an empty component case. Mixed contraction and the generic polynomial-vanishing test are proved, and coefficientwise injectivity gives a common realization conditional on the named suppliers",
+      "remaining_input": "Class-kernel pullback under rational isometries, including the tied base in Z4.2.13 and kernel covariance; component-independent unit; source factor identity; moved source operator and degrees; target frame realization. Supporting inputs are tuple decomposition, the class entry polynomial, its extended weight, frame invertibility, character product and reading from all realizations. Direct suppliers in the all-step argument include \\nolinkurl{sysS_ranks}, \\nolinkurl{rk_le}, \\nolinkurl{ltC_ne}, \\nolinkurl{equiv_frame_b} and \\nolinkurl{kernelSite_contractionIdentity_operatorHalf}."
+    },
+    "Z4.2.11": {
+      "title": "Change of kernel at positive levels",
+      "status": "partial",
+      "check": "Derive the rational-isometry class-kernel pullback from the tied base and prove the four scalar, operator and realization suppliers before assigning hand completion.",
+      "basis": "The scalar is one on an empty component case. Mixed contraction and the generic polynomial-vanishing test are proved, and coefficientwise injectivity gives a common realization conditional on the named suppliers",
+      "remaining_input": "Class-kernel pullback under rational isometries, including the tied base in Z4.2.13 and kernel covariance; component-independent unit; source factor identity; moved source operator and degrees; target frame realization. Supporting inputs are tuple decomposition, the class entry polynomial, its extended weight, frame invertibility, character product and reading from all realizations. Direct suppliers in the all-step argument include \\nolinkurl{sysS_ranks}, \\nolinkurl{rk_le}, \\nolinkurl{ltC_ne}, \\nolinkurl{equiv_frame_b} and \\nolinkurl{kernelSite_contractionIdentity_operatorHalf}."
+    },
+    "Z4.2.12": {
+      "title": "The admitted system on the selected chain",
+      "status": "partial",
+      "check": "Check both class-level determinants in \\nolinkurl{SPull.kerTh_eq_pull}, the unit normalizations of the two differential comparisons, the K1 lattice comparison, and equality of stabilizer cardinalities and selected polynomials.",
+      "basis": "Both kernels are assembled on the same served chain and site. The embedding extension and the series cancellation are proved here; the full first-kernel and frame comparisons remain open",
+      "remaining_input": "Supply \\nolinkurl{joint_at_nonempty} (.02), \\nolinkurl{pairOK_allSites} (.04), \\nolinkurl{site_law_xiIn} (.09) with \\nolinkurl{TieBase.base_data} (.13), and the five common inputs of the differential changes (.10 and .11). In the assembly prove the remaining fields of \\nolinkurl{kernelSite_seriesData_below_lastStep}, the stabilizer comparison \\nolinkurl{tieStab_kaAtAny}, and the realizing-polynomial comparison in \\nolinkurl{series_reading_entries}."
+    },
+    "Z4.2.13": {
+      "title": "Period, lattice and theta-vector laws of the tied base",
+      "status": "partial",
+      "check": "Audit the outstanding VecP and EqP suppliers for the same base and character.",
+      "basis": "Project comparison of a tied base with a nonzero reference theta family",
+      "remaining_input": "VecP and EqP still require the same-base character, CM, Weil and covariance suppliers classified in the round-15 register. The period is nonzero and LatAll is confirmed."
+    },
+    "Z4.3": {
+      "title": "Off-level kernel valuations",
+      "status": "partial",
+      "check": "Check the covariance suppliers and the application hypotheses at the selected row. The numerical root spans 5,049 core lines; it does not contain the full application.",
+      "basis": "Four-case numerical implication, inert CM coordinate and the conditional selected-class reader expansion have hand derivations",
+      "remaining_input": "Rational covariance and the selected-row suppliers remain open. CM2 and the three suppliers of the local host have a union of 114,570 core lines. The selected-reader finite expansion is confirmed under its stated hypotheses."
+    },
+    "Z4.4": {
+      "title": "Twisted periods on the selected chain",
+      "status": "complete",
+      "check": "The period input is approved under its displayed laws. Check the common chart choices, both transported-duality identities and the stabilizer denominator in the class sum.",
+      "basis": "Reconstructed Z4.4 suppliers, reference and twisted records, transported integral pairing and class sum",
+      "remaining_input": ""
+    },
+    "Z1.1.01": {
+      "title": "Ordinary Eisenstein seeds",
+      "status": "partial",
+      "check": "Check the simultaneous ordinary seed and both ordered eigenvalue bounds.",
+      "basis": "Project specialization of ordinary Hida input",
+      "remaining_input": "Construct one Eisenstein seed satisfying PR, RW and NoHalf at every sufficiently large weight of the specified parity."
+    },
+    "Z1.1.02": {
+      "title": "Twisting a seed into the adjoint window",
+      "status": "partial",
+      "check": "Check the global twist existence and its local window at the chosen level.",
+      "basis": "Project comparison using base change and character twisting",
+      "remaining_input": "Construct one twist with all required local types and show that its restricted seed lies in the full adjoint window."
+    },
+    "Z1.1.03": {
+      "title": "Automorphy in the adjoint window",
+      "status": "partial",
+      "check": "Check the base-change, weight and adjoint-lift inputs of the core comparison.",
+      "basis": "Project weight descent after adjoint transfer",
+      "remaining_input": "Derive the weight-compatible descent and pure-weight adjoint lift used by the core at each ramified place."
+    },
+    "Z1.1.04": {
+      "title": "Rank-three seeds at prescribed weights",
+      "status": "complete",
+      "check": "Check the decomposition-group congruence of the new diagonal characters, the parity step and the common marking.",
+      "basis": "project deduction",
+      "remaining_input": ""
+    },
+    "Z1.1.05": {
+      "title": "Automorphy of linked endpoints",
+      "status": "partial",
+      "check": "Verify the dense rank-three construction and the common endpoint witness.",
+      "basis": "Project linked-frame construction. Allen–Newton–Thorne 1.1 treats an individual lift",
+      "remaining_input": "Construct the linked frame, its finite rank-three points and a common twist giving the required automorphy at its endpoints."
+    },
+    "Z1.1.06": {
+      "title": "The common marking and degree zero",
+      "status": "partial",
+      "check": "Verify descent and the identification of both markings after the ramification test.",
+      "basis": "Project descent. Original-field polarization fails Allen–Newton–Thorne 1.1(4)",
+      "remaining_input": "From the linked points and flags derive both the ordinary marking and the host marking with their finite and rank-three automorphic conclusions."
+    },
+    "Z1.1.07": {
+      "title": "The two marked-point conclusions",
+      "status": "partial",
+      "check": "Check the common seed witnesses and propagation through the global marking assembly.",
+      "basis": "Project assembly of rank-two and dense rank-three seeds",
+      "remaining_input": "Derive the linked flags and linked ends for the same pair of seeds and carry out their joint descent."
+    },
+    "Z1.2": {
+      "title": "Ordinary adjoint rigidity",
+      "status": "partial",
+      "check": "Audit the seven crystalline comparisons and the printed hypotheses passed through hH.litN.coh at the caller. Track vanishing and linked flags under Z1.1 at the application.",
+      "basis": "Project Selmer and linked-adjoint arguments with local crystalline inputs",
+      "remaining_input": "Stage C. Local crystalline comparisons and the Fontaine Bcris boundary remain. At the caller, \\nolinkurl{ordinary_vanishing_two_of_printed_hida} (374,411 core lines through literature vertices, 374,408 stopping there) uses \\nolinkurl{hida_x_of_printed_hida} (341,282 through literature, 341,279 stopping there), \\nolinkurl{core_o_of_literal_automorphy_n} (132,810, including the 94,762-line operator statement), arithmetic Hida regularity (37,088) and local class field theory (19,625). The tangent and linked-flag suppliers belong to Z1.1."
+    },
+    "Z1.3.01": {
+      "title": "Integral Kato systems at all layers",
+      "status": "partial",
+      "check": "Construct strict integral single-symbol cocycles and one uniform tame exceptional set and loss.",
+      "basis": "Project-specific Kato comparison; B01, B02",
+      "remaining_input": "Construct strict integral single-symbol cocycles and one uniform tame exceptional set and loss."
+    },
+    "Z1.3.02": {
+      "title": "Hodge--Tate law for smoothed classes",
+      "status": "partial",
+      "check": "Prove the cusp coefficient formula for this Hecke functional, with its common loss and norm-one factors.",
+      "basis": "Project-specific Kato comparison; C01, B03",
+      "remaining_input": "Prove the cusp coefficient formula for this Hecke functional, with its common loss and norm-one factors."
+    },
+    "Z1.3.03": {
+      "title": "Equivariant Hecke projection",
+      "status": "partial",
+      "check": "Construct the odd-weight cusp representative and compare its coefficients at successive precisions.",
+      "basis": "Project-specific Kato comparison; A01, C02, B04, B05",
+      "remaining_input": "Construct the odd-weight cusp representative and compare its coefficients at successive precisions."
+    },
+    "Z1.3.04": {
+      "title": "One global system with local constraints",
+      "status": "partial",
+      "check": "Construct the initial ordinary eigenfunctional and prove Pin7 for the same tuple with common scale and lower bound.",
+      "basis": "Project-specific Kato comparison; B06, B07",
+      "remaining_input": "Construct the initial ordinary eigenfunctional and prove Pin7 for the same tuple with common scale and lower bound."
+    },
+    "Z1.3.05": {
+      "title": "Nonvanishing at cyclotomic inertia",
+      "status": "partial",
+      "check": "Establish the simultaneous Frobenius unit lift and uniform primitive-root rigidity over all coefficient indices.",
+      "basis": "Project-specific Kato comparison; C03, B08, B09",
+      "remaining_input": "Establish the simultaneous Frobenius unit lift and uniform primitive-root rigidity over all coefficient indices."
+    },
+    "Z1.3.06": {
+      "title": "Compatibility of the local and global cocycles",
+      "status": "complete",
+      "check": "Verify that the normal-form hypothesis gives positive e and that the link and the pinned local system are attached to the same closure.",
+      "basis": "project deduction",
+      "remaining_input": ""
+    },
+    "Z1.3.07": {
+      "title": "Failure of the local Greenberg condition",
+      "status": "complete",
+      "check": "Carry the original exceptional set and unramified and tame assertions into the final conclusion.",
+      "basis": "project deduction",
+      "remaining_input": ""
+    },
+    "Z1.3.08": {
+      "title": "Unramified classes in the ordinary normal form",
+      "status": "partial",
+      "check": "Discharge the nine project comparisons at the global and local producers in Z1.3.01 through Z1.3.05.",
+      "basis": "Project-specific Kato comparison; inherits the preceding gaps",
+      "remaining_input": "Discharge the nine project comparisons at the global and local producers in Z1.3.01 through Z1.3.05."
+    },
+    "Z1.4": {
+      "title": "Graded cotangent length",
+      "status": "complete",
+      "check": "Check both comparisons involving the same degree-minus-one quotient. In the upper bound track repeated points, the two-sided orbit cover and the factor two; in the lower bound inspect integrality of the normalized lift.",
+      "basis": "project deduction",
+      "remaining_input": ""
+    },
+    "Z2.K1": {
+      "title": "Cyclotomic tower and localization kernel",
+      "status": "complete",
+      "check": "Choose a generator of the cyclotomic tower and check its exact initial level. Verify that the same endomorphism of one module controls each layer, including the twist by $E$ in the displayed cokernel.",
+      "basis": "project deduction",
+      "remaining_input": ""
+    },
+    "Z2.K6": {
+      "title": "Uniform layer count and the global kernel",
+      "status": "complete",
+      "check": "Take a single class in the global kernel and locate a layer detecting it. Explain how the uniform bound for all layers bounds the limit, even when two classes first appear at different levels.",
+      "basis": "project deduction",
+      "remaining_input": ""
+    },
+    "Z2.K8": {
+      "title": "Finite duality and the length formula",
+      "status": "complete",
+      "check": "Trace the finite-level exact sequence into the limiting length formula. Check which local term survives at the places over the coefficient prime and keep its twist distinct from the globally invariant character.",
+      "basis": "project deduction",
+      "remaining_input": ""
+    },
+    "Z3.1": {
+      "title": "Normalized matrix algebra",
+      "status": "complete",
+      "check": "Construct the normalized representation in the idempotent blocks for a fixed residual point. Check that the trace and congruence valuation survive a change of coefficient ring and that the resulting quotient length is the one displayed.",
+      "basis": "project deduction",
+      "remaining_input": ""
+    },
+    "Z3.2": {
+      "title": "Local comparisons and global lattice index",
+      "status": "complete",
+      "check": "Write the eight contributions in consistent length units. At a ramified place track the lifting exponent and the tame correction separately, and verify all local hypotheses again when the normalized row is used at the global lattice.",
+      "basis": "project deduction",
+      "remaining_input": ""
+    },
+    "Z2.K2": {
+      "title": "Cycles on integral matrices and uniform residue evaluation",
+      "status": "complete",
+      "check": "Form the cycle on the integral matrix group with coefficients modulo $q$ and choose its common denominator before evaluating at different residue maps. Check that the scalar evaluator has the required normalization and that the twisted norm gives the stated residue value.",
+      "basis": "project deduction",
+      "remaining_input": ""
+    },
+    "Z2.K4": {
+      "title": "Odd stable homology and torsion",
+      "status": "complete",
+      "check": "Check the common stable rank, the transfer to the full group, the natural real bar comparison, and the annihilation of the weights from two through k+1. The formal Hecke proof is documented separately.",
+      "basis": "project deduction",
+      "remaining_input": ""
+    },
+    "Z2.K7": {
+      "title": "Full integral homology torsion",
+      "status": "complete",
+      "check": "Track the finite stabilizers, orbit counts and boundary matrices into the torsion bound. In the uniform specialization, substitute the prescribed rank and degree before comparing the logarithm with the field-dependent expression.",
+      "basis": "project deduction",
+      "remaining_input": ""
+    }
+  },
+  "paper_parent_review_status": [
+    {
+      "id": "P001",
+      "name": "riemannHypothesis",
+      "status": "Goal",
+      "coverage": "target statement without a written proof",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P002",
+      "name": "riemannZeta_eq_zero_re",
+      "status": "Goal",
+      "coverage": "target statement without a written proof",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P003",
+      "name": "LFunction_ne_zero_of_half_lt_re",
+      "status": "Goal",
+      "coverage": "target statement without a written proof",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P004",
+      "name": "LFunction_eq_zero_re",
+      "status": "Goal",
+      "coverage": "target statement without a written proof",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P005",
+      "name": "LFunction_eq_zero_re_of_isPrimitive",
+      "status": "Goal",
+      "coverage": "target statement without a written proof",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P006",
+      "name": "claimAll",
+      "status": "Goal",
+      "coverage": "target statement without a written proof",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P007",
+      "name": "critAll",
+      "status": "Goal",
+      "coverage": "target statement without a written proof",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P008",
+      "name": "rhOfAll",
+      "status": "Goal",
+      "coverage": "target statement without a written proof",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P009",
+      "name": "allChi",
+      "status": "Goal",
+      "coverage": "target statement without a written proof",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P010",
+      "name": "UpperTheory.FinalTheorems.everyCharacter",
+      "status": "Goal",
+      "coverage": "target statement without a written proof",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P011",
+      "name": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P012",
+      "name": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P013",
+      "name": "UpperTheory.One.vwin_of_row",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P014",
+      "name": "UpperTheory.Top.every_character_of_green_v_win",
+      "status": "Proved here (full)",
+      "coverage": "written local deduction under the displayed inputs",
+      "review": "R20 AI cross-review, itemized proof audit",
+      "proof_included": true
+    },
+    {
+      "id": "P015",
+      "name": "UpperTheory.Top.zero_free_all_of_green_v_win",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R20 AI cross-review, itemized proof audit",
+      "proof_included": false
+    },
+    {
+      "id": "P016",
+      "name": "UpperTheory.Top.zeroFreeAll_of_topG",
+      "status": "Proved here (full)",
+      "coverage": "written local deduction under the displayed inputs",
+      "review": "R20 AI cross-review, itemized proof audit",
+      "proof_included": true
+    },
+    {
+      "id": "P017",
+      "name": "UpperTheory.Comparison₂.level_gm_le_on_family_scales",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R20 AI cross-review, itemized proof audit",
+      "proof_included": false
+    },
+    {
+      "id": "P018",
+      "name": "UpperTheory.Comparison₂.formB",
+      "status": "Proved here (full)",
+      "coverage": "written local deduction under the displayed inputs",
+      "review": "R20 AI cross-review, itemized proof audit",
+      "proof_included": true
+    },
+    {
+      "id": "P019",
+      "name": "Formalism.HC.zeroFreeOn_of_tiedWin_cyc",
+      "status": "Proved here (full)",
+      "coverage": "written local deduction under the displayed inputs",
+      "review": "R20 AI cross-review, itemized proof audit",
+      "proof_included": true
+    },
+    {
+      "id": "P020",
+      "name": "UpperTheory.V.HV.Core.of_four_alt",
+      "status": "Outlined (proof in Blueprint/Lean)",
+      "coverage": "outline with a deferred mathematical step",
+      "review": "R20 AI cross-review, itemized proof audit",
+      "proof_included": false
+    },
+    {
+      "id": "P021",
+      "name": "Formalism.LFunctionChainParameters.WeightedSlopeBounds.each_unit_bound_statement",
+      "status": "Proved here (full)",
+      "coverage": "written local deduction under the displayed inputs",
+      "review": "R20 AI cross-review, itemized proof audit",
+      "proof_included": true
+    },
+    {
+      "id": "P022",
+      "name": "Deduction.landau_window",
+      "status": "Proved here (full)",
+      "coverage": "written local deduction under the displayed inputs",
+      "review": "R20 AI cross-review, itemized proof audit",
+      "proof_included": true
+    },
+    {
+      "id": "P023",
+      "name": "Deduction.zeroFree_of_rpow_window",
+      "status": "Proved here (full)",
+      "coverage": "written local deduction under the displayed inputs",
+      "review": "R20 AI cross-review, itemized proof audit",
+      "proof_included": true
+    },
+    {
+      "id": "P024",
+      "name": "UpperTheory.V.Z.Win.Dn.ends0_alt",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P025",
+      "name": "UpperTheory.V.Th.adjointLiftingTheorem_of_locPrints_of_core",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P026",
+      "name": "UpperTheory.V.Z.Kato.Final.zetaUr",
+      "status": "Related reference, proof in Lean only",
+      "coverage": "published background with an unproved project-specific difference",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P027",
+      "name": "UpperTheory.V.Alg.M.main_holds",
+      "status": "Outlined (proof in Blueprint/Lean)",
+      "coverage": "outline with a deferred mathematical step",
+      "review": "R20 AI cross-review, itemized proof audit",
+      "proof_included": false
+    },
+    {
+      "id": "P028",
+      "name": "UpperTheory.V.Alg.M.mprime_holds",
+      "status": "Proved here (full)",
+      "coverage": "written local deduction under the displayed inputs",
+      "review": "R20 AI cross-review, itemized proof audit",
+      "proof_included": true
+    },
+    {
+      "id": "P029",
+      "name": "UpperTheory.GalN.V.Win.N.countK_alt",
+      "status": "Related reference, proof in Lean only",
+      "coverage": "published background with an unproved project-specific difference",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P030",
+      "name": "UpperTheory.GalN.V.Win.N.countQ_alt",
+      "status": "Related reference, proof in Lean only",
+      "coverage": "published background with an unproved project-specific difference",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P031",
+      "name": "UpperTheory.V.Tower.exists_descends",
+      "status": "Proved here (full)",
+      "coverage": "written local deduction under the displayed inputs",
+      "review": "R21 AI editorial examination; v0 argument audited for extent",
+      "proof_included": true
+    },
+    {
+      "id": "P032",
+      "name": "UpperTheory.V.ZK.sClassOf",
+      "status": "Outlined (proof in Blueprint/Lean)",
+      "coverage": "outline with a deferred mathematical step",
+      "review": "R20 AI cross-review, itemized proof audit",
+      "proof_included": false
+    },
+    {
+      "id": "P033",
+      "name": "UpperTheory.V.ZK.sThetaOf",
+      "status": "Proved here (full)",
+      "coverage": "written local deduction under the displayed inputs",
+      "review": "R20 AI cross-review, itemized proof audit",
+      "proof_included": true
+    },
+    {
+      "id": "P034",
+      "name": "PositivityTheory.KB.bOdd_zk",
+      "status": "Outlined (proof in Blueprint/Lean)",
+      "coverage": "outline with a deferred mathematical step",
+      "review": "R21 AI editorial examination; v0 argument audited for extent",
+      "proof_included": false
+    },
+    {
+      "id": "P035",
+      "name": "UpperTheory.V.ZK.Up.torsStab",
+      "status": "Outlined (proof in Blueprint/Lean)",
+      "coverage": "outline with a deferred mathematical step",
+      "review": "R21 AI editorial examination; v0 argument audited for extent",
+      "proof_included": false
+    },
+    {
+      "id": "P036",
+      "name": "UpperTheory.V.ZK.sCount",
+      "status": "Outlined (proof in Blueprint/Lean)",
+      "coverage": "outline with a deferred mathematical step",
+      "review": "R21 AI editorial examination; v0 argument audited for extent",
+      "proof_included": false
+    },
+    {
+      "id": "P037",
+      "name": "PositivityTheory.QuaternionShaBounds.sSha",
+      "status": "Proved here (full)",
+      "coverage": "written local deduction under the displayed inputs",
+      "review": "R21 AI editorial examination; v0 argument audited for extent",
+      "proof_included": true
+    },
+    {
+      "id": "P038",
+      "name": "UpperTheory.V.KT.tors_le",
+      "status": "Outlined (proof in Blueprint/Lean)",
+      "coverage": "outline with a deferred mathematical step",
+      "review": "R21 AI editorial examination; v0 argument audited for extent",
+      "proof_included": false
+    },
+    {
+      "id": "P039",
+      "name": "UpperTheory.V.ZK.torsAll",
+      "status": "Outlined (proof in Blueprint/Lean)",
+      "coverage": "outline with a deferred mathematical step",
+      "review": "R21 AI editorial examination; v0 argument audited for extent",
+      "proof_included": false
+    },
+    {
+      "id": "P040",
+      "name": "UpperTheory.V.LDataCardLeFinrank.vFormula_of_classicalTheorems",
+      "status": "Outlined (proof in Blueprint/Lean)",
+      "coverage": "outline with a deferred mathematical step",
+      "review": "R20 AI cross-review, itemized proof audit",
+      "proof_included": false
+    },
+    {
+      "id": "P041",
+      "name": "Formalism.MainNotions.N.K.normalized_ring_data",
+      "status": "Outlined (proof in Blueprint/Lean)",
+      "coverage": "outline with a deferred mathematical step",
+      "review": "R21 AI editorial examination; v0 argument audited for extent",
+      "proof_included": false
+    },
+    {
+      "id": "P042",
+      "name": "Formalism.RepresentationBoundsCohomology.ringDataObjects.moduleBc",
+      "status": "Outlined (proof in Blueprint/Lean)",
+      "coverage": "outline with a deferred mathematical step",
+      "review": "R21 AI editorial examination; v0 argument audited for extent",
+      "proof_included": false
+    },
+    {
+      "id": "P043",
+      "name": "Formalism.MainNotions.N.K.Closed.open_inputs_at_normalized",
+      "status": "Outlined (proof in Blueprint/Lean)",
+      "coverage": "outline with a deferred mathematical step",
+      "review": "R21 AI editorial examination; v0 argument audited for extent",
+      "proof_included": false
+    },
+    {
+      "id": "P044",
+      "name": "Formalism.MainNotions.N.K.Closed.theorem_n5_from_inputs",
+      "status": "Outlined (proof in Blueprint/Lean)",
+      "coverage": "outline with a deferred mathematical step",
+      "review": "R21 AI editorial examination; v0 argument audited for extent",
+      "proof_included": false
+    },
+    {
+      "id": "P045",
+      "name": "Formalism.MainNotions.FormalGroupSystem.Pf.hecke_place_bound",
+      "status": "Outlined (proof in Blueprint/Lean)",
+      "coverage": "outline with a deferred mathematical step",
+      "review": "R21 AI editorial examination; v0 argument audited for extent",
+      "proof_included": false
+    },
+    {
+      "id": "P046",
+      "name": "GlobalTheory.TwV.site_cmpLite_siteAdm",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P047",
+      "name": "Formalism.MainNotions.WeilJacquetShalikaLaw.Proof.first_clause_cases",
+      "status": "Proved here (full)",
+      "coverage": "written local deduction under the displayed inputs",
+      "review": "R21 AI editorial examination; v0 argument audited for extent",
+      "proof_included": true
+    },
+    {
+      "id": "P048",
+      "name": "GlobalTheory.PerTwClose.twistedPeriodAdmissible_of_rowInt",
+      "status": "Outlined (proof in Blueprint/Lean)",
+      "coverage": "outline with a deferred mathematical step",
+      "review": "R20 AI cross-review, itemized proof audit",
+      "proof_included": false
+    },
+    {
+      "id": "P049",
+      "name": "Formalism.HN.height_gram_determinant",
+      "status": "Proved here (full)",
+      "coverage": "written local deduction under the displayed inputs",
+      "review": "R20 AI cross-review, itemized proof audit",
+      "proof_included": true
+    },
+    {
+      "id": "P050",
+      "name": "Formalism.HN.place_lattice_structure",
+      "status": "Proved here (full)",
+      "coverage": "written local deduction under the displayed inputs",
+      "review": "R21 AI editorial examination; v0 argument audited for extent",
+      "proof_included": true
+    },
+    {
+      "id": "P051",
+      "name": "Formalism.DivisionValues.dual_lattice_measure",
+      "status": "Proved here (full)",
+      "coverage": "written local deduction under the displayed inputs",
+      "review": "R20 AI cross-review, itemized proof audit",
+      "proof_included": true
+    },
+    {
+      "id": "P052",
+      "name": "Formalism.HN.DualPolygon.ht_dual",
+      "status": "Proved here (full)",
+      "coverage": "written local deduction under the displayed inputs",
+      "review": "R20 AI cross-review, itemized proof audit",
+      "proof_included": true
+    },
+    {
+      "id": "P053",
+      "name": "GlobalTheory.KZ.zetaUr_of_halves2",
+      "status": "Proved here (full)",
+      "coverage": "written local deduction under the displayed inputs",
+      "review": "R20 AI cross-review, itemized proof audit",
+      "proof_included": true
+    },
+    {
+      "id": "P054",
+      "name": "GlobalTheory.Mem.Col2.TC.colsTiedSym_std",
+      "status": "Outlined (proof in Blueprint/Lean)",
+      "coverage": "outline with a deferred mathematical step",
+      "review": "R21 AI editorial examination; v0 argument audited for extent",
+      "proof_included": false
+    },
+    {
+      "id": "P055",
+      "name": "GlobalTheory.Mem.Col2.TC.colsTwPTiedS_std",
+      "status": "Outlined (proof in Blueprint/Lean)",
+      "coverage": "outline with a deferred mathematical step",
+      "review": "R21 AI editorial examination; v0 argument audited for extent",
+      "proof_included": false
+    },
+    {
+      "id": "P056",
+      "name": "GlobalTheory.PerRedTw.reduction_perDecTw",
+      "status": "Proved here (full)",
+      "coverage": "written local deduction under the displayed inputs",
+      "review": "R21 AI editorial examination; v0 argument audited for extent",
+      "proof_included": true
+    },
+    {
+      "id": "P057",
+      "name": "GlobalTheory.PerRedU.main",
+      "status": "Proved here (full)",
+      "coverage": "written local deduction under the displayed inputs",
+      "review": "R21 AI editorial examination; v0 argument audited for extent",
+      "proof_included": true
+    },
+    {
+      "id": "P058",
+      "name": "GlobalTheory.T.exists_admissible_hecke_projection_nonvanishing",
+      "status": "Related reference, proof in Lean only",
+      "coverage": "published background with an unproved project-specific difference",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P059",
+      "name": "GlobalTheory.TwU.std_at_served",
+      "status": "Proved here (full)",
+      "coverage": "written local deduction under the displayed inputs",
+      "review": "R20 AI cross-review, itemized proof audit",
+      "proof_included": true
+    },
+    {
+      "id": "P060",
+      "name": "GlobalTheory.TwV.joint_at_nonempty",
+      "status": "Outlined (proof in Blueprint/Lean)",
+      "coverage": "outline with a deferred mathematical step",
+      "review": "R21 AI editorial examination; v0 argument audited for extent",
+      "proof_included": false
+    },
+    {
+      "id": "P061",
+      "name": "UpperTheory.GalN.V.Win.N.countP_alt",
+      "status": "Related reference, proof in Lean only",
+      "coverage": "published background with an unproved project-specific difference",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P062",
+      "name": "UpperTheory.Kd.C7.pLocu",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P063",
+      "name": "UpperTheory.Kd.K4.top",
+      "status": "Related reference, proof in Lean only",
+      "coverage": "published background with an unproved project-specific difference",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P064",
+      "name": "UpperTheory.V.Af.card_k_of_printed_results",
+      "status": "Outlined (proof in Blueprint/Lean)",
+      "coverage": "outline with a deferred mathematical step",
+      "review": "R21 AI editorial examination; v0 argument audited for extent",
+      "proof_included": false
+    },
+    {
+      "id": "P065",
+      "name": "UpperTheory.V.Z.Kato.Joint.kato_global_unit_law_of_smoothed_classes",
+      "status": "Related reference, proof in Lean only",
+      "coverage": "published background with an unproved project-specific difference",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P066",
+      "name": "UpperTheory.V.Z.Kato.K5.top",
+      "status": "Related reference, proof in Lean only",
+      "coverage": "published background with an unproved project-specific difference",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P067",
+      "name": "GlobalTheory.EisM.chapterM_holds",
+      "status": "Related reference, proof in Lean only",
+      "coverage": "published background with an unproved project-specific difference",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P068",
+      "name": "GlobalTheory.KZ.zetaSysU_of_halves2",
+      "status": "Proved here (full)",
+      "coverage": "written local deduction under the displayed inputs",
+      "review": "R20 AI cross-review, itemized proof audit",
+      "proof_included": true
+    },
+    {
+      "id": "P069",
+      "name": "GlobalTheory.Mem.Col2.TC.hermitian_data_at_level_prime",
+      "status": "Outlined (proof in Blueprint/Lean)",
+      "coverage": "outline with a deferred mathematical step",
+      "review": "R20 AI cross-review, itemized proof audit",
+      "proof_included": false
+    },
+    {
+      "id": "P070",
+      "name": "GlobalTheory.Mem.Col2.TC.spaces_in_coordinates",
+      "status": "Proved here (full)",
+      "coverage": "written local deduction under the displayed inputs",
+      "review": "R21 AI editorial examination; v0 argument audited for extent",
+      "proof_included": true
+    },
+    {
+      "id": "P071",
+      "name": "GlobalTheory.Mem.Col2.TC.tw_lv_tied_and_same",
+      "status": "Outlined (proof in Blueprint/Lean)",
+      "coverage": "outline with a deferred mathematical step",
+      "review": "R21 AI editorial examination; v0 argument audited for extent",
+      "proof_included": false
+    },
+    {
+      "id": "P072",
+      "name": "GlobalTheory.Mem.FormSym.formsTiedSym_std",
+      "status": "Outlined (proof in Blueprint/Lean)",
+      "coverage": "outline with a deferred mathematical step",
+      "review": "R21 AI editorial examination; v0 argument audited for extent",
+      "proof_included": false
+    },
+    {
+      "id": "P073",
+      "name": "GlobalTheory.T.hermitianColumnChoices_of_formsLevelsClasses",
+      "status": "Outlined (proof in Blueprint/Lean)",
+      "coverage": "outline with a deferred mathematical step",
+      "review": "R21 AI editorial examination; v0 argument audited for extent",
+      "proof_included": false
+    },
+    {
+      "id": "P074",
+      "name": "GlobalTheory.T.hermitianColumns_generators_baseLattices_functionals",
+      "status": "Proved here (full)",
+      "coverage": "written local deduction under the displayed inputs",
+      "review": "R21 AI editorial examination; v0 argument audited for extent",
+      "proof_included": true
+    },
+    {
+      "id": "P075",
+      "name": "GlobalTheory.T.nonvanishing_transfer_characterSums_powerSeries",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P076",
+      "name": "GlobalTheory.T.quotient_char_trivial_inertia_cyclotomic_tower",
+      "status": "Outlined (proof in Blueprint/Lean)",
+      "coverage": "outline with a deferred mathematical step",
+      "review": "R21 AI editorial examination; v0 argument audited for extent",
+      "proof_included": false
+    },
+    {
+      "id": "P077",
+      "name": "GlobalTheory.T.stepZeroHermitianLevel_uniformiser_kills_values_alt",
+      "status": "Proved here (full)",
+      "coverage": "written local deduction under the displayed inputs",
+      "review": "R21 AI editorial examination; v0 argument audited for extent",
+      "proof_included": true
+    },
+    {
+      "id": "P078",
+      "name": "GlobalTheory.T.trueColumnChoice_exists_chainData_with_basePoints",
+      "status": "Outlined (proof in Blueprint/Lean)",
+      "coverage": "outline with a deferred mathematical step",
+      "review": "R21 AI editorial examination; v0 argument audited for extent",
+      "proof_included": false
+    },
+    {
+      "id": "P079",
+      "name": "GlobalTheory.T.tupleLayerCompatibilities_of_X_prime",
+      "status": "Outlined (proof in Blueprint/Lean)",
+      "coverage": "outline with a deferred mathematical step",
+      "review": "R21 AI editorial examination; v0 argument audited for extent",
+      "proof_included": false
+    },
+    {
+      "id": "P080",
+      "name": "GlobalTheory.TwV.exists_adLawAt_joint",
+      "status": "Outlined (proof in Blueprint/Lean)",
+      "coverage": "outline with a deferred mathematical step",
+      "review": "R21 AI editorial examination; v0 argument audited for extent",
+      "proof_included": false
+    },
+    {
+      "id": "P081",
+      "name": "UpperTheory.V.Af.weyl_complex_of_printed_results",
+      "status": "Outlined (proof in Blueprint/Lean)",
+      "coverage": "outline with a deferred mathematical step",
+      "review": "R21 AI editorial examination; v0 argument audited for extent",
+      "proof_included": false
+    },
+    {
+      "id": "P082",
+      "name": "GlobalTheory.Mem.Col2.HAt.Dil.diamond_on_hermitian_side",
+      "status": "Outlined (proof in Blueprint/Lean)",
+      "coverage": "outline with a deferred mathematical step",
+      "review": "R20 AI cross-review, itemized proof audit",
+      "proof_included": false
+    },
+    {
+      "id": "P083",
+      "name": "GlobalTheory.Mem.Col2.HAt.Stab.stabMap_tied",
+      "status": "Proved here (full)",
+      "coverage": "written local deduction under the displayed inputs",
+      "review": "R21 AI editorial examination; v0 argument audited for extent",
+      "proof_included": true
+    },
+    {
+      "id": "P084",
+      "name": "GlobalTheory.Mem.Col2.HAt.UpMove.up_move",
+      "status": "Related reference, proof in Lean only",
+      "coverage": "published background with an unproved project-specific difference",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P085",
+      "name": "GlobalTheory.Mem.Col2.HAt.clsP_hermitian",
+      "status": "Proved here (full)",
+      "coverage": "written local deduction under the displayed inputs",
+      "review": "R21 AI editorial examination; v0 argument audited for extent",
+      "proof_included": true
+    },
+    {
+      "id": "P086",
+      "name": "GlobalTheory.Mem.Col2.HAt.dn_move_exists",
+      "status": "Related reference, proof in Lean only",
+      "coverage": "published background with an unproved project-specific difference",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P087",
+      "name": "GlobalTheory.Mem.Col2.HAt.pr_lvC_eq_lv",
+      "status": "Proved here (full)",
+      "coverage": "written local deduction under the displayed inputs",
+      "review": "R21 AI editorial examination; v0 argument audited for extent",
+      "proof_included": true
+    },
+    {
+      "id": "P088",
+      "name": "GlobalTheory.Mem.Col2.HAt.seenCl_atT",
+      "status": "Proved here (full)",
+      "coverage": "written local deduction under the displayed inputs",
+      "review": "R21 AI editorial examination; v0 argument audited for extent",
+      "proof_included": true
+    },
+    {
+      "id": "P089",
+      "name": "GlobalTheory.T.dual_mod_class_lattice_equiv_quotient",
+      "status": "Proved here (full)",
+      "coverage": "written local deduction under the displayed inputs",
+      "review": "R21 AI editorial examination; v0 argument audited for extent",
+      "proof_included": true
+    },
+    {
+      "id": "P090",
+      "name": "GlobalTheory.TwV.adLawAt_xiAd",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P091",
+      "name": "GlobalTheory.AdLevCpl.levAt_coupled",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P092",
+      "name": "GlobalTheory.AwayMat.ptAway_mat",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P093",
+      "name": "GlobalTheory.Mem.Col2.HAt.FvOff.fv_eq_of_adC",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P094",
+      "name": "GlobalTheory.Mem.Col2.HAt.adOf_of_adC",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P095",
+      "name": "GlobalTheory.Mem.Col2.HAt.exists_isDia_steps",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P096",
+      "name": "GlobalTheory.Mem.Col2.SameOff.use₆",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P097",
+      "name": "GlobalTheory.RatPt.ratLaw_of_tie",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P098",
+      "name": "GlobalTheory.T.host_primes_over_level_place",
+      "status": "Cited",
+      "coverage": "external proof by the identified published result",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P099",
+      "name": "GlobalTheory.TwTop.levAt_top",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P100",
+      "name": "GlobalTheory.TwV.AwayCpl.ptAway_cpl",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P101",
+      "name": "GlobalTheory.TwV.MuLawPf.muLaw_underTie",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P102",
+      "name": "GlobalTheory.TwV.cosetOf_eq_yb",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P103",
+      "name": "GlobalTheory.TwV.levAt_mat",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P104",
+      "name": "GlobalTheory.TwV.ptEx_isPtAd",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P105",
+      "name": "GlobalTheory.TwV.sizeLaw_of_tie",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P106",
+      "name": "GlobalTheory.TwV.xiAd_intOff",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P107",
+      "name": "GlobalTheory.CplTarget.levAt_target",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P108",
+      "name": "GlobalTheory.LevSrcCpl.levSrc_cpl",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P109",
+      "name": "GlobalTheory.T.chartDatum_levelPrime_invariant_mul_level",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P110",
+      "name": "GlobalTheory.T.kernelChainCharacter_normOne_eq_infinityType",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P111",
+      "name": "GlobalTheory.T.kernelChainCharacters_algebraic_unitaryPoints",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P112",
+      "name": "GlobalTheory.T.kernelStepCharacter_eq_one_integralUnitary",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P113",
+      "name": "GlobalTheory.T.lastStepCharacter_at_levelDet_mul_localCharacters",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P114",
+      "name": "GlobalTheory.T.levelMoved_point_frames_matrixSteps",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P115",
+      "name": "GlobalTheory.T.muCharacter_det_level_eq_local_tame_product",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P116",
+      "name": "GlobalTheory.T.orthonormalChange_intertwines_rationalIsometries",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P117",
+      "name": "GlobalTheory.TwRat.ratPt",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P118",
+      "name": "GlobalTheory.TwRat.ratUnitCol",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P119",
+      "name": "GlobalTheory.TwV.LevDeco.ptAd_mul_lev_deco",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P120",
+      "name": "GlobalTheory.TwV.isPtAd_mul_lev",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P121",
+      "name": "GlobalTheory.CplCoset.sameCoset_kappa",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P122",
+      "name": "GlobalTheory.CplLev.levAt_cpl",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P123",
+      "name": "GlobalTheory.CplMuDet.muOf_det_cpl",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P124",
+      "name": "GlobalTheory.FrameRat.nearAt_liftFr_smul",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P125",
+      "name": "GlobalTheory.RatLat.lat_gmap",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P126",
+      "name": "GlobalTheory.SrcMuDet.muOf_levelDet_mul_sigma_prod_rhoS_eq_one",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P127",
+      "name": "GlobalTheory.T.chartPoint_frames_move_integralRightTranslate",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P128",
+      "name": "GlobalTheory.T.chartPoint_right_translate_by_level_coupled_step",
+      "status": "Related reference, proof in Lean only",
+      "coverage": "published background with an unproved project-specific difference",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P129",
+      "name": "GlobalTheory.T.chart_base_point_adelic_right_mul_level",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P130",
+      "name": "GlobalTheory.T.exists_chart_point_frames_moved_by_level",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P131",
+      "name": "GlobalTheory.T.pulledLatticeVector_mem_dualBaseLatticeCompletion",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P132",
+      "name": "GlobalTheory.TwU.UnitaryFrom.exists_uf_seamGL_eq",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P133",
+      "name": "GlobalTheory.TwU.funMoved_ratA_act",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P134",
+      "name": "GlobalTheory.TwV.congAt_fb_lev",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P135",
+      "name": "GlobalTheory.TwV.levSrc_localData",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P136",
+      "name": "GlobalTheory.funMoved_mul_level",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P137",
+      "name": "GlobalTheory.unitary_conj_orthonormal",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P138",
+      "name": "GlobalTheory.CongOne.mem_glint_prinCong_of_cols",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P139",
+      "name": "GlobalTheory.T.chartBaseFrame_badPrime_eq_companion_lattice",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    },
+    {
+      "id": "P140",
+      "name": "GlobalTheory.T.intAt_scaled_baseCosetRep_of_adTie",
+      "status": "Lean only",
+      "coverage": "formal proof only",
+      "review": "R21 AI editorial examination; retained documentation boundary",
+      "proof_included": false
+    }
+  ]
+}

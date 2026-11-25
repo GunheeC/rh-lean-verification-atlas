@@ -1,0 +1,100 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "Z1.5.05",
+  "edition_sha256": "83d6ac0e35ad25bf3820dbe3092415906e6412a1e09d7e2100d753b130b282f9",
+  "note_sha256": "152f15e8ffe559b37a6bd6860dd534782c48b830a0b083514b561c53c4fc5bb4",
+  "statement_sha256": "9a4d3a6a0a4486586f5ebc2ad9d269baf5c6fde96169b0af1a4fe94ba7481106",
+  "sources": [
+    {
+      "path": "notes/blueprint/Z1.5.05.tex",
+      "sha256": "152f15e8ffe559b37a6bd6860dd534782c48b830a0b083514b561c53c4fc5bb4"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Intersecting the two cofinite sets retains a common set of places on which the compared Frobenius multisets match.",
+      "kind": "computation",
+      "uses": [
+        "input: quadratic classifiers"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.GalN.V.Win.N.countQ_alt",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/FrobeniusTraceCountBoundOfCmEigensystemCount.lean",
+          "line0": 255,
+          "line1": 335
+        }
+      ],
+      "source": "notes/blueprint/Z1.5.05.tex",
+      "anchor": "intersecting the two cofinite",
+      "source_lines": [
+        7,
+        28
+      ],
+      "claim_sha256": "c5f4f297091682b7a7fe780d325b3a846127bb629ad7edf3b3a0f168e9e84b86",
+      "passage_sha256": "7efa248a8a25db65dfb419e7c1ec6d67d1689b56d71b003998b2346ae7624c5d",
+      "sha256": "a9813b7f4fec190a81be8df9998fefc0c428aff42c198735407c20f0aeda773b",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The fixed sum of field constants and exponents bounds each retained list uniformly; aggregation preserves polynomial dependence on level and weight.",
+      "kind": "inequality",
+      "uses": [
+        "S1",
+        "Z1.5.04",
+        "input: root-multiset aggregation"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.GalN.V.Win.N.countQ_alt",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/FrobeniusTraceCountBoundOfCmEigensystemCount.lean",
+          "line0": 255,
+          "line1": 335
+        }
+      ],
+      "source": "notes/blueprint/Z1.5.05.tex",
+      "anchor": "Each lower size",
+      "source_lines": [
+        7,
+        28
+      ],
+      "claim_sha256": "40565ffde9daf3ece04e91b0edbe16bfe13ede595a69539971c95859b301e1d5",
+      "passage_sha256": "7efa248a8a25db65dfb419e7c1ec6d67d1689b56d71b003998b2346ae7624c5d",
+      "sha256": "94bb360b37a097c653d0c5fcf91dc59f1726c0c3121cbc0064c6f79fa6e33924",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Applying that numerical estimate to rational representations still uses the compatibility and restriction-fibre arguments.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S2",
+        "input: compatibility of roots and rational restriction fibres"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.GalN.V.Win.N.countQ_alt",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/FrobeniusTraceCountBoundOfCmEigensystemCount.lean",
+          "line0": 255,
+          "line1": 335
+        }
+      ],
+      "source": "notes/blueprint/Z1.5.05.tex",
+      "anchor": "To obtain the rational",
+      "source_lines": [
+        7,
+        28
+      ],
+      "claim_sha256": "681eb9ec6a21c7d2e0234f327d1c4cc4c1ae7ce010f2fba2dcf92fb5193e726a",
+      "passage_sha256": "7efa248a8a25db65dfb419e7c1ec6d67d1689b56d71b003998b2346ae7624c5d",
+      "sha256": "5552b4eb0a9824502c37ae6e8ef88b27c904771102178c37fbb229d830fea42b",
+      "ai_review": []
+    }
+  ],
+  "history": []
+}

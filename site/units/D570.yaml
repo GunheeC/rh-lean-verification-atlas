@@ -1,0 +1,87 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D570",
+  "title": "Upper bound for the weighted mean of lower slopes",
+  "track": {
+    "primary": "arakelov",
+    "secondary": []
+  },
+  "statement": "Under the Hida size setting and Count5, the d(u)-weighted mean of the lower quantities Lo5 at any unit u is at most cSl1·IO(u)+K7v5.\n\\[\n\\mathrm{wmean}\\bigl(d(u),\\mathrm{Lo5}(u)\\bigr)\\le c_{\\rm Sl1}\\mathrm{IO}(u)+K_{7,v5}.\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Use the Hida size setting, the counting hypothesis and one unit with its prescribed weights."
+  ],
+  "lean": [
+    {
+      "name": "Formalism.LFunctionChainParameters.WeightedSlopeBounds.weighted_mean_lower_bound_le",
+      "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LevelOfCongruence.lean",
+      "line0": 162,
+      "line1": 171,
+      "sha256": "5d86d77ec69794c1bbbf19761b4d36c8e6bdd1c717d32688fa94a9fb249443ed",
+      "dominated": 12,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/D570_round4.md",
+      "section": "D570 · Upper bound for the weighted mean of lower slopes",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "G.606 (decomp:D570)",
+      "pages": [
+        308,
+        308
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D570.tex",
+      "section": "decomp:D570",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": 2,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "D570",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "upper-bound-for-the-weighted-mean-of-lower-slopes",
+  "aliases": [
+    "weighted_mean_lower_bound_le",
+    "D570 Upper bound for the weighted mean of lower slopes"
+  ],
+  "background": [
+    "Weighted averages",
+    "Lower slopes of Hermitian lattices"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.606 (decomp:D570)",
+    "pages": [
+      308,
+      308
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "review_status": "pending_review",
+  "summary": "The lower-slope correction varies over a finite set of lattice indices. A common count bound at a single unit gives an upper bound for each correction, so the same bound holds after taking its weighted mean."
+}

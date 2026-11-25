@@ -1,0 +1,86 @@
+{
+  "id": "Z1.1.01",
+  "title": "Ordinary Eisenstein seeds",
+  "track": {
+    "primary": "galois",
+    "secondary": []
+  },
+  "statement": "For a marked complex conjugation, nontrivial splitting character and admissible slope-test data, every sufficiently large weight $k$ of the specified parity admits an Eisenstein rank-two seed with PR and unlinked trace-free adjoint.",
+  "assumptions": [
+    "source:blueprint_v13"
+  ],
+  "hypothesis_details": [
+    "Fix a marked complex conjugation and a nontrivial splitting character.",
+    "The local slope-test inputs are admissible."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.Z.Sym.W.prop_eg_w_of_printed_hida",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TPropEGW.lean",
+      "line0": 9,
+      "line1": 14,
+      "sha256": "f2d3117d3e62942a3591d669f60941150d051753aa9f1554f9da507a8e06b9b6",
+      "dominated": 8260,
+      "graph": "allChi",
+      "role": "statement"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/blueprint/Z1.1.01.tex",
+      "section": "r8:small:Z1.1.01",
+      "pages": []
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r8:small:Z1.1.01",
+      "pages": [
+        467,
+        467
+      ],
+      "printed_page": 442,
+      "scope": "First page of this named destination."
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": null,
+  "open_questions": [
+    "Construct one Eisenstein seed satisfying PR, RW and NoHalf at every sufficiently large weight of the specified parity."
+  ],
+  "last_checked": "2026-11-24",
+  "blueprint_members": [
+    "Z1.1.01"
+  ],
+  "representative": "UpperTheory.V.Z.Sym.W.prop_eg_w_of_printed_hida",
+  "statement_declarations": [
+    "UpperTheory.V.Z.Sym.W.prop_eg_w_of_printed_hida"
+  ],
+  "grade_scope": "Named statement declarations with the hypotheses above. Chart supplier records have their own review scopes.",
+  "confirmation_basis": "Minimum across the statement declarations, using registry rows for the blueprint assignments listed here. Reviews of other expositions of a shared declaration are included as context.",
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "slug": "ordinary-eisenstein-seeds",
+  "aliases": [
+    "Z1.1.01 Ordinary Eisenstein seeds"
+  ],
+  "background": [
+    "Ordinary modular forms",
+    "Eisenstein congruences"
+  ],
+  "hypothesis_source": {
+    "document": "blueprint_v13",
+    "section": "r8:small:Z1.1.01",
+    "pages": [
+      467,
+      467
+    ]
+  },
+  "question_sources": [
+    "data/status_ledger.json"
+  ],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "summary": "At each sufficiently large weight of the required parity, the slope-test hypotheses yield a rank-two Eisenstein seed with the prescribed local property and an unlinked trace-free adjoint. These are the initial representations for the weight-varying construction."
+}

@@ -1,0 +1,100 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D427",
+  "title": "The Selmer contribution to the lattice link",
+  "track": {
+    "primary": "galois",
+    "secondary": [
+      "local"
+    ]
+  },
+  "statement": "For a twist-good family whose every sufficiently large member has the Galois normalization preconditions and four ties, the recorded cut and two/three-prime assumptions imply uniform constants for the family link at every eligible lift.\n\\[\n\\mathrm{LinkN}(F).\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume the second-layer record, the cut hypothesis and a twist-good family.",
+    "At every specified family index the normalization preconditions and four ties hold."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.GalC.linkN_of_twGood_galoisPreconditions",
+      "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkNFam.lean",
+      "line0": 37,
+      "line1": 53,
+      "sha256": "71c7292ab943b1f59154dbb09c1b2bf96a7bc1c3c6a838eb1437dea42006edfb",
+      "dominated": 205214,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "G.443 (decomp:D427)",
+      "pages": [
+        267,
+        267
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D427.tex",
+      "section": "decomp:D427",
+      "pages": []
+    },
+    {
+      "document": "paper2_v3",
+      "section": "The chain in detail: LinkN_at",
+      "pages": [
+        13,
+        16
+      ],
+      "coverage": "Shared subsection for this station, including subordinate inputs."
+    }
+  ],
+  "status": "Statement only",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [
+    "D002",
+    "D004",
+    "D006",
+    "D421"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [],
+  "paper_id": "D427",
+  "indexed_members": [
+    "D423"
+  ],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "the-selmer-contribution-to-the-lattice-link",
+  "aliases": [
+    "linkN_of_twGood_galoisPreconditions",
+    "D427 The Selmer contribution to the lattice link"
+  ],
+  "background": [
+    "Local-to-global Galois cohomology",
+    "Prime-weighted Selmer lengths"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.443 (decomp:D427)",
+    "pages": [
+      267,
+      267
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "D002": "graph",
+    "D004": "graph",
+    "D006": "graph",
+    "D421": "graph"
+  }
+}

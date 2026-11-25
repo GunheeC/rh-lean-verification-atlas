@@ -1,0 +1,83 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "D549",
+  "edition_sha256": "a5262b2695889f7fabce63dc14cea29b06f164566b460be8c5bdd5d60cc929c4",
+  "note_sha256": "e936e9caada820ee657a06605e4a101bf62ea49f3b650ca87a8ab5359e14a374",
+  "statement_sha256": "b99ec4fc90b9ea8a62ac5a20453c516a76ec10585ad30e827706bcaaa0d452e6",
+  "sources": [
+    {
+      "path": "notes/units/D549_v4.md",
+      "sha256": "e936e9caada820ee657a06605e4a101bf62ea49f3b650ca87a8ab5359e14a374"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Each omitted frequency is nonprincipal and belongs to the bounded host class for the relevant sign.",
+      "kind": "case-split",
+      "uses": [
+        "input: compatible host and kept set"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Comparison₂.sigA_le",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/SigALe.lean",
+          "line0": 38,
+          "line1": 60
+        }
+      ],
+      "source": "notes/units/D549_v4.md",
+      "anchor": "The discarded error is",
+      "source_lines": [
+        13,
+        13
+      ],
+      "claim_sha256": "960a065ab0cab4537c4f2d3fbd17fcb2267e8b28d291d2cc463de6769686b699",
+      "passage_sha256": "4081c078750d921a4b24d36076242285d37aa42d90167265f01b4240e389a3b9",
+      "sha256": "f2ed43190f59529e258028c177fafa7d2419df95add4756caf1191af8b01f712",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Summing the half-plus-epsilon estimate over at most four times the host order parameter gives the omitted-frequency bound.",
+      "kind": "inequality",
+      "uses": [
+        "S1",
+        "input: pointwise host and cardinality bounds"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Comparison₂.sigA_le",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/SigALe.lean",
+          "line0": 38,
+          "line1": 60
+        }
+      ],
+      "source": "notes/units/D549_v4.md",
+      "anchor": "The pointwise bound clause",
+      "source_lines": [
+        15,
+        15
+      ],
+      "claim_sha256": "90e4a5216c93c978b5be9f860a0f365c11161fac1e7d799b7aef4044d47ca782",
+      "passage_sha256": "1a49a205f02d06f8cd75d5996c90bed691cdf080529fc2591b998fc529c6076b",
+      "sha256": "f0cc89b67603207df0806fb65dade5e815f918d0b347222a807d6155d58db38c",
+      "ai_review": [
+        {
+          "verdict": "CONFIRMED (light check)",
+          "scope": "Summing the half-plus-epsilon estimate over at most four times the host order parameter gives the omitted-frequency bound.",
+          "file": "reviews/DB3_review_A.md",
+          "lines": [
+            120,
+            120
+          ],
+          "edition_sha256": "a5262b2695889f7fabce63dc14cea29b06f164566b460be8c5bdd5d60cc929c4",
+          "step_sha256": "f0cc89b67603207df0806fb65dade5e815f918d0b347222a807d6155d58db38c"
+        }
+      ]
+    }
+  ],
+  "history": []
+}

@@ -1,0 +1,192 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "P006",
+  "edition_sha256": "97fac7e8da887db39ef5951f8a0130735809ee0b2b4343eb83e1696c3a30be6a",
+  "note_sha256": "9412bacc98563fc5c4452f523ba876bea29570ca584b942d0587985d4a545869",
+  "statement_sha256": "6c4180d9325d5444910c7e89f4afacb59eb8940c13627cc9c6c8487210ad36ef",
+  "sources": [
+    {
+      "path": "notes/units/P006_round4.md",
+      "sha256": "9412bacc98563fc5c4452f523ba876bea29570ca584b942d0587985d4a545869"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The three propositions are grouped in the order half-plane, strip, zeta.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: definitions of HalfPlane, Strip and Zeta"
+      ],
+      "lean": [
+        {
+          "name": "Claim.HalfPlane",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/HalfPlane.lean",
+          "line0": 3,
+          "line1": 4
+        },
+        {
+          "name": "Claim.Strip",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/HalfPlane.lean",
+          "line0": 6,
+          "line1": 7
+        },
+        {
+          "name": "Claim.Zeta",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/HalfPlane.lean",
+          "line0": 9,
+          "line1": 10
+        },
+        {
+          "name": "claimAll",
+          "file": "Supplements/Kernels/MainTheorems.lean",
+          "line0": 15,
+          "line1": 16
+        }
+      ],
+      "source": "notes/units/P006_round4.md",
+      "anchor": "Fix the type of the shared input",
+      "source_lines": [
+        13,
+        13
+      ],
+      "claim_sha256": "249b8f5045ab158295878725aaf393f4bbbd67f36d615e42023471a227995234",
+      "passage_sha256": "368855c2a14571adc1aee40a7d11296193152d2a6dfe3e41fedcbab91cd7d241",
+      "sha256": "842b8584c66e3d5a9900b9fb40f68816224c0c8cde5d80a4a943e594c0ff9fad",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The half-plane witness supplies the strip branch by contradiction on each side of one half.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "P009",
+        "input: primitive-reflection and conductor reductions"
+      ],
+      "lean": [
+        {
+          "name": "Claim.strip",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/ClaimStrip.lean",
+          "line0": 59,
+          "line1": 73
+        },
+        {
+          "name": "Claim.prim_zero",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/ClaimStrip.lean",
+          "line0": 23,
+          "line1": 33
+        },
+        {
+          "name": "Claim.prim_reflect",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/ClaimStrip.lean",
+          "line0": 42,
+          "line1": 57
+        }
+      ],
+      "source": "notes/units/P006_round4.md",
+      "anchor": "Use the same half-plane witness in two branches",
+      "source_lines": [
+        17,
+        17
+      ],
+      "claim_sha256": "cecf591d5056f55ae3b2178a751accc57b041e7029009f4b6c5fe3b489376a05",
+      "passage_sha256": "0d37d699da5df4190fc1b934aaa3c5f3d9891966ce9d10db356d91faf021f833",
+      "sha256": "4e79a5b8daf526354ebd7153cf9c53e783cde6aceaebdf4212c4c66fe1714f71",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The zeta reduction covers positive real part by the strip or right-side nonvanishing and nonpositive real part by reflection.",
+      "kind": "assembly",
+      "uses": [
+        "S2",
+        "P009",
+        "standard: completed zeta functional equation"
+      ],
+      "lean": [
+        {
+          "name": "Claim.zeta",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/ClaimStrip.lean",
+          "line0": 75,
+          "line1": 100
+        },
+        {
+          "name": "claimAll",
+          "file": "Supplements/Kernels/MainTheorems.lean",
+          "line0": 15,
+          "line1": 16
+        }
+      ],
+      "source": "notes/units/P006_round4.md",
+      "anchor": "Close the zeta branch with the proper range",
+      "source_lines": [
+        21,
+        21
+      ],
+      "claim_sha256": "5b3933260da7564bdd2db1d784e01120cb4b9e8171d229780420f1dab8cc586d",
+      "passage_sha256": "72a52f6020da2b0fd2b3156045bfdc074ddf060a433f5d1d8250cd81dc0d65b5",
+      "sha256": "bd3faf095fece489b68a395f5a62242a12cb67a022b5fc6e06fdb3555eaf66da",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "withdrawn",
+      "claim": "For claimAll, the normalized source bytes reproduce the pinned hash and contain the indicated supplier expression.",
+      "kind": "computation",
+      "uses": [
+        "standard: SHA-256 of LF-joined lines"
+      ],
+      "lean": [
+        {
+          "name": "claimAll",
+          "file": "Supplements/Kernels/MainTheorems.lean",
+          "line0": 15,
+          "line1": 16
+        }
+      ],
+      "source": "notes/units/P006_round4.md",
+      "anchor": "Reproduce the export check",
+      "source_lines": [
+        21,
+        21
+      ],
+      "claim_sha256": "8eeecacfdec5ba52b30a6d156b0d6b0c907cff82b0aa1bf4028e5f6815d9bde8",
+      "passage_sha256": "61a4ee8b15c50355d2e949dbac4874a0f12f7ca08b4a25822563bdf41c5ba4cd",
+      "sha256": "de8230a93b9fac407bfd21d89bc71619e65ece9b60914aa3022cb7d447f0bf06",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "1c8ad1f5a86880485412f734d6ceb74aa4326d096f854e7deb2f5d1afadb51f5",
+      "sources": [
+        {
+          "path": "notes/units/P006_round4.md",
+          "sha256": "9a5df203e5bc57bf69dcd186c413e93917b4aedf13cd991daf51f373502ac78c"
+        }
+      ],
+      "statement_sha256": "6c4180d9325d5444910c7e89f4afacb59eb8940c13627cc9c6c8487210ad36ef",
+      "steps": {
+        "S1": "842b8584c66e3d5a9900b9fb40f68816224c0c8cde5d80a4a943e594c0ff9fad",
+        "S2": "4e79a5b8daf526354ebd7153cf9c53e783cde6aceaebdf4212c4c66fe1714f71",
+        "S3": "bd3faf095fece489b68a395f5a62242a12cb67a022b5fc6e06fdb3555eaf66da",
+        "S4": "de8230a93b9fac407bfd21d89bc71619e65ece9b60914aa3022cb7d447f0bf06"
+      },
+      "step_texts": {
+        "S1": "The three propositions are grouped in the order half-plane, strip, zeta.",
+        "S2": "The half-plane witness supplies the strip branch by contradiction on each side of one half.",
+        "S3": "The zeta reduction covers positive real part by the strip or right-side nonvanishing and nonpositive real part by reflection.",
+        "S4": "For claimAll, the normalized source bytes reproduce the pinned hash and contain the indicated supplier expression."
+      },
+      "step_passages": {
+        "S1": "368855c2a14571adc1aee40a7d11296193152d2a6dfe3e41fedcbab91cd7d241",
+        "S2": "0d37d699da5df4190fc1b934aaa3c5f3d9891966ce9d10db356d91faf021f833",
+        "S3": "72a52f6020da2b0fd2b3156045bfdc074ddf060a433f5d1d8250cd81dc0d65b5",
+        "S4": "61a4ee8b15c50355d2e949dbac4874a0f12f7ca08b4a25822563bdf41c5ba4cd"
+      }
+    }
+  ]
+}

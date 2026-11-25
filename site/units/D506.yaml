@@ -1,0 +1,77 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D506",
+  "title": "The Borel injection in the cohomological comparison",
+  "track": {
+    "primary": "galois",
+    "secondary": []
+  },
+  "statement": "At compact open level over a totally complex field, the cardinality of any finite family of pairwise inequivalent cohomological cuspidal representations with a fixed vector is at most the dimension of the specified coefficient-system cohomology.\n\\[\n|S|\\le \\mathrm{cohDim}(\\top,U,\\operatorname{rat}_{\\mathbb C}\\Xi).\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Use a totally complex field, positive rank, compact open level and the designated algebraic coefficient representation.",
+    "Take a finite family of pairwise inequivalent cuspidal representations that contribute to the specified cohomology and have a level-fixed vector."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.Z.Coh.borelInjC",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClozelCohomology/ClozelConjC.lean",
+      "line0": 31,
+      "line1": 31,
+      "sha256": "5e97d8f9adf9c65744e0ac45f7adf3849a1805db1254032951be1033e0502777",
+      "dominated": 521,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "G.529 (decomp:D506)",
+      "pages": [
+        289,
+        289
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D506.tex",
+      "section": "decomp:D506",
+      "pages": []
+    }
+  ],
+  "status": "Statement only",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [],
+  "paper_id": "D506",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "the-borel-injection-in-the-cohomological-comparison",
+  "aliases": [
+    "borelInjC",
+    "D506 The Borel injection in the cohomological comparison"
+  ],
+  "background": [
+    "Cuspidal cohomology",
+    "Borel comparison maps"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.529 (decomp:D506)",
+    "pages": [
+      289,
+      289
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {}
+}

@@ -1,0 +1,113 @@
+{
+  "id": "Z1.3.05",
+  "title": "Nonvanishing at cyclotomic inertia",
+  "track": {
+    "primary": "galois",
+    "secondary": [
+      "local"
+    ]
+  },
+  "statement": "Fix the coefficient ring, cocycle $y$, exceptional primes, twist, test characters and cyclotomic layers of an ordinary normal form. If the same tuple satisfies $\\mathrm{Sys}$, $\\mathrm{IwSys2}$, $\\mathrm{SpLink}$ and $\\mathrm{Pin7}$, some inertia element with trivial cyclotomic action and lower diagonal entry $1$ has nonzero second coordinate under $y$.",
+  "assumptions": [
+    "source:blueprint_v13"
+  ],
+  "hypothesis_details": [
+    "Fix the normal form and modular source with their local and cyclotomic parameters.",
+    "A single tuple satisfies Sys, IwSys2, SpLink and Pin7 for those data."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.Kd.C7.pLocu",
+      "file": "Development/AutomorphicArithmetic/Foundations/IwahoriReduction/LangPolynomials/NormFactorLeOne.lean",
+      "line0": 162,
+      "line1": 164,
+      "sha256": "fa8d443d46e85b9d9b4a32360d03f0a19ff9d80fdb0956ec946aff0db338acdc",
+      "dominated": 9832,
+      "graph": "allChi",
+      "role": "statement"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/blueprint/Z1.3.05.tex",
+      "section": "r5:Z1.3.05, r6:Z1.3.05, r7:Z1.3.05",
+      "pages": []
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r5:Z1.3.05",
+      "pages": [
+        351,
+        351
+      ],
+      "printed_page": 326,
+      "scope": "First page of this named destination."
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r6:Z1.3.05",
+      "pages": [
+        375,
+        375
+      ],
+      "printed_page": 350,
+      "scope": "First page of this named destination."
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r7:Z1.3.05",
+      "pages": [
+        406,
+        406
+      ],
+      "printed_page": 381,
+      "scope": "First page of this named destination."
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [
+    "Z1.3.04"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "Establish the simultaneous Frobenius unit lift and uniform primitive-root rigidity over all coefficient indices."
+  ],
+  "last_checked": "2026-11-24",
+  "blueprint_members": [
+    "Z1.3.05"
+  ],
+  "representative": "UpperTheory.Kd.C7.pLocu",
+  "statement_declarations": [
+    "UpperTheory.Kd.C7.pLocu"
+  ],
+  "grade_scope": "Named statement declarations with the hypotheses above. Chart supplier records have their own review scopes.",
+  "confirmation_basis": "Minimum across the statement declarations, using registry rows for the blueprint assignments listed here. Reviews of other expositions of a shared declaration are included as context.",
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "slug": "nonvanishing-at-cyclotomic-inertia",
+  "aliases": [
+    "pLocu",
+    "Z1.3.05 Nonvanishing at cyclotomic inertia"
+  ],
+  "background": [
+    "Cyclotomic inertia",
+    "Iwasawa cohomology"
+  ],
+  "hypothesis_source": {
+    "document": "blueprint_v13",
+    "section": "r5:Z1.3.05",
+    "pages": [
+      351,
+      351
+    ]
+  },
+  "question_sources": [
+    "data/status_ledger.json"
+  ],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "Z1.3.04": "statement-reading"
+  },
+  "summary": "For a tuple satisfying the four specified conditions, some inertia element with trivial cyclotomic action and lower diagonal entry one gives a nonzero second cocycle coordinate. This detects the failure of a local coboundary description for that tuple."
+}

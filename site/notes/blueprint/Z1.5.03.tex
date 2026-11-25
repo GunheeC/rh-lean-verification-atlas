@@ -1,0 +1,26 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% RH Notes blueprint source excerpts for Z1.5.03
+% Verbatim excerpts in the notation of the parent blueprint. The labelled editions and source ranges appear below.
+% See the unit YAML for the current proof status. Earlier-round passages retain their original wording.
+\section*{Z1.5.03. Frobenius classifiers over a CM field}
+
+% Parent source SHA-256: 9559fca8cc392b75d71f1c158fe0c635cfcab567e2f489b52db4c5bb29d98029
+% blueprint/ch_P_r8_small.tex lines 498 through 514; r8:small:Z1.5.03
+\paragraph{Z1.5.03. A well-defined tuple of the required size.}
+\phantomsection\label{r8:small:Z1.5.03}
+Fix an admitted CM cusp form and \(v\nmid M\). Given its spherical
+existence input, S02 determines a single multiset \(B_v\); its value in
+the classifier is the multiset obtained by multiplying every entry
+by \( (Nv)^{(n-1)/2}\). S01 gives exactly \(n\) entries. If the cusp
+representative changes by an isomorphism, the fixed-vector Hecke equations
+transport and S02 gives the same \(B_v\). Hence the entire tuple over
+all \(v\nmid M\) is well-defined on isomorphism classes. For the
+coefficient-conjugate form, the separating representation comparison
+preserves the required fixed vector by S12. The construction of that
+comparison and the global integrality and Frobenius separation needed
+for the finite fixed-purity classifier over all allowable \(\ell\) remain
+(\nolinkurl{UpperTheory.V.Af.conjK_alt}, \path{TConjK.lean:38--52};
+\nolinkurl{algSat}, \path{BlochKatoSelmerVanishes.lean:74--75};
+\nolinkurl{UpperTheory.GalN.V.Win.N.countK_alt},
+\path{DenseThresholdCases/FrobeniusTraceCountBoundOfCmEigensystemCount.lean:63--125}).
+

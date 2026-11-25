@@ -1,0 +1,168 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "P009",
+  "edition_sha256": "2f697e51fb1847162b216763bf289f64ec52bb9534b3c42a21df444f4d56f021",
+  "note_sha256": "346d1693563e4782ca86eb2a13a9d680e0c06992b42e66bdad5776b1e0c28be4",
+  "statement_sha256": "41c0e719aae69120b727544a61922e688edf83f1e6a705d68bfa3928beef2392",
+  "sources": [
+    {
+      "path": "notes/units/P009_round3.md",
+      "sha256": "346d1693563e4782ca86eb2a13a9d680e0c06992b42e66bdad5776b1e0c28be4"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The alias allChi has exactly the every-character predicate, including its exception.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "P010"
+      ],
+      "lean": [
+        {
+          "name": "allChi",
+          "file": "Supplements/Kernels/MainTheorems.lean",
+          "line0": 7,
+          "line1": 7
+        }
+      ],
+      "source": "notes/units/P009_round3.md",
+      "anchor": "The assertion shared by the exports",
+      "source_lines": [
+        7,
+        7
+      ],
+      "claim_sha256": "2ef37eae2feb46155b0715012fee9688da5201ec7c4d0b3bc09ac4da6f22bbf5",
+      "passage_sha256": "6b7396156cba402a8e96500198543fe3a789ac631dcd9f2bd9c7de266b148be9",
+      "sha256": "3da288bb8b35af81124168ff8e59c149ed0e210b3f36a5251f41217abce989eb",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The closed route supplies Green from the regular-character field and the definite-side witness from the linked two-prime bound and the other fixed inputs.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: local matching and theta/geometry inputs"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+          "line0": 69,
+          "line1": 73
+        }
+      ],
+      "source": "notes/units/P009_round3.md",
+      "anchor": "On the route to the closed Lean export",
+      "source_lines": [
+        17,
+        17
+      ],
+      "claim_sha256": "f6fe68a388a87a202c6e004846102e7c9eb729bb6d01b2bda7baf1a09c450393",
+      "passage_sha256": "723c72fa675f475f18c981055d7592cd454b35f5d49ff78f116316d91d3f8a99",
+      "sha256": "cd6fac28a2438000a838421fe7b9cdae0f815916efa63af19921b731a55a68c0",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The family inequality and the Landau window criterion give the primitive nonvanishing under the supplied windows.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "P014",
+        "P015",
+        "P017",
+        "S2"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Top.zeroFreeAll_of_topG",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/ZeroFreeAllOfTopG.lean",
+          "line0": 26,
+          "line1": 34
+        }
+      ],
+      "source": "notes/units/P009_round3.md",
+      "anchor": "The analytic conversion takes",
+      "source_lines": [
+        19,
+        19
+      ],
+      "claim_sha256": "7bab0c381b8802cab6363676910a3f8b1ee8881fe1092b75227b406325b4617e",
+      "passage_sha256": "c19a83abbd05ef3ac4f0865a3f63a7145d7a6afb438cb47c4a691154cf040722",
+      "sha256": "c12369de7c0bc9df12d99cc24415efb9b4cab37a39bbb689b69409df6ed39235",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The same half-plane input feeds the modulus-one reduction, primitive reflection and the joint strip/zeta assertion.",
+      "kind": "assembly",
+      "uses": [
+        "S1"
+      ],
+      "lean": [
+        {
+          "name": "rhOfAll",
+          "file": "Supplements/Kernels/MainTheorems.lean",
+          "line0": 9,
+          "line1": 9
+        },
+        {
+          "name": "critAll",
+          "file": "Supplements/Kernels/MainTheorems.lean",
+          "line0": 11,
+          "line1": 13
+        },
+        {
+          "name": "claimAll",
+          "file": "Supplements/Kernels/MainTheorems.lean",
+          "line0": 15,
+          "line1": 16
+        }
+      ],
+      "source": "notes/units/P009_round3.md",
+      "anchor": "Track each use of the common input",
+      "source_lines": [
+        21,
+        21
+      ],
+      "claim_sha256": "a12bcc23f14ff6956259c7aea6895561610b97f2d5af0af316c4b0d15ab98e84",
+      "passage_sha256": "c7caa62fee3ec09579662de0035974b4a804c864dae408fb97c2debbecee0ef0",
+      "sha256": "5e7a955119763eb056c5351b5b65eb8b07cb1cf0fe75498f26296b2128230ed0",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "1682f483f5b3f708a1e5fb94b9ce6a120dbda3386f2174ce8511e0b8370afdce",
+      "sources": [
+        {
+          "path": "notes/units/P009_round3.md",
+          "sha256": "d60e012343866942c6997e8576c7075d5927731207c58dbadd9bbb500e157103"
+        }
+      ],
+      "statement_sha256": "41c0e719aae69120b727544a61922e688edf83f1e6a705d68bfa3928beef2392",
+      "steps": {
+        "S1": "3da288bb8b35af81124168ff8e59c149ed0e210b3f36a5251f41217abce989eb",
+        "S2": "cd6fac28a2438000a838421fe7b9cdae0f815916efa63af19921b731a55a68c0",
+        "S3": "c12369de7c0bc9df12d99cc24415efb9b4cab37a39bbb689b69409df6ed39235",
+        "S4": "5e7a955119763eb056c5351b5b65eb8b07cb1cf0fe75498f26296b2128230ed0"
+      },
+      "step_texts": {
+        "S1": "The alias allChi has exactly the every-character predicate, including its exception.",
+        "S2": "The closed route supplies Green from the regular-character field and the definite-side witness from the linked two-prime bound and the other fixed inputs.",
+        "S3": "The family inequality and the Landau window criterion give the primitive nonvanishing under the supplied windows.",
+        "S4": "The same half-plane input feeds the modulus-one reduction, primitive reflection and the joint strip/zeta assertion."
+      },
+      "step_passages": {
+        "S1": "6b7396156cba402a8e96500198543fe3a789ac631dcd9f2bd9c7de266b148be9",
+        "S2": "723c72fa675f475f18c981055d7592cd454b35f5d49ff78f116316d91d3f8a99",
+        "S3": "c19a83abbd05ef3ac4f0865a3f63a7145d7a6afb438cb47c4a691154cf040722",
+        "S4": "c7caa62fee3ec09579662de0035974b4a804c864dae408fb97c2debbecee0ef0"
+      }
+    }
+  ]
+}

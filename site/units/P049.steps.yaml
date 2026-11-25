@@ -1,0 +1,172 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "P049",
+  "edition_sha256": "bbcec7dbc89eb892fe005e8baf8e2dba68e309b5e057f9f5492622268f5e2c31",
+  "note_sha256": "c8b291443fea2da2eed0d3b1d13f61c7ca158a62067807e2a60baf15ae7f30a0",
+  "statement_sha256": "8d9ff6bf1e47329ccdc872bb097b3669e1fffff51764a840f96289d33276bbd9",
+  "sources": [
+    {
+      "path": "notes/units/P049.tex",
+      "sha256": "c8b291443fea2da2eed0d3b1d13f61c7ca158a62067807e2a60baf15ae7f30a0"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The real field lattice covolume is the square root of the absolute discriminant divided by two to the number of complex places.",
+      "kind": "computation",
+      "uses": [
+        "standard: trace discriminant"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.HN.HeightGram.abs_det_amat",
+          "file": "Formalism/HarderNarasimhan/HarderNarasimhanProofs/HtGram.lean",
+          "line0": 218,
+          "line1": 243
+        }
+      ],
+      "source": "notes/units/P049.tex",
+      "anchor": "Replacing one pair of real rows",
+      "source_lines": [
+        7,
+        18
+      ],
+      "claim_sha256": "7015725e8ba010a03374627bcb45255348ce42dbfa5db6cf47cd0898a996f260",
+      "passage_sha256": "f66e57e3cf6a7bb15e87749f5fedc81316e87921aaf1917f287fe3f0ec3c46f5",
+      "sha256": "0aa3b7c4a63c58011b179b331fda03b1251f68d9d518449fb3b4ff4307c40a30",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The real determinant of the coordinate change equals the squared absolute complex determinant and hence the Gram determinant on the span.",
+      "kind": "computation",
+      "uses": [
+        "standard: realification"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.HN.HeightGram.det_realif",
+          "file": "Formalism/HarderNarasimhan/HarderNarasimhanProofs/HtGram.lean",
+          "line0": 89,
+          "line1": 131
+        }
+      ],
+      "source": "notes/units/P049.tex",
+      "anchor": "Its real determinant is the squared absolute complex determinant",
+      "source_lines": [
+        7,
+        18
+      ],
+      "claim_sha256": "5ef4f1c765b97121720fc4e77c5d9ff30cb3a1ba33fe21b6bfc9ffcbed79aeb0",
+      "passage_sha256": "f66e57e3cf6a7bb15e87749f5fedc81316e87921aaf1917f287fe3f0ec3c46f5",
+      "sha256": "470859e0ceda91bd5029372623ce21d79f9b7da8fef3325c1a93b596bce7ec66",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The normalized product of the field covolume factors and frame contributions equals the product of the local Gram determinants.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "S2"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.HN.htGram_of",
+          "file": "Formalism/HarderNarasimhan/HarderNarasimhanProofs/HtGram.lean",
+          "line0": 371,
+          "line1": 391
+        }
+      ],
+      "source": "notes/units/P049.tex",
+      "anchor": "The normalization in the height",
+      "source_lines": [
+        7,
+        18
+      ],
+      "claim_sha256": "049080f2a15ef113d5d5b5b6237c223ec03172b2f1c8d28dba89d7b2633c804c",
+      "passage_sha256": "f66e57e3cf6a7bb15e87749f5fedc81316e87921aaf1917f287fe3f0ec3c46f5",
+      "sha256": "a76d38ed329aee8e71e8a208a3d4d0e2f9cc4dfe7b47033672db1912a7dae1bd",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The ratio of the covolumes equals the index of the smaller lattice in the larger one.",
+      "kind": "computation",
+      "uses": [
+        "S3",
+        "input: spanning sublattice"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.HN.htGram_of",
+          "file": "Formalism/HarderNarasimhan/HarderNarasimhanProofs/HtGram.lean",
+          "line0": 392,
+          "line1": 409
+        }
+      ],
+      "source": "notes/units/P049.tex",
+      "anchor": "Smith form for the inclusion",
+      "source_lines": [
+        7,
+        18
+      ],
+      "claim_sha256": "29ff1013642d133c8ac306c1f74b2758ace2266ef64d38fa966fcd358ff8ece6",
+      "passage_sha256": "f66e57e3cf6a7bb15e87749f5fedc81316e87921aaf1917f287fe3f0ec3c46f5",
+      "sha256": "a018500e480fc0dca84995dda79063ec670bdb1fc166b7e09a85860e75c5f2c1",
+      "ai_review": []
+    },
+    {
+      "id": "S5",
+      "status": "active",
+      "claim": "For rank zero the empty determinant gives the same identity.",
+      "kind": "case-split",
+      "uses": [
+        "S3",
+        "standard: determinant of dimension zero"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.HN.htGram_of",
+          "file": "Formalism/HarderNarasimhan/HarderNarasimhanProofs/HtGram.lean",
+          "line0": 371,
+          "line1": 391
+        }
+      ],
+      "source": "notes/units/P049.tex",
+      "anchor": "The rank-zero calculation",
+      "source_lines": [
+        7,
+        18
+      ],
+      "claim_sha256": "85a99e575802d5e2998a582fbfa98f399615f17f22f5372702563818b1b14249",
+      "passage_sha256": "f66e57e3cf6a7bb15e87749f5fedc81316e87921aaf1917f287fe3f0ec3c46f5",
+      "sha256": "206cdd4734f31173bc1b2591e74733fee774573a436c7229e7340bb92ac31815",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "d7639a8b2c32bc742922afdf4f49698425e9b84de64edba996a9d2298a1e2d28",
+      "sources": [
+        {
+          "path": "notes/units/P049.tex",
+          "sha256": "c8b291443fea2da2eed0d3b1d13f61c7ca158a62067807e2a60baf15ae7f30a0"
+        }
+      ],
+      "steps": {
+        "S1": "123ac15e2c2591b52e1ce1093d808e3169f23b8ebdfb34b21a738281038798a6",
+        "S2": "db3274e162106117b6ac258b69425a7a58e723b742d7d77fe3aa7497da60a2df"
+      },
+      "step_texts": {
+        "S1": "For rank zero the determinant is the empty product and gives the same identity.",
+        "S2": "The lattice index is the ratio of covolumes for the two full lattices in the same span."
+      }
+    }
+  ]
+}

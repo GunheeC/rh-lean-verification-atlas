@@ -1,0 +1,34 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit T21. Local manuscript v3, item 5.31, heading on printed PDF p. 46.
+% UpperTheory.LiteratureTheorems.poincare_lelong_inv_of_literature
+% paper2/split_p012.tex:367–385. Verbatim excerpt; SHA-256 0a51d5488026e48ce10fdcef4913f01455bd56b8791649db06f94e7ed108f441.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+\noindent\nolinkurl{PositivityTheory.Tls2.Pl.poincareLelongInv} --- in-repo constant (\path{Development/WeilBound/CoreStatements/TemperedRepresentationTheory/PoincareLelong/PoincareLelongInv.lean:19--23}); not compared.\par
+\noindent\nolinkurl{UpperTheory.LiteratureTheorems.poincare_lelong_inv_of_literature} --- in-repo constant (\path{Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean:553--554}); not compared.\par
+\noindent\nolinkurl{PositivityTheory.Tls2.Pl.poincareLelong_of} --- in-repo constant (\path{Development/WeilBound/CoreStatements/TemperedRepresentationTheory/PoincareLelong/Development.lean:70--84}); not compared.\par
+\noindent\nolinkurl{PositivityTheory.Tls2.Pl.poincareLelongInv_of_leaves} --- in-repo constant (\path{Development/WeilBound/CoreStatements/TemperedRepresentationTheory/PoincareLelong/Development.lean:95--105}); not compared.\par
+% End of atlas edition annotation.
+
+\begin{formalstatement}[Integrated Poincaré--Lelong identity]\label{sub:T21}
+
+Given the open-literature record, let $P$ have arithmetic dimension $n+2$
+in a finite multihomogeneous coordinate ring, and let
+$L_1,\ldots,L_n,A,B$ be smooth conjugation-invariant Hermitian lines.
+Assume $B$ has zero multidegree and $s$ is a section of $A$ on $P$.
+Write $J_Z(\omega;f)$ for the project's point integral on $Z$ with
+potential list $\omega$ and integrand $f$, and $\omega_L$ for the
+potentials of the $L_i$. With $b=\log h_B$ and $a=\log h_A$,
+\[
+ J_P((b,\omega_L);\log\|s\|_A)=
+   \sum_{W\ \mathrm{horizontal~in~div}(s)}^{\mathrm{fin}}
+       \mathrm{mult}_{W}(P+(s))J_W(\omega_L;b)
+     -J_P((a,\omega_L);b).
+\]
+
+\end{formalstatement}\subnode{T21}
+
+\noindent Equation (2.15) identifies the current $(i/\pi)\partial\bar\partial\log|f|$ with the divisor current of a meromorphic function. Applying it to these horizontal multiplicities and normalized chart integrals requires a separate comparison. \href{https://www-fourier.univ-grenoble-alpes.fr/~demailly/manuscripts/agbook.pdf}{J.-P. Demailly, Complex Analytic and Differential Geometry, III (2.15)}~\cite{r21-demailly}.

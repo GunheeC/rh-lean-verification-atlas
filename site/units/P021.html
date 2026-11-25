@@ -1,0 +1,40 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>P021 · A pointwise upper bound from weighted lattice slopes · RH verification atlas</title><link rel="stylesheet" href="../atlas.css"><script>window.MathJax={tex:{inlineMath:[["$","$"]],displayMath:[["$$","$$"]],processEscapes:true},options:{ignoreHtmlClass:"no-math"}};</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script></head><body><header><div class="bar"><a class="brand" href="../index.html">RH verification atlas</a><nav aria-label="Atlas navigation"><a href="../index.html">Home</a> <a href="../STATUS.html">Status</a> <a href="../MAP.html">Map</a> <a href="../dashboard/index.html">Tracks</a> <a href="../lookup/search.html">Search declarations</a></nav></div></header><main><h1 id="p021--a-pointwise-upper-bound-from-weighted-lattice-slopes">P021 · A pointwise upper bound from weighted lattice slopes</h1>
+<p class="notice">AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved</p>
+<p>Eleven lattice hypotheses give an upper bound, at each unit, by a main term and an explicit error involving counting, division and slopes. Keeping those terms visible lets the arithmetic comparison determine whether their combined size fits the desired prime-sum bound.</p>
+<p><code>pointwise-lattice-slope-bound</code> · <a href="../tracks/arakelov/index.html">Arakelov geometry and geometry of numbers</a></p>
+<p><strong>Full</strong> · <strong>L2</strong> Written proof accepted in AI cross-review · Record generated 2026-11-25 (no human check).</p>
+<div class="scroll"><table>
+<thead><tr><th>1 · Lean pinned</th><th>2 · Statement compared</th><th>3 · Prose</th><th>4 · Steps</th><th>5 · AI review</th><th>6 · Human</th></tr></thead>
+<tbody><tr><td>✓</td><td>✓</td><td>Full</td><td>4</td><td>Current argument (AI)</td><td>0 of 4 steps</td></tr>
+</tbody></table></div>
+<p><a href="P021.check.html">Numbered proof and check records</a> · <a href="../PROGRESS.html">Progress and counting rules</a></p>
+<h2 id="statement">Statement</h2>
+<p>For any data, constants and real <span class="math">$X_{pp}$</span> as above, assume the eleven hypotheses of Definition 6.38 (manuscript p. 69). Then for every <span class="math">$u_0\in U_0$</span></p>
+<div class="math display">$$ASK(u_0)\le\mathrm{Main}(u_0)+\mathrm{Err}(u_0),$$</div>
+<p>where, with <span class="math">$M_{Lo}=c_{Sl1}Lo_P+c_{Sl1}n_Tm(a/k+b&#x27;)\,c_{Count}mL+c_{Sl1}X_{pp}+1$</span>, <span class="math">$V=2mc_EB_0+c_H(n_TaLa+mB_0)+A\,c_{Count}\log k$</span> and <span class="math">$\bar U=c_{Slope}n_TaLa(2+m/k)+V+c_{Sl1}mB_0+M_{Lo}$</span>,</p>
+<div class="math display">$$\begin{aligned} \mathrm{Err}(u_0)={}&amp;A\,c_{Count}\Bigl(La+\frac{m^2La}{k}\Bigr)+E_{Div}+m\,c_EB_0\\ &amp;+c_{Slope}n_TaLa\Bigl(1+\frac mk\Bigr)+\log|W(u_0)|+Lo_P+M_{Lo}\\ &amp;+\frac1{1-\bar\delta}\Bigl(4\log(1+x^{c_{HH}})\,(\bar U+b)+(\bar\eta+4\sqrt{\bar e})\,x^{c_{HH}}b\Bigr). \end{aligned}$$</div>
+<h2 id="assumptions">Assumptions</h2>
+<ul><li>Fix the finite unit and word-fibre data, constants and <span class="math">$X_{pp}$</span>.</li><li>Assume the Hida setting, division bound, <span class="math">$E$</span> and <span class="math">$H$</span> comparisons, counting, slopes and quotient-slope bounds of the cited lattice definition.</li><li>Use LossBounds, SlopeIneq, HHBound and FParams on the same data (Definition 6.38, p. 69).</li></ul>
+<p>Sources for the assumptions · <a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a></p>
+<h2 id="where-to-read">Where to read</h2>
+<p>Blueprint v13 and papers v3–v5 are this atlas project’s own AI-written, unpublished drafts. They have no human review and were not written by the author of the Lean development. Blueprint v13, its separate cover, and paper v5 are distributed as assets of release v0.1.0. For v3 and v4 the atlas supplies selected excerpts and notes. <a href="../data/editions.json">Edition register</a></p>
+<ul><li><a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a>, 6.40, p. 70. Statement starts on the cited page.</li><li><a href="../notes/units/P021.tex">Manuscript source excerpt</a> · section <code>pn:P021</code></li><li><a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a>, The chain in detail: LinkN_at, pp. 13–16. Shared subsection for this station, including subordinate inputs.</li><li><a href="../notes/units/P021-argument.tex">Manuscript argument excerpt</a> · section <code>r23:link</code></li></ul>
+<h2 id="evidence">Evidence</h2>
+<ul><li><a href="../reviews/R20_review.html">R20 review</a>, original line 53 — F: full derivation; yes. R20 local implication under its stated premises, not its prerequisite cones.</li><li><a href="../reviews/R23_review.html">R23 review</a>, original lines 120–136 — CORRECT AND COMPLETE under displayed hypotheses. Only the per-unit ASK inequality from all eleven hypotheses.</li></ul>
+<p>Review records · <a href="../reviews/R20_review.html">R20 review</a> · <a href="../reviews/R23_review.html">R23 review</a></p>
+<h2 id="lean-declarations">Lean declarations</h2>
+<ul><li><code>Formalism.LFunctionChainParameters.WeightedSlopeBounds.each_unit_bound_statement</code>  <br><a href="https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SizeWindowBrackets/ChainSlopeWindows/LevelOfCongruence.lean#L175-L197"><code>LevelOfCongruence.lean</code></a>, lines 175–197 · 301 dominated lines · SHA-256 <code>efab74dec4a4</code>.</li></ul>
+<p><a href="P021.yaml">Machine record and full declaration hashes</a> · <a href="../lookup/declarations.html">Declaration lookup</a></p>
+<h2 id="reading-prerequisites">Reading prerequisites</h2>
+<p>Background · Hermitian lattices · Slopes and weighted means.</p>
+<ul><li><a href="D568.html">D568 · A slope bound for the Gaussian term</a> · graph</li><li><a href="D570.html">D570 · Upper bound for the weighted mean of lower slopes</a> · graph</li></ul>
+<p><a href="../data/round3_prerequisites.json">Evidence and definitions of reading links</a></p>
+<h2 id="open-questions">Open questions</h2>
+<p>None recorded.</p>
+<h2 id="graph-connections">Graph connections</h2>
+<p>Arrows may connect either a unit’s main declaration or an indexed member.</p>
+<p><strong>Uses</strong> · <a href="D568.html">D568</a> · <a href="D570.html">D570</a></p>
+<p><strong>Used by</strong> · <a href="B10.html">B10</a> · <a href="P017.html">P017</a></p>
+<p><a href="../data/unit_graph.json">Declaration witnesses and graph scope</a></p>
+<p>Lookup aliases · <code>A pointwise upper bound from weighted slopes</code>, <code>each_unit_bound_statement</code>, <code>P021 A pointwise upper bound from weighted lattice slopes</code></p>
+<p>&lt;!-- Unit metadata SHA-256 3a61926590b16d4f649d7e0bf3304f92dfa12b5e9f1562c09de9199ab48d7586 --&gt;</p></main><footer><a href="../help.html">Using the local edition</a></footer></body></html>

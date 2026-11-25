@@ -1,0 +1,123 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "T06",
+  "title": "Lattice masses, automorphic membership and existence of linked bundles",
+  "track": {
+    "primary": "theta",
+    "secondary": []
+  },
+  "statement": "Assume $P$ and row rationality. For any $h,c,A$ as in T03 with $A$\neventually large, three conclusions hold. For every unramified CM datum and\n$M\\ge3$ the ratio of standard lattice masses in ranks $M$ and $M-1$ equals\nthe prescribed \\nolinkurl{massRatioRightSide}. At $p_A(c)$ one has the base,\nfirst stage, export and second stage of automorphic membership. Finally, there\nis a large-base slot $R$ such that eventually every constructed point of\nthe good slot intersected with $R$ admits, at every real scale, a bundle\nwith the specified linkage.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume the third-place unitary hypotheses and rationality of the eligible rows.",
+    "Fix a proof of the existence proposition RecTExists and a real dependence parameter, and take an eventually large retwisting predicate. The lattice-mass clause takes an unramified CM datum of rank at least three."
+  ],
+  "lean": [
+    {
+      "name": "GlobalTheory.T.large_unramified_exponent_bundles_exist_alt",
+      "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MemberBundlesLargeUnramifiedExponents.lean",
+      "line0": 69,
+      "line1": 70,
+      "sha256": "fa66865c8b56eb71c910f894cb033f390e14c895950f42b95745f78ed96f67d0",
+      "dominated": 280670,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/T06_round4.md",
+      "section": "T06 · Lattice masses, automorphic membership and existence of linked bundles",
+      "pages": [
+        1,
+        4
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "5.16 (sub:T06)",
+      "pages": [
+        41,
+        41
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/T06.tex",
+      "section": "sub:T06",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [
+    "D025",
+    "D415",
+    "D575",
+    "N188",
+    "P050",
+    "P096",
+    "Z5.1"
+  ],
+  "size_pages": 4,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "T06",
+  "indexed_members": [
+    "D409",
+    "D410",
+    "D411",
+    "D412",
+    "D413",
+    "D414",
+    "D416",
+    "D417",
+    "D418",
+    "D419",
+    "D420"
+  ],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "lattice-masses-automorphic-membership-and-existence-of-linked-bundles",
+  "aliases": [
+    "Three member and linkage conclusions",
+    "large_unramified_exponent_bundles_exist_alt",
+    "T06 Lattice masses, automorphic membership and existence of linked bundles"
+  ],
+  "background": [
+    "Unitary-group mass formulas",
+    "Automorphic membership"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "5.16 (sub:T06)",
+    "pages": [
+      41,
+      41
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "D025": "graph",
+    "D415": "graph",
+    "D575": "graph",
+    "N188": "graph",
+    "P050": "graph",
+    "P096": "graph",
+    "Z5.1": "graph"
+  },
+  "review_status": "pending_review",
+  "summary": "The same extension supplies automorphic membership and eventual linked-bundle existence, and the third-place hypotheses also give the standard CM lattice mass ratio. The definite-side construction needs all three outputs, including the nonemptiness assertion at its selected slots.",
+  "reader_overrides": {
+    "hypothesis_details": [
+      "Assume the third-place unitary hypotheses and rationality of the eligible rows.",
+      "Fix a proof of the existence proposition RecTExists and a real dependence parameter, and take an eventually large retwisting predicate. The lattice-mass clause takes an unramified CM datum of rank at least three."
+    ]
+  }
+}

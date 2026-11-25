@@ -1,0 +1,108 @@
+{
+  "id": "Z1.2",
+  "title": "Ordinary adjoint rigidity",
+  "track": {
+    "primary": "galois",
+    "secondary": [
+      "local"
+    ]
+  },
+  "statement": "In ranks 2--4 the local theorem record and dense ordinary vanishing give the adjoint lifting assertion at the prescribed generic points. Under the parity condition a finite polarized adjoint cocycle is a coboundary. Construction of the vanishing input and the rank-three even-level flag are additional assignments within this review.",
+  "assumptions": [
+    "source:blueprint_v13"
+  ],
+  "hypothesis_details": [
+    "Use ranks two through four and the local theorem record.",
+    "Assume dense ordinary vanishing at the prescribed generic points. For the coboundary clause impose the stated parity."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.Th.adjointLiftingTheorem_of_locPrints_of_core",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/AdLOf.lean",
+      "line0": 104,
+      "line1": 150,
+      "sha256": "4e1cd7823cb628ae111564c465d5b957a0f7b5684602aa21fdbfe0fa3136e782",
+      "dominated": 597,
+      "graph": "allChi",
+      "role": "statement"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/blueprint/Z1.2.tex",
+      "section": "r6:review:Z1.2, r11:adj",
+      "pages": []
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r6:review:Z1.2",
+      "pages": [
+        365,
+        365
+      ],
+      "printed_page": 340,
+      "scope": "First page of this named destination."
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r11:adj",
+      "pages": [
+        481,
+        481
+      ],
+      "printed_page": 456,
+      "scope": "First page of this named destination."
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [
+    "reviews/R5_review_C.md",
+    "reviews/R11_review.md"
+  ],
+  "prerequisites": [
+    "D097"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "Stage C. Local crystalline comparisons and the Fontaine Bcris boundary remain. At the caller, \\nolinkurl{ordinary_vanishing_two_of_printed_hida} (374,411 core lines through literature vertices, 374,408 stopping there) uses \\nolinkurl{hida_x_of_printed_hida} (341,282 through literature, 341,279 stopping there), \\nolinkurl{core_o_of_literal_automorphy_n} (132,810, including the 94,762-line operator statement), arithmetic Hida regularity (37,088) and local class field theory (19,625). The tangent and linked-flag suppliers belong to Z1.1.",
+    "For which weights and ramified places do the ordinary and Bloch–Kato local conditions agree in the comparison used by P025?"
+  ],
+  "last_checked": "2026-11-24",
+  "blueprint_members": [
+    "Z1.2"
+  ],
+  "representative": "UpperTheory.V.Th.adjointLiftingTheorem_of_locPrints_of_core",
+  "statement_declarations": [
+    "UpperTheory.V.Th.adjointLiftingTheorem_of_locPrints_of_core"
+  ],
+  "grade_scope": "Named statement declarations with the hypotheses above. Chart supplier records have their own review scopes.",
+  "confirmation_basis": "Minimum across the statement declarations, using registry rows for the blueprint assignments listed here. Reviews of other expositions of a shared declaration are included as context.",
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "slug": "ordinary-adjoint-rigidity",
+  "aliases": [
+    "Z1.2 Ordinary adjoint rigidity"
+  ],
+  "background": [
+    "Ordinary deformations",
+    "Bloch–Kato local conditions",
+    "Adjoint representations"
+  ],
+  "hypothesis_source": {
+    "document": "blueprint_v13",
+    "section": "r6:review:Z1.2",
+    "pages": [
+      365,
+      365
+    ]
+  },
+  "question_sources": [
+    "data/status_ledger.json",
+    "questions/galois.md"
+  ],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "D097": "statement-reading"
+  },
+  "summary": "In ranks two through four, the local input record and dense ordinary vanishing give adjoint lifting at the designated generic points. With the parity condition, a finite polarized adjoint cocycle is a coboundary. Applying this rigidity requires the dense-vanishing input."
+}

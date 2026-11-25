@@ -1,0 +1,88 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D203",
+  "title": "Fixed vectors over the de Rham period ring",
+  "track": {
+    "primary": "local",
+    "secondary": []
+  },
+  "statement": "For the specified p-adic field K, every element of the de Rham period ring fixed by all automorphisms of the p-adic algebraic closure over K is the image of an element of K.\n\\[\n\\forall x\\in B_{\\rm dR},\\quad (\\forall\\sigma\\in G_K,\\ \\sigma x=x)\\ \\Longrightarrow\\ \\exists k\\in K,\\ \\iota_K(k)=x.\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Fix the prescribed $p$-adic field $K$ and $x\\in B_{\\rm dR}$.",
+    "Every element of the absolute Galois group of $K$ fixes $x$."
+  ],
+  "lean": [
+    {
+      "name": "GroundTheory.PAdicHodge.bDeRham_fixed",
+      "file": "GroundTheory/PAdicHodge/BdRInvariants.lean",
+      "line0": 155,
+      "line1": 186,
+      "sha256": "0cbeac52e0bbf4e50f57a68ecfb99e149c6d0a022aaaf0e062493ff48a7a800c",
+      "dominated": 1407,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/D203_round4.md",
+      "section": "D203 · Identifying a de Rham invariant from its first nonzero graded class",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "G.213 (decomp:D203)",
+      "pages": [
+        210,
+        210
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D203.tex",
+      "section": "decomp:D203",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": 2,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "D203",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "fixed-vectors-over-the-de-rham-period-ring",
+  "aliases": [
+    "bDeRham_fixed",
+    "D203 Fixed vectors over the de Rham period ring"
+  ],
+  "background": [
+    "Galois invariants",
+    "The de Rham period ring"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.213 (decomp:D203)",
+    "pages": [
+      210,
+      210
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "review_status": "pending_review",
+  "summary": "A fixed element of the de Rham period field is the image of an element of the chosen finite local field. Its filtration level and leading term determine the coefficient, and invariance forces the higher-filtration error to vanish."
+}

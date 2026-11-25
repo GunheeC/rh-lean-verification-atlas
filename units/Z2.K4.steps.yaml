@@ -1,0 +1,227 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "Z2.K4",
+  "edition_sha256": "3009bc576eff5212ebbae0d20c3b8135620515ee5c4503d07254729fbcc20411",
+  "note_sha256": "b78727f1d82b5e196574ff5ebf47b4fe1d3b42217a69573a920bee587e772931",
+  "statement_sha256": "dd678aa7f1a87fe032d526e5bc190cf7e78e67ac459453fcdfa6d9167feadd1e",
+  "sources": [
+    {
+      "path": "notes/blueprint/Z2.K4.tex",
+      "sha256": "b78727f1d82b5e196574ff5ebf47b4fe1d3b42217a69573a920bee587e772931"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Stable comparison for the determinant-one group combines with the free group of scalar units to supply the central directions.",
+      "kind": "literature",
+      "uses": [
+        "input: stable comparison for determinant one",
+        "standard: Dirichlet unit theorem"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.KB.SSurj",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/SBStar.lean",
+          "line0": 20,
+          "line1": 24
+        }
+      ],
+      "source": "notes/blueprint/Z2.K4.tex",
+      "anchor": "The remaining central factor matters",
+      "source_lines": [
+        50,
+        77
+      ],
+      "claim_sha256": "71e9d3dd7f537dda99d93a63c782b06f8e5b2c041db25daac049b19ecfe74696",
+      "passage_sha256": "026e02cb65d04829d9d4690f9c6204c6eeda1a6d10b7dba309d3f9ceaf0ced1c",
+      "sha256": "d8315c62894cb6e1b4c75eae486e3874365b8676bc052221fa423e46bf4b9c05",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The straight-simplex integration map and the comparison map give the same value on a cycle.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "standard: chain homotopy"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.KB.ev",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/ActLPos.lean",
+          "line0": 39,
+          "line1": 40
+        }
+      ],
+      "source": "notes/blueprint/Z2.K4.tex",
+      "anchor": "The two cochains differ by a coboundary",
+      "source_lines": [
+        79,
+        99
+      ],
+      "claim_sha256": "a13aadc48683cc9c1e15308154940acaf019bfa772a9cb3bcce860ef7828fbd7",
+      "passage_sha256": "a1ab9369841da88053c1c71628d7b1b226e5b056515636a263010cf560a82c84",
+      "sha256": "ae6e4edd4dfa64d76fc8c0d65d25fc53b79dc609be4f84c83ea875588dc60311",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Invariant tensors decompose into products of alternating trace words indexed by the cycles of permutations.",
+      "kind": "computation",
+      "uses": [
+        "standard: multilinear invariant theory"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.KB.sWtOdd_of",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/OddWeightCycles/SWtOddOf.lean",
+          "line0": 8,
+          "line1": 9
+        }
+      ],
+      "source": "notes/blueprint/Z2.K4.tex",
+      "anchor": "The representing tensor is therefore",
+      "source_lines": [
+        131,
+        175
+      ],
+      "claim_sha256": "4f14c5f1aac563615e2dcd386df896ea0c8eb54b4c25d7422eafd61af754aa6e",
+      "passage_sha256": "1b78a028b1a51b41c50512dc54aa5a6df89eecb2518c81f7e11bdd1f07908a0a",
+      "sha256": "6a9d8a61e01b7510757291a47f05b4fb2f5694e2fb4c420634e3234864bcaed4",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "Under repeated diagonal blocks, a product of $j$ traces scales by $t^j$; the recurrence removes the indicated multi-trace part.",
+      "kind": "computation",
+      "uses": [
+        "S3",
+        "input: block recurrence"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.KB.sBStarOdd_of",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/OddSpanRank/SBStarOddOf.lean",
+          "line0": 13,
+          "line1": 78
+        }
+      ],
+      "source": "notes/blueprint/Z2.K4.tex",
+      "anchor": "For a pattern",
+      "source_lines": [
+        177,
+        194
+      ],
+      "claim_sha256": "9f49be3aa5dd5f5137bf171baa2a3f2adc9f17b97ccb94aadc48c3f3e8660c17",
+      "passage_sha256": "341fd8dd9502aa2f9205db557a707e24d60b2d346d9cf70ae5f9fcbd71e7b17c",
+      "sha256": "2f9f44ac8a6e6309976eff52cb7a12fc388b58b42534980d549c8da6701154a8",
+      "ai_review": []
+    },
+    {
+      "id": "S5",
+      "status": "active",
+      "claim": "Alternation and conjugation leave at most one independent real single-trace evaluation per complex place in odd degree.",
+      "kind": "inequality",
+      "uses": [
+        "S3",
+        "input: Hermitian reversal relation"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.KB.sBStarOdd_of",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/OddSpanRank/SBStarOddOf.lean",
+          "line0": 13,
+          "line1": 78
+        }
+      ],
+      "source": "notes/blueprint/Z2.K4.tex",
+      "anchor": "A permutation with one cycle",
+      "source_lines": [
+        196,
+        212
+      ],
+      "claim_sha256": "f34c66dc5d88f7c89b89e1105f04f45971b5b14e5af8a10f9fb1d1cd4df51bad",
+      "passage_sha256": "7400d1cc3abaccbd9f45085a2370250d2a001cd9ccd77e27924bcbe2e369d1ff",
+      "sha256": "eb09a4857ead7d51de37a72f71e03f86681815c69ddffa0966bab669170b0e4c",
+      "ai_review": []
+    },
+    {
+      "id": "S6",
+      "status": "active",
+      "claim": "Stable comparison and flat scalar extension give the integral rank bound, while integral stability identifies the torsion within the stated range.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "S2",
+        "S4",
+        "S5",
+        "P035"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.KB.bOdd_zk",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/LiteratureResults/KTheoryStability/ReductionBoundsTorsion/TorsionIntegers/Bridge.lean",
+          "line0": 34,
+          "line1": 35
+        },
+        {
+          "name": "UpperTheory.V.ZK.Up.torsStab",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/TorsionRankCounts/TorsStab.lean",
+          "line0": 16,
+          "line1": 39
+        }
+      ],
+      "source": "notes/blueprint/Z2.K4.tex",
+      "anchor": "Finally the integral bar complex is free",
+      "source_lines": [
+        262,
+        263
+      ],
+      "claim_sha256": "9845c6d2ab71002e68c309085e877b6fc8ec8b1f938e082a5fec6bf47c2e5f62",
+      "passage_sha256": "ac1b4f9160ce8f9409ea9d0ad5b2dfd542975a99696ce04a0ce3b012837420e7",
+      "sha256": "3d1e870f567dcef73ce43091676b5da28fe174579a25d19ce14d9c19ad115753",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "7a9416db1de43fffcf3110123e9260b155af62772047bf01c6ab961284d96c22",
+      "sources": [
+        {
+          "path": "notes/blueprint/Z2.K4.tex",
+          "sha256": "a80f706604988c8c82414fd9d61df4a29888dbb5124634a6094d2e805234a973"
+        }
+      ],
+      "statement_sha256": "dd678aa7f1a87fe032d526e5bc190cf7e78e67ac459453fcdfa6d9167feadd1e",
+      "steps": {
+        "S1": "d8315c62894cb6e1b4c75eae486e3874365b8676bc052221fa423e46bf4b9c05",
+        "S2": "ae6e4edd4dfa64d76fc8c0d65d25fc53b79dc609be4f84c83ea875588dc60311",
+        "S3": "6a9d8a61e01b7510757291a47f05b4fb2f5694e2fb4c420634e3234864bcaed4",
+        "S4": "2f9f44ac8a6e6309976eff52cb7a12fc388b58b42534980d549c8da6701154a8",
+        "S5": "eb09a4857ead7d51de37a72f71e03f86681815c69ddffa0966bab669170b0e4c",
+        "S6": "3d1e870f567dcef73ce43091676b5da28fe174579a25d19ce14d9c19ad115753"
+      },
+      "step_texts": {
+        "S1": "Stable comparison for the determinant-one group combines with the free group of scalar units to supply the central directions.",
+        "S2": "The straight-simplex integration map and the comparison map give the same value on a cycle.",
+        "S3": "Invariant tensors decompose into products of alternating trace words indexed by the cycles of permutations.",
+        "S4": "Under repeated diagonal blocks, a product of $j$ traces scales by $t^j$; the recurrence removes the indicated multi-trace part.",
+        "S5": "Alternation and conjugation leave at most one independent real single-trace evaluation per complex place in odd degree.",
+        "S6": "Stable comparison and flat scalar extension give the integral rank bound, while integral stability identifies the torsion within the stated range."
+      },
+      "step_passages": {
+        "S1": "026e02cb65d04829d9d4690f9c6204c6eeda1a6d10b7dba309d3f9ceaf0ced1c",
+        "S2": "a1ab9369841da88053c1c71628d7b1b226e5b056515636a263010cf560a82c84",
+        "S3": "1b78a028b1a51b41c50512dc54aa5a6df89eecb2518c81f7e11bdd1f07908a0a",
+        "S4": "341fd8dd9502aa2f9205db557a707e24d60b2d346d9cf70ae5f9fcbd71e7b17c",
+        "S5": "7400d1cc3abaccbd9f45085a2370250d2a001cd9ccd77e27924bcbe2e369d1ff",
+        "S6": "ac1b4f9160ce8f9409ea9d0ad5b2dfd542975a99696ce04a0ce3b012837420e7"
+      }
+    }
+  ]
+}

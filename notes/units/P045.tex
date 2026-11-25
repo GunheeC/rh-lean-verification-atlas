@@ -1,0 +1,24 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit P045. Local manuscript v3, item 7.22, heading on printed PDF p. 87.
+% Formalism.MainNotions.FormalGroupSystem.Pf.hecke_place_bound
+% paper2/inputs_two.tex:87–104. Verbatim excerpt; SHA-256 9d0a089082966f4c95ff817c87c2a94419beda58a07b8b9aa7464151ebe3cbc4.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+\begin{formalstatement}[Weighted jet at a place]\label{pn:P045}
+Fix a prime \(p\) and project systems \(X,Y,D\). Assume the integral exponential factorization for the formal group (\(\mathrm{RestGc}\)): in the indicated even cyclic coordinates, after adjoining a \((p^2-1)\)-st root of \(p\) and using the inverse Lubin--Tate parameter, the transformed exponential factors as the prescribed exponential times an integral series, with integral parameters. Assume each unweighted differential coefficient is zero or agrees with the corresponding coefficient of a local frame jet. If \(D\) admits \(X,Y\), then for any place \(v\), stage \(j<m\), \(1\le i\le r\), allowed integral parameter series \(U\), selected columns \(I\) and output monomial \(n\), the coefficient at \(n\) of the \(i\)-weighted differential of
+\[
+ \Theta_j\!\left(\exp(-\Phi_{j,v})\,U\right)
+\]
+satisfies the lower valuation bound \(g_v(j+1)\) in the comparison field \(Y\). Integrality of \(U\) here is in the chosen parameter coordinates.
+\end{formalstatement}
+\nodestatus{P045}
+Katz's work on \(p\)-adic modular forms and on \(p\)-adic \(L\)-functions for CM fields supplies background on expansions and interpolation. The source of the quantitative gain here is the factorial and minor calculation for the specified cyclic frame. We have not identified a published inequality with these indices and this \(g_v(j+1)\).
+\begin{outline}
+Use the factorization to write each relevant homogeneous coefficient as a sum from \(p^{-k}h^k U_k\), \(U_k\) integral. A coefficient of degree \(d\) sees only Frobenius powers of degree at most \(d\). After separating the low and top variables, the terms of \(h\) consist of paired top powers, mixed top powers with one low linear form, terms with at least \(p\) low letters, and terms divisible by \(p\). The last pay their own denominator. If there are \(B\) mixed terms, the factorial from differentiation against the repeated low linear forms and the multinomial coefficient for their selection leave a factor \(B!\). For \(P\) paired terms, \(i_2\) terms of the third kind, top index \(e\) and remaining low index \(n\), the coefficient has valuation at least
+\[
+ v_p(e!\,B!\,n!)-P-B-i_2,\qquad p i_2\le |n|.
+\]
+This is the factorial estimate in blueprint \bploc{sec:P-r4-z41}.
+
+For the weighted estimate mark columns \(b<i\) at odd positions and their complements at even positions. Every pair consumes a mark, and an even-origin mixed term consumes either such a mark or one of the available marked columns of an odd minor. This bounds their number by the marked-letter budget \(b_J\), \(J=\{b:b<i\}\). The remaining odd-origin terms are bounded both by the available top exponent divided by the Frobenius power and by the number of minor columns. The factorial calculation in the Blueprint~\bploc{sec:P-r4-z41} gives the required gain after multiplication by \(p^{b_J}\). The actual exponent \(E_i\) is at least \(b_J\): a height-one top singleton contributes equally on both sides, an odd minor contributes its number of selected columns in \(J\), and each remaining even minor contributes a nonnegative excess. Applying the multiplicative Gauss norm in the frame entries bounds each frame coefficient by the computed entry bound. Repeated columns give zero; injective renaming transports every surviving coefficient. Substitution of the position and height counts is precisely \(g_v(j+1)\). See the blueprint's \bploc{par:r5-z41-bridge}.
+\end{outline}

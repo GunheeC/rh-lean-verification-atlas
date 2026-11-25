@@ -1,0 +1,29 @@
+# D203 · Identifying a de Rham invariant from its first nonzero graded class
+
+AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+
+**First-pass outline of the head proof term** · 1,407 dominated core lines (index size).
+
+this note describes what the top-level term calls; it does not explain the dependency cone beneath it
+
+**pending_review** · [Unit card](../../units/D203.md) · [Track guide](../../tracks/local/README.md)
+
+A fixed element of the de Rham period field is the image of an element of the chosen finite local field. Its filtration level and leading term determine the coefficient, and invariance forces the higher-filtration error to vanish. `GroundTheory.PAdicHodge.bDeRham_fixed` ([BdRInvariants.lean:155–186](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/GroundTheory/PAdicHodge/BdRInvariants.lean#L155-L186)).
+
+## Choose the exact filtration level
+
+Fix the indicated intermediate field $K$, finite-dimensional over the $p$-adic rationals, and $x$ in the de Rham period field fixed by every automorphism over $K$. For $x=0$ take the scalar zero. Otherwise the filtration of the de Rham field gives an integer $i$ with $x$ in filtration $i$ but outside filtration $i+1$. The graded image of a fixed element is invariant for the corresponding twisted action. In nonzero degree such an invariant vanishes, which would put $x$ one step deeper. Consequently its exact level is zero. `GroundTheory.PAdicHodge.bDeRham_fixed` ([BdRInvariants.lean:155–186](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/GroundTheory/PAdicHodge/BdRInvariants.lean#L155-L186)). `GroundTheory.PAdicHodge.bDeRham_exists_level` ([BdRInvariants.lean:95–103](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/GroundTheory/PAdicHodge/BdRInvariants.lean#L95-L103)). `GroundTheory.PAdicHodge.level_eq_zero_of_invariant` ([BdRInvariants.lean:150–153](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/GroundTheory/PAdicHodge/BdRInvariants.lean#L150-L153)).
+
+## Extract the coefficient before attempting equality
+
+At degree zero the fixed part of the graded representation gives an element $k$ of $K$ whose image represents the leading class of $x$. The proof embeds $k$ through the de Rham plus ring and into the field. The embedded element is invariant, lies in filtration zero, and its leading term is computed by the specified residue map. Thus the difference $y=x-k$, where $k$ denotes this precise image, is invariant and still lies in filtration zero. Equality of the leading terms says exactly that $y$ lies in filtration one. `GroundTheory.PAdicHodge.cpTwistRep_invariants_zero` ([ExistsGalFixCyclotomicLayerCycloCharNeOne.lean:284–294](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/GroundTheory/PAdicHodge/ExistsGalFixCyclotomicLayerCycloCharNeOne.lean#L284-L294)). `GroundTheory.PAdicHodge.bDeRham_fixed` ([BdRInvariants.lean:155–186](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/GroundTheory/PAdicHodge/BdRInvariants.lean#L155-L186)).
+
+## Eliminate a possible higher-order error
+
+Suppose $y$ were nonzero. The same exact-level existence argument applied to $y$ would give some level $j$. Invariance forces $j=0$, so by exactness of that level $y$ lies outside filtration one, contradicting the previous membership. This avoids a choice of infinitely many higher coefficients or a completeness argument for a putative expansion of $x$. It also shows why the claim is stronger than identifying the fixed part of a single quotient. The plus-ring variant and the crystalline comparison [D230](../../units/D230.md) use compatible embeddings again; they require their own conclusions about where the recovered scalar lies. `GroundTheory.PAdicHodge.bDeRham_fixed` ([BdRInvariants.lean:155–186](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/GroundTheory/PAdicHodge/BdRInvariants.lean#L155-L186)). `GroundTheory.PAdicHodge.level_eq_zero_of_invariant` ([BdRInvariants.lean:150–153](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/GroundTheory/PAdicHodge/BdRInvariants.lean#L150-L153)).
+
+## Why an exact integer level exists
+
+For a nonzero $x$ there is some $j$ such that $x$ is outside filtration $j$, since the intersection of all filtration submodules is zero. The filtration is decreasing. Thus the integers $i$ with $x$ in filtration $i$ are bounded above, and this set is nonempty by exhaustiveness. Choose its greatest element. Membership in the next step would contradict maximality. This discrete argument justifies applying the nonzero-degree invariant calculation to an actual leading class twice. Applying it only once would locate a leading coefficient but would give no reason for the possible error above filtration zero to vanish. The source uses the same lemma a second time on the difference after comparing the degree-zero residues. `GroundTheory.PAdicHodge.bDeRham_exists_level` ([BdRInvariants.lean:95–103](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/GroundTheory/PAdicHodge/BdRInvariants.lean#L95-L103)). `GroundTheory.PAdicHodge.level_eq_zero_of_invariant` ([BdRInvariants.lean:150–153](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/GroundTheory/PAdicHodge/BdRInvariants.lean#L150-L153)).
+
+**First step to challenge.** Check the invariants of the graded twist both in degree zero and in every nonzero degree. These two inputs are used at different points of the argument.

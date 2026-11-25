@@ -1,0 +1,84 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% RH Notes blueprint source excerpts for Z2.K1
+% Verbatim excerpts in the notation of the parent blueprint. The labelled editions and source ranges appear below.
+% See the unit YAML for the current proof status. Earlier-round passages retain their original wording.
+\section*{Z2.K1. Cyclotomic tower and localization kernel}
+
+% Parent source SHA-256: 1af64922b98ed2310744411b1f18b25cc426c97220646321471836e1a3a409d6
+% blueprint/ch_P.tex lines 844 through 918; lem:P-r3-k1
+\begin{lemma}[One tower module for all layers (K1)]\label{lem:P-r3-k1}
+Under the hypotheses of Proposition~\ref{prop:P-k-layer}, put
+$L_\infty=L(\mu_{\ell^\infty})$. There is one twisted module $X$ with
+automorphism $g$ such that the localization kernel at layer $m$ has
+extended length $\operatorname{length} X/(g^{\ell^m}-1)X$.
+\end{lemma}
+\begin{proof}
+Write $c_0$ for the initial maximum root exponent. The cyclotomic image
+is closed, lies in $1+\ell^{c_0}\mathbf Z_\ell$ and contains an element
+$u$ with $v_\ell(u-1)=c_0$ by maximality. The binomial expansion gives
+$v_\ell(u^{\ell^j}-1)=c_0+j$ since $c_0\ge2$ at $2$. Its powers
+therefore generate each finite quotient of this principal unit group.
+The image is the whole group, and $L_m=L(\mu_{\ell^{c_0+m}})$ has
+degree $\ell^m$. The finite set of primes over $\ell$ admits choices of places in a
+fixed algebraic closure, and the cyclotomic character factors through the
+unramified-outside-$\ell$ quotient. These choices give the local data
+used in \nolinkurl{step0} and \nolinkurl{ShaAsm_holds}
+(\nolinkurl{ldata_nonempty}, \path{GaloisCohomologyProofs/LdataNonempty.lean:39--48}).
+Choose $\gamma$ acting by $1+\ell^{c_0}$, so the
+subgroup over $L_m$ has generator $\gamma^{\ell^m}$. See
+\nolinkurl{cycRange}, \nolinkurl{layerUniq}
+(\path{NumberFieldTowers/CycRange.lean:9}, \path{LayerUniq.lean:25--40}).
+
+Let $S$ consist of the places over $\ell$ and the infinite places.
+The cyclotomic tower is unramified outside $S$ since roots of
+$\ell$-power order form an \'etale group there. Each $L_m$ has the same
+maximal extension $L_S$ unramified outside $S$ inside a fixed closure:
+the normal closure over $L$ of a finite extension of $L_m$ unramified
+outside $S$ is still unramified there. Put $H=\operatorname{Gal}(L_S/L_\infty)$,
+$A=A_E$, and let $B$ be the continuous homomorphisms $H\to A$
+vanishing on all decomposition groups of $H$ above $\ell$.
+The quotient $\Gamma_m=\operatorname{Gal}(L_\infty/L_m)$ acts on
+$B$ through the action on $A$ and inverse conjugation on $H$.
+Away from $\ell$ the inertia condition on these characters has already
+been imposed by $L_S$. These are the local conditions in
+\nolinkurl{XDual}, \nolinkurl{EqHom}
+(\path{KummerTheory/Mk0IdMapCongr.lean:90--110}).
+
+Restriction identifies the localization kernel with $B^{\Gamma_m}$.
+Indeed $H$ acts trivially on $A$ and the inflation--restriction sequence
+has outside terms $H^1(\Gamma_m,A)$ and $H^2(\Gamma_m,A)$.
+For a topological generator $s$ its action on $A$ is a scalar
+$\chi(s)^{-E}\ne1$. Multiplication by its difference from $1$ is
+surjective on $\mathbf Q_\ell/\mathbf Z_\ell$. Subtracting a
+coboundary therefore makes a cocycle zero on $s$, hence on its dense
+powers. The degree-two term vanishes by the two-term free resolution
+of $\mathbf Z_\ell$ over
+$\mathbf Z_\ell[[\Gamma_m]]=\mathbf Z_\ell[[s-1]]$ with differential
+multiplication by $s-1$. Thus every invariant character lifts uniquely
+as a global cohomology class. At $w\mid\ell$ the image of the local
+cyclotomic character is open: the cyclotomic extensions over
+$\mathbf Q_\ell$ have unbounded degree, and passage to the finite
+field extension $(L_m)_w$ changes the image by at most its degree.
+It is an open subgroup of $\Gamma_m$, so the same degree-one argument
+gives local injectivity. Vanishing on the infinite-level decomposition
+group is therefore equivalent to local triviality at $w$.
+The project records the restriction, lifting and field-identifications in
+\nolinkurl{resInfInj}, \nolinkurl{resInfOnto}, \nolinkurl{desc}
+(\path{KummerTheory/ResInfInj.lean:58}, \path{ResInfOnto.lean:102},
+\path{NumberFieldTowers/Imports.lean:10--12}).
+
+Take $X=\operatorname{Hom}_{\mathbf Z_\ell}(B,\mathbf Q_\ell/\mathbf Z_\ell)$,
+and take $g$ dual to the inverse generator action. Fixed elements under
+a generator and its inverse coincide. Dualizing the kernel of
+$\gamma^{-\ell^m}-1$ identifies its dual with the indicated quotient:
+a functional on a submodule extends, since the target is divisible over
+the discrete valuation ring. Finite-length modules and their duals have
+the same length by a composition series. An infinite-length discrete
+$\ell$-primary torsion module contains finite submodules of arbitrarily
+large length, whose duals are quotients of its dual. This proves the
+equality also at infinite length. See \nolinkurl{shaDGen},
+\nolinkurl{cokerDual}, \nolinkurl{exists_descends}
+(\path{NumberFieldTowers/ShaDGen.lean:9--11}, \path{CokerDual.lean:8--19},
+\path{ExistsDescends.lean:26--57}). \emph{Status: complete.}
+\end{proof}
+

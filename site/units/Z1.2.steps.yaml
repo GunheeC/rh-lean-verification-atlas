@@ -1,0 +1,238 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "Z1.2",
+  "edition_sha256": "2ecd98ebdf5b914cf269c05216dc80c416a03217067e44a86da170700830e04f",
+  "note_sha256": "907c51849b65515960669c48223daf8e4e57a6dbd4e3f961f7e29d3ac45b370b",
+  "statement_sha256": "795aca0d9fbe48c65d05eb2d29363ca27027c480aba34f3ee2522f54e6276422",
+  "sources": [
+    {
+      "path": "notes/blueprint/Z1.2.tex",
+      "sha256": "907c51849b65515960669c48223daf8e4e57a6dbd4e3f961f7e29d3ac45b370b"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Testing the determinant trace identity against matrix units forces each marked inertia operator to be the identity.",
+      "kind": "computation",
+      "uses": [
+        "input: irreducible matrix span"
+      ],
+      "lean": [
+        {
+          "name": "adL_triv",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/AdLOf.lean",
+          "line0": 98,
+          "line1": 103
+        }
+      ],
+      "source": "notes/blueprint/Z1.2.tex",
+      "anchor": "$\\rho(h)$ span the full matrix algebra by irreducibility over the",
+      "source_lines": [
+        62,
+        79
+      ],
+      "claim_sha256": "9b3d41161429741b6c43f9c65a6dab44de356bfeed3f044fbdd7e875daebb66d",
+      "passage_sha256": "cdc2cbdb032f5d792d274e649878e29ace12bb9a66dbb336b88d77cdd20ed753",
+      "sha256": "a1e2c11d1e76dad1ad97a3bc2f1ca8afda5f8757195c7efafb42e22c5305557a",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The compact representation is defined over one finite coefficient extension after adjoining the entries of finitely many coset representatives.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "standard: Baire category"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.CompactRepField.exists_finiteDimensional_entries_mem",
+          "file": "Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/CompactGroupRepDefinedOverFiniteExtension.lean",
+          "line0": 72,
+          "line1": 119
+        }
+      ],
+      "source": "notes/blueprint/Z1.2.tex",
+      "anchor": "The closed subgroups on which entries of both $r(g)$ and $r(g^{-1})$ lie",
+      "source_lines": [
+        149,
+        163
+      ],
+      "claim_sha256": "8b164aa419d469c9727340eb31ce53f1091a2318710e6fb18e6f4a3dbdb6b7b7",
+      "passage_sha256": "6019a1d038c30d96f53da12dfafa0b47365ff9f40d199c0e53997154c0c5b5ac",
+      "sha256": "fe90e91e45aba8ff998b5aa90d78cf92c564b92629b3b86ffd4eebb34561e1af",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "An entrywise coefficient retraction taking the finite-field primitive to itself descends the cocycle without losing the period equation.",
+      "kind": "assembly",
+      "uses": [
+        "S2"
+      ],
+      "lean": [
+        {
+          "name": "desc",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/GaloisRepresentationTypes/CornerStable.lean",
+          "line0": 209,
+          "line1": 306
+        }
+      ],
+      "source": "notes/blueprint/Z1.2.tex",
+      "anchor": "Write the period primitive as a finite sum $x=\\sum_t A_t\\otimes b_t$.",
+      "source_lines": [
+        165,
+        178
+      ],
+      "claim_sha256": "20ebc40cc0e59879188f4b3683b93a6c17a69a0cf61c9cdfe5b3383ea75b3dce",
+      "passage_sha256": "0a844577af9de55c9f68cd59cddec3b6331e6e04f01616418617ead6418ec94d",
+      "sha256": "5d628d0efac14e316683d82759fffd3a72dde4b9c55d23bdf9252a7ee96fed3d",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "For the stated diagonal character, the finite crystalline extension has trivial inertia, so evaluating inertia on the lift of the quotient generator kills the cocycle.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: crystalline filtered extension"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Loc.z1fUnr",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/ExistsIntBasis.lean",
+          "line0": 370,
+          "line1": 375
+        }
+      ],
+      "source": "notes/blueprint/Z1.2.tex",
+      "anchor": "diagonal character, a finite cocycle vanishes on inertia: its extension",
+      "source_lines": [
+        199,
+        214
+      ],
+      "claim_sha256": "dc3e5526182213f9098668885c79d89e97998f212edf8e4ace8698ef64a6fc1f",
+      "passage_sha256": "7ce80c71b78b176ebe61c2425472fc14b9a73b3cd97414611fb6a12ee7124a27",
+      "sha256": "11c273180de0a583a470881aa082d343587543842478fb7ada6c4a63678781d3",
+      "ai_review": []
+    },
+    {
+      "id": "S5",
+      "status": "active",
+      "claim": "Choosing all local constants before the precision makes the residual error independent of precision in the tangent-count exponent.",
+      "kind": "inequality",
+      "uses": [
+        "input: one-level duality product bound"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Th.b1absO",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/TheoremsMuLinked/CyclicReductionCohomology/ResidualRepOne.lean",
+          "line0": 44,
+          "line1": 129
+        }
+      ],
+      "source": "notes/blueprint/Z1.2.tex",
+      "anchor": "Put $t={n\\choose2}$ and let $d_v$ sum to $d$. Take the global invariant",
+      "source_lines": [
+        278,
+        297
+      ],
+      "claim_sha256": "f3d7865e25600b8ccd9782036be8b3a1a4eff4a1ee7f7af3e0844392b2f8fbfc",
+      "passage_sha256": "009b9dc6c6cfce55cae819061ea0effa10c0f7e816f2e69c5faac9e715deff44",
+      "sha256": "edd372aadd6f0208f21953adfafce3a160ac959f3a39d190851259b6f26673cc",
+      "ai_review": []
+    },
+    {
+      "id": "S6",
+      "status": "active",
+      "claim": "Quadratic growth of the number of finite-level derivations forces the representing module to have free rank at least two.",
+      "kind": "inequality",
+      "uses": [
+        "standard: structure theorem over a DVR"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Z.J.rankTwo",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/LinkedUnramifiedChains/CrystallineCardinalities/RankTwo.lean",
+          "line0": 177,
+          "line1": 229
+        }
+      ],
+      "source": "notes/blueprint/Z1.2.tex",
+      "anchor": "$\\xi$-derivations to $A_k=O/(\\ell^k)$ killing $T$ is at least",
+      "source_lines": [
+        370,
+        392
+      ],
+      "claim_sha256": "c308cbaeefccbafcf95e795ba51827a2e2a9ec2a314f113ab1787d71b95bf842",
+      "passage_sha256": "0e1f292cd896b63d4ea4dcfccb2b85c66c055a08c3281e244aca3e71ba88fad9",
+      "sha256": "1e9f56978d22f580bcaa0813d351b7001c1fc298a2a978a895a5e7f2db1a3c52",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "16e7105baa18e7d6566f5b0f23e5210120cf3b5c380e12c2d1624f1967186086",
+      "sources": [
+        {
+          "path": "notes/blueprint/Z1.2.tex",
+          "sha256": "0ebb5af56a625dc1b533143318a26284ad5f301cbae7631eee7ccd1dab733b27"
+        }
+      ],
+      "steps": {
+        "S1": "a1e2c11d1e76dad1ad97a3bc2f1ca8afda5f8757195c7efafb42e22c5305557a",
+        "S2": "bf71505e996f6ab4782dc27ab5c096fd7243dcca2528c4119dcd2ae2a0bffd19",
+        "S3": "8a6be67dd73752801ed6aea7d1a807fa95c9931facd4380933f74c1bc9dfae8a",
+        "S4": "edfc91c656812c6a128db6b0f82054f48a6dddfe03b3933aee0fc4e4e5a890a5",
+        "S5": "8c6a51956b5ef9f43b6e3dba3f2fb683d85ca8e3be9775073d164e74422b6548",
+        "S6": "0dc4a26af9ddfb17d71941ef037b4e5cfa1f655a2ccfb2a9ac23b219f16ff468"
+      },
+      "step_texts": {
+        "S1": "Testing the determinant trace identity against matrix units forces each marked inertia operator to be the identity.",
+        "S2": "The compact representation is defined over one finite coefficient extension after adjoining the entries of finitely many coset representatives.",
+        "S3": "An entrywise coefficient retraction taking the finite-field primitive to itself descends the cocycle without losing the period equation.",
+        "S4": "For the stated diagonal character, the finite crystalline extension has trivial inertia, so evaluating inertia on the lift of the quotient generator kills the cocycle.",
+        "S5": "Choosing all local constants before the precision makes the residual error independent of precision in the tangent-count exponent.",
+        "S6": "Quadratic growth of the number of finite-level derivations forces the representing module to have free rank at least two."
+      }
+    },
+    {
+      "edition_sha256": "08236a20c69fc5fac3de29ea5b211f58bffcd5c7b48b5a3436a8f5734f005f84",
+      "sources": [
+        {
+          "path": "notes/blueprint/Z1.2.tex",
+          "sha256": "0ebb5af56a625dc1b533143318a26284ad5f301cbae7631eee7ccd1dab733b27"
+        }
+      ],
+      "statement_sha256": "795aca0d9fbe48c65d05eb2d29363ca27027c480aba34f3ee2522f54e6276422",
+      "steps": {
+        "S1": "a1e2c11d1e76dad1ad97a3bc2f1ca8afda5f8757195c7efafb42e22c5305557a",
+        "S2": "fe90e91e45aba8ff998b5aa90d78cf92c564b92629b3b86ffd4eebb34561e1af",
+        "S3": "5d628d0efac14e316683d82759fffd3a72dde4b9c55d23bdf9252a7ee96fed3d",
+        "S4": "11c273180de0a583a470881aa082d343587543842478fb7ada6c4a63678781d3",
+        "S5": "edd372aadd6f0208f21953adfafce3a160ac959f3a39d190851259b6f26673cc",
+        "S6": "1e9f56978d22f580bcaa0813d351b7001c1fc298a2a978a895a5e7f2db1a3c52"
+      },
+      "step_texts": {
+        "S1": "Testing the determinant trace identity against matrix units forces each marked inertia operator to be the identity.",
+        "S2": "The compact representation is defined over one finite coefficient extension after adjoining the entries of finitely many coset representatives.",
+        "S3": "An entrywise coefficient retraction taking the finite-field primitive to itself descends the cocycle without losing the period equation.",
+        "S4": "For the stated diagonal character, the finite crystalline extension has trivial inertia, so evaluating inertia on the lift of the quotient generator kills the cocycle.",
+        "S5": "Choosing all local constants before the precision makes the residual error independent of precision in the tangent-count exponent.",
+        "S6": "Quadratic growth of the number of finite-level derivations forces the representing module to have free rank at least two."
+      },
+      "step_passages": {
+        "S1": "cdc2cbdb032f5d792d274e649878e29ace12bb9a66dbb336b88d77cdd20ed753",
+        "S2": "6019a1d038c30d96f53da12dfafa0b47365ff9f40d199c0e53997154c0c5b5ac",
+        "S3": "0a844577af9de55c9f68cd59cddec3b6331e6e04f01616418617ead6418ec94d",
+        "S4": "7ce80c71b78b176ebe61c2425472fc14b9a73b3cd97414611fb6a12ee7124a27",
+        "S5": "009b9dc6c6cfce55cae819061ea0effa10c0f7e816f2e69c5faac9e715deff44",
+        "S6": "0e1f292cd896b63d4ea4dcfccb2b85c66c055a08c3281e244aca3e71ba88fad9"
+      }
+    }
+  ]
+}

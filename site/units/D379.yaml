@@ -1,0 +1,96 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D379",
+  "title": "Counting constants from Siegel–Weil",
+  "track": {
+    "primary": "theta",
+    "secondary": []
+  },
+  "statement": "Under the convergent unitary Siegel-Weil formula, one can choose counting constants as a function of the output list and a positive constant bounded by its c-component, with nonnegative C-component and exponent at least 2(CYL+1). The same choices give the counting estimate for every family and test predicate.\n\\[\n\\exists c_{30},\\ \\exists c_{\\rm Ic}>0:\\ \\forall F,P,\\quad C_F\\ge0,\\quad A_F\\ge2(\\mathrm{CYL}_F+1),\\quad c_F\\ge c_{\\rm Ic},\\quad\\operatorname{CountAllPointsClass}(P,F,n_{0,F},A_F,C_F,c_F,cb_F).\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume the convergent unitary Siegel–Weil assertion.",
+    "For the counting clause take an eligible family and a test predicate on its automorphic data."
+  ],
+  "lean": [
+    {
+      "name": "GlobalTheory.CountConstants.count_constants_of_siegelWeil",
+      "file": "Development/AbelianVarietyTheory/Proofs/FlagMeasures/CountConstantsOfSiegelWeil.lean",
+      "line0": 11,
+      "line1": 24,
+      "sha256": "ac5d21c73c3f4b52fc6f380e86a6e38d46d10519ac8137128f991a1d1566238c",
+      "dominated": 40441,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/D379_round4.md",
+      "section": "D379 · Counting constants from Siegel–Weil",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "G.392 (decomp:D379)",
+      "pages": [
+        254,
+        254
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D379.tex",
+      "section": "decomp:D379",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [
+    "P049",
+    "P050",
+    "Z5.1"
+  ],
+  "size_pages": 2,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "D379",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "counting-constants-from-siegelweil",
+  "aliases": [
+    "count_constants_of_siegelWeil",
+    "D379 Counting constants from Siegel–Weil"
+  ],
+  "background": [
+    "Convergent Siegel–Weil formula",
+    "Uniform counting for automorphic forms"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.392 (decomp:D379)",
+    "pages": [
+      254,
+      254
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "P049": "graph",
+    "P050": "graph",
+    "Z5.1": "graph"
+  },
+  "review_status": "pending_review",
+  "summary": "The convergent unitary Siegel–Weil formula gives counting constants that depend on the family's output list. Their exponent and positive lower bound are fixed before a later test predicate is chosen. The same constants can therefore be used when counting on all points of a family."
+}

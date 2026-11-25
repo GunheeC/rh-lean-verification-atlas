@@ -1,0 +1,109 @@
+{
+  "id": "Z2.K2",
+  "title": "Cycles on integral matrices and uniform residue evaluation",
+  "track": {
+    "primary": "ktheory",
+    "secondary": []
+  },
+  "statement": "In a cyclic layer with $2e+3<\\ell^c$, any $\\alpha$ satisfying the divisor condition gives a degree-$(2e+3)$ cycle over $\\mathcal O_L$ with coefficients modulo $\\ell^\\nu$ and a single nonzero denominator. At every allowed residue map, every additive evaluator with the prescribed scalar value returns $P_{e+1}v(u)$ for a residue $u$ of the twisted norm, with $P_{e+1}=\\prod_{0\\le i<2e+3,\\ i\\ne e+1}(\\kappa^{e+1}-\\kappa^i)$ and $\\kappa=1+\\ell^c$. A primitive reduced root supplies such an evaluator.",
+  "assumptions": [
+    "source:blueprint_v13"
+  ],
+  "hypothesis_details": [
+    "Use a cyclic layer with $2e+3<\\ell^c$ and an element satisfying the divisor condition.",
+    "The residual maps and evaluators satisfy the stated scalar conditions."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.ZK.sClassOf",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/SClassOf.lean",
+      "line0": 21,
+      "line1": 23,
+      "sha256": "552bb1d63bce80715de0cfa81ced5ca000b260a4089789d96d69319064c4982d",
+      "dominated": 2207,
+      "graph": "allChi",
+      "role": "statement"
+    },
+    {
+      "name": "UpperTheory.V.ZK.sThetaOf",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/SThetaOf.lean",
+      "line0": 192,
+      "line1": 273,
+      "sha256": "779dff9d7fed23189d9a0df56cee7222ffcec7123f345d939c8e9cf33c394dbb",
+      "dominated": 259,
+      "graph": "allChi",
+      "role": "statement"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/blueprint/Z2.K2.tex",
+      "section": "prop:P-k-few, sec:P-r4-K2",
+      "pages": []
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "prop:P-k-few",
+      "pages": [
+        174,
+        174
+      ],
+      "printed_page": 149,
+      "scope": "First page of this named destination."
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "sec:P-r4-K2",
+      "pages": [
+        187,
+        187
+      ],
+      "printed_page": 162,
+      "scope": "First page of this named destination."
+    }
+  ],
+  "status": "Full",
+  "grade": "L1",
+  "reviews": [
+    "reviews/R4_review_Z2.md",
+    "reviews/R20_review.md"
+  ],
+  "prerequisites": [],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "blueprint_members": [
+    "Z2.K2"
+  ],
+  "representative": "UpperTheory.V.ZK.sClassOf",
+  "statement_declarations": [
+    "UpperTheory.V.ZK.sClassOf",
+    "UpperTheory.V.ZK.sThetaOf"
+  ],
+  "grade_scope": "Named statement declarations with the hypotheses above. Chart supplier records have their own review scopes.",
+  "confirmation_basis": "Minimum across the statement declarations, using registry rows for the blueprint assignments listed here. Reviews of other expositions of a shared declaration are included as context.",
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "slug": "cycles-on-integral-matrices-and-uniform-residue-evaluation",
+  "aliases": [
+    "Z2.K2 Cycles on integral matrices and uniform residue evaluation"
+  ],
+  "background": [
+    "Bar and prism complexes",
+    "Integral group homology",
+    "Residue maps"
+  ],
+  "hypothesis_source": {
+    "document": "blueprint_v13",
+    "section": "prop:P-k-few",
+    "pages": [
+      174,
+      174
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "summary": "A divisor condition yields an integral matrix-group cycle and one exceptional denominator. At every allowed reduction its evaluation recovers the character of a twisted norm times an explicit product. The same cycle can therefore test many reductions."
+}

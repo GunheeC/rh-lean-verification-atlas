@@ -1,0 +1,14 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Human check field guide · RH verification atlas</title><link rel="stylesheet" href="../atlas.css"></head><body><header><div class="bar"><a class="brand" href="../index.html">RH verification atlas</a><nav aria-label="Atlas navigation"><a href="../index.html">Home</a> <a href="../STATUS.html">Status</a> <a href="../MAP.html">Map</a> <a href="../dashboard/index.html">Tracks</a> <a href="../lookup/search.html">Search declarations</a></nav></div></header><main><h1 id="human-check-field-guide">Human check field guide</h1>
+<p class="notice">AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved</p>
+<p>Copy the <a href="examples/FICTITIOUS-EXAMPLE.yaml">fictitious worked YAML example</a> into a new local file. Remove the example marker and replace all example values, including the fictitious non-attestation, with your own reading. Copy the edition from the unit checklist.</p>
+<div class="scroll"><table>
+<thead><tr><th>Field</th><th>Content</th></tr></thead>
+<tbody><tr><td><code>reader</code></td><td>Your name, field and level (<code>faculty</code>, <code>postdoc</code>, <code>phd-student</code>, <code>other</code>). Affiliation and a checksum-valid ORCID are optional.</td></tr>
+<tr><td><code>unit</code>, <code>edition_sha256</code></td><td>The unit ID and the full 64-character edition hash.</td></tr>
+<tr><td><code>scope</code>, <code>verdict</code></td><td>The steps checked, whole-note, or statement-vs-lean, with one verdict per target as described in the <a href="index.html">rules</a>.</td></tr>
+<tr><td><code>what_i_did</code>, <code>time_spent_hours</code></td><td>What you personally derived, followed or compared. Give hours as a nonnegative number.</td></tr>
+<tr><td><code>reservations</code>, <code>conflicts_of_interest</code></td><td>Describe each limitation or conflict, or enter <code>none</code>.</td></tr>
+<tr><td><code>ai_assistance_used</code>, <code>ai_assistance_description</code></td><td>One of <code>none</code>, <code>some</code>, <code>substantial</code>, and what the tool contributed.</td></tr>
+<tr><td><code>date</code>, <code>attestation</code></td><td>Your reading date in YYYY-MM-DD format and the exact sentence “I read the edition identified above myself.”</td></tr>
+</tbody></table></div>
+<p>The importer adds <code>step_sha256</code> from the identified edition&#x27;s checklist. Only a different reader other than the maintainer can use <code>resolves</code> to close an objection on unchanged text. Accepted input includes JSON and data-only YAML with nested mappings, simple lists, quoted or plain scalars and ordinary literal or folded blocks. <a href="../.github/ISSUE_TEMPLATE/signoff.yml">Issue form</a></p></main><footer><a href="../help.html">Using the local edition</a></footer></body></html>

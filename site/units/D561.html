@@ -1,0 +1,40 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>D561 · Orthogonality under the translate average · RH verification atlas</title><link rel="stylesheet" href="../atlas.css"><script>window.MathJax={tex:{inlineMath:[["$","$"]],displayMath:[["$$","$$"]],processEscapes:true},options:{ignoreHtmlClass:"no-math"}};</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script></head><body><header><div class="bar"><a class="brand" href="../index.html">RH verification atlas</a><nav aria-label="Atlas navigation"><a href="../index.html">Home</a> <a href="../STATUS.html">Status</a> <a href="../MAP.html">Map</a> <a href="../dashboard/index.html">Tracks</a> <a href="../lookup/search.html">Search declarations</a></nav></div></header><main><h1 id="d561--orthogonality-under-the-translate-average">D561 · Orthogonality under the translate average</h1>
+<p class="notice">AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved</p>
+<p>Averaging the per-unit gap bound over subgroup translates bounds a normalized character-band contribution by the given error and an explicit width correction. The density factor in front of the contribution is needed when removing the normalization to obtain a prime-sum estimate.</p>
+<p><code>orthogonality-under-the-translate-average</code> · <a href="../tracks/analytic/index.html">Analytic number theory</a> · <a href="../tracks/arakelov/index.html">Arakelov geometry and geometry of numbers</a></p>
+<p><strong>Outlined</strong> · <strong>L0</strong> Declaration pinned; no review of this unit · Record generated 2026-11-25 (no human check).</p>
+<div class="scroll"><table>
+<thead><tr><th>1 · Lean pinned</th><th>2 · Statement compared</th><th>3 · Prose</th><th>4 · Steps</th><th>5 · AI review</th><th>6 · Human</th></tr></thead>
+<tbody><tr><td>✓</td><td>–</td><td>Outlined</td><td>4</td><td>–</td><td>0 of 4 steps</td></tr>
+</tbody></table></div>
+<p><a href="D561.check.html">Numbered proof and check records</a> · <a href="../PROGRESS.html">Progress and counting rules</a></p>
+<h2 id="statement">Statement</h2>
+<p>For the fixed host, character data, positive b, and x at least 3, impose the size, thinness and cost windows, T2 inside the subgroup, and the per-unit gap bound Err. If |TT|Y is bounded by the TT sum of the subgroup-band character terms, then |TT| m b (delta2(T2)/2) Y is at most Err + 2|TT| m b/x.</p>
+<div class="math display">$$|TT|\,m b\,\frac{\delta_2(T_2)}{2}Y\le\mathrm{Err}+\frac{2|TT|mb}{x}.$$</div>
+<h2 id="assumptions">Assumptions</h2>
+<ul><li>Assume the host prime facts, <span class="math">$x\ge3$</span>, <span class="math">$b&gt;0$</span>, the size and thinness conditions, cost windows, and <span class="math">$T_2\subseteq A_0$</span>.</li><li>Bound the gap by the same error for every <span class="math">$u\in A_0$</span> and give the subgroup-band sum a lower bound of <span class="math">$|TT|Y$</span>.</li></ul>
+<p>Sources for the assumptions · <a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a></p>
+<p><strong>New exposition · pending_review.</strong> This edition has no independent review of the new argument. Earlier verdicts below retain their stated scopes.</p>
+<h2 id="where-to-read">Where to read</h2>
+<p>Blueprint v13 and papers v3–v5 are this atlas project’s own AI-written, unpublished drafts. They have no human review and were not written by the author of the Lean development. Blueprint v13, its separate cover, and paper v5 are distributed as assets of release v0.1.0. For v3 and v4 the atlas supplies selected excerpts and notes. <a href="../data/editions.json">Edition register</a></p>
+<ul><li><a href="https://github.com/GunheeC/rh-lean-verification-atlas/releases/download/v0.1.0/paper_v5.pdf#page=11">From the Selmer window to Dirichlet zero-free statements, v5</a>, A8 · Prime and character balance, pp. 11–12. Revised paper v5 exposition, pending independent review. The PDF link opens the release attachment after publication.</li><li><a href="https://github.com/GunheeC/rh-lean-verification-atlas/releases/download/v0.1.0/paper_v5.pdf#page=17">From the Selmer window to Dirichlet zero-free statements, v5</a>, A10 · Thick sum at fixed width, pp. 17–18. Revised paper v5 exposition, pending independent review. The PDF link opens the release attachment after publication.</li><li><a href="../notes/units/D561_v4.html">D561 · Prime-power balance and the fixed-width thick sum</a>, pp. 1–4 in the atlas print layout. Round-3 written exposition, pending independent review.</li><li><a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a>, G.594 (decomp:D561), p. 305. Statement starts on the cited page.</li><li><a href="../notes/units/D561.tex">Manuscript source excerpt</a> · section <code>decomp:D561</code></li><li><a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a>, The chain in detail: P017, pp. 9–13. Shared subsection for this station, including subordinate inputs.</li><li><a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v4</a>, Mechanism, §3, pp. 10–12. Paper v4, pending independent review.</li><li><a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v4</a>, Mechanism, §3, p. 18. Paper v4, pending independent review.</li></ul>
+<h3 id="other-expositions-and-comparisons">Other expositions and comparisons</h3>
+<ul><li><a href="https://github.com/jimjamzola/RH-Alpoge-Reconstruction/blob/aa9c86bf2a7d29b08575641fecea19a2a603e87c/manuscript/main.pdf">Adriazola, Theorem 4.2</a> · partial. <a href="../crosswalk/adriazola.html">Correspondence table</a>.</li></ul>
+<h2 id="evidence">Evidence</h2>
+<p>The pinned declaration is recorded in the formal source. No higher-level verdict is assigned to this unit.</p>
+<p>Review records · <a href="../reviews/DB3_review_A.html">DB3 review A</a></p>
+<h2 id="lean-declarations">Lean declarations</h2>
+<ul><li><code>Deduction.CharacterBalanceMoves.core</code>  <br><a href="https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean#L283-L338"><code>ChCore.lean</code></a>, lines 283–338 · 1,161 dominated lines · SHA-256 <code>a2527ea0437b</code>.</li></ul>
+<p><a href="D561.yaml">Machine record and full declaration hashes</a> · <a href="../lookup/declarations.html">Declaration lookup</a></p>
+<h2 id="reading-prerequisites">Reading prerequisites</h2>
+<p>Background · Finite Fourier orthogonality · Averaging character sums.</p>
+<p>No prior atlas unit is specified.</p>
+<h2 id="open-questions">Open questions</h2>
+<ul><li>Which map indexes the thick places by the translated set, and where is its injectivity used in the average?</li></ul>
+<h2 id="graph-connections">Graph connections</h2>
+<p>Arrows may connect either a unit’s main declaration or an indexed member.</p>
+<p><strong>Uses</strong> · No recorded edge.</p>
+<p><strong>Used by</strong> · <a href="B09.html">B09</a></p>
+<p><a href="../data/unit_graph.json">Declaration witnesses and graph scope</a></p>
+<p>Lookup aliases · <code>translate average</code>, <code>core</code>, <code>D561 Orthogonality under the translate average</code></p>
+<p>&lt;!-- Unit metadata SHA-256 39ebb90ea892d8b3223b40e335fbbe83d8b5f04e7c85f82db9b5e94a4049fb85 --&gt;</p></main><footer><a href="../help.html">Using the local edition</a></footer></body></html>

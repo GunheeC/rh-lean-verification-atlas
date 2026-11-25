@@ -1,0 +1,31 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% RH Notes blueprint source excerpts for Z1.1.06
+% Verbatim excerpts in the notation of the parent blueprint. The labelled editions and source ranges appear below.
+% See the unit YAML for the current proof status. Earlier-round passages retain their original wording.
+\section*{Z1.1.06. The common marking and degree zero}
+
+% Parent source SHA-256: 9559fca8cc392b75d71f1c158fe0c635cfcab567e2f489b52db4c5bb29d98029
+% blueprint/ch_P_r8_small.tex lines 458 through 479; r8:small:Z1.1.06
+\paragraph{Z1.1.06. Detecting the ramification of the quadratic character.}
+\phantomsection\label{r8:small:Z1.1.06}
+Let \(A\) be a valuation ring in the chosen algebraic closure and \(K\) the
+quadratic field whose stabilizer is \(\ker\eta\) in the marking data.
+Each image of \(\mathcal O_K\) is contained in \(A\) by S10.
+Suppose \(\mathrm{disc}(K)\) has nonzero residue. In any integral basis
+of \(\mathcal O_K\), the square of the determinant of the matrix of its
+embeddings is that discriminant. If two distinct embeddings agreed modulo
+the maximal ideal on the basis, reduction would give equal rows, a zero
+determinant and a zero discriminant. Thus inertia, which fixes each
+residue, fixes the restriction to \(K\) of the given embedding. In
+particular, if inertia is not contained in \(\ker\eta\), the discriminant
+is in the maximal ideal of \(A\). Its absolute integer value is there
+as well, and multiplying by the integral \(\ell N\) keeps it there.
+This proves the ramification test at the enlarged level. S06 explains
+inversion of the algebraic twist on the same Artin map. The linked
+endpoint data and descent giving the two markings remain to be checked
+(\nolinkurl{GlobalTheory.UnramDiscr.embedding_eq},
+\path{IneLeFixingSubgroup.lean:18--58};
+\nolinkurl{gdEnd_of_frame_linkedEnd_downCsdK_descent},
+\path{DenseThresholdCases/GdEndOf.lean:54--83};
+\nolinkurl{ends_of_alt}, \path{DenseThresholdCases/DnEnds.lean:35--39}).
+

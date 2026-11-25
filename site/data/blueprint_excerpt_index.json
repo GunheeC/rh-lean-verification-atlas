@@ -1,0 +1,1236 @@
+{
+  "N415": [
+    {
+      "label": "r5:lit:N415",
+      "source": "blueprint/ch_T.tex",
+      "start": 674,
+      "end": 748,
+      "v13_printed_page": 546,
+      "v13_pdf_page": 571
+    }
+  ],
+  "Z1.5.01": [
+    {
+      "label": "r5:small:Z1.5.01",
+      "source": "blueprint/ch_P.tex",
+      "start": 12487,
+      "end": 12502,
+      "v13_printed_page": 330,
+      "v13_pdf_page": 355
+    },
+    {
+      "label": "r6:review:Z1.5.01",
+      "source": "blueprint/ch_P.tex",
+      "start": 12568,
+      "end": 12580,
+      "v13_printed_page": 336,
+      "v13_pdf_page": 361
+    }
+  ],
+  "Z1.5.02": [
+    {
+      "label": "r5:small:Z1.5.02",
+      "source": "blueprint/ch_P.tex",
+      "start": 12522,
+      "end": 12531,
+      "v13_printed_page": 333,
+      "v13_pdf_page": 358
+    },
+    {
+      "label": "r6:Z1.5.02",
+      "source": "blueprint/ch_P.tex",
+      "start": 12663,
+      "end": 12698,
+      "v13_printed_page": 342,
+      "v13_pdf_page": 367
+    },
+    {
+      "label": "r7:review:Z1.5.02",
+      "source": "blueprint/ch_P_r7.tex",
+      "start": 3,
+      "end": 10,
+      "v13_printed_page": 363,
+      "v13_pdf_page": 388
+    }
+  ],
+  "Z1.5.03": [
+    {
+      "label": "r8:small:Z1.5.03",
+      "source": "blueprint/ch_P_r8_small.tex",
+      "start": 498,
+      "end": 514,
+      "v13_printed_page": 443,
+      "v13_pdf_page": 468
+    }
+  ],
+  "Z1.5.04": [
+    {
+      "label": "r8:small:Z1.5.04",
+      "source": "blueprint/ch_P_r8_small.tex",
+      "start": 516,
+      "end": 531,
+      "v13_printed_page": 444,
+      "v13_pdf_page": 469
+    }
+  ],
+  "Z1.5.05": [
+    {
+      "label": "r8:small:Z1.5.05",
+      "source": "blueprint/ch_P_r8_small.tex",
+      "start": 533,
+      "end": 552,
+      "v13_printed_page": 444,
+      "v13_pdf_page": 469
+    }
+  ],
+  "Z1.5.06": [
+    {
+      "label": "r5:Z1.5.06",
+      "source": "blueprint/ch_P.tex",
+      "start": 12399,
+      "end": 12418,
+      "v13_printed_page": 324,
+      "v13_pdf_page": 349
+    },
+    {
+      "label": "r6:review:Z1.5.06",
+      "source": "blueprint/ch_P.tex",
+      "start": 12582,
+      "end": 12585,
+      "v13_printed_page": 336,
+      "v13_pdf_page": 361
+    }
+  ],
+  "Z1.5.07": [
+    {
+      "label": "r5:small:Z1.5.07",
+      "source": "blueprint/ch_P.tex",
+      "start": 12504,
+      "end": 12520,
+      "v13_printed_page": 332,
+      "v13_pdf_page": 357
+    },
+    {
+      "label": "r6:review:Z1.5.07",
+      "source": "blueprint/ch_P.tex",
+      "start": 12587,
+      "end": 12593,
+      "v13_printed_page": 337,
+      "v13_pdf_page": 362
+    },
+    {
+      "label": "r7:review:Z1.5.07",
+      "source": "blueprint/ch_P_r7.tex",
+      "start": 23,
+      "end": 24,
+      "v13_printed_page": 365,
+      "v13_pdf_page": 390
+    }
+  ],
+  "Z2.K5": [
+    {
+      "label": "prop:P-k-count",
+      "source": "blueprint/ch_P.tex",
+      "start": 517,
+      "end": 648,
+      "v13_printed_page": 153,
+      "v13_pdf_page": 178
+    }
+  ],
+  "Z5.1": [
+    {
+      "label": "lem:P5-gram-realize",
+      "source": "blueprint/ch_P.tex",
+      "start": 2080,
+      "end": 2133,
+      "v13_printed_page": 174,
+      "v13_pdf_page": 199
+    }
+  ],
+  "Z5.2": [
+    {
+      "label": "lem:P5-eval-realize",
+      "source": "blueprint/ch_P.tex",
+      "start": 2135,
+      "end": 2191,
+      "v13_printed_page": 175,
+      "v13_pdf_page": 200
+    }
+  ],
+  "N076": [
+    {
+      "label": "r6:N076",
+      "source": "blueprint/ch_T.tex",
+      "start": 352,
+      "end": 374,
+      "v13_printed_page": 539,
+      "v13_pdf_page": 564
+    }
+  ],
+  "N188": [
+    {
+      "label": "r5:lit:N188",
+      "source": "blueprint/ch_T.tex",
+      "start": 481,
+      "end": 523,
+      "v13_printed_page": 544,
+      "v13_pdf_page": 569
+    }
+  ],
+  "N318": [
+    {
+      "label": "r6:N318",
+      "source": "blueprint/ch_T.tex",
+      "start": 376,
+      "end": 404,
+      "v13_printed_page": 541,
+      "v13_pdf_page": 566
+    }
+  ],
+  "Z4.1": [
+    {
+      "label": "sec:P-r4-z41-kernel",
+      "source": "blueprint/ch_P.tex",
+      "start": 4607,
+      "end": 4790,
+      "v13_printed_page": 205,
+      "v13_pdf_page": 230
+    },
+    {
+      "label": "sec:P-r4-z41",
+      "source": "blueprint/ch_P.tex",
+      "start": 4055,
+      "end": 4790,
+      "v13_printed_page": 199,
+      "v13_pdf_page": 224
+    }
+  ],
+  "Z42-SITES": [
+    {
+      "label": "r5:Z4.2.01",
+      "source": "blueprint/ch_P.tex",
+      "start": 12384,
+      "end": 12397,
+      "v13_printed_page": 324,
+      "v13_pdf_page": 349
+    },
+    {
+      "label": "r6:review:Z4.2.01",
+      "source": "blueprint/ch_P.tex",
+      "start": 12615,
+      "end": 12617,
+      "v13_printed_page": 339,
+      "v13_pdf_page": 364
+    },
+    {
+      "label": "r5:small:Z4.2.03",
+      "source": "blueprint/ch_P.tex",
+      "start": 12533,
+      "end": 12548,
+      "v13_printed_page": 334,
+      "v13_pdf_page": 359
+    },
+    {
+      "label": "r6:review:Z4.2.03",
+      "source": "blueprint/ch_P.tex",
+      "start": 12619,
+      "end": 12621,
+      "v13_printed_page": 339,
+      "v13_pdf_page": 364
+    },
+    {
+      "label": "r5:small:Z4.2.05",
+      "source": "blueprint/ch_P.tex",
+      "start": 12550,
+      "end": 12564,
+      "v13_printed_page": 335,
+      "v13_pdf_page": 360
+    },
+    {
+      "label": "r6:review:Z4.2.05",
+      "source": "blueprint/ch_P.tex",
+      "start": 12623,
+      "end": 12624,
+      "v13_printed_page": 339,
+      "v13_pdf_page": 364
+    }
+  ],
+  "Z4.2.02": [
+    {
+      "label": "r6:Z4.2.02",
+      "source": "blueprint/ch_P.tex",
+      "start": 13224,
+      "end": 13232,
+      "v13_printed_page": 357,
+      "v13_pdf_page": 382
+    },
+    {
+      "label": "r8:Z4.2.02",
+      "source": "blueprint/ch_P_r8_frames.tex",
+      "start": 1,
+      "end": 51,
+      "v13_printed_page": 417,
+      "v13_pdf_page": 442
+    }
+  ],
+  "Z4.2.04": [
+    {
+      "label": "r6:Z4.2.04",
+      "source": "blueprint/ch_P.tex",
+      "start": 13181,
+      "end": 13187,
+      "v13_printed_page": 354,
+      "v13_pdf_page": 379
+    },
+    {
+      "label": "r15:translated",
+      "source": "blueprint/ch_P_r15.tex",
+      "start": 415,
+      "end": 644
+    },
+    {
+      "label": "r15:pair",
+      "source": "blueprint/ch_P_r15.tex",
+      "start": 646,
+      "end": 720
+    },
+    {
+      "label": "r16:stdok",
+      "source": "blueprint/ch_P_r16.tex",
+      "start": 12,
+      "end": 259
+    },
+    {
+      "label": "r16:ktheta",
+      "source": "blueprint/ch_P_r16.tex",
+      "start": 261,
+      "end": 450
+    },
+    {
+      "label": "r14:kernel-lattice",
+      "source": "blueprint/ch_P_r14.tex",
+      "start": 1132,
+      "end": 1185
+    },
+    {
+      "label": "r14:kernel-finite",
+      "source": "blueprint/ch_P_r14.tex",
+      "start": 1187,
+      "end": 1259
+    },
+    {
+      "label": "r14:kernel-jets",
+      "source": "blueprint/ch_P_r14.tex",
+      "start": 1261,
+      "end": 1297
+    },
+    {
+      "label": "r14:site-pair",
+      "source": "blueprint/ch_P_r14.tex",
+      "start": 1299,
+      "end": 1331
+    },
+    {
+      "label": "r15:site-glob",
+      "source": "blueprint/ch_P_r15.tex",
+      "start": 49,
+      "end": 121
+    },
+    {
+      "label": "r15:site-dual",
+      "source": "blueprint/ch_P_r15.tex",
+      "start": 123,
+      "end": 163
+    },
+    {
+      "label": "r15:site-standard",
+      "source": "blueprint/ch_P_r15.tex",
+      "start": 165,
+      "end": 203
+    },
+    {
+      "label": "r15:span-place",
+      "source": "blueprint/ch_P_r15.tex",
+      "start": 230,
+      "end": 292
+    },
+    {
+      "label": "r15:span-frame",
+      "source": "blueprint/ch_P_r15.tex",
+      "start": 294,
+      "end": 326
+    },
+    {
+      "label": "r15:span-steps",
+      "source": "blueprint/ch_P_r15.tex",
+      "start": 328,
+      "end": 386
+    },
+    {
+      "label": "r15:datum",
+      "source": "blueprint/ch_P_r15.tex",
+      "start": 388,
+      "end": 413
+    },
+    {
+      "label": "r16:ktheta-line",
+      "source": "blueprint/ch_P_r16.tex",
+      "start": 287,
+      "end": 360
+    },
+    {
+      "label": "r16:ktheta-transport",
+      "source": "blueprint/ch_P_r16.tex",
+      "start": 362,
+      "end": 405
+    },
+    {
+      "label": "r16:ktheta-root",
+      "source": "blueprint/ch_P_r16.tex",
+      "start": 407,
+      "end": 450
+    },
+    {
+      "label": "r16:std-char",
+      "source": "blueprint/ch_P_r16.tex",
+      "start": 43,
+      "end": 97
+    },
+    {
+      "label": "r16:std-isom",
+      "source": "blueprint/ch_P_r16.tex",
+      "start": 99,
+      "end": 142
+    },
+    {
+      "label": "r16:std-dual",
+      "source": "blueprint/ch_P_r16.tex",
+      "start": 144,
+      "end": 195
+    },
+    {
+      "label": "r16:std-indices",
+      "source": "blueprint/ch_P_r16.tex",
+      "start": 197,
+      "end": 259
+    },
+    {
+      "label": "r16:pair-candidate",
+      "source": "blueprint/ch_P_r16.tex",
+      "start": 452,
+      "end": 483
+    }
+  ],
+  "Z42-FRAMES": [
+    {
+      "label": "r6:Z4.2.06",
+      "source": "blueprint/ch_P.tex",
+      "start": 13190,
+      "end": 13200,
+      "v13_printed_page": 355,
+      "v13_pdf_page": 380
+    },
+    {
+      "label": "r8:Z4.2.06",
+      "source": "blueprint/ch_P_r8_move_review.tex",
+      "start": 1,
+      "end": 118,
+      "v13_printed_page": 430,
+      "v13_pdf_page": 455
+    },
+    {
+      "label": "r6:Z4.2.07",
+      "source": "blueprint/ch_P.tex",
+      "start": 13235,
+      "end": 13244,
+      "v13_printed_page": 358,
+      "v13_pdf_page": 383
+    },
+    {
+      "label": "r8:Z4.2.07",
+      "source": "blueprint/ch_P_r8_move_review.tex",
+      "start": 120,
+      "end": 236,
+      "v13_printed_page": 432,
+      "v13_pdf_page": 457
+    },
+    {
+      "label": "r6:Z4.2.08",
+      "source": "blueprint/ch_P.tex",
+      "start": 13203,
+      "end": 13221,
+      "v13_printed_page": 356,
+      "v13_pdf_page": 381
+    },
+    {
+      "label": "r7:review:Z4.2.08",
+      "source": "blueprint/ch_P_r7.tex",
+      "start": 12,
+      "end": 21,
+      "v13_printed_page": 364,
+      "v13_pdf_page": 389
+    }
+  ],
+  "Z42-KERNEL": [
+    {
+      "label": "r6:Z4.2.09",
+      "source": "blueprint/ch_P.tex",
+      "start": 13257,
+      "end": 13263,
+      "v13_printed_page": 359,
+      "v13_pdf_page": 384
+    },
+    {
+      "label": "r8:Z4.2.09",
+      "source": "blueprint/ch_P_r8_split.tex",
+      "start": 1,
+      "end": 344,
+      "v13_printed_page": 424,
+      "v13_pdf_page": 449
+    },
+    {
+      "label": "r6:Z4.2.10",
+      "source": "blueprint/ch_P.tex",
+      "start": 13281,
+      "end": 13285,
+      "v13_printed_page": 361,
+      "v13_pdf_page": 386
+    },
+    {
+      "label": "r8:Z4.2.10",
+      "source": "blueprint/ch_P_r8_kernel_review.tex",
+      "start": 22,
+      "end": 27,
+      "v13_printed_page": 433,
+      "v13_pdf_page": 458
+    },
+    {
+      "label": "r6:Z4.2.11",
+      "source": "blueprint/ch_P.tex",
+      "start": 13266,
+      "end": 13278,
+      "v13_printed_page": 360,
+      "v13_pdf_page": 385
+    },
+    {
+      "label": "r8:Z4.2.11",
+      "source": "blueprint/ch_P_r8_kernel_review.tex",
+      "start": 29,
+      "end": 47,
+      "v13_printed_page": 433,
+      "v13_pdf_page": 458
+    },
+    {
+      "label": "r6:Z4.2.12",
+      "source": "blueprint/ch_P.tex",
+      "start": 13288,
+      "end": 13295,
+      "v13_printed_page": 361,
+      "v13_pdf_page": 386
+    },
+    {
+      "label": "r8:Z4.2.12",
+      "source": "blueprint/ch_P_r8_split.tex",
+      "start": 346,
+      "end": 514,
+      "v13_printed_page": 428,
+      "v13_pdf_page": 453
+    }
+  ],
+  "Z4.2.13": [
+    {
+      "label": "r14:lat-indices",
+      "source": "blueprint/ch_P_r14.tex",
+      "start": 165,
+      "end": 187
+    },
+    {
+      "label": "r14:lat-integral",
+      "source": "blueprint/ch_P_r14.tex",
+      "start": 75,
+      "end": 125
+    },
+    {
+      "label": "r14:lat-dual",
+      "source": "blueprint/ch_P_r14.tex",
+      "start": 127,
+      "end": 163
+    },
+    {
+      "label": "r14:vec-transport",
+      "source": "blueprint/ch_P_r14.tex",
+      "start": 295,
+      "end": 362
+    },
+    {
+      "label": "r14:vec-fixed",
+      "source": "blueprint/ch_P_r14.tex",
+      "start": 456,
+      "end": 512
+    },
+    {
+      "label": "r14:vec-descent",
+      "source": "blueprint/ch_P_r14.tex",
+      "start": 514,
+      "end": 554
+    },
+    {
+      "label": "r14:vec",
+      "source": "blueprint/ch_P_r14.tex",
+      "start": 272,
+      "end": 576
+    },
+    {
+      "label": "r14:eq-reference",
+      "source": "blueprint/ch_P_r14.tex",
+      "start": 602,
+      "end": 694
+    },
+    {
+      "label": "r14:eq-transport",
+      "source": "blueprint/ch_P_r14.tex",
+      "start": 696,
+      "end": 744
+    },
+    {
+      "label": "r14:eq-rational",
+      "source": "blueprint/ch_P_r14.tex",
+      "start": 746,
+      "end": 857
+    },
+    {
+      "label": "r14:eq-normalize",
+      "source": "blueprint/ch_P_r14.tex",
+      "start": 859,
+      "end": 905
+    },
+    {
+      "label": "r14:equivariance",
+      "source": "blueprint/ch_P_r14.tex",
+      "start": 578,
+      "end": 1058
+    },
+    {
+      "label": "r14:period",
+      "source": "blueprint/ch_P_r14.tex",
+      "start": 34,
+      "end": 54
+    },
+    {
+      "label": "r14:line",
+      "source": "blueprint/ch_P_r14.tex",
+      "start": 189,
+      "end": 270
+    },
+    {
+      "label": "r14:base-assembly",
+      "source": "blueprint/ch_P_r14.tex",
+      "start": 1060,
+      "end": 1110
+    },
+    {
+      "label": "r14:weil-sign",
+      "source": "blueprint/ch_P_r14.tex",
+      "start": 1016,
+      "end": 1058
+    },
+    {
+      "label": "r15:weil",
+      "source": "blueprint/ch_P_r15.tex",
+      "start": 1092,
+      "end": 1183
+    },
+    {
+      "label": "r15:vacuum-inert",
+      "source": "blueprint/ch_P_r15.tex",
+      "start": 1185,
+      "end": 1260
+    },
+    {
+      "label": "r15:vacuum-exact",
+      "source": "blueprint/ch_P_r15.tex",
+      "start": 1262,
+      "end": 1328
+    },
+    {
+      "label": "r15:jets",
+      "source": "blueprint/ch_P_r15.tex",
+      "start": 1330,
+      "end": 1371
+    },
+    {
+      "label": "r8:Z4.2.13",
+      "source": "blueprint/ch_P_r8_base.tex",
+      "start": 1,
+      "end": 49,
+      "v13_printed_page": 416,
+      "v13_pdf_page": 441
+    }
+  ],
+  "Z4.3": [
+    {
+      "label": "r6:Z4.3",
+      "source": "blueprint/ch_P.tex",
+      "start": 12700,
+      "end": 12975,
+      "v13_printed_page": 345,
+      "v13_pdf_page": 370
+    },
+    {
+      "label": "r14:comb-seam",
+      "source": "blueprint/ch_P_r14.tex",
+      "start": 1355,
+      "end": 1402
+    },
+    {
+      "label": "r14:comb-pseries",
+      "source": "blueprint/ch_P_r14.tex",
+      "start": 1404,
+      "end": 1465
+    },
+    {
+      "label": "r14:comb-tied",
+      "source": "blueprint/ch_P_r14.tex",
+      "start": 1333,
+      "end": 1509
+    },
+    {
+      "label": "r15:rational-weights",
+      "source": "blueprint/ch_P_r15.tex",
+      "start": 940,
+      "end": 1003
+    },
+    {
+      "label": "r9:Z4.3",
+      "source": "blueprint/ch_P_r9.tex",
+      "start": 23,
+      "end": 365,
+      "v13_printed_page": 450,
+      "v13_pdf_page": 475
+    }
+  ],
+  "Z4.4": [
+    {
+      "label": "r6:review:Z4.4",
+      "source": "blueprint/ch_P.tex",
+      "start": 12626,
+      "end": 12642,
+      "v13_printed_page": 339,
+      "v13_pdf_page": 364
+    },
+    {
+      "label": "r11:z44",
+      "source": "blueprint/ch_P_r11.tex",
+      "start": 434,
+      "end": 1083,
+      "v13_printed_page": 461,
+      "v13_pdf_page": 486
+    },
+    {
+      "label": "r11:fock",
+      "source": "blueprint/ch_P_r11.tex",
+      "start": 1085,
+      "end": 1178,
+      "v13_printed_page": 469,
+      "v13_pdf_page": 494
+    },
+    {
+      "label": "r12:assembly",
+      "source": "blueprint/ch_P_r12.tex",
+      "start": 4287,
+      "end": 4373,
+      "v13_printed_page": 525,
+      "v13_pdf_page": 550
+    },
+    {
+      "label": "r13:recheck",
+      "source": "blueprint/ch_P_r12.tex",
+      "start": 4414,
+      "end": 4457,
+      "v13_printed_page": 526,
+      "v13_pdf_page": 551
+    },
+    {
+      "label": "r12:weyl",
+      "source": "blueprint/ch_P_r12.tex",
+      "start": 224,
+      "end": 584,
+      "v13_printed_page": 473,
+      "v13_pdf_page": 498
+    },
+    {
+      "label": "r12:point",
+      "source": "blueprint/ch_P_r12.tex",
+      "start": 586,
+      "end": 795,
+      "v13_printed_page": 478,
+      "v13_pdf_page": 503
+    },
+    {
+      "label": "r12:s4",
+      "source": "blueprint/ch_P_r12.tex",
+      "start": 797,
+      "end": 1038,
+      "v13_printed_page": 481,
+      "v13_pdf_page": 506
+    },
+    {
+      "label": "r12:s9",
+      "source": "blueprint/ch_P_r12.tex",
+      "start": 1040,
+      "end": 1579,
+      "v13_printed_page": 484,
+      "v13_pdf_page": 509
+    },
+    {
+      "label": "r12:s8",
+      "source": "blueprint/ch_P_r12.tex",
+      "start": 1581,
+      "end": 2223,
+      "v13_printed_page": 491,
+      "v13_pdf_page": 516
+    },
+    {
+      "label": "r12:s1",
+      "source": "blueprint/ch_P_r12.tex",
+      "start": 2225,
+      "end": 3170,
+      "v13_printed_page": 499,
+      "v13_pdf_page": 524
+    },
+    {
+      "label": "r12:s7",
+      "source": "blueprint/ch_P_r12.tex",
+      "start": 3172,
+      "end": 4285,
+      "v13_printed_page": 511,
+      "v13_pdf_page": 536
+    },
+    {
+      "label": "r13:weyl-dual",
+      "source": "blueprint/ch_P_r12.tex",
+      "start": 472,
+      "end": 584,
+      "v13_printed_page": 477,
+      "v13_pdf_page": 502
+    },
+    {
+      "label": "r13:interior-charts",
+      "source": "blueprint/ch_P_r12.tex",
+      "start": 3734,
+      "end": 3834,
+      "v13_printed_page": 518,
+      "v13_pdf_page": 543
+    },
+    {
+      "label": "r13:stage-pack",
+      "source": "blueprint/ch_P_r12.tex",
+      "start": 4147,
+      "end": 4285,
+      "v13_printed_page": 523,
+      "v13_pdf_page": 548
+    },
+    {
+      "label": "r13:s9-values",
+      "source": "blueprint/ch_P_r12.tex",
+      "start": 1494,
+      "end": 1579,
+      "v13_printed_page": 490,
+      "v13_pdf_page": 515
+    },
+    {
+      "label": "r14:z44-approved",
+      "source": "blueprint/ch_P_r12.tex",
+      "start": 4449,
+      "end": 4457,
+      "v13_printed_page": 527,
+      "v13_pdf_page": 552
+    }
+  ],
+  "Z1.1.01": [
+    {
+      "label": "r8:small:Z1.1.01",
+      "source": "blueprint/ch_P_r8_small.tex",
+      "start": 372,
+      "end": 393,
+      "v13_printed_page": 442,
+      "v13_pdf_page": 467
+    }
+  ],
+  "Z1.1.02": [
+    {
+      "label": "r8:small:Z1.1.02",
+      "source": "blueprint/ch_P_r8_small.tex",
+      "start": 395,
+      "end": 417,
+      "v13_printed_page": 442,
+      "v13_pdf_page": 467
+    }
+  ],
+  "Z1.1.03": [
+    {
+      "label": "r8:small:Z1.1.03",
+      "source": "blueprint/ch_P_r8_small.tex",
+      "start": 419,
+      "end": 437,
+      "v13_printed_page": 442,
+      "v13_pdf_page": 467
+    }
+  ],
+  "Z1.1.04": [
+    {
+      "label": "r5:Z1.1.04",
+      "source": "blueprint/ch_P.tex",
+      "start": 12441,
+      "end": 12471,
+      "v13_printed_page": 327,
+      "v13_pdf_page": 352
+    },
+    {
+      "label": "r6:review:Z1.1.04",
+      "source": "blueprint/ch_P.tex",
+      "start": 12654,
+      "end": 12655,
+      "v13_printed_page": 342,
+      "v13_pdf_page": 367
+    }
+  ],
+  "Z1.1.05": [
+    {
+      "label": "r8:small:Z1.1.05",
+      "source": "blueprint/ch_P_r8_small.tex",
+      "start": 439,
+      "end": 456,
+      "v13_printed_page": 443,
+      "v13_pdf_page": 468
+    }
+  ],
+  "Z1.1.06": [
+    {
+      "label": "r8:small:Z1.1.06",
+      "source": "blueprint/ch_P_r8_small.tex",
+      "start": 458,
+      "end": 479,
+      "v13_printed_page": 443,
+      "v13_pdf_page": 468
+    }
+  ],
+  "Z1.1.07": [
+    {
+      "label": "r8:small:Z1.1.07",
+      "source": "blueprint/ch_P_r8_small.tex",
+      "start": 481,
+      "end": 496,
+      "v13_printed_page": 443,
+      "v13_pdf_page": 468
+    }
+  ],
+  "Z1.2": [
+    {
+      "label": "r6:review:Z1.2",
+      "source": "blueprint/ch_P.tex",
+      "start": 12645,
+      "end": 12652,
+      "v13_printed_page": 340,
+      "v13_pdf_page": 365
+    },
+    {
+      "label": "r11:adj",
+      "source": "blueprint/ch_P_r11.tex",
+      "start": 32,
+      "end": 432,
+      "v13_printed_page": 456,
+      "v13_pdf_page": 481
+    }
+  ],
+  "Z1.3.01": [
+    {
+      "label": "r6:Z1.3.01",
+      "source": "blueprint/ch_P.tex",
+      "start": 13152,
+      "end": 13160,
+      "v13_printed_page": 352,
+      "v13_pdf_page": 377
+    },
+    {
+      "label": "r7:Z1.3.01",
+      "source": "blueprint/ch_P_r7.tex",
+      "start": 582,
+      "end": 601,
+      "v13_printed_page": 378,
+      "v13_pdf_page": 403
+    }
+  ],
+  "Z1.3.02": [
+    {
+      "label": "r6:Z1.3.02",
+      "source": "blueprint/ch_P.tex",
+      "start": 13163,
+      "end": 13178,
+      "v13_printed_page": 353,
+      "v13_pdf_page": 378
+    },
+    {
+      "label": "r7:Z1.3.02",
+      "source": "blueprint/ch_P_r7.tex",
+      "start": 603,
+      "end": 664,
+      "v13_printed_page": 379,
+      "v13_pdf_page": 404
+    }
+  ],
+  "Z1.3.03": [
+    {
+      "label": "r5:small:Z1.3.03",
+      "source": "blueprint/ch_P.tex",
+      "start": 12473,
+      "end": 12485,
+      "v13_printed_page": 329,
+      "v13_pdf_page": 354
+    },
+    {
+      "label": "r6:Z1.3.03",
+      "source": "blueprint/ch_P.tex",
+      "start": 12977,
+      "end": 12991,
+      "v13_printed_page": 349,
+      "v13_pdf_page": 374
+    },
+    {
+      "label": "r7:Z1.3.03",
+      "source": "blueprint/ch_P_r7.tex",
+      "start": 666,
+      "end": 750,
+      "v13_printed_page": 380,
+      "v13_pdf_page": 405
+    }
+  ],
+  "Z1.3.04": [
+    {
+      "label": "r6:Z1.3.04",
+      "source": "blueprint/ch_P.tex",
+      "start": 13247,
+      "end": 13255,
+      "v13_printed_page": 359,
+      "v13_pdf_page": 384
+    },
+    {
+      "label": "r7:Z1.3.04",
+      "source": "blueprint/ch_P_r7.tex",
+      "start": 752,
+      "end": 774,
+      "v13_printed_page": 381,
+      "v13_pdf_page": 406
+    }
+  ],
+  "Z1.3.05": [
+    {
+      "label": "r5:Z1.3.05",
+      "source": "blueprint/ch_P.tex",
+      "start": 12420,
+      "end": 12439,
+      "v13_printed_page": 326,
+      "v13_pdf_page": 351
+    },
+    {
+      "label": "r6:Z1.3.05",
+      "source": "blueprint/ch_P.tex",
+      "start": 12994,
+      "end": 13140,
+      "v13_printed_page": 350,
+      "v13_pdf_page": 375
+    },
+    {
+      "label": "r7:Z1.3.05",
+      "source": "blueprint/ch_P_r7.tex",
+      "start": 776,
+      "end": 856,
+      "v13_printed_page": 381,
+      "v13_pdf_page": 406
+    }
+  ],
+  "Z1.3.06": [
+    {
+      "label": "r5:Z1.3.06",
+      "source": "blueprint/ch_P.tex",
+      "start": 12355,
+      "end": 12369,
+      "v13_printed_page": 323,
+      "v13_pdf_page": 348
+    },
+    {
+      "label": "r6:review:Z1.3.06",
+      "source": "blueprint/ch_P.tex",
+      "start": 12656,
+      "end": 12656,
+      "v13_printed_page": 342,
+      "v13_pdf_page": 367
+    }
+  ],
+  "Z1.3.07": [
+    {
+      "label": "r5:Z1.3.07",
+      "source": "blueprint/ch_P.tex",
+      "start": 12371,
+      "end": 12382,
+      "v13_printed_page": 323,
+      "v13_pdf_page": 348
+    },
+    {
+      "label": "r6:review:Z1.3.07",
+      "source": "blueprint/ch_P.tex",
+      "start": 12657,
+      "end": 12657,
+      "v13_printed_page": 342,
+      "v13_pdf_page": 367
+    }
+  ],
+  "Z1.3.08": [
+    {
+      "label": "r6:Z1.3.08",
+      "source": "blueprint/ch_P.tex",
+      "start": 13297,
+      "end": 13327,
+      "v13_printed_page": 362,
+      "v13_pdf_page": 387
+    },
+    {
+      "label": "r7:Z1.3.08",
+      "source": "blueprint/ch_P_r7.tex",
+      "start": 858,
+      "end": 869,
+      "v13_printed_page": 382,
+      "v13_pdf_page": 407
+    }
+  ],
+  "Z1.4": [
+    {
+      "label": "sec:P-z14-full",
+      "source": "blueprint/ch_P.tex",
+      "start": 10608,
+      "end": 11581,
+      "v13_printed_page": 286,
+      "v13_pdf_page": 311
+    },
+    {
+      "label": "thm:P-r5-lemma-m",
+      "source": "blueprint/ch_P.tex",
+      "start": 11316,
+      "end": 11367,
+      "v13_printed_page": 297,
+      "v13_pdf_page": 322
+    }
+  ],
+  "Z2.K1": [
+    {
+      "label": "lem:P-r3-k1",
+      "source": "blueprint/ch_P.tex",
+      "start": 844,
+      "end": 918,
+      "v13_printed_page": 157,
+      "v13_pdf_page": 182
+    }
+  ],
+  "Z2.K6": [
+    {
+      "label": "lem:P-r3-k6",
+      "source": "blueprint/ch_P.tex",
+      "start": 1004,
+      "end": 1045,
+      "v13_printed_page": 159,
+      "v13_pdf_page": 184
+    }
+  ],
+  "Z2.K8": [
+    {
+      "label": "lem:P-r3-k8",
+      "source": "blueprint/ch_P.tex",
+      "start": 1047,
+      "end": 1098,
+      "v13_printed_page": 159,
+      "v13_pdf_page": 184
+    }
+  ],
+  "Z3.1": [
+    {
+      "label": "r6:normalized-ring",
+      "source": "blueprint/ch_P.tex",
+      "start": 8798,
+      "end": 8951,
+      "v13_printed_page": 262,
+      "v13_pdf_page": 287
+    }
+  ],
+  "Z3.2": [
+    {
+      "label": "sec:P-r4-Z32",
+      "source": "blueprint/ch_P.tex",
+      "start": 9024,
+      "end": 9335,
+      "v13_printed_page": 265,
+      "v13_pdf_page": 290
+    }
+  ],
+  "Z2.K2": [
+    {
+      "label": "prop:P-k-few",
+      "source": "blueprint/ch_P.tex",
+      "start": 203,
+      "end": 308,
+      "v13_printed_page": 149,
+      "v13_pdf_page": 174
+    },
+    {
+      "label": "sec:P-r4-K2",
+      "source": "blueprint/ch_P.tex",
+      "start": 1218,
+      "end": 1419,
+      "v13_printed_page": 162,
+      "v13_pdf_page": 187
+    }
+  ],
+  "Z2.K4": [
+    {
+      "label": "r6:review:Z2.K4",
+      "source": "blueprint/ch_P.tex",
+      "start": 12595,
+      "end": 12612,
+      "v13_printed_page": 337,
+      "v13_pdf_page": 362
+    },
+    {
+      "label": "sec:P-r5-k4",
+      "source": "blueprint/ch_P.tex",
+      "start": 11732,
+      "end": 11957,
+      "v13_printed_page": 308,
+      "v13_pdf_page": 333
+    },
+    {
+      "label": "r7:review:Z2.K4",
+      "source": "blueprint/ch_P_r7.tex",
+      "start": 26,
+      "end": 30,
+      "v13_printed_page": 365,
+      "v13_pdf_page": 390
+    }
+  ],
+  "Z2.K7": [
+    {
+      "label": "prop:P-k-num",
+      "source": "blueprint/ch_P.tex",
+      "start": 652,
+      "end": 727,
+      "v13_printed_page": 155,
+      "v13_pdf_page": 180
+    },
+    {
+      "label": "prop:P-r4-k7",
+      "source": "blueprint/ch_P.tex",
+      "start": 1696,
+      "end": 1951,
+      "v13_printed_page": 169,
+      "v13_pdf_page": 194
+    }
+  ]
+}

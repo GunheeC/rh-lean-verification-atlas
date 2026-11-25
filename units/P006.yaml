@@ -1,0 +1,92 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "P006",
+  "title": "Joint zeta, open-strip and half-plane assertions",
+  "track": {
+    "primary": "formal",
+    "secondary": []
+  },
+  "statement": "The half-plane assertion $H$ of P003, the open-strip assertion $S$ of P004, and the zeta assertion of P002 hold jointly.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "The exported conjunction has no theorem-level antecedent. Each component uses its own character, zero, strip or pole conditions."
+  ],
+  "lean": [
+    {
+      "name": "claimAll",
+      "file": "Supplements/Kernels/MainTheorems.lean",
+      "line0": 15,
+      "line1": 16,
+      "sha256": "ed1f716842f8ede8864c2da8b1ba7bef252f4af1ef68f6775a487aa17e90270c",
+      "dominated": 91,
+      "graph": "five_public_heads"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/P006_round4.md",
+      "section": "P006 · One input and three output predicates",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "6.6 (pn:P006)",
+      "pages": [
+        55,
+        55
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/P006.tex",
+      "section": "pn:P006",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [
+    "P009"
+  ],
+  "size_pages": 2,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "P006",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "joint-zeta-open-strip-and-half-plane-assertions",
+  "aliases": [
+    "Three public predicates together",
+    "claimAll",
+    "P006 Joint zeta, open-strip and half-plane assertions"
+  ],
+  "background": [
+    "Dirichlet L-functions",
+    "Conjunctions and specialization in Lean"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "6.6 (pn:P006)",
+    "pages": [
+      55,
+      55
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "P009": "graph"
+  },
+  "review_status": "pending_review",
+  "summary": "A single right-half-plane assertion is inserted directly into the first slot and used twice more to obtain the strip and zeta slots. The three components have different domains and exclusions."
+}

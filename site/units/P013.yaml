@@ -1,0 +1,179 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "P013",
+  "title": "The Selmer window from the polarised row",
+  "track": {
+    "primary": "galois",
+    "secondary": [
+      "analytic"
+    ]
+  },
+  "statement": "Assume $\\mathcal R$. Then $V$ holds with the window $[Y,Y^2]$, the indicated quantifier order and the specified exponent $401$.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume the full polarized Galois row $\\mathcal R$.",
+    "The window is tested for each primitive character, admissible page function and allowed positive exponent."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.One.vwin_of_row",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/VwinOfRow.lean",
+      "line0": 4,
+      "line1": 5,
+      "sha256": "c6737c388a60710399cbefa7c22fa10c35609465302265d87f51a8f680299764",
+      "dominated": 886201,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "6.13 (pn:P013)",
+      "pages": [
+        57,
+        57
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/P013.tex",
+      "section": "pn:P013",
+      "pages": []
+    },
+    {
+      "document": "paper2_v3",
+      "section": "The chain in detail: P013",
+      "pages": [
+        20,
+        22
+      ],
+      "coverage": "Shared subsection for this station, including subordinate inputs."
+    },
+    {
+      "document": "notes/units/P013-argument.tex",
+      "section": "Written argument for P013",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L1",
+  "reviews": [
+    "reviews/R20_review.md"
+  ],
+  "prerequisites": [
+    "P020",
+    "P024",
+    "P025",
+    "P026",
+    "P027",
+    "P028",
+    "P029",
+    "P030",
+    "P031",
+    "P032",
+    "P033",
+    "P034",
+    "P035",
+    "P036",
+    "P037",
+    "P038",
+    "P039",
+    "P040",
+    "W01",
+    "W02",
+    "Z1.1.07",
+    "Z1.2",
+    "Z1.3.08",
+    "Z1.4",
+    "Z1.5.03",
+    "Z1.5.05",
+    "Z2.K1",
+    "Z2.K2",
+    "Z2.K4",
+    "Z2.K5",
+    "Z2.K6",
+    "Z2.K7",
+    "Z2.K8"
+  ],
+  "size_pages": 3,
+  "open_questions": [
+    "Does a second record give an independent exposition of the same proposition, or an additional checker run on the same export? Identify the evidence type."
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [
+    {
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "lines": [
+        102,
+        102
+      ],
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript.",
+      "verdict": "Exact statement comparison"
+    }
+  ],
+  "paper_id": "P013",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "selmer-window-from-polarized-row",
+  "aliases": [
+    "Selmer window V",
+    "VWin",
+    "vwin_of_row",
+    "P013 The Selmer window from the polarised row"
+  ],
+  "background": [
+    "Selmer groups and localization",
+    "Galois representations attached to automorphic forms"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "6.13 (pn:P013)",
+    "pages": [
+      57,
+      57
+    ]
+  },
+  "question_sources": [
+    "questions/formal.md"
+  ],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "P020": "graph",
+    "P024": "graph",
+    "P025": "graph",
+    "P026": "graph",
+    "P027": "graph",
+    "P028": "graph",
+    "P029": "graph",
+    "P030": "graph",
+    "P031": "graph",
+    "P032": "graph",
+    "P033": "graph",
+    "P034": "graph",
+    "P035": "graph",
+    "P036": "graph",
+    "P037": "graph",
+    "P038": "graph",
+    "P039": "graph",
+    "P040": "graph",
+    "W01": "graph",
+    "W02": "graph",
+    "Z1.1.07": "graph",
+    "Z1.2": "graph",
+    "Z1.3.08": "graph",
+    "Z1.4": "graph",
+    "Z1.5.03": "graph",
+    "Z1.5.05": "graph",
+    "Z2.K1": "graph",
+    "Z2.K2": "graph",
+    "Z2.K4": "graph",
+    "Z2.K5": "graph",
+    "Z2.K6": "graph",
+    "Z2.K7": "graph",
+    "Z2.K8": "graph"
+  },
+  "summary": "The polarised row is the premise for the uniform Selmer-window assertion. The conclusion uses the interval from Y to its square and the twist cutoff with exponent 401. Its quantifier order determines which constants and intervals must work across later choices."
+}

@@ -1,0 +1,162 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "Z4.2.02",
+  "edition_sha256": "bd58c4e9ed49d4f351e42db05cf860a68fba6b9b9c0d78891d3c376fbe4dbb41",
+  "note_sha256": "c02cf1b0613949d73f215ca8be4cbe1ea3e11e0fd9f15651f550e4f5e3a62b97",
+  "statement_sha256": "7c6756bc68809214f4a2c68204ff2329153786351ff6dc979b2e2c23d765c999",
+  "sources": [
+    {
+      "path": "notes/blueprint/Z4.2.02.tex",
+      "sha256": "c02cf1b0613949d73f215ca8be4cbe1ea3e11e0fd9f15651f550e4f5e3a62b97"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The chosen embedding and the stated curve-existence input furnish the compatible local Lubin–Tate curve datum.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: CurveEx and standard served site"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.TwV.joint_at_nonempty",
+          "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/JointDataAtPAndAdelicDatumNonempty.lean",
+          "line0": 16,
+          "line1": 22
+        }
+      ],
+      "source": "notes/blueprint/Z4.2.02.tex",
+      "anchor": "A served place gives",
+      "source_lines": [
+        7,
+        11
+      ],
+      "claim_sha256": "bc0630b1a856e03d727bfece4b09af480571e640261f0ea7f64ca6aaa7b65918",
+      "passage_sha256": "076a173923fd400feb9029cc16b1fe860787955ac9966c52d867f09b790bef57",
+      "sha256": "749bf91e1f3dae61dff41590cb0b1fe9812da261eed52001558dfebe7f4b3cce",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Attained double-coset labels supply finitely many class representatives, with stabilizers at the fixed joint.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: fixed standard joint"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.TwV.finClasses_sysS",
+          "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsFinsetRepsOfCls.lean",
+          "line0": 27,
+          "line1": 33
+        },
+        {
+          "name": "GlobalTheory.TwV.finStab_site",
+          "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/FinStabSite.lean",
+          "line0": 11,
+          "line1": 17
+        }
+      ],
+      "source": "notes/blueprint/Z4.2.02.tex",
+      "anchor": "In each component below",
+      "source_lines": [
+        13,
+        13
+      ],
+      "claim_sha256": "917b3df1867bb15ec8f679df67fad299afdd3ead5821fca39b742b493fd2aed4",
+      "passage_sha256": "d139a7c39629d63e8cb2e07ec9d09c26aff99a3a8e8af8c6d1d7bad0a80595c9",
+      "sha256": "2281d05ec271e3da38bc423f9ce1976044c2f00d6259a65c1147e1afee130949",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The determinant and level characters on the two diagonal block pairs give the stated local scalar at the twist prime.",
+      "kind": "computation",
+      "uses": [
+        "input: integral block identifications"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.TwTopLaw.topLawQ_midTop",
+          "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/TopLevelDatumTransformAtTwistPrimeUnderLevels.lean",
+          "line0": 108,
+          "line1": 253
+        }
+      ],
+      "source": "notes/blueprint/Z4.2.02.tex",
+      "anchor": "Write \\(A_{11}",
+      "source_lines": [
+        24,
+        35
+      ],
+      "claim_sha256": "42d9ea2ba4a1012cc4e057cfa14bf806ebc293faa01c427e20b037e57dce1da6",
+      "passage_sha256": "d4cf8657f95c5002864d64b89e97de41aa18b2803943a43b7cab483d0ea09e91",
+      "sha256": "9459ee06a9f4f399bd23a59ea5f39aad7f84357995acf190325a8feeacaac3b8",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The local support condition is invariant under the indicated change of lattice, including the zero case of the local factor.",
+      "kind": "computation",
+      "uses": [
+        "S3",
+        "input: fixed twist-prime charts"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.TwTopLaw.topLawQ_midTop",
+          "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/TopLevelDatumTransformAtTwistPrimeUnderLevels.lean",
+          "line0": 108,
+          "line1": 253
+        }
+      ],
+      "source": "notes/blueprint/Z4.2.02.tex",
+      "anchor": "For the last row set",
+      "source_lines": [
+        39,
+        43
+      ],
+      "claim_sha256": "5c94256570e5c537e5c95f511f063ebe81521243d2e6e611a80b63159d6b6310",
+      "passage_sha256": "d3a180391229b23d052a6f33f91c6fd1ad971c2cc30ed681853b1f971b5de3c3",
+      "sha256": "6d1e6981289ae3e820b19311d7ba6f8e92a3fb0d2396fff5a5f8681edc3f3603",
+      "ai_review": []
+    },
+    {
+      "id": "S5",
+      "status": "active",
+      "claim": "The chosen embedding, curve, finite classes and adelic datum give one joint witness provided the named remaining adelic laws are supplied.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "P090"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.TwV.joint_at_nonempty",
+          "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/JointDataAtPAndAdelicDatumNonempty.lean",
+          "line0": 16,
+          "line1": 22
+        }
+      ],
+      "source": "notes/blueprint/Z4.2.02.tex",
+      "anchor": "This proves \\nolinkurl{topLawQ_midTop}",
+      "source_lines": [
+        45,
+        49
+      ],
+      "claim_sha256": "637988c288d86761069b1b7cd70bc95d66b7709da7eadc710f3f0e89163e7a0e",
+      "passage_sha256": "f83acf8cf97387f6bdd0fef3d1884fbb5267022ed9fdeede2bc6e95633dc7977",
+      "sha256": "4ad841abaeb0268f8f72ba987a78431de977e96349e9141ad42cd1563a972e95",
+      "ai_review": []
+    }
+  ],
+  "history": []
+}

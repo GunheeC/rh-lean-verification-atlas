@@ -1,0 +1,36 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>P025 · Ordinary to Bloch–Kato adjoint vanishing · RH verification atlas</title><link rel="stylesheet" href="../atlas.css"><script>window.MathJax={tex:{inlineMath:[["$","$"]],displayMath:[["$$","$$"]],processEscapes:true},options:{ignoreHtmlClass:"no-math"}};</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script></head><body><header><div class="bar"><a class="brand" href="../index.html">RH verification atlas</a><nav aria-label="Atlas navigation"><a href="../index.html">Home</a> <a href="../STATUS.html">Status</a> <a href="../MAP.html">Map</a> <a href="../dashboard/index.html">Tracks</a> <a href="../lookup/search.html">Search declarations</a></nav></div></header><main><h1 id="p025--ordinary-to-blochkato-adjoint-vanishing">P025 · Ordinary to Bloch–Kato adjoint vanishing</h1>
+<p class="notice">AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved</p>
+<p><code>ordinary-to-blochkato-adjoint-vanishing</code> · <a href="../tracks/galois/index.html">Galois representations, automorphy lifting, Iwasawa theory and Euler systems</a> · <a href="../tracks/local/index.html">Local p-adic theory</a></p>
+<p><strong>Statement only</strong> · <strong>L0</strong> Declaration pinned; no review of this unit · Record generated 2026-11-25 (no human check).</p>
+<div class="scroll"><table>
+<thead><tr><th>1 · Lean pinned</th><th>2 · Statement compared</th><th>3 · Prose</th><th>4 · Steps</th><th>5 · AI review</th><th>6 · Human</th></tr></thead>
+<tbody><tr><td>✓</td><td>–</td><td>Statement only</td><td>0</td><td>–</td><td>0 of 0 steps</td></tr>
+</tbody></table></div>
+<p>Awaiting numbered proof · <a href="../PROGRESS.html">Progress and counting rules</a></p>
+<h2 id="statement">Statement</h2>
+<p>Assume local cohomological finiteness, Tate duality, the Euler characteristic formulas and the local Bloch–Kato theorem in the specified coefficient models. Assume the dense ordinary vanishing hypothesis: at every locally generic automorphic point below each allowed ordinary adjoint cocycle is a coboundary. Let <span class="math">$L$</span> be CM with <span class="math">$\mu_\ell\not\subset L$</span>, take a Hida setting and level <span class="math">$V$</span> with <span class="math">$V.S&#x27;=S$</span>, large coefficients, <span class="math">$2\le n\le4$</span>, an admitted residual representation, and a locally generic automorphic point <span class="math">$x,\rho$</span> of its universal ordinary determinant ring. For each <span class="math">$v\mid\ell$</span> suppose there are strictly decreasing integers <span class="math">$m_i$</span> and <span class="math">$k&gt;0$</span> such that on inertia</p>
+<div class="math display">$$\bigl(\psi_{v,i}\psi_{v,j}^{-1}\chi^{m_j-m_i}\bigr)^k=1 \quad(i,j=1,\ldots,n).$$</div>
+<p>For every allowed polarizing form and adjoint extension <span class="math">$R$</span>, each continuous cocycle <span class="math">$z$</span> whose pullback satisfies the Bloch–Kato finite condition has the form <span class="math">$z(g)=R(g)X-X$</span> for one matrix <span class="math">$X$</span> and all <span class="math">$g$</span>.</p>
+<h2 id="assumptions">Assumptions</h2>
+<ul><li>Assume local finiteness, Tate duality, Euler characteristics, Bloch–Kato local comparison and dense ordinary adjoint vanishing.</li><li>Use the admitted CM Hida setting with <span class="math">$\mu_\ell\not\subset L$</span>, ranks two through four, a locally generic automorphic point and the stated inertia ratios for strictly decreasing weights.</li><li>For the chosen polarizing form and extension the pulled-back continuous cocycle satisfies the finite local condition.</li></ul>
+<p>Sources for the assumptions · <a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a></p>
+<h2 id="where-to-read">Where to read</h2>
+<p>Blueprint v13 and papers v3–v5 are this atlas project’s own AI-written, unpublished drafts. They have no human review and were not written by the author of the Lean development. Blueprint v13, its separate cover, and paper v5 are distributed as assets of release v0.1.0. For v3 and v4 the atlas supplies selected excerpts and notes. <a href="../data/editions.json">Edition register</a></p>
+<ul><li><a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a>, 7.2, p. 72. Statement starts on the cited page.</li><li><a href="../notes/units/P025.tex">Manuscript source excerpt</a> · section <code>pn:P025</code></li></ul>
+<h2 id="evidence">Evidence</h2>
+<p>The pinned declaration is recorded in the formal source. No higher-level verdict is assigned to this unit.</p>
+<h2 id="lean-declarations">Lean declarations</h2>
+<ul><li><code>UpperTheory.V.Th.adjointLiftingTheorem_of_locPrints_of_core</code>  <br><a href="https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/AdLOf.lean#L104-L150"><code>AdLOf.lean</code></a>, lines 104–150 · 597 dominated lines · SHA-256 <code>4e1cd7823cb6</code>.</li></ul>
+<p><a href="P025.yaml">Machine record and full declaration hashes</a> · <a href="../lookup/declarations.html">Declaration lookup</a></p>
+<h2 id="reading-prerequisites">Reading prerequisites</h2>
+<p>Background · Ordinary deformation rings · Local Tate duality · Bloch–Kato Selmer groups.</p>
+<p>No prior atlas unit is specified.</p>
+<h2 id="open-questions">Open questions</h2>
+<p>None recorded.</p>
+<h2 id="graph-connections">Graph connections</h2>
+<p>Arrows may connect either a unit’s main declaration or an indexed member.</p>
+<p><strong>Uses</strong> · No recorded edge.</p>
+<p><strong>Used by</strong> · <a href="P013.html">P013</a> · <a href="W06.html">W06</a> · <a href="W08.html">W08</a> · <a href="W09.html">W09</a> · <a href="W10.html">W10</a></p>
+<p><a href="../data/unit_graph.json">Declaration witnesses and graph scope</a></p>
+<p>Lookup aliases · <code>Ordinary to Bloch--Kato adjoint vanishing</code>, <code>P025 Ordinary to Bloch–Kato adjoint vanishing</code></p>
+<p>&lt;!-- Unit metadata SHA-256 02d99b95548d1694da0898bb7024bb65ac7a2ee7bed57316f997ad0e9d0a1c9a --&gt;</p></main><footer><a href="../help.html">Using the local edition</a></footer></body></html>

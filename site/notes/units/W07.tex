@@ -1,0 +1,56 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit W07. Local manuscript v3, item 5.43, heading on printed PDF p. 50.
+% UpperTheory.V.Z.Kato.WeilSphericalRecords.katoTwoW_of_printsH
+% paper2/split_p013.tex:128–170. Verbatim excerpt; SHA-256 5e593224b9167e5e7ebd8888a2414bd31cb3fc762cc9fe051a3ebd6861de48a8.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+\noindent\nolinkurl{UpperTheory.V.Z.Kato.WeilSphericalRecords.katoTwoW_of_printsH} --- in-repo constant (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/KatoTwoWOfPublishedH.lean:48--49}); not compared.\par
+\noindent\nolinkurl{UpperTheory.V.Z.Kato.WeilSphericalRecords.katoTwoW_of_printsH_of_rT_of_quadBC2} --- in-repo constant (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/KatoTwoWOfPublishedH.lean:38--47}); not compared.\par
+% End of atlas edition annotation.
+
+\begin{formalstatement}[Vanishing for the two rank-two twists]\label{sub:W07}
+Assume $H'$. Fix an odd prime $\ell$, $e\ge1$ with $\ell-1\nmid2e$,
+an imaginary quadratic field $K$, an even positive level $N$ coprime to
+$D_K=|\operatorname{disc}K|$, with $\ell\nmid D_K h_K$, and an
+algebraic closure $\Omega/\mathbb Q$ containing $K$. Write
+$\kappa$ for the cyclotomic character and $\theta$ for the quadratic
+character cutting out $K$. Take $\psi$ and $W:G_{\mathbb Q}\to
+\mathrm{GL}_2(\overline{\mathbb Q}_\ell)$ satisfying the source
+conditions \code{Used}. Explicitly, $\psi$ factors through level $N$,
+has prime-to-$\ell$ order, has square one on inertia at $\ell$, and
+$\kappa^e\psi$ is even. The representation $W$ has level datum
+$(ND_K;e,-e)$, the ordinary polynomial condition for $(e,-e)$, and
+determinant $\theta$. On inertia at $\ell$ its trace is
+$a+a^{-1}$ for $a=\kappa^e\psi$. Globally the residual trace is
+$\theta a+a^{-1}$. At a chosen place above $\ell$, inertia lies
+in $\ker\theta$ and the prescribed flag characters restrict to
+$\kappa^{\pm e}\chi$ for a single character through level $\ell$.
+The restriction to $G_{K(\mu_{\ell^\infty})}$ is irreducible.
+Suppose a weight-$2e+1$ newform realizes $W\otimes\kappa^{-e}$
+via $\iota$, and on every quadratic CM restriction on which $W$ is
+irreducible it has the witness \code{WitA}: local unlinked flags
+above $\ell$ become power-unlinked, and each attached regular
+algebraic cusp form has a common real parameter for its local window
+away from $\ell$ and at the power-unlinked places. For both $W$ and $W\otimes\theta$, every cocycle satisfying the
+Bloch--Kato local conditions is a coboundary.
+\end{formalstatement}\subnode{W07}
+Kato's Theorem~14.2(1) gives finiteness for lattices attached to a cusp
+form at noncentral critical twists over finite abelian extensions.
+The comparison here identifies the two normalized representations and
+their local finite conditions in the specified cocycle model.
+The unramified zeta input is \nodeid{P026}.
+\href{https://www.numdam.org/item/AST_2004__295__117_0/}{Kato, Theorem 14.2(1).}~\cite{r21-kato}
+
+For W08--W10 fix a primitive $\chi$ and write $N$ for the host modulus.
+A large host has $q_1,d>2t+1$, and both primes exceed the conductor and
+order of $\chi$ and the three auxiliary integers $p_K,h_*,p_1$.
+The finite set $X_h(O,e)$ consists of the characters of the host quotient
+with $\psi(-1)=(-1)^e$. Write $v_\ell(\psi,e)$ for the length of the
+localization kernel at modulus $\ell N$ twisted by
+$\psi^{-1}\kappa^{-e}$, divided, when finite, by the ramification
+index of $O/\mathbb Z_\ell$. Write $B_\chi$ for the exceptional
+prime set and $\chi_P$ for the prime-to-$\ell$ part of $\psi$ with
+its local $\ell$-component removed.

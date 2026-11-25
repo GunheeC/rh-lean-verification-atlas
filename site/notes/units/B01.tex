@@ -1,0 +1,46 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit B01. Local manuscript v3, item 5.1, heading on printed PDF p. 35.
+% UpperTheory.Gal.Int.galoisRepresentations_of_thetaLift
+% paper2/split_bridges.tex:17–48. Verbatim excerpt; SHA-256 00c130e0c99b47de7452b6131ca61a2e52eed34865b59287c7e694f6ccbff71d.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+\noindent\nolinkurl{UpperTheory.TP.TLiftK} --- hypothesis at this head (\path{Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/HalfIndexLattices/TLiftK.lean:12--23}); not compared.\par
+\noindent\nolinkurl{UpperTheory.Cb.lefschetz_fixedPoint_finite_etale_correspondence} --- in-repo constant (\path{Development/AutomorphicArithmetic/Foundations/EtaleClopenDescent/LefschetzFixedPointFiniteEtaleCorrespondence.lean:255--358}); not compared.\par
+\noindent\nolinkurl{GlobalTheory.T.lefschetz_fixedPoint_finite_etale_correspondence} --- in-repo constant (\path{Development/AbelianVarietyTheory/Proofs/SatakeParameters/LefschetzFixedPointFiniteEtaleCorrespondence.lean:8--15}); not compared.\par
+% End of atlas edition annotation.
+
+\begin{formalstatement}[Theta lifting and the polarised Galois row]\label{sub:B01}
+Assume the following stable-range lift. Fix good CM base data, $n\ge1$ and
+the Hermitian space with matrix $1$ and signature $(n,0)$. There is $d_0$
+such that for every $d\ge d_0$, skew space with matrix $\delta I_d$ and
+signature as in the lift, and splitting Hecke characters $\chi_X,\chi_W$
+with the prescribed quadratic restrictions and infinity exponents $m_X,m_W$,
+each automorphic $U$ with weights $\lambda_v$ satisfying
+$d+m_W(v)\le2\lambda_v(k)$ for every $v,k$ has a target $U'$ satisfying
+the specified theta-lift relation. Under this assumption every regular
+algebraic polarised cuspidal pair as above admits $r$, $w_\pi\in\mathbb Z$
+and Hodge--Tate multisets $H_\tau$ satisfying the whole row below.
+
+The representation $r$ is continuous and semisimple. The multiset
+$H_\tau$ is $(a-1)/2$ minus the infinitesimal character at $\iota\tau$,
+and $H_{\tau c}=w_\pi-H_\tau$. At each $w\nmid\ell$ and for
+\emph{every} parameter map satisfying the local laws in
+\hyperref[sub:B04]{B04}, compare $\mathrm{WD}(r|_{E_w})$ with the parameter
+of the algebraically normalised local component. They have equal dimension.
+A toral target with zero monodromy gives equality; under the source's
+large-residue-characteristic, tame and squarefree conditions, a target with
+zero monodromy gives zero monodromy and equality of characteristic polynomials
+on degree-zero Weil elements. For every tied local comparison datum and
+inducing bridge above $\ell$, a spherical component gives crystallinity,
+the de Rham property and jumps $H_\tau$ at every induced embedding.
+A zero-monodromy toral target, or a zero-monodromy target satisfying the
+three tame-range conditions, gives the de Rham and potentially semistable
+properties, the same jumps and the preceding Weil--Deligne comparison.
+\end{formalstatement}\subnode{B01}
+The universality in the bridge and the parameter is part of
+\nolinkurl{PropsB}. Relating it to the published comparison requires identifying
+these models and normalisations. See \path{HalfIndexLattices/TLiftK.lean:12--24}
+and \path{TypeConditions/WeightsConjBis.lean:26--73}.

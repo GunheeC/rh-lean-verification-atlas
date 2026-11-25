@@ -1,0 +1,98 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "W06",
+  "title": "The rank-four symplectic deformation conditions",
+  "track": {
+    "primary": "galois",
+    "secondary": [
+      "local"
+    ]
+  },
+  "statement": "Assume $H'$. For every algebraic closure of $\\mathbb Q$, large host\n$(h,t)$, odd prime $\\ell$, coefficient ring $O$, $0<e<t$,\n$\\psi\\in X_h(O,e)$ and good rank-four symplectic datum $D$ in \nCase~II or III of W09, the following hold. Here the datum has character\n$\\psi$, ramification set the primes dividing $2\\ell Np_1$, and an odd\nauxiliary character built from a primitive character at $2^{n'}$ and\none of order $m_0$ at $p_1$. The prescribed $(n',p_1,m_0)$ is\n$(n_{\\rm II},1,1)$ in Case~II and\n$(n_{\\rm III},p_1(\\chi),\\operatorname{ord}\\psi)$ in Case~III.\nThe goodness conditions fix the places, inertia and parity of the\ncharacters, a lift of the mod-$\\ell$ cyclotomic character of exponent\n$\\ell-1$, distinguished Frobenius elements and their residual\nseparation, and vanishing of the locally trivial residual cocycles for\n$\\alpha,\\beta,\\theta$ and their inverses. They include the distinguished\nlimit, the nontriviality of $\\bar\\alpha$ and $\\bar\\Psi$ on $g_0$, and an\ninertial $s_0\\in\\ker\\psi\\cap\\ker\\omega$ of infinite cyclotomic order.\nFor every lift satisfying\nthe imposed component conditions, its weight-zero monomials generate a\nmodule-finite $O$-algebra. At any geometric point with block image the\nblocks indexed by $\\{0,2\\}$ span a proper subspace of $M_2$.\nThere is one $\\iota:\\overline{\\mathbb Q}_\\ell\\simeq\\mathbb C$ for\nall irreducible geometric points. Whenever such a point is continuous\nand stays irreducible on restriction to a quadratic CM field, that\nrestriction is attached via $\\iota$ to a regular algebraic cusp form\nand has the local witness of W07.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume $H'$ and use an eligible large host, odd coefficient prime, $0<e<t$ and the prescribed character in $X_h(O,e)$.",
+    "Take a good rank-four symplectic datum satisfying the Case II or III and character restrictions in the statement."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.HV.DescentVanishingReductions.sp4In0_alt",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/Sp4In0.lean",
+      "line0": 18,
+      "line1": 19,
+      "sha256": "3dc03d26591bcf558003f03801506e248d88020ee993ca6fbd30e0d2648a7115",
+      "dominated": 111950,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "5.42 (sub:W06)",
+      "pages": [
+        50,
+        50
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/W06.tex",
+      "section": "sub:W06",
+      "pages": []
+    }
+  ],
+  "status": "Statement only",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [
+    "B04",
+    "D082",
+    "P025",
+    "W11",
+    "Z1.2"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [],
+  "paper_id": "W06",
+  "indexed_members": [
+    "D120",
+    "D492",
+    "D493",
+    "D494",
+    "D495",
+    "D496"
+  ],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "the-rank-four-symplectic-deformation-conditions",
+  "aliases": [
+    "sp4In0_alt",
+    "W06 The rank-four symplectic deformation conditions"
+  ],
+  "background": [
+    "Symplectic deformation rings",
+    "Ordinary Galois representations"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "5.42 (sub:W06)",
+    "pages": [
+      50,
+      50
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "B04": "graph",
+    "D082": "graph",
+    "P025": "graph",
+    "W11": "graph",
+    "Z1.2": "graph"
+  }
+}

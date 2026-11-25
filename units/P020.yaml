@@ -1,0 +1,106 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "P020",
+  "title": "The Selmer window from four character counts",
+  "track": {
+    "primary": "galois",
+    "secondary": [
+      "analytic"
+    ]
+  },
+  "statement": "Assume the local, automorphy, cohomological and CM input records of \\code{LiteratureRankNHypothesis}, the existence of one $C_K\\in\\mathbb R$ satisfying \\code{LemmaK}, and the four bounds \\code{CountI}, \\code{CountII}, \\code{CountIII}, \\code{CountV} of \\nolinkurl{HeightAndVanishing/Counts.lean:53--69}. Then the assertion $V$ above holds for every primitive $\\psi$. In \\code{LemmaK} the same $C_K$ bounds the log cardinality of the finite group $H^2(\\mathrm{zlTw}(D,j+1))$ by $\\exp((2j[L:\\mathbb Q])^{C_K}\\log(2|\\operatorname{disc}L|))$ for every prime $\\ell$, every admissible totally complex field $L$ with the required root of unity, closure and local datum $D$, and every $j\\ge1$ (\\nolinkurl{LemmaK.lean:9--17}).",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume the local, automorphy, cohomological and CM records of the rank-$n$ literature hypothesis.",
+    "One constant $C_K$ satisfies LemmaK, and the four character-count assertions I, II, III and V hold."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.V.HV.Core.of_four_alt",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/HVCore.lean",
+      "line0": 18,
+      "line1": 22,
+      "sha256": "3d509aa1d71500ef1b859242bc2f9639c3da1dfecebe0f4049948f57c402e506",
+      "dominated": 21873,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "6.36 (pn:P020)",
+      "pages": [
+        68,
+        68
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/P020.tex",
+      "section": "pn:P020",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L1",
+  "reviews": [
+    "reviews/R20_review.md"
+  ],
+  "prerequisites": [
+    "W11",
+    "W12",
+    "W13",
+    "W14",
+    "W15"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [
+    {
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "lines": [
+        52,
+        52
+      ],
+      "scope": "R20 local implication under its stated premises, not its prerequisite cones.",
+      "verdict": "Statement exact"
+    }
+  ],
+  "paper_id": "P020",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "the-selmer-window-from-four-character-counts",
+  "aliases": [
+    "of_four_alt",
+    "P020 The Selmer window from four character counts"
+  ],
+  "background": [
+    "Galois cohomology",
+    "Local conditions on Selmer groups",
+    "Prime-weighted counts"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "6.36 (pn:P020)",
+    "pages": [
+      68,
+      68
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "W11": "graph",
+    "W12": "graph",
+    "W13": "graph",
+    "W14": "graph",
+    "W15": "graph"
+  },
+  "summary": "Four character counts, the stated local and global comparison records, and a uniform second-cohomology estimate give the Selmer window for every designated primitive character. In particular, the cohomology exponent must work across all the allowed fields, primes and twists."
+}

@@ -1,0 +1,3811 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "edition": "paper2_v3",
+  "aux_sha256": "c22df437a9faa5bb2e98a6a6378bbd9c17c434923e651c21848da3e7ebcbc3a7",
+  "labels": {
+    "sec:intro": {
+      "section": "1",
+      "page": 6
+    },
+    "sec:mechanism": {
+      "section": "2",
+      "page": 7
+    },
+    "mechanism:end": {
+      "section": "2",
+      "page": 8
+    },
+    "sec:r23-chain": {
+      "section": "3",
+      "page": 9
+    },
+    "r23:p017": {
+      "section": "3.1",
+      "page": 9
+    },
+    "r23:family": {
+      "section": "3.1",
+      "page": 9
+    },
+    "r23:gapinputs": {
+      "section": "3.2",
+      "page": 9
+    },
+    "r23:charinputs": {
+      "section": "3.3",
+      "page": 10
+    },
+    "r23:budget": {
+      "section": "3.4",
+      "page": 13
+    },
+    "r23:link": {
+      "section": "3.2",
+      "page": 13
+    },
+    "r23:host": {
+      "section": "3.3",
+      "page": 17
+    },
+    "sec:r23-selmer": {
+      "section": "3.4",
+      "page": 20
+    },
+    "sec:r23-p012": {
+      "section": "3.5",
+      "page": 22
+    },
+    "r23:chain-end": {
+      "section": "3.5",
+      "page": 23
+    },
+    "sec:arch": {
+      "section": "4",
+      "page": 24
+    },
+    "fig:map": {
+      "section": "1",
+      "page": 24
+    },
+    "tab:input-roots": {
+      "section": "1",
+      "page": 25
+    },
+    "sec:r22-overview": {
+      "section": "4.4",
+      "page": 26
+    },
+    "sec:interfaces": {
+      "section": "5",
+      "page": 28
+    },
+    "tab:metrics": {
+      "section": "3",
+      "page": 28
+    },
+    "sec:p012-litrecords": {
+      "section": "5.3",
+      "page": 30
+    },
+    "sec:split-bridges": {
+      "section": "5.6",
+      "page": 34
+    },
+    "sub:B01": {
+      "section": "5.1",
+      "page": 35
+    },
+    "sub:B02": {
+      "section": "5.2",
+      "page": 35
+    },
+    "sub:B03": {
+      "section": "5.3",
+      "page": 36
+    },
+    "sub:B04": {
+      "section": "5.4",
+      "page": 36
+    },
+    "sub:B05": {
+      "section": "5.5",
+      "page": 37
+    },
+    "sub:B06": {
+      "section": "5.6",
+      "page": 37
+    },
+    "sub:B07": {
+      "section": "5.7",
+      "page": 37
+    },
+    "sub:B08": {
+      "section": "5.8",
+      "page": 38
+    },
+    "sub:B09": {
+      "section": "5.9",
+      "page": 38
+    },
+    "sub:B10": {
+      "section": "5.10",
+      "page": 39
+    },
+    "sec:split-p012": {
+      "section": "5.9",
+      "page": 40
+    },
+    "sub:T01": {
+      "section": "5.11",
+      "page": 40
+    },
+    "sub:T02": {
+      "section": "5.12",
+      "page": 40
+    },
+    "sub:T03": {
+      "section": "5.13",
+      "page": 40
+    },
+    "sub:T04": {
+      "section": "5.14",
+      "page": 41
+    },
+    "sub:T05": {
+      "section": "5.15",
+      "page": 41
+    },
+    "sub:T06": {
+      "section": "5.16",
+      "page": 41
+    },
+    "sub:T07": {
+      "section": "5.17",
+      "page": 41
+    },
+    "sub:T08": {
+      "section": "5.18",
+      "page": 42
+    },
+    "sub:T09": {
+      "section": "5.19",
+      "page": 42
+    },
+    "sub:T10": {
+      "section": "5.20",
+      "page": 42
+    },
+    "sub:T11": {
+      "section": "5.21",
+      "page": 43
+    },
+    "sub:T12": {
+      "section": "5.22",
+      "page": 43
+    },
+    "sub:T13": {
+      "section": "5.23",
+      "page": 43
+    },
+    "sub:T14": {
+      "section": "5.24",
+      "page": 44
+    },
+    "sub:T15": {
+      "section": "5.25",
+      "page": 44
+    },
+    "sub:T16": {
+      "section": "5.26",
+      "page": 44
+    },
+    "sub:T17": {
+      "section": "5.27",
+      "page": 45
+    },
+    "sub:T18": {
+      "section": "5.28",
+      "page": 45
+    },
+    "sub:T19": {
+      "section": "5.29",
+      "page": 46
+    },
+    "sub:T20": {
+      "section": "5.30",
+      "page": 46
+    },
+    "sub:T21": {
+      "section": "5.31",
+      "page": 46
+    },
+    "sub:T22": {
+      "section": "5.32",
+      "page": 47
+    },
+    "sub:T23": {
+      "section": "5.33",
+      "page": 47
+    },
+    "sub:T24": {
+      "section": "5.34",
+      "page": 47
+    },
+    "sub:T25": {
+      "section": "5.35",
+      "page": 48
+    },
+    "sub:T26": {
+      "section": "5.36",
+      "page": 48
+    },
+    "sec:split-p013": {
+      "section": "5.10",
+      "page": 48
+    },
+    "sub:W01": {
+      "section": "5.37",
+      "page": 48
+    },
+    "sub:W02": {
+      "section": "5.38",
+      "page": 49
+    },
+    "sub:W03": {
+      "section": "5.39",
+      "page": 49
+    },
+    "sub:W04": {
+      "section": "5.40",
+      "page": 49
+    },
+    "sub:W05": {
+      "section": "5.41",
+      "page": 50
+    },
+    "sub:W06": {
+      "section": "5.42",
+      "page": 50
+    },
+    "sub:W07": {
+      "section": "5.43",
+      "page": 50
+    },
+    "sub:W08": {
+      "section": "5.44",
+      "page": 51
+    },
+    "sub:W09": {
+      "section": "5.45",
+      "page": 51
+    },
+    "sub:W10": {
+      "section": "5.46",
+      "page": 52
+    },
+    "sub:W11": {
+      "section": "5.47",
+      "page": 52
+    },
+    "sub:W12": {
+      "section": "5.48",
+      "page": 52
+    },
+    "sub:W13": {
+      "section": "5.49",
+      "page": 53
+    },
+    "sub:W14": {
+      "section": "5.50",
+      "page": 53
+    },
+    "sub:W15": {
+      "section": "5.51",
+      "page": 53
+    },
+    "sub:W16": {
+      "section": "5.52",
+      "page": 54
+    },
+    "sec:upper-goals": {
+      "section": "6",
+      "page": 54
+    },
+    "pn:P001": {
+      "section": "6.1",
+      "page": 54
+    },
+    "pn:P002": {
+      "section": "6.2",
+      "page": 54
+    },
+    "pn:P003": {
+      "section": "6.3",
+      "page": 55
+    },
+    "pn:P004": {
+      "section": "6.4",
+      "page": 55
+    },
+    "pn:P005": {
+      "section": "6.5",
+      "page": 55
+    },
+    "pn:P006": {
+      "section": "6.6",
+      "page": 55
+    },
+    "pn:P007": {
+      "section": "6.7",
+      "page": 55
+    },
+    "pn:P008": {
+      "section": "6.8",
+      "page": 56
+    },
+    "pn:P009": {
+      "section": "6.9",
+      "page": 56
+    },
+    "pn:P010": {
+      "section": "6.10",
+      "page": 56
+    },
+    "pn:P011": {
+      "section": "6.11",
+      "page": 56
+    },
+    "pn:P012": {
+      "section": "6.12",
+      "page": 57
+    },
+    "pn:P013": {
+      "section": "6.13",
+      "page": 57
+    },
+    "pn:P014": {
+      "section": "6.14",
+      "page": 58
+    },
+    "pn:P015": {
+      "section": "6.15",
+      "page": 58
+    },
+    "pn:P016": {
+      "section": "6.16",
+      "page": 59
+    },
+    "pn:P017": {
+      "section": "6.17",
+      "page": 59
+    },
+    "sec:E-level": {
+      "section": "6.3",
+      "page": 59
+    },
+    "def:E-G": {
+      "section": "6.18",
+      "page": 60
+    },
+    "def:E-level": {
+      "section": "6.19",
+      "page": 60
+    },
+    "def:E-windows": {
+      "section": "6.20",
+      "page": 60
+    },
+    "sec:E-landau": {
+      "section": "6.4",
+      "page": 60
+    },
+    "def:E-poledata": {
+      "section": "6.21",
+      "page": 61
+    },
+    "def:E-windowU": {
+      "section": "6.22",
+      "page": 61
+    },
+    "pn:P022": {
+      "section": "6.23",
+      "page": 61
+    },
+    "eq:E-poles-left": {
+      "section": "1",
+      "page": 62
+    },
+    "lem:E-kernel": {
+      "section": "6.24",
+      "page": 62
+    },
+    "lem:E-tails": {
+      "section": "6.25",
+      "page": 62
+    },
+    "prop:E-landau-key": {
+      "section": "6.26",
+      "page": 63
+    },
+    "eq:E-key1": {
+      "section": "2",
+      "page": 63
+    },
+    "lem:E-dichotomy": {
+      "section": "6.27",
+      "page": 63
+    },
+    "lem:E-nearest": {
+      "section": "6.28",
+      "page": 64
+    },
+    "rem:E-landau-compare": {
+      "section": "6.29",
+      "page": 65
+    },
+    "def:E-charfamily": {
+      "section": "6.30",
+      "page": 65
+    },
+    "lem:E-mellin": {
+      "section": "6.31",
+      "page": 65
+    },
+    "prop:E-poledata-family": {
+      "section": "6.32",
+      "page": 66
+    },
+    "pn:P023": {
+      "section": "6.33",
+      "page": 67
+    },
+    "pn:P018": {
+      "section": "6.34",
+      "page": 67
+    },
+    "pn:P019": {
+      "section": "6.35",
+      "page": 67
+    },
+    "pn:P020": {
+      "section": "6.36",
+      "page": 68
+    },
+    "def:L-data": {
+      "section": "6.37",
+      "page": 68
+    },
+    "def:L-hyps": {
+      "section": "6.38",
+      "page": 69
+    },
+    "lem:L-keyid": {
+      "section": "6.39",
+      "page": 69
+    },
+    "pn:P021": {
+      "section": "6.40",
+      "page": 70
+    },
+    "sec:inputs-one-auto": {
+      "section": "7.1",
+      "page": 72
+    },
+    "pn:P024": {
+      "section": "7.1",
+      "page": 72
+    },
+    "pn:P025": {
+      "section": "7.2",
+      "page": 72
+    },
+    "pn:P026": {
+      "section": "7.3",
+      "page": 73
+    },
+    "pn:P027": {
+      "section": "7.4",
+      "page": 74
+    },
+    "pn:P028": {
+      "section": "7.5",
+      "page": 75
+    },
+    "pn:P029": {
+      "section": "7.6",
+      "page": 75
+    },
+    "pn:P030": {
+      "section": "7.7",
+      "page": 76
+    },
+    "sec:inputs-one-cyc": {
+      "section": "7.2",
+      "page": 76
+    },
+    "pn:P031": {
+      "section": "7.8",
+      "page": 76
+    },
+    "pn:P032": {
+      "section": "7.9",
+      "page": 77
+    },
+    "pn:P033": {
+      "section": "7.10",
+      "page": 78
+    },
+    "pn:P034": {
+      "section": "7.11",
+      "page": 79
+    },
+    "pn:P035": {
+      "section": "7.12",
+      "page": 79
+    },
+    "pn:P036": {
+      "section": "7.13",
+      "page": 80
+    },
+    "pn:P037": {
+      "section": "7.14",
+      "page": 81
+    },
+    "pn:P038": {
+      "section": "7.15",
+      "page": 81
+    },
+    "pn:P039": {
+      "section": "7.16",
+      "page": 82
+    },
+    "pn:P040": {
+      "section": "7.17",
+      "page": 82
+    },
+    "pn:P041": {
+      "section": "7.18",
+      "page": 83
+    },
+    "pn:P042": {
+      "section": "7.19",
+      "page": 84
+    },
+    "pn:P043": {
+      "section": "7.20",
+      "page": 85
+    },
+    "pn:P044": {
+      "section": "7.21",
+      "page": 86
+    },
+    "pn:P045": {
+      "section": "7.22",
+      "page": 87
+    },
+    "pn:P046": {
+      "section": "7.23",
+      "page": 88
+    },
+    "pn:P047": {
+      "section": "7.24",
+      "page": 88
+    },
+    "pn:P048": {
+      "section": "7.25",
+      "page": 89
+    },
+    "pn:P049": {
+      "section": "7.26",
+      "page": 90
+    },
+    "pn:P050": {
+      "section": "7.27",
+      "page": 90
+    },
+    "pn:P051": {
+      "section": "7.28",
+      "page": 91
+    },
+    "pn:P052": {
+      "section": "7.29",
+      "page": 91
+    },
+    "pn:P053": {
+      "section": "8.1",
+      "page": 92
+    },
+    "pn:P054": {
+      "section": "8.2",
+      "page": 92
+    },
+    "pn:P055": {
+      "section": "8.3",
+      "page": 92
+    },
+    "pn:P056": {
+      "section": "8.4",
+      "page": 93
+    },
+    "pn:P057": {
+      "section": "8.5",
+      "page": 93
+    },
+    "pn:P058": {
+      "section": "8.6",
+      "page": 94
+    },
+    "pn:P059": {
+      "section": "8.7",
+      "page": 94
+    },
+    "pn:P060": {
+      "section": "8.8",
+      "page": 95
+    },
+    "pn:P061": {
+      "section": "8.9",
+      "page": 95
+    },
+    "pn:P062": {
+      "section": "8.10",
+      "page": 96
+    },
+    "pn:P063": {
+      "section": "8.11",
+      "page": 97
+    },
+    "pn:P064": {
+      "section": "8.12",
+      "page": 98
+    },
+    "pn:P065": {
+      "section": "8.13",
+      "page": 99
+    },
+    "pn:P066": {
+      "section": "8.14",
+      "page": 99
+    },
+    "pn:P067": {
+      "section": "9.1",
+      "page": 100
+    },
+    "pn:P068": {
+      "section": "9.2",
+      "page": 101
+    },
+    "pn:P069": {
+      "section": "9.3",
+      "page": 101
+    },
+    "pn:P070": {
+      "section": "9.4",
+      "page": 101
+    },
+    "pn:P071": {
+      "section": "9.5",
+      "page": 102
+    },
+    "pn:P072": {
+      "section": "9.6",
+      "page": 102
+    },
+    "pn:P073": {
+      "section": "9.7",
+      "page": 103
+    },
+    "pn:P074": {
+      "section": "9.8",
+      "page": 103
+    },
+    "pn:P075": {
+      "section": "9.9",
+      "page": 104
+    },
+    "pn:P076": {
+      "section": "9.10",
+      "page": 104
+    },
+    "pn:P077": {
+      "section": "9.11",
+      "page": 104
+    },
+    "pn:P078": {
+      "section": "9.12",
+      "page": 105
+    },
+    "pn:P079": {
+      "section": "9.13",
+      "page": 105
+    },
+    "pn:P080": {
+      "section": "9.14",
+      "page": 106
+    },
+    "pn:P081": {
+      "section": "9.15",
+      "page": 106
+    },
+    "pn:P082": {
+      "section": "10.1",
+      "page": 107
+    },
+    "pn:P083": {
+      "section": "10.2",
+      "page": 107
+    },
+    "pn:P084": {
+      "section": "10.3",
+      "page": 108
+    },
+    "pn:P085": {
+      "section": "10.4",
+      "page": 108
+    },
+    "pn:P086": {
+      "section": "10.5",
+      "page": 108
+    },
+    "pn:P087": {
+      "section": "10.6",
+      "page": 109
+    },
+    "pn:P088": {
+      "section": "10.7",
+      "page": 109
+    },
+    "pn:P089": {
+      "section": "10.8",
+      "page": 110
+    },
+    "pn:P090": {
+      "section": "10.9",
+      "page": 110
+    },
+    "sec:remaining": {
+      "section": "11",
+      "page": 112
+    },
+    "sec:r23-status": {
+      "section": "11.1",
+      "page": 112
+    },
+    "sec:r22-remains": {
+      "section": "11.2",
+      "page": 112
+    },
+    "sec:r22-joint": {
+      "section": "11.3",
+      "page": 120
+    },
+    "sec:glossary": {
+      "section": "12",
+      "page": 126
+    },
+    "sec:finite-kernel-charts": {
+      "section": "A",
+      "page": 131
+    },
+    "eq:chartaway": {
+      "section": "3",
+      "page": 131
+    },
+    "eq:chartlevel": {
+      "section": "4",
+      "page": 131
+    },
+    "pn:P091": {
+      "section": "A.1",
+      "page": 132
+    },
+    "pn:P092": {
+      "section": "A.2",
+      "page": 132
+    },
+    "pn:P093": {
+      "section": "A.3",
+      "page": 132
+    },
+    "pn:P094": {
+      "section": "A.4",
+      "page": 133
+    },
+    "pn:P095": {
+      "section": "A.5",
+      "page": 133
+    },
+    "pn:P096": {
+      "section": "A.6",
+      "page": 133
+    },
+    "pn:P097": {
+      "section": "A.7",
+      "page": 133
+    },
+    "pn:P098": {
+      "section": "A.8",
+      "page": 134
+    },
+    "pn:P099": {
+      "section": "A.9",
+      "page": 134
+    },
+    "pn:P100": {
+      "section": "A.10",
+      "page": 134
+    },
+    "pn:P101": {
+      "section": "A.11",
+      "page": 134
+    },
+    "pn:P102": {
+      "section": "A.12",
+      "page": 135
+    },
+    "pn:P103": {
+      "section": "A.13",
+      "page": 135
+    },
+    "pn:P104": {
+      "section": "A.14",
+      "page": 135
+    },
+    "pn:P105": {
+      "section": "A.15",
+      "page": 135
+    },
+    "pn:P106": {
+      "section": "A.16",
+      "page": 135
+    },
+    "sec:depth-five-charts": {
+      "section": "B",
+      "page": 136
+    },
+    "pn:P107": {
+      "section": "B.1",
+      "page": 136
+    },
+    "pn:P108": {
+      "section": "B.2",
+      "page": 136
+    },
+    "pn:P109": {
+      "section": "B.3",
+      "page": 136
+    },
+    "pn:P110": {
+      "section": "B.4",
+      "page": 137
+    },
+    "pn:P111": {
+      "section": "B.5",
+      "page": 137
+    },
+    "pn:P112": {
+      "section": "B.6",
+      "page": 137
+    },
+    "pn:P113": {
+      "section": "B.7",
+      "page": 137
+    },
+    "pn:P114": {
+      "section": "B.8",
+      "page": 138
+    },
+    "pn:P115": {
+      "section": "B.9",
+      "page": 138
+    },
+    "pn:P116": {
+      "section": "B.10",
+      "page": 139
+    },
+    "sec:localframes": {
+      "section": "B.3",
+      "page": 139
+    },
+    "pn:P117": {
+      "section": "B.11",
+      "page": 140
+    },
+    "pn:P118": {
+      "section": "B.12",
+      "page": 140
+    },
+    "pn:P119": {
+      "section": "B.13",
+      "page": 140
+    },
+    "pn:P120": {
+      "section": "B.14",
+      "page": 140
+    },
+    "sec:r20depthsix": {
+      "section": "C",
+      "page": 141
+    },
+    "pn:P121": {
+      "section": "C.1",
+      "page": 141
+    },
+    "pn:P122": {
+      "section": "C.2",
+      "page": 141
+    },
+    "pn:P123": {
+      "section": "C.3",
+      "page": 142
+    },
+    "pn:P124": {
+      "section": "C.4",
+      "page": 142
+    },
+    "pn:P125": {
+      "section": "C.5",
+      "page": 142
+    },
+    "pn:P126": {
+      "section": "C.6",
+      "page": 143
+    },
+    "pn:P127": {
+      "section": "C.7",
+      "page": 143
+    },
+    "pn:P128": {
+      "section": "C.8",
+      "page": 143
+    },
+    "pn:P129": {
+      "section": "C.9",
+      "page": 144
+    },
+    "pn:P130": {
+      "section": "C.10",
+      "page": 144
+    },
+    "pn:P131": {
+      "section": "C.11",
+      "page": 144
+    },
+    "pn:P132": {
+      "section": "C.12",
+      "page": 145
+    },
+    "pn:P133": {
+      "section": "C.13",
+      "page": 145
+    },
+    "pn:P134": {
+      "section": "C.14",
+      "page": 145
+    },
+    "pn:P135": {
+      "section": "C.15",
+      "page": 146
+    },
+    "pn:P136": {
+      "section": "C.16",
+      "page": 146
+    },
+    "pn:P137": {
+      "section": "C.17",
+      "page": 146
+    },
+    "sec:r20depthseven": {
+      "section": "D",
+      "page": 146
+    },
+    "pn:P138": {
+      "section": "D.1",
+      "page": 146
+    },
+    "pn:P139": {
+      "section": "D.2",
+      "page": 147
+    },
+    "pn:P140": {
+      "section": "D.3",
+      "page": 147
+    },
+    "app:pending": {
+      "section": "E",
+      "page": 148
+    },
+    "sec:pending-p096": {
+      "section": "E.1",
+      "page": 148
+    },
+    "sec:pending-p134": {
+      "section": "E.2",
+      "page": 148
+    },
+    "app:literature-fields": {
+      "section": "F",
+      "page": 151
+    },
+    "app:r22": {
+      "section": "G",
+      "page": 155
+    },
+    "decomp:T01": {
+      "section": "G.1",
+      "page": 156
+    },
+    "decomp:D001": {
+      "section": "G.2",
+      "page": 157
+    },
+    "decomp:D002": {
+      "section": "G.3",
+      "page": 157
+    },
+    "decomp:D003": {
+      "section": "G.4",
+      "page": 157
+    },
+    "decomp:P015": {
+      "section": "G.5",
+      "page": 157
+    },
+    "decomp:D004": {
+      "section": "G.6",
+      "page": 158
+    },
+    "decomp:D005": {
+      "section": "G.7",
+      "page": 158
+    },
+    "decomp:D006": {
+      "section": "G.8",
+      "page": 158
+    },
+    "decomp:D007": {
+      "section": "G.9",
+      "page": 158
+    },
+    "decomp:D008": {
+      "section": "G.10",
+      "page": 159
+    },
+    "decomp:D009": {
+      "section": "G.11",
+      "page": 159
+    },
+    "decomp:D010": {
+      "section": "G.12",
+      "page": 159
+    },
+    "decomp:D011": {
+      "section": "G.13",
+      "page": 159
+    },
+    "decomp:D012": {
+      "section": "G.14",
+      "page": 160
+    },
+    "decomp:D013": {
+      "section": "G.15",
+      "page": 160
+    },
+    "decomp:D014": {
+      "section": "G.16",
+      "page": 160
+    },
+    "decomp:D015": {
+      "section": "G.17",
+      "page": 160
+    },
+    "decomp:D016": {
+      "section": "G.18",
+      "page": 161
+    },
+    "decomp:P014": {
+      "section": "G.19",
+      "page": 161
+    },
+    "decomp:D017": {
+      "section": "G.20",
+      "page": 161
+    },
+    "decomp:D018": {
+      "section": "G.21",
+      "page": 162
+    },
+    "decomp:T02": {
+      "section": "G.22",
+      "page": 162
+    },
+    "decomp:D019": {
+      "section": "G.23",
+      "page": 162
+    },
+    "decomp:D020": {
+      "section": "G.24",
+      "page": 162
+    },
+    "decomp:D021": {
+      "section": "G.25",
+      "page": 163
+    },
+    "decomp:D022": {
+      "section": "G.26",
+      "page": 163
+    },
+    "decomp:D023": {
+      "section": "G.27",
+      "page": 163
+    },
+    "decomp:D024": {
+      "section": "G.28",
+      "page": 163
+    },
+    "decomp:D025": {
+      "section": "G.29",
+      "page": 164
+    },
+    "decomp:D026": {
+      "section": "G.30",
+      "page": 164
+    },
+    "decomp:D027": {
+      "section": "G.31",
+      "page": 164
+    },
+    "decomp:D028": {
+      "section": "G.32",
+      "page": 164
+    },
+    "decomp:D029": {
+      "section": "G.33",
+      "page": 165
+    },
+    "decomp:D030": {
+      "section": "G.34",
+      "page": 165
+    },
+    "decomp:D031": {
+      "section": "G.35",
+      "page": 165
+    },
+    "decomp:D032": {
+      "section": "G.36",
+      "page": 165
+    },
+    "decomp:D033": {
+      "section": "G.37",
+      "page": 166
+    },
+    "decomp:D034": {
+      "section": "G.38",
+      "page": 166
+    },
+    "decomp:D035": {
+      "section": "G.39",
+      "page": 166
+    },
+    "decomp:D036": {
+      "section": "G.40",
+      "page": 167
+    },
+    "decomp:D037": {
+      "section": "G.41",
+      "page": 167
+    },
+    "decomp:D038": {
+      "section": "G.42",
+      "page": 167
+    },
+    "decomp:D039": {
+      "section": "G.43",
+      "page": 167
+    },
+    "decomp:D040": {
+      "section": "G.44",
+      "page": 168
+    },
+    "decomp:D041": {
+      "section": "G.45",
+      "page": 168
+    },
+    "decomp:D042": {
+      "section": "G.46",
+      "page": 168
+    },
+    "decomp:D043": {
+      "section": "G.47",
+      "page": 168
+    },
+    "decomp:D044": {
+      "section": "G.48",
+      "page": 169
+    },
+    "decomp:D045": {
+      "section": "G.49",
+      "page": 169
+    },
+    "decomp:T03": {
+      "section": "G.50",
+      "page": 169
+    },
+    "decomp:D046": {
+      "section": "G.51",
+      "page": 169
+    },
+    "decomp:D047": {
+      "section": "G.52",
+      "page": 170
+    },
+    "decomp:D048": {
+      "section": "G.53",
+      "page": 170
+    },
+    "decomp:D049": {
+      "section": "G.54",
+      "page": 170
+    },
+    "decomp:D050": {
+      "section": "G.55",
+      "page": 171
+    },
+    "decomp:D051": {
+      "section": "G.56",
+      "page": 171
+    },
+    "decomp:D052": {
+      "section": "G.57",
+      "page": 171
+    },
+    "decomp:D053": {
+      "section": "G.58",
+      "page": 171
+    },
+    "decomp:D054": {
+      "section": "G.59",
+      "page": 172
+    },
+    "decomp:D055": {
+      "section": "G.60",
+      "page": 172
+    },
+    "decomp:D056": {
+      "section": "G.61",
+      "page": 172
+    },
+    "decomp:D057": {
+      "section": "G.62",
+      "page": 172
+    },
+    "decomp:D058": {
+      "section": "G.63",
+      "page": 173
+    },
+    "decomp:D059": {
+      "section": "G.64",
+      "page": 173
+    },
+    "decomp:D060": {
+      "section": "G.65",
+      "page": 173
+    },
+    "decomp:D061": {
+      "section": "G.66",
+      "page": 173
+    },
+    "decomp:D062": {
+      "section": "G.67",
+      "page": 174
+    },
+    "decomp:D063": {
+      "section": "G.68",
+      "page": 174
+    },
+    "decomp:D064": {
+      "section": "G.69",
+      "page": 174
+    },
+    "decomp:D065": {
+      "section": "G.70",
+      "page": 174
+    },
+    "decomp:D066": {
+      "section": "G.71",
+      "page": 175
+    },
+    "decomp:D067": {
+      "section": "G.72",
+      "page": 175
+    },
+    "decomp:D068": {
+      "section": "G.73",
+      "page": 175
+    },
+    "decomp:D069": {
+      "section": "G.74",
+      "page": 175
+    },
+    "decomp:D070": {
+      "section": "G.75",
+      "page": 176
+    },
+    "decomp:D071": {
+      "section": "G.76",
+      "page": 176
+    },
+    "decomp:D072": {
+      "section": "G.77",
+      "page": 176
+    },
+    "decomp:D073": {
+      "section": "G.78",
+      "page": 176
+    },
+    "decomp:D074": {
+      "section": "G.79",
+      "page": 177
+    },
+    "decomp:D075": {
+      "section": "G.80",
+      "page": 177
+    },
+    "decomp:D076": {
+      "section": "G.81",
+      "page": 177
+    },
+    "decomp:P027": {
+      "section": "G.82",
+      "page": 177
+    },
+    "decomp:D077": {
+      "section": "G.83",
+      "page": 178
+    },
+    "decomp:P020": {
+      "section": "G.84",
+      "page": 178
+    },
+    "decomp:D078": {
+      "section": "G.85",
+      "page": 178
+    },
+    "decomp:D079": {
+      "section": "G.86",
+      "page": 178
+    },
+    "decomp:D080": {
+      "section": "G.87",
+      "page": 179
+    },
+    "decomp:D081": {
+      "section": "G.88",
+      "page": 179
+    },
+    "decomp:D082": {
+      "section": "G.89",
+      "page": 179
+    },
+    "decomp:D083": {
+      "section": "G.90",
+      "page": 179
+    },
+    "decomp:P024": {
+      "section": "G.91",
+      "page": 180
+    },
+    "decomp:D084": {
+      "section": "G.92",
+      "page": 180
+    },
+    "decomp:D085": {
+      "section": "G.93",
+      "page": 180
+    },
+    "decomp:D086": {
+      "section": "G.94",
+      "page": 180
+    },
+    "decomp:D087": {
+      "section": "G.95",
+      "page": 181
+    },
+    "decomp:D088": {
+      "section": "G.96",
+      "page": 181
+    },
+    "decomp:D089": {
+      "section": "G.97",
+      "page": 181
+    },
+    "decomp:D090": {
+      "section": "G.98",
+      "page": 181
+    },
+    "decomp:D091": {
+      "section": "G.99",
+      "page": 182
+    },
+    "decomp:D092": {
+      "section": "G.100",
+      "page": 182
+    },
+    "decomp:D093": {
+      "section": "G.101",
+      "page": 182
+    },
+    "decomp:D094": {
+      "section": "G.102",
+      "page": 182
+    },
+    "decomp:D095": {
+      "section": "G.103",
+      "page": 183
+    },
+    "decomp:D096": {
+      "section": "G.104",
+      "page": 183
+    },
+    "decomp:D097": {
+      "section": "G.105",
+      "page": 183
+    },
+    "decomp:D098": {
+      "section": "G.106",
+      "page": 183
+    },
+    "decomp:D099": {
+      "section": "G.107",
+      "page": 184
+    },
+    "decomp:D100": {
+      "section": "G.108",
+      "page": 184
+    },
+    "decomp:D101": {
+      "section": "G.109",
+      "page": 184
+    },
+    "decomp:D102": {
+      "section": "G.110",
+      "page": 184
+    },
+    "decomp:D103": {
+      "section": "G.111",
+      "page": 185
+    },
+    "decomp:D104": {
+      "section": "G.112",
+      "page": 185
+    },
+    "decomp:D105": {
+      "section": "G.113",
+      "page": 185
+    },
+    "decomp:D106": {
+      "section": "G.114",
+      "page": 185
+    },
+    "decomp:D107": {
+      "section": "G.115",
+      "page": 186
+    },
+    "decomp:D108": {
+      "section": "G.116",
+      "page": 186
+    },
+    "decomp:D109": {
+      "section": "G.117",
+      "page": 186
+    },
+    "decomp:D110": {
+      "section": "G.118",
+      "page": 186
+    },
+    "decomp:D111": {
+      "section": "G.119",
+      "page": 187
+    },
+    "decomp:D112": {
+      "section": "G.120",
+      "page": 187
+    },
+    "decomp:D113": {
+      "section": "G.121",
+      "page": 187
+    },
+    "decomp:D114": {
+      "section": "G.122",
+      "page": 187
+    },
+    "decomp:D115": {
+      "section": "G.123",
+      "page": 188
+    },
+    "decomp:D116": {
+      "section": "G.124",
+      "page": 188
+    },
+    "decomp:D117": {
+      "section": "G.125",
+      "page": 188
+    },
+    "decomp:W01": {
+      "section": "G.126",
+      "page": 188
+    },
+    "decomp:D118": {
+      "section": "G.127",
+      "page": 189
+    },
+    "decomp:D119": {
+      "section": "G.128",
+      "page": 189
+    },
+    "decomp:D120": {
+      "section": "G.129",
+      "page": 189
+    },
+    "decomp:D121": {
+      "section": "G.130",
+      "page": 189
+    },
+    "decomp:D122": {
+      "section": "G.131",
+      "page": 190
+    },
+    "decomp:T13": {
+      "section": "G.132",
+      "page": 190
+    },
+    "decomp:D123": {
+      "section": "G.133",
+      "page": 190
+    },
+    "decomp:D124": {
+      "section": "G.134",
+      "page": 190
+    },
+    "decomp:D125": {
+      "section": "G.135",
+      "page": 191
+    },
+    "decomp:D126": {
+      "section": "G.136",
+      "page": 191
+    },
+    "decomp:D127": {
+      "section": "G.137",
+      "page": 191
+    },
+    "decomp:D128": {
+      "section": "G.138",
+      "page": 191
+    },
+    "decomp:D129": {
+      "section": "G.139",
+      "page": 192
+    },
+    "decomp:D130": {
+      "section": "G.140",
+      "page": 192
+    },
+    "decomp:D131": {
+      "section": "G.141",
+      "page": 192
+    },
+    "decomp:D132": {
+      "section": "G.142",
+      "page": 192
+    },
+    "decomp:D133": {
+      "section": "G.143",
+      "page": 193
+    },
+    "decomp:D134": {
+      "section": "G.144",
+      "page": 193
+    },
+    "decomp:D135": {
+      "section": "G.145",
+      "page": 193
+    },
+    "decomp:D136": {
+      "section": "G.146",
+      "page": 193
+    },
+    "decomp:D137": {
+      "section": "G.147",
+      "page": 194
+    },
+    "decomp:D138": {
+      "section": "G.148",
+      "page": 194
+    },
+    "decomp:D139": {
+      "section": "G.149",
+      "page": 194
+    },
+    "decomp:D140": {
+      "section": "G.150",
+      "page": 194
+    },
+    "decomp:D141": {
+      "section": "G.151",
+      "page": 195
+    },
+    "decomp:D142": {
+      "section": "G.152",
+      "page": 195
+    },
+    "decomp:D143": {
+      "section": "G.153",
+      "page": 195
+    },
+    "decomp:D144": {
+      "section": "G.154",
+      "page": 195
+    },
+    "decomp:D145": {
+      "section": "G.155",
+      "page": 196
+    },
+    "decomp:D146": {
+      "section": "G.156",
+      "page": 196
+    },
+    "decomp:D147": {
+      "section": "G.157",
+      "page": 196
+    },
+    "decomp:D148": {
+      "section": "G.158",
+      "page": 196
+    },
+    "decomp:D149": {
+      "section": "G.159",
+      "page": 197
+    },
+    "decomp:D150": {
+      "section": "G.160",
+      "page": 197
+    },
+    "decomp:D151": {
+      "section": "G.161",
+      "page": 197
+    },
+    "decomp:D152": {
+      "section": "G.162",
+      "page": 197
+    },
+    "decomp:D153": {
+      "section": "G.163",
+      "page": 198
+    },
+    "decomp:D154": {
+      "section": "G.164",
+      "page": 198
+    },
+    "decomp:D155": {
+      "section": "G.165",
+      "page": 198
+    },
+    "decomp:D156": {
+      "section": "G.166",
+      "page": 198
+    },
+    "decomp:D157": {
+      "section": "G.167",
+      "page": 199
+    },
+    "decomp:D158": {
+      "section": "G.168",
+      "page": 199
+    },
+    "decomp:D159": {
+      "section": "G.169",
+      "page": 199
+    },
+    "decomp:D160": {
+      "section": "G.170",
+      "page": 200
+    },
+    "decomp:D161": {
+      "section": "G.171",
+      "page": 200
+    },
+    "decomp:D162": {
+      "section": "G.172",
+      "page": 200
+    },
+    "decomp:D163": {
+      "section": "G.173",
+      "page": 200
+    },
+    "decomp:D164": {
+      "section": "G.174",
+      "page": 200
+    },
+    "decomp:D165": {
+      "section": "G.175",
+      "page": 201
+    },
+    "decomp:D166": {
+      "section": "G.176",
+      "page": 201
+    },
+    "decomp:D167": {
+      "section": "G.177",
+      "page": 201
+    },
+    "decomp:D168": {
+      "section": "G.178",
+      "page": 201
+    },
+    "decomp:D169": {
+      "section": "G.179",
+      "page": 202
+    },
+    "decomp:D170": {
+      "section": "G.180",
+      "page": 202
+    },
+    "decomp:D171": {
+      "section": "G.181",
+      "page": 202
+    },
+    "decomp:D172": {
+      "section": "G.182",
+      "page": 202
+    },
+    "decomp:D173": {
+      "section": "G.183",
+      "page": 203
+    },
+    "decomp:D174": {
+      "section": "G.184",
+      "page": 203
+    },
+    "decomp:D175": {
+      "section": "G.185",
+      "page": 203
+    },
+    "decomp:D176": {
+      "section": "G.186",
+      "page": 203
+    },
+    "decomp:D177": {
+      "section": "G.187",
+      "page": 203
+    },
+    "decomp:D178": {
+      "section": "G.188",
+      "page": 204
+    },
+    "decomp:D179": {
+      "section": "G.189",
+      "page": 204
+    },
+    "decomp:D180": {
+      "section": "G.190",
+      "page": 204
+    },
+    "decomp:D181": {
+      "section": "G.191",
+      "page": 204
+    },
+    "decomp:D182": {
+      "section": "G.192",
+      "page": 205
+    },
+    "decomp:D183": {
+      "section": "G.193",
+      "page": 205
+    },
+    "decomp:D184": {
+      "section": "G.194",
+      "page": 205
+    },
+    "decomp:D185": {
+      "section": "G.195",
+      "page": 205
+    },
+    "decomp:D186": {
+      "section": "G.196",
+      "page": 206
+    },
+    "decomp:D187": {
+      "section": "G.197",
+      "page": 206
+    },
+    "decomp:D188": {
+      "section": "G.198",
+      "page": 206
+    },
+    "decomp:D189": {
+      "section": "G.199",
+      "page": 206
+    },
+    "decomp:D190": {
+      "section": "G.200",
+      "page": 207
+    },
+    "decomp:D191": {
+      "section": "G.201",
+      "page": 207
+    },
+    "decomp:D192": {
+      "section": "G.202",
+      "page": 207
+    },
+    "decomp:D193": {
+      "section": "G.203",
+      "page": 207
+    },
+    "decomp:D194": {
+      "section": "G.204",
+      "page": 208
+    },
+    "decomp:D195": {
+      "section": "G.205",
+      "page": 208
+    },
+    "decomp:D196": {
+      "section": "G.206",
+      "page": 208
+    },
+    "decomp:D197": {
+      "section": "G.207",
+      "page": 208
+    },
+    "decomp:D198": {
+      "section": "G.208",
+      "page": 209
+    },
+    "decomp:D199": {
+      "section": "G.209",
+      "page": 209
+    },
+    "decomp:D200": {
+      "section": "G.210",
+      "page": 209
+    },
+    "decomp:D201": {
+      "section": "G.211",
+      "page": 209
+    },
+    "decomp:D202": {
+      "section": "G.212",
+      "page": 210
+    },
+    "decomp:D203": {
+      "section": "G.213",
+      "page": 210
+    },
+    "decomp:D204": {
+      "section": "G.214",
+      "page": 210
+    },
+    "decomp:D205": {
+      "section": "G.215",
+      "page": 210
+    },
+    "decomp:D206": {
+      "section": "G.216",
+      "page": 211
+    },
+    "decomp:D207": {
+      "section": "G.217",
+      "page": 211
+    },
+    "decomp:D208": {
+      "section": "G.218",
+      "page": 211
+    },
+    "decomp:D209": {
+      "section": "G.219",
+      "page": 211
+    },
+    "decomp:B02": {
+      "section": "G.220",
+      "page": 212
+    },
+    "decomp:D210": {
+      "section": "G.221",
+      "page": 212
+    },
+    "decomp:D211": {
+      "section": "G.222",
+      "page": 212
+    },
+    "decomp:D212": {
+      "section": "G.223",
+      "page": 212
+    },
+    "decomp:D213": {
+      "section": "G.224",
+      "page": 213
+    },
+    "decomp:D214": {
+      "section": "G.225",
+      "page": 213
+    },
+    "decomp:D215": {
+      "section": "G.226",
+      "page": 213
+    },
+    "decomp:D216": {
+      "section": "G.227",
+      "page": 213
+    },
+    "decomp:D217": {
+      "section": "G.228",
+      "page": 214
+    },
+    "decomp:D218": {
+      "section": "G.229",
+      "page": 214
+    },
+    "decomp:D219": {
+      "section": "G.230",
+      "page": 214
+    },
+    "decomp:D220": {
+      "section": "G.231",
+      "page": 214
+    },
+    "decomp:D221": {
+      "section": "G.232",
+      "page": 215
+    },
+    "decomp:D222": {
+      "section": "G.233",
+      "page": 215
+    },
+    "decomp:D223": {
+      "section": "G.234",
+      "page": 215
+    },
+    "decomp:D224": {
+      "section": "G.235",
+      "page": 215
+    },
+    "decomp:D225": {
+      "section": "G.236",
+      "page": 216
+    },
+    "decomp:D226": {
+      "section": "G.237",
+      "page": 216
+    },
+    "decomp:D227": {
+      "section": "G.238",
+      "page": 216
+    },
+    "decomp:D228": {
+      "section": "G.239",
+      "page": 216
+    },
+    "decomp:D229": {
+      "section": "G.240",
+      "page": 217
+    },
+    "decomp:D230": {
+      "section": "G.241",
+      "page": 217
+    },
+    "decomp:D231": {
+      "section": "G.242",
+      "page": 217
+    },
+    "decomp:D232": {
+      "section": "G.243",
+      "page": 217
+    },
+    "decomp:D233": {
+      "section": "G.244",
+      "page": 218
+    },
+    "decomp:D234": {
+      "section": "G.245",
+      "page": 218
+    },
+    "decomp:D235": {
+      "section": "G.246",
+      "page": 218
+    },
+    "decomp:D236": {
+      "section": "G.247",
+      "page": 218
+    },
+    "decomp:D237": {
+      "section": "G.248",
+      "page": 219
+    },
+    "decomp:D238": {
+      "section": "G.249",
+      "page": 219
+    },
+    "decomp:D239": {
+      "section": "G.250",
+      "page": 219
+    },
+    "decomp:D240": {
+      "section": "G.251",
+      "page": 219
+    },
+    "decomp:D241": {
+      "section": "G.252",
+      "page": 220
+    },
+    "decomp:D242": {
+      "section": "G.253",
+      "page": 220
+    },
+    "decomp:D243": {
+      "section": "G.254",
+      "page": 220
+    },
+    "decomp:D244": {
+      "section": "G.255",
+      "page": 220
+    },
+    "decomp:D245": {
+      "section": "G.256",
+      "page": 221
+    },
+    "decomp:D246": {
+      "section": "G.257",
+      "page": 221
+    },
+    "decomp:D247": {
+      "section": "G.258",
+      "page": 221
+    },
+    "decomp:D248": {
+      "section": "G.259",
+      "page": 221
+    },
+    "decomp:D249": {
+      "section": "G.260",
+      "page": 222
+    },
+    "decomp:D250": {
+      "section": "G.261",
+      "page": 222
+    },
+    "decomp:D251": {
+      "section": "G.262",
+      "page": 222
+    },
+    "decomp:D252": {
+      "section": "G.263",
+      "page": 222
+    },
+    "decomp:D253": {
+      "section": "G.264",
+      "page": 223
+    },
+    "decomp:D254": {
+      "section": "G.265",
+      "page": 223
+    },
+    "decomp:D255": {
+      "section": "G.266",
+      "page": 223
+    },
+    "decomp:D256": {
+      "section": "G.267",
+      "page": 223
+    },
+    "decomp:D257": {
+      "section": "G.268",
+      "page": 224
+    },
+    "decomp:D258": {
+      "section": "G.269",
+      "page": 224
+    },
+    "decomp:D259": {
+      "section": "G.270",
+      "page": 224
+    },
+    "decomp:D260": {
+      "section": "G.271",
+      "page": 224
+    },
+    "decomp:D261": {
+      "section": "G.272",
+      "page": 225
+    },
+    "decomp:D262": {
+      "section": "G.273",
+      "page": 225
+    },
+    "decomp:D263": {
+      "section": "G.274",
+      "page": 225
+    },
+    "decomp:D264": {
+      "section": "G.275",
+      "page": 225
+    },
+    "decomp:D265": {
+      "section": "G.276",
+      "page": 226
+    },
+    "decomp:D266": {
+      "section": "G.277",
+      "page": 226
+    },
+    "decomp:D267": {
+      "section": "G.278",
+      "page": 226
+    },
+    "decomp:D268": {
+      "section": "G.279",
+      "page": 227
+    },
+    "decomp:D269": {
+      "section": "G.280",
+      "page": 227
+    },
+    "decomp:D270": {
+      "section": "G.281",
+      "page": 227
+    },
+    "decomp:D271": {
+      "section": "G.282",
+      "page": 227
+    },
+    "decomp:D272": {
+      "section": "G.283",
+      "page": 228
+    },
+    "decomp:D273": {
+      "section": "G.284",
+      "page": 228
+    },
+    "decomp:D274": {
+      "section": "G.285",
+      "page": 228
+    },
+    "decomp:D275": {
+      "section": "G.286",
+      "page": 228
+    },
+    "decomp:D276": {
+      "section": "G.287",
+      "page": 229
+    },
+    "decomp:D277": {
+      "section": "G.288",
+      "page": 229
+    },
+    "decomp:D278": {
+      "section": "G.289",
+      "page": 229
+    },
+    "decomp:D279": {
+      "section": "G.290",
+      "page": 229
+    },
+    "decomp:D280": {
+      "section": "G.291",
+      "page": 230
+    },
+    "decomp:D281": {
+      "section": "G.292",
+      "page": 230
+    },
+    "decomp:D282": {
+      "section": "G.293",
+      "page": 230
+    },
+    "decomp:D283": {
+      "section": "G.294",
+      "page": 230
+    },
+    "decomp:D284": {
+      "section": "G.295",
+      "page": 231
+    },
+    "decomp:D285": {
+      "section": "G.296",
+      "page": 231
+    },
+    "decomp:D286": {
+      "section": "G.297",
+      "page": 231
+    },
+    "decomp:D287": {
+      "section": "G.298",
+      "page": 231
+    },
+    "decomp:D288": {
+      "section": "G.299",
+      "page": 232
+    },
+    "decomp:D289": {
+      "section": "G.300",
+      "page": 232
+    },
+    "decomp:D290": {
+      "section": "G.301",
+      "page": 232
+    },
+    "decomp:D291": {
+      "section": "G.302",
+      "page": 232
+    },
+    "decomp:D292": {
+      "section": "G.303",
+      "page": 233
+    },
+    "decomp:D293": {
+      "section": "G.304",
+      "page": 233
+    },
+    "decomp:D294": {
+      "section": "G.305",
+      "page": 233
+    },
+    "decomp:D295": {
+      "section": "G.306",
+      "page": 233
+    },
+    "decomp:D296": {
+      "section": "G.307",
+      "page": 234
+    },
+    "decomp:D297": {
+      "section": "G.308",
+      "page": 234
+    },
+    "decomp:D298": {
+      "section": "G.309",
+      "page": 234
+    },
+    "decomp:D299": {
+      "section": "G.310",
+      "page": 234
+    },
+    "decomp:D300": {
+      "section": "G.311",
+      "page": 235
+    },
+    "decomp:D301": {
+      "section": "G.312",
+      "page": 235
+    },
+    "decomp:D302": {
+      "section": "G.313",
+      "page": 235
+    },
+    "decomp:D303": {
+      "section": "G.314",
+      "page": 235
+    },
+    "decomp:D304": {
+      "section": "G.315",
+      "page": 236
+    },
+    "decomp:D305": {
+      "section": "G.316",
+      "page": 236
+    },
+    "decomp:D306": {
+      "section": "G.317",
+      "page": 236
+    },
+    "decomp:D307": {
+      "section": "G.318",
+      "page": 236
+    },
+    "decomp:D308": {
+      "section": "G.319",
+      "page": 237
+    },
+    "decomp:D309": {
+      "section": "G.320",
+      "page": 237
+    },
+    "decomp:T14": {
+      "section": "G.321",
+      "page": 237
+    },
+    "decomp:D310": {
+      "section": "G.322",
+      "page": 237
+    },
+    "decomp:D311": {
+      "section": "G.323",
+      "page": 238
+    },
+    "decomp:D312": {
+      "section": "G.324",
+      "page": 238
+    },
+    "decomp:T26": {
+      "section": "G.325",
+      "page": 238
+    },
+    "decomp:D313": {
+      "section": "G.326",
+      "page": 238
+    },
+    "decomp:D314": {
+      "section": "G.327",
+      "page": 239
+    },
+    "decomp:D315": {
+      "section": "G.328",
+      "page": 239
+    },
+    "decomp:D316": {
+      "section": "G.329",
+      "page": 239
+    },
+    "decomp:D317": {
+      "section": "G.330",
+      "page": 239
+    },
+    "decomp:D318": {
+      "section": "G.331",
+      "page": 239
+    },
+    "decomp:D319": {
+      "section": "G.332",
+      "page": 240
+    },
+    "decomp:D320": {
+      "section": "G.333",
+      "page": 240
+    },
+    "decomp:D321": {
+      "section": "G.334",
+      "page": 240
+    },
+    "decomp:D322": {
+      "section": "G.335",
+      "page": 240
+    },
+    "decomp:D323": {
+      "section": "G.336",
+      "page": 241
+    },
+    "decomp:D324": {
+      "section": "G.337",
+      "page": 241
+    },
+    "decomp:D325": {
+      "section": "G.338",
+      "page": 241
+    },
+    "decomp:D326": {
+      "section": "G.339",
+      "page": 241
+    },
+    "decomp:D327": {
+      "section": "G.340",
+      "page": 241
+    },
+    "decomp:D328": {
+      "section": "G.341",
+      "page": 242
+    },
+    "decomp:D329": {
+      "section": "G.342",
+      "page": 242
+    },
+    "decomp:D330": {
+      "section": "G.343",
+      "page": 242
+    },
+    "decomp:D331": {
+      "section": "G.344",
+      "page": 242
+    },
+    "decomp:D332": {
+      "section": "G.345",
+      "page": 242
+    },
+    "decomp:D333": {
+      "section": "G.346",
+      "page": 243
+    },
+    "decomp:D334": {
+      "section": "G.347",
+      "page": 243
+    },
+    "decomp:D335": {
+      "section": "G.348",
+      "page": 243
+    },
+    "decomp:D336": {
+      "section": "G.349",
+      "page": 243
+    },
+    "decomp:D337": {
+      "section": "G.350",
+      "page": 243
+    },
+    "decomp:D338": {
+      "section": "G.351",
+      "page": 244
+    },
+    "decomp:D339": {
+      "section": "G.352",
+      "page": 244
+    },
+    "decomp:D340": {
+      "section": "G.353",
+      "page": 244
+    },
+    "decomp:D341": {
+      "section": "G.354",
+      "page": 244
+    },
+    "decomp:D342": {
+      "section": "G.355",
+      "page": 244
+    },
+    "decomp:D343": {
+      "section": "G.356",
+      "page": 245
+    },
+    "decomp:D344": {
+      "section": "G.357",
+      "page": 245
+    },
+    "decomp:D345": {
+      "section": "G.358",
+      "page": 245
+    },
+    "decomp:D346": {
+      "section": "G.359",
+      "page": 246
+    },
+    "decomp:D347": {
+      "section": "G.360",
+      "page": 246
+    },
+    "decomp:D348": {
+      "section": "G.361",
+      "page": 246
+    },
+    "decomp:D349": {
+      "section": "G.362",
+      "page": 246
+    },
+    "decomp:D350": {
+      "section": "G.363",
+      "page": 247
+    },
+    "decomp:D351": {
+      "section": "G.364",
+      "page": 247
+    },
+    "decomp:D352": {
+      "section": "G.365",
+      "page": 247
+    },
+    "decomp:D353": {
+      "section": "G.366",
+      "page": 247
+    },
+    "decomp:D354": {
+      "section": "G.367",
+      "page": 248
+    },
+    "decomp:D355": {
+      "section": "G.368",
+      "page": 248
+    },
+    "decomp:D356": {
+      "section": "G.369",
+      "page": 248
+    },
+    "decomp:D357": {
+      "section": "G.370",
+      "page": 249
+    },
+    "decomp:D358": {
+      "section": "G.371",
+      "page": 249
+    },
+    "decomp:D359": {
+      "section": "G.372",
+      "page": 249
+    },
+    "decomp:D360": {
+      "section": "G.373",
+      "page": 249
+    },
+    "decomp:D361": {
+      "section": "G.374",
+      "page": 250
+    },
+    "decomp:D362": {
+      "section": "G.375",
+      "page": 250
+    },
+    "decomp:D363": {
+      "section": "G.376",
+      "page": 250
+    },
+    "decomp:D364": {
+      "section": "G.377",
+      "page": 250
+    },
+    "decomp:D365": {
+      "section": "G.378",
+      "page": 251
+    },
+    "decomp:D366": {
+      "section": "G.379",
+      "page": 251
+    },
+    "decomp:D367": {
+      "section": "G.380",
+      "page": 251
+    },
+    "decomp:D368": {
+      "section": "G.381",
+      "page": 251
+    },
+    "decomp:D369": {
+      "section": "G.382",
+      "page": 252
+    },
+    "decomp:D370": {
+      "section": "G.383",
+      "page": 252
+    },
+    "decomp:D371": {
+      "section": "G.384",
+      "page": 252
+    },
+    "decomp:D372": {
+      "section": "G.385",
+      "page": 253
+    },
+    "decomp:D373": {
+      "section": "G.386",
+      "page": 253
+    },
+    "decomp:D374": {
+      "section": "G.387",
+      "page": 253
+    },
+    "decomp:D375": {
+      "section": "G.388",
+      "page": 253
+    },
+    "decomp:D376": {
+      "section": "G.389",
+      "page": 254
+    },
+    "decomp:D377": {
+      "section": "G.390",
+      "page": 254
+    },
+    "decomp:D378": {
+      "section": "G.391",
+      "page": 254
+    },
+    "decomp:D379": {
+      "section": "G.392",
+      "page": 254
+    },
+    "decomp:D380": {
+      "section": "G.393",
+      "page": 255
+    },
+    "decomp:D381": {
+      "section": "G.394",
+      "page": 255
+    },
+    "decomp:D382": {
+      "section": "G.395",
+      "page": 255
+    },
+    "decomp:D383": {
+      "section": "G.396",
+      "page": 255
+    },
+    "decomp:D384": {
+      "section": "G.397",
+      "page": 256
+    },
+    "decomp:T04": {
+      "section": "G.398",
+      "page": 256
+    },
+    "decomp:D385": {
+      "section": "G.399",
+      "page": 256
+    },
+    "decomp:D386": {
+      "section": "G.400",
+      "page": 256
+    },
+    "decomp:D387": {
+      "section": "G.401",
+      "page": 257
+    },
+    "decomp:D388": {
+      "section": "G.402",
+      "page": 257
+    },
+    "decomp:D389": {
+      "section": "G.403",
+      "page": 257
+    },
+    "decomp:D390": {
+      "section": "G.404",
+      "page": 257
+    },
+    "decomp:D391": {
+      "section": "G.405",
+      "page": 258
+    },
+    "decomp:D392": {
+      "section": "G.406",
+      "page": 258
+    },
+    "decomp:D393": {
+      "section": "G.407",
+      "page": 258
+    },
+    "decomp:D394": {
+      "section": "G.408",
+      "page": 258
+    },
+    "decomp:D395": {
+      "section": "G.409",
+      "page": 259
+    },
+    "decomp:D396": {
+      "section": "G.410",
+      "page": 259
+    },
+    "decomp:D397": {
+      "section": "G.411",
+      "page": 259
+    },
+    "decomp:D398": {
+      "section": "G.412",
+      "page": 259
+    },
+    "decomp:D399": {
+      "section": "G.413",
+      "page": 260
+    },
+    "decomp:D400": {
+      "section": "G.414",
+      "page": 260
+    },
+    "decomp:D401": {
+      "section": "G.415",
+      "page": 260
+    },
+    "decomp:D402": {
+      "section": "G.416",
+      "page": 260
+    },
+    "decomp:D403": {
+      "section": "G.417",
+      "page": 261
+    },
+    "decomp:D404": {
+      "section": "G.418",
+      "page": 261
+    },
+    "decomp:D405": {
+      "section": "G.419",
+      "page": 261
+    },
+    "decomp:D406": {
+      "section": "G.420",
+      "page": 261
+    },
+    "decomp:D407": {
+      "section": "G.421",
+      "page": 262
+    },
+    "decomp:T05": {
+      "section": "G.422",
+      "page": 262
+    },
+    "decomp:D408": {
+      "section": "G.423",
+      "page": 262
+    },
+    "decomp:D409": {
+      "section": "G.424",
+      "page": 262
+    },
+    "decomp:D410": {
+      "section": "G.425",
+      "page": 263
+    },
+    "decomp:D411": {
+      "section": "G.426",
+      "page": 263
+    },
+    "decomp:D412": {
+      "section": "G.427",
+      "page": 263
+    },
+    "decomp:D413": {
+      "section": "G.428",
+      "page": 263
+    },
+    "decomp:D414": {
+      "section": "G.429",
+      "page": 264
+    },
+    "decomp:D415": {
+      "section": "G.430",
+      "page": 264
+    },
+    "decomp:D416": {
+      "section": "G.431",
+      "page": 264
+    },
+    "decomp:D417": {
+      "section": "G.432",
+      "page": 264
+    },
+    "decomp:D418": {
+      "section": "G.433",
+      "page": 265
+    },
+    "decomp:D419": {
+      "section": "G.434",
+      "page": 265
+    },
+    "decomp:T06": {
+      "section": "G.435",
+      "page": 265
+    },
+    "decomp:D420": {
+      "section": "G.436",
+      "page": 265
+    },
+    "decomp:D421": {
+      "section": "G.437",
+      "page": 266
+    },
+    "decomp:D422": {
+      "section": "G.438",
+      "page": 266
+    },
+    "decomp:D423": {
+      "section": "G.439",
+      "page": 266
+    },
+    "decomp:D424": {
+      "section": "G.440",
+      "page": 266
+    },
+    "decomp:D425": {
+      "section": "G.441",
+      "page": 267
+    },
+    "decomp:D426": {
+      "section": "G.442",
+      "page": 267
+    },
+    "decomp:D427": {
+      "section": "G.443",
+      "page": 267
+    },
+    "decomp:D428": {
+      "section": "G.444",
+      "page": 267
+    },
+    "decomp:D429": {
+      "section": "G.445",
+      "page": 268
+    },
+    "decomp:T07": {
+      "section": "G.446",
+      "page": 268
+    },
+    "decomp:D430": {
+      "section": "G.447",
+      "page": 268
+    },
+    "decomp:D431": {
+      "section": "G.448",
+      "page": 268
+    },
+    "decomp:D432": {
+      "section": "G.449",
+      "page": 269
+    },
+    "decomp:T15": {
+      "section": "G.450",
+      "page": 269
+    },
+    "decomp:D433": {
+      "section": "G.451",
+      "page": 269
+    },
+    "decomp:D434": {
+      "section": "G.452",
+      "page": 269
+    },
+    "decomp:D435": {
+      "section": "G.453",
+      "page": 270
+    },
+    "decomp:D436": {
+      "section": "G.454",
+      "page": 270
+    },
+    "decomp:D437": {
+      "section": "G.455",
+      "page": 270
+    },
+    "decomp:D438": {
+      "section": "G.456",
+      "page": 270
+    },
+    "decomp:D439": {
+      "section": "G.457",
+      "page": 271
+    },
+    "decomp:D440": {
+      "section": "G.458",
+      "page": 271
+    },
+    "decomp:D441": {
+      "section": "G.459",
+      "page": 271
+    },
+    "decomp:D442": {
+      "section": "G.460",
+      "page": 271
+    },
+    "decomp:D443": {
+      "section": "G.461",
+      "page": 271
+    },
+    "decomp:D444": {
+      "section": "G.462",
+      "page": 272
+    },
+    "decomp:D445": {
+      "section": "G.463",
+      "page": 272
+    },
+    "decomp:D446": {
+      "section": "G.464",
+      "page": 272
+    },
+    "decomp:D447": {
+      "section": "G.465",
+      "page": 272
+    },
+    "decomp:D448": {
+      "section": "G.466",
+      "page": 273
+    },
+    "decomp:D449": {
+      "section": "G.467",
+      "page": 273
+    },
+    "decomp:D450": {
+      "section": "G.468",
+      "page": 273
+    },
+    "decomp:D451": {
+      "section": "G.469",
+      "page": 274
+    },
+    "decomp:D452": {
+      "section": "G.470",
+      "page": 274
+    },
+    "decomp:D453": {
+      "section": "G.471",
+      "page": 274
+    },
+    "decomp:D454": {
+      "section": "G.472",
+      "page": 274
+    },
+    "decomp:D455": {
+      "section": "G.473",
+      "page": 275
+    },
+    "decomp:D456": {
+      "section": "G.474",
+      "page": 275
+    },
+    "decomp:D457": {
+      "section": "G.475",
+      "page": 275
+    },
+    "decomp:D458": {
+      "section": "G.476",
+      "page": 275
+    },
+    "decomp:D459": {
+      "section": "G.477",
+      "page": 276
+    },
+    "decomp:D460": {
+      "section": "G.478",
+      "page": 276
+    },
+    "decomp:D461": {
+      "section": "G.479",
+      "page": 276
+    },
+    "decomp:D462": {
+      "section": "G.480",
+      "page": 277
+    },
+    "decomp:D463": {
+      "section": "G.481",
+      "page": 277
+    },
+    "decomp:D464": {
+      "section": "G.482",
+      "page": 277
+    },
+    "decomp:D465": {
+      "section": "G.483",
+      "page": 277
+    },
+    "decomp:D466": {
+      "section": "G.484",
+      "page": 277
+    },
+    "decomp:D467": {
+      "section": "G.485",
+      "page": 278
+    },
+    "decomp:D468": {
+      "section": "G.486",
+      "page": 278
+    },
+    "decomp:D469": {
+      "section": "G.487",
+      "page": 278
+    },
+    "decomp:D470": {
+      "section": "G.488",
+      "page": 278
+    },
+    "decomp:D471": {
+      "section": "G.489",
+      "page": 279
+    },
+    "decomp:D472": {
+      "section": "G.490",
+      "page": 279
+    },
+    "decomp:D473": {
+      "section": "G.491",
+      "page": 279
+    },
+    "decomp:D474": {
+      "section": "G.492",
+      "page": 279
+    },
+    "decomp:D475": {
+      "section": "G.493",
+      "page": 280
+    },
+    "decomp:T08": {
+      "section": "G.494",
+      "page": 280
+    },
+    "decomp:D476": {
+      "section": "G.495",
+      "page": 280
+    },
+    "decomp:D477": {
+      "section": "G.496",
+      "page": 280
+    },
+    "decomp:B05": {
+      "section": "G.497",
+      "page": 281
+    },
+    "decomp:D478": {
+      "section": "G.498",
+      "page": 281
+    },
+    "decomp:D479": {
+      "section": "G.499",
+      "page": 281
+    },
+    "decomp:D480": {
+      "section": "G.500",
+      "page": 281
+    },
+    "decomp:D481": {
+      "section": "G.501",
+      "page": 282
+    },
+    "decomp:D482": {
+      "section": "G.502",
+      "page": 282
+    },
+    "decomp:D483": {
+      "section": "G.503",
+      "page": 282
+    },
+    "decomp:D484": {
+      "section": "G.504",
+      "page": 282
+    },
+    "decomp:D485": {
+      "section": "G.505",
+      "page": 283
+    },
+    "decomp:D486": {
+      "section": "G.506",
+      "page": 283
+    },
+    "decomp:D487": {
+      "section": "G.507",
+      "page": 283
+    },
+    "decomp:D488": {
+      "section": "G.508",
+      "page": 284
+    },
+    "decomp:D489": {
+      "section": "G.509",
+      "page": 284
+    },
+    "decomp:D490": {
+      "section": "G.510",
+      "page": 284
+    },
+    "decomp:D491": {
+      "section": "G.511",
+      "page": 284
+    },
+    "decomp:D492": {
+      "section": "G.512",
+      "page": 285
+    },
+    "decomp:D493": {
+      "section": "G.513",
+      "page": 285
+    },
+    "decomp:D494": {
+      "section": "G.514",
+      "page": 285
+    },
+    "decomp:D495": {
+      "section": "G.515",
+      "page": 285
+    },
+    "decomp:D496": {
+      "section": "G.516",
+      "page": 286
+    },
+    "decomp:W06": {
+      "section": "G.517",
+      "page": 286
+    },
+    "decomp:D497": {
+      "section": "G.518",
+      "page": 286
+    },
+    "decomp:D498": {
+      "section": "G.519",
+      "page": 287
+    },
+    "decomp:D499": {
+      "section": "G.520",
+      "page": 287
+    },
+    "decomp:D500": {
+      "section": "G.521",
+      "page": 287
+    },
+    "decomp:D501": {
+      "section": "G.522",
+      "page": 287
+    },
+    "decomp:D502": {
+      "section": "G.523",
+      "page": 288
+    },
+    "decomp:T10": {
+      "section": "G.524",
+      "page": 288
+    },
+    "decomp:D503": {
+      "section": "G.525",
+      "page": 288
+    },
+    "decomp:W03": {
+      "section": "G.526",
+      "page": 288
+    },
+    "decomp:D504": {
+      "section": "G.527",
+      "page": 289
+    },
+    "decomp:D505": {
+      "section": "G.528",
+      "page": 289
+    },
+    "decomp:D506": {
+      "section": "G.529",
+      "page": 289
+    },
+    "decomp:D507": {
+      "section": "G.530",
+      "page": 289
+    },
+    "decomp:D508": {
+      "section": "G.531",
+      "page": 290
+    },
+    "decomp:D509": {
+      "section": "G.532",
+      "page": 290
+    },
+    "decomp:D510": {
+      "section": "G.533",
+      "page": 290
+    },
+    "decomp:D511": {
+      "section": "G.534",
+      "page": 290
+    },
+    "decomp:D512": {
+      "section": "G.535",
+      "page": 291
+    },
+    "decomp:D513": {
+      "section": "G.536",
+      "page": 291
+    },
+    "decomp:B07": {
+      "section": "G.537",
+      "page": 291
+    },
+    "decomp:D514": {
+      "section": "G.538",
+      "page": 291
+    },
+    "decomp:D515": {
+      "section": "G.539",
+      "page": 292
+    },
+    "decomp:D516": {
+      "section": "G.540",
+      "page": 292
+    },
+    "decomp:D517": {
+      "section": "G.541",
+      "page": 292
+    },
+    "decomp:D518": {
+      "section": "G.542",
+      "page": 292
+    },
+    "decomp:B06": {
+      "section": "G.543",
+      "page": 293
+    },
+    "decomp:D519": {
+      "section": "G.544",
+      "page": 293
+    },
+    "decomp:D520": {
+      "section": "G.545",
+      "page": 293
+    },
+    "decomp:W09": {
+      "section": "G.546",
+      "page": 293
+    },
+    "decomp:D521": {
+      "section": "G.547",
+      "page": 294
+    },
+    "decomp:D522": {
+      "section": "G.548",
+      "page": 294
+    },
+    "decomp:D523": {
+      "section": "G.549",
+      "page": 294
+    },
+    "decomp:D524": {
+      "section": "G.550",
+      "page": 294
+    },
+    "decomp:W10": {
+      "section": "G.551",
+      "page": 295
+    },
+    "decomp:D525": {
+      "section": "G.552",
+      "page": 295
+    },
+    "decomp:D526": {
+      "section": "G.553",
+      "page": 295
+    },
+    "decomp:D527": {
+      "section": "G.554",
+      "page": 295
+    },
+    "decomp:D528": {
+      "section": "G.555",
+      "page": 296
+    },
+    "decomp:W08": {
+      "section": "G.556",
+      "page": 296
+    },
+    "decomp:D529": {
+      "section": "G.557",
+      "page": 296
+    },
+    "decomp:D530": {
+      "section": "G.558",
+      "page": 296
+    },
+    "decomp:D531": {
+      "section": "G.559",
+      "page": 297
+    },
+    "decomp:D532": {
+      "section": "G.560",
+      "page": 297
+    },
+    "decomp:D533": {
+      "section": "G.561",
+      "page": 297
+    },
+    "decomp:D534": {
+      "section": "G.562",
+      "page": 297
+    },
+    "decomp:D535": {
+      "section": "G.563",
+      "page": 298
+    },
+    "decomp:D536": {
+      "section": "G.564",
+      "page": 298
+    },
+    "decomp:W13": {
+      "section": "G.565",
+      "page": 298
+    },
+    "decomp:D537": {
+      "section": "G.566",
+      "page": 298
+    },
+    "decomp:D538": {
+      "section": "G.567",
+      "page": 299
+    },
+    "decomp:D539": {
+      "section": "G.568",
+      "page": 299
+    },
+    "decomp:D540": {
+      "section": "G.569",
+      "page": 299
+    },
+    "decomp:D541": {
+      "section": "G.570",
+      "page": 299
+    },
+    "decomp:D542": {
+      "section": "G.571",
+      "page": 300
+    },
+    "decomp:D543": {
+      "section": "G.572",
+      "page": 300
+    },
+    "decomp:W12": {
+      "section": "G.573",
+      "page": 300
+    },
+    "decomp:D544": {
+      "section": "G.574",
+      "page": 300
+    },
+    "decomp:D545": {
+      "section": "G.575",
+      "page": 301
+    },
+    "decomp:D546": {
+      "section": "G.576",
+      "page": 301
+    },
+    "decomp:D547": {
+      "section": "G.577",
+      "page": 301
+    },
+    "decomp:B08": {
+      "section": "G.578",
+      "page": 301
+    },
+    "decomp:D548": {
+      "section": "G.579",
+      "page": 302
+    },
+    "decomp:D549": {
+      "section": "G.580",
+      "page": 302
+    },
+    "decomp:D550": {
+      "section": "G.581",
+      "page": 302
+    },
+    "decomp:D551": {
+      "section": "G.582",
+      "page": 302
+    },
+    "decomp:D552": {
+      "section": "G.583",
+      "page": 303
+    },
+    "decomp:W14": {
+      "section": "G.584",
+      "page": 303
+    },
+    "decomp:D553": {
+      "section": "G.585",
+      "page": 303
+    },
+    "decomp:D554": {
+      "section": "G.586",
+      "page": 303
+    },
+    "decomp:D555": {
+      "section": "G.587",
+      "page": 304
+    },
+    "decomp:D556": {
+      "section": "G.588",
+      "page": 304
+    },
+    "decomp:D557": {
+      "section": "G.589",
+      "page": 304
+    },
+    "decomp:D558": {
+      "section": "G.590",
+      "page": 304
+    },
+    "decomp:D559": {
+      "section": "G.591",
+      "page": 305
+    },
+    "decomp:D560": {
+      "section": "G.592",
+      "page": 305
+    },
+    "decomp:W15": {
+      "section": "G.593",
+      "page": 305
+    },
+    "decomp:D561": {
+      "section": "G.594",
+      "page": 305
+    },
+    "decomp:D562": {
+      "section": "G.595",
+      "page": 306
+    },
+    "decomp:D563": {
+      "section": "G.596",
+      "page": 306
+    },
+    "decomp:B09": {
+      "section": "G.597",
+      "page": 306
+    },
+    "decomp:D564": {
+      "section": "G.598",
+      "page": 306
+    },
+    "decomp:D565": {
+      "section": "G.599",
+      "page": 307
+    },
+    "decomp:D566": {
+      "section": "G.600",
+      "page": 307
+    },
+    "decomp:D567": {
+      "section": "G.601",
+      "page": 307
+    },
+    "decomp:D568": {
+      "section": "G.602",
+      "page": 307
+    },
+    "decomp:B10": {
+      "section": "G.603",
+      "page": 308
+    },
+    "decomp:P021": {
+      "section": "G.604",
+      "page": 308
+    },
+    "decomp:D569": {
+      "section": "G.605",
+      "page": 308
+    },
+    "decomp:D570": {
+      "section": "G.606",
+      "page": 308
+    },
+    "decomp:D571": {
+      "section": "G.607",
+      "page": 309
+    },
+    "decomp:D572": {
+      "section": "G.608",
+      "page": 309
+    },
+    "decomp:W16": {
+      "section": "G.609",
+      "page": 309
+    },
+    "decomp:D573": {
+      "section": "G.610",
+      "page": 309
+    },
+    "decomp:T25": {
+      "section": "G.611",
+      "page": 310
+    },
+    "decomp:T16": {
+      "section": "G.612",
+      "page": 310
+    },
+    "decomp:D574": {
+      "section": "G.613",
+      "page": 310
+    },
+    "decomp:D575": {
+      "section": "G.614",
+      "page": 310
+    },
+    "decomp:D576": {
+      "section": "G.615",
+      "page": 311
+    },
+    "decomp:D577": {
+      "section": "G.616",
+      "page": 311
+    },
+    "decomp:D578": {
+      "section": "G.617",
+      "page": 311
+    },
+    "decomp:D579": {
+      "section": "G.618",
+      "page": 311
+    },
+    "decomp:D580": {
+      "section": "G.619",
+      "page": 312
+    },
+    "decomp:D581": {
+      "section": "G.620",
+      "page": 312
+    },
+    "decomp:D582": {
+      "section": "G.621",
+      "page": 312
+    },
+    "decomp:T09": {
+      "section": "G.622",
+      "page": 312
+    },
+    "decomp:D583": {
+      "section": "G.623",
+      "page": 313
+    },
+    "lit:S001": {
+      "section": "G.35",
+      "page": 313
+    },
+    "lit:S002": {
+      "section": "G.35",
+      "page": 313
+    },
+    "lit:S003": {
+      "section": "G.35",
+      "page": 313
+    },
+    "lit:S004": {
+      "section": "G.35",
+      "page": 313
+    },
+    "lit:S005": {
+      "section": "G.35",
+      "page": 313
+    },
+    "lit:S006": {
+      "section": "G.35",
+      "page": 313
+    },
+    "lit:S007": {
+      "section": "G.35",
+      "page": 313
+    },
+    "lit:S008": {
+      "section": "G.35",
+      "page": 313
+    },
+    "lit:S009": {
+      "section": "G.35",
+      "page": 313
+    },
+    "lit:S010": {
+      "section": "G.35",
+      "page": 313
+    },
+    "lit:S011": {
+      "section": "G.35",
+      "page": 313
+    },
+    "lit:S012": {
+      "section": "G.35",
+      "page": 314
+    },
+    "lit:S013": {
+      "section": "G.35",
+      "page": 314
+    },
+    "lit:S014": {
+      "section": "G.35",
+      "page": 314
+    },
+    "lit:S015": {
+      "section": "G.35",
+      "page": 314
+    },
+    "lit:S016": {
+      "section": "G.35",
+      "page": 314
+    },
+    "lit:S017": {
+      "section": "G.35",
+      "page": 314
+    },
+    "lit:S018": {
+      "section": "G.35",
+      "page": 314
+    },
+    "lit:S019": {
+      "section": "G.35",
+      "page": 314
+    },
+    "lit:S020": {
+      "section": "G.35",
+      "page": 314
+    },
+    "lit:S021": {
+      "section": "G.35",
+      "page": 314
+    },
+    "lit:S022": {
+      "section": "G.35",
+      "page": 314
+    },
+    "lit:S023": {
+      "section": "G.35",
+      "page": 314
+    },
+    "lit:S024": {
+      "section": "G.35",
+      "page": 314
+    },
+    "lit:S025": {
+      "section": "G.35",
+      "page": 314
+    },
+    "lit:S026": {
+      "section": "G.35",
+      "page": 314
+    },
+    "lit:S027": {
+      "section": "G.35",
+      "page": 315
+    },
+    "lit:S028": {
+      "section": "G.35",
+      "page": 315
+    },
+    "lit:S029": {
+      "section": "G.35",
+      "page": 315
+    },
+    "lit:S030": {
+      "section": "G.35",
+      "page": 315
+    },
+    "lit:S031": {
+      "section": "G.35",
+      "page": 315
+    },
+    "lit:S032": {
+      "section": "G.35",
+      "page": 315
+    },
+    "lit:S033": {
+      "section": "G.35",
+      "page": 315
+    },
+    "lit:S034": {
+      "section": "G.35",
+      "page": 315
+    },
+    "lit:S035": {
+      "section": "G.35",
+      "page": 315
+    },
+    "lit:S036": {
+      "section": "G.35",
+      "page": 315
+    },
+    "lit:S037": {
+      "section": "G.35",
+      "page": 315
+    },
+    "lit:S038": {
+      "section": "G.35",
+      "page": 315
+    },
+    "lit:S039": {
+      "section": "G.35",
+      "page": 315
+    },
+    "lit:S040": {
+      "section": "G.35",
+      "page": 316
+    },
+    "lit:S041": {
+      "section": "G.35",
+      "page": 316
+    },
+    "lit:S042": {
+      "section": "G.35",
+      "page": 316
+    },
+    "lit:S043": {
+      "section": "G.35",
+      "page": 316
+    },
+    "lit:S044": {
+      "section": "G.35",
+      "page": 316
+    },
+    "lit:S045": {
+      "section": "G.35",
+      "page": 316
+    },
+    "lit:S046": {
+      "section": "G.35",
+      "page": 316
+    },
+    "lit:S047": {
+      "section": "G.35",
+      "page": 316
+    },
+    "lit:S048": {
+      "section": "G.35",
+      "page": 316
+    },
+    "lit:S049": {
+      "section": "G.35",
+      "page": 316
+    },
+    "lit:S050": {
+      "section": "G.35",
+      "page": 316
+    },
+    "lit:S051": {
+      "section": "G.35",
+      "page": 316
+    },
+    "lit:S052": {
+      "section": "G.35",
+      "page": 316
+    },
+    "lit:S053": {
+      "section": "G.35",
+      "page": 316
+    },
+    "lit:S054": {
+      "section": "G.35",
+      "page": 317
+    },
+    "lit:S055": {
+      "section": "G.35",
+      "page": 317
+    },
+    "lit:S056": {
+      "section": "G.35",
+      "page": 317
+    },
+    "lit:S057": {
+      "section": "G.35",
+      "page": 317
+    },
+    "lit:S058": {
+      "section": "G.35",
+      "page": 317
+    },
+    "lit:S059": {
+      "section": "G.35",
+      "page": 317
+    },
+    "lit:S060": {
+      "section": "G.35",
+      "page": 317
+    },
+    "lit:S061": {
+      "section": "G.35",
+      "page": 317
+    },
+    "lit:S062": {
+      "section": "G.35",
+      "page": 317
+    },
+    "lit:S063": {
+      "section": "G.35",
+      "page": 317
+    },
+    "lit:S064": {
+      "section": "G.35",
+      "page": 317
+    },
+    "lit:S065": {
+      "section": "G.35",
+      "page": 317
+    },
+    "lit:S066": {
+      "section": "G.35",
+      "page": 318
+    },
+    "lit:S067": {
+      "section": "G.35",
+      "page": 318
+    },
+    "lit:S068": {
+      "section": "G.35",
+      "page": 318
+    },
+    "app:r22-n003": {
+      "section": "G.36",
+      "page": 318
+    },
+    "app:r22-subjects": {
+      "section": "G.37",
+      "page": 327
+    },
+    "sec:r23annotations": {
+      "section": "H",
+      "page": 331
+    }
+  }
+}

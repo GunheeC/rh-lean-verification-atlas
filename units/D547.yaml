@@ -1,0 +1,122 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D547",
+  "title": "Identifying the host and level prime sums",
+  "track": {
+    "primary": "analytic",
+    "secondary": []
+  },
+  "statement": "For a level and host satisfying the explicit-formula record and a compatible additive-character functional, the group-model prime sum over the kept characters, with weight 1/(3o+1), equals the level prime sum at every real y.\n\\[\nG_m^A\\bigl(D,\\ell,K_{\\rm kept},(3o+1)^{-1},y\\bigr)=G_m^\\Lambda(y)\\qquad(y\\in\\mathbb R).\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Fix a level, axial host, test set, scale and parameters.",
+    "The host satisfies the explicit-formula record for those data and its additive-character functional is compatible."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.Comparison₂.gmA_eq",
+      "file": "Development/AutomorphicArithmetic/PrimitiveCosets/GmAEq.lean",
+      "line0": 61,
+      "line1": 149,
+      "sha256": "9a030e980281ef02d4c0e1b0803352edc89c15c88c56163027de3672e703c068",
+      "dominated": 242,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v5",
+      "section": "A1 · Equality of the kept-character sum",
+      "pages": [
+        19,
+        19
+      ],
+      "review_status": "pending_review",
+      "coverage": "Revised paper v5 exposition, pending independent review. The PDF link opens the release attachment after publication."
+    },
+    {
+      "document": "notes/units/D547_v4.md",
+      "section": "D547 · Identifying the two kept character sums",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-3 written exposition, pending independent review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "G.577 (decomp:D547)",
+      "pages": [
+        301,
+        301
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D547.tex",
+      "section": "decomp:D547",
+      "pages": []
+    },
+    {
+      "document": "paper2_v4",
+      "section": "Mechanism, §3",
+      "pages": [
+        16,
+        17
+      ],
+      "coverage": "Paper v4, pending independent review."
+    }
+  ],
+  "status": "Full",
+  "grade": "L1",
+  "reviews": [
+    "reviews/DB3_review_A.md"
+  ],
+  "prerequisites": [],
+  "size_pages": 2,
+  "open_questions": [
+    "How does the host-to-level character dictionary account for primitive inducing characters and the principal term at the same level?"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [
+    {
+      "review": "reviews/DB3_review_A.md",
+      "lines": [
+        108,
+        115
+      ],
+      "grade": "L1",
+      "verdict": "CONFIRMED",
+      "scope": "For every real scale with EAtH and compatibility, and every real argument, the kept-character arithmetic sum equals the level sum. The corrected preamble permits arbitrary scales. Statement comparison only."
+    }
+  ],
+  "paper_id": "D547",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "identifying-the-host-and-level-prime-sums",
+  "aliases": [
+    "gmA_eq",
+    "D547 Identifying the host and level prime sums"
+  ],
+  "background": [
+    "Characters of finite abelian groups",
+    "Smoothed prime sums"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.577 (decomp:D547)",
+    "pages": [
+      301,
+      301
+    ]
+  },
+  "question_sources": [
+    "reviews/R23_review.md"
+  ],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "review_status": "pending_review",
+  "summary": "For a compatible host, the weighted sum over its kept characters equals the level prime sum at every real argument. The identity transfers a bound obtained by finite-group averaging to the level quantity appearing in the zero-free criterion."
+}

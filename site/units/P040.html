@@ -1,0 +1,39 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>P040 · A Poitou–Tate length identity with compact coefficients · RH verification atlas</title><link rel="stylesheet" href="../atlas.css"><script>window.MathJax={tex:{inlineMath:[["$","$"]],displayMath:[["$$","$$"]],processEscapes:true},options:{ignoreHtmlClass:"no-math"}};</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script></head><body><header><div class="bar"><a class="brand" href="../index.html">RH verification atlas</a><nav aria-label="Atlas navigation"><a href="../index.html">Home</a> <a href="../STATUS.html">Status</a> <a href="../MAP.html">Map</a> <a href="../dashboard/index.html">Tracks</a> <a href="../lookup/search.html">Search declarations</a></nav></div></header><main><h1 id="p040--a-poitoutate-length-identity-with-compact-coefficients">P040 · A Poitou–Tate length identity with compact coefficients</h1>
+<p class="notice">AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved</p>
+<p>With finite-coefficient duality and local finiteness, a length identity relates global second cohomology to the first-cohomology localization kernel and local fixed vectors. It applies at two under the stated no-real-place condition and keeps the global correction term visible.</p>
+<p><code>a-poitoutate-length-identity-with-compact-coefficients</code> · <a href="../tracks/local/index.html">Local p-adic theory</a> · <a href="../tracks/ktheory/index.html">Algebraic K-theory and cohomology of arithmetic groups</a></p>
+<p><strong>Outlined</strong> · <strong>L1</strong> Statement matched to Lean · Record generated 2026-11-25 (no human check).</p>
+<div class="scroll"><table>
+<thead><tr><th>1 · Lean pinned</th><th>2 · Statement compared</th><th>3 · Prose</th><th>4 · Steps</th><th>5 · AI review</th><th>6 · Human</th></tr></thead>
+<tbody><tr><td>✓</td><td>✓</td><td>Outlined</td><td>3</td><td>–</td><td>0 of 3 steps</td></tr>
+</tbody></table></div>
+<p><a href="P040.check.html">Numbered proof and check records</a> · <a href="../PROGRESS.html">Progress and counting rules</a></p>
+<h2 id="statement">Statement</h2>
+<p>Let <span class="math">$F$</span> be a number field and <span class="math">$\ell$</span> a prime such that <span class="math">$\ell\ne2$</span> or <span class="math">$F$</span> has no real place. Assume finite-coefficient Poitou–Tate duality, local finiteness and local Tate duality. For every allowed set of local data <span class="math">$D$</span> and every <span class="math">$e\in\mathbb Z$</span>, with <span class="math">$A_e=(\mathbb Q_\ell/\mathbb Z_\ell)(-e)$</span>,</p>
+<div class="math display">$$\operatorname{length}H^2(G_{F,S},\mathbb Z_\ell(e+1)) +\nu_{\rm Gal}(\ell,F,|e|) =\operatorname{length}\operatorname{Sha}^1(D,A_e) +\sum_{w\in D.S}\operatorname{length}H^0(F_w,A_e).$$</div>
+<p>All lengths are extended <span class="math">$\mathbb Z_\ell$</span>-lengths; <span class="math">$\operatorname{Sha}^1$</span> is the kernel of the specified localization.</p>
+<h2 id="assumptions">Assumptions</h2>
+<ul><li>Take a number field, a prime <span class="math">$\ell$</span> odd or with no real places of the field, admissible local data and an integral twist.</li><li>Finite-coefficient Poitou–Tate duality, local finiteness and local Tate duality hold.</li></ul>
+<p>Sources for the assumptions · <a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a></p>
+<h2 id="where-to-read">Where to read</h2>
+<p>Blueprint v13 and papers v3–v5 are this atlas project’s own AI-written, unpublished drafts. They have no human review and were not written by the author of the Lean development. Blueprint v13, its separate cover, and paper v5 are distributed as assets of release v0.1.0. For v3 and v4 the atlas supplies selected excerpts and notes. <a href="../data/editions.json">Edition register</a></p>
+<ul><li><a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a>, 7.17, p. 82. Statement starts on the cited page.</li><li><a href="../notes/units/P040.tex">Manuscript source excerpt</a> · section <code>pn:P040</code></li></ul>
+<h2 id="evidence">Evidence</h2>
+<ul><li><a href="../reviews/R20_review.html">R20 review</a>, original line 60 — Statement exact. R20 local implication under its stated premises, not its prerequisite cones.</li><li><a href="../reviews/R20_review.html">R20 review</a>, original line 115 — Exact statement comparison. Named theorem at the specified hypotheses in the R20 manuscript.</li></ul>
+<p>Review records · <a href="../reviews/R20_review.html">R20 review</a></p>
+<h2 id="lean-declarations">Lean declarations</h2>
+<ul><li><code>UpperTheory.V.LDataCardLeFinrank.vFormula_of_classicalTheorems</code>  <br><a href="https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/GaloisCohomologyLength/Formula.lean#L15-L24"><code>Formula.lean</code></a>, lines 15–24 · 51 dominated lines · SHA-256 <code>7c56f35b41ca</code>.</li></ul>
+<p><a href="P040.yaml">Machine record and full declaration hashes</a> · <a href="../lookup/declarations.html">Declaration lookup</a></p>
+<h2 id="reading-prerequisites">Reading prerequisites</h2>
+<p>Background · Poitou–Tate duality · Tate twists · Local cohomology.</p>
+<ul><li><a href="D006.html">D006 · Local Bloch–Kato, Tate and Euler identities</a> · statement-reading</li></ul>
+<p><a href="../data/round3_prerequisites.json">Evidence and definitions of reading links</a></p>
+<h2 id="open-questions">Open questions</h2>
+<p>None recorded.</p>
+<h2 id="graph-connections">Graph connections</h2>
+<p>Arrows may connect either a unit’s main declaration or an indexed member.</p>
+<p><strong>Uses</strong> · No recorded edge.</p>
+<p><strong>Used by</strong> · <a href="P013.html">P013</a> · <a href="W05.html">W05</a></p>
+<p><a href="../data/unit_graph.json">Declaration witnesses and graph scope</a></p>
+<p>Lookup aliases · <code>A compact-coefficient length formula</code>, <code>P040 A Poitou–Tate length identity with compact coefficients</code></p>
+<p>&lt;!-- Unit metadata SHA-256 128cd760b65c0466ca353ad0fb1fd52d889e901de495a543d8f5e9e9652562d2 --&gt;</p></main><footer><a href="../help.html">Using the local edition</a></footer></body></html>

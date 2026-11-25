@@ -1,0 +1,53 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit P038. Local manuscript v3, item 7.15, heading on printed PDF p. 81.
+% UpperTheory.V.KT.tors_le
+% paper2/inputs_one.tex:662–702. Verbatim excerpt; SHA-256 e45b1510782769c1d1543a8f260039a4ca2b72029957618c70d63e6a49e400d7.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+\noindent\nolinkurl{UpperTheory.V.KT.tors_le} --- in-repo constant (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/HermiteNormalForms/Assembly.lean:25--30}); not compared.\par
+% End of atlas edition annotation.
+
+\begin{formalstatement}[All-prime torsion from faces and stabilizers]\label{pn:P038}
+For every totally complex number field \(L\) and \(N,m\ge0\), let
+\(d=[L:\mathbb Q]N\), \(s=3^{dN}\), and \(A=\mathrm{orbBound}(L,N,m)\),
+the uniform face-orbit bound of the integral Hermitian complex through
+degree \(m\). Then \(T=H_m(G_N,\mathbb Z)_{\rm tors}\) is finite with
+\[
+                    |T|\le(m+2)^A s^{m A s^m}.
+\]
+\end{formalstatement}\nodestatus{P038}
+\begin{outline}
+Blueprint Z2.K7~\bploc{prop:P-r4-k7} constructs the face complex from normal cones of
+vertices of the polyhedron of Hermitian forms with
+\(\sum_{v\mid\infty} y_v^*h_v y_v\ge1\) for each nonzero integral
+lattice vector \(y\). Their intersections in the positive dual
+cone are convex and cover that cone locally finitely. The augmented
+face chains \(C_i=\mathbb Z[X_i]\) are exact. The integral orbit
+calculation bounds the number of orbits in degree \(i\le m\) by \(A\).
+Each stabilizer fixes a positive definite form, hence is finite.
+Reduction into the matrix ring modulo 3 embeds any such finite
+subgroup, giving order at most \(3^{dN}=s\). The case \(N=0\) has
+trivial group and already satisfies the bound.
+
+A transitive face orbit with stabilizer \(J\) contributes \(H_j(J,\mathbb Z)\)
+to \(H_j(G_N,C_i)\) by induction from \(J\). For \(j>0\) the group
+is killed by \(|J|\), and its bar chains in degree \(j\) have rank
+\(|J|^j\). Thus \(|H_j(G_N,C_i)|\le s^{As^j}\). Dimension-shift
+along the exact augmented complex toward degree zero. In each step
+the kernel is an image of the corresponding \(H_j(G_N,C_i)\).
+The last cokernel is computed by the boundary map between face
+coinvariants. Its target is free of rank at most \(A\), and each
+column has \(\ell^1\)-norm at most \(m+2\) by the face formula.
+Projecting independent columns to a nonsingular minor and applying
+Hadamard bounds the saturation index by \((m+2)^A\). This also
+works with infinitely many source columns. Multiplying the bounds
+and using \(\sum_{j=1}^m s^j\le ms^m\) proves the inequality.
+\end{outline}
+
+Soulé's \emph{A bound for the torsion in the \(K\)-theory of algebraic
+integers}, \S4.1, Theorem~1, assumes \(N\ge2\) and removes the prime
+factors \(p\le1+\max(r,N)\) from the order of the torsion in \(H_k(\mathrm{GL}_N(\mathcal O_F),\mathbf Z)\), as indicated by its operator \(\mathrm{card}_{1+\sup(r,N)}\) (p.~778). Here finite stabilizer homology provides integral
+control at those primes as well. \cite{r21-soule}

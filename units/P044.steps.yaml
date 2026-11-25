@@ -1,0 +1,159 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "P044",
+  "edition_sha256": "24388ecb6fcee9bd60eefed3d7ef3382795dc82efaedc9117d2095d4e52f0edc",
+  "note_sha256": "31ce229b11ffa052da186a5e9890f07cd9e88577b5c1dde439e155323b25ec8e",
+  "statement_sha256": "1e78d6c789760ec98e4b713db3e25eb6fbe56cdf7c407da48cfc3a2fb6becbcb",
+  "sources": [
+    {
+      "path": "notes/units/P044.tex",
+      "sha256": "31ce229b11ffa052da186a5e9890f07cd9e88577b5c1dde439e155323b25ec8e"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Normalization supplies the row and column maps to which the ordered-algebra estimate applies.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "P041",
+        "P043",
+        "input: normalized design"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.MainNotions.N.K.Closed.theorem_n5_from_inputs",
+          "file": "Formalism/AdmissibleDesigns/StatementOneBFromUnramified.lean",
+          "line0": 142,
+          "line1": 175
+        }
+      ],
+      "source": "notes/units/P044.tex",
+      "anchor": "Use the design",
+      "source_lines": [
+        16,
+        33
+      ],
+      "claim_sha256": "af3b73b7bbd1fe2eb7d2b4cc6e94bb631c8f16e474b462a534c98170de776abd",
+      "passage_sha256": "88b3d6d4ece435a54b99e02ca5daea19eee0f14bf3cff84bc875fad3214d3602",
+      "sha256": "afda357b0b9ac1ec0f49f39f221e51b811d328e3c3fb9d7d1ce13ee93fd145ee",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The indicated multiple of a finite column class has a lift transported back to the original coefficient model.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S1",
+        "input: column lifting bound"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.MainNotions.N.K.Closed.theorem_n5_from_inputs",
+          "file": "Formalism/AdmissibleDesigns/StatementOneBFromUnramified.lean",
+          "line0": 142,
+          "line1": 175
+        }
+      ],
+      "source": "notes/units/P044.tex",
+      "anchor": "Apply the column hypothesis",
+      "source_lines": [
+        16,
+        33
+      ],
+      "claim_sha256": "000ae131ffb21d357d23fd960a96389bae537e8d9c5f969a0e1e300c1462d5dd",
+      "passage_sha256": "88b3d6d4ece435a54b99e02ca5daea19eee0f14bf3cff84bc875fad3214d3602",
+      "sha256": "0b809c45947b340bbd9a19c0cb10ebf724ae4dc30f327ade6aefbeb985616be9",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The zero block, the first character and the higher characters contribute their separate bounded costs.",
+      "kind": "inequality",
+      "uses": [
+        "S1",
+        "S2",
+        "input: stated block length estimates"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.MainNotions.N.K.Closed.theorem_n5_from_inputs",
+          "file": "Formalism/AdmissibleDesigns/StatementOneBFromUnramified.lean",
+          "line0": 142,
+          "line1": 175
+        }
+      ],
+      "source": "notes/units/P044.tex",
+      "anchor": "The first character costs",
+      "source_lines": [
+        35,
+        39
+      ],
+      "claim_sha256": "2976d42863c4750095763207b82c7e472bb4184b54095286b00030b8415abc0f",
+      "passage_sha256": "e2b267cfcc88ac94d6a9786a73866e490f7e6897051ddf5ed7999979ab01dcd8",
+      "sha256": "c17c059cc706bcbd3744ae55c32e5e14e3c83fe46ef7fe41658b35771c242e9f",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "Summing the block costs and dividing by the positive length conversion factor yields the normalized index estimate.",
+      "kind": "inequality",
+      "uses": [
+        "S3",
+        "input: finiteness of the displayed lengths"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.MainNotions.N.K.Closed.theorem_n5_from_inputs",
+          "file": "Formalism/AdmissibleDesigns/StatementOneBFromUnramified.lean",
+          "line0": 142,
+          "line1": 175
+        }
+      ],
+      "source": "notes/units/P044.tex",
+      "anchor": "Adding these contributions",
+      "source_lines": [
+        35,
+        39
+      ],
+      "claim_sha256": "16f45e5b9fa27a8faf9be673db94d0796ce43955dcc6616192a6a4255a750c4a",
+      "passage_sha256": "e2b267cfcc88ac94d6a9786a73866e490f7e6897051ddf5ed7999979ab01dcd8",
+      "sha256": "481631d8e695de3288c1976ed22bcd3f81170764422cd4bf09840377f177f5e5",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "e97edf41007d3d26b8dc4821c0f47e6d73f6f1e76e7391f2538ef910acab4781",
+      "sources": [
+        {
+          "path": "notes/units/P044.tex",
+          "sha256": "5b4d09427e76c683362847721bf089e93f9a301e953803ed771466fb3a1e4734"
+        }
+      ],
+      "statement_sha256": "1e78d6c789760ec98e4b713db3e25eb6fbe56cdf7c407da48cfc3a2fb6becbcb",
+      "steps": {
+        "S1": "afda357b0b9ac1ec0f49f39f221e51b811d328e3c3fb9d7d1ce13ee93fd145ee",
+        "S2": "0b809c45947b340bbd9a19c0cb10ebf724ae4dc30f327ade6aefbeb985616be9",
+        "S3": "c17c059cc706bcbd3744ae55c32e5e14e3c83fe46ef7fe41658b35771c242e9f",
+        "S4": "481631d8e695de3288c1976ed22bcd3f81170764422cd4bf09840377f177f5e5"
+      },
+      "step_texts": {
+        "S1": "Normalization supplies the row and column maps to which the ordered-algebra estimate applies.",
+        "S2": "The indicated multiple of a finite column class has a lift transported back to the original coefficient model.",
+        "S3": "The zero block, the first character and the higher characters contribute their separate bounded costs.",
+        "S4": "Summing the block costs and dividing by the positive length conversion factor yields the normalized index estimate."
+      },
+      "step_passages": {
+        "S1": "88b3d6d4ece435a54b99e02ca5daea19eee0f14bf3cff84bc875fad3214d3602",
+        "S2": "88b3d6d4ece435a54b99e02ca5daea19eee0f14bf3cff84bc875fad3214d3602",
+        "S3": "e2b267cfcc88ac94d6a9786a73866e490f7e6897051ddf5ed7999979ab01dcd8",
+        "S4": "e2b267cfcc88ac94d6a9786a73866e490f7e6897051ddf5ed7999979ab01dcd8"
+      }
+    }
+  ]
+}

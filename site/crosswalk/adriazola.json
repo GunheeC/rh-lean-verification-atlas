@@ -1,0 +1,3370 @@
+{
+  "source_id": "adriazola",
+  "lean_commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "matching_source_revision": "aa9c86bf2a7d29b08575641fecea19a2a603e87c",
+  "matching_pdf_sha256": "8ced945d3a2fcf7fb7a2a760db6859416cd8db2ed11617d8bc28b43b82ed3a94",
+  "dependency_graph_sha256": "be8105049e470b3ef224a2b234a0cac6395f8fb1d983c8200416f116ba15abf6",
+  "dependency_routes": {
+    "UpperTheory.Comparison₂.hostFactsS": {
+      "unit_id": "D014",
+      "path": [
+        "UpperTheory.Comparison₂.hostFactsS"
+      ]
+    },
+    "UpperTheory.GalC.linkN_of_twGood_galoisPreconditions": {
+      "unit_id": "D427",
+      "path": [
+        "UpperTheory.GalC.linkN_of_twGood_galoisPreconditions"
+      ]
+    },
+    "UpperTheory.Top.hostOfField": {
+      "unit_id": "D511",
+      "path": [
+        "UpperTheory.Top.hostOfField"
+      ]
+    },
+    "GlobalTheory.EX.exists_ranks_rankVal_frame": {
+      "unit_id": "D513",
+      "path": [
+        "GlobalTheory.EX.exists_ranks_rankVal_frame"
+      ]
+    },
+    "UpperTheory.Comparison₂.gmA_eq": {
+      "unit_id": "D547",
+      "path": [
+        "UpperTheory.Comparison₂.gmA_eq"
+      ]
+    },
+    "UpperTheory.Comparison₂.charsA": {
+      "unit_id": "D548",
+      "path": [
+        "UpperTheory.Comparison₂.charsA"
+      ]
+    },
+    "UpperTheory.Comparison₂.sigA_le": {
+      "unit_id": "D549",
+      "path": [
+        "UpperTheory.Comparison₂.sigA_le"
+      ]
+    },
+    "Deduction.CharacterBalanceMoves.core": {
+      "unit_id": "D561",
+      "path": [
+        "Deduction.CharacterBalanceMoves.core"
+      ]
+    },
+    "Formalism.LFunctionChainParameters.ThickSetMeanBounds.derivative_integral_all": {
+      "unit_id": "D562",
+      "path": [
+        "Formalism.LFunctionChainParameters.ThickSetMeanBounds.derivative_integral_all"
+      ]
+    },
+    "Formalism.LFunctionChainParameters.ThickSetMeanBounds.proposition_size_bound": {
+      "unit_id": "D563",
+      "path": [
+        "Formalism.LFunctionChainParameters.ThickSetMeanBounds.proposition_size_bound"
+      ]
+    },
+    "Formalism.LFunctionChainParameters.LChain.errX5at_le": {
+      "unit_id": "D567",
+      "path": [
+        "Formalism.LFunctionChainParameters.LChain.errX5at_le"
+      ]
+    },
+    "UpperTheory.Comparison₂.level_gm_le_on_family_scales": {
+      "unit_id": "P017",
+      "path": [
+        "UpperTheory.Comparison₂.level_gm_le_on_family_scales"
+      ]
+    },
+    "UpperTheory.Comparison₂.formB": {
+      "unit_id": "P018",
+      "path": [
+        "UpperTheory.Comparison₂.formB"
+      ]
+    },
+    "Deduction.landau_window": {
+      "unit_id": "P022",
+      "path": [
+        "Deduction.landau_window"
+      ]
+    },
+    "Deduction.zeroFree_of_rpow_window": {
+      "unit_id": "P023",
+      "path": [
+        "Deduction.zeroFree_of_rpow_window"
+      ]
+    },
+    "UpperTheory.V.KT.tors_le": {
+      "unit_id": "P038",
+      "path": [
+        "UpperTheory.V.KT.tors_le"
+      ]
+    },
+    "UpperTheory.V.ZK.torsAll": {
+      "unit_id": "P039",
+      "path": [
+        "UpperTheory.V.ZK.torsAll"
+      ]
+    },
+    "Formalism.MainNotions.N.K.Closed.theorem_n5_from_inputs": {
+      "unit_id": "P044",
+      "path": [
+        "Formalism.MainNotions.N.K.Closed.theorem_n5_from_inputs"
+      ]
+    },
+    "Formalism.MainNotions.FormalGroupSystem.Pf.hecke_place_bound": {
+      "unit_id": "P045",
+      "path": [
+        "Formalism.MainNotions.FormalGroupSystem.Pf.hecke_place_bound"
+      ]
+    },
+    "UpperTheory.Lit.every_character_of_theta_integrals_local_matching": {
+      "unit_id": "T01",
+      "path": [
+        "UpperTheory.Lit.every_character_of_theta_integrals_local_matching"
+      ]
+    },
+    "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound": {
+      "unit_id": "T02",
+      "path": [
+        "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound"
+      ]
+    },
+    "GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt": {
+      "unit_id": "T03",
+      "path": [
+        "GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt"
+      ]
+    },
+    "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt": {
+      "unit_id": "T13",
+      "path": [
+        "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt"
+      ]
+    },
+    "PositivityTheory.HtPt.Ah.deep_slim_use": {
+      "unit_id": "T14",
+      "path": [
+        "PositivityTheory.HtPt.Ah.deep_slim_use"
+      ]
+    },
+    "UpperTheory.V.ZK.lemmaK_litN_alt": {
+      "unit_id": "W05",
+      "path": [
+        "UpperTheory.V.ZK.lemmaK_litN_alt"
+      ]
+    },
+    "UpperTheory.V.HV.DescentVanishingReductions.sp4In0_alt": {
+      "unit_id": "W06",
+      "path": [
+        "UpperTheory.V.HV.DescentVanishingReductions.sp4In0_alt"
+      ]
+    },
+    "UpperTheory.V.Z.Kato.WeilSphericalRecords.katoTwoW_of_printsH": {
+      "unit_id": "W07",
+      "path": [
+        "UpperTheory.V.Z.Kato.WeilSphericalRecords.katoTwoW_of_printsH"
+      ]
+    },
+    "UpperTheory.V.Z.J.count_i_of_printed_bound_k_kato_automorphy": {
+      "unit_id": "W08",
+      "path": [
+        "UpperTheory.V.Z.J.count_i_of_printed_bound_k_kato_automorphy"
+      ]
+    },
+    "UpperTheory.V.HV.vwin_of_counts": {
+      "unit_id": "W13",
+      "path": [
+        "UpperTheory.V.HV.vwin_of_counts"
+      ]
+    },
+    "UpperTheory.V.Odd.thmBcFree_of": {
+      "unit_id": "W14",
+      "path": [
+        "UpperTheory.V.Odd.thmBcFree_of"
+      ]
+    },
+    "Formalism.MainNotions.LinkN": {
+      "unit_id": "B05",
+      "path": [
+        "UpperTheory.Top.shape_closed_link_n_of_green",
+        "Formalism.MainNotions.LinkN"
+      ]
+    },
+    "UpperTheory.Top.topDesWin": {
+      "unit_id": "B05",
+      "path": [
+        "UpperTheory.Top.shape_closed_link_n_of_green",
+        "UpperTheory.Top.topDesWin"
+      ]
+    },
+    "UpperTheory.Top.VWinAt": {
+      "unit_id": "B07",
+      "path": [
+        "UpperTheory.Top.supplyChi",
+        "UpperTheory.Top.VWinAt"
+      ]
+    },
+    "GlobalTheory.EX.RankVal": {
+      "unit_id": "B07",
+      "path": [
+        "UpperTheory.Top.supplyChi",
+        "GlobalTheory.EX.RankVal"
+      ]
+    },
+    "QH.pairEx": {
+      "unit_id": "D510",
+      "path": [
+        "UpperTheory.T3.supplyOfAdmOf",
+        "QH.pairEx"
+      ]
+    },
+    "UpperTheory.V.HV.GD": {
+      "unit_id": "D528",
+      "path": [
+        "UpperTheory.V.Z.J.oneCharU_of_katoTwoW_rig_admI_automorphy",
+        "UpperTheory.V.HV.GD"
+      ]
+    },
+    "UpperTheory.V.U3.CorGK": {
+      "unit_id": "D532",
+      "path": [
+        "UpperTheory.V.U3.countI",
+        "UpperTheory.V.U3.CorGK"
+      ]
+    },
+    "Formalism.LFunctionChainParameters.ThickSetMeanBounds.lipschitz_weight_all": {
+      "unit_id": "D561",
+      "path": [
+        "Deduction.CharacterBalanceMoves.core",
+        "Formalism.LFunctionChainParameters.ThickSetMeanBounds.lipschitz_weight_all"
+      ]
+    },
+    "Deduction.ch_balance": {
+      "unit_id": "D561",
+      "path": [
+        "Deduction.CharacterBalanceMoves.core",
+        "Deduction.ch_balance"
+      ]
+    },
+    "UpperTheory.Top.VWin": {
+      "unit_id": "P012",
+      "path": [
+        "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+        "UpperTheory.Top.VWin"
+      ]
+    },
+    "Formalism.MainNotions.ChainTied": {
+      "unit_id": "P016",
+      "path": [
+        "UpperTheory.Top.zeroFreeAll_of_topG",
+        "Formalism.MainNotions.ChainTied"
+      ]
+    },
+    "Formalism.HC.ChebyshevInequalityOnWindows": {
+      "unit_id": "P017",
+      "path": [
+        "UpperTheory.Comparison₂.level_gm_le_on_family_scales",
+        "Formalism.HC.ChebyshevInequalityOnWindows"
+      ]
+    },
+    "UpperTheory.V.LemmaK": {
+      "unit_id": "P020",
+      "path": [
+        "UpperTheory.V.HV.Core.of_four_alt",
+        "UpperTheory.V.LemmaK"
+      ]
+    },
+    "GlobalTheory.CompanionTheory.Ar.Plug.DeepStR": {
+      "unit_id": "T14",
+      "path": [
+        "PositivityTheory.HtPt.Ah.deep_slim_use",
+        "GlobalTheory.CompanionTheory.Ar.Plug.DeepStR"
+      ]
+    },
+    "Formalism.L2.G.Pend.LTIso": {
+      "unit_id": "Z4.2.02",
+      "path": [
+        "GlobalTheory.TwV.joint_at_nonempty",
+        "Formalism.L2.G.Pend.LTIso"
+      ]
+    },
+    "Formalism.MainNotions.LinkN_at": {
+      "unit_id": "B05",
+      "path": [
+        "UpperTheory.Top.shape_closed_link_n_of_green",
+        "Formalism.MainNotions.LinkN",
+        "Formalism.MainNotions.LinkN_at"
+      ]
+    },
+    "Formalism.MainNotions.LinkDIV": {
+      "unit_id": "B05",
+      "path": [
+        "UpperTheory.Top.shape_closed_link_n_of_green",
+        "Formalism.MainNotions.LinkDIVt",
+        "Formalism.MainNotions.LinkDIV"
+      ]
+    },
+    "GlobalTheory.CovTop.HSAt": {
+      "unit_id": "T15",
+      "path": [
+        "SelfIntersectionVolumeEstimates.topCovolG_alt_alt",
+        "GlobalTheory.CovTop.CoverHeightSum",
+        "GlobalTheory.CovTop.HSAt"
+      ]
+    },
+    "UpperTheory.V.ZK.lemmaK": {
+      "unit_id": "W05",
+      "path": [
+        "UpperTheory.V.ZK.lemmaK_litN_alt",
+        "UpperTheory.V.ZK.lemmaK_of_litN_alt",
+        "UpperTheory.V.ZK.lemmaK"
+      ]
+    },
+    "UpperTheory.V.U3.PropGK": {
+      "unit_id": "W08",
+      "path": [
+        "UpperTheory.V.Z.J.count_i_of_printed_bound_k_kato_automorphy",
+        "UpperTheory.V.U3.corGK",
+        "UpperTheory.V.U3.PropGK"
+      ]
+    },
+    "Formalism.MainNotions.LinkDIV_at": {
+      "unit_id": "B05",
+      "path": [
+        "UpperTheory.Top.shape_closed_link_n_of_green",
+        "Formalism.MainNotions.LinkDIVt",
+        "Formalism.MainNotions.LinkDIV",
+        "Formalism.MainNotions.LinkDIV_at"
+      ]
+    },
+    "Formalism.InvariantFactorPaths.G7.Top.betaIsG": {
+      "unit_id": "P045",
+      "path": [
+        "Formalism.MainNotions.FormalGroupSystem.Pf.hecke_place_bound",
+        "Formalism.MainNotions.FormalGroupSystem.Pf.ea_restSU",
+        "Formalism.MainNotions.FormalGroupSystem.Pf.restBeta",
+        "Formalism.InvariantFactorPaths.G7.Top.betaIsG"
+      ]
+    },
+    "UpperTheory.V.ZK.lemmaK_of_steps": {
+      "unit_id": "W05",
+      "path": [
+        "UpperTheory.V.ZK.lemmaK_litN_alt",
+        "UpperTheory.V.ZK.lemmaK_of_litN_alt",
+        "UpperTheory.V.ZK.lemmaK",
+        "UpperTheory.V.ZK.lemmaK_of_steps"
+      ]
+    },
+    "Formalism.MainNotions.BesselId": {
+      "unit_id": "B05",
+      "path": [
+        "UpperTheory.Top.shape_closed_link_n_of_green",
+        "Formalism.MainNotions.LinkDIVt",
+        "Formalism.MainNotions.LinkDIV",
+        "Formalism.MainNotions.LinkDIV_at",
+        "Formalism.MainNotions.BesselId"
+      ]
+    },
+    "Formalism.InvariantFactorPaths.G7.BetaIsG": {
+      "unit_id": "P045",
+      "path": [
+        "Formalism.MainNotions.FormalGroupSystem.Pf.hecke_place_bound",
+        "Formalism.MainNotions.FormalGroupSystem.Pf.ea_restSU",
+        "Formalism.MainNotions.FormalGroupSystem.Pf.restBeta",
+        "Formalism.InvariantFactorPaths.G7.Top.betaIsG",
+        "Formalism.InvariantFactorPaths.G7.BetaIsG"
+      ]
+    },
+    "Formalism.IndefR.CxPass.NearConstantMultiplicities": {
+      "unit_id": "B05",
+      "path": [
+        "UpperTheory.Top.shape_closed_link_n_of_green",
+        "Formalism.L2.Top4Wire2.DefRowsFAlt",
+        "Formalism.IndefR.Links.PassIn3",
+        "Formalism.IndefR.Cx.CxPassIn3",
+        "Formalism.IndefR.Cx.CxPassIn3.mk",
+        "Formalism.IndefR.CxPass.NearConstantMultiplicities"
+      ]
+    },
+    "Formalism.MainNotions.G.LPprime": {
+      "unit_id": "P046",
+      "path": [
+        "GlobalTheory.TwV.site_cmpLite_siteAdm",
+        "Formalism.BasicNotions.Extra",
+        "Formalism.BasicNotions.Extra.mk",
+        "Formalism.MainNotions.G.KapIDef",
+        "Formalism.MainNotions.G.kapISet",
+        "Formalism.MainNotions.G.LPprime"
+      ]
+    },
+    "GlobalTheory.LoopRowsCloseGap.loop_rows_closed_gap": {
+      "unit_id": "T04",
+      "path": [
+        "GlobalTheory.Fc.AllAtMemberStage0.allRows_of_open0_alt",
+        "GlobalTheory.LocalRows.lg1_sLp_sO_hTF",
+        "GlobalTheory.LocalRows.sLp_sO_hTF_of_siegelWeil",
+        "GlobalTheory.LocalRows.at_choice_alt",
+        "GlobalTheory.LoopRowsByName.loopRows_of_rowsFinDim_alt",
+        "GlobalTheory.T.loopRows_of_large_gap_discreteSeries",
+        "GlobalTheory.LoopRowsCloseGap.loop_rows_closed_gap"
+      ]
+    },
+    "Formalism.MainNotions.FormalGroupSystem.Pf.hk_point": {
+      "unit_id": "B06",
+      "path": [
+        "GlobalTheory.Top.closed_family_admissible_twist_link_alt",
+        "Formalism.L2.G.ServT.closed_servF_of_servT_of_dGamSize",
+        "Formalism.MainNotions.Pk.sum_over_primes_service",
+        "Formalism.MainNotions.FormalGroupSystem.Pf.stmt_proved",
+        "Formalism.MainNotions.FormalGroupSystem.Pf.packet_statements_hold",
+        "Formalism.MainNotions.FormalGroupSystem.Pf.prv_and_kernel_commutation_up_to_units_of_rests",
+        "Formalism.MainNotions.FormalGroupSystem.Pf.heckeCondition_of_adm",
+        "Formalism.MainNotions.FormalGroupSystem.Pf.hk_point"
+      ]
+    },
+    "Formalism.MainNotions.FormalGroupSystem.Pf.Cii": {
+      "unit_id": "B06",
+      "path": [
+        "GlobalTheory.Top.closed_family_admissible_twist_link_alt",
+        "Formalism.L2.G.ServT.closed_servF_of_servT_of_dGamSize",
+        "Formalism.MainNotions.Pk.sum_over_primes_service",
+        "Formalism.MainNotions.FormalGroupSystem.Pf.stmt_proved",
+        "Formalism.MainNotions.FormalGroupSystem.Pf.packet_statements_hold",
+        "Formalism.MainNotions.FormalGroupSystem.Pf.prv_and_kernel_commutation_up_to_units_of_rests",
+        "Formalism.MainNotions.FormalGroupSystem.Pf.alternate_expansion_of_relations",
+        "Formalism.MainNotions.FormalGroupSystem.Pf.Cii"
+      ]
+    },
+    "Formalism.L2.Col.Br.xiBr": {
+      "unit_id": "P048",
+      "path": [
+        "GlobalTheory.PerTwClose.twistedPeriodAdmissible_of_rowInt",
+        "GlobalTheory.PerTwClose.perDecTwT_of_std",
+        "GlobalTheory.Mem.Col2.PerIn.per",
+        "GlobalTheory.Mem.Col2.PerIn.br",
+        "Formalism.L2.Col.Br.brStdP",
+        "Formalism.L2.Col.Br.brConst",
+        "Formalism.L2.Col.Br.kapBr",
+        "Formalism.L2.Col.Br.xiBr"
+      ]
+    },
+    "GlobalTheory.Unf.ContrLaw": {
+      "unit_id": "D024",
+      "path": [
+        "GlobalTheory.T.twisted_theta_integral_unfolds",
+        "GlobalTheory.RowUnfLast.twisted_theta_integral_unfolding",
+        "GlobalTheory.T.twisted_iterate_chain",
+        "GlobalTheory.RowChain.twisted_iterate_eq_linear",
+        "GlobalTheory.RowChain.twisted_iterate_eventually_large",
+        "GlobalTheory.RowChain.pure_core",
+        "GlobalTheory.RowChain.iter_colPer",
+        "GlobalTheory.RowChain.iter_chain",
+        "GlobalTheory.Unf.ContrLaw"
+      ]
+    },
+    "GlobalTheory.Unf.FlatLaw": {
+      "unit_id": "D024",
+      "path": [
+        "GlobalTheory.T.twisted_theta_integral_unfolds",
+        "GlobalTheory.RowUnfLast.twisted_theta_integral_unfolding",
+        "GlobalTheory.T.singleCosetOffTwistPlaces_largeDepth",
+        "GlobalTheory.RowOneCos.offAt_big",
+        "GlobalTheory.RowOneCos.offAt_of_shape",
+        "GlobalTheory.RowOneCos.inBig_fb",
+        "GlobalTheory.FlatLawsDuality.flatLaws_all",
+        "GlobalTheory.T.flatThetaMaps_preserve_thetaFunctions",
+        "GlobalTheory.Unf.FlatLaw"
+      ]
+    },
+    "GlobalTheory.KernelSpan.kernel_law": {
+      "unit_id": "T05",
+      "path": [
+        "GlobalTheory.Fc.S0.ontoX_and_lamLow_of_unitaryGroupHypotheses'",
+        "GlobalTheory.BigOn.ontoX_of_hypotheses_alt_alt",
+        "GlobalTheory.BigOn.compareOffOwn_atRuns_alt",
+        "GlobalTheory.ClassSumSpanCore.classSumsSpan_core",
+        "GlobalTheory.ClassSumSpanCore.classSumsSpan_of_pins_core",
+        "GlobalTheory.T.thetaKernel_finitePoint_mem_span_rationalFormLifts",
+        "GlobalTheory.KernelSpanCore.kernel_mem_span_core",
+        "GlobalTheory.KernelSpan.exists_integral",
+        "GlobalTheory.KernelSpan.kernel_law"
+      ]
+    },
+    "GlobalTheory.T.weil_datum_product_compatibility": {
+      "unit_id": "D024",
+      "path": [
+        "GlobalTheory.T.twisted_theta_integral_unfolds",
+        "GlobalTheory.RowUnfLast.twisted_theta_integral_unfolding",
+        "GlobalTheory.T.twisted_iterate_chain",
+        "GlobalTheory.RowChain.twisted_iterate_eq_linear",
+        "GlobalTheory.RowChain.twisted_iterate_eventually_large",
+        "GlobalTheory.RowChain.pure_core",
+        "GlobalTheory.RowChain.iter_colPer",
+        "GlobalTheory.RowChain.iter_chain",
+        "GlobalTheory.Unf.unfoldings_of_chain",
+        "GlobalTheory.T.doubleStep_eq_two_thetaColumnLifts",
+        "GlobalTheory.Unf.Contr.contrLaw",
+        "GlobalTheory.T.weil_datum_product_compatibility"
+      ]
+    },
+    "Formalism.HN.TheoremFSharp": {
+      "unit_id": "D479",
+      "path": [
+        "GlobalTheory.Top.link_gl",
+        "Formalism.MainNotions.Wire.FamGLmin.link8",
+        "Formalism.MainNotions.Wire.FamGLmin.link7",
+        "Formalism.MainNotions.linkGLOBAL7_min",
+        "Formalism.MainNotions.linkGLOBAL7_items",
+        "Formalism.MainNotions.Lnk.frameF_of",
+        "Formalism.MainNotions.Lnk.frame_at_of",
+        "Formalism.LFunctionChainParameters.MatrixLatticeEstimates.joint_a_ramified_holds",
+        "Formalism.LFunctionChainParameters.MatrixLatticeEstimates.ramification_condition_holds",
+        "Formalism.LFunctionChainParameters.MatrixLatticeEstimates.sharp_flat_lattice_theorem_holds",
+        "Formalism.HN.theoremFSharp",
+        "Formalism.HN.TheoremFSharp"
+      ]
+    },
+    "Formalism.HN.frame_theorem_sharp": {
+      "unit_id": "D479",
+      "path": [
+        "GlobalTheory.Top.link_gl",
+        "Formalism.MainNotions.Wire.FamGLmin.link8",
+        "Formalism.MainNotions.Wire.FamGLmin.link7",
+        "Formalism.MainNotions.linkGLOBAL7_min",
+        "Formalism.MainNotions.linkGLOBAL7_items",
+        "Formalism.MainNotions.Lnk.frameF_of",
+        "Formalism.MainNotions.Lnk.frame_at_of",
+        "Formalism.LFunctionChainParameters.MatrixLatticeEstimates.joint_a_ramified_holds",
+        "Formalism.LFunctionChainParameters.MatrixLatticeEstimates.ramification_condition_holds",
+        "Formalism.LFunctionChainParameters.MatrixLatticeEstimates.sharp_flat_lattice_theorem_holds",
+        "Formalism.HN.theoremFSharp",
+        "Formalism.HN.frame_theorem_sharp"
+      ]
+    },
+    "GlobalTheory.BigSeesaw.seesaw_big": {
+      "unit_id": "T02",
+      "path": [
+        "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+        "GlobalTheory.T.test_vector_assembly_holds",
+        "GlobalTheory.RowTestAssembly.test_vector_at_datum_of_join",
+        "GlobalTheory.RowClaim.Join.thetaLift_row_properties_conj",
+        "GlobalTheory.ConstNZ.constK_alt",
+        "GlobalTheory.T.dominant_term_ne_zero",
+        "GlobalTheory.BigNZ.large_term_nonzero",
+        "GlobalTheory.BigNZ.exists_integral_ne_zero",
+        "GlobalTheory.T.big_route_kernel_eq_const_mul_theta",
+        "GlobalTheory.BigKernel.kerBig_eq_theta",
+        "GlobalTheory.T.bigRoute_seesaw_arrow_kernels_product",
+        "GlobalTheory.BigSeesaw.seesaw_big"
+      ]
+    },
+    "Formalism.HN.FrameLA1": {
+      "unit_id": "D479",
+      "path": [
+        "GlobalTheory.Top.link_gl",
+        "Formalism.MainNotions.Wire.FamGLmin.link8",
+        "Formalism.MainNotions.Wire.FamGLmin.link7",
+        "Formalism.MainNotions.linkGLOBAL7_min",
+        "Formalism.MainNotions.linkGLOBAL7_items",
+        "Formalism.MainNotions.Lnk.frameF_of",
+        "Formalism.MainNotions.Lnk.frame_at_of",
+        "Formalism.LFunctionChainParameters.MatrixLatticeEstimates.joint_a_ramified_holds",
+        "Formalism.LFunctionChainParameters.MatrixLatticeEstimates.ramification_condition_holds",
+        "Formalism.LFunctionChainParameters.MatrixLatticeEstimates.sharp_flat_lattice_theorem_holds",
+        "Formalism.HN.theoremFSharp",
+        "Formalism.HN.frame_theorem_sharp",
+        "Formalism.HN.theoremFSharp_of",
+        "Formalism.HN.FrameLA1"
+      ]
+    },
+    "Formalism.L2.KerInert.Rep.OrthInt": {
+      "unit_id": "T04",
+      "path": [
+        "GlobalTheory.Fc.AllAtMemberStage0.allRows_of_open0_alt",
+        "GlobalTheory.T.hServ_of_linkR",
+        "GlobalTheory.row_hServ_of_link_alt",
+        "GlobalTheory.T.reciprocity_kernel_of_artin",
+        "GlobalTheory.Svd.servH_row_linkR_alt",
+        "GlobalTheory.T.bundle_bothParts_of_standardKernel_of_globalArtinReciprocity",
+        "GlobalTheory.Svd.servH_row_of_artin",
+        "GlobalTheory.TwV.Lt.inert_theta_admissibility_of_complex_multiplication",
+        "Formalism.L2.KerInert.AdmLoc2.admissible_entries_small_chain",
+        "Formalism.L2.KerInert.KGLt.first_kernel_law_global_small",
+        "Formalism.L2.KerInert.KGLt.first_kernel_small_of_frame_twist",
+        "Formalism.L2.KerInert.KGLt.first_kernel_small_of_frame",
+        "Formalism.L2.KerInert.RepLt.K1_representatives_LT_of_dictionary",
+        "Formalism.L2.KerInert.Rep.OrthInt"
+      ]
+    },
+    "Formalism.L2.Ker.first_kernel_law_reading": {
+      "unit_id": "T04",
+      "path": [
+        "GlobalTheory.Fc.AllAtMemberStage0.allRows_of_open0_alt",
+        "GlobalTheory.T.hServ_of_linkR",
+        "GlobalTheory.row_hServ_of_link_alt",
+        "GlobalTheory.T.reciprocity_kernel_of_artin",
+        "GlobalTheory.Svd.servH_row_linkR_alt",
+        "GlobalTheory.T.bundle_bothParts_of_standardKernel_of_globalArtinReciprocity",
+        "GlobalTheory.Svd.servH_row_of_artin",
+        "GlobalTheory.T.bundle_bothParts_of_standardKernel_and_six_hypotheses",
+        "GlobalTheory.Svd.servH_row",
+        "GlobalTheory.Pdv.rowAt_of_stdTie",
+        "GlobalTheory.T.kernelDatumConditions_at_standardKernelComparison",
+        "GlobalTheory.PdvTie.at_of_stdTie",
+        "GlobalTheory.PdvClose.at_of_true_columns",
+        "GlobalTheory.T.admissibleKernelSeries_inertPrime_nonConjugateFrobenius",
+        "GlobalTheory.KerStd.exists_beFam_evenConditionsInert_of_kerEnt",
+        "GlobalTheory.Ggeo.KerComb.comb_of_tied",
+        "Formalism.L2.Ker.first_kernel_law_reading"
+      ]
+    },
+    "GlobalTheory.KerGaussA.kvalGe_gainA": {
+      "unit_id": "T04",
+      "path": [
+        "GlobalTheory.Fc.AllAtMemberStage0.allRows_of_open0_alt",
+        "GlobalTheory.T.hServ_of_linkR",
+        "GlobalTheory.row_hServ_of_link_alt",
+        "GlobalTheory.T.reciprocity_kernel_of_artin",
+        "GlobalTheory.Svd.servH_row_linkR_alt",
+        "GlobalTheory.T.bundle_bothParts_of_standardKernel_of_globalArtinReciprocity",
+        "GlobalTheory.Svd.servH_row_of_artin",
+        "GlobalTheory.T.bundle_bothParts_of_standardKernel_and_six_hypotheses",
+        "GlobalTheory.Svd.servH_row",
+        "GlobalTheory.Pdv.rowAt_of_stdTie",
+        "GlobalTheory.T.kernelDatumConditions_at_standardKernelComparison",
+        "GlobalTheory.PdvTie.at_of_stdTie",
+        "GlobalTheory.PdvClose.at_of_true_columns",
+        "GlobalTheory.T.orbitBound_standardSeries_inertPlaces",
+        "GlobalTheory.OrbitBoundStdRec.orbit_bound_rec",
+        "GlobalTheory.T.kvalGe_orbitGainWithoutOperator",
+        "GlobalTheory.KerGaussA.kvalGe_gainA"
+      ]
+    },
+    "Formalism.L2.Th1.Top.HypShape_of": {
+      "unit_id": "T04",
+      "path": [
+        "GlobalTheory.Fc.AllAtMemberStage0.allRows_of_open0_alt",
+        "GlobalTheory.T.hServ_of_linkR",
+        "GlobalTheory.row_hServ_of_link_alt",
+        "GlobalTheory.T.reciprocity_kernel_of_artin",
+        "GlobalTheory.Svd.servH_row_linkR_alt",
+        "GlobalTheory.T.bundle_bothParts_of_standardKernel_of_globalArtinReciprocity",
+        "GlobalTheory.Svd.servH_row_of_artin",
+        "GlobalTheory.TwV.Lt.inert_theta_admissibility_of_complex_multiplication",
+        "Formalism.L2.KerInert.AdmLoc2.admissible_entries_small_chain",
+        "Formalism.L2.KerInert.KGLt.first_kernel_law_global_small",
+        "Formalism.L2.KerInert.KGLt.first_kernel_small_of_frame_twist",
+        "Formalism.L2.KerInert.KGLt.first_kernel_small_of_frame",
+        "Formalism.L2.KerInert.RepLt.K1_representatives_LT_of_dictionary",
+        "Formalism.L2.KerInert.RepLt.firstKernelLawSmallSteps_of_curve_orthAllLt",
+        "Formalism.L2.KerInert.Rep.k1gen_of_orth",
+        "Formalism.L2.KerInert.K1.hyperbolic_of_orthogonal",
+        "Formalism.L2.Th1.Top.hypShape",
+        "Formalism.L2.Th1.Top.HypShape_of"
+      ]
+    },
+    "GlobalTheory.T.seeSawWeilBiAction_commutes": {
+      "unit_id": "T08",
+      "path": [
+        "GlobalTheory.T.open0_of_unitary_group_hypotheses",
+        "GlobalTheory.Fc.S0.Open0ProofU.open_orbit_of_unramified_exponents_alt",
+        "GlobalTheory.T.main_theorem_published_inputs_third_alt_alt",
+        "GlobalTheory.miStarRow_alt_alt",
+        "GlobalTheory.T.main_theorem_published_inputs_variant_alt_alt",
+        "GlobalTheory.miStarRowClosing_alt_alt",
+        "GlobalTheory.T.main_theorem_published_results_final_alt_alt",
+        "GlobalTheory.Fam.miStar_row_alt_alt",
+        "GlobalTheory.T.main_theorem_from_published_results_alt_alt_alt_alt_alt",
+        "GlobalTheory.Fam.miAt_of_truePack_alt_alt",
+        "GlobalTheory.T.main_theorem_from_published_results_alt_alt_alt_alt",
+        "GlobalTheory.Fam.miStar2_of_allTrue_alt_alt",
+        "GlobalTheory.T.mi_star2_of_pu_nz",
+        "GlobalTheory.MiTop.miStar2_of_bot_lev_fam_served_puNZ",
+        "GlobalTheory.T.joint_of_famAllQ_of_servedQ",
+        "GlobalTheory.MiTop.joint_of_famAllQ_alt",
+        "GlobalTheory.T.seesawTransportRelations_of_familyLaws",
+        "GlobalTheory.SeeSaw.mainX_of_lawsX",
+        "GlobalTheory.T.seeSawWeilBiAction_commutes"
+      ]
+    },
+    "GlobalTheory.ThetaNullNormSquares.normTheta0": {
+      "unit_id": "T08",
+      "path": [
+        "GlobalTheory.T.open0_of_unitary_group_hypotheses",
+        "GlobalTheory.Fc.S0.Open0ProofU.open_orbit_of_unramified_exponents_alt",
+        "GlobalTheory.T.weil_unitary_entries'",
+        "GlobalTheory.Fc.RL.linkedAt_prmR_df_of_cuspRapidDecay",
+        "GlobalTheory.Fc.RL.DefSide.linkedAt_df_of_parameters",
+        "GlobalTheory.Fc.RL.DefSide.definiteSideCondition_of_nprimeDef_of_nuFull",
+        "GlobalTheory.T.kernel_columns_from_ties_alt",
+        "GlobalTheory.ColRows.rowsU_of_colPins_alt",
+        "GlobalTheory.T.memberRows_of_kernelDatum_sizes",
+        "GlobalTheory.ColRows.rowsBody_of_kerTies",
+        "GlobalTheory.T.columnsMemberRows_of_logLevel_le",
+        "GlobalTheory.ColRowsTopS.rowsBody_colFace",
+        "GlobalTheory.T.kernelHalf_chainNumbers_any_levelPrime",
+        "GlobalTheory.KernelHalfS.kerSide_chainS",
+        "GlobalTheory.T.normalisedFamily_normBound_absoluteConstant",
+        "GlobalTheory.ColNorms.FamilyBound.familyNorms",
+        "GlobalTheory.T.exists_thetaZeroMeanLogLeConstMul",
+        "GlobalTheory.Theta0MeanLeC.theta0MeanLeC",
+        "GlobalTheory.T.thetaZero_mean_log_norm_conjugates_of_weber",
+        "GlobalTheory.Theta0MeanCore.theta0Mean",
+        "GlobalTheory.Theta0MeanCore.core",
+        "GlobalTheory.Proof.ThetaZeroNormGlobalInterpolation.normTheta0",
+        "GlobalTheory.ThetaNullNormSquares.normTheta0"
+      ]
+    },
+    "Formalism.InvariantFactorPaths.G7.Top.twoSums": {
+      "unit_id": "T04",
+      "path": [
+        "GlobalTheory.Fc.AllAtMemberStage0.allRows_of_open0_alt",
+        "GlobalTheory.T.hServ_of_linkR",
+        "GlobalTheory.row_hServ_of_link_alt",
+        "GlobalTheory.T.reciprocity_kernel_of_artin",
+        "GlobalTheory.Svd.servH_row_linkR_alt",
+        "GlobalTheory.T.bundle_bothParts_of_standardKernel_of_globalArtinReciprocity",
+        "GlobalTheory.Svd.servH_row_of_artin",
+        "GlobalTheory.T.bundle_bothParts_of_standardKernel_and_six_hypotheses",
+        "GlobalTheory.Svd.servH_row",
+        "GlobalTheory.Pdv.rowAt_of_stdTie",
+        "GlobalTheory.T.kernelDatumConditions_at_standardKernelComparison",
+        "GlobalTheory.PdvTie.at_of_stdTie",
+        "GlobalTheory.PdvClose.at_of_true_columns",
+        "GlobalTheory.T.orbitBound_standardSeries_inertPlaces",
+        "GlobalTheory.OrbitBoundStdRec.orbit_bound_rec",
+        "GlobalTheory.T.kvalGe_orbitGainWithoutOperator",
+        "GlobalTheory.KerGaussA.kvalGe_gainA",
+        "GlobalTheory.KerGaussA.kernel_bound",
+        "Formalism.L2.Th1.D.kernelOfF",
+        "Formalism.L2.Th1.D.kernel_of_f",
+        "Formalism.InvariantFactorPaths.G7.Top.kernel_from_k_one_k",
+        "Formalism.InvariantFactorPaths.G7.kernel_bounds_generic",
+        "Formalism.InvariantFactorPaths.G7.theorem_s_uniform",
+        "Formalism.InvariantFactorPaths.G7.Top.theorem_s_from_k_one",
+        "Formalism.InvariantFactorPaths.G7.Top.thmSCore",
+        "Formalism.InvariantFactorPaths.G7.Top.twoSums"
+      ]
+    },
+    "Formalism.InvariantFactorPaths.G7.TwoSums": {
+      "unit_id": "T04",
+      "path": [
+        "GlobalTheory.Fc.AllAtMemberStage0.allRows_of_open0_alt",
+        "GlobalTheory.T.hServ_of_linkR",
+        "GlobalTheory.row_hServ_of_link_alt",
+        "GlobalTheory.T.reciprocity_kernel_of_artin",
+        "GlobalTheory.Svd.servH_row_linkR_alt",
+        "GlobalTheory.T.bundle_bothParts_of_standardKernel_of_globalArtinReciprocity",
+        "GlobalTheory.Svd.servH_row_of_artin",
+        "GlobalTheory.T.bundle_bothParts_of_standardKernel_and_six_hypotheses",
+        "GlobalTheory.Svd.servH_row",
+        "GlobalTheory.Pdv.rowAt_of_stdTie",
+        "GlobalTheory.T.kernelDatumConditions_at_standardKernelComparison",
+        "GlobalTheory.PdvTie.at_of_stdTie",
+        "GlobalTheory.PdvClose.at_of_true_columns",
+        "GlobalTheory.T.orbitBound_standardSeries_inertPlaces",
+        "GlobalTheory.OrbitBoundStdRec.orbit_bound_rec",
+        "GlobalTheory.T.kvalGe_orbitGainWithoutOperator",
+        "GlobalTheory.KerGaussA.kvalGe_gainA",
+        "GlobalTheory.KerGaussA.kernel_bound",
+        "Formalism.L2.Th1.D.kernelOfF",
+        "Formalism.L2.Th1.D.kernel_of_f",
+        "Formalism.InvariantFactorPaths.G7.Top.kernel_from_k_one_k",
+        "Formalism.InvariantFactorPaths.G7.kernel_bounds_generic",
+        "Formalism.InvariantFactorPaths.G7.theorem_s_uniform",
+        "Formalism.InvariantFactorPaths.G7.Top.theorem_s_from_k_one",
+        "Formalism.InvariantFactorPaths.G7.Top.thmSCore",
+        "Formalism.InvariantFactorPaths.G7.ThmSCore_of",
+        "Formalism.InvariantFactorPaths.G7.TwoSums"
+      ]
+    }
+  },
+  "notice": "AI-generated correspondence. No human has checked it. The author has not reviewed it and was not contacted. Corrections are welcome.",
+  "edition": "Manuscript dated 24 November 2026, 287 pages.",
+  "mappings": [
+    {
+      "id": "H11.22",
+      "kind": "numbered_hypothesis",
+      "external_id": "Hypothesis 11.22",
+      "page": 95,
+      "section": "11",
+      "contextual_unit_ids": [
+        "P012"
+      ],
+      "lean_declarations": [
+        {
+          "name": "Formalism.MainNotions.LinkDIV",
+          "file": "Formalism/SharpRestriction/GlobalTheoremInputs.lean",
+          "line_start": 91,
+          "line_end": 92,
+          "role": "related_declaration",
+          "sha256": "7d031c0438c842b5eaae507f719e56439134cd858c7a6bea7edb31ba6af8d6ed"
+        }
+      ],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {
+        "Formalism.MainNotions.LinkDIV": "B05"
+      },
+      "relation": "partial"
+    },
+    {
+      "id": "H11.38",
+      "kind": "numbered_hypothesis",
+      "external_id": "Hypothesis 11.38",
+      "page": 103,
+      "section": "11",
+      "contextual_unit_ids": [
+        "P012"
+      ],
+      "lean_declarations": [],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {},
+      "relation": "none"
+    },
+    {
+      "id": "H11.42",
+      "kind": "numbered_hypothesis",
+      "external_id": "Hypothesis 11.42",
+      "page": 104,
+      "section": "11",
+      "contextual_unit_ids": [
+        "P012"
+      ],
+      "lean_declarations": [
+        {
+          "name": "Formalism.L2.Ker.first_kernel_law_reading",
+          "file": "Formalism/LocalToGlobal/KernelLattices/KernelLocalFactors/PeriodLatticeFinitelyGenerated.lean",
+          "line_start": 1520,
+          "line_end": 1522,
+          "role": "related_declaration",
+          "sha256": "fb453e82469e96a9e4c07a0102675406d0a16a83087fc78f9d0120cef45fde08"
+        }
+      ],
+      "matched_propositions": [],
+      "unit_ids": [
+        "Z4.3"
+      ],
+      "matches": [
+        {
+          "unit_id": "Z4.3",
+          "node_id": null,
+          "lean_declaration": "Formalism.L2.Ker.first_kernel_law_reading",
+          "match_kind": "chart_supplier"
+        }
+      ],
+      "reading_routes": {
+        "Formalism.L2.Ker.first_kernel_law_reading": "T04"
+      },
+      "relation": "partial"
+    },
+    {
+      "id": "H12.12",
+      "kind": "numbered_hypothesis",
+      "external_id": "Hypothesis 12.12",
+      "page": 113,
+      "section": "12",
+      "contextual_unit_ids": [
+        "P012"
+      ],
+      "lean_declarations": [
+        {
+          "name": "Formalism.MainNotions.G.LPprime",
+          "file": "Formalism/SharpRestriction/GrowthBounds/UnramifiedQuadraticSetting.lean",
+          "line_start": 216,
+          "line_end": 220,
+          "role": "related_declaration",
+          "sha256": "f0a089969b8e62231760c074cad6816099a42818e13551468f4b7b20eb474346"
+        },
+        {
+          "name": "Formalism.MainNotions.FormalGroupSystem.Pf.hecke_place_bound",
+          "file": "Formalism/SharpRestriction/GrowthBounds/MultisetValuation/FirstTheoremPlaceBound.lean",
+          "line_start": 28,
+          "line_end": 30,
+          "role": "related_declaration",
+          "sha256": "50d3609e3318b0ecf5022ca8276e5b51c9cd3f773d4adc431b7117ee74e15928"
+        }
+      ],
+      "matched_propositions": [],
+      "unit_ids": [
+        "P045",
+        "Z4.1"
+      ],
+      "matches": [
+        {
+          "unit_id": "P045",
+          "node_id": "P045",
+          "lean_declaration": "Formalism.MainNotions.FormalGroupSystem.Pf.hecke_place_bound",
+          "match_kind": "unit_statement"
+        },
+        {
+          "unit_id": "Z4.1",
+          "node_id": null,
+          "lean_declaration": "Formalism.MainNotions.FormalGroupSystem.Pf.hecke_place_bound",
+          "match_kind": "unit_statement"
+        }
+      ],
+      "reading_routes": {
+        "Formalism.MainNotions.G.LPprime": "P046"
+      },
+      "relation": "partial"
+    },
+    {
+      "id": "H14.10",
+      "kind": "numbered_hypothesis",
+      "external_id": "Hypothesis 14.10",
+      "page": 163,
+      "section": "14",
+      "contextual_unit_ids": [
+        "D484"
+      ],
+      "lean_declarations": [
+        {
+          "name": "Formalism.MainNotions.BesselId",
+          "file": "Formalism/SharpRestriction/GlobalTheoremInputs.lean",
+          "line_start": 65,
+          "line_end": 67,
+          "role": "related_declaration",
+          "sha256": "d4bc3a7bf5e196e7d8554a920829d657ded57785aa31f13557d00d4351b73837"
+        },
+        {
+          "name": "GlobalTheory.BigSeesaw.seesaw_big",
+          "file": "Development/AbelianVarietyTheory/Proofs/DivisorProofs/BigRouteSeesawArrowKernelsProduct.lean",
+          "line_start": 102,
+          "line_end": 212,
+          "role": "related_declaration",
+          "sha256": "5212b617cd94b0bb895f929410acefc6eccf74d6faa85d4b8b9acbac02b1d729"
+        }
+      ],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {
+        "Formalism.MainNotions.BesselId": "B05",
+        "GlobalTheory.BigSeesaw.seesaw_big": "T02"
+      },
+      "relation": "partial"
+    },
+    {
+      "id": "H14.11",
+      "kind": "numbered_hypothesis",
+      "external_id": "Hypothesis 14.11",
+      "page": 163,
+      "section": "14",
+      "contextual_unit_ids": [
+        "D484"
+      ],
+      "lean_declarations": [],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {},
+      "relation": "none"
+    },
+    {
+      "id": "H14.12",
+      "kind": "numbered_hypothesis",
+      "external_id": "Hypothesis 14.12",
+      "page": 163,
+      "section": "14",
+      "contextual_unit_ids": [
+        "D484"
+      ],
+      "lean_declarations": [],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {},
+      "relation": "none"
+    },
+    {
+      "id": "H14.17",
+      "kind": "numbered_hypothesis",
+      "external_id": "Hypothesis 14.17",
+      "page": 165,
+      "section": "14",
+      "contextual_unit_ids": [
+        "D484"
+      ],
+      "lean_declarations": [],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {},
+      "relation": "none"
+    },
+    {
+      "id": "H14.21",
+      "kind": "numbered_hypothesis",
+      "external_id": "Hypothesis 14.21",
+      "page": 167,
+      "section": "14",
+      "contextual_unit_ids": [
+        "D484"
+      ],
+      "lean_declarations": [],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {},
+      "relation": "none"
+    },
+    {
+      "id": "H14.27",
+      "kind": "numbered_hypothesis",
+      "external_id": "Hypothesis 14.27",
+      "page": 171,
+      "section": "14",
+      "contextual_unit_ids": [
+        "D484"
+      ],
+      "lean_declarations": [
+        {
+          "name": "GlobalTheory.T.seeSawWeilBiAction_commutes",
+          "file": "Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/SeeSawWeilBiActionCommutesStatement.lean",
+          "line_start": 12,
+          "line_end": 13,
+          "role": "related_declaration",
+          "sha256": "eb9a2e8bc15a0ba53af259118e8cd6c34479aa0203bf9accdc72ca54adca8123"
+        },
+        {
+          "name": "GlobalTheory.T.weil_datum_product_compatibility",
+          "file": "Development/AbelianVarietyTheory/Proofs/DecoratedLatticeProofs/WeilDatumProductCompatibilityStatement.lean",
+          "line_start": 13,
+          "line_end": 14,
+          "role": "related_declaration",
+          "sha256": "8e4b673dfd7c98ed340072d6b97035ce604ff8341bcaa6ceaa1e0487ff9851ef"
+        }
+      ],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {
+        "GlobalTheory.T.seeSawWeilBiAction_commutes": "T08",
+        "GlobalTheory.T.weil_datum_product_compatibility": "D024"
+      },
+      "relation": "partial"
+    },
+    {
+      "id": "H14.28",
+      "kind": "numbered_hypothesis",
+      "external_id": "Hypothesis 14.28",
+      "page": 172,
+      "section": "14",
+      "contextual_unit_ids": [
+        "D484"
+      ],
+      "lean_declarations": [
+        {
+          "name": "GlobalTheory.Unf.FlatLaw",
+          "file": "Development/AbelianVarietyTheory/Definitions/LatticeFrames/IsQuasiFam.lean",
+          "line_start": 30,
+          "line_end": 36,
+          "role": "related_declaration",
+          "sha256": "50990a5c51ba966e8e095f3df7702ea7a322e8be00d619c72bbc02b1d8a653c0"
+        },
+        {
+          "name": "GlobalTheory.Unf.ContrLaw",
+          "file": "Development/AbelianVarietyTheory/Definitions/LatticeFrames/IsQuasiFam.lean",
+          "line_start": 97,
+          "line_end": 108,
+          "role": "related_declaration",
+          "sha256": "4b8317b21a1ad2c979f5824ba884a01e529dcac5ab5708471c2bb0531d936145"
+        }
+      ],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {
+        "GlobalTheory.Unf.FlatLaw": "D024",
+        "GlobalTheory.Unf.ContrLaw": "D024"
+      },
+      "relation": "partial"
+    },
+    {
+      "id": "H14.42",
+      "kind": "numbered_hypothesis",
+      "external_id": "Hypothesis 14.42",
+      "page": 179,
+      "section": "14",
+      "contextual_unit_ids": [
+        "D486"
+      ],
+      "lean_declarations": [],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {},
+      "relation": "none"
+    },
+    {
+      "id": "H14.43",
+      "kind": "numbered_hypothesis",
+      "external_id": "Hypothesis 14.43",
+      "page": 179,
+      "section": "14",
+      "contextual_unit_ids": [
+        "T03"
+      ],
+      "lean_declarations": [],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {},
+      "relation": "none"
+    },
+    {
+      "id": "H14.44",
+      "kind": "numbered_hypothesis",
+      "external_id": "Hypothesis 14.44",
+      "page": 179,
+      "section": "14",
+      "contextual_unit_ids": [
+        "T03"
+      ],
+      "lean_declarations": [],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {},
+      "relation": "none"
+    },
+    {
+      "id": "H14.59",
+      "kind": "numbered_hypothesis",
+      "external_id": "Hypothesis 14.59",
+      "page": 186,
+      "section": "14",
+      "contextual_unit_ids": [
+        "T03"
+      ],
+      "lean_declarations": [],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {},
+      "relation": "none"
+    },
+    {
+      "id": "H14.61",
+      "kind": "numbered_hypothesis",
+      "external_id": "Hypothesis 14.61",
+      "page": 187,
+      "section": "14",
+      "contextual_unit_ids": [
+        "T03"
+      ],
+      "lean_declarations": [],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {},
+      "relation": "none"
+    },
+    {
+      "id": "H14.71",
+      "kind": "numbered_hypothesis",
+      "external_id": "Hypothesis 14.71",
+      "page": 190,
+      "section": "14",
+      "contextual_unit_ids": [
+        "T03"
+      ],
+      "lean_declarations": [],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {},
+      "relation": "none"
+    },
+    {
+      "id": "H14.72",
+      "kind": "numbered_hypothesis",
+      "external_id": "Hypothesis 14.72",
+      "page": 190,
+      "section": "14",
+      "contextual_unit_ids": [
+        "T03"
+      ],
+      "lean_declarations": [],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {},
+      "relation": "none"
+    },
+    {
+      "id": "H14.73",
+      "kind": "numbered_hypothesis",
+      "external_id": "Hypothesis 14.73",
+      "page": 190,
+      "section": "14",
+      "contextual_unit_ids": [
+        "T03"
+      ],
+      "lean_declarations": [
+        {
+          "name": "GlobalTheory.LoopRowsCloseGap.loop_rows_closed_gap",
+          "file": "Development/AbelianVarietyTheory/Proofs/FlagMeasures/LoopRowsOfLargeGapDiscreteSeries.lean",
+          "line_start": 121,
+          "line_end": 205,
+          "role": "related_declaration",
+          "sha256": "aacbfac43506ea89d2fd3260d157d9dd13ffad6d1852640c94d8c43a2c02f023"
+        }
+      ],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {
+        "GlobalTheory.LoopRowsCloseGap.loop_rows_closed_gap": "T04"
+      },
+      "relation": "partial"
+    },
+    {
+      "id": "H14.74",
+      "kind": "numbered_hypothesis",
+      "external_id": "Hypothesis 14.74",
+      "page": 190,
+      "section": "14",
+      "contextual_unit_ids": [
+        "T03"
+      ],
+      "lean_declarations": [],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {},
+      "relation": "none"
+    },
+    {
+      "id": "H14.75",
+      "kind": "numbered_hypothesis",
+      "external_id": "Hypothesis 14.75",
+      "page": 190,
+      "section": "14",
+      "contextual_unit_ids": [
+        "T03"
+      ],
+      "lean_declarations": [],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {},
+      "relation": "none"
+    },
+    {
+      "id": "H14.76",
+      "kind": "numbered_hypothesis",
+      "external_id": "Hypothesis 14.76",
+      "page": 190,
+      "section": "14",
+      "contextual_unit_ids": [
+        "T03"
+      ],
+      "lean_declarations": [],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {},
+      "relation": "none"
+    },
+    {
+      "id": "H14.77",
+      "kind": "numbered_hypothesis",
+      "external_id": "Hypothesis 14.77",
+      "page": 190,
+      "section": "14",
+      "contextual_unit_ids": [
+        "T03"
+      ],
+      "lean_declarations": [],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {},
+      "relation": "none"
+    },
+    {
+      "id": "H15.10",
+      "kind": "numbered_hypothesis",
+      "external_id": "Hypothesis 15.10",
+      "page": 214,
+      "section": "15",
+      "contextual_unit_ids": [
+        "P012"
+      ],
+      "lean_declarations": [
+        {
+          "name": "Formalism.MainNotions.LinkDIV_at",
+          "file": "Formalism/SharpRestriction/GlobalTheoremInputs.lean",
+          "line_start": 77,
+          "line_end": 89,
+          "role": "related_declaration",
+          "sha256": "6abb9d15293bccde9b4c28fac5ca8352814ffb7841db2e29508adeca54be447e"
+        }
+      ],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {
+        "Formalism.MainNotions.LinkDIV_at": "B05"
+      },
+      "relation": "partial"
+    },
+    {
+      "id": "H15.11",
+      "kind": "numbered_hypothesis",
+      "external_id": "Hypothesis 15.11",
+      "page": 214,
+      "section": "15",
+      "contextual_unit_ids": [
+        "P012"
+      ],
+      "lean_declarations": [],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {},
+      "relation": "none"
+    },
+    {
+      "id": "H15.12",
+      "kind": "numbered_hypothesis",
+      "external_id": "Hypothesis 15.12",
+      "page": 214,
+      "section": "15",
+      "contextual_unit_ids": [
+        "P012"
+      ],
+      "lean_declarations": [],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {},
+      "relation": "none"
+    },
+    {
+      "id": "H15.16",
+      "kind": "numbered_hypothesis",
+      "external_id": "Hypothesis 15.16",
+      "page": 215,
+      "section": "15",
+      "contextual_unit_ids": [
+        "P012"
+      ],
+      "lean_declarations": [],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {},
+      "relation": "none"
+    },
+    {
+      "id": "H15.18",
+      "kind": "numbered_hypothesis",
+      "external_id": "Hypothesis 15.18",
+      "page": 215,
+      "section": "15",
+      "contextual_unit_ids": [
+        "P012"
+      ],
+      "lean_declarations": [],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {},
+      "relation": "none"
+    },
+    {
+      "id": "H15.23",
+      "kind": "numbered_hypothesis",
+      "external_id": "Hypothesis 15.23",
+      "page": 218,
+      "section": "15",
+      "contextual_unit_ids": [
+        "T03"
+      ],
+      "lean_declarations": [],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {},
+      "relation": "none"
+    },
+    {
+      "id": "H15.42",
+      "kind": "numbered_hypothesis",
+      "external_id": "Hypothesis 15.42",
+      "page": 226,
+      "section": "15",
+      "contextual_unit_ids": [
+        "P012"
+      ],
+      "lean_declarations": [],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {},
+      "relation": "none"
+    },
+    {
+      "id": "H15.43",
+      "kind": "numbered_hypothesis",
+      "external_id": "Hypothesis 15.43",
+      "page": 226,
+      "section": "15",
+      "contextual_unit_ids": [
+        "P012"
+      ],
+      "lean_declarations": [
+        {
+          "name": "GlobalTheory.ThetaNullNormSquares.normTheta0",
+          "file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/MeanSquareNormalizedThetaTwoTorsion.lean",
+          "line_start": 206,
+          "line_end": 252,
+          "role": "related_declaration",
+          "sha256": "6ec98a61f370b9543029b8d59da8e4726b9d020320190474858b2a79148b3a58"
+        }
+      ],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {
+        "GlobalTheory.ThetaNullNormSquares.normTheta0": "T08"
+      },
+      "relation": "partial"
+    },
+    {
+      "id": "H15.44",
+      "kind": "numbered_hypothesis",
+      "external_id": "Hypothesis 15.44",
+      "page": 227,
+      "section": "15",
+      "contextual_unit_ids": [
+        "P012"
+      ],
+      "lean_declarations": [],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {},
+      "relation": "none"
+    },
+    {
+      "id": "H15.50",
+      "kind": "numbered_hypothesis",
+      "external_id": "Hypothesis 15.50",
+      "page": 229,
+      "section": "15",
+      "contextual_unit_ids": [
+        "P012"
+      ],
+      "lean_declarations": [
+        {
+          "name": "Formalism.L2.Col.Br.xiBr",
+          "file": "Formalism/LocalToGlobal/Columns/FiniteSumNonzeroLargeDepth.lean",
+          "line_start": 115,
+          "line_end": 117,
+          "role": "related_declaration",
+          "sha256": "6eed0d057a141c9f08b9fbd14aa543feac30e2fa0d6d5463af99fcd4c293e25f"
+        }
+      ],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {
+        "Formalism.L2.Col.Br.xiBr": "P048"
+      },
+      "relation": "partial"
+    },
+    {
+      "id": "H15.56",
+      "kind": "numbered_hypothesis",
+      "external_id": "Hypothesis 15.56",
+      "page": 232,
+      "section": "15",
+      "contextual_unit_ids": [
+        "P012"
+      ],
+      "lean_declarations": [
+        {
+          "name": "Formalism.IndefR.CxPass.NearConstantMultiplicities",
+          "file": "Formalism/LocalToGlobal/IndefiniteReal/CxPass.lean",
+          "line_start": 58,
+          "line_end": 59,
+          "role": "related_declaration",
+          "sha256": "32fb4696558148083fd7e9f17c2ae9237b211c5b5f27cf56e1b4d0be7d0449ea"
+        }
+      ],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {
+        "Formalism.IndefR.CxPass.NearConstantMultiplicities": "B05"
+      },
+      "relation": "partial"
+    },
+    {
+      "id": "H15.58",
+      "kind": "numbered_hypothesis",
+      "external_id": "Hypothesis 15.58",
+      "page": 232,
+      "section": "15",
+      "contextual_unit_ids": [
+        "P012"
+      ],
+      "lean_declarations": [
+        {
+          "name": "GlobalTheory.CovTop.HSAt",
+          "file": "Development/AbelianVarietyTheory/Definitions/Divisors/CovolXOfCovol.lean",
+          "line_start": 153,
+          "line_end": 156,
+          "role": "related_declaration",
+          "sha256": "54bdc39d384a705bae1d4f4c16e160d69023d3c748494b054f2e218edca382a0"
+        }
+      ],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {
+        "GlobalTheory.CovTop.HSAt": "T15"
+      },
+      "relation": "partial"
+    },
+    {
+      "id": "H15.59",
+      "kind": "numbered_hypothesis",
+      "external_id": "Hypothesis 15.59",
+      "page": 233,
+      "section": "15",
+      "contextual_unit_ids": [
+        "T13",
+        "P012"
+      ],
+      "lean_declarations": [
+        {
+          "name": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopCovolSlim2Use.lean",
+          "line_start": 16,
+          "line_end": 22,
+          "role": "related_declaration",
+          "sha256": "536fef61884c9c881a5577b6ce8aaf70d5089bfef5c7cf38d33dea9831d11764"
+        }
+      ],
+      "matched_propositions": [],
+      "unit_ids": [
+        "T13"
+      ],
+      "matches": [
+        {
+          "unit_id": "T13",
+          "node_id": "T13",
+          "lean_declaration": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+          "match_kind": "unit_statement"
+        }
+      ],
+      "reading_routes": {},
+      "relation": "partial"
+    },
+    {
+      "id": "H15.69",
+      "kind": "numbered_hypothesis",
+      "external_id": "Hypothesis 15.69",
+      "page": 239,
+      "section": "15",
+      "contextual_unit_ids": [
+        "T14",
+        "T26"
+      ],
+      "lean_declarations": [
+        {
+          "name": "GlobalTheory.CompanionTheory.Ar.Plug.DeepStR",
+          "file": "Development/AutomorphicSpectrum/Definitions/GlobalGeometry/ModelSmall.lean",
+          "line_start": 63,
+          "line_end": 66,
+          "role": "corresponding_proposition",
+          "sha256": "076c0ab2437dc7cb00b22d4bfa15d2447cc39c2494b4de3c4b36d9300d41eb59"
+        },
+        {
+          "name": "PositivityTheory.HtPt.Ah.deep_slim_use",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/MoriwakiBigness/HilbertSamuelApplications/AhSlimU.lean",
+          "line_start": 9,
+          "line_end": 14,
+          "role": "related_declaration",
+          "sha256": "cdaf281cbb61ff4c019f95f1e1260bac32c3221e0a21b0ac149b9e4f71d83b0b"
+        }
+      ],
+      "matched_propositions": [
+        "GlobalTheory.CompanionTheory.Ar.Plug.DeepStR"
+      ],
+      "unit_ids": [
+        "T14"
+      ],
+      "matches": [
+        {
+          "unit_id": "T14",
+          "node_id": "T14",
+          "lean_declaration": "PositivityTheory.HtPt.Ah.deep_slim_use",
+          "match_kind": "unit_statement"
+        }
+      ],
+      "reading_routes": {
+        "GlobalTheory.CompanionTheory.Ar.Plug.DeepStR": "T14"
+      },
+      "relation": "exact"
+    },
+    {
+      "id": "H16.13",
+      "kind": "numbered_hypothesis",
+      "external_id": "Hypothesis 16.13",
+      "page": 246,
+      "section": "16",
+      "contextual_unit_ids": [
+        "P012"
+      ],
+      "lean_declarations": [],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {},
+      "relation": "none"
+    },
+    {
+      "id": "H16.14",
+      "kind": "numbered_hypothesis",
+      "external_id": "Hypothesis 16.14",
+      "page": 246,
+      "section": "16",
+      "contextual_unit_ids": [
+        "P012"
+      ],
+      "lean_declarations": [],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {},
+      "relation": "none"
+    },
+    {
+      "id": "H17.11",
+      "kind": "numbered_hypothesis",
+      "external_id": "Hypothesis 17.11",
+      "page": 250,
+      "section": "17",
+      "contextual_unit_ids": [
+        "W13"
+      ],
+      "lean_declarations": [
+        {
+          "name": "UpperTheory.Top.VWin",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean",
+          "line_start": 49,
+          "line_end": 49,
+          "role": "corresponding_proposition",
+          "sha256": "84c157849fbf30a25382ffcc055f63d04544cc5c2e38936e0b220d9e7c661bb8"
+        }
+      ],
+      "matched_propositions": [
+        "UpperTheory.Top.VWin"
+      ],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {
+        "UpperTheory.Top.VWin": "P012"
+      },
+      "relation": "exact"
+    },
+    {
+      "id": "H17.24",
+      "kind": "numbered_hypothesis",
+      "external_id": "Hypothesis 17.24",
+      "page": 262,
+      "section": "17",
+      "contextual_unit_ids": [
+        "D427"
+      ],
+      "lean_declarations": [
+        {
+          "name": "Formalism.MainNotions.LinkN_at",
+          "file": "Formalism/SharpRestriction/GlobalTheoremInputs.lean",
+          "line_start": 40,
+          "line_end": 43,
+          "role": "related_declaration",
+          "sha256": "077fe3e4e4d548f3095518c7bdabb571133980eb358626baa808f391f06ed557"
+        },
+        {
+          "name": "Formalism.MainNotions.LinkN",
+          "file": "Formalism/SharpRestriction/GlobalTheoremInputs.lean",
+          "line_start": 45,
+          "line_end": 47,
+          "role": "related_declaration",
+          "sha256": "61670c58d9fc4e2c1e8b43f71f0855d6be3df97c9e789ef1b37dc88685a85eaa"
+        },
+        {
+          "name": "UpperTheory.GalC.linkN_of_twGood_galoisPreconditions",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkNFam.lean",
+          "line_start": 37,
+          "line_end": 53,
+          "role": "related_declaration",
+          "sha256": "71c7292ab943b1f59154dbb09c1b2bf96a7bc1c3c6a838eb1437dea42006edfb"
+        }
+      ],
+      "matched_propositions": [],
+      "unit_ids": [
+        "D427"
+      ],
+      "matches": [
+        {
+          "unit_id": "D427",
+          "node_id": "D427",
+          "lean_declaration": "UpperTheory.GalC.linkN_of_twGood_galoisPreconditions",
+          "match_kind": "unit_statement"
+        }
+      ],
+      "reading_routes": {
+        "Formalism.MainNotions.LinkN_at": "B05",
+        "Formalism.MainNotions.LinkN": "B05"
+      },
+      "relation": "partial"
+    },
+    {
+      "id": "H17.36",
+      "kind": "numbered_hypothesis",
+      "external_id": "Hypothesis 17.36",
+      "page": 268,
+      "section": "17",
+      "contextual_unit_ids": [
+        "D427",
+        "D421"
+      ],
+      "lean_declarations": [
+        {
+          "name": "Formalism.MainNotions.N.K.Closed.theorem_n5_from_inputs",
+          "file": "Formalism/AdmissibleDesigns/StatementOneBFromUnramified.lean",
+          "line_start": 142,
+          "line_end": 175,
+          "role": "related_declaration",
+          "sha256": "c8d1745b519bab4d0d2498bceaea110e4c7371acd45b2f8db13bf0821c1502c0"
+        }
+      ],
+      "matched_propositions": [],
+      "unit_ids": [
+        "P044",
+        "Z3.2"
+      ],
+      "matches": [
+        {
+          "unit_id": "P044",
+          "node_id": "P044",
+          "lean_declaration": "Formalism.MainNotions.N.K.Closed.theorem_n5_from_inputs",
+          "match_kind": "unit_statement"
+        },
+        {
+          "unit_id": "Z3.2",
+          "node_id": null,
+          "lean_declaration": "Formalism.MainNotions.N.K.Closed.theorem_n5_from_inputs",
+          "match_kind": "unit_statement"
+        }
+      ],
+      "reading_routes": {},
+      "relation": "partial"
+    },
+    {
+      "id": "H18.10",
+      "kind": "numbered_hypothesis",
+      "external_id": "Hypothesis 18.10",
+      "page": 276,
+      "section": "18",
+      "contextual_unit_ids": [
+        "T01",
+        "T02",
+        "T03",
+        "P021"
+      ],
+      "lean_declarations": [
+        {
+          "name": "Formalism.MainNotions.ChainTied",
+          "file": "Formalism/SharpRestriction/GlobalSchurBounds/TieGlobal.lean",
+          "line_start": 97,
+          "line_end": 114,
+          "role": "related_declaration",
+          "sha256": "ee75ebdaefc4c477d6a861c449117734998c23db306600b5d46646ae33d5eee7"
+        },
+        {
+          "name": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+          "line_start": 69,
+          "line_end": 73,
+          "role": "related_declaration",
+          "sha256": "a24733b92afe929a3bce10446a1e6c1f7cda414ca65fce7d1e44ac00fd8518d7"
+        }
+      ],
+      "matched_propositions": [],
+      "unit_ids": [
+        "T01"
+      ],
+      "matches": [
+        {
+          "unit_id": "T01",
+          "node_id": "T01",
+          "lean_declaration": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+          "match_kind": "unit_statement"
+        }
+      ],
+      "reading_routes": {
+        "Formalism.MainNotions.ChainTied": "P016"
+      },
+      "relation": "partial"
+    },
+    {
+      "id": "A-landau",
+      "kind": "comparison",
+      "external_id": "Theorem 2.4; Lemmas 2.1–2.3",
+      "contextual_unit_ids": [
+        "P022",
+        "P023"
+      ],
+      "lean_declarations": [
+        {
+          "name": "Deduction.landau_window",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindow.lean",
+          "line_start": 83,
+          "line_end": 166,
+          "role": "related_declaration",
+          "sha256": "104676d2ea110702c4c1586024ad2de75dc99d166c78548b85da61ba7d36c00d"
+        }
+      ],
+      "matched_propositions": [],
+      "unit_ids": [
+        "P022"
+      ],
+      "matches": [
+        {
+          "unit_id": "P022",
+          "node_id": "P022",
+          "lean_declaration": "Deduction.landau_window",
+          "match_kind": "unit_statement"
+        }
+      ],
+      "reading_routes": {},
+      "relation": "partial"
+    },
+    {
+      "id": "A-char-window",
+      "kind": "comparison",
+      "external_id": "Corollary 2.5",
+      "contextual_unit_ids": [
+        "P022"
+      ],
+      "lean_declarations": [
+        {
+          "name": "Deduction.zeroFree_of_rpow_window",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ZeroFreeOfRpowWindow.lean",
+          "line_start": 11,
+          "line_end": 14,
+          "role": "related_declaration",
+          "sha256": "3b6b55af7f0e73ce4bec45738805bc20ab3e4dde5c2f5b9e57843a3f2f0d5d1d"
+        }
+      ],
+      "matched_propositions": [],
+      "unit_ids": [
+        "P023"
+      ],
+      "matches": [
+        {
+          "unit_id": "P023",
+          "node_id": "P023",
+          "lean_declaration": "Deduction.zeroFree_of_rpow_window",
+          "match_kind": "unit_statement"
+        }
+      ],
+      "reading_routes": {},
+      "relation": "partial"
+    },
+    {
+      "id": "A-account",
+      "kind": "comparison",
+      "external_id": "Proposition 3.1",
+      "contextual_unit_ids": [
+        "P017"
+      ],
+      "lean_declarations": [],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {},
+      "relation": "none"
+    },
+    {
+      "id": "A-balance",
+      "kind": "comparison",
+      "external_id": "Proposition 3.3",
+      "contextual_unit_ids": [
+        "P017"
+      ],
+      "lean_declarations": [
+        {
+          "name": "Deduction.ch_balance",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChBalance.lean",
+          "line_start": 200,
+          "line_end": 260,
+          "role": "corresponding_proposition",
+          "sha256": "ed29418b71866546dcaaad4dce557ca4bbc1315ad1e70930c6c990b8a58ad229"
+        }
+      ],
+      "matched_propositions": [
+        "Deduction.ch_balance"
+      ],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {
+        "Deduction.ch_balance": "D561"
+      },
+      "relation": "exact"
+    },
+    {
+      "id": "A-real",
+      "kind": "comparison",
+      "external_id": "Corollary 3.4",
+      "contextual_unit_ids": [
+        "P017"
+      ],
+      "lean_declarations": [],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {},
+      "relation": "none"
+    },
+    {
+      "id": "A-smoothing",
+      "kind": "comparison",
+      "external_id": "Lemma 4.1",
+      "contextual_unit_ids": [
+        "D562"
+      ],
+      "lean_declarations": [
+        {
+          "name": "Formalism.LFunctionChainParameters.ThickSetMeanBounds.lipschitz_weight_all",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean",
+          "line_start": 957,
+          "line_end": 964,
+          "role": "related_declaration",
+          "sha256": "0bb1c563c4e47fac46b11361efcbfe3cd1c0afe8cb0e32560a9c6585f5786c84"
+        },
+        {
+          "name": "Formalism.LFunctionChainParameters.ThickSetMeanBounds.derivative_integral_all",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean",
+          "line_start": 966,
+          "line_end": 981,
+          "role": "related_declaration",
+          "sha256": "2199aa1029611946a5ad7a243a47df41a56417d05aa0ea592a91d4064256cb3c"
+        }
+      ],
+      "matched_propositions": [],
+      "unit_ids": [
+        "D562"
+      ],
+      "matches": [
+        {
+          "unit_id": "D562",
+          "node_id": "D562",
+          "lean_declaration": "Formalism.LFunctionChainParameters.ThickSetMeanBounds.derivative_integral_all",
+          "match_kind": "unit_statement"
+        }
+      ],
+      "reading_routes": {
+        "Formalism.LFunctionChainParameters.ThickSetMeanBounds.lipschitz_weight_all": "D561"
+      },
+      "relation": "partial"
+    },
+    {
+      "id": "A-average",
+      "kind": "comparison",
+      "external_id": "Theorem 4.2",
+      "contextual_unit_ids": [
+        "P017",
+        "B09"
+      ],
+      "lean_declarations": [
+        {
+          "name": "Deduction.CharacterBalanceMoves.core",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean",
+          "line_start": 283,
+          "line_end": 338,
+          "role": "related_declaration",
+          "sha256": "a2527ea0437b7e8bd11ed4cc2589fa3ff9c61fb3430254faa376637873cb8453"
+        }
+      ],
+      "matched_propositions": [],
+      "unit_ids": [
+        "D561"
+      ],
+      "matches": [
+        {
+          "unit_id": "D561",
+          "node_id": "D561",
+          "lean_declaration": "Deduction.CharacterBalanceMoves.core",
+          "match_kind": "unit_statement"
+        }
+      ],
+      "reading_routes": {},
+      "relation": "partial"
+    },
+    {
+      "id": "A-sizes",
+      "kind": "comparison",
+      "external_id": "Proposition 4.3; Corollary 4.4",
+      "contextual_unit_ids": [
+        "D563",
+        "P017"
+      ],
+      "lean_declarations": [
+        {
+          "name": "Formalism.LFunctionChainParameters.ThickSetMeanBounds.proposition_size_bound",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean",
+          "line_start": 507,
+          "line_end": 592,
+          "role": "related_declaration",
+          "sha256": "e573a01b923620c758779f91a8f4686e88c5bc4e08d203caaea4e3ece27e6f6f"
+        }
+      ],
+      "matched_propositions": [],
+      "unit_ids": [
+        "D563"
+      ],
+      "matches": [
+        {
+          "unit_id": "D563",
+          "node_id": "D563",
+          "lean_declaration": "Formalism.LFunctionChainParameters.ThickSetMeanBounds.proposition_size_bound",
+          "match_kind": "unit_statement"
+        }
+      ],
+      "reading_routes": {},
+      "relation": "partial"
+    },
+    {
+      "id": "A-scale",
+      "kind": "comparison",
+      "external_id": "Proposition 5.15 and display (5.17)",
+      "contextual_unit_ids": [
+        "P017"
+      ],
+      "lean_declarations": [
+        {
+          "name": "GlobalTheory.EX.RankVal",
+          "file": "Development/AbelianVarietyTheory/Definitions/GlobalTwisting/PairRowIffQdRows.lean",
+          "line_start": 28,
+          "line_end": 32,
+          "role": "related_declaration",
+          "sha256": "a1c938287675dc5ecb7e59945ef038be883b9bef13433e5a0d473be64d6446f3"
+        }
+      ],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {
+        "GlobalTheory.EX.RankVal": "B07"
+      },
+      "relation": "partial"
+    },
+    {
+      "id": "A-host-pair",
+      "kind": "comparison",
+      "external_id": "Theorems 5.10, 5.12; Propositions 5.14–5.16",
+      "contextual_unit_ids": [
+        "P017"
+      ],
+      "lean_declarations": [
+        {
+          "name": "QH.pairEx",
+          "file": "Development/AutomorphicArithmetic/MeanSquareBounds/pairEx.lean",
+          "line_start": 112,
+          "line_end": 169,
+          "role": "related_declaration",
+          "sha256": "574039390e63e91b94458f5170f3c35d3f85576a947346054d6b39a5015088ee"
+        },
+        {
+          "name": "UpperTheory.Top.hostOfField",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/HostOfField.lean",
+          "line_start": 8,
+          "line_end": 15,
+          "role": "related_declaration",
+          "sha256": "8855c0cb1dda7f740a7192d02c9ee56053f49b8c0fa7ceb3b3e99b6ea82eec7c"
+        },
+        {
+          "name": "GlobalTheory.EX.exists_ranks_rankVal_frame",
+          "file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsRanksRankValFrame.lean",
+          "line_start": 45,
+          "line_end": 99,
+          "role": "related_declaration",
+          "sha256": "9eded7a6c52d5582a3d35db0ae0c0876012c571c36b064f0dc9a575dbc6f8877"
+        }
+      ],
+      "matched_propositions": [],
+      "unit_ids": [
+        "D511",
+        "D513"
+      ],
+      "matches": [
+        {
+          "unit_id": "D511",
+          "node_id": "D511",
+          "lean_declaration": "UpperTheory.Top.hostOfField",
+          "match_kind": "unit_statement"
+        },
+        {
+          "unit_id": "D513",
+          "node_id": "D513",
+          "lean_declaration": "GlobalTheory.EX.exists_ranks_rankVal_frame",
+          "match_kind": "unit_statement"
+        }
+      ],
+      "reading_routes": {
+        "QH.pairEx": "D510"
+      },
+      "relation": "partial"
+    },
+    {
+      "id": "A-host",
+      "kind": "comparison",
+      "external_id": "Theorem 6.3, host and character step; Proposition 5.14",
+      "contextual_unit_ids": [
+        "D014"
+      ],
+      "lean_declarations": [
+        {
+          "name": "UpperTheory.Comparison₂.hostFactsS",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/hostFactsS.lean",
+          "line_start": 127,
+          "line_end": 136,
+          "role": "related_declaration",
+          "sha256": "ef97916068b30a9b83bc32d6b22fb03bdc3882660a3447f087cb63045e087583"
+        }
+      ],
+      "matched_propositions": [],
+      "unit_ids": [
+        "D014"
+      ],
+      "matches": [
+        {
+          "unit_id": "D014",
+          "node_id": "D014",
+          "lean_declaration": "UpperTheory.Comparison₂.hostFactsS",
+          "match_kind": "unit_statement"
+        }
+      ],
+      "reading_routes": {},
+      "relation": "partial"
+    },
+    {
+      "id": "A-chars",
+      "kind": "comparison",
+      "external_id": "Theorem 6.3, character step; Lemma 5.18; Theorems 5.10 and 5.12",
+      "contextual_unit_ids": [
+        "D547",
+        "D548",
+        "D549"
+      ],
+      "lean_declarations": [
+        {
+          "name": "UpperTheory.Comparison₂.gmA_eq",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/GmAEq.lean",
+          "line_start": 61,
+          "line_end": 149,
+          "role": "related_declaration",
+          "sha256": "9a030e980281ef02d4c0e1b0803352edc89c15c88c56163027de3672e703c068"
+        },
+        {
+          "name": "UpperTheory.Comparison₂.charsA",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/charsA.lean",
+          "line_start": 80,
+          "line_end": 125,
+          "role": "related_declaration",
+          "sha256": "2e3825540c0f207d1382c9bb8f7d4a9c0dd8c08b01dbe9ec6c2758ad44ac77c4"
+        },
+        {
+          "name": "UpperTheory.Comparison₂.sigA_le",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/SigALe.lean",
+          "line_start": 38,
+          "line_end": 60,
+          "role": "related_declaration",
+          "sha256": "76af9a0c15d1430c03efad24324cc1e1fc880da1c469944dac5ab35525f9a4e1"
+        }
+      ],
+      "matched_propositions": [],
+      "unit_ids": [
+        "D547",
+        "D548",
+        "D549"
+      ],
+      "matches": [
+        {
+          "unit_id": "D547",
+          "node_id": "D547",
+          "lean_declaration": "UpperTheory.Comparison₂.gmA_eq",
+          "match_kind": "unit_statement"
+        },
+        {
+          "unit_id": "D548",
+          "node_id": "D548",
+          "lean_declaration": "UpperTheory.Comparison₂.charsA",
+          "match_kind": "unit_statement"
+        },
+        {
+          "unit_id": "D549",
+          "node_id": "D549",
+          "lean_declaration": "UpperTheory.Comparison₂.sigA_le",
+          "match_kind": "unit_statement"
+        }
+      ],
+      "reading_routes": {},
+      "relation": "partial"
+    },
+    {
+      "id": "A-host-analytic",
+      "kind": "comparison",
+      "external_id": "Lemmas 5.1–5.9; Theorems 5.10, 5.12; Proposition 5.11; Corollary 5.13",
+      "contextual_unit_ids": [
+        "P017"
+      ],
+      "lean_declarations": [],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {},
+      "relation": "none"
+    },
+    {
+      "id": "A-host-nodes",
+      "kind": "comparison",
+      "external_id": "Propositions 5.14–5.17, 5.20; Lemmas 5.18, 5.21–5.22",
+      "contextual_unit_ids": [
+        "P017"
+      ],
+      "lean_declarations": [],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {},
+      "relation": "none"
+    },
+    {
+      "id": "A-gallagher",
+      "kind": "comparison",
+      "external_id": "§5 (C7), (G1), (G2); Gallagher Theorem 7 and display (26)",
+      "contextual_unit_ids": [
+        "P017"
+      ],
+      "lean_declarations": [],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {},
+      "relation": "none"
+    },
+    {
+      "id": "A-ray",
+      "kind": "comparison",
+      "external_id": "§5 (C9); Thorner–Zaman Theorem 1.4 and Stark Theorem 1′",
+      "contextual_unit_ids": [
+        "P017"
+      ],
+      "lean_declarations": [],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {},
+      "relation": "none"
+    },
+    {
+      "id": "A-base",
+      "kind": "comparison",
+      "external_id": "Theorem A; Theorem 6.3; Definitions 6.1 and 18.1",
+      "contextual_unit_ids": [
+        "P017"
+      ],
+      "lean_declarations": [],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {},
+      "relation": "none"
+    },
+    {
+      "id": "A-final",
+      "kind": "comparison",
+      "external_id": "Theorem 6.3; Theorem 1.1",
+      "contextual_unit_ids": [
+        "P017",
+        "P022"
+      ],
+      "lean_declarations": [
+        {
+          "name": "Formalism.HC.ChebyshevInequalityOnWindows",
+          "file": "Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/TopWin.lean",
+          "line_start": 26,
+          "line_end": 28,
+          "role": "related_declaration",
+          "sha256": "8a7b526bfd36de3c18365dab66ff256e325459fb5ae3426b72b875351e99f340"
+        }
+      ],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {
+        "Formalism.HC.ChebyshevInequalityOnWindows": "P017"
+      },
+      "relation": "partial"
+    },
+    {
+      "id": "A-vscale",
+      "kind": "comparison",
+      "external_id": "Lemma 18.2; Propositions 18.3–18.4",
+      "contextual_unit_ids": [
+        "P017",
+        "W13"
+      ],
+      "lean_declarations": [
+        {
+          "name": "UpperTheory.Top.VWinAt",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean",
+          "line_start": 44,
+          "line_end": 47,
+          "role": "related_declaration",
+          "sha256": "5ae8705f36350477e336b73960001e8aa1b0aa0720106a6a8c993601774892de"
+        }
+      ],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {
+        "UpperTheory.Top.VWinAt": "B07"
+      },
+      "relation": "partial"
+    },
+    {
+      "id": "A-nodes",
+      "kind": "comparison",
+      "external_id": "Lemma 18.6, Proposition 18.7, Corollary 18.8",
+      "contextual_unit_ids": [
+        "P017"
+      ],
+      "lean_declarations": [],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {},
+      "relation": "none"
+    },
+    {
+      "id": "A-uniform",
+      "kind": "comparison",
+      "external_id": "Definition 18.9; Proposition 18.11; §18.6",
+      "contextual_unit_ids": [
+        "T01",
+        "T02",
+        "T03",
+        "P021"
+      ],
+      "lean_declarations": [
+        {
+          "name": "Formalism.MainNotions.ChainTied",
+          "file": "Formalism/SharpRestriction/GlobalSchurBounds/TieGlobal.lean",
+          "line_start": 97,
+          "line_end": 114,
+          "role": "related_declaration",
+          "sha256": "ee75ebdaefc4c477d6a861c449117734998c23db306600b5d46646ae33d5eee7"
+        },
+        {
+          "name": "UpperTheory.Comparison₂.level_gm_le_on_family_scales",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/LevelGmLeOnFamilyScales.lean",
+          "line_start": 28,
+          "line_end": 30,
+          "role": "related_declaration",
+          "sha256": "3ccafb3b79c94bca951834869fa86b0f798622473f991b8215748e8a3087b2d1"
+        }
+      ],
+      "matched_propositions": [],
+      "unit_ids": [
+        "P017"
+      ],
+      "matches": [
+        {
+          "unit_id": "P017",
+          "node_id": "P017",
+          "lean_declaration": "UpperTheory.Comparison₂.level_gm_le_on_family_scales",
+          "match_kind": "unit_statement"
+        }
+      ],
+      "reading_routes": {
+        "Formalism.MainNotions.ChainTied": "P016"
+      },
+      "relation": "none"
+    },
+    {
+      "id": "A-err",
+      "kind": "comparison",
+      "external_id": "Lemmas 18.12–18.13, Proposition 18.14, Lemma 18.15, Proposition 18.16",
+      "contextual_unit_ids": [
+        "D567"
+      ],
+      "lean_declarations": [
+        {
+          "name": "Formalism.LFunctionChainParameters.LChain.errX5at_le",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/PChain.lean",
+          "line_start": 613,
+          "line_end": 672,
+          "role": "related_declaration",
+          "sha256": "a72dea7a7c24282008d1fea77748cb076f221dc8265c60e47a62b11f42887ebf"
+        }
+      ],
+      "matched_propositions": [],
+      "unit_ids": [
+        "D567"
+      ],
+      "matches": [
+        {
+          "unit_id": "D567",
+          "node_id": "D567",
+          "lean_declaration": "Formalism.LFunctionChainParameters.LChain.errX5at_le",
+          "match_kind": "unit_statement"
+        }
+      ],
+      "reading_routes": {},
+      "relation": "partial"
+    },
+    {
+      "id": "A-exponents",
+      "kind": "comparison",
+      "external_id": "Theorem A; Propositions 18.11 and 18.16; Theorem 6.3",
+      "contextual_unit_ids": [
+        "P017",
+        "D567"
+      ],
+      "lean_declarations": [
+        {
+          "name": "Formalism.HC.ChebyshevInequalityOnWindows",
+          "file": "Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/TopWin.lean",
+          "line_start": 26,
+          "line_end": 28,
+          "role": "related_declaration",
+          "sha256": "8a7b526bfd36de3c18365dab66ff256e325459fb5ae3426b72b875351e99f340"
+        },
+        {
+          "name": "UpperTheory.Top.topDesWin",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/DesWin.lean",
+          "line_start": 11,
+          "line_end": 31,
+          "role": "related_declaration",
+          "sha256": "21426fb09afe08ec5330cee84e3953ee4565f9f6d616f3482be2a4e352c7fc35"
+        }
+      ],
+      "matched_propositions": [],
+      "unit_ids": [
+        "B05"
+      ],
+      "matches": [
+        {
+          "unit_id": "B05",
+          "node_id": "D488",
+          "lean_declaration": "UpperTheory.Top.topDesWin",
+          "match_kind": "graph_member"
+        }
+      ],
+      "reading_routes": {
+        "Formalism.HC.ChebyshevInequalityOnWindows": "P017",
+        "UpperTheory.Top.topDesWin": "B05"
+      },
+      "relation": "partial"
+    },
+    {
+      "id": "B-valuation",
+      "kind": "comparison",
+      "external_id": "§9.3, Theorem thm:valuation",
+      "contextual_unit_ids": [],
+      "lean_declarations": [
+        {
+          "name": "GlobalTheory.KerGaussA.kvalGe_gainA",
+          "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/KvalGeOrbitGainWithoutOperator.lean",
+          "line_start": 106,
+          "line_end": 160,
+          "role": "corresponding_proposition",
+          "sha256": "6063b70d8399673033fb070e38f02495be0e7ecc52ff05f475f49f09b5338ac7"
+        }
+      ],
+      "matched_propositions": [
+        "GlobalTheory.KerGaussA.kvalGe_gainA"
+      ],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {
+        "GlobalTheory.KerGaussA.kvalGe_gainA": "T04"
+      },
+      "relation": "exact"
+    },
+    {
+      "id": "B-gain-inputs",
+      "kind": "comparison",
+      "external_id": "§9.3, algebraic inputs to thm:valuation",
+      "contextual_unit_ids": [],
+      "lean_declarations": [
+        {
+          "name": "Formalism.InvariantFactorPaths.G7.BetaIsG",
+          "file": "Formalism/ThetaLogCoordinates/UniformThetaSubstitution/IsLawOfLog.lean",
+          "line_start": 98,
+          "line_end": 103,
+          "role": "related_declaration",
+          "sha256": "e2d9c7baa30fbe3bd2d179519b32f0ae5895ccfb9e916eb9fecc922892492adb"
+        },
+        {
+          "name": "Formalism.InvariantFactorPaths.G7.TwoSums",
+          "file": "Formalism/ThetaLogCoordinates/UniformThetaSubstitution/CyclicPowerClassOfExpEquiv.lean",
+          "line_start": 103,
+          "line_end": 110,
+          "role": "related_declaration",
+          "sha256": "9521ebf428835e386037f5b04ad5b282e59767ae1be484ba826a286381742c4a"
+        },
+        {
+          "name": "Formalism.InvariantFactorPaths.G7.Top.betaIsG",
+          "file": "Formalism/ThetaLogCoordinates/UniformThetaSubstitution/FinalS.lean",
+          "line_start": 61,
+          "line_end": 62,
+          "role": "related_declaration",
+          "sha256": "8a994d4f7f9fc6ecc3702f8e933ee63bfdf92426383d6cf7f516595c601203f6"
+        },
+        {
+          "name": "Formalism.InvariantFactorPaths.G7.Top.twoSums",
+          "file": "Formalism/ThetaLogCoordinates/UniformThetaSubstitution/FinalS.lean",
+          "line_start": 38,
+          "line_end": 38,
+          "role": "related_declaration",
+          "sha256": "c520a2debcccd81269d04a0f4eb24d9431e81789a29f9c5b03d39b72783ce984"
+        }
+      ],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {
+        "Formalism.InvariantFactorPaths.G7.BetaIsG": "P045",
+        "Formalism.InvariantFactorPaths.G7.TwoSums": "T04",
+        "Formalism.InvariantFactorPaths.G7.Top.betaIsG": "P045",
+        "Formalism.InvariantFactorPaths.G7.Top.twoSums": "T04"
+      },
+      "relation": "partial"
+    },
+    {
+      "id": "B-kernel",
+      "kind": "comparison",
+      "external_id": "§8.8, Theorem kernellaw; Hypotheses 11.22 and 11.42",
+      "contextual_unit_ids": [
+        "P012"
+      ],
+      "lean_declarations": [
+        {
+          "name": "GlobalTheory.KernelSpan.kernel_law",
+          "file": "Development/AbelianVarietyTheory/Proofs/DivisorProofs/ThetaKernelTensorValues.lean",
+          "line_start": 91,
+          "line_end": 113,
+          "role": "related_declaration",
+          "sha256": "44010dadda944565fb88cf395998009a4dcf600f0081852d91ae9588923adc0f"
+        }
+      ],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {
+        "GlobalTheory.KernelSpan.kernel_law": "T05"
+      },
+      "relation": "none"
+    },
+    {
+      "id": "B-kernel-inputs",
+      "kind": "comparison",
+      "external_id": "§8, hypplane, orthint, unitaryinv, hypshape, transl, normrel, cubeadj, divunit and betaprops",
+      "contextual_unit_ids": [],
+      "lean_declarations": [
+        {
+          "name": "Formalism.L2.KerInert.Rep.OrthInt",
+          "file": "Formalism/LocalToGlobal/InertKernelTheory/DefsRep.lean",
+          "line_start": 26,
+          "line_end": 31,
+          "role": "related_declaration",
+          "sha256": "7a07ee6e7cf116aadfa15956f546cb6ad0bbfdde0d8a364f89a5d19b023c8d17"
+        },
+        {
+          "name": "Formalism.L2.Th1.Top.HypShape_of",
+          "file": "Formalism/LocalToGlobal/TorsionIntegrality/UniformGaussModels/OrthogonalGaussModels/KappaIntegralOfCalculation.lean",
+          "line_start": 42,
+          "line_end": 109,
+          "role": "related_declaration",
+          "sha256": "2dc353c85445123d740e7904e44479c3932da2c789909ab39b2add37bf3f2746"
+        },
+        {
+          "name": "Formalism.L2.G.Pend.LTIso",
+          "file": "Formalism/LocalToGlobal/GroupLattices/PendingLemmas/CoeffOneLNe.lean",
+          "line_start": 60,
+          "line_end": 63,
+          "role": "related_declaration",
+          "sha256": "bd1ea0d7bbfe48b42f75b9eab7a8bb2ecec09aed94386897b71a3916581cafb7"
+        }
+      ],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {
+        "Formalism.L2.KerInert.Rep.OrthInt": "T04",
+        "Formalism.L2.Th1.Top.HypShape_of": "T04",
+        "Formalism.L2.G.Pend.LTIso": "Z4.2.02"
+      },
+      "relation": "partial"
+    },
+    {
+      "id": "B-frame",
+      "kind": "comparison",
+      "external_id": "§13.2, Theorem r3:frame",
+      "contextual_unit_ids": [],
+      "lean_declarations": [
+        {
+          "name": "Formalism.HN.TheoremFSharp",
+          "file": "Formalism/HarderNarasimhan/StatementFrameF.lean",
+          "line_start": 64,
+          "line_end": 99,
+          "role": "corresponding_proposition",
+          "sha256": "96a1e042e5237af2d136a8b9d950b310011e65be47425d78dc89acea31d912a9"
+        },
+        {
+          "name": "Formalism.HN.frame_theorem_sharp",
+          "file": "Formalism/HarderNarasimhan/HarderNarasimhanProofs/TheoremFSharp.lean",
+          "line_start": 388,
+          "line_end": 388,
+          "role": "corresponding_proposition",
+          "sha256": "63f791927488b7810cd6f6a8990ff7991af54d1db77db1d69dea173db65d9fee"
+        }
+      ],
+      "matched_propositions": [
+        "Formalism.HN.TheoremFSharp",
+        "Formalism.HN.frame_theorem_sharp"
+      ],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {
+        "Formalism.HN.TheoremFSharp": "D479",
+        "Formalism.HN.frame_theorem_sharp": "D479"
+      },
+      "relation": "exact"
+    },
+    {
+      "id": "B-frame-lemma",
+      "kind": "comparison",
+      "external_id": "§13.2, frame lemma preceding r3:frame",
+      "contextual_unit_ids": [],
+      "lean_declarations": [
+        {
+          "name": "Formalism.HN.FrameLA1",
+          "file": "Formalism/HarderNarasimhan/StatementFrameF.lean",
+          "line_start": 11,
+          "line_end": 24,
+          "role": "corresponding_proposition",
+          "sha256": "006d871229bc38d8c83457fa1019900a87d9fcbdc3e1b2243c23cbb2dce0c279"
+        }
+      ],
+      "matched_propositions": [
+        "Formalism.HN.FrameLA1"
+      ],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {
+        "Formalism.HN.FrameLA1": "D479"
+      },
+      "relation": "exact"
+    },
+    {
+      "id": "B-pre-frame",
+      "kind": "comparison",
+      "external_id": "§13, r3:covol, r3:SI and r3:HN",
+      "contextual_unit_ids": [
+        "D479"
+      ],
+      "lean_declarations": [],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {},
+      "relation": "none"
+    },
+    {
+      "id": "B-compare",
+      "kind": "comparison",
+      "external_id": "§10–11, formB, ZLbound, lowterm and inversion",
+      "contextual_unit_ids": [],
+      "lean_declarations": [
+        {
+          "name": "UpperTheory.Comparison₂.formB",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/Imports.lean",
+          "line_start": 8,
+          "line_end": 19,
+          "role": "related_declaration",
+          "sha256": "7e428d22efce0efd80b227098601dbf9c2bc6e24039be5c07475f955713a5d5c"
+        },
+        {
+          "name": "Formalism.MainNotions.FormalGroupSystem.Pf.hk_point",
+          "file": "Formalism/SharpRestriction/GrowthBounds/MultisetValuation/HeckeConditionOfAdm.lean",
+          "line_start": 15,
+          "line_end": 73,
+          "role": "related_declaration",
+          "sha256": "7cbd4a32cba910754aae886c0d9f69d8943cbdf270d11b1b49870f09f753a61a"
+        },
+        {
+          "name": "Formalism.MainNotions.FormalGroupSystem.Pf.Cii",
+          "file": "Formalism/SharpRestriction/GrowthBounds/MultisetValuation/TheoremOfAlternateForm.lean",
+          "line_start": 538,
+          "line_end": 548,
+          "role": "related_declaration",
+          "sha256": "2cf791f863c5a4dcad6a5690be3ddb47094c94607aeabc55d63945ea189e6258"
+        }
+      ],
+      "matched_propositions": [],
+      "unit_ids": [
+        "P018"
+      ],
+      "matches": [
+        {
+          "unit_id": "P018",
+          "node_id": "P018",
+          "lean_declaration": "UpperTheory.Comparison₂.formB",
+          "match_kind": "unit_statement"
+        }
+      ],
+      "reading_routes": {
+        "Formalism.MainNotions.FormalGroupSystem.Pf.hk_point": "B06",
+        "Formalism.MainNotions.FormalGroupSystem.Pf.Cii": "B06"
+      },
+      "relation": "partial"
+    },
+    {
+      "id": "B-effective",
+      "kind": "comparison",
+      "external_id": "§17.4.3, tw:effectiveK (K1)",
+      "contextual_unit_ids": [
+        "W05"
+      ],
+      "lean_declarations": [
+        {
+          "name": "UpperTheory.V.LemmaK",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/GeneratorCountTuples/LemmaK.lean",
+          "line_start": 13,
+          "line_end": 17,
+          "role": "corresponding_proposition",
+          "sha256": "f466d191a09f5f511cab4e9831b7e4db55f20f370a904d9428397ade8a179673"
+        },
+        {
+          "name": "UpperTheory.V.ZK.lemmaK",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/LemmaKOfLitN.lean",
+          "line_start": 28,
+          "line_end": 31,
+          "role": "related_declaration",
+          "sha256": "20ef84308b3cabad07112f0c18be730f1954210bf5184e77695dfa05be378662"
+        },
+        {
+          "name": "UpperTheory.V.ZK.lemmaK_litN_alt",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/KFinal.lean",
+          "line_start": 11,
+          "line_end": 11,
+          "role": "related_declaration",
+          "sha256": "3c9b240c3e60df3bff1f7de8a5a9137ed9e9d51673283c0d67be965360b1e11c"
+        }
+      ],
+      "matched_propositions": [
+        "UpperTheory.V.LemmaK"
+      ],
+      "unit_ids": [
+        "W05"
+      ],
+      "matches": [
+        {
+          "unit_id": "W05",
+          "node_id": "W05",
+          "lean_declaration": "UpperTheory.V.ZK.lemmaK_litN_alt",
+          "match_kind": "unit_statement"
+        }
+      ],
+      "reading_routes": {
+        "UpperTheory.V.LemmaK": "P020",
+        "UpperTheory.V.ZK.lemmaK": "W05"
+      },
+      "relation": "exact"
+    },
+    {
+      "id": "B-effective-inputs",
+      "kind": "comparison",
+      "external_id": "§17.4.3, steps 5–14",
+      "contextual_unit_ids": [
+        "W05"
+      ],
+      "lean_declarations": [
+        {
+          "name": "UpperTheory.V.ZK.lemmaK_of_steps",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/LemmaKOfSteps.lean",
+          "line_start": 170,
+          "line_end": 174,
+          "role": "related_declaration",
+          "sha256": "ea0dc3fd08c6890e5bc45884a8f7522160b0cf7fcc32043fdff74968c8303cb2"
+        },
+        {
+          "name": "UpperTheory.V.ZK.torsAll",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/ExponentLe.lean",
+          "line_start": 70,
+          "line_end": 117,
+          "role": "related_declaration",
+          "sha256": "0798c23b6448fce7fa63038b788fb03faff9818aae67fca73ada95c3d06f6786"
+        },
+        {
+          "name": "UpperTheory.V.KT.tors_le",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HermiteNormalForms/Assembly.lean",
+          "line_start": 25,
+          "line_end": 30,
+          "role": "related_declaration",
+          "sha256": "510efa10b41ac04c6635d0e762a8f7d40b51066a51584f90e86db2e69e967ee3"
+        }
+      ],
+      "matched_propositions": [],
+      "unit_ids": [
+        "P038",
+        "P039",
+        "Z2.K7"
+      ],
+      "matches": [
+        {
+          "unit_id": "P039",
+          "node_id": "P039",
+          "lean_declaration": "UpperTheory.V.ZK.torsAll",
+          "match_kind": "unit_statement"
+        },
+        {
+          "unit_id": "Z2.K7",
+          "node_id": null,
+          "lean_declaration": "UpperTheory.V.ZK.torsAll",
+          "match_kind": "unit_statement"
+        },
+        {
+          "unit_id": "P038",
+          "node_id": "P038",
+          "lean_declaration": "UpperTheory.V.KT.tors_le",
+          "match_kind": "unit_statement"
+        },
+        {
+          "unit_id": "Z2.K7",
+          "node_id": null,
+          "lean_declaration": "UpperTheory.V.KT.tors_le",
+          "match_kind": "unit_statement"
+        }
+      ],
+      "reading_routes": {
+        "UpperTheory.V.ZK.lemmaK_of_steps": "W05"
+      },
+      "relation": "partial"
+    },
+    {
+      "id": "B-vandiver",
+      "kind": "comparison",
+      "external_id": "§17.3, (V) from (CorGK), vanishing corollary; w4:prop:need",
+      "contextual_unit_ids": [
+        "W08",
+        "W13"
+      ],
+      "lean_declarations": [
+        {
+          "name": "UpperTheory.V.U3.CorGK",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/KatoUse.lean",
+          "line_start": 44,
+          "line_end": 52,
+          "role": "related_declaration",
+          "sha256": "1c64f05bff9c03bb6686840accbd8e062aad6b65f1394847b594eab22b90b10d"
+        },
+        {
+          "name": "UpperTheory.V.U3.PropGK",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/UnitaryThreeGroups/KatoUse.lean",
+          "line_start": 36,
+          "line_end": 42,
+          "role": "related_declaration",
+          "sha256": "df884ef5d3dfd012302a0f8d6a5bd2fd8f0b01374dd8d3db9080279e3254778d"
+        },
+        {
+          "name": "UpperTheory.V.HV.GD",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/Counts.lean",
+          "line_start": 9,
+          "line_end": 22,
+          "role": "related_declaration",
+          "sha256": "baaac9b8783e14d5bf7f792c3ee3ea2461bd5dd4e93599307eb30349ccafe483"
+        }
+      ],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {
+        "UpperTheory.V.U3.CorGK": "D532",
+        "UpperTheory.V.U3.PropGK": "W08",
+        "UpperTheory.V.HV.GD": "D528"
+      },
+      "relation": "partial"
+    },
+    {
+      "id": "B-ant",
+      "kind": "comparison",
+      "external_id": "§17.3, (G3); Allen–Newton–Thorne Theorem 1.1",
+      "contextual_unit_ids": [
+        "W03",
+        "W08",
+        "W10",
+        "P025"
+      ],
+      "lean_declarations": [
+        {
+          "name": "UpperTheory.V.Z.J.count_i_of_printed_bound_k_kato_automorphy",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/LinkedUnlE.lean",
+          "line_start": 49,
+          "line_end": 54,
+          "role": "related_declaration",
+          "sha256": "3970adb13bfb7042a1bd5a6a90a9d568007421cf78b646ea14672abf40434992"
+        }
+      ],
+      "matched_propositions": [],
+      "unit_ids": [
+        "W08"
+      ],
+      "matches": [
+        {
+          "unit_id": "W08",
+          "node_id": "W08",
+          "lean_declaration": "UpperTheory.V.Z.J.count_i_of_printed_bound_k_kato_automorphy",
+          "match_kind": "unit_statement"
+        }
+      ],
+      "reading_routes": {},
+      "relation": "partial"
+    },
+    {
+      "id": "B-mathref",
+      "kind": "comparison",
+      "external_id": "§17.3, Vandiver-direction threshold and the de la Torre Durán torsion bound",
+      "contextual_unit_ids": [
+        "W05",
+        "W08"
+      ],
+      "lean_declarations": [],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {},
+      "relation": "none"
+    },
+    {
+      "id": "B-cov",
+      "kind": "comparison",
+      "external_id": "§15, cov:main and inputs (I1)–(I17), (G1)–(G4)",
+      "contextual_unit_ids": [
+        "T13",
+        "T14",
+        "T26"
+      ],
+      "lean_declarations": [
+        {
+          "name": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopCovolSlim2Use.lean",
+          "line_start": 16,
+          "line_end": 22,
+          "role": "related_declaration",
+          "sha256": "536fef61884c9c881a5577b6ce8aaf70d5089bfef5c7cf38d33dea9831d11764"
+        },
+        {
+          "name": "PositivityTheory.HtPt.Ah.deep_slim_use",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/MoriwakiBigness/HilbertSamuelApplications/AhSlimU.lean",
+          "line_start": 9,
+          "line_end": 14,
+          "role": "related_declaration",
+          "sha256": "cdaf281cbb61ff4c019f95f1e1260bac32c3221e0a21b0ac149b9e4f71d83b0b"
+        }
+      ],
+      "matched_propositions": [],
+      "unit_ids": [
+        "T13",
+        "T14"
+      ],
+      "matches": [
+        {
+          "unit_id": "T13",
+          "node_id": "T13",
+          "lean_declaration": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+          "match_kind": "unit_statement"
+        },
+        {
+          "unit_id": "T14",
+          "node_id": "T14",
+          "lean_declaration": "PositivityTheory.HtPt.Ah.deep_slim_use",
+          "match_kind": "unit_statement"
+        }
+      ],
+      "reading_routes": {},
+      "relation": "none"
+    },
+    {
+      "id": "B-bessel",
+      "kind": "comparison",
+      "external_id": "§14, Theorem S, pre-trace and row estimates, Hypotheses 14.61, 14.71–14.77",
+      "contextual_unit_ids": [
+        "T03"
+      ],
+      "lean_declarations": [
+        {
+          "name": "GlobalTheory.LoopRowsCloseGap.loop_rows_closed_gap",
+          "file": "Development/AbelianVarietyTheory/Proofs/FlagMeasures/LoopRowsOfLargeGapDiscreteSeries.lean",
+          "line_start": 121,
+          "line_end": 205,
+          "role": "related_declaration",
+          "sha256": "aacbfac43506ea89d2fd3260d157d9dd13ffad6d1852640c94d8c43a2c02f023"
+        }
+      ],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {
+        "GlobalTheory.LoopRowsCloseGap.loop_rows_closed_gap": "T04"
+      },
+      "relation": "partial"
+    },
+    {
+      "id": "B-seesaw",
+      "kind": "comparison",
+      "external_id": "§14, double-step identity; Hypotheses 14.10–14.28",
+      "contextual_unit_ids": [
+        "D484"
+      ],
+      "lean_declarations": [
+        {
+          "name": "GlobalTheory.BigSeesaw.seesaw_big",
+          "file": "Development/AbelianVarietyTheory/Proofs/DivisorProofs/BigRouteSeesawArrowKernelsProduct.lean",
+          "line_start": 102,
+          "line_end": 212,
+          "role": "related_declaration",
+          "sha256": "5212b617cd94b0bb895f929410acefc6eccf74d6faa85d4b8b9acbac02b1d729"
+        }
+      ],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {
+        "GlobalTheory.BigSeesaw.seesaw_big": "T02"
+      },
+      "relation": "partial"
+    },
+    {
+      "id": "B-kato",
+      "kind": "comparison",
+      "external_id": "§17, (G4); Kato Theorem 14.2(1)",
+      "contextual_unit_ids": [
+        "W07"
+      ],
+      "lean_declarations": [
+        {
+          "name": "UpperTheory.V.Z.Kato.WeilSphericalRecords.katoTwoW_of_printsH",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/KatoTwoWOfPublishedH.lean",
+          "line_start": 48,
+          "line_end": 49,
+          "role": "related_declaration",
+          "sha256": "0d46b7fd06c3ce5ca058662258365575813229d001e91ee490bb87e01a06254e"
+        }
+      ],
+      "matched_propositions": [],
+      "unit_ids": [
+        "W07"
+      ],
+      "matches": [
+        {
+          "unit_id": "W07",
+          "node_id": "W07",
+          "lean_declaration": "UpperTheory.V.Z.Kato.WeilSphericalRecords.katoTwoW_of_printsH",
+          "match_kind": "unit_statement"
+        }
+      ],
+      "reading_routes": {},
+      "relation": "partial"
+    },
+    {
+      "id": "B-sp4",
+      "kind": "comparison",
+      "external_id": "§17.4.1–17.4.2, rank-four counts and base change",
+      "contextual_unit_ids": [
+        "W06",
+        "W09"
+      ],
+      "lean_declarations": [
+        {
+          "name": "UpperTheory.V.HV.DescentVanishingReductions.sp4In0_alt",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/Sp4In0.lean",
+          "line_start": 18,
+          "line_end": 19,
+          "role": "related_declaration",
+          "sha256": "3dc03d26591bcf558003f03801506e248d88020ee993ca6fbd30e0d2648a7115"
+        }
+      ],
+      "matched_propositions": [],
+      "unit_ids": [
+        "W06"
+      ],
+      "matches": [
+        {
+          "unit_id": "W06",
+          "node_id": "W06",
+          "lean_declaration": "UpperTheory.V.HV.DescentVanishingReductions.sp4In0_alt",
+          "match_kind": "unit_statement"
+        }
+      ],
+      "reading_routes": {},
+      "relation": "none"
+    },
+    {
+      "id": "B-minus",
+      "kind": "comparison",
+      "external_id": "§17, decomposition theorem, statement (II)",
+      "contextual_unit_ids": [
+        "W11",
+        "W14"
+      ],
+      "lean_declarations": [
+        {
+          "name": "UpperTheory.V.Odd.thmBcFree_of",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/OddResidueBounds/ThmBcOfPsiBound.lean",
+          "line_start": 295,
+          "line_end": 295,
+          "role": "related_declaration",
+          "sha256": "2c8cebde03e946849ee37f8739cd2ba2054e533631703f8b2b49c94a93fc3d55"
+        }
+      ],
+      "matched_propositions": [],
+      "unit_ids": [
+        "W14"
+      ],
+      "matches": [
+        {
+          "unit_id": "W14",
+          "node_id": "W14",
+          "lean_declaration": "UpperTheory.V.Odd.thmBcFree_of",
+          "match_kind": "unit_statement"
+        }
+      ],
+      "reading_routes": {},
+      "relation": "none"
+    },
+    {
+      "id": "B-counts",
+      "kind": "comparison",
+      "external_id": "§17, decomposition theorem and w4:prop:pluschar, w4:prop:genericplus",
+      "contextual_unit_ids": [
+        "W13"
+      ],
+      "lean_declarations": [
+        {
+          "name": "UpperTheory.V.HV.vwin_of_counts",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/JointWinOfCounts.lean",
+          "line_start": 30,
+          "line_end": 33,
+          "role": "related_declaration",
+          "sha256": "6550cb3fa71638641308abae05eac3983e56c2d0962731973d806ec5cff6a46f"
+        }
+      ],
+      "matched_propositions": [],
+      "unit_ids": [
+        "W13"
+      ],
+      "matches": [
+        {
+          "unit_id": "W13",
+          "node_id": "W13",
+          "lean_declaration": "UpperTheory.V.HV.vwin_of_counts",
+          "match_kind": "unit_statement"
+        }
+      ],
+      "reading_routes": {},
+      "relation": "partial"
+    },
+    {
+      "id": "B-assembly",
+      "kind": "comparison",
+      "external_id": "§18.3 and Hypothesis 18.10",
+      "contextual_unit_ids": [
+        "T01",
+        "T02",
+        "T03"
+      ],
+      "lean_declarations": [
+        {
+          "name": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+          "line_start": 69,
+          "line_end": 73,
+          "role": "related_declaration",
+          "sha256": "a24733b92afe929a3bce10446a1e6c1f7cda414ca65fce7d1e44ac00fd8518d7"
+        },
+        {
+          "name": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+          "line_start": 44,
+          "line_end": 68,
+          "role": "related_declaration",
+          "sha256": "7c64a85613593761729e25e8e59316e93e4566b0495623843333ac8a5102d27e"
+        },
+        {
+          "name": "GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/HypothesesNonemptyOfUnramifiedExponents.lean",
+          "line_start": 41,
+          "line_end": 61,
+          "role": "related_declaration",
+          "sha256": "0b7fae1cbdd2af84cebb033b7477a948407336a5ad88459ac7e8f20ca89535f2"
+        }
+      ],
+      "matched_propositions": [],
+      "unit_ids": [
+        "T01",
+        "T02",
+        "T03"
+      ],
+      "matches": [
+        {
+          "unit_id": "T01",
+          "node_id": "T01",
+          "lean_declaration": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+          "match_kind": "unit_statement"
+        },
+        {
+          "unit_id": "T02",
+          "node_id": "T02",
+          "lean_declaration": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+          "match_kind": "unit_statement"
+        },
+        {
+          "unit_id": "T03",
+          "node_id": "T03",
+          "lean_declaration": "GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt",
+          "match_kind": "unit_statement"
+        }
+      ],
+      "reading_routes": {},
+      "relation": "none"
+    },
+    {
+      "id": "B-congruence",
+      "kind": "comparison",
+      "external_id": "§17, w4:prop:cong, w4:prop:fitting, lk:*, r5:thm:DIVinN; Hypotheses 17.24 and 17.36",
+      "contextual_unit_ids": [
+        "D421",
+        "D427"
+      ],
+      "lean_declarations": [
+        {
+          "name": "Formalism.MainNotions.LinkN",
+          "file": "Formalism/SharpRestriction/GlobalTheoremInputs.lean",
+          "line_start": 45,
+          "line_end": 47,
+          "role": "related_declaration",
+          "sha256": "61670c58d9fc4e2c1e8b43f71f0855d6be3df97c9e789ef1b37dc88685a85eaa"
+        },
+        {
+          "name": "Formalism.MainNotions.N.K.Closed.theorem_n5_from_inputs",
+          "file": "Formalism/AdmissibleDesigns/StatementOneBFromUnramified.lean",
+          "line_start": 142,
+          "line_end": 175,
+          "role": "related_declaration",
+          "sha256": "c8d1745b519bab4d0d2498bceaea110e4c7371acd45b2f8db13bf0821c1502c0"
+        }
+      ],
+      "matched_propositions": [],
+      "unit_ids": [
+        "P044",
+        "Z3.2"
+      ],
+      "matches": [
+        {
+          "unit_id": "P044",
+          "node_id": "P044",
+          "lean_declaration": "Formalism.MainNotions.N.K.Closed.theorem_n5_from_inputs",
+          "match_kind": "unit_statement"
+        },
+        {
+          "unit_id": "Z3.2",
+          "node_id": null,
+          "lean_declaration": "Formalism.MainNotions.N.K.Closed.theorem_n5_from_inputs",
+          "match_kind": "unit_statement"
+        }
+      ],
+      "reading_routes": {
+        "Formalism.MainNotions.LinkN": "B05"
+      },
+      "relation": "partial"
+    },
+    {
+      "id": "B-reductions",
+      "kind": "comparison",
+      "external_id": "§17, Lemmas 17.2–17.5; w4:prop:res, classgroup, corToBound, prop2cor, onechar2prop",
+      "contextual_unit_ids": [
+        "W08",
+        "W13"
+      ],
+      "lean_declarations": [],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {},
+      "relation": "none"
+    },
+    {
+      "id": "B-Hecke",
+      "kind": "comparison",
+      "external_id": "§12, C6, C8–C11, B8–B9, A2, A5–A7 and A9",
+      "contextual_unit_ids": [
+        "P012"
+      ],
+      "lean_declarations": [
+        {
+          "name": "Formalism.MainNotions.G.LPprime",
+          "file": "Formalism/SharpRestriction/GrowthBounds/UnramifiedQuadraticSetting.lean",
+          "line_start": 216,
+          "line_end": 220,
+          "role": "related_declaration",
+          "sha256": "f0a089969b8e62231760c074cad6816099a42818e13551468f4b7b20eb474346"
+        }
+      ],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {
+        "Formalism.MainNotions.G.LPprime": "P046"
+      },
+      "relation": "none"
+    },
+    {
+      "id": "B-selmer-inputs",
+      "kind": "comparison",
+      "external_id": "§17, (I), (II), (Count), (OneChar), (G1)–(G4), (F2), (F3)",
+      "contextual_unit_ids": [
+        "W03",
+        "W07",
+        "W08",
+        "W10",
+        "W13"
+      ],
+      "lean_declarations": [],
+      "matched_propositions": [],
+      "unit_ids": [],
+      "matches": [],
+      "reading_routes": {},
+      "relation": "none"
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "T22",
+  "edition_sha256": "e39565713beb4c710ac45b69136d27b219893b3c4c8e83186dbb2e98e79e6696",
+  "note_sha256": "9f840d136a4601edc8515866eb8069c80aaeaea930ab2a0beee0a380f7886e4e",
+  "statement_sha256": "70b761b057efeed3253de1e21ca2a4d582e47851876d835f914032978f431840",
+  "sources": [
+    {
+      "path": "notes/units/T22_round4.md",
+      "sha256": "9f840d136a4601edc8515866eb8069c80aaeaea930ab2a0beee0a380f7886e4e"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The associated line classifies a homomorphism to the dual which is a polarization.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: dual abelian scheme and cube theorem"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.LiteratureTheorems.dual_abelian_scheme_of_literature",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+          "line0": 545,
+          "line1": 546
+        },
+        {
+          "name": "PositivityTheory.HtPt.Narrow.zarhin",
+          "file": "Development/WeilBound/CoreStatements/HodgeTatePoints/ZarTop.lean",
+          "line0": 6,
+          "line1": 7
+        },
+        {
+          "name": "PositivityTheory.PrwZar.zarhinStatement_of_dual_cube_qiR",
+          "file": "Development/WeilBound/CoreStatements/AbelianHeightsDuality/ZarhinTrick/ZarhinStatementOfDualCubeQiR.lean",
+          "line0": 45,
+          "line1": 57
+        }
+      ],
+      "source": "notes/units/T22_round4.md",
+      "anchor": "The wrapper passes a dual abelian scheme theorem to the Zarhin supplier",
+      "source_lines": [
+        25,
+        25
+      ],
+      "claim_sha256": "7814c218d7a371ef12fb4b11d0d6ff24c848357fb12de3494608d8b13cd3c5f5",
+      "passage_sha256": "88e501c1802061aabf6fe094cd6f1dd116163cbafd37eaefb78d4cd337bc1cf5",
+      "sha256": "5ae000c9b602859a1aec5efedb8e7732d60ae9df65da3a8ebf9be7c6d59e7173",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The quasi-inverse equations supply a principal polarization on the fourfold product of the scheme with its dual.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S1",
+        "input: quasi-inverse and quaternion construction"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.PrwZar.principal_of_quasiInverse",
+          "file": "Development/WeilBound/CoreStatements/AbelianHeightsDuality/ZarhinTrick/ZarhinStatementOfDualCubeQiR.lean",
+          "line0": 27,
+          "line1": 41
+        },
+        {
+          "name": "PositivityTheory.PrwZar.zarhinStatement_of_dual_cube",
+          "file": "Development/WeilBound/CoreStatements/AbelianHeightsDuality/ZarhinTrick/ZarhinStatementOfDualCubeQiR.lean",
+          "line0": 68,
+          "line1": 70
+        }
+      ],
+      "source": "notes/units/T22_round4.md",
+      "anchor": "A named supplier gives an integer $m\\ge1$ and a return homomorphism $B\\to A$ whose two com",
+      "source_lines": [
+        29,
+        29
+      ],
+      "claim_sha256": "00a57f4ec7006fdb32f48c9679851ff670a6a656260b4b5474f2e2086e0a9a93",
+      "passage_sha256": "73e7e4c192f48d5b0a0172791e0dff807894bfca182b80165332931c6e88c34f",
+      "sha256": "0e5b79e978c4d1548b77cccd1c02614b4d73a4c75d25e1271e8b4df13bcab79c",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The product supports the required relatively ample symmetric representative with its fibre kernel conditions.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S2",
+        "input: symmetric bundle theorem"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.PrwZar.zarhinStatement_of_dual_cube_qiR",
+          "file": "Development/WeilBound/CoreStatements/AbelianHeightsDuality/ZarhinTrick/ZarhinStatementOfDualCubeQiR.lean",
+          "line0": 56,
+          "line1": 65
+        }
+      ],
+      "source": "notes/units/T22_round4.md",
+      "anchor": "The repeated product used in the polarization construction is abelian over the original ba",
+      "source_lines": [
+        33,
+        33
+      ],
+      "claim_sha256": "cb85b6759d205ad02b84922c08075d1e111059af9c6453448d693f834ffebde7",
+      "passage_sha256": "f4f60d607d629806c2172a62bd51c7006d1f8af289a343b5d5eb6f4f2f1a6388",
+      "sha256": "74f514d5197deda81cb40b47f41458aeffcdc8cb85167bf8f660a4a32f228c7f",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "Insertion into the first factor followed by projection is the identity on the original abelian scheme.",
+      "kind": "assembly",
+      "uses": [
+        "S3",
+        "standard: product projection"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.PrwZar.zarhinStatement_of_dual_cube_qiR",
+          "file": "Development/WeilBound/CoreStatements/AbelianHeightsDuality/ZarhinTrick/ZarhinStatementOfDualCubeQiR.lean",
+          "line0": 58,
+          "line1": 66
+        }
+      ],
+      "source": "notes/units/T22_round4.md",
+      "anchor": "Insert $A$ in the first factor and take identities in the other factors",
+      "source_lines": [
+        37,
+        37
+      ],
+      "claim_sha256": "d2203222a3e79da8fb1d1014cdc1eb7b35879c3167f7986d085335d66c2e4a85",
+      "passage_sha256": "087d39def091231e00c792357aa05e7c793d2c798a19851076ffffa7b56386b6",
+      "sha256": "2fe18d51f8cf26d01c17023897682efa19d38181b7fcbec9668edc6fb41f72e4",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "7b632de015e223ed66ef98a489d65a980d601e21410462b442369cebc25eaf45",
+      "sources": [
+        {
+          "path": "notes/units/T22_round4.md",
+          "sha256": "9999d6359921f592378d49f5ff23460ba499ce5f2be39af19ee1caaffb471d37"
+        }
+      ],
+      "statement_sha256": "59bb6762cdc3bd92dd4b4047119ebe9c5c3ca26ea4f675f87d8a17c6ac592b7f",
+      "steps": {
+        "S1": "5ae000c9b602859a1aec5efedb8e7732d60ae9df65da3a8ebf9be7c6d59e7173",
+        "S2": "0e5b79e978c4d1548b77cccd1c02614b4d73a4c75d25e1271e8b4df13bcab79c",
+        "S3": "74f514d5197deda81cb40b47f41458aeffcdc8cb85167bf8f660a4a32f228c7f",
+        "S4": "2fe18d51f8cf26d01c17023897682efa19d38181b7fcbec9668edc6fb41f72e4"
+      },
+      "step_texts": {
+        "S1": "The associated line classifies a homomorphism to the dual which is a polarization.",
+        "S2": "The quasi-inverse equations supply a principal polarization on the fourfold product of the scheme with its dual.",
+        "S3": "The product supports the required relatively ample symmetric representative with its fibre kernel conditions.",
+        "S4": "Insertion into the first factor followed by projection is the identity on the original abelian scheme."
+      },
+      "step_passages": {
+        "S1": "88e501c1802061aabf6fe094cd6f1dd116163cbafd37eaefb78d4cd337bc1cf5",
+        "S2": "73e7e4c192f48d5b0a0172791e0dff807894bfca182b80165332931c6e88c34f",
+        "S3": "f4f60d607d629806c2172a62bd51c7006d1f8af289a343b5d5eb6f4f2f1a6388",
+        "S4": "087d39def091231e00c792357aa05e7c793d2c798a19851076ffffa7b56386b6"
+      }
+    }
+  ]
+}

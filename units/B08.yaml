@@ -1,0 +1,142 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "B08",
+  "title": "A one-scale bound at a host",
+  "track": {
+    "primary": "analytic",
+    "secondary": [
+      "arakelov"
+    ]
+  },
+  "statement": "For a level $\\mathcal L$, fixed real $e_D,e_L,K,c_{HH},e_K,C$ and\n$\\varepsilon>0$ there exists $x_1$ such that, for every $x\\ge x_1$,\nframe, host on that frame and finite test set $TT$, the following two\nconditions imply\n\\[\n       \\mathcal G_{\\mathcal L}(x)\\le x^{1/2+(e_D+e_L+7)\\varepsilon}.\n\\]\nFirst, the host and level have the same order $o$, represent every kept\ncharacter in the positive family, and agree on the distinguished\nquadratic character's exceptional status. Each translate of the subgroup\n$A_0$ has a share of $TT$ within $x^{-1+\\varepsilon}$ of its target\n($4/(3o+1)$ for $A_0$ and $3/(3o+1)$ otherwise, in the equivalent\nunnormalised counting inequality). For the positive-family characters\noutside the kept set and all negative-family characters the bounds are\n$|G_\\chi(x)|\\le x^{1/2+\\varepsilon}$ and $|(L'/L)(1,\\chi)|\\le C\\log x$.\n\nSecond, there are finite unit and word data, with nonempty word fibres,\na map onto every element of $A_0$, and arithmetic coefficients whose\nnontrivial character logarithmic derivatives agree with the host's.\nThey identify the lattice top and place indices with $TT$ and the\nindex-two subgroup, and satisfy the lattice hypotheses, error-window\nand $B_0,N_c$ bounds in \\hyperref[sub:B10]{B10} and the size, thin,\ncost and remaining-size conditions in \\hyperref[sub:B09]{B09}, with\n$T_2\\subset A_0$. The scale and exponent of the lattice data are\n$x,\\varepsilon$; their division, loss and height exponents are bounded\nabove by $e_D,e_L,c_{HH}$ respectively.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Fix the level and real constants $e_D,e_L,K,c_{HH},e_K,C$ and $\\varepsilon>0$ before choosing the frame, host and test set.",
+    "At the chosen scale the host satisfies the explicit-formula, character compatibility, share and derivative clauses for the level.",
+    "Require a core lattice realization on the same host, with B10's error and exponent controls, B09's sizes, thinness and costs, and the stated subgroup inclusion."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.Comparison₂.core_gm",
+      "file": "Development/AutomorphicArithmetic/PrimitiveCosets/CoreGm.lean",
+      "line0": 12,
+      "line1": 74,
+      "sha256": "b73760a18d5253b23d291914c3579cfc2125b0864ba945c9fffe6f1260fb8394",
+      "dominated": 3303,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/B08_v4.md",
+      "section": "One-scale prime-sum bound on the same host",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-3 written exposition, pending independent review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "5.8 (sub:B08)",
+      "pages": [
+        38,
+        38
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/B08.tex",
+      "section": "sub:B08",
+      "pages": []
+    },
+    {
+      "document": "paper2_v3",
+      "section": "The chain in detail: P017",
+      "pages": [
+        9,
+        13
+      ],
+      "coverage": "Shared subsection for this station, including subordinate inputs."
+    },
+    {
+      "document": "paper2_v4",
+      "section": "Mechanism, §3",
+      "pages": [
+        19,
+        19
+      ],
+      "coverage": "Paper v4, pending independent review."
+    }
+  ],
+  "status": "Full",
+  "grade": "L1",
+  "reviews": [
+    "reviews/R21_review.md",
+    "reviews/DB3_review_A.md"
+  ],
+  "prerequisites": [
+    "B09",
+    "B10",
+    "D014",
+    "D547",
+    "D548",
+    "D549",
+    "D550"
+  ],
+  "size_pages": 2,
+  "open_questions": [
+    "Which estimates feeding the one-scale argument are proved in the v3 text, and which are asserted at the host-to-character step?"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [
+    {
+      "grade": "L1",
+      "review": "reviews/R21_review.md",
+      "lines": [
+        136,
+        136
+      ],
+      "scope": "Lean interface as specified in the review row; no equivalence with a published result inferred.",
+      "verdict": "Exact statement comparison"
+    }
+  ],
+  "paper_id": "B08",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "a-one-scale-bound-at-a-host",
+  "aliases": [
+    "core_gm",
+    "B08 A one-scale bound at a host"
+  ],
+  "background": [
+    "Explicit formulas for L-functions",
+    "Finite Fourier analysis",
+    "Slope estimates"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "5.8 (sub:B08)",
+    "pages": [
+      38,
+      38
+    ]
+  },
+  "question_sources": [
+    "reviews/R23_review.md"
+  ],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "B09": "graph",
+    "B10": "graph",
+    "D014": "graph",
+    "D547": "graph",
+    "D548": "graph",
+    "D549": "graph",
+    "D550": "graph"
+  },
+  "review_status": "pending_review",
+  "summary": "At one sufficiently large scale, a host meeting the character-share and discarded-character estimates can be paired with compatible lattice and size data to bound the level prime sum. The exponent records the division and loss costs. The threshold is chosen before the individual frame, host and test set."
+}

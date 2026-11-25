@@ -1,0 +1,310 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "Z5.1",
+  "edition_sha256": "d3fa6e3af14ab8c4efbb418c39749f6e3c3dd60d61c8ff98f27eeb6303941810",
+  "note_sha256": "6299abbd6a85a617696af12835dd6893a3df726ce2618b90960147d16ecba45f",
+  "statement_sha256": "3b2c21eec4bd8cdbae683f4d18158b204cd2b458101523ea1a1358f15266393f",
+  "sources": [
+    {
+      "path": "notes/blueprint/Z5.1.tex",
+      "sha256": "a39b3a8b025718c2a299c1131606a1da587fc68d1a12661b0dfef688bafd71de"
+    },
+    {
+      "path": "notes/arakelov/excerpt.tex",
+      "sha256": "a9e99d7a6a3fc0eed6aeccad6feb51e23fb8a1b19de39128256c3bce87e489a4"
+    },
+    {
+      "path": "notes/arakelov/README.md",
+      "sha256": "856bb41ecf688a16d0244e86f97ca7ebaa179614f24a5a553a394f0eb57e7528"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Pairing the conjugate embedding rows gives the real basis matrix determinant equal to the square root of the absolute discriminant divided by 2 to the number of complex places.",
+      "kind": "computation",
+      "uses": [
+        "standard: trace discriminant"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.HN.HeightGram.abs_det_amat",
+          "file": "Formalism/HarderNarasimhan/HarderNarasimhanProofs/HtGram.lean",
+          "line0": 218,
+          "line1": 243
+        }
+      ],
+      "source": "notes/blueprint/Z5.1.tex",
+      "anchor": "Replacing each pair of rows $(u,v)$ by $(u+iv,u-iv)$ multiplies the",
+      "source_lines": [
+        7,
+        33
+      ],
+      "claim_sha256": "198353ef2be75ea959589b79bde19dfe779aba72e31a7b03af8ea855d973d8c6",
+      "passage_sha256": "ebb49fbb330cd2cf513e5d2b09e9c39d2c308a3280abafb26c1dbab01cc77c58",
+      "sha256": "d02eb095dc44f33bde52310b0260c22c133d5be80852d7837a42e6aa69435aa7",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Each complex frame-change matrix contributes the squared absolute value of its determinant.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "standard: realification of a complex map"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.HN.HeightGram.det_realif",
+          "file": "Formalism/HarderNarasimhan/HarderNarasimhanProofs/HtGram.lean",
+          "line0": 89,
+          "line1": 131
+        }
+      ],
+      "source": "notes/blueprint/Z5.1.tex",
+      "anchor": "permutations. The real determinant of $U_v$ is $|\\det U_v|^2$:",
+      "source_lines": [
+        35,
+        48
+      ],
+      "claim_sha256": "9334d453d2ea43d793d5b11b5935c326fd6b2295653a217daab92e81d73de286",
+      "passage_sha256": "86599c7630a40cbe99ce3eb71ff474fe6630674672d38d020f9ccd5a2b14db3f",
+      "sha256": "2c0f92ec61c63870026242b2a87173de532d6e0f8dea3eaea6be91e8a6dd4848",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "A single denominator for the finite generating set bounds the image between two full lattices in the same span.",
+      "kind": "computation",
+      "uses": [
+        "S2",
+        "standard: clearing denominators"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.HN.PlaceLattice.exists_denom",
+          "file": "Formalism/HarderNarasimhan/HarderNarasimhanProofs/DiscreteSpanOfLinIndep.lean",
+          "line0": 224,
+          "line1": 248
+        }
+      ],
+      "source": "notes/blueprint/Z5.1.tex",
+      "anchor": "Each of the finitely many generators of $A$ has coordinates in $K$.",
+      "source_lines": [
+        50,
+        62
+      ],
+      "claim_sha256": "a69eea76623d4f58481833078fcc9c903182ceeff6b480a232ac14351dc1e77e",
+      "passage_sha256": "f8e2949920c5c21873cf8617f5b434167b30e65db20db470e1ca294a47123a23",
+      "sha256": "73d9506438a8784bf88baf9f02e00d22ee72e66a82f4c6adaf6e0fbe9c09750e",
+      "ai_review": []
+    },
+    {
+      "id": "S3a",
+      "status": "active",
+      "claim": "Pairing the two rows for each conjugate pair contributes an absolute determinant of two. The field lattice therefore has covolume equal to the square root of the absolute discriminant divided by two to the number of conjugate pairs.",
+      "kind": "computation",
+      "uses": [
+        "standard: integral-basis discriminant formula"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.HN.HeightGram.abs_det_amat",
+          "file": "Formalism/HarderNarasimhan/HarderNarasimhanProofs/HtGram.lean",
+          "line0": 218,
+          "line1": 243
+        }
+      ],
+      "source": "notes/arakelov/excerpt.tex",
+      "anchor": "Replacing each pair of rows",
+      "source_lines": [
+        101,
+        125
+      ],
+      "claim_sha256": "0b41c5684ff172d559bc0934f9bfc1032d27cef4e3bbf6540deeecd2ffe8a1d0",
+      "passage_sha256": "56a5433438aad9f42e1b2987a64e877aef6a9688b9927c7ca2b15ee552994bca",
+      "sha256": "131673dc0078532387f4f1a82b45598443f291fb6dff1aa4f15003e729eb65e9",
+      "ai_review": []
+    },
+    {
+      "id": "S3b",
+      "status": "active",
+      "claim": "The real determinant of each complex change of frame is its squared absolute determinant, which is the determinant of its positive Gram matrix.",
+      "kind": "computation",
+      "uses": [
+        "standard: determinant of a complex linear map on its realification"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.HN.HeightGram.det_realif",
+          "file": "Formalism/HarderNarasimhan/HarderNarasimhanProofs/HtGram.lean",
+          "line0": 89,
+          "line1": 131
+        }
+      ],
+      "source": "notes/arakelov/excerpt.tex",
+      "anchor": "The real determinant of $U_v$",
+      "source_lines": [
+        127,
+        140
+      ],
+      "claim_sha256": "83d7300acb32b0885cfa1be6389c56536eb360ab8beb5bff728e0f19a81ccd1d",
+      "passage_sha256": "86599c7630a40cbe99ce3eb71ff474fe6630674672d38d020f9ccd5a2b14db3f",
+      "sha256": "2fe47144f2597d5496507641dd0b36b91de5112f631e11d11b8cb182c77375f6",
+      "ai_review": []
+    },
+    {
+      "id": "S3c",
+      "status": "active",
+      "claim": "Each of the basis directions contributes one field-lattice covolume. Multiplying the resulting frame covolume by its discriminant normalization leaves the product of the Gram determinants.",
+      "kind": "computation",
+      "uses": [
+        "S3a",
+        "S3b"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.HN.htGram_of",
+          "file": "Formalism/HarderNarasimhan/HarderNarasimhanProofs/HtGram.lean",
+          "line0": 371,
+          "line1": 391
+        }
+      ],
+      "source": "notes/arakelov/excerpt.tex",
+      "anchor": "Taking determinants of the composite gives",
+      "source_lines": [
+        127,
+        140
+      ],
+      "claim_sha256": "cbc9f6f0a5678769d7c397745657d2aa814cd87ec584dd29c65f8d75f1a1ce57",
+      "passage_sha256": "86599c7630a40cbe99ce3eb71ff474fe6630674672d38d020f9ccd5a2b14db3f",
+      "sha256": "5f1603fdf893ea7f6b0896046964436734c0364f544e9409bd09e078fbf8572b",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The determinant of the inclusion equals the index and multiplies the larger lattice's covolume to give the smaller lattice's covolume.",
+      "kind": "computation",
+      "uses": [
+        "S3",
+        "standard: Smith normal form"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.HN.htGram_of",
+          "file": "Formalism/HarderNarasimhan/HarderNarasimhanProofs/HtGram.lean",
+          "line0": 341,
+          "line1": 409
+        }
+      ],
+      "source": "notes/arakelov/excerpt.tex",
+      "anchor": "bases for $\\rho_X B$ and $\\rho_X A$, the absolute determinant of the",
+      "source_lines": [
+        142,
+        154
+      ],
+      "claim_sha256": "8e84d312f4fc715415efbf8187cd76d6b2f37fc9ba938a25742b31003f946b94",
+      "passage_sha256": "f8e2949920c5c21873cf8617f5b434167b30e65db20db470e1ca294a47123a23",
+      "sha256": "9a5e7f0dac6b6e7d58ed20e7e27e1a0987ff46e14c410ba8fc87b4eb4c5d9090",
+      "ai_review": []
+    },
+    {
+      "id": "S5",
+      "status": "active",
+      "claim": "The fixed-frame argument uses invertible frames and a basis of the full rank in its own span.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.HN.htGram_of",
+          "file": "Formalism/HarderNarasimhan/HarderNarasimhanProofs/HtGram.lean",
+          "line0": 341,
+          "line1": 409
+        }
+      ],
+      "source": "notes/arakelov/README.md",
+      "anchor": "**Scope and prerequisites.** The fixed-frame calculation has an explicit full-rank basis in its span and invertible frames. These are the data of",
+      "source_lines": [
+        13,
+        13
+      ],
+      "claim_sha256": "e5f1187a37caaae1419389698f967ae259d1f1826ff8257d0a7a81603976af87",
+      "passage_sha256": "de0fff351d864a1339aa338b7ef6bbb3c4a1a74d98d41784756e8e7bde871437",
+      "sha256": "9224049d4ee914c76b65af8fd25fd52017254464aa1781d4824b3ba853d69cef",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "db594420c372214a7d15b8051455e24caeab9279022530f0e22ae32a175ffe8c",
+      "sources": [
+        {
+          "path": "notes/blueprint/Z5.1.tex",
+          "sha256": "a39b3a8b025718c2a299c1131606a1da587fc68d1a12661b0dfef688bafd71de"
+        },
+        {
+          "path": "notes/arakelov/excerpt.tex",
+          "sha256": "a9e99d7a6a3fc0eed6aeccad6feb51e23fb8a1b19de39128256c3bce87e489a4"
+        },
+        {
+          "path": "notes/arakelov/README.md",
+          "sha256": "856bb41ecf688a16d0244e86f97ca7ebaa179614f24a5a553a394f0eb57e7528"
+        }
+      ],
+      "steps": {
+        "S1": "d02eb095dc44f33bde52310b0260c22c133d5be80852d7837a42e6aa69435aa7",
+        "S2": "ecb305a33aca223184f0a36aa9ef908154fc89a0bd807996b49d94791e3fc784",
+        "S3": "da92abb82945c14cd15774d935e2cade594fc79b1faa427b81694106b1ce9464",
+        "S4": "9a5e7f0dac6b6e7d58ed20e7e27e1a0987ff46e14c410ba8fc87b4eb4c5d9090",
+        "S5": "9224049d4ee914c76b65af8fd25fd52017254464aa1781d4824b3ba853d69cef"
+      },
+      "step_texts": {
+        "S1": "Pairing the conjugate embedding rows gives the real basis matrix determinant equal to the square root of the absolute discriminant divided by 2 to the number of complex places.",
+        "S2": "Each complex frame-change matrix contributes the squared absolute value of its determinant.",
+        "S3": "A single denominator for the finite generating set bounds the image between two full lattices in the same span.",
+        "S4": "The determinant of the inclusion equals the index and multiplies the larger lattice's covolume to give the smaller lattice's covolume.",
+        "S5": "The fixed-frame argument uses invertible frames and a basis of the full rank in its own span."
+      }
+    },
+    {
+      "edition_sha256": "2a5b5c09ef417458cf3504eb07fd94a4ca5282e851ab1a3d40059f1b7c691cf4",
+      "sources": [
+        {
+          "path": "notes/blueprint/Z5.1.tex",
+          "sha256": "a39b3a8b025718c2a299c1131606a1da587fc68d1a12661b0dfef688bafd71de"
+        },
+        {
+          "path": "notes/arakelov/excerpt.tex",
+          "sha256": "a9e99d7a6a3fc0eed6aeccad6feb51e23fb8a1b19de39128256c3bce87e489a4"
+        },
+        {
+          "path": "notes/arakelov/README.md",
+          "sha256": "856bb41ecf688a16d0244e86f97ca7ebaa179614f24a5a553a394f0eb57e7528"
+        }
+      ],
+      "steps": {
+        "S1": "d02eb095dc44f33bde52310b0260c22c133d5be80852d7837a42e6aa69435aa7",
+        "S2": "2c0f92ec61c63870026242b2a87173de532d6e0f8dea3eaea6be91e8a6dd4848",
+        "S3": "73d9506438a8784bf88baf9f02e00d22ee72e66a82f4c6adaf6e0fbe9c09750e",
+        "S4": "9a5e7f0dac6b6e7d58ed20e7e27e1a0987ff46e14c410ba8fc87b4eb4c5d9090",
+        "S5": "9224049d4ee914c76b65af8fd25fd52017254464aa1781d4824b3ba853d69cef"
+      },
+      "step_texts": {
+        "S1": "Pairing the conjugate embedding rows gives the real basis matrix determinant equal to the square root of the absolute discriminant divided by 2 to the number of complex places.",
+        "S2": "Each complex frame-change matrix contributes the squared absolute value of its determinant.",
+        "S3": "A single denominator for the finite generating set bounds the image between two full lattices in the same span.",
+        "S4": "The determinant of the inclusion equals the index and multiplies the larger lattice's covolume to give the smaller lattice's covolume.",
+        "S5": "The fixed-frame argument uses invertible frames and a basis of the full rank in its own span."
+      }
+    }
+  ]
+}

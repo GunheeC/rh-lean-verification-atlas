@@ -1,0 +1,186 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "Z4.1",
+  "edition_sha256": "c97cf2dd638855240cd5cbdb10b7c632bb5116ee5d59d5ac295c029573049bb8",
+  "note_sha256": "51bb3724f67809af03e9e4c19dee31bbe325a8e4d924c5b93e6c21463591edba",
+  "statement_sha256": "4efcdb7a787aa230b871f678d34737ff4196d7f4718ba46dc54162f41de29b9f",
+  "sources": [
+    {
+      "path": "notes/blueprint/Z4.1.tex",
+      "sha256": "51bb3724f67809af03e9e4c19dee31bbe325a8e4d924c5b93e6c21463591edba"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The factorial valuations pay for the allowed denominator loss at a single local entry.",
+      "kind": "inequality",
+      "uses": [
+        "input: local kernel factorization and divided powers"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.InvariantFactorPaths.G7.gainFactorialInequality",
+          "file": "Formalism/ThetaLogCoordinates/UniformThetaSubstitution/FrobeniusLiftNorms/ABArith.lean",
+          "line0": 103,
+          "line1": 183
+        }
+      ],
+      "source": "notes/blueprint/Z4.1.tex",
+      "anchor": "The three factorial degrees sum",
+      "source_lines": [
+        82,
+        105
+      ],
+      "claim_sha256": "49ff93cbaf12025d4c8d1bd952c2898f1d0f2bc3752cb3793740067e28f606e8",
+      "passage_sha256": "1112e3d0d32fb6c1d75e5d4566ba0606580eb0cb40c459f55f87b94ca7adb2d8",
+      "sha256": "94e502836108e13758f580b56bbbf0fafab0d930646c2f141bc0e8df7d7b541f",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Each paired contribution consumes a marked column, giving the required weighted bound after counting the remaining mixed terms.",
+      "kind": "inequality",
+      "uses": [
+        "S1",
+        "input: support and minor budgets"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.InvariantFactorPaths.G7.entryExcessBound_of",
+          "file": "Formalism/ThetaLogCoordinates/UniformThetaSubstitution/FrobeniusLiftNorms/EntryAOneParity.lean",
+          "line0": 177,
+          "line1": 312
+        }
+      ],
+      "source": "notes/blueprint/Z4.1.tex",
+      "anchor": "Every pair has opposite parity",
+      "source_lines": [
+        141,
+        157
+      ],
+      "claim_sha256": "7f33cb528fade6a2cf889f5fad8f57acc78f8d128ada93e6e7f28f64c7c8df6a",
+      "passage_sha256": "87bdaadc68fdde65e7dc2bfefc8555930c0287ddd4f212eaf5dc0dc4eb390f92",
+      "sha256": "c4acd0fd66db626336db4370f80b5a60efbecb2e9de0760de921983829765ddd",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Multiplicativity of the generic Gauss norm bounds single frame coefficients after expansion.",
+      "kind": "computation",
+      "uses": [
+        "S2",
+        "standard: Gauss norm"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.InvariantFactorPaths.G7.GaussBK_of",
+          "file": "Formalism/ThetaLogCoordinates/UniformThetaSubstitution/FrobeniusLiftNorms/EGaussK.lean",
+          "line0": 166,
+          "line1": 184
+        }
+      ],
+      "source": "notes/blueprint/Z4.1.tex",
+      "anchor": "indeterminates has norm equal",
+      "source_lines": [
+        159,
+        193
+      ],
+      "claim_sha256": "f3d0bea7b391d53f4f6f9b5bf39fad002d9aa29fdd8a2b4e53e06f4e4ca717ef",
+      "passage_sha256": "1d26fb0a345b452fa386f119919811e26e82a8512c3d7ecbdc7d4f24719cdd58",
+      "sha256": "4a7f96dded4ce98101d9f7d1f5dafb7d61566043c7a7941d410385765f7b4e06",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "Renaming the independent variables and multiplying local expansions preserves integrality of the correction factors.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "input: local exponential restrictions"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.MainNotions.FormalGroupSystem.Pf.restSExpA_of",
+          "file": "Formalism/SharpRestriction/GrowthBounds/MultisetValuation/DworkExponentialRestrictions.lean",
+          "line0": 118,
+          "line1": 135
+        }
+      ],
+      "source": "notes/blueprint/Z4.1.tex",
+      "anchor": "The sum of the local exponents",
+      "source_lines": [
+        361,
+        383
+      ],
+      "claim_sha256": "448489fe729696a07a38553146f9cecdd56650dd03906d3473e90fb4cc8f1015",
+      "passage_sha256": "5f4ca1ca89a9ffbcf04179149288bba476df446751f75f5cc744ec5d251ab553",
+      "sha256": "87fee6d225b48837bd72646cf3841aa9695fbc727b55505739e0f945aa465150",
+      "ai_review": []
+    },
+    {
+      "id": "S5",
+      "status": "active",
+      "claim": "Zero-constant substitutions and inversion of a unit with constant one preserve the integral corrections in the original lattice coordinates.",
+      "kind": "computation",
+      "uses": [
+        "S4",
+        "input: admitted kernel data"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.MainNotions.FormalGroupSystem.Pf.restSExp_of",
+          "file": "Formalism/SharpRestriction/GrowthBounds/MultisetValuation/DworkExponentialRestrictions.lean",
+          "line0": 95,
+          "line1": 105
+        }
+      ],
+      "source": "notes/blueprint/Z4.1.tex",
+      "anchor": "Their inverses",
+      "source_lines": [
+        385,
+        407
+      ],
+      "claim_sha256": "3c752af8f4effd84eaae39a20692db29f6bdecfec33ba859096394da7f656f21",
+      "passage_sha256": "639bd86b82d78b33e9afdc76a4f87da235f67e90258f4976109ec17ec24db712",
+      "sha256": "f67f3debb93d1b778a731834de8f8bda4c9dc2b576ef9aded2320250440eb403",
+      "ai_review": []
+    },
+    {
+      "id": "S6",
+      "status": "active",
+      "claim": "The combined entry and edge bounds place the normalized Hecke image in the stipulated original lattice.",
+      "kind": "assembly",
+      "uses": [
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "input: frame and descent comparisons"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.MainNotions.FormalGroupSystem.Pf.hecke_place_bound",
+          "file": "Formalism/SharpRestriction/GrowthBounds/MultisetValuation/FirstTheoremPlaceBound.lean",
+          "line0": 28,
+          "line1": 30
+        }
+      ],
+      "source": "notes/blueprint/Z4.1.tex",
+      "anchor": "The bound on the recovered coefficients",
+      "source_lines": [
+        511,
+        543
+      ],
+      "claim_sha256": "028208b781d4f73994bdfc89ddd4dc3b27706b5d4a0fe46951cb0145284d5285",
+      "passage_sha256": "a15a349fc192aa4cd8c357e6377adf3ab75975b1860311698ecf71f8214757d8",
+      "sha256": "dfdbb4f85e4b6ad19294be860f2d5cf685b34bc678d8fa65c92be5d95e8844b9",
+      "ai_review": []
+    }
+  ],
+  "history": []
+}

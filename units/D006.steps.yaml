@@ -1,0 +1,149 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "D006",
+  "edition_sha256": "c03d8b51d4e0b468ae8a4291777dfd12fdc69426fd281fa64008a0152d1005a0",
+  "note_sha256": "d617dff040d9b7c6bcd18092a882c5c2656519ed9a95103109a731720c18c592",
+  "statement_sha256": "53c5f0e01e7b95c3687d19425deefe7a795811da796ac5cd078d3ffd0b736d5d",
+  "sources": [
+    {
+      "path": "notes/units/D006_round4.md",
+      "sha256": "d617dff040d9b7c6bcd18092a882c5c2656519ed9a95103109a731720c18c592"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Conclusion4 requires both TBat on the specified tie and TBeAt at every good pair of fields and index.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: D, HW and F"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.MainNotions.LocalSituation.Conclusion4",
+          "file": "Formalism/SharpRestriction/LevelLetterCocycles/LocalSituation.lean",
+          "line0": 590,
+          "line1": 593
+        },
+        {
+          "name": "GlobalTheory.T.theorem_tb_of_local_blochKato_duality_euler",
+          "file": "Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/TheoremTbOfLocalBlochKatoDualityEulerStatement.lean",
+          "line0": 8,
+          "line1": 9
+        }
+      ],
+      "source": "notes/units/D006_round4.md",
+      "anchor": "Unpack the local conclusion at a test prime",
+      "source_lines": [
+        13,
+        13
+      ],
+      "claim_sha256": "55a40580da70b86d534e0004198d7a5dd6cd96efd7f61dad51cd147d498f1e31",
+      "passage_sha256": "969c9763edf276740d97fd247b4a6e6a110825a0873432dbc4a7613df35e4edb",
+      "sha256": "ab5ae4c918a00fbf5dad46b8014fabca38e70681530576a081c38b9d3e8fefaf",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The ties-and-inputs theorem provides the admitted local record for the fixed D, HW and F.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: local Tate duality and local Euler characteristic"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.LocInputs.ties_and_inputs_of_duality_euler",
+          "file": "Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/TiesAndInputsOfDualityEuler.lean",
+          "line0": 19,
+          "line1": 34
+        },
+        {
+          "name": "GlobalTheory.TheoremTBRecords.aux_of_blochKato_tateDuality_eulerChar",
+          "file": "Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/TheoremTbOfLocalBlochKatoDualityEuler.lean",
+          "line0": 12,
+          "line1": 18
+        }
+      ],
+      "source": "notes/units/D006_round4.md",
+      "anchor": "Create the admitted local input",
+      "source_lines": [
+        17,
+        17
+      ],
+      "claim_sha256": "b370b850086de9d7072f2999827ecbf732f8a694abadaf9f5c1e55dac9c6053b",
+      "passage_sha256": "0c1774cf29631c1b170716a7b82787ebafac3ccd2b086dce311498132ef5ea57",
+      "sha256": "904cb08c87ebff1d71eb0a5178299d1681750ea542c36ee16fc2dfdb90f26874",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Conclusion5 and the admitted record give both assertions in Conclusion4.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "S2",
+        "input: Bloch–Kato local and the good-case torsion theorem"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.T.blochKatoLocal_all_of_tateDuality_eulerChar",
+          "file": "Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/BlochKatoLocalAllOfTateDualityEulerCharStatement.lean",
+          "line0": 8,
+          "line1": 9
+        },
+        {
+          "name": "Formalism.MainNotions.LocalSituation.Conclusion5",
+          "file": "Formalism/SharpRestriction/LevelLetterCocycles/LocalSituation.lean",
+          "line0": 595,
+          "line1": 596
+        },
+        {
+          "name": "GlobalTheory.T.twistedTorsionClassTheorem_goodCase",
+          "file": "Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/TwistedTorsionClassTheoremGoodCaseStatement.lean",
+          "line0": 9,
+          "line1": 10
+        }
+      ],
+      "source": "notes/units/D006_round4.md",
+      "anchor": "Supply Bloch–Kato on all tested local fields",
+      "source_lines": [
+        21,
+        21
+      ],
+      "claim_sha256": "f9ece350d918615dae724430b2b07f09e5834d262fd0a49afa76313e3080b9c8",
+      "passage_sha256": "1cafbb413c73f5558167b1e6db66e49f9064cf69803ba56258a6672bc6b6676c",
+      "sha256": "104b4aee5e4ccfb755af3d436e7b8a0e11869301aa2e56bf5b1edfd2b0e570f4",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "37f8d488bd7701628a991f6bf8d10a796fdb6fe94a5bd364b90dc57c5bff17b3",
+      "sources": [
+        {
+          "path": "notes/units/D006_round4.md",
+          "sha256": "6676731bf1715b204f9696bae6c7ecad6f825e9552e35791d5eb002e2703a0f6"
+        }
+      ],
+      "statement_sha256": "53c5f0e01e7b95c3687d19425deefe7a795811da796ac5cd078d3ffd0b736d5d",
+      "steps": {
+        "S1": "ab5ae4c918a00fbf5dad46b8014fabca38e70681530576a081c38b9d3e8fefaf",
+        "S2": "904cb08c87ebff1d71eb0a5178299d1681750ea542c36ee16fc2dfdb90f26874",
+        "S3": "104b4aee5e4ccfb755af3d436e7b8a0e11869301aa2e56bf5b1edfd2b0e570f4"
+      },
+      "step_texts": {
+        "S1": "Conclusion4 requires both TBat on the specified tie and TBeAt at every good pair of fields and index.",
+        "S2": "The ties-and-inputs theorem provides the admitted local record for the fixed D, HW and F.",
+        "S3": "Conclusion5 and the admitted record give both assertions in Conclusion4."
+      },
+      "step_passages": {
+        "S1": "969c9763edf276740d97fd247b4a6e6a110825a0873432dbc4a7613df35e4edb",
+        "S2": "0c1774cf29631c1b170716a7b82787ebafac3ccd2b086dce311498132ef5ea57",
+        "S3": "1cafbb413c73f5558167b1e6db66e49f9064cf69803ba56258a6672bc6b6676c"
+      }
+    }
+  ]
+}

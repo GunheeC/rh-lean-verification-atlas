@@ -1,0 +1,98 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D443",
+  "title": "The residue input for the flat-degree condition",
+  "track": {
+    "primary": "local",
+    "secondary": []
+  },
+  "statement": "The record argument is unused. The closed residue supplier yields the flat-degree bound for the designated flat generators on the cover.\n\\[\n\\mathrm{PublishedHodgeBundleTheorems}\\ \\Longrightarrow\\ \\mathrm{FlatDegreeCondition}.\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "The Lean head takes the Hodge-bundle record and does not use it after unfolding the three-argument adapter. `UpperTheory.Lit.Flat.flat_tensor_swap_isIso` (`Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/HodgeBundleWeights/FlatTensorSwapIsIso.lean:7–8`)."
+  ],
+  "lean": [
+    {
+      "name": "GlobalTheory.T.flatDeg_of_scholzeWeinstein_of_prints",
+      "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/FlatDegreeStatement.lean",
+      "line0": 22,
+      "line1": 23,
+      "sha256": "3b3cfb90ffed1e6ecc1ca9878150a7c3cfca615f3266707eda04cf5a559eced7",
+      "dominated": 3808,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/D443_round4.md",
+      "section": "D443 · Passing the global flat-degree statement to one good cover",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "G.461 (decomp:D443)",
+      "pages": [
+        271,
+        271
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D443.tex",
+      "section": "decomp:D443",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [
+    "D123"
+  ],
+  "size_pages": 2,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "D443",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "residue-input-for-the-flat-degree-condition",
+  "aliases": [
+    "flatDeg_of_scholzeWeinstein_of_prints",
+    "D443 Flat degree and the Scholze–Weinstein input"
+  ],
+  "background": [
+    "p-divisible groups",
+    "Arakelov degrees of Hodge bundles"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.461 (decomp:D443)",
+    "pages": [
+      271,
+      271
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "D123": "graph"
+  },
+  "review_status": "pending_review",
+  "summary": "The residue comparison gives flat degree on the chosen good cover. The record argument disappears when the adapter is unfolded.",
+  "reader_overrides": {
+    "title": "The residue input for the flat-degree condition",
+    "hypothesis_details": [
+      "The Lean head takes the Hodge-bundle record and does not use it after unfolding the three-argument adapter. `UpperTheory.Lit.Flat.flat_tensor_swap_isIso` (`Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/HodgeBundleWeights/FlatTensorSwapIsIso.lean:7–8`)."
+    ],
+    "slug": "residue-input-for-the-flat-degree-condition"
+  }
+}

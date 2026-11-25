@@ -1,0 +1,168 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "D575",
+  "edition_sha256": "11001f38179f47b7261280c27b0331b94d475b0f850328549f323be8ea1e2030",
+  "note_sha256": "f674973105f715d8a867ff3aea8400bdc61a244ca77275415392434fae58ddd7",
+  "statement_sha256": "843da80d7e20bcce036ee380218b93108f8e8c067565c95ad3e9190a34101bda",
+  "sources": [
+    {
+      "path": "notes/units/D575_round4.md",
+      "sha256": "f674973105f715d8a867ff3aea8400bdc61a244ca77275415392434fae58ddd7"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "A regular multiplicative character supplies a cuspidal character with the specified degree and signed Frobenius value.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: regular-character classification"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.Published.GreenRegularCharacters",
+          "file": "Development/AbelianVarietyTheory/PublishedTheorems/GaloisCohomology₂/GreenRegularCharacters.lean",
+          "line0": 13,
+          "line1": 20
+        },
+        {
+          "name": "GlobalTheory.GreenBridge.green_of_regular",
+          "file": "Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/SumRangeEqRoots.lean",
+          "line0": 225,
+          "line1": 234
+        }
+      ],
+      "source": "notes/units/D575_round4.md",
+      "anchor": "Fix the prime $g$, degree $d>0$ and the permitted label datum $L$",
+      "source_lines": [
+        22,
+        22
+      ],
+      "claim_sha256": "186fc58aedb8b81e8435d876b252255ce5aec9b8ee2b513916bc526aacfed738",
+      "passage_sha256": "51c075d9d17eca8b75132a9091307ded91ccf5c065a6c38f6dba7f010c5441cc",
+      "sha256": "7a56c2aa67e4ba99b68dbc28f852cc9445de624bbddf9db0e99c5765f9580839",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The multiplicative character derived from a degree-d irreducible label is regular because its first d Frobenius conjugates are distinct.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "input: admissible pairing"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.GreenBridge.regular_iff",
+          "file": "Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/SumRangeEqRoots.lean",
+          "line0": 207,
+          "line1": 212
+        },
+        {
+          "name": "GlobalTheory.GreenBridge.green_of_regular",
+          "file": "Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/SumRangeEqRoots.lean",
+          "line0": 228,
+          "line1": 258
+        }
+      ],
+      "source": "notes/units/D575_round4.md",
+      "anchor": "Choose one root $x_0$ of the monic irreducible polynomial $P$",
+      "source_lines": [
+        26,
+        26
+      ],
+      "claim_sha256": "610ec10ecefa2dc4a943e9ac4e08d3570767e1dc50124bb4244ece6399e50b77",
+      "passage_sha256": "6979d94a10ab03a3b7ee45c82e8c58a7d55d2a85abc878a51ee3ea50d3c4a5f7",
+      "sha256": "a9d48f50122c965dd07939b56bd3b7f66026c1f82e790325be34329e10abd505",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Two equal indexed characters determine Frobenius-conjugate roots and hence the same monic irreducible label.",
+      "kind": "assembly",
+      "uses": [
+        "S2",
+        "standard: minimal polynomial"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.GreenBridge.green_of_regular",
+          "file": "Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/SumRangeEqRoots.lean",
+          "line0": 256,
+          "line1": 280
+        }
+      ],
+      "source": "notes/units/D575_round4.md",
+      "anchor": "Any permissible root of $P$ is $x_0^{g^j}$",
+      "source_lines": [
+        30,
+        30
+      ],
+      "claim_sha256": "e82f15a95470c71d98fc9cf6dd458706b620de0b5745b797189d0c58e831147a",
+      "passage_sha256": "c9bc26ccb66c7d39d73f91965e6eefac5ad3dc94f21ee25c62e8275555ccfc34",
+      "sha256": "87cf83d8fc444ceba9f69dbb17150df840ebcc51834a3c8583915320aa17a18c",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The minimal polynomial of a regular parameter has degree exactly d because any smaller positive degree would fix the parameter under an earlier Frobenius iterate.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "S2"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.GreenBridge.green_of_regular",
+          "file": "Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/SumRangeEqRoots.lean",
+          "line0": 281,
+          "line1": 304
+        }
+      ],
+      "source": "notes/units/D575_round4.md",
+      "anchor": "Write the given cuspidal character as $\\tau(\\theta)$ with $\\theta$ regular",
+      "source_lines": [
+        34,
+        34
+      ],
+      "claim_sha256": "0b9cd24514de2b554dfa02c90a8bfdbb62484ee98c44bd6e2da515b8633dc745",
+      "passage_sha256": "2651ce8d645bd55daa8cdcaed629757117f92a4a98885fa0260a8e2fb9fb8227",
+      "sha256": "cae2af2b9f13e5b969a5018e0f67405a3d34354c2deb63601af23607c7f4542e",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "31bc44765dd6401a675536555bf501dea6c41daf35eb2da1994fbecab37bfa97",
+      "sources": [
+        {
+          "path": "notes/units/D575_round4.md",
+          "sha256": "ce586d76c02e66ffc63afb67cf9fe73718b9cbfaf7dcc79bdf6d91ff04d0974c"
+        }
+      ],
+      "statement_sha256": "843da80d7e20bcce036ee380218b93108f8e8c067565c95ad3e9190a34101bda",
+      "steps": {
+        "S1": "7a56c2aa67e4ba99b68dbc28f852cc9445de624bbddf9db0e99c5765f9580839",
+        "S2": "a9d48f50122c965dd07939b56bd3b7f66026c1f82e790325be34329e10abd505",
+        "S3": "87cf83d8fc444ceba9f69dbb17150df840ebcc51834a3c8583915320aa17a18c",
+        "S4": "cae2af2b9f13e5b969a5018e0f67405a3d34354c2deb63601af23607c7f4542e"
+      },
+      "step_texts": {
+        "S1": "A regular multiplicative character supplies a cuspidal character with the specified degree and signed Frobenius value.",
+        "S2": "The multiplicative character derived from a degree-d irreducible label is regular because its first d Frobenius conjugates are distinct.",
+        "S3": "Two equal indexed characters determine Frobenius-conjugate roots and hence the same monic irreducible label.",
+        "S4": "The minimal polynomial of a regular parameter has degree exactly d because any smaller positive degree would fix the parameter under an earlier Frobenius iterate."
+      },
+      "step_passages": {
+        "S1": "51c075d9d17eca8b75132a9091307ded91ccf5c065a6c38f6dba7f010c5441cc",
+        "S2": "6979d94a10ab03a3b7ee45c82e8c58a7d55d2a85abc878a51ee3ea50d3c4a5f7",
+        "S3": "c9bc26ccb66c7d39d73f91965e6eefac5ad3dc94f21ee25c62e8275555ccfc34",
+        "S4": "2651ce8d645bd55daa8cdcaed629757117f92a4a98885fa0260a8e2fb9fb8227"
+      }
+    }
+  ]
+}

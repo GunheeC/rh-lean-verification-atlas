@@ -1,0 +1,440 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "starters": {
+    "analytic": {
+      "title": "One-sided power windows and simple poles",
+      "unit_id": "P022",
+      "lean_decl": "Deduction.landau_window",
+      "path": "notes/analytic/README.md",
+      "tex": "notes/analytic/excerpt.tex",
+      "edition": "blueprint_v13",
+      "printed_pages": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "pdf_pages": [
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "size_pages": 8,
+      "section": "§§2.2–2.3",
+      "source_ranges": [
+        {
+          "file": "blueprint/ch_E.tex",
+          "line0": 237,
+          "line1": 738,
+          "file_sha256": "0c2bd671103f5500c4ded5fc2e74f192b65572161f46bbcdfe446061fe3a36f0",
+          "excerpt_sha256": "9a00ec6ae25e0439c5c78fd578135dea8523c3f3d94677dcf5921548f57109b4"
+        }
+      ],
+      "page_image_hashes": {
+        "7": "a5b2637f37f3953c319fb34da64f28d5a318de0f1c543b09f47cd6e777f8d898",
+        "8": "59609f0ba890213be89b969a7439816338a862cf7898b881e9d2f973f7e3f995",
+        "9": "7eb1182bd48e74d4812ecd40650d2914334a3b7db4e2d6101191341c6bdddb24",
+        "10": "b12d5d1495ba6b1801286385976747ebf8bd6ff028cdb426c05ad9d2073dfcac",
+        "11": "06183da2abd2f45ffc865c024ef9852adbc2aa0ccde02e348f9e2aa9cd3be5cb",
+        "12": "74b5d68291bc1641d254a70851ef70aae2929f86880815f544e96e94433f2c15",
+        "13": "b61d92ab35831321131517771d719b015c69c5faf475c13b7ff4bc833635c6e7",
+        "14": "f972a3d6040b3f40db2f36270d44c912ed34565f3861f371725aadd7c1a5f126"
+      },
+      "scope": "The local theorem assumes exactly the displayed pole and window hypotheses. The chapter derives the contradiction under them. The arithmetic supply of such windows, the explicit formula for an actual family, and global zero-freeness are separate tasks.",
+      "prerequisites": "Complex analysis through residues, holomorphic power series, Mellin/Laplace transforms, and elementary bounds for the von Mangoldt function.",
+      "unit_relation": "exact head",
+      "relation_detail": "P022 states the window lemma. P023 applies it to a positive character family.",
+      "companions": [
+        "P023"
+      ],
+      "checkable_target": "Follow the abstract Landau implication for given pole data and a moving upper window. Identify where positivity at a real pole is needed and why the analytic radius forces a contradiction.",
+      "lean_pin": {
+        "name": "Deduction.landau_window",
+        "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindow.lean",
+        "line0": 83,
+        "line1": 166,
+        "sha256": "104676d2ea110702c4c1586024ad2de75dc99d166c78548b85da61ba7d36c00d",
+        "dominated": 863,
+        "graph": "allChi"
+      }
+    },
+    "arakelov": {
+      "title": "A Gram determinant in a complex frame",
+      "unit_id": "P049",
+      "lean_decl": "Formalism.HN.htGram_of",
+      "path": "notes/arakelov/README.md",
+      "tex": "notes/arakelov/excerpt.tex",
+      "edition": "blueprint_v13",
+      "printed_pages": [
+        173,
+        174,
+        175,
+        176,
+        177,
+        178
+      ],
+      "pdf_pages": [
+        198,
+        199,
+        200,
+        201,
+        202,
+        203
+      ],
+      "size_pages": 6,
+      "section": "§§8.2.1–8.2.4",
+      "source_ranges": [
+        {
+          "file": "blueprint/ch_P.tex",
+          "line0": 1984,
+          "line1": 2417,
+          "file_sha256": "e8d7cd72f0e1a2133e69c1d1a657e5e69d652bb297272b9d2731ba4fc970e074",
+          "excerpt_sha256": "a49a3be57cc00ab6f2f41b832a7f81059f1ff2bed6156c6502e5f6397cc34876"
+        }
+      ],
+      "page_image_hashes": {
+        "173": "df4e51ba372dcb855c06d87d41812abb27a1de4e3f404bc316e6365cf8e8b015",
+        "174": "f4128a5f615b6d36fa2518394efd1f48c0cb7d4c2a84566a3148d8232d0dbfb1",
+        "175": "6c75c2000ec858e9e05a9f4f88fbff3e8e9ea7367739b400794b97a0832779bb",
+        "176": "064a3b5329e40aa063027c0adeb0a46a9048592419673ecddc71eb646c65473d",
+        "177": "427b939acd12734fb4b38d43d2027bff6b59be362d8820d0fc6e9fa8c6302f42",
+        "178": "b7e558595cd8b5385c9553d82a251b73d45c937109dbf6dad5940210b78c1cb9"
+      },
+      "scope": "The fixed-frame calculation has an explicit full-rank basis in its span and invertible frames. These are the data of the theorem. The downstream bound for the actual family of rows needs the indicated project comparison records.",
+      "prerequisites": "Linear algebra over a number field, its real Minkowski embedding, covolumes of lattices and the trace pairing.",
+      "unit_relation": "supporting declaration",
+      "relation_detail": "The fixed-frame Gram calculation is a tool in the height identity headed by Formalism.HN.height_gram_determinant (P049 and Z5.1).",
+      "companions": [
+        "Z5.1"
+      ],
+      "checkable_target": "Calculate the covolume of a lattice with a chosen basis in its span. Identify the discriminant factor, the square of the complex determinant and the normalization that gives a height.",
+      "lean_pin": {
+        "name": "Formalism.HN.htGram_of",
+        "file": "Formalism/HarderNarasimhan/HarderNarasimhanProofs/HtGram.lean",
+        "line0": 341,
+        "line1": 409,
+        "sha256": "d10c464cd5860b0ff2e24bf4e24ddf9a4dc9c6dbc2ad37e61974208fb6f32ebe",
+        "dominated": 264,
+        "graph": "allChi"
+      }
+    },
+    "theta": {
+      "title": "Testing the two integral Weyl lattices by Fock duality",
+      "unit_id": "Z4.4",
+      "lean_decl": "GlobalTheory.T.standard_weyl_lattices_fock_dual",
+      "path": "notes/theta/README.md",
+      "tex": "notes/theta/excerpt.tex",
+      "edition": "blueprint_v13",
+      "printed_pages": [
+        473,
+        474,
+        475,
+        476,
+        477,
+        478
+      ],
+      "pdf_pages": [
+        498,
+        499,
+        500,
+        501,
+        502,
+        503
+      ],
+      "size_pages": 6,
+      "section": "§8.21.3",
+      "source_ranges": [
+        {
+          "file": "blueprint/ch_P_r12.tex",
+          "line0": 224,
+          "line1": 585,
+          "file_sha256": "4a899412a56b5fb5d9d70f7b7726480660e3ddc08a54e6bfbb6765ed4924ec9c",
+          "excerpt_sha256": "91d711435b948412b18fd05e3fc465e84aeaa0a4f91713a52f8e066a0aa03f8a"
+        }
+      ],
+      "page_image_hashes": {
+        "473": "d97a4cf9cec2ccc86f2b20824a049dc483b28dfd7aea0ec037d497a309dc530a",
+        "474": "3342cefc2f86c31565e0f7f19ef36d588d200ef9d6f7b6484f96447babe5b8fc",
+        "475": "0000da1ffab338443950d5c7875477999d10ac96236dfe7f164c67b0b7590133",
+        "476": "1d1749377268516edc4dd2ed7e1fd07f04e842f8de02d11f2867241a2e6ee4db",
+        "477": "232e10dd72faa6d81de2fa4f6046907f1ca175d43f10ff9dc90433152ebcfc49",
+        "478": "7bda0288cb2430ea81bd34eb7033b6f284b378f190c7526beb1a91818aba94df"
+      },
+      "scope": "The standard-lattice test is a local result with the normalized pairing, fixed dominant weights and a vector in the specified Weyl space. The surrounding Z4.4 theorem also needs a common site, transported lattices and period suppliers. The packet does not certify all of Z4.4.",
+      "prerequisites": "Integral lattices, polynomials, partitions and tableaux, factorial pairings and change of basis over a number field with involution.",
+      "unit_relation": "supporting declaration",
+      "relation_detail": "The standard-lattice theorem is one named input to the larger twisted-period argument in Z4.4.",
+      "companions": [],
+      "checkable_target": "Check the two integrality tests for a vector in the specified Weyl space at the identity Gram matrix. The membership in that space is essential to the coefficient test.",
+      "lean_pin": {
+        "name": "GlobalTheory.T.standard_weyl_lattices_fock_dual",
+        "file": "Development/AbelianVarietyTheory/Proofs/FoundationProofs/StandardWeylLatticesFockDualStatement.lean",
+        "line0": 14,
+        "line1": 15,
+        "sha256": "f8c587975fc79094055db20893e72a16aa4d9e10b91592c7ac34d2489b7ede35",
+        "dominated": 2,
+        "graph": "allChi"
+      }
+    },
+    "galois": {
+      "title": "Recovering a full Selmer length from two eigenspaces",
+      "unit_id": "P020",
+      "lean_decl": "UpperTheory.V.vvle_of_parts",
+      "path": "notes/galois/README.md",
+      "tex": "notes/galois/excerpt.tex",
+      "edition": "blueprint_v13",
+      "printed_pages": [
+        76,
+        77,
+        78,
+        79,
+        80,
+        81
+      ],
+      "pdf_pages": [
+        101,
+        102,
+        103,
+        104,
+        105,
+        106
+      ],
+      "size_pages": 6,
+      "section": "§§5.1–5.3",
+      "source_ranges": [
+        {
+          "file": "blueprint/ch_S.tex",
+          "line0": 50,
+          "line1": 392,
+          "file_sha256": "c208ab35f1f3e656a899fd0bfa193c187f7681736f6bdc2cfa9d26f99219fb2e",
+          "excerpt_sha256": "5d9c447f9205093c4a964ab89e2273ec0ccc582174c33da1ec0c8812bb80e83e"
+        }
+      ],
+      "page_image_hashes": {
+        "76": "706e0352ee12a28c991d64e6863cc07ba25a38b46c9e3582e79f389147990332",
+        "77": "0ff3472e599b0f83c162c013a18cf0026f650ba170cb8dff5fab9d1f258eedb2",
+        "78": "2243d056fad2205c08f2f97f1dd0318c60c941025fbc995dd221b00570dc26d0",
+        "79": "767d3a17232295f10ed0658bc7fc0b350acb192ef0d6fa1468a14d1aebbf495f",
+        "80": "719a7b04ee8a5ef7ef67658ebd432c9051859d2ccc32b05e64801b9783a497d6",
+        "81": "6a3482cc8c941d1ca54872ba1c77fd60758d82fc11a690d109e224843b6ac254"
+      },
+      "scope": "For the splitting argument the operator squares to the identity, the submodule is stable under it, and 2 is a unit. For the sum, finite bounds on the two parts and the two-adic part are explicit inputs. The packet does not derive a VWin or a uniform tower estimate.",
+      "prerequisites": "Finite-length modules over a discrete valuation ring, involutions and their projectors. Cohomology is needed to recognize the localization kernel in the application.",
+      "unit_relation": "supporting declaration",
+      "relation_detail": "Proposition 5.10 recombines the two sign parts. P020 packages the five counting inputs and the window statement.",
+      "companions": [],
+      "checkable_target": "For odd primes, recover the two summands with the signs prescribed by the twist; account for the single factor log 2 when recombining the prime budgets.",
+      "lean_pin": {
+        "name": "UpperTheory.V.vvle_of_parts",
+        "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/LengthEqAddEigen.lean",
+        "line0": 127,
+        "line1": 189,
+        "sha256": "f1c9c55bd5efdf50a50637b4296ac6aef43822921ff2fa93b89bfd3ca1062e96",
+        "dominated": 161,
+        "graph": "allChi"
+      }
+    },
+    "local": {
+      "title": "An elementary bound inside the inert-prime gain",
+      "unit_id": "P045",
+      "lean_decl": "Formalism.BasicNotions.factLpF",
+      "path": "notes/local/README.md",
+      "tex": "notes/local/excerpt.tex",
+      "edition": "blueprint_v13",
+      "printed_pages": [
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64
+      ],
+      "pdf_pages": [
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89
+      ],
+      "size_pages": 7,
+      "section": "§§4.1–4.3",
+      "source_ranges": [
+        {
+          "file": "blueprint/ch_G.tex",
+          "line0": 25,
+          "line1": 359,
+          "file_sha256": "4838d492f94805900c5f96e0a07b85450ad011ddef4296ccd3bade83d02a3e99",
+          "excerpt_sha256": "854dcec6d5b4b5c9fc713266255d09fbfa7d71b7f7415a91d797a2868dc99714"
+        }
+      ],
+      "page_image_hashes": {
+        "58": "97cda5f1a5bfd365dcf12bd464b0e8fee31d148d19bce84fbf2871772b991bca",
+        "59": "2f805661fdd33dfad2787439042a0b529793989907f3c471447ecda727b44eca",
+        "60": "3cb6375f208e5a67dda58b124b8ecedcfbf0d17c274fdd802072b41667145aaa",
+        "61": "a08855b48d996ddc22af86a863630ff14fdd2c9290181bc145d4f7b7eb398188",
+        "62": "4dc03007af816ac4a3325d8456b68447d049cb7606c7b641d2a03e9a080261ca",
+        "63": "28f2cf99416b381ae56b7ceb5e3b68a0d9b79fc728f21304187355a34a5e2ec3",
+        "64": "1dbbd08d2382c1497aa834dac97f61d003f7315f7c3a41f8603803a0f30ee756"
+      },
+      "scope": "The finite-array inequality is closed under the displayed numerical data. The application to weighted jets (P045) also needs the integral formal-group comparison and the local projection and rank conditions described on p. 64. This packet supplies background for P045 rather than a proof of its full statement.",
+      "prerequisites": "Finite cyclic groups, finite sums, a supremum and the elementary notion of a valuation. Knowledge of formal groups is useful for the final application only.",
+      "unit_relation": "supporting declaration",
+      "relation_detail": "Lemma 4.6 bounds the finite-array loss that appears in the inert-place estimate. P045 is the formal-group bound for weighted jets.",
+      "companions": [],
+      "checkable_target": "Verify the upper and lower bounds for the linear-programming defect lpF for a nonzero cycle length d, an integer parameter ℓ ≥ 2 and nonnegative row sizes Dₛ.",
+      "lean_pin": {
+        "name": "Formalism.BasicNotions.factLpF",
+        "file": "Formalism/LocalRingCardinality/RankBoundMonotoneInDimension.lean",
+        "line0": 817,
+        "line1": 859,
+        "sha256": "040fbf2e7dbb8a0fae57ab7575d34326379f557d85cd87b82b3845b91ca58323",
+        "dominated": 45,
+        "graph": "allChi"
+      }
+    },
+    "ktheory": {
+      "title": "Finite divisor counts and the loss in the exponent",
+      "unit_id": "P036",
+      "lean_decl": "UpperTheory.V.ZK.sCount",
+      "path": "notes/ktheory/README.md",
+      "tex": "notes/ktheory/excerpt.tex",
+      "edition": "blueprint_v13",
+      "printed_pages": [
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155
+      ],
+      "pdf_pages": [
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180
+      ],
+      "size_pages": 7,
+      "section": "§§8.1.2–8.1.4",
+      "source_ranges": [
+        {
+          "file": "blueprint/ch_P.tex",
+          "line0": 178,
+          "line1": 649,
+          "file_sha256": "e8d7cd72f0e1a2133e69c1d1a657e5e69d652bb297272b9d2731ba4fc970e074",
+          "excerpt_sha256": "57ddd8e01ea15cd8d023852f6e4a030c795ecf6b6684df68977a6b38f46708a8"
+        }
+      ],
+      "page_image_hashes": {
+        "149": "b794bb80e38d8b58261d4590c64518cf5372b83cb706e0952b36a60613e12487",
+        "150": "83ccec13477b9354043f10277d030dd8588e945b97ee4076d636627370b66561",
+        "151": "ebd2e843cbc7db93206f6d5292720c93a0265e97ee82b21761d15405896adae6",
+        "152": "fbab08a565a39d99c0600443a69036d306dcd07a592023406322801172b93081",
+        "153": "197e29abdbb07e43732350c26844967a254a40c653c75e8a2f7ca44f18be2b84",
+        "154": "819cb2012b1d542ce71bf4474d9f804b70e4dc8cd64f0e008de0bae46aadd69f",
+        "155": "f0e7b3b4a371753ee4055e971c55be9498634c23b51a4a5fa7ff141f1336bcea"
+      },
+      "scope": "The final finite-subset implication is elementary with a stated finite cap. The arithmetic estimate for that cap uses the explicitly named separation and integral-cycle/homology statements. Those inputs are not closed by this excerpt; LemmaK and its global Selmer bound need more.",
+      "prerequisites": "Finite abelian groups and their primary parts, valuations, units and ideal classes. The Selmer application also uses cohomology and congruence-group homology.",
+      "unit_relation": "exact head",
+      "relation_detail": "P036 and Z2.K5 share the formal head sCount. The elementary last step assumes the numerical cap derived from the arithmetic inputs.",
+      "companions": [
+        "Z2.K5"
+      ],
+      "checkable_target": "Track the finite-subset count after evaluation separates the characters. Locate the class-number term, the exponent loss, and both consecutive homological torsion orders.",
+      "lean_pin": {
+        "name": "UpperTheory.V.ZK.sCount",
+        "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/SelmerOrderCounts.lean",
+        "line0": 16,
+        "line1": 111,
+        "sha256": "b609ec60bcf992dfad3e6ecbfad1c5f1094e3a1a07756adf589676b08e0d22c2",
+        "dominated": 2223,
+        "graph": "allChi"
+      }
+    },
+    "formal": {
+      "title": "Audit one export and distinguish three verification questions",
+      "unit_id": "P001",
+      "lean_decl": "riemannHypothesis",
+      "path": "notes/formal/README.md",
+      "tex": "notes/formal/excerpt.tex",
+      "edition": "blueprint_v13",
+      "printed_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "pdf_pages": [
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "size_pages": 7,
+      "section": "Ch. 1 and §2.1",
+      "source_ranges": [
+        {
+          "file": "blueprint/ch_O.tex",
+          "line0": 1,
+          "line1": 133,
+          "file_sha256": "12e2946184163dda71913ad1c7a848f3bc89e923cd3f26d0ba0d9d424eafe41a",
+          "excerpt_sha256": "3975f2747b3a03f1ae66bf0f38a63164db86e1f587b77eaefa535a89647f2efa"
+        },
+        {
+          "file": "blueprint/ch_E.tex",
+          "line0": 1,
+          "line1": 236,
+          "file_sha256": "0c2bd671103f5500c4ded5fc2e74f192b65572161f46bbcdfe446061fe3a36f0",
+          "excerpt_sha256": "ac99195e5a3a2aa67a19f12d0b60422e57c4cb2435d35bffa15c2e4973f6cbbc"
+        }
+      ],
+      "page_image_hashes": {
+        "1": "b2e9bf01990e1370f8421719cc6fc321b86dc30f734421aef814f66f3e72ea1a",
+        "2": "59a4eb2fbf79663988a90d2dc4c473ce54282abae75c6f850c588ecd942a2ccc",
+        "3": "5f86e7740c44a562b34be0e5be690b5badccd9ccca2de2e057400fc3ebb6258f",
+        "4": "c4e804ee014df630b6f38d7a15141030a666b8c2e325813e3d4d7a6900c30f83",
+        "5": "b599d9f7c0960c977fc8332f8ed8197ece4ef5ed05609c740837b23a7726c5be",
+        "6": "18e5e7d3c50e17469c70b78192681877bc9dabc72b9057c0318b11ad541cabf8",
+        "7": "a5b2637f37f3953c319fb34da64f28d5a318de0f1c543b09f47cd6e777f8d898"
+      },
+      "scope": "The byte comparison is fully repeatable from the fixed source checkout. A kernel replay and an independent mathematical proof are outside this exercise. The blueprint describes prior replay results, not a replay performed by the atlas.",
+      "prerequisites": "Directory navigation, SHA-256, and the distinction between the type of a Lean declaration, its dependencies, and a compiled object. No mathematical background beyond the statement being inspected is required.",
+      "unit_relation": "exact head",
+      "relation_detail": "P001 is the public export inspected in this byte audit.",
+      "companions": [],
+      "checkable_target": "Check the name and normalized range hash of one public export, then compare the exact scope of its statement with the dated evidence for replay and comparison.",
+      "lean_pin": {
+        "name": "riemannHypothesis",
+        "file": "Main.lean",
+        "line0": 4,
+        "line1": 4,
+        "sha256": "71b3d50605ddda7c0c74fbbf5cca47165a4cfa2ad72f50f36b907ecac7ff505a",
+        "dominated": 1,
+        "graph": "five_public_heads"
+      },
+      "public_excerpt_sha256": "dc0c386329bd12020471cf3d8a0c7b0e3793f64e035c85ad7b4f741f0aa32d21"
+    }
+  }
+}

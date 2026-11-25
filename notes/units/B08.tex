@@ -1,0 +1,37 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit B08. Local manuscript v3, item 5.8, heading on printed PDF p. 38.
+% UpperTheory.Comparison₂.core_gm
+% paper2/split_bridges.tex:191–221. Verbatim excerpt; SHA-256 f557d68e9b07ccf89b54bc0b29a197fa951187d0e9bde37249a5637cfa37acb9.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+\begin{proposition}[A one-scale bound at a host]\label{sub:B08}
+For a level $\mathcal L$, fixed real $e_D,e_L,K,c_{HH},e_K,C$ and
+$\varepsilon>0$ there exists $x_1$ such that, for every $x\ge x_1$,
+frame, host on that frame and finite test set $TT$, the following two
+conditions imply
+\[
+       \mathcal G_{\mathcal L}(x)\le x^{1/2+(e_D+e_L+7)\varepsilon}.
+\]
+First, the host and level have the same order $o$, represent every kept
+character in the positive family, and agree on the distinguished
+quadratic character's exceptional status. Each translate of the subgroup
+$A_0$ has a share of $TT$ within $x^{-1+\varepsilon}$ of its target
+($4/(3o+1)$ for $A_0$ and $3/(3o+1)$ otherwise, in the equivalent
+unnormalised counting inequality). For the positive-family characters
+outside the kept set and all negative-family characters the bounds are
+$|G_\chi(x)|\le x^{1/2+\varepsilon}$ and $|(L'/L)(1,\chi)|\le C\log x$.
+
+Second, there are finite unit and word data, with nonempty word fibres,
+a map onto every element of $A_0$, and arithmetic coefficients whose
+nontrivial character logarithmic derivatives agree with the host's.
+They identify the lattice top and place indices with $TT$ and the
+index-two subgroup, and satisfy the lattice hypotheses, error-window
+and $B_0,N_c$ bounds in \hyperref[sub:B10]{B10} and the size, thin,
+cost and remaining-size conditions in \hyperref[sub:B09]{B09}, with
+$T_2\subset A_0$. The scale and exponent of the lattice data are
+$x,\varepsilon$; their division, loss and height exponents are bounded
+above by $e_D,e_L,c_{HH}$ respectively.
+\end{proposition}\subnode{B08}
+The threshold precedes the frame, the host and $TT$.
+\path{PrimitiveCosets/CoreAtH.lean:29--44};
+\path{TotientGaloisClasses/ExplicitFormulaErrorOfHostConditions.lean:144}.

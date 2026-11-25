@@ -1,0 +1,88 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D044",
+  "title": "Agreement of the square-model theta integrals",
+  "track": {
+    "primary": "theta",
+    "secondary": []
+  },
+  "statement": "From the local theta inputs and ordinary agreement and local matching obtain square-model integral agreement. Each matched datum has a nonzero scalar such that each second-space vector has an integrable representative modulo finite coinvariant relations, and matching first-space vectors have integrals related by that scalar.\n\\[\n\\mathrm{ThetaLocalInputs}\\wedge\\mathrm{ThetaIntegralsAgree}_{\\rm Weil}\\wedge\\mathrm{LocalMatching}\\ \\Longrightarrow\\ \\mathrm{ThetaIntegralsAgree}_{\\rm square}.\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume the local theta input, agreement of the original Weil-model integrals and local matching.",
+    "Use matched data and their designated test spaces when specializing the assertion."
+  ],
+  "lean": [
+    {
+      "name": "GlobalTheory.T.twisted_square_theta_integrals_eq",
+      "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/TwistedSquareThetaIntegralsEq.lean",
+      "line0": 48,
+      "line1": 49,
+      "sha256": "31e8a6e7ab489e5a197267051af284b7adb7677307768386662ead5041ca76be",
+      "dominated": 2,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/D044_round4.md",
+      "section": "D044 · Agreement of the square-model theta integrals",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "G.48 (decomp:D044)",
+      "pages": [
+        169,
+        169
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D044.tex",
+      "section": "decomp:D044",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": 2,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "D044",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "agreement-of-the-square-model-theta-integrals",
+  "aliases": [
+    "twisted_square_theta_integrals_eq",
+    "D044 Agreement of the square-model theta integrals"
+  ],
+  "background": [
+    "Weil models",
+    "Theta-integral matching"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.48 (decomp:D044)",
+    "pages": [
+      169,
+      169
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "review_status": "pending_review",
+  "summary": "Agreement of theta integrals and local matching for the original Weil models transfer to the square models. The scalar depends on the matched data. For each second-space test vector the comparison chooses an integrable representative in its coinvariant class."
+}

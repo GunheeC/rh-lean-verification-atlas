@@ -1,0 +1,178 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "P011",
+  "edition_sha256": "fbe14fdeaad1c671f45d5afab1ac38ef54149a88e1a87f973afc12160b28cf8c",
+  "note_sha256": "a41acd36e14a5ce2f5cbfd9e4c5b1ea96823b10f8333e3d79d9eb1552ae3f800",
+  "statement_sha256": "e27011a3264bfba638e42abad5b6d2de8d4528b4fc4f6aacfbf7e6dd5c8f02aa",
+  "sources": [
+    {
+      "path": "notes/units/P011_round3.md",
+      "sha256": "a41acd36e14a5ce2f5cbfd9e4c5b1ea96823b10f8333e3d79d9eb1552ae3f800"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The restricted parameter-existence result fills the middle field of the three-field input record.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "B04",
+        "input: polarized row"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Zero.LLC.recTExists",
+          "file": "Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/RecTExists.lean",
+          "line0": 20,
+          "line1": 66
+        }
+      ],
+      "source": "notes/units/P011_round3.md",
+      "anchor": "The middle field is supplied by [B04](../../units/B04.md). Start with the local data, its place and coefficient conventions. The construction cho",
+      "source_lines": [
+        15,
+        15
+      ],
+      "claim_sha256": "9e35719fbb441e7fa9114f63929921081233f125cd924d5b2de9f6f054426cde",
+      "passage_sha256": "1f298918dea1ab828f862268806f16da5b6b00bb5ba4e2b38ffc23b1b6b0fcad",
+      "sha256": "79024805e1e520ad30bfbaeccdbd059722f9655cb7ba3da34704d0ba0ebfa360",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "One instance of the polarized row supplies both the first and third fields.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "input: polarized row"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+          "line0": 7,
+          "line1": 8
+        }
+      ],
+      "source": "notes/units/P011_round3.md",
+      "anchor": "Thus $\\langle h,\\mathrm{recTExists},h\\rangle$ provides precisely the argument required by the first binder of P012. Local existence is a substant",
+      "source_lines": [
+        17,
+        17
+      ],
+      "claim_sha256": "c10adf7deab39e19b09fc5d3a161b2bbb4b61c4206e0e2440081facc0702ff9c",
+      "passage_sha256": "8e9f80b812047f63eb0acfa9c3694105b4ccf1d982ac56523847860daeacecd6",
+      "sha256": "54311cb62043bed884994b109d005f2ab290ffd607ce75d68a68f4d2d673f4f5",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The same polarized row also supplies a Selmer-window witness.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "P013"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.One.vwin_of_row",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/VwinOfRow.lean",
+          "line0": 4,
+          "line1": 5
+        }
+      ],
+      "source": "notes/units/P011_round3.md",
+      "anchor": "The second argument is [P013](../../units/P013.md), used as `UpperTheory.One.vwin_of_row` (`Development/AutomorphicArithmetic/AutomorphicVarietie",
+      "source_lines": [
+        21,
+        21
+      ],
+      "claim_sha256": "4d16726fa9449dd2c72a07457be8472275622f3245fde90d8ada006a128638f2",
+      "passage_sha256": "5901c531e94ce5394b7e988e128df905a4556d85b8c704413ce7e31a7a50ade4",
+      "sha256": "984e6632b975ac7cefa08318c6cd5f8aa5f00039be7bf0e0cb2178e534ba0a8c",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The two-input application passes the Green conversion and the definite-side witness to the conditional conclusion.",
+      "kind": "assembly",
+      "uses": [
+        "S2",
+        "S3",
+        "P012"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+          "line0": 69,
+          "line1": 73
+        }
+      ],
+      "source": "notes/units/P011_round3.md",
+      "anchor": "The record and the window enter `every_character_of_theta_integrals_local_matching`. It passes `green_of_regular P.greenRegularCharacters` to the",
+      "source_lines": [
+        35,
+        35
+      ],
+      "claim_sha256": "8eee70919be23549aebd68cf884418884cd5019508c9711ebf55b8ae4f0cb6f3",
+      "passage_sha256": "de889de0f80c95de275df9ac947bc23215794be90989a3980073f38195448f5c",
+      "sha256": "08fa4c448587c0765844f86d1ef56437d6f99cb2efe21b51d26783dae567f792",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "db48b1118e07b4b759c8a6e846f31b2a7267532de3f372d117aeb8662c95e740",
+      "sources": [
+        {
+          "path": "notes/units/P011_round3.md",
+          "sha256": "3d7fe60135a33a251ba0cf7347b54b308a26da543d39e3111d2b0c9329e15f42"
+        }
+      ],
+      "steps": {
+        "S1": "79024805e1e520ad30bfbaeccdbd059722f9655cb7ba3da34704d0ba0ebfa360",
+        "S2": "34f7d2ec832f920f781008feeeadf6d49ee7a46f1cd0092d765e7551a1df7fe3",
+        "S3": "984e6632b975ac7cefa08318c6cd5f8aa5f00039be7bf0e0cb2178e534ba0a8c",
+        "S4": "08fa4c448587c0765844f86d1ef56437d6f99cb2efe21b51d26783dae567f792"
+      },
+      "step_texts": {
+        "S1": "The restricted parameter-existence result fills the middle field of the three-field input record.",
+        "S2": "One instance of the polarized row supplies both the first and third fields.",
+        "S3": "The same polarized row also supplies a Selmer-window witness.",
+        "S4": "The two-input application passes the Green conversion and the definite-side witness to the conditional conclusion."
+      }
+    },
+    {
+      "edition_sha256": "b71c4c8b918e5e2886fcb3e301aa7a3d24f5e5b9c2ba76c946d09ab4d33d661d",
+      "sources": [
+        {
+          "path": "notes/units/P011_round3.md",
+          "sha256": "3d7fe60135a33a251ba0cf7347b54b308a26da543d39e3111d2b0c9329e15f42"
+        }
+      ],
+      "statement_sha256": "e27011a3264bfba638e42abad5b6d2de8d4528b4fc4f6aacfbf7e6dd5c8f02aa",
+      "steps": {
+        "S1": "79024805e1e520ad30bfbaeccdbd059722f9655cb7ba3da34704d0ba0ebfa360",
+        "S2": "54311cb62043bed884994b109d005f2ab290ffd607ce75d68a68f4d2d673f4f5",
+        "S3": "984e6632b975ac7cefa08318c6cd5f8aa5f00039be7bf0e0cb2178e534ba0a8c",
+        "S4": "08fa4c448587c0765844f86d1ef56437d6f99cb2efe21b51d26783dae567f792"
+      },
+      "step_texts": {
+        "S1": "The restricted parameter-existence result fills the middle field of the three-field input record.",
+        "S2": "One instance of the polarized row supplies both the first and third fields.",
+        "S3": "The same polarized row also supplies a Selmer-window witness.",
+        "S4": "The two-input application passes the Green conversion and the definite-side witness to the conditional conclusion."
+      },
+      "step_passages": {
+        "S1": "1f298918dea1ab828f862268806f16da5b6b00bb5ba4e2b38ffc23b1b6b0fcad",
+        "S2": "8e9f80b812047f63eb0acfa9c3694105b4ccf1d982ac56523847860daeacecd6",
+        "S3": "5901c531e94ce5394b7e988e128df905a4556d85b8c704413ce7e31a7a50ade4",
+        "S4": "de889de0f80c95de275df9ac947bc23215794be90989a3980073f38195448f5c"
+      }
+    }
+  ]
+}

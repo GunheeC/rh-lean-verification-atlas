@@ -1,0 +1,375 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>R21_review · RH verification atlas</title><link rel="stylesheet" href="../atlas.css"></head><body><header><div class="bar"><a class="brand" href="../index.html">RH verification atlas</a><nav aria-label="Atlas navigation"><a href="../index.html">Home</a> <a href="../STATUS.html">Status</a> <a href="../MAP.html">Map</a> <a href="../dashboard/index.html">Tracks</a> <a href="../lookup/search.html">Search declarations</a></nav></div></header><main><p class="notice">AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved</p>
+<h1 id="r21_review">R21_review</h1>
+<p>AI review report produced during this project; file names are internal working names.</p>
+<ul><li>Internal source file: <code>out/R21_review.md</code></li><li>SHA-256: <code>9e241d4b6e07b744eaa2c025e6c6ef9e8567170923b4f9a928dc4a1d5b08b7fc</code></li><li>Report scope: R21 manuscript v1 — independent review</li></ul>
+<h2 id="internal-report">Internal report</h2>
+<p>The report below preserves its original verdict, scope and unresolved points. Superseded graph percentages have been removed from this public edition. Source line numbers in other records count from its original title.</p>
+<h1 id="r21-manuscript-v1--independent-review">R21 manuscript v1 — independent review</h1>
+<p>Object reviewed: <code>main.pdf</code> (127 pp., &quot;From the Selmer window to Dirichlet zero-free statements&quot;, manuscript v1), with <code>R21_report.md</code>, <code>R21_split_nodes.json</code>, <code>R21_pending.json</code>, the previous review <code>R20_review.md</code>, the pinned Lean tree <code>40e56bab</code>, and the dependency graph cache. Reviewer: an AI model reading cold. Nothing here is a human or specialist check.</p>
+<p>Method.</p>
+<ul><li>Lean statements were read through <code>git show 40e56bab:src/...</code>, so line numbers are the original ones.</li><li>Weights were recomputed from <code>graph_cache.bin</code> with my own dominator-tree computation (root <code>allChi</code>, traversal stopped at <code>lit</code>, weight = source span of <code>core</code> declarations). It gives 9,567,045 core lines, and it reproduces the <code>dominated</code> value of all 52 split nodes exactly (0 mismatches), the 32 Lean-only disjoint shares (sum 6,472,125), and the Related sum 505,202.</li><li>References were checked by fetching the cited URL where one opens; each row in §3 says &quot;online&quot;, &quot;memory&quot; or &quot;unverified&quot;.</li><li>Pages 5, 6 and 19 were rendered and read as images to resolve formulas that <code>pdftotext</code> flattens.</li></ul>
+<h2 id="0-verdict">0. Verdict</h2>
+<ul><li><strong>No sentence claims RH is proved.</strong> Page 1 says so, and the ten goal statements are typeset &quot;Formal statement (Goal: …)&quot;.</li><li><strong>All six R20 must-fix items are fixed</strong> (§1). One R20 minor item (P128 wording) is only half fixed.</li><li><strong>§2 is accurate.</strong> Every displayed formula matches Lean. It is a correct map, and from &quot;How does the lattice inequality detect primes?&quot; onward a number theorist can follow it. The first half still does not say what the lattice is, where the Selmer sum enters it, or where the exponent 1/2 comes from (§2.3).</li><li><strong>The 52 split statements are faithful</strong> where I unfolded them (31 looked at, 17 unfolded to the definitions). All three Cited entries match their sources. No fabricated reference among the 13 distinct works cited for the Cited and Related nodes: 8 confirmed online, 5 from memory or unverified.</li><li><strong>The next split will not work the same way.</strong> The dominator tree under the big Lean-only nodes is flat: T02 has 53,280 immediate dominator children in the historical 1,847,425-line index region. T01 has a similarly flat tree. These two nodes are shared libraries, not theorem trees (§4).</li><li><strong>Citation cannot close most of the gap.</strong> Declarations I can name as &quot;published theory re-proved&quot; jointly dominate about 0.36M lines. My best guess for the cite side of the 6.47M Lean-only lines is about 0.9M (range 0.4–0.9M); about 5.6M is project-specific (§4.3).</li><li><strong>Both pending hand proofs (P096, P134) are correct as far as I can check</strong>, and their statements match Lean (§5).</li><li><strong>Glossary: 16 of 30 entries checked, all agree with Lean</strong>; 13 line locators checked, all exact (§6).</li></ul>
+<h2 id="1-r20-must-fix-items">1. R20 must-fix items</h2>
+<div class="scroll"><table>
+<thead><tr><th>Item</th><th>Status</th><th>Evidence</th></tr></thead>
+<tbody><tr><td>Status vocabulary</td><td><strong>FIXED</strong></td><td>&quot;approved&quot;, &quot;confirmed&quot;, &quot;expert&quot;, &quot;discharges&quot; occur 0 times. &quot;Independent review&quot; on p. 1 is now &quot;AI skeleton cross-review (R19)&quot; and &quot;AI manuscript cross-review (R20)&quot;, with &quot;No human sign-off is recorded in these files&quot;. The six labels are defined on p. 4 and called &quot;editorial judgments by AI&quot;.</td></tr>
+<tr><td>Formal statement vs Theorem</td><td><strong>FIXED</strong></td><td>113 &quot;Formal statement&quot; headings and 32 &quot;Theorem&quot; headings. RH is &quot;Formal statement 5.1 (Goal: The Riemann hypothesis in Mathlib&#x27;s formulation)&quot;. The <code>Theorem</code> environment is used only where the status line is &quot;Proved here (full)&quot;.</td></tr>
+<tr><td>&quot;What remains&quot; totals</td><td><strong>FIXED</strong></td><td>§10 (p. 92) counts 110 parents and 7,026,361 exclusive lines without a full derivation or exact citation, names the ten goals, P015, P017, P020, P027, P034 and P041–P044 as included, and lists 5,193 lines as an index weight. It says the weights &quot;do not count independently verified lines&quot;.</td></tr>
+<tr><td>Attribution</td><td><strong>FIXED</strong></td><td>L. Alpöge is named on p. 1 and as reference [1], with the commit. The PDF link goes to <code>github.com/leanprover-community/riemann-hypothesis/tree/40e56bab…</code>. The Blueprint is one numbered reference [3]; there is a 42-item bibliography.</td></tr>
+<tr><td>Audit citation</td><td><strong>FIXED</strong></td><td>Reference [2] links <code>https://math.mit.edu/~drew/grh/</code>. I fetched it: the page is titled &quot;RH Lean proof: verification files&quot;, by Andrew Sutherland, last updated 2026-11-23 23:45 UTC. It reports module replay passed, nanoda and con-leche accepting, both kernel modes accepting, standalone Comparator v4.33.0 passed, and <code>lake comparator</code> v4.36.0 still running. The paragraph on p. 4 says exactly this and adds that the manuscript did not repeat the checks.</td></tr>
+<tr><td>P015 / P017 demotion</td><td><strong>FIXED</strong></td><td>Both are &quot;Lean only&quot; (p. 37–38) with a &quot;Route in the formalization&quot; paragraph in place of a proof, and both are split (B05–B07, B08–B10).</td></tr>
+</tbody></table></div>
+<p>Other R20 items, checked in passing.</p>
+<ul><li>Fixed: the indicative mood in the introduction; the P020 wording (&quot;The Lean proof uses five intermediate results beyond the displayed hypotheses … outside this outline&quot;); the positivity counterexample g(u) = −e^{βu} (p. 46); one weight metric with a comparison table; depth 4–7 moved to appendices; the literature record described as closed Lean terms whose bodies lie outside the counted cone.</li><li>Half fixed: P128 (p. 113) still says the Dummigan–Schönnenbeck reference &quot;gives the lattice action and its stabilizer&quot;. Formula (8) there is the factorisation of the stabiliser only. Delete &quot;the lattice action and&quot;.</li><li>Residual: internal codes N003 and N478 appear four times in §10.2 without definition.</li><li>Residual: two totals, 9,567,245 (five-root graph) and 9,567,045 (<code>allChi</code>), sit a page apart. Both are right, but say in one clause that the difference is the five wrappers.</li></ul>
+<h2 id="2-2-mechanism-of-the-selmer-to-zero-free-implication-pp-56">2. §2 &quot;Mechanism of the Selmer-to-zero-free implication&quot; (pp. 5–6)</h2>
+<h3 id="21-formula-by-formula-check">2.1 Formula-by-formula check</h3>
+<div class="scroll"><table>
+<thead><tr><th>Claim in §2</th><th>Lean</th><th>Result</th></tr></thead>
+<tbody><tr><td>h_ℓ(E,k) is the Z_ℓ-length of the kernel of localisation on H¹ with coefficients (Q_ℓ/Z_ℓ)(−k)</td><td><code>shaLen D e = Module.length ℤ_[l] (Sha D e)</code>, <code>Sha = Sha1 (qzTw D e) (locFam D.S D.A)</code>, <code>qzTw = scalRep (QZ l) (D.chi ^ (-e))</code> (<code>Statement.lean:67–78</code>)</td><td>exact</td></tr>
+<tr><td>h_ℓ(E,k) &lt; ∞ for 1 ≤ k &lt; t, and Σ_{ℓ∈T} log ℓ Σ_{1≤k&lt;t} h_ℓ(E,k) ≤ exp(x^ε/2), t = ⌊x^401⌋, for all local data and all finite T</td><td><code>VVle E ⌊x^401⌋₊ (√exp(x^ε))</code> in <code>VAt</code>, <code>VWin = ∀ψ, VWinAt ψ 401</code> (<code>ExistsPageN.lean:12–49</code>)</td><td>exact</td></tr>
+<tr><td>0 &lt; ε &lt; 1/52; 2^{e(x)} ∈ [x^{2+8ε}, 2x^{2+8ε}]; ∃ J ≥ 1, X₀; for X ≥ X₀ and each admissible (q,d) at X^{1/J} some [Y,Y²] ⊂ [X^{1/J}, X]; the interval may depend on the pair</td><td><code>VWinAt</code>, <code>PageN</code>, <code>WinPair</code></td><td>exact, including the quantifier order</td></tr>
+<tr><td>Host on windows of exponent 3/2; request = Selmer bound at rank t with budget √b plus explicit-formula condition for the cyclic level</td><td><code>supplyChi : VWinAt ψ 401 → HostExW (3/2) (GChi ψ).req</code>; <code>GChi ψ = EAtH (Level.cyc ψ) … 4 ∧ VVle H.E t (√s.b)</code></td><td>exact</td></tr>
+<tr><td>Connectedness fixes e_D, e_L, ε₁ &gt; 0 before ε; for each 0 &lt; ε &lt; ε₁ a family tied at every large scale of its windows</td><td><code>FamilyClassConnected</code> (<code>DivinNOfHypV.lean:13–15</code>), <code>TopG</code> (<code>ZeroFreeAllOfTopG.lean:12–14</code>)</td><td>exact</td></tr>
+<tr><td>Ga + μ_CC − K5 − Lo ≤ s</td><td><code>s_lower5</code>: <code>D.Ga u0 + D.muCC u0 - K5v5 D C u0 - wmean (D.d u0) (Lo5 …) ≤ D.s u0</code></td><td>exact</td></tr>
+<tr><td>s ≤ μ_CC + log|W(u)| + Φ</td><td><code>SlopeIneq</code>, with Φ = (1−δ)^{-1}(4u_F log(1+HH/u_F) + (η+4√e)HH)</td><td>exact; see omission 5</td></tr>
+<tr><td>ASK(u) ≤ MAIN(u) + Err(u) under eleven lattice hypotheses</td><td><code>PointwiseBoundVariant</code>: eleven hypotheses (<code>hS hDIV hE hH hCount hSl hSN hLoss hSI hHH hFP</code>), conclusion <code>D.ASK u0 ≤ D.Main u0 + ErrX5at D C Xpp u0</code> (<code>LevelOfCongruence.lean:175</code>)</td><td>exact</td></tr>
+<tr><td>ASK term at an inert prime: 2 log p (a/p^i − w)₊; at d a sum over an inertia coset with coefficient log d</td><td><code>askP</code>, <code>askD</code>, <code>ASK</code> (<code>FirstPrimeNeSecondPrime.lean</code>)</td><td>exact; the sum is over those i with i·Frob_p ∉ Φ, which §2 leaves out</td></tr>
+<tr><td>MAIN = a(log a − 1 − γ + Re ℓ(χ_C) − (1/f) Σ_{ρ∈Γ_Φ} log w(ρ))</td><td><code>MAIN ell a w</code></td><td>exact (rendered formula on p. 6 has the outer parentheses)</td></tr>
+<tr><td>Γ_Φ is the index-two subgroup, χ_C its quadratic character</td><td><code>InPhi g := g.1.1 = 0</code> on (Z/2 × Z/2) × H; <code>chC</code></td><td>exact</td></tr>
+<tr><td>gap(u) ≤ x^{(e_Div+e_Loss+3)ε}·Br</td><td><code>ch_top</code> gives x^{CErr·ε}·Br; <code>core_gm</code> relaxes with CErr ≤ e_D + e_L + 3</td><td>correct; write e_D, e_L (the upper bounds), which is what the next display uses</td></tr>
+<tr><td>G_L(x) = G_1(x) + Σ_{χ∈K∖{1}} a_χ Re G_χ(x) ≤ x^{1/2+(e_D+e_L+7)ε} on [Y, Y^{3/2}]</td><td><code>core_gm</code> conclusion <code>Λ.Gm x ≤ x^(1/2 + (eD+eL+7)·eps)</code>; <code>ch_core</code> gives x^{1/2+(C+3)ε} + Σ|G_ξ| with C = e_D+e_L+3, and the discarded sum is absorbed by one factor x^ε</td><td>exact</td></tr>
+<tr><td>G_χ(x) = Σ_{n≤x} Λ(n)χ(n)(x/n − 1) + x(L′/L)(1,χ); principal term with −x log x + (1+γ)x</td><td><code>GPsi</code>, <code>Gz</code> (<code>StatementOC.lean:17</code>)</td><td>exact</td></tr>
+<tr><td>Residue −(1/(ρ(ρ−1))) Σ a_χ (m_χ(ρ)+m_χ(ρ̄))/2; real poles positive</td><td>Mellin transform of Σ Λ(n)χ(n)(x/n−1) is −(L′/L)(s)/(s(s−1)); Re G_χ = (G_χ + G_χ̄)/2 and the zeros of L(s,χ̄) are the conjugates. For 0 &lt; β &lt; 1, −1/(β(β−1)) &gt; 0</td><td>correct (recomputed)</td></tr>
+<tr><td>Windows in u = log x are [log Y, (3/2) log Y]; Landau window excludes poles in Re s &gt; θ</td><td><code>landau_window</code> (<code>landauWindow.lean:83</code>), <code>zeroFree_of_rpow_window</code> (<code>ZeroFreeOfRpowWindow.lean:11</code>)</td><td>exact</td></tr>
+</tbody></table></div>
+<p>All twelve file locators in §2 open the stated declaration at the stated line.</p>
+<h3 id="22-errors">2.2 Errors</h3>
+<p>None found. Two imprecisions.</p>
+<ol><li>&quot;Cancelling μ_CC and identifying the arithmetic part of K5 gives ASK(u) ≤ MAIN(u) + Err(u)&quot;. The cancellation gives Ga ≤ MAIN + … (<code>Ga_bound5</code>). The step from Ga to ASK uses the loss hypothesis ASK − Ga ≤ LoP (<code>LossBounds</code>, used as <code>h4</code> in the proof). Add one clause.</li><li>The gap display uses e_Div, e_Loss, and the next display uses e_D, e_L. Say that the first are bounded by the second.</li></ol>
+<h3 id="23-omissions-that-stop-a-number-theorist">2.3 Omissions that stop a number theorist</h3>
+<ol><li><strong>Where the Selmer sum enters the lattice.</strong> The section asks &quot;How does the bound enter a lattice?&quot; and answers with hosts and requests. The actual entry point is <code>LinkN_at</code> (<code>GlobalTheoremInputs.lean:32–35</code>): η_j ≤ d_{Z0,j}·[C(f·m·b·L² + (log x)²·N_c) + Σ_ℓ v_ℓ], where Σ_ℓ v_ℓ is the weighted Selmer sum (<code>vvRecord</code> in <code>DivinNOfHypV.lean</code> turns <code>VVle</code> into <code>Σ&#x27; vvTerm ≤ B</code>). The manuscript prints this inequality on p. 18 under B05. §2 should quote it: it is the one line where h_ℓ(E,k) touches the slope data.</li><li><strong>What the lattice is.</strong> &quot;Global lattice&quot;, &quot;lattice word&quot;, &quot;quotient slopes minus heights&quot; and &quot;comparison slope μ_CC&quot; are used without saying which lattice (of what rank, over which ring, attached to which automorphic or geometric object) or why its slopes see primes of E. One sentence on the object and one on why its Arakelov-type degree has a prime-by-prime expansion with terms (a/p^i − w)₊ would do.</li><li><strong>Where 1/2 comes from.</strong> The exponent is stated, not explained. In Lean it is the rank numerology: <code>RankVal</code> fixes m between √(x^{1−ε/8}) and twice that, <code>ch_core</code> assumes x^{1/2−ε} ≤ m ≤ x^{1/2+ε/2} and x·m ≤ k, and the gap bound is divided by m·b·δ₂/2 (<code>ChCore.lean:322–338</code>). Say that the number of columns is about √x and that this is the source of the critical exponent.</li><li><strong>The host is a field.</strong> §2 says a host &quot;fixes a finite abelian group, Frobenius and inertia data and a set of test translates&quot;. In Lean a host carries the Galois number field E itself (<code>HostRaw.E</code>, with √−d, √−q, a cyclotomic embedding and an Artin map). The Selmer request is <code>VVle H.E t √b</code> on that field. Without this the &quot;field of type (ψ, e, q, d)&quot; of the first paragraph and the host of the second are not visibly the same object.</li><li><strong>Which side is assumed.</strong> The lower slope estimate is derived (<code>s_lower5</code>, from the DIV, slope, count and quotient-slope hypotheses). The upper one is itself one of the eleven hypotheses (<code>SlopeIneq</code>). §2 presents them symmetrically.</li><li><strong>b = exp(x^ε).</strong> The budget is exp(x^ε/2) in the first paragraph and √b in the second. <code>Scale.b := exp(x^ε)</code> is never stated.</li><li>The localisation in h_ℓ is at the places above ℓ only, and the cohomology is that of the Galois group unramified outside those places (<code>LData.S = Above F l</code>). &quot;For the prescribed local data&quot; hides this.</li></ol>
+<p>Is it an accurate two-page account a number theorist could follow? Accurate: yes. Followable: the analytic half yes; the arithmetic half only as a list of names until items 1–4 are added. They need about fifteen lines.</p>
+<h2 id="3-the-52-split-statements">3. The 52 split statements</h2>
+<p>Counts confirmed: Cited 3 / 6,445, Related 17 / 505,202, Lean only 32 / 6,472,125, union 6,983,772.</p>
+<h3 id="31-cited-3">3.1 Cited (3)</h3>
+<div class="scroll"><table>
+<thead><tr><th>Node</th><th>Statement vs Lean</th><th>Reference</th><th>How checked</th></tr></thead>
+<tbody><tr><td>T19 <code>resolution_char_zero_of_literature</code></td><td>exact against <code>ResolutionCharZero</code>: k of characteristic 0; X locally of finite type, quasi-compact, separated, reduced; blow-up sequence; X′ smooth; isomorphism over the smooth locus; reduced preimage of the complement is SNC</td><td>Kollár, <em>Resolution of singularities — Seattle lecture</em>, Thm 36(1)–(3)</td><td><strong>online</strong> (arXiv math/0508332, machine-read): Theorem 36 defines a blow-up sequence functor on all schemes of finite type over a characteristic-zero field with conclusions (1) smooth, (2) isomorphism over the smooth locus, (3) preimage of Sing X is an SNC divisor. Matches; Lean adds &quot;reduced&quot; and &quot;separated&quot;, so it is a special case.</td></tr>
+<tr><td>T20 <code>principalisation_char_zero_of_literature</code></td><td>exact against <code>PrincipalisationCharZero</code>: X smooth of relative dimension d; I vanishing on no component; boundary E with SNC at each point; centres compatible with the boundary; pullback of I effective Cartier with SNC support; isomorphism off the cosupport</td><td>Kollár, Thm 35(1)–(3)</td><td><strong>online</strong> (same source): hypotheses and conclusions (1)–(3) match.</td></tr>
+<tr><td>W11 <code>ferreroWashington</code></td><td>exact against <code>Published.FerreroWashington</code>: K abelian over Q containing μ_ℓ (μ_4 for ℓ = 2); ∃ r, for all n and all K′ with <code>IsCyclotomicExtension {ℓ^n} K K′</code>, |Cl(K′)/Cl(K′)^ℓ| ≤ ℓ^r</td><td>Washington, 2nd ed., Thm 7.15 and Prop. 13.23; Ferrero–Washington 1979</td><td><strong>memory</strong>: Thm 7.15 is μ = 0 for abelian fields, Prop. 13.23 is &quot;μ = 0 iff the p-rank of A_n is bounded&quot;. Springer text not re-fetched. The deduction on p. 32 (the root-of-unity hypothesis puts every K′ in the cyclotomic Z_ℓ-tower) is correct.</td></tr>
+</tbody></table></div>
+<p>Disposition &quot;Cited&quot; is right for all three. Two remarks.</p>
+<ul><li><code>IsBlowupSeq</code>, <code>IsSncBlowupSeq</code> and <code>FinalTheorems.Snc</code> are project definitions. I did not compare them with Kollár&#x27;s. A Cited entry should say that this comparison was made, or say that it was not.</li><li>These three statements have dominated weights 35, 1,572 and 4,838 but inclusive weights 121,633, 100,762 and 54,293. The Lean development contains closed terms for them. The manuscript says so for T19 and T20 (&quot;uses a closed resolution term independently of its record argument&quot;); say it for W11 too.</li></ul>
+<h3 id="32-related-reference-proof-in-lean-only-17">3.2 Related reference, proof in Lean only (17)</h3>
+<div class="scroll"><table>
+<thead><tr><th>Node</th><th>Statement vs Lean</th><th>Reference</th><th>How checked</th><th>Disposition</th></tr></thead>
+<tbody><tr><td>B01 <code>galoisRepresentations_of_thetaLift</code></td><td>structure exact: <code>TLiftK → Row0b recT</code>, proof term = B03 applied to B02. Clauses of <code>Row0b</code> not unfolded</td><td>BLGGT Thm 2.1.1</td><td>memory (confirmed real in R20)</td><td>right</td></tr>
+<tr><td>B03 <code>galoisLocalGlobalStrong_of_geometry_lift</code></td><td>exact: <code>GeoOne → TLiftK → Row0b recT</code></td><td>BLGGT Thm 2.1.1</td><td>memory</td><td>right</td></tr>
+<tr><td>B04 <code>recTExists</code></td><td>clause list on p. 17 consistent with the name <code>RecTExists</code>; not unfolded</td><td>Scholze, LLC for GL_n, Thm 1.2</td><td><strong>online</strong>: (a) characterisation by traces, (b) parabolic induction, (c) bijection on supercuspidals, (d) twists, central characters, duals, L- and ε-factors. The note on p. 17 is accurate</td><td>right. The JSON says &quot;1.2(a)–(d)&quot;, the PDF &quot;1.2(c,d)&quot;; align</td></tr>
+<tr><td>T09 <code>functionalsSeparate_of_howeUnram_of_siegelWeil</code></td><td>hypotheses exact (<code>ThetaLocalInputs</code>, <code>HoweUnram</code>, <code>SiegelWeilUnitaryConvergent</code>); conclusion not unfolded</td><td>Yamana, Pacific J. Math. 264, Thm 2</td><td><strong>online</strong>: paper and Theorem 2 exist</td><td>right</td></tr>
+<tr><td>T11 <code>theoremK_head2</code></td><td>exact at the level of names: <code>EisBL → SiegelWeilStd → ThetaIntegralsAgree ∧ LocalMatching</code></td><td>Yamana Thm 2</td><td>online</td><td>right</td></tr>
+<tr><td>T12 <code>siegelWeilStd</code></td><td><strong>exact against <code>SiegelWeilStd</code></strong>: good base, m, n ≥ 1, opposite Hermitian/skew signs, min(r,s) = 0, Hecke character restricting as η^m, doubling model, frame, standard K, height, Haar measure with fundamental domain, K-finite Schwartz vector; value at s₀ = (m−n)/2 is (1 if n &lt; m, else 2) × the theta average</td><td>Yamana Thm 2</td><td><strong>online</strong>: value at s₀ equals κ·I(g;φ), κ = 2 if m ≤ n, κ = 1 if m − r &gt; n, r the Witt index. With min(r,s) = 0 the space is anisotropic and both cases are covered. &quot;The printed identity has the same two multipliers&quot; is accurate</td><td>right; the closest of the 17 to Cited</td></tr>
+<tr><td>T16 <code>chow_form_height_comparison</code></td><td><strong>exact</strong>, including the leading hypothesis <code>PublishedHodgeBundleTheorems</code> and the bound a ≤ <code>[K:Q](D+1)</code>·d·(imageHeight + t)</td><td>Bost–Gillet–Soulé, JAMS 7, Thm 4.3.8</td><td><strong>unverified</strong> (paper is real; item number not fetched)</td><td>right</td></tr>
+<tr><td>T17 <code>moriwakiBig_outright</code></td><td>closed term for <code>MoriwakiBigStatement</code>; statement not unfolded</td><td>Moriwaki, <em>Continuity of volumes on arithmetic varieties</em>, Cor. 5.5</td><td><strong>online</strong>: the introduction&#x27;s Theorem A is marked &quot;cf. Corollary 5.5&quot;: for nef L̄, log #{small sections of mL+N} = (deg ĉ₁(L̄)^d / d!)·m^d + o(m^d), hence vol = deg. Section 5 itself lay beyond the fetched part</td><td>right</td></tr>
+<tr><td>T18 <code>hsUse_outright</code></td><td>closed term for <code>HSUse</code>; three clauses not unfolded</td><td>Moriwaki Cor. 5.5</td><td>online, as above</td><td>right</td></tr>
+<tr><td>T21 <code>poincare_lelong_inv_of_literature</code></td><td>not unfolded</td><td>Demailly, <em>Complex analytic and differential geometry</em>, III (2.15)</td><td><strong>memory</strong> (Lelong–Poincaré equation); the site refused automated access</td><td>right. The JSON gives a different URL (ime.usp.br) from the PDF (www-fourier.ujf-grenoble.fr); align</td></tr>
+<tr><td>T22 <code>zarhin_statement</code></td><td>consistent: abelian scheme over a valuation ring R with relatively ample sheaf; i, r with r∘i = 1; P abelian with a rigidified symmetric relatively ample sheaf with trivial polarisation kernel</td><td>Milne, <em>Abelian Varieties</em> v2.00, Thm 13.12</td><td><strong>online</strong>: &quot;Theorem 13.12 (Zarhin&#x27;s trick). For any abelian variety A, (A × A^∨)^4 is principally polarized&quot;, in a section assuming k algebraically closed</td><td>right; the stated difference (field vs valuation ring) is the real one</td></tr>
+<tr><td>T23 <code>nef_rr_of_literature</code></td><td>not unfolded</td><td>Lazarsfeld, <em>Positivity I</em>, Cor. 1.4.41</td><td><strong>memory</strong> (asymptotic Riemann–Roch for nef divisors)</td><td>right</td></tr>
+<tr><td>T24 <code>fargues_exact_of_literature</code></td><td>not unfolded</td><td>Fargues, <em>La filtration canonique…</em>, §5.3</td><td><strong>unverified</strong></td><td>right</td></tr>
+<tr><td>W02 <code>baseChangeN</code></td><td><strong>exact against <code>BaseChangeIsobaricN</code></strong>: E CM, unramified over E⁺ at every finite prime, n ≥ 1, any automorphic π of the definite unitary group; partition, constituents, local components, infinitesimal characters</td><td>Labesse, <em>Changement de base CM et séries discrètes</em>, Cor. 5.3</td><td><strong>online</strong>: weak base change for σ in the discrete spectrum with property (∗) and discrete series at infinity; partition n = n₁+…+n_r</td><td>right, with one more difference to record (below)</td></tr>
+<tr><td>W04 <code>descWeak</code></td><td><strong>exact against <code>DescWeak</code></strong>: 2 ≤ n ≤ 4; S finite, containing the places above p, all split; π regular algebraic cuspidal, conjugate self-dual, Satake data outside S; σ unramified at every nonsplit place, same Satake multiset at cofinitely many split places</td><td>Labesse Thm 5.4</td><td><strong>online</strong>: descent of θ-invariant cohomological cuspidal π; E/F unramified at finite places and U quasi-split at inert places are assumed</td><td>right; the note on p. 30 is accurate</td></tr>
+<tr><td>W05 <code>lemmaK_litN_alt</code></td><td><strong>exact against <code>LemmaK</code></strong>: L totally complex with μ_ℓ (μ_4 for ℓ = 2), e ≥ 1, H²(Z_ℓ(e+1)) finite, log # ≤ exp((2e[L:Q])^{C_K}·log(2D))</td><td>Soulé, Doc. Math. Extra Vol. Kato, §4.3 Thm 3 and §4.4 Prop. 4(i)</td><td><strong>online</strong>: Theorem 3 bounds a product over primes p ≥ 4n−1 and p ≥ r+2; Prop. 4(i) is log log k(m) ≤ 220·m⁴ log(m)·r^{4r}·√D·log(D)^{r−1}. The note on p. 31 (with n = e+1 the needed prime ℓ ≤ r+1 is outside the product; different discriminant dependence) is accurate</td><td>right</td></tr>
+<tr><td>W07 <code>katoTwoW_of_printsH</code></td><td>hypothesis list on p. 31 plausible; <code>KatoTwoW</code> not unfolded</td><td>Kato, Astérisque 295, Thm 14.2(1)</td><td><strong>unverified</strong> (item number not fetched)</td><td>right</td></tr>
+</tbody></table></div>
+<p>One difference the manuscript does not record: by the fetched text, Labesse&#x27;s §5 has the standing hypothesis that F is totally real of degree at least 2. <code>BaseChangeIsobaricN</code> and <code>DescWeak</code> quantify over every CM field, including imaginary quadratic ones. Add this to the notes for W02 and W04, after checking the source.</p>
+<h3 id="33-lean-only-the-eleven-i-compared">3.3 Lean only: the eleven I compared</h3>
+<div class="scroll"><table>
+<thead><tr><th>Node</th><th>Result</th></tr></thead>
+<tbody><tr><td>T01 <code>every_character_of_theta_integrals_local_matching</code></td><td>exact: seven inputs (P, F, theta agreement, local matching, covolume bound, <code>RecTExists</code>, <code>VWin</code>) → <code>EveryCharacter</code></td></tr>
+<tr><td>T02 <code>nonempty_hyps_definite_side_of_closed_bound</code></td><td>exact: five inputs, <code>RecTExists</code>, the linked bound at two and three for every real c → <code>Nonempty (HypsAlt S0.NL DefiniteSideCondition)</code></td></tr>
+<tr><td>T03 <code>hypotheses_nonempty_of_unramified_exponents_alt</code></td><td>exact: P, <code>RowRat</code>, h, c, A with <code>EvLgG A</code>, three linked conditions</td></tr>
+<tr><td>T13 <code>topCovolSlim2_use_alt_alt</code></td><td>exact: fifteen inputs (eight of T17–T24 kind, seven published geometric) → <code>CovolumeBoundOfX</code></td></tr>
+<tr><td>T14 <code>deep_slim_use</code></td><td>exact: the eight statements → <code>DeepStR</code></td></tr>
+<tr><td>T26 <code>deepStR_of_use</code></td><td>exact: ten inputs, listed in the same order on p. 29</td></tr>
+<tr><td>W01 <code>automorphic_window_of_inputs</code></td><td>exact: <code>OpenImageCondition</code>, <code>BaseChangeIsobaricN</code>, <code>RowT</code> → <code>VWin</code></td></tr>
+<tr><td>B05 <code>shape_closed_link_n_of_green</code></td><td>exact in shape: <code>Green → TopShapeAlt True True (Closed … LinkN) TopG</code>; the displayed inequality on p. 18 is <code>LinkN_at</code> term for term</td></tr>
+<tr><td>B07 <code>supplyChi</code></td><td>exact</td></tr>
+<tr><td>B08 <code>core_gm</code></td><td>exact: quantifier order (x₁ before frame, host and TT), exponent 1/2 + (e_D+e_L+7)ε, and the <code>EAtH</code> and <code>CoreAtH</code> fields as paraphrased</td></tr>
+<tr><td>B09 <code>ch_core</code></td><td><strong>exact, checked field by field</strong>: C ≥ 0, ε &gt; 0, |c| ≤ 1; m ≤ x^{1/2+ε/2}, x·m ≤ k; <code>SizesA</code>, <code>ThinScales</code> (|G_ξ(y)| ≤ y·θ for y ≥ X′/3: a product, confirmed on the rendered page), <code>CostWindows</code>, <code>RestSize</code>, <code>CharsA</code>; bracket Br = n_T·a_E(1+m²/k) + m(2nmb·x^ε + n₂kb·x^ε/(n²x^{−ε})); conclusion with exponent 1/2 + (C+3)ε</td></tr>
+</tbody></table></div>
+<p>B02, B06, B10 and the remaining Lean-only nodes were read but not unfolded. For B02 the statement on p. 16 is a paraphrase of <code>GeoOne</code> that I could not check from the PDF alone.</p>
+<h2 id="4-next-level-split-of-the-twelve-largest-lean-only-nodes">4. Next-level split of the twelve largest Lean-only nodes</h2>
+<p>Sizes: <strong>net</strong> = dominated core lines with the already selected sub-nodes removed. &quot;Disjoint&quot; is the R21 share of the node. Dispositions are guesses from declaration names and statement heads, not from a literature search. Candidate sources named in the last column are unverified pointers for whoever does that search; none is a checked locator.</p>
+<h3 id="41-a-structural-finding-first">4.1 A structural finding first</h3>
+<p>Dominance does not split the two largest nodes.</p>
+<div class="scroll"><table>
+<thead><tr><th>Node</th><th>Disjoint</th><th>Immediate dominator children</th></tr></thead>
+<tbody><tr><td>T02</td><td>1,847,425</td><td>53,280</td></tr>
+<tr><td>T01</td><td>548,334</td><td>21,000</td></tr>
+<tr><td>T15</td><td>205,928</td><td>2,465</td></tr>
+<tr><td>T03</td><td>274,375</td><td>5,615</td></tr>
+<tr><td>B02</td><td>625,495</td><td>169 (one wrapper, then flat)</td></tr>
+<tr><td>W01</td><td>480,551</td><td>4 (one wrapper, then flat)</td></tr>
+<tr><td>T26, T04, T05, T06, T07, T08</td><td>169,776–481,067</td><td>1–2,678</td></tr>
+</tbody></table></div>
+<p>T02&#x27;s direct proof-term dependencies are T03, T05, T08, T09 and T10, which are already nodes. Its own 1.85M lines are declarations that two or more of those branches share, so only T02 dominates them. They are a library, spread over about 9,000 two-level namespaces. The fourteen largest namespaces are listed below. T01 is the same one level up.</p>
+<p>Consequence: for T02 and T01 the next manuscript layer cannot be &quot;ten sub-theorems&quot;. It has to be chapters of a shared library, cut by subject. The largest subject blocks in T02&#x27;s region are:</p>
+<div class="scroll"><table>
+<thead><tr><th>Namespace</th><th>Lines in T02&#x27;s region</th><th>Largest declaration (dominated)</th><th>Guess</th></tr></thead>
+<tbody><tr><td><code>Formalism.FourierDecayAlt</code></td><td>234,852</td><td><code>…P.CutSE.actual_compact_theorem</code> (16,589)</td><td>project-specific analytic estimate</td></tr>
+<tr><td><code>Formalism.L2</code></td><td>152,144</td><td><code>…SG.Pf.NcAllC.ncTieC_of_closed</code> (44,532)</td><td>project-specific</td></tr>
+<tr><td><code>ReciprocityTheory.ChartRestriction</code> (mostly <code>.DS</code>)</td><td>68,969</td><td><code>…DS.Lap.TopClosed.besselNVG</code> (21,500)</td><td>related: discrete series, Bessel asymptotics</td></tr>
+<tr><td><code>GlobalTheory.Mem</code></td><td>42,418</td><td><code>…Col2.TC.colsTiedSym_std</code> (6,985)</td><td>project-specific</td></tr>
+<tr><td><code>Formalism.MainNotions</code></td><td>40,564</td><td><code>…BridgeLemma.word_theorem_a_admissible</code> (3,424)</td><td>project-specific</td></tr>
+<tr><td><code>GlobalTheory.HL</code></td><td>32,632</td><td><code>…AbstractBound.ngAt</code> (7,946)</td><td>project-specific</td></tr>
+<tr><td><code>PI.UnitaryGroupMassFormula</code>, <code>PI.VolStabS</code>, <code>PI.AprimeInfW</code></td><td>43,660</td><td><code>…CntFormula.RowsMassW.row_lattice_mass</code> (3,207)</td><td>related: mass formula for unitary groups</td></tr>
+</tbody></table></div>
+<p>Module directory names in the cleaned tree are not a reliable subject guide (<code>Development.AbelianVarietyTheory.Proofs</code> holds 2.55M of the 6.47M lines and is not about abelian varieties), so I used declaration namespaces.</p>
+<h3 id="42-proposed-sub-theorems">4.2 Proposed sub-theorems</h3>
+<p><strong>T02</strong> <code>UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound</code> — disjoint 1,847,425</p>
+<div class="scroll"><table>
+<thead><tr><th>Lean name</th><th>Net</th><th>Guess</th></tr></thead>
+<tbody><tr><td><code>GlobalTheory.RowClaim.Join.thetaLift_row_properties_conj</code></td><td>67,993</td><td>project-specific</td></tr>
+<tr><td><code>UpperTheory.Lit.I5.unitary_theory_of_harishChandra_langlands_alt</code></td><td>47,081</td><td>project glue over ten named published hypotheses (Harish-Chandra, Langlands classification, Flath, Dixmier–Malliavin, Bernstein–Zelevinsky, Green)</td></tr>
+<tr><td><code>Formalism.L2.SG.Pf.NcAllC.ncTieC_of_closed</code></td><td>44,532</td><td>project-specific</td></tr>
+<tr><td><code>GlobalTheory.TypeAsm.TopGap.typeBound_of_gap</code></td><td>36,947</td><td>related: discrete series and Bessel models</td></tr>
+<tr><td><code>GlobalTheory.SqTower.tower_alt_bis</code></td><td>31,772</td><td>project-specific</td></tr>
+<tr><td><code>GlobalTheory.BpEigen.pointwise_bound_eigenfunction</code></td><td>17,357</td><td>related: pointwise bounds for Capelli eigenfunctions</td></tr>
+<tr><td><code>CompanionTheory.WaveGrid.wave_bessel_period_threshold</code></td><td>16,122</td><td>related: Zuckerman translation, matrix-coefficient asymptotics</td></tr>
+<tr><td><code>GlobalTheory.FamilyNormRational.squaredGroupSum_classDoubleCoset_eq_rowWeight</code></td><td>14,208</td><td>project-specific</td></tr>
+<tr><td><code>Formalism.FourierDecayAlt.P.CutSE.thmPActualCpt_of_spec</code></td><td>12,434</td><td>project-specific</td></tr>
+<tr><td><code>ReciprocityTheory.ChartRestriction.DS.Lap.step</code></td><td>11,877</td><td>cite or related: Laplace-method step for discrete series</td></tr>
+</tbody></table></div>
+<p>Use the namespace table in §4.1 for the rest.</p>
+<p><strong>B02</strong> <code>UpperTheory.Gal.Int.Geo.geoOne_holds</code> — disjoint 625,495 (one wrapper <code>geometric_realization_of_weight_one</code>, 595,445)</p>
+<div class="scroll"><table>
+<thead><tr><th>Lean name</th><th>Net</th><th>Guess</th></tr></thead>
+<tbody><tr><td><code>UpperTheory.Gal.LocalSmoothExtension.ksHodge_of_geo</code></td><td>30,291</td><td>project-specific (holomorphic Lefschetz plus definite-unitary counts)</td></tr>
+<tr><td><code>UpperTheory.Gal.W2.fixedPoints_int_base_holds</code></td><td>28,109</td><td>related: Hecke fixed points and CM cycles via uniformisation</td></tr>
+<tr><td><code>UpperTheory.Gal.Int.Geo.Pl.planEx_holds</code></td><td>25,753</td><td>project-specific</td></tr>
+<tr><td><code>UpperTheory.Gal.Seam.HT.htBij</code></td><td>23,528</td><td>cite: Hodge–Tate comparison for smooth projective varieties</td></tr>
+<tr><td><code>UpperTheory.Et.EtaleTopology.top</code></td><td>21,764</td><td>cite: étale topology foundations (SGA 4)</td></tr>
+<tr><td><code>UpperTheory.Et.purAll</code></td><td>16,006</td><td>cite: cohomological purity and Gysin</td></tr>
+<tr><td><code>UpperTheory.Et.E2.main</code></td><td>12,772</td><td>cite: étale cohomology foundations</td></tr>
+<tr><td><code>GlobalTheory.UPel.HT.RepFam.smoothOfRelativeDimension</code>, <code>GlobalTheory.T.harrisTaylor_typeTj_isogenies_representable</code></td><td>11,694; 7,372</td><td>cite: Harris–Taylor moduli of isogenies</td></tr>
+<tr><td><code>UpperTheory.Pbf.pbf_all</code> (private), <code>UpperTheory.Et.etale_finiteness_of_duality</code></td><td>8,569; 8,566</td><td>cite: projective bundle formula, finiteness and duality</td></tr>
+<tr><td><code>UpperTheory.Ru.crystallineComparison.finAll</code></td><td>8,000</td><td>cite: crystalline comparison</td></tr>
+<tr><td><code>GlobalTheory.T.potentialSemiAbelianReduction_of_isogeny</code></td><td>8,087</td><td>cite: potential semi-abelian reduction under isogeny</td></tr>
+</tbody></table></div>
+<p>This is the most citeable node of the twelve: it is the construction of Galois representations in the cohomology of unitary Shimura varieties, with its étale and p-adic Hodge foundations re-proved. The ten &quot;cite&quot; rows jointly dominate 129,126 lines. Name-matched étale, purity and Lefschetz declarations in the region total about 183k and p-adic Hodge about 34k.</p>
+<p><strong>T01</strong> <code>UpperTheory.Lit.every_character_of_theta_integrals_local_matching</code> — disjoint 548,334</p>
+<div class="scroll"><table>
+<thead><tr><th>Lean name</th><th>Net</th><th>Guess</th></tr></thead>
+<tbody><tr><td><code>Formalism.InvariantFactorPaths.MC.theoremMV7</code></td><td>23,098</td><td>not inspected</td></tr>
+<tr><td><code>UpperTheory.Top.zero_free_all_of_green_v_win</code> (P015 outside B05–B10)</td><td>13,212</td><td>project-specific</td></tr>
+<tr><td><code>Formalism.InvariantFactorPaths.MC.theoremMXB</code></td><td>12,984</td><td>related: highest-weight dimension monotonicity</td></tr>
+<tr><td><code>GlobalTheory.NL.wach_used_clauses</code></td><td>12,166</td><td>related: Wach modules</td></tr>
+<tr><td><code>Formalism.MainNotions.N.K.normalized_ring_data</code></td><td>8,205</td><td>project-specific</td></tr>
+<tr><td><code>Formalism.MainNotions.flipOneThree.Pf.theorem_I_of_finer_open_statements</code></td><td>7,530</td><td>project-specific</td></tr>
+<tr><td><code>Formalism.MainNotions.LiftingTheory.local_theory_of_admitted</code></td><td>7,135</td><td>project-specific</td></tr>
+<tr><td><code>GlobalTheory.langRecCore_of_artinReciprocity</code></td><td>6,696</td><td>cite side: class field theory, local duality</td></tr>
+<tr><td><code>GlobalTheory.Hk.normPrimes_short_interval_lower</code></td><td>6,100</td><td>cite or related: prime ideals with norm in short intervals, explicit in the conductor</td></tr>
+<tr><td><code>Formalism.MainNotions.G.ColumnFamilies.splitting_package_holds</code></td><td>5,104</td><td>project-specific</td></tr>
+</tbody></table></div>
+<p>Largest namespaces: <code>ReciprocityTheory.ChartRestriction.DS</code> 46,167, <code>Formalism.MainNotions.G</code> 40,404, <code>Formalism.L2.SG</code> 37,081, <code>Formalism.HermitianLattices.Ext</code> 25,024.</p>
+<p><strong>T26</strong> <code>GlobalTheory.CompanionTheory.Ar.Plug.deepStR_of_use</code> — disjoint 481,067 (wrapper <code>Ar.Top.goodTower_and_volume</code>, 294,784)</p>
+<div class="scroll"><table>
+<thead><tr><th>Lean name (prefix <code>GlobalTheory.CompanionTheory.Ar.</code>)</th><th>Net</th><th>Guess</th></tr></thead>
+<tbody><tr><td><code>Cusp.volumeTheoremX_of_inputs</code></td><td>140,077</td><td>project-specific</td></tr>
+<tr><td><code>Num.TopRel.relations</code></td><td>38,845</td><td>project-specific</td></tr>
+<tr><td><code>Plug.SlopeVolM.slope_sub_cost_le_compVolSlope</code></td><td>18,932</td><td>project-specific (uses nef Riemann–Roch)</td></tr>
+<tr><td><code>Num.FamEx.TestPt.testFacts</code></td><td>18,696</td><td>related: Fargues, Zarhin, quotients by finite flat subgroups</td></tr>
+<tr><td><code>Giv.lineOfLargeDegree_of_use</code></td><td>15,650</td><td>related: arithmetic Hilbert–Samuel and bigness</td></tr>
+<tr><td><code>Link.given_of_use</code></td><td>13,412</td><td>project-specific</td></tr>
+<tr><td><code>Sl.LineProof.line_of_key</code></td><td>11,435</td><td>project-specific</td></tr>
+<tr><td><code>Cusp.TopHt.htU_of_given</code></td><td>9,642</td><td>project-specific</td></tr>
+<tr><td><code>TopTower.comp_data</code></td><td>7,780</td><td>project-specific</td></tr>
+<tr><td><code>GroundTheory.Heights₂.Heights.NumbersDVR.NumericalSegre.full</code></td><td>2,923</td><td>cite: heights and Segre numbers</td></tr>
+</tbody></table></div>
+<p>The namespace <code>GroundTheory.Heights₂.Heights</code> holds 91,083 lines of this region (heights machinery; candidate source Bost–Gillet–Soulé).</p>
+<p><strong>W01</strong> <code>UpperTheory.One.Join.automorphic_window_of_inputs</code> — disjoint 480,551 (wrapper <code>…vwin_of_hypotheses_H_E_alt</code>, 438,086 net)</p>
+<div class="scroll"><table>
+<thead><tr><th>Lean name (prefix <code>UpperTheory.</code>)</th><th>Net</th><th>Guess</th></tr></thead>
+<tbody><tr><td><code>V.Pa.core</code></td><td>24,255</td><td>related: Taylor–Wiles–Kisin patching</td></tr>
+<tr><td><code>V.HV.Core.of_four_alt</code> (= P020; W12–W15 may be nested)</td><td>21,873 gross</td><td>already a parent</td></tr>
+<tr><td><code>V.Z.Sym.Glob.sideG</code></td><td>16,727</td><td>related: symmetric power transfer</td></tr>
+<tr><td><code>V.Z.Desc.V0.numJEDenseThresholdCases</code></td><td>10,479</td><td>project-specific</td></tr>
+<tr><td><code>Reformulated.B.Gr34.mem_UC</code></td><td>8,016</td><td>project-specific; one declaration with an 8,001-line span</td></tr>
+<tr><td><code>V.Th.core_o_of_literal_automorphy_n</code></td><td>7,860</td><td>related: ordinary automorphy lifting</td></tr>
+<tr><td><code>V.Alg.M.core_holds</code></td><td>7,506</td><td>project-specific</td></tr>
+<tr><td><code>V.Z.Sym.Unl.half_of_printed_hida</code></td><td>6,586</td><td>related: Hida theory</td></tr>
+<tr><td><code>ConvolutionTheory.Sph.ramSph</code></td><td>6,201</td><td>project-specific</td></tr>
+<tr><td><code>V.Pa.B2.obstructionBound_of_duality</code></td><td>4,198</td><td>related: duality bound for the obstruction group</td></tr>
+</tbody></table></div>
+<p><code>mem_UC</code> should be looked at: an 8,001-line single theorem is machine-generated and cannot be given a human statement as it stands.</p>
+<p><strong>T04</strong> <code>GlobalTheory.Fc.AllAtMemberStage0.allRows_of_open0_alt</code> — disjoint 455,025</p>
+<div class="scroll"><table>
+<thead><tr><th>Lean name</th><th>Net</th><th>Guess</th></tr></thead>
+<tbody><tr><td><code>GlobalTheory.CarrierGap.offDiag</code> (contains <code>theoremS_leaves_of_carrierG</code>, 76,966)</td><td>183,266</td><td>project-specific</td></tr>
+<tr><td><code>GlobalTheory.Svd.servH_row_of_artin</code> (contains <code>servH_row</code>, 73,485)</td><td>130,968</td><td>project-specific</td></tr>
+<tr><td><code>Formalism.L2.SG.TheoremS.pbApplied</code></td><td>28,178</td><td>project-specific</td></tr>
+<tr><td><code>GlobalTheory.FlagBase.OneClass.bound</code></td><td>19,123</td><td>project-specific</td></tr>
+<tr><td><code>GlobalTheory.MomFin.moments_fin</code></td><td>18,803</td><td>project-specific</td></tr>
+<tr><td><code>Formalism.FourierDecayAlt.P.built_bounds_compact_of_head_top</code></td><td>17,184</td><td>project-specific</td></tr>
+<tr><td><code>Formalism.FourierDecayAlt.P.lemma_model</code></td><td>15,339</td><td>project-specific</td></tr>
+<tr><td><code>Formalism.L2.KerInert.AdmLoc2.admissible_entries_small_chain</code></td><td>13,156</td><td>project-specific</td></tr>
+<tr><td><code>Formalism.L2.KerInert.integral_inert_of_weakApprox</code></td><td>7,159</td><td>related: weak approximation</td></tr>
+</tbody></table></div>
+<p>The first two rows nest the third to ninth in part. The ten selected antichain heads locate disjoint graph regions.</p>
+<p><strong>T05</strong> <code>GlobalTheory.Fc.S0.ontoX_and_lamLow_of_unitaryGroupHypotheses&#x27;</code> — disjoint 303,161 (wrapper <code>BigOn.ontoX_of_hypotheses_alt_alt</code>, 298,263)</p>
+<div class="scroll"><table>
+<thead><tr><th>Lean name</th><th>Net</th><th>Guess</th></tr></thead>
+<tbody><tr><td><code>GlobalTheory.InputsAtRecord.inputsNet_recPlus</code></td><td>100,117</td><td>project-specific</td></tr>
+<tr><td><code>GlobalTheory.BigOn.exponent_bound_of_unitaryThetaStandardTheorems_alt</code></td><td>45,114</td><td>related: Clozel, ℓ-adic Hecke characters, Chebotarev as named hypotheses</td></tr>
+<tr><td><code>UpperTheory.labelSetGeo_of_even_of_rankOK_of_not_dvd_discr</code></td><td>25,046</td><td>project-specific</td></tr>
+<tr><td><code>GlobalTheory.FinalJoin.inputs4_of_net</code></td><td>11,008</td><td>project-specific</td></tr>
+<tr><td><code>GlobalTheory.BigOn.Exp.exportSt_of_hypotheses_alt</code></td><td>10,030</td><td>project glue</td></tr>
+<tr><td><code>GlobalTheory.MinorShiftJet.window_letterDet</code></td><td>8,419</td><td>project-specific</td></tr>
+<tr><td><code>GlobalTheory.CompareOff.compareOffOwn_run</code></td><td>6,757</td><td>project-specific</td></tr>
+<tr><td><code>GlobalTheory.LowRow.lamLow_closing_alt</code></td><td>4,142</td><td>project-specific</td></tr>
+</tbody></table></div>
+<p>The table gives the historical weights of the selected dominator heads.</p>
+<p><strong>T06</strong> <code>GlobalTheory.T.large_unramified_exponent_bundles_exist_alt</code> — disjoint 280,670 (wrapper <code>Mem.Top.Bl.exists_baseLattice_of_prime_alt</code>, 188,022)</p>
+<div class="scroll"><table>
+<thead><tr><th>Lean name</th><th>Net</th><th>Guess</th></tr></thead>
+<tbody><tr><td><code>GlobalTheory.Mem.Top.Closing.memberE_closing_alt_alt</code></td><td>75,959</td><td>project-specific</td></tr>
+<tr><td><code>GlobalTheory.HeightCounting.Up.all_stages_of_specializations_alt</code></td><td>31,788</td><td>project glue over Casselman–Wallach, Weil representation, discrete series</td></tr>
+<tr><td><code>GlobalTheory.TwExportTop.twistAllPowers_of_galoisCohomology_classField</code></td><td>22,518</td><td>related: Poitou–Tate, local duality, Bloch–Kato</td></tr>
+<tr><td><code>GlobalTheory.ChainTw.scalars_of_given_all</code></td><td>16,432</td><td>project-specific</td></tr>
+<tr><td><code>GlobalTheory.Mem.Top.Bl.exBL_isLinked_prmR_alt</code></td><td>9,872</td><td>project-specific</td></tr>
+<tr><td><code>GlobalTheory.LevCmp.stageCExists_of_harishChandra_serN</code></td><td>8,863</td><td>project-specific</td></tr>
+<tr><td><code>GlobalTheory.TwInputs.exists_inputs_of_hkSup_galHodge</code></td><td>8,277</td><td>project-specific</td></tr>
+<tr><td><code>GlobalTheory.Mem.R3.Rw.datExt_rest</code></td><td>7,706</td><td>project-specific</td></tr>
+</tbody></table></div>
+<p>The table gives the historical weights of the selected dominator heads.</p>
+<p><strong>T03</strong> <code>GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt</code> — disjoint 274,375</p>
+<div class="scroll"><table>
+<thead><tr><th>Lean name</th><th>Net</th><th>Guess</th></tr></thead>
+<tbody><tr><td><code>PositivityTheory.Rg.Rsw.resCore</code></td><td>64,875</td><td>related: regularised Siegel–Weil, residues</td></tr>
+<tr><td><code>GlobalTheory.HeckeMember.heckeInt_transform_readTie</code></td><td>20,949</td><td>project-specific</td></tr>
+<tr><td><code>GlobalTheory.RowsAll.locComp_of_isRc_classMapD_cenLoc</code></td><td>12,218</td><td>project-specific</td></tr>
+<tr><td><code>GlobalTheory.RawLift.rawLift_main</code></td><td>8,987</td><td>project-specific</td></tr>
+<tr><td><code>GlobalTheory.DownLift.GenFinite.gen_of_type_clean</code></td><td>6,458</td><td>related: unramified Howe duality</td></tr>
+<tr><td><code>UpperTheory.One.M.unitaryRead_true_alt</code></td><td>3,808</td><td>project-specific</td></tr>
+<tr><td><code>GlobalTheory.RawLift.Assembled.rallisConv_of_siegelWeil</code></td><td>3,436</td><td>related: Rallis inner product</td></tr>
+<tr><td><code>GlobalTheory.HoweIrrCompact.howe_irr</code></td><td>3,320</td><td>cite: Howe duality for compact pairs</td></tr>
+<tr><td><code>GlobalTheory.LowestKType.lowestKType_irreducible</code></td><td>2,562</td><td>cite: lowest K-type</td></tr>
+</tbody></table></div>
+<p>The table gives the historical weights of the selected dominator heads.</p>
+<p><strong>T07</strong> <code>UpperTheory.GalC.final_alt_alt</code> — disjoint 222,063 (wrapper <code>NLinkClose.main_alt_alt</code>, 150,531)</p>
+<div class="scroll"><table>
+<thead><tr><th>Lean name</th><th>Net</th><th>Guess</th></tr></thead>
+<tbody><tr><td><code>GlobalTheory.TheoremT.liftF_of_isGood</code></td><td>33,297</td><td>related: crystalline lattices (Bhatt–Scholze, Fontaine) as named hypotheses</td></tr>
+<tr><td><code>Formalism.MainNotions.N.Ln03.local_theorem_of_inputs</code></td><td>21,595</td><td>project-specific</td></tr>
+<tr><td><code>GlobalTheory.TopBridge.twistedLatticeCohomology_theoremTOP</code></td><td>20,898</td><td>project-specific</td></tr>
+<tr><td><code>Formalism.MainNotions.RamifiedCoefficientChains.Asm.theorem_of_local_lemmas</code></td><td>14,763</td><td>project-specific</td></tr>
+<tr><td><code>GlobalTheory.TheoremBAdm.admissible_ranks_of_CMDatum</code></td><td>14,416</td><td>related: Bloch–Kato local conditions, local Tate duality</td></tr>
+<tr><td><code>Formalism.MainNotions.N.Ln34.lifting_theorem_of_uniform_link</code></td><td>14,338</td><td>project-specific</td></tr>
+<tr><td><code>Formalism.MainNotions.N.FrobeniusPowerSeries.arc_proposition_alternative</code></td><td>14,247</td><td>project-specific (Wach lattices)</td></tr>
+<tr><td><code>GlobalTheory.PinClose.locComp_of_isRc_classMapD_cenLoc</code></td><td>5,958</td><td>project-specific</td></tr>
+<tr><td><code>GlobalTheory.Pass.stepsNoCut_of_artin_alt</code></td><td>5,569</td><td>project glue</td></tr>
+</tbody></table></div>
+<p>The table gives the historical weights of the selected dominator heads.</p>
+<p><strong>T15</strong> <code>SelfIntersectionVolumeEstimates.topCovolG_alt_alt</code> — disjoint 205,928</p>
+<div class="scroll"><table>
+<thead><tr><th>Lean name</th><th>Net</th><th>Guess</th></tr></thead>
+<tbody><tr><td><code>GlobalTheory.RefSum.refinedSum_weight_of_size_alt</code></td><td>18,240</td><td>project-specific</td></tr>
+<tr><td><code>GlobalTheory.OrbitSep.separate_orbits_by_cusp</code></td><td>14,281</td><td>project-specific</td></tr>
+<tr><td><code>GlobalTheory.PolFan.exists_smooth_refinement</code></td><td>9,721</td><td>cite: smooth projective refinement of an invariant fan</td></tr>
+<tr><td><code>GlobalTheory.HSShort.geoBound_of_quoted&#x27;</code></td><td>9,202</td><td>related: explicit arithmetic Hilbert–Samuel, Bertini</td></tr>
+<tr><td><code>MainStatements.Tam.Plug.comp</code></td><td>7,846</td><td>related: volume comparison</td></tr>
+<tr><td><code>GlobalTheory.LogPole.exists_log_pole_along_boundary</code></td><td>6,806</td><td>related: log poles along a toroidal boundary</td></tr>
+<tr><td><code>GlobalTheory.DetLine.exists_of_snc</code></td><td>5,497</td><td>project-specific</td></tr>
+<tr><td><code>GlobalTheory.ValMultRun.valuation_multiplicity_of_consecutive_run_alt</code></td><td>4,558</td><td>project-specific</td></tr>
+<tr><td><code>GlobalTheory.PeakThick.peak</code></td><td>4,261</td><td>related: peak sections</td></tr>
+<tr><td><code>GlobalTheory.NefWt.weight_line_bundle_isNef</code></td><td>3,241</td><td>related: nefness of the weight bundle</td></tr>
+</tbody></table></div>
+<p>The table gives the historical weights of the selected dominator heads.</p>
+<p><strong>T08</strong> <code>GlobalTheory.T.open0_of_unitary_group_hypotheses</code> — disjoint 169,776 (wrapper <code>MiTop.famAllQ_of_allTrue_alt</code>, 130,748)</p>
+<div class="scroll"><table>
+<thead><tr><th>Lean name</th><th>Net</th><th>Guess</th></tr></thead>
+<tbody><tr><td><code>GlobalTheory.Fam.colSide_alt</code></td><td>43,853</td><td>project-specific</td></tr>
+<tr><td><code>GlobalTheory.Fam.lawsLinks_of_geo_rows_cols_alt</code></td><td>36,634</td><td>project-specific (uses strong approximation for SU as a hypothesis)</td></tr>
+<tr><td><code>GlobalTheory.MiTop.exists_botDat_pin_of_placed_of_framed</code></td><td>15,729</td><td>project-specific</td></tr>
+<tr><td><code>GlobalTheory.KernelHalfS.kerSide_chainS</code></td><td>11,017</td><td>project-specific</td></tr>
+<tr><td><code>GlobalTheory.Fam.LatShape.exists_shape_integral_in_normal_frames_alt</code></td><td>5,087</td><td>project-specific</td></tr>
+<tr><td><code>GlobalTheory.Core.HypAt.hypL_at_points_alt</code></td><td>2,619</td><td>project-specific</td></tr>
+<tr><td><code>GlobalTheory.LabPin.frameRed_exists</code></td><td>2,567</td><td>project-specific</td></tr>
+</tbody></table></div>
+<p>Nothing here to cite.</p>
+<h3 id="43-cite-and-stop-versus-project-specific">4.3 &quot;Cite and stop&quot; versus project-specific</h3>
+<p>Computed, by deleting sets of declarations from the graph and measuring what becomes unreachable from <code>allChi</code>:</p>
+<div class="scroll"><table>
+<thead><tr><th>Set deleted</th><th>Lines lost</th></tr></thead>
+<tbody><tr><td>the 3 Cited nodes</td><td>6,445</td></tr>
+<tr><td>the 17 Related nodes</td><td>1,240,130</td></tr>
+<tr><td>all 20</td><td>1,246,697</td></tr>
+<tr><td>T17–T24 together (individually they dominate 7,786)</td><td>108,935</td></tr>
+<tr><td>my 28 &quot;cite&quot; candidates from §4.2</td><td>357,209</td></tr>
+<tr><td>the 20 plus my 28</td><td>1,476,687</td></tr>
+</tbody></table></div>
+<p>Two things follow.</p>
+<ul><li>If every Related comparison were closed, 1.25M lines would leave the reading burden, not 0.51M: the disjoint shares understate it, because B01 contains B02. The manuscript&#x27;s Related total is correct as a deduplicated share, but it is not the answer to &quot;what does citing buy&quot;.</li><li>Published results mostly enter this development as named hypotheses (<code>GlobalTheory.Published.*</code>, more than twenty in the statements above), filled upstream by <code>*_of_literature</code> wrappers that the graph cuts. Their re-proofs are already outside the 9.57M. What is left inside is mostly deduction from them.</li></ul>
+<p>Estimate for the 6,472,125 Lean-only lines (a guess; ±0.3M on the cite side):</p>
+<div class="scroll"><table>
+<thead><tr><th>Node</th><th>Disjoint</th><th>Published theory re-proved (guess)</th><th>Project-specific</th></tr></thead>
+<tbody><tr><td>T02</td><td>1,847,425</td><td>150,000 (discrete series, Bessel, mass formula)</td><td>1,697,425</td></tr>
+<tr><td>B02</td><td>625,495</td><td>300,000 (étale, p-adic Hodge, Harris–Taylor moduli)</td><td>325,495</td></tr>
+<tr><td>T01</td><td>548,334</td><td>60,000</td><td>488,334</td></tr>
+<tr><td>T26</td><td>481,067</td><td>100,000 (heights)</td><td>381,067</td></tr>
+<tr><td>W01</td><td>480,551</td><td>60,000 (patching, Hida, symmetric powers)</td><td>420,551</td></tr>
+<tr><td>T04</td><td>455,025</td><td>20,000</td><td>435,025</td></tr>
+<tr><td>T05</td><td>303,161</td><td>15,000</td><td>288,161</td></tr>
+<tr><td>T06</td><td>280,670</td><td>25,000</td><td>255,670</td></tr>
+<tr><td>T03</td><td>274,375</td><td>75,000 (regularised Siegel–Weil)</td><td>199,375</td></tr>
+<tr><td>T07</td><td>222,063</td><td>30,000</td><td>192,063</td></tr>
+<tr><td>T15</td><td>205,928</td><td>25,000</td><td>180,928</td></tr>
+<tr><td>T08</td><td>169,776</td><td>0</td><td>169,776</td></tr>
+<tr><td>Twelve nodes</td><td>5,893,870</td><td><strong>860,000</strong></td><td><strong>5,033,870</strong></td></tr>
+<tr><td>Other 20 Lean-only nodes</td><td>578,255</td><td>30,000</td><td>548,255</td></tr>
+<tr><td>All 32</td><td>6,472,125</td><td><strong>≈ 0.9M</strong></td><td><strong>≈ 5.6M</strong></td></tr>
+</tbody></table></div>
+<p>The floor for the cite side is the 0.36M I can attach to named declarations. Name-matched lines in the regions (étale and purity 204k, p-adic Hodge 147k, real representation theory 211k, heights 94k) support a figure of 0.6–0.7M. I do not see how it could exceed 1M.</p>
+<p>Sub-trees that are essentially published theory re-proved, where the manuscript can cite and stop after a statement comparison: the étale and p-adic Hodge stack under B02; <code>GroundTheory.Heights₂</code> under T26; <code>ReciprocityTheory.ChartRestriction.DS</code> under T02 and T01; <code>PositivityTheory.Rg.Rsw</code> under T03; the eight statements T17–T24 taken together.</p>
+<p>Sub-trees that are project-specific and need written proofs: <code>Formalism.FourierDecayAlt</code> (about 322k across regions), <code>Formalism.L2</code> (489k), <code>Formalism.MainNotions</code> (404k), <code>GlobalTheory.CompanionTheory.Ar</code> (223k), <code>GlobalTheory.Mem</code> (117k), all of T04, T05, T06 and T08, and the <code>UpperTheory.V</code> counting layer under W01.</p>
+<h2 id="5-pending-hand-proofs">5. Pending hand proofs</h2>
+<h3 id="51-p096-globaltheorymemcol2sameoffuse₆-appendix-e1-p-118">5.1 P096 <code>GlobalTheory.Mem.Col2.SameOff.use₆</code> (Appendix E.1, p. 118)</h3>
+<p>Statement. Lean: for standard column data, u, i ≤ m, v, classes c, c′, γ ∈ GL_{N_i}(E) with <code>AdC (F u) i hi c c′ γ v_F</code>, and every prime q of O_E with <code>q.under ≠ v_F</code>: <code>localization₂ q (mulLat γ (clsCrd c′)) = localization₂ q (clsCrd c)</code>. Formal statement A.6 says (γL_{c′})_Q = (L_c)_Q for Q whose contraction differs from v_F. <strong>Match.</strong> The structural hypotheses (<code>I.Ok</code>, <code>Pins</code>, <code>StdF</code>, <code>StdLvC</code>, <code>CarH</code>) are unused in the Lean proof, which is <code>sameoff_gen</code>.</p>
+<p>Proof. Checked against <code>sameoff_gen</code>, <code>AdC</code>, <code>AdStep</code> and <code>locLat_of_adStep</code>.</p>
+<ul><li>The two branches (i = 0 or i = m; 0 &lt; i &lt; m with <code>chOf c′ = chOf c</code>) are the two clauses of <code>AdC</code>. Correct.</li><li>The relation γ_f·y′ = y·η·κ with κ ∈ U and η_w = 1 for w ≠ v₀ is <code>AdStep</code> verbatim. Correct.</li><li>κ and κ^{-1} preserve the integral span of B: <code>stepLevel_stab</code>, from the local level inclusion. Correct.</li><li>Evaluation at Q over w ≠ v₀ gives (γL_{c′})^∧_Q = γ·y′_Q·B^∧_Q = y_Q·κ_Q·B^∧_Q = L^∧_{c,Q}. Correct.</li><li>Descent E^n ∩ L^∧_Q = L_Q for a full finitely generated lattice, via a basis over the DVR (O_E)_Q and E ∩ Ô_Q = (O_E)_Q. Correct, and it is what <code>mem_localization_of_mem_localLattice</code> does; γ preserves fullness and finite generation (<code>mulLat_fin</code>).</li></ul>
+<p><strong>Verdict: correct.</strong> Three small additions.</p>
+<ol><li>Say where L̂_c = y·B̂ comes from (<code>y_lat</code> of the endpoint level or of the chart).</li><li>Lean works in E ⊗_F F_w and the proof in E_Q. Add the sentence E ⊗_F F_w = ∏_{Q|w} E_Q.</li><li>State that B is finitely generated (<code>Lb_fin</code>); Lean uses it to pass between the adelic span and its local components.</li></ol>
+<h3 id="52-p134-globaltheorytwvcongat_fb_lev-appendix-e2-pp-118120">5.2 P134 <code>GlobalTheory.TwV.congAt_fb_lev</code> (Appendix E.2, pp. 118–120)</h3>
+<p>Statement. Lean: under <code>UnderTie</code>, for i ≤ m, chart β, x, point p with <code>IsPtAd A a i hi β x p</code>, κ in the level group, and every P ∈ SB: <code>CongAt (seamP P) 0 (rat(fb_P)^{-1}·κ·rat(fb_P))</code> and the same for the inverse. Formal statement C.14 says Cong_{s(P),0}(k) and Cong_{s(P),0}(k^{-1}) with k = rat(b_P)^{-1}·κ·rat(b_P). <strong>Match.</strong></p>
+<p>Proof. Checked against <code>baseFrame_std_eq_compan</code>, <code>lev_stab_cong</code>, <code>globLat_compan_of_lev</code>, <code>int_conj</code>, <code>CongAt</code>, <code>NearAt</code>, <code>IsPtAd</code>, <code>IntAtA</code>, <code>qOf</code>.</p>
+<ul><li>Local test: <code>IntAtA P z</code> (some s ∉ P with s·z integral) is equivalent to z_Q ∈ Ô_Q. The Chinese-remainder choice of s is right, and the identification of the integral tensor ring with ∏ Ô_w is right. <code>qOf P = Ideal.absNorm P</code>, so &quot;depth d tests N(Q)^{-d}(k_Q − I)&quot; is <code>CongAt</code>. Correct.</li><li>C = L + aL^♯ is a full lattice, also for a = 0 (<code>compan_zero</code>, <code>compan_eq</code>). Correct.</li><li>Duality commutes with transport by a unitary adele, so the completion at Q of the companion of the transported lattice is x_Q·C_Q. This is <code>companionLattice_adelicLattice_localization_eq</code>; Lean needs x unitary and det J a unit. Correct.</li><li>R·V_Q = H·x_Q·C_Q from the lattice clause <code>IsPtAd.lat</code> and the transported-frame lemma with <code>frsF_mem</code> (two cases). Correct.</li><li>The frame clause gives K = (H·x_Q·b)^{-1}·R ≡ I at depth d ≥ 1 (<code>NearAt</code>). Since N(Q) ∈ Q, K ≡ I modulo the maximal ideal, so det K is a unit and K·V_Q = V_Q. Hence b·V_Q = C_Q. Correct; this is <code>localisation_eq_stdAt_of_congruentOne_atPrime</code>.</li><li>κ and κ^{-1} lie in the level, which stabilises L and is unitary, hence stabilises L^♯ and C. Conjugating by b gives integral matrices; subtracting I keeps integrality. Correct (<code>lev_stab_cong</code>, <code>int_conj</code>).</li></ul>
+<p><strong>Verdict: correct.</strong> Three small additions.</p>
+<ol><li>Give the source of d ≥ 1: <code>(t.idx_ok μ).cst_ok.D_pos P</code>. The proof uses it and does not say where it is assumed.</li><li>&quot;J its nonsingular Hermitian matrix&quot;: nonsingularity is derived in Lean from the pin hypothesis <code>crd_orth</code> (J is a conjugate-transpose product with the invertible <code>crd</code>). Say so, since the statement does not assume it.</li><li>Say that the first <code>UnderTie</code> hypothesis (the pins) is the one used.</li></ol>
+<p>Both candidates can go to cross-review as they are. Their weights are 227 and 175 exclusive lines.</p>
+<h2 id="6-glossary-30-entries-16-checked">6. Glossary (30 entries; 16 checked)</h2>
+<div class="scroll"><table>
+<thead><tr><th>Entry</th><th>Lean</th><th>Result</th></tr></thead>
+<tbody><tr><td>EFamC</td><td><code>TopDefs.lean:15–16</code></td><td>exact</td></tr>
+<tr><td>EAtH</td><td><code>ExplicitFormulaErrorOfHostConditions.lean:144–151</code>, six fields</td><td>exact</td></tr>
+<tr><td>HostExW</td><td><code>ThinScalesIffHostBound.lean:120–123</code></td><td>exact</td></tr>
+<tr><td>ChainTied</td><td><code>TieGlobal.lean:97–114</code></td><td>correct; omits the third bound <code>C.cHH ≤ cHH</code></td></tr>
+<tr><td>HypV</td><td><code>DivinNOfHypV.lean:10–11</code></td><td>exact</td></tr>
+<tr><td>FamilyClassConnected</td><td><code>DivinNOfHypV.lean:13–15</code></td><td>exact</td></tr>
+<tr><td>TopG</td><td><code>ZeroFreeAllOfTopG.lean:12–14</code></td><td>exact</td></tr>
+<tr><td>Closed</td><td><code>ParamsHeightRankConstant.lean:159–161</code></td><td>exact (0 &lt; ε ≤ ε₁, transported threshold, <code>Large K CH</code>)</td></tr>
+<tr><td>LinkN</td><td><code>GlobalTheoremInputs.lean:45–47</code></td><td>exact; the entry would be more useful if it printed the inequality of <code>LinkN_at</code></td></tr>
+<tr><td>IsChiField</td><td><code>ExistsPageN.lean:19–25</code></td><td>exact</td></tr>
+<tr><td>WinPair</td><td><code>ExistsPageN.lean:27–37</code></td><td>exact, all ten fields</td></tr>
+<tr><td>VVle</td><td><code>ExistsPageN.lean:12–17</code></td><td>exact</td></tr>
+<tr><td>VWin</td><td><code>ExistsPageN.lean:49</code></td><td>exact</td></tr>
+<tr><td>LemmaK</td><td><code>LemmaK.lean:13–17</code></td><td>exact</td></tr>
+<tr><td>CountI</td><td><code>Counts.lean:53–58</code></td><td>exact</td></tr>
+<tr><td>CountII, CountIII, CountV</td><td><code>Counts.lean:65, 67, 69</code></td><td>shape exact (<code>CountShape</code>, bound (ℓNe)^C; <code>R1 ≤ 2^{c2}</code> and the complementary <code>CountVs</code>); the case predicates <code>CaseII</code>, <code>CaseIII</code>, <code>CaseV</code> were not unfolded</td></tr>
+</tbody></table></div>
+<p>No error in 16 entries. All 13 line locators I opened land on the named definition. Not checked: HypsAlt, PropsB, DefiniteSideCondition, IsRecT, H′, LiteratureRankNHypothesis, Std, StdF, StdC, StdLvC, CarT, CountIV.</p>
+<p>Missing entries that §2 and §4 use: <code>Level</code> and <code>Level.Gm</code>, <code>Host</code> (as a field with structure), <code>Scale</code> (x, ε, b = exp(x^ε), a = x·b), <code>RankVal</code>, <code>CoreAtH</code>, <code>FamP</code> and <code>Win</code>.</p>
+<h2 id="7-limits-of-this-review">7. Limits of this review</h2>
+<ul><li>AI review only. I did not build Lean or rerun any kernel check.</li><li>§3: 17 of 52 statements were unfolded to their definitions; the others were compared at the level of hypothesis lists or not at all, as marked. &quot;exact&quot; for a paraphrased statement means I found every Lean hypothesis and the conclusion in the text.</li><li>References: 8 works were confirmed by fetching the cited document, read through an automated summariser, so quotations there are second-hand. 5 are from memory or unverified, as marked. The Kollár and Scholze fetches covered the first part of the file only.</li><li>§4: dispositions are guesses from names and statement heads. The cite/project line totals are estimates; only the &quot;lines lost&quot; table is computed.</li><li>§5: &quot;correct&quot; means I followed each step and matched it to the Lean proof term; I did not re-derive the supporting Lean lemmas.</li><li>Page numbers are those printed in the PDF.</li></ul>
+<h2 id="summary">Summary</h2>
+<p>The manuscript does not claim RH, and all six R20 must-fix items are fixed. §2 is accurate formula by formula against Lean. Its analytic half is followable; its arithmetic half still omits the inequality where the Selmer sum enters (<code>LinkN_at</code>), what the lattice is, that a host is a number field, and that the exponent 1/2 comes from taking about √x columns. The 52 split statements are faithful where unfolded, the three Cited entries match Kollár and Washington, and no reference is fabricated (8 of 13 works confirmed online). One unrecorded difference: Labesse appears to assume [F:Q] ≥ 2, and W02 and W04 do not. The next split will not behave like this one: T02 (1.85M) and T01 (0.55M) are shared libraries with tens of thousands of immediate dominator children, so they need subject chapters, not sub-theorems; §4 gives 5–11 named sub-theorems with sizes for each of the twelve largest nodes. Citation can remove about 0.9M of the 6.47M Lean-only lines at best (0.36M attached to named declarations today); about 5.6M is project-specific. Both pending hand proofs, P096 and P134, match Lean and are correct as far as I can check. Sixteen glossary entries were checked with no error.</p></main><footer><a href="../help.html">Using the local edition</a></footer></body></html>

@@ -1,0 +1,104 @@
+{
+  "id": "Z1.5.06",
+  "title": "Rational Frobenius trace bound",
+  "track": {
+    "primary": "analytic",
+    "secondary": [
+      "galois"
+    ]
+  },
+  "statement": "CountQAlt and NewAdmAlt give absolute constants $c,A$. In particular, over every number field, for $e,M$ positive and $p$ away from $M$, the inverse Frobenius at $p$ raised to the given power has a trace classifier for Adm2B of size at most $c[M(e+1)]^A$. It works for every odd coefficient prime unequal to $p$.",
+  "assumptions": [
+    "Z1.5.05",
+    "source:blueprint_v13"
+  ],
+  "hypothesis_details": [
+    "Assume CountQAlt and NewAdmAlt.",
+    "The level and exponent are positive and the prime avoids the level."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.GalN.V.Win.N.frobenius_trace_count_bound_of_rat_eigensystem_count_alt",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/FrobeniusTraceCountBoundOfCmEigensystemCount.lean",
+      "line0": 348,
+      "line1": 398,
+      "sha256": "57447cb06677de3f2da531b3e769ad6714ad947cf4e327f60e52bf06459c63b4",
+      "dominated": 271,
+      "graph": "allChi",
+      "role": "statement"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/blueprint/Z1.5.06.tex",
+      "section": "r5:Z1.5.06, r6:review:Z1.5.06",
+      "pages": []
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r5:Z1.5.06",
+      "pages": [
+        349,
+        349
+      ],
+      "printed_page": 324,
+      "scope": "First page of this named destination."
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r6:review:Z1.5.06",
+      "pages": [
+        361,
+        361
+      ],
+      "printed_page": 336,
+      "scope": "First page of this named destination."
+    }
+  ],
+  "status": "Full",
+  "grade": "L2",
+  "reviews": [
+    "reviews/R5_review_A.md"
+  ],
+  "prerequisites": [
+    "Z1.5.05"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "blueprint_members": [
+    "Z1.5.06"
+  ],
+  "representative": "UpperTheory.GalN.V.Win.N.frobenius_trace_count_bound_of_rat_eigensystem_count_alt",
+  "statement_declarations": [
+    "UpperTheory.GalN.V.Win.N.frobenius_trace_count_bound_of_rat_eigensystem_count_alt"
+  ],
+  "grade_scope": "Named statement declarations with the hypotheses above. Chart supplier records have their own review scopes.",
+  "confirmation_basis": "Minimum across the statement declarations, using registry rows for the blueprint assignments listed here. Reviews of other expositions of a shared declaration are included as context.",
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "slug": "rational-frobenius-trace-bound",
+  "aliases": [
+    "frobenius_trace_count_bound_of_rat_eigensystem_count_alt",
+    "Z1.5.06 Rational Frobenius trace bound"
+  ],
+  "background": [
+    "Frobenius traces",
+    "Rational Galois representations"
+  ],
+  "hypothesis_source": {
+    "document": "blueprint_v13",
+    "section": "r5:Z1.5.06",
+    "pages": [
+      349,
+      349
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "Z1.5.05": "statement-reading"
+  },
+  "summary": "The two counting and admissibility inputs give a polynomial-size list of possible traces of the specified inverse Frobenius power for admissible rank-two data. Absolute constants and independence from the odd coefficient prime make the list suitable for uniform counting."
+}

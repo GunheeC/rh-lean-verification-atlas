@@ -1,0 +1,134 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% RH Notes blueprint source excerpts for Z1.3.03
+% Verbatim excerpts in the notation of the parent blueprint. The labelled editions and source ranges appear below.
+% See the unit YAML for the current proof status. Earlier-round passages retain their original wording.
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+\noindent\nolinkurl{GlobalTheory.T.exists_admissible_hecke_projection_nonvanishing} --- in-repo constant (\path{Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsAdmissibleHeckeProjectionNonvanishingStatement.lean:13--49}); not compared.\par
+External theorem numbers in the original excerpt are not verified here unless a separate edition-specific source record documents the comparison.
+% End of atlas edition annotation.
+
+\section*{Z1.3.03. Equivariant Hecke projection}
+
+% Parent source SHA-256: 1af64922b98ed2310744411b1f18b25cc426c97220646321471836e1a3a409d6
+% blueprint/ch_P.tex lines 12473 through 12485; r5:small:Z1.3.03
+\subsection{Z1.3.03. Integral Hecke projection and the functional}
+\label{r5:small:Z1.3.03}
+\textit{Partial.} The descent of the period continues on page~\pageref{r6:Z1.3.03}. Write $w=2e-1$, with $e\ge1$, and $B=X.B(N,\ell,w)$. The data include the ordinary normal form, holomorphic tower, $\ell\ne2$, $\ell\nmid N$, $N\ge5$, the bounded place embedding, and the local formulas for the two diagonal entries and the lower-left entry of $\rho$. The compatible maps $\pi_i,\sigma_i$ split the admitted Hecke polynomial $P$ on $V_B$, with $P(\mathrm{ev})=1$. The finitely supported functional $\lambda$ has inertia-fixed coefficients relative to $c$, and its level-$n$ Hecke congruence on the $\chi$-part loses at most a fixed $c_2$. The conclusion gives $a$, a common coefficient ring $c_f.O\supset c.O$ containing the matrix entries of $W$, and an additive $\mathbb Z_\ell$-linear map $p_r$. Its coordinates on $B$ lie in $c_f.O$. There it intertwines Galois, $T_q$ for $q\nmid\ell N$, the diamond operators for $(d,N)=1$, and $U_\ell$. Its second coordinate and $\ell^a\lambda$ satisfy the same period congruences in $\mathrm{IsLamFR2}$. The displayed proposition permits $\lambda=0$.
+\par{\footnotesize \nolinkurl{GlobalTheory.T.exists_admissible_hecke_projection_nonvanishing} (\nolinkurl{Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsAdmissibleHeckeProjectionNonvanishingStatement.lean}\allowbreak:13--49). \nolinkurl{GlobalTheory.KummerEisensteinGalois.IsLamFR2} (\nolinkurl{Development/AbelianVarietyTheory/Definitions/Foundations/IsLamFR2.lean}\allowbreak:13--16).\par}
+
+On the diamond $\chi$-submodule, the commutation of Hecke and Galois operators with the diamonds preserves the character condition. Let $L$ be the limiting functional on the scalar extension, approximating the finite-level values with error $C|\ell|^n$. Subtract $\mathrm{ev}(T)L(b)$ from $L(Tb)$, insert the two approximants, and use the assumed congruence between them. All three errors tend to zero for each admitted $T$. The resulting eigenidentity persists on the scalar extension by linearity. Applying it successively to words, then to $P$, gives $L(Pb)=L(b)$. On each summand one uses $L(\sigma_i v)=u\kappa_i v_1$ in the source's zero-based coordinates. Thus $p_0(b)=\sum_i\kappa_i\pi_i(1\otimes b)$ satisfies $L(b)=u p_0(b)_1$ on the character part. The lower row $(0,1)$ of inertia fixes this coordinate. This allows comparison of the inertia-transformed finite-level approximant with the original one at every precision.
+\par{\footnotesize \nolinkurl{GlobalTheory.LamChi.apply_poly_of_stable} (\nolinkurl{Development/AbelianVarietyTheory/Proofs/FoundationProofs/ApplyPolyOfStable.lean}\allowbreak:109--138). \nolinkurl{GlobalTheory.LamChi.exists_pr_isLamFR} (\nolinkurl{Development/AbelianVarietyTheory/Proofs/FoundationProofs/ApplyPolyOfStable.lean}\allowbreak:169--287). \nolinkurl{GlobalTheory.LamPr.exists_period} (\nolinkurl{Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsRestrict.lean}\allowbreak:174--201).\par}
+
+Here is the normalization step, including the zero case. If $L$ vanishes on the character part take zero multiplier and periods one. Otherwise choose $b_0$ with $y=L(b_0)\ne0$. From fixed algebraic approximants $z_n$ with $|z_n-y|\le |\ell|^{n+1}|y|$ we get $|z_n|=|y|$. The elements $z_n/z_0$ are fixed units converging to $y/z_0$. Multiplication of $p_0$ by $z_0/p_0(b_0)_1$ gives the period $y/z_0$ for all $b$. Consecutive period approximants agree to precision $n$ by the ultrametric inequality. For the resulting $p_0$ (absorbing that multiplier), choose a finite free basis of $B$. Choose $a$ so that $\ell^a$ as a positive real number dominates the sum of the norms of the two coordinates of $p_0$ on every basis vector. Since $|\ell^a|_\ell=\ell^{-a}$, all the scaled coordinates are integral. Adjoin these finitely many elements to one integral coefficient ring containing $c.O$ and the matrix entries. Linearity gives integrality on $B$. Scaling both $p_0$ and $\lambda$ preserves the period bound since $|\ell^a|_\ell\le1$. The equivariance of each $\pi_i$ gives that of the sum, including the separate $U_\ell$ identity.
+\par{\footnotesize \nolinkurl{GlobalTheory.LamChi.exists_fixed_period} (\nolinkurl{Development/AbelianVarietyTheory/Proofs/FoundationProofs/ApplyPolyOfStable.lean}\allowbreak:76--99). \nolinkurl{GlobalTheory.LamChi.exists_pr_isLamFR} (\nolinkurl{Development/AbelianVarietyTheory/Proofs/FoundationProofs/ApplyPolyOfStable.lean}\allowbreak:289--333). \nolinkurl{GlobalTheory.AdmProj.exists_admissible_hecke_projection_nonvanishing_alt} (\nolinkurl{Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsAdmissibleHeckeProjectionNonvanishing.lean}\allowbreak:74--183).\par}
+
+\textit{[Proved in Lean, not reproduced:]} the modular-tower construction of $L$, with one unit $u$ and algebraic $\kappa_i$ on all splittings, and the fixed approximation theorem with bounded precision loss. The latter says that an integral algebraic $x$ fixed modulo $\ell^k$ by the specified inertia subgroup is congruent modulo $\ell^{k-c_1}$ to an integral exactly fixed $x'$, with $c_1$ depending only on the starting coefficient ring. These inputs are used before the finite-basis scaling above. \textit{[Hypothesis, discharged at the use:]} $P,\pi_i,\sigma_i$ and the congruence are supplied as arguments of the projection statement. The global Kato construction uses this very statement as its third input.
+\par{\footnotesize \nolinkurl{GlobalTheory.LamPr.exists_period} (\nolinkurl{Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsRestrict.lean}\allowbreak:174--188). \nolinkurl{GlobalTheory.T.exists_inertiaFixed_near_almostFixed_coefficients} (\nolinkurl{Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsInertiaFixedNearAlmostFixedCoefficientsStatement.lean}\allowbreak:6--9). \nolinkurl{UpperTheory.V.Z.Kato.Final.zetaUr} (\nolinkurl{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/UnramifiedZeta/ZetaUr.lean}\allowbreak:9--12).\par}
+
+% blueprint/ch_P.tex lines 12977 through 12991; r6:Z1.3.03
+\subsection{Z1.3.03. Descent of the common period and uniform loss}\label{r6:Z1.3.03}
+Continue the integral projection argument of Section~\ref{r5:small:Z1.3.03}. For $b$ in the integral Betti lattice put $a_n(b)=\lambda((j(\phi_n[i]))_i)$, using a cusp representative $\phi_n$ at precision $n$ and denominator $D=1$. Because $\lambda$ uses only finitely many coefficients there is a bound $C$ on the unit ball. Consecutive representatives have coefficient differences bounded by $|\ell|^n$. Thus, for $t>n$, $|a_t(b)-a_n(b)|\le C|\ell|^n$, independently of the choices. Taking limits in $\mathbb C_\ell$ gives an additive $\mathbb Z_\ell$-linear functional on the lattice, by the finite-level addition formula for representatives. It extends to the scalar span and then linearly to the ambient tensor space. The bound for every representative survives the limit. If $\tau$ fixes the finitely many coefficients of $\lambda$, restrict it along $j$ to obtain $s$; the cusp representative of $sb$ is the coefficientwise translate of that of $b$. Their two approximations have error tending to zero, hence $L(sb)=\tau L(b)$ on the lattice.
+\par{\footnotesize \nolinkurl{GlobalTheory.LamPr.exists_limit} (\nolinkurl{Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsRestrict.lean}\allowbreak:108--172). \nolinkurl{GlobalTheory.LamPr.exists_restrict} (\nolinkurl{Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsRestrict.lean}\allowbreak:69--75).\par}
+
+For $w=2e-1$, the vectors $\sigma_i(1,0)$ are eigenvectors for the character $\epsilon_\ell^{w+1}$ of the inertia subgroup fixing the prescribed finite set. To descend the eigencondition, intersect the kernels of $g_s-\epsilon_\ell(s)^{w+1}$ on the rational span of the finite free lattice. A finite intersection already has the least possible dimension. Base change preserves this kernel, and multiplying by powers of $\ell$ clears the denominators of a rational basis. It suffices to kill the resulting integral eigenvectors. On such a vector compare the translate of a cusp representative with its scalar multiple by the character. Uniqueness modulo $\ell^n$ gives the corresponding transformation of every coefficient $a$; the integral Tate inertia bound gives $\ell^c a\equiv0\pmod{\ell^n}$ with $c$ independent of $a,n$. The coefficient and approximation bounds now give $|L(b)|\le C|\ell|^{n-c}$ for all $n\ge c$, hence $L(\sigma_i(1,0))=0$.
+\par{\footnotesize \nolinkurl{GlobalTheory.LamPr.exists_period} (\nolinkurl{Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsRestrict.lean}\allowbreak:174--230). \nolinkurl{GlobalTheory.ThKill.discrete} (\nolinkurl{Development/AbelianVarietyTheory/Proofs/FoundationProofs/ThetaKillsFplusDiscreteForm.lean}\allowbreak:83--133). \nolinkurl{GlobalTheory.T.integral_tate_inertia_cyclotomic_twist_torsion} (\nolinkurl{Development/AbelianVarietyTheory/Proofs/FoundationProofs/IntegralTateInertiaCyclotomicTwistTorsionStatement.lean}\allowbreak:7--11).\par}
+
+Write $y_i=L(\sigma_i(0,1))$. When all $y_i=0$ take $u=1$, $\kappa_i=0$. Otherwise fix $y_j\ne0$. Choose one finite extension $K/\mathbb Q_\ell$ containing the coefficients of $\lambda$ and all coefficients of tensor expansions of the finitely many $\sigma_i(0,1)$ in lattice elements. Any $\tau\in G_K$ restricts along $j$ to an $s$ as above; thus $\tau y_i=\rho(s)_{11}y_i$ by the first-coordinate vanishing, with the same multiplier for every $i$. It is nonzero since $\tau y_j\ne0$. The ratios $y_i/y_j$ are fixed; Ax's fixed-field theorem puts them in the complete finite field $K$. By density, choose algebraic $a$ with $|a-y_j|<|y_j|$. Then $|a|=|y_j|$. Set $u=y_j/a$ and $\kappa_i=a(y_i/y_j)$. Linearity gives $L(\sigma_i v)=u\kappa_i v_1$ simultaneously and $|u|=1$.
+\par{\footnotesize \nolinkurl{GlobalTheory.line_functional_eq_period_mul} (\nolinkurl{Development/AbelianVarietyTheory/Proofs/FoundationProofs/LineFunctionalEqPeriodMul.lean}\allowbreak:23--99). \nolinkurl{GroundTheory.PAdicHodge.exists_eq_coe_of_forall_smul_eq} (\nolinkurl{GroundTheory/PAdicHodge/AxLemma.lean}\allowbreak:530--537).\par}
+
+For the second loss, let $H$ consist of automorphisms fixing $c.O$ pointwise and inducing the identity on the residue field. If an integral algebraic $x$ satisfies $|s x-x|\le\ell^{-k}$ for $s\in H$, Ax's uniform orbit bound gives an algebraic $y$ fixed by $H$ with $|x-y|\le C_\ell\ell^{-k}$. To apply the field form to $H$, take its closure: $x$ has finite orbit, so the same bound holds on that closure. The algebraic fixed field is henselian over $\mathbb Q_\ell$ with residue characteristic $\ell$. Choose $c_1$ so that $C_\ell<\ell^{c_1}$. For $k>c_1$ the estimate implies $|y|\le1$ and $x\equiv y\pmod{\ell^{k-c_1}}$; for $k\le c_1$ take $y=0$ (truncated subtraction). This closes the fixed-approximation step, uniformly in $k,x$. The normalization and denominator clearing of Section~\ref{r5:small:Z1.3.03} now apply. The published estimates and the remaining input are recorded in Section~\ref{r6:kato-lit}.
+\par{\footnotesize \nolinkurl{GlobalTheory.PerFix.inertiaC} (\nolinkurl{Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsInertiaFixedNearAlmostFixedCoefficients.lean}\allowbreak:16--37). \nolinkurl{GlobalTheory.PerFix.exists_fixed_near} (\nolinkurl{Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsInertiaFixedNearAlmostFixedCoefficients.lean}\allowbreak:39--71). \nolinkurl{GlobalTheory.AxLemma.ax_lemma} (\nolinkurl{Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/BoundedOrbitHasNearbyFixedPoint.lean}\allowbreak:211--221).\par}
+
+\emph{Partial. [Proved in Lean, not reproduced:]} on the specific modular tower, for every $b\in B$, $n\ge0$ and odd $w$, construct a cusp representative satisfying both the level-$n$ comparison and integral exponents, and prove its coefficientwise uniqueness at the needed precision. The Tate input used above is the uniform integral estimate for all $x\in A$ with $s x\equiv\epsilon_{\ell,n}(s)^{w+1}x\pmod{\ell^n}$ on inertia fixing $F$; the bound $c$ may depend on $F,w$, but not on $n,x$. These two concrete upstream comparisons remain open in this exposition. The ordinary input, polynomial splitting, and congruences for the specified $\lambda$ are hypotheses of the unit.
+\par{\footnotesize \nolinkurl{GlobalTheory.T.exists_cuspFunctional_oddWeight_oddPrime} (\nolinkurl{Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsCuspFunctionalOddWeightOddPrimeStatement.lean}\allowbreak:8--9). \nolinkurl{GlobalTheory.LamPr.exists_limit} (\nolinkurl{Development/AbelianVarietyTheory/Proofs/FoundationProofs/ExistsRestrict.lean}\allowbreak:119--139). \nolinkurl{GlobalTheory.ThKill.discrete} (\nolinkurl{Development/AbelianVarietyTheory/Proofs/FoundationProofs/ThetaKillsFplusDiscreteForm.lean}\allowbreak:95--105). \nolinkurl{GlobalTheory.T.integral_tate_inertia_cyclotomic_twist_torsion} (\nolinkurl{Development/AbelianVarietyTheory/Proofs/FoundationProofs/IntegralTateInertiaCyclotomicTwistTorsionStatement.lean}\allowbreak:7--11).\par}
+
+% Parent source SHA-256: 1fdc6ea9aac6cf10316f85b3253b33ae98289a76ff5aa2e79daaaf11e057ce18
+% blueprint/ch_P_r7.tex lines 666 through 750; r7:Z1.3.03
+\subsection{Z1.3.03. Uniform integral Tate loss and the cusp}\label{r7:Z1.3.03}
+\textbf{A01, published vanishing and its integral consequence.}
+Use J.~Tate, \emph{\(p\)-Divisible Groups}, in \emph{Proceedings of a
+Conference on Local Fields} (1967), \cite[\S3.3, Theorem~2, p.~176]{Tate-pdiv}. The result used is
+vanishing of \emph{both} continuous \(H^0\) and \(H^1\) for a
+one-dimensional twist of the completed algebraic closure whose character
+cuts out, after finite base extension, a totally ramified
+\(\mathbb Z_\ell\)-extension.
+\href{https://www.math.purdue.edu/~tongliu/teaching/598/p-divisible.pdf}{Tate, original text.}
+The standalone Lean lemma covers every prime \(\ell\). Its Kato application assumes \(\ell\) odd. Fix \(A\) with \(v_A(\ell)>0\), a positive twist \(j\) and the finite set \(F\). Embed
+\(\Omega\) at \(A\) in \(\overline{\mathbb Q}_\ell\). Concretely, on each finite \(E/\mathbf Q\) in \(\Omega\), complete at the prime induced by \(A\) and embed the completion in \(\overline{\mathbf Q}_\ell\). The resulting finite nonempty sets of compatible-place embeddings have surjective restriction maps, since an embedding of a finite local field extends across a finite extension. Compactness of their inverse limit gives one embedding with inverse image of the unit ball exactly \(A\). See \nolinkurl{ReciprocityTheory.Neutral.Cmp.exists_compat}, \path{LocalFieldAutomorphisms/ValuationIntCastLtOneIff.lean:83--89}. Inside
+\(\mathbb C_\ell\), take \(K\) to be the completion of the maximal
+unramified extension of \(\mathbb Q_\ell\), with the images of \(F\) and
+\(\mu_\ell\) adjoined (adjoin \(\mu_4\) also for \(\ell=2\)).
+This finite extension of a complete discretely valued field is complete
+and discretely valued, of mixed characteristic and with algebraically
+closed residue field. The algebraic closure of \(K\) inside
+\(\mathbb C_\ell\) contains \(\overline{\mathbb Q}_\ell\), so its
+completion is \(\mathbb C_\ell\).
+Each \(s\in G_K\) preserves the embedded \(\Omega\), the subfield
+of elements algebraic over \(\mathbb Q\). It restricts to an inertia
+element fixing \(F\): the images of \(F\) are in \(K\), and the maximal local unramified extension it fixes has residue field \(\overline{\mathbf F}_\ell\). Thus \(s\) fixes the reduction of every integral element. It preserves the valuation and fixes all residues on restriction, which is exactly inertia.
+See \nolinkurl{ReciprocityTheory.Neutral.Cmp.res_mem_ine_iff}, \path{LocalFieldAutomorphisms/Inertia.lean:45--50}. Thus the source hypothesis bounds every such \(s\).
+\par The cyclotomic image lies in principal units (in \(1+4\mathbb Z_2\)
+at 2), where the logarithm identifies closed infinite subgroups
+with copies of \(\mathbb Z_\ell\). The image is infinite: otherwise one finite
+extension of \(K\) would contain every \(\ell\)-power root of unity,
+contradicting discreteness since
+\(v(\zeta_{\ell^n}-1)=1/\varphi(\ell^n)\) by Eisenstein. Its
+\((-j)\)-th power still has infinite image: under the logarithm multiplication by the nonzero integer \(-j\) is injective on this torsion-free group.
+Every finite layer is totally ramified since the base is complete
+discretely valued with algebraically closed residue field. These checks
+give the hypotheses of Theorem~2 for \(V=\mathbb C_\ell(\chi^{-j})\).
+\par Put \(Dx(s)=\chi(s)^{-j}s(x)-x\). By the two vanishings,
+\(D:V\to Z^1_{\rm cts}(G_K,V)\) is a continuous bijection of
+\(\mathbb Q_\ell\)-Banach spaces: continuous functions on the compact
+group have the supremum norm and the cocycle identities are closed.
+The dilates by \(\ell^{-n}\) of the image of the closed unit ball cover
+the target. Baire gives a ball about zero in the closure of the image
+of the unit ball, since this closure is an additive subgroup. For a
+target in that ball approximate by an image to error in \(\ell\)
+times the same ball. Divide the error by \(\ell\), repeat, and add
+the successive preimages multiplied by \(1,\ell,\ell^2,\ldots\).
+Completeness gives a preimage in the unit ball. Thus
+\(|x|\le\ell^c\sup_s |Dx(s)|\) for a single nonnegative \(c\).
+For integral \(x\), replacing \(\chi(s)\) by its residue representative
+modulo \(\ell^n\) changes the untwisted product by at most \(\ell^{-n}\)
+for \(n>0\), and \(n=0\) follows from integrality. The assumed congruence on inertia fixing \(F\) therefore bounds \(\sup_{G_K}|Dx|\) by \(\ell^{-n}\).
+Thus \(|\ell^c x|\le \ell^{-n}\) for every such \(x,n\) with the same \(c=c(\ell,A,j,F)\). Dividing by \(\ell^n\) gives an element of \(A\), exactly the integral congruence.
+\nolinkurl{GlobalTheory.T.integral_tate_inertia_cyclotomic_twist_torsion},
+\path{FoundationProofs/IntegralTateInertiaCyclotomicTwistTorsionStatement.lean:7--11};
+\nolinkurl{GlobalTheory.IntTate.integral_tate_inertia},
+\path{FoundationProofs/IntegralTateInertiaCyclotomicTwistTorsion.lean:524--603}.
+
+\textbf{C02, hand proof.} The Hilbert~90 step in descending the cusp
+lift allows a finite-index subgroup \(\Delta\) which may be nonnormal.
+Let \(L\) be the subfield fixed by \(\Delta\) and \(D\) its pointwise
+stabilizer. Since \(\Delta\subseteq D\), the index of \(D\) is finite. The cocycle \(c:\Gamma\to K^\times\) for the given action on the ambient field \(K\) equals one on \(D\)
+by hypothesis. Choose left-coset representatives for \(\Gamma/D\).
+Their restrictions to \(L\) are distinct field embeddings. To see
+independence, take a shortest nonzero linear relation. Applying it at
+\(bx\) and subtracting the relation at \(x\) times the first embedding
+of \(b\) removes one coefficient; choose \(b\) separating the first and
+another embedding. This contradicts minimality (a single embedding
+is nonzero at 1). Thus for some \(x\in L\) the sum
+\(y=\sum_t c(t)t(x)\) is nonzero. The summands depend only on
+cosets since \(D\) fixes \(x\) and \(c(td)=t(c(d))c(t)=c(t)\) for every \(d\in D\).
+Left multiplication permutes the cosets, so \(c(s)s(y)=y\).
+\nolinkurl{GlobalTheory.ThLift.hilbert_ninety},
+\path{FoundationProofs/ExistsInvariantLift.lean:13--55}.
+
+\textbf{B04.} For every admitted odd-weight \(b\), construct a cusp
+representative at precision \(n\) with its prescribed class, invariance,
+complementary power condition and integral Fourier lattice.
+\textbf{B05.} For two representatives satisfying the successive-level
+hypotheses, prove the coefficient congruence at the stipulated precision.
+The source uses existence and uniqueness separately. The published
+period vector in Kato 12.5(1) belongs to a modular realization. It
+provides neither a representative in the supplied tower nor a uniqueness
+estimate for its Hahn coefficients. C02 accounts for the Hilbert~90
+step in B04.
+\nolinkurl{GlobalTheory.ThEx.thex},
+\path{FoundationProofs/ExistsCuspFunctionalOddWeightOddPrime.lean:16--30};
+\nolinkurl{GlobalTheory.T.cgA_coeff_of_isThB_succ},
+\path{FoundationProofs/IsThBSuccCoeffCongStatement.lean:8--10}.
+

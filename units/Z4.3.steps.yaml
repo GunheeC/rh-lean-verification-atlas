@@ -1,0 +1,185 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "Z4.3",
+  "edition_sha256": "d87b3e099dfeb034f848cb89ddfd7fe9480170e931a57bb693804c2f80e0fc92",
+  "note_sha256": "0b5c1629ad75b943e7ec8537ea3f11b9bf9db8e7aa941f486e0b0966c31ab44b",
+  "statement_sha256": "16e4c9dc9247fd5badf4d4d205a0d7167adfe74add96e6a09bcd9cb5cd9347b8",
+  "sources": [
+    {
+      "path": "notes/blueprint/Z4.3.tex",
+      "sha256": "0b5c1629ad75b943e7ec8537ea3f11b9bf9db8e7aa941f486e0b0966c31ab44b"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "For each represented pair, the comparison supplies a rational reference vector for that pair.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: individual rational reference tuple"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.PdvKm.nu_step_old",
+          "file": "Development/AbelianVarietyTheory/Definitions/GaloisGeometry/KernelRationalReferenceTuple.lean",
+          "line0": 17,
+          "line1": 63
+        }
+      ],
+      "source": "notes/blueprint/Z4.3.tex",
+      "anchor": "\\paragraph{The rational vector for an individual pair.}",
+      "source_lines": [
+        34,
+        49
+      ],
+      "claim_sha256": "aef920d0533c9fa3ba2e7f05463fa231695a3e07e3007f8aa39b72bb795a5524",
+      "passage_sha256": "d1fef9a0a7f0638cacada99b59eddd1859546acdfa7fc8f3da3e78a92e22e6bd",
+      "sha256": "7dca27921979e24c1798ac28d4a92ef84a9550cda7f28e0540618561898000c3",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The stabilizer comparison identifies the level group on the same chain.",
+      "kind": "computation",
+      "uses": [
+        "input: fixed chain and levels"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.Pdv.stabStd_eq_stabSet",
+          "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/TrueChainStabilisersEqStandardBaseLevelPoints.lean",
+          "line0": 24,
+          "line1": 65
+        }
+      ],
+      "source": "notes/blueprint/Z4.3.tex",
+      "anchor": "\\paragraph{The stabilizer calculation on the same chain.}",
+      "source_lines": [
+        109,
+        125
+      ],
+      "claim_sha256": "ffa9791c5cb2eb25a7b4de43b4b38a0ce417b39a467859ba76d111762340c55b",
+      "passage_sha256": "9dbf22b4ac4adbf7391e3b965b253302c78b6a1997ad9977d507d569e223aff0",
+      "sha256": "b4408299c1794288379985b59a3375c2537f1426a6a384ed3ea3ce12eeccb482",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Transport to the selected lattice supplies the kernel reading used for the inert-place comparison.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: selected kernel and period lattice"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.L2.Ker.Seam.push",
+          "file": "Formalism/LocalToGlobal/KernelLattices/FirstKernelLawReading.lean",
+          "line0": 74,
+          "line1": 79
+        }
+      ],
+      "source": "notes/blueprint/Z4.3.tex",
+      "anchor": "\\paragraph{Transport of this kernel to the chosen period lattice.}",
+      "source_lines": [
+        320,
+        347
+      ],
+      "claim_sha256": "de059314a32cebf693eb1630e4d4f5deafd21d769801e3409ac916219a51f489",
+      "passage_sha256": "9980de970d73d3f12ed2715b3630417c20fd2c1305f204e3f2decb37d1398ebc",
+      "sha256": "2abe17d05e67451b18fb6fce229ce64a03c93d23ef12df33d11389a2b4f24a1a",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The Taylor combination represents the prescribed selected coefficient under the chosen embedding.",
+      "kind": "assembly",
+      "uses": [
+        "S3",
+        "input: Taylor algebraicity and tied reader"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.Ggeo.KerComb.comb_of_tied",
+          "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/CombOfTied.lean",
+          "line0": 14,
+          "line1": 33
+        }
+      ],
+      "source": "notes/blueprint/Z4.3.tex",
+      "anchor": "\\paragraph{The coefficient identity after applying $\\lambda$.}",
+      "source_lines": [
+        369,
+        379
+      ],
+      "claim_sha256": "14382851377a6942298da62d06d1b08e301be42d6d62a4206e1be3ad3032bb21",
+      "passage_sha256": "5f144c7ea2d8414f7cfcf4f86ca86eaff520cb9bb95e78edbe5aa53ac83a7ffa",
+      "sha256": "c015c98ac2740c6f4620290e58d5b6fff79c207718a21d69ebb7d20a82ec810a",
+      "ai_review": []
+    },
+    {
+      "id": "S5",
+      "status": "active",
+      "claim": "Application on the inert row requires the certified series and adaptation conditions for that row.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S4",
+        "input: inert row and its adaptation hypotheses"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.KerStd.exists_beFam_evenConditionsInert_of_kerEnt",
+          "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/AdmissibleKernelSeriesInertPrimeNonConjugateFrob.lean",
+          "line0": 24,
+          "line1": 44
+        }
+      ],
+      "source": "notes/blueprint/Z4.3.tex",
+      "anchor": "\\paragraph{Use on the inert row and review boundary.}",
+      "source_lines": [
+        432,
+        447
+      ],
+      "claim_sha256": "28562d7520f3cdf59d0c98ce0e893e0675a374d5cdac4e8f6c01ea637673ca13",
+      "passage_sha256": "7ae5bc4fb8f1cedd4d2b6374ec1abfd3071c9fb2eaabdcd70d8137ec2a7c46ce",
+      "sha256": "983f11fbccfa8669abc2f5ac7abca738024ab502360232f7a7d3eb1d6adab176",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "ee7a4a9eee96305ca5be233bf30ba8f42b49b4fb743eaf7f5fee5ef1dda09653",
+      "sources": [
+        {
+          "path": "notes/blueprint/Z4.3.tex",
+          "sha256": "22ada68cd97f262c6d4b27ebd739f949f244244a36a057dd68527a5008b55c91"
+        }
+      ],
+      "statement_sha256": "16e4c9dc9247fd5badf4d4d205a0d7167adfe74add96e6a09bcd9cb5cd9347b8",
+      "steps": {
+        "S1": "7dca27921979e24c1798ac28d4a92ef84a9550cda7f28e0540618561898000c3",
+        "S2": "b4408299c1794288379985b59a3375c2537f1426a6a384ed3ea3ce12eeccb482",
+        "S3": "2abe17d05e67451b18fb6fce229ce64a03c93d23ef12df33d11389a2b4f24a1a",
+        "S4": "c015c98ac2740c6f4620290e58d5b6fff79c207718a21d69ebb7d20a82ec810a",
+        "S5": "983f11fbccfa8669abc2f5ac7abca738024ab502360232f7a7d3eb1d6adab176"
+      },
+      "step_texts": {
+        "S1": "For each represented pair, the comparison supplies a rational reference vector for that pair.",
+        "S2": "The stabilizer comparison identifies the level group on the same chain.",
+        "S3": "Transport to the selected lattice supplies the kernel reading used for the inert-place comparison.",
+        "S4": "The Taylor combination represents the prescribed selected coefficient under the chosen embedding.",
+        "S5": "Application on the inert row requires the certified series and adaptation conditions for that row."
+      },
+      "step_passages": {
+        "S1": "d1fef9a0a7f0638cacada99b59eddd1859546acdfa7fc8f3da3e78a92e22e6bd",
+        "S2": "9dbf22b4ac4adbf7391e3b965b253302c78b6a1997ad9977d507d569e223aff0",
+        "S3": "9980de970d73d3f12ed2715b3630417c20fd2c1305f204e3f2decb37d1398ebc",
+        "S4": "5f144c7ea2d8414f7cfcf4f86ca86eaff520cb9bb95e78edbe5aa53ac83a7ffa",
+        "S5": "7ae5bc4fb8f1cedd4d2b6374ec1abfd3071c9fb2eaabdcd70d8137ec2a7c46ce"
+      }
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "T03",
+  "edition_sha256": "56dc787c83c5380e792e45bad9b963435658c04c67bbb7538a6519c6eaa6333a",
+  "note_sha256": "9c1cdd683e62fec528e88e18dbcf14fd8e3a9b722b398edabea8c88a7635c794",
+  "statement_sha256": "7483d0770e87617b4412c3ab5633ed9b6698f6917034dd1ac3f6a9c37d18eb12",
+  "sources": [
+    {
+      "path": "notes/units/T03_round4.md",
+      "sha256": "9c1cdd683e62fec528e88e18dbcf14fd8e3a9b722b398edabea8c88a7635c794"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Rational rows and the third-place package give the mass, membership and bundle outputs on the specified extension.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "T06",
+        "input: eventual retwisting"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/HypothesesNonemptyOfUnramifiedExponents.lean",
+          "line0": 41,
+          "line1": 48
+        }
+      ],
+      "source": "notes/units/T03_round4.md",
+      "anchor": "Fix the proof of reciprocity existence, dependence parameter and retwisting",
+      "source_lines": [
+        26,
+        26
+      ],
+      "claim_sha256": "335cfbcef2f3a7f78acbceea10079bade321dee80a983c2f9215200ddc690b32",
+      "passage_sha256": "e8d88e8dcef3fdfb9f9c5c24ff1bacb20e0c54effdcd84404c71ad76c9721a37",
+      "sha256": "61f5324ea7b9b1acb752636129486237441a66bc278e35f0ece828fb9d11b0a7",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Monotonicity transports the preliminary small-prime norm rows from the dependence parameters to the strengthened extension.",
+      "kind": "assembly",
+      "uses": [
+        "T08",
+        "input: stronger extension and linked small-prime bound"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/HypothesesNonemptyOfUnramifiedExponents.lean",
+          "line0": 44,
+          "line1": 53
+        }
+      ],
+      "source": "notes/units/T03_round4.md",
+      "anchor": "Use local finiteness, local Tate duality, the Euler-characteristic",
+      "source_lines": [
+        30,
+        30
+      ],
+      "claim_sha256": "0b64c34b0eb20079265e26a5df132841b59e8cf5a9e0600b67698e50aa273f69",
+      "passage_sha256": "efab078c597848a784da5aedfa7f6adba488785409795479a906611c9af021a8",
+      "sha256": "101e4fa4383af3d0a65509d6722d11f15d72e06dd440c7b8a3e63aaab235bf05",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "All rows together with the mass, membership, bundle and analytic inputs yield a single inhabitant of the definite-side record.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "S2",
+        "T04",
+        "D033",
+        "input: covolume and functional links on the strengthened extension"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/HypothesesNonemptyOfUnramifiedExponents.lean",
+          "line0": 54,
+          "line1": 61
+        }
+      ],
+      "source": "notes/units/T03_round4.md",
+      "anchor": "Now all four row inputs refer to the",
+      "source_lines": [
+        34,
+        34
+      ],
+      "claim_sha256": "53b78ddb2bfd2f58e74b197e72ad8278afba57ac83952a7479bff0d38557ed5f",
+      "passage_sha256": "1e52f16f90222fadb1384b452a9435ecee77179eb6fcad80f77b5577794af8c3",
+      "sha256": "1f5d4766bafe0d90f3f6fe945c0eed9f8bf438d5ce4a9c9f38d93fb89028f96f",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "a60f8dd9997b96d9da630ea5ab3e84d2fc86a148fb238f791762e1ce1e922e85",
+      "sources": [
+        {
+          "path": "notes/units/T03_round4.md",
+          "sha256": "beac1ae5ebb3999cc1b8a37a4727431522cb7228ffdbb625d1fdd7ee2d852936"
+        }
+      ],
+      "steps": {
+        "S1": "8b50fa8655a7bec2cbdcd06e544f8afabc927bc43d807608f9163e7675afde5d",
+        "S2": "bd7977aa9ff5e83caa7b1d0327ea0dfb73b252940f035d06cd3c5cc38aa63ed7",
+        "S3": "a099632319622d704fe639e7d01c36587ca8ec23da631d4b626d9803ccfdd9f5"
+      },
+      "step_texts": {
+        "S1": "Rational rows and the third-place package give the mass, membership and bundle outputs on the specified extension.",
+        "S2": "Monotonicity transports the preliminary small-prime norm rows from the dependence parameters to the strengthened extension.",
+        "S3": "All rows together with the mass, membership, bundle and analytic inputs yield a single inhabitant of the definite-side record."
+      }
+    },
+    {
+      "edition_sha256": "7592f4329da68ead26b1ea98d6c56452cabad5050c2c31e57f4e96a4a5fa61af",
+      "sources": [
+        {
+          "path": "notes/units/T03_round4.md",
+          "sha256": "beac1ae5ebb3999cc1b8a37a4727431522cb7228ffdbb625d1fdd7ee2d852936"
+        }
+      ],
+      "statement_sha256": "5b33b4d5c3284e9417b6a65f9b12ac6aae7d46a9ed2f21b0817c34357e114759",
+      "steps": {
+        "S1": "9acb4b797fb75c4223353994d792aaa058d470e4c884aed90c2723058c02510a",
+        "S2": "40ea7ff1b5ed4b2148c071b4041a9b4332a3402dfce23b6f4ea684bf36957b58",
+        "S3": "1f5d4766bafe0d90f3f6fe945c0eed9f8bf438d5ce4a9c9f38d93fb89028f96f"
+      },
+      "step_texts": {
+        "S1": "Rational rows and the third-place package give the mass, membership and bundle outputs on the specified extension.",
+        "S2": "Monotonicity transports the preliminary small-prime norm rows from the dependence parameters to the strengthened extension.",
+        "S3": "All rows together with the mass, membership, bundle and analytic inputs yield a single inhabitant of the definite-side record."
+      },
+      "step_passages": {
+        "S1": "c5f79b6e8a15f03058b3fc7d901666badc504da07bf4a77197cc52e35163a17a",
+        "S2": "ef87dd0e11ecc688be99f71ec282d63d68c913c9b6d2f55dbefd870e6645886c",
+        "S3": "1e52f16f90222fadb1384b452a9435ecee77179eb6fcad80f77b5577794af8c3"
+      }
+    },
+    {
+      "edition_sha256": "452f893168e5e46b9e6e7f8cd039b9a449cae23c5cca8f63126a24f05dbb1d59",
+      "sources": [
+        {
+          "path": "notes/units/T03_round4.md",
+          "sha256": "e17a4b2dfa118214a629af5c31ac35ea3df63e221123f8a2049a3683940fe381"
+        }
+      ],
+      "statement_sha256": "7483d0770e87617b4412c3ab5633ed9b6698f6917034dd1ac3f6a9c37d18eb12",
+      "steps": {
+        "S1": "61f5324ea7b9b1acb752636129486237441a66bc278e35f0ece828fb9d11b0a7",
+        "S2": "40ea7ff1b5ed4b2148c071b4041a9b4332a3402dfce23b6f4ea684bf36957b58",
+        "S3": "1f5d4766bafe0d90f3f6fe945c0eed9f8bf438d5ce4a9c9f38d93fb89028f96f"
+      },
+      "step_texts": {
+        "S1": "Rational rows and the third-place package give the mass, membership and bundle outputs on the specified extension.",
+        "S2": "Monotonicity transports the preliminary small-prime norm rows from the dependence parameters to the strengthened extension.",
+        "S3": "All rows together with the mass, membership, bundle and analytic inputs yield a single inhabitant of the definite-side record."
+      },
+      "step_passages": {
+        "S1": "e8d88e8dcef3fdfb9f9c5c24ff1bacb20e0c54effdcd84404c71ad76c9721a37",
+        "S2": "ef87dd0e11ecc688be99f71ec282d63d68c913c9b6d2f55dbefd870e6645886c",
+        "S3": "1e52f16f90222fadb1384b452a9435ecee77179eb6fcad80f77b5577794af8c3"
+      }
+    }
+  ]
+}

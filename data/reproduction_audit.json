@@ -1,0 +1,99 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "checked": "2026-11-25",
+  "images": {
+    "edition": "blueprint_v13",
+    "pdf_sha256": "d9dcb73f10a5829865f9246409d886c16cb1d2087717adf7758f154257a28af4",
+    "pdf_origin_in_source_project": "Atlas project archive",
+    "packet_images": 47,
+    "distinct_pdf_pages": 46,
+    "overlapping_physical_pages": {
+      "32": [
+        "analytic/7",
+        "formal/7"
+      ]
+    },
+    "track_counts": {
+      "analytic": 8,
+      "arakelov": 6,
+      "theta": 6,
+      "galois": 6,
+      "local": 7,
+      "ktheory": 7,
+      "formal": 7
+    },
+    "evidence": "data/notes_starters.json",
+    "verification": "All image files matched recorded SHA-256. All decoded RGB pixels and image dimensions agree with the fresh macOS PDFKit rendering of the recorded physical page from the matching local release.",
+    "optional_site_copy": "All 47 files under site/notes/*/pages match the corresponding source assets by SHA-256."
+  },
+  "local_tex": {
+    "tex_files": 228,
+    "paper_v3_unit_notes": 165,
+    "blueprint_working_unit_notes": 48,
+    "paper_supplements": 8,
+    "starter_packets": 7,
+    "paper_unit_ranges": 165,
+    "blueprint_working_ranges": 154,
+    "starter_ranges": 8,
+    "whole_supplements": 8,
+    "distinct_source_file_versions": 31,
+    "blueprint_working_ranges_with_v13_page": 107,
+    "blueprint_working_ranges_without_v13_page": 47,
+    "local_pdf_hashes": "data/editions.json",
+    "evidence": [
+      "data/notes_units.json",
+      "data/blueprint_excerpt_index.json",
+      "data/notes_starters.json"
+    ],
+    "verification": "Compared excerpt bytes and source hashes against the local working files or preserved historical versions. The source origin is the local project."
+  },
+  "photographic_or_third_party_illustrations_in_note_packets": 0,
+  "file_identity": {
+    "algorithm": "SHA-256",
+    "scope": "Every packaged atlas file at audit time, excluding VCS metadata, interpreter caches and optional generated website duplicates. Checked against four immutable reading-project archives, all entries of the pinned Lean submission, and the three registered publisher-hosted documents.",
+    "compared_lean_archive_files": 175190,
+    "compared_reading_project_files": {
+      "adriazola": 222,
+      "jae-63": 21,
+      "josebrox": 1585,
+      "naskrecki": 178
+    },
+    "compared_publisher_entities": [
+      "mit-audit",
+      "alpoge-note",
+      "waterloo-zeta"
+    ],
+    "identical_complete_files": 0
+  },
+  "prose_screen": {
+    "word_window": 20,
+    "tokenization": "HTML entities and Unicode normalized; URLs removed; Latin word tokens folded to lower case, ignoring punctuation, then consecutive 20-token sequences compared and extended on each match. Candidate alignments are evaluated by type, without redistributing the compared texts.",
+    "atlas_scope": "Markdown, TeX, JSON/YAML, CFF, Python, Swift and plain-text files. WebP images checked separately. Project license files excluded from the prose comparison.",
+    "external_text_scope": "Markdown, TeX, JSON, Lean, text, HTML, diagram and other textual records from the four reading projects; published MIT page and text extracted with PDFKit from the two registered publisher PDFs. Original Lean archive also checked for matching English comment runs. Rendered variants of upstream manuscripts and unrelated third-party bibliography were not independently screened.",
+    "compared_text_records": {
+      "adriazola": 184,
+      "jae-63": 15,
+      "josebrox": 1564,
+      "naskrecki": 128,
+      "mit-audit": 1,
+      "alpoge-note": 1,
+      "waterloo-zeta": 1
+    },
+    "classified_matches": {
+      "adriazola": "Runs of Lean declaration names in dependency and liveness paths.",
+      "jae-63": "Graph identifiers and repetitions of a mathematical variable.",
+      "naskrecki": "Public Lean signatures and shared version/digest metadata.",
+      "josebrox": "No candidate.",
+      "mit-audit": "No candidate.",
+      "waterloo-zeta": "No candidate.",
+      "alpoge-note": "No candidate."
+    },
+    "result": "No expository-prose copy identified among candidate alignments.",
+    "limitations": "Tests for literal overlap rather than translations, paraphrase, visual similarity or legal title to underlying mathematics. References outside the defined corpus were not individually screened.",
+    "candidate_counts": {
+      "adriazola": 41,
+      "jae-63": 14,
+      "naskrecki": 4
+    }
+  }
+}

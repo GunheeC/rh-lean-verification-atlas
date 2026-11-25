@@ -1,0 +1,41 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>D567 · Absorbing the lattice error into the arithmetic bracket · RH verification atlas</title><link rel="stylesheet" href="../../atlas.css"><script>window.MathJax={tex:{inlineMath:[["$","$"]],displayMath:[["$$","$$"]],processEscapes:true},options:{ignoreHtmlClass:"no-math"}};</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script></head><body><header><div class="bar"><a class="brand" href="../../index.html">RH verification atlas</a><nav aria-label="Atlas navigation"><a href="../../index.html">Home</a> <a href="../../STATUS.html">Status</a> <a href="../../MAP.html">Map</a> <a href="../../dashboard/index.html">Tracks</a> <a href="../../lookup/search.html">Search declarations</a></nav></div></header><main><h1 id="d567--absorbing-the-lattice-error-into-the-arithmetic-bracket">D567 · Absorbing the lattice error into the arithmetic bracket</h1>
+<p class="notice">AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved</p>
+<p>The pinned source paths below use the root <code>src/</code>. The proof is adapted from the project’s manuscript v4 and is <strong>pending_review</strong>. Manuscript v4, §3.1, printed pp. 13. <a href="../../units/D567.html">Unit card</a> · <a href="../../data/editions.json">Mathematical editions</a>.</p>
+<ul><li><strong>A5</strong> <code>Formalism.LFunctionChainParameters.LChain.errX5at_le</code>, <code>Formalism/SizeWindowBrackets/ChainSlopeWindows/PChain.lean:613–672</code>.</li></ul>
+<p><strong>How the lattice error fits the arithmetic bracket.</strong></p>
+<p>The lattice estimate uses the following bracket and fixed threshold. Write</p>
+<div class="math display">$$
+ E=n_Ta(1+m^2/k)+m(B_0+N_c),\qquad
+ K_* =200(1+K)^2(1+c_{HH})(1+e_K).
+$$</div>
+<p>These are <code>ErrText</code> and <code>KBig</code> (<code>ErrorFormsWeakWindowsFalse.lean:16–21</code>).</p>
+<p><strong>Per-unit error, D567</strong></p>
+<p>For a finite lattice record with nonempty word fibers, assume the size conditions <code>ErrWindows</code> and <span class="math">$\log x,K_*\le x^\varepsilon$</span>. Then for every unit <span class="math">$u$</span>,</p>
+<div class="math display">$$
+ \mathrm{ErrX5at}(u)\le x^{(e_{\rm Div}+e_{\rm Loss}+3)\varepsilon} E .
+$$</div>
+<p>The size conditions are <span class="math">$x,b,n_T\ge1$</span>, <span class="math">$0&lt;\varepsilon\le1$</span>, <span class="math">$xb\le a$</span>, <span class="math">$m\le x^{1/2+\varepsilon/2}$</span>, <span class="math">$xm\le k$</span>, <span class="math">$e_K\ge0$</span>, <span class="math">$1\le k\le x^{e_K}$</span>, <span class="math">$k\le a$</span>, <span class="math">$0\le L,L_a\le2x^\varepsilon$</span>, <span class="math">$0\le kb&#x27;\le a$</span>, <span class="math">$0\le X&#x27;&#x27;\le a$</span>, <span class="math">$0\le a_t\le2a$</span>, <span class="math">$B_0,N_c\ge0$</span>, <span class="math">$\log|W(u)|\le(k-3)\log2$</span>, <span class="math">$\bar\delta\le1/2$</span>, <span class="math">$\bar\eta,\bar e\ge0$</span>. Each of <span class="math">$c_{\rm Div},c_E,c_H,c_{\rm Count},c_{\rm Slope},c_{\rm Sl1},c_{\rm Loss}$</span> is in <span class="math">$[0,K]$</span> and <span class="math">$e_{\rm Div},e_{\rm Loss},c_{HH}\ge0$</span>. The final window condition bounds <span class="math">$(\bar\eta+4\sqrt{\bar e})x^{c_{HH}}b\le Kx^\varepsilon n_Ta$</span>. See <code>ErrWindows</code>, <code>LargeX</code> (<code>ErrorFormsWeakWindowsFalse.lean:23–52</code>).</p>
+<p><strong>Proof.</strong></p>
+<p>Set <span class="math">$y=x^\varepsilon$</span>, <span class="math">$d=x^{e_{\rm Div}\varepsilon}$</span>, <span class="math">$z=x^{e_{\rm Loss}\varepsilon}$</span>, all at least one. Since <span class="math">$m\le x$</span>, we have <span class="math">$m\le k$</span> and <span class="math">$mb\le a$</span>. Each of <span class="math">$1,b,a,n_Ta,n_Tam^2/k,mB_0,m(B_0+N_c)$</span> is at most <span class="math">$E$</span>. Put <span class="math">$A=\sum_t a_t\le2n_Ta$</span>. The two logarithms obey <span class="math">$\log k\le e_Ky$</span> and <span class="math">$\log(1+x^{c_{HH}})\le(1+c_{HH})y$</span> since <span class="math">$x^{c_{HH}}\ge1$</span>, <span class="math">$\log 2\le1$</span> and <span class="math">$\log x\le y$</span>. For each word fiber, <span class="math">$0\le\log|W(u)|\le k\le a$</span>.</p>
+<p>In the formula <code>ErrX5at</code> (<code>QuotientSlopeBoundsWith.lean:37–54</code>) divide the terms outside the final fraction by <span class="math">$E$</span>. The counting term is at most <span class="math">$4Ky$</span>, since <span class="math">$A L_a(1+m^2/k)\le4y E$</span>. The two divisor terms cost <span class="math">$2Ky$</span> and <span class="math">$Kd$</span>. The exponent comparison costs <span class="math">$K$</span> and the slope term costs <span class="math">$4Ky$</span> since <span class="math">$1+m/k\le2$</span>. The word logarithm costs at most <span class="math">$1$</span>. The prime loss satisfies <span class="math">$Lo_P/E\le Kz$</span> since <span class="math">$n_Tmb\le n_Ta$</span>. The mean-loss bound is</p>
+<div class="math display">$$
+ M/E\le K^2 z+4K^2y+K+1 .
+$$</div>
+<p>Indeed its count term contains <span class="math">$n_Tm(a/k+b&#x27;)mL\le4n_Tam^2y/k$</span>. Its two other additive terms are <span class="math">$c_{\rm Sl1}X&#x27;&#x27;$</span> and <span class="math">$1$</span>. Adding the eight costs yields at most <span class="math">$20(1+K)^2ydz$</span>.</p>
+<p>The numerator of the fraction also uses <span class="math">$\bar U=K_3+M$</span>. From the record&#x27;s definition of <span class="math">$V_{\rm var}$</span>,</p>
+<div class="math display">$$
+ V_{\rm var}/E\le 2K+K(2y+1)+2Ke_Ky .
+$$</div>
+<p>The first bound is for <span class="math">$2mc_EB_0$</span>, the second for <span class="math">$c_H(n_TaL_a+mB_0)$</span>, and the last for <span class="math">$Ac_{\rm Count}\log k$</span>. The two extra terms in <span class="math">$K_3/E$</span> cost at most <span class="math">$6Ky$</span> and <span class="math">$K$</span>. Consequently <span class="math">$(\bar U+b)/E\le14(1+K)^2(1+e_K)yz$</span>. All upper bounds are multiplied by nonnegative coefficients: <span class="math">$(1-\bar\delta)^{-1}\in(0,2]$</span> and <span class="math">$\log(1+x^{c_{HH}})\ge0$</span>. Substitution of these bounds and of the final window condition gives</p>
+<div class="math display">$$
+ \begin{aligned}
+ \mathrm{ErrX5at}(u)/E
+ &amp;\le20(1+K)^2ydz
+     +112(1+K)^2(1+e_K)(1+c_{HH})y^2z+2Ky\\
+ &amp;\le K_*y^2dz\le y^3dz .
+ \end{aligned}
+$$</div>
+<p>Here <span class="math">$20+112+2\le200$</span> and the last inequality uses <span class="math">$K_*\le y$</span>. Since <span class="math">$E\ge1$</span>, multiplication by <span class="math">$E$</span> proves the claim. This is a direct estimate of the same explicit polynomial as <code>LChain.errX5at_le</code> (<code>ChainSlopeWindows/PChain.lean:613–672</code>).</p>
+<p><a href="D550_v4.html">The common large-scale threshold</a> yields the two numerical assumptions on <span class="math">$\log x$</span> and <span class="math">$K_*$</span>.</p>
+<h2 id="point-for-the-reviewer">Point for the reviewer</h2>
+<p>Check the absorption of the fraction with denominator 1−δ̄, especially the mixed frame term and the uniform constants 112 and 2.</p></main><footer><a href="../../help.html">Using the local edition</a></footer></body></html>

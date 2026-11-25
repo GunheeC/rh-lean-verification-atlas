@@ -1,0 +1,27 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "version": "0.1.0",
+  "attachments": {
+    "blueprint_v13.pdf": "d9dcb73f10a5829865f9246409d886c16cb1d2087717adf7758f154257a28af4",
+    "blueprint_v13_cover.pdf": "15e424d5007746cdd8daaa138a65b21242b7e2789915cf65c94e09d1213ba105",
+    "paper_v5.pdf": "7cb09de1598663c16df743f32dc35839bc480f5672f4bb8af819b1c1f71e180d"
+  },
+  "pillar_editions": {
+    "pillars/V.md": {
+      "pages": 8,
+      "sha256": "164756add562d42251ef70543ba468f0a5b80892effdd81ba5832afb087f8a5d"
+    },
+    "pillars/F.md": {
+      "pages": 8,
+      "sha256": "0702930ca91d8eb88d5b28e4186ef06ed6fcb682682db8987130fa3cf4c9a84e"
+    },
+    "docs/ko/pillars/V.md": {
+      "pages": 1,
+      "sha256": "b7ca1451395690d1dcaf3f0892351c803a9e71b7029b168a272e754630545c51"
+    },
+    "docs/ko/pillars/F.md": {
+      "pages": 1,
+      "sha256": "2115070dfe42d4b43f2c3bd2bcefe6e96db59896bd5db7a84098e36bd496b007"
+    }
+  }
+}

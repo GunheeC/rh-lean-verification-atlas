@@ -1,0 +1,184 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "T16",
+  "edition_sha256": "9bd7b0dfb18f92628eb98a8c9340c324210551383ea45375a06a9722846e1e1d",
+  "note_sha256": "f5fed315bb3e8730c67bb10ea59cedc2d13976be7dff4fc24271f880bc721895",
+  "statement_sha256": "6777c5469ec41d766804d50dc4b54c777e4a2fccd42a1195f7df6085df329576",
+  "sources": [
+    {
+      "path": "notes/units/T16_round4.md",
+      "sha256": "f5fed315bb3e8730c67bb10ea59cedc2d13976be7dff4fc24271f880bc721895"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The asserted upper bound involves the positive image degree and the shift of the specified evaluation model.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: image-model hypothesis"
+      ],
+      "lean": [
+        {
+          "name": "ChowFormHeightComparison₂.chow_form_height_comparison",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/HodgeBundleWeights/ChowFormHeightComparison.lean",
+          "line0": 11,
+          "line1": 12
+        }
+      ],
+      "source": "notes/units/T16_round4.md",
+      "anchor": "Fix the shift $t$ before making comparisons",
+      "source_lines": [
+        33,
+        33
+      ],
+      "claim_sha256": "dae5d443ed432737c35500bffbad96097a6af3a0c3848d6784032fd6351dfdfa",
+      "passage_sha256": "cc6d7eab81dd610e3b416246b871dee906a57b7e3993b705eb4f88cd1f9fcfd7",
+      "sha256": "6e8142d6b5a98d6db015e738f46de990bfb662207b0bf76b32dc621a9b37352f",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The point selected using the generic model data induces the rational model on the given integral scheme.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S1",
+        "input: Chow height and arithmetic existence"
+      ],
+      "lean": [
+        {
+          "name": "ChowFormHeightComparison₂.chow_form_height_bound",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/HodgeBundleWeights/ChowFormHeightComparison.lean",
+          "line0": 9,
+          "line1": 10
+        },
+        {
+          "name": "PositivityTheory.UnitarySelfGeneration.weil_height_inequality",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/HodgeBundleWeights/WeilHeightInequality.lean",
+          "line0": 10,
+          "line1": 18
+        }
+      ],
+      "source": "notes/units/T16_round4.md",
+      "anchor": "The first input is a height bound from the archimedean computation on points and charts, t",
+      "source_lines": [
+        37,
+        37
+      ],
+      "claim_sha256": "b9304af6f642d80280441e0174429e35a2aec22bd4b9e9957901d02541562934",
+      "passage_sha256": "de35834be22b61e2c13e7901f95d78cff88bb3d06bbc805efebb64fb0c15fa6a",
+      "sha256": "9c7a7771a5dfaaefcf7bd200db2b7b94d077a4213da7d47c1d8e588f1bf80941",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The evaluation ratios agree with the ratios of the generating sections in that rational model.",
+      "kind": "computation",
+      "uses": [
+        "S2",
+        "input: base-point-free sections"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.UnitarySelfGeneration.weil_height_inequality",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/HodgeBundleWeights/WeilHeightInequality.lean",
+          "line0": 17,
+          "line1": 26
+        }
+      ],
+      "source": "notes/units/T16_round4.md",
+      "anchor": "Take the frame, coordinate generators and comparison data supplied by the Fubini–Study par",
+      "source_lines": [
+        41,
+        41
+      ],
+      "claim_sha256": "0419f5783c2a1a8e700e77dbba82a9f7e841cc42bdbbd1c0ffebfba7850fe455",
+      "passage_sha256": "1685a55631734b6909ec9e6b0590899aed80872d808308b73606dad1f3f04638",
+      "sha256": "bb425d6ff421537c1e81e6a06780b2eee88ad3c3e7a3110c8ad8ee7dc3e0eb48",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The isometry at the same metric shift and uniqueness of self-intersection identify the comparison value with the given number a.",
+      "kind": "assembly",
+      "uses": [
+        "S2",
+        "S3",
+        "D155"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.UnitarySelfGeneration.weil_height_inequality",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/HodgeBundleWeights/WeilHeightInequality.lean",
+          "line0": 26,
+          "line1": 31
+        }
+      ],
+      "source": "notes/units/T16_round4.md",
+      "anchor": "The volume/self-intersection comparison now receives the Chow height input, the model, its",
+      "source_lines": [
+        45,
+        45
+      ],
+      "claim_sha256": "d9d00339b9574b66c903188ffa21c116d87da5f5bd6f9cabece573c4c560051f",
+      "passage_sha256": "c73b0630a24424fdc605b36cb63d23d6dea6047b617531eb2761b36d41f0e069",
+      "sha256": "fbdc41383986156257b0dbbdac3f468ba2bba693f247555bb4bde9bb7ea3ace1",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "546f182dbb6ad89e25a90f32d5d58a9aa447207dd07e147c650a9717a0fb8b06",
+      "sources": [
+        {
+          "path": "notes/units/T16_round4.md",
+          "sha256": "6027348dfd327aec26c5d6608314c28fa5f9d8d3134136d0f59266bb78540e2a"
+        }
+      ],
+      "steps": {
+        "S1": "6e8142d6b5a98d6db015e738f46de990bfb662207b0bf76b32dc621a9b37352f",
+        "S2": "9c7a7771a5dfaaefcf7bd200db2b7b94d077a4213da7d47c1d8e588f1bf80941",
+        "S3": "bb425d6ff421537c1e81e6a06780b2eee88ad3c3e7a3110c8ad8ee7dc3e0eb48",
+        "S4": "fbdc41383986156257b0dbbdac3f468ba2bba693f247555bb4bde9bb7ea3ace1"
+      },
+      "step_texts": {
+        "S1": "The asserted upper bound involves the positive image degree and the shift of the specified evaluation model.",
+        "S2": "The point selected using the generic model data induces the rational model on the given integral scheme.",
+        "S3": "The evaluation ratios agree with the ratios of the generating sections in that rational model.",
+        "S4": "The isometry at the same metric shift and uniqueness of self-intersection identify the comparison value with the given number a."
+      }
+    },
+    {
+      "edition_sha256": "12ab6e0e0a401ff4b9c37a34ec5f1b3121a0ea94cf52c8a59237cf958abe413f",
+      "sources": [
+        {
+          "path": "notes/units/T16_round4.md",
+          "sha256": "eeca828e0d090b7d302801375f195d015d88a3c43738375eb09d3a5443fcc2ca"
+        }
+      ],
+      "statement_sha256": "6777c5469ec41d766804d50dc4b54c777e4a2fccd42a1195f7df6085df329576",
+      "steps": {
+        "S1": "6e8142d6b5a98d6db015e738f46de990bfb662207b0bf76b32dc621a9b37352f",
+        "S2": "9c7a7771a5dfaaefcf7bd200db2b7b94d077a4213da7d47c1d8e588f1bf80941",
+        "S3": "bb425d6ff421537c1e81e6a06780b2eee88ad3c3e7a3110c8ad8ee7dc3e0eb48",
+        "S4": "fbdc41383986156257b0dbbdac3f468ba2bba693f247555bb4bde9bb7ea3ace1"
+      },
+      "step_texts": {
+        "S1": "The asserted upper bound involves the positive image degree and the shift of the specified evaluation model.",
+        "S2": "The point selected using the generic model data induces the rational model on the given integral scheme.",
+        "S3": "The evaluation ratios agree with the ratios of the generating sections in that rational model.",
+        "S4": "The isometry at the same metric shift and uniqueness of self-intersection identify the comparison value with the given number a."
+      },
+      "step_passages": {
+        "S1": "cc6d7eab81dd610e3b416246b871dee906a57b7e3993b705eb4f88cd1f9fcfd7",
+        "S2": "de35834be22b61e2c13e7901f95d78cff88bb3d06bbc805efebb64fb0c15fa6a",
+        "S3": "1685a55631734b6909ec9e6b0590899aed80872d808308b73606dad1f3f04638",
+        "S4": "c73b0630a24424fdc605b36cb63d23d6dea6047b617531eb2761b36d41f0e069"
+      }
+    }
+  ]
+}

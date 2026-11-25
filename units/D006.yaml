@@ -1,0 +1,90 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D006",
+  "title": "Local Bloch–Kato, Tate and Euler identities",
+  "track": {
+    "primary": "local",
+    "secondary": [
+      "galois"
+    ]
+  },
+  "statement": "For compatible local Wach/Fontaine data, the Bloch–Kato local, Tate duality and Euler-characteristic assumptions give both TBat on the specified tie and TBeAt for every good pair of local fields and index.\n\\[\n\\forall(D,HW,F,C_m),\\quad \\operatorname{LocalSituation.Conclusion4}(D,HW,F).\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume the local Bloch–Kato theorem, local Tate duality and the local Euler characteristic theorem.",
+    "Use one compatible system of local Wach, Fontaine and comparison data."
+  ],
+  "lean": [
+    {
+      "name": "GlobalTheory.T.theorem_tb_of_local_blochKato_duality_euler",
+      "file": "Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/TheoremTbOfLocalBlochKatoDualityEulerStatement.lean",
+      "line0": 8,
+      "line1": 9,
+      "sha256": "38d9c0ed9c805a5a8f163d4bdeb1544f69b4e16d693c03543e68612ad7082b0e",
+      "dominated": 8424,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/D006_round4.md",
+      "section": "D006 · Putting local duality and Euler inputs on the specified tie",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "G.8 (decomp:D006)",
+      "pages": [
+        158,
+        158
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D006.tex",
+      "section": "decomp:D006",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": 2,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "D006",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "local-blochkato-tate-and-euler-identities",
+  "aliases": [
+    "theorem_tb_of_local_blochKato_duality_euler",
+    "D006 Local Bloch–Kato, Tate and Euler identities"
+  ],
+  "background": [
+    "Bloch–Kato finite local conditions",
+    "Local Tate duality"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.8 (decomp:D006)",
+    "pages": [
+      158,
+      158
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "review_status": "pending_review",
+  "summary": "Given the Bloch–Kato local, Tate-duality and Euler-characteristic inputs, the local construction returns both torsion assertions on every good set of field data. The first assertion refers to the tie already specified by the Fontaine datum."
+}

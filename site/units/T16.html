@@ -1,0 +1,41 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>T16 · The Chow height of an image model · RH verification atlas</title><link rel="stylesheet" href="../atlas.css"><script>window.MathJax={tex:{inlineMath:[["$","$"]],displayMath:[["$$","$$"]],processEscapes:true},options:{ignoreHtmlClass:"no-math"}};</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script></head><body><header><div class="bar"><a class="brand" href="../index.html">RH verification atlas</a><nav aria-label="Atlas navigation"><a href="../index.html">Home</a> <a href="../STATUS.html">Status</a> <a href="../MAP.html">Map</a> <a href="../dashboard/index.html">Tracks</a> <a href="../lookup/search.html">Search declarations</a></nav></div></header><main><h1 id="t16--the-chow-height-of-an-image-model">T16 · The Chow height of an image model</h1>
+<p class="notice">AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved</p>
+<p>For an integral image model with its specified sections and conjugation-compatible metrics, one controls a shifted self-intersection by the image degree and image height. This turns arithmetic information on the model into a bound expressed in the coordinates of the image.</p>
+<p><code>the-chow-height-of-an-image-model</code> · <a href="../tracks/arakelov/index.html">Arakelov geometry and geometry of numbers</a></p>
+<p><strong>Outlined</strong> · <strong>L1</strong> Statement matched to Lean · Record generated 2026-11-25 (no human check).</p>
+<p><strong>First-pass outline of the head proof term</strong> · 30,511 dominated core lines. In scope, this note describes what the top-level term calls; it does not explain the dependency cone beneath it.</p>
+<div class="scroll"><table>
+<thead><tr><th>1 · Lean pinned</th><th>2 · Statement compared</th><th>3 · Prose</th><th>4 · Steps</th><th>5 · AI review</th><th>6 · Human</th></tr></thead>
+<tbody><tr><td>✓</td><td>✓</td><td>Outlined</td><td>4</td><td>–</td><td>0 of 4 steps</td></tr>
+</tbody></table></div>
+<p><a href="T16.check.html">Numbered proof and check records</a> · <a href="../PROGRESS.html">Progress and counting rules</a></p>
+<h2 id="statement">Statement</h2>
+<p>Assume the Hodge-bundle record. Let <span class="math">$K$</span> be a number field with no real embeddings, <span class="math">$V$</span> a <span class="math">$K$</span>-module compatibly acted on by <span class="math">$\mathcal O_K$</span>, and <span class="math">$\Omega/K$</span> a field. Let <span class="math">$N_\sigma$</span> on <span class="math">$V$</span> have Gram data and be invariant under conjugating <span class="math">$\sigma$</span>. Let <span class="math">$W\subset V$</span> be a finitely generated <span class="math">$\mathcal O_K$</span>-module spanning <span class="math">$V$</span> over <span class="math">$K$</span>, and <span class="math">$\mathrm{ev}:V\to\Omega$</span> linear with generating ratios. For degree index <span class="math">$D\ge0$</span> suppose <span class="math">$d=\mathrm{imageDeg}(\mathrm{ev},D)&gt;0$</span>. Let <span class="math">$(X,L)$</span> be its integral image model over <span class="math">$\mathcal O_K$</span> with the specified embedding <span class="math">$\Omega\to K(X)$</span> and sections indexed by <span class="math">$W$</span> for <span class="math">$N_\sigma,W,\mathrm{ev},D$</span>. If the constant metric shift <span class="math">$L(t)$</span> has self-intersection <span class="math">$a$</span>, then</p>
+<div class="math display">$$a\le [K:\mathbb Q]\,(D+1)d\, \bigl(\mathrm{imageHeight}(N,W,\mathrm{ev},D)+t\bigr).$$</div>
+<h2 id="assumptions">Assumptions</h2>
+<ul><li>Use the Hodge-bundle record, a number field with no real embeddings, a compatible module, extension field and conjugation-invariant Gram data.</li><li>The section lattice is finitely generated and spanning; assume the ratio, positive image-degree, image-model and self-intersection conditions.</li></ul>
+<p>Sources for the assumptions · <a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a></p>
+<p><strong>New exposition · pending_review.</strong> This edition has no independent review of the new argument. Earlier verdicts below retain their stated scopes.</p>
+<h2 id="where-to-read">Where to read</h2>
+<p>Blueprint v13 and papers v3–v5 are this atlas project’s own AI-written, unpublished drafts. They have no human review and were not written by the author of the Lean development. Blueprint v13, its separate cover, and paper v5 are distributed as assets of release v0.1.0. For v3 and v4 the atlas supplies selected excerpts and notes. <a href="../data/editions.json">Edition register</a></p>
+<ul><li><a href="../notes/units/T16_round4.html">T16 · The Chow height of an image model</a>, pp. 1–2 in the atlas print layout. Round-4 outline under the named inputs; pending_review.</li><li><a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a>, 5.26 (sub:T16), p. 44. Statement starts on the cited page.</li><li><a href="../notes/units/T16.tex">Manuscript source excerpt</a> · section <code>sub:T16</code></li></ul>
+<h3 id="declaration-name-matches">Declaration-name matches</h3>
+<ul><li><a href="../crosswalk/jae-63.html">jae-63/rh-alpoge-blueprint</a> · 1 matching declaration.</li></ul>
+<h2 id="evidence">Evidence</h2>
+<ul><li><a href="../reviews/R21_review.html">R21 review</a>, original line 109 — Exact statement comparison. Lean interface as specified in the review row; no equivalence with a published result inferred.</li></ul>
+<p>Review records · <a href="../reviews/R21_review.html">R21 review</a></p>
+<h2 id="lean-declarations">Lean declarations</h2>
+<ul><li><code>ChowFormHeightComparison₂.chow_form_height_comparison</code>  <br><a href="https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/HodgeBundleWeights/ChowFormHeightComparison.lean#L11-L12"><code>ChowFormHeightComparison.lean</code></a>, lines 11–12 · 30,511 dominated lines · SHA-256 <code>98c04a155550</code>.</li></ul>
+<p><a href="T16.yaml">Machine record and full declaration hashes</a> · <a href="../lookup/declarations.html">Declaration lookup</a></p>
+<h2 id="reading-prerequisites">Reading prerequisites</h2>
+<p>Background · Heights of Chow forms · Arithmetic projective varieties.</p>
+<p>No prior atlas unit is specified.</p>
+<h2 id="open-questions">Open questions</h2>
+<p>None recorded.</p>
+<h2 id="graph-connections">Graph connections</h2>
+<p>Arrows may connect either a unit’s main declaration or an indexed member.</p>
+<p><strong>Uses</strong> · No recorded edge.</p>
+<p><strong>Used by</strong> · <a href="T13.html">T13</a></p>
+<p><a href="../data/unit_graph.json">Declaration witnesses and graph scope</a></p>
+<p>Lookup aliases · <code>chow_form_height_comparison</code>, <code>T16 The Chow height of an image model</code></p>
+<p>&lt;!-- Unit metadata SHA-256 c29a0b0b8eeb9476e44418cdabee953842a18d64ed88635ea5d8e49110474d52 --&gt;</p></main><footer><a href="../help.html">Using the local edition</a></footer></body></html>

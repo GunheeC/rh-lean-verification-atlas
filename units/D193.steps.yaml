@@ -1,0 +1,157 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "D193",
+  "edition_sha256": "80414cbedbc261afd32a784accecf88417461adf1e63c9e59c12bef65c725744",
+  "note_sha256": "fd35159b9c5b415771b9cf4484bde01cb8fc6ed9826e43ad72aa2e406f0bc0f3",
+  "statement_sha256": "ace2895c6cf4af7c5edd43754420530264a743a1fe95a9b194bc76e08b1fcd28",
+  "sources": [
+    {
+      "path": "notes/units/D193_round4.md",
+      "sha256": "fd35159b9c5b415771b9cf4484bde01cb8fc6ed9826e43ad72aa2e406f0bc0f3"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The generic source, target, isogeny, its type and universality can be taken from one supplied correspondence.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: generic Hecke correspondence"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Gal.crystallineComparison.Mod.esNorm_of",
+          "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/AnnihilatorModels/MEsNorm.lean",
+          "line0": 18,
+          "line1": 19
+        }
+      ],
+      "source": "notes/units/D193_round4.md",
+      "anchor": "The interface first takes",
+      "source_lines": [
+        17,
+        17
+      ],
+      "claim_sha256": "c8ff39eb4f79222f8df3d57ed1395084716c2425c0abfd68cfa39c823124cde9",
+      "passage_sha256": "a772d5d2c53a56a7b722f99ce5a8ff7c5d380620e1922f643354b6cc08affc11",
+      "sha256": "8a4786b48fd569bbf1b741f4ea0ff08966b5591e3e2d7846fd9fa7cffc5dbba6",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The target map extends on the source-side normal model, whose stalks are domains by reducedness and integral closure.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S1",
+        "input: finite normal model and target extension"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Gal.crystallineComparison.Mod.esNorm_of",
+          "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/AnnihilatorModels/MEsNorm.lean",
+          "line0": 20,
+          "line1": 29
+        }
+      ],
+      "source": "notes/units/D193_round4.md",
+      "anchor": "The first construction produces",
+      "source_lines": [
+        21,
+        21
+      ],
+      "claim_sha256": "2f6a2d38e170754a2743fc71e70bd58f62e2dab466a0ceed067b78c0d5b3e818",
+      "passage_sha256": "4bfbbfd71bdb93b6bbbe6639dd6e8f93af6116ff6b9291585f6a26627ca17db6",
+      "sha256": "199f9dec493710993b32fdc8d203fdbf767d11d5c2e250059fb000e5f72226ce",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The isogeny on the pulled objects restricts to the specified generic isogeny through the two comparison morphisms.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S2",
+        "input: extension of the isogeny"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Gal.crystallineComparison.Mod.esNorm_of",
+          "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/AnnihilatorModels/MEsNorm.lean",
+          "line0": 30,
+          "line1": 39
+        }
+      ],
+      "source": "notes/units/D193_round4.md",
+      "anchor": "Pull back the universal objects",
+      "source_lines": [
+        25,
+        25
+      ],
+      "claim_sha256": "229b99ac35ed53c51830260dd8c2cbe999cd24917fc7a8a8ba1112517bb7d51c",
+      "passage_sha256": "6a1e914ea1bed92cce4134d1f482b8784330cf23a24dfe42fbe831ad382e9c64",
+      "sha256": "94f897bc9fa3a8e6b7128de0ae072b483d7260f46ab37e5f7396f8b29022a5f0",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The commutative restriction square transfers the type and the universal property to the constructed model.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "S3",
+        "input: type transfer and open-immersion universality"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Gal.crystallineComparison.Mod.esNorm_of",
+          "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/AnnihilatorModels/MEsNorm.lean",
+          "line0": 40,
+          "line1": 43
+        }
+      ],
+      "source": "notes/units/D193_round4.md",
+      "anchor": "Use a single symbol",
+      "source_lines": [
+        29,
+        29
+      ],
+      "claim_sha256": "11bfcbdcf78c60acefa3074032a998991805fba2cc9ca70301fcd7d0fa8441d5",
+      "passage_sha256": "16fbfb38a310f14ac5f79ae1bd9d255da16f6ea2e3cb5a9c5538ef88326f8f87",
+      "sha256": "0e207a8b8b21e6d70c82ca980a3fd13a0acc0d36ba717aceee3b21b81c626589",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "35fb370878042fd2476ab71bf806f6cee5f92f15f4a10b2f8f270e919af88a01",
+      "sources": [
+        {
+          "path": "notes/units/D193_round4.md",
+          "sha256": "ded193297d811eb2f36ca8ad03b641cf5ab6bcd312d6976fe8228523c5c8bd61"
+        }
+      ],
+      "statement_sha256": "ace2895c6cf4af7c5edd43754420530264a743a1fe95a9b194bc76e08b1fcd28",
+      "steps": {
+        "S1": "b1b68ba55517477083a9ceec7ab6f65a6e68ca9bf5f037e8e35634ca1a5aeef6",
+        "S2": "a80fecf382292dd2d9ad819218418072e6adbedfedbb821744fc005d6203925e",
+        "S3": "1b003f526a94d42f0e426b13afb9c133e4856d7e064f10f85bd7d5efdbd69e46",
+        "S4": "af25b3325dfa39eebfc4836840a582b6dcfda5a3ff85c196172371d0c330456d"
+      },
+      "step_texts": {
+        "S1": "The generic source, target, isogeny, its type and universality can be taken from one supplied correspondence.",
+        "S2": "The target map extends on the source-side normal model, whose stalks are domains by reducedness and integral closure.",
+        "S3": "The isogeny on the pulled objects restricts to the specified generic isogeny through the two comparison morphisms.",
+        "S4": "The commutative restriction square transfers the type and the universal property to the constructed model."
+      },
+      "step_passages": {
+        "S1": "9383cf0703f0bf9eec24573c8817292009689488e99c5d0b1fd6e269f5b7eef7",
+        "S2": "31299cd55a8f08d5614b8884bbd91d06598138dbd71d7d56d5e17c16ed127ab6",
+        "S3": "4a6fd188e44edcb6b2956c56e7f7e90c9964b4599790be581607e5c98a486954",
+        "S4": "6da82516080c52f74182d0fe15af9247f646f88e8dfd3417c9a5c90229e5fe17"
+      }
+    }
+  ]
+}

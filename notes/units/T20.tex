@@ -1,0 +1,28 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit T20. Local manuscript v3, item 5.30, heading on printed PDF p. 46.
+% UpperTheory.LiteratureTheorems.principalisation_char_zero_of_literature
+% paper2/split_p012.tex:350–365. Verbatim excerpt; SHA-256 bd4cc5e313a0ce1fba8fd7d0fa13eaa27fa1a5e6aeaa40eb1812ba9392e41702.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+\noindent\nolinkurl{PositivityTheory.ResPlug.WeightsCompactStabilizer.principalisationCharZero_closed} --- in-repo constant (\path{Development/WeilBound/CoreStatements/ResolutionCharZero/PrincipalisationCharZeroClosed.lean:7--8}); not compared.\par
+% End of atlas edition annotation.
+
+\begin{formalstatement}[Principalisation with a prescribed boundary]\label{sub:T20}
+
+Given the open-literature record, let $X/k$ be smooth of relative
+dimension $d$, quasi-compact and separated over a characteristic-zero
+field. Let $I$ be an ideal whose cosupport contains no irreducible
+component of $X$, and $E$ a closed boundary that has simple normal
+crossings at every point of $E$. There is a sequence of blowups in
+smooth centres with normal crossings with the current boundary,
+updating that boundary by total transform at every step. The resulting
+$X'$ is smooth, $I\mathcal O_{X'}$ defines an effective Cartier divisor
+with simple normal crossings reduced support, and $X'\to X$ is an
+isomorphism off the cosupport of $I$. This wrapper also uses a closed term.
+
+\end{formalstatement}\subnode{T20}
+
+\noindent Kollár's Definitions 24--25 describe centres cut out by a subset of the same coordinates that give the boundary, and add the exceptional divisor to the transformed boundary. The Lean \nolinkurl{IsSncCentre} uses the corresponding parameter subset for the centre ideal. Each step of \nolinkurl{IsSncBlowupSeq} keeps the reduced inverse image of the old boundary together with the centre. Theorem 35(1)--(3) then gives these steps, the Cartier pullback with SNC support and the isomorphism off the cosupport. See \path{Geometry₂/NotSubsetOfDenseCompl.lean:13--30}. \href{https://arxiv.org/pdf/math/0508332}{J. Kollár, Resolution of Singularities — Seattle Lecture, Theorem 35(1–3)}~\cite{r21-kollar}.

@@ -1,0 +1,84 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D002",
+  "title": "A global lattice index from local lengths",
+  "track": {
+    "primary": "galois",
+    "secondary": []
+  },
+  "statement": "Assume global Artin reciprocity, local Tate duality and Euler characteristic. At each member with G1–G6, tame generators, its finite local, Fontaine, continuity, semisimplicity and coefficient conditions, the prescribed local lengths, lifts and TB bounds imply the global lattice-index estimate for the given constituent.\n\\[\n\\operatorname{GlobalLatticeIndexTheorem}(i,\\rho,\\pi,d_c,\\mathrm{lenRow},e',c_B).\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Global Artin reciprocity, local Tate duality and the local Euler characteristic formula hold.",
+    "The chosen constituent and member satisfy G1–G6, the tame-generator and local Bloch–Kato hypotheses, Fontaine and coefficient compatibility, continuity and semisimple decomposition.",
+    "Use the specified local length, unramified, lift-exponent and TB bounds for this same constituent."
+  ],
+  "lean": [
+    {
+      "name": "GlobalTheory.T.globalLatticeIndexTheorem_of_lengthBoundAtPlaces",
+      "file": "Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/SelmerLengthBoundAtPointStatement.lean",
+      "line0": 11,
+      "line1": 12,
+      "sha256": "f03578e1f4ac37d4257eb9c1c8964755c306089073f1be8088152708626829a8",
+      "dominated": 29200,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "G.3 (decomp:D002)",
+      "pages": [
+        157,
+        157
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D002.tex",
+      "section": "decomp:D002",
+      "pages": []
+    }
+  ],
+  "status": "Statement only",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [
+    "P044",
+    "Z3.2"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [],
+  "paper_id": "D002",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "a-global-lattice-index-from-local-lengths",
+  "aliases": [
+    "globalLatticeIndexTheorem_of_lengthBoundAtPlaces",
+    "D002 A global lattice index from local lengths"
+  ],
+  "background": [
+    "Local Galois cohomology",
+    "Lattice indices and local lengths"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.3 (decomp:D002)",
+    "pages": [
+      157,
+      157
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "P044": "graph",
+    "Z3.2": "graph"
+  }
+}

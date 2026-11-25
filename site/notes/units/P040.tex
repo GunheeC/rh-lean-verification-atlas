@@ -1,0 +1,55 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit P040. Local manuscript v3, item 7.17, heading on printed PDF p. 82.
+% UpperTheory.V.LDataCardLeFinrank.vFormula_of_classicalTheorems
+% paper2/inputs_one.tex:730–771. Verbatim excerpt; SHA-256 87c190ce70fdd9a242449049f7f9454c752469950e8cdcd41edd2658fda79674.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+\noindent\nolinkurl{GlobalTheory.Published.PoitouTateDuality} --- hypothesis at this head (\path{Development/AbelianVarietyTheory/PublishedTheorems/GaloisCohomology₂/ExistsPrimitiveRootPow.lean:13--27}); not compared.\par
+\noindent\nolinkurl{GlobalTheory.TateLimit.local_tate_duality_h2_limit} --- in-repo constant (\path{Development/AbelianVarietyTheory/Proofs/FoundationProofs/LengthEqLengthInvariantsOfTorsionLevels.lean:295--302}); not compared.\par
+% End of atlas edition annotation.
+
+\begin{formalstatement}[A compact-coefficient length formula]\label{pn:P040}
+Let \(F\) be a number field and \(\ell\) a prime such that \(\ell\ne2\)
+or \(F\) has no real place. Assume finite-coefficient Poitou--Tate
+duality, local finiteness and local Tate duality. For every allowed
+set of local data \(D\) and every \(e\in\mathbb Z\), with
+\(A_e=(\mathbb Q_\ell/\mathbb Z_\ell)(-e)\),
+\[
+ \operatorname{length}H^2(G_{F,S},\mathbb Z_\ell(e+1))
+      +\nu_{\rm Gal}(\ell,F,|e|)
+   =\operatorname{length}\Sha^1(D,A_e)
+      +\sum_{w\in D.S}\operatorname{length}H^0(F_w,A_e).
+\]
+All lengths are extended \(\mathbb Z_\ell\)-lengths;
+\(\Sha^1\) is the kernel of the specified localization.
+\end{formalstatement}\nodestatus{P040}
+\begin{outline}
+At level \(j\ge1\) take \(T_j=(\mathbb Z/\ell^j)(e+1)\) and its
+Cartier dual \(B_j=A_e[\ell^j]\). Write \(K_j\) for the localization
+kernel on \(H^1(G_{F,S},B_j)\) and a superscript \(\vee\) for the
+character dual. The last maps of Poitou--Tate and local duality yield
+\[
+ 0\longrightarrow K_j^\vee\longrightarrow H^2(G_{F,S},T_j)
+ \longrightarrow\bigoplus_{w\in D.S} H^0(F_w,B_j)^\vee
+ \longrightarrow H^0(G_{F,S},B_j)^\vee\longrightarrow0 .
+\]
+The modified archimedean terms vanish in the indicated case. All
+groups at finite level are finite, so images stabilize and this
+sequence remains exact under inverse limits. On the discrete side
+a continuous cochain has finite image, and filtered union commutes
+with the cohomology and localization kernels in question. On the
+compact side the cochain reductions are surjective (lift on each
+clopen fibre); the possible derived limit of finite \(H^1\)'s
+vanishes. Thus the middle term becomes compact \(H^2\), and the
+other terms are the duals of the indicated discrete groups.
+Additivity of extended length, its preservation under this duality,
+and the identification of the global invariant length with
+\(\nu_{\rm Gal}(\ell,F,|e|)\) give the formula. This is the
+finite-to-compact argument of Blueprint Z2.K8~\bploc{lem:P-r3-k8}. For the finite
+duality statements see J.~S.~Milne, \emph{Arithmetic Duality Theorems},
+I.2, Corollary~2.3 and I.4, Theorem~4.10.
+\cite{r21-adt}
+\end{outline}

@@ -1,0 +1,182 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "Z1.1.04",
+  "edition_sha256": "49ad535363c7b0843897c72229ebaa3f8e4996f3ecb8bb3e19fa2795c3e2c870",
+  "note_sha256": "982789055bc820bb3689d5f22989ea69165aad71b04072281e47f719ef4ccd57",
+  "statement_sha256": "bdbc08a9222750e464182889cfd2eea994784d370e3348d0281ce4a79684c99f",
+  "sources": [
+    {
+      "path": "notes/blueprint/Z1.1.04.tex",
+      "sha256": "982789055bc820bb3689d5f22989ea69165aad71b04072281e47f719ef4ccd57"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The chosen weight has the seed parity and gives the required residual character on the restriction to the CM field.",
+      "kind": "computation",
+      "uses": [
+        "Z1.1.01",
+        "input: quadratic character kernel and weight class"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Z.Sym.W.adjoint_lift_from_eisenstein_of_propagation",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/AdjointLiftFromEisensteinSeedOfHyps.lean",
+          "line0": 184,
+          "line1": 238
+        }
+      ],
+      "source": "notes/blueprint/Z1.1.04.tex",
+      "anchor": "The field-pair hypothesis identifies $\\ker\\eta$ with $G_K$. Since $[K:\\mathbf Q]=2$, every square belongs to $G_K$, so $\\eta^2=1$. Complex conjug",
+      "source_lines": [
+        14,
+        14
+      ],
+      "claim_sha256": "652b3ab552fa0358f49344cad426cc5e49fa39045c926051714d6e693ee64d4a",
+      "passage_sha256": "0c9e85406ea40089b276d6c844f23ed031ead5de80495acfc8e16ed121d9f4b0",
+      "sha256": "917685ae1627b53412ab9bb04d164dbe61e73ff2b8accbb2d5a5ded57c85366e",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "An open normal subgroup fixing a line would force the residual character square to be one everywhere.",
+      "kind": "case-split",
+      "uses": [
+        "S1",
+        "input: ordinary inertia and residual square witness"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Sd.sIabs",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/LineOfNotIrr.lean",
+          "line0": 81,
+          "line1": 116
+        }
+      ],
+      "source": "notes/blueprint/Z1.1.04.tex",
+      "anchor": "To see why this one square excludes reducibility on an open subgroup, pass to its open normal core $H$. Ordinary inertia above $\\ell$ has an elem",
+      "source_lines": [
+        18,
+        19
+      ],
+      "claim_sha256": "7c1079d89ed7b9f86b83141e66aace0791043d5459dc753ebfd77c4e5f33f4e3",
+      "passage_sha256": "4af710b23b713637109ae55c418c3ad019007b62dc24369843cfef489e1b41ef",
+      "sha256": "39a16891ca1aad3ae81bb202b2016a161b9997e287b65791b15aa12bd4a4f119",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "A stable plane for the adjoint would give one or two projective roots and hence a line fixed by an open subgroup.",
+      "kind": "case-split",
+      "uses": [
+        "S2",
+        "standard: Veronese embedding"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Sd.ad0Irr",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/IdeleGenerators/HolomorphicIrreducibility/Ad0IrrMulVec.lean",
+          "line0": 213,
+          "line1": 302
+        }
+      ],
+      "source": "notes/blueprint/Z1.1.04.tex",
+      "anchor": "Set $R=\\operatorname{Sym}^2\\rho\\otimes\\det(\\rho)^{-1}$. If $R$ on an open subgroup preserves a plane, its linear equation restricts along $(x^2,2",
+      "source_lines": [
+        24,
+        24
+      ],
+      "claim_sha256": "5131e9285f28f595a3f2f8a62f3fb475fb7ad6a55bcf90df290e083cf1903275",
+      "passage_sha256": "080e9489d0eb0898a1f23a7c038a84b5e1c27d5e369fbb74ba5c6ec015030b90",
+      "sha256": "08efacee47f03037ac69d076ebad7f6fea675cbe9650bb54da4fccf49bd126d3",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The adjoint ordinary flag has diagonal characters given by the two reciprocal ratios and the trivial character.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "input: upper triangular ordinary flag"
+      ],
+      "lean": [
+        {
+          "name": "order_at_adjoint_zero",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/AdjointLiftFromEisensteinSeedOfHyps.lean",
+          "line0": 136,
+          "line1": 150
+        }
+      ],
+      "source": "notes/blueprint/Z1.1.04.tex",
+      "anchor": "The entries of $R$ are quadratic polynomials in the entries of $\\rho$ divided by its invertible determinant, giving continuity. If $P$ is the inv",
+      "source_lines": [
+        28,
+        29
+      ],
+      "claim_sha256": "7ac430433f5a0ec95c468ec12c5b77ef13631f9f1c19908498f392d76f927e9d",
+      "passage_sha256": "a0572da7296e42e577acd82b2eb62c85692b4430664854fce96835c5c3637311",
+      "sha256": "e030eaf3385b10c2a555e52bed3b9618090cd5a64235a6c3ec933aadd6e47d87",
+      "ai_review": []
+    },
+    {
+      "id": "S5",
+      "status": "active",
+      "claim": "A scalar twist leaves the trace-free adjoint unchanged, so the window witness applies to the chosen adjoint after its cyclotomic twist.",
+      "kind": "assembly",
+      "uses": [
+        "S3",
+        "S4",
+        "Z1.1.02",
+        "Z1.1.03"
+      ],
+      "lean": [
+        {
+          "name": "adjoint_zero_twist",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/AdjointLiftFromEisensteinSeedOfHyps.lean",
+          "line0": 168,
+          "line1": 180
+        }
+      ],
+      "source": "notes/blueprint/Z1.1.04.tex",
+      "anchor": "The window hypothesis $\\mathrm{SeedInW}$ places a scalar twist of $\\rho|_{G_L}$ in the domain of $\\mathrm{AdAutW}$. The trace-free adjoint of a s",
+      "source_lines": [
+        33,
+        33
+      ],
+      "claim_sha256": "55f3be88e3582084fc4f27887c0db4f965bb27181ccf1e35d1d654cf0f03fb82",
+      "passage_sha256": "4c25222a42e9d0de22762b97703860102f3f09a0dcf1e8eb7e28b05f9b40e031",
+      "sha256": "b5ca5b0161aaa6da12b2d66a7ad0346c79894c6847fea8f71608bc72c6881cd7",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "27b1b6e94241af54bffb863129e4f3bbdd066e5af3980437d94eadb913a318d7",
+      "sources": [
+        {
+          "path": "notes/blueprint/Z1.1.04.tex",
+          "sha256": "982789055bc820bb3689d5f22989ea69165aad71b04072281e47f719ef4ccd57"
+        }
+      ],
+      "steps": {
+        "S1": "00a5da849a16ac1acd93e5ebb278e8795921586a60b0c5ebcea842bbd7f11f68",
+        "S2": "39a16891ca1aad3ae81bb202b2016a161b9997e287b65791b15aa12bd4a4f119",
+        "S3": "08efacee47f03037ac69d076ebad7f6fea675cbe9650bb54da4fccf49bd126d3",
+        "S4": "e030eaf3385b10c2a555e52bed3b9618090cd5a64235a6c3ec933aadd6e47d87",
+        "S5": "b5ca5b0161aaa6da12b2d66a7ad0346c79894c6847fea8f71608bc72c6881cd7"
+      },
+      "step_texts": {
+        "S1": "The chosen weight has the seed parity and gives the required residual character on the restriction to the CM field.",
+        "S2": "An open normal subgroup fixing a line would force the residual character square to be one everywhere.",
+        "S3": "A stable plane for the adjoint would give one or two projective roots and hence a line fixed by an open subgroup.",
+        "S4": "The adjoint ordinary flag has diagonal characters given by the two reciprocal ratios and the trivial character.",
+        "S5": "A scalar twist leaves the trace-free adjoint unchanged, so the window witness applies to the chosen adjoint after its cyclotomic twist."
+      }
+    }
+  ]
+}

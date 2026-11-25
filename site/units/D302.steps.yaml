@@ -1,0 +1,137 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "D302",
+  "edition_sha256": "8c1f82b65729f09ceb9c7f04ab28c35d89b9ff7de430fa744a41bf9df4869e9e",
+  "note_sha256": "f225d313037612a4c467ad666e84b963145757004664414879677f37d72cae44",
+  "statement_sha256": "f1dcd3a0bd55cb89bc07a1b7d6539069c311f00d560ee604e21847fb58a0b860",
+  "sources": [
+    {
+      "path": "notes/units/D302_round4.md",
+      "sha256": "f225d313037612a4c467ad666e84b963145757004664414879677f37d72cae44"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The three targets concern a representative for the graded class, its coefficient ambiguity, and an element-dependent power clearing denominators.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: filtered divided-power algebra"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.T.crystalline_graded_pieces_description",
+          "file": "Development/AutomorphicSpectrum/Proofs/BlockDecomposition/CrystallineGradedPiecesDescriptionStatement.lean",
+          "line0": 8,
+          "line1": 9
+        },
+        {
+          "name": "GlobalTheory.CompanionTheory.PerfFil.crystalline_filtration_graded_pieces",
+          "file": "Development/AutomorphicSpectrum/Proofs/BlockDecomposition/CrystallineGradedPiecesDescription.lean",
+          "line0": 176,
+          "line1": 183
+        }
+      ],
+      "source": "notes/units/D302_round4.md",
+      "anchor": "Identify the three clauses",
+      "source_lines": [
+        13,
+        13
+      ],
+      "claim_sha256": "e1adbd707330027a3ad609737690eebfbda585c9e899d93909e65c73a6745864",
+      "passage_sha256": "7f24e532d47ecfc253047508c9bc6cab617a285908c60ebc9156994d93ce374a",
+      "sha256": "7eb57cd9639bd211dcca4e6566a90bb9fd3bc4b64fc33dbd999ff1d8bf0c07dc",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Generators and span induction give a representative modulo the next level and a clearing exponent for each filtered element.",
+      "kind": "computation",
+      "uses": [
+        "standard: induction on a submodule span",
+        "input: factorial divided-power identity"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.CompanionTheory.PerfFil.filtration_element_mod_next_level",
+          "file": "Development/AutomorphicSpectrum/Proofs/BlockDecomposition/CrystallineGradedPiecesDescription.lean",
+          "line0": 107,
+          "line1": 136
+        },
+        {
+          "name": "GlobalTheory.CompanionTheory.PerfFil.filtration_element_power_multiple_xi",
+          "file": "Development/AutomorphicSpectrum/Proofs/BlockDecomposition/CrystallineGradedPiecesDescription.lean",
+          "line0": 68,
+          "line1": 105
+        }
+      ],
+      "source": "notes/units/D302_round4.md",
+      "anchor": "Separate the degree-$r$ summand",
+      "source_lines": [
+        17,
+        17
+      ],
+      "claim_sha256": "5c3b44a5012f29e6c6d93d7ea5631359a58ed9de51628f9d31434f3838b30a5b",
+      "passage_sha256": "9ff86ad105ad837847fa0d4bf8fdb70a396cabc6b5603079d15e9d6a9d35c053",
+      "sha256": "63f4e85e6f31907cace9471ac716338b843bec2bb4bfc75500b6a5dedc10d2a0",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "A coefficient times the degree-$r$ divided power lies in filtration $r+1$ exactly when that coefficient is divisible by $\\xi$.",
+      "kind": "computation",
+      "uses": [
+        "S2",
+        "input: non-zero-divisor and prime-power saturation properties"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.CompanionTheory.PerfFil.divided_power_multiple_next_level_iff",
+          "file": "Development/AutomorphicSpectrum/Proofs/BlockDecomposition/CrystallineGradedPiecesDescription.lean",
+          "line0": 138,
+          "line1": 174
+        }
+      ],
+      "source": "notes/units/D302_round4.md",
+      "anchor": "Calculate the coefficient kernel",
+      "source_lines": [
+        21,
+        21
+      ],
+      "claim_sha256": "b3e3aec84805badc36f768d804de1bfb328ed7bdf26e37c948254c802e4e4605",
+      "passage_sha256": "ec1f0c58787b1d2449b1c892b14e1e091fd0b304e519ba97effe11630736fb3c",
+      "sha256": "a6bcd5c203593511b5cf7f18ce82423893eb48329a043d69fb247cb73797dbb0",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "96cca80353941ca273bc78f21913c6a77dbf412cc31fbd1ecb01fdc8ab734171",
+      "sources": [
+        {
+          "path": "notes/units/D302_round4.md",
+          "sha256": "212fdad9283f755c4c9149edfae2d4fc451fbcc01a0733de2fc16c3971a2428b"
+        }
+      ],
+      "statement_sha256": "f1dcd3a0bd55cb89bc07a1b7d6539069c311f00d560ee604e21847fb58a0b860",
+      "steps": {
+        "S1": "7eb57cd9639bd211dcca4e6566a90bb9fd3bc4b64fc33dbd999ff1d8bf0c07dc",
+        "S2": "63f4e85e6f31907cace9471ac716338b843bec2bb4bfc75500b6a5dedc10d2a0",
+        "S3": "a6bcd5c203593511b5cf7f18ce82423893eb48329a043d69fb247cb73797dbb0"
+      },
+      "step_texts": {
+        "S1": "The three targets concern a representative for the graded class, its coefficient ambiguity, and an element-dependent power clearing denominators.",
+        "S2": "Generators and span induction give a representative modulo the next level and a clearing exponent for each filtered element.",
+        "S3": "A coefficient times the degree-$r$ divided power lies in filtration $r+1$ exactly when that coefficient is divisible by $\\xi$."
+      },
+      "step_passages": {
+        "S1": "7f24e532d47ecfc253047508c9bc6cab617a285908c60ebc9156994d93ce374a",
+        "S2": "9ff86ad105ad837847fa0d4bf8fdb70a396cabc6b5603079d15e9d6a9d35c053",
+        "S3": "ec1f0c58787b1d2449b1c892b14e1e091fd0b304e519ba97effe11630736fb3c"
+      }
+    }
+  ]
+}

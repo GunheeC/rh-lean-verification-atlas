@@ -1,0 +1,177 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "T26",
+  "title": "The arithmetic inputs behind the deep estimate",
+  "track": {
+    "primary": "arakelov",
+    "secondary": []
+  },
+  "statement": "Assume an arithmetic intersection system, the three Hilbert--Samuel\nconsequences T18, the bigness bound T17, the resolution statement\n\\nolinkurl{ResKStatement}, extension of homomorphisms of semiabelian\nschemes, the Fargues Hodge--Tate input, GAGA for sections, quotients by\nfinite flat subgroups, the Zarhin splitting T22 and nef Riemann--Roch T23.\nThen the uniform component-slope estimate in T14 holds with the same\nrestrictions on $D,T,j,Y,e,o$ and the number of prime factors.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume the intersection system, arithmetic Hilbert–Samuel, bigness, resolution, and extension of semiabelian homomorphisms.",
+    "Use Fargues Hodge–Tate, GAGA for sections, the finite flat quotient, Zarhin splitting and nef Riemann–Roch inputs.",
+    "The component data satisfy the depth, index, goodness and prime-divisor restrictions of T14."
+  ],
+  "lean": [
+    {
+      "name": "GlobalTheory.CompanionTheory.Ar.Plug.deepStR_of_use",
+      "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/MoriwakiBigness/HilbertSamuelApplications/DeepStROfUse.lean",
+      "line0": 12,
+      "line1": 23,
+      "sha256": "dcc65f129a97bf9e4d8405bc717640070e2c416a0baf1c9c96cd4ef017c587d3",
+      "dominated": 481067,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/T26_round4.md",
+      "section": "T26 · The arithmetic inputs behind the deep estimate",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "5.36 (sub:T26)",
+      "pages": [
+        48,
+        48
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/T26.tex",
+      "section": "sub:T26",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L1",
+  "reviews": [
+    "reviews/R21_review.md"
+  ],
+  "prerequisites": [
+    "D123",
+    "D128",
+    "D317",
+    "D331",
+    "D340",
+    "D351"
+  ],
+  "size_pages": 2,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [
+    {
+      "grade": "L1",
+      "review": "reviews/R21_review.md",
+      "lines": [
+        132,
+        132
+      ],
+      "scope": "Lean interface as specified in the review row; no equivalence with a published result inferred.",
+      "verdict": "Exact statement comparison"
+    }
+  ],
+  "paper_id": "T26",
+  "indexed_members": [
+    "D312",
+    "D313",
+    "D314",
+    "D315",
+    "D316",
+    "D318",
+    "D319",
+    "D320",
+    "D321",
+    "D322",
+    "D323",
+    "D324",
+    "D325",
+    "D326",
+    "D327",
+    "D328",
+    "D329",
+    "D330",
+    "D332",
+    "D333",
+    "D334",
+    "D335",
+    "D336",
+    "D337",
+    "D338",
+    "D339",
+    "D341",
+    "D342",
+    "D343",
+    "D344",
+    "D345",
+    "D346",
+    "D347",
+    "D348",
+    "D349",
+    "D350",
+    "D352",
+    "D353",
+    "D354",
+    "D355",
+    "D356",
+    "D357",
+    "D358",
+    "D359",
+    "D360",
+    "D361",
+    "D362",
+    "D363",
+    "D364",
+    "D365",
+    "D366",
+    "D367",
+    "D368",
+    "D369",
+    "D370",
+    "D371",
+    "D372",
+    "D373",
+    "D374"
+  ],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "the-arithmetic-inputs-behind-the-deep-estimate",
+  "aliases": [
+    "deepStR_of_use",
+    "T26 The arithmetic inputs behind the deep estimate"
+  ],
+  "background": [
+    "Arithmetic intersection",
+    "Semiabelian schemes",
+    "Hodge–Tate theory"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "5.36 (sub:T26)",
+    "pages": [
+      48,
+      48
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "D123": "graph",
+    "D128": "graph",
+    "D317": "graph",
+    "D331": "graph",
+    "D340": "graph",
+    "D351": "graph"
+  },
+  "review_status": "pending_review",
+  "summary": "The deep component estimate needs one constant chosen before the core, cover and weight vary. This reduction obtains it from a tower and a volume theorem and translates the hypotheses on each deep datum into the numerical restrictions required by the volume estimate."
+}

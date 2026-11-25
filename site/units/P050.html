@@ -1,0 +1,36 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>P050 · Lattice realization over a number field · RH verification atlas</title><link rel="stylesheet" href="../atlas.css"><script>window.MathJax={tex:{inlineMath:[["$","$"]],displayMath:[["$$","$$"]],processEscapes:true},options:{ignoreHtmlClass:"no-math"}};</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script></head><body><header><div class="bar"><a class="brand" href="../index.html">RH verification atlas</a><nav aria-label="Atlas navigation"><a href="../index.html">Home</a> <a href="../STATUS.html">Status</a> <a href="../MAP.html">Map</a> <a href="../dashboard/index.html">Tracks</a> <a href="../lookup/search.html">Search declarations</a></nav></div></header><main><h1 id="p050--lattice-realization-over-a-number-field">P050 · Lattice realization over a number field</h1>
+<p class="notice">AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved</p>
+<p>A finitely generated lattice over the integers of a number field embeds discretely under its archimedean realization. Its integral rank equals the field degree times its field rank and its height is positive. These facts justify taking covolumes on the realized span.</p>
+<p><code>lattice-realization-over-a-number-field</code> · <a href="../tracks/arakelov/index.html">Arakelov geometry and geometry of numbers</a></p>
+<p><strong>Full</strong> · <strong>L0</strong> Declaration pinned; no review of this unit · Record generated 2026-11-25 (no human check).</p>
+<div class="scroll"><table>
+<thead><tr><th>1 · Lean pinned</th><th>2 · Statement compared</th><th>3 · Prose</th><th>4 · Steps</th><th>5 · AI review</th><th>6 · Human</th></tr></thead>
+<tbody><tr><td>✓</td><td>–</td><td>Full</td><td>3</td><td>–</td><td>0 of 3 steps</td></tr>
+</tbody></table></div>
+<p><a href="P050.check.html">Numbered proof and check records</a> · <a href="../PROGRESS.html">Progress and counting rules</a></p>
+<h2 id="statement">Statement</h2>
+<p>Let <span class="math">$K$</span> be any number field with the given star structure, <span class="math">$V$</span> a finite-dimensional <span class="math">$K$</span>-space with compatible <span class="math">$\mathcal O_K$</span>-action, <span class="math">$b$</span> a basis, and <span class="math">$X_v$</span> invertible complex frames at all infinite places. For a finitely generated <span class="math">$\mathcal O_K$</span>-submodule <span class="math">$L$</span>, the realization is injective on <span class="math">$L$</span>, its image is discrete, and</p>
+<div class="math display">$$\operatorname{rank}_{\mathbf Z}\rho_X L=[K:\mathbf Q]\,\operatorname{rank}_K L, \qquad \operatorname{ht}_{b,X}(L)&gt;0 .$$</div>
+<h2 id="assumptions">Assumptions</h2>
+<ul><li>Use a number field with the specified involution, a finite-dimensional vector space with compatible integral action and a basis.</li><li>Take invertible frames at the infinite places and a finitely generated integral submodule.</li></ul>
+<p>Sources for the assumptions · <a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a></p>
+<h2 id="where-to-read">Where to read</h2>
+<p>Blueprint v13 and papers v3–v5 are this atlas project’s own AI-written, unpublished drafts. They have no human review and were not written by the author of the Lean development. Blueprint v13, its separate cover, and paper v5 are distributed as assets of release v0.1.0. For v3 and v4 the atlas supplies selected excerpts and notes. <a href="../data/editions.json">Edition register</a></p>
+<ul><li><a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a>, 7.27, p. 90. Statement starts on the cited page.</li><li><a href="../notes/units/P050.tex">Manuscript source excerpt</a> · section <code>pn:P050</code></li></ul>
+<h2 id="evidence">Evidence</h2>
+<p>The pinned declaration is recorded in the formal source. No higher-level verdict is assigned to this unit.</p>
+<h2 id="lean-declarations">Lean declarations</h2>
+<ul><li><code>Formalism.HN.place_lattice_structure</code>  <br><a href="https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/HarderNarasimhan/HarderNarasimhanProofs/DiscreteSpanOfLinIndep.lean#L269-L324"><code>DiscreteSpanOfLinIndep.lean</code></a>, lines 269–324 · 188 dominated lines · SHA-256 <code>39e24cf0474e</code>.</li></ul>
+<p><a href="P050.yaml">Machine record and full declaration hashes</a> · <a href="../lookup/declarations.html">Declaration lookup</a></p>
+<h2 id="reading-prerequisites">Reading prerequisites</h2>
+<p>Background · Minkowski embeddings · Discrete lattices over number fields.</p>
+<p>PlLat supplies positivity, discreteness and rank of the archimedean lattice realization. The Gram determinant calculation in P049 needs PlLat and already depends on P050. The overlapping Z5.1 assignment likewise already uses P050. <a href="../data/round3_prerequisites.json">Statement evidence</a></p>
+<h2 id="open-questions">Open questions</h2>
+<p>None recorded.</p>
+<h2 id="graph-connections">Graph connections</h2>
+<p>Arrows may connect either a unit’s main declaration or an indexed member.</p>
+<p><strong>Uses</strong> · No recorded edge.</p>
+<p><strong>Used by</strong> · <a href="B05.html">B05</a> · <a href="D379.html">D379</a> · <a href="D479.html">D479</a> · <a href="D481.html">D481</a> · <a href="P012.html">P012</a> · <a href="P015.html">P015</a> · <a href="P049.html">P049</a> · <a href="T04.html">T04</a> · <a href="T06.html">T06</a> · <a href="T08.html">T08</a> · <a href="T09.html">T09</a> · <a href="T10.html">T10</a> · <a href="T15.html">T15</a> · <a href="Z5.1.html">Z5.1</a> · <a href="Z5.2.html">Z5.2</a></p>
+<p><a href="../data/unit_graph.json">Declaration witnesses and graph scope</a></p>
+<p>Lookup aliases · <code>place_lattice_structure</code>, <code>P050 Lattice realization over a number field</code></p>
+<p>&lt;!-- Unit metadata SHA-256 621c86322d14df0bee474d98404c81d86444c19261ca594b89d345a7f302d3cf --&gt;</p></main><footer><a href="../help.html">Using the local edition</a></footer></body></html>

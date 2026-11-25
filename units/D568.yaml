@@ -1,0 +1,88 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D568",
+  "title": "A slope bound for the Gaussian term",
+  "track": {
+    "primary": "arakelov",
+    "secondary": []
+  },
+  "statement": "Under the ten size, division, comparison, counting, slope, height and finite-parameter assumptions, Ga(u) is at most Main(u)+log|W(u)|+K0v5+M plus (1\\ensuremath{-}delBar) inverse times [4 log(1+x\\textasciicircum{}cHH)(K3+M+b)+(etaBar+4sqrt(eBar))x\\textasciicircum{}cHH b], where M is the weighted mean of Lo5.\n\\[\n\\mathrm{Ga}(u)\\le \\mathrm{Main}(u)+\\log|W_u|+K_{0,v5}+M+\\frac{4\\log(1+x^{c_{HH}})(K_3+M+b)+(\\bar\\eta+4\\sqrt{\\bar e})\\,x^{c_{HH}}b}{1-\\bar\\delta}.\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Use a Hida size setting, division, $E$ and $H$ comparison, counting and slope bounds.",
+    "Assume quotient-slope, slope-inequality, height and finite-parameter conditions at the same unit."
+  ],
+  "lean": [
+    {
+      "name": "Formalism.LFunctionChainParameters.WeightedSlopeBounds.Ga_bound5",
+      "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LevelOfCongruence.lean",
+      "line0": 113,
+      "line1": 160,
+      "sha256": "17c66172050c9fc07489b18ab7c496528895fc4d448e9c288f8cfb0c1ce40f0a",
+      "dominated": 233,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/D568_round4.md",
+      "section": "D568 · A slope bound for the Gaussian term",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "G.602 (decomp:D568)",
+      "pages": [
+        307,
+        307
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D568.tex",
+      "section": "decomp:D568",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": 2,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "D568",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "a-slope-bound-for-the-gaussian-term",
+  "aliases": [
+    "Ga_bound5",
+    "D568 A slope bound for the Gaussian term"
+  ],
+  "background": [
+    "Hermitian slopes",
+    "Weighted means"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.602 (decomp:D568)",
+    "pages": [
+      307,
+      307
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "review_status": "pending_review",
+  "summary": "This estimate controls a Gaussian term at a fixed lattice unit by its main term and explicit losses. The varying slope quantity left on the right is a weighted mean on that unit. A later estimate bounds this mean using counts."
+}

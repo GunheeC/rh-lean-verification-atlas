@@ -1,0 +1,131 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D567",
+  "title": "The per-unit lattice error and the arithmetic bracket",
+  "track": {
+    "primary": "arakelov",
+    "secondary": []
+  },
+  "statement": "If the listed error windows hold and x\\textasciicircum{}epsilon dominates log x and the fixed largeness constant, the per-unit error ErrX5at is bounded by x\\textasciicircum{}(CErr·epsilon) times ErrText for every u.\n\\[\n\\mathrm{ErrX5at}(D,C,X'',u)\\le x^{C_{\\rm Err}(C)\\varepsilon}\\,\\mathrm{ErrText}(D).\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Fix finite index and nonempty word-fibre data, the arithmetic constants and one unit.",
+    "The error windows and large-scale conditions both hold for these data."
+  ],
+  "lean": [
+    {
+      "name": "Formalism.LFunctionChainParameters.LChain.errX5at_le",
+      "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/PChain.lean",
+      "line0": 613,
+      "line1": 672,
+      "sha256": "a72dea7a7c24282008d1fea77748cb076f221dc8265c60e47a62b11f42887ebf",
+      "dominated": 289,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v5",
+      "section": "A5 · Per-unit error bound",
+      "pages": [
+        13,
+        14
+      ],
+      "review_status": "pending_review",
+      "coverage": "Revised paper v5 exposition, pending independent review. The PDF link opens the release attachment after publication."
+    },
+    {
+      "document": "notes/units/D567_v4.md",
+      "section": "D567 · Absorbing the lattice error into the arithmetic bracket",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-3 written exposition, pending independent review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "G.601 (decomp:D567)",
+      "pages": [
+        307,
+        307
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D567.tex",
+      "section": "decomp:D567",
+      "pages": []
+    },
+    {
+      "document": "paper2_v3",
+      "section": "The chain in detail: P017",
+      "pages": [
+        9,
+        13
+      ],
+      "coverage": "Shared subsection for this station, including subordinate inputs."
+    },
+    {
+      "document": "paper2_v4",
+      "section": "Mechanism, §3",
+      "pages": [
+        13,
+        13
+      ],
+      "coverage": "Paper v4, pending independent review."
+    }
+  ],
+  "status": "Full",
+  "grade": "L2",
+  "reviews": [
+    "reviews/DB3_review_A.md"
+  ],
+  "prerequisites": [],
+  "size_pages": 2,
+  "open_questions": [
+    "How do the individual lattice errors fit into the four-term arithmetic bracket with the stated uniform exponent?"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [
+    {
+      "review": "reviews/DB3_review_A.md",
+      "lines": [
+        136,
+        147
+      ],
+      "grade": "L2",
+      "verdict": "CONFIRMED",
+      "scope": "At every unit, the error windows and the largeness requirement give ErrX5at at most the CErr-times-epsilon power of x times ErrText. Full written implication in the reviewed edition."
+    }
+  ],
+  "paper_id": "D567",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "the-per-unit-lattice-error-and-the-arithmetic-bracket",
+  "aliases": [
+    "errX5at_le",
+    "D567 The per-unit lattice error and the arithmetic bracket"
+  ],
+  "background": [
+    "Hermitian slope inequalities",
+    "Power bounds on error terms"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.601 (decomp:D567)",
+    "pages": [
+      307,
+      307
+    ]
+  },
+  "question_sources": [
+    "reviews/R23_review.md"
+  ],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "review_status": "ai_reviewed",
+  "summary": "At a sufficiently large scale satisfying the error windows, each unit's lattice error is bounded by the common arithmetic error bracket times a stated power of the scale. Thus a single bracket can be used across the units."
+}

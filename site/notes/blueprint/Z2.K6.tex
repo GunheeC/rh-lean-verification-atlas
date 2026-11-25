@@ -1,0 +1,59 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% RH Notes blueprint source excerpts for Z2.K6
+% Verbatim excerpts in the notation of the parent blueprint. The labelled editions and source ranges appear below.
+% See the unit YAML for the current proof status. Earlier-round passages retain their original wording.
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+The citation identifies the in-repository class-group argument. The hand exposition invokes Artin reciprocity. Equivalence to the bibliographic formulation has no recorded comparison.
+\noindent\nolinkurl{PositivityTheory.QuaternionShaBounds.ShaAsm_holds} --- in-repo constant (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/RingEquivalences/OrderOfOneAddPrimePowZmodPrimePow.lean:454--486}); not compared.\par
+External theorem numbers in the original excerpt are not verified here unless a separate edition-specific source record documents the comparison.
+% End of atlas edition annotation.
+
+\section*{Z2.K6. Uniform layer count and the global kernel}
+
+% Parent source SHA-256: 1af64922b98ed2310744411b1f18b25cc426c97220646321471836e1a3a409d6
+% blueprint/ch_P.tex lines 1004 through 1045; lem:P-r3-k6
+\begin{lemma}[Lifting the locally trivial characters (K6)]\label{lem:P-r3-k6}
+Every character in the restricted localization kernel lifts to the
+finite ideal class characters of Proposition~\ref{prop:P-k-count}
+at every sufficiently large level. Their evaluation in $\mathcal H_q$
+is injective.
+\end{lemma}
+\begin{proof}
+By Lemma~\ref{lem:P-r3-k1}, restriction to the infinite layer is
+injective. Represent a class over $M$ by a continuous cocycle $z$.
+Its image is finite, and at each of the finitely many $w\mid\ell$
+there is a $b_w\in A$ with $z(d)=(d-1)b_w$ on a chosen local group.
+Choose $\nu_0\ge c$ so that $\ell^{\nu_0}$ kills the image and all
+$b_w$. For every $\nu\ge\nu_0$ the group over $F=M(\mu_{\ell^\nu})$
+acts trivially on $A[\ell^{\nu_0}]$. Thus $z$ restricts to a homomorphism
+on this group. It vanishes on the chosen local groups above $\ell$,
+and also on all conjugates there: for $h$ in the group over $F$,
+\[
+ z(dhd^{-1})=d z(h)+(1-dhd^{-1})z(d)=d z(h).
+\]
+Inertia away from $\ell$ already acts through the trivial group in the
+unramified quotient. The resulting finite abelian character is unramified
+at every place and split over $\ell$. Global Artin reciprocity identifies
+it with an ideal class character, zero on primes over $\ell$. The
+ordinary ideal class group applies since $F$ is totally complex. On
+restriction back to the infinite layer the original value of $z$ is
+recovered. These are the conditions in \nolinkurl{ClDual},
+\nolinkurl{good_of}, \nolinkurl{ShaAsm_holds}
+(\path{KummerTheory/Mk0IdMapCongr.lean:56--60},
+\path{OrderOfOneAddPrimePowZmodPrimePow.lean:378--410,454--463}).
+See \cite[Theorem 0.4 and the Artin map in Chapter V]{P-R3-CFT}.
+
+Identify $A[q]$ additively with $\mathbf Z/q$. Frobenius at
+$\gamma^{-1}P$ is conjugate to the transport of Frobenius at $P$.
+The action of $\gamma^{-1}$ on the target is multiplication by
+$(1+\ell^c)^E$, giving the required eigenvalue. Evaluation kills
+principal divisors, and the prime ideals generate the ideal class
+group, so two characters with the same evaluations agree. This proves
+the assertion uniformly for all $\nu\ge\nu_0$ for the chosen class
+(\nolinkurl{ClInj_holds}, \nolinkurl{sSha},
+\path{OrderOfOneAddPrimePowZmodPrimePow.lean:265,490}).
+\emph{Status: complete.}
+\end{proof}
+

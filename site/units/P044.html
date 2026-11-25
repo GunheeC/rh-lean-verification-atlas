@@ -1,0 +1,40 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>P044 · Normalized congruence index · RH verification atlas</title><link rel="stylesheet" href="../atlas.css"><script>window.MathJax={tex:{inlineMath:[["$","$"]],displayMath:[["$$","$$"]],processEscapes:true},options:{ignoreHtmlClass:"no-math"}};</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script></head><body><header><div class="bar"><a class="brand" href="../index.html">RH verification atlas</a><nav aria-label="Atlas navigation"><a href="../index.html">Home</a> <a href="../STATUS.html">Status</a> <a href="../MAP.html">Map</a> <a href="../dashboard/index.html">Tracks</a> <a href="../lookup/search.html">Search declarations</a></nav></div></header><main><h1 id="p044--normalized-congruence-index">P044 · Normalized congruence index</h1>
+<p class="notice">AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved</p>
+<p>At an eligible distinguished point, the normalized congruence index is bounded by local row and column losses, global Selmer lengths, class-number and ramification terms. The hypotheses on the family, idempotents and finite lengths specify when that comparison can be applied.</p>
+<p><code>normalized-congruence-index</code> · <a href="../tracks/local/index.html">Local p-adic theory</a></p>
+<p><strong>Outlined</strong> · <strong>L0</strong> Declaration pinned; no review of this unit · Record generated 2026-11-25 (no human check).</p>
+<div class="scroll"><table>
+<thead><tr><th>1 · Lean pinned</th><th>2 · Statement compared</th><th>3 · Prose</th><th>4 · Steps</th><th>5 · AI review</th><th>6 · Human</th></tr></thead>
+<tbody><tr><td>✓</td><td>–</td><td>Outlined</td><td>4</td><td>–</td><td>0 of 4 steps</td></tr>
+</tbody></table></div>
+<p><a href="P044.check.html">Numbered proof and check records</a> · <a href="../PROGRESS.html">Progress and counting rules</a></p>
+<h2 id="statement">Statement</h2>
+<p>Assume G1–G6. The characteristic coefficients belong to <span class="math">$T$</span> and the local gain and crystalline conditions hold. The constituents satisfy absolute irreducibility and distinctness with the prescribed residual characteristic polynomials and full residual span on block zero. Ramification away from the assigned sets is trivial, the assigned inertia elements satisfy their polynomial relations, and any parameter admitting the distinguished rational character line belongs to <span class="math">$Z$</span>. Assume tame inertia generators, the Bloch–Kato finite conditions and annihilator comparison, family continuity, semisimple decomposition, Fontaine conditions, local <span class="math">$H^1$</span> finiteness and local coefficient compatibility. Assume condition 5.1 supplying an idempotent design at <span class="math">$\pi\in Z$</span>, and the unramified input for the decomposition. Let <span class="math">$b_w,m_w,c_B$</span> satisfy the row colength, column lifting and <span class="math">$TB$</span> hypotheses at the good coefficient extensions. If <span class="math">$\ell\ne g_0,g_1,\ \pi\in Z$</span>, the global <span class="math">$s_\pi$</span> input is finite and the scalar lengths are finite for <span class="math">$0&lt;k&lt;t$</span>, then</p>
+<div class="math display">$$\begin{aligned} v_{\rm cc}(\pi)\le{}&amp; \sum_{w\in R\cup C}\operatorname{lenW}(w)+s_\pi+ \sum_{0&lt;k&lt;t}\operatorname{shaLen}(k)+v_\ell(h_E)\\ &amp;+t c_B\sum_{w\in R}([E_w:\mathbf Q_\ell]+2) +4 n_V(|C|+1)v_\delta+t|C|h_0 +t\sum_{w\in Q}\operatorname{lenUnit}(O/(\zeta_w-1)). \end{aligned}$$</div>
+<p>Here <span class="math">$R,C$</span> are the chosen rows and columns, <span class="math">$n_V=r+t$</span>, and <span class="math">$\operatorname{lenW}$</span> is the normalized loss for the corresponding local datum.</p>
+<h2 id="assumptions">Assumptions</h2>
+<ul><li>Assume G1–G6, the tame-generator, Bloch–Kato, annihilator, continuity, decomposition, Fontaine, Tate-finiteness and coefficient compatibility conditions.</li><li>Use the stated local length, lift-exponent and TB bounds with the specified rows, columns and constituent.</li><li>The idempotent design (5.1) and unramified input hold at <span class="math">$\pi\in Z$</span>, the prime differs from <span class="math">$g_0,g_1$</span>, and the global and scalar lengths in the bound are finite.</li></ul>
+<p>Sources for the assumptions · <a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a></p>
+<h2 id="where-to-read">Where to read</h2>
+<p>Blueprint v13 and papers v3–v5 are this atlas project’s own AI-written, unpublished drafts. They have no human review and were not written by the author of the Lean development. Blueprint v13, its separate cover, and paper v5 are distributed as assets of release v0.1.0. For v3 and v4 the atlas supplies selected excerpts and notes. <a href="../data/editions.json">Edition register</a></p>
+<ul><li><a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a>, 7.21, p. 86. Statement starts on the cited page.</li><li><a href="../notes/units/P044.tex">Manuscript source excerpt</a> · section <code>pn:P044</code></li></ul>
+<h3 id="other-expositions-and-comparisons">Other expositions and comparisons</h3>
+<ul><li><a href="https://github.com/jimjamzola/RH-Alpoge-Reconstruction/blob/aa9c86bf2a7d29b08575641fecea19a2a603e87c/manuscript/main.pdf">Adriazola, Hypothesis 17.36, p. 268</a> · partial. <a href="../crosswalk/adriazola.html">Correspondence table</a>.</li><li><a href="https://github.com/jimjamzola/RH-Alpoge-Reconstruction/blob/aa9c86bf2a7d29b08575641fecea19a2a603e87c/manuscript/main.pdf">Adriazola, §17, w4:prop:cong, w4:prop:fitting, lk:*, r5:thm:DIVinN; Hypotheses 17.24 and 17.36</a> · partial. <a href="../crosswalk/adriazola.html">Correspondence table</a>.</li></ul>
+<h2 id="evidence">Evidence</h2>
+<p>The pinned declaration is recorded in the formal source. No higher-level verdict is assigned to this unit.</p>
+<h2 id="lean-declarations">Lean declarations</h2>
+<ul><li><code>Formalism.MainNotions.N.K.Closed.theorem_n5_from_inputs</code>  <br><a href="https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/AdmissibleDesigns/StatementOneBFromUnramified.lean#L142-L175"><code>StatementOneBFromUnramified.lean</code></a>, lines 142–175 · 21,932 dominated lines · SHA-256 <code>c8d1745b519b</code>.</li></ul>
+<p><a href="P044.yaml">Machine record and full declaration hashes</a> · <a href="../lookup/declarations.html">Declaration lookup</a></p>
+<h2 id="reading-prerequisites">Reading prerequisites</h2>
+<p>Background · Local Tate duality · Lattice indices · Galois deformation theory.</p>
+<ul><li><a href="P041.html">P041 · Length estimates in an ordered matrix-corner algebra</a> · graph</li><li><a href="P043.html">P043 · Local comparison and continuity on a normalized Galois family</a> · graph</li><li><a href="Z3.1.html">Z3.1 · Normalized matrix algebra</a> · graph</li><li><a href="Z3.2.html">Z3.2 · Local comparisons and global lattice index</a> · graph</li></ul>
+<p><a href="../data/round3_prerequisites.json">Evidence and definitions of reading links</a></p>
+<h2 id="open-questions">Open questions</h2>
+<p>None recorded.</p>
+<h2 id="graph-connections">Graph connections</h2>
+<p>Arrows may connect either a unit’s main declaration or an indexed member.</p>
+<p><strong>Uses</strong> · <a href="P041.html">P041</a> · <a href="P043.html">P043</a> · <a href="Z3.1.html">Z3.1</a> · <a href="Z3.2.html">Z3.2</a></p>
+<p><strong>Used by</strong> · <a href="D002.html">D002</a> · <a href="P012.html">P012</a></p>
+<p><a href="../data/unit_graph.json">Declaration witnesses and graph scope</a></p>
+<p>Lookup aliases · <code>theorem_n5_from_inputs</code>, <code>P044 Normalized congruence index</code></p>
+<p>&lt;!-- Unit metadata SHA-256 f82a18e6549173e73953d5f1300143a8c11cc74d24375bae5206a998027d6d05 --&gt;</p></main><footer><a href="../help.html">Using the local edition</a></footer></body></html>

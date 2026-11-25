@@ -1,0 +1,81 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D317",
+  "title": "The intersection identity along the tower",
+  "track": {
+    "primary": "arakelov",
+    "secondary": []
+  },
+  "statement": "On a good root tower with positive ranks the full intersection system satisfies the I8 identity for the flag-height intersection expression.\n\\[\n\\mathrm{I8}_T\\bigl(II,h_{\\rm flag}(\\mathrm{CMType}(H),p+q,II)\\bigr).\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume the comparison, Given and Weil records.",
+    "Fix a good origin on the root tower with positive ranks, the required extra data and a full intersection system."
+  ],
+  "lean": [
+    {
+      "name": "GlobalTheory.T.full_intersection_tower_I8_identity",
+      "file": "Development/AutomorphicSpectrum/Proofs/DivisibilityProofs/FullIntersectionTowerI8IdentityStatement.lean",
+      "line0": 20,
+      "line1": 21,
+      "sha256": "4149ec71ba719e3a35258a1af87aaceb4d6d0fac01e33fe7a1f25dd5b534a608",
+      "dominated": 24440,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "G.330 (decomp:D317)",
+      "pages": [
+        239,
+        239
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D317.tex",
+      "section": "decomp:D317",
+      "pages": []
+    }
+  ],
+  "status": "Statement only",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [
+    "D340"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [],
+  "paper_id": "D317",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "the-intersection-identity-along-the-tower",
+  "aliases": [
+    "full_intersection_tower_I8_identity",
+    "D317 The intersection identity along the tower"
+  ],
+  "background": [
+    "Arithmetic intersection theory",
+    "Heights of flags"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.330 (decomp:D317)",
+    "pages": [
+      239,
+      239
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "D340": "graph"
+  }
+}

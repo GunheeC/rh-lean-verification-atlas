@@ -1,0 +1,77 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "D351",
+  "title": "The Poincaré–Lelong identity",
+  "track": {
+    "primary": "arakelov",
+    "secondary": []
+  },
+  "statement": "On a compact Hausdorff space with a finite holomorphic atlas of complex dimension e+1, let a section of a metrized line datum have a simple normal crossings divisor with multiplicities \\nolinkurl{m_k} and holomorphic component inclusions. For any smooth test function and e admissible potentials, integration against the log norm equals the sum of the component integrals weighted by \\nolinkurl{m_k} minus the ambient curvature integral.\n\\[\nI_A((v,\\Phi),\\log\\|s\\|)=\\sum_k m_k I_{W_k}(\\iota_k^*\\Phi,\\iota_k^*v)-I_A((L,\\Phi),v).\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Use a compact Hausdorff space with a finite holomorphic atlas, an admissible metrized line and section, and a simple normal crossings divisor with holomorphic component inclusions.",
+    "The test function is smooth and each of the $e$ potentials is admissible."
+  ],
+  "lean": [
+    {
+      "name": "ReciprocityTheory.AnForm.M.poincareLelong",
+      "file": "ReciprocityTheory/AnalyticForms/PotentialTheory/PLLocalStatement.lean",
+      "line0": 27,
+      "line1": 27,
+      "sha256": "c088e29fe61e4ddb419f38ea664da4f5ab313e1cf1c590ec2e4036a43eafe8e0",
+      "dominated": 975,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "G.364 (decomp:D351)",
+      "pages": [
+        247,
+        247
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/D351.tex",
+      "section": "decomp:D351",
+      "pages": []
+    }
+  ],
+  "status": "Statement only",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [],
+  "paper_id": "D351",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "the-poincarelelong-identity",
+  "aliases": [
+    "poincareLelong",
+    "D351 The Poincaré–Lelong identity"
+  ],
+  "background": [
+    "Poincaré–Lelong formula",
+    "Simple normal crossings divisors"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "G.364 (decomp:D351)",
+    "pages": [
+      247,
+      247
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {}
+}

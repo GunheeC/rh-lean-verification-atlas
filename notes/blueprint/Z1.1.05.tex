@@ -1,0 +1,27 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% RH Notes blueprint source excerpts for Z1.1.05
+% Verbatim excerpts in the notation of the parent blueprint. The labelled editions and source ranges appear below.
+% See the unit YAML for the current proof status. Earlier-round passages retain their original wording.
+\section*{Z1.1.05. Automorphy of linked endpoints}
+
+% Parent source SHA-256: 9559fca8cc392b75d71f1c158fe0c635cfcab567e2f489b52db4c5bb29d98029
+% blueprint/ch_P_r8_small.tex lines 439 through 456; r8:small:Z1.1.05
+\paragraph{Z1.1.05. The inertia bound for the twist on a fixed frame.}
+\phantomsection\label{r8:small:Z1.1.05}
+Take the Hecke character \(Y\), exponent \(m\) and Artin realization
+\(\kappa\) selected in \nolinkurl{UpperTheory.V.Sd.twist_of_printed_results}.
+The given \(m\)-power bound on the local values of \(Y\) gives the
+corresponding bound on the \emph{same} \(\kappa\): for an inertia element
+at a place away from \(\ell\), S05 expresses its \(\kappa\)-value as
+\(\iota^{-1}Y_w(u)\) for a unit \(u\). Raising to \(m\) transports the
+identity \(Y_w(u)^m=1\) to the coefficient field. For the trivial valuation
+the inertia element is already the identity. At an unramified finite place
+S04 similarly determines \(\kappa(\mathrm{Frob})\) with the reciprocal
+sign. S21 fixes the separate factor \(\chi_{\rm cyc}(c)=-1\) in the
+conjugation identity. The local consequences do not construct \(Y\) or
+the dense rank-three and rank-two marking on the linked frame. These
+inputs remain in \nolinkurl{linked_endomorphism_dense}, called by
+\nolinkurl{UpperTheory.V.Z.Sym.Top.linkedEnd_alt}
+(\path{TTwist.lean:123--129,143--178}, \path{LinkedEndE.lean:18--67},
+\path{DenseThresholdCases/SymTop.lean:23--27}).
+

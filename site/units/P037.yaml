@@ -1,0 +1,91 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "P037",
+  "title": "From a uniform layer bound to the localization kernel",
+  "track": {
+    "primary": "ktheory",
+    "secondary": []
+  },
+  "statement": "Let \\(L\\) be totally complex and \\(\\ell\\) prime. Suppose \\(\\ell^c\\)\nis the largest \\(\\ell\\)-power order of a root of unity in \\(L\\),\n\\(c\\ge1\\) and \\(c\\ge2\\) at \\(\\ell=2\\). Fix \\(E\\ge1\\). If for every\nallowed layer \\(F/L\\) the preceding character group, defined with\n\\(a=(1+\\ell^c)^E\\), is finite of order at most \\(B\\), then there\nexists \\(s\\in\\mathbb N\\) such that\n\\[\n \\operatorname{shaInv}(L,\\ell,E)=s,\\qquad \\ell^s\\le B .\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Use totally complex $L$ with maximal $\\ell$-power root order $\\ell^c$, $c\\ge1$ and $c\\ge2$ when $\\ell=2$.",
+    "Fix $E\\ge1$. The prescribed character groups are finite with the same bound $B$ over every allowed layer."
+  ],
+  "lean": [
+    {
+      "name": "PositivityTheory.QuaternionShaBounds.sSha",
+      "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/RingEquivalences/OrderOfOneAddPrimePowZmodPrimePow.lean",
+      "line0": 490,
+      "line1": 490,
+      "sha256": "91adde882fb79c61f3afcb614c18823e3ccb4ffa4bebc8891456b8fca3a507c4",
+      "dominated": 622,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "7.14 (pn:P037)",
+      "pages": [
+        81,
+        81
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/P037.tex",
+      "section": "pn:P037",
+      "pages": []
+    }
+  ],
+  "status": "Full",
+  "grade": "L1",
+  "reviews": [
+    "reviews/R20_review.md"
+  ],
+  "prerequisites": [],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [
+    {
+      "grade": "L1",
+      "review": "reviews/R20_review.md",
+      "lines": [
+        113,
+        113
+      ],
+      "scope": "Named theorem at the specified hypotheses in the R20 manuscript.",
+      "verdict": "Exact statement comparison"
+    }
+  ],
+  "paper_id": "P037",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "from-a-uniform-layer-bound-to-the-localization-kernel",
+  "aliases": [
+    "P037 From a uniform layer bound to the localization kernel"
+  ],
+  "background": [
+    "Cyclotomic towers",
+    "Localization kernels",
+    "Finite character groups"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "7.14 (pn:P037)",
+    "pages": [
+      81,
+      81
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "summary": "A uniform upper bound for the orders of the relevant character groups at every allowed cyclotomic layer bounds the localization-kernel length at the base. The assumptions on roots of unity include a stronger condition at two."
+}

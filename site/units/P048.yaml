@@ -1,0 +1,122 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "P048",
+  "title": "One twisted period with simultaneous local bounds",
+  "track": {
+    "primary": "theta",
+    "secondary": []
+  },
+  "statement": "Take a base and pre-chart, an admissible column record \\(I\\) with its pinned frames and coefficients, its stage laws \\(l\\), later chart data and the level-zero lattice identification. Assume that the reference and twisted rows on this choice are integral. Choose the coefficient and tuple data with \\(t_p.\\xi=I.\\xi\\), and any divisor datum \\(Y\\). Under the stabilizer-denominator identity, for every word \\(u\\), used nonreference place tuple \\(\\mu\\), integral point \\(x\\) of the twisted point lattice and \\(F\\) in the indicated ambient carrier and \\(V_0(\\mu)\\), there exists \\(y\\in L_L\\) such that its chosen complex image is the twisted period of the embedded \\(x\\) and the identified \\(F\\), and for every \\(w\\) with \\(p_w\\notin Q_Y(\\mu)\\),\n\\[\n       y=0\\quad\\text{or}\\quad v_w(y)\\ \\ge\\ -e_w v_{p_w}(D_{\\Gamma,u}).\n\\]",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Use the base and pre-chart, pinned frame and coefficients, stage laws, later data and level-zero lattice identification.",
+    "The reference and twisted rows are integral, the coefficient and tuple characters agree, and the stabilizer-denominator identity holds.",
+    "Fix the indicated divisor, used nonreference tuple, integral point and permitted form."
+  ],
+  "lean": [
+    {
+      "name": "GlobalTheory.PerTwClose.twistedPeriodAdmissible_of_rowInt",
+      "file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/AdmissiblePeriodTwistOfIntegralRows.lean",
+      "line0": 14,
+      "line1": 21,
+      "sha256": "6757ac3a4924225232e2e7fb87d63aa937f20fdd1019c3a72df3abe34b463f73",
+      "dominated": 266,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "paper2_v3",
+      "section": "7.25 (pn:P048)",
+      "pages": [
+        89,
+        89
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/P048.tex",
+      "section": "pn:P048",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L1",
+  "reviews": [
+    "reviews/R14_review_B.md"
+  ],
+  "prerequisites": [
+    "P096"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "grade_evidence": [
+    {
+      "grade": "L2",
+      "review": "reviews/R14_review_B.md",
+      "lines": [
+        348,
+        353
+      ],
+      "scope": "Root hand proof under its stated inputs, per R13_recheck.md:188, blueprint/status.json round14.approval and this recheck; individual suppliers evaluated separately.",
+      "verdict": "R13 conditional approval followed by applied edits and R14 independent acceptance of the recorded grade"
+    }
+  ],
+  "paper_id": "P048",
+  "indexed_members": [
+    "P054",
+    "P055",
+    "P056",
+    "P057",
+    "P069",
+    "P070",
+    "P071",
+    "P072",
+    "P073",
+    "P074",
+    "P077",
+    "P078",
+    "P079",
+    "P082",
+    "P083",
+    "P084",
+    "P085",
+    "P086",
+    "P087",
+    "P088",
+    "P089",
+    "P093",
+    "P094",
+    "P095",
+    "P098"
+  ],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "one-twisted-period-with-simultaneous-local-bounds",
+  "aliases": [
+    "P048 One twisted period with simultaneous local bounds"
+  ],
+  "background": [
+    "Theta periods",
+    "Integral lattices",
+    "Valuations of periods"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "7.25 (pn:P048)",
+    "pages": [
+      89,
+      89
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "P096": "graph"
+  },
+  "summary": "For a fixed admissible column setup with integral rows, one coefficient-field element represents the chosen twisted period and satisfies all the prescribed local lower bounds outside the exceptional primes. Simultaneity allows those bounds to be combined into a common denominator estimate."
+}

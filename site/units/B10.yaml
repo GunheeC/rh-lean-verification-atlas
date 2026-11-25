@@ -1,0 +1,136 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "B10",
+  "title": "Transporting the lattice inequality to a gap",
+  "track": {
+    "primary": "arakelov",
+    "secondary": [
+      "analytic"
+    ]
+  },
+  "statement": "Take finite units $U_0$, nonempty finite word sets $W(u)$, finite top\nindices, and lattice data with $m$ columns and $f$ places. Take a finite\nabelian group $H$, a map $\\operatorname{tr}:U_0\\to H$, and arithmetic\ndata as in \\hyperref[sub:B09]{B09}. Assume top and place bijections\nidentify the coefficients $a_t$, column weights, Euler constant and\n$\\Re\\ell(\\chi_C)$, and express the lattice $\\mathrm{ASK}(u)$ as the\nsum of its arithmetic terms at $\\operatorname{tr}u$.\nAssume the eleven lattice hypotheses of \\nodeid{P021} and the following\nbounds on the data. With $x\\ge1$, $0<\\varepsilon\\le1$,\n$b\\ge1$, $xb\\le a$, $n_T\\ge1$, $m\\le x^{1/2+\\varepsilon/2}$,\n$xm\\le k$, one has\n\\[\n 1\\le k\\le\\min(a,x^{e_K}),\\quad 0\\le L,L_a\\le2x^\\varepsilon,\\quad\n 0\\le kb'\\le a,\\quad 0\\le X''\\le a,\\quad 0\\le a_t\\le2a .\n\\]\nAlso $e_K\\ge0$, $\\log|W(u)|\\le(k-3)\\log2$, $\\bar\\delta\\le1/2$,\n$\\bar\\eta,\\bar e\\ge0$, and\n$(\\bar\\eta+4\\sqrt{\\bar e})x^{c_{HH}}b\\le Kx^\\varepsilon n_Ta$.\nThe seven constants controlling division, the $E$ and $H$ errors, counting,\nslope, first-slope and loss bounds are in $[0,K]$; the exponents\n$e_{\\rm Div},e_{\\rm Loss},c_{HH}$ are nonnegative. Finally\n\\[\n\\begin{gathered}\n 0\\le B_0\\le 2nmbx^\\varepsilon,\\qquad\n 0\\le N_c\\le n_2 k b x^\\varepsilon/(n^2x^{-\\varepsilon}),\\\\\n \\max\\{\\log x,200(1+K)^2(1+c_{HH})(1+e_K)\\}\\le x^\\varepsilon .\n\\end{gathered}\n\\]\nFor each $u\\in U_0$ the gap at $\\operatorname{tr}u$ is at most\n$x^{(e_{\\rm Div}+e_{\\rm Loss}+3)\\varepsilon}\\mathrm{Br}$ with $a_E=a$.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Use finite unit and nonempty word-fibre data, the finite group, translation and the two specified bijections matching coefficients, weights, character constants and ASK.",
+    "Assume the eleven lattice conditions for these data and the ErrWindows, $B_0,N_c$ and large-scale inequalities in the statement."
+  ],
+  "lean": [
+    {
+      "name": "Deduction.ch_top",
+      "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChTop.lean",
+      "line0": 37,
+      "line1": 72,
+      "sha256": "4d71f0cccac3ac250ed97d70beb0d18c902b9639ccde0f4c5b31c38a26f724fd",
+      "dominated": 675,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/B10_v4.md",
+      "section": "From the lattice accounting estimate to a bound for each translate",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-3 written exposition, pending independent review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "5.10 (sub:B10)",
+      "pages": [
+        39,
+        39
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/B10.tex",
+      "section": "sub:B10",
+      "pages": []
+    },
+    {
+      "document": "paper2_v3",
+      "section": "The chain in detail: P017",
+      "pages": [
+        9,
+        13
+      ],
+      "coverage": "Shared subsection for this station, including subordinate inputs."
+    },
+    {
+      "document": "paper2_v4",
+      "section": "Mechanism, §3",
+      "pages": [
+        12,
+        14
+      ],
+      "coverage": "Paper v4, pending independent review."
+    }
+  ],
+  "status": "Full",
+  "grade": "L2",
+  "reviews": [
+    "reviews/DB3_review_A.md"
+  ],
+  "prerequisites": [
+    "D567",
+    "D568",
+    "D569",
+    "D570",
+    "P021"
+  ],
+  "size_pages": 2,
+  "open_questions": [
+    "Which bijections at a fixed unit transport the lattice main term and its error budget to the arithmetic gap?"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [
+    {
+      "review": "reviews/DB3_review_A.md",
+      "lines": [
+        78,
+        85
+      ],
+      "grade": "L2",
+      "verdict": "CONFIRMED",
+      "scope": "Quantifiers over finite units, words, top indices, columns and places; identity, size, error-window, bracket and largeness hypotheses; bound for each transported lattice gap. P021 remains an input. Full written implication in the reviewed edition."
+    }
+  ],
+  "paper_id": "B10",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "transporting-the-lattice-inequality-to-a-gap",
+  "aliases": [
+    "ch_top",
+    "B10 Transporting the lattice inequality to a gap"
+  ],
+  "background": [
+    "Hermitian slope inequalities",
+    "Character sums",
+    "Lattice comparison"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "5.10 (sub:B10)",
+    "pages": [
+      39,
+      39
+    ]
+  },
+  "question_sources": [
+    "reviews/R23_review.md"
+  ],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "D567": "graph",
+    "D568": "graph",
+    "D569": "graph",
+    "D570": "graph",
+    "P021": "graph"
+  },
+  "review_status": "ai_reviewed",
+  "summary": "The lattice inequality can be read as an upper bound on an arithmetic gap at each selected translate. This requires bijections matching the top and place indices, matching coefficients, and explicit bounds on counting and slope errors. It supplies the gap that the character average consumes."
+}

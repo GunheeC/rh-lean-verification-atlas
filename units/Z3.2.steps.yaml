@@ -1,0 +1,280 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "Z3.2",
+  "edition_sha256": "169d97e45962882a42754135d33f85998d433511547c703ddf7de5dd836def63",
+  "note_sha256": "8c1616016e87f41bd5bd185d851535b3e543ea683faac3a3cb011435861e3766",
+  "statement_sha256": "0ff1309434915ca191078ebeffc36b35583635b5d412df62a2b036b3f091a72f",
+  "sources": [
+    {
+      "path": "notes/blueprint/Z3.2.tex",
+      "sha256": "8c1616016e87f41bd5bd185d851535b3e543ea683faac3a3cb011435861e3766"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The coefficient identifications carry the local cup product and its coboundary test to the period model.",
+      "kind": "computation",
+      "uses": [
+        "input: equivariant coefficient comparison"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.MainNotions.N.KBKa.cup_iff",
+          "file": "Formalism/AdmissibleDesigns/CoboundaryMemFiniteClasses.lean",
+          "line0": 397,
+          "line1": 430
+        }
+      ],
+      "source": "notes/blueprint/Z3.2.tex",
+      "anchor": "For degree-one cocycles $u,v$, the cup representative at $(g,h)$",
+      "source_lines": [
+        89,
+        105
+      ],
+      "claim_sha256": "c34cc0acd2d4298aba1527e1bd6fb621b438d3add816c50206158bef500ee18a",
+      "passage_sha256": "a2092ef0c4693ff83d75f5c45c9a8feacf96171a3e9642f65afbec3f37ff0ae8",
+      "sha256": "9b8b16e3be6fefc29f00b400fe481aa46fda9a19918143ccfc9b399a4147f262",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The functional of a torsion class annihilating the integral finite condition factors through the torsion-free image in the rational quotient.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "input: rational finite-condition annihilator"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.RepresentationBoundsCohomology.JT.bkbConv",
+          "file": "Formalism/WachLatticeTwists/CharacterSplitJumps/CharacterJumpProofs/PropLocBK.lean",
+          "line0": 13,
+          "line1": 84
+        }
+      ],
+      "source": "notes/blueprint/Z3.2.tex",
+      "anchor": "For the converse take a torsion-side class $z$ annihilating",
+      "source_lines": [
+        107,
+        126
+      ],
+      "claim_sha256": "9df5a31661b87d9a9c91d31b6b0ead323740d50f532eb181aa007db539834cbc",
+      "passage_sha256": "b53080faeb8183ad08399b290e88294f9f366abe6db0485b77b31be3c3c387b0",
+      "sha256": "7f0024d83909b25e73c9040f764fc1f057333843263c8366b6484a39dea3a9ec",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The extension embeds equivariantly into a finite sum of twisted family representations by retaining the scalar coordinate as well as its matrix evaluation.",
+      "kind": "assembly",
+      "uses": [
+        "input: stable rational extension"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.MainNotions.N.K.TBa.ytEmbW_of",
+          "file": "Formalism/AdmissibleDesigns/TwistedTargetOfInputs.lean",
+          "line0": 175,
+          "line1": 193
+        }
+      ],
+      "source": "notes/blueprint/Z3.2.tex",
+      "anchor": "Then $gs-s=(y_g,0)$. Its rational representation embeds into a finite",
+      "source_lines": [
+        153,
+        181
+      ],
+      "claim_sha256": "b82fe443df5949f2f6ac2f7eae43ca7528481ef1bc9a90c32ef3e036e1df608e",
+      "passage_sha256": "7dd862103b811fe55050cbc430e863e60f27400c70af150f206b47c701557d73",
+      "sha256": "3c76b0beb097ff7c17f9bfeffc62c808fcaf5fe895465be6cdbc61d14c1a49fc",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "A common nonzero denominator sends a continuous finite rational cocycle to an integral one while preserving its period primitive.",
+      "kind": "computation",
+      "uses": [
+        "standard: compactness of cocycle images"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.MainNotions.N.KTate.bound_compact",
+          "file": "Formalism/AdmissibleDesigns/MemIntegralSpanIffImage.lean",
+          "line0": 265,
+          "line1": 274
+        }
+      ],
+      "source": "notes/blueprint/Z3.2.tex",
+      "anchor": "cohomology. A continuous rational finite cocycle has compact image,",
+      "source_lines": [
+        212,
+        240
+      ],
+      "claim_sha256": "33dd98bf24f3b7d71dd535a10f2ed318a318aea01062014161628c07cda097f7",
+      "passage_sha256": "8360ab63404efe667ce0eb0dd4b792d558c9ec356c98c0046fe9d2919cc6cae0",
+      "sha256": "1923a5ad5436f0d9eb00a9dbd8c81d0268e15f181028d37246aa29050f76a6c7",
+      "ai_review": []
+    },
+    {
+      "id": "S5",
+      "status": "active",
+      "claim": "The integral finite cohomology modulo torsion has rank equal to the dimension of the designated finite rational first block.",
+      "kind": "assembly",
+      "uses": [
+        "S4",
+        "input: local coefficient isomorphism"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.MainNotions.N.KTate.rankFf_normAt",
+          "file": "Formalism/AdmissibleDesigns/RankFfNormAt.lean",
+          "line0": 58,
+          "line1": 63
+        }
+      ],
+      "source": "notes/blueprint/Z3.2.tex",
+      "anchor": "The normalized coordinates identify $W$ with the local first-block",
+      "source_lines": [
+        212,
+        240
+      ],
+      "claim_sha256": "b5c993b457c59a3913fc5ed8e1c25d5d912a17ab0dba7aa7e4a84aba0f0d017d",
+      "passage_sha256": "8360ab63404efe667ce0eb0dd4b792d558c9ec356c98c0046fe9d2919cc6cae0",
+      "sha256": "d73543d7405ee02140933e7c5aa991ecd3c440afcc0d424a90527c635a18b3a1",
+      "ai_review": []
+    },
+    {
+      "id": "S6",
+      "status": "active",
+      "claim": "The quotient of the finite cocycle space by coboundaries is finite local cohomology, and the kernel of the coboundary map is the invariant space.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: period comparison"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.MainNotions.N.KDim.quotEquiv",
+          "file": "Formalism/AdmissibleDesigns/CohomZeroEquivContinuous.lean",
+          "line0": 92,
+          "line1": 108
+        },
+        {
+          "name": "Formalism.MainNotions.N.KDim.cohomZeroEquivContinuous",
+          "file": "Formalism/AdmissibleDesigns/CohomZeroEquivContinuous.lean",
+          "line0": 123,
+          "line1": 137
+        }
+      ],
+      "source": "notes/blueprint/Z3.2.tex",
+      "anchor": "$\\ker D\\simeq H^0(V)$. For the first assertion apply the period",
+      "source_lines": [
+        242,
+        258
+      ],
+      "claim_sha256": "c044c8a5765188e7ae6a6f3f98f677f22cf56c4e9cb9ab272735c55dbad75f03",
+      "passage_sha256": "d09e5da5506851be0ab4682be18664f5127a9a0b8524ccdc2461a16d5dc21ffb",
+      "sha256": "268a1fa872d0a5b6167e24b3a37607cf0cc10458da8471ecf71cf046ba3c5432",
+      "ai_review": []
+    },
+    {
+      "id": "S7",
+      "status": "active",
+      "claim": "Equality of the negative filtration contributions and vanishing of first-block invariants give the dimension bound used in the determinant.",
+      "kind": "inequality",
+      "uses": [
+        "S5",
+        "S6",
+        "input: Bloch–Kato dimension formula"
+      ],
+      "lean": [
+        {
+          "name": "Formalism.MainNotions.N.KDim.dimLx_of_font",
+          "file": "Formalism/AdmissibleDesigns/CohomZeroEquivContinuous.lean",
+          "line0": 582,
+          "line1": 589
+        }
+      ],
+      "source": "notes/blueprint/Z3.2.tex",
+      "anchor": "The Bloch--Kato dimension hypothesis now applies to both crystalline",
+      "source_lines": [
+        260,
+        302
+      ],
+      "claim_sha256": "abd6e5861a6a37338e7d207459d9c97a2031f37f9d7429ef7b049702781f6f12",
+      "passage_sha256": "a755604d212d1c39db5461ed707659846bb5113b6d0f87882c4c53627a82e273",
+      "sha256": "60a1a424fdb30bab24705c83b347d02874f7faca69fb55623894717b3b2f60c5",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "4db798a361bc11d3d85578674873a032a20dee91e42e30192f4af54425c6dd97",
+      "sources": [
+        {
+          "path": "notes/blueprint/Z3.2.tex",
+          "sha256": "09311f5a3829bac1b9204b68538b8282b7ae4c4f013d0b0a5ca428fda6393b54"
+        }
+      ],
+      "steps": {
+        "S1": "5eb1a9af447eb8f2e5a58403607eead8c3a2c4ee2fb9a85c28832e542d6244ee",
+        "S2": "7f0024d83909b25e73c9040f764fc1f057333843263c8366b6484a39dea3a9ec",
+        "S3": "6e118471f83fc97f9734d02bd164eb16dda6e26706f9d1dc43070ef595334c3d",
+        "S4": "568746df47290945a3bb8283fe8ba9e6e058cb405392ddd2d9e0d8b93d11bb41",
+        "S5": "05457067316767f6096cf06bff084f46d15e64882a825128049c601d4fde57ad",
+        "S6": "558be2b53587b4ba475c5ba64178dedf8361bdcf51de2b63570c55629c853acf",
+        "S7": "39a3cc625b238b11dcfa62527aa8cbc16a4a80e002142c70bbc96f04053ae4c7"
+      },
+      "step_texts": {
+        "S1": "The coefficient identifications carry the local cup product and its coboundary test to the period model.",
+        "S2": "The functional of a torsion class annihilating the integral finite condition factors through the torsion-free image in the rational quotient.",
+        "S3": "The extension embeds equivariantly into a finite sum of twisted family representations by retaining the scalar coordinate as well as its matrix evaluation.",
+        "S4": "A common nonzero denominator sends a continuous finite rational cocycle to an integral one while preserving its period primitive.",
+        "S5": "The integral finite cohomology modulo torsion has rank equal to the dimension of the designated finite rational first block.",
+        "S6": "The quotient of the finite cocycle space by coboundaries is finite local cohomology, and the kernel of the coboundary map is the invariant space.",
+        "S7": "Equality of the negative filtration contributions and vanishing of first-block invariants give the dimension bound used in the determinant."
+      }
+    },
+    {
+      "edition_sha256": "f36e67b5d895837155acbc6cc6b18c597eb87e6b48373eea14c8d659a2abf749",
+      "sources": [
+        {
+          "path": "notes/blueprint/Z3.2.tex",
+          "sha256": "09311f5a3829bac1b9204b68538b8282b7ae4c4f013d0b0a5ca428fda6393b54"
+        }
+      ],
+      "statement_sha256": "0ff1309434915ca191078ebeffc36b35583635b5d412df62a2b036b3f091a72f",
+      "steps": {
+        "S1": "9b8b16e3be6fefc29f00b400fe481aa46fda9a19918143ccfc9b399a4147f262",
+        "S2": "7f0024d83909b25e73c9040f764fc1f057333843263c8366b6484a39dea3a9ec",
+        "S3": "3c76b0beb097ff7c17f9bfeffc62c808fcaf5fe895465be6cdbc61d14c1a49fc",
+        "S4": "1923a5ad5436f0d9eb00a9dbd8c81d0268e15f181028d37246aa29050f76a6c7",
+        "S5": "d73543d7405ee02140933e7c5aa991ecd3c440afcc0d424a90527c635a18b3a1",
+        "S6": "268a1fa872d0a5b6167e24b3a37607cf0cc10458da8471ecf71cf046ba3c5432",
+        "S7": "60a1a424fdb30bab24705c83b347d02874f7faca69fb55623894717b3b2f60c5"
+      },
+      "step_texts": {
+        "S1": "The coefficient identifications carry the local cup product and its coboundary test to the period model.",
+        "S2": "The functional of a torsion class annihilating the integral finite condition factors through the torsion-free image in the rational quotient.",
+        "S3": "The extension embeds equivariantly into a finite sum of twisted family representations by retaining the scalar coordinate as well as its matrix evaluation.",
+        "S4": "A common nonzero denominator sends a continuous finite rational cocycle to an integral one while preserving its period primitive.",
+        "S5": "The integral finite cohomology modulo torsion has rank equal to the dimension of the designated finite rational first block.",
+        "S6": "The quotient of the finite cocycle space by coboundaries is finite local cohomology, and the kernel of the coboundary map is the invariant space.",
+        "S7": "Equality of the negative filtration contributions and vanishing of first-block invariants give the dimension bound used in the determinant."
+      },
+      "step_passages": {
+        "S1": "a2092ef0c4693ff83d75f5c45c9a8feacf96171a3e9642f65afbec3f37ff0ae8",
+        "S2": "b53080faeb8183ad08399b290e88294f9f366abe6db0485b77b31be3c3c387b0",
+        "S3": "7dd862103b811fe55050cbc430e863e60f27400c70af150f206b47c701557d73",
+        "S4": "8360ab63404efe667ce0eb0dd4b792d558c9ec356c98c0046fe9d2919cc6cae0",
+        "S5": "8360ab63404efe667ce0eb0dd4b792d558c9ec356c98c0046fe9d2919cc6cae0",
+        "S6": "d09e5da5506851be0ab4682be18664f5127a9a0b8524ccdc2461a16d5dc21ffb",
+        "S7": "a755604d212d1c39db5461ed707659846bb5113b6d0f87882c4c53627a82e273"
+      }
+    }
+  ]
+}

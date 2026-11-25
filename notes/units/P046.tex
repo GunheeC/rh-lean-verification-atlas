@@ -1,0 +1,12 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit P046. Local manuscript v3, item 7.23, heading on printed PDF p. 88.
+% GlobalTheory.TwV.site_cmpLite_siteAdm
+% paper2/inputs_two.tex:106–111. Verbatim excerpt; SHA-256 6e6e8d8df118eebdeb2aa6aaeb814dba2d37cd377534d85122a511123b39420e.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+\begin{formalstatement}[Comparison and admission on the same chain]\label{pn:P046}
+Assume admission for the specified tied entries when the curve, series, character, local-law and comparison data at each stage are supplied, and existence of the indicated Lubin--Tate curve realization for each eligible inert prime. Fix a tied host, lattice system and kernel, comparison input \(I\), comparison hypotheses \(H\), labels and joint datum. At a place \(w\) of inert residue characteristic \(p\ge5\) outside the level primes, assume the host nonvanishing condition and \(p\nmid T_u\). Suppose \(\mu\) is used, the level-zero stabilizer condition holds, and \(2r_G\le k\). On the chain \(\operatorname{chainAt}(H,h_T)\) the semilinear comparisons satisfy the level-zero identification, kernel, rationality and terminal valuation conditions. The same chain admits a system at the specified place and levels, with its standard coordinates, uniformizer and ramification normalization, and \(d_G(0)=0,\ d_G(j)\le v_p(D_{\Gamma,u})\).
+\end{formalstatement}
+\nodestatus{P046}
+At its immediate proof level this is an assembly: P059 supplies the standard served flag, and P060 supplies joint local and adelic data. The Lean proof then applies entrywise admission to the constructed system and reads its degree bound. For the complete assertion the comparison records must refer to precisely this joint witness.
+The first comparison uses the joint datum at the given site. The second requires one witness with the standard flag, curve, both kernels and the series on that very chain. The blueprint, \bploc{r8:Z4.2.12}, reconstructs the embedding extension and series cancellation. Its outstanding comparisons include the remaining below-terminal series identities, the stabilizer transport and the realizing-polynomial reading. The separately completed comparison of pairings does not establish those assertions. Gross's canonical and quasi-canonical liftings give local formal-module context; they do not identify the selected chain and its two kernels.

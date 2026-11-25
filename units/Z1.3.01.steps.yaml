@@ -1,0 +1,177 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "Z1.3.01",
+  "edition_sha256": "f14c11ce083bcac5222983a1355617611fd42820e01486fa1fea656342c5809a",
+  "note_sha256": "36cbdb0fb6af00b7cea07593cf88e7a512f1cc250e5529112acee26c342bbafb",
+  "statement_sha256": "be5dd5130d92cafc5c6489e772eac8c750a18b4c147e3d3426bc6c9dde265a9f",
+  "sources": [
+    {
+      "path": "notes/blueprint/Z1.3.01.tex",
+      "sha256": "36cbdb0fb6af00b7cea07593cf88e7a512f1cc250e5529112acee26c342bbafb"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Taking the maximum of the finitely many single-symbol thresholds gives one exponent for all weighted symbols and layers.",
+      "kind": "computation",
+      "uses": [
+        "input: single-symbol integral representatives"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Kd.K4.top",
+          "file": "Development/AutomorphicArithmetic/Foundations/IwahoriReduction/NormProducts/AdmissibleWeightedDataMonoCoef.lean",
+          "line0": 148,
+          "line1": 184
+        }
+      ],
+      "source": "notes/blueprint/Z1.3.01.tex",
+      "anchor": "Under the hypotheses of entry~\\ref{r5:map:Z1.3.01}, pick $x_0$ with $c_w(x_0)\\ne0$. The predicate of admissibility for $x$ has a formal $x$ argum",
+      "source_lines": [
+        16,
+        20
+      ],
+      "claim_sha256": "f9acb7d1d97031d11dedbfcee65cd04f09438c00ec9475650cdc701ac1a3691e",
+      "passage_sha256": "47567595bd62a990e3a1f77ccae831fd4a0390b28eb17f1eb99cd67eceb0d69d",
+      "sha256": "8118202f830a89590af8c76d833fa4dbca40575ad073ed54ebf47c43270890c4",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Scaling every representative by the same power of ell increases the common loss and preserves its transition equalities.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "input: uniform projected tame comparison"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Kd.K4.ZetaTop.isZWc_raise",
+          "file": "Development/AutomorphicArithmetic/Foundations/IwahoriReduction/NormProducts/AdmissibleWeightedDataMonoCoef.lean",
+          "line0": 61,
+          "line1": 75
+        }
+      ],
+      "source": "notes/blueprint/Z1.3.01.tex",
+      "anchor": "The projected tame relation produces one exponent $k$ and one exceptional set for the whole family. Multiply every $Y_r$ by $\\ell^k$. This raises",
+      "source_lines": [
+        22,
+        23
+      ],
+      "claim_sha256": "e72bb139e4e6228f9496c6a95aa9e7bf66ffab2d9016ebd6da118d3b32284612",
+      "passage_sha256": "61e0b6c36960b678170af9e4f062b00f56407abf6d668c24c322c393885822cf",
+      "sha256": "2ea2ed6440c50d2f4cf3e8cd00c80346155a655b5267a97e72d0e15d69c504f8",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The single-symbol construction requires actual cocycles with equal pushdowns at every level.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: strict compatible integral representatives"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Kd.K4.ml",
+          "file": "Development/AutomorphicArithmetic/Foundations/IwahoriReduction/NormProducts/Ml.lean",
+          "line0": 21,
+          "line1": 36
+        }
+      ],
+      "source": "notes/blueprint/Z1.3.01.tex",
+      "anchor": "Here one needs a representative for each single symbol at the required",
+      "source_lines": [
+        28,
+        49
+      ],
+      "claim_sha256": "fd7212d66410d3605a097a2793647b927051b88aea101d7bc59f31614b1a7b45",
+      "passage_sha256": "94a8bef92d20c3c7afcb93ff823bbfa35160f98de1f75d241599245080a2b6eb",
+      "sha256": "e5bd6747433f846e0e67f446a88b44dcf97172c2d201314332c2d66ad27746a5",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "A common additional loss and a single exceptional prime set must work over every admitted auxiliary and layer.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S1",
+        "S2",
+        "input: uniform tame control"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Z.Kato.Nb.kato_tame_relation_projected",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/EulerFactorBounds/KatoTameRelationProjected.lean",
+          "line0": 50,
+          "line1": 68
+        }
+      ],
+      "source": "notes/blueprint/Z1.3.01.tex",
+      "anchor": "\\textbf{B02.} The projected tame relation requires one additional loss",
+      "source_lines": [
+        28,
+        49
+      ],
+      "claim_sha256": "83f92a2fba31522c7742489ce537e1dca5ac2c33a269f94836ea6cead54fe79f",
+      "passage_sha256": "94a8bef92d20c3c7afcb93ff823bbfa35160f98de1f75d241599245080a2b6eb",
+      "sha256": "f02f96cb72031cde16ae42ad564f654b47b33e21f29a83b82b5514a6d4174087",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "02fc36375b3a72a4c4801fbae21d39f4be9c2e7709bfe06dbfed6f79bc225ff2",
+      "sources": [
+        {
+          "path": "notes/blueprint/Z1.3.01.tex",
+          "sha256": "18738684945dc5c2ea6963427fea359059cb38dc3cd32dbc1d872427cca76f57"
+        }
+      ],
+      "steps": {
+        "S1": "41b1b61fe560abeda5a6dc9283e0c9297b21b07c99af76f360e9949846b0d311",
+        "S2": "2ea2ed6440c50d2f4cf3e8cd00c80346155a655b5267a97e72d0e15d69c504f8",
+        "S3": "e5bd6747433f846e0e67f446a88b44dcf97172c2d201314332c2d66ad27746a5",
+        "S4": "f02f96cb72031cde16ae42ad564f654b47b33e21f29a83b82b5514a6d4174087"
+      },
+      "step_texts": {
+        "S1": "Taking the maximum of the finitely many single-symbol thresholds gives one exponent for all weighted symbols and layers.",
+        "S2": "Scaling every representative by the same power of ell increases the common loss and preserves its transition equalities.",
+        "S3": "The single-symbol construction requires actual cocycles with equal pushdowns at every level.",
+        "S4": "A common additional loss and a single exceptional prime set must work over every admitted auxiliary and layer."
+      }
+    },
+    {
+      "edition_sha256": "4216b662ecd99b75d3976fa8801c6b2d329ddc6ee1af5527b04e9a6367e5cdd7",
+      "sources": [
+        {
+          "path": "notes/blueprint/Z1.3.01.tex",
+          "sha256": "18738684945dc5c2ea6963427fea359059cb38dc3cd32dbc1d872427cca76f57"
+        }
+      ],
+      "statement_sha256": "be5dd5130d92cafc5c6489e772eac8c750a18b4c147e3d3426bc6c9dde265a9f",
+      "steps": {
+        "S1": "8118202f830a89590af8c76d833fa4dbca40575ad073ed54ebf47c43270890c4",
+        "S2": "2ea2ed6440c50d2f4cf3e8cd00c80346155a655b5267a97e72d0e15d69c504f8",
+        "S3": "e5bd6747433f846e0e67f446a88b44dcf97172c2d201314332c2d66ad27746a5",
+        "S4": "f02f96cb72031cde16ae42ad564f654b47b33e21f29a83b82b5514a6d4174087"
+      },
+      "step_texts": {
+        "S1": "Taking the maximum of the finitely many single-symbol thresholds gives one exponent for all weighted symbols and layers.",
+        "S2": "Scaling every representative by the same power of ell increases the common loss and preserves its transition equalities.",
+        "S3": "The single-symbol construction requires actual cocycles with equal pushdowns at every level.",
+        "S4": "A common additional loss and a single exceptional prime set must work over every admitted auxiliary and layer."
+      },
+      "step_passages": {
+        "S1": "47567595bd62a990e3a1f77ccae831fd4a0390b28eb17f1eb99cd67eceb0d69d",
+        "S2": "61e0b6c36960b678170af9e4f062b00f56407abf6d668c24c322c393885822cf",
+        "S3": "94a8bef92d20c3c7afcb93ff823bbfa35160f98de1f75d241599245080a2b6eb",
+        "S4": "94a8bef92d20c3c7afcb93ff823bbfa35160f98de1f75d241599245080a2b6eb"
+      }
+    }
+  ]
+}

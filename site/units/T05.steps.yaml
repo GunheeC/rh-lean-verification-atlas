@@ -1,0 +1,239 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "T05",
+  "edition_sha256": "b3614bdf4f2166c86c2aa6b65b77ddaa5e6a5f2588edce166a56d46039156e05",
+  "note_sha256": "99d49c3f262df00d8bb774d31253be8cb5cf15864544600e9984ff23883118ee",
+  "statement_sha256": "f3cba2eb9cb9281e1e0963330a1c67ae1b75b5ffe3af6b349b5f71efe1df02ae",
+  "sources": [
+    {
+      "path": "notes/units/T05_round4.md",
+      "sha256": "99d49c3f262df00d8bb774d31253be8cb5cf15864544600e9984ff23883118ee"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The local-Langlands adapter returns the proof of RecTExists already supplied by the third-place record.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "standard: projection from a record"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.Fc.S0.ontoX_and_lamLow_of_unitaryGroupHypotheses'",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SurjectiveAndLowWeightOfUnramifiedExponents.lean",
+          "line0": 16,
+          "line1": 29
+        },
+        {
+          "name": "UpperTheory.One.M.New.llOf_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LlOf.lean",
+          "line0": 18,
+          "line1": 21
+        }
+      ],
+      "source": "notes/units/T05_round4.md",
+      "anchor": "Identify the proof of `RecTExists`.",
+      "source_lines": [
+        20,
+        20
+      ],
+      "claim_sha256": "f48e6f3dc74f81766fe3ed37502403495bdd3d7c830ab02a5bc3631eed7b77d5",
+      "passage_sha256": "4fa1cec5f010375355d091cd88c138b1da6a55940c09bfbada49d6cf3c526190",
+      "sha256": "cab02a00803b771112f690a6b92fbf6d9f1727add967b5db7cb21891b39f3271",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The export, twist, share, bad-place and exponent estimates on the prescribed rows imply the false-side ON bound.",
+      "kind": "assembly",
+      "uses": [
+        "S1"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.BigOn.ontoX_of_hypotheses_alt_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/OntoXOfPrints.lean",
+          "line0": 28,
+          "line1": 45
+        },
+        {
+          "name": "GlobalTheory.BigOn.ontoX_of_twist_shares_exp_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/OntoXOfTwistSharesExp.lean",
+          "line0": 21,
+          "line1": 25
+        },
+        {
+          "name": "GlobalTheory.BigOn.SurjectiveOntoX",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ExportSt.lean",
+          "line0": 47,
+          "line1": 48
+        }
+      ],
+      "source": "notes/units/T05_round4.md",
+      "anchor": "Put the local estimates on the same row.",
+      "source_lines": [
+        22,
+        22
+      ],
+      "claim_sha256": "b10ea714859d687a0dd11d4730bfbca0b18ce43c8438e1b81b81bfb97508256c",
+      "passage_sha256": "82275d838471d9a502d13e3885d4b928036b685702a43a6afbec759ea98e0515",
+      "sha256": "55311f6f212d6d1e4d13a2377319f79fbd8c4a2188bcdc28faf843c2ace287ee",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Fixing the family gives a scale threshold for the size bounds of every column before the point and C are selected.",
+      "kind": "inequality",
+      "uses": [
+        "standard: eventual size bounds"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.BigTop.lamLow_of_hypotheses_alt_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LamLowOfPublished.lean",
+          "line0": 17,
+          "line1": 35
+        }
+      ],
+      "source": "notes/units/T05_round4.md",
+      "anchor": "Fix the family before the lower-weight estimate.",
+      "source_lines": [
+        24,
+        24
+      ],
+      "claim_sha256": "67a2a2454db88c67e2ad27ffc4f9ae2c8ece9b9e252ca41909d9057a2dc699d2",
+      "passage_sha256": "5e71a76a51a9c0ebe12a0c1eb8a891bccd03c71a076fee65e04eb70055e3d655",
+      "sha256": "3fa5042751e78de2986bae174d8e355e04606de55ad15fb07f3dc4dc3919b20d",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "At an admissible point, the real-data estimate uses the hook-log-sum bound and a vanishing error term to give the true-side lower bound for every C.",
+      "kind": "inequality",
+      "uses": [
+        "S3"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.BigTop.lamLow_of_hypotheses_alt_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LamLowOfPublished.lean",
+          "line0": 17,
+          "line1": 35
+        },
+        {
+          "name": "GlobalTheory.BigTop.LambdaLowerBound₂",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/Realised.lean",
+          "line0": 126,
+          "line1": 126
+        }
+      ],
+      "source": "notes/units/T05_round4.md",
+      "anchor": "Apply the real-data estimate at this point.",
+      "source_lines": [
+        26,
+        26
+      ],
+      "claim_sha256": "be8390ed553a0e745f07253235d357df528ac99f1f37d8362abe78f6779dddfa",
+      "passage_sha256": "bb2483822dbeea945a55bbe20aaadc45884e27d5e7bfa4348b11aa6f6edb3e0d",
+      "sha256": "c102e5c4c67ad6af4a2e267ed662bcc2ca272a02bb90e51d021ead41b0801c7e",
+      "ai_review": []
+    },
+    {
+      "id": "S5",
+      "status": "active",
+      "claim": "The surjectivity and lower-weight estimates form the two components of the asserted conjunction.",
+      "kind": "assembly",
+      "uses": [
+        "S2",
+        "S4"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.Fc.S0.ontoX_and_lamLow_of_unitaryGroupHypotheses'",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SurjectiveAndLowWeightOfUnramifiedExponents.lean",
+          "line0": 16,
+          "line1": 29
+        }
+      ],
+      "source": "notes/units/T05_round4.md",
+      "anchor": "The two named suppliers now give a conjunction.",
+      "source_lines": [
+        28,
+        28
+      ],
+      "claim_sha256": "eaa9214c1711742ba0e8b0e9732397db610594b3707baca09589bf20d6269501",
+      "passage_sha256": "6c4e85766edcda2671edec972eddfcb3a7be66e8315a90be435883fee6e6c378",
+      "sha256": "182fe051eeff5b5e5931c39c006c0bc087941f32300819c7a8dc51117a67bbf2",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "5948e9011c9ce9693307c480821581520dfd6dbc54fbbd526e4393a495a5dd69",
+      "sources": [
+        {
+          "path": "notes/units/T05_round4.md",
+          "sha256": "d9c1bb4f00e61958ea620a47a4c3ef7cb85ee896b0d138bb36315abd6442ea8f"
+        }
+      ],
+      "statement_sha256": "f3cba2eb9cb9281e1e0963330a1c67ae1b75b5ffe3af6b349b5f71efe1df02ae",
+      "steps": {
+        "S1": "5f12f6695f727f30af96a39017c4ccea9828b9fcb68dc755e83ab7ce4b2dd40a",
+        "S2": "6085ed73f5cad45321d8f415d8061c0e704bf29dcf26aff67f76cf493fa16f58",
+        "S3": "ac0892328e9c9bdd032d158d4bf3ae4d5be51bce64ba5f769ae6f092ba501723",
+        "S4": "bc22836673761d3565e36b54c628b3e3685180463964b5cb92d23a553da8b9d2",
+        "S5": "691eb7a2b5baf192d7ceab96982aa1bcbf9b8979dc94a10b5068512cb5aaafaa"
+      },
+      "step_texts": {
+        "S1": "The local-Langlands adapter returns the reciprocity system already supplied by the third-place record.",
+        "S2": "The export, twist, share, bad-place and exponent estimates on the prescribed rows imply the false-side ON bound.",
+        "S3": "Fixing the family gives a scale threshold for the size bounds of every column before the point and C are selected.",
+        "S4": "At an admissible point, the real-data estimate uses the hook-log-sum bound and a vanishing error term to give the true-side lower bound for every C.",
+        "S5": "The two estimates form the claimed pair. T02 uses the second component for the Fourier fit and T03 uses both for all rows."
+      },
+      "step_passages": {
+        "S1": "4c04e2eea42e8053d0f15bf490b79daf112948423ef811c56df4b7cbf6327685",
+        "S2": "4c04e2eea42e8053d0f15bf490b79daf112948423ef811c56df4b7cbf6327685",
+        "S3": "4c04e2eea42e8053d0f15bf490b79daf112948423ef811c56df4b7cbf6327685",
+        "S4": "4c04e2eea42e8053d0f15bf490b79daf112948423ef811c56df4b7cbf6327685",
+        "S5": "4c04e2eea42e8053d0f15bf490b79daf112948423ef811c56df4b7cbf6327685"
+      }
+    },
+    {
+      "edition_sha256": "b4f04a60af7229c9e12a08999c4a45550f04ca3799e744fad2bc01674ca806db",
+      "sources": [
+        {
+          "path": "notes/units/T05_round4.md",
+          "sha256": "b0690570cc842795b3410aebbaaed9ba1eade4afa5ac80d4edffc3971f82215b"
+        }
+      ],
+      "statement_sha256": "f3cba2eb9cb9281e1e0963330a1c67ae1b75b5ffe3af6b349b5f71efe1df02ae",
+      "steps": {
+        "S1": "721d6c6cf5d89650459227860caf75e9527d5d55fc6b0c111d4eef802ce8f66c",
+        "S2": "1581dbd71ec70bcd8f9852c7f3e740e1c88de1c1414c3b2ff98fe99a8c66a0a6",
+        "S3": "3fa5042751e78de2986bae174d8e355e04606de55ad15fb07f3dc4dc3919b20d",
+        "S4": "c102e5c4c67ad6af4a2e267ed662bcc2ca272a02bb90e51d021ead41b0801c7e",
+        "S5": "182fe051eeff5b5e5931c39c006c0bc087941f32300819c7a8dc51117a67bbf2"
+      },
+      "step_texts": {
+        "S1": "The local-Langlands adapter returns the reciprocity system already supplied by the third-place record.",
+        "S2": "The export, twist, share, bad-place and exponent estimates on the prescribed rows imply the false-side ON bound.",
+        "S3": "Fixing the family gives a scale threshold for the size bounds of every column before the point and C are selected.",
+        "S4": "At an admissible point, the real-data estimate uses the hook-log-sum bound and a vanishing error term to give the true-side lower bound for every C.",
+        "S5": "The surjectivity and lower-weight estimates form the two components of the asserted conjunction."
+      },
+      "step_passages": {
+        "S1": "5d0f5c89b0ff7b0fda2f176717e6f27fcedead0cf13c30c4c74514dafa1d50d6",
+        "S2": "1e9f0a513db710697fcd87baf189bf59dfe12651f3b33f69ac2cd02271c83455",
+        "S3": "5e71a76a51a9c0ebe12a0c1eb8a891bccd03c71a076fee65e04eb70055e3d655",
+        "S4": "bb2483822dbeea945a55bbe20aaadc45884e27d5e7bfa4348b11aa6f6edb3e0d",
+        "S5": "6c4e85766edcda2671edec972eddfcb3a7be66e8315a90be435883fee6e6c378"
+      }
+    }
+  ]
+}

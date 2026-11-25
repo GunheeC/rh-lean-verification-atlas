@@ -1,0 +1,175 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "D123",
+  "edition_sha256": "b7cc0063389498fdfb2854ec1e5105779c7a4946520408b9a4306e3c1c529b88",
+  "note_sha256": "e9d840526cfbfd6d42ffcc2e0a7364504a7a2661d0009bee77f3e5ba906d8f4c",
+  "statement_sha256": "571a9b507e51de685202d0c8dfa7bd2174bd4a63df1dd8b80483f9291d5975e5",
+  "sources": [
+    {
+      "path": "notes/units/D123_round4.md",
+      "sha256": "e9d840526cfbfd6d42ffcc2e0a7364504a7a2661d0009bee77f3e5ba906d8f4c"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The flat generator and its local norm comparisons specify the single logarithmic norm system whose adelicity and degree are sought.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: CM frame and assigned local norms"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.CompanionTheory.Ar.Fl.FlatDegree",
+          "file": "Development/AutomorphicSpectrum/Statements/GeometryStatements/FlatDegree.lean",
+          "line0": 12,
+          "line1": 19
+        }
+      ],
+      "source": "notes/units/D123_round4.md",
+      "anchor": "Fix the moduli datum, its chosen uniformized family and index, the open set, embedding and",
+      "source_lines": [
+        22,
+        22
+      ],
+      "claim_sha256": "ff0d00fc61ded8625628766efbfebd430feb44f561b9c754221190884c509f61",
+      "passage_sha256": "2f05f27c63cae5e9bafc2e270072dbd0ace541d8e25012122b54b590a92419e7",
+      "sha256": "fcb3caff8390bae1e7df5797945ddabf8252bd33846e4471f7bfbd01badb1631",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Passing to the common number field preserves the normalized archimedean mean for each of the two periods.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "input: CM period comparison"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.CompanionTheory.Ar.Fl.flatDegree",
+          "file": "Development/AutomorphicSpectrum/Proofs/GeometryProofs/FlatDegreeHolds.lean",
+          "line0": 60,
+          "line1": 89
+        },
+        {
+          "name": "GlobalTheory.CompanionTheory.Ar.Fl.flatDegree_mean_ext",
+          "file": "Development/AutomorphicSpectrum/Proofs/GeometryProofs/FlatDegreeHolds.lean",
+          "line0": 21,
+          "line1": 28
+        }
+      ],
+      "source": "notes/units/D123_round4.md",
+      "anchor": "The signs of the square root give two CM period data",
+      "source_lines": [
+        26,
+        26
+      ],
+      "claim_sha256": "11120a9b708684831b7e740f7da2d4cc42dc827617272813553208574f3576a2",
+      "passage_sha256": "1ef3d85d14849c1f85ff572566d096518bbb412e8fc26d605a0117663fc85167",
+      "sha256": "abbdee1254f1d3fc84f481e382bc55b48b74a67de8304344610bf06ff8f0165b",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The finite logarithmic norms vanish outside the exceptional primes of the Gram comparison.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S1",
+        "input: local Gram determinant"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.CompanionTheory.Ar.Fl.flatDegree",
+          "file": "Development/AutomorphicSpectrum/Proofs/GeometryProofs/FlatDegreeHolds.lean",
+          "line0": 74,
+          "line1": 113
+        },
+        {
+          "name": "GlobalTheory.CompanionTheory.Ar.Fl.flatDegree_sum_conj",
+          "file": "Development/AutomorphicSpectrum/Proofs/GeometryProofs/FlatDegreeHolds.lean",
+          "line0": 30,
+          "line1": 39
+        }
+      ],
+      "source": "notes/units/D123_round4.md",
+      "anchor": "For each prime the frame-height comparison supplies a local factor",
+      "source_lines": [
+        30,
+        30
+      ],
+      "claim_sha256": "0282ee79fa39617d9bf4bb72cc99a5e6d2562c1da89a86c5b8f5ddbcdeca5a9d",
+      "passage_sha256": "c562f01e85f6d5ca383e94675e29c5ddb909240511101c9e0e67443196e9fdf1",
+      "sha256": "310e107e959557af1e23e13639048c9866b4717f086cd5baae44abbf0960727f",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "Descent of normalized degree and adelicity recovers the stated value on the original coefficient field.",
+      "kind": "assembly",
+      "uses": [
+        "S2",
+        "S3",
+        "input: Hermitian norm formula"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.CompanionTheory.Ar.Fl.flatDegree_logOm_re",
+          "file": "Development/AutomorphicSpectrum/Proofs/GeometryProofs/FlatDegreeHolds.lean",
+          "line0": 41,
+          "line1": 58
+        },
+        {
+          "name": "GlobalTheory.CompanionTheory.Ar.Fl.flatDegree",
+          "file": "Development/AutomorphicSpectrum/Proofs/GeometryProofs/FlatDegreeHolds.lean",
+          "line0": 95,
+          "line1": 118
+        }
+      ],
+      "source": "notes/units/D123_round4.md",
+      "anchor": "Over $k$ the metric formula gives an adelic system together with its degree",
+      "source_lines": [
+        34,
+        34
+      ],
+      "claim_sha256": "171394a71c973c974e58e7a83690526cb687ea512dd1c69b3226b1ceaeb13656",
+      "passage_sha256": "338779e5a55a7c6326592db7c54d51e6287f64944ce2db7bcce52bdef19c6b94",
+      "sha256": "23a3bdc1ed507dcf8ab0d6bf655afed99260f93cfc2d37847a25bda5224220db",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "06f1e62caa20100350d6a1c4d022a0a3a622d5d835d5f333012f4a8692308c79",
+      "sources": [
+        {
+          "path": "notes/units/D123_round4.md",
+          "sha256": "0f0b7c785bffe2e6db7830c47a018df7674b086c9831fdcd8192a3a406facc3b"
+        }
+      ],
+      "statement_sha256": "571a9b507e51de685202d0c8dfa7bd2174bd4a63df1dd8b80483f9291d5975e5",
+      "steps": {
+        "S1": "fcb3caff8390bae1e7df5797945ddabf8252bd33846e4471f7bfbd01badb1631",
+        "S2": "abbdee1254f1d3fc84f481e382bc55b48b74a67de8304344610bf06ff8f0165b",
+        "S3": "310e107e959557af1e23e13639048c9866b4717f086cd5baae44abbf0960727f",
+        "S4": "23a3bdc1ed507dcf8ab0d6bf655afed99260f93cfc2d37847a25bda5224220db"
+      },
+      "step_texts": {
+        "S1": "The flat generator and its local norm comparisons specify the single logarithmic norm system whose adelicity and degree are sought.",
+        "S2": "Passing to the common number field preserves the normalized archimedean mean for each of the two periods.",
+        "S3": "The finite logarithmic norms vanish outside the exceptional primes of the Gram comparison.",
+        "S4": "Descent of normalized degree and adelicity recovers the stated value on the original coefficient field."
+      },
+      "step_passages": {
+        "S1": "2f05f27c63cae5e9bafc2e270072dbd0ace541d8e25012122b54b590a92419e7",
+        "S2": "1ef3d85d14849c1f85ff572566d096518bbb412e8fc26d605a0117663fc85167",
+        "S3": "c562f01e85f6d5ca383e94675e29c5ddb909240511101c9e0e67443196e9fdf1",
+        "S4": "338779e5a55a7c6326592db7c54d51e6287f64944ce2db7bcce52bdef19c6b94"
+      }
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "D154",
+  "edition_sha256": "2abee259c77d02ec8b946dbeb678b683fef2de6e2f75479cea975b92295df13a",
+  "note_sha256": "40d04567ce9c7b0a1830293035d5746d36c43f2d7d450098cdd8082e6046de8d",
+  "statement_sha256": "bf494b1c624c1c82fd20ec4c0b93d298cf0d91bfe5cac541602c9e64ecd8e8d3",
+  "sources": [
+    {
+      "path": "notes/units/D154_round4.md",
+      "sha256": "40d04567ce9c7b0a1830293035d5746d36c43f2d7d450098cdd8082e6046de8d"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Fixing the first block lowers the block count from e+2 to e+1, the count required for the component forms.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: projective prime and Chow forms"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.Published.ChowFormHyperplaneSection",
+          "file": "Development/AbelianVarietyTheory/PublishedTheorems/Divisors₂/IsMultiHomogeneousFixFirstBlock.lean",
+          "line0": 122,
+          "line1": 132
+        }
+      ],
+      "source": "notes/units/D154_round4.md",
+      "anchor": "Take a characteristic-zero field and a homogeneous prime $P$ in a polynomial ring on $N$ v",
+      "source_lines": [
+        22,
+        22
+      ],
+      "claim_sha256": "cd434550326ffcb759a6003d16bd5af914538011fcd05e927e381dd10058a286",
+      "passage_sha256": "fece5f1f1bade20ecf9755f39e97a0b54cd7b16af6cf3ef019708631aa5fad01",
+      "sha256": "1fe525e6833575ef49af3514df79b427efa655db1574f331bd098e5d2b45cc18",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The hyperplane's nonmembership gives projective relevance, allowing the section theorem to factor the specialized form.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S1",
+        "input: geometric section theorem"
+      ],
+      "lean": [
+        {
+          "name": "ChowFormCompatibility.chow_form_hyperplane_section",
+          "file": "Development/WeilBound/CoreStatements/NefModelVolumes/ChowFormHyperplaneSection.lean",
+          "line0": 12,
+          "line1": 24
+        },
+        {
+          "name": "ChowFormCompatibility.chow_form_of_integral_version",
+          "file": "Development/WeilBound/CoreStatements/NefModelVolumes/ChowFormOfIntegralVersion.lean",
+          "line0": 8,
+          "line1": 13
+        }
+      ],
+      "source": "notes/units/D154_round4.md",
+      "anchor": "First prove relevance",
+      "source_lines": [
+        26,
+        26
+      ],
+      "claim_sha256": "5117918cb4b9a15d21f4aa818be724a53711a42fb6a577ecf2f3d3786d4e0089",
+      "passage_sha256": "e3c36d58ef34ac9f88fbfd100a5e76886bb3003cd00d080c2d9059e130e3c283",
+      "sha256": "6e88f9bca95de1f12afe759d9f091092c2c9f875e2e6fc279fa639e533950c0d",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The projective section cycle and divisor cycle assign the same coefficient to each prime component.",
+      "kind": "computation",
+      "uses": [
+        "S2",
+        "standard: local multiplicities"
+      ],
+      "lean": [
+        {
+          "name": "ChowFormCompatibility.projCycle_eq_fundCycle",
+          "file": "Development/WeilBound/CoreStatements/NefModelVolumes/HyperplaneSectionDivCycle.lean",
+          "line0": 8,
+          "line1": 20
+        },
+        {
+          "name": "ChowFormCompatibility.hyperplane_section_divCycle",
+          "file": "Development/WeilBound/CoreStatements/NefModelVolumes/HyperplaneSectionDivCycle.lean",
+          "line0": 22,
+          "line1": 34
+        }
+      ],
+      "source": "notes/units/D154_round4.md",
+      "anchor": "There are two definitions of the cycle",
+      "source_lines": [
+        30,
+        30
+      ],
+      "claim_sha256": "6847c36d58792d47462b617725c3a3d6ec05ca1258b2e41221b19446e1748505",
+      "passage_sha256": "021a186d08801c7beb7faf27e7f00b74675237978e3813523ef1873f7c28675b",
+      "sha256": "c76979978f9de827fb6fedce95c4b1e859e2fa4c9af202cb30ef21128e6779e9",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "If a component form changes by a scalar a, its contribution changes the total scalar by a raised to its multiplicity.",
+      "kind": "assembly",
+      "uses": [
+        "S2",
+        "S3",
+        "standard: polynomial units"
+      ],
+      "lean": [
+        {
+          "name": "ChowFormCompatibility.chow_form_unique_up_to_constant",
+          "file": "Development/WeilBound/CoreStatements/NefModelVolumes/ChowFormUniqueUpToConstant.lean",
+          "line0": 8,
+          "line1": 15
+        },
+        {
+          "name": "ChowFormCompatibility.chow_form_hyperplane_section",
+          "file": "Development/WeilBound/CoreStatements/NefModelVolumes/ChowFormHyperplaneSection.lean",
+          "line0": 25,
+          "line1": 38
+        }
+      ],
+      "source": "notes/units/D154_round4.md",
+      "anchor": "For each component the two candidate Chow forms divide one another",
+      "source_lines": [
+        34,
+        34
+      ],
+      "claim_sha256": "7b573a06fbba194ef193ca00a94861023b813bd4590f48598c03c61e57f72d40",
+      "passage_sha256": "890d146925528df1ba86d6a0c302c2d8c6006408907e74cad536260b47ffed86",
+      "sha256": "655da767a3a27be55ee492905f4a58aa917082d8fd10ce3c4b82a4a5c80503f2",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "e41b670c0b08feac6381f930cb6c263739ce31ba90542cd7ae76d255ba0edbdc",
+      "sources": [
+        {
+          "path": "notes/units/D154_round4.md",
+          "sha256": "049ed833e24b5dd18100b7d486d3b289e21a33fc1760a0cbf875bf90c7769a32"
+        }
+      ],
+      "statement_sha256": "bf494b1c624c1c82fd20ec4c0b93d298cf0d91bfe5cac541602c9e64ecd8e8d3",
+      "steps": {
+        "S1": "1fe525e6833575ef49af3514df79b427efa655db1574f331bd098e5d2b45cc18",
+        "S2": "6e88f9bca95de1f12afe759d9f091092c2c9f875e2e6fc279fa639e533950c0d",
+        "S3": "c76979978f9de827fb6fedce95c4b1e859e2fa4c9af202cb30ef21128e6779e9",
+        "S4": "655da767a3a27be55ee492905f4a58aa917082d8fd10ce3c4b82a4a5c80503f2"
+      },
+      "step_texts": {
+        "S1": "Fixing the first block lowers the block count from e+2 to e+1, the count required for the component forms.",
+        "S2": "The hyperplane's nonmembership gives projective relevance, allowing the section theorem to factor the specialized form.",
+        "S3": "The projective section cycle and divisor cycle assign the same coefficient to each prime component.",
+        "S4": "If a component form changes by a scalar a, its contribution changes the total scalar by a raised to its multiplicity."
+      },
+      "step_passages": {
+        "S1": "fece5f1f1bade20ecf9755f39e97a0b54cd7b16af6cf3ef019708631aa5fad01",
+        "S2": "e3c36d58ef34ac9f88fbfd100a5e76886bb3003cd00d080c2d9059e130e3c283",
+        "S3": "021a186d08801c7beb7faf27e7f00b74675237978e3813523ef1873f7c28675b",
+        "S4": "890d146925528df1ba86d6a0c302c2d8c6006408907e74cad536260b47ffed86"
+      }
+    }
+  ]
+}

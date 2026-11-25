@@ -1,0 +1,33 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit W11. Local manuscript v3, item 5.47, heading on printed PDF p. 52.
+% UpperTheory.V.FW.ferreroWashington
+% paper2/split_p013.tex:222–242. Verbatim excerpt; SHA-256 a37ac69ea254fc931cf811151c14e3ebf4ff007d0ddd54c2ccc948119a96d6dd.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+\noindent\nolinkurl{UpperTheory.V.FW.ferreroWashington} --- in-repo constant (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/FerreroWashingtonIndex/FerreroWashington.lean:104--119}); variant.\par
+% End of atlas edition annotation.
+
+\begin{formalstatement}[Bounded class-group ranks in cyclotomic layers]\label{sub:W11}
+Let $\ell$ be any prime and $K/\mathbb Q$ a finite abelian extension
+containing $\mu_\ell$ for odd $\ell$, or $\mu_4$ for $\ell=2$. There
+is an integer $r\ge0$ such that for every $n\ge0$ and every model
+$K'$ of $K(\mu_{\ell^n})$ over $K$,
+\[
+    \big|\operatorname{Cl}(K')/\operatorname{Cl}(K')^\ell\big|\le\ell^r .
+\]
+\end{formalstatement}\subnode{W11}
+Ferrero and Washington give $\mu=0$ for the cyclotomic
+$\mathbb Z_\ell$-extension of an abelian field. Washington's
+Theorem~7.15 states this for every prime and Proposition~13.23 identifies
+$\mu=0$ with bounded $\ell$-ranks of the layer class groups. The
+roots-of-unity hypothesis places each $K'$ in this tower, and the
+dimension of the displayed quotient over $\mathbb F_\ell$ is exactly
+that rank. The closed term \nolinkurl{UpperTheory.V.FW.ferreroWashington}
+constructs a single bound from its embedding, cyclotomic-layer and descent
+estimates, then applies it to each $n$ and $K'$.
+\path{FerreroWashingtonIndex/FerreroWashington.lean:104--119}.
+\href{https://doi.org/10.1007/978-1-4612-1934-7}{Washington, §§7.5 and 13.4}~\cite{r21-washington} and
+\href{https://doi.org/10.2307/1971116}{Ferrero--Washington (1979).}~\cite{r21-fw}

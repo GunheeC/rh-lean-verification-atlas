@@ -1,0 +1,161 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "D097",
+  "edition_sha256": "b363b3761d744eaa02b998d07b511ef1f10b3237d784599a9e98785f894aa3d3",
+  "note_sha256": "d72b0c536e52b6dd3efef287d6a4c3fefce130fd1b05ffafec5da0a18a37f4f7",
+  "statement_sha256": "057547ce40e374ecef3231646bfbabe71368cdd4d98a27dee8c47614f35f3dfe",
+  "sources": [
+    {
+      "path": "notes/units/D097_round4.md",
+      "sha256": "d72b0c536e52b6dd3efef287d6a4c3fefce130fd1b05ffafec5da0a18a37f4f7"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The saturated ideal consists of elements sent into the ordinary ideal by some power of the designated element.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: ordinary datum and universal object"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.T.saturatedOrdinaryIdeal_cuts_out_crystalline_locus",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CrystallineOrdinaryIdeals/SaturatedOrdinaryIdealCutsOutCrystallineLocusStatement.lean",
+          "line0": 6,
+          "line1": 7
+        },
+        {
+          "name": "UpperTheory.V.Loc.Dat3.IY",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/IsInertiaInfiniteCyclotomic.lean",
+          "line0": 112,
+          "line1": 126
+        }
+      ],
+      "source": "notes/units/D097_round4.md",
+      "anchor": "Fix the ideal before choosing a point",
+      "source_lines": [
+        13,
+        13
+      ],
+      "claim_sha256": "16bc4f0022bc43e1d4482a046891ed3c20ff58a028569161b1d3af61a54536e0",
+      "passage_sha256": "fb67bf0fb24d70bef8fef4f1c4d0c20695e52164387f28d244d597ae8de5180b",
+      "sha256": "769bfed7a912363434f7ee522e4617a56c0d1d8bf46b5930a620639092aba536",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "Any compatible finite-algebra specialization killing that ideal induces the required locally crystalline representation.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S1",
+        "input: crystalline point theorem"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Loc.Dat3.PtsCr",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/IsInertiaInfiniteCyclotomic.lean",
+          "line0": 140,
+          "line1": 143
+        },
+        {
+          "name": "GlobalTheory.OrdLoc.ptsCr_IY",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CrystallineOrdinaryIdeals/SaturatedOrdIdealPointsIsLCrystalline.lean",
+          "line0": 17,
+          "line1": 50
+        }
+      ],
+      "source": "notes/units/D097_round4.md",
+      "anchor": "Go from the ideal to a crystalline point",
+      "source_lines": [
+        17,
+        17
+      ],
+      "claim_sha256": "e526de5bd272b6e851ab115daeed6e0de8ab2a2a97311a9b392cf98e938b7daf",
+      "passage_sha256": "d0eadab31ca5eb42177672aacac9a9abc19d494ab7fba14fdb0025f10f39934d",
+      "sha256": "c2a282c56f77868d00b4b36863d60c30c82027c730525a25da75061e776997f3",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "For the specified nilpotent-kernel test on a crystalline lift, the saturated ideal lies in the kernel of the original specialization.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S1",
+        "input: crystalline Artinian test theorem"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Loc.Dat3.CrPts",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/PadicHodgeTheory/IsInertiaInfiniteCyclotomic.lean",
+          "line0": 145,
+          "line1": 151
+        },
+        {
+          "name": "GlobalTheory.OrdLoc.crPts_IY",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CrystallineOrdinaryIdeals/CrystallinePointsSaturatedOrdinaryIdealArtinian.lean",
+          "line0": 116,
+          "line1": 164
+        },
+        {
+          "name": "GlobalTheory.OrdLoc.ideal_cuts_crystalline_locus",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CrystallineOrdinaryIdeals/SaturatedOrdinaryIdealCutsOutCrystallineLocus.lean",
+          "line0": 9,
+          "line1": 14
+        },
+        {
+          "name": "GlobalTheory.OrdLoc.CriticalPoints.reduce",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CrystallineOrdinaryIdeals/CrystallinePointsSaturatedOrdinaryIdealArtinian.lean",
+          "line0": 35,
+          "line1": 110
+        },
+        {
+          "name": "GlobalTheory.T.crystallineDeformation_points_saturatedOrdinaryIdeal_fracO",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/CrystallineOrdinaryIdeals/CrystallineDeformationPointsSaturatedOrdinaryIdeStatement.lean",
+          "line0": 6,
+          "line1": 7
+        }
+      ],
+      "source": "notes/units/D097_round4.md",
+      "anchor": "The descent in `reduce` is the substantive reverse implication.",
+      "source_lines": [
+        27,
+        27
+      ],
+      "claim_sha256": "ffc091d0f7421e4769d8f008f12eee552c14611a1a3fc3cd0f904b6abb6ede2d",
+      "passage_sha256": "6c31ee6c8b5245128b982f91bafffff2a15761872867065592af1459c54cf9eb",
+      "sha256": "9977de0c02f5ce8b629ac4a3a00781c924d7fba77aef672dcab30f9c6c4e7e30",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "dd306f830caa8eb9d3605fbdb88f6ddc5913e8bf59617dcd85aa10da4bdf6b41",
+      "sources": [
+        {
+          "path": "notes/units/D097_round4.md",
+          "sha256": "90576103528ab920ac83a22be99292deea5da14742a681daa9720b7ff9d34721"
+        }
+      ],
+      "statement_sha256": "057547ce40e374ecef3231646bfbabe71368cdd4d98a27dee8c47614f35f3dfe",
+      "steps": {
+        "S1": "769bfed7a912363434f7ee522e4617a56c0d1d8bf46b5930a620639092aba536",
+        "S2": "c2a282c56f77868d00b4b36863d60c30c82027c730525a25da75061e776997f3",
+        "S3": "6b0ec268d350cd432fb32db25329164800f5b638f834835661dca5331a2309df"
+      },
+      "step_texts": {
+        "S1": "The saturated ideal consists of elements sent into the ordinary ideal by some power of the designated element.",
+        "S2": "Any compatible finite-algebra specialization killing that ideal induces the required locally crystalline representation.",
+        "S3": "For the specified nilpotent-kernel test on a crystalline lift, the saturated ideal lies in the kernel of the original specialization."
+      },
+      "step_passages": {
+        "S1": "fb67bf0fb24d70bef8fef4f1c4d0c20695e52164387f28d244d597ae8de5180b",
+        "S2": "d0eadab31ca5eb42177672aacac9a9abc19d494ab7fba14fdb0025f10f39934d",
+        "S3": "12e211573006e436cc76b1d720feecd2736da694daa89307015a72cdfbe9d3b6"
+      }
+    }
+  ]
+}

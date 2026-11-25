@@ -1,0 +1,195 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "P020",
+  "edition_sha256": "bc0c17bf1deb3c8d4648e5ecbe44d09c4b3881e6dd5b88b3c000728675285880",
+  "note_sha256": "86d76950ed08e5ac64373847288892e63f5c16423d2386973dfd9bf7a1593224",
+  "statement_sha256": "4ecc9afc961360b1ab9b96644e017d0b9b8bdc913064fce653e1f8330caca8d5",
+  "sources": [
+    {
+      "path": "notes/units/P020.tex",
+      "sha256": "b7bd6f2040c409a88c2fd0224c6701e5086ff2208d84142964c4ce1acb40e365"
+    },
+    {
+      "path": "notes/galois/excerpt.tex",
+      "sha256": "8a5cd48b8612ff0278bd1e915d36fb96e1db086d5bd9cc54663454885110b396"
+    },
+    {
+      "path": "notes/galois/README.md",
+      "sha256": "bf5e2edb3a6c964e102cfb8e799ce4a4b1d8cecb7c304a5591e66cbd47cd8318"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The common interval supports the submitted count bounds on one family.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "W13",
+        "input: duality with local conditions"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.HV.Core.of_four_alt",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/HVCore.lean",
+          "line0": 18,
+          "line1": 22
+        }
+      ],
+      "source": "notes/units/P020.tex",
+      "anchor": "The assembly in blueprint Chapter~S, \\emph{Assembly}~\\bploc{sec:S-assembly}, uses Poitou--Tate, local finiteness, local Tate duality, the uniform",
+      "source_lines": [
+        17,
+        24
+      ],
+      "claim_sha256": "dd3a04e400fd16b82b911b9d929e3b7bbc85f2b5ccdfa970ed71205be6d5b82b",
+      "passage_sha256": "92c3d82d783244d4a2ef6961e26cbd29ade566a9b97861f93bf41acbbc9e80ed",
+      "sha256": "f058c7b418f03c7e647932df5524c8394051b0c64c23094184aaa81e9758f337",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "At an odd prime the two idempotents split the stable localization kernel, with plus sign determined by the twist.",
+      "kind": "computation",
+      "uses": [
+        "standard: eigenspaces of an involution"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.vvle_of_parts",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/LengthEqAddEigen.lean",
+          "line0": 127,
+          "line1": 189
+        }
+      ],
+      "source": "notes/galois/excerpt.tex",
+      "anchor": "its two eigenspaces. The eigenvalue $(-1)^e$ is called \\emph{plus}: for the positive twists $e>0$ in the sum, in terms of the characters $\\chi$ o",
+      "source_lines": [
+        159,
+        163
+      ],
+      "claim_sha256": "bd2e84d4820b271c2b4ae1caa14652df3cfad107ed33bf827c64572ea586f70c",
+      "passage_sha256": "4c12eef4f41b33cdf58d387bf1434a1a86d21b68c5fa584686a9d0bb8ef82f8a",
+      "sha256": "7aff9e95f8cbc87f86e23bb35ce326e688f30133cae0e3bd4c5e410b1bff1acf",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The weighted full bound is the sum of the two odd-sign budgets and log 2 times the two-adic budget.",
+      "kind": "inequality",
+      "uses": [
+        "S2",
+        "input: two-adic and odd-sign budgets"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.vvle_of_parts",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/LengthEqAddEigen.lean",
+          "line0": 127,
+          "line1": 189
+        }
+      ],
+      "source": "notes/galois/excerpt.tex",
+      "anchor": "$\\mathrm{VVle}(E,t,\\ B_2\\log 2+B_-+B_+)$.",
+      "source_lines": [
+        197,
+        212
+      ],
+      "claim_sha256": "668f6f60243b079d1c91814461bceaa452bf661d3f1a5313dae97835c1340e10",
+      "passage_sha256": "3fc2b6b800bf95a57ce0c2fe15dd8e8557a46f194db16eed9d4444ebe8259593",
+      "sha256": "4da822b80f31dbf99169a79b0148efc9dcce77c22736eda73d5526227a2c0db6",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The eigenspace recombination uses an involution preserving the module and requires two to be a unit at each odd prime.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "S2",
+        "S3"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.vvle_of_parts",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/LengthEqAddEigen.lean",
+          "line0": 127,
+          "line1": 189
+        }
+      ],
+      "source": "notes/galois/README.md",
+      "anchor": "**Scope and prerequisites.** For the splitting argument the operator squares to the identity, the submodule is stable under it, and 2 is a unit. ",
+      "source_lines": [
+        13,
+        13
+      ],
+      "claim_sha256": "1cb0a4726e53a2afbdb2e244abe6b2655e61f3e99b90042d016ac4badb75034f",
+      "passage_sha256": "b097b7122a34c8543472716f096cf7b147f10700b31e6182202b991cfae15f7f",
+      "sha256": "c272ad2caddbe985364e2c2f28eccfe2b18344993b18a6ed8c3a559c86873032",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "a3b60666e19af349140bc65b154b0641b3fc14cd8e77efbd370619ba77e89bec",
+      "sources": [
+        {
+          "path": "notes/units/P020.tex",
+          "sha256": "07f0a8a72fd32e8b96d42a235988d0d9ca6b2aeed29c72512cf21e350ed954d9"
+        },
+        {
+          "path": "notes/galois/excerpt.tex",
+          "sha256": "0fd5b73a491fd49f12da3f054ad373b506e667f257fe845457793d48c878b6e2"
+        }
+      ],
+      "steps": {
+        "S1": "f058c7b418f03c7e647932df5524c8394051b0c64c23094184aaa81e9758f337",
+        "S2": "7aff9e95f8cbc87f86e23bb35ce326e688f30133cae0e3bd4c5e410b1bff1acf",
+        "S3": "4da822b80f31dbf99169a79b0148efc9dcce77c22736eda73d5526227a2c0db6"
+      },
+      "step_texts": {
+        "S1": "The common interval supports the submitted count bounds on one family.",
+        "S2": "At an odd prime the two idempotents split the stable localization kernel, with plus sign determined by the twist.",
+        "S3": "The weighted full bound is the sum of the two odd-sign budgets and log 2 times the two-adic budget."
+      }
+    },
+    {
+      "edition_sha256": "0f6fefd472bc04071036211c3a011a9ee5bc11c73cd816edf3a7a3e16cd1bda3",
+      "sources": [
+        {
+          "path": "notes/units/P020.tex",
+          "sha256": "07f0a8a72fd32e8b96d42a235988d0d9ca6b2aeed29c72512cf21e350ed954d9"
+        },
+        {
+          "path": "notes/galois/excerpt.tex",
+          "sha256": "0fd5b73a491fd49f12da3f054ad373b506e667f257fe845457793d48c878b6e2"
+        },
+        {
+          "path": "notes/galois/README.md",
+          "sha256": "bf5e2edb3a6c964e102cfb8e799ce4a4b1d8cecb7c304a5591e66cbd47cd8318"
+        }
+      ],
+      "statement_sha256": "4ecc9afc961360b1ab9b96644e017d0b9b8bdc913064fce653e1f8330caca8d5",
+      "steps": {
+        "S1": "f058c7b418f03c7e647932df5524c8394051b0c64c23094184aaa81e9758f337",
+        "S2": "7aff9e95f8cbc87f86e23bb35ce326e688f30133cae0e3bd4c5e410b1bff1acf",
+        "S3": "4da822b80f31dbf99169a79b0148efc9dcce77c22736eda73d5526227a2c0db6",
+        "S4": "c272ad2caddbe985364e2c2f28eccfe2b18344993b18a6ed8c3a559c86873032"
+      },
+      "step_texts": {
+        "S1": "The common interval supports the submitted count bounds on one family.",
+        "S2": "At an odd prime the two idempotents split the stable localization kernel, with plus sign determined by the twist.",
+        "S3": "The weighted full bound is the sum of the two odd-sign budgets and log 2 times the two-adic budget.",
+        "S4": "The eigenspace recombination uses an involution preserving the module and requires two to be a unit at each odd prime."
+      },
+      "step_passages": {
+        "S1": "92c3d82d783244d4a2ef6961e26cbd29ade566a9b97861f93bf41acbbc9e80ed",
+        "S2": "4c12eef4f41b33cdf58d387bf1434a1a86d21b68c5fa584686a9d0bb8ef82f8a",
+        "S3": "3fc2b6b800bf95a57ce0c2fe15dd8e8557a46f194db16eed9d4444ebe8259593",
+        "S4": "b097b7122a34c8543472716f096cf7b147f10700b31e6182202b991cfae15f7f"
+      }
+    }
+  ]
+}

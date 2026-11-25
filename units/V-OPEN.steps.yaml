@@ -1,0 +1,143 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "V-OPEN",
+  "edition_sha256": "97c2a00830d3d4783f24dd7d1b06f38cff8ce8dd260c4b4300b04128ab32039e",
+  "note_sha256": "0c5be1aaedfca8f2581cc304eb292cc11cb71db45eaad041f6fa6371eba69256",
+  "statement_sha256": "6430518857d50fa60520e4fe8e49671fab8b9ccb7984cba5e04655a61f4f71be",
+  "sources": [
+    {
+      "path": "notes/units/V-OPEN_round4.md",
+      "sha256": "0c5be1aaedfca8f2581cc304eb292cc11cb71db45eaad041f6fa6371eba69256"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The row witness has the polarized-pair row type specialized to the chosen local reciprocity relation.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: polarized-pair Galois row"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.Z.Win.RowT",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/AutomorphyLifting/WeakOfAtt.lean",
+          "line0": 47,
+          "line1": 47
+        },
+        {
+          "name": "UpperTheory.GalStar.Row0b",
+          "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConjBis.lean",
+          "line0": 69,
+          "line1": 73
+        }
+      ],
+      "source": "notes/units/V-OPEN_round4.md",
+      "anchor": "The definition `RowT` specializes",
+      "source_lines": [
+        13,
+        13
+      ],
+      "claim_sha256": "69ca72b7a0d28d8f126bf87d87824768076a6ef8430b8ff4a9b2cab072de14c4",
+      "passage_sha256": "85a5ece19a767925fb45af6f84cb16c414a4888687ffd3cac966fc80b28623f6",
+      "sha256": "6aa533f62b8d6e1e209d4e6fb4947ea6323c24c0b01a79b3e5c86fe12096905c",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The single row witness is the field required to construct the OpenImageCondition record.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "S1"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.LiteratureTheorems.OpenImageCondition",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TemperedProductOfSquareIntegrable.lean",
+          "line0": 207,
+          "line1": 208
+        }
+      ],
+      "source": "notes/units/V-OPEN_round4.md",
+      "anchor": "The constructor stores",
+      "source_lines": [
+        21,
+        21
+      ],
+      "claim_sha256": "1a4cc00ac16c24b60372ee0b75850ef10ce2ba9ac8bf202f45a38c284359aff4",
+      "passage_sha256": "7cd6db9970b8f64d352bafcc50e1537642c8f11baeb250ea8b7f4ec0907c4fc2",
+      "sha256": "617265e70f72d51777d7ebae79b5f2dccba87016be63dea0e9ee13a9fa5f00c8",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "withdrawn",
+      "claim": "The window supplier can receive both the constructed record and its original row witness, with isobaric base change supplied separately.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "S2",
+        "W02"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.One.vwin_of_row",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/VwinOfRow.lean",
+          "line0": 4,
+          "line1": 5
+        },
+        {
+          "name": "UpperTheory.One.Join.automorphic_window_of_inputs",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TopMainZj.lean",
+          "line0": 71,
+          "line1": 74
+        },
+        {
+          "name": "UpperTheory.One.Join.automorphic_inputs_from_literature",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TopMainZj.lean",
+          "line0": 38,
+          "line1": 54
+        }
+      ],
+      "source": "notes/units/V-OPEN_round4.md",
+      "anchor": "W01 uses $O$ as one argument",
+      "source_lines": [
+        17,
+        17
+      ],
+      "claim_sha256": "6de6ff1d1d135743fa3785845897f606022ee389b70285a70a3589477bccdbdf",
+      "passage_sha256": "7cd6db9970b8f64d352bafcc50e1537642c8f11baeb250ea8b7f4ec0907c4fc2",
+      "sha256": "a98181f7565a6da3c080060902d35a3fa9edc88505b1bba6b5c5be194f86289f",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "2ba27e19f9ed846e7dc57d15866ceafc676ffe4f8dc20145446ac814e137e81e",
+      "sources": [
+        {
+          "path": "notes/units/V-OPEN_round4.md",
+          "sha256": "893d82b054648f79fefa00598f637c698e5c91675e7834a4bb07180e777d83ad"
+        }
+      ],
+      "statement_sha256": "6430518857d50fa60520e4fe8e49671fab8b9ccb7984cba5e04655a61f4f71be",
+      "steps": {
+        "S1": "6aa533f62b8d6e1e209d4e6fb4947ea6323c24c0b01a79b3e5c86fe12096905c",
+        "S2": "1c0e68430d2d6fc5f499cd91cf8f802bae613711b908772f1a8371bc51a7836f",
+        "S3": "a98181f7565a6da3c080060902d35a3fa9edc88505b1bba6b5c5be194f86289f"
+      },
+      "step_texts": {
+        "S1": "The row witness has the polarized-pair row type specialized to the chosen local reciprocity relation.",
+        "S2": "Putting the supplied row in the single field gives the open-image record required by the window supplier.",
+        "S3": "The window supplier can receive both the constructed record and its original row witness, with isobaric base change supplied separately."
+      },
+      "step_passages": {
+        "S1": "85a5ece19a767925fb45af6f84cb16c414a4888687ffd3cac966fc80b28623f6",
+        "S2": "7cd6db9970b8f64d352bafcc50e1537642c8f11baeb250ea8b7f4ec0907c4fc2",
+        "S3": "7cd6db9970b8f64d352bafcc50e1537642c8f11baeb250ea8b7f4ec0907c4fc2"
+      }
+    }
+  ]
+}

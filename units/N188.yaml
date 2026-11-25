@@ -1,0 +1,88 @@
+{
+  "id": "N188",
+  "title": "Nonsingular Hermitian Gram coefficient",
+  "track": {
+    "primary": "theta",
+    "secondary": [
+      "arakelov"
+    ]
+  },
+  "statement": "For a CM Hermitian space of dimension $M>2n$, every adelic Schwartz--Bruhat test and nonsingular Hermitian $T$, inverse Fourier integration of the Gram pushforward at $T$ equals the orbit average of the rational Gram fibre with the specified probability measure. Weil's Theorem 5 in type I$_2$ gives the normalized comparison in Chapter T.",
+  "assumptions": [
+    "source:blueprint_v13"
+  ],
+  "hypothesis_details": [
+    "Work over the given CM Hermitian space with dimension greater than twice the target rank.",
+    "Use an adelic Schwartz–Bruhat test and a nonsingular Hermitian Gram index."
+  ],
+  "lean": [
+    {
+      "name": "GlobalTheory.CompanionTheory.SiegelND.Coef.coefN_eq_theta",
+      "file": "Development/WeilBound/RepresentationTheoryGL/RegularisedSiegelWeil/ThetaIdempotents/ThetaCoefficients/SiegelWeilHermitianFormula.lean",
+      "line0": 303,
+      "line1": 336,
+      "sha256": "601a752aa3880d677f3fd6841988824563c14c4c33da91b9de066d0ae8e258a9",
+      "dominated": 8593,
+      "graph": "allChi",
+      "role": "statement"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/blueprint/N188.tex",
+      "section": "r5:lit:N188",
+      "pages": []
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r5:lit:N188",
+      "pages": [
+        569,
+        569
+      ],
+      "printed_page": 544,
+      "scope": "First page of this named destination."
+    }
+  ],
+  "status": "Full",
+  "grade": "L0",
+  "reviews": [],
+  "prerequisites": [],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "blueprint_members": [
+    "N188"
+  ],
+  "representative": "GlobalTheory.CompanionTheory.SiegelND.Coef.coefN_eq_theta",
+  "statement_declarations": [
+    "GlobalTheory.CompanionTheory.SiegelND.Coef.coefN_eq_theta"
+  ],
+  "grade_scope": "Named statement declarations with the hypotheses above. Chart supplier records have their own review scopes.",
+  "confirmation_basis": "Minimum across the statement declarations, using registry rows for the blueprint assignments listed here. Reviews of other expositions of a shared declaration are included as context.",
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "slug": "nonsingular-hermitian-gram-coefficient",
+  "aliases": [
+    "coefN_eq_theta",
+    "N188 Nonsingular Hermitian Gram coefficient"
+  ],
+  "background": [
+    "Hermitian theta series",
+    "Schwartz–Bruhat functions",
+    "Gram matrices"
+  ],
+  "hypothesis_source": {
+    "document": "blueprint_v13",
+    "section": "r5:lit:N188",
+    "pages": [
+      569,
+      569
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {},
+  "summary": "In the indicated stable dimension range, inverse Fourier integration of the Gram pushforward at a nonsingular Hermitian matrix equals the normalized orbit average over its rational Gram fibre. This identifies a Fourier coefficient with an orbital integral for the given test function."
+}

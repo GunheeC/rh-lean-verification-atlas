@@ -1,0 +1,157 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "D561",
+  "edition_sha256": "e4304c1a78236060c7ab90e77b9080570343b2261c1ff8713fc588d8c3f2840a",
+  "note_sha256": "47ef8eda8227d8d7e53a080d13561d6db0a0d49231ec85c8e5efa7d4ec0c6e51",
+  "statement_sha256": "9f0a6546fc4c0206dcb5e13a1dd6d9216681e63bea29843618f1d6e1fd89d186",
+  "sources": [
+    {
+      "path": "notes/units/D561_v4.md",
+      "sha256": "47ef8eda8227d8d7e53a080d13561d6db0a0d49231ec85c8e5efa7d4ec0c6e51"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Primes in the host exceptional set contribute nothing outside the index-two subgroup, because inertia and Frobenius both lie inside it.",
+      "kind": "case-split",
+      "uses": [
+        "D014",
+        "standard: character orthogonality on inertia cosets"
+      ],
+      "lean": [
+        {
+          "name": "Deduction.ch_balance",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChBalance.lean",
+          "line0": 200,
+          "line1": 260
+        }
+      ],
+      "source": "notes/units/D561_v4.md",
+      "anchor": "For $p\\in S$",
+      "source_lines": [
+        68,
+        68
+      ],
+      "claim_sha256": "f0770f4ed1429e8fae78dcc68b7b6c47d9fe41471c0a7da2c447c04435c85a4d",
+      "passage_sha256": "b3a1ad45de8025652f89721e48f97a6a79216c478df30b0e51b9ca32596d4146",
+      "sha256": "d0064130109def6a4aaf324fd2e84d2f823198cb213788f3f7c8b657bdb2f996",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "At d the factor two is divided by inertia order two; the contributing complement of the subgroup therefore has coefficient one.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "D014"
+      ],
+      "lean": [
+        {
+          "name": "Deduction.ch_balance",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChBalance.lean",
+          "line0": 200,
+          "line1": 260
+        }
+      ],
+      "source": "notes/units/D561_v4.md",
+      "anchor": "For $p=d$",
+      "source_lines": [
+        72,
+        72
+      ],
+      "claim_sha256": "15e01f88db451419a8c91aadfbb137ecf6db58b28f04d63d5efa83af89634e1a",
+      "passage_sha256": "a3bb15d0eefe36c740f15ffc07073ef6fcc25a34f1a1c2537f0f20e68afc7ecf",
+      "sha256": "f73ce91e093eb2118a026dfed5c4a1c7d9589c027e9015af35b108e4c8bd12c4",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Summation in character order gives the main term plus the character correction, equating the original ask-minus-main difference to the character sum.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "S2",
+        "standard: finite character orthogonality"
+      ],
+      "lean": [
+        {
+          "name": "Deduction.ch_balance",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChBalance.lean",
+          "line0": 200,
+          "line1": 260
+        }
+      ],
+      "source": "notes/units/D561_v4.md",
+      "anchor": "Together the corrections",
+      "source_lines": [
+        106,
+        106
+      ],
+      "claim_sha256": "0cc5d0f3a133eb3e4729032079e85beae3aaa39cb7df58005aac3cb732be74cb",
+      "passage_sha256": "2399d0779dd11edc50c7d42ee9e5f5b0b2f03cebdcd362367c02045db0c3b9dc",
+      "sha256": "dff8b46e051251842d9f007168be38d003a2773cbb577deed13057edda1acb4c",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "At frozen width each thick place is indexed uniquely by an element of the selected subset, so reindexing the place sum gives the stated thick contribution.",
+      "kind": "computation",
+      "uses": [
+        "input: thick-place dictionary and fixed width"
+      ],
+      "lean": [
+        {
+          "name": "Deduction.CharacterBalanceMoves.th_le",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean",
+          "line0": 75,
+          "line1": 152
+        }
+      ],
+      "source": "notes/units/D561_v4.md",
+      "anchor": "Now $P_t(g)$ is thick",
+      "source_lines": [
+        148,
+        148
+      ],
+      "claim_sha256": "cf6388934c2d0fac8f1f678b21a5bc700356b646edde2b295cd3076b1a17abf5",
+      "passage_sha256": "5e4cf0cfc558df36302773681272bb6a4d2d3943ae1332b95e61429c4a88d99d",
+      "sha256": "3ff48562b9cc8b58c4fad078f549bc2dad9a7c93990fa3a4e265a6490707b428",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "92037cad7e1e076bd51acf18da29728ac9a24e42b28d28f076b67bcda735d026",
+      "sources": [
+        {
+          "path": "notes/units/D561_v4.md",
+          "sha256": "dc391ac25686887d1683f61a5dd4ec49baf12a463ff7727c5cd27758dda2d096"
+        }
+      ],
+      "statement_sha256": "9f0a6546fc4c0206dcb5e13a1dd6d9216681e63bea29843618f1d6e1fd89d186",
+      "steps": {
+        "S1": "d0064130109def6a4aaf324fd2e84d2f823198cb213788f3f7c8b657bdb2f996",
+        "S2": "f73ce91e093eb2118a026dfed5c4a1c7d9589c027e9015af35b108e4c8bd12c4",
+        "S3": "dff8b46e051251842d9f007168be38d003a2773cbb577deed13057edda1acb4c",
+        "S4": "3ff48562b9cc8b58c4fad078f549bc2dad9a7c93990fa3a4e265a6490707b428"
+      },
+      "step_texts": {
+        "S1": "Primes in the host exceptional set contribute nothing outside the index-two subgroup, because inertia and Frobenius both lie inside it.",
+        "S2": "At d the factor two is divided by inertia order two; the contributing complement of the subgroup therefore has coefficient one.",
+        "S3": "Summation in character order gives the main term plus the character correction, equating the original ask-minus-main difference to the character sum.",
+        "S4": "At frozen width each thick place is indexed uniquely by an element of the selected subset, so reindexing the place sum gives the stated thick contribution."
+      },
+      "step_passages": {
+        "S1": "b3a1ad45de8025652f89721e48f97a6a79216c478df30b0e51b9ca32596d4146",
+        "S2": "a3bb15d0eefe36c740f15ffc07073ef6fcc25a34f1a1c2537f0f20e68afc7ecf",
+        "S3": "2399d0779dd11edc50c7d42ee9e5f5b0b2f03cebdcd362367c02045db0c3b9dc",
+        "S4": "5e4cf0cfc558df36302773681272bb6a4d2d3943ae1332b95e61429c4a88d99d"
+      }
+    }
+  ]
+}

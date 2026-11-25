@@ -1,0 +1,38 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>P036 · Counting equivariant characters in a cyclotomic layer · RH verification atlas</title><link rel="stylesheet" href="../atlas.css"><script>window.MathJax={tex:{inlineMath:[["$","$"]],displayMath:[["$$","$$"]],processEscapes:true},options:{ignoreHtmlClass:"no-math"}};</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script></head><body><header><div class="bar"><a class="brand" href="../index.html">RH verification atlas</a><nav aria-label="Atlas navigation"><a href="../index.html">Home</a> <a href="../STATUS.html">Status</a> <a href="../MAP.html">Map</a> <a href="../dashboard/index.html">Tracks</a> <a href="../lookup/search.html">Search declarations</a></nav></div></header><main><h1 id="p036--counting-equivariant-characters-in-a-cyclotomic-layer">P036 · Counting equivariant characters in a cyclotomic layer</h1>
+<p class="notice">AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved</p>
+<p>Suppose a cap is known for finite families separated by the specified power classes. The equivariant divisor characters then form a finite group with an explicit order bound, including losses from the twist and the class number. This turns a separation estimate into a character count.</p>
+<p><code>counting-equivariant-characters-in-a-cyclotomic-layer</code> · <a href="../tracks/ktheory/index.html">Algebraic K-theory and cohomology of arithmetic groups</a></p>
+<p><strong>Outlined</strong> · <strong>L1</strong> Statement matched to Lean · Record generated 2026-11-25 (no human check).</p>
+<div class="scroll"><table>
+<thead><tr><th>1 · Lean pinned</th><th>2 · Statement compared</th><th>3 · Prose</th><th>4 · Steps</th><th>5 · AI review</th><th>6 · Human</th></tr></thead>
+<tbody><tr><td>✓</td><td>✓</td><td>Outlined</td><td>9</td><td>–</td><td>0 of 9 steps</td></tr>
+</tbody></table></div>
+<p><a href="P036.check.html">Numbered proof and check records</a> · <a href="../PROGRESS.html">Progress and counting rules</a></p>
+<h2 id="statement">Statement</h2>
+<p>Take a layer <span class="math">$F/L$</span> with <span class="math">$L$</span> totally complex, <span class="math">$E\ge1$</span>, <span class="math">$a=\kappa^E$</span>, and <span class="math">$b,B\in\mathbb N$</span>. Suppose every finite family of elements of <span class="math">$F^\times$</span> satisfying the divisor difference condition, with pairwise distinct classes of <span class="math">$N_a(\alpha)^{\ell^b}$</span> modulo <span class="math">$q$</span>-th powers, has size at most <span class="math">$B$</span>. Let <span class="math">$\mathcal H_q$</span> consist of the functions on the prime ideals of <span class="math">$F$</span> with values in <span class="math">$\mathbb Z/q$</span> that kill principal divisors and satisfy <span class="math">$\phi(\gamma^{-1}P)=a\phi(P)$</span>. Writing <span class="math">$v=v_\ell(E)$</span> and <span class="math">$g=2[L:\mathbb Q]+\lfloor\log_2 h_L\rfloor+2$</span>, we have</p>
+<div class="math display">$$\mathcal H_q\text{ finite},\qquad |\mathcal H_q|q^{r_2(L)} \le B\,\ell^{(b+v)g+c+v}.$$</div>
+<h2 id="assumptions">Assumptions</h2>
+<ul><li>Take a cyclotomic layer <span class="math">$F/L$</span> over totally complex <span class="math">$L$</span>, a positive exponent <span class="math">$E$</span> and nonnegative <span class="math">$b,B$</span>.</li><li>The Few bound <span class="math">$B$</span> applies to finite families satisfying the divisor-difference condition and pairwise distinct prescribed norm classes.</li></ul>
+<p>Sources for the assumptions · <a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a></p>
+<h2 id="where-to-read">Where to read</h2>
+<p>Blueprint v13 and papers v3–v5 are this atlas project’s own AI-written, unpublished drafts. They have no human review and were not written by the author of the Lean development. Blueprint v13, its separate cover, and paper v5 are distributed as assets of release v0.1.0. For v3 and v4 the atlas supplies selected excerpts and notes. <a href="../data/editions.json">Edition register</a></p>
+<ul><li><a href="../notes/ktheory/index.html">Graduate reading packet · Finite divisor counts and the loss in the exponent</a></li><li><a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a>, 7.13, p. 80. Statement starts on the cited page.</li><li><a href="../notes/units/P036.tex">Manuscript source excerpt</a> · section <code>pn:P036</code></li></ul>
+<h2 id="evidence">Evidence</h2>
+<ul><li><a href="../reviews/R20_review.html">R20 review</a>, original line 112 — Exact statement comparison. Named theorem at the specified hypotheses in the R20 manuscript.</li></ul>
+<p>Review records · <a href="../reviews/R20_review.html">R20 review</a></p>
+<h2 id="lean-declarations">Lean declarations</h2>
+<ul><li><code>UpperTheory.V.ZK.sCount</code>  <br><a href="https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/SelmerOrderCounts.lean#L16-L111"><code>SelmerOrderCounts.lean</code></a>, lines 16–111 · 2,223 dominated lines · SHA-256 <code>b609ec60bcf9</code>.</li></ul>
+<p><a href="P036.yaml">Machine record and full declaration hashes</a> · <a href="../lookup/declarations.html">Declaration lookup</a></p>
+<h2 id="reading-prerequisites">Reading prerequisites</h2>
+<p>Background · Kummer theory · Equivariant character groups · Finite quotients.</p>
+<ul><li><a href="Z2.K2.html">Z2.K2 · Cycles on integral matrices and uniform residue evaluation</a> · statement-reading</li></ul>
+<p><a href="../data/round3_prerequisites.json">Evidence and definitions of reading links</a></p>
+<h2 id="open-questions">Open questions</h2>
+<p>None recorded.</p>
+<h2 id="graph-connections">Graph connections</h2>
+<p>Arrows may connect either a unit’s main declaration or an indexed member.</p>
+<p><strong>Uses</strong> · No recorded edge.</p>
+<p><strong>Used by</strong> · <a href="P013.html">P013</a> · <a href="W05.html">W05</a></p>
+<p><a href="../data/unit_graph.json">Declaration witnesses and graph scope</a></p>
+<p>Lookup aliases · <code>Few bound</code>, <code>The finite count and the loss in the exponent</code>, <code>P036 Counting equivariant characters in a cyclotomic layer</code></p>
+<p>&lt;!-- Unit metadata SHA-256 3cfdabf9067455b1505dae613bc0a4eac927bc79b75d2dbf757932cdc84f142f --&gt;</p></main><footer><a href="../help.html">Using the local edition</a></footer></body></html>

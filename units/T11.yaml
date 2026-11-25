@@ -1,0 +1,96 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "T11",
+  "title": "Simultaneous global theta-integral comparison and local matching",
+  "track": {
+    "primary": "theta",
+    "secondary": []
+  },
+  "statement": "Assume the doubling Eisenstein input (right-half-plane summation and\nmeromorphic continuation with moderate local regularizations) and the\nstandard value statement T12. Over every admissible number-field pair and\nautomorphism, each admissible triple of Weil models has real and finite\nmatching data. The unprimed integrals converge on Schwartz vectors. On\nthe prescribed primed test space the theta kernel has rapid decay in one\nvariable with polynomial growth in the other, the integral converges and is\nmoderate. For each matching choice some primed test integral is nonzero\nand there is a unique nonzero $c$ with $I(\\Phi)=c I'(\\Phi')$ for every\nmatched pair, as functions on the common group. At good places the kernels\nof both finite quotient maps are the augmentation spaces on the test vectors,\nthe primed local test spaces surject onto the quotient, and functionals\nkilling the primed augmentation factor on test vectors through the quotient.\nThe primed global test space is stable under the primed action.\n\nThere are two independent uniform triples of signs for the tower relations.\nFor two matching models with comparison constants $c,c_1$ and an adapted\npair of planes, $C\\ne0$ depends on the geometry and real maps. Write\n$F(z)$ for the signed \\nolinkurl{stepFac} of the two plane ideals and $L(z)$\nfor the source's \\nolinkurl{charL} of $\\nu,S_0$. In the $\\beta$ step,\nwith ranks $(a,b+2)$ and $(a,b)$ and $h=\\lfloor (a-b-2)_+/2\\rfloor$,\none has $cL(h+1)=u c_1$ for some $u$ such that $uCF(-h)=1$.\nIn the $\\alpha$ step with ranks $(b+2,a')$ and $(b,a')$ and\n$h=\\lfloor(b+2-a')_+/2\\rfloor$, one has $c=CF(1-h)L(h)c_1$.",
+  "assumptions": [
+    "source:paper2_v3"
+  ],
+  "hypothesis_details": [
+    "Assume the doubling Eisenstein summation and continuation with the stated moderate local regularizations.",
+    "Use the standard special-value assertion and an admissible triple of Weil models over the given field pair."
+  ],
+  "lean": [
+    {
+      "name": "PositivityTheory.ThKR.theoremK_head2",
+      "file": "Development/WeilBound/ThetaLifts/Reductions/FiniteClosure/TheoremKOfMod.lean",
+      "line0": 26,
+      "line1": 27,
+      "sha256": "85d76e9d59ffa0b7c45c1dae9bde68d8979615f47da86fbe108c068502267291",
+      "dominated": 97419,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/T11_round3.md",
+      "section": "T11 · One global comparison constant and local matching maps",
+      "pages": [
+        1,
+        3
+      ],
+      "coverage": "Round-3 written exposition, pending independent review."
+    },
+    {
+      "document": "paper2_v3",
+      "section": "5.21 (sub:T11)",
+      "pages": [
+        43,
+        43
+      ],
+      "coverage": "Statement starts on the cited page."
+    },
+    {
+      "document": "notes/units/T11.tex",
+      "section": "sub:T11",
+      "pages": []
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [
+    "reviews/DB3_review_B.md"
+  ],
+  "prerequisites": [
+    "T12"
+  ],
+  "size_pages": 3,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-25",
+  "grade_evidence": [],
+  "paper_id": "T11",
+  "indexed_members": [],
+  "scope": "The exposition, grade and proof status cover the anchor at its own hypotheses. Indexed members have their own pins and retain their source dispositions.",
+  "slug": "simultaneous-global-theta-integral-comparison-and-local-matching",
+  "aliases": [
+    "Simultaneous comparison and local matching",
+    "theoremK_head2",
+    "T11 Simultaneous global theta-integral comparison and local matching"
+  ],
+  "background": [
+    "Doubling integrals",
+    "Meromorphic continuation",
+    "Schwartz spaces"
+  ],
+  "hypothesis_source": {
+    "document": "paper2_v3",
+    "section": "5.21 (sub:T11)",
+    "pages": [
+      43,
+      43
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "T12": "statement-reading"
+  },
+  "review_status": "pending_review",
+  "summary": "The doubling and standard-value inputs furnish local matching and a global comparison of theta integrals. For each matching choice one nonzero scalar works for all matched vectors. The statement also tracks the comparison constants across the two tower steps, as needed when ranks vary."
+}

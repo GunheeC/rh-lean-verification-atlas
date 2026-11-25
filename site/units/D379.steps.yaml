@@ -1,0 +1,178 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "D379",
+  "edition_sha256": "d5e2350f25715c4d1e97493da1b3527b28c5d7cf316c0db25c0f356cad71af5e",
+  "note_sha256": "d6b43741d23b28988b780fc7f99720d28880a853e122d8108d4c9d906933b5c9",
+  "statement_sha256": "aa0bedbdbd57ddf942dd8c08a8c74b9836769bb591712270a954a999e27ec5b1",
+  "sources": [
+    {
+      "path": "notes/units/D379_round4.md",
+      "sha256": "d6b43741d23b28988b780fc7f99720d28880a853e122d8108d4c9d906933b5c9"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The one-vector mean and limit calculation give the compact-dual volume step.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: convergent unitary Siegel–Weil and the one-vector mean"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.GaussMean.volumeStep_of_siegelWeil",
+          "file": "Development/AbelianVarietyTheory/Proofs/FlagMeasures/VolumeStepOfSiegelWeil.lean",
+          "line0": 13,
+          "line1": 18
+        }
+      ],
+      "source": "notes/units/D379_round4.md",
+      "anchor": "Start with the convergent unitary Siegel–Weil statement. The",
+      "source_lines": [
+        25,
+        25
+      ],
+      "claim_sha256": "a4b409a30b28519e841df71d51f486380645e17cb39af8359b74c11f283ff4be",
+      "passage_sha256": "25abec0c4d9be4c0105a0431b038a10b23f12ca66e7713232ce177ca5aaf2bcd",
+      "sha256": "487c7923342a23fcff217f6f591368632bf6bb995328a61579d13ed9cdaccb10",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "At each exponent the typed count permits all eligible larger thresholds with both small constants equal to $1/16$.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S1",
+        "input: typed automorphic counting at exponent A"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.CountBridge.count_typed_of_volumeStep",
+          "file": "Development/AbelianVarietyTheory/Proofs/FlagMeasures/CountTypedOfVolumeStep.lean",
+          "line0": 12,
+          "line1": 19
+        }
+      ],
+      "source": "notes/units/D379_round4.md",
+      "anchor": "At an arbitrary exponent $A$, unbundle the unitary",
+      "source_lines": [
+        29,
+        29
+      ],
+      "claim_sha256": "cc2f857e5071869029f27187f290f0767617b386d61629d97fc5246df1738c0a",
+      "passage_sha256": "a8ed586ea52a5c0261b7b467f5bffed60c249ca576c88688a32b33c89a37e681",
+      "sha256": "ebeab6b57a8428e0353f4e1e41bd18fe8e7c628956a4b24acdbbd2b872d44ca9",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Reading the sixth zero-based index of the family output list gives counting exponent $2(\\mathrm{CYL}+1)$.",
+      "kind": "computation",
+      "uses": [
+        "S2",
+        "input: definition of family output list"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.CountConstants.count_constants_of_siegelWeil",
+          "file": "Development/AbelianVarietyTheory/Proofs/FlagMeasures/CountConstantsOfSiegelWeil.lean",
+          "line0": 11,
+          "line1": 22
+        }
+      ],
+      "source": "notes/units/D379_round4.md",
+      "anchor": "Choose the functions $n_0(A)$ and $C_0(A)$ from the",
+      "source_lines": [
+        33,
+        33
+      ],
+      "claim_sha256": "db24e041a7717cb3722eb30a7854e77b05db025af8b33209d58ec4b45b3e1786",
+      "passage_sha256": "32f2a46a806ef3eb64a1ba5a91f778e76a6bf9805303680fc4b2c919bdb26f28",
+      "sha256": "cc2272a28cb74c99842e37ee6f6a7ab25d9860888d03b16170eef91a9fb43fbd",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The typed points estimate at the chosen constants implies the class count for each later test predicate.",
+      "kind": "assembly",
+      "uses": [
+        "S2",
+        "S3",
+        "input: class-count implication for the supplied test"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.CountConstants.count_constants_of_siegelWeil",
+          "file": "Development/AbelianVarietyTheory/Proofs/FlagMeasures/CountConstantsOfSiegelWeil.lean",
+          "line0": 15,
+          "line1": 24
+        }
+      ],
+      "source": "notes/units/D379_round4.md",
+      "anchor": "A test predicate and a family now determine",
+      "source_lines": [
+        37,
+        37
+      ],
+      "claim_sha256": "63f61a0f31861f2f86e26633b8ee5d199b6754f62c49862db6e76f9146b5e2cc",
+      "passage_sha256": "9732f1b941bfac8d8c300ede27e68baf3ea8709ff20414bd50670933117dfaf7",
+      "sha256": "6c4c8cc81ae95f061aec4edbb2e7aca88f42b752814e71812d1c711bec49a0cf",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "8d4dd6d25134f3e7e2634dc07e5f9dbf5786328265c569fa03f1b6221ecdbb23",
+      "sources": [
+        {
+          "path": "notes/units/D379_round4.md",
+          "sha256": "38a0a3b1cdb6e3e83cbcb1f6d7427631403433faae13cdeda245fe341e9f8f8c"
+        }
+      ],
+      "steps": {
+        "S1": "d4dcf7ed65876885e097d4b37f4684d4ebafd14c0b253bca9e91a2b3eae09461",
+        "S2": "e6ad4b5242f8bdcd267fc96da07e32b26183ed671433c8857d231575bcaaa7b2",
+        "S3": "90e33eb4bc1a5293c43864b8cb4d1e1a12c402093519ce2dba8bf22cdf8f405c",
+        "S4": "69edcaad38e28f420470b86c79b2bd30329ce5705964128fc46d9a1c37b14c54"
+      },
+      "step_texts": {
+        "S1": "The one-vector mean and limit calculation give the compact-dual volume step.",
+        "S2": "At each exponent the typed count permits all eligible larger thresholds with both small constants equal to $1/16$.",
+        "S3": "Reading the sixth zero-based index of the family output list gives counting exponent $2(\\mathrm{CYL}+1)$.",
+        "S4": "The typed points estimate at the chosen constants implies the class count for each later test predicate."
+      }
+    },
+    {
+      "edition_sha256": "547fa4100fd9848834952caaa7afa93130d71e506ede815382b2d0566693e73a",
+      "sources": [
+        {
+          "path": "notes/units/D379_round4.md",
+          "sha256": "38a0a3b1cdb6e3e83cbcb1f6d7427631403433faae13cdeda245fe341e9f8f8c"
+        }
+      ],
+      "statement_sha256": "aa0bedbdbd57ddf942dd8c08a8c74b9836769bb591712270a954a999e27ec5b1",
+      "steps": {
+        "S1": "487c7923342a23fcff217f6f591368632bf6bb995328a61579d13ed9cdaccb10",
+        "S2": "ebeab6b57a8428e0353f4e1e41bd18fe8e7c628956a4b24acdbbd2b872d44ca9",
+        "S3": "cc2272a28cb74c99842e37ee6f6a7ab25d9860888d03b16170eef91a9fb43fbd",
+        "S4": "6c4c8cc81ae95f061aec4edbb2e7aca88f42b752814e71812d1c711bec49a0cf"
+      },
+      "step_texts": {
+        "S1": "The one-vector mean and limit calculation give the compact-dual volume step.",
+        "S2": "At each exponent the typed count permits all eligible larger thresholds with both small constants equal to $1/16$.",
+        "S3": "Reading the sixth zero-based index of the family output list gives counting exponent $2(\\mathrm{CYL}+1)$.",
+        "S4": "The typed points estimate at the chosen constants implies the class count for each later test predicate."
+      },
+      "step_passages": {
+        "S1": "25abec0c4d9be4c0105a0431b038a10b23f12ca66e7713232ce177ca5aaf2bcd",
+        "S2": "a8ed586ea52a5c0261b7b467f5bffed60c249ca576c88688a32b33c89a37e681",
+        "S3": "32f2a46a806ef3eb64a1ba5a91f778e76a6bf9805303680fc4b2c919bdb26f28",
+        "S4": "9732f1b941bfac8d8c300ede27e68baf3ea8709ff20414bd50670933117dfaf7"
+      }
+    }
+  ]
+}

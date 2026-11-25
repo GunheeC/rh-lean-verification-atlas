@@ -1,0 +1,77 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "id": "V-BC",
+  "kind": "pillar_component",
+  "title": "Isobaric base change from finite frame candidates",
+  "slug": "isobaric-base-change-from-finite-frame-candidates",
+  "aliases": [
+    "baseChangeN_of",
+    "V-BC Assume finite control of candidates in the specified comparison frames"
+  ],
+  "track": {
+    "primary": "theta",
+    "secondary": [
+      "galois"
+    ]
+  },
+  "statement": "Assume the finite-candidate property CandFin for the specified local comparison frames. Then the definite isobaric base-change assertion BaseChangeIsobaricN holds.",
+  "assumptions": [
+    "W16"
+  ],
+  "hypothesis_details": [
+    "Assume the candidate finiteness statement for the specified comparison frames, test data and auxiliary places."
+  ],
+  "lean": [
+    {
+      "name": "UpperTheory.BaseChangeIdentities.baseChangeN_of",
+      "file": "Development/AutomorphicArithmetic/Foundations/BaseChangeIdentities/FillPre.lean",
+      "line0": 7,
+      "line1": 9,
+      "sha256": "1931e1038512c28581d51e2247fd2171a25700da7823ed0186fa96f8805295a0",
+      "dominated": 1279,
+      "graph": "allChi"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/units/V-BC_round4.md",
+      "section": "V-BC · Conditional base change from finite comparison candidates",
+      "pages": [
+        1,
+        2
+      ],
+      "coverage": "Round-4 outline under the named inputs; pending_review."
+    }
+  ],
+  "status": "Outlined",
+  "grade": "L0",
+  "reviews": [],
+  "grade_evidence": [],
+  "prerequisites": [
+    "W16"
+  ],
+  "size_pages": 2,
+  "open_questions": [
+    "Check that the finite family for a fixed split test is selected before the finite set of inert places varies, then check the permutation that transfers a singleton split-place match to the original global datum."
+  ],
+  "last_checked": "2026-11-25",
+  "indexed_members": [],
+  "scope": "The outline covers the local implication under its stated hypotheses.",
+  "background": [
+    "Isobaric base change",
+    "Local components of automorphic representations"
+  ],
+  "hypothesis_source": {
+    "document": "notes/units/V-BC_round4.md",
+    "section": "Hypothesis at the source",
+    "pages": []
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-25",
+  "prerequisite_sources": {
+    "W16": "statement-reading"
+  },
+  "summary": "Assume finite control of candidates in the specified comparison frames. This reduction uses frame existence, bounds and reading to obtain the global isobaric datum that the Selmer window’s automorphic input requires.",
+  "review_status": "pending_review",
+  "pillar_map": "pillars/V.md"
+}

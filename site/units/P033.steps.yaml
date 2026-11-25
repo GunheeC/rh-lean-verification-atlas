@@ -1,0 +1,128 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "P033",
+  "edition_sha256": "570495c284fd06e1f1445bd6e6d4d18e13bc8bd4db57d13bda2c17c0bdbc8b39",
+  "note_sha256": "79c20f2ab727cbd7a0fbe4523f02587a6899bac3d45da1566e8e5e6ae1df3a2d",
+  "statement_sha256": "1366c79f6b15880d1f0dacb4f3b913bee5a810ed09e04398fbb2c25e303438d3",
+  "sources": [
+    {
+      "path": "notes/units/P033.tex",
+      "sha256": "79c20f2ab727cbd7a0fbe4523f02587a6899bac3d45da1566e8e5e6ae1df3a2d"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "Projective-line transfer supplies an additive evaluation family agreeing in dimension one with the scalar functional.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: scalar cocycle and transfer hypothesis"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.ZK.sThetaOf",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/SThetaOf.lean",
+          "line0": 192,
+          "line1": 273
+        }
+      ],
+      "source": "notes/units/P033.tex",
+      "anchor": "Transfer the supplied scalar",
+      "source_lines": [
+        7,
+        41
+      ],
+      "claim_sha256": "7f81eefd1db2fdb70408110dda38333ac6264a835b566e3cad19bca3b2b150c3",
+      "passage_sha256": "b6ab11f1e7f123eece8bab4d10978250dec6a775af23cbfb638e49809b38317f",
+      "sha256": "107d0eef19c67954eaa592159f3f1fcc80bac83340e4f4559dd905c91bc16514",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "For fixed exponent and space, evaluation on the scalar prism defines a group homomorphism.",
+      "kind": "computation",
+      "uses": [
+        "S1",
+        "input: prism composition law"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.ZK.sThetaOf",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/SThetaOf.lean",
+          "line0": 192,
+          "line1": 273
+        }
+      ],
+      "source": "notes/units/P033.tex",
+      "anchor": "Prism composition modulo boundaries",
+      "source_lines": [
+        7,
+        41
+      ],
+      "claim_sha256": "de9b0aabb20910e0bd8e00b4d8d08d26fececf292bc45f2743179172cd58f364",
+      "passage_sha256": "b6ab11f1e7f123eece8bab4d10978250dec6a775af23cbfb638e49809b38317f",
+      "sha256": "9bbab233c8cf82cf7b2155710b7e07748ff9c75fab0d14adca799dfb6abab404",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Conjugation by a nontrivial scalar on one coordinate forces the evaluation on every transvection to vanish for $q>1$.",
+      "kind": "computation",
+      "uses": [
+        "S2",
+        "standard: elementary matrices"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.ZK.sThetaOf",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/SThetaOf.lean",
+          "line0": 192,
+          "line1": 273
+        }
+      ],
+      "source": "notes/units/P033.tex",
+      "anchor": "vanishes on transvections",
+      "source_lines": [
+        7,
+        41
+      ],
+      "claim_sha256": "cf7c170f22aed8d3607e64416b40fe87c213ce053928fd0f5dcb4f131b74471e",
+      "passage_sha256": "b6ab11f1e7f123eece8bab4d10978250dec6a775af23cbfb638e49809b38317f",
+      "sha256": "b1b824cb4d82858bac99d9e7ecc62b5ac6c8bb9579f976b364e729ab993a00f8",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "Row elimination and direct sums reduce the value to the determinant character multiplied by the stated power; the trivial cases also satisfy the formula.",
+      "kind": "assembly",
+      "uses": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.ZK.sThetaOf",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/SThetaOf.lean",
+          "line0": 192,
+          "line1": 273
+        }
+      ],
+      "source": "notes/units/P033.tex",
+      "anchor": "one-dimensional evaluations",
+      "source_lines": [
+        7,
+        41
+      ],
+      "claim_sha256": "c58ee1a31fe6fd7f8b0827d96df84ef6d614f77b472acac04a1a128d4450d3c1",
+      "passage_sha256": "b6ab11f1e7f123eece8bab4d10978250dec6a775af23cbfb638e49809b38317f",
+      "sha256": "80896b126d0132db25d55ecda9ee937976d98b6ca96e9869436afb55e256fa45",
+      "ai_review": []
+    }
+  ],
+  "history": []
+}

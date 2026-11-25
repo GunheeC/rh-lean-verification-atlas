@@ -1,0 +1,38 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit P044. Local manuscript v3, item 7.21, heading on printed PDF p. 86.
+% Formalism.MainNotions.N.K.Closed.theorem_n5_from_inputs
+% paper2/inputs_two.tex:61–83. Verbatim excerpt; SHA-256 6e6849cf21293e4cf455f0a0474a3eb563d612469bb628d38e04538096e6c4e2.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+\noindent\nolinkurl{Formalism.MainNotions.TruncatedSeriesCountingIdentities.admBK} --- hypothesis at this head (\path{Formalism/SharpRestriction/LevelLetterCocycles/DecompositionData.lean:238--243}); not compared.\par
+\noindent\nolinkurl{Formalism.MainNotions.LargeLevelLemmas.BlochKatoAnnihilators} --- hypothesis at this head (\path{Formalism/SharpRestriction/LevelLetterCocycles/LargeLevelLemmas.lean:82--84}); not compared.\par
+\noindent\nolinkurl{Formalism.MainNotions.TruncatedSeriesCountingIdentities.FontaineAtPlacesOverL} --- hypothesis at this head (\path{Formalism/SharpRestriction/LevelLetterCocycles/DecompositionData.lean:288--290}); not compared.\par
+\noindent\nolinkurl{Formalism.MainNotions.LargeLevelLemmas.tateH1FinitenessAtPlacesOver} --- hypothesis at this head (\path{Formalism/SharpRestriction/LevelLetterCocycles/LargeLevelLemmas.lean:87--90}); not compared.\par
+% End of atlas edition annotation.
+
+\begin{formalstatement}[Normalized congruence index]\label{pn:P044}
+Assume G1--G6. The characteristic coefficients belong to \(T\) and the local gain and crystalline conditions hold. The constituents satisfy absolute irreducibility and distinctness with the prescribed residual characteristic polynomials and full residual span on block zero. Ramification away from the assigned sets is trivial, the assigned inertia elements satisfy their polynomial relations, and any parameter admitting the distinguished rational character line belongs to \(Z\). Assume tame inertia generators, the Bloch--Kato finite conditions and annihilator comparison, family continuity, semisimple decomposition, Fontaine conditions, local \(H^1\) finiteness and local coefficient compatibility. Assume condition 5.1 supplying an idempotent design at \(\pi\in Z\), and the unramified input for the decomposition. Let \(b_w,m_w,c_B\) satisfy the row colength, column lifting and \(TB\) hypotheses at the good coefficient extensions. If \(\ell\ne g_0,g_1,\ \pi\in Z\), the global \(s_\pi\) input is finite and the scalar lengths are finite for \(0<k<t\), then
+\[
+\begin{aligned}
+v_{\rm cc}(\pi)\le{}&
+ \sum_{w\in R\cup C}\operatorname{lenW}(w)+s_\pi+
+ \sum_{0<k<t}\operatorname{shaLen}(k)+v_\ell(h_E)\\
+ &+t c_B\sum_{w\in R}([E_w:\mathbf Q_\ell]+2)
+ +4 n_V(|C|+1)v_\delta+t|C|h_0
+ +t\sum_{w\in Q}\operatorname{lenUnit}(O/(\zeta_w-1)).
+\end{aligned}
+\]
+Here \(R,C\) are the chosen rows and columns, \(n_V=r+t\), and \(\operatorname{lenW}\) is the normalized loss for the corresponding local datum.
+\end{formalstatement}
+\nodestatus{P044}
+The published congruence-to-extension comparison is visible in Bellaïche--Chenevier, Theorem 1.5.5. Urban's \emph{Selmer groups and the Eisenstein--Klingen ideal}, \S1, gives a stable-lattice construction for congruent representations with a prescribed decomposition on reduction. Here the off-\(Z\) test, normalized specialized quotient, explicit local conditions and eight losses have to be computed for the given family.
+\begin{outline}
+Use the design from 5.1, normalize at \(\pi\), and apply P041. Rational conjugation at the changed point preserves the characteristic coefficients and the unramified and inertia conditions. The row and column maps lie in the local hypothesis: a finite sum of matrix coordinates realizes the rational subquotients, and the integral maps onto the chosen block and \(\delta_O O\) are surjective. Apply the column hypothesis to lift the \(\ell^{m_w}\)-multiple of a finite target class and bring it back to the original coefficient model. P043 supplies the common local record.
+
+Set \(J=4(|C|+1)d\), \(D_R=ac_B\sum_R([E_w:\mathbf Q_\ell]+2)\), and \(D_Q=\sum_Qv_O(\zeta_w-1)\). The zero block costs at most
+\(\sum_R b'_w+\sum_C(j_w(a m_w+d)+h_w)+s+rJ\).
+The first character costs at most \(\sum_C(a m_w+2d)+a v_\ell(h_E)+D_R+D_Q+J\). Each \(2\le c\le t\) costs at most \(a q_{c-1}+D_R+D_Q+J+|C|H_0\), where \(q_{c-1}\) is the normalized scalar length. The extra loss from column kernels and coboundaries is bounded by the block rank times \(J\). Adding these contributions and bounding the \(t-1\) invariant terms by \(t\) gives the integral estimate. The finiteness assumptions permit division by \(a>0\). The defining comparison of row and column lengths gives the indicated normalization. See blueprint \bploc{lem:P3-det}, \bploc{lem:P3-column} and \bploc{sec:P-r4-Z32}.
+\end{outline}

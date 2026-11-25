@@ -1,0 +1,43 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>대수적 K이론·산술군 코호몰로지 · RH verification atlas</title><link rel="stylesheet" href="../../atlas.css"><script>window.MathJax={tex:{inlineMath:[["$","$"]],displayMath:[["$$","$$"]],processEscapes:true},options:{ignoreHtmlClass:"no-math"}};</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script></head><body><header><div class="bar"><a class="brand" href="../../index.html">RH verification atlas</a><nav aria-label="Atlas navigation"><a href="../../index.html">Home</a> <a href="../../STATUS.html">Status</a> <a href="../../MAP.html">Map</a> <a href="../../dashboard/index.html">Tracks</a> <a href="../../lookup/search.html">Search declarations</a></nav></div></header><main><p class="notice">AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved</p>
+<h1 id="대수적-k이론산술군-코호몰로지">대수적 K이론·산술군 코호몰로지</h1>
+<p>서면 연역은 <a href="pillars/V.html">V</a>·<a href="pillars/F.html">F</a>, Green의 유한체 지표 명제와 국소 함의 31개 및 v5에 열거한 중간 입력을 가정한다. 이 아틀라스에는 V와 F의 사람이 읽을 수 있는 전체 증명이 없다. Lean 원문은 두 입력을 저장소 안의 항으로 공급한다. 이 자료를 사람이 검토한 적은 없다.</p>
+<p>군 호몰로지·레귤레이터 랭크·대수적 K군의 비틀림은 이 분야의 통상 용어다. 층·약수 지표 자료·유한 개수은 이 경로에서 고정된 Lean 식별자나 이 프로젝트 초고의 표현을 가리킨다. 그 뜻은 연결한 정의에서 확인한다. <a href="../../lookup/glossary.html">용어집</a></p>
+<p>v13 블루프린트와 v3·v4·v5 원고는 이 프로젝트의 AI가 작성한 미출판·미검토 초고이며 Lean 개발 저자의 저작이 아니다. 블루프린트 v13과 별도 표지, 원고 v5는 릴리스 v0.1.0의 첨부 파일로 배포한다. 원고 v3·v4는 인용 대목의 발췌본과 해설을 제공한다. <a href="../../data/editions.json">판본 장부</a></p>
+<p><a href="../../tracks/ktheory/index.html">영문 안내</a> · <a href="index.html">한국어 첫 화면</a> · <a href="../../notes/ktheory/index.html">시작 읽기 자료</a> · <a href="../../questions/ktheory.html">열린 질문</a></p>
+<p>이 경로는 유한한 군의 크기 상계가 왜 Selmer 창에 들어가는지를 추적한다. W05가 요구하는 것은 완전 허수체와 주어진 Tate 꼬임에서의 두 번째 코호몰로지 군에 대한 유한성 및 수치 상계다. 체의 차수와 판별식, 소수와 층 지수가 모두 등장한다. 특정 체에서 군이 유한하다는 사실로는 충분하지 않으므로 어떤 변수에 대해 하나의 상수를 택하는지부터 읽는다.</p>
+<p>중간에는 산술군의 안정화, 유리 랭크, 정수 호몰로지의 비틀림이 차례로 쓰인다. Borel의 유리 계산을 가져오면 비틀림에 관한 정보는 사라진다. 정수 비틀림의 크기를 구하려면 별도의 안정 범위, 계수 변경, 그리고 작은 소수에서 남은 성분을 따로 제어해야 한다. P034, P035, P038을 이 질문별로 읽으면 각 결과가 전달하는 정보가 분명하다.</p>
+<p>다른 경로에서는 정수 행렬 위 순환을 잔여체에서 평가하고 등변 지표의 수를 센다. 이 유한 단계의 비교와 K군을 통한 전역 국소화 핵의 제어가 결합하여 예외 소수·층을 처리한다. Z2 묶음에서 정수계수인지 유한계수인지를 매번 기록하고, 마지막 W12에서는 얻은 상계가 <span class="math">$\ell=2$</span>와 예외층에 어떤 형태로 쓰이는지 확인한다.</p>
+<h2 id="대학원생의-시작-단위">대학원생의 시작 단위</h2>
+<p><strong>Z2.K5·P036의 유한 등변 지표 계수</strong> · Blueprint v13 §§8.1.2–8.1.4, 149–155쪽(7쪽). 시작 과제는 평가로 분리된 유한 부분집합들의 크기에 공통 상한이 있을 때 전체 상의 크기도 그 이하임을 확인하는 것이다. 그 수치 상한을 실제로 얻는 분리 정리와 정수 호몰로지의 비틀림 추정은 별도의 입력이다. <a href="../../notes/ktheory/index.html">시작 읽기 자료</a></p>
+<p><strong>읽고 남길 것</strong>　서로 구별해야 하는 지표 두 개를 택하고, 어떤 평가가 그 둘을 분리하는지 계수 논증에서 찾는다.</p>
+<h2 id="배경과-확인된-자료">배경과 확인된 자료</h2>
+<p>군 호몰로지, 보편계수 정리, 안정 범위, 유한 아벨군의 지표와 비틀림, 수체의 정수환. 후반에는 étale 코호몰로지의 Tate 꼬임과 국소화 사상이 필요하다.</p>
+<p>AI 검토(R19)는 Borel의 산술군 안정 실수 코호몰로지에서 유리 랭크를 찾았다고 보고한다. AI 검토(R19·R21)는 Soulé의 대수적 정수 K이론의 비틀림 상계를 대조했다고 보고한다. Borel §12 명제 12.2, Soulé §4.1 정리 1 및 §§4.3–4.4의 위치는 이 아틀라스에서 검증되지 않았다. 계수환·제외 소수·판별식 의존성은 각각 확인해야 한다.</p>
+<p>문헌 확인 범위와 수학적 판단의 근거는 각 검토 기록에 남아 있다. <a href="../../reviews/R19_review.html">R19_review</a> · <a href="../../reviews/R21_review.html">R21_review</a></p>
+<h2 id="읽기-순서">읽기 순서</h2>
+<p>입문부터 순서대로 읽되, 이미 익숙한 단위는 단위 카드의 가정과 결론만 확인하고 넘어갈 수 있다. 아래 순서는 학습을 위한 경로다. 선언 간 직접 의존성은 각 카드와 분해 지도를 따른다.</p>
+<h3 id="입문">입문</h3>
+<ol><li><strong><a href="../../units/Z2.K2.html">Z2.K2</a></strong> · 정수 행렬 순환의 잔여 평가</li><li><strong><a href="../../units/Z2.K5.html">Z2.K5</a></strong> · 지표의 등변 계수</li><li><strong><a href="../../units/Z2.K8.html">Z2.K8</a></strong> · 유한 쌍대성과 길이</li><li><strong><a href="../../units/P034.html">P034</a></strong> · 홀수차 랭크 조건</li></ol>
+<h3 id="핵심-논증">핵심 논증</h3>
+<ol><li><strong><a href="../../units/Z2.K1.html">Z2.K1</a></strong> · 순환 탑에서의 국소화 핵</li><li><strong><a href="../../units/P035.html">P035</a></strong> · 비틀림의 안정화</li><li><strong><a href="../../units/P038.html">P038</a></strong> · 비틀림 크기의 상계</li></ol>
+<h3 id="미해결-가정과-적용-범위">미해결 가정과 적용 범위</h3>
+<ol><li><strong><a href="../../units/W05.html">W05</a></strong> · 모든 필요한 소수에서의 정량적 두 번째 코호몰로지</li><li><strong><a href="../../units/W12.html">W12</a></strong> · 예외층에 사용하는 균일한 구간</li></ol>
+<h2 id="열린-질문">열린 질문</h2>
+<ol><li>W05가 허용하는 ℓ이 Soulé의 곱에 포함되는지 e, [L:ℚ]의 함수로 검사하면 어떤 작은 소수가 남는가? 그 소수에서 쓰는 추가 정수계수 추정은 무엇인가?</li><li>P034에서 k+1&lt;r₂(L)인 범위가 필요한 이유는 무엇이며, Borel의 유리 랭크 공식으로 확인되는 등식과 범위 조건은 어느 부분에서 갈리는가?</li><li>P035의 안정화 사상이 보존하는 대상은 전체 정수 비틀림인가, 특정 소수 부분인가? Z2.K7로 넘어갈 때 남은 소수 인자를 따로 추적하라.</li></ol>
+<p><a href="../../questions/ktheory.html">질문에 답할 때 확인할 자료</a> · <a href="../../tracks/ktheory/units.html">분야별 전체 단위 목록</a> · <a href="../../dashboard/index.html">전체 대시보드</a></p>
+<h2 id="11개-주-단위의-등급-대조">11개 주 단위의 등급 대조</h2>
+<p>아래 표는 AI 검토 R4·R5·AI 검토 R20의 판정을 기록한다. L1은 10개, L2는 1개다. 줄 번호는 각 심사의 원본을 기준으로 한다. <a href="../../data/grade_evidence.json">선언별 심사 판정</a></p>
+<div class="scroll"><table>
+<thead><tr><th>단위</th><th>등급</th><th>AI 검토·원본 줄</th><th>판정의 범위</th></tr></thead>
+<tbody><tr><td><a href="../../units/P032.html">P032</a></td><td>L1</td><td><a href="../../reviews/R20_review.html">R20</a> 58, 110</td><td>적분 순환의 균일 평가 명제를 대조했다. 순환 구성의 서술은 개요다.</td></tr>
+<tr><td><a href="../../units/P033.html">P033</a></td><td>L1</td><td><a href="../../reviews/R20_review.html">R20</a> 59, 110</td><td>스칼라 프리즘의 행렬식 평가에 대해 AI 검토 R20이 명제를 대조했다.</td></tr>
+<tr><td><a href="../../units/P034.html">P034</a></td><td>L1</td><td><a href="../../reviews/R5_review_A.html">R5 A</a> 10–12</td><td>홀수차 호몰로지와 랭크 명제를 대조했고 증명에는 유보가 있다.</td></tr>
+<tr><td><a href="../../units/P035.html">P035</a></td><td>L1</td><td><a href="../../reviews/R20_review.html">R20</a> 111</td><td>안정 범위의 비틀림 크기 명제를 대조했다. 증명에 관한 R5 A의 유보가 있다.</td></tr>
+<tr><td><a href="../../units/P036.html">P036</a></td><td>L1</td><td><a href="../../reviews/R20_review.html">R20</a> 112</td><td>주어진 분리 조건에서 유한 계수와 지수 손실 명제를 대조했다.</td></tr>
+<tr><td><a href="../../units/P037.html">P037</a></td><td>L1</td><td><a href="../../reviews/R20_review.html">R20</a> 113</td><td>층별 상계를 입력으로 하는 국소화 핵 명제를 대조했다.</td></tr>
+<tr><td><a href="../../units/P038.html">P038</a></td><td>L1</td><td><a href="../../reviews/R20_review.html">R20</a> 114</td><td>모든 소수의 비틀림 상계를 대조했다. AI 검토 R4의 블루프린트와 달리 v3 P038의 서술은 개요다.</td></tr>
+<tr><td><a href="../../units/P039.html">P039</a></td><td>L1</td><td><a href="../../reviews/R4_review_Z2.html">R4 Z2</a> 91–123</td><td>블루프린트에서 공통 선언을 대조했다. 판별식 지수 하나를 쓰는 v3의 서술은 개요다.</td></tr>
+<tr><td><a href="../../units/Z2.K2.html">Z2.K2</a></td><td>L1</td><td><a href="../../reviews/R4_review_Z2.html">R4 Z2</a> 12–16</td><td>정수 순환 평가의 명제를 대조했다. 사슬 및 호몰로지 비교에 남은 지적이 있다.</td></tr>
+<tr><td><a href="../../units/Z2.K4.html">Z2.K4</a></td><td>L1</td><td><a href="../../reviews/R5_review_A.html">R5 A</a> 10–12</td><td>안정 홀수차 호몰로지와 비틀림에 관한 명제는 일치하고 증명에는 유보가 있다.</td></tr>
+<tr><td><a href="../../units/Z2.K7.html">Z2.K7</a></td><td>L2</td><td><a href="../../reviews/R4_review_Z2.html">R4 Z2</a> 91–123</td><td>AI 검토 R4가 주어진 입력에서 정수 비틀림의 상계와 지수를 증명하는 블루프린트 본문을 확인했다.</td></tr>
+</tbody></table></div></main><footer><a href="../../help.html">Using the local edition</a></footer></body></html>

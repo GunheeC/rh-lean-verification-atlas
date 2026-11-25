@@ -1,0 +1,109 @@
+{
+  "id": "Z1.3.07",
+  "title": "Failure of the local Greenberg condition",
+  "track": {
+    "primary": "galois",
+    "secondary": []
+  },
+  "statement": "Given the matching global and local assertions, every allowed modular ordinary normal form has a system violating the Greenberg condition at its specified place.",
+  "assumptions": [
+    "Z1.3.04",
+    "Z1.3.05",
+    "Z1.3.06",
+    "source:blueprint_v13"
+  ],
+  "hypothesis_details": [
+    "Fix an ordinary normal form.",
+    "Assume its global and local existence assertions with a common pin."
+  ],
+  "lean": [
+    {
+      "name": "GlobalTheory.KZ.zetaUr_of_halves2",
+      "file": "Development/AbelianVarietyTheory/Definitions/Foundations/ZetaElementsUnramifiedOrdinaryOfEulerSystemInert.lean",
+      "line0": 43,
+      "line1": 46,
+      "sha256": "fe63d8687476a61432ad9d9a2fb56293cd94ba2d02e18cfc62920577b5157c9a",
+      "dominated": 23,
+      "graph": "allChi",
+      "role": "statement"
+    }
+  ],
+  "expositions": [
+    {
+      "document": "notes/blueprint/Z1.3.07.tex",
+      "section": "r5:Z1.3.07, r6:review:Z1.3.07",
+      "pages": []
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r5:Z1.3.07",
+      "pages": [
+        348,
+        348
+      ],
+      "printed_page": 323,
+      "scope": "First page of this named destination."
+    },
+    {
+      "document": "blueprint_v13",
+      "section": "r6:review:Z1.3.07",
+      "pages": [
+        367,
+        367
+      ],
+      "printed_page": 342,
+      "scope": "First page of this named destination."
+    }
+  ],
+  "status": "Full",
+  "grade": "L2",
+  "reviews": [
+    "reviews/R5_review_C.md",
+    "reviews/R20_review.md"
+  ],
+  "prerequisites": [
+    "Z1.3.04",
+    "Z1.3.05",
+    "Z1.3.06"
+  ],
+  "size_pages": null,
+  "open_questions": [
+    "none-recorded"
+  ],
+  "last_checked": "2026-11-24",
+  "blueprint_members": [
+    "Z1.3.07"
+  ],
+  "representative": "GlobalTheory.KZ.zetaUr_of_halves2",
+  "statement_declarations": [
+    "GlobalTheory.KZ.zetaUr_of_halves2"
+  ],
+  "grade_scope": "Named statement declarations with the hypotheses above. Chart supplier records have their own review scopes.",
+  "confirmation_basis": "Minimum across the statement declarations, using registry rows for the blueprint assignments listed here. Reviews of other expositions of a shared declaration are included as context.",
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "slug": "failure-of-the-local-greenberg-condition",
+  "aliases": [
+    "zetaUr_of_halves2",
+    "Z1.3.07 Failure of the local Greenberg condition"
+  ],
+  "background": [
+    "Greenberg local conditions",
+    "Ordinary Galois representations"
+  ],
+  "hypothesis_source": {
+    "document": "blueprint_v13",
+    "section": "r5:Z1.3.07",
+    "pages": [
+      348,
+      348
+    ]
+  },
+  "question_sources": [],
+  "reader_metadata_checked": "2026-11-24",
+  "prerequisite_sources": {
+    "Z1.3.04": "statement-reading",
+    "Z1.3.05": "statement-reading",
+    "Z1.3.06": "graph"
+  },
+  "summary": "The matching local and global assertions give an integral system violating the Greenberg condition at the designated place for each allowed modular ordinary normal form. The violation is the local feature needed of that global system."
+}

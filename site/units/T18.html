@@ -1,0 +1,39 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>T18 · Three arithmetic Hilbert–Samuel consequences · RH verification atlas</title><link rel="stylesheet" href="../atlas.css"><script>window.MathJax={tex:{inlineMath:[["$","$"]],displayMath:[["$$","$$"]],processEscapes:true},options:{ignoreHtmlClass:"no-math"}};</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script></head><body><header><div class="bar"><a class="brand" href="../index.html">RH verification atlas</a><nav aria-label="Atlas navigation"><a href="../index.html">Home</a> <a href="../STATUS.html">Status</a> <a href="../MAP.html">Map</a> <a href="../dashboard/index.html">Tracks</a> <a href="../lookup/search.html">Search declarations</a></nav></div></header><main><h1 id="t18--three-arithmetic-hilbertsamuel-consequences">T18 · Three arithmetic Hilbert–Samuel consequences</h1>
+<p class="notice">AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved</p>
+<p>Three consequences of arithmetic Hilbert–Samuel theory enter the deep estimate. The first gives the sign of a top intersection. The other two bound small-section growth from above on two specified chart lattices. Their hypotheses and their lattices must be kept separate in applications.</p>
+<p><code>three-arithmetic-hilbertsamuel-consequences</code> · <a href="../tracks/arakelov/index.html">Arakelov geometry and geometry of numbers</a></p>
+<p><strong>Outlined</strong> · <strong>L0</strong> Declaration pinned; no review of this unit · Record generated 2026-11-25 (no human check).</p>
+<p><strong>First-pass outline of the head proof term</strong> · 9 dominated core lines. In scope, this note describes what the top-level term calls; it does not explain the dependency cone beneath it.</p>
+<div class="scroll"><table>
+<thead><tr><th>1 · Lean pinned</th><th>2 · Statement compared</th><th>3 · Prose</th><th>4 · Steps</th><th>5 · AI review</th><th>6 · Human</th></tr></thead>
+<tbody><tr><td>✓</td><td>–</td><td>Outlined</td><td>4</td><td>–</td><td>0 of 4 steps</td></tr>
+</tbody></table></div>
+<p><a href="T18.check.html">Numbered proof and check records</a> · <a href="../PROGRESS.html">Progress and counting rules</a></p>
+<h2 id="statement">Statement</h2>
+<p>For each intersection system and finite multihomogeneous presentation as above the following three statements hold. (i) On an arithmetic variety of dimension <span class="math">$D+1$</span>, relative semipositivity, fibre nefness, conjugation invariance and nonnegative degree on every arithmetic curve imply <span class="math">$I_P(A^{D+1})\ge0$</span>. (ii) For a birational characteristic-zero presentation with <span class="math">$D\ge1$</span>, small-generation data and conjugation invariance, the limsup of the small-section count for <code>chartLat</code>, divided in degree <span class="math">$n$</span> by <span class="math">$n^{D+1}/(D+1)!$</span>, is at most <span class="math">$I_P(A^{D+1})$</span>. (iii) For a birational presentation over a field with <span class="math">$D\ge1$</span>, nonnegative multidegree, relative semipositivity at <span class="math">$P_0\subseteq P$</span>, bounded monomials and conjugation invariance, the same limsup bound holds for <code>chartLatNm</code>.</p>
+<h2 id="assumptions">Assumptions</h2>
+<ul><li>Fix the stated intersection system and finite multihomogeneous presentation. The positivity clause assumes semipositivity, fibre nefness, conjugation invariance and nonnegative curve degrees.</li><li>The chart-lattice clause assumes a birational characteristic-zero presentation, <span class="math">$D\ge1$</span>, small generation and conjugation invariance.</li><li>For the normed-chart clause use the stated relative semipositivity, nonnegative multidegree, bounded monomials, dimension and invariance conditions.</li></ul>
+<p>Sources for the assumptions · <a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a></p>
+<p><strong>New exposition · pending_review.</strong> This edition has no independent review of the new argument. Earlier verdicts below retain their stated scopes.</p>
+<h2 id="where-to-read">Where to read</h2>
+<p>Blueprint v13 and papers v3–v5 are this atlas project’s own AI-written, unpublished drafts. They have no human review and were not written by the author of the Lean development. Blueprint v13, its separate cover, and paper v5 are distributed as assets of release v0.1.0. For v3 and v4 the atlas supplies selected excerpts and notes. <a href="../data/editions.json">Edition register</a></p>
+<ul><li><a href="../notes/units/T18_round4.html">T18 · Three arithmetic Hilbert–Samuel consequences</a>, pp. 1–3 in the atlas print layout. Round-4 outline under the named inputs; pending_review.</li><li><a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a>, 5.28 (sub:T18), p. 45. Statement starts on the cited page.</li><li><a href="../notes/units/T18.tex">Manuscript source excerpt</a> · section <code>sub:T18</code></li></ul>
+<h3 id="declaration-name-matches">Declaration-name matches</h3>
+<ul><li><a href="../crosswalk/naskrecki.html">Naskręcki’s reading project</a> · 1 matching declaration.</li><li><a href="../crosswalk/jae-63.html">jae-63/rh-alpoge-blueprint</a> · 1 matching declaration.</li></ul>
+<h2 id="evidence">Evidence</h2>
+<p>The pinned declaration is recorded in the formal source. No higher-level verdict is assigned to this unit.</p>
+<h2 id="lean-declarations">Lean declarations</h2>
+<ul><li><code>PositivityTheory.Pf1.HilbertSamuelMoriwaki.hsUse_outright</code>  <br><a href="https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/WeilBound/CoreStatements/AutomorphicKernels/MoriwakiBigness/MoriwakiBigTheorem/Outright.lean#L13-L15"><code>Outright.lean</code></a>, lines 13–15 · 9 dominated lines · SHA-256 <code>b0951c9cdd3b</code>.</li></ul>
+<p><a href="T18.yaml">Machine record and full declaration hashes</a> · <a href="../lookup/declarations.html">Declaration lookup</a></p>
+<h2 id="reading-prerequisites">Reading prerequisites</h2>
+<p>Background · Arithmetic Hilbert–Samuel theory · Small sections · Nefness.</p>
+<p>No prior atlas unit is specified.</p>
+<h2 id="open-questions">Open questions</h2>
+<p>None recorded.</p>
+<h2 id="graph-connections">Graph connections</h2>
+<p>Arrows may connect either a unit’s main declaration or an indexed member.</p>
+<p><strong>Uses</strong> · No recorded edge.</p>
+<p><strong>Used by</strong> · <a href="P012.html">P012</a></p>
+<p><a href="../data/unit_graph.json">Declaration witnesses and graph scope</a></p>
+<p>Lookup aliases · <code>Three arithmetic Hilbert--Samuel consequences</code>, <code>hsUse_outright</code>, <code>T18 Three arithmetic Hilbert–Samuel consequences</code></p>
+<p>&lt;!-- Unit metadata SHA-256 27ae9a20f689ba6d11e1c668ffabec924a8c1ed4ae0ff8abcbe9bc0a96d8e12e --&gt;</p></main><footer><a href="../help.html">Using the local edition</a></footer></body></html>

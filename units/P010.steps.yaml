@@ -1,0 +1,160 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "P010",
+  "edition_sha256": "88b4750b193761d29efe1b09cd9171bbf56b5fc3bc9eaef1ef31bfe1a2d4b96c",
+  "note_sha256": "3a6aad25b0645aab98175009e95d5015a38456ae5b2616c833b5043384ccd400",
+  "statement_sha256": "47e5ef46fccbc9a7369d5ad0c6a9b72c507d5c812a3d3d2a7c140df422f0f8e0",
+  "sources": [
+    {
+      "path": "notes/units/P010_round3.md",
+      "sha256": "3a6aad25b0645aab98175009e95d5015a38456ae5b2616c833b5043384ccd400"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The row asks for a single representation with the specified weight and embedding-indexed multisets at each given global datum.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: quantified row specification"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.GalStar.Row0b",
+          "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConjBis.lean",
+          "line0": 69,
+          "line1": 73
+        }
+      ],
+      "source": "notes/units/P010_round3.md",
+      "anchor": "Read the quantifiers before supplying the row",
+      "source_lines": [
+        7,
+        7
+      ],
+      "claim_sha256": "363e8c7ccd6ec1ff06e2a93cd9cd2ee341a179ac78832dd10f6cddee9d528200",
+      "passage_sha256": "a2c951167d42582bf206597aadf9e784c8ba55e48ee606ca712a62f57266aa53",
+      "sha256": "71ec4fc779d06083ed3150b6094a6c6a9724e064a99d09689098e483e1d16b5f",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The geometric existence and theta-lift suppliers are combined to build the strong local-global row.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: geometric existence and theta lift"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter",
+          "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/RowSrc.lean",
+          "line0": 6,
+          "line1": 6
+        }
+      ],
+      "source": "notes/units/P010_round3.md",
+      "anchor": "Follow the geometric supplier",
+      "source_lines": [
+        15,
+        15
+      ],
+      "claim_sha256": "d89bc707d729cb6d23acf7116ae89f8e874552989902e9b0db7cf367335f777a",
+      "passage_sha256": "9fea64edc9aa4c599b49a0e5653c34e11f728fb00cca632ec27226989a137cb2",
+      "sha256": "4d32836c19cfd0f9faf6a455c659244c4d64c3cf395b57d9e99baa56bef77879",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The weakening preserves the representation and its witnesses, so P011 applies to the resulting row.",
+      "kind": "assembly",
+      "uses": [
+        "S2",
+        "P011"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.GalStar.Row0.row0b",
+          "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConjBis.lean",
+          "line0": 84,
+          "line1": 86
+        },
+        {
+          "name": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+          "line0": 7,
+          "line1": 8
+        }
+      ],
+      "source": "notes/units/P010_round3.md",
+      "anchor": "Weaken the row and discharge the implication",
+      "source_lines": [
+        21,
+        21
+      ],
+      "claim_sha256": "4737cb0c6a102eeb31faf1bce5eabf709bb9c03a379582b51c83f74e0633a22d",
+      "passage_sha256": "d45f5b2a46a76c1dd47a12bbec14a5fabaebdc155e694f2a1602f0adbbfdd4f1",
+      "sha256": "1003d16963b58fab4725c0915245a4ade6f5970ab83401f392e64f61f38e5aab",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "AwayB imposes its dimension, toral and restricted tame-inertia clauses for every admissible local reciprocity map.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: restricted local compatibility predicate"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.GalStar.AwayB",
+          "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/TypeConditions/WeightsConjBis.lean",
+          "line0": 26,
+          "line1": 31
+        }
+      ],
+      "source": "notes/units/P010_round3.md",
+      "anchor": "Round 4 source comparison",
+      "source_lines": [
+        29,
+        29
+      ],
+      "claim_sha256": "86bb2b982972a1bd6eefd0f3483bc3618c1c9962f70fa31501f0b24f030eb734",
+      "passage_sha256": "4a15707488c1f6fe06d426896f5ee0c8d35b6eac5b8b138c7c6fc5966b9c9aa4",
+      "sha256": "ed77d1f52a601d10b4311395e562b83568d76bb7bf8bd526f82c47ffb9a22b85",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "19793671b6ce40df42307405e485107df8f3b0da94b90aa8b8be7966179e42b2",
+      "sources": [
+        {
+          "path": "notes/units/P010_round3.md",
+          "sha256": "4dd3b843d3ca698edb70deacb9237fe4fee195198ea4133df5076f6dfbbc68e4"
+        }
+      ],
+      "statement_sha256": "47e5ef46fccbc9a7369d5ad0c6a9b72c507d5c812a3d3d2a7c140df422f0f8e0",
+      "steps": {
+        "S1": "71ec4fc779d06083ed3150b6094a6c6a9724e064a99d09689098e483e1d16b5f",
+        "S2": "4d32836c19cfd0f9faf6a455c659244c4d64c3cf395b57d9e99baa56bef77879",
+        "S3": "1003d16963b58fab4725c0915245a4ade6f5970ab83401f392e64f61f38e5aab",
+        "S4": "ed77d1f52a601d10b4311395e562b83568d76bb7bf8bd526f82c47ffb9a22b85"
+      },
+      "step_texts": {
+        "S1": "The row asks for a single representation with the specified weight and embedding-indexed multisets at each given global datum.",
+        "S2": "The geometric existence and theta-lift suppliers are combined to build the strong local-global row.",
+        "S3": "The weakening preserves the representation and its witnesses, so P011 applies to the resulting row.",
+        "S4": "AwayB imposes its dimension, toral and restricted tame-inertia clauses for every admissible local reciprocity map."
+      },
+      "step_passages": {
+        "S1": "a2c951167d42582bf206597aadf9e784c8ba55e48ee606ca712a62f57266aa53",
+        "S2": "9fea64edc9aa4c599b49a0e5653c34e11f728fb00cca632ec27226989a137cb2",
+        "S3": "d45f5b2a46a76c1dd47a12bbec14a5fabaebdc155e694f2a1602f0adbbfdd4f1",
+        "S4": "4a15707488c1f6fe06d426896f5ee0c8d35b6eac5b8b138c7c6fc5966b9c9aa4"
+      }
+    }
+  ]
+}

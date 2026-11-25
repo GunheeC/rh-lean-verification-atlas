@@ -1,0 +1,168 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "Z2.K7",
+  "edition_sha256": "1265f19e0b1b0bf5e900bc0e1c9d77ce0f3897d0b783b6be1159d3090ba7ace6",
+  "note_sha256": "cbcbdc9ef29468e121c93e192946554aba96c6f14cd5e5633825a05907c19567",
+  "statement_sha256": "a2281b49ff1365298b55dd9a1f5e1eeba6f1facef3020095f44fcacba71d49f1",
+  "sources": [
+    {
+      "path": "notes/blueprint/Z2.K7.tex",
+      "sha256": "cbcbdc9ef29468e121c93e192946554aba96c6f14cd5e5633825a05907c19567"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The convex nerve construction gives exact augmented chains on the selected simplices.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: local finiteness and convexity of the cover"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.KT.sx_exact",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HermiteNormalForms/Assembly.lean",
+          "line0": 14,
+          "line1": 17
+        }
+      ],
+      "source": "notes/blueprint/Z2.K7.tex",
+      "anchor": "Choose a witness in",
+      "source_lines": [
+        170,
+        198
+      ],
+      "claim_sha256": "a6a2dce4e937e56aa23020b221ef7a1f015a48373fac3ee16a0a070eb4b47eae",
+      "passage_sha256": "2e4d492b8764be6961cc409f811e5a73dd2d967ca241db9c118847b95a0c36eb",
+      "sha256": "882b643e9911be4ad850be35de042208e87e648f12c1a5e65916259aad293064",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The integral normal-form count bounds the number of face orbits in each permitted degree.",
+      "kind": "inequality",
+      "uses": [
+        "input: Hermite normal form and determinant bounds"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.KT.orbnum",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HermiteNormalForms/Orbnum.lean",
+          "line0": 80,
+          "line1": 92
+        }
+      ],
+      "source": "notes/blueprint/Z2.K7.tex",
+      "anchor": "the residue matrix",
+      "source_lines": [
+        246,
+        271
+      ],
+      "claim_sha256": "d5bed38e2daaca79c9f13c7b69ce3e63b3a7928028424c29749678d2974158e3",
+      "passage_sha256": "6ffd121f1adb3ef94b8bc3b0ad18f224854a747ebd4d36ee1437a67acd184bee",
+      "sha256": "329b6910da8789f98df19520b1e63d2b6810dc37116f30204f9883d86fb37030",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Reduction modulo three bounds the order of each finite face stabilizer by the size of the finite matrix ring.",
+      "kind": "inequality",
+      "uses": [
+        "input: positive definite stabilizers",
+        "standard: torsion-free principal congruence subgroup"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.KT.stab",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HermiteNormalForms/ImportsAlt.lean",
+          "line0": 8,
+          "line1": 26
+        }
+      ],
+      "source": "notes/blueprint/Z2.K7.tex",
+      "anchor": "The finite matrix ring has",
+      "source_lines": [
+        273,
+        291
+      ],
+      "claim_sha256": "54048bc60dde0c11f42390c4732fec2efdf44f7734b9b1ad0cf505472ff70c87",
+      "passage_sha256": "1de8206203782e5c906f63b5b109f0c9acc23f93f54b75966a5cac8e766078b4",
+      "sha256": "9305e074db5ec25a004423a50637bb7a05ebdfd919e13060deb1580a3870dac8",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "Dimensional shifting and the determinant bound for the boundary columns bound homological torsion at every prime.",
+      "kind": "inequality",
+      "uses": [
+        "S1",
+        "S2",
+        "S3",
+        "standard: Shapiro lemma and Hadamard inequality"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.KH.mainFace",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/TorsionBoundsChains/LogLeExp.lean",
+          "line0": 59,
+          "line1": 66
+        },
+        {
+          "name": "UpperTheory.V.KT.tors_le",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/HermiteNormalForms/Assembly.lean",
+          "line0": 25,
+          "line1": 30
+        }
+      ],
+      "source": "notes/blueprint/Z2.K7.tex",
+      "anchor": "every column has",
+      "source_lines": [
+        314,
+        342
+      ],
+      "claim_sha256": "dd32432dd3dd22e6890bf158f5d36c1d7f14227cdd7d03099041f20bd1bbf2ca",
+      "passage_sha256": "eaa866220293cf63aaccb0b2269dcf43e0c6c054ee2c8bdacd9bb32dbde4b9c9",
+      "sha256": "7f9804d77e7f7bcdf3dfdd8783c22dd96460a57c5a64e6441aed07b8852bf500",
+      "ai_review": []
+    },
+    {
+      "id": "S5",
+      "status": "active",
+      "claim": "Substituting the rank, degree, and class-number bounds absorbs the two successive torsion orders into one uniform exponential bound.",
+      "kind": "inequality",
+      "uses": [
+        "S4",
+        "input: numerical and class-number estimates"
+      ],
+      "lean": [
+        {
+          "name": "UpperTheory.V.ZK.torsAll",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/ExponentLe.lean",
+          "line0": 70,
+          "line1": 117
+        },
+        {
+          "name": "UpperTheory.V.ZK.sNum",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ClassCounting/NumThree.lean",
+          "line0": 211,
+          "line1": 378
+        }
+      ],
+      "source": "notes/blueprint/Z2.K7.tex",
+      "anchor": "This proves the proposition with",
+      "source_lines": [
+        64,
+        84
+      ],
+      "claim_sha256": "38db8ecf1de9613d67010cd5ff4b3f4bc3407ce262b73b8040d8459a3a574b83",
+      "passage_sha256": "64ef29a0a328c0592ae53d9d3cdd20cd6555e949247427b056d467c3761d4345",
+      "sha256": "6aaf5f68b6ecc6ef1d774ea0b9ea9dc472ca4f920169a48c5e90c88c5156f8ed",
+      "ai_review": []
+    }
+  ],
+  "history": []
+}

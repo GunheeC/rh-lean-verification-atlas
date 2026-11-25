@@ -1,0 +1,187 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "T12",
+  "edition_sha256": "755790cd3b21898f5df800e5d3087ace81af73d3e26a0a47c12b43735ac990ad",
+  "note_sha256": "0a28c4bec73fb9a58ac84ec5e6cccbe7bae2fd210b76bef63aad74c2dcd3db68",
+  "statement_sha256": "0d4a48d04c2df1a00391178b7b9aac0f99b9cb4906f1f5c61091f56dbba7caf9",
+  "sources": [
+    {
+      "path": "notes/units/T12_round3.md",
+      "sha256": "0a28c4bec73fb9a58ac84ec5e6cccbe7bae2fd210b76bef63aad74c2dcd3db68"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The value condition uses a meromorphic continuation analytic at the prescribed evaluation point.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: associated section, parameter and Haar domain"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.ThK.Dbl.EisValueAt",
+          "file": "Development/WeilBound/ThetaLifts/LatticeBasics/Hypotheses2.lean",
+          "line0": 76,
+          "line1": 78
+        }
+      ],
+      "source": "notes/units/T12_round3.md",
+      "anchor": "Put $s_0=(m-n)/2$ using subtraction in $\\mathbb C$. At each fixed $x$ the conclusion requires a mero",
+      "source_lines": [
+        11,
+        11
+      ],
+      "claim_sha256": "ad0cf3675f142515a3a611f063bf019d77e152c0664bad6442916f69de14c40f",
+      "passage_sha256": "a45fc8abf740142f16cbde42d325e75f2cbb74609acd8184bb4e859a8194188e",
+      "sha256": "9b0ef5b564082515f32c72ac5cd34fe284d1bb58da2b1115e2789297f312352b",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "On the common right half-plane the constant term splits into the prescribed two coset sums.",
+      "kind": "assembly",
+      "uses": [
+        "input: orbit decomposition and absolute convergence"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.SiegelWeilFormula.Act.ctSplit_of_parts",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilActions/CtSplitOfParts.lean",
+          "line0": 137,
+          "line1": 158
+        }
+      ],
+      "source": "notes/units/T12_round3.md",
+      "anchor": "Start in the half-plane of absolute convergence. For the section and data in the splitting theorem t",
+      "source_lines": [
+        15,
+        15
+      ],
+      "claim_sha256": "ed3c641ad8e26360a207543ad83002602360ee3be53e3b8ee62de0342a3e63fc",
+      "passage_sha256": "523cc26e4a46eb7a144e9caf711ce5f921c20eb7bf380a4b658913a9b0c91905",
+      "sha256": "fc280295ca6f1bcf562c8d4a30f20ed19c08b8d3de9599953a77a66d1011f8ad",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The Weyl and local model inputs pass the splitting identity into the standard formula's reduction.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S2",
+        "input: Poisson and holomorphic leading term"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.SiegelWeilFormula.Fin.siegelWeilStd_mid",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilStandard/SiegelWeilStdMid.lean",
+          "line0": 16,
+          "line1": 20
+        }
+      ],
+      "source": "notes/units/T12_round3.md",
+      "anchor": "Apply Poisson summation to the Weyl operation, supplementing it by the bijectivity, theta and unique",
+      "source_lines": [
+        17,
+        17
+      ],
+      "claim_sha256": "c6926c13463f277335cb45f89b6e129fd6908422965f4668fca68de32e3e1dfd",
+      "passage_sha256": "ed2f51789c954900a01fb6cc35a147f62f99a4828b5baf68b086df326be1e313",
+      "sha256": "fbfbb7457548c3cc298a124369fee5607b3195f92b50a5e2bde8d4ae79b51f5b",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The equal and lower-rank branch uses the rank-change input built with the singular Fourier and holomorphic data.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S3",
+        "input: rank-change and Whittaker comparisons"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.SiegelWeilFormula.Fin.siegelWeilStd_of",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilStandard/SiegelWeilStdOf.lean",
+          "line0": 59,
+          "line1": 67
+        }
+      ],
+      "source": "notes/units/T12_round3.md",
+      "anchor": "The finite local, unramified and real coefficient formulas feed distinct Whittaker comparisons in th",
+      "source_lines": [
+        21,
+        21
+      ],
+      "claim_sha256": "9bd0ac46f929ab330a8f5aec2cd64202715ba81c455e15c02f4a8c9d0ce61ded",
+      "passage_sha256": "b50990911630fc3aac86a0b3bf6a4bec18325a9b1171803cc5de8482482a4e5b",
+      "sha256": "4ac2524bdadfce84be802cd1bf6701ea3590a76cb7bdaed41072ed0f111cd489",
+      "ai_review": []
+    },
+    {
+      "id": "S5",
+      "status": "active",
+      "claim": "The special value multiplies the normalized average by one for $n<m$ and by two for $m\\le n$.",
+      "kind": "case-split",
+      "uses": [
+        "S1",
+        "S4",
+        "input: strict-rank identity"
+      ],
+      "lean": [
+        {
+          "name": "PositivityTheory.SiegelWeilFormula.Atop.fieldOf",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/FockVacuumBounds/FieldOf.lean",
+          "line0": 50,
+          "line1": 63
+        }
+      ],
+      "source": "notes/units/T12_round3.md",
+      "anchor": "Return to the original section at $x$. **Atop.fieldOf** tests $n<m$. In that case the strict branch ",
+      "source_lines": [
+        23,
+        23
+      ],
+      "claim_sha256": "9a907e3801e0b6c8917c9edda6a68d0c4fddcf96a2b56e761825650cc31ac5b9",
+      "passage_sha256": "d3319824d325d173910a465dfb699259ade9a8a4710fde3acc5d3b96d9418f04",
+      "sha256": "c0122d2f16c9eade3c690e67997deac3f74892051f0ffa1ad251416bce13ec18",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "2cdef756d4b200e863402c51690c346e5f200c9ddd67531a86620188e3c4d793",
+      "sources": [
+        {
+          "path": "notes/units/T12_round3.md",
+          "sha256": "fe597187632ca4af279fa9c553cef268e25e8ecba1a2c662a815cd6741e6df4c"
+        }
+      ],
+      "statement_sha256": "0d4a48d04c2df1a00391178b7b9aac0f99b9cb4906f1f5c61091f56dbba7caf9",
+      "steps": {
+        "S1": "9b0ef5b564082515f32c72ac5cd34fe284d1bb58da2b1115e2789297f312352b",
+        "S2": "fc280295ca6f1bcf562c8d4a30f20ed19c08b8d3de9599953a77a66d1011f8ad",
+        "S3": "fbfbb7457548c3cc298a124369fee5607b3195f92b50a5e2bde8d4ae79b51f5b",
+        "S4": "4ac2524bdadfce84be802cd1bf6701ea3590a76cb7bdaed41072ed0f111cd489",
+        "S5": "c0122d2f16c9eade3c690e67997deac3f74892051f0ffa1ad251416bce13ec18"
+      },
+      "step_texts": {
+        "S1": "The value condition uses a meromorphic continuation analytic at the prescribed evaluation point.",
+        "S2": "On the common right half-plane the constant term splits into the prescribed two coset sums.",
+        "S3": "The Weyl and local model inputs pass the splitting identity into the standard formula's reduction.",
+        "S4": "The equal and lower-rank branch uses the rank-change input built with the singular Fourier and holomorphic data.",
+        "S5": "The special value multiplies the normalized average by one for $n<m$ and by two for $m\\le n$."
+      },
+      "step_passages": {
+        "S1": "a45fc8abf740142f16cbde42d325e75f2cbb74609acd8184bb4e859a8194188e",
+        "S2": "523cc26e4a46eb7a144e9caf711ce5f921c20eb7bf380a4b658913a9b0c91905",
+        "S3": "ed2f51789c954900a01fb6cc35a147f62f99a4828b5baf68b086df326be1e313",
+        "S4": "b50990911630fc3aac86a0b3bf6a4bec18325a9b1171803cc5de8482482a4e5b",
+        "S5": "d3319824d325d173910a465dfb699259ade9a8a4710fde3acc5d3b96d9418f04"
+      }
+    }
+  ]
+}

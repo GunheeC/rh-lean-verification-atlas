@@ -1,0 +1,124 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "Z42-SITES",
+  "edition_sha256": "cbebe867e453d1ce894fc53a14dc618303f2f8184db584d494eeffa1bc72bdc4",
+  "note_sha256": "e26ce9b04d40cf3c3528953874dc9dd3516b0ae8a385da5f6a41a7d0b293c02f",
+  "statement_sha256": "e23d9c89a8faee17765865ffdb1427693dc4f3dd072c3837ac8322fad38c07fb",
+  "sources": [
+    {
+      "path": "notes/blueprint/Z42-SITES.tex",
+      "sha256": "e26ce9b04d40cf3c3528953874dc9dd3516b0ae8a385da5f6a41a7d0b293c02f"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The small-prime and large-prime rank choices both satisfy the two rank bounds in Std.",
+      "kind": "case-split",
+      "uses": [
+        "input: served site, gate tie and rank bound"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.TwU.std_at_served",
+          "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/StdAtServed.lean",
+          "line0": 9,
+          "line1": 22
+        }
+      ],
+      "source": "notes/blueprint/Z42-SITES.tex",
+      "anchor": "Both branches satisfy",
+      "source_lines": [
+        7,
+        16
+      ],
+      "claim_sha256": "46e1675d955978a9d8daac9e8915aa01177f05eb481230aec3aebc98acc870f0",
+      "passage_sha256": "21be21f8e113e1dd0f3662e19ef49b6af1a7dfb2cb85a2a4c288938505024286",
+      "sha256": "37d41466685644e801575bccc66d309b5bd9b7a5dee1915e46d7b02d6ca4d8aa",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The fill's maximum bound and monotonicity imply the remaining individual weight conditions for Std.",
+      "kind": "inequality",
+      "uses": [
+        "input: bounds of the fixed fill"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.TwU.std_at_served",
+          "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/StdAtServed.lean",
+          "line0": 9,
+          "line1": 22
+        }
+      ],
+      "source": "notes/blueprint/Z42-SITES.tex",
+      "anchor": "Take the base-weight identity",
+      "source_lines": [
+        7,
+        16
+      ],
+      "claim_sha256": "7f0a2690269c59a7245a532b9cef34e38050e54d01ab12bbd49239481629f191",
+      "passage_sha256": "21be21f8e113e1dd0f3662e19ef49b6af1a7dfb2cb85a2a4c288938505024286",
+      "sha256": "ccd8e266b2b7d9d2421ed5161b00c83649ac6cfbd8421d14d9441cd367fedd53",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "At zero and at each successor the same point indexes the class, kernel lattice and determinant in the dictionary.",
+      "kind": "assembly",
+      "uses": [
+        "input: joint and chosen tuple"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.TwV.joint_dict",
+          "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/LatticeTupleJointDictionary.lean",
+          "line0": 16,
+          "line1": 25
+        }
+      ],
+      "source": "notes/blueprint/Z42-SITES.tex",
+      "anchor": "For the kernel lattice at zero",
+      "source_lines": [
+        36,
+        37
+      ],
+      "claim_sha256": "a80a5c6c9ecbb0e4e34af5ba212b21ad8823ade6debf2402dc97cfe43e29e530",
+      "passage_sha256": "835ddfcfcc04c4ad2592c9067bb03db85a688ca1674a01fbcf678c613c8fffa7",
+      "sha256": "b8c34955e2ea78fc558d3813cf961a23723fd4c7264893772f3da4c0a2474494",
+      "ai_review": []
+    },
+    {
+      "id": "S4",
+      "status": "active",
+      "claim": "The parity-adjusted conjugation of the embedding argument gives the required position embeddings at this site.",
+      "kind": "computation",
+      "uses": [
+        "input: embedding compatibility and comparison tie"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.TwV.pos_at_site",
+          "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/SitePlaceInducesPositionEmbeddings.lean",
+          "line0": 11,
+          "line1": 13
+        }
+      ],
+      "source": "notes/blueprint/Z42-SITES.tex",
+      "anchor": "Apply the position identity",
+      "source_lines": [
+        53,
+        54
+      ],
+      "claim_sha256": "7d98497696c2478d2d523f22d18aa121128b7bda1bb9e0611b29b08f11a41708",
+      "passage_sha256": "a842d8afeba454abf951d240fd5ac6f68ac20847cf101e9b1bc7b1ffe80a3d67",
+      "sha256": "59fbf0927da9184bca79f1ab286f40a34655f4b44561171fa51bdcda9000b752",
+      "ai_review": []
+    }
+  ],
+  "history": []
+}

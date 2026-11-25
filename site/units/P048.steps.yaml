@@ -1,0 +1,99 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "P048",
+  "edition_sha256": "779819711fe839435f941a8b2fb33f3fedb96b28c130d31c1372906788a2d559",
+  "note_sha256": "f5ddc13f5f67458414041cfcf92c02d9a42a4aa1a3c174be927bf934c7b9f6c3",
+  "statement_sha256": "5e32b6a2fff2fba7815d0740a8f19ed35e4c5c29ca42d719ef400784c86496fe",
+  "sources": [
+    {
+      "path": "notes/units/P048.tex",
+      "sha256": "f5ddc13f5f67458414041cfcf92c02d9a42a4aa1a3c174be927bf934c7b9f6c3"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The reference and twisted chart choices retain the stipulated level-zero lattice identification.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "input: four comparison suppliers on the specified columns"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.PerTwClose.twistedPeriodAdmissible_of_rowInt",
+          "file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/AdmissiblePeriodTwistOfIntegralRows.lean",
+          "line0": 14,
+          "line1": 21
+        }
+      ],
+      "source": "notes/units/P048.tex",
+      "anchor": "Choose the reference charts",
+      "source_lines": [
+        7,
+        16
+      ],
+      "claim_sha256": "e9b050fb2ef9f6762beab5a22b2f4770246b8b1abfd9767b1afecc6191def3c5",
+      "passage_sha256": "decbac00b998cd82d37555afe1ec5ddddba55db1d097c8d93ef32d0f935fe898",
+      "sha256": "cd0a81f8b46f46a5bdb5cf7af27aa43f7497c0f0cc3a9f6fbd3cdcd6d7482e83",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The polynomial entries use one coefficient-field realization across the permitted changes of frame.",
+      "kind": "appeal-to-input",
+      "uses": [
+        "S1",
+        "input: rational and integral comparison"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.PerTwClose.twistedPeriodAdmissible_of_rowInt",
+          "file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/AdmissiblePeriodTwistOfIntegralRows.lean",
+          "line0": 14,
+          "line1": 21
+        }
+      ],
+      "source": "notes/units/P048.tex",
+      "anchor": "Choose an orthonormal frame",
+      "source_lines": [
+        18,
+        24
+      ],
+      "claim_sha256": "8d63b2f216938cb0f8dba9491149150e554a7e7ac08ce79dd9b7043e042c61b0",
+      "passage_sha256": "4fc2e074c406699d2aa20021e6f89013bc7ad3c443499537dd634fe972362398",
+      "sha256": "1d1cb4fd2b5337613b17ed2683f68678b1a748d1e9f2c965b577bfd90befd22b",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "The class sum gives one period value whose nonzero valuation is bounded below at each allowed place.",
+      "kind": "inequality",
+      "uses": [
+        "S2",
+        "standard: nonarchimedean triangle inequality"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.PerTwClose.twistedPeriodAdmissible_of_rowInt",
+          "file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/AdmissiblePeriodTwistOfIntegralRows.lean",
+          "line0": 14,
+          "line1": 21
+        }
+      ],
+      "source": "notes/units/P048.tex",
+      "anchor": "The complex realization",
+      "source_lines": [
+        18,
+        24
+      ],
+      "claim_sha256": "83cb83eeee3cb706040bb5ba200c5bbb9531c16b203b5e770f8837f76b239442",
+      "passage_sha256": "4fc2e074c406699d2aa20021e6f89013bc7ad3c443499537dd634fe972362398",
+      "sha256": "e6d3e2b7f34a265af3b38e20c5685f9836daa0981466c28e54f1916f3a06fb83",
+      "ai_review": []
+    }
+  ],
+  "history": []
+}

@@ -1,0 +1,39 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>P001 · The Riemann hypothesis in Mathlib&#x27;s formulation · RH verification atlas</title><link rel="stylesheet" href="../atlas.css"><script>window.MathJax={tex:{inlineMath:[["$","$"]],displayMath:[["$$","$$"]],processEscapes:true},options:{ignoreHtmlClass:"no-math"}};</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js"></script></head><body><header><div class="bar"><a class="brand" href="../index.html">RH verification atlas</a><nav aria-label="Atlas navigation"><a href="../index.html">Home</a> <a href="../STATUS.html">Status</a> <a href="../MAP.html">Map</a> <a href="../dashboard/index.html">Tracks</a> <a href="../lookup/search.html">Search declarations</a></nav></div></header><main><h1 id="p001--the-riemann-hypothesis-in-mathlibs-formulation">P001 · The Riemann hypothesis in Mathlib&#x27;s formulation</h1>
+<p class="notice">AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved</p>
+<p>This public goal uses Mathlib&#x27;s formulation of the Riemann hypothesis. It asks that every zeta zero other than the excluded negative even integers, with the pole at one excluded too, have real part one half. The card pins the precise statement targeted by the conditional deduction.</p>
+<p><code>mathlib-riemann-hypothesis</code> · <a href="../tracks/formal/index.html">Formalization and reproducibility</a> · <a href="../tracks/analytic/index.html">Analytic number theory</a></p>
+<p><strong>Outlined</strong> · <strong>L1</strong> Statement matched to Lean · Record generated 2026-11-25 (no human check).</p>
+<div class="scroll"><table>
+<thead><tr><th>1 · Lean pinned</th><th>2 · Statement compared</th><th>3 · Prose</th><th>4 · Steps</th><th>5 · AI review</th><th>6 · Human</th></tr></thead>
+<tbody><tr><td>✓</td><td>✓</td><td>Outlined</td><td>5</td><td>–</td><td>0 of 5 steps</td></tr>
+</tbody></table></div>
+<p><a href="P001.check.html">Numbered proof and check records</a> · <a href="../PROGRESS.html">Progress and counting rules</a></p>
+<h2 id="statement">Statement</h2>
+<p>For every <span class="math">$s\in\mathbb C$</span>, if <span class="math">$\zeta(s)=0$</span>, <span class="math">$s\ne1$</span>, and <span class="math">$s\ne-2(n+1)$</span> for every <span class="math">$n\in\{0,1,\ldots\}$</span>, then <span class="math">$\Re s=1/2$</span>.</p>
+<h2 id="assumptions">Assumptions</h2>
+<ul><li>Take a zero <span class="math">$s$</span> of the Riemann zeta function with <span class="math">$s\ne1$</span>.</li><li>Exclude all negative even integers <span class="math">$s=-2(n+1)$</span> for <span class="math">$n\ge0$</span>.</li></ul>
+<p>Sources for the assumptions · <a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a></p>
+<h2 id="where-to-read">Where to read</h2>
+<p>Blueprint v13 and papers v3–v5 are this atlas project’s own AI-written, unpublished drafts. They have no human review and were not written by the author of the Lean development. Blueprint v13, its separate cover, and paper v5 are distributed as assets of release v0.1.0. For v3 and v4 the atlas supplies selected excerpts and notes. <a href="../data/editions.json">Edition register</a></p>
+<ul><li><a href="../notes/formal/index.html">Graduate reading packet · Audit one export and distinguish three verification questions</a></li><li><a href="../notes/units/P001_round3.html">P001 · From a right-half-plane bound to the zeta zero line</a>, pp. 1–2 in the atlas print layout. Round-3 written exposition, pending independent review.</li><li><a href="../data/editions.json">From the Selmer window to Dirichlet zero-free statements, v3</a>, 6.1, p. 54. Statement starts on the cited page.</li><li><a href="../notes/units/P001.tex">Manuscript source excerpt</a> · section <code>pn:P001</code></li></ul>
+<h3 id="declaration-name-matches">Declaration-name matches</h3>
+<ul><li><a href="../crosswalk/naskrecki.html">Naskręcki’s reading project</a> · 1 matching declaration · indices <code>main-rh</code>.</li><li><a href="../crosswalk/jae-63.html">jae-63/rh-alpoge-blueprint</a> · 1 matching declaration.</li><li><a href="../crosswalk/josebrox.html">JoseBrox/GRH_distillation</a> · 1 matching declaration.</li></ul>
+<h2 id="evidence">Evidence</h2>
+<ul><li><a href="../reviews/R20_review.html">R20 review</a>, original line 96 — Exact statement comparison. Named theorem at the specified hypotheses in the R20 manuscript.</li></ul>
+<p>Review records · <a href="../reviews/R20_review.html">R20 review</a> · <a href="../reviews/DB3_review_B.html">DB3 review B</a></p>
+<h2 id="lean-declarations">Lean declarations</h2>
+<ul><li><code>riemannHypothesis</code>  <br><a href="https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Main.lean#L4-L4"><code>Main.lean</code></a>, lines 4 · 1 dominated lines · SHA-256 <code>71b3d50605dd</code>.</li></ul>
+<p><a href="P001.yaml">Machine record and full declaration hashes</a> · <a href="../lookup/declarations.html">Declaration lookup</a></p>
+<h2 id="reading-prerequisites">Reading prerequisites</h2>
+<p>Background · The Riemann zeta function · Trivial zeros and analytic continuation.</p>
+<ul><li><a href="P008.html">P008 · Specializing the half-plane assertion to the zeta function</a> · graph</li></ul>
+<p><a href="../data/round3_prerequisites.json">Evidence and definitions of reading links</a></p>
+<h2 id="open-questions">Open questions</h2>
+<ul><li>What bytes are hashed for a declaration, the full archive and the compiled object? Reproduce one digest with its stated convention.</li></ul>
+<h2 id="graph-connections">Graph connections</h2>
+<p>Arrows may connect either a unit’s main declaration or an indexed member.</p>
+<p><strong>Uses</strong> · <a href="P008.html">P008</a></p>
+<p><strong>Used by</strong> · No recorded edge.</p>
+<p><a href="../data/unit_graph.json">Declaration witnesses and graph scope</a></p>
+<p>Lookup aliases · <code>riemannHypothesis</code>, <code>P001 The Riemann hypothesis in Mathlib&#x27;s formulation</code></p>
+<p>&lt;!-- Unit metadata SHA-256 482bc6d0e439f3de78bfb271cfb0177df3e2dd5c6816c26eabc93a8e2a39d261 --&gt;</p></main><footer><a href="../help.html">Using the local edition</a></footer></body></html>

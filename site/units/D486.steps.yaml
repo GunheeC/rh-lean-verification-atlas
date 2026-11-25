@@ -1,0 +1,144 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "unit": "D486",
+  "edition_sha256": "83b94de1d39b6ef5a04cfa6c76a30976e6c8245e238ccea341c1e003f2e16c61",
+  "note_sha256": "9872d9a135b8e805227c2f04934523fb614490bd541017874dbb6256c2bb0295",
+  "statement_sha256": "2e1f299a9030c500d8a285ff550cc349edd178c2b7ca1d6c67b293c7ee785412",
+  "sources": [
+    {
+      "path": "notes/units/D486_round4.md",
+      "sha256": "9872d9a135b8e805227c2f04934523fb614490bd541017874dbb6256c2bb0295"
+    }
+  ],
+  "steps": [
+    {
+      "id": "S1",
+      "status": "active",
+      "claim": "The existential row simultaneously satisfies injective labelling, the join and the count.",
+      "kind": "definition-unfolding",
+      "uses": [
+        "input: closed joint existence of injectively labelled, joined and counted rows"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.Top.Irr.closed_linkIRR_of_join_count",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkIrr.lean",
+          "line0": 22,
+          "line1": 33
+        }
+      ],
+      "source": "notes/units/D486_round4.md",
+      "anchor": "Fix a twist selection and a positive real",
+      "source_lines": [
+        25,
+        25
+      ],
+      "claim_sha256": "3ac497b70ea2e52959207d09367df5a3d8d5af8b550fe001dd5f0cbaa01bb9bb",
+      "passage_sha256": "bb1fa4e19d0f1435b175371b757052d5e7c2656a50baab22be64927c28582e70",
+      "sha256": "1a151aa79eb5fbee7d73b9f3591af17840fc22ba84fa20bb843c0b9fd620087a",
+      "ai_review": []
+    },
+    {
+      "id": "S2",
+      "status": "active",
+      "claim": "The maximum of the original and selection thresholds with the fixed lower scales permits admissible weights and size bounds for that row.",
+      "kind": "inequality",
+      "uses": [
+        "S1",
+        "input: Green and the selection threshold"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.Top.Irr.closed_linkIRR_of_join_count",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkIrr.lean",
+          "line0": 34,
+          "line1": 43
+        }
+      ],
+      "source": "notes/units/D486_round4.md",
+      "anchor": "Enlarge the threshold to the maximum of the",
+      "source_lines": [
+        29,
+        29
+      ],
+      "claim_sha256": "bb607cf8a70f97678317957c5cdaf5e2cb91692f84c15c25fef4940a0a38525c",
+      "passage_sha256": "6babf64399227ffce349dca89b7b4d4545813b3eb55597e9f7100b7d0f6772ae",
+      "sha256": "3f07e6b24b49cd975baf7e18503f5ff58164c2608c15dae91e651bb065967487",
+      "ai_review": []
+    },
+    {
+      "id": "S3",
+      "status": "active",
+      "claim": "Once $x^{e_z}\\ge3/2$, the joined and counted row yields the weight condition required in the irreducibility bound.",
+      "kind": "assembly",
+      "uses": [
+        "S2",
+        "input: join-to-weight and all-rows irreducibility lemmas"
+      ],
+      "lean": [
+        {
+          "name": "GlobalTheory.Top.Irr.linkIRR_of_join_ex",
+          "file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/LinkIRROfJoinEx.lean",
+          "line0": 17,
+          "line1": 32
+        }
+      ],
+      "source": "notes/units/D486_round4.md",
+      "anchor": "Apply the bound for a family of permitted",
+      "source_lines": [
+        33,
+        33
+      ],
+      "claim_sha256": "6cb75e070cba8b4a1d52728da1eb4f1d9241f2bdaf7c9e8591aaddfaa03925b7",
+      "passage_sha256": "463f5db950427c303afdd83a9969c09567f12c52148d9e3c54fcbca3d74e817b",
+      "sha256": "2ed85c807ff1c8f708f6f90bb1eebf91bf488c0802201ee84d1d8265ae741035",
+      "ai_review": []
+    }
+  ],
+  "history": [
+    {
+      "edition_sha256": "6b3a9988a6ebe09a8e5216cf7d64f02fdb62562623a614207f5a72453dea2909",
+      "sources": [
+        {
+          "path": "notes/units/D486_round4.md",
+          "sha256": "c9ae5139ddceafc3ebc46d34477730f991661f469b4694a550d57fbea7022762"
+        }
+      ],
+      "steps": {
+        "S1": "5ed418010f7b00751e3a40b6fc686b3bcf35e7a9be83f809db089bcc83a5e2e9",
+        "S2": "9be3a836bcf40b521b09cd65f9f314b3637a23749dba812e3b11a61c3f4c843b",
+        "S3": "fb6ebd318a5c2a1c594591a9e7524aa6b18d8a65089cbc07b18925322c1d4761"
+      },
+      "step_texts": {
+        "S1": "The existential row simultaneously satisfies injective labelling, the join and the count.",
+        "S2": "The maximum of the original and selection thresholds with the fixed lower scales permits admissible weights and size bounds for that row.",
+        "S3": "Once $x^{e_z}\\ge3/2$, the joined and counted row yields the weight condition required in the irreducibility bound."
+      }
+    },
+    {
+      "edition_sha256": "4ce5a153947b1a5a1ae3c6130fce2da93899390e749278f48675714d69ab8af5",
+      "sources": [
+        {
+          "path": "notes/units/D486_round4.md",
+          "sha256": "c9ae5139ddceafc3ebc46d34477730f991661f469b4694a550d57fbea7022762"
+        }
+      ],
+      "statement_sha256": "2e1f299a9030c500d8a285ff550cc349edd178c2b7ca1d6c67b293c7ee785412",
+      "steps": {
+        "S1": "1a151aa79eb5fbee7d73b9f3591af17840fc22ba84fa20bb843c0b9fd620087a",
+        "S2": "3f07e6b24b49cd975baf7e18503f5ff58164c2608c15dae91e651bb065967487",
+        "S3": "2ed85c807ff1c8f708f6f90bb1eebf91bf488c0802201ee84d1d8265ae741035"
+      },
+      "step_texts": {
+        "S1": "The existential row simultaneously satisfies injective labelling, the join and the count.",
+        "S2": "The maximum of the original and selection thresholds with the fixed lower scales permits admissible weights and size bounds for that row.",
+        "S3": "Once $x^{e_z}\\ge3/2$, the joined and counted row yields the weight condition required in the irreducibility bound."
+      },
+      "step_passages": {
+        "S1": "bb1fa4e19d0f1435b175371b757052d5e7c2656a50baab22be64927c28582e70",
+        "S2": "6babf64399227ffce349dca89b7b4d4545813b3eb55597e9f7100b7d0f6772ae",
+        "S3": "463f5db950427c303afdd83a9969c09567f12c52148d9e3c54fcbca3d74e817b"
+      }
+    }
+  ]
+}

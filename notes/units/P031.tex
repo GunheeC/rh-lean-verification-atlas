@@ -1,0 +1,78 @@
+% AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
+% Atlas unit P031. Local manuscript v3, item 7.8, heading on printed PDF p. 76.
+% UpperTheory.V.Tower.exists_descends
+% paper2/inputs_one.tex:310–375. Verbatim excerpt; SHA-256 5623281c8f641737cf25aa6d561b4c00bf3c3c62cb22e183c0c5cfe85977eac7.
+% Original TeX uses the macros and cross-reference keys of the source manuscript.
+
+
+% Start of atlas edition annotation. The following block is outside the original excerpt.
+\paragraph{Status of named inputs in this reading.}
+\noindent\nolinkurl{UpperTheory.V.Tower.exists_descends} --- in-repo constant (\path{Development/AutomorphicArithmetic/AutomorphicVarieties/NumberFieldTowers/ExistsDescends.lean:50--57}); not compared.\par
+% End of atlas edition annotation.
+
+\begin{theorem}[One cyclotomic generator for every layer]\label{pn:P031}
+Let \(\ell\) be prime and let \(L_0\) contain a primitive \(\ell\)-th
+root if \(\ell\) is odd, or a primitive fourth root if \(\ell=2\).
+Write \(c_0\) for the largest \(c\) such that \(L_0\) contains a
+primitive \(\ell^c\)-th root. There exists \(\gamma\in G_{L_0}\) whose
+cyclotomic image topologically generates the image and satisfies
+\(v_\ell(\chi(\gamma)-1)=c_0\). The base contains a primitive
+\(\ell^{c_0}\)-th root. For every \(E\ge1\), every \(m\ge0\), and
+every degree-\(\ell^m\) cyclotomic layer \(L_m/L_0\),
+\[
+ \operatorname{shaInv}(L_m,\ell,E)=
+ \operatorname{length}_{\mathbb Z_\ell}
+ \operatorname{coker}\bigl(x_{\mathrm{Tw}}(E,\gamma)^{\ell^m}-1\bigr).
+\]
+Here \(x_{\mathrm{Tw}}\) is the twisted action on the dual of the
+infinite-layer character module with the specified local conditions.
+\end{theorem}\nodestatus{P031}
+\begin{proof}
+We give the tower comparison of Blueprint Z2.K1~\bploc{lem:P-r3-k1}. A closed cyclotomic
+image in \(1+\ell^{c_0}\mathbb Z_\ell\) contains an element \(u\) of
+exact depth \(c_0\), by maximality. Binomial expansion gives
+\(v_\ell(u^{\ell^j}-1)=c_0+j\), using \(c_0\ge2\) at two.
+Its powers therefore generate every finite quotient. We may choose
+\(\gamma\) above \(1+\ell^{c_0}\); the generator over the \(m\)-th
+layer is its \(\ell^m\)-th power in the cyclotomic quotient.
+
+Let \(L_\infty=L_0(\mu_{\ell^\infty})\), \(L_S\) the maximal
+extension unramified outside the places over \(\ell\) and infinity,
+and \(H=\operatorname{Gal}(L_S/L_\infty)\). The same \(L_S\) works
+over every \(L_m\), by taking normal closures. Let \(B\) be the
+continuous characters \(H\to A_E\) trivial on the decomposition groups
+above \(\ell\). With \(\Gamma_m=\operatorname{Gal}(L_\infty/L_m)\),
+restriction identifies the localization kernel over \(L_m\) with
+\(B^{\Gamma_m}\). Indeed inflation--restriction has outside terms
+\(H^1(\Gamma_m,A_E)\) and \(H^2(\Gamma_m,A_E)\). The first vanishes
+because a generator acts by a scalar different from one and the
+difference acts surjectively on \(A_E\). The second vanishes by the
+two-term resolution of the trivial module over the completed group
+ring of \(\mathbb Z_\ell\). For a place above \(\ell\) the local image
+in \(\Gamma_m\) is open; its generator gives the same degree-one
+vanishing. Hence a restricted character vanishes on the indicated
+local subgroup exactly when the finite-layer class is locally trivial.
+
+Dualize \(B\) into \(\mathbb Q_\ell/\mathbb Z_\ell\). Since the target
+is injective, the dual of the fixed subgroup is the cokernel of the
+dual inverse-generator action minus the identity. This action is
+\(x_{\mathrm{Tw}}(E,\gamma)^{\ell^m}\). Duality preserves finite
+length by a composition series. In the infinite-length case arbitrarily
+large finite submodules dualize to quotients of arbitrarily large length.
+This gives the claimed equality for extended lengths as well.
+\end{proof}
+
+The inflation--restriction input is the continuous exact sequence for
+a closed normal subgroup (R.~Sharifi, \emph{Group and Galois Cohomology},
+\S2.2, paragraph preceding Proposition~2.2.18). The proposition states the higher-degree version with a vanishing hypothesis; the paragraph explicitly gives the closed-normal-subgroup version used here. The additional comparisons identify its local subgroups and
+the action on the particular twisted dual at every layer.
+\cite{r21-sharifi}
+
+For the next results write \(q=\ell^\nu,\ \kappa=1+\ell^c\).
+A layer consists of a cyclic Galois extension \(F/L\) with a primitive
+\(q\)-th root \(\zeta\), and a generator \(\gamma\) of order
+\(h=\ell^{\nu-c}\) acting by \(\zeta\mapsto\zeta^\kappa\);
+\(1\le c\le\nu\), with \(2\le c\) at \(\ell=2\). For \(a\in\mathbb N\)
+put \(N_a(\alpha)=\prod_{i=0}^{h-1}(\gamma^i\alpha)^{a^i}\).
+For a divisor \(D\) the difference condition means
+\(\operatorname{ord}_P\alpha=D(\gamma P)-aD(P)\) for all primes \(P\).

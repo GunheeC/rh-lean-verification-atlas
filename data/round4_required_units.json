@@ -1,0 +1,340 @@
+{
+  "notice": "AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved",
+  "coverage_scope": "Reading statuses from round-3 and current unit records. Source checks below read the pinned upstream source; no Lean execution.",
+  "tracks": {
+    "theta": {
+      "source": "tracks/theta/README.md",
+      "open_inputs": [
+        "Z4.2.13",
+        "Z4.3",
+        "N076"
+      ],
+      "direct_prerequisites": {
+        "Z4.2.13": [
+          "Z4.2.02"
+        ],
+        "Z4.3": [
+          "Z4.1",
+          "Z42-KERNEL"
+        ],
+        "N076": [
+          "D025"
+        ]
+      },
+      "statuses": {
+        "D025": {
+          "round3": "Statement only",
+          "round4": "Outlined"
+        },
+        "N076": {
+          "round3": "Outlined",
+          "round4": "Outlined"
+        },
+        "Z4.1": {
+          "round3": "Full",
+          "round4": "Full"
+        },
+        "Z4.2.02": {
+          "round3": "Outlined",
+          "round4": "Outlined"
+        },
+        "Z4.2.13": {
+          "round3": "Outlined",
+          "round4": "Outlined"
+        },
+        "Z4.3": {
+          "round3": "Outlined",
+          "round4": "Outlined"
+        },
+        "Z42-KERNEL": {
+          "round3": "Outlined",
+          "round4": "Outlined"
+        }
+      }
+    },
+    "arakelov": {
+      "source": "tracks/arakelov/README.md",
+      "open_inputs": [
+        "T13",
+        "T14"
+      ],
+      "direct_prerequisites": {
+        "T13": [
+          "D123",
+          "D128",
+          "D154",
+          "D155",
+          "D575",
+          "T14",
+          "T15",
+          "T16"
+        ],
+        "T14": [
+          "D309",
+          "T26"
+        ]
+      },
+      "statuses": {
+        "D123": {
+          "round3": "Statement only",
+          "round4": "Outlined"
+        },
+        "D128": {
+          "round3": "Statement only",
+          "round4": "Outlined"
+        },
+        "D154": {
+          "round3": "Statement only",
+          "round4": "Outlined"
+        },
+        "D155": {
+          "round3": "Statement only",
+          "round4": "Outlined"
+        },
+        "D309": {
+          "round3": "Statement only",
+          "round4": "Outlined"
+        },
+        "D575": {
+          "round3": "Statement only",
+          "round4": "Outlined"
+        },
+        "T13": {
+          "round3": "Outlined",
+          "round4": "Outlined"
+        },
+        "T14": {
+          "round3": "Outlined",
+          "round4": "Outlined"
+        },
+        "T15": {
+          "round3": "Outlined",
+          "round4": "Outlined"
+        },
+        "T16": {
+          "round3": "Statement only",
+          "round4": "Outlined"
+        },
+        "T26": {
+          "round3": "Statement only",
+          "round4": "Outlined"
+        }
+      }
+    },
+    "local": {
+      "source": "tracks/local/README.md",
+      "open_inputs": [
+        "Z4.2.02",
+        "T24"
+      ],
+      "direct_prerequisites": {
+        "Z4.2.02": [
+          "P090",
+          "Z42-SITES"
+        ],
+        "T24": []
+      },
+      "statuses": {
+        "P090": {
+          "round3": "Statement only",
+          "round4": "Outlined"
+        },
+        "T24": {
+          "round3": "Statement only",
+          "round4": "Outlined"
+        },
+        "Z4.2.02": {
+          "round3": "Outlined",
+          "round4": "Outlined"
+        },
+        "Z42-SITES": {
+          "round3": "Full",
+          "round4": "Full"
+        }
+      }
+    }
+  },
+  "pillars": {
+    "V": {
+      "levels": {
+        "1": {
+          "declaration_rows": 3,
+          "units": [
+            "V-OPEN",
+            "W01",
+            "W02"
+          ]
+        },
+        "2": {
+          "declaration_rows": 4,
+          "units": [
+            "V-BC",
+            "W01",
+            "W16"
+          ]
+        }
+      },
+      "statuses": {
+        "V-BC": {
+          "round3": null,
+          "round4": "Outlined"
+        },
+        "V-OPEN": {
+          "round3": null,
+          "round4": "Outlined"
+        },
+        "W01": {
+          "round3": "Statement only",
+          "round4": "Outlined"
+        },
+        "W02": {
+          "round3": "Statement only",
+          "round4": "Outlined"
+        },
+        "W16": {
+          "round3": "Statement only",
+          "round4": "Outlined"
+        }
+      }
+    },
+    "F": {
+      "levels": {
+        "1": {
+          "declaration_rows": 2,
+          "units": [
+            "T02",
+            "T25"
+          ]
+        },
+        "2": {
+          "declaration_rows": 30,
+          "units": [
+            "D044",
+            "F-AUX",
+            "T02",
+            "T03",
+            "T05",
+            "T08",
+            "T09",
+            "T10",
+            "T25"
+          ]
+        }
+      },
+      "statuses": {
+        "D044": {
+          "round3": "Statement only",
+          "round4": "Outlined"
+        },
+        "F-AUX": {
+          "round3": null,
+          "round4": "Outlined"
+        },
+        "T02": {
+          "round3": "Outlined",
+          "round4": "Outlined"
+        },
+        "T03": {
+          "round3": "Statement only",
+          "round4": "Outlined"
+        },
+        "T05": {
+          "round3": "Statement only",
+          "round4": "Outlined"
+        },
+        "T08": {
+          "round3": "Statement only",
+          "round4": "Outlined"
+        },
+        "T09": {
+          "round3": "Outlined",
+          "round4": "Outlined"
+        },
+        "T10": {
+          "round3": "Statement only",
+          "round4": "Outlined"
+        },
+        "T25": {
+          "round3": "Statement only",
+          "round4": "Outlined"
+        }
+      }
+    }
+  },
+  "formal": {
+    "P002": {
+      "round3": "Statement only",
+      "round4": "Outlined",
+      "procedure": "notes/units/P002_round4.md",
+      "source_check_stdout": "P002 riemannZeta_eq_zero_re b76ddf651dfdaa35aa759391bf660be25e1a3d4299cf9b6fd89926313aac2ae7",
+      "expected_stdout_matches": true
+    },
+    "P004": {
+      "round3": "Statement only",
+      "round4": "Outlined",
+      "procedure": "notes/units/P004_round4.md",
+      "source_check_stdout": "P004 LFunction_eq_zero_re 16e8622c29d633b78f0009d3ed16ed8cd13ece9122362aed0a4fb12646635409",
+      "expected_stdout_matches": true
+    },
+    "P006": {
+      "round3": "Statement only",
+      "round4": "Outlined",
+      "procedure": "notes/units/P006_round4.md",
+      "source_check_stdout": "P006 claimAll ed1f716842f8ede8864c2da8b1ba7bef252f4af1ef68f6775a487aa17e90270c",
+      "expected_stdout_matches": true
+    },
+    "P007": {
+      "round3": "Statement only",
+      "round4": "Outlined",
+      "procedure": "notes/units/P007_round4.md",
+      "source_check_stdout": "P007 critAll 0d978db013e5eba6fa1d430c3cbd57ba979648c7e28481d8ee74be0150b7b823",
+      "expected_stdout_matches": true
+    },
+    "P008": {
+      "round3": "Statement only",
+      "round4": "Outlined",
+      "procedure": "notes/units/P008_round4.md",
+      "source_check_stdout": "P008 rhOfAll 0411e5a9dfb3386efa1d19f21b4f48f3061578663df27aa2e1537c899cf946d9",
+      "expected_stdout_matches": true
+    }
+  },
+  "mandatory_units": 40,
+  "statement_only_in_mandatory_set": [],
+  "remaining_statement_only": [
+    "B02",
+    "B03",
+    "D002",
+    "D077",
+    "D108",
+    "D317",
+    "D331",
+    "D340",
+    "D351",
+    "D421",
+    "D427",
+    "D479",
+    "D481",
+    "D506",
+    "D510",
+    "D511",
+    "D513",
+    "D528",
+    "D532",
+    "D536",
+    "D551",
+    "D558",
+    "D566",
+    "P024",
+    "P025",
+    "P029",
+    "P030",
+    "W03",
+    "W05",
+    "W06",
+    "W07",
+    "W10",
+    "W12",
+    "W14",
+    "W15"
+  ]
+}
