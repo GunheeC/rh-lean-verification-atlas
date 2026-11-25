@@ -2,6 +2,8 @@
 
 AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
 
+[Choose a verification task and see what it would establish](../docs/coverage.md)
+
 Start with one numbered inference you can derive or compare with its source. Copy its step number and the SHA-256 edition identifier from the checklist. The identifier fixes the exact text under review. Record what you did and what you found. A gap, a reservation or a step you could not follow can be submitted on its own. [Choose a checklist](../ROADMAP.md) · [Fictitious example](examples/FICTITIOUS-EXAMPLE.yaml) · [Reader-reported disputes](../questions/disputes.md) · [한국어](../docs/ko/signoffs/README.md)
 
 ## Submitting your reading

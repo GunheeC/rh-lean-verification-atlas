@@ -2,6 +2,8 @@
 
 AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
 
+[검증 과제와 각 과제가 확인하는 범위](../coverage.md)
+
 직접 유도하거나 원문과 대조한 추론 하나부터 기록할 수 있다. 점검표에서 그 단계 번호와 판본의 SHA-256 식별자를 복사한다. 이 식별자가 검토한 글을 특정한다. 어떤 계산을 했고 무엇을 발견했는지 적는다. 빈틈, 유보 사항, 따라가지 못한 단계도 단독으로 제출할 수 있다. [점검표 선택](../../../ROADMAP.md) · [가상 예시(Fictitious)](../../../signoffs/examples/FICTITIOUS-EXAMPLE.yaml) · [접수된 이의](../../../questions/disputes.md) · [English](../../../signoffs/README.md)
 
 ## 제출

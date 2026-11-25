@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 260" role="img" aria-labelledby="t">
+<title id="t">Nearest indexed statement by exposition</title>
+<rect width="840" height="260" fill="white"/>
+<g font-family="sans-serif" font-size="16" fill="#222">
+<text x="8" y="35">Full at nearest head</text>
+<rect x="260" y="19" width="330" height="18" fill="#f3f3f3"/>
+<rect x="260" y="19" width="1.0887" height="18" fill="#262626"/>
+<text x="607" y="35">31,564 (0.3299%)</text>
+<text x="8" y="81">Outline at head</text>
+<rect x="260" y="65" width="330" height="18" fill="#f3f3f3"/>
+<rect x="260" y="65" width="287.1540" height="18" fill="#555555"/>
+<text x="607" y="81">8,324,895 (87.0164%)</text>
+<text x="8" y="127">Map as head grade</text>
+<rect x="260" y="111" width="330" height="18" fill="#f3f3f3"/>
+<rect x="260" y="111" width="0.0000" height="18" fill="#888888"/>
+<text x="607" y="127">0 (0.0000%)</text>
+<text x="8" y="173">Statement only at head</text>
+<rect x="260" y="157" width="330" height="18" fill="#f3f3f3"/>
+<rect x="260" y="157" width="41.7572" height="18" fill="#aaaaaa"/>
+<text x="607" y="173">1,210,586 (12.6537%)</text>
+<text x="8" y="219">No indexed head</text>
+<rect x="260" y="203" width="330" height="18" fill="#f3f3f3"/>
+<rect x="260" y="203" width="0.0000" height="18" fill="#dddddd"/>
+<text x="607" y="219">0 (0.0000%)</text>
+</g></svg>

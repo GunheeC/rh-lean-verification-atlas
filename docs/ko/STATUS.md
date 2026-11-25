@@ -2,9 +2,13 @@
 
 AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
 
-형식 검사와 수학적 해설의 독해는 대상이 다르다. Lean 원문은 커밋 `40e56bab026552e089d7afcfeff08d2defb9c005`에 고정했다. 판본 장부에서 블루프린트 v13, 논문 원고와 개별 해설의 지문을 찾을 수 있다. [출처](../../sources/README.md) · [판본 지문](../../data/editions.json) · [English](../../STATUS.md)
+형식 검사와 수학적 해설의 독해는 대상이 다르다. Lean 원문은 커밋 `40e56bab026552e089d7afcfeff08d2defb9c005`에 고정했다. 판본 장부에서 블루프린트 v13, 논문 원고와 개별 해설의 지문을 찾을 수 있다. [서술 범위·남은 입력·독자가 확인할 과제](coverage.md) · [출처](../../sources/README.md) · [판본 지문](../../data/editions.json) · [English](../../STATUS.md)
 
-블루프린트 v13a는 v13의 944개 PDF 페이지 앞에 새 서문을 넣었다. 각 기존 페이지의 추출 텍스트가 일치하며 인쇄된 쪽수도 그대로다. 논문 v6은 v5의 조판 개정판이다. 두 판의 정리·보조정리·명제·증명 환경을 대조해 수학 본문이 일치함을 확인했다. 검토 기록과 등급은 실제로 검토한 판본에만 적용된다. [블루프린트 v13a](../../editions/v0.1.0/blueprint_v13a.pdf) · [조건부 논문 v6](../../editions/v0.1.0/paper_v6.pdf) · [판본과 지문](../../data/editions.json)
+## 두 문서
+
+Gunhee Cho의 논문 *Toward a human verification of Alpöge's Lean proof of the Riemann hypothesis, I: the conditional chain from Selmer windows to zero-free regions*은 Lean 명제 775개를 정리하고 셀머 창에서 영점 없는 영역까지의 조건부 논증을 따라간다. 블루프린트는 원래의 입력 20개를 각각의 정의와 보조정리에서부터 설명한다. 아틀라스는 독자가 손으로 한 단계씩 검산할 수 있도록 판본마다 두 문서의 논증을 Lean 선언 및 검토 기록과 연결한다. Gunhee Cho의 지도로 AI가 초고를 쓰고 Lean 원문과 교차 대조했다. 아직 사람이 확인한 단계는 없다. [논문 v7](../../editions/v0.1.0/paper_v7.pdf) · [The Alpöge formalization of RH and GRH: an informal blueprint (블루프린트 v13b)](../../editions/v0.1.0/blueprint_v13b.pdf) · [판본과 지문](../../data/editions.json)
+
+논문 v7과 조판 개정판 v6, 그 이전 v5에서 정리·보조정리·명제·증명의 수학 본문은 같다. 블루프린트 v13a는 v13의 944면 앞에 두 면을 추가했다. v13b는 새 앞부분을 고치고 원래 첫 두 면의 면책 문구를 제거했다. 원래 3–944면은 추출한 텍스트, PDF 내용 스트림과 렌더링이 일치한다. v13b의 앞부분은 11면이다. 원래 PDF의 $n$번째 면은 v13b의 $n+11$번째 면이며, 인쇄된 아라비아 숫자 1쪽은 PDF의 37번째 면에 있다. 검토와 등급은 실제로 읽은 판본과 구간에만 적용된다.
 
 ## Lean이 진술하는 다섯 명제
 
@@ -64,6 +68,6 @@ Lean 원문은 문헌 정리의 이름을 붙인 명제들을 직접 정의하�
 
 V는 셀머 국소화 사상의 핵에 대한 상계가 하나의 구간에서 균일하게 성립한다는 가정이다. F는 족들의 모임과 그에 맞는 선택을 포함하는 자료 하나가 존재한다는 가정이다. 허용되는 족들에 적용되는 노름 추정과 정부호 조건이 그 선택을 공유한다. 두 가정의 전체 서면 유도는 아직 남아 있다. 그 밖에 Green의 유한체 지표 명제와 소수합 추정·산술적 족의 구성·기하 비교를 위한 목록 A–C를 사용한다. [V](pillars/V.md) · [F](pillars/F.md) · [입력과 검토 범위](../../sources/coverage.md)
 
-v4 정리 1.1과 3.43의 표에는 전역 가정 3개와 국소 입력 31개가 있었다. 검토 A에서 표 밖의 입력을 확인했다. v5 원고는 준위의 창 판정, 점별 격자 추정, 충분히 큰 척도에서의 랭크 상계, 나눗셈과 기울기의 두 비교를 명시한다. 경계에서 비소멸을 얻고 결론을 옮기는 데 쓰는 L함수의 고전적 성질도 명시한다. 논문 v6 · [조건부 정리, 1쪽](../../editions/v0.1.0/paper_v6.pdf#page=7) · [가정 표, 33–34쪽](../../editions/v0.1.0/paper_v6.pdf#page=39) · [마지막 유도, 34–35쪽](../../editions/v0.1.0/paper_v6.pdf#page=40). 이 수정본은 독립 검토 대기 중이다. 개별 계산에 대한 평결은 장부에 기록한 판본과 범위에 한정된다. [조건부 개요](../../units/V4-COND.md) · [검토 처리 내역](../../data/round4_review_corrections.json) · [수학적 개요](OVERVIEW.md)
+v4 정리 1.1과 3.43의 표에는 전역 가정 3개와 국소 입력 31개가 있었다. 검토 A에서 표 밖의 입력을 확인했다. v5 원고는 준위의 창 판정, 점별 격자 추정, 충분히 큰 척도에서의 랭크 상계, 나눗셈과 기울기의 두 비교를 명시한다. 경계에서 비소멸을 얻고 결론을 옮기는 데 쓰는 L함수의 고전적 성질도 명시한다. 논문 v7 · [조건부 정리, 2쪽](../../editions/v0.1.0/paper_v7.pdf#page=2) · [가정 표, 51–52쪽](../../editions/v0.1.0/paper_v7.pdf#page=51) · [마지막 유도, 52–53쪽](../../editions/v0.1.0/paper_v7.pdf#page=52). 이 수정본은 독립 검토 대기 중이다. 개별 계산에 대한 평결은 장부에 기록한 판본과 범위에 한정된다. [조건부 개요](../../units/V4-COND.md) · [검토 처리 내역](../../data/round4_review_corrections.json) · [수학적 개요](OVERVIEW.md)
 
 실명 독자가 현 판본의 한 단계를 확인하면 그 단계에 기록된다. L4는 Full 단위에서 입력 호출을 넘는 유도가 있고 모든 단계와 별도 명제 대조에 확인을 얻었을 때 가능하다. 이의는 유지관리자가 아닌 두 번째 독자의 검토 또는 해당 대상을 대체하는 서술 변경으로 해소할 수 있다. 서로 독립된 해설 두 개의 명제와 가정이 일치하면 L3 근거를 제출할 수 있다. 오류나 누락된 가정이 발견되면 처음 영향을 받는 단위와 근거를 연결하고 등급과 집계를 고친다. 이전 판정은 변경 기록에 남는다. [실명 검토](signoffs/README.md) · [기여 절차](../../CONTRIBUTING.md) · [변경 기록](../../CHANGELOG.md)

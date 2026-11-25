@@ -21,4 +21,12 @@ keywords:
   - Lean
   - formal verification
   - number theory
-abstract: "AI-drafted; maintained by Gunhee Cho. This atlas indexes claims in a pinned Lean development, written expositions, checker evidence and open questions. It includes paper v6 and blueprint v13a. Text and data are licensed under CC BY 4.0 and scripts under MIT. AI-written draft; AI cross-reviewed; no human review; not a claim that RH is proved."
+abstract: "AI-drafted; maintained by Gunhee Cho. This atlas indexes claims in a pinned Lean development, written expositions, checker evidence and open questions. Paper v7 maps the conditional deduction, and blueprint v13b develops the original inputs. Each edition records individual steps for readers to check by hand. Text and data are licensed under CC BY 4.0 and scripts under MIT. AI-written draft; AI cross-reviewed; no human review; not a claim that RH is proved."
+references:
+  - type: unpublished
+    title: "Toward a human verification of Alpöge's Lean proof of the Riemann hypothesis, I: the conditional chain from Selmer windows to zero-free regions"
+    authors:
+      - family-names: Cho
+        given-names: Gunhee
+    version: "v7"
+    url: "https://github.com/GunheeC/rh-lean-verification-atlas/blob/v0.1.0/editions/v0.1.0/paper_v7.pdf"

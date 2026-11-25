@@ -1,0 +1,2188 @@
+{
+  "schema_version": 1,
+  "unit": "allChi weighted core lines",
+  "root": "allChi",
+  "total": 9567045,
+  "scope": {
+    "en": "Reachable core at the literature frontier of the pinned allChi graph; the complete pinned source has 17,374,215 physical lines.",
+    "ko": "고정된 allChi 그래프의 문헌 경계까지 도달 가능한 코어. 전체 고정 소스는 17,374,215 물리 줄이다."
+  },
+  "blocks": [
+    {
+      "id": "landau",
+      "title": {
+        "en": "Landau window criterion",
+        "ko": "란다우 창 판정"
+      },
+      "role": {
+        "en": "Exclude zeros using a one-sided bound on long intervals.",
+        "ko": "긴 구간의 한쪽 상계로 영점을 배제한다."
+      },
+      "entries": [
+        {
+          "unit": "P022",
+          "name": "Deduction.landau_window",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindow.lean",
+          "line0": 83,
+          "line1": 166
+        },
+        {
+          "unit": "P018",
+          "name": "UpperTheory.Comparison₂.formB",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/Imports.lean",
+          "line0": 8,
+          "line1": 19
+        },
+        {
+          "unit": "P019",
+          "name": "Formalism.HC.zeroFreeOn_of_tiedWin_cyc",
+          "file": "Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/TopWin.lean",
+          "line0": 90,
+          "line1": 93
+        }
+      ],
+      "lines": 2115,
+      "by_exposition": {
+        "full": 2115,
+        "outline": 0,
+        "top_level_map": 0,
+        "statement_only": 0,
+        "not_covered": 0
+      },
+      "level": "full",
+      "writing": {
+        "en": "Full under the stated window hypothesis.",
+        "ko": "창 가정 아래 완전한 국소 유도."
+      },
+      "readings": [
+        {
+          "document": "paper",
+          "start_label": "pn:P022",
+          "end_label": "rem:E-landau-compare",
+          "title": {
+            "en": "Landau theorem and proof",
+            "ko": "란다우 정리와 증명"
+          }
+        }
+      ],
+      "review": {
+        "en": "P022: R20 v0, full local derivation accepted.",
+        "ko": "P022: R20 v0, 국소 완전 유도 승인."
+      },
+      "review_evidence": [
+        {
+          "unit": "P022",
+          "records": [
+            {
+              "grade": "L2",
+              "review": "reviews/R20_review.md",
+              "lines": [
+                54,
+                54
+              ],
+              "scope": "R20 local implication under its stated premises, not its prerequisite cones.",
+              "verdict": "F: full derivation; yes"
+            },
+            {
+              "grade": "L1",
+              "review": "reviews/R20_review.md",
+              "lines": [
+                106,
+                106
+              ],
+              "scope": "Named theorem at the specified hypotheses in the R20 manuscript.",
+              "verdict": "Exact statement comparison"
+            }
+          ]
+        },
+        {
+          "unit": "P018",
+          "records": [
+            {
+              "grade": "L2",
+              "review": "reviews/R20_review.md",
+              "lines": [
+                50,
+                50
+              ],
+              "scope": "R20 local implication under its stated premises, not its prerequisite cones.",
+              "verdict": "F: full derivation; yes"
+            },
+            {
+              "grade": "L1",
+              "review": "reviews/R20_review.md",
+              "lines": [
+                106,
+                106
+              ],
+              "scope": "Named theorem at the specified hypotheses in the R20 manuscript.",
+              "verdict": "Exact statement comparison"
+            }
+          ]
+        },
+        {
+          "unit": "P019",
+          "records": [
+            {
+              "grade": "L2",
+              "review": "reviews/R20_review.md",
+              "lines": [
+                51,
+                51
+              ],
+              "scope": "R20 local implication under its stated premises, not its prerequisite cones.",
+              "verdict": "F: full derivation; yes"
+            },
+            {
+              "grade": "L1",
+              "review": "reviews/R20_review.md",
+              "lines": [
+                106,
+                106
+              ],
+              "scope": "Named theorem at the specified hypotheses in the R20 manuscript.",
+              "verdict": "Exact statement comparison"
+            }
+          ]
+        }
+      ],
+      "human_checks": 0,
+      "position_owners": [
+        {
+          "name": "Deduction.landau_window",
+          "unit": "P022",
+          "lines": 863,
+          "level": "full"
+        },
+        {
+          "name": "Deduction.zeroFree_of_rpow_window",
+          "unit": "P023",
+          "lines": 1095,
+          "level": "full"
+        },
+        {
+          "name": "Formalism.HC.zeroFreeOn_of_tiedWin_cyc",
+          "unit": "P019",
+          "lines": 58,
+          "level": "full"
+        },
+        {
+          "name": "UpperTheory.Comparison₂.formB",
+          "unit": "P018",
+          "lines": 99,
+          "level": "full"
+        }
+      ]
+    },
+    {
+      "id": "window",
+      "title": {
+        "en": "Window inequality and list A",
+        "ko": "창 부등식과 목록 A"
+      },
+      "role": {
+        "en": "Use ten local implications to bound a weighted prime sum.",
+        "ko": "열 가지 국소 함의를 써 가중 소수합을 제한한다."
+      },
+      "entries": [
+        {
+          "unit": "P017",
+          "name": "UpperTheory.Comparison₂.level_gm_le_on_family_scales",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/LevelGmLeOnFamilyScales.lean",
+          "line0": 28,
+          "line1": 30
+        },
+        {
+          "unit": "B08",
+          "name": "UpperTheory.Comparison₂.core_gm",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/CoreGm.lean",
+          "line0": 12,
+          "line1": 74
+        }
+      ],
+      "lines": 3365,
+      "by_exposition": {
+        "full": 1924,
+        "outline": 1431,
+        "top_level_map": 0,
+        "statement_only": 10,
+        "not_covered": 0
+      },
+      "level": "full",
+      "writing": {
+        "en": "Full local deduction under list A and the stated lattice inputs.",
+        "ko": "목록 A 및 명시된 격자 입력을 전제로 한 완전한 국소 유도."
+      },
+      "readings": [
+        {
+          "document": "paper",
+          "start_label": "r23:p017",
+          "end_label": "v5:chars-end",
+          "title": {
+            "en": "Window inequality and its local analytic deductions",
+            "ko": "창 부등식과 국소 해석 유도"
+          }
+        }
+      ],
+      "review": {
+        "en": "P017: R20 v0, statement exact; no review of the whole A block.",
+        "ko": "P017: R20 v0, 진술 일치. A 블록 전체 검토 없음."
+      },
+      "review_evidence": [
+        {
+          "unit": "P017",
+          "records": [
+            {
+              "grade": "L1",
+              "review": "reviews/R20_review.md",
+              "lines": [
+                49,
+                49
+              ],
+              "scope": "R20 local implication under its stated premises, not its prerequisite cones.",
+              "verdict": "Statement exact"
+            },
+            {
+              "grade": "L1",
+              "review": "reviews/R20_review.md",
+              "lines": [
+                104,
+                104
+              ],
+              "scope": "Named theorem at the specified hypotheses in the R20 manuscript.",
+              "verdict": "Exact statement comparison"
+            },
+            {
+              "grade": "L1",
+              "review": "reviews/R23_review.md",
+              "lines": [
+                27,
+                88
+              ],
+              "scope": "R23 window theorem; exact conditional statement, no approval of its lower proof suppliers.",
+              "verdict": "CORRECT WITH GAPS"
+            },
+            {
+              "grade": "L2",
+              "review": "reviews/DB3_review_A.md",
+              "lines": [
+                86,
+                97
+              ],
+              "scope": "For each level and family with EFamC and ChainTied on its window, one eventual threshold gives the advertised Chebyshev inequality on that same window. Full written implication in the reviewed edition.",
+              "verdict": "CONFIRMED"
+            }
+          ]
+        },
+        {
+          "unit": "B08",
+          "records": [
+            {
+              "grade": "L1",
+              "review": "reviews/R21_review.md",
+              "lines": [
+                136,
+                136
+              ],
+              "scope": "Lean interface as specified in the review row; no equivalence with a published result inferred.",
+              "verdict": "Exact statement comparison"
+            }
+          ]
+        }
+      ],
+      "human_checks": 0,
+      "position_owners": [
+        {
+          "name": "Deduction.CharacterBalanceMoves.core",
+          "unit": "D561",
+          "lines": 1161,
+          "level": "outline"
+        },
+        {
+          "name": "Deduction.CharacterBalanceMoves.one_char",
+          "unit": "D564",
+          "lines": 105,
+          "level": "full"
+        },
+        {
+          "name": "Deduction.ch_core",
+          "unit": "B09",
+          "lines": 160,
+          "level": "full"
+        },
+        {
+          "name": "Deduction.ch_top",
+          "unit": "B10",
+          "lines": 60,
+          "level": "full"
+        },
+        {
+          "name": "Deduction.ch_top_main_eq",
+          "unit": "D569",
+          "lines": 25,
+          "level": "outline"
+        },
+        {
+          "name": "Formalism.LFunctionChainParameters.LChain.errX5at_le",
+          "unit": "D567",
+          "lines": 289,
+          "level": "full"
+        },
+        {
+          "name": "Formalism.LFunctionChainParameters.LChain.size_windows_split",
+          "unit": "D566",
+          "lines": 10,
+          "level": "statement_only"
+        },
+        {
+          "name": "Formalism.LFunctionChainParameters.LErr.large_x_eventually",
+          "unit": "D550",
+          "lines": 13,
+          "level": "full"
+        },
+        {
+          "name": "Formalism.LFunctionChainParameters.ThickSetMeanBounds.derivative_integral_all",
+          "unit": "D562",
+          "lines": 270,
+          "level": "full"
+        },
+        {
+          "name": "Formalism.LFunctionChainParameters.ThickSetMeanBounds.proposition_size_bound",
+          "unit": "D563",
+          "lines": 180,
+          "level": "full"
+        },
+        {
+          "name": "Formalism.LFunctionChainParameters.WeightedSlopeBounds.Ga_bound5",
+          "unit": "D568",
+          "lines": 233,
+          "level": "outline"
+        },
+        {
+          "name": "Formalism.LFunctionChainParameters.WeightedSlopeBounds.each_unit_bound_statement",
+          "unit": "P021",
+          "lines": 56,
+          "level": "full"
+        },
+        {
+          "name": "Formalism.LFunctionChainParameters.WeightedSlopeBounds.weighted_mean_lower_bound_le",
+          "unit": "D570",
+          "lines": 12,
+          "level": "outline"
+        },
+        {
+          "name": "UpperTheory.Comparison₂.charsA",
+          "unit": "D548",
+          "lines": 203,
+          "level": "full"
+        },
+        {
+          "name": "UpperTheory.Comparison₂.core_gm",
+          "unit": "B08",
+          "lines": 233,
+          "level": "full"
+        },
+        {
+          "name": "UpperTheory.Comparison₂.gmA_eq",
+          "unit": "D547",
+          "lines": 242,
+          "level": "full"
+        },
+        {
+          "name": "UpperTheory.Comparison₂.level_gm_le_on_family_scales",
+          "unit": "P017",
+          "lines": 62,
+          "level": "full"
+        },
+        {
+          "name": "UpperTheory.Comparison₂.sigA_le",
+          "unit": "D549",
+          "lines": 51,
+          "level": "full"
+        }
+      ]
+    },
+    {
+      "id": "host",
+      "title": {
+        "en": "Host construction and list B",
+        "ko": "호스트 구성과 목록 B"
+      },
+      "role": {
+        "en": "Choose auxiliary primes and fields on which the estimates can be compared.",
+        "ko": "추정식을 비교할 보조 소수와 수체를 선택한다."
+      },
+      "entries": [
+        {
+          "unit": "B07",
+          "name": "UpperTheory.Top.supplyChi",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/SupplyChi.lean",
+          "line0": 8,
+          "line1": 16
+        },
+        {
+          "unit": "P015",
+          "name": "UpperTheory.Top.zero_free_all_of_green_v_win",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean",
+          "line0": 12,
+          "line1": 15
+        }
+      ],
+      "lines": 31622,
+      "by_exposition": {
+        "full": 11065,
+        "outline": 323,
+        "top_level_map": 0,
+        "statement_only": 20234,
+        "not_covered": 0
+      },
+      "level": "outline",
+      "writing": {
+        "en": "Outline of the host supply; individual local deductions are given.",
+        "ko": "호스트 공급의 개요와 개별 국소 유도."
+      },
+      "readings": [
+        {
+          "document": "paper",
+          "start_label": "r24:host-supply",
+          "end_label": "r24:host-design",
+          "title": {
+            "en": "Prime pair, field and common family",
+            "ko": "소수쌍·수체·공통 족"
+          }
+        }
+      ],
+      "review": {
+        "en": "B07: R21 v1, exact statement comparison.",
+        "ko": "B07: R21 v1, 진술 일치."
+      },
+      "review_evidence": [
+        {
+          "unit": "B07",
+          "records": [
+            {
+              "grade": "L1",
+              "review": "reviews/R21_review.md",
+              "lines": [
+                135,
+                135
+              ],
+              "scope": "Lean interface as specified in the review row; no equivalence with a published result inferred.",
+              "verdict": "Exact statement comparison"
+            }
+          ]
+        },
+        {
+          "unit": "P015",
+          "records": [
+            {
+              "grade": "L1",
+              "review": "reviews/R20_review.md",
+              "lines": [
+                47,
+                47
+              ],
+              "scope": "R20 local implication under its stated premises, not its prerequisite cones.",
+              "verdict": "Statement exact"
+            },
+            {
+              "grade": "L1",
+              "review": "reviews/R20_review.md",
+              "lines": [
+                103,
+                103
+              ],
+              "scope": "Named theorem at the specified hypotheses in the R20 manuscript.",
+              "verdict": "Exact statement comparison"
+            }
+          ]
+        }
+      ],
+      "human_checks": 0,
+      "position_owners": [
+        {
+          "name": "Formalism.HermitianLattices.Ext.PrimesInProgressions.pnt_progressions_relative_weak_holds",
+          "unit": "N415",
+          "lines": 11065,
+          "level": "full"
+        },
+        {
+          "name": "GlobalTheory.EX.exists_ranks_rankVal_frame",
+          "unit": "D513",
+          "lines": 81,
+          "level": "statement_only"
+        },
+        {
+          "name": "UpperTheory.T3.supplyOfAdmOf",
+          "unit": "D510",
+          "lines": 10129,
+          "level": "statement_only"
+        },
+        {
+          "name": "UpperTheory.Top.hostOfField",
+          "unit": "D511",
+          "lines": 10024,
+          "level": "statement_only"
+        },
+        {
+          "name": "UpperTheory.Top.supplyChi",
+          "unit": "B07",
+          "lines": 323,
+          "level": "outline"
+        }
+      ]
+    },
+    {
+      "id": "geometry",
+      "title": {
+        "en": "Geometric comparison and list C",
+        "ko": "기하 비교와 목록 C"
+      },
+      "role": {
+        "en": "Place geometric and arithmetic estimates on one compatible family.",
+        "ko": "같은 호환 가능한 족에 기하·산술 추정식을 놓는다."
+      },
+      "entries": [
+        {
+          "unit": "B05",
+          "name": "UpperTheory.Top.shape_closed_link_n_of_green",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopShape.lean",
+          "line0": 33,
+          "line1": 55
+        },
+        {
+          "unit": "B06",
+          "name": "GlobalTheory.Top.closed_family_admissible_twist_link_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ClosedFamilyAdmissibleTwistLink.lean",
+          "line0": 12,
+          "line1": 31
+        }
+      ],
+      "lines": 146214,
+      "by_exposition": {
+        "full": 72,
+        "outline": 129507,
+        "top_level_map": 0,
+        "statement_only": 16635,
+        "not_covered": 0
+      },
+      "level": "outline",
+      "writing": {
+        "en": "Outline of the joined comparison under list C.",
+        "ko": "목록 C 아래 결합 비교의 개요."
+      },
+      "readings": [
+        {
+          "document": "paper",
+          "start_label": "r24:host-topg",
+          "end_label": "r24:host-design",
+          "title": {
+            "en": "Common family and design estimates",
+            "ko": "공통 족과 설계 추정"
+          }
+        }
+      ],
+      "review": {
+        "en": "B05: no whole-block verdict.",
+        "ko": "B05: 블록 전체 판정 없음."
+      },
+      "review_evidence": [],
+      "human_checks": 0,
+      "position_owners": [
+        {
+          "name": "Formalism.L2.DIV.closed_linkDIVt_of_closed_bridge_kernel",
+          "unit": "D481",
+          "lines": 5437,
+          "level": "statement_only"
+        },
+        {
+          "name": "Formalism.MainNotions.FormalGroupSystem.Pf.hecke_place_bound",
+          "unit": "P045",
+          "lines": 150,
+          "level": "outline"
+        },
+        {
+          "name": "Formalism.MainNotions.WeilJacquetShalikaLaw.Proof.first_clause_cases",
+          "unit": "P047",
+          "lines": 72,
+          "level": "full"
+        },
+        {
+          "name": "GlobalTheory.Top.Irr.closed_linkIRR_of_join_count",
+          "unit": "D486",
+          "lines": 773,
+          "level": "outline"
+        },
+        {
+          "name": "GlobalTheory.Top.closed_family_admissible_twist_link_alt",
+          "unit": "B06",
+          "lines": 20795,
+          "level": "outline"
+        },
+        {
+          "name": "GlobalTheory.Top.link_alt_alt_bis",
+          "unit": "D484",
+          "lines": 1314,
+          "level": "outline"
+        },
+        {
+          "name": "GlobalTheory.Top.link_gl",
+          "unit": "D479",
+          "lines": 11198,
+          "level": "statement_only"
+        },
+        {
+          "name": "UpperTheory.Top.shape_closed_link_n_of_green",
+          "unit": "B05",
+          "lines": 106475,
+          "level": "outline"
+        }
+      ]
+    },
+    {
+      "id": "v",
+      "title": {
+        "en": "Selmer supplier V and its first two levels",
+        "ko": "셀머 공급자 V와 처음 두 단계"
+      },
+      "role": {
+        "en": "Supply a common interval controlling weighted lengths of local kernels.",
+        "ko": "국소 핵의 가중 길이를 제어하는 공통 구간을 공급한다."
+      },
+      "entries": [
+        {
+          "unit": "P013",
+          "name": "UpperTheory.One.vwin_of_row",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/VwinOfRow.lean",
+          "line0": 4,
+          "line1": 5
+        },
+        {
+          "unit": "W01",
+          "name": "UpperTheory.One.Join.automorphic_window_of_inputs",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TopMainZj.lean",
+          "line0": 71,
+          "line1": 74
+        }
+      ],
+      "lines": 886201,
+      "by_exposition": {
+        "full": 2065,
+        "outline": 653247,
+        "top_level_map": 0,
+        "statement_only": 230889,
+        "not_covered": 0
+      },
+      "level": "top_level_map",
+      "writing": {
+        "en": "Map of two supplier levels; full derivation not written.",
+        "ko": "공급자의 두 단계 지도. 전체 유도는 서술되지 않았다."
+      },
+      "readings": [
+        {
+          "document": "paper",
+          "start_label": "sec:r23-selmer",
+          "end_label": "sec:r23-selmer",
+          "title": {
+            "en": "Statement and start of the Selmer route",
+            "ko": "셀머 경로 진술과 시작"
+          }
+        },
+        {
+          "document": "atlas",
+          "path": "pillars/V.md",
+          "pages": [
+            1,
+            9
+          ],
+          "title": {
+            "en": "Two-level supplier map",
+            "ko": "두 단계 공급자 지도"
+          }
+        }
+      ],
+      "review": {
+        "en": "P013: R20 v0, exact statement comparison; no full V verdict.",
+        "ko": "P013: R20 v0, 진술 일치. V 전체 판정 없음."
+      },
+      "review_evidence": [
+        {
+          "unit": "P013",
+          "records": [
+            {
+              "grade": "L1",
+              "review": "reviews/R20_review.md",
+              "lines": [
+                102,
+                102
+              ],
+              "scope": "Named theorem at the specified hypotheses in the R20 manuscript.",
+              "verdict": "Exact statement comparison"
+            }
+          ]
+        },
+        {
+          "unit": "W01",
+          "records": [
+            {
+              "grade": "L1",
+              "review": "reviews/R21_review.md",
+              "lines": [
+                133,
+                133
+              ],
+              "scope": "Lean interface as specified in the review row; no equivalence with a published result inferred.",
+              "verdict": "Exact statement comparison"
+            }
+          ]
+        }
+      ],
+      "human_checks": 0,
+      "position_owners": [
+        {
+          "name": "GlobalTheory.KZ.zetaSysU_of_halves2",
+          "unit": "Z1.3.06",
+          "lines": 6,
+          "level": "full"
+        },
+        {
+          "name": "GlobalTheory.KZ.zetaUr_of_halves2",
+          "unit": "Z1.3.07",
+          "lines": 17,
+          "level": "full"
+        },
+        {
+          "name": "GlobalTheory.T.exists_admissible_hecke_projection_nonvanishing",
+          "unit": "Z1.3.03",
+          "lines": 1816,
+          "level": "outline"
+        },
+        {
+          "name": "GlobalTheory.T.saturatedOrdinaryIdeal_cuts_out_crystalline_locus",
+          "unit": "D097",
+          "lines": 2452,
+          "level": "outline"
+        },
+        {
+          "name": "PositivityTheory.KB.bOdd_zk",
+          "unit": "P034",
+          "lines": 23135,
+          "level": "outline"
+        },
+        {
+          "name": "PositivityTheory.QuaternionShaBounds.sSha",
+          "unit": "P037",
+          "lines": 622,
+          "level": "full"
+        },
+        {
+          "name": "UpperTheory.BaseChangeIdentities.baseChangeN",
+          "unit": "W02",
+          "lines": 2,
+          "level": "outline"
+        },
+        {
+          "name": "UpperTheory.BaseChangeIdentities.baseChangeN_of",
+          "unit": "V-BC",
+          "lines": 1279,
+          "level": "outline"
+        },
+        {
+          "name": "UpperTheory.GalN.V.Win.N.countK_alt",
+          "unit": "P029",
+          "lines": 124,
+          "level": "statement_only"
+        },
+        {
+          "name": "UpperTheory.GalN.V.Win.N.countP_alt",
+          "unit": "Z1.5.04",
+          "lines": 313,
+          "level": "outline"
+        },
+        {
+          "name": "UpperTheory.GalN.V.Win.N.countQ_alt",
+          "unit": "P030",
+          "lines": 412,
+          "level": "statement_only"
+        },
+        {
+          "name": "UpperTheory.GalN.V.Win.N.frobenius_trace_count_bound_of_cm_eigensystem_count_alt",
+          "unit": "Z1.5.07",
+          "lines": 273,
+          "level": "full"
+        },
+        {
+          "name": "UpperTheory.GalN.V.Win.N.frobenius_trace_count_bound_of_rat_eigensystem_count_alt",
+          "unit": "Z1.5.06",
+          "lines": 271,
+          "level": "full"
+        },
+        {
+          "name": "UpperTheory.HeckeLevelFrameExistence.candFin",
+          "unit": "W16",
+          "lines": 418,
+          "level": "outline"
+        },
+        {
+          "name": "UpperTheory.Kd.C7.pLocu",
+          "unit": "Z1.3.05",
+          "lines": 9832,
+          "level": "outline"
+        },
+        {
+          "name": "UpperTheory.Kd.K4.kato_eulerSystem_integrality",
+          "unit": "Z1.3.01",
+          "lines": 24730,
+          "level": "outline"
+        },
+        {
+          "name": "UpperTheory.LiteratureTheorems.OpenImageCondition",
+          "unit": "V-OPEN",
+          "lines": 2,
+          "level": "outline"
+        },
+        {
+          "name": "UpperTheory.One.Join.automorphic_window_of_inputs",
+          "unit": "W01",
+          "lines": 384567,
+          "level": "outline"
+        },
+        {
+          "name": "UpperTheory.One.vwin_of_row",
+          "unit": "P013",
+          "lines": 3,
+          "level": "outline"
+        },
+        {
+          "name": "UpperTheory.V.Af.card_k_of_printed_results",
+          "unit": "Z1.5.02",
+          "lines": 32,
+          "level": "full"
+        },
+        {
+          "name": "UpperTheory.V.Af.weyl_complex_of_printed_results",
+          "unit": "Z1.5.01",
+          "lines": 75,
+          "level": "full"
+        },
+        {
+          "name": "UpperTheory.V.Alg.M.main_holds",
+          "unit": "P027",
+          "lines": 8903,
+          "level": "outline"
+        },
+        {
+          "name": "UpperTheory.V.Alg.M.mprime_holds",
+          "unit": "P028",
+          "lines": 207,
+          "level": "full"
+        },
+        {
+          "name": "UpperTheory.V.Base.control",
+          "unit": "D558",
+          "lines": 1535,
+          "level": "statement_only"
+        },
+        {
+          "name": "UpperTheory.V.FW.ferreroWashington",
+          "unit": "W11",
+          "lines": 4838,
+          "level": "outline"
+        },
+        {
+          "name": "UpperTheory.V.HV.Core.of_four_alt",
+          "unit": "P020",
+          "lines": 8160,
+          "level": "outline"
+        },
+        {
+          "name": "UpperTheory.V.HV.DescentVanishingReductions.countII_and_countIII_of_printsH_of_sp4In",
+          "unit": "W09",
+          "lines": 15582,
+          "level": "outline"
+        },
+        {
+          "name": "UpperTheory.V.HV.DescentVanishingReductions.published_hypotheses_from_patching_alt",
+          "unit": "W03",
+          "lines": 46004,
+          "level": "statement_only"
+        },
+        {
+          "name": "UpperTheory.V.HV.DescentVanishingReductions.sp4In0_alt",
+          "unit": "W06",
+          "lines": 111950,
+          "level": "statement_only"
+        },
+        {
+          "name": "UpperTheory.V.HV.vwin_of_counts",
+          "unit": "W13",
+          "lines": 3902,
+          "level": "outline"
+        },
+        {
+          "name": "UpperTheory.V.KT.tors_le",
+          "unit": "P038",
+          "lines": 431,
+          "level": "outline"
+        },
+        {
+          "name": "UpperTheory.V.LDataCardLeFinrank.vFormula_of_classicalTheorems",
+          "unit": "P040",
+          "lines": 51,
+          "level": "outline"
+        },
+        {
+          "name": "UpperTheory.V.Loc.bkAbove",
+          "unit": "D082",
+          "lines": 6375,
+          "level": "outline"
+        },
+        {
+          "name": "UpperTheory.V.Odd.killPow",
+          "unit": "D551",
+          "lines": 1353,
+          "level": "statement_only"
+        },
+        {
+          "name": "UpperTheory.V.Odd.thmBcFree_of",
+          "unit": "W14",
+          "lines": 1518,
+          "level": "statement_only"
+        },
+        {
+          "name": "UpperTheory.V.Th.adjointLiftingTheorem_of_locPrints_of_core",
+          "unit": "P025",
+          "lines": 597,
+          "level": "statement_only"
+        },
+        {
+          "name": "UpperTheory.V.Tower.exists_descends",
+          "unit": "P031",
+          "lines": 53,
+          "level": "full"
+        },
+        {
+          "name": "UpperTheory.V.U3.countI",
+          "unit": "D532",
+          "lines": 253,
+          "level": "statement_only"
+        },
+        {
+          "name": "UpperTheory.V.Win.thmBab_of_lemmaK",
+          "unit": "W12",
+          "lines": 4107,
+          "level": "statement_only"
+        },
+        {
+          "name": "UpperTheory.V.X.propZ",
+          "unit": "W15",
+          "lines": 523,
+          "level": "statement_only"
+        },
+        {
+          "name": "UpperTheory.V.X.residual_bernoulli_nonvanishing",
+          "unit": "D108",
+          "lines": 242,
+          "level": "statement_only"
+        },
+        {
+          "name": "UpperTheory.V.Z.Coh.borelInjC",
+          "unit": "D506",
+          "lines": 521,
+          "level": "statement_only"
+        },
+        {
+          "name": "UpperTheory.V.Z.J.count_i_of_printed_bound_k_kato_automorphy",
+          "unit": "W08",
+          "lines": 2936,
+          "level": "outline"
+        },
+        {
+          "name": "UpperTheory.V.Z.J.count_v_of_printed_bound_k_reduced_unitary_lift",
+          "unit": "W10",
+          "lines": 15145,
+          "level": "statement_only"
+        },
+        {
+          "name": "UpperTheory.V.Z.J.oneCharU_of_katoTwoW_rig_admI_automorphy",
+          "unit": "D528",
+          "lines": 8872,
+          "level": "statement_only"
+        },
+        {
+          "name": "UpperTheory.V.Z.Kato.Final.zetaUr",
+          "unit": "P026",
+          "lines": 21141,
+          "level": "outline"
+        },
+        {
+          "name": "UpperTheory.V.Z.Kato.Joint.kato_global_unit_law_of_smoothed_classes",
+          "unit": "Z1.3.04",
+          "lines": 39884,
+          "level": "outline"
+        },
+        {
+          "name": "UpperTheory.V.Z.Kato.K5.smoothedZetaClass_hodgeTateLaw",
+          "unit": "Z1.3.02",
+          "lines": 28779,
+          "level": "outline"
+        },
+        {
+          "name": "UpperTheory.V.Z.Kato.WeilSphericalRecords.katoTwoW_of_printsH",
+          "unit": "W07",
+          "lines": 19193,
+          "level": "statement_only"
+        },
+        {
+          "name": "UpperTheory.V.Z.Sym.Top.linkedEnd_alt",
+          "unit": "Z1.1.05",
+          "lines": 791,
+          "level": "outline"
+        },
+        {
+          "name": "UpperTheory.V.Z.Sym.W.adjoint_automorphy_w_of_printed_hida_window",
+          "unit": "Z1.1.03",
+          "lines": 52398,
+          "level": "outline"
+        },
+        {
+          "name": "UpperTheory.V.Z.Sym.W.adjoint_lift_from_eisenstein_of_propagation",
+          "unit": "Z1.1.04",
+          "lines": 250,
+          "level": "full"
+        },
+        {
+          "name": "UpperTheory.V.Z.Sym.W.prop_eg_w_of_printed_hida",
+          "unit": "D077",
+          "lines": 8260,
+          "level": "statement_only"
+        },
+        {
+          "name": "UpperTheory.V.Z.Sym.W.seedInW_alt",
+          "unit": "Z1.1.02",
+          "lines": 2135,
+          "level": "outline"
+        },
+        {
+          "name": "UpperTheory.V.Z.Tf.SR.descWeak",
+          "unit": "W04",
+          "lines": 9,
+          "level": "outline"
+        },
+        {
+          "name": "UpperTheory.V.Z.Win.Dn.ends0_alt",
+          "unit": "P024",
+          "lines": 29,
+          "level": "statement_only"
+        },
+        {
+          "name": "UpperTheory.V.Z.Win.Dn.ends_of_alt",
+          "unit": "Z1.1.06",
+          "lines": 3685,
+          "level": "outline"
+        },
+        {
+          "name": "UpperTheory.V.ZK.Up.torsStab",
+          "unit": "P035",
+          "lines": 31,
+          "level": "outline"
+        },
+        {
+          "name": "UpperTheory.V.ZK.lemmaK_litN_alt",
+          "unit": "W05",
+          "lines": 9476,
+          "level": "statement_only"
+        },
+        {
+          "name": "UpperTheory.V.ZK.sClassOf",
+          "unit": "P032",
+          "lines": 2207,
+          "level": "outline"
+        },
+        {
+          "name": "UpperTheory.V.ZK.sCount",
+          "unit": "P036",
+          "lines": 2223,
+          "level": "outline"
+        },
+        {
+          "name": "UpperTheory.V.ZK.sThetaOf",
+          "unit": "P033",
+          "lines": 259,
+          "level": "full"
+        },
+        {
+          "name": "UpperTheory.V.ZK.torsAll",
+          "unit": "P039",
+          "lines": 237,
+          "level": "outline"
+        },
+        {
+          "name": "UpperTheory.V.vwinAt_of_joint",
+          "unit": "D536",
+          "lines": 775,
+          "level": "statement_only"
+        }
+      ]
+    },
+    {
+      "id": "f",
+      "title": {
+        "en": "Definite-side supplier F and its first two levels",
+        "ko": "정부호 측 공급자 F와 처음 두 단계"
+      },
+      "role": {
+        "en": "Supply a compatible family class and selection on the definite side.",
+        "ko": "정부호 측의 호환 가능한 족 부류와 선택을 공급한다."
+      },
+      "entries": [
+        {
+          "unit": "T02",
+          "name": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+          "line0": 44,
+          "line1": 68
+        },
+        {
+          "unit": "T03",
+          "name": "GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/HypothesesNonemptyOfUnramifiedExponents.lean",
+          "line0": 41,
+          "line1": 61
+        }
+      ],
+      "lines": 3679692,
+      "by_exposition": {
+        "full": 13564,
+        "outline": 3460914,
+        "top_level_map": 0,
+        "statement_only": 205214,
+        "not_covered": 0
+      },
+      "level": "top_level_map",
+      "writing": {
+        "en": "Map of two supplier levels; full derivation not written.",
+        "ko": "공급자의 두 단계 지도. 전체 유도는 서술되지 않았다."
+      },
+      "readings": [
+        {
+          "document": "paper",
+          "start_label": "sec:r23-p012",
+          "end_label": "sec:r23-p012",
+          "title": {
+            "en": "Statement and start of the definite-side route",
+            "ko": "정부호 측 경로 진술과 시작"
+          }
+        },
+        {
+          "document": "atlas",
+          "path": "pillars/F.md",
+          "pages": [
+            1,
+            11
+          ],
+          "title": {
+            "en": "Two-level supplier map",
+            "ko": "두 단계 공급자 지도"
+          }
+        }
+      ],
+      "review": {
+        "en": "T02: R21 v1, exact statement comparison; no full F verdict.",
+        "ko": "T02: R21 v1, 진술 일치. F 전체 판정 없음."
+      },
+      "review_evidence": [
+        {
+          "unit": "T02",
+          "records": [
+            {
+              "grade": "L1",
+              "review": "reviews/R21_review.md",
+              "lines": [
+                128,
+                128
+              ],
+              "scope": "Lean interface as specified in the review row; no equivalence with a published result inferred.",
+              "verdict": "Exact statement comparison"
+            }
+          ]
+        },
+        {
+          "unit": "T03",
+          "records": [
+            {
+              "grade": "L1",
+              "review": "reviews/R21_review.md",
+              "lines": [
+                129,
+                129
+              ],
+              "scope": "Lean interface as specified in the review row; no equivalence with a published result inferred.",
+              "verdict": "Exact statement comparison"
+            }
+          ]
+        }
+      ],
+      "human_checks": 0,
+      "position_owners": [
+        {
+          "name": "CompanionTheory.WaveGrid.wave_bessel_period_threshold",
+          "unit": "N076",
+          "lines": 16122,
+          "level": "outline"
+        },
+        {
+          "name": "GlobalTheory.BigTop.Fun.Close.fourier_coefficient_fit_of_join_alt",
+          "unit": "T10",
+          "lines": 28053,
+          "level": "outline"
+        },
+        {
+          "name": "GlobalTheory.CompanionTheory.SiegelND.Coef.coefN_eq_theta",
+          "unit": "N188",
+          "lines": 8593,
+          "level": "full"
+        },
+        {
+          "name": "GlobalTheory.CountConstants.count_constants_of_siegelWeil",
+          "unit": "D379",
+          "lines": 40441,
+          "level": "outline"
+        },
+        {
+          "name": "GlobalTheory.Fc.AllAtMemberStage0.allRows_of_open0_alt",
+          "unit": "T04",
+          "lines": 340355,
+          "level": "outline"
+        },
+        {
+          "name": "GlobalTheory.Fc.S0.StageU.hypotheses_nonempty_of_unramified_exponents_alt",
+          "unit": "T03",
+          "lines": 265782,
+          "level": "outline"
+        },
+        {
+          "name": "GlobalTheory.Fc.S0.ontoX_and_lamLow_of_unitaryGroupHypotheses'",
+          "unit": "T05",
+          "lines": 303161,
+          "level": "outline"
+        },
+        {
+          "name": "GlobalTheory.Mem.Col2.SameOff.use₆",
+          "unit": "P096",
+          "lines": 225,
+          "level": "full"
+        },
+        {
+          "name": "GlobalTheory.Mem.LiteralAutomorphy.rowRatW_of_rowTest",
+          "unit": "F-AUX",
+          "lines": 4,
+          "level": "outline"
+        },
+        {
+          "name": "GlobalTheory.NLinkClose.main_alt_alt",
+          "unit": "D421",
+          "lines": 150531,
+          "level": "statement_only"
+        },
+        {
+          "name": "GlobalTheory.PerTwClose.twistedPeriodAdmissible_of_rowInt",
+          "unit": "P048",
+          "lines": 266,
+          "level": "outline"
+        },
+        {
+          "name": "GlobalTheory.SqTop.square_top_term_joined_estimates",
+          "unit": "N318",
+          "lines": 34270,
+          "level": "outline"
+        },
+        {
+          "name": "GlobalTheory.T.large_unramified_exponent_bundles_exist_alt",
+          "unit": "T06",
+          "lines": 263460,
+          "level": "outline"
+        },
+        {
+          "name": "GlobalTheory.T.open0_of_unitary_group_hypotheses",
+          "unit": "T08",
+          "lines": 169776,
+          "level": "outline"
+        },
+        {
+          "name": "GlobalTheory.T.period_entries_tie_and_level_valuations_at_built",
+          "unit": "D394",
+          "lines": 43384,
+          "level": "outline"
+        },
+        {
+          "name": "GlobalTheory.T.thetaLift_adjoint_scalarFormula_injective",
+          "unit": "D415",
+          "lines": 17210,
+          "level": "outline"
+        },
+        {
+          "name": "GlobalTheory.T.twisted_local_factors_match",
+          "unit": "F-AUX",
+          "lines": 2,
+          "level": "outline"
+        },
+        {
+          "name": "GlobalTheory.T.twisted_square_theta_integrals_eq",
+          "unit": "D044",
+          "lines": 2,
+          "level": "outline"
+        },
+        {
+          "name": "GlobalTheory.T.twisted_theta_integral_unfolds",
+          "unit": "D024",
+          "lines": 25645,
+          "level": "outline"
+        },
+        {
+          "name": "GlobalTheory.TieBase.base_data",
+          "unit": "Z4.2.13",
+          "lines": 6,
+          "level": "outline"
+        },
+        {
+          "name": "GlobalTheory.TwU.std_at_served",
+          "unit": "Z42-SITES",
+          "lines": 14,
+          "level": "full"
+        },
+        {
+          "name": "GlobalTheory.TwV.StepDel.del_of_pos",
+          "unit": "Z42-KERNEL",
+          "lines": 3,
+          "level": "outline"
+        },
+        {
+          "name": "GlobalTheory.TwV.StepZero.del_zero",
+          "unit": "Z42-KERNEL",
+          "lines": 4,
+          "level": "outline"
+        },
+        {
+          "name": "GlobalTheory.TwV.adLawAt_xiAd",
+          "unit": "P090",
+          "lines": 10086,
+          "level": "outline"
+        },
+        {
+          "name": "GlobalTheory.TwV.away_of_dict",
+          "unit": "Z42-FRAMES",
+          "lines": 2349,
+          "level": "full"
+        },
+        {
+          "name": "GlobalTheory.TwV.congAt_fb_lev",
+          "unit": "P134",
+          "lines": 911,
+          "level": "full"
+        },
+        {
+          "name": "GlobalTheory.TwV.joint_at_nonempty",
+          "unit": "Z4.2.02",
+          "lines": 426,
+          "level": "outline"
+        },
+        {
+          "name": "GlobalTheory.TwV.joint_dict",
+          "unit": "Z42-SITES",
+          "lines": 189,
+          "level": "full"
+        },
+        {
+          "name": "GlobalTheory.TwV.move_at_site",
+          "unit": "Z42-FRAMES",
+          "lines": 563,
+          "level": "full"
+        },
+        {
+          "name": "GlobalTheory.TwV.pos_at_site",
+          "unit": "Z42-SITES",
+          "lines": 32,
+          "level": "full"
+        },
+        {
+          "name": "GlobalTheory.TwV.scal_at_site",
+          "unit": "Z42-FRAMES",
+          "lines": 103,
+          "level": "full"
+        },
+        {
+          "name": "GlobalTheory.TwV.site_cmpLite_siteAdm",
+          "unit": "P046",
+          "lines": 10058,
+          "level": "outline"
+        },
+        {
+          "name": "GlobalTheory.TwV.site_law_xiIn",
+          "unit": "Z42-KERNEL",
+          "lines": 5250,
+          "level": "outline"
+        },
+        {
+          "name": "GlobalTheory.pairOK_allSites",
+          "unit": "Z4.2.04",
+          "lines": 585,
+          "level": "full"
+        },
+        {
+          "name": "GlobalTheory.rowNGP_of_siegelWeil",
+          "unit": "D033",
+          "lines": 1500,
+          "level": "outline"
+        },
+        {
+          "name": "ReciprocityTheory.ChartRestriction.DS.Lap.TopClosed.besselNVG",
+          "unit": "D025",
+          "lines": 21500,
+          "level": "outline"
+        },
+        {
+          "name": "UpperTheory.GalC.final_alt_alt",
+          "unit": "T07",
+          "lines": 16849,
+          "level": "outline"
+        },
+        {
+          "name": "UpperTheory.GalC.linkN_of_twGood_galoisPreconditions",
+          "unit": "D427",
+          "lines": 54683,
+          "level": "statement_only"
+        },
+        {
+          "name": "UpperTheory.Lit.functionalsSeparate_of_howeUnram_of_siegelWeil",
+          "unit": "T09",
+          "lines": 64874,
+          "level": "outline"
+        },
+        {
+          "name": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+          "unit": "T02",
+          "lines": 1782425,
+          "level": "outline"
+        }
+      ]
+    },
+    {
+      "id": "assembly",
+      "title": {
+        "en": "Top-level assembly and the public conclusions",
+        "ko": "최상위 조립과 공개 결론"
+      },
+      "role": {
+        "en": "Use the top-level implications to reach all characters and zeta.",
+        "ko": "최상위 함의로 모든 지표와 제타 함수에 대한 결론에 이른다."
+      },
+      "entries": [
+        {
+          "unit": "P009",
+          "name": "allChi",
+          "file": "Supplements/Kernels/MainTheorems.lean",
+          "line0": 7,
+          "line1": 7
+        },
+        {
+          "unit": "P011",
+          "name": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+          "line0": 7,
+          "line1": 8
+        },
+        {
+          "unit": "P003",
+          "name": "LFunction_ne_zero_of_half_lt_re",
+          "file": "Main.lean",
+          "line0": 8,
+          "line1": 8
+        }
+      ],
+      "lines": 2586981,
+      "by_exposition": {
+        "full": 126,
+        "outline": 2586855,
+        "top_level_map": 0,
+        "statement_only": 0,
+        "not_covered": 0
+      },
+      "level": "outline",
+      "writing": {
+        "en": "Conditional assembly and goal comparisons; the dependencies still need their own checks.",
+        "ko": "조건부 조립과 결론 비교. 의존 입력은 개별 검토가 필요하다."
+      },
+      "readings": [
+        {
+          "document": "paper",
+          "start_label": "r24:synthesis",
+          "end_label": "v5:conclusion-end",
+          "title": {
+            "en": "Conditional synthesis",
+            "ko": "조건부 종합"
+          }
+        },
+        {
+          "document": "paper",
+          "start_label": "pn:P001",
+          "end_label": "pn:P005",
+          "title": {
+            "en": "Five exported targets",
+            "ko": "공개 결론 다섯 개"
+          }
+        }
+      ],
+      "review": {
+        "en": "P011 and P003: R20 v0, statement comparisons only.",
+        "ko": "P011과 P003: R20 v0, 진술 대조만."
+      },
+      "review_evidence": [
+        {
+          "unit": "P011",
+          "records": [
+            {
+              "grade": "L1",
+              "review": "reviews/R20_review.md",
+              "lines": [
+                99,
+                99
+              ],
+              "scope": "Named theorem at the specified hypotheses in the R20 manuscript.",
+              "verdict": "Exact statement comparison"
+            }
+          ]
+        },
+        {
+          "unit": "P003",
+          "records": [
+            {
+              "grade": "L1",
+              "review": "reviews/R20_review.md",
+              "lines": [
+                97,
+                97
+              ],
+              "scope": "Named theorem at the specified hypotheses in the R20 manuscript.",
+              "verdict": "Exact statement comparison"
+            }
+          ]
+        }
+      ],
+      "human_checks": 0,
+      "position_owners": [
+        {
+          "name": "UpperTheory.FinalTheorems.everyCharacter",
+          "unit": "P010",
+          "lines": 1412535,
+          "level": "outline"
+        },
+        {
+          "name": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+          "unit": "P011",
+          "lines": 45447,
+          "level": "outline"
+        },
+        {
+          "name": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+          "unit": "P012",
+          "lines": 1118051,
+          "level": "outline"
+        },
+        {
+          "name": "UpperTheory.Top.every_character_of_green_v_win",
+          "unit": "P014",
+          "lines": 40,
+          "level": "full"
+        },
+        {
+          "name": "UpperTheory.Top.zeroFreeAll_of_topG",
+          "unit": "P016",
+          "lines": 86,
+          "level": "full"
+        },
+        {
+          "name": "UpperTheory.Top.zero_free_all_of_green_v_win",
+          "unit": "P015",
+          "lines": 10819,
+          "level": "outline"
+        },
+        {
+          "name": "allChi",
+          "unit": "P009",
+          "lines": 3,
+          "level": "outline"
+        }
+      ]
+    },
+    {
+      "id": "other",
+      "title": {
+        "en": "Other index positions",
+        "ko": "나머지 색인 위치"
+      },
+      "role": {
+        "en": "Collect all remaining local and shared work, including representation and comparison inputs.",
+        "ko": "표현과 비교의 입력을 포함해 다른 모든 국소·공유 작업을 모은다."
+      },
+      "entries": [
+        {
+          "unit": "B02",
+          "name": "UpperTheory.Gal.Int.Geo.geoOne_holds",
+          "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/GeometricFlagBases/WeightOneGeometricRealization.lean",
+          "line0": 11,
+          "line1": 11
+        },
+        {
+          "unit": "T13",
+          "name": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopCovolSlim2Use.lean",
+          "line0": 16,
+          "line1": 22
+        }
+      ],
+      "lines": 2230855,
+      "by_exposition": {
+        "full": 633,
+        "outline": 1492618,
+        "top_level_map": 0,
+        "statement_only": 737604,
+        "not_covered": 0
+      },
+      "level": "mixed",
+      "writing": {
+        "en": "Mixed local records. No block-wide derivation is written.",
+        "ko": "수준이 서로 다른 국소 기록. 블록 전체의 유도는 서술되지 않았다."
+      },
+      "readings": [
+        {
+          "document": "paper",
+          "start_label": "sub:B02",
+          "end_label": "sub:B02",
+          "title": {
+            "en": "One representation input only",
+            "ko": "표현 입력 한 가지"
+          }
+        },
+        {
+          "document": "paper",
+          "start_label": "sub:T13",
+          "end_label": "sub:T13",
+          "title": {
+            "en": "One covolume input only",
+            "ko": "공변부피 입력 한 가지"
+          }
+        }
+      ],
+      "review": {
+        "en": "No verdict for this remainder as a whole.",
+        "ko": "나머지 전체에 대한 판정 없음."
+      },
+      "review_evidence": [
+        {
+          "unit": "T13",
+          "records": [
+            {
+              "grade": "L1",
+              "review": "reviews/R21_review.md",
+              "lines": [
+                130,
+                130
+              ],
+              "scope": "Lean interface as specified in the review row; no equivalence with a published result inferred.",
+              "verdict": "Exact statement comparison"
+            }
+          ]
+        }
+      ],
+      "human_checks": 0,
+      "position_owners": [
+        {
+          "name": "ChowFormCompatibility.chow_form_hyperplane_section",
+          "unit": "D154",
+          "lines": 0,
+          "level": "outline"
+        },
+        {
+          "name": "ChowFormHeightComparison₂.chow_form_height_comparison",
+          "unit": "T16",
+          "lines": 30511,
+          "level": "outline"
+        },
+        {
+          "name": "Formalism.DivisionValues.dual_lattice_measure",
+          "unit": "Z5.2",
+          "lines": 41,
+          "level": "full"
+        },
+        {
+          "name": "Formalism.HN.DualPolygon.ht_dual",
+          "unit": "Z5.2",
+          "lines": 9,
+          "level": "full"
+        },
+        {
+          "name": "Formalism.HN.height_gram_determinant",
+          "unit": "P049",
+          "lines": 265,
+          "level": "full"
+        },
+        {
+          "name": "Formalism.HN.place_lattice_structure",
+          "unit": "P050",
+          "lines": 188,
+          "level": "full"
+        },
+        {
+          "name": "Formalism.MainNotions.N.K.Closed.open_inputs_at_normalized",
+          "unit": "P043",
+          "lines": 4883,
+          "level": "outline"
+        },
+        {
+          "name": "Formalism.MainNotions.N.K.Closed.theorem_n5_from_inputs",
+          "unit": "P044",
+          "lines": 8844,
+          "level": "outline"
+        },
+        {
+          "name": "Formalism.MainNotions.N.K.normalized_ring_data",
+          "unit": "P041",
+          "lines": 7842,
+          "level": "outline"
+        },
+        {
+          "name": "Formalism.RepresentationBoundsCohomology.ringDataObjects.moduleBc",
+          "unit": "P042",
+          "lines": 363,
+          "level": "outline"
+        },
+        {
+          "name": "FubiniStudyChowHeightFormula₂.fubiniStudy_chowHeight_formula",
+          "unit": "D155",
+          "lines": 0,
+          "level": "outline"
+        },
+        {
+          "name": "GlobalTheory.CompanionTheory.Ar.Plug.deepStR_of_use",
+          "unit": "T26",
+          "lines": 451210,
+          "level": "outline"
+        },
+        {
+          "name": "GlobalTheory.CompanionTheory.Relay.hodge_tate_of_fargues_exact",
+          "unit": "D309",
+          "lines": 517,
+          "level": "outline"
+        },
+        {
+          "name": "GlobalTheory.GreenBridge.green_of_regular",
+          "unit": "D575",
+          "lines": 280,
+          "level": "outline"
+        },
+        {
+          "name": "GlobalTheory.Hk3.howeUnram_holds",
+          "unit": "F-AUX",
+          "lines": 6499,
+          "level": "outline"
+        },
+        {
+          "name": "GlobalTheory.T.FlatDegree_holds",
+          "unit": "D123",
+          "lines": 9501,
+          "level": "outline"
+        },
+        {
+          "name": "GlobalTheory.T.charpoly_deRhamHomology_endomorphism_eq_map_ladic",
+          "unit": "D174",
+          "lines": 12706,
+          "level": "outline"
+        },
+        {
+          "name": "GlobalTheory.T.crystalline_graded_pieces_description",
+          "unit": "D302",
+          "lines": 179,
+          "level": "outline"
+        },
+        {
+          "name": "GlobalTheory.T.cusp_weight_integrable_on_fundamental_set",
+          "unit": "D331",
+          "lines": 3060,
+          "level": "statement_only"
+        },
+        {
+          "name": "GlobalTheory.T.flatDeg_of_scholzeWeinstein_of_prints",
+          "unit": "D443",
+          "lines": 3808,
+          "level": "outline"
+        },
+        {
+          "name": "GlobalTheory.T.full_intersection_tower_I8_identity",
+          "unit": "D317",
+          "lines": 24440,
+          "level": "statement_only"
+        },
+        {
+          "name": "GlobalTheory.T.globalLatticeIndexTheorem_of_lengthBoundAtPlaces",
+          "unit": "D002",
+          "lines": 7268,
+          "level": "statement_only"
+        },
+        {
+          "name": "GlobalTheory.T.period_gram_comparison_bound",
+          "unit": "D340",
+          "lines": 1382,
+          "level": "statement_only"
+        },
+        {
+          "name": "GlobalTheory.T.theorem_tb_of_local_blochKato_duality_euler",
+          "unit": "D006",
+          "lines": 8424,
+          "level": "outline"
+        },
+        {
+          "name": "GlobalTheory.T.thetaKeyScalar_isUnit_on_integralModels",
+          "unit": "D128",
+          "lines": 3199,
+          "level": "outline"
+        },
+        {
+          "name": "GlobalTheory.T.wachLattice_laterClauses_hold",
+          "unit": "D004",
+          "lines": 12168,
+          "level": "outline"
+        },
+        {
+          "name": "GroundTheory.PAdicHodge.ACris.bCris_fixed_mem_maxUnramified",
+          "unit": "D230",
+          "lines": 520,
+          "level": "outline"
+        },
+        {
+          "name": "GroundTheory.PAdicHodge.ACris.phiPlus_mem_span_periodT",
+          "unit": "D245",
+          "lines": 373,
+          "level": "outline"
+        },
+        {
+          "name": "GroundTheory.PAdicHodge.bDeRham_fixed",
+          "unit": "D203",
+          "lines": 1407,
+          "level": "outline"
+        },
+        {
+          "name": "PositivityTheory.HtPt.Ah.deep_slim_use",
+          "unit": "T14",
+          "lines": 4609,
+          "level": "outline"
+        },
+        {
+          "name": "PositivityTheory.Pf1.HilbertSamuelMoriwaki.hsUse_outright",
+          "unit": "T18",
+          "lines": 9,
+          "level": "outline"
+        },
+        {
+          "name": "PositivityTheory.Pf1.HilbertSamuelMoriwaki.moriwakiBig_outright",
+          "unit": "T17",
+          "lines": 13,
+          "level": "outline"
+        },
+        {
+          "name": "PositivityTheory.SiegelWeilFormula.Fin.siegelWeilStd",
+          "unit": "T12",
+          "lines": 20986,
+          "level": "outline"
+        },
+        {
+          "name": "PositivityTheory.ThKR.theoremK_head2",
+          "unit": "T11",
+          "lines": 97419,
+          "level": "outline"
+        },
+        {
+          "name": "ReciprocityTheory.AnForm.M.poincareLelong",
+          "unit": "D351",
+          "lines": 975,
+          "level": "statement_only"
+        },
+        {
+          "name": "SelfIntersectionVolumeEstimates.topCovolG_alt_alt",
+          "unit": "T15",
+          "lines": 202120,
+          "level": "outline"
+        },
+        {
+          "name": "SelfIntersectionVolumeEstimates.topCovolSlim2_use_alt_alt",
+          "unit": "T13",
+          "lines": 101564,
+          "level": "outline"
+        },
+        {
+          "name": "UpperTheory.Comparison₂.hostFactsS",
+          "unit": "D014",
+          "lines": 130,
+          "level": "full"
+        },
+        {
+          "name": "UpperTheory.Gal.Int.Geo.geoOne_holds",
+          "unit": "B02",
+          "lines": 607125,
+          "level": "statement_only"
+        },
+        {
+          "name": "UpperTheory.Gal.Int.galoisLocalGlobalStrong_of_geometry_lift",
+          "unit": "B03",
+          "lines": 93354,
+          "level": "statement_only"
+        },
+        {
+          "name": "UpperTheory.Gal.Int.galoisRepresentations_of_thetaLift",
+          "unit": "B01",
+          "lines": 1629,
+          "level": "outline"
+        },
+        {
+          "name": "UpperTheory.Gal.crystallineComparison.Mod.esNorm_link",
+          "unit": "D193",
+          "lines": 3185,
+          "level": "outline"
+        },
+        {
+          "name": "UpperTheory.Lit.every_character_of_theta_integrals_local_matching",
+          "unit": "T01",
+          "lines": 485240,
+          "level": "outline"
+        },
+        {
+          "name": "UpperTheory.LiteratureTheorems.fargues_exact_of_literature",
+          "unit": "T24",
+          "lines": 1613,
+          "level": "outline"
+        },
+        {
+          "name": "UpperTheory.LiteratureTheorems.nef_rr_of_literature",
+          "unit": "T23",
+          "lines": 769,
+          "level": "outline"
+        },
+        {
+          "name": "UpperTheory.LiteratureTheorems.poincare_lelong_inv_of_literature",
+          "unit": "T21",
+          "lines": 18,
+          "level": "outline"
+        },
+        {
+          "name": "UpperTheory.LiteratureTheorems.principalisation_char_zero_of_literature",
+          "unit": "T20",
+          "lines": 1572,
+          "level": "outline"
+        },
+        {
+          "name": "UpperTheory.LiteratureTheorems.resolution_char_zero_of_literature",
+          "unit": "T19",
+          "lines": 35,
+          "level": "outline"
+        },
+        {
+          "name": "UpperTheory.LiteratureTheorems.zarhin_statement",
+          "unit": "T22",
+          "lines": 3757,
+          "level": "outline"
+        },
+        {
+          "name": "UpperTheory.N.boundAtTwoThree_linked_of_recT",
+          "unit": "T25",
+          "lines": 9,
+          "level": "outline"
+        },
+        {
+          "name": "UpperTheory.Zero.LLC.recTExists",
+          "unit": "B04",
+          "lines": 4837,
+          "level": "outline"
+        }
+      ]
+    }
+  ],
+  "levels": [
+    {
+      "id": "full",
+      "title": {
+        "en": "Full under stated inputs",
+        "ko": "전제 아래 완전한 국소 유도"
+      },
+      "lines": 31564,
+      "percent": 0.3299
+    },
+    {
+      "id": "outline",
+      "title": {
+        "en": "Outline at indexed head",
+        "ko": "색인 선언의 개요"
+      },
+      "lines": 8324895,
+      "percent": 87.0164
+    },
+    {
+      "id": "top_level_map",
+      "title": {
+        "en": "Only a top-level map recorded as a head grade",
+        "ko": "선언 등급이 최상위 지도뿐"
+      },
+      "lines": 0,
+      "percent": 0.0
+    },
+    {
+      "id": "statement_only",
+      "title": {
+        "en": "Statement only",
+        "ko": "진술만 있음"
+      },
+      "lines": 1210586,
+      "percent": 12.6537
+    },
+    {
+      "id": "not_covered",
+      "title": {
+        "en": "No indexed head",
+        "ko": "색인 선언 없음"
+      },
+      "lines": 0,
+      "percent": 0.0
+    }
+  ],
+  "summary": {
+    "en": "At the nearest indexed head, 0.3299% of core positions have a Full local argument, 87.0164% have an outline and 12.6537% have a statement only. Every position has a head, so none is unassigned. Top-level maps for V and F describe suppliers without deriving them. These percentages cannot determine what fraction of the interior has a written proof. The largest named inputs still lacking a written derivation are F (3,679,692) and V (886,201).",
+    "ko": "가장 가까운 색인 선언을 기준으로 코어 위치의 0.3299%에는 전제 아래 완전한 국소 논증, 87.0164%에는 개요, 12.6537%에는 진술만 있다. 모든 위치에 색인 선언이 있어 미배정 위치는 없다. V·F의 최상위 지도는 공급자를 설명하며 전체 유도를 주지 않는다. 이 비율로 내부 증명 전체에서 서술된 몫을 알 수 없다. 전체 서면 유도가 없는 주요 입력 중 가장 큰 것은 F(3,679,692)와 V(886,201)다."
+  },
+  "citations": {
+    "distinct_physical": 13015,
+    "core": 12584,
+    "core_percent": 0.1315,
+    "core_full": 5853,
+    "core_outline": 7507,
+    "core_outline_only": 6731,
+    "core_uncited": 9554461,
+    "core_uncited_percent": 99.8685,
+    "full_source_physical_lines": 17374215,
+    "steps": 739,
+    "all_prerequisites_full": 0,
+    "full_units": 55,
+    "human_checked_steps": 0,
+    "core_full_percent": 0.0612,
+    "core_outline_only_percent": 0.0704,
+    "full_outline_overlap_in_core": 776
+  },
+  "method": {
+    "nearest_positions": "progress/index_position.json",
+    "anchors": "progress/dominators.json",
+    "history": "progress/history.jsonl",
+    "source_graph_sha256": "be8105049e470b3ef224a2b234a0cac6395f8fb1d983c8200416f116ba15abf6",
+    "explicit_subtree_roots": {
+      "landau": [
+        "P018",
+        "P019"
+      ],
+      "window": [
+        "P017"
+      ],
+      "host": [
+        "B07"
+      ],
+      "geometry": [
+        "B05"
+      ],
+      "v": [
+        "P013"
+      ],
+      "f": [
+        "T02"
+      ]
+    },
+    "assembly_residual_owner_ids": [
+      "P001",
+      "P002",
+      "P003",
+      "P004",
+      "P005",
+      "P006",
+      "P007",
+      "P008",
+      "P009",
+      "P010",
+      "P011",
+      "P012",
+      "P014",
+      "P015",
+      "P016"
+    ],
+    "fallback": "other",
+    "description": {
+      "en": "Start with each complete residual row of the existing nearest-indexed-head partition. Assign the row to its nearest indicated subtree root. Outside those subtrees assign only residuals owned directly by the listed outer heads to assembly. All remaining head regions go to other. A large residual at a top-level head includes internal dependencies and is not a measure of the length of its wrapper.",
+      "ko": "기존 색인의 각 잔여 구역을 나누지 않고 가장 가까운 지정 하위 트리로 배정한다. 그 밖에서는 열거한 상위 선언에 직접 귀속된 잔여 구역만 조립에 넣고 나머지를 기타에 둔다. 상위 선언의 큰 잔여 구역은 내부 의존성을 포함하므로 래퍼 서술 길이가 아니다."
+    },
+    "positional_categories": {
+      "en": "The stored head statuses are Full, Outlined and Statement only. A map describes the block as a whole; it is not an additional nearest-head status. No positive index position is without an owner.",
+      "ko": "저장된 선언 상태는 완전한 국소 유도·개요·진술뿐이다. 지도는 블록 전체의 서술 방식이며 색인 선언의 별도 상태가 아니다. 양의 가중치를 가진 미배정 위치는 없다."
+    }
+  },
+  "source": [
+    "progress/index_position.json",
+    "progress/dominators.json",
+    "progress/history.jsonl",
+    "progress/README.md",
+    "PROGRESS.md",
+    "scripts/check_coverage_blocks.py"
+  ],
+  "human_checks": 0,
+  "citation_interpretation": {
+    "en": "Of 9,567,045 weighted core lines, 5,853 (0.0612%) are cited in Full notes, 6,731 more (0.0704%) only in outlines, and 9,554,461 (99.8685%) have no citation in an active step. A citation locates an assertion; an uncited line may have exposition elsewhere. The physical citation union over the entire source is 13,015, including 12,584 in the core.",
+    "ko": "코어 9,567,045줄에서 5,853줄(0.0612%)은 완전한 국소 논증의 단계가 인용하며, 추가 6,731줄(0.0704%)은 개요 단계만 인용한다. 9,554,461줄(99.8685%)은 현행 단계에서 인용되지 않는다. 인용은 진술의 위치를 가리키며, 미인용 줄에도 다른 곳에 서술이 있을 수 있다. 전체 소스에서의 물리적 인용 합집합은 13,015줄이며 그중 코어는 12,584줄이다."
+  },
+  "supplier_boundaries": {
+    "v": {
+      "head": "P013",
+      "whole_cone": 886201,
+      "first_two_levels": "pillars/V.md",
+      "first_level_units": [
+        "W01",
+        "W02",
+        "V-OPEN"
+      ],
+      "second_level_units": [
+        "W01",
+        "V-BC",
+        "W16"
+      ]
+    },
+    "f": {
+      "head": "T02",
+      "whole_cone": 3679692,
+      "first_two_levels": "pillars/F.md",
+      "first_level_units": [
+        "T02",
+        "T25"
+      ],
+      "second_level_units": [
+        "F-AUX",
+        "T09",
+        "T02",
+        "T05",
+        "T10",
+        "D044",
+        "T08",
+        "T03",
+        "T25"
+      ]
+    },
+    "union": 4565893,
+    "percentage": 47.7252,
+    "disjoint": true,
+    "scope": {
+      "en": "The V and F rows locate the disjoint P013 and T02 supplier cones. A cited dependency can also be reached by another route. For example T25 and the shared Howe input appear in the F reading map, while their own index positions are in the remainder.",
+      "ko": "V와 F 행은 서로 겹치지 않는 P013·T02 공급자의 지배 구역이다. 읽기 지도에 나오는 의존 입력에 다른 경로로도 도달할 수 있다. 예를 들어 T25와 공유된 하우 입력은 F 지도에 나오지만 자체 색인 위치는 나머지 행에 속한다."
+    }
+  }
+}

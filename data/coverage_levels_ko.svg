@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 260" role="img" aria-labelledby="t">
+<title id="t">가장 가까운 색인 명제의 서술 수준</title>
+<rect width="840" height="260" fill="white"/>
+<g font-family="sans-serif" font-size="16" fill="#222">
+<text x="8" y="35">가장 가까운 선언에 전체 논증</text>
+<rect x="260" y="19" width="330" height="18" fill="#f3f3f3"/>
+<rect x="260" y="19" width="1.0887" height="18" fill="#262626"/>
+<text x="607" y="35">31,564 (0.3299%)</text>
+<text x="8" y="81">색인 선언에 개요</text>
+<rect x="260" y="65" width="330" height="18" fill="#f3f3f3"/>
+<rect x="260" y="65" width="287.1540" height="18" fill="#555555"/>
+<text x="607" y="81">8,324,895 (87.0164%)</text>
+<text x="8" y="127">선언 등급이 지도뿐</text>
+<rect x="260" y="111" width="330" height="18" fill="#f3f3f3"/>
+<rect x="260" y="111" width="0.0000" height="18" fill="#888888"/>
+<text x="607" y="127">0 (0.0000%)</text>
+<text x="8" y="173">색인 선언에 진술만</text>
+<rect x="260" y="157" width="330" height="18" fill="#f3f3f3"/>
+<rect x="260" y="157" width="41.7572" height="18" fill="#aaaaaa"/>
+<text x="607" y="173">1,210,586 (12.6537%)</text>
+<text x="8" y="219">색인 선언 없음</text>
+<rect x="260" y="203" width="330" height="18" fill="#f3f3f3"/>
+<rect x="260" y="203" width="0.0000" height="18" fill="#dddddd"/>
+<text x="607" y="219">0 (0.0000%)</text>
+</g></svg>

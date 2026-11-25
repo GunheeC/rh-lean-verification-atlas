@@ -32,7 +32,7 @@ Sources for the assumptions · [Lean source mirror](../sources/README.md)
 
 ## Where to read
 
-The blueprint and conditional paper are AI-written, unpublished manuscripts prepared under the direction of Gunhee Cho. They have no human review. Levent Alpöge is the author of the Lean development. [Blueprint v13a](../editions/v0.1.0/blueprint_v13a.pdf) · [Conditional paper v6](../editions/v0.1.0/paper_v6.pdf) · [Edition register](../data/editions.json)
+Gunhee Cho is the paper’s author and the blueprint’s editor. Both were drafted with AI assistance. No independent human referee has checked the arguments. Levent Alpöge is the author of the Lean development. [Blueprint v13b](../editions/v0.1.0/blueprint_v13b.pdf) · [Conditional paper v7](../editions/v0.1.0/paper_v7.pdf) · [Edition register](../data/editions.json)
 
 - [F-AUX · Three inputs to the definite-side evaluation grid and row test](../notes/units/F-AUX_round4.md), pp. 1–3 in the atlas print layout. Round-4 outline under the named inputs; pending_review.
 

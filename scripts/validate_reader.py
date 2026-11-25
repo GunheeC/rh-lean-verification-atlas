@@ -18,7 +18,7 @@ HANGUL = re.compile(r"[가-힣]")
 FRONT = ("README.md", "STATUS.md", "MAP.md", "LANDSCAPE.md", "FAQ.md", "CHANGELOG.md",
          "CONTRIBUTING.md", "NOTICE.md",
          "lookup/declarations.md", "lookup/glossary.md", "signoffs/README.md", "OVERVIEW.md",
-         "RELEASE_NOTES_v0.1.0.md", "PROGRESS.md", "AUTHORS.md", "ROADMAP.md", "docs/reading-orders.md", "pillars/V.md", "pillars/F.md")
+         "RELEASE_NOTES_v0.1.0.md", "PROGRESS.md", "AUTHORS.md", "ROADMAP.md", "docs/reading-orders.md", "docs/proof-at-a-glance.md", "docs/coverage.md", "pillars/V.md", "pillars/F.md")
 
 
 def strings(value):
@@ -113,7 +113,7 @@ def check(root, units, registry, pins, banner):
             errors.append(f"{uid}: hypothesis repeats statement")
     external_ok = registered_external_checker(root, registry, pins)
     personal_quotes = reader_quotations(root)
-    korean = {"README.ko.md", "docs/ko/README.md", "docs/ko/STATUS.md", "docs/ko/FAQ.md", "docs/ko/signoffs/README.md", "docs/ko/OVERVIEW.md", "docs/ko/pillars/V.md", "docs/ko/pillars/F.md", *(f"docs/ko/{u['track']['primary']}.md" for u in units.values())}
+    korean = {"README.ko.md", "docs/ko/README.md", "docs/ko/STATUS.md", "docs/ko/FAQ.md", "docs/ko/signoffs/README.md", "docs/ko/OVERVIEW.md", "docs/ko/proof-at-a-glance.md", "docs/ko/coverage.md", "docs/ko/pillars/V.md", "docs/ko/pillars/F.md", *(f"docs/ko/{u['track']['primary']}.md" for u in units.values())}
     for path in sorted(korean):
         if not (root / path).is_file():
             errors.append(f"missing Korean mirror {path}")
@@ -160,7 +160,7 @@ def check(root, units, registry, pins, banner):
             elif fragment and loc.suffix.lower() == ".md" and unquote(fragment) not in anchors(loc):
                 errors.append(f"{rel}: broken local anchor {target}")
 
-    for script in ("proof_steps.py", "front_counts.py", "signoff_authors.py", "roadmap.py", "build_navigation.py", "enrich_units.py", "unit_pages.py", "dashboard.py", "build_site.py"):
+    for script in ("coverage.py", "proof_steps.py", "front_counts.py", "signoff_authors.py", "roadmap.py", "build_navigation.py", "enrich_units.py", "unit_pages.py", "dashboard.py", "build_site.py"):
         result = subprocess.run([sys.executable, str(root / "scripts" / script), "--check"], cwd=root,
                                 capture_output=True, text=True)
         if result.returncode:

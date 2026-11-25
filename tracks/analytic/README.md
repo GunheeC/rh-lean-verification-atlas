@@ -2,11 +2,11 @@
 
 AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
 
-The written deduction assumes [V](../../pillars/V.md), [F](../../pillars/F.md), Green’s finite-field character input, 31 local implications and the intermediate results listed in paper v6. No complete human-readable proof of V or F exists in this atlas. The Lean source supplies both with in-repository terms. No human has checked this material.
+The written deduction assumes [V](../../pillars/V.md), [F](../../pillars/F.md), Green’s finite-field character input, 31 local implications and the intermediate results listed in paper v7. No complete human-readable proof of V or F exists in this atlas. The Lean source supplies both with in-repository terms. No human has checked this material.
 
 Standard background includes Dirichlet characters, zeros and the Mellin transform. On this route “host”, “level” and “window” denote Lean identifiers or terminology introduced by these drafts. Read them with the linked project definitions. [Glossary](../../lookup/glossary.md)
 
-The blueprint and conditional paper are AI-written, unpublished manuscripts prepared under the direction of Gunhee Cho. They have no human review. Levent Alpöge is the author of the Lean development. The repository includes both PDFs. The edition register preserves the earlier sources used in reviews. [Blueprint v13a · printed pp. 7–14](../../editions/v0.1.0/blueprint_v13a.pdf#page=34) · [Conditional paper v6](../../editions/v0.1.0/paper_v6.pdf) · [Edition register](../../data/editions.json)
+Gunhee Cho is the paper’s author and the blueprint’s editor. Both were drafted with AI assistance. No independent human referee has checked the arguments. Levent Alpöge is the author of the Lean development. The repository includes both PDFs. The edition register preserves the earlier sources used in reviews. [Blueprint v13b · printed pp. 7–14](../../editions/v0.1.0/blueprint_v13b.pdf#page=43) · [Conditional paper v7](../../editions/v0.1.0/paper_v7.pdf) · [Edition register](../../data/editions.json)
 
 [Starter packet](../../notes/analytic/README.md) · [Open questions](../../questions/analytic.md) · [Unit inventory](units.md) · [Korean](../../docs/ko/analytic.md)
 

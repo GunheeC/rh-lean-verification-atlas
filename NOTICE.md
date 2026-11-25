@@ -4,7 +4,7 @@ AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
 
 Copyright © 2026 Gunhee Cho, to the extent copyright subsists in AI-generated text. CC BY 4.0 covers original atlas writing, editorial arrangement and original data to the extent of rights held. The grant does not cover material derived from the Lean source. No licence file found at the pinned commit. The matching archive contains 175,187 Lean files and three project files. Original scripts and workflow code use the MIT License. [License scope](LICENSE) · [Script license](LICENSE-MIT) · [Source editions](sources/README.md).
 
-Gunhee Cho maintains the repository and decides what is released. AI systems drafted the text. The project’s own blueprint editions v13 and v13a and papers v3 through v6 are AI-written, unpublished drafts with no human review. Levent Alpöge did not author these manuscripts. [Editions and available excerpts](data/editions.json) · [PDFs in release v0.1.0](RELEASE_NOTES_v0.1.0.md).
+Gunhee Cho maintains the repository and decides what is released. AI systems drafted the text. The project’s own blueprint editions v13, v13a and v13b and papers v3 through v7 are AI-written, unpublished drafts with no human review. Levent Alpöge did not author these manuscripts. [Editions and available excerpts](data/editions.json) · [PDFs in release v0.1.0](RELEASE_NOTES_v0.1.0.md).
 
 | Referenced material | Source terms at the pin | Atlas use |
 |---|---|---|

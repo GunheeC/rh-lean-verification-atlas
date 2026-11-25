@@ -79,6 +79,7 @@ def render(root):
     writing, reading = queues(root)
     reasons = ("track reading path", "V/F level 1 or 2", "dominated source size")
     guide = ["# Writing queue and volunteer reading opportunities", "", NOTICE, "",
+             "[What is covered and what readers can check](docs/coverage.md)", "",
              "## Next writing assignments", "",
              "Statement-only units come first. Within this group, priority goes to the published track routes, then to either pillar’s first two levels, then to the remaining units. Each group runs from largest to smallest measured source size. If fewer than 40 statements remain, the same order fills the list with outlines to extend. The size is the largest dominated core-line count among the unit’s named statement pins in its recorded graph. Counts from different rows can overlap. A dash means the measurement is unavailable.", "",
              "| Order | Unit | Next writing task | Priority | Core lines · graph |", "|---:|---|---|---|---:|"]

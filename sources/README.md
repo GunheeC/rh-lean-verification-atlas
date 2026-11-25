@@ -2,7 +2,7 @@
 
 AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
 
-The blueprint and conditional paper are AI-written, unpublished manuscripts prepared under the direction of Gunhee Cho. They have no human review. Levent Alpöge is the author of the Lean development. The repository includes both PDFs. The edition register preserves the earlier sources used in reviews. [Blueprint v13a](../editions/v0.1.0/blueprint_v13a.pdf) · [Conditional paper v6](../editions/v0.1.0/paper_v6.pdf) · [Release notes](../RELEASE_NOTES_v0.1.0.md) · [Manuscript editions](../data/editions.json).
+Gunhee Cho is the paper’s author and the blueprint’s editor. Both were drafted with AI assistance. No independent human referee has checked the arguments. Levent Alpöge is the author of the Lean development. The repository includes both PDFs. The edition register preserves the earlier sources used in reviews. [Blueprint v13b](../editions/v0.1.0/blueprint_v13b.pdf) · [Conditional paper v7](../editions/v0.1.0/paper_v7.pdf) · [Release notes](../RELEASE_NOTES_v0.1.0.md) · [Manuscript editions](../data/editions.json).
 
 ## Source, audit and reading projects
 

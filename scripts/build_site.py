@@ -108,18 +108,32 @@ def slug(text):
     return re.sub(r"[^\w\s-]", "", text.lower()).replace(" ", "-")
 
 
-def diagram(lines):
+def diagram(lines, lang="en"):
     """Lay out the atlas's labelled acyclic Mermaid arrows as a local SVG."""
     names, edges = {}, []
+    styles, classes = {}, {}
+    color = r"(#[0-9a-fA-F]{3}(?:[0-9a-fA-F]{3})?)"
     token = r'(\w+)(?:\["([^"]+)"\])?'
     for raw in lines[1:]:
-        row = re.fullmatch(r'\s*'+token+r'\s*-->\s*'+token+r'\s*', raw)
+        line = raw.strip().rstrip(";")
+        style = re.fullmatch(r"classDef\s+(\w+)\s+fill:" + color + r",\s*stroke:" + color, line)
+        if style:
+            styles[style[1]] = f"fill:{style[2]};stroke:{style[3]}"
+            continue
+        group = re.fullmatch(r"class\s+(\w+(?:,\s*\w+)*)\s+(\w+)", line)
+        if group:
+            for node in group[1].split(","):
+                classes[node.strip()] = group[2]
+            continue
+        row = re.fullmatch(r'\s*'+token+r'\s*-->\s*'+token+r'\s*', line)
         if not row:
             raise ValueError("Unsupported Mermaid edge: " + raw)
         a, alabel, b, blabel = row.groups()
         names[a] = alabel or names.get(a, a)
         names[b] = blabel or names.get(b, b)
         edges.append((a,b))
+    if set(classes) - set(names) or set(classes.values()) - set(styles):
+        raise ValueError("Unknown node or style in Mermaid class directive")
     parents = defaultdict(list)
     for a,b in edges:
         parents[b].append(a)
@@ -136,7 +150,9 @@ def diagram(lines):
            for i, layer in enumerate(layers) for j,n in enumerate(layer)}
     height = 80+(len(layers)-1)*104
     key = hashlib.sha256("\n".join(lines).encode()).hexdigest()[:12]
-    out = [f'<figure class="diagram"><svg role="img" viewBox="0 0 {width} {height}" aria-labelledby="title-{key}"><title id="title-{key}">Dependency diagram</title>',
+    figure_title = "의존 관계도" if lang == "ko" else "Dependency diagram"
+    text_label = "연결 관계를 글로 읽기" if lang == "ko" else "Read the connections as text"
+    out = [f'<figure class="diagram"><svg role="img" viewBox="0 0 {width} {height}" aria-labelledby="title-{key}"><title id="title-{key}">{figure_title}</title>',
            f'<defs><marker id="arrow-{key}" viewBox="0 0 10 10" markerWidth="7" markerHeight="7" refX="9" refY="5" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#4b686c"/></marker></defs>']
     for a,b in edges:
         x, y = pos[a]
@@ -144,11 +160,12 @@ def diagram(lines):
         mid = (y + yy) / 2
         out.append(f'<path d="M{x},{y+29} C{x},{mid} {xx},{mid} {xx},{yy-30}" fill="none" stroke="#526e72" stroke-width="1.5" marker-end="url(#arrow-{key})"/>')
     for n,(x,y) in pos.items():
-        label=textwrap.wrap(names[n],21,break_long_words=False)
-        out.append(f'<rect x="{x-82}" y="{y-28}" width="164" height="56" rx="5" fill="#edf4ef" stroke="#678483"/>')
+        label=textwrap.wrap(names[n], 11 if lang == "ko" else 21, break_long_words=False)
+        style = f' style="{styles[classes[n]]}"' if n in classes else ""
+        out.append(f'<rect x="{x-82}" y="{y-28}" width="164" height="56" rx="5" fill="#edf4ef" stroke="#678483"{style}/>')
         for j, line in enumerate(label):
             out.append(f'<text x="{x}" y="{y+5+(j-(len(label)-1)/2)*15}" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#172e34">{escape(line)}</text>')
-    out.append('</svg></figure><details><summary>Read the connections as text</summary><ul>')
+    out.append(f'</svg></figure><details><summary>{text_label}</summary><ul>')
     out += [f'<li>{escape(names[a])} → {escape(names[b])}</li>' for a,b in edges]
     return ''.join(out)+'</ul></details>'
 
@@ -187,7 +204,7 @@ class Edition:
         # keeps its own PDFs so it can be moved as a unit.
         self.in_checkout = (output or self.root / "site").resolve() == self.root / "site"
         editions = json.loads((self.root / "data/editions.json").read_bytes())["editions"]
-        blueprint = editions["blueprint_v13a"]
+        blueprint = editions["blueprint_v13b"]
         starters = json.loads((self.root / "data/notes_starters.json").read_bytes())["starters"]
         self.packet_pages = {}
         for packet in starters.values():
@@ -196,7 +213,7 @@ class Edition:
                 page = blueprint_page(blueprint, physical)
                 self.packet_pages[src, f"pages/{folio}.webp"] = (
                     f"../../{blueprint['repository_file']}#page={page}",
-                    f"Open printed page {folio} in blueprint v13a",
+                    f"Open printed page {folio} in blueprint v13b",
                 )
         self.pages = {}
         self.assets = {}
@@ -304,7 +321,7 @@ class Edition:
                 content=lines[start:i]
                 i += 1
                 if line.strip()=='```mermaid':
-                    out.append(diagram(content))
+                    out.append(diagram(content, lang="ko" if "ko" in src.parts else "en"))
                 else:
                     out.append('<pre><code>'+escape('\n'.join(content))+'</code></pre>')
             elif line.strip()=='$$':

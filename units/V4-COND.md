@@ -32,11 +32,11 @@ Sources for the assumptions · [From the Selmer window to Dirichlet zero-free st
 
 ## Where to read
 
-The blueprint and conditional paper are AI-written, unpublished manuscripts prepared under the direction of Gunhee Cho. They have no human review. Levent Alpöge is the author of the Lean development. [Blueprint v13a](../editions/v0.1.0/blueprint_v13a.pdf) · [Conditional paper v6](../editions/v0.1.0/paper_v6.pdf) · [Edition register](../data/editions.json)
+Gunhee Cho is the paper’s author and the blueprint’s editor. Both were drafted with AI assistance. No independent human referee has checked the arguments. Levent Alpöge is the author of the Lean development. [Blueprint v13b](../editions/v0.1.0/blueprint_v13b.pdf) · [Conditional paper v7](../editions/v0.1.0/paper_v7.pdf) · [Edition register](../data/editions.json)
 
-- Paper v6 · [Theorem 1.1 · conditional statement](../editions/v0.1.0/paper_v6.pdf#page=7), printed p. 1
-- Paper v6 · [Table 1 · global, local and supplementary inputs](../editions/v0.1.0/paper_v6.pdf#page=39), printed pp. 33–34
-- Paper v6 · [Theorem 3.43 · conditional deduction](../editions/v0.1.0/paper_v6.pdf#page=40), printed pp. 34–35
+- Paper v7 · [Theorem 1.1 · conditional statement](../editions/v0.1.0/paper_v7.pdf#page=2), printed p. 2
+- Paper v7 · [Table 3 · global, local and supplementary inputs](../editions/v0.1.0/paper_v7.pdf#page=51), printed pp. 51–52
+- Paper v7 · [Theorem 5.43 · conditional deduction](../editions/v0.1.0/paper_v7.pdf#page=52), printed pp. 52–53
 - [From the Selmer window to Dirichlet zero-free statements, v5](../data/editions.json), Theorem 1.1 · conditional statement, p. 6. Revised paper v5 exposition, pending independent review.
 - [From the Selmer window to Dirichlet zero-free statements, v5](../data/editions.json), Table 1 · global, local and supplementary inputs, pp. 38–41. Revised paper v5 exposition, pending independent review.
 - [From the Selmer window to Dirichlet zero-free statements, v5](../data/editions.json), Theorem 3.43 · conditional deduction, pp. 41–42. Revised paper v5 exposition, pending independent review.

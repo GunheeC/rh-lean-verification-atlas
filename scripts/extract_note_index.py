@@ -98,13 +98,13 @@ def main(atlas, project):
     if not index.exists() or read(index) != notes:
         index.write_text(json.dumps(notes, ensure_ascii=False, indent=2)+'\n')
     lines = [NOTICE, '', '# Reading notes', '',
-             'The blueprint and conditional paper are AI-written, unpublished manuscripts prepared under the direction of Gunhee Cho. They have no human review. Levent Alpöge is the author of the Lean development. The repository includes both PDFs. The edition register preserves the earlier sources used in reviews. [Blueprint v13a](../editions/v0.1.0/blueprint_v13a.pdf) · [Conditional paper v6](../editions/v0.1.0/paper_v6.pdf) · [Edition register](../data/editions.json)', '',
+             'Gunhee Cho is the paper’s author and the blueprint’s editor. Both were drafted with AI assistance. No independent human referee has checked the arguments. Levent Alpöge is the author of the Lean development. The repository includes both PDFs. The edition register preserves the earlier sources used in reviews. [Blueprint v13b](../editions/v0.1.0/blueprint_v13b.pdf) · [Conditional paper v7](../editions/v0.1.0/paper_v7.pdf) · [Edition register](../data/editions.json)', '',
              f'The atlas indexes {len(units)} units, with source excerpts, round-3 mathematical reading notes and seven graduate reading packets. Each packet includes its TeX source and full typeset pages from blueprint v13. Read the target and its premises before assigning the rest of a companion unit.', '',
-             '| Track and packet | Unit | Printed pages in blueprint v13a | What to check |',
+             '| Track and packet | Unit | Printed pages in blueprint v13b | What to check |',
              '|---|---|---|---|']
     for track, p in starters.items():
         uid = p['unit_id']
-        page_links = packet_page_links(editions['blueprint_v13a'], p)
+        page_links = packet_page_links(editions['blueprint_v13b'], p)
         lines.append(f"| [{TRACK_NAMES[track]}]({track}/README.md) | [{uid}](../units/{uid}.md) | {page_links} | {p['checkable_target']} |")
     lines.extend(['', 'The 47 facsimiles include the printed boundary pages of each assignment. The marked TeX ranges delimit material when a boundary page is shared. Each packet records the entry prerequisites and the point at which a further arithmetic or representation-theoretic input is needed.', '',
         f'The [paper2 v3 extracts](units/) cover {len(paper)} units, with separate argument files where the manuscript writes out the proof later. The [blueprint extracts](blueprint/) cover {len(blueprint)} units. They retain the earlier reports’ wording. Consult each unit’s current review field for its status.', '',

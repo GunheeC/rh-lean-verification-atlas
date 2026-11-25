@@ -7,7 +7,7 @@
       "sha256": "d9dcb73f10a5829865f9246409d886c16cb1d2087717adf7758f154257a28af4",
       "pages": 944,
       "provenance": "AI-drafted, unpublished project manuscript, maintained by Gunhee Cho. No human review. The Lean development has separate authorship.",
-      "distribution": "Earlier edition retained for provenance. The repository distributes blueprint v13a and paper v6."
+      "distribution": "Historical edition identified by its fingerprint. The repository distributes blueprint v13b and paper v7."
     },
     "paper2_v3": {
       "title": "From the Selmer window to Dirichlet zero-free statements, v3",
@@ -54,7 +54,7 @@
       "companion_to": "blueprint_v13",
       "origin": "Atlas project manuscript archive",
       "provenance": "AI-drafted, unpublished project manuscript, maintained by Gunhee Cho. No human review. The Lean development has separate authorship.",
-      "distribution": "Earlier edition retained for provenance. The repository distributes blueprint v13a and paper v6."
+      "distribution": "Historical edition identified by its fingerprint. The repository distributes blueprint v13b and paper v7."
     },
     "paper2_v5": {
       "title": "From the Selmer window to Dirichlet zero-free statements, v5",
@@ -413,11 +413,10 @@
         ]
       },
       "provenance": "AI-drafted, unpublished project manuscript, maintained by Gunhee Cho. No human review. The Lean development has separate authorship.",
-      "distribution": "Earlier edition retained for provenance. The repository distributes blueprint v13a and paper v6."
+      "distribution": "Historical edition identified by its fingerprint. The repository distributes blueprint v13b and paper v7."
     },
     "blueprint_v13a": {
       "title": "RH verification blueprint, v13a",
-      "repository_file": "editions/v0.1.0/blueprint_v13a.pdf",
       "origin": "Atlas project manuscript archive",
       "sha256": "4768b49ee02bebb637774261eb60b4c452bf7fc7d1f7113204a072abbcb9c8c1",
       "pages": 946,
@@ -428,12 +427,11 @@
       "page_text_comparison": "data/blueprint_v13a_page_hashes.json",
       "provenance": "Original AI draft by Claude, with AI revisions by GPT, prepared under the direction of Gunhee Cho. No human review.",
       "revision": "Front matter and metadata only. The 944 original PDF sheets follow the new front matter. Every original sheet has identical extracted text and content streams; its printed folio is unchanged. The original printed Arabic folios run from 1 to 919 after 25 original preliminary sheets.",
-      "distribution": "Repository PDF in release v0.1.0; also supplied as a release attachment.",
+      "distribution": "Historical edition identified by its fingerprint. The repository distributes blueprint v13b and paper v7.",
       "page_text_comparison_sha256": "5393d5f663ee402eb19ffb01b514f80293dc5fbb846178e51195ada6736f3c36"
     },
     "paper2_v6": {
       "title": "From the Selmer window to Dirichlet zero-free statements, v6",
-      "repository_file": "editions/v0.1.0/paper_v6.pdf",
       "origin": "Atlas project manuscript archive",
       "sha256": "a68f5e2e07f47238a9986e71eeebd0fb1101e72f4ba5fef6a80ec8c392deccda",
       "pages": 424,
@@ -445,7 +443,7 @@
       "review_status": "pending_review",
       "revision": "Typographic revision of v5. The mathematical text of its theorem, lemma, proposition and proof environments is unchanged in the source comparison. Prior mathematical reviews retain their original editions and scopes.",
       "provenance": "AI-drafted, unpublished project manuscript, maintained by Gunhee Cho. No human review. The Lean development has separate authorship.",
-      "distribution": "Repository PDF in release v0.1.0; also supplied as a release attachment.",
+      "distribution": "Historical edition identified by its fingerprint. The repository distributes blueprint v13b and paper v7.",
       "conditional_theorem": {
         "opening": {
           "section": "Theorem 1.1 · conditional statement",
@@ -3518,6 +3516,3233 @@
         "new_whole_environments": 0,
         "removed_whole_environments": 0
       }
+    },
+    "blueprint_v13b": {
+      "title": "The Alpöge formalization of RH and GRH: an informal blueprint",
+      "subtitle": "Companion to Toward a human verification of Alpöge’s Lean proof of the Riemann hypothesis, I",
+      "editor": "Gunhee Cho",
+      "repository_file": "editions/v0.1.0/blueprint_v13b.pdf",
+      "origin": "Atlas project manuscript archive",
+      "sha256": "6108e2468ad4284ca3012dd7f91cfd983b7d791809c0f6b523eb8b53f5bb211e",
+      "pages": 955,
+      "revised_from": "blueprint_v13a",
+      "new_front_pages": 11,
+      "retained_v13_pages": 944,
+      "first_original_arabic_folio_pdf_page": 37,
+      "page_comparison": "data/blueprint_v13b_page_comparison.json",
+      "exceptional_original_sheets": [
+        1,
+        2
+      ],
+      "provenance": "Edited by Gunhee Cho. Drafted with Claude and GPT/Codex. No independent human referee has checked the arguments.",
+      "revision": "11 new front sheets precede the 944 original sheet positions. Original sheets 1 and 2 (physical pages 12 and 13 here) each omit a Korean disclaimer. Original sheets 3 through 944 (942 sheets) retain identical extracted text, decoded content streams and rendered images. Original printed folios and all packet page positions are unchanged. Earlier reviews remain attached to the editions examined.",
+      "distribution": "Repository PDF in release v0.1.0; the same file is a convenience attachment.",
+      "page_comparison_sha256": "4f8a3d06010ed54b24387769cb56a79a6eca99c2bf68df04c1a8482d02b4a470"
+    },
+    "paper2_v7": {
+      "title": "Toward a human verification of Alpöge’s Lean proof of the Riemann hypothesis, I: the conditional chain from Selmer windows to zero-free regions",
+      "author": "Gunhee Cho",
+      "repository_file": "editions/v0.1.0/paper_v7.pdf",
+      "origin": "Atlas project manuscript archive",
+      "sha256": "9ea2256176c7b28156a683dee9c4ad76138777246811ce99aca14eb1ec015b9d",
+      "pages": 432,
+      "revised_from": "paper2_v6",
+      "lean_commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+      "arabic_page_one_pdf_page": 1,
+      "label_index": "data/paper_v7_labels.json",
+      "review_status": "pending_review",
+      "revision": "Part I in standard preprint format, with a new introduction, Section 2 for nonspecialists, a coverage map and programme in Section 3, preparation disclosure and availability statement. The new explanatory prose awaits independent review. The mathematical text of the theorem, lemma, proposition and proof environments is unchanged from v6. Previous reviews retain their original editions and scopes.",
+      "provenance": "Gunhee Cho, with drafting by Claude and GPT/Codex. No independent human referee has checked the arguments.",
+      "distribution": "Repository PDF in release v0.1.0; the same file is a convenience attachment.",
+      "conditional_theorem": {
+        "opening": {
+          "section": "Theorem 1.1 · conditional statement",
+          "start_label": "r24:intro",
+          "end_label": "r24:intro",
+          "printed_pages": [
+            2,
+            2
+          ],
+          "pdf_pages": [
+            2,
+            2
+          ]
+        },
+        "hypotheses": {
+          "section": "Table 3 · global, local and supplementary inputs",
+          "start_label": "tab:r24-hypotheses",
+          "end_label": "v5:table-end",
+          "printed_pages": [
+            51,
+            52
+          ],
+          "pdf_pages": [
+            51,
+            52
+          ]
+        },
+        "closing": {
+          "section": "Theorem 5.43 · conditional deduction",
+          "start_label": "r24:conclusion",
+          "end_label": "v5:conclusion-end",
+          "printed_pages": [
+            52,
+            53
+          ],
+          "pdf_pages": [
+            52,
+            53
+          ]
+        }
+      },
+      "unit_locators": {
+        "B01": [
+          {
+            "section": "Statement B.1",
+            "start_label": "sub:B01",
+            "end_label": "sub:B01",
+            "printed_pages": [
+              72,
+              72
+            ],
+            "pdf_pages": [
+              72,
+              72
+            ]
+          }
+        ],
+        "B02": [
+          {
+            "section": "Statement B.2",
+            "start_label": "sub:B02",
+            "end_label": "sub:B02",
+            "printed_pages": [
+              72,
+              72
+            ],
+            "pdf_pages": [
+              72,
+              72
+            ]
+          }
+        ],
+        "B03": [
+          {
+            "section": "Statement B.3",
+            "start_label": "sub:B03",
+            "end_label": "sub:B03",
+            "printed_pages": [
+              73,
+              73
+            ],
+            "pdf_pages": [
+              73,
+              73
+            ]
+          }
+        ],
+        "B04": [
+          {
+            "section": "Statement B.4",
+            "start_label": "sub:B04",
+            "end_label": "sub:B04",
+            "printed_pages": [
+              73,
+              73
+            ],
+            "pdf_pages": [
+              73,
+              73
+            ]
+          }
+        ],
+        "B05": [
+          {
+            "section": "Statement B.5",
+            "start_label": "sub:B05",
+            "end_label": "sub:B05",
+            "printed_pages": [
+              73,
+              73
+            ],
+            "pdf_pages": [
+              73,
+              73
+            ]
+          },
+          {
+            "section": "The chain in detail · P015 (section start)",
+            "start_label": "r23:host",
+            "end_label": "r23:host",
+            "printed_pages": [
+              40,
+              40
+            ],
+            "pdf_pages": [
+              40,
+              40
+            ]
+          }
+        ],
+        "B06": [
+          {
+            "section": "Statement B.6",
+            "start_label": "sub:B06",
+            "end_label": "sub:B06",
+            "printed_pages": [
+              74,
+              74
+            ],
+            "pdf_pages": [
+              74,
+              74
+            ]
+          }
+        ],
+        "B07": [
+          {
+            "section": "Statement B.7",
+            "start_label": "sub:B07",
+            "end_label": "sub:B07",
+            "printed_pages": [
+              74,
+              74
+            ],
+            "pdf_pages": [
+              74,
+              74
+            ]
+          },
+          {
+            "section": "The chain in detail · P015 (section start)",
+            "start_label": "r23:host",
+            "end_label": "r23:host",
+            "printed_pages": [
+              40,
+              40
+            ],
+            "pdf_pages": [
+              40,
+              40
+            ]
+          }
+        ],
+        "B08": [
+          {
+            "section": "Statement B.8",
+            "start_label": "sub:B08",
+            "end_label": "sub:B08",
+            "printed_pages": [
+              75,
+              75
+            ],
+            "pdf_pages": [
+              75,
+              75
+            ]
+          },
+          {
+            "section": "The chain in detail · P017 (section start)",
+            "start_label": "r23:p017",
+            "end_label": "r23:p017",
+            "printed_pages": [
+              25,
+              25
+            ],
+            "pdf_pages": [
+              25,
+              25
+            ]
+          }
+        ],
+        "B09": [
+          {
+            "section": "Statement B.9",
+            "start_label": "sub:B09",
+            "end_label": "sub:B09",
+            "printed_pages": [
+              75,
+              75
+            ],
+            "pdf_pages": [
+              75,
+              75
+            ]
+          },
+          {
+            "section": "The chain in detail · P017 (section start)",
+            "start_label": "r23:p017",
+            "end_label": "r23:p017",
+            "printed_pages": [
+              25,
+              25
+            ],
+            "pdf_pages": [
+              25,
+              25
+            ]
+          }
+        ],
+        "B10": [
+          {
+            "section": "Statement B.10",
+            "start_label": "sub:B10",
+            "end_label": "sub:B10",
+            "printed_pages": [
+              76,
+              76
+            ],
+            "pdf_pages": [
+              76,
+              76
+            ]
+          },
+          {
+            "section": "The chain in detail · P017 (section start)",
+            "start_label": "r23:p017",
+            "end_label": "r23:p017",
+            "printed_pages": [
+              25,
+              25
+            ],
+            "pdf_pages": [
+              25,
+              25
+            ]
+          }
+        ],
+        "D002": [
+          {
+            "section": "Statement O.3",
+            "start_label": "decomp:D002",
+            "end_label": "decomp:D002",
+            "printed_pages": [
+              185,
+              185
+            ],
+            "pdf_pages": [
+              185,
+              185
+            ]
+          }
+        ],
+        "D004": [
+          {
+            "section": "Statement O.6",
+            "start_label": "decomp:D004",
+            "end_label": "decomp:D004",
+            "printed_pages": [
+              186,
+              186
+            ],
+            "pdf_pages": [
+              186,
+              186
+            ]
+          }
+        ],
+        "D006": [
+          {
+            "section": "Statement O.8",
+            "start_label": "decomp:D006",
+            "end_label": "decomp:D006",
+            "printed_pages": [
+              186,
+              186
+            ],
+            "pdf_pages": [
+              186,
+              186
+            ]
+          }
+        ],
+        "D014": [
+          {
+            "section": "A6 · Inertia at exceptional host primes",
+            "start_label": "r24:hostfacts",
+            "end_label": "v5:hostfacts-end",
+            "printed_pages": [
+              30,
+              30
+            ],
+            "pdf_pages": [
+              30,
+              30
+            ]
+          },
+          {
+            "section": "Statement O.16",
+            "start_label": "decomp:D014",
+            "end_label": "decomp:D014",
+            "printed_pages": [
+              188,
+              188
+            ],
+            "pdf_pages": [
+              188,
+              188
+            ]
+          }
+        ],
+        "D024": [
+          {
+            "section": "Statement O.28",
+            "start_label": "decomp:D024",
+            "end_label": "decomp:D024",
+            "printed_pages": [
+              191,
+              191
+            ],
+            "pdf_pages": [
+              191,
+              191
+            ]
+          }
+        ],
+        "D025": [
+          {
+            "section": "Statement O.29",
+            "start_label": "decomp:D025",
+            "end_label": "decomp:D025",
+            "printed_pages": [
+              191,
+              191
+            ],
+            "pdf_pages": [
+              191,
+              191
+            ]
+          }
+        ],
+        "D033": [
+          {
+            "section": "Statement O.37",
+            "start_label": "decomp:D033",
+            "end_label": "decomp:D033",
+            "printed_pages": [
+              193,
+              193
+            ],
+            "pdf_pages": [
+              193,
+              193
+            ]
+          }
+        ],
+        "D044": [
+          {
+            "section": "Statement O.48",
+            "start_label": "decomp:D044",
+            "end_label": "decomp:D044",
+            "printed_pages": [
+              196,
+              196
+            ],
+            "pdf_pages": [
+              196,
+              196
+            ]
+          }
+        ],
+        "D077": [
+          {
+            "section": "Statement O.83",
+            "start_label": "decomp:D077",
+            "end_label": "decomp:D077",
+            "printed_pages": [
+              204,
+              204
+            ],
+            "pdf_pages": [
+              204,
+              204
+            ]
+          }
+        ],
+        "D082": [
+          {
+            "section": "Statement O.89",
+            "start_label": "decomp:D082",
+            "end_label": "decomp:D082",
+            "printed_pages": [
+              205,
+              205
+            ],
+            "pdf_pages": [
+              205,
+              205
+            ]
+          }
+        ],
+        "D097": [
+          {
+            "section": "Statement O.105",
+            "start_label": "decomp:D097",
+            "end_label": "decomp:D097",
+            "printed_pages": [
+              208,
+              208
+            ],
+            "pdf_pages": [
+              208,
+              208
+            ]
+          }
+        ],
+        "D108": [
+          {
+            "section": "Statement O.116",
+            "start_label": "decomp:D108",
+            "end_label": "decomp:D108",
+            "printed_pages": [
+              211,
+              211
+            ],
+            "pdf_pages": [
+              211,
+              211
+            ]
+          }
+        ],
+        "D123": [
+          {
+            "section": "Statement O.133",
+            "start_label": "decomp:D123",
+            "end_label": "decomp:D123",
+            "printed_pages": [
+              215,
+              215
+            ],
+            "pdf_pages": [
+              215,
+              215
+            ]
+          }
+        ],
+        "D128": [
+          {
+            "section": "Statement O.138",
+            "start_label": "decomp:D128",
+            "end_label": "decomp:D128",
+            "printed_pages": [
+              216,
+              216
+            ],
+            "pdf_pages": [
+              216,
+              216
+            ]
+          }
+        ],
+        "D154": [
+          {
+            "section": "Statement O.164",
+            "start_label": "decomp:D154",
+            "end_label": "decomp:D154",
+            "printed_pages": [
+              221,
+              221
+            ],
+            "pdf_pages": [
+              221,
+              221
+            ]
+          }
+        ],
+        "D155": [
+          {
+            "section": "Statement O.165",
+            "start_label": "decomp:D155",
+            "end_label": "decomp:D155",
+            "printed_pages": [
+              221,
+              221
+            ],
+            "pdf_pages": [
+              221,
+              221
+            ]
+          }
+        ],
+        "D174": [
+          {
+            "section": "Statement O.184",
+            "start_label": "decomp:D174",
+            "end_label": "decomp:D174",
+            "printed_pages": [
+              225,
+              225
+            ],
+            "pdf_pages": [
+              225,
+              225
+            ]
+          }
+        ],
+        "D193": [
+          {
+            "section": "Statement O.203",
+            "start_label": "decomp:D193",
+            "end_label": "decomp:D193",
+            "printed_pages": [
+              228,
+              228
+            ],
+            "pdf_pages": [
+              228,
+              228
+            ]
+          }
+        ],
+        "D203": [
+          {
+            "section": "Statement O.213",
+            "start_label": "decomp:D203",
+            "end_label": "decomp:D203",
+            "printed_pages": [
+              230,
+              230
+            ],
+            "pdf_pages": [
+              230,
+              230
+            ]
+          }
+        ],
+        "D230": [
+          {
+            "section": "Statement O.241",
+            "start_label": "decomp:D230",
+            "end_label": "decomp:D230",
+            "printed_pages": [
+              235,
+              235
+            ],
+            "pdf_pages": [
+              235,
+              235
+            ]
+          }
+        ],
+        "D245": [
+          {
+            "section": "Statement O.256",
+            "start_label": "decomp:D245",
+            "end_label": "decomp:D245",
+            "printed_pages": [
+              238,
+              238
+            ],
+            "pdf_pages": [
+              238,
+              238
+            ]
+          }
+        ],
+        "D302": [
+          {
+            "section": "Statement O.313",
+            "start_label": "decomp:D302",
+            "end_label": "decomp:D302",
+            "printed_pages": [
+              249,
+              249
+            ],
+            "pdf_pages": [
+              249,
+              249
+            ]
+          }
+        ],
+        "D309": [
+          {
+            "section": "Statement O.320",
+            "start_label": "decomp:D309",
+            "end_label": "decomp:D309",
+            "printed_pages": [
+              251,
+              251
+            ],
+            "pdf_pages": [
+              251,
+              251
+            ]
+          }
+        ],
+        "D317": [
+          {
+            "section": "Statement O.330",
+            "start_label": "decomp:D317",
+            "end_label": "decomp:D317",
+            "printed_pages": [
+              253,
+              253
+            ],
+            "pdf_pages": [
+              253,
+              253
+            ]
+          }
+        ],
+        "D331": [
+          {
+            "section": "Statement O.344",
+            "start_label": "decomp:D331",
+            "end_label": "decomp:D331",
+            "printed_pages": [
+              255,
+              255
+            ],
+            "pdf_pages": [
+              255,
+              255
+            ]
+          }
+        ],
+        "D340": [
+          {
+            "section": "Statement O.353",
+            "start_label": "decomp:D340",
+            "end_label": "decomp:D340",
+            "printed_pages": [
+              256,
+              256
+            ],
+            "pdf_pages": [
+              256,
+              256
+            ]
+          }
+        ],
+        "D351": [
+          {
+            "section": "Statement O.364",
+            "start_label": "decomp:D351",
+            "end_label": "decomp:D351",
+            "printed_pages": [
+              259,
+              259
+            ],
+            "pdf_pages": [
+              259,
+              259
+            ]
+          }
+        ],
+        "D379": [
+          {
+            "section": "Statement O.392",
+            "start_label": "decomp:D379",
+            "end_label": "decomp:D379",
+            "printed_pages": [
+              265,
+              265
+            ],
+            "pdf_pages": [
+              265,
+              265
+            ]
+          }
+        ],
+        "D394": [
+          {
+            "section": "Statement O.408",
+            "start_label": "decomp:D394",
+            "end_label": "decomp:D394",
+            "printed_pages": [
+              268,
+              268
+            ],
+            "pdf_pages": [
+              268,
+              268
+            ]
+          }
+        ],
+        "D415": [
+          {
+            "section": "Statement O.430",
+            "start_label": "decomp:D415",
+            "end_label": "decomp:D415",
+            "printed_pages": [
+              273,
+              273
+            ],
+            "pdf_pages": [
+              273,
+              273
+            ]
+          }
+        ],
+        "D421": [
+          {
+            "section": "Statement O.437",
+            "start_label": "decomp:D421",
+            "end_label": "decomp:D421",
+            "printed_pages": [
+              274,
+              274
+            ],
+            "pdf_pages": [
+              274,
+              274
+            ]
+          }
+        ],
+        "D427": [
+          {
+            "section": "Statement O.443",
+            "start_label": "decomp:D427",
+            "end_label": "decomp:D427",
+            "printed_pages": [
+              275,
+              275
+            ],
+            "pdf_pages": [
+              275,
+              275
+            ]
+          },
+          {
+            "section": "The chain in detail · LinkN_at (section start)",
+            "start_label": "r23:link",
+            "end_label": "r23:link",
+            "printed_pages": [
+              35,
+              35
+            ],
+            "pdf_pages": [
+              35,
+              35
+            ]
+          }
+        ],
+        "D443": [
+          {
+            "section": "Statement O.461",
+            "start_label": "decomp:D443",
+            "end_label": "decomp:D443",
+            "printed_pages": [
+              278,
+              278
+            ],
+            "pdf_pages": [
+              278,
+              278
+            ]
+          }
+        ],
+        "D479": [
+          {
+            "section": "Statement O.499",
+            "start_label": "decomp:D479",
+            "end_label": "decomp:D479",
+            "printed_pages": [
+              287,
+              287
+            ],
+            "pdf_pages": [
+              287,
+              287
+            ]
+          }
+        ],
+        "D481": [
+          {
+            "section": "Statement O.501",
+            "start_label": "decomp:D481",
+            "end_label": "decomp:D481",
+            "printed_pages": [
+              287,
+              287
+            ],
+            "pdf_pages": [
+              287,
+              287
+            ]
+          }
+        ],
+        "D484": [
+          {
+            "section": "Statement O.504",
+            "start_label": "decomp:D484",
+            "end_label": "decomp:D484",
+            "printed_pages": [
+              288,
+              288
+            ],
+            "pdf_pages": [
+              288,
+              288
+            ]
+          }
+        ],
+        "D486": [
+          {
+            "section": "Statement O.506",
+            "start_label": "decomp:D486",
+            "end_label": "decomp:D486",
+            "printed_pages": [
+              288,
+              288
+            ],
+            "pdf_pages": [
+              288,
+              288
+            ]
+          }
+        ],
+        "D506": [
+          {
+            "section": "Statement O.529",
+            "start_label": "decomp:D506",
+            "end_label": "decomp:D506",
+            "printed_pages": [
+              294,
+              294
+            ],
+            "pdf_pages": [
+              294,
+              294
+            ]
+          }
+        ],
+        "D510": [
+          {
+            "section": "Statement O.533",
+            "start_label": "decomp:D510",
+            "end_label": "decomp:D510",
+            "printed_pages": [
+              295,
+              295
+            ],
+            "pdf_pages": [
+              295,
+              295
+            ]
+          },
+          {
+            "section": "The chain in detail · P015 (section start)",
+            "start_label": "r23:host",
+            "end_label": "r23:host",
+            "printed_pages": [
+              40,
+              40
+            ],
+            "pdf_pages": [
+              40,
+              40
+            ]
+          }
+        ],
+        "D511": [
+          {
+            "section": "Statement O.534",
+            "start_label": "decomp:D511",
+            "end_label": "decomp:D511",
+            "printed_pages": [
+              295,
+              295
+            ],
+            "pdf_pages": [
+              295,
+              295
+            ]
+          },
+          {
+            "section": "The chain in detail · P015 (section start)",
+            "start_label": "r23:host",
+            "end_label": "r23:host",
+            "printed_pages": [
+              40,
+              40
+            ],
+            "pdf_pages": [
+              40,
+              40
+            ]
+          }
+        ],
+        "D513": [
+          {
+            "section": "Statement O.536",
+            "start_label": "decomp:D513",
+            "end_label": "decomp:D513",
+            "printed_pages": [
+              295,
+              295
+            ],
+            "pdf_pages": [
+              295,
+              295
+            ]
+          },
+          {
+            "section": "The chain in detail · P015 (section start)",
+            "start_label": "r23:host",
+            "end_label": "r23:host",
+            "printed_pages": [
+              40,
+              40
+            ],
+            "pdf_pages": [
+              40,
+              40
+            ]
+          }
+        ],
+        "D528": [
+          {
+            "section": "Statement O.555",
+            "start_label": "decomp:D528",
+            "end_label": "decomp:D528",
+            "printed_pages": [
+              300,
+              300
+            ],
+            "pdf_pages": [
+              300,
+              300
+            ]
+          }
+        ],
+        "D532": [
+          {
+            "section": "Statement O.560",
+            "start_label": "decomp:D532",
+            "end_label": "decomp:D532",
+            "printed_pages": [
+              301,
+              301
+            ],
+            "pdf_pages": [
+              301,
+              301
+            ]
+          }
+        ],
+        "D536": [
+          {
+            "section": "Statement O.564",
+            "start_label": "decomp:D536",
+            "end_label": "decomp:D536",
+            "printed_pages": [
+              302,
+              302
+            ],
+            "pdf_pages": [
+              302,
+              302
+            ]
+          }
+        ],
+        "D547": [
+          {
+            "section": "A1 · Equality of the kept-character sum",
+            "start_label": "v5:chars-start",
+            "end_label": "v5:d547-end",
+            "printed_pages": [
+              32,
+              33
+            ],
+            "pdf_pages": [
+              32,
+              33
+            ]
+          },
+          {
+            "section": "Statement O.577",
+            "start_label": "decomp:D547",
+            "end_label": "decomp:D547",
+            "printed_pages": [
+              305,
+              305
+            ],
+            "pdf_pages": [
+              305,
+              305
+            ]
+          }
+        ],
+        "D548": [
+          {
+            "section": "A2 · Character-share conditions",
+            "start_label": "v5:d547-end",
+            "end_label": "v5:d548-end",
+            "printed_pages": [
+              33,
+              34
+            ],
+            "pdf_pages": [
+              33,
+              34
+            ]
+          },
+          {
+            "section": "Statement O.579",
+            "start_label": "decomp:D548",
+            "end_label": "decomp:D548",
+            "printed_pages": [
+              305,
+              305
+            ],
+            "pdf_pages": [
+              305,
+              305
+            ]
+          }
+        ],
+        "D549": [
+          {
+            "section": "A3 · Omitted-frequency bound",
+            "start_label": "v5:d548-end",
+            "end_label": "v5:chars-end",
+            "printed_pages": [
+              34,
+              34
+            ],
+            "pdf_pages": [
+              34,
+              34
+            ]
+          },
+          {
+            "section": "Statement O.580",
+            "start_label": "decomp:D549",
+            "end_label": "decomp:D549",
+            "printed_pages": [
+              305,
+              305
+            ],
+            "pdf_pages": [
+              305,
+              305
+            ]
+          }
+        ],
+        "D550": [
+          {
+            "section": "A7 · A common large-scale threshold",
+            "start_label": "r24:d550",
+            "end_label": "v5:d550-end",
+            "printed_pages": [
+              27,
+              27
+            ],
+            "pdf_pages": [
+              27,
+              27
+            ]
+          },
+          {
+            "section": "Statement O.581",
+            "start_label": "decomp:D550",
+            "end_label": "decomp:D550",
+            "printed_pages": [
+              306,
+              306
+            ],
+            "pdf_pages": [
+              306,
+              306
+            ]
+          }
+        ],
+        "D551": [
+          {
+            "section": "Statement O.582",
+            "start_label": "decomp:D551",
+            "end_label": "decomp:D551",
+            "printed_pages": [
+              306,
+              306
+            ],
+            "pdf_pages": [
+              306,
+              306
+            ]
+          }
+        ],
+        "D558": [
+          {
+            "section": "Statement O.590",
+            "start_label": "decomp:D558",
+            "end_label": "decomp:D558",
+            "printed_pages": [
+              308,
+              308
+            ],
+            "pdf_pages": [
+              308,
+              308
+            ]
+          }
+        ],
+        "D561": [
+          {
+            "section": "A8 · Prime and character balance",
+            "start_label": "r24:balance",
+            "end_label": "v5:balance-end",
+            "printed_pages": [
+              25,
+              27
+            ],
+            "pdf_pages": [
+              25,
+              27
+            ]
+          },
+          {
+            "section": "A10 · Thick sum at fixed width",
+            "start_label": "r24:thick",
+            "end_label": "v5:thick-end",
+            "printed_pages": [
+              31,
+              32
+            ],
+            "pdf_pages": [
+              31,
+              32
+            ]
+          },
+          {
+            "section": "Statement O.594",
+            "start_label": "decomp:D561",
+            "end_label": "decomp:D561",
+            "printed_pages": [
+              309,
+              309
+            ],
+            "pdf_pages": [
+              309,
+              309
+            ]
+          },
+          {
+            "section": "The chain in detail · P017 (section start)",
+            "start_label": "r23:p017",
+            "end_label": "r23:p017",
+            "printed_pages": [
+              25,
+              25
+            ],
+            "pdf_pages": [
+              25,
+              25
+            ]
+          }
+        ],
+        "D562": [
+          {
+            "section": "A4 · Increments of the character sum",
+            "start_label": "r24:regular",
+            "end_label": "v5:regular-end",
+            "printed_pages": [
+              29,
+              30
+            ],
+            "pdf_pages": [
+              29,
+              30
+            ]
+          },
+          {
+            "section": "A9 · Change of the weight width",
+            "start_label": "r24:regular",
+            "end_label": "v5:regular-end",
+            "printed_pages": [
+              29,
+              30
+            ],
+            "pdf_pages": [
+              29,
+              30
+            ]
+          },
+          {
+            "section": "Statement O.595",
+            "start_label": "decomp:D562",
+            "end_label": "decomp:D562",
+            "printed_pages": [
+              309,
+              309
+            ],
+            "pdf_pages": [
+              309,
+              309
+            ]
+          }
+        ],
+        "D563": [
+          {
+            "section": "Statement O.596",
+            "start_label": "decomp:D563",
+            "end_label": "decomp:D563",
+            "printed_pages": [
+              309,
+              309
+            ],
+            "pdf_pages": [
+              309,
+              309
+            ]
+          },
+          {
+            "section": "The chain in detail · P017 (section start)",
+            "start_label": "r23:p017",
+            "end_label": "r23:p017",
+            "printed_pages": [
+              25,
+              25
+            ],
+            "pdf_pages": [
+              25,
+              25
+            ]
+          },
+          {
+            "section": "Statement 5.10",
+            "start_label": "r23:budget",
+            "end_label": "r23:budget",
+            "printed_pages": [
+              35,
+              35
+            ],
+            "pdf_pages": [
+              35,
+              35
+            ]
+          }
+        ],
+        "D564": [
+          {
+            "section": "Statement O.598",
+            "start_label": "decomp:D564",
+            "end_label": "decomp:D564",
+            "printed_pages": [
+              310,
+              310
+            ],
+            "pdf_pages": [
+              310,
+              310
+            ]
+          },
+          {
+            "section": "The chain in detail · P017 (section start)",
+            "start_label": "r23:p017",
+            "end_label": "r23:p017",
+            "printed_pages": [
+              25,
+              25
+            ],
+            "pdf_pages": [
+              25,
+              25
+            ]
+          }
+        ],
+        "D566": [
+          {
+            "section": "Statement O.600",
+            "start_label": "decomp:D566",
+            "end_label": "decomp:D566",
+            "printed_pages": [
+              310,
+              310
+            ],
+            "pdf_pages": [
+              310,
+              310
+            ]
+          }
+        ],
+        "D567": [
+          {
+            "section": "A5 · Per-unit error bound",
+            "start_label": "r24:d567",
+            "end_label": "v5:d567-end",
+            "printed_pages": [
+              27,
+              28
+            ],
+            "pdf_pages": [
+              27,
+              28
+            ]
+          },
+          {
+            "section": "Statement O.601",
+            "start_label": "decomp:D567",
+            "end_label": "decomp:D567",
+            "printed_pages": [
+              310,
+              310
+            ],
+            "pdf_pages": [
+              310,
+              310
+            ]
+          },
+          {
+            "section": "The chain in detail · P017 (section start)",
+            "start_label": "r23:p017",
+            "end_label": "r23:p017",
+            "printed_pages": [
+              25,
+              25
+            ],
+            "pdf_pages": [
+              25,
+              25
+            ]
+          }
+        ],
+        "D568": [
+          {
+            "section": "Statement O.602",
+            "start_label": "decomp:D568",
+            "end_label": "decomp:D568",
+            "printed_pages": [
+              311,
+              311
+            ],
+            "pdf_pages": [
+              311,
+              311
+            ]
+          }
+        ],
+        "D569": [
+          {
+            "section": "Statement O.605",
+            "start_label": "decomp:D569",
+            "end_label": "decomp:D569",
+            "printed_pages": [
+              311,
+              311
+            ],
+            "pdf_pages": [
+              311,
+              311
+            ]
+          },
+          {
+            "section": "The chain in detail · P017 (section start)",
+            "start_label": "r23:p017",
+            "end_label": "r23:p017",
+            "printed_pages": [
+              25,
+              25
+            ],
+            "pdf_pages": [
+              25,
+              25
+            ]
+          }
+        ],
+        "D570": [
+          {
+            "section": "Statement O.606",
+            "start_label": "decomp:D570",
+            "end_label": "decomp:D570",
+            "printed_pages": [
+              311,
+              311
+            ],
+            "pdf_pages": [
+              311,
+              311
+            ]
+          }
+        ],
+        "D575": [
+          {
+            "section": "Statement O.614",
+            "start_label": "decomp:D575",
+            "end_label": "decomp:D575",
+            "printed_pages": [
+              313,
+              313
+            ],
+            "pdf_pages": [
+              313,
+              313
+            ]
+          }
+        ],
+        "P001": [
+          {
+            "section": "Statement C.1",
+            "start_label": "pn:P001",
+            "end_label": "pn:P001",
+            "printed_pages": [
+              90,
+              90
+            ],
+            "pdf_pages": [
+              90,
+              90
+            ]
+          }
+        ],
+        "P002": [
+          {
+            "section": "Statement C.2",
+            "start_label": "pn:P002",
+            "end_label": "pn:P002",
+            "printed_pages": [
+              90,
+              90
+            ],
+            "pdf_pages": [
+              90,
+              90
+            ]
+          }
+        ],
+        "P003": [
+          {
+            "section": "Statement C.3",
+            "start_label": "pn:P003",
+            "end_label": "pn:P003",
+            "printed_pages": [
+              91,
+              91
+            ],
+            "pdf_pages": [
+              91,
+              91
+            ]
+          }
+        ],
+        "P004": [
+          {
+            "section": "Statement C.4",
+            "start_label": "pn:P004",
+            "end_label": "pn:P004",
+            "printed_pages": [
+              91,
+              91
+            ],
+            "pdf_pages": [
+              91,
+              91
+            ]
+          }
+        ],
+        "P005": [
+          {
+            "section": "Statement C.5",
+            "start_label": "pn:P005",
+            "end_label": "pn:P005",
+            "printed_pages": [
+              91,
+              91
+            ],
+            "pdf_pages": [
+              91,
+              91
+            ]
+          }
+        ],
+        "P006": [
+          {
+            "section": "Statement C.6",
+            "start_label": "pn:P006",
+            "end_label": "pn:P006",
+            "printed_pages": [
+              91,
+              91
+            ],
+            "pdf_pages": [
+              91,
+              91
+            ]
+          }
+        ],
+        "P007": [
+          {
+            "section": "Statement C.7",
+            "start_label": "pn:P007",
+            "end_label": "pn:P007",
+            "printed_pages": [
+              91,
+              91
+            ],
+            "pdf_pages": [
+              91,
+              91
+            ]
+          }
+        ],
+        "P008": [
+          {
+            "section": "Statement C.8",
+            "start_label": "pn:P008",
+            "end_label": "pn:P008",
+            "printed_pages": [
+              92,
+              92
+            ],
+            "pdf_pages": [
+              92,
+              92
+            ]
+          }
+        ],
+        "P009": [
+          {
+            "section": "Statement C.9",
+            "start_label": "pn:P009",
+            "end_label": "pn:P009",
+            "printed_pages": [
+              92,
+              92
+            ],
+            "pdf_pages": [
+              92,
+              92
+            ]
+          }
+        ],
+        "P010": [
+          {
+            "section": "Statement C.10",
+            "start_label": "pn:P010",
+            "end_label": "pn:P010",
+            "printed_pages": [
+              92,
+              92
+            ],
+            "pdf_pages": [
+              92,
+              92
+            ]
+          }
+        ],
+        "P011": [
+          {
+            "section": "Statement C.11",
+            "start_label": "pn:P011",
+            "end_label": "pn:P011",
+            "printed_pages": [
+              92,
+              92
+            ],
+            "pdf_pages": [
+              92,
+              92
+            ]
+          }
+        ],
+        "P012": [
+          {
+            "section": "Statement C.12",
+            "start_label": "pn:P012",
+            "end_label": "pn:P012",
+            "printed_pages": [
+              93,
+              93
+            ],
+            "pdf_pages": [
+              93,
+              93
+            ]
+          },
+          {
+            "section": "The chain in detail · P012 (section start)",
+            "start_label": "sec:r23-p012",
+            "end_label": "sec:r23-p012",
+            "printed_pages": [
+              49,
+              49
+            ],
+            "pdf_pages": [
+              49,
+              49
+            ]
+          }
+        ],
+        "P013": [
+          {
+            "section": "Statement C.13",
+            "start_label": "pn:P013",
+            "end_label": "pn:P013",
+            "printed_pages": [
+              93,
+              93
+            ],
+            "pdf_pages": [
+              93,
+              93
+            ]
+          },
+          {
+            "section": "The chain in detail · P013 (section start)",
+            "start_label": "sec:r23-selmer",
+            "end_label": "sec:r23-selmer",
+            "printed_pages": [
+              45,
+              45
+            ],
+            "pdf_pages": [
+              45,
+              45
+            ]
+          }
+        ],
+        "P014": [
+          {
+            "section": "Statement C.14",
+            "start_label": "pn:P014",
+            "end_label": "pn:P014",
+            "printed_pages": [
+              94,
+              94
+            ],
+            "pdf_pages": [
+              94,
+              94
+            ]
+          }
+        ],
+        "P015": [
+          {
+            "section": "Statement C.15",
+            "start_label": "pn:P015",
+            "end_label": "pn:P015",
+            "printed_pages": [
+              94,
+              94
+            ],
+            "pdf_pages": [
+              94,
+              94
+            ]
+          },
+          {
+            "section": "The chain in detail · P015 (section start)",
+            "start_label": "r23:host",
+            "end_label": "r23:host",
+            "printed_pages": [
+              40,
+              40
+            ],
+            "pdf_pages": [
+              40,
+              40
+            ]
+          }
+        ],
+        "P016": [
+          {
+            "section": "Statement C.16",
+            "start_label": "pn:P016",
+            "end_label": "pn:P016",
+            "printed_pages": [
+              94,
+              94
+            ],
+            "pdf_pages": [
+              94,
+              94
+            ]
+          }
+        ],
+        "P017": [
+          {
+            "section": "Statement C.17",
+            "start_label": "pn:P017",
+            "end_label": "pn:P017",
+            "printed_pages": [
+              95,
+              95
+            ],
+            "pdf_pages": [
+              95,
+              95
+            ]
+          },
+          {
+            "section": "The chain in detail · P017 (section start)",
+            "start_label": "r23:p017",
+            "end_label": "r23:p017",
+            "printed_pages": [
+              25,
+              25
+            ],
+            "pdf_pages": [
+              25,
+              25
+            ]
+          }
+        ],
+        "P018": [
+          {
+            "section": "Statement C.34",
+            "start_label": "pn:P018",
+            "end_label": "pn:P018",
+            "printed_pages": [
+              102,
+              102
+            ],
+            "pdf_pages": [
+              102,
+              102
+            ]
+          }
+        ],
+        "P019": [
+          {
+            "section": "Statement C.35",
+            "start_label": "pn:P019",
+            "end_label": "pn:P019",
+            "printed_pages": [
+              103,
+              103
+            ],
+            "pdf_pages": [
+              103,
+              103
+            ]
+          }
+        ],
+        "P020": [
+          {
+            "section": "Statement C.36",
+            "start_label": "pn:P020",
+            "end_label": "pn:P020",
+            "printed_pages": [
+              103,
+              103
+            ],
+            "pdf_pages": [
+              103,
+              103
+            ]
+          }
+        ],
+        "P021": [
+          {
+            "section": "Statement C.40",
+            "start_label": "pn:P021",
+            "end_label": "pn:P021",
+            "printed_pages": [
+              105,
+              105
+            ],
+            "pdf_pages": [
+              105,
+              105
+            ]
+          },
+          {
+            "section": "The chain in detail · LinkN_at (section start)",
+            "start_label": "r23:link",
+            "end_label": "r23:link",
+            "printed_pages": [
+              35,
+              35
+            ],
+            "pdf_pages": [
+              35,
+              35
+            ]
+          }
+        ],
+        "P022": [
+          {
+            "section": "Statement C.23",
+            "start_label": "pn:P022",
+            "end_label": "pn:P022",
+            "printed_pages": [
+              97,
+              97
+            ],
+            "pdf_pages": [
+              97,
+              97
+            ]
+          },
+          {
+            "section": "The one-sided Landau theorem and proof (through the following remark)",
+            "start_label": "pn:P022",
+            "end_label": "rem:E-landau-compare",
+            "printed_pages": [
+              97,
+              100
+            ],
+            "pdf_pages": [
+              97,
+              100
+            ]
+          }
+        ],
+        "P023": [
+          {
+            "section": "Statement C.33",
+            "start_label": "pn:P023",
+            "end_label": "pn:P023",
+            "printed_pages": [
+              102,
+              102
+            ],
+            "pdf_pages": [
+              102,
+              102
+            ]
+          }
+        ],
+        "P024": [
+          {
+            "section": "Statement D.1",
+            "start_label": "pn:P024",
+            "end_label": "pn:P024",
+            "printed_pages": [
+              107,
+              107
+            ],
+            "pdf_pages": [
+              107,
+              107
+            ]
+          }
+        ],
+        "P025": [
+          {
+            "section": "Statement D.2",
+            "start_label": "pn:P025",
+            "end_label": "pn:P025",
+            "printed_pages": [
+              107,
+              107
+            ],
+            "pdf_pages": [
+              107,
+              107
+            ]
+          }
+        ],
+        "P026": [
+          {
+            "section": "Statement D.3",
+            "start_label": "pn:P026",
+            "end_label": "pn:P026",
+            "printed_pages": [
+              108,
+              108
+            ],
+            "pdf_pages": [
+              108,
+              108
+            ]
+          }
+        ],
+        "P027": [
+          {
+            "section": "Statement D.4",
+            "start_label": "pn:P027",
+            "end_label": "pn:P027",
+            "printed_pages": [
+              109,
+              109
+            ],
+            "pdf_pages": [
+              109,
+              109
+            ]
+          }
+        ],
+        "P028": [
+          {
+            "section": "Statement D.5",
+            "start_label": "pn:P028",
+            "end_label": "pn:P028",
+            "printed_pages": [
+              109,
+              109
+            ],
+            "pdf_pages": [
+              109,
+              109
+            ]
+          }
+        ],
+        "P029": [
+          {
+            "section": "Statement D.6",
+            "start_label": "pn:P029",
+            "end_label": "pn:P029",
+            "printed_pages": [
+              110,
+              110
+            ],
+            "pdf_pages": [
+              110,
+              110
+            ]
+          }
+        ],
+        "P030": [
+          {
+            "section": "Statement D.7",
+            "start_label": "pn:P030",
+            "end_label": "pn:P030",
+            "printed_pages": [
+              110,
+              110
+            ],
+            "pdf_pages": [
+              110,
+              110
+            ]
+          }
+        ],
+        "P031": [
+          {
+            "section": "Statement D.8",
+            "start_label": "pn:P031",
+            "end_label": "pn:P031",
+            "printed_pages": [
+              111,
+              111
+            ],
+            "pdf_pages": [
+              111,
+              111
+            ]
+          }
+        ],
+        "P032": [
+          {
+            "section": "Statement D.9",
+            "start_label": "pn:P032",
+            "end_label": "pn:P032",
+            "printed_pages": [
+              112,
+              112
+            ],
+            "pdf_pages": [
+              112,
+              112
+            ]
+          }
+        ],
+        "P033": [
+          {
+            "section": "Statement D.10",
+            "start_label": "pn:P033",
+            "end_label": "pn:P033",
+            "printed_pages": [
+              112,
+              112
+            ],
+            "pdf_pages": [
+              112,
+              112
+            ]
+          }
+        ],
+        "P034": [
+          {
+            "section": "Statement D.11",
+            "start_label": "pn:P034",
+            "end_label": "pn:P034",
+            "printed_pages": [
+              113,
+              113
+            ],
+            "pdf_pages": [
+              113,
+              113
+            ]
+          }
+        ],
+        "P035": [
+          {
+            "section": "Statement D.12",
+            "start_label": "pn:P035",
+            "end_label": "pn:P035",
+            "printed_pages": [
+              114,
+              114
+            ],
+            "pdf_pages": [
+              114,
+              114
+            ]
+          }
+        ],
+        "P036": [
+          {
+            "section": "Statement D.13",
+            "start_label": "pn:P036",
+            "end_label": "pn:P036",
+            "printed_pages": [
+              114,
+              114
+            ],
+            "pdf_pages": [
+              114,
+              114
+            ]
+          }
+        ],
+        "P037": [
+          {
+            "section": "Statement D.14",
+            "start_label": "pn:P037",
+            "end_label": "pn:P037",
+            "printed_pages": [
+              115,
+              115
+            ],
+            "pdf_pages": [
+              115,
+              115
+            ]
+          }
+        ],
+        "P038": [
+          {
+            "section": "Statement D.15",
+            "start_label": "pn:P038",
+            "end_label": "pn:P038",
+            "printed_pages": [
+              116,
+              116
+            ],
+            "pdf_pages": [
+              116,
+              116
+            ]
+          }
+        ],
+        "P039": [
+          {
+            "section": "Statement D.16",
+            "start_label": "pn:P039",
+            "end_label": "pn:P039",
+            "printed_pages": [
+              116,
+              116
+            ],
+            "pdf_pages": [
+              116,
+              116
+            ]
+          }
+        ],
+        "P040": [
+          {
+            "section": "Statement D.17",
+            "start_label": "pn:P040",
+            "end_label": "pn:P040",
+            "printed_pages": [
+              117,
+              117
+            ],
+            "pdf_pages": [
+              117,
+              117
+            ]
+          }
+        ],
+        "P041": [
+          {
+            "section": "Statement D.18",
+            "start_label": "pn:P041",
+            "end_label": "pn:P041",
+            "printed_pages": [
+              117,
+              117
+            ],
+            "pdf_pages": [
+              117,
+              117
+            ]
+          }
+        ],
+        "P042": [
+          {
+            "section": "Statement D.19",
+            "start_label": "pn:P042",
+            "end_label": "pn:P042",
+            "printed_pages": [
+              118,
+              118
+            ],
+            "pdf_pages": [
+              118,
+              118
+            ]
+          }
+        ],
+        "P043": [
+          {
+            "section": "Statement D.20",
+            "start_label": "pn:P043",
+            "end_label": "pn:P043",
+            "printed_pages": [
+              119,
+              119
+            ],
+            "pdf_pages": [
+              119,
+              119
+            ]
+          }
+        ],
+        "P044": [
+          {
+            "section": "Statement D.21",
+            "start_label": "pn:P044",
+            "end_label": "pn:P044",
+            "printed_pages": [
+              120,
+              120
+            ],
+            "pdf_pages": [
+              120,
+              120
+            ]
+          }
+        ],
+        "P045": [
+          {
+            "section": "Statement D.22",
+            "start_label": "pn:P045",
+            "end_label": "pn:P045",
+            "printed_pages": [
+              121,
+              121
+            ],
+            "pdf_pages": [
+              121,
+              121
+            ]
+          }
+        ],
+        "P046": [
+          {
+            "section": "Statement D.23",
+            "start_label": "pn:P046",
+            "end_label": "pn:P046",
+            "printed_pages": [
+              121,
+              121
+            ],
+            "pdf_pages": [
+              121,
+              121
+            ]
+          }
+        ],
+        "P047": [
+          {
+            "section": "Statement D.24",
+            "start_label": "pn:P047",
+            "end_label": "pn:P047",
+            "printed_pages": [
+              122,
+              122
+            ],
+            "pdf_pages": [
+              122,
+              122
+            ]
+          }
+        ],
+        "P048": [
+          {
+            "section": "Statement D.25",
+            "start_label": "pn:P048",
+            "end_label": "pn:P048",
+            "printed_pages": [
+              122,
+              122
+            ],
+            "pdf_pages": [
+              122,
+              122
+            ]
+          }
+        ],
+        "P049": [
+          {
+            "section": "Statement D.26",
+            "start_label": "pn:P049",
+            "end_label": "pn:P049",
+            "printed_pages": [
+              123,
+              123
+            ],
+            "pdf_pages": [
+              123,
+              123
+            ]
+          }
+        ],
+        "P050": [
+          {
+            "section": "Statement D.27",
+            "start_label": "pn:P050",
+            "end_label": "pn:P050",
+            "printed_pages": [
+              124,
+              124
+            ],
+            "pdf_pages": [
+              124,
+              124
+            ]
+          }
+        ],
+        "P090": [
+          {
+            "section": "Statement G.9",
+            "start_label": "pn:P090",
+            "end_label": "pn:P090",
+            "printed_pages": [
+              142,
+              142
+            ],
+            "pdf_pages": [
+              142,
+              142
+            ]
+          }
+        ],
+        "P096": [
+          {
+            "section": "Statement H.6",
+            "start_label": "pn:P096",
+            "end_label": "pn:P096",
+            "printed_pages": [
+              145,
+              145
+            ],
+            "pdf_pages": [
+              145,
+              145
+            ]
+          }
+        ],
+        "P134": [
+          {
+            "section": "Statement J.14",
+            "start_label": "pn:P134",
+            "end_label": "pn:P134",
+            "printed_pages": [
+              155,
+              155
+            ],
+            "pdf_pages": [
+              155,
+              155
+            ]
+          }
+        ],
+        "T01": [
+          {
+            "section": "Statement B.11",
+            "start_label": "sub:T01",
+            "end_label": "sub:T01",
+            "printed_pages": [
+              76,
+              76
+            ],
+            "pdf_pages": [
+              76,
+              76
+            ]
+          }
+        ],
+        "T02": [
+          {
+            "section": "Statement B.12",
+            "start_label": "sub:T02",
+            "end_label": "sub:T02",
+            "printed_pages": [
+              76,
+              76
+            ],
+            "pdf_pages": [
+              76,
+              76
+            ]
+          },
+          {
+            "section": "The chain in detail · P012 (section start)",
+            "start_label": "sec:r23-p012",
+            "end_label": "sec:r23-p012",
+            "printed_pages": [
+              49,
+              49
+            ],
+            "pdf_pages": [
+              49,
+              49
+            ]
+          }
+        ],
+        "T03": [
+          {
+            "section": "Statement B.13",
+            "start_label": "sub:T03",
+            "end_label": "sub:T03",
+            "printed_pages": [
+              77,
+              77
+            ],
+            "pdf_pages": [
+              77,
+              77
+            ]
+          }
+        ],
+        "T04": [
+          {
+            "section": "Statement B.14",
+            "start_label": "sub:T04",
+            "end_label": "sub:T04",
+            "printed_pages": [
+              77,
+              77
+            ],
+            "pdf_pages": [
+              77,
+              77
+            ]
+          }
+        ],
+        "T05": [
+          {
+            "section": "Statement B.15",
+            "start_label": "sub:T05",
+            "end_label": "sub:T05",
+            "printed_pages": [
+              77,
+              77
+            ],
+            "pdf_pages": [
+              77,
+              77
+            ]
+          }
+        ],
+        "T06": [
+          {
+            "section": "Statement B.16",
+            "start_label": "sub:T06",
+            "end_label": "sub:T06",
+            "printed_pages": [
+              78,
+              78
+            ],
+            "pdf_pages": [
+              78,
+              78
+            ]
+          }
+        ],
+        "T07": [
+          {
+            "section": "Statement B.17",
+            "start_label": "sub:T07",
+            "end_label": "sub:T07",
+            "printed_pages": [
+              78,
+              78
+            ],
+            "pdf_pages": [
+              78,
+              78
+            ]
+          }
+        ],
+        "T08": [
+          {
+            "section": "Statement B.18",
+            "start_label": "sub:T08",
+            "end_label": "sub:T08",
+            "printed_pages": [
+              78,
+              78
+            ],
+            "pdf_pages": [
+              78,
+              78
+            ]
+          }
+        ],
+        "T09": [
+          {
+            "section": "Statement B.19",
+            "start_label": "sub:T09",
+            "end_label": "sub:T09",
+            "printed_pages": [
+              78,
+              78
+            ],
+            "pdf_pages": [
+              78,
+              78
+            ]
+          }
+        ],
+        "T10": [
+          {
+            "section": "Statement B.20",
+            "start_label": "sub:T10",
+            "end_label": "sub:T10",
+            "printed_pages": [
+              79,
+              79
+            ],
+            "pdf_pages": [
+              79,
+              79
+            ]
+          }
+        ],
+        "T11": [
+          {
+            "section": "Statement B.21",
+            "start_label": "sub:T11",
+            "end_label": "sub:T11",
+            "printed_pages": [
+              79,
+              79
+            ],
+            "pdf_pages": [
+              79,
+              79
+            ]
+          }
+        ],
+        "T12": [
+          {
+            "section": "Statement B.22",
+            "start_label": "sub:T12",
+            "end_label": "sub:T12",
+            "printed_pages": [
+              79,
+              79
+            ],
+            "pdf_pages": [
+              79,
+              79
+            ]
+          }
+        ],
+        "T13": [
+          {
+            "section": "Statement B.23",
+            "start_label": "sub:T13",
+            "end_label": "sub:T13",
+            "printed_pages": [
+              80,
+              80
+            ],
+            "pdf_pages": [
+              80,
+              80
+            ]
+          },
+          {
+            "section": "The chain in detail · P012 (section start)",
+            "start_label": "sec:r23-p012",
+            "end_label": "sec:r23-p012",
+            "printed_pages": [
+              49,
+              49
+            ],
+            "pdf_pages": [
+              49,
+              49
+            ]
+          }
+        ],
+        "T14": [
+          {
+            "section": "Statement B.24",
+            "start_label": "sub:T14",
+            "end_label": "sub:T14",
+            "printed_pages": [
+              80,
+              80
+            ],
+            "pdf_pages": [
+              80,
+              80
+            ]
+          },
+          {
+            "section": "The chain in detail · P012 (section start)",
+            "start_label": "sec:r23-p012",
+            "end_label": "sec:r23-p012",
+            "printed_pages": [
+              49,
+              49
+            ],
+            "pdf_pages": [
+              49,
+              49
+            ]
+          }
+        ],
+        "T15": [
+          {
+            "section": "Statement B.25",
+            "start_label": "sub:T15",
+            "end_label": "sub:T15",
+            "printed_pages": [
+              80,
+              80
+            ],
+            "pdf_pages": [
+              80,
+              80
+            ]
+          }
+        ],
+        "T16": [
+          {
+            "section": "Statement B.26",
+            "start_label": "sub:T16",
+            "end_label": "sub:T16",
+            "printed_pages": [
+              81,
+              81
+            ],
+            "pdf_pages": [
+              81,
+              81
+            ]
+          }
+        ],
+        "T17": [
+          {
+            "section": "Statement B.27",
+            "start_label": "sub:T17",
+            "end_label": "sub:T17",
+            "printed_pages": [
+              81,
+              81
+            ],
+            "pdf_pages": [
+              81,
+              81
+            ]
+          }
+        ],
+        "T18": [
+          {
+            "section": "Statement B.28",
+            "start_label": "sub:T18",
+            "end_label": "sub:T18",
+            "printed_pages": [
+              81,
+              81
+            ],
+            "pdf_pages": [
+              81,
+              81
+            ]
+          }
+        ],
+        "T19": [
+          {
+            "section": "Statement B.29",
+            "start_label": "sub:T19",
+            "end_label": "sub:T19",
+            "printed_pages": [
+              82,
+              82
+            ],
+            "pdf_pages": [
+              82,
+              82
+            ]
+          }
+        ],
+        "T20": [
+          {
+            "section": "Statement B.30",
+            "start_label": "sub:T20",
+            "end_label": "sub:T20",
+            "printed_pages": [
+              82,
+              82
+            ],
+            "pdf_pages": [
+              82,
+              82
+            ]
+          }
+        ],
+        "T21": [
+          {
+            "section": "Statement B.31",
+            "start_label": "sub:T21",
+            "end_label": "sub:T21",
+            "printed_pages": [
+              83,
+              83
+            ],
+            "pdf_pages": [
+              83,
+              83
+            ]
+          }
+        ],
+        "T22": [
+          {
+            "section": "Statement B.32",
+            "start_label": "sub:T22",
+            "end_label": "sub:T22",
+            "printed_pages": [
+              83,
+              83
+            ],
+            "pdf_pages": [
+              83,
+              83
+            ]
+          }
+        ],
+        "T23": [
+          {
+            "section": "Statement B.33",
+            "start_label": "sub:T23",
+            "end_label": "sub:T23",
+            "printed_pages": [
+              83,
+              83
+            ],
+            "pdf_pages": [
+              83,
+              83
+            ]
+          }
+        ],
+        "T24": [
+          {
+            "section": "Statement B.34",
+            "start_label": "sub:T24",
+            "end_label": "sub:T24",
+            "printed_pages": [
+              84,
+              84
+            ],
+            "pdf_pages": [
+              84,
+              84
+            ]
+          }
+        ],
+        "T25": [
+          {
+            "section": "Statement B.35",
+            "start_label": "sub:T25",
+            "end_label": "sub:T25",
+            "printed_pages": [
+              84,
+              84
+            ],
+            "pdf_pages": [
+              84,
+              84
+            ]
+          }
+        ],
+        "T26": [
+          {
+            "section": "Statement B.36",
+            "start_label": "sub:T26",
+            "end_label": "sub:T26",
+            "printed_pages": [
+              84,
+              84
+            ],
+            "pdf_pages": [
+              84,
+              84
+            ]
+          }
+        ],
+        "V4-COND": [
+          {
+            "section": "Theorem 1.1 · conditional statement",
+            "start_label": "r24:intro",
+            "end_label": "r24:intro",
+            "printed_pages": [
+              2,
+              2
+            ],
+            "pdf_pages": [
+              2,
+              2
+            ]
+          },
+          {
+            "section": "Table 3 · global, local and supplementary inputs",
+            "start_label": "tab:r24-hypotheses",
+            "end_label": "v5:table-end",
+            "printed_pages": [
+              51,
+              52
+            ],
+            "pdf_pages": [
+              51,
+              52
+            ]
+          },
+          {
+            "section": "Theorem 5.43 · conditional deduction",
+            "start_label": "r24:conclusion",
+            "end_label": "v5:conclusion-end",
+            "printed_pages": [
+              52,
+              53
+            ],
+            "pdf_pages": [
+              52,
+              53
+            ]
+          }
+        ],
+        "W01": [
+          {
+            "section": "Statement B.37",
+            "start_label": "sub:W01",
+            "end_label": "sub:W01",
+            "printed_pages": [
+              85,
+              85
+            ],
+            "pdf_pages": [
+              85,
+              85
+            ]
+          },
+          {
+            "section": "The chain in detail · P013 (section start)",
+            "start_label": "sec:r23-selmer",
+            "end_label": "sec:r23-selmer",
+            "printed_pages": [
+              45,
+              45
+            ],
+            "pdf_pages": [
+              45,
+              45
+            ]
+          }
+        ],
+        "W02": [
+          {
+            "section": "Statement B.38",
+            "start_label": "sub:W02",
+            "end_label": "sub:W02",
+            "printed_pages": [
+              85,
+              85
+            ],
+            "pdf_pages": [
+              85,
+              85
+            ]
+          }
+        ],
+        "W03": [
+          {
+            "section": "Statement B.39",
+            "start_label": "sub:W03",
+            "end_label": "sub:W03",
+            "printed_pages": [
+              86,
+              86
+            ],
+            "pdf_pages": [
+              86,
+              86
+            ]
+          }
+        ],
+        "W04": [
+          {
+            "section": "Statement B.40",
+            "start_label": "sub:W04",
+            "end_label": "sub:W04",
+            "printed_pages": [
+              86,
+              86
+            ],
+            "pdf_pages": [
+              86,
+              86
+            ]
+          }
+        ],
+        "W05": [
+          {
+            "section": "Statement B.41",
+            "start_label": "sub:W05",
+            "end_label": "sub:W05",
+            "printed_pages": [
+              86,
+              86
+            ],
+            "pdf_pages": [
+              86,
+              86
+            ]
+          }
+        ],
+        "W06": [
+          {
+            "section": "Statement B.42",
+            "start_label": "sub:W06",
+            "end_label": "sub:W06",
+            "printed_pages": [
+              87,
+              87
+            ],
+            "pdf_pages": [
+              87,
+              87
+            ]
+          }
+        ],
+        "W07": [
+          {
+            "section": "Statement B.43",
+            "start_label": "sub:W07",
+            "end_label": "sub:W07",
+            "printed_pages": [
+              87,
+              87
+            ],
+            "pdf_pages": [
+              87,
+              87
+            ]
+          }
+        ],
+        "W08": [
+          {
+            "section": "Statement B.44",
+            "start_label": "sub:W08",
+            "end_label": "sub:W08",
+            "printed_pages": [
+              88,
+              88
+            ],
+            "pdf_pages": [
+              88,
+              88
+            ]
+          },
+          {
+            "section": "The chain in detail · P013 (section start)",
+            "start_label": "sec:r23-selmer",
+            "end_label": "sec:r23-selmer",
+            "printed_pages": [
+              45,
+              45
+            ],
+            "pdf_pages": [
+              45,
+              45
+            ]
+          }
+        ],
+        "W09": [
+          {
+            "section": "Statement B.45",
+            "start_label": "sub:W09",
+            "end_label": "sub:W09",
+            "printed_pages": [
+              88,
+              88
+            ],
+            "pdf_pages": [
+              88,
+              88
+            ]
+          },
+          {
+            "section": "The chain in detail · P013 (section start)",
+            "start_label": "sec:r23-selmer",
+            "end_label": "sec:r23-selmer",
+            "printed_pages": [
+              45,
+              45
+            ],
+            "pdf_pages": [
+              45,
+              45
+            ]
+          }
+        ],
+        "W10": [
+          {
+            "section": "Statement B.46",
+            "start_label": "sub:W10",
+            "end_label": "sub:W10",
+            "printed_pages": [
+              88,
+              88
+            ],
+            "pdf_pages": [
+              88,
+              88
+            ]
+          },
+          {
+            "section": "The chain in detail · P013 (section start)",
+            "start_label": "sec:r23-selmer",
+            "end_label": "sec:r23-selmer",
+            "printed_pages": [
+              45,
+              45
+            ],
+            "pdf_pages": [
+              45,
+              45
+            ]
+          }
+        ],
+        "W11": [
+          {
+            "section": "Statement B.47",
+            "start_label": "sub:W11",
+            "end_label": "sub:W11",
+            "printed_pages": [
+              88,
+              88
+            ],
+            "pdf_pages": [
+              88,
+              88
+            ]
+          }
+        ],
+        "W12": [
+          {
+            "section": "Statement B.48",
+            "start_label": "sub:W12",
+            "end_label": "sub:W12",
+            "printed_pages": [
+              89,
+              89
+            ],
+            "pdf_pages": [
+              89,
+              89
+            ]
+          }
+        ],
+        "W13": [
+          {
+            "section": "Statement B.49",
+            "start_label": "sub:W13",
+            "end_label": "sub:W13",
+            "printed_pages": [
+              89,
+              89
+            ],
+            "pdf_pages": [
+              89,
+              89
+            ]
+          }
+        ],
+        "W14": [
+          {
+            "section": "Statement B.50",
+            "start_label": "sub:W14",
+            "end_label": "sub:W14",
+            "printed_pages": [
+              89,
+              89
+            ],
+            "pdf_pages": [
+              89,
+              89
+            ]
+          }
+        ],
+        "W15": [
+          {
+            "section": "Statement B.51",
+            "start_label": "sub:W15",
+            "end_label": "sub:W15",
+            "printed_pages": [
+              90,
+              90
+            ],
+            "pdf_pages": [
+              90,
+              90
+            ]
+          }
+        ],
+        "W16": [
+          {
+            "section": "Statement B.52",
+            "start_label": "sub:W16",
+            "end_label": "sub:W16",
+            "printed_pages": [
+              90,
+              90
+            ],
+            "pdf_pages": [
+              90,
+              90
+            ]
+          }
+        ]
+      },
+      "new_reader_exposition": {
+        "section": "2",
+        "title": "The proof at a glance",
+        "review_status": "pending_review",
+        "locations": {
+          "start": {
+            "label": "sec:proof-glance",
+            "printed_page": 5,
+            "pdf_page": 5,
+            "destination": "section.2"
+          },
+          "end": {
+            "label": "v7:glance-end",
+            "printed_page": 8,
+            "pdf_page": 8,
+            "destination": "section*.5"
+          },
+          "figure": {
+            "label": "fig:v7-glance",
+            "printed_page": 7,
+            "pdf_page": 7,
+            "destination": "figure.1"
+          },
+          "table": {
+            "label": "tab:v7-scale",
+            "printed_page": 8,
+            "pdf_page": 8,
+            "destination": "table.1"
+          }
+        },
+        "atlas_guides": {
+          "en": "docs/proof-at-a-glance.md",
+          "ko": "docs/ko/proof-at-a-glance.md"
+        }
+      },
+      "coverage_label_index": "data/paper_v7_coverage_labels.json",
+      "coverage_label_index_sha256": "68368acc81abf85e03091b8243cf5dfd07cd5f1652b0f644a9b4cbc25137588c",
+      "new_coverage_programme": {
+        "section": "3",
+        "title": "Scope, coverage and the verification programme",
+        "review_status": "pending_review",
+        "locations": {
+          "start": {
+            "label": "sec:v7-scope",
+            "printed_page": 9,
+            "pdf_page": 9,
+            "destination": "section.3"
+          },
+          "end": {
+            "label": "v7:scope-end",
+            "printed_page": 22,
+            "pdf_page": 22,
+            "destination": "section*.57"
+          },
+          "map": {
+            "label": "v7:q1",
+            "printed_page": 9,
+            "pdf_page": 9,
+            "destination": "subsection.3.1"
+          },
+          "table": {
+            "label": "tab:v7-coverage",
+            "printed_page": 9,
+            "pdf_page": 9,
+            "destination": "table.2"
+          },
+          "figure": {
+            "label": "fig:v7-coverage",
+            "printed_page": 10,
+            "pdf_page": 10,
+            "destination": "figure.2"
+          },
+          "tasks": {
+            "label": "v7:q2",
+            "printed_page": 10,
+            "pdf_page": 10,
+            "destination": "subsection.3.2"
+          },
+          "gaps": {
+            "label": "v7:q3",
+            "printed_page": 15,
+            "pdf_page": 15,
+            "destination": "subsection.3.3"
+          },
+          "programme": {
+            "label": "v7:q4",
+            "printed_page": 22,
+            "pdf_page": 22,
+            "destination": "subsection.3.4"
+          }
+        },
+        "atlas_guides": {
+          "en": "docs/coverage.md",
+          "ko": "docs/ko/coverage.md"
+        }
+      },
+      "source_math_comparison": {
+        "source_edition": "paper2_v6",
+        "source_pdf_sha256": "a68f5e2e07f47238a9986e71eeebd0fb1101e72f4ba5fef6a80ec8c392deccda",
+        "target_pdf_sha256": "9ea2256176c7b28156a683dee9c4ad76138777246811ce99aca14eb1ec015b9d",
+        "target_aux_sha256": "0255a4ff3f3626e93034a8c48d0ea73aa7d404e119bd1cda9eae7497c17c92c6",
+        "compilation_inputs_verified": true,
+        "method": "Ordered comparison of the exact TeX environment bodies in the active compilation sources. Separate totals cover the four standard theorem/proof environments and the full environment inventory.",
+        "comparisons": {
+          "four": {
+            "count": 111,
+            "by_type": {
+              "theorem": 31,
+              "proposition": 11,
+              "proof": 57,
+              "lemma": 12
+            },
+            "common_ordered_bytes_sha256": "54b3f00b1a29533838cdf304a97f620afdc1695bace81b65e21db69af908b213",
+            "serialized_bytes_per_edition": 136626,
+            "diff_bytes": 0
+          },
+          "all": {
+            "count": 966,
+            "by_type": {
+              "theorem": 31,
+              "proposition": 11,
+              "formalstatement": 813,
+              "proof": 57,
+              "lemma": 12,
+              "outline": 31,
+              "formalroute": 2,
+              "definition": 8,
+              "remark": 1
+            },
+            "common_ordered_bytes_sha256": "da6a23b81b8518d9efcdb8acdc9ccfa3a35bce94d61dea0bdfae45b210f08bfe",
+            "serialized_bytes_per_edition": 542809,
+            "diff_bytes": 0
+          }
+        }
+      },
+      "label_index_sha256": "2ce7a20467de69a8530faaf8a503ac9fea59c59d663593daa3061ada162533c6"
     }
   },
   "counts": {

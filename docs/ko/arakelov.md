@@ -6,7 +6,7 @@ AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
 
 계량 선다발·공변부피·산술 교차수은 이 분야의 통상 용어다. 선택한 묶음·정부호 쪽 증인은 이 경로에서 고정된 Lean 식별자나 이 프로젝트 초고의 표현을 가리킨다. 그 뜻은 연결한 정의에서 확인한다. [용어집](../../lookup/glossary.md)
 
-블루프린트와 조건부 논문은 Gunhee Cho의 지도로 AI가 작성한 미출판 원고이며 사람의 검토를 받지 않았다. Lean 개발의 저자는 Levent Alpöge다. 두 PDF는 저장소에 수록했다. 판본 장부에는 과거 검토에서 읽은 판본도 남아 있다. [블루프린트 v13a · 173–178쪽](../../editions/v0.1.0/blueprint_v13a.pdf#page=200) · [조건부 논문 v6](../../editions/v0.1.0/paper_v6.pdf) · [판본 장부](../../data/editions.json)
+조건부 논문의 저자이자 블루프린트의 편집자는 Gunhee Cho다. 두 문서는 AI의 도움으로 작성했으며 독립적인 인간 심사자가 논증을 검토한 기록은 없다. Lean 개발의 저자는 Levent Alpöge다. 두 PDF는 저장소에 수록했다. 판본 장부에는 과거 검토에서 읽은 판본도 남아 있다. [블루프린트 v13b · 173–178쪽](../../editions/v0.1.0/blueprint_v13b.pdf#page=209) · [조건부 논문 v7](../../editions/v0.1.0/paper_v7.pdf) · [판본 장부](../../data/editions.json)
 
 [영문 안내](../../tracks/arakelov/README.md) · [한국어 첫 화면](README.md) · [시작 읽기 자료](../../notes/arakelov/README.md) · [열린 질문](../../questions/arakelov.md)
 

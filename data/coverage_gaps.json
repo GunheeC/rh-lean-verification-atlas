@@ -1,0 +1,1189 @@
+{
+  "source_commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "size_rule": {
+    "en": "Each project figure counts weighted core lines lost from allChi when that declaration is removed. The cones overlap. A zero can mark a literature boundary. Mathlib declarations lie outside this graph; their inclusive source intervals give their physical length. The named-library entries identify the mathematical facts explicitly called out in the manuscript.",
+    "ko": "프로젝트의 각 수치는 해당 선언을 제거하면 allChi에서 도달하지 못하게 되는 가중 코어 줄 수이다. 의존 영역은 서로 겹친다. 0은 문헌 경계에서도 나타난다. Mathlib 선언은 이 그래프 밖에 있으며 양 끝을 포함하는 소스 구간이 실제 길이를 알려 준다. 라이브러리 항목은 원고가 명시적으로 지목한 수학적 사실을 정리한다."
+  },
+  "rows": [
+    {
+      "id": "V",
+      "title": {
+        "en": "V · the window bound",
+        "ko": "V · 창 부등식"
+      },
+      "field": {
+        "en": "Galois representations and Iwasawa theory",
+        "ko": "갈루아 표현과 이와사와 이론"
+      },
+      "gap": {
+        "en": "The map follows the row to the bound for each primitive character. Its two levels do not derive the underlying uniform estimates.",
+        "ko": "지도는 각 원시 지표에 대해 행 자료에서 창 부등식까지 두 단계를 추적한다. 이 자료를 공급하는 균일 추정의 유도는 남아 있다."
+      },
+      "next": {
+        "en": "Give a full derivation with the same exponent, uniform constants and quantifier order, including the Selmer, finite-level and descent inputs.",
+        "ko": "셀머 추정, 유한 층의 추정, 하강 자료를 같은 지수·균일 상수·양화사 순서로 결합하는 완전한 증명을 작성한다."
+      },
+      "lean": [
+        {
+          "decl": "UpperTheory.One.vwin_of_row",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/VwinOfRow.lean",
+          "lo": 4,
+          "hi": 5,
+          "dominated": 886201,
+          "corpus": "project"
+        }
+      ]
+    },
+    {
+      "id": "F",
+      "title": {
+        "en": "F · one compatible definite-side witness",
+        "ko": "F · 정부호 쪽의 단일 증인"
+      },
+      "field": {
+        "en": "Theta correspondence and Arakelov geometry",
+        "ko": "세타 대응과 아라켈로프 기하"
+      },
+      "gap": {
+        "en": "The map identifies one selection carrying both the norm bound and the row certificates. Its two levels leave the construction of the input records open to hand verification.",
+        "ko": "지도는 노름 상계와 행별 증명서를 동시에 갖는 하나의 선택을 가리킨다. 두 단계에서 쓰는 입력 레코드의 구성은 손으로 검토할 과제로 남는다."
+      },
+      "next": {
+        "en": "Derive the definite-side records and show that the norm, local maps and every row certificate belong to the very same selection.",
+        "ko": "정부호 쪽 레코드를 유도하고 노름, 국소 사상, 모든 행의 증명서가 바로 그 선택에 속함을 보인다."
+      },
+      "lean": [
+        {
+          "decl": "UpperTheory.Lit.nonempty_hyps_definite_side_of_closed_bound",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+          "lo": 44,
+          "hi": 68,
+          "dominated": 3679692,
+          "corpus": "project"
+        }
+      ]
+    },
+    {
+      "id": "G",
+      "title": {
+        "en": "Green character bridge",
+        "ko": "그린 지표의 연결"
+      },
+      "field": {
+        "en": "Finite groups of Lie type",
+        "ko": "유한 리 형 군의 표현론"
+      },
+      "gap": {
+        "en": "The local deduction starts from regular-character data. Its use as a literature input requires an identification of the finite group, torus, character and normalization.",
+        "ko": "국소 추론은 정칙 지표 자료에서 출발한다. 문헌의 결과를 대입하려면 유한 군, 토러스, 지표, 정규화를 일치시켜야 한다."
+      },
+      "next": {
+        "en": "Give the full comparison between the published character formula, its repository predicate and the bridge on each local datum.",
+        "ko": "출판된 지표 공식과 저장소 술어를 대조한 뒤 각 국소 자료에 연결하는 논증을 작성한다."
+      },
+      "lean": [
+        {
+          "decl": "GlobalTheory.GreenBridge.green_of_regular",
+          "file": "Development/AbelianVarietyTheory/Proofs/InertiaEigenvalues/SumRangeEqRoots.lean",
+          "lo": 225,
+          "hi": 304,
+          "dominated": 280,
+          "corpus": "project"
+        }
+      ]
+    },
+    {
+      "id": "B1-B5",
+      "title": {
+        "en": "B1–B5 · primes and the field frame",
+        "ko": "B1–B5 · 소수와 체의 틀"
+      },
+      "field": {
+        "en": "Analytic and algebraic number theory",
+        "ko": "해석적·대수적 정수론"
+      },
+      "gap": {
+        "en": "The prime-pair choice, field of the twist, complementary-frequency bound, field identification and Jacobi-symbol tests enter the host on a common pair.",
+        "ko": "소수쌍의 선택, 비튼 지표의 체, 여주파수 상계, 체의 식별, 야코비 기호 조건이 같은 소수쌍에 쓰인다."
+      },
+      "next": {
+        "en": "Derive the simultaneous selection and trace the uniform character bounds and symbol conditions through the field identification for that pair.",
+        "ko": "동시 선택의 존재를 증명하고 그 소수쌍에서 지표의 균일 상계와 기호 조건이 체의 식별을 거쳐 보존됨을 보인다."
+      },
+      "lean": [
+        {
+          "decl": "QH.pairEx",
+          "file": "Development/AutomorphicArithmetic/MeanSquareBounds/pairEx.lean",
+          "lo": 112,
+          "hi": 169,
+          "dominated": 17613,
+          "corpus": "project"
+        },
+        {
+          "decl": "UpperTheory.Top.fieldChi",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/FieldChi.lean",
+          "lo": 20,
+          "hi": 59,
+          "dominated": 3104,
+          "corpus": "project"
+        },
+        {
+          "decl": "UpperTheory.Top.boundedTw",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/BoundedTw.lean",
+          "lo": 45,
+          "hi": 56,
+          "dominated": 51,
+          "corpus": "project"
+        },
+        {
+          "decl": "UpperTheory.Top.isChiField",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/IsChiField.lean",
+          "lo": 5,
+          "hi": 51,
+          "dominated": 47,
+          "corpus": "project"
+        },
+        {
+          "decl": "UpperTheory.Top.pairHyp",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/PairHyp.lean",
+          "lo": 24,
+          "hi": 35,
+          "dominated": 29,
+          "corpus": "project"
+        }
+      ]
+    },
+    {
+      "id": "B6-B8",
+      "title": {
+        "en": "B6–B8 · host, ranks and admission",
+        "ko": "B6–B8 · 호스트, 계수와 허용성"
+      },
+      "field": {
+        "en": "Arithmetic of characters and ranks",
+        "ko": "지표와 계수의 산술"
+      },
+      "gap": {
+        "en": "The assembly extends the chosen field, realizes the ranks on a frame and imposes admissibility of its twists. Each supplier still needs a derivation through its dependencies.",
+        "ko": "조립은 선택한 체를 확장하고 틀 위의 계수를 실현한 뒤 비틀림의 허용성을 사용한다. 각 공급 선언의 의존 항목까지 이어지는 유도는 남아 있다."
+      },
+      "next": {
+        "en": "Construct a host extending that field and prove both rank realization and admissibility for the same twists and frame.",
+        "ko": "해당 체를 확장하는 호스트를 구성하고 같은 비틀림과 틀에서 계수의 실현과 허용성을 증명한다."
+      },
+      "lean": [
+        {
+          "decl": "UpperTheory.Top.hostOfField",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/HostOfField.lean",
+          "lo": 8,
+          "hi": 15,
+          "dominated": 10024,
+          "corpus": "project"
+        },
+        {
+          "decl": "GlobalTheory.EX.exists_ranks_rankVal_frame",
+          "file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsRanksRankValFrame.lean",
+          "lo": 45,
+          "hi": 99,
+          "dominated": 81,
+          "corpus": "project"
+        },
+        {
+          "decl": "UpperTheory.Top.admissibleClassesTwistedChar",
+          "file": "Development/AutomorphicArithmetic/CoprimeRanks/AdmChi.lean",
+          "lo": 13,
+          "hi": 20,
+          "dominated": 112,
+          "corpus": "project"
+        }
+      ]
+    },
+    {
+      "id": "C1-C3",
+      "title": {
+        "en": "C1–C3 · design and divisor estimates",
+        "ko": "C1–C3 · 설계와 인자 추정"
+      },
+      "field": {
+        "en": "Arithmetic geometry",
+        "ko": "산술기하"
+      },
+      "gap": {
+        "en": "The closed-link assembly uses existence of a design, the global link and passage from a closed bridge kernel to divisor estimates.",
+        "ko": "닫힌 연결의 조립은 설계의 존재, 대역 연결, 닫힌 연결핵에서 인자 추정으로의 이행을 사용한다."
+      },
+      "next": {
+        "en": "Prove the design exists for every requested largeness parameter, then derive the global and divisor estimates on its selected rows.",
+        "ko": "요청한 크기 매개변수마다 설계가 존재함을 보이고, 선택된 행에서 대역 추정과 인자 추정을 유도한다."
+      },
+      "lean": [
+        {
+          "decl": "GlobalTheory.Top.designExists_of_tuSize_aux4n_litThin",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkEx.lean",
+          "lo": 15,
+          "hi": 37,
+          "dominated": 1749,
+          "corpus": "project"
+        },
+        {
+          "decl": "GlobalTheory.Top.link_gl",
+          "file": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/LinkGl.lean",
+          "lo": 14,
+          "hi": 31,
+          "dominated": 11198,
+          "corpus": "project"
+        },
+        {
+          "decl": "Formalism.L2.DIV.closed_linkDIVt_of_closed_bridge_kernel",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/DIVRecBridgeSel.lean",
+          "lo": 197,
+          "hi": 205,
+          "dominated": 5437,
+          "corpus": "project"
+        }
+      ]
+    },
+    {
+      "id": "C4-C7",
+      "title": {
+        "en": "C4–C7 · selected rows and admissible families",
+        "ko": "C4–C7 · 선택된 행과 허용되는 족"
+      },
+      "field": {
+        "en": "Arithmetic geometry",
+        "ko": "산술기하"
+      },
+      "gap": {
+        "en": "Row selection, the remaining link data, admissibility of the twisted family and the alternative link feed subsequent bounds.",
+        "ko": "행 선택, 나머지 연결 자료, 비튼 족의 허용성, 대체 연결 조건이 후속 추정에 들어간다."
+      },
+      "next": {
+        "en": "Derive the four suppliers for a common family. Track the served selections and the point, period and column bounds through each restriction.",
+        "ko": "같은 족에서 네 공급 선언을 증명한다. 각 제한을 거치며 사용되는 선택과 점·주기·열 상계를 추적한다."
+      },
+      "lean": [
+        {
+          "decl": "GlobalTheory.Top.wire_sel_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/WireSel.lean",
+          "lo": 20,
+          "hi": 50,
+          "dominated": 5644,
+          "corpus": "project"
+        },
+        {
+          "decl": "GlobalTheory.Top.link_brest_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkBrest.lean",
+          "lo": 18,
+          "hi": 36,
+          "dominated": 2204,
+          "corpus": "project"
+        },
+        {
+          "decl": "GlobalTheory.Top.closed_family_admissible_twist_link_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ClosedFamilyAdmissibleTwistLink.lean",
+          "lo": 12,
+          "hi": 31,
+          "dominated": 21017,
+          "corpus": "project"
+        },
+        {
+          "decl": "GlobalTheory.Top.link_alt_alt_bis",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkAltAltBis.lean",
+          "lo": 16,
+          "hi": 48,
+          "dominated": 1314,
+          "corpus": "project"
+        }
+      ]
+    },
+    {
+      "id": "C8-C10",
+      "title": {
+        "en": "C8–C10 · closed estimates",
+        "ko": "C8–C10 · 닫힌 추정"
+      },
+      "field": {
+        "en": "Arithmetic geometry",
+        "ko": "산술기하"
+      },
+      "gap": {
+        "en": "The eta, irreducibility and G estimates require their respective duty or join-count premises before the common closed intersection is taken.",
+        "ko": "공통 닫힌 교집합을 취하기 전에 에타 추정, 기약성 추정, G 추정에는 각 의무 조건 또는 결합의 계수 조건이 필요하다."
+      },
+      "next": {
+        "en": "Derive the duty and join-count inputs and retain the uniform thresholds needed when all three estimates are restricted to one design.",
+        "ko": "의무 조건과 결합의 계수 조건을 유도하고, 세 추정을 한 설계로 제한해도 쓸 수 있는 균일 문턱값을 제시한다."
+      },
+      "lean": [
+        {
+          "decl": "GlobalTheory.Top.closed_linkEta_of_duty",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkEta.lean",
+          "lo": 13,
+          "hi": 22,
+          "dominated": 1143,
+          "corpus": "project"
+        },
+        {
+          "decl": "GlobalTheory.Top.Irr.closed_linkIRR_of_join_count",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkIrr.lean",
+          "lo": 22,
+          "hi": 43,
+          "dominated": 773,
+          "corpus": "project"
+        },
+        {
+          "decl": "GlobalTheory.Top.closed_linkG_of_duty",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/LinkG.lean",
+          "lo": 13,
+          "hi": 24,
+          "dominated": 13,
+          "corpus": "project"
+        }
+      ]
+    },
+    {
+      "id": "C11-C13",
+      "title": {
+        "en": "C11–C13 · ranks, decay and shape",
+        "ko": "C11–C13 · 계수, 감쇠와 형상"
+      },
+      "field": {
+        "en": "Geometry of lattices and arithmetic families",
+        "ko": "격자 기하와 산술적 족"
+      },
+      "gap": {
+        "en": "The retained-lift ranks, Wu decay and final shape implication operate on a selected witness and a compatible hypothesis record.",
+        "ko": "남긴 올림의 계수, 우 감쇠, 마지막 형상 함의는 선택한 증인 및 이와 양립하는 가설 레코드에 적용된다."
+      },
+      "next": {
+        "en": "Give the rank and decay arguments on the same lifts, then identify the exact selection and record in the shape implication.",
+        "ko": "같은 올림에서 계수와 감쇠를 증명하고 형상 함의에 쓰인 선택과 레코드를 식별한다."
+      },
+      "lean": [
+        {
+          "decl": "GlobalTheory.Top.link_alt_alt_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/Link.lean",
+          "lo": 20,
+          "hi": 54,
+          "dominated": 122,
+          "corpus": "project"
+        },
+        {
+          "decl": "GlobalTheory.Top.selection_closed_of_wu_decay_alt",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SelectionClosedOfWuDecay.lean",
+          "lo": 20,
+          "hi": 52,
+          "dominated": 347,
+          "corpus": "project"
+        },
+        {
+          "decl": "GlobalTheory.Fc.goal_of_shape_of_hyps",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ShapeOf.lean",
+          "lo": 24,
+          "hi": 30,
+          "dominated": 9,
+          "corpus": "project"
+        }
+      ]
+    },
+    {
+      "id": "S1",
+      "title": {
+        "en": "S1 · power windows at the level",
+        "ko": "S1 · 해당 수준의 거듭제곱 창"
+      },
+      "field": {
+        "en": "Analytic number theory",
+        "ko": "해석적 정수론"
+      },
+      "gap": {
+        "en": "The window-to-zero-free criterion has a local reading. The conditional argument also assumes that the required power windows are available at the specified level.",
+        "ko": "창에서 영점 배제까지의 기준은 국소적으로 읽을 수 있다. 조건부 논증에는 지정한 수준에서 필요한 거듭제곱 창이 공급된다는 사실도 들어간다."
+      },
+      "next": {
+        "en": "Derive the level family and check all its hypotheses against the zero-free criterion for the same exponent and character.",
+        "ko": "해당 수준의 족을 유도하고 같은 지수와 지표에 대해 영점 배제 기준의 모든 가정을 대조한다."
+      },
+      "lean": [
+        {
+          "decl": "UpperTheory.Comparison₂.formB",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/Imports.lean",
+          "lo": 8,
+          "hi": 19,
+          "dominated": 2057,
+          "corpus": "project"
+        },
+        {
+          "decl": "UpperTheory.Comparison₂.level_family",
+          "file": "Development/AutomorphicArithmetic/PrimitiveCosets/LevelFamily.lean",
+          "lo": 41,
+          "hi": 52,
+          "dominated": 70,
+          "corpus": "project"
+        },
+        {
+          "decl": "Deduction.zeroFree_of_rpow_window",
+          "file": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ZeroFreeOfRpowWindow.lean",
+          "lo": 11,
+          "hi": 14,
+          "dominated": 1958,
+          "corpus": "project"
+        }
+      ]
+    },
+    {
+      "id": "S2",
+      "title": {
+        "en": "S2 · pointwise lattice gap",
+        "ko": "S2 · 점별 격자 간극"
+      },
+      "field": {
+        "en": "Lattice estimates and analytic number theory",
+        "ko": "격자 추정과 해석적 정수론"
+      },
+      "gap": {
+        "en": "The per-unit bound supplies the lattice gap used at the top of the window argument. A reduction to a weighted-slope premise leaves the source of that premise to be checked.",
+        "ko": "단위별 상계가 창 논증 끝의 격자 간극을 공급한다. 가중 기울기 가정으로 환원한 뒤에는 그 가정의 유도가 남는다."
+      },
+      "next": {
+        "en": "Derive the pointwise congruence and slope estimates with constants uniform over the units summed at the top.",
+        "ko": "마지막 합에 들어가는 모든 단위에 공통인 상수로 점별 합동 추정과 기울기 추정을 유도한다."
+      },
+      "lean": [
+        {
+          "decl": "Formalism.LFunctionChainParameters.WeightedSlopeBounds.each_unit_bound_statement",
+          "file": "Formalism/SizeWindowBrackets/ChainSlopeWindows/LevelOfCongruence.lean",
+          "lo": 175,
+          "hi": 197,
+          "dominated": 301,
+          "corpus": "project"
+        }
+      ]
+    },
+    {
+      "id": "S3",
+      "title": {
+        "en": "S3 · Selmer budget",
+        "ko": "S3 · 셀머 상계의 이행"
+      },
+      "field": {
+        "en": "Galois representations and Iwasawa theory",
+        "ko": "갈루아 표현과 이와사와 이론"
+      },
+      "gap": {
+        "en": "The window bound, LinkN and small-level rank equalities transport a Selmer bound to the chosen family.",
+        "ko": "창 부등식, LinkN과 작은 수준의 계수 등식이 셀머 상계를 선택한 족으로 옮긴다."
+      },
+      "next": {
+        "en": "Identify the same family through all three inputs and prove the transport with the original uniform constants.",
+        "ko": "세 입력에서 동일한 족을 식별하고 원래의 균일 상수를 유지한 채 상계가 옮겨짐을 증명한다."
+      },
+      "lean": [
+        {
+          "decl": "UpperTheory.Top.divinN_of_hypV",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/DivinNOfHypV.lean",
+          "lo": 117,
+          "hi": 130,
+          "dominated": 111,
+          "corpus": "project"
+        }
+      ]
+    },
+    {
+      "id": "S4",
+      "title": {
+        "en": "S4 · slopes after division",
+        "ko": "S4 · 나눗셈 뒤의 기울기"
+      },
+      "field": {
+        "en": "Lattices and arithmetic height estimates",
+        "ko": "격자와 산술적 높이 추정"
+      },
+      "gap": {
+        "en": "The comparison uses divisor bounds, an intermediate mu bound and the size of the chosen design.",
+        "ko": "이 비교는 인자 상계, 중간 뮤 상계와 선택한 설계의 크기를 사용한다."
+      },
+      "next": {
+        "en": "Trace the division, mu and size estimates on the same join, including losses in each change of bound.",
+        "ko": "같은 결합에서 나눗셈·뮤·크기 추정을 추적하고 부등식을 바꿀 때 생기는 손실을 보인다."
+      },
+      "lean": [
+        {
+          "decl": "Formalism.MainNotions.J.linkMu_of_linkDIV",
+          "file": "Formalism/SharpRestriction/AdmissibleParameterJoins/SumLogPrimeFactorsLe.lean",
+          "lo": 775,
+          "hi": 783,
+          "dominated": 16,
+          "corpus": "project"
+        },
+        {
+          "decl": "Formalism.MainNotions.J.linkMu",
+          "file": "Formalism/SharpRestriction/AdmissibleParameterJoins/SumLogPrimeFactorsLe.lean",
+          "lo": 728,
+          "hi": 749,
+          "dominated": 221,
+          "corpus": "project"
+        },
+        {
+          "decl": "Formalism.MainNotions.J.muDGam_of_fact",
+          "file": "Formalism/SharpRestriction/AdmissibleParameterJoins/SumLogPrimeFactorsLe.lean",
+          "lo": 756,
+          "hi": 765,
+          "dominated": 104,
+          "corpus": "project"
+        },
+        {
+          "decl": "Formalism.MainNotions.muTu_of_tuSize",
+          "file": "Formalism/SharpRestriction/MuTuOfTuSize.lean",
+          "lo": 27,
+          "hi": 40,
+          "dominated": 39,
+          "corpus": "project"
+        }
+      ]
+    },
+    {
+      "id": "S5",
+      "title": {
+        "en": "S5 · actual-rank cutoff",
+        "ko": "S5 · 실제 계수의 상한"
+      },
+      "field": {
+        "en": "Asymptotic estimates for arithmetic ranks",
+        "ko": "산술적 계수의 점근 추정"
+      },
+      "gap": {
+        "en": "For epsilon strictly between zero and 1/52 the actual rank must eventually be at most the 400th power of x.",
+        "ko": "엡실론이 0과 1/52 사이이면 충분히 큰 x에서 실제 계수가 x의 400제곱 이하여야 한다."
+      },
+      "next": {
+        "en": "Unpack RankVal and prove that a common threshold works at the places where the host construction uses it.",
+        "ko": "RankVal을 풀고 호스트 구성에서 이 부등식을 쓰는 곳마다 같은 문턱값으로 충분함을 증명한다."
+      },
+      "lean": [
+        {
+          "decl": "UpperTheory.Top.eventually_rank_le_rpow_of_lt_one_div_fiftytwo",
+          "file": "Development/AutomorphicArithmetic/CharacterBoxes/EventuallyRankLeRpowOfLtOneDivFiftytwo.lean",
+          "lo": 5,
+          "hi": 126,
+          "dominated": 122,
+          "corpus": "project"
+        }
+      ]
+    },
+    {
+      "id": "S6a",
+      "title": {
+        "en": "S6a · nonvanishing on the closed half-plane",
+        "ko": "S6a · 닫힌 반평면에서의 비소멸"
+      },
+      "field": {
+        "en": "Analytic number theory",
+        "ko": "해석적 정수론"
+      },
+      "gap": {
+        "en": "Mathlib supplies nonvanishing for zeta and Dirichlet L-functions on real part at least one, with the character-and-point exception in the Dirichlet statement.",
+        "ko": "Mathlib이 실수부가 1 이상인 곳의 제타 함수와 디리클레 L함수의 비소멸을 공급한다. 디리클레 진술에는 지표와 점에 대한 예외가 있다."
+      },
+      "next": {
+        "en": "Give the library proof and compare the handling of the principal character, the pole and the library value at one.",
+        "ko": "라이브러리 증명을 제시하고 주지표, 극점, 1에서 라이브러리가 정한 함수값의 처리를 대조한다."
+      },
+      "lean": [
+        {
+          "decl": "DirichletCharacter.LFunction_ne_zero_of_one_le_re",
+          "file": "Mathlib/NumberTheory/LSeries/Nonvanishing.lean",
+          "lo": 398,
+          "hi": 401,
+          "dominated": null,
+          "corpus": "mathlib"
+        },
+        {
+          "decl": "riemannZeta_ne_zero_of_one_le_re",
+          "file": "Mathlib/NumberTheory/LSeries/Nonvanishing.lean",
+          "lo": 411,
+          "hi": 415,
+          "dominated": null,
+          "corpus": "mathlib"
+        }
+      ]
+    },
+    {
+      "id": "S6b",
+      "title": {
+        "en": "S6b · levels and the completed L-function",
+        "ko": "S6b · 수준과 완비 L함수"
+      },
+      "field": {
+        "en": "Analytic number theory",
+        "ko": "해석적 정수론"
+      },
+      "gap": {
+        "en": "The reduction uses Mathlib for modulus one, change of level, the gamma factor and the primitive functional equation.",
+        "ko": "이 환원은 법이 1인 경우, 수준 변경, 감마 인자, 원시 지표의 함수방정식에 Mathlib을 사용한다."
+      },
+      "next": {
+        "en": "Supply a derivation with the same Euler factors, character inverse, exceptional points and root-number normalization.",
+        "ko": "같은 오일러 인자, 역지표, 예외점, 근수 정규화를 사용하여 이 공식들을 유도한다."
+      },
+      "lean": [
+        {
+          "decl": "DirichletCharacter.LFunction_modOne_eq",
+          "file": "Mathlib/NumberTheory/LSeries/DirichletContinuation.lean",
+          "lo": 67,
+          "hi": 69,
+          "dominated": null,
+          "corpus": "mathlib"
+        },
+        {
+          "decl": "DirichletCharacter.LFunction_changeLevel",
+          "file": "Mathlib/NumberTheory/LSeries/DirichletContinuation.lean",
+          "lo": 150,
+          "hi": 162,
+          "dominated": null,
+          "corpus": "mathlib"
+        },
+        {
+          "decl": "DirichletCharacter.LFunction_eq_completed_div_gammaFactor",
+          "file": "Mathlib/NumberTheory/LSeries/DirichletContinuation.lean",
+          "lo": 259,
+          "hi": 264,
+          "dominated": null,
+          "corpus": "mathlib"
+        },
+        {
+          "decl": "DirichletCharacter.IsPrimitive.completedLFunction_one_sub",
+          "file": "Mathlib/NumberTheory/LSeries/DirichletContinuation.lean",
+          "lo": 284,
+          "hi": 313,
+          "dominated": null,
+          "corpus": "mathlib"
+        }
+      ]
+    },
+    {
+      "id": "S6c",
+      "title": {
+        "en": "S6c · completed zeta and real gamma factors",
+        "ko": "S6c · 완비 제타 함수와 실 감마 인자"
+      },
+      "field": {
+        "en": "Analytic number theory",
+        "ko": "해석적 정수론"
+      },
+      "gap": {
+        "en": "The zeta functional equation, the value at zero, the formula away from zero, and the zeros of the real gamma factor are imported.",
+        "ko": "제타 함수방정식, 0에서의 값, 0 밖의 공식, 실 감마 인자의 영점은 라이브러리에서 가져온다."
+      },
+      "next": {
+        "en": "Give the continuation and gamma-factor arguments including the exceptional values and the zero convention for poles.",
+        "ko": "예외점의 값과 극점에서의 영값 규약을 포함하여 해석적 연속과 감마 인자에 관한 증명을 제시한다."
+      },
+      "lean": [
+        {
+          "decl": "completedRiemannZeta_one_sub",
+          "file": "Mathlib/NumberTheory/LSeries/RiemannZeta.lean",
+          "lo": 106,
+          "hi": 108,
+          "dominated": null,
+          "corpus": "mathlib"
+        },
+        {
+          "decl": "riemannZeta_zero",
+          "file": "Mathlib/NumberTheory/LSeries/RiemannZeta.lean",
+          "lo": 151,
+          "hi": 152,
+          "dominated": null,
+          "corpus": "mathlib"
+        },
+        {
+          "decl": "riemannZeta_def_of_ne_zero",
+          "file": "Mathlib/NumberTheory/LSeries/RiemannZeta.lean",
+          "lo": 154,
+          "hi": 156,
+          "dominated": null,
+          "corpus": "mathlib"
+        },
+        {
+          "decl": "Complex.Gammaℝ_ne_zero_of_re_pos",
+          "file": "Mathlib/Analysis/SpecialFunctions/Gamma/Deligne.lean",
+          "lo": 66,
+          "hi": 71,
+          "dominated": null,
+          "corpus": "mathlib"
+        },
+        {
+          "decl": "Complex.Gammaℝ_eq_zero_iff",
+          "file": "Mathlib/Analysis/SpecialFunctions/Gamma/Deligne.lean",
+          "lo": 73,
+          "hi": 74,
+          "dominated": null,
+          "corpus": "mathlib"
+        }
+      ]
+    },
+    {
+      "id": "L1",
+      "title": {
+        "en": "Ferrero–Washington · bounded ranks",
+        "ko": "페레로–워싱턴 · 계수의 유계성"
+      },
+      "field": {
+        "en": "Galois representations and Iwasawa theory",
+        "ko": "갈루아 표현과 이와사와 이론"
+      },
+      "gap": {
+        "en": "The repository bounds ranks in a cyclotomic tower using an integral group-ring containment and a class-group index. It records a bounded-rank variant.",
+        "ko": "저장소는 정수 군환에서의 포함 관계와 유군의 지수를 이용해 원분 탑의 계수를 제한한다. 등록된 진술은 계수의 유계성에 대한 변형이다."
+      },
+      "next": {
+        "en": "Compare fields, primes, tower, quantified constants and the precise implication from the published mu-invariant theorem.",
+        "ko": "체, 소수, 탑, 상수의 양화 범위를 대조하고 출판된 뮤 불변량 정리에서 이 진술을 유도하는 함의를 적는다."
+      },
+      "lean": [
+        {
+          "decl": "UpperTheory.V.FW.ferreroWashington",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/FerreroWashingtonIndex/FerreroWashington.lean",
+          "lo": 104,
+          "hi": 119,
+          "dominated": 4838,
+          "corpus": "project"
+        },
+        {
+          "decl": "UpperTheory.V.Published.FerreroWashington",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/PublishedTheorems/FerreroWashington.lean",
+          "lo": 7,
+          "hi": 11,
+          "dominated": 0,
+          "corpus": "project"
+        }
+      ]
+    },
+    {
+      "id": "L2",
+      "title": {
+        "en": "Green · cuspidal characters of a finite general linear group",
+        "ko": "그린 · 유한 일반선형군의 첨점 지표"
+      },
+      "field": {
+        "en": "Finite group character theory",
+        "ko": "유한군 지표론"
+      },
+      "gap": {
+        "en": "The project packages regular characters, Frobenius orbits and a cuspidal-character formula into two predicates and a supplier from a record.",
+        "ko": "프로젝트는 정칙 지표, 프로베니우스 궤도, 첨점 지표 공식을 두 술어와 레코드에서 꺼내는 공급 선언으로 묶는다."
+      },
+      "next": {
+        "en": "Match every normalization and orbit convention with the corresponding published character formula, including its sign.",
+        "ko": "부호를 포함한 정규화와 궤도 규약을 출판된 지표 공식의 항목과 하나씩 대응시킨다."
+      },
+      "lean": [
+        {
+          "decl": "GlobalTheory.GLq.Green",
+          "file": "Development/AbelianVarietyTheory/Definitions/NonGaloisDescent/LabelDatum.lean",
+          "lo": 108,
+          "hi": 112,
+          "dominated": 5,
+          "corpus": "project"
+        },
+        {
+          "decl": "GlobalTheory.Published.GreenRegularCharacters",
+          "file": "Development/AbelianVarietyTheory/PublishedTheorems/GaloisCohomology₂/GreenRegularCharacters.lean",
+          "lo": 13,
+          "hi": 20,
+          "dominated": 0,
+          "corpus": "project"
+        },
+        {
+          "decl": "UpperTheory.LiteratureTheorems.green_regular_characters_of_literature",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+          "lo": 399,
+          "hi": 400,
+          "dominated": 0,
+          "corpus": "project"
+        }
+      ]
+    },
+    {
+      "id": "L3",
+      "title": {
+        "en": "Local Langlands · the selected local correspondence",
+        "ko": "국소 랭글랜즈 · 선택된 국소 대응"
+      },
+      "field": {
+        "en": "Local and global representation theory",
+        "ko": "국소·대역 표현론"
+      },
+      "gap": {
+        "en": "The repository supplies a local correspondence for its parameter and type data. The exact match to a published normalization is open.",
+        "ko": "저장소는 자체 매개변수와 유형 자료에 대한 국소 대응을 공급한다. 출판된 대응의 정규화와 정확히 일치하는지는 남아 있다."
+      },
+      "next": {
+        "en": "Compare the admissible representations, reciprocity convention and local parameter on every datum quantified at this head.",
+        "ko": "이 선언이 양화하는 각 자료에서 허용 표현, 상호법칙 규약, 국소 매개변수를 대조한다."
+      },
+      "lean": [
+        {
+          "decl": "UpperTheory.Zero.LLC.recTExists",
+          "file": "Development/AutomorphicArithmetic/Foundations/LocalLanglands/LocalCentralUnits/RecTExists.lean",
+          "lo": 20,
+          "hi": 66,
+          "dominated": 4837,
+          "corpus": "project"
+        }
+      ]
+    },
+    {
+      "id": "L4",
+      "title": {
+        "en": "Galois local–global compatibility",
+        "ko": "갈루아 표현의 국소·대역 양립성"
+      },
+      "field": {
+        "en": "Local and global representation theory",
+        "ko": "국소·대역 표현론"
+      },
+      "gap": {
+        "en": "The attached representation has the restricted local parameter comparisons requested by the project’s row.",
+        "ko": "부착된 표현에는 프로젝트의 행이 요구하는 제한된 국소 매개변수 비교가 들어 있다."
+      },
+      "next": {
+        "en": "Compare the field, places, representation and local restrictions with the published compatibility theorem under matching normalizations.",
+        "ko": "체, 자리, 표현과 국소 제한을 같은 정규화로 출판된 양립성 정리와 대조한다."
+      },
+      "lean": [
+        {
+          "decl": "UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter",
+          "file": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/RowSrc.lean",
+          "lo": 6,
+          "hi": 6,
+          "dominated": 761322,
+          "corpus": "project"
+        }
+      ]
+    },
+    {
+      "id": "L5",
+      "title": {
+        "en": "Moriwaki · arithmetic bigness",
+        "ko": "모리와키 · 산술적 거대성"
+      },
+      "field": {
+        "en": "Arakelov geometry",
+        "ko": "아라켈로프 기하"
+      },
+      "gap": {
+        "en": "The in-repository supplier uses resolution, intersection data and bounded-height density to establish its specific bigness predicate.",
+        "ko": "저장소의 공급 선언은 해소, 교차 자료, 유계 높이의 조밀성을 써서 자체 거대성 술어를 얻는다."
+      },
+      "next": {
+        "en": "Compare the chart lattice, intersection system and quantifiers with a precise published bigness theorem.",
+        "ko": "좌표계의 격자, 교차계와 양화 범위를 정확히 특정한 출판 거대성 정리와 대조한다."
+      },
+      "lean": [
+        {
+          "decl": "PositivityTheory.Pf1.HilbertSamuelMoriwaki.moriwakiBig_outright",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/MoriwakiBigness/MoriwakiBigTheorem/Outright.lean",
+          "lo": 9,
+          "hi": 11,
+          "dominated": 13,
+          "corpus": "project"
+        }
+      ]
+    },
+    {
+      "id": "L6",
+      "title": {
+        "en": "Siegel–Weil · the normalized identity",
+        "ko": "지겔–바일 · 정규화된 항등식"
+      },
+      "field": {
+        "en": "Theta correspondence",
+        "ko": "세타 대응"
+      },
+      "gap": {
+        "en": "The project’s standard identity specializes theta coefficients and constant terms for fixed models and measures.",
+        "ko": "프로젝트의 표준 항등식은 고정된 모형과 측도에서 세타 계수와 상수항을 특수화한다."
+      },
+      "next": {
+        "en": "Compare the convergence regimes, measures, normalizations and treatment of lower rank in a published Siegel–Weil formula.",
+        "ko": "출판된 지겔–바일 공식에서 수렴 범위, 측도, 정규화, 낮은 계수의 처리를 대조한다."
+      },
+      "lean": [
+        {
+          "decl": "PositivityTheory.SiegelWeilFormula.Fin.siegelWeilStd",
+          "file": "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilStandard/SiegelWeilStd.lean",
+          "lo": 8,
+          "hi": 8,
+          "dominated": 20986,
+          "corpus": "project"
+        }
+      ]
+    },
+    {
+      "id": "L7",
+      "title": {
+        "en": "Soulé · the uniform cohomology bound",
+        "ko": "술레 · 코호몰로지의 균일 상계"
+      },
+      "field": {
+        "en": "Arithmetic K-theory and Galois cohomology",
+        "ko": "산술적 K이론과 갈루아 코호몰로지"
+      },
+      "gap": {
+        "en": "The project asks for a uniform H² bound over primes and fields containing the required roots of unity. The prime range in the cited product bound misses the requested primes.",
+        "ko": "프로젝트는 필요한 단위근을 포함하는 체와 소수 전체에 균일한 2차 코호몰로지 상계를 요구한다. 인용된 곱 상계의 소수 범위는 필요한 소수를 포함하지 않는다."
+      },
+      "next": {
+        "en": "Prove the missing prime range and discriminant dependence or give a precise additional theorem covering both.",
+        "ko": "빠진 소수 범위와 판별식 의존성을 증명하거나 이 둘을 함께 다루는 별도의 정리를 정확히 제시한다."
+      },
+      "lean": [
+        {
+          "decl": "UpperTheory.V.ZK.lemmaK_litN_alt",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/KFinal.lean",
+          "lo": 11,
+          "hi": 11,
+          "dominated": 38725,
+          "corpus": "project"
+        }
+      ]
+    },
+    {
+      "id": "L8",
+      "title": {
+        "en": "Labesse · weak base change",
+        "ko": "라베스 · 약한 기저변환"
+      },
+      "field": {
+        "en": "Local and global representation theory",
+        "ko": "국소·대역 표현론"
+      },
+      "gap": {
+        "en": "The formal base-change head uses a specific unitary frame and local conclusions. The manuscript compares the field-degree restriction; the packet hypothesis and local normalizations remain to be matched.",
+        "ko": "형식 기저변환 선언은 특정 유니터리 틀과 국소 결론을 사용한다. 원고는 체의 차수 제한을 비교하지만 패킷 가정과 국소 정규화의 대조는 남는다."
+      },
+      "next": {
+        "en": "Write a statement-by-statement comparison with Corollary 5.3, including the discrete-series condition, packet hypothesis and split and inert places.",
+        "ko": "따름정리 5.3과 진술을 항목별로 대조한다. 이산계열 조건, 패킷 가정, 분해 자리와 관성 자리를 포함한다."
+      },
+      "lean": [
+        {
+          "decl": "UpperTheory.BaseChangeIdentities.baseChangeN",
+          "file": "Development/AutomorphicArithmetic/Foundations/BaseChangeIdentities/DefiniteNHolds.lean",
+          "lo": 5,
+          "hi": 6,
+          "dominated": 1699,
+          "corpus": "project"
+        }
+      ]
+    },
+    {
+      "id": "L9",
+      "title": {
+        "en": "Kato, Poitou–Tate and Fargues · further comparisons",
+        "ko": "가토, 푸아투–테이트, 파르그 · 추가 대조"
+      },
+      "field": {
+        "en": "Galois cohomology and p-adic Hodge theory",
+        "ko": "갈루아 코호몰로지와 p진 호지 이론"
+      },
+      "gap": {
+        "en": "The smoothed-class unit law is a repository term, the duality predicate is an input at its application, and the Hodge–Tate implication uses the project’s exactness premise. The register records no literature comparison for these roles.",
+        "ko": "평활화류의 단위 법칙은 저장소 항이고, 쌍대성 술어는 적용 지점의 입력이며, 호지–테이트 함의는 프로젝트의 완전성 가정을 쓴다. 이 역할에 대한 문헌 대조는 등록되지 않았다."
+      },
+      "next": {
+        "en": "Give separate comparisons of the chosen classes, Selmer local conditions and the exact sequence of period data, with their hypotheses.",
+        "ko": "선택한 류, 셀머 국소 조건, 주기 자료의 완전열 각각에 대해 가정을 갖춘 별도의 대조를 작성한다."
+      },
+      "lean": [
+        {
+          "decl": "UpperTheory.V.Z.Kato.Joint.kato_global_unit_law_of_smoothed_classes",
+          "file": "Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/KatoQuadraticCharacters/FrobeniusHodgeTateLaws/KatoGlobalUnitLawOfSmoothedClasses.lean",
+          "lo": 8,
+          "hi": 10,
+          "dominated": 39884,
+          "corpus": "project"
+        },
+        {
+          "decl": "GlobalTheory.Published.PoitouTateDuality",
+          "file": "Development/AbelianVarietyTheory/PublishedTheorems/GaloisCohomology₂/ExistsPrimitiveRootPow.lean",
+          "lo": 13,
+          "hi": 27,
+          "dominated": 0,
+          "corpus": "project"
+        },
+        {
+          "decl": "GlobalTheory.CompanionTheory.Relay.hodge_tate_of_fargues_exact",
+          "file": "Development/AutomorphicSpectrum/Proofs/AlgebraProofs/HodgeTateOfFarguesExact.lean",
+          "lo": 36,
+          "hi": 37,
+          "dominated": 517,
+          "corpus": "project"
+        }
+      ]
+    },
+    {
+      "id": "L10",
+      "title": {
+        "en": "Howe duality · unramified and real inputs",
+        "ko": "하우 쌍대성 · 비분기 및 실수 자리의 입력"
+      },
+      "field": {
+        "en": "Local and global representation theory",
+        "ko": "국소·대역 표현론"
+      },
+      "gap": {
+        "en": "The unramified assertion has a local supplier. Real Howe duality is a field of the theta-local record. Their literature comparisons remain open.",
+        "ko": "비분기 진술에는 국소 공급 선언이 있고, 실수 자리의 하우 쌍대성은 세타 국소 레코드의 필드이다. 두 문헌 대조가 남아 있다."
+      },
+      "next": {
+        "en": "Identify the local models, compact-fixed vectors and the real representation class in the respective published statements.",
+        "ko": "해당 출판 진술에서 국소 모형, 콤팩트 부분군의 고정 벡터, 실수 자리의 표현 부류를 식별한다."
+      },
+      "lean": [
+        {
+          "decl": "GlobalTheory.Hk3.howeUnram_holds",
+          "file": "Development/AbelianVarietyTheory/Proofs/SatakeParameters/RhoMemOfMkEq.lean",
+          "lo": 250,
+          "hi": 256,
+          "dominated": 6499,
+          "corpus": "project"
+        },
+        {
+          "decl": "GlobalTheory.FunPr.ThetaLocalInputs.howeDualityReal",
+          "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/BernsteinUnitaryProductIrreducible.lean",
+          "lo": 57,
+          "hi": 57,
+          "dominated": 0,
+          "corpus": "project"
+        }
+      ]
+    },
+    {
+      "id": "M1",
+      "title": {
+        "en": "Mathlib · the Chebyshev estimate",
+        "ko": "Mathlib · 체비쇼프 추정"
+      },
+      "field": {
+        "en": "Analytic number theory",
+        "ko": "해석적 정수론"
+      },
+      "gap": {
+        "en": "The paper gives an elementary bound for the Chebyshev function. The corresponding Lean proof invokes a separately proved library estimate.",
+        "ko": "원고에는 체비쇼프 함수의 초등적 상계가 있다. 대응하는 Lean 증명은 라이브러리의 별도 추정을 호출한다."
+      },
+      "next": {
+        "en": "Check the library proof and the comparison of its explicit constant with the bound used for the window.",
+        "ko": "라이브러리 증명과 그 명시적 상수가 창에 필요한 상계로 이행하는 계산을 대조한다."
+      },
+      "lean": [
+        {
+          "decl": "Chebyshev.psi_le",
+          "file": "Mathlib/NumberTheory/Chebyshev.lean",
+          "lo": 445,
+          "hi": 453,
+          "dominated": null,
+          "corpus": "mathlib"
+        }
+      ]
+    },
+    {
+      "id": "M2",
+      "title": {
+        "en": "Mathlib · the real logarithm convention",
+        "ko": "Mathlib · 실수 로그의 규약"
+      },
+      "field": {
+        "en": "Real analysis",
+        "ko": "실해석학"
+      },
+      "gap": {
+        "en": "The formulas for the window use Mathlib’s real logarithm at zero and at negative arguments.",
+        "ko": "창을 위한 공식은 0과 음수에서 Mathlib이 정하는 실수 로그를 사용한다."
+      },
+      "next": {
+        "en": "Check the defining extension and both evaluation lemmas before using the formulas outside positive arguments.",
+        "ko": "양수 범위를 벗어나 공식을 적용하기 전에 정의의 확장과 두 계산 보조정리를 대조한다."
+      },
+      "lean": [
+        {
+          "decl": "Real.log_zero",
+          "file": "Mathlib/Analysis/SpecialFunctions/Log/Basic.lean",
+          "lo": 103,
+          "hi": 104,
+          "dominated": null,
+          "corpus": "mathlib"
+        },
+        {
+          "decl": "Real.log_neg_eq_log",
+          "file": "Mathlib/Analysis/SpecialFunctions/Log/Basic.lean",
+          "lo": 121,
+          "hi": 121,
+          "dominated": null,
+          "corpus": "mathlib"
+        }
+      ]
+    },
+    {
+      "id": "M3",
+      "title": {
+        "en": "Mathlib · ramification over the rationals",
+        "ko": "Mathlib · 유리수체 위의 분기"
+      },
+      "field": {
+        "en": "Algebraic number theory",
+        "ko": "대수적 정수론"
+      },
+      "gap": {
+        "en": "In the base-change comparison the imaginary quadratic boundary case is excluded by a Mathlib theorem on the existence of a ramified prime.",
+        "ko": "기저변환 대조에서 허이차체 경계 사례는 분기 소수의 존재에 관한 Mathlib 정리로 배제된다."
+      },
+      "next": {
+        "en": "Trace the discriminant argument for number fields of degree different from one and its use at the designated base field.",
+        "ko": "차수가 1과 다른 수체에 대한 판별식 논증과 지정한 기저체에서의 적용을 추적한다."
+      },
+      "lean": [
+        {
+          "decl": "NumberField.exists_not_isUnramifiedAt_int",
+          "file": "Mathlib/NumberTheory/NumberField/ExistsRamified.lean",
+          "lo": 41,
+          "hi": 48,
+          "dominated": null,
+          "corpus": "mathlib"
+        }
+      ]
+    },
+    {
+      "id": "M4",
+      "title": {
+        "en": "Mathlib · the goal predicate",
+        "ko": "Mathlib · 목표 술어"
+      },
+      "field": {
+        "en": "Analytic number theory",
+        "ko": "해석적 정수론"
+      },
+      "gap": {
+        "en": "The first exported head uses the Mathlib definition of the Riemann hypothesis, including its exceptional points.",
+        "ko": "첫 공개 선언은 예외점을 포함해 Mathlib이 정의한 리만 가설 술어를 쓴다."
+      },
+      "next": {
+        "en": "Compare the written goal, the exported declaration and the definition after unfolding. This is a statement comparison.",
+        "ko": "원고의 목표, 공개 선언, 전개한 정의를 대조한다. 이 과제는 진술 대조이다."
+      },
+      "lean": [
+        {
+          "decl": "RiemannHypothesis",
+          "file": "Mathlib/NumberTheory/LSeries/RiemannZeta.lean",
+          "lo": 185,
+          "hi": 186,
+          "dominated": null,
+          "corpus": "mathlib"
+        }
+      ]
+    }
+  ]
+}
