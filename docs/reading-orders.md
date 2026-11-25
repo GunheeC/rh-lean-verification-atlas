@@ -2,7 +2,7 @@
 
 AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
 
-Blueprint v13 and papers v3, v4 and v5 are this project’s AI-written, unpublished drafts. None has had human review. Their author is not the author of the Lean development. Blueprint v13, its separate cover, and paper v5 are distributed as assets of release v0.1.0. For v3 and v4 the atlas supplies selected excerpts and notes. [Edition register](../data/editions.json)
+The blueprint and conditional paper are AI-written, unpublished manuscripts prepared under the direction of Gunhee Cho. They have no human review. Levent Alpöge is the author of the Lean development. The repository includes both PDFs. The edition register preserves the earlier sources used in reviews. [Blueprint v13a](../editions/v0.1.0/blueprint_v13a.pdf) · [Conditional paper v6](../editions/v0.1.0/paper_v6.pdf) · [Edition register](../data/editions.json)
 
 Choose an afternoon for the analytic idea, a week for one field, or the last itinerary to follow the conditional theorem from its local estimates to its five conclusions. Counts refer to pages assigned. Starter packets contain the numbered pages of blueprint v13. Standalone notes use the recorded A4 layout. Manuscript assignments identify the edition. A unit's grade and its written coverage are recorded on its card. [Edition register](../data/editions.json) · [A4 layout](../data/round4_changes.json) · [Corrections to the earlier editions](../data/round4_review_corrections.json)
 
@@ -37,4 +37,4 @@ Read the supplier notes before their applications. The ten list-A rows occupy ei
 | 4 | [B09](../notes/units/B09_v4.md), [B08](../notes/units/B08_v4.md), [P017](../notes/units/P017_v4.md) | 4 + 2 + 2 | Average the gap, remove the omitted-frequency error and obtain a one-scale estimate. Lift it to the tail of a single family's window with fixed constants. |
 | 5 | [V4-COND · hypotheses, four proof steps and five conclusions](../notes/units/V4-COND_round3.md) | 7 | Trace V to a bound at the chosen host's rank, and F to division and slope on the same selection. Then follow the shrinking epsilon, the zero-free window criterion and the passage to all five formulations, retaining the principal-pole exception. |
 
-In the revised v5 draft, Theorem 1.1 starts on p. 6, the hypothesis table spans pp. 38–41 and Theorem 3.43 spans pp. 41–42. The corresponding v4 locations are pp. 6, 37–39 and 40. The last assignment counts the standalone conditional note. [V4-COND card](../units/V4-COND.md)
+Paper v6 · [conditional theorem, printed p. 1](../editions/v0.1.0/paper_v6.pdf#page=7) · [hypothesis table, printed pp. 33–34](../editions/v0.1.0/paper_v6.pdf#page=39) · [closing deduction, printed pp. 34–35](../editions/v0.1.0/paper_v6.pdf#page=40). The corresponding v4 locations are pp. 6, 37–39 and 40. The last assignment counts the standalone conditional note. [V4-COND card](../units/V4-COND.md)

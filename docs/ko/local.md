@@ -2,11 +2,11 @@ AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
 
 # 국소 p진 이론
 
-서면 연역은 [V](pillars/V.md)·[F](pillars/F.md), Green의 유한체 지표 명제와 국소 함의 31개 및 v5에 열거한 중간 입력을 가정한다. 이 아틀라스에는 V와 F의 사람이 읽을 수 있는 전체 증명이 없다. Lean 원문은 두 입력을 저장소 안의 항으로 공급한다. 이 자료를 사람이 검토한 적은 없다.
+서면 연역은 [V](pillars/V.md)·[F](pillars/F.md), Green의 유한체 지표 명제와 국소 함의 31개 및 v6에 열거한 중간 입력을 가정한다. 이 아틀라스에는 V와 F의 사람이 읽을 수 있는 전체 증명이 없다. Lean 원문은 두 입력을 저장소 안의 항으로 공급한다. 이 자료를 사람이 검토한 적은 없다.
 
 결정질 표현·관성군·국소 상호법칙은 이 분야의 통상 용어다. 좋은 클래스·행·국소 결손은 이 경로에서 고정된 Lean 식별자나 이 프로젝트 초고의 표현을 가리킨다. 그 뜻은 연결한 정의에서 확인한다. [용어집](../../lookup/glossary.md)
 
-v13 블루프린트와 v3·v4·v5 원고는 이 프로젝트의 AI가 작성한 미출판·미검토 초고이며 Lean 개발 저자의 저작이 아니다. 블루프린트 v13과 별도 표지, 원고 v5는 릴리스 v0.1.0의 첨부 파일로 배포한다. 원고 v3·v4는 인용 대목의 발췌본과 해설을 제공한다. [판본 장부](../../data/editions.json)
+블루프린트와 조건부 논문은 Gunhee Cho의 지도로 AI가 작성한 미출판 원고이며 사람의 검토를 받지 않았다. Lean 개발의 저자는 Levent Alpöge다. 두 PDF는 저장소에 수록했다. 판본 장부에는 과거 검토에서 읽은 판본도 남아 있다. [블루프린트 v13a · 58–64쪽](../../editions/v0.1.0/blueprint_v13a.pdf#page=85) · [조건부 논문 v6](../../editions/v0.1.0/paper_v6.pdf) · [판본 장부](../../data/editions.json)
 
 [영문 안내](../../tracks/local/README.md) · [한국어 첫 화면](README.md) · [시작 읽기 자료](../../notes/local/README.md) · [열린 질문](../../questions/local.md)
 

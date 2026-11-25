@@ -1,0 +1,975 @@
+{
+  "named_destinations": {
+    "decomp:D002": {
+      "name": "theorem.O.3",
+      "pdf_page": 177
+    },
+    "decomp:D004": {
+      "name": "theorem.O.6",
+      "pdf_page": 178
+    },
+    "decomp:D006": {
+      "name": "theorem.O.8",
+      "pdf_page": 178
+    },
+    "decomp:D014": {
+      "name": "theorem.O.16",
+      "pdf_page": 180
+    },
+    "decomp:D024": {
+      "name": "theorem.O.28",
+      "pdf_page": 183
+    },
+    "decomp:D025": {
+      "name": "theorem.O.29",
+      "pdf_page": 183
+    },
+    "decomp:D033": {
+      "name": "theorem.O.37",
+      "pdf_page": 185
+    },
+    "decomp:D044": {
+      "name": "theorem.O.48",
+      "pdf_page": 188
+    },
+    "decomp:D077": {
+      "name": "theorem.O.83",
+      "pdf_page": 196
+    },
+    "decomp:D082": {
+      "name": "theorem.O.89",
+      "pdf_page": 197
+    },
+    "decomp:D097": {
+      "name": "theorem.O.105",
+      "pdf_page": 200
+    },
+    "decomp:D108": {
+      "name": "theorem.O.116",
+      "pdf_page": 203
+    },
+    "decomp:D123": {
+      "name": "theorem.O.133",
+      "pdf_page": 207
+    },
+    "decomp:D128": {
+      "name": "theorem.O.138",
+      "pdf_page": 208
+    },
+    "decomp:D154": {
+      "name": "theorem.O.164",
+      "pdf_page": 213
+    },
+    "decomp:D155": {
+      "name": "theorem.O.165",
+      "pdf_page": 213
+    },
+    "decomp:D174": {
+      "name": "theorem.O.184",
+      "pdf_page": 217
+    },
+    "decomp:D193": {
+      "name": "theorem.O.203",
+      "pdf_page": 220
+    },
+    "decomp:D203": {
+      "name": "theorem.O.213",
+      "pdf_page": 222
+    },
+    "decomp:D230": {
+      "name": "theorem.O.241",
+      "pdf_page": 227
+    },
+    "decomp:D245": {
+      "name": "theorem.O.256",
+      "pdf_page": 230
+    },
+    "decomp:D302": {
+      "name": "theorem.O.313",
+      "pdf_page": 241
+    },
+    "decomp:D309": {
+      "name": "theorem.O.320",
+      "pdf_page": 243
+    },
+    "decomp:D317": {
+      "name": "theorem.O.330",
+      "pdf_page": 245
+    },
+    "decomp:D331": {
+      "name": "theorem.O.344",
+      "pdf_page": 247
+    },
+    "decomp:D340": {
+      "name": "theorem.O.353",
+      "pdf_page": 248
+    },
+    "decomp:D351": {
+      "name": "theorem.O.364",
+      "pdf_page": 251
+    },
+    "decomp:D379": {
+      "name": "theorem.O.392",
+      "pdf_page": 257
+    },
+    "decomp:D394": {
+      "name": "theorem.O.408",
+      "pdf_page": 260
+    },
+    "decomp:D415": {
+      "name": "theorem.O.430",
+      "pdf_page": 265
+    },
+    "decomp:D421": {
+      "name": "theorem.O.437",
+      "pdf_page": 266
+    },
+    "decomp:D427": {
+      "name": "theorem.O.443",
+      "pdf_page": 267
+    },
+    "decomp:D443": {
+      "name": "theorem.O.461",
+      "pdf_page": 270
+    },
+    "decomp:D479": {
+      "name": "theorem.O.499",
+      "pdf_page": 279
+    },
+    "decomp:D481": {
+      "name": "theorem.O.501",
+      "pdf_page": 279
+    },
+    "decomp:D484": {
+      "name": "theorem.O.504",
+      "pdf_page": 280
+    },
+    "decomp:D486": {
+      "name": "theorem.O.506",
+      "pdf_page": 280
+    },
+    "decomp:D506": {
+      "name": "theorem.O.529",
+      "pdf_page": 286
+    },
+    "decomp:D510": {
+      "name": "theorem.O.533",
+      "pdf_page": 287
+    },
+    "decomp:D511": {
+      "name": "theorem.O.534",
+      "pdf_page": 287
+    },
+    "decomp:D513": {
+      "name": "theorem.O.536",
+      "pdf_page": 287
+    },
+    "decomp:D528": {
+      "name": "theorem.O.555",
+      "pdf_page": 292
+    },
+    "decomp:D532": {
+      "name": "theorem.O.560",
+      "pdf_page": 293
+    },
+    "decomp:D536": {
+      "name": "theorem.O.564",
+      "pdf_page": 294
+    },
+    "decomp:D547": {
+      "name": "theorem.O.577",
+      "pdf_page": 297
+    },
+    "decomp:D548": {
+      "name": "theorem.O.579",
+      "pdf_page": 297
+    },
+    "decomp:D549": {
+      "name": "theorem.O.580",
+      "pdf_page": 297
+    },
+    "decomp:D550": {
+      "name": "theorem.O.581",
+      "pdf_page": 298
+    },
+    "decomp:D551": {
+      "name": "theorem.O.582",
+      "pdf_page": 298
+    },
+    "decomp:D558": {
+      "name": "theorem.O.590",
+      "pdf_page": 300
+    },
+    "decomp:D561": {
+      "name": "theorem.O.594",
+      "pdf_page": 301
+    },
+    "decomp:D562": {
+      "name": "theorem.O.595",
+      "pdf_page": 301
+    },
+    "decomp:D563": {
+      "name": "theorem.O.596",
+      "pdf_page": 301
+    },
+    "decomp:D564": {
+      "name": "theorem.O.598",
+      "pdf_page": 302
+    },
+    "decomp:D566": {
+      "name": "theorem.O.600",
+      "pdf_page": 302
+    },
+    "decomp:D567": {
+      "name": "theorem.O.601",
+      "pdf_page": 302
+    },
+    "decomp:D568": {
+      "name": "theorem.O.602",
+      "pdf_page": 303
+    },
+    "decomp:D569": {
+      "name": "theorem.O.605",
+      "pdf_page": 303
+    },
+    "decomp:D570": {
+      "name": "theorem.O.606",
+      "pdf_page": 303
+    },
+    "decomp:D575": {
+      "name": "theorem.O.614",
+      "pdf_page": 306
+    },
+    "pn:P001": {
+      "name": "theorem.C.1",
+      "pdf_page": 78
+    },
+    "pn:P002": {
+      "name": "theorem.C.2",
+      "pdf_page": 79
+    },
+    "pn:P003": {
+      "name": "theorem.C.3",
+      "pdf_page": 79
+    },
+    "pn:P004": {
+      "name": "theorem.C.4",
+      "pdf_page": 79
+    },
+    "pn:P005": {
+      "name": "theorem.C.5",
+      "pdf_page": 79
+    },
+    "pn:P006": {
+      "name": "theorem.C.6",
+      "pdf_page": 79
+    },
+    "pn:P007": {
+      "name": "theorem.C.7",
+      "pdf_page": 80
+    },
+    "pn:P008": {
+      "name": "theorem.C.8",
+      "pdf_page": 80
+    },
+    "pn:P009": {
+      "name": "theorem.C.9",
+      "pdf_page": 80
+    },
+    "pn:P010": {
+      "name": "theorem.C.10",
+      "pdf_page": 80
+    },
+    "pn:P011": {
+      "name": "theorem.C.11",
+      "pdf_page": 80
+    },
+    "pn:P012": {
+      "name": "theorem.C.12",
+      "pdf_page": 81
+    },
+    "pn:P013": {
+      "name": "theorem.C.13",
+      "pdf_page": 81
+    },
+    "pn:P014": {
+      "name": "theorem.C.14",
+      "pdf_page": 82
+    },
+    "pn:P015": {
+      "name": "theorem.C.15",
+      "pdf_page": 82
+    },
+    "pn:P016": {
+      "name": "theorem.C.16",
+      "pdf_page": 83
+    },
+    "pn:P017": {
+      "name": "theorem.C.17",
+      "pdf_page": 83
+    },
+    "pn:P018": {
+      "name": "theorem.C.34",
+      "pdf_page": 91
+    },
+    "pn:P019": {
+      "name": "theorem.C.35",
+      "pdf_page": 92
+    },
+    "pn:P020": {
+      "name": "theorem.C.36",
+      "pdf_page": 92
+    },
+    "pn:P021": {
+      "name": "theorem.C.40",
+      "pdf_page": 94
+    },
+    "pn:P022": {
+      "name": "theorem.C.23",
+      "pdf_page": 85
+    },
+    "pn:P023": {
+      "name": "theorem.C.33",
+      "pdf_page": 91
+    },
+    "pn:P024": {
+      "name": "theorem.D.1",
+      "pdf_page": 96
+    },
+    "pn:P025": {
+      "name": "theorem.D.2",
+      "pdf_page": 96
+    },
+    "pn:P026": {
+      "name": "theorem.D.3",
+      "pdf_page": 97
+    },
+    "pn:P027": {
+      "name": "theorem.D.4",
+      "pdf_page": 98
+    },
+    "pn:P028": {
+      "name": "theorem.D.5",
+      "pdf_page": 99
+    },
+    "pn:P029": {
+      "name": "theorem.D.6",
+      "pdf_page": 99
+    },
+    "pn:P030": {
+      "name": "theorem.D.7",
+      "pdf_page": 100
+    },
+    "pn:P031": {
+      "name": "theorem.D.8",
+      "pdf_page": 100
+    },
+    "pn:P032": {
+      "name": "theorem.D.9",
+      "pdf_page": 101
+    },
+    "pn:P033": {
+      "name": "theorem.D.10",
+      "pdf_page": 102
+    },
+    "pn:P034": {
+      "name": "theorem.D.11",
+      "pdf_page": 102
+    },
+    "pn:P035": {
+      "name": "theorem.D.12",
+      "pdf_page": 103
+    },
+    "pn:P036": {
+      "name": "theorem.D.13",
+      "pdf_page": 104
+    },
+    "pn:P037": {
+      "name": "theorem.D.14",
+      "pdf_page": 105
+    },
+    "pn:P038": {
+      "name": "theorem.D.15",
+      "pdf_page": 105
+    },
+    "pn:P039": {
+      "name": "theorem.D.16",
+      "pdf_page": 106
+    },
+    "pn:P040": {
+      "name": "theorem.D.17",
+      "pdf_page": 106
+    },
+    "pn:P041": {
+      "name": "theorem.D.18",
+      "pdf_page": 107
+    },
+    "pn:P042": {
+      "name": "theorem.D.19",
+      "pdf_page": 108
+    },
+    "pn:P043": {
+      "name": "theorem.D.20",
+      "pdf_page": 109
+    },
+    "pn:P044": {
+      "name": "theorem.D.21",
+      "pdf_page": 110
+    },
+    "pn:P045": {
+      "name": "theorem.D.22",
+      "pdf_page": 111
+    },
+    "pn:P046": {
+      "name": "theorem.D.23",
+      "pdf_page": 111
+    },
+    "pn:P047": {
+      "name": "theorem.D.24",
+      "pdf_page": 112
+    },
+    "pn:P048": {
+      "name": "theorem.D.25",
+      "pdf_page": 112
+    },
+    "pn:P049": {
+      "name": "theorem.D.26",
+      "pdf_page": 113
+    },
+    "pn:P050": {
+      "name": "theorem.D.27",
+      "pdf_page": 114
+    },
+    "pn:P090": {
+      "name": "theorem.G.9",
+      "pdf_page": 133
+    },
+    "pn:P096": {
+      "name": "theorem.H.6",
+      "pdf_page": 136
+    },
+    "pn:P134": {
+      "name": "theorem.J.14",
+      "pdf_page": 147
+    },
+    "r23:budget": {
+      "name": "theorem.3.10",
+      "pdf_page": 22
+    },
+    "r23:host": {
+      "name": "subsection.3.3",
+      "pdf_page": 27
+    },
+    "r23:link": {
+      "name": "subsection.3.2",
+      "pdf_page": 22
+    },
+    "r23:p017": {
+      "name": "subsection.3.1",
+      "pdf_page": 11
+    },
+    "r24:balance": {
+      "name": "theorem.3.2",
+      "pdf_page": 12
+    },
+    "r24:conclusion": {
+      "name": "theorem.3.43",
+      "pdf_page": 40
+    },
+    "r24:d550": {
+      "name": "theorem.3.4",
+      "pdf_page": 14
+    },
+    "r24:d567": {
+      "name": "theorem.3.5",
+      "pdf_page": 14
+    },
+    "r24:hostfacts": {
+      "name": "theorem.3.7",
+      "pdf_page": 16
+    },
+    "r24:intro": {
+      "name": "theorem.1.1",
+      "pdf_page": 7
+    },
+    "r24:regular": {
+      "name": "theorem.3.6",
+      "pdf_page": 15
+    },
+    "r24:thick": {
+      "name": "theorem.3.9",
+      "pdf_page": 18
+    },
+    "rem:E-landau-compare": {
+      "name": "theorem.C.29",
+      "pdf_page": 89
+    },
+    "sec:r23-p012": {
+      "name": "subsection.3.5",
+      "pdf_page": 37
+    },
+    "sec:r23-selmer": {
+      "name": "subsection.3.4",
+      "pdf_page": 33
+    },
+    "sub:B01": {
+      "name": "theorem.B.1",
+      "pdf_page": 59
+    },
+    "sub:B02": {
+      "name": "theorem.B.2",
+      "pdf_page": 60
+    },
+    "sub:B03": {
+      "name": "theorem.B.3",
+      "pdf_page": 60
+    },
+    "sub:B04": {
+      "name": "theorem.B.4",
+      "pdf_page": 60
+    },
+    "sub:B05": {
+      "name": "theorem.B.5",
+      "pdf_page": 61
+    },
+    "sub:B06": {
+      "name": "theorem.B.6",
+      "pdf_page": 61
+    },
+    "sub:B07": {
+      "name": "theorem.B.7",
+      "pdf_page": 62
+    },
+    "sub:B08": {
+      "name": "theorem.B.8",
+      "pdf_page": 62
+    },
+    "sub:B09": {
+      "name": "theorem.B.9",
+      "pdf_page": 63
+    },
+    "sub:B10": {
+      "name": "theorem.B.10",
+      "pdf_page": 63
+    },
+    "sub:T01": {
+      "name": "theorem.B.11",
+      "pdf_page": 64
+    },
+    "sub:T02": {
+      "name": "theorem.B.12",
+      "pdf_page": 64
+    },
+    "sub:T03": {
+      "name": "theorem.B.13",
+      "pdf_page": 64
+    },
+    "sub:T04": {
+      "name": "theorem.B.14",
+      "pdf_page": 65
+    },
+    "sub:T05": {
+      "name": "theorem.B.15",
+      "pdf_page": 65
+    },
+    "sub:T06": {
+      "name": "theorem.B.16",
+      "pdf_page": 65
+    },
+    "sub:T07": {
+      "name": "theorem.B.17",
+      "pdf_page": 65
+    },
+    "sub:T08": {
+      "name": "theorem.B.18",
+      "pdf_page": 66
+    },
+    "sub:T09": {
+      "name": "theorem.B.19",
+      "pdf_page": 66
+    },
+    "sub:T10": {
+      "name": "theorem.B.20",
+      "pdf_page": 66
+    },
+    "sub:T11": {
+      "name": "theorem.B.21",
+      "pdf_page": 66
+    },
+    "sub:T12": {
+      "name": "theorem.B.22",
+      "pdf_page": 67
+    },
+    "sub:T13": {
+      "name": "theorem.B.23",
+      "pdf_page": 68
+    },
+    "sub:T14": {
+      "name": "theorem.B.24",
+      "pdf_page": 68
+    },
+    "sub:T15": {
+      "name": "theorem.B.25",
+      "pdf_page": 68
+    },
+    "sub:T16": {
+      "name": "theorem.B.26",
+      "pdf_page": 68
+    },
+    "sub:T17": {
+      "name": "theorem.B.27",
+      "pdf_page": 69
+    },
+    "sub:T18": {
+      "name": "theorem.B.28",
+      "pdf_page": 69
+    },
+    "sub:T19": {
+      "name": "theorem.B.29",
+      "pdf_page": 70
+    },
+    "sub:T20": {
+      "name": "theorem.B.30",
+      "pdf_page": 70
+    },
+    "sub:T21": {
+      "name": "theorem.B.31",
+      "pdf_page": 71
+    },
+    "sub:T22": {
+      "name": "theorem.B.32",
+      "pdf_page": 71
+    },
+    "sub:T23": {
+      "name": "theorem.B.33",
+      "pdf_page": 71
+    },
+    "sub:T24": {
+      "name": "theorem.B.34",
+      "pdf_page": 72
+    },
+    "sub:T25": {
+      "name": "theorem.B.35",
+      "pdf_page": 72
+    },
+    "sub:T26": {
+      "name": "theorem.B.36",
+      "pdf_page": 72
+    },
+    "sub:W01": {
+      "name": "theorem.B.37",
+      "pdf_page": 73
+    },
+    "sub:W02": {
+      "name": "theorem.B.38",
+      "pdf_page": 73
+    },
+    "sub:W03": {
+      "name": "theorem.B.39",
+      "pdf_page": 74
+    },
+    "sub:W04": {
+      "name": "theorem.B.40",
+      "pdf_page": 74
+    },
+    "sub:W05": {
+      "name": "theorem.B.41",
+      "pdf_page": 74
+    },
+    "sub:W06": {
+      "name": "theorem.B.42",
+      "pdf_page": 74
+    },
+    "sub:W07": {
+      "name": "theorem.B.43",
+      "pdf_page": 75
+    },
+    "sub:W08": {
+      "name": "theorem.B.44",
+      "pdf_page": 75
+    },
+    "sub:W09": {
+      "name": "theorem.B.45",
+      "pdf_page": 76
+    },
+    "sub:W10": {
+      "name": "theorem.B.46",
+      "pdf_page": 76
+    },
+    "sub:W11": {
+      "name": "theorem.B.47",
+      "pdf_page": 76
+    },
+    "sub:W12": {
+      "name": "theorem.B.48",
+      "pdf_page": 77
+    },
+    "sub:W13": {
+      "name": "theorem.B.49",
+      "pdf_page": 77
+    },
+    "sub:W14": {
+      "name": "theorem.B.50",
+      "pdf_page": 77
+    },
+    "sub:W15": {
+      "name": "theorem.B.51",
+      "pdf_page": 78
+    },
+    "sub:W16": {
+      "name": "theorem.B.52",
+      "pdf_page": 78
+    },
+    "tab:r24-hypotheses": {
+      "name": "table.1",
+      "pdf_page": 39
+    },
+    "v5:balance-end": {
+      "name": "section*.18",
+      "pdf_page": 13
+    },
+    "v5:chars-end": {
+      "name": "section*.32",
+      "pdf_page": 20
+    },
+    "v5:chars-start": {
+      "name": "section*.29",
+      "pdf_page": 19
+    },
+    "v5:conclusion-end": {
+      "name": "section*.39",
+      "pdf_page": 41
+    },
+    "v5:d547-end": {
+      "name": "section*.30",
+      "pdf_page": 20
+    },
+    "v5:d548-end": {
+      "name": "section*.31",
+      "pdf_page": 20
+    },
+    "v5:d550-end": {
+      "name": "section*.21",
+      "pdf_page": 14
+    },
+    "v5:d567-end": {
+      "name": "section*.22",
+      "pdf_page": 15
+    },
+    "v5:hostfacts-end": {
+      "name": "section*.25",
+      "pdf_page": 17
+    },
+    "v5:regular-end": {
+      "name": "section*.24",
+      "pdf_page": 16
+    },
+    "v5:table-end": {
+      "name": "section*.38",
+      "pdf_page": 40
+    },
+    "v5:thick-end": {
+      "name": "section*.27",
+      "pdf_page": 18
+    }
+  },
+  "source_pdf_sha256": "a68f5e2e07f47238a9986e71eeebd0fb1101e72f4ba5fef6a80ec8c392deccda",
+  "latex_aux_sha256": "ed75760ccdf5ee3528997ade3dc8ca1ba9691abf49452d185e54522571f48118",
+  "method": "Extract decimal printed folios from the named LaTeX labels in the final AUX. Each fourth AUX field is resolved through the PDF destination name tree to its actual indirect page object. The physical page, printed folio and PDF page label must agree. A section-start link identifies its first page only.",
+  "first_arabic_folio_pdf_page": 7,
+  "printed_pages": {
+    "decomp:D002": 171,
+    "decomp:D004": 172,
+    "decomp:D006": 172,
+    "decomp:D014": 174,
+    "decomp:D024": 177,
+    "decomp:D025": 177,
+    "decomp:D033": 179,
+    "decomp:D044": 182,
+    "decomp:D077": 190,
+    "decomp:D082": 191,
+    "decomp:D097": 194,
+    "decomp:D108": 197,
+    "decomp:D123": 201,
+    "decomp:D128": 202,
+    "decomp:D154": 207,
+    "decomp:D155": 207,
+    "decomp:D174": 211,
+    "decomp:D193": 214,
+    "decomp:D203": 216,
+    "decomp:D230": 221,
+    "decomp:D245": 224,
+    "decomp:D302": 235,
+    "decomp:D309": 237,
+    "decomp:D317": 239,
+    "decomp:D331": 241,
+    "decomp:D340": 242,
+    "decomp:D351": 245,
+    "decomp:D379": 251,
+    "decomp:D394": 254,
+    "decomp:D415": 259,
+    "decomp:D421": 260,
+    "decomp:D427": 261,
+    "decomp:D443": 264,
+    "decomp:D479": 273,
+    "decomp:D481": 273,
+    "decomp:D484": 274,
+    "decomp:D486": 274,
+    "decomp:D506": 280,
+    "decomp:D510": 281,
+    "decomp:D511": 281,
+    "decomp:D513": 281,
+    "decomp:D528": 286,
+    "decomp:D532": 287,
+    "decomp:D536": 288,
+    "decomp:D547": 291,
+    "decomp:D548": 291,
+    "decomp:D549": 291,
+    "decomp:D550": 292,
+    "decomp:D551": 292,
+    "decomp:D558": 294,
+    "decomp:D561": 295,
+    "decomp:D562": 295,
+    "decomp:D563": 295,
+    "decomp:D564": 296,
+    "decomp:D566": 296,
+    "decomp:D567": 296,
+    "decomp:D568": 297,
+    "decomp:D569": 297,
+    "decomp:D570": 297,
+    "decomp:D575": 300,
+    "pn:P001": 72,
+    "pn:P002": 73,
+    "pn:P003": 73,
+    "pn:P004": 73,
+    "pn:P005": 73,
+    "pn:P006": 73,
+    "pn:P007": 74,
+    "pn:P008": 74,
+    "pn:P009": 74,
+    "pn:P010": 74,
+    "pn:P011": 74,
+    "pn:P012": 75,
+    "pn:P013": 75,
+    "pn:P014": 76,
+    "pn:P015": 76,
+    "pn:P016": 77,
+    "pn:P017": 77,
+    "pn:P018": 85,
+    "pn:P019": 86,
+    "pn:P020": 86,
+    "pn:P021": 88,
+    "pn:P022": 79,
+    "pn:P023": 85,
+    "pn:P024": 90,
+    "pn:P025": 90,
+    "pn:P026": 91,
+    "pn:P027": 92,
+    "pn:P028": 93,
+    "pn:P029": 93,
+    "pn:P030": 94,
+    "pn:P031": 94,
+    "pn:P032": 95,
+    "pn:P033": 96,
+    "pn:P034": 96,
+    "pn:P035": 97,
+    "pn:P036": 98,
+    "pn:P037": 99,
+    "pn:P038": 99,
+    "pn:P039": 100,
+    "pn:P040": 100,
+    "pn:P041": 101,
+    "pn:P042": 102,
+    "pn:P043": 103,
+    "pn:P044": 104,
+    "pn:P045": 105,
+    "pn:P046": 105,
+    "pn:P047": 106,
+    "pn:P048": 106,
+    "pn:P049": 107,
+    "pn:P050": 108,
+    "pn:P090": 127,
+    "pn:P096": 130,
+    "pn:P134": 141,
+    "r23:budget": 16,
+    "r23:host": 21,
+    "r23:link": 16,
+    "r23:p017": 5,
+    "r24:balance": 6,
+    "r24:conclusion": 34,
+    "r24:d550": 8,
+    "r24:d567": 8,
+    "r24:hostfacts": 10,
+    "r24:intro": 1,
+    "r24:regular": 9,
+    "r24:thick": 12,
+    "rem:E-landau-compare": 83,
+    "sec:r23-p012": 31,
+    "sec:r23-selmer": 27,
+    "sub:B01": 53,
+    "sub:B02": 54,
+    "sub:B03": 54,
+    "sub:B04": 54,
+    "sub:B05": 55,
+    "sub:B06": 55,
+    "sub:B07": 56,
+    "sub:B08": 56,
+    "sub:B09": 57,
+    "sub:B10": 57,
+    "sub:T01": 58,
+    "sub:T02": 58,
+    "sub:T03": 58,
+    "sub:T04": 59,
+    "sub:T05": 59,
+    "sub:T06": 59,
+    "sub:T07": 59,
+    "sub:T08": 60,
+    "sub:T09": 60,
+    "sub:T10": 60,
+    "sub:T11": 60,
+    "sub:T12": 61,
+    "sub:T13": 62,
+    "sub:T14": 62,
+    "sub:T15": 62,
+    "sub:T16": 62,
+    "sub:T17": 63,
+    "sub:T18": 63,
+    "sub:T19": 64,
+    "sub:T20": 64,
+    "sub:T21": 65,
+    "sub:T22": 65,
+    "sub:T23": 65,
+    "sub:T24": 66,
+    "sub:T25": 66,
+    "sub:T26": 66,
+    "sub:W01": 67,
+    "sub:W02": 67,
+    "sub:W03": 68,
+    "sub:W04": 68,
+    "sub:W05": 68,
+    "sub:W06": 68,
+    "sub:W07": 69,
+    "sub:W08": 69,
+    "sub:W09": 70,
+    "sub:W10": 70,
+    "sub:W11": 70,
+    "sub:W12": 71,
+    "sub:W13": 71,
+    "sub:W14": 71,
+    "sub:W15": 72,
+    "sub:W16": 72,
+    "tab:r24-hypotheses": 33,
+    "v5:balance-end": 7,
+    "v5:chars-end": 14,
+    "v5:chars-start": 13,
+    "v5:conclusion-end": 35,
+    "v5:d547-end": 14,
+    "v5:d548-end": 14,
+    "v5:d550-end": 8,
+    "v5:d567-end": 9,
+    "v5:hostfacts-end": 11,
+    "v5:regular-end": 10,
+    "v5:table-end": 34,
+    "v5:thick-end": 12
+  }
+}

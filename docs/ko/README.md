@@ -2,11 +2,15 @@
 
 AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
 
-Levent Alpöge의 Lean 개발은 제타 함수의 리만 가설과 제타 함수 또는 디리클레 L함수의 영점에 관한 네 가지 추가 진술을 선언한다. 제3자의 감사 기록은 Lean 커널의 승인을 보고하며, 이 프로젝트는 그 실행을 재현하지 않았다. 아틀라스의 수학적 자료를 읽고 확인한 사람은 없다. 서면 유도는 V, F, Green의 유한체 지표 명제와 국소 함의 31개와 v5에 보충한 입력들을 가정하며, V와 F는 아틀라스에 사람이 읽을 수 있는 전체 유도가 없지만 Lean 원문은 둘 다 저장소 안의 항으로 공급한다. [MainConclusion.lean:10–11](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean#L10-L11) · [RowSrc.lean:6–6](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/RowSrc.lean#L6-L6) · [EveryCharacterOfLiteratureOfVWin.lean:810–813](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean#L810-L813)
+Levent Alpöge의 Lean 개발은 제타 함수의 리만 가설과 제타 함수 또는 디리클레 L함수의 영점에 관한 네 가지 추가 진술을 선언한다. 제3자의 감사 기록은 Lean 커널의 승인을 보고하며, 이 프로젝트는 그 실행을 재현하지 않았다. 아틀라스의 수학적 자료를 읽고 확인한 사람은 없다. 서면 유도는 V, F, Green의 유한체 지표 명제와 국소 함의 31개와 v6에 열거한 보충 입력들을 가정하며, V와 F는 아틀라스에 사람이 읽을 수 있는 전체 유도가 없지만 Lean 원문은 둘 다 저장소 안의 항으로 공급한다. [MainConclusion.lean:10–11](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean#L10-L11) · [RowSrc.lean:6–6](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/RowSrc.lean#L6-L6) · [EveryCharacterOfLiteratureOfVWin.lean:810–813](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean#L810-L813)
 
 이 자료는 AI가 작성하고 AI가 교차검토했다. 사람의 확인은 없으며 리만 가설이 증명됐다는 주장을 하지 않는다. [외부 검사](../../sources/kernel-audit.md) · [검증 현황](STATUS.md) · [English](../../README.md)
 
-블루프린트 v13과 원고 v3·v4·v5는 이 프로젝트의 AI가 쓴 미출판 초고다. Lean 개발의 저자가 쓴 글이 아니며, 어느 판본도 사람의 검토를 받지 않았다. 블루프린트 v13과 별도 표지, 원고 v5는 릴리스 v0.1.0의 첨부 파일로 배포한다. 원고 v3·v4는 인용 대목의 발췌본과 해설을 제공한다. [판본과 지문](../../data/editions.json)
+## 문서 읽기
+
+[블루프린트 v13a](../../editions/v0.1.0/blueprint_v13a.pdf) · [조건부 논문 v6](../../editions/v0.1.0/paper_v6.pdf)
+
+블루프린트와 조건부 논문은 Gunhee Cho의 지도로 AI가 작성한 미출판 원고이며 사람의 검토를 받지 않았다. Lean 개발의 저자는 Levent Alpöge다. 두 PDF는 저장소에 수록했다. 판본 장부에는 과거 검토에서 읽은 판본도 남아 있다. [판본과 지문](../../data/editions.json)
 
 Levent Alpöge의 Lean 개발에서 관심 있는 명제를 하나 고를 수 있다. 한 명제나 밀접한 명제들을 모은 읽기 항목을 ‘단위’라고 한다. 각 단위에서 가정과 Lean 선언을 확인한다. 서면 논증이 있는 경우 해당 판본도 연결된다. 검토 기록은 어느 글의 어느 주장까지 살폈는지 명시한다. 외부 커널 검사는 컴파일한 Lean 개발에 관한 기록이다. [진척](../../PROGRESS.md) · [읽기 대기열](../../ROADMAP.md) · [기여자](../../AUTHORS.md)
 
@@ -57,7 +61,7 @@ Full은 명시된 가정에서 논증을 끝까지 썼다는 뜻이다. Outlined
 
 ## 인용
 
-*RH Lean Verification Atlas (AI-drafted; maintained by Gunhee Cho)* (2026), v0.1.0(2026년 11월 25일), 그 판의 정확한 아틀라스 커밋, 단위 ID, Lean 선언 이름을 함께 적는다. 특정 해설을 사용했다면 판과 쪽수도 기록한다. [인용 메타데이터](../../CITATION.cff) · [판본 지문](../../data/editions.json) · [릴리스 안내](../../RELEASE_NOTES_v0.1.0.md)
+Gunhee Cho (maintainer), *RH Lean Verification Atlas*, v0.1.0, 2026년 11월 25일. AI-drafted; maintained by Gunhee Cho. 정확한 아틀라스 커밋, 단위 ID, Lean 선언 이름을 함께 적는다. 특정 해설을 사용했다면 판과 쪽수도 기록한다. 릴리스 공개 후 Zenodo가 DOI를 발급하면 여기에 표시한다. [인용 메타데이터](../../CITATION.cff) · [판본 지문](../../data/editions.json) · [릴리스 안내](../../RELEASE_NOTES_v0.1.0.md)
 
 ## 검토 기여
 

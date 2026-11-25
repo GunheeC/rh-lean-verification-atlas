@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Build a local HTML edition of the atlas. Uses only the Python standard library."""
 from atlas_files import unit_files
+from edition_links import blueprint_page
 import argparse
 from collections import defaultdict
 import hashlib
@@ -180,8 +181,23 @@ TABLE_CELL = re.compile(r'(`[^`]*`|\$[^$]*\$|\\\||[^|`$\\]+|\\.|[`$])+')
 
 
 class Edition:
-    def __init__(self, root):
+    def __init__(self, root, output=None):
         self.root = root.resolve()
+        # In the checkout, link to the sole repository copy. A site written to any other directory
+        # keeps its own PDFs so it can be moved as a unit.
+        self.in_checkout = (output or self.root / "site").resolve() == self.root / "site"
+        editions = json.loads((self.root / "data/editions.json").read_bytes())["editions"]
+        blueprint = editions["blueprint_v13a"]
+        starters = json.loads((self.root / "data/notes_starters.json").read_bytes())["starters"]
+        self.packet_pages = {}
+        for packet in starters.values():
+            src = Path(packet["path"])
+            for folio, physical in zip(packet["printed_pages"], packet["pdf_pages"], strict=True):
+                page = blueprint_page(blueprint, physical)
+                self.packet_pages[src, f"pages/{folio}.webp"] = (
+                    f"../../{blueprint['repository_file']}#page={page}",
+                    f"Open printed page {folio} in blueprint v13a",
+                )
         self.pages = {}
         self.assets = {}
         self.directories = set()
@@ -209,6 +225,8 @@ class Edition:
                 self.directories.add(local)
         elif local in self.pages:
             dest = self.pages[local]
+        elif target.is_file() and self.in_checkout and local.parts[:1] == ("editions",):
+            dest = Path("..") / local
         elif target.is_file():
             # Verbatim archived Markdown is a text download, distinct from the new reading pages.
             dest = local.with_suffix(".md.txt") if local.suffix == ".md" else local
@@ -229,7 +247,13 @@ class Edition:
             if m.group('href'):
                 href=escape(self.href(src,m['href']),quote=True)
                 if m['image']:
-                    result.append(f'<img src="{href}" alt="{escape(m["label"],quote=True)}" loading="lazy">')
+                    img = f'<img src="{href}" alt="{escape(m["label"],quote=True)}" loading="lazy">'
+                    packet = self.packet_pages.get((src, m["href"]))
+                    if packet:
+                        pdf, label = packet
+                        dest = escape(self.href(src, pdf), quote=True)
+                        img = f'<a href="{dest}" aria-label="{label}">{img}</a>'
+                    result.append(img)
                 else:
                     result.append(f'<a href="{href}">{self.inline(src,m["label"])}</a>')
             elif m.group('code'):
@@ -403,7 +427,7 @@ def main():
     output=(args.output or root/'site').resolve()
     if output==root or output in root.parents:
         parser.error('Choose an output directory distinct from the source root and its parents.')
-    files=Edition(root).build()
+    files=Edition(root, output).build()
     # Only retire files that an earlier run created and whose bytes still match that run.
     manifest_path=output/'build-manifest.json'
     manifest={str(path): hashlib.sha256(data).hexdigest() for path,data in sorted(files.items())}

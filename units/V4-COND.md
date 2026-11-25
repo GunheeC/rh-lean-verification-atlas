@@ -32,11 +32,14 @@ Sources for the assumptions · [From the Selmer window to Dirichlet zero-free st
 
 ## Where to read
 
-Blueprint v13 and papers v3–v5 are this atlas project’s own AI-written, unpublished drafts. They have no human review and were not written by the author of the Lean development. Blueprint v13, its separate cover, and paper v5 are distributed as assets of release v0.1.0. For v3 and v4 the atlas supplies selected excerpts and notes. [Edition register](../data/editions.json)
+The blueprint and conditional paper are AI-written, unpublished manuscripts prepared under the direction of Gunhee Cho. They have no human review. Levent Alpöge is the author of the Lean development. [Blueprint v13a](../editions/v0.1.0/blueprint_v13a.pdf) · [Conditional paper v6](../editions/v0.1.0/paper_v6.pdf) · [Edition register](../data/editions.json)
 
-- [From the Selmer window to Dirichlet zero-free statements, v5](https://github.com/GunheeC/rh-lean-verification-atlas/releases/download/v0.1.0/paper_v5.pdf#page=6), Theorem 1.1 · conditional statement, p. 6. Revised paper v5 exposition, pending independent review. The PDF link opens the release attachment after publication.
-- [From the Selmer window to Dirichlet zero-free statements, v5](https://github.com/GunheeC/rh-lean-verification-atlas/releases/download/v0.1.0/paper_v5.pdf#page=38), Table 1 · global, local and supplementary inputs, pp. 38–41. Revised paper v5 exposition, pending independent review. The PDF link opens the release attachment after publication.
-- [From the Selmer window to Dirichlet zero-free statements, v5](https://github.com/GunheeC/rh-lean-verification-atlas/releases/download/v0.1.0/paper_v5.pdf#page=41), Theorem 3.43 · conditional deduction, pp. 41–42. Revised paper v5 exposition, pending independent review. The PDF link opens the release attachment after publication.
+- Paper v6 · [Theorem 1.1 · conditional statement](../editions/v0.1.0/paper_v6.pdf#page=7), printed p. 1
+- Paper v6 · [Table 1 · global, local and supplementary inputs](../editions/v0.1.0/paper_v6.pdf#page=39), printed pp. 33–34
+- Paper v6 · [Theorem 3.43 · conditional deduction](../editions/v0.1.0/paper_v6.pdf#page=40), printed pp. 34–35
+- [From the Selmer window to Dirichlet zero-free statements, v5](../data/editions.json), Theorem 1.1 · conditional statement, p. 6. Revised paper v5 exposition, pending independent review.
+- [From the Selmer window to Dirichlet zero-free statements, v5](../data/editions.json), Table 1 · global, local and supplementary inputs, pp. 38–41. Revised paper v5 exposition, pending independent review.
+- [From the Selmer window to Dirichlet zero-free statements, v5](../data/editions.json), Theorem 3.43 · conditional deduction, pp. 41–42. Revised paper v5 exposition, pending independent review.
 - [From a common Selmer window and a definite-side witness to five zero statements](../notes/units/V4-COND_round3.md), pp. 1–7 in the atlas print layout. Round-3 written exposition, pending independent review.
 - [From the Selmer window to Dirichlet zero-free statements, v4](../data/editions.json), Theorem 1.1 (r24:intro), p. 6
 - [From the Selmer window to Dirichlet zero-free statements, v4](../data/editions.json), Table 1 and Theorem 3.43 (r24:conclusion), pp. 37–40
@@ -101,4 +104,4 @@ Arrows may connect either a unit’s main declaration or an indexed member.
 
 Lookup aliases · `Theorem 1.1 (v4)`, `Theorem 3.43 (v4)`, `V + F + Green and lists A–C`
 
-<!-- Unit metadata SHA-256 1e5a6078adc4865d1de26bd12c58b0e9e3ce820a7e4bf0d505bd6ec55a966cd3 -->
+<!-- Unit metadata SHA-256 df5db871495344e7577deac719bacaa134917f795da946395182fc16867e9f8f -->

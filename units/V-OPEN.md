@@ -30,7 +30,7 @@ Sources for the assumptions · [Lean source mirror](../sources/README.md)
 
 ## Where to read
 
-Blueprint v13 and papers v3–v5 are this atlas project’s own AI-written, unpublished drafts. They have no human review and were not written by the author of the Lean development. Blueprint v13, its separate cover, and paper v5 are distributed as assets of release v0.1.0. For v3 and v4 the atlas supplies selected excerpts and notes. [Edition register](../data/editions.json)
+The blueprint and conditional paper are AI-written, unpublished manuscripts prepared under the direction of Gunhee Cho. They have no human review. Levent Alpöge is the author of the Lean development. [Blueprint v13a](../editions/v0.1.0/blueprint_v13a.pdf) · [Conditional paper v6](../editions/v0.1.0/paper_v6.pdf) · [Edition register](../data/editions.json)
 
 - [V-OPEN · Which Galois row the open-image record contains](../notes/units/V-OPEN_round4.md), pp. 1–3 in the atlas print layout. Round-4 outline under the named inputs; pending_review.
 

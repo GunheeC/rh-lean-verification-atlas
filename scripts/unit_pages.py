@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Build the English unit pages, or compare them with their sources using --check."""
 from atlas_files import unit_files
+from edition_links import blueprint_page
 import argparse
 from collections import defaultdict
 import hashlib
@@ -172,8 +173,18 @@ class Atlas:
         if uid in self.starters:
             s=self.starters[uid]
             lines.append(f"- {link('Graduate reading packet · '+s['title'],'../'+s['path'])}")
+        paper = self.editions["paper2_v6"]
+        blueprint = self.editions["blueprint_v13a"]
+        for entry in paper["unit_locators"].get(uid, []):
+            physical = entry["pdf_pages"][0]
+            ref = link(entry["section"], "../" + paper["repository_file"] + f"#page={physical}")
+            lines.append("- Paper v6 · " + ref + ", printed " + pageref(entry["printed_pages"]))
         for e in u["expositions"]:
             doc=e["document"]
+            if doc == "blueprint_v13":
+                physical = blueprint_page(blueprint, e["pages"][0])
+                ref = link("Blueprint v13a", "../" + blueprint["repository_file"] + f"#page={physical}")
+                lines.append(f"- {ref}, printed p. {e['printed_page']}, section label `{e['section']}`.")
             if doc in self.editions:
                 loc=e["section"]
                 if doc=="blueprint_v13":
@@ -181,10 +192,7 @@ class Atlas:
                 else:
                     loc=re.sub(r"\s*\(pn:[^)]+\)", "", loc)
                 label=self.editions[doc]["title"]
-                target = self.editions[doc].get("release_asset")
-                if target and e["pages"]:
-                    target += "#page=" + str(e["pages"][0])
-                text=link(label, target or "../data/editions.json")+f", {loc}"
+                text=link(label, "../data/editions.json")+f", {loc}"
                 if e["pages"]:
                     text+=", "+("PDF " if doc=="blueprint_v13" else "")+pageref(e["pages"])
                 if e.get("printed_page"):
@@ -323,7 +331,7 @@ class Atlas:
         if u.get("review_status") == "pending_review" and u["grade"] != "L4":
             out += ["", "**New exposition · pending_review.** This edition has no independent review of the new argument. Earlier verdicts below retain their stated scopes."]
         out += ["", "## Where to read", "",
-                "Blueprint v13 and papers v3–v5 are this atlas project’s own AI-written, unpublished drafts. They have no human review and were not written by the author of the Lean development. Blueprint v13, its separate cover, and paper v5 are distributed as assets of release v0.1.0. For v3 and v4 the atlas supplies selected excerpts and notes. [Edition register](../data/editions.json)", "",
+                "The blueprint and conditional paper are AI-written, unpublished manuscripts prepared under the direction of Gunhee Cho. They have no human review. Levent Alpöge is the author of the Lean development. [Blueprint v13a](../editions/v0.1.0/blueprint_v13a.pdf) · [Conditional paper v6](../editions/v0.1.0/paper_v6.pdf) · [Edition register](../data/editions.json)", "",
                 *self.readings(u)]
         if self.external[uid]:
             out+=["","### Other expositions and comparisons",""]

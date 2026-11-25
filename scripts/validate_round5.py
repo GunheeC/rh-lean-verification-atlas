@@ -44,7 +44,6 @@ def check(root, units, asset_dir=None):
                 errors.append(f'{uid}: invalid v5 page extent')
     if paper['review_status'] != 'pending_review' or paper['lean_commit'] != read('data/pins.json')['source_commit']:
         errors.append('Incorrect v5 review status or Lean source')
-    text = (root / 'RELEASE_NOTES_v0.1.0.md').read_text()
     assets = release['attachments']
     expected_assets = {'paper_v5.pdf': 'paper2_v5', 'blueprint_v13.pdf': 'blueprint_v13',
                        'blueprint_v13_cover.pdf': 'blueprint_v13_cover'}
@@ -53,8 +52,7 @@ def check(root, units, asset_dir=None):
     for filename, key in expected_assets.items():
         edition = catalog[key]
         digest = edition['sha256']
-        if (assets.get(filename) != digest or not re.fullmatch('[0-9a-f]{64}', digest)
-                or digest not in text):
+        if assets.get(filename) != digest or not re.fullmatch('[0-9a-f]{64}', digest):
             errors.append(f'{filename}: checksum missing or inconsistent')
         if asset_dir is not None:
             p = asset_dir / filename

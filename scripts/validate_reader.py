@@ -54,12 +54,6 @@ def registered_external_checker(root, registry=None, pins=None):
         pins = read("data/pins.json")["anchors"]
     known = {s for s in strings(registry) if s.startswith(("http://", "https://"))}
     known.update(read(registry["crosswalk_evidence_urls"])["urls"])
-    editions = read("data/editions.json")["editions"]
-    for edition in editions.values():
-        asset = edition.get("release_asset")
-        if asset:
-            starts = {span["pages"][0] for spans in edition.get("unit_locators", {}).values() for span in spans}
-            known.update(asset + "#page=" + str(page) for page in starts)
     lean = next(s for s in registry["sources"] if s["id"] == "lean-repository")
     prefix = lean["source_blob_prefix"]
     registered = list(pins.values())
@@ -123,6 +117,9 @@ def check(root, units, registry, pins, banner):
     for path in sorted(korean):
         if not (root / path).is_file():
             errors.append(f"missing Korean mirror {path}")
+    pdf_pages = {(root / ed["repository_file"]).resolve(): ed["pages"]
+                 for ed in json.loads((root / "data/editions.json").read_bytes())["editions"].values()
+                 if "repository_file" in ed}
     anchors.cache_clear()
     for path in sorted(root.rglob("*.md")):
         rel = path.relative_to(root)
@@ -156,6 +153,10 @@ def check(root, units, registry, pins, banner):
             loc = (path.parent / unquote(name)).resolve() if name else path
             if not loc.is_relative_to(root) or not loc.exists():
                 errors.append(f"{rel}: broken local link {target}")
+            elif fragment and loc in pdf_pages:
+                match = re.fullmatch(r"page=([1-9]\d*)", fragment)
+                if not match or int(match[1]) > pdf_pages[loc]:
+                    errors.append(f"{rel}: invalid physical PDF page {target}")
             elif fragment and loc.suffix.lower() == ".md" and unquote(fragment) not in anchors(loc):
                 errors.append(f"{rel}: broken local anchor {target}")
 

@@ -2,7 +2,7 @@
 
 AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
 
-Blueprint v13 and papers v3, v4 and v5 are this project’s own AI-written, unpublished drafts. They have received no human review. Levent Alpöge did not write them. Blueprint v13, its separate cover, and paper v5 are distributed as assets of release v0.1.0. For v3 and v4 the atlas supplies selected excerpts and notes. [Release notes](../RELEASE_NOTES_v0.1.0.md) · [Manuscript editions](../data/editions.json).
+The blueprint and conditional paper are AI-written, unpublished manuscripts prepared under the direction of Gunhee Cho. They have no human review. Levent Alpöge is the author of the Lean development. The repository includes both PDFs. The edition register preserves the earlier sources used in reviews. [Blueprint v13a](../editions/v0.1.0/blueprint_v13a.pdf) · [Conditional paper v6](../editions/v0.1.0/paper_v6.pdf) · [Release notes](../RELEASE_NOTES_v0.1.0.md) · [Manuscript editions](../data/editions.json).
 
 ## Source, audit and reading projects
 

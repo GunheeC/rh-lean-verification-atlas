@@ -2,6 +2,7 @@
 from collections import Counter
 from html.parser import HTMLParser
 import json
+import re
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
@@ -51,6 +52,13 @@ def validate(root, site):
     from validate_reader import registered_external_checker
     read = lambda p: json.loads((root / p).read_text())
     external_ok = registered_external_checker(root)
+    # The in-checkout site shares the signed repository PDF bytes. A portable
+    # export resolves the same documents under its own editions directory.
+    in_checkout = site.resolve() == (root / "site").resolve()
+    document_root = root if in_checkout else site
+    documents = {(document_root / e["repository_file"]).resolve(): e["pages"]
+                 for e in read("data/editions.json")["editions"].values() if "repository_file" in e}
+    receipts = set(documents) | {(document_root / "editions/v0.1.0/SHA256SUMS").resolve()}
     errors = []
     counts = Counter()
     pages = {file.resolve(): PageLinks(file.read_text()) for file in sorted(site.rglob("*.html"))}
@@ -70,8 +78,12 @@ def validate(root, site):
                 continue
             location = (file.parent / unquote(parts.path)).resolve() if parts.path else file
             counts["local"] += 1
-            if not location.is_relative_to(site) or not location.is_file():
+            if (not location.is_relative_to(site) and location not in receipts) or not location.is_file():
                 errors.append(f"{file.relative_to(site)}: broken destination {href}")
+            elif parts.fragment and location in documents:
+                match = re.fullmatch(r"page=([1-9]\d*)", parts.fragment)
+                if not match or int(match[1]) > documents[location]:
+                    errors.append(f"{file.relative_to(site)}: invalid physical PDF page {href}")
             elif parts.fragment and location in pages:
                 counts["fragments"] += 1
                 if unquote(parts.fragment) not in pages[location].ids:

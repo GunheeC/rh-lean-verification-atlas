@@ -27,14 +27,20 @@ Sources for the assumptions · [Z4.2.02 · Local realization of the tagged kerne
 
 ## Where to read
 
-Blueprint v13 and papers v3–v5 are this atlas project’s own AI-written, unpublished drafts. They have no human review and were not written by the author of the Lean development. Blueprint v13, its separate cover, and paper v5 are distributed as assets of release v0.1.0. For v3 and v4 the atlas supplies selected excerpts and notes. [Edition register](../data/editions.json)
+The blueprint and conditional paper are AI-written, unpublished manuscripts prepared under the direction of Gunhee Cho. They have no human review. Levent Alpöge is the author of the Lean development. [Blueprint v13a](../editions/v0.1.0/blueprint_v13a.pdf) · [Conditional paper v6](../editions/v0.1.0/paper_v6.pdf) · [Edition register](../data/editions.json)
 
 - [Blueprint source excerpt](../notes/blueprint/Z42-FRAMES.tex)
+- [Blueprint v13a](../editions/v0.1.0/blueprint_v13a.pdf#page=382), printed p. 355, section label `r6:Z4.2.06`.
 - [RH verification blueprint, release v13](../data/editions.json), section label `r6:Z4.2.06`, PDF p. 380 (printed p. 355)
+- [Blueprint v13a](../editions/v0.1.0/blueprint_v13a.pdf#page=457), printed p. 430, section label `r8:Z4.2.06`.
 - [RH verification blueprint, release v13](../data/editions.json), section label `r8:Z4.2.06`, PDF p. 455 (printed p. 430)
+- [Blueprint v13a](../editions/v0.1.0/blueprint_v13a.pdf#page=385), printed p. 358, section label `r6:Z4.2.07`.
 - [RH verification blueprint, release v13](../data/editions.json), section label `r6:Z4.2.07`, PDF p. 383 (printed p. 358)
+- [Blueprint v13a](../editions/v0.1.0/blueprint_v13a.pdf#page=459), printed p. 432, section label `r8:Z4.2.07`.
 - [RH verification blueprint, release v13](../data/editions.json), section label `r8:Z4.2.07`, PDF p. 457 (printed p. 432)
+- [Blueprint v13a](../editions/v0.1.0/blueprint_v13a.pdf#page=383), printed p. 356, section label `r6:Z4.2.08`.
 - [RH verification blueprint, release v13](../data/editions.json), section label `r6:Z4.2.08`, PDF p. 381 (printed p. 356)
+- [Blueprint v13a](../editions/v0.1.0/blueprint_v13a.pdf#page=391), printed p. 364, section label `r7:review:Z4.2.08`.
 - [RH verification blueprint, release v13](../data/editions.json), section label `r7:review:Z4.2.08`, PDF p. 389 (printed p. 364)
 
 ## Evidence

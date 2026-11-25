@@ -256,6 +256,8 @@ def validate(root, lean_src=None):
     errors.extend(validate_round4(root, units, lean_src))
     from validate_round5 import check as validate_round5
     errors.extend(validate_round5(root, units))
+    from validate_editions import check as validate_editions
+    errors.extend(validate_editions(root, units))
     from validate_round6 import check as validate_round6
     errors.extend(validate_round6(root, units, lean_src))
     from validate_reader import check as validate_reader

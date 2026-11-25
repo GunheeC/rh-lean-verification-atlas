@@ -2,7 +2,9 @@
 
 AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
 
-This page separates the formal check from the reading of the mathematics. The Lean source is fixed at commit `40e56bab026552e089d7afcfeff08d2defb9c005`. The edition register identifies Blueprint v13, the paper manuscripts and the individual notes used below. [Source register](sources/README.md) · [Edition hashes](data/editions.json) · [한국어](docs/ko/STATUS.md) Blueprint v13 and papers v3, v4 and v5 are this project’s AI-written, unpublished drafts. None has had human review. Their author is not the author of the Lean development. Blueprint v13, its separate cover, and paper v5 are distributed as assets of release v0.1.0. For v3 and v4 the atlas supplies selected excerpts and notes. [Editions and fingerprints](data/editions.json)
+This page separates the formal check from the reading of the mathematics. The Lean source is fixed at commit `40e56bab026552e089d7afcfeff08d2defb9c005`. The edition register identifies Blueprint v13, the paper manuscripts and the individual notes used below. [Source register](sources/README.md) · [Edition hashes](data/editions.json) · [한국어](docs/ko/STATUS.md)
+
+Blueprint v13a adds front matter before the 944 PDF pages of v13. The extracted text matches page by page and the printed folios are unchanged. Paper v6 is a typographic revision of v5. A source comparison found the same mathematical text in its theorem, lemma, proposition and proof environments. Reviews and grades apply only to the editions they examined. [Blueprint v13a](editions/v0.1.0/blueprint_v13a.pdf) · [Conditional paper v6](editions/v0.1.0/paper_v6.pdf) · [Editions and fingerprints](data/editions.json)
 
 ## What the formal development states
 
@@ -80,7 +82,7 @@ The Lean repository defines propositions under names taken from the literature a
 
 ### What the conditional manuscript assumes
 
-The v4 manuscript listed three global assumptions and 31 local inputs for Theorems 1.1 and 3.43. An AI review (A) identified further results used in the deduction. Paper v5 identifies the level/window criterion, the pointwise lattice estimate, the eventual rank bound and two comparison results. It also identifies the classical facts about L-functions used at the boundary and to transfer the conclusion. In v5, Theorem 1.1 is on p. 6, the hypothesis table on pp. 38–41 and the closing deduction on pp. 41–42. This manuscript revision awaits independent review. The atlas labels the combined argument an outline. Each review of an individual calculation applies only to the edition and scope recorded for that calculation. [Conditional outline and hypotheses](units/V4-COND.md) · [Review dispositions](data/round4_review_corrections.json) · [Mathematical overview](OVERVIEW.md) · [Paper editions](data/editions.json)
+The v4 manuscript listed three global assumptions and 31 local inputs for Theorems 1.1 and 3.43. An AI review (A) identified further results used in the deduction. Paper v5 identifies the level/window criterion, the pointwise lattice estimate, the eventual rank bound and two comparison results. It also identifies the classical facts about L-functions used at the boundary and to transfer the conclusion. Paper v6 · [conditional theorem, printed p. 1](editions/v0.1.0/paper_v6.pdf#page=7) · [hypothesis table, printed pp. 33–34](editions/v0.1.0/paper_v6.pdf#page=39) · [closing deduction, printed pp. 34–35](editions/v0.1.0/paper_v6.pdf#page=40). This manuscript revision awaits independent review. The atlas labels the combined argument an outline. Each review of an individual calculation applies only to the edition and scope recorded for that calculation. [Conditional outline and hypotheses](units/V4-COND.md) · [Review dispositions](data/round4_review_corrections.json) · [Mathematical overview](OVERVIEW.md) · [Paper editions](data/editions.json)
 
 ## What would change this page?
 

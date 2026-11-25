@@ -16,10 +16,10 @@ def sha(path):
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--root',type=Path,default=Path(__file__).resolve().parents[1])
-    parser.add_argument('--pdf',type=Path,help='Optional local blueprint_v13.pdf. Re-rendering uses macOS PDFKit, Swift and Pillow.')
+    parser.add_argument('--pdf',type=Path,help='Optional local blueprint v13 or v13a PDF. Re-rendering uses macOS PDFKit, Swift and Pillow.')
     args=parser.parse_args(); root=args.root
     records=json.loads((root/'data/notes_starters.json').read_text())['starters']
-    edition=json.loads((root/'data/editions.json').read_text())['editions']['blueprint_v13']
+    editions=json.loads((root/'data/editions.json').read_text())['editions']
     pages={}
     for track,r in records.items():
         if r['edition']!='blueprint_v13' or len(r['printed_pages'])!=len(r['pdf_pages']):
@@ -37,8 +37,12 @@ def main():
     if not args.pdf:
         return
     from PIL import Image,ImageChops
-    if sha(args.pdf)!=edition['sha256']:
-        raise ValueError('PDF differs from the registered blueprint v13 edition')
+    digest = sha(args.pdf)
+    if digest == editions['blueprint_v13a']['sha256']:
+        from edition_links import blueprint_page
+        pages = {file: blueprint_page(editions['blueprint_v13a'], page) for file, page in pages.items()}
+    elif digest != editions['blueprint_v13']['sha256']:
+        raise ValueError('PDF differs from both registered blueprint editions')
     with tempfile.TemporaryDirectory() as temporary:
         tmp=Path(temporary);exe=tmp/'pages'
         subprocess.run(['swiftc','-module-cache-path',str(tmp/'swift-cache'),str(root/'scripts/extract_pages.swift'),'-o',str(exe)],check=True)

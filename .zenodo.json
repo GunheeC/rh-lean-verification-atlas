@@ -1,0 +1,27 @@
+{
+  "title": "RH Lean Verification Atlas",
+  "upload_type": "dataset",
+  "description": "This atlas maps statements in a pinned Lean development concerning zeros of the Riemann zeta function and Dirichlet L-functions. It links reading units and proof steps to Lean declarations and records open mathematical questions. This edition includes the paper v6 and the blueprint v13a. AI-written draft; AI cross-reviewed; no human review; not a claim that RH is proved.",
+  "creators": [
+    {
+      "name": "Cho, Gunhee"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "keywords": [
+    "Riemann hypothesis",
+    "Dirichlet L-functions",
+    "Lean",
+    "formal verification",
+    "number theory"
+  ],
+  "notes": "Text and data drafted by AI systems under the direction of the maintainer; no human review. Scripts under MIT.",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/leanprover-community/riemann-hypothesis/tree/40e56bab026552e089d7afcfeff08d2defb9c005",
+      "relation": "describes",
+      "scheme": "url"
+    }
+  ],
+  "version": "v0.1.0"
+}

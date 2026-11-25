@@ -4,7 +4,7 @@ AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
 
 Copyright © 2026 Gunhee Cho, to the extent copyright subsists in AI-generated text. CC BY 4.0 covers original atlas writing, editorial arrangement and original data to the extent of rights held. The grant does not cover material derived from the Lean source. No licence file found at the pinned commit. The matching archive contains 175,187 Lean files and three project files. Original scripts and workflow code use the MIT License. [License scope](LICENSE) · [Script license](LICENSE-MIT) · [Source editions](sources/README.md).
 
-Gunhee Cho maintains the repository and decides what is released. AI systems drafted the text. The project’s own blueprint v13 and papers v3, v4 and v5 are AI-written, unpublished drafts with no human review. Levent Alpöge did not author these manuscripts. [Editions and available excerpts](data/editions.json) · [Release v0.1.0 assets](RELEASE_NOTES_v0.1.0.md).
+Gunhee Cho maintains the repository and decides what is released. AI systems drafted the text. The project’s own blueprint editions v13 and v13a and papers v3 through v6 are AI-written, unpublished drafts with no human review. Levent Alpöge did not author these manuscripts. [Editions and available excerpts](data/editions.json) · [PDFs in release v0.1.0](RELEASE_NOTES_v0.1.0.md).
 
 | Referenced material | Source terms at the pin | Atlas use |
 |---|---|---|
@@ -22,7 +22,7 @@ The optional static site requests MathJax 3.2.2 for typesetting from the registe
 
 ## The page images and local notes
 
-All **47 WebP page images** in the seven reading packets come from the project’s own 944-page blueprint v13. The packets use 46 distinct physical PDF pages because two packets share a boundary page. Each image matched its recorded SHA-256. Every decoded RGB pixel also matched a fresh render of the corresponding page of the local release PDF, whose SHA-256 is `d9dcb73f10a5829865f9246409d886c16cb1d2087717adf7758f154257a28af4`. [Editions](data/editions.json) · [Packet page numbers and image hashes](data/notes_starters.json).
+All **47 WebP page images** in the seven reading packets come from the project’s own 944-page blueprint v13. The packets use 46 distinct physical PDF pages because two packets share a boundary page. Each image matched its recorded SHA-256. Every decoded RGB pixel also matched a fresh render of the corresponding page of the original v13 PDF, whose SHA-256 is `d9dcb73f10a5829865f9246409d886c16cb1d2087717adf7758f154257a28af4`. [Editions](data/editions.json) · [Packet page numbers and image hashes](data/notes_starters.json).
 
 All **228 TeX files** under `notes/` trace to the project’s own manuscripts. The audit matched 165 paper-v3 extracts and 154 recorded fragments used by 48 blueprint notes, eight full supplementary arguments and eight source ranges used in seven starter extracts. Some blueprint working-source fragments postdate v13 and have no printed v13 page locator. [Unit excerpts](data/notes_units.json) · [Blueprint excerpt register](data/blueprint_excerpt_index.json).
 

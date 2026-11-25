@@ -2,11 +2,15 @@
 
 AI-written, AI cross-reviewed; no human sign-off; not a claim that RH is proved
 
-Levent Alpöge’s Lean development states the Riemann hypothesis for zeta and four further assertions about zeros of zeta or Dirichlet L-functions. A third-party audit records kernel acceptance, and this project did not reproduce that run. No human has read or checked the mathematical material in this atlas. The written deduction assumes V, F, Green’s finite-field character input, 31 local implications and the further inputs listed in v5, and V and F have no complete human-readable derivations in this atlas, although the Lean repository supplies terms for both. [MainConclusion.lean:10–11](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean#L10-L11) · [RowSrc.lean:6–6](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/RowSrc.lean#L6-L6) · [EveryCharacterOfLiteratureOfVWin.lean:810–813](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean#L810-L813)
+Levent Alpöge’s Lean development states the Riemann hypothesis for zeta and four further assertions about zeros of zeta or Dirichlet L-functions. A third-party audit records kernel acceptance, and this project did not reproduce that run. No human has read or checked the mathematical material in this atlas. The written deduction assumes V, F, Green’s finite-field character input, 31 local implications and the further inputs listed in v6, and V and F have no complete human-readable derivations in this atlas, although the Lean repository supplies terms for both. [MainConclusion.lean:10–11](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean#L10-L11) · [RowSrc.lean:6–6](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/RowSrc.lean#L6-L6) · [EveryCharacterOfLiteratureOfVWin.lean:810–813](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean#L810-L813)
 
 [Five formal statements](sources/lean-goals.md) · [External audit](sources/kernel-audit.md) · [V and its quantifiers](pillars/V.md) · [F and its common selection](pillars/F.md) · [한국어](README.ko.md)
 
-Blueprint v13 and papers v3, v4 and v5 are this project’s AI-written, unpublished drafts. None has had human review. Their author is not the author of the Lean development. Blueprint v13, its separate cover, and paper v5 are distributed as assets of release v0.1.0. For v3 and v4 the atlas supplies selected excerpts and notes. [Editions and fingerprints](data/editions.json)
+## Read the documents
+
+[Blueprint v13a](editions/v0.1.0/blueprint_v13a.pdf) · [Conditional paper v6](editions/v0.1.0/paper_v6.pdf)
+
+The blueprint and conditional paper are AI-written, unpublished manuscripts prepared under the direction of Gunhee Cho. They have no human review. Levent Alpöge is the author of the Lean development. The repository includes both PDFs. The edition register preserves the earlier sources used in reviews. [Editions and fingerprints](data/editions.json)
 
 Pick a statement from Levent Alpöge’s Lean development. A reading unit covers one claim or several related claims. It lists their hypotheses and Lean declarations. It links to a written argument when one is available. A recorded review identifies the text and the claim it examined. The external kernel audit concerns the compiled Lean development. [Reading progress](PROGRESS.md) · [Next units and human reading queue](ROADMAP.md) · [Contributors](AUTHORS.md)
 
@@ -76,7 +80,7 @@ Sorted by steps, note length and prerequisites. [Full volunteer queue and writin
 
 ## How to cite
 
-Cite *RH Lean Verification Atlas (AI-drafted; maintained by Gunhee Cho)* (2026), version v0.1.0 (25 November 2026), its exact atlas commit, the unit ID and the Lean declaration. When relying on an exposition, include its edition and pages. [Citation metadata](CITATION.cff) · [Edition hashes](data/editions.json) · [Release notes](RELEASE_NOTES_v0.1.0.md)
+Gunhee Cho (maintainer), *RH Lean Verification Atlas*, v0.1.0, 25 November 2026. AI-drafted; maintained by Gunhee Cho. Give the exact atlas commit, unit ID and Lean declaration. When relying on an exposition, include its edition and pages. The DOI for this release will appear here after Zenodo assigns it. [Citation metadata](CITATION.cff) · [Edition hashes](data/editions.json) · [Release notes](RELEASE_NOTES_v0.1.0.md)
 
 ## How to contribute a check
 
